@@ -1,6 +1,6 @@
 ---
 title: 'ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)'
-description: Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at bruge økonomiske dimensioner so datakilde for ER-rapporter.
+description: Dette emne beskriver, hvordan du konfigurerer en ER-model (elektronisk rapportering) til at bruge økonomiske dimensioner som datakilde til ER-rapporter. (Del 2)
 author: NickSelin
 manager: AnnBe
 ms.date: 05/27/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 02c730d08c411e736a7f8b9e7bad3d6a18cb8e6a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681679"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093231"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)
 
@@ -147,6 +147,3 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 4. Klik på Fuldført.
 5. Klik på OK.
 ![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

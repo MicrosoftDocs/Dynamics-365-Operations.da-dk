@@ -1,6 +1,6 @@
 ---
 title: Rapportering af trædefinitioner i økonomiske rapporter
-description: Denne artikel indeholder oplysninger om definitioner af rapporteringstræer. En rapporteringstrædefinition er en rapportkomponent eller en dokumentkomponent, der hjælper med at definere strukturen og hierarkiet i din organisation.
+description: I denne artikel beskrives definitioner af rapporteringstræer. En definition af et rapporteringstræ er en rapportkomponent, der definerer strukturen i en organisation.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/07/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 17f749863af3c37658935d5065cf053d0a165c1e
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682667"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093894"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
@@ -220,6 +220,3 @@ Følgende eksempler viser mulige oplysninger, der bruges i en definition af et r
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

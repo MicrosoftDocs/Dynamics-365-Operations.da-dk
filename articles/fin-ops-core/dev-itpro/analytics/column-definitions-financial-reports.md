@@ -1,6 +1,6 @@
 ---
 title: Kolonnedefinitioner i økonomirapporter
-description: Denne artikel indeholder oplysninger om kolonnedefinitioner. En kolonnedefinition er en rapportkomponent eller byggesten, der definerer indholdet af kolonnerne i en rapport. Ligesom rækkedefinitioner kan grundlæggende kolonnedefinitioner bruges til flere rapporter.
+description: Denne artikel indeholder oplysninger om kolonnedefinitioner. En kolonnedefinition er en rapportkomponent, der definerer indholdet af kolonnerne i en rapport.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687224"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093103"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinitioner i økonomirapporter
 
@@ -226,17 +226,16 @@ En bruger opretter en rapport til et dynamisk halvårligt budget. Brugeren vil h
 | Kolonnebredde        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Udskriftsstyring       |      | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        | P &lt; = B       | P &gt; B        |
 
-Brugeren dobbeltklikker på en kolonneoverskriftscelle for at åbne dialogboksen **Kolonneoverskrift**, hvor brugeren skriver følgende oplysninger.
+Derefter dobbeltklikker brugeren på kolonneoverskriftscellen i kolonne B for at åbne dialogboksen **Kolonneoverskrift**, hvor brugeren skriver følgende oplysninger.
 
 | Felt              | Værdi                 |
 |--------------------|-----------------------|
 | Kolonneoverskriftstekst | Faktisk                |
 | Indsæt autotekst    | Der er ikke foretaget et valg. |
 | Formateringsindstillinger     | Felt                   |
-| Berettigelse      | Der er ikke foretaget et valg. |
+| Begrundelse      | Der er ikke foretaget et valg. |
 | Opslag fra        | B                     |
 | Opslag til          | BASE                  |
-| Budgetoverskrift      | BASE+1 til slutkolonne  |
 
 Efter at have angivet oplysninger klikker brugeren på **OK**. Derefter dobbeltklikker brugeren på kolonneoverskriftscellen i kolonne C for at åbne dialogboksen **Kolonneoverskrift**, hvor brugeren skriver følgende oplysninger.
 
@@ -244,10 +243,10 @@ Efter at have angivet oplysninger klikker brugeren på **OK**. Derefter dobbeltk
 |--------------------|-----------------------|
 | Kolonneoverskriftstekst | Budget                |
 | Indsæt autotekst    | Der er ikke foretaget et valg. |
-| Formateringsindstillinger     | Felt                   |
-| Berettigelse      | Der er ikke foretaget et valg. |
-| Opslag fra        | C                     |
-| Opslag til          | BASE+2                |
+| Formateringsindstillinger     | Kasse                   |
+| Begrundelse      | Der er ikke foretaget et valg. |
+| Opslag fra        | BASE+1                |
+| Opslag til          | M                     |
 
 Hver gang denne rapport genereres, udskrives ordet "Faktisk" over de kolonner, der indeholder faktiske data, og ordet "Budget" udskrives over de kolonner, der indeholder budgetprognoser. Desuden justeres antallet af kolonner hver måned.
 
@@ -599,6 +598,3 @@ Du kan dividere beløbet i en kolonne med et angivet antal perioder. Formlen **B
 [Rækkedefinitioner i Designer til økonomirapporter](row-definitions-financial-reporting.md)
 
 [Avancerede formateringsindstillinger i økonomirapportering](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

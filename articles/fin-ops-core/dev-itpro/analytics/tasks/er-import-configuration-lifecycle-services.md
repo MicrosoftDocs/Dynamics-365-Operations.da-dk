@@ -1,6 +1,6 @@
 ---
 title: Importere en konfiguration fra Lifecycle Services
-description: Dette emne beskriver, hvordan en bruger i rollen som Systemadministrator eller Udvikler af elektronisk rapportering kan importere en ny version af en elektronisk rapporteringskonfiguration (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
+description: Dette emne beskriver, hvordan en ny version af en ER-konfiguration (elektronisk rapportering) importeres fra Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 602886b0dd729b8ec52940f42bd1c393dac8acda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684445"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093689"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importere en konfiguration fra Lifecycle Services
 
@@ -42,7 +42,7 @@ I dette eksempel skal du vælge den ønskede version af ER-konfigurationen og im
 > [!NOTE]
 > Sørg for, at den aktuelle Dynamics 365 Finance-bruger er medlem af det LCS projekt, der indeholder det aktivbibliotek, som brugeren vil [have adgang](../../lifecycle-services/asset-library.md#asset-library-support) til for at importere ER-konfigurationer.
 >
-> Du kan ikke få adgang til et LCS-projekt fra et ER-lager, der repræsenterer et andet domæne end det domæne, der bruges i Finance. Hvis du forsøger, vises der en tom liste over LCS-projekter, og du kan ikke importere ER-konfigurationer fra aktivbiblioteket på projektniveau i LCS. Hvis du vil have adgang til aktivbiblioteker på projektniveau fra et ER-lager, der bruges til at importere ER-konfigurationer, skal du logge på Finance ved hjælp af legitimationsoplysningerne for en bruger, der tilhører den lejer (domæne), som den aktuelle Finance-forekomst er klargjort til.
+> Du kan ikke få adgang til et LCS-projekt fra et ER-lager, der repræsenterer et andet domæne end det domæne, der bruges i Finans. Hvis du forsøger, vises der en tom liste over LCS-projekter, og du kan ikke importere ER-konfigurationer fra aktivbiblioteket på projektniveau i LCS. Hvis du vil have adgang til aktivbiblioteker på projektniveau fra et ER-lager, der bruges til at importere ER-konfigurationer, skal du logge på Finans ved hjælp af legitimationsoplysningerne for en bruger, der tilhører den lejer (domæne), som den aktuelle Finans-forekomst er klargjort til.
 
 ## <a name="delete-a-shared-version-of-a-data-model-configuration"></a>Slette en delt version af en datamodelkonfiguration
 
@@ -103,6 +103,3 @@ I dette eksempel skal du vælge den ønskede version af ER-konfigurationen og im
     I dette eksempel skal du vælge den konfigurationsversion, der har statussen **Delt**.
 
     Bemærk, at den delte version 1 af den valgte datamodelkonfiguration nu også er tilgængelig.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

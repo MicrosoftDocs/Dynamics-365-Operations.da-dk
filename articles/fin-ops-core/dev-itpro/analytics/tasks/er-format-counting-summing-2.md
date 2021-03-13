@@ -1,6 +1,6 @@
 ---
 title: 'ER Konfigurere format for at udføre optælling og sammenlægning (del 2: Konfigurer beregninger)'
-description: Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at udføre optælling og sammenlægning baseret på data i det tekstoutput, der allerede er oprettet.
+description: Dette emne beskriver, hvordan du konfigurerer et format for elektronisk rapportering til optælling og opsummering baseret på data fra det allerede genererede tekstoutput. (Del 2)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9314a8cd5838333a20dd59dfb52f80a43d89b8c6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6215fe1f32bcb4833bd009b7c33e09edbba17817
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684685"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092991"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2---configure-computations"></a>ER Konfigurere format for at udføre optælling og sammenlægning (del 2: Konfigurer beregninger)
 
@@ -139,6 +139,3 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 83. Klik på Gem.
 84. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

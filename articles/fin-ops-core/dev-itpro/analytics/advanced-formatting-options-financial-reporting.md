@@ -1,7 +1,7 @@
 ---
 title: Avancerede formateringsindstillinger i økonomirapportering
-description: Når du opretter en rapport til økonomirapportering, er flere formateringsfunktioner tilgængelige, herunder filtre for dimensioner, begrænsninger for kolonner og rapporteringsenheder, rækker, der ikke udskrives, og IF/ELSE-sætninger i beregninger.
-author: ryansandness
+description: Dette emne beskriver avancerede formateringsfunktioner, herunder filtre, begrænsninger, rækker, der ikke udskrives, og betingede sætninger i beregninger.
+author: panolte
 manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683157"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093156"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerede formateringsindstillinger i økonomirapportering
 
@@ -310,6 +310,3 @@ En **IF/THEN/ELSE**-sætning gør det muligt for enhver beregning at afhænge af
 Du kan designe rapporter ved hjælp af dimensionsværdier, der indeholder et og-tegn (&).
 
 I et hvilket som helst felt af typen **Link til økonomiske dimensioner** kan du angive en værdi som f.eks. **'P&L'**. Hvis du medtager enkelte anførselstegn (' ') på begge sider af dimensionsværdien, angiver det, at du bruger konstantværdien, f.eks. også tegnet (&).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

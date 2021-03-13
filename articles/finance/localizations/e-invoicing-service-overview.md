@@ -3,7 +3,7 @@ title: Oversigt over tilføjelsesprogrammet til elektronisk fakturering
 description: Dette emne indeholder oplysninger om tilføjelsesprogrammet til elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4441736"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104202"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Oversigt over tilføjelsesprogrammet til elektronisk fakturering
 
@@ -45,9 +44,9 @@ Tilføjelsesprogrammet til elektronisk fakturering kan hjælpe dig med at opnå 
 
 Hvis du vil bruge tilføjelsesprogrammet til elektronisk fakturering, skal du installere det fra dit projekt i Microsoft Dynamics Lifecycle Services (LCS). Derefter skal du følge installationsproceduren for at aktivere integrationen med Finance eller Supply Chain Management. Du kan finde flere oplysninger i [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md).
 
-## <a name="availability"></a>Tilgængelighed
+## <a name="service-availability"></a><a name="availability"></a>Tilgængelighed af tjeneste
 
-Som udgangspunkt er tilføjelsesprogrammet til elektronisk fakturering tilgængeligt for udvalgte kunder via en prøveversion. Prøveversionen vil senere blive åbnet op for flere kunder. Tjenesten vil til sidst være generelt tilgængelig. Da funktioner, der adresserer lande-/områdespecifikke krav, kan være begrænset i forskellige faser af udgivelsen, skal du altid kontrollere den nyeste dokumentation, der fremhæver dækningen og omfanget af understøttede lande-/områdespecifikke løsninger.
+I øjeblikket er tilføjelsesprogrammet Elektronisk fakturering tilgængelig for debitorer via programmet forhåndsvisning, og i næste fase vil tjenesten være generelt tilgængelig. Da funktioner, der adresserer lande-/områdespecifikke krav, kan være begrænset i forskellige faser af udgivelsen, skal du altid kontrollere den nyeste dokumentation, der fremhæver dækningen og omfanget af understøttede lande-/områdespecifikke løsninger.
 
 Tilføjelsesprogrammet til elektronisk fakturering er udrullet i følgende geografiske Azure-områder:
 
@@ -76,7 +75,7 @@ Tilføjelsesprogrammet til elektronisk fakturering kan bruges i scenarier, hvor 
     - Indbygget og konfigurerbar integration, der nemt kan udvides, med yderligere indhold til flere lande/områder
 
     > [!NOTE]
-    > I øjeblikket understøttes et begrænset antal direkte indsendelser. Du kan finde flere oplysninger i afsnittet [Tilgængelighed](#availability) tidligere i dette emne. Support vil blive udvidet i fremtiden.
+    > I øjeblikket understøttes et begrænset antal direkte indsendelser. Du kan finde flere oplysninger i afsnittet [Tilgængelighed af tjeneste](#availability) tidligere i dette emne. Support vil blive udvidet i fremtiden.
 
 - Håndtering af svar fra webtjenester, herunder konfigurerbar håndtering af undtagelsesmeddelelser
 - Understøttelse af elektroniske signaturer (f.eks. ved at bruge XMLDSig-signeringsalgoritmen)
@@ -104,15 +103,9 @@ I følgende illustration vises dataflowet til og fra tilføjelsesprogrammet til 
 ![Dataflow for tilføjelsesprogrammet til elektronisk fakturering](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-Aktivering og brug af elektronisk fakturering kan kræve, at der sendes begrænsede data, herunder organisationens momsregistrerings-id. Dette vil blive overført til tredjepartsorganer, der er godkendt af skattemyndighederne, med det formål at sende elektroniske fakturaer i de foruddefinerede formater, der kræves til integration med myndighedernes webtjenester. De data, der importeres fra disse eksterne systemer til denne Dynamics 365-onlinetjeneste, er underlagt vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=512132). Yderligere oplysninger finder du i sektionerne med Erklæring om beskyttelse af personlige oplysninger i dokumentationen for den lande- eller områdespecifikke funktion.
+Aktivering og brug af tilføjelsesprogrammet Elektronisk fakturering kan kræve, at der sendes begrænsede data, herunder organisationens momsregistrerings-id. Dette vil blive overført til tredjepartsorganer, der er godkendt af skattemyndighederne, med det formål at sende elektroniske fakturaer i de foruddefinerede formater, der kræves til integration med myndighedernes webtjenester. De data, der importeres fra disse eksterne systemer til denne Dynamics 365-onlinetjeneste, er underlagt vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=512132). Yderligere oplysninger finder du i sektionerne med Erklæring om beskyttelse af personlige oplysninger i dokumentationen for den lande- eller områdespecifikke funktion.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md)
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Brasilien](e-invoicing-bra-get-started.md)
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Italien](e-invoicing-ita-get-started.md)
-- [Konfigurere tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Administration af tjeneste](e-invoicing-service-administration.md)
+- [Konfiguration af elektroniske fakturaer i RCS](e-invoicing-configuration-rcs.md)
+- [Udsted elektroniske fakturaer i Finance og Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)

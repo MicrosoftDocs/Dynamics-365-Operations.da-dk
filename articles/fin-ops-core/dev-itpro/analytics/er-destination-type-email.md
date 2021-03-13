@@ -1,6 +1,6 @@
 ---
 title: ER-destinationstype for e-mail
-description: Dette emne forklarer, hvordan du kan konfigurere en maildestination for hver komponent af typen MAPPE eller FIL i et elektronisk rapporteringsformat (ER), der er konfigureret til at generere udgående dokumenter.
+description: Dette emne indeholder oplysninger om, hvordan du konfigurerer en maildestination for de enkelte MAPPE- eller FIL-komponenter i et ER-format (elektronisk rapportering).
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: e2e0da1c724269e0956be2f402b34ff376ed1990
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690120"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094098"
 ---
 # <a name="email-er-destination-type"></a>ER-destinationstype for e-mail
 
@@ -65,8 +65,6 @@ Hvis du vælger **Udskriftsstyringsmail** som mailadressetype, kan du angive fas
 - Vælg **Ingen** i feltet **Mailkilde**.
 - Angiv de faste mailadresser i feltet **Yderligere mailadresser, adskilt af ";"**.
 
-![Konfigurere en fast mailadresse](./media/er_destinations-emailfixedaddress.png)
-
 Du kan også hente mailadresser fra kontaktoplysningerne for den part, du opretter et udgående dokument for. Hvis du vil bruge mailadresser, der ikke er faste, skal du gå til feltet **Mailkilde** og vælge [rollen](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) for parten for en fildestination. Følgende roller understøttes:
 
 - Kunde
@@ -92,9 +90,7 @@ I feltet **Formel** på siden **Formeldesigner** skal du angive en dokumentspeci
 
 Hvis kontonumrene for den konfigurerede rolle er entydige for hele forekomsten af Microsoft Dynamics 365 Finance, kan feltet **Firma for mailkilde** i dialogboksen **Mail to** være tomt.
 
-![Feltet Firma for mailkilde er tomt](./media/er_destinations-emaildefineaddresssourceformula.png)
-
-Alternativt kan du have en situation, hvor forskellige parter i det [globale adressekartotek](../../fin-ops/organization-administration/overview-global-address-book.md) er blevet registreret i forskellige firmaer ([juridiske enheder](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) på en sådan måde, at de alle bruger det samme kontonummer til at udfylde den konfigurerede rolle. I dette tilfælde er kontonumrene for den konfigurerede rolle ikke entydige for hele Finance-forekomsten. Hvis du udtrykkeligt vil vælge en part, kan du derfor ikke kun angive et kontonummer. Du skal også angive det regnskab, som parten er blevet registreret i for at kunne udfylde den konfigurerede rolle. Vælg knappen **Bind** (kædesymbolet) ud for feltet **Firma for mailkilde** i dialogboksen **Mail til** for at åbne siden [Formeldesigner](general-electronic-reporting-formula-designer.md). Du kan derefter bruge denne side til at konfigurere en formel, der under kørsel returnerer koden for det firma, som den ønskede kilde skal findes inden for.
+Alternativt kan du have en situation, hvor forskellige parter i det [globale adressekartotek](../../fin-ops/organization-administration/overview-global-address-book.md) er blevet registreret i forskellige firmaer ([juridiske enheder](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) på en sådan måde, at de alle bruger det samme kontonummer til at udfylde den konfigurerede rolle. I dette tilfælde er kontonumrene for den konfigurerede rolle ikke entydige for hele Finans-forekomsten. Hvis du udtrykkeligt vil vælge en part, kan du derfor ikke kun angive et kontonummer. Du skal også angive det regnskab, som parten er blevet registreret i for at kunne udfylde den konfigurerede rolle. Vælg knappen **Bind** (kædesymbolet) ud for feltet **Firma for mailkilde** i dialogboksen **Mail til** for at åbne siden [Formeldesigner](general-electronic-reporting-formula-designer.md). Du kan derefter bruge denne side til at konfigurere en formel, der under kørsel returnerer koden for det firma, som den ønskede kilde skal findes inden for.
 
 > [!TIP]
 > Hvis du skal bruge firmakoden til at køre et ER-format, men ER-formatet ikke indeholder nogen datakilde, som firmakoden kan hentes fra, skal du konfigurere `GetCurrentCompany()`-formlen ved hjælp af den indbyggede ER-funktion [GETCURRENTCOMPANY](er-functions-other-getcurrentcompany.md).
@@ -109,8 +105,6 @@ Hvis du vil angive, hvilken type mailadresser der skal bruges på kørselstidspu
 
 > [!NOTE]
 > Hvis der er valgt formål i feltet **Formål**, og indstillingen **Primær kontakt** er angivet til **Ja** på samme tid, vil alle mails, der opfylder mindst ét konfigureret kriterie, blive brugt under kørsel.
-
-![Konfigurere mailens kildeattributkonto](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### <a name="configuration-email"></a>Konfigurationsmail
 
@@ -145,6 +139,3 @@ I følgende illustration vises processen, som beskrevet i dette emne, til gruppe
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

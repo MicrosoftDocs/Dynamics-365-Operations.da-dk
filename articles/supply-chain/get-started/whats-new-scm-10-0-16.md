@@ -1,5 +1,5 @@
 ---
-title: Prøveversion af Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
+title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
 manager: annbe
@@ -10,26 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 963979c9d24c275f77347ec5d682f318db18f915
-ms.sourcegitcommit: be4b9d557511bbb43e71a93f2c3b23b5f1a4669d
+ms.openlocfilehash: 1ffd98a94b9ed3201be3c4530b8fba7e2820c268
+ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4626796"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104983"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10016-february-2021"></a>Prøveversion af Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management-prøveversionen af version 10.0.16. Denne version har et build-nummer på 10.0.689 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.16. Denne version har et build-nummer på 10.0.689 og er tilgængelig som følger:
 
 - **Prøveversion:** november 2020
 - **Generel tilgængelighed af version (selv-opdatering):** januar 2021
@@ -40,8 +38,11 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 Følgende funktioner er inkluderet i denne version. Nogle af de viste funktioner findes stadig i prøveversionen, mens andre muligvis allerede er generelt tilgængelige. Følg linkene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
 
 - [Brugerdefinerbar grænseflade til kørsel af produktion](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Du kan finde flere oplysninger under [Konfigurere en enhed til at køre grænsefladen for produktionsudstyr](../production-control/production-floor-execution-setup.md).
+
 - [Tilføjelsesprogrammet Lagersynlighed til Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Yderligere oplysninger finder du i [Tilføjelsesprogrammet Lagersynlighed](../inventory/inventory-visibility.md)
+
 - [Validere id'er på kildedokumentlinjer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Du kan finde flere oplysninger under [Oversigt over konfiguration af lagersted](../warehousing/warehouse-configuration.md).
+
 - [Visualisering af udgående arbejdsbyrde for lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Yderligere oplysninger finder du under [Visualisering af udgående arbejdsbyrde](../warehousing/outbound-workload-visualization.md)
 
 De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
@@ -88,7 +89,7 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. D
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformopdateringer til Finance and Operations-apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 indeholder platformopdateringer. Du kan få mere vide i [Platformopdateringer til version 10.0.16 af Finance and Operations-apps (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 indeholder platformopdateringer. Du kan få mere vide i [Platformopdateringer til version 10.0.16 af Finance and Operations-apps (februar 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 
@@ -110,6 +111,3 @@ Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](
 Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

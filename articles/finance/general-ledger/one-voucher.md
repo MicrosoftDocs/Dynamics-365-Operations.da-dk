@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cada62078b71dd304e90951ab0f4c1643beaa48c
+ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441615"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5107714"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -55,25 +54,26 @@ Funktionen ét bilag forårsager problemer under udligning, momsberegning, tilba
 
 Du bogfører f.eks. følgende bilag med flere linjer.
 
-[![Eksempel](./media/example.png)](./media/example.png)
+[![Eksempel på et samkøbsbilag](./media/example.png)](./media/example.png)
 
 Du genererer derefter rapporten **Udgifter efter kreditor** i arbejdsområdet **Økonomisk indsigt**. I denne rapport er udgiftskontosaldi grupperet under kreditorgruppe og derefter kreditor. Når rapporten genereres, kan systemet ikke bestemme, hvilke kreditorgrupper/kreditorer der medførte udgiften på 250,00. Da der mangler transaktionsdetaljer, antager systemet, at hele udgiften på 250,00 vedrører den første kreditor, der findes i bilaget. Derfor vises udgiften på 250,00, der er inkluderet i saldoen for hovedkontoen 600120, under den pågældende kreditorgruppe/kreditor. Det er dog meget sandsynligt, at den første kreditor i bilaget ikke er den korrekte kreditor. Derfor er rapporten sandsynligvis forkert.
 
-[![Udgifter](./media/expenses.png)](./media/expenses.png)
+[![rapport over udgifter efter kreditor](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Fremtiden for ét bilag
 
-På grund af de problemer, der tidligere blev nævnt, udfases funktionen Ét bilag. Men da der er nogle funktionsmæssige huller, som er afhængige af denne funktion, udfases funktionen ikke på én gang. I stedet bruges følgende tidsplan:
+På grund af de problemer, der kan forekomme, når der bruges ét bilag, vil denne funktion med tiden blive frarådet. Men da der er nogle funktionsmæssige kløfter, som er afhængige af denne funktion, udfases funktionen ikke på én gang. I stedet bruges følgende tidsplan:
 
-- **Versionen foråret 2018** – Som standard deaktiveres funktionen via paramereten **Tillad flere transaktioner i ét bilag** under fanen **Generelt** på siden **Finansparametre**. Men du kan aktivere funktionen, hvis organisationen har et scenario, der falder i et af de funktionsmæssige huller, der er angivet senere i dette emne.
+- **Versionen foråret 2018** – Denne funktion var deaktiveret som standard via parameteren **Tillad flere transaktioner i ét bilag** under fanen **Generelt** på siden **Finansparametre**. Men du kan aktivere funktionen igen, hvis organisationen har et scenario, der falder i et af de funktionsmæssige kløfter, der er angivet senere i dette emne.
 
-    - Hvis en kunde har et forretningsscenarie, der ikke kræver Ét bilag, skal kunden ikke aktivere funktionen. Microsoft retter ikke "fejl" i de områder, der identificeres senere i dette emne, hvis denne funktion bruges, selvom der findes en anden løsning.
-    - Stop med at bruge ét bilag til integrationer, medmindre funktionen er påkrævet til et af de funktionelle huller.
+    - Hvis der ikke kræves ét bilag i dit forretningsscenarie, anbefales det, at du lader funktionen være deaktiveret. Hvis denne funktion bruges, selvom der findes en anden løsning, retter Microsoft ikke "fejl" i de områder, der identificeres senere i dette emne.
+    - Vi anbefaler, at du stopper med at bruge ét bilag til integrationer i , medmindre funktionen er påkrævet til et af de dokumenterede funktionelle kløfter.
 
-- **Senere versioner** – Alle funktionsmæssige huller bliver lukket. **Når de funktionsmæssige huller er fjernet, og nye funktioner er leveret, det vil vare mindst ét år før funktionen Ét bilag er permanent deaktiveret**, fordi kunder og uafhængige softwareleverandører (ISV'er) skal have tilstrækkelig tid til at reagere på de nye funktioner. For eksempel skal de muligvis opdatere deres forretningsprocesser, enheder og integrationer.
+- **Senere versioner** – Flere af disse forretningskrav kan kun opfyldes ved hjælp af ét bilag. Microsoft skal sikre, at alle de identificerede forretningskrav stadig kan opfyldes i systemet, når funktionaliteten frarådes. Derfor vil der sandsynligvis skulle tilføjes nye funktioner for at udfylde funktionelle kløfter. Microsoft kan ikke tilbyde en bestemt løsning, da de enkelte funktionskløfter er forskellige og skal evalueres ud fra forretningsbehovet. Nogle funktionelle kløfter vil sandsynligvis blive erstattet af funktioner, der er med til at opfylde bestemte forretningsbehov. Andre huller kan dog udfyldes ved fortsat at gøre det muligt at angive oplysninger i en kladde, som ved anvendelse af ét bilag, men systemet kan efterhånden spore flere detaljer efter behov.
 
-> [!IMPORTANT]
-> Indstillingen **Kun ét bilagsnummer** er **ikke** blevet fjernet fra opsætningen af kladdenavne. Denne indstilling understøttes stadig, når bilaget kun indeholder finanskontotyper. Debitorer skal være omhyggelige, når de bruger denne indstilling, da bilaget ikke bogføres, hvis de bruger indstillingen **Kun ét bilagsnummer** og derefter angiver mere end én debitor, kreditor, bank, anlægsaktiv eller projekt. Desuden kan debitorer stadig angive en blanding af kontotyper for reskontrokladder, f.eks. en betaling i et enkelt bilag, der indeholder kontotyperne **Kreditor**/**Bank**.
+Når alle funktionelle kløfter er udfyldt, kommunikerer Microsoft, at det frarådes at bruge funktionen. Afskrivningen vil dog ikke være gældende i mindst ét år efter den pågældende kommunikation. Selvom Microsoft ikke kan give et præcist estimat over, hvornår funktionen Ét bilag frarådes, vil der højst sandsynligt gå to år, før afskrivningen finder sted. Microsofts politik er at holde mindst 12 måneder mellem ofring af forældet funktionalitet og den faktiske afskrivning, så kunder og uafhængige softwareleverandører har tid til at reagere på ændringen. For eksempel skal en organisation muligvis opdatere forretningsprocesser, enheder og integrationer.
+
+Når ét bilag afskrives, er det en vigtig ændring, der kommunikeres i vidt omfang. Som en del af denne kommunikation vil Microsoft opdatere dette emne, skrive et blog-opslag på Microsoft Dynamics 365 Finance-bloggen, opdatere emnet "Fjernede eller forældet funktioner", kommunikere ændringen på det relevante Microsoft-websted osv.
 
 ## <a name="why-use-one-voucher"></a>Hvorfor bruge ét bilag?
 
@@ -84,7 +84,7 @@ Baseret på samtaler med kunderne, har Microsoft samlet følgende liste over de 
 Følgende scenarier kan kun udføres ved hjælp af funktionen ét bilag. Hvis din organisation har et af disse scenarier, skal du aktivere flere transaktioner, der skal angives i et bilag, ved at ændre indstillingen af parameteren **Tillad flere transaktioner i ét bilag** på siden **Finansparametre**. Disse funktionsmæssige huller udfyldes via andre funktioner i senere versioner.
 
 > [!Note]
-> [For hver af følgende situationer skal feltet **Tillad flere posteringer inden for ét bilagsfelt** være indstillet til Ja på oversigtspanelet **Generelt** på siden **Finansparametre**.]
+> [For hver af følgende situationer skal **Tillad flere posteringer inden for ét bilagsfelt** være angivet til Ja i oversigtspanelet **Generelt** på siden **Finansparametre**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bogføre kreditor- eller debitorbetalinger i oversigtsform til en bankkonto
 
@@ -186,6 +186,3 @@ Hvis der skal foretages en korrektion af Debitor- eller Kreditorkontoen i Finans
 ### <a name="the-system-allows-it"></a>"Systemet tillader det"
 
 Organisationer bruger ofte udelukkende funktionen ét bilag, fordi systemet lader dem bruge den, uden at de forstår konsekvenserne.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til produktionsperformance
-description: I dette emne beskrives, hvad der er omfattet af Power BI-indhold til produktionsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+description: I dette emne beskrives, hvad der er omfattet af Power BI-indhold til produktionsperformance.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 661617ea7e51ac5cacdd5a08ee52f6a6e43b44be
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c815a2e37f9882d695bf170a806301a3145d0f06
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686680"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094206"
 ---
 # <a name="production-performance-power-bi-content"></a>Power BI-indhold til produktionsperformance
 
@@ -128,6 +128,3 @@ Følgende tabel viser de nøgledimensioner, der bruges som filtre til at skabe u
 | Enheder                  | Id og navn                                                   |
 | Ressourcer                 | Ressource-id, ressourcenavn, ressourcetype og ressourcegruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-id og varegruppe         |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

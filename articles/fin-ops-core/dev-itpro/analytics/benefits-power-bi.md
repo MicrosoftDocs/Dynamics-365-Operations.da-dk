@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til Frynsegoder
-description: I dette emne beskrives Power BI-indhold til Frynsegoder. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+description: I dette emne beskrives Power BI-indhold til Frynsegoder.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d0a5fe54bb4f5541f610f8ea76afa7813e3a599a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5a894ebfb79eab4888178c930b9e7d55cf735c91
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687248"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093075"
 ---
 # <a name="benefits-power-bi-content"></a>Power BI-indhold til Frynsegoder
 
@@ -69,6 +69,3 @@ Følgende data bruges til at udfylde rapporterne i Power BI-indhold til **Frynse
 | Medarbejdernavn            | Fornavn, efternavn og fulde navn                                                                       | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertitel           | Titel og anciennitetsdato                                                                                   | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                                        | Firma, kompensation, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, job, ansættelse, job, frynsegoder |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

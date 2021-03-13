@@ -3,14 +3,13 @@ title: Navigationsmenumodul
 description: Dette emne omhandler navigationsmenumoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +17,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: 65f8b6128b140f3fa776659d8920dfc5e095213f
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4411216"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097384"
 ---
 # <a name="navigation-menu-module"></a>Navigationsmenumodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler navigationsmenumoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Det primære formål med navigationsmenumoduler er at give brugerne af webstedet mulighed for at gennemse produkter og websider i henhold til det kanalnavigationshierarki, der er defineret i Dynamics 365 Commerce Headquarters. Elementer, der er konfigureret i et navigationsmenumodul, vises som navigation i webstedets sidehoved. Moduler til navigationsmenuer understøtter også statiske menupunkter med links til andre sider på et e-handels-websted.
 
@@ -46,7 +44,9 @@ I følgende illustration vises et eksempel på en navigationsmenu for Fabrikam-w
 |---------------------------|-----------------------|-------------|
 | Kildetekst                  | **Detail**, **Manuel oprettelse**, **Detail og manuel oprettelse** | **Detail**-værdien giver mulighed for at få vist kanalnavigationshierarkiet fra Commerce Headquarters i navigationsmenuen. Værdien af **Manuel oprettelse** tillader, at statiske menupunkter overvåges. Værdien af **Detail og manuel oprettelse** tillader en blanding af begge dele. |
 | Vise kategoribilleder | **Sand** eller **Falsk**    | Når denne egenskab er aktiveret, viser kategoribilleder i den navigationsmenu, som er defineret i Commerce Headquarters for hver kategori. Tilføjet i Commerce version 10.0.14. |
-| Aktivere navigationsmenu på flere niveauer | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan navigationsmenuen vise flere niveauer i navigationshierarkiet. Denne funktion er tilgængelig i version 10.0.15 af Dynamics 365 Commerce. |
+| Vise kampagner | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan kampagner konfigureres ved hjælp af billeder, links og tekst. Denne egenskab blev tilføjet i Commerce version 10.0.17-udgaven. |
+| Tilføje Kampagner | Tekst, billede eller link | Når egenskaben **Vis kampagner** er aktiveret, kan du tilføje tekst, et billede eller et link som kampagneindhold i navigationsmenuen. |
+| Aktivere navigationsmenu på flere niveauer | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan navigationsmenuen vise flere niveauer i navigationshierarkiet. Denne funktion er tilgængelig i Commerce version 10.0.15-udgaven. |
 | Antal niveauer | heltal | Denne egenskab definerer antallet af niveauer, der skal vises, hvis egenskaben **Aktiver navigationsmenu på flere niveauer** er indstillet til **Sand**. |
 | Statisk menupunkt| Matrix af værdier| Statiske menupunkter, der knytter et menupunkts navn til et link til en statisk webside. Du kan oprette menupunkter under andre menupunkter. Som standard vises statiske menuer på rodniveau, og de føjes til kanalnavigationshierarkiet, hvis det findes. |
 | Vis rodmenu | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan navigationsmenuen defineres under en brugerdefineret rod (f.eks. **Køb nu**). Denne funktion er tilgængelig i version 10.0.15 af Dynamics 365 Commerce. |
@@ -72,6 +72,3 @@ Du kan finde flere oplysninger om, hvordan du føjer et navigationsmenumodul til
 [Cookieoverholdelse](cookie-compliance.md)
 
 [Overskriftsmodul](author-header-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

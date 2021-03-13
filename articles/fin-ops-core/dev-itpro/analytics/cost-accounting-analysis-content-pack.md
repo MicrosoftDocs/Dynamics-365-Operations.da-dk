@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til omkostningsregnskabsanalyse
-description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsregnskabsanalyse. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsregnskabsanalyse.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c9a4741c1b09b8e68a9fe95d6f4effa328615d5
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683865"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093380"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-indhold til omkostningsregnskabsanalyse
 
@@ -123,6 +123,3 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Regnskabskalendere                   | Kalender, beskrivelse af kalender                                                                                       |
 | Regnskabsår                       | Kalenderår                                                                                                        |
 | Regnskabsperioder                     | Kalenderårperiode                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

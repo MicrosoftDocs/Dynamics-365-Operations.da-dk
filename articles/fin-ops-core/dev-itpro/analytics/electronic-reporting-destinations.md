@@ -1,9 +1,9 @@
 ---
 title: Destinationer for elektronisk rapportering (ER)
-description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering (ER), de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
+description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering, de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687152"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097275"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -51,7 +51,7 @@ Der findes også en [Udskriv](er-destination-type-print.md)-destinationstype. Hv
 
 ## <a name="overview"></a>Oversigt
 
-Du kan kun konfigurere destinationer for ER-konfigurationer, der er [importeret](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) til aktuelle Finance-forekomst, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**. Funktionaliteten for ER-destinationsstyring er tilgængelig på **Organisationsadministration** \> **Elektronisk rapportering** \> **Destination for elektronisk rapportering**.
+Du kan kun konfigurere destinationer for ER-konfigurationer, der er [importeret](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) til aktuelle Finans-forekomst, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**. Funktionaliteten for ER-destinationsstyring er tilgængelig på **Organisationsadministration** \> **Elektronisk rapportering** \> **Destination for elektronisk rapportering**.
 
 ### <a name="default-behavior"></a>Standardfunktionsmåde
 
@@ -62,7 +62,7 @@ Hvis du angiver indstillingen **Batchbehandling** til **Nej** i dialogboksen **I
 Hvis du angiver **Batchbehandling** til **Ja**, køres et ER-format i [batch](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview)-tilstand. Det relevante batchjob oprettes på basis af de parametre, du angiver på fanen **Kør i baggrunden** i dialogboksen **ER-parametre**.
 
 > [!NOTE]
-> Kobbeskrivelsen startes for at informere dig om kørslen af en ER-formattilknytning. Det indeholder også navnet på den udførte ER-komponent.
+> Jobbeskrivelsen informerer dig om kørslen af en ER-formattilknytning. Den indeholder også navnet på den kørte ER-komponent.
 
 [![Køre et ER-format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -90,11 +90,13 @@ Når du har oprettet en reference, kan du oprette en fildestination for hver out
 
 Derefter kan du i dialogboksen **Indstillinger for destination** aktivere og deaktivere individuelle destinationer for fildestinationen. Knappen **Indstillinger** bruges til at styre alle destinationer for en valgt fildestination. I dialogboksen **Indstillinger for destination** kan du styre hver destination separat ved at vælge indstillingen **Aktiveret** for destinationen.
 
-I versioner af Finance **før version 10.0.9** kan du oprette **én fildestination** for hver outputkomponent af samme format som f.eks. en mappe eller en fil, der er markeret i feltet **Filnavn**. Men i **version 10.0.9 og senere** kan du oprette **flere fildestinationer** for hver outputkomponent af samme format.
+I versioner af Finans **før version 10.0.9** kan du oprette **én fildestination** for hver outputkomponent af samme format som f.eks. en mappe eller en fil, der er markeret i feltet **Filnavn**. Men i **version 10.0.9 og senere** kan du oprette **flere fildestinationer** for hver outputkomponent af samme format.
 
 Du kan f.eks. bruge denne egenskab til at konfigurere fildestinationer for en filkomponent, der bruges til at generere et udgående dokument i Excel-format. En destination ([Arkiv](er-destination-type-archive.md)) kan konfigureres til at gemme den oprindelige Excel-fil i et ER-jobarkiv, og en anden destination ([E-mail](er-destination-type-email.md)) kan konfigureres til samtidigt at [konvertere](#OutputConversionToPDF) Excel-filen til PDF-format og sende PDF-filen med e-mail.
 
 [![Konfigurere flere destinationer for et enkelt formatelement](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+
+Når du kører et ER-format, køres altid alle de destinationer, der er konfigureret for komponenter i formatet. Derudover er funktionaliteten af ER-destinationer blevet forbedret i Finans **version 10.0.17 og senere**, og den giver dig mulighed for at konfigurere forskellige destinationssæt til et enkelt ER-format. Denne konfiguration markerer hvert sæt som konfigureret til en bestemt brugerhandling. ER-API'en er [udvidet](er-apis-app10-0-17.md), så der kan leveres en handling, som brugeren udfører ved at køre et ER-format. Den handlingskode, der leveres, overføres til ER-destinationer. Du kan køre forskellige destinationer i et ER-format, afhængigt af den leverede handlingskode. Yderligere oplysninger finder du i [Konfigurere handlingsafhængige ER-destinationer](er-action-dependent-destinations.md).
 
 ## <a name="destination-types"></a>Destinationstyper
 
@@ -112,13 +114,13 @@ Følgende destinationer understøttes i øjeblikket for ER-formater. Du kan deak
 Du kan konfigurere destinationer kun for ER-konfigurationer, der er importeret, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**.
 
 > [!NOTE]
-> Konfigurerede destinationer er firmaspecifikke. Hvis du planlægger at bruge et ER-format i forskellige firmaer i den aktuelle forekomst af Finance, skal du konfigurere destinationer for det pågældende ER-format for hvert af disse firmaer.
+> Konfigurerede destinationer er firmaspecifikke. Hvis du planlægger at bruge et ER-format i forskellige firmaer i den aktuelle forekomst af Finans, skal du konfigurere destinationer for det pågældende ER-format for hvert af disse firmaer.
 
 Når du konfigurerer fildestinationer for et valgt format, skal du konfigurere dem for hele formatet.
 
 [![Konfigurationslink](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Samtidig kan du have flere [versioner](general-electronic-reporting.md#component-versioning) af det format, der er importeret til den aktuelle forekomst af Finance. Du kan få vist dem, hvis du vælger linket **Konfiguration**, der tilbydes, når du vælger feltet **Reference**.
+Samtidig kan du have flere [versioner](general-electronic-reporting.md#component-versioning) af det format, der er importeret til den aktuelle forekomst af Finans. Du kan få vist dem, hvis du vælger linket **Konfiguration**, der tilbydes, når du vælger feltet **Reference**.
 
 [![Konfigurationsversioner](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -146,7 +148,7 @@ Når du har fuldført denne konfiguration, bliver indstillingen **Kør kladde** 
 
 Normalt køres et ER-format inden for området for en bestemt forretningsproces. Leveringen af et udgående dokument, der genereres under udførelsen af et ER-format, skal dog nogle gange ses som en del af den pågældende forretningsproces. I dette tilfælde skal udførelsen af forretningsprocessen annulleres, hvis leveringen af et genereret udgående dokument til en konfigureret destination ikke lykkes. Hvis du vil konfigurere den rette ER-destination, skal du vælge indstillingen **Stop behandling ved fejl**.
 
-Du kan f.eks. konfigurere behandling af kreditorbetalinger, så ER-formatet **ISO20022-kreditoverførsel** køres for at generere betalingsfilen og de supplerende dokumenter (f.eks. følgeskrivelse og kontrolrapport). Hvis en betaling kun skal anses for at være behandlet korrekt, hvis følgeskrivelsen er leveret korrekt via mail, skal du markere afkrydsningsfeltet **Stop behandling ved fejl** for komponenten **CoveringLetter** i den rette destinationsfil som vist i følgende illustration. I dette tilfælde ændres status for den betaling, der er valgt til behandling, kun fra **Ingen** til **Sendt**, når det følgebrev, der er oprettet, accepteres til levering af en e-mailudbyder, der er konfigureret i Finance-forekomsten.
+Du kan f.eks. konfigurere behandling af kreditorbetalinger, så ER-formatet **ISO20022-kreditoverførsel** køres for at generere betalingsfilen og de supplerende dokumenter (f.eks. følgeskrivelse og kontrolrapport). Hvis en betaling kun skal anses for at være behandlet korrekt, hvis følgeskrivelsen er leveret korrekt via mail, skal du markere afkrydsningsfeltet **Stop behandling ved fejl** for komponenten **CoveringLetter** i den rette destinationsfil som vist i følgende illustration. I dette tilfælde ændres status for den betaling, der er valgt til behandling, kun fra **Ingen** til **Sendt**, når det følgebrev, der er oprettet, accepteres til levering af en e-mailudbyder, der er konfigureret i Finans-forekomsten.
 
 [![Konfigurere proceshåndtering for fildestinationsfejl](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
@@ -154,31 +156,30 @@ Hvis du fjerner markeringen af afkrydsningsfeltet **Stop behandling ved fejl** f
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Konvertering af output til PDF
 
-Du kan bruge PDF-konverteringsindstillingen til at konvertere output i Microsoft Office-format (Excel/Word) til PDF-format.
+Du kan bruge PDF-konverteringsindstillingen til at konvertere output i Microsoft Office-format (Excel eller Word) til PDF-format.
 
 ### <a name="make-pdf-conversion-available"></a>Stille PDF-konvertering til rådighed
 
-Hvis du vil stille PDF-konverteringsindstillingen til rådighed i den aktuelle Finance-forekomst, skal du åbne arbejdsområdet **Funktionsstyring** og aktivere funktionen **Konverter udgående dokumenter til elektroniske rapportering fra Microsoft Office-formater til PDF**.
+Hvis du vil stille PDF-konverteringsindstillingen til rådighed i den aktuelle Finans-forekomst, skal du åbne arbejdsområdet **Funktionsstyring** og aktivere funktionen **Konverter udgående dokumenter til elektroniske rapportering fra Microsoft Office-formater til PDF**.
 
 [![Aktivere PDF-konvertering af funktionen udgående dokumenter i Funktionsstyring](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
 ### <a name="applicability"></a>Anvendelighed
 
-PDF-konverteringsindstillingen kan kun aktiveres for de filkomponenter, der bruges til at oprette output i Microsoft Office Excel- eller Word-format (**Excel-fil**). Når denne indstilling er slået til, konverteres output, der genereres i Office-format, automatisk til PDF-format.
+PDF-konverteringsindstillingen kan kun aktiveres for de filkomponenter, der bruges til at oprette output i Office-format (Excel eller Word) (**Excel-fil**). Når denne indstilling er slået til, konverteres output, der genereres i Office-format, automatisk til PDF-format.
 
 ### <a name="limitations"></a>Begrænsninger
 
 > [!NOTE]
 > Denne funktion er en prøveversionsfunktion og er underlagt de vilkår for anvendelse, der er beskrevet i [Supplerende vilkår for anvendelse for Microsoft Dynamics 365-prøveversioner](https://go.microsoft.com/fwlink/?linkid=2105274).
 
-> [!NOTE]
-> PDF-konverteringsindstillingen er kun tilgængelig for skyinstallationer.
->
-> Den fremstillede PDF-fil er begrænset til maksimalt 300 sider.
->
-> I Microsoft Dynamics 365 Finance version 10.0.9 (april 2020) understøttes kun liggende sideretning i det PDF-dokument, der oprettes af et Excel-output. Med udgivelsen af Dynamics 365 Finance version 10.0.10 (maj 2020) kan du [angive sideretningen](#SelectPdfPageOrientation) i det PDF-dokument, der oprettes ud fra et Excel-output, mens du konfigurerer en ER-destination.
->
-> Det er kun de almindelige systemskrifttyper i Windows-operativsystemet, der bruges til konvertering af et output, der ikke indeholder integrerede skrifttyper.
+PDF-konverteringsindstillingen er kun tilgængelig for skyinstallationer.
+
+Det fremstillede PDF-dokument er begrænset til maksimalt 300 sider.
+
+På nuværende tidspunkt understøttes kun liggende sideretning i det PDF-dokument, der fremstilles af et Excel-output, i Finans **version 10.0.9**. I Finans **version 10.0.10 (maj 2020) og nyere** kan du angive [sideretningen](#SelectPdfPageOrientation) i det PDF-dokument, der oprettes ud fra et Excel-output, mens du konfigurerer en ER-destination.
+
+Det er kun de almindelige systemskrifttyper i Windows-operativsystemet, der bruges til konvertering af et output, der ikke indeholder integrerede skrifttyper.
 
 ### <a name="use-the-pdf-conversion-option"></a>Bruge PDF-konverteringsindstillingen
 
@@ -193,11 +194,11 @@ Hvis du opretter en ER-konfiguration i Excel-format og vil konvertere den til PD
 [![Vælge en sideretning til PDF-konvertering](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> Hvis du vil have mulighed for at vælge PDF-sideretningen, skal du installere Microsoft Dynamics 365 Finance version 10.0.10 (maj 2020) eller nyere.
+> Hvis du vil have mulighed for at vælge PDF-sideretningen, skal du installere Finans version 10.0.10 eller nyere.
 >
 > Den valgte sideretning anvendes på alle de ER-konfigurationer, der genereres i Excel-format og konverteres derefter til PDF-format.
 >
-> Hvis der oprettes et konverteret PDF-dokument ud fra en ER-konfiguration i Word-format, hentes sideretningen i PDF-dokumentet fra Word-dokument.
+> Hvis en ER-konfiguration i Word-format konverteres til PDF-format, hentes sideretningen i PDF-dokumentet fra Word-dokument.
 
 ## <a name="security-considerations"></a>Sikkerhedsovervejelser
 
@@ -225,7 +226,7 @@ Nr. Standard Microsoft Azure Blob-lageret, der er defineret og anvendes til doku
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Hvad er formålet med fildestinationen i indstillingerne for destinationen? Hvad gør denne indstilling?
 
-**Fil**-destinationen bruges til at styre en dialogboks. Hvis du aktiverer denne destination, eller hvis ingen destination er defineret for en konfiguration, vises dialogboksen Åbn eller Gem, når der oprettes en outputfil.
+**Fil**-destinationen bruges til at styre en dialogboks i din webbrowser, når du kører et ER-format i interaktiv tilstand. Hvis du aktiverer denne destination, eller hvis ingen destination er defineret for en konfiguration, vises dialogboksen Åbn eller Gem i din webbrowser, når der oprettes en outputfil.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Kan du give et eksempel på den formel, der refererer til en kreditorkonto, som jeg kan sende mail til?
 
@@ -239,5 +240,4 @@ Dit format skal først være tilgængeligt i ER-konfigurationerne. Hvis denne fo
 
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Konfigurere handlingsafhængige ER-destinationer](er-action-dependent-destinations.md)

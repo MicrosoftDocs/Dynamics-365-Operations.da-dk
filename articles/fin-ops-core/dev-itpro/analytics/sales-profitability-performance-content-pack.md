@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til Salgs og rentabilitetsperformance
-description: I dette emne beskrives, hvad der er omfattet af Power BI-indhold til Salgs og rentabilitetsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
+description: I dette emne beskrives, hvad der er omfattet af Power BI-indhold til Salgs og rentabilitetsperformance.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b5ad461c86f44d880f57c940f6e3a5cb325f7e08
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7aafaa4c974f6b72e78f870eceb266fd0ef71900
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688228"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093557"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Power BI-indhold til Salgs og rentabilitetsperformance
 
@@ -107,6 +107,3 @@ Følgende nøgledimensioner i salgskuben bruges som filtre til at skabe udsnit a
 | Datoer            | Datoer                                                |
 
 Som standard viser indholdet data for det indeværende kalenderår. Du kan dog ændre datofilteret i rapportens filterafsnit. Du kan også ændre firmafilteret.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

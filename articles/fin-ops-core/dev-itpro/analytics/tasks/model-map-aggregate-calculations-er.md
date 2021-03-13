@@ -1,6 +1,6 @@
 ---
 title: Bruge modeltilknytningskonfiguration til samlede beregninger på databaseniveau
-description: Denne procedure indeholder oplysninger om, hvordan du designer en ny modeltilknytningskonfiguration til elektronisk rapportering (ER) og bruger indbyggede ER-funktioner til effektive samlede beregninger.
+description: Dette emne beskriver, hvordan du kan designe en ny modeltilknytningskonfiguration til elektronisk rapportering og bruge indbyggede ER-funktioner til effektive samlede beregninger.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1c4ddf0fac5ba962c3dab545bfa7e0df4afa948
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6a392697f6b91bc6555d0d72d09ecd7da32e1a3f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684109"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094259"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Bruge modeltilknytningskonfiguration til samlede beregninger på databaseniveau
 
@@ -116,6 +116,3 @@ Denne procedure er til brugere, der er tildelt rollen som Systemadministrator el
 68. Klik på Gem.
     * Bemærk, at feltet 'Udførelse' angiver, at denne gruppering udføres på kørselstidspunktet i hukommelsen, selv om der er ikke defineret nogen aggregeringer, og den valgte datakilde af typen 'Tabelposter' refererer til samme 'Intrastat'-tabel. Det skyldes, at datakilden indeholder nogle beregnede felter, som endnu ikke kan oversættes til SQL-databaseniveauet.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

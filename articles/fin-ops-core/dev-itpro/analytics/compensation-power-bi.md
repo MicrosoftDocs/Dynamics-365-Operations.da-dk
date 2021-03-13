@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til kompensation
-description: I dette emne beskrives Power BI-indhold til kompensation. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+description: I dette emne beskrives Power BI-indhold til kompensation. Det forklarer, hvordan du får adgang til rapporterne, og giver oplysninger om datamodellen.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64b4f27b4a1fa3762169a18746c6b0933bddf3ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b625ea7dcbb6bd8b80cbcdcc544c59b9839fc19d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687175"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093050"
 ---
 # <a name="compensation-power-bi-content"></a>Power BI-indhold til kompensation
 
@@ -71,6 +71,3 @@ Følgende data bruges til at udfylde rapporterne i Power BI-indhold til **Kompen
 | Medarbejdernavn            | Fornavn, efternavn og fulde navn                                                                       | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertitel           | Titel og anciennitetsdato                                                                                   | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                                        | Firma, kompensation, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, job, ansættelse, job, frynsegoder |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

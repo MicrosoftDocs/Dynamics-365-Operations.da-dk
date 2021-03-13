@@ -1,6 +1,6 @@
 ---
-title: Designe en konfiguration til generering af dokumenter i Excel-format
-description: Dette emne giver oplysninger om, hvordan du kan designe et ER-format (Electronic reporting) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
+title: Designe en konfiguration til at generere dokumenter i Excel-format
+description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686532"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094023"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -189,6 +189,3 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
 [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurer Elektronisk rapportering (ER) for at trække data over i Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,35 +3,32 @@ title: Produktsamlingsmoduler
 description: Dette emne indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4bae9ca722c2b6e776abb0e1da9694edc8afadf8
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410951"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097097"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Produktregistrering er et primært værktøj, som forhandlere bruger til at skabe kundeengagement et e-handelswebsted. Produktsamlingsmoduler hjælper forhandlerne med at skabe overbevisende indkøbsoplevelser ved at levere en intuitiv visuel brugergrænseflade, der kan bruges til hurtigt at oprette produktsamlinger.
 
@@ -67,6 +64,10 @@ I følgende tabel beskrives de forskellige typer produktsamlingsmoduler i Dynami
 | Ofte købt sammen | Kunstig intelligens/maskinel indlæring | Dette modul anvender maskinel indlæring til at analysere forbrugeres indkøbsmønstre og anbefale relaterede varer, der ofte indkøbes sammen med et bestemt produkt. Denne liste kan vise personlige resultater for en bruger, der er logget på, hvis webstedets forfatter vælger denne indstilling. |
 | Folk kan også godt lide           | Kunstig intelligens/maskinel indlæring | Dette modul bruger maskinel indlæring til at analysere forbrugeres indkøbsmønstre og anbefale varer, der er relateret til et bestemt produkt. Denne liste kan vise personlige resultater for en bruger, der er logget på, hvis webstedets forfatter vælger denne indstilling. |
 | Muligheder til dig              | Kunstig intelligens/maskinel indlæring | Dette modul bruger maskinel indlæring til at analysere købsmønstrene for den bruger, der er logget på, og levere personlige anbefalinger, som er baseret på disse købsmønstre. For en gæstebruger vil denne liste være skjult. |
+
+## <a name="supported-modules"></a>Understøttede moduler 
+
+Modulet produktsamling understøtter [modulet Hurtig visning](quick-view-module.md), som giver brugerne mulighed for at få vist produktoplysninger og føje varer til indkøbsvognen fra en produktsamlingsside.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Føje et produktsamlingsmodul til en kategoriside
 
@@ -110,5 +111,4 @@ Følgende tabel viser de listetyper, der kan vælges i dialogboksen **Vælg prod
 
 [Oversigt over produktanbefalinger](product-recommendations.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Hurtig visning-.modul](quick-view-module.md)

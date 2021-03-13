@@ -1,6 +1,6 @@
 ---
 title: Tilknyt ER-komponenter i det oprettede format til datamodelelementer (november 2016)
-description: Følgende procedure viser, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan knytte datamodelelementer til komponenter i den oprettede ER-konfiguration (elektroniske rapportering), der definerer et elektronisk dokumentformat for betalingsvirksomhedens domæne.
+description: Dette emne beskriver, hvordan du kan knytte datamodelelementer til komponenter i den oprettede ER-konfiguration (elektronisk rapportering).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 109a6736196b6ed3d1445a9f1a70c5f2b9d5af58
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 043c66cf3345678aa7750ef50323700384579299
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684325"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093767"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>Tilknyt ER-komponenter i det oprettede format til datamodelelementer (november 2016)
 
@@ -113,6 +113,3 @@ Hver formatversion kan konfigureres som tilgængelig for brug fra en bestemt dat
 1. Udvid sektionen ISO-land/område-koder.
     * Hver formatadgang kan begrænses ved at identificere bestemte lande/områder, hvori et format er gældende. Hvis listen over lande/områder for det pågældende format er tom, kan dette format bruges i ethvert firma. Når der indsættes nogle ISO-land/område-koder på denne liste over lande/områder, kan dette format kun bruges i firmaer, hvis den primære adresse er i landet/området.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

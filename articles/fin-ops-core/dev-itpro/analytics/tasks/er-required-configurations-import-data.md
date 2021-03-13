@@ -1,6 +1,6 @@
 ---
 title: Oprette ER-krævede konfigurationer til at importere data fra en ekstern fil
-description: Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe ER-konfigurationer for at importere data i Microsoft Dynamics 365 Finance-programmet fra en ekstern fil.
+description: Dette emne beskriver, hvordan du kan designe konfigurationer af elektronisk rapportering for at importere data til Microsoft Dynamics 365 Finance-appen fra en ekstern fil.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0492fae6cfad505fc9fee5cd20f483c9c6d2a061
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684274"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093717"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>Oprette ER-krævede konfigurationer til at importere data fra en ekstern fil
 
@@ -254,6 +254,3 @@ Udfør denne formattilknytning af testformål. Brug filen 1099entries.xml, som d
 27. Luk siden.
 28. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

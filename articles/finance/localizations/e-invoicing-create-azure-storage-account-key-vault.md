@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4441737"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104223"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Oprette en Azure Storage-konto og Key Vault
 
 [!include [banner](../includes/banner.md)]
-
-
-
-Tjenesten for tilføjelsesprogrammet til elektronisk fakturering står for at opbevare af alle dine virksomhedsdata i de Microsoft Azure-ressourcer, der ejes af din virksomhed. Hvis du vil sikre dig, at tjenesten fungerer korrekt, og at alle de virksomhedsdata, der kræves til og oprettes af tilføjelsesprogrammet til elektronisk fakturering, kun tilgås af tilføjelsesprogrammet, skal du oprette to hovedressourcer i Azure:
-
-- En Azure Storage-konto (Blob-lager) til opbevaring af elektroniske fakturaer
-- En Azure Key Vault til opbevaring af certifikater og URI'en (Uniform Resource Identifier) for lagerkontoen
-
-> [!NOTE]
-> En dedikeret Key Vault-ressource og et Blob-lager for kunden skal tildeles specifikt til brug sammen med tilføjelsesprogrammet til elektronisk fakturering.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -91,6 +80,3 @@ I dette emne skal du fuldføre to hovedtrin:
 9. I dialogboksen **Sikkerhedskonto** skal du vælge sikkerhedskontoen ved at tilføje **Tilføjelsesprogram til elektronisk fakturering**.
 10. Vælg **Tilføj**, og vælg derefter **Gem Key Vault-ændringer**.
 11. På siden **Oversigt** skal du kopiere værdien **DNS-navn** for Key Vault. Denne værdi vil blive brugt under konfigurationen af tjenesten i RCS og vil blive henvist til som *URI for Key Vault*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

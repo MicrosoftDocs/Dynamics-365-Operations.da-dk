@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3a23ee452535423684c6d210a448ee768379fa08
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 28301cdfb86d00ea6f04e996fe7fb1485e83b2d4
+ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516752"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104958"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Sky- og kantskalaenheder til styring af arbejdsbyrder i produktion og lagersted
 
@@ -165,7 +164,7 @@ Du kan nu konfigurere skalaenheder og arbejdsbelastninger i dit prøveversionsmi
 
 > [!IMPORTANT]
 > Når du konfigurerer skyskalaenheder, kan du [udføre alle nødvendige trin i portalen til styring af skalaenhed](#scale-unit-manager-portal).
-<!-- >
+<!-- 
 > If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
 
 ### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Administrere skyskalaenheder og arbejdsbyrder ved hjælp af portalen til styring af skalaenhed
@@ -176,7 +175,7 @@ Gå til [portalen til styring af skalaenhed](https://aka.ms/SCMSUM), og log på 
 
 Hvis du vil tilføje en eller flere skalaenheder, der er tilgængelige i topologien, skal du vælge **Tilføj skalaenheder**. I prøveversionen kan du se den skyskalaenhed, som du har installeret fra en af de kampagnekoder, du har modtaget som en del af prøveversionsprogrammet.
 
-<!-- > [!IMPORTANT]
+<!--  [!IMPORTANT]
 > In the public preview, the Scale Unit Manager portal shows the cloud scale unit that you received as part of the preview program. Any edge scale unit that you created based on an LBD configuration can't be managed in the Scale Unit Manager portal yet. For configuration details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md) -->
 
 Under fanen **Definerede arbejdsbyrder** skal du bruge knappen **Opret arbejdsbyrde** til at føje en arbejdsbyrde for lokationsstyring eller produktionskørsel til en af skalaenhederne. For hver arbejdsbyrde skal du angive konteksten for de processer, der skal ejes af arbejdsbyrden. For arbejdsbyrder til lokationsstyring er konteksten et specifikt lagersted på en bestemt lokation og juridisk enhed. For arbejdsbyrder til produktionskørsel er konteksten et specifikt sted i en juridisk enhed.
@@ -189,6 +188,3 @@ Under fanen **Definerede arbejdsbyrder** skal du bruge knappen **Opret arbejdsby
 <!-- ### Create an edge scale unit using your custom on-premises hardware appliance
 
 In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

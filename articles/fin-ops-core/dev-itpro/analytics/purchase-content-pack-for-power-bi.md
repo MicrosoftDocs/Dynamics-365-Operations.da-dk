@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til købsforbrugsanalyse
-description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til Købsforbrugsanalyse. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet.
+description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til Købsforbrugsanalyse.
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/24/2019
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5914abaafab509e278d7a85441928feddb0b5164
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680608"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093436"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Power BI-indhold til købsforbrugsanalyse
 
@@ -154,6 +154,3 @@ Følgende nøgledimensioner i indholdet bruges som filtre til at skabe udsnit af
 | Datoer                  | Datoer, årsforskydning                                    |
 
 Som standard viser indholdet data for det indeværende kalenderår. Du kan dog ændre datofilteret i rapportens filterafsnit. Du kan også ændre firmafilteret.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

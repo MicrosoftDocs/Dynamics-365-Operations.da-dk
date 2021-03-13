@@ -1,9 +1,9 @@
 ---
 title: Gitteregenskaber
-description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret, hvis der skal være adgang til disse egenskaber.
+description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret for at få adgang til disse egenskaber.
 author: jasongre
 manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: f8ec45208ea86f4b1782eaeb1d14bb414e3b577f
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693768"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104303"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner, der kan bruges til at forbedre brugernes produktivitet, oprette mere interessante visninger af dine data og få meningsfuld indsigt i dine data. Denne artikel dækker følgende funktioner: 
+Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner, du kan bruge til at forbedre brugernes produktivitet, oprette mere interessante visninger af dine data og få meningsfuld indsigt i dine data. Denne artikel dækker følgende funktioner: 
 
 -  Beregner totaler
 -  Skrive forud i forhold til systemet
 -  Evaluere matematiske udtryk 
 -  Gruppere data i tabelformat (aktiveres separat ved hjælp af funktionen **(Prøveversion) Gruppering i gitre**)
--  Fastgjorte systemkolonner
+-  Fryse kolonner
 
 ## <a name="calculating-totals"></a>Beregner totaler
 I Finance and Operations-apps har brugerne mulighed for at få vist totaler nederst i numeriske kolonner i gitre. Disse totaler vises i en sektion med sidefod nederst i gitteret. 
@@ -41,14 +41,14 @@ I Finance and Operations-apps har brugerne mulighed for at få vist totaler nede
 ### <a name="showing-the-grid-footer"></a>Visning af gitterets sidefod
 Der er et sidefodsområde i bunden af alle tabelgitre i Finance and Operations-apps. Sidefoden kan vise værdifulde oplysninger, der er relateret til de data, der vises i gitteret. Her er nogle eksempler på sådanne oplysninger:
 
-- Antallet af markerede rækker i tabellen (når der er valgt mere end én post)
+- Antallet af markerede rækker i tabellen (når du markerer mere end én post)
 - Samlede beløb nederst i konfigurerede og numeriske kolonner
 - Antallet af rækker i datasættet 
 
-Denne sidefod er som standard skjult, men den kan let aktiveres. Hvis du vil have vist sidefoden for et gitter, skal du højreklikke på kolonneoverskriften i gitteret og vælge indstillingen **Vis sidefod**. Når sidefoden er aktiveret for et bestemt gitter, vil denne indstilling blive husket, indtil brugeren vælger at skjule sidefoden, hvilket kan gøres ved at højreklikke på en kolonneoverskrift og vælge **Skjul sidefod**.  Bemærk, at handlingen **Vis sidefod/Skjul sidefod** forventes at få ny placering i en senere opdatering. 
+Denne sidefod er som standard skjult, men du kan slå den til. Hvis du vil have vist sidefoden for et gitter, skal du højreklikke på kolonneoverskriften i gitteret og vælge indstillingen **Vis sidefod**. Når du har aktiveret sidefoden i et bestemt gitter, huskes denne indstilling, indtil brugeren vælger at skjule sidefoden. Hvis du vil skjule sidefoden, skal du højreklikke på kolonneoverskriften og vælge **Skjul sidefod**.  Placeringen af handlingen **Vis sidefod/Skjul sidefod** kan blive flyttet til en ny placering i en senere opdatering. 
 
 ### <a name="specifying-columns-with-totals"></a>Angive kolonner med totaler
-I øjeblikket vil ingen kolonner blive konfigureret til at vise totaler som standard. Dette betragtes i stedet for som en aktivitet til engangsopsætning, der svarer til at justere kolonnebredden i gitre. Når du har angivet, at du vil have vist totaler for en kolonne, vil denne indstilling blive husket, næste gang du besøger siden.  
+Aktuelt viser ingen kolonner som standard totaler. Dette betragtes i stedet for som en aktivitet til engangsopsætning, der svarer til at justere kolonnebredden i gitre. Når du har angivet, at du vil have vist totaler for en kolonne, vil denne indstilling blive husket, næste gang du besøger siden.  
 
 Du kan konfigurere en kolonne på to måder for at vise en total: 
 
@@ -122,8 +122,14 @@ På samme måde som du kan markere (eller fjerne markeringen af) alle rækker i 
 ### <a name="hiding-column-names"></a>Skjule kolonnenavne
 Ved gruppering af data viser standardfunktionsmåden kolonnenavnet i gruppehovedrækken. Fra og med version 10.0.14/Platform update 38 kan du vælge at udelade kolonnenavnet i gruppehovedrækker ved at vælge **Gitterindstillinger** > **Skjul gruppekolonnenavn**.
 
-## <a name="pinned-system-columns"></a>Fastgjorte systemkolonner
-Kolonnen med rækkevalg og kolonnen med rækkestatus i det nye gitter er fastgjort, eller fastfrosset, i venstre del af gitteret. Når disse kolonner er medtaget i et gitter, er de derfor altid synlige for brugeren, uafhængigt af den vandrette rulleposition i gitteret.   
+## <a name="freezing-columns"></a>Fryse kolonner
+Visse kolonner i et gitter kan være så vigtige for sammenhængen, at de ikke skal rulle ud af visningen. Du vil i stedet have, at værdierne i disse kolonner altid er synlige. I version 10.0.17 giver funktionen **Frys kolonner i gitteret** denne fleksibilitet for brugerne. 
+
+Hvis du vil fryse en kolonne, skal du højreklikke på kolonnens overskrift og derefter vælge **Frys kolonne**. Første gang du fuldfører dette trin, bliver den valgte kolonne den første kolonne, og den rulles ikke længere ud af visningen. En efterfølgende kolonne, som du fryser, vil blive tilføjet til højre for den sidste frosne kolonne. Du kan bruge standardfunktionen Flyt til at sortere frosne kolonner efter behov. Frosne kolonner kan dog ikke flyttes, så de vises mellem sættet af ikke-frosne kolonner. Frosne kolonner kan heller ikke flyttes, så de vises mellem sættet af frosne kolonner.
+
+Hvis du vil frigøre en kolonne, skal du højreklikke på den frosne kolonnes overskrift og derefter vælge **Frigør kolonne**. 
+
+Bemærk, at rækkevalget og rækkestatuskolonnerne i det nye gitter altid fryses som de første to kolonner. Når disse kolonner er medtaget i et gitter, er de derfor altid synlige for brugerne, uanset den vandrette rulleposition i gitteret. Disse to kolonner kan ikke omrokeres.
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg det nye gitterkontrolelement i mit miljø? 
@@ -148,7 +154,7 @@ Funktionen **Nyt gitterkontrolelement** kan aktiveres i miljøer på niveau 1 (u
 
 Alle efterfølgende brugersessioner vil starte med det nye kontrolelement aktiveret.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde brug af det nye gitter for enkelte sider 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde enkelte sider brug af det nye gitter 
 Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API fra og med version 10.0.13/Platform update 37, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i `run()`-metoden for formularen.
 
  ```this.forceLegacyGrid();```
@@ -159,7 +165,7 @@ Denne API anvendes, indtil oktober 2021-frigivelsen, når det nye gitterkontrole
 Hvis en udvikler angiver egenskaben **WidthMode** til **SizeToAvailable** for kolonner i det nye gitter, har disse kolonner som udgangspunkt samme bredde, som de ville have, hvis egenskaben var angivet til **SizeToContent**. De strækkes dog for at bruge eventuel ekstra tilgængelig bredde i gitteret. Hvis egenskaben er angivet til **SizeToAvailable** for flere kolonner, deler alle kolonnerne eventuel ekstra tilgængelig bredde i gitteret. Men hvis en bruger manuelt tilpasser størrelsen på en af disse kolonner, bliver kolonnen statisk. Den forbliver på denne bredde og kan ikke længere strækkes for at bruge den ekstra tilgængelige gitterbredde.  
 
 ## <a name="known-issues"></a>Kendte problemer
-I dette afsnit findes en liste over kendte problemer i forbindelse med den nye gitterkontrol, mens funktionen er i prøvetilstand.  
+I dette afsnit vedligeholdes en liste over kendte problemer for det nye gitterkontrol.  
 
 ### <a name="open-issues"></a>Aktuelle problemer
 -  Når funktionen **Nyt gitterkontrolelement** er aktiveret, vil nogle sider fortsat anvende det eksisterende gitterkontrolelement. Det sker i følgende situationer:  
@@ -170,20 +176,44 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
     Når en bruger først støder på en af disse situationer, vises der en meddelelse om opdatering af siden. Når denne meddelelse vises, vil siden fortsat anvende det eksisterende gitter for alle brugere indtil den næste opdatering af produktversionen. En bedre håndtering af disse scenarier, så det nye gitter kan anvendes, vil blive betragtet som en fremtidig opdatering.    
     
 -  [KB 4582758] Poster er slørede, når du ændrer zoom fra 100 til en hvilken som helst anden procent
-    
+-  [KB 4592012] Uventet klientfejl i IE11, når der indsættes flere linjer fra Excel
+    -  Microsoft gør ikke noget ved dette problem
+
+### <a name="fixed-as-part-of-10016"></a>Rettet i 10.0.16
+
+-  [KB 4598335] Strengkontroller for flere linjer overholder ikke visningshøjder på lister/kort 
+-  [KB 4591891] Fakturaforslagslinjer forsvinder, når linjer afmærkes
+-  [KB 4592104] Det er ikke muligt at redigere poster efter klik på "Løs problem" og flytning til en anden række uden at rette valideringsproblemet
+-  [KB 4594449] Knapperne "Aldrig" og "Ryd" mangler i datovælgeren 
+-  [KB 4594448] Angivelse af tid behandles anderledes med det nye gitter
+-  [KB 4600059] Uventet klientfejl med mailbegrænsning
+-  [KB 4574584] Forhåndsvisning af vedhæftede udgifter er ikke tilgængelig, når du peger på kvitteringsikonet
+
 ### <a name="fixed-as-part-of-10015"></a>Rettet i 10.0.15    
 
--  [KB 4582723] Visningsindstillinger vises ikke, når det udføres senere i formularens livscyklus
+-  (Kvalitetsopdatering) [KB 4594444] Uventet klientfejl med eksempelvisning af segmenteret postkontrolelement
+-  [KB 4582723] Visningsindstillinger vises ikke, når det gøres senere i formularens livscyklus
+-  [KB 4591988] Problemer med brug af tastaturet til valg af en værdi fra opslag i ReferenceGroup
+-  [KB 4588958] Regression Suite Automation Tool (RSAT) testen mislykkes med fejl: TypeError: Kan ikke læse egenskaben 'tekst' for udefineret
+-  [KB 4591970] Uventet klientfejl under indsættelse fra Excel, umiddelbart efter at der klikkes i gitteret
+-  [KB 4591904] Dataændringer gemmes ikke efter redigering af et kontrolelement, hvis brugeren med det samme har klikket på og åbnet opslaget på et andet kontrolelement
+-  [KB 4584752] Uventet klientfejl med siden med Projektfakturaforslag
+-  [KB 4584540] Det er ikke muligt at forlade gitteret, når en enkelt række er indsat i en kladdelinje
+-  [KB 4591908] Ved oprettelse af en ny række, forbliver fokus på den kolonne, du var i
 
 ### <a name="fixed-as-part-of-10014"></a>Rettet i 10.0.14
 
 -  (Kvalitetsopdatering) [KB 4584752] Uventet klientfejl med siden med Projektfakturaforslag
+-  [KB 4583880] Regression Suite Automation Tool (RSAT) test mislykkes på OpenLookup-handling med "Egenskaben RowIndex kan ikke læses af udefineret"
+-  [KB 4583847] Uventet klientfejl ved navigering i opslag
 
 ### <a name="fixed-as-part-of-10013"></a>Rettet i 10.0.13
 
+-  (Kvalitetsopdatering) [KB 4584752] Uventet klientfejl med siden med Projektfakturaforslag
 -  (Kvalitetsopdatering) [KB 4583880] Regression Suite Automation Tool (RSAT) Test mislykkes på OpenLookup-handling med "Egenskaben RowIndex kan ikke læses af udefineret"
 -  (Kvalitetsopdatering) [KB 4583847] Uventet klientfejl ved navigering i opslag 
 -  (Kvalitetsopdatering) [Fejl 471777] Kan ikke vælge felter i et gitter for at redigere eller oprette en mobilapp
+-  [KB 4582727] Gitter fryses, når brugeren får dialogboks til varer med flere antal
 -  [Fejl 474851] Hyperlinks i referencegruppekontrolelementer virker ikke 
 -  [Fejl 474848] Udvidede eksempler med gitre vises ikke
 -  [KB 4582726] Egenskaben RotateSign overholdes ikke  
@@ -202,7 +232,7 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 -  [KB 4575434] Opslaget filtreres ikke, når feltet er blevet ændret
 -  [KB 4575430] Værdier i adgangskodefelter maskeres ikke i gitteret
 -  [KB 4569438] "Behandlingen er stoppet på grund af et valideringsproblem" vises efter afmærkningslinjer under udligning af leverandørtransaktioner
--  [KB 4569434] Når du opdaterer formularen Juridiske enheder, er der færre poster
+-  [KB 4569434] Når du opdaterer formularen juridiske enheder, er der færre poster
 -  [KB 4575297] Fokus bliver ved med at blive flyttet til ruden Arbejdsrutineoptager, når der redigeres og tabuleres gennem et gitter
 -  [KB 4566773] Korrektionstransaktioner vises ikke som negative på forespørgsel om bilagstransaktioner 
 -  [KB 4575288] Fokus nulstilles til den aktive række, når du markerer rammen mellem rækker på en simpel liste
@@ -217,22 +247,22 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 - [KB 4558572] Den formatering, der er knyttet til listepanelet **ExtendedStyle**, anvendes ikke.
 - [KB 4558573] Valideringsfejl kan ikke rettes, når den nødvendige ændring er uden for gitteret.
 - [KB 4558584] Negative tal gengives ikke korrekt.
-- [KB 4560726] Der opstår "en uventet klientfejl", efter at der er skiftet mellem lister ved hjælp af listevisningskontrol.
-- [KB 4562141] Gitterindeks er slået fra, efter at der er tilføjet en ny post.
+- [KB-4560726] Der opstår "en uventet klientfejl", efter at der er skiftet mellem lister ved hjælp af listevisningskontrol.
+- [KB-4562141] Gitterindeks er slået fra, efter at der er tilføjet en ny post.
 - [KB 4562151] Indstillingerne **Valider** og **Kopiér** i Arbejdsrutineoptager er ikke tilgængelige for dato- og nummerkontrolelementer. 
-- [KB 4562153] Afkrydsningsfelter med flere valg er ikke synlige på liste/kort-gitre.
+- [KB-4562153] Afkrydsningsfelter med flere valg er ikke synlige på liste/kort-gitre.
 - [KB 4562646] Undertiden kan du ikke klikke uden for gitteret, når du f.eks. vælger rækker i gitteret.
-- [KB 4562647] Fokus nulstilles til det første kontrolelement i dialogboksen **Publicer**, efter at der er tilføjet en ny række i sikkerhedsrollegitteret.
-- [KB 4563310] Den udvidede visning lukkes ikke, efter at en række er ændret.
-- [KB 4563313] Der opstår en "uventet klientfejl" i Internet Explorer, når der vælges en værdi i et opslag.
+- [KB-4562647] Fokus nulstilles til det første kontrolelement i dialogboksen **Publicer**, efter at der er tilføjet en ny række i sikkerhedsrollegitteret.
+- [KB-4563310] Den udvidede visning lukkes ikke, efter at en række er ændret.
+- [KB-4563313] Der opstår en "uventet klientfejl" i Internet Explorer, når der vælges en værdi i et opslag.
 - [KB 4564557] Opslag og rullemenuer åbnes ikke i Internet Explorer
-- [KB 4563324] Navigationen fungerer ikke, når arbejdsområdet **Personalestyring** er blevet åbnet.
+- [KB-4563324] Navigationen fungerer ikke, når arbejdsområdet **Personalestyring** er blevet åbnet.
 
 ### <a name="fixed-as-part-of-10011"></a>Rettet i 10.0.11
 
 - [Problem 432458] Tomme eller dublerede linjer vises i starten af nogle underordnede samlinger.
 - [KB 4549711] Linjer i et betalingsforslag kan ikke fjernes korrekt, når det nye gitterkontrolelement er aktiveret.
-- [KB 4558374] Poster, der kræver dialogboks med polymorfvælger, kan ikke oprettes.
+- [KB 4558374] Poster, der kræver dialogboks med polymorf vælger, kan ikke oprettes.
 - [KB 4558375] Der vises ingen hjælpetekst på kolonner i det nye gitter.
 - [KB 4558376] Listepanelets gitre gengives ikke med den korrekte højde i Internet Explorer.
 - [KB 4558377] Kombinationsfeltkolonner, der har **SizeToAvailable**-bredde, gengives ikke på visse sider.
@@ -244,7 +274,7 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 - [KB 4558383] Kontrolelementer uden for gitteret opdateres ikke, når den sidste post er slettet.
 - [KB 4558587] Referencegrupper, der indeholder kombinationsbokse for erstatningsfelter, viser ikke værdier.
 - [KB 4562143] Felter opdateres ikke, når en rækkeændring/gitterbehandling sidder fast efter sletning af rækker.
-- [KB 4562645] Der opstår en undtagelse, når der åbnes et opslag, mens RSAT-test (Regression Suite Automation Tool) kører.
+- [KB 4562645] Der opstår en undtagelse, når der åbnes et opslag, mens Regression Suite Automation Tool RSAT-test kører.
 
 ### <a name="fixed-as-part-of-10010"></a>Rettet i 10.0.10
 
@@ -263,6 +293,3 @@ I dette afsnit findes en liste over kendte problemer i forbindelse med den nye g
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsopdatering til 10.0.9/Platform update 33
 
 - [KB 4550367] Tidsværdier formateres ikke korrekt.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
