@@ -1,5 +1,5 @@
 ---
-title: Fejlfinding i forbindelse med problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
+title: Foretage fejlfinding af problemer med dobbeltskrivning i Finance and Operations-apps
 description: Dette emne indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med dobbeltskrivningsmodulet i Finance and Operations-apps.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131239"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Fejlfinding i forbindelse med problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Foretage fejlfinding af problemer med dobbeltskrivning i Finance and Operations-apps
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Hvis du ikke kan åbne **Dobbeltskrivning**-siden ved at vælge titlen **Dobbelt
 
 **Påkrævede legitimationsoplysninger for at løse problemet:** Den samme bruger, der har konfigureret dobbeltskrivning.
 
-Du kan få vist følgende fejlmeddelelse, når du forsøger at konfigurere en ny enhed til dobbeltskrivning. Den eneste bruger, der kan oprette en tilknytning, er den bruger, der har konfigureret dobbeltskrivningsforbindelsen.
+Du kan få vist følgende fejlmeddelelse, når du forsøger at konfigurere en ny tabel til dobbeltskrivning. Den eneste bruger, der kan oprette en tilknytning, er den bruger, der har konfigureret dobbeltskrivningsforbindelsen.
 
 *Svarstatuskoden tyder ikke på, at handlingen lykkedes: 401 (uautoriseret)*
 
@@ -77,7 +77,7 @@ Denne fejl opstår, når det sammenkædede Dataverse-miljø ikke er tilgængelig
 
 Du kan løse problemet ved at oprette en supportanmodning til dataintegrationsteamet. Tilknyt netværkssporingen, så dataintegrationsteamet kan markere tilknytningerne som **Kører ikke** i backend.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Der opstod en fejl under forsøg på at starte en tabeltilknytning
+## <a name="error-while-trying-to-start-a-table-mapping"></a>Der opstod en fejl under forsøg på at starte en tabeltilknytning
 
 Du kan få vist en fejl som følgende, når du forsøger at angive denne tilstand for en tilknytning til **Kører**:
 
@@ -86,7 +86,4 @@ Du kan få vist en fejl som følgende, når du forsøger at angive denne tilstan
 Rettelsen til denne fejl afhænger af årsagen til fejlen:
 
 + Hvis tilknytningen har afhængige tilknytninger, skal du sørge for at aktivere de afhængige tilknytninger for denne tabeltilknytning.
-+ Tilknytningen mangler muligvis kilde- eller destinationsfelter. Hvis der mangler et felt i Finance and Operations-appen, skal du følge trinnene i afsnittet [Problemer med manglende enhedsfelter i tilknytninger](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Hvis der mangler et felt i Dataverse, skal du klikke på knappen **Opdater tabeller** på tilknytningen, så felterne automatisk udfyldes i tilknytningen.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ Tilknytningen mangler muligvis kilde- eller destinationskolonner. Hvis der mangler en kolonne i Finance and Operations-appen, skal du følge trinnene i afsnittet [Problemer med manglende tabelkolonner i tilknytninger](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Hvis der mangler en kolonne i Dataverse, skal du klikke på knappen **Opdater tabeller** på tilknytningen, så kolonnerne automatisk udfyldes i tilknytningen.

@@ -2,7 +2,7 @@
 title: Oprette et masseansættelsesprojekt
 description: Denne fremgangsmåde fører dig gennem processen med at oprette et masseansættelsesprojekt.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,23 +11,23 @@ ms.technology: ''
 ms.search.form: HRMMassHireProject,  HRMMassHireLineCreate, HcmJobLookup, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ddcfd531e7b5c76ac4b15cee54880f6868a73f1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fbec24099ca0b6e3c97cc479bc949f47e8592b77
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130319"
 ---
 # <a name="create-a-mass-hire-project"></a>Oprette et masseansættelsesprojekt
 
 
 
-Denne fremgangsmåde fører dig gennem processen med at oprette et masseansættelsesprojekt. En rekrutteringsmedarbejder kan bruge masseansættelsesprojekter til nemt at oprette flere stillinger og ansætte et antal arbejdstagere til disse stillinger. Du begynder denne procedure ved at gå til Personale > Rekruttering > Masseansættelsesprojekter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+Denne fremgangsmåde fører dig gennem processen med at oprette et masseansættelsesprojekt. En rekrutteringsmedarbejder kan bruge masseansættelsesprojekter til nemt at oprette flere stillinger og ansætte et antal arbejdstagere til disse stillinger. Du begynder denne procedure ved at gå til Human Resources > Rekruttering > Masseansættelsesprojekter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
 1. Klik på Ny.
 2. Skriv en værdi i feltet Masseansættelsesprojekt.
@@ -48,6 +48,3 @@ Denne fremgangsmåde fører dig gennem processen med at oprette et masseansætte
     * Du kan eventuelt vælge afdeling for de nye stillinger.  
 13. Klik på OK.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

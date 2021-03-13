@@ -1,5 +1,5 @@
 ---
-title: Foretage fejlfinding af problemer i forbindelse med opgraderinger af Finance and Operations-apps
+title: Foretage fejlfinding af problemer med opgraderinger af Finance and Operations-apps
 description: Dette emne indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer relateret til opgraderinger af Finance and Operations-apps.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a11ce426d7f30b6b124bd2022514a0201c2b332c
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131215"
 ---
-# <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Foretage fejlfinding af problemer i forbindelse med opgraderinger af Finance and Operations-apps
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Foretage fejlfinding af problemer med opgraderinger af Finance and Operations-apps
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,7 +42,7 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 **Påkrævet rolle for at rette fejlen:** Systemadministrator
 
-Du kan få vist en fejlmeddelelse, der ligner følgende eksempel, når du forsøger at bruge **DualWriteProjectConfiguration**-enheden til at opdatere en Finance and Operations-app til Platform Update 30.
+Du kan få vist en fejlmeddelelse, der ligner følgende eksempel, når du forsøger at bruge tabellen **DualWriteProjectConfiguration** til at opdatere en Finance and Operations-app til Platform Update 30.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -62,7 +62,7 @@ Følg disse trin for at løse dette problem.
 8. Vælg **Synkroniser** for at foretage en komplet databasesynkronisering.
 9. Når hele database synkroniseringen er udført korrekt, skal du køre databasesynkroniseringstrinnet igen i Microsoft Dynamics Lifecycle Services (LCS) og bruge de manuelle opgraderingsscripts, så du kan fortsætte med opdateringen.
 
-## <a name="missing-entity-fields-issue-on-maps"></a>Problemer med manglende enhedsfelter i tilknytninger
+## <a name="missing-table-columns-issue-on-maps"></a>Problem med manglende tabelkolonner i tilknytning
 
 **Påkrævet rolle for at rette fejlen:** Systemadministrator
 
@@ -70,27 +70,24 @@ På siden **Dobbeltskrivning** kan du få vist en fejlmeddelelse, der ligner fø
 
 *Manglende kildefelt \<field name\> i skemaet.*
 
-![Eksempel på fejlmeddelelsen om manglende kildefelt](media/error_missing_field.png)
+![Eksempel på fejlmeddelelsen om manglende kildekolonne](media/error_missing_field.png)
 
-Hvis du vil løse problemet, skal du først følge disse trin for at sikre, at felterne findes i enheden.
+Hvis du vil løse problemet, skal du først følge disse trin for at sikre, at kolonnerne findes i tabellen.
 
 1. Log på den virtuelle maskine for Finance and Operations-appen.
-2. Gå til **Arbejdsområder \> Datastyring**, vælg feltet **Rammeparametre**, og vælg derefter **Opdater liste over enheder** under fanen **Tabelindstillinger** for at opdatere tabellerne.
-3. Gå til **Arbejdsområder \> Datastyring**, vælg fanen **Datatabeller**, og kontrollér, at enheden er angivet. Hvis enheden ikke vises, skal du logge på den virtuelle maskine for Finance and Operations-appen og kontrollere, at enheden er tilgængelig.
+2. Gå til **Arbejdsområder \> Datastyring**, vælg feltet **Rammeparametre**, og vælg derefter **Opdater tabelliste** under fanen **Tabelindstillinger** for at opdatere tabellerne.
+3. Gå til **Arbejdsområder \> Datastyring**, vælg fanen **Datatabeller**, og kontrollér, at tabellen er vist. Hvis tabellen ikke vises, skal du logge på den virtuelle maskine for Finance and Operations-appen og kontrollere, at tabellen er tilgængelig.
 4. Åbn siden **Tabeltilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
-5. Vælg **Opdater liste over enheder**, så felterne i tabeltilknytninger automatisk udfyldes.
+5. Vælg **Opdater tabelliste**, så kolonnerne i tabeltilknytninger automatisk udfyldes.
 
 Hvis problemet stadig ikke er løst, skal du følge disse trin.
 
 > [!IMPORTANT]
-> Disse trin fører dig gennem processen til sletning af en enhed og derefter tilføjelse af den igen. Hvis du vil undgå problemer, skal du sørge for at følge trinene nøjagtigt.
+> Disse trin fører dig gennem processen til sletning af en tabel og derefter tilføjelse af den igen. Hvis du vil undgå problemer, skal du sørge for at følge trinene nøjagtigt.
 
 1. Gå i Finance and Operations-appen til **Arbejdsområder \> Datastyring**, og markér feltet **Datatabeller**.
-2. Find den enhed, der mangler attributten. Klik på **Rediger måltilknytning** på værktøjslinjen.
+2. Find den tabel, der mangler attributten. Klik på **Rediger måltilknytning** på værktøjslinjen.
 3. Klik på **Generér tilknytning** i ruden **Knyt midlertidig placering til mål**.
 4. Åbn siden **Tabeltilknytning** fra siden **Dobbeltskrivning** i Finance and Operations-appen.
 5. Hvis attributten ikke udfyldes automatisk på tilknytningen, skal du tilføje den manuelt ved at klikke på knappen **Tilføj attribut** og derefter klikke på **Gem**. 
 6. Vælg tilknytningen, og klik på **Kør**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

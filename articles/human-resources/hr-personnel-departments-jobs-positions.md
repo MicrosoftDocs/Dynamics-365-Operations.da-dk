@@ -1,8 +1,8 @@
 ---
 title: Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger
-description: Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Denne artikel beskriver begrebsmæssige oplysninger om disse elementer.
+description: Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Human Resources. Denne artikel beskriver begrebsmæssige oplysninger om disse elementer.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,23 +11,23 @@ ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e1dace0dc6477e259d1004440c4cda8060bf90e3
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417789"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130223"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger
 
-Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Denne artikel beskriver begrebsmæssige oplysninger om disse elementer. 
+Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Human Resources. Denne artikel beskriver begrebsmæssige oplysninger om disse elementer. 
 
 Følgende eksempel bruges til at illustrere de begreber, der er beskrevet i denne artikel.
 
@@ -38,9 +38,9 @@ Følgende eksempel bruges til at illustrere de begreber, der er beskrevet i denn
 |**Salg**|Salgschef (centralt)|Salgsdirektør|
 |**Regnskab**|Regnskabsansvarlig|Regnskabschef|
 |**Regnskab**|Regnskab-A|Bogholder|
-|**Personale**|Personalechef (øst)|Personalechef|
-|**Personale**|Personalechef (vest)|Personalechef|
-|**Personale**|Personalechef (centralt)|Personalechef|
+|**Human Resources**|Human Resourceschef (øst)|Human Resourceschef|
+|**Human Resources**|Human Resourceschef (vest)|Human Resourceschef|
+|**Human Resources**|Human Resourceschef (centralt)|Human Resourceschef|
 
 
  <a name="departments"></a>Afdelinger
@@ -165,6 +165,3 @@ Du kan ændre de oplysninger, der er nævnt i den foregående tabel for en still
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

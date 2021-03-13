@@ -1,5 +1,5 @@
 ---
-title: Importere data fra Excel-dataenhedsskabeloner, der har flere regneark
+title: Dataskabeloner med flere regneark
 description: I dette emne beskrives, hvordan du kan importere data til Finance and Operations ved hjælp af Excel-dataenhedsskabeloner.
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688073"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130575"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Importere data fra Excel-dataenhedsskabeloner, der har flere regneark
+# <a name="data-templates-with-multiple-worksheets"></a>Dataskabeloner med flere regneark
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ I tilfælde, hvor der skal overføres en ny version af den samme fil eller en he
 ## <a name="upload-a-file-using-run-project"></a>Overføre en fil ved hjælp af Kør projekt
 
 Du kan overføre en Excel-fil, mens du bruger indstillingen **Kør projekt** til at udføre et importprojekt. Du skal være omhyggelig med kun at overføre de filer, der har de samme regneark som de eksisterende tilknytninger på dataenhederne i dataprojektet. Hvis der ikke findes et regneark i den fil, der netop er overført, vises der en fejlmeddelelse i systemet, og importen stopper. Hvis tilknytningen til regnearket skal ændres for et objekt, skal tilknytningerne i dataprojektet først opdateres fra dataprojektet, før du kan bruge filen i **Kør projekt**-oplevelsen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Velkommen til Dynamics 365 Human Resources
 description: Dynamics 365 Human Resources giver den indsigt i arbejdsstyrken, du skal bruge til at opbygge databaserede medarbejdererfaringer på tværs af flere områder.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65100ba5798ac5731d510c8f6f112bb7a33b4e65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1136d4c811f819665202f5f93e54b63b98188970
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129538"
 ---
 # <a name="welcome-to-dynamics-365-human-resources"></a>Velkommen til Dynamics 365 Human Resources
 
@@ -40,11 +40,11 @@ Dynamics 365 Human Resources giver den indsigt i arbejdsstyrken, du skal bruge t
 - Uddannelse og certificering
 - Selvbetjeningsprogrammer
 
-Personale forbinder personer og driftsdata for at hjælpe dig med at optimere udgifterne til personale og tage hånd om dine medarbejdere.
+Human Resources forbinder personer og driftsdata for at hjælpe dig med at optimere udgifterne til personale og tage hånd om dine medarbejdere.
 
 ## <a name="whats-new"></a>Nyheder
 
-[Nyheder eller ændringer i Personale](hr-admin-whats-new.md)
+[Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)
 
 ## <a name="administrator-guide"></a>Administratorvejledning
 
@@ -61,7 +61,7 @@ Personale forbinder personer og driftsdata for at hjælpe dig med at optimere ud
 
 [Overblik](hr-developer-overview.md)</br>
 [Udvide med Power Apps og Power Automate](hr-developer-power-apps.md)</br>
-[Personaleobjekter i Common Data Service](hr-developer-entities.md)</br>
+[Human Resourcesobjekter i Dataverse](hr-developer-entities.md)</br>
 [Brugerdefinerede felter](hr-developer-custom-fields.md)</br>
 [Konfigurere dataintegration](hr-admin-integration-choose-technology.md)</br>
 [Enheds-API-reference](hr-developer-api-authentication.md)
@@ -78,6 +78,3 @@ Personale forbinder personer og driftsdata for at hjælpe dig med at optimere ud
 [Administrere orlov og fravær](hr-leave-and-absence-overview.md)</br>
 [Udvikle medarbejdere](hr-develop-performance-management-overview.md)</br>
 [Opret kurser](hr-learning-courses.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

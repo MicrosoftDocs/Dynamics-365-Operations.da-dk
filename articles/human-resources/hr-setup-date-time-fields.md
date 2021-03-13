@@ -1,8 +1,8 @@
 ---
 title: Forstå dato- og klokkeslætsfelter
-description: Forstå, hvad du kan forvente, når du bruger dato- og klokkeslætsfelter i Microsoft Dynamics 365 Human Resources. Bliv klar over, hvad du kan forvente, når der interageres med dato- og klokkeslætsdata i en form i Human Resources, en ekstern kilde eller Common Data Service.
-author: Darinkramer
-manager: AnnBe
+description: Forstå, hvad du kan forvente, når du bruger dato- og klokkeslætsfelter i Microsoft Dynamics 365 Human Resources.
+author: andreabichsel
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -15,21 +15,21 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 027e46d53fd9704f5483e90409be53c1510e8cd4
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d843eb8cefcd0f2f45c8956cd451f88ca6336efb
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529846"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130441"
 ---
-# <a name="understand-date-and-time-fields"></a>Forstå dato- og klokkeslætsfelter
+# <a name="understand-date-and-time-fields"></a>Forstå dato- og tidsfelter
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**Dato- og klokkeslætsfelter** er et grundkoncept i Dynamics 365 Human Resources. Det er vigtigt at forstå, hvordan du kan arbejde med **Dato- og klokkeslætsdata** i Dynamics 365 Human Resources-formularer, Common Data Service og eksterne kilder.
+**Dato- og klokkeslætsfelter** er et grundkoncept i Dynamics 365 Human Resources. Det er vigtigt at forstå, hvordan du kan arbejde med **Dato- og klokkeslætsdata** i -formularer, Dataverse og eksterne kilder.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Forstå forskellen mellem feltdatatyper for dato og dato og klokkeslæt
 
@@ -43,7 +43,7 @@ Når Human Resources viser data i et **Dato og klokkeslæt**-felt, justeres dato
 
 Når der indtastes data i et **Dato og klokkeslæt**-felt, er de data, der vises på skærmen, ikke de samme som de data, der gemmes i databasen, hvis brugerens tidszone ikke er indstillet til UTC-tid (Coordinated Universal Time). Data i **Dato og klokkeslæt**-felter gemmes altid som UTC.
 
-[![Arbejderform](./media/worker-form.png)](./media/worker-form.png)
+[![Arbejderformular UTC](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Forstå Dato og klokkeslæt-felter i databasen 
 
@@ -53,13 +53,13 @@ I det foregående eksempel er starttidspunktet et tidspunkt, ikke en bestemt dat
   
 I nedenstående eksempel bliver medarbejder 000724 aktiv på samme tidspunkt uanset tidszone. Medarbejderen vil blive aktiv 30-4-2019 i GMT-tidszonen, hvilket er det samme som 1-5-2019 i GMT + 12:00 tidszonen. De refererer begge til samme tidspunkt og ikke en bestemt dato. 
 
-[![Arbejderform](./media/worker-form2.png)](./media/worker-form2.png)
+[![Arbejderformular GMT](./media/worker-form2.png)](./media/worker-form2.png)
 
-## <a name="date-and-time-data-in-data-management-framework-excel-common-data-service-and-power-bi"></a>Dato og klokkeslæt-data i Data Management Framework, Excel, Common Data Service og Power BI 
+## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Dato og klokkeslæt-data i Data Management Framework, Excel, Dataverse og Power BI 
 
-Data Management Framework, Excel-tilføjelsesprogrammet, Common Data Service og Power BI-rapportering er alle designet til at interagere med data direkte på databaseniveau. Da der ikke er nogen klient, der kan justere **Dato og klokkeslæt**-data til brugerens tidszone, er alle **Dato og klokkeslæt**-værdier i UTC-tid, hvilket kan medføre ukorrekte antagelser ved indtastning eller visning af data.  
+Data Management Framework, Excel-tilføjelsesprogrammet, Dataverse og Power BI-rapportering er alle designet til at interagere med data direkte på databaseniveau. Da der ikke er nogen klient, der kan justere **Dato og klokkeslæt**-data til brugerens tidszone, er alle **Dato og klokkeslæt**-værdier i UTC-tid, hvilket kan medføre ukorrekte antagelser ved indtastning eller visning af data.  
  
-**Dato og klokkeslæt**-data, der sendes via DMF, Excel eller Common Data Service, antages af databasen at være i UTC-format. Dette kan forårsage forvirring, når sendte værdi for **Dato og klokkeslæt** ikke vises som forventet, fordi den bruger, der ser dataene, ikke har brugerens tidszone angivet til UTC. 
+**Dato og klokkeslæt**-data, der sendes via DMF, Excel eller Dataverse, antages af databasen at være i UTC-format. Dette kan forårsage forvirring, når sendte værdi for **Dato og klokkeslæt** ikke vises som forventet, fordi den bruger, der ser dataene, ikke har brugerens tidszone angivet til UTC. 
  
 Det samme kan ske ved tilbageførsel, når dataene eksporteres. **Dato og klokkeslæt**-dataene i den eksporterede DMF-enhed kan være forskellige fra, hvad der vises i Dynamics-klienten. 
  
@@ -69,11 +69,11 @@ Når der bruges eksterne kilder, f.eks. DMF, til at vise eller oprette data, er 
 
 **Human Resources med brugerens tidszone indstillet til UTC**
 
-[![Arbejderform](./media/worker-form3.png)](./media/worker-form3.png)
+[![Arbejderformular angivet til UTC](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources med brugerens tidszone indstillet til GMT +12:00** 
 
-[![Arbejderform](./media/worker-form4.png)](./media/worker-form4.png)
+[![Arbejderformular angivet til GMT](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel via OData**
 
@@ -85,16 +85,13 @@ Når der bruges eksterne kilder, f.eks. DMF, til at vise eller oprette data, er 
 
 **DMF-eksport**
 
-[![Midlertidig DMF](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF Eksport](./media/DMFexport.png)](./media/DMFexport.png)
 
-**Excel via Common Data Service**
+**Excel via Dataverse**
 
-[![Excel via Common Data Service](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel via Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Se også
 
 [Dato- og klokkeslætsdata](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [Brugerindstillede tidszoner](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

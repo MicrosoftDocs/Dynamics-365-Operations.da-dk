@@ -2,7 +2,7 @@
 title: Oprette afdelinger og knytte dem til afdelingshierarkiet
 description: En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation. En afdeling er ansvarlig for et bestemt område i organisationen, såsom salg, regnskab eller personale. Du kan bruge afdelinger til at rapportere om funktionsområder. Afdelinger kan have ansvar for driftsregnskabet.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,25 +11,25 @@ ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab9d16c8b8596f0890e0256f33608fda99a5312f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417739"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130367"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Oprette afdelinger og knytte dem til afdelingshierarkiet
 
 En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation. En afdeling er ansvarlig for et bestemt område i organisationen, såsom salg, regnskab eller personale. Du kan bruge afdelinger til at rapportere om funktionsområder. Afdelinger kan have ansvar for driftsregnskabet.
 
-En afdeling kan også omfatte en gruppe af bærere. Stillinger kan tildeles til afdelinger. For at oprette en afdeling skal du klikke på **Personale** &gt; **Afdelinger** &gt; **Afdeling**. I følgende tabel forklares de felter, der er tilgængelige.
+En afdeling kan også omfatte en gruppe af bærere. Stillinger kan tildeles til afdelinger. For at oprette en afdeling skal du klikke på **Human Resources** &gt; **Afdelinger** &gt; **Afdeling**. I følgende tabel forklares de felter, der er tilgængelige.
 
 | Felt               | Beskrivelse                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +45,7 @@ En afdeling kan også omfatte en gruppe af bærere. Stillinger kan tildeles til 
 
 Følg disse trin for at føje en afdeling til afdelingshierarkiet.
 
-1.  Klik på **Personale** &gt; **Afdelinger** &gt; **Afdelingshierarki**.
+1.  Klik på **Human Resources** &gt; **Afdelinger** &gt; **Afdelingshierarki**.
 2.  Klik på **Rediger**, og vælg derefter den organisation, som afdelingen skal være under.
 3.  Klik på **Indsæt**, og vælg **Afdeling** på listen.
 4.  På listen over afdelinger, der vises, skal du vælge afdelingen til at føje den til hierarkiet.
@@ -54,6 +54,3 @@ Følg disse trin for at føje en afdeling til afdelingshierarkiet.
 
 ## <a name="steps-for-creating-a-department"></a>Trin til oprettelse af en afdeling
 Se artiklen [Definerere nye afdelinger](../fin-and-ops/hr/tasks/define-new-departments.md) for den trinvise procedure til at oprette en ny afdeling. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

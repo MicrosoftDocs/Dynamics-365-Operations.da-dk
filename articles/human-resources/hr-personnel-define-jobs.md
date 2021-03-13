@@ -2,7 +2,7 @@
 title: Definere nye job
 description: Opgaven fokuserer på oprettelsen af et nyt job.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2d7a469b7f09c6cf3a051991698a00317dc125d2
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130248"
 ---
 # <a name="define-new-jobs"></a>Definere nye job
 
@@ -29,7 +29,7 @@ ms.locfileid: "4417825"
 
 Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hjælp af manuel indtastning og kopier fra skabelon-funktionalitet. Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Denne opgave er beregnet til personalespecialisten.
 
-1. Gå til Personale > Job > Job.
+1. Gå til Human Resources > Job > Job.
 2. Klik på Ny.
 3. Skriv en værdi i feltet Job.
 4. Skriv en værdi i feltet Beskrivelse.
@@ -44,11 +44,11 @@ Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hj�
 11. Angiv en standardbeskrivelse for jobbet i feltet Note.
     * Beskrivelsen gælder for alle stillinger, der er tildelt til det job, der er defineret her.  
 12. Slå udvidelsen af sektionen Jobklassificering til/fra.
-13. Vælg en jobfunktion, der skal bruges i standardrapportering i Personale.
+13. Vælg en jobfunktion, der skal bruges i standardrapportering i Human Resources.
 14. Find og vælg den ønskede post på listen.
 15. Klik op linket i den valgte række på listen.
 16. Vælg en jobtype for at klassificerer job yderligere i organisationen. 
-    * Jobtyper kan bruges i rapportering i hele Personale.  
+    * Jobtyper kan bruges i rapportering i hele Human Resources.  
 17. Find og vælg den ønskede post på listen.
 18. Klik op linket i den valgte række på listen.
 19. Slå udvidelsen af sektionen Kompensation til/fra.
@@ -71,6 +71,3 @@ Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hj�
 33. Slå udvidelsen af sektionen Uddannelse til/fra.
 34. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

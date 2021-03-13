@@ -1,6 +1,6 @@
 ---
 title: Oversigt over dobbeltskrivning
-description: Dette emne giver en oversigt over dobbeltskrivning. Dobbeltskrivning er en infrastruktur, der giver næsten realtidsinteraktion mellem Microsoft Dynamics 365 modelbaserede apps og Finance and Operations-apps.
+description: Dette emne indeholder en oversigt over dobbeltskrivning, der giver næsten realtidsinteraktion mellem kundeengagementapps og Finance and Operations-apps.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/06/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3937850a9df716113591e49b25373beb48e3acdd
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129999"
 ---
 # <a name="dual-write-overview"></a>Oversigt over dobbeltskrivning
 
@@ -53,7 +53,7 @@ Dobbeltskrivningsinfrastrukturen kan udvides og er pålidelig og indeholder føl
 + Kombineret visning af aktivitet og fejllogfiler for dataadministratorer
 + Mulighed for at konfigurere brugerdefinerede påmindelser og tærskler og til at abonnere på beskeder
 + Intuitiv brugergrænseflade (UI) til filtrering og transformationer
-+ Mulighed for at angive og få vist enhedsafhængigheder og relationer
++ Mulighed for at angive og se tabelafhængigheder og relationer
 + Udvidelse til både standard- og brugerdefinerede tabeller og tilknytninger
 + Pålidelig administration af programlevetiden
 + Brugsklar opsætningsoplevelse for nye kunder
@@ -93,7 +93,7 @@ Dobbeltskrivning giver dataintegration på tværs af Microsoft Dynamics 365-prog
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Hvad betyder dobbeltskrivning for udviklere og arkitekter af kundeengagementapps?
 
-Dobbeltskrivning automatiserer datastrømmen mellem Finance and Operations-apps og kundeengagementapps. Dobbeltskrivning består af to AppSource-løsninger, der er installeret på Dataverse. Løsningerne udvider enhedsskemaet, plug-ins og arbejdsprocesser på Dataverse, så de kan skaleres til ERP-størrelse. For at opnå en vellykket implementering skal udviklere og arkitekter af kundeengagementapps forstå disse ændringer og samarbejde med deres kolleger på Finance and Operations-apps.
+Dobbeltskrivning automatiserer datastrømmen mellem Finance and Operations-apps og kundeengagementapps. Dobbeltskrivning består af to AppSource-løsninger, der er installeret på Dataverse. Løsningerne udvider tabelskemaet, plug-ins og arbejdsprocesser på Dataverse, så de kan skaleres til ERP-størrelse. For at opnå en vellykket implementering skal udviklere og arkitekter af kundeengagementapps forstå disse ændringer og samarbejde med deres kolleger på Finance and Operations-apps.
 
 For at skabe paritet med Finance and Operations-programmer foretager dobbeltskrivning vigtige ændringer i Dataverse-skemaet. Hvis du forstår planen, kan du slippe for at ændre noget design og udvikling fremover.
 
@@ -103,12 +103,9 @@ For at skabe paritet med Finance and Operations-programmer foretager dobbeltskri
 
 + Hvis du vil undgå tab af data i forbindelse med valutaoverførsel mellem Finance and Operations-apps og Dataverse, kan du udvide antallet af decimaler i valutadatatypen for kundeengagementapps. Med denne funktion oversættes eksisterende rækker automatisk til den nye udvidede tilstand på metadatalaget. I løbet af denne proces oversættes valutaværdien til decimaldata og ikke til pengedata, og valutaværdien understøtter 10 decimalpladser. Denne funktion er et tilvalg, og organisationer, der ikke har brug for mere end 4 decimaler, behøver ikke at tilmelde sig. Du kan finde flere oplysninger under [Migrering af valutadatatype til dobbeltskrivning](currrency-decimal-places.md).
 
-+ [Gyldighedsdato](../../dev-tools/date-effectivity.md) vil blive føjet til Dataverse. Den understøtter tidligere, nuværende og fremtidige data på samme enhed.
++ [Gyldighedsdato](../../dev-tools/date-effectivity.md) vil blive føjet til Dataverse. Den understøtter tidligere, nuværende og fremtidige data på samme tabel.
 
 + Produktets [enhedsomregninger](../../../../supply-chain/pim/tasks/manage-unit-measure.md) understøttes for produkter, tilbud, ordrer og fakturaer.
 
 Yderligere oplysninger om kommende ændringer finder du i [Nyheder eller ændringer i dobbeltskrivning](whats-new-dual-write.md).
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

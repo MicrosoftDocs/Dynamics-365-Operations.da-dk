@@ -1,6 +1,6 @@
 ---
 title: Redigere formater for at generere dokumenter, der har programdata
-description: For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Generere dokumenter med opdatering til programdata (Del 3 - Redigere model og tilknytning)".
+description: I dette emne forklares det, hvordan du designer konfigurationer af rapportering for at generere et elektronisk dokument og opdatere programdata.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e820e909bcd80b4747c06ccaaeb05c03f52b6963
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129391"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Redigere formater for at generere dokumenter, der har programdata
 
@@ -149,6 +149,3 @@ I denne procedure forklares det, hvordan du designer elektroniske rapportering (
 46. Luk siden.
 47. Luk siden.
 48. Luk siden.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

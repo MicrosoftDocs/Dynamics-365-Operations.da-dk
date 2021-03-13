@@ -2,7 +2,7 @@
 title: Få vist og administrere adresseændringer
 description: Dette emne forklarer, hvordan du kan få vist og administrere adresseændringer i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417750"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152047"
 ---
 # <a name="view-and-manage-address-changes"></a>Få vist og administrere adresseændringer
 
@@ -120,14 +120,11 @@ I nogle tilfælde kan det være, at du vil opdatere en adresse, der skal ændres
 
 ## <a name="view-and-monitor-address-changes"></a>Få vist og overvåge adresseændringer
 
-Personalemedarbejdere kan få vist og overvåge adresseændringer fra arbejdsområdet **Personalestyring**. Hvis du vil have vist adresseændringerne, skal du åbne vinduet **Personalestyring** fra siden **Start**. Adresseændringerne vises i et felt i øverste højre hjørne. Antallet over **Adresse ændringer** viser, hvor mange adresseændringer der er foretaget inden for det antal dage, der er angivet på siden **Parametre for personale**. 
+Human Resourcesmedarbejdere kan få vist og overvåge adresseændringer fra arbejdsområdet **Personalestyring**. Hvis du vil have vist adresseændringerne, skal du åbne vinduet **Personalestyring** fra siden **Start**. Adresseændringerne vises i et felt i øverste højre hjørne. Antallet over **Adresse ændringer** viser, hvor mange adresseændringer der er foretaget inden for det antal dage, der er angivet på siden **Parametre for personale**. 
 
 Når du markerer feltet **Adresseændringer**, vises oplysningerne om eventuelle adresseændringer på en ny side. Du kan evt. vælge **Medtag fremtidige adresseændringer** i øverste højre hjørne for at få vist adresseændringer med en fremtidig dato.
 
 > [!NOTE]
-> Hvis du vil modtage en påmindelse eller mail om disse adresseændringer, kan du oprette en ny påmindelsesregel på fanen **Indstillinger** i handlingsruden. Du kan finde flere oplysninger om påmindelsesregler under [Oprette påmindelsesregler](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
+> Hvis du vil modtage en påmindelse eller mail om disse adresseændringer, kan du oprette en ny påmindelsesregel på fanen **Indstillinger** i handlingsruden. Du kan finde flere oplysninger om påmindelsesregler under [Oprette påmindelsesregler](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
-> Hvis du vil konfigurere en arbejdsgang for adresseændringerne, kan du vælge indstillingen **Send eksternt** på din påmindelsesregel og derefter bruge Power Automate til at udløse forretningshændelsen og konfigurere en arbejdsgang. Yderligere oplysninger finder du under [Påmindelser som forretningshændelser](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> Hvis du vil konfigurere en arbejdsgang for adresseændringerne, kan du vælge indstillingen **Send eksternt** på din påmindelsesregel og derefter bruge Power Automate til at udløse forretningshændelsen og konfigurere en arbejdsgang. Yderligere oplysninger finder du under [Påmindelser som forretningshændelser](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).

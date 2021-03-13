@@ -2,7 +2,7 @@
 title: Konfigurere stillinger
 description: Stillinger er et vigtigt element i et organisationshierarkis lavere niveau.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, HcmWorkforceWorkspace, HcmWorkerActivityChart, HcmAllWorkersListPart, HcmPosition, HcmPositionNewPosition, HcmJobLookup, HcmPositionReportsToDialog, HcmPositionLookup, FinancialDimensionDefaultTemplatesLookup, DimensionLookup, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c078060984169d14a0fb64cf54fc134e8f26ccb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 335031731a02980cba24d2424c1505df64effbac
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130465"
 ---
 # <a name="set-up-positions"></a>Konfigurere stillinger
 
@@ -67,6 +67,3 @@ Stillinger er et vigtigt element i et organisationshierarkis lavere niveau. En s
 30. Indtast eller vælg en værdi i feltet Afdeling.
 31. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
