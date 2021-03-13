@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e3cb5dc59373b7af76fffa1b1c59728c84dfb5fb
+ms.sourcegitcommit: fd62ab3d399b0d6ea0d362f1d403a300e84a576d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693276"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "5067617"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurere egenskaber for arbejdsgang
 
@@ -73,6 +73,9 @@ Du kan angive instruktioner til brugere, der sender dokumenter til behandling og
     4. Indtast teksten i feltet **Oversat tekst**.
     5. Hvis du vil personalisere teksten, kan du indsætte pladsholdere. I trin 3 kan du se anvisninger i, hvordan du angiver en pladsholder.
     6. Klik på **Luk**.
+
+> [!NOTE]
+> Pladsholderne kan ikke tilføjes ved hjælp af kopiér og indsæt, fordi måloplysningerne ikke er indsat korrekt. Brug grænsefladen til at tilføje pladsholdere.
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Angive, hvornår denne arbejdsgang bruges via aktiveringsbetingelser
 
@@ -179,6 +182,3 @@ Hvis du vil angive kommentarer om de ændringer, du har foretaget i arbejdsgange
 2. I feltet **Angiv kommentarer om arbejdsgangen** skal du angive dine kommentarer.
 3. Gennemse kommentarer. Når du har tilføjet kommentarer, kan du ikke ændre dem.
 4. Klik på **Tilføj** til at tilføje dine kommentarer til området **Kommentarhistorik**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

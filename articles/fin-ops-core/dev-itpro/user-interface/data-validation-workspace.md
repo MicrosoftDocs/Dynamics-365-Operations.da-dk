@@ -1,6 +1,6 @@
 ---
 title: Arbejdsområdet Kontrolliste for datavalidering
-description: I arbejdsområdet Kontrolliste for datavalidering kan du spore processer til validering af data på tværs af firmaer, områder og personer. Kontrollisten kan bruges under en ny implementering efter en opgradering eller efter en overførsel.
+description: I arbejdsområdet Kontrolliste for datavalidering kan du spore processer til validering af data på tværs af firmaer, områder og personer.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
@@ -14,12 +14,12 @@ ms.reviewer: rhaertle
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: a3ac338670fdc9fc7cb526cdcdc1e7199904da8f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e50d4c94c0b8468a80ad214a21c8f5e0dedae71
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687569"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092325"
 ---
 # <a name="data-validation-checklist-workspace"></a>Arbejdsområdet Kontrolliste for datavalidering
 
@@ -39,8 +39,7 @@ Feltet **Oversigt** giver et overblik over processen, og indikatorer hjælper di
 
 I afsnittet **Opgaver og status** vises status for det samlede datavalideringsprojekt på forskellige måder: status efter juridisk enhed, efter område og efter opgaveliste. Du kan vælge filteret for at få vist status for en bestemt virksomhed. Hver statusfane viser en opdeling efter den procentdel, som er afsluttet, og antallet af opgaver, der er tilbage.
 
-Den sidste fane er for den detaljerede opgaveliste. Denne liste viser den fuldstændige opgaveliste.
-Du kan filtrere opgavelisten på flere måder. Klik på **Rediger opgave** for at ændre status for en opgave eller tildele en opgave. Klik på **Vedhæftede filer** for at få vist vedhæftede filer for en opgave.
+Den sidste fane er for den detaljerede opgaveliste. Denne liste viser den fuldstændige opgaveliste. Du kan filtrere opgavelisten på flere måder. Klik på **Rediger opgave** for at ændre status for en opgave eller tildele en opgave. Klik på **Vedhæftede filer** for at få vist vedhæftede filer for en opgave.
 
 Opgavenavnet er et hyperlink til siden, som brugeren skal gå til for at fuldføre arbejdet. Du kan angive dette hyperlink ved hjælp af feltet **Menupunktnavn**, når du redigerer eller opretter en opgave fra formularen **Konfigurer datavalideringsprojekt**.
 
@@ -57,6 +56,3 @@ Før du kan bruge arbejdsområdet **Kontrolliste for datavalidering**, skal du k
 Du bruger opgaveområder til at gruppere datavalideringsopgaver i logiske ejerskabsområder i organisationen. Kreditor, Debitor eller Finans kan eksempelvis bruges som opgaveområder.
 
 **Menupunktnavn** er knyttet til arbejdsindsatsen for opgaven og kan bruges til at gå direkte til den tilknyttede side fra opgavelinket i arbejdsområdet. F.eks. kan en datavalideringsopgave, der skal køre rapporten **Kreditor aldersfordelt** for Kreditor, knyttes til siden **Rapport over Kreditor aldersfordelt**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

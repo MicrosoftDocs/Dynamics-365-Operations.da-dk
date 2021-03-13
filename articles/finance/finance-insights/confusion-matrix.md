@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6a1620c33ee1e23a79ef5413afebdee332aa82b6
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 5223bdfbc0f5828b5dccac30362783075ce8157f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645011"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044366"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultater fra Machine Learning Models (prøveversion)
 
@@ -37,7 +36,7 @@ Når et overvåget ML-problem oplæres i et sæt historiske data, testes de ved 
 
 Din målsætning kan f.eks. være at forudsige, om et kæledyr er en hund eller en kat, baseret på nogle fysiske og funktionsmæssige attributter. Hvis du har et test-datasæt, der indeholder 30 hunde og 20 katte, kan forvekslingsmatrixen ligne følgende illustration.
 
-[![Eksempel på forudsigelse af art](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+![Eksempel på forudsigelse af art](media/species-prediction-matrix.png)
 
 Tallene i de grønne celler viser korrekte forudsigelser. Som du kan se, har modellen forventet en højere procentdel for katte. Det er let at beregne den overordnede nøjagtighed af modellen. I dette tilfælde er det 42 ÷ 50 eller 0,84.
 
@@ -47,7 +46,7 @@ De fleste diskussioner om forvekslingsmatrixen er fokuseret på binære klassifi
 
 Derefter vil vi overveje et klassifikationsproblem for et økonomisk scenario, der har tre tilstande. Modellen bruges til at forudsige, om en debitorfaktura vil blive betalt til tiden, for sent eller meget for sent. Der betales f. eks. ud af 100 testfakturaer, 50 til tiden, 35 betales forsinket, og 15 betales meget for sent. I dette tilfælde kan en model oprette en forvekslingsmatrix, der ligner følgende illustration.
 
-[![Model 1](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png) Model 1
+![Model 1](media/payment-prediction-matrix.png)]
 
 En forvekslingsmatrix giver betydeligt flere oplysninger end en simpel præcisionsmetrik. Men det er stadig forholdsvis let at forstå. En forvekslingsmatrix fortæller dig, om du har et afstemt datasæt, hvor outputklasserne har samme antal. I multiklasse-scenariet får du at vide, hvor langt du er fra en forudsigelse, når outputklasserne er ordenstal, som i ovenstående eksempel på kundebetalinger.
 
@@ -58,7 +57,7 @@ Da nøjagtigheden er en nem metrikværdi for at forstå, er det et godt udgangsp
 
 For at opnå en mere indgående forståelse bør der blive noteret flere udfordringer, der er forbundet med nøjagtigheden. Metrikværdiens anvendelighed afhænger af problemets kontekst. Et spørgsmål, der ofte opstår i forbindelse med modellens ydeevne er, "hvor god er modellen?" Svaret på dette spørgsmål er dog ikke nødvendigvis ligetil. Overvej følgende forvekslingsmatrix (model 2).
 
-[![Eksempel på forudbetalinger med et større eksempel](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Eksempel på forudbetalinger med et større eksempel](media/payment-prediction-matrix-2.png)
 
 En hurtig beregning viser, at denne models nøjagtighed er (70 + 10 + 3) ÷ 100 eller 0,83. På overfladen virker dette resultat bedre end resultatet for den tidligere multiklasse-model (model 1), som har en nøjagtighed på 0,73. Men er det bedre?
 
@@ -103,7 +102,7 @@ Med F1-målpunktet kombineres præcision og tilbagekaldelse. Resultatet er den h
 
 Lad os se på et konkret eksempel. Tidligere i dette emne var der et eksempel på en model, der forudsagde, om et dyr var en hund eller en kat. Illustrationen gentages her.
 
-[![Eksempel på forudsigelse af art](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Eksempel på forudsigelse af art (gentaget)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Her er resultatet, hvis "hund" bruges som det positive svar.
 
@@ -115,11 +114,11 @@ Som du kan se, er F1-værdien mellem værdierne for præcision og tilbagekaldels
 
 Selvom det ikke er så nemt at forstå F1, tilføjer det en nuance til det grundlæggende nøjagtighedsnummer. Det kan også hjælpe med oplysninger, der ikke stemmer, som følgende diskussion viser.
 
-Afsnittet [Modelpræcision](#classify-machine-learning-accuracy) i dette emne sammenlignede følgende to forvekslingsmatrixer. Selvom den første model havde lavere nøjagtighed, blev den vurderet til at være en mere nyttig model, da den viste en større forbedring end standardgættet for betaling til tiden.
+Afsnittet [Modelpræcision](#model-accuracy) i dette emne sammenlignede følgende to forvekslingsmatrixer. Selvom den første model havde lavere nøjagtighed, blev den vurderet til at være en mere nyttig model, da den viste en større forbedring end standardgættet for betaling til tiden.
 
-[![Eksempel på forudsigelse af forudbetaling vs. faktiske tal](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+![Eksempel på forudsigelse af forudbetaling vs. faktiske tal](media/payment-prediction-matrix.png)
 
-[![Eksempel på forudbetalinger med et større eksempel](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Eksempel på forudbetalinger med et større eksempel (gentaget)](media/payment-prediction-matrix-2.png)
 
 Lad os se, hvordan disse to modeller sammenlignes, når F1-scoren bruges. F1-scorefaktorerne i præcision og tilbagekaldelse for hver tilstand, og F1-makroberegningen beregner derefter F1-scoren på tværs af tilstandene for at fastlægge et samlet antal F1-resultater. Der er andre F1-varianter, men det er af stor interesse at overveje makroversionen med den tilsvarende overvejelse, der er tildelt alle tre tilstande.
 
@@ -142,6 +141,3 @@ Som disse resultater viser, har de to modeller næsten identiske præcisionsresu
 
 #### <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

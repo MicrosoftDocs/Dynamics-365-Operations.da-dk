@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 203d12956825286b77a107bb9fd91c451ecfd1e6
+ms.sourcegitcommit: dc3deca942864c4a8354096183c9e1b9b88992f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4411212"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "5032927"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurationer af POS-brugergrænseflade
 
@@ -84,7 +83,7 @@ Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placering
 
 Skærmlayouts kan tildeles på butiks-, kasseapparats- eller brugerniveau. Brugertildelingen tilsidesætter kasseapparats- og butikstildelingerne, og kasseapparattildelingen tilsidesætter butikstildelingen. I et enkelt scenarie, hvor alle brugere skal bruge det samme layout uanset kasseapparat eller rolle, kan skærmlayoutet kun angives i butiksniveau. I tilfælde, hvor specifikke kasseapparater eller brugere kræver specialiserede layouts, kan disse layouts tildeles.
 
-Afhængigt af, hvilket niveau skærmlayoutet er tildelt, skal du køre distributionsplanjobbet **1070** (**Kanalkonfiguration**), **1090** (**Kasseapparater**) og/eller **1060** (**Personale**) for at synkronisere de seneste skærmlayoutkonfigurationer med kanaldatabasen.
+Afhængigt af, hvilket niveau skærmlayoutet er tildelt, skal du køre distributionsplanjobbet **1070** (**Kanalkonfiguration**), **1090** (**Kasseapparater**) og/eller **1060** (**Human Resources**) for at synkronisere de seneste skærmlayoutkonfigurationer med kanaldatabasen.
 
 ### <a name="layout-sizes"></a>Layoutstørrelser
 
@@ -116,6 +115,9 @@ I fulde POS-layouts er placeringen af knapmatricer angivet i skærmens layoutdes
 I kompakte POS-layouts placeres knapmatricerne automatisk fra top mod bund, fra det laveste nummer (transaktionsskærmbillede 1) til det højeste nummer. De kan benyttes via menuen **Handlinger**.
 
 ![Knapmatricer til kompakt layout](../commerce/media/Compact-View-Button-Grids.png)
+
+> [!NOTE]
+> Knapstørrelserne i designeren skaleres, så de passer til vinduets størrelse, og de vil derfor muligvis ikke nøjagtigt afspejle de faktiske knapper, der er gengivet i POS. Du kan simulere layoutet for knapgitteret ved at justere designervinduerne til samme størrelse som POS.
 
 ### <a name="images"></a>Billeder
 
@@ -205,6 +207,3 @@ Designeren til knapmatrix giver dig mulighed for at konfigurere knapmatricer, de
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Installere layoutdesigneren til Retail POS](install-pos-layout-designer.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

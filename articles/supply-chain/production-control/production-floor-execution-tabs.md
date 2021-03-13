@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664266"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077572"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designe grænsefladen til kørsel af produktion
 
@@ -57,7 +56,7 @@ Følg disse trin for at oprette og konfigurere en ny fane:
 1. Foretag følgende indstillinger i overskriften på siden:
 
     - **Fanenavn** - Angiv et navn til fanen.
-    - **Hovedvisning** - Vælg mellem de to foruddefinerede joblister (*Aktive job* eller *Alle job*).
+    - **Hovedvisning** - Vælg mellem de to foruddefinerede joblister (*Aktive job*, *Alle job* eller *Min maskine*).
     - **Detaljevisning** - Vælg mellem en tom værdi eller **Jobdetaljer**. Hvis du vælger den tomme værdi, vil der ikke være detaljeret visning under fanen. Hvis du vælger **Jobdetaljer**, indeholder detaljeret visning en detaljeret beskrivelse af det job, der er valgt på joblisten i hovedvisningen.
 
 1. Vælg, hvilke knapper der skal være tilgængelige på den primære værktøjslinje, i sektionen **Primær værktøjslinje**. I kolonnen **Tilgængelige handlinger** vises en liste over alle de knapper, der kan tilføjes. I kolonnerne **Valgte handlinger** vises en liste over alle de knapper, der er medtaget i den aktuelle konfiguration. Brug knapperne mellem kolonnerne til at flytte markerede elementer mellem kolonnerne efter behov. Brug op- og ned-knapperne ud for kolonnen **Valgte handlinger** til at styre den rækkefølge, som knapperne vises i i brugergrænsefladen.
@@ -79,6 +78,3 @@ Når du har designet alle de faner, du har brug for, kan du knytte dem til en ko
 1. Fortsæt med at tilføje flere faner efter behov.
 
 1. Brug knapperne **Flyt op** og **Flyt ned** på værktøjslinjen til at arrangere fanerne efter behov. Fanerne vises fra venstre mod højre i den rækkefølge, der vises i skærmbilledet ovenfor (fanen øverst vises til venstre).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aba35563266d1149131124f489f89da61432bfb2
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
+ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669158"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5080032"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 2. december 2020
 
@@ -61,7 +60,7 @@ Følgende fejlrettelser er inkluderet i denne version.
 | 514087 | BenefitEligibilityProcessResult skal omfatte datetime, der blev brugt til behandlingen. | Resultatet af BenefitEligibity-behandlingen omfatter nu datetimestamp for seneste behandling, som manglede tidligere. |
 | 526903 | Der kan ikke tilmeldes frynsegoder for planer med afhængige, når **Vælg automatisk udpegede modtagere** er aktiveret i **Delte parametre for personale**. | Problemet, når der ikke kunne registreres frynsegoder for de afhængige, når indstillingen **Vælg automatisk udpegede modtagere** var slået til for standard udpegede modtagere, er løst. |
 | 521922 | Parameteren **Vis fravær uden detaljer** viser detaljer om anmodning om fritid i teams fraværskalender. | Orlovstype, farve på orlovstype og oplysninger om dagen vises i teamets fraværskalender, når **Vis fravær uden detaljer** er indstillet til **Ja** i **Parametre for orlov og fravær**. Dette er blevet løst, og nu vises orlovstypen ikke, og standardfarven på orlovstypen (mørkeblå) bruges til alle orlovstyper i teams fraværskalender. |
-| 527316 | Ændringer i titlen for beskeder om job, stilling og arbejder synkroniseres ikke. | En titelrelation blev tidligere føjet til enhederne job, stilling og arbejder. Synkroniseringen for denne relation fungerer som synkronisering fra Human Resources til Common Data Service, men har ikke virket for beskeder fra Common Data Service. Dette er blevet løst. |
+| 527316 | Ændringer i titlen for beskeder om job, stilling og arbejder synkroniseres ikke. | En titelrelation blev tidligere føjet til enhederne job, stilling og arbejder. Synkroniseringen for denne relation fungerer som synkronisering fra Human Resources til Dataverse, men har ikke virket for beskeder fra Dataverse. Dette er blevet løst. |
 | 512275 | Fjern farveindstillingerne fra **Parametre for orlov og fravær**. | Nu, hvor der er defineret farver for orlovstypen, er farveindstillingerne ikke længere nødvendige i **Parametre for orlov og fravær**, så de er blevet fjernet. |
 | 437112 | Misvisende fejlmeddelelsestekst under tildeling af medarbejderstilling. | Fejlmeddelelsen om ansættelse af en arbejder og forsøg på at tildele arbejderen til en stilling, der ikke er aktiv, er blevet opdateret. Opdateret meddelelse: **Den angivne stilling er ikke aktiv pr. ansættelsens startdato. Kontroller varigheden af denne stilling.** |
 | 527816 | Problemer med ydeevnen med siden sluttid **Fridage**. | Ydeevnen er blevet forbedret på siden **Fridage**. |
@@ -92,6 +91,3 @@ Du kan se en komplet liste over planlagte funktioner og deres planlagte udgivels
 [Oversigt over Dynamics 365 Human Resources 2020 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

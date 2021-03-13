@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold for praksischef
-description: I dette emne beskrives, hvad der er medtaget i Power BI-indhold for praksischef. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet.
+description: I dette emne beskrives, hvad der er medtaget i Power BI-indhold for praksischef.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685699"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092451"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-indhold for praksischef
 
@@ -117,6 +117,3 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 | Samlede nøglemålinger       | Felt               | Betegnelse |
 |---------------------------------|---------------------|-------------|
 | Planlagt omkostning for fuldført aktivitet | Sum(TotalCostPrice) | Summen af kostpris i estimater for alle projektposteringstyper, der har fuldførte opgaver. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

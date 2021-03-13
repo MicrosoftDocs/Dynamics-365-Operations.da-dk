@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 48cc8974cc8a8769b3d05f47f82166164e877ae5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 829775e36a2d49ebbab5c719436cff4c92984635
+ms.sourcegitcommit: ca7fc46607ae9d07725e1486b43c66d39ec5cdb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424671"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035260"
 ---
 # <a name="delivery-alternatives"></a>Leveringsalternativer
 
@@ -35,17 +34,19 @@ Salgordretagerne kan bruge siden **Leveringsalternativer** til at finde alternat
 Siden **Leveringsalternativer** giver et overblik over alle alternative indstillinger. Det giver også ordretagerne mulighed for at se opfyldningsmuligheder andre steder end i det aktuelle firma. De kan nu få vist både interne salgsmuligheder og salgsmuligheder fra eksterne leverandører. Ved at sortere indstillingerne pr. leveringsdato kan salgsordretagerne få vist en intelligent liste over leveringsalternativer. Desuden hjælper parametre dem med nemmere at administrere de foreslåede leveringer. Da transporttiden kan påvirke leveringsdatoer, kan salgsordretagerne udforske de forskellige transportsmuligheder, som fragtmænd tilbyder. Der vises detaljerede oplysninger om hvert forslag, og ordretagerne kan derfor træffe velfunderede beslutninger direkte fra siden **Leveringsalternativer**.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Åbne siden Leveringsalternativer
+
 Du kan åbne siden **Leveringsalternativer** fra salgsordrelinjen.
 
-1.  Klik på **Produkter og forsyning** &gt; **Leveringsalternativer**.
-2.  Klik på **Linjedetaljer** &gt; **Levering** &gt; **Leveringsalternativer.**
+1. Vælg **Produkter og forsyning \> Leveringsalternativer**.
+1. Vælg **Linjedetaljer \> Levering \> Leveringsalternativer**.
 
-Du kan også åbne siden **Leveringsalternativer** ved at åbne arbejdsområdet **Salgsordrebehandling og -forespørgsel** og derefter klikke på **Ordrer og favoritter** &gt; **Forsinkede ordrelinjer** &gt; **Leveringsalternativer** **Bemærk!** Du kan kun åbne siden **Leveringsalternativer**, hvis begge følgende betingelser er opfyldt:
+Du kan også åbne siden **Leveringsalternativer** ved at åbne arbejdsområdet **Salgsordrebehandling og -forespørgsel** og derefter vælge **Ordrer og favoritter \> Forsinkede ordrelinjer \> Leveringsalternativer** **Bemærk:** Du kan kun åbne siden **Leveringsalternativer**, hvis begge følgende betingelser er opfyldt:
 
--   Alle obligatoriske oplysninger om salgslinjen er udfyldt.
--   Feltet **Leveringsdatokontrol** er indstillet til en anden værdi end **Ingen**.
+- Alle obligatoriske oplysninger om salgslinjen er udfyldt.
+- Feltet **Leveringsdatokontrol** er indstillet til en anden værdi end **Ingen**.
 
 ## <a name="delivery-date-control-methods"></a>Leveringsdatokontrolmetoder
+
 Leveringsdatokontrolmetoden bestemmer, hvordan systemet fastsætter leveringsdatoer, hvordan leveringsalternativer beregnes, og hvilke oplysninger der vises. Bemærk, at leveringsdatokontrollen tager kalendere i betragtning. Derfor kan følgende kalendere påvirke den foreslåede modtagelsesdato: lagerstedkalender, transportkalender, kreditorkalender og debitorkalender. I følgende tabel beskrives hver metode for leveringsdatokontrol.
 
 <table>
@@ -59,7 +60,7 @@ Leveringsdatokontrolmetoden bestemmer, hvordan systemet fastsætter leveringsdat
 <td><strong>Beskrivelse</strong></td>
 </tr>
 <tr class="even">
-<td><strong>Ingen</strong></td>
+<td><strong>None</strong></td>
 <td><ul>
 <li>Leveringsalternativer for salgslinjer understøttes ikke. Denne indstilling deaktiverer leveringsdatokontrollen.</li>
 </ul></td>
@@ -102,57 +103,50 @@ Leveringsdatokontrolmetoden bestemmer, hvordan systemet fastsætter leveringsdat
 </table>
 
 ## <a name="view-information-about-delivery-alternatives"></a>Få vist oplysninger om leveringsalternativer
-I dette afsnit beskrives de oplysninger om leveringsalternativer, der er tilgængelige under hver fane på siden **Leveringsalternativer**.
 
-### <a name="products"></a>Produkter
+I dette afsnit beskrives de oplysninger om leveringsalternativer, der er tilgængelige i hvert oversigtspanel på siden **Leveringsalternativer**.
 
-Denne fane vises en oversigt over produktet og detaljer om den aktuelle salgslinje.
+### <a name="the-product-fasttab"></a>Oversigtspanelet Produkter
 
-### <a name="delivery-alternatives"></a>Leveringsalternativer
+Dette oversigtspanel viser en oversigt over produktet og detaljer om den aktuelle salgslinje.
 
-Denne fane viser en liste over leveringsalternativer, der er sorteret efter kvitteringsdata. Over listen kan du vælge, hvilke indstillinger du vil basere forslagene på. Du kan også vælge den leveringsmåde, der bestemmer transportdagene. Følgende valgmuligheder er tilgængelige:
+### <a name="the-delivery-alternatives-fasttab"></a>Oversigtspanelet Leveringsalternativer
 
--   **Medtag andre produktvarianter** - Denne indstilling er tilgængelig for produkter, der har produktvarianter. Den omfatter leveringsalternativer til andre varianter af produktet. Denne indstilling er ikke tilgængelig for LE.
--   **Inkluder delvis mængde** – Som standard medtages kun forslag, der opfylder det fulde antal på salgslinjen. Vælg denne indstilling for at medtage forslag, der kun delvist opfylder ordrelinjen. Denne indstilling er nyttig, når kunden anmoder om en tidligere leveringsdato og accepterer delvis levering.
--   **Medtag senere datoer** – Som standard vises kun forslag, som er bedre (tidligere) end de aktuelle datoer på salgslinjen. Vælg denne indstilling for at medtage senere datoer. Denne indstilling kan være nyttigt i situationer, hvor andre parametre end datoen er prioriteret. For eksempel kan en bestemt leverandør eller et lagersted være foretrukket.
--   **Leveringsmåde** – Vælg den foretrukne leveringsmåde for at optimere transporttid og omkostninger. Indvirkningen på de foreslåede leveringsalternativer fremgår med det samme. Det er derfor nemt at sammenligne alternativerne.
--   **Medtag indkøb** – Når indkøb er markeret, omfatter de foreslåede leveringsalternativer muligheder for at købe fra både eksterne leverandører og andre firmaer i virksomheden (intern). Indstillingen **Medtag indkøb** understøttes for DTT og DTT + afgangsmargen-leveringsdatokontrol. Indstillinger for indkøb fra standardindskøbsleverandøren for produktet og alle godkendte kreditorer for produktet er inkluderet.
--   For eksterne leverandører er beregningen baseret på leveringstiden for indkøbet.
--   Internt indgår det i beregningen, hvad der er tilgængeligt fra forsyningsfirmaet, baseret på leveringsdatokontrol i forsyningsfirmaet.
--   **Leveringstype** (Relevant for indkøb)
-    -   **Lager** - Produkterne leveres fra forsyningslagerstedet til lokationen/lagerstedet på salgslinjen. De sendes derefter fra lagerstedet til kunden.
-    -   **Direkte levering** - Produkterne leveres direkte til kunden fra forsyningslagerstedet.
+I dette oversigtspanel vises en liste over leveringsalternativer, der er sorteret efter kvitteringsdato. Over listen kan du vælge, hvilke indstillinger du vil basere forslagene på. Du kan også vælge den leveringsmåde, der bestemmer transportdagene. Følgende valgmuligheder er tilgængelige:
 
-### <a name="availability-information"></a>Oplysninger om tilgængelighed
+- **Medtag andre produktvarianter** - Denne indstilling er tilgængelig for produkter, der har produktvarianter. Den omfatter leveringsalternativer til andre varianter af produktet. Denne indstilling er ikke tilgængelig for LE.
+- **Inkluder delvis mængde** – Som standard medtages kun forslag, der opfylder det fulde antal på salgslinjen. Vælg denne indstilling for at medtage forslag, der kun delvist opfylder ordrelinjen. Denne indstilling er nyttig, når kunden anmoder om en tidligere leveringsdato og accepterer delvis levering.
+- **Medtag senere datoer** – Som standard vises kun forslag, som er bedre (tidligere) end de aktuelle datoer på salgslinjen. Vælg denne indstilling for at medtage senere datoer. Denne indstilling kan være nyttigt i situationer, hvor andre parametre end datoen er prioriteret. For eksempel kan en bestemt leverandør eller et lagersted være foretrukket.
+- **Leveringsmåde** – Vælg den foretrukne leveringsmåde for at optimere transporttid og omkostninger. Indvirkningen på de foreslåede leveringsalternativer fremgår med det samme. Det er derfor nemt at sammenligne alternativerne.
+- **Medtag indkøb** – Når indkøb er markeret, omfatter de foreslåede leveringsalternativer muligheder for at købe fra både eksterne leverandører og andre firmaer i virksomheden (intern). Indstillingen **Medtag indkøb** understøttes for DTT og DTT + afgangsmargen-leveringsdatokontrol. Indstillinger for indkøb fra standardindskøbsleverandøren for produktet og alle godkendte kreditorer for produktet er inkluderet.
+- For eksterne leverandører er beregningen baseret på leveringstiden for indkøbet.
+- Internt indgår det i beregningen, hvad der er tilgængeligt fra forsyningsfirmaet, baseret på leveringsdatokontrol i forsyningsfirmaet.
+- **Leveringstype** (Relevant for indkøb)
+  - **Lager** - Produkterne leveres fra forsyningslagerstedet til lokationen/lagerstedet på salgslinjen. De sendes derefter fra lagerstedet til kunden.
+  - **Direkte levering** - Produkterne leveres direkte til kunden fra forsyningslagerstedet.
 
-Oplysningerne under denne fane er relateret til den alternative leveringslinje, der er valgt. Følgende oplysninger vises, afhængigt af leveringsdatokontrollen for salgslinjen:
+### <a name="the-availability-information-fasttab"></a>Oversigtspanelet Oplysninger om tilgængelighed
 
--   **Salgsleveringstid**
-    -   **Til rådighed i dag** – Få vist den aktuelle disponible lagerbeholdning, fysisk reserveret og disponibelt fysisk lager.
-    -   **Parametre** - Viser lagerenheden og salgsleveringstiden.
+Oplysningerne i dette oversigtspanel er relateret til den alternative leveringslinje, der er valgt. Følgende oplysninger vises, afhængigt af leveringsdatokontrollen for salgslinjen:
 
--   **DTT og DTT + afgangsmargen**
-    -   **Til rådighed i dag** – Få vist den aktuelle disponible lagerbeholdning, fysisk reserveret og disponibelt fysisk lager.
-    -   **Parametre** - Viser lagerenheden og salgsleveringstiden.
-    -   **Fremtidig tilgængelighed** – Få vist en grafisk repræsentation af den aktuelle og fremtidige tilgængelighed for valgt lokation og lagersted under **Leveringsalternativer**. Hvis du vil have vist mere detaljerede oplysninger om produktets tilgængelig fremover, kan du klikke på diagramsøjlerne. Skyderen viser en liste over relevante behovs- og forsyningsordrer i en DTT-tidshorisont.
+- **Salgsleveringstid**
+  - **Til rådighed i dag** – Få vist den aktuelle disponible lagerbeholdning, fysisk reserveret og disponibelt fysisk lager.
+  - **Parametre** - Viser lagerenheden og salgsleveringstiden.
 
--   **LE**
-    -   **Til rådighed i dag** – Få vist den aktuelle disponible lagerbeholdning, fysisk reserveret og disponibelt fysisk lager.
-    -   **Parametre** - Viser lagerenheden og salgsleveringstiden.
-    -   **Udfoldning** – Få vist forsyning for den valgte leveringsalternative udfoldet. Du kan bruge **Konfiguration** til at ændre felterne og de lagerdimensioner, der vises i udfoldningen.
+- **DTT og DTT + afgangsmargen**
+  - **Til rådighed i dag** – Få vist den aktuelle disponible lagerbeholdning, fysisk reserveret og disponibelt fysisk lager.
+  - **Parametre** - Viser lagerenheden og salgsleveringstiden.
+  - **Fremtidig tilgængelighed** – Få vist en grafisk repræsentation af den aktuelle og fremtidige tilgængelighed for valgt lokation og lagersted under **Leveringsalternativer**. Du kan vælge diagramsøjlerne for at se mere detaljerede oplysninger om produktets tilgængelighed fremover. Skyderen viser en liste over relevante behovs- og forsyningsordrer i en DTT-tidshorisont.
 
-### <a name="impact-of-selected-alternative"></a>Virkning af valgt alternativ
+- **LE**
+  - **Til rådighed i dag** – Få vist den aktuelle disponible lagerbeholdning, fysisk reserveret og disponibelt fysisk lager.
+  - **Parametre** - Viser lagerenheden og salgsleveringstiden.
+  - **Udfoldning** – Få vist forsyning for den valgte leveringsalternative udfoldet. Du kan bruge **Konfiguration** til at ændre felterne og de lagerdimensioner, der vises i udfoldningen.
 
-Denne fane viser resultatet af det valgte leveringsalternativ fremhævet. Hvis du klikker på **OK**, opdateres salgslinjen med de fremhævede værdierne i de markerede kolonner. Bemærk, at hvis antallet i det valgte leveringsalternativ er mindre end antallet på salgslinjen, oprettes en leveranceplan, og ordrelinjen opdeles i to linjer: én linje for det valgte antal og én linje for det resterende antal. Du kan også opdatere den kommercielle linje, så den svarer til linjerne for tidsplanen og påvirker prisfastsættelsen.
+### <a name="the-impact-of-selected-alternative-fasttab"></a>Oversigtspanelet Virkning af valgt alternativ
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+I dette oversigtspanel vises virkningen af det valgte leveringsalternativ. Hvis du vælger **OK**, opdateres salgslinjen med de fremhævede værdier i de valgte kolonner. Bemærk, at hvis antallet i det valgte leveringsalternativ er mindre end antallet på salgslinjen, oprettes en leveranceplan, og ordrelinjen opdeles i to linjer: én linje for det valgte antal og én linje for det resterende antal. Du kan også opdatere den kommercielle linje, så den svarer til linjerne for tidsplanen og påvirker prisfastsættelsen.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Ordretilsagn](delivery-dates-available-promise-calculations.md)
-
-
-
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

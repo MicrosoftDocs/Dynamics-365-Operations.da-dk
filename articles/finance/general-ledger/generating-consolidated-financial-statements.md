@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441611"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044015"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 
@@ -67,14 +66,14 @@ I følgende illustration vises en kolonnedefinition i side om side-format.
 ![Kolonnedefinition i et side om side-format](./media/column-definition-side-by-side-format.png "Kolonnedefinition i et side om side-format")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolideringer, der bruger organisationsstrukturer, der er oprettet ud fra juridiske enheder
-Organisationshierarkier, der indeholder dimensioner eller juridiske enheder, opretter dynamisk trædiagramdefinitioner i Økonomirapportering. En nem måde at strømline konsolideringer på er ved at føje et organisationshierarki til rapporten i Økonomirapportering. Baseret på rapportdatoen vælger Økonomirapportering organisationshierarkiet på eller før ikrafttrædelsesdatoen, som vist i følgende illustration.
+Organisationshierarkier, der indeholder dimensioner eller juridiske enheder, opretter dynamisk trædiagramdefinitioner i Økonomirapportering. En nem måde at strømline konsolideringer på er ved at føje et organisationshierarki til rapporten i Økonomirapportering. Baseret på rapportdatoen vælger Financial Reporting organisationshierarkiet på eller før ikrafttrædelsesdatoen, som vist i følgende illustration.
 
 ![Dynamisk oprettelse af trædiagramdefinition](./media/dynamically-create-reporting-tree-definitions.png "Dynamisk oprettelse af trædiagramdefinition")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolideringer, der omfatter elimineringer
 Elimineringstransaktioner er en almindelig del af konsolideringsprocessen. I dette eksempel elimineres fem konti under konsolideringen: 142600, 211400, 401420, 401180 og 510820. Virksomheder kan oprette deres mellemregningskonti anderledes. Nogle virksomheder vælger f.eks. at indstille det sidste ciffer til 9, hvis kontoen bruges i mellemregningstransaktioner. Uanset metoden, hvis du kender mellemregningskontiene, kan du vise elimineringer i dine konsoliderede regnskaber.
 
-Følgende illustration viser en kolonnedefinitionen for en konsolideret resultatopgørelse. Der er defineret tre driftsmellemregningskonti for hvert regnskab ved hjælp af dimensionsfilteret. Kolonne D indeholder kun elimineringskontiene for USMF-firmaet, og kolonne E indeholder kun elimineringer for DEMF-firmaet. Både kolonne D og kolonne E er konfigureret, så de **ikke** udskrives i regnskabet.
+Følgende illustration viser en kolonnedefinitionen for en konsolideret resultatopgørelse. Der er defineret tre driftsmellemregningskonti for hvert regnskab ved hjælp af dimensionsfilteret. Kolonnerne F, G og H omfatter kun elimineringskontiene for USMF-, USRT- og DEMF-regnskaberne. Disse kolonner er konfigureret, så de **ikke** udskrives i regnskabet.
 
 ![Kolonnedefinitionen for en konsolideret resultatopgørelse](./media/column-definition-consolidated-income-statement.png "Kolonnedefinitionen for en konsolideret resultatopgørelse")
 
@@ -224,6 +223,3 @@ For at få korrekt omregnede beløb, når valutaer bruges, bruger Økonomirappor
 Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
 Du kan få flere oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Økonomiske konsolideringer online](./consolidate-online.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

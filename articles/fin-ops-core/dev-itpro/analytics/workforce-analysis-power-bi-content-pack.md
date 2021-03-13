@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til Nøgletal for arbejdsstyrke
-description: Dette emne beskriver Power BI-indhold til Nøgletal for arbejdsstyrke. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+description: Dette emne beskriver Power BI-indhold til Nøgletal for arbejdsstyrke.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5e921b9ca7d46b3365068a5cdcb029396b62a0ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d0622cebcfca15acf50cf62e8a77af360d4f1bda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687345"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092785"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-indhold til Nøgletal for arbejdsstyrke
 
@@ -86,6 +86,3 @@ Følgende tabel viser de enheder, som indholdet er baseret på.
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                 | Firma, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, ansættelse, job |
 | Masseansættelsesprojekt        | Antallet af masseansættelsesprojekter, projektejer og projektstatus                     | Firma, masseansættelseslinje. |
 | Masseansættelseslinje           | Afdeling, medarbejdertype og stilling                                           | Dato, job, masseansættelsesprojekt |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 4b89e911f3c6eb8ffa0cfe049ef9bfc2ed306021
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4424938"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077625"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -41,11 +40,11 @@ I de resterende afsnit af dette emne beskrives, hvordan arbejderne kan interager
 
 ## <a name="all-jobs-tab"></a>Fanen Alle job
 
-Under fanen **Alle job** kan du se en jobliste med alle de produktionsjob, der har statussen *Ikke startet*, *Stoppet* eller *Startet*.
+Under fanen **Alle job** kan du se en jobliste med alle de produktionsjob, der har statussen *Ikke startet*, *Stoppet* eller *Startet*. (Dette fanenavn kan tilpasses og kan være forskelligt for dit system).
 
 ![Fanen Alle job](media/pfei-all-jobs-tab.png "Fanen Alle job")
 
-Joblisten har følgende kolonner. (Tallene svarer til tallene i ovenstående illustration).
+Joblisten har følgende kolonner. Tallene svarer til tallene i ovenstående illustration.
 
 1. **Udvælgelseskolonne** – Kolonnen længst til venstre bruger markeringer til at angive job, der er valgt af arbejderen. Arbejderne kan vælge flere job på listen på samme tid. Hvis du vil vælge alle job på listen, skal du markere afkrydsningsfeltet i kolonneoverskriften. Når der vælges et enkelt job, vises oplysninger om jobbet på den nederste del af siden.
 1. **Kolonnen Jobstatus** – I denne kolonne bruges symboler til at angive status for hvert job. Job, der ikke har et symbol i denne kolonne, har statussen *Ikke startet*. En grøn trekant angiver job, der har statussen *Startet*. To gule lodrette linjer angiver job, der har statussen *Stoppet*.
@@ -60,9 +59,11 @@ Joblisten har følgende kolonner. (Tallene svarer til tallene i ovenstående ill
 
 ## <a name="active-jobs-tab"></a>Fanen Aktive job
 
+Fanerne **Aktive job** viser en liste over alle job, som arbejderen, der er logget på, allerede har startet. (Dette fanenavn kan tilpasses og kan være forskelligt for dit system).
+
 ![Fanen Aktive job](media/pfei-active-jobs-tab.png "Fanen Aktive job")
 
-Joblisten under fanen **Aktive job** har følgende kolonner:
+Listen med aktive job har følgende kolonner:
 
 - **Udvælgelseskolonne** – Kolonnen længst til venstre bruger markeringer til at angive job, der er valgt af arbejderen. Arbejderne kan vælge flere job på listen på samme tid. Hvis du vil vælge alle job på listen, skal du markere afkrydsningsfeltet i kolonneoverskriften. Når der vælges et enkelt job, vises oplysninger om jobbet på den nederste del af siden.
 - **Ordre** – Denne kolonne viser produktionsordrenummeret for et job.
@@ -72,6 +73,28 @@ Joblisten under fanen **Aktive job** har følgende kolonner:
 - **Fuldført** – I denne kolonne vises det antal, der allerede er fuldført for et job.
 - **Kasseret** – I denne kolonne vises det antal, der allerede er kasseret for et job.
 - **Resterende** – I denne kolonne vises det antal, der mangler at blive fuldført for et job.
+
+## <a name="my-machine-tab"></a>Fanen Min maskine
+
+Fanen **Min maskine** giver arbejderne mulighed for at vælge et aktiv, der er tilknyttet en maskinressource i filtersættet på fanen **Alle job**. Arbejderen kan derefter få vist tilstanden for det valgte aktiv ved at aflæse værdier for op til fire valgte tællere og lister over seneste vedligeholdelssanmodninger og registrerede nedetider. Arbejderen kan også anmode om vedligeholdelse for det valgte aktiv og registrere og redigere maskinnedetiden. (Dette fanenavn kan tilpasses og kan være forskelligt for dit system).
+ 
+![Fanen Min maskine](media/pfei-my-machine-tab.png "Fanen Min maskine")
+
+Fanen **Min maskine** indeholder følgende kolonner. Tallene svarer til tallene i ovenstående illustration.
+
+1. **Maskinaktiv** – Vælg det maskinaktiv, du vil spore. Begynd at skrive et navn, der skal vælges på en liste over tilsvarende aktiver, eller vælg forstørrelsesglassikonet for at vælge mellem alle de aktiver, der er tilknyttet ressourcerne i filteret for joblisten, på en liste.
+
+    > [!NOTE]
+    > Brugere af Supply Chain Management kan tildele en ressource til hvert aktiv efter behov ved hjælp af siden **Alle aktiver** (på fanen **Anlægsaktiv** ved hjælp af rullelisten **Ressource**). Du kan finde flere oplysninger under [Opret et aktiv](../asset-management/objects/create-an-object.md).
+
+1. **Indstillinger** – Vælg tandhjulsikonet for at åbne en dialogboks, hvor du kan vælge, hvilke tællere der skal vises for det valgte maskinaktiv. Værdierne for disse tællere vises øverst på fanen **Aktivstyring**. Menuen **Indstillinger** (vist i følgende skærmbillede) giver dig mulighed for at aktivere op til fire tællere. For hver tæller, du vil aktivere, skal du bruge opslagsfeltet øverst i felterne til at vælge en tæller. Opslagsfeltet viser alle de tællere, der er tilknyttet aktivet, som er valgt øverst på siden **Aktivstyring**. Indstil hver tæller til enten at overvåge den **samlede** værdi eller den seneste **faktiske** værdi for tælleren. Hvis du f.eks. angiver en tæller, der sporer, hvor mange timer maskinen har kørt, skal du angive den til **Samlet**. Hvis du angiver en tæller for at måle den seneste opdaterede temperatur eller måling, skal du angive den til **Faktisk**. Vælg **OK** for at gemme dine indstillinger og lukke dialogboksen.
+
+    ![Fanen Min maskine](media/pfei-my-machine-tab-settings.png "Fanen Min maskine")
+
+1. **Anmod om vedligeholdelse** – Vælg denne knap for at åbne en dialogboks, hvor du kan oprette en vedligeholdelsesanmodning. Du kan angive en beskrivelse og et notat. En bruger af Supply Chain Management vil blive gjort opmærksom på anmodningen, som derefter vil kunne konvertere vedligeholdelsesanmodningen til en arbejdsordre for vedligeholdelse.
+1. **Registrér nedetid** – Vælg denne knap for at åbne en dialogboks, hvor du kan registrere maskinnedetid. Du kan vælge en årsagskode og angive en dato/tidsperiode for nedetiden. Registreringen af maskinnedetid bruges til at beregne effektiviteten af maskinaktivet.
+1. **Vis eller rediger** – Vælg denne knap for at åbne en dialogboks, hvor du kan redigere eller få vist eksisterende nedetidsposter.
+
 
 ## <a name="starting-and-completing-production-jobs"></a>Start og fuldførelse af produktionsjob
 
@@ -124,7 +147,7 @@ Shannon, som arbejder i produktionsanlægget hos Contoso, ønsker f.eks. at delt
 
 I begge scenarier, går Shannon, efter at have bekræftet sit valg, enten til logonsiden eller en side, hvor hun skal bekræfte, at hun er returneret, når hun er tilbage fra sin indirekte aktivitet. Hvilken side der vises afhænger af konfigurationen af grænsefladen til kørsel af produktionsudstyr. (Yderligere oplysninger finder du i [Konfigurere grænsefladen til kørsel af produktionsudstyr](production-floor-execution-configure.md)).
 
-## <a name="working-on-breaks"></a>Arbejde med pauser
+## <a name="registering-breaks"></a>Registrere pauser
 
 Arbejderne kan registrere pauser. Pauser kan defineres fleksibelt, som det er beskrevet i [Løn på basis af registreringer](pay-based-on-registrations.md).
 
@@ -146,6 +169,3 @@ Arbejderne kan åbne et dokument, der er knyttet til et job, ved at vælge **Ins
 1. Arbejderen arbejder sig igennem guiden for at lære at udføre opgaven.
 
 Du kan finde flere oplysninger om, hvordan du opretter, tildeler og bruger guider til HoloLens, under [Levere Mixed-Reality-vejledninger til arbejdere i produktion](instruction-guides-in-production-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetCapacityLoad, EntAssetWorkOrderCapacityLoadCalculate, EntAssetWorkOrderCapacityLoad
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5015955338a4cbc2b51585d6297756f20dccee8b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3aa87f5594be079144142296cac977b0bfdd125e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424746"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022577"
 ---
 # <a name="calculate-capacity-load"></a>Beregne kapacitetsbelastning
 
@@ -61,6 +60,3 @@ Dette er nyttigt, hvis du vil have en oversigt over forventet kapacitetsbelastni
 >[!NOTE]
 >Hvis du kun vil fokusere på kapacitetsplanlægning i forbindelse med planlagte arbejdsordrer, skal du se [Beregne kapacitetsbelastning på planlagte arbejdsordrer](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

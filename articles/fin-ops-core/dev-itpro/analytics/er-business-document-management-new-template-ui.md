@@ -1,6 +1,6 @@
 ---
 title: Ny brugergrænseflade i dokumenter i styring af forretningsdokumenter
-description: Dette emne indeholder oplysninger om, hvordan du kan bruge den nye brugergrænseflade i dokumenter i funktionen Styring af forretningsdokumenter i den elektroniske rapporteringsstruktur (ER).
+description: Dette emne indeholder oplysninger om, hvordan du kan bruge den nye brugergrænseflade til dokumenter i funktionen Styring af forretningsdokumenter i den elektroniske rapportering.
 author: v-anamir
 manager: AnnBe
 ms.date: 05/12/2019
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2cb6e0da4af07b9b8486bf1e5bda29523cbd08e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 64ac52385ae6145f7428ebbc3cb77e395557bce2
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681346"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092219"
 ---
-# <a name="new-document-user-interface-in-business-document-management"></a>Ny brugergrænseflade i dokumenter i styring af forretningsdokumenter
+# <a name="new-document-user-interface-in-business-document-management"></a>Brugergrænseflade for nyt dokument i styring af forretningsdokumenter
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,6 +64,3 @@ Udfør følgende trin for at aktivere denne funktion for alle juridiske enheder.
 Knappen **Nyt dokument** bruges til at oprette og redigere en skabelon i en ER-formatkonfiguration, der er leveret af en anden udbyder. I dette eksempel er udbyderen Microsoft. Når du vælger **Nyt dokument**, kan du se alle de skabeloner, der ejes af den aktuelle udbyder og andre udbydere. Når du har valgt skabelonen, vil den blive åbnet til redigering. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
 
 Yderligere oplysninger finder du i [Oversigt over styring af forretningsdokumenter](er-business-document-management.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

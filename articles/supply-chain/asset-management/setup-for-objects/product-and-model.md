@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae2dfcebcbab77cba1795a8b559a3a4244abd00e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a1eca3112b95bc7d1a049f101fc1d461272a63aa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424533"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022250"
 ---
 # <a name="asset-manufacturers-and-models"></a>Aktivproducenter og -modeller
 
@@ -60,6 +59,3 @@ I dette emne beskrives, hvordan du konfigurerer aktivproducenter og relaterede m
 2. I kolonnen **Aktiv** skal du vælge linket til aktivet. Siden med **Detaljer** vises.
 3. Vælg **Rediger**.
 4. I oversigtspanelet **Generelt** skal du vælge værdier i felterne **Producent** og **model**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

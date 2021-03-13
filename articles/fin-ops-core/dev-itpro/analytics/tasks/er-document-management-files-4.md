@@ -1,6 +1,6 @@
 ---
 title: ER Brug dokumentstyringsfiler i formatoutput (del 4 - Kørselsformat)
-description: Følgende trin beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER-output.
+description: Dette emne beskriver, hvordan du konfigurerer et format for elektronisk rapportering til at bruge dokumentstyringsfiler i ER-output. (Del 4)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 89e09d79389dc2c883c429cfee3164632e0cdc0f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d437b31b8a55f345ebc3567bc8c6a2c5ecfd2eec
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681775"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092510"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a>ER Brug dokumentstyringsfiler i formatoutput (del 4 - Kørselsformat)
 
@@ -69,6 +69,3 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 11. Klik på OK.
     * Gennemse det genererede output. Bemærk, at der er oprettet en enkelt XML-node for hver vedhæftet fil. Indholdet i den vedhæftede fil udfyldes til XML-outputtet i MIME-tekstformat (base64).  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Organisere rapportkomponenter i Report Designer
-description: Når du har udviklet komponentdokumenter og oprettet rapporter, er det nyttigt at organisere disse objekter, så de er lettere for brugerne at finde. I denne artikel beskrives, hvordan du organiserer eksisterende rapporter, dokumentkomponenter og objekter i Report Designer.
+title: Organisere rapportkomponenter i rapportdesigner
+description: I dette emne beskrives, hvordan du organiserer eksisterende rapporter, dokumentkomponenter og objekter i Rapportdesigner.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0b55dcee00f571228ec1e933306d77d9edc12866
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685805"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092417"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisere rapportkomponenter i Report Designer
 
@@ -62,7 +62,7 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 3. Under fanen **Rapportgruppe** kan du foretage de ønskede ændringer.
 4. I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem](media/save.gif "Gem") på værktøjslinjen.
 
-> [BEMÆRK!] Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
+> Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
 
 ### <a name="generate-a-report-group-report"></a>Generere en rapportgrupperapport
 
@@ -148,6 +148,3 @@ Kun indstillinger for standardbasisperiode gemmes sammen med rapportdefinitionen
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

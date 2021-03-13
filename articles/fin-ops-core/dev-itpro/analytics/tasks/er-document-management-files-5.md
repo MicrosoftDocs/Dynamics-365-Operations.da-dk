@@ -1,6 +1,6 @@
 ---
 title: 'ER Brug dokumentstyringsfiler i formatoutput (del 5: Ændrings- og kørselsformat)'
-description: Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering (ER) til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER.
+description: Dette emne beskriver, hvordan du konfigurerer et ER-format (elektronisk rapportering) til at bruge dokumentstyringsfiler (vedhæftede filer) i ER-output. (Del 5)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8b949c2629df0e9db8c11322c9d0d090b200edc2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f96189163d5ecac47ade9f713b3fd689e41352d0
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681751"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092482"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5---modify-and-run-format"></a>ER Brug dokumentstyringsfiler i formatoutput (del 5: Ændrings- og kørselsformat)
 
@@ -96,6 +96,3 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 7. Klik på OK.
     * Gennemse det genererede output. Bemærk, at ud over fakturameddelelsen i XML-format er der oprettet en enkelt fil for hver vedhæftet fil. De vedhæftede filer er udfyldt med zip-outputtet i binært format.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
