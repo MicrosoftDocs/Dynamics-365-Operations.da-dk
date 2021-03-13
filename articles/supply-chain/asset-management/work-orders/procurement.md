@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 552b1b211460ae86af06e183af91c062a3ee569a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424824"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020198"
 ---
 # <a name="procurement"></a>Indkøb
 
@@ -100,6 +99,3 @@ I illustrationen nedenfor vises et eksempel på siden **Indkøbsordre** med foku
 
 Hvis du vil se eller angive det aktivitetsnummer, der er knyttet til en indkøbsordres indkøbsrekvisition, skal du vælge indkøbsrekvisitionsposten på siden **Indkøbsrekvisition for arbejdsordre** og derefter vælge linket for indkøbsrekvisitionen i kolonnen **Indkøbsrekvisition**. Du kan finde feltet **Aktivitetsnummer** under fanen **Projekt** i oversigtspanelet **Linjedetaljer**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

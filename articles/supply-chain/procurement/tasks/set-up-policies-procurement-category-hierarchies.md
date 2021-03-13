@@ -1,7 +1,7 @@
 ---
 title: Konfigurere politikker for indkøbskategorihierarkier
 description: Brug denne fremgangsmåde til at oprette regler for bestilling af produkter i en kategori.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d113181b5c78c0f35292b5f14cedd12bacdc7364
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3fc01793ee83444e5c7097021c19aeda80a132e6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424567"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017083"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Konfigurere politikker for indkøbskategorihierarkier
 
@@ -52,6 +51,3 @@ Brug denne fremgangsmåde til at oprette regler for bestilling af produkter i en
 6. Vælg en indstilling i feltet **Kreditorvalg**. Vælg en regel, der skal styre, hvilken slags kreditorer der kan vælges til kategorien, når der oprettes indkøbsrekvisitioner.  
 7. Klik på **Luk**. De politikregler, du har defineret, har været for indkøbsrekvisitionen af typen Forbrug. Hvis du vil definere politikker for indkøbsrekvisitioner af typen Opfyldning, skal du oprette en regel for politikregeltypen kaldet "Regel for adgang til genopfyldningskategori".  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

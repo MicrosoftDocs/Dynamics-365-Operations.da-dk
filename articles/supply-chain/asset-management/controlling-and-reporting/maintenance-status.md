@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43389db93032ec29adb805f86ae04a686803176f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b5bac42d5cdc62361ee9a562e59bafa09ca7a215
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424524"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018490"
 ---
 # <a name="maintenance-status"></a>Vedligeholdelsesstatus
 
@@ -68,6 +67,3 @@ I skærmbilledet nedenfor er der tilføjet oplysninger om arbejdssteder. Nu er d
 
 ![Eksempel på månedlig arbejdsbyrde med arbejdssteder](media/14-controlling-and-reporting.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

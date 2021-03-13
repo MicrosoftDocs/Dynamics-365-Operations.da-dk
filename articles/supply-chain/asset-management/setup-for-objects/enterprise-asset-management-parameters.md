@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424735"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020647"
 ---
 # <a name="asset-management-parameters"></a>Parametre til aktivstyring
 
@@ -34,21 +33,20 @@ I aktivstyring skal der oprettes generelle parametre vedrørende aktiver, arbejd
 > [!NOTE]
 > Hvis du vil oprette et system, der indeholder demonstrationsdata til test af styring af aktiver, skal du se [Installation af et demo-miljø](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) for yderligere oplysninger.
 
-**Aktiver**-link
+## <a name="the-assets-tab"></a>Fanen Aktiver
+
+Fanen **Aktiver** indeholder følgende indstillinger:
 
 - **Standardarbejdssted** er det standardarbejdssted, som automatisk vælges på aktiver, når du opretter nye aktiver.  
 - I feltet **Standardkalender** skal du vælge en kalender, der skal bruges til beregning af KPI'er for aktiver, hvis der ikke er valgt en ressource for et aktiv.  
 - I feltet **Vis** skal du vælge den standardvisning, der vises, når du åbner **Aktivvisning** (**Styring af aktiver** > **Almindeligt** > **Aktiver** > **Aktivvisning**).
 - **Standardanmodningstype** er standardtypen for vedligeholdelsesanmodning, som vælges automatisk, når du opretter en ny anmodning.  
-- Hvis du vil oprette projekter, der relaterer til aktiver, oprettes projektrelationer vedrørende valg af **Hovedprojekt**, **Projekthierarki** og indstillingen til **Automatisk oprettelse af projekter** i **Parametre til aktivstyring**.  
-- I feltet **Projekt maske for arbejdsordre** definerer du antallet af underordnede projekter, som er tilladt for arbejdsordrer og underaktiver. En arbejdsordremaske bruges til at definere, hvor mange arbejdsordrer der kan oprettes på et aktiv og bruges i det relaterede arbejdsordreprojekt. Arbejdsordremasken konfigureres i feltet **Relateret arbejdsordremaske** i **Parametre til aktivstyring** (**Styring af aktiver** > **Opsætning** > **Parametre til aktivstyring** > **Arbejdsordrer**).  
-    >[!NOTE]
-    >Formatet for en relateret arbejdsordremaske er et antal nummertegn (#), afhængigt af det maksimale antal arbejdsordrer, du forventer at oprette på et aktiv. Eksempel: ## giver dig mulighed for at oprette op til 99 underprojekter.  
 - Budgetter for jobtyper gemmes på det projekt, der er valgt i feltet **Budgetprojekt**. For hver jobtype oprettes der automatisk en ny aktivitet på budgetprojektet. Budgetter for jobtypen gemmes derefter i budgetprojektet.  
-- I feltet **Model** skal du vælge den budgetmodel, der bruges på jobtype- og arbejdsordrebudgetter.  
+- I feltet **Model** skal du vælge den budgetmodel, der bruges på jobtype- og arbejdsordrebudgetter.
 
+## <a name="the-work-orders-tab"></a>Fanen arbejdsordrer
 
-**Arbejdsordrer**-link
+Fanen **Arbejdsordrer** indeholder følgende indstillinger:
 
 - **Standardarbejdsordretype** definerer standardindstillinger, når der oprettes en arbejdsordre.  
 - **Forebyggende arbejdsordretype** definerer den arbejdsordretype, der bruges ved oprettelse af arbejdsordrer ud fra vedligeholdelsesplaner. Hvis feltet ikke udfyldes, bruges arbejdsordretypen i feltet **Standardarbejdsordretype**.  
@@ -67,8 +65,9 @@ I aktivstyring skal der oprettes generelle parametre vedrørende aktiver, arbejd
     - Opsætning af vedligeholdelsesrunder  
 - I oversigtspanelet **Kategori** kan du definere standardkategorier vedrørende forbrug på arbejdsordrer.  
 
+## <a name="the-work-order-scheduling-tab"></a>Fanen Planlægning af arbejdsordrer
 
-**Lægning af arbejdsordre**-link
+Fanen **Planlægning af arbejdsordrer** indeholder følgende indstillinger i oversigtspanelet **Generelt**:
 
 - **Planlæg tidshorisont** definerer periode i dage, beregnet ud fra den forventede startdato for arbejdsordren, hvor arbejdsordrens job er planlagt.  
 - **Behovsplanen** relaterer til ressourcer i modulet **Organisationsadministration**. Hvis du vælger en behovsplan i dette felt, kan du se kapacitetsreservationer, der er relateret til arbejdsordrer, i **Kapacitetsreservationer** (**Virksomhedsadministration** > **Ressourcer** > **Ressourcer** > vælg ressource > fanen **Ressource** > knappen **Kapacitetsreservationer**). Hvis du lader feltet være tomt, kan du se den kapacitetsbelastning, der er relateret til arbejdsordrer, i **Kapacitetsbelastning** (**Virksomhedsadministration** \> **Ressourcer** \> **Ressourcer** \> vælg ressource \> **Ressource**-fanen \> **Kapacitetsbelastning**-knappen).  
@@ -100,13 +99,10 @@ De felter, der er beskrevet i følgende liste, relaterer alle til beregnede rang
   - Hvis det antages, at der ikke er valgt en ansvarlig arbejder og en ansvarlig arbejdergruppe på en arbejdsordre, der skal planlægges, og du adderer og subtraherer overstående eksempelværdier af **Foretrukken arbejder**, **Foretrukken arbejdergruppe**, **Aktivplacering** og **Startdato**, får du i alt 3.010,00. Det betyder en høj score for den arbejder, der allerede er valgt som foretrukken arbejder, og som er medtaget i den foretrukne arbejdergruppe på arbejdsordren, og arbejderen er også placeret i samme facilitet som det aktiv, som et job skal planlægges for. Dette betyder, at der er en god chance for, at den pågældende arbejder vil blive valgt til at fuldføre jobbet under arbejdsordreplanlægning.  
   - Hvis værdien "0,00" er indsat i et af de otte felter ovenfor, vil rangeringsscoren ikke blive brugt under planlægningen af arbejdsordren.  
 
-**Dokumenttyper**-link
+## <a name="the-document-types-tab"></a>Fanen Dokumenttyper
 
 Vælg de dokumenttyper, der skal være tilgængelige for udskrivning af vedhæftede filer i forbindelse med en arbejdsordrerapport. Dette gøres ved at vælge en dokumenttype i sektionen **Tilgængelig** og vælge ![fremadrettet pil](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, skal du vælge dokumenttypen i sektionen **Valgt** og vælge ![tilbage-pil](media/16-setup-for-objects.png).
 
-**Nummerserier**-link
+## <a name="the-number-sequences-tab"></a>Fanen Nummerserier
 
 Vælg de påkrævede nummerserier i dette afsnit. Der er to nummerserier for aktiver: én for manuelt oprettede aktiver og én for aktiver, som er oprettet via ventende aktiver.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
