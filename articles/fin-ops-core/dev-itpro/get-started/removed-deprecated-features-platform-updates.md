@@ -3,7 +3,7 @@ title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af Finance and Operations-apps.
 author: sericks007
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: d57182aa34c4897ef3703d0f8ed08d032c261170
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689560"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154081"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -32,7 +32,55 @@ Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at 
 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
-Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://docs.microsoft.com/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+
+## <a name="feature-removed-effective-january-28-2021"></a>Funktionen er fjernet med ikrafttrædelsesdatoen 28. januar 2021
+
+### <a name="batch-job-to-handle-sql-index-defragmentation"></a>Batchjob til håndtering af defragmentering af SQL-indeks
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Denne funktion er fjernet for at reducere de faste omkostninger ved drift, overvågning og vedligeholdelse af indeksstyringen af kunder. |
+| **Erstattet af en anden funktion?**   | Fremadrettet vil indeksvedligeholdelsen blive udført af Microsoft-tjenester. Dette sker løbende, uden at det påvirker brugerworkloads. |
+| **Produktområder, der er berørt**         | Finance and Operations-apps|
+| **Installationsindstilling**              | Skyinstallation – påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
+| **Status**                         | Denne funktion er fjernet. |
+
+
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.17 af Finance and Operations-apps
+
+> [!IMPORTANT]
+> Version 10.0.17 er tilgængelig som del af en forhåndsversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om prøveversioner i [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Understøttelse af de seneste versioner af Visual Studio kræver ændringer af X++ udvidelserne til Visual Studio. Disse ændringer er ikke kompatible med Visual Studio 2015. |
+| **Erstattet af en anden funktion?**   | Visual Studio 2017 erstatter Visual Studio 2015 som den installerede og påkrævede version. |
+| **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet. Ved opdatering fjernes de forrige X++-værktøjer fra Visual Studio 2015, og de opdaterede værktøjer installeres ikke i Visual Studio 2015. Det påvirker ikke hostede builds. I forbindelse med build-virtuelle maskiner skal build-pipelinen (build-definitionen) opdateres manuelt for at ændre afhængigheden fra MSBuild 14.0 (Visual Studio 2015) til MSBuild 15.0 (Visual Studio 2017) som beskrevet i [Opdatere en ældre pipeline i Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+
+### <a name="user-avatar"></a>Brugeravatar 
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Brugeravataren, der vises i højre side af navigationslinjen, blev hentet ved hjælp af en API fra Dynamics 365-hovedkontrolelementet, der er frarådet. |
+| **Erstattet af en anden funktion?**   | Brugerne vil i stedet se deres initialer i en cirkel på navigationslinjen. Det er den samme visual, der anvendes på udviklingsmaskiner. |
+| **Produktområder, der er berørt**         | Webklient |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Fjernet fra og med version 10.0.17 |
+
+### <a name="enterprise-portal-ep-deprecation"></a>Udfasning af Enterprise Portal (EP)  
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Metadataartifakter, der er tilknyttet Dynamics AX 2012 Enterprise Portal (EP), er blevet frarådet, da EP aldrig blev understøttet i Finance and Operations-apps. |
+| **Erstattet af en anden funktion?**   | Ingen |
+| **Produktområder, der er berørt**         | Webklient |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet. Alle EP-koder er planlagt til at blive fjernet i oktober 2021-versionen. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.15 af Finance and Operations-apps
 
@@ -192,6 +240,3 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidligere meddelelser om fjernede eller udfasede funktioner
 Hvis du vil vide mere om funktioner, der er blevet fjernet eller udfaset i tidligere versioner, kan du se [Fjernede eller udfasede funktioner i tidligere versioner](../migration-upgrade/deprecated-features.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

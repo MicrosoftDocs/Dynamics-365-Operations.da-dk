@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: bcf58a7005a8e61c5fba9c5065d75ebae8b909cc
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695133"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154147"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -114,7 +114,7 @@ Fra ruden **Hjælp** kan du få adgang til emner, der gælder for klienten. Når
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Adgang til opgaveguider fra ruden Hjælp
 
-Før du kan få adgang til opgaveguider fra ruden **Hjælp**, skal en systemadministrator konfigurere nogle indstillinger på siden **Systemparametre** i Finance, Supply Chain Management eller Commerce. Få flere oplysninger i [Tilføje opgaveguider](help-connect.md#adding-task-guides).
+Før du kan få adgang til opgaveguider fra ruden **Hjælp**, skal en systemadministrator konfigurere nogle indstillinger på siden **Systemparametre** i Finans, Supply Chain Management eller Commerce. Få flere oplysninger i [Tilføje opgaveguider](help-connect.md#adding-task-guides).
 
 <!-- > [!NOTE]
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
@@ -163,7 +163,4 @@ Følgende tabel viser vores websteder. Websteder, der har en stjerne (\*) ud for
 | [Docs.microsoft.com/tidligere versioner](/previous-versions/dynamics/) | Dette websted er vært for indhold fra tidligere versioner. |
 | [Dynamics Community](https://community.dynamics.com/) | Dette websted er vært for blogs, fora og videoer. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Dette websted indeholder oplysninger om evaluering og salg. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Dette websted er vært for nogle kursusressourcer, rapporter og hvidbøger, der kan hentes, og er det primære supportwebsted for serviceplanindehavere. Adgang til visse ressourcer på dette websted kan kræve en serviceplan. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Dette websted er vært for nogle kursusressourcer, rapporter og hvidbøger, der kan hentes, og er det primære supportwebsted for serviceplanindehavere. Adgang til visse ressourcer på dette websted kan kræve en serviceplan. |

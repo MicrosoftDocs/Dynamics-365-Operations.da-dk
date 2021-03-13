@@ -1,6 +1,6 @@
 ---
 title: Fjernede eller udfasede funktioner i tidligere versioner
-description: I dette emne beskrives funktioner, der er blevet fjernet, eller som er planlagt til fjernelse fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
+description: I dette emne beskrives funktioner, der er blevet fjernet, eller som er planlagt til fjernelse fra Dynamics 365 for Finance and Operations og tidligere versioner.
 author: sericks007
 manager: AnnBe
 ms.date: 09/21/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b862938ec8226cc963fb8c85fcfc2241684eab7
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679950"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154379"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -39,9 +39,9 @@ I dette emne beskrives funktioner, der er blevet fjernet eller er udfaset fra Dy
 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
-Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://docs.microsoft.com/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
 
-## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 med Platform update 31
+## <a name="finance-1007-with-platform-update-31"></a>Finans 10.0.7 med Platform update 31
 
 ### <a name="chinese-voucher-types-without-account-groups-selection"></a>Kinesiske bilagstyper uden valg af kontogrupper
 |&nbsp;   | &nbsp; |
@@ -970,7 +970,7 @@ Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne funktion er blevet erstattet af en anden funktion. |
-| **Erstattet af en anden funktion?**   | Common Data Service                                      |
+| **Erstattet af en anden funktion?**   | Dataverse                                      |
 | **Produktområder, der er berørt**         | Connector til Dynamics                         |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0                           |
 
@@ -1373,6 +1373,3 @@ Windows 8 tablet-appen leverede funktionalitet til udgiftsregistrering og -godke
 |     <strong>Produktområder, der er berørt</strong>     |                                              Finans                                              |
 |             <strong>Status</strong>             |                                      Fjernet fra og med Dynamics AX 2012                                      |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

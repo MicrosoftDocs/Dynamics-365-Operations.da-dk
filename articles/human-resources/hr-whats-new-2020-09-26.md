@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527404"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152191"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (26. september 2020)
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527404"
 
 I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources. Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
-Yderligere oplysninger om nye funktioner og de forventede generelle tilgængelighedsdatoer finder du i [Oversigten over Dynamics 365 Human Resources 2020-udgivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Yderligere oplysninger om nye funktioner og de forventede generelle tilgængelighedsdatoer finder du i [Oversigten over Dynamics 365 Human Resources 2020-udgivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>I denne frigivelse
 
@@ -58,7 +57,7 @@ Følgende fejlrettelser er inkluderet i denne version.
 | 481401 | Periodiseringsprocesser hænger, når grundlaget for periodiseringsdatoen ligger efter den periodiserede startdato og ved afslutningen af måneden | Periodiseringsprocesser er opdateret, så de ikke at have en forsinkelse, når periodiseringsdatogrundlaget er efter den periodiserede startdato og ved udgangen af måneden. |
 | 447167 | Lister over poster, der udløber, omfatter inaktive arbejdere | Fanen **Udløbende poster** i **Personalestyring** omfatter inaktive arbejdere. Nu omfatter den kun aktive arbejdere. |
 | 486840 | Forkert orlovsanmodning åbnes fra **Workflowopgaver, der er tildelt til mig** | Valg af en orlovsanmodning fra **Workflowopgaver, der er tildelt til mig** åbner ikke længere den seneste orlovsanmodning, der er tildelt den aktuelle bruger. |
-| 506868 | Common Data Service-feltet **Stilling** er ikke indstillet til enheden **Stilling** | Feltet **Titel** i enhederne **Job** og **Stilling** vises som ikke angivet. Feltet **Titel** vises nu. |
+| 506868 | Dataverse-feltet **Stilling** er ikke indstillet til enheden **Stilling** | Feltet **Titel** i enhederne **Job** og **Stilling** vises som ikke angivet. Feltet **Titel** vises nu. |
 | 430359 | Der er ikke adgang til offboarding-kontrollisteopgaver, når leder- og medarbejderroller er tildelt | Arbejdere med en fremtidig fratrædelsesdato kunne ikke få adgang til deres kontrollisteopgaver, hvis de kun havde rollen som medarbejder eller leder. Nu kan brugere, der kun har en medarbejder- eller lederrolle, få adgang til offboarding-opgaver med en fremtidig fratrædelsesdato. |
 | 458102 | Ny medarbejder vises ikke i enheden med **lønoplysninger for arbejder** ved oprettelsen | Nye medarbejdere inkluderes i enheden med arbejderes lønoplysninger uden at skulle åbne medarbejderens lønoplysninger, før enheden eksporteres. |
 
@@ -85,6 +84,3 @@ Du kan se en komplet liste over planlagte funktioner og deres planlagte udgivels
 [Oversigt over Dynamics 365 Human Resources 2020 udgivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Opdateringsproces](hr-admin-setup-update-process.md)
 [Administrere funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

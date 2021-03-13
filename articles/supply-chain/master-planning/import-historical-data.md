@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6ba2e1a3a884d29bff491f914aa2d5f9ece2b84
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424869"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154221"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Importér historiske data til behovsprognoser
 
@@ -34,31 +33,31 @@ For at garantere for nøjagtigheden af behovsprognoser skal du have så mange hi
 I arbejdsområdet **Datastyring**, kan du se en oversigt over alle felterne i enheden.
 
 1. Åbn arbejdsområdet **Datastyring**.
-2. Klik på feltet **Dataenheder**.
+2. Vælg feltet **Dataenheder**.
 3. Søg i enhedslisten efter **Historisk eksternt behov**.
-4. Klik på **Målfelter**. Følgende enhedsfelter er obligatoriske: websted (**DeliveringSiteId**), dato (**DemandDate**), antal (**DemandQuantity**), og enten varenummer (**ItemNumber**) eller varefordelingsnøgle (**ProductAllocationKeyId**).
+4. Vælg **Målfelter**. Følgende enhedsfelter er obligatoriske: websted (**DeliveringSiteId**), dato (**DemandDate**), antal (**DemandQuantity**), og enten varenummer (**ItemNumber**) eller varefordelingsnøgle (**ProductAllocationKeyId**).
 
 For at kunne bruge dataenheden skal du have en Microsoft Excel-fil eller kommaseparerede værdier (CSV), der indeholder de historiske behovsdata. Følgende eksempel viser, hvordan du importerer data fra en CSV-fil.
 
+Yderligere oplysninger om, hvordan du importerer data, herunder hvordan du rydder data efter en import, finder du i [Oversigt over dataimport- og -eksportjob](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) og relaterede emner.
+
 ## <a name="example"></a>Eksempel
 
-Du kan bruge følgende fil som et eksempel. Hent [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Denne fil indeholder de historiske behovsdata for vare D0001. Den indeholder kun følgende obligatoriske felter: websted, antal og behovsdatoen.
+Du kan bruge følgende fil som et eksempel. Hent [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/). Denne fil indeholder de historiske behovsdata for vare D0001. Den indeholder kun følgende obligatoriske felter: websted, antal og behovsdatoen.
 
 1. Vælg det firma, du vil importere de historiske behovsdata til.
 2. Åbn arbejdsområdet **Datastyring**.
-3. Klik på feltet **Importér**.
+3. Vælg feltet **Import**.
 4. Angiv et navn til importprojektet, f.eks. **Importér historiske behov for vare D0001**.
 5. I feltet **Kildedataformat** skal du vælge formatet på den fil, du importerer. Hvis du vil importere filen HistoricalDemandData i dette eksempel, skal du vælge **CSV**.
 6. I feltet **Enhedsnavn** skal du vælge **Historisk eksternt behov**.
 7. Gem filen på computeren, og overfør den derefter.
-8. Klik på **Importér**.
+8. Vælg **Importér**.
 9. Siden **Udførelsesoversigt** åbnes automatisk. Kontrollér de importerede data på siden.
 
 Når du har importeret de historiske behovsdata, kan du generere en behovsprognose.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Generer et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)  
+[Oversigt over dataimport- og -eksportjob](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
