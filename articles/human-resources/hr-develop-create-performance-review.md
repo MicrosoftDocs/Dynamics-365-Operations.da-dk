@@ -2,7 +2,7 @@
 title: Oprette performancegennemgange
 description: Dette emne viser, hvordan du opretter en performanceevaluering, og beskriver formålet med hvert afsnit i evalueringen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e83bcf60e494e6f04387727bedf41175faa07557
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417799"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115794"
 ---
 # <a name="create-performance-reviews"></a>Oprette performancegennemgange
 
@@ -78,6 +78,3 @@ Dette emne viser, hvordan du opretter en performanceevaluering, og beskriver for
 34. Vælg fanen **Evaluer**. Når evalueringen bevæger sig gennem statusserne, kan medarbejderen og lederen tilføje kommentarer for de enkelte mål eller kompetencer.  
 35. Vælg fanen **Afslutninger**. Arbejderen og lederen kan afslutte evalueringen. Når alle nødvendige godkendelser er fuldført, status ændres til **Fuldført**, og der foretages ingen yderligere ændringer.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

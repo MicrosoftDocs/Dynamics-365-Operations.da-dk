@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9aaf24147900c890a14c60ab969da7124c538911
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682765"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115722"
 ---
 # <a name="financial-insights"></a>Økonomisk indsigt
 
@@ -66,9 +66,10 @@ Dataene til **Økonomisk indsigt** trækkes fra enhedslageret (**Systemadministr
 
 Du skal opdatere følgende enheder for at se data i arbejdsområderne **Økonomisk indsigt** og **Regnskabsdirektørens oversigt**:
 
-- Transaktionsdata til finansiel rapportering version 2 (**Bemærk:** Dette er nyt i version 10.0.1 og erstatter den forrige enhed).
-- Transaktionsdata til økonomirapportering
+- BudgetActivityMeasure
+- Transaktionsdata version 3 til økonomirapportering 
 - CustCollectionsBIMeasurements
+- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Indkøbskube
 - Salgskube
@@ -102,7 +103,7 @@ I følgende diagram til sammenligning får du hjælp til at skelne mellem de to 
 | **Understøtte rapporteringshierarki/organisationshierarki**   | Ja                                                               | Nr. |
 | **Rapportere reskontrodata**                             | Ja Begrænset til kreditor, debitor                              | Ja Kreditor, debitor, kreditor-/debitorgrupper, kreditor-/debitoradresser osv. |
 | **Rapporteringsvaluta**                                   | Ja Regnskabsvaluta og omregning til rapporteringsvaluta       | Nej Kun regnskabsvaluta |
-| **Sikkerhed**                                             | Ja Overholder Finance-sikkerhed i trædiagrammet | Begrænset Vis rapporter for alle firmaer (uanset sikkerhed for Finance and Operations) eller kun aktivt firma |
+| **Sikkerhed**                                             | Ja Overholder Finans-sikkerhed i trædiagrammet | Begrænset Vis rapporter for alle firmaer (uanset sikkerhed for Finance and Operations) eller kun aktivt firma |
 | **Understøtte forskellige kontoplaner og regnskabsår** | Ja                                                               | Nr. |
 | **Rapportere eksterne data**                              | Nr.                                                                | Nr. |
 | **Understøtte konsolideringer**                               | Ja                                                               | Begrænset Kan rapportere om flere firmaer, men kun bruge regnskabsvaluta |
@@ -247,6 +248,3 @@ Oplysningerne i følgende ressourcer er ikke påkrævet for at aktivere de integ
 - [Få adgang til analytiske arbejdsområder og rapporter i 1-box-miljøet](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

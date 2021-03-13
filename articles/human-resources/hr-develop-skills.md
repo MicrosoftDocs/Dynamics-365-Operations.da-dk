@@ -2,7 +2,7 @@
 title: Justere arbejdsstyrkens færdigheder med virksomhedens behov
 description: Du kan spore færdigheder, som arbejdere, ansøgere eller kontakter har eller bør have for at udfylde deres roller effektivt. Du kan også angive de færdigheder, der kræves til et bestemt job.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7abaa99bdec5fcf20a63bfeb716ebb63dd3712df
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 26493306a8bd810f936b15160b07263ca41f87ae
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417814"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115578"
 ---
 # <a name="align-workforce-skills-with-business-needs"></a>Justere arbejdsstyrkens færdigheder med virksomhedens behov
 
@@ -62,6 +62,3 @@ Ved hjælp af kompetencesøgningsprofiler kan du finde aktuelle medarbejdere ell
 Du kan oprette en kompetenceprofilanalyse for at få vist en liste over en arbejders, ansøgers eller kontakts færdigheder pr. en bestemt dato. Oprette en analyse af kompetencekløft for at sammenligne en persons færdigheder med de færdigheder, der kræves til et bestemt job.  
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

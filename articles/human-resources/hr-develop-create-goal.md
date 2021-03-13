@@ -2,7 +2,7 @@
 title: Oprette et mål
 description: Du kan oprette mål, føje aktiviteter til mål, spore målinger og knytte mål til en evaluering.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2157e3b31786c8f0412ea447831e45a2290b8e35
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 875d0ae7ae6b93f3fc29aeb4617671de289e6c63
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417745"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115818"
 ---
 # <a name="create-a-goal"></a>Oprette et mål
 
@@ -54,10 +54,7 @@ Du kan oprette mål, føje aktiviteter til mål, spore målinger og knytte mål 
 23. Klik på Vis sektioner for at åbne dialogboksen.
 24. Vælg Ja i feltet Vis målinger.
 25. Klik på Gem.
-    * Der er ofte mål, der er de samme eller ens for gruppemedlemmer eller alle medarbejdere.     Personaleadministratoren eller lederen kan oprette målskabeloner for disse mål. Du kan tilføje et mål fra en skabelon og derefter redigere den, så den stemmer overens med dine tidslinjer.  
-    * Der er ofte flere mål, der er de samme eller ens for gruppemedlemmer eller alle medarbejdere.     Personaleadministratoren eller lederen kan oprette mål grupper, der indeholder en eller flere målskabeloner. Du kan tilføje mål fra en målgruppe og derefter redigere dem, så de stemmer overens med dine tidslinjer.  
+    * Der er ofte mål, der er de samme eller ens for gruppemedlemmer eller alle medarbejdere.     Human Resourcesadministratoren eller lederen kan oprette målskabeloner for disse mål. Du kan tilføje et mål fra en skabelon og derefter redigere den, så den stemmer overens med dine tidslinjer.  
+    * Der er ofte flere mål, der er de samme eller ens for gruppemedlemmer eller alle medarbejdere.     Human Resourcesadministratoren eller lederen kan oprette mål grupper, der indeholder en eller flere målskabeloner. Du kan tilføje mål fra en målgruppe og derefter redigere dem, så de stemmer overens med dine tidslinjer.  
     * Når du opretter en evaluering, kan du føje mål til denne evaluering. I installationsvejledningen til evalueringen kan du se hvordan du kan føje mål til dine evalueringer.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

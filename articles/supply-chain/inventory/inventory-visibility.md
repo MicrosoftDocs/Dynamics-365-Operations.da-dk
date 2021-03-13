@@ -1,7 +1,7 @@
 ---
 title: Tilføjelsesprogrammet Lagersynlighed
 description: Dette emne beskriver, hvordan du installerer og konfigurerer tilføjelsesprogrammet Lagersynlighed til Dynamics 365 Supply Chain Management.
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625059"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114664"
 ---
 # <a name="inventory-visibility-add-in"></a>Tilføjelsesprogrammet Lagersynlighed
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Tilføjelsesprogrammet Lagersynlighed er en uafhængig og meget skalerbar mikrotjeneste, der gør det muligt at registrere disponibel lagerbeholdning i realtid, hvilket giver en global visning af lagersynlighed.
 
 Alle oplysninger, der vedrører disponibel lagerbeholdning, eksporteres for tjenesten næsten i realtid via SQL-integration på lavt niveau. Eksterne systemer får adgang til tjenesten via RESTful-API'er for at forespørge på disponible oplysninger om bestemte sæt dimensioner, så der hentes en liste over tilgængelige disponible positioner.
 
-Lagersynlighed er en mikrotjeneste, der bygger på Common Data Service, hvilket betyder, at du kan udvide den ved at opbygge Power Apps og anvende Power BI for at levere brugerdefinerede funktioner, der opfylder virksomhedens behov. Du kan også opgradere indekset for at foretage lagerforespørgsler.
+Lagersynlighed er en mikrotjeneste, der bygger på Microsoft Dataverse, hvilket betyder, at du kan udvide den ved at opbygge Power Apps og anvende Power BI for at levere brugerdefinerede funktioner, der opfylder virksomhedens behov. Du kan også opgradere indekset for at foretage lagerforespørgsler.
 
 Lagersynlighed angiver konfigurationsindstillinger, så den kan integreres med flere tredjepartssystemer. Den understøtter den standardiserede lagerdimension, tilpassede udvidelsesmuligheder og standardiserede, beregnede antal, der kan konfigureres.
 
@@ -78,30 +78,57 @@ For at installere tilføjelsesprogrammet Lagersynlighed skal du gøre følgende:
 
 ### <a name="get-a-security-service-token"></a>Få et token til sikkerhedsservice
 
-Benyt følgende fremgangsmåde for at få et token til sikkerhedsservice:
+Få et token til sikkerhedsservice ved at gøre følgende:
 
-1. Få dit `aadToken`, og kald slutpunktet: https://securityservice.operations365.dynamics.com/token.
-1. Erstat `client_assertion` i brødteksten med `aadToken`.
-1. Erstat konteksten i brødteksten med det miljø, hvor du vil installere tilføjelsesprogrammet.
-1. Erstat omfanget i brødteksten med følgende:
+1. Log på Azure-portalen, og brug den til at finde `clientId` og `clientSecret` til din Supply Chain Management-applikation.
+1. Hent et Azure Active Directory-token (`aadToken`) ved at sende en HTTP-anmodning med følgende egenskaber:
+    - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **metode** - `GET`
+    - **Brødtekst (formulardata)**:
 
-    - Omfang til MCK - "https://inventoryservice.operations365.dynamics.cn/.default"  
-    (Du kan finde Azure Active Directory-program-id'et og lejer-id'et for MCK i `appsettings.mck.json`).
-    - Omfang til PROD - "https://inventoryservice.operations365.dynamics.com/.default"  
-    (Du kan finde Azure Active Directory-program-id'et og lejer-id'et for PROD i `appsettings.prod.json`).
+        | nøgle | værdi |
+        | --- | --- |
+        | client_id | ${aadAppId} |
+        | client_secret | ${aadAppSecret} |
+        | grant_type | client_credentials |
+        | ressource | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Du modtager et `aadToken` i svaret, der ligner følgende eksempel.
 
-    Resultatet skulle ligne følgende eksempel:
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Formuler en JSON-anmodning, der ligner følgende:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Placering:
+    - Værdien `client_assertion` skal være det `aadToken`, du har modtaget i det forrige trin.
+    - Værdien `context` skal være det miljø-id, hvor du vil implementere tilføjelsesprogrammet.
+    - Angiv alle andre værdier som vist i eksemplet.
+
+1. Send en HTTP-anmodning med følgende egenskaber:
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **metode** - `POST`
+    - **HTTP-overskrift** – Medtag API-versionen (nøglen er `Api-Version`, og værdien er `1.0`)
+    - **Brødtekst** – Medtag den JSON-anmodning, du oprettede i det forrige trin.
 
 1. Du vil få et `access_token` i svaret. Det skal du bruge som ihændehavertoken for at kalde Lagersynlighed-API'et. Her er et eksempel.
 
@@ -500,6 +527,3 @@ De forespørgsler, der vises i de foregående eksempler, kunne returnere et resu
 ```
 
 Bemærk, at antalsfelterne er struktureret som en ordbog med målinger og deres tilknyttede værdier.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Godkendelse
 description: Denne artikel indeholder oversigtsoplysninger om, hvordan du kan godkende med API'en (Application Programming Interface) for Microsoft Dynamics 365 Human Resources-data.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 963bec2b817c59e3b5860c5ff5885e165ec8656a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417738"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115554"
 ---
 # <a name="authentication"></a>Godkendelse
 
@@ -185,6 +185,3 @@ namespace TalentODataPoC
 ```
 
 Når du har hentet et adgangstoken, skal du overføre tokenet i godkendelsesheaderen som et bærertoken sammen med de enkelte anmodninger, du sender til data-API'en, som beskrevet ovenfor.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

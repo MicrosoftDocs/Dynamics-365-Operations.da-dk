@@ -11,26 +11,28 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 38cdeb9110691e594b4b90fc5bc79e369c9f4707
-ms.sourcegitcommit: 1cfd6e0c808341b0f5bafbde7d04b0255b27352f
+ms.openlocfilehash: bb887bbff5eb5b92f588d3fa966ea204633575db
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664084"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115626"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfiguration til Finance Insights (prøveversion)
 
 [!include [banner](../includes/banner.md)]
+
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sammen med Common Data Service, Azure og AI Builder for at levere effektive prognoseværktøjer til din organisation. I dette emne beskrives de konfigurationstrin, der sætter systemet i gang med at bruge de egenskaber, der er tilgængelige i Finance Insights.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sammen med Microsoft Dataverse, Azure og AI Builder for at levere effektive prognoseværktøjer til din organisation. I dette emne beskrives de konfigurationstrin, der sætter systemet i gang med at bruge de egenskaber, der er tilgængelige i Finance Insights.
 
 ## <a name="deploy-dynamics-365-finance"></a>Installér Dynamics 365 Finance
 
@@ -40,7 +42,7 @@ Følg disse trin for at installere miljøerne.
 2. Miljøet skal være et miljø med høj tilgængelighed (HA) i sandkassesystemet. (Denne type miljø kaldes også et Niveau-2-miljø). Du kan finde flere oplysninger i [Miljøplanlægning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Hvis du bruger Contoso-demodata, skal du bruge yderligere eksempeldata for at kunne bruge debitorbetalingsforudsigelser, likviditetsbudgetter og budgetprognosefunktioner. 
 
-## <a name="configure-common-data-service"></a>Konfigurer Common Data Service
+## <a name="configure-dataverse"></a>Konfigurer Dataverse
 
 Du kan fuldføre de manuelle konfigurationstrin, der følger, eller du kan gøre konfigurationsprocessen hurtigere ved at bruge det Windows PowerShell-script, der angives. Når PowerShell-scriptet er afsluttet, får du vist værdier, der skal bruges til at konfigurere Finance Insights. 
 
@@ -49,7 +51,7 @@ Du kan fuldføre de manuelle konfigurationstrin, der følger, eller du kan gøre
 
 # <a name="manual-configuration-steps"></a>[Manuelle konfigurationstrin](#tab/configuration-steps)
 
-1. Åbn [Power Platform Administration](https://admin.powerplatform.microsoft.com/), og udfør følgende trin for at oprette et nyt Common Data Service-miljø i samme Active Directory-lejer:
+1. Åbn [Power Platform Administration](https://admin.powerplatform.microsoft.com/), og udfør følgende trin for at oprette et nyt Dataverse-miljø i samme Active Directory-lejer:
 
     1. Åbn siden **Miljøer**.
 
@@ -64,13 +66,13 @@ Du kan fuldføre de manuelle konfigurationstrin, der følger, eller du kan gøre
     8. Vælg **Gem**.
     9. Opdatér siden **Miljøer**.
     10. Vent, indtil værdien i **Status** opdateres til **Klar**.
-    11. Notér dig Common Data Service-organisations-id.
+    11. Notér dig Dataverse-organisations-id.
     12. Vælg miljøet, og vælg derefter **Indstillinger**.
     13. Vælg **Ressourcer \> Alle tidligere indstillinger**.
     14. Vælg indstillinger på den øverste navigationslinje **Indstillinger**, og vælg derefter **Tilpasninger**.
     15. Vælg **Udviklerressourcer**.
-    16. Indstil feltet **Forekomstreferenceoplysninger-id** til den Common Data Service-organisations-id, som du noterede tidligere.
-    17. I adresselinjen i browseren skal du notere URL-adressen for Common Data Service-organisationen. URL-adressen kan f. eks være `https://org42b2b3d3.crm.dynamics.com`.
+    16. Indstil feltet **Forekomstreferenceoplysninger-id** til den Dataverse-organisations-id, som du noterede tidligere.
+    17. I adresselinjen i browseren skal du notere URL-adressen for Dataverse-organisationen. URL-adressen kan f. eks være `https://org42b2b3d3.crm.dynamics.com`.
 
 2. Hvis du planlægger at bruge funktionen Likviditetsflowbudgetter eller budgetprognoser, skal du følge disse trin for at opdatere din organisations anmærkningsgrænse til mindst 50 MB:
 
@@ -267,12 +269,12 @@ catch {
 
 ## <a name="configure-the-azure-setup"></a>Konfigurere Azure-opsætning
 
-### <a name="enter-the-common-data-service-directory-id-and-the-users-azure-ad-object-id"></a>Angiv Common Data Service-mappe-id og brugerens Azure AD-objekt-id
+### <a name="enter-the-dataverse-directory-id-and-the-users-azure-ad-object-id"></a>Angiv Dataverse-mappe-id og brugerens Azure AD-objekt-id
 
-1. Angiv Common Data Service-mappe-id:
+1. Angiv Dataverse-mappe-id:
 
     1. Åbn [Azure-portalen](https://portal.azure.com).
-    2. Log på ved hjælp af det bruger-id, der blev brugt til at oprette Common Data Service-miljøet.
+    2. Log på ved hjælp af det bruger-id, der blev brugt til at oprette Dataverse-miljøet.
     3. Gå til **Azure Active Directory**.
     4. Kopier værdien **Lejer-id**.
 
@@ -334,7 +336,7 @@ Hvis du ikke kan finde de foregående programmer, kan du prøve følgende trin.
 #### <a name="create-azure-resources"></a>Oprette Azure-ressourcer
 
 > [!NOTE]
-> Sørg for at oprette følgende ressourcer i samme Azure AD-forekomst som Common Data Service-miljøet. Du kan ikke bruge ressourcer fra en anden Azure AD-forekomst.
+> Sørg for at oprette følgende ressourcer i samme Azure AD-forekomst som Dataverse-miljøet. Du kan ikke bruge ressourcer fra en anden Azure AD-forekomst.
 
 1. Oprette en ny lagerkonto:
 
@@ -447,8 +449,10 @@ Hvis du ikke kan finde de foregående programmer, kan du prøve følgende trin.
 
 ```
 function New-FinanceDataLakeAzureResources {
-    $defaultSecretExpiryInYear = 1
+    Assert-ScriptSetup
 
+    $ClientAppName = 'Finance Data Lake Application'
+    $DefaultSecretExpiryInYear = 1
     $MicrosoftDynamicsERPMicroservicesAppId = '0cdb527f-a8d1-4bf8-9436-b352c68682b2'
     $MicrosoftDynamicsERPMicroservicesCDSAppId = '703e2651-d3fc-48f5-942c-74274233dba8'
     $AIBuilderAuthorizationServiceAppId = 'ad40333e-9910-4b61-b281-e3aeeb8c3ef3'
@@ -461,74 +465,65 @@ function New-FinanceDataLakeAzureResources {
     $userContext = ConvertFrom-Json ((az ad signed-in-user show) -join '')
     $user = Get-AzureADUser -Filter ("UserPrincipalName eq '" + $userContext.UserPrincipalName + "'")
 
-    $subscriptionId = (Read-Host -Prompt "Enter the Azure Subscription ID: (blank for default)")
-    if ($subscriptionId.Trim() -ne '') {
-        $azSubscription = Select-AzSubscription -SubscriptionId $subscriptionId
-    }
-
-    $resourceGroupName = (Read-Host -Prompt "Enter the Azure Resource Group name: (blank for 'FinanceDataLake')")
-    if ($null -eq $resourceGroupName -or $resourceGroupName.Trim() -eq '') {
-        $resourceGroupName = 'FinanceDataLake'
-    }
-    $resourceGroup = Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue
-
-    if (-not ($resourceGroup)) {
-        $resourceLocation = ''
-        $azResourceLocations = (Get-AzLocation | Select-Object Location).Location
-        while ($resourceLocation.Trim() -eq '' -or (-not ($resourceLocation -in $azResourceLocations))) {
-            $resourceLocation = (Read-Host -Prompt "Enter the location in which to create the Azure Resource Group: ('help' to see values)")
-            if ($resourceLocation -eq 'help') {
-                $azResourceLocations
-                $resourceLocation = ''
-            }
+    Set-AzureSubscription
+    
+    $resourceGroup = $null
+    $ResourceGroupName = 'D365FinanceInsightsDataLake'
+    $ResourceGroupNameSuffix = ''
+    $FullResourceGroupName = ''
+    Write-Output ("The default Azure Resource Group name is '{0}'" -f $ResourceGroupName)
+    while (-not ($resourceGroup)) {
+        $ResourceGroupNameSuffix = (Read-Host -Prompt "Enter optional Azure Resource Group name suffix: (leave blank for no suffix)")
+        if ([string]::IsNullOrWhitespace($ResourceGroupNameSuffix))
+        {
+            $FullResourceGroupName = $ResourceGroupName
         }
-        $resourceGroup = New-AzResourceGroup -Name $resourceGroupName -Location $resourceLocation
-    }
-    else {
-        $resourceLocation = $resourceGroup.Location
-    }
+        else
+        {
+            if ($ResourceGroupNameSuffix -notmatch "^[A-Za-z0-9]+$") {
+                Write-Warning "The Azure Resource Group name suffix can only include alphanumeric characters."
+                continue
+            }
 
-    $clientAppName = (Read-Host -Prompt "Enter the name of the application registration: (blank for 'Finance Data Lake Application')")
-    if ($clientAppName.Trim() -eq '') {
-        $clientAppName = 'Finance Data Lake Application'
-    }
+            if ($ResourceGroupNameSuffix.Length -gt 60) {
+                Write-Warning "The Azure Resource Group name suffix cannot be longer than 60 characters."
+                continue
+            }
 
-    Write-Output '================================================================================='
+            $FullResourceGroupName = $ResourceGroupName + $ResourceGroupNameSuffix
+        }
+        
+        $resourceGroup = Get-AzResourceGroup -Name $FullResourceGroupName -ErrorAction SilentlyContinue
 
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesAppId | Format-Table -AutoSize
-        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesAppId + "'")
-        Write-Output ("Added AAD Enterprise Application 'Microsoft Dynamics ERP Microservices' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesAppId)
+        if (-not ($resourceGroup)) {
+            Write-Output ("Your new Azure Resource Group name is '{0}'" -f $FullResourceGroupName)
+            $resourceLocation = ''
+            $azResourceLocations = (Get-AzLocation | Select-Object Location).Location
+            while ([string]::IsNullOrWhitespace($resourceLocation) -or (-not ($resourceLocation -in $azResourceLocations))) {
+                $resourceLocation = (Read-Host -Prompt "Enter the location in which to create the Azure Resource Group: ('help' to see values)")
+                if ($resourceLocation -eq 'help') {
+                    Write-Output ("List of available regions is '{0}'" -f ($azResourceLocations -join ','))
+                }
+                elseif ([string]::IsNullOrWhitespace($resourceLocation) -or (-not ($resourceLocation -in $azResourceLocations)))
+                {
+                    Write-Warning ("The provided location is not available for resource group. List of available regions is '{0}'" -f ($azResourceLocations -join ','))
+                }
+            }
+            $resourceGroup = New-AzResourceGroup -Name $FullResourceGroupName -Location $resourceLocation
+            Write-Output ("Created Azure Resource Group '{0}'" -f $resourceGroup.ResourceGroupName)
+        }
+        else {
+            Write-Output ("Found Azure Resource Group '{0}'" -f ($resourceGroup.ResourceGroupName))
+        }
     }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'Microsoft Dynamics ERP Microservices' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesAppId)
-    }
-    $MicrosoftDynamicsERPMicroservicesAppObjectId = $service.ObjectId
-
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesCDSAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesCDSAppId | Format-Table -AutoSize
-        Write-Output ("Added AAD Enterprise Application 'Microsoft Dynamics ERP Microservices CDS' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesCDSAppId)
-    }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'Microsoft Dynamics ERP Microservices CDS' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesCDSAppId)
-    }
-
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AIBuilderAuthorizationServiceAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $AIBuilderAuthorizationServiceAppId | Format-Table -AutoSize
-        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AIBuilderAuthorizationServiceAppId + "'")
-        Write-Output ("Added AAD Enterprise Application 'AI Builder Authorization Service' with Application ID {0}" -f $AIBuilderAuthorizationServiceAppId)
-    }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'AI Builder Authorization Service' with Application ID {0}" -f $AIBuilderAuthorizationServiceAppId)
-    }
-    $aibuilderAuthorizationServiceObjectId = $service.ObjectId
 
     Write-Output '================================================================================='
+    $MicrosoftDynamicsERPMicroservicesAppObjectId = Create-ADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesAppId
+    Create-ADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesCDSAppId | Out-Null
+    $aibuilderAuthorizationServiceObjectId = Create-ADServicePrincipal -AppId $AIBuilderAuthorizationServiceAppId
+    Write-Output ('=================================================================================')
 
-    $clientAppSPN = Get-AzureADServicePrincipal -Filter ("DisplayName eq '" + $clientAppName + "'")
+    $clientAppSPN = Get-AzureADServicePrincipal -Filter ("DisplayName eq '" + $ClientAppName + "'")
     if (-not ($clientAppSPN)) {
         $keyVaultPrincipal = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $KeyVaultServicePrincipalAppId + "'")
         if (-not $keyVaultPrincipal)
@@ -553,18 +548,18 @@ function New-FinanceDataLakeAzureResources {
         $graphAccess.ResourceAppId = $graphPrincipal.AppId
         $graphAccess.ResourceAccess = (New-Object -TypeName "microsoft.open.azuread.model.resourceAccess" -ArgumentList $userRead.Id, "Scope")
 
-        $clientApp = New-AzureADApplication -DisplayName $clientAppName -RequiredResourceAccess @($keyVaultAccess, $graphAccess)
-        $clientAppSPN = New-AzureADServicePrincipal -AppId $clientApp.AppId -Tags @($clientAppName)
+        $clientApp = New-AzureADApplication -DisplayName $ClientAppName -RequiredResourceAccess @($keyVaultAccess, $graphAccess)
+        $clientAppSPN = New-AzureADServicePrincipal -AppId $clientApp.AppId -Tags @($ClientAppName)
         $clientAppId = $clientApp.AppId
-        Write-Output ('Created App Registration "' + $clientAppName + '" with Application Id: ' + $clientAppId)
+        Write-Output ('Created App Registration "' + $ClientAppName + '" with Application Id: ' + $clientAppId)
     }
     else {
-        $clientApp = Get-AzureADApplication -Filter ("DisplayName eq '" + $clientAppName + "'")
+        $clientApp = Get-AzureADApplication -Filter ("DisplayName eq '" + $ClientAppName + "'")
         $clientAppId = $clientApp.AppId
-        Write-Output ('Found App Registration "' + $clientAppName + '" with Application Id: ' + $clientAppId)
+        Write-Output ('Found App Registration "' + $ClientAppName + '" with Application Id: ' + $clientAppId)
     }
             
-    $clientAppSecretCredential = New-AzureADApplicationPasswordCredential -ObjectId $clientApp.ObjectId -CustomKeyIdentifier "ClientAppAccessKey" -EndDate (get-date).AddYears($defaultSecretExpiryInYear)
+    $clientAppSecretCredential = New-AzureADApplicationPasswordCredential -ObjectId $clientApp.ObjectId -CustomKeyIdentifier "ClientAppAccessKey" -EndDate (get-date).AddYears($DefaultSecretExpiryInYear)
     $ClientAppSecret = $clientAppSecretCredential.Value
     $clientAppSpId = $clientAppSPN.ObjectId
 
@@ -574,36 +569,93 @@ function New-FinanceDataLakeAzureResources {
     $templateObject = ConvertFrom-Json $azureTemplate -AsHashtable
     $templateObject.{$schema} = "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#"
     Write-Output 'Provisioning Azure resources. This may take a few minutes.'
-    $deployment = New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateObject $templateObject -aibuilderAppObjectId $aibuilderAuthorizationServiceObjectId -clientAppId $clientAppId -clientAppSecret $ClientAppSecret -clientAppSpObjectId  $clientAppSpId -microserviceSpObjectId $MicrosoftDynamicsERPMicroservicesAppObjectId -userSpObjectId $user.ObjectId
+    try {
+        $deployment = New-AzResourceGroupDeployment -ResourceGroupName $FullResourceGroupName -TemplateObject $templateObject -aibuilderAppObjectId $aibuilderAuthorizationServiceObjectId -clientAppId $clientAppId -clientAppSecret $ClientAppSecret -clientAppSpObjectId  $clientAppSpId -microserviceSpObjectId $MicrosoftDynamicsERPMicroservicesAppObjectId -userSpObjectId $user.ObjectId -Force -ErrorAction Stop
+    }
+    catch {
+        $ErrorMessage = $_.Exception.Message
+        if ($ErrorMessage.Contains("not allowed to be updated"))
+        {
+            Write-Error ($ErrorMessage)
+            Write-Warning "Some items in the existing resource group $FullResourceGroupName could not be updated. To resolve the issue, remove the existing resource group $FullResourceGroupName and run the script again."
+        }
+        else {
+            throw
+        }
 
+    }
     if ($deployment.ProvisioningState -eq 'Succeeded') {
         Write-Output "Successfully deployed the following resources to Azure:"
         Write-Output ("  Key Vault:                         " + $deployment.Outputs.keyVaultName.Value)
         Write-Output ("  Storage Account:                   " + $deployment.Outputs.storageAccountName.Value)
+        
+        $keyVault = Get-AzKeyVault -VaultName $deployment.Outputs.keyVaultName.Value
+        $tenantId = (Get-AzContext).Tenant.Id
+
+        Write-Output "Values for LCS Data Lake Add-In:"
+        Write-Output ("  Tenant ID:                         " + $tenantId)
+        Write-Output ("  DNS Name:                          " + $keyVault.VaultUri)
+        Write-Output "  Storage account secret name:       storage-account-name"
+        Write-Output "  Application ID secret name:        app-id"
+        Write-Output "  Application Secret secret name:    app-secret"
+        Write-Warning "Copy this information for the LCS Add-in for easy access. Azure Cloud Shell will eventually time out and close."
+
+        Write-Output '================================================================================='
+        Write-Output "Values for System parameters > Data connections:"
+        Write-Output ("  Application ID:                    " + $clientAppId)
+        Write-Output ("  Application Secret:                " + $ClientAppSecret)
+        Write-Output ("  DNS name:                          " + $keyVault.VaultUri)
+        Write-Output "  Secret name:                       storage-account-connection-string"
+        Write-Warning "Copy this information for the System parameters for easy access. Azure Cloud Shell will eventually time out and close."
     }
     else {
         Write-Output ("Provisioning Azure resources failed with the following state: " + $deployment.ProvisioningState)
-        Write-Output ("Some of the resources may have been created in resource group: " + $resourceGroupName)
+        Write-Output ("Some of the resources may have been created in resource group: " + $FullResourceGroupName)
+    }
+}
+
+function Assert-ScriptSetup {
+    if ($PSVersionTable.PSEdition -ne 'Core' -or -not $env:ACC_TID) { 
+        throw "This script needs to be uploaded and run from Azure Cloud Shell (PowerShell)." 
+    }
+    
+    if ((Get-AzContext) -eq $null -and (Connect-AzAccount) -eq $null) {
+        throw 'Unable to connect to Azure account.'
+    }
+}
+
+function Set-AzureSubscription {
+    $azSubscription = $null
+    while (-not ($azSubscription)) {
+        $subscriptionId = (Read-Host -Prompt "Enter the Azure Subscription ID: (leave blank for default)")
+        if ([string]::IsNullOrWhitespace($subscriptionId)){
+            break
+        }
+        elseif (-not [guid]::TryParse($subscriptionId, $([ref][guid]::Empty))) {
+                Write-Warning "Azure Subscription ID must be a valid GUID."
+                continue
+        }
+
+        $azSubscription = Select-AzSubscription -SubscriptionId $subscriptionId
+    }
+}
+
+function Create-ADServicePrincipal {
+    param (
+        [string] $AppId
+    )
+
+    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AppId + "'")
+    if (-not $service) {
+        New-AzureADServicePrincipal -AppId $AppId | Out-Null
+        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AppId + "'")
+        Write-Host ("Added AAD Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
+    }
+    else {
+        Write-Host ("Found AAD Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
     }
 
-    Write-Output '================================================================================='
-
-    $keyVault = Get-AzKeyVault -VaultName $deployment.Outputs.keyVaultName.Value
-    Write-Output "Values for LCS Data Lake Add-In:"
-    Write-Output ("  Tenant ID:                         " + $subscriptionContext.Context.Subscription.TenantId)
-    Write-Output ("  DNS Name:                          " + $keyVault.VaultUri)
-    Write-Output "  Storage account secret name:       storage-account-name"
-    Write-Output "  Application ID secret name:        app-id"
-    Write-Output "  Application Secret secret name:    app-secret"
-    Write-Warning "Copy this information for the LCS Add-in as it is not saved. Azure Cloud Shell will eventually time out and close."
-
-    Write-Output '================================================================================='
-    Write-Output "Values for System parameters > Data connections:"
-    Write-Output ("  Application ID:                    " + $clientAppId)
-    Write-Output ("  Application Secret:                " + $ClientAppSecret)
-    Write-Output ("  DNS name:                          " + $keyVault.VaultUri)
-    Write-Output "  Secret name:                       storage-account-connection-string"
-    Write-Warning "Copy this information for the System parameters as it is not saved. Azure Cloud Shell will eventually time out and close."
+    return $service.ObjectId
 }
 
 $azureTemplate = @"
@@ -867,11 +919,17 @@ $azureTemplate = @"
 "@
 
 try {
+  Start-Transcript -path (Join-Path $HOME Provision-FinInsights-Azure.log)
   New-FinanceDataLakeAzureResources
 }
 catch {
   Write-Error $_.Exception.Message
-  Write-Warning $_.Exception.StackTrace
+
+  if ($PSItem.Exception.StackTrace -ne $null)
+  {
+      Write-Warning $_.Exception.StackTrace
+  }
+
   $inner = $_.Exception.InnerException
   while ($null -ne $inner) {
     Write-Output 'Inner Exception:'
@@ -879,6 +937,9 @@ catch {
     Write-Warning $_.Exception.StackTrace
     $inner = $inner.InnerException
   }
+}
+finally {
+  Stop-Transcript
 }
 
 ```
@@ -927,11 +988,11 @@ Tilføjelsesprogrammet vil blive installeret inden for et par minutter.
 
     | Værdi                                                    | Betegnelse |
     |----------------------------------------------------------|-------------|
-    | CDS URL-adresse til organisation                                     | URL-adressen til Common Data Service-organisationen for Common Data Service-forekomst. Hvis du vil finde denne værdi, skal du åbne [Power Apps-portalen](https://make.powerapps.com), vælge knappen **Indstillinger** (tandhjulssymbolet) i øverste højre hjørne, vælge **Avancerede indstillinger** og kopiere URL-adressen. (URL-adressen slutter med "dynamics.com.") |
-    | CDS Org-id                                               | Miljø-id for Common Data Service-forekomst. Hvis du vil finde denne værdi, skal du åbne [Power Apps-portalen](https://make.powerapps.com), vælge knappen **Indstillinger** (tandhjulssymbolet) i øverste højre hjørne, vælge **Tilpasning \> Developer-ressourcer \> Forekomstreferenceoplysninger** og kopiere værdien **id**. |
-    | CDS-lejer-id (mappe-id fra AAD)               | Lejer-id for Common Data Service-forekomst. Hvis du vil finde denne værdi, skal åbne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory** og kopiere værdien **Lejer-id**. |
-    | Angiv det brugerobjekt-id, der har rollen som systemadministrator | Azure AD-brugerobjekt-id for brugeren i Common Data Service. Denne bruger skal være systemadministrator for Common Data Service-forekomsten. Hvis du vil finde denne værdi, skal du åbne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory\> Brugere**, vælge brugeren og derefter kopiere **Objekt-id**-værdien i afsnittet **Identitet**. |
-    | Er dette standard-CDS-miljø for lejeren?      | Hvis Common Data Service-forekomsten var den første produktionsforekomst, der blev oprettet, skal du markere dette afkrydsningsfelt. Hvis Common Data Service-forekomsten er oprettet manuelt, skal du fjerne markeringen i dette afkrydsningsfelt. |
+    | CDS URL-adresse til organisation                                     | URL-adressen til Dataverse-organisationen for Dataverse-forekomst. Hvis du vil finde denne værdi, skal du åbne [Power Apps-portalen](https://make.powerapps.com), vælge knappen **Indstillinger** (tandhjulssymbolet) i øverste højre hjørne, vælge **Avancerede indstillinger** og kopiere URL-adressen. (URL-adressen slutter med "dynamics.com.") |
+    | CDS Org-id                                               | Miljø-id for Dataverse-forekomst. Hvis du vil finde denne værdi, skal du åbne [Power Apps-portalen](https://make.powerapps.com), vælge knappen **Indstillinger** (tandhjulssymbolet) i øverste højre hjørne, vælge **Tilpasning \> Developer-ressourcer \> Forekomstreferenceoplysninger** og kopiere værdien **id**. |
+    | CDS-lejer-id (mappe-id fra AAD)               | Lejer-id for Dataverse-forekomst. Hvis du vil finde denne værdi, skal åbne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory** og kopiere værdien **Lejer-id**. |
+    | Angiv det brugerobjekt-id, der har rollen som systemadministrator | Azure AD-brugerobjekt-id for brugeren i Dataverse. Denne bruger skal være systemadministrator for Dataverse-forekomsten. Hvis du vil finde denne værdi, skal du åbne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory\> Brugere**, vælge brugeren og derefter kopiere **Objekt-id**-værdien i afsnittet **Identitet**. |
+    | Er dette standard-CDS-miljø for lejeren?      | Hvis Dataverse-forekomsten var den første produktionsforekomst, der blev oprettet, skal du markere dette afkrydsningsfelt. Hvis Dataverse-forekomsten er oprettet manuelt, skal du fjerne markeringen i dette afkrydsningsfelt. |
 
 ## <a name="feedback-and-support"></a>Feedback og support
 
@@ -940,6 +1001,3 @@ Send en e-mail til [Indsigt i debitorbetaling (prøveversion)](mailto:fiap@micro
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 
 Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

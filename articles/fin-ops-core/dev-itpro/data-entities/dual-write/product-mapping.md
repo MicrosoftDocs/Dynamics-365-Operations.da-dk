@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 46f2f846f1259d433630a69f17f7b8db9514e6fa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680042"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115674"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
@@ -53,8 +53,8 @@ Produktoplysninger indeholder alle de oplysninger, der er knyttet til produktet 
 
 Finance and Operations-apps | Andre Dynamics 365-apps | Beskrivende tekst
 -----------------------|--------------------------------|---
-Frigivne produkter V2 | msdyn\_sharedproductdetails | Enheden **msdyn\_sharedproductdetails** indeholder felterne fra Finance and Operations-apps, der definerer produktet, og som indeholder produktets økonomiske og administrative oplysninger. 
-Dataverse frigav specifikke produkter | Produkt | Enheden **Produkt** indeholder de felter, der definerer produktet. Den omfatter individuelle produkter (produkter med undertypeprodukt) og produktvarianterne. Tilknytningerne vises i følgende tabel.
+Frigivne produkter V2 | msdyn\_sharedproductdetails | Tabellen **msdyn\_sharedproductdetails** indeholder kolonnerne fra Finance and Operations-apps, der definerer produktet, og som indeholder produktets økonomiske og administrative oplysninger. 
+Dataverse frigav specifikke produkter | Produkt | Tabellen **Produkt** indeholder de kolonner, der definerer produktet. Den omfatter individuelle produkter (produkter med undertypeprodukt) og produktvarianterne. Tilknytningerne vises i følgende tabel.
 Stregkode identificeret ud fra produktnummer | msdyn\_productbarcodes | Produktstregkoder bruges til entydig identifikation af produkter.
 Standardindstillinger for ordre | msdyn\_productdefaultordersettings
 Produktspecifikke standardordreindstillinger | msdyn_productdefaultordersettings
@@ -65,36 +65,38 @@ Farver | msdyn\_productcolors
 Størrelser | msdyn\_productsizes
 Typografier | msdyn\_productsytles
 Konfigurationer | msdyn\_productconfigurations
-Produktmasterfarver | msdyn_sharedproductcolors | Enheden **Delt produktfarve** angiver de farver, en bestemt produktmaster kan have. Dette begreb overflyttes til Dataverse for at bevare data konsekvente.
-Produktmasterstørrelser | msdyn_sharedproductsizes | Enheden **Delt produktstørrelse** angiver de størrelser, som en bestemt produktmaster kan have. Dette begreb overflyttes til Dataverse for at bevare data konsekvente.
-Typografier for produktmaster | msdyn_sharedproductstyles | Enheden **Delt produkttypografi** angiver de typografier, en bestemt produktmaster kan have. Dette begreb overflyttes til Dataverse for at bevare data konsekvente.
-Konfigurationer af produktmaster | msdyn_sharedproductconfigurations | Enheden **Delt produktkonfiguration** angiver de konfigurationer, en bestemt produktmaster kan have. Dette begreb overflyttes til Dataverse for at bevare data konsekvente.
-Alle produkter | msdyn_globalproducts | Enheden Alle produkter indeholder alle produkter, der er tilgængelige i Finance and Operations-apps, både i frigivne og ikke-frigivne produkter.
+Produktmasterfarver | msdyn_sharedproductcolors | Tabellen **Delt produktfarve** angiver de farver, en bestemt produktmaster kan have. Dette begreb overflyttes til Dataverse for at bevare data konsekvente.
+Produktmasterstørrelser | msdyn_sharedproductsizes | Tabellen **Delt produktstørrelse** angiver de størrelser, som en bestemt produktmaster kan have. Dette begreb overflyttes til Dataverse for at bevare data konsekvente.
+Typografier for produktmaster | msdyn_sharedproductstyles | Tabellen **Delt produkttypografi** angiver de typografier, en bestemt produktmaster kan have. Dette begreb overflyttes til Dataverse for at bevare data konsekvente.
+Konfigurationer af produktmaster | msdyn_sharedproductconfigurations | Tabellen **Delt produktkonfiguration** angiver de konfigurationer, en bestemt produktmaster kan have. Dette begreb overflyttes til Dataverse for at bevare data konsekvente.
+Alle produkter | msdyn_globalproducts | Tabellen Alle produkter indeholder alle produkter, der er tilgængelige i Finance and Operations-apps, både i frigivne og ikke-frigivne produkter.
 Enhed | uoms
 Enhedsomregninger | msdyn_ unitofmeasureconversions
 Konvertering af produktspecifik måleenhed | msdyn_productspecificunitofmeasureconversion
-Produktkategorier | msdyn_productcategories | Hver produktkategorier og oplysninger om dens struktur og karakteristika findes i enheden produktkategori. 
-Hierarkier for produktkategori | msdyn_productcategoryhierarhies | Du kan bruge produkthierarkier til at kategorisere eller gruppere produkter. Kategorihierarkierne er tilgængelige i Dataverse ved hjælp af enheden Produktkategorihierarki. 
-Hierarkiroller for produktkategori | msdyn_productcategoryhierarchies | Produkthierarkier kan bruges til forskellige roller i D365 Finance and Operations. De angiver, hvilken kategori der bruges i hver rolle for enheden produktkategorirolle, som anvendes. 
-Tildelinger af produktkategori | msdyn_productcategoryassignments | Du kan anvende enheden produktkategoritildeling til at tildele et produkt til en kategori.
+Produktkategorier | msdyn_productcategories | Hver produktkategorier og oplysninger om dens struktur og karakteristika findes i tabellen produktkategori. 
+Hierarkier for produktkategori | msdyn_productcategoryhierarhies | Du kan bruge produkthierarkier til at kategorisere eller gruppere produkter. Kategorihierarkierne er tilgængelige i Dataverse ved hjælp af tabellen Produktkategorihierarki. 
+Hierarkiroller for produktkategori | msdyn_productcategoryhierarchies | Produkthierarkier kan bruges til forskellige roller i D365 Finance and Operations. De angiver, hvilken kategori der bruges i hver rolle for tabellen produktkategorirolle, som anvendes. 
+Tildelinger af produktkategori | msdyn_productcategoryassignments | Du kan anvende tabellen produktkategoritildeling til at tildele et produkt til en kategori.
 
 ## <a name="integration-of-products"></a>Integration af produkter
 
-I denne model repræsenteres produktet af kombinationen af to tabeller i Dataverse: **Produkt** og **msdyn\_sharedproductdetails**. Den første enhed indeholder definitionen af et produkt (det entydige id for produktet, produktnavnet og beskrivelsen), og den anden enhed indeholder de felter, som er gemt på produktniveauet. Kombinationen af disse to tabeller bruges til at definere produktet ud fra begrebet lagerenhed (SKU). Hvert af de frigivne produkter indeholder sine oplysninger i de nævnte tabeller (oplysninger om produkt og delt produkt). Hvis du vil holde styr på alle produkter (frigivne og ikke-frigivne), skal du bruge enheden **Globale produkter**. 
+I denne model repræsenteres produktet af kombinationen af to tabeller i Dataverse: **Produkt** og **msdyn\_sharedproductdetails**. Den første tabel indeholder definitionen af et produkt (det entydige id for produktet, produktnavnet og beskrivelsen), og den anden tabel indeholder de kolonner, som er gemt på produktniveauet. Kombinationen af disse to tabeller bruges til at definere produktet ud fra begrebet lagerenhed (SKU). Hvert af de frigivne produkter indeholder sine oplysninger i de nævnte tabeller (oplysninger om produkt og delt produkt). Hvis du vil holde styr på alle produkter (frigivne og ikke-frigivne), skal du bruge tabellen **Globale produkter**. 
 
 Da produktet er repræsenteret som en SKU, kan koncepterne for specifikke produkter, produktmastere og produktvarianter registreres i Dataverse på følgende måde:
 
-- **Produkter med undertypeprodukt** er produkter, der defineres af dem selv. Der skal ikke defineres dimensioner. Et eksempel er en bestemt bog. For disse produkter oprettes der en post i enheden **Produkt**, og der oprettes en post i enheden **msdyn\_sharedproductdetails**. Der oprettes ingen produktfamiliepost.
-- **Produktmastere** bruges som standardprodukter, der indeholder de definitioner og regler, der bestemmer funktionaliteten i forretningsprocesser. Baseret på disse definitioner kan der genereres specifikke produkter, der kaldes produktvarianter. F. eks. er T-shirt produktmasteren, og den kan have farve og størrelse som dimensioner. Der kan frigives varianter med forskellige kombinationer af disse dimensioner, f. eks. en lille blå T-shirt eller en mellem grøn T-shirt. I integrationen oprettes der én post pr. variant i produkttabellen. Denne post indeholder variantspecifikke oplysninger, f. eks. de forskellige dimensioner. De generelle oplysninger for produktet gemmes i enheden **msdyn\_sharedproductdetails**. (Disse standardoplysninger opbevares i produktmasteren). Oplysningerne om produktmasteren synkroniseres med Dataverse, så snart den frigivne produktmaster er oprettet (men før der frigives varianter).
+- **Produkter med undertypeprodukt** er produkter, der defineres af dem selv. Der skal ikke defineres dimensioner. Et eksempel er en bestemt bog. For disse produkter oprettes der en række i tabellen **Produkt**, og der oprettes en række i tabellen **msdyn\_sharedproductdetails**. Der oprettes ingen produktfamilierække.
+- **Produktmastere** bruges som standardprodukter, der indeholder de definitioner og regler, der bestemmer funktionaliteten i forretningsprocesser. Baseret på disse definitioner kan der genereres specifikke produkter, der kaldes produktvarianter. F. eks. er T-shirt produktmasteren, og den kan have farve og størrelse som dimensioner. Der kan frigives varianter med forskellige kombinationer af disse dimensioner, f. eks. en lille blå T-shirt eller en mellem grøn T-shirt. I integrationen oprettes der én række pr. variant i produkttabellen. Denne række indeholder variantspecifikke oplysninger, f.eks. de forskellige dimensioner. De generelle oplysninger for produktet gemmes i tabellen **msdyn\_sharedproductdetails**. (Disse standardoplysninger opbevares i produktmasteren). Oplysningerne om produktmasteren synkroniseres med Dataverse, så snart den frigivne produktmaster er oprettet (men før der frigives varianter).
 - **Specifikke produkter** refererer til alle produkternes undertypeprodukt og alle produktvarianterne. 
 
 ![Datamodel for produkter](media/dual-write-product.png)
 
-Når dobbeltskrivningsfunktionaliteten er aktiveret, vil produkterne fra Finance and Operations vil blive synkroniseret i andre Dynamics 365-produkter i tilstanden **Kladde**. De føjes til den første prisliste med samme valuta. De føjes med andre ord til den første prisliste i en Dynamics 365-app, der har samme valuta som din juridiske enhed, hvor produktet frigives i en Finance and Operations-app. 
+Når dobbeltskrivningsfunktionaliteten er aktiveret, vil produkterne fra Finance and Operations vil blive synkroniseret i andre Dynamics 365-produkter i tilstanden **Kladde**. De føjes til den første prisliste med samme valuta. De føjes med andre ord til den første prisliste i en Dynamics 365-app, der har samme valuta som din juridiske tabel, hvor produktet frigives i en Finance and Operations-app. Hvis der ikke findes en prisliste for den angivne valuta, oprettes der automatisk en prisliste, og produktet vil blive tildelt til den. 
 
 Som standard synkroniseres produkter fra Finance and Operations-apps til andre Dynamics 365-apps i tilstanden **Kladde**. Hvis du vil synkronisere produktet med tilstanden **Aktiv**, så du f.eks. kan bruge det direkte i salgsordretilbud, skal følgende indstilling vælges: under fanen **System> Administration > Systemadministration > Systemindstillinger > Sales** skal du vælge **Opret produkter i aktiv tilstand = ja**. 
 
-Bemærk, at synkroniseringen af produkter sker fra Finance and Operations-apps til Dataverse. Det betyder, at værdierne i produktenhedsfelterne kan ændres i Dataverse, men når synkroniseringen udløses (når et produktfelt ændres i en Finance and Operations-app), overskrives værdierne i Dataverse. 
+Når produkter synkroniseres, skal du angive en værdi til feltet **Salgsenhed** i Finance and Operations-appen, fordi det er et obligatorisk felt i Salg.
+
+Bemærk, at synkroniseringen af produkter sker fra Finance and Operations-appen til Dataverse. Det betyder, at værdierne i produkttabelkolonnerne kan ændres i Dataverse, men når synkroniseringen udløses (når en produktkolonne ændres i en Finance and Operations-app), overskrives værdierne i Dataverse. 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -166,7 +168,7 @@ Indledningsvist er det vigtigt at bemærke, at integrationsnøglen for enheden e
 
 For enheder, der matcher/overlapper i Finance and Operations-apps og andre Dynamics 365-Apps:
 
-+ **Enheden tilhører en enhedsgruppe i andre Dynamics 365-apps, der svarer til den tilknyttede enhedsklasse i Finance and Operations-apps**. I dette tilfælde skal feltet msdyn_symbol i andre Dynamics 365-apps udfyldes med enhedssymbolet fra Finance and Operations-apps. Når dataene bliver sammenholdt, vil enhedsgruppen derfor blive angivet som "Eksternt vedligeholdt" i andre Dynamics 365-apps.
++ **Enheden tilhører en enhedsgruppe i andre Dynamics 365-apps, der svarer til den tilknyttede enhedsklasse i Finance and Operations-apps**. I dette tilfælde skal kolonnen msdyn_symbol i andre Dynamics 365-apps udfyldes med enhedssymbolet fra Finance and Operations-apps. Når dataene bliver sammenholdt, vil enhedsgruppen derfor blive angivet som "Eksternt vedligeholdt" i andre Dynamics 365-apps.
 + **Enheden tilhører en enhedsgruppe i andre Dynamics 365-apps, der ikke svarer til den tilknyttede enhedsklasse i Finance and Operations-apps (ingen eksisterende enhedsklasse i Finance and Operations-apps for enhedsklassen i andre Dynamics 365-apps).** I dette tilfælde skal msdyn_symbol udfyldes med en tilfældig streng. Bemærk, at denne værdi skal være entydig i andre Dynamics 365-apps.
 
 For enheder og enhedsklasser i Finance and Operations, der ikke findes i andre Dynamics 365-Apps:
@@ -175,7 +177,7 @@ Som en del af dobbeltskrivning er enhedsgrupperne fra Finance and Operations-app
 
 For enheder i andre Dynamics 365-apps, som ikke findes i Finance and Operations-apps:
 
-Feltet msdyn_symbol skal udfyldes for alle enheder. Enhederne kan altid oprettes i Finance and Operations-apps i den tilhørende enhedsklasse (hvis den findes). Hvis enhedsklassen ikke findes, skal enhedsklassen først oprettes (bemærk, at du ikke kan oprette en enhedsklasse i Finance and Operations-apps undtagen via udvidelse, hvis du udvider fastteksten), så den stemmer overens med enhedsgruppen for de andre Dynamics 365-apps. Dernæst kan du oprette enheden. Bemærk, at enhedssymbolet i Finance and Operations-apps skal være det tidligere angivne msdyn_symbol i andre Dynamics 365-apps for enheden.
+Kolonnen msdyn_symbol skal udfyldes for alle enheder. Enhederne kan altid oprettes i Finance and Operations-apps i den tilhørende enhedsklasse (hvis den findes). Hvis enhedsklassen ikke findes, skal enhedsklassen først oprettes (bemærk, at du ikke kan oprette en enhedsklasse i Finance and Operations-apps undtagen via udvidelse, hvis du udvider fastteksten), så den stemmer overens med enhedsgruppen for de andre Dynamics 365-apps. Dernæst kan du oprette enheden. Bemærk, at enhedssymbolet i Finance and Operations-apps skal være det tidligere angivne msdyn_symbol i andre Dynamics 365-apps for enheden.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Produktpolitikker, dimension, sporing og lagringsgrupper
 
@@ -202,7 +204,7 @@ Produktpolitikkerne er sæt af politikker, der bruges til at definere produkter 
 
 Til entydig identifikation af produkter mellem Dynamics 365 for Finance and Operations og produkter i Dataverse anvendes integrationsnøgler. For produkter er **(produktnummer)** den entydige nøgle, der identificerer et produkt i Dataverse. Den er sammensat af sammenkædningen af: **(firma, msdyn_produktnummer)**. **Firmaet** angiver den juridiske enhed i Finance and Operations, og **msdyn_productnumber** angiver produktnummeret for det specifikke produkt i Finance and Operations. 
 
-For brugere af andre Dynamics 365-apps identificeres produktet i brugergrænsefladen med **msdyn_produktnummer** (bemærk, at etiketten for feltet er **Produktnummer**). I produktformularen vises både firmaet og msydn_produktnummeret. Men i feltet (produktnummer) vises den entydige nøgle for et produkt ikke. 
+For brugere af andre Dynamics 365-apps identificeres produktet i brugergrænsefladen med **msdyn_produktnummer** (bemærk, at etiketten for kolonnen er **Produktnummer**). I produktformularen vises både firmaet og msydn_produktnummeret. Men i kolonne (produktnummer) vises den entydige nøgle for et produkt ikke. 
 
 Hvis du bygger apps på Dataverse, skal du være opmærksom på at bruge **produktnummer** (det entydige produkt-id) som integrationsnøgle. Brug **ikke msdyn_productnumber**, da det ikke er entydigt. 
 
@@ -210,12 +212,12 @@ Hvis du bygger apps på Dataverse, skal du være opmærksom på at bruge **produ
 
 ### <a name="initial-synchronization-of-products"></a>Første synkronisering af produkter 
 
-Når dobbeltskrivning er aktiveret, synkroniseres produkter fra Finance and Operations-apps til Dataverse og andre modeldrevne apps i Dynamics 365. Produkter, der er oprettet i Dataverse- og andre Dynamics 365-apps, før dobbeltskrivning blev frigivet, bliver ikke opdateret eller sammenlignet med produktdata fra Finance and Operations-apps.
+Når dobbeltskrivning er aktiveret, synkroniseres produkter fra Finance and Operations-apps til Dataverse og kundeengagementapps. Produkter, der er oprettet i Dataverse- og andre Dynamics 365-apps, før dobbeltskrivning blev frigivet, bliver ikke opdateret eller sammenlignet med produktdata fra Finance and Operations-apps.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Sammenligning af produktdata fra Finance and Operations og andre Dynamics 365-apps
 
-Hvis de samme produkter lagres (overlappende/matchende) i Finance and Operations og i Dataverse samt andre Dynamics 365-apps, når dobbeltskrivning aktiveres, synkroniseres produkter fra Finance and Operations, og dubletposterne vil blive vist i Dataverse for det samme produkt.
-For at undgå den i forrige afsnit refererede situation, i tilfælde af at andre Dynamics 365-apps har produkter, der overlapper hinanden/svarer til dem i Finance and Operations, skal administratoren, der aktiverer dobbeltskrivning, bootstrappe felterne **Firma** (f.eks. "USMF") og **msdyn_productnumber** (f.eks. "1234:Black:S"), før produkterne synkroniseres. Med andre ord skal disse to felter i produktet i Dataverse udfyldes med det pågældende firma i Finance and Operations, som produktet skal sammenholdes med, og med dets produktnummer. 
+Hvis de samme produkter lagres (overlappende/matchende) i Finance and Operations og i Dataverse samt andre Dynamics 365-apps, når dobbeltskrivning aktiveres, synkroniseres produkter fra Finance and Operations, og dubletrækkerne vil blive vist i Dataverse for det samme produkt.
+For at undgå den i forrige afsnit refererede situation, i tilfælde af at andre Dynamics 365-apps har produkter, der overlapper hinanden/svarer til dem i Finance and Operations, skal administratoren, der aktiverer dobbeltskrivning, bootstrappe kolonnerne **Firma** (f.eks. "USMF") og **msdyn_productnumber** (f.eks. "1234:Black:S"), før produkterne synkroniseres. Med andre ord skal disse to kolonner i produktet i Dataverse udfyldes med det pågældende firma i Finance and Operations, som produktet skal sammenholdes med, og med dets produktnummer. 
 
 Når synkroniseringen er aktiveret og finder sted, vil produkterne fra Finance and Operations blive synkroniseret med de matchende produkter i Dataverse og andre Dynamics 365-apps. Dette gælder for både specifikke produkter og produktvarianter. 
 
@@ -223,6 +225,3 @@ Når synkroniseringen er aktiveret og finder sted, vil produkterne fra Finance a
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Overførsel af produktdata fra andre Dynamics 365-apps til Finance and Operations
 
 Hvis andre Dynamics 365-apps har produkter, der ikke er til stede i Finance and Operations, kan administratoren indledningsvist anvende **EcoResReleasedProductCreationV2Entity** til at importere disse produkter i Finance and Operations. Dernæst kan produktdataene fra Finance and Operations og andre Dynamics 365-apps sammenholdes som beskrevet ovenfor. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Ofte stillede spørgsmål om personalehandlinger
-description: Denne artikel indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Personalehandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale.
+description: Denne artikel indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Human Resourceshandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,28 +10,28 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 6d52e7e5203a4c311afb56259e9e1800ee0e5161
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 43c727fa8e0508adf66109efd84a66cb31df7ea3
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417797"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115408"
 ---
 # <a name="personnel-actions-faq"></a>Ofte stillede spørgsmål om personalehandlinger
 
-Denne artikel indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Personalehandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale. Eksempler på opgaver, der kan kræve personalehandlinger, er, når du opretter nye stillinger, ændrer eksisterende stillingsværdier, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver eller opsiger arbejdere.
+Denne artikel indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Human Resourceshandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale. Eksempler på opgaver, der kan kræve personalehandlinger, er, når du opretter nye stillinger, ændrer eksisterende stillingsværdier, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver eller opsiger arbejdere.
 
-**Bemærk!** Personalehandlinger er kun tilgængelige, hvis felterne **Aktivér arbejderhandlinger** og **Aktivér stillingshandlinger** er angivet til **Ja** under fanen **Personalehandlinger** på siden **Delte parametre for personale**. 
+**Bemærk!** Human Resourceshandlinger er kun tilgængelige, hvis felterne **Aktivér arbejderhandlinger** og **Aktivér stillingshandlinger** er angivet til **Ja** under fanen **Human Resourceshandlinger** på siden **Delte parametre for personale**. 
 
 ## <a name="how-can-i-tell-if-my-organization-requires-personnel-actions"></a>Hvordan kan jeg se, om min organisation kræver personalehandlinger?
-Personalehandlinger kræves af organisationen, hvis du bliver bedt om at vælge en personalehandling, når du opretter nye stillinger, ændrer eksisterende stillinger, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver, opsiger arbejdere eller angiver orlov for arbejdere. 
+Human Resourceshandlinger kræves af organisationen, hvis du bliver bedt om at vælge en personalehandling, når du opretter nye stillinger, ændrer eksisterende stillinger, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver, opsiger arbejdere eller angiver orlov for arbejdere. 
 
 ## <a name="what-is-the-difference-between-a-position-action-and-a-worker-action"></a>Hvad er forskellen mellem en stillingshandling og en arbejderhandling?
 Der findes to typer personalehandlinger:
@@ -41,10 +41,10 @@ Der findes to typer personalehandlinger:
 - Arbejderhandling – En arbejderhandling udføres for eksisterende arbejdere eller nye arbejdere. En arbejderhandling kan f.eks. kræves, når du ansætter en ny arbejder, eller når en eksisterende arbejder bliver forfremmet. Du kan finde detaljerede oplysninger om, hvordan du bruger arbejderhandlinger, under Tildele personalehandlinger til arbejdere.
 
 ## <a name="what-do-the-statuses-of-the-personnel-actions-mean"></a>Hvad betyder statusserne for personalehandlingerne?
-Personalehandlinger kan have følgende statusser:
+Human Resourceshandlinger kan have følgende statusser:
 
 - **Kladde** – Hvis der bruges en arbejdsgang, er handlingen ikke sendt. Hvis der ikke bruges en arbejdsgang, er handlingen ikke fuldført.
-- **Til gennemsyn** – Personalehandlingen er sendt til arbejdsgangen, men arbejdsgangen er ikke fuldført.
+- **Til gennemsyn** – Human Resourceshandlingen er sendt til arbejdsgangen, men arbejdsgangen er ikke fuldført.
 - **Godkendt afventen** – Arbejdsgangen er fuldført, men ændringerne er stadig i gang. Annulleret – Arbejdsgangen er annulleret, eller personalehandlingen er tilbagekaldt. Afvist – Handlingsanmodningen er afvist af godkenderen.
 - **Behandler handling** – Handlingsanmodningen er godkendt, og ændringerne behandles.
 - **Arbejdsgang er fuldført** – Arbejdsgangen er fuldført, og ændringerne er behandlet. Lykkedes ikke – Arbejdsgangen mislykkedes, fordi oplysningerne er forældede. Klik på Genaktiver for at få vist de seneste oplysninger og fortsætte.
@@ -92,6 +92,3 @@ skriv URL-adressen til siderne på administrationsporten, f.eks.:
 - Ikrafttrædelsesdatoen i en handling af typen **Ansæt en arbejder** er den dato, du angav i feltet **Startdato for ansættelse**.
 - Ikrafttrædelsesdatoen i en handling af typen **Overfør en arbejder** er den dato, du angav i feltet **Startdato for tildeling** for arbejderen.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

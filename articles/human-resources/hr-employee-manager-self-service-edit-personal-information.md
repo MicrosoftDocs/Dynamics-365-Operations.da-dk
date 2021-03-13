@@ -2,7 +2,7 @@
 title: Rediger personlige oplysninger
 description: Denne artikel beskriver, hvordan du redigerer personlige oplysninger i selvbetjening for medarbejdere og ledelse.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0158bd4ee74e24006e338c0477ee0ac4210b1bf5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fe009de3a94bf3ea7885f8f794879e16c36a3266
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417732"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115336"
 ---
 # <a name="edit-personal-information"></a>Rediger personlige oplysninger
 
@@ -65,13 +65,10 @@ Parametre, der angives i det globale adressekartotek, bestemmer, hvilke roller d
     - Vælg **Ny** for at tilføje et identifikationsnummer. Udfyld felterne efter behov, og vælg **Gem**.
     - Hvis du vil redigere et nummer, skal du vælge **Rediger**. Rediger felterne efter behov, og vælg **Gem**.
 
-7. Hvis du vil ændre de metoder, som du bliver betalt efter, skal du vælge fanen **Mine betalingsoplysninger**. Denne fane er kun tilgængelig, hvis betalingsmetoderne er aktiveret i formularen **Personaleparametre**. HR kan aktivere **Bankanvisning**, **Kontant**, **Check**, **Elektronisk betaling** eller **Anden**. HR kan også deaktivere validering af elektronisk betaling (bruges til amerikanske løn) og validering af bankkonto- og registreringsnummer.
+7. Hvis du vil ændre de metoder, som du bliver betalt efter, skal du vælge fanen **Mine betalingsoplysninger**. Denne fane er kun tilgængelig, hvis betalingsmetoderne er aktiveret i formularen **Human Resourcesparametre**. HR kan aktivere **Bankanvisning**, **Kontant**, **Check**, **Elektronisk betaling** eller **Anden**. HR kan også deaktivere validering af elektronisk betaling (bruges til amerikanske løn) og validering af bankkonto- og registreringsnummer.
 
-8. Hvis du vil ændre det billede, der vises i Personale for din profil, skal du vælge fanen **Billede**. Afhængigt af organisationens indstillinger kan billeder sendes til godkendelse.
+8. Hvis du vil ændre det billede, der vises i Human Resources for din profil, skal du vælge fanen **Billede**. Afhængigt af organisationens indstillinger kan billeder sendes til godkendelse.
 
     - Hvis du vil overføre et billede, skal du vælge **Overfør nyt billede**.
     - Hvis du vil fjerne et billede, skal du markere billedet og derefter vælge **Fjern**.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

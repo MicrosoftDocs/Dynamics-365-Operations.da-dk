@@ -2,7 +2,7 @@
 title: Administrere anmodninger om orlov og fravær
 description: Få vist og godkend anmodninger om orlov og fravær i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 365d933a2d33b7e1929f9f68e02050b624e30839
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a47065a28f116cde5ce2983acada2f735f8c5edf
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417878"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115288"
 ---
 # <a name="manage-leave-and-absence-requests"></a>Administrere anmodninger om orlov og fravær
 
-Ledere kan administrere anmodninger om fravær fra arbejdsområdet **Medarbejderselvbetjening** i Dynamics 365 Human Resources. Det kan være anmodninger om én enkelt dag eller om flere dage, der omfatter flere forskellige på orlovs- og fraværstyper. Hvis der ikke er aktiveret en arbejdsgang, godkendes anmodningerne automatisk. Hvis en arbejdsgang er aktiveret, kan godkendelsen ske automatisk, eller den kan kræve godkendelse, afhængigt af arbejdsgangskonfigurationen.
+Administrer anmodninger om fravær fra arbejdsområdet **Medarbejderselvbetjening** i Dynamics 365 Human Resources. Det kan være anmodninger om én enkelt dag eller om flere dage, der omfatter flere forskellige på orlovs- og fraværstyper. Hvis der ikke er aktiveret en arbejdsgang, godkendes anmodningerne automatisk. Når et arbejdsflow er aktiveret, kan godkendelsen ske automatisk, eller den kan kræve godkendelse, afhængigt af konfigurationen af arbejdsflow.
 
 1. Vælg **Mit team** i arbejdsområdet **Medarbejderselvbetjening**.
 
@@ -39,5 +39,3 @@ Ledere kan administrere anmodninger om fravær fra arbejdsområdet **Medarbejder
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Oprette en orlovs- og fraværsplan](hr-leave-and-absence-plans.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

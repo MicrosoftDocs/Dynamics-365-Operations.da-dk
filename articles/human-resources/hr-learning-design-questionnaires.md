@@ -1,8 +1,8 @@
 ---
-title: Designe spørgeskemaer
+title: Oprette spørgeskemaer
 description: I denne artikel beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f7f7d68caf12c33059d2f871fe3f4a036c89f35
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417869"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115120"
 ---
-# <a name="design-questionnaires"></a>Designe spørgeskemaer
+# <a name="create-questionnaires"></a>Oprette spørgeskemaer
 
 I denne artikel beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform. 
 
@@ -66,7 +66,7 @@ Visse forudsætninger skal være på plads, før du kan oprette spørgeskemaer, 
 
 Spørgeskematyper er obligatoriske og skal tildeles, når du opretter et spørgeskema. Spørgeskematyper gør det lettere at administrere og klassificere spørgeskemaer. Brug spørgeskematyper til at klassificere spørgeskemaer og skelne dem fra hinanden. Hvis du f.eks. har flere spørgeskemaer at vælge mellem, kan du filtrere dem for at gøre det nemmere at finde et bestemt spørgeskema. Følgende er eksempler på spørgeskematyper:
 
--   Personaleudvikling
+-   Human Resourcesudvikling
 -   Kundemeningsmålinger
 -   Gennemse proces
 
@@ -76,7 +76,7 @@ Spørgsmålstyper er obligatoriske og skal tildeles, når du opretter et spørgs
 
 Brug spørgsmålstyper til at kategorisere spørgsmål i forbindelse med rapporter. Spørgsmålstyper gør det også nemmere at finde spørgsmål, fordi du kan bruge typer som filtre på siden **Spørgsmål**. Følgende er eksempler på spørgsmålstyper:
 
--   Personale
+-   Human Resources
 -   Forretningsadministration
 -   Kursusevaluering
 
@@ -236,5 +236,3 @@ Hvis du vil bruge betingede spørgsmål til at oprette et spørgsmålshierarki i
 En juridisk enhed tilbyder både varer og tjenester til kunderne. Som det ofte er tilfældet, køber nogle kunder kun varer, nogle køber kun tjenester, mens nogle køber begge både varer og tjenester. Når den juridiske enhed derfor distribuerer en undersøgelse om kundetilfredshed, anvender den en betinget struktur til spørgeskemaet, så kunder, som kun køber tjenester, ikke behøver at besvare spørgsmål om varer. 
 
 Du kan alternativt oprette et spørgeskema, så hvis en svarpersonen vælger Svar A til spørgsmål 1, er Spørgsmål 2 det næste i rækkefølgen af spørgsmål. Men hvis svarpersonen vælger Svar B til Spørgsmål 1, kan Spørgsmål 5 være det næste.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
