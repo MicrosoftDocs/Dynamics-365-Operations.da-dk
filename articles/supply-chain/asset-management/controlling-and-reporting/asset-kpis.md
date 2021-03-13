@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetObjectKPI
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3ebbb1016bafed8ad9fb998fc76152e215c08c3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f75db96926e72bab80d0a65ce6f0ab3a92590699
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424528"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021774"
 ---
 # <a name="asset-kpis"></a>KPI'er for aktiver
 
@@ -90,6 +89,3 @@ I figuren herunder vises et skærmbillede af en KPI-beregning for fire aktiver.
 - Du kan vælge flere aktiver i **Alle aktiver** og klikke på knappen **KPI'er for aktiver** under fanen **Generelt**. Klik derefter på **OK** i dialogboksen **Beregn aktiv-KPI'er** for at beregne KPI'er for de valgte aktiver.  
 - Resultater fra en KPI-beregning kan også omfatte [registreringer af vedligeholdelsesnedetid](../work-orders/maintenance-downtime.md) afhængigt af opsætning og brug af årsagskoder for vedligeholdelsesnedetid. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
