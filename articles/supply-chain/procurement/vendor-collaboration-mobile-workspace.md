@@ -1,7 +1,7 @@
 ---
 title: Mobilarbejdsområde for kreditorsamarbejde
 description: Dette emne indeholder oplysninger om arbejdsområdet Kreditorsamarbejde på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: mkirknel
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc73fe415ec2b9a266dda6b7f1b3469b7a77f256
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424907"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020830"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilarbejdsområde for kreditorsamarbejde
 
@@ -170,6 +169,3 @@ Eventuelle ændringer, der er foretaget i svaret til ordrelinjen, vises. Dog vis
 
 ### <a name="open-confirmed-orders"></a>Åbn bekræftede ordrer
 Når indkøbsordren er bekræftet af kunden (hvilket betyder, at status for købsordren er ændret til **Bekræftet**), vises den i den åbne bekræftede ordre. Den forbliver på listen, indtil den registreres som modtaget af kunden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
