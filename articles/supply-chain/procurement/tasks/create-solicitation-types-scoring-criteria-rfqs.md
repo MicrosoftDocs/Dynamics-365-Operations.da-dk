@@ -1,7 +1,7 @@
 ---
 title: Oprette anmodningstyper og scorekriterier for tilbudsanmodninger
 description: Denne vejledning viser dig, hvordan du opretter en anmodningstype og knytter det til en scoremetode.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -11,44 +11,43 @@ ms.technology: ''
 ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b3876238a191cbbacc4e8c435bb798232e6fd6f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40625152a579bb269411d026d77d449902c8d4bc
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424733"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016800"
 ---
-# <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="29df9-103">Oprette anmodningstyper og scorekriterier for tilbudsanmodninger</span><span class="sxs-lookup"><span data-stu-id="29df9-103">Create solicitation types and scoring criteria for RFQs</span></span>
+# <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="bcb3c-103">Oprette anmodningstyper og scorekriterier for tilbudsanmodninger</span><span class="sxs-lookup"><span data-stu-id="bcb3c-103">Create solicitation types and scoring criteria for RFQs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="29df9-104">Denne vejledning viser dig, hvordan du opretter en anmodningstype og knytter det til en scoremetode.</span><span class="sxs-lookup"><span data-stu-id="29df9-104">This guide shows you how to create a solicitation type and associate this with a scoring method.</span></span> <span data-ttu-id="29df9-105">Den viser også, hvordan du bruger anmodningstypen på en tilbudsanmodninger, som derefter angiver standardscoremetoden.</span><span class="sxs-lookup"><span data-stu-id="29df9-105">It also shows how to use the solicitation type on a request for quotation (RFQ) which then sets the default scoring method.</span></span> <span data-ttu-id="29df9-106">Disse opgaver udføres normalt af en indkøbschef.</span><span class="sxs-lookup"><span data-stu-id="29df9-106">These tasks would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="29df9-107">Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="29df9-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="29df9-108">Du skal have en scoremetode tilgængelig, før du starter.</span><span class="sxs-lookup"><span data-stu-id="29df9-108">You need to have a scoring method available before you start.</span></span>
+<span data-ttu-id="bcb3c-104">Denne vejledning viser dig, hvordan du opretter en anmodningstype og knytter det til en scoremetode.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-104">This guide shows you how to create a solicitation type and associate this with a scoring method.</span></span> <span data-ttu-id="bcb3c-105">Den viser også, hvordan du bruger anmodningstypen på en tilbudsanmodninger, som derefter angiver standardscoremetoden.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-105">It also shows how to use the solicitation type on a request for quotation (RFQ) which then sets the default scoring method.</span></span> <span data-ttu-id="bcb3c-106">Disse opgaver udføres normalt af en indkøbschef.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-106">These tasks would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="bcb3c-107">Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="bcb3c-108">Du skal have en scoremetode tilgængelig, før du starter.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-108">You need to have a scoring method available before you start.</span></span>
 
 
-## <a name="create-a-solicitation-type"></a><span data-ttu-id="29df9-109">Oprette en anmodningstype.</span><span class="sxs-lookup"><span data-stu-id="29df9-109">Create a solicitation type</span></span>
-1. <span data-ttu-id="29df9-110">Gå til Indkøb og forsyning > Opsætning > Tilbudsanmodning > Anmodningstype.</span><span class="sxs-lookup"><span data-stu-id="29df9-110">Go to Procurement and sourcing > Setup > Request for quotation > Solicitation type.</span></span>
-2. <span data-ttu-id="29df9-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="29df9-111">Click New.</span></span>
-3. <span data-ttu-id="29df9-112">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="29df9-112">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="29df9-113">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="29df9-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="29df9-114">Vælg i feltet Scoremetode den scoremetode, du vil bruge for denne anmodningstype.</span><span class="sxs-lookup"><span data-stu-id="29df9-114">In the Scoring method field, select the scoring method that you want to use for this solicitation type.</span></span>
-6. <span data-ttu-id="29df9-115">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="29df9-115">Click Save.</span></span>
-7. <span data-ttu-id="29df9-116">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="29df9-116">Close the page.</span></span>
+## <a name="create-a-solicitation-type"></a><span data-ttu-id="bcb3c-109">Oprette en anmodningstype.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-109">Create a solicitation type</span></span>
+1. <span data-ttu-id="bcb3c-110">Gå til Indkøb og forsyning > Opsætning > Tilbudsanmodning > Anmodningstype.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-110">Go to Procurement and sourcing > Setup > Request for quotation > Solicitation type.</span></span>
+2. <span data-ttu-id="bcb3c-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-111">Click New.</span></span>
+3. <span data-ttu-id="bcb3c-112">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-112">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="bcb3c-113">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="bcb3c-114">Vælg i feltet Scoremetode den scoremetode, du vil bruge for denne anmodningstype.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-114">In the Scoring method field, select the scoring method that you want to use for this solicitation type.</span></span>
+6. <span data-ttu-id="bcb3c-115">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-115">Click Save.</span></span>
+7. <span data-ttu-id="bcb3c-116">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-116">Close the page.</span></span>
 
-## <a name="use-the-solicitation-type"></a><span data-ttu-id="29df9-117">Brug anmodningstypen</span><span class="sxs-lookup"><span data-stu-id="29df9-117">Use the solicitation type</span></span>
-1. <span data-ttu-id="29df9-118">Gå til Indkøb og forsyning > Tilbudsanmodninger > Alle tilbudsanmodninger.</span><span class="sxs-lookup"><span data-stu-id="29df9-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
-2. <span data-ttu-id="29df9-119">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="29df9-119">Click New.</span></span>
-3. <span data-ttu-id="29df9-120">I feltet Anmodningstype skal du vælge den anmodningstype, som du lige har oprettet.</span><span class="sxs-lookup"><span data-stu-id="29df9-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
+## <a name="use-the-solicitation-type"></a><span data-ttu-id="bcb3c-117">Brug anmodningstypen</span><span class="sxs-lookup"><span data-stu-id="bcb3c-117">Use the solicitation type</span></span>
+1. <span data-ttu-id="bcb3c-118">Gå til Indkøb og forsyning > Tilbudsanmodninger > Alle tilbudsanmodninger.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
+2. <span data-ttu-id="bcb3c-119">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-119">Click New.</span></span>
+3. <span data-ttu-id="bcb3c-120">I feltet Anmodningstype skal du vælge den anmodningstype, som du lige har oprettet.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
     *   
-4. <span data-ttu-id="29df9-121">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="29df9-121">Click OK.</span></span>
-5. <span data-ttu-id="29df9-122">Klik på Scorekriterier.</span><span class="sxs-lookup"><span data-stu-id="29df9-122">Click Scoring criteria.</span></span>
-    * <span data-ttu-id="29df9-123">De scorekriterier, der vises, er dem fra scoremetoden, som du har knyttet til anmodningstypen.</span><span class="sxs-lookup"><span data-stu-id="29df9-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="29df9-124">Du kan vælge at tilføje eller slette kriterierne på denne side.</span><span class="sxs-lookup"><span data-stu-id="29df9-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="29df9-125">Det er også muligt at tilføje nye kriterier ved at kopiere dem fra andre scoremetoder.</span><span class="sxs-lookup"><span data-stu-id="29df9-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  
-6. <span data-ttu-id="29df9-126">Klik på Kopiér kriterier.</span><span class="sxs-lookup"><span data-stu-id="29df9-126">Click Copy criteria.</span></span>
-7. <span data-ttu-id="29df9-127">Indtast eller vælg en værdi i feltet Scoremetode.</span><span class="sxs-lookup"><span data-stu-id="29df9-127">In the Scoring method field, enter or select a value.</span></span>
-8. <span data-ttu-id="29df9-128">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="29df9-128">Click OK.</span></span>
-9. <span data-ttu-id="29df9-129">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="29df9-129">Close the page.</span></span>
+4. <span data-ttu-id="bcb3c-121">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-121">Click OK.</span></span>
+5. <span data-ttu-id="bcb3c-122">Klik på Scorekriterier.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-122">Click Scoring criteria.</span></span>
+    * <span data-ttu-id="bcb3c-123">De scorekriterier, der vises, er dem fra scoremetoden, som du har knyttet til anmodningstypen.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="bcb3c-124">Du kan vælge at tilføje eller slette kriterierne på denne side.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="bcb3c-125">Det er også muligt at tilføje nye kriterier ved at kopiere dem fra andre scoremetoder.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  
+6. <span data-ttu-id="bcb3c-126">Klik på Kopiér kriterier.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-126">Click Copy criteria.</span></span>
+7. <span data-ttu-id="bcb3c-127">Indtast eller vælg en værdi i feltet Scoremetode.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-127">In the Scoring method field, enter or select a value.</span></span>
+8. <span data-ttu-id="bcb3c-128">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-128">Click OK.</span></span>
+9. <span data-ttu-id="bcb3c-129">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bcb3c-129">Close the page.</span></span>
 
