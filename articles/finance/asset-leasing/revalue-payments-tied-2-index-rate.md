@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 83684afbd5e11b890a59bc1469ddefffd1777c4e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 2cbe54ad92aff2f8a85e47301635fe4b6819e9a7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441751"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012055"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Revaluere leasingbetalinger, der er knyttet til en indekssats
 
@@ -68,6 +67,3 @@ Hvis du vil have vist effekterne af værdireguleringsprocessen af leasingaftalen
 Du kan få vist den nyligt genererede betalingsplan, der starter på værdireguleringsdatoen, og få vist det samlede opdaterede betalingsbeløb. Der er også oprettet en ny plan for betaling af ansvarsforsikring og en plan for aktivafskrivning for at afspejle den justerede betalingsplan.
 
 Kladdeposten har automatisk bogført reguleringskladdeposten på kontoen for ændringen i de leasingbetalinger, der er relateret til indeksværdireguleringen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

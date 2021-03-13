@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529180"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011359"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer
 
@@ -44,7 +43,7 @@ I mange tilfælde er produktnummeret ikke oprindeligt oprettet i Dynamics 365 Su
 
 Når du implementerer Supply Chain Management, skal du foretage specielle overvejelser med hensyn til din strategi for produktnumre. En godt nummereringssystem forbedrer logistikprocesser og hjælper med til at forhindre fejl. Et godt produkt-id må højst være på 15 tegn. Ideelt set har det mindre end 10 tegn og indeholder mere end fem klassificeringstegn. Du kan også bruge søgenavne til at aktivere hurtig søgning. Et søgenavn er et yderligere navn, der repræsenterer klassificeringer af et produkt.
 
-Når du bruger Common Data Service, er produktnummeret i Supply Chain Management også produktnummeret i Common Data Service. Produktvarianter synkroniseres til Common Data Service som specifikke produkter.
+Når du bruger Microsoft Dataverse, er produktnummeret i Supply Chain Management også produktnummeret i Microsoft Dataverse. Produktvarianter synkroniseres til Dataverse som specifikke produkter.
 
 ## <a name="item-number-and-product-dimensions"></a>Varenummer og produktdimensioner
 
@@ -167,7 +166,7 @@ Tabellen nedenfor indeholder en oversigt over resultaterne af import og manuel o
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Produktenheds-id (eksportér alle produkt-id'er)
 
-Modellen for produktenheds-id enhed blev oprettet for at muliggøre, at version 1.0 af CDS kunne klargøres med alle id'er, der bruges til at referere til et produkt. For at forenkle denne opgave, samles alle id'er i en global id-tabel, så de kan eksporteres som én model. Bemærk, at denne version af CDS ikke bruger modellen for produkt-id'er. Derfor har enheden **Common Data Service-id-enhed for produktenhed** og denne proces begrænset praktisk brug, de vil sandsynligvis blive ændret på et senere tidspunkt.
+Modellen for produktenheds-id enhed blev oprettet for at muliggøre, at version 1.0 af Dataverse kunne klargøres med alle id'er, der bruges til at referere til et produkt. For at forenkle denne opgave, samles alle id'er i en global id-tabel, så de kan eksporteres som én model. Bemærk, at denne version af Dataverse ikke bruger modellen for produkt-id'er. Derfor har enheden **Common Data Service-id-enhed for produktenhed** og denne proces begrænset praktisk brug, de vil sandsynligvis blive ændret på et senere tidspunkt.
 
 Produkt-id-tabellen er en global tabel, der udfyldes fra alle referencetabeller i den primære juridiske enhed via et tilbagevendende batchjob. Du skal vælge en juridisk enhed og et produktkategorihierarki som definition af omfanget af den globale produktmaster. Oprettelse af tabellen med globale produkt-id er begrænset til produkter, der er frigivet til den valgte juridiske enhed, og produkter, der er medlemmer af produkthierarkiet, der er valgt til rollen for **Common Data Service** i produktkategorihierarkiet.
 
@@ -175,7 +174,7 @@ Denne processen forudsætter, at produktmasterdata primært vedligeholdes i én 
 
 Følg disse trin for at konfigurere miljøet.
 
-1. Vælg kategorihierarkiet for CDS. På siden **Tilknytninger af kategorihierarkiroller** skal du oprette en ny tilknytning, hvis der ikke er knyttet noget hierarki til rollen **Common Data Service**. Vælg rollen **Common Data Service**, og tilknyt derefter det kategorihierarki, der repræsenterer det produktsortiment, der skal synkroniseres til CDS.
+1. Vælg kategorihierarkiet for Dataverse. På siden **Tilknytninger af kategorihierarkiroller** skal du oprette en ny tilknytning, hvis der ikke er knyttet noget hierarki til rollen **Common Data Service**. Vælg rollen **Common Data Service**, og tilknyt derefter det kategorihierarki, der repræsenterer det produktsortiment, der skal synkroniseres til Dataverse.
 2. Vælg den juridiske enhed for globale produktmasterdata. På siden **Parametre for administration af produktoplysninger** skal du vælge fanen **Produktattributter**, hvor produkt- og vare-id'erne vedligeholdes primært.
 3. Definer de id-kodetyper og -koder, der skal eksporteres. Gå til **Administration af produktoplysninger** &gt; **Konfiguration** &gt; **Produkt-id-koder**. For at generere id-kodetyperne skal du vælge **Generér koder**. Der genereres en kodetypepost for hver type id, der findes i den valgte juridiske enhed.
 
@@ -190,6 +189,3 @@ Du kan nu bruge **Common Data Service-id-enhed for produktenhed**, **Id-koder fo
 ## <a name="related-topic"></a>Relateret emne
 
 [Søge efter produkter og produktvarianter under ordreindtastning](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

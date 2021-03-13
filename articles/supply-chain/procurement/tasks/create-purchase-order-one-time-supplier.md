@@ -1,7 +1,7 @@
 ---
 title: Oprette en indkøbsordre til en engangsleverandør
 description: Denne procedure viser, hvordan du opretter en indkøbsordre for en engangsleverandør.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3fc935b346adfe9548b024f22a2fbfb5af9a802d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c4885547cdf2f8496446761e27ce39e67e670f15
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4425024"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016396"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Oprette en indkøbsordre til en engangsleverandør
 
@@ -39,6 +38,3 @@ Denne procedure viser, hvordan du opretter en indkøbsordre for en engangslevera
 5. Klik på OK.
     * Indkøbsordren kan nu udfyldes og behandles som enhver anden ordre. Der er ingen særlige kendetegn for, hvordan dette gøres. Fakturaen medregner en transaktion på den kreditorkonto, der blev oprettet til ordren, og betalingen vil derefter blive behandlet.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

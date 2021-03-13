@@ -1,5 +1,5 @@
 ---
-title: Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer
+title: Regnskabsfordelinger og kladdepostering for kreditorfakturaer
 description: Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan udgifter, skat eller afgifter redegøres for på en kreditorfaktura. Alle beløb, der skal tages i betragtning, når kreditorfakturaen journaliseres, har en eller flere regnskabsfordelinger.
 author: abruer
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8e38e6a571bb7f08b32548bcb4af823807a4340
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: da15f27c7fef6367eacc83271419b633c0cbb245
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441704"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012282"
 ---
-# <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer
+# <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Regnskabsfordelinger og kladdepostering for kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
 
@@ -250,6 +249,3 @@ Hvis kladdeposteringen for reskontroer er forkert, når du gennemser den før jo
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

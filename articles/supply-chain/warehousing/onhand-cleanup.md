@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4425013"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014477"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Job til oprydning i disponible poster til lokationsstyring
 
@@ -50,7 +49,12 @@ Når jobbet kører, har det en commit size (mængde af reserveret virtuel hukomm
 
 ## <a name="possible-user-impact"></a>Mulig brugereffekt
 
-Brugere kan blive påvirket, hvis jobbet til oprydning af disponible poster sletter alle poster for et givet niveau (f.eks. nummerpladeniveauet). I dette tilfælde kan det ske, at funktionaliteten til visning af dette lager, som tidligere var direkte tilgængelig på nummerpladen, ikke fungerer som forventet, da de relevante disponible poster ikke længere er tilgængelige. (Denne funktion kontrollerer betingelsen **Antal \<\> 0** i indstillingerne for **Dimensionsvisning**, når brugerne får vist oplysninger om den disponible beholdning.) Den forbedring af ydeevnen, som oprydningsjobbet skal give, skulle dog kompensere for dette mindre funktionalitetstab.
+Brugere kan blive påvirket, hvis jobbet til oprydning af disponible poster sletter alle poster for et givet niveau (f.eks. nummerpladeniveauet). I dette tilfælde kan det ske, at funktionaliteten til visning af dette lager, som tidligere var direkte tilgængelig på nummerpladen, ikke fungerer som forventet, da de relevante disponible poster ikke længere er tilgængelige. Dette kan f.eks. opleves i følgende situationer:
+
+- Når brugeren på **Beholdningsliste** fravælger betingelsen **Antal \<\> 0** eller vælger betingelsen **Lukkede posteringer** i indstillingerne for **Dimensionsvisning**.
+- I en **Fysisk lager pr. lagerdimension**-rapport for tidligere perioder, hvor brugeren angiver parameteren **Pr. dato**.
+
+Den forbedring af ydeevnen, som oprydningsjobbet skal give, skulle dog kompensere for dette mindre funktionalitetstab.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Gøre indstillingen for den maksimale kørselstid tilgængelig
 
@@ -58,6 +62,3 @@ Som standard er indstillingen for **Maksimal kørselstid** ikke tilgængelig. Hv
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Den maksimale kørselstid for job til oprydning i disponible poster til lokationsstyring*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

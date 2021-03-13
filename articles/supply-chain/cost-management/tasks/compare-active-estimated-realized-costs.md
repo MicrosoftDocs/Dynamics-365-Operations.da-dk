@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, CostSelectPeriodDialogForm, CostCalculationPeriodTopVariancesListFormPart, ProdTable, CostCalculationCompareDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b028d9977dfeaec335d597b9505840150d36a858
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 77512a82a08a02d47c06b2484b6e2090a2be03ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424705"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011741"
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Sammenligne aktive, estimerede og realiserede omkostninger for en produktionsordre
 
@@ -40,6 +39,3 @@ Denne fremgangsmåde viser, hvordan du får vist årsager til høj produktionsom
 6. Klik på Vis omkostningssammenligning.
 7. Klik på Luk.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

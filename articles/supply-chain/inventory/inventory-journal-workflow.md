@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424386"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011666"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Arbejdsprocesser for godkendelse af lagerkladder
 
@@ -31,6 +30,13 @@ I dette emne beskrives det, hvordan du kan konfigurere og bruge arbejdsprocesser
 
 > [!NOTE]
 > Godkendelsesarbejdsprocesser for lagerkladder gælder kun for transaktioner, der er registreret ved hjælp af modulet Lagerstyring. De fungerer ikke med de lagerkladder, der udløses fra modulet Lokationsstyring.
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivere funktionen til arbejdsgange for godkendelse af lagerkladde
+
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul:** *Under Lager- og lokationsstyring*
+- **Funktionsnavn:** *Arbejdsgang til godkendelse af lagerkladder*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Oprette dine arbejdsprocesser for godkendelse af lagerkladder
 
@@ -112,6 +118,3 @@ Sådan gennemgår du arbejdsgangshistorikken for en kladde:
 1. Udvid i navigationsruden **Lagerstyring \> Kladdeposteringer \> Varer**, og vælg derefter en lagerkladdetype.
 1. Åbn den relevante kladde.
 1. Vælg knappen **Arbejdsproces** i handlingsruden for at åbne en rulleliste i en dialogboks. Vælg **Arbejdsgangshistorik**. Du kan finde flere oplysninger under [Vise arbejdsgangshistorik](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

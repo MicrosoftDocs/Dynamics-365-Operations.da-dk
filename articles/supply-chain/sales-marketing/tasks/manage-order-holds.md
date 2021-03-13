@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MCRHoldCodeTable, SalesTableListPage, SalesCreateOrder, SalesTable, MCRHoldCodeTrans, MCRHoldCheckOutOverride, MCRHoldCodeTable, MCRItemListCopying, MCRItemListTable, MCROMHoldList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9caf6651813f0111b873db1769140d973f1a2e3b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27a5149812a8e478dae1d2385e6c139c9f635202
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424722"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010741"
 ---
 # <a name="manage-order-holds"></a>Administrere ordrer på hold
 
@@ -70,6 +69,3 @@ Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne
     - Handlingen **Ryd og send** er kun gældende, når du bruger callcenter-funktionalitet.  
 8. Klik på **Ryd På hold**. Holdet er nu ryddet fra ordren og fjernet fra listen over aktive hold. Hvis du vil se alle hold eller deres delsæt i henhold til en bestemt status, skal du ændre værdien i feltet Vis.     
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

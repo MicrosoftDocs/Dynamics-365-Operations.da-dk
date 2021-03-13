@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventParameters, InventTestReportSetup, InventTestTable, DefaultDashboard, InventTestVariable, InventTestVariableOutcome, InventItemSampling, InventTestQualityGroup, InventTestItemQualityGroupAdd, SysQueryForm, InventTestItemQualityGroup, InventTestGroup, InventTestAssociationTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4577b8b189403b3d71eb634e159d51d2fa53ce12
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 875d79e33fbd1d3d811d93dea98fa9d490716744
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424883"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011466"
 ---
 # <a name="set-up-quality-orders"></a>Konfigurere kvalitetsordrer
 
@@ -136,5 +135,3 @@ Denne fremgangsmåde viser, hvordan du aktiverer en proces til kvalitetsstyring,
 
 > [!NOTE]
 > Funktionen *Kvalitetsstyring for lagerstedsprocesser* indeholder yderligere indstillinger til opsætning af kvalitetstilknytninger. Den tilføjer en ny betingelse (**gældende lagerstedstype**) og en ny indstilling (**kvalitetsbehandlingspolitik**). Hvis du har aktiveret denne funktion, skal du se [Kvalitetsstyring for lagerstedsprocesser](../quality-management-for-warehouses-processes.md) for at få flere oplysninger.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 754b34d9d522451082ba6010297431788e4151f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441432"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012257"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kredit på hold for salgsordrer
 [!include [banner](../includes/banner.md)]
@@ -265,6 +264,3 @@ Salgsordrer med en årsag til gennemtvunget hold kan ikke frigives automatisk. H
 Kreditstyring kan i øjeblikket kun bruges til salgsordrer. Fritekstfakturaer, POS-salgsordrer og callcenter-ordrer bruger det midlertidige kreditmaks. og den forsikring/de garantier, du tilføjer, til at regulere kreditmaks. De bruger ikke blokeringsreglerne, og de sættes ikke på listen over, hvis der er et problem med kreditmaks.
 
 Projektfakturaer understøttes ikke i kreditstyring.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
