@@ -1,6 +1,6 @@
 ---
 title: Rapportdefinitioner i Designer til økonomirapporter
-description: Denne artikel indeholder oplysninger om rapportdefinitioner. En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport. En rapportdefinition indeholder også indstillinger til tilpasning af en rapport.
+description: Denne artikel indeholder oplysninger om rapportdefinitioner.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,70 +17,70 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 779548dc49be0a92456df791017045803f70bd86
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7d5531112cfb803912849af3af785b2a69a79f3d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683105"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093408"
 ---
-# <a name="report-definitions-in-financial-report-designer"></a><span data-ttu-id="7d159-105">Rapportdefinitioner i Designer til økonomirapporter</span><span class="sxs-lookup"><span data-stu-id="7d159-105">Report definitions in financial report designer</span></span>
+# <a name="report-definitions-in-financial-report-designer"></a><span data-ttu-id="41247-103">Rapportdefinitioner i Designer til økonomirapporter</span><span class="sxs-lookup"><span data-stu-id="41247-103">Report definitions in financial report designer</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="7d159-106">Denne artikel indeholder oplysninger om rapportdefinitioner.</span><span class="sxs-lookup"><span data-stu-id="7d159-106">This article provides information about report definitions.</span></span> <span data-ttu-id="7d159-107">En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport.</span><span class="sxs-lookup"><span data-stu-id="7d159-107">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="7d159-108">En rapportdefinition indeholder også indstillinger til tilpasning af en rapport.</span><span class="sxs-lookup"><span data-stu-id="7d159-108">A report definition also provides options and settings that for customizing a report.</span></span> 
+<span data-ttu-id="41247-104">Denne artikel indeholder oplysninger om rapportdefinitioner.</span><span class="sxs-lookup"><span data-stu-id="41247-104">This article provides information about report definitions.</span></span> <span data-ttu-id="41247-105">En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport.</span><span class="sxs-lookup"><span data-stu-id="41247-105">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="41247-106">En rapportdefinition indeholder også indstillinger til tilpasning af en rapport.</span><span class="sxs-lookup"><span data-stu-id="41247-106">A report definition also provides options and settings that for customizing a report.</span></span> 
 
-<span data-ttu-id="7d159-109">En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport.</span><span class="sxs-lookup"><span data-stu-id="7d159-109">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="7d159-110">En rapportdefinition indeholder også yderligere indstillinger, som du kan anvende til tilpasning af en rapport.</span><span class="sxs-lookup"><span data-stu-id="7d159-110">A report definition also provides options and settings that you can use to customize a report.</span></span> <span data-ttu-id="7d159-111">Når du har defineret rækkedefinitioner og kolonnedefinitioner, skal du kombinere dem i en rapportdefinition.</span><span class="sxs-lookup"><span data-stu-id="7d159-111">After you define row definitions and column definitions, you must combine them in a report definition.</span></span> <span data-ttu-id="7d159-112">På dette tidspunkt definerer du også andre aspekter af definitionerne, som detaljeniveauet og rapportdatoen.</span><span class="sxs-lookup"><span data-stu-id="7d159-112">At this point, you also define other aspects of the definitions, such as the detail level and report date.</span></span> <span data-ttu-id="7d159-113">Du kan derefter gemme og generere en rapport.</span><span class="sxs-lookup"><span data-stu-id="7d159-113">You can then save and generate a report.</span></span> <span data-ttu-id="7d159-114">Økonomirapportering har følgende detaljeniveauer:</span><span class="sxs-lookup"><span data-stu-id="7d159-114">Financial reporting offers the following levels of detail:</span></span>
+<span data-ttu-id="41247-107">En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport.</span><span class="sxs-lookup"><span data-stu-id="41247-107">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="41247-108">En rapportdefinition indeholder også yderligere indstillinger, som du kan anvende til tilpasning af en rapport.</span><span class="sxs-lookup"><span data-stu-id="41247-108">A report definition also provides options and settings that you can use to customize a report.</span></span> <span data-ttu-id="41247-109">Når du har defineret rækkedefinitioner og kolonnedefinitioner, skal du kombinere dem i en rapportdefinition.</span><span class="sxs-lookup"><span data-stu-id="41247-109">After you define row definitions and column definitions, you must combine them in a report definition.</span></span> <span data-ttu-id="41247-110">På dette tidspunkt definerer du også andre aspekter af definitionerne, som detaljeniveauet og rapportdatoen.</span><span class="sxs-lookup"><span data-stu-id="41247-110">At this point, you also define other aspects of the definitions, such as the detail level and report date.</span></span> <span data-ttu-id="41247-111">Du kan derefter gemme og generere en rapport.</span><span class="sxs-lookup"><span data-stu-id="41247-111">You can then save and generate a report.</span></span> <span data-ttu-id="41247-112">Økonomirapportering har følgende detaljeniveauer:</span><span class="sxs-lookup"><span data-stu-id="41247-112">Financial reporting offers the following levels of detail:</span></span>
 
-- <span data-ttu-id="7d159-115">Finansiel</span><span class="sxs-lookup"><span data-stu-id="7d159-115">Financial</span></span>
-- <span data-ttu-id="7d159-116">Finans og Konto</span><span class="sxs-lookup"><span data-stu-id="7d159-116">Financial and Account</span></span>
-- <span data-ttu-id="7d159-117">Finans, Konto og Transaktion</span><span class="sxs-lookup"><span data-stu-id="7d159-117">Financial, Account, and Transaction</span></span>
+- <span data-ttu-id="41247-113">Finansiel</span><span class="sxs-lookup"><span data-stu-id="41247-113">Financial</span></span>
+- <span data-ttu-id="41247-114">Finans og Konto</span><span class="sxs-lookup"><span data-stu-id="41247-114">Financial and Account</span></span>
+- <span data-ttu-id="41247-115">Finans, Konto og Transaktion</span><span class="sxs-lookup"><span data-stu-id="41247-115">Financial, Account, and Transaction</span></span>
 
-<span data-ttu-id="7d159-118">Afhængigt af hvordan dataene er lagret i Microsoft Dynamics ERP-systemet, er transaktionsdetaljerne dog muligvis ikke tilgængelige i rapporter.</span><span class="sxs-lookup"><span data-stu-id="7d159-118">However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.</span></span>
+<span data-ttu-id="41247-116">Afhængigt af hvordan dataene er lagret i Microsoft Dynamics ERP-systemet, er transaktionsdetaljerne dog muligvis ikke tilgængelige i rapporter.</span><span class="sxs-lookup"><span data-stu-id="41247-116">However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.</span></span>
 
-## <a name="create-a-report-definition"></a><span data-ttu-id="7d159-119">Oprette en rapportdefinition</span><span class="sxs-lookup"><span data-stu-id="7d159-119">Create a report definition</span></span>
-1. <span data-ttu-id="7d159-120">I Report Designer skal du klikke på **Ny** i menuen **Filer**, og derefter skal du vælge **Rapportdefinition**.</span><span class="sxs-lookup"><span data-stu-id="7d159-120">In Report Designer, on the **File** menu, click **New**, and then select **Report Definition**.</span></span>
-2. <span data-ttu-id="7d159-121">Angiv de relevante oplysninger på fanerne **Rapport**, **Output og fordeling**, **Sidehoveder og sidefødder** og **Indstillinger**.</span><span class="sxs-lookup"><span data-stu-id="7d159-121">Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.</span></span>
+## <a name="create-a-report-definition"></a><span data-ttu-id="41247-117">Oprette en rapportdefinition</span><span class="sxs-lookup"><span data-stu-id="41247-117">Create a report definition</span></span>
+1. <span data-ttu-id="41247-118">I Report Designer skal du klikke på **Ny** i menuen **Filer**, og derefter skal du vælge **Rapportdefinition**.</span><span class="sxs-lookup"><span data-stu-id="41247-118">In Report Designer, on the **File** menu, click **New**, and then select **Report Definition**.</span></span>
+2. <span data-ttu-id="41247-119">Angiv de relevante oplysninger på fanerne **Rapport**, **Output og fordeling**, **Sidehoveder og sidefødder** og **Indstillinger**.</span><span class="sxs-lookup"><span data-stu-id="41247-119">Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.</span></span>
 
-## <a name="contents-of-a-report-definition"></a><span data-ttu-id="7d159-122">Indholdet af en rapportdefinition</span><span class="sxs-lookup"><span data-stu-id="7d159-122">Contents of a report definition</span></span>
-<span data-ttu-id="7d159-123">Nedenstående tabel beskriver fanerne i en rapportdefinition, og hvordan oplysningerne bruges.</span><span class="sxs-lookup"><span data-stu-id="7d159-123">The following table describes the tabs in a report definition and how the information is used.</span></span>
+## <a name="contents-of-a-report-definition"></a><span data-ttu-id="41247-120">Indholdet af en rapportdefinition</span><span class="sxs-lookup"><span data-stu-id="41247-120">Contents of a report definition</span></span>
+<span data-ttu-id="41247-121">Nedenstående tabel beskriver fanerne i en rapportdefinition, og hvordan oplysningerne bruges.</span><span class="sxs-lookup"><span data-stu-id="41247-121">The following table describes the tabs in a report definition and how the information is used.</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="7d159-124">Fane</span><span class="sxs-lookup"><span data-stu-id="7d159-124">Tab</span></span></th>
-<th><span data-ttu-id="7d159-125">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="7d159-125">Description</span></span></th>
+<th><span data-ttu-id="41247-122">Fane</span><span class="sxs-lookup"><span data-stu-id="41247-122">Tab</span></span></th>
+<th><span data-ttu-id="41247-123">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="41247-123">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="7d159-126">Rapport</span><span class="sxs-lookup"><span data-stu-id="7d159-126">Report</span></span></td>
-<td><span data-ttu-id="7d159-127">Opret en rapport, konfigurer en rapport eller rediger en eksisterende rapport.</span><span class="sxs-lookup"><span data-stu-id="7d159-127">Create a report, configure a report, or modify an existing report.</span></span></td>
+<td><span data-ttu-id="41247-124">Rapport</span><span class="sxs-lookup"><span data-stu-id="41247-124">Report</span></span></td>
+<td><span data-ttu-id="41247-125">Opret en rapport, konfigurer en rapport eller rediger en eksisterende rapport.</span><span class="sxs-lookup"><span data-stu-id="41247-125">Create a report, configure a report, or modify an existing report.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="7d159-128">Output og distribution</span><span class="sxs-lookup"><span data-stu-id="7d159-128">Output and Distribution</span></span></td>
-<td><span data-ttu-id="7d159-129">Rediger rapportens outputtype og destination.</span><span class="sxs-lookup"><span data-stu-id="7d159-129">Change the output type and destination of the report.</span></span></td>
+<td><span data-ttu-id="41247-126">Output og distribution</span><span class="sxs-lookup"><span data-stu-id="41247-126">Output and Distribution</span></span></td>
+<td><span data-ttu-id="41247-127">Rediger rapportens outputtype og destination.</span><span class="sxs-lookup"><span data-stu-id="41247-127">Change the output type and destination of the report.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="7d159-130">Sidehoveder og sidefødder</span><span class="sxs-lookup"><span data-stu-id="7d159-130">Headers and Footers</span></span></td>
-<td><span data-ttu-id="7d159-131">Definer og formater sidehovederne og sidefødderne til rapporten.</span><span class="sxs-lookup"><span data-stu-id="7d159-131">Define and format the headers and footers for the report.</span></span> <span data-ttu-id="7d159-132">Du kan for eksempel tilføje tekst eller billeder til sidehovedet eller sidefoden.</span><span class="sxs-lookup"><span data-stu-id="7d159-132">For example, you can add text or images to the header or footer.</span></span> <span data-ttu-id="7d159-133">Økonomirapportering understøtter .bmp-, .jpg- og .png-billedfiler.</span><span class="sxs-lookup"><span data-stu-id="7d159-133">Financial reporting supports .bmp, .jpg, and .png files for images.</span></span> <span data-ttu-id="7d159-134">Du kan også tilføje autotekstkoder for at indsætte andre oplysninger, f.eks et firmanavn, rapportnavn eller sidetal.</span><span class="sxs-lookup"><span data-stu-id="7d159-134">You can also add autotext codes to insert other information, such as a company name, report name, or page number.</span></span></td>
+<td><span data-ttu-id="41247-128">Sidehoveder og sidefødder</span><span class="sxs-lookup"><span data-stu-id="41247-128">Headers and Footers</span></span></td>
+<td><span data-ttu-id="41247-129">Definer og formater sidehovederne og sidefødderne til rapporten.</span><span class="sxs-lookup"><span data-stu-id="41247-129">Define and format the headers and footers for the report.</span></span> <span data-ttu-id="41247-130">Du kan for eksempel tilføje tekst eller billeder til sidehovedet eller sidefoden.</span><span class="sxs-lookup"><span data-stu-id="41247-130">For example, you can add text or images to the header or footer.</span></span> <span data-ttu-id="41247-131">Økonomirapportering understøtter .bmp-, .jpg- og .png-billedfiler.</span><span class="sxs-lookup"><span data-stu-id="41247-131">Financial reporting supports .bmp, .jpg, and .png files for images.</span></span> <span data-ttu-id="41247-132">Du kan også tilføje autotekstkoder for at indsætte andre oplysninger, f.eks et firmanavn, rapportnavn eller sidetal.</span><span class="sxs-lookup"><span data-stu-id="41247-132">You can also add autotext codes to insert other information, such as a company name, report name, or page number.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="7d159-135">Indstillinger</span><span class="sxs-lookup"><span data-stu-id="7d159-135">Settings</span></span></td>
-<td><span data-ttu-id="7d159-136">Angiv rapportdefinitionsindstillinger, f.eks. følgende indstillinger:</span><span class="sxs-lookup"><span data-stu-id="7d159-136">Specify report definition settings, such as the following settings:</span></span>
+<td><span data-ttu-id="41247-133">Indstillinger</span><span class="sxs-lookup"><span data-stu-id="41247-133">Settings</span></span></td>
+<td><span data-ttu-id="41247-134">Angiv rapportdefinitionsindstillinger, f.eks. følgende indstillinger:</span><span class="sxs-lookup"><span data-stu-id="41247-134">Specify report definition settings, such as the following settings:</span></span>
 <ul>
-<li><span data-ttu-id="7d159-137">Formater og afrund beløb</span><span class="sxs-lookup"><span data-stu-id="7d159-137">Formatting and rounding amounts</span></span></li>
-<li><span data-ttu-id="7d159-138">Formater detaljerapporter</span><span class="sxs-lookup"><span data-stu-id="7d159-138">Format detail reports</span></span></li>
-<li><span data-ttu-id="7d159-139">Formater rapporteringstræer</span><span class="sxs-lookup"><span data-stu-id="7d159-139">Format reporting trees</span></span></li>
-<li><span data-ttu-id="7d159-140">Generér en undtagelsesrapport</span><span class="sxs-lookup"><span data-stu-id="7d159-140">Generate an exception report</span></span></li>
-<li><span data-ttu-id="7d159-141">Angiv valutaomregning</span><span class="sxs-lookup"><span data-stu-id="7d159-141">Specify currency conversion</span></span></li>
-<li><span data-ttu-id="7d159-142">Oplysninger og filtrer kontodetaljer</span><span class="sxs-lookup"><span data-stu-id="7d159-142">Subtotal and filter account details</span></span></li>
+<li><span data-ttu-id="41247-135">Formater og afrund beløb</span><span class="sxs-lookup"><span data-stu-id="41247-135">Formatting and rounding amounts</span></span></li>
+<li><span data-ttu-id="41247-136">Formater detaljerapporter</span><span class="sxs-lookup"><span data-stu-id="41247-136">Format detail reports</span></span></li>
+<li><span data-ttu-id="41247-137">Formater rapporteringstræer</span><span class="sxs-lookup"><span data-stu-id="41247-137">Format reporting trees</span></span></li>
+<li><span data-ttu-id="41247-138">Generér en undtagelsesrapport</span><span class="sxs-lookup"><span data-stu-id="41247-138">Generate an exception report</span></span></li>
+<li><span data-ttu-id="41247-139">Angiv valutaomregning</span><span class="sxs-lookup"><span data-stu-id="41247-139">Specify currency conversion</span></span></li>
+<li><span data-ttu-id="41247-140">Oplysninger og filtrer kontodetaljer</span><span class="sxs-lookup"><span data-stu-id="41247-140">Subtotal and filter account details</span></span></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-resources"></a><span data-ttu-id="7d159-143">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="7d159-143">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="41247-141">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="41247-141">Additional resources</span></span>
 
-[<span data-ttu-id="7d159-144">Økonomirapportering</span><span class="sxs-lookup"><span data-stu-id="7d159-144">Financial reporting</span></span>](financial-reporting-intro.md)
+[<span data-ttu-id="41247-142">Økonomirapportering</span><span class="sxs-lookup"><span data-stu-id="41247-142">Financial reporting</span></span>](financial-reporting-intro.md)
