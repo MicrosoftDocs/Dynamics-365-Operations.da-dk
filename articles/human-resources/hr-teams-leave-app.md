@@ -2,7 +2,7 @@
 title: Administrere anmodninger i Teams
 description: I dette emne kan du se, hvordan du anmoder om fri i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
-ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
+ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4417892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128155"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Administrere anmodninger i Teams
 
@@ -33,28 +33,28 @@ Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du hurtig
 
 ## <a name="install-the-app"></a>Installere appen
 
-Du kan finde Personale-appen i storen til Teams.
+Du kan finde Human Resources-appen i storen til Teams.
 
 1. I Microsoft Teams skal du vælge ellipserne.
 
-   ![Ellipser i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-ellipses.png)
+   ![Ellipser i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-ellipses.png)
  
-2. Søg efter Dynamics 365 Human Resources, og vælg derefter feltet **Personale**.
+2. Søg efter Dynamics 365 Human Resources, og vælg derefter feltet **Human Resources**.
 
-   ![HR-feltet i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-human-resources-tile.png)
+   ![HR-feltet i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-human-resources-tile.png)
 
 3. Klik på knappen **Tilføj** for at installere appen.
 
-   ![Installer orlovsappen i Personale i Teams](./media/hr-teams-leave-app-in-store.png)
+   ![Installer orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-in-store.png)
 
 Hvis appen ikke automatisk logger dig på, skal du vælge fanen **Indstillinger** for at logge på.
 
-![Fanen Indstillinger i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-settings-tab.png)
+![Fanen Indstillinger i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Hvis du ikke kan se logondialogboksen, skal du kontrollere browserindstillingerne for at tillade pop op-vinduer. 
 
-Hvis du har adgang til mere end én forekomst af Personale, kan du vælge, hvilket miljø du vil oprette forbindelse til, under fanen **Indstillinger**.
+Hvis du har adgang til mere end én forekomst af Human Resources, kan du vælge, hvilket miljø du vil oprette forbindelse til, under fanen **Indstillinger**.
 
 > [!NOTE]
 > Appen understøtter nu sikkerhedsrollen Systemadministrator.
@@ -63,7 +63,7 @@ Hvis du har adgang til mere end én forekomst af Personale, kan du vælge, hvilk
 
 Når appen er installeret, vises en velkomstmeddelelse, der giver dig besked om, hvilke typer handlinger botten kan udføre på dine vegne.
 
-![Botvelkomstmeddelelse i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-bot.png)
+![Botvelkomstmeddelelse i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot.png)
  
 > [!NOTE]
 > Når du interagerer med bot for første gang, skal du muligvis logge på. Hvis du ikke kan se logondialogboksen, skal du kontrollere browserindstillingerne for at tillade pop op-vinduer.
@@ -72,23 +72,23 @@ Du kan bede bot om at:
 
 - Vise oplysninger om flekskontoen for hver orlovstype, du er tilmeldt.
 
-   ![Vise konti i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-bot-balances.png)
+   ![Vise konti i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-balances.png)
  
 - Vise flere detaljer om en bestemt orlovstype.
 
-   ![Vise detaljer i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-bot-details.png)
+   ![Vise detaljer i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-details.png)
 
 - Starte en anmodning om en orlov for dig.
 
-   ![Anmodning om orlov i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-bot-request.png)
+   ![Anmodning om orlov i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-request.png)
  
 Når du har startet en orlovsanmodning, kan du justere dagene direkte på kortet.
 
-![Redigering af anmodning i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-bot-edit.png)
+![Redigering af anmodning i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-edit.png)
  
 Når du er færdig med at angive oplysninger, skal du vælge **Send** for at sende dem til godkendelse. Du kan også vælge **Gem som kladde** for at vende tilbage til den senere.
 
-![Afsendelse af anmodning i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-bot-submit.png)
+![Afsendelse af anmodning i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Administrere din orlov i Teams
 
@@ -102,17 +102,17 @@ Fanen **Fri** gør det muligt at vise:
 
 - kladdeorlovsanmodninger
 
-![Fanen Fri i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-timeoff-tab.png)
+![Fanen Fri i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Oprette en ny anmodning
 
 1. Hvis du vil oprette en ny anmodning, skal du vælge **Ny anmodning**.
 
-   ![Ny anmodning i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
+   ![Ny anmodning i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
 
 2. Angiv den eller de dage, du vil have en fridag, og vælg derefter **Tilføj**.
 
-   ![Tilføj fridag i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Tilføj fridag i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
 
 3. Angiv en årsagskode, hvis det er relevant. Skriv også eventuelle kommentarer, og tilføj evt. vedhæftede filer.
 
@@ -122,21 +122,21 @@ Fanen **Fri** gør det muligt at vise:
 
 1. Vælg fanen **Kladder**.
 
-   ![Fanen Kladder i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-drafts-tab.png)
+   ![Fanen Kladder i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-drafts-tab.png)
 
 2. Vælg blyanten for at redigere anmodningen, eller vælg papirkurven, som kan slette anmodningen.
 
 3. Foretag eventuelle nødvendige ændringer. Når du er færdig med at angive oplysninger, skal du skrive **Send** for at sende dem til godkendelse. Du kan også vælge **Gem som kladde** for at vende tilbage til den senere.
 
-   ![Redigering af kladde i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-drafts-edit.png)
+   ![Redigering af kladde i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Besvare Teams-beskeder
 
-Når du eller en arbejder, du er godkender for, sender en anmodning om orlov, modtager du en besked i appen Personale i Teams. Du kan vælge beskeden for at få den vist. Beskeder vises også i **Chat**-området.
+Når du eller en arbejder, du er godkender for, sender en anmodning om orlov, modtager du en besked i appen Human Resources i Teams. Du kan vælge beskeden for at få den vist. Beskeder vises også i **Chat**-området.
 
 Hvis du er godkender, kan du vælge **Godkend** eller **Afvis** i beskeden. Du kan også angive en valgfri meddelelse.
 
-![Besked om orlovsanmodning i Teams-appen Personale](./media/hr-teams-leave-app-notification.png)
+![Besked om orlovsanmodning i Teams-appen Human Resources](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Sende kommende oplysninger om fridage til dine kolleger
 
@@ -162,15 +162,15 @@ Hvis du har delt en kladdebaseret anmodning, vises den som en kladde:
 
 Hvis du er chef med direkte underordnede, kan du få vist dit teams godkendte og afventende fravær.
 
-1. I appen Personale i Teams skal du vælge **Fri**.
+1. I appen Human Resources i Teams skal du vælge **Fri**.
 
 2. Vælg **Teamkalender**.
 
-   ![Se kalender i Teams-appen Personale](./media/hr-teams-leave-app-view-calendar.png)
+   ![Se kalender i Teams-appen Human Resources](./media/hr-teams-leave-app-view-calendar.png)
 
 I kalenderen vises dine direkte underordnedes godkendte og afventende fravær.
 
-![Fraværskalender i Teams-appen Personale](./media/hr-teams-leave-app-calendar.png)
+![Fraværskalender i Teams-appen Human Resources](./media/hr-teams-leave-app-calendar.png)
 
 ## <a name="troubleshooting"></a>Fejlfinding
 
@@ -196,7 +196,6 @@ Human Resources-appen i Teams har følgende tilgængelighedsproblemer, som vi ar
 | --- | --- |
 | Hvis du zoomer til 400 % på skrivebordet, skjules nogle af handlingsknapperne i visningen. | Vi anbefaler, at du bruger et forstørrelsesglas i stedet, indtil vi kan understøtte dette zoomniveau. |
 | Under fanen **Fridage** annoncerer VoiceOver en knaphandling under læsning af overskriften til gitteret for fridage. | Overskriften og elementerne i gitteret grupperes efter år, og de kan skjules. VoiceOver fortolker dette som et element, der kræver en handling, men det er ikke. |
-| Hvis du foretager en strygebevægelse, mens en pop op-menu er åben, ignorerer VoiceOver læsningen af pop op-menuen eller menuindholdet. | Udforsk indholdet ved hjælp af fingerscanning. |
 | Under fanen **Fridage** er der en ekstra strygebevægelse, når du navigerer til **Årsagskode** i en ny anmodning. | Der er ikke noget skjult kontrolelement, som strygenavigationen forsøger at få adgang til. |
 | Hvis du lave en strygebevægelser under fanen **Fridage**, mens kalenderen er åben, havner du uden for kontrolelementet i stedet for øverst i en ny anmodning, eller når du redigerer en anmodning. | Når du når **Gå til i dag**, skal du betragte det som slutningen af kontrolelementet og stryge i modsatte retning for at gå tilbage til toppen. |
 | VoiceOver kan ikke læse datoetiketterne. | De datoer, der optræder som par, er altid **Startdato** og **Slutdato**. |
@@ -229,6 +228,3 @@ Hvis du vil begrænse adgangen til Human Resources-appen i Microsoft Teams for d
 [Downloade og installere Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams Hjælp-center](https://support.office.com/teams)</br>
 [Human Resources-app i Teams](hr-admin-teams-leave-app.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

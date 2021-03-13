@@ -1,6 +1,6 @@
 ---
-title: Installation med to skrivninger fra Lifecycle Services
-description: I dette emne beskrives, hvordan du kan oprette en forbindelse med to skrivninger mellem et nyt Finance and Operations-miljø og et nyt Dataverse-miljø fra Microsoft Dynamics Lifecycle Services (LCS).
+title: Konfiguration af dobbeltskrivning fra Lifecycle Services
+description: Dette emne beskriver, hvordan du konfigurerer en forbindelse med dobbeltskrivning fra Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
@@ -18,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25db9c58c3d09e44dcf11b48cae1a9eda4241c35
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: df67e498b963af3ded7464f46f37bb4b2ca7d852
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683518"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127587"
 ---
-# <a name="dual-write-setup-from-lifecycle-services"></a>Installation med to skrivninger fra Lifecycle Services
+# <a name="dual-write-setup-from-lifecycle-services"></a>Konfiguration af dobbeltskrivning fra Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -56,7 +54,7 @@ Følg disse trin for at oprette forbindelsen med to skrivninger.
     - Hvis der allerede er klargjort et Dataverse-miljø til din lejer, kan du vælge det.
 
         1. Angiv indstillingen **Konfigurer Dataverse** til **Ja**.
-        2. Vælg det miljø, der skal integreres med dine Finance and Operations-data, i feltet **Tilgængelige miljøer**. Listen omfatter alle de miljøer, hvor du har administratorrettigheder.
+        2. Vælg det miljø, der skal integreres med dine Finance and Operations-data, i kolonnen **Tilgængelige miljøer**. Listen omfatter alle de miljøer, hvor du har administratorrettigheder.
         3. Markér afkrydsningsfeltet **Acceptér** for at angive, at du accepterer vilkårene og betingelserne.
 
         ![Dataverse-fanen, når et Dataverse-miljø allerede er klargjort til din lejer](../dual-write/media/lcs_setup_1.png)
@@ -76,9 +74,9 @@ Følg disse trin for at oprette forbindelsen med to skrivninger.
         ![Dataverse-fanen, når din lejer ikke allerede har et Dataverse-miljø](../dual-write/media/lcs_setup_2.png)
 
 7. Afslut de resterende trin i guiden **Installationsindstillinger**.
-8. Når miljøet har status **Installeret**, skal du åbne siden med miljødetaljer. Afsnittet med **Dataverse-miljøoplysninger** viser navnene på Finance and Operations-miljøet og det sammenkædede Dataverse-miljø.
+8. Når miljøet har status **Installeret**, skal du åbne siden med miljødetaljer. Afsnittet med **Power Platform Integration** viser navnene på Finance and Operations-miljøet og det sammenkædede Dataverse-miljø.
 
-    ![Afsnittet med Dataverse-miljøoplysninger](../dual-write/media/lcs_setup_3.png)
+    ![Afsnittet Power Platform Integration](../dual-write/media/lcs_setup_3.png)
 
 9. En administrator af Finance and Operations-miljøet skal logge på LCS og vælge **Link til CDS for Apps** for at fuldføre sammenkædningen. På siden med miljødetaljer vises administratorens kontaktoplysninger.
 
@@ -86,10 +84,8 @@ Følg disse trin for at oprette forbindelsen med to skrivninger.
 
 10. Hvis du vil åbne arbejdsområdet **Dataintegration** i Finance and Operations-miljøet og styre, hvilke skabeloner der findes, skal du vælge **Link til CDS For Apps**.
 
-    ![Knappen Link til CDS for Apps i området med Dataverse-miljøoplysninger](../dual-write/media/lcs_setup_4.png)
+    ![Knappen Link til CDS for Apps i afsnittet Power Platform Integration](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > Du kan ikke fjerne sammenkædningen mellem miljøer ved hjælp af LCS. Hvis du vil fjerne sammenkædningen mellem et miljø, skal du åbne arbejdsområdet **Dataintegration** i Finance and Operations-miljøet og derefter vælge **Fjern sammenkædning**.
 
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

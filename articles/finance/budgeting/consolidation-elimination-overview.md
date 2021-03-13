@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13151
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee029e6cf1f271c5839e8d0dc1b1e4b7f91fb9a2
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441680"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120473"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Oversigt over konsolidering og eliminering
 
@@ -60,11 +59,12 @@ Indstillingen **Økonomirapportering** har ubegrænset rapporteringsvalutaer. Da
 Indstillingen **Økonomirapportering** er løsningen, fordi du kan få vist detaljer på transaktionsniveau for så mange virksomheder, som er medtaget i definitionen af rapporteringstræet.
 
 4.  Vi bruger budgetplanlægning eller budgetstyring, og det skal konsolideres.
+
 Indstillingen **Økonomirapportering** er løsningen til at konsolidere budgetplanlægnings- eller budgetkontroldata.
 
 5.  Vores datterselskaber er spredt over hele verden, og vi har flere kontoplaner. Hvad er den bedste metode til konsolidering af vores data?
 
-Du har flere muligheder, når du skal kunne håndtere flere kontoplaner. Du kan bruge indstillingen **Konsolider online** og derefter vælge at bruge enten den koncernkonto, der er defineret for hovedkontoen, eller en koncernkontogruppe. Du kan også bruge indstillingen **Økonomirapportering**, medtage flere links til de økonomiske dimensioner i rækkedefinitionen og tilknytte kontiene.
+Du har flere muligheder, når du skal kunne håndtere flere kontoplaner. Du kan bruge indstillingen **Konsolider online** og derefter vælge at bruge enten den koncernkonto, der er defineret for hovedkontoen, eller en koncernkontogruppe. Du kan også bruge indstillingen **Financial reporting**, medtage flere links til de økonomiske dimensioner i rækkedefinitionen og tilknytte kontiene.
 
 6.  Vi kræver flere niveauer af konsolidering. Med andre ord konsoliderer vi først vores europæiske datterselskaber til det britiske pund (GBP). Vi tager derefter disse data og konverterer det konsoliderede beløb til US dollar. Hvordan kan vi gøre det?
 
@@ -86,10 +86,10 @@ Indstillingen **Økonomirapportering** er løsningen. Organisationshierarkier, d
 
 Ved at bruge indstillingen **Eksportér virksomhedssaldi** til at eksportere fra én forekomst og derefter bruge indstillingen **Konsolider med import** i den anden forekomst, kan du konsolidere dataene.
 
+11. Kan jeg udføre en konsolidering med statussen **KLADDE** for mit budget? 
+            
+Du kan ikke behandle eller fuldføre budgetter i det konsoliderede regnskab. Vi anbefaler, at du bruger Financial Reporting til at konsolidere kladdebudgetter.
 
 Du kan finde flere oplysninger under [Værdiregulering i et konsolideret regnskab](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

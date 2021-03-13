@@ -3,24 +3,23 @@ title: Lovmæssige opdateringer
 description: Dette emne indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/13/2020
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 46e9b3c3d47207715d0eee689913073d363f3af3
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: a09ac2c3c198bf7d7d34a1ae1739af6b62d8dce7
+ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517494"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118649"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -43,43 +42,34 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 |Land/område|Udstedelsesdato|Release-version|Lovmæssig opdatering|
 |--------------------|---------------|-------|-------|
 |      Østrig         |   2020. september      | 10.0.15      |   Momsangivelsesformat U30 er opdateret til 2020-indberetning   |
-|      Bahrain         |   2020. juni      | 10.0.13      |   Deadline for fakturaudstedelse (GCC)   |
-|      Bahrain         |   2020. september      | 10.0.13      |   Projektfaktura for Bahrain   |
-|      Bahrain         |   2020. juni      | 10.0.13      |   Momsopgørelse for Bahrain - aktiver posteringsbeskrivelse   |   
-|      Brasilien         |   August 2020      | 10.0.14, 10.0.13      |   ADRCST-erklæring-PR   |
-|      Brasilien         |   Maj 2020      | 10.0.13      |   SPED ECF-layout 6   |
-|      Brasilien         |   Juli 2020      | 10.0.13      |   SPED-regnskab – post C176 - RS-tilstand   |
-|      Brasilien         |   2020. oktober      | 10.0.16, 10.0.15HF, 10.0.14HF, 10.0.13HF      |   NF-e NT2019.001 v 1,51 - vedtagelse af valideringsregler efter frynsegodekode efter Distrito Federal   |
-|      Brasilien         |   2020. oktober      | 10.0.16      |   SPED-regnskabsløsning – Layout 015   |
-|      Brasilien         |   November 2020      | 10.0.15 HF      |   HURTIG regnskabs ICMS/IPI-post C176 Opdater til RS-tilstand   |
+|      Belgien         |   2020. december      | 10.0.16      |   Belgien: "Eksporter finansposter" viser en forbedret ydeevne i Dynamics 365 Finance   |   
+|      Brasilien         |   November 2020      | 10.0.15 HF      |   SPED-regnskab ICMS/IPI – post C176 - RS-tilstand   |
+|      Brasilien         |   2020. oktober      | 10.0.16, 10.0.15HF      |   NF-e NT2019.001 v 1,51 - vedtagelse af valideringsregler efter frynsegodekode efter Distrito Federal   |
+|      Brasilien         |   Oktober 2020, November 2020      | 10.0.16, 10.0.15HF      |   SPED-regnskabsløsning – Layout 015   |
 |      Brasilien         |   2020. oktober      | 10.0.16      |   DRCST-erklæring-SC - SEF 262/2020   |
 |      Brasilien         |   2020. oktober      | 10.0.16      |   HURTIGE regnskabs ICMS/IPI-post C176   |
-|      Tjekkiet      |   Juli 2020      | 10.0.13      |   Kontrolopgørelse af moms ændres i XML-skema (fakturaoversigt)   |
-|      Tjekkiet         |   Juli 2020      | 10.0.13      |   Momsopgørelse i XML, eksempelvisning af momsopgørelse i Excel og XML-formater for kontrolopgørelse af moms baseret på skatteopgørelsesmodel   |
-|      Europa        |   August 2020       | 10.0.14      |   Overfør partnermoms-id til Intrastat  |
-|      Finland         |   Juli 2020       | 10.0.13      |   Understøttelse af elektroniske fakturaer for Finland  |
-|      Indien         |   Juli 2020      | 10.0.13      |   TCS på salg af varer som pr. sektion 206C (1H) - grænse som pr. PAN-baseret akkumulering af transaktioner.  |
-|      Indien         |   August 2020, juni 2020      | 10.0.13      |   Kredit-/debetnota i henhold til eksportfaktura  |
-|      Indien         |   August 2020      | 10.0.13      |   Elektronisk faktura under GST  |
-|      Indien         |   Juli 2020      | 10.0.13      |   Nyt GSTR (ANX-1 & ANX-2) offlineværktøj (betaversion)  |
-|      Indien         |   2020. oktober      | 10.0.14HF, 10.0.13HF      |   E-faktura under GST på lageroverførselsordre for Indien|
-|      Indien         |   2020. oktober      | 10.0.14HF, 10.0.13HF      |   E-faktura i GST for Indien med flere GSTIN-registreringer|
-|      Indien         |   2020. september      | 10.0.13HF      |   A-skattesats i 3/5 decimaler|
-|      Indien         |   2020. september      | 10.0.14HF      |   Nummerseriegruppe: "GSTNSG", posteringstype: "GST-faktura", der skal oprettes for GST-referencenummerseriegruppen for skatteoplysninger "0073"|
-|      Italien         |   Juli 2020      | 10.0.13      |   Ændringer i formatet for italienske elektroniske fakturaer – FatturaPA |
-|      Malaysia         |   Juli 2020      | 10.0.13      |   SST-rapport |
-|      Mexico         |   2020. september      | 10.0.13HF      |   CFDI-URL-skemaplacering baseret på Anexo 20-dokument |
+|      Brasilien         |   2020. december      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 – Identifikation af det digitale platformmellemled (opdatering af layout og valideringsregler)   |
+|      Europa        |   2021. januar       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit - Nordirlands protokol har indflydelse på rapportering af fællesskabshandel i EU-lande  |
+|      Tyskland        |   2021. januar       | 10.0.16HF      |   ELSTER UstVA MOMS-forskudsbetaling for er blevet udvidet med to nye felter 37,50 for afskrivning af uoprettelig gæld  |
+|      Tyskland        |   2021. januar       | 10.0.17      |   Ændringer i ELSTER VAT-forskudsbetaling i XML-struktur (UstVA)  |
+|      Globalt        |   2021. januar       | 10.0.16      |   Aktivér modtagermomsmekanisme for moms-/GST-skema  |
+|      Indien         |   2020. december      | 10.0.16, HF, 10.0.15HF      |   TCS for Salg af varer Sektion 206 9(1H) baseret på CBDT-pressemeddelelse  |
+|      Letland         |   2020. december      | 10.0.17      |   Intrastat-formatet opdateres fra 2021  |
+|      Mexico         |   2020. december      | 10.0.17, 10.0.16, 10.0.15      |   Opdatering af attribut "Monto" |
 |      Nederlandene         |   2020. oktober      | 10.0.16     |   Intrastat-formatet opdateres fra 2021 |
-|      Norge         |   August 2020      | 10.0.14     |   SAF-T-transaktioners grupperingsniveau efter "bilag" skal rapporteres for vareniveauet "Transaktion" i stedet for "Kladde" |
-|      Polen          |   2020. september     | 10.0.14     |   Polen: JPK-V7M (VDEK) Excel-format – til erstatning af SSRS-rapport  |
-|      Polen          |   Juli 2020     | 10.0.15, 10.0.14HF, 10.0.13     |   Frivilligt opdelte forbedringer af betalinger |
-|      Polen          |   2020. oktober     | 10.0.13HF     |   Forbedringer af obligatorisk opdelt betalinger |
-|      Polen          |   November 2020     | 10.0.16, 10.0.15, 10.0.14, 10.0.13     |   JPK-V7M (VDEK) - salgsdokumenttypen FP og RO i forbindelse med detailtransaktioner |
+|      Nederlandene         |   2020. december      | 10.0.167     |   Ny version af hollandsk taksonomi - NT15 |
+|      Polen          |   2020. september     | 10.0.15     |   Frivilligt opdelte forbedringer af betalinger |
+|      Polen          |   November 2020     | 10.0.16, 10.0.15     |   JPK-V7M (VDEK) - salgsdokumenttypen FP og RO i forbindelse med detailtransaktioner |
 |      Polen          |   2020. september     | 10.0.15     |   Polen: JPK-V7M (VDEK) – mulighed for oplåsning af rapportgenerering efter dele |
 |      Polen          |   2020. oktober     | 10.0.16     |   JPK-V7M (VDEK) rapport -'Frivillig opdeling af betalingsparameterinddragelse |
-|      Rusland          |   August 2020     | 10.0.14    |   Formatet for regnskabsrapporteringen ændres med start i år 2020  |
-|      Rusland          |   Juli 2020     | 10.0.13    |   Afskrivningsberegning på basis af anskaffelsesomkostninger og større reparationer ved anvendelse af straksafskrivning i skatteregnskab  |
+|      Polen          |   November 2020     | 10.0.16, 10.0.15HF     |   Detail – Udspørg faktura for detailkunde pr. anmodning |
+|      Polen          |   2021. januar     | 10.0.17, 10.0.16HF, 10.0.15HF     |   Polen: JPK_KR (SAF-regnskabsbøger) ændringer med virkning fra 2021 |
 |      Rusland          |   November 2020     | 10.0.16    |   Moms-opgørelsesformatet opdateres til version 5,07 med udgangspunkt i rapporteringen for fjerde kvartal 2020|
+|      Rusland          |   2020. oktober     | 10.0.16    |   Ændringer i PBU18 for regnskabsrapportering for 2020|
+|      Rusland          |   2021. januar     | 10.0.17    |   Et nyt format for egenskabsafgiftsopgørelsen (teknisk version 5.07 i stedet for 5.06) til 2020-rapporteringen|
+|      Spanien          |   November 2020     | 10.0.17    |   SII-opdateringsvalidering og -fejl v.2.1 (ibis) fra 1. januar 2021|
+|      Storbritannien         |   2020. december     | 10.0.17, 10.0.16, 10.0.15    |   Firmaafgiftsregistrering på debitorfakturaer (Brexit - Nordirland-protokol)|
+|      Storbritannien          |   2020. december     | 10.0.17, 10.0.16HF. 10.0.15 HF    |   Brexit – Nordirland-protokol har indflydelse på firmaer, der handler med varer både på GB- og NI-lokationer|
 
 
 
@@ -87,6 +77,3 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 - Find alle planlagte og frigivne lovmæssige opdateringer på [Lifecycle Service - Problemløsning](https://lcs.dynamics.com/Logon/Index) (logon er påkrævet).
 - En liste over de oversættelser, der understøttes, finder du i [Vejledning til international tilgængelighed](https://aka.ms/dynamics_365_international_availability_deck).
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

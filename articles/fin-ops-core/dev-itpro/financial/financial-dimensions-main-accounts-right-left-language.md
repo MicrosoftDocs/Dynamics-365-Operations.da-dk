@@ -1,6 +1,6 @@
 ---
 title: Økonomiske dimensioner og hovedkonti på højre mod venstre-sprog
-description: I dette emne beskrives nogle af de implementeringsbeslutninger, der skal overvejes, når du bruger et højre mod venstre-sprog, og du skal oprette økonomiske dimensioner og hovedkonti.
+description: I dette emne beskrives nogle beslutninger, du skal overveje, når du bruger et højre mod venstre-sprog, og du skal oprette økonomiske dimensioner og hovedkonti.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 192ed371eec24ed4e0532aaca341bb249a4933c7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2bdf1b99ae7be6c9d9c43c91c9273e18ce9b1093
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127641"
 ---
 # <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Økonomiske dimensioner og hovedkonti på højre mod venstre-sprog
 
@@ -38,6 +38,3 @@ I dette emne beskrives nogle af de implementeringsbeslutninger, der skal overvej
 - Undgå at bruge den valgte kontoplans afgrænser i den økonomiske dimension og hovedkontoværdier.
 
 Ved at følge disse anbefalinger kan du bedre sikre ensartet repræsentation af den brugerdefinerede rækkefølge i hele systemet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

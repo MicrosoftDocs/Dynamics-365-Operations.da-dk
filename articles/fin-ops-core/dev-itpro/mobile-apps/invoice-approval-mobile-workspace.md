@@ -1,6 +1,6 @@
 ---
 title: Arbejdsområde for fakturagodkendelser på mobilenheder
-description: Dette emne indeholder oplysninger om arbejdsområdet til fakturagodkendelse på mobilenheder. Arbejdsområdet indeholder en liste over fakturaer, der er tildelt til dig via arbejdsgangen for kreditorfakturahovedet.
+description: Dette emne indeholder oplysninger om arbejdsområdet til fakturagodkendelse på mobilenheder.
 author: abruer
 manager: AnnBe
 ms.date: 12/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8d4b40c7ce8939248e85b6b6f3d359bd16e35b0d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1a7aa1a03791b8ccb7050389097d1272f5930a49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683402"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127563"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Arbejdsområde for fakturagodkendelser på mobilenheder
 
@@ -86,6 +86,3 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 7.  Vælg **Vedhæftede filer** for at få vist noter eller filer, der er tilknyttet fakturaen.
 8.  På siden **Fakturadetaljer** skal du vælge den relevante handling i arbejdsgangen for at fuldføre valideringsprocessen.
 9.  Vælg **Udført**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

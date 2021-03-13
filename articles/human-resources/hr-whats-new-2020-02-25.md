@@ -1,8 +1,8 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (25. februar 2020)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 25. februar 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/25/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1302686aeba52de484ad520efe292fafefc39ebf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4faecb83518f3ef8af825872abc2a6ffb94162fc
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526804"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128016"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-25-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (25. februar 2020)
 
@@ -55,15 +55,15 @@ Med denne ændring vises en advarsel, når du forsøger at slette en stilling, o
 
 Denne ændring retter et problem, hvor yderligere godkendelsesdeltagere føjes til gennemsynet af ydeevnen.
 
-## <a name="worker-position-assignment-not-created-in-common-data-service-when-selected-on-the-new-worker-dialog-413479"></a>Tildelingen af arbejderstilling, der ikke er oprettet i Common Data Service, da den blev valgt i dialogboksen Ny arbejder (413479)
+## <a name="worker-position-assignment-not-created-in-dataverse-when-selected-on-the-new-worker-dialog-413479"></a>Tildelingen af arbejderstilling, der ikke er oprettet i Dataverse, da den blev valgt i dialogboksen Ny arbejder (413479)
 
-Denne ændring retter en fejl, når du ansætter en ny arbejder og tildeler den nye ansættelse til en stilling via dialogboksen **Ny medarbejder**. Nu afspejles stillingstildelingen i Common Data Service.
+Denne ændring retter en fejl, når du ansætter en ny arbejder og tildeler den nye ansættelse til en stilling via dialogboksen **Ny medarbejder**. Nu afspejles stillingstildelingen i Dataverse.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="updated-common-data-service-solution"></a>Opdateret Common Data Service-løsning
+### <a name="updated-dataverse-solution"></a>Opdateret Dataverse-løsning
 
-Der vil snart være en ny Common Data Service-løsning med følgende ændringer:
+Der vil snart være en ny Dataverse-løsning med følgende ændringer:
 
 | Beskrivelse | Forskydning |
 | ----------------------------------------- | --- |
@@ -74,9 +74,9 @@ Der vil snart være en ny Common Data Service-løsning med følgende ændringer:
 | Nye konfigurationsobjekter til variabel kompensation | **Type af variabel kompensationsplan**</br>**Kompensation - variabel struktur**</br>**Fordelingsregler**</br>**Niveau i variabel kompensationsplan** |
 | Nyt objekt **Arbejderkalender for ansættelse** | **Arbejdskalenderobjekt** er tilføjet |
 | Nyt objekt **Lønoplysninger for stillinger** | **Lønoplysninger for stillinger** er tilføjet |
-| Nyt objekt **Titel** | **Titel** er tilføjet. Den nye enhed **Titel** vil blive medtaget i synkroniseringsprocessen mellem Human Resources og Common Data Service. Der henvises ikke til den først i enhederne **Stilling** eller **Job**. |
+| Nyt objekt **Titel** | **Titel** er tilføjet. Den nye enhed **Titel** vil blive medtaget i synkroniseringsprocessen mellem Human Resources og Dataverse. Der henvises ikke til den først i enhederne **Stilling** eller **Job**. |
 
-I løbet af de næste par uger vil disse enhedsændringer være tilgængelige i alle miljøer. Sådan installeres den nyeste Common Data Service-løsning til HR manuelt:
+I løbet af de næste par uger vil disse enhedsændringer være tilgængelige i alle miljøer. Sådan installeres den nyeste Dataverse-løsning til HR manuelt:
 
 1.  Gå til [Power Platform Administration](https://admin.powerplatform.microsoft.com).
 
@@ -106,5 +106,3 @@ Følgende prøvefunktioner blev tilgængelige d. 3. februar 2020:
 [Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
