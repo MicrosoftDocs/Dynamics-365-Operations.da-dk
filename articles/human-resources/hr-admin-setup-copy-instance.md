@@ -2,7 +2,7 @@
 title: Kopiér en forekomst
 description: Du kan bruge Microsoft Dynamics Lifecycle Services (LCS) til at kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkasse-miljø.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527831"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111919"
 ---
 # <a name="copy-an-instance"></a>Kopiér en forekomst
 
@@ -33,19 +33,19 @@ Du kan bruge Microsoft Dynamics Lifecycle Services (LCS) til at kopiere en Micro
 
 Hvis du vil kopiere en forekomst, skal du huske at følge nedenstående tip:
 
-- Den forekomst af Personale, du vil overskrive, skal være et sandkassemiljø.
+- Den forekomst af Human Resources, du vil overskrive, skal være et sandkassemiljø.
 
 - De miljøer, du kopierer fra og til, skal være i samme område. Du kan ikke kopiere på tværs af områder.
 
 - Du skal være administrator i destinationsmiljøet, så du kan logge på, når du har kopieret forekomsten.
 
-- Når du kopierer Personale-databasen, kopierer du ikke de elementer (apps eller data), der er indeholdt i et Microsoft Power Apps-miljø. Yderligere oplysninger om kopiering af elementer i et Power Apps-miljø finder du i [Kopiere et miljø](https://docs.microsoft.com/power-platform/admin/copy-environment). Det Power Apps-miljø, du vil overskrive, skal være et sandkassemiljø. Du skal være global lejeradministrator for at kunne ændre et Power Apps-produktionsmiljø til et sandkassemiljø. Yderligere oplysninger om ændring af et Power Apps-miljø finder du [Skifte en forekomst](https://docs.microsoft.com/dynamics365/admin/switch-instance)forekomst.
+- Når du kopierer Human Resources-databasen, kopierer du ikke de elementer (apps eller data), der er indeholdt i et Microsoft Power Apps-miljø. Yderligere oplysninger om kopiering af elementer i et Power Apps-miljø finder du i [Kopiere et miljø](https://docs.microsoft.com/power-platform/admin/copy-environment). Det Power Apps-miljø, du vil overskrive, skal være et sandkassemiljø. Du skal være global lejeradministrator for at kunne ændre et Power Apps-produktionsmiljø til et sandkassemiljø. Yderligere oplysninger om ændring af et Power Apps-miljø finder du [Skifte en forekomst](https://docs.microsoft.com/dynamics365/admin/switch-instance)forekomst.
 
-- Hvis du kopierer en forekomst til dit sandkassemiljø og vil integrere dit sandkassemiljø med Common Data Service, skal du genanvende brugerdefinerede felter på Common Data Service-objekter. Se [Anvende brugerdefinerede felter i Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Hvis du kopierer en forekomst til dit sandkassemiljø og vil integrere dit sandkassemiljø med Dataverse, skal du genanvende brugerdefinerede felter på Dataverse-tabeller. Se [Anvende brugerdefinerede felter i Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
-## <a name="effects-of-copying-a-human-resources-database"></a>Virkninger af kopiering af en Personale-database
+## <a name="effects-of-copying-a-human-resources-database"></a>Virkninger af kopiering af en Human Resources-database
 
-Følgende hændelser indtræffer, når du kopierer en Personale-database:
+Følgende hændelser indtræffer, når du kopierer en Human Resources-database:
 
 - Kopieringsprocessen sletter den eksisterende database i destinationsmiljøet. Når kopieringsprocessen er fuldført, kan du ikke gendanne den eksisterende database.
 
@@ -57,7 +57,7 @@ Følgende hændelser indtræffer, når du kopierer en Personale-database:
 
 - Administratorbrugeren skal foretage påkrævede konfigurationsændringer, f.eks. genoprette forbindelse mellem integrationsslutpunkter og bestemte tjenester eller URL-adresser.
 
-## <a name="copy-the-human-resources-database"></a>Kopiere Personale-databasen
+## <a name="copy-the-human-resources-database"></a>Kopiere Human Resources-databasen
 
 Hvis du vil fuldføre denne opgave, skal du først kopiere en forekomst og derefter logge på Microsoft Power Platform Administration for at kopiere dit Power Apps-miljø.
 
@@ -66,13 +66,13 @@ Hvis du vil fuldføre denne opgave, skal du først kopiere en forekomst og deref
 
 1. Log på LCS, og vælg det LCS-projekt, der indeholder den forekomst, du vil kopiere.
 
-2. I LCS-projektet skal du vælge feltet **Administration af Personale-app**.
+2. I LCS-projektet skal du vælge feltet **Administration af Human Resources-app**.
 
 3. Vælg den forekomst, der skal kopieres, og vælg derefter **Kopier**.
 
 4. I opgaveruden **Kopier en forekomst** skal du markere den forekomst, der skal overskrives, og derefter vælge **Kopier**. Vent, indtil værdien i feltet **Kopieringsstatus** opdateres til **Fuldført**.
 
-   ![[Vælg forekomst, der skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Vælg en forekomst, der skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Vælg **Power Platform**, og log på Microsoft Power Platform Administration.
 
@@ -80,11 +80,11 @@ Hvis du vil fuldføre denne opgave, skal du først kopiere en forekomst og deref
 
 6. Vælg det Power Apps-miljø, der skal kopieres, og vælg derefter **Kopier**.
 
-7. Når kopieringsprocessen er fuldført, skal du logge på destinationsforekomsten og aktivere Common Data Service-integration. Du kan finde flere oplysninger og instruktioner under [Konfigurere Common Data Service-integration](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. Når kopieringsprocessen er fuldført, skal du logge på destinationsforekomsten og aktivere Dataverse-integration. Du kan finde flere oplysninger og instruktioner under [Konfigurere Dataverse-integration](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Dataelementer og statusser
 
-Følgende dataelementer kopieres ikke, når du kopierer en forekomst af Personale:
+Følgende dataelementer kopieres ikke, når du kopierer en forekomst af Human Resources:
 
 - E-mailadresser i tabellen **LogisticsElectronicAddress**
 
@@ -122,11 +122,11 @@ Alle brugere i destinationens sandkassemiljøet, herunder administratorer, ersta
 
 Alle brugere, der ikke er administratorer i destinationens sandkassemiljø, er deaktiveret for at forhindre uønsket logon i sandkassemiljøet. Administratorer kan genaktivere brugerne, hvis det er nødvendigt.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Anvende brugerdefinerede felter i Common Data Service
+## <a name="apply-custom-fields-to-dataverse"></a>Anvende brugerdefinerede felter i Dataverse
 
-Hvis du kopierer en forekomst til dit sandkassemiljø og vil integrere dit sandkassemiljø med Common Data Service, skal du genanvende brugerdefinerede felter på Common Data Service-objekter.
+Hvis du kopierer en forekomst til dit sandkassemiljø og vil integrere dit sandkassemiljø med Dataverse, skal du genanvende brugerdefinerede felter på Dataverse-tabeller.
 
-Udfør følgende trin for hvert brugerdefineret felt, der vises i Common Data Service-objekter:
+Udfør følgende trin for hvert brugerdefineret felt, der vises i Dataverse-tabeller:
 
 1. Gå til det brugerdefinerede felt, og vælg **Rediger**.
 
@@ -140,7 +140,7 @@ Udfør følgende trin for hvert brugerdefineret felt, der vises i Common Data Se
 
 6. Vælg **Anvend ændringer** igen.
 
-Ved at fravælge, anvende ændringer, vælge igen og genanvende ændringer vil det skema, der opdateres i Common Data Service, indeholde de brugerdefinerede felter.
+Ved at fravælge, anvende ændringer, vælge igen og genanvende ændringer vil det skema, der opdateres i Dataverse, indeholde de brugerdefinerede felter.
 
 Du kan finde flere oplysninger om brugerdefinerede felter under [Oprette og arbejde med brugerdefinerede felter](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
@@ -150,6 +150,3 @@ Du kan finde flere oplysninger om brugerdefinerede felter under [Oprette og arbe
 [Fjern en forekomst](hr-admin-setup-remove-instance.md)</br>
 [Opdater proces](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

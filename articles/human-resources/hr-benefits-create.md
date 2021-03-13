@@ -2,7 +2,7 @@
 title: Opret et nyt frynsegode
 description: Denne opgave viser, hvordan du kan oprette frynsegodeelementer, der skal bruges, når du opretter et nyt frynsegode.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: f9618e62e33655bfc1a0653cb767abe0094d1e79
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2c64bd4eddab0de9db457c6d8d4464303917c438
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417763"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111898"
 ---
 # <a name="create-a-new-benefit"></a>Opret et nyt frynsegode
 
@@ -29,7 +29,7 @@ Denne opgave viser, hvordan du kan oprette frynsegodeelementer, der skal bruges,
 
 
 ## <a name="create-benefit-elements"></a>Oprettet frynsegodeelementer
-1. Gå til Personale > Fordele > Konfiguration > Frynsegodeelementer.
+1. Gå til Human Resources > Fordele > Konfiguration > Frynsegodeelementer.
 2. Klik på Ny.
 3. Skriv navnet på den type frynsegode, du opretter, i feltet Type.
 4. Skriv en værdi i feltet Beskrivelse.
@@ -46,13 +46,10 @@ Denne opgave viser, hvordan du kan oprette frynsegodeelementer, der skal bruges,
 
 ## <a name="create-a-benefit"></a>Oprette et frynsegode
 1. Luk siden.
-2. Gå til Personale > Frynsegoder > Frynsegoder.
+2. Gå til Human Resources > Frynsegoder > Frynsegoder.
 3. Klik på Ny for at åbne dialogboksen Fjern.
 4. Indtast eller vælg en værdi i feltet Plan.
 5. Indtast eller vælg en værdi i feltet Indstilling.
 6. Angiv en dato og et klokkeslæt i feltet Gyldig.
 7. Klik på Opret frynsegode.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

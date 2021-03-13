@@ -2,7 +2,7 @@
 title: Fejlfinding af analyserapporter
 description: I denne artikel beskrives det, hvad du skal gøre, hvis en kundes dataændringer ikke vises i nogen af kundens arbejdsområder.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c5e1a1d7044567a07acedf71e65ed244275acfd9
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417837"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111932"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Fejlfinding af analyserapporter
 
@@ -43,6 +43,3 @@ Dette problem er muligvis kun et spørgsmål om timing. Følg disse trin for at 
 1. Vælg **Rediger** øverst på siden, og indstil den planlagte startdato/-klokkeslæt til en værdi, der opdaterer analysen, så den er tættere på det aktuelle tidspunkt.
 
 ![Batchjob](media/batch-jobs.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

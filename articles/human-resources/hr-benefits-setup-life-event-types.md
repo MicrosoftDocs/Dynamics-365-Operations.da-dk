@@ -2,7 +2,7 @@
 title: Konfigurere livsbegivenhedstyper
 description: Microsoft Dynamics 365 Human Resources bruger livshændelsestyper til at definere hændelser, hvor tilmelding til medarbejderfrynsegoder skal opdateres.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417792"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111954"
 ---
 # <a name="configure-life-event-types"></a>Konfigurere livsbegivenhedstyper
 
@@ -83,11 +83,8 @@ Du kan vælge mellem følgende livshændelser, når du opretter en livshændelse
 | **Medarbejders sygeforsikring** | Arbejder > Arbejder > Versioner > Ansættelseshistorik > Håndtering af datoer > Frynsegodedetaljer | <ul><li>**EhrMedicareEligibilityDate** er ændret</li><li>**MedicareEligibile** er angivet til **Ja**</li></ul> |
 | **Fødselsdag** | Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Fødselsdato | En fødselsdato tilføjes eller opdateres (ikke efter behandling af ændring af livshændelse). Eksempel: Hvis **Indstillinger for berettigelse for personlige kontakter** for et barn er angivet til Alder: 26 i Konfiguration > Frynsegoder > Indstillinger for berettigelse for personlige kontakter, og hvis HR-medarbejdere kører behandling af ændringer af livshændelser en hvilken som helst dag, efter at den afhængige er fyldt 26, vises der en meddelelse med en påmindelse om, at den afhængige ikke længere kan dækkes. |
 | **Ændring af arbejders berettigelse (ikke specifik for USA)** | <ul><li>Arbejder > Ansættelse</li><li>Arbejder > Arbejder > Versioner > Ansættelseshistorik</li></ul> | <ul><li>Medarbejdertype, Ansættelseskategori eller de fem brugerdefinerbare berettigelsesfelter ændres</li><li>**HcmEmploymentDetail. EhrEmploymentType** ændres (behandles kun for *ændrede* ansættelsesposter med oplysninger, ikke for *nye* ansættelsesposter, f.eks. genansættelse og fratrædelse)</li></ul> |
-| **Tilsidesættelse af ny berettigelse (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Bruge behandling af livshændelse | EhrBenefitEligibilityRuleOverride.ValidFrom |
-| **Ændring af tilsidesættelse af berettigelsesregler (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Brug af behandling af livshændelser (kun **Gyldig fra**- og **Gyldig til**-felter under tilsidesættelse af berettigelsesregel) |
-| **Udløb af tilsidesættelse af berettigelsesregler (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Brug behandling af ændring af livshændelse. Hvis du f.eks. redigerer udløbsdatoen for tilsidesættelse af en plans berettigelsesregel til dags dato kl. 17:00, et hvilket som helst tidspunkt efter kl. 17:00 eller de følgende dage og derefter udfører behandling af ændringer af en livshændelse, vises der en meddelelse om, at tilsidesættelse af berettigelsesreglen er udløbet. |
-| **Ny frynsegodeplan (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Planer > Ny | <ul><li>Berettigelsesindstillinger føjes til en aktuel plan</li><li>Der tilføjes en ny plan med tilknyttede berettigelsesindstillinger</li></ul></br></br>Personalemedarbejdere skal køre behandling af berettigelse til livshændelsen i denne forekomst. |
-| **Ændring af berettigelsesregler (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Regler/indstillinger > Berettigelsesregler | Brug behandling af berettigelse til livshændelse. Logføres, når følgende værdier er ændret for **EhrBenefitEligibilityRule**-poster: **UseEmplCategory**, **UseEmplStatus** eller **UseEmplType**. Opdaterer kun livshændelsestransaktioner, der allerede findes for en ændret regel eller kriterier for berettigelse. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+| **Tilsidesættelse af ny berettigelse (ikke specifik for USA)** | Udvidet Human Resources > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Bruge behandling af livshændelse | EhrBenefitEligibilityRuleOverride.ValidFrom |
+| **Ændring af tilsidesættelse af berettigelsesregler (ikke specifik for USA)** | Udvidet Human Resources > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Brug af behandling af livshændelser (kun **Gyldig fra**- og **Gyldig til**-felter under tilsidesættelse af berettigelsesregel) |
+| **Udløb af tilsidesættelse af berettigelsesregler (ikke specifik for USA)** | Udvidet Human Resources > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Brug behandling af ændring af livshændelse. Hvis du f.eks. redigerer udløbsdatoen for tilsidesættelse af en plans berettigelsesregel til dags dato kl. 17:00, et hvilket som helst tidspunkt efter kl. 17:00 eller de følgende dage og derefter udfører behandling af ændringer af en livshændelse, vises der en meddelelse om, at tilsidesættelse af berettigelsesreglen er udløbet. |
+| **Ny frynsegodeplan (ikke specifik for USA)** | Udvidet Human Resources > Frynsegoder > Planer > Ny | <ul><li>Berettigelsesindstillinger føjes til en aktuel plan</li><li>Der tilføjes en ny plan med tilknyttede berettigelsesindstillinger</li></ul></br></br>Human Resourcesmedarbejdere skal køre behandling af berettigelse til livshændelsen i denne forekomst. |
+| **Ændring af berettigelsesregler (ikke specifik for USA)** | Udvidet Human Resources > Frynsegoder > Regler/indstillinger > Berettigelsesregler | Brug behandling af berettigelse til livshændelse. Logføres, når følgende værdier er ændret for **EhrBenefitEligibilityRule**-poster: **UseEmplCategory**, **UseEmplStatus** eller **UseEmplType**. Opdaterer kun livshændelsestransaktioner, der allerede findes for en ændret regel eller kriterier for berettigelse. |

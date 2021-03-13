@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a35abcb8a2f6aa8031c8d84a44c2a8ad93883ac
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: f615584785ba48a140e4e97991a4594047fea8ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669159"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111853"
 ---
 # <a name="recruit-job-candidates"></a>Rekruttere jobkandidater
 
@@ -38,7 +38,7 @@ Dynamics 365 Human Resources hjælper dig med at administrere rekrutteringsanmod
 Hvis du ikke bruger et separat rekrutteringsprogram, kan du også manuelt administrere kandidater i Human Resources.
 
 >[!NOTE]
->Hvis du er administrator eller udvikler og vil integrere Human Resources med et rekrutteringsprogram fra tredjepart, skal du se [Konfigurer Common Data Service-integration](hr-admin-integration-common-data-service.md) og [Konfigurer Common Data Service virtuelle enheder](hr-admin-integration-common-data-service-virtual-entities.md)
+>Hvis du er administrator eller udvikler og vil integrere Human Resources med et rekrutteringsprogram fra tredjepart, skal du se [Konfigurer Dataverse-integration](hr-admin-integration-common-data-service.md) og [Konfigurer Dataverse virtuelle tabeller](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Du kan også finde apps til rekrutteringsintegration på [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
@@ -46,15 +46,13 @@ Hvis du ikke bruger et separat rekrutteringsprogram, kan du også manuelt admini
 
 ## <a name="enable-recruiting-requests"></a>Aktiver rekrutteringsanmodninger
 
-Hvis du vil sende rekrutteringsanmodninger i Human Resources, skal du først aktivere funktionaliteten i **Personaleparametre**.
+Hvis du vil sende rekrutteringsanmodninger i Human Resources, skal du først aktivere funktionaliteten i **Delte Human Resources-parametre**.
 
 1. Vælg **Links** i arbejdsområdet **Personalestyring**.
 
-2. Vælg **Personaleparametre** under **Konfiguration**.
+2. Vælg **Delte parametre for personale** under **Konfiguration**.
 
-3. Under **Rekruttering** under fanen **Generelt** skal du indstille **Aktiver rekrutteringsanmodninger** til **Ja**.
-
-   ![Aktiver rekrutteringsanmodninger](./media/hr-recruit-0-enable-requests.png)
+3. Under fanen **Rekruttering**, under **Rekruttering** skal du indstille **Aktiver rekrutteringsanmodninger** til **Ja**.
 
 ## <a name="add-a-recruiting-request-location"></a>Tilføje en lokation for en rekrutteringsanmodning
 
@@ -224,8 +222,6 @@ Hvis det er nødvendigt, kan du afvise en kandidat efter at have ansat vedkommen
 
 ## <a name="see-also"></a>Se også
 
-[Konfigurere Common Data Service virtuelle enheder](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Konfigurere virtuelle Dataverse-tabeller](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organisere dine medarbejdere](hr-personnel-departments-jobs-positions.md)<br>
 [Konfigurere komponenterne i et job](hr-personnel-jobs.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

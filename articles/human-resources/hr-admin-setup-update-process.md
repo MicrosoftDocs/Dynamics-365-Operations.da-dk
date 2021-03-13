@@ -2,7 +2,7 @@
 title: Opdater proces
 description: Microsoft Dynamics 365 Human Resources er en ægte Software som en service (SaaS), der tilbyder kontinuerlige serviceopdateringer til program- og platformændringer.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d841a026f589d774ec5ada3ac9adcc84dde9aee1
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4bb5f7dc17c8f4f3a54bd285cb55088f2176db4a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527795"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111903"
 ---
 # <a name="update-process"></a>Opdater proces
 
@@ -33,22 +33,22 @@ Microsoft Dynamics 365 Human Resources er en ægte Software som en service (SaaS
 
 ## <a name="update-policy"></a>Opdateringspolitik
 
-Opdateringer udgives regelmæssigt til alle miljøer. Personale understøttes i overensstemmelse med [Livscykluspolitik for Microsoft](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), der giver leverer klare retningslinjer for tilgængeligheden af support.
+Opdateringer udgives regelmæssigt til alle miljøer. Human Resources understøttes i overensstemmelse med [Livscykluspolitik for Microsoft](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), der giver leverer klare retningslinjer for tilgængeligheden af support.
 
 ## <a name="release-cadence"></a>Opdateringstakt af versioner 
 
-Personale-opdateringer anvendes automatisk til alle miljøer. Der frigives to typer versioner af Personale:
+Human Resources-opdateringer anvendes automatisk til alle miljøer. Der frigives to typer versioner af Human Resources:
 
 - **Serviceopdateringer**: Opdateringer foretages hver anden uge og omfatter fejlrettelser og nye funktioner. Serviceopdateringer omfatter også relevante platformsopdateringer, når de frigives. Du kan få en ide om, hvornår der udgives opdateringer af platformen i [Tabel 3: Platformsversioner](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Opdateringer hver anden uge sker i en midlertidigt global udrulning på tværs af områder. Du kan finde flere oplysninger om opdateringer hver anden uge i [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Alle understøttede datacentre opdateres hver anden uge, medmindre andet er angivet. Områderne USA, Australien, Europa, Storbritannien, Asien og Canada medtages i opdateringer hver anden uge. 
 
-- **Common Data Service-løsningsopdateringer**: Disse opdateringer forekommer ca. hver 6. uge efter behov. De omfatter nye enheder og ændringer af eksisterende objekter i Common Data Service. Disse opdateringer frigives til samme regioner som de opdateringer hver anden uge, og de tager ca. seks uger at replikere gennem alle datacentre. Løsningsopdateringer kan muligvis blive justeret efter serviceopdateringer hver anden uge.
+- **Dataverse-løsningsopdateringer**: Disse opdateringer forekommer ca. hver 6. uge efter behov. De omfatter nye enheder og ændringer af eksisterende objekter i Dataverse. Disse opdateringer frigives til samme regioner som de opdateringer hver anden uge, og de tager ca. seks uger at replikere gennem alle datacentre. Løsningsopdateringer kan muligvis blive justeret efter serviceopdateringer hver anden uge.
 
 > [!NOTE]
 > Løsningsopdateringer er tilgængelige i alle datacentre, når de er frigivet. Hvis du ikke vil vente på, at opdateringerne replikeres automatisk, kan du anvende disse opdateringer manuelt i alle miljøer i alle datacentre.
 
-Når det er nødvendigt, leverer Personale også følgende typer rettelser:
+Når det er nødvendigt, leverer Human Resources også følgende typer rettelser:
 
 - **Revision (hotfix)**: Fejlrettelser, der kan forekomme sammen med eller separat i forhold til en serviceopdateringsversion hver anden uge
 
@@ -67,7 +67,7 @@ Den to-ugers frigivelsestakt vil fortsætte som sædvanligt den 11. januar 2021.
 
 ## <a name="communications"></a>Kommunikation
 
-Du kan finde ud af, hvad der planlægges for Personale, og hvad vi har udgivet på følgende placeringer:
+Du kan finde ud af, hvad der planlægges for Human Resources, og hvad vi har udgivet på følgende placeringer:
 
 - [Dynamics 365 Human Resources-oversigt](https://dynamics.microsoft.com/roadmap/human-resources/)
 
@@ -77,9 +77,9 @@ Du kan finde ud af, hvad der planlægges for Personale, og hvad vi har udgivet p
 
 - [Problemsøgning i Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (kun for platformsrelaterede fejl)
 
-- [Personale-blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
+- [Human Resources-blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
-- [Personale Yammer-fællesskab](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
+- [Human Resources Yammer-fællesskab](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Prøveversionsfunktioner i et sandkassemiljø
 
@@ -93,7 +93,7 @@ Når en funktion er generelt tilgængelig, kan den slås til eller fra i produkt
 
 Vi anbefaler, at du får vist funktioner i prøveversioner i et sandkassemiljø. Det er bedst at oprette en kopi af dit aktuelle produktionsmiljø eller database i et sandkassemiljø, så du kan få den fulde erfaring med de nye funktioner sammen med dine data.
 
-Yderligere oplysninger om klargøring af et sandkassemiljø finder du [Klargøre et Personale-projekt](hr-admin-setup-provision.md). Hvis du skal fjerne et testmiljø, kan du se [Fjerne en forekomst](hr-admin-setup-remove-instance.md#remove-a-test-drive-environment). 
+Yderligere oplysninger om klargøring af et sandkassemiljø finder du [Klargøre et Human Resources-projekt](hr-admin-setup-provision.md). Hvis du skal fjerne et testmiljø, kan du se [Fjerne en forekomst](hr-admin-setup-remove-instance.md#remove-a-test-drive-environment). 
 
 ## <a name="report-bugs"></a>Rapportere fejl
 
@@ -102,9 +102,6 @@ Under test af funktioner i prøveversion eller afprøvning af nye funktioner, ka
 ## <a name="see-also"></a>Se også
 
 [Dynamics 365 og Power Platform frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans)</br>
-[Nyheder eller ændringer i Dynamics 365 Personale](hr-admin-whats-new.md)</br>
+[Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md)</br>
 [Livscykluspolitik for software](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

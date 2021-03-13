@@ -2,7 +2,7 @@
 title: Opret en app til tilbagevendende dataeksport
 description: Denne artikel viser, hvordan du opretter en Microsoft Azure-logikapp, der eksporterer data fra Microsoft Dynamics 365 Human Resources i en tilbagevendende tidsplan.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97972d2179c42e9d2d672cbebb75643ef0a02a62
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417846"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111904"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Opret en app til tilbagevendende dataeksport
 
-Denne artikel viser, hvordan du opretter en Microsoft Azure-logikapp, der eksporterer data fra Microsoft Dynamics 365 Human Resources i en tilbagevendende tidsplan. Selvstudiet benytter REST API for DMF-pakke (programmeringsgrænseflade til program) i Personale til at eksportere dataene. Når dataene er eksporteret, gemmer logikappen den eksporterede datapakke i en Microsoft OneDrive for Business-mappe.
+Denne artikel viser, hvordan du opretter en Microsoft Azure-logikapp, der eksporterer data fra Microsoft Dynamics 365 Human Resources i en tilbagevendende tidsplan. Selvstudiet benytter REST API for DMF-pakke (programmeringsgrænseflade til program) i Human Resources til at eksportere dataene. Når dataene er eksporteret, gemmer logikappen den eksporterede datapakke i en Microsoft OneDrive for Business-mappe.
 
 ## <a name="business-scenario"></a>Forretningsscenarie
 
@@ -55,20 +55,20 @@ I dette selvstudium bruges følgende teknologier:
 
 Før du starter øvelsen i dette selvstudium, skal du have følgende elementer:
 
-- Et Personale-miljø med administratorrettigheder i miljøet
+- Et Human Resources-miljø med administratorrettigheder i miljøet
 - Et [Azure-abonnement](https://azure.microsoft.com/free/) som vært for logikappen
 
 ## <a name="the-exercise"></a>Øvelsen
 
-I slutningen af denne øvelse har du en logikapp, der har forbindelse til dit Personale-miljø og din OneDrive for Business-konto. Logikappen eksporterer en datapakke fra Personale; vent til eksporten er fuldført, hent den eksporterede datapakke, og gem datapakken i den OneDrive for Business-mappe, du har angivet.
+I slutningen af denne øvelse har du en logikapp, der har forbindelse til dit Human Resources-miljø og din OneDrive for Business-konto. Logikappen eksporterer en datapakke fra Human Resources; vent til eksporten er fuldført, hent den eksporterede datapakke, og gem datapakken i den OneDrive for Business-mappe, du har angivet.
 
 Den fuldførte logikapp ligner den i følgende illustration.
 
 ![Oversigt over logikapp](media/integration-logic-app-overview.png)
 
-### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Trin 1: Opret et dataeksportprojekt i Personale
+### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Trin 1: Opret et dataeksportprojekt i Human Resources
 
-Opret i Personale et dataeksportprojekt, der eksporterer arbejdere. Navngiv projektet **Eksport af medarbejdere**, og sørg for, at indstillingen **Generér datapakke** er angivet til **Ja**. Føj en enkelt enhed (**Arbejder**) til projektet, og vælg det format, der skal eksporteres i. (Microsoft Excel-formatet bruges i dette selvstudium).
+Opret i Human Resources et dataeksportprojekt, der eksporterer arbejdere. Navngiv projektet **Eksport af medarbejdere**, og sørg for, at indstillingen **Generér datapakke** er angivet til **Ja**. Føj en enkelt enhed (**Arbejder**) til projektet, og vælg det format, der skal eksporteres i. (Microsoft Excel-formatet bruges i dette selvstudium).
 
 ![Dataprojektet Eksport af medarbejdere](media/integration-logic-app-export-workers-project.png)
 
@@ -92,15 +92,15 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
 
     1. Brug handlingen **Kald en HTTP-anmodning** fra HTTP med Azure AD-connector.
 
-        - **URL-adresse til grundlæggende ressourcer:** URL-adressen til dit Personale-miljø (medtag ikke oplysninger om sti/navneområde).
+        - **URL-adresse til grundlæggende ressourcer:** URL-adressen til dit Human Resources-miljø (medtag ikke oplysninger om sti/navneområde).
         - **Azure AD-ressource URI-adresse:** `http://hr.talent.dynamics.com`
 
         > [!NOTE]
-        > Personale-tjenesten har endnu ikke en connector, der viser alle de API'er, der udgør REST API for DMF-pakken, f.eks. **ExportToPackage**. Du skal i stedet kalde API'erne ved at bruge rå HTTPS-anmodninger via HTTP med Azure AD-connector. Denne connector bruger Azure Active Directory (Azure AD) til godkendelse og autorisation til Personale.
+        > Human Resources-tjenesten har endnu ikke en connector, der viser alle de API'er, der udgør REST API for DMF-pakken, f.eks. **ExportToPackage**. Du skal i stedet kalde API'erne ved at bruge rå HTTPS-anmodninger via HTTP med Azure AD-connector. Denne connector bruger Azure Active Directory (Azure AD) til godkendelse og autorisation til Human Resources.
 
         ![HTTP med Azure AD-connector](media/integration-logic-app-http-aad-connector-step.png)
 
-    2. Log på Personale-miljøet via HTTP med Azure AD-connector.
+    2. Log på Human Resources-miljøet via HTTP med Azure AD-connector.
     3. Konfigurer en HTTP **POST**-anmodning for at kalde **ExportToPackage** DMF REST-API'en.
 
         - **Metode:** POST
@@ -202,9 +202,6 @@ I følgende illustration vises det, hvordan Logic Apps Designer ser ud, når all
 
 ## <a name="summary"></a>Resume
 
-I dette selvstudium lærte du, hvordan du kan bruge en logikapp til at eksportere data fra Personale og gemme de eksporterede i en OneDrive for Business-mappe. Du kan ændre trinene i dette selvstudium efter behov, så det passer til dine forretningsbehov.
+I dette selvstudium lærte du, hvordan du kan bruge en logikapp til at eksportere data fra Human Resources og gemme de eksporterede i en OneDrive for Business-mappe. Du kan ændre trinene i dette selvstudium efter behov, så det passer til dine forretningsbehov.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

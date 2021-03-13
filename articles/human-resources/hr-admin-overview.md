@@ -1,8 +1,8 @@
 ---
-title: Oversigt
+title: Administrationsoversigt
 description: Denne administrator vejledning hjælper dig med at konfigurere, administrere og foretage fejlfinding af Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527855"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111988"
 ---
-# <a name="overview"></a>Oversigt
+# <a name="administration-overview"></a>Administrationsoversigt
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -34,14 +34,14 @@ Denne administrator vejledning hjælper dig med at konfigurere, administrere og 
 - [Systemkrav](hr-admin-system-requirements.md)
 
 - Konfigurere og administrere forekomster
-  - [Klargøring af Personale](hr-admin-setup-provision.md)
+  - [Klargøring af Human Resources](hr-admin-setup-provision.md)
   - [Kopiér en forekomst](hr-admin-setup-copy-instance.md)
   - [Fjern en forekomst](hr-admin-setup-remove-instance.md)
   - [Opdater proces](hr-admin-setup-update-process.md)
 
 - Konfigurer dataintegration
   - [Vælg en teknologi til dataintegration](hr-admin-integration-choose-technology.md)
-  - [Konfigurere Common Data Service-integration](hr-admin-integration-common-data-service.md)
+  - [Konfigurere Dataverse-integration](hr-admin-integration-common-data-service.md)
   - [Konfigurere integration med Finance](hr-admin-integration-finance.md)
   - [Konfigurere integration med Dayforce](hr-admin-integration-dayforce.md)
   - [Oprette en app for tilbagevendende dataeksport](hr-admin-integration-recurring-data-export.md)
@@ -93,14 +93,12 @@ Denne administrator vejledning hjælper dig med at konfigurere, administrere og 
   - [Kør kompensationsprocessen](hr-admin-troubleshooting-compensation.md)
   - [Gemme en opgaveguide i LCS](hr-admin-troubleshooting-task-guide.md)
   - [Adgang til privatadresser efter sikkerhedsrolle](hr-admin-troubleshooting-private-addresses.md)
-  - [Personale vises ikke i Dynamics 365-apps](hr-admin-troubleshooting-not-in-apps.md)
+  - [Human Resources vises ikke i Dynamics 365-apps](hr-admin-troubleshooting-not-in-apps.md)
   - [Rapporteringsindstillinger](hr-admin-troubleshooting-reporting.md)
   - [Ofte stillede spørgsmål til integration](hr-admin-troubleshooting-integration.md)
 
 ## <a name="see-also"></a>Se også
 
-- [Nyheder eller ændringer i Personale](hr-admin-whats-new.md)
+- [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)
 - [Udviklervejledning](hr-developer-overview.md)
 - [Brugervejledning](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

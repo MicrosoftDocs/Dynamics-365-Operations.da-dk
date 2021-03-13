@@ -1,8 +1,8 @@
 ---
 title: Konfigurer integration med Dayforce
-description: Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Personale og Dayforce, før du kan behandle en lønkørsel.
+description: Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 044a2d2f632b2c98ce94b6d61c2582a861640b68
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417729"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111920"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurer integration med Dayforce
 
-Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Personale og Dayforce, før du kan behandle en lønkørsel.
+Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
 
-Når du bruger en tjeneste, f.eks. Dayforce, til at fuldføre lønkørsler, skal du aktivere integrationen i Personale. Integrationen kræver bestemte data fra Personale. Du skal derfor kontrollere, at data, der er knyttet til Dayforce, er konfigureret i Personale på en måde, der understøtter integrationen. Integrationen bruger følgende brede kategorier af data.
+Når du bruger en tjeneste, f.eks. Dayforce, til at fuldføre lønkørsler, skal du aktivere integrationen i Human Resources. Integrationen kræver bestemte data fra Human Resources. Du skal derfor kontrollere, at data, der er knyttet til Dayforce, er konfigureret i Human Resources på en måde, der understøtter integrationen. Integrationen bruger følgende brede kategorier af data.
 
-- Personaledata
+- Human Resourcesdata
 - Kompensationsdata
 - Lønoplysninger, f.eks. løncyklusser, betalingsperioder og lønkoder
 - Arbejderdata
@@ -40,9 +40,9 @@ Denne artikel beskriver de trin, du skal udføre for at aktivere integrationen. 
 
 ## <a name="enable-the-integration"></a>Aktivere integrationen.
 
-I Personale skal du aktivere integrationen og angive konfigurationsoplysningerne for at oprette forbindelse til Dayforce. Hvis den finanspostering, der er oprettet, skal importeres til Microsoft Dynamics 365 Finance, skal du også konfigurere en Microsoft Azure-lagerkonto og angive Azure-lagerets forbindelsesstreng i Finance.
+I Human Resources skal du aktivere integrationen og angive konfigurationsoplysningerne for at oprette forbindelse til Dayforce. Hvis den finanspostering, der er oprettet, skal importeres til Microsoft Dynamics 365 Finance, skal du også konfigurere en Microsoft Azure-lagerkonto og angive Azure-lagerets forbindelsesstreng i Finance.
 
-Følg disse trin for at aktivere integrationen i Personale.
+Følg disse trin for at aktivere integrationen i Human Resources.
 
 1. På siden **Systemadministration** skal du vælge **Integrationskonfiguration**.
 2. Angiv det sikre FTP-slutpunkt og den sikre FTP-mappesti.
@@ -68,13 +68,13 @@ Aktivering af lønintegration har to primære effekter:
 
 ## <a name="configure-your-data"></a>Konfigurere dine data 
 
-Hvis du vil behandle løn, skal du konfigurere personaledata i Personale. Du skal angive virksomhedens data, f.eks. job og stillinger, sammen med frynsegoder og kompensationsoplysninger. Disse oplysninger indeholder oplysningerne om ansættelse, løn og fradrag, der kræves for at generere løn for medarbejderen.
+Hvis du vil behandle løn, skal du konfigurere personaledata i Human Resources. Du skal angive virksomhedens data, f.eks. job og stillinger, sammen med frynsegoder og kompensationsoplysninger. Disse oplysninger indeholder oplysningerne om ansættelse, løn og fradrag, der kræves for at generere løn for medarbejderen.
 
-### <a name="human-resource-data"></a>Personaledata
+### <a name="human-resource-data"></a>Human Resourcesdata
 
 #### <a name="benefits"></a>Frynsegoder 
 
-Personale indeholder en række værktøjer til konfiguration og vedligeholdelse af frynsegoder, fradrag og arbejderkompensationsplaner, som en organisation tilbyder eller behandler for sine ansatte.
+Human Resources indeholder en række værktøjer til konfiguration og vedligeholdelse af frynsegoder, fradrag og arbejderkompensationsplaner, som en organisation tilbyder eller behandler for sine ansatte.
 
 Når du opretter frynsegoder, skal du huske på følgende data og konfigurationer, der bruges i Dayforce.
 
@@ -115,7 +115,7 @@ Når du opretter frynsegoder, skal du huske på følgende data og konfiguratione
 
 Dayforce opretter følgende fradrag, der er baseret på den løneffekt, der er defineret på frynsegodeplanen.
 
-| Valg i Personale        | Resultat i Dayforce                            |
+| Valg i Human Resources        | Resultat i Dayforce                            |
 |----------------------------|-----------------------------------------------|
 | Ingen                       | Der oprettes ikke noget fradrag.                      |
 | Kun fradrag             | Der oprettes et medarbejderfradrag.             |
@@ -199,7 +199,7 @@ Følgende oplysninger bruges i Dayforce:
 - Periodens startdato (første lønperiode påkrævet)
 - Standardbetalingsdato (første lønperiode påkrævet)
 
-Oplysningerne er integreret med Dayforce som løngrupper og adskilles af et land eller område for hver løncyklus. Mindst én periode skal genereres før integration. Dayforce genererer løngruppekalendere og betalingsdatoer, der er baseret på startdatoen for den første lønperiode og den standardbetalingsdato, der er angivet i Personale.
+Oplysningerne er integreret med Dayforce som løngrupper og adskilles af et land eller område for hver løncyklus. Mindst én periode skal genereres før integration. Dayforce genererer løngruppekalendere og betalingsdatoer, der er baseret på startdatoen for den første lønperiode og den standardbetalingsdato, der er angivet i Human Resources.
 
 #### <a name="earning-codes"></a>Lønkoder
 
@@ -299,7 +299,7 @@ Detaljeret ansættelseshistorik bruges som vigtige oplysninger til at udlede sta
 
 Vigtige datoer for en medarbejders udledes ved hjælp af følgende oplysninger.
 
-| Personale                | Dayforce                                                                                             |
+| Human Resources                | Dayforce                                                                                             |
 |-----------------------|------------------------------------------------------------------------------------------------------|
 | Den seneste ansættelsesdato | Historikpost for ansættelsesstart for aktuel ikke-afsluttet ansættelse                                 |
 | Fratrædelsesdato      | Historikpost for fratrædelsesdato for aktuel ikke-afsluttet ansættelse                                 |
@@ -338,7 +338,7 @@ Medarbejdere kan angive flere identifikationsnumre af **SSN**-identifikationstyp
 
 Gyldige bankkontooplysninger skal angives for enhver medarbejder, der vælger at blive betalt via bankkontooverførsler.
 
-| Personale                         | Dayforce                                                                                                    |
+| Human Resources                         | Dayforce                                                                                                    |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------|
 | Bankkontonummer (påkrævet) |                                                                                                             |
 | SWIFT-kode (påkrævet)          | Feltet **Bank-id** bruges ved behandling af løn i Mexico.                                                             |
@@ -370,7 +370,7 @@ Hvis du genererer løn for medarbejdere i USA og Canada, skal følgende elemente
 - Bærere skal angives som økonomiske dimensioner og skal være det første element i standardstrengen for økonomisk dimension.
 
 > [!NOTE] 
-> Du kan konfigurere Personale til at kræve, at der angives en afdeling for stillinger. For at gøre dette skal du gå til **Personalets delte stillinger > Stillinger > Kræv afdelinger for stillinger**. Det anbefales, at denne indstilling gennemtvinges i forbindelse med integrationen.
+> Du kan konfigurere Human Resources til at kræve, at der angives en afdeling for stillinger. For at gøre dette skal du gå til **Human Resourcests delte stillinger > Stillinger > Kræv afdelinger for stillinger**. Det anbefales, at denne indstilling gennemtvinges i forbindelse med integrationen.
 
 ### <a name="job-types"></a>Jobtyper
 
@@ -417,7 +417,7 @@ Der kræves følgende årsagskoder og beskrivelser.
 
 Følgende tabel viser, hvordan ægteskabelige statusværdier knyttes til Dayforce.
 
-| Personale                 | Dayforce             |
+| Human Resources                 | Dayforce             |
 |------------------------|----------------------|
 | Gift                | Gift              |
 | Enlig                 | Enlig               |
@@ -433,7 +433,7 @@ Kønsbetegnelse knyttes til Dayforce og oversættes efter behov til de acceptere
 
 Følgende tabel viser, hvordan kønsbetegnelser knyttes til Dayforce.
 
-| Personale       | Dayforce        |
+| Human Resources       | Dayforce        |
 |--------------|-----------------|
 | Mand         | Mand            |
 | Kvinde       | Kvinde          |
@@ -479,7 +479,7 @@ Lønkoder identificerer entydigt alle typer af løn, som arbejderne modtager. Ko
 
 Identifikation af specifikke koder for land eller område, stat og region (kommune) kræver specifikke formater, som Dayforce og udbydere af i landet/ i regionen kan genkende. Selvom formatet for byer er fleksibelt, skal hver by være tilknyttet en tilstand.
 
-| Personale          | Dayforce              |
+| Human Resources          | Dayforce              |
 |-----------------|-----------------------|
 | Land/område  | Landekode          |
 | Postnummer | Postnummer           |
@@ -567,7 +567,7 @@ Følgende begreber for beskæftigelse og beskrivelser er påkrævet.
 
 Følgende tabel viser, hvordan ægteskabelige statusværdier knyttes til Dayforce.
 
-| Personale                 | Dayforce                  |
+| Human Resources                 | Dayforce                  |
 |------------------------|---------------------------|
 | Gift                | Gift                   |
 | Enlig                 | Enlig                    |
@@ -583,7 +583,7 @@ Kønsbetegnelse knyttes til Dayforce og oversættes efter behov til de acceptere
 
 Følgende tabel viser, hvordan kønsbetegnelser knyttes til Dayforce.
 
-| Personale       | Dayforce                  |
+| Human Resources       | Dayforce                  |
 |--------------|---------------------------|
 | Mand         | Mand                      |
 | Kvinde       | Kvinde                    |
@@ -595,7 +595,7 @@ Betalingsmetoder giver medarbejderen og virksomheden en måde til at beskrive, h
 
 Følgende tabel viser, hvordan betalingsmetoder knyttes til Dayforce.
 
-| Personale             | Dayforce                  |
+| Human Resources             | Dayforce                  |
 |--------------------|---------------------------|
 | Indløsning               | Indløsning                      |
 | Elektronisk betaling | Ompostering                  |
@@ -607,7 +607,7 @@ Følgende tabel viser, hvordan betalingsmetoder knyttes til Dayforce.
 
 Bankkontotyper bruges til elektroniske betalinger til medarbejdere. Bankkontotyper knyttes til Dayforce som overførselskontooplysninger. Bankkontotyperne oversættes efter behov til de accepterede værdier ved integration.
 
-| Personale            | Dayforce                  |
+| Human Resources            | Dayforce                  |
 |-------------------|---------------------------|
 | Checkkonto  | CheckingAccount           |
 | Lønkonto   | PayrollAccount            |
@@ -655,7 +655,7 @@ Lønkoder identificerer entydigt alle typer af løn, som arbejderne modtager. Ko
 
 Identifikation af specifikke koder for land eller område, stat og region (kommune) kræver specifikke formater, som Dayforce og udbydere af i landet/ i regionen kan genkende. Selvom formatet for byer er fleksibelt, skal hver by være tilknyttet en tilstand.
 
-| Personale              | Dayforce              |
+| Human Resources              | Dayforce              |
 |---------------------|-----------------------|
 | Land/område      | Landekode          |
 | Postnummer     | Postnummer           |
@@ -676,6 +676,3 @@ Medarbejdere kan erklære pasoplysninger. Disse oplysninger er af identifikation
 
 Medarbejdere kan angive flere identifikationsnumre af **Pas**-identifikationstypen. Men det er kun den aktuelle aktive paspost, der integreres i Dayforce. Hvis alle pasposter er udløbet, integreres det pas, der senest blev udstedt, i Dayforce.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

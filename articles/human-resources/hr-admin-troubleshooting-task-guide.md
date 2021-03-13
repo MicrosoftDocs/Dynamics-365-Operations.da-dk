@@ -2,7 +2,7 @@
 title: Gem opgaveguider for LCS, og afspil dem
 description: I denne artikel beskrives det, hvordan du kan gemme opgaveguider til Microsoft Dynamics Lifecycle Services (LCS) og derefter afspille dem igen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c81c345932e0e3dce4b13104222ed9f668a3c460
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417813"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111994"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Gem opgaveguider for LCS, og afspil dem
 
@@ -43,7 +43,7 @@ Følg disse trin for at gemme en opgaveregistrering til LCS.
 3. Få vist siden i "Opdateret BPM-oplevelse".
 4. Vælg et bibliotek, og vælg derefter **Kopier**.
 5. Angiv et navn til forretningsmodeldesigneren (BPM).
-6. Log på Personale fra LCS.
+6. Log på Human Resources fra LCS.
 7. Skriv **hjælp** i feltet **Søg**. Hjælp til Lifecycle Services åbnes.
 8. Vælg knappen **Opdater** til konfiguration af Lifecycle Services Hjælp.
 
@@ -63,6 +63,3 @@ Følg disse trin for at afspille en opgaveguide fra LCS.
 2. Vælg **Åbn fra LCS**.
 3. Vælg biblioteket og den BPM-node, der har den gemte opgaveguide.
 4. Åbn opgaveguiden.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

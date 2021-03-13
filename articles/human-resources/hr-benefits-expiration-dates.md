@@ -2,7 +2,7 @@
 title: Administrere frynsegoders udløbsdatoer
 description: Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet eller forlænget og administrere tilmeldingsdatoerne for arbejdere, der er tilmeldt frynsegodet.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 7332a95e1cd558336dc19bcb269ef89ce3721aa9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6e4eb882f564e2b74ae15cd54fcda6e5370b07d4
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417730"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111917"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Administrere frynsegoders udløbsdatoer
 
@@ -29,7 +29,7 @@ Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet ell
 
 ## <a name="benefit-expiration-dates"></a>Frynsegodeudløbsdatoer
 
-1. Gå til Personale > Frynsegoder > Frynsegoder.
+1. Gå til Human Resources > Frynsegoder > Frynsegoder.
 2. Udvid faktaboksen Tilmeldte arbejdere.
 3. Find og vælg den ønskede post på listen.
 4. Klik på fanen Frynsegode i handlingsruden.
@@ -46,6 +46,3 @@ Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet ell
 15. Klik på Frynsegoder.
 16. Find frynsegodet og vælg posten på listen. Bemærk den nye disponeringsslutdato.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

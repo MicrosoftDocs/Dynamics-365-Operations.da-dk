@@ -2,7 +2,7 @@
 title: Oprette disponeringsindstillinger
 description: Dækningsindstillinger i Microsoft Dynamics 365 Human Resources er niveauer for en deltagers valg i en frynsegodeplan eller et program.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8690dbe00c2316ccf745f5222c3cbaa9c3379f85
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: be263dbbec61f3fa9d169c1b9faa6be741adca33
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417852"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111916"
 ---
 # <a name="create-coverage-options"></a>Oprette disponeringsindstillinger
 
@@ -59,6 +59,3 @@ Når du har defineret dækningsindstillingerne, skal du knytte dækningsindstill
    | **Tillad medarbejderdækningsbeløb** | Angiver, om medarbejdere skal kunne redigere disponeringsbeløbet via selvbetjening for frynsegoder, når de vælger frynsegoder. Hvis du markerer dette afkrydsningsfelt, beregner systemet parametre for frynsegodeplanen baseret på det disponeringsbeløb, som medarbejderen indtaster i selvbetjeningstjenesten for medarbejdere. |
 
 6. Vælg **Gem**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

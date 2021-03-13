@@ -2,7 +2,7 @@
 title: Definere kompensationsproces og beregne resultater
 description: Kompensationsprocesser bruges til at fastlægge nye kompensationsbeløb og bonusser for medarbejdere, der er tilmeldt faste og variable kompensationsstrukturer.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 254eb4f83cc734e43920b912e81c7a9230ca82dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e4f49d9167e6d96500c7dbf5c1a25e04796b33a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417833"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111892"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definere kompensationsproces og beregne resultater
 
@@ -29,7 +29,7 @@ Kompensationsprocesser bruges til at fastlægge nye kompensationsbeløb og bonus
 
 
 ## <a name="create-a-compensation-process"></a>Oprette en kompensationsproces
-1. Gå til Personale > Kompensation > Proces > Kompensationsprocesser.
+1. Gå til Human Resources > Kompensation > Proces > Kompensationsprocesser.
 2. Klik på Ny.
 3. Skriv en værdi i feltet Proces.
 4. Skriv en værdi i feltet Beskrivelse.
@@ -100,6 +100,3 @@ Kompensationsprocesser bruges til at fastlægge nye kompensationsbeløb og bonus
 10. Klik på Godkendt.
     * Når posten er blevet godkendt, kan den indlæses i medarbejderens officielle kompensationspost. Den nye kompensation træder i kraft på den posteringsdato, der blev angivet i kompensationsprocessen.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

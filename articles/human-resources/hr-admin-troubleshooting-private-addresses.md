@@ -2,7 +2,7 @@
 title: Adgang til privatadresser efter sikkerhedsrolle
 description: I denne artikel beskrives det, hvordan du løser problemet, når en kunde ikke kan få adgang til private adresser.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2018
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fbe0e8acc1b879e4d7982b33413236432f25f630
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6598094e7877a30c35e1b03794f82c8a4ec001a7
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417782"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111901"
 ---
 # <a name="access-to-private-addresses-by-security-role"></a>Adgang til private adresser efter sikkerhedsrolle
 
@@ -39,6 +39,3 @@ For at problemet kan løses, skal kunden følge disse trin for den kopierede sik
 3. Vælg **Gem**.
 
 ![Siden Parametre for globalt adressekartotek](media/GAD-parameters.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

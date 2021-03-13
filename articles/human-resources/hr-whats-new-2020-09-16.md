@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3bb6b809560688a7849b60c15a01fd89038e843
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 74a87ddb4ed14042dd4e716ad64bc844a800a0a0
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527428"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111989"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (16. september 2020)
 
@@ -110,13 +110,13 @@ Denne frigivelse indeholder yderligere kalenderindstillinger for orlovs- og frav
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Kontrollisteenheder inkluderet i Common Data Service
+### <a name="checklist-entities-included-in-dataverse"></a>Kontrollisteenheder inkluderet i Dataverse
 
-Der vil snart være tilgængelige kontrollisteenheder til processer til onboarding, offboarding, overførsler og forretning i Common Data Service.
+Der vil snart være tilgængelige kontrollisteenheder til processer til onboarding, offboarding, overførsler og forretning i Dataverse.
 
 ### <a name="benefits-management-reason-codes"></a>Årsagskoder for administration af frynsegoder
 
-Årsagskoder for administration af frynsegoder vil snart blive kombineret med eksisterende årsagskoder i Personale. Hvis du har oprettet årsagskoder i Frynsegodeadministration på mere end 15 tegn, skal du ændre navnet på årsagskoden i formen **Årsagskoder** for Frynsegodeadministration til højst 15 tegn. Når du har opdateret navnet, vises årsagskoden under den eksisterende formular til årsagskode i Personalestyring. Denne ændring vil være tilgængelig i fremtiden og vil ikke påvirke den eksisterende funktion.
+Årsagskoder for administration af frynsegoder vil snart blive kombineret med eksisterende årsagskoder i Human Resources. Hvis du har oprettet årsagskoder i Frynsegodeadministration på mere end 15 tegn, skal du ændre navnet på årsagskoden i formen **Årsagskoder** for Frynsegodeadministration til højst 15 tegn. Når du har opdateret navnet, vises årsagskoden under den eksisterende formular til årsagskode i Personalestyring. Denne ændring vil være tilgængelig i fremtiden og vil ikke påvirke den eksisterende funktion.
 
 ## <a name="see-also"></a>Se også
 
@@ -124,6 +124,3 @@ Der vil snart være tilgængelige kontrollisteenheder til processer til onboardi
 [Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

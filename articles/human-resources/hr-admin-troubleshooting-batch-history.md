@@ -2,7 +2,7 @@
 title: Optimere ydeevnen med automatiske oprydningsopgaver
 description: Denne artikel forklarer, hvordan du kan løse problemer med ydeevnen af Microsoft Dynamics 365 Human Resources ved at rydde historikken for batchjob.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a983fde8ba393ab25f2b330014e04a1379f0e4d0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97f6e310d3a69c870fe8ef03bd7a10cc7ab652e5
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417752"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111931"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimere ydeevnen med automatiske oprydningsopgaver
 
@@ -38,7 +38,7 @@ Batchjob, der kører ofte, kan føre til en ikke-bæredygtig forøgelse af histo
 
 Planlæg en automatisk opgave for at rydde op i historikken for batchjob. Vi anbefaler, at du konfigurerer opgaven til at køre ugentligt, men du kan blive nødt til at køre oprydningen mere eller mindre hyppigt, afhængigt af miljøet. Følgende procedure indeholder vores anbefalede indstillinger, men du kan ændre dem efter behov.
 
-1. I Personale skal du vælge **Systemadministration**.
+1. I Human Resources skal du vælge **Systemadministration**.
 
 2. På linjen **Søg** skal du indtaste **Oprydning i batchjobhistorik**.
 
@@ -64,6 +64,3 @@ Planlæg en automatisk opgave for at rydde op i historikken for batchjob. Vi anb
 
 8. Rediger andre parametre under **Kør i baggrunden** efter behov, og vælg derefter **OK**.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

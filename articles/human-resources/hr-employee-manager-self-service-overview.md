@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
-ms.sourcegitcommit: 1fdca917e01470fbd5d3051adb85fd63e8624b47
+ms.openlocfilehash: f1aadd17b35992af1e79750427fae62e9bd4ff7a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4417886"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111906"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Oversigt over selvbetjening for medarbejdere og ledere
 
@@ -102,7 +102,7 @@ Du kan se jobdetaljer under **Organisation**. Jobdetaljer omfatter færdigheder,
 
 Under **Spørgeskema** kan du se udfyldte spørgeskemaer. Du kan også se spørgeskemaer, der ikke er udfyldt, for hele firmaet. Du kan vælge at udfylde et spørgeskema på et hvilket som helst tidspunkt. Forfatteren af spørgeskemaet kan bestemme tidsrammen, og hvem spørgeskemaet gælder for.
 
-Du kan konfigurere brugerdefinerede links i **Personaleparametre**. Du kan f.eks. definere links til lønopgørelser, årsafslutningsdokumentation eller eksterne løsninger. Disse links vises nederst i denne sektion, men du kan flytte dem ved hjælp af tilpasning.
+Du kan konfigurere brugerdefinerede links i **Human Resourcesparametre**. Du kan f.eks. definere links til lønopgørelser, årsafslutningsdokumentation eller eksterne løsninger. Disse links vises nederst i denne sektion, men du kan flytte dem ved hjælp af tilpasning.
 
 Du kan også oprette yderligere faner ved at integrere Power Apps i arbejdsområdet Medarbejderselvbetjening. Brug menuen **Indstillinger** til at tilpasse siden med en hvilken som helst Power Apps. I menuen **Indstillinger** kan du vælge at tilføje en Power App, angive detaljerne og indsætte appen. Power Apps vises som standard som den første fane i rækkefølgen. Du kan ændre rækkefølgen ved hjælp af standardtilpasning.
 
@@ -110,9 +110,9 @@ Du kan også oprette yderligere faner ved at integrere Power Apps i arbejdsområ
 
 Fanen **Mit team** indeholder følgende oplysninger for Chefselvbetjening. Kun ledere har adgang til fanen **Mit team**.
 
-### <a name="personnel-actions"></a>Personalehandlinger
+### <a name="personnel-actions"></a>Human Resourceshandlinger
 
-Personalehandlinger vises på basis af konfigurationsindstillinger i **Delte parametre for personale** og **Personaleparametre**. Når personalehandlinger er aktiveret for **Arbejdere**, aktiveres nye menuindstillinger, herunder:
+Human Resourceshandlinger vises på basis af konfigurationsindstillinger i **Delte parametre for personale** og **Human Resourcesparametre**. Når personalehandlinger er aktiveret for **Arbejdere**, aktiveres nye menuindstillinger, herunder:
 
 - **Anmod om ny medarbejder**
 - **Anmod om ny kontrahent**
@@ -131,7 +131,7 @@ Du kan også konfigurere disse indstillinger, så der udføres en valgfri gennem
 
 ### <a name="summary"></a>Resumé
 
-Oplysningerne i sektionen **Resume** afhænger af de indstillinger, der er valgt i **Personaleparametre**. Under fanen **Chefselvbetjening** på siden **Personaleparametre** kan du konfigurere indstillinger for visning af poster, der er ved at udløbe, og åbne stillinger. Aktivering af disse indstillinger bestemmer, hvad ledere kan se i sektionen **Resume**.
+Oplysningerne i sektionen **Resume** afhænger af de indstillinger, der er valgt i **Human Resourcesparametre**. Under fanen **Chefselvbetjening** på siden **Human Resourcesparametre** kan du konfigurere indstillinger for visning af poster, der er ved at udløbe, og åbne stillinger. Aktivering af disse indstillinger bestemmer, hvad ledere kan se i sektionen **Resume**.
 
 Du kan konfigurere følgende felter for ledere:
 
@@ -214,5 +214,3 @@ Ledere kan se alle mål for deres team via feltet **Mål for teamperformance** i
 Fanen **Evalueringer** opsummerer de vurderinger, medarbejderen har i de enkelte tilstande: **I gang**, **Klar til evaluering** og **Slutevaluering**. Hvis du vil have adgang til en medarbejders evaluering, skal du vælge knappen **Detaljer** og derefter vælge evalueringer, der kan samarbejdes om. Afhængigt af, hvor en evaluering er i arbejdsgangsprocessen, kan du se, om evalueringen er tilgængelig for opdatering. 
 
 Du kan se alle evalueringer for dit team via feltet **Evalueringer af teamperformance** i sektionen **Resume** i **Mit team**.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Konfigurer integration med Finance
 description: I denne artikel beskrives de funktioner, der kan bruges i integration mellem Dynamics 365 Human Resources og Dynamics 365 Finance.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 6587b2ced1fdd7a16c6b3f28a34d4a303af9cee5
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527904"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111942"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurere integration med Finance
 
@@ -31,20 +31,20 @@ ms.locfileid: "4527904"
 
 Hvis du vil integrere Dynamics 365 Human Resources med Dynamics 365 Finance, kan du bruge skabelonen Human Resources til Finance i [Dataintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator). Skabelonen Human Resources til Finance aktiverer dataflow for job, stillinger og arbejdere. Skabelonen gør det muligt at overføre data fra Human Resources til Finance, men tillader ikke, at data overføres fra Finance til Human Resources.
 
-![Integrationsflow fra Personale til Finance](./media/hr-admin-integration-finance-flow.png)
+![Integrationsflow fra Human Resources til Finance](./media/hr-admin-integration-finance-flow.png)
 
 Human Resources til Finance-løsningen giver følgende typer datasynkronisering:
 
-- Vedligehold job i Personale, og synkroniser dem fra Human Resources til Finance
-- Vedligehold stillinger og stillingstildelinger i Personale, og synkroniser dem fra Human Resources til Finance
-- Vedligehold ansættelser i Personale, og synkroniser dem fra Human Resources til Finance
-- Vedligehold arbejdere og arbejderadresser i Personale, og synkroniser dem fra Human Resources til Finance
+- Vedligehold job i Human Resources, og synkroniser dem fra Human Resources til Finance
+- Vedligehold stillinger og stillingstildelinger i Human Resources, og synkroniser dem fra Human Resources til Finance
+- Vedligehold ansættelser i Human Resources, og synkroniser dem fra Human Resources til Finance
+- Vedligehold arbejdere og arbejderadresser i Human Resources, og synkroniser dem fra Human Resources til Finance
 
-## <a name="system-requirements-for-human-resources"></a>Systemkrav til Personale
+## <a name="system-requirements-for-human-resources"></a>Systemkrav til Human Resources
 
-Integrationsløsningen kræver følgende versioner af Personale og Finance: 
+Integrationsløsningen kræver følgende versioner af Human Resources og Finance: 
 
-- Dynamics 365 Human Resources på Common Data Service
+- Dynamics 365 Human Resources på Dataverse
 - Dynamics 365 Finance version 7.2 og nyere
 
 ## <a name="template-and-tasks"></a>Skabelon og opgaver
@@ -55,7 +55,7 @@ Sådan åbnes skabelonen Human Resources til Finance.
 
 2. Vælg **Projekter**, og vælg derefter **Nyt projekt** i øverste højre hjørne. Opret et nyt projekt for hver juridisk enhed, som du vil integrere i Finance.
 
-3. Vælg **Personale (Common Data Service for Human Resources til Finance)** for at synkronisere poster fra Human Resources til Finance.
+3. Vælg **Human Resources (Dataverse for Human Resources til Finance)** for at synkronisere poster fra Human Resources til Finance.
 
 Skabelonen bruger følgende underliggende opgaver til at synkronisere poster fra Human Resources til Finance:
 
@@ -77,18 +77,18 @@ Skabelonen bruger følgende underliggende opgaver til at synkronisere poster fra
 
 ## <a name="template-mappings"></a>Tilknytninger af skabelon
 
-I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enheder, der bruges i de enkelte programmer. Kilden (Personale) er i venstre side, og destinationen (Finance) er til højre.
+I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enheder, der bruges i de enkelte programmer. Kilden (Human Resources) er i venstre side, og destinationen (Finance) er til højre.
 
 ### <a name="job-functions-to-compensation-job-function"></a>Jobfunktioner til Kompensation – jobfunktion
 
-| Common Data Service-enhed (kilde) | Enheden Finance (destination) |
+| Dataverse-tabel (kilde) | Enheden Finance (destination) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job  funktionsnavn)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | BESKRIVELSE   (BESKRIVELSE)                 |
 
 ### <a name="departments-to-operating-unit"></a>Afdelinger til driftsenhed
 
-| Common Data Service-enhed (kilde)           | Enheden Finance (destination) |
+| Dataverse-tabel (kilde)           | Enheden Finance (destination) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAVN (NAVN)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -97,7 +97,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="job-types-to-compensation-job-type"></a>Jobtyper til Kompensation – jobtype
 
-| Common Data Service-enhed (kilde)   | Enheden Finance (destination) |
+| Dataverse-tabel (kilde)   | Enheden Finance (destination) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | BESKRIVELSE   (BESKRIVELSE)                 |
@@ -105,7 +105,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="jobs-to-jobs"></a>Job til job
 
-| Common Data Service-enhed (kilde)                           | Enheden Finance (destination)           |
+| Dataverse-tabel (kilde)                           | Enheden Finance (destination)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -115,7 +115,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="jobs-to-job-detail"></a>Job til Stillingsdetaljer
 
-| Common Data Service-enhed (kilde)                             | Enheden Finance (destination) |
+| Dataverse-tabel (kilde)                             | Enheden Finance (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Jobtype (Jobtypenavn))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -126,7 +126,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="position-types-to-position-type"></a>Stillingstyper til stillingstype
 
-| Common Data Service-enhed (kilde)       | Enheden Finance (destination) |
+| Dataverse-tabel (kilde)       | Enheden Finance (destination) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | BESKRIVELSE   (BESKRIVELSE)                 |
@@ -134,13 +134,13 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="job-positions-to-base-position"></a>Jobstillinger til basisstilling
 
-| Common Data Service-enhed (kilde)           | Enheden Finance (destination) |
+| Dataverse-tabel (kilde)           | Enheden Finance (destination) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Stillingsnummer) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Jobstillinger til stillingsoplysninger
 
-| Common Data Service-enhed (kilde)              | Enheden Finance (destination)       |
+| Dataverse-tabel (kilde)              | Enheden Finance (destination)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Stillingsnummer)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Job (Navn))                                        | JOBID (JOBID)                                    |
@@ -154,7 +154,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="job-positions-to-position-durations"></a>Jobstillinger til Stillingsvarighed
 
-| Common Data Service-enhed (kilde)             | Enheden Finance (destination) |
+| Dataverse-tabel (kilde)             | Enheden Finance (destination) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Stillingsnummer)   | POSITIONID (POSITIONID)                      |
 | Beregnet   Aktivering (Beregnet aktivering) | VALIDFROM (VALIDFROM)                        |
@@ -162,7 +162,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="job-positions-to-position-hierarchies"></a>Jobstillinger til Stillingshierarkier
 
-| Common Data Service-enhed (kilde)        | Enheden Finance (destination) |
+| Dataverse-tabel (kilde)        | Enheden Finance (destination) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Stillingsnummer)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -172,7 +172,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 
 ### <a name="workers-to-worker"></a>Arbejdere til arbejder
-| Common Data Service-enhed (kilde)           | Enheden Finance (destination)       |
+| Dataverse-tabel (kilde)           | Enheden Finance (destination)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | FØDSELSDATO   (FØDSELSDATO)                           |
 | cdm_gender   (cdm_gender)                     | KØN (KØN)                                   |
@@ -191,7 +191,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="employments-to-employment"></a>Ansættelser til ansættelse
 
-| Common Data Service-enhed (kilde)                             | Enheden Finance (destination) |
+| Dataverse-tabel (kilde)                             | Enheden Finance (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -201,7 +201,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="employments-to-employment-detail"></a>Ansættelser til ansættelsesoplysninger
 
-| Common Data Service-enhed (kilde)                             | Enheden Finance (destination)   |
+| Dataverse-tabel (kilde)                             | Enheden Finance (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -219,7 +219,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Arbejdertildeling til medarbejderopgaver for stilling
 
-| Common Data Service-enhed (kilde)                             | Enheden Finance (destination)   |
+| Dataverse-tabel (kilde)                             | Enheden Finance (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (Stillingsnummer)                   | POSITIONID(POSITIONID)                        |
@@ -228,7 +228,7 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Arbejderadresser til arbejderens postadresse V2
 
-| Common Data Service-enhed (kilde)                             | Enheden Finance (destination)   |
+| Dataverse-tabel (kilde)                             | Enheden Finance (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -244,16 +244,14 @@ I følgende tabeller med skabelontilknytninger indeholder opgavenavnet de enhede
 
 ## <a name="integration-considerations"></a>Integrationsovervejelser
 
-Ved integration fra Human Resources til Finance vil integrationen forsøge at sammenligne poster baseret på id'et. Hvis posterne stemmer overens, overskrive Dataintegrator dataene i Finance med værdierne i Personale. Der kan dog opstå et problem, hvis disse logisk er forskellige poster, og det samme id blev oprettet i enten Personale eller Finance baseret på den pågældende nummerserie.
+Ved integration fra Human Resources til Finance vil integrationen forsøge at sammenligne poster baseret på id'et. Hvis posterne stemmer overens, overskrive Dataintegrator dataene i Finance med værdierne i Human Resources. Der kan dog opstå et problem, hvis disse logisk er forskellige poster, og det samme id blev oprettet i enten Human Resources eller Finance baseret på den pågældende nummerserie.
 
-Dette problem kan opstå for **Arbejder**, som bruger **Personale-nummeret** til at foretage sammenligningen, og **Stillinger**. Der bruges ikke nummerserier til job. Det betyder, at hvis det samme job-id findes i både Personale og Finance, overskriver Personale-oplysningerne oplysningerne i Dynamics 365 Finance. 
+Dette problem kan opstå for **Arbejder**, som bruger **Personalenummeret** til at foretage sammenligningen, og **Stillinger**. Der bruges ikke nummerserier til job. Det betyder, at hvis det samme job-id findes i både Human Resources og Finance, overskriver Human Resources-oplysningerne oplysningerne i Dynamics 365 Finance. 
 
 Hvis du vil undgå problemer med identiske id'er, kan du enten føje et præfiks til [nummerserien](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) eller angive et startnummer på nummerserien, der ligger ud over området for det andet system. 
 
-Det lokations-id, der bruges til en arbejderadresse, er ikke del af en nummerserie. Når en arbejders adresse integreres fra Personale til Finance, kan der blive oprettet en dublet af adresseposten, hvis arbejderadressen allerede findes i Finance. 
+Det lokations-id, der bruges til en arbejderadresse, er ikke del af en nummerserie. Når en arbejders adresse integreres fra Human Resources til Finance, kan der blive oprettet en dublet af adresseposten, hvis arbejderadressen allerede findes i Finance. 
 
 Følgende illustration viser et eksempel på en skabelontilknytning i Dataintegrator. 
 
 ![Tilknytning af skabelon](./media/IntegrationMapping.png)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

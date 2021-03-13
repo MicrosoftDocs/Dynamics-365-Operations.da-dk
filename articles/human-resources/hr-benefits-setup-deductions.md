@@ -2,7 +2,7 @@
 title: Konfigurere fradrag
 description: Du kan bruge fradrag i Microsoft Dynamics 365 Human Resources til at afgøre, hvor meget der eventuelt skal trækkes fra en medarbejders løn for hvert enkelt frynsegode.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c59fa09e83ca91e0ad866e5875ff06370b7491d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c84e44e784e18c82098d63909f198049ae5f995c
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417723"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111927"
 ---
 # <a name="configure-deductions"></a>Konfigurere fradrag
 
@@ -52,6 +52,3 @@ Du kan bruge fradrag i Microsoft Dynamics 365 Human Resources til at afgøre, hv
 4. Hvis du vil spore og vedligeholde ændringer af opsætningen af frynsegodesatsen, skal du vælge **Handlinger** og derefter vælge **Vedligehold versioner**.
 
 5. Vælg **Gem**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Tilmelde og fjerne frynsegoder fra arbejdere
 description: Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller flere frynsegoder, og hvordan flere arbejdere kan være tilmeldt et frynsegode.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 36fd724ff27cbb646f3f8a35ca1b30dc86a5afe4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 13e32c9bc77470d6b8e157e7a7805d3d72850478
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417724"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111894"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Tilmelde og fjerne frynsegoder fra arbejdere
 
@@ -31,7 +31,7 @@ Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller
 
 
 ## <a name="enroll-a-single-worker-in-benefits"></a>Tilmelde en enkelt arbejder til frynsegoder
-1. Gå til Personale > Arbejdere > Medarbejdere
+1. Gå til Human Resources > Arbejdere > Medarbejdere
 2. Find og vælg den ønskede post på listen.
 3. Klik på Frynsegoder.
 4. Klik på Ny.
@@ -43,7 +43,7 @@ Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller
 
 ## <a name="enroll-multiple-workers-in-a-benefit"></a>Tilmelde flere arbejdere til et frynsegode
 1. Luk siden.
-2. Gå til Personale > Arbejdere > Medarbejdere
+2. Gå til Human Resources > Arbejdere > Medarbejdere
 3. Markér den valgte række på listen.
 4. Find og vælg den ønskede post på listen.
 5. Find og vælg den ønskede post på listen.
@@ -53,11 +53,8 @@ Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller
 9. Angiv en dato og et klokkeslæt i feltet Gyldigheds slutdato.
 10. Klik på Tilmeld.
 11. Luk siden.
-12. Gå til Personale > Frynsegoder > Tilmelding > Resultater af tilmelding til frynsegoder
+12. Gå til Human Resources > Frynsegoder > Tilmelding > Resultater af tilmelding til frynsegoder
 13. Find den post med frynsegoderesultater, du søger efter.
 14. Klik op linket i den valgte række på listen.
 15. På denne side kan du få vist de medarbejdere, som er tilmeldt frynsegodet, samt alle medarbejdere, der ikke er tilmeldt.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

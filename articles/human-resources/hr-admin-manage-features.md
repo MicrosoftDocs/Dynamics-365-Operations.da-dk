@@ -1,8 +1,8 @@
 ---
-title: Administrere funktioner
+title: Administrere funktioner i Human Resources
 description: Få mere at vide om, hvordan du slår nye funktioner til eller fra i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d400604bf1b044de52457b3f7a6eb858220a1972
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417845"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111978"
 ---
-# <a name="manage-features"></a>Administrere funktioner
+# <a name="manage-features-in-human-resources"></a>Administrere funktioner i Human Resources
 
 Som en del af vores fortløbende implementering af nye funktioner til Microsoft Dynamics 365 Human Resources, vil vi give kunderne mulighed for at udnytte nye funktioner, så hurtigt som muligt. Vi leverer prøveversionsfunktioner, som næsten er generelt tilgængelige og har gennemgået omfattende test. Vi mangler kun en sidste runde af kundefeedback og validering, før vi gør dem almindeligt tilgængelige.
 
-Yderligere oplysninger om nye funktioner i Personale finder du i [Nyheder i Personale](hr-admin-whats-new.md) og [Dynamics 365 og Power Platform Frigivelsesplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+Yderligere oplysninger om nye funktioner i Human Resources finder du i [Nyheder i Human Resources](hr-admin-whats-new.md) og [Dynamics 365 og Power Platform Frigivelsesplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
 
 Arbejdsområdet **Administration af funktioner** indeholder en oversigt over de funktioner, der er leveret i hver udgave. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet til at aktivere dem og få vist dokumentationen til dem. Du kan finde flere oplysninger om Administration af funktioner under [Oversigt over funktionsstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
@@ -42,9 +42,9 @@ Når en funktion er generelt tilgængelig, kan den slås til eller fra i produkt
 Hvis du vil have adgang til visningsfunktionerne, skal du først aktivere dem i dit miljø. Aktivering eller deaktivering af funktioner til visning er specifik for miljøet.
 
 > [!IMPORTANT]
-> Prøveversionsfunktioner er kun tilgængelige i **Sandkasse**-miljøer. Når du slår en prøveversionsfunktion til, aktiverer du den for alle brugere i organisationen, der arbejder i det pågældende miljø. Når du slår prøveversionsfunktionen fra, deaktiverer du den og gør den utilgængelig for brugerne. Visningsfunktioner understøttes kun i begrænset omfang i Personal. Der er en mindre grad af beskyttelse af personlige oplysninger og færre sikkerhedsfunktioner, og de medtages ikke i Personale-serviceniveauaftalen (SLA). Du bør ikke bruge visningsfunktioner til behandling af personoplysninger (dvs. alle oplysninger, der kan identificere dig) eller til at behandle andre data, der er omfattet af lovbestemte overholdelseskrav.
+> Prøveversionsfunktioner er kun tilgængelige i **Sandkasse**-miljøer. Når du slår en prøveversionsfunktion til, aktiverer du den for alle brugere i organisationen, der arbejder i det pågældende miljø. Når du slår prøveversionsfunktionen fra, deaktiverer du den og gør den utilgængelig for brugerne. Visningsfunktioner understøttes kun i begrænset omfang i Personal. Der er en mindre grad af beskyttelse af personlige oplysninger og færre sikkerhedsfunktioner, og de medtages ikke i Human Resources-serviceniveauaftalen (SLA). Du bør ikke bruge visningsfunktioner til behandling af personoplysninger (dvs. alle oplysninger, der kan identificere dig) eller til at behandle andre data, der er omfattet af lovbestemte overholdelseskrav.
 
-1. I Personale skal du vælge **Systemadministration**.
+1. I Human Resources skal du vælge **Systemadministration**.
 
 2. Vælg felter **Funktionsstyring**.
 
@@ -92,7 +92,5 @@ Medtag ikke personlige oplysninger (oplysninger, der kan identificere dig) i din
 
 ## <a name="see-also"></a>Se også
 
-- [Nyheder i Personale](hr-admin-whats-new.md)
+- [Nyheder i Human Resources](hr-admin-whats-new.md)
 - [Dynamics 365 og Power Platform Frigivelsesplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

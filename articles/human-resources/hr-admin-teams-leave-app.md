@@ -1,8 +1,8 @@
 ---
-title: Appen Personale i Teams
+title: Appen Human Resources i Teams
 description: I dette emne introduceres Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
@@ -18,39 +18,39 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e714be06984f399235f0799ef077a92deae64d9e
-ms.sourcegitcommit: b0aa724a18ab1fbb5a62925f048c54b2c676ebf4
+ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "4476071"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111933"
 ---
-# <a name="human-resources-app-in-teams"></a>Appen Personale i Teams
+# <a name="human-resources-app-in-teams"></a>Appen Human Resources i Teams
 
 [!include [banner](includes/preview-feature.md)]
 
 Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan medarbejdere hurtigt anmode om at få fri og se deres flekskontooplysninger i Microsoft Teams. Medarbejderne kan interagere med en bot for at anmode om oplysninger. Fanen **Fridage** giver mere detaljerede oplysninger. De kan også sende oplysninger om kommende fridage i teams og chatte uden for Human Resource-appen.
 
-![Orlov via appbot i Personale i Teams](./media/hr-admin-teams-leave-app-bot.png)
+![Orlov via appbot i Human Resources i Teams](./media/hr-admin-teams-leave-app-bot.png)
 
-![Fanen Fri i orlovsappen i Personale i Teams](./media/hr-teams-leave-app-timeoff-tab.png)
+![Fanen Fri i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab.png)
 
 ![Human Resources-orlovsanmodningskort](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Installere og konfigurere
 
-Du kan finde Personale-appen i storen til Teams. Få flere oplysninger om installation af appen Teams i [Styre anmodninger i Teams](hr-teams-leave-app.md).
+Du kan finde Human Resources-appen i storen til Teams. Få flere oplysninger om installation af appen Teams i [Styre anmodninger i Teams](hr-teams-leave-app.md).
 
 Få flere oplysninger om styring af app-tilladelser i Teams i [Styre app-tilladelsespolitikker i Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
-## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Aktivere beskeder for appen Personale i Teams
+## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Aktivere beskeder for appen Human Resources i Teams
 
-Hvis du ønsker, at brugere skal kunne modtage beskeder om orlov i appen Teams, skal du aktivere beskeder i Personale.
+Hvis du ønsker, at brugere skal kunne modtage beskeder om orlov i appen Teams, skal du aktivere beskeder i Human Resources.
 
 >[!NOTE]
->Kun brugere, der er logget på Teams og bruger Teams-appen Personale, modtager beskederne.
+>Kun brugere, der er logget på Teams og bruger Teams-appen Human Resources, modtager beskederne.
 
-1. I Personale skal du vælge **Systemadministration**.
+1. I Human Resources skal du vælge **Systemadministration**.
 
 2. Vælg **Links**.
 
@@ -66,9 +66,9 @@ Hvis du ønsker, at brugere skal kunne modtage beskeder om orlov i appen Teams, 
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Slå Teams-beskeder til eller fra for de enkelte brugere
 
-Når du har aktiveret beskeder for Teams-appen Personale, kan du slå beskeder til eller fra for de enkelte brugere.
+Når du har aktiveret beskeder for Teams-appen Human Resources, kan du slå beskeder til eller fra for de enkelte brugere.
 
-1. I Personale skal du vælge **Systemadministration**.
+1. I Human Resources skal du vælge **Systemadministration**.
 
 2. Vælg **Links**.
 
@@ -134,6 +134,3 @@ Hvis du vil begrænse adgangen til Human Resources-appen i Microsoft Teams for d
 [Microsoft Teams Hjælp-center](https://support.office.com/teams)</br>
 [Administrere fraværsanmodninger i Teams](hr-teams-leave-app.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

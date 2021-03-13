@@ -2,7 +2,7 @@
 title: Melde en medarbejder til en fast lønplan
 description: Chefen for kompensation og frynsegoder kan tildele medarbejdere faste lønplaner for at administrere deres grundløn.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: HRMCompFixedEmpl, HRMCompFixedEmplActionDialog, HcmPositionLookup, HRMCompRefPointLookup, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3029e52a7cc1fb6dfda390f5d892c89f1eda8509
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc8373a4a39a1a212ab445b2b300fbddfe0e4a39
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417788"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111939"
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>Melde en medarbejder til en fast lønplan
 
-Chefen for kompensation og frynsegoder kan tildele medarbejdere faste lønplaner for at administrere deres grundløn. Denne procedure forudsætter, at en fast lønplan er blevet oprettet og er aktiv, og at der er angivet berettigelsesregler for planen. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du begynder proceduren ved at gå til Personale > Arbejdere > Medarbejdere > Kompensation > Fast plan
+Chefen for kompensation og frynsegoder kan tildele medarbejdere faste lønplaner for at administrere deres grundløn. Denne procedure forudsætter, at en fast lønplan er blevet oprettet og er aktiv, og at der er angivet berettigelsesregler for planen. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du begynder proceduren ved at gå til Human Resources > Arbejdere > Medarbejdere > Kompensation > Fast plan
 
 1. Klik på Ny.
 2. Vælg en Fast løn-handling af typen Ansæt/genansæt for at beskrive ændringen af medarbejderens kompensation i feltet Handling.
@@ -39,6 +39,3 @@ Chefen for kompensation og frynsegoder kan tildele medarbejdere faste lønplaner
     * Hvis Fast lønplan er en trinplan, skal du vælge det trin, der indeholder den korrekte lønsats for medarbejderen. Hvis Fast lønplan er en omfangs- eller klasseplan, skal du angive lønsatsen for medarbejderen. Lønsatsen valideres mod toleranceindstillingerne for planen og minimale og maksimale referencepunkter for jobbets kompensationsniveau.  
 8. Klik på OK.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

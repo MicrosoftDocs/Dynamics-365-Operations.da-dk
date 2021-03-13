@@ -2,32 +2,32 @@
 title: Angive arbejderoplysninger
 description: Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og genereret stillingerne, er næste trin at angive arbejderoplysninger for de personer, der ansættes.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
+ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8d139b079c011b60af6d2b896e9edb5b9d27501a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: be38076be7f57ca9072221d1c8b8a524e81ab62b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417767"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111949"
 ---
 # <a name="enter-worker-information"></a>Angive arbejderoplysninger
 
 
 
-Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og genereret stillingerne, er næste trin at angive arbejderoplysninger for de personer, der ansættes. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Demodataene indeholder et åbent masseansættelsesprojekt. Du begynder denne procedure ved at gå til Personale > Rekruttering > Masseansættelsesprojekter.
+Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og genereret stillingerne, er næste trin at angive arbejderoplysninger for de personer, der ansættes. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Demodataene indeholder et åbent masseansættelsesprojekt. Du begynder denne procedure ved at gå til Human Resources > Rekruttering > Masseansættelsesprojekter.
 
 1. Markér den valgte række på listen.
 2. Klik på Detaljer for stilling.
@@ -45,6 +45,3 @@ Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og gen
 8. Fjern markeringen af den valgte række på listen.
     * Vælg det næste ansættelsesprojekt, og fortsæt med at indtaste arbejderoplysninger for hver person, du ansætter.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
