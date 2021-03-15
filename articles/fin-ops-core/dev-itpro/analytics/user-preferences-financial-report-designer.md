@@ -72,3 +72,6 @@ I denne artikel forklares, hvordan du angiver brugerindstillinger for at tilpass
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

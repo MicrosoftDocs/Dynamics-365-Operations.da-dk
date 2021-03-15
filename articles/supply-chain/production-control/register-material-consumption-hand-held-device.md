@@ -91,3 +91,6 @@ Når du har gennemført registreringen, kan du vælge **Udført** for at bogfør
 -   Materiale kan overforbruges. Hvis der f.eks. er forkalkuleret et materialeforbrug på 100 kg, kan det være et overforbrug på f.eks. 105 kg.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

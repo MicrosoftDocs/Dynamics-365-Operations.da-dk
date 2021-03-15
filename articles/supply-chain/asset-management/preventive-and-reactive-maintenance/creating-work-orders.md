@@ -95,3 +95,6 @@ Følg disse trin for at konfigurere gruppering for automatisk genererede arbejds
 1. Hvis du ønsker, at indstillingerne skal anvendes, når du kun kører nogle af dine vedligeholdelsesplaner, skal du tilføje filtre efter behov i oversigtspanelet **Poster, der skal indgå** på samme måde som ved andre batchjob i Microsoft Dynamics 365 Supply Chain Management.
 1. I oversigtspanelet **Kør i baggrunden** skal du konfigurere batch- og planlægningsindstillinger efter behov på samme måde som ved andre batchjob i Supply Chain Management.
 1. Vælg **OK** for at køre og/eller planlægge de valgte vedligeholdelsesplaner.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

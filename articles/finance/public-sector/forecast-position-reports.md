@@ -47,3 +47,6 @@ Når du opretter rapporten, vises følgende standardparametre.  Du kan bruge dis
 | Kun ikke-udfyldte | Angiv denne indstilling til Ja for at udelade stillinger, der i øjeblikket er besat. |
 | Undertryk total | Angiv denne indstilling til Ja for at udelade totaler i rapporten. |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

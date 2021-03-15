@@ -48,3 +48,6 @@ Denne procedure gennemgår trin til oprettelse og behandling af en cross-dock me
 15. På listen skal du finde og vælge et lagersted, der har modtaget produkter.
 16. Klik på Bestil for at få vist de ordrer, der blev oprettet for det valgte lagersted
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

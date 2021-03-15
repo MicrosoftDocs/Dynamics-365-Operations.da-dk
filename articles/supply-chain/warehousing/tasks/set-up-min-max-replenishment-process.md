@@ -119,3 +119,6 @@ Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruge
 11. Klik på **OK**.
 12. Klik på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

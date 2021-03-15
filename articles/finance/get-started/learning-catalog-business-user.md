@@ -60,3 +60,6 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | Indhold | Betegnelse  | Formater  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Grundlæggende funktioner i Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Bevis, at du forstår Microsoft Dynamics 365. Power Platform, skybegreber, licensmuligheder samt udrulnings- og frigivelsesmuligheder. | Eksamen, hvor omkostning varierer alt efter region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

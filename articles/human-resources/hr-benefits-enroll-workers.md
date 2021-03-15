@@ -58,3 +58,6 @@ Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller
 14. Klik op linket i den valgte række på listen.
 15. På denne side kan du få vist de medarbejdere, som er tilmeldt frynsegodet, samt alle medarbejdere, der ikke er tilmeldt.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

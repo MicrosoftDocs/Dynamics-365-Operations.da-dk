@@ -96,3 +96,6 @@ Hvis du imidlertid bruger en betinget moms, afregner du med skattemyndighederne,
 Hvis du bruger fremdateret check som betalingsmåde, når betalingen oprettes, cleares bankkontoen ikke. I nogle lande/områder vil moms blive 'realiseret' passiv, når betalingen cleares i banken, hvilket betyder, at den fremdaterede check udlignes. Du kan aktivere den ved at vælge **Realiserer den betingede moms, når der trækkes fremdaterede checks** i **Kontant- og bankstyring > Opsætning > Kontant- og bankstyringsparametre > fremdaterede checks**
 
 Du kan finde flere oplysninger i [Konfigurere A-skat](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

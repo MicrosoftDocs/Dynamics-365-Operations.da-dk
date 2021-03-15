@@ -42,3 +42,5 @@ For hver organisation, der tilbyder frynsegoder, skal du konfigurere indstilling
    | **Afsenderadresse for standardmail** | Den e-mailadresse, der skal bruges ved afsendelse af bekræftelsesmailen. |
 
 3. Vælg **Gem**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

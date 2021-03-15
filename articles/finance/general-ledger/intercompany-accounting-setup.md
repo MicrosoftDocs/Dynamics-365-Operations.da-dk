@@ -49,3 +49,6 @@ En gensidig relation kan nemt konfigureres på siden **Mellemregning** ved hjæl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

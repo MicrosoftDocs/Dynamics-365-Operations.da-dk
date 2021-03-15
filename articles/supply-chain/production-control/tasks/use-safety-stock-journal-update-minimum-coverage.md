@@ -65,3 +65,6 @@ Denne fremgangsmåde viser, hvordan du kan beregne minimumdækningsforslaget bas
 5. Klik på Plan i **Handlingsrude**.
 6. Klik på **Varedisponering**. Bemærk, at **Minimumantal** er blevet opdateret med det nye minimumsantal fra sikkerhedslagerkladden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

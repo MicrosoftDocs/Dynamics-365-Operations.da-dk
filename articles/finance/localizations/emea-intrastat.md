@@ -239,3 +239,6 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Forestil dig følgende situation: Der kræves et stykke metalplade til en svejsn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

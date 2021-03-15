@@ -48,3 +48,6 @@ Desuden kan brugerne med to entydige rapporter, der udnytter strukturering af hi
 - **Kategori og produktstyring**-arbejdsområdet &gt; **Retail og Commerce** &gt; **Produkt og kategorier** &gt; **Butiksstyring** &gt; **Rapporter**
 - **Styring af prissætning og rabatter**-arbejdsområdet &gt; **Retail og Commerce** &gt; **Priser og rabatter** &gt; **Butiksstyring** &gt; **Rapporter**
 - Sektionen **Forespørgsler og rapporter** &gt; **Retail og Commerce** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Du kan finde flere oplysninger om processen for flytning fra grundlæggende lage
 - [Migrering af Microsoft Dynamics AX WMS til nye R3-lagersteds- og transportfunktioner](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)
 - [WMSI/WMS2-varemigrering](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/05/03/wmsiwms2-item-migration/)
 - [Opgradere lokationsstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/upgrade-migration-warehouse-management-processes)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

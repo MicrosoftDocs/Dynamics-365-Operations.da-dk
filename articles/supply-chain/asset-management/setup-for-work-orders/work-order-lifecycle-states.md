@@ -138,3 +138,6 @@ Når du har oprettet de livscyklustilstande for arbejdsordrer, der kræves til d
 9. Gem livscyklusmodellen for arbejdsordren.
 
 ![Siden Livscyklusmodeller for arbejdsordre](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

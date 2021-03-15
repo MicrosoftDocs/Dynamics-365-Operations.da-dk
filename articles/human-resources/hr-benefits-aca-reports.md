@@ -87,3 +87,6 @@ Hvis du har brug for at rapportere dækkede personer, fordi du giver dig selv fo
 
 > [!NOTE]
 > Kun frynsegodeplaner, der markeret som **ACA-rapporterbare**, vises i forespørgselsvinduet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Jobbet Afregn og bogfør momsprocedurer afregner momssaldi i momskonti og udlign
 5. Angiv en dato i feltet **Transaktionsdato**.
 6. Klik på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

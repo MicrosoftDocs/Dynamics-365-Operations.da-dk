@@ -116,3 +116,6 @@ Disse to lagerkladder understøtter kun scenariet *Initialisere lager* som en de
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Dataenheder](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

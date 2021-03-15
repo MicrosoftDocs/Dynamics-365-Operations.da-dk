@@ -76,3 +76,6 @@ Følg disse trin for at bekræfte, at betalingsmetoden for debitorkonti er aktiv
 [Angive produktantalsgrænser for B2B-e-handelswebsteder](quantity-limits.md)
 
 [Opdateringer til SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

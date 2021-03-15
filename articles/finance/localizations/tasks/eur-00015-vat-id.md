@@ -60,3 +60,6 @@ Oplysningerne her gælder for alle europæiske lande/områder. Denne opgave blev
     * Tildel den registreringstype, som du har oprettet, til en foruddefineret registreringskategori.  
 22. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

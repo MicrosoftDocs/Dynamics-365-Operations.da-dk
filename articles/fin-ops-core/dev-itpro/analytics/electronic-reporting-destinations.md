@@ -241,3 +241,6 @@ Dit format skal først være tilgængeligt i ER-konfigurationerne. Hvis denne fo
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Konfigurere handlingsafhængige ER-destinationer](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

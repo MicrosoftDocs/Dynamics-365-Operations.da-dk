@@ -108,3 +108,6 @@ Hvis du vil give arbejdere mulighed for at foretage denne ændring, kan du opret
 - **Vis lagerstatus:** *Ja*
 
 Angiv de resterende felter på siden efter behov.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

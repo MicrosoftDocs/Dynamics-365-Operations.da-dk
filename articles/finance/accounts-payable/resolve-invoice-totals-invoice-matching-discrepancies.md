@@ -43,3 +43,6 @@ Når du har identificeret afvigelse, kan det være nødvendigt at kontakte kredi
 Yderligere oplysninger finder du i [Undersøg/Løs undtagelser](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

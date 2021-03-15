@@ -72,3 +72,6 @@ Hvis du vil bruge ruteoplysninger i forbindelse med efterkalkulation, er der bru
 
 [Konfigurere produkter, som kan være produceret eller indkøbt](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

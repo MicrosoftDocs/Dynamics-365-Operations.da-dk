@@ -49,3 +49,6 @@ Det er valgfrit, om du vil bruge årsagskoder. Du kan bestemme, om du vil kræve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

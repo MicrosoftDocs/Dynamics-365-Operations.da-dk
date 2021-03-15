@@ -139,3 +139,6 @@ Du kan godkende lagerkladden for batchfletningen fra listesiden **Alle batchflet
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Hvorfor kan jeg ikke se oplysningerne om fastvægtvarer i lagerkladden, når jeg har flettet en fastvægtvare?
 Du kan flette batches af fastvægtvarer ligesom alle andre varer. Fastvægtoplysningerne vises dog ikke i lagerkladden. Vi anbefaler, at du kontrollerer fastvægtoplysningerne, før du overfører batchfletningen til lagerkladden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -164,3 +164,6 @@ Hvis du vil køre kladdeversionen af det format, der kan redigeres, skal du gør
 
 - [Designe ny ER-konfiguration til generering af rapporter i Word-format](../er-design-configuration-word.md)
 - [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

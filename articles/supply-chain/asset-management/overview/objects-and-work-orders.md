@@ -54,3 +54,6 @@ Adskillige trin skal fuldføres, når du vil planlægge og køre et vedligholdel
 
 > [!NOTE]
 > Når du generelt arbejder i Dynamics 365 Supply Chain Management og modulet **Styring af aktiver**, skal du vælge **Ny** for at oprette en ny post, **Rediger** for at opdatere en eksisterende post og **Gem** for at gemme nye eller redigerede data.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

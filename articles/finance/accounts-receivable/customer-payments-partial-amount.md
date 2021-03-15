@@ -59,3 +59,6 @@ Kunder kan foretage en delvis betaling, hvor det resterende beløb ikke betales,
 
 
 Du kan finde flere oplysninger i [Deponere debitorbetalinger](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

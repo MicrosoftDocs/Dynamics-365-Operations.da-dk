@@ -53,3 +53,6 @@ Følg disse trin for at aktivere uoverensstemmelsesstyring:
 [Processer for kvalitetsstyring](quality-management-processes.md)
 
 [Konfigurere forudsætninger for uoverensstemmelsesstyring](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

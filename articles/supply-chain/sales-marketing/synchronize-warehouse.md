@@ -80,3 +80,6 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagersteder (Supply Chain Management til Field Service): Lagersted
 
 [![Skabelontilknytning i dataintegration](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

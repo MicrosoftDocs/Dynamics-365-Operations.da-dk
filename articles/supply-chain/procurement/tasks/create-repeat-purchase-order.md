@@ -69,3 +69,6 @@ I stedet for at kopiere en hel ordre er det mere almindeligt at oprette en ny in
 4. Vælg linjen for den ønskede indkøbsordre. Bemærk, at den ene ordrelinje, der er på denne indkøbsordre, også er markeret.  
 5. Vælg **OK**. Den ekstra ordrelinje er blevet føjet til din indkøbsordre.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

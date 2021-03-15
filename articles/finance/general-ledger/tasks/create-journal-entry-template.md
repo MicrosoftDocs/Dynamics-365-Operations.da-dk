@@ -62,3 +62,6 @@ Bogførte kladdebilag kan gemmes som bilagsskabeloner og anvendes i et nyt kladd
 29. Angiv beløbet, der skal anvendes til bilaget, i feltet **Beløb**. Feltet **Beløb** vises kun, hvis bilagsskabelon er af typen Procent.  
 30. Klik på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

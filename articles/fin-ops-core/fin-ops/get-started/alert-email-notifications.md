@@ -50,3 +50,6 @@ Tjenesten sender e-mailbeskeder ved hjælp af foruddefinerede e-mailskabeloner, 
 Følgende billede viser strukturen af påmindelsesbeskederne, når de modtages via mail.
 
 [![Skabelonbaserede påmindelsesbeskeder til oprettelse af poster, ændringer af felter og sletning af skabelon](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

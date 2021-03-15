@@ -55,3 +55,6 @@ Dette betyder, at systemet vil oprette en karantæneordre, og den person eller a
 
 [Angive, hvordan returvarer skal kasseres](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

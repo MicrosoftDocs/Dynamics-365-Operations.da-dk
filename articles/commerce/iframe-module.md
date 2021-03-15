@@ -76,3 +76,6 @@ Hvis du vil føje et iFrame-modul til en side, der viser en ekstern video, skal 
 [Oversigt over modulbibliotek](starter-kit-overview.md)
 
 [Administrere sikkerhedspolitik for indhold (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

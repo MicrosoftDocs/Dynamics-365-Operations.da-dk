@@ -97,3 +97,6 @@ Brug følgende tabel til at afgøre, hvor du bør tildele standardkonti for fakt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

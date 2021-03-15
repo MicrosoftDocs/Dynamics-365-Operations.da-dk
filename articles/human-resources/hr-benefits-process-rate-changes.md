@@ -48,3 +48,6 @@ Behandle ændringer i frynsegodesatsen i Microsoft Dynamics 365 Human Resources,
    4. Vælg **OK**. Processen køres med de parametre, du angiver.
 
 4. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

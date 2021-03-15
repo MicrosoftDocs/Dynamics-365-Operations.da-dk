@@ -67,3 +67,6 @@ Stillinger er et vigtigt element i et organisationshierarkis lavere niveau. En s
 30. Indtast eller vælg en værdi i feltet Afdeling.
 31. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

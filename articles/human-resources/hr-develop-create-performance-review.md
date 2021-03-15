@@ -78,3 +78,6 @@ Dette emne viser, hvordan du opretter en performanceevaluering, og beskriver for
 34. Vælg fanen **Evaluer**. Når evalueringen bevæger sig gennem statusserne, kan medarbejderen og lederen tilføje kommentarer for de enkelte mål eller kompetencer.  
 35. Vælg fanen **Afslutninger**. Arbejderen og lederen kan afslutte evalueringen. Når alle nødvendige godkendelser er fuldført, status ændres til **Fuldført**, og der foretages ingen yderligere ændringer.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Når du har designet alle de faner, du har brug for, kan du knytte dem til en ko
 1. Fortsæt med at tilføje flere faner efter behov.
 
 1. Brug knapperne **Flyt op** og **Flyt ned** på værktøjslinjen til at arrangere fanerne efter behov. Fanerne vises fra venstre mod højre i den rækkefølge, der vises i skærmbilledet ovenfor (fanen øverst vises til venstre).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

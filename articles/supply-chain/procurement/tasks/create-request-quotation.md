@@ -80,3 +80,6 @@ Når du har angivet de grundlæggende oplysninger om din tilbudsanmodning, kan d
 4. Luk siden.
 5. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

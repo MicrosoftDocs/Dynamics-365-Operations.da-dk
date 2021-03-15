@@ -56,3 +56,6 @@ Du kan medtage en årsagskode og en kommentar, når du regulerer en medarbejders
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Administrere anmodninger om orlov og fravær](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

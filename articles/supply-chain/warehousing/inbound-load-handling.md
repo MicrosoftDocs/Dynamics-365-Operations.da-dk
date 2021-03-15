@@ -477,3 +477,6 @@ I dette scenarie vil den modtagende medarbejder registrere et indgående antal, 
     - **Antal** – Angiv _7_, der er det resterende antal, som kreditoren har tilladelse til at levere som en del af det samlede indkøbsordreantal på 12 (hvor 10 er det oprindelige ordreantal, og 2 er det tilladte antal for overlevering på 20 %). Husk, at 5 stk. allerede er registreret i forhold til den første last.
 
 Den anden last er nu opdateret med antallet af 7 og kan være produktkvitteringsopdateret baseret på dette antal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

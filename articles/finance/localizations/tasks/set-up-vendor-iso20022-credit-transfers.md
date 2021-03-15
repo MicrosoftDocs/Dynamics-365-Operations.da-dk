@@ -51,3 +51,6 @@ Det er den fjerde procedure af fem, der illustrerer kreditors betalingsproces ve
 4. Klik på linket i rækken SEPA CT på listen.
 5. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

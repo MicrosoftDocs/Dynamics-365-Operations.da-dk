@@ -84,3 +84,6 @@ Hvis du vil bruge integrationsløsningen i Field Service, skal du installere fø
 - Field Service (version 8.2.0.286) eller en nyere version i Dynamics 365 9.1.x - udgivet november 2018
 - Løsningen Kundeemne til kontanter (P2C) til Dynamics 365, version 1.15.0.1 eller en nyere version. Løsningen kan hentes fra [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - 'Field Service-integration, projekt og lager'-løsning til Dynamics 365, version 2.0.0.0 eller en nyere version. Løsningen kan hentes fra [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

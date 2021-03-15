@@ -74,3 +74,6 @@ Du kan tilbageføre en udligning, der er foretaget ved en fejl.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Opdater listen over konti, der er medtaget på listen over posteringer
 
 Vælg **Finansudligningskonti** for at åbne en dialogboks, hvor du kan redigere de konti, der er medtaget på listen over posteringer. Vælg **Ny** for at føje nye konti til listen. Denne liste bruges til at filtrere listen over transaktioner, der vises på siden **Finansudligninger**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

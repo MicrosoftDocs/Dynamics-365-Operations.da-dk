@@ -49,3 +49,6 @@ Opret en avanceret finanspost, vælg indstillingen **Tilbageførsel** indstillin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Brugeren skal føjes til rollen Miljøopretter for miljøet i Microsoft Power Ap
     ![Knappen Synkroniser](media/get-more.png)
 
     Når synkroniseringen er fuldført, vises Human Resources på startsiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

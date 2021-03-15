@@ -75,3 +75,6 @@ Den samlede procentdel for alle intervaller behøver ikke være 100. Men du modt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

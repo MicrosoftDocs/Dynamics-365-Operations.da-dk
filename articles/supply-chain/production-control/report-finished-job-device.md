@@ -238,3 +238,6 @@ Hvis du vil styre, om arbejdere skal genbruge en eksisterende nummerplade eller 
 
 > [!NOTE]
 > Gå til **Lokationsstyring \> Opsætning \> Dokumentrute \> Dokumentrute** for at konfigurere labelen. Yderligere oplysninger finder du i afsnittet [Aktivere udskrivning af id-etiket](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

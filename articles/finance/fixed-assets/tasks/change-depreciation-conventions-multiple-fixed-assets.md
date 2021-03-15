@@ -48,3 +48,6 @@ Denne opgave opdaterer afskrivningsprincippet for en angivet gruppe anlægsaktiv
 15. Klik på OK.
     *  Resultaterne af processen vises i rapporten Masseopdatering.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

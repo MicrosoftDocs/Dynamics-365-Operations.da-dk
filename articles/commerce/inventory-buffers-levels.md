@@ -148,3 +148,6 @@ Udfør følgende trin for at konfigurere svaret på produktilgængeligheds-API'e
 [Anvendelse af lagerindstillinger](inventory-settings.md)
 
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Når du autoriserer et ordreforslag, indeholder dialogboksen **Autorisation** fe
 - **Nej** – Der anvendes ikke lagerafmærkning.
 - **Standard** – Lagerafmærkning opdateres i henhold til udligningen. En behovsordre (efterspørgsel) afmærkes i forhold til en opfyldningsordre (udbud). Hvis der er et restantal på opfyldningsordren, er det ikke afmærket, og referenceoplysningerne er tomme. Hvis en salgsordre på 100 styk f.eks. udlignes mod en indkøbsordre på 150 styk, tildeles referenceoplysningerne kun til salgsordren.
 - **Udvidet** – Både behovsordren (efterspørgsel) og opfyldningsordren (udbud) afmærkes, uafhængigt af om der er et restantal i opfyldningsordren. Hvis en salgsordre på 100 styk f.eks. udlignes mod en indkøbsordre på 150 styk, tildeles referenceoplysningerne både til salgsordren og indkøbsordren.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

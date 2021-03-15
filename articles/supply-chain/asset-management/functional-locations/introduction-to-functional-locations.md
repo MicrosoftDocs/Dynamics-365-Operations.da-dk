@@ -82,3 +82,6 @@ Knapperne i Handlingsruden er organiseret på faner. Følgende tabel beskriver k
 | Fejl                              | Åbn siden **Fejl på aktiver**, hvor du kan få vist en liste over fejlregistreringer for aktiver, der er relateret til det valgte arbejdssted. |
 | Opdater arbejdsstedets tilstand    | Opdater stadiet for det valgte arbejdssted.                                                                                        |
 | Log for livscyklustilstand                 | Få vist en logfil, der viser stadierne for det valgte arbejdssted.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Næste dag får du besked fra chefen om, at værdien på computere er formindske
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

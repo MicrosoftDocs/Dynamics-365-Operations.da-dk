@@ -40,3 +40,6 @@ Denne fremgangsmåde viser, hvordan du frigiver en produktmaster, der skal bruge
 7. Klik på Næste.
 8. Klik på Finish.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Siden **Oversigt over aktivattributter** viser en separat linje for hvert aktiv.
 3. Vælg **OK**. En liste viser alle de aktiver, der bruger den valgte aktivtype. For hvert aktiv vises alle relaterede aktivattributtyper på samme linje.
 
 Siden **Aktivattribut** viser en separat linje for hver attributtype, der bruges på et aktiv. For at åbne denne side skal du vælge **Styring af aktiver** \> **Forespørgsler** \> **Aktiver** \> **Aktivattributter**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

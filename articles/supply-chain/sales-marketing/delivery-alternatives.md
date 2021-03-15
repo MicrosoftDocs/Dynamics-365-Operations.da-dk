@@ -150,3 +150,6 @@ I dette oversigtspanel vises virkningen af det valgte leveringsalternativ. Hvis 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Ordretilsagn](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

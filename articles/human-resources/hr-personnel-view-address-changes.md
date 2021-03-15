@@ -128,3 +128,6 @@ Når du markerer feltet **Adresseændringer**, vises oplysningerne om eventuelle
 > Hvis du vil modtage en påmindelse eller mail om disse adresseændringer, kan du oprette en ny påmindelsesregel på fanen **Indstillinger** i handlingsruden. Du kan finde flere oplysninger om påmindelsesregler under [Oprette påmindelsesregler](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
 > Hvis du vil konfigurere en arbejdsgang for adresseændringerne, kan du vælge indstillingen **Send eksternt** på din påmindelsesregel og derefter bruge Power Automate til at udløse forretningshændelsen og konfigurere en arbejdsgang. Yderligere oplysninger finder du under [Påmindelser som forretningshændelser](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

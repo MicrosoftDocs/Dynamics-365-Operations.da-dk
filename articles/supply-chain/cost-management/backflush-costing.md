@@ -125,3 +125,6 @@ Kør efterkalkuleret varetræk for periodisk at vurdere IGVF og producere en ult
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Der findes mange typer rabatter:
 - **Forsendelsesrabat** – En rabat, der anvendes, når totalen for transaktionen overstiger et angivet beløb, og når en bestemt leveringsmåde (f.eks. forsendelser over to dage eller samme dag) bruges i ordren.
 
 Både prisjusteringer og rabatter kan være knyttet til prisgrupper. Prisgrupper kan derefter tilknyttes kanaler, kataloger, tilhørsforhold og loyalitetsprogrammer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

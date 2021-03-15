@@ -41,3 +41,6 @@ I feltet **Serviceaftalegruppe** på siden **Parametre for servicestyring** kan 
 ## <a name="related-topics"></a>Relaterede emner
 
 [Oprette serviceaftalegrupper](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

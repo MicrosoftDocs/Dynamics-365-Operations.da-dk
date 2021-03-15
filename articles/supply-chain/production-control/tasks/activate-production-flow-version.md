@@ -40,3 +40,6 @@ Før der kan oprettes kanban-job, og aktiviteter kan blive behandlet for en prod
 5. Klik på Aktiver.
 6. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

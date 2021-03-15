@@ -49,3 +49,6 @@ Du kan definere omfanget af reglen i politikken. For eksempel, hvis du opretter 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

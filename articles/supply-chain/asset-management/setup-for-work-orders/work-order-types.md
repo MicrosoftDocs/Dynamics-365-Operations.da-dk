@@ -51,3 +51,6 @@ Du kan finde flere oplysninger om arbejdsordrers livscyklustilstande og projekts
 8. Vælg **Gem**.
 
 ![Arbejdsordretyper](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

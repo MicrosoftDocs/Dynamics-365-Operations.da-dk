@@ -98,3 +98,6 @@ Når du får vist sider, der er baseret på den skabelon, du har føjet til frag
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

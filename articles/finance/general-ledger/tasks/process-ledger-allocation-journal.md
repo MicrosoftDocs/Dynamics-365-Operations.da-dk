@@ -43,3 +43,6 @@ I dette emne beskrives, hvordan du behandler en fordelingsanmodning. Brug siden 
 9. Vælg **Bogfør**.
 10. Vælg **Bogfør**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

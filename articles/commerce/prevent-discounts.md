@@ -40,3 +40,6 @@ Følgende indstillinger, som findes under fanen **Commerce** for frigivne produk
 > Disse indstillinger begrænser ikke pristilsidesættelsen, fordi dette indstiller basisprisen og bliver ikke behandlet som en rabat.
 
 [![Felt til forhindring af rabatter](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Listen over søgeresultater er begrænset til 10 elementer. Hvis du ikke kan fin
 ## <a name="development"></a>Udvikling
 
 Fra et udviklingsperspektiv er funktionen til navigationssøgning meget nem at udnytte, fordi der praktisk talt ikke er nogen forsinkelse mellem implementering af menupunkter og deres evne til at blive vist i søgeresultater. Så længe menupunkterne er tilknyttet fra navigationsruden eller dashboardet, bliver det automatisk muligt at søge i dem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Hvis du har aktiveret prøvefunktionen til korrektion af helligdage i orlov og f
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Konfigurere orlovs- og fraværstyper](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

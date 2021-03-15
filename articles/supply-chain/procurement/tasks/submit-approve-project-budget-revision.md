@@ -45,3 +45,6 @@ Denne opgave bruger SSI-datasættet.
 12. Skriv en værdi i feltet Kommentar.
 13. Klik på Send.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

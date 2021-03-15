@@ -72,3 +72,6 @@ Denne opgaveguide hjælper dig med at oprette en kreditorfaktura fra en indkøbs
 19. Klik på **Bogfør**.
 20. Luk formularen. Bemærk, at indkøbsordren ikke længere er angivet som modtaget, men ikke faktureret.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

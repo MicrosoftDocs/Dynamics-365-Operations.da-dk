@@ -238,3 +238,6 @@ Du kan konfigurere systemet til automatisk at nulstille en tæller, hver gang en
 1. Gå til **Aktivadministration \> Opsætning \> Arbejdsordrer \> Livscyklustilstande**.
 1. Vælg den livscyklus for en arbejdsordre i listeruden, som den relevante tæller skal nulstilles ved.
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Nulstil tæller** til *Ja*.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

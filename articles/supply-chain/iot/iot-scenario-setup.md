@@ -142,3 +142,6 @@ Følg disse trin for at deaktivere et scenarie.
 2. I feltet til scenariet skal du vælge **Konfigurer**.
 3. Vælg **Næste** for at gå til den sidste side i guiden.
 4. Angiv indstillingen for at deaktivere scenariet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Firma A fører finansielle poster for flere små virksomheder. En af virksomhed 
 
 [Oprette serviceobjekter](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

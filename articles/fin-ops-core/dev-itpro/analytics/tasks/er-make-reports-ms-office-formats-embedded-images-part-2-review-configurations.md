@@ -91,3 +91,6 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
     * Nogle etiketter, der vises i den fortrykte checkformular, medtages i rapporten, når den oprettes til testformål. Disse etiketter udskrives dog ikke under den egentlige udskrivning, fordi den fortrykte formular allerede indeholder dem.  
 15. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

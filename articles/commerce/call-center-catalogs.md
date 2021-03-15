@@ -100,3 +100,6 @@ Under fanen **Kataloger** findes også indstillinger til konfiguration af en **B
 ## <a name="additional-notes"></a>Yderligere bemærkninger
 
 Når et kildekode-id i øjeblikket anvendes på en salgsordre i callcenteret, bruges det til at vise priser, kampagner, scripts og mersalg eller tillægssalg, der gælder for et bestemt katalog. Systemet kan ikke forbyde eller forhindre, at et produkt, ikke der findes i kataloget, kan bestilles på salgsordren. Hvis en vare, der ikke indgår i kataloget, bestilles, bruger systemet først den **Prisgruppe**, der er defineret i callcenterkanalen (**Retail og Commerce** \> **Kanaler** \> **Call centers** \> **Alle call centers**) til varepris eller kampagner. Hvis der ikke findes en bestemt kanalpris, bruges basissalgsprisen for varen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -251,3 +251,6 @@ Brugere af globaliseringstjenester kan administrere miljøet for at konfigurere 
 10. Vælg **Publicer** for at publicere miljøet.
 
     ![Publiceret miljø](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

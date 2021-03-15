@@ -99,3 +99,6 @@ Når du har sendt kontrollisten, gennemgår FastTrack-løsningsarkitekten projek
 ## <a name="see-also"></a>Se også
 
 [Ofte stillede spørgsmål om udgivelse](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

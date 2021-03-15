@@ -81,3 +81,6 @@ Du skal først fuldføre proceduren "Opret en konfiguration med format som et be
 25. Klik på OK.
     * Analysér den oprettede betalingsfil i XML-format. Sammenlign det med det designede dokumentlayout og de definerede attributter for betalingstransaktioner.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

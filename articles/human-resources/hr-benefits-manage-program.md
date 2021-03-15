@@ -64,3 +64,6 @@ Nogle gange holder en organisation op med at tilbyde bestemte fordele. I så fal
 På samme måde gør massefrynsegodeforlængelse det muligt at forlænge udløbsdatoen for både et frynsegode og arbejdertilmeldinger til det pågældende frynsegode, hvis du beslutter at tilbyde et frynsegode i længere tid end oprindeligt planlagt.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

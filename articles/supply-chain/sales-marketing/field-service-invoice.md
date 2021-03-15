@@ -107,3 +107,6 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Aftalefakturaer (Field Service til Supply Chain Management): Fakturalinjer
 
 [![Skabelontilknytning i dataintegration](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

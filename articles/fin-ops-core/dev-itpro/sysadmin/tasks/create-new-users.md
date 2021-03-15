@@ -81,3 +81,6 @@ Hvis du vil ændre et bruger-id, skal du omdøbe nøglen i databasen. Når du æ
 Du kan finde flere indstillinger til implementering af B2B-brugere i [Eksportere B2B-brugere til Azure AD](../implement-b2b.md).
 
 Du kan finde oplysninger om forudkonfigurerede systemkonti i [Forudkonfigurerede systemkonti](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

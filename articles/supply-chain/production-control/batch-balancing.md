@@ -186,3 +186,6 @@ Der er to undtagelser til reglen om, at batchordrer kan anvendes til batchtilpas
 1. Hvis formelmåleenheden er forskellig fra det aktive stofs lagermåleenhed, kan batchordren ikke anvendes til batchjustering.
 
 En batchordre, der ikke er tilgængelig for batchtilpasning, gennemgår den almindelige procescyklus for batchordrer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

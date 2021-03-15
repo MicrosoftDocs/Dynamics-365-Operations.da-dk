@@ -182,3 +182,6 @@ Modeltilknytningen **Kopi af InvoiceProject** af konfigurationen **Modeltilknytn
 - [Administrere ER-modeltilknytning i separate ER-konfigurationer](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Konfigurere landekontekstafhængige ER-modeltilknytninger](er-country-dependent-model-mapping.md)
 - [Ændringer af API-struktur til elektronisk rapportering](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

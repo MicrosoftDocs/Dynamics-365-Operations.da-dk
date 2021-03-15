@@ -34,3 +34,6 @@ Du kan validere, om dimensionerne for en budgetteret stilling er korrekte for or
 Du kan se, hvornår en budgetteret stilling sidst blev valideret, i sektionen **Validering af budgetteret stilling** i oversigtspanelet **Budgetplanlægning** på siden **Budgetteret stilling**. Valideringsfelterne medtages også på listesiden **Budgetterede stillinger**.
 
 Du kan finde flere oplysninger under [Budgetteret stilling](../budgeting/position-forecasting.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

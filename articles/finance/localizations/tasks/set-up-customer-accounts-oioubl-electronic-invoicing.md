@@ -49,3 +49,6 @@ Det er den tredje af seks procedurer, der viser processen til oprettelse af e-fa
 
 ## <a name="set-up-contact-information-for-a-customer"></a>Konfigurer kontaktoplysninger for en kunde
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

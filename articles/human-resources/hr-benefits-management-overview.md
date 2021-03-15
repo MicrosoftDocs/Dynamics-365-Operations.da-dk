@@ -97,3 +97,6 @@ Du skal behandle nogle af ændringerne for at gøre dem aktive.
 - [Behandle berettigelse til livshændelse](hr-benefits-process-life-event-eligibility.md)
 - [Behandle satsændringer](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
    | **End** | Slutdato og -tidspunkt, hvor feltet vil være tilgængeligt. |
 
 4. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

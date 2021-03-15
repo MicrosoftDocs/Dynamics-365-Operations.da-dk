@@ -95,3 +95,6 @@ Før du kan sende mails, skal du konfigurere tjenesten til udgående mail og kon
 [Forudsætninger for konfiguration af kanal](channels-prerequisites.md)
 
 [Oversigt over organisationer og organisationshierarkier](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

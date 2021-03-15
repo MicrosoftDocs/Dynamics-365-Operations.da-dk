@@ -67,3 +67,6 @@ I skærmbilledet nedenfor er der tilføjet oplysninger om arbejdssteder. Nu er d
 
 ![Eksempel på månedlig arbejdsbyrde med arbejdssteder](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

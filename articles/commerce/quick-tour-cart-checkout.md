@@ -106,3 +106,6 @@ Du kan finde flere oplysninger om, hvordan du opretter en betalingsside, under [
 [Oversigt over sider med produktdetaljer](quick-tour-pdp.md)
 
 [Oversigt over sider til kontostyring](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

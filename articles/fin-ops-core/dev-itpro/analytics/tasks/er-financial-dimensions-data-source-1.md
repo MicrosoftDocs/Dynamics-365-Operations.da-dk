@@ -108,3 +108,6 @@ Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og mark
 
 ![Side for ER-datamodeldesigner](../media/er-financial-dimensions-guides-data-model.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

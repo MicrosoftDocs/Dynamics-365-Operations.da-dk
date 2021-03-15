@@ -96,3 +96,6 @@ Hvert felt har en særskilt virkning på posteringen, når du redigerer den:
 - **Rediger kasserabatbetingelserne:** - Kasserabatterne ændres på basis af basisdatoen og kasserabatbetingelserne.
 
 Når du er færdig med at redigere betalingsindstillingerne, skal du vælge **Luk** for at gemme ændringerne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

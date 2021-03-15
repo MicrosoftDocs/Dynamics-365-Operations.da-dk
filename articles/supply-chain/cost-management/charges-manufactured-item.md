@@ -39,3 +39,6 @@ Gebyrerne for en produceret vare medtages altid i varens enhedsomkostning til br
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

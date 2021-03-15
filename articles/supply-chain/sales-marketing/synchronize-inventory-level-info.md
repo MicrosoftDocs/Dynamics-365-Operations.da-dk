@@ -92,3 +92,6 @@ Du kan anvende filtre i Avanceret forespørgsel og filtrering, så kun bestemte 
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktlager (Supply Chain Management til Field Service): Produktlager
 
 [![Skabelontilknytning i dataintegration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

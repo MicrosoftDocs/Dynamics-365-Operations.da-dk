@@ -118,3 +118,6 @@ Finance and Operations-felt | Tilknytningstype | Customer Engagement-felt | Stan
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

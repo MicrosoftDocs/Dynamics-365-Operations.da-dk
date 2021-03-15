@@ -87,3 +87,6 @@ Gør følgende for at ignorere betalinger og kreditnotaer ved beregning af rykke
 
 1. Gå til **Navigationsrude > Moduler > Kredit > Opsætning > Debitorparametre**, og klik på fanen **Rykkere**. 
 2. Vælg **Ja** for **Ignorere betalinger og kreditnotaer ved beregning af rykkerkoden**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

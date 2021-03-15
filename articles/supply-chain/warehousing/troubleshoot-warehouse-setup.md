@@ -39,3 +39,6 @@ Du kan ikke bruge nogen anden rolle end administrator til at få adgang til appe
 ### <a name="issue-resolution"></a>Problemløsning
 
 Appemulatoren for mobilenheden er konfigureret til kun at fungere sammen med administratorkontoen. Det anbefales, at du bruger selve lagerstedsappen til alle test- og live-procesformål.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

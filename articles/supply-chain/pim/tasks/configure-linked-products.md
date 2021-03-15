@@ -39,3 +39,6 @@ Denne procedure gennemgår konfiguration af tilknyttede produkter. Denne procedu
 10. Angiv et tal i feltet Antal.
 11. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

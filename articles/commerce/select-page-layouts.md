@@ -79,3 +79,6 @@ Benyt følgende fremgangsmåde for at vælge et andet layout til en eksisterende
 
 [Oprette dynamiske e-handelssider baseret på URL-parametre](create-dynamic-pages.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

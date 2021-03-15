@@ -57,3 +57,6 @@ En ressourcegruppe er et sæt operationsressourcer, der normalt svarer til den f
 6. Find og vælg den ønskede post på listen.
 7. Klik op linket i den valgte række på listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet
 | Alle bølger | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemt visning til bølgebehandling |
 | Panelet Lastplanlægning | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemt visning for arbejdsplanlægningspanelet |
 | Arbejdsdetaljer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemt visning af siden med arbejdsdetaljer |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

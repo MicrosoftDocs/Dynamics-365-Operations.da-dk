@@ -50,3 +50,6 @@ Indstillingerne på fanen **Nummerserie** bestemmer de serier, der skal bruges t
 
 > [!NOTE]
 > Antallet af timer, der er arbejdet, må ikke overstige 1.250, og længden af beskæftigelsen må ikke overstige 12 måneder. Disse maksimale værdier er i overensstemmelse med gældende lovgivning i USA. Endeligt angiver indstillingerne under fanen **Medarbejderselvbetjening** de oplysninger, som ledere kan angive på vegne af deres medarbejdere.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

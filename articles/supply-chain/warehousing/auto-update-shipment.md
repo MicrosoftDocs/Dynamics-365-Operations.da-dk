@@ -139,3 +139,6 @@ Bølgen behandles, og der oprettes arbejde for de reserverede antal på lastlinj
 Hvis en forsendelse har statussen **I bølge** eller højere, vil opdateringer af antallet på en salgsordrelinje ikke blive afspejlet eller valideret mod en lastlinje, der er knyttet til forsendelsen. Ændringer i antallet på en lastlinje skal foretages direkte på lastlinjen.
 
 Validering udføres, efter at der er oprettet arbejde for lastlinjen, og der er foretaget en reservation. En reduktion af antallet på salgsordrelinjen valideres derefter i forhold til arbejdslinjereservationen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

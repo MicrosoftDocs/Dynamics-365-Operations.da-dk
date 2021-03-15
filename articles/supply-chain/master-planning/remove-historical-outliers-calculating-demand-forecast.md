@@ -50,3 +50,6 @@ Du kan udelukke afvigelser for at forbedre prognosens nøjagtighed. Denne opgave
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ Du kan finde flere oplysninger under følgende emner:
 - [afrundingsfunktion](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

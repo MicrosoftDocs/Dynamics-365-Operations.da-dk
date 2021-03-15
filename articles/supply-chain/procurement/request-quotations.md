@@ -246,3 +246,6 @@ I eksemplet nedenfor kan du se højeste og laveste status for tilbudsanmodningss
 | Acceptér et af tilbuddene. (eller mindst én linje) |                          Modtaget                           |                           Accepteret                           |                    Modtaget                    |                    Accepteret                     |                   Modtaget                   |                   Accepteret                    |
 |           Afvis alle andre bud.           |                          Afvist                           |                           Accepteret                           |                    Afvist                    |                    Accepteret                     |                   Afvist                   |                   Accepteret                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

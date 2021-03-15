@@ -78,3 +78,6 @@ Der findes flere kreditstyringsstatistikker i faktaboksen **Statistik for kundek
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier og parametre for delte nummerserier
 
 Der kræves et kladde-ID for at behandle reguleringer af kreditmaksimum. Du skal tilføje det reguleringsnummer for kreditmaksimum, der skal bruges til generering af kladde-id'et.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Du kan også bruge siden **Kreditorudligning for 1099** til at angive eller opda
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

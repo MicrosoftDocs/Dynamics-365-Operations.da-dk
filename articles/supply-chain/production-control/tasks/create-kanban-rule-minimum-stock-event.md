@@ -67,3 +67,6 @@ I denne fremgangsmåde fokuseres der på den opsætning, der er nødvendig for a
 5. Udvid afsnittet Kanbans.
     * Bemærk, at der er oprettet en kanban for at overføre det nødvendige materiale til lagersted 12.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

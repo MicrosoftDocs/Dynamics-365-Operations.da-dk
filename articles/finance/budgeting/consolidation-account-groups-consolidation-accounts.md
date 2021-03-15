@@ -53,3 +53,6 @@ Du kan finde flere oplysninger under [Oprette koncerngrupper og supplerende konc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Dynamics 365 Human Resources bruger niveaukoder med frynsegodesatser, der betale
    | **Beskrivelse** | En kort beskrivelse af frynsegodeniveaukoden. |
 
 4. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

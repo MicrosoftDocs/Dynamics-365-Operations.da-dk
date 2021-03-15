@@ -66,3 +66,6 @@ Denne vejledning viser, hvordan du opretter et område for brændstofindeks, et 
 12. Klik op linket i den valgte række på listen.
 13. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

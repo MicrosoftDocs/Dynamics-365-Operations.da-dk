@@ -88,3 +88,6 @@ Videoen [Sådan bruges påmindelser til at overvåge filtrerede data](https://yo
 Videoen [Indstillinger for påmindelsesregel](https://youtu.be/cpzimwOjicM) (vist ovenfor) er inkluderet på afspilningslisten [Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

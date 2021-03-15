@@ -36,3 +36,6 @@ Du kan registrere og bogføre alle serviceordreposteringer via det projekt, du k
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Denne procedure gennemgår processen med at oprette en ny afskrivningsmodel og k
 6. Angiv et tal i feltet Levetid.
     * Bemærk, at værdien i Afskrivningsperioder beregnes efter angivelse af levetid.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

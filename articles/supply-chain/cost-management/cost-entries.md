@@ -71,3 +71,6 @@ Siden **Omkostningsposter** gør det muligt at filtrere efter dokument-id og dok
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

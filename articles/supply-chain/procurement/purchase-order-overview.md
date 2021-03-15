@@ -91,3 +91,6 @@ Feltet **Godkendelsesstatus** bruges, når en IO gennemgår en gennemsynsproces 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

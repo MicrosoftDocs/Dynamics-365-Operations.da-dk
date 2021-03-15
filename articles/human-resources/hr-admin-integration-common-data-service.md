@@ -126,3 +126,6 @@ Sådan kører du en fuld synkronisering af en tabel mellem Human Resources og Da
 [Ofte stillede spørgsmål om Virtuelle tabeller i Human Resources](hr-admin-virtual-entity-faq.md)<br>
 [Hvad er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminologiopdateringer](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

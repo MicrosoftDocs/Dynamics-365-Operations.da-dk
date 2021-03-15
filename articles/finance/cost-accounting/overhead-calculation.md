@@ -1414,3 +1414,6 @@ I Finansregnskab bogføres en omkostning på 10.000,00 for elektricitet til et d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

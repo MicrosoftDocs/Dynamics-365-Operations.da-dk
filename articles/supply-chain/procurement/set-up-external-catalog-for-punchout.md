@@ -112,3 +112,5 @@ Hvis der er anmodet om et produkt fra det eksterne kreditorkatalog, kan det ekst
 
 - [Forbedringer af indkøbs-cXML](purchasing-cxml-enhancements.md)
 - [Bruge eksterne kataloger til PunchOut e-indkøb](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

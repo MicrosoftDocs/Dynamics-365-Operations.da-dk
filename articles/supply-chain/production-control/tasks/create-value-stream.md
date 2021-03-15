@@ -48,3 +48,6 @@ Værdistrømme er driftsenheder, som grupperer et eller flere produktionsflow. H
 2. Luk siden.
 3. Opdater siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

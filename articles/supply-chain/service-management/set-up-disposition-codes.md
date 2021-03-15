@@ -56,3 +56,6 @@ Du kan også angive en årsagskode til at forklare, hvorfor en vare blev returne
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ I følgende illustration vises et eksempel på resultatdiagrammet.
 ![Visualisering af zone vs. arbejdsstatus](media/work-viz-chart.png "Visualisering af zone vs. arbejdsstatus")
 
 Dette diagram indeholder to zoner, der hedder **PRODUKTION** og **BULK**, plus en zone med navnet **Blank**. Zonen **Blank** repræsenterer alle de arbejdslinjer, der ikke er medlemmer af nogen zoner. Diagrammet viser altid alle ikke-relaterede filtrerede data som **Blank**, så det giver så høj synlighed som muligt. I området **PRODUKTION** vises tre lukkede linjer og fire åbne linjer i diagrammet. I området **BULK** vises fire lukkede linjer og én åben linje og 24 annullerede linjer i diagrammet. Endelig viser diagrammet otte lukkede linjer, der ikke indgår i en zone og derfor er angivet som **Blank**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

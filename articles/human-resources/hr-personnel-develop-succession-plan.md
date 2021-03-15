@@ -56,3 +56,6 @@ Efterhånden som organisationen vokser, skal du begynde at planlægge efter hina
 27. Vælg **Resultat**.
 28. Vælg **Rapport**. Rapporten viser de bedste forekomster øverst i rapporten. Du kan se, at der er vist et kløftelement. En kløft er forskellen mellem kompetencesøgningsniveau og personens færdighedsniveau.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

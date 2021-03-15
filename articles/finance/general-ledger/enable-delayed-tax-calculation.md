@@ -64,3 +64,6 @@ Systemet giver prioriteten til indstillingen for kladdehovedet. Denne indstillin
 4. Under fanen **Opsætning** skal du angive indstillingen **Forsinket momsberegning** til **Ja**.
 
 ![Billede af siden Finanskladde](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

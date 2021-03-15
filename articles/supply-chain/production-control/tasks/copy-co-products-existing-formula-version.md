@@ -53,3 +53,6 @@ Denne procedure viser, hvordan du kopierer samprodukter fra en eksisterende form
 6. Klik på OK.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

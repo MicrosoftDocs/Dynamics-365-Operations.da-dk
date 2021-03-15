@@ -54,3 +54,6 @@ For at få hjælp til hurtigt at måle, hvor meget en serviceordre haster, under
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

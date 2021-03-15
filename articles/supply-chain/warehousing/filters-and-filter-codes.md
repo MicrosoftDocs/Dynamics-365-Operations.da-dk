@@ -165,3 +165,6 @@ Benyt følgende fremgangsmåde for at konfigurere kreditorfilterkoder.
 ## <a name="see-also"></a>Se også
 
 [Yderligere oplysninger finder du i blogindlægget om WMS-Warehouse-filterkoder](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

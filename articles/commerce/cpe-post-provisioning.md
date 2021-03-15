@@ -163,3 +163,6 @@ Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ Du kan justere forskelle i den optalte værdi og derefter acceptere den optælli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

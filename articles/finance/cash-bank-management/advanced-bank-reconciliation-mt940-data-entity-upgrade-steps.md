@@ -63,3 +63,6 @@ Brug følgende trin til at tilføje importenhed for bankkontoudtog, der underst�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

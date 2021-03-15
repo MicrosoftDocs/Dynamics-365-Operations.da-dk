@@ -57,3 +57,6 @@ Den måde, du opbygger hierarkiet af arbejdssteder på, afhænger af virksomhede
 I følgende figur vises et eksempel på arbejdssteder, der er baseret på kunder.
 
 ![Diagram, der viser arbejdssteder baseret på kunder](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

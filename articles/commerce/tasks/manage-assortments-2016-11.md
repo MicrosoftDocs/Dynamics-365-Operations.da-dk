@@ -54,3 +54,6 @@ Denne fremgangsmåde viser, hvordan du kan oprette og udgive et nyt produktudval
 1. Klik på Publicer.
 2. Klik på Ja.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

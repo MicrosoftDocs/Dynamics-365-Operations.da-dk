@@ -150,3 +150,6 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 
 3. Angiv navnet på tilføjelsesprogrammet elektronisk faktureringsmiljøet i feltet **Miljø**.
 4. Vælg **Gem**, og luk derefter siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

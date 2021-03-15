@@ -123,3 +123,6 @@ Arbejdsgangene for **Reguleringer af kreditmaksimum** kan bruges til at sende kr
 
 > [!NOTE]
 > Når du opretter arbejdsgangen **Reguleringer af kreditmaksimum**, kan du konfigurere den, så reguleringerne automatisk bogføres, efter at linjerne er godkendt. Du skal blot medtage opgaven **Bogfør kladde automatisk** i arbejdsgangen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ På siden **Aktivposter** vises de transaktioner, der enten øger eller reducere
 Hvis du vil have vist udgiftsposteringer for leasingen, skal du vælge en leasingaftale på siden **Leasingoversigt** og derefter vælge **Kartoteker** for at åbne de leasingkartoteker, der er tilknyttet leasingposten. Vælg derefter **Udgiftsposteringer**.
 
 På siden **Udgiftsposteringer** vises alle de udgifter, der er bogført i forhold til leasingaftalen, f. eks. renteudgifter, afskrivningsudgifter og eventuelle afviklede omkostninger.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ De eksempler, der beskrives her, viser, at alle de tællerregistreringer, der ud
 
 ![Figur 4](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

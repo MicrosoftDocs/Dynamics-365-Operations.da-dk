@@ -55,3 +55,6 @@ I dette emne beskrives, hvordan du opdaterer en salgsordre, når varerne er afse
 19. Vælg **Pluk og pak** i handlingsruden.
 20. Vælg **Følgeseddel**. Siden **Følgeseddelkladde** indeholder alle følgeseddeldokumenter, der oprettes for din ordre. Du kan gennemse detaljerne for hvert dokument og udskrive dem, hvis du ønsker.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

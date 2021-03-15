@@ -62,3 +62,6 @@ Det grafiske design af brugergrænsefladen for MPOS og Cloud POS styres af penge
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

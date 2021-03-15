@@ -59,3 +59,6 @@ Klik på **Servicestyring** \> **Periodisk** \> **Planlægningstavle**.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

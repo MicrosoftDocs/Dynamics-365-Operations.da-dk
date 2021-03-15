@@ -60,3 +60,6 @@ Hvis du vil konfigurere disse oplysninger, skal du oprette en bestemmelse, som d
 ## <a name="warehouse-management"></a>Lokationsstyring
 
 Når en forsendelse udarbejdes, kan der udskrives flere nye rapporter. Disse rapporter bruger de oplysninger, du har angivet i Administration af produktoplysninger.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

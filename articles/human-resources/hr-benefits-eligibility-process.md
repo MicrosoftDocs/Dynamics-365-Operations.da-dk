@@ -54,3 +54,6 @@ Denne procedure viser, hvordan frynsegodeberettigelsesprocessen fungerer. Når p
 25. Åbn kolonnefilteret Status.
 26. Sortér A til Z
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

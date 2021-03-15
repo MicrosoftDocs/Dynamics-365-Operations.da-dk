@@ -246,3 +246,6 @@ C. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

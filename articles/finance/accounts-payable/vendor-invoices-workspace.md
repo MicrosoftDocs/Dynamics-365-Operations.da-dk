@@ -116,3 +116,6 @@ Følgende tabel viser de visualiseringer, der er tilgængelig på hver rapportsi
 | Fakturaer, der ikke blev importeret | <ul><li>Fakturaer, der ikke blev importeret</li><li>Fakturaer, der ikke blev importeret, efter firma</li></ul> |
 | Årsager til automatiseringsfejl | <ul><li>Mislykkede fakturaer</li><li>Mislykkede fakturaer efter firma</li><li>Mislykkede fakturaer efter kreditorgruppe</li></ul> |
 | Workflowsstatus                | <ul><li>Fakturaer i arbejdsproces</li><li>Arbejdsprocesforekomster af kreditorfaktura</li><li>Tildeling pr. godkender</li><li>Arbejdsproces for kreditorfakturaer pr. firma</li><li>Gennemsnitligt antal dage i arbejdsgang pr. godkender</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

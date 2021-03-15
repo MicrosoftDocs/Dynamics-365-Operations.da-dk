@@ -37,3 +37,6 @@ Hvis en importeret faktura er underlagt afsendelse til arbejdsgang-processen, ka
 - **Midlertidigt afbrudt** – De automatiserede processer, der er defineret på siden **Kreditorparametre**, er kørt, men mindst ét trin i processen mislykkedes. Statussen **Afbrudt midlertidigt** anvendes også, hvis feltet **Medtag i automatisk behandling** er angivet til **Nej**. Du kan få vist fejlene ved at vælge **Vis seneste resultater**.
 - **I arbejdsgang** – Den importerede faktura er sendt til arbejdsgangssystemet enten af den automatiske afsendelse til arbejdsgang eller manuelt.
 - **Fuldført arbejdsgang** – Arbejdsgangsprocessen er fuldført for den importerede faktura.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

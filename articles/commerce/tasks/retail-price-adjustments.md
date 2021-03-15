@@ -52,3 +52,6 @@ Denne procedure gennemgår oprettelse af en prisjustering for handel. En prisjus
 14. Luk siden.
 15. Opdater siden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

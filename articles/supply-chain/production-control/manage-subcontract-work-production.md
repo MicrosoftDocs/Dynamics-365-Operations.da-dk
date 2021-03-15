@@ -102,3 +102,6 @@ Lagerstedet for udlagring og lokaliteten af en underleverandørs ressourcegruppe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Denne opgave viser, hvordan du kan oprette frynsegodeelementer, der skal bruges,
 6. Angiv en dato og et klokkeslæt i feltet Gyldig.
 7. Klik på Opret frynsegode.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

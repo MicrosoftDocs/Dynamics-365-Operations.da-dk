@@ -45,3 +45,6 @@ Denne guide anvender demofirmaet USMF.
 6. Klik på OK.
 7. Klik på Ja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ I arbejdsområdet **Datastyring** kan du få en oversigt over målenheder, relat
 
     ![Figur 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

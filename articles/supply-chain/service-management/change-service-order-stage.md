@@ -40,3 +40,6 @@ Udfør disse trin for at flytte en serviceordre til næste trin i arbejdsgangen 
 4.  I formularen **Skift servicestadie** skal du vælge det relevante stadie.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

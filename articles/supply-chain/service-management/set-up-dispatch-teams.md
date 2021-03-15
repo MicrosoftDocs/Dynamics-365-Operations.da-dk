@@ -53,3 +53,6 @@ Dette emne beskriver, hvordan et planlægningsteam oprettes. Når du har oprette
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

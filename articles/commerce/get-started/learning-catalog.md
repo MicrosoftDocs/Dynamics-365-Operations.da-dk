@@ -140,3 +140,6 @@ Find den rigtige online-træning, personlige workshops og begivenheder for din r
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

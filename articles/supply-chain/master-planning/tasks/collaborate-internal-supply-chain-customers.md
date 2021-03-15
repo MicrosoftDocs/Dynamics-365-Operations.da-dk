@@ -42,3 +42,6 @@ Denne fremgangsmåde viser, hvordan du får vist alle forslag, der opfyldes af e
 8. Udvid sektionen Upstream detaljer om efterspørgsel.
     * I dette afsnit finder du oplysninger om, hvordan behovet opfyldes. Du skal måske vente på, at varedisponering kører i forsyningsfirmaet, før du kan se yderligere oplysninger her.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

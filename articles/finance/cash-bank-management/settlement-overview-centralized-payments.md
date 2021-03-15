@@ -107,3 +107,6 @@ For kreditorbetalinger bruger posteringerne for forfalden til og forfalden fra i
 
 ## <a name="withholding-tax"></a>A-skat
 Den kreditorkonto, der er tilknyttet fakturaen, bruges til at bestemme, om der skal beregnes A-skat. Hvis der beregnes A-skat, beregnes den i den juridiske enhed, der er tilknyttet fakturaen. Hvis der anvendes forskellige valutaer i de juridiske enheder, bruges valutakursen fra den juridiske enhed, der er tilknyttet fakturaen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

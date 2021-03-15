@@ -69,3 +69,6 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 11. Klik på OK.
     * Gennemse det genererede output. Bemærk, at der er oprettet en enkelt XML-node for hver vedhæftet fil. Indholdet i den vedhæftede fil udfyldes til XML-outputtet i MIME-tekstformat (base64).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

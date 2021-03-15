@@ -45,3 +45,6 @@ Flere konfigurationsindstillinger har indflydelse på, hvordan aktivleasing fung
 
     > [!NOTE]
     > Det anbefales, at du beholder denne indstilling angivet til **Nej**. Indstillingen af denne funktion bruges som en validering og kontrol for at forhindre, at et lukket kartotek afskrives ved en fejltagelse. Hvis du holder indstillingen angivet til **Nej**, kan du hjælpe med at bevare den bogførte nettoværdi og fremtidige afskrivningsberegninger.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ Dokument/kladde er angivet til Beløb inkl. moms = Nej Beløb på transaktionsli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

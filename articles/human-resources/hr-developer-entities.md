@@ -183,3 +183,6 @@ Følgende Dataverse-tabeller er tilgængelige baseret på Human Resources-enhede
 [Ofte stillede spørgsmål om Virtuelle tabeller i Human Resources](hr-admin-virtual-entity-faq.md)<br>
 [Hvad er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminologiopdateringer](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

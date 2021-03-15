@@ -41,3 +41,6 @@ Hvis der er en konflikt med kontoplanen, kan afgrænsningstegnet for kontoplanen
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Sådan afgør du, om dit miljø kræver opdaterede afgrænsningstegn 
 Hvis afgrænsningstegnene i det opgraderede miljø er i konflikt, kan systemet blive ustabilt ved indtastning af værdier ved segmenteret postkontrol eller dimensionspostkontrol. Det betyder, at du skal altid bruge opslag eller en pop op-menu ved indtastning af kombinationer af konti og dimensioner.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -217,3 +217,6 @@ Arbejdsundtagelser styrer funktionsmåden ved kort plukning. Følg disse trin fo
 1. Vælg **Kort pluk**.
 1. Vælg den arbejdsundtagelseskode, som du har oprettet til dette scenarie.
 1. Hvis du valgte den korrekte undtagelse, skal afkrydsningsfeltet **Annuller og udskriv igen** være tilgængeligt. Markér dette afkrydsningsfelt, og bekræft. Når det er bekræftet, genberegnes serien for etiketrulle, der er identificeret af feltet **Etiket-build-id**, på basis af det ændrede antal på arbejdslinje. Derefter udskrives den på den angivne printer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

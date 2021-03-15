@@ -60,3 +60,6 @@ Udligningen er på 100,00 og indeholder en betaling på 99,00 og en rabat på 1,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

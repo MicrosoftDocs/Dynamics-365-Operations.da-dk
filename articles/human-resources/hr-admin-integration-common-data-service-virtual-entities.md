@@ -221,3 +221,6 @@ I slide-out-ruden vises de seneste udførelsesresultater for processen. Du kan s
 [Oprette og redigere virtuelle tabeller, der indeholder data fra en ekstern datakilde](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Hvad er Power Apps-portaler?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Oversigt over oprettelse af apps i Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

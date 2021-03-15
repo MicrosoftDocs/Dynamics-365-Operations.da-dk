@@ -149,3 +149,6 @@ Desuden kan du få vist likviditetsbudgetteringsdata for bestemte konti, ordrer 
 - **Forsyningsprognose**: Vælg **Likviditetsbudgetter** for at få vist fremtidige pengestrømme, der er knyttet til den valgte vareforsyningsprognose.
 - **Behovsprognose**: Vælg **Likviditetsbudgetter** for at få vist fremtidige pengestrømme, der er knyttet til den valgte varebehovsprognose.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

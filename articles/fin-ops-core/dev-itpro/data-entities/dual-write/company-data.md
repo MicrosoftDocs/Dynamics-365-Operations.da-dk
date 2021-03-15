@@ -102,3 +102,6 @@ Hvis du vil anvende filtrering baseret på firmakonteksten i de brugerdefinerede
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Anvende firmakontekst":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

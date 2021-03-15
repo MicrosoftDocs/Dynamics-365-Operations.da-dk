@@ -88,3 +88,6 @@ Hvis du vil føje et tekstblokmodul til en ny side og angive de påkrævede egen
 
 [Videoafspillermodul](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

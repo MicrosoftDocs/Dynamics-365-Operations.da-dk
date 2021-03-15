@@ -98,3 +98,6 @@ Du kan nu knytte en medarbejder til en fast løn-struktur. Åbn siden **Medarbej
 
 Systemet kontrollerer, at det kompensationsbeløb, der er angivet for en kompensationsstruktur af typen klasse eller omfang ligger inden for de minimale og maksimale referencepunkter for det givne kompensationsniveau i medarbejderens job. Hvis kompensationsbeløbet ligger uden for det tilladte interval, vises en advarsel eller fejlmeddelelse, afhængigt af det toleranceniveau, der er angivet for fast løn-strukturen.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

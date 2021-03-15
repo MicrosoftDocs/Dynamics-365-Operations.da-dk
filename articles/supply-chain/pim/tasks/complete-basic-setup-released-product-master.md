@@ -52,3 +52,6 @@ Dette er den tredje procedure ud af otte, som forklarer, hvordan du kan opbygge 
 20. Luk siden.
 21. Luk formularen **Frigivne produktdetaljer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Varekontrol for klyngepluk fungerer på samme måde, som når du kontrollerer va
 |        Indstilling        |                                    Beskrivelse                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Bekræftelse af produkt | Gør det muligt for dig at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

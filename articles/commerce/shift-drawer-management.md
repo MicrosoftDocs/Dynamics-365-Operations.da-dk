@@ -157,3 +157,6 @@ Gå til **Retail og Commerce \> Kanaler \> Butikker \> Alle butikker \> Opgørel
 Denne opsætning hjælper med til at sikre, at back office-opgørelser medtager de samme posteringer som skift på POS-enehden, og at dataene opsummeres efter dette skift.
 
 Yderligere oplysninger om opgørelse og lukkemetoder finder du i [Gemme konfigurationer for detailopgørelser](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

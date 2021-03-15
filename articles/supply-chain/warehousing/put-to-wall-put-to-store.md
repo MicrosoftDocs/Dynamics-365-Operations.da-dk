@@ -540,3 +540,6 @@ Hvis sorteringspositionerne skal lukkes manuelt, skal indstillingen **Luk sorter
 
 > [!IMPORTANT]
 > Når der er oprettet et overførselsarbejde ud fra sorteringspositionen, må du ikke annullere arbejdet. Ellers vil positionen og containerne i den blive slettet fra systemet og ikke være tilgængelig til viderebehandling. Lageret vil også blive fjernet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

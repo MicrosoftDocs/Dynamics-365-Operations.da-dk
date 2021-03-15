@@ -47,3 +47,6 @@ Denne procedure gennemgår oprettelse af en ny visuel profil for POS. En visuel 
 17. Klik op linket i den valgte række på listen.
 18. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

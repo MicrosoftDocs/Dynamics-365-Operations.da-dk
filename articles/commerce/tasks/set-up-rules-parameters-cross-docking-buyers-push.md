@@ -47,3 +47,6 @@ Denne procedure viser trinnene til oprettelse af opfyldningsregler. Opfyldningsr
 14. Angiv et tal i feltet Vægt.
 15. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

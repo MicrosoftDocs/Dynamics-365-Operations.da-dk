@@ -48,3 +48,6 @@ Yderligere oplysninger finder du i afsnittet [Konfigurer og generer filer til po
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

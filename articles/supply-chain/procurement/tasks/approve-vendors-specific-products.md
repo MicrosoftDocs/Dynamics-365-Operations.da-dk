@@ -61,3 +61,6 @@ Denne fremgangsmåde viser, hvordan du godkender kreditorer for bestemte produkt
 31. Luk siden.
 32. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

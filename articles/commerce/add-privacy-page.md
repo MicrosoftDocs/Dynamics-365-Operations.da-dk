@@ -108,3 +108,6 @@ Der kan nu refereres til fragmentet i skabelonen for andre webstedssider. Når d
 [Cookie-compliance](cookie-compliance.md)
 
 [Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Hvis du vil føje et fanemodul til en side og angive de påkrævede egenskaber, 
 [Harmonikamodul](add-accordion.md)
 
 [Tekstblokmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

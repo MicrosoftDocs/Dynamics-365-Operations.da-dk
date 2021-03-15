@@ -82,3 +82,6 @@ Hvis du konfigurerer et batchbehandlingsvindue, sendes der en påmindelse, når 
 
 1. Gå til **Systemadministration** &gt; **Periodiske opgaver** &gt; **Påmindelser** &gt; **Påmindelser udløst af forfaldsdato**.
 2. I dialogboksen **Påmindelser udløst af forfaldsdato** skal du angive de relevante oplysninger.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

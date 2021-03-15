@@ -51,3 +51,6 @@ Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at angiv
 21. I feltet **Betalingsreference** skal du angive en betalingsreference. Betalingsreferencen er kun påkrævet, hvis du markerer, at betalingen skal medtages på et indbetalingsbilag.  
 22. Klik på **Bogfør** i **handlingsruden** for at bogføre debitorbetalinger. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

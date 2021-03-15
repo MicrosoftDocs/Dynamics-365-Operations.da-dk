@@ -73,3 +73,6 @@ Købsordren skal bekræftes, før produktkvitteringen kan behandles. I dette eks
 6. Skjul sektionen **Linjer**.
 7. Vælg **OK** for at bogføre kvitteringen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

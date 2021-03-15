@@ -56,3 +56,6 @@ Funktioner til generisk regnskabsfordeling indeholder følgende indstillinger ti
 I version 10.0.13 er der tilføjet en funktion, der validerer regnskabsfordelingstabellen for at sikre, at nye felter konfigureres korrekt. Denne funktion kaldes **Aktivér yderligere validering af data for dokumenter ved hjælp af kildedokumentets regnskabsstruktur**. Hvis du vil bruge denne funktion, skal du aktivere den ved hjælp af arbejdsområdet **Funktionsstyring**. Hvis du vil aktivere funktionen, skal du søge efter funktionsnavnet i feltet **Søg** på siden **Funktionsstyring** og derefter vælge **Aktivér nu**.
 
 Du kan finde flere oplysninger under [Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ I Microsoft Dynamics 365 Human Resources opretter ventedage en milepæl, der bru
    | **Karensdag** | Vælg den ventedato, der skal bruges til at beregne ventedatoen. |
 
 4. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Nogle gange kan det være nødvendigt at tilbageføre en afsluttet lagerlukning 
 > [!NOTE] 
 > Det er kun den sidste lagerperiode, der blev lukket, som kan åbnes igen. Hvis du vil tilbageføre en tidligere lagerlukning, skal du tilbageføre hver efterfølgende lagerlukning for sig, og du skal starte med den seneste lukning.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

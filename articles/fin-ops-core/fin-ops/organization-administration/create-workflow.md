@@ -83,3 +83,6 @@ Udfør følgende trin, når du er klar til at gemme og aktivere arbejdsgangen.
 
     - Hvis du vil aktivere denne version af arbejdsgangen, skal du klikke på **Aktivér den nye version**. Når en arbejdsgang er aktiv, kan brugerne sende dokumenter til behandling og godkendelse i arbejdsgangen.
     - Hvis du ikke vil aktivere denne version, skal du klikke på **Aktivér ikke den nye version**. Du kan aktivere arbejdsgangen senere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

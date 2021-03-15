@@ -62,3 +62,6 @@ Her er nogle typiske kilder til en afvigelse i **produktionserstatning**:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

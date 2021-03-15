@@ -38,3 +38,6 @@ I følgende scenarier beskrives det, hvordan du kan udføre en forsendelseskonso
 
 - [Forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
 - [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

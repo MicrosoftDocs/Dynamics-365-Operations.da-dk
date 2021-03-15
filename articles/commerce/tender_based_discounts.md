@@ -71,3 +71,6 @@ Detailhandlere vælger ofte at udelukke nogle produkter, f.eks. nye varer eller 
 
 > [!NOTE]
 > Når konfigurationen **Undgå alle rabatter** er angivet til **Ja**, vil der ikke blive anvendt rabatter på produktet. Der vil heller ikke blive anvendt betalingsmiddelbaserede rabatter.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

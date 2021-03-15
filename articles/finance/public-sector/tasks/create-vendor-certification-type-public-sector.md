@@ -35,3 +35,6 @@ Du kan oprette enhver form for certificering, som kreditorerne har, og tildele d
 4. Skriv en værdi i feltet Beskrivelse.
 5. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Hvis den samme person skal have adgang til kreditorportalen for flere kreditorko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

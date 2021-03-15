@@ -73,3 +73,6 @@ Når der bogføres en økonomisk postering, ændres statussen for transaktionspo
 -   Lagerkladder med negativ mængde, f.eks. bevægelse, driftsregnskab, optælling, styklister og overførsel
 
 Transaktioner, der reducerer antallet, bogføres til den løbende gennemsnitskostpris. Proceduren til lagerlukning er derfor påkrævet for at udligne afgangsposteringer i forhold til tilgangsposteringer på baggrund af den lagermodel, der er knyttet til hver vare.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

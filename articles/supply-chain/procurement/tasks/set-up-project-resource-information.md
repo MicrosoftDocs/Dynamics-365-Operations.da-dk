@@ -51,3 +51,6 @@ Denne procedure viser, hvordan du opretter en projektressource. Denne opgave bru
 20. Klik på Gem.
 21. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

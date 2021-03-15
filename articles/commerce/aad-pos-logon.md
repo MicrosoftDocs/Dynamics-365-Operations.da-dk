@@ -73,3 +73,6 @@ Felterne **Alias**, **UPN** og **Eksternt under-id** under fanen **Commerce** p√
 [Oprette en detailfunktionalitetsprofil](retail-functionality-profile.md)
 
 [ Konfigurere en arbejder](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

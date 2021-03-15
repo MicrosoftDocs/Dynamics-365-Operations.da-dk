@@ -83,3 +83,6 @@ Hvis du vil tildele konti til de leasingaftaler og de grupper, der er oprettet, 
     > [!NOTE]
     > Den valgte finans- eller driftskonto debiteres, når fakturaen for den planlagte udgift bogføres.
     > **Forskudt leasingaftaleudgift** bruges som bogføringstype for udligningsomkostninger, men bogføres på defineret **Modkonto** i **Betalingsplanlinjerne for udligningsomkostninger** i formen leasingoplysninger eller leasingkartotek.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

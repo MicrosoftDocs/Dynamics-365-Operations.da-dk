@@ -58,3 +58,6 @@ Denne fremgangsmåde viser, hvordan du bruger en købsaftale, når du opretter e
 3. Luk siden.
 4. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

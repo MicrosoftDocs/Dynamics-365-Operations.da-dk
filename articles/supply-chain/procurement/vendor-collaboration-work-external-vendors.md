@@ -258,3 +258,6 @@ Den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, kan opret
 - %createddate%
 
 Hvis der kræves en ændring, og den sendes, når tilbudsanmodningen er sendt, vil tilbudsanmodningen blive sendt igen for alle kreditorer, der inviteret. Det publicerede dokument opdateres også på siden **Åbne publicerede tilbudsanmodninger**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

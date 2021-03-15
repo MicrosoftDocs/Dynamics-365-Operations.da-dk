@@ -77,3 +77,6 @@ Følg disse trin, hvis du til tilføje et hurtig visning-modul til et produktsam
 [Produktsamlingsmodul](product-collection-module-overview.md)
 
 [Modul til søgeresultater](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -170,3 +170,6 @@ Når indstillingen **Opret kundeordre i asynkron tilstand** er indstillet til **
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Hybride kundeordrer](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

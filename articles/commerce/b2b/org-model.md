@@ -62,3 +62,6 @@ Brugere i Commerce Headquarters kan se på egenskabsværdierne for alle debitorp
 [Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder](payment-method.md)
 
 [Angive produktantalsgrænser for B2B-e-handelswebsteder](quantity-limits.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

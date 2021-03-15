@@ -100,3 +100,6 @@ Det er en god idé at definere en entydig dokumenttype for rettelser ved hjælp 
 [Konfigurere kvalitetsordrer](tasks/set-up-quality-orders.md)
 
 [Kontrollere kvaliteten af varer](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

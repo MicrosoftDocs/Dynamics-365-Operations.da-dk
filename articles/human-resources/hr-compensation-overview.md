@@ -132,3 +132,6 @@ Når du har kørt en proceshændelse, kan du anbefale justeringer i en medarbejd
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

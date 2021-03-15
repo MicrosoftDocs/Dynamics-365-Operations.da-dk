@@ -76,3 +76,6 @@ Beskrivelser af disse begreber finder du i [Nøglebegreber for opkrævningsstyri
 [Kredithold for salgsordrer](./cm-sales-order-credit-holds.md)
 
 [Periodiske opgaver for kundekreditstyring](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Under test af funktioner i prøveversion eller afprøvning af nye funktioner, ka
 [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md)</br>
 [Livscykluspolitik for software](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

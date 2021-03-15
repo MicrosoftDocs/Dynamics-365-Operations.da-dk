@@ -99,3 +99,6 @@ Hvis du vil samarbejde med Microsoft om værktøjer og processer til tilpasning 
 [Ressourcer til arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)  
 [Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Brugerdefineret GitHub-hjælpelager](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

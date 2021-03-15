@@ -78,3 +78,6 @@ Denne procedure viser, hvordan du konfigurerer et fordelskundeprogram med to niv
 39. Luk siden.
 40. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

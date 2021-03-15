@@ -56,3 +56,6 @@ Denne opgave blev oprettet ved hjælp af USSI-datasættet.
 21. Skriv en værdi i feltet **Kommentar**.
 22. Klik på **Send**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

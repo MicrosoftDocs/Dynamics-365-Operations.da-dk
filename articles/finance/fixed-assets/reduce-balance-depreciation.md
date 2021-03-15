@@ -84,3 +84,6 @@ Når metoden Saldoværdi benyttes, beregnes der 30 % af afskrivningsgrundlaget (
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

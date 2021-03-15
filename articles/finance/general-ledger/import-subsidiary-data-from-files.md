@@ -60,3 +60,6 @@ Dette emne forklarer, hvordan du forbereder data fra eksterne systemer, så de k
 8. Angiv indstillingen **Batchafvikling** til **Ja** for at køre konsolideringen som et batchjob på et bestemt tidspunkt. Hvis konsolideringen skal køres med det samme, skal du vælge **OK**. 
 
 De posteringer og saldi, der er angivet for konsolideringen i datterselskaberne, føjes til de relevante konti i den konsoliderede juridiske enhed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

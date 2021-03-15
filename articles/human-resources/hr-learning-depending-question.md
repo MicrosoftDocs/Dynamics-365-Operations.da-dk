@@ -56,3 +56,6 @@ Betingede spørgsmål, kan du angive, hvilken opfølgende spørgsmål vises til 
 10. Vælg '"Spørgsmål\Jeg betales rimeligt for det arbejde, jeg udfører.".
     * Bemærk, at spørgsmålstræet opdateres for at vise afhængigheden.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

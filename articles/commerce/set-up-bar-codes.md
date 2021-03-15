@@ -46,3 +46,6 @@ Du kan oprette stregkoder manuelt eller automatisk. Udfør følgende opgaver i d
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Konfigurere stregkodemasker](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

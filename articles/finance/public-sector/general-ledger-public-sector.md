@@ -64,3 +64,6 @@ Du kan bruge afledte finansielle hierarkier til at indsamle og analysere data fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

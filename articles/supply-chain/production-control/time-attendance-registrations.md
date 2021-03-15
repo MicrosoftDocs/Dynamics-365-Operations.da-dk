@@ -118,3 +118,6 @@ Arbejdere med jobopgaver, der ikke kræver øjeblikkelig feedback, som det er ti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

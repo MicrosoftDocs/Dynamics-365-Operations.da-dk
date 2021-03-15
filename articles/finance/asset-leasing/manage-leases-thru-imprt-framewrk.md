@@ -82,3 +82,6 @@ Hvis du bruger struktur til leasingimport til at opdatere leasingaftaler, og pro
 
 1. Gå til **Aktivleasing \> Struktur af importstruktur \> Opsætning \> Opdater feltvalg**.
 2. På den side, der vises, skal du vælge de felter, der skal opdateres, og derefter vælge den grønne pil for at flytte dem til listen **Valgte felter**. Det er kun felter på listen **Valgte felter**, der kan opdateres ved hjælp af leasingimportpakken.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

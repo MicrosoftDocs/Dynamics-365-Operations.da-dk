@@ -117,3 +117,6 @@ I en kommende udgave af Commerce vil detailhandlere kunne angive standardtilstan
 
 Denne konfiguration er skjult bag et flighting-flag, der kaldes **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** for at hjælpe med at forhindre uventede problemer med ydeevnen. For at få vist indstillingen **Standardtilstand for kundesøgning** i brugergrænsefladen, skal detailhandleren oprette en supportbillet for dennes brugeraccepttest (UAT) og produktionsmiljøer. Når billetten er modtaget, arbejder den tekniske gruppe sammen med detailhandleren for at sikre, at detailhandleren tester i miljøer, der ikke er et produktionsmiljø, for at vurdere ydeevnen og implementere eventuelle nødvendige optimeringer.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffe
 - Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.  
 11. Vælg fanen **Bøger** på siden.
 12. Vælg **Bogfør**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

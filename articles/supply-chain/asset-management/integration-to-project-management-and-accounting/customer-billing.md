@@ -177,3 +177,6 @@ I dette afsnit arbejder du fortsat med den arbejdsordre, du arbejdede på i forr
 1. I handlingsruden skal du under fanen **Fakturering** vælge **Nyt fakturaforslag**.
 1. Markér afkrydsningsfeltet **Vælg** ud for hver linje, du vil fakturere, i sektionen **Projekttransaktioner** i dialogboksen **Opret fakturaforslag**.
 1. Vælg **OK** for at lukke dialogboksen og se fakturaforslaget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

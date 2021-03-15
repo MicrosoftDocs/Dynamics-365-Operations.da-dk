@@ -165,3 +165,6 @@ Du kan ændre de oplysninger, der er nævnt i den foregående tabel for en still
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

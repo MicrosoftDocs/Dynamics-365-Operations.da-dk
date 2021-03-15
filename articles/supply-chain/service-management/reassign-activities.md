@@ -57,3 +57,6 @@ Brug følgende trin til at tildele en aktivitet til en anden arbejder:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

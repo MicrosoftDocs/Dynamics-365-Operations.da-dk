@@ -108,3 +108,6 @@ En arbejder stempler f.eks. ind 10.00 og vælger en fraværskode, der angiver, a
 ### <a name="calculate-and-approve-absence"></a>Beregne og godkende fravær
 
 - Vælg **Tid og fremmøde** &gt; **Gennemse og godkend** &gt; **Godkend eller beregn**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

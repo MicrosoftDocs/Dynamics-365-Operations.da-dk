@@ -48,3 +48,6 @@ Før du bruger funktionen **Åbn i et nyt vindue**, skal du konfigurere browsere
 Funktionen **Åbn i et nyt vindue** er kun tilgængelig, når der er mere end én side åben i vinduet. Desuden lukkes pop-up-vinduet automatisk, når der ikke er flere sider åbent (når du lukker den sidste side i dette vindue). Systemet lukker også åbne sider, når du navigerer til et andet område i programmet. Derfor, hvis du har åbne pop op-vinduer og navigerer til et andet område i programmet, lukkes pop op-vinduerne lukkes automatisk, fordi siderne i disse vinduer blev lukket af systemet.
 
 Topbjælken i pop op-vinduerne viser oplysninger om den virksomhed, som siden blev åbnet i, og er skrivebeskyttet. Pop op-vinduer er også afhængige af hovedbrowservinduet. Hvis hovedvinduet er lukket eller opdateres, bliver alle åbne pop op-vinduer skrivebeskyttet. Hvis denne situation indtræffer, kan du stadig få vist oplysninger i disse vinduer, men du kan ikke interagere med dem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

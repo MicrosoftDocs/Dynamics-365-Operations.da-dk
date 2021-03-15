@@ -41,3 +41,6 @@ Chefen for kompensation og frynsegoder kan tilmelde medarbejdere til planer for 
 8. Slå udvidelse af sektionen Organisationsmæssige overstyringer til eller fra.
     * Hvis medarbejderens præstation skal tages i betragtning, præstationen i forskellige afdelinger eller en anden afdeling end den, der er tildelt på medarbejderens stilling, kan afdelingen tilsidesættes. Kolonnen Procent bør i alt være 100.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

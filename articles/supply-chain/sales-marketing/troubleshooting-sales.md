@@ -112,3 +112,6 @@ Supply Chain Management understøtter i øjeblikket ikke beregningen af provisio
 Bundtvaren er ikke tilgængelig for indkøbsordren, fordi antallet er *0* (nul) på salgsordrelinjerne for bundtvaren, og status er *Annulleret*. Denne funktionsmåde er tilsigtet. Salgsordren køber kun komponenterne i bundtvaren. Den køber ikke selve bundtvaren.
 
 Hvis du skal købe et bundt, skal du overveje, om du vil markere det som en bundtvare, da denne funktionalitet er udviklet til scenarier for indtægtsføring. Yderligere oplysninger om bundtvarer finder du under [Bundter](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

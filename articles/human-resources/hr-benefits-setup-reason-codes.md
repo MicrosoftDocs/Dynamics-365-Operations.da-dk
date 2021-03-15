@@ -79,3 +79,5 @@ Du får vist et banner på siden **Links** i arbejdsområdet til **Frynsegodeadm
 Når årsagskoder er overført til Personalestyring, angives indstillingen for brug af dem i Styring af goder automatisk til **Ja**.
 
 [![Bruge årsagskoder i administration af frynsegoder](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

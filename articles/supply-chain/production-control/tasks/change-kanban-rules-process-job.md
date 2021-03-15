@@ -48,3 +48,6 @@ Denne procedure drejer sig om ændring af den brugte kanban-regel for en bestemt
 7. Klik på Finish.
     * Kanban-jobbet bruger nu en anden kanban-regel. Dette kan være nyttigt ved belastningsudjævning af arbejdsceller.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

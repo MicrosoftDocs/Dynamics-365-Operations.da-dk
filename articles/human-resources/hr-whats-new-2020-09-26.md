@@ -84,3 +84,6 @@ Du kan se en komplet liste over planlagte funktioner og deres planlagte udgivels
 [Oversigt over Dynamics 365 Human Resources 2020 udgivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Opdateringsproces](hr-admin-setup-update-process.md)
 [Administrere funktioner](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

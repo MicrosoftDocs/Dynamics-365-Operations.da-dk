@@ -72,3 +72,6 @@ Når du kører det konfigurerede ER-format, bruges den vedhæftede Word-skabelon
 
 - [Genbruge ER-konfigurationer med Excel-skabeloner til generering af rapporter i Word-format](./tasks/er-design-configuration-word-2016-11.md)
 - [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

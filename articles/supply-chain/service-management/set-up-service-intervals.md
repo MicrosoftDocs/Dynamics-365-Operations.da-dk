@@ -53,3 +53,6 @@ Du vil oprette et serviceinterval på 10 dage.
 ## <a name="related-topics"></a>Relaterede emner
 
 [Intervaller for service](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

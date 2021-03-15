@@ -85,3 +85,6 @@ For at kunne styre dine portaler effektivt skal du forstå Power Apps-portalerne
 - [Opgradering af en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Overflytning af portalkonfiguration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement-apps](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

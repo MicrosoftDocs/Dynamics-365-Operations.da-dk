@@ -106,3 +106,6 @@ Hvis du vil omdirigere en URL-adresse til en anden URL-adresse, skal du følge d
 [Konfigurere dit domænenavn](configure-your-domain-name.md)
 
 [Føje sprog til webstedet](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

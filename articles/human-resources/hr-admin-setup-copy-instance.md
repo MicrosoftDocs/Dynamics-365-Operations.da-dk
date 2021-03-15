@@ -150,3 +150,6 @@ Du kan finde flere oplysninger om brugerdefinerede felter under [Oprette og arbe
 [Fjern en forekomst](hr-admin-setup-remove-instance.md)</br>
 [Opdater proces](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

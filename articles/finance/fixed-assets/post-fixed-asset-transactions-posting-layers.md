@@ -48,3 +48,6 @@ Yderligere oplysninger finder du i afsnittet [Afledte bøger](derived-books.md) 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

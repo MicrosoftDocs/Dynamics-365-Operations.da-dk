@@ -61,3 +61,6 @@ Når du har importeret de historiske behovsdata, kan du generere en behovsprogno
 
 [Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)  
 [Oversigt over dataimport- og -eksportjob](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

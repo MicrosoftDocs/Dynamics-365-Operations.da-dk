@@ -55,3 +55,6 @@ Denne procedure drejer sig om at erstatte en eksisterende kanban-regel med en ny
 1. Angiv Maksimumantal til '100'.
     * Udvid oversigtspanelet Antal for at få vist feltet Maksimalt antal. Hvis du ændrer det maksimale antal til 100, bliver det muligt at behandle op til 100 kanbans.    Dette er det sidste trin i denne opgave.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

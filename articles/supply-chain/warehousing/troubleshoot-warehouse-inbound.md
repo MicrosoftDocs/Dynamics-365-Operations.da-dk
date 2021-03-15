@@ -64,3 +64,6 @@ En ny funktion til håndtering af indgående last, *Overtilgang af lastantal*, l
 1. Overtilgang af lastantal
 
 Du kan finde flere oplysninger under [Bogføre registrerede produktantal i forhold til indkøbsordrer](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

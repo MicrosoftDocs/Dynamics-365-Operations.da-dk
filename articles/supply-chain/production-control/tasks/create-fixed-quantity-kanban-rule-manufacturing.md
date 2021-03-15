@@ -73,3 +73,6 @@ Denne procedure fokuserer på den opsætning, der er nødvendig for at oprette e
     * Dette opretter 5 kanbans.  
     * Bemærk, at der blev oprettet 5 kanbans for 10 hver for denne produktions-kanban-regel. Dette er det sidste trin i denne procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

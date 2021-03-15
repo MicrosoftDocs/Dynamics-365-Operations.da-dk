@@ -65,3 +65,6 @@ I følgende afsnit beskrives virkningen af disse indstillinger. Det forklares og
 - Hvis feltet **Bilagsnummer** er indstillet til **Auto-genereret**, vil importen ikke lykkes. Indstillingen **Auto-genereret** for feltet **Bilagsnummer** understøttes ikke.
 
 Som standard bruger finanskladdeenheden sætbaseret behandling. Når du har evalueret forretningsbehovet for din organisation, kan du ændre indstillingen **Angivet på basis af-behandling** ved at klikke på **Dataenheder** i arbejdsområdet **Datastyring**. Sætbaseret behandling bruges til at gøre importprocessen hurtigere. Hvis du ikke bruger sætbaseret behandling, bliver import af finanskladdeenheden langsommere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

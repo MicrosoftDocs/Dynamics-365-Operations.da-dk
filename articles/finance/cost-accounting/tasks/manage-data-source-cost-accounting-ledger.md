@@ -47,3 +47,6 @@ Du kan bruge denne procedure til at administrere datakilden i Finans for en fina
 14. Vælg Aktuelt i feltet Posteringslag.
 15. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

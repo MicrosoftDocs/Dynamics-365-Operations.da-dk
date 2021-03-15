@@ -82,3 +82,6 @@ Kreditorfakturaen forbliver i tilstanden Afventer, indtil den faktiske kreditorf
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

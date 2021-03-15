@@ -67,3 +67,6 @@ Den konsoliderede juridiske enhed er nu konfigureret til det periodiske job **Ko
 
 > [!NOTE]
 > Inden du kan behandle konsolideringen, skal du klargøre de underordnede juridiske enheder til konsolidering. Du kan finde flere oplysninger i [Konfigurere en juridisk datterselskabsenhed til konsolidering](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

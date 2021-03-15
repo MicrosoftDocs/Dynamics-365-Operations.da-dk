@@ -235,3 +235,6 @@ Afhængigt af landet eller området kan funktionen til elektronisk fakturering k
 - [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
 - [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Italien](e-invoicing-ita-get-started.md)
 - [Elektroniske fakturaer til kunder i Egypten](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

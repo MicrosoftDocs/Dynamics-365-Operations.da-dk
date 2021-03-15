@@ -159,3 +159,6 @@ Når du har fuldført rapporteringsprocessen for en bestemt periode (f.eks. når
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

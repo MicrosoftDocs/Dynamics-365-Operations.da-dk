@@ -51,3 +51,6 @@ I denne procedure kan du oprette en timeseddel ved hjælp af en tom timeseddelsf
 21. Klik på **Send**.
 22. Klik på **Send**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

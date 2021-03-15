@@ -164,3 +164,6 @@ Følgende tabel viser vores websteder. Websteder, der har en stjerne (\*) ud for
 | [Dynamics Community](https://community.dynamics.com/) | Dette websted er vært for blogs, fora og videoer. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Dette websted indeholder oplysninger om evaluering og salg. |
 | [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Dette websted er vært for nogle kursusressourcer, rapporter og hvidbøger, der kan hentes, og er det primære supportwebsted for serviceplanindehavere. Adgang til visse ressourcer på dette websted kan kræve en serviceplan. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

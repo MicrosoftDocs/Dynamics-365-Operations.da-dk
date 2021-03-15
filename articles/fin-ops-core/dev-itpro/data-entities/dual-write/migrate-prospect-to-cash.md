@@ -98,3 +98,6 @@ Da data fra tabellen **Produkter** er designet til at strømme én vej, fra Fina
 ## <a name="quote-and-quote-product-tables"></a>Tabellerne Tilbud og Tilbudsprodukter
 
 For tabellen **Tilbud** skal du følge instruktionerne i afsnittet [Ordretabel](#order-table) tidligere i dette emne. For tabellen **Tilbudsprodukt** skal du følge instruktionerne i afsnittet [Tabellen Bestille produkter](#order-products-table).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

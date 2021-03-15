@@ -157,3 +157,6 @@ Yderligere ressourcer
 [Angive adgangsrettigheder for controllere til omkostningsobjekt](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

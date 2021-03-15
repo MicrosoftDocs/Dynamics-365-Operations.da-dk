@@ -55,3 +55,6 @@ Denne opgave kræver et produktionsflow, hvor version og aktiviteter allerede er
 3. Indtast eller vælg en værdi i feltet Aktivitet.
 4. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

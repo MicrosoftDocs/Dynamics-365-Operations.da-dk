@@ -64,3 +64,6 @@ Udfør følgende trin for at aktivere denne funktion for alle juridiske enheder.
 Knappen **Nyt dokument** bruges til at oprette og redigere en skabelon i en ER-formatkonfiguration, der er leveret af en anden udbyder. I dette eksempel er udbyderen Microsoft. Når du vælger **Nyt dokument**, kan du se alle de skabeloner, der ejes af den aktuelle udbyder og andre udbydere. Når du har valgt skabelonen, vil den blive åbnet til redigering. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
 
 Yderligere oplysninger finder du i [Oversigt over styring af forretningsdokumenter](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

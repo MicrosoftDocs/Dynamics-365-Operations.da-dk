@@ -82,3 +82,6 @@ Stregkodemasker skal tildeles stregkoder, før de kan bruges. Hvis vi fortsætte
 5. Klik på **Gem**.
 
 Stregkodemasken kan nu bruges til at oprette stregkoder for produkter. Ovenstående trin er eksempler på, hvordan du opretter stregkodemasker for produkter, men de illustrerer også, hvordan du opretter stregkodemasker for alle andre typer understøttede stregkoder. Stregkodemasker, typer og længder bør justeres til brug i dit specifikke miljø.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

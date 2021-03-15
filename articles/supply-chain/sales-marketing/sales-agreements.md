@@ -112,3 +112,6 @@ Du kan kopiere økonomiske dimensioner enten til dokumentoverskrifter eller til 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -153,3 +153,6 @@ Butiksmedarbejderne bliver bedt om kun at vælge en hardwarestation én gang pr.
 - [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Dynamics 365-betalingsconnector til Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Oversigt over understøttelse af eksterne netværksenheder](https://go.microsoft.com/fwlink/?linkid=2129965)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ I følgende grafik vises, hvordan efterspørgselsudfoldningen for behovsplanlæg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

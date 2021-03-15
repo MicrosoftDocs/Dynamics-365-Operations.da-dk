@@ -50,3 +50,6 @@ Oplysninger om varens kostpris for standardkostpriser kan kopieres til andre eft
 
 [Forberede at vedligeholde standardomkostninger for producerede varer](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

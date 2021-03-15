@@ -82,3 +82,6 @@ Du kan også aktivere felterne **Starttidspunkt** og **Sluttidspunkt** under fan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

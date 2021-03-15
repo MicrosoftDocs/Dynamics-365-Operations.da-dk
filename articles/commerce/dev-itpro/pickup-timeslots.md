@@ -127,3 +127,6 @@ I callcenter-appen kan callcenter-medarbejdere vælge afhentningsbutik eller lok
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Modul med afhentningsoplysninger](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Følgende tabel viser, hvilke salgsordrer brugerne i de enkelte webroller kan se
 
 > [!NOTE]
 > Selvom både Sam og Jane er kontaktpersoner, der arbejder for kunde X, kan de kun se de ordrer, de selv har afgivet, og intet andet. Selvom May har en ordre i systemet, kan hun ikke se den pågældende ordre i kundeportalen, fordi hun er en uautoriseret bruger. (Desuden må hun have afgivet ordren via en anden kanal end kundeportalen).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

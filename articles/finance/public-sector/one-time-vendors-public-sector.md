@@ -41,3 +41,6 @@ Hvis du vil oprette flere engangskreditorer og fakturaer, skal du først oprette
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

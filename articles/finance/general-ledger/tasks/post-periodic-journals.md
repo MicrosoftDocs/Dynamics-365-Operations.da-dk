@@ -57,3 +57,6 @@ Periodiske kladder kaldes også gentagelseskladder, da beløb, tekst og andre op
 27. Skriv eller vælg en værdi i feltet **Nummer på periodisk kladde**.
 28. Klik op linket i den valgte række på listen.
 29. Klik på **OK**. Periodisk kladde kan nu gennemgås, godkendes eller bogføres afhængigt af krav og konfiguration.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

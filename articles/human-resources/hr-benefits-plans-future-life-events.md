@@ -46,3 +46,6 @@ Du kan planlægge fremtidige livshændelser i Dynamics 365 Human Resources.
    | Type | Linjenummeret for den fremtidige livshændelse. |
 
 4. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

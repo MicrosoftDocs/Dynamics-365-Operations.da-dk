@@ -47,3 +47,6 @@ Dette emne indeholder en oversigt over trinene til opsætning af global A-skat f
 7. Konfigurere A-skattegrupper på siden **A-skattegrupper for varer** for en vare eller service.
 
 8. Konfigurer **Minimumfakturabeløb** på siden **Økonomiparametre > A-skat**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

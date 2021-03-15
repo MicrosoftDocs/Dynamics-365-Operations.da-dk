@@ -111,3 +111,6 @@ Slet periodiseringsposter for en specifik plan og et bestemt datointerval. Perio
 
 [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)</br>
 [Oprette en plan for orlov og fravær](hr-leave-and-absence-plans.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ En arbejdscelle er en bestemt form for ressourcegruppe, der kan bruges i procesa
 ## <a name="save"></a>Gem
 1. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

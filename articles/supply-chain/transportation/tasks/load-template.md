@@ -53,3 +53,6 @@ Dette emne beskriver, hvordan du kan konfigurere lastskabeloner, og hvordan du k
 1. I handlingsruden skal du under fanen **Udbud og efterspørgsel** i gruppen **Tilføj** vælge **Til ny last**.
 1. I dialogboksen **Lastskabelon** skal du i feltet **Lastskabelons-id** vælge den skabelon, der skal anvendes.
 1. Vælg **OK** for at anvende skabelonen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

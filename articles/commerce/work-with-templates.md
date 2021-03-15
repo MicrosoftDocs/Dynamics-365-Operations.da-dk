@@ -149,3 +149,6 @@ Når du har set ændringerne af skabelonen, skal du følge et af disse trin for 
 [Oversigt over skabeloner og layout](templates-layouts-overview.md)
 
 [Arbejde med forudindstillede layout](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

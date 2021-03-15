@@ -52,3 +52,6 @@ På siden **Disponeringsgrupper** kan du vælge de handlingsmeddelelser, som sys
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

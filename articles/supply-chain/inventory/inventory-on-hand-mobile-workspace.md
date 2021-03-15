@@ -129,3 +129,6 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
     -   Efter fysisk lager (denne visning repræsenterer det samlede antal).
     -   Efter fysisk reserveret (denne visning repræsenterer det reserverede antal).
     -   Efter fysisk beholdning (denne visning repræsenterer det tilgængelige antal, der ikke har nogen reservationer).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

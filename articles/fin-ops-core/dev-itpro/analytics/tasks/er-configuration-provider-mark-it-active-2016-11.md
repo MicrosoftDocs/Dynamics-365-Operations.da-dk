@@ -44,3 +44,6 @@ Dette emne forklarer, hvordan en bruger med rollen som Systemadministrator eller
 2. Vælg **Angiv aktive**.
 
 ![Arbejdsområdeside til elektronisk rapportering](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

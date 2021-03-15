@@ -67,3 +67,6 @@ Udfør følgende trin for at vælge det tema, der anvendes på webstedet.
 
 [Opret et nyt tema](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ For at skabe paritet med Finance and Operations-programmer foretager dobbeltskri
 
 Yderligere oplysninger om kommende ændringer finder du i [Nyheder eller ændringer i dobbeltskrivning](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

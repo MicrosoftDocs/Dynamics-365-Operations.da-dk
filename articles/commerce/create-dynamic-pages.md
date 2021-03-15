@@ -96,3 +96,6 @@ Når den brugerdefinerede side er publiceret, vises den i stedet for den dynamis
 [Bekræfte tilgængelighed af sideindhold](verify-accessibility.md)
 
 [Udvidelsesmuligheder for onlinekanal](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

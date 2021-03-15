@@ -110,3 +110,6 @@ Følgende illustration viser et eksempel på et **Opgave**-felt på en POS-start
 [Tildele opgavelister til butikker eller medarbejdere](task-mgmt-assign-lists.md)
 
 [Opgavestyring i POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

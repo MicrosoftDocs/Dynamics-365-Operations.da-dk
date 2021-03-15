@@ -48,3 +48,6 @@ Når du opretter refusionsposteringer, oprettes der en kreditorfaktura for belø
 
 5. Hvis du vil have vist de refusionsposteringer, der er oprettet, skal du bruge rapporten **Refusion** (**Debitor \> Forespørgsler og rapporter \> Refusionsrapport**).
 6. I Kreditor skal du oprette en betaling for kreditorfakturaer, der er oprettet af refusionsprocessen. Du kan finde flere oplysninger om betaling af kreditorer under [Oversigten Kreditorbetaling](../accounts-payable/Vendor-payments-workspace.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

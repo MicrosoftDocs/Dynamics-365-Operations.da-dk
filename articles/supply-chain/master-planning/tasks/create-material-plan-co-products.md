@@ -110,3 +110,6 @@ Produktionsplanlæggeren planlægger materialebehovet for varer, der er formelsa
 19. Vælg Nej i afkrydsningsfeltet Deaktiver alle planlægningsprocesser.
 20. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

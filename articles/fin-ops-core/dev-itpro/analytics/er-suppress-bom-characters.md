@@ -66,3 +66,6 @@ Hvis du vil gennemse funktionaliteten under kørslen, skal du gennemføre den re
 ## <a name="see-also"></a>Se også
 
 - [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

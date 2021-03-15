@@ -65,3 +65,6 @@ Du kan tildele serviceobjekter til gruppen ved hjælp af formularen **Serviceobj
 [Oprette serviceobjekter](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

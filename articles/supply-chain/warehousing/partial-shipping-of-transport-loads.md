@@ -65,3 +65,6 @@ Denne opsætning gør det muligt at bekræfte en transportlast, der omfatter en 
 
 1. Vælg **Lokationsstyring** \> **Laster** \> **Transportlaster**.
 2. I handlingsruden på fanen **Lever og modtag**, i gruppen **Bekræft** skal du vælge **Transport**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

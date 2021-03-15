@@ -81,3 +81,6 @@ Du kan hurtigt og nemt kalde en afbrudt transaktion frem igen ved at scanne stre
 ### <a name="void-a-suspended-transaction"></a>Annullere en afbrudt transaktion
 
 Du kan annullere afbrudte transaktioner enten ved at genkalde transaktionen og derefter udføre handlingen **Afvis transaktion** eller ved at markere transaktionen på listen **Hent transaktion igen** og vælge **Afvist** på applinjen. Butikken kan også konfigureres til at bede brugerne om at annullere afbrudte transaktioner, når de afslutter deres skift.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

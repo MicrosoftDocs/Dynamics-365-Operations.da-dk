@@ -66,3 +66,6 @@ Logontjenesten kan udvides til at understøtte yderligere enheder med udvidet lo
 ## <a name="using-extended-logon"></a>Brug af udvidet logon
 
 Når Udvidet logon er konfigureret, og en medarbejder har fået tildelt en stregkode eller magnetstribe, skal medarbejderen har blot stryge eller scanne sit kort, mens POS-logonsiden vises. Hvis der også kræves en adgangskode, før logon kan fortsætte, kan medarbejderen indtaste sin adgangskode.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

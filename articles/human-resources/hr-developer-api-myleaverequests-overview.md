@@ -64,3 +64,5 @@ MyLeaveRequests-enheden i Microsoft Dynamics 365 Human Resources indeholder list
 
 - [Sende en orlovsanmodning til arbejdsgang](hr-developer-api-myleaverequests-submit.md)
 - [Godkendelse](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

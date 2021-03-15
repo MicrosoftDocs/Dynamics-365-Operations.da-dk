@@ -117,3 +117,6 @@ Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede e
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
 
 [Oprette en onlinefunktionalitetsprofil](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

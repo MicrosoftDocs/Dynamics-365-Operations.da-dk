@@ -39,3 +39,6 @@ Dette emne indeholder links til dokumentationsressourcer for Danmark.
 - [Konfigurere debitorkonti til elektronisk OIOUBL-fakturering](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
 - [Konfigurere elektronisk OIOUBL-fakturering](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Konfigurere indbetalingskortformat](tasks/set-up-payment-slip-format.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

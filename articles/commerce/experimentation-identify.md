@@ -39,3 +39,6 @@ Hvis du vil validere en hypotese, skal det vellykkede eller mislykkede eksperime
 
 ## <a name="next-step"></a>Næste trin
 [Opsætning af et eksperiment](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

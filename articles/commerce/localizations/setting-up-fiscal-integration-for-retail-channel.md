@@ -225,3 +225,6 @@ For at aktivere manuel udførelse af en udsat regnskabsregistreringer skal du ti
     1. Vælg det layout, der skal opdateres.
     2. Tilføj en ny knap, og indstil knappens egenskaber for **Fuldfør regnskabsregistreringsprocessen**.
     3. På siden **Distributionstidsplan** skal du køre jobbet **1090** for at overføre dine ændringer til kanaldatabasen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Bemærk, at forskellige Microsoft Office-SKU'er også giver rettigheden sammen m
 
 1. Gå til [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
 2. Opret miljøerne ved at følge vejledningen i [Klargøre Human Resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

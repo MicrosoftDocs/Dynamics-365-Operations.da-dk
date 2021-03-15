@@ -84,3 +84,6 @@ Det lager, der ikke allerede er reserveret, reserveres under pluklisteoprettelse
 Så snart pluklinjerne er blevet plukket på siden **Pluklisteregistrering**, fuldføres den tilknyttede forsendelse. Processen for følgesedler for salgsordren kan derefter initialiseres baseret på den plukkede lagerbeholdning.
 
 [![Opdater udgående forsendelser](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ For den medarbejder, der skal have rettighed til at flytte reserveret lager, ska
 Denne funktion er også blevet overført til Microsoft Dynamics AX 2012 R3 og kan bruges som en del af CU12.
 Den kan også hentes særskilt via KB-nummer 3192548. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Udfør følgende trin for at vælge reserveomkostningssekvensen til beregning af
     - **Aktiv kostpris – Varepris** – Organisationer kan opleve problemer med ydeevnen, hvis de bruger forretningsprocesser, hvor lageret regelmæssigt er negativt, og transaktionsmængden samtidigt er høj. Denne indstilling kan hjælpe med at reducere disse ydeevneproblemer.
 
 ![Parametre til Lagerregnskab](media/inventory-accounting-parameters.png "Parametre til Lagerregnskab")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

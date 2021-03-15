@@ -69,3 +69,6 @@ Du kan beregne **antal ventende aktiver** for at kontrollere, om der er ventende
 3. Du kan konfigurere dette job til at køre som et batchjob, f.eks. en gang om dagen.
 
 **Advarsel!** Hvis data ændres på en indkøbsordre, *efter* at du har oprettet et aktiv baseret på det pågældende element, afspejles disse ændringer ikke på aktivet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

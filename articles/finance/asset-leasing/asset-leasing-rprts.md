@@ -164,3 +164,6 @@ Rapporten med gennemsnitsrabatsats opfylder de krav til US GAAP, der er angivet 
 |     Valuta                          |     Den forkortelse, der er anvendt til transaktionsvaluta. Alle rapporter konverterer transaktionsvalutaen til rapporteringsvalutaen.  |
 |     Resterende leasingbetalinger          |     Det samlede beløb for ubetalte leasingbetalinger fra den resterende betalingsplan fra **Pr** dato.            |
 |     Resterende vægtede betalinger       |     Leasingaftalens betalinger skal multipliceres med den anvendte diskonteringssats.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

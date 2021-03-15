@@ -39,3 +39,6 @@ For at problemet kan løses, skal kunden følge disse trin for den kopierede sik
 3. Vælg **Gem**.
 
 ![Siden Parametre for globalt adressekartotek](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

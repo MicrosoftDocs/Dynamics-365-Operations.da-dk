@@ -154,3 +154,6 @@ Hvis du forsøger at bruge lagerstedsappen til at køre plukarbejde på et arbej
 ## <a name="other-blocked-operations"></a>Andre blokerede handlinger
 
 Handlinger, der redigerer arbejdslinjer, arbejdslagertransaktioner eller genopfyldningslinks, der er relateret til det arbejde, der opdeles, mislykkes, og følgende fejlmeddelelse vises: "Arbejdet med id \#\#\#\# er ved at blive opdelt".
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

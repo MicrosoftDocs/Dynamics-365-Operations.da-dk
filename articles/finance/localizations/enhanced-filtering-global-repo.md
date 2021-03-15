@@ -45,3 +45,6 @@ Du kan yderligere indsnævre søgningen ved at vælge dokumenttype, f.eks. 'kred
 [![Anvendte filter og import for forretningsdokumenttype](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 Filtrerede resultater kan importeres til en brugers RCS-lager eller et Dynamics 365 Finance-miljø, enten individuelt eller som et sæt. Det gør du ved at vælge gruppen af konfigurationer og klikke på **Importér**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

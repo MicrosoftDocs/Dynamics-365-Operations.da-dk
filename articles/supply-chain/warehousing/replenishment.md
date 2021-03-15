@@ -78,3 +78,6 @@ I stedet for at opsummere behov i slutningen af en fordelingsproces og foretage 
 |   Lokationsvejledninger   |                                                       Lokationsvejledninger er nødvendige for at lede arbejdet til de lokationer, hvor genopfyldning er nødvendig, og til de lokationer, som lageret leveres fra.                                                        |
 |     Arbejdsskabeloner      |                                                   Arbejdsskabeloner af typen <strong>Genopfyldning</strong> kræves for at oprette genopfyldningsarbejde, så lageret kan flyttes til de ønskede lokationer.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

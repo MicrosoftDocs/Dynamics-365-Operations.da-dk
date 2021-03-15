@@ -34,3 +34,6 @@ Denne procedure viser, hvordan du opretter en ny status for produktlivscyklus. E
 3. Skriv en værdi i feltet Status.
 4. Skriv en værdi i feltet Beskrivelse.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

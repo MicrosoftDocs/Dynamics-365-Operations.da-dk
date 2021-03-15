@@ -117,3 +117,6 @@ Systemet evaluerer alle kreditorer, hvor indstillingen **Rapport 1099** er valgt
 
 > [!NOTE]
 > Der er føjet en ny kolonne med navnet **Oprettet af 1099-opdateringsprocessen** til siden **1099-skat transaktioner**. Afkrydsningsfelterne i denne kolonne er markeret for at vise, at den nye opdateringsproces har opdateret 1099-saldoen. Hvis afkrydsningsfeltet for en række ikke er markeret, blev standardfunktionaliteten brugt til at oprette posteringen. Hvis du vil åbne siden **1099-skat transaktioner**, skal du gå til **Kreditor \> Periodiske opgaver \> Kreditorudligning for 1099 \> 1099-kreditor transaktioner**. Du kan også gå til **Kreditor \> Kreditorer \> Alle kreditorer**. Vælg en kreditor, og brug derefter fanen **Kreditor** i handlingsruden til i gruppen **Skatteoplysninger** at vælge **Kreditorudligning for 1099 \> 1099-kreditor transaktioner**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

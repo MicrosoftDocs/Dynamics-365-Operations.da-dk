@@ -80,3 +80,6 @@ Hvis du arbejder med ruter, skal der defineres operationer for hver produktionsr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

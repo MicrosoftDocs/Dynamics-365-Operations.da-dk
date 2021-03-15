@@ -61,3 +61,6 @@ Du kan finde flere oplysninger i [Kreditorsamarbejde med eksterne kreditorer](..
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

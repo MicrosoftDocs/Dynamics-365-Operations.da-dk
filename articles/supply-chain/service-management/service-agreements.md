@@ -78,3 +78,6 @@ Serviceaftalelinjerne indeholder en detaljeret beskrivelse af indholdet af det f
 ## <a name="related-topics"></a>Relaterede emner
 
 [Oprette serviceaftaler](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

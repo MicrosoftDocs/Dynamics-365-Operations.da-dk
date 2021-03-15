@@ -86,3 +86,6 @@ Følgende tabel viser de enheder, som indholdet er baseret på.
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                 | Firma, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, ansættelse, job |
 | Masseansættelsesprojekt        | Antallet af masseansættelsesprojekter, projektejer og projektstatus                     | Firma, masseansættelseslinje. |
 | Masseansættelseslinje           | Afdeling, medarbejdertype og stilling                                           | Dato, job, masseansættelsesprojekt |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

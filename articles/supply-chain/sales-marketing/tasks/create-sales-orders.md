@@ -67,3 +67,6 @@ De produkter, der sælges af organisationen, kan findes i varianter, der er diff
     Siden **Totaler** viser oplysninger om hele ordren. Dette omfatter subtotalbeløb, som er summen af alle linjenettobeløb justeret for eventuelle linjerabatter, det samlede fakturabeløb, som er et subtotalbeløb justeret for eventuel rabat på ordreniveau, afgifter og moms, kundens kreditmaksimum og andet. Fakturabeløbet er det beløb, der skal vises på kundens fakturadokument.  
     
 3. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

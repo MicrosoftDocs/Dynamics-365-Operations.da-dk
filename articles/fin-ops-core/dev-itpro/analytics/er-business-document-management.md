@@ -579,3 +579,6 @@ Følgende tabel viser listen over ER-konfigurationer, der understøtter konfigur
 |                             | Salgsordrefølgeseddel (LT) (Excel)           |
 |                             | Salgsordrefølgeseddel (PL) (Excel)           |
 |                             | Salgsordrefølgeseddel (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ Forestil dig f.eks., at du indtaster lejeoplysninger for et biludlejningsfirma, 
 > Du kan kun anvende skabeloner i de områder, du har adgang til. Men du får vist alle skabelontitler, der er synlige, når du opretter en ny post, og det samme gør andre brugere, hvis du opretter skabeloner, der er tilgængelige for alle brugere. Det bør du have med i dine overvejelser, når du navngiver skabeloner. Undgå f.eks. at bruge navne, der indeholder ord som "provision", hvis det er fortroligt, at nogle medarbejdere i virksomheden, har provisionsbaseret løn.
 
 Når en eller flere skabeloner, som du har adgang til, findes til en bestemt form, og du forsøger at oprette en ny post i formen, vises siden **Vælg en skabelon til**. Når du vælger en skabelon på listen, oprettes den nye post, som indeholder standardoplysninger, der er baseret på den skabelon, du har valgt. Hvis du ikke vil bruge skabeloner, når du opretter nye poster, skal du markere afkrydsningsfeltet **Spørg ikke igen** på siden **Vælg en skabelon for**. Hvis du vil have vist dialogboksen til valg af skabeloner igen, skal du højreklikke på en post, klikke på **Postoplysninger** og derefter klikke på **Vis skabelonvalg**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

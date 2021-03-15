@@ -81,3 +81,6 @@ Tabellen nedenfor viser, hvad der er et omkostningsobjekt, og hvad er et lagerob
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

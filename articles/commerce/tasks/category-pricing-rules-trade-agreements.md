@@ -58,3 +58,6 @@ Denne procedure viser, hvordan du opretter salgsprissamhandelsaftaler ved hjælp
 24. Klik på fanen Regler for kategoripriser.
     * Kanalbestemte Kategoriprissætningsregler bliver vist i denne liste.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

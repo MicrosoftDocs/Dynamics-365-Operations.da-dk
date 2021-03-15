@@ -200,3 +200,6 @@ Der blev oprettet en ny bølge til denne forsendelse, fordi den bruger en anden 
 1. Vælg det bølge-id, der blev oprettet fra den tredje salgsordre.
 1. Vælg linket for bølge-id'et for at åbne siden med bølgedetaljer.
 1. Bemærk, at forsendelsen er føjet til oversigtspanelet **Bølgelinjer** sammen med forsendelsen for den første salgsordre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

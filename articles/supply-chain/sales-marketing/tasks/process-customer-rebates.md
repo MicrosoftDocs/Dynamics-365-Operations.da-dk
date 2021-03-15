@@ -81,3 +81,6 @@ Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kr
     - Rabatperiodiseringskontoen er blevet krediteret som en repræsentation af det fremtidige passiv for kunden.
     - Rabatudgiftskontoen er blevet debiteret som anerkendelse af de omkostninger, der er påløbet i forbindelse med salg.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

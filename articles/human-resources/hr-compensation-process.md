@@ -77,3 +77,6 @@ Når du har gennemset kompensationsbeløbene for en medarbejder, og du har foret
 Når status for en eller flere medarbejderhændelser er blevet opdateret til Godkendt, kan de indlæses i medarbejdernes fast løn-poster. Dette kan gøres ved at vælge én medarbejderhændelse ad gangen og klikke på knappen **Indlæs medarbejderkompensation** på siden **Medarbejderresultater** eller ved at klikke på **Indlæs kompensation** på siden **Procesresultater** for at indlæse alle godkendte medarbejderhændelser på én gang.
 
 Hvis du klikker på **OK** i dialogboksen **Indlæs kompensation**, tilføjes kompensationshandlingslinjer, der ikke er nul, på siden **Fast løn til medarbejder**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

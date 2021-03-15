@@ -57,3 +57,6 @@ Hvis dags dato f.eks. er 1. februar, og arbejder Karina Smith er den 14. februar
    4. Vælg **OK**. Processen køres med de parametre, du angiver.
 
 4. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

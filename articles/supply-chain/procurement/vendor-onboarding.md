@@ -174,3 +174,6 @@ Ved hjælp af handlingen **Slet** i anmodningen om registrering af mulig kredito
 |         Godkendt         |                                                                               Kreditoranmodningen er godkendt.                                                                               |                                                                                                   Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.                                                                                                    |
 |         Afvist         |                                                                               Kreditoranmodningen slettes.                                                                               |                                                                                                   Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ Nogle af følgende ressourcer refererer til en tidligere version af vores softwa
 [Dimension, der benyttes som standard i regnskabsfordelinger](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Dimension, der benyttes som standard i dimensionsstruktur](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

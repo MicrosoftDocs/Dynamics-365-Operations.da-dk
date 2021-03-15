@@ -72,3 +72,6 @@ Regler for omkostningsfordeling bruges til at fordele omkostninger, der er optal
 5. Indtast eller vælg en værdi i feltet Omkostningskontrolenhed.
 6. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

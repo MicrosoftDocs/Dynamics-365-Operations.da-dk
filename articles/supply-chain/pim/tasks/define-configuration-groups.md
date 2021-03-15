@@ -39,3 +39,6 @@ Denne fremgangsmåde viser, hvordan du definerer konfigurationen af produktgrupp
 7. Skriv en værdi i feltet Navn.
 8. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

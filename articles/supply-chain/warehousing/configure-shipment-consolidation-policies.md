@@ -353,3 +353,6 @@ Følgende scenarier illustrerer, hvordan du kan bruge de politikker for forsende
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Denne procedure viser, hvordan du søger efter oplysninger om fordelskundekort o
 15. Klik på Korttransaktioner.
 16. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

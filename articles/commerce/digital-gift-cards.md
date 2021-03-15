@@ -100,3 +100,6 @@ Konfigurer et brugerdefineret beløb for et digitalt gavekort i Commerce site bu
 [Oprette en onlinefunktionalitetsprofil](online-functionality-profile.md)
 
 [Understøttelse af eksterne gavekort](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

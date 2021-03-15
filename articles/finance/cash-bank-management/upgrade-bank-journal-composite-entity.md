@@ -54,3 +54,6 @@ Brug følgende trin til at føje det ekstra felt BankTransactionType til den sam
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

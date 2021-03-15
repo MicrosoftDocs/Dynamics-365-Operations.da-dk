@@ -150,3 +150,6 @@ Med så mange forskellige integrationsteknologier, der er til rådighed, kan bes
 <sup>2</sup>Microsoft investerer meget for at øge datadækningen af Dataverse-tabeller. Vi anbefaler, at du bruger Dataverse, når dækningen er tilgængelig. I øjeblikket er Dataverse-datadækningen lav sammenlignet med DMF- og OData-aktiverede enheder.
 
 <sup>3</sup>SQL-database har programmeringsmæssig adgang.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Denne procedure viser, hvordan du anvender en konfigurationsskabelon til et prod
 
 ## <a name="select-the-product-configuration"></a>Vælg produktkonfigurationen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

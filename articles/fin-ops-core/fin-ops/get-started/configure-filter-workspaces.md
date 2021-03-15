@@ -63,3 +63,6 @@ Hvis enkelte dele af arbejdsområdet har filtre, kan du filtrere hver sektion se
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Som med et filter til hele arbejdsområdet kan du vælge eller angive en værdi i feltet for at filtrere indholdet af sektionen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

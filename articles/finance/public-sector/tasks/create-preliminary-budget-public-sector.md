@@ -52,3 +52,6 @@ Du kan oprette foreløbige budgetregisterposteringer for en specifik budgetmodel
 19. Klik på Opdater.
     * Hvis du vil se resultaterne af opdateringen, skal du klikke på Meddelelsesdetaljer på den blå linje.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

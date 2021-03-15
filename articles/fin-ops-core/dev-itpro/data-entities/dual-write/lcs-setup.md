@@ -89,3 +89,6 @@ Følg disse trin for at oprette forbindelsen med to skrivninger.
 > [!NOTE]
 > Du kan ikke fjerne sammenkædningen mellem miljøer ved hjælp af LCS. Hvis du vil fjerne sammenkædningen mellem et miljø, skal du åbne arbejdsområdet **Dataintegration** i Finance and Operations-miljøet og derefter vælge **Fjern sammenkædning**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

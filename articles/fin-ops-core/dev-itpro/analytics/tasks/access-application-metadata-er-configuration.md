@@ -125,3 +125,6 @@ Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Servic
 > [!NOTE]
 > Denne måde at hente oplysninger om programmetadata er den eneste, der er tilgængelig for lokalt installerede programmer (når der bruges lokale virksomhedsdata (LBD) eller en lokal installationsmodel).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

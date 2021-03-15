@@ -70,3 +70,6 @@ April kan gennemgå kreditorposteringer på siden **Kreditorposteringer** ved at
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

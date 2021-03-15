@@ -70,3 +70,6 @@ Denne procedure viser, hvordan du starter en produktionsordre i produktionen. Ti
 7. Klik på Bogfør.
 8. Klik på OK.
     * I rutekortkladden registreres den tid, der er brugt på de enkelte operationer. Antal gode og fejl kan også rapporteres.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

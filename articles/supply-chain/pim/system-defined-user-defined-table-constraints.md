@@ -66,3 +66,6 @@ Før en tabelbegrænsning kan træde i kraft på en model til produktkonfigurati
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

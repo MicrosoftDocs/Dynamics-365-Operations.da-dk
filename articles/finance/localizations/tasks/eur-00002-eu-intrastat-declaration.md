@@ -113,3 +113,6 @@ Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.
     * Vælg for eksempel 'Udførsel'.  
 27. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

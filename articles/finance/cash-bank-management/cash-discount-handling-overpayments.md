@@ -138,3 +138,6 @@ Kasserabatbeløbet reduceres fra 10,50 til 10,00. Betalingen og fakturaen anses 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

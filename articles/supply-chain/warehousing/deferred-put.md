@@ -109,3 +109,6 @@ Arbejdsområdet **Overvågning af udgående arbejde** har to felter, der hjælpe
 ## <a name="deleting-completed-tasks"></a>Sletning af fuldførte opgaver
 
 Du kan slette udskudte læg på lager-behandlingsopgaver, der er fuldført, ved at markere dem og slette dem på siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

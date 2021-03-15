@@ -174,3 +174,6 @@ Problem 3: Du kan fortsætte efter logonsiden til ClickOnce Report Designer, men
 ## <a name="additional-resources"></a>Yderligere ressourcer
 - [Vis økonomiske rapporter](view-financial-reports.md)
 - [Rapportering af trædefinitioner i økonomiske rapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -252,3 +252,6 @@ Udfør følgende trin for at oprette en ny leasing.
 
    Siden **Transaktioner for leasingforpligtelse** viser den første anerkendelse, betaling af leasingrente, leasingbetaling og saldoen for leasingforpligtelse. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

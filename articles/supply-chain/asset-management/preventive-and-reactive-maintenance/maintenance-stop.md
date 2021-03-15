@@ -96,3 +96,6 @@ I følgende illustration vises et eksempel på detaljevisningen af **Vedligehold
 - Du kan kopiere aktiver fra én aktivitet med vedligeholdelsesnedetid til en anden. I **Alle aktiviteter med vedligeholdelsesnedetid** skal du vælge knappen **Kopiér aktiviteter med vedligeholdelsesnedetid** og foretage dine valg i felterne **Fra aktiviteter med vedligeholdelsesnedetid** og **Til aktiviteter med vedligeholdelsesnedetid** og klikke på **OK**.
 - I **Alle aktiviteter med vedligeholdelsesnedetid** skal du klikke på knappen **Vedligeholdelsestidsplanslinjer** eller knappen **Aktive arbejdsordrer** for at åbne de relaterede lister og få vist linjer, der er relateret til den valgte aktivitet med vedligeholdelsesnedetid.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

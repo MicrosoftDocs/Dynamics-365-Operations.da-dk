@@ -105,3 +105,6 @@ Supply Chain Management understøtter nu styklisteberegning, der omfatter transp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

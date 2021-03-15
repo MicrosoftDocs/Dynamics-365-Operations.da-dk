@@ -63,3 +63,6 @@ Standardgruppen for A-skat og A-skattegruppen for varer bruges som standardposte
 A-skat beregnes og bogføres sammen med **Debitorbetalingskladde**. Du kan manuelt justere den relevante kode for A-skat og det faktiske beløb for A-skat under fanen **A-skat** på siden **Afregn posteringer**.
 
 Beløbet for den beregnede A-skat trækkes fra kundebetalingen og bogføres på kontoen for **A-skatteforskydning** i et relateret bilag.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

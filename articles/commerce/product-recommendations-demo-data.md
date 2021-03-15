@@ -89,3 +89,6 @@ Udvidelsen indeholder en datafil med navnet 'RecoMockDataset.csv', som giver dig
 [Oprette overvågede anbefalinger manuelt](create-editorial-recommendation-lists.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

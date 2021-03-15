@@ -69,3 +69,6 @@ Denne procedure viser, hvordan lønprocessen for tid og fremmøde aktiveres. Det
 7. Klik på Rediger.
 8. Indtast eller vælg en værdi i feltet Lønaftale.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Styklistens antal er 1, og produktionsantallet er 110. Formlen for forbruget er 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

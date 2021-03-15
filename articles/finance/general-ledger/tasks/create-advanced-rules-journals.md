@@ -57,3 +57,6 @@ Denne procedure indeholder en trinvis gennemgang, hvordan du opretter avancerede
 4. Markér 'den gruppe, du vil tillade bogføring af dette kladdenavn' i træet.
 5. Klik på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

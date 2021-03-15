@@ -65,3 +65,6 @@ Når du har foretaget en registrering af tilstandsvurdering for et aktiv, kan du
 
 >[!NOTE]
 >Du kan også registrere tilstandsvurdering på en arbejdsordre (**Styring af aktiver** > **Almindeligt** > **Arbejdsordrer** > **Alle arbejdsordrer** > **Tilstandsvurdering**-knap).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

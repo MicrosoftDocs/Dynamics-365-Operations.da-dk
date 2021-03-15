@@ -50,3 +50,6 @@ Derefter bogfører April betalingskladden. Fakturaen udlignes fuldt ud med en be
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

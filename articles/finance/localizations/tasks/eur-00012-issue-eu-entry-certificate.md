@@ -86,3 +86,6 @@ Denne procedure fører dig gennem aktivering af et EU-posteringscertifikat og ko
 4. Klik på Faktura i handlingsruden.
 5. Klik på Vis udstedte indførselscertifikater.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

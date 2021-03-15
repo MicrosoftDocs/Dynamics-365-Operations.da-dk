@@ -70,3 +70,6 @@ Med funktionen Annuller afstemning af bankkontoudtog kan du annullere afstemning
 Afstemninger af bankkontoudtog kan kun annulleres i den kronologiske rækkefølge, de er indtastet i. Når en afstemning af bankkontoudtog annulleres, tilbageføres nye transaktioner og rettelser, og alle andre transaktioner markeres som ikke afstemte.
  
 Hvis du vil annullere afstemning af bankkontoudtog, skal du vælge bankkontoudtoget og derefter vælge **Bankkontoudtog > Annuller bankafstemning**. På siden **Annuller bankafstemning** skal du angive **Årsagskode**, **Årsagsbemærkning** og **Dato for annullering**. Vælg **OK** for at starte annulleringen. Bemærk, at bankkontoudtogets annulleringsdato skal være den samme som eller senere end bankkontoudtogsdatoen. Når afstemningen af bankkontoudtoget er annulleret, vil feltet **Annulleringsdato** for bankkontoudtoget blive opdateret med den oplyste **Annulleringsdato**. Vælg knappen **Transaktioner** for at få vist de transaktioner, som afstemningen blev annulleret for.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

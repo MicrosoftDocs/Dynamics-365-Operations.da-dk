@@ -126,3 +126,6 @@ Farven vises kun på det laveste niveau i Gantt-diagrammet. Vælg **Udvid alle**
 1. I gitteret skal du vælge den række, hvor feltet **Felt** er angivet til **Varenummer**.
 1. Angiv en værdi i feltet **Kriterie**.
 1. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

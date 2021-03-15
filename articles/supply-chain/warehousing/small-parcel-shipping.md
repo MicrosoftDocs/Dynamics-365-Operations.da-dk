@@ -279,3 +279,6 @@ Følg disse trin for at pakke forsendelsen.
     ![Eksempel på forsendelsesetiket](media/sps-label-example.png "Eksempel på forsendelsesetiket")
 
 1. Bemærk, at værdierne **Containermanifest-id** og **Samlet fragt** er tilføjet som modtaget fra fragtmanden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

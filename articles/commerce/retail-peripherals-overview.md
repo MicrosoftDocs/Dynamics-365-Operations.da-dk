@@ -835,3 +835,6 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 [Ekstern simulator for Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

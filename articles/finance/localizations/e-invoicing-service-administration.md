@@ -138,3 +138,6 @@ Miljøet skal konfigureres under fanen **Overførselstjenester** på **Elektroni
 
 - [Konfiguration af elektroniske fakturaer i RCS](e-invoicing-configuration-rcs.md)
 - [Udsted elektroniske fakturaer i Finance og Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

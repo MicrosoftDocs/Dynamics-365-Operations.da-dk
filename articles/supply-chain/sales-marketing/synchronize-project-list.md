@@ -66,3 +66,6 @@ Gør det muligt at spore ændringer for Dataenhed-projekter.
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekter (Supply Chain Management til Field Service): Projekter
 
 [![Skabelontilknytning i dataintegration](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

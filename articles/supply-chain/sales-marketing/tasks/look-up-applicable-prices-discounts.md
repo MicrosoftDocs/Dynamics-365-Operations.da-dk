@@ -59,3 +59,6 @@ Kontrollér, at feltet Debitorkonto indeholder debitornummer US-001
     * Der er to linjerabataftaler for produkt T0012, der angiver en rabat på 5 procents rabat for en ordrelinjemængde fra 1 til 10, og 7 procents rabat på ordremængder over 10. Bemærk, at rabatterne anvendes på en gruppe af produkter, i dette eksempel Gruppekode 01, hvor produkt T0012 er medlem.  
 4. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

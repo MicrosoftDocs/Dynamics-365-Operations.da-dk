@@ -80,3 +80,6 @@ Rentefordelingsprocessen omfatter nogle beregnede beløb.
 | Samlet daglig gennemsnit   | Summen af alle daglige saldi i gennemsnit, undtagen negative beløb for kontantkonti, der ikke tillader negative rente- og kontantkonti, som ikke er en del af en rentefordeling. |
 | Procent af total      | Det gennemsnitlige daglige saldobeløb divideret med det samlede daglige gennemsnitlige beløb for hver kombination af en kontantkonto og en bonus. |
 | Fordelt rente    | Den samlede rente på siden **Rentefordelingsparametre** ganget med procentdelen af det samlede beløb for kontantkontoen. Renter overføres ikke til kontantkonti, der har negative beløb, og som ikke tillader negativ rente. Renter distribueres heller ikke til kontantkonti, der ikke indgår i rentefordeling. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

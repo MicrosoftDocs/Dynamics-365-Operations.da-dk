@@ -71,3 +71,6 @@ Status kan enten være planlagt eller ikke-planlagt. Planlagte statusopgørelser
 ## <a name="inventory-lookup"></a>Lagersøgning
 
 Det antal produkter, der i øjeblikket er disponibelt for flere butikker og lagersteder, kan ses på siden **Lagersøgning**. Ud over den aktuelle disponible beholdning kan det fremtidige disponible tilsagn (DTT) vises for hver enkelt butik. Vælg den butik, du vil se DTT-mængder for, og vælg derefter **Vis butikkens tilgængelighed**. Få flere oplysninger om de konfigurationsindstillinger, der er tilgængelige, i afsnittet [Beregne lagertilgængelighed for detailkanaler](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

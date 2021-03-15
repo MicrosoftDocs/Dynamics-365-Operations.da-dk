@@ -57,3 +57,6 @@ Når kladden er bogført, er de returnerede varer registreret i lageret, og det 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

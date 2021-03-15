@@ -152,3 +152,6 @@ Udfør følgende trin for at tilføje linjer, der repræsenterer det kreditmaks.
 2. Vælg den sammenligningsoperator, der definerer, hvordan oplysningerne i resultatgruppen skal evalueres.
 3. Angiv den værdi, der skal sammenlignes med den værdi, der er angivet for resultatgruppen.
 4. Angiv det kreditmaks., der skal tildeles, hvis kundeoplysningerne svarer til den værdi, der er angivet for resultatgruppen. Du kan f.eks. oprette et automatisk kreditmaks. resultatgruppen **Lav**. Hvis det antal år, en virksomhed har været drevet i, tilhører en af resultatgrupperne, kan du definere én linje, der tildeler et kreditmaks. på 100.000, hvis kunden har drevet virksomhed i fem år, og en anden linje, der tildeler et kreditmaks. på 200.000, hvis kunden har drevet virksomhed i 10 år.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

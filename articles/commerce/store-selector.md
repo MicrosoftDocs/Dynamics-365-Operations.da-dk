@@ -145,3 +145,6 @@ Hvis du vil konfigurere butiksvælgermodulet til at vise tilgængelige butikker 
 [Bing Kort-REST-API'er](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Kortmodul](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Denne regist
 7. Klik på pilen for at tilføje de valgte tilgængelige team i adressekartoteket.
 8. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

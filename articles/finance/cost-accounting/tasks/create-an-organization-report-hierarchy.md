@@ -94,3 +94,6 @@ Du kan bruge denne procedure til at oprette et rapporthierarki til organisations
     * Vælg det dimensionsmedlem, der svarer til noden.  
 59. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

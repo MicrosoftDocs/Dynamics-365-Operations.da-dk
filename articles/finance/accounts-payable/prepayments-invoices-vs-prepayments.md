@@ -65,3 +65,6 @@ Forudbetalingsfakturaer er en del af almindelig forretningspraksis. En kreditor 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

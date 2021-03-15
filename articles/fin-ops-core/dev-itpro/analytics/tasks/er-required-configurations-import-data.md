@@ -254,3 +254,6 @@ Udfør denne formattilknytning af testformål. Brug filen 1099entries.xml, som d
 27. Luk siden.
 28. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Du kan forhindre beregningen i at finde sted ved at angive flaget **Stop udfoldn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

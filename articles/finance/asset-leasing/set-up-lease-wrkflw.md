@@ -52,3 +52,6 @@ I emnet forklares det, hvordan du opretter en godkendelsesarbejdsgang, der skal 
 14. På siden **Opret arbejdsproces** skal du vælge **luk**.
 14. Vælg den nye arbejdsproces, og vælg derefter **Versioner**. Vælg derefter **Gør aktiv** for at sikre, at arbejdsgangen er aktiv.
 15. Vælg **Luk**. Den nye aktive version vises.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

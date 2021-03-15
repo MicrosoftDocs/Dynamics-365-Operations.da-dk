@@ -48,3 +48,6 @@ Det er den første procedure af fem, der illustrerer kundens betalingsproces ved
     * Hvis knappen Importer ikke er tilgængelig, betyder det, at denne konfiguration allerede er importeret.  
 9. Klik på Ja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

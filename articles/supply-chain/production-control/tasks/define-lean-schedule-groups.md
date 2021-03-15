@@ -55,3 +55,6 @@ Lean planlægningsgrupper defineres for at gruppere og adskille produkter i kanb
 3. Klik på rullelisten i feltet Varefordelingsnøgle for at åbne opslaget.
 4. Klik op linket i den valgte række på listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

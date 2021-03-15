@@ -34,3 +34,6 @@ Denne procedure fører dig igennem oprettelse og indsendelse af momsrapporten ti
 5. Vælg Ja i feltet Opret elektronisk momsdokument.
 6. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Tilføjelsesprogrammet for omkostningsregnskabstjenesten til Microsoft Dynamics 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 
 [Introduktion til omkostningsregnskabstjenesten](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Denne procedurer opretter og validerer journaler og journallinjer. Du kan prøve
 12. Klik på **Bogfør**.
 13. Klik på **Bilag**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

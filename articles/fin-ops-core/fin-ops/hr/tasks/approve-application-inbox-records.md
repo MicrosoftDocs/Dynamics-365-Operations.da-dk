@@ -48,3 +48,6 @@ Denne fremgangsmåde viser, hvordan du gennemser ansøgninger, der modtages via 
 2. Klik op linket i den valgte række på listen.
 3. Udvid afsnittet Vedhæftede filer.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

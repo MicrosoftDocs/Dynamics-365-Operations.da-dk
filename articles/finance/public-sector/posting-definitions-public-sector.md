@@ -622,3 +622,6 @@ Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

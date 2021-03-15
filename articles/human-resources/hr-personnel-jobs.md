@@ -87,3 +87,6 @@ Du kan bruge ansvarsområder til at angive arbejdsroller, processer og produkter
 
 ## <a name="steps-for-creating-a-job"></a>Trin til oprettelse af et job
 Se artiklen emnet [Definere nye job](../fin-and-ops/hr/tasks/define-new-jobs.md) for den trinvise procedure til at oprette et nyt job. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

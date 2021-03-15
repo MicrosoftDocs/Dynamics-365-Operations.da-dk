@@ -108,3 +108,6 @@ I skærmbilledet nedenfor er **Type** tilføjet, og den mest detaljerede beregni
 >[!NOTE]
 >Du kan få vist en oversigt over alle fejlregistreringer, der er oprettet på arbejdsordrer og vedligeholdelsesanmodninger, ved at klikke på **Styring af aktiver** > **Forespørgsler** > **Aktivfejl** > **Aktivfejl**. Vælg en registrering af aktivfejl på siden **Aktivfejl**, og udvid ruden **Relaterede oplysninger** for at få vist oplysninger om den relaterede arbejdsordre eller vedligeholdelsesanmodning.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

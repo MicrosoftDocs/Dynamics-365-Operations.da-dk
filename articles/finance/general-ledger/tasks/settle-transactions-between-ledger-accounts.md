@@ -48,3 +48,6 @@ Denne procedure viser, hvordan du udligner posteringer mellem finanskonti og ann
 7. Klik på Finansudligninger.
 8. Markér den valgte række på listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

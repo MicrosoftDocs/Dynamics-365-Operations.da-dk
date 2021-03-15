@@ -62,3 +62,6 @@ Denne procedure fører gennem udformning af relationen mellem organisationsenhed
 29. Klik på Publicer.
 30. Klik på Luk.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

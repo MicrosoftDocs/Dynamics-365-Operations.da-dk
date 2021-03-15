@@ -165,3 +165,6 @@ I illustrationen nedenfor vises et eksempel på dialogboksen **Opret arbejdsordr
 >[!NOTE]
 >Du kan også oprette arbejdsordrer automatisk ved at planlægge vedligeholdelsesplanjob eller ved at konfigurere "Automatisk oprettelse" af [vedligeholdelsesplaner](../preventive-and-reactive-maintenance/maintenance-plans.md) eller [vedligeholdelsesrunder](../preventive-and-reactive-maintenance/maintenance-rounds.md) for et aktiv. Arbejdsordrer, der er oprettet ud fra vedligeholdelsesanmodninger på siden **Hele vedligeholdelsestidsplanen**, har de vedligeholdelsesjobtyper, der er valgt i vedligeholdelsesanmodningerne.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Du kan oprette månedlige fakturaer for individuelle leasingaftaler, eller du ka
 6. Når posteringen er bogført, kan du få vist posteringsoplysningerne og bære ansvarsværdien for leasingforpligtelserne ved at vælge **Ansvarsposteringer** i leasingkartoteket.
 
     Afkrydsningsfeltet i betalingsplanen **Kladde bogført** er markeret i betalingsplanen, og linjen viser fakturakladdenummeret. Når en betalingskladde og en post for den pågældende kladde er oprettet, skal du tilbageføre posten, før den kan oprettes igen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ I tabellen nedenfor vises, hvordan ordreindtastningsfristerne for sted A og B om
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

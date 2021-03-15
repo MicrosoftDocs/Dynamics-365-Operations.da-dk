@@ -104,3 +104,6 @@ Muligheden for at tilbagekalde en kladde i en arbejdsgang, der har statussen "uo
 
 ## <a name="delete-journal-lines"></a>Slet kladdelinjer
 Muligheden for at slette alle kladdelinjer hurtigt aktiveres i en kladde under **Funktioner** > **Slet kladdelinjer**. Hvis du vil aktivere denne funktion, skal du under **Administration af funktioner** vælge **Slet kladdeoptimeringer for ydeevne**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

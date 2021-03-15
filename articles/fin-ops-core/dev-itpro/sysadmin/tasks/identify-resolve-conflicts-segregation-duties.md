@@ -59,3 +59,6 @@ Når du tildeler brugere til roller, gennemtvinges reglerne for opdeling af opga
 
 > [!NOTE]
 > Hvis der er angivet flere konflikter for samme bruger, skal du vælge brugerposten og evaluere tildelte roller på siden **Brugere**. Du kan undgå denne konflikt ved at validere hver regel, efter at den er tilføjet eller redigeret.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

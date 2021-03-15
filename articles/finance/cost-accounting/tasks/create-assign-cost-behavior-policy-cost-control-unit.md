@@ -85,3 +85,6 @@ Omkostningsfunktionalitet er klassificeringen af omkostninger som enten faste el
 15. Indtast eller vælg en værdi i feltet Omkostningskontrolenhed.
 16. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

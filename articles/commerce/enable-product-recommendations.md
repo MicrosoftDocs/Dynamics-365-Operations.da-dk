@@ -113,3 +113,6 @@ Du kan få flere oplysninger om tilpassede anbefalinger i [Aktivere personlige a
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -211,3 +211,6 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
     Den første synkronisering af rækkerne er nu fuldført.
 
 8. Aktivér ændringssporing igen i Finance and Operations-appen for tabellen **Debitorer V3**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Feltet **Omkostningstildeling for biprodukt** på siden **Samprodukter** er et o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

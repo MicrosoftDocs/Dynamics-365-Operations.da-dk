@@ -63,3 +63,6 @@ Denne procedure viser den konfiguration, der er nødvendig for at oprette en udt
     * Dette opretter to kanbans.  
     * Bemærk, at der blev oprettet to kanbans for hver fem for denne udtræks-kanban-regel.  Dette er det sidste trin i denne procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

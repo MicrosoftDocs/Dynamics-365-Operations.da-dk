@@ -39,3 +39,6 @@ Denne procedure viser, hvordan du journaliserer bogførte kladdeposter. Procedur
 9. Klik på **OK** for at lukke filtreringssiden.
 10. Klik på **OK** for at starte journaliseringsprocessen. Der genereres en rapport, når processen er fuldført.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

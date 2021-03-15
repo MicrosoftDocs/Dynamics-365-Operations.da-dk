@@ -136,3 +136,6 @@ Hvis du nu bruger kanalens grundlæggende URL-adresse og går til URL-adressen f
 [Dokumenttilstande og -livscyklus](document-states-overview.md)
 
 [Arbejde med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

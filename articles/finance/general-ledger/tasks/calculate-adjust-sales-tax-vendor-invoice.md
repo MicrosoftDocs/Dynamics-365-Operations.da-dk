@@ -43,3 +43,6 @@ Dette emne forklarer, hvordan du justerer moms på en kreditorfaktura. Hvis det 
 13. Vælg **OK**.
 14. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

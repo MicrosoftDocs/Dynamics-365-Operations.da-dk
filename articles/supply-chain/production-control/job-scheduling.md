@@ -76,3 +76,6 @@ Under finplanlægning tages der højde for de effektivitetsprocenter, der er ang
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Valgfri:
 - Indstil **Vis segmenter i separate kolonner** til **Ja** for at få vist kontonavnene for hver dimension som separate kolonner i gitteret.
 - Hvis du vil filtrere værdierne for en bestemt dimension, skal du vælge de ønskede dimensioner i felterne under feltet **Økonomiske dimensionsopsætninger**. De valg, du skal foretage, afhænger af, hvilken økonomisk dimensionsopsætning du har valgt.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

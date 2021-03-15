@@ -96,3 +96,6 @@ Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 [Generere økonomiske rapporter](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

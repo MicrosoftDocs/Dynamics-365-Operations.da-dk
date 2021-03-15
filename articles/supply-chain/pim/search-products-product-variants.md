@@ -86,3 +86,6 @@ Til salgsordrelinjepost er standardfunktionsmåden at åbne siden **Produktsøgn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

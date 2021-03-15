@@ -38,3 +38,6 @@ Denne procedure viser, hvordan du kan få vist omkostningsposter for et omkostni
 7. Brug Quick Filter til at filtrere på feltet Nummer med værdien 'p000031'.
     * Hvis omkostningsposter er tomme, skal du angive Fra dato til 31. januar 2012 og Til dato til 31. december 2012.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

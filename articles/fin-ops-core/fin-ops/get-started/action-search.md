@@ -75,3 +75,6 @@ I det forrige eksempel viste handlingssøgning resultater fra standardhandlingsr
 ## <a name="action-search-vs-navigation-search"></a>Handlingssøgning vs. navigationsøgning
 
 Hvor handlingssøgning har til formål at finde og udføre handlinger på en side, er der en separat søgemekanisme til at søge efter og navigere til sider. Du kan få flere oplysninger om denne funktion i artiklen [Navigationssøgning](navigation-search.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Hvis du uploader flere typer aktiver på én gang (f.eks. billeder og videoer), 
 [Tilpasse billedets fokuspunkter](dam-custom-focal-point.md)
 
 [Overføre og håndtere statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

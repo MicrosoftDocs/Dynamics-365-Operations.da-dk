@@ -54,3 +54,6 @@ Indstillingen **Vis detaljer** er tilgængelig på flere måder:
 
 - Hvis et kontrolelement har funktionaliteten **Vis detaljer**, og hvis kontrolelementet har en værdi, vises denne værdi som et hyperlink. Du kan klikke på hyperlinket for at åbne en side, der indeholder yderligere oplysninger.
 - **Vis detaljer** er også en indstilling i genvejsmenuer. Du kan finde flere oplysninger om, hvornår genvejsmenuer vises, når du højreklikker, i det forrige afsnit.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

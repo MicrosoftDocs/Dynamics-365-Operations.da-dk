@@ -52,3 +52,6 @@ Yderligere konfigurationstrin for bestemte funktioner er omfattet af artiklen fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

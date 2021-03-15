@@ -81,3 +81,6 @@ Indtil Microsoft frigiver en løsning for at løse problemet, kan du overveje at
 - Undgå decimalværdier i standardomkostningen. Prøv at definere standardomkostningen, så feltet **Prisantal** angives til *1*. Hvis du skal angive en værdi for **Prisantal** på mere end *1*, kan du forsøge at minimere antallet af decimaler i standardomkostningen for enheden. (Ideelt set skal der være mindre end to decimaler). Undgå f.eks. at definere standardomkostningsindstillinger som **Pris** = *10* og **Prisantal** = *3*, da de giver en standardomkostning pr. enhed på 3,333333 (hvor decimalværdien gentages).
 - I de fleste dokumenter skal du undgå at have flere linjer med samme kombination af produkt- og økonomiske lagerdimensioner.
 - Reducer graden af parallelisering. (I dette tilfælde kan systemet blive hurtigere, fordi der opstår færre opdateringskonflikter og forsøg).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

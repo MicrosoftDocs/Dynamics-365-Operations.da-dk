@@ -208,3 +208,6 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 § Når POS er offline, kan kun transaktioner i den aktuelle offlinedatabase tilbagekaldes til returnering.
 
 \*\* Når POS er offline, vises kun transaktioner i den aktuelle offlinekanaldatabase på kladden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

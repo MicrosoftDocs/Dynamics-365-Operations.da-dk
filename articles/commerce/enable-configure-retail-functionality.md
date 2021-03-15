@@ -68,3 +68,6 @@ Når initialiseringen er fuldført, skal du konfigurere yderligere handelsdata. 
 - Handelskanaler
 - Kasseapparater og enheder
 - Udvalg
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

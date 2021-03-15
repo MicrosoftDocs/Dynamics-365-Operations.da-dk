@@ -59,3 +59,6 @@ Når en salgsordre bogføres, bogføres kostbeløbet på kr. 10,00, da den løbe
 
 > [!NOTE]
 > Til sammenligning: Hvis du markerer afkrydsningsfeltet **Medtag fysisk værdi** for denne vare, når en salgsordre bogføres, er det bogførte kostbeløb kr. 12,00.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

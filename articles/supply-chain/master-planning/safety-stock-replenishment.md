@@ -115,3 +115,6 @@ Transaktionen til opfyldning af sikkerhedslagerbehovet nedprioriteres, hvis syst
 Sikkerhedslageropfyldning er ikke længere nedprioriteret i disponeringsfasen af varedisponeringen. Den disponible lagerbeholdning kan bruges før eventuelle andre efterspørgselsestyper. Under beregningen af forsinkelsen, vil blive føjet nye logik til at gennemgå de forsinkede salgslinjer, behov i styklistelinjer og alle andre behovstyper, for at bestemme, om de kan blive leveret til tiden, forudsat at sikkerhedslageret bruges. Hvis systemet identificerer, at det kan minimere forsinkelser ved hjælp af sikkerhedslageret, erstatter salgslinjerne eller styklistelinjerne deres første disponering med sikkerhedslageret, og systemet udløser genopfyldningen for sikkerhedslageret i stedet.
 
 Hvis planen eller varen ikke er konfigureret til forsinket beregning, har sikkerhedslagerets begrænsning samme prioritet som alle andre efterspørgselstyper. Det betyder, at der er en reserve af disponibel lagerbeholdning og andre disponible beholdninger før andre efterspørgselstyper.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

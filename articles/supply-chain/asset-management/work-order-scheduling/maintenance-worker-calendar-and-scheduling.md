@@ -38,3 +38,6 @@ Skærmbilledet nedenfor viser et eksempel på en vedligeholdelsesarbejder, der e
 
 Kalenderopsætningen for værktøjer og aktiver er ikke nødvendig i forbindelse med planlægning af en arbejdsordre. Forudsætningen er, at værktøjer og aktiver er tilgængelige for vedligeholdelse hele døgnet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

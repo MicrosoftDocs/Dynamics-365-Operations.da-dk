@@ -63,3 +63,6 @@ I følgende illustration vises fanen **Opgavelister**.
 [Oprette opgavelister og tilføje opgaver](task-mgmt-create-lists.md)
 
 [Tildele opgavelister til butikker eller medarbejdere](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

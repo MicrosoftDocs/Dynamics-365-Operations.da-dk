@@ -88,3 +88,6 @@ I følgende eksempel vises, hvordan du kan ændre startsiden ved at ændre den v
 [Bekræfte tilgængelighed af sideindhold](verify-accessibility.md)
 
 [Oprette dynamiske e-handelssider baseret på URL-parametre](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

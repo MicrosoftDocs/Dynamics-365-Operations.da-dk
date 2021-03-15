@@ -133,3 +133,6 @@ Hvis du vil bruge styklisteskabeloner, skal du oprette to nummerserier. Opret é
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

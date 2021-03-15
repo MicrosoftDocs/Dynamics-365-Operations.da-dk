@@ -87,3 +87,6 @@ Benyt følgende fremgangsmåde for at konfigurere oprydning af databaselog:
    - Dato og klokkeslæt for oprettelse
 
 3. Brug fanen **Oprydning i databaselog** til at bestemme, hvornår du vil køre oprydningsopgaven for log. Databaselogge er som standard tilgængelige i 30 dage.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

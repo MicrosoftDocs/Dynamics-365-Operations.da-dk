@@ -94,3 +94,6 @@ Du kan også knytte en fremskyndelseskode til en leveringsmåde, som du konfigur
 Ved der for eksempel skal leveres med fly næste arbejdsdag, skal pluk udføres på lagerstedet inden kl. 13 hver dag. I så fald kan der oprettes en fremskyndelseskode, som kan knyttes til enhver leveringsmåde for næste arbejdsdag, der er konfigureret i systemet. Når lagerstedet opretter sin plukbølge, kan den relevante fremskyndelseskode i feltet **Fremskynd** bruges som et filter, så pluk kun køres for ordrer, der har de leveringsmåder, der er knyttet til koden.
 
 Desuden, når der angives en callcenterordre, kan en fremskyndelseskode manuelt anvendes på salgsordrehovedet eller på en enkelt salgsordrelinje. Koden kan igen bruges til sorterings- eller rapporteringsformål. Nogle gange skal en ordre håndteres omhyggeligt på grund af et kundeserviceproblem. I dette tilfælde kan der anvendes en bestemt fremskyndelseskode på ordrehovedet eller -linjerne for at identificere og prioritere ordren under ordreopfyldningsprocessen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

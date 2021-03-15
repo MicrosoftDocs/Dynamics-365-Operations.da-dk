@@ -52,3 +52,6 @@ Disse bør kun anvendes hvis annulleringen af varedisponeringsjobbet fra siden *
 4. Vælg hvilke opgaver, der skal afsluttes, i **Batchopgaver**.
 5. Klik på **Skift status**, vælg **Annuller**, og klik på **OK**.
 6. I oversigtspanelet **Batchopgaver** skal du klikke på **Afbryd**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

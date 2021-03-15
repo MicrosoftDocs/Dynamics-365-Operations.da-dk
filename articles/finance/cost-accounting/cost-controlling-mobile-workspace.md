@@ -144,3 +144,6 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 11. Se ydeevnen for individuelle omkostningselementer.
 12. Du kan også søge efter bestemte omkostningselementer.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

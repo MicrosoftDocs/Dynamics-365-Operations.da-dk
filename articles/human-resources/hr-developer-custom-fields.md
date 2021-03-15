@@ -40,3 +40,5 @@ Sørg for at aktivere eventuelle brugerdefinerede felter, du opretter, så du ka
 [Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Oprette og arbejde med brugerdefinerede felter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Visning af brugerdefinerede felter på dataenheder](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

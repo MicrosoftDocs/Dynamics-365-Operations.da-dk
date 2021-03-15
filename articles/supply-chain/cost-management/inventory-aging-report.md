@@ -364,3 +364,6 @@ Rapporten ser nu ud som i følgende eksempel:
 </tr>
 </tfoot>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

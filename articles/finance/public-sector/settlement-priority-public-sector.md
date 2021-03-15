@@ -74,3 +74,6 @@ Under udligningsprocessen kommer udligningsattributter i betragtning først, der
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

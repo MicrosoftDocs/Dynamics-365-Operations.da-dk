@@ -161,3 +161,6 @@ Da ER-konfigurationer deles af firmaer, kan du fuldføre denne opgaveguide ved h
 7. Klik på OK.
     * Standardkonfigurationen for modeltilknytningen bruges af denne formatkonfiguration til oprettelse af det elektroniske dokument (det oprettede output indeholder firmakoden).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

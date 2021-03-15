@@ -54,3 +54,6 @@ Brug denne procedure til at oprette en skabelon, der repræsenterer objekter på
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

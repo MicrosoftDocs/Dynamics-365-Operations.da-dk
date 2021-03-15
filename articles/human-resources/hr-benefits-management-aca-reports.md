@@ -207,3 +207,6 @@ Der vises dækningsoplysninger for dem, der er afhængige af medarbejderen.
 
 > [!NOTE]
 > Siden viser kun frynsegoder, der er markeret som **ACA-rapporterbare**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

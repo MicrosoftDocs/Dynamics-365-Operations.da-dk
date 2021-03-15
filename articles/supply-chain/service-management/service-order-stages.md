@@ -46,3 +46,6 @@ Når du har oprettet et servicestadie, kan du oprette flere indstillinger, eller
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

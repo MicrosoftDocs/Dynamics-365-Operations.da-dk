@@ -137,3 +137,6 @@ Sådan kan du se og arbejde med Gantt-diagrammet:
     - Hvis du vil ændre planlægningen af en vist arbejdsordre, skal du vælge og derefter trække den til den relevante nye dato og det ønskede klokkeslæt.
 
 1. Hvis du har foretaget ændringer, skal du vælge **Gem** i handlingsruden for at gemme dem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

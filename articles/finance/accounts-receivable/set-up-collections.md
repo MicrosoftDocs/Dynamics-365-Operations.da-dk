@@ -114,3 +114,6 @@ Du kan finde flere oplysninger under følgende emner:
 
  - [Gennemse oplysninger om rykkere](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

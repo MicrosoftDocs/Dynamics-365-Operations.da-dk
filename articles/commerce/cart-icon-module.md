@@ -65,3 +65,6 @@ Hvis du vil tilføje et indkøbsvognikonmodul, skal du se [Overskriftsmodul](aut
 [Ordredetaljer-modul](order-confirmation-module.md)
 
 [Gavekortsmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

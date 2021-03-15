@@ -52,3 +52,6 @@ Du kan søge efter batchattributter, når du foretager batchreservationer for en
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

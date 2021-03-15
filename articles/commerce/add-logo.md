@@ -73,3 +73,6 @@ Når du har udgivet det opdaterede sidehovedfragment, vises dit logo på alle de
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

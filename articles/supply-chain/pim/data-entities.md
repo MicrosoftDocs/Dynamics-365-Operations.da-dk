@@ -49,3 +49,6 @@ For at importere og eksportere produktdata skal du anvende dataenheder. Følgend
 
 > [!NOTE]
 > Du kan kun bruge dataenheden **Frigivne produkter V2** til at importere produkter til systemet, hvis det delte produkt allerede er oprettet. Ellers skal du, for at importere produkter til systemet, bruge dataenheden **Produktoprettelse**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Når du har oprettet de livscyklustilstande, der kræves til dine vedligeholdels
 Følgende illustration viser et eksempel på listesiden **Vedligeholdelsesanmodningers livscyklusmodeller**.
 
 ![Siden Livscyklusmodeller for vedligeholdelsesanmodning](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Scriptet til dataopgradering bruger også nummerserien for begge metoder til fel
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

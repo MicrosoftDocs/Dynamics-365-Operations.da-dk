@@ -127,3 +127,6 @@ Når du vælger **Transaktionsindstillinger \> Gebyrer \> Administrer gebyrer** 
 [Avancerede automatiske gebyrer for omni-kanal](omni-auto-charges.md)
 
 [Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

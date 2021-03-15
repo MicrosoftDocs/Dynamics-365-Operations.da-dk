@@ -106,3 +106,6 @@ Du kan sende buddet som enten leverandør eller indkøber. Du kan finde flere op
 ## <a name="view-the-purchase-order-that-is-generated"></a>Få vist den indkøbsordre, der blev genereret
 
 I handlingsruden skal du under fanen **Generelt** vælge **Indkøbsordre**. På den side, der åbnes, vises den indkøbsordre, der blev genereret, da du accepterede buddet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

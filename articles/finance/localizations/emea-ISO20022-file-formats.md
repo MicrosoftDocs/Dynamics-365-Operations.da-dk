@@ -128,3 +128,6 @@ Yderligere oplysninger om elektronisk indberetning kan du finde i [Oversigt over
 - [Konfigurere en betalingsmetode for ISO20022-kreditoverførsler](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Opret betalingsmåde til ISO20022 direkte debet](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Konfigurere kreditorer og kreditorbankkonti for ISO20022-kreditoverførsler](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

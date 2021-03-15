@@ -46,3 +46,6 @@ Dette emne beskriver fremgangsmåden for at få vist statussen for et dokument, 
     - Knappen **Tildel igen** åbner en dialogboks, hvor du igen kan tildele et arbejdselement til en anden bruger.  
     - Sørg for, at sektionen **Sporingsdetaljer** er udvidet. I denne sektion kan du få vist arbejdsgangshistorikken for det valgte dokument.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

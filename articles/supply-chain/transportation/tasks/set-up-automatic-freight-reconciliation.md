@@ -71,3 +71,6 @@ Denne procedure viser, hvordan du konfigurerer data til automatisk fragtafstemni
 11. Indtast eller vælg en værdi i feltet Årsagskode for underbetaling.
 12. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

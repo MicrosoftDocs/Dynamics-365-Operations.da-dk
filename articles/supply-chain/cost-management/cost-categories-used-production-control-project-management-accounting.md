@@ -43,3 +43,6 @@ De ekstra knapper på siden **Omkostningsart** giver adgang til projektrelatered
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

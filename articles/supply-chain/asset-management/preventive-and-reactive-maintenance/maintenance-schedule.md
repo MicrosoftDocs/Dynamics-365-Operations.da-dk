@@ -67,3 +67,6 @@ I illustrationen nedenfor vises listesiden **Hele vedligeholdelsestidsplanen**.
 
 ![Figur 1](media/16-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

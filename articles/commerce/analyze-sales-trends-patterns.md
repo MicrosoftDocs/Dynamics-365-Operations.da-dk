@@ -42,3 +42,6 @@ Brugere kan også undersøge salgstendenser og -mønstre efter time på tværs a
 - Arbejdsområdet **Butiksstyring** &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Butiksstyring** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. time**
 - Arbejdsområdet **Butiksregnskab** &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Butiksregnskab** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. time**
 - Sektionen **Forespørgsler og rapporter** &gt; **Retail og Commerce** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over kanalsalg pr. time**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

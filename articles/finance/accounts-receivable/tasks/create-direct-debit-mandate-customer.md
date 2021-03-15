@@ -89,3 +89,6 @@ Denne opgaveguide viser, hvordan du kan oprette en bemyndigelse til direkte debi
 3. Vælg den debitor, du har føjet mandatet til.
 4. Indtast eller vælg en værdi i feltet **Id for bemyndigelse til Direct Debit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

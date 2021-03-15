@@ -62,3 +62,6 @@ I følgende grafik vises, hvordan varedisponering forløber. De parametre, der h
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

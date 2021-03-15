@@ -54,3 +54,6 @@ Hvis **Fra dato** i reduktionsperioden desuden er 21. januar (31 minus 10), kan 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

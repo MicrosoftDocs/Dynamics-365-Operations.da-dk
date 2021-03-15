@@ -396,3 +396,6 @@ I dette scenario vil palle 3 blive accepteret.
 1. Vælg menuknappen (**≡**) øverst på siden, og vælg derefter **Annuller** i menuen for at gå tilbage til menuen.
 
 Du kan nu lukke mobilappen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

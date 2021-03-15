@@ -61,3 +61,6 @@ Oprette og indsende EU-listesystemet
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ I følgende illustration vises den logik, der bruges, når rabattens sammensatte
 I følgende illustration vises den logik, der bruges, når rabattens sammensatte kontrol er angivet til **Kun bedste pris indenfor prioritet, altid sammensat på tværs af prioriteter**.
 
 ![Logik for bedste pris kun inden for prioritet, altid sammensat på tværs af prioritet](./media/Model_2.png "Logik for bedste pris kun inden for prioritet, altid sammensat på tværs af prioritet").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

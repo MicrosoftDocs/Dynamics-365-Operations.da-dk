@@ -163,3 +163,5 @@ Performancekladdens kildetyper beskriver, hvor performancekladderne kommer fra. 
 ### <a name="review-types"></a>Evalueringstyper
 
 Performanceevalueringstyper hjælper dig med at styre funktionsmåden for en evaluering. Du kan aktivere eller deaktivere arbejdsgangen for en evaluering. Hvis evalueringen ikke bruger arbejdsgang, kan du definere den standardstatus, der skal bruges, når evalueringen oprettes. Du kan også bestemme, om medarbejderen, chefen eller begge bliver bedt om at godkende evalueringen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

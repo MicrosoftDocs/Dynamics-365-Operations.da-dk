@@ -72,3 +72,6 @@ Listesiden **Tidsplanlægning af kanban-job** indeholder en faktaboks, der viser
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

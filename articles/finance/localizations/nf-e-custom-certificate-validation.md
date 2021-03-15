@@ -35,3 +35,6 @@ Egenskaben **Formål for servergodkendelse** fra certifikatet V5 udstedes af det
 Denne opdatering giver mulighed for en alternativ løsning til certifikatvalidering, hvilket betyder, at det er muligt at oprette en sikker kommunikation.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

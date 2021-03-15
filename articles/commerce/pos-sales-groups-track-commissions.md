@@ -87,3 +87,6 @@ POS gør det muligt for brugerne at konfigurere knapmatricer, som indgår i skæ
 ## <a name="calculating-commissions"></a>Beregning af provision
 
 Provisionen beregnes for medarbejderne i de angivne salgsgrupper på tidspunktet for bogføring af opgørelsen eller bogføring af salgsordrer. Provisionsbeløbet bestemmes på basis af medarbejderens provisionsandel, som defineret i salgsgruppen og de tilhørende indstillinger for provisionsberegning for kunden og/eller produkter på transaktionen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

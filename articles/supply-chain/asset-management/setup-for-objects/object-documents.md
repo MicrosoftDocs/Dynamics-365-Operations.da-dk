@@ -49,3 +49,6 @@ I Styring af aktiver kan du oprette dokumenter, så de automatisk relateres til 
 
 4. Vælg **Vedhæftede filer**. Standardsiden **Dokumentoversigt** vises.
 5. Konfigurer de dokumenter eller notater, der skal knyttes til aktivets dokumentpost. Når du har vedhæftet dokumenter, viser feltet **Vedhæftede filer** det antal dokumenter, der er relateret til posten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

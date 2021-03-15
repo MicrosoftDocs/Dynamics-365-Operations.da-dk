@@ -92,3 +92,6 @@ Fakturerede indkøbsordrer registrerer passivet på kreditorkontoen i kreditorer
 ## <a name="vendor-performance"></a>Leverandørperformance
 
 Ydeevne og gennemgang af indkøb understøttes via *indkøbs- og kreditorapporter*, som indeholder forbrugsanalyse og analyse af kreditorydeevne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

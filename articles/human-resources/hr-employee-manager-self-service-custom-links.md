@@ -48,3 +48,6 @@ Hvis du vil bruge denne funktion, skal du aktivere **Brugerdefinerede links i se
 ## <a name="see-also"></a>Se også
 
 [Oversigt over medarbejderes og lederes selvbetjening](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

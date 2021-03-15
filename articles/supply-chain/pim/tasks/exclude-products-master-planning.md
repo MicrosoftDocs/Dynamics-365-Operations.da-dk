@@ -43,3 +43,6 @@ Denne fremgangsmåde viser, hvordan du opretter en ny status for produktlivscykl
 5. Markér den valgte række på listen.
 6. Indtast eller vælg en værdi i feltet Status for produktlivscyklus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

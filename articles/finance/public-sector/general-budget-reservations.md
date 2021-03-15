@@ -53,3 +53,6 @@ En generel budgetreservation eftergives på forskellige måder, afhængigt af de
 - Hvis dokumentet er en indkøbsordre, eftergives reservationen, når indkøbsordren er *bekræftet*.
 - Hvis dokumentet er en faktura, som ikke henviser til en indkøbsordre eller købsaftale, eftergives den generelle budgetreservationen, når fakturaen *bogføres*.
 - Hvis dokumentet er en indkøbsrekvisition, eftergives reservationen, når indkøbsrekvisitionen er *godkendt*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

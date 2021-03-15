@@ -34,3 +34,6 @@ site:technet.microsoft.com dynamics ax 2012 "søgeterm"
 –eller–
 
 site:msdn.microsoft.com dynamics ax 2012 "søgeterm"
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Denne procedure viser, hvordan du kan føje et nyt begrænsningsudtryk til en pr
 4. Klik på Luk.
 5. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

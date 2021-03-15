@@ -103,3 +103,6 @@ Indkøb og forsyning dækker alle trin fra identifikationen af et behov for prod
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

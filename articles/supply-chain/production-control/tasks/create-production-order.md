@@ -70,3 +70,6 @@ Denne procedure viser, hvordan du opretter en produktionsordre. Det demodatafirm
 6. Klik på Gem.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

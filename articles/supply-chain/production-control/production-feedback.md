@@ -35,3 +35,6 @@ Produktionstilbagemelding giver medarbejderne tilbagemeldinger om produktionsjob
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

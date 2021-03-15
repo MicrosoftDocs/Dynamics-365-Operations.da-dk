@@ -58,3 +58,6 @@ Du kan oprette mål, føje aktiviteter til mål, spore målinger og knytte mål 
     * Der er ofte flere mål, der er de samme eller ens for gruppemedlemmer eller alle medarbejdere.     Human Resourcesadministratoren eller lederen kan oprette mål grupper, der indeholder en eller flere målskabeloner. Du kan tilføje mål fra en målgruppe og derefter redigere dem, så de stemmer overens med dine tidslinjer.  
     * Når du opretter en evaluering, kan du føje mål til denne evaluering. I installationsvejledningen til evalueringen kan du se hvordan du kan føje mål til dine evalueringer.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

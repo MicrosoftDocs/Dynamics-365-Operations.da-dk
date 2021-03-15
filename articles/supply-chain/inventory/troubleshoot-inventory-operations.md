@@ -157,3 +157,6 @@ Denne fejl opstår, når lagertransaktionsantallet angives som en decimalværdi,
 
 > [!IMPORTANT]
 > Det anbefales på det kraftigste, at du nøje redigerer scriptet i dit miljø, tester det i et testmiljø og derefter kontrollerer de resulterende data, før du kører scriptet i et produktionsmiljø.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

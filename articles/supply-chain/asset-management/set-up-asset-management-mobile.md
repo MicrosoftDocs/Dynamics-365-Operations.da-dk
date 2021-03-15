@@ -84,3 +84,6 @@ Du kan gøre funktioner for aktivstyring tilgængelige i Finance and Operations 
 Du kan finde flere oplysninger om, hvordan du arbejder med mobilarbejdsområdet til **aktivstyring**, under [Bruge mobilarbejdsområdet til aktivstyring](asset-management-mobile-workspace.md).
 
 Yderligere oplysninger om Finance and Operations (Dynamics 365)-mobilappen finder du på [Mobilapp-startside](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ I dette emne beskrives, hvordan du kan give arbejdere tilladelse til at oprette 
 2. Brug Quick Filter til at finde den medarbejder, som du netop har tilføjet, som anmoder.
 3. Vælg anmoderen. Listen Klargører viser de personer, der har tilladelse til at bestille varer på vegne af den anmoder, der er valgt i venstre rude.  Du kan tilføje yderligere klargørere her. I denne visning kan du også give anmoderen tilladelse til at oprette indkøbsrekvisitioner i juridiske enheder og driftsenheder, der ikke er den pågældende persons primære juridiske enhed eller driftsenhed.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

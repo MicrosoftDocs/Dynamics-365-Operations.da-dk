@@ -123,3 +123,6 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

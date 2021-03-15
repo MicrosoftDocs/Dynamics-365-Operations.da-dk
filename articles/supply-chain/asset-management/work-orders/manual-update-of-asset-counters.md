@@ -63,3 +63,6 @@ På siden **Aktivtællere** (**Styring af aktiver** > **Forespørgsler** > **Akt
 >[!NOTE]
 >Du kan konfigurere et interval for at definere afvigelser i manuelle tællerregistreringer. Du kan også angive den type meddelelse, der vises, hvis registreringerne er uden for det angivne interval. Du kan finde flere oplysninger om, hvordan du konfigurerer tællere, i [Tællere](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

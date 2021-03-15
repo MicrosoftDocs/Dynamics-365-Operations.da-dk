@@ -105,3 +105,6 @@ Yderligere ressourcer
 - [Arbejdsområde for omkostningsstyring](cost-control-workspace.md)
 - [Dimensionshierarki](dimension-hierarchy.md)
 - [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

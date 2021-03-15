@@ -89,3 +89,6 @@ Følgende tabel indeholder eksempler, der viser, hvordan forskellige indstilling
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Købsaftaler](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -429,3 +429,6 @@ Her er et eksempel på en regel til fordeling af omkostninger, hvis fordelingsba
 |    CC002    |     FI      | 3,075.00  | (3.075,00 ÷ 18.162,50) × beløb  |
 |    CC003    |     LO      | 13,250.00 | (13.250,00 ÷ 18.162,50) × beløb |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

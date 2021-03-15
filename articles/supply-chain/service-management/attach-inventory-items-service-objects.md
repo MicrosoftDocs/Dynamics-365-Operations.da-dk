@@ -50,3 +50,6 @@ Varen er nu knyttet til serviceobjektet, og hvis der er angivet lagerdimensioner
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Hvis der er valgt en indkøbskurvlinje og **Pluk markerede**, **Afsendelse valgt
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Kundeordrer i Modern POS (MPOS)](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

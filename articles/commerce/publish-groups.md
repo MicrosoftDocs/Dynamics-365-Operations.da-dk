@@ -154,3 +154,6 @@ I øjeblikket understøtter funktionen publiceringsgrupper kun webstedsindhold. 
 [Oversigt over skabeloner og layout](templates-layouts-overview.md)
 
 [Tilpasse navigation på webstedet](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

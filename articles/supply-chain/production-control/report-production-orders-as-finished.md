@@ -47,3 +47,6 @@ Du kan konfigurere en produktionsordres status til **Færdigmelding** gennem den
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

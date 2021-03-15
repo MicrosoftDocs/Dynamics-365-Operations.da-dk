@@ -310,3 +310,6 @@ En **IF/THEN/ELSE**-sætning gør det muligt for enhver beregning at afhænge af
 Du kan designe rapporter ved hjælp af dimensionsværdier, der indeholder et og-tegn (&).
 
 I et hvilket som helst felt af typen **Link til økonomiske dimensioner** kan du angive en værdi som f.eks. **'P&L'**. Hvis du medtager enkelte anførselstegn (' ') på begge sider af dimensionsværdien, angiver det, at du bruger konstantværdien, f.eks. også tegnet (&).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

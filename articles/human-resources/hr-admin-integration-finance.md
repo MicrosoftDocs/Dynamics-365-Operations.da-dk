@@ -255,3 +255,5 @@ Det lokations-id, der bruges til en arbejderadresse, er ikke del af en nummerser
 Følgende illustration viser et eksempel på en skabelontilknytning i Dataintegrator. 
 
 ![Tilknytning af skabelon](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

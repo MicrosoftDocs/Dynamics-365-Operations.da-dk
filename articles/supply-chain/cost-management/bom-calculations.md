@@ -94,3 +94,6 @@ En ordrespecifik styklistekalkulation repræsenterer en variant af en styklistek
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

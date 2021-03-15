@@ -127,3 +127,6 @@ Du kan administrere oversættelser af produktrelaterede oplysninger når som hel
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

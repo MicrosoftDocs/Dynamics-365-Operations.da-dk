@@ -57,3 +57,6 @@ Det er lettere at fastlægge, hvilke serviceskabelonlinjer du vil kopiere, hvis 
 ## <a name="related-topics"></a>Relaterede emner
 
 [Kopiere serviceskabelonlinjer](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

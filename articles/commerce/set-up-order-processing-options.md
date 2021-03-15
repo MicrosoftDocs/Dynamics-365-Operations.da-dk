@@ -83,3 +83,6 @@ Når du er færdig med at konfigurere callcenter-kanalen og definere kanalens br
 > [!NOTE]
 > Hvis du vil bruge funktionen call center, skal konfigurationsnøglen for **Flere leveringssteder** være aktiveret. Denne konfigurationsnøgle kan findes i **Konfigurationsnøgler til handel** under **Systemadministration**\> **Opsætning** \> **Licenskonfiguration**. Dette er påkrævet på grund af funktionen call center, som udfører forskellige valideringer baseret på den leveringsadresse, der er konfigureret på salgsordrelinjeniveau. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

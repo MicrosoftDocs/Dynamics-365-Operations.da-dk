@@ -108,3 +108,5 @@ Som led i kaldet til submit-API'en udfører Human Resources validering af forret
 
 - [Oversigt over MyLeaveRequests](hr-developer-api-myleaverequests-overview.md)
 - [Godkendelse](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

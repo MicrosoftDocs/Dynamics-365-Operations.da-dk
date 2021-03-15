@@ -72,3 +72,6 @@ Knapperne i Handlingsruden er organiseret på faner. Følgende tabel beskriver k
 | Send udlånsaktiv                  | Vælg et udlånsaktiv, der skulle have været en midlertidig erstatning for det aktiv, der er valgt i den valgte vedligeholdelsesanmodning. |
 | Returner udlånsaktivet                | Registrer udlånsaktivet som returneret. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

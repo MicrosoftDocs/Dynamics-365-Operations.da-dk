@@ -86,3 +86,6 @@ Supply Chain Management indeholder en lastopbygningsstrategi, der hedder Volumen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

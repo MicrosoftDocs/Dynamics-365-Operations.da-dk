@@ -40,3 +40,6 @@ Dette emne viser, hvordan du kasserer et anlægsaktiv ved hjælp af fritekstfakt
 10. Skriv eller vælg en værdi i feltet **Anlægsaktiv**.
 11. Vælg **Bogfør**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

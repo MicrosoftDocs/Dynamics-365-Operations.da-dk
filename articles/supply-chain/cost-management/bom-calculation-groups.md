@@ -97,3 +97,6 @@ Du kan definere flere styklisteberegningsgrupper, afhængigt af dine behov for v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

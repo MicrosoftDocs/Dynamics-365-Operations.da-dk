@@ -47,3 +47,6 @@ Denne procedure viser, hvordan du opretter en projektindkøbsordre. Denne opgave
     * Kontroller, at salgs- og kostpriser er tilgængelige. Angiv oplysningerne, hvis de ikke er tilgængelige, men du har brug for dem.  
 14. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Denne fremgangsmåde viser, hvordan du udlåner et emne til en arbejder og regis
 2. Klik på Rediger.
 3. Angiv en dato i feltet Faktisk retur.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

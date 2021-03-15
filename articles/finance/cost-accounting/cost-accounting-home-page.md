@@ -52,3 +52,6 @@ Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukture
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

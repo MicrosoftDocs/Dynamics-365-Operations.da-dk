@@ -44,3 +44,6 @@ Funktionen til global A-skat er forbedret for leverandør- og debitorposteringer
 
 > [!NOTE]
 > Funktioner for global A-skat kan ikke være aktiveret for lande/områder, hvor der allerede findes lokale løsninger for A-skat. Disse områder omfatter, men er ikke begrænset til Indien, Brasilien, Thailand, Saudi-Arabien, Irland, Storbritannien og USA.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

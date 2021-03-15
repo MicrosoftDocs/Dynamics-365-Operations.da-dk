@@ -66,3 +66,6 @@ Denne fremgangsmåde viser, hvordan du opretter et nyt kategorihierarki og tilde
 8. Klik op linket i den valgte række på listen.
 9. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

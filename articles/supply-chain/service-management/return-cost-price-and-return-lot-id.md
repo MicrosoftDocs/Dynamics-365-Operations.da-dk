@@ -111,3 +111,6 @@ Når du bruger feltet **Returvare-id** på en returordrelinje til at angive retu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

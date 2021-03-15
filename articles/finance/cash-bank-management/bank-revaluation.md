@@ -87,3 +87,6 @@ Transaktionen for værdiregulering af udenlandsk valuta deles ligeledes ud på d
 Hvis du er nødsaget til at tilbageføre værdireguleringstransaktionen, skal du vælge **Tilbagefør transaktion** i handlingsruden på siden **Værdiregulering af udenlandsk valuta**. Der oprettes en ny historikpost for værdiregulering af udenlandsk valuta med henblik på at bibeholde det historiske revisionsspor for, hvornår reguleringen blev udført eller tilbageført.
 
 For at tilbageføre flere værdireguleringer skal du tilbageføre den nyeste værdiregulering først. Dernæst skal du fortsætte med at tilbageføre de ældre værdireguleringer i henhold til dato. Du kan derefter behandle nye værdireguleringer for de perioder, du har tilbageført.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

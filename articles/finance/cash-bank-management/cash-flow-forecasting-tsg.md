@@ -52,3 +52,6 @@ Kontroller, at målingerne "Likviditetsmåleenhed V2" og "LedgerCovLiquidityMeas
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Er enhederne i enhedslageret blevet opdateret?
 
 Du skal opdatere enhederne jævnligt for at sikre, at dataene er aktuelle og nøjagtige. Hvis du vil opdatere en bestemt enhed manuelt, skal du gå til **Systemadministration \> Opsætning \> Enhedslager** og vælge enheden og derefter vælge **Opdater**. Dataene kan også opdateres automatisk. På siden **Enhedslager** skal du indstille til **Automatisk opdatering aktiveret** til **Ja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

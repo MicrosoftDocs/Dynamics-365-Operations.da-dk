@@ -56,3 +56,6 @@ Denne procedure viser, hvordan du kan tildele momsgrupper til handelskanaler. De
 21. Klik op linket i den valgte række på listen.
 22. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

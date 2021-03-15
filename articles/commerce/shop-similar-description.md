@@ -98,3 +98,6 @@ I følgende illustration vises afkrydsningsfeltet **Aktiver link til Køb tilsva
 [Oprette overvågede anbefalinger manuelt](create-editorial-recommendation-lists.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

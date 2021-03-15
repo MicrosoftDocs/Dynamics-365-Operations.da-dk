@@ -59,3 +59,6 @@ Linjerne fra serviceskabelonen kopieres nu til den nye serviceordre sammen med d
 [Serviceskabeloner](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

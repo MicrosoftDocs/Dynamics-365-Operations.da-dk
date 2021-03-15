@@ -50,3 +50,6 @@ Med funktionen til avanceret afstemning kan du importere bankkontoudtog. De impo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

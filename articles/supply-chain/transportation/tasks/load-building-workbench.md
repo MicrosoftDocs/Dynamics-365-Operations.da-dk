@@ -66,3 +66,6 @@ Du kan nu tildele lastopbygningsstrategien til en lastopbygningsskabelon. Du kan
 1. Gennemse de foreslåede laster og de foreslåede lastlinjer.
 1. I handlingsruden skal du vælge **Opret laster** for at oprette laster, der er baseret på kildedokumentlinjerne i oversigtspanelet **Foreslåede lastlinjer**.
 1. Luk siden **Lastopbygningspanel**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -120,3 +120,6 @@ Klik på **Opsætning** for at tilpasse de oplysninger, der vises i styklistedes
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

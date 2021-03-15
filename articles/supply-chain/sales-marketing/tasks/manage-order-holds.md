@@ -69,3 +69,6 @@ Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne
     - Handlingen **Ryd og send** er kun gældende, når du bruger callcenter-funktionalitet.  
 8. Klik på **Ryd På hold**. Holdet er nu ryddet fra ordren og fjernet fra listen over aktive hold. Hvis du vil se alle hold eller deres delsæt i henhold til en bestemt status, skal du ændre værdien i feltet Vis.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

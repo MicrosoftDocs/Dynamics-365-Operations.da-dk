@@ -139,3 +139,6 @@ Angiv følgende værdier for at definere en posteringsprofil:
 
 Du kan finde flere oplysninger i [Oversigt over debitorbetalinger](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

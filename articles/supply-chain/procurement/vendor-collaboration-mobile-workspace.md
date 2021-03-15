@@ -169,3 +169,6 @@ Eventuelle ændringer, der er foretaget i svaret til ordrelinjen, vises. Dog vis
 
 ### <a name="open-confirmed-orders"></a>Åbn bekræftede ordrer
 Når indkøbsordren er bekræftet af kunden (hvilket betyder, at status for købsordren er ændret til **Bekræftet**), vises den i den åbne bekræftede ordre. Den forbliver på listen, indtil den registreres som modtaget af kunden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -104,3 +104,6 @@ Baseret på de felter, du har valgt at medtage i diagrammet, viser hver node de 
 **Flere indstillinger**
 
 I Human Resources kan du muligvis også bruge arbejdsområdet **Personer** til at få vist visse oplysninger i forbindelse med hierarkiet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

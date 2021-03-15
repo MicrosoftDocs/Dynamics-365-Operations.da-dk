@@ -79,3 +79,6 @@ Forpligtelser skal lukkes manuelt.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

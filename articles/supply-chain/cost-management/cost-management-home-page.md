@@ -64,3 +64,5 @@ Du kan finde meninger, nyheder og andre oplysninger om omkostningsstyring på [D
 #### <a name="task-guides"></a>Opgaveguider
 
 Du kan finde yderligere hjælp i form af opgaveguider. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -32,3 +32,6 @@ EU-direktivet indeholder bestemmelser, der skal følges af alle medlemsstater, m
 
 > [!NOTE]
 > Kontrollér, at feltet **Momsspecifikation** er angivet til **Registreringsvaluta** eller **Registrerings- og firmavaluta** på siden **Formularopsætning** på fanen **Generelt** (**Debitor > Konfiguration > Formularer > Formularopsætning** eller **Projektstyring og regnskab > Konfiguration > Formularer > Formularopsætning**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

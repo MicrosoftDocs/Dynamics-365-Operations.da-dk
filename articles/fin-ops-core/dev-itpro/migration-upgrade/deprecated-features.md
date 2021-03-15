@@ -1373,3 +1373,6 @@ Windows 8 tablet-appen leverede funktionalitet til udgiftsregistrering og -godke
 |     <strong>Produktområder, der er berørt</strong>     |                                              Finans                                              |
 |             <strong>Status</strong>             |                                      Fjernet fra og med Dynamics AX 2012                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

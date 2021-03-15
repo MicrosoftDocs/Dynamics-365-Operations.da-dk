@@ -45,3 +45,6 @@ Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte 
 15. Udvis eller skjul sektionen Kontaktoplysninger.
 16. Udvid eller skjul sektionen Personlige oplysninger.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

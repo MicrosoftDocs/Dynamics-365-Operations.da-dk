@@ -202,3 +202,6 @@ Få flere oplysninger om, hvordan du kan konfigurere e-mails i Dynamics 365 Comm
 [Konfigurere e-mail-kvitteringer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Sende e-mail-kvitteringer fra Modern POS ](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

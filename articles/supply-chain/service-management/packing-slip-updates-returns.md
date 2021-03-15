@@ -48,3 +48,6 @@ Når du opdaterer en følgeseddel for en returneret vare, der er fra en salgsaft
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -121,3 +121,6 @@ Derefter bogfører April fakturaen. Når hun åbner siden **Kreditorposteringer*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

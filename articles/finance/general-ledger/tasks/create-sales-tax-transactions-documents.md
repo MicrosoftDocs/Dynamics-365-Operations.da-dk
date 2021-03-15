@@ -59,3 +59,6 @@ Moms på dokumenter beregnes ved at angive en momsgruppe og en varemomsgruppe p�
 29. Klik på Moms.
 30. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

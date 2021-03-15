@@ -105,3 +105,6 @@ Når du bogfører et dokument, tildeles dokumentet den relevante nummerseriegrup
 
 > [!NOTE]
 > I nogle lande er der allerede implementeret en bestemt logik til dokumentnummerering. I dette tilfælde tilsidesætter landespecifik logikfunktionen **Kronologisk nummerering**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

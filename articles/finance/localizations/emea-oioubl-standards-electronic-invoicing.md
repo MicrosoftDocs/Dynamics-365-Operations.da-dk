@@ -115,3 +115,6 @@ Du kan få flere oplysninger om opsætning af elektroniske fakturaer ved at afsp
 
 > [!NOTE] 
 > Selvom disse opgaveguider er oprettet specifikt til det danske e-fakturaformat *OIOUBL*, gælder de også for andre understøttede lande/områder, med mindre afvigelser.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

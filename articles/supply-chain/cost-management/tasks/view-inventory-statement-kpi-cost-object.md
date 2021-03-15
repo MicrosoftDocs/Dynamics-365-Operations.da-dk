@@ -38,3 +38,6 @@ Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fre
 7. Indtast en dato i feltet Fra dato.
 8. Indtast en dato i feltet Til dato.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

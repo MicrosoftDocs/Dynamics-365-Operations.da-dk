@@ -76,3 +76,6 @@ Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at de
 I følgende illustration viser effekten af at vælge **Øverst til højre** og **Centreret** i feltet **Justering af indhold** for knapper i forskellige størrelser.
 
 ![Dynamisk indhold på POS-knapper](./media/ButtonsWithLiveContent.png "Dynamisk indhold på POS-knapper")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

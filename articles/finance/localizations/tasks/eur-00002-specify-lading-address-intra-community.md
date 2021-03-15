@@ -72,3 +72,6 @@ Denne procedure gælder for alle europæiske lande/områder. Denne opgave blev o
 37. Klik på fanen Generelt.
     * Find en nyoprettet linje, og kontroller, at afsenderen har leveret varerne fra Italien.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

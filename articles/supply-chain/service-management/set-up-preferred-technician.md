@@ -67,3 +67,6 @@ Du kan vælge enhver arbejder som en foretrukket tekniker til en serviceaftale e
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

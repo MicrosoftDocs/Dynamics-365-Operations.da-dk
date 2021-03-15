@@ -51,3 +51,6 @@ Denne opgaveguide gennemgår tilføjelse af en hovedkonto til en eksisterende ko
 21. Vælg metoden til beregning af valutakurser for kontoen i feltet **Valutaomregningstype**.
 22. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

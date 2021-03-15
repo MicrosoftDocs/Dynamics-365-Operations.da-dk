@@ -410,3 +410,6 @@ Produktet kan nu frigives igen til firmaet *USMF* og derefter sendes til kunden.
 1. Vælg hvert af de firmaer, du vil frigive produkter til.
 1. Vælg **OK** for at lukke dialogboksen **Frigivelser** og vende tilbage til ændringsordren.
 1. Vælg **Proces** i gruppen **Produktfrigivelser** under fanen **Ændringsordre** i handlingsruden for at frigive de berørte produkter til de valgte firmaer. Du kan også vælge **Frigiv produktstruktur** for at starte frigivelsesprocessen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

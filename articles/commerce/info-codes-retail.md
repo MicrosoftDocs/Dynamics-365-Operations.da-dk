@@ -55,3 +55,6 @@ Du kan sammenkæde infokæder på en måde, så hvis én infokode udløses, udl�
 **Eksempel 2: Sammenkæd infokoder med infokodegrupper**
 
 Når du sælger bestemte produkter, f.eks. mobilenheder, vil det altid være i din interesse at indsamle bestemte oplysninger såsom telefonnummer, mobiludstyrs-id (MEID) og serienummer. Det vil dog også være i din interesse at indsamle forskellige oplysninger til en tablet i forhold til en mobiltelefon. Du kan oprette en infokodegruppe, der omfatter anmodninger om telefonnummer, MEID og serienummeret, og derefter sammenkæde infokodegruppen med en individuel infokode. Når den produktspecifikke infokode udløses, kan infokodegruppen udløses derefter, så du kan indsamle generelle data uden at skulle definere flere sæt af sammenkædede infokoder for hver enhed.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

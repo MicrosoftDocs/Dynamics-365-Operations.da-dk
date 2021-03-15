@@ -36,3 +36,6 @@ Denne procedure gennemgår frigivelse af et produkt eller en produktmaster til e
 6. Klik på Næste.
 7. Klik på Finish.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

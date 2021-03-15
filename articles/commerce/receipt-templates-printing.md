@@ -85,3 +85,6 @@ Kvitteringsprofiler tildeles direkte til printere via hardwareprofilen.
 
 > [!NOTE]
 > Hvis der anvendes to printere, kan en printer bruges til at udskrive standardkvitteringer med 40 kolonner (termisk). Den anden printer bruges typisk til at udskrive helsides kvitteringstyper, som kræver yderligere oplysninger. Disse kvitteringstyper omfatter ordrekvitteringer og debitorfakturaer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

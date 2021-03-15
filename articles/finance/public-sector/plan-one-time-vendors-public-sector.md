@@ -107,3 +107,6 @@ Når du har konfigureret de forudsætninger, skal du læse [Engangsleverandører
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

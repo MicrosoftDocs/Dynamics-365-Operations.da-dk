@@ -102,3 +102,5 @@ Denne administrator vejledning hjælper dig med at konfigurere, administrere og 
 - [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)
 - [Udviklervejledning](hr-developer-overview.md)
 - [Brugervejledning](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

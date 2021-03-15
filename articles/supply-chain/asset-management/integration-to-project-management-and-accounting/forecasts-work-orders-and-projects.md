@@ -100,3 +100,6 @@ I følgende illustration vises en grafisk oversigt over de forskellige projekter
 
 ![Figur 6](media/06-integration-to-pma.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

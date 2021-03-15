@@ -59,3 +59,6 @@ Når du bogfører en generel budgetreservation for et projekt, oprettes der en b
 3. Vælg **Bindende omkostninger**. Siden **Bindende omkostninger** åbnes og viser de bindende omkostninger, der er relateret til den valgte linje.
 
     Bindende omkostninger for generelle budgetreservationer er baseret på beløb, uanset om den bindende omkostning indeholder et bestemt antal og kostpris. Antallet for bindende omkostninger vil altid være 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

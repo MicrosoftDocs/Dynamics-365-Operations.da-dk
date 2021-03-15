@@ -60,3 +60,6 @@ Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære ad
 15. Klik på OK.
 16. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

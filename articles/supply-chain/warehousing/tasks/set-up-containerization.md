@@ -80,3 +80,6 @@ Dette emne beskriver, hvordan du automatiserer containeriseringen af laster i Lo
 11. Indtast eller vælg en værdi i feltet **Valg af felt**.
 12. Vælg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ I dette emne beskrives forskellige måder, du kan få vist bogførte momstransak
 2. Klik på **Momskode** i handlingsruden.
 3. Vælg **Bogført moms**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

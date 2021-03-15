@@ -302,3 +302,6 @@ Hvis du vil oprette en side med fakturadetaljer i webstedgeneratoren, skal du f√
 [Indholdsblokmodul](../add-hero-module.md)
 
 [Produktsamling](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

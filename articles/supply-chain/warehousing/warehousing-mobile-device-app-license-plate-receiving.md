@@ -104,3 +104,6 @@ Du kan få flere oplysninger om menupunkter på mobilenheder, i [Konfigurere mob
 Du kan finde flere oplysninger om produktionsscenariet *Færdigmelding* i [Oversigt over politikker for lagerstedsarbejde](warehouse-work-policies.md).
 
 Du finder flere oplysninger om indgående laststyring i [Lagerstedshåndtering af indgående laster til indkøbsordrer](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

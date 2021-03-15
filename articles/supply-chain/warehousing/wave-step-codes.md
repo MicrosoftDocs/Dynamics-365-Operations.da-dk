@@ -92,3 +92,6 @@ Følgende procedure hjælper med at sikre, at den genopfyldningsskabelon, du har
 6. Vælg den bølgetrinskode, du har oprettet i genopfyldningsskabelonen, i feltet **Kode for bølgetrin**.
 
 Du udfører disse trin for hver juridisk enhed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

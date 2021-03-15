@@ -52,3 +52,6 @@ Når du tilbagefører status for en produktionsordre fra **Startet** til **Frigi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

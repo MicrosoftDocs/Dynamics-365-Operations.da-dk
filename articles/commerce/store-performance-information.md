@@ -44,3 +44,6 @@ Denne rapport giver et øjebliksbillede af følgende oversigter som en del af bu
 - Momsoversigt
 - Pris tilsidesætter oversigt
 - Rabatoversigt
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

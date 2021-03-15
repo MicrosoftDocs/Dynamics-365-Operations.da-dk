@@ -84,3 +84,6 @@ Du kan også foretage manuelle justeringer af prognosen på siden **Detaljer om 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

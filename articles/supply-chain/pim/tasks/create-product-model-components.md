@@ -37,3 +37,6 @@ Begrænsningsbaserede produktkonfigurationsmodeller bruger komponenter som bygge
 7. Skriv en værdi i feltet Beskrivelse.
 8. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

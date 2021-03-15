@@ -48,3 +48,6 @@ Dette emne beskriver, hvordan du registrerer modtagelsen af varer direkte på en
 6. Angiv **Antal** til '4'. Her kan du manuelt angive det antal, der modtages for hver linje på ordren.  
 7. Vælg **OK**. Varerne er nu registreret som modtaget på indkøbsordren, og der er oprettet en produktkvitteringskladde som dokument for at afspejle dette. Du kan bruge handlingen Produktkvittering til at gennemse de kladder, der er oprettet med indkøbsordren, og til at se, hvad der er modtaget, og hvornår.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Til at løse problemet med et eksponentielt stigende antal kombinationer, der sk
 ![Formel til beregning af marginal værdi](./media/overlapping-discount-combo-06.jpg)
 
 Når den marginale værdi af hver rabat på et delt sæt produkter er beregnet, anvendes rabatterne på de delte produkter i rækkefølge, udtømmende, fra højeste marginale værdi til laveste marginale værdi. I denne metode sammenlignes alle resterende rabatmuligheder ikke hver gang, når der anvendes en enkelt forekomst af en rabat. I stedet sammenlignes de overlappende rabatter én gang og anvendes derefter i rækkefølge. Der foretages ingen yderligere sammenligninger. Du kan konfigurere tærsklen for at skifte til metoden for marginal værdi under fanen **Rabat** på siden **Commerce-parametre**. Den acceptable tid til at beregne den samlede rabat varierer på tværs af detailbrancher. Men generelt ligger denne tid dog i intervallet fra nogle tiendedele af millisekunder til et sekund.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

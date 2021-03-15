@@ -60,3 +60,6 @@ Dette emne beskriver, hvordan lastplanlægningspanelet bruges til at oprette en 
 5. Vælg **Tildel**.
 6. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

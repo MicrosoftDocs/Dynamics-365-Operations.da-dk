@@ -202,3 +202,6 @@ Afhængigt af transaktionstypen, f.eks. en avanceret finanspost (ALE) eller en i
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

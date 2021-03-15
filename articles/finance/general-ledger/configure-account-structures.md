@@ -106,3 +106,6 @@ Når du konfigurerer dine kontostrukturer, der er nogle bedste fremgangsmåder, 
 Når du er tilfreds med den nye konfiguration eller en ændring i en kontostruktur, skal du aktivere den. Hvis en kontostruktur tildeles til en finanskonto, kan denne aktivering være en længerevarende proces, fordi alle ikke-bogførte posteringer i systemet skal synkroniseres med den nye struktur. Bogførte posteringer berøres ikke af ændringer af kontostrukturen.
 
 Du kan finde flere oplysninger under [Planlægge dine kontoplaner](plan-chart-of-accounts.md), [Økonomiske dimensioner](financial-dimensions.md) og [Angive kombinationer af konto og dimension (segmenteret adgangsstyring)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

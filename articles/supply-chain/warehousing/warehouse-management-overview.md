@@ -73,3 +73,6 @@ Du kan finde meninger, nyheder og andre oplysninger om lagerstyring og andre lø
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Du kan sende en anmodning om orlov og se status for dine orlovsanmodninger i Dyn
 ## <a name="see-also"></a>Se også
 
 [Stoppe orlov midlertidigt](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

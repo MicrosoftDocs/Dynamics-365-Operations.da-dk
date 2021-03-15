@@ -52,3 +52,6 @@ Du kan opdatere tilknytningsdefinitionerne af en dimension med omkostningselemen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

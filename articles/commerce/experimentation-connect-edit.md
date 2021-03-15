@@ -94,3 +94,6 @@ Hvis du har defineret eksperimentets omfang som **helt** i guiden **Tilslut eksp
 
 ## <a name="next-step"></a>Næste trin
 [Gennemse og publicere et eksperiment](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

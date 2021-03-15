@@ -135,3 +135,6 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
 
 [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

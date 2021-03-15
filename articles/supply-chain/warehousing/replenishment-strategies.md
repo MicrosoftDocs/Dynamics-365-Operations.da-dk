@@ -114,3 +114,6 @@ Resultaterne er forskellige på grund af de oplysninger, der er tilgængelige, n
 [![Eksempel 2](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
 
 Hvis du vil hente maksimumantallet til genopfyldningslokationer, skal du derfor angive indstillingen **Tillad opdeling** til *Ja* i lokationsvejledningerne for genopfyldningspluk.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

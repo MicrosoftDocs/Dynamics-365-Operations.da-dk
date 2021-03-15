@@ -58,3 +58,6 @@ Vurderings- og anmeldelsesløsningen indeholder også en Business Intelligence-s
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
 
 [Synkronisere produktvurderinger i Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

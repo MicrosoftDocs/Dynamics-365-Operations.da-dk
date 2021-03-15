@@ -43,3 +43,6 @@ Finansfordelingsregler kan bruges til budgetplaner. Når du bruger finansfordeli
 > [!NOTE]
 > Du kan ikke bruge interne finansfordelingsregler til budgetplanlæsning.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

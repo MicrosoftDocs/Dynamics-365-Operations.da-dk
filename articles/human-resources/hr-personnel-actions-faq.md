@@ -92,3 +92,6 @@ skriv URL-adressen til siderne på administrationsporten, f.eks.:
 - Ikrafttrædelsesdatoen i en handling af typen **Ansæt en arbejder** er den dato, du angav i feltet **Startdato for ansættelse**.
 - Ikrafttrædelsesdatoen i en handling af typen **Overfør en arbejder** er den dato, du angav i feltet **Startdato for tildeling** for arbejderen.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ En *parallel aktivitet* er et arbejdsgangselement, der omfatter to eller flere a
 ### <a name="subworkflow"></a>Underarbejdsgang
 
 En *underarbejdsgang* er en arbejdsgang, der køres inden for rammerne af en anden arbejdsgang.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

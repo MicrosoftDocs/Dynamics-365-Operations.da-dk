@@ -39,3 +39,6 @@ Når du opretter for- og signatursider til en betalingsrapport, kan du angive, h
     * Tilføj eventuelt flere navne, og vælg de ønskede indstillinger.  
 8. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

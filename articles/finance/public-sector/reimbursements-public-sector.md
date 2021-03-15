@@ -65,3 +65,6 @@ Nej, ikke direkte. Du kan dog bruge finanskladdeposter til at oprette posteringe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Når du opretter afskrivningskladdeposteringerne i forhold til en leasingaftale,
 Det endelige afskrivningsbeløb for udligningsudgifter kan beregnes ved hjælp af en lidt anden valutakurs, så ROU aktivet afskrives fuldt ud i regnskabsvalutaen og rapporteringsvalutaen.
 
 Hvis rettigheden er blevet genklassificeret som **Udskudt leje**, fjerner systemet automatisk valutakurserne for regnskabs- og rapporteringsvaluta, hvis de allerede er defineret.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

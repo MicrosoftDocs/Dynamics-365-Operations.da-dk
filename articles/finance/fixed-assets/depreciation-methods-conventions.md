@@ -90,3 +90,6 @@ Du kan vælge mellem følgende afskrivningsmetoder.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

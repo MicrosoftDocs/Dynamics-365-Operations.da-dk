@@ -243,3 +243,6 @@ For at kunne gøre dette skal Proseware, Inc. ændre basiskonfigurationsversione
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Teste det tilpassede format for generering af betalingsfiler
 Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Finance and Operations-session. Vælg det oprettede 'BACS-format (UK fiktivt brugerdefineret)' i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder Proseware, Inc.s netop indførte XML-node, som præsenterer IBAN-kontokode i henhold til de regionale krav. Filen skal også indeholde Litware, Inc.s netop indførte XML-node, som præsenterer SWIFT-bankkode i overensstemmelse med kravene i landet.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

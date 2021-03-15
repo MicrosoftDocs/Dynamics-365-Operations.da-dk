@@ -85,3 +85,6 @@ Når der er flere tilgængelige leveringsmåder for en kanal, giver det en forbe
 ## <a name="considerations-for-distributed-order-management"></a>Overvejelser vedrørende fordelt ordrestyring
 
 Funktionerne for [fordelt ordrestyring (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) i Commerce ignorerer alle salgslinjer, der er markeret til afhentning i butikken. Disse funktioner er blevet opdateret for at sikre, at salgslinjer, der er knyttet til konfigurerede leveringsmåder, springer DOM-logikken over, og de omfordeles ikke til et nyt opfyldningslagersted.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

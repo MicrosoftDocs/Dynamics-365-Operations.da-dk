@@ -32,3 +32,6 @@ Dette emne forklarer, hvordan du kan ændre datoen for en session. Den aktuelle 
 2. Indtast en dato i feltet **Dato**.
 3. Vælg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

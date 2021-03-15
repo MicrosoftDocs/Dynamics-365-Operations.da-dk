@@ -256,3 +256,6 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
 
     > [!NOTE]
     > Hvis der er oprettet delte produktmedier og delte produktattributter, gælder de for alle produkter.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

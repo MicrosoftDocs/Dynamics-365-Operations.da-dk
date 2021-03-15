@@ -56,3 +56,6 @@ Du kan finde flere oplysninger under [Afskrivningsmetoder og -principper](deprec
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

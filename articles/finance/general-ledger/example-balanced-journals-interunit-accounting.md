@@ -54,3 +54,6 @@ Følgende regnskabsposter oprettes derfor automatisk, så denne kladde afstemmes
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

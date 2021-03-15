@@ -115,3 +115,6 @@ Jeg bruger version 10.0.16 eller nyere, og jeg får vist følgende fejlmeddelels
 > Udfyld følgende spørgeskema for at komme i gang, og hvis det er relevant, skal du anmode om undtagelse fra migrering til Planlægningsoptimering.
 
 **Svar:** Nej, varedisponering er ikke blokeret. Din varedisponeringskørsel blev fuldført korrekt, og du kan bruge resultatet på normal vis. Men hvis du vil undgå at modtage denne fejlmeddelelse under fremtidige varedisponeringskørsler, skal du enten migrere til Planlægningsoptimering med det samme eller anmode om en undtagelse ved hjælp af linket i fejlmeddelelsen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

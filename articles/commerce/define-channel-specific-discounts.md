@@ -61,3 +61,6 @@ Følgende eksempel illustrerer de opgaver, der er involveret i oprettelse af en 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Prisjusteringer og rabatter](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

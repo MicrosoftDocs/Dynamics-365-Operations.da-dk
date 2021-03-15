@@ -109,3 +109,6 @@ Hvis du vil føje brugerdefinerede navigationsindstillinger til navigationsmenue
 [Oprette en side-URL](create-page-url.md)
 
 [Arbejd med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

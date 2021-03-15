@@ -141,3 +141,6 @@ Tjenesten Orchestrator er den tjeneste, der styrer installationen og den relater
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering og overtegning
 
 Missionskritiske tjenester som AOS skal hostes på virtuelle værter, der har dedikerede ressourcer – kerner, hukommelse og diskplads.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

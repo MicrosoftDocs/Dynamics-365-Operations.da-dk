@@ -50,3 +50,6 @@ Denne opgave bruger demofirmaet USMF.
 18. Vælg valutaen for gebyret i feltet **Valuta for gebyr**. Dette er den valuta, som gebyret vil blive oprettet i.  
 19. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

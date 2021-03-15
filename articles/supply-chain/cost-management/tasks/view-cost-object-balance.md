@@ -39,3 +39,6 @@ Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fre
 8. Fjern markeringen i afkrydsningsfeltet Lokalitet.
 9. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

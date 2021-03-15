@@ -295,3 +295,6 @@ Før varerne i klyngen kan lægges på lager, skal klyngen lukkes.
 ## <a name="notes-and-tips"></a>Noter og tip
 
 For de tilfælde, hvor klynge-id'et bliver til det overordnede id for en indlejret Palle, angives positionen automatisk, når klynge-id'et scannes. Der skal ikke scannes flere id'er, selvom id-genereringen er angivet til manuel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

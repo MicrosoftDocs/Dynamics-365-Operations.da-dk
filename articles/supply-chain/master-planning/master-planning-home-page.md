@@ -85,3 +85,6 @@ Du kan finde yderligere hjælp i form af opgaveguider. Du kan få adgang til opg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

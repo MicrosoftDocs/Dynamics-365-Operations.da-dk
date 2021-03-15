@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 Når du har hentet et adgangstoken, skal du overføre tokenet i godkendelsesheaderen som et bærertoken sammen med de enkelte anmodninger, du sender til data-API'en, som beskrevet ovenfor.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

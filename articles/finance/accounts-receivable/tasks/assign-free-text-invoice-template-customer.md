@@ -49,3 +49,6 @@ Denne opgaver viser, hvordan du tildeler en fritekstfakturaskabelon til en debit
     + Årligt – Vælg denne indstilling, og indtast antallet af år i feltet Pr. Hvis du f.eks. indtaster 2, genereres der en faktura til debitoren hvert andet år.  
 14. Brug feltet **Pr.** til at angive et antal.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

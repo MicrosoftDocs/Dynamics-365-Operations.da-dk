@@ -56,3 +56,6 @@ Vælg et af følgende emner for at komme i gang.
 [Dokumenttilstande og -livscyklus](document-states-overview.md)
 
 [Aktivere og bruge deling på tværs af kanaler](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

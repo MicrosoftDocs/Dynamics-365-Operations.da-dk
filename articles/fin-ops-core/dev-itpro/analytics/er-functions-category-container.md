@@ -43,3 +43,6 @@ Container-[funktioner](er-formula-language.md#functions) til [elektronisk rappor
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Formelsprog i elektronisk rapportering](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

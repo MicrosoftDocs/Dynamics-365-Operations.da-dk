@@ -37,3 +37,6 @@ Denne procedure viser, hvordan du kan få vist IGVA-opgørelse på en produktion
 6. I feltet Fra dato skal du angive datoen til "2012-12-01".
 7. I feltet Til dato skal du angive datoen til "2012-12-31".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

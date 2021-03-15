@@ -249,3 +249,6 @@ Dette scenarie viser, hvordan de indstillinger, der blev beskrevet tidligere i d
 1. I oversigtspanelet **Salgsordrelinjer** skal du vælge **Tilføj linje** for at tilføje en anden linje.
 1. På den nye linje skal du angive feltet **Varenummer** til *M9200* og feltet **Antal** til *1*.
 1. Gentag linjer 6 til 9 for at reservere linjen og frigive den til lagerstedet. Som før opretter systemet en **ny** forsendelse for den linje, du har tilføjet. Men da varen er fra varegruppe **CarAudio**, kan det **ikke overføre de begrænsninger, du opretter for blandingsgruppen for last**. Derfor **føjes den til en ny last**. Hvis du ikke har angivet en blandingsgruppe for last på lastopbygningsskabelonen, skal denne forsendelse føjes til den nye last.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

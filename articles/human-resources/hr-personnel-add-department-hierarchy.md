@@ -54,3 +54,6 @@ Følg disse trin for at føje en afdeling til afdelingshierarkiet.
 
 ## <a name="steps-for-creating-a-department"></a>Trin til oprettelse af en afdeling
 Se artiklen [Definerere nye afdelinger](../fin-and-ops/hr/tasks/define-new-departments.md) for den trinvise procedure til at oprette en ny afdeling. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

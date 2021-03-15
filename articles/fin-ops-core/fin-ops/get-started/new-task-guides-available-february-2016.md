@@ -645,3 +645,6 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 [Nye eller opdaterede opgaveguider (august 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nye eller opdaterede opgaveguider (november 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

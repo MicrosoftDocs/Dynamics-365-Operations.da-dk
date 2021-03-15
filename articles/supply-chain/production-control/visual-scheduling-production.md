@@ -159,3 +159,6 @@ Gantt-diagrammet kan åbnes fra følgende sider.
 
 [Visuel planlægning for produktionen (demoscript)](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

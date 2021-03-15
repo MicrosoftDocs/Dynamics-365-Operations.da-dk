@@ -100,3 +100,6 @@ Denne procedure viser, hvordan til effektivt du kan oprette tilbud, der tilbyder
 11. Gå til Salg og marketing > Salgstilbud > Alle tilbud.
     * Kontroller, at der er oprettet tilbud for alle de debitorer, der er angivet i masseopdateringsrutinen, på basis af den valgte skabelon.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

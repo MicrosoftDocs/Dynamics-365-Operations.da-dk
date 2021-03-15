@@ -44,3 +44,6 @@ Følgende betingelser gælder f. eks.:
 Det beløb, der skal afskrives for det oprindelige anlæg, er $1.822,25. Dette beløb er lig med NBV, før den opdelte transaktion bogføres ($9.111,25), plus den anskaffelsesregulering, der genereres under bogføring af den opdelte transaktion (-$8.000), plus den afskrivningsregulering, der genereres under den opdelte transaktion ($711). Derfor er afskrivningen for det andet år (1.822,25 × 18 procent) ÷ 12 = $27,33.
 
 Det beløb, der skal afskrives for det nye anlægsaktiv i det første år, er (8.000 × 18 procent) ÷ 12 = $120.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

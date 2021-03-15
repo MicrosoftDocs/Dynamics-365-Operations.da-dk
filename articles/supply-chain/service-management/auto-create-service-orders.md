@@ -58,3 +58,6 @@ Serviceaftalen gælder fra 1. januar 2012 til 31. december 2012. Der knyttes to 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

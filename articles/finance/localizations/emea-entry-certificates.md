@@ -125,3 +125,6 @@ Hvis du ikke har adgang til de sider, der bruges til at fuldføre denne opgave, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

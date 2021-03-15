@@ -50,3 +50,6 @@ Brug følgende trin til at tilbageføre ugemte ændringer i en planlægningstavl
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

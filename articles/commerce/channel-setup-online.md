@@ -133,3 +133,6 @@ Følgende billede viser et eksempel på en opsætning af en gruppetildeling for 
 [Konfigurere en callcenter-kanal](channel-setup-callcenter.md)
 
 [Dynamics 365-betalingsconnector til Adyen](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

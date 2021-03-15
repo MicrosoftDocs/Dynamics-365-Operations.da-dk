@@ -57,3 +57,6 @@ Denne fremgangsmåde viser, hvordan du registrerer varer ved hjælp af varemodta
 2. Klik på Produktkvittering.
 3. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

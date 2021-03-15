@@ -69,3 +69,6 @@ For at udligne restbeløbet skal du udføre følgende trin:
 7)  Du kan også vælge at oprette en betalingskladde med udligningsrestbeløbet eller blot bogføre det uden en kladde. Vælg **Ja** for **Rediger i kladde** for at oprette en betalingskladde. Du kan redigere den betalingskladde, som du opretter.
 8)  Klik på **Udlign rest**. Hvis du vælger at oprette en kladde, ændres knappen til **Opret kladde**. Klik på **Opret kladde** i stedet.
 9)  Hvis du har oprettet en betalingskladde, åbnes kladdesiden, når du klikker på **Udlign rest**. Der føjes en linje til kladden med restudligningsbeløbet som beløbet og kontoen for udligningsrestbeløbet som modkonto. Hvis du har tilføjet en debitor eller kreditor, så du kan flytte udligningsbeløbet til en anden debitor eller kreditor, føjes der en ekstra linje til kladden, så udligningsbeløbet kan flyttes til den pågældende debitor eller kreditor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

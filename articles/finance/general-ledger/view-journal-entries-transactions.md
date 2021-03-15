@@ -60,3 +60,6 @@ Ud over de økonomiske rapporter, kan du bruge følgende finansrapporter til at 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

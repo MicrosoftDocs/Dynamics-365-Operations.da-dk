@@ -61,3 +61,6 @@ Dette emne forklarer, hvordan du kan oprette en genopfyldningsordre til konsigna
 3. Vælg **Oversigt**. De varer, der er modtaget som konsignationslager, der ejes af leverandøren, er disponible. Det resterende antal på genopfyldningsordren til konsignation vises i feltet **Bestilt i alt**.  
 4. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

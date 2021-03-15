@@ -53,3 +53,6 @@ Du foretager eventuelt en delbetaling, hvor beløbet, der stadig skal udlignes, 
 
 
 Du kan finde flere oplysninger i [Oversigt over kreditorbetalinger](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

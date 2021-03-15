@@ -113,3 +113,6 @@ Du kan knytte en hjælpelinje til en vedligeholdelsestjekliste ved at følge dis
 
 - [Oversigt over dobbeltskrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Oversigt over aktivstyring](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

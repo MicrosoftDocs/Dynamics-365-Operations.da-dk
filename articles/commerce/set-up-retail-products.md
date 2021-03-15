@@ -39,3 +39,6 @@ Før du kan tilbyde produkter til videresalg i dine handelskanaler, skal du opre
 4. **Føj produkter til sortimenter.** Et udvalg repræsenterer en samling af produkter, som du tilbyder i dine kanaler. Du kan definere et eller flere udvalg, og hvert produkt kan tildeles et eller flere udvalg. Hvis du vil tildele produkter til kanaler, kan du tildele disse kanaler sortimenter. Når du opretter et udvalg, kan du tilføje produkter, som endnu ikke er frigivet til en juridisk enhed. Du skal dog frigive produkterne til en juridisk enhed, før disse produkter kan gøres tilgængelige for kanalerne.
 5. **Føj produkter til navigationshierarkier.** Før produkter kan gennemses online eller ved POS, skal de være kategoriseret i et navigationshierarki for Commerce.
 6. **Føj produkter til kataloger.** Selvom dette trin er valgfrit for POS, kræver onlinebutikker, at produkter skal medtages i mindst ét katalog.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -84,3 +84,6 @@ Følg disse trin for at aktivere funktionen for B2B-ordreantalsgrænser i Commer
 [Administrere forretningspartnerbrugere på B2B-e-handelswebsteder](manage-b2b-users.md)
 
 [Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

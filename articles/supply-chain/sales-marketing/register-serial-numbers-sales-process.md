@@ -79,3 +79,6 @@ Denne funktion er tilgængelig for alle de roller, der kan vedligeholde salgsfø
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

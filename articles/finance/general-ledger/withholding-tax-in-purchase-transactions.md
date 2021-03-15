@@ -75,3 +75,6 @@ A-skat beregnes på **leverandørbetalingskladde**. Du kan manuelt justere de re
 Beløbet for den afledte A-skat trækkes fra kreditorbetalingen og bogføres på kontoen for **A-skattekonto** i et relateret bilag.
 
 ![A-skattekonto, der viser et relateret bilag](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

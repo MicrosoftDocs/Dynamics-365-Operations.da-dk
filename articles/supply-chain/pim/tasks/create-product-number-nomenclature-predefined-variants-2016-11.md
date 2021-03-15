@@ -57,3 +57,6 @@ Dette emne viser, hvordan du konfigurerer en nomenklatur for produktnumre til fo
 5. Indtast eller vælg en værdi i feltet **Nomenklatur for produktvariantnummer**.
 6. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

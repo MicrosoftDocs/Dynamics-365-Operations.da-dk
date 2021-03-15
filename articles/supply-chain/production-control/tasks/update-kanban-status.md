@@ -47,3 +47,6 @@ Når en kanban bliver tømt ved en fejltagelse eller en modtaget kanban skal tø
 2. Markér den valgte række på listen.
     * Bemærk, at Status på håndteringsenhed er Tømt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

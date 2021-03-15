@@ -85,3 +85,6 @@ Sådan gendannes miljøet:
 
 > [!Warning]
 > Power Apps-miljøer gemmes kun i syv dage efter sletning. Du skal gendanne miljøet inden for perioden på syv dage.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

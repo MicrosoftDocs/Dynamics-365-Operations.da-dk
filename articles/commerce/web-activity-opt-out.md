@@ -55,3 +55,6 @@ Administratorer kan lade godkendte brugere selv framelde sig indsamlingen af web
 ### <a name="custom-extensions"></a>Brugerdefinerede udvidelser
 
 Administratorer kan oprette deres egne udvidelser for at administrere brugernes mulighed for framelding. Yderligere oplysninger finder du under [Kalde Retail Server-API'er](e-commerce-extensibility/call-retail-server-apis.md) og [Udvidelsesmuligheder for onlinekanal](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

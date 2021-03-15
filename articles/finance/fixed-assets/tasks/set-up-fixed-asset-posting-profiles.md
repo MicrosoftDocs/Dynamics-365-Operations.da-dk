@@ -122,3 +122,6 @@ Denne opgaveguide konfigurerer posteringsprofiler for bogføring af anlægsaktiv
 88. Angive de ønskede værdier i feltet **Hovedkonto**.
 89. I feltet **Modkonto** skal du specificere de ønskede værdier.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

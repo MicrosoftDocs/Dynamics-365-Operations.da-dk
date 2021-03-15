@@ -49,3 +49,6 @@ Brugeren kan ikke tilpasse de integrerede Microsoft Power BI-rapporter.
 **Langsigtet løsning**
 
 Yderligere indstillinger for Power BI bliver gjort tilgængelige, og flere data og enheder bliver en del af Dataverse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -232,3 +232,6 @@ For at undgå uønskede problemer med fremtidige udligninger for denne transakti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

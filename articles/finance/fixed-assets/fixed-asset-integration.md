@@ -94,3 +94,6 @@ Du kan finde flere oplysninger under [Anskaffelse af aktiver via indkøb](acquir
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

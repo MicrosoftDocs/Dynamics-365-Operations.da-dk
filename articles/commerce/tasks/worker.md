@@ -56,3 +56,6 @@ Denne fremgangsmåde viser, hvordan du konfigurerer en arbejder som en sælger, 
 6. Indtast eller vælg en værdi i feltet Standardgruppe.
 7. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Værdien i feltet **Faktor** er lig med **50**. I dette tilfælde er afskrivning
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -129,3 +129,6 @@ Følgende liste over forretningsdokumenter styres af funktionen **Ruteoutput af 
 [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Ændringer af API-struktur til elektronisk rapportering for Application update 10.0.17](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

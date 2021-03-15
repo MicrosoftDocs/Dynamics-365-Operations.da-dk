@@ -87,3 +87,6 @@ De følgende trin i produktionens livscyklus kan opstå for alle typer af produk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

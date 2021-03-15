@@ -66,3 +66,6 @@ Benyt følgende fremgangsmåde for at forbedre en kategoriside.
 [Bekræfte tilgængelighed af sideindhold](verify-accessibility.md)
 
 [Oprette dynamiske e-handelssider baseret på URL-parametre](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

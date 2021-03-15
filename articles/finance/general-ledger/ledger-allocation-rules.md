@@ -50,3 +50,6 @@ Hver fordelingsregel består af fire komponenter: generel, kilde, destination og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -121,3 +121,6 @@ Hvis der introduceres en ny version af certifikatet, men det ikke kan opdateres 
 
 > [!NOTE]
 > I Commerce Runtime vil den nye version af certifikatet blive kaldt først. Hvis certifikatet endnu ikke er opdateret i en bestemt butik eller på en bestemt terminal, vil den tidligere version blive kaldt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

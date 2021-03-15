@@ -43,3 +43,6 @@ Du kan bruge formularen **Slet returordre** til at slette flere returordrer.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

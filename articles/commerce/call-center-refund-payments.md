@@ -108,3 +108,6 @@ Alternativt kan en organisation angive indstillingen **Tillad betalingsændring*
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Betalingsmetoder i callcentre](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

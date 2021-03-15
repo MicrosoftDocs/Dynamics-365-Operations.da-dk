@@ -49,3 +49,6 @@ I tilfælde, hvor der skal overføres en ny version af den samme fil eller en he
 ## <a name="upload-a-file-using-run-project"></a>Overføre en fil ved hjælp af Kør projekt
 
 Du kan overføre en Excel-fil, mens du bruger indstillingen **Kør projekt** til at udføre et importprojekt. Du skal være omhyggelig med kun at overføre de filer, der har de samme regneark som de eksisterende tilknytninger på dataenhederne i dataprojektet. Hvis der ikke findes et regneark i den fil, der netop er overført, vises der en fejlmeddelelse i systemet, og importen stopper. Hvis tilknytningen til regnearket skal ændres for et objekt, skal tilknytningerne i dataprojektet først opdateres fra dataprojektet, før du kan bruge filen i **Kør projekt**-oplevelsen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

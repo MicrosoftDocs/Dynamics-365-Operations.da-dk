@@ -72,3 +72,6 @@ Denne procedure viser, hvordan du finder forældede frigivne produkter eller pro
 
 8. Find og vælg den ønskede post på listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

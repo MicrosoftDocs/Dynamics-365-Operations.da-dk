@@ -158,3 +158,6 @@ Dette emne beskriver, hvordan en bruger i rollen som systemadministrator eller u
 42. Klik på **Gem**.
 43. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

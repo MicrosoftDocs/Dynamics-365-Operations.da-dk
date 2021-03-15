@@ -61,3 +61,6 @@ Hvis du vil konfigurere kritikalitet, skal du først oprette de kritikalitetstyp
 - Kritikaliteten på en arbejdsordre genberegnes, hver gang en arbejdsordrelinje føjes til eller slettes fra arbejdsordren.
 - Hvis en arbejdsordre indeholder flere arbejdsordrejobs, bruges den højeste kritikalitet i henhold til feltet **Faktor** på siden **Kritikalitetstyper** altid på arbejdsordren.
 - Generelt set kan aktivkritikalitet ændre sig over en periode. Kritikalitet kan påvirkes af køb af nyt udstyr, renovering osv. Overvej at revurdere dine aktivkritikaliteter med jævne mellemrum (f.eks. én gang om året eller hvert andet år) for at sikre, at dine kritikalitetsdefinitioner svarer til din aktuelle produktionsopsætning.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

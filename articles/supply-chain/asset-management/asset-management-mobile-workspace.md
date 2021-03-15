@@ -239,3 +239,6 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 1. Vælg **Udført**.
 
     ![Føj en vedhæftet fil til en vedligeholdelsesanmodning](media/am-mobile-10.png "Føj en vedhæftet fil til en vedligeholdelsesanmodning")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

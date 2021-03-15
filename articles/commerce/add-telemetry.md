@@ -121,3 +121,6 @@ Hvis du vil føje et eksternt script direkte til en skabelon i webstedsgenerator
 [Tilføj en copyright-meddelelse](add-copyright-notice.md)
 
 [Føje sprog til webstedet](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

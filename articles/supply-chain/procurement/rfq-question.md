@@ -104,3 +104,6 @@ I forbindelse med publicerede tilbudsanmodninger skal du redigere en tilbudsanmo
 
 > [!IMPORTANT]
 > Hvis du ændrer en eksisterende tilbudsanmodning med det formål at tillade leverandørspørgsmål, rydder systemet alle eksisterende svar, når du sender tilbudsanmodningen igen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

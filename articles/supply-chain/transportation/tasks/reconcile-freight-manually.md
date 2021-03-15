@@ -60,3 +60,6 @@ Når du afstemmer en fragtfaktura og et fragtbrev, kan du gøre det linje for li
 5. Klik for at følge linket i feltet Referencekladdenummer.
 6. Klik på Linjer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

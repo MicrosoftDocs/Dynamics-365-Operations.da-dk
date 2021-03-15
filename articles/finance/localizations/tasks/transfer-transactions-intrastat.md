@@ -152,3 +152,6 @@ Denne procedure viser dig, hvordan du kan konfigurere Intrastat-parametre og ove
     
 Gennemse overførte data, herunder land/område for destination/afsendelse, oprindelsesland/område, vægt, antal, antal i supplerende enheder, varekode, transaktionskode, fakturabeløb og statistiske beløb. Du kan ændre data, hvis det er nødvendigt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

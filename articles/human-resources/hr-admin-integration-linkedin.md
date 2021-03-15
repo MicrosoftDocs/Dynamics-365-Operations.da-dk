@@ -190,3 +190,6 @@ Følgende oplysninger importeres og medtages i den nye medarbejderpost:
 
 [Konfigurere virtuelle Dataverse-tabeller](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Hvad er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

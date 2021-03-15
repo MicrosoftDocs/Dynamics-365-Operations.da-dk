@@ -36,3 +36,6 @@ Denne fremgangsmåde viser, hvordan du tildeler en status for produktlivscyklus 
 5. Indtast eller vælg en værdi i feltet Status for produktlivscyklus.
 6. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

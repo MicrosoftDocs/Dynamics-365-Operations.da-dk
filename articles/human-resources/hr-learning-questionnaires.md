@@ -44,3 +44,6 @@ Følgende tabel indeholder links til oplysninger om de centrale opgaver i spørg
 | [Design et spørgeskema](hr-learning-design-questionnaires.md) | Denne artikel indeholder oplysninger om, hvordan du designer et spørgeskema. Designprocessen omfatter opsætning af forudsætninger, svar og spørgsmål og kombinerer dem derefter i et spørgeskema. |
 | [Udsende og planlægge spørgeskemaer](hr-learning-distribute-questionnaires.md) | Denne artikel indeholder oplysninger om, hvordan du distribuerer et spørgeskema til svarpersoner, og hvordan spørgeskemaer udfyldes. |
 | [Se og evaluer resultaterne af spørgeskema](hr-learning-evaluate-questionnaire-results.md) | Denne artikel indeholder oplysninger om, hvordan resultaterne fra udfyldte spørgeskemaer vises og evalueres. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

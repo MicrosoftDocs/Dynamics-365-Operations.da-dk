@@ -67,3 +67,6 @@ Dette emne beskriver de kladdetyper, du har angivet for økonomikladder. Brug si
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

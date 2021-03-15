@@ -86,3 +86,6 @@ Når du har fuldført trinnene i afsnittet [Konfigurere standardbeskrivelser](#s
 2. I feltet **Referencetabel** skal du vælge den databasetabel, hvorfra der skal føjes parameterdata til beskrivelsen.
 3. I feltet **Referencefelt** skal du vælge det felt, hvorfra der skal føjes parameterdata til beskrivelsen.
 4. Gentag trin 1-3 for at tilføje flere parametre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

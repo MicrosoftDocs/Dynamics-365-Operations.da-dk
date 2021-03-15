@@ -176,3 +176,6 @@ Følgende fremgangsmåde viser, hvordan du kan tildele gebyrer på overskriftsni
         > Når du arbejder med **Vælg linjer, der skal udelades fra fordeling**-gitteret, skal du sørge for at lade gitteret være åbent, indtil du vælger **Alloker**. Hvis du lukker gitteret, før du vælger **Alloker**, går dine indstillinger i gitteret tabt. Derfor tildeles gebyrer ud fra de kriterier, du tidligere har defineret.
 
 1. Vælg **Alloker** for at anvende dine indstillinger og lukke dialogboksen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

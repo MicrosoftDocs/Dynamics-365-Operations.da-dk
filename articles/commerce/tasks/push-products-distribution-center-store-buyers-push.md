@@ -52,3 +52,6 @@ Denne procedure gennemgår trin til oprettelse og behandling af et centraliseret
 19. Klik på Opret ordre.
 20. Klik på Ja.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

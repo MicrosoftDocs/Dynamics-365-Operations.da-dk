@@ -70,3 +70,6 @@ Hvis du vil tilpasse underleverandørarbejde for lean manufacturing, skal du opr
 24. Klik på rullelisten i feltet Enhed for at åbne opslaget.
 25. ResolveChanges enheden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

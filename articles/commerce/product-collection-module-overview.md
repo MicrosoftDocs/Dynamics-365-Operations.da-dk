@@ -112,3 +112,6 @@ Følgende tabel viser de listetyper, der kan vælges i dialogboksen **Vælg prod
 [Oversigt over produktanbefalinger](product-recommendations.md)
 
 [Hurtig visning-.modul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

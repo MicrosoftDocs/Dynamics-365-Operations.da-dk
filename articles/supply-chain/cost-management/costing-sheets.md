@@ -49,3 +49,6 @@ Efterkalkulationsarket vises som en del af siden **Beregn varens kostpris**. Eft
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Følgende billede viser et hierarki med forskellige kanaler tilføjet.
 [Konfigurer en detailkanal](channel-setup-retail.md)
     
 [Konfigurere en onlinekanal](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

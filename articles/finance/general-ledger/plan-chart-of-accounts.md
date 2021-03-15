@@ -59,3 +59,6 @@ Du kan finde flere oplysninger under følgende emner:
 
 - [Økonomiske dimensioner](financial-dimensions.md)
 - [Oprette og tildele avancerede regelstrukturer](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

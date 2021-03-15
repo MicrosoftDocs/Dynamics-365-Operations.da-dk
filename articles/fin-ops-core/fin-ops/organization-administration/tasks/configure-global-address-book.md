@@ -45,3 +45,6 @@ Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Denne opgave
 13. Find og vælg den ønskede post på listen. Tryk på tasten Skift for at vælge flere roller, der skal føjes til ruden **Valgte roller**, og klik derefter på pilen for at tilføje de valgte roller.  
 14. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

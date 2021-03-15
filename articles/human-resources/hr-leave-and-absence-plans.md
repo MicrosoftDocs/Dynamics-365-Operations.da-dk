@@ -383,3 +383,6 @@ Budgetteret saldo (30) = Periodiseringsbeløb (10 × 1) + Aktuel saldo (40) – 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Konfigurere orlovs- og fraværstyper](hr-leave-and-absence-types.md)
 - [Periodisere orlovs- og fraværsplaner](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

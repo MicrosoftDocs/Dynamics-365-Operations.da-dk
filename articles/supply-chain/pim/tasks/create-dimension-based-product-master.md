@@ -41,3 +41,6 @@ Denne fremgangsmåde viser, hvordan du opretter en ny produktmaster med teknolog
     * Vælg teknologien for dimensionsbaseret konfiguration.  
 9. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

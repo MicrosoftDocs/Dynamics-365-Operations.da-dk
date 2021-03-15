@@ -68,3 +68,6 @@ Denne procedure viser, hvordan du kan oprette en indkøbsordre, der er baseret p
     - **Referencepartiet** sikrer, at omkostningerne i forbindelse med det aktuelle indkøb debiteres den tilknyttede ordre.  
     - Du kan navigere til den oprindelige salgsordre ved at åbne linket i feltet **Nummer på reference**.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

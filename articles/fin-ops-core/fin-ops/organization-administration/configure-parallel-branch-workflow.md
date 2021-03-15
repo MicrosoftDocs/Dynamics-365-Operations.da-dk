@@ -50,3 +50,6 @@ Udfør følgende trin for at designe og konfigurere elementerne i en parallel gr
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over oprettelse af arbejdsgange](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

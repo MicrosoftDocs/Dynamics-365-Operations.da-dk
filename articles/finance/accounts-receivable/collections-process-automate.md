@@ -117,3 +117,6 @@ Følgende tabeller viser de sider og felter, som de angivne oversigtspaneler kan
 |     Debitorparametre > Automatiseret rykkerproces     |     Bogfør rykkerbreve automatisk           |     Rykkerhandlingstyperne vil bogføre brevet under automatiseringen.                                      |
 |     Debitorparametre > Automatiseret rykkerproces     |     Oprette aktiviteter automatisk                |     Opret og luk aktiviteter for handlingstyper uden aktivitet for at få vist alle de automatiserede trin, der udføres på en konto.        |
 |     Debitorparametre > Automatiseret rykkerproces     |     Opbevaringsdage for automatiseret rykkerproces     |     Definerer, hvor mange dage rykkerhistorikken gemmes.                                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

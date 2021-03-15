@@ -54,3 +54,6 @@ Der er nogle forhold, hvor vi ikke anbefaler, at du nulstiller et datacenter. Bl
 > Følgende punkter angiver to ting, som en nulstilling af et datacenter *ikke* vil gøre. <br>
 > - Nulstillinger fjerner ikke rapportdesign. <br>
 > - Nulstillinger rydder ikke firma- eller brugerdata, medmindre disse er valgt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

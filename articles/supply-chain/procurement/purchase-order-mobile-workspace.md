@@ -112,3 +112,6 @@ Når du har set den indkøbsordre, der er tildelt til dig, og har læst instrukt
 5. Vælg den relevante handling.
 6. På siden **Fuldfør opgave** skal du angive en kommentar. Bemærk, at hvis du vælger handlingen **Deleger**, skal du vælge en bruger, du vil delegere opgaven til.
 7. Vælg **Udført**. Når du har opdateret arbejdsområdet, er indkøbsordren ikke længere på listen. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

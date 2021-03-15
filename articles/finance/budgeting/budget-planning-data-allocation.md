@@ -76,3 +76,6 @@ Til sidst skal du tilføje en automatiseret opgave til fordeling på det ønsked
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Hvis du har planer om at være væk fra kontoret eller på anden vis ikke er til
 8. Angiv en dato og et klokkeslæt i feltet **Slutdato/-klokkeslæt**.
 9. Markér afkrydsningsfeltet **Aktiveret** for at aktivere delegeringsreglen. 
 10. Skriv en kommentar i feltet **Kommentar** for at forklare, hvorfor du delegerer arbejdselementer.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

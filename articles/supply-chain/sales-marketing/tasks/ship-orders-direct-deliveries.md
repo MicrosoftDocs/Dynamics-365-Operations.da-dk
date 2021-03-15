@@ -81,3 +81,6 @@ Dette emne beskriver, hvordan du opretter en direkte levering for en salgsordre.
     - Siden Direkte levering fungerer som et panel, der giver indkøberen en oversigt over alle salgsordrelinjer, der skal leveres direkte, og den gør det muligt at oprette de respektive indkøbsordrer. Desuden kan han eller hun se de åbne direkte leveringsordrer og de bekræftede ordrer under fanen Bekræftelse og Levering.  
     - Når du har oprettet en ordre med direkte levering, flyttes den automatisk til fanen Bekræftelse. Du kan vælge at bekræfte ordren direkte fra denne side. Når købet er bekræftet, flyttes det automatisk til fanen Levering, hvorfra du kan registrere modtagelsen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

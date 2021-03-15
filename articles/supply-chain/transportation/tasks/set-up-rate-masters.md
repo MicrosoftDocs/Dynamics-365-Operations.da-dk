@@ -96,3 +96,6 @@ Denne procedure viser, hvordan du opretter en satsmaster. Logistikchefen konfigu
     * Angiv, hvilket postnummer denne satsbasistildeling skal være gyldig fra.
 10. Skriv "USA" i feltet **Afhentningsland/område**.
 11. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

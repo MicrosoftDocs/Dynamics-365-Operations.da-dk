@@ -139,3 +139,6 @@ LIFO-strategien finder den lokation, der indeholder den nyeste aldersfordelte da
 1. Bemærk, at den linje, hvor værdien for **Arbejdstype** er *Pluk*, viser en værdi for **Lokation** *PR-001*. Denne lokation indeholder den nummerplade, der har den nyeste aldersfordelte dato (LIFO).
 
 I disse scenarier har du set, hvordan aldersfordelt strategi dirigerer arbejdet til det lagersted, der enten har det ældste lager eller det nyeste lager, afhængigt af den valgte strategi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

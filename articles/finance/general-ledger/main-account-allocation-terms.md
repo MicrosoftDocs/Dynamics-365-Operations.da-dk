@@ -69,3 +69,6 @@ I oversigtspanelet **Destinationens finanskonto** er hovedkontoen den samme udgi
 > Du kan vælge at bruge knappen **Kopiér** til at duplikere den valgte fordeling.
 
 Når der oprettes en fordelingsbetingelse for en hovedkonto, vil systemet automatisk bogføre et nyt bilag, når der bogføres et bilag, der svarer til de økonomiske dimensioner for kilden på fordelingsbetingelserne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Følgende procedure viser de trin, som systemadministratorer kan bruge til at op
 6. Gå til **Navigationsrude > Moduler > Generelt > Generelt > Standarddashboard**. Du kan se det nye bannerbillede eller logobillede på dashboardet.  
     
     Du skal muligvis ændre dit firma ved hjælp af firmavælgeren til det firma, du har overført banneret til.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

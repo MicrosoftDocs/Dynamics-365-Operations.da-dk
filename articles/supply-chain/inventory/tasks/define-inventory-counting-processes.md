@@ -84,3 +84,6 @@ Dette emne beskriver konfigurationen af grundlæggende lageroptællingsprocesser
 5. Vælg en optællingsgruppe i rullemenuen til feltet **Optællingsgruppe**. Du kan vælge en bestemt optællingsgruppe, der skal gælde for varen på det bestemte lagersted, du har valgt. Når optællingen udføres på det pågældende lagersted, tilsidesætter denne optællingspolitik den generelle optællingspolitik for varen.  
 6. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

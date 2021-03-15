@@ -85,3 +85,6 @@ På siden **Debitorer** kan du for alle debitorer, der har accepteret at betale 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

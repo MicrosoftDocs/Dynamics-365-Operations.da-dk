@@ -239,3 +239,6 @@ Programmet til prissætning understøtter desuden **kun** følgende prisfunktion
 Prisen er en af de vigtigste faktorer, der styrer mange kunders indkøbsbeslutninger, og mange kunder sammenligner priserne på forskellige websteder, før de foretager et køb. For at hjælpe med at sikre, at de har konkurrencedygtige priser, holder detailhandlerne nøje øje med konkurrenterne og kører ofte kampagner. For at hjælpe disse forhandlere med at tiltrække kunder er det vigtigt at produktsøgning, gennemsynsfunktion, lister og siden med produktdetaljer viser de mest nøjagtige priser.
 
 I en kommende version af Commerce returnerer **GetActivePrices**-API'en (Application Programming Interface) priser, der omfatter simple rabatter (f.eks. en enkeltlinjerabatter, der ikke er baseret på andre varer i indkøbsvognen). På denne måde er de priser, der vises, tæt på det faktiske beløb, som kunderne skal betale for varerne. Denne API indeholder alle typer simple rabatter: tilknytningsbaserede, loyalitetsbaserede, katalogbaserede og kanalbaserede rabatter. Derudover returnerer API'en navnene og gyldighedsoplysningerne for de anvendte rabatter, så detailhandlerne kan give en mere detaljeret beskrivelse af prisen og skabe en oplevelse af, at det haster, hvis rabatten udløber snart.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

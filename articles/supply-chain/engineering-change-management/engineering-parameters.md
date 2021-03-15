@@ -56,3 +56,6 @@ I følgende tabel beskrives de felter, der er tilgængelige under fanen **Teknis
 | Regel for alvorsgrad | Vælg, hvordan graden af en teknisk ændringsordre skal fastlægges. Vælg *Manuel*, hvis brugeren forventes at angive en værdi i feltet **Alvorsgrad**. Vælg *Beregn* for at få systemet til at beregne værdien af feltet **Alvorsgrad**, når du vælger **Beregn alvorsgrad** i handlingsruden i den tekniske ændringsordre. I dette tilfælde vil systemet bruge de alvorlighedsregler, der er defineret på siden **Regelsæt for alvorsgrad**. Vælg *Beregn automatisk*, hvis værdien i feltet **Alvorsgrad** automatisk skal beregnes og udfyldes i overensstemmelse med regelsæt for alvorsgrad. |
 | Frigiv påvirkede produkter igen | Dette felt kan anvendes ved ny frigivelse af produkter via en teknisk ændringsordre. Du kan vælge, om alle produkter eller kun de berørte produkter skal foreslås, i dialogboksen **Frigivelser**. |
 | Styklisteniveauer, der skal frigives | Dybden af det styklisteniveau, der skal frigives. Hvis styklisten har flere niveauer (dvs. hvis den er dybere) end den værdi, der er angivet her, vil kun de niveauer, der ligger højere gennem den angivne værdi, blive frigivet. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

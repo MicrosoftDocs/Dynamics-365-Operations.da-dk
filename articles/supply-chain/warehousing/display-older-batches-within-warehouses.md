@@ -39,3 +39,6 @@ Konfigurationen **Visning af ældre batches på lagerstedet** er tilgængelig i 
 
 - Under **Lokationsstyring** > **Konfiguration** > **Mobilenhed** > **Menupunkter i mobilenhed** skal du indstille **Brug eksisterende arbejde** til **Ja** for menupunktet og vælge **Advar** i feltet **Pluk den ældste batch**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

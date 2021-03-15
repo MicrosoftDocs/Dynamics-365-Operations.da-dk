@@ -47,3 +47,6 @@ Denne procedure viser, hvordan du opretter et transporttilbud. Denne konfigurati
 7. Klik på Send.
 8. Vælg en rute.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

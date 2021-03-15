@@ -138,3 +138,6 @@ Du kan finde links til et eksempel og en alternativ fremgangsmåde i afsnittet [
 Du kan finde et eksempel under [Aktivering af Debitorer V3 – tabeltilknytningen Kontakter](enable-entity-map.md#enable-table-map)
 
 Du kan finde en alternativ fremgangsmåde, der er baseret på datamængder i de enkelte enheder, der skal køre den første synkronisering, under [Overvejelser ved første synkronisering](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

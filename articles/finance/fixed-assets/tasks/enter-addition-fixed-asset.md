@@ -45,3 +45,6 @@ Proceduren bruger rollen Revisor og demodata for den juridiske enhed USMF.
     * Indstil **Øger levetiden** til **Ja**, hvis tilføjelsen øger aktivets levetid.  
     * Feltet er kun til orientering. Hvis du vil forøge levetiden, skal du ændre levetiden i værdimodellerne og/eller afskrivningsmodellerne for aktivet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

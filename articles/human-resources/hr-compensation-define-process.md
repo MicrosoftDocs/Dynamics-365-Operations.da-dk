@@ -100,3 +100,6 @@ Kompensationsprocesser bruges til at fastlægge nye kompensationsbeløb og bonus
 10. Klik på Godkendt.
     * Når posten er blevet godkendt, kan den indlæses i medarbejderens officielle kompensationspost. Den nye kompensation træder i kraft på den posteringsdato, der blev angivet i kompensationsprocessen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Denne procedure viser, hvordan du registrerer chaufførens check-in og chauffør
 1. Klik på Chaufførens check-ud.
 2. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

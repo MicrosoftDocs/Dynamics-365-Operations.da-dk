@@ -101,3 +101,6 @@ Under fanen **Fordelingsnøgler** kan du angive **Parametre til prognosealgoritm
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

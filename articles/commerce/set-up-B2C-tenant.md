@@ -361,3 +361,6 @@ Du kan tilføje en valgfri, sekundær administratorkonto under afsnittet **Bruge
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

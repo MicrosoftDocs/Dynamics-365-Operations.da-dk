@@ -245,3 +245,6 @@ Du kan få vist indsendelseslogge for alle sendte dokumenter.
 - [Oversigt over tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-service-overview.md)
 - [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md)
 - [Konfigurere tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

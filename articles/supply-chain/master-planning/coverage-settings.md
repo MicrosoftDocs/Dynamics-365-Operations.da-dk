@@ -65,3 +65,6 @@ Hver genbestillingsmetode tildeles en af følgende disponeringskoder:
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over behovsplaner](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

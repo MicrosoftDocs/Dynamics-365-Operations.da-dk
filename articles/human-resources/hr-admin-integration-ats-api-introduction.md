@@ -137,3 +137,5 @@ Indstillingssæt:
 [Hvad er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Brug Microsoft Dataverse Web-API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
 [Opret og opdater de indstillinger, der er angivet ved hjælp af Web-API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

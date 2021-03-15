@@ -58,3 +58,6 @@ Du kan også oprette et nyt vedligeholdelsesbudget ved at kopiere et eksisterend
 
 > [!NOTE]
 > Vedligeholdelsesbudgettet beregner kun budgetomkostninger baseret på vedligeholdelsestidsplanslinjer. Hvis du vil beregne faktiske omkostninger for den samme periode, kan du udføre denne beregning på siden **Omkostningsstyring for aktiv**. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

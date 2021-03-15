@@ -80,3 +80,6 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Lageroverførsel (Field Service til Supply Chain Management): Lageroverførsel
 
 [![Skabelontilknytning i dataintegration](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

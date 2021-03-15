@@ -110,3 +110,6 @@ Følgende komponenter er vigtige for en søgeresultatside:
 
 [Oversigt over sider til kontostyring](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

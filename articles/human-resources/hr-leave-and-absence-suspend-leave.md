@@ -49,3 +49,6 @@ Hvis periodiseringer behandles, mens medarbejderens orlov er suspenderet, foreta
 - [Konfigurere orlovs- og fraværstyper](hr-leave-and-absence-types.md)
 - [Periodisere orlovs- og fraværsplaner](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

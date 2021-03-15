@@ -57,3 +57,6 @@ Du kan finde meninger, nyheder og andre oplysninger om lagerstyring og andre lø
 
 ### <a name="task-guides"></a>Opgaveguider
 Du kan finde yderligere hjælp i form af opgaveguider. Du kan få adgang til opgaveguider ved at klikke på knappen **Hjælp** på en vilkårlig side
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

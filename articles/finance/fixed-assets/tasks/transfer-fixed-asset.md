@@ -47,3 +47,6 @@ Denne opgaveguide overfører de økonomiske oplysninger for en anlægsaktivbog f
     * Gennemgå resultaterne, før du overfører anlægsaktivbøgerne.  
 10. Klik på **Overfør**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

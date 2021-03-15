@@ -138,3 +138,6 @@ En Commerce-bruger følger arbejdsgangen for at beregne, godkende og overføre t
 - Registrere fravær
 
 Du kan finde flere oplysninger om, hvordan du behandler registreringer af tid og fremmøde, under [Behandle registreringer af tid og fremmøde](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

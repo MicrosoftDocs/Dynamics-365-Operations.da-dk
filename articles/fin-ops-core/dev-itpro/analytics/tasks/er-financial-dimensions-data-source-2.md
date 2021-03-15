@@ -147,3 +147,6 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 4. Klik på Fuldført.
 5. Klik på OK.
 ![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

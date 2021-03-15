@@ -57,3 +57,6 @@ Kørsel af denne procedure kræver en eksisterende model til produktkonfiguratio
     * Kontroller, hvis nogen af produktdimensionerne er aktive og derfor skal have en værdi eller en attribut tildelt.  
 9. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Modulet med produktanmeldelseslister indeholder en plads, hvor du kan tilføje e
 [Sidehovedmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

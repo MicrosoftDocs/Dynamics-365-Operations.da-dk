@@ -66,3 +66,6 @@ Kørsel af denne procedure kræver, at der findes en model til produktkonfigurat
 15. Indtast eller vælg en værdi i feltet Krav.
 16. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

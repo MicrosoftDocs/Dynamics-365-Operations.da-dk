@@ -220,3 +220,6 @@ Når dokumentet har statussen **Anmodet**, vises det under fanen **Aktiv**. Det 
 ## <a name="related-topics"></a>Relaterede emner
 
 [Udgående lagerhandling i POS](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

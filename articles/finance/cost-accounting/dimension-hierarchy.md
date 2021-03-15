@@ -332,3 +332,6 @@ Indstillingerne for adgangslistehierarkiet bruges til at styre, hvilke data der 
 > [!NOTE] 
 > - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Adgangslistehierarkiet bidrager ikke til at beskytte eksport af data til Excel. Derfor skal dette rapporteringsværktøjet kun bruges af bogholdere og ledere, der skal have fuld adgang til at se dataene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

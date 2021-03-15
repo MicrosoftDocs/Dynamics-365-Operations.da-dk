@@ -105,3 +105,6 @@ Manuel afstemning for dette eksempel kan også foregå på følgende måde:
 1. Afstem Fak1 og Fak2 med FB én efter én. FB er fuldt afstemt.
 
 Som dette eksempel viser, skal afstemningen af fragtfakturaer med negative beløb kun foregå manuelt. Derved sikres, at det altid er muligt at afstemme fragtfakturaer med negative beløb for et fragtbrev, der ikke er fuldt afstemt, da det giver dig mulighed for at styre afstemningsrækkefølgen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

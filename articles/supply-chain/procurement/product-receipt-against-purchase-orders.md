@@ -68,3 +68,6 @@ Du kan få adgang til denne side fra handlingsgruppen **Tilgang** på siden **In
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

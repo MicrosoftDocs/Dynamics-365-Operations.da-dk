@@ -328,3 +328,6 @@ Værdien for **Timeout for optimeringsforsøg** styrer, hvor mange sekunder der 
 
 > [!NOTE]
 > De værdier, der er angivet for timeout, anvendes både til planlægning af frigivne produktionsordrer og ordreforslag som en del af MRP. Derfor kan angivelse af meget høje værdier betyde markant længere kørselstid for MRP, når der køres for en plan med mange produktionsordreforslag.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

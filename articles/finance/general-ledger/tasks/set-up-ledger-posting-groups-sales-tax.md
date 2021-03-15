@@ -41,3 +41,6 @@ Momsen beregnes og bogføres på hovedkonti, der er angivet i finanskonteringsgr
 11. Vælg i feltet **Debitor, kasserabat** den hovedkonto, der skal bogføres kasserabat på for de **Momskoder**, der er tilknyttet denne **Finanskonteringsgruppe**. Det er valgfrit, og hvis der ikke angives, bruges den hovedkonto på **Kasserabatkoder**. Det kan være nyttigt at bruge forskellige konti pr. **Finanskonteringsgruppe**, hvis bruger tilbagefører momsen i kasserabatindstillingen på **Momsgrupper**.  
 12. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

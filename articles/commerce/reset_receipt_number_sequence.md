@@ -67,3 +67,6 @@ Du kan bruge funktionen **Ryd nulstillingsdato** til at rydde fremtidige nulstil
 
 > [!NOTE]
 > Afhængigt af, hvilken nulstillingsdato du har valgt og kvitteringsformatet, kan du have dublerede kvitteringsnumre. Selvom POS-systemet kan håndtere disse situationer, øger de den tid, der kræves for at behandle returneringer, da salgsmedarbejderne skal vælge blandt de dublerede kvitteringer. Andre komplikationer, der er relateret til dataoprydning, kan forekomme, hvis de dublerede kvitteringer ikke var en planlagt konsekvens. Det anbefales derfor, at du bruger dynamiske datotegn (f.eks **ddd**, **MM**, **DD** og **YY**) for at forhindre dublerede kvitteringsnumre efter nulstilling.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Du kan ikke behandle eller fuldføre budgetter i det konsoliderede regnskab. Vi 
 Du kan finde flere oplysninger under [Værdiregulering i et konsolideret regnskab](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

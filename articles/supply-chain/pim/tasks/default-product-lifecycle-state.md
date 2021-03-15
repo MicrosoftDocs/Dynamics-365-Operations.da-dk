@@ -61,3 +61,6 @@ Denne fremgangsmåde viser, hvordan du opretter en standardstatus for produktliv
 > [!NOTE]
 > Forudsat at du har oprettet en aktiv tilstand, kan du nu vælge den aktive tilstand for at tillade, at produktet bruges i varedisponering og styklisteniveauberegning. Selvfølgelig giver dette kun mening, hvis alle produktoplysningerne, der skal bruges til ensartet planlægning er angivet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Aktivering og brug af tilføjelsesprogrammet Elektronisk fakturering kan kræve,
 - [Administration af tjeneste](e-invoicing-service-administration.md)
 - [Konfiguration af elektroniske fakturaer i RCS](e-invoicing-configuration-rcs.md)
 - [Udsted elektroniske fakturaer i Finance og Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

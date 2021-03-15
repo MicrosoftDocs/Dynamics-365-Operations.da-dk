@@ -135,3 +135,6 @@ Validering af serienumre finder også sted, når en bruger udfører afhentningsh
 [Indgående lagerhandling i POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Udgående lagerhandling i POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

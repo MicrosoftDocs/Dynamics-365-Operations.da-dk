@@ -315,3 +315,6 @@ I øjeblikket har begge arbejds-id'er samme målnummerplade. Hvis du vil udføre
 I følgende illustration vises, hvordan det færdige arbejde til cross-docking kan blive vist i Microsoft Dynamics 365 Supply Chain Management.
 
 ![Arbejde med cross-docking udført](media/PlannedCrossDockingWork.png "Arbejde med cross-docking udført")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Dette emne gennemgår oprettelse af et kontinuitetsprogram (kaldes også tilbage
     * Når varen sælges i et callcenter, anvendes yderligere forretningslogik fra det valgte kontinuitetsprogram.  
 7. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

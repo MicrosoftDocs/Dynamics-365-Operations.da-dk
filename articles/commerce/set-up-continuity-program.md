@@ -49,3 +49,6 @@ Når du har oprettet et kontinuitetsprogram som beskrevet ovenfor , kan du opret
 - **Udvid om nødvendigt kontinuitetslinjer** – Udvid det antal gange, en kontinuitetshændelse kan gentages. Gentagelsen af forsendelser kan derefter går ud over den grænse, der er angivet i feltet **Grænse for gentagelse af kontinuitet** i call center-parametrene.
 - **Udfør om nødvendigt en kontinuitetsopdatering** – Synkroniser ændringer mellem kontinuitetsprogrammet og de overordnede kontinuitetssalgsordrer.
 - **Luk overordnede kontinuitetslinjer og ordrer** – Luk kontinuitetsordrer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

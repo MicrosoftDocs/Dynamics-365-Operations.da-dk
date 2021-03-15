@@ -86,3 +86,6 @@ Når funktionen `DATETIMEFORMAT` konverterer en given dato-/klokkeslætsværdi, 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Dato- og klokkeslætsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

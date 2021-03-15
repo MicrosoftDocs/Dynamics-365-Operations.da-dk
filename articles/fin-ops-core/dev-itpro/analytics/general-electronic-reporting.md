@@ -298,3 +298,6 @@ Listen over ER-konfigurationer for Finans opdateres konstant. Åbn det [globale 
 
 - [Oprette en konfiguration af elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

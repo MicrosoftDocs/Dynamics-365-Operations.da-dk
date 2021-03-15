@@ -203,3 +203,6 @@ IFeatureLifecycle er en Microsoft-intern mekanisme til angivelse af fasen for fu
 - `PublicPreview` – vises som standard, men med en advarsel om, at det er en prøveversionsfunktion.
 - `Released` – fuldt frigivet.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

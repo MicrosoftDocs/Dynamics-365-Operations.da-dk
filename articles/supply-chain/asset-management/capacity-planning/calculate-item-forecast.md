@@ -59,3 +59,6 @@ Dette er nyttigt, hvis du vil have en oversigt over forventet vareforbrug (reser
 8. Klik på knappen **Vis dimensioner**, hvis du vil se de produkt-, lagrings- eller sporingsdimensioner, der er relateret til varerne. Markér relevante afkrydsningsfelter, og klik på **OK**.
 
 ![Figur 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

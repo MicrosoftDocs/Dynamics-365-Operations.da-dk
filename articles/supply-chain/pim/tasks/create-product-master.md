@@ -60,3 +60,6 @@ Opret en produktmaster for de foruddefinerede varianter. Det demodatafirma, der 
 10. Klik på **Gem**.
 11. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

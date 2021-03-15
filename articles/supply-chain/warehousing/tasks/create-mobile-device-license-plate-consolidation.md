@@ -36,3 +36,6 @@ Denne procedure viser, hvordan du opretter et menupunkt til din mobilenhed for a
 5. Vælg "Indirekte" i feltet Tilstand.
 6. Vælg 'Konsolider id'er' i feltet Aktivitetskode.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

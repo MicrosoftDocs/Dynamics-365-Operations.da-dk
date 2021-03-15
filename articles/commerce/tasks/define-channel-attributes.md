@@ -71,3 +71,6 @@ Gør kanalen bedre ved at tilføje kanal- og produktattributter. Du skal føje k
 33. Klik på OK.
 34. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

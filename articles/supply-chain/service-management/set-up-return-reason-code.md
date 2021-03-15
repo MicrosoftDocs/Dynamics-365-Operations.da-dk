@@ -62,3 +62,6 @@ Denne procedure, hjælper dig med at oprette årsagskoder for returnering, som d
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

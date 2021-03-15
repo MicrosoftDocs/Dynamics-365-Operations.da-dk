@@ -151,3 +151,6 @@ Du kan styre antallet af finansposteringer, der oprettes, når du bogfører peri
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

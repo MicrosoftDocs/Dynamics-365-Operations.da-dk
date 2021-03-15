@@ -135,3 +135,5 @@ Denne fremgangsmåde viser, hvordan du aktiverer en proces til kvalitetsstyring,
 
 > [!NOTE]
 > Funktionen *Kvalitetsstyring for lagerstedsprocesser* indeholder yderligere indstillinger til opsætning af kvalitetstilknytninger. Den tilføjer en ny betingelse (**gældende lagerstedstype**) og en ny indstilling (**kvalitetsbehandlingspolitik**). Hvis du har aktiveret denne funktion, skal du se [Kvalitetsstyring for lagerstedsprocesser](../quality-management-for-warehouses-processes.md) for at få flere oplysninger.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Denne procedure fokuserer på oprettelse en dublet af en eksisterende kanban-reg
 3. Klik på OK.
     * Bemærk, at der oprettes en dublet af kanban-regel 000017.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

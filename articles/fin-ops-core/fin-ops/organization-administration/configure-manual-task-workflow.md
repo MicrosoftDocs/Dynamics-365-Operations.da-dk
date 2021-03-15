@@ -381,3 +381,6 @@ Når den manuelle opgave tildeles en bruger, skal vedkommende håndtere opgaven.
 5. Markér afkrydsningsfeltet **Deleger**, hvis brugeren skal kunne tildele denne opgave til en anden bruger.
 6. Markér afkrydsningsfeltet **Tildel igen**, hvis brugeren skal kunne tildele denne opgave til en anden bruger i workflowopgavekøen.
 7. Markér afkrydsningsfeltet **Frigiv**, hvis brugeren skal kunne tildele denne opgave til workflowopgavekøen. Derefter kan en anden bruger fuldføre opgaven.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

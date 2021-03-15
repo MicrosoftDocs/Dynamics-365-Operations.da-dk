@@ -61,3 +61,6 @@ Denne procedure gennemgår visning af listen over betalingsudbydere, og hvordan 
 24. Klik i afkrydsningsfeltet Standardprocessor til nye kreditkort.
 25. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

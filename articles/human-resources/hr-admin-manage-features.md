@@ -94,3 +94,5 @@ Medtag ikke personlige oplysninger (oplysninger, der kan identificere dig) i din
 
 - [Nyheder i Human Resources](hr-admin-whats-new.md)
 - [Dynamics 365 og Power Platform Frigivelsesplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

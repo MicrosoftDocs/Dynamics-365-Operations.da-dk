@@ -112,3 +112,6 @@ I stedet for at bruge formularen **Modtagelsesoversigt** kan du bruge formularen
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

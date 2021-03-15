@@ -803,3 +803,6 @@ I dette afsnit skal du oprette en gemt variabel i den første testsag, oprette e
 2. Kontrollér, at begge testsager er bestået.
 
     ![Resultatfelt er angivet til bestået for begge testsager](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

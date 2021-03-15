@@ -182,3 +182,6 @@ Du skal vælge en dispositionshandling for hver dispositionskode, du definerer. 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

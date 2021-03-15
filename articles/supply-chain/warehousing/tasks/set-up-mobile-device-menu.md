@@ -68,3 +68,6 @@ I dette emne vises, hvordan du konfigurerer et menupunkt for en mobilenhed. I de
 5. Vælg den pil, der peger mod højre.
 6. Vælg **Gem**.
 7. Luk siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Den sidefod, der indeholder meddelelsen om ophavsret, vises automatisk nederst p
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

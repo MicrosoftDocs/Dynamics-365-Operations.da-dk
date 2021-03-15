@@ -61,3 +61,6 @@ En vare føjes til en salgslinje til direkte levering fra et lagersted, der er a
 ### <a name="issue-resolution"></a>Problemløsning
 
 Microsoft har evalueret dette problem og har fastslået, at det er en funktionsbegrænsning. I øjeblikket understøtter WMS ikke direkte levering. Hvis du derfor vil bruge direkte levering, skal du vælge en ikke-WMS-vare og et lagersted.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ I forbindelse med planlægningsscenarier, der omfatter produktion, anbefales det
 Selvom afhængige underordnede varer registreres og medtages i varedisponeringskørsler, når det indbyggede varedisponeringsprogram bruges, udfører Planlægningsoptimering ikke denne handling.
 
 Hvis f.eks. en enkelt rulle fra styklistestrukturen i produkt A også bruges til at producere produkt B, skal alle produkter i styklistestrukturen for produkter A og B medtages i filteret. Da det kan være meget kompliceret at sikre, at alle produkter indgår i filteret, anbefales det, at du undgår filtrerede varedisponeringskørsler, når der er produktionsordrer involveret.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

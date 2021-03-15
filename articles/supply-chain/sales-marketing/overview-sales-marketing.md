@@ -124,3 +124,6 @@ En proformafaktura er en faktura, der udarbejdes som et estimat over det faktisk
 #### <a name="blogs"></a>Blogs
 
 Du kan finde en oversigt over en salgsproces i indlægget [Sådan fungerer salg i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

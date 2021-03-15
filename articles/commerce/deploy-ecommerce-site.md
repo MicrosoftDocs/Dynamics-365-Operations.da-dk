@@ -111,3 +111,6 @@ Hvis du vil have adgang til Commerce-webstedsgeneratoren, skal du gå til fanen 
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

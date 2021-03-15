@@ -42,3 +42,6 @@ Denne fremgangsmåde viser, hvordan du kan bruge leverandørsamarbejde til at f�
 1. Gå til Kreditorsamarbejde > Konsignationslager > Disponibelt konsignationslager.
     * Siden Disponibelt konsignationslager viser det lager, du ejer på kundens lagersted. Du kan se yderligere dimensioner, såsom lokation og lagersted, ved at klikke på fanen Vis dimensioner.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

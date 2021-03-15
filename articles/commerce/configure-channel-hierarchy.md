@@ -83,3 +83,6 @@ Følgende billede viser, hvordan du kan publicere kanalopdateringer.
 [Oprette et navigationshierarki for kanal](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

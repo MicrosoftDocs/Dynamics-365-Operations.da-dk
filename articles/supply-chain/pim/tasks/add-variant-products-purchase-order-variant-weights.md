@@ -47,3 +47,6 @@ Denne procedure gennemgår trinnene for brug af variantvægte til automatisk udf
 17. Angiv antallet til '1000'.
 18. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

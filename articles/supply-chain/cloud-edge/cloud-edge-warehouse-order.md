@@ -72,3 +72,6 @@ I visningen **Lagerstedsordrelinjer** kan du overvåge status for indgående mod
 
 - Gå til **Lokationsstyring \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**, og brug filteret til at finde det, du leder efter.
 - Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**, og åbn den relevante indkøbsordre. Vælg en eller flere linjer i sektionen **Indkøbsordrelinjer**, og vælg derefter **Lagersted \> Lagerstedstilgangsposter**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Denne vejledning beskriver, hvordan du konfigurerer de kriterier, der bestemmer,
 Når det gælder salgsordrer og kanban-ordrer, skal der reserveres lager, før ordren frigives til lagerstedet. Ellers kan varerne eller fordelingslinjerne ikke behandles i en bølge. Til produktionsordrer kan du også have mulighed for at vælge Tillad delvis reservation. Dette er f.eks. nyttigt, hvis du har de materialer, du skal bruge til at starte en produktion og derefter kan vente med at fuldføre processen, indtil de ekstra materialer bliver tilgængelige. Hvis du vælger denne indstilling, skal du gentage frigivelsen til lagerprocessen manuelt, når de ekstra materialer bliver tilgængelige.  
 25. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

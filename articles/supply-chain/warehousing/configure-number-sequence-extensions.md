@@ -91,3 +91,6 @@ Benyt følgende fremgangsmåde for at oprette og redigere nummerserier.
     | Kontroltal | Denne segmenttype tilføjer et kontrolciffer, som er en modulo 10-beregning. (Denne funktionsmåde svarer til den eksisterende logik for id-numre). For denne segmenttype angives feltet **Værdi** til et cirkumflekstegn (*^*), og feltet **Længde** indstilles altid til *1*. |
 
 1. Hvis du vil have vist et eksempel på dit endelige talformat, skal du kontrollere feltet **Format** nederst i oversigtspanelet **Segmenter**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

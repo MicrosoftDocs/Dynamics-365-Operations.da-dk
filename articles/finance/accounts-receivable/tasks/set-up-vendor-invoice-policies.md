@@ -72,3 +72,6 @@ I dette emne forklares, hvordan du konfigurerer politikker for kreditorfakturaer
 16. Vælg **OK**.
 17. Luk siderne for at vende tilbage til startsiden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

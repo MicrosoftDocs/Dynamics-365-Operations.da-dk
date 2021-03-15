@@ -116,3 +116,6 @@ Denne procedure er til brugere, der er tildelt rollen som Systemadministrator el
 68. Klik på Gem.
     * Bemærk, at feltet 'Udførelse' angiver, at denne gruppering udføres på kørselstidspunktet i hukommelsen, selv om der er ikke defineret nogen aggregeringer, og den valgte datakilde af typen 'Tabelposter' refererer til samme 'Intrastat'-tabel. Det skyldes, at datakilden indeholder nogle beregnede felter, som endnu ikke kan oversættes til SQL-databaseniveauet.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

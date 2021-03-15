@@ -87,3 +87,6 @@ En virksomhed, der bruger budgetplanlægningsfunktionen kan oprette og bruge *bu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

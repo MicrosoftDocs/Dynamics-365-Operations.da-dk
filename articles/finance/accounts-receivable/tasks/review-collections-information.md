@@ -142,3 +142,6 @@ Dette emne beskriver, hvordan du gennemgår oplysninger om rykkere samt forskell
 5. Vælg **Vis liste**.
 - Vælg en debitorkonto, eller acceptér standardposten. Som standard er det den valgte debitorkonto på listesiden eller i den form, du åbnede denne form fra. Hvis du åbnede formen fra en listeside, er debitorerne på listen de debitorer, der er med i den rykkerpulje, der bruges på listesiden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

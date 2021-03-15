@@ -51,3 +51,6 @@ Hvad der er med hver ny funktion, skal kunder ændre dokumentationen for frigive
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>Når datoen for afskrivningen identificeres, hvor kommunikeres den så?
 
 Når ét bilag afskrives, er det en vigtig ændring, der kommunikeres i vidt omfang. Den kommunikeres via produktdokumentationen, et blogpost og meddelelser, der er relevante for Microsoft, langt forud for den dato, hvor afskrivningen træder i kraft.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

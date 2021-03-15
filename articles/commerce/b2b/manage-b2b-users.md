@@ -139,3 +139,6 @@ Følg disse trin for at administratorer kan få forretningspartnere og brugere d
 [Angive produktantalsgrænser for B2B-e-handelswebsteder](quantity-limits.md)
 
 [Oversigt over nummerserier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

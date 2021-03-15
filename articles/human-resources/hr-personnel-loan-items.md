@@ -55,3 +55,6 @@ Hvis et emne bliver beskadiget eller mistes, skal du angive en fiktiv tilbagelev
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

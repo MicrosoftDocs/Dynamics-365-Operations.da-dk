@@ -65,3 +65,6 @@ En faktura på 1000 USD med kasserabatbetingelserne for 20D2% bogføres den 15. 
 > [!NOTE]
 > Hvis indstillingen Beregn kasserabatter for delvise betalinger er valgt på siden Debitorparametre eller siden Kreditorparametre, bruges den valutakurs, der er gældende på datoen for hver delvise betaling. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

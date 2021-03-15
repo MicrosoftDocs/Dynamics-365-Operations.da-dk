@@ -40,3 +40,6 @@ Denne dobbelte konvertering bevirker, at der ændres datoer mellem programmer. K
 4. Skift **Tidszone** til **UTC-tid**, og skift **Sprog** til **da-dk**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

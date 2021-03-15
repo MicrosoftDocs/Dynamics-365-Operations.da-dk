@@ -40,3 +40,6 @@ For varer, der er indstillet til at bruge eksisterende arbejde, kan **Pluk den �
 **Advar** og **Gennemtving**: Der vises en liste over batches med den ældste udløbsdato over batchkontrolelementet, når arbejderen vælger et batch. Hvis placeringen er id-kontrolleret, vises en liste over id'er, der har det ældste batch, over id-kontrolelementet. 
 -   **Advar**: Hvis en arbejder vælger et id eller et batch, der ikke findes på listen, er kontrolelement tomt, og der vises en advarsel om, at et ældre batch kan vælges. Hvis arbejderen vil have mulighed for at fortsætte arbejdet, kan vedkommende vælge det samme id eller batch igen.  
 -   **Gennemtving**: Arbejdere kan fortsat modtage meddelelsen om, at et ældre batch skal plukkes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -183,3 +183,6 @@ En godkendelsesproces består af godkendelsestrin. Fuldfør følgende procedure 
 1. Dobbeltklik på godkendelsesprocessen i arbejdsgangseditoren. I arbejdsgangseditoren vises trinene i godkendelsesprocessen.
 2. Du kan tilføje et godkendelsestrin ved at trække trinnet fra området **Arbejdsgangselementer** til lærredet.
 3. Hvis du vil konfigurere et godkendelsestrin, skal du se [Konfigurer et godkendelsestrin i en arbejdsgang](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

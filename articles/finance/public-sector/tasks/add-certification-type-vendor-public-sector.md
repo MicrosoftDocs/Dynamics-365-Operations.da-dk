@@ -43,3 +43,6 @@ Du kan oprette og tildele enhver type certificering, som kreditorer kan have, ti
     * Fuldfør detaljerne.   
 12. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

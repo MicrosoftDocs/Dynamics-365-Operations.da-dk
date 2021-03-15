@@ -93,3 +93,6 @@ Forudsætninger:
 12. Klik på Finish.
 13. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Denne opgaveregistrering fører dig gennem konfigurationen af moms- og varemomsg
 19. Klik op linket i den valgte række på listen.
 20. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

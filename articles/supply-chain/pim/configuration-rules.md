@@ -45,3 +45,6 @@ Eksisterende varianter påvirkes ikke af efterfølgende ændringer af variantreg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

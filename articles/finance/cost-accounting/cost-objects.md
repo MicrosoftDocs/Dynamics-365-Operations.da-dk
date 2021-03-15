@@ -43,3 +43,6 @@ For at gøre import af omkostningsobjekters dimensionsmedlemmer nemmere kan du b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

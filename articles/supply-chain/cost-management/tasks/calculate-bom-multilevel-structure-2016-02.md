@@ -48,3 +48,6 @@ Denne procedure viser, hvordan omkostningerne for et færdigt produkt beregnes v
 11. Luk siden.
 12. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

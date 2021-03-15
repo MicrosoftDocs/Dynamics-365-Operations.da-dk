@@ -42,3 +42,6 @@ Du kan oprette regler for at adskille opgaver, der skal udføres af forskellige 
 
 > [!IMPORTANT] 
 > Overholdelse af reglerne for opdeling af opgaver kontrolleres ikke, når du opretter en regel. Du kan oprette en regel, der skaber en konflikt for eksisterende roller. Eksisterende brugerrolletildelinger kan også være i konflikt med den nye regel. Du skal validere overholdelsen af angivne standarder, når du har oprettet eller redigeret en regel. Yderligere oplysninger finder du i [Identificere og løse konflikter i opdeling af opgaver](identify-resolve-conflicts-segregation-duties.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

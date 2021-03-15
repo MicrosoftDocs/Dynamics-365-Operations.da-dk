@@ -58,3 +58,6 @@ Når du har angivet de simulerede omkostningsændringer, skal du beregne omkostn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -135,3 +135,6 @@ Gør følgende for at oprette en prisgruppe.
 [Konfigurere og arbejde med advarsler om svindel](set-up-fraud-alerts.md)
 
 [Oprette kontinuitetsprogrammer for callcentre](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Produktionsplanlæggeren beregner materiale- og kapacitetskravene for produktion
 2. Klik på Autoriser.
 3. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

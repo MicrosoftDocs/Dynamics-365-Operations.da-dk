@@ -40,3 +40,6 @@ Dette emne beskriver, hvordan du konfigurerer nummerserier på individuel basis.
 8. Udvid sektionen **Generelt**. Angiv, om nummerserien er manuel, og om den er fortløbende eller ej, i oversigtspanelet Generelt. Angiv dernæst det laveste og det højeste nummer, der kan bruges i nummerserien. Det anbefales, at man ikke ændrer en ikke-fortløbende nummerserie til en fortløbende nummerserie. Nummerserien vil ikke blive reelt kontinuerlig. Denne ændring kan også medføre fejl med dubletnøgler i databasen. Fortløbende nummerserier har desuden en større effekt på ydeevnen.   
 9. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

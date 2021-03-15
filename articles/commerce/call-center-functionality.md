@@ -68,3 +68,6 @@ Denne side indeholder links til relevant dokumentation, der er relateret til ins
 ## <a name="configure-continuity-programs"></a>Konfigurere kontinuitetsprogrammer
 
 [Oprette kontinuitetsprogrammer for callcentre](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

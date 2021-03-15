@@ -94,3 +94,6 @@ Hvis alle linjerne i en serviceordre er mærket **Bogført**, er status for ordr
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -118,3 +118,6 @@ Du kan medvirke til at sikre, at der vises et sidehoved på hver side, ved at f�
 [Webstedsvælgermodul](site-selector.md)
 
 [Butiksvælgermodul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Egenskaber for planlægning af arbejdstid bruges til at kategorisere tidsinterva
 3. Skriv en værdi i feltet Værdi.
 4. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -174,3 +174,6 @@ Når denne beregningsmetode bruges til en delvis returnering, og hvis gebyrkoden
 [Avancerede automatiske gebyrer for omni-kanal](omni-auto-charges.md)
 
 [Aktivere og konfigurere automatiske gebyrer efter kanal](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ På siden **Aktive lånte aktiver** kan du få vist en liste over alle de lånte
 3. Angiv datoen og tidspunktet i feltet **Returneret**.
 4. Vælg **OK**.
 5. Opdater listesiden **Aktive lånte aktiver**, og bemærk, at det lånte aktiv ikke længere vises på listen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

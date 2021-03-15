@@ -42,3 +42,6 @@ Følgende tabel indeholder det importformat, du skal bruge, når du laver en kon
 | 6            | BusinessUnit, 1 Afdeling, 2 | De økonomiske dimensionsattributter, der er defineret i segmentrækkefølgen.<p>Du kan bruge siden **Eksport** til at kontrollere, hvordan attributterne er defineret.</p> |
 | 7            | 002,1,658 | <ul><li>Økonomisk dimensionsværdi</li><li>Den økonomiske dimension som det indeks, der er angivet i RecordDimensions</li><li>Et entydigt post-id, der er entydigt og tilknyttet det entydige post-id fra RecordTrans eller RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Dimensionsværdier, der er knyttet til posteringen fra RecordBudget</li><li>Den økonomiske dimension som det indeks, der er angivet i RecordDimensions</li><li>Et entydigt linjepost-id, der justeres efter rækkefølgen af posteringslinjerne i filen</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

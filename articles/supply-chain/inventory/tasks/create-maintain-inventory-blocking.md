@@ -51,3 +51,6 @@ Denne fremgangsmåde viser, hvordan du ved hjælp af lagerblokeringen forhindrer
 2. Klik på **Ja**.
 3. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

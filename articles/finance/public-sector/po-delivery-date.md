@@ -101,3 +101,6 @@ De leveringstidsoplysninger, som du angiver for en linje på siden **Købsaftale
 
 > [!NOTE]
 > I forbindelse med frigivne varer kan du vælge en leveringstid for købet. Købets leveringstiden beregner automatisk leveringsdatoen, når der oprettes en indkøbsordre. Leveringsdatoen genberegnes ikke, hvis leveringstiden på indkøbsordrelinjen er 0 (nul).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

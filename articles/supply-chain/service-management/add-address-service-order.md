@@ -74,3 +74,6 @@ Hvis du vil føje en alternativ adresse til en serviceordre, skal du følge diss
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

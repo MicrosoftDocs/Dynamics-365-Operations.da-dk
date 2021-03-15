@@ -111,3 +111,6 @@ Hvis du vil begynde at bruge forudindstillede layout, skal du se [Arbejde med fo
 [Arbejde med forudindstillede layout](work-with-layouts.md)
 
 [Arbejd med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

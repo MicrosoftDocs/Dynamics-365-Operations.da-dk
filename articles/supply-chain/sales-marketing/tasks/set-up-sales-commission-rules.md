@@ -95,3 +95,6 @@ Denne procedure viser, hvordan du kan konfigurere og aktivere beregning og spori
 17. Find og vælg den provisionsgruppe, som du oprettede tidligere, på listen.
 18. Vælg **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

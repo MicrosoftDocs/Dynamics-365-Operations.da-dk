@@ -48,3 +48,6 @@ Ressourceegenskaber beskriver, hvad operationsressourcer kan gøre. Under planl�
 5. Angiv et tal i feltet Niveau.
     * Når du angiver, at et job eller en handling kræver en bestemt egenskab, kan du også angive det krævede minimumsniveau. Brug egenskabsniveauet til at skelne mellem ressourcer, der kan udføre det samme job, men ved forskellige hastigheder, styrke, omfang og så videre.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne pro
 11. Angiv '5' i feltet **Indkøbstid**.
 12. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

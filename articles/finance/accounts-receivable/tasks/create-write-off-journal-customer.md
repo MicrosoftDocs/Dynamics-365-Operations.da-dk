@@ -83,3 +83,6 @@ Denne opgaveguide viser, hvordan du kan konfigurere parametre for afskrivninger 
 5. Klik på **OK**.
 6. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

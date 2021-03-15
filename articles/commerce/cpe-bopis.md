@@ -163,3 +163,6 @@ Ved alle generelle problemer skal du altid konsultere hændelseslogfilerne for h
 [Gemme onlinebetalingsmidler med Adyen-connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Oversigt over omni-kanalbetalinger](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ GTIN-koder tildeles af GS1-organisationen. I dette eksempel skal du indtaste en 
 11. Skriv en værdi i feltet GTIN.
 12. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

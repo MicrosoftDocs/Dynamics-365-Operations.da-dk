@@ -49,3 +49,6 @@ Det er den femte procedure af fem, der illustrerer kreditors betalingsproces ved
     3.    Skriv en værdi i feltet **Filnavn**. I dette eksempel bliver den oprettede fil SEPA-kompatibel på grund af indbetalingen i EUR. ISO20022-pengeoverførsel samt andre formater for kreditorbetalinger kan også bruges til oprettelse af betalinger i andre valutaer.
     4.    Indtast eller vælg en værdi i feltet **Bankkonto**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

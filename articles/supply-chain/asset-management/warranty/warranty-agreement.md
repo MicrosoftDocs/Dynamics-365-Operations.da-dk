@@ -54,3 +54,6 @@ En garantiaftale kan omfatte flere aftalelinjer, der dækker garantien for arbej
     4. Angiv dækningsprocenten for garantilinjen i feltet **Procent**. Procenten angiver, hvor meget der dækkes af firmaet.
 
 ![Garantiside](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

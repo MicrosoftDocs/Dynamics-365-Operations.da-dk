@@ -67,3 +67,6 @@ Dette emne viser dig, hvordan du kan oprette regler og politikker for frynsegode
 10. Vælg **Gem**.
 11. Luk formularen.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

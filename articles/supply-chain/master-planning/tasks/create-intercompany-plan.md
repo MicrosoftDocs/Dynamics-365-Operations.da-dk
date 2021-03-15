@@ -53,3 +53,6 @@ Denne fremgangsmåde viser, hvordan du opretter en intern plan. Det demodatafirm
 2. Klik op linket i den valgte række på listen. Klik på linket for StaticPlan. Du skal være i firmaet USMF.  
 3. Klik på **Ordreforslag**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

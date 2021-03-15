@@ -146,3 +146,6 @@ De tilgængelige oplysninger er kreditornavn, adresser, kontaktoplysninger, kont
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

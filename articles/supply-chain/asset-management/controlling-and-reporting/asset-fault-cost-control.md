@@ -61,3 +61,6 @@ I dette eksempel vises beregning af omkostningskontrol for aktivfejl.
     ![Figur 1](media/05-controlling-and-reporting.png)
 
 Se emnet [Fejlstyring](../setup-for-work-orders/fault-management.md), hvis du vil have oplysninger om, hvordan du definerer fejl.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

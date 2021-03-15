@@ -107,3 +107,6 @@ Levetiden for anskaffelsesreguleringen er den samme som for anlægsaktivet og be
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

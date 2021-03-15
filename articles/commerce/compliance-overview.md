@@ -45,3 +45,6 @@ Hvis du vil vide mere om de grundlæggende principper, som Microsoft gør brug a
 [Tilføje en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
 
 [Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

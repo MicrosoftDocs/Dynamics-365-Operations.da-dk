@@ -112,3 +112,6 @@ Du kan tilbageføre resultaterne af forældet værdiregulering, men du skal muli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

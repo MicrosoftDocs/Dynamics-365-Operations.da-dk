@@ -142,3 +142,6 @@ Med hensyn til kalendere for disponeringsgrupper er det vigtigt at tænke på, a
 
 ### <a name="updating-scm-related-calendars"></a>Opdatering af SCM-relaterede kalendere
 Det er vigtigt, at alle relevante kalendere tildeles på deres respektive sted (leverandør, kunde, lagersted, leveringsmåde eller disponeringsgruppe), men det er samtidig lige så vigtigt at opdatere dem, så de afspejler ændringerne. Systemet definerer produktions-, overførsels-, købs- og salgsordredatoerne afhængigt af kombinationen af de tildelte kalendere. Det er den bedste fremgangsmåde at tydeliggøre, hvem der har ansvaret for at tildele og opdatere kalenderne i deres tilsvarende områder. I tilfælde af nedbrud eller andre usædvanlige ændringer i arbejdsdagene er det vigtigt at opdatere kalenderne i henhold til den. Alle opgaver, der afhænger af kalendere, f.eks. varedisponering og planlægning af produktionen, skal køres igen, når kalendere opdateres. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er de
 ## <a name="see-also"></a>Se også
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

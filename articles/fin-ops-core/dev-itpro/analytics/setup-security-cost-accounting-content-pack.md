@@ -63,3 +63,6 @@ Vi antager, at din organisation ønsker at begrænse adgang til data. Hvis sikke
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 Du kan få mere at vide om sikkerhed på rækkeniveau i Power BI i [Administrer sikkerhed på din model i Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Da Dynamics 365 Commerce understøtter "what you see is what you get" (WYSIWYG) 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
 
 [Administrere sikkerhedspolitik for indhold (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

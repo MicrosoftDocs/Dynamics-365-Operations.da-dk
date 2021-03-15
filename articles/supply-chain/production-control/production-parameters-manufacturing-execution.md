@@ -153,3 +153,6 @@ Du kan bruge følgende indstillinger, hvis materiale altid skal fratrækkes lage
 | Færdigmelding |   Automatisk styklisteforbrug    | <strong>Aldrig</strong>  |
 | Færdigmelding | Opdater færdigmelding online | <strong>Status</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

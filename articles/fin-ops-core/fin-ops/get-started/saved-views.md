@@ -224,3 +224,6 @@ For sider med store visningsvælgere (både brugertilpasninger og forespørgsler
 
 - Hvis du navigerer til en side fra et felt, udføres feltforespørgslen, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du har oprettet det pågældende felt, efter at visninger er blevet aktiveret, vil valg af et felt åbne siden med den visning, der er knyttet til feltet.
 - Hvis du navigerer til en side, og dette adgangspunkt omfatter en forespørgsel, udføres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. Når dette sker, skulle du få besked om det, når visningen indlæses. Du kan også bekræfte ved at skifte til denne visning, når siden er indlæst, fordi visningsforespørgslen skulle kunne udføres under alle omstændigheder.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

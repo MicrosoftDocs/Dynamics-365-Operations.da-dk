@@ -48,3 +48,6 @@ Benyt følgende fremgangsmåde for at knytte en nummerserie til en fragtmand:
 1. Vælg **Rediger**.
 1. Vælg en indstilling i feltet **Pro-nummerserie** i oversigtspanelet **Oversigt**.
 1. Luk siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

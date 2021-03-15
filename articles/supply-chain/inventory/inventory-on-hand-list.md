@@ -145,3 +145,6 @@ Her vises resultatet.
 | IA0001 | 1 | 2 | 2 |
 
 Bemærk, at indstillingerne i ruden **Filtre** gælder for den detaljerede (ikkesamlede) lagertabel, der vises i starten af dette afsnit. Derfor finder kriteriet **Fysisk disponibelt** \| **er mindre end eller lig med** \| _1_ to rækker fra den pågældende tabel (første og tredje række, der hver især viser en **Fysisk disponibelt**-værdi af _1_). Men i dette scenarie siden **Beholdningsliste** ikke konfigureret til at vise **Lagersted-**-dimensionen. Derfor samles de to oprindelige rækker i en enkelt resultatrække, da begge rækker har identiske værdier i alle de viste dimensioner. Denne række ser ud til at overtræde filtreringskriteriet, fordi **Fysisk disponibelt**-værdien vises som _2_. Resultatet er dog korrekt, da indstillingerne i ruden **Filtre** gælder for kildetabellen og ikke i den samlede tabel, der vises på siden **Beholdningsliste**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

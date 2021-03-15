@@ -292,3 +292,6 @@ På arbejdsbyrden i skalaenheder kan du administrere følgende batchjob i **Loka
 - Behandle bølgetabelposter
 - Meddelelsesprocessor for lagerstedshub til skalaenhed
 - Foretag behandling af anmodninger om opdatering af antal for lagerstedsordrelinjer
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

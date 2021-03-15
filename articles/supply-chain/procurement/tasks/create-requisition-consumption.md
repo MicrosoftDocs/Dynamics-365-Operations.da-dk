@@ -91,3 +91,6 @@ I dette emne beskrives processen til oprettelse af en rekvisition. Den viser for
 6. Luk siden.
 7. Opdater siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

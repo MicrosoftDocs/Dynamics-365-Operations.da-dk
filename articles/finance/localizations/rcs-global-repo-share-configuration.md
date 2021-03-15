@@ -72,3 +72,6 @@ Når der er oprettet en konfiguration under din konfigurationsudbyder, kan du de
 Konfigurationen deles med den eksterne organisation og er tilgængelig for den pågældende organisation i det globale lager. Derfra kan den importeres til organisationens forekomst af RCS eller til dens forekomster af Finance and Operations-apps.
 
 6. Hvis du vil annullere delingen af en konfiguration, der tidligere er delt med en ekstern organisation, skal du vælge konfigurationen og klikke på **Fjern deling** og derefter vælge **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

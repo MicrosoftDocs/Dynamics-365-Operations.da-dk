@@ -95,3 +95,6 @@ Arbejdsområdet består af en oversigt over felter og to lister. Listen **Åbne 
 ### <a name="manually-creating-a-new-released-product"></a>Manuel oprettelse af et nyt frigivet produkt
 
 Du kan manuelt oprette et frigivet produkt i en enkelt kørsel afhængigt af organisationens forretningsprocesser og eventuelle regler om, hvorvidt denne funktion skal bruges. Denne funktion opretter et nyt produkt, og frigør det automatisk til den aktuelle juridiske enhed. Hvis du vil oprette et nyt produkt, skal du klikke på listesiden **Frigivne produkter** i arbejdsområdet **Vedligeholdelse af frigivet produkt** eller på listesiden **Frigivet produkt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

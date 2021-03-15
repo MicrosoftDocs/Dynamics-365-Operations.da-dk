@@ -44,3 +44,6 @@ Det er kun arbejde af typen **Salg**, **Flytteafgang**, **Råvarepluk** eller **
 For at fjerne blokeringen af arbejdet annullerer systemet eventuelle resterende arbejdslinjer og reparerer de lagerstedsdata, der er tilknyttet det arbejds-id, som brugeren har angivet. De almindelige lagerhåndteringsoperationer, der omfatter det berørte vareantal, kan derefter genoptages.
 
 Hvis du vil lægge den berørte vare på en bestemt lokation, efter at arbejdet er annulleret, skal brugeren bruge en lagerbevægelse eller antalsregulering på en mobilenhed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

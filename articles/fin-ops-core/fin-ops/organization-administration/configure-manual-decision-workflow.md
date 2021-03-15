@@ -350,3 +350,6 @@ Udfør følgende trin, hvis beslutningen skal træffes inden en bestemt tidsgræ
     - **År** – Vælg den dag, uge og måned, hvor beslutningen senest skal være truffet. Det kan være, at beslutningen f.eks. skal være truffet senest fredag i den tredje uge i december.
 
 4. Hvis tidsfristen overskrides, træffes beslutningen automatisk af systemet. Vælg den indstilling, som systemet skal vælge, på listen **Handling**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

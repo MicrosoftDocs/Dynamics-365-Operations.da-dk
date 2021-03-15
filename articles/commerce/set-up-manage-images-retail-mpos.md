@@ -208,3 +208,6 @@ Katalog-, kategori-, arbejder og debitorbilleder, der skal bruges i offlinetilst
 5. Følg en lignende proces for andre enheder som f.eks. kategori, medarbejder og debitor.
 
     [![Offlinebillede](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

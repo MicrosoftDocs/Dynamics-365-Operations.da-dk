@@ -173,3 +173,6 @@ Der er foretaget andre backend-forbedringer, som brugerne kan se, af funktionen 
 
     - Gå til **Retail og Commerce** \> **Konfiguration af hovedkontor** \> **Parametre** \> **Commerce-parametre**. Vælg derefter **Oversigt** i feltet **Detaljeringsniveau** i oversigtspanelet **Opdatering af lager** under fanen **Bogføring**.
     - Gå til **Retail og Commerce** \> **Konfiguration af hovedkontor** \> **Parametre** \> **Commerce-parametre**. Under fanen **Bogføring** i oversigtspanelet **Aggregering** skal du derefter vælge **Ja** i indstillingen **Posteringer på bilag**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

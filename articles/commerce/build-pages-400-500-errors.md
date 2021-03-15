@@ -82,3 +82,6 @@ Udfør følgende trin for at konfigurere en omdirigering for svarsiden for statu
 [Tilføje en ny webstedsside](add-new-page.md)
 
 [Oprette en side-URL](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

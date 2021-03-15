@@ -46,3 +46,6 @@ Denne procedure viser, hvordan du opretter en scoremetode. En scoremetode er et 
 14. Angiv et tal i feltet Interval fra.
 15. Angiv et tal i feltet Interval til.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

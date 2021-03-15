@@ -67,3 +67,6 @@ Du kan også konfigurere *ansvarlige* vedligeholdelsesarbejdere, der kan vælges
 
 Under planlægningen af arbejdsordren beregnes der forskellige scorer for at bestemme, hvilke arbejdere der skal udføre de job, der vedrører en arbejdsordre (disse scorer konfigureres i **Styring af aktiver** > **Planlægning af arbejdsordrer**-linket). Hvis to eller flere foretrukne vedligeholdelsesarbejdere eller ansvarlige vedligeholdelsesarbejdere har samme score under planlægningen af arbejdsordrer, vælges én arbejder tilfældigt. Ellers er det altid arbejderen med den højeste score, der tildeles til at fuldføre en arbejdsordre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -147,3 +147,6 @@ For hver række, du tilføjer, skal du angive følgende felter.
 | Spørgeskema | Vælg det spørgeskema, der skal bruges til kontrollisten. Kontrollisten er en lokal kontrolliste i det firma, hvor parathedskontrollen udføres. Systemet skal kunne evaluere, om kontrollisten er besvaret korrekt. Derfor skal kontrollisten konfigureres, så der udføres en evaluering ud fra korrekte svar. Yderligere oplysninger om, hvordan du opretter spørgeskemaer, finder du i [Bruge spørgeskemaer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) og relaterede emner. |
 | Automatisk godkendelse | Poster til parathedskontrol omfatter et **Godkendt**-afkrydsningsfelt, der angiver godkendelsesstatus. Markér afkrydsningsfeltet **Automatisk godkendelse** for kontroller, der skal godkendes, umiddelbart efter at den tildelte bruger har afsluttet dem. Fjern markeringen i dette afkrydsningsfelt for at kræve udtrykkelig godkendelse som et ekstra trin. |
 | Obligatorisk | Markér dette afkrydsningsfelt for de kontroller, der skal udføres af den tildelte bruger. Obligatoriske kontroller kan ikke springes over. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

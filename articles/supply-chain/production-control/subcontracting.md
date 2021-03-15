@@ -302,3 +302,6 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
     ![Sammenligningsdiagrammer for omkostning](./media/subcontract35_cost-comparison-charts.png)
 
 Manglende opsætning i data.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -209,3 +209,6 @@ Ud over de begrænsninger, der gælder for fastvægtprodukter, har kodede fastv�
 
 > [!NOTE]
 > Ovenstående oplysninger om fastvægtkoder er kun gyldige, hvis fastvægtproduktet har en metode til sporing af fastvægtkodedimensionering, der er fuldt sporet (dvs. hvis parameteren for **Metode for dimensionssporingsmetode** for håndteringspolitikken af fastvægtvarer er angivet til **Produktdimensioner, sporingsdimensioner og alle lagerdimensioner**). Hvis fastvægtvaren kun er delvist kodesporet (dvs. hvis parameteren for metoden for **Dimensionssporingsmetode for fastvægtvare** er angivet til **Produktdimensioner, sporingsdimensioner og lagerstatus**), gælder der yderligere begrænsninger. Da synligheden går tabt mellem koden og lageret i dette tilfælde, er der nogle yderligere scenarier, der ikke understøttes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

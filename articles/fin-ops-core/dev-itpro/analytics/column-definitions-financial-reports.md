@@ -598,3 +598,6 @@ Du kan dividere beløbet i en kolonne med et angivet antal perioder. Formlen **B
 [Rækkedefinitioner i Designer til økonomirapporter](row-definitions-financial-reporting.md)
 
 [Avancerede formateringsindstillinger i økonomirapportering](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

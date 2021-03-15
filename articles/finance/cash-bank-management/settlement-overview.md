@@ -77,3 +77,6 @@ Når du forsøger at udligne en postering, kan du bemærke et symbol, der angive
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Udlign rest](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

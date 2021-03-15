@@ -81,3 +81,6 @@ Du kan finde detaljerede oplysninger om, hvordan du konfigurerer et kortmodul p√
 [Administrere Bing Kort for din organisation](./dev-itpro/manage-bing-maps.md)
 
 [Webkontrolelementet Bing Kort V8](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Derefter skal du aktivere **Teknisk ændringsstyring**-konfigurationsnøglen ved
 1. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**.
 1. Udvid **Handel**-noden, og markér afkrydsningsfeltet **Teknisk ændringsstyring**.
 1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

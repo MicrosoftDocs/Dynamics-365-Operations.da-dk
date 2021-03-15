@@ -68,3 +68,6 @@ Det er den fjerde procedure af fem, der illustrerer kundens betalingsproces ved 
 8. Klik på OK.
 9. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

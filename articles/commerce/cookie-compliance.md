@@ -72,3 +72,6 @@ Hvis et e-handels-websteds funktion eller modul bruger en ikke-afgørende cookie
 [Cookie-samtykkemodul](cookie-consent-module.md) 
  
 [Overskriftsmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

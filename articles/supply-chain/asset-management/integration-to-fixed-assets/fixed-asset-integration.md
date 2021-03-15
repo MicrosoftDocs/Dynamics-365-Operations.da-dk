@@ -114,3 +114,6 @@ Fjern en eksisterende tilknytning mellem et vedligeholdelsesaktiv og et anlægsa
 1. Find og åbn anlægsaktivet.
 1. I oversigtspanelet **Anlægsaktiv** skal du fjerne værdien fra feltet **Arbejdssted**.
 1. Vælg **Gem** i handlingsruden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

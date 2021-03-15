@@ -64,3 +64,6 @@ POS-brugerens sprogindstilling er angivet under **Alle arbejdere** på siden **A
 | **Regnskab** | Standard                    | Standard                                                       |
 | **Butik**   | Tilsidesætter firma          | Tilsidesætter firma                                             |
 | **Bruger**    | Tilsidesætter butik eller firma | Aldrig                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

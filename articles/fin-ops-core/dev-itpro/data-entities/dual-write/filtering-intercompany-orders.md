@@ -66,3 +66,6 @@ De enkelte Dataverse-standardtabeller udvides med referencer til kolonnen **Inte
 8. Når du har udvidet **Tilbud**, skal du anvende et filter med `CUSTGROUP != "<company>"` som forespørgselsstreng.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Dialogboksen Rediger forespørgsler for CDS-salgstilbudshoved":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

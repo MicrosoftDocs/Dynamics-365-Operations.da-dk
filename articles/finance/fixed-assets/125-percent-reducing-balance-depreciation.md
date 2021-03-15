@@ -87,3 +87,6 @@ Metoden med 125 % saldoafskrivning dividerer de 125 % med levetiden i år. Denne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

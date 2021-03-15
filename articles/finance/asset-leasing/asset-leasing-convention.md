@@ -50,3 +50,6 @@ Benyt følgende fremgangsmåde for at få vist eller angive leasingkonventionen.
 3. Vælg **Gem**.
 
 Når en leasingaftale oprettes, angives startdatoen for hvert kartotek automatisk på baggrund af den startdato, der er angivet for lejen, og den leasingkonvention, der er angivet i kartoteket.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

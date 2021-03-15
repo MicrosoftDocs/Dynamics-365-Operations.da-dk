@@ -61,3 +61,6 @@ Denne procedure bruger demofirmaet USMF. Rollen kreditorchef eller rollen regnsk
 9. Klik på **Gennemse** i handlingsruden.
 10. Klik på **Detaljer om sammenholdelse**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

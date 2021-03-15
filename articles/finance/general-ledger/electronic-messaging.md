@@ -535,3 +535,6 @@ Du kan nu enten slette eller opdatere meddelelsesstatus. Vælg **Opdater status*
 ![Opdatere meddelelsens status](media/update-status.png)
 
 Meddelelsesstatussen opdateres til **Forberedt**, og du kan nu generere rapporten ved at vælge **Generér rapport**. Rapporten oprettes, og meddelelsesstatus og handlingsloggen opdateres. For at gennemse den genererede rapport skal du trykke på knappen **Vedhæft fil** (symbolet med papirklip) i øverste højre hjørne af siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

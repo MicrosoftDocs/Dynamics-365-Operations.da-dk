@@ -51,3 +51,6 @@ Aktivering af en ny standardpris vil typisk værdiregulere den disponible lagerb
 - **Ingen** – Der bogføres ingen økonomiske dimensioner på værdireguleringsposteringerne. Hvis din kontostruktur har en påkrævet økonomisk dimension, køres værdireguleringsprocessen stadig, men der oprettes regnskabsposter, som ikke har nogen økonomiske dimensioner. I dette tilfælde modtager brugerne en advarsel først, så de kan annullere værdireguleringen, hvis det er nødvendigt.
 - **Tabel** – Normalt bogføres varens økonomiske dimensioner på værdireguleringsposteringerne. Dette er standardindstillingen og er i overensstemmelse med den oprindelige systemfunktionsmåde uden at deaktivere funktionen *Indstillinger for økonomiske dimensioner, der benyttes som standard for værdiregulering af lagerbeholdning til standardomkostninger*.
 - **Bogføring** – De økonomiske dimensioner for den postering, der værdireguleres, bogføres på værdireguleringsposteringerne. De økonomiske dimensioner fra den oprindelige posterings lagerkonto bruges som standard til både beholdningskontoen og værdireguleringskontoen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

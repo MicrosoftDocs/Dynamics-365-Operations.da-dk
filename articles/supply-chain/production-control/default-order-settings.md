@@ -203,3 +203,6 @@ Sådan angiver du valideringsindstillingen:
 1. Under fanen **Generelt** skal du angive **Validering af standardordreantal** til en af følgende værdier:
     - **Streng** – Vælg denne indstilling for at sikre, at alle værdier af **Standardordreantal** er et multiplum af **Multiplum**-værdien for hvert oversigtspanel (**Indkøbsordre**, **Lager** og **Salgsordre**).
     - **Standard** – Vælg denne indstilling for at bruge standardvalidering (hvilket fungerer på samme måde, som når denne funktion ikke er aktiveret).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

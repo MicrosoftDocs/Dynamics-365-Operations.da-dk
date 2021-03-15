@@ -84,3 +84,6 @@ Denne fremgangsmåde fokuserer på optimering af kanban-størrelse og -mængder 
     * Bemærk, at dette er den faste kanban-mængde på 4 fra beregningen af kanban-mængden.  
 5. Klik på fanen ListPanel.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

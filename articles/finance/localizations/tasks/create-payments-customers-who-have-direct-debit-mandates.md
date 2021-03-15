@@ -67,3 +67,6 @@ Det er den femte af fem procedurer, der viser processen til debitorbetaling ved 
 11. Klik på OK.
 12. Klik på OK.
 13. Klik på Opret betalinger.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

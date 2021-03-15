@@ -49,3 +49,6 @@ Selvom den funktionelle validering af et ERP-program ikke kan være fuldstændig
     - Valider kun, når du har filtreret på en bestemt transaktion i stedet for generisk validering. Hvis det f.eks. er antallet af poster, skal du filtrere efter transaktionsnummeret eller transaktionsdatoen, så valideringen udelukker alle andre transaktioner. 
     - Hvis du kontrollerer en debitorsaldo eller budgetkontrol, skal du gemme værdien først og derefter tilføje din transaktionsværdi for at validere det forventede resultat i stedet for at validere en fast forventet værdi. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

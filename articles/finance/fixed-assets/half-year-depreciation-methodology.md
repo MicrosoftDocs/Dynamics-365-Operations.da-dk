@@ -41,3 +41,6 @@ Det første år, det er i brug, afsluttes i december 2020, hvilket betyder, at a
    [![Afskrivningsplan for halvårligt afskrivningsprincip](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 De udvidede afskrivningsperioder, der tilføjes af halvårsprincippet, giver en mere præcis afskrivningsfordeling. Seks måneders princippet fordeler afskrivningsudgifter mere ligeligt, hvilket er nyttigt ved rapportering til driftsregnskabet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

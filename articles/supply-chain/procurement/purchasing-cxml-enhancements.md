@@ -276,3 +276,6 @@ Hvis du vil have vist indholdet af en kreditors bekræftelse eller fejlsvar, ska
 
 - [Konfigurere et eksternt katalog til PunchOut e-indkøb](set-up-external-catalog-for-punchout.md)
 - [Bruge eksterne kataloger til PunchOut e-indkøb](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

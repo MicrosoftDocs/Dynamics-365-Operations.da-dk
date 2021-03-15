@@ -58,3 +58,6 @@ Du kan bruge denne procedure til at konfigurere arbejdsområdet Omkostningsstyri
 27. Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.
     * Når du har valgt et dimensionshierarki for omkostningsobjekt, kan du udvide dimensionshierarkiet for omkostningselement for at få vist de ønskede omkostningsværdier. For eksempel kan du udvide hierarkiet for at få vist værdien i Produktionsomkostninger.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

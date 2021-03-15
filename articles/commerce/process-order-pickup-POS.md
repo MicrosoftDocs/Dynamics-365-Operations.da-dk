@@ -57,3 +57,6 @@ Hvis du skal ændre afhentningsantallet, når du har valgt de varer, der skal af
 Hvis funktionen **Forbedring af brugeroplevelsen for behandling af afhentningsordre i POS** er aktiveret, kan organisationer tilføje en knap til handlingen **ændring af afhentningslinjer** til skærmlayoutet for posteringssiden. Når du har oprettet afhentningstransaktionsvognen på kasse og vælger varer, kan du vælge **Skift afhentningslinjer**, hvis du skal ændre afhentningsvarerne, men ikke ønsker at annullere hele transaktionen. I dialogboksen **Skift afhentningslinjer**, der vises, kan du ændre afhentningsvarerne og -mængderne. Transaktionsvognen opdateres derefter, så den afspejler dine ændringer.
 
 ![Dialogboksen Skift afhentningsvarer](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

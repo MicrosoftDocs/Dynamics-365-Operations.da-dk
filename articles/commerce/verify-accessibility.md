@@ -86,3 +86,6 @@ Hvis du vil bruge den integrerede [Microsoft Accessibility Insights](https://acc
 [Forbedre en kategorilandingsside](enrich-category-page.md)
 
 [Oprette dynamiske e-handelssider baseret på URL-parametre](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

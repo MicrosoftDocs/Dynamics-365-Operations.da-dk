@@ -71,3 +71,6 @@ Denne procedure fører dig gennem oprettelsen af produktvarianter for en produkt
     * Du kan generere beskrivelser for alle de varianter, der er baseret på en kombination af dimensionsværdier for produktet. Beskrivelserne er valgfrie.  
 5. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

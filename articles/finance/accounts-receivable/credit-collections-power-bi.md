@@ -76,3 +76,6 @@ Power BI-indholdet **CustCollectionsBICrossCompany** omfatter en rapport, der be
 | Rykkere         | <ul><li>Rykkerkodebeløb</li><li>Oplysninger om rykkerkodebeløb</li><li>Rykkerbeløb pr. firma</li><li>Rykkerbeløb pr. kundegruppe</li><li>Rykkerbeløb pr. område</li></ul> |
 
 Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruge funktionen til eksport af underliggende data til at eksportere underliggende data, der opsummeres i en visuel effekt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

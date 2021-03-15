@@ -97,3 +97,6 @@ Hvis du vil vide mere om, hvordan du kan bruge lagerstedsskabelon til at kopiere
 ## <a name="related-topic"></a>Relateret emne
 
 [Konfigurationsdataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

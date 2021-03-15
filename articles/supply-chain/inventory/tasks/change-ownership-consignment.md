@@ -54,3 +54,6 @@ Denne fremgangsmåde viser, hvordan du ændrer ejeren af konsignationslageret fr
 2. Klik på OK.
 3. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Du kan finde flere oplysninger i [Vis økonomirapporter](view-financial-reports.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

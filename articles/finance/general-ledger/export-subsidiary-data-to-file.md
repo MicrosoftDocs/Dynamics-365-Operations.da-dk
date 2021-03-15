@@ -70,3 +70,6 @@ Brug siden **Eksport** (**Systemadministration \> Arbejdsområder \> Import/eksp
 5. Vælg **OK** for at køre eksporten.
 
 Når eksporten er fuldført, modtager du en meddelelse, der viser antallet af poster, der er gemt i hver fil. Derefter kan du importere filerne til den konsoliderede juridiske enhed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

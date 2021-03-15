@@ -85,3 +85,6 @@ Når du konfigurerer disponeringstidshorisonter, skal du overveje følgende:
 - Internt behov ignoreres, hvis den ønskede afsendelsesdato, der beregnes, ikke er inden for disponeringstidshorisonten. Bemærk, at den interne efterspørgsel i forbindelse med indbygget varedisponering ikke er begrænset til disponeringstidshorisonten.
 - Behovsprognoser ignoreres, hvis budgetdatoen ikke ligger inden for disponeringstidshorisonten. Bemærk, at behovsprognoser for indbygget varedisponering ikke er begrænset til disponeringstidshorisonten.
 - Planlægningsoptimering er tidszonebaseret. Den tager højde for tidszonen på udbuds- og efterspørgselsstederne samt tidspunktet for planlægningskørslen. Varedisponering udløses f.eks. den 15. oktober kl. 11 fra et sted i Danmark (GMT+1 tidszone), og der bruges en disponeringstidshorisont på ti dage. I dette tilfælde medtages behov og efterspørgsel fra et sted i Seattle (GMT-8 tidszone) indtil 25. oktober kl 2 (= ti 24-timers dage efter, at varedisponering blev udløst, minus tidszonedifferencen på ni timer). Bemærk, at det indbyggede varedisponeringsprogram kun tager højde for datoen i tidshorisonten. Resultatet kan derfor variere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

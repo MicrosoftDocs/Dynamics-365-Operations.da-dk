@@ -51,3 +51,6 @@ Brug denne fremgangsmåde til at oprette regler for bestilling af produkter i en
 6. Vælg en indstilling i feltet **Kreditorvalg**. Vælg en regel, der skal styre, hvilken slags kreditorer der kan vælges til kategorien, når der oprettes indkøbsrekvisitioner.  
 7. Klik på **Luk**. De politikregler, du har defineret, har været for indkøbsrekvisitionen af typen Forbrug. Hvis du vil definere politikker for indkøbsrekvisitioner af typen Opfyldning, skal du oprette en regel for politikregeltypen kaldet "Regel for adgang til genopfyldningskategori".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

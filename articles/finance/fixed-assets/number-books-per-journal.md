@@ -49,3 +49,6 @@ Der er f. eks. 5.001 anlægsaktiv-id'er, der knyttes tre kartoteker til hvert an
 
 > [!Note] 
 > Hvis parameteren **Opsummer afskrivning** er aktiveret, når du opretter et afskrivningsforslag, har værdien i feltet **Antal kladder pr. kladde** - Afskrivningsforslag har ingen virkning. I dette tilfælde er antallet af bøger pr. kladde 6000, hvilket er den interne definerede grænse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

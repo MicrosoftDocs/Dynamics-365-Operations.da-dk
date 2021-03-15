@@ -676,3 +676,6 @@ Medarbejdere kan erklære pasoplysninger. Disse oplysninger er af identifikation
 
 Medarbejdere kan angive flere identifikationsnumre af **Pas**-identifikationstypen. Men det er kun den aktuelle aktive paspost, der integreres i Dayforce. Hvis alle pasposter er udløbet, integreres det pas, der senest blev udstedt, i Dayforce.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

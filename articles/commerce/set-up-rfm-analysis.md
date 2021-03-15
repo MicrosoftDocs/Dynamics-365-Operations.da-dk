@@ -96,3 +96,6 @@ Du kan bruge denne procedure til at få vist eller rydde historikken for en RFM-
 2. Vælg den post, du vil have vist, på siden **RFM-analyse**.
 3. Vælg oversigtspanelet **Historik** for at få vist historikken for posten.
 4. Vælg **Ryd historik** for at rydde historikken for posten.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

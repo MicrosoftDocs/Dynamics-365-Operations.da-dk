@@ -43,3 +43,6 @@ Dette problem er muligvis kun et spørgsmål om timing. Følg disse trin for at 
 1. Vælg **Rediger** øverst på siden, og indstil den planlagte startdato/-klokkeslæt til en værdi, der opdaterer analysen, så den er tættere på det aktuelle tidspunkt.
 
 ![Batchjob](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Dette emne viser, hvordan du opretter en salgsaftale, der forpligter en af dine 
 11. Vælg **OK**.
 12. Luk siden. Aftalen er nu gældende. Du kan begynde at knytte kundens ordrer til aftalen for at modpostere mod tilsagnsmålet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

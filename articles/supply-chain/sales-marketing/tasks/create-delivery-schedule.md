@@ -64,3 +64,6 @@ Denne procedure viser, hvordan du opretter en leveranceplan til en salgsordre. E
 22. Klik på OK.
 23. Klik på Ja.
 24. Luk siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

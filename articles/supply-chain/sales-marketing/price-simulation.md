@@ -144,3 +144,6 @@ Prissimuleringen påvirker kun den linje, den anvendes på, og reducerer det sam
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

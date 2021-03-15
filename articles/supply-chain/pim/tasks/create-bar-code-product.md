@@ -42,3 +42,6 @@ Dette emne viser, hvordan du manuelt opretter en stregkode med varenummer M0001 
 12. Vælg **Gem**.
 13. Luk siden. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

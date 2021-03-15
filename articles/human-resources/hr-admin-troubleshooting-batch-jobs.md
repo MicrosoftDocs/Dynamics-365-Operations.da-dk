@@ -65,3 +65,6 @@ Følgende batchjob skal køre om natten eller efter arbejdstid. Sørg for at kon
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Optimere ydeevnen med automatiske oprydningsopgaver](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Du kan konfigurere årsagskoder, så de er nødvendige for ændringer af et anl�
 Endelig kan du under fanen **Nummerserier** definere nummerserier for anlægsaktiver. Nummerserien for **anlægsaktiver** kan tilsidesættes af nummerserien for **anlægsaktivgruppen**, hvis den er angivet.
 
 Du kan finde flere oplysninger under [Oprette et anlægsaktiv](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

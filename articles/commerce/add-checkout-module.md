@@ -126,3 +126,6 @@ Hvis du vil føje et betalingsmodul til en ny side og angive de påkrævede egen
 [Ordredetaljer-modul](order-confirmation-module.md)
 
 [Gavekortsmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

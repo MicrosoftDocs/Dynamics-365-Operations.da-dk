@@ -42,3 +42,6 @@ Kassationsposteringen for et aktiv i en pulje for småaktiver reducerer kun den 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

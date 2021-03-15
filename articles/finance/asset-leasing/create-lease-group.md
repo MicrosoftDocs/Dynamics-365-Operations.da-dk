@@ -49,3 +49,6 @@ Når du har oprettet leasinggrupper, kan du knytte kartoteker til hver gruppe. N
 1. Gå til **Aktivleasing \> Konfiguration \> Leasinggruppe**.
 2. Vælg en leasinggruppe, og vælg derefter **Kartoteker**.
 3. Vælg **Ny**, og vælg derefter feltet **Kartotekstype**, der skal knyttes til leasinggruppen. Du kan tildele flere kartoteker til en leasinggruppe, hvis en leasingaftalen skal redegøres for på forskellige måder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

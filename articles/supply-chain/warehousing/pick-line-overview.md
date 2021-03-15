@@ -68,3 +68,6 @@ Du kan konfigurere et menupunkt for en mobilenhed for at oprette en pluklinjeove
     - Brug de resterende **Visningsfelt**-felter til at tilføje op til syv yderligere visningsfelter efter dit behov. I hvert **Visningsfelt**-felt skal du vælge navnet på et arbejdslinjefelt. Hver linje vil derefter vise en værdi for det pågældende felt. Værdierne vises i den rækkefølge, du vælger her. Du kan lade nogle af **Visningsfelt**-felterne være tomme, hvis du ikke har brug for alle syv værdier.
 
 1. Vælg **Gem** i handlingsruden, og luk derefter siden **Feltliste**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

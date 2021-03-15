@@ -206,3 +206,6 @@ Før du kan konfigurere systembaseret klyngepluk, skal du oprette kvalificeret u
 1. Det sidste trin på mobilenheden er at **Lægge** klyngen på lager i den endelige stilling. Vælg **OK**
     - Når læg på lager-handlingen er bekræftet, lukkes og brydes klyngen på basis af den værdi, du har angivet for feltet **Bryd klynge ved** i klyngeprofilen. Arbejds-ID'er lukkes også.
 1. Meddelelsen "Klynge fuldført" vises på mobilenheden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

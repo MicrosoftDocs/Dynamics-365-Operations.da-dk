@@ -55,3 +55,6 @@ Den løbende gennemsnitskostpris for lagerstedet GL og batch AAA er kr. 11,20, o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

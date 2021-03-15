@@ -46,3 +46,6 @@ Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sekto
 14. Klik på Linjevisning.
 15. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -158,3 +158,6 @@ Fanen **Generelt**
 11. Hvis du vil have vist nettovirkningen af fratrædelsen, hvor ROU-aktivet og leasingforpligtelsen er 0 (nul), skal du åbne tabellerne Passiv- og Aktivposteringer.
 
 Status for leasingaftalen skal nu være **Afsluttet**. Der bogføres ingen yderligere kladdeposteringer mod denne leasingaftale, medmindre fratrædelsen tilbageføres.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

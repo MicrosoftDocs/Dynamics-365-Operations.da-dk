@@ -52,3 +52,6 @@ I denne artikel beskrives trinnene til oprettelse og oprettelse af en produktkon
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

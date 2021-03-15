@@ -89,3 +89,6 @@ Du kan finde flere oplysninger i [Momssatser baseret på beregningsgrundlaget og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

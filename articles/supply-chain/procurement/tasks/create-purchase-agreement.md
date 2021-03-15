@@ -71,3 +71,6 @@ Dette emne fører dig gennem oprettelsen af en købsaftale. Dette vil normalt sk
 5. Vælg **Bekræftelser af købsaftaler**. Med indstillingen **Vis/udskriv** kan du oprette et dokument for købsaftalen, som du kan udskrive eller sende til kreditoren. Hvis du opdaterer aftalen senere og bekræfter den igen, vises begge versioner her.  
 6. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

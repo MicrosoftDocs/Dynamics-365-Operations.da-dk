@@ -89,3 +89,6 @@ Denne procedure viser, hvordan du opfylder en salgsaftale ved at knytte salgsord
 23. Klik på Tilknyttet salgsaftale.
 24. Klik på fanen Opfyldelse.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

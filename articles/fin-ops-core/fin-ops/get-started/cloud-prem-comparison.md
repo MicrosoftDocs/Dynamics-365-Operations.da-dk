@@ -176,3 +176,6 @@ Du kan se en liste over funktioner, der er tilgængelige i lokale installationer
 
 \* I lokale miljøer viser PerfTimer kun resultater for klienten.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

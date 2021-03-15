@@ -53,3 +53,6 @@ I illustrationen herunder vises resultaterne af en omkostningsberegning for en v
 
 ![Figur 1](media/17-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

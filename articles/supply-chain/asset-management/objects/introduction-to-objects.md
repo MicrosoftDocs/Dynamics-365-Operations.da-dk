@@ -77,3 +77,6 @@ Knapperne i Handlingsruden er organiseret på faner. Følgende tabel beskriver k
 | Reservedele          | Se en liste over godkendte og alternative reservedele, der kan bruges på aktivet.                                                                               |
 | Aktivets forbrug    | Udskriv en rapport, der viser forbrugsregistreringer på aktivet.                                                                                                |
 | Fejl for aktivet          | Udskriv en rapport, der viser registreringer af fejl på aktivet.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

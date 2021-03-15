@@ -63,3 +63,6 @@ Følg disse trin for at afspille en opgaveguide fra LCS.
 2. Vælg **Åbn fra LCS**.
 3. Vælg biblioteket og den BPM-node, der har den gemte opgaveguide.
 4. Åbn opgaveguiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

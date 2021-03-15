@@ -57,3 +57,6 @@ Når dokumenttypens placering er angivet til **Azure-lager**, kan du gemme en fi
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

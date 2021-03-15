@@ -142,3 +142,6 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

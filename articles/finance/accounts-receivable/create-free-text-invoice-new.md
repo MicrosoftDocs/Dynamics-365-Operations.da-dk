@@ -84,3 +84,6 @@ Når du har kopieret linjerne, kan du derefter redigere oplysningerne efter beho
 Du kan oprette en fritekstfaktura fra en skabelon. Når du vælger **Ny ud fra skabelon** under fanen **Faktura**, kan du vælge et skabelonnavn og debitorkontoen for den nye fritekstfaktura. Standardværdier, f.eks. betalingsbetingelserne og betalingsmåden, kan udfyldes automatisk fra debitoren, eller du kan bruge de værdier, der blev gemt i skabelonen.
 
 Der oprettes en ny fritekstfaktura, og du kan redigere værdierne efter behov.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Før du kan konfigurere ansvarlige vedligeholdelsesarbejdere, skal du konfigurer
 I følgende illustration vises et eksempel på listesiden **Ansvarlige vedligeholdelsesarbejdere**.
 
 ![Siden Ansvarlige vedligeholdelsesarbejdere](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -143,3 +143,6 @@ Du kan finde flere oplysninger under følgende emner:
 - [Dobbelt valuta](dual-currency.md)
 - [Momsoversigt](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

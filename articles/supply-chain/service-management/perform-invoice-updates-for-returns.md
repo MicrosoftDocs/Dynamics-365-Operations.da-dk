@@ -56,3 +56,6 @@ Når du konfigurerer fakturaopdateringen til batchafvikling, skal salgsordren af
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

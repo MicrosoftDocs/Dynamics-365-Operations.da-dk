@@ -63,3 +63,6 @@ Før du kan udføre denne procedure, skal du konfigurere moms-id'er. Denne proce
 25. Indtast eller vælg en værdi i feltet SE-nummer.
 26. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

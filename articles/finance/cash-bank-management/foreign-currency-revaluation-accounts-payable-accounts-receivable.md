@@ -65,3 +65,6 @@ Det registreres, hver gang du kører en værdiregulering af udenlandsk valuta. F
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

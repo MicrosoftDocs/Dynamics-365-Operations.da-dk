@@ -89,3 +89,6 @@ I figuren herunder vises et skærmbillede af en KPI-beregning for fire aktiver.
 - Du kan vælge flere aktiver i **Alle aktiver** og klikke på knappen **KPI'er for aktiver** under fanen **Generelt**. Klik derefter på **OK** i dialogboksen **Beregn aktiv-KPI'er** for at beregne KPI'er for de valgte aktiver.  
 - Resultater fra en KPI-beregning kan også omfatte [registreringer af vedligeholdelsesnedetid](../work-orders/maintenance-downtime.md) afhængigt af opsætning og brug af årsagskoder for vedligeholdelsesnedetid. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

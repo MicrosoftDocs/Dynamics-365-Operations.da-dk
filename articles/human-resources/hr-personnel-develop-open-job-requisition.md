@@ -66,3 +66,5 @@ Rekrutteringsprojekter hjælper dig med rekrutteringsprocessen. Når du har opre
 32. Klik på **Status på rekrutteringsprojekt**..
 33. Vælg **Start**. Status **Påbegyndt** betyder, at projektet er klar til at modtage ansøgninger.  
 34. Vælg **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

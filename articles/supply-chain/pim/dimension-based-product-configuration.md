@@ -87,3 +87,6 @@ De følgende otte opgaveguider vises i den rækkefølge, som du skal udføre dem
 7.  [Oprette konfigurationsregler](tasks/create-configuration-rules.md)
 8.  [Oprette dimensionsbaserede konfigurationer](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

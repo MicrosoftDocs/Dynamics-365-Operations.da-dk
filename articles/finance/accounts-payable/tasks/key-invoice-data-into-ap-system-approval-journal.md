@@ -53,3 +53,6 @@ Dette emne viser, hvordan du kan bruge indgangsbogen til at oprette fakturaer og
 10. Vælg **Bogfør**.
 11. Vælg **Bilag** for at få vist de poster, der blev bogført. Kontoen til fakturaer, der afventer godkendelse, tilbageføres og erstattes med kontoen til faktiske udgifter.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Brug funktionen **Installer aktiv** til at installere en aktivstruktur på et ar
 4. I feltet **Arbejdssted** vælges det nye sted.
 5. Feltet **Effektiv** er angives til den aktuelle dato og tidspunkt. Du kan dog vælge en anden dato og et andet klokkeslæt, som installationen af aktivstrukturen skal være gyldig fra.
 6. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

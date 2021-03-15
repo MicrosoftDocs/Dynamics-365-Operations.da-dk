@@ -56,3 +56,6 @@ Hvis øjeblikkelig genopfyldning er valgt for en lokationsvejledningslinje, men 
 
 - Kontroller, at den skabelon for genopfyldning efter behov, der anvendes, er konfigureret til at bruge de rette lokationsskabeloner og arbejdsskabeloner af typen **Genopfyldning**.
 - Sørg for, at der er tilstrækkelig disponibel lagerbeholdning på de lokationer, hvor skabelonen for genopfyldning efter behov søger efter den disponible lagerbeholdning med henblik på genopfyldning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

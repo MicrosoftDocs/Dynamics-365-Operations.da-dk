@@ -41,3 +41,6 @@ Denne opgave fokuserer på at klargøre et kanban-procesjob, når alle materiale
 6. Klik på Klargør.
     * Klargøringsprocessen er nu fuldført. Det markerede afkrydsningsfelt for alle rækker på pluklisten angiver, at forsyningsstatus er plukket.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

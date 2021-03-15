@@ -73,3 +73,6 @@ Dette emne viser, hvordan du opretter en indkøbsordre manuelt. Det er mere almi
 
 2. Vælg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

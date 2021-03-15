@@ -175,3 +175,6 @@ Det sprog, du har tilføjet, er nu tilgængeligt, så du kan konfigurere dit web
 [Tilføj en copyright-meddelelse](add-copyright-notice.md)
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

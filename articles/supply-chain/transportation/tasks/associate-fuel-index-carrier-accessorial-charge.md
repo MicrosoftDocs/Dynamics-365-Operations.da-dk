@@ -77,3 +77,6 @@ Denne vejledning viser, hvordan du opretter en tilbehørstildeling, tillægsgeby
 6. Klik op linket i den valgte række på listen.
 7. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

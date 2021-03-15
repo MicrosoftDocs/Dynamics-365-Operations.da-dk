@@ -93,3 +93,6 @@ Afsendelseslogfilerne omfatter følgende yderligere funktioner:
 - **Annuller afsendelser** - Denne funktion aktiverer en særlig afsendelsesproces i scenarier, hvor den elektroniske faktura skal godkendes af en ekstern webtjeneste. Den beder webtjenesten om at sende webtjenesten en bestemt meddelelse, der er beregnet til at annullere statussen for en godkendt elektronisk faktura i webtjenestedatabasen.
 - **Send dokument igen** - Send et elektronisk dokument, der allerede er blevet sendt til tilføjelsesprogrammet Elektronisk fakturering. Der oprettes en hel ny log på siden **Detaljer om afsendelse**.
 - **Send relaterede afsendelser**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

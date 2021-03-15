@@ -46,3 +46,6 @@ Det beregnede beløb af en produceret vares amortiserede konstante omkostninger 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

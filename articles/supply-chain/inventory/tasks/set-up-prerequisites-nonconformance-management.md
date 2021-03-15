@@ -79,3 +79,6 @@ Brug dette emne til at aktivere processer for styring af uoverensstemmelser. En 
 4. Indtast en værdi i feltet **Beskrivelse**.
 5. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

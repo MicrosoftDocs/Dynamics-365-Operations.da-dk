@@ -84,3 +84,6 @@ Når du definerer en aktivitet som en ruteoperation eller timebudget for et proj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -178,3 +178,6 @@ Bemærk, at der sker følgende:
 - Frigivelsen til et lagersted udløses for den tilknyttede salgsordre.
 - På baggrund af frigivelsen oprettes forsendelses- og cross-docking-arbejde. Dette arbejde giver lageroperatøren besked på at plukke det antal, der kræves for at opfylde salgsordrelinjen, og lægge det på den udgående lokation, der er angivet i lokationsvejledningen til cross-docking.
 - Hvis produktionsordreantallet er større end det antal, der kræves af salgsordren, oprettes der et almindeligt læg på lager-arbejde. Dette arbejde giver lageroperatøren besked på at plukke antallet af færdigvarer, der er tilbage efter cross-docking, og flytte dem til almindelig opbevaring i overensstemmelse med lokationsvejledningen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

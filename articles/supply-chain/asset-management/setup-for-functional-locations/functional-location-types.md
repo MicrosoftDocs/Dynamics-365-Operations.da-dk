@@ -66,3 +66,6 @@ Nu oprettes den standardarbejdsstedstype, der kun skal bruges til et standardarb
 
 >[!NOTE] 
 >I oversigtspanelet **Generelt** kan du se en oversigt over antallet af aktivtyper, vedligeholdelsesplaner, krav til aktivattribut, tilladte typer, attributter og arbejdssteder, der er konfigureret på arbejdsstedstypen. Feltet **Arbejdssteder** viser antallet af arbejdssteder, der bruger arbejdsstedstypen. Du kan bruge knappen **Kopiér** til at kopiere indstillinger fra en arbejdsstedstype til den valgte arbejdsstedstype.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

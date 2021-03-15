@@ -144,3 +144,6 @@ Denne funktionsmåde er tilsigtet. Den valgte adresse skal klassificeres som en 
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Kan jeg finde den bruger, der har annulleret en indkøbsordre?
 
 Disse oplysninger spores kun, hvis ændringsstyring er aktiveret for indkøbsordren. Hvis du bruger ændringsstyring, kan du se, hvem der har afsendt ændringen (annulleringen), og hvem der har godkendt den.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

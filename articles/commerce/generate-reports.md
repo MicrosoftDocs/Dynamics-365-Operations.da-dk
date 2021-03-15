@@ -137,3 +137,6 @@ Hvis du vil generere en **Salg i organisation**-rapport, skal du følge disse tr
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Startside for Commerce](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

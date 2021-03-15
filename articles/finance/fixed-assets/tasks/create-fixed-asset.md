@@ -54,3 +54,6 @@ Hvis du ikke har defineret anlægsaktivnummeret i skabelonen for Excel-tilføjel
 
 > [!WARNING]
 > Anlægsaktivposten slettes ikke, hvis der er bogført posteringer i det tilknyttede kartotek, eller hvis det netop oprettede anlægsaktiv er angivet på en kladdelinje, men ikke bogført. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

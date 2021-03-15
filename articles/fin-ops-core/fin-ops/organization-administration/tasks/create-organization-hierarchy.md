@@ -48,3 +48,6 @@ Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
     - Tilføj organisationer efter behov.  
     - Klik på **Rediger** og derefter **Indsæt** for at tilføje en organisation. Når du er færdig med at foretage ændringer, kan du **gemme** en kladde og/eller **publicere** ændringerne.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

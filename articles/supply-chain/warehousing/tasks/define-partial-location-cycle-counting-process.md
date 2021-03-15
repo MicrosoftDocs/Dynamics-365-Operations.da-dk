@@ -72,3 +72,6 @@ Når du bruger cyklusoptællingsplaner til at oprette optællingsarbejde, kan du
 14. Klik på OK.
 15. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

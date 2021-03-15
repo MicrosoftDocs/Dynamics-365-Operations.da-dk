@@ -56,3 +56,6 @@ I **Produktionsstyringsparametre** kan du bruge feltet **Finanskontering** til a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

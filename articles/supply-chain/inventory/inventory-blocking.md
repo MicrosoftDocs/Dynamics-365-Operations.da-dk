@@ -69,3 +69,6 @@ Du kan angive, hvilke lagerstatusser, der er spærringsstatusser ved hjælp af p
 [Processer for kvalitetsstyring](quality-management-processes.md)
 
 [Kontrollere kvaliteten af varer](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

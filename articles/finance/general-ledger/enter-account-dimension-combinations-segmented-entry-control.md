@@ -113,3 +113,6 @@ I følgende tabel beskriver de tastaturgenveje, der kan bruges, når opslaget er
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

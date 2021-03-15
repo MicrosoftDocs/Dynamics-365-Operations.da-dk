@@ -53,3 +53,6 @@ En importinkasso er med til at garantere, at sælger betales, når køberen afhe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

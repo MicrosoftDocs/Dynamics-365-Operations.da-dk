@@ -97,3 +97,6 @@ På smartphones og andre små skærme tilpasser betjenings- og formularlayoutet 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Vejledning i, hvordan udviklere og kunder kan inkorporere tilgængelighed i deres tilpasninger
 
 Du kan finde flere oplysninger om Microsofts bedste fremgangsmåder for implementering af hjælp til handicappede under [Tilgængelighed i formularer, produkter og kontrolelementer](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Denne fremgangsmåde fokuserer på at fjerne et planlagt kanban-procesjob fra ti
 4. Klik på OK.
     * Dette vil gendanne jobbets aktuelle status fra "Planlagt" til "Ikke planlagt" og fjerne det fra procesområdet.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

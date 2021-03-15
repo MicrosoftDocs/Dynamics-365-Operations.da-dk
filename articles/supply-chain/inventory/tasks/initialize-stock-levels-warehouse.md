@@ -59,3 +59,6 @@ Denne procedure viser, hvordan du får den disponible lagerbeholdning opdateret 
 25. Luk siden.
 26. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

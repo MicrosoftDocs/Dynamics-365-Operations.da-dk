@@ -76,3 +76,6 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Arbejdsordrer med projekt (Field Service til Supply Chain Management): WorkOrderService
 
 [![Skabelontilknytning i dataintegration](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

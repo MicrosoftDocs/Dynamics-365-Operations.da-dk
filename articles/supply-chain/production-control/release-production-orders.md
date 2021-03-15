@@ -63,3 +63,6 @@ Arbejde til pluk af råvarer genereres under frigivelse. Arbejde oprettes kun fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

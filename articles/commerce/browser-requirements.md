@@ -47,3 +47,6 @@ Dynamics 365 Commerce-websteder understøttes bedst af følgende webbrowsere. G�
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
 [Aktivere registrering af placeringsbaseret lager](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

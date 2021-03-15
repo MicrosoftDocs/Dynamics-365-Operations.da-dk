@@ -56,3 +56,6 @@ Dette emne viser, hvordan du opretter indkøbspolitikker, der skal justeres med 
 4. Vælg **Luk**.
 - Du kan nu konfigurere andre politikregler for indkøbspolitikken. Bemærk, at en politikregeltype ikke kan have overlappende regler, der er aktive på samme tid i en enkelt indkøbspolitik.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

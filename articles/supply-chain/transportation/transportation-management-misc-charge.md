@@ -30,3 +30,6 @@ Som med alle tillæg skal transportgenererede gebyrer knyttes til en gebyrkode. 
 Gå til **Transportstyring > Opsætning > Vurdering > Tillæg** for at definere de kvalifikationskriterier, der bestemmer, hvornår en bestemt **Gebyrkode** anvendes på et gebyr.
 
 Der skal være mindst én opsætning for hver relevante **Gebyrmodul**-indstilling (*Debitor* og *Kreditor*), hvor **Tillægstype** angives til *Ingen*. Hvis dette mangler, føjes tillægget *ikke* til ordren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

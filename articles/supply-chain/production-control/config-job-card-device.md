@@ -94,3 +94,6 @@ Men som tidligere nævnt, når du bruger en enhedskonfiguration med indstillinge
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Færdigmeld fra jobkortenheden](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

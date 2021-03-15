@@ -60,3 +60,6 @@ Produkt X tildeles f.eks. produktejergruppen *Design skabe*. Produkt X er også 
 ## <a name="product-owners-and-approvals"></a>Produktejere og godkendelser
 
 Da produktejere ved, om bestemte tekniske ændringer vil drage nytte af deres produkter, giver det ofte mening at inkludere dem som en del af godkendelsesprocessen i styring af tekniske ændringer. Du kan implementere denne fremgangsmåde ved at konfigurere produktejerne som deltagerudbydere i arbejdsprocesser, der bruges til styring af tekniske ændringer. Systemet tildeler derefter godkendelsesopgaver i arbejdsprocesserne baseret på produkterne i tekniske ændringsanmodninger og tekniske ændringsordrer. Yderligere oplysninger finder du i [Administrere ændringer af tekniske produkter](engineering-change-management.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

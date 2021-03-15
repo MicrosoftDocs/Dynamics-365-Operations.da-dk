@@ -145,3 +145,6 @@ I dette eksempel skal du oprette en konfiguration og uploade den til LCS for eks
     Den ER-konfiguration, du har uploadet, skal være vist på listen.
 
     Bemærk, at den uploadede LCS-konfiguration kan importeres til en anden forekomst, hvis udbyderne har adgang til dette LCS-projekt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -135,3 +135,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Flere oplysninger om, hvordan du udskriver etiketter
 
 Du kan få flere oplysninger om, hvordan du kan opsætte og udskrive etiketter, i [Aktivere udskrivning af id-etiket](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

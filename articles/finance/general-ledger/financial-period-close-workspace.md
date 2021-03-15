@@ -107,3 +107,6 @@ Når en ultimotidsplan er fuldført, skal du vælge indstillingen **Lukket** for
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

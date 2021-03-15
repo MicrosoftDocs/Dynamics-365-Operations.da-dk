@@ -62,3 +62,6 @@ Når du har oprettet de livscyklustilstande, der kræves til dine arbejdssteder,
 5. Hvis du vil vælge alle tilgængelige tilstande for en model, skal du klikke på knappen ![Vælg alle tilgængelige faser](media/03-setup-for-functional-locations.png). Alle tilstande overføres til sektionen **Valgte livscyklustilstande**.
 6. Hvis du vil fjerne en valgt tilstand fra modellen, skal du vælge tilstanden i afsnittet **Valgte livscyklustilstande** og derefter vælge knappen ![tilbage-pil](media/04-setup-for-functional-locations.png).
 7. Vælg **Opdateringer til livscyklustilstande** for at definere de livscyklustilstande, der kan følge en valgt tilstand.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Når du udskriver fritekst-, debitor- og projektkreditnotaer, omfatter de refere
 
 > [!NOTE]
 > Kontroller, at dokumenternes formater, der kan udskrives, er konfigureret korrekt, efter at det antages, at referencer til oprindelige fakturaer vil blive udskrevet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

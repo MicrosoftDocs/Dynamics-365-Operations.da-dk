@@ -80,3 +80,6 @@ Uanset om du har tilknyttet konti, skal du fjerne markeringen i afkrydsningsfelt
 
 > [!NOTE]
 > Du kan anvende denne metode til at oprette en kontoplan i den konsoliderede juridiske enhed fra kontoplanen i en af datterselskabernes juridiske enheder. (Du kan finde flere oplysninger i [Konsolideringskontogrupper og yderligere](../budgeting/consolidation-account-groups-consolidation-accounts.md)konsolideringskonti.) Tildel derefter et relevant princip for konsolideringsomregning til hver konsolideret hovedkonto, og kør konsolideringen for alle juridiske enheder for datterselskabet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

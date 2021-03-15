@@ -135,3 +135,6 @@ Før du bogfører en fritekstfaktura, kan du få vist den komplette regnskabsenh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

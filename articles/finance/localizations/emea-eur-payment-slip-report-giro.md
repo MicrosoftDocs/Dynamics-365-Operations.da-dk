@@ -62,3 +62,6 @@ Når du har oprettet formatet for et indbetalingskort til vedhæftning til salgs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -151,3 +151,6 @@ Hvis en produktvariant allerede er frigivet i firma A, og du forsøger at frigiv
 Knappen **Ny** på siden **Frigivne produktvarianter** opretter varianten og frigiver den i firmaets kontekst. Hvis varianten allerede er oprettet, kan du ikke bruge knappen **Ny** til at frigive den i et andet firma.
 
 Du kan løse problemet ved at åbne **Produktmaster**-siden og vælge **Frigiv produkt** for at frigive den eksisterende variant i det ønskede firma.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

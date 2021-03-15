@@ -59,3 +59,6 @@ Standardfeltværdien for **Antal af arbejdsgangsvarer pr. batch** på siden **Ar
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Hvad er den arbejdsgangsforbedrede fejlfunktion?
 Den arbejdsgangsforbedrede fejlfunktion i version 10.0.13 tilføjer fejlkoder for at differentiere forskellige klasser af arbejdsgangsfejl. De rapporterede fejlmeddelelser er overvejende ens med mindre forskelle for at gøre dem tydeligere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

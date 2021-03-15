@@ -50,3 +50,6 @@ Afskrivning af anlægsaktiver kan køres på tværs af juridiske enheder i et en
 5. Klik på Opret kladde.
 6. Gå til Anlægsaktiver > Kladdepostering > Anlægsaktivkladde.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

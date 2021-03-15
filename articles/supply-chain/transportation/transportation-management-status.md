@@ -48,3 +48,6 @@ Hvis du vil knytte en transportstatus til en fragtmands status, skal du følge d
 1. Vælg den transportstatuskode, du vil knytte til den valgte fragtmands kode.
 1. Angiv den eksterne kode, der bruges af fragtmanden.
 1. Luk siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

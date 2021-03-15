@@ -82,3 +82,6 @@ Der kan også oprettes brugerdefinerede sundhedstjek til at teste enheder, der i
 ## <a name="related-articles"></a>Relaterede artikler
 
 [Modern POS-udløsere (MPOS) og udskrivning](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

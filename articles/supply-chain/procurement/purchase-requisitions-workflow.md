@@ -120,3 +120,6 @@ Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

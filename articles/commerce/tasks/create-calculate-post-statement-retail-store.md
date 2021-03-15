@@ -47,3 +47,6 @@ Dette emne gennemgår de manuelle trin til oprettelse, beregning og bogføring a
 12. Vælg **Butiksregnskab** på startsiden.
 13. Vælg fanen **Bogførte opgørelser**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -133,3 +133,6 @@ I denne proces opretter du en forsendelse, der er baseret på varens *emballaged
 1. Åbn mobilenheden, log på lagersted 63, og gå til **Lager \> Reguler ind**.
 1. Angiv **Loc** = *SHORT-01*. Lav en ny nummerplade med **Vare** = *A0001* og **Antal** = *1 stk.*.
 1. Vælg **OK**. Du modtager fejlen "Location SHORT-01 failed because item A0001 does not fit in location's specified dimensions." Det skyldes, at produktets *lagringstypedimensioner* er større end de dimensioner, der er angivet i lokationsprofilen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

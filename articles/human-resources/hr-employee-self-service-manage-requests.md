@@ -39,3 +39,5 @@ Administrer anmodninger om fravær fra arbejdsområdet **Medarbejderselvbetjenin
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Oprette en orlovs- og fraværsplan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

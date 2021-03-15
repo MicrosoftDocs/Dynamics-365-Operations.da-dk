@@ -87,3 +87,6 @@ I følgende tabel beskrives de forskellige typer automatiske produktanbefalinger
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

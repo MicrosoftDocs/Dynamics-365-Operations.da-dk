@@ -44,3 +44,6 @@ Når du nulstiller konfigurationsgenbrug, bruges tidligere oprettede konfigurati
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

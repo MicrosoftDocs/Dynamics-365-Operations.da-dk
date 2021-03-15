@@ -52,3 +52,6 @@ Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksom
 16. Indtast en værdi i feltet Beskriv ændringer.
 17. Klik på Publicer.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ I følgende tabel beskrives typekonverteringsfunktionerne i [tekstkategorien](er
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Formelsprog i elektronisk rapportering](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

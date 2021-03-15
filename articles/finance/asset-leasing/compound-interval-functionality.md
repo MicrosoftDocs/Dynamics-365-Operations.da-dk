@@ -159,3 +159,6 @@ Følgende tabel viser de første 12 måneder i betalingsplanen. Bemærk følgend
 
 > [!NOTE]
 > Hvis annuiteten ændres til **Forfalden annuitet**, vil betalingen ligge i januar i stedet for december.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

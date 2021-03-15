@@ -132,3 +132,6 @@ Når du har opdateret felterne, skal du vælge **Valider** for at sikre, at comm
 8. I Commerce på siden **Commerce-parametre** skal du på fanen **Kundeaktiviteter** på oversigtspanelet **Dynamics 365 Customer Insights** indstille **Program-id** til "CI_Access_AppID" (fra trin 1 ovenfor). Vælg navnet på den hemmelighed, der er angivet i trin 7 ovenfor ("CISecret") i **Hemmeligt navn**. Angiv indstillingen **Aktivér Customer Insights** til **Ja**. Hvis opsætningen af en eller anden grund mislykkes, får du vist en fejlmeddelelse, og denne indstilling vil blive angivet til **Nej**. 
 
 Du kan have flere miljøer i Customer Insights, f.eks. test- og produktionsmiljøer. Angiv i feltet **ID for miljøforekomst** det relevante miljø. I feltet **Alternativt kunde-ID** skal du angive den egenskab i Customer Insights, der er knyttet til kundens kontonummer. (Inden for handel er debitorkontonummeret debitor-id'et). De øvrige tre egenskaber er de mål, der vises på kundekortet i klientkartoteket. Du kan vælge op til tre målpunkter, der skal vises på kundekortet. Det er dog ikke et krav, at du vælger nogen målinger. Som tidligere nævnt viser systemet disse værdier først, og derefter viser det værdierne for attributgruppen for klientkartoteket.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

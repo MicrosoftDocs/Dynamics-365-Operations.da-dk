@@ -127,3 +127,6 @@ Værdierne for standardtypografien aktiveres på tværs af dit offentlige webste
 [Føje sprog til webstedet](add-languages-to-site.md)
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

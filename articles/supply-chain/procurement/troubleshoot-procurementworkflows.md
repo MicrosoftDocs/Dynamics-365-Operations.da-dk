@@ -79,3 +79,6 @@ Når du har annulleret indkøbsordrer, der er i en *Bekræftet* tilstand, vises 
 
 Dette problem opstår kun ved indkøbsordrer, der er omfattet af en ændringsstyring. Det sker, fordi annulleringen betragtes som en ændring, der skal godkendes. Godkendelsen kan foretages automatisk af systemet. Derfor er processen at sende den annullerede indkøbsordre til godkendelsesarbejdsgangen, så den kan gå til en *Godkendt* tilstand. På dette tidspunkt vises indkøbsordren ikke længere på listen over kladdeindkøbsordrer i arbejdsområdet **Forberedelse af indkøbsordre**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

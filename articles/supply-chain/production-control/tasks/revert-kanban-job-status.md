@@ -54,3 +54,6 @@ Denne procedure fokuserer på at vende tilbage til en forkert kanban-jobstatus. 
     * Vælg det samme job.  
     * Bemærk, at jobstatus for kanban-jobbet er ført tilbage til Planlagt, hvilket angives med et tomt kanban-ikon.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

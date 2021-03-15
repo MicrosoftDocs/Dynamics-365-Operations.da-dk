@@ -68,3 +68,6 @@ For fuld fleksibilitet i blandet tilstand anbefaler vi, at du bruger produktions
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

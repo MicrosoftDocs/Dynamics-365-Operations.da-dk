@@ -54,3 +54,6 @@ Når dataene importeres til driftsregnskab, kan du bruge dem til at oprette fors
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

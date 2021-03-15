@@ -110,3 +110,6 @@ Du kan sende beskeder til personer, når en automatiseret opgave er afviklet ell
     </table>
 
 8. Gentag trin 3 til 7 for hvert af de hændelser, du har valgt i trin 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

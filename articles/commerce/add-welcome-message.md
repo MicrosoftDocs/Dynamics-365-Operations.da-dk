@@ -67,3 +67,6 @@ Velkomstmeddelelsen vises nu øverst på alle de webstedssider, der bruger det v
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

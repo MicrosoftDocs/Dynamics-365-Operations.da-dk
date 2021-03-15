@@ -132,3 +132,6 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 77. Klik på Gem.
 78. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

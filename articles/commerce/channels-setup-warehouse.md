@@ -146,3 +146,6 @@ Følgende billede viser oplysninger om et konfigureret lagersted.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

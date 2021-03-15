@@ -37,3 +37,6 @@ Billedet nedenfor er en illustration af grænsefladerne til andre moduler i Fina
 ![Oversigt over, hvordan Styring af aktiver integreres](media/overview-integrate2.jpg)
 
 Styring af aktiver giver dig mulighed for effektivt at administrere og udføre opgaver i forbindelse med styring og servicering af mange typer udstyr i din virksomhed, f.eks. maskiner, produktionsudstyr og køretøjer. Styring af aktiver understøtter løsninger på tværs af adskillige brancher.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

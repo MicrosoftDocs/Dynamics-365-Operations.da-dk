@@ -82,3 +82,6 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
 - [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md)
 - [Stoppe orlov midlertidigt](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

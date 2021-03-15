@@ -117,3 +117,6 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 | Samlede nøglemålinger       | Felt               | Betegnelse |
 |---------------------------------|---------------------|-------------|
 | Planlagt omkostning for fuldført aktivitet | Sum(TotalCostPrice) | Summen af kostpris i estimater for alle projektposteringstyper, der har fuldførte opgaver. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

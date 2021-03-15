@@ -99,3 +99,6 @@ Du kan bruge fanen **Tilsidesættelser** til at tilsidesætte bestemte værdier 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

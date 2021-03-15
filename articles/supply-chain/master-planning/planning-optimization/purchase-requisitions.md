@@ -101,3 +101,6 @@ Når varedisponering kører, oprettes der to ordreforslag: et på tre styk for a
 > Når et ordreforslag, der er udlignet til en indkøbsrekvisition, er autoriseret, holder planlægningsprogrammet udligningen på indkøbsrekvisitionen. Hvis den autoriserede ordre senere viser sig at mangle et antal, der skal bruges til at opfylde indkøbsrekvisitionen, opretter systemet et nyt ordreforslag for differencen.
 
 Du kan finde flere oplysninger om indkøbsrekvisitioner i [Oversigt over indkøbsrekvisitioner](../../procurement/purchase-requisitions-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

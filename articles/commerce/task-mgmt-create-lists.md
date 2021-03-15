@@ -92,3 +92,6 @@ Du konfigurerer en POS-handling, så den kan kædes sammen med en opgave, ved at
 [Tildele opgavelister til butikker eller medarbejdere](task-mgmt-assign-lists.md)
 
 [Opgavestyring i POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

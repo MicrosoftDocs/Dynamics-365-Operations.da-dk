@@ -130,3 +130,6 @@ Den nye Azure AD B2C-lejer vises nu på listen under **Administrer B2C-programme
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

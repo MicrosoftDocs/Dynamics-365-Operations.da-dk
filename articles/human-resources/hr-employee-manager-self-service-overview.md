@@ -214,3 +214,5 @@ Ledere kan se alle mål for deres team via feltet **Mål for teamperformance** i
 Fanen **Evalueringer** opsummerer de vurderinger, medarbejderen har i de enkelte tilstande: **I gang**, **Klar til evaluering** og **Slutevaluering**. Hvis du vil have adgang til en medarbejders evaluering, skal du vælge knappen **Detaljer** og derefter vælge evalueringer, der kan samarbejdes om. Afhængigt af, hvor en evaluering er i arbejdsgangsprocessen, kan du se, om evalueringen er tilgængelig for opdatering. 
 
 Du kan se alle evalueringer for dit team via feltet **Evalueringer af teamperformance** i sektionen **Resume** i **Mit team**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

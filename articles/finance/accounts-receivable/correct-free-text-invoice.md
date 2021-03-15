@@ -50,3 +50,6 @@ Du kan identificere annullerede og rettede fakturaer på to måder:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

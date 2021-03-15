@@ -79,3 +79,6 @@ Følgende illustration viser et eksempel på en vedligeholdelsestjekliste.
 
 ![Figur 1](media/14-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

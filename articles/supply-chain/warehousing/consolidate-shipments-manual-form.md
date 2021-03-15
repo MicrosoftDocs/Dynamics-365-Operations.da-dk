@@ -97,3 +97,5 @@ Udfør følgende trin for at frigive hver salgsordre, du har oprettet i dette sc
 
 - [Forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
 - [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

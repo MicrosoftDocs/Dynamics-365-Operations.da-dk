@@ -47,3 +47,6 @@ Dette emner beskriver, hvordan du opretter en POS-rettighedsgruppe. Det demodata
 16. Indtast eller vælg en værdi i feltet POS-rettighedsgruppe. Alle arbejdere i positioner for dette job vil bruge indstillinger for denne POS-rettighedsgruppe, medmindre arbejdernes POS-rettigheder er blevet tilsidesat på deres positionsniveau.  
 17. Vælg **Gem**. Når dine ændringer er gemt, skal du køre planen til medarbejderdistribution for at overføre ændringerne til kanalerne.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

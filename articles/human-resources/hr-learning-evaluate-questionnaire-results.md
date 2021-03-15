@@ -72,3 +72,5 @@ Du kan bruge spørgeskemastatistik til at analysere resultaterne af et udfyldt s
 -   Vælg eller bekræft kriterier til at analysere resultaterne efter svarperson eller spørgeskemakarakteristika. Hvis du vælger **Postnummer**, kan du f.eks. analysere korrelationen mellem en svarpersons placering og korrekte svar.
 
 De indstillinger, du definerer, gemmes og kan bruges til at genberegne resultater med jævne mellemrum.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

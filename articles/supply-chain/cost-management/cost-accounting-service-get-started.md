@@ -110,3 +110,6 @@ Sådan konfigurerer du integrationen mellem omkostningsregnskabstjenesten og Dyn
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 
 [Startside for omkostningsregnskabstjeneste](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

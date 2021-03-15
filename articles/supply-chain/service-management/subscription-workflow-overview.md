@@ -56,3 +56,6 @@ I slutningen af hver måned kan du periodisere en måneds omsætning fra kundens
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

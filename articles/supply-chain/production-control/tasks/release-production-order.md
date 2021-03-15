@@ -40,3 +40,6 @@ Denne procedure viser, hvordan du frigiver en produktionsordre. Det demodatafirm
 6. Klik på OK.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

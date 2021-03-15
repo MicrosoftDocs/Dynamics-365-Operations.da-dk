@@ -54,3 +54,6 @@ Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt
 20. Skriv 'Tak for hjælpen på konferencen!' i feltet Beskrivelse.
 21. Klik på Send.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

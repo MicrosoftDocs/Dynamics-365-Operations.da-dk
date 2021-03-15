@@ -215,3 +215,6 @@ Følgende skabeloner er tilgængelige for integrationen af indkøbsrelaterede do
 [!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
 
 [!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

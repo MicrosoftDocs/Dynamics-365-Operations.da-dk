@@ -80,3 +80,6 @@ Hvis kulturen ikke er defineret som et argument for den kaldte funktion, er vær
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Dato- og klokkeslætsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

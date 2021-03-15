@@ -40,3 +40,6 @@ Jobproceduren betaling af A-skat afregner A-skatsaldi fra Kreditor på A-skatkon
 7. Klik på **OK**.
 
 ![Parametre for betaling af A-skat](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -146,3 +146,6 @@ Yderligere rapporter, der er tilgængelige, omfatter rapporten **Budgetpositione
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

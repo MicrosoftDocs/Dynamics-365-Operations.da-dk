@@ -61,3 +61,6 @@ Brug denne procedure, når du vil oprette en indkøbsordre, der skal kontrollere
 4. Klik på Fejl eller advarsler i forbindelse med budgetkontrol.
 5. Klik på Luk.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

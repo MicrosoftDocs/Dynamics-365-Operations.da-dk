@@ -264,3 +264,6 @@ Salgsordrer med en årsag til gennemtvunget hold kan ikke frigives automatisk. H
 Kreditstyring kan i øjeblikket kun bruges til salgsordrer. Fritekstfakturaer, POS-salgsordrer og callcenter-ordrer bruger det midlertidige kreditmaks. og den forsikring/de garantier, du tilføjer, til at regulere kreditmaks. De bruger ikke blokeringsreglerne, og de sættes ikke på listen over, hvis der er et problem med kreditmaks.
 
 Projektfakturaer understøttes ikke i kreditstyring.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

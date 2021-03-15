@@ -60,3 +60,6 @@ I dette emne beskrives, hvordan du konfigurerer en simpel arbejdsskabelon, der s
 6. Skriv en værdi i feltet **Arbejdsklasse-id**. Pluk og læg-instruktionerne er et sæt. Hvert pluk/lægsæt skal have samme arbejdsklasse. Brug samme arbejdsklasse, som du angav for plukinstruktionen.  
 7. Vælg **Gem**. Bemærk, at afkrydsningsfeltet **Gyldig** nu er markeret.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

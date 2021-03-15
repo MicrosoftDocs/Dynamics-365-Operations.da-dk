@@ -79,3 +79,6 @@ Du kan knytte et godkendelsestrin til følgende deltagergrupper.
 - [Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Arbejdsgang for indkøbsrekvisitioner](purchase-requisitions-workflow.md)
 - [Modtage kreditorer](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

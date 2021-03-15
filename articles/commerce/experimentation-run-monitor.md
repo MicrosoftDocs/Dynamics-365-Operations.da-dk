@@ -52,3 +52,6 @@ Hvis du af en eller anden grund har brug for at ændre dine variationer, skal du
 
 ## <a name="next-step"></a>Næste trin
 [Hæve en variation og fuldføre et eksperiment](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

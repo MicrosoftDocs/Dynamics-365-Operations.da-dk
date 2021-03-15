@@ -59,3 +59,6 @@ Den øverste node i træet repræsenterer det disponible antal af den valgte var
 9. Klik på **Afsendte salgsordrer**.
 10. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

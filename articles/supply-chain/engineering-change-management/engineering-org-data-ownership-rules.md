@@ -66,3 +66,6 @@ Da den tekniske virksomhed ejer de teknisk relevante data, styrer den følgende 
 
     - Når disse dokumenter frigives til andre juridiske enheder, er dokumenterne beskyttet mod at blive fjernet af driftsselskabet.
     - Andre juridiske enheder kan tilføje helt nye lokale dokumenter. Driftsselskabet ejer og vedligeholder disse lokale dokumenter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

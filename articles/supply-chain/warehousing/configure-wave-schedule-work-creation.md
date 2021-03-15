@@ -110,3 +110,6 @@ På siden **Detaljer om planlagt arbejde** (**Lokationsstyring \> Arbejde \> Det
 Hvis du vil have vist batchjobbene til behandling af bølger, skal du vælge **Batchjob** i handlingsruden på siden **Alle bølger**.
 
 Herfra kan du få vist alle oplysninger om batchopgaven for hvert enkelt batchjob-id.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

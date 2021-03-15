@@ -44,3 +44,6 @@ Denne procedure viser, hvordan du ændrer rapporteringsrelation for en medarbejd
 12. Indtast eller vælg en værdi i feltet Rapporterer til stilling.  Eksempel: 000437
 13. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

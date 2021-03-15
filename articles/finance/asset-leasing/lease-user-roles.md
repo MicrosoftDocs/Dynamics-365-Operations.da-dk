@@ -43,3 +43,6 @@ Udfør følgende trin for at tildele brugere til de roller, der bruges i aktivle
 1. Gå til **Systemadministration \> Sikkerhed \> Tildel brugere roller**.
 2. Vælg rollen **Vedligehold leasingaftale**, **Leasingassistent** eller **Vis leasingaftale**, og vælg derefter **Tildel/Udeluk manuelt**.
 3. Vælg den bruger, der skal tildeles til rollen, og vælg derefter **Tildel til rolle**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

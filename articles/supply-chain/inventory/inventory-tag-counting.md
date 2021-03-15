@@ -35,3 +35,6 @@ Ved at oprette linjer på siden **Mærkatoptælling** placerer du et mærkatnumm
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Cyklusoptælling](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

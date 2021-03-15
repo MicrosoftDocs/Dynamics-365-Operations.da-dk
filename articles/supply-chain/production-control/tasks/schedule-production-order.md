@@ -54,3 +54,6 @@ Denne procedure viser, hvordan du planlægger en produktionsordre. Det demodataf
 6. Luk siden.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -185,3 +185,6 @@ Du kan finde flere oplysninger under [Indstillinger for beregning af hele beløb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

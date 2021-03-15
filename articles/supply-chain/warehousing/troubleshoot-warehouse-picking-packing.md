@@ -109,3 +109,6 @@ Når du bruger *Systemstyret klyngepluk* som proces, hvis du konfigurerer en kly
 ### <a name="issue-resolution"></a>Problemløsning
 
 Du kan løse dette problem ved at redigere klyngeprofilen og angive indstillingen **Aktivér placeringer** til *Nej*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

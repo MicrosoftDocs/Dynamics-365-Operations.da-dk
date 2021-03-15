@@ -86,3 +86,6 @@ Denne forespørgsel adskiller sig fra andre forespørgsler, fordi du kan tilpass
     - Valgmulighed: For at filtrere værdierne for en bestemt dimension, skal du i felterne under feltet **Økonomiske dimensionssæt** vælge, hvilke dimensioner der skal medtages. De tilgængelige valgmuligheder varierer afhængigt af det økonomiske dimensionssæt, du har valgt.
 
 3. Vælg **Beregn saldi** for at køre forespørgslen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

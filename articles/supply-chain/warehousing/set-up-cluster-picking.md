@@ -79,3 +79,6 @@ Når der anvendes en klyngepluk, er varebekræftelse afgørende for kontrol af d
 1. I et menupunkt på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse:  **Lagerstedsstyring** \> **Lagerstedsstyring** \> **Opsætning** \>  **Mobilenhed** \> **Menupunkter i mobilenhed**.
 
 1. Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden. Indstillingen **Bekræftelse af produkt** gør det muligt at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

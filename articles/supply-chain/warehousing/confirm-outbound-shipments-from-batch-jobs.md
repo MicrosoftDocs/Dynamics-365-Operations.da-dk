@@ -53,3 +53,6 @@ Sådan konfigureres et planlagt batchjob til at køre bekræftelse af udgående 
 1. Vælg **OK** i dialogboksen **Bekræft forsendelse** for at føje batchjobbet til batchkøen.
 
 Du kan finde flere oplysninger under [Oversigt over batchbehandling](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

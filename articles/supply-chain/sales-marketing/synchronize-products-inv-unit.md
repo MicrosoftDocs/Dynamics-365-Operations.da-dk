@@ -62,3 +62,6 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 ### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Field Service-produkter med lagerenhed (Supply Chain Management til Field Service): Produkter
 
 [![Skabelontilknytning i dataintegration](./media/FSProduct1.png)](./media/FSProduct1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
