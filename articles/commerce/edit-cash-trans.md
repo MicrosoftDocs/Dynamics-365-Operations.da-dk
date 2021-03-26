@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c809f379dbd6824542d0b1768cfbf44f37461f4c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 296dbf03ed65c1994562149a2c4b8fccd9073f0d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010193"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221913"
 ---
 # <a name="edit-and-audit-cash-and-carry-and-cash-management-transactions"></a>Redigere og overvåge cash and carry-transaktioner og kassestyringstransaktioner
 
@@ -32,9 +32,9 @@ Dette emne beskriver, hvordan du redigerer og overvåger cash and carry-transakt
 
 ## <a name="overview"></a>Oversigt
 
-Dynamics 365 Commerce-kunder bruger både en førsteparts-POS-applikation og tredjeparts-POS-applikationer. I forbindelse med førsteparts-POS-applikationen trækkes butikstransaktioner ind i hovedkontoret Commerce fra kanalerne via en batchproces. I forbindelse med tredjepartsapplikationer trækkes transaktionerne ind i hovedkontoret Commerce via integration. I begge tilfælde skal der udføres en konsistenskontrolproces, når der trækkes transaktioner ind i hovedkontoret Commerce. Denne proces kører flere valideringer af transaktionerne, og kun de transaktioner, der er valideret korrekt, trækkes ind i opgørelsen, så de kan bogføres i hovedkontoret Commerce.
+Dynamics 365 Commerce-kunder bruger både en førsteparts-POS-ansøgninger og tredjeparts-POS-ansøgninger. I forbindelse med førsteparts-POS-ansøgningen trækkes butikstransaktioner ind i hovedkontoret Commerce fra kanalerne via en batchproces. I forbindelse med tredjepartsansøgninger trækkes transaktionerne ind i hovedkontoret Commerce via integration. I begge tilfælde skal der udføres en konsistenskontrolproces, når der trækkes transaktioner ind i hovedkontoret Commerce. Denne proces kører flere valideringer af transaktionerne, og kun de transaktioner, der er valideret korrekt, trækkes ind i opgørelsen, så de kan bogføres i hovedkontoret Commerce.
 
-Commerce-transaktioner valideres muligvis ikke korrekt af forskellige årsager. En fejl i integrationskoden eller i POS-applikationen kan medføre inkonsistente data. Alternativt kan en brugerfejl forårsage inkonsekvente data. F.eks. hvis en bruger sletter et produkt, når det er synkroniseret med kanalen, eller hvis en bruger lukker en regnskabsperiode uden at bogføre transaktioner for den pågældende periode. Selvom disse transaktioner markeres og udelukkes fra opgørelserne, kan de forstyrre en kundes daglige proces med at bogføre dagligt salg i finans. I Commerce kan du redigere de transaktioner, der ikke er valideret korrekt, samtidig med at du også bevarer overvågningen af alle ændringerne.
+Commerce-transaktioner valideres muligvis ikke korrekt af forskellige årsager. En fejl i integrationskoden eller i POS-ansøgningen kan medføre inkonsistente data. Alternativt kan en brugerfejl forårsage inkonsekvente data. F.eks. hvis en bruger sletter et produkt, når det er synkroniseret med kanalen, eller hvis en bruger lukker en regnskabsperiode uden at bogføre transaktioner for den pågældende periode. Selvom disse transaktioner markeres og udelukkes fra opgørelserne, kan de forstyrre en kundes daglige proces med at bogføre dagligt salg i finans. I Commerce kan du redigere de transaktioner, der ikke er valideret korrekt, samtidig med at du også bevarer overvågningen af alle ændringerne.
 
 ## <a name="edit-transactions"></a>Redigere transaktioner
 

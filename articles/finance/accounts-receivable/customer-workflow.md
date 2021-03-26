@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: a74b8ed226c4e13c8684fe86d4dca7236a84040e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: af66887dda551d3820b744fbb96d7d13c897e71b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012182"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236884"
 ---
 # <a name="customer-workflow"></a>Arbejdsgang for kunde
 
@@ -59,7 +59,7 @@ Når du har mindst én foreslået ændring, vises der yderligere to menuer i han
 
     Status på siden ændres til **Ændringer, der afventer godkendelse**.
 
-Arbejdsgangen følger standardprocessen for arbejdsgang i applikationen. Godkenderen dirigeres til siden **Kunde**, hvor ændringerne kan gennemgås på siden **Forslag til ændringer**. Vælg derefter **Arbejdsgang \> Godkend** for at godkende arbejdsgangen. Når alle godkendelser er fuldført, opdateres felterne med de værdier, du foreslog.
+Arbejdsgangen følger standardprocessen for arbejdsgang i ansøgningen. Godkenderen dirigeres til siden **Kunde**, hvor ændringerne kan gennemgås på siden **Forslag til ændringer**. Vælg derefter **Arbejdsgang \> Godkend** for at godkende arbejdsgangen. Når alle godkendelser er fuldført, opdateres felterne med de værdier, du foreslog.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

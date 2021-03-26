@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a5a82adbad16d8fea2ccf60ae0dbfbd2fd9f3c1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d4b7e383ca2089ee98e70d23ccd890d0e6a86c5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010169"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221792"
 ---
 # <a name="edit-financial-dimensions-for-retail-transactions"></a>Redigere økonomiske dimensioner for detailtransaktioner
 
@@ -34,7 +34,7 @@ Dette emne beskriver, hvordan du redigerer økonomiske dimensioner for detailtra
 
 Hvis du vil redigere økonomiske dimensioner for detailtransaktioner i hovedkontoret Commerce, skal du følge disse trin.
 
-1. Åbn siden **Konfiguration af økonomiske dimensioner til integrering af applikationer**.
+1. Åbn siden **Konfiguration af økonomiske dimensioner til integrering af ansøgninger**.
 1. Vælg den aktive post **Standarddimensioner til integrering**.
 1. På oversigtspanelet **Økonomiske dimensioner** skal du sørge for, at alle de dimensioner, du vil redigere i Excel-regnearket, findes på listen **Valgte**. Du kan finde flere oplysninger under [Dataenheder](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration#data-entities).
 1. Overfør og åbn Excel-filen fra siden **Opgørelser**, siden **Detailtransaktioner** eller feltet **Transaktionsvalideringsfejl** i arbejdsområdet **Butiksøkonomi**.

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 694c1f415fd52eb9e98ace2e5787c12f7a1fed8e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 644cf8ea39da872962e44a38294af88d1dfa809e
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687265"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559863"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Rapportering og analyse med startside for Power BI
 
@@ -61,7 +60,7 @@ Hvis du vil lære mere, skal du se følgende emner:
 - [Installere dokumentets ruteplanlægningsagent for at aktivere netværksudskrivning](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
-Elektronisk rapportering er det værktøj, du bruger til at konfigurere dokumentformater, der opfylder de lovgivningsmæssige krav i forskellige lande eller områder. Anvendelsen af elektronisk rapportering omfatter økonomisk revision, momsindberetning og elektronisk fakturering.
+Elektronisk rapportering er det værktøj, du bruger til at konfigurere dokumentformater, der opfylder de lovgivningsmæssige krav i forskellige lande eller områder. Ansøgningerne til elektronisk rapportering omfatter økonomisk revision, momsindberetning og elektronisk fakturering.
 
 [![Eksempel på elektronisk rapportering](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 

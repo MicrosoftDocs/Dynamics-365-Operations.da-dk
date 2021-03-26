@@ -1,12 +1,11 @@
 ---
-title: Dokumentation til Finance and Operations-applikation
+title: Dokumentation til Finance and Operations-ansøgning
 description: Dokumentation til Finance and Operations-apps.
 author: robinarh
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 413bdd2e7a817185829eb551380caf71d87af9b7
-ms.sourcegitcommit: 36d256bf5a832d2d70014d64044026f732b77831
+ms.openlocfilehash: d9421cbe9eeb44fcd0d0f0c688e84ae2043610ac
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "5073101"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562353"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentation til Finance and Operations-applikation
+# <a name="finance-and-operations-application-documentation"></a>Dokumentation til Finance and Operations-ansøgning
 
 [!include [banner](includes/banner.md)]
 
-I dette emne kan du lære, hvordan du lader Finance and Operations-applikationer arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold for slutbrugere, udviklere og it-medarbejdere. 
+I dette emne kan du lære, hvordan du lader Finance and Operations-ansøgninger arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold for slutbrugere, udviklere og it-medarbejdere. 
 
 Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 Commerce og Dynamics 365 Human Resources. 
 
@@ -67,7 +66,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrationer</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Forretningshændelser</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Dataenheder</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration ved brug af Microsoft Power Automate</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration ved hjælp af Microsoft Power Automate</a></p>
 
 <h3><a href="../../finance/index.md">Økonomistyring</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Kreditor</a></p>
@@ -82,7 +81,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale lovpligtige funktioner</a></p>
 
-<h3><a href="hr/hr-landing-page.md">Personale</a></h3>
+<h3><a href="hr/hr-landing-page.md">Human resources</a></h3>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Frynsegoder</a></p>
 <p><a href="../../human-resources/hr-develop-performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
 <p><a href="../../human-resources/hr-learning-questionnaires.md">Spørgeskemaer</a></p>
@@ -100,7 +99,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <p><a href="../../supply-chain/production-control/production-process-overview.md">Produktionsstyring</a></p>
 <p><a href="../../supply-chain/sales-marketing/overview-sales-marketing.md">Salg og marketing</a></p>
 <p><a href="../../supply-chain/transportation/transportation-management-overview.md">Transportstyring</a></p>
-<p><a href="../../supply-chain/warehousing/warehouse-configuration.md">Lokationsstyring</a></p>
+<p><a href="../../supply-chain/warehousing/warehouse-configuration.md">Lagerstedsstyring</a></p>
 
 
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>

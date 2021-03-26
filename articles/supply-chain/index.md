@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 17c8b95dd9cf05813d765d4552f493a1a1b00f31
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 1e3c95520ca83f151e91e10073f82a1a9541f02f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154273"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252840"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -50,7 +50,7 @@ Vælg et funktionsområde, du vil vide mere om.
 - [Salg og marketing](sales-marketing/overview-sales-marketing.md)
 - [Servicestyring](service-management/service-management-home-page.md)
 - [Transportstyring](transportation/transportation-management-overview.md)
-- [Lokationsstyring](warehousing/warehouse-configuration.md)
+- [Lagerstedsstyring](warehousing/warehouse-configuration.md)
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
@@ -86,9 +86,9 @@ Følgende optagelser af tekniske konferencer gennemgår funktionerne til styring
   - [Hjælp! MRP er langsom!](https://youtu.be/RLXybx20B5o)
 - **Administration af produktoplysninger:**
   - [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
-- **Lokationsstyring:**
-  - [Få mest muligt ud af dit lokationsstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Dynamics AX 2012 R3: Avanceret lokationsstyring - en almindelig dag med procesproduktion](https://www.youtube.com/embed/QUxXUrN-7n4)
+- **Lagerstedsstyring:**
+  - [Få mest muligt ud af dit lagerstedsstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [Dynamics AX 2012 R3: Avanceret lagerstedsstyring - en almindelig dag med procesproduktion](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Videoer af produktionsstyring:**
   - [Underleverandørhandlinger og -aktiviteter i produktion](https://youtu.be/y1jrd3A_k70)
 - **Videoer af transportstyring:**

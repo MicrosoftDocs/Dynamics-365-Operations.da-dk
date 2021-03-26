@@ -72,7 +72,9 @@
                   items:
                     - name: Nyheder eller ændringer på Finance-startsiden
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.17 (marts 2021)
+                    - name: Finance 10.0.18 (maj 2021)
+                      href: get-started/whats-new-changed-10-0-18.md
+                    - name: Finance 10.0.17 (april 2021)
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (februar 2021)
                       href: get-started/whats-new-changed-10-0-16.md
@@ -80,6 +82,8 @@
                       href: get-started/whats-new-changed-10-0-15.md
             - name: Fjernede eller udfasede funktioner
               items:
+                - name: Fjernede eller udfasede funktioner på startsiden
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Fjernede eller udfasede funktioner i Dynamics 365 Finance
                   href: get-started/removed-deprecated-features-finance.md
                 - name: Fjernede eller udfasede funktioner i tidligere versioner
@@ -474,6 +478,8 @@
               href: accounts-receivable/tasks/create-collection-letter-sequence.md
             - name: Behandle rykkere
               href: accounts-receivable/tasks/process-collection-letters.md
+            - name: Behandle eksempel på rykkere
+              href: accounts-receivable/process-collection-letters-example.md
             - name: Opsætte og generere aldersfordelte oplysninger om debitorer
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: Aldersfordelt rapport for kunder
@@ -486,6 +492,8 @@
               href: accounts-receivable/original-invoice-numbers-credit-notes.md
             - name: Nummerering af dokumenter og bilag kronologisk
               href: accounts-receivable/chrono-numbers.md
+            - name: Arkivér udskrevne debitorfakturaer med hash-numre
+              href: accounts-receivable/archive-printed-invoices.md
         - name: Budgetplanlægning
           items:
             - name: Startside for budgetplanlægning
@@ -670,7 +678,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
             - name: Bruge indholdspakke til Microsoft Power BI-rapportering
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
-            - name: Bruge arbejdsområde for omkostningsstyring i mobilprogrammet
+            - name: Bruge arbejdsområde for omkostningsstyring i mobilansøgningen
               href: cost-accounting/cost-controlling-mobile-workspace.md
         - name: Elektroniske meddelelser
           href: general-ledger/electronic-messaging.md
@@ -1272,7 +1280,7 @@
                   href: project-management/work-breakdown-structures.md
                 - name: Microsoft Project Client-integration
                   href: project-management/project-integration.md
-                - name: Oversigt over Project-mobilprogrammer
+                - name: Oversigt over Project-mobilansøgninger
                   href: project-management/project-mobile-application-overview.md
                 - name: Projekttidsregistrering i arbejdsområde til mobilenheder
                   href: project-management/project-time-entry-mobile-workspace.md
@@ -1318,6 +1326,8 @@
                   href: public-sector/tasks/create-vendor-certification-type-public-sector.md
                 - name: Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor
                   href: public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: Begrænse redigeringen af regnskabsfordelinger på fakturaer
+                  href: public-sector/restrict-edit-accounting-distributions.md
                 - name: Planlægge engangsleverandører i den offentlige sektor
                   href: public-sector/plan-one-time-vendors-public-sector.md
                 - name: Kontrollere adgang til købsaftaler i den offentlige sektor
@@ -1428,8 +1438,8 @@
                       href: localizations/e-invoicing-get-started.md
                     - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering for Brasilien
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Elektroniske fakturaer til kunder i Egypten
-                      href: localizations/emea-egy-e-invoices.md
+                    - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering for Egypten
+                      href: localizations/e-invoicing-eg-get-started.md
                     - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering for Italien
                       href: localizations/e-invoicing-ita-get-started.md
                     - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering for Mexico
@@ -1580,7 +1590,9 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Konfigurere NF-e-parametre for et skattekontor
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
-                    - name: NT 2019.001 – skat af frynsegoder og fritagelsesregler for NF-e/NFC-e
+                    - name: NT2020.006 – Mellemled i salgsdigitalplatform for NF-e
+                      href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
+                    - name: NT 2019.001 – Moms af frynsegoder og fritagelsesregler for NF-e/NFC-e
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
@@ -1784,6 +1796,8 @@
                   href: localizations/emea-egy-reg-numbers.md
                 - name: Konfigurere fakturalayout for Egypten
                   href: localizations/emea-egy-invoice-layout.md
+                - name: Elektroniske fakturaer til kunder i Egypten
+                  href: localizations/emea-egy-e-invoices.md
             - name: Estland
               items:
                 - name: Oversigt for Estland
@@ -2008,12 +2022,14 @@
                   items:
                     - name: Oversigt over revisionsfil for Tyskland
                       href: localizations/emea-deu-gdpdu-audit-data-export.md
-                    - name: Tilpasse konfiguration af revisionsfil
-                      href: localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Generere revisionsfil
-                      href: localizations/tasks/german-audit-file.md
                     - name: Importere konfiguration for en revisionsfil
                       href: localizations/tasks/import-german-audit-file-configuration.md
+                    - name: Generere revisionsfil
+                      href: localizations/tasks/german-audit-file.md
+                    - name: Tilpasse konfiguration af revisionsfil
+                      href: localizations/tasks/customize-german-audit-file-configuration.md
+                    - name: Føje filtre til en konfiguration af en revisionsfil
+                      href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Reguleringer af afskrivning for yderligere anskaffelser i det andet år
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektronisk overførsel for momsangivelse (ELSTER)
@@ -2306,7 +2322,7 @@
                   href: localizations/emea-ita-quarterly-vat-communication.md
                 - name: Sortlistningsrapport
                   href: localizations/emea-ita-black-list-report.md
-                - name: Kompetencedato
+                - name: Kompetencedato og regnskabskladde
                   href: localizations/emea-ita-competence-date.md
                 - name: Afskrivning af anlægsaktiver
                   href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3227,7 +3243,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Faktisk vs. budget
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Personalegoder
+                - name: Frynsegoder
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Power BI-indhold til oversigt over kontanter
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
@@ -3253,7 +3269,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Driftsregnskab
                   href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: Økonomisk indsigt
+                - name: Økonomisk analyse
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
                 - name: Styring af anlægsaktiv
                   href: fixed-assets/Fixed-asset-management-workspace.md
@@ -3341,7 +3357,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/finance/toc.json
                 - name: Tilpasse App Suite-rapporter ved hjælp af udvidelser
                   href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/finance/toc.json
-                - name: Udvide rapportdatasæt for programpakke
+                - name: Udvide rapportdatasæt for ansøgningspakke
                   href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/finance/toc.json
                 - name: Udvide rapportmenupunkter for at omdirigere brugernavigation
                   href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/finance/toc.json
@@ -3363,13 +3379,13 @@
                   items:
                     - name: Designe domænespecifik datamodel
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Forberede programspecifikke metadata
+                    - name: Forberede ansøgningsspecifikke metadata
                       items:
-                        - name: '(ER) Klargøre programmetadata, der skal bruges i RCS'
+                        - name: '(ER) Klargøre ansøgningsmetadata, der skal bruges i RCS'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Få adgang til programmetadata ved hjælp af ER-konfiguration
+                        - name: (RCS) Få adgang til ansøgningsmetadata ved hjælp af ER-konfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Få adgang til programmetadata ved hjælp af tilsluttede programmer
+                        - name: (RCS) Få adgang til ansøgningsmetadata ved hjælp af tilsluttede programmer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
                         - name: Definere modeltilknytninger og vælge datakilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3379,7 +3395,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/finance/toc.json
                         - name: Knytte komponenter i det oprettede format til datamodelelementer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Teste den forberedte ER-løsning i destinationsprogrammet
+                    - name: Teste den forberedte ER-løsning i destinationsansøgningen
                       items:
                         - name: Importere konfigurationer fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
@@ -3493,12 +3509,18 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
                         - name: ValueInLarge
@@ -3673,8 +3695,10 @@
                   items:
                     - name: Designe ny ER-konfiguration til generering af rapporter i Word-format
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
-                    - name: Genbruge ER-konfigurationer med Excel-skabeloner til generering af rapporter i Word-format
+                    - name: Genbruge Elektronisk rapporteringskonfigurationer med Excel-skabeloner til generering af rapporter i Word-format
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Skjule Word-indhold i genererede rapporter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
                 - name: Designe konfigurationer til udfyldelse af PDF-skabeloner
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Integrere billeder og figurer
@@ -3693,19 +3717,19 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Ignorere styklistetegn i genererede filer
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
-            - name: Opdatere programdata ved hjælp af elektronisk rapportering
+            - name: Opdatere ansøgningsdata ved hjælp af elektronisk rapportering
               items:
-                - name: Generere elektroniske dokumenter og opdatere programdata
+                - name: Generere elektroniske dokumenter og opdatere ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
-                - name: Importere konfigurationer for at generere dokumenter med programdata
+                - name: Importere konfigurationer for at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Designe konfigurationer til at generere dokumenter med programdata
+                - name: Designe konfigurationer til at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/finance/toc.json
-                - name: Redigere modeller og tilknytninger for at generere dokumenter med programdata
+                - name: Redigere modeller og tilknytninger for at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/finance/toc.json
-                - name: Redigere formater for at generere dokumenter med programdata
+                - name: Redigere formater for at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/finance/toc.json
-                - name: 'Generere dokumenter, der har programdata'
+                - name: 'Generere dokumenter, der har ansøgningsdata'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/finance/toc.json
             - name: Importere data fra indgående filer ved hjælp af ER-løsninger
               items:
@@ -3759,6 +3783,8 @@
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Dele konfigurationer i GR
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Afbryde konfigurationer i RCS Global-lageret
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Hurtige introduktioner
               items:
                 - name: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d10f54913ca8dff56a59ea597a9bd7c3e69d4bc
-ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
+ms.openlocfilehash: a9feafcab5969e9ec8fcbb8a6903d7b59505f6ae
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5107689"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249405"
 ---
 # <a name="year-end-activities-faq"></a>Ofte spurgte spørgsmål i forbindelse med ultimoaktiviteter 
 
@@ -68,7 +68,7 @@ I skabelonen til årsafslutning kan organisationer vælge det økonomiske dimens
 Det anbefales, at du evaluerer organisationens krav og, hvis det er muligt, lukker så mange dimensioner som muligt ved hjælp af indstillingen **Luk enkelt** for at forbedre ydeevnen. Ved at lukke til en enkelt dimensionsværdi (som også kan være en tom værdi), beregner systemet færre detaljer ved bestemmelse af saldi for poster på konti til overført overskud.
 
 ### <a name="10013-update-or-later"></a>10.0.13 opdatering eller senere
-Hvis du har opdateret til version 10.0.13 eller senere, siden sidste gang organisationen kørte en årsafslutning, kan årsafslutningen tage længere tid pga. [HashV2-funktionsimplementering](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/verify-hash-function-changes-after-update-to-dynamics-365-finance-2020-release-wave-2)2. (Betegnelsen *hash* refererer til et felt, der er beregnet ud fra andre strengfelter. API'en til beregning af værdien for Hash GUID-værdien er opdateret for at øge sikkerheden. For hurtigere at kunne afslutte ultimoaktiviteter anbefales det, at saldi for dimensionsopsætninger gendannes, før ultimoafslutningen køres. Hvis du allerede har udført en gendannelse af saldi for dimensionsopsætninger efter at have foretaget opdateringen 10.0.13, er det ikke nødvendigt at køre gendanne processen.
+Hvis du har opdateret til version 10.0.13 eller senere, siden sidste gang organisationen kørte en årsafslutning, kan årsafslutningen tage længere tid pga. [HashV2-funktionsimplementering](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/verify-hash-function-changes-after-update-to-dynamics-365-finance-2020-release-wave-2). (Betegnelsen *hash* refererer til et felt, der er beregnet ud fra andre strengfelter. API'en til beregning af værdien for Hash GUID-værdien er opdateret for at øge sikkerheden. For hurtigere at kunne afslutte ultimoaktiviteter anbefales det, at saldi for dimensionsopsætninger gendannes, før ultimoafslutningen køres. Hvis du allerede har udført en gendannelse af saldi for dimensionsopsætninger efter at have foretaget opdateringen 10.0.13, er det ikke nødvendigt at køre gendanne processen.
  
 ## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Finans – Hvad betyder Periodelukning – Årsafslutning?
  

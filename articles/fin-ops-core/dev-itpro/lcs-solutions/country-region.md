@@ -1,27 +1,26 @@
 ---
 title: Globaliseringsressourcer
 description: Dette emne indeholder en liste over ressourcer, der kan give dig større viden om lande/områdespecifikke funktioner og tilbud.
-author: ShylaThompson
+author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: sericks
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed89c0c9cb915af0d5a70d14d1f0e251f20554d7
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 26411c24751f698a6789bbbd687aca8f378f7d65
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154113"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560912"
 ---
 # <a name="globalization-resources"></a>Globaliseringsressourcer
 
@@ -55,7 +54,6 @@ Følgende ressourcer indeholder oplysninger om planlagte og nye lokaliseringsfun
 
 #### <a name="regulatory-updates"></a>Lovmæssige opdateringer
 -   [Lovmæssige opdateringer](../../../finance/localizations/regulatory-updates.md)
--   [Lokaliseringsportal](https://docs.microsoft.com/dynamics/s-e/) (opdateres ugentligt)
 -   [Problemsøgning i Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (opdateres dagligt)
 
 #### <a name="communication-and-alerts"></a>Kommunikation og påmindelser
@@ -78,12 +76,12 @@ Med det elektroniske rapporteringsværktøj (ER) kan du konfigurerer formater fo
 -   [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Importér konfigurationer for elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Konfigurere elektronisk rapportering (ER) for at trække data ind i Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [Generere elektroniske dokumenter og opdatere programdata ved brug af ER](../analytics/generate-electronic-documents-update-application-data.md)
+-   [Generere elektroniske dokumenter og opdatere ansøgningsdata ved brug af ER](../analytics/generate-electronic-documents-update-application-data.md)
 
 ### <a name="task-guides"></a>Opgaveguider
 Opgaveguider er tilgængelige i produkthjælperuden, og de indeholder en guidet gennemgang af vigtige forretningsprocesser. Du kan åbne en opgaveguide for at læse trinnene i en forretningsproces, eller du kan afspille en opgaveguide for at gennemgå en forretningsproces og indtaste data.
 
-Du kan finde opgaveguider ved at navigere til en side i applikationen og klikke på Hjælp. Opgaveguider, der bruger siden, vises i hjælperuden. Du kan også bruge hjælperuden til at søge efter opgaveguiders titel.
+Du kan finde opgaveguider ved at navigere til en side i ansøgningen og klikke på Hjælp. Opgaveguider, der bruger siden, vises i hjælperuden. Du kan også bruge hjælperuden til at søge efter opgaveguiders titel.
 
 Du kan finde flere oplysninger i [Hjælp-systemet](../../fin-ops/get-started/help-overview.md#task-guides).
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 367eaebfdd59d15040bfd4824b0b6f4621cb7147
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9ace77dba534615874e52ba95ee9dc6d71951d9e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982585"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204322"
 ---
 # <a name="distributed-order-management-dom"></a>Fordelt ordrestyring (DOM)
 
@@ -254,7 +254,7 @@ Når DOM (fordelt ordrestyring)-behandlingen køres, oprettes der opfyldningspla
 Her er nogle ting, du bør være opmærksom på, når du bruger DOM (fordelt ordrestyring)-funktionen:
 
 - DOM (fordelt ordrestyring) ser i øjeblikket kun på ordrer, der er oprettet ud fra Commerce-kanaler. Salgsordrer identificeres som detailsalgsordrer, når indstillingen **Commerce-salg** er angivet til **Ja**.
-- Microsoft har ikke testet DOM (fordelt ordrestyring) med funktioner til avanceret lokationsstyring. Kunder og partnere skal være omhyggelige med at afgøre, om DOM (fordelt ordrestyring) er kompatibel med de funktioner og processer for avanceret lokationsstyring, der er relevante for dem.
+- Microsoft har ikke testet DOM (fordelt ordrestyring) med funktioner til avanceret lagerstedsstyring. Kunder og partnere skal være omhyggelige med at afgøre, om DOM (fordelt ordrestyring) er kompatibel med de funktioner og processer for avanceret lagerstedsstyring, der er relevante for dem.
 - DOM (fordelt ordrestyring) er kun tilgængelig i sky-versionen af Commerce. Funktionen understøttes ikke i lokale installationer.
 
 
