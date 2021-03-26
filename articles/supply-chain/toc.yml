@@ -72,14 +72,16 @@
                   items:
                     - name: Startside for nyheder eller ændringer i Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.18 (maj 2021)
+                      href: get-started/whats-new-scm-10-0-18.md
                     - name: Supply Chain Management 10.0.17 (april 2021)
                       href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management 10.0.16 (februar 2021)
                       href: get-started/whats-new-scm-10-0-16.md
-                    - name: Supply Chain Management 10.0.15 (januar 2021)
-                      href: get-started/whats-new-scm-10-0-15.md
                 - name: Fjernede eller udfasede funktioner
                   items:
+                    - name: Fjernede eller udfasede funktioner på startsiden
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
                       href: get-started/removed-deprecated-features-scm-updates.md
                     - name: Fjernede eller udfasede funktioner i tidligere versioner
@@ -220,11 +222,11 @@
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
         - name: Cloud og edge
           items:
-            - name: Sky- og edge-skaleringsenheder for arbejdsbelastninger i forbindelse med produktion og lokationsstyring
+            - name: Sky- og edge-skaleringsenheder for arbejdsbelastninger i forbindelse med produktion og lagerstedsstyring
               href: cloud-edge/cloud-edge-landing-page.md
             - name: Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder
               href: cloud-edge/cloud-edge-workload-manufacturing.md
-            - name: Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
+            - name: Arbejdsbelastninger i forbindelse med lagerstedsstyring for sky- og edge-skaleringsenheder
               href: cloud-edge/cloud-edge-workload-warehousing.md
             - name: Lagerstedsordrer til sky- og edge-skaleringsenheder
               href: cloud-edge/cloud-edge-warehouse-order.md
@@ -529,7 +531,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Bruge indholdspakke til Microsoft Power BI-rapportering
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Bruge arbejdsområde for omkostningsstyring i mobilprogrammet til Finance and Operations
+            - name: Bruge arbejdsområde for omkostningsstyring i mobilansøgningen til Finance and Operations
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Omkostningsstyring
           items:
@@ -1113,19 +1115,19 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Redigere og køre formater for at bruge dokumentstyringsfiler i ER-output
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Opdatere programdata ved hjælp af elektronisk rapportering
+            - name: Opdatere ansøgningsdata ved hjælp af elektronisk rapportering
               items:
-                - name: Generere elektroniske dokumenter og opdatere programdata
+                - name: Generere elektroniske dokumenter og opdatere ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Importere konfigurationer for at generere dokumenter med programdata
+                - name: Importere konfigurationer for at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Designe konfigurationer til at generere dokumenter med programdata
+                - name: Designe konfigurationer til at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Redigere modeller og tilknytninger for at generere dokumenter med programdata
+                - name: Redigere modeller og tilknytninger for at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Redigere formater for at generere dokumenter med programdata
+                - name: Redigere formater for at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Generere dokumenter, der har programdata'
+                - name: 'Generere dokumenter, der har ansøgningsdata'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/supply-chain/toc.json
             - name: Importere data fra indgående filer ved hjælp af ER-løsninger
               items:
@@ -1349,6 +1351,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Spore løbende gennemsnitskostpris pr. lagerdimension
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: Arkivere lagertransaktioner
+              href: inventory/archive-inventory-transactions.md
             - name: Tilføjelsesprogram for indsigt i lagerbeholdning
               href: inventory/inventory-visibility.md
         - name: IoT-intelligens
@@ -2021,6 +2025,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Tekniske versioner og tekniske produktkategorier
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Aktivér administration af ændringer på eksisterende produkter
+              href: engineering-change-management/change-management-existing-products.md
             - name: Produktlivscyklustilstand og transaktioner
               href: engineering-change-management/product-lifecycle-state-transactions.md
             - name: Administrere ændringer af tekniske produkter
@@ -2117,7 +2123,7 @@
                           href: production-control/tasks/end-production-order.md
                     - name: Frigive produktionsordrer
                       href: production-control/release-production-orders.md
-                    - name: Færdigmelde produktionsordrer
+                    - name: Færdigrapportere produktionsordrer
                       href: production-control/report-production-orders-as-finished.md
                     - name: Konfigurere og bruge grænsefladen til produktionsudførelse
                       items:
@@ -2129,9 +2135,11 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: Sådan anvendes grænsefladen til kørsel af produktion
                           href: production-control/production-floor-execution-use.md
+                        - name: Brugergrænsefladestyringstypografier for produktionsudførelse
+                          href: production-control/production-floor-execution-styles.md
                     - name: Konfigurer jobkort for enheder
                       href: production-control/config-job-card-device.md
-                    - name: Færdigmelde fra jobkortenheden
+                    - name: Færdigrapportere fra jobkortenheden
                       href: production-control/report-finished-job-device.md
                     - name: Angiv Mixed Reality-manualer for arbejdere i produktion
                       href: production-control/instruction-guides-in-production-overview.md
@@ -2147,7 +2155,7 @@
                       href: production-control/flushing-principles.md
                     - name: Angive udlagringslokationen for produktionen for færdigvarer
                       href: production-control/production-output-location.md
-                    - name: Færdigmelde styklister
+                    - name: Færdigrapportere styklister
                       href: production-control/report-boms-as-finished.md
                     - name: Rapportere som færdig til en id-styret lokalitet
                       href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
@@ -2729,9 +2737,57 @@
               href: transportation/tasks/set-up-shipping-carriers.md
             - name: Konfigurere transportbegrænsninger for en vare
               href: transportation/tasks/set-up-transportation-constraints-item.md
-        - name: Lokationsstyring
+        - name: Landingsomkostninger
           items:
-            - name: Oversigt over lokationsstyring
+            - name: Oversigt over modulet landingsomkostninger
+              href: landed-cost/landed-cost-overview.md
+            - name: Hvordan landingsomkostninger sammenlignes med Transportstyring
+              href: landed-cost/landed-cost-vs-tms.md
+            - name: Opsætte og konfigurere modulet landingsomkostninger
+              items:
+                - name: Parametre for landingsomkostninger
+                  href: landed-cost/landed-cost-parameters.md
+                - name: Indkøbs- og forsyningsparametre for landingsomkostninger
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: Opsætning af status for voyage
+                  href: landed-cost/voyage-status-setup.md
+                - name: Opsætning af forsendelsescontainere
+                  href: landed-cost/shipping-container-setup.md
+                - name: Opsætning af leveringsoplysninger
+                  href: landed-cost/delivery-information-setup.md
+                - name: Opsætning af rejse med flere niveauer
+                  href: landed-cost/multi-leg-journey-setup.md
+                - name: Opsætning af forsendelsesoplysninger
+                  href: landed-cost/shipping-information-setup.md
+                - name: Opsætning af parameterværdier til efterkalkulering
+                  href: landed-cost/costing-parameters-setup.md
+                - name: Standardbeskrivelser af finans
+                  href: landed-cost/defult-descriptions.md
+            - name: Kreditorindstillinger tilføjet for landingsomkostninger
+              href: landed-cost/vendors-landed-cost-settings.md
+            - name: 'Arbejde med rejser, containere og folios'
+              items:
+                - name: Administrere rejser
+                  href: landed-cost/manage-voyages.md
+                - name: Administrere forsendelsescontainere
+                  href: landed-cost/manage-shipping-containers.md
+                - name: Administrere folios
+                  href: landed-cost/manage-folios.md
+            - name: Spore indgående rejser og forsendelsescontainerrejser
+              href: landed-cost/inbound-tracking.md
+            - name: Estimere og administrere landingsomkostninger
+              href: landed-cost/estimate-manage-landed-costs.md
+            - name: Behandle under transit
+              href: landed-cost/in-transit-processing.md
+            - name: Behandle over-/underposteringer
+              href: landed-cost/over-under-transactions.md
+            - name: Forespørgsler om landingsomkostninger
+              href: landed-cost/landed-cost-inquiries.md
+            - name: Rapporter over landingsomkostninger
+              href: landed-cost/landed-cost-reports.md
+        - name: Lagerstedsstyring
+          items:
+            - name: Oversigt over lagerstedsstyring
               href: warehousing/warehouse-management-overview.md
             - name: Indgående lagerstedsoperationer
               items:
@@ -2757,11 +2813,11 @@
                   href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Udgående lagerstedsoperationer
               items:
-                - name: Reservationer i lokationsstyring
+                - name: Reservationer i lagerstedsstyring
                   items:
                     - name: Fleksibel reservationspolitik for dimension på lagerstedsniveau
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
-                    - name: Fejlfinde reservationer i lokationsstyring
+                    - name: Fejlfinde reservationer i lagerstedsstyring
                       href: warehousing/troubleshoot-warehouse-reservations.md
                 - name: Delvis frigivelse og delvis forsendelse
                   items:
@@ -2875,7 +2931,7 @@
                   items:
                     - name: Arbejdspolitikker
                       href: warehousing/warehouse-work-policies.md
-                    - name: Flytning af lager med tilknyttet arbejde i Lokationsstyring
+                    - name: Flytning af lager med tilknyttet arbejde i lagerstedsstyring
                       href: warehousing/move-inventory-associated-work.md
                     - name: Oprette en arbejdsklasse
                       href: warehousing/tasks/create-work-class.md
@@ -2905,7 +2961,7 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Definere delvis cyklusoptællingsproces for lokation
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                    - name: Oprydningsjob for disponible poster for lokationsstyring
+                    - name: Oprydningsjob for disponible poster for lagerstedsstyring
                       href: warehousing/onhand-cleanup.md
                     - name: Lagerkladder
                       href: inventory/inventory-journals.md
@@ -2923,15 +2979,17 @@
                       href: warehousing/location-license-plate-positioning.md
                     - name: Skift arbejdspulje på arbejde
                       href: warehousing/change-work-pool-on-work.md
-                    - name: Varekonsolidering – udnyttelse af lokation
+                    - name: Varekonsolidering – udnyttelse af adresse
                       href: warehousing/item-consolidation-location-utilization.md
-                    - name: Fejlfinde lagerstedsarbejde
-                      href: warehousing/troubleshoot-warehouse-work.md
                     - name: Arbejdsopdeling
                       href: warehousing/work-split.md
-            - name: Opsætning af lagersted
+                    - name: Grænseflade for materialehåndteringsudstyr (MHAX)
+                      href: warehousing/mhax.md
+                    - name: Fejlfinde lagerstedsarbejde
+                      href: warehousing/troubleshoot-warehouse-work.md
+            - name: Konfigurere lagersted
               items:
-                - name: Konfiguration af lagersted
+                - name: Konfigurere lagersted
                   items:
                     - name: Oversigt over konfiguration af lagersted
                       href: warehousing/warehouse-configuration.md
@@ -2987,6 +3045,8 @@
                   items:
                     - name: Installere og tilslutte mobilapp til lagerstedsadministration
                       href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Indstillinger for mobilenhedsbruger
+                      href: warehousing/mobile-device-user-settings.md
                     - name: Installere og tilslutte lagerstedsapp
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Scanne stregkoder med et kamera i lagerstedsappen
@@ -3019,9 +3079,9 @@
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Opgradering og overflytning
                   items:
-                    - name: Opgradere lokationsstyringsprocesser fra Microsoft Dynamics AX 2012 til Finance and Operations
+                    - name: Opgradere lagerstedsstyringsprocesser fra Microsoft Dynamics AX 2012 til Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
-                    - name: Fejlfinde opgradering og migrering til avanceret lokationsstyring
+                    - name: Fejlfinde opgradering og migrering til avanceret lagerstedsstyring
                       href: warehousing/troubleshoot-warehouse-upgrade-migration.md
                 - name: Fejlfinde konfiguration af lagersted
                   href: warehousing/troubleshoot-warehouse-setup.md

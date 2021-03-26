@@ -2,7 +2,7 @@
   items:
     - name: Udvikling og administration af Finance and Operations-apps
       items:
-        - name: Dokumentation til Finance and Operations-applikation
+        - name: Dokumentation til Finance and Operations-ansøgning
           href: ../fin-ops/index.md
         - name: Udvikling og administration af Finance and Operations-apps
           href: index.md
@@ -14,6 +14,8 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til 10.0.18 (maj 2021)
+                  href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Platformopdateringer til 10.0.17 (april 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platformsopdateringer til 10.0.16 (februar 2021)
@@ -22,6 +24,8 @@
                   href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Fjernede eller udfasede funktioner
               items:
+                - name: Fjernede eller udfasede funktioner på startsiden
+                  href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Fjernede eller udfasede platformfunktioner
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: Fjernede eller udfasede funktioner i tidligere versioner
@@ -34,10 +38,12 @@
           items:
             - name: Oversigt over forretningshændelser
               href: business-events/home-page.md
-            - name: Forretningshændelser i program
+            - name: Forretningshændelser i ansøgning
               href: business-events/app-business-events.md
             - name: Forretningshændelser i arbejdsgang
               href: business-events/business-events-workflow.md
+            - name: Forretningshændelsesbatch
+              href: business-events/system-business-events.md
             - name: Påmindelser som forretningshændelser
               href: business-events/alerts-business-events.md
             - name: Forretningshændelser i Microsoft Flow
@@ -214,12 +220,16 @@
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
                             - name: Bruge Dynamics 365 Commerce-prissætningsprogrammet med Dynamics 365 Sales
                               href: data-entities/dual-write/commerce-pricing.md
-                            - name: Interne aktiver til vedligeholdelse
+                            - name: Interne aktiver til service
                               href: data-entities/dual-write/in-house-assets.md
-                            - name: 'Integreret arbejder, job og position'
-                              href: data-entities/dual-write/integrated-hr.md
                             - name: Lagertilgængelighed
                               href: data-entities/dual-write/inventory-availability.md
+                            - name: 'Integreret arbejder, job og position'
+                              href: data-entities/dual-write/integrated-hr.md
+                            - name: Bemærk integration
+                              href: data-entities/dual-write/notes-integration.md
+                            - name: Tilknytningsreference
+                              href: data-entities/dual-write/mapping-reference.md
                         - name: Understøttelse af dobbeltskrivning
                           items:
                             - name: Understøttelse af Field Service-løsninger og Project Service Automation-løsninger
@@ -642,13 +652,15 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Oprette en LCS-forbindelse (Lifecycle Services) i Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: 'Opdatere Azure Pipeline, der er tilknyttet nye NuGet-pakker'
+                  href: dev-tools/pipeline-nuget-split.md
                 - name: Opdatere en ældre pipeline i Azure Pipelines
                   href: dev-tools/pipeline-msbuild-update.md
-            - name: Eksempelprogram til flådeadministration
+            - name: Eksempelansøgning til flådeadministration
               items:
-                - name: Komplet scenarie for eksempelprogram til flådeadministration
+                - name: Komplet scenarie for eksempelansøgning til flådeadministration
                   href: dev-tools/fleet-management-sample.md
-                - name: Eksempelprogram til flådeadministration
+                - name: Eksempelansøgning til flådeadministration
                   href: dev-tools/introduction-fleet-management-sample.md
             - name: Visual Studio-værktøjer
               items:
@@ -1100,8 +1112,6 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Overvågning og diagnose
               href: lifecycle-services/monitoring-diagnostics.md
-            - name: Rapport over effektanalyse
-              href: lifecycle-services/impact-analysis-report.md
             - name: Genstarte miljøtjenester
               href: lifecycle-services/restart-environment-services.md
             - name: Rapportere en produktionsafbrydelse
@@ -1448,6 +1458,8 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Eksportere B2B-brugere til Azure AD
               href: sysadmin/implement-b2b.md
+            - name: Datavedligeholdelse
+              href: sysadmin/DataMaintenancePortal.md
             - name: Sikkerhed
               items:
                 - name: Rollebaseret sikkerhed
