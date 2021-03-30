@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: b17e986c2e30134c334cd547a85a1dd682172a0e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 26658ebdbc70613baf30c344664133b9cf5911ca
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979797"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243763"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduler til vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives de vurderinger og vurderingsmoduler, der bruges på siderne med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
+I dette emne beskrives de vurderinger og vurderingsmoduler, der bruges på siderne med produktdetaljer i Microsoft Dynamics 365 Commerce.
 
 Vurderinger og anmeldelser på e-Commerce-websteder gør det lettere for kunder at få oplysninger om produkter, før de træffer en beslutning om køb, og er også en mekanisme til at indsamle kundefeedback om produkter. 
 

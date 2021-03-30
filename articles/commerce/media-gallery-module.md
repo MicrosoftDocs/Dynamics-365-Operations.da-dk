@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 045568797722a621ea4e6c82d10dbb266b9e8162
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9b5a8123c64dce2ba65758f0312a899646cf948
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982460"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252552"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler mediegallerimoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Mediegallerimoduler vises et eller flere billeder i en gallerivisning. Mediegallerimoduler understøtter miniaturebilleder, som kan arrangeres enten vandret (som en række under billedet) eller lodret (som en kolonne ved siden af billedet). Mediegallerimoduler indeholder også egenskaber, der gør det muligt at zoome billeder (forstørrer) eller få dem vist i fuld skærmtilstand. Hvis det skal gengives i et mediegallerimodul, skal der være et billede i mediebiblioteket til Commerce-webstedsgeneratoren. I øjeblikket understøtter mediegallerimoduler kun billeder.
 
