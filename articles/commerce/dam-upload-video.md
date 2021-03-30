@@ -1,6 +1,6 @@
 ---
 title: Uploade videoer
-description: Dette emne indeholder en beskrivelse af, hvordan du uploader videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+description: I dette emne beskrives, hvordan du overfører videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
 manager: annbe
 ms.date: 03/03/2020
@@ -17,58 +17,61 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8cabcd3528308919697a9f2ecb2a81ad5acbe31
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d74e7116d68074bfc917784a8f51f85d5682c5d6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000919"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213836"
 ---
-# <a name="upload-videos"></a><span data-ttu-id="9e67a-103">Uploade videoer</span><span class="sxs-lookup"><span data-stu-id="9e67a-103">Upload videos</span></span>
+# <a name="upload-videos"></a><span data-ttu-id="32ee4-103">Uploade videoer</span><span class="sxs-lookup"><span data-stu-id="32ee4-103">Upload videos</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="9e67a-104">Dette emne indeholder en beskrivelse af, hvordan du uploader videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.</span><span class="sxs-lookup"><span data-stu-id="9e67a-104">This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.</span></span>
+<span data-ttu-id="32ee4-104">I dette emne beskrives, hvordan du overfører videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.</span><span class="sxs-lookup"><span data-stu-id="32ee4-104">This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="9e67a-105">Overblik</span><span class="sxs-lookup"><span data-stu-id="9e67a-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="32ee4-105">Overblik</span><span class="sxs-lookup"><span data-stu-id="32ee4-105">Overview</span></span>
 
-<span data-ttu-id="9e67a-106">Mediebiblioteket i Commerce-webstedsgenerator giver dig mulighed for at uploade videoer.</span><span class="sxs-lookup"><span data-stu-id="9e67a-106">The Commerce site builder Media Library allows you to upload videos.</span></span> <span data-ttu-id="9e67a-107">Du bør altid uploade versionen af videoen med den højeste bithastighed og opløsning, da videoen automatisk vil blive konverteret til at være passende for forskellige billeder og deres pausepunkter.</span><span class="sxs-lookup"><span data-stu-id="9e67a-107">You should always upload the version of a video with the highest bitrate and resolution, because the video will be automatically converted to be suitable for different viewports and their breakpoints.</span></span>
+<span data-ttu-id="32ee4-106">Mediebiblioteket i Commerce-webstedsgenerator giver dig mulighed for at uploade videoer.</span><span class="sxs-lookup"><span data-stu-id="32ee4-106">The Commerce site builder Media Library allows you to upload videos.</span></span> <span data-ttu-id="32ee4-107">Du bør altid uploade versionen af videoen med den højeste bithastighed og opløsning, da videoen automatisk vil blive konverteret til at være passende for forskellige billeder og deres pausepunkter.</span><span class="sxs-lookup"><span data-stu-id="32ee4-107">You should always upload the version of a video with the highest bitrate and resolution, because the video will be automatically converted to be suitable for different viewports and their breakpoints.</span></span>
 
-### <a name="video-information-specified-during-upload"></a><span data-ttu-id="9e67a-108">Videooplysninger, der er angivet under upload</span><span class="sxs-lookup"><span data-stu-id="9e67a-108">Video information specified during upload</span></span>
+### <a name="video-information-specified-during-upload"></a><span data-ttu-id="32ee4-108">Videooplysninger, der er angivet under upload</span><span class="sxs-lookup"><span data-stu-id="32ee4-108">Video information specified during upload</span></span>
 
-<span data-ttu-id="9e67a-109">Når du uploader en video, kan du angive følgende oplysninger.</span><span class="sxs-lookup"><span data-stu-id="9e67a-109">When uploading a video, the following information can be specified.</span></span>
+<span data-ttu-id="32ee4-109">Når du uploader en video, kan du angive følgende oplysninger.</span><span class="sxs-lookup"><span data-stu-id="32ee4-109">When uploading a video, the following information can be specified.</span></span>
 
-- <span data-ttu-id="9e67a-110">**Titel, Beskrivelse, Nøgleord**: Videoens metadata.</span><span class="sxs-lookup"><span data-stu-id="9e67a-110">**Title, Description, Keywords**: Metadata of the video.</span></span>
-- <span data-ttu-id="9e67a-111">**Generer undertekster automatisk**: Angiver, om der automatisk skal genereres undertekster til videoen.</span><span class="sxs-lookup"><span data-stu-id="9e67a-111">**Automatically generate closed captions**: Specifies whether closed captions should be automatically generated for the video.</span></span>
-- <span data-ttu-id="9e67a-112">**Undertekster**: Angiver, om undertekster skal bruges.</span><span class="sxs-lookup"><span data-stu-id="9e67a-112">**Closed Caption**: Specifies the closed captions to be used.</span></span>
-- <span data-ttu-id="9e67a-113">**Almindeligt lydsignal**: Angiver det almindelige lydspor, der skal bruges.</span><span class="sxs-lookup"><span data-stu-id="9e67a-113">**Regular Audio**: Specifies the regular audio track to be used.</span></span>
-- <span data-ttu-id="9e67a-114">**Miniaturebillede**: Angiver miniaturebilledet for videoen.</span><span class="sxs-lookup"><span data-stu-id="9e67a-114">**Thumbnail**: Specifies the thumbnail for the video.</span></span> <span data-ttu-id="9e67a-115">Hvis miniaturebilledet ikke angives, genereres det automatisk.</span><span class="sxs-lookup"><span data-stu-id="9e67a-115">If not specified, it will be generated automatically.</span></span>
-- <span data-ttu-id="9e67a-116">**Beskrivende lyd**: Angiver det beskrivende lydspor, der skal bruges.</span><span class="sxs-lookup"><span data-stu-id="9e67a-116">**Descriptive Audio**: Specifies the descriptive audio track to be used.</span></span>
+- <span data-ttu-id="32ee4-110">**Titel, Beskrivelse, Nøgleord**: Videoens metadata.</span><span class="sxs-lookup"><span data-stu-id="32ee4-110">**Title, Description, Keywords**: Metadata of the video.</span></span>
+- <span data-ttu-id="32ee4-111">**Generer undertekster automatisk**: Angiver, om der automatisk skal genereres undertekster til videoen.</span><span class="sxs-lookup"><span data-stu-id="32ee4-111">**Automatically generate closed captions**: Specifies whether closed captions should be automatically generated for the video.</span></span>
+- <span data-ttu-id="32ee4-112">**Undertekster**: Angiver, om undertekster skal bruges.</span><span class="sxs-lookup"><span data-stu-id="32ee4-112">**Closed Caption**: Specifies the closed captions to be used.</span></span>
+- <span data-ttu-id="32ee4-113">**Almindeligt lydsignal**: Angiver det almindelige lydspor, der skal bruges.</span><span class="sxs-lookup"><span data-stu-id="32ee4-113">**Regular Audio**: Specifies the regular audio track to be used.</span></span>
+- <span data-ttu-id="32ee4-114">**Miniaturebillede**: Angiver miniaturebilledet for videoen.</span><span class="sxs-lookup"><span data-stu-id="32ee4-114">**Thumbnail**: Specifies the thumbnail for the video.</span></span> <span data-ttu-id="32ee4-115">Hvis miniaturebilledet ikke angives, genereres det automatisk.</span><span class="sxs-lookup"><span data-stu-id="32ee4-115">If not specified, it will be generated automatically.</span></span>
+- <span data-ttu-id="32ee4-116">**Beskrivende lyd**: Angiver det beskrivende lydspor, der skal bruges.</span><span class="sxs-lookup"><span data-stu-id="32ee4-116">**Descriptive Audio**: Specifies the descriptive audio track to be used.</span></span>
 
-## <a name="upload-a-video"></a><span data-ttu-id="9e67a-117">Uploade en video</span><span class="sxs-lookup"><span data-stu-id="9e67a-117">Upload a video</span></span>
+## <a name="upload-a-video"></a><span data-ttu-id="32ee4-117">Uploade en video</span><span class="sxs-lookup"><span data-stu-id="32ee4-117">Upload a video</span></span>
 
-<span data-ttu-id="9e67a-118">Følg disse trin for at uploade en video i webstedsgenerator.</span><span class="sxs-lookup"><span data-stu-id="9e67a-118">To upload a video in site builder, follow these steps.</span></span>
+<span data-ttu-id="32ee4-118">Følg disse trin for at uploade en video i webstedsgenerator.</span><span class="sxs-lookup"><span data-stu-id="32ee4-118">To upload a video in site builder, follow these steps.</span></span>
 
-1. <span data-ttu-id="9e67a-119">Vælg **Mediebibliotek** i navigationsruden til venstre.</span><span class="sxs-lookup"><span data-stu-id="9e67a-119">In the left navigation pane, select **Media Library**.</span></span>
-1. <span data-ttu-id="9e67a-120">Vælg **Upload \> Upload medieelementer** på kommandolinjen.</span><span class="sxs-lookup"><span data-stu-id="9e67a-120">On the command bar, select **Upload \> Upload Media Items**.</span></span>
-1. <span data-ttu-id="9e67a-121">Naviger til og vælg en eller flere videofiler, der skal uploades, i Stifinder, og vælg derefter **Åbn**.</span><span class="sxs-lookup"><span data-stu-id="9e67a-121">In the File Explorer window, navigate to and select one or more video files to upload, and then select **Open**.</span></span>
-1. <span data-ttu-id="9e67a-122">Angiv den påkrævede titel og alternative tekst i dialogboksen **Overfør medieelement**.</span><span class="sxs-lookup"><span data-stu-id="9e67a-122">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
-1. <span data-ttu-id="9e67a-123">Angiv en valgfri beskrivelse og nøgleord, og vælg evt. en evt. kategori.</span><span class="sxs-lookup"><span data-stu-id="9e67a-123">Enter optional description and keywords and select a category if desired.</span></span> 
-1. <span data-ttu-id="9e67a-124">Hvis du vil udgive en eller flere billeder umiddelbart efter upload, skal du markere afkrydsningsfeltet **Publicer medieelementer efter upload**</span><span class="sxs-lookup"><span data-stu-id="9e67a-124">If you want to publish the image(s) after immediately upload, select the **Publish media items after upload** check box</span></span>
-1. <span data-ttu-id="9e67a-125">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="9e67a-125">Select **OK**.</span></span>
+1. <span data-ttu-id="32ee4-119">Vælg **Mediebibliotek** i navigationsruden til venstre.</span><span class="sxs-lookup"><span data-stu-id="32ee4-119">In the left navigation pane, select **Media Library**.</span></span>
+1. <span data-ttu-id="32ee4-120">Vælg **Upload \> Upload medieelementer** på kommandolinjen.</span><span class="sxs-lookup"><span data-stu-id="32ee4-120">On the command bar, select **Upload \> Upload Media Items**.</span></span>
+1. <span data-ttu-id="32ee4-121">Naviger til og vælg en eller flere videofiler, der skal uploades, i Stifinder, og vælg derefter **Åbn**.</span><span class="sxs-lookup"><span data-stu-id="32ee4-121">In the File Explorer window, navigate to and select one or more video files to upload, and then select **Open**.</span></span>
+1. <span data-ttu-id="32ee4-122">Angiv den påkrævede titel og alternative tekst i dialogboksen **Overfør medieelement**.</span><span class="sxs-lookup"><span data-stu-id="32ee4-122">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
+1. <span data-ttu-id="32ee4-123">Angiv en valgfri beskrivelse og nøgleord, og vælg evt. en evt. kategori.</span><span class="sxs-lookup"><span data-stu-id="32ee4-123">Enter optional description and keywords and select a category if desired.</span></span> 
+1. <span data-ttu-id="32ee4-124">Hvis du vil udgive en eller flere billeder umiddelbart efter upload, skal du markere afkrydsningsfeltet **Publicer medieelementer efter upload**</span><span class="sxs-lookup"><span data-stu-id="32ee4-124">If you want to publish the image(s) after immediately upload, select the **Publish media items after upload** check box</span></span>
+1. <span data-ttu-id="32ee4-125">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="32ee4-125">Select **OK**.</span></span>
 
-<span data-ttu-id="9e67a-126">Hvis du uploader flere typer aktiver på én gang (f.eks. billeder og videoer), kan du kun angive nøgleord i dialogboksen **Upload medieelement**, uanset om filerne skal udgives umiddelbart efter upload, og om der automatisk skal genereres undertekster til videofiler.</span><span class="sxs-lookup"><span data-stu-id="9e67a-126">If you are uploading multiple types of assets simultaneously (for example, images and videos), in the **Upload Media Item** dialog box you will only be able to specify keywords, whether the files should be published immediately after upload, and whether closed captions should be automatically generated for video files.</span></span> <span data-ttu-id="9e67a-127">Alle aktiverne vil dele de samme nøgleord.</span><span class="sxs-lookup"><span data-stu-id="9e67a-127">All the assets will share the same keywords.</span></span>
+<span data-ttu-id="32ee4-126">Hvis du uploader flere typer aktiver på én gang (f.eks. billeder og videoer), kan du kun angive nøgleord i dialogboksen **Upload medieelement**, uanset om filerne skal udgives umiddelbart efter upload, og om der automatisk skal genereres undertekster til videofiler.</span><span class="sxs-lookup"><span data-stu-id="32ee4-126">If you are uploading multiple types of assets simultaneously (for example, images and videos), in the **Upload Media Item** dialog box you will only be able to specify keywords, whether the files should be published immediately after upload, and whether closed captions should be automatically generated for video files.</span></span> <span data-ttu-id="32ee4-127">Alle aktiverne vil dele de samme nøgleord.</span><span class="sxs-lookup"><span data-stu-id="32ee4-127">All the assets will share the same keywords.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="9e67a-128">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="9e67a-128">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="32ee4-128">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="32ee4-128">Additional resources</span></span>
 
-[<span data-ttu-id="9e67a-129">Oversigt over digital aktivstyring</span><span class="sxs-lookup"><span data-stu-id="9e67a-129">Digital asset management overview</span></span>](dam-overview.md)
+[<span data-ttu-id="32ee4-129">Oversigt over digital aktivstyring</span><span class="sxs-lookup"><span data-stu-id="32ee4-129">Digital asset management overview</span></span>](dam-overview.md)
 
-[<span data-ttu-id="9e67a-130">Overføre billeder</span><span class="sxs-lookup"><span data-stu-id="9e67a-130">Upload images</span></span>](dam-upload-images.md)
+[<span data-ttu-id="32ee4-130">Overføre billeder</span><span class="sxs-lookup"><span data-stu-id="32ee4-130">Upload images</span></span>](dam-upload-images.md)
 
-[<span data-ttu-id="9e67a-131">Uploade filer</span><span class="sxs-lookup"><span data-stu-id="9e67a-131">Upload files</span></span>](dam-upload-files.md)
+[<span data-ttu-id="32ee4-131">Uploade filer</span><span class="sxs-lookup"><span data-stu-id="32ee4-131">Upload files</span></span>](dam-upload-files.md)
 
-[<span data-ttu-id="9e67a-132">Beskære billeder</span><span class="sxs-lookup"><span data-stu-id="9e67a-132">Crop images</span></span>](dam-crop-images.md)
+[<span data-ttu-id="32ee4-132">Beskære billeder</span><span class="sxs-lookup"><span data-stu-id="32ee4-132">Crop images</span></span>](dam-crop-images.md)
 
-[<span data-ttu-id="9e67a-133">Tilpasse billedets fokuspunkter</span><span class="sxs-lookup"><span data-stu-id="9e67a-133">Customize image focal points</span></span>](dam-custom-focal-point.md)
+[<span data-ttu-id="32ee4-133">Tilpasse billedets fokuspunkter</span><span class="sxs-lookup"><span data-stu-id="32ee4-133">Customize image focal points</span></span>](dam-custom-focal-point.md)
 
-[<span data-ttu-id="9e67a-134">Overføre og håndtere statiske filer</span><span class="sxs-lookup"><span data-stu-id="9e67a-134">Upload and serve static files</span></span>](upload-serve-static-files.md)
+[<span data-ttu-id="32ee4-134">Overføre og håndtere statiske filer</span><span class="sxs-lookup"><span data-stu-id="32ee4-134">Upload and serve static files</span></span>](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

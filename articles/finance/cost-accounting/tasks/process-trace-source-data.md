@@ -14,33 +14,36 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4363a51549503327e7decccf38c82db6e75acd88
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 12137c0d82109a8b757df6f6990922994d49c71a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990636"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208649"
 ---
-# <a name="process-and-trace-source-data"></a><span data-ttu-id="0d967-103">Behandle og spore kildedata</span><span class="sxs-lookup"><span data-stu-id="0d967-103">Process and trace source data</span></span>
+# <a name="process-and-trace-source-data"></a><span data-ttu-id="82a52-103">Behandle og spore kildedata</span><span class="sxs-lookup"><span data-stu-id="82a52-103">Process and trace source data</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0d967-104">Al databehandling køres af job.</span><span class="sxs-lookup"><span data-stu-id="0d967-104">All data processing is run by jobs.</span></span> <span data-ttu-id="0d967-105">Der oprettes en kladde for hvert job og dataprovider for at dokumentere, at processen blev kørt, og at posterne blev behandlet i det aktuelle job.</span><span class="sxs-lookup"><span data-stu-id="0d967-105">For each job and data provider, a journal is created to document that the process has been run, and that the entries were processed in the current job.</span></span> <span data-ttu-id="0d967-106">Du kan bruge denne procedure til at konfigurere en datakilde og derefter spore oprindelsen til en bestemt omkostningspost.</span><span class="sxs-lookup"><span data-stu-id="0d967-106">Use this procedure to set up a data source and then  trace the origin of a specific cost entry.</span></span> <span data-ttu-id="0d967-107">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="0d967-107">This recording uses the USP2 demo data company USP2.</span></span> <span data-ttu-id="0d967-108">Før du udfører denne opgave, skal du sørge for at afspille følgende opgaveguider: "Oprette en finanspost for omkostningsregnskab", "Definere kontrolenheder for omkostninger" og "Administrere datakilde til finansposten for omkostningsregnskabet".</span><span class="sxs-lookup"><span data-stu-id="0d967-108">Before you complete this task, make sure that you play the following task guides: "Create a cost accounting ledger," "Define cost control units," and "Manage data source for the cost accounting ledger."</span></span>
+<span data-ttu-id="82a52-104">Al databehandling køres af job.</span><span class="sxs-lookup"><span data-stu-id="82a52-104">All data processing is run by jobs.</span></span> <span data-ttu-id="82a52-105">Der oprettes en kladde for hvert job og dataprovider for at dokumentere, at processen blev kørt, og at posterne blev behandlet i det aktuelle job.</span><span class="sxs-lookup"><span data-stu-id="82a52-105">For each job and data provider, a journal is created to document that the process has been run, and that the entries were processed in the current job.</span></span> <span data-ttu-id="82a52-106">Du kan bruge denne procedure til at konfigurere en datakilde og derefter spore oprindelsen til en bestemt omkostningspost.</span><span class="sxs-lookup"><span data-stu-id="82a52-106">Use this procedure to set up a data source and then  trace the origin of a specific cost entry.</span></span> <span data-ttu-id="82a52-107">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="82a52-107">This recording uses the USP2 demo data company USP2.</span></span> <span data-ttu-id="82a52-108">Før du udfører denne opgave, skal du sørge for at afspille følgende opgaveguider: "Oprette en finanspost for omkostningsregnskab", "Definere kontrolenheder for omkostninger" og "Administrere datakilde til finansposten for omkostningsregnskabet".</span><span class="sxs-lookup"><span data-stu-id="82a52-108">Before you complete this task, make sure that you play the following task guides: "Create a cost accounting ledger," "Define cost control units," and "Manage data source for the cost accounting ledger."</span></span>
 
-1. <span data-ttu-id="0d967-109">Gå til Omkostningsregnskab > Opsætning Finans > Finansposter for omkostningsregnskab.</span><span class="sxs-lookup"><span data-stu-id="0d967-109">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="0d967-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="0d967-110">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="0d967-111">Vælg den finanspost i omkostningsregnskabet, du oprettede tidligere.</span><span class="sxs-lookup"><span data-stu-id="0d967-111">Select the cost accounting ledger that you created earlier.</span></span>  
-3. <span data-ttu-id="0d967-112">Klik på Faktiske versioner.</span><span class="sxs-lookup"><span data-stu-id="0d967-112">Click Actual versions.</span></span>
-4. <span data-ttu-id="0d967-113">Klik på Behandling af kildedata i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="0d967-113">On the Action Pane, click Source data processing.</span></span>
-5. <span data-ttu-id="0d967-114">Klik på Overførselskladder for finansposteringer.</span><span class="sxs-lookup"><span data-stu-id="0d967-114">Click General ledger entry transfer journals.</span></span>
-6. <span data-ttu-id="0d967-115">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="0d967-115">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="0d967-116">Klik på Kladdeposteringer.</span><span class="sxs-lookup"><span data-stu-id="0d967-116">Click Journal entries.</span></span>
-8. <span data-ttu-id="0d967-117">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0d967-117">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="0d967-118">Klik på Omkostningsposter.</span><span class="sxs-lookup"><span data-stu-id="0d967-118">Click Cost entries.</span></span>
-10. <span data-ttu-id="0d967-119">Klik på Kildepost.</span><span class="sxs-lookup"><span data-stu-id="0d967-119">Click Source entry.</span></span>
-11. <span data-ttu-id="0d967-120">Klik på Behandling af kildedata i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="0d967-120">On the Action Pane, click Source data processing.</span></span>
-12. <span data-ttu-id="0d967-121">Klik på Finans.</span><span class="sxs-lookup"><span data-stu-id="0d967-121">Click General ledger.</span></span>
-13. <span data-ttu-id="0d967-122">Indtast eller vælg en værdi i feltet Regnskabskalenderperiode.</span><span class="sxs-lookup"><span data-stu-id="0d967-122">In the Fiscal calendar period field, enter or select a value.</span></span>
-    * <span data-ttu-id="0d967-123">Vælg regnskabsårets 2017 periode 9 i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="0d967-123">For this example, select Fiscal 2017 Period 9.</span></span>  
-14. <span data-ttu-id="0d967-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="0d967-124">Click OK.</span></span>
+1. <span data-ttu-id="82a52-109">Gå til Omkostningsregnskab > Opsætning Finans > Finansposter for omkostningsregnskab.</span><span class="sxs-lookup"><span data-stu-id="82a52-109">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="82a52-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="82a52-110">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="82a52-111">Vælg den finanspost i omkostningsregnskabet, du oprettede tidligere.</span><span class="sxs-lookup"><span data-stu-id="82a52-111">Select the cost accounting ledger that you created earlier.</span></span>  
+3. <span data-ttu-id="82a52-112">Klik på Faktiske versioner.</span><span class="sxs-lookup"><span data-stu-id="82a52-112">Click Actual versions.</span></span>
+4. <span data-ttu-id="82a52-113">Klik på Behandling af kildedata i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="82a52-113">On the Action Pane, click Source data processing.</span></span>
+5. <span data-ttu-id="82a52-114">Klik på Overførselskladder for finansposteringer.</span><span class="sxs-lookup"><span data-stu-id="82a52-114">Click General ledger entry transfer journals.</span></span>
+6. <span data-ttu-id="82a52-115">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="82a52-115">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="82a52-116">Klik på Kladdeposteringer.</span><span class="sxs-lookup"><span data-stu-id="82a52-116">Click Journal entries.</span></span>
+8. <span data-ttu-id="82a52-117">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="82a52-117">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="82a52-118">Klik på Omkostningsposter.</span><span class="sxs-lookup"><span data-stu-id="82a52-118">Click Cost entries.</span></span>
+10. <span data-ttu-id="82a52-119">Klik på Kildepost.</span><span class="sxs-lookup"><span data-stu-id="82a52-119">Click Source entry.</span></span>
+11. <span data-ttu-id="82a52-120">Klik på Behandling af kildedata i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="82a52-120">On the Action Pane, click Source data processing.</span></span>
+12. <span data-ttu-id="82a52-121">Klik på Finans.</span><span class="sxs-lookup"><span data-stu-id="82a52-121">Click General ledger.</span></span>
+13. <span data-ttu-id="82a52-122">Indtast eller vælg en værdi i feltet Regnskabskalenderperiode.</span><span class="sxs-lookup"><span data-stu-id="82a52-122">In the Fiscal calendar period field, enter or select a value.</span></span>
+    * <span data-ttu-id="82a52-123">Vælg regnskabsårets 2017 periode 9 i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="82a52-123">For this example, select Fiscal 2017 Period 9.</span></span>  
+14. <span data-ttu-id="82a52-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="82a52-124">Click OK.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

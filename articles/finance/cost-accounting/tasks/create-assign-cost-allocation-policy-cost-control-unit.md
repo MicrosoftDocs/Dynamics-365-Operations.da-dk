@@ -15,54 +15,57 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 006310d07dfa5b75941ca248736800bbb9e8e7b7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b22dba0106721c095e6ce2e9b76cb9f5267e1c28
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969322"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208721"
 ---
-# <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a><span data-ttu-id="6876a-103">Oprette og tildele omkostningstildelingspolitik til en omkostningskontrolenhed</span><span class="sxs-lookup"><span data-stu-id="6876a-103">Create and assign a cost allocation policy to a cost control unit</span></span>
+# <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a><span data-ttu-id="e17e7-103">Oprette og tildele omkostningstildelingspolitik til en omkostningskontrolenhed</span><span class="sxs-lookup"><span data-stu-id="e17e7-103">Create and assign a cost allocation policy to a cost control unit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6876a-104">Du kan bruge denne procedure til at oprette og tildele en politik for omkostningsfordeling og de tilsvarende regler til en omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="6876a-104">Use this procedure to create and assign a cost allocation policy and the corresponding rules to a cost control unit.</span></span> <span data-ttu-id="6876a-105">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="6876a-105">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="e17e7-104">Du kan bruge denne procedure til at oprette og tildele en politik for omkostningsfordeling og de tilsvarende regler til en omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="e17e7-104">Use this procedure to create and assign a cost allocation policy and the corresponding rules to a cost control unit.</span></span> <span data-ttu-id="e17e7-105">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="e17e7-105">This recording uses the USP2 demo data company.</span></span>
 
 
-## <a name="create-a-policy"></a><span data-ttu-id="6876a-106">Oprette en politik</span><span class="sxs-lookup"><span data-stu-id="6876a-106">Create a policy</span></span>
-1. <span data-ttu-id="6876a-107">Gå til Omkostningsregnskab > Politikker > Politikker for omkostningstildeling.</span><span class="sxs-lookup"><span data-stu-id="6876a-107">Go to Cost accounting > Policies > Cost allocation policies.</span></span>
-2. <span data-ttu-id="6876a-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6876a-108">Click New.</span></span>
-3. <span data-ttu-id="6876a-109">Angiv en værdi i feltet Navn på politik.</span><span class="sxs-lookup"><span data-stu-id="6876a-109">In the Policy name field, type a value.</span></span>
-4. <span data-ttu-id="6876a-110">Indtast eller vælg en værdi i feltet Dimensionshierarki for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="6876a-110">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
-    * <span data-ttu-id="6876a-111">Vælg organisation.</span><span class="sxs-lookup"><span data-stu-id="6876a-111">Select Organization.</span></span>  
-5. <span data-ttu-id="6876a-112">Indtast eller vælg en værdi i feltet Statistisk dimension.</span><span class="sxs-lookup"><span data-stu-id="6876a-112">In the Statistical dimension field, enter or select a value.</span></span>
-6. <span data-ttu-id="6876a-113">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6876a-113">Click Save.</span></span>
+## <a name="create-a-policy"></a><span data-ttu-id="e17e7-106">Oprette en politik</span><span class="sxs-lookup"><span data-stu-id="e17e7-106">Create a policy</span></span>
+1. <span data-ttu-id="e17e7-107">Gå til Omkostningsregnskab > Politikker > Politikker for omkostningstildeling.</span><span class="sxs-lookup"><span data-stu-id="e17e7-107">Go to Cost accounting > Policies > Cost allocation policies.</span></span>
+2. <span data-ttu-id="e17e7-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e17e7-108">Click New.</span></span>
+3. <span data-ttu-id="e17e7-109">Angiv en værdi i feltet Navn på politik.</span><span class="sxs-lookup"><span data-stu-id="e17e7-109">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="e17e7-110">Indtast eller vælg en værdi i feltet Dimensionshierarki for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="e17e7-110">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="e17e7-111">Vælg organisation.</span><span class="sxs-lookup"><span data-stu-id="e17e7-111">Select Organization.</span></span>  
+5. <span data-ttu-id="e17e7-112">Indtast eller vælg en værdi i feltet Statistisk dimension.</span><span class="sxs-lookup"><span data-stu-id="e17e7-112">In the Statistical dimension field, enter or select a value.</span></span>
+6. <span data-ttu-id="e17e7-113">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e17e7-113">Click Save.</span></span>
 
-## <a name="create-allocation-rules"></a><span data-ttu-id="6876a-114">Oprette fordelingsregler</span><span class="sxs-lookup"><span data-stu-id="6876a-114">Create allocation rules</span></span>
-1. <span data-ttu-id="6876a-115">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6876a-115">Click New.</span></span>
-2. <span data-ttu-id="6876a-116">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6876a-116">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="6876a-117">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="6876a-117">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-4. <span data-ttu-id="6876a-118">Vælg 'Total' i feltet Funktionalitet af omkostning.</span><span class="sxs-lookup"><span data-stu-id="6876a-118">In the Cost behavior field, select 'Total'.</span></span>
-5. <span data-ttu-id="6876a-119">Indtast eller vælg en værdi i feltet Fordelingsbasis.</span><span class="sxs-lookup"><span data-stu-id="6876a-119">In the Allocation base field, enter or select a value.</span></span>
-6. <span data-ttu-id="6876a-120">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6876a-120">Click New.</span></span>
-7. <span data-ttu-id="6876a-121">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6876a-121">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="6876a-122">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="6876a-122">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-9. <span data-ttu-id="6876a-123">Vælg 'Total' i feltet Funktionalitet af omkostning.</span><span class="sxs-lookup"><span data-stu-id="6876a-123">In the Cost behavior field, select 'Total'.</span></span>
-10. <span data-ttu-id="6876a-124">Indtast eller vælg en værdi i feltet Fordelingsbasis.</span><span class="sxs-lookup"><span data-stu-id="6876a-124">In the Allocation base field, enter or select a value.</span></span>
-11. <span data-ttu-id="6876a-125">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6876a-125">Click New.</span></span>
-12. <span data-ttu-id="6876a-126">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6876a-126">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="6876a-127">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="6876a-127">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-14. <span data-ttu-id="6876a-128">Vælg 'Total' i feltet Funktionalitet af omkostning.</span><span class="sxs-lookup"><span data-stu-id="6876a-128">In the Cost behavior field, select 'Total'.</span></span>
-15. <span data-ttu-id="6876a-129">Indtast eller vælg en værdi i feltet Fordelingsbasis.</span><span class="sxs-lookup"><span data-stu-id="6876a-129">In the Allocation base field, enter or select a value.</span></span>
-    * <span data-ttu-id="6876a-130">Fortsæt, indtil du har oprettet alle regler.</span><span class="sxs-lookup"><span data-stu-id="6876a-130">Continue until you've created all the rules.</span></span>  
-16. <span data-ttu-id="6876a-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6876a-131">Click Save.</span></span>
+## <a name="create-allocation-rules"></a><span data-ttu-id="e17e7-114">Oprette fordelingsregler</span><span class="sxs-lookup"><span data-stu-id="e17e7-114">Create allocation rules</span></span>
+1. <span data-ttu-id="e17e7-115">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e17e7-115">Click New.</span></span>
+2. <span data-ttu-id="e17e7-116">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e17e7-116">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="e17e7-117">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="e17e7-117">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+4. <span data-ttu-id="e17e7-118">Vælg 'Total' i feltet Funktionalitet af omkostning.</span><span class="sxs-lookup"><span data-stu-id="e17e7-118">In the Cost behavior field, select 'Total'.</span></span>
+5. <span data-ttu-id="e17e7-119">Indtast eller vælg en værdi i feltet Fordelingsbasis.</span><span class="sxs-lookup"><span data-stu-id="e17e7-119">In the Allocation base field, enter or select a value.</span></span>
+6. <span data-ttu-id="e17e7-120">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e17e7-120">Click New.</span></span>
+7. <span data-ttu-id="e17e7-121">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e17e7-121">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="e17e7-122">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="e17e7-122">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+9. <span data-ttu-id="e17e7-123">Vælg 'Total' i feltet Funktionalitet af omkostning.</span><span class="sxs-lookup"><span data-stu-id="e17e7-123">In the Cost behavior field, select 'Total'.</span></span>
+10. <span data-ttu-id="e17e7-124">Indtast eller vælg en værdi i feltet Fordelingsbasis.</span><span class="sxs-lookup"><span data-stu-id="e17e7-124">In the Allocation base field, enter or select a value.</span></span>
+11. <span data-ttu-id="e17e7-125">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e17e7-125">Click New.</span></span>
+12. <span data-ttu-id="e17e7-126">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e17e7-126">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="e17e7-127">Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="e17e7-127">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+14. <span data-ttu-id="e17e7-128">Vælg 'Total' i feltet Funktionalitet af omkostning.</span><span class="sxs-lookup"><span data-stu-id="e17e7-128">In the Cost behavior field, select 'Total'.</span></span>
+15. <span data-ttu-id="e17e7-129">Indtast eller vælg en værdi i feltet Fordelingsbasis.</span><span class="sxs-lookup"><span data-stu-id="e17e7-129">In the Allocation base field, enter or select a value.</span></span>
+    * <span data-ttu-id="e17e7-130">Fortsæt, indtil du har oprettet alle regler.</span><span class="sxs-lookup"><span data-stu-id="e17e7-130">Continue until you've created all the rules.</span></span>  
+16. <span data-ttu-id="e17e7-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e17e7-131">Click Save.</span></span>
 
-## <a name="assign-the-policy-to-a-cost-control-unit"></a><span data-ttu-id="6876a-132">Tildele politikken til en omkostningskontrolenhed</span><span class="sxs-lookup"><span data-stu-id="6876a-132">Assign the policy to a cost control unit</span></span>
-1. <span data-ttu-id="6876a-133">Klik på Politiktildelinger for omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="6876a-133">Click Policy assignments for cost control unit.</span></span>
-2. <span data-ttu-id="6876a-134">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6876a-134">Click New.</span></span>
-3. <span data-ttu-id="6876a-135">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6876a-135">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="6876a-136">Indtast en dato i feltet Gyldig fra regnskabsdato.</span><span class="sxs-lookup"><span data-stu-id="6876a-136">In the Valid from accounting date field, enter a date.</span></span>
-    * <span data-ttu-id="6876a-137">Reglerne er datorelaterede.</span><span class="sxs-lookup"><span data-stu-id="6876a-137">The rules are date-effective.</span></span> <span data-ttu-id="6876a-138">En bruger eller systemet kan lade reglerne udløbe, hvis der oprettes en nyere version.</span><span class="sxs-lookup"><span data-stu-id="6876a-138">A user or the system can expire the rules if a newer version is created.</span></span>  
-5. <span data-ttu-id="6876a-139">Indtast eller vælg en værdi i feltet Omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="6876a-139">In the Cost control unit field, enter or select a value.</span></span>
-6. <span data-ttu-id="6876a-140">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6876a-140">Click Save.</span></span>
+## <a name="assign-the-policy-to-a-cost-control-unit"></a><span data-ttu-id="e17e7-132">Tildele politikken til en omkostningskontrolenhed</span><span class="sxs-lookup"><span data-stu-id="e17e7-132">Assign the policy to a cost control unit</span></span>
+1. <span data-ttu-id="e17e7-133">Klik på Politiktildelinger for omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="e17e7-133">Click Policy assignments for cost control unit.</span></span>
+2. <span data-ttu-id="e17e7-134">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e17e7-134">Click New.</span></span>
+3. <span data-ttu-id="e17e7-135">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e17e7-135">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="e17e7-136">Indtast en dato i feltet Gyldig fra regnskabsdato.</span><span class="sxs-lookup"><span data-stu-id="e17e7-136">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="e17e7-137">Reglerne er datorelaterede.</span><span class="sxs-lookup"><span data-stu-id="e17e7-137">The rules are date-effective.</span></span> <span data-ttu-id="e17e7-138">En bruger eller systemet kan lade reglerne udløbe, hvis der oprettes en nyere version.</span><span class="sxs-lookup"><span data-stu-id="e17e7-138">A user or the system can expire the rules if a newer version is created.</span></span>  
+5. <span data-ttu-id="e17e7-139">Indtast eller vælg en værdi i feltet Omkostningskontrolenhed.</span><span class="sxs-lookup"><span data-stu-id="e17e7-139">In the Cost control unit field, enter or select a value.</span></span>
+6. <span data-ttu-id="e17e7-140">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e17e7-140">Click Save.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

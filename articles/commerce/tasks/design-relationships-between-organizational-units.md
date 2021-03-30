@@ -16,49 +16,52 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b516d51210604a5813d637aa342dc7e269c60d89
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 132b3133bd75cd2b47a96a60e943ff96e686fecf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972233"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5229882"
 ---
-# <a name="design-the-relationships-between-organizational-units"></a><span data-ttu-id="21030-103"> Designe relationerne mellem organisationsenheder</span><span class="sxs-lookup"><span data-stu-id="21030-103">Design the relationships between organizational units</span></span>
+# <a name="design-the-relationships-between-organizational-units"></a><span data-ttu-id="eb645-103"> Designe relationerne mellem organisationsenheder</span><span class="sxs-lookup"><span data-stu-id="eb645-103">Design the relationships between organizational units</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="21030-104">Denne procedure fører gennem udformning af relationen mellem organisationsenheder.</span><span class="sxs-lookup"><span data-stu-id="21030-104">This procedure walks through how to design the relationship between organizational units.</span></span> <span data-ttu-id="21030-105">Du skal oprette et nyt organisationsformål, inden du definerer relationen, eller du kan bruge det eksisterende organisationsformål.</span><span class="sxs-lookup"><span data-stu-id="21030-105">You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose.</span></span> <span data-ttu-id="21030-106">Det demodatafirma, der bruges til at fuldføre denne procedure, er USRT.</span><span class="sxs-lookup"><span data-stu-id="21030-106">The demo data company used to complete this procedure is USRT.</span></span> <span data-ttu-id="21030-107">Denne opgave er beregnet til rollen administrator.</span><span class="sxs-lookup"><span data-stu-id="21030-107">This task is intended for the administrator role.</span></span>
+<span data-ttu-id="eb645-104">Denne procedure fører gennem udformning af relationen mellem organisationsenheder.</span><span class="sxs-lookup"><span data-stu-id="eb645-104">This procedure walks through how to design the relationship between organizational units.</span></span> <span data-ttu-id="eb645-105">Du skal oprette et nyt organisationsformål, inden du definerer relationen, eller du kan bruge det eksisterende organisationsformål.</span><span class="sxs-lookup"><span data-stu-id="eb645-105">You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose.</span></span> <span data-ttu-id="eb645-106">Det demodatafirma, der bruges til at fuldføre denne procedure, er USRT.</span><span class="sxs-lookup"><span data-stu-id="eb645-106">The demo data company used to complete this procedure is USRT.</span></span> <span data-ttu-id="eb645-107">Denne opgave er beregnet til rollen administrator.</span><span class="sxs-lookup"><span data-stu-id="eb645-107">This task is intended for the administrator role.</span></span>
 
-1. <span data-ttu-id="21030-108">Gå til Virksomhedsadministration > Organisationer > Organisationshierarkier.</span><span class="sxs-lookup"><span data-stu-id="21030-108">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
-2. <span data-ttu-id="21030-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="21030-109">Click New.</span></span>
-3. <span data-ttu-id="21030-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="21030-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="21030-111">Klik på Tildel formål.</span><span class="sxs-lookup"><span data-stu-id="21030-111">Click Assign purpose.</span></span>
-5. <span data-ttu-id="21030-112">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="21030-112">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="21030-113">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="21030-113">Click Add.</span></span>
-7. <span data-ttu-id="21030-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="21030-114">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="21030-115">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="21030-115">Click OK.</span></span>
-    * <span data-ttu-id="21030-116">Du kan vælge lige så mange organisationsformål, der er behov for til din organisation.</span><span class="sxs-lookup"><span data-stu-id="21030-116">You can select as many organization purposes as required for your organization.</span></span>  
-9. <span data-ttu-id="21030-117">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="21030-117">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="21030-118">Klik på Angiv som standard.</span><span class="sxs-lookup"><span data-stu-id="21030-118">Click Set as default.</span></span>
-11. <span data-ttu-id="21030-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="21030-119">Close the page.</span></span>
-12. <span data-ttu-id="21030-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="21030-120">Click Save.</span></span>
-13. <span data-ttu-id="21030-121">Klik på Vis.</span><span class="sxs-lookup"><span data-stu-id="21030-121">Click View.</span></span>
-14. <span data-ttu-id="21030-122">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="21030-122">Click Edit.</span></span>
-15. <span data-ttu-id="21030-123">Klik på Indsæt.</span><span class="sxs-lookup"><span data-stu-id="21030-123">Click Insert.</span></span>
-16. <span data-ttu-id="21030-124">Klik på Virksomhedsenhed.</span><span class="sxs-lookup"><span data-stu-id="21030-124">Click Business unit.</span></span>
-17. <span data-ttu-id="21030-125">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="21030-125">In the list, find and select the desired record.</span></span>
-18. <span data-ttu-id="21030-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="21030-126">In the list, click the link in the selected row.</span></span>
-19. <span data-ttu-id="21030-127">Klik på Indsæt.</span><span class="sxs-lookup"><span data-stu-id="21030-127">Click Insert.</span></span>
-20. <span data-ttu-id="21030-128">Klik på Commerce-kanal.</span><span class="sxs-lookup"><span data-stu-id="21030-128">Click Commerce channel.</span></span>
-21. <span data-ttu-id="21030-129">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="21030-129">In the list, find and select the desired record.</span></span>
-22. <span data-ttu-id="21030-130">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="21030-130">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="21030-131">Du kan tilføje så mange organisationsenheder, der er behov for.</span><span class="sxs-lookup"><span data-stu-id="21030-131">You can add as many organization units as is required.</span></span>  
-23. <span data-ttu-id="21030-132">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="21030-132">Click Save.</span></span>
-24. <span data-ttu-id="21030-133">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="21030-133">Click Close.</span></span>
-25. <span data-ttu-id="21030-134">Klik på Publicer for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="21030-134">Click Publish to open the drop dialog.</span></span>
-26. <span data-ttu-id="21030-135">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="21030-135">In the Effective date field, enter a date and time.</span></span>
-27. <span data-ttu-id="21030-136">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="21030-136">In the Effective date field, enter a date and time.</span></span>
-28. <span data-ttu-id="21030-137">Indtast en værdi i feltet Beskriv ændringer.</span><span class="sxs-lookup"><span data-stu-id="21030-137">In the Describe changes field, type a value.</span></span>
-29. <span data-ttu-id="21030-138">Klik på Publicer.</span><span class="sxs-lookup"><span data-stu-id="21030-138">Click Publish.</span></span>
-30. <span data-ttu-id="21030-139">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="21030-139">Click Close.</span></span>
+1. <span data-ttu-id="eb645-108">Gå til Virksomhedsadministration > Organisationer > Organisationshierarkier.</span><span class="sxs-lookup"><span data-stu-id="eb645-108">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
+2. <span data-ttu-id="eb645-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="eb645-109">Click New.</span></span>
+3. <span data-ttu-id="eb645-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="eb645-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="eb645-111">Klik på Tildel formål.</span><span class="sxs-lookup"><span data-stu-id="eb645-111">Click Assign purpose.</span></span>
+5. <span data-ttu-id="eb645-112">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eb645-112">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="eb645-113">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="eb645-113">Click Add.</span></span>
+7. <span data-ttu-id="eb645-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eb645-114">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="eb645-115">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="eb645-115">Click OK.</span></span>
+    * <span data-ttu-id="eb645-116">Du kan vælge lige så mange organisationsformål, der er behov for til din organisation.</span><span class="sxs-lookup"><span data-stu-id="eb645-116">You can select as many organization purposes as required for your organization.</span></span>  
+9. <span data-ttu-id="eb645-117">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eb645-117">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="eb645-118">Klik på Angiv som standard.</span><span class="sxs-lookup"><span data-stu-id="eb645-118">Click Set as default.</span></span>
+11. <span data-ttu-id="eb645-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="eb645-119">Close the page.</span></span>
+12. <span data-ttu-id="eb645-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="eb645-120">Click Save.</span></span>
+13. <span data-ttu-id="eb645-121">Klik på Vis.</span><span class="sxs-lookup"><span data-stu-id="eb645-121">Click View.</span></span>
+14. <span data-ttu-id="eb645-122">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="eb645-122">Click Edit.</span></span>
+15. <span data-ttu-id="eb645-123">Klik på Indsæt.</span><span class="sxs-lookup"><span data-stu-id="eb645-123">Click Insert.</span></span>
+16. <span data-ttu-id="eb645-124">Klik på Virksomhedsenhed.</span><span class="sxs-lookup"><span data-stu-id="eb645-124">Click Business unit.</span></span>
+17. <span data-ttu-id="eb645-125">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eb645-125">In the list, find and select the desired record.</span></span>
+18. <span data-ttu-id="eb645-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eb645-126">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="eb645-127">Klik på Indsæt.</span><span class="sxs-lookup"><span data-stu-id="eb645-127">Click Insert.</span></span>
+20. <span data-ttu-id="eb645-128">Klik på Commerce-kanal.</span><span class="sxs-lookup"><span data-stu-id="eb645-128">Click Commerce channel.</span></span>
+21. <span data-ttu-id="eb645-129">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eb645-129">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="eb645-130">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eb645-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="eb645-131">Du kan tilføje så mange organisationsenheder, der er behov for.</span><span class="sxs-lookup"><span data-stu-id="eb645-131">You can add as many organization units as is required.</span></span>  
+23. <span data-ttu-id="eb645-132">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="eb645-132">Click Save.</span></span>
+24. <span data-ttu-id="eb645-133">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="eb645-133">Click Close.</span></span>
+25. <span data-ttu-id="eb645-134">Klik på Publicer for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="eb645-134">Click Publish to open the drop dialog.</span></span>
+26. <span data-ttu-id="eb645-135">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="eb645-135">In the Effective date field, enter a date and time.</span></span>
+27. <span data-ttu-id="eb645-136">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="eb645-136">In the Effective date field, enter a date and time.</span></span>
+28. <span data-ttu-id="eb645-137">Indtast en værdi i feltet Beskriv ændringer.</span><span class="sxs-lookup"><span data-stu-id="eb645-137">In the Describe changes field, type a value.</span></span>
+29. <span data-ttu-id="eb645-138">Klik på Publicer.</span><span class="sxs-lookup"><span data-stu-id="eb645-138">Click Publish.</span></span>
+30. <span data-ttu-id="eb645-139">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="eb645-139">Click Close.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
