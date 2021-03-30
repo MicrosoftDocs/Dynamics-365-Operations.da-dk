@@ -15,26 +15,29 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 3f56e254eaec18cd9a7dec641a7a189967a7eda6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 51f6745920241c7ffeccfbb1cfd2f79b90307e48
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963350"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5214196"
 ---
-# <a name="consolidate-shipments-by-using-shipment-consolidation-policies"></a><span data-ttu-id="a2f61-103">Konsolidere forsendelser ved hjælp af politikker for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="a2f61-103">Consolidate shipments by using shipment consolidation policies</span></span>
+# <a name="consolidate-shipments-by-using-shipment-consolidation-policies"></a><span data-ttu-id="cc8d5-103">Konsolidere forsendelser ved hjælp af politikker for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="cc8d5-103">Consolidate shipments by using shipment consolidation policies</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a2f61-104">I følgende scenarier beskrives det, hvordan du kan udføre en forsendelseskonsolideringsproces, hvor der bruges politikker for forsendelseskonsolidering under automatiseret og manuel frigivelse til lagerstedet:</span><span class="sxs-lookup"><span data-stu-id="a2f61-104">The following scenarios will walk you through the shipment consolidation process that uses shipment consolidation policies during automated and manual release to the warehouse:</span></span>
+<span data-ttu-id="cc8d5-104">I følgende scenarier beskrives det, hvordan du kan udføre en forsendelseskonsolideringsproces, hvor der bruges politikker for forsendelseskonsolidering under automatiseret og manuel frigivelse til lagerstedet:</span><span class="sxs-lookup"><span data-stu-id="cc8d5-104">The following scenarios will walk you through the shipment consolidation process that uses shipment consolidation policies during automated and manual release to the warehouse:</span></span>
 
-- <span data-ttu-id="a2f61-105">Scenarie 1: [Konsolidere leverancer, når de frigives til lagerstedet, ved hjælp af automatisk frigivelse af salgsordrer](../warehousing/consolidate-shipments-automatic.md)</span><span class="sxs-lookup"><span data-stu-id="a2f61-105">Scenario 1: [Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders](../warehousing/consolidate-shipments-automatic.md)</span></span>
-- <span data-ttu-id="a2f61-106">Scenarie 2: [Konsolidere forsendelser, når politikken for forsendelseskonsolidering tilsidesættes fra siden Frigiv til lager](../warehousing/consolidate-shipments-release-to-warehouse-override.md)</span><span class="sxs-lookup"><span data-stu-id="a2f61-106">Scenario 2: [Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page](../warehousing/consolidate-shipments-release-to-warehouse-override.md)</span></span>
-- <span data-ttu-id="a2f61-107">Scenarie 3: [Konsolidere forsendelser ved at bruge Frigiv til lagersted fra panelet for lastplanlægning](../warehousing/consolidate-shipments-load-planning-workbench.md)</span><span class="sxs-lookup"><span data-stu-id="a2f61-107">Scenario 3: [Consolidate shipments by using Release to warehouse from the load planning workbench](../warehousing/consolidate-shipments-load-planning-workbench.md)</span></span>
-- <span data-ttu-id="a2f61-108">Scenarie 4: [Konsolidere forsendelserne ved hjælp af panelet for forsendelseskonsolidering](../warehousing/consolidate-shipments-manual-workbench.md)</span><span class="sxs-lookup"><span data-stu-id="a2f61-108">Scenario 4: [Consolidate shipments by using the shipment consolidation workbench](../warehousing/consolidate-shipments-manual-workbench.md)</span></span>
-- <span data-ttu-id="a2f61-109">Scenarie 5: [Konsolidere forsendelser manuelt ved hjælp af siden Konsolider forsendelser](../warehousing/consolidate-shipments-manual-form.md)</span><span class="sxs-lookup"><span data-stu-id="a2f61-109">Scenario 5: [Consolidate shipments manually by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)</span></span>
+- <span data-ttu-id="cc8d5-105">Scenarie 1: [Konsolidere leverancer, når de frigives til lagerstedet, ved hjælp af automatisk frigivelse af salgsordrer](../warehousing/consolidate-shipments-automatic.md)</span><span class="sxs-lookup"><span data-stu-id="cc8d5-105">Scenario 1: [Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders](../warehousing/consolidate-shipments-automatic.md)</span></span>
+- <span data-ttu-id="cc8d5-106">Scenarie 2: [Konsolidere forsendelser, når politikken for forsendelseskonsolidering tilsidesættes fra siden Frigiv til lager](../warehousing/consolidate-shipments-release-to-warehouse-override.md)</span><span class="sxs-lookup"><span data-stu-id="cc8d5-106">Scenario 2: [Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page](../warehousing/consolidate-shipments-release-to-warehouse-override.md)</span></span>
+- <span data-ttu-id="cc8d5-107">Scenarie 3: [Konsolidere forsendelser ved at bruge Frigiv til lagersted fra panelet for lastplanlægning](../warehousing/consolidate-shipments-load-planning-workbench.md)</span><span class="sxs-lookup"><span data-stu-id="cc8d5-107">Scenario 3: [Consolidate shipments by using Release to warehouse from the load planning workbench](../warehousing/consolidate-shipments-load-planning-workbench.md)</span></span>
+- <span data-ttu-id="cc8d5-108">Scenarie 4: [Konsolidere forsendelserne ved hjælp af panelet for forsendelseskonsolidering](../warehousing/consolidate-shipments-manual-workbench.md)</span><span class="sxs-lookup"><span data-stu-id="cc8d5-108">Scenario 4: [Consolidate shipments by using the shipment consolidation workbench](../warehousing/consolidate-shipments-manual-workbench.md)</span></span>
+- <span data-ttu-id="cc8d5-109">Scenarie 5: [Konsolidere forsendelser manuelt ved hjælp af siden Konsolider forsendelser](../warehousing/consolidate-shipments-manual-form.md)</span><span class="sxs-lookup"><span data-stu-id="cc8d5-109">Scenario 5: [Consolidate shipments manually by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="a2f61-110">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="a2f61-110">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="cc8d5-110">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="cc8d5-110">Additional resources</span></span>
 
-- [<span data-ttu-id="a2f61-111">Forsendelseskonsolideringspolitikker</span><span class="sxs-lookup"><span data-stu-id="a2f61-111">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
-- [<span data-ttu-id="a2f61-112">Konfigurere politikker for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="a2f61-112">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
+- [<span data-ttu-id="cc8d5-111">Forsendelseskonsolideringspolitikker</span><span class="sxs-lookup"><span data-stu-id="cc8d5-111">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
+- [<span data-ttu-id="cc8d5-112">Konfigurere politikker for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="cc8d5-112">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,74 +17,77 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: ba24ae9e82debf9a67761e4e2ca0817e1645db28
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020905"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209725"
 ---
-# <a name="maintenance-downtime-for-work-orders"></a><span data-ttu-id="8ad07-103">Vedligeholdelsesnedetid for arbejdsordrer</span><span class="sxs-lookup"><span data-stu-id="8ad07-103">Maintenance downtime for work orders</span></span>
+# <a name="maintenance-downtime-for-work-orders"></a><span data-ttu-id="2367b-103">Vedligeholdelsesnedetid for arbejdsordrer</span><span class="sxs-lookup"><span data-stu-id="2367b-103">Maintenance downtime for work orders</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 
-<span data-ttu-id="8ad07-104">Du kan oprette registreringer af vedligeholdelsesnedetid for det aktiv, der er valgt på en arbejdsordre.</span><span class="sxs-lookup"><span data-stu-id="8ad07-104">You can create maintenance downtime registrations on the asset that is selected on a work order.</span></span> <span data-ttu-id="8ad07-105">Dette er nyttigt, hvis du vil registrere vedligeholdelsesnedetid på en eller flere maskiner i produktionsområdet.</span><span class="sxs-lookup"><span data-stu-id="8ad07-105">This capability is useful if you want to register maintenance downtime on one or more machines in the production area.</span></span> <span data-ttu-id="8ad07-106">Først skal du oprette de årsagskoder til vedligeholdelsesnedetid, du vil bruge, f.eks. **Nedbrud** og **Planlagt stop**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-106">You first create the maintenance downtime reason codes that you want to use, such as **Breakdown** and **Planned stop**.</span></span> <span data-ttu-id="8ad07-107">Dette gøres på siden **Årsagskoder til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-107">This step is done on the **Maintenance downtime reason codes** page.</span></span> <span data-ttu-id="8ad07-108">Derefter kan du oprette registreringer af vedligeholdelsesnedetid på siden **Vedligeholdelsesnedetid** og tilføje de relevante årsagskoder for vedligeholdelsesnedetid.</span><span class="sxs-lookup"><span data-stu-id="8ad07-108">You can then create maintenance downtime registrations on the **Maintenance downtime** page and add the relevant maintenance downtime reason codes.</span></span>
+<span data-ttu-id="2367b-104">Du kan oprette registreringer af vedligeholdelsesnedetid for det aktiv, der er valgt på en arbejdsordre.</span><span class="sxs-lookup"><span data-stu-id="2367b-104">You can create maintenance downtime registrations on the asset that is selected on a work order.</span></span> <span data-ttu-id="2367b-105">Dette er nyttigt, hvis du vil registrere vedligeholdelsesnedetid på en eller flere maskiner i produktionsområdet.</span><span class="sxs-lookup"><span data-stu-id="2367b-105">This capability is useful if you want to register maintenance downtime on one or more machines in the production area.</span></span> <span data-ttu-id="2367b-106">Først skal du oprette de årsagskoder til vedligeholdelsesnedetid, du vil bruge, f.eks. **Nedbrud** og **Planlagt stop**.</span><span class="sxs-lookup"><span data-stu-id="2367b-106">You first create the maintenance downtime reason codes that you want to use, such as **Breakdown** and **Planned stop**.</span></span> <span data-ttu-id="2367b-107">Dette gøres på siden **Årsagskoder til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="2367b-107">This step is done on the **Maintenance downtime reason codes** page.</span></span> <span data-ttu-id="2367b-108">Derefter kan du oprette registreringer af vedligeholdelsesnedetid på siden **Vedligeholdelsesnedetid** og tilføje de relevante årsagskoder for vedligeholdelsesnedetid.</span><span class="sxs-lookup"><span data-stu-id="2367b-108">You can then create maintenance downtime registrations on the **Maintenance downtime** page and add the relevant maintenance downtime reason codes.</span></span>
 
-## <a name="create-maintenance-downtime-reason-codes"></a><span data-ttu-id="8ad07-109">Oprette årsagskoder for vedligeholdelsesnedetid</span><span class="sxs-lookup"><span data-stu-id="8ad07-109">Create maintenance downtime reason codes</span></span>
+## <a name="create-maintenance-downtime-reason-codes"></a><span data-ttu-id="2367b-109">Oprette årsagskoder for vedligeholdelsesnedetid</span><span class="sxs-lookup"><span data-stu-id="2367b-109">Create maintenance downtime reason codes</span></span>
 
-1. <span data-ttu-id="8ad07-110">Vælg **Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Årsagskoder til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-110">Select **Asset management** > **Setup** > **Work orders** > **Maintenance downtime reason codes**.</span></span>
+1. <span data-ttu-id="2367b-110">Vælg **Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Årsagskoder til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="2367b-110">Select **Asset management** > **Setup** > **Work orders** > **Maintenance downtime reason codes**.</span></span>
 
-2. <span data-ttu-id="8ad07-111">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-111">Select **New**.</span></span>
+2. <span data-ttu-id="2367b-111">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="2367b-111">Select **New**.</span></span>
 
-3. <span data-ttu-id="8ad07-112">Angiv et id for årsags koden til vedligeholdelsesnedetid i feltet **Årsagskode til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-112">In the **Maintenance downtime reason code** field, enter an ID for the maintenance downtime reason code.</span></span>
+3. <span data-ttu-id="2367b-112">Angiv et id for årsags koden til vedligeholdelsesnedetid i feltet **Årsagskode til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="2367b-112">In the **Maintenance downtime reason code** field, enter an ID for the maintenance downtime reason code.</span></span>
 
-4. <span data-ttu-id="8ad07-113">Indtast et navn i feltet **Navn**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-113">In the **Name** field, enter a name.</span></span>
+4. <span data-ttu-id="2367b-113">Indtast et navn i feltet **Navn**.</span><span class="sxs-lookup"><span data-stu-id="2367b-113">In the **Name** field, enter a name.</span></span>
 
-5. <span data-ttu-id="8ad07-114">Markér afkrydsningsfeltet **Medtag KPI**, hvis årsagskoden skal medtages i beregningerne af KPI'er for aktivet.</span><span class="sxs-lookup"><span data-stu-id="8ad07-114">Select the **KPI include** check box if the reason code should be included in calculations of key performance indicators (KPIs) for the asset.</span></span> <span data-ttu-id="8ad07-115">Generelt bør planlagte produktionsstop ikke medtages i KPI-beregninger, da de ikke påvirker den forventede ydeevne.</span><span class="sxs-lookup"><span data-stu-id="8ad07-115">In general, planned production stops should not be included in KPI calculations, because they don't affect expected performance.</span></span>
+5. <span data-ttu-id="2367b-114">Markér afkrydsningsfeltet **Medtag KPI**, hvis årsagskoden skal medtages i beregningerne af KPI'er for aktivet.</span><span class="sxs-lookup"><span data-stu-id="2367b-114">Select the **KPI include** check box if the reason code should be included in calculations of key performance indicators (KPIs) for the asset.</span></span> <span data-ttu-id="2367b-115">Generelt bør planlagte produktionsstop ikke medtages i KPI-beregninger, da de ikke påvirker den forventede ydeevne.</span><span class="sxs-lookup"><span data-stu-id="2367b-115">In general, planned production stops should not be included in KPI calculations, because they don't affect expected performance.</span></span>
 
-6. <span data-ttu-id="8ad07-116">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-116">Select **Save**.</span></span>
+6. <span data-ttu-id="2367b-116">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="2367b-116">Select **Save**.</span></span>
 
-<span data-ttu-id="8ad07-117">I følgende illustration vises et eksempel på siden **Årsagskoder til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-117">The illustration below shows an example of the **Maintenance downtime reason codes** page.</span></span>
+<span data-ttu-id="2367b-117">I følgende illustration vises et eksempel på siden **Årsagskoder til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="2367b-117">The illustration below shows an example of the **Maintenance downtime reason codes** page.</span></span>
 
 ![Figur 1](media/15-work-orders.png)
 
-<span data-ttu-id="8ad07-119">Når du har oprettet de årsagskoder til vedligeholdelsesnedetid, du vil bruge, kan du oprette registreringer af vedligeholdelsesnedetid for arbejdsordrer og aktiver.</span><span class="sxs-lookup"><span data-stu-id="8ad07-119">After you've created the maintenance downtime reason codes that you want to use, you can create maintenance downtime registrations for work orders and assets.</span></span>
+<span data-ttu-id="2367b-119">Når du har oprettet de årsagskoder til vedligeholdelsesnedetid, du vil bruge, kan du oprette registreringer af vedligeholdelsesnedetid for arbejdsordrer og aktiver.</span><span class="sxs-lookup"><span data-stu-id="2367b-119">After you've created the maintenance downtime reason codes that you want to use, you can create maintenance downtime registrations for work orders and assets.</span></span>
 
 
-## <a name="create-maintenance-downtime-registrations"></a><span data-ttu-id="8ad07-120">Oprette registreringer af vedligeholdelsesnedetid</span><span class="sxs-lookup"><span data-stu-id="8ad07-120">Create maintenance downtime registrations</span></span>
+## <a name="create-maintenance-downtime-registrations"></a><span data-ttu-id="2367b-120">Oprette registreringer af vedligeholdelsesnedetid</span><span class="sxs-lookup"><span data-stu-id="2367b-120">Create maintenance downtime registrations</span></span>
 
-1. <span data-ttu-id="8ad07-121">Klik på **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-121">Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.</span></span>
+1. <span data-ttu-id="2367b-121">Klik på **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.</span><span class="sxs-lookup"><span data-stu-id="2367b-121">Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.</span></span>
 
-2. <span data-ttu-id="8ad07-122">Vælg arbejdsordren, og vælg derefter **Vedligeholdelsesnedetid** i gruppen **Aktiv** under fanen **Arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-122">Select the work order, and then, on the **Work order** tab, in the **Asset** group, select **Maintenance downtime**.</span></span>
+2. <span data-ttu-id="2367b-122">Vælg arbejdsordren, og vælg derefter **Vedligeholdelsesnedetid** i gruppen **Aktiv** under fanen **Arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="2367b-122">Select the work order, and then, on the **Work order** tab, in the **Asset** group, select **Maintenance downtime**.</span></span>
 
-3. <span data-ttu-id="8ad07-123">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-123">Select **New**.</span></span>
+3. <span data-ttu-id="2367b-123">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="2367b-123">Select **New**.</span></span>
 
-4. <span data-ttu-id="8ad07-124">Indsæt dato- og tidsinterval for registrering af vedligeholdelsesnedetid i felterne **Fra** og **Til**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-124">In the **From** and **To** fields, define the date and time interval for the maintenance downtime registration.</span></span>
+4. <span data-ttu-id="2367b-124">Indsæt dato- og tidsinterval for registrering af vedligeholdelsesnedetid i felterne **Fra** og **Til**.</span><span class="sxs-lookup"><span data-stu-id="2367b-124">In the **From** and **To** fields, define the date and time interval for the maintenance downtime registration.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="8ad07-125">Når du forlader feltet **Til**, indsættes varigheden i timer automatisk i feltet **Varighed**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-125">When you leave the **To** field, the duration in hours is automatically inserted in the **Duration** field.</span></span>
+><span data-ttu-id="2367b-125">Når du forlader feltet **Til**, indsættes varigheden i timer automatisk i feltet **Varighed**.</span><span class="sxs-lookup"><span data-stu-id="2367b-125">When you leave the **To** field, the duration in hours is automatically inserted in the **Duration** field.</span></span>
 
-5. <span data-ttu-id="8ad07-126">Vælg en årsagskode i feltet **Årsagskode til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-126">In the **maintenance downtime reason code** field, select a reason code.</span></span>
+5. <span data-ttu-id="2367b-126">Vælg en årsagskode i feltet **Årsagskode til vedligeholdelsesnedetid**.</span><span class="sxs-lookup"><span data-stu-id="2367b-126">In the **maintenance downtime reason code** field, select a reason code.</span></span>
 
-6. <span data-ttu-id="8ad07-127">Gentag trin 3 til 5 for at tilføje flere registreringer.</span><span class="sxs-lookup"><span data-stu-id="8ad07-127">Repeat steps 3 through 5 to add more registrations.</span></span>
+6. <span data-ttu-id="2367b-127">Gentag trin 3 til 5 for at tilføje flere registreringer.</span><span class="sxs-lookup"><span data-stu-id="2367b-127">Repeat steps 3 through 5 to add more registrations.</span></span>
 
-7. <span data-ttu-id="8ad07-128">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-128">Select **Save**.</span></span>
+7. <span data-ttu-id="2367b-128">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="2367b-128">Select **Save**.</span></span>
 
-<span data-ttu-id="8ad07-129">Følgende illustration viser et eksempel på en registrering af vedligeholdelsesnedetid.</span><span class="sxs-lookup"><span data-stu-id="8ad07-129">The illustration below shows an example of maintenance downtime registration.</span></span>
+<span data-ttu-id="2367b-129">Følgende illustration viser et eksempel på en registrering af vedligeholdelsesnedetid.</span><span class="sxs-lookup"><span data-stu-id="2367b-129">The illustration below shows an example of maintenance downtime registration.</span></span>
 
 ![Figur 2](media/16-work-orders.png)
 
-<span data-ttu-id="8ad07-131">Den kalender, der bruges til beregning af registreret vedligeholdelsesnedetid, afhænger af dit valg i opsætningen af aktiver og parametre.</span><span class="sxs-lookup"><span data-stu-id="8ad07-131">The calendar that is used to calculate a maintenance downtime registration depends on your selection in the setup of assets and parameters.</span></span> <span data-ttu-id="8ad07-132">Hvis en ressource er valgt på et aktiv i feltet **Ressource** i oversigtspanelet **Anlægsaktiv** på siden **Alle aktiver**, bruges den kalender, der er konfigureret for den tilknyttede ressourcegruppe, som vist i følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="8ad07-132">If a resource is selected on an asset in the **Resource** field on the **Fixed asset** FastTab of the **All assets** page, the calendar that is set up for the associated resource group is used, as shown in the following illustration.</span></span>
+<span data-ttu-id="2367b-131">Den kalender, der bruges til beregning af registreret vedligeholdelsesnedetid, afhænger af dit valg i opsætningen af aktiver og parametre.</span><span class="sxs-lookup"><span data-stu-id="2367b-131">The calendar that is used to calculate a maintenance downtime registration depends on your selection in the setup of assets and parameters.</span></span> <span data-ttu-id="2367b-132">Hvis en ressource er valgt på et aktiv i feltet **Ressource** i oversigtspanelet **Anlægsaktiv** på siden **Alle aktiver**, bruges den kalender, der er konfigureret for den tilknyttede ressourcegruppe, som vist i følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="2367b-132">If a resource is selected on an asset in the **Resource** field on the **Fixed asset** FastTab of the **All assets** page, the calendar that is set up for the associated resource group is used, as shown in the following illustration.</span></span>
 
 ![Figur 3](media/17-work-orders.png)
 
-<span data-ttu-id="8ad07-134">Hvis der ikke er valgt en ressource på aktivet, bruges den standardkalender, der er valgt på siden **Parametre til aktivstyring**, som vist i følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="8ad07-134">If no resource is selected on the asset, the standard calendar that is selected on the **Asset management parameters** page is used, as shown in the following illustration.</span></span>
+<span data-ttu-id="2367b-134">Hvis der ikke er valgt en ressource på aktivet, bruges den standardkalender, der er valgt på siden **Parametre til aktivstyring**, som vist i følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="2367b-134">If no resource is selected on the asset, the standard calendar that is selected on the **Asset management parameters** page is used, as shown in the following illustration.</span></span>
 
 ![Figur 4](media/18-work-orders.png)
 
-<span data-ttu-id="8ad07-136">Klik på **Styring af aktiver** > **Forespørgsler** > **Vedligeholdelsesnedetid** for at se en oversigt over alle registreringer af vedligeholdelsesnedetid.</span><span class="sxs-lookup"><span data-stu-id="8ad07-136">To see an overview of all maintenance downtime registrations, click **Asset management** > **Inquiries** > **Maintenance downtime**.</span></span>
+<span data-ttu-id="2367b-136">Klik på **Styring af aktiver** > **Forespørgsler** > **Vedligeholdelsesnedetid** for at se en oversigt over alle registreringer af vedligeholdelsesnedetid.</span><span class="sxs-lookup"><span data-stu-id="2367b-136">To see an overview of all maintenance downtime registrations, click **Asset management** > **Inquiries** > **Maintenance downtime**.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="8ad07-137">Alle de kalendere, der bruges i modulet **Styring af aktiver**, konfigureres i **Virksomhedsadministration** > **Opsætning** > **Kalendere** > **Kalendere**.</span><span class="sxs-lookup"><span data-stu-id="8ad07-137">All calendars that are used in the **Asset Management** module are set up in **Organization administration** > **Setup** > **Calendars** > **Calendars**.</span></span>
+><span data-ttu-id="2367b-137">Alle de kalendere, der bruges i modulet **Styring af aktiver**, konfigureres i **Virksomhedsadministration** > **Opsætning** > **Kalendere** > **Kalendere**.</span><span class="sxs-lookup"><span data-stu-id="2367b-137">All calendars that are used in the **Asset Management** module are set up in **Organization administration** > **Setup** > **Calendars** > **Calendars**.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
