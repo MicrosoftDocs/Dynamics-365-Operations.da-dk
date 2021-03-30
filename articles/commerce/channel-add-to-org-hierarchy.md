@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 297bd34f9bde23d5cc7de266b8e8f49b1a752662
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4212797d2959c4f8b0d60e6b45de76ffc3ee0dc2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993684"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216740"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Føje en kanal til et organisationshierarki
 
@@ -30,7 +30,7 @@ ms.locfileid: "4993684"
 
 Dette emne beskriver, hvordan du føjer en kanal til et organisationshierarki i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Kanaler skal knyttes til et eller flere organisationshierarkier. Før du opretter kanaler, skal du bekræfte, at organisationshierarkierne er konfigureret.  
 
