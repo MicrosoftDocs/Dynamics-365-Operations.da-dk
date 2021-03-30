@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 427e82ab75ba16076a3f99ef7df28e9b419d2e7b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 094ad8d34e13051ce7596be462070ead4cbc4f14
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980575"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206649"
 ---
-# <a name="accessibility-features-and-capabilities"></a>Funktioner og egenskaber til øget tilgængelighed
+# <a name="accessibility-features-and-capabilities"></a>Tilgængelighedsfunktioner og -egenskaber
 
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder oplysninger om funktionerne og egenskaberne til øget tilgængelighed i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Funktioner og egenskaber til øget tilgængelighed giver alle brugere de funktionelle midler til at kunne tilgå og udføre handlinger, så de kan nå deres mål. Denne brede vifte af brugere kan få brug for hjælpemidler til hørelse, syn, mobilitet eller neurodiversitet.
 

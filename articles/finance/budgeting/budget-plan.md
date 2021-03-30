@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 05de2748b0cf7a2b09618aee5c41c8c797f2b3d3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971272"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210403"
 ---
 # <a name="budget-planning"></a>Budgetplanlægning
 
@@ -105,7 +105,7 @@ Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgan
 
 2.5. Vælg "Giv adgang til bestemte organisationer enkeltvist". Vælg organisationshierarkiet, der er oprettet i første trin. Vælg noden Økonomi, og klik på knappen Tildel med underordnede. 
 
-**_Vigtigt!_* _ _– Kontroller, at du befinder dig i DEMF's juridiske enhedskontekst ved udførelse af denne opgave, da organisatorisk sikkerhed anvendes pr. juridisk enhed* 
+***Vigtigt!** _ _Kontroller, at du befinder dig i DEMF's juridiske enhedskontekst ved udførelse af denne opgave, da organisatorisk sikkerhed anvendes pr. juridisk enhed* 
 
 ### <a name="task-3-create-scenarios"></a>Opgave 3: Opret scenarier
 3.1. Naviger til Budgettering&gt;Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Bemærk på siden Scenarier de scenarier, som vi skal bruge videre frem i denne øvelse: Forrige års faktiske og budgetterede. 

@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cad6a26ea1858d6afac33ef8eab10e16b404035b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3926f23e4e762a49ef94ef0c8f3291e7e9a4a6a2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980475"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206385"
 ---
 # <a name="text-block-module"></a>Tekstblokmodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler tekstblokmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Et tekstblokmodul er et modul, der bruges til at tilføje tekstindhold. Det kan være oplysninger og kampagneindhold.
 
