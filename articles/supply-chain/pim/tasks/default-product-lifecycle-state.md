@@ -14,50 +14,53 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16f604d5e06859b15c6f610e7a5c822ef2089ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b65f34c1d7a0fd22201df5b48f8d42d452d6b8ef
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966899"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216075"
 ---
-# <a name="create-a-default-product-lifecycle-state"></a><span data-ttu-id="d6663-103">Opret en standardstatus for produktlivscyklus</span><span class="sxs-lookup"><span data-stu-id="d6663-103">Create a default product lifecycle state</span></span>
+# <a name="create-a-default-product-lifecycle-state"></a><span data-ttu-id="1f74f-103">Opret en standardstatus for produktlivscyklus</span><span class="sxs-lookup"><span data-stu-id="1f74f-103">Create a default product lifecycle state</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d6663-104">Denne fremgangsmåde viser, hvordan du opretter en standardstatus for produktlivscyklus, samt hvordan standardstatussen tilknyttes frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="d6663-104">This procedure shows how to create a default product lifecycle state as well as how to associate the default state with released products.</span></span>
+<span data-ttu-id="1f74f-104">Denne fremgangsmåde viser, hvordan du opretter en standardstatus for produktlivscyklus, samt hvordan standardstatussen tilknyttes frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="1f74f-104">This procedure shows how to create a default product lifecycle state as well as how to associate the default state with released products.</span></span>
 
 
-## <a name="create-a-default-lifecycle-state"></a><span data-ttu-id="d6663-105">Opret en standardstatus for livscyklus</span><span class="sxs-lookup"><span data-stu-id="d6663-105">Create a default lifecycle state</span></span>
-1. <span data-ttu-id="d6663-106">Gå til Administration af produktoplysninger > Konfiguration > Status for produktlivscyklus.</span><span class="sxs-lookup"><span data-stu-id="d6663-106">Go to Product information management > Setup > Product lifecycle state.</span></span>
-2. <span data-ttu-id="d6663-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d6663-107">Click New.</span></span>
-3. <span data-ttu-id="d6663-108">Skriv en værdi i feltet Status.</span><span class="sxs-lookup"><span data-stu-id="d6663-108">In the State field, type a value.</span></span>
-4. <span data-ttu-id="d6663-109">Vælg Ja i feltet Standard ved frigivelse til juridisk enhed.</span><span class="sxs-lookup"><span data-stu-id="d6663-109">Select Yes in the Default when released to legal entity field.</span></span>
-5. <span data-ttu-id="d6663-110">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="d6663-110">In the Description field, type a value.</span></span>
-6. <span data-ttu-id="d6663-111">Vælg Nej i feltet Er aktiv for planlægning.</span><span class="sxs-lookup"><span data-stu-id="d6663-111">Select No in the Is active for planning field.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="d6663-112">Hvis et nyt frigivet produkt ikke skal medtages i varedisponering, skal du vælge Nej.</span><span class="sxs-lookup"><span data-stu-id="d6663-112">If a new released product should not be included in Master planning, select No.</span></span> <span data-ttu-id="d6663-113">Hvis det skal medtages i varedisponering, skal kontrolelementet beholde standardværdien Ja.</span><span class="sxs-lookup"><span data-stu-id="d6663-113">If it should be included in Master planning, leave the control at its default value Yes.</span></span>  
-
-## <a name="create-a-new-released-product"></a><span data-ttu-id="d6663-114">Opret et nyt frigivet produkt</span><span class="sxs-lookup"><span data-stu-id="d6663-114">Create a new released product</span></span>
-1. <span data-ttu-id="d6663-115">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d6663-115">Close the page.</span></span>
-2. <span data-ttu-id="d6663-116">Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="d6663-116">Go to Product information management > Products > Released products.</span></span>
-3. <span data-ttu-id="d6663-117">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d6663-117">Click New.</span></span>
-4. <span data-ttu-id="d6663-118">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="d6663-118">In the Product number field, type a value.</span></span>
-5. <span data-ttu-id="d6663-119">Angiv en værdi i feltet Produktnavn.</span><span class="sxs-lookup"><span data-stu-id="d6663-119">In the Product name field, type a value.</span></span>
-6. <span data-ttu-id="d6663-120">Angiv en værdi i feltet Søgenavn.</span><span class="sxs-lookup"><span data-stu-id="d6663-120">In the Search name field, type a value.</span></span>
-7. <span data-ttu-id="d6663-121">Indtast eller vælg en værdi i feltet Varemodelgruppe.</span><span class="sxs-lookup"><span data-stu-id="d6663-121">In the Item model group field, enter or select a value.</span></span>
-8. <span data-ttu-id="d6663-122">Indtast eller vælg en værdi i feltet Varegruppe.</span><span class="sxs-lookup"><span data-stu-id="d6663-122">In the Item group field, enter or select a value.</span></span>
-9. <span data-ttu-id="d6663-123">Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="d6663-123">In the Storage dimension group field, enter or select a value.</span></span>
-10. <span data-ttu-id="d6663-124">Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="d6663-124">In the Tracking dimension group field, enter or select a value.</span></span>
-11. <span data-ttu-id="d6663-125">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d6663-125">Click OK.</span></span>
+## <a name="create-a-default-lifecycle-state"></a><span data-ttu-id="1f74f-105">Opret en standardstatus for livscyklus</span><span class="sxs-lookup"><span data-stu-id="1f74f-105">Create a default lifecycle state</span></span>
+1. <span data-ttu-id="1f74f-106">Gå til Administration af produktoplysninger > Konfiguration > Status for produktlivscyklus.</span><span class="sxs-lookup"><span data-stu-id="1f74f-106">Go to Product information management > Setup > Product lifecycle state.</span></span>
+2. <span data-ttu-id="1f74f-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="1f74f-107">Click New.</span></span>
+3. <span data-ttu-id="1f74f-108">Skriv en værdi i feltet Status.</span><span class="sxs-lookup"><span data-stu-id="1f74f-108">In the State field, type a value.</span></span>
+4. <span data-ttu-id="1f74f-109">Vælg Ja i feltet Standard ved frigivelse til juridisk enhed.</span><span class="sxs-lookup"><span data-stu-id="1f74f-109">Select Yes in the Default when released to legal entity field.</span></span>
+5. <span data-ttu-id="1f74f-110">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="1f74f-110">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="1f74f-111">Vælg Nej i feltet Er aktiv for planlægning.</span><span class="sxs-lookup"><span data-stu-id="1f74f-111">Select No in the Is active for planning field.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d6663-126">Standardstatussen for produktlivscyklus er en global definition.</span><span class="sxs-lookup"><span data-stu-id="d6663-126">The default product lifecycle state is a global definition.</span></span>  
+> <span data-ttu-id="1f74f-112">Hvis et nyt frigivet produkt ikke skal medtages i varedisponering, skal du vælge Nej.</span><span class="sxs-lookup"><span data-stu-id="1f74f-112">If a new released product should not be included in Master planning, select No.</span></span> <span data-ttu-id="1f74f-113">Hvis det skal medtages i varedisponering, skal kontrolelementet beholde standardværdien Ja.</span><span class="sxs-lookup"><span data-stu-id="1f74f-113">If it should be included in Master planning, leave the control at its default value Yes.</span></span>  
 
-## <a name="change-the-product-to-an-active-state"></a><span data-ttu-id="d6663-127">Skift produktet til en aktiv tilstand</span><span class="sxs-lookup"><span data-stu-id="d6663-127">Change the product to an active state</span></span>
-1. <span data-ttu-id="d6663-128">Indtast eller vælg en værdi i feltet Status for produktlivscyklus.</span><span class="sxs-lookup"><span data-stu-id="d6663-128">In the Product lifecycle state field, enter or select a value.</span></span>
+## <a name="create-a-new-released-product"></a><span data-ttu-id="1f74f-114">Opret et nyt frigivet produkt</span><span class="sxs-lookup"><span data-stu-id="1f74f-114">Create a new released product</span></span>
+1. <span data-ttu-id="1f74f-115">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1f74f-115">Close the page.</span></span>
+2. <span data-ttu-id="1f74f-116">Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="1f74f-116">Go to Product information management > Products > Released products.</span></span>
+3. <span data-ttu-id="1f74f-117">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="1f74f-117">Click New.</span></span>
+4. <span data-ttu-id="1f74f-118">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="1f74f-118">In the Product number field, type a value.</span></span>
+5. <span data-ttu-id="1f74f-119">Angiv en værdi i feltet Produktnavn.</span><span class="sxs-lookup"><span data-stu-id="1f74f-119">In the Product name field, type a value.</span></span>
+6. <span data-ttu-id="1f74f-120">Angiv en værdi i feltet Søgenavn.</span><span class="sxs-lookup"><span data-stu-id="1f74f-120">In the Search name field, type a value.</span></span>
+7. <span data-ttu-id="1f74f-121">Indtast eller vælg en værdi i feltet Varemodelgruppe.</span><span class="sxs-lookup"><span data-stu-id="1f74f-121">In the Item model group field, enter or select a value.</span></span>
+8. <span data-ttu-id="1f74f-122">Indtast eller vælg en værdi i feltet Varegruppe.</span><span class="sxs-lookup"><span data-stu-id="1f74f-122">In the Item group field, enter or select a value.</span></span>
+9. <span data-ttu-id="1f74f-123">Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="1f74f-123">In the Storage dimension group field, enter or select a value.</span></span>
+10. <span data-ttu-id="1f74f-124">Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="1f74f-124">In the Tracking dimension group field, enter or select a value.</span></span>
+11. <span data-ttu-id="1f74f-125">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="1f74f-125">Click OK.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d6663-129">Forudsat at du har oprettet en aktiv tilstand, kan du nu vælge den aktive tilstand for at tillade, at produktet bruges i varedisponering og styklisteniveauberegning.</span><span class="sxs-lookup"><span data-stu-id="d6663-129">Assume that you have set up an active state, you can now select the active state to allow the product to be used in Master planning and BOM-level calculation.</span></span> <span data-ttu-id="d6663-130">Selvfølgelig giver dette kun mening, hvis alle produktoplysningerne, der skal bruges til ensartet planlægning er angivet.</span><span class="sxs-lookup"><span data-stu-id="d6663-130">Obviously, this only makes sense if all the product details that are required for consistent planning are specified.</span></span>  
+> <span data-ttu-id="1f74f-126">Standardstatussen for produktlivscyklus er en global definition.</span><span class="sxs-lookup"><span data-stu-id="1f74f-126">The default product lifecycle state is a global definition.</span></span>  
 
+## <a name="change-the-product-to-an-active-state"></a><span data-ttu-id="1f74f-127">Skift produktet til en aktiv tilstand</span><span class="sxs-lookup"><span data-stu-id="1f74f-127">Change the product to an active state</span></span>
+1. <span data-ttu-id="1f74f-128">Indtast eller vælg en værdi i feltet Status for produktlivscyklus.</span><span class="sxs-lookup"><span data-stu-id="1f74f-128">In the Product lifecycle state field, enter or select a value.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1f74f-129">Forudsat at du har oprettet en aktiv tilstand, kan du nu vælge den aktive tilstand for at tillade, at produktet bruges i varedisponering og styklisteniveauberegning.</span><span class="sxs-lookup"><span data-stu-id="1f74f-129">Assume that you have set up an active state, you can now select the active state to allow the product to be used in Master planning and BOM-level calculation.</span></span> <span data-ttu-id="1f74f-130">Selvfølgelig giver dette kun mening, hvis alle produktoplysningerne, der skal bruges til ensartet planlægning er angivet.</span><span class="sxs-lookup"><span data-stu-id="1f74f-130">Obviously, this only makes sense if all the product details that are required for consistent planning are specified.</span></span>  
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
