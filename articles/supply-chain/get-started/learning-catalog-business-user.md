@@ -13,12 +13,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 75bd907b44ee320ae2d3c31193ae2f6143514c50
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c21521e0c68f0616ed33792d85e5e0f08156e68e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987448"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226755"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Undervisningskatalog til brugere af Dynamics 365 Supply Chain Management
 
@@ -60,8 +60,8 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Konfigurere og bruge diskret produktion i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-use-discrete-manufacturing-dyn365-supply-chain-mgmt/) | Hvis et firma kun producerer simple produkter, kan produktionen planlægges manuelt med de korrekte styklister, der ankommer til produktionsfabrikken på det korrekte tidspunkt og ved den rigtige ressource. Som en funktionel konsulent for produktion har du brug for at vide, hvordan du skal konfigurere Dynamics 365 Supply Chain Management til diskret produktion, så kunden kan udføre og styre produktionens livscyklus. | Gratis onlinelæringssti i dit eget tempo | 16.5 timer |
 | [Konfigurere og bruge lean manufacturing i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-use-lean-manufacturing-dyn365-supply-chain-mgmt/) | Lean manufacturing er et forløb med løbende forbedringer. Målet er at fremlægge præcist, hvad kunden ønsker, hvornår kunden ønsker det, og at gøre det økonomisk. Du kan bruge lean manufacturing i et samlet produktionsmiljø (blandet tilstand), der kombinerer forskellige strategier for levering, produktion og forsyning. Disse strategier omfatter produktionsordrer, batch-ordrer til forarbejdningsindustrier, købsordrer og overflytningsordrer. Lean manufacturing-arkitektur i Dynamics 365 Supply Chain Management består af produktionsflow, aktiviteter og kanban-regler. | Gratis onlinelæringssti i dit eget tempo | 12.5 timer |
-| [Konfigurere og bruge procesfremstilling i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-use-process-manufacturing-dyn365-supply-chain-mgmt/) | Procesfremstilling er knyttet til formler og produktionsopskrifter, i modsætning til diskret produktion, som bruger diskrete enheder og styklister. Procesfremstilling bruges i produktionsmiljøer, hvor produktionen fuldføres i batchprocesser eller halvkontinuerlige processer. | Gratis onlinelæringssti i dit eget tempo | 10.5 timer |
-| [Bruge lokationsstyring i produktionen i Dynamics 365 for Finance and Operations](https://docs.microsoft.com/learn/paths/use-warehouse-in-manufacturing-dyn365-fo/) | Brug af lokationsstyring i Dynamics 365 Supply Chain Management-produktionsprocesser er med til at optimere og strømline lagerprocesser i dit produktionsmiljø i overensstemmelse med firmaets behov | Gratis onlinelæringssti i dit eget tempo | 10.5 timer |
+| [Konfigurere og bruge procesfremstilling i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-use-process-manufacturing-dyn365-supply-chain-mgmt/) | Procesfremstilling er knyttet til formler og produktionsopskrifter, i modsætning til diskret produktion, som bruger diskrete enheder og styklister. Procesfremstilling bruges i produktionsmiljøer, hvor produktionen fuldføres i batchprocesser eller halvkontinuerlige processer. | Gratis onlinelæringssti i dit eget tempo | 10,5 timer |
+| [Bruge lokationsstyring i produktionen i Dynamics 365 for Finance and Operations](https://docs.microsoft.com/learn/paths/use-warehouse-in-manufacturing-dyn365-fo/) | Brug af lokationsstyring i Dynamics 365 Supply Chain Management-produktionsprocesser er med til at optimere og strømline lagerprocesser i dit produktionsmiljø i overensstemmelse med firmaets behov | Gratis onlinelæringssti i dit eget tempo | 10,5 timer |
 
 ## <a name="exam"></a>Eksamen<a name="exam"></a>
 
