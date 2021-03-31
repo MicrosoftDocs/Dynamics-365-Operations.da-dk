@@ -15,35 +15,38 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3d62e982d26afbec7ac04dd80592a73f4a3286f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e4852b25ef628cdef6f75f6edf550c539e344a4b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968897"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227058"
 ---
-# <a name="create-a-depreciation-proposal"></a><span data-ttu-id="4b64e-103">Oprette et afskrivningsforslag</span><span class="sxs-lookup"><span data-stu-id="4b64e-103">Create a depreciation proposal</span></span>
+# <a name="create-a-depreciation-proposal"></a><span data-ttu-id="8f047-103">Oprette et afskrivningsforslag</span><span class="sxs-lookup"><span data-stu-id="8f047-103">Create a depreciation proposal</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4b64e-104">Dette emne beskriver, hvordan batchafskrivningsforslag fungerer, og det forklares, hvordan du foreslå afskrivning for anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="4b64e-104">This topic describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets.</span></span> <span data-ttu-id="4b64e-105">Denne opgave bruger USMF-demofirmaet og rollen revisor.</span><span class="sxs-lookup"><span data-stu-id="4b64e-105">This task uses the USMF demo company and the accountant role.</span></span>
+<span data-ttu-id="8f047-104">Dette emne beskriver, hvordan batchafskrivningsforslag fungerer, og det forklares, hvordan du foreslå afskrivning for anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="8f047-104">This topic describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets.</span></span> <span data-ttu-id="8f047-105">Denne opgave bruger USMF-demofirmaet og rollen revisor.</span><span class="sxs-lookup"><span data-stu-id="8f047-105">This task uses the USMF demo company and the accountant role.</span></span>
 
 
-## <a name="create-a-depreciation-proposal"></a><span data-ttu-id="4b64e-106">Oprette et afskrivningsforslag</span><span class="sxs-lookup"><span data-stu-id="4b64e-106">Create a depreciation proposal</span></span>
-1. <span data-ttu-id="4b64e-107">I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Kladdeposteringer > Opret afskrivningsforslag**.</span><span class="sxs-lookup"><span data-stu-id="4b64e-107">In the navigation pane, go to **Modules > Fixed assets > Journal entries > Create depreciation proposal**.</span></span>
-2. <span data-ttu-id="4b64e-108">Vælg en indstilling på rullelisten i feltet **Kladdenavn**.</span><span class="sxs-lookup"><span data-stu-id="4b64e-108">In the **Name of journal** field, select an option from the drop-down menu.</span></span>
-3. <span data-ttu-id="4b64e-109">Indtast en dato i feltet **Til dato**.</span><span class="sxs-lookup"><span data-stu-id="4b64e-109">In the **To date** field, enter a date.</span></span>
+## <a name="create-a-depreciation-proposal"></a><span data-ttu-id="8f047-106">Oprette et afskrivningsforslag</span><span class="sxs-lookup"><span data-stu-id="8f047-106">Create a depreciation proposal</span></span>
+1. <span data-ttu-id="8f047-107">I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Kladdeposteringer > Opret afskrivningsforslag**.</span><span class="sxs-lookup"><span data-stu-id="8f047-107">In the navigation pane, go to **Modules > Fixed assets > Journal entries > Create depreciation proposal**.</span></span>
+2. <span data-ttu-id="8f047-108">Vælg en indstilling på rullelisten i feltet **Kladdenavn**.</span><span class="sxs-lookup"><span data-stu-id="8f047-108">In the **Name of journal** field, select an option from the drop-down menu.</span></span>
+3. <span data-ttu-id="8f047-109">Indtast en dato i feltet **Til dato**.</span><span class="sxs-lookup"><span data-stu-id="8f047-109">In the **To date** field, enter a date.</span></span>
 
-    - <span data-ttu-id="4b64e-110">Vælg indstillingen **Opsummer afskrivning**, hvis du vil opsummere månedlige afskrivninger på én kladdelinje.</span><span class="sxs-lookup"><span data-stu-id="4b64e-110">Select the **Summarize depreciation** option to summarize monthly depreciations into one journal line.</span></span>  
-    - <span data-ttu-id="4b64e-111">Hvis Til dato-værdien f.eks. er 31. marts 2015, genereres følgende beskrivelse: "Afskrivning siden 31. januar 2015".</span><span class="sxs-lookup"><span data-stu-id="4b64e-111">For example, if the To date value is March 31, 2015, the following description is generated: "Depreciation since January 31, 2015."</span></span> <span data-ttu-id="4b64e-112">Derefter indstilles feltet **Dato** på de foreslåede kladdelinjer til 31. marts 2015.</span><span class="sxs-lookup"><span data-stu-id="4b64e-112">The **Date** field on the proposed journal lines is then set to March 31, 2015.</span></span>  
-    - <span data-ttu-id="4b64e-113">Afskrivningsforslaget kan filtreres efter aktiv, aktivgruppe eller andre kriterier ved hjælp af parameteren **Filter**.</span><span class="sxs-lookup"><span data-stu-id="4b64e-113">The depreciation proposal can be filtered by asset, asset group, or other criteria using the **Filter** option.</span></span>  
-    - <span data-ttu-id="4b64e-114">Når du bruger formen **Opret anskaffelses- eller afskrivningsforslag til anlægsaktiver**, kan du foreslå afskrivning i batch.</span><span class="sxs-lookup"><span data-stu-id="4b64e-114">When you use the **Create acquisition or depreciation proposals for fixed assets** form, you can propose depreciation in batches.</span></span> <span data-ttu-id="4b64e-115">Dette anbefales til større forslag, der vil bruge flere systemressourcer.</span><span class="sxs-lookup"><span data-stu-id="4b64e-115">This is recommended for larger proposals that will use more system resources.</span></span> <span data-ttu-id="4b64e-116">Hvis du vælger batchindstillingen, kan du stadig fuldføre andre opgaver samtidig.</span><span class="sxs-lookup"><span data-stu-id="4b64e-116">If you select the batch option, you can still complete other tasks during that time.</span></span> <span data-ttu-id="4b64e-117">Når du foreslår afskrivning på denne måde, beregnes afskrivningen for værdimodeller for anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="4b64e-117">When you propose depreciation in this way, depreciation is calculated for value models for fixed assets.</span></span>  
+    - <span data-ttu-id="8f047-110">Vælg indstillingen **Opsummer afskrivning**, hvis du vil opsummere månedlige afskrivninger på én kladdelinje.</span><span class="sxs-lookup"><span data-stu-id="8f047-110">Select the **Summarize depreciation** option to summarize monthly depreciations into one journal line.</span></span>  
+    - <span data-ttu-id="8f047-111">Hvis Til dato-værdien f.eks. er 31. marts 2015, genereres følgende beskrivelse: "Afskrivning siden 31. januar 2015".</span><span class="sxs-lookup"><span data-stu-id="8f047-111">For example, if the To date value is March 31, 2015, the following description is generated: "Depreciation since January 31, 2015."</span></span> <span data-ttu-id="8f047-112">Derefter indstilles feltet **Dato** på de foreslåede kladdelinjer til 31. marts 2015.</span><span class="sxs-lookup"><span data-stu-id="8f047-112">The **Date** field on the proposed journal lines is then set to March 31, 2015.</span></span>  
+    - <span data-ttu-id="8f047-113">Afskrivningsforslaget kan filtreres efter aktiv, aktivgruppe eller andre kriterier ved hjælp af parameteren **Filter**.</span><span class="sxs-lookup"><span data-stu-id="8f047-113">The depreciation proposal can be filtered by asset, asset group, or other criteria using the **Filter** option.</span></span>  
+    - <span data-ttu-id="8f047-114">Når du bruger formen **Opret anskaffelses- eller afskrivningsforslag til anlægsaktiver**, kan du foreslå afskrivning i batch.</span><span class="sxs-lookup"><span data-stu-id="8f047-114">When you use the **Create acquisition or depreciation proposals for fixed assets** form, you can propose depreciation in batches.</span></span> <span data-ttu-id="8f047-115">Dette anbefales til større forslag, der vil bruge flere systemressourcer.</span><span class="sxs-lookup"><span data-stu-id="8f047-115">This is recommended for larger proposals that will use more system resources.</span></span> <span data-ttu-id="8f047-116">Hvis du vælger batchindstillingen, kan du stadig fuldføre andre opgaver samtidig.</span><span class="sxs-lookup"><span data-stu-id="8f047-116">If you select the batch option, you can still complete other tasks during that time.</span></span> <span data-ttu-id="8f047-117">Når du foreslår afskrivning på denne måde, beregnes afskrivningen for værdimodeller for anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="8f047-117">When you propose depreciation in this way, depreciation is calculated for value models for fixed assets.</span></span>  
 
-4. <span data-ttu-id="4b64e-118">Vælg **Opret kladde**.</span><span class="sxs-lookup"><span data-stu-id="4b64e-118">Select **Create journal**.</span></span>
+4. <span data-ttu-id="8f047-118">Vælg **Opret kladde**.</span><span class="sxs-lookup"><span data-stu-id="8f047-118">Select **Create journal**.</span></span>
 
-## <a name="review-depreciation-entries"></a><span data-ttu-id="4b64e-119">Gennemse afskrivningsposter.</span><span class="sxs-lookup"><span data-stu-id="4b64e-119">Review depreciation entries</span></span>
-1. <span data-ttu-id="4b64e-120">I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Kladdeposteringer > Anlægsaktivkladde**.</span><span class="sxs-lookup"><span data-stu-id="4b64e-120">In the navigation pane, go to **Modules > Fixed assets > Journal entries > Fixed assets journal**.</span></span>
-2. <span data-ttu-id="4b64e-121">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="4b64e-121">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="4b64e-122">Vælg **Linjer**.</span><span class="sxs-lookup"><span data-stu-id="4b64e-122">Select **Lines**.</span></span>
-4. <span data-ttu-id="4b64e-123">Vælg **Bogfør**.</span><span class="sxs-lookup"><span data-stu-id="4b64e-123">Select **Post**.</span></span>
+## <a name="review-depreciation-entries"></a><span data-ttu-id="8f047-119">Gennemse afskrivningsposter.</span><span class="sxs-lookup"><span data-stu-id="8f047-119">Review depreciation entries</span></span>
+1. <span data-ttu-id="8f047-120">I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Kladdeposteringer > Anlægsaktivkladde**.</span><span class="sxs-lookup"><span data-stu-id="8f047-120">In the navigation pane, go to **Modules > Fixed assets > Journal entries > Fixed assets journal**.</span></span>
+2. <span data-ttu-id="8f047-121">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8f047-121">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="8f047-122">Vælg **Linjer**.</span><span class="sxs-lookup"><span data-stu-id="8f047-122">Select **Lines**.</span></span>
+4. <span data-ttu-id="8f047-123">Vælg **Bogfør**.</span><span class="sxs-lookup"><span data-stu-id="8f047-123">Select **Post**.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
