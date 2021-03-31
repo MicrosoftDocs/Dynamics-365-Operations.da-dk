@@ -15,43 +15,46 @@ ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c39bb0900b6abb6fecac99ec46fba9b4646ddf0a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 80947351c8c08177693e2152900c4a9e4b49245d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009064"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218746"
 ---
-# <a name="import-oioubl-electronic-invoicing-configurations"></a><span data-ttu-id="bc675-103">Importere konfigurationer for elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="bc675-103">Import OIOUBL electronic invoicing configurations</span></span>
+# <a name="import-oioubl-electronic-invoicing-configurations"></a><span data-ttu-id="59507-103">Importere konfigurationer for elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="59507-103">Import OIOUBL electronic invoicing configurations</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="bc675-104">Denne procedure viser, hvordan du importerer elektroniske OIOUBL-fakturakonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="bc675-104">This procedure shows how to import OIOUBL electronic invoice configurations.</span></span> 
+<span data-ttu-id="59507-104">Denne procedure viser, hvordan du importerer elektroniske OIOUBL-fakturakonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="59507-104">This procedure shows how to import OIOUBL electronic invoice configurations.</span></span> 
 
 
 
-<span data-ttu-id="bc675-105">Denne opgave blev oprettet ved hjælp af demodatafirmaet USMF med landet/området i den juridiske enheds primære adresse opdateret til Danmark.</span><span class="sxs-lookup"><span data-stu-id="bc675-105">This task was created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.</span></span>
+<span data-ttu-id="59507-105">Denne opgave blev oprettet ved hjælp af demodatafirmaet USMF med landet/området i den juridiske enheds primære adresse opdateret til Danmark.</span><span class="sxs-lookup"><span data-stu-id="59507-105">This task was created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.</span></span>
 
 
 
-<span data-ttu-id="bc675-106">Det er den første af seks opgaver, der viser processen til oprettelse af e-fakturaer ved hjælp af elektroniske rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="bc675-106">This is the first of six tasks that demonstrate the process of generating e-invoices using electronic reporting configurations.</span></span> <span data-ttu-id="bc675-107">Denne opgave bruger eksemplet med OIOUBL-e-fakturaen, der er fælles for Danmark, Østrig og Norge.</span><span class="sxs-lookup"><span data-stu-id="bc675-107">This task uses the OIOUBL e-invoice example, which is common for Denmark, Austria, and Norway.</span></span>
+<span data-ttu-id="59507-106">Det er den første af seks opgaver, der viser processen til oprettelse af e-fakturaer ved hjælp af elektroniske rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="59507-106">This is the first of six tasks that demonstrate the process of generating e-invoices using electronic reporting configurations.</span></span> <span data-ttu-id="59507-107">Denne opgave bruger eksemplet med OIOUBL-e-fakturaen, der er fælles for Danmark, Østrig og Norge.</span><span class="sxs-lookup"><span data-stu-id="59507-107">This task uses the OIOUBL e-invoice example, which is common for Denmark, Austria, and Norway.</span></span>
 
-1. <span data-ttu-id="bc675-108">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="bc675-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="bc675-109">Vælg Microsoft på listen over konfigurationsudbydere.</span><span class="sxs-lookup"><span data-stu-id="bc675-109">In the list of Configuration providers, select Microsoft.</span></span>
-3. <span data-ttu-id="bc675-110">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="bc675-110">Click Set active.</span></span>
-4. <span data-ttu-id="bc675-111">Klik på Lagre.</span><span class="sxs-lookup"><span data-stu-id="bc675-111">Click Repositories.</span></span>
-5. <span data-ttu-id="bc675-112">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="bc675-112">Click Open.</span></span>
-6. <span data-ttu-id="bc675-113">Klik på Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="bc675-113">Click Show filters.</span></span>
-7. <span data-ttu-id="bc675-114">Anvend følgende filtre: Angiv filterværdien "OIOUBL salgsfaktura" i feltet "Konfigurationsnavn" med værdien "Intrastat-rapport" ved hjælp af filteroperatoren "begynder med"</span><span class="sxs-lookup"><span data-stu-id="bc675-114">Apply the following filters: Enter a filter value of "OIOUBL Sales invoice" on the "Configuration name" field using the "begins with" filter operator</span></span>
-8. <span data-ttu-id="bc675-115">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="bc675-115">Click Import.</span></span>
-9. <span data-ttu-id="bc675-116">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="bc675-116">Click Yes.</span></span>
-10. <span data-ttu-id="bc675-117">Anvend følgende filtre: Angiv filterværdien "OIOUBL kreditnota" i feltet "Konfigurationsnavn" med værdien "Intrastat-rapport" ved hjælp af filteroperatoren "begynder med"</span><span class="sxs-lookup"><span data-stu-id="bc675-117">Apply the following filters: Enter a filter value of "OIOUBL Sales credit note" on the "Configuration name" field using the "begins with" filter operator</span></span>
-11. <span data-ttu-id="bc675-118">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="bc675-118">Click Import.</span></span>
-12. <span data-ttu-id="bc675-119">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="bc675-119">Click Yes.</span></span>
-13. <span data-ttu-id="bc675-120">Anvend følgende filtre: Angiv filterværdien "OIOUBL projektfaktura" i feltet "Konfigurationsnavn" med værdien "Intrastat-rapport" ved hjælp af filteroperatoren "begynder med"</span><span class="sxs-lookup"><span data-stu-id="bc675-120">Apply the following filters: Enter a filter value of "OIOUBL Project invoice" on the "Configuration name" field using the "begins with" filter operator</span></span>
-14. <span data-ttu-id="bc675-121">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="bc675-121">Click Import.</span></span>
-15. <span data-ttu-id="bc675-122">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="bc675-122">Click Yes.</span></span>
-16. <span data-ttu-id="bc675-123">Anvend følgende filtre: Angiv filterværdien "OIOUBL projektkreditnota" i feltet "Konfigurationsnavn" ved hjælp af filteroperatoren "starter med"</span><span class="sxs-lookup"><span data-stu-id="bc675-123">Apply the following filters: Enter a filter value of "OIOUBL Project credit note" on the "Configuration name" field using the "begins with" filter operator</span></span>
-17. <span data-ttu-id="bc675-124">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="bc675-124">Click Import.</span></span>
-18. <span data-ttu-id="bc675-125">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="bc675-125">Click Yes.</span></span>
+1. <span data-ttu-id="59507-108">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="59507-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="59507-109">Vælg Microsoft på listen over konfigurationsudbydere.</span><span class="sxs-lookup"><span data-stu-id="59507-109">In the list of Configuration providers, select Microsoft.</span></span>
+3. <span data-ttu-id="59507-110">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="59507-110">Click Set active.</span></span>
+4. <span data-ttu-id="59507-111">Klik på Lagre.</span><span class="sxs-lookup"><span data-stu-id="59507-111">Click Repositories.</span></span>
+5. <span data-ttu-id="59507-112">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="59507-112">Click Open.</span></span>
+6. <span data-ttu-id="59507-113">Klik på Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="59507-113">Click Show filters.</span></span>
+7. <span data-ttu-id="59507-114">Anvend følgende filtre: Angiv filterværdien "OIOUBL salgsfaktura" i feltet "Konfigurationsnavn" med værdien "Intrastat-rapport" ved hjælp af filteroperatoren "begynder med"</span><span class="sxs-lookup"><span data-stu-id="59507-114">Apply the following filters: Enter a filter value of "OIOUBL Sales invoice" on the "Configuration name" field using the "begins with" filter operator</span></span>
+8. <span data-ttu-id="59507-115">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="59507-115">Click Import.</span></span>
+9. <span data-ttu-id="59507-116">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="59507-116">Click Yes.</span></span>
+10. <span data-ttu-id="59507-117">Anvend følgende filtre: Angiv filterværdien "OIOUBL kreditnota" i feltet "Konfigurationsnavn" med værdien "Intrastat-rapport" ved hjælp af filteroperatoren "begynder med"</span><span class="sxs-lookup"><span data-stu-id="59507-117">Apply the following filters: Enter a filter value of "OIOUBL Sales credit note" on the "Configuration name" field using the "begins with" filter operator</span></span>
+11. <span data-ttu-id="59507-118">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="59507-118">Click Import.</span></span>
+12. <span data-ttu-id="59507-119">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="59507-119">Click Yes.</span></span>
+13. <span data-ttu-id="59507-120">Anvend følgende filtre: Angiv filterværdien "OIOUBL projektfaktura" i feltet "Konfigurationsnavn" med værdien "Intrastat-rapport" ved hjælp af filteroperatoren "begynder med"</span><span class="sxs-lookup"><span data-stu-id="59507-120">Apply the following filters: Enter a filter value of "OIOUBL Project invoice" on the "Configuration name" field using the "begins with" filter operator</span></span>
+14. <span data-ttu-id="59507-121">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="59507-121">Click Import.</span></span>
+15. <span data-ttu-id="59507-122">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="59507-122">Click Yes.</span></span>
+16. <span data-ttu-id="59507-123">Anvend følgende filtre: Angiv filterværdien "OIOUBL projektkreditnota" i feltet "Konfigurationsnavn" ved hjælp af filteroperatoren "starter med"</span><span class="sxs-lookup"><span data-stu-id="59507-123">Apply the following filters: Enter a filter value of "OIOUBL Project credit note" on the "Configuration name" field using the "begins with" filter operator</span></span>
+17. <span data-ttu-id="59507-124">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="59507-124">Click Import.</span></span>
+18. <span data-ttu-id="59507-125">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="59507-125">Click Yes.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
