@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 47a7d17b97631ba469a9b68f5f6cf492ebccde6f
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 6afd19a01520813e54871f4849aeb18f4424173c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097300"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223041"
 ---
 # <a name="modify-an-existing-site-page"></a>Redigere en eksisterende webstedsside
 
@@ -30,7 +30,7 @@ ms.locfileid: "5097300"
 
 Dette emne indeholder en beskrivelse af, hvordan du kan redigere en eksisterende webstedsside i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Når du skal redigere en side, skal du først åbne den i sideeditoren. Gå til det websted, der indeholder siden, og søg derefter efter den ønskede side på listen over sider. Hvis du ikke kan finde siden, kan du bruge funktionen til avanceret søgning i oprettelsesværktøjet. Skriv enten det præcise sidenavn, eller skriv de første par bogstaver i navnet og derefter en stjerne (\*). Der vises en filtreret liste over sider. Du kan bruge denne liste til at finde den ønskede side. Når du har fundet siden, skal du vælge sidenavnet for at åbne siden i sideeditoren.
 

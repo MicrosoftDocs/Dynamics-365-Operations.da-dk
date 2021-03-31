@@ -15,12 +15,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c91d23ebf80e92128ab60c25cf959391e28e6edb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e390a8cb25b7f72c7eaa261b63d65121dcab026f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988061"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217285"
 ---
 # <a name="set-up-payment-slip-format"></a>Konfigurere indbetalingskortformat
 

@@ -15,12 +15,12 @@ ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c39bb0900b6abb6fecac99ec46fba9b4646ddf0a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 80947351c8c08177693e2152900c4a9e4b49245d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009064"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218746"
 ---
 # <a name="import-oioubl-electronic-invoicing-configurations"></a>Importere konfigurationer for elektronisk OIOUBL-fakturering
 
