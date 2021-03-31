@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74dbad4cb348f19b51ba8b84a1cd41fc5049708e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 785ff004adcd94e7c4c6c5918d632ce662aa7989
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006329"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205116"
 ---
-# <a name="store-selector-module"></a>Modulet Butiksvælger
+# <a name="store-selector-module"></a>Butiksvælgermodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Kunder kan bruge butiksvælgermodulet til at hente et produkt i en valgt butik efter et onlineindkøb. I Commerce version 10.0.13 indeholder butiksvælgermodulet også yderligere egenskaber, der kan vise en **Find en butik**-side, der viser butikker i nærheden.
 

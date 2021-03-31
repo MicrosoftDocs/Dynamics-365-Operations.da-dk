@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54e690b0dde048b17ce074fcc30cf20a9ff7a4ca
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 2d96f173c68bd6a7d9c7a559ed7f18329c3508af
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097123"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208033"
 ---
 # <a name="add-a-new-site-page"></a>Tilføje en ny webstedsside
 
@@ -30,7 +30,7 @@ ms.locfileid: "5097123"
 
 Dette emne indeholder en beskrivelse af, hvordan du tilføjer en ny side på et websted i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Når du har oprettet skabeloner og fragmenter til dit websted, er næste trin at starte med at oprette sider, der bruger dem. For at komme i gang skal du vælge en skabelon eller et layout, et sidenavn og en side-URL-adresse.
 

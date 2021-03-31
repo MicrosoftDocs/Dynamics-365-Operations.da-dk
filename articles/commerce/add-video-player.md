@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 712e9359e31be96c426d6f16c878f18f05cc1bd2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 13072c8d6839fef1ab0dd55d626c23a2a1084d4d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980101"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209173"
 ---
 # <a name="video-player-module"></a>Videoafspillermodul
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler videoafspillermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Videoafspillermodulet bruges til at understøtte videoafspilning. Den kan føjes til en hvilken som helst side, som videoindholdet uploades til og vises i CMS (Content Management system). Videoafspillermodulet understøtter medietypen .mp4.
 

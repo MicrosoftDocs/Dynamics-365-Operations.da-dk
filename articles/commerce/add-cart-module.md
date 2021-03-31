@@ -1,6 +1,6 @@
 ---
 title: Indkøbsvognmodul
-description: Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+description: Dette emne omhandler indkøbsvogn-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 12/15/2020
@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: abb9909c03577763ff7e6242c9395a58159df6ca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5b0ce69f57e6ba691803752280466b41ced7c521
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985973"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206481"
 ---
-# <a name="cart-module"></a>Indkøbsvognmodul
+# <a name="cart-module"></a>Indkøbskurvsmodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
+Dette emne omhandler indkøbsvogn-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
 Et indkøbsvognmodul viser de varer, der er føjet til indkøbsvognen, før kunden fortsætter med at betale. Modulet viser også en ordreoversigt, og kunden kan anvende eller fjerne kampagnekoder.
 

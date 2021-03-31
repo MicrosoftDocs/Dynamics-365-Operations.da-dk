@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ae3da8ee77636a2d2257e01f5876f5542469f7da
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4ddaf34ed2dec882310e5363db643bb522be1238
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986048"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206529"
 ---
-# <a name="buy-box-module"></a>Købefeltmodul
+# <a name="buy-box-module"></a>Boksmodul til køb
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Termen *købefelt* refererer normalt til det område på en produktdetaljeside, der er "over folden", og som omfatter alle de vigtigste oplysninger, der kræves for at foretage et produktkøb. (et område, der er "over folden", er synligt med det samme, når siden indlæses, så brugerne ikke behøver at rulle ned for at se den).
 
