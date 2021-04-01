@@ -15,84 +15,87 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0d07f008f15e7e4bb51871eee4658e7d2c49f8c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 24ccb53da55deb0fe919e4ea1d4a8519748129ab
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968288"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251096"
 ---
-# <a name="post-a-project-invoice-with-a-payment-slip"></a><span data-ttu-id="11745-103">Bogføre en projektfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="11745-103">Post a project invoice with a payment slip</span></span>
+# <a name="post-a-project-invoice-with-a-payment-slip"></a><span data-ttu-id="dea92-103">Bogføre en projektfaktura med et indbetalingskort</span><span class="sxs-lookup"><span data-stu-id="dea92-103">Post a project invoice with a payment slip</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="11745-104">Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.</span><span class="sxs-lookup"><span data-stu-id="11745-104">You can post a free text invoice with a payment slip attachment in a specified format.</span></span> <span data-ttu-id="11745-105">Indbetalingskortet udskrives med kreditorens id-nummer og fakturanummeret, så indbetalingen kan identificeres.</span><span class="sxs-lookup"><span data-stu-id="11745-105">The payment slip is printed with the creditor identification number and invoice number to identify the payment.</span></span>
+<span data-ttu-id="dea92-104">Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.</span><span class="sxs-lookup"><span data-stu-id="dea92-104">You can post a free text invoice with a payment slip attachment in a specified format.</span></span> <span data-ttu-id="dea92-105">Indbetalingskortet udskrives med kreditorens id-nummer og fakturanummeret, så indbetalingen kan identificeres.</span><span class="sxs-lookup"><span data-stu-id="dea92-105">The payment slip is printed with the creditor identification number and invoice number to identify the payment.</span></span>
 
-<span data-ttu-id="11745-106">Før du kan udføre denne procedure, skal du først oprette et indbetalingskortformat og oprette indbetalingskort til kundefakturaer.</span><span class="sxs-lookup"><span data-stu-id="11745-106">Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices.</span></span> 
+<span data-ttu-id="dea92-106">Før du kan udføre denne procedure, skal du først oprette et indbetalingskortformat og oprette indbetalingskort til kundefakturaer.</span><span class="sxs-lookup"><span data-stu-id="dea92-106">Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices.</span></span> 
 
 
 
-<span data-ttu-id="11745-107">Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Danmark.</span><span class="sxs-lookup"><span data-stu-id="11745-107">This functionality is available for legal entities whose primary address is in Denmark.</span></span> 
+<span data-ttu-id="dea92-107">Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Danmark.</span><span class="sxs-lookup"><span data-stu-id="dea92-107">This functionality is available for legal entities whose primary address is in Denmark.</span></span> 
 
-<span data-ttu-id="11745-108">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="11745-108">This procedure was created using the demo data company DEMF.</span></span>
+<span data-ttu-id="dea92-108">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="dea92-108">This procedure was created using the demo data company DEMF.</span></span>
 
-1. <span data-ttu-id="11745-109">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="11745-109">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="11745-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-110">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="11745-111">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-111">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="11745-112">Vis eller skjul sektionen Faktura og levering.</span><span class="sxs-lookup"><span data-stu-id="11745-112">Expand or collapse the Invoice and delivery section.</span></span>
-5. <span data-ttu-id="11745-113">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="11745-113">Click Edit.</span></span>
-6. <span data-ttu-id="11745-114">I feltet På en projektfaktura skal du vælge en indstilling.</span><span class="sxs-lookup"><span data-stu-id="11745-114">In the On a project invoice field, select an option.</span></span>
-    * <span data-ttu-id="11745-115">o    Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="11745-115">o    None – Do not print a payment slip.</span></span> <span data-ttu-id="11745-116">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="11745-116">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="11745-117">o    FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="11745-117">o    FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="11745-118">o FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="11745-118">o    FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>     
-7. <span data-ttu-id="11745-119">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="11745-119">Click Save.</span></span>
-8. <span data-ttu-id="11745-120">Klik på fanen TabPageGrid.</span><span class="sxs-lookup"><span data-stu-id="11745-120">Click the TabPageGrid tab.</span></span>
-9. <span data-ttu-id="11745-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="11745-121">Close the page.</span></span>
-10. <span data-ttu-id="11745-122">Gå til Projektstyring og regnskab > Projekter > Projektkontrakter.</span><span class="sxs-lookup"><span data-stu-id="11745-122">Go to Project management and accounting > Projects > Project contracts.</span></span>
-11. <span data-ttu-id="11745-123">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="11745-123">Click New.</span></span>
-12. <span data-ttu-id="11745-124">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="11745-124">In the Name field, type a value.</span></span>
-13. <span data-ttu-id="11745-125">Klik på rullelisten i feltet Finansieringskilde for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="11745-125">In the Funding source field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="11745-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-126">In the list, click the link in the selected row.</span></span>
-15. <span data-ttu-id="11745-127">Klik på rullelisten i feltet Salgsvaluta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="11745-127">In the Sales currency field, click the drop-down button to open the lookup.</span></span>
-16. <span data-ttu-id="11745-128">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-128">In the list, find and select the desired record.</span></span>
-17. <span data-ttu-id="11745-129">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-129">In the list, click the link in the selected row.</span></span>
-18. <span data-ttu-id="11745-130">Klik på rullelisten i feltet Salgsvaluta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="11745-130">In the Sales currency field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="11745-131">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-131">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="11745-132">Indbetalingskortet kan kun udskrives for en projektfaktura med valutaen danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="11745-132">The payment slip can be printed only for a project invoice with the currency Danish kroner (DKK).</span></span>  
-20. <span data-ttu-id="11745-133">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-133">In the list, click the link in the selected row.</span></span>
-21. <span data-ttu-id="11745-134">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="11745-134">Click OK.</span></span>
-22. <span data-ttu-id="11745-135">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="11745-135">Click Save.</span></span>
-23. <span data-ttu-id="11745-136">Gå til Projektstyring og regnskab > Projekter > Alle projekter.</span><span class="sxs-lookup"><span data-stu-id="11745-136">Go to Project management and accounting > Projects > All projects.</span></span>
-24. <span data-ttu-id="11745-137">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="11745-137">Click New.</span></span>
-25. <span data-ttu-id="11745-138">Vælg en indstilling i feltet Projekttype.</span><span class="sxs-lookup"><span data-stu-id="11745-138">In the Project type field, select an option.</span></span>
-26. <span data-ttu-id="11745-139">Skriv en værdi i feltet Projektnavn.</span><span class="sxs-lookup"><span data-stu-id="11745-139">In the Project name field, type a value.</span></span>
-27. <span data-ttu-id="11745-140">Klik på rullelisten i feltet Projektgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="11745-140">In the Project group field, click the drop-down button to open the lookup.</span></span>
-28. <span data-ttu-id="11745-141">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-141">In the list, click the link in the selected row.</span></span>
-29. <span data-ttu-id="11745-142">Klik på rullelisten i feltet Projektkontrakt-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="11745-142">In the Project contract ID field, click the drop-down button to open the lookup.</span></span>
-30. <span data-ttu-id="11745-143">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-143">In the list, find and select the desired record.</span></span>
-31. <span data-ttu-id="11745-144">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-144">In the list, click the link in the selected row.</span></span>
-32. <span data-ttu-id="11745-145">Klik på Opret projekt.</span><span class="sxs-lookup"><span data-stu-id="11745-145">Click Create project.</span></span>
-33. <span data-ttu-id="11745-146">Klik på Projekt i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="11745-146">On the Action Pane, click Project.</span></span>
-34. <span data-ttu-id="11745-147">Klik på Projektstadie.</span><span class="sxs-lookup"><span data-stu-id="11745-147">Click Project stage.</span></span>
-35. <span data-ttu-id="11745-148">Klik på Under behandling.</span><span class="sxs-lookup"><span data-stu-id="11745-148">Click In process.</span></span>
-36. <span data-ttu-id="11745-149">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="11745-149">Click OK.</span></span>
-37. <span data-ttu-id="11745-150">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="11745-150">Click Save.</span></span>
-38. <span data-ttu-id="11745-151">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="11745-151">On the Action Pane, click Manage.</span></span>
-39. <span data-ttu-id="11745-152">Klik på Acontotransaktioner.</span><span class="sxs-lookup"><span data-stu-id="11745-152">Click On-account transactions.</span></span>
-40. <span data-ttu-id="11745-153">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="11745-153">Click New.</span></span>
-41. <span data-ttu-id="11745-154">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-154">In the list, mark the selected row.</span></span>
-42. <span data-ttu-id="11745-155">Angiv et tal i feltet Salgspris.</span><span class="sxs-lookup"><span data-stu-id="11745-155">In the Sales price field, enter a number.</span></span>
-43. <span data-ttu-id="11745-156">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="11745-156">Click Save.</span></span>
-44. <span data-ttu-id="11745-157">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="11745-157">Close the page.</span></span>
-45. <span data-ttu-id="11745-158">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="11745-158">On the Action Pane, click Manage.</span></span>
-46. <span data-ttu-id="11745-159">Klik på Projektfakturaforslag.</span><span class="sxs-lookup"><span data-stu-id="11745-159">Click Project invoice proposals.</span></span>
-47. <span data-ttu-id="11745-160">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="11745-160">Click New.</span></span>
-48. <span data-ttu-id="11745-161">Klik på Fakturaforslag.</span><span class="sxs-lookup"><span data-stu-id="11745-161">Click Invoice proposal.</span></span>
-49. <span data-ttu-id="11745-162">Klik på rullelisten i feltet Projekt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="11745-162">In the Project field, click the drop-down button to open the lookup.</span></span>
-50. <span data-ttu-id="11745-163">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="11745-163">Close the page.</span></span>
-51. <span data-ttu-id="11745-164">Klik på rullelisten i feltet Projektkontrakt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="11745-164">In the Project contract field, click the drop-down button to open the lookup.</span></span>
-52. <span data-ttu-id="11745-165">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-165">In the list, find and select the desired record.</span></span>
-53. <span data-ttu-id="11745-166">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="11745-166">In the list, click the link in the selected row.</span></span>
-54. <span data-ttu-id="11745-167">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="11745-167">Click OK.</span></span>
-55. <span data-ttu-id="11745-168">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="11745-168">Click Post.</span></span>
-56. <span data-ttu-id="11745-169">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="11745-169">Click OK.</span></span>
-57. <span data-ttu-id="11745-170">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="11745-170">Click OK.</span></span>
+1. <span data-ttu-id="dea92-109">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="dea92-109">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="dea92-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="dea92-111">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="dea92-112">Vis eller skjul sektionen Faktura og levering.</span><span class="sxs-lookup"><span data-stu-id="dea92-112">Expand or collapse the Invoice and delivery section.</span></span>
+5. <span data-ttu-id="dea92-113">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="dea92-113">Click Edit.</span></span>
+6. <span data-ttu-id="dea92-114">I feltet På en projektfaktura skal du vælge en indstilling.</span><span class="sxs-lookup"><span data-stu-id="dea92-114">In the On a project invoice field, select an option.</span></span>
+    * <span data-ttu-id="dea92-115">o    Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="dea92-115">o    None – Do not print a payment slip.</span></span> <span data-ttu-id="dea92-116">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="dea92-116">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="dea92-117">o    FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="dea92-117">o    FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="dea92-118">o FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="dea92-118">o    FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>     
+7. <span data-ttu-id="dea92-119">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dea92-119">Click Save.</span></span>
+8. <span data-ttu-id="dea92-120">Klik på fanen TabPageGrid.</span><span class="sxs-lookup"><span data-stu-id="dea92-120">Click the TabPageGrid tab.</span></span>
+9. <span data-ttu-id="dea92-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="dea92-121">Close the page.</span></span>
+10. <span data-ttu-id="dea92-122">Gå til Projektstyring og regnskab > Projekter > Projektkontrakter.</span><span class="sxs-lookup"><span data-stu-id="dea92-122">Go to Project management and accounting > Projects > Project contracts.</span></span>
+11. <span data-ttu-id="dea92-123">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dea92-123">Click New.</span></span>
+12. <span data-ttu-id="dea92-124">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="dea92-124">In the Name field, type a value.</span></span>
+13. <span data-ttu-id="dea92-125">Klik på rullelisten i feltet Finansieringskilde for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dea92-125">In the Funding source field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="dea92-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-126">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="dea92-127">Klik på rullelisten i feltet Salgsvaluta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dea92-127">In the Sales currency field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="dea92-128">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-128">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="dea92-129">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-129">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="dea92-130">Klik på rullelisten i feltet Salgsvaluta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dea92-130">In the Sales currency field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="dea92-131">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-131">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="dea92-132">Indbetalingskortet kan kun udskrives for en projektfaktura med valutaen danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="dea92-132">The payment slip can be printed only for a project invoice with the currency Danish kroner (DKK).</span></span>  
+20. <span data-ttu-id="dea92-133">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-133">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="dea92-134">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="dea92-134">Click OK.</span></span>
+22. <span data-ttu-id="dea92-135">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dea92-135">Click Save.</span></span>
+23. <span data-ttu-id="dea92-136">Gå til Projektstyring og regnskab > Projekter > Alle projekter.</span><span class="sxs-lookup"><span data-stu-id="dea92-136">Go to Project management and accounting > Projects > All projects.</span></span>
+24. <span data-ttu-id="dea92-137">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dea92-137">Click New.</span></span>
+25. <span data-ttu-id="dea92-138">Vælg en indstilling i feltet Projekttype.</span><span class="sxs-lookup"><span data-stu-id="dea92-138">In the Project type field, select an option.</span></span>
+26. <span data-ttu-id="dea92-139">Skriv en værdi i feltet Projektnavn.</span><span class="sxs-lookup"><span data-stu-id="dea92-139">In the Project name field, type a value.</span></span>
+27. <span data-ttu-id="dea92-140">Klik på rullelisten i feltet Projektgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dea92-140">In the Project group field, click the drop-down button to open the lookup.</span></span>
+28. <span data-ttu-id="dea92-141">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-141">In the list, click the link in the selected row.</span></span>
+29. <span data-ttu-id="dea92-142">Klik på rullelisten i feltet Projektkontrakt-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dea92-142">In the Project contract ID field, click the drop-down button to open the lookup.</span></span>
+30. <span data-ttu-id="dea92-143">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-143">In the list, find and select the desired record.</span></span>
+31. <span data-ttu-id="dea92-144">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-144">In the list, click the link in the selected row.</span></span>
+32. <span data-ttu-id="dea92-145">Klik på Opret projekt.</span><span class="sxs-lookup"><span data-stu-id="dea92-145">Click Create project.</span></span>
+33. <span data-ttu-id="dea92-146">Klik på Projekt i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="dea92-146">On the Action Pane, click Project.</span></span>
+34. <span data-ttu-id="dea92-147">Klik på Projektstadie.</span><span class="sxs-lookup"><span data-stu-id="dea92-147">Click Project stage.</span></span>
+35. <span data-ttu-id="dea92-148">Klik på Under behandling.</span><span class="sxs-lookup"><span data-stu-id="dea92-148">Click In process.</span></span>
+36. <span data-ttu-id="dea92-149">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="dea92-149">Click OK.</span></span>
+37. <span data-ttu-id="dea92-150">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dea92-150">Click Save.</span></span>
+38. <span data-ttu-id="dea92-151">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="dea92-151">On the Action Pane, click Manage.</span></span>
+39. <span data-ttu-id="dea92-152">Klik på Acontotransaktioner.</span><span class="sxs-lookup"><span data-stu-id="dea92-152">Click On-account transactions.</span></span>
+40. <span data-ttu-id="dea92-153">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dea92-153">Click New.</span></span>
+41. <span data-ttu-id="dea92-154">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-154">In the list, mark the selected row.</span></span>
+42. <span data-ttu-id="dea92-155">Angiv et tal i feltet Salgspris.</span><span class="sxs-lookup"><span data-stu-id="dea92-155">In the Sales price field, enter a number.</span></span>
+43. <span data-ttu-id="dea92-156">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dea92-156">Click Save.</span></span>
+44. <span data-ttu-id="dea92-157">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="dea92-157">Close the page.</span></span>
+45. <span data-ttu-id="dea92-158">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="dea92-158">On the Action Pane, click Manage.</span></span>
+46. <span data-ttu-id="dea92-159">Klik på Projektfakturaforslag.</span><span class="sxs-lookup"><span data-stu-id="dea92-159">Click Project invoice proposals.</span></span>
+47. <span data-ttu-id="dea92-160">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dea92-160">Click New.</span></span>
+48. <span data-ttu-id="dea92-161">Klik på Fakturaforslag.</span><span class="sxs-lookup"><span data-stu-id="dea92-161">Click Invoice proposal.</span></span>
+49. <span data-ttu-id="dea92-162">Klik på rullelisten i feltet Projekt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dea92-162">In the Project field, click the drop-down button to open the lookup.</span></span>
+50. <span data-ttu-id="dea92-163">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="dea92-163">Close the page.</span></span>
+51. <span data-ttu-id="dea92-164">Klik på rullelisten i feltet Projektkontrakt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="dea92-164">In the Project contract field, click the drop-down button to open the lookup.</span></span>
+52. <span data-ttu-id="dea92-165">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-165">In the list, find and select the desired record.</span></span>
+53. <span data-ttu-id="dea92-166">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="dea92-166">In the list, click the link in the selected row.</span></span>
+54. <span data-ttu-id="dea92-167">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="dea92-167">Click OK.</span></span>
+55. <span data-ttu-id="dea92-168">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="dea92-168">Click Post.</span></span>
+56. <span data-ttu-id="dea92-169">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="dea92-169">Click OK.</span></span>
+57. <span data-ttu-id="dea92-170">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="dea92-170">Click OK.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
