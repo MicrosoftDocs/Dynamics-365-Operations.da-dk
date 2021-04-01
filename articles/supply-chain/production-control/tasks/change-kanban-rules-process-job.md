@@ -15,36 +15,39 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5e0e1989bcc4ca02d097f9ebff40f21158f26546
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ba77197f51b871f452c2aa94320aa2a68cf314df
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4981350"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255367"
 ---
-# <a name="change-kanban-rules-for-a-process-job"></a><span data-ttu-id="c21a7-103">Ændre kanban-regler for et procesjob</span><span class="sxs-lookup"><span data-stu-id="c21a7-103">Change kanban rules for a process job</span></span>
+# <a name="change-kanban-rules-for-a-process-job"></a><span data-ttu-id="42002-103">Ændre kanban-regler for et procesjob</span><span class="sxs-lookup"><span data-stu-id="42002-103">Change kanban rules for a process job</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c21a7-104">Denne procedure drejer sig om ændring af den brugte kanban-regel for en bestemt kanban.</span><span class="sxs-lookup"><span data-stu-id="c21a7-104">This procedure focuses on changing the used kanban rule for a given kanban.</span></span> <span data-ttu-id="c21a7-105">Dette er nyttigt til belastningsudjævning af ressourcer eller i tilfælde af nedbrud.</span><span class="sxs-lookup"><span data-stu-id="c21a7-105">This is useful to level load resources or in case of breakdown.</span></span> <span data-ttu-id="c21a7-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="c21a7-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="c21a7-107">Denne procedure er beregnet til planlæggeren, der arbejder på en lean manufacturing-virksomhed og er ansvarlig for værdistrømmen.</span><span class="sxs-lookup"><span data-stu-id="c21a7-107">This procedure is intended for the planner, working at a lean manufacturing company, responsible for the value stream.</span></span>
+<span data-ttu-id="42002-104">Denne procedure drejer sig om ændring af den brugte kanban-regel for en bestemt kanban.</span><span class="sxs-lookup"><span data-stu-id="42002-104">This procedure focuses on changing the used kanban rule for a given kanban.</span></span> <span data-ttu-id="42002-105">Dette er nyttigt til belastningsudjævning af ressourcer eller i tilfælde af nedbrud.</span><span class="sxs-lookup"><span data-stu-id="42002-105">This is useful to level load resources or in case of breakdown.</span></span> <span data-ttu-id="42002-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="42002-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="42002-107">Denne procedure er beregnet til planlæggeren, der arbejder på en lean manufacturing-virksomhed og er ansvarlig for værdistrømmen.</span><span class="sxs-lookup"><span data-stu-id="42002-107">This procedure is intended for the planner, working at a lean manufacturing company, responsible for the value stream.</span></span>
 
 
-## <a name="copy-kanban-rule"></a><span data-ttu-id="c21a7-108">Kopiere kanban-regel</span><span class="sxs-lookup"><span data-stu-id="c21a7-108">Copy kanban rule</span></span>
-1. <span data-ttu-id="c21a7-109">Gå til kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="c21a7-109">Go to Kanban rules.</span></span>
-2. <span data-ttu-id="c21a7-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="c21a7-110">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="c21a7-111">Vælg hændelses-kanban-regel 000022 for L0001.</span><span class="sxs-lookup"><span data-stu-id="c21a7-111">Select Event Kanban rule 000022 for L0001.</span></span>  
-3. <span data-ttu-id="c21a7-112">Klik på Dupliker kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="c21a7-112">Click Duplicate kanban rule.</span></span>
-4. <span data-ttu-id="c21a7-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c21a7-113">Click OK.</span></span>
+## <a name="copy-kanban-rule"></a><span data-ttu-id="42002-108">Kopiere kanban-regel</span><span class="sxs-lookup"><span data-stu-id="42002-108">Copy kanban rule</span></span>
+1. <span data-ttu-id="42002-109">Gå til kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="42002-109">Go to Kanban rules.</span></span>
+2. <span data-ttu-id="42002-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="42002-110">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="42002-111">Vælg hændelses-kanban-regel 000022 for L0001.</span><span class="sxs-lookup"><span data-stu-id="42002-111">Select Event Kanban rule 000022 for L0001.</span></span>  
+3. <span data-ttu-id="42002-112">Klik på Dupliker kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="42002-112">Click Duplicate kanban rule.</span></span>
+4. <span data-ttu-id="42002-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="42002-113">Click OK.</span></span>
 
-## <a name="change-kanban-rule"></a><span data-ttu-id="c21a7-114">Redigere kanban-regel</span><span class="sxs-lookup"><span data-stu-id="c21a7-114">Change kanban rule</span></span>
-1. <span data-ttu-id="c21a7-115">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="c21a7-115">Close the page.</span></span>
-2. <span data-ttu-id="c21a7-116">Gå til Tidsplanlægning af kanban-job.</span><span class="sxs-lookup"><span data-stu-id="c21a7-116">Go to Kanban job scheduling.</span></span>
-3. <span data-ttu-id="c21a7-117">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="c21a7-117">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="c21a7-118">Vælg linjen med Kanban 000177.</span><span class="sxs-lookup"><span data-stu-id="c21a7-118">Select line with Kanban 000177.</span></span>  
-4. <span data-ttu-id="c21a7-119">Klik på Brug en anden kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="c21a7-119">Click Use alternative kanban rule.</span></span>
-5. <span data-ttu-id="c21a7-120">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="c21a7-120">Click Next.</span></span>
-6. <span data-ttu-id="c21a7-121">Indtast eller vælg en værdi i feltet Kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="c21a7-121">In the Kanban rule field, enter or select a value.</span></span>
-    * <span data-ttu-id="c21a7-122">Vælg den kanban-regel, der blev oprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="c21a7-122">Select the kanban rule that was created earlier.</span></span> <span data-ttu-id="c21a7-123">Dette er kanban-reglen med det højeste nummer.</span><span class="sxs-lookup"><span data-stu-id="c21a7-123">This is the kanban rule with the highest number.</span></span>  
-7. <span data-ttu-id="c21a7-124">Klik på Finish.</span><span class="sxs-lookup"><span data-stu-id="c21a7-124">Click Finish.</span></span>
-    * <span data-ttu-id="c21a7-125">Kanban-jobbet bruger nu en anden kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="c21a7-125">Now the kanban job is using an another kanban rule.</span></span> <span data-ttu-id="c21a7-126">Dette kan være nyttigt ved belastningsudjævning af arbejdsceller.</span><span class="sxs-lookup"><span data-stu-id="c21a7-126">This can be useful to level load work cells.</span></span>  
+## <a name="change-kanban-rule"></a><span data-ttu-id="42002-114">Redigere kanban-regel</span><span class="sxs-lookup"><span data-stu-id="42002-114">Change kanban rule</span></span>
+1. <span data-ttu-id="42002-115">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="42002-115">Close the page.</span></span>
+2. <span data-ttu-id="42002-116">Gå til Tidsplanlægning af kanban-job.</span><span class="sxs-lookup"><span data-stu-id="42002-116">Go to Kanban job scheduling.</span></span>
+3. <span data-ttu-id="42002-117">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="42002-117">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="42002-118">Vælg linjen med Kanban 000177.</span><span class="sxs-lookup"><span data-stu-id="42002-118">Select line with Kanban 000177.</span></span>  
+4. <span data-ttu-id="42002-119">Klik på Brug en anden kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="42002-119">Click Use alternative kanban rule.</span></span>
+5. <span data-ttu-id="42002-120">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="42002-120">Click Next.</span></span>
+6. <span data-ttu-id="42002-121">Indtast eller vælg en værdi i feltet Kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="42002-121">In the Kanban rule field, enter or select a value.</span></span>
+    * <span data-ttu-id="42002-122">Vælg den kanban-regel, der blev oprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="42002-122">Select the kanban rule that was created earlier.</span></span> <span data-ttu-id="42002-123">Dette er kanban-reglen med det højeste nummer.</span><span class="sxs-lookup"><span data-stu-id="42002-123">This is the kanban rule with the highest number.</span></span>  
+7. <span data-ttu-id="42002-124">Klik på Finish.</span><span class="sxs-lookup"><span data-stu-id="42002-124">Click Finish.</span></span>
+    * <span data-ttu-id="42002-125">Kanban-jobbet bruger nu en anden kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="42002-125">Now the kanban job is using an another kanban rule.</span></span> <span data-ttu-id="42002-126">Dette kan være nyttigt ved belastningsudjævning af arbejdsceller.</span><span class="sxs-lookup"><span data-stu-id="42002-126">This can be useful to level load work cells.</span></span>  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
