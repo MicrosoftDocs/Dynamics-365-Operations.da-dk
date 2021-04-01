@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016925"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237370"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversigt over tilbudsanmodninger
 
@@ -80,23 +80,23 @@ På siden **Indkøbs- og forsyningsparametre** kan du vælge, hvilken skabelon d
 - %Årsag til returnering af bud%
 - %Årsag til ændring%
 - %Ændring udarbejdet af%
-- %Firma%
+- %Company%
 - %Navn på tilbudsanmodningssag%
 - %Udløbsdato og klokkeslæt%
-- %Dato%
+- %Date%
 
-De angivne tokens %Årsag til returnering af bud% og %Årsag til ændring% erstattes af tekst, der indkøberen kan skrive, når han eller hun afslutter ændringen i guiden **Ændring**. Værdierne for tokenerne %Ændring udarbejdet af% og %Firma% hentes automatisk fra tilbudsanmodningen. %Dato%-tokenet erstattes af dags dato.
+De angivne tokens %Årsag til returnering af bud% og %Årsag til ændring% erstattes af tekst, der indkøberen kan skrive, når han eller hun afslutter ændringen i guiden **Ændring**. Værdierne for tokenerne %Ændring udarbejdet af% og %Company% hentes automatisk fra tilbudsanmodningen. Tokenet %Date% erstattes af dags dato.
 
 Hvis du vil annullere en tilbudsanmodning, efter den er blevet sendt, kan du gøre dette fra tilbudsanmodningssagen. Til annulleringen kræves det, at der sendes en e-mail-skabelon for at sende besked om annulleringen til kreditorens kontaktpersoner. Skabelonen skal være markeret på siden **Indkøbs- og forsyningsparametre**. Når skabelonen er oprettet, kan den indeholde følgende erstatningstokens:
 
 - %Årsag til annullering%
 - %Tilbudsanmodningssag%
 - %Tilbudsanmodning annulleret af%
-- %Firma%
+- %Company%
 - %Navn på tilbudsanmodningssag%
-- %Dato%
+- %Date%
 
-Tokenet %Årsag til annullering% erstattes af tekst, som indkøberen kan angive i guiden **Annullering**. %Dato%-tokenet erstattes af dags dato.
+Tokenet %Årsag til annullering% erstattes af tekst, som indkøberen kan angive i guiden **Annullering**. Tokenet %Date% erstattes af dags dato.
 
 Hvis du vil bruge årsagskoder for et bud for at at angive, hvorfor det blev afvist eller godkendt, skal du oprette årsagskoder på siden **Kreditorårsager**.
 
