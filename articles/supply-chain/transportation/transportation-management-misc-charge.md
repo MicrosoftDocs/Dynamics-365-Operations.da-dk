@@ -14,19 +14,22 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: cb503072fb76e04aa01ff2d231c756eeb244c65a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4f58db216176832d61bdafbe43831ededd3dd6dc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004695"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233409"
 ---
-# <a name="transportation-management-miscellaneous-charges"></a><span data-ttu-id="86a34-103">Tillæg i transportstyring</span><span class="sxs-lookup"><span data-stu-id="86a34-103">Transportation management miscellaneous charges</span></span>
+# <a name="transportation-management-miscellaneous-charges"></a><span data-ttu-id="bea0a-103">Tillæg i transportstyring</span><span class="sxs-lookup"><span data-stu-id="bea0a-103">Transportation management miscellaneous charges</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="86a34-104">Som med alle tillæg skal transportgenererede gebyrer knyttes til en gebyrkode.</span><span class="sxs-lookup"><span data-stu-id="86a34-104">As with all miscellaneous charges, transportation-generated charges must be associated with a charge code.</span></span> <span data-ttu-id="86a34-105">Ellers føjes de ikke tilbage til ordren som et tillæg.</span><span class="sxs-lookup"><span data-stu-id="86a34-105">Otherwise, they won't be added back to the order as a miscellaneous charge.</span></span> <span data-ttu-id="86a34-106">**Gebyrkode** bestemmer, hvordan tillægget beregnes i forhold til ordren og ordrelinjen, hvor det tilføjes.</span><span class="sxs-lookup"><span data-stu-id="86a34-106">The **Charges code** determines how the charge is accounted for in relation to the order and order line where it is added.</span></span>
+<span data-ttu-id="bea0a-104">Som med alle tillæg skal transportgenererede gebyrer knyttes til en gebyrkode.</span><span class="sxs-lookup"><span data-stu-id="bea0a-104">As with all miscellaneous charges, transportation-generated charges must be associated with a charge code.</span></span> <span data-ttu-id="bea0a-105">Ellers føjes de ikke tilbage til ordren som et tillæg.</span><span class="sxs-lookup"><span data-stu-id="bea0a-105">Otherwise, they won't be added back to the order as a miscellaneous charge.</span></span> <span data-ttu-id="bea0a-106">**Gebyrkode** bestemmer, hvordan tillægget beregnes i forhold til ordren og ordrelinjen, hvor det tilføjes.</span><span class="sxs-lookup"><span data-stu-id="bea0a-106">The **Charges code** determines how the charge is accounted for in relation to the order and order line where it is added.</span></span>
 
-<span data-ttu-id="86a34-107">Gå til **Transportstyring > Opsætning > Vurdering > Tillæg** for at definere de kvalifikationskriterier, der bestemmer, hvornår en bestemt **Gebyrkode** anvendes på et gebyr.</span><span class="sxs-lookup"><span data-stu-id="86a34-107">Go to **Transportation management > Setup > Rating > Miscellaneous charges** to define the qualifying criteria that determine when a specific **Charges code** is applied to a charge.</span></span>
+<span data-ttu-id="bea0a-107">Gå til **Transportstyring > Opsætning > Vurdering > Tillæg** for at definere de kvalifikationskriterier, der bestemmer, hvornår en bestemt **Gebyrkode** anvendes på et gebyr.</span><span class="sxs-lookup"><span data-stu-id="bea0a-107">Go to **Transportation management > Setup > Rating > Miscellaneous charges** to define the qualifying criteria that determine when a specific **Charges code** is applied to a charge.</span></span>
 
-<span data-ttu-id="86a34-108">Der skal være mindst én opsætning for hver relevante **Gebyrmodul**-indstilling (*Debitor* og *Kreditor*), hvor **Tillægstype** angives til *Ingen*.</span><span class="sxs-lookup"><span data-stu-id="86a34-108">You should have at least one setup for each relevant **Charges module** setting (*Customer* and *Vendor*) where the **Miscellaneous charge type** is set to *None*.</span></span> <span data-ttu-id="86a34-109">Hvis dette mangler, føjes tillægget *ikke* til ordren.</span><span class="sxs-lookup"><span data-stu-id="86a34-109">If this is missing, the miscellaneous charge will *not* be added to the order.</span></span>
+<span data-ttu-id="bea0a-108">Der skal være mindst én opsætning for hver relevante **Gebyrmodul**-indstilling (*Debitor* og *Kreditor*), hvor **Tillægstype** angives til *Ingen*.</span><span class="sxs-lookup"><span data-stu-id="bea0a-108">You should have at least one setup for each relevant **Charges module** setting (*Customer* and *Vendor*) where the **Miscellaneous charge type** is set to *None*.</span></span> <span data-ttu-id="bea0a-109">Hvis dette mangler, føjes tillægget *ikke* til ordren.</span><span class="sxs-lookup"><span data-stu-id="bea0a-109">If this is missing, the miscellaneous charge will *not* be added to the order.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
