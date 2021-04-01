@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 457c547947ce6182d03e7a8276b380bc08535bca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 30506b17331d15e1164f513b34ff71f612828f8b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985106"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256685"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør
 
@@ -33,7 +33,7 @@ I dette emne forklares, hvordan du kan føje økonomiske dimensioner til arbejds
 1. I Finance skal du på siden **Enhedslager** opdatere målpunkterne **LedgerActivityMeasure** og **BudgetActivityMeasure**.
 2. Åbn Application Explorer i Microsoft Visual Studio, og søg efter **LedgerCFO**.
 3. Under **Resources** (Ressourcer) skal du åbne **LedgerCFOWorkspacePBIX**.
-4. Når ressourcen åbnes i Microsoft Power BI Desktop, skal du vælge **Get Data** (Hent Data). Vælg **SQL Server-database**, og vælg derefter **Connect** (Forbind).
+4. Når ressourcen åbnes i Microsoft Power BI-desktop , skal du vælge **Hent data**. Vælg **SQL Server-database**, og vælg derefter **Forbind**.
 5. Angiv en navnet på serveren og **AxDW** som database. Vælg **DirectQuery**, og vælg derefter **OK**.
 6. Søg efter og vælg **LedgerActivityMeasure\_DimensionCombination**, og vælg derefter **Indlæs**.
 
