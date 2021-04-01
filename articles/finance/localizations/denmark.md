@@ -15,12 +15,12 @@ ms.search.region: Denmark
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bc8b92e6bd4442d25d4b5e4272dad2cb3f46c275
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8ac547675a639e464e5bcc38abf2d0a47d6e0a33
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994277"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234104"
 ---
 # <a name="denmark-overview"></a>Oversigt for Danmark
 

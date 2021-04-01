@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea89d54f1ce3a1e971d41623bf44f909f7dfdf09
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 7072c34ccbffc6bf135f55fd594cac4d9ea5a463
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5131275"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237510"
 ---
 # <a name="asset-leasing-conventions"></a>Konventioner i aktivleasing
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne beskriver konventionerne leasingaktiver. Leasingkonventioner bruges til at bestemme startdatoen for leasingkartoteket. Hvis leasingaftalen er angivet til **Ingen**, er startdatoen den samme som startdatoen for leasingaftalen (det vil sige værdien af feltet **Startdato for leasingaftalen**). Hvis leasingaftalen er angivet til **Fuld måned**, er udløbsdatoen den første dag i måneden, hvor startdatoen for leasingaftalen ligger.
 
