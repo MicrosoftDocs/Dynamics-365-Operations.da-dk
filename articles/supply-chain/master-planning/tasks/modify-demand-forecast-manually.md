@@ -15,30 +15,33 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cd931a378b057026eff57b34c9f5740df8adacef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 31c057d686edc97a11027f156b9c14ff453294ec
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4999825"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240383"
 ---
-# <a name="modify-a-demand-forecast-manually"></a><span data-ttu-id="3d8ab-103">Ændre en behovsprognose manuelt</span><span class="sxs-lookup"><span data-stu-id="3d8ab-103">Modify a demand forecast manually</span></span>
+# <a name="modify-a-demand-forecast-manually"></a><span data-ttu-id="aee61-103">Ændre en behovsprognose manuelt</span><span class="sxs-lookup"><span data-stu-id="aee61-103">Modify a demand forecast manually</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3d8ab-104">Denne fremgangsmåde viser, hvordan du redigerer prognosen for en vare.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-104">This procedure shows how to modify the forecast for an item.</span></span> <span data-ttu-id="3d8ab-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="3d8ab-106">Denne registrering er beregnet til produktionsplanlæggeren.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-106">This recording is intended for the production planner.</span></span> 
+<span data-ttu-id="aee61-104">Denne fremgangsmåde viser, hvordan du redigerer prognosen for en vare.</span><span class="sxs-lookup"><span data-stu-id="aee61-104">This procedure shows how to modify the forecast for an item.</span></span> <span data-ttu-id="aee61-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="aee61-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="aee61-106">Denne registrering er beregnet til produktionsplanlæggeren.</span><span class="sxs-lookup"><span data-stu-id="aee61-106">This recording is intended for the production planner.</span></span> 
 
 
-## <a name="modify-the-forecast-for-an-item"></a><span data-ttu-id="3d8ab-107">Rediger prognosen for en vare</span><span class="sxs-lookup"><span data-stu-id="3d8ab-107">Modify the forecast for an item</span></span>
-1. <span data-ttu-id="3d8ab-108">I **navigationsruden** skal du gå til **Moduler > Administration af produktoplysninger > Produkter > Frigivne produkter**.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-108">In the **Navigation pane**, go to **Modules > Product information management > Products > Released products**.</span></span>
-2. <span data-ttu-id="3d8ab-109">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-109">In the list, find and select the desired record.</span></span> <span data-ttu-id="3d8ab-110">Vælg den vare, du vil ændre varetypen prognosen for.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-110">Select the item for which you want to modify the forecast.</span></span> <span data-ttu-id="3d8ab-111">Du kan f.eks. vælge elementet D0001.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-111">For example, you can select item D0001.</span></span>  
-3. <span data-ttu-id="3d8ab-112">Klik på **Plan** i **handlingsruden**.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-112">On the **Action Pane**, click **Plan**.</span></span>
-4. <span data-ttu-id="3d8ab-113">Klik på **Behovsprognose**.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-113">Click **Demand forecast**.</span></span>
-5. <span data-ttu-id="3d8ab-114">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-114">In the list, mark the selected row.</span></span> <span data-ttu-id="3d8ab-115">Hvis der ingen prognoselinjer er, kan du oprette en ny linje ved at klikke på Ny på programlinjen.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-115">If there are no forecast lines, create a new line by clicking New on the app bar.</span></span>  
-6. <span data-ttu-id="3d8ab-116">Skriv et tal i feltet **Salgsantal**.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-116">In the **Sales quantity** field, enter a number.</span></span> <span data-ttu-id="3d8ab-117">Dette tal repræsenterer prognosemængden for varen.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-117">This number represents the forecasted quantity for the item.</span></span>  
-7. <span data-ttu-id="3d8ab-118">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-118">Click Save.</span></span>
+## <a name="modify-the-forecast-for-an-item"></a><span data-ttu-id="aee61-107">Rediger prognosen for en vare</span><span class="sxs-lookup"><span data-stu-id="aee61-107">Modify the forecast for an item</span></span>
+1. <span data-ttu-id="aee61-108">I **navigationsruden** skal du gå til **Moduler > Administration af produktoplysninger > Produkter > Frigivne produkter**.</span><span class="sxs-lookup"><span data-stu-id="aee61-108">In the **Navigation pane**, go to **Modules > Product information management > Products > Released products**.</span></span>
+2. <span data-ttu-id="aee61-109">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="aee61-109">In the list, find and select the desired record.</span></span> <span data-ttu-id="aee61-110">Vælg den vare, du vil ændre varetypen prognosen for.</span><span class="sxs-lookup"><span data-stu-id="aee61-110">Select the item for which you want to modify the forecast.</span></span> <span data-ttu-id="aee61-111">Du kan f.eks. vælge elementet D0001.</span><span class="sxs-lookup"><span data-stu-id="aee61-111">For example, you can select item D0001.</span></span>  
+3. <span data-ttu-id="aee61-112">Klik på **Plan** i **handlingsruden**.</span><span class="sxs-lookup"><span data-stu-id="aee61-112">On the **Action Pane**, click **Plan**.</span></span>
+4. <span data-ttu-id="aee61-113">Klik på **Behovsprognose**.</span><span class="sxs-lookup"><span data-stu-id="aee61-113">Click **Demand forecast**.</span></span>
+5. <span data-ttu-id="aee61-114">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="aee61-114">In the list, mark the selected row.</span></span> <span data-ttu-id="aee61-115">Hvis der ingen prognoselinjer er, kan du oprette en ny linje ved at klikke på Ny på programlinjen.</span><span class="sxs-lookup"><span data-stu-id="aee61-115">If there are no forecast lines, create a new line by clicking New on the app bar.</span></span>  
+6. <span data-ttu-id="aee61-116">Skriv et tal i feltet **Salgsantal**.</span><span class="sxs-lookup"><span data-stu-id="aee61-116">In the **Sales quantity** field, enter a number.</span></span> <span data-ttu-id="aee61-117">Dette tal repræsenterer prognosemængden for varen.</span><span class="sxs-lookup"><span data-stu-id="aee61-117">This number represents the forecasted quantity for the item.</span></span>  
+7. <span data-ttu-id="aee61-118">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="aee61-118">Click Save.</span></span>
 
-## <a name="modify-the-forecast-in-excel"></a><span data-ttu-id="3d8ab-119">Ændr prognosen i Excel</span><span class="sxs-lookup"><span data-stu-id="3d8ab-119">Modify the forecast in Excel</span></span>
-1. <span data-ttu-id="3d8ab-120">Klik på **Åbn** i Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-120">Click **Open** in Microsoft Office.</span></span>
-2. <span data-ttu-id="3d8ab-121">Klik på **Rediger behovsprognose** i Excel.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-121">Click **Edit Demand forecast** in Excel.</span></span> <span data-ttu-id="3d8ab-122">I Excel kan du tilføje, slette og redigere behovsprognoselinjer.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-122">In Excel, you can add, delete and edit demand forecast lines.</span></span> <span data-ttu-id="3d8ab-123">Hvis du ikke kan se data i Excel, skal du logge på med indstillingen "Forbliv logget på" aktiveret, og du skal have tillid til dataforbindelsesprogrammet.</span><span class="sxs-lookup"><span data-stu-id="3d8ab-123">If you are not able to see the data in Excel, you need to sign in with the "Keep me signed in" option enabled and you need to trust the data connection app.</span></span>  
+## <a name="modify-the-forecast-in-excel"></a><span data-ttu-id="aee61-119">Ændr prognosen i Excel</span><span class="sxs-lookup"><span data-stu-id="aee61-119">Modify the forecast in Excel</span></span>
+1. <span data-ttu-id="aee61-120">Klik på **Åbn** i Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="aee61-120">Click **Open** in Microsoft Office.</span></span>
+2. <span data-ttu-id="aee61-121">Klik på **Rediger behovsprognose** i Excel.</span><span class="sxs-lookup"><span data-stu-id="aee61-121">Click **Edit Demand forecast** in Excel.</span></span> <span data-ttu-id="aee61-122">I Excel kan du tilføje, slette og redigere behovsprognoselinjer.</span><span class="sxs-lookup"><span data-stu-id="aee61-122">In Excel, you can add, delete and edit demand forecast lines.</span></span> <span data-ttu-id="aee61-123">Hvis du ikke kan se data i Excel, skal du logge på med indstillingen "Forbliv logget på" aktiveret, og du skal have tillid til dataforbindelsesprogrammet.</span><span class="sxs-lookup"><span data-stu-id="aee61-123">If you are not able to see the data in Excel, you need to sign in with the "Keep me signed in" option enabled and you need to trust the data connection app.</span></span>  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
