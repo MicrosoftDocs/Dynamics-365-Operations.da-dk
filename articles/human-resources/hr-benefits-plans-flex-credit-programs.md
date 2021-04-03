@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f701d9e38e04769f1255e6f8cb3ee757bf22f96c
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e3a4966aeb0adb50c82e4edd626ea9c0289703e3
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111970"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464296"
 ---
 # <a name="set-up-flex-credit-programs"></a>Konfigurere flekskreditprogrammer
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan bruge flekskreditprogrammer i Microsoft Dynamics 365 Human Resources til at tilmelde medarbejdere til frynsegoder i overensstemmelse med et foruddefineret antal flekskreditter. Medarbejderne kan vælge, hvordan deres flekskreditter skal fordeles. Hvis en medarbejder f.eks. er dækket af ægtefællens sundhedsforsikring, kan vedkommende evt. bruge de kreditter, der ellers ville være anvendt på sundhedsforsikring, til andre frynsegoder. 
 

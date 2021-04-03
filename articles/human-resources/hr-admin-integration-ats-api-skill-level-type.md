@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2d87b1a62d592b7ea9be35ba3852e9ea0cb88eae
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 3a3c920baddddaab7628a6ce5d8afa79c321fba1
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125900"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465888"
 ---
 # <a name="skill-level-type"></a>Færdighedsniveautype
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver den indstilling for færdighedsniveautypen, der er angivet for Dynamics 365 Human Resources.
 
@@ -31,7 +33,7 @@ Fysisk navn: mshr_hrmskillleveltype
 
 Denne fasttekst indeholder det værdisæt af indstillinger, der kategoriserer det niveau, der er tildelt en kandidats færdighed.
 
-| Værdi | Mærkat | Betegnelse |
+| Værdi | Mærkat | Beskrivelse |
 | --- | --- | --- |
 | 200000000 | Realiseret | Faktisk færdighedsniveau. |
 | 200000001 | Målsætning | Den værdi, der er mål for færdighedsniveauet. |

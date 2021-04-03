@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 574925f0e278ad7bd3c654432fd0f862fd3c3259
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: a865ee37ed650c564961f6b3dd8773eea4f7b9ea
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115866"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465624"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Tilføje til performancekladde og sende ros til en person
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt dine mål, eller hvordan du har performet i en periode. Du kan også rose handlinger udført af en kollega fra kladden. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 

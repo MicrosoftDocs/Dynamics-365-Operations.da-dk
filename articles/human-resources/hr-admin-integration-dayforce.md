@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 044a2d2f632b2c98ce94b6d61c2582a861640b68
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 2d5f65672960716bee3f58c98ccce249fdbf8697
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111920"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467139"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurer integration med Dayforce
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
 
@@ -208,7 +210,7 @@ Lønkoder identificerer entydigt alle typer af løn, som arbejderne modtager. Ko
 Følgende oplysninger bruges i Dayforce:
 
 - Lønkode (påkrævet)
-- Betegnelse
+- Beskrivelse
 - Måleenhed
 - Produktiv
 
@@ -378,7 +380,7 @@ Jobtyper bruges til at gruppere lignende job i kategorier. Jobtyper kræves for 
 
 Der kræves følgende jobtyper og beskrivelser.
 
-| Jobtype   | Betegnelse |
+| Jobtype   | Beskrivelse |
 |------------|-------------|
 | Pr. time     | Pr. time      |
 | Funktionærløn   | Funktionærløn    |
@@ -389,7 +391,7 @@ Du bruge stillingstyper til at beskrive, om stillingen er fuld tid, deltid eller
 
 Der kræves følgende stillingstyper og beskrivelser.
 
-| Stillingstype   | Betegnelse        |
+| Stillingstype   | Beskrivelse        |
 |-----------------|--------------------|
 | Fuld tid       | Fuldtidsmedarbejder |
 | Deltid       | Deltidsmedarbejder |
@@ -400,7 +402,7 @@ Der kræves følgende stillingstyper og beskrivelser.
 
 Der kræves følgende årsagskoder og beskrivelser.
 
-| Årsagskode    | Betegnelse      | Anvendelige scenarier |
+| Årsagskode    | Beskrivelse      | Anvendelige scenarier |
 |----------------|------------------|----------------------|
 | OPSIGELSE    | Opsigelse      | Lad arbejder fratræde     |
 | OPHØR    | Ophør      | Lad arbejder fratræde     |
@@ -511,7 +513,7 @@ Jobtyper bruges til at gruppere lignende job i kategorier. Jobtyper kræves for 
 
 Der kræves følgende jobtyper og beskrivelser.
 
-| Jobtype   | Betegnelse |
+| Jobtype   | Beskrivelse |
 |------------|-------------|
 | Pr. time     | MX Pr. time   |
 | Funktionærløn   | MX Funktionærløn |
@@ -522,7 +524,7 @@ Du bruge stillingstyper til at beskrive, om stillingen er fuld tid, deltid eller
 
 Der kræves følgende stillingstyper og beskrivelser.
 
-| Stillingstype   | Betegnelse        |
+| Stillingstype   | Beskrivelse        |
 |-----------------|--------------------|
 | Fuld tid       | Fuldtidsmedarbejder |
 | Deltid       | Deltidsmedarbejder |
@@ -533,7 +535,7 @@ Der kræves følgende stillingstyper og beskrivelser.
 
 Der kræves følgende årsagskoder og beskrivelser.
 
-| Årsagskode            | Betegnelse                    | Anvendelige scenarier |
+| Årsagskode            | Beskrivelse                    | Anvendelige scenarier |
 |------------------------|--------------------------------|----------------------|
 | DEPARTUREBEFOREPAYMENT | Afgang før første løn | Lad arbejder fratræde     |
 | OPSIGELSE            | Opsigelse                    | Lad arbejder fratræde     |
@@ -554,7 +556,7 @@ Ansættelsesvilkår bruges til at oprette kategorier for ansættelsesvilkår. Vi
 
 Følgende begreber for beskæftigelse og beskrivelser er påkrævet.
 
-| Ansættelsesvilkår   | Betegnelse |
+| Ansættelsesvilkår   | Beskrivelse |
 |-----------------------|-------------|
 | Regulær               | Regulær     |
 | Direkte                | Direkte      |

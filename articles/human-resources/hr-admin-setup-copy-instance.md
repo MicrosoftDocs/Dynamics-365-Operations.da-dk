@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e38abf3537d88bb147fbf0030999953025e5820f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111919"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466898"
 ---
 # <a name="copy-an-instance"></a>Kopiér en forekomst
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -72,7 +74,7 @@ Hvis du vil fuldføre denne opgave, skal du først kopiere en forekomst og deref
 
 4. I opgaveruden **Kopier en forekomst** skal du markere den forekomst, der skal overskrives, og derefter vælge **Kopier**. Vent, indtil værdien i feltet **Kopieringsstatus** opdateres til **Fuldført**.
 
-   ![[Vælg en forekomst, der skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Vælg forekomst, der skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Vælg **Power Platform**, og log på Microsoft Power Platform Administration.
 

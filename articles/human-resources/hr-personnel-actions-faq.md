@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 43c727fa8e0508adf66109efd84a66cb31df7ea3
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 5eee8855a5a6eda4f6c0ad926f9366121de3ee7d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115408"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467101"
 ---
 # <a name="personnel-actions-faq"></a>Ofte stillede spørgsmål om personalehandlinger
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne artikel indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Human Resourceshandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale. Eksempler på opgaver, der kan kræve personalehandlinger, er, når du opretter nye stillinger, ændrer eksisterende stillingsværdier, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver eller opsiger arbejdere.
 

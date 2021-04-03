@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fa153b1cfcbb70294ed6da3618c83396df04f8db
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 9a3b47c76094adb6c601daf2f9583116255b0a99
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125227"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465936"
 ---
 # <a name="recruiting-request-location"></a>Lokation af rekrutteringsanmodning
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver rekrutteringsforespørgslen til lokationsenheden til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmrecruitingrequestlocationentity
 
-### <a name="description"></a>Betegnelse
+### <a name="description"></a>Beskrivelse
 
 Listen over lokationer, der er defineret som steder, hvor de rekrutterede medarbejdere skal arbejde med ansættelser. Disse er lokationer, der er oprettet på tværs af juridiske enheder.
 
@@ -58,7 +60,7 @@ Listen over lokationer, der er defineret som steder, hvor de rekrutterede medarb
 
 ### <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Lokations-id**<br>mshr_locationid<br>*Streng* | Skriv én gang<br>Påkrævet | Systemgenereret, brugerlæsbar identifikation til rekrutteringslokation. |
 | **Lokation til rekrutteringsanmodning**<br>mshr_recruitingrequestlocationid<br>*Streng* | Skriv én gang<br>Påkrævet | Brugerdefineret entydig identifikation af rekrutteringslokationen. |

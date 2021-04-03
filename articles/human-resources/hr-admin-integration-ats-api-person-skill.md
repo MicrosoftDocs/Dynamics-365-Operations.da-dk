@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b6bcbbd1203f4e9e80f6c5264cf4d5ea7d0970fc
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 65d5492ed988c51efe9e1629fa13225f1b4a3c15
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5126092"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464196"
 ---
 # <a name="person-skill"></a>Personkompetence
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver personkompetenceenheden til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmpersonskillentity
 
-## <a name="description"></a>Betegnelse
+## <a name="description"></a>Beskrivelse
 
 Denne enhed beskriver en kandidats færdigheder.
 
@@ -59,7 +61,7 @@ Denne enhed beskriver en kandidats færdigheder.
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Personkompetenceenheds-id**<br>mshr_hcmpersonskillentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet | Systemgenereret entydigt id til enhedsposten. |
 | **Partnummer**<br>mshr_partynumber<br>*Streng* | Læse/skrive<br>Påkrævet |   Id for den tilknyttede partpost (person). |

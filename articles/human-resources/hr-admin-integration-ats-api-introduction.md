@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48e368fe69443a5105ddba78a887bf9159bfe52a
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 61d8502a8f420d387b5b7f48fca2f8a680f6f3f8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125587"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464026"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Introduktion til API-integration for ansøgersporingssystem
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System). Formålet med API er at aktivere strømlinet integration mellem Dynamics 365 Human Resources og partner-ATS'er.
 
@@ -125,7 +127,7 @@ Indstillingssæt:
 - [Køn](hr-admin-integration-ats-api-gender.md)
 - [Ægteskabelig status](hr-admin-integration-ats-api-marital-status.md)
 - [Måneder i året](hr-admin-integration-ats-api-months-of-year.md)
-- [Nej Ja](hr-admin-integration-ats-api-no-yes.md)
+- [Nej-Ja](hr-admin-integration-ats-api-no-yes.md)
 - [Periodeenhed](hr-admin-integration-ats-api-period-unit.md)
 - [Screeningfrekvens](hr-admin-integration-ats-api-screening-frequency.md)
 - [Screeningfrekvensen genereres fra](hr-admin-integration-ats-api-screening-frequency-generate-from.md)

@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2e4b250f4a059719067a9e19bbf3ce4aecc9bb1f
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 24df18f428e4ca14859bc34048a6bda5e03d1b2f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111972"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464368"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generere ACA-rapporter i Frynsegodeadministration
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Frynsegodeadministration hjælper dig med at spore de oplysninger, der er rapporteret på blanket 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate. Ligesom ACA-rapporteringsfunktionen i det gamle arbejdsområde **Frynsegoder** gælder denne funktion kun for juridiske enheder i USA.
 
@@ -57,10 +59,10 @@ De Affordable Care-dækningsgrupper giver dig mulighed for at administrere disse
 
 3. Angiv følgende felter.
 
-    | Felt | Betegnelse |
+    | Felt | Beskrivelse |
     |---|---|
     | Navn | Angiv et navn på gruppen. |
-    | Betegnelse | Angiv en beskrivelse af gruppen. |
+    | Beskrivelse | Angiv en beskrivelse af gruppen. |
     | Tilbud om dækning | Den dækning, der tilbydes medarbejderne, deres ægtefælle eller partner og deres afhængige. |
     | Medarbejderens andel af omkostningen | Det beløb, medarbejderen er ansvarlig for. |
     | Gældende afsnit i 4980H Safe Harbor | Safe harbor-koden for 4980H eller overførselshjælpekoden. |

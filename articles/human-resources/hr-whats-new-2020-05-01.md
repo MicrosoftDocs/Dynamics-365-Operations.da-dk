@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e41762e4283d5a4b0c9dd8359c5fb2bdabfc26
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 71fb3b6cb28abbd5d373103205c3360b7e64464e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127867"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465312"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-1-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (1. maj 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I denne artikel beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Human Resources. Ændringerne gælder for build nummer 8.1.3196. Tallene i parenteser i nogle overskrifter henviser til LCS-supportnumre som reference.
 
