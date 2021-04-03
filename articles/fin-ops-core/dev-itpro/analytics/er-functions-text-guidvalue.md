@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,50 +16,53 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb6f301cf7a39208aa23337401a9684fb5b3a73d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 552c6a42dd0e189f2f8404ce5d7f7a68fec1b216
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685948"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564332"
 ---
-# <a name="guidvalue-er-function"></a><span data-ttu-id="a2b91-103">ER-funktionen GUIDVALUE</span><span class="sxs-lookup"><span data-stu-id="a2b91-103">GUIDVALUE ER function</span></span>
+# <a name="guidvalue-er-function"></a><span data-ttu-id="40ce2-103">ER-funktionen GUIDVALUE</span><span class="sxs-lookup"><span data-stu-id="40ce2-103">GUIDVALUE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a2b91-104">Funktionen `GUIDVALUE` konverterer det angivne input af typen *Streng* til et dataelement af typen *GUID*.</span><span class="sxs-lookup"><span data-stu-id="a2b91-104">The `GUIDVALUE` function converts the specified input of the *String* type to a data item of the *GUID* type.</span></span>
+<span data-ttu-id="40ce2-104">Funktionen `GUIDVALUE` konverterer det angivne input af typen *Streng* til et dataelement af typen *GUID*.</span><span class="sxs-lookup"><span data-stu-id="40ce2-104">The `GUIDVALUE` function converts the specified input of the *String* type to a data item of the *GUID* type.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a2b91-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="a2b91-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="40ce2-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="40ce2-105">Syntax</span></span>
 
 ```vb
 GUIDVALUE (input)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="a2b91-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="a2b91-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="40ce2-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="40ce2-106">Arguments</span></span>
 
-<span data-ttu-id="a2b91-107">`input`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="a2b91-107">`input`: *String*</span></span>
+<span data-ttu-id="40ce2-107">`input`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="40ce2-107">`input`: *String*</span></span>
 
-<span data-ttu-id="a2b91-108">Den gyldige sti til en datakilde af typen *Streng*.</span><span class="sxs-lookup"><span data-stu-id="a2b91-108">The valid path of a data source of the *String* type.</span></span>
+<span data-ttu-id="40ce2-108">Den gyldige sti til en datakilde af typen *Streng*.</span><span class="sxs-lookup"><span data-stu-id="40ce2-108">The valid path of a data source of the *String* type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="a2b91-109">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="a2b91-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="40ce2-109">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="40ce2-109">Return values</span></span>
 
-<span data-ttu-id="a2b91-110">*GUID*</span><span class="sxs-lookup"><span data-stu-id="a2b91-110">*GUID*</span></span>
+<span data-ttu-id="40ce2-110">*GUID*</span><span class="sxs-lookup"><span data-stu-id="40ce2-110">*GUID*</span></span>
 
-<span data-ttu-id="a2b91-111">Den resulterende GUID-værdi (globalt entydigt identifikator).</span><span class="sxs-lookup"><span data-stu-id="a2b91-111">The resulting globally unique identifier (GUID) value.</span></span>
+<span data-ttu-id="40ce2-111">Den resulterende GUID-værdi (globalt entydigt identifikator).</span><span class="sxs-lookup"><span data-stu-id="40ce2-111">The resulting globally unique identifier (GUID) value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="a2b91-112">Bemærkninger til brug</span><span class="sxs-lookup"><span data-stu-id="a2b91-112">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="40ce2-112">Bemærkninger til brug</span><span class="sxs-lookup"><span data-stu-id="40ce2-112">Usage notes</span></span>
 
-<span data-ttu-id="a2b91-113">For at omregne i modsat retning (dvs. konvertering til et angivet input af datatypen *GUID* til et dataelement af datatypen *Streng*) kan du bruge funktionen [TEXT](er-functions-text-text.md).</span><span class="sxs-lookup"><span data-stu-id="a2b91-113">To do a conversion in the opposite direction (that is, to convert specified input of the *GUID* data type to a data item of the *String* data type), you can use the [TEXT](er-functions-text-text.md) function.</span></span>
+<span data-ttu-id="40ce2-113">For at omregne i modsat retning (dvs. konvertering til et angivet input af datatypen *GUID* til et dataelement af datatypen *Streng*) kan du bruge funktionen [TEXT](er-functions-text-text.md).</span><span class="sxs-lookup"><span data-stu-id="40ce2-113">To do a conversion in the opposite direction (that is, to convert specified input of the *GUID* data type to a data item of the *String* data type), you can use the [TEXT](er-functions-text-text.md) function.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a2b91-114">Eksempel</span><span class="sxs-lookup"><span data-stu-id="a2b91-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="40ce2-114">Eksempel</span><span class="sxs-lookup"><span data-stu-id="40ce2-114">Example</span></span>
 
-<span data-ttu-id="a2b91-115">Du definerer følgende datakilder i din modeltilknytning:</span><span class="sxs-lookup"><span data-stu-id="a2b91-115">You define the following data sources in your model mapping:</span></span>
+<span data-ttu-id="40ce2-115">Du definerer følgende datakilder i din modeltilknytning:</span><span class="sxs-lookup"><span data-stu-id="40ce2-115">You define the following data sources in your model mapping:</span></span>
 
-- <span data-ttu-id="a2b91-116">En **mitID**-datakilde af typen *Beregnet felt*, der indeholder udtrykket `GUIDVALUE ("AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0")`</span><span class="sxs-lookup"><span data-stu-id="a2b91-116">A **myID** data source of the *Calculated field* type that contains the expression `GUIDVALUE ("AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0")`</span></span>
-- <span data-ttu-id="a2b91-117">En **Brugere**-datakilde af typen *Tabelposter*, som refererer til tabellen BrugerInfo</span><span class="sxs-lookup"><span data-stu-id="a2b91-117">A **Users** data source of the *Table records* type that refers to the UserInfo table</span></span>
+- <span data-ttu-id="40ce2-116">En **mitID**-datakilde af typen *Beregnet felt*, der indeholder udtrykket `GUIDVALUE ("AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0")`</span><span class="sxs-lookup"><span data-stu-id="40ce2-116">A **myID** data source of the *Calculated field* type that contains the expression `GUIDVALUE ("AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0")`</span></span>
+- <span data-ttu-id="40ce2-117">En **Brugere**-datakilde af typen *Tabelposter*, som refererer til tabellen BrugerInfo</span><span class="sxs-lookup"><span data-stu-id="40ce2-117">A **Users** data source of the *Table records* type that refers to the UserInfo table</span></span>
 
-<span data-ttu-id="a2b91-118">Du kan derefter bruge et udtryk såsom `FILTER (Users, Users.objectId = myID)` til at filtrere tabellen BrugeInfo efter feltet **ObjektID** af datatypen *GUID*.</span><span class="sxs-lookup"><span data-stu-id="a2b91-118">You can then use an expression such as `FILTER (Users, Users.objectId = myID)` to filter the UserInfo table by the **objectId** field of the *GUID* data type.</span></span>
+<span data-ttu-id="40ce2-118">Du kan derefter bruge et udtryk såsom `FILTER (Users, Users.objectId = myID)` til at filtrere tabellen BrugeInfo efter feltet **ObjektID** af datatypen *GUID*.</span><span class="sxs-lookup"><span data-stu-id="40ce2-118">You can then use an expression such as `FILTER (Users, Users.objectId = myID)` to filter the UserInfo table by the **objectId** field of the *GUID* data type.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="a2b91-119">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="a2b91-119">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="40ce2-119">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="40ce2-119">Additional resources</span></span>
 
-[<span data-ttu-id="a2b91-120">Tekstfunktioner</span><span class="sxs-lookup"><span data-stu-id="a2b91-120">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="40ce2-120">Tekstfunktioner</span><span class="sxs-lookup"><span data-stu-id="40ce2-120">Text functions</span></span>](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
