@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 518b70223b2f6bf86809ccce77a2cf67c30e4168
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bcfca0ddd52245ae2206f15ef9fa979675fca825
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977532"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470685"
 ---
 # <a name="set-up-disposition-codes"></a>Konfigurer dispositionskoder 
 
@@ -33,15 +33,15 @@ Du kan oprette dispositionskoder for at angive, hvordan du kan behandle en vare,
 
 Du kan også angive en årsagskode til at forklare, hvorfor en vare blev returneret. Du kan finde flere oplysninger om, hvordan du konfigurerer årsagskoder, i [Konfigurer årsagskoder for returnering](set-up-return-reason-code.md).
 
-1.  Klik på **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Returneringer** \> **Dispositionskoder**.
+1.  Gå til **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Returneringer** \> **Dispositionskoder**.
 
-2.  Klik på **Ny**, eller tryk på CTRL+N for at oprette en ny dispositionskode.
+2.  Vælg **Ny** for at oprette en ny dispositionskode.
 
 3.  Skriv et entydigt, beskrivende navn, vælg en handling, og skriv en beskrivelse af dispositionskoden.
 
-4.  Hvis du vil knytte kundegebyrer til denne dispositionskode, skal du klikke på knappen **Gebyrer** for at åbne formularen **Opret gebyrer**.
+4.  Hvis du vil knytte kundegebyrer til denne dispositionskode, skal du vælge knappen **Gebyrer** for at åbne formularen **Opret gebyrer**.
 
-5.  Hvis du vil definere eksterne koder, der svarer til firmaets egne dispositionskoder, skal du klikke på knappen **Eksterne kode** for at åbne formularen **Eksterne kode**.
+5.  Hvis du vil definere eksterne koder, der svarer til firmaets egne dispositionskoder, skal du vælge knappen **Eksterne koder** for at åbne formularen **Eksterne koder**.
 
 ## <a name="see-also"></a>Se også
 

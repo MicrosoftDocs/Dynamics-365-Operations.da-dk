@@ -3,7 +3,7 @@ title: Appen Human Resources i Teams
 description: I dette emne introduceres Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 09/30/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111933"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487867"
 ---
 # <a name="human-resources-app-in-teams"></a>Appen Human Resources i Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan medarbejdere hurtigt anmode om at få fri og se deres flekskontooplysninger i Microsoft Teams. Medarbejderne kan interagere med en bot for at anmode om oplysninger. Fanen **Fridage** giver mere detaljerede oplysninger. De kan også sende oplysninger om kommende fridage i teams og chatte uden for Human Resource-appen.
 
-![Orlov via appbot i Human Resources i Teams](./media/hr-admin-teams-leave-app-bot.png)
+![Orlov via appbot i Human Resources i Teams](./media/hr-teams-leave-app-bot.png)
 
 ![Fanen Fri i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -39,16 +39,18 @@ Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan medarbejd
 
 ## <a name="install-and-setup"></a>Installere og konfigurere
 
-Du kan finde Human Resources-appen i storen til Teams. Få flere oplysninger om installation af appen Teams i [Styre anmodninger i Teams](hr-teams-leave-app.md).
+Du kan finde appen Dynamics 365 Human Resources i lageret til Teams. Få flere oplysninger om installation af appen Teams i [Styre anmodninger i Teams](hr-teams-leave-app.md).
 
 Få flere oplysninger om styring af app-tilladelser i Teams i [Styre app-tilladelsespolitikker i Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+Hvis brugerne skal have vist orlovs- og fraværskalenderen i appen, skal du aktivere **Orlovs- og fraværskalenderen i Teams** i funktionsstyring. Du kan finde flere oplysninger om aktivering af funktioner i [Administrere funktioner](hr-admin-manage-features.md).
+
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Aktivere beskeder for appen Human Resources i Teams
 
-Hvis du ønsker, at brugere skal kunne modtage beskeder om orlov i appen Teams, skal du aktivere beskeder i Human Resources.
+Hvis du ønsker, at brugere skal kunne modtage beskeder om orlov i appen Teams, skal du aktivere beskeder i Dynamics 365 Human Resources.
 
 >[!NOTE]
->Kun brugere, der er logget på Teams og bruger Teams-appen Human Resources, modtager beskederne.
+>Kun brugere, der er logget på Teams og bruger Dynamics 365 Human Resources Teams-appen, modtager beskederne.
 
 1. I Human Resources skal du vælge **Systemadministration**.
 
@@ -66,7 +68,7 @@ Hvis du ønsker, at brugere skal kunne modtage beskeder om orlov i appen Teams, 
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Slå Teams-beskeder til eller fra for de enkelte brugere
 
-Når du har aktiveret beskeder for Teams-appen Human Resources, kan du slå beskeder til eller fra for de enkelte brugere.
+Når du har aktiveret beskeder for Teams-appen Dynamics 365 Human Resources, kan du slå beskeder til eller fra for de enkelte brugere.
 
 1. I Human Resources skal du vælge **Systemadministration**.
 
@@ -82,9 +84,28 @@ Når du har aktiveret beskeder for Teams-appen Human Resources, kan du slå besk
 
 6. Vælg **Gem**.
 
-## <a name="known-issues"></a>Kendte problemer
+## <a name="supported-languages"></a>Understøttede sprog
 
-| Udsted | Status |
+Appen Dynamics 365 Human Resources i Teams understøtter følgende sprog:
+
+| Landestandard-id | Sprog |
+| --- | --- |
+| de-DE | Tysk (Tyskland) |
+| es-ES | Spansk (Spanien) |
+| es-MX | Spansk (Mexico) |
+| fr-CA | Fransk (Canada) |
+| fr-FR | Fransk (Frankrig) |
+| it-IT | Italiensk (Italien) |
+| nl-NL | Hollandsk (Nederlandene) |
+| pt-BR | Portugisisk (Brasilien) |
+| tr-TR | Tyrkisk (Tyrkiet) |
+| zh-CN | Kinesisk (forenklet) |
+
+## <a name="notes"></a>Notater
+
+Følgende arbejdselementer oversættes i fremtidige versioner:
+
+| Workflowopgave | Status |
 | --- | --- |
 | Saldoen er forkert, når der angives fri for en fremtidig dato. | Prognosefunktion er ikke tilgængelig endnu. Saldoen viser den aktuelle dato. |
 | Kan ikke annullere en anmodning **Til gennemsyn**. | Denne funktionalitet understøttes ikke i øjeblikket, og den føjes til en fremtidig version. |
@@ -100,7 +121,7 @@ Hvis en bruger kontakter dig, fordi vedkommende ikke kan logge på appen, skal d
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Der opstod en fejl under godkendelse af orlovsanmodninger i appen Human Resources i Teams
 
-Hvis en bruger modtager en fejl under forsøg på at godkende orlovsanmodninger i appen Teams, skal du udføre følgende fejlfindingstrin:
+Hvis en bruger modtager en fejl under forsøg på at godkende orlovsanmodninger i appen Teams, skal du afprøve følgende fejlfindingstrin:
 
 1. Kontrollér, at deres Teams-konto er den samme, som de bruger til at få adgang til Human Resources.
 

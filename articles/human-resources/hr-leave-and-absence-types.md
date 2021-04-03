@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b21d4d631bcdf603b38212f5f76bb78937d3d3c
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f1c3ced43b1f5693c5d5466fd97a20beb358fa20
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115070"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463328"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere orlovs- og fraværstyper
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige typer fravær, som medarbejdere kan rapportere. Du kan skræddersy orlovstyper i henhold til organisationens behov. Eksempler på orlovstyper omfatter:
 
@@ -72,8 +74,7 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
    
  3. Angiv **Overført orlovstype** for orlovstypen. Når du vælger denne indstilling, overføres eventuelle overførte saldi til den angivne orlovstype. Type overført orlov skal også medtages i orlovs- og fraværsplanen. 
  
- 4. Definer **Udløbsregler** for orlovstypen. Når du konfigurerer denne indstilling, kan du vælge enheden dage eller måneder og angive varigheden for udløbet. Du kan også angive ikrafttrædelsesdatoen for udløbsreglen. De orlovssaldi, der findes på tidspunktet for udløbet, trækkes fra orlovstypen og afspejles i orloven. 
- 
+ 4. Definer **Udløbsregler** for orlovstypen. Når du konfigurerer denne indstilling, kan du vælge enheden dage eller måneder og angive varigheden for udløbet. Du kan også angive ikrafttrædelsesdatoen for udløbsreglen. Ikrafttrædelsesdatoen bruges til at bestemme, hvornår du skal begynde at køre det batchjob, der behandler udløbet af orlov, eller den dato, hvor reglen træder i kraft. Selve udløbet finder altid sted på startdatoen for orlovsplanen, når batchjobbet er indstillet til at blive behandlet. Planens startdato kan f.eks. være den 1. januar 2020, men reglen blev først oprettet den 1. juni 2020. Hvis ikrafttrædelsesdatoen angives til 1. juni 2020, behandles reglen ved den næste årsgrænse, dvs. 1. januar 2021. De orlovssaldi, der findes på tidspunktet for udløbet, trækkes fra orlovstypen og afspejles i orloven. 
  
 ## <a name="see-also"></a>Se også
 

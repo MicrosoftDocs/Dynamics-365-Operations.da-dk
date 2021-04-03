@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb16f9f46e3f5c58854ec06c3b89ec72dd7bae00
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 0ae695a2c3bb71821bb0a8aa431a298c8859e28c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125731"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467499"
 ---
 # <a name="candidate-to-hire"></a>Kandidat, der kan ansættes
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver den kandidat, der skal ansætte enhed i Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmcandidatetohireentity
 
-## <a name="description"></a>Betegnelse
+## <a name="description"></a>Beskrivelse
 
 Denne enhed indeholder kandidatoplysninger, der bruges til at oprette en medarbejder i Dynamics 365 Human Resources. Den bruges til at læse alle kandidatposter og oprette interne og eksterne kandidatposter, så du kan oprette personlige oplysninger om den nye kandidat.
 
@@ -75,7 +77,7 @@ Når du opretter en intern kandidatpost (en kandidat til den stilling, der aller
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Id for kandidat til ansættelsesenhed**<br>mshr_hcmcandidatetohireentityid<br>Guid | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret | Et systemgenereret entydigt id til enhedsposten. |
 | **Kandidat-id**<br>mshr_candidateid<br>Streng | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret | Et entydigt id for enheden. |

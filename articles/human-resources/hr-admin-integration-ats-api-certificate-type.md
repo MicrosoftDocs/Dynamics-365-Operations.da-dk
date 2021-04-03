@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1d2d53a628ef43d50bd83fd6b62807f44eddd653
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 962bccb3aaab16322d072417660ec3aac821183b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125707"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467475"
 ---
 # <a name="certificate-type"></a>Certifikattype
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver certifikatstypeenheden til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmcertificatetypeentity
 
-## <a name="description"></a>Betegnelse
+## <a name="description"></a>Beskrivelse
 
 Denne enhed definerer listen over typer af professionelle certifikater, der er defineret i Human Resources. Enheden er ikke specifik for en juridisk enhed (firma).
 
@@ -46,7 +48,7 @@ Denne enhed definerer listen over typer af professionelle certifikater, der er d
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Enheds-id for certifikattype**<br>mshr_hcmcertificatetypeentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet 
 Systemgenereret | Entydig primær identifikation af certifikattype. |

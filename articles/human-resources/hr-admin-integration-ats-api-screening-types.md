@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 227c15acb44e020ea9858961e45c11ad07e18a74
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: d3a45d802ab6b574338a09e77d432357cb9df507
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5126164"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465912"
 ---
 # <a name="screening-types"></a>Screeningstyper
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver enheden Screeningtyper til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmscreeningtypeentity
 
-## <a name="description"></a>Betegnelse
+## <a name="description"></a>Beskrivelse
 
 Denne enhed beskriver de screeningtyper, firmaet har konfigureret for præ-ansættelse og igangværende medarbejder-screeningprocesser.
 
@@ -48,7 +50,7 @@ Denne enhed beskriver de screeningtyper, firmaet har konfigureret for præ-ansæ
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Enheds-id for screeningstype**<br>mshr_hcmscreeningtypeentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret | Entydigt primært id for screeningtypepost. |
 | **Screeningstype-id**<br>mshr_screeningtypeid<br>*Streng* | Læse/skrive<br>Påkrævet | Brugerdefineret entydig id for screeningtype. |

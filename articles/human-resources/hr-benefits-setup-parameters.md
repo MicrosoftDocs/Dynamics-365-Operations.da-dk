@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
-ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
+ms.openlocfilehash: 5e241475c9652ab2dafe6886479e9c0a93711aca
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "4962434"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466754"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Angive parametre for frynsegodeadministration og Employee Self-Service for alle firmaer
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, skal du konfigurere parametre for administration af frynsegoder. Disse parametre angiver standardværdier, årsagskoder og andre indstillinger. 
 
@@ -35,7 +37,7 @@ Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, s
 
 2. Angiv værdier for følgende felter under fanen **Frynsegodeadministration**:
 
-   | Felt | Betegnelse |
+   | Felt | Beskrivelse |
    | --- | --- |
    | **Land/område** | Feltet **Land/område** bestemmer, hvilken visningsrækkefølgen for postnumre/stater. Det valgte land vises først på rullelisten. |
    | **Årsagskode for tilmelding** | Vælg en standardårsagskode, der skal bruges, når der oprettes medarbejderplaner under behandling af en åben tilmelding. |
@@ -60,7 +62,7 @@ Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, s
 
 2. Angiv værdier for følgende felter under fanen **Frynsegodeadministration**:
 
-   | Felt | Betegnelse |
+   | Felt | Beskrivelse |
    | --- | --- |
    | **Frynsegodebekræftelse** | Den kontroltekst, der skal bruges under betaling af selvbetjeningsfrynsegoder. |
    | **Vælg automatisk udpegede modtagere** | Angiver, om der automatisk skal vælges afhængige og modtagere baseret på deres berettigelse til planindstillinger. |

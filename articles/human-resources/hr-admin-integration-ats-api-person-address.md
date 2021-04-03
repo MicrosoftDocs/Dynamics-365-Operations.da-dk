@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9911362ff8260860864cfe24f0b60f59adb77186
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 0bca48c9e980f95e4dd72a075b34824331ae05dc
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125876"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466538"
 ---
 # <a name="person-address"></a>Personadresse
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver personadressen til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmpersonaddressentities
 
-## <a name="description"></a>Betegnelse
+## <a name="description"></a>Beskrivelse
 
 Enheden indeholder listen over postadresser for kandidatposter.
 
@@ -58,7 +60,7 @@ Enheden indeholder listen over postadresser for kandidatposter.
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Personadresseenheds-id**<br>mshr_hcmpersonaddressentityid<br>*Streng* | Skrivebeskyttet<br>Påkrævet | Systemgenereret entydigt id til enhedsposten. |
 | **Partnummer**<br>mshr_partynumber<br>*Streng* | Læse/skrive<br>Påkrævet | Id for den tilknyttede partpost (person). |

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d16de8c339fadff074ef8ec30b0b4d6e3412569
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001843"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470763"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosereduktionsnøgler
 
@@ -198,7 +198,7 @@ Derfor oprettes følgende planlagte ordrer.
 En prognosereduktionsnøgle anvendes af metoderne **Transaktioner - reduktionsnøgle** og **Procent - reduktionsnøgle** til at reducere prognosekrav. Følg følgende fremgangsmåde for at oprette og konfigurere en reduktionsnøgle:
 
 1. Gå til **Varedisponering \> Opsætning \> Dækning \> Reduktionsnøgler**.
-2. Vælg **Ny** eller tryk på **Ctrl+N** for at oprette en reduktionsnøgle.
+2. Vælg **Ny** for at oprette en reduktionsnøgle.
 3. I feltet **Reduktionsnøgle** indtastes en unik identifikator for prognosereduktionsnøglen. Dernæst indtastes et navn i feltet **Navn**. 
 4. Fastsæt perioderne og reduktionsnøgleprocenterne for hver periode:
 

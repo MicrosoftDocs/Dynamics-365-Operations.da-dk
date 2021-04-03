@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b081cd8d56217b8cf76db824c29482d453fc9ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3fde9194ece4774c4d39785e337caf2413052159
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001942"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476669"
 ---
 # <a name="engineering-change-management-overview"></a>Oversigt over teknisk ændringsstyring
 
@@ -44,20 +44,24 @@ Teknisk ændringsstyring hjælper dig med at planlægge og administrere produktv
 
 Den foregående video ([Styring af ændringer i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
-## <a name="turn-on-engineering-change-management-for-your-system"></a>Aktivere styring af tekniske ændringer for systemet
+## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Aktivere funktionerne til styring af tekniske ændringer og versionsdimension for systemet
 
-Du skal først aktivere styring af tekniske ændringer ved at følge disse trin.
+Før du kan bruge styring af tekniske ændringer, skal du aktivere både funktionen *Styring af tekniske ændringer* og dens konfigurationsnøgle. Hvis du også vil spore versionsdimensionen for produkter i transaktioner (valgfrit), skal du også aktivere funktionen *Produktversionsdimension* og dens konfigurationsnøgle.
+
+Du skal først aktivere disse funktioner ved at følge disse trin.
 
 1. Gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Søg efter opdateringer.
 1. Aktivér den funktion, der hedder **Teknisk ændringsstyring**.
+1. Hvis du vil bruge den, skal du også aktivere funktionen med navnet **Produktdimensionsversion**.
 
-Derefter skal du aktivere **Teknisk ændringsstyring**-konfigurationsnøglen ved at følge disse trin.
+Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin.
 
 1. Sæt systemet i vedligeholdelsestilstand som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**.
-1. Udvid **Handel**-noden, og markér afkrydsningsfeltet **Teknisk ændringsstyring**.
+1. Udvid noden **Handel**.
+1. Markér afkrydsningsfeltet **Styring af tekniske ændringer**.
+1. Hvis du vil bruge den, skal du også markere afkrydsningsfeltet **Produktdimension - Version**.
 1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
