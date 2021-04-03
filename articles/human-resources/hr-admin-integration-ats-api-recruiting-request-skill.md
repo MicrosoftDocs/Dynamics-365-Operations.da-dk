@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83a9956b9aa820e8aca9bf6b2ab920a45c1061f6
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b0e6f4d2a38b092eb8460c5f5f4b8b6d290533a8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125996"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464664"
 ---
 # <a name="recruiting-request-skill"></a>Rekrutteringsanmodningsfærdighed
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver enheden til rekrutteringsanmodningsfærdigheden til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmrecruitingrequestskillentity
 
-### <a name="description"></a>Betegnelse
+### <a name="description"></a>Beskrivelse
 
 Beskriver færdighedskrav til en RecruitingRequest.
 
@@ -56,7 +58,7 @@ Beskriver færdighedskrav til en RecruitingRequest.
 
 ### <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Enheds-id til rekrutteringsanmodningsfærdighed**<br>mshr_hcmrecruitingrequestskillentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet | Systemgenereret entydig identifikation af posten **Rekrutteringsanmodningsfærdighed**. |
 | **Rekrutteringsanmodnings-id**<br>mshr_recruitingrequestid<br>*Streng* | Skriv én gang<br>Påkrævet | Det entydige id, der kan læses af den tilknyttede rekrutteringsanmodning. |

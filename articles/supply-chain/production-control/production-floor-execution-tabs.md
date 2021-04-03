@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 282785799b6d61a00a356fcc2ae86ff0e3b7b39f
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077572"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501024"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designe grænsefladen til kørsel af produktion
 
@@ -45,7 +46,7 @@ Følgende elementer vises i illustrationen:
 
 Følg disse trin for at oprette og konfigurere en ny fane:
 
-1. Gå til **Produktionsstyring &gt; Konfiguration &gt; Produktionsudførelse**.
+1. Gå til **Produktionsstyring \> Opsætning \> Produktionsudførelse \> Konfigurer kørsel af produktionsudstyr**.
 
 1. Vælg **Design faner** i handlingsruden for at åbne siden **Design faner**.
 
@@ -67,7 +68,7 @@ Følg disse trin for at oprette og konfigurere en ny fane:
 
 Når du har designet alle de faner, du har brug for, kan du knytte dem til en konfiguration.
 
-1. Gå til **Produktionsstyring &gt; Konfiguration &gt; Konfigurer kørsel af produktionsudstyr**.
+1. Gå til **Produktionsstyring \> Opsætning \> Produktionsudførelse \> Konfigurer kørsel af produktionsudstyr**.
 
     ![Konfiguration af udførelse af produktionsgulv](media/pfe-config-prod-floor-execution.png "Konfiguration af udførelse af produktionsgulv")
 

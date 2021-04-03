@@ -3,7 +3,7 @@ title: Oprette en Azure Storage-konto og Key Vault
 description: Dette emne forklarer, hvordan du kan oprette en Azure Storage-konto og Key Vault.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
+ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104223"
+ms.lasthandoff: 02/22/2021
+ms.locfileid: "5479339"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Oprette en Azure Storage-konto og Key Vault
 
@@ -77,9 +77,12 @@ I dette emne skal du fuldføre to hovedtrin:
 
     ![Tildele certifikattilladelse](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. I dialogboksen **Sikkerhedskonto** skal du vælge sikkerhedskontoen ved at tilføje **Tilføjelsesprogram til elektronisk fakturering**.
-10. Vælg **Tilføj**, og vælg derefter **Gem Key Vault-ændringer**.
-11. På siden **Oversigt** skal du kopiere værdien **DNS-navn** for Key Vault. Denne værdi vil blive brugt under konfigurationen af tjenesten i RCS og vil blive henvist til som *URI for Key Vault*.
+9. Vælg **Ingen valgt** i feltet **Vælg sikkerhedskonto**.
+10. I dialogboksen **Sikkerhedskonto** skal du vælge sikkerhedskontoen ved at tilføje **e-faktureringstjeneste**.
+11. Vælg **Tilføj**, og vælg derefter **Gem Key Vault-ændringer**.
+12. På siden **Oversigt** skal du kopiere værdien **DNS-navn** for Key Vault. Denne værdi vil blive brugt under konfigurationen af tjenesten i RCS og vil blive henvist til som *URI for Key Vault*.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

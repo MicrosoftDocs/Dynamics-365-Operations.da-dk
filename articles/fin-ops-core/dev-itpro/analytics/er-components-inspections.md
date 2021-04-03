@@ -3,10 +3,9 @@ title: Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 description: Dette emne forklarer, hvordan du inspicerer de konfigurerede ER-komponenter (elektronisk rapportering) for at forhindre kørselsproblemer, der kan opstå.
 author: NickSelin
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797335"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574119"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 
@@ -205,6 +204,33 @@ I nedenstående tabel vises en oversigt over de inspektioner, ER tilbyder. Du ka
 <td>Advarsel!</td>
 <td>Det definerede navn &lt;komponentnavn&gt; findes ikke i Excel-arket &lt;arknavn&gt;</td>
 </tr>
+<tr>
+<td><a href='#i14'>Ikke synkroniseret format</a></td>
+<td>Dataintegritet</td>
+<td>Advarsel!</td>
+<td>
+<p>&lt;Kodet kontrol af Word-indhold&gt; kode findes ikke i Word-skabelonfilen</p>
+<p><b>Kørselsfejl:</b> &lt;Kodet kontrol af Word-indhold&gt; kode findes ikke i Word-skabelonfilen.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i15'>Ingen standardtilknytning</a></td>
+<td>Dataintegritet</td>
+<td>Fejl</td>
+<td>
+<p>Der findes mere end én modeltilknytning for datamodellen for &lt;modelnavnet (rodbeskrivelsen)&gt; i konfigurationers &lt;konfigurationsnavne adskilt af komma&gt;. Angiv en af konfigurationerne som standard</p>
+<p><b>Kørselsfejl:</b> Der findes mere end én modeltilknytning for datamodellen for &lt;modelnavnet (rodbeskrivelsen)&gt; i konfigurationer &lt;konfigurationsnavne adskilt af komma&gt;. Angiv en af konfigurationerne som standard.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i16'>Uoverensstemmende indstilling af komponenter i sidehoved eller sidefod</a></td>
+<td>Dataintegritet</td>
+<td>Fejl</td>
+<td>
+<p>Sidehoveder/sidefødder (&lt;komponenttype: sidehoved eller sidefod&gt;) er uoverensstemmende</p>
+<p><b>Kørsel:</b> Den sidste konfigurerede komponent bruges under kørsel, hvis kladdeversionen af det konfigurerede ER-format udføres.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -219,17 +245,17 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
     ![X-felt og datatypen Heltal, der er føjet til datatilstandstræet på siden Datamodel](./media/er-components-inspections-01.png)
 
-3. I datakilderuden for modeltilknytning skal du tilføje en datakilde af typen **Beregnet felt**.
+3. I ruden **Datakilder** for modeltilknytning skal du tilføje en datakilde af typen **Beregnet felt**.
 4. Navngiv den nye datakilde **Y**, og konfigurer den, så den indeholder udtrykket `INTVALUE(100)`.
 5. Bind **X** til **Y**.
 6. I datamodeldesigneren skal du ændre datatypen for **X**-feltet fra **Heltal** til **Int64**.
 7. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**.
 
-    ![Validere den redigerbare modeltilknytningskomponent på siden Modeltilknytningsdesigner](./media/er-components-inspections-01.gif)
+    ![Validering af den redigerbare modeltilknytningskomponent på siden Modeltilknytningsdesigner](./media/er-components-inspections-01.gif)
 
 8. Vælg **Valider** for at inspicere modeltilknytningskomponenten for den valgte ER-konfiguration på siden **Konfigurationer**.
 
-    ![Valider for at inspicere modeltilknytningskomponenten på siden Konfigurationer](./media/er-components-inspections-01a.png)
+    ![Inspektion af modeltilknytningskomponenten på siden Konfigurationer](./media/er-components-inspections-01a.png)
 
 9. Bemærk, at der opstår en valideringsfejl. Meddelelsen angiver, at værdien af den typen **Heltal**, som udtrykket `INTVALUE(100)` i **Y**-datakilden returnerer, ikke kan gemmes i datamodelfeltet **X** af typen **Int64**.
 
@@ -294,13 +320,13 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
     ![Datamodeltræ med feltet X og datatypen Heltal på siden Datamodel](./media/er-components-inspections-01.png)
 
-3. I datakilderuden for modeltilknytning skal du tilføje en datakilde af typen **Beregnet felt**.
+3. I ruden **Datakilder** for modeltilknytning skal du tilføje en datakilde af typen **Beregnet felt**.
 4. Navngiv den nye datakilde **Y**, og konfigurer den, så den indeholder udtrykket `INTVALUE(100)`.
 5. Bind **X** til **Y**.
-6. Slet datakilden **Y** i ruden med datakilder i modeltilknytningsdesigneren.
+6. Slet datakilden **Y** i ruden **Datakilder** i modeltilknytningsdesigneren.
 7. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**.
 
-    ![Inspicere den redigerbare ER-modeltilknytningskomponent på siden Modeltilknytningsdesigner](./media/er-components-inspections-03.gif)
+    ![Inspektion af den redigerbare ER-modeltilknytningskomponent på siden Modeltilknytningsdesigner](./media/er-components-inspections-03.gif)
 
 8. Bemærk, at der opstår en valideringsfejl. Meddelelsen angiver, at bindingen af datamodelfeltet **X** indeholder den sti, der refererer til datakilden **Y**, men denne datakilde blev ikke fundet.
 
@@ -316,11 +342,11 @@ Ophæv bindingen af datamodelfeltet **X** for at stoppe henvisningen til den ikk
 
 #### <a name="option-2"></a>Indstilling 2
 
-I ruden med datakilder i ER-modeltilknytningsdesigneren skal du tilføje datakilden **Y** igen.
+I ruden **Datakilder** i ER-modeltilknytningsdesigneren skal du tilføje datakilden **Y** igen.
 
 ## <a name="executability-of-an-expression-with-filter-function"></a><a id="i4"></a>Mulighed for udførelse af et udtryk med FILTER-funktion
 
-Den indbyggede ER-funktion [FILTER](er-functions-list-filter.md) bruges til at få adgang til programtabeller, visninger eller dataenheder ved at foretage et enkelt SQL-kald for at hente de nødvendige data som en liste over poster. En datakilde af typen **Postliste** bruges som argument for denne funktion og angiver programkilden for kaldet. ER kontrollerer, om der kan oprettes en direkte SQL-forespørgsel til en datakilde, der refereres til i `FILTER`-funktionen. Hvis der ikke kan oprettes en direkte forespørgsel, opstår der en valideringsfejl i ER-modeltilknytningsdesigneren. Den meddelelse, du modtager, angiver, at det ER-udtryk, der inkluderer `FILTER`-funktionen, ikke kan køres på kørselstidspunktet. 
+Den indbyggede ER-funktion [FILTER](er-functions-list-filter.md) bruges til at få adgang til programtabeller, visninger eller dataenheder ved at foretage et enkelt SQL-kald for at hente de nødvendige data som en liste over poster. En datakilde af typen **Postliste** bruges som argument for denne funktion og angiver programkilden for kaldet. ER kontrollerer, om der kan oprettes en direkte SQL-forespørgsel til en datakilde, der refereres til i `FILTER`-funktionen. Hvis der ikke kan oprettes en direkte forespørgsel, opstår der en valideringsfejl i ER-modeltilknytningsdesigneren. Den meddelelse, du modtager, angiver, at det ER-udtryk, der inkluderer `FILTER`-funktionen, ikke kan køres på kørselstidspunktet.
 
 Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
@@ -381,7 +407,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
 9. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**, og kontroller, at den konfigurerede datakilde **GroupedTrans** kan forespørges.
 
-    ![Valider ER-modeltilknytningskomponenten, og kontroller, at den konfigurerede datakilde GroupedTrans kan forespørges, på siden Modeltilknytningsdesigner](./media/er-components-inspections-05b.png)
+    ![Validering af ER-modeltilknytningskomponenten, og kontrol af den GroupedTrans-datakilde kan forespørges, på siden Modeltilknytningsdesigner](./media/er-components-inspections-05b.png)
 
 10. Bemærk, at der opstår en valideringsfejl, fordi datakilden **Trans** indeholder et indlejret felt af typen **Beregnet felt**, der ikke tillader, at kaldet til datakilden **GroupedTrans** oversættes til den direkte SQL-sætning.
 
@@ -429,7 +455,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 11. Rediger udtrykket for datakilden **Vendor.FilteredTrans** fra `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` til `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**, og kontroller, at den konfigurerede datakilde **JoinedList** kan forespørges.
 
-    ![Valider den redigerbare modeltilknytningskomponent, og kontroller, at datakilden JoinedList kan forespørges, på siden Modeltilknytningsdesigner](./media/er-components-inspections-06b.png)
+    ![Validering af den redigerbare modeltilknytningskomponent, og kontrol af, at datakilden JoinedList kan forespørges, på siden Modeltilknytningsdesigner](./media/er-components-inspections-06b.png)
 
 13. Bemærk, at der opstår valideringsfejl, fordi udtrykket for datakilden **Vendor.FilteredTrans** ikke kan oversættes til det direkte SQL-kald. Derudover gør det direkte SQL-kald det ikke muligt at oversætte kaldet for datakilden **JoinedList** til den direkte SQL-sætning.
 
@@ -437,7 +463,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
 I følgende illustration vises den kørselsfejl, der opstår, hvis du ignorerer advarslen og vælger **Kør** for at køre et format, der er konfigureret til at bruge modeltilknytningen.
 
-![Kørsel af det redigerbare format på siden Formatdesigner](./media/er-components-inspections-06e.png)
+![Køre det redigerbare format på siden Formatdesigner](./media/er-components-inspections-06e.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -472,11 +498,11 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 9. Navngiv den nye datakilde **FilteredVendor**, og konfigurer den, så den indeholder udtrykket `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**.
 
-    ![Validere for at inspicere den redigerbare modeltilknytningskomponent på siden Modeltilknytningsdesigner](./media/er-components-inspections-07a.png)
+    ![Inspicere den redigerbare ER-modeltilknytningskomponent på siden Modeltilknytningsdesigner](./media/er-components-inspections-07a.png)
 
 11. Bemærk, at valideringsadvarsler anbefaler, at du bruger funktionen **FILTER** i stedet for funktionen **WHERE** for datakilderne **FilteredVendor** og **FilteredTrans**.
 
-    ![Valideringsadvarsler anbefaler funktionen FILTER i stedet for funktionen WHERE på siden Modeltilknytningsdesigner](./media/er-components-inspections-07b.png)
+    ![Anbefaling at bruge funktionen FILTER i stedet for funktionen WHERE på siden Modeltilknytningsdesigner](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -505,11 +531,11 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 7. Navngiv den nye datakilde **FilteredVendorTrans**, og konfigurer den, så den indeholder udtrykket `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
 8. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**.
 
-    ![Siden Modeltilknytningsdesigner, knappen Valider](./media/er-components-inspections-08a.png)
+    ![Inspektion af den redigerbare modeltilknytningskomponent på siden Modeltilknytningsdesigner](./media/er-components-inspections-08a.png)
 
 9. Bemærk, at der opstår en valideringsadvarsel. I meddelelsen anbefales det, at du bruger funktionen **ALLITEMSQUERY** i stedet for funktionen **ALLITEMS** for datakilden **FilteredVendorTrans**.
 
-    ![Valideringsadvarsel om at bruge funktionen ALLITEMSQUERY i stedet for funktionen ALLITEMS på ER-modeltilknytningskomponenten på siden Modeltilknytningsdesigner](./media/er-components-inspections-08b.png)
+    ![Anbefaling at bruge funktionen ALLITEMSQUERY i stedet for funktionen ALLITEMS på siden Modeltilknytningsdesigner](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -517,7 +543,7 @@ Vælg **Ret** for automatisk at erstatte funktionen **ALLITEMS** med funktionen 
 
 Du kan også vælge rækken for en enkelt advarsel i gitteret og derefter vælge **Ret markeret**. I dette tilfælde ændres udtrykket automatisk i den datakilde, der er nævnt i den valgte advarsel.
 
-![Siden Modeltilknytningsdesigner, Ret markeret](./media/er-components-inspections-08c.png)
+![Vælg Ret på Siden Modeltilknytningsdesigner](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>Manuel løsning
 
@@ -540,7 +566,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
     ![Tilføje indlejrede felter på siden Datamodel](./media/er-components-inspections-09a.png)
 
-6. I datakilderuden for modeltilknytning skal du tilføje en datakilde af typen **Dynamics 365 for Operations \\-tabelposter**.
+6. I ruden **Datakilder** for modeltilknytning skal du tilføje en datakilde af typen **Dynamics 365 for Operations \\ Tabelposter**.
 7. Navngiv den nye datakilde **Kreditor**. I feltet **Tabel** skal du vælge **VendTable** for at angive, at denne datakilde vil anmode om tabellen VendTable.
 8. Tilføj en datakilde af typen **Generelt \\ Brugerinputparameter** for at søge efter en kreditorkonto i kørselsdialogboksen.
 9. Navngiv den nye datakilde **RequestedAccountNum**. Angiv **Kreditors kontonummer** i feltet **Etiket**. Behold standardværdien i feltet **Navn på operationsdatatype**, **Beskrivelse**.
@@ -632,7 +658,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
 9. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**.
 
-    ![Validere den filterfunktion, der er anvendt på datakilden for den cachelagrede kreditor, på siden Modeltilknytningsdesigner](./media/er-components-inspections-10a.png)
+    ![Validere den FILTER-funktion, der er anvendt på datakilden for den cachelagrede kreditor, på siden Modeltilknytningsdesigner](./media/er-components-inspections-10a.png)
 
 10. Bemærk, at der opstår en valideringsfejl. Meddelelsen angiver, at funktionen **FILTER** ikke kan anvendes på den cachelagrede **Kreditor**-datakilde.
 
@@ -671,10 +697,10 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
     ![Føje indlejrede felter til kreditorelementet på siden Datamodel](./media/er-components-inspections-11a.png)
 
-6. I datakilderuden for modeltilknytning skal du tilføje en datakilde af typen **Dynamics 365 for Operations \\-tabelposter**.
+6. I ruden **Datakilder** for modeltilknytning skal du tilføje en datakilde af typen **Dynamics 365 for Operations \\ Tabelposter**.
 7. Navngiv den nye datakilde **Kreditor**. I feltet **Tabel** skal du vælge **VendTable** for at angive, at denne datakilde vil anmode om tabellen VendTable.
 8. Tilføj en datakilde af typen **Generelt \\ Brugerinputparameter** for at forespørge om en kreditorkonto i kørselsdialogboksen.
-9 Navngiv den nye datakilde **RequestedAccountNum**. Angiv **Kreditors kontonummer** i feltet **Etiket**. Behold standardværdien i feltet **Navn på operationsdatatype**, **Beskrivelse**.
+9. Navngiv den nye datakilde **RequestedAccountNum**. Angiv **Kreditors kontonummer** i feltet **Etiket**. Behold standardværdien i feltet **Navn på operationsdatatype**, **Beskrivelse**.
 10. Tilføj en datakilde af typen **Beregnet felt** for at filtrere en kreditor, der forespørges om.
 11. Navngiv den nye datakilde **FilteredVendor**, og konfigurer den, så den indeholder udtrykket `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)`.
 12. Bind datamodelelementerne til konfigurerede datakilder på følgende måde:
@@ -712,7 +738,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
 I følgende illustration vises den kørselsfejl, der opstår, hvis du ignorerer advarslen og vælger **Kør** for at køre formatet.
 
-![Køre det redigerbare format på siden Formatdesigner](./media/er-components-inspections-11e.png)
+![Kørsel af det redigerbare format på siden Formatdesigner](./media/er-components-inspections-11e.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -743,7 +769,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 
     ![Validere den redigerbare formatkomponent i projektmappefilen på siden Formatdesigner](./media/er-components-inspections-12a.gif)
 
-7. Bemærk, at der opstår en valideringsadvarsel. Meddelelsen angiver, at projektmappefilen **B.xlsx** ikke er kædet sammen med nogen komponenter, og at den fjernes, når status for konfigurationsversionen ændres.
+7. Bemærk, at der opstår en valideringsadvarsel. Meddelelsen angiver, at projektmappefilen B.xlsx ikke er kædet sammen med nogen komponenter, og at den fjernes, når status for konfigurationsversionen ændres.
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -766,7 +792,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
     > [!IMPORTANT]
     > Kontrollér, at den tilføjede Excel-projektmappe ikke indeholder navnet **ReportTitle**.
 
-4. Tilføj følgende **Excel\\Celle**-element **Titel** som det indlejrede element i elementet **Rapport**. I feltet **Excel-interval** skal du indtaste **ReportTitle**.
+4. Tilføj følgende **Excel\\Celle**-element **Titel** som et indlejret element i elementet **Rapport**. I feltet **Excel-interval** skal du indtaste **ReportTitle**.
 5. Vælg **Valider** for at inspicere den redigerbare formatkomponent på siden **Formatdesigner**.
 
     ![Validere de indlejrede elementer og felter på siden Formatdesigner](./media/er-components-inspections-13a.png)
@@ -793,6 +819,55 @@ Rediger det konfigurerede format ved at fjerne alle de elementer, der refererer 
 
 Hvis du vil vide, hvordan formatstrukturen kan synkroniseres med en ER-skabelon i skabeloneditoren for [styring af forretningsdokumenter](er-business-document-management.md), skal du se [Opdatere strukturen for en forretningsdokumentskabelon](er-bdm-update-structure.md).
 
+## <a name="not-synced-with-a-word-template-format"></a><a id="i14"></a>Ikke synkroniseret med et Word-skabelonformat
+
+Når du [konfigurerer](er-fillable-excel.md) en ER-formatkomponent for at bruge en Word-skabelon til at generere et udgående dokument, kan du tilføje elementet **Excel\\Fil** manuelt, tilføje den ønskede Word-skabelon som en vedhæftet fil til den redigerbare komponent og markere den vedhæftede fil i det tilføjede **Excel\\Fil**-element.
+
+> [!NOTE]
+> Når Word-dokumentet er vedhæftet, viser ER-formatdesigneren det element, der kan redigeres, som **Word\\Fil**.
+
+På denne måde angiver du, at det tilføjede element vil udfylde den valgte skabelon på kørselstidspunktet. Da den tilføjede Word-skabelon er designet eksternt, kan det redigerbare ER-format indeholde Word-navne, der mangler i den tilføjede skabelon. ER-formatdesigneren advarer dig om eventuelle uoverensstemmelser mellem egenskaberne for de ER-formatelementer, der refererer til navne, som ikke er medtaget i den tilføjede Word-skabelon.
+
+Du kan se et eksempel på, hvordan dette problem kan forekomme, under [Konfigurere det format, der kan redigeres, hvis du vil udelade oversigtsafsnittet](er-design-configuration-word-suppress-controls.md#configure-to-suppress-control).
+
+### <a name="automatic-resolution"></a>Automatisk løsning
+
+Det er ikke muligt at løse dette problem automatisk.
+
+### <a name="manual-resolution"></a>Manuel løsning
+
+#### <a name="option-1"></a>Indstilling 1
+
+Rediger det konfigurerede format ved at slette formlen **Fjernet** fra det formatelement, der nævnes i valideringsadvarslen.
+
+#### <a name="option-2"></a>Indstilling 2
+
+Rediger brug af Word-skabelonen ved at [tilføje](er-design-configuration-word-suppress-controls.md#tag-control) den påkrævede mærkat til det relevante indhold i Word-kontrolelementet.
+
+## <a name="no-default-mapping"></a><a id="i15"></a>Ingen standardtilknytning
+
+Når den [Manglende bindende](#i11) inspektion udføres, evalueres de inspicerede format bindinger i forhold til bindingerne fra den relevante modeltilknytningskomponent. Da du kan importere [flere](./tasks/er-manage-model-mapping-configurations-july-2017.md) ER-modeltilknytningskonfigurationer til din finansforekomst, og hver konfiguration kan indeholde den relevante modeltilknytningskomponent, skal du vælge én konfiguration som standardkonfiguration. Ellers vil der forekomme en undtagelse, når du prøver at køre, redigere eller validere det inspicerede ER-format, og du vil modtage følgende meddelelse: "Der findes mere end én modeltilknytning for \<model name (root descriptor)\> datamodellen i konfigurationerne \<configuration names separated by comma\>. Angiv en af konfigurationerne som standard."
+
+Du kan se et eksempel på, hvordan dette problem kan forekomme, og hvordan det kan rettes, under [Administrer flere afledte tilknytninger for en enkelt modelrod](er-multiple-model-mappings.md).
+
+## <a name="inconsistent-setting-of-header-or-footer-components"></a><a id="i16"></a>Uoverensstemmende indstilling af komponenter i sidehoved eller sidefod
+
+Når du [konfigurerer](er-fillable-excel.md) en ER-formatkomponent til at bruge en Excel-skabelon til at generere et udgående dokument, kan du tilføje komponenten **Excel\\overskrift** for at indsætte overskrifter øverst i et regneark i en Excel-projektmappe. Du kan også tilføje komponenten **Excel\\sidefod**, hvis du vil udfylde sidefødder nederst i et regneark. For hver komponent i **Excel\\sidehoved** eller **Excel\\sidefod**, du tilføjer, skal du angive de **Sidehoved-/sidefod**-egenskaber, der skal angive de sider, komponenten skal føres for. Da du kan konfigurere flere komponenter i **Excel\\sidehoved** eller **Excel\\sidefod** til en komponent i et enkelt **ark**, og du kan generere forskellige sidehoveder eller sidefødder til forskellige typer sider i et Excel-regneark, skal du konfigurere en enkelt komponent i **Excel\\sidehoved** eller **Excel\\sidefod** for en bestemt værdi af egenskaben for udseende som **sidehoved/sidefod**. Hvis der er konfigureret mere end én komponent i **Excel\\sidehoved** eller **Excel\\sidefod** til en bestemt værdi af egenskaben for **sidehovedets/sidefodens udseende**, opstår der en valideringsfejl, og du modtager følgende fejlmeddelelse: "Sidehoveder/sidefødder (&lt;komponenttype: sidehoved eller sidefod&gt;) er uoverensstemmende."
+
+### <a name="automatic-resolution"></a>Automatisk løsning
+
+Det er ikke muligt at løse dette problem automatisk.
+
+### <a name="manual-resolution"></a>Manuel løsning
+
+#### <a name="option-1"></a>Indstilling 1
+
+Rediger det konfigurerede format ved at slette en af de uoverensstemmende komponenter **Excel\\sidehoved** eller **Excel\\sidefod**.
+
+#### <a name="option-2"></a>Indstilling 2
+
+Rediger værdien for egenskaben for udseendet af **sidehovedet eller sidefoden** for en af de uoverensstemmende komponenter i **Excel\\sidehoved** eller **Excel\\sidefod**.
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [ER-funktionen ALLITEMS](er-functions-list-allitems.md)
@@ -812,6 +887,10 @@ Hvis du vil vide, hvordan formatstrukturen kan synkroniseres med en ER-skabelon 
 [Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
 
 [Oversigt over styring af forretningsdokumenter](er-business-document-management.md)
+
+[Skjule Word-indhold i genererede rapporter](er-design-configuration-word-suppress-controls.md)
+
+[Administrere flere afledte tilknytninger for en enkelt modelrod](er-multiple-model-mappings.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

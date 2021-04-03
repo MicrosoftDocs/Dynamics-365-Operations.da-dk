@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985948"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582713"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tilføje understøttelse af et netværk, der leverer indhold (CDN)
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du føjer et CDN (Content Delivery Network) til dit Microsoft Dynamics 365 Commerce-miljø.
-
-## <a name="overview"></a>Overblik
 
 Når du konfigurerer et e-handels-miljø i Dynamics 365 Commerce, kan du konfigurere det til at arbejde sammen med CDN-tjenesten. 
 
@@ -96,8 +93,8 @@ Benyt følgende fremgangsmåde for at konfigurere en ruteplanlægningsregel i Az
 1. I feltet **Navn** skal du angive **standard**.
 1. I feltet **Accepteret protokol** skal du vælge **HTTP og HTTPS**.
 1. I feltet **Front-end-værter** skal du angive **dynamics-ecom-lejernavn.azurefd.net**.
-1. Under **Mønstre, der skal matche** skal du angive **/\** _ i det øverste felt.
-1. Under _*Rutedetaljer** skal du indstille **Rutetype** til **Fremad**.
+1. Under **Mønstre, der skal matche** skal du angive **/\*** i det øverste felt.
+1. Under **Rutedetaljer** skal du angive indstillingen **Rutetype** til **Fremad**.
 1. I feltet **Back-end-pulje** skal du vælge **ecom-back-end**.
 1. I feltgruppen **Videresendelsesprotokol** skal du vælge indstillingen **Match anmodning**. 
 1. Angiv indstillingen **URL Rewrite** til **Deaktiveret**.
@@ -109,8 +106,8 @@ Benyt følgende fremgangsmåde for at konfigurere en cachelagringsregel i Azure 
 1. I feltet **Navn** skal du angive **statiske filer**.
 1. I feltet **Accepteret protokol** skal du vælge **HTTP og HTTPS**.
 1. I feltet **Front-end-værter** skal du angive **dynamics-ecom-lejernavn.azurefd.net**.
-1. Under **Mønstre, der skal matche** skal du angive **/\_msdyn365/\_scnr/\** _ i det øverste felt.
-1. Under _*Rutedetaljer** skal du indstille **Rutetype** til **Fremad**.
+1. Under **Mønstre, der skal matche** skal du angive **/\_msdyn365/\_scnr/\*** i det øverste felt.
+1. Under **Rutedetaljer** skal du angive indstillingen **Rutetype** til **Fremad**.
 1. I feltet **Back-end-pulje** skal du vælge **ecom-back-end**.
 1. I feltgruppen **Videresendelsesprotokol** skal du vælge indstillingen **Match anmodning**.
 1. Angiv indstillingen **URL Rewrite** til **Deaktiveret**.
@@ -143,25 +140,7 @@ Dit CDN bør nu være korrekt konfigureret, så det kan bruges sammen med Commer
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Konfigurere dit domænenavn](configure-your-domain-name.md)
-
-[Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
-
-[Oprette et websted for e-handel](create-ecommerce-site.md)
-
-[Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal](associate-site-online-store.md)
-
-[Administrere robots.txt-filer](manage-robots-txt-files.md)
-
-[Masseoverføre omdirigeringer af URL-adresser](upload-bulk-redirects.md)
-
-[Konfigurere en B2C-lejer i Commerce](set-up-B2C-tenant.md)
-
-[Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
-
-[Konfigurere flere B2C-lejere i et Commerce-miljø](configure-multi-B2C-tenants.md)
-
-[Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
+[Indstillinger for implementering af netværk for indholdslevering](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

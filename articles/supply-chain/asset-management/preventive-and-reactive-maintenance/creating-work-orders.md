@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
-ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
+ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "5131787"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500568"
 ---
 # <a name="creating-work-orders"></a>Oprette arbejdsordrer
 
@@ -30,7 +30,7 @@ ms.locfileid: "5131787"
 
 Når du har planlagt præventive vedligeholdelsesjob, er næste trin at oprette arbejdsordrer til dem. Du kan udføre dette trin ved at bruge en af vedligeholdelsestidsplanerne. De planlagte job i en vedligeholdelsestidsplan kan have forskellige referencetyper som beskrevet i følgende tabel.
 
-| Referencetype | Betegnelse |
+| Referencetype | Beskrivelse |
 |---|---|
 | Vedligeholdelsesplaner | Præventivee vedligeholdelsesjob, der er baseret på vedligeholdelsesplantypen *Tid* eller *Tæller*. |
 | Vedligeholdelsesrunder | Præventive vedligeholdelsesjob, der indeholder flere aktiver, der kræver en lignende form for vedligeholdelse. |
@@ -62,8 +62,7 @@ Hvis du vil oprette arbejdsordrer, der er baseret på din vedligeholdelsestidspl
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Gruppere arbejdsordrelinjer, som oprettes automatisk, mens vedligeholdelsesplanen køres
 
-> [!IMPORTANT]
-> De funktioner, der er anført i dette afsnit, er tilgængelige som en del af en privat forhåndsversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om prøveversioner i [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Denne funktion giver dig mulighed for at definere regler for gruppering af arbejdsordrelinjer under en enkelt arbejdsordre, når systemet er konfigureret til at generere arbejdsordrer automatisk på baggrund af en vedligeholdelsesplan. Tidligere kunne automatisk genererede arbejdsordrer kun indeholde én linje. Men du kan nu gruppere arbejdsordrer efter f.eks. aktiv, aktivtype eller arbejdssted. (Manuelt genererede arbejdsordrer kan allerede være grupperet på denne måde som beskrevet i forrige afsnit i dette emne).
 

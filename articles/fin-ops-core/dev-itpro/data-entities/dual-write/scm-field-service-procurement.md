@@ -6,7 +6,6 @@ manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c2b0d5be38425b5ceebb38b7964f5ec600b1c838
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 79a971e3de43cb0161d4ac5012f657a947bc567c
+ms.sourcegitcommit: afbdc268bcdb1755d7f1bc79ad1b7fc801b2e2f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141898"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5579966"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrere indkøb mellem Supply Chain Management og Field Service
 
@@ -47,8 +46,8 @@ Du kan integrere Supply Chain Management med Field Service ved at installere fø
 
 ### <a name="prerequisites"></a>Forudsætninger
 
-+ **Dobbeltskrivning** – Yderligere oplysninger finder du på [Startside for dobbeltskrivning](dual-write-home-page.md#dual-write-setup).
-+ **Dynamics 365 Field Service** – Du kan finde flere oplysninger i [Sådan installerer du Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Dobbeltskrivning** – Yderligere oplysninger finder du på [Startside for dobbeltskrivning](dual-write-home-page.md#dual-write-setup).
+- **Dynamics 365 Field Service** – Du kan finde flere oplysninger i [Sådan installerer du Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 Når dobbeltskrivning og Field Service er aktiveret i Microsoft Dataverse, introducerer de flere løsningslag, der udvider miljøet med nye metadata, formularer, visninger og logik. Disse løsninger kan aktiveres i vilkårlig rækkefølge, selvom installationen typisk udføres i følgende rækkefølge:
 
@@ -57,8 +56,8 @@ Når dobbeltskrivning og Field Service er aktiveret i Microsoft Dataverse, intro
 3. **Supply Chain Management Extended** – Supply Chain Management Extended installeres automatisk, når dobbeltskrivning er aktiveret i et miljø. 
 4. **OneFSSCM-løsning** – OneFSSCM installeres automatisk af den løsning (Field Service eller Supply Chain Management), der installeres sidst.
 
-    + Hvis Field Service allerede er installeret i miljøet, og du aktiverer dobbeltskrivning, som installerer Supply Chain Management Extended, installeres OneFSSCM.
-    + Hvis Supply Chain Management Extended allerede er installeret i miljøet, og du installerer Field Service, installeres OneFSSCM.
+    - Hvis Field Service allerede er installeret i miljøet, og du aktiverer dobbeltskrivning, som installerer Supply Chain Management Extended, installeres OneFSSCM.
+    - Hvis Supply Chain Management Extended allerede er installeret i miljøet, og du installerer Field Service, installeres OneFSSCM.
 
 ## <a name="initial-synchronization"></a>Første synkronisering
 
@@ -124,22 +123,22 @@ Dataverse omfatter desuden logik, som knytter kreditorer til deres relaterede ko
 
 ## <a name="supported-scenarios"></a>Understøttede scenarier
 
-+ Indkøbsordrer kan oprettes og opdateres af Dataverse-brugere. Processen og dataene styres dog af Supply Chain Management. Begrænsningerne for opdateringer af indkøbsordrekolonner i Supply Chain Management gælder, når opdateringer kommer fra Field Service. Du kan f.eks. ikke opdatere en indkøbsordre, hvis den er blevet færdiggjort. 
-+ Hvis indkøbsordren styres af ændringsstyring i Supply Chain Management, kan en Field Service-bruger kun opdatere indkøbsordren, når godkendelsesstatussen for Supply Chain Management er *Kladde*.
-+ Flere kolonner administreres kun af Supply Chain Management og kan ikke opdateres i Field Service. Hvis du vil vide, hvilke kolonner der ikke kan opdateres, kan du gennemse tilknytningstabellerne i produktet. For nemheds skyld er de fleste af disse kolonner angivet til skrivebeskyttet på Dataverse-sider. 
+- Indkøbsordrer kan oprettes og opdateres af Dataverse-brugere. Processen og dataene styres dog af Supply Chain Management. Begrænsningerne for opdateringer af indkøbsordrekolonner i Supply Chain Management gælder, når opdateringer kommer fra Field Service. Du kan f.eks. ikke opdatere en indkøbsordre, hvis den er blevet færdiggjort. 
+- Hvis indkøbsordren styres af ændringsstyring i Supply Chain Management, kan en Field Service-bruger kun opdatere indkøbsordren, når godkendelsesstatussen for Supply Chain Management er *Kladde*.
+- Flere kolonner administreres kun af Supply Chain Management og kan ikke opdateres i Field Service. Hvis du vil vide, hvilke kolonner der ikke kan opdateres, kan du gennemse tilknytningstabellerne i produktet. For nemheds skyld er de fleste af disse kolonner angivet til skrivebeskyttet på Dataverse-sider. 
 
     Kolonnerne for prisoplysninger administreres f.eks. af Supply Chain Management. Supply Chain Management har samhandelsaftaler, som Field Service kan få fordel af. Kolonner som f.eks. **Enhedspris**, **Rabat** og **Nettobeløb** kommer kun fra Supply Chain Management. Hvis du vil sikre dig, at prisen synkroniseres med Field Service, skal du bruge funktionen **Synkronisering** på siderne **Indkøbsordre** og **Indkøbsordreprodukt** i Dataverse, når der er angivet indkøbsordredata. Du kan finde flere oplysninger under [Synkronisere med Dynamics 365 Supply Chain Management-indkøbsdata efter behov](#sync-procurement).
 
-+ Kolonnen **Totaler** er kun tilgængelig i Field Service, da der ikke er nogen opdaterede totaler for indkøbsordren i Supply Chain Management. Totalerne i Supply Chain Management beregnes ud fra flere parametre, der ikke er tilgængelige i Field Service.
-+ Indkøbsordrelinjer, for hvilke der kun er angivet en indkøbskategori, eller hvor det angivne produkt er en vare af produkttypen *Service* eller Field Service, kan kun startes i Supply Chain Management. Linjerne synkroniseres derefter til Dataverse og vises i Field Service.
-+ Hvis der kun er installeret Field Service, og ikke Supply Chain Management, er kolonnen **Lagersted** obligatorisk på indkøbsordren. Men hvis Supply Chain Management er installeret, er dette krav lempet, da Supply Chain Management tillader indkøbsordrelinjer, når der ikke er angivet et lagersted i bestemte situationer.
-+ Produktkvitteringerne (indkøbsordrekvitteringerne i Dataverse) administreres af Supply Chain Management og kan ikke oprettes fra Dataverse, hvis Supply Chain Management er installeret. Produktkvitteringerne fra Supply Chain Management synkroniseres fra Supply Chain Management til Dataverse.
-+ Underlevering er tilladt i Supply Chain Management. OneFSSCM-løsningen tilføjer logik, så når produktkvitteringslinjen (eller produktet på indkøbsordrekvitteringen i Dataverse) oprettes eller opdateres, oprettes der en lagerkladderække i Dataverse for at regulere det restantal, der er bestilt, for scenarier med underlevering.
+- Kolonnen **Totaler** er kun tilgængelig i Field Service, da der ikke er nogen opdaterede totaler for indkøbsordren i Supply Chain Management. Totalerne i Supply Chain Management beregnes ud fra flere parametre, der ikke er tilgængelige i Field Service.
+- Indkøbsordrelinjer, for hvilke der kun er angivet en indkøbskategori, eller hvor det angivne produkt er en vare af produkttypen *Service* eller Field Service, kan kun startes i Supply Chain Management. Linjerne synkroniseres derefter til Dataverse og vises i Field Service.
+- Hvis der kun er installeret Field Service, og ikke Supply Chain Management, er kolonnen **Lagersted** obligatorisk på indkøbsordren. Men hvis Supply Chain Management er installeret, er dette krav lempet, da Supply Chain Management tillader indkøbsordrelinjer, når der ikke er angivet et lagersted i bestemte situationer.
+- Produktkvitteringerne (indkøbsordrekvitteringerne i Dataverse) administreres af Supply Chain Management og kan ikke oprettes fra Dataverse, hvis Supply Chain Management er installeret. Produktkvitteringerne fra Supply Chain Management synkroniseres fra Supply Chain Management til Dataverse.
+- Underlevering er tilladt i Supply Chain Management. OneFSSCM-løsningen tilføjer logik, så når produktkvitteringslinjen (eller produktet på indkøbsordrekvitteringen i Dataverse) oprettes eller opdateres, oprettes der en lagerkladderække i Dataverse for at regulere det restantal, der er bestilt, for scenarier med underlevering.
 
 ## <a name="unsupported-scenarios"></a>Ikke-understøttede scenarier
 
-+ Field Service forhindrer, at der føjes linjer til en annulleret indkøbsordre i Supply Chain Management. Som en løsning kan du ændre systemstatus for indkøbsordren i Field Service og derefter tilføje den nye linje i enten Field Service eller Supply Chain Management.
-+ Selvom indkøbsrækker påvirker lagerniveauer i begge systemer, sikrer denne integration ikke lagerjustering på tværs af Supply Chain Management og Field Service. Både Field Service og Supply Chain Management har andre processer til opdatering af lagerniveauer. Disse processer ligger uden for indkøbsområdet.
+- Field Service forhindrer, at der føjes linjer til en annulleret indkøbsordre i Supply Chain Management. Som en løsning kan du ændre systemstatus for indkøbsordren i Field Service og derefter tilføje den nye linje i enten Field Service eller Supply Chain Management.
+- Selvom indkøbsrækker påvirker lagerniveauer i begge systemer, sikrer denne integration ikke lagerjustering på tværs af Supply Chain Management og Field Service. Både Field Service og Supply Chain Management har andre processer til opdatering af lagerniveauer. Disse processer ligger uden for indkøbsområdet.
 
 ## <a name="status-management"></a>Statusstyring
 
@@ -161,13 +160,13 @@ Statusser for linjegodkendelse er kun aktive, når der er en linjearbejdsgang.
 
 Følgende regler anvendes på statuskolonnerne:
 
-+ Statussen i Supply Chain Management kan ikke opdateres fra Field Service. I nogle tilfælde vil status i Field Service dog blive opdateret, når status for indkøbsordren i Supply Chain Management ændres.
-+ Hvis en indkøbsordre i Supply Chain Management er under ændringsstyring, og en ændring behandles, er godkendelsesstatussen *Kladde* eller *Til gennemsyn*. I dette tilfælde angives Field Service-godkendelsesstatussen til *Null*.
-+ Hvis godkendelsesstatussen for indkøbsordren i Supply Chain Management er angivet til *Godkendt*, *Til eksternt gennemsyn*, *Bekræftet* eller *Afsluttet*, angives godkendelsesstatussen for Field Service-indkøbsordren til *Godkendt*.
-+ Hvis godkendelsesstatussen for indkøbsordren i Supply Chain Management er angivet til *Afvist*, angives godkendelsesstatussen for Field Service-indkøbsordren til *Afvist*.
-+ Hvis dokumenthovedstatussen i Supply Chain Management ændres til *Åben ordre (restordre)*, og status for Field Service-indkøbsordren er *Kladde* eller *Annulleret*, ændres statussen for Field Service-indkøbsordren til *Sendt*.
-+ Hvis dokumenthovedstatussen i Supply Chain Management ændres til *Annulleret*, og der ikke er knyttet nogen produkter på indkøbsordrekvitteringen i Field Service til indkøbsordren (via indkøbsordreprodukter), angives Field Service-systemstatussen til *Annulleret*.
-+ Hvis statussen for indkøbsordrelinjen i Supply Chain Management er *Annulleret*, angives statussen for indkøbsordreprodukter i Field Service til *Annulleret*. Hvis statussen for indkøbsordrelinjen i Supply Chain Management derudover ændres fra *Annulleret* til *Restordre*, angives statussen for indkøbsordreproduktet i Field Service til *Afventer*.
+- Statussen i Supply Chain Management kan ikke opdateres fra Field Service. I nogle tilfælde vil status i Field Service dog blive opdateret, når status for indkøbsordren i Supply Chain Management ændres.
+- Hvis en indkøbsordre i Supply Chain Management er under ændringsstyring, og en ændring behandles, er godkendelsesstatussen *Kladde* eller *Til gennemsyn*. I dette tilfælde angives Field Service-godkendelsesstatussen til *Null*.
+- Hvis godkendelsesstatussen for indkøbsordren i Supply Chain Management er angivet til *Godkendt*, *Til eksternt gennemsyn*, *Bekræftet* eller *Afsluttet*, angives godkendelsesstatussen for Field Service-indkøbsordren til *Godkendt*.
+- Hvis godkendelsesstatussen for indkøbsordren i Supply Chain Management er angivet til *Afvist*, angives godkendelsesstatussen for Field Service-indkøbsordren til *Afvist*.
+- Hvis dokumenthovedstatussen i Supply Chain Management ændres til *Åben ordre (restordre)*, og status for Field Service-indkøbsordren er *Kladde* eller *Annulleret*, ændres statussen for Field Service-indkøbsordren til *Sendt*.
+- Hvis dokumenthovedstatussen i Supply Chain Management ændres til *Annulleret*, og der ikke er knyttet nogen produkter på indkøbsordrekvitteringen i Field Service til indkøbsordren (via indkøbsordreprodukter), angives Field Service-systemstatussen til *Annulleret*.
+- Hvis statussen for indkøbsordrelinjen i Supply Chain Management er *Annulleret*, angives statussen for indkøbsordreprodukter i Field Service til *Annulleret*. Hvis statussen for indkøbsordrelinjen i Supply Chain Management derudover ændres fra *Annulleret* til *Restordre*, angives statussen for indkøbsordreproduktet i Field Service til *Afventer*.
 
 ## <a name="sync-with-the-supply-chain-management-procurement-data-on-demand"></a><a id="sync-procurement"></a>Synkronisere med Supply Chain Management-indkøbsdata efter behov
 

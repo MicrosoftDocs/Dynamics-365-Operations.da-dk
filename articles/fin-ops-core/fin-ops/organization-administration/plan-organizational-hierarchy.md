@@ -3,10 +3,9 @@ title: Planlægge dit organisationshierarki
 description: Før du opretter organisationer og organisationshierarkier, skal du være sikker på, at du forstår, hvordan du bedst udformer en model af din virksomhed.
 author: sericks007
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 7bf683487a20203d49fbab680373fbf48a5c58b6
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154403"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569355"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planlægge dit organisationshierarki
 
@@ -166,7 +165,7 @@ Driftsenheder hører under samme land/område som den overordnede juridiske enhe
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Hvis organisationen er udformet som en juridisk enhed
 
-For lande/områder, der understøttes, kan de fleste lovpligtige rapporter oprettes. Du kan finde oplysninger om, hvilke rapporter der er tilgængelige for hvert land/område, på [Microsoft Dynamics-lokaliseringsportalen](https://docs.microsoft.com/dynamics/s-e/). (Der kræves et CustomerSource-logon).
+For lande/områder, der understøttes, kan de fleste lovpligtige rapporter oprettes. 
 
 > [!NOTE]
 > Et posteringslag i finansmodulet giver dig mulighed for at angive reguleringsposter i et moderselskab, der bruger en anden regnskabsstandard end datterselskabet. I en virksomhed, der bruger almindeligt accepteret regnskabspraksis i Storbritannien (UK GAAP), kan du f.eks. angive reguleringsposter i posteringslaget. Disse poster kan konsolideres til et moderselskab, der bruger almindeligt accepterede regnskabsprincipper (GAAP) i USA. Reguleringsposterne påvirker ikke UK GAAP-rapportering.

@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3d28bea9362382014f9080139f3cbdefadcf6a9
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: f3d1ca9c9af50133fcb324c6ea598ed49ba48d06
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125539"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467669"
 ---
 # <a name="marital-status"></a>Ægteskabelig status
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver indstillingen for ægteskabelig status, der er angivet for Dynamics 365 Human Resources.
 
@@ -31,7 +33,7 @@ Fysisk navn: mshr_dirpersonmaritalstatus
 
 Denne fasttekst indeholder de indstillinger, der er angivet for ægteskabelig status for personposter.
 
-| Værdi | Mærkat | Betegnelse |
+| Værdi | Mærkat | Beskrivelse |
 | --- | --- | --- |
 | 200000000 | None | Der er ikke valgt en værdi.
 | 200000001 | Enlig | Enlig. |
