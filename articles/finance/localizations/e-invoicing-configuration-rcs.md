@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bb4a426bb54ee21197f9954d946d60ea55f5eb76
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104361"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592616"
 ---
 # <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Konfigurere tilføjelsesprogrammet Elektronisk fakturering i RCS (Regulatory Configuration Services)
 
@@ -64,7 +64,6 @@ Følgende tabel viser de funktioner for elektronisk fakturering, der er en forh�
 | Belgien        | Belgisk elektronisk faktura (BE)      | Salgsfakturaer og projektfakturaer |
 | Brasilien         | Brasiliansk NF-e (BR)                  | Regnskabsdokumentmodel 55, korrektionsbreve, annulleringer og annulleringer |
 | Brasilien         | Brasiliansk NFS-e ABRASF Curitiba (BR) | Service regnskabsdokumenter |
-| Brasilien         | Brasiliansk NFS-e São Paulo (BR)       | Service regnskabsdokumenter |
 | Danmark        | Dansk elektronisk faktura (DK)       | Salgsfakturaer og projektfakturaer |
 | Egypten          | Egyptisk elektronisk faktura (EG) | Salgsfakturaer og projektfakturaer |
 | Estland        | Estisk elektronisk faktura (EE)     | Salgsfakturaer og projektfakturaer |
@@ -119,10 +118,6 @@ På følgende lister vises de ER-formatkonfigurationer, der er tilgængelige for
 
 - NFS-e ABRASF Curitiba (BR)
 - NFS-e ABRASF Inquire Curitiba (BR)
-
-#### <a name="brazilian-br-nfs-e-nfs-e-so-paulo-city"></a>Brasiliansk (BR) NFS-e NFS-e São Paulo city
-
-- NFS-e Sao Dagens (BR)
 
 #### <a name="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark"></a>Dansk (DK) elektronisk faktura: Salgs- og projektfakturaer for Danmark
 
@@ -210,7 +205,7 @@ Følgende tabel indeholder de tilgængelige handlinger, og om de aktuelt er tilg
 | Kald brasiliansk SEFAZ-tjeneste                  | Integrer med brasiliansk SeFAZ-tjeneste til indsendelse af regnskabsdokumenter.       | Som eksempel           |
 | Kald mexicansk PAC-tjeneste                      | Integrer med mexicansk PAC-tjeneste til CFDI-overførsel.                      | Som eksempel           |
 | Behandle svar                              | Analyser svaret, der er modtaget fra webtjenesteopkaldet.                     | Generelt tilgængelig  |
-| Brug MS Power Automate                         | Integrer med flow, der er indbygget i Microsoft Power Automate.                       | Som eksempel           |
+| Brug MS Power Automate                         | Integrer med det indbyggede flow i Microsoft Power Automate.                       | Som eksempel           |
 
 ## <a name="configuration-providers"></a>Konfigurationsudbydere
 

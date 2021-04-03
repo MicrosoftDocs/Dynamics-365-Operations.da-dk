@@ -1,6 +1,6 @@
 ---
 title: Webstedsvælgermodul
-description: Dette emne omhandler webstedsvælgermodulet og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
+description: Dette emne omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/20/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ed00836c435bd391e5edef1f6a99889c80f45211
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e24590d4a8f172809704aab0d761f6db0fb0e11b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985580"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234335"
 ---
 # <a name="site-selector-module"></a>Webstedsvælgermodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emne omhandler webstedsvælgermodulet og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
+Dette emne omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 
 Når en virksomhed har forskellige websteder på tværs af markeder, områder og landestandarder, skal webstedsbrugere have en nem metode til at skifte mellem websteder og vælge deres foretrukne indkøbssted. For at tage højde for dette scenario kan brugere gennemse flere websteder ved at bruge modulet til valg af websted.
 

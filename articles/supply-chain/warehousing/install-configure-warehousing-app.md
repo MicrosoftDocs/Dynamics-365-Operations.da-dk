@@ -18,19 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142269"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486971"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installere og tilslutte lagerstedsapp
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> I dette emne beskrives, hvordan du konfigurerer den gamle lagerstedsapp. Hvis du leder efter oplysninger om, hvordan du konfigurerer den nye mobilapp Lokationsstyring (i øjeblikket i en offentlig offentlig forhåndsversion), skal du se [Installere og forbinde mobilappen Lokationsstyring](install-configure-warehouse-management-app.md).
+> I dette emne beskrives, hvordan du konfigurerer den gamle lagerstedsapp. Hvis du leder efter oplysninger om, hvordan du konfigurerer den nye mobilapp Lokationsstyring, skal du se [Installere og forbinde mobilappen Lokationsstyring](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > Dette emne beskriver, hvordan du konfigurerer lagerstedsappen for skyinstallationer. Hvis du søger efter oplysninger om, hvordan du konfigurerer lagerstedsappen for installationer i det lokale miljø, skal du se [Lagersted for installationer i det lokale miljø](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).

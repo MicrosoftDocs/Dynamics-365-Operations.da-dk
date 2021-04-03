@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
@@ -15,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5a894ebfb79eab4888178c930b9e7d55cf735c91
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 8bbd1e35c0a6efd8feae80cb0010b84bbbf5cd6a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093075"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559911"
 ---
 # <a name="benefits-power-bi-content"></a>Power BI-indhold til Frynsegoder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver Microsoft Power BI-indhold til **Frynsegoder**. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+I dette emne beskrives **Frynsegoder** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet for **Frynsegoder** vises i arbejdsområdet **Frynsegodeadministration**, hvis du bruger et af følgende produkter:

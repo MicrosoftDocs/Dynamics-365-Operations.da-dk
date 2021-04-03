@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f4ed3b6797127113450949aa957437125f37394f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dfbb85c13b24bf09fd23022d11ec017899835671
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995710"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252504"
 ---
 # <a name="work-with-templates"></a>Arbejde med skabeloner
 
@@ -30,7 +30,7 @@ ms.locfileid: "4995710"
 
 Dette emne beskriver, hvordan du kan arbejde med skabeloner i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Som nævnt i [Oversigt over skabeloner og layout](templates-layouts-overview.md) definerer skabeloner det sæt indstillinger, der er tilgængelige for downstream-forfattere. Skabeloner er nyttige for en virksomheds webudviklerteam af flere årsager, og velstrukturerede skabeloner kan hjælpe med alle følgende mål:
 
