@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
@@ -17,62 +16,65 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 719b277fb828ea2085ea80bc4a36c2af3412f66b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8aaa3be426c0321da7e72d6acc18918d8b0ecee2
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683299"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570364"
 ---
-# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a><span data-ttu-id="0f09d-103">Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="0f09d-103">Download Electronic reporting configurations from Lifecycle Services</span></span>
+# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a><span data-ttu-id="10ce6-103">Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="10ce6-103">Download Electronic reporting configurations from Lifecycle Services</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0f09d-104">Dette emne forklarer, hvordan du henter den nyeste version af [Konfigurationer af elektronisk rapportering (ER)](general-electronic-reporting.md#Configuration) fra det [delte aktivbibliotek](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="0f09d-104">This topic explains how to download the newest version of [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the [Shared asset library](../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="10ce6-104">Dette emne forklarer, hvordan du henter den nyeste version af [Konfigurationer af elektronisk rapportering (ER)](general-electronic-reporting.md#Configuration) fra det [delte aktivbibliotek](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="10ce6-104">This topic explains how to download the newest version of [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the [Shared asset library](../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-1. <span data-ttu-id="0f09d-105">Log på programmet ved hjælp af en af følgende roller:</span><span class="sxs-lookup"><span data-stu-id="0f09d-105">Sign in to the application by using one of the following roles:</span></span>
+1. <span data-ttu-id="10ce6-105">Log på programmet ved hjælp af en af følgende roller:</span><span class="sxs-lookup"><span data-stu-id="10ce6-105">Sign in to the application by using one of the following roles:</span></span>
 
-    - <span data-ttu-id="0f09d-106">Udvikler til elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="0f09d-106">Electronic reporting developer</span></span>
-    - <span data-ttu-id="0f09d-107">Funktionel konsulent i elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="0f09d-107">Electronic reporting functional consultant</span></span>
-    - <span data-ttu-id="0f09d-108">Systemadministrator</span><span class="sxs-lookup"><span data-stu-id="0f09d-108">System administrator</span></span>
+    - <span data-ttu-id="10ce6-106">Udvikler til elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="10ce6-106">Electronic reporting developer</span></span>
+    - <span data-ttu-id="10ce6-107">Funktionel konsulent i elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="10ce6-107">Electronic reporting functional consultant</span></span>
+    - <span data-ttu-id="10ce6-108">Systemadministrator</span><span class="sxs-lookup"><span data-stu-id="10ce6-108">System administrator</span></span>
 
-2. <span data-ttu-id="0f09d-109">Gå til **Organisationsadministration** &gt; **Arbejdsområder** &gt; **Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="0f09d-109">Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**.</span></span>
-3. <span data-ttu-id="0f09d-110">I sektionen **Konfigurationsudbydere** skal du vælge feltet **Microsoft**.</span><span class="sxs-lookup"><span data-stu-id="0f09d-110">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
-4. <span data-ttu-id="0f09d-111">I feltet **Microsoft** skal du vælge **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="0f09d-111">On the **Microsoft** tile, select **Repositories**.</span></span>
+2. <span data-ttu-id="10ce6-109">Gå til **Organisationsadministration** &gt; **Arbejdsområder** &gt; **Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="10ce6-109">Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**.</span></span>
+3. <span data-ttu-id="10ce6-110">I sektionen **Konfigurationsudbydere** skal du vælge feltet **Microsoft**.</span><span class="sxs-lookup"><span data-stu-id="10ce6-110">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
+4. <span data-ttu-id="10ce6-111">I feltet **Microsoft** skal du vælge **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="10ce6-111">On the **Microsoft** tile, select **Repositories**.</span></span>
 
-    <span data-ttu-id="0f09d-112">[![Microsoft-felt på siden Lokaliseringskonfigurationer](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span><span class="sxs-lookup"><span data-stu-id="0f09d-112">[![Microsoft tile on the Localization configurations page](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span></span>
+    <span data-ttu-id="10ce6-112">[![Microsoft-felt på siden Lokaliseringskonfigurationer](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span><span class="sxs-lookup"><span data-stu-id="10ce6-112">[![Microsoft tile on the Localization configurations page](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span></span>
 
-5. <span data-ttu-id="0f09d-113">På siden **Konfigurationslagre** i gitteret, skal du vælge det eksisterende lager for **LCS**-typen.</span><span class="sxs-lookup"><span data-stu-id="0f09d-113">On the **Configuration repositories** page, in the grid, select the existing repository of the **LCS** type.</span></span> <span data-ttu-id="0f09d-114">Hvis lageret ikke vises i gitteret, skal du følge disse trin:</span><span class="sxs-lookup"><span data-stu-id="0f09d-114">If this repository doesn't appear in the grid, follow these steps:</span></span>
+5. <span data-ttu-id="10ce6-113">På siden **Konfigurationslagre** i gitteret, skal du vælge det eksisterende lager for **LCS**-typen.</span><span class="sxs-lookup"><span data-stu-id="10ce6-113">On the **Configuration repositories** page, in the grid, select the existing repository of the **LCS** type.</span></span> <span data-ttu-id="10ce6-114">Hvis lageret ikke vises i gitteret, skal du følge disse trin:</span><span class="sxs-lookup"><span data-stu-id="10ce6-114">If this repository doesn't appear in the grid, follow these steps:</span></span>
 
-    1. <span data-ttu-id="0f09d-115">Vælg **Tilføj** for at tilføje et lager.</span><span class="sxs-lookup"><span data-stu-id="0f09d-115">Select **Add** to add a repository.</span></span>
-    2. <span data-ttu-id="0f09d-116">Vælg **LCS** som lagertype.</span><span class="sxs-lookup"><span data-stu-id="0f09d-116">Select **LCS** as the repository type.</span></span>
-    3. <span data-ttu-id="0f09d-117">Vælg **Opret lager**.</span><span class="sxs-lookup"><span data-stu-id="0f09d-117">Select **Create repository**.</span></span>
-    4. <span data-ttu-id="0f09d-118">Hvis du bliver spurgt om godkendelse, skal du følge vejledningen på skærmen.</span><span class="sxs-lookup"><span data-stu-id="0f09d-118">If you're prompted about authorization, follow the on-screen instructions.</span></span>
-    5. <span data-ttu-id="0f09d-119">Angiv et navn og en beskrivelse til lageret.</span><span class="sxs-lookup"><span data-stu-id="0f09d-119">Enter a name and description for the repository.</span></span>
-    6. <span data-ttu-id="0f09d-120">Vælg **OK** for at bekræfte den nye lagerpost.</span><span class="sxs-lookup"><span data-stu-id="0f09d-120">Select **OK** to confirm the new repository entry.</span></span>
-    7. <span data-ttu-id="0f09d-121">I gitteret skal du vælge det nye lager for **LCS**-typen.</span><span class="sxs-lookup"><span data-stu-id="0f09d-121">In the grid, select the new repository of the **LCS** type.</span></span>
+    1. <span data-ttu-id="10ce6-115">Vælg **Tilføj** for at tilføje et lager.</span><span class="sxs-lookup"><span data-stu-id="10ce6-115">Select **Add** to add a repository.</span></span>
+    2. <span data-ttu-id="10ce6-116">Vælg **LCS** som lagertype.</span><span class="sxs-lookup"><span data-stu-id="10ce6-116">Select **LCS** as the repository type.</span></span>
+    3. <span data-ttu-id="10ce6-117">Vælg **Opret lager**.</span><span class="sxs-lookup"><span data-stu-id="10ce6-117">Select **Create repository**.</span></span>
+    4. <span data-ttu-id="10ce6-118">Hvis du bliver spurgt om godkendelse, skal du følge vejledningen på skærmen.</span><span class="sxs-lookup"><span data-stu-id="10ce6-118">If you're prompted about authorization, follow the on-screen instructions.</span></span>
+    5. <span data-ttu-id="10ce6-119">Angiv et navn og en beskrivelse til lageret.</span><span class="sxs-lookup"><span data-stu-id="10ce6-119">Enter a name and description for the repository.</span></span>
+    6. <span data-ttu-id="10ce6-120">Vælg **OK** for at bekræfte den nye lagerpost.</span><span class="sxs-lookup"><span data-stu-id="10ce6-120">Select **OK** to confirm the new repository entry.</span></span>
+    7. <span data-ttu-id="10ce6-121">I gitteret skal du vælge det nye lager for **LCS**-typen.</span><span class="sxs-lookup"><span data-stu-id="10ce6-121">In the grid, select the new repository of the **LCS** type.</span></span>
 
-6. <span data-ttu-id="0f09d-122">Vælg **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager.</span><span class="sxs-lookup"><span data-stu-id="0f09d-122">Select **Open** to view the list of ER configurations for the selected repository.</span></span>
+6. <span data-ttu-id="10ce6-122">Vælg **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager.</span><span class="sxs-lookup"><span data-stu-id="10ce6-122">Select **Open** to view the list of ER configurations for the selected repository.</span></span>
 
-    <span data-ttu-id="0f09d-123">[![Siden Konfigurationslagre](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span><span class="sxs-lookup"><span data-stu-id="0f09d-123">[![Configuration repositories page](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span></span>
+    <span data-ttu-id="10ce6-123">[![Siden Konfigurationslagre](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span><span class="sxs-lookup"><span data-stu-id="10ce6-123">[![Configuration repositories page](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span></span>
 
     > [!TIP]
-    > <span data-ttu-id="0f09d-124">Hvis du har problemer med at få adgang til LCS-lageret for at kunne hente konfigurationer fra det delte aktivbibliotek i LCS, kan du i stedet hente konfigurationer fra det [globale lager](er-download-configurations-global-repo.md).</span><span class="sxs-lookup"><span data-stu-id="0f09d-124">If you have trouble accessing the LCS repository to download configurations from the Shared asset library in LCS, you can download configurations from the [Global repository](er-download-configurations-global-repo.md) instead.</span></span>
+    > <span data-ttu-id="10ce6-124">Hvis du har problemer med at få adgang til LCS-lageret for at kunne hente konfigurationer fra det delte aktivbibliotek i LCS, kan du i stedet hente konfigurationer fra det [globale lager](er-download-configurations-global-repo.md).</span><span class="sxs-lookup"><span data-stu-id="10ce6-124">If you have trouble accessing the LCS repository to download configurations from the Shared asset library in LCS, you can download configurations from the [Global repository](er-download-configurations-global-repo.md) instead.</span></span>
 
-7. <span data-ttu-id="0f09d-125">I konfigurationstræet i venstre rude skal du vælge den ER-konfiguration, du har brug for.</span><span class="sxs-lookup"><span data-stu-id="0f09d-125">In the configurations tree in the left pane, select the required ER configuration.</span></span>
-8. <span data-ttu-id="0f09d-126">I oversigtspanelet **Versioner** skal vælge den krævede version af den valgte ER-konfiguration.</span><span class="sxs-lookup"><span data-stu-id="0f09d-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
-9. <span data-ttu-id="0f09d-127">Vælg **Importér** for at download den valgte version fra LCS til den aktuelle forekomst.</span><span class="sxs-lookup"><span data-stu-id="0f09d-127">Select **Import** to download the selected version from LCS to the current instance.</span></span>
+7. <span data-ttu-id="10ce6-125">I konfigurationstræet i venstre rude skal du vælge den ER-konfiguration, du har brug for.</span><span class="sxs-lookup"><span data-stu-id="10ce6-125">In the configurations tree in the left pane, select the required ER configuration.</span></span>
+8. <span data-ttu-id="10ce6-126">I oversigtspanelet **Versioner** skal vælge den krævede version af den valgte ER-konfiguration.</span><span class="sxs-lookup"><span data-stu-id="10ce6-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
+9. <span data-ttu-id="10ce6-127">Vælg **Importér** for at download den valgte version fra LCS til den aktuelle forekomst.</span><span class="sxs-lookup"><span data-stu-id="10ce6-127">Select **Import** to download the selected version from LCS to the current instance.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="0f09d-128">Knappen **Importer** er ikke tilgængelig for ER-konfigurationsversioner, der allerede findes på den aktuelle forekomst.</span><span class="sxs-lookup"><span data-stu-id="0f09d-128">The **Import** button is unavailable for ER configuration versions that are already present in the current instance.</span></span>
+    > <span data-ttu-id="10ce6-128">Knappen **Importer** er ikke tilgængelig for ER-konfigurationsversioner, der allerede findes på den aktuelle forekomst.</span><span class="sxs-lookup"><span data-stu-id="10ce6-128">The **Import** button is unavailable for ER configuration versions that are already present in the current instance.</span></span>
 
-    <span data-ttu-id="0f09d-129">[![Siden Konfigurationslager](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span><span class="sxs-lookup"><span data-stu-id="0f09d-129">[![Configuration repository page](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span></span>
+    <span data-ttu-id="10ce6-129">[![Siden Konfigurationslager](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span><span class="sxs-lookup"><span data-stu-id="10ce6-129">[![Configuration repository page](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0f09d-130">Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne.</span><span class="sxs-lookup"><span data-stu-id="0f09d-130">Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="0f09d-131">Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget.</span><span class="sxs-lookup"><span data-stu-id="0f09d-131">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="0f09d-132">Du skal løse disse problemer, før du kan bruge den importerede konfigurationsversion.</span><span class="sxs-lookup"><span data-stu-id="0f09d-132">You must resolve those issues before you can use the imported configuration version.</span></span> <span data-ttu-id="0f09d-133">Se listen over relaterede emner til dette emne for at få flere oplysninger.</span><span class="sxs-lookup"><span data-stu-id="0f09d-133">For more information, see the list of related topics for this topic.</span></span>
+> <span data-ttu-id="10ce6-130">Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne.</span><span class="sxs-lookup"><span data-stu-id="10ce6-130">Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="10ce6-131">Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget.</span><span class="sxs-lookup"><span data-stu-id="10ce6-131">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="10ce6-132">Du skal løse disse problemer, før du kan bruge den importerede konfigurationsversion.</span><span class="sxs-lookup"><span data-stu-id="10ce6-132">You must resolve those issues before you can use the imported configuration version.</span></span> <span data-ttu-id="10ce6-133">Se listen over relaterede emner til dette emne for at få flere oplysninger.</span><span class="sxs-lookup"><span data-stu-id="10ce6-133">For more information, see the list of related topics for this topic.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0f09d-134">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="0f09d-134">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="10ce6-134">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="10ce6-134">Additional resources</span></span>
 
-[<span data-ttu-id="0f09d-135">Oversigt over elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="0f09d-135">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
+[<span data-ttu-id="10ce6-135">Oversigt over elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="10ce6-135">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
 
-[<span data-ttu-id="0f09d-136">Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten</span><span class="sxs-lookup"><span data-stu-id="0f09d-136">Download ER configurations from the Global repository of Configuration service</span></span>](er-download-configurations-global-repo.md)
+[<span data-ttu-id="10ce6-136">Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten</span><span class="sxs-lookup"><span data-stu-id="10ce6-136">Download ER configurations from the Global repository of Configuration service</span></span>](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
