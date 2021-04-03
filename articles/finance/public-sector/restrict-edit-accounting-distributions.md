@@ -1,0 +1,52 @@
+---
+title: Begrænse redigeringen af regnskabsfordelinger på fakturaer
+description: I dette emne forklares det, hvordan du kan kræve, at de økonomiske dimensioner i en indkøbsordre svarer til dimensionerne på den tilsvarende kreditorfaktura.
+author: v-kiarnd
+manager: AnnBe
+ms.date: 10/14/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Operations, Core
+ms.search.region: Global
+ms.search.industry: public sector
+ms.author: v-kiarnd
+ms.search.validFrom: 2020-10-15
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 56ad3ac4a883a6b75183f559c4e1f71a5c6a4e44
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555403"
+---
+# <a name="restrict-editing-of-accounting-distributions-on-invoices"></a>Begrænse redigeringen af regnskabsfordelinger på fakturaer
+
+[!include[banner](../includes/banner.md)]
+
+I dette emne forklares det, hvordan du kan kræve, at de økonomiske dimensioner i en indkøbsordre svarer til dimensionerne på den tilsvarende kreditorfaktura. Du kan konfigurere bestemte økonomiske dimensioner, der skal være ens mellem en indkøbsordre og en faktura, der oprettes ud fra den. Du kan f.eks. kræve, at alle økonomiske dimensioner stemmer overens mellem indkøbsordrer og fakturaer. På fakturaer, der er tilknyttet en indkøbsordre, kan du ikke ændre finanskontiene på fakturaens detaljelinjer, så de afviger fra de konti, der er angivet på indkøbsordrelinjerne.
+
+## <a name="set-up-locked-financial-dimensions"></a>Konfigurere låste økonomiske dimensioner
+
+Benyt følgende fremgangsmåde for at definere de økonomiske dimensioner, der skal være ens mellem en indkøbsordre og relaterede fakturaer.
+
+1. Gå til **Kreditor \> Opsætning \> Kreditorparametre**.
+2. På siden **Kreditorparametre** skal du vælge **Validering af indkøbsordre-/fakturasammenholdelse**.
+3. Markér afkrydsningsfeltet **Påkrævet sammenholdelse** for de dimensioner, der skal være ens. Alle de økonomiske dimensioner, der er konfigureret på siden **Økonomiske dimensioner**, kan vælges.
+4. Vælg **Luk**.
+
+## <a name="work-with-locked-financial-dimensions-on-an-invoice"></a>Arbejde med låste økonomiske dimensioner på en faktura
+
+Når du opretter en kreditorfaktura ud fra en indkøbsordre, kan du ikke redigere de låste økonomiske dimensioner. Hvis du forsøger at redigere en låst økonomisk dimension, modtager du en fejlmeddelelse, og hele den økonomiske dimensionsstreng går tilbage til den oprindelige streng.
+
+Du kan se økonomiske dimensioner for fakturaen.
+
+1. Gå til **Kreditor \> Generelt \> Kreditorfakturaer \> Ventende kreditorfakturaer**.
+2. Åbn fakturaen.
+3. På siden **Kreditorfaktura** skal du i oversigtspanelet **Linjer** vælge **Finans \> Fordel beløb**.
+
+> [!NOTE]
+> Økonomiske dimensioner er ikke låst på linjer, der manuelt føjes til en faktura og ikke er baseret på indkøbsordrer. I dette tilfælde kan du ændre de økonomiske dimensioner på fakturaen efter behov, indtil fakturaen er bogført.

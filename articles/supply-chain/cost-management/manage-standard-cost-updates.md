@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 69992
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 166d12d707deabc59f7613a5016851b30fcc42d8
-ms.sourcegitcommit: 41baf654a2553cfe5c715feb9cc03e48cfc12598
+ms.openlocfilehash: fc4ae40e9740ce76e79b76c2bff2c690568abff2
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5024664"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500592"
 ---
 # <a name="manage-standard-cost-updates"></a>Administrere opdateringer af standardomkostninger
 
@@ -45,6 +45,8 @@ I det følgende eksempel illustreres, hvordan metoderne med én version og to ve
 I dette eksempel er brugt én ekstra efterkalkulationsversion til at administrere opdateringer i hele år 2020. Der kan bruges mere end én ekstra efterkalkulationsversion, f.eks. en separat version til hver opdateringsbatch. Når der bruges mere end én ekstra efterkalkulationsversion, skal reservedatakilden udtrykkes som de aktive omkostninger, da de aktive omkostninger spredes ud over flere efterkalkulationsversioner.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Økonomiske dimensioner for standardomkostningsregulering
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Aktivering af en ny standardpris vil typisk værdiregulere den disponible lagerbeholdning ud fra værdireguleringstransaktioner med standardomkostninger. Normalt bogføres varens økonomiske dimensioner på posteringerne. Men hvis du vil styre, om og hvordan de økonomiske dimensioner bogføres, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere funktionen *Indstillinger for økonomiske dimensioner, der benyttes som standard for værdiregulering af lagerbeholdning til standardomkostninger*. Når du har aktiveret denne funktion, skal du gå til **Omkostningsstyring > Konfiguration af regnskabspolitik for lager > Parametre** og angive den nye rulleliste **Grundlaget for økonomiske dimensioner** til en af følgende værdier:
 

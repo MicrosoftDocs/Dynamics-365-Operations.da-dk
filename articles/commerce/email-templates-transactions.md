@@ -3,7 +3,7 @@ title: Oprette mailskabeloner til transaktionshændelser
 description: Dette emne beskriver, hvordan du opretter, overfører og konfigurerer mailskabeloner for transaktionshændelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000773"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555239"
 ---
-# <a name="create-email-templates-for-transactional-events"></a>Oprette mailskabeloner til transaktionshændelser
+# <a name="create-email-templates-for-transactional-events"></a>Oprette e-mailskabeloner til transaktionshændelser
 
 [!include [banner](includes/banner.md)]
 
@@ -39,7 +39,7 @@ Før du kan knytte en bestemt transaktionshændelse til en mailskabelon, skal du
 
 Benyt følgende fremgangsmåde for at oprette en mailskabelon.
 
-1. I Commerce Headquarters skal du gå til **Skabelon til organisationsmail**, som du finder under **Detail og handel \> Konfiguration af hovedkontor \> Skabelon til organisationsmail** eller **Virksomhedsadministration \> Konfiguration \> Skabelon til organisationsmail**.
+1. I Commerce Headquarters skal du gå til **Detail og handel \> Konfiguration af hovedkontor \> Skabeloner til organisationsmail** eller **Organisationsadministration \> Konfiguration \> Skabeloner til organisationsmail**.
 1. Vælg **Ny**.
 1. Under **Generelt** skal du angive følgende felter:
 
@@ -78,28 +78,29 @@ Her er et eksempel.
 
 Følgende pladsholdere henter og viser data, der er defineret på salgsordreniveau (i modsætning til salgslinjeniveau).
 
-| Pladsholdernavn    | Pladsholderværdi                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | Navnet på den kunde, der har afgivet ordren.                   |
-| salesid             | Salgsordrens id.                                       |
-| deliveryaddress     | Leveringsadressen for afsendte ordrer.                         |
-| customeraddress     | Kundens adresse.                                     |
-| deliverydate        | Leveringsdatoen.                                               |
-| shipdate            | Afsendelsesdatoen.                                                   |
-| modeofdelivery      | Ordrens leveringsmåde.                                  |
-| charges             | Det samlede gebyr for ordren.                                 |
-| tax                 | Den samlede moms for ordren.                                     |
-| total               | Det samlede beløb for ordren.                                  |
-| ordrenettobeløb      | Det samlede beløb for ordren minus samlet moms.             |
-| rabat            | Den samlede rabat for ordren.                                |
-| storename           | Navnet på den butik, hvor ordren blev afgivet.                |
-| storeaddress        | Adressen på den butik, der har afgivet ordren.                  |
-| storeopenfrom       | Åbningstiden for den butik, der har afgivet ordren.             |
-| storeopento         | Lukketiden for den butik, der har afgivet ordren.             |
-| pickupstorename     | Navnet på den butik, hvor ordren afhentes.         |
-| pickupstoreaddress  | Adressen på den butik, hvor ordren afhentes.      |
-| pickupopenstorefrom | Åbningstidspunkt for den butik, hvor ordren afhentes. |
-| pickupopenstoreto   | Lukketidspunkt for den butik, hvor ordren afhentes. |
+| Pladsholdernavn     | Pladsholderværdi                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | Navnet på den kunde, der har afgivet ordren.               |
+| salesid              | Salgsordrens id.                                   |
+| deliveryaddress      | Leveringsadressen for afsendte ordrer.                     |
+| customeraddress      | Kundens adresse.                                 |
+| customeremailaddress | Den mailadresse, som kunden angav ved kassen.     |
+| deliverydate         | Leveringsdatoen.                                           |
+| shipdate             | Afsendelsesdatoen.                                               |
+| modeofdelivery       | Ordrens leveringsmåde.                              |
+| charges              | Det samlede gebyr for ordren.                             |
+| tax                  | Den samlede moms for ordren.                                 |
+| total                | Det samlede beløb for ordren.                              |
+| ordrenettobeløb       | Det samlede beløb for ordren minus samlet moms.         |
+| rabat             | Den samlede rabat for ordren.                            |
+| storename            | Navnet på den butik, hvor ordren blev afgivet.            |
+| storeaddress         | Adressen på den butik, der har afgivet ordren.              |
+| storeopenfrom        | Åbningstiden for den butik, der har afgivet ordren.         |
+| storeopento          | Lukketiden for den butik, der har afgivet ordren.         |
+| pickupstorename      | Navnet på den butik, hvor ordren afhentes.     |
+| pickupstoreaddress   | Adressen på den butik, hvor ordren afhentes.  |
+| pickupopenstorefrom  | Åbningstidspunkt for den butik, hvor ordren afhentes. |
+| pickupopenstoreto    | Lukketidspunkt for den butik, hvor ordren afhentes. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Ordrelinjepladsholdere (på salgslinjeniveau)
 
@@ -169,11 +170,8 @@ Her er et eksempel.
 
 Kvitteringer kan sendes via e-mail til kunder, der foretager indkøb i en detailbutik (POS). Trinnene til oprettelse af skabelonen til e-mail-modtagelse er som regel de samme som de trin, du skal bruges til at oprette skabeloner til andre transaktionshændelser. Følgende ændringer er dog nødvendige:
 
-- E-mail-id'et for e-mail-skabelonen skal være **emailRecpt**.
-- Teksten til kvitteringen indsættes i e-mailen ved hjælp af pladsholderen **%message%**. For at sikre, at kvitteringsbrødteksten gengives korrekt, skal du omslutte pladsholderen **%message%** med HTML-koderne **&lt;pre&gt;** og **&lt;/pre&gt;**.
-- Linjeskift i HTML-koden for sidehovedet og sidefoden i e-mailen konverteres til HTML-koder **&lt;br /&gt;**, så modtagelseskvitteringen gengives korrekt. Hvis du vil fjerne uønsket lodret plads i dine kvitterings-e-mails, skal du fjerne linjeskift fra et hvilket som helst sted i HTML-format, hvor der ikke kræves lodret plads.
-
-Få flere oplysninger om, hvordan du kan konfigurere e-mail-kvitteringer, du i [Konfigurere e-mail-kvitteringer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- Teksten til kvitteringen indsættes i mailen ved hjælp af pladsholderen **%message%** . For at sikre, at kvitteringsbrødteksten gengives korrekt, skal du omslutte pladsholderen **%message%** med HTML-tags **&lt;pre&gt;** og **&lt;/pre&gt;**.
+- Pladsholderen **%receiptid%** kan bruges til at vise en QR-kode eller stregkode, der repræsenterer kvitterings-id. (QR-koder og stregkoder genereres dynamisk og serviceres af en tredjepartstjeneste). Yderligere oplysninger om, hvordan du viser en QR-kode eller stregkode i en e-mail-kvittering, finder du i [Tilføje en QR-kode eller stregkode til transaktions- og kvitterings-e-mails](add-qr-code-barcode-email.md).
 
 ## <a name="upload-the-email-html"></a>Uploade e-mail-HTML
 

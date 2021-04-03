@@ -16,14 +16,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 78cb1c5a90061af224fcd5933af81b6c5cd7e57d
-ms.sourcegitcommit: 5d62c53d84f2ec27136427acfd4314d055298a7b
+ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5123462"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500688"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gemte standardvisninger for Supply Chain Management
+
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management indeholder adskillige gemte visninger, som du kan aktivere og bruge efter behov. Nogle af disse gemte standardvisninger er optimeret og navngivet til en bestemt rolle eller opgave (f.eks. "Kvalitetskontrol" eller "Modtagelse"). Andre er optimeret, så de kun inkluderer de felter og indstillinger, som Microsoft-brugsstatistikken angiver, at der oftest bruges af kunder. Disse gemte visninger kaldes typisk *forenklede* visninger. Dette emne beskriver de gemte standardvisninger, der er tilgængelige, og forklarer, hvordan de aktiveres og tilpasses.
 
@@ -51,7 +54,7 @@ I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet
 | Beholdningsliste | Kvalitetskontrol | Denne forenklede visning giver dig mulighed for at fokusere på kvalitetskontrol, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger til lagerstyring |
 | Beholdningsliste | Tilgang | Denne forenklede visning giver dig mulighed for at fokusere på tilgangsoperationer, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger til lagerstyring |
 | Beholdningsliste | Levering | Denne forenklede visning giver dig mulighed for at fokusere på forsendelsesoperationer, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger til lagerstyring |
-| Poster | Forenklet | Denne forenklede visning giver dig mulighed for at gennemse lagerstatus, uden at blive villedt af økonomiske oplysninger og andre felter, der bruges mindre ofte. | Gemte visninger til lagerstyring |
+| Transaktioner | Forenklet | Denne forenklede visning giver dig mulighed for at gennemse lagerstatus, uden at blive villedt af økonomiske oplysninger og andre felter, der bruges mindre ofte. | Gemte visninger til lagerstyring |
 | Flytteordrer | Levering | Denne forenklede visning giver dig mulighed for at fokusere på forsendelsesoperationer, når du administrerer flytteordrer. | Gemte visninger til lagerstyring |
 | Flytteordrer | Tilgang | Denne forenklede visning giver dig mulighed for at fokusere på modtagelsesoperationer, når du administrerer flytteordrer. | Gemte visninger til lagerstyring |
 | Flytteordrer | Kvalitetskontrol | Denne forenklede visning giver dig mulighed for at fokusere på kvalitetskontrol, når du administrerer flytteordrer. | Gemte visninger til lagerstyring |
