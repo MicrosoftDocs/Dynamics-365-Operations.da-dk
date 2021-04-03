@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ebb9833be5e51fe59e9895e67cd8e55058078aa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 265709f298d9310d5d647eaa029ece778d2e226e
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001337"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470635"
 ---
 # <a name="repair-management"></a>Reparationsstyring       
 
@@ -37,15 +37,11 @@ Du kan angive indstillinger for symptomer, diagnoser og løsninger. Du kan så b
 
 Brug følgende forms til at angive oplysninger, der skal bruges til at angive symptomer, diagnose og løsning i forbindelse med en reparation.
 
-1.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Betingelser**.
-
-2.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Symptomområder**.
-
-3.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Diagnoseområder**.
-
-4.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Løsninger**.
-
-5.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Reparationsstadier**.
+- **Servicestyring** \> **Opsætning** \> **Reparation** \> **Betingelser**.
+- **Servicestyring** \> **Opsætning** \> **Reparation** \> **Symptomområder**.
+-  **Servicestyring** \> **Opsætning** \> **Reparation** \> **Diagnoseområder**.
+- **Servicestyring** \> **Opsætning** \> **Reparation** \> **Løsninger**.
+- **Servicestyring** \> **Opsætning** \> **Reparation** \> **Reparationsstadier**.
 
 ## <a name="symptoms-and-conditions"></a>Symptomer og betingelser
 
@@ -81,19 +77,19 @@ Du kan oprette reparationslinjer for hvert trin i reparationsprocessen.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Oprette en reparationslinje på en serviceordre
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Gå til **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
 
 2.  Vælg serviceordren med det serviceobjekt, der skal repareres.
 
-3.  Klik på **Reparation** \> **Reparationslinjer** for at åbne formularen **Reparationslinjer**.
+3.  Vælg **Reparation** \> **Reparationslinjer** for at åbne formularen **Reparationslinjer**.
 
-4.  Tryk på Ctrl+N for at oprette en ny linje.
+4.  Vælg **Ny** for at oprette en ny linje.
 
 5.  Vælg et serviceobjekt. Du kan vælge et hvilket som helst serviceobjekt, der er oprettet med en objektrelation på serviceordren.
 
-6.  Vælg en eller flere af de foruddefinerede værdier for symptomer, diagnoser og udførelser, der er relevante på reparationslinjen, og klik om nødvendigt på fanen **Bemærkning** for at oprette en bemærkning på reparationslinjen.
+6.  Vælg en eller flere af de foruddefinerede værdier for symptomer, diagnoser og udførelser, der er relevante på reparationslinjen, og vælg om nødvendigt fanen **Bemærkning** for at oprette en bemærkning på reparationslinjen.
 
-7.  Tryk på Ctrl+S for at gemme den nye reparationslinje. Feltet **Dato og klokkeslæt for oprettelse** under fanen **Generelt** i formularen **Reparationslinjer** opdateres med tidspunktet for lagring.
+7.  Vælg **Gem** for at gemme den nye reparationslinje. Feltet **Dato og klokkeslæt for oprettelse** under fanen **Generelt** i formularen **Reparationslinjer** opdateres med tidspunktet for lagring.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Spore og afslutte et reparationsforløb
 

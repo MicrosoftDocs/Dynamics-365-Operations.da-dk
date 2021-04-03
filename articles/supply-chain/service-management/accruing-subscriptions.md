@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6d0d6c25cc8a19f5ebea3477cd2c957876752fd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7a1b955d200afa7474eb8940a118118cfc2f8904
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966074"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232152"
 ---
 # <a name="accruing-subscriptions"></a>Periodisering af abonnementer 
 
@@ -133,7 +133,7 @@ Opsætning af faktureringsperioden er en obligatorisk del af den generelle opsæ
 > <P>Brug følgende sti til at åbne formularen <STRONG>Periodiser abonnementsindtægt</STRONG>. Klik på <STRONG>Servicestyring</STRONG> &gt; <STRONG>Periodisk</STRONG> &gt; <STRONG>Serviceabonnementer</STRONG> &gt; <STRONG>Periodiser abonnementsindtægt</STRONG>.</P>
 
 
-## <a name="transactions"></a>Poster
+## <a name="transactions"></a>Transaktioner
 
 Du kan styre antallet af finansposteringer, der oprettes, når du bogfører periodiseret omsætning. I forbindelse med abonnementer skal du definere, om finansposteringer skal oprettes som en total eller pr. linje.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EntAssetMaintenancePlan
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ec4929e9ea608318b83a2ae6033c4b25855f4dd
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077544"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500808"
 ---
 # <a name="maintenance-plans"></a>Vedligeholdelsesplaner
 
@@ -195,8 +195,7 @@ I følgende illustration vises et eksempel på vedligeholdelsesplaner på et akt
 
 ## <a name="counter-based-maintenance-enhancements"></a>Forbedringer af tællerbaseret vedligeholdelse
 
-> [!IMPORTANT]
-> De funktioner, der er anført i dette afsnit, er tilgængelige som en del af en privat forhåndsversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om prøveversioner i [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Funktionen *Forbedringer af tællerbaseret vedligeholdelse* introducerer følgende funktionalitet:
 

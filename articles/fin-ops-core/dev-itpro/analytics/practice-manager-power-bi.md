@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 757c9bea86d0cba9b67c40ed5afd19804e01778c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092451"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564429"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-indhold for praksischef
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der er medtaget i Power BI-indhold for **Praksischef**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
+I dette emne beskrives, hvad der er medtaget i **Praksischef** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 

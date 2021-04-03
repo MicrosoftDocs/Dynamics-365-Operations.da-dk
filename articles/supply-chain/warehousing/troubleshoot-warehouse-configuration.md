@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993997"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487091"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Foretage fejlfinding af konfiguration af lagersted
 
@@ -109,5 +109,32 @@ Hvis du vil give arbejdere mulighed for at foretage denne ændring, kan du opret
 
 Angiv de resterende felter på siden efter behov.
 
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>En lokationsprofils dokstyringsprofil forhindrer ikke, at lagertyper blandes.
+
+### <a name="issue-description"></a>Problembeskrivelse
+
+Du bruger *forsendelseskonsolideringspolitikker*. Du har konfigureret en *dokstyringsprofil* for en *lokationsprofil*, men når der oprettes arbejde, blandes lagertyperne på den endelige lokation.
+
+### <a name="issue-resolution"></a>Problemløsning
+
+Profiler for dokstyring kræver, at arbejdet opdeles i forvejen. Med andre ord forventer dokstyringsprofilen, at der ikke vil være flere læg-lokationer i et arbejdshoved.
+
+For at dokstyringsprofilen kan håndtere blanding af lager effektivt, skal der konfigureres en pause i arbejdshovedet.
+
+I dette eksempel er vores dokstyringsprofil konfigureret sådan, at **Lagertyper, der ikke skal blandes**, er angivet til *Forsendelses-id*, og vi konfigurerer en arbejdshovedpause for den:
+
+1. Gå til **Lagerstedsstyring \> Opsætning \> Arbejde \> Arbejdsskabeloner**.
+1. Vælg den **Arbejdsordretype**, der skal redigeres (f.eks. *Indkøbsordrer*).
+1. Vælg den arbejdsskabelon, du vil redigere.
+1. Vælg **Rediger forespørgsel** i handlingsruden.
+1. Åbn fanen **Sortering**, og tilføj en række med følgende indstillinger:
+    - **Tabel** - *Midlertidige arbejdstransaktioner*
+    - **Afledt tabel** - *Midlertidige arbejdstransaktioner*
+    - **Felt** - *Forsendelses-id*
+1. Vælg **OK**.
+1. Du vender tilbage til siden **Arbejdsskabeloner**. Vælg **Opgaveoverskriften skifter** i handlingsruden.
+1. Vælg **Rediger** i handlingsruden.
+1. Markér det afkrydsningsfelt, der er tilknyttet **Feltnavnet** *Forsendelses-id*.
+1. Vælg **Gem** i handlingsruden.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

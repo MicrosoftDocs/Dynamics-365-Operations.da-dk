@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970300"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556260"
 ---
 # <a name="planned-cross-docking"></a>Planlagt cross-docking
 
@@ -37,12 +37,12 @@ På tidspunktet for modtagelse af indgående ordrer identificerer opsætningen a
 > [!NOTE]
 > Registreringen af lagertransaktioner annulleres **ikke**, når cross-docking annulleres, også selvom indstillingen for denne funktion er aktiveret i parametrene for lokationsstyring.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Slå funktionen til planlagt cross-docking til
+## <a name="turn-on-the-planned-cross-docking-features"></a>Slå funktionerne til planlagt cross-docking til
 
-Før du kan bruge avanceret planlagt cross-docking, skal funktionen være aktiveret i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funktioner i denne rækkefølge:
 
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Planlagt cross docking*
+1. *Planlagt direkte levering*
+2. *Skabeloner til cross-docking med lokationsvejledninger*
 
 ## <a name="setup"></a>Konfiguration
 
@@ -89,6 +89,10 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
     - **Valider ved modtagelse af forsyning:** *Nej*
 
         Denne indstilling angiver, om forsyningen skal valideres igen under modtagelsen. Hvis denne indstilling er angivet til *Ja*, kontrolleres både det maksimale tidsinterval og udløbsintervallet i dage.
+
+    - **Vejledningskode** Lad feltet være tomt
+
+        Denne indstilling giver systemet mulighed for at bruge lokationsvejledninger som en hjælp til at bestemme, hvilken lokation cross-docking-lager skal flyttes til. Du kan definere den ved at tildele en vejledningskode til hver relevante cross-docking-skabelon. De enkelte vejledningskoder identificerer en entydig lokationsvejledning.
 
     - **Valider tidsvindue:** *Ja*
 
