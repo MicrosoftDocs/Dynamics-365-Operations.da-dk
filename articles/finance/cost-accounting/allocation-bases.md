@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f775b09b973a4d34e77d568a5f3b2bd35a7dfdcf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4b6d4e7fae1df977a5db311d3ea662a5eb3ffd30
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976210"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260823"
 ---
 # <a name="allocation-bases"></a>Fordelingsgrundlag 
 
@@ -198,7 +198,7 @@ Her er et eksempel på en regel til fordeling af omkostninger, hvis den foruddef
 
 | Omkostningsobjekt | Beskrivelse  | Størrelsesorden | Fordelingsfaktor |
 |-------------|------|-----------|-------------------|
-| CC001       | HR   | 1,00      | (1/5) × beløb    |
+| CC001       | Human Resources   | 1,00      | (1/5) × beløb    |
 | CC002       | FI   | 2.00      | (2/5) × beløb    |
 | CC003       | LO   | 2.00      | (2/5) × beløb    |
 
@@ -216,7 +216,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende pos
 
 | Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |    Beskrivelse          | Størrelsesorden |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
-| CC001       | HR | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
+| CC001       | Human Resources | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
 | CC002       | FI | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00  |
 | CC003       | LO | 01-31-2017      | Elektricitet                  | Forbrug af elektricitet | 15.000,00 |
 
@@ -317,7 +317,7 @@ Den foruddefinerede fordelingsbasis for dimensionsmedlem for Elektricitet er all
 
 | Omkostningsobjekt | Navn | Regnskabsdato | Statistisk dimensionsmedlem | Beskrivelse             | Størrelsesorden |
 |-------------|------|-----------------|------------------------------|-------------------------|-----------|
-| CC001       | HR   | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
+| CC001       | Human Resources   | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
 | CC002       | FI   | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00  |
 | CC003       | LO   | 01-31-2017      | Elektricitet                  | Forbrug af elektricitet | 15.000,00 |
 

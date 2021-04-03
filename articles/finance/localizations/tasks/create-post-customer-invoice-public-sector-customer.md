@@ -15,12 +15,12 @@ ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 101294c3cf1a1fe7e25f6e43a24c079e2e39d0e5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6148ea5b49a8cd6b941d663e2129f8f5db538527
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990015"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260737"
 ---
 # <a name="create-and-post-a-customer-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor
 
