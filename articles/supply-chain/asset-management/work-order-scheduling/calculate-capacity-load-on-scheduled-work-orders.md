@@ -17,43 +17,46 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7b7e4a20ed56b1eac29d16d527693d6e455cdc37
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5a6063db7a63975f439da9f20adec07de9103014
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021648"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264892"
 ---
-# <a name="calculate-capacity-load-on-scheduled-work-orders"></a><span data-ttu-id="e489a-103">Beregne kapacitetsbelastning på planlagte arbejdsordrer</span><span class="sxs-lookup"><span data-stu-id="e489a-103">Calculate capacity load on scheduled work orders</span></span>
+# <a name="calculate-capacity-load-on-scheduled-work-orders"></a><span data-ttu-id="4c96e-103">Beregne kapacitetsbelastning på planlagte arbejdsordrer</span><span class="sxs-lookup"><span data-stu-id="4c96e-103">Calculate capacity load on scheduled work orders</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="e489a-104">Du kan beregne kapacitetsbelastningen for planlagte arbejdsordrer for at få overblik over arbejdsbelastningen for ressourcer i en bestemt periode.</span><span class="sxs-lookup"><span data-stu-id="e489a-104">You can calculate capacity load on scheduled work orders to get an overview of the work load on resources for a specific period.</span></span> <span data-ttu-id="e489a-105">Der kan foretage beregninger for følgende ressourcer: vedligeholdelsesarbejdere, arbejdergrupper, værktøjer og aktiver.</span><span class="sxs-lookup"><span data-stu-id="e489a-105">Calculations can be made for the following resources: Maintenance workers, worker groups, tools, and assets.</span></span>
+<span data-ttu-id="4c96e-104">Du kan beregne kapacitetsbelastningen for planlagte arbejdsordrer for at få overblik over arbejdsbelastningen for ressourcer i en bestemt periode.</span><span class="sxs-lookup"><span data-stu-id="4c96e-104">You can calculate capacity load on scheduled work orders to get an overview of the work load on resources for a specific period.</span></span> <span data-ttu-id="4c96e-105">Der kan foretage beregninger for følgende ressourcer: vedligeholdelsesarbejdere, arbejdergrupper, værktøjer og aktiver.</span><span class="sxs-lookup"><span data-stu-id="4c96e-105">Calculations can be made for the following resources: Maintenance workers, worker groups, tools, and assets.</span></span>
 
-1. <span data-ttu-id="e489a-106">Klik på **Styring af aktiver** > **Forespørgsler** > **Plan** > **Kapacitetsbelastning**.</span><span class="sxs-lookup"><span data-stu-id="e489a-106">Click **Asset management** > **Inquiries** > **Schedule** > **Capacity load**.</span></span>
+1. <span data-ttu-id="4c96e-106">Klik på **Styring af aktiver** > **Forespørgsler** > **Plan** > **Kapacitetsbelastning**.</span><span class="sxs-lookup"><span data-stu-id="4c96e-106">Click **Asset management** > **Inquiries** > **Schedule** > **Capacity load**.</span></span>
 
-2. <span data-ttu-id="e489a-107">I dialogboksen **Beregn kapacitetsbelastning** > feltet **Vis** skal du vælge den belastningstype, du vil beregne: **Kapacitet**, **Reserveret** eller **Rest**.</span><span class="sxs-lookup"><span data-stu-id="e489a-107">In the **Calculate capacity load** dialog > **Show** field, select which load type you want to calculate: **Capacity**, **Reserved**, or **Remainder**.</span></span>
+2. <span data-ttu-id="4c96e-107">I dialogboksen **Beregn kapacitetsbelastning** > feltet **Vis** skal du vælge den belastningstype, du vil beregne: **Kapacitet**, **Reserveret** eller **Rest**.</span><span class="sxs-lookup"><span data-stu-id="4c96e-107">In the **Calculate capacity load** dialog > **Show** field, select which load type you want to calculate: **Capacity**, **Reserved**, or **Remainder**.</span></span>
 
-3. <span data-ttu-id="e489a-108">Vælg **Ja** på til/fra-knappen **Spring over nul**, hvis du ikke vil have vist resultater, der indeholder nul.</span><span class="sxs-lookup"><span data-stu-id="e489a-108">Select **Yes** on the **Skip zero** toggle button if you do not want to show results containing zero.</span></span>
+3. <span data-ttu-id="4c96e-108">Vælg **Ja** på til/fra-knappen **Spring over nul**, hvis du ikke vil have vist resultater, der indeholder nul.</span><span class="sxs-lookup"><span data-stu-id="4c96e-108">Select **Yes** on the **Skip zero** toggle button if you do not want to show results containing zero.</span></span>
 
-4. <span data-ttu-id="e489a-109">Vælg de ressourcetyper, som du vil beregne kapacitetsbelastning for, ved at vælge **Ja** i de relevante til/fra-knapper: **Arbejder**, **Vedligeholdelsesarbejdergruppe**, **Værktøj** og **Aktiv**.</span><span class="sxs-lookup"><span data-stu-id="e489a-109">Select the resource types for which you want to calculate capacity load by selecting **Yes** on the relevant toggle buttons: **Worker**, **Maintenance worker group**, **Tool**, and **Asset**.</span></span>
+4. <span data-ttu-id="4c96e-109">Vælg de ressourcetyper, som du vil beregne kapacitetsbelastning for, ved at vælge **Ja** i de relevante til/fra-knapper: **Arbejder**, **Vedligeholdelsesarbejdergruppe**, **Værktøj** og **Aktiv**.</span><span class="sxs-lookup"><span data-stu-id="4c96e-109">Select the resource types for which you want to calculate capacity load by selecting **Yes** on the relevant toggle buttons: **Worker**, **Maintenance worker group**, **Tool**, and **Asset**.</span></span>
 
-5. <span data-ttu-id="e489a-110">Vælg startdatoen for beregningen i feltet **Fra-dato**.</span><span class="sxs-lookup"><span data-stu-id="e489a-110">Select the start date for the calculation in the **From date** field.</span></span>
+5. <span data-ttu-id="4c96e-110">Vælg startdatoen for beregningen i feltet **Fra-dato**.</span><span class="sxs-lookup"><span data-stu-id="4c96e-110">Select the start date for the calculation in the **From date** field.</span></span>
 
-6. <span data-ttu-id="e489a-111">I feltet **Intervaltype** skal du vælge intervallet for beregningen: **Dag**, **Uge**, **Måned** eller **Kvartal**.</span><span class="sxs-lookup"><span data-stu-id="e489a-111">In the **Interval type** field, select the interval for the calculation: **Day**, **Week**, **Month**, or **Quarter**.</span></span>
+6. <span data-ttu-id="4c96e-111">I feltet **Intervaltype** skal du vælge intervallet for beregningen: **Dag**, **Uge**, **Måned** eller **Kvartal**.</span><span class="sxs-lookup"><span data-stu-id="4c96e-111">In the **Interval type** field, select the interval for the calculation: **Day**, **Week**, **Month**, or **Quarter**.</span></span>
 
-7. <span data-ttu-id="e489a-112">Indsæt det antal intervaller, du vil beregne, i feltet **Periodefrekvens**.</span><span class="sxs-lookup"><span data-stu-id="e489a-112">In the **Period frequency** field, insert the number of intervals you want to calculate.</span></span> <span data-ttu-id="e489a-113">Hvis du f.eks. har valgt **Dag** som intervaltype, og du indsætter tallet "5" i dette felt, foretages der en beregning på fem dage fra startdatoen.</span><span class="sxs-lookup"><span data-stu-id="e489a-113">For example, if you have selected **Day** as the interval type, and you enter the number "5" in this field, a calculation of five days from the start date will be made.</span></span>
+7. <span data-ttu-id="4c96e-112">Indsæt det antal intervaller, du vil beregne, i feltet **Periodefrekvens**.</span><span class="sxs-lookup"><span data-stu-id="4c96e-112">In the **Period frequency** field, insert the number of intervals you want to calculate.</span></span> <span data-ttu-id="4c96e-113">Hvis du f.eks. har valgt **Dag** som intervaltype, og du indsætter tallet "5" i dette felt, foretages der en beregning på fem dage fra startdatoen.</span><span class="sxs-lookup"><span data-stu-id="4c96e-113">For example, if you have selected **Day** as the interval type, and you enter the number "5" in this field, a calculation of five days from the start date will be made.</span></span>
 
-8. <span data-ttu-id="e489a-114">Klik på **OK** for at starte beregningen.</span><span class="sxs-lookup"><span data-stu-id="e489a-114">Click **OK** to start the calculation.</span></span>
+8. <span data-ttu-id="4c96e-114">Klik på **OK** for at starte beregningen.</span><span class="sxs-lookup"><span data-stu-id="4c96e-114">Click **OK** to start the calculation.</span></span>
 
-<span data-ttu-id="e489a-115">I figuren herunder vises resultatet af en beregning, der dækker tre uger for belastningstypen **Reserveret**.</span><span class="sxs-lookup"><span data-stu-id="e489a-115">The figure below shows the result of a calculation covering three weeks for the load type **Reserved**.</span></span>
+<span data-ttu-id="4c96e-115">I figuren herunder vises resultatet af en beregning, der dækker tre uger for belastningstypen **Reserveret**.</span><span class="sxs-lookup"><span data-stu-id="4c96e-115">The figure below shows the result of a calculation covering three weeks for the load type **Reserved**.</span></span>
 
 ![Figur 1](media/08-work-order-scheduling.png)
 
 [!NOTE]
-<span data-ttu-id="e489a-117">Hvis du vælger belastningstyperne **Kapacitet** eller **Rest** for beregningen, vises samme resultat, hvis der ikke er foretaget reservationer for ressourcerne i den valgte periode.</span><span class="sxs-lookup"><span data-stu-id="e489a-117">If you select the load types **Capacity** or **Remainder** for your calculation, the same result will be displayed if no reservations have been made for the resources in the selected period.</span></span>
+<span data-ttu-id="4c96e-117">Hvis du vælger belastningstyperne **Kapacitet** eller **Rest** for beregningen, vises samme resultat, hvis der ikke er foretaget reservationer for ressourcerne i den valgte periode.</span><span class="sxs-lookup"><span data-stu-id="4c96e-117">If you select the load types **Capacity** or **Remainder** for your calculation, the same result will be displayed if no reservations have been made for the resources in the selected period.</span></span>
 
-<span data-ttu-id="e489a-118">Se [Beregne kapacitetsbelastning](../capacity-planning/calculate-capacity-load.md) for at få oplysninger om, hvordan kapacitetsbelastningen beregnes på vedligeholdelsestidsplanslinjer og ikke planlagte arbejdsordrer.</span><span class="sxs-lookup"><span data-stu-id="e489a-118">For information about how to calculate capacity load on maintenance schedule lines and not scheduled work orders, refer to [Calculate capacity load](../capacity-planning/calculate-capacity-load.md).</span></span>
+<span data-ttu-id="4c96e-118">Se [Beregne kapacitetsbelastning](../capacity-planning/calculate-capacity-load.md) for at få oplysninger om, hvordan kapacitetsbelastningen beregnes på vedligeholdelsestidsplanslinjer og ikke planlagte arbejdsordrer.</span><span class="sxs-lookup"><span data-stu-id="4c96e-118">For information about how to calculate capacity load on maintenance schedule lines and not scheduled work orders, refer to [Calculate capacity load](../capacity-planning/calculate-capacity-load.md).</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
