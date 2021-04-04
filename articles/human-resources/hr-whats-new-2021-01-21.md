@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: af847ed36187c0d0629ce4063d9c17cb0fa8cfcf
-ms.sourcegitcommit: 630a0b3f800f36ced49b79156dd52132904fef75
+ms.openlocfilehash: fc3bb035686a46030514aca1f5ad03a2681845fd
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "5060836"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463520"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 21. januar 2021
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources.
 
@@ -57,7 +59,7 @@ Følgende fejlrettelser er inkluderet i denne version.
 > [!NOTE]
 > Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis dette emne, der omfatter fejlrettelser, som blev udført i buildet, efter at dette emne blev udgivet.
 
-| Fejlnummer | Udsted |  Betegnelse |
+| Fejlnummer | Udsted |  Beskrivelse |
 | --- | --- | --- |
 | 533079 | Navigationsfejlen "Formularen blev kaldt forkert", da vi prøver at se på fradrag. | Faste fejl, mens du ser på fradrag for frynsegoder med visningen **Fra og med**-dato. |
 | 543641 | Postnummeret udfyldes ikke ved elektronisk rapportering.  | Fastsatte en intern kode på postnummeret, der ikke vises i elektroniske ACA-rapporter til frynsegodeadministration, når dækningskoden er M til Q. |

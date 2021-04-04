@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3de3de5a93c700526645c248b54783b64d77f2e7
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 1192a45d0d2fffbe2ecba65551641c090c08db8e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115966"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463424"
 ---
 # <a name="leave-and-absence-overview"></a>Oversigt over orlov og fravær
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources hjælper dig med at give medarbejderne store orlovsfordele. Arbejdsområdet **Orlov og fravær** en fleksibel struktur til oprettelse af nye orlovsplaner. Det giver også arbejdsgange mulighed for at administrere anmodninger og en intuitiv selvbetjeningsside, hvor medarbejdere kan anmode om fritid. Analyse hjælper din organisation med at måle og overvåge orlovssaldi og forbrug for dine orlovsplaner.
 

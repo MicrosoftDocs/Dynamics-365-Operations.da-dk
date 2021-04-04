@@ -3,7 +3,7 @@ title: Udstede elektroniske fakturaer i Finance og Supply Chain Management
 description: Dette emne beskriver, hvordan du udsteder elektroniske faktura i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management ved hjælp af tilføjelsesprogrammet Elektronisk fakturering.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 187f5a20d088b4fcd7af2a6576357a69c2efc2c6
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104359"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486947"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Udstede elektroniske fakturaer i Finance og Supply Chain Management
 
@@ -35,25 +35,35 @@ Dette emne beskriver, hvordan du udsteder elektroniske faktura i Microsoft Dynam
 
 ## <a name="feature-activation"></a>Funktionsaktivering
 
-Før du kan begynde at udstede elektroniske fakturaer via tilføjelsesprogrammet Elektronisk fakturering er det nødvendigt at aktivere funktionsreferencen i Finans og Supply Chain Management.
+Hvis du skal udstede elektroniske fakturaer via tilføjelsesprogrammet Elektronisk fakturering, skal du først at aktivere funktionsreferencen i Finans og Supply Chain Management.
 
-Hver funktionsreference svarer til en bestemt funktion til elektronisk fakturering, der overholder kravene til elektronisk fakturering fra et land/område.
+Hver funktion svarer til en bestemt funktion til elektronisk fakturering, der overholder kravene til elektronisk fakturering for et land/område.
 
-Følgende tabel indeholder listen over funktionsreferencer, som understøtter tilføjelsesprogrammet Elektronisk fakturering.
+Følgende tabel indeholder listen over funktioner, som evt. understøtter tilføjelsesprogrammet Elektronisk fakturering.
 
-| Funktionsreference | Navn                                              | Land/område |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | NF-e Federal - brasiliansk elektronisk faktura       | Brasilien         |
-| BR-00095          | NFS-e brasilianske elektroniske fakturaer               | Brasilien         |
-| DK-00001          | E-fakturering til den offentlige sektor (OIOUBL) - DK    | Danmark        |
-| EG-00008          | E-fakturering for Egypten                             | Egypten          |
-| ES-00025          | Elektronisk faktura til den offentlige sektor           | Spanien          |
-| EUR-00023         | Den europæiske union, e-fakturering til den offentlige sektor       | Europa         |
-| ITA-00036         | IT - e-fakturering til den offentlige sektor (FatturaPA) | Italien          |
-| MX-00010          | CFDI for e-fakturering                                  | Mexico         |
-| MX-00016          | E-fakturering CFDI - annulleringsproces           | Mexico         |
+| Navn                                              | Land/område |
+|---------------------------------------------------|----------------|
+|Østrigsk elektronisk faktura                        |Østrig         |
+|Belgisk elektronisk faktura                         |Belgien         |
+|NF-e Federal - brasiliansk elektronisk faktura       |Brasilien          |
+|NFS-e - Brasiliansk tjeneste (by) elektronisk faktura|Brasilien          |
+|Dansk elektronisk faktura                          |Danmark         |
+|Egyptisk elektronisk faktura                        |Egypten           |
+|Estisk elektronisk faktura                        |Estland         |
+|Finsk elektronisk faktura                         |Finland         |
+|Fransk elektronisk faktura                          |Frankrig          |
+|Tysk elektronisk faktura                          |Tyskland         |
+|PEPPOL - Global elektronisk faktura                 |Globalt          |
+|Italiensk elektronisk faktura                         |Italien           |
+|CFDI - mexicansk elektronisk faktura                  |Mexico          |
+|Hollandsk elektronisk faktura                           |Nederlandene     |
+|Norsk elektronisk faktura                       |Norge          |
+|Spansk elektronisk faktura                         |Spanien           |
 
-I de tilfælde, hvor der er en ældre elektronisk faktureringsfunktion, der understøttes af landets lokaliseringsomfang, giver aktiveringen af funktionsreferencen mulighed for at udstede elektroniske fakturaer via tilføjelsesprogrammet Elektronisk fakturering og deaktivere den tidligere funktion.
+I de tilfælde, hvor der er en ældre elektronisk faktureringsfunktion, der understøttes af landet/områdets lokaliseringsomfang, giver aktiveringen af disse funktioner mulighed for at lukke den ældre funktion og aktivere de elektroniske fakturaer, der skal udstedes via tilføjelsesprogrammet Elektronisk fakturering.
+
+> [!IMPORTANT]
+> Når funktionen til integration af elektronisk fakturering er aktiveret, er den nye erfaring med elektronisk fakturering som standard deaktiveret. Du kan bruge funktionsbegrebet til selektivt at aktivere nye oplevelser for juridiske enheder ved hjælp af specifikke funktioner for lande/områder. Indstillingen **Global** styrer den nye oplevelse for de øvrige lande/områder, der ikke er angivet specifikt i tabellen.
 
 ## <a name="submit-electronic-documents"></a>Indsend elektroniske dokumenter
 
