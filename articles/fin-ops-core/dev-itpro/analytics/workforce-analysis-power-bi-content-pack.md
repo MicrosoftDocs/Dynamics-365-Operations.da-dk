@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
@@ -17,18 +16,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0622cebcfca15acf50cf62e8a77af360d4f1bda
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 8ea0bcafa616e5b12ac0a997af87c7d57564362d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092785"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563734"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-indhold til Nøgletal for arbejdsstyrke
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver Microsoft Power BI-indhold til **Nøgletal for arbejdsstyrke**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+Dette emne beskriver **Nøgletal for arbejdsstyrke** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet til **Nøgletal for arbejdsstyrke** vises i arbejdsområdet **Personalestyring**, hvis du bruger et af disse produkter:
