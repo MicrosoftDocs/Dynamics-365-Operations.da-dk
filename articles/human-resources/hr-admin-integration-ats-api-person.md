@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e61b768c5194b52178853d48c50dbf072eebbdcd
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: a13222317ba59868686be5ce24c970d6a068f8bc
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125443"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464172"
 ---
 # <a name="person"></a>Person
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver personenheden til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_dirpersonentity
 
-### <a name="description"></a>Betegnelse
+### <a name="description"></a>Beskrivelse
 
 Denne enhed angiver de personlige oplysninger for den person, der er kandidat.
 
@@ -123,7 +125,7 @@ Denne enhed angiver de personlige oplysninger for den person, der er kandidat.
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Personenheds-id**<br>mshr_dirpersonentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret | Et systemgenereret entydigt id til enhedsposten. |
 | **Partnummer**<br>mshr_partynumber<br>*Streng* | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret | Et brugerlæsbart og systemgenereret entydigt id for personen.  |
