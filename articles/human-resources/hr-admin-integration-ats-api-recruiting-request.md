@@ -16,20 +16,22 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125419"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500616"
 ---
 # <a name="recruiting-request"></a>Rekrutteringsanmodning
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emne beskriver rekrutteringsforespørgselsenheden til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmrecruitingrequestentity
 
-### <a name="description"></a>Betegnelse
+### <a name="description"></a>Beskrivelse
 
 Beskriver en anmodning om at rekruttere til et job.
 
@@ -72,7 +74,7 @@ Beskriver en anmodning om at rekruttere til et job.
 
 ### <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
 | **Rekrutteringsanmodnings-id**<br>mshr_recruitingrequestid<br>*Streng* | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret | Et entydigt id, der kan læses af brugeren, for den anmodning, der vises i HR-ansøgningen. Nummerserie. |
 | **Rekrutteringsanmodningsenheds-id**<br>mshr_hcmrecruitingrequestentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret | Systemgenereret GUID-værdi, der entydigt identificerer rekrutteringsanmodningen. |
@@ -98,7 +100,8 @@ Beskriver en anmodning om at rekruttere til et job.
 | **Jobtype-værdi**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Skrivebeskyttet<br>Valgfri<br>Fremmed nøgle: mshr_hcmjobtypeentityid af mshr_hcmjobtypenentity-enhed | Det systemgenererede entydige id for den jobtype, der er tilknyttet jobbet med rekrutteringsanmodningen. |
 | **Momsfri status**<br>mshr_exemptstatus<br>*JobExemptStatus*-indstilling | Skrivebeskyttet<br>Valgfri | FLSA-status, der er momsfri, baseret på jobtypen. |
 | **Anslået startdato**<br>mshr_estimatedstartdate<br>*Dato* | Læse/skrive<br>Påkrævet | Den dato, hvor det forventes, at en kandidat vil starte med at arbejde. |
-| **Ekstern beskrivelse**<br>mshr_externaldescription<br>*Streng* | Læse/skrive<br>Valgfri | En ansøgerbeskrivelse af jobbet/stillingen. | Laveste kompensationsgrænse<br>mshr_compensationlowthreshold<br>*Dobbelt* | Læse/skrive<br>Valgfri | nedre grænse for kompensationsniveauet. |
+| **Ekstern beskrivelse**<br>mshr_externaldescription<br>*Streng* | Læse/skrive<br>Valgfri | En ansøgerbeskrivelse af jobbet/stillingen. | 
+| **Laveste kompensationsgrænse**<br>mshr_compensationlowthreshold<br>*Dobbelt* | Læse/skrive<br>Valgfri | nedre grænse for kompensationsniveauet. |
 | **Kompensationskontrolpunkt**<br>mshr_compensationcontrolpoint<br>*Dobbelt* | Læse/skrive<br>Valgfri | Kontrolpunkt for kompensationsniveauet. |
 | **Højeste kompensationsgrænse**<br>mshr_compensationhighthreshold<br>*Dobbelt* | Læse/skrive<br>Valgfri | Øvre grænse for kompensationsniveauet. |
 | **Kompensationsniveau**<br>mshr_compensationlevelid<br>*Streng* | Læse/skrive<br>Valgfri | Jobbets kompensationsniveau. Et job kan konfigureres med flere kompensationsniveauer. Denne attribut angiver det valgte jobkompensationsniveau for denne anmodning. |

@@ -1,9 +1,9 @@
 ---
 title: Konfigurere en mailbeskedprofil
 description: Dette emne beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynamics 365 Commerce.
-author: samjarawan
+author: bicyclingfool
 manager: annbe
-ms.date: 03/31/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -13,26 +13,23 @@ ms.reviewer: v-chgri
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: samjar
+ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9378fb200a239433f2023bb90f72840dace1c0eb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d82a1abe68ff6e162acb75c6fdc1e207af11c279
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000818"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555301"
 ---
-# <a name="set-up-an-email-notification-profile"></a>Konfigurere en mailbeskedprofil
-
+# <a name="set-up-an-email-notification-profile"></a>Konfigurere en profil for mailbesked
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
-
-Før du opretter kanaler, skal du oprette en profil for at sikre, at mailbeskeder kan sendes ud fra forskellige hændelser, f.eks. ordreoprettelse, ordreforsendelsesstatus og betalingsfejl.
+Når du opretter kanaler, kan du oprette en mailbeskedprofil. På den måde kan der sendes e-mails til kunder for forskellige transaktionshændelser, som f.eks. ordreoprettelse, ordreforsendelsesstatus og betalingsfejl.
 
 Du kan finde yderligere oplysninger om mailkonfiguration i [Konfigurere og sende e-mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -48,7 +45,7 @@ Benyt følgende fremgangsmåde for at oprette en mailbeskedprofil.
 
 ### <a name="create-an-email-template"></a>Opret en mailskabelon
 
-Før du kan oprette en mailbesked, skal du oprette en mailskabelon for organisationen, der indeholder oplysninger om afsenderens mail og mailskabelonen.
+Før en type mailbesked kan aktiveres, skal du oprette en mailskabelon til organisationen i Commerce Headquarters. Denne skabelon definerer mailemnet, afsenderen, standardsproget og mailbrødteksten for hvert sprog, du vil understøtte.
 
 Benyt følgende fremgangsmåde for at oprette en mailskabelon.
 
@@ -58,7 +55,7 @@ Benyt følgende fremgangsmåde for at oprette en mailskabelon.
 1. Indtast navnet på afsenderen i feltet **Afsenders e-mailadresse**.
 1. Indtast en meningsfuld beskrivelse i feltet **E-mail-beskrivelse**.
 1. I feltet **Afsenders e-mailadresse** skal du angive afsenderens mailadresse.
-1. I sektionen **Generelt** kan du angive eventuelle valgfrie oplysninger, der er nødvendige (f.eks. prioriteringen af mail).
+1. Vælg et standardsprog til mailskabelonen under **Generelt**. Standardsproget bruges, når der ikke findes en lokaliseret skabelon for det angivne sprog.
 1. Udvid sektionen **E-mailbeskedens indhold**, og vælg **Ny** for at oprette skabelonindholdet. Vælg sproget for hvert indholdselement, og angiv emnelinjen i mailen. Hvis der skal være indhold i mailen, skal du sørge for at markere afkrydsningsfeltet **Har indhold**.
 1. Vælg **E-mail-besked** i handlingsruden for at oprette en skabelon til mailindholdet.
 

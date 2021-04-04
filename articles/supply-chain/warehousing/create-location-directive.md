@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
+ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963304"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470513"
 ---
 # <a name="work-with-location-directives"></a>Arbejde med lokationsvejledninger
 
@@ -239,7 +239,7 @@ Du kan definere flere handlinger i lokationsvejledning for hver linje. Igen, et 
     - **Rund op til fuld LP og FEFO-batch** – Denne strategi kombinerer elementerne i strategierne *FEFO-batchreservationen* og *Rund op til fuld LP*. Den er kun gyldig for batchaktiverede varer og lokationsvejledninger, hvor arbejdstypen er *Pluk*. Linjen skal være batchaktiveret, hvis du vil bruge *FEFO-batchreservation*-strategien, og *Rund op til fuld LP*-strategien kan kun bruges til genopfyldning. Hvis denne strategi konfigureres sammen med en lokationslagergrænse, kan den valgte læg på lager-arbejdslokation være overbelastet, og lagergrænser skal ignoreres.
     - **Rund op til en fuld LP** – Denne strategi runder op til lagerantallet, så det svarer til antallet af id-numre, som er tildelt de varer, der skal plukkes. Du kan kun bruge denne strategi til genopfyldning for lokationsvejledninger af typen *Pluk*. Hvis denne strategi konfigureres sammen med en lokationslagergrænse, kan den valgte læg på lager-arbejdslokation være overbelastet, og lagergrænser skal ignoreres.
     - **Nummerpladestyret** – Brug denne strategi, når du frigiver ordren til lagerstedet for at oprette pluk og læg-arbejdet. Du kan gøre dette for flere nummerplader. Denne strategi vil forsøge at reservere og oprette plukarbejde på de lokationer, hvor de anmodede nummerplader er knyttet til flytteordrelinjerne. Men hvis disse handlinger ikke kan fuldføres, men du stadig vil oprette plukarbejde, skal du gå tilbage til en anden strategi for handlinger i lokationsvejledningen. Afhængigt af dine krav til forretningsprocesser kan du også søge efter en lagerbeholdning i et andet område af lagerstedet.
-    - **Tom lokation uden indgående arbejde** – Brug denne strategi til at finde tomme lokationer. En lokation anses som tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde. Du kan kun bruge denne strategi til lokationsvejledninger med arbejdstypen *Pluk*.
+    - **Tom lokation uden indgående arbejde** – Brug denne strategi til at finde tomme lokationer. En lokation anses som tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde. Du kan kun bruge denne strategi til lokationsvejledninger med arbejdstypen *Læg på lager*.
     - **Lokation med aldersfordelt FIFO** – Brug strategien FIFO (First In, First Out) til at sende både batchsporede varer og varer, der ikke er batchsporede, baseret på den dato, hvor lagerbeholdningen ankom på lagerstedet. Denne facilitet kan især være nyttig for ikke-batchsporet lager, hvor en udløbsdato ikke er tilgængelig til brug ved sortering. FIFO-strategien finder den lokation, der indeholder den ældste aldersfordelte dato, og fordeler så plukningen baseret på den pågældende aldersfordelte dato.
     - **Lokation med aldersfordelt LIFO** – Brug strategien LIFO (Last In, First Out) til at sende både batchsporede varer og varer, der ikke er batchsporede, baseret på den dato, hvor lagerbeholdningen ankom på lagerstedet. Denne facilitet kan især være nyttig for ikke-batchsporet lager, hvor en udløbsdato ikke er tilgængelig til brug ved sortering. LIFO-strategien finder den lokation, der indeholder den nyeste aldersfordelte dato, og fordeler så plukningen baseret på den pågældende aldersfordelte dato.
 

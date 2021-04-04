@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5fd978c1e9db7e7ce3c06bbeb45b59854f1582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea5952376fe30f489d385c8f8295fbf86f2af085
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974654"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470724"
 ---
 # <a name="create-service-task-relations"></a>Oprette serviceopgaverelationer    
 
@@ -32,13 +32,13 @@ Du kan knytte serviceopgaver til serviceaftaler eller serviceordrer for at beskr
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Oprette en relation med en serviceaftale
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.
+1.  Gå til **Servicestyring** \> **Fælles** \> **Serviceaftaler** \> **Serviceaftaler**.
 
 2.  Vælg en eksisterende serviceaftale, eller opret en ny.
 
-3.  Klik på knappen **Serviceopgaver** i handlingsruden.
+3.  Vælg knappen **Serviceopgaver** i handlingsruden.
 
-4.  Tryk på CTRL+N i formularen **Serviceopgaver** for at oprette en ny linje, og vælg derefter en serviceopgave på listen **Serviceopgave** for at knytte serviceopgaven til serviceaftalen.
+4.  Vælg **Ny** i formularen **Serviceopgaver** for at oprette en ny linje, og vælg derefter en serviceopgave på listen **Serviceopgave** for at knytte serviceopgaven til serviceaftalen.
 
 5.  Angiv beskrivelser af evt. interne eller eksterne noter i fritekstfelterne under fanen **Beskrivelse**.
 
@@ -50,13 +50,13 @@ En serviceopgaverelation, der oprettes til en serviceaftale, kan vælges fra all
 
 ## <a name="create-a-relation-with-a-service-order"></a>Oprette en relation med en serviceordre
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Gå til **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
 
 2.  Vælg en eksisterende serviceordre, eller opret en ny.
 
-3.  Klik på knappen **Serviceopgaver** i handlingsruden.
+3.  Vælg knappen **Serviceopgaver** i handlingsruden.
 
-4.  Tryk i formularen **Serviceopgaver** på CTRL+N for at oprette en ny linje, og vælg derefter en serviceopgave på listen **Serviceopgave** for at knytte serviceopgaver til serviceordren.
+4.  Vælg **Ny** i formularen **Serviceopgaver** for at oprette en ny linje, og vælg derefter en serviceopgave på listen **Serviceopgave** for at knytte serviceopgaverne til serviceordren.
 
 5.  Angiv beskrivelser af evt. interne eller eksterne noter i fritekstfelterne under fanen **Beskrivelse**.
 

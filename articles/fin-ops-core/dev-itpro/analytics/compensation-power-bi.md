@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
@@ -15,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b625ea7dcbb6bd8b80cbcdcc544c59b9839fc19d
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: d588f01abd239ae097064396801613c2e3bd7471
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093050"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560159"
 ---
 # <a name="compensation-power-bi-content"></a>Power BI-indhold til kompensation
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver Microsoft Power BI-indhold til **Kompensation**. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+I dette emne beskrives **kompensation** i Microsoft Power BI-indhold til. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet til **Kompensation** vises i arbejdsområdet **Kompensationsstyring**, hvis du bruger et af følgende produkter:

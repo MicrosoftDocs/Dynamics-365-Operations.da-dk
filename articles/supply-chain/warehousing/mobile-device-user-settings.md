@@ -1,0 +1,99 @@
+---
+title: Indstillinger for mobilenhedsbruger
+description: Dette emne forklarer, hvordan brugerindstillinger for mobilenheder administreres for lagerarbejdere.
+author: MarkusFogelberg
+manager: tfehr
+ms.date: 02/09/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings
+audience: Application User
+ms.reviewer: kamaybac
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.author: mafoge
+ms.search.validFrom: 2021-02-09
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: 8090305c1b296d8a8a64df444abb1d1f2235aeee
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501192"
+---
+# <a name="mobile-device-user-settings"></a>Indstillinger for mobilenhedsbruger
+
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+Den nye mobilapp Lokationsstyring indeholder et sæt appspecifikke indstillinger, der er med til at skræddersy brugeroplevelsen. Da appen kan bruges på enheder med forskellige skærmstørrelser og konfigurationer (f.eks. tablet, telefon eller håndholdt), kan det være nyttigt at administrere disse indstillinger centralt fra Microsoft Dynamics 365 Supply Chain Management.
+
+Med funktionen til *brugerindstillinger for mobilenhed* kan du definere globale brugerindstillinger, der skal bruges på alle enheder. Du kan også definere mere detaljerede brugerindstillinger for individuelle enhedsmærker, enhedsmodeller og/eller arbejdere. Når en arbejder logger på mobilappen Lokationsstyring, henter og anvender appen den mest specifikke indstillingsprofil, der er gemt i Supply Chain Management for det tilsvarende brand, enheden og/eller bruger-id'et.
+
+Denne funktion kan hjælpe arbejdere med at komme hurtigere i gang, når de begynder at bruge en ny enhed. Her er nogle eksempler:
+
+- Administratorer kan oprette et sæt standardindstillinger, der fungerer bedst for enheder fra en bestemt producent og/eller for bestemte enhedsmodeller. Arbejderne kan derfor komme i gang med en ny enhed uden at skulle ændre indstillingerne.
+- Hvis dit firma har en pulje af identiske enheder, der deles mellem arbejdere, vil arbejderne se deres foretrukne opsætning, hver gang de logger på, selvom de aldrig har brugt den specifikke fysiske enhed, de har valgt på en given dag.
+- I Supply Chain Management kan administratorer se og redigere alle gemte indstillinger, også for enkelte arbejdere. Denne egenskab kan hjælpe dem med at foretage fejlfinding af eller finjustere nye funktioner.
+
+> [!IMPORTANT]
+> Funktionen til *brugerindstillinger for mobilenheder* gælder kun for den nye mobilapp Lokationsstyring. Den fungerer ikke med den gamle lagerstedsapp.
+
+## <a name="turn-on-the-mobile-device-user-settings-feature"></a>Aktivere funktionen til brugerindstillinger for mobilenheder
+
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul:** *Lokationsstyring*
+- **Funktionsnavn:** *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp*
+
+## <a name="create-and-manage-user-settings"></a>Oprette og administrere brugerindstillinger
+
+Brug siden **Brugerindstillinger for mobilenhed** til at oprette, se og administrere indstillingsprofiler på alle detaljeniveauer. Første gang en arbejder redigerer sine brugerindstillinger på en ny enhed, tilføjes der automatisk en ny profil på denne side, hvis den ikke allerede findes. Profilen opdateres derefter, hver gang arbejderen foretager en ændring.
+
+Du kan også definere en indstillingsprofil for alle enhedsmærker, enhedsmodeller og/eller arbejdere. Du kan derefter øge granulariteten ved at anvende mere specifikke indstillinger for de enkelte mærker, modeller og/eller arbejdere.
+
+Følg disse trin for at oprette og administrere brugerindstillinger for dine mobilenheder.
+
+1. Gå til **Lokationsstyring \> Mobilenhed \> Brugerindstillinger for mobilenhed**.
+1. Vælg en eksisterende brugerindstillingsprofil i listeruden for at åbne posten. Du kan også vælge **Ny** i handlingsruden for at oprette en ny profil.
+
+    Hver profil i listeruden har navnet på det mærke, den model og/eller det bruger-id, profilen gælder for. Mere generelle profiler har værdien *Alle* for nogle af eller alle disse egenskaber.
+
+1. Angiv følgende felter i overskriftssektionen for den nye eller valgte post til indstillingsprofil:
+
+    - **Enhedsmærkenavn** – Vælg det enhedsmærkenavn, som profilen skal gælde for. Hvis profilen skal gælde for alle mærker, skal feltet ikke udfyldes. Listen over værdier omfatter alle de mærker, der er defineret i systemet. Du kan finde flere oplysninger om, hvordan listen over mærker defineres, i næste afsnit.
+    - **Enhedsmodel-id** – Vælg den enhedsmodel, som profilen skal gælde for. Hvis profilen skal gælde for alle modeller af det valgte mærke, skal feltet ikke udfyldes. Listen over værdier indeholder alle de modeller, der er defineret for det mærke, der er valgt i feltet **Enhedsmærkenavn**. Du kan finde oplysninger om, hvordan listen over modeller for hvert mærke defineres, i næste afsnit.
+    - **Bruger-id** – Vælg bruger-id'et for den lagerarbejder, som indstillingsprofilen skal gælde for. Hvis profilen skal gælde for alle arbejdere, skal feltet ikke udfyldes.
+
+1. I oversigtspanelet **Generelt** skal du indstille følgende felter:
+
+    - **Knapposition** – Vælg, hvordan knapperne skal placeres på enheden. Elementer i appen flyttes, så de passer bedre til arbejderens præference eller håndtering. De tilgængelige indstillinger er *Nederst til højre (standard)*, *Nederst til venstre*, *Øverste til højre* og *Øverste til venstre*.
+    - **Visningsretning** – Vælg den visningsretning, der skal anvendes som standard i appen.
+    - **Scan med kamera** – Angiv denne indstilling til *Ja* for at bruge enheden til at scanne inputfelter, hvor den foretrukne inputtilstand er angivet til *Scanning*. Hvis din enhed har en indbygget scanner, skal du angive denne indstilling til *Nej*, hvis du vil bruge scanneren i stedet.
+    - **Vis produktbillede** – Vælg, om produktbilleder skal vises, hvis de er tilgængelige for det frigivne produkt. Du kan finde flere oplysninger om, hvordan du tilføjer produktbilleder, under [Føje et billede til et produkt](../pim/tasks/add-image-product.md).
+    - **Vis farvetema** – Vælg et farvetema for enheden.
+    - **Lydniveau** – Vælg enhedens lydniveau. Vælg en værdi mellem 0 (nul) og 10. En værdi på *0* repræsenterer ingen lyd, og en værdi på *10* angiver den maksimale lydstyrke. Standardværdien er *4*.
+    - **Vibrationsniveau** – Vælg enhedens vibrationsniveau. Vælg en værdi mellem 0 (nul) og 5. En værdi på *0* repræsenterer ingen vibration, og en værdi på *5* angiver den maksimale vibration. Standardværdien er *1*.
+    - **Tekstskalaprocent** – Angiv tekststørrelsen som en procentdel af standardstørrelsen. Angiv en værdi mellem 70 og 400. En værdi på *70* repræsenterer den mindste tekstskala, og en værdi på *400* repræsenterer den største tekstskala. Standardværdien er *100*.
+    - **Knapskalaprocent** – Angiv kapstørrelsen som en procentdel af standardstørrelsen. Angiv en værdi mellem 50 og 200. En værdi på *50* repræsenterer den mindste knapskala, og en værdi på *200* repræsenterer den største knapskala. Standardværdien er *100*.
+
+## <a name="create-and-manage-mobile-device-brands"></a>Oprette og administrere mobilenhedsmærker
+
+Du kan bruge siden **Mærker til mobilenhed** til at se, oprette og administrere de enhedsmærker og -modeller, der kan bruges sammen med dine indstillingsprofiler. Mobilappen henter og sender automatisk det lokale mærkenavn og model-id, første gang en arbejder redigerer sine indstillinger på en given enhed. Derfor genereres de fleste af disse poster normalt automatisk. Du kan dog også administrere alle posterne på denne side. Du kan f.eks. give mere nyttige beskrivelser af hver enkelt mærke eller model, så du kan skelne mellem lignende eller kryptiske model-id'er.
+
+Følg disse trin for at oprette og administrere dine mobilenhedsmærker og -modeller.
+
+1. Gå til **Lokationsstyring \> Mobilenhed \> Mærker til mobilenhed**.
+1. Vælg et mobilenhedsmærke i listeruden for at åbne dets post. Du kan også vælge **Ny** i handlingsruden for at oprette et nyt mærke.
+1. Angiv følgende felter i overskriftssektionen for den nye eller valgte post til enhedsmærke:
+
+    - **Enhedsmærkenavn** – Enhedsmærkets navn, f.eks. *Microsoft Corporation*.
+    - **Beskrivelse** – Du kan angive en beskrivelse, der gør det lettere at skelne mellem mærkenavne.
+
+1. I oversigtspanelet **Modeller til mobilenhed** vises alle modellerne for det valgte enhedsmærke. Brug knapperne på værktøjslinjen til at tilføje rækker i gitteret eller fjerne rækker. For hver række kan du angive følgende felter:
+
+    - **Enhedsmodel-id** – Enhedsmodel-id, f.eks. *Surface Book 2*.
+    - **Beskrivelse** – Du kan angive en beskrivelse, der gør det lettere at skelne mellem model-id'er.

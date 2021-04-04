@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 66ba73ab5c790aa4a67419842f63f6f741bf0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c20d3d0540f8f1a05928df9aff5253745982da9
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973754"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558256"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutelayout for id-nummeretiketter
 
 [!include [banner](../includes/banner.md)]
+
 
 I dokumentrutelayoutet defineres layoutet for id-nummeretiketter og de data, der udskrives på dem. Du kan konfigurere udløsningspunkterne for udskrivning, når du konfigurerer menupunkter i mobilenheder og arbejdsskabeloner.
 
@@ -51,6 +52,10 @@ Teksten `$LicensePlateId$` i dette eksempel vil blive erstattet af en dataværdi
 Hvis du vil have vist de værdier, der vil blive udskrevet, skal du gå til **Lokationsstyring \> Forespørgsler og rapporter \> Id-nummeretiketter**.
 
 Flere meget tilgængelige værktøjer til oprettelse af etiketter kan hjælpe dig med at formatere teksten til etiketlayoutet. Mange af disse værktøjer understøtter `$FieldName$`-formatet. Microsoft Dynamics 365 Supply Chain Management bruger desuden en særlig formateringslogik som del af felttilknytningen for dokumentrutelayoutet.
+
+## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funktion i dit system
+
+Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Udvidede layout for id-etiket*.
 
 ## <a name="custom-number-formats"></a>Brugerdefinerede talformater
 

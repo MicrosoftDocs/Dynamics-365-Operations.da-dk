@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983538"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501120"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Varedisponering med behovsprognoser
 
@@ -249,7 +249,7 @@ Derfor oprettes følgende planlagte ordrer.
 En prognosereduktionsnøgle anvendes af metoderne **Transaktioner - reduktionsnøgle** og **Procent - reduktionsnøgle** til at reducere prognosekrav. Følg følgende fremgangsmåde for at oprette og konfigurere en reduktionsnøgle:
 
 1. Gå til **Varedisponering \> Opsætning \> Dækning \> Reduktionsnøgler**.
-2. Vælg **Ny** eller tryk på **Ctrl+N** for at oprette en reduktionsnøgle.
+2. Vælg **Ny** for at oprette en reduktionsnøgle.
 3. I feltet **Reduktionsnøgle** indtastes en unik identifikator for prognosereduktionsnøglen. Dernæst indtastes et navn i feltet **Navn**. 
 4. Fastsæt perioderne og reduktionsnøgleprocenterne for hver periode:
 
@@ -265,8 +265,8 @@ Der skal tildeles en prognosereduktionsnøgle til elementets dækningsgruppe. F�
 2. I feltet **Reduktionsnøgle** i oversigtspanelet **Andre** vælges den reduktionsnøgle, der skal tildeles dækningsgruppen. Reduktionsnøglen gælder derefter for alle elementer, der tilhører den pågældende dækningsgruppe.
 3. Hvis du vil bruge en reduktionsnøgle til at beregne prognosereduktionen i løbet af behovsplanlægningen, skal du definere denne indstilling under opsætningen af prognoseplanen eller masterplanen. Gå til en af følgende placeringer:
 
-    - Varedisponering \> Opsætning \> Planer \> Prognoseplaner
-    - Varedisponering \> Opsætning \> Planer \> Masterplaner
+    - **Varedisponering \> Opsætning \> Planer \> Hovedplaner**
+    - **Varedisponering \> Opsætning \> Planer \> Behovsplaner**
 
 4. I feltet **Metode, der anvendes til at reducere prognosekrav** i oversigtspanelet **Generelt** på siden **Prognoseplaner** eller **Varedisponering** vælges enten **Procent - reduktionsnøgle** eller **Transaktioner - reduktionsnøgle**.
 
@@ -274,5 +274,69 @@ Der skal tildeles en prognosereduktionsnøgle til elementets dækningsgruppe. F�
 
 Når du vælger **Transaktioner - reduktionsnøgle** eller **Transaktioner - dynamisk periode** som en metode til at reducere prognosekrav, kan du præcisere de transaktioner, der skal reducere prognosen. I feltet **Reducer prognose med** i oversigtspanelet **Andre** på siden **Disponeringsgrupper** skal du vælge **Alle transaktioner**, hvis alle transaktioner skal reducere prognosen, eller **Ordrer**, hvis alene salgsordrer skal reducere prognosen.
 
+## <a name="forecast-models-and-submodels"></a>Budgetmodeller og undermodeller
+
+I dette afsnit beskrives, hvordan du kan oprette budgetmodeller, og hvordan du kan kombinere flere budgetmodeller ved at konfigurere undermodeller.
+
+En *budgetmodel* navngiver og identificerer et bestemt budget. Når du har oprettet budgetmodellen, kan du føje budgetlinjer til den. Brug siden **Behovsprognoselinjer** til at tilføje budgetlinjer for flere varer. Brug siden **Frigivne produkter** til at tilføje budgetlinjer for en bestemt valgt vare.
+
+En budgetmodel kan inkludere budgetter fra andre budgetmodeller. For at opnå dette resultat kan du tilføje andre budgetmodeller som *undermodeller* af en overordnet budgetmodel. Du skal oprette hver relevant model, før du kan tilføje den som undermodel til en overordnet budgetmodel.
+
+Den struktur, der fås som resultat, giver dig mulighed for at styre budgetter på en effektiv måde, da du kan kombinere (samle) input fra flere individuelle budgetter. Fra et planlægningssynspunkt er det derfor let at kombinere budgetter til simuleringer. Du kan f.eks. konfigurere en simulering, der er baseret på kombinationen af et almindeligt budget med budgettet for en forårskampagne.
+
+### <a name="submodel-levels"></a>Undermodelniveauer
+
+Der er ingen grænser for, hvor mange undermodeller der kan føjes til en overordnet budgetmodel. Strukturen kan dog kun være ét niveau dyb. Det vil sige, at en budgetmodel, der er en undermodel af en anden budgetmodel, ikke kan have egne undermodeller. Når du føjer undermodeller til en budgetmodel, kontrollerer systemet, om den pågældende budgetmodel allerede er en undermodel til en anden budgetmodel.
+
+Hvis der ved behovsplanlægningen findes en undermodel med egne undermodeller, får du vist en fejlmeddelelse.
+
+#### <a name="submodel-levels-example"></a>Eksempel på undermodelniveauer
+
+Budgetmodel A har budgetmodel B som undermodel. Budgetmodel B kan derfor ikke have egne undermodeller. Hvis du forsøger at føje en undermodel til budgetmodel B, får du følgende fejlmeddelelse: "Budgetmodel B er en undermodel til model A".
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Samle budgetter på tværs af budgetmodeller
+
+Budgetlinjer, der findes på den samme dag, samles på tværs af deres budgetmodel og dens undermodeller.
+
+#### <a name="aggregation-example"></a>Eksempel på sammenlægning
+
+Budgetmodel A har budgetmodel B og C som undermodeller.
+
+- Budgetmodel A inkluderer en behovsprognose på 2 stk. den 15. juni.
+- Budgetmodel B inkluderer en behovsprognose på 3 stk. den 15. juni.
+- Budgetmodel C inkluderer en behovsprognose på 4 stk. den 15. juni.
+
+Den oprettede behovsprognose vil være en enkelt efterspørgsel på 9 stk. (2 + 3 + 4) den 15. juni.
+
+> [!NOTE]
+> Hver undermodel bruger sine egne parametre, og ikke parametrene i den overordnede budgetmodel.
+
+### <a name="create-a-forecast-model"></a>Oprette en budgetmodel
+
+Følg disse trin for at oprette en budgetmodel.
+
+1. Gå til **Varedisponering \> Konfiguration \> Behovsprognose \> Budgetmodeller**.
+1. Gå til handlingsruden, og vælg **Ny**.
+1. Angiv følgende felter for den nye budgetmodel:
+
+    - **Model** – Angiv et entydigt id for modellen.
+    - **Navn** – Angiv et sigende navn til modellen.
+    - **Stoppet** – Normalt skal du angive denne indstilling til *Nej*. Angiv kun til *Ja*, hvis du vil forhindre redigering af alle budgetlinjer, der er tildelt modellen.
+
+    > [!NOTE]
+    > Feltet **Medtag i likviditetsbudgetter** og felterne i oversigtspanelet **Projekt** er ikke relateret til behovsplanlægning. Du kan derfor ignorere dem i denne sammenhæng. De skal kun tages i betragtning, når du arbejder med budgetter i modulet **Projektstyring og regnskab**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Tildele en prognosemodel undermodeller
+
+Følg disse trin, hvis du vil tildele en budgetmodel undermodeller.
+
+1. Gå til **Lagerstyring \> Konfiguration \> Budget \> Budgetmodeller**.
+1. Vælg den budgetmodel, som du vil oprette en undermodel til, i listeruden.
+1. I oversigtspanelet **Undermodel** skal du vælge **Tilføj** for at føje en række til gitteret.
+1. Angiv følgende felter i den nye række:
+
+    - **Undermodel** – Vælg den budgetmodel, der skal tilføjes som undermodel. Denne budgetmodel skal allerede findes, og den må ikke have egne undermodeller.
+    - **Navn** – Angiv et sigende navn til undermodellen. Dette navn kan f.eks. angive undermodellens relation til den overordnede budgetmodel.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

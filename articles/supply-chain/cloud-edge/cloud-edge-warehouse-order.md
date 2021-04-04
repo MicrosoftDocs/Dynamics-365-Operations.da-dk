@@ -19,12 +19,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c04127b9fe621d962be2d7fe06358b3bd1b78916
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5105698"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556356"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerstedsordrer til sky- og kantskalaenheder
 
@@ -51,6 +51,8 @@ Følg disse trin for at oprette en lagerstedsordre.
 1. Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**.
 1. Vælg **Frigiv til lagersted** i gruppen **Handlinger** under fanen **Lagersted** i handlingsruden.
 1. Hvis du vil se de tilknyttede ordrelinjer for lagerstedet, skal du åbne den relevante indkøbsordre, vælge en linje i sektionen **Indkøbsordrelinjer** og derefter vælge **Lagersted \> Ordrelinjer for lagersted**. Du kan få vist alle linjerne ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**.
+
+Du kan også udløse processen *Frigiv til lagersted* fra et batchjob ved at gå til **Lokationsstyring > Frigiv til lagersted > Automatisk frigivelse af indkøbsordrer**. Når du konfigurerer batchjobbet, kan du vælge bestemte indkøbsordrelinjer baseret på en forespørgsel. Det vil typisk være at konfigurere et tilbagevendende batchjob, der frigiver alle de bekræftede indkøbsordrelinjer, der forventes at ankomme næste dag.
 
 ## <a name="cancel-a-warehouse-order"></a>Annullere en lagerstedsordre
 

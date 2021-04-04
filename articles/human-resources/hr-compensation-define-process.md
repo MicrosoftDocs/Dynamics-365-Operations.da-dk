@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e4f49d9167e6d96500c7dbf5c1a25e04796b33a
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 3564e7807ed81684d51de3185cea9b4f35f38d8b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111892"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468269"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definere kompensationsproces og beregne resultater
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kompensationsprocesser bruges til at fastlægge nye kompensationsbeløb og bonusser for medarbejdere, der er tilmeldt faste og variable kompensationsstrukturer. Kompensationsprocesser kan køres flere gange for at udføre "what-if"-analyser, som kontrollerer, at alle ændringer og indstillinger er korrekte. Denne procedure opretter en kompensationsproces, kører processen og viser resultaterne. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

@@ -1,5 +1,5 @@
 ---
-title: Oprette juridiske enheder
+title: Opret juridiske enheder
 description: Dette emne beskriver, hvordan du opretter juridiske enheder i Microsoft Dynamics 365 Commerce, som skal være oprettet og konfigureret, før du opretter kanaler.
 author: samjarawan
 manager: annbe
@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9491feb004366a02155225bfb323773e130f3dc9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 016b67631a53139d12d65dfaf594f49b030326b1
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993597"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478206"
 ---
-# <a name="create-legal-entities"></a>Oprette juridiske enheder
-
+# <a name="create-legal-entities"></a>Opret juridiske enheder
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du opretter juridiske enheder i Microsoft Dynamics 365 Commerce, som skal være oprettet og konfigureret, før du opretter kanaler.
-
-## <a name="overview"></a>Oversigt
 
 En juridisk enhed er en organisation, der består af en registreret eller lovgivningsbaseret juridisk struktur. Juridiske enheder kan indgå juridisk bindende kontrakter og skal udarbejde opgørelser med afrapportering af deres præstation.
 

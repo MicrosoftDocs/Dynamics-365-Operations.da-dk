@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c321531ace9e17f7d099be6280fd30500b991577
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d268c6fc90457c9f84f66ea5dbf86df356bea0f4
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991709"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470662"
 ---
 # <a name="set-up-return-reason-codes"></a>Konfigurere årsagskoder for returnering   
 
@@ -31,9 +31,9 @@ ms.locfileid: "4991709"
 
 ## <a name="set-up-return-reason-code-groups"></a>Konfigurere årsagskodegrupper for returnering 
 
-1.  Klik på **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Returneringer** \> **Årsagskodegrupper for returnering**.
+1.  Gå til **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Returneringer** \> **Årsagskodegrupper for returnering**.
 
-2.  Tryk på CTRL+N for at oprette en linje til en ny årsagskodegruppe for returnering.
+2.  Vælg **Ny** for at oprette en linje til en ny årsagskodegruppe for returnering.
 
 3.  Skriv et id til gruppen i feltet **Årsagskodegruppe for returnering**.
 
@@ -43,7 +43,7 @@ ms.locfileid: "4991709"
 
 Denne procedure, hjælper dig med at oprette årsagskoder for returnering, som du kan bruge til at angive, hvorfor et produkt er blevet returneret af kunden.
 
-1.  Klik på **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Returneringer** \> **Årsagskoder for returneringer**.
+1.  Gå til **Salg og marketing** \> **Opsætning** \> **Salgsordrer** \> **Returneringer** \> **Årsagskoder for returneringer**.
 
 2.  Tryk på CTRL + N for at oprette en ny årsagskode for returneringer.
 

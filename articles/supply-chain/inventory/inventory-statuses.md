@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c4cad56389c7a8fd6d37591c1ff335fff715707
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001818"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476693"
 ---
 # <a name="inventory-statuses"></a>Lagerstatusser
 
@@ -45,6 +45,9 @@ En lagerstatus er en af dimensionerne i lagringsdimensionsgruppen. Lagerstatusse
 
 Du kan bruge lagerstedsvarer, der enten har disponibel eller ikke-disponibel lagerstatus for indgående arbejde. For eksempel skal du oprette en disponibel status, som hedder *Klar*, en ikke-tilgængelig status, som hedder *Beskadiget* og en spærret status, som hedder *Spærret*. Når du opretter en indkøbsordre for modtagne eller returnerede varer, og hvis nogle af varerne er beskadiget eller ødelagt, kan du ændre lagerstatus for varerne til *Beskadiget* på indkøbsordrelinjen. Når disse varer modtages, angives status automatisk til *Spærret*. Hvis du scanner de beskadigede varer ved hjælp af en mobilenhed, kan Supply Chain Management bruge placeringsinstruktioner og arbejdsskabeloner til at vise oplysninger om en passende placering eller en række placeringer, hvor du kan de lægge disse varer på lager. For returnerede varer oprettes afgangstypen *Reservation* på siden **Lagertransaktioner**.
 
+> [!NOTE]
+> Du kan ikke ændre lagerstatus på de lokationer, hvor der findes åbent arbejde. Hvis du f.eks. har modtaget et indkøb for en vare, men ikke har udført trinnet Læg på lager, vil der findes åbent arbejde for den modtagende lokation, og du vil få en fejl, hvis du har forsøgt at ændre lagerstatus på den pågældende lokation. Hvis du fuldfører eller annullerer det relaterede arbejde, kan du ændre status.
+ 
 Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har varer med status *Ødelagt*, og der køres varedisponering på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk.
 
 Når du har oprettet lagerstatusser, kan du angive standardlagerstatus for et sted, vare og lagersted. Du kan også angive en standardstatus for salg, overdragelse og indkøbsordrer. Standardstatus for salgsordrer og udgående overflytningsordre kan ikke have indstillingen **Lagerspærring** angivet til *Ja*. Lagerstatus, der er nedarvet fra standardindstillinger for et websted, lagersted, vare, indkøbsordre, flytteordre eller salgsordre, kan ændres ved hjælp af den mobile enhed, eller på indkøbsordren, salgsordren eller flytteforslagslinjen.
