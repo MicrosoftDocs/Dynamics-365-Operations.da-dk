@@ -6,90 +6,92 @@ manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 2577705b04beef1f8b03f83ed8536be2e6ab6e83
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cc8bb6c3a993274f70316145f2ec8a6217e6886c
+ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683915"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571698"
 ---
-# <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a><span data-ttu-id="6703e-103">Konfigurere SQL Server Reporting Services for lokal installationer</span><span class="sxs-lookup"><span data-stu-id="6703e-103">Configure SQL Server Reporting Services for on-premises deployments</span></span>
+# <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a><span data-ttu-id="3711c-103">Konfigurere SQL Server Reporting Services for lokal installationer</span><span class="sxs-lookup"><span data-stu-id="3711c-103">Configure SQL Server Reporting Services for on-premises deployments</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6703e-104">Brug trinene i dette emne til at konfigurere SQL Server Reporting Services (SSRS) for din Microsoft Dynamics 365 Finance + Operations-installation (lokal).</span><span class="sxs-lookup"><span data-stu-id="6703e-104">Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.</span></span>
+<span data-ttu-id="3711c-104">Brug trinene i dette emne til at konfigurere SQL Server Reporting Services (SSRS) for din Microsoft Dynamics 365 Finance + Operations-installation (lokal).</span><span class="sxs-lookup"><span data-stu-id="3711c-104">Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.</span></span>
 
-1. <span data-ttu-id="6703e-105">Åbn programmet Konfigurationsstyring til Reporting Services.</span><span class="sxs-lookup"><span data-stu-id="6703e-105">Open the Reporting Services Configuration Manager application.</span></span>
-2. <span data-ttu-id="6703e-106">Lad standard **Servernavn** stå, som bør være navnet på den aktuelle computer, og **Rapportserverforekomst**, **MSSQLSERVER**.</span><span class="sxs-lookup"><span data-stu-id="6703e-106">Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.</span></span>
-3. <span data-ttu-id="6703e-107">Klik på **Tilknyt**.</span><span class="sxs-lookup"><span data-stu-id="6703e-107">Click **Connect**.</span></span>
+1. <span data-ttu-id="3711c-105">Åbn programmet Konfigurationsstyring til Reporting Services.</span><span class="sxs-lookup"><span data-stu-id="3711c-105">Open the Reporting Services Configuration Manager application.</span></span>
+2. <span data-ttu-id="3711c-106">Lad standard **Servernavn** stå, som bør være navnet på den aktuelle computer, og **Rapportserverforekomst**, **MSSQLSERVER**.</span><span class="sxs-lookup"><span data-stu-id="3711c-106">Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.</span></span>
+3. <span data-ttu-id="3711c-107">Klik på **Tilknyt**.</span><span class="sxs-lookup"><span data-stu-id="3711c-107">Click **Connect**.</span></span>
 
-    <span data-ttu-id="6703e-108">[![Reporting Services-konfigurationsforbindelse](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-108">[![Reporting services configuration connection](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span></span>
+    <span data-ttu-id="3711c-108">[![Reporting Services-konfigurationsforbindelse](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-108">[![Reporting services configuration connection](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span></span>
 
-4. <span data-ttu-id="6703e-109">Klik på fanen **Tjenestekonto**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="6703e-109">Click the **Service Account** tab and verify that the settings match the following graphic.</span></span>
+4. <span data-ttu-id="3711c-109">Klik på fanen **Tjenestekonto**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="3711c-109">Click the **Service Account** tab and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="6703e-110">[![Fanen Tjenestekonto](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-110">[![Service account tab](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span></span>
+    <span data-ttu-id="3711c-110">[![Fanen Tjenestekonto](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-110">[![Service account tab](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span></span>
 
-5. <span data-ttu-id="6703e-111">Klik på fanen **URL-adresse til webtjeneste**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="6703e-111">Click the **Web Service URL** tab and verify that the settings match the following graphic.</span></span>
+5. <span data-ttu-id="3711c-111">Klik på fanen **URL-adresse til webtjeneste**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="3711c-111">Click the **Web Service URL** tab and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="6703e-112">[![Fanen URL-nøgle til webtjeneste](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-112">[![Web service URL tab](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span></span>
+    <span data-ttu-id="3711c-112">[![Fanen URL-nøgle til webtjeneste](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-112">[![Web service URL tab](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span></span>
 
-6. <span data-ttu-id="6703e-113">Klik på fanen **Database**, og kontroller, at den **Databasenavn** og **Indstillinger for legitimationsoplysninger** svarer til følgende grafik.</span><span class="sxs-lookup"><span data-stu-id="6703e-113">Click the **Database** tab and verify that the **Database Name** and **Credential settings** match the following graphic.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="6703e-114">Du skal oprette en ny database.</span><span class="sxs-lookup"><span data-stu-id="6703e-114">You will need to create a new database.</span></span> <span data-ttu-id="6703e-115">Det gør du ved at klikke på **Skift database** og derefter kontrollere, at det nye databasenavn er: **DynamicsAxReportServer**.</span><span class="sxs-lookup"><span data-stu-id="6703e-115">To do this, click **Change Database**, and then verify that the new database name is: **DynamicsAxReportServer**.</span></span>
-
-    <span data-ttu-id="6703e-116">[![fanen database](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-116">[![database tab](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span></span>
-
-7. <span data-ttu-id="6703e-117">Klik på fanen **URL-adresse til webportal**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="6703e-117">Click the **Web Portal URL** tab and verify that the settings match the following graphic.</span></span>
+6. <span data-ttu-id="3711c-113">Klik på fanen **Database**, og kontroller, at den **Databasenavn** og **Indstillinger for legitimationsoplysninger** svarer til følgende grafik.</span><span class="sxs-lookup"><span data-stu-id="3711c-113">Click the **Database** tab and verify that the **Database Name** and **Credential settings** match the following graphic.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="6703e-118">Du skal klikke på **Anvend** for at oprette og konfigurere portalen korrekt.</span><span class="sxs-lookup"><span data-stu-id="6703e-118">You must click **Apply** to create and properly configure the Portal.</span></span>
+    > <span data-ttu-id="3711c-114">Du skal oprette en ny database.</span><span class="sxs-lookup"><span data-stu-id="3711c-114">You will need to create a new database.</span></span> <span data-ttu-id="3711c-115">Det gør du ved at klikke på **Skift database** og derefter kontrollere, at det nye databasenavn er: **DynamicsAxReportServer**.</span><span class="sxs-lookup"><span data-stu-id="3711c-115">To do this, click **Change Database**, and then verify that the new database name is: **DynamicsAxReportServer**.</span></span>
 
-    <span data-ttu-id="6703e-119">[![fanen URL-adresse til webportal](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-119">[![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span></span>
+    <span data-ttu-id="3711c-116">[![fanen database](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-116">[![database tab](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span></span>
 
-    <span data-ttu-id="6703e-120">Når portalen er konfigureret, svarer fanen **Webportal** til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="6703e-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
+7. <span data-ttu-id="3711c-117">Klik på fanen **URL-adresse til webportal**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="3711c-117">Click the **Web Portal URL** tab and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="6703e-121">[![fanen webportal](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-121">[![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="3711c-118">Du skal klikke på **Anvend** for at oprette og konfigurere portalen korrekt.</span><span class="sxs-lookup"><span data-stu-id="3711c-118">You must click **Apply** to create and properly configure the Portal.</span></span>
 
-8. <span data-ttu-id="6703e-122">Klik på URL-adressen til rapporter for at se SQL Server Reporting Services-webportalen.</span><span class="sxs-lookup"><span data-stu-id="6703e-122">Click the reports URL to view the SQL Server Reporting Services web portal.</span></span>
-9. <span data-ttu-id="6703e-123">Når du er på portalen, kan du oprette en ny mappe med navnet **Dynamics**.</span><span class="sxs-lookup"><span data-stu-id="6703e-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
+    <span data-ttu-id="3711c-119">[![fanen URL-adresse til webportal](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-119">[![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span></span>
 
-    <span data-ttu-id="6703e-124">[![dynamics-mappe](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
+    <span data-ttu-id="3711c-120">Når portalen er konfigureret, svarer fanen **Webportal** til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="3711c-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
 
-10. <span data-ttu-id="6703e-125">I **Konfigurationsstyring til Reporting Services** skal du klikke på fanen **Mailindstillinger** og kontrollere, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="6703e-125">In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.</span></span>
+    <span data-ttu-id="3711c-121">[![fanen webportal](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-121">[![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span></span>
 
-    <span data-ttu-id="6703e-126">[![fanen mailindstillinger](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-126">[![email settings tab](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span></span>
+8. <span data-ttu-id="3711c-122">Klik på URL-adressen til rapporter for at se SQL Server Reporting Services-webportalen.</span><span class="sxs-lookup"><span data-stu-id="3711c-122">Click the reports URL to view the SQL Server Reporting Services web portal.</span></span>
+9. <span data-ttu-id="3711c-123">Når du er på portalen, kan du oprette en ny mappe med navnet **Dynamics**.</span><span class="sxs-lookup"><span data-stu-id="3711c-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
 
-11. <span data-ttu-id="6703e-127">Klik på fanen **Udførelseskonto**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="6703e-127">Click the **Execution Account** tab and verify that the settings match the following graphic.</span></span>
+    <span data-ttu-id="3711c-124">[![dynamics-mappe](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
 
-    <span data-ttu-id="6703e-128">[![fanen udførelseskonto](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-128">[![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span></span>
+10. <span data-ttu-id="3711c-125">I **Konfigurationsstyring til Reporting Services** skal du klikke på fanen **Mailindstillinger** og kontrollere, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="3711c-125">In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="6703e-129">Du skal ikke ændre standardindstillingerne under fanen **Krypteringsnøgler**.</span><span class="sxs-lookup"><span data-stu-id="6703e-129">Don't change the default settings on the **Encryption Keys** tab.</span></span>
+    <span data-ttu-id="3711c-126">[![fanen mailindstillinger](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-126">[![email settings tab](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span></span>
 
-    <span data-ttu-id="6703e-130">[![fanen krypteringsnøgler](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-130">[![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
+11. <span data-ttu-id="3711c-127">Klik på fanen **Udførelseskonto**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="3711c-127">Click the **Execution Account** tab and verify that the settings match the following graphic.</span></span>
 
-12. <span data-ttu-id="6703e-131">Klik på fanen **Abonnementsindstillinger**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="6703e-131">Click the **Subscription Settings** tab, and verify that the settings match the following graphic.</span></span>
+    <span data-ttu-id="3711c-128">[![fanen udførelseskonto](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-128">[![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span></span>
 
-    <span data-ttu-id="6703e-132">[![fanen abonnementsindstillinger](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-132">[![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span></span>
+    <span data-ttu-id="3711c-129">Du skal ikke ændre standardindstillingerne under fanen **Krypteringsnøgler**.</span><span class="sxs-lookup"><span data-stu-id="3711c-129">Don't change the default settings on the **Encryption Keys** tab.</span></span>
 
-    <span data-ttu-id="6703e-133">Du skal ikke ændre standardindstillingerne under fanen **Udvidet installation**.</span><span class="sxs-lookup"><span data-stu-id="6703e-133">Don't change the default settings on the **Scale-out Deployment** tab.</span></span>
+    <span data-ttu-id="3711c-130">[![fanen krypteringsnøgler](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-130">[![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
 
-    <span data-ttu-id="6703e-134">[![fanen udvidet installation](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-134">[![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
+12. <span data-ttu-id="3711c-131">Klik på fanen **Abonnementsindstillinger**, og kontroller, at indstillingerne svarer til følgende illustration.</span><span class="sxs-lookup"><span data-stu-id="3711c-131">Click the **Subscription Settings** tab, and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="6703e-135">Du skal ikke ændre standardindstillingerne under fanen **Power BI-integration**.</span><span class="sxs-lookup"><span data-stu-id="6703e-135">Don't change the default settings on the **Power BI Integration** tab.</span></span>
+    <span data-ttu-id="3711c-132">[![fanen abonnementsindstillinger](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-132">[![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span></span>
 
-    <span data-ttu-id="6703e-136">[![fanen power bi-integration](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-136">[![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span>
+    <span data-ttu-id="3711c-133">Du skal ikke ændre standardindstillingerne under fanen **Udvidet installation**.</span><span class="sxs-lookup"><span data-stu-id="3711c-133">Don't change the default settings on the **Scale-out Deployment** tab.</span></span>
 
-13. <span data-ttu-id="6703e-137">Klik på **Afslut** for at lukke **Konfigurationsstyring til Reporting Services**.</span><span class="sxs-lookup"><span data-stu-id="6703e-137">Click **Exit** to close the **Reporting Services Configuration Manager**.</span></span>
+    <span data-ttu-id="3711c-134">[![fanen udvidet installation](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-134">[![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
 
-    <span data-ttu-id="6703e-138">[![konfigurationsstyring til reporting services](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span><span class="sxs-lookup"><span data-stu-id="6703e-138">[![close reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span></span>
+    <span data-ttu-id="3711c-135">Du skal ikke ændre standardindstillingerne under fanen **Power BI-integration**.</span><span class="sxs-lookup"><span data-stu-id="3711c-135">Don't change the default settings on the **Power BI Integration** tab.</span></span>
+
+    <span data-ttu-id="3711c-136">[![fanen power bi-integration](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-136">[![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span>
+
+13. <span data-ttu-id="3711c-137">Klik på **Afslut** for at lukke **Konfigurationsstyring til Reporting Services**.</span><span class="sxs-lookup"><span data-stu-id="3711c-137">Click **Exit** to close the **Reporting Services Configuration Manager**.</span></span>
+
+    <span data-ttu-id="3711c-138">[![konfigurationsstyring til reporting services](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span><span class="sxs-lookup"><span data-stu-id="3711c-138">[![close reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span></span>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,47 +18,52 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1bbd662d5d1044e77514318eda00b3dd29dd63b6
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 031dcfe6f2f88f65c9eeefe2b81171a8dfcb85d5
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115216"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466394"
 ---
-# <a name="request-time-off"></a><span data-ttu-id="06e43-103">Anmode om fridag</span><span class="sxs-lookup"><span data-stu-id="06e43-103">Request time off</span></span>
+# <a name="request-time-off"></a><span data-ttu-id="76465-103">Anmode om fridag</span><span class="sxs-lookup"><span data-stu-id="76465-103">Request time off</span></span>
 
-<span data-ttu-id="06e43-104">Du kan sende anmodninger om fridage, få vist din ferie- og orlovssaldi og få vist status for orlovsanmodningerne i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="06e43-104">You can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests in Dynamics 365 Human Resources.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="request-time-off"></a><span data-ttu-id="06e43-105">Anmode om fridag</span><span class="sxs-lookup"><span data-stu-id="06e43-105">Request time off</span></span>
+<span data-ttu-id="76465-104">Du kan sende anmodninger om fridage, få vist din ferie- og orlovssaldi og få vist status for orlovsanmodningerne i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="76465-104">You can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests in Dynamics 365 Human Resources.</span></span>
 
-1. <span data-ttu-id="06e43-106">I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Anmod om fridag** i feltet **Fritidssaldi**.</span><span class="sxs-lookup"><span data-stu-id="06e43-106">In the **Employee self service** workspace, select **Request time off** in the **Time Off Balances** tile.</span></span>
+## <a name="request-time-off"></a><span data-ttu-id="76465-105">Anmode om fridag</span><span class="sxs-lookup"><span data-stu-id="76465-105">Request time off</span></span>
 
-2. <span data-ttu-id="06e43-107">Angiv oplysninger for **Orlovstype**, **Årsagskode**, **Startdato** og **Slutdato**.</span><span class="sxs-lookup"><span data-stu-id="06e43-107">Enter information for **Leave type**, **Reason code**, **Start date**, and **End date**.</span></span>
+1. <span data-ttu-id="76465-106">I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Anmod om fridag** i feltet **Fritidssaldi**.</span><span class="sxs-lookup"><span data-stu-id="76465-106">In the **Employee self service** workspace, select **Request time off** in the **Time Off Balances** tile.</span></span>
 
-3. <span data-ttu-id="06e43-108">Under **Datoer** skal du vælge datoerne for anmodningen om orlov.</span><span class="sxs-lookup"><span data-stu-id="06e43-108">Under **Dates**, select the dates for your leave request.</span></span>
+2. <span data-ttu-id="76465-107">Angiv oplysninger for **Orlovstype**, **Årsagskode**, **Startdato** og **Slutdato**.</span><span class="sxs-lookup"><span data-stu-id="76465-107">Enter information for **Leave type**, **Reason code**, **Start date**, and **End date**.</span></span>
 
-4. <span data-ttu-id="06e43-109">Hvis du skal sende understøttende dokumentation, skal du vælge **Overfør** under **Vedhæftede filer**.</span><span class="sxs-lookup"><span data-stu-id="06e43-109">If you need to submit any supporting documentation, select **Upload** under **Attachments**.</span></span>
+3. <span data-ttu-id="76465-108">Under **Datoer** skal du vælge datoerne for anmodningen om orlov.</span><span class="sxs-lookup"><span data-stu-id="76465-108">Under **Dates**, select the dates for your leave request.</span></span>
 
-5. <span data-ttu-id="06e43-110">Angiv eventuelle oplysninger i **Kommentar**.</span><span class="sxs-lookup"><span data-stu-id="06e43-110">Enter information in **Comment**, if needed.</span></span>
+4. <span data-ttu-id="76465-109">Hvis du skal sende understøttende dokumentation, skal du vælge **Overfør** under **Vedhæftede filer**.</span><span class="sxs-lookup"><span data-stu-id="76465-109">If you need to submit any supporting documentation, select **Upload** under **Attachments**.</span></span>
 
-6. <span data-ttu-id="06e43-111">Vælg **Send**, når du er klar til at sende din anmodning.</span><span class="sxs-lookup"><span data-stu-id="06e43-111">Select **Submit** when you're ready to submit your request.</span></span> <span data-ttu-id="06e43-112">Ellers skal du vælge **Gem kladde**.</span><span class="sxs-lookup"><span data-stu-id="06e43-112">Otherwise, select **Save draft**.</span></span>
+5. <span data-ttu-id="76465-110">Angiv eventuelle oplysninger i **Kommentar**.</span><span class="sxs-lookup"><span data-stu-id="76465-110">Enter information in **Comment**, if needed.</span></span>
 
-## <a name="add-an-attachment-to-an-existing-request"></a><span data-ttu-id="06e43-113">Føje en vedhæftet fil til en eksisterende anmodning</span><span class="sxs-lookup"><span data-stu-id="06e43-113">Add an attachment to an existing request</span></span>
+6. <span data-ttu-id="76465-111">Vælg **Send**, når du er klar til at sende din anmodning.</span><span class="sxs-lookup"><span data-stu-id="76465-111">Select **Submit** when you're ready to submit your request.</span></span> <span data-ttu-id="76465-112">Ellers skal du vælge **Gem kladde**.</span><span class="sxs-lookup"><span data-stu-id="76465-112">Otherwise, select **Save draft**.</span></span>
 
-<span data-ttu-id="06e43-114">Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæftet fil.</span><span class="sxs-lookup"><span data-stu-id="06e43-114">When updating an existing time off request, you can add an attachment.</span></span> <span data-ttu-id="06e43-115">Du kan også se alle relaterede anmodninger for en bestemt dato.</span><span class="sxs-lookup"><span data-stu-id="06e43-115">You can also see all of the related requests for a specific date.</span></span> 
+## <a name="add-an-attachment-to-an-existing-request"></a><span data-ttu-id="76465-113">Føje en vedhæftet fil til en eksisterende anmodning</span><span class="sxs-lookup"><span data-stu-id="76465-113">Add an attachment to an existing request</span></span>
 
-## <a name="view-leave-balances"></a><span data-ttu-id="06e43-116">Få vist orlovssaldi</span><span class="sxs-lookup"><span data-stu-id="06e43-116">View leave balances</span></span>
+<span data-ttu-id="76465-114">Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæftet fil.</span><span class="sxs-lookup"><span data-stu-id="76465-114">When updating an existing time off request, you can add an attachment.</span></span> <span data-ttu-id="76465-115">Du kan også se alle relaterede anmodninger for en bestemt dato.</span><span class="sxs-lookup"><span data-stu-id="76465-115">You can also see all of the related requests for a specific date.</span></span> 
 
-1. <span data-ttu-id="06e43-117">I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere** (...) i feltet **Fritidssaldi**.</span><span class="sxs-lookup"><span data-stu-id="06e43-117">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
+## <a name="view-leave-balances"></a><span data-ttu-id="76465-116">Få vist orlovssaldi</span><span class="sxs-lookup"><span data-stu-id="76465-116">View leave balances</span></span>
 
-2. <span data-ttu-id="06e43-118">Vælg **Saldi**.</span><span class="sxs-lookup"><span data-stu-id="06e43-118">Select **Balances**.</span></span>
+1. <span data-ttu-id="76465-117">I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere** (...) i feltet **Fritidssaldi**.</span><span class="sxs-lookup"><span data-stu-id="76465-117">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
 
-## <a name="view-leave-request-status"></a><span data-ttu-id="06e43-119">Få vist status for orlovsanmodning</span><span class="sxs-lookup"><span data-stu-id="06e43-119">View leave request status</span></span>
+2. <span data-ttu-id="76465-118">Vælg **Saldi**.</span><span class="sxs-lookup"><span data-stu-id="76465-118">Select **Balances**.</span></span>
 
-1. <span data-ttu-id="06e43-120">I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere** (...) i feltet **Fritidssaldi**.</span><span class="sxs-lookup"><span data-stu-id="06e43-120">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
+## <a name="view-leave-request-status"></a><span data-ttu-id="76465-119">Få vist status for orlovsanmodning</span><span class="sxs-lookup"><span data-stu-id="76465-119">View leave request status</span></span>
 
-2. <span data-ttu-id="06e43-121">Hvis du vil have vist dine godkendte anmodninger om fridage, skal du vælge **Godkendt fritid**.</span><span class="sxs-lookup"><span data-stu-id="06e43-121">To view your approved time-off requests, select **Approved time off**.</span></span> <span data-ttu-id="06e43-122">Hvis du vil have vist dine ventende anmodninger om fridage, skal du vælge **Anmodninger om fridage**.</span><span class="sxs-lookup"><span data-stu-id="06e43-122">To view your pending time-off requests, select **Time off requests**.</span></span>
+1. <span data-ttu-id="76465-120">I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere** (...) i feltet **Fritidssaldi**.</span><span class="sxs-lookup"><span data-stu-id="76465-120">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="06e43-123">Se også</span><span class="sxs-lookup"><span data-stu-id="06e43-123">See also</span></span>
+2. <span data-ttu-id="76465-121">Hvis du vil have vist dine godkendte anmodninger om fridage, skal du vælge **Godkendt fritid**.</span><span class="sxs-lookup"><span data-stu-id="76465-121">To view your approved time-off requests, select **Approved time off**.</span></span> <span data-ttu-id="76465-122">Hvis du vil have vist dine ventende anmodninger om fridage, skal du vælge **Anmodninger om fridage**.</span><span class="sxs-lookup"><span data-stu-id="76465-122">To view your pending time-off requests, select **Time off requests**.</span></span>
 
-- [<span data-ttu-id="06e43-124">Oversigt over orlov og fravær</span><span class="sxs-lookup"><span data-stu-id="06e43-124">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+## <a name="see-also"></a><span data-ttu-id="76465-123">Se også</span><span class="sxs-lookup"><span data-stu-id="76465-123">See also</span></span>
+
+- [<span data-ttu-id="76465-124">Oversigt over orlov og fravær</span><span class="sxs-lookup"><span data-stu-id="76465-124">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
