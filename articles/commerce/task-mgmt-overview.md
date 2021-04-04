@@ -16,39 +16,40 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 6fbd0ead6d73f4b032bdc3805fce87ec9c802535
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b7756aebac2b8f0881c95b27e5a7c845557be4c
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006154"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477554"
 ---
-# <a name="task-management-overview"></a><span data-ttu-id="1573b-103">Oversigt over opgavestyring</span><span class="sxs-lookup"><span data-stu-id="1573b-103">Task management overview</span></span>
+# <a name="task-management-overview"></a><span data-ttu-id="a8e28-103">Oversigt over opgavestyring</span><span class="sxs-lookup"><span data-stu-id="a8e28-103">Task management overview</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="1573b-104">Dette emne indeholder en oversigt over opgavestyringen for ledere og arbejdere i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="1573b-104">This topic provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="a8e28-104">Dette emne indeholder en oversigt over opgavestyringen for ledere og arbejdere i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="a8e28-104">This topic provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="1573b-105">Oversigt</span><span class="sxs-lookup"><span data-stu-id="1573b-105">Overview</span></span>
+<span data-ttu-id="a8e28-105">I et detailmiljø er det altid vanskeligt at sikre, at opgaver udføres den rigtige person på det rigtige tidspunkt.</span><span class="sxs-lookup"><span data-stu-id="a8e28-105">In a retail environment, it's always difficult to make sure that tasks are performed by the right person at the right time.</span></span> <span data-ttu-id="a8e28-106">Detailhandlere skal kunne give arbejdere besked om kommende opgaver og oprette relaterede forretningskontekster, så opgaverne kan udføres korrekt og til tiden.</span><span class="sxs-lookup"><span data-stu-id="a8e28-106">Retailers must be able to notify workers about upcoming tasks and provide related business context, so that the tasks can be completed correctly and on time.</span></span>
 
-<span data-ttu-id="1573b-106">I et detailmiljø er det altid vanskeligt at sikre, at opgaver udføres den rigtige person på det rigtige tidspunkt.</span><span class="sxs-lookup"><span data-stu-id="1573b-106">In a retail environment, it's always difficult to make sure that tasks are performed by the right person at the right time.</span></span> <span data-ttu-id="1573b-107">Detailhandlere skal kunne give arbejdere besked om kommende opgaver og oprette relaterede forretningskontekster, så opgaverne kan udføres korrekt og til tiden.</span><span class="sxs-lookup"><span data-stu-id="1573b-107">Retailers must be able to notify workers about upcoming tasks and provide related business context, so that the tasks can be completed correctly and on time.</span></span>
+<span data-ttu-id="a8e28-107">Opgavestyring er en produktivitetsfunktion i Dynamics 365 Commerce, der gør det muligt for ledere og medarbejdere at oprette opgavelister, administrere tildelingskriterier, registrere opgavens status og integrere disse handlinger mellem Commerce-bagkontoret og POS-programmer.</span><span class="sxs-lookup"><span data-stu-id="a8e28-107">Task management is a productivity feature in Dynamics 365 Commerce that lets managers and workers create task lists, manage assignment criteria, track task status, and integrate these operations between Commerce back office and point of sale (POS) applications.</span></span>
 
-<span data-ttu-id="1573b-108">Opgavestyring er en produktivitetsfunktion i Dynamics 365 Commerce, der gør det muligt for ledere og medarbejdere at oprette opgavelister, administrere tildelingskriterier, registrere opgavens status og integrere disse handlinger mellem Commerce-bagkontoret og POS-programmer.</span><span class="sxs-lookup"><span data-stu-id="1573b-108">Task management is a productivity feature in Dynamics 365 Commerce that lets managers and workers create task lists, manage assignment criteria, track task status, and integrate these operations between Commerce back office and point of sale (POS) applications.</span></span>
+<span data-ttu-id="a8e28-108">Headquarters-personer kan bruge opgavestyring til at oprette opgavelister til detailbutikker og til at spore status pr. butik eller arbejder.</span><span class="sxs-lookup"><span data-stu-id="a8e28-108">Headquarters personas can use task management to create task lists for retail stores, and to track status by store or worker.</span></span> <span data-ttu-id="a8e28-109">De kan også oprette tilbagevendende opgaver (f.eks. "Tjekliste til lukning torsdag aften").</span><span class="sxs-lookup"><span data-stu-id="a8e28-109">They can also create recurrent tasks (for example, "Thursday night closing checklist").</span></span>
 
-<span data-ttu-id="1573b-109">Headquarters-personer kan bruge opgavestyring til at oprette opgavelister til detailbutikker og til at spore status pr. butik eller arbejder.</span><span class="sxs-lookup"><span data-stu-id="1573b-109">Headquarters personas can use task management to create task lists for retail stores, and to track status by store or worker.</span></span> <span data-ttu-id="1573b-110">De kan også oprette tilbagevendende opgaver (f.eks. "Tjekliste til lukning torsdag aften").</span><span class="sxs-lookup"><span data-stu-id="1573b-110">They can also create recurrent tasks (for example, "Thursday night closing checklist").</span></span>
+<span data-ttu-id="a8e28-110">Butikschefer kan bruge opgavestyring til at tildele opgaver til individuelle arbejdere, sende beskeder om kommende opgaver eller opgaver, der er forfaldne, opdatere opgavestatus og oprette opgaver med et enkelt formål i POS-programmet.</span><span class="sxs-lookup"><span data-stu-id="a8e28-110">Store managers can use task management to assign tasks to individual workers, send notifications about upcoming tasks or tasks that are past due, update task status, and create single-purpose tasks in the POS application.</span></span> <span data-ttu-id="a8e28-111">Arbejderne kan derefter se beskeder, få vist opgavedetaljer og opdatere opgavestatus på kasseapparatet.</span><span class="sxs-lookup"><span data-stu-id="a8e28-111">Workers can then see notifications, view task details, and update task status at the POS.</span></span>
 
-<span data-ttu-id="1573b-111">Butikschefer kan bruge opgavestyring til at tildele opgaver til individuelle arbejdere, sende beskeder om kommende opgaver eller opgaver, der er forfaldne, opdatere opgavestatus og oprette opgaver med et enkelt formål i POS-programmet.</span><span class="sxs-lookup"><span data-stu-id="1573b-111">Store managers can use task management to assign tasks to individual workers, send notifications about upcoming tasks or tasks that are past due, update task status, and create single-purpose tasks in the POS application.</span></span> <span data-ttu-id="1573b-112">Arbejderne kan derefter se beskeder, få vist opgavedetaljer og opdatere opgavestatus på kasseapparatet.</span><span class="sxs-lookup"><span data-stu-id="1573b-112">Workers can then see notifications, view task details, and update task status at the POS.</span></span>
-
-<span data-ttu-id="1573b-113">I følgende illustration vises den grundlæggende arkitektur af opgavestyring i Commerce.</span><span class="sxs-lookup"><span data-stu-id="1573b-113">The following illustration shows the conceptual architecture of task management in Commerce.</span></span>
+<span data-ttu-id="a8e28-112">I følgende illustration vises den grundlæggende arkitektur af opgavestyring i Commerce.</span><span class="sxs-lookup"><span data-stu-id="a8e28-112">The following illustration shows the conceptual architecture of task management in Commerce.</span></span>
 
 ![Grundlæggende arkitektur for opgavestyring](media/Tasks-management-conceptual-architecture.png)
 
-## <a name="additional-resources"></a><span data-ttu-id="1573b-115">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="1573b-115">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="a8e28-114">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="a8e28-114">Additional resources</span></span>
 
-[<span data-ttu-id="1573b-116">Konfigurer opgavestyring</span><span class="sxs-lookup"><span data-stu-id="1573b-116">Configure task management</span></span>](task-mgmt-configure.md)
+[<span data-ttu-id="a8e28-115">Konfigurer opgavestyring</span><span class="sxs-lookup"><span data-stu-id="a8e28-115">Configure task management</span></span>](task-mgmt-configure.md)
 
-[<span data-ttu-id="1573b-117">Oprette opgavelister og tilføje opgaver</span><span class="sxs-lookup"><span data-stu-id="1573b-117">Create task lists and add tasks</span></span>](task-mgmt-create-lists.md)
+[<span data-ttu-id="a8e28-116">Oprette opgavelister og tilføje opgaver</span><span class="sxs-lookup"><span data-stu-id="a8e28-116">Create task lists and add tasks</span></span>](task-mgmt-create-lists.md)
 
-[<span data-ttu-id="1573b-118">Tildele opgavelister til butikker eller medarbejdere</span><span class="sxs-lookup"><span data-stu-id="1573b-118">Assign task lists to stores or employees</span></span>](task-mgmt-assign-lists.md)
+[<span data-ttu-id="a8e28-117">Tildele opgavelister til butikker eller medarbejdere</span><span class="sxs-lookup"><span data-stu-id="a8e28-117">Assign task lists to stores or employees</span></span>](task-mgmt-assign-lists.md)
 
-[<span data-ttu-id="1573b-119">Opgavestyring i POS</span><span class="sxs-lookup"><span data-stu-id="1573b-119">Task management in POS</span></span>](task-mgmt-POS.md)
+[<span data-ttu-id="a8e28-118">Opgavestyring i POS</span><span class="sxs-lookup"><span data-stu-id="a8e28-118">Task management in POS</span></span>](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
