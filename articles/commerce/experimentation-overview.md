@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c1bb03fb82123e78ba21a9af2b948a386b6b4338
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d836f0e431c444c07186da123579f5cce9895be5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009968"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238600"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimenteren i Dynamics 365 Commerce
 Brug eksperimenteren i Dynamics 365 Commerce til at validere hypoteser om effektiviteten af dine e-handelssider, og tag beslutninger med databaseret sikkerhed. Commerce understøtter A/B-test på sider, moduler og fragmenter og giver dig mulighed for at måle virkningen af foreslåede ændringer på dit websted.
@@ -47,7 +47,7 @@ Du kan finde flere oplysninger om hvert trin i eksperimenteren-processen under f
 - [Identificere en hypotese og fastslå målepunkter for et eksperiment](experimentation-identify.md)
 - [Opsætning af et eksperiment](experimentation-setup.md)
 - [Oprette forbindelse til og redigere et eksperiment](experimentation-connect-edit.md)
-- [Gennemse og publicere et eksperiment](experimentation-preview-publish.md)
+- [Se prøveversion og publicere et eksperiment](experimentation-preview-publish.md)
 - [Køre og overvåge et eksperiment](experimentation-run-monitor.md)
 - [Hæv en variation og fuldfører et eksperiment](experimentation-review-complete.md)
 

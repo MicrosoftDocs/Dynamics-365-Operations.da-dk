@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b34cc2e9921df6e3ef619e2b2adaf8d2069fbac
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5afcb8171b674281faf8100d5c01fdff8d6ff764
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974554"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470756"
 ---
 # <a name="create-a-template-bom"></a>Oprette en styklisteskabelon   
 
@@ -33,9 +33,9 @@ Du kan oprette en skabelonstykliste ved hjælp af følgende fremgangsmåder. Uan
 
 ## <a name="create-a-template-bom-manually"></a>Oprette en styklisteskabelon manuelt
 
-1.  Klik på **Servicestyring** \> **Opsætning** \> **Serviceobjekter** \> **Styklisteskabeloner**.
+1.  Gå til **Servicestyring** \> **Opsætning** \> **Serviceobjekter** \> **Styklisteskabeloner**.
 
-2.  Tryk på CTRL+N for at åbne formularen **Opret styklisteskabelon**.
+2.  Vælg **Ny** for at åbne formularen **Opret styklisteskabelon**.
 
 3.  Under **Kopier styklistelinjer fra reference** skal du vælge indstillingen **Manuel**.
 
@@ -45,15 +45,15 @@ Du kan oprette en skabelonstykliste ved hjælp af følgende fremgangsmåder. Uan
 
 6.  Angiv det datointerval, hvor styklisteskabelonen skal gælde, i felterne **Fra dato** og **Til dato**.
 
-7.  Klik på **OK**.
+7.  Vælg **OK**.
 
 Der oprettes en ny tom styklisteskabelon.
 
 ## <a name="create-a-template-bom-based-on-another-template-bom"></a>Oprette en styklisteskabelon ud fra en anden styklisteskabelon
 
-1.  Klik på **Servicestyring** \> **Opsætning** \> **Serviceobjekter** \> **Styklisteskabeloner**.
+1.  Vælg **Servicestyring** \> **Opsætning** \> **Serviceobjekter** \> **Styklisteskabeloner**.
 
-2.  Tryk på CTRL+N for at åbne formularen **Opret styklisteskabelon**.
+2.  Vælg **Ny** for at åbne formularen **Opret styklisteskabelon**.
 
 3.  Under **Kopier styklistelinjer fra reference** skal du vælge indstillingen **Styklisteskabelon**.
 
@@ -63,15 +63,15 @@ Der oprettes en ny tom styklisteskabelon.
 
 6.  Angiv det datointerval, hvor styklisteskabelonen skal gælde, i felterne **Fra dato** og **Til dato**.
 
-7.  Klik på **OK**.
+7.  Vælg **OK**.
 
 Der oprettes en ny styklisteskabelon med linjer, der svarer til linjerne i den oprindelige styklisteskabelon.
 
 ## <a name="create-a-template-bom-based-on-an-item-bom"></a>Oprette en styklisteskabelon ud fra en varestykliste
 
-1.  Klik på **Servicestyring** \> **Opsætning** \> **Serviceobjekter** \> **Styklisteskabeloner**.
+1.  Vælg **Servicestyring** \> **Opsætning** \> **Serviceobjekter** \> **Styklisteskabeloner**.
 
-2.  Tryk på CTRL+N for at åbne formularen **Opret styklisteskabelon**.
+2.  Vælg **Ny** for at åbne formularen **Opret styklisteskabelon**.
 
 3.  Under **Kopier styklistelinjer fra reference** skal du vælge **Stykliste**.
 
@@ -81,15 +81,15 @@ Der oprettes en ny styklisteskabelon med linjer, der svarer til linjerne i den o
 
 6.  Angiv det datointerval, hvor styklisteskabelonen skal gælde, i felterne **Fra dato** og **Til dato**.
 
-7.  Klik på **OK**.
+7.  Vælg **OK**.
 
 Der oprettes en ny styklisteskabelon vha. de linjer, der svarer til linjerne i den stykliste, der er vist i **Styklister**.
 
 ## <a name="create-a-template-bom-based-on-a-production-bom"></a>Oprette en styklisteskabelon ud fra en produktionsstykliste
 
-1.  Klik på **Servicestyring** \> **Opsætning** \> **Serviceobjekter** \> **Styklisteskabeloner**.
+1.  Vælg **Servicestyring** \> **Opsætning** \> **Serviceobjekter** \> **Styklisteskabeloner**.
 
-2.  Tryk på CTRL+N for at åbne formularen **Opret styklisteskabelon**.
+2.  Vælg **Ny** for at åbne formularen **Opret styklisteskabelon**.
 
 3.  Under **Kopier styklistelinjer fra reference** skal du vælge **Produktion**.
 
@@ -99,7 +99,7 @@ Der oprettes en ny styklisteskabelon vha. de linjer, der svarer til linjerne i d
 
 6.  Angiv det datointerval, hvor styklisteskabelonen skal gælde, i felterne **Fra dato** og **Til dato**.
 
-7.  Klik på **OK**.
+7.  Vælg **OK**.
 
 Der oprettes en ny styklisteskabelon vha. de linjer, der svarer til linjerne i den stykliste, der er vist i **Stykliste**.
 

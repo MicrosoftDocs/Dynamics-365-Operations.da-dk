@@ -2,11 +2,10 @@
 title: Destinationer for elektronisk rapportering (ER)
 description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering, de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 0fe0992412edf6f78be4ed293052e3501a7224ad
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097275"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569713"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -166,12 +165,14 @@ Hvis du vil stille PDF-konverteringsindstillingen til rådighed i den aktuelle F
 
 ### <a name="applicability"></a>Anvendelighed
 
-PDF-konverteringsindstillingen kan kun aktiveres for de filkomponenter, der bruges til at oprette output i Office-format (Excel eller Word) (**Excel-fil**). Når denne indstilling er slået til, konverteres output, der genereres i Office-format, automatisk til PDF-format.
-
-### <a name="limitations"></a>Begrænsninger
+PDF-konverteringsindstillingen kan kun aktiveres for de filkomponenter, der bruges til at oprette output i Office-format (Excel eller Word) (**Excel-fil**). Når denne indstilling er slået til, konverteres output, der genereres i Office-format, automatisk til PDF-format. I versioner af Finance **før version 10.0.18** kan du kun aktivere denne indstilling for komponenter af den **Excel\\Filtype**, der bruges til at generere output i eller [Excel](er-fillable-excel.md)- eller [Word](er-design-configuration-word.md)-format. Men i **version 10.0.18 og senere** kan du også aktivere denne indstilling for komponenter af typen **Common\\File**-type.
 
 > [!NOTE]
-> Denne funktion er en prøveversionsfunktion og er underlagt de vilkår for anvendelse, der er beskrevet i [Supplerende vilkår for anvendelse for Microsoft Dynamics 365-prøveversioner](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Vær opmærksom på den advarsel, du modtager, når du aktiverer PDF-konverteringsindstillingen for en ER-komponent af typen **Fælles\\Fil**. Denne meddelelse fortæller dig, at der på designtidspunktet ikke kan garanteres, at den valgte filkomponent viser indholdet i PDF-format eller indholdet, der kan konverteres af PDF, under kørslen. Derfor skal du kun aktivere indstillingen, hvis du er sikker på, at den valgte filkomponent er konfigureret til at vise indholdet i PDF-format eller indholdet, der kan konverteres af PDF, under kørslen.
+> 
+> Hvis du aktiverer pdf-konverteringsindstillingen for en komponent af **Excel\\-filtypen**, hvis den komponent viser indhold i et andet format end PDF, og det indhold, der vises, ikke kan konverteres til PDF-format, indtræffer der en undtagelse under kørslen. I den meddelelse, du modtager, får du besked om, at det genererede indhold ikke kan konverteres til PDF-format.
+
+### <a name="limitations"></a>Begrænsninger
 
 PDF-konverteringsindstillingen er kun tilgængelig for skyinstallationer.
 

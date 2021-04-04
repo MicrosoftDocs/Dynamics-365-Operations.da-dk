@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142317"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487019"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Lokationsstyring
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142317"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Dette emne beskriver, hvordan du konfigurerer den nye mobilapp Lokationsstyring, der i øjeblikket findes i offentlig prøveversion. Hvis du søger efter oplysninger om, hvordan du konfigurerer den gamle lagerstedsapp, skal du se [Installere og tilslutte lagerstedsappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Dette emne beskriver, hvordan du konfigurerer den nye mobilapp Lokationsstyring. Hvis du søger efter oplysninger om, hvordan du konfigurerer den gamle lagerstedsapp, skal du se [Installere og tilslutte lagerstedsappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Den offentlige forhåndsvisning af mobilappen Lokationsstyring kan downloades i Microsoft App Center. Den udbydes som en enkeltstående komponent. Derfor skal du overføre den på hver enkelt enhed og derefter konfigurere den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø.
-
-Dette emne forklarer, hvordan du installerer mobilappen Lokationsstyring på dine mobilenheder og konfigurerer den til at oprette forbindelse til dit Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
+Dette emne forklarer, hvordan du downloader og installerer mobilappen Lokationsstyring på dine mobilenheder og konfigurerer den til at oprette forbindelse til dit Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
 
 ## <a name="system-requirements"></a>Systemkrav
 
@@ -53,17 +51,27 @@ Før du kan bruge appen, skal en relateret funktion være slået til i dit syste
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Hent mobilappen Lokationsstyring
 
-Brug et af følgende links til at hente appen:
+Ved mindre udrulninger vil du måske installere appen fra den relevante store på hver enkelt enhed og derefter konfigurere forbindelsen til de miljøer, du bruger, manuelt.
 
-- **Windows (UWP):** [App Center-forhåndsversionsprogram – Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+Til større udrulning kan du automatisere udrulning og/eller konfiguration af appen, hvilket kan være mere praktisk, hvis du administrerer mange enheder. Du kan f.eks. bruge en løsning til administration af mobilenheder og administration af mobilapps som f.eks. [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Du kan få oplysninger om, hvordan du bruger Intune til at tilføje applikationer, i [Tilføj apps til Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    Da denne app er en forhåndsversionsapp, skal du følge nogle få ekstra trin for at installere den. Yderligere oplysninger finder du under [Installere et build fra App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+### <a name="install-the-app-from-an-app-store"></a>Installere appen fra en appbutik
 
-- **Android:** [App Center-forhåndsversionsprogram – Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+Det er lettest at installere appen på en enkelt enhed ved at installere den fra en appbutik, som altid har den nyeste og mest tilgængelige version. Microsoft Intune kan også hente apps fra appbutikkerne. Brug et af følgende links til at installere appen fra en appbutik:
 
-    Da denne app er en forhåndsversionsapp, skal du følge nogle få ekstra trin for at installere den. Yderligere oplysninger finder du i [Teste Android-apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+- **Windows (UWP):** [Lokationsstyring på Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-Ved mindre installationer vil du måske installere appen fra den relevante store på hver enkelt enhed og derefter konfigurere forbindelsen til de miljøer, du bruger, manuelt. Men du kan også automatisere implementeringen og/eller konfigurationen af apps. Det kan være en fordel at bruge denne fremgangsmåde, hvis du administrerer mange enheder, og du bruger en løsning til administration af mobilenheder og løsningen til styring af mobilapplikationer såsom [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Du kan få oplysninger om, hvordan du bruger Intune til at tilføje applikationer, i [Tilføj apps til Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+- **Android:** [Lokationsstyring på Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Downloade appen fra Microsoft App Center
+
+Som et alternativ til at installere fra en appbutik kan du i stedet hente appen fra Microsoft App Center. App Center indeholder installerbare pakker, som du kan indlæse. Ud over den aktuelle version giver App Center dig også mulighed for at hente tidligere versioner og eventuelt forhåndsversioner med kommende funktioner, som du kan prøve af. Hvis du vil hente aktuelle, tidligere eller forhåndsversioner af mobilappen Lokationsstyring fra Microsoft App Center, skal du bruge følgende links:
+
+- **Windows (UWP):** [Lokationsstyring (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    Du kan finde oplysninger om, hvordan du installerer en hentet pakke på en Windows-enhed og derefter konfigurerer de nødvendige certifikater, under [Installere en build fra App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [Lokationsstyring (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    Hvis du henter en forhåndsversion, skal du følge nogle få ekstra trin for at installere den. Yderligere oplysninger finder du i [Teste Android-apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Oprette en webtjenesteapplikation i Azure Active Directory
 

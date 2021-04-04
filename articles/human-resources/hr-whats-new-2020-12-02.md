@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
-ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
+ms.openlocfilehash: 89c5dbab58679dfe36f5eec0d6c5724f81c18523
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "5080032"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463448"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 2. december 2020
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources.
 
@@ -55,7 +57,7 @@ Følgende fejlrettelser er inkluderet i denne version.
 > [!NOTE]
 > Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis dette emne, der omfatter fejlrettelser, som blev udført i buildet, efter at dette emne blev udgivet.
 
-| Fejlnummer | Udsted | Betegnelse |
+| Fejlnummer | Udsted | Beskrivelse |
 | --- | --- | --- |
 | 514087 | BenefitEligibilityProcessResult skal omfatte datetime, der blev brugt til behandlingen. | Resultatet af BenefitEligibity-behandlingen omfatter nu datetimestamp for seneste behandling, som manglede tidligere. |
 | 526903 | Der kan ikke tilmeldes frynsegoder for planer med afhængige, når **Vælg automatisk udpegede modtagere** er aktiveret i **Delte parametre for personale**. | Problemet, når der ikke kunne registreres frynsegoder for de afhængige, når indstillingen **Vælg automatisk udpegede modtagere** var slået til for standard udpegede modtagere, er løst. |

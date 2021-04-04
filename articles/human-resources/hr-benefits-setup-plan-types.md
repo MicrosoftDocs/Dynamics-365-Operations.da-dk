@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e24c11fb6e84a7480a40b706b106cd8465470f5c
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 1d8db6900e6b697e988e2a7e9e31828b70e4ad0d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111923"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463906"
 ---
 # <a name="create-plan-types"></a>Oprette plantyper
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 En plantype i Microsoft Dynamics 365 Human Resources er en overordnet gruppering af bestemte typer frynsegoder. Hver plantype har en plantypekode, der bestemmer reglerne for plantypen. Plantypen Basisliv har f.eks. plantypekoden Liv, fordi den er en slags livsforsikring, og den skal overholde de regler, der er fastsat for plantypekoden Liv. En anden plantype kan være Øvrigt liv, som også har plantypekoden Liv.
 
