@@ -18,33 +18,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8662035235aa9b4788ced83c2c0efc0e4862e2a6
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: ab6b212efca7fa69d74d06ce2dbbab09d50f044c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111986"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467187"
 ---
-# <a name="create-custom-links-in-manager-self-service"></a><span data-ttu-id="3f225-103">Oprette brugerdefinerede links i selvbetjeningstjenesten for ledere</span><span class="sxs-lookup"><span data-stu-id="3f225-103">Create custom links in Manager self-service</span></span>
+# <a name="create-custom-links-in-manager-self-service"></a><span data-ttu-id="b1e25-103">Oprette brugerdefinerede links i selvbetjeningstjenesten for ledere</span><span class="sxs-lookup"><span data-stu-id="b1e25-103">Create custom links in Manager self-service</span></span>
 
-<span data-ttu-id="3f225-104">Du kan tilføje brugerdefinerede links under fanen **Mit team** i selvbetjeningstjenesten.</span><span class="sxs-lookup"><span data-stu-id="3f225-104">You can add custom links on the **My team** tab in Manager self-service.</span></span> <span data-ttu-id="3f225-105">Denne funktion giver dig mulighed for hurtigt at få adgang til vigtige oplysninger.</span><span class="sxs-lookup"><span data-stu-id="3f225-105">This feature lets you provide quick access to important information.</span></span> <span data-ttu-id="3f225-106">Det svarer til at tilføje brugerdefinerede links under fanen **Mine oplysninger** i medarbejderselvbetjening.</span><span class="sxs-lookup"><span data-stu-id="3f225-106">It's similar to adding custom links in the **My information** tab in Employee self service.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="enable-the--feature"></a><span data-ttu-id="3f225-107">Aktivere funktionen</span><span class="sxs-lookup"><span data-stu-id="3f225-107">Enable the  feature</span></span>
+<span data-ttu-id="b1e25-104">Du kan tilføje brugerdefinerede links under fanen **Mit team** i selvbetjeningstjenesten.</span><span class="sxs-lookup"><span data-stu-id="b1e25-104">You can add custom links on the **My team** tab in Manager self-service.</span></span> <span data-ttu-id="b1e25-105">Denne funktion giver dig mulighed for hurtigt at få adgang til vigtige oplysninger.</span><span class="sxs-lookup"><span data-stu-id="b1e25-105">This feature lets you provide quick access to important information.</span></span> <span data-ttu-id="b1e25-106">Det svarer til at tilføje brugerdefinerede links under fanen **Mine oplysninger** i medarbejderselvbetjening.</span><span class="sxs-lookup"><span data-stu-id="b1e25-106">It's similar to adding custom links in the **My information** tab in Employee self service.</span></span>
 
-<span data-ttu-id="3f225-108">Hvis du vil bruge denne funktion, skal du aktivere **Brugerdefinerede links i selvbetjeningstjenesten for ledere** i arbejdsområdet **Funktionsstyring**.</span><span class="sxs-lookup"><span data-stu-id="3f225-108">To use this feature, enable **Custom links in Manager self-service** in the **Feature management** workspace.</span></span> <span data-ttu-id="3f225-109">Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="3f225-109">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span>
+## <a name="enable-the--feature"></a><span data-ttu-id="b1e25-107">Aktivere funktionen</span><span class="sxs-lookup"><span data-stu-id="b1e25-107">Enable the  feature</span></span>
 
-## <a name="set-up-custom-links"></a><span data-ttu-id="3f225-110">Konfigurere brugerdefinerede links</span><span class="sxs-lookup"><span data-stu-id="3f225-110">Set up custom links</span></span>
+<span data-ttu-id="b1e25-108">Hvis du vil bruge denne funktion, skal du aktivere **Brugerdefinerede links i selvbetjeningstjenesten for ledere** i arbejdsområdet **Funktionsstyring**.</span><span class="sxs-lookup"><span data-stu-id="b1e25-108">To use this feature, enable **Custom links in Manager self-service** in the **Feature management** workspace.</span></span> <span data-ttu-id="b1e25-109">Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="b1e25-109">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span>
 
-1. <span data-ttu-id="3f225-111">Vælg **Selvbetjening for leder** i **Human Resources-parametre**.</span><span class="sxs-lookup"><span data-stu-id="3f225-111">In **Human Resources parameters**, select **Manager self service**.</span></span>
+## <a name="set-up-custom-links"></a><span data-ttu-id="b1e25-110">Konfigurere brugerdefinerede links</span><span class="sxs-lookup"><span data-stu-id="b1e25-110">Set up custom links</span></span>
 
-2. <span data-ttu-id="3f225-112">Under **Konfigurer links for ledere** kan du tilføje, redigere eller fjerne et link.</span><span class="sxs-lookup"><span data-stu-id="3f225-112">Under **Set up links for Managers**, you can add, edit, or remove a link.</span></span> <span data-ttu-id="3f225-113">Du kan også gruppere linksene, så de vises i en gruppe i selvbetjeningstjenesten for ledere.</span><span class="sxs-lookup"><span data-stu-id="3f225-113">You can also group the links together so they display in a group in Manager self-service.</span></span>
+1. <span data-ttu-id="b1e25-111">Vælg **Selvbetjening for leder** i **Human Resources-parametre**.</span><span class="sxs-lookup"><span data-stu-id="b1e25-111">In **Human Resources parameters**, select **Manager self service**.</span></span>
+
+2. <span data-ttu-id="b1e25-112">Under **Konfigurer links for ledere** kan du tilføje, redigere eller fjerne et link.</span><span class="sxs-lookup"><span data-stu-id="b1e25-112">Under **Set up links for Managers**, you can add, edit, or remove a link.</span></span> <span data-ttu-id="b1e25-113">Du kan også gruppere linksene, så de vises i en gruppe i selvbetjeningstjenesten for ledere.</span><span class="sxs-lookup"><span data-stu-id="b1e25-113">You can also group the links together so they display in a group in Manager self-service.</span></span>
 
    ![Konfigurere brugerdefinerede links i selvbetjeningstjenesten for ledere](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. <span data-ttu-id="3f225-115">Hvis du vil se linksene, skal du gå til fanen **Mit team** i Medarbejderselvbetjening.</span><span class="sxs-lookup"><span data-stu-id="3f225-115">To see the links, go to the **My team** tab in Employee self-service.</span></span>
+3. <span data-ttu-id="b1e25-115">Hvis du vil se linksene, skal du gå til fanen **Mit team** i Medarbejderselvbetjening.</span><span class="sxs-lookup"><span data-stu-id="b1e25-115">To see the links, go to the **My team** tab in Employee self-service.</span></span>
 
    ![Vise brugerdefinerede links i selvbetjeningstjenesten for ledere](./media/hr-employee-manager-self-service-custom-links-view.png)
 
-## <a name="see-also"></a><span data-ttu-id="3f225-117">Se også</span><span class="sxs-lookup"><span data-stu-id="3f225-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b1e25-117">Se også</span><span class="sxs-lookup"><span data-stu-id="b1e25-117">See also</span></span>
 
-[<span data-ttu-id="3f225-118">Oversigt over medarbejderes og lederes selvbetjening</span><span class="sxs-lookup"><span data-stu-id="3f225-118">Employee and Manager self-service overview</span></span>](hr-employee-manager-self-service-overview.md)
+[<span data-ttu-id="b1e25-118">Oversigt over medarbejderes og lederes selvbetjening</span><span class="sxs-lookup"><span data-stu-id="b1e25-118">Employee and Manager self-service overview</span></span>](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
