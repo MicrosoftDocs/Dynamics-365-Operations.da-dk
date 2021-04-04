@@ -16,80 +16,83 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd505446456791b26850d676722b6676b50dca4b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1ef63faaf836c1ac929324d2b3cd4aaaee9b1352
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4981200"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255103"
 ---
-# <a name="create-process-activities-for-lean-manufacturing"></a><span data-ttu-id="093c9-103">Oprette procesaktiviteter for lean manufacturing</span><span class="sxs-lookup"><span data-stu-id="093c9-103">Create process activities for lean manufacturing</span></span>
+# <a name="create-process-activities-for-lean-manufacturing"></a><span data-ttu-id="3bf72-103">Oprette procesaktiviteter for lean manufacturing</span><span class="sxs-lookup"><span data-stu-id="3bf72-103">Create process activities for lean manufacturing</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="093c9-104">Opret et procesaktivitet til lean manufacturing.</span><span class="sxs-lookup"><span data-stu-id="093c9-104">Create a process activity for lean manufacturing.</span></span> 
+<span data-ttu-id="3bf72-104">Opret et procesaktivitet til lean manufacturing.</span><span class="sxs-lookup"><span data-stu-id="3bf72-104">Create a process activity for lean manufacturing.</span></span> 
 
-<span data-ttu-id="093c9-105">Forudsætninger:</span><span class="sxs-lookup"><span data-stu-id="093c9-105">Prerequisites:</span></span> 
+<span data-ttu-id="3bf72-105">Forudsætninger:</span><span class="sxs-lookup"><span data-stu-id="3bf72-105">Prerequisites:</span></span> 
 
-1. <span data-ttu-id="093c9-106">Der skal oprettes et produktionsflowet og en version, der ikke er aktive.</span><span class="sxs-lookup"><span data-stu-id="093c9-106">A production flow and version that is not active must be created.</span></span>
+1. <span data-ttu-id="3bf72-106">Der skal oprettes et produktionsflowet og en version, der ikke er aktive.</span><span class="sxs-lookup"><span data-stu-id="3bf72-106">A production flow and version that is not active must be created.</span></span>
 
-2. <span data-ttu-id="093c9-107">Der skal oprettes en arbejdscelle.</span><span class="sxs-lookup"><span data-stu-id="093c9-107">A work cell must be created.</span></span>
+2. <span data-ttu-id="3bf72-107">Der skal oprettes en arbejdscelle.</span><span class="sxs-lookup"><span data-stu-id="3bf72-107">A work cell must be created.</span></span>
 
 
-## <a name="find-the-production-flow-version"></a><span data-ttu-id="093c9-108">Find produktionsflowversionen</span><span class="sxs-lookup"><span data-stu-id="093c9-108">Find the production flow version</span></span>
-1. <span data-ttu-id="093c9-109">Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="093c9-109">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
-2. <span data-ttu-id="093c9-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-110">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="093c9-111">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-111">In the list, click the link in the selected row.</span></span>
+## <a name="find-the-production-flow-version"></a><span data-ttu-id="3bf72-108">Find produktionsflowversionen</span><span class="sxs-lookup"><span data-stu-id="3bf72-108">Find the production flow version</span></span>
+1. <span data-ttu-id="3bf72-109">Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="3bf72-109">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="3bf72-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="3bf72-111">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-111">In the list, click the link in the selected row.</span></span>
 
-## <a name="create-a-new-activity"></a><span data-ttu-id="093c9-112">Opret en ny aktivitet</span><span class="sxs-lookup"><span data-stu-id="093c9-112">Create a new activity</span></span>
-1. <span data-ttu-id="093c9-113">Klik på Aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="093c9-113">Click Activities.</span></span>
-    * <span data-ttu-id="093c9-114">Kontroller, at det valgte produktionsflow har en version i udkast, og vælg den version.</span><span class="sxs-lookup"><span data-stu-id="093c9-114">Ensure that the selected production flow has a version in draft and select that version.</span></span>  
-2. <span data-ttu-id="093c9-115">Klik på Opret ny planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="093c9-115">Click Create new plan activity.</span></span>
-3. <span data-ttu-id="093c9-116">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="093c9-116">Click Next.</span></span>
-4. <span data-ttu-id="093c9-117">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="093c9-117">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="093c9-118">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="093c9-118">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="093c9-119">Bemærk, at navnet skal være entydigt for et givet produktionsflow for alle versioner.</span><span class="sxs-lookup"><span data-stu-id="093c9-119">Note that the name must be unique for a given production flow for all versions.</span></span>  
-6. <span data-ttu-id="093c9-120">Skriv et tal i feltet Procesantal.</span><span class="sxs-lookup"><span data-stu-id="093c9-120">In the Process quantity field, enter a number.</span></span>
-    * <span data-ttu-id="093c9-121">Bemærk, at uanset hvilket antal af job der skal behandles, er dette minimumantal pr. job til at beregne arbejdsomkostning.</span><span class="sxs-lookup"><span data-stu-id="093c9-121">Note that no matter what job quantity will be processed, this is the minimum quantity per job to calculate the labor cost.</span></span> <span data-ttu-id="093c9-122">Hvis jobantal afviger fra dette antal, oprettes arbejdsomkostningsafvigelse.</span><span class="sxs-lookup"><span data-stu-id="093c9-122">If job quantities deviate from this quantity, labor cost variance will be created.</span></span>  
-7. <span data-ttu-id="093c9-123">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="093c9-123">Click Next.</span></span>
+## <a name="create-a-new-activity"></a><span data-ttu-id="3bf72-112">Opret en ny aktivitet</span><span class="sxs-lookup"><span data-stu-id="3bf72-112">Create a new activity</span></span>
+1. <span data-ttu-id="3bf72-113">Klik på Aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="3bf72-113">Click Activities.</span></span>
+    * <span data-ttu-id="3bf72-114">Kontroller, at det valgte produktionsflow har en version i udkast, og vælg den version.</span><span class="sxs-lookup"><span data-stu-id="3bf72-114">Ensure that the selected production flow has a version in draft and select that version.</span></span>  
+2. <span data-ttu-id="3bf72-115">Klik på Opret ny planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="3bf72-115">Click Create new plan activity.</span></span>
+3. <span data-ttu-id="3bf72-116">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="3bf72-116">Click Next.</span></span>
+4. <span data-ttu-id="3bf72-117">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3bf72-117">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="3bf72-118">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3bf72-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="3bf72-119">Bemærk, at navnet skal være entydigt for et givet produktionsflow for alle versioner.</span><span class="sxs-lookup"><span data-stu-id="3bf72-119">Note that the name must be unique for a given production flow for all versions.</span></span>  
+6. <span data-ttu-id="3bf72-120">Skriv et tal i feltet Procesantal.</span><span class="sxs-lookup"><span data-stu-id="3bf72-120">In the Process quantity field, enter a number.</span></span>
+    * <span data-ttu-id="3bf72-121">Bemærk, at uanset hvilket antal af job der skal behandles, er dette minimumantal pr. job til at beregne arbejdsomkostning.</span><span class="sxs-lookup"><span data-stu-id="3bf72-121">Note that no matter what job quantity will be processed, this is the minimum quantity per job to calculate the labor cost.</span></span> <span data-ttu-id="3bf72-122">Hvis jobantal afviger fra dette antal, oprettes arbejdsomkostningsafvigelse.</span><span class="sxs-lookup"><span data-stu-id="3bf72-122">If job quantities deviate from this quantity, labor cost variance will be created.</span></span>  
+7. <span data-ttu-id="3bf72-123">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="3bf72-123">Click Next.</span></span>
 
-## <a name="select-the-work-cell"></a><span data-ttu-id="093c9-124">Vælg arbejdscellen</span><span class="sxs-lookup"><span data-stu-id="093c9-124">Select the work cell</span></span>
-1. <span data-ttu-id="093c9-125">Klik på rullelisten i feltet Arbejdscelle for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="093c9-125">In the Work cell field, click the drop-down button to open the lookup.</span></span>
-2. <span data-ttu-id="093c9-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-126">In the list, click the link in the selected row.</span></span>
+## <a name="select-the-work-cell"></a><span data-ttu-id="3bf72-124">Vælg arbejdscellen</span><span class="sxs-lookup"><span data-stu-id="3bf72-124">Select the work cell</span></span>
+1. <span data-ttu-id="3bf72-125">Klik på rullelisten i feltet Arbejdscelle for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="3bf72-125">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+2. <span data-ttu-id="3bf72-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-126">In the list, click the link in the selected row.</span></span>
 
-## <a name="define-the-inventory-updates"></a><span data-ttu-id="093c9-127">Definer lageropdateringerne</span><span class="sxs-lookup"><span data-stu-id="093c9-127">Define the inventory updates</span></span>
-1. <span data-ttu-id="093c9-128">Marker eller fjern opdateringen i afkrydsningsfeltet Opdater lagertilgang.</span><span class="sxs-lookup"><span data-stu-id="093c9-128">Select or clear the Update on hand receipt check box.</span></span>
-    * <span data-ttu-id="093c9-129">Hvis Opdater lagerbeholdning = Nej, kan du definere aktiviteten for at modtage et halvfabrikataprodukt (aktiviteten ikke når op på det næste niveau i Styklisten).</span><span class="sxs-lookup"><span data-stu-id="093c9-129">If Update On hand = No, you can define the activity to receive a semi-finished product (the activity does not reach the next BOM level).</span></span>    <span data-ttu-id="093c9-130">Du kan også vælge for at forbruge halvfabrikata.</span><span class="sxs-lookup"><span data-stu-id="093c9-130">You can also select to consume semi-finished products.</span></span>  
+## <a name="define-the-inventory-updates"></a><span data-ttu-id="3bf72-127">Definer lageropdateringerne</span><span class="sxs-lookup"><span data-stu-id="3bf72-127">Define the inventory updates</span></span>
+1. <span data-ttu-id="3bf72-128">Marker eller fjern opdateringen i afkrydsningsfeltet Opdater lagertilgang.</span><span class="sxs-lookup"><span data-stu-id="3bf72-128">Select or clear the Update on hand receipt check box.</span></span>
+    * <span data-ttu-id="3bf72-129">Hvis Opdater lagerbeholdning = Nej, kan du definere aktiviteten for at modtage et halvfabrikataprodukt (aktiviteten ikke når op på det næste niveau i Styklisten).</span><span class="sxs-lookup"><span data-stu-id="3bf72-129">If Update On hand = No, you can define the activity to receive a semi-finished product (the activity does not reach the next BOM level).</span></span>    <span data-ttu-id="3bf72-130">Du kan også vælge for at forbruge halvfabrikata.</span><span class="sxs-lookup"><span data-stu-id="3bf72-130">You can also select to consume semi-finished products.</span></span>  
 
-## <a name="define-the-picking-activities"></a><span data-ttu-id="093c9-131">Definer plukaktiviteterne</span><span class="sxs-lookup"><span data-stu-id="093c9-131">Define the picking activities</span></span>
-1. <span data-ttu-id="093c9-132">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="093c9-132">Click Next.</span></span>
-2. <span data-ttu-id="093c9-133">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-133">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="093c9-134">Der oprettes en standardplukaktiviteten for indlagringslokation af den valgte arbejdscelle.</span><span class="sxs-lookup"><span data-stu-id="093c9-134">A default picking activity is created for the input location of the selected work cell.</span></span>  
-3. <span data-ttu-id="093c9-135">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="093c9-135">Click Add.</span></span>
-    * <span data-ttu-id="093c9-136">Du kan oprette yderligere plukaktiviteter for specifikke produkter, der ikke opbevares på arbejdscellens inputaktivitet.</span><span class="sxs-lookup"><span data-stu-id="093c9-136">You can create additional picking activities for specific products, that are not staged at the work cell input activity.</span></span>  
-4. <span data-ttu-id="093c9-137">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-137">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="093c9-138">Indtast en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="093c9-138">In the Item number field, type a value.</span></span>
-6. <span data-ttu-id="093c9-139">Klik på rullelisten i feltet Lagersted for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="093c9-139">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="093c9-140">Med denne definition plukkes alle materialer, der forbruges i aktiviteten, fra standardinputlagerstedet og lokaliteten med undtagelse af den vare, der er defineret i den anden plukaktivitet.</span><span class="sxs-lookup"><span data-stu-id="093c9-140">With this definition, all materials consumed in the activity are picked from the default input warehouse and location except the item that is defined in the second picking activity.</span></span> <span data-ttu-id="093c9-141">Dette element vil blive plukket fra et andet lagersted og en anden lokalitet.</span><span class="sxs-lookup"><span data-stu-id="093c9-141">This item will be picked from a different warehouse and location.</span></span>  
-7. <span data-ttu-id="093c9-142">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-142">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="093c9-143">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-143">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="093c9-144">Vælg eller fjern markeringen i afkrydsningsfeltet Registrer spild.</span><span class="sxs-lookup"><span data-stu-id="093c9-144">Select or clear the Register scrap check box.</span></span>
-10. <span data-ttu-id="093c9-145">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="093c9-145">Click Next.</span></span>
+## <a name="define-the-picking-activities"></a><span data-ttu-id="3bf72-131">Definer plukaktiviteterne</span><span class="sxs-lookup"><span data-stu-id="3bf72-131">Define the picking activities</span></span>
+1. <span data-ttu-id="3bf72-132">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="3bf72-132">Click Next.</span></span>
+2. <span data-ttu-id="3bf72-133">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-133">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="3bf72-134">Der oprettes en standardplukaktiviteten for indlagringslokation af den valgte arbejdscelle.</span><span class="sxs-lookup"><span data-stu-id="3bf72-134">A default picking activity is created for the input location of the selected work cell.</span></span>  
+3. <span data-ttu-id="3bf72-135">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="3bf72-135">Click Add.</span></span>
+    * <span data-ttu-id="3bf72-136">Du kan oprette yderligere plukaktiviteter for specifikke produkter, der ikke opbevares på arbejdscellens inputaktivitet.</span><span class="sxs-lookup"><span data-stu-id="3bf72-136">You can create additional picking activities for specific products, that are not staged at the work cell input activity.</span></span>  
+4. <span data-ttu-id="3bf72-137">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-137">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="3bf72-138">Indtast en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="3bf72-138">In the Item number field, type a value.</span></span>
+6. <span data-ttu-id="3bf72-139">Klik på rullelisten i feltet Lagersted for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="3bf72-139">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="3bf72-140">Med denne definition plukkes alle materialer, der forbruges i aktiviteten, fra standardinputlagerstedet og lokaliteten med undtagelse af den vare, der er defineret i den anden plukaktivitet.</span><span class="sxs-lookup"><span data-stu-id="3bf72-140">With this definition, all materials consumed in the activity are picked from the default input warehouse and location except the item that is defined in the second picking activity.</span></span> <span data-ttu-id="3bf72-141">Dette element vil blive plukket fra et andet lagersted og en anden lokalitet.</span><span class="sxs-lookup"><span data-stu-id="3bf72-141">This item will be picked from a different warehouse and location.</span></span>  
+7. <span data-ttu-id="3bf72-142">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-142">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="3bf72-143">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-143">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="3bf72-144">Vælg eller fjern markeringen i afkrydsningsfeltet Registrer spild.</span><span class="sxs-lookup"><span data-stu-id="3bf72-144">Select or clear the Register scrap check box.</span></span>
+10. <span data-ttu-id="3bf72-145">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="3bf72-145">Click Next.</span></span>
 
-## <a name="define-the-activity-times"></a><span data-ttu-id="093c9-146">Definer aktivitetstiderne</span><span class="sxs-lookup"><span data-stu-id="093c9-146">Define the activity times</span></span>
-1. <span data-ttu-id="093c9-147">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-147">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="093c9-148">Definitionen af en Kørsel er obligatorisk.</span><span class="sxs-lookup"><span data-stu-id="093c9-148">The definition of a Runtime is required.</span></span> <span data-ttu-id="093c9-149">Kørslen bruges til at beregne omkostninger og procestider for kanban-job.</span><span class="sxs-lookup"><span data-stu-id="093c9-149">The Runtime is used to calculate costs and the throughput times of the kanban jobs.</span></span> <span data-ttu-id="093c9-150">Kørsler bruges ikke til at beregne kapacitetsbelastninger og forbrug, som beregnes ud fra procestid, afledt fra produktionsflowversion-opgaven.</span><span class="sxs-lookup"><span data-stu-id="093c9-150">Runtimes are not used to calculate capacity load and consumption, this is calculated by cycle time, derived from the production flow version task.</span></span>  
-2. <span data-ttu-id="093c9-151">Angiv et tal i feltet Tid.</span><span class="sxs-lookup"><span data-stu-id="093c9-151">In the Time field, enter a number.</span></span>
-3. <span data-ttu-id="093c9-152">Skriv en værdi i feltet Enhed.</span><span class="sxs-lookup"><span data-stu-id="093c9-152">In the Unit field, type a value.</span></span>
-4. <span data-ttu-id="093c9-153">Vælg Tidsenhed.</span><span class="sxs-lookup"><span data-stu-id="093c9-153">Select the Time unit.</span></span>
-5. <span data-ttu-id="093c9-154">Skriv et tal i feltet Pr. antal.</span><span class="sxs-lookup"><span data-stu-id="093c9-154">In the Per quantity field, enter a number.</span></span>
-6. <span data-ttu-id="093c9-155">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="093c9-155">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="093c9-156">Køtider er valgfri.</span><span class="sxs-lookup"><span data-stu-id="093c9-156">Queue times are optional.</span></span>  
-7. <span data-ttu-id="093c9-157">Angiv et tal i feltet Tid.</span><span class="sxs-lookup"><span data-stu-id="093c9-157">In the Time field, enter a number.</span></span>
-8. <span data-ttu-id="093c9-158">Skriv en værdi i feltet Enhed.</span><span class="sxs-lookup"><span data-stu-id="093c9-158">In the Unit field, type a value.</span></span>
-9. <span data-ttu-id="093c9-159">Vælg Tidsenhed.</span><span class="sxs-lookup"><span data-stu-id="093c9-159">Select the Time unit.</span></span>
-10. <span data-ttu-id="093c9-160">Skriv et tal i feltet Pr. antal.</span><span class="sxs-lookup"><span data-stu-id="093c9-160">In the Per quantity field, enter a number.</span></span>
-11. <span data-ttu-id="093c9-161">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="093c9-161">Click Next.</span></span>
-12. <span data-ttu-id="093c9-162">Klik på Finish.</span><span class="sxs-lookup"><span data-stu-id="093c9-162">Click Finish.</span></span>
-13. <span data-ttu-id="093c9-163">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="093c9-163">Close the page.</span></span>
+## <a name="define-the-activity-times"></a><span data-ttu-id="3bf72-146">Definer aktivitetstiderne</span><span class="sxs-lookup"><span data-stu-id="3bf72-146">Define the activity times</span></span>
+1. <span data-ttu-id="3bf72-147">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-147">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="3bf72-148">Definitionen af en Kørsel er obligatorisk.</span><span class="sxs-lookup"><span data-stu-id="3bf72-148">The definition of a Runtime is required.</span></span> <span data-ttu-id="3bf72-149">Kørslen bruges til at beregne omkostninger og procestider for kanban-job.</span><span class="sxs-lookup"><span data-stu-id="3bf72-149">The Runtime is used to calculate costs and the throughput times of the kanban jobs.</span></span> <span data-ttu-id="3bf72-150">Kørsler bruges ikke til at beregne kapacitetsbelastninger og forbrug, som beregnes ud fra procestid, afledt fra produktionsflowversion-opgaven.</span><span class="sxs-lookup"><span data-stu-id="3bf72-150">Runtimes are not used to calculate capacity load and consumption, this is calculated by cycle time, derived from the production flow version task.</span></span>  
+2. <span data-ttu-id="3bf72-151">Angiv et tal i feltet Tid.</span><span class="sxs-lookup"><span data-stu-id="3bf72-151">In the Time field, enter a number.</span></span>
+3. <span data-ttu-id="3bf72-152">Skriv en værdi i feltet Enhed.</span><span class="sxs-lookup"><span data-stu-id="3bf72-152">In the Unit field, type a value.</span></span>
+4. <span data-ttu-id="3bf72-153">Vælg Tidsenhed.</span><span class="sxs-lookup"><span data-stu-id="3bf72-153">Select the Time unit.</span></span>
+5. <span data-ttu-id="3bf72-154">Skriv et tal i feltet Pr. antal.</span><span class="sxs-lookup"><span data-stu-id="3bf72-154">In the Per quantity field, enter a number.</span></span>
+6. <span data-ttu-id="3bf72-155">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="3bf72-155">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="3bf72-156">Køtider er valgfri.</span><span class="sxs-lookup"><span data-stu-id="3bf72-156">Queue times are optional.</span></span>  
+7. <span data-ttu-id="3bf72-157">Angiv et tal i feltet Tid.</span><span class="sxs-lookup"><span data-stu-id="3bf72-157">In the Time field, enter a number.</span></span>
+8. <span data-ttu-id="3bf72-158">Skriv en værdi i feltet Enhed.</span><span class="sxs-lookup"><span data-stu-id="3bf72-158">In the Unit field, type a value.</span></span>
+9. <span data-ttu-id="3bf72-159">Vælg Tidsenhed.</span><span class="sxs-lookup"><span data-stu-id="3bf72-159">Select the Time unit.</span></span>
+10. <span data-ttu-id="3bf72-160">Skriv et tal i feltet Pr. antal.</span><span class="sxs-lookup"><span data-stu-id="3bf72-160">In the Per quantity field, enter a number.</span></span>
+11. <span data-ttu-id="3bf72-161">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="3bf72-161">Click Next.</span></span>
+12. <span data-ttu-id="3bf72-162">Klik på Finish.</span><span class="sxs-lookup"><span data-stu-id="3bf72-162">Click Finish.</span></span>
+13. <span data-ttu-id="3bf72-163">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3bf72-163">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

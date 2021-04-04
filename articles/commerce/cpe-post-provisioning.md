@@ -16,150 +16,151 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa92a581a96de6bed26b4a0c6601ebd9d5088347
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9b11ab600bb2aa17cf330947304f5b22dd522081
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993419"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477967"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a><span data-ttu-id="8b41f-103">Konfigurere et Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="8b41f-103">Configure a Dynamics 365 Commerce evaluation environment</span></span>
+# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a><span data-ttu-id="d9632-103">Konfigurere et Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="d9632-103">Configure a Dynamics 365 Commerce evaluation environment</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="8b41f-104">I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.</span><span class="sxs-lookup"><span data-stu-id="8b41f-104">This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.</span></span>
+<span data-ttu-id="d9632-104">I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.</span><span class="sxs-lookup"><span data-stu-id="d9632-104">This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="8b41f-105">Overblik</span><span class="sxs-lookup"><span data-stu-id="8b41f-105">Overview</span></span>
+<span data-ttu-id="d9632-105">Fuldfør kun procedurerne i dette emne, efter dit Commerce-evalueringsmiljø er klargjort.</span><span class="sxs-lookup"><span data-stu-id="d9632-105">Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned.</span></span> <span data-ttu-id="d9632-106">For yderligere oplysninger om, hvordan du klargør dit Commerce-evalueringsmiljø se [Klargøre et Commerce-evalueringsmiljø](provisioning-guide.md).</span><span class="sxs-lookup"><span data-stu-id="d9632-106">For information about how to provision your Commerce evaluation environment, see [Provision a Commerce evaluation environment](provisioning-guide.md).</span></span>
 
-<span data-ttu-id="8b41f-106">Fuldfør kun procedurerne i dette emne, efter dit Commerce-evalueringsmiljø er klargjort.</span><span class="sxs-lookup"><span data-stu-id="8b41f-106">Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned.</span></span> <span data-ttu-id="8b41f-107">For yderligere oplysninger om, hvordan du klargør dit Commerce-evalueringsmiljø se [Klargøre et Commerce-evalueringsmiljø](provisioning-guide.md).</span><span class="sxs-lookup"><span data-stu-id="8b41f-107">For information about how to provision your Commerce evaluation environment, see [Provision a Commerce evaluation environment](provisioning-guide.md).</span></span>
+<span data-ttu-id="d9632-107">Når dit Commerce-evalueringsmiljø er blevet klargjort fra ende til anden, skal yderligere konfigurationstrin efter klargøring fuldføres, før du kan begynde at evaluere miljøet.</span><span class="sxs-lookup"><span data-stu-id="d9632-107">After your Commerce evaluation environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to evaluate the environment.</span></span> <span data-ttu-id="d9632-108">Hvis du vil fuldføre disse trin, skal du bruge Microsoft Dynamics Lifecycle Services (LCS) og Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="d9632-108">To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="8b41f-108">Når dit Commerce-evalueringsmiljø er blevet klargjort fra ende til anden, skal yderligere konfigurationstrin efter klargøring fuldføres, før du kan begynde at evaluere miljøet.</span><span class="sxs-lookup"><span data-stu-id="8b41f-108">After your Commerce evaluation environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to evaluate the environment.</span></span> <span data-ttu-id="8b41f-109">Hvis du vil fuldføre disse trin, skal du bruge Microsoft Dynamics Lifecycle Services (LCS) og Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="8b41f-109">To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.</span></span>
+## <a name="before-you-start"></a><span data-ttu-id="d9632-109">Før du begynder</span><span class="sxs-lookup"><span data-stu-id="d9632-109">Before you start</span></span>
 
-## <a name="before-you-start"></a><span data-ttu-id="8b41f-110">Før du begynder</span><span class="sxs-lookup"><span data-stu-id="8b41f-110">Before you start</span></span>
+1. <span data-ttu-id="d9632-110">Log på [LCS-portalen](https://lcs.dynamics.com).</span><span class="sxs-lookup"><span data-stu-id="d9632-110">Sign in to the [LCS portal](https://lcs.dynamics.com).</span></span>
+1. <span data-ttu-id="d9632-111">Gå til dit projekt.</span><span class="sxs-lookup"><span data-stu-id="d9632-111">Go to your project.</span></span>
+1. <span data-ttu-id="d9632-112">Vælg **Skybaserede miljøer** øverst i menuen.</span><span class="sxs-lookup"><span data-stu-id="d9632-112">On the top menu, select **Cloud-hosted environments**.</span></span>
+1. <span data-ttu-id="d9632-113">Vælg dit miljø fra listen.</span><span class="sxs-lookup"><span data-stu-id="d9632-113">Select your environment in the list.</span></span>
+1. <span data-ttu-id="d9632-114">Vælg **Log på miljø** i miljøoplysningerne til højre.</span><span class="sxs-lookup"><span data-stu-id="d9632-114">In the environment information on the right, select **Log on to environment**.</span></span> <span data-ttu-id="d9632-115">Du bliver sendt til Commerce-hovedkontoret.</span><span class="sxs-lookup"><span data-stu-id="d9632-115">You will be sent to Commerce headquarters.</span></span>
+1. <span data-ttu-id="d9632-116">Kontrollér, at den juridiske enhed **USRT** er valgt i øverste højre hjørne.</span><span class="sxs-lookup"><span data-stu-id="d9632-116">Make sure that the **USRT** legal entity is selected in the upper-right corner.</span></span>
 
-1. <span data-ttu-id="8b41f-111">Log på [LCS-portalen](https://lcs.dynamics.com).</span><span class="sxs-lookup"><span data-stu-id="8b41f-111">Sign in to the [LCS portal](https://lcs.dynamics.com).</span></span>
-1. <span data-ttu-id="8b41f-112">Gå til dit projekt.</span><span class="sxs-lookup"><span data-stu-id="8b41f-112">Go to your project.</span></span>
-1. <span data-ttu-id="8b41f-113">Vælg **Skybaserede miljøer** øverst i menuen.</span><span class="sxs-lookup"><span data-stu-id="8b41f-113">On the top menu, select **Cloud-hosted environments**.</span></span>
-1. <span data-ttu-id="8b41f-114">Vælg dit miljø fra listen.</span><span class="sxs-lookup"><span data-stu-id="8b41f-114">Select your environment in the list.</span></span>
-1. <span data-ttu-id="8b41f-115">Vælg **Log på miljø** i miljøoplysningerne til højre.</span><span class="sxs-lookup"><span data-stu-id="8b41f-115">In the environment information on the right, select **Log on to environment**.</span></span> <span data-ttu-id="8b41f-116">Du bliver sendt til Commerce-hovedkontoret.</span><span class="sxs-lookup"><span data-stu-id="8b41f-116">You will be sent to Commerce headquarters.</span></span>
-1. <span data-ttu-id="8b41f-117">Kontrollér, at den juridiske enhed **USRT** er valgt i øverste højre hjørne.</span><span class="sxs-lookup"><span data-stu-id="8b41f-117">Make sure that the **USRT** legal entity is selected in the upper-right corner.</span></span>
+<span data-ttu-id="d9632-117">Under klargøring af aktiviteter i Commerce-hovedkontoret skal du kontrollere, at den juridiske enhed **USRT** altid er markeret.</span><span class="sxs-lookup"><span data-stu-id="d9632-117">During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.</span></span>
 
-<span data-ttu-id="8b41f-118">Under klargøring af aktiviteter i Commerce-hovedkontoret skal du kontrollere, at den juridiske enhed **USRT** altid er markeret.</span><span class="sxs-lookup"><span data-stu-id="8b41f-118">During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.</span></span>
+## <a name="configure-the-point-of-sale"></a><span data-ttu-id="d9632-118">Konfigurer POS </span><span class="sxs-lookup"><span data-stu-id="d9632-118">Configure the point of sale</span></span>
 
-## <a name="configure-the-point-of-sale"></a><span data-ttu-id="8b41f-119">Konfigurer POS </span><span class="sxs-lookup"><span data-stu-id="8b41f-119">Configure the point of sale</span></span>
+### <a name="associate-a-worker-with-your-identity"></a><span data-ttu-id="d9632-119">Tilknyt en arbejder til din identitet</span><span class="sxs-lookup"><span data-stu-id="d9632-119">Associate a worker with your identity</span></span>
 
-### <a name="associate-a-worker-with-your-identity"></a><span data-ttu-id="8b41f-120">Tilknyt en arbejder til din identitet</span><span class="sxs-lookup"><span data-stu-id="8b41f-120">Associate a worker with your identity</span></span>
+<span data-ttu-id="d9632-120">Hvis du vil knytte en arbejder til din identitet, skal du følge disse trin i Commerce-hovedkontor.</span><span class="sxs-lookup"><span data-stu-id="d9632-120">To associate a worker with your identity, follow these steps in Commerce headquarters.</span></span>
 
-<span data-ttu-id="8b41f-121">Hvis du vil knytte en arbejder til din identitet, skal du følge disse trin i Commerce-hovedkontor.</span><span class="sxs-lookup"><span data-stu-id="8b41f-121">To associate a worker with your identity, follow these steps in Commerce headquarters.</span></span>
+1. <span data-ttu-id="d9632-121">Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Medarbejdere \> Arbejdere**.</span><span class="sxs-lookup"><span data-stu-id="d9632-121">Use the menu on the left to go to **Modules \> Retail and commerce \> Employees \> Workers**.</span></span>
+1. <span data-ttu-id="d9632-122">Find og vælg følgende post i listen: **000713 - Andrew Collette**.</span><span class="sxs-lookup"><span data-stu-id="d9632-122">In the list, find and select the following record: **000713 - Andrew Collette**.</span></span>
+1. <span data-ttu-id="d9632-123">Klik på **Commerce** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="d9632-123">On the Action Pane, select **Commerce**.</span></span>
+1. <span data-ttu-id="d9632-124">Vælg **Tilknyt eksisterende identitet**.</span><span class="sxs-lookup"><span data-stu-id="d9632-124">Select **Associate existing identity**.</span></span>
+1. <span data-ttu-id="d9632-125">Skriv din mailadresse i feltet **E-mail** til højre for **Søg ved hjælp af e-mail**.</span><span class="sxs-lookup"><span data-stu-id="d9632-125">In the **Email** field to the right of **Search using email**, enter your email address.</span></span>
+1. <span data-ttu-id="d9632-126">Vælg **Søg**.</span><span class="sxs-lookup"><span data-stu-id="d9632-126">Select **Search**.</span></span>
+1. <span data-ttu-id="d9632-127">Vælg posten med dit navn.</span><span class="sxs-lookup"><span data-stu-id="d9632-127">Select the record that has your name.</span></span>
+1. <span data-ttu-id="d9632-128">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="d9632-128">Select **OK**.</span></span>
+1. <span data-ttu-id="d9632-129">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="d9632-129">Select **Save**.</span></span>
 
-1. <span data-ttu-id="8b41f-122">Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Medarbejdere \> Arbejdere**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-122">Use the menu on the left to go to **Modules \> Retail and commerce \> Employees \> Workers**.</span></span>
-1. <span data-ttu-id="8b41f-123">Find og vælg følgende post i listen: **000713 - Andrew Collette**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-123">In the list, find and select the following record: **000713 - Andrew Collette**.</span></span>
-1. <span data-ttu-id="8b41f-124">Klik på **Commerce** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="8b41f-124">On the Action Pane, select **Commerce**.</span></span>
-1. <span data-ttu-id="8b41f-125">Vælg **Tilknyt eksisterende identitet**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-125">Select **Associate existing identity**.</span></span>
-1. <span data-ttu-id="8b41f-126">Skriv din mailadresse i feltet **E-mail** til højre for **Søg ved hjælp af e-mail**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-126">In the **Email** field to the right of **Search using email**, enter your email address.</span></span>
-1. <span data-ttu-id="8b41f-127">Vælg **Søg**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-127">Select **Search**.</span></span>
-1. <span data-ttu-id="8b41f-128">Vælg posten med dit navn.</span><span class="sxs-lookup"><span data-stu-id="8b41f-128">Select the record that has your name.</span></span>
-1. <span data-ttu-id="8b41f-129">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-129">Select **OK**.</span></span>
-1. <span data-ttu-id="8b41f-130">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-130">Select **Save**.</span></span>
+### <a name="activate-cloud-pos"></a><span data-ttu-id="d9632-130">Aktiverere sky POS</span><span class="sxs-lookup"><span data-stu-id="d9632-130">Activate Cloud POS</span></span>
 
-### <a name="activate-cloud-pos"></a><span data-ttu-id="8b41f-131">Aktiverere sky POS</span><span class="sxs-lookup"><span data-stu-id="8b41f-131">Activate Cloud POS</span></span>
+<span data-ttu-id="d9632-131">Følg disse trin for at aktivere skybaseret POS.</span><span class="sxs-lookup"><span data-stu-id="d9632-131">To activate Cloud POS, follow these steps in LCS.</span></span>
 
-<span data-ttu-id="8b41f-132">Følg disse trin for at aktivere skybaseret POS.</span><span class="sxs-lookup"><span data-stu-id="8b41f-132">To activate Cloud POS, follow these steps in LCS.</span></span>
+1. <span data-ttu-id="d9632-132">Vælg **Skybaserede miljøer** øverst i menuen.</span><span class="sxs-lookup"><span data-stu-id="d9632-132">On the top menu, select **Cloud-hosted environments**.</span></span>
+1. <span data-ttu-id="d9632-133">Vælg dit miljø fra listen.</span><span class="sxs-lookup"><span data-stu-id="d9632-133">Select your environment in the list.</span></span>
+1. <span data-ttu-id="d9632-134">Vælg **Log på skybaseret POS** i miljøoplysningerne til højre.</span><span class="sxs-lookup"><span data-stu-id="d9632-134">In the environment information on the right, select **Log on to Cloud Point of Sale**.</span></span>
+1. <span data-ttu-id="d9632-135">Vælg **Næste** for at åbne dialogboksen **Før du begynder**.</span><span class="sxs-lookup"><span data-stu-id="d9632-135">Select **Next** to open the **Before you start** dialog box.</span></span>
+1. <span data-ttu-id="d9632-136">Lad feltet **Server-URL-adresse** være, som det er.</span><span class="sxs-lookup"><span data-stu-id="d9632-136">Leave the **Server URL** field as it is.</span></span> <span data-ttu-id="d9632-137">Vælg **Næste**.</span><span class="sxs-lookup"><span data-stu-id="d9632-137">Select **Next**.</span></span>
+1. <span data-ttu-id="d9632-138">Log på ved hjælp af din Microsoft Azure Active Directory (Azure AD)-konto.</span><span class="sxs-lookup"><span data-stu-id="d9632-138">Sign in by using your Microsoft Azure Active Directory (Azure AD) account.</span></span>
+1. <span data-ttu-id="d9632-139">Under **Butiksnavn** skal du vælge **San Francisco** og derefter vælge **Næste**.</span><span class="sxs-lookup"><span data-stu-id="d9632-139">Under **Store name**, select **San Francisco**, and then select **Next**.</span></span>
+1. <span data-ttu-id="d9632-140">Under **Kasseapparat og enhed** skal du vælge **SANFRAN-1**.</span><span class="sxs-lookup"><span data-stu-id="d9632-140">Under **Register and device**, select **SANFRAN-1**.</span></span>
+1. <span data-ttu-id="d9632-141">Vælg **Aktivér**.</span><span class="sxs-lookup"><span data-stu-id="d9632-141">Select **Activate**.</span></span> <span data-ttu-id="d9632-142">Du er logget ud og dirigeret til POS-login-siden.</span><span class="sxs-lookup"><span data-stu-id="d9632-142">You're signed out and taken to the POS sign-in page.</span></span>
+1. <span data-ttu-id="d9632-143">Du kan nu logge på den skybaserede POS-oplevelse ved hjælp af operatør-ID **000713** og adgangskoden **123**.</span><span class="sxs-lookup"><span data-stu-id="d9632-143">You can now sign in to the Cloud POS experience by using operator ID **000713** and password **123**.</span></span>
 
-1. <span data-ttu-id="8b41f-133">Vælg **Skybaserede miljøer** øverst i menuen.</span><span class="sxs-lookup"><span data-stu-id="8b41f-133">On the top menu, select **Cloud-hosted environments**.</span></span>
-1. <span data-ttu-id="8b41f-134">Vælg dit miljø fra listen.</span><span class="sxs-lookup"><span data-stu-id="8b41f-134">Select your environment in the list.</span></span>
-1. <span data-ttu-id="8b41f-135">Vælg **Log på skybaseret POS** i miljøoplysningerne til højre.</span><span class="sxs-lookup"><span data-stu-id="8b41f-135">In the environment information on the right, select **Log on to Cloud Point of Sale**.</span></span>
-1. <span data-ttu-id="8b41f-136">Vælg **Næste** for at åbne dialogboksen **Før du begynder**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-136">Select **Next** to open the **Before you start** dialog box.</span></span>
-1. <span data-ttu-id="8b41f-137">Lad feltet **Server-URL-adresse** være, som det er.</span><span class="sxs-lookup"><span data-stu-id="8b41f-137">Leave the **Server URL** field as it is.</span></span> <span data-ttu-id="8b41f-138">Vælg **Næste**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-138">Select **Next**.</span></span>
-1. <span data-ttu-id="8b41f-139">Log på ved hjælp af din Microsoft Azure Active Directory (Azure AD)-konto.</span><span class="sxs-lookup"><span data-stu-id="8b41f-139">Sign in by using your Microsoft Azure Active Directory (Azure AD) account.</span></span>
-1. <span data-ttu-id="8b41f-140">Under **Butiksnavn** skal du vælge **San Francisco** og derefter vælge **Næste**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-140">Under **Store name**, select **San Francisco**, and then select **Next**.</span></span>
-1. <span data-ttu-id="8b41f-141">Under **Kasseapparat og enhed** skal du vælge **SANFRAN-1**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-141">Under **Register and device**, select **SANFRAN-1**.</span></span>
-1. <span data-ttu-id="8b41f-142">Vælg **Aktivér**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-142">Select **Activate**.</span></span> <span data-ttu-id="8b41f-143">Du er logget ud og dirigeret til POS-login-siden.</span><span class="sxs-lookup"><span data-stu-id="8b41f-143">You're signed out and taken to the POS sign-in page.</span></span>
-1. <span data-ttu-id="8b41f-144">Du kan nu logge på den skybaserede POS-oplevelse ved hjælp af operatør-ID **000713** og adgangskoden **123**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-144">You can now sign in to the Cloud POS experience by using operator ID **000713** and password **123**.</span></span>
+## <a name="set-up-your-site-in-commerce"></a><span data-ttu-id="d9632-144">Konfigurer dit websted i Commerce</span><span class="sxs-lookup"><span data-stu-id="d9632-144">Set up your site in Commerce</span></span>
 
-## <a name="set-up-your-site-in-commerce"></a><span data-ttu-id="8b41f-145">Konfigurer dit websted i Commerce</span><span class="sxs-lookup"><span data-stu-id="8b41f-145">Set up your site in Commerce</span></span>
+<span data-ttu-id="d9632-145">Følg disse trin for at begynde at konfigurere dit evalueringswebsted i Commerce.</span><span class="sxs-lookup"><span data-stu-id="d9632-145">To start to set up your evaluation site in Commerce, follow these steps.</span></span>
 
-<span data-ttu-id="8b41f-146">Følg disse trin for at begynde at konfigurere dit evalueringswebsted i Commerce.</span><span class="sxs-lookup"><span data-stu-id="8b41f-146">To start to set up your evaluation site in Commerce, follow these steps.</span></span>
+1. <span data-ttu-id="d9632-146">Log på Site Builder ved hjælp af den URL-adresse, som du noterede ned, da du initialiserede e-Commerce i forbindelse med klargøring (jf. [Initialiser e-Commerce](provisioning-guide.md#initialize-e-commerce)).</span><span class="sxs-lookup"><span data-stu-id="d9632-146">Sign in to site builder by using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).</span></span>
+1. <span data-ttu-id="d9632-147">Vælg webstedet **Fabrikam** for at åbne dialogboksen webstedsopsætning.</span><span class="sxs-lookup"><span data-stu-id="d9632-147">Select the **Fabrikam** site to open the site setup dialog box.</span></span>
+1. <span data-ttu-id="d9632-148">Vælg det domæne, du angav, da du initialiserede e-Commerce.</span><span class="sxs-lookup"><span data-stu-id="d9632-148">Select the domain that you entered when you initialized e-Commerce.</span></span>
+1. <span data-ttu-id="d9632-149">Som standardkanal skal du vælge **Udvidet Fabrikam-onlinebutik**.</span><span class="sxs-lookup"><span data-stu-id="d9632-149">Select **Fabrikam extended online store** as the default channel.</span></span> <span data-ttu-id="d9632-150">(Sørg for at vælge den **udvidede** onlinebutik.)</span><span class="sxs-lookup"><span data-stu-id="d9632-150">(Make sure that you select the **extended** online store.)</span></span>
+1. <span data-ttu-id="d9632-151">Vælg **da-dk** som standardsprog.</span><span class="sxs-lookup"><span data-stu-id="d9632-151">Select **en-us** as the default language.</span></span>
+1. <span data-ttu-id="d9632-152">Lad værdien i feltet **Sti** være, som den er.</span><span class="sxs-lookup"><span data-stu-id="d9632-152">Leave the value of the **Path** field as it is.</span></span>
+1. <span data-ttu-id="d9632-153">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="d9632-153">Select **OK**.</span></span> <span data-ttu-id="d9632-154">Listen over sider på webstedet vises.</span><span class="sxs-lookup"><span data-stu-id="d9632-154">The list of pages on the site appears.</span></span>
 
-1. <span data-ttu-id="8b41f-147">Log på Site Builder ved hjælp af den URL-adresse, som du noterede ned, da du initialiserede e-Commerce i forbindelse med klargøring (jf. [Initialiser e-Commerce](provisioning-guide.md#initialize-e-commerce)).</span><span class="sxs-lookup"><span data-stu-id="8b41f-147">Sign in to site builder by using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).</span></span>
-1. <span data-ttu-id="8b41f-148">Vælg webstedet **Fabrikam** for at åbne dialogboksen webstedsopsætning.</span><span class="sxs-lookup"><span data-stu-id="8b41f-148">Select the **Fabrikam** site to open the site setup dialog box.</span></span>
-1. <span data-ttu-id="8b41f-149">Vælg det domæne, du angav, da du initialiserede e-Commerce.</span><span class="sxs-lookup"><span data-stu-id="8b41f-149">Select the domain that you entered when you initialized e-Commerce.</span></span>
-1. <span data-ttu-id="8b41f-150">Som standardkanal skal du vælge **Udvidet Fabrikam-onlinebutik**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-150">Select **Fabrikam extended online store** as the default channel.</span></span> <span data-ttu-id="8b41f-151">(Sørg for at vælge den **udvidede** onlinebutik.)</span><span class="sxs-lookup"><span data-stu-id="8b41f-151">(Make sure that you select the **extended** online store.)</span></span>
-1. <span data-ttu-id="8b41f-152">Vælg **da-dk** som standardsprog.</span><span class="sxs-lookup"><span data-stu-id="8b41f-152">Select **en-us** as the default language.</span></span>
-1. <span data-ttu-id="8b41f-153">Lad værdien i feltet **Sti** være, som den er.</span><span class="sxs-lookup"><span data-stu-id="8b41f-153">Leave the value of the **Path** field as it is.</span></span>
-1. <span data-ttu-id="8b41f-154">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-154">Select **OK**.</span></span> <span data-ttu-id="8b41f-155">Listen over sider på webstedet vises.</span><span class="sxs-lookup"><span data-stu-id="8b41f-155">The list of pages on the site appears.</span></span>
+## <a name="enable-jobs"></a><span data-ttu-id="d9632-155">Aktivere job</span><span class="sxs-lookup"><span data-stu-id="d9632-155">Enable jobs</span></span>
 
-## <a name="enable-jobs"></a><span data-ttu-id="8b41f-156">Aktivere job</span><span class="sxs-lookup"><span data-stu-id="8b41f-156">Enable jobs</span></span>
+<span data-ttu-id="d9632-156">Følg disse trin for at aktivere job i Commerce.</span><span class="sxs-lookup"><span data-stu-id="d9632-156">To enable jobs in Commerce, follow these steps.</span></span>
 
-<span data-ttu-id="8b41f-157">Følg disse trin for at aktivere job i Commerce.</span><span class="sxs-lookup"><span data-stu-id="8b41f-157">To enable jobs in Commerce, follow these steps.</span></span>
+1. <span data-ttu-id="d9632-157">Log på miljøet (hovedkontor).</span><span class="sxs-lookup"><span data-stu-id="d9632-157">Sign in to the environment (HQ).</span></span>
+1. <span data-ttu-id="d9632-158">Brug menuen til venstre for at gå til **Retail og Commerce \> Forespørgsler og rapporter \> Batchjobs**.</span><span class="sxs-lookup"><span data-stu-id="d9632-158">Use the menu on the left to go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.</span></span>
 
-1. <span data-ttu-id="8b41f-158">Log på miljøet (hovedkontor).</span><span class="sxs-lookup"><span data-stu-id="8b41f-158">Sign in to the environment (HQ).</span></span>
-1. <span data-ttu-id="8b41f-159">Brug menuen til venstre for at gå til **Retail og Commerce \> Forespørgsler og rapporter \> Batchjobs**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-159">Use the menu on the left to go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.</span></span>
+    <span data-ttu-id="d9632-159">De resterende trin i denne procedure skal fuldføres for hvert af følgende job:</span><span class="sxs-lookup"><span data-stu-id="d9632-159">The remaining steps of this procedure must be completed for each of the following jobs:</span></span>
 
-    <span data-ttu-id="8b41f-160">De resterende trin i denne procedure skal fuldføres for hvert af følgende job:</span><span class="sxs-lookup"><span data-stu-id="8b41f-160">The remaining steps of this procedure must be completed for each of the following jobs:</span></span>
+    * <span data-ttu-id="d9632-160">Behandling af e-mail-besked om detailordre</span><span class="sxs-lookup"><span data-stu-id="d9632-160">Process retail order email notification</span></span>
+    * <span data-ttu-id="d9632-161">Produkttilgængelighed</span><span class="sxs-lookup"><span data-stu-id="d9632-161">Product availability</span></span>
+    * <span data-ttu-id="d9632-162">P-0001</span><span class="sxs-lookup"><span data-stu-id="d9632-162">P-0001</span></span>
+    * <span data-ttu-id="d9632-163">Synkroniser ordrejob</span><span class="sxs-lookup"><span data-stu-id="d9632-163">Synchronize orders job</span></span>
 
-    * <span data-ttu-id="8b41f-161">Behandling af e-mail-besked om detailordre</span><span class="sxs-lookup"><span data-stu-id="8b41f-161">Process retail order email notification</span></span>
-    * <span data-ttu-id="8b41f-162">Produkttilgængelighed</span><span class="sxs-lookup"><span data-stu-id="8b41f-162">Product availability</span></span>
-    * <span data-ttu-id="8b41f-163">P-0001</span><span class="sxs-lookup"><span data-stu-id="8b41f-163">P-0001</span></span>
-    * <span data-ttu-id="8b41f-164">Synkroniser ordrejob</span><span class="sxs-lookup"><span data-stu-id="8b41f-164">Synchronize orders job</span></span>
+1. <span data-ttu-id="d9632-164">Brug Quick Filter til at søge efter jobbet ved hjælp af dets navn.</span><span class="sxs-lookup"><span data-stu-id="d9632-164">Use the Quick Filter to search for the job by name.</span></span>
+1. <span data-ttu-id="d9632-165">Hvis status for jobbet er **Udfører**, skal du gøre følgende:</span><span class="sxs-lookup"><span data-stu-id="d9632-165">If the status of the job is **Executing**, follow these steps:</span></span>
 
-1. <span data-ttu-id="8b41f-165">Brug Quick Filter til at søge efter jobbet ved hjælp af dets navn.</span><span class="sxs-lookup"><span data-stu-id="8b41f-165">Use the Quick Filter to search for the job by name.</span></span>
-1. <span data-ttu-id="8b41f-166">Hvis status for jobbet er **Udfører**, skal du gøre følgende:</span><span class="sxs-lookup"><span data-stu-id="8b41f-166">If the status of the job is **Executing**, follow these steps:</span></span>
+    1. <span data-ttu-id="d9632-166">Vælg posten.</span><span class="sxs-lookup"><span data-stu-id="d9632-166">Select the record.</span></span>
+    1. <span data-ttu-id="d9632-167">Klik på **Batchjob** i handlingsruden, og vælg **Skift status**.</span><span class="sxs-lookup"><span data-stu-id="d9632-167">On the Action Pane, on **Batch job** tab, select **Change status**.</span></span>
+    1. <span data-ttu-id="d9632-168">Vælg **Annullering**, og vælg derefter **OK**.</span><span class="sxs-lookup"><span data-stu-id="d9632-168">Select **Canceling**, and then select **OK**.</span></span>
 
-    1. <span data-ttu-id="8b41f-167">Vælg posten.</span><span class="sxs-lookup"><span data-stu-id="8b41f-167">Select the record.</span></span>
-    1. <span data-ttu-id="8b41f-168">Klik på **Batchjob** i handlingsruden, og vælg **Skift status**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-168">On the Action Pane, on **Batch job** tab, select **Change status**.</span></span>
-    1. <span data-ttu-id="8b41f-169">Vælg **Annullering**, og vælg derefter **OK**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-169">Select **Canceling**, and then select **OK**.</span></span>
+<span data-ttu-id="d9632-169">Du kan også vælge at angive gentagelsesintervallet til et (1) minut for følgende job:</span><span class="sxs-lookup"><span data-stu-id="d9632-169">Optionally, you can also set the recurrence interval to one (1) minute for the following jobs:</span></span>
 
-<span data-ttu-id="8b41f-170">Du kan også vælge at angive gentagelsesintervallet til et (1) minut for følgende job:</span><span class="sxs-lookup"><span data-stu-id="8b41f-170">Optionally, you can also set the recurrence interval to one (1) minute for the following jobs:</span></span>
+* <span data-ttu-id="d9632-170">Behandling af job med e-mailbesked om detailordre</span><span class="sxs-lookup"><span data-stu-id="d9632-170">Process retail order email notification job</span></span>
+* <span data-ttu-id="d9632-171">P-0001-job</span><span class="sxs-lookup"><span data-stu-id="d9632-171">P-0001 job</span></span>
+* <span data-ttu-id="d9632-172">Synkroniser ordrejob</span><span class="sxs-lookup"><span data-stu-id="d9632-172">Synchronize orders job</span></span>
 
-* <span data-ttu-id="8b41f-171">Behandling af job med e-mailbesked om detailordre</span><span class="sxs-lookup"><span data-stu-id="8b41f-171">Process retail order email notification job</span></span>
-* <span data-ttu-id="8b41f-172">P-0001-job</span><span class="sxs-lookup"><span data-stu-id="8b41f-172">P-0001 job</span></span>
-* <span data-ttu-id="8b41f-173">Synkroniser ordrejob</span><span class="sxs-lookup"><span data-stu-id="8b41f-173">Synchronize orders job</span></span>
+### <a name="run-full-data-synchronization"></a><span data-ttu-id="d9632-173">Kør fuld datasynkronisering</span><span class="sxs-lookup"><span data-stu-id="d9632-173">Run full data synchronization</span></span>
 
-### <a name="run-full-data-synchronization"></a><span data-ttu-id="8b41f-174">Kør fuld datasynkronisering</span><span class="sxs-lookup"><span data-stu-id="8b41f-174">Run full data synchronization</span></span>
+<span data-ttu-id="d9632-174">Følg disse trin for at køre fuld datasynkronisering i Commerce-hovedkontor.</span><span class="sxs-lookup"><span data-stu-id="d9632-174">To run full data synchronization in Commerce, follow these steps in Commerce headquarters.</span></span>
 
-<span data-ttu-id="8b41f-175">Følg disse trin for at køre fuld datasynkronisering i Commerce-hovedkontor.</span><span class="sxs-lookup"><span data-stu-id="8b41f-175">To run full data synchronization in Commerce, follow these steps in Commerce headquarters.</span></span>
+1. <span data-ttu-id="d9632-175">Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Konfiguration af hovedkontor \> Handelsplanlægger \> Kanaldatabase**.</span><span class="sxs-lookup"><span data-stu-id="d9632-175">Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.</span></span>
+1. <span data-ttu-id="d9632-176">Vælg den kanal, der hedder **scXXXXXXXXX**.</span><span class="sxs-lookup"><span data-stu-id="d9632-176">Select the channel that is named **scXXXXXXXXX**.</span></span>
+1. <span data-ttu-id="d9632-177">Vælg **Fuld datasynkronisering** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="d9632-177">On the Action Pane, select **Full data sync**.</span></span>
+1. <span data-ttu-id="d9632-178">Angiv **9999** som distributionsplanen.</span><span class="sxs-lookup"><span data-stu-id="d9632-178">Enter **9999** as the distribution schedule.</span></span>
+1. <span data-ttu-id="d9632-179">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="d9632-179">Select **OK**.</span></span>
+1. <span data-ttu-id="d9632-180">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="d9632-180">Select **OK**.</span></span>
 
-1. <span data-ttu-id="8b41f-176">Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Konfiguration af hovedkontor \> Handelsplanlægger \> Kanaldatabase**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-176">Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.</span></span>
-1. <span data-ttu-id="8b41f-177">Vælg den kanal, der hedder **scXXXXXXXXX**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-177">Select the channel that is named **scXXXXXXXXX**.</span></span>
-1. <span data-ttu-id="8b41f-178">Vælg **Fuld datasynkronisering** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="8b41f-178">On the Action Pane, select **Full data sync**.</span></span>
-1. <span data-ttu-id="8b41f-179">Angiv **9999** som distributionsplanen.</span><span class="sxs-lookup"><span data-stu-id="8b41f-179">Enter **9999** as the distribution schedule.</span></span>
-1. <span data-ttu-id="8b41f-180">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-180">Select **OK**.</span></span>
-1. <span data-ttu-id="8b41f-181">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="8b41f-181">Select **OK**.</span></span>
+### <a name="test-credit-card-information-to-do-test-purchases"></a><span data-ttu-id="d9632-181">Test kreditkortoplysninger for at udføre testindkøb</span><span class="sxs-lookup"><span data-stu-id="d9632-181">Test credit card information to do test purchases</span></span>
 
-### <a name="test-credit-card-information-to-do-test-purchases"></a><span data-ttu-id="8b41f-182">Test kreditkortoplysninger for at udføre testindkøb</span><span class="sxs-lookup"><span data-stu-id="8b41f-182">Test credit card information to do test purchases</span></span>
+<span data-ttu-id="d9632-182">Du kan bruge følgende disse testkreditkortoplysninger til at udføre testtransaktioner på webstedet:</span><span class="sxs-lookup"><span data-stu-id="d9632-182">To perform test transactions on the site, you can use the following test credit card information:</span></span>
 
-<span data-ttu-id="8b41f-183">Du kan bruge følgende disse testkreditkortoplysninger til at udføre testtransaktioner på webstedet:</span><span class="sxs-lookup"><span data-stu-id="8b41f-183">To perform test transactions on the site, you can use the following test credit card information:</span></span>
-
-- <span data-ttu-id="8b41f-184">**Kortnummer:** 4111-1111-1111-1111</span><span class="sxs-lookup"><span data-stu-id="8b41f-184">**Card number:** 4111-1111-1111-1111</span></span>
-- <span data-ttu-id="8b41f-185">**Udløbsdato** 10/20</span><span class="sxs-lookup"><span data-stu-id="8b41f-185">**Expiration date:** 10/20</span></span>
-- <span data-ttu-id="8b41f-186">**Kontrolcifrene på kreditkortet (CVV):** 737</span><span class="sxs-lookup"><span data-stu-id="8b41f-186">**Card verification value (CVV) code:** 737</span></span>
+- <span data-ttu-id="d9632-183">**Kortnummer:** 4111-1111-1111-1111</span><span class="sxs-lookup"><span data-stu-id="d9632-183">**Card number:** 4111-1111-1111-1111</span></span>
+- <span data-ttu-id="d9632-184">**Udløbsdato** 10/20</span><span class="sxs-lookup"><span data-stu-id="d9632-184">**Expiration date:** 10/20</span></span>
+- <span data-ttu-id="d9632-185">**Kontrolcifrene på kreditkortet (CVV):** 737</span><span class="sxs-lookup"><span data-stu-id="d9632-185">**Card verification value (CVV) code:** 737</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="8b41f-187">Forsøg aldrig under nogen omstændigheder at bruge faktiske kreditkortoplysninger på testwebstedet.</span><span class="sxs-lookup"><span data-stu-id="8b41f-187">Never, under any circumstances, try to use actual credit card information on the test site.</span></span>
+> <span data-ttu-id="d9632-186">Forsøg aldrig under nogen omstændigheder at bruge faktiske kreditkortoplysninger på testwebstedet.</span><span class="sxs-lookup"><span data-stu-id="d9632-186">Never, under any circumstances, try to use actual credit card information on the test site.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="8b41f-188">Næste trin</span><span class="sxs-lookup"><span data-stu-id="8b41f-188">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="d9632-187">Næste trin</span><span class="sxs-lookup"><span data-stu-id="d9632-187">Next steps</span></span>
 
-<span data-ttu-id="8b41f-189">Når klargørings- og konfigurationstrinnene er fuldførte, kan du begynde at bruge dit evalueringsmiljø.</span><span class="sxs-lookup"><span data-stu-id="8b41f-189">After the provisioning and configuration steps are completed, you can start to use your evaluation environment.</span></span> <span data-ttu-id="8b41f-190">Brug Site Builder-URL-adressen for Commerce-webstedet til at gå til oprettelsesoplevelsen.</span><span class="sxs-lookup"><span data-stu-id="8b41f-190">Use the Commerce site builder URL to go to the authoring experience.</span></span> <span data-ttu-id="8b41f-191">Brug URL-adressen for Commerce-webstedet for at gå til detailkundewebstedet.</span><span class="sxs-lookup"><span data-stu-id="8b41f-191">Use the Commerce site URL to go to the retail customer site experience.</span></span>
+<span data-ttu-id="d9632-188">Når klargørings- og konfigurationstrinnene er fuldførte, kan du begynde at bruge dit evalueringsmiljø.</span><span class="sxs-lookup"><span data-stu-id="d9632-188">After the provisioning and configuration steps are completed, you can start to use your evaluation environment.</span></span> <span data-ttu-id="d9632-189">Brug Site Builder-URL-adressen for Commerce-webstedet til at gå til oprettelsesoplevelsen.</span><span class="sxs-lookup"><span data-stu-id="d9632-189">Use the Commerce site builder URL to go to the authoring experience.</span></span> <span data-ttu-id="d9632-190">Brug URL-adressen for Commerce-webstedet for at gå til detailkundewebstedet.</span><span class="sxs-lookup"><span data-stu-id="d9632-190">Use the Commerce site URL to go to the retail customer site experience.</span></span>
 
-<span data-ttu-id="8b41f-192">Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, se [Konfigurere valgfrie funktioner til et Commerce-evalueringsmiljø](cpe-optional-features.md).</span><span class="sxs-lookup"><span data-stu-id="8b41f-192">To configure optional features for your Commerce evaluation environment, see [Configure optional features for a Commerce evaluation environment](cpe-optional-features.md).</span></span>
+<span data-ttu-id="d9632-191">Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, se [Konfigurere valgfrie funktioner til et Commerce-evalueringsmiljø](cpe-optional-features.md).</span><span class="sxs-lookup"><span data-stu-id="d9632-191">To configure optional features for your Commerce evaluation environment, see [Configure optional features for a Commerce evaluation environment](cpe-optional-features.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="8b41f-193">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="8b41f-193">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="d9632-192">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="d9632-192">Additional resources</span></span>
 
-[<span data-ttu-id="8b41f-194">Oversigt over Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="8b41f-194">Dynamics 365 Commerce evaluation environment overview</span></span>](cpe-overview.md)
+[<span data-ttu-id="d9632-193">Oversigt over Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="d9632-193">Dynamics 365 Commerce evaluation environment overview</span></span>](cpe-overview.md)
 
-[<span data-ttu-id="8b41f-195">Klargøre et Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="8b41f-195">Provision a Dynamics 365 Commerce evaluation environment</span></span>](provisioning-guide.md)
+[<span data-ttu-id="d9632-194">Klargøre et Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="d9632-194">Provision a Dynamics 365 Commerce evaluation environment</span></span>](provisioning-guide.md)
 
-[<span data-ttu-id="8b41f-196">Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="8b41f-196">Configure optional features for a Dynamics 365 Commerce evaluation environment</span></span>](cpe-optional-features.md)
+[<span data-ttu-id="d9632-195">Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="d9632-195">Configure optional features for a Dynamics 365 Commerce evaluation environment</span></span>](cpe-optional-features.md)
 
-[<span data-ttu-id="8b41f-197">Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="8b41f-197">Configure BOPIS in a Dynamics 365 Commerce evaluation environment</span></span>](cpe-bopis.md)
+[<span data-ttu-id="d9632-196">Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="d9632-196">Configure BOPIS in a Dynamics 365 Commerce evaluation environment</span></span>](cpe-bopis.md)
 
-[<span data-ttu-id="8b41f-198">Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="8b41f-198">Dynamics 365 Commerce evaluation environment FAQ</span></span>](cpe-faq.md)
+[<span data-ttu-id="d9632-197">Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø</span><span class="sxs-lookup"><span data-stu-id="d9632-197">Dynamics 365 Commerce evaluation environment FAQ</span></span>](cpe-faq.md)
 
-[<span data-ttu-id="8b41f-199">Microsoft Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="8b41f-199">Microsoft Lifecycle Services (LCS)</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[<span data-ttu-id="d9632-198">Microsoft Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="d9632-198">Microsoft Lifecycle Services (LCS)</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[<span data-ttu-id="8b41f-200">Retail Cloud Scale Unit (RCSU)</span><span class="sxs-lookup"><span data-stu-id="8b41f-200">Retail Cloud Scale Unit (RCSU)</span></span>](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[<span data-ttu-id="d9632-199">Retail Cloud Scale Unit (RCSU)</span><span class="sxs-lookup"><span data-stu-id="d9632-199">Retail Cloud Scale Unit (RCSU)</span></span>](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
-[<span data-ttu-id="8b41f-201">Microsoft Azure-portal</span><span class="sxs-lookup"><span data-stu-id="8b41f-201">Microsoft Azure portal</span></span>](https://azure.microsoft.com/features/azure-portal)
+[<span data-ttu-id="d9632-200">Microsoft Azure-portal</span><span class="sxs-lookup"><span data-stu-id="d9632-200">Microsoft Azure portal</span></span>](https://azure.microsoft.com/features/azure-portal)
 
-[<span data-ttu-id="8b41f-202">Dynamics 365 Commerce-websted</span><span class="sxs-lookup"><span data-stu-id="8b41f-202">Dynamics 365 Commerce website</span></span>](https://aka.ms/Dynamics365CommerceWebsite)
+[<span data-ttu-id="d9632-201">Dynamics 365 Commerce-websted</span><span class="sxs-lookup"><span data-stu-id="d9632-201">Dynamics 365 Commerce website</span></span>](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
