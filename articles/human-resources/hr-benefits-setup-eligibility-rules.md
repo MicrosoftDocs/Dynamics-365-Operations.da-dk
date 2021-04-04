@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2920a03eaec226b306d03ebf8b899113128c410e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 872b5cface7af19e2ef970e624c0cb5ce14e75b1
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111915"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466128"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere berettigelsesregler og -indstillinger
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Når du har konfigureret de nødvendige parametre for Frynsegodeadministration i Microsoft Dynamics 365 Human Resources, kan du oprette berettigelsesregler, bundter, perioder og programmer, som du vil knytte til dine frynsegodeplaner.
 

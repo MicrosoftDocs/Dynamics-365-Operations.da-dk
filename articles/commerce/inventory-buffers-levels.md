@@ -14,20 +14,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c519095d174414d6d4a8c86bc171ea62e1c72582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea6844307e63b351ef914134b7d8392b0910019a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012418"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478382"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurere lagerbuffere og lagerniveauer
 
 [!include [banner](includes/banner.md)]
 
 Dette emne forklarer, hvordan du kan konfigurere lagerbuffere og lagerniveauer, der bestemmer beskeder om lagertilgængelighed på Microsoft Dynamics 365 Commerce-websteder.
-
-## <a name="overview"></a>Overblik
 
 Dynamics 365 Commerce Headquarters indeholder lagerdata og forskellige kanaler som f.eks. POS-programmer, e-handelsudstillingsvinduer og andre brugerdefinerede integrerede programmer, der flytter lagerbeholdningen rundt på en asynkron måde. Derfor er de tilgængelige lagerværdier, der er hentet via siden disponibel lagerbeholdning i Commerce Headquarters, via POS-brugergrænsefladen (UI) og via e-Commerce-lagertilgængeligheds-API'erne, ikke altid 100-procent nøjagtige i realtid.
 

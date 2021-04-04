@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9107a14a79883dc0e33de311baeec5fd6d692a35
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004621"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500496"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling i lokalitetsvejledning til lagerpluk
 
@@ -119,7 +119,7 @@ FIFO-strategien finder den lokation, der indeholder den ældste aldersfordelte d
 1. Gå til siden **Salgsordre**, og vælg **Frigiv til lager** i gruppen **Handlinger** på fanen **Lager** i handlingsruden. Du får orienterende meddelelser. Systemet opretter en forsendelse, føjer den til en ny last og opretter det nødvendige arbejde.
 1. I oversigtspanelet **Salgsordrelinjer** i menuen **Lager** skal du vælge **Arbejdsdetaljer** for at åbne det arbejde, der er oprettet for denne salgsordre. Bemærk, at den linje, hvor værdien for **Arbejdstype** er *Pluk*, viser en værdi for **Lokation** *PR-002*. Denne lokation indeholder den nummerplade, der har den ældste aldersfordelte dato (FIFO).
 1. Vælg **Lagersted \> Forsendelsesoplysninger**.
-1. Gå til oversigtspanelet **_Generelt_**, lav en note om bølge-id'et, så du kan bruge det i scenarie 2.
+1. I oversigtspanelet **Generelt** skal du notere dig bølge-id'et, så du kan bruge det i scenarie 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenarie 2: Konfigurere og bruge aldersfordelt LIFO-lokation
 
