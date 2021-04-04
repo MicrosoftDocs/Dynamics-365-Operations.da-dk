@@ -1,12 +1,11 @@
 ---
-title: Økonomisk indsigt
-description: Økonomisk indsigt bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber.
+title: Økonomisk analyse
+description: Økonomisk analyse bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber.
 author: kweekley
 manager: AnnBe
 ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,20 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9aaf24147900c890a14c60ab969da7124c538911
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
+ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115722"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5572360"
 ---
-# <a name="financial-insights"></a>Økonomisk indsigt
+# <a name="financial-analysis"></a>Økonomisk analyse
 
 [!include [banner](../includes/banner.md)]
 
-**Økonomisk indsigt** bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber. Power BI er integreret i programmet. Fokus for **økonomiske indsigt** er en analytisk rapportering. Personer på tværs af en organisation kan få vist, undersøge, forstå og reagere. 
+**Økonomisk analyse** bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber. Power BI er integreret i programmet. Fokus for **økonomiske analyse** er en analytisk rapportering. Personer på tværs af en organisation kan få vist, undersøge, forstå og reagere. 
 
-**Økonomiske indsigt** kombinerer data fra finansmodulet og reskontroer til at give et mere komplet billede af en organisations økonomiske tilstand.
+**Økonomiske analyse** kombinerer data fra finansmodulet og reskontroer til at give et mere komplet billede af en organisations økonomiske tilstand.
 
 > [!NOTE]
 > Dette dokument bruger følgende Power BI-terminologi:
@@ -38,14 +37,14 @@ ms.locfileid: "5115722"
 > - **Side** – En fane i en enkelt .pbix-fil. Hver side kan indeholde et eller flere visuelle elementer.
 > - **Visuelt element** – en enkelt datakilde, f.eks. et kort, KPI, diagram, grafik, matrix eller regnskab. En side med et regnskab som et visuelt element kan ikke have andre visuelle elementer på grund af størrelsen af de data, der rapporteres om.
 
-I øjeblikket bruges **økonomisk indsigt** til at få vist data for enten den aktive juridiske enhed eller alle juridiske enheder. I fremtidige versioner kan arbejdsområdet kan udvikle sig til det sted, hvor du kan bruge Power BI til redigering og oprettelse af visuelle elementer.
+I øjeblikket bruges **økonomisk analyse** til at få vist data for enten den aktive juridiske enhed eller alle juridiske enheder. I fremtidige versioner kan arbejdsområdet kan udvikle sig til det sted, hvor du kan bruge Power BI til redigering og oprettelse af visuelle elementer.
 
-Arbejdsområdet **Regnskabsdirektørens oversigt** viser de samme visuelle elementer som **økonomisk indsigt**, men fokuserer på, at du kan få vist og filtrere dataene i eksisterende rapporter. I fremtidige versioner vil du kunne tilføje nye visuelle elementer arbejdsområdet **Økonomisk indsigt**. De nye visuelle elementer vil muligvis også være tilgængelige i arbejdsområder, der er fokuseret på andre roller, f.eks. projektledere eller kreditorchefer. Arbejdsområdet **Regnskabsdirektørens oversigt** fortsætter med at vise data for alle juridiske enheder, uanset hvilke juridiske enheder, som rollen har adgang til.
+Arbejdsområdet **Regnskabsdirektørens oversigt** viser de samme visuelle elementer som **økonomisk analyse**, men fokuserer på, at du kan få vist og filtrere dataene i eksisterende rapporter. I fremtidige versioner vil du kunne tilføje nye visuelle elementer arbejdsområdet **Økonomisk analyse**. De nye visuelle elementer vil muligvis også være tilgængelige i arbejdsområder, der er fokuseret på andre roller, f.eks. projektledere eller kreditorchefer. Arbejdsområdet **Regnskabsdirektørens oversigt** fortsætter med at vise data for alle juridiske enheder, uanset hvilke juridiske enheder, som rollen har adgang til.
 
 ## <a name="dynamics-365-finance-setup"></a>Opsætning af Dynamics 365 Finance
 **Finans**
 
-Kategorierne hovedkontotype og hovedkonto bruges til at udfylde relevante standardhovedkonti i regnskabet **Balance** og de forskellige regnskaber **Resultatopgørelse** i **Økonomisk indsigt**.
+Kategorierne hovedkontotype og hovedkonto bruges til at udfylde relevante standardhovedkonti i regnskabet **Balance** og de forskellige regnskaber **Resultatopgørelse** i **Økonomisk analyse**.
 
 På siden **Hovedkonti** skal du definere din hovedkonto, så en af følgende typer knyttes til den:
 
@@ -57,14 +56,14 @@ På siden **Hovedkonti** skal du definere din hovedkonto, så en af følgende ty
 
 Tildel ikke nogen anden hovedkontotype, f.eks. **Balance** eller **Drift**, til dine hovedkonti. Rapportering kan ikke bestemme typen af hovedkontoen, når der er tildelt andre typer af hovedkonto, fordi de ikke tilstrækkeligt detaljerede. Typen af hovedkonto skal bestemmes for at vise passiver og indtægter som positive beløb i finansielle rapporter.
 
-For at kunne vises på regnskaberne og få at kunne inkluderes i forskellige andre visuelle elementer, f.eks. KPI'er, skal hver hovedkonto tildeles en hovedkontokategori. Hovedkontokategorierne er blevet forbedret, så de inkluderer en visningsrækkefølge. Visningsrækkefølgen bruges specifikt i regnskaber i **økonomisk indsigt**. Når du redigerer eller tilføjer en ny hovedkontokategori, kan du ændre værdien **Visningsrækkefølge** for at definere den rækkefølge, som bruges til visning af hovedkontokategorierne i et regnskab. Hvis du er nødt til at ændre visningsrækkefølgen for mange hovedkontokategorier, kan du bruge Åbn i Excel-funktionen til hurtigt at redigere og udgive ændringerne tilbage til programmet.
+For at kunne vises på regnskaberne og få at kunne inkluderes i forskellige andre visuelle elementer, f.eks. KPI'er, skal hver hovedkonto tildeles en hovedkontokategori. Hovedkontokategorierne er blevet forbedret, så de inkluderer en visningsrækkefølge. Visningsrækkefølgen bruges specifikt i regnskaber i **økonomisk analyse**. Når du redigerer eller tilføjer en ny hovedkontokategori, kan du ændre værdien **Visningsrækkefølge** for at definere den rækkefølge, som bruges til visning af hovedkontokategorierne i et regnskab. Hvis du er nødt til at ændre visningsrækkefølgen for mange hovedkontokategorier, kan du bruge Åbn i Excel-funktionen til hurtigt at redigere og udgive ændringerne tilbage til programmet.
 
 ## <a name="entity-store"></a>Enhedslager
-Dataene til **Økonomisk indsigt** trækkes fra enhedslageret (**Systemadministration** \> **Konfiguration** \> **Enhedslager**). Hvis du åbner arbejdsområdet **Regnskabsdirektørens oversigt** eller **Økonomisk indsigt**, og følgende advarsel vises i de visuelle elementer, skal du opdatere enhederne.
+Dataene til **Økonomisk analyse** trækkes fra enhedslageret (**Systemadministration** \> **Konfiguration** \> **Enhedslager**). Hvis du åbner arbejdsområdet **Regnskabsdirektørens oversigt** eller **Økonomisk analyse**, og følgende advarsel vises i de visuelle elementer, skal du opdatere enhederne.
 
 ![Advarsel!](./media/Cantdisplay.png)
 
-Du skal opdatere følgende enheder for at se data i arbejdsområderne **Økonomisk indsigt** og **Regnskabsdirektørens oversigt**:
+Du skal opdatere følgende enheder for at se data i arbejdsområdet **Økonomisk analyse**:
 
 - BudgetActivityMeasure
 - Transaktionsdata version 3 til økonomirapportering 
@@ -74,8 +73,6 @@ Du skal opdatere følgende enheder for at se data i arbejdsområderne **Økonomi
 - Indkøbskube
 - Salgskube
 
-I den forrige version anvendtes enhederne LedgerActivityMeasure og VendPaymentBIMeasure til data i arbejdsområdet **Regnskabsdirektørens oversigt**. De bruges dog ikke længere i den aktuelle version.
-
 Du kan definere et tilbagevendende batchjob for regelmæssigt at opdatere dataene i enhederne. Da hver enhed genopbygges fuldstændig under en opdatering, skal du være omhyggelig med valg af tidspunkt og hyppighed af opdateringer til enheden. Den primære enhed, der bruges til regnskaber er enheden FinancialReportingTransactionData. Derfor kan du beslutte dig til at opdatere enheden oftere.
 
 ## <a name="security"></a>Sikkerhed
@@ -83,22 +80,21 @@ På nuværende tidspunkt kan dataene i integrerede Power BI-rapporter ikke begr�
 
 | Programadgangsrettighed                                    | Roller | Betegnelse |
 |-----------------------------------------|-------|------------|
-| Vis arbejdsområde for regnskabsdirektørens oversigt             | Økonomidirektør | Denne pligt giver adgang til arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
-| Vis økonomisk indsigt i aktuelt firma | <ul><li>Bogholder</li><li>Regnskabschef</li><li>Regnskabsansvarlig</li><li>Revisor</li><li>Budgetchef</li><li>Administrerende direktør</li><li>Økonomidirektør</li><li>Finansinspektør</li></ul> | Denne pligt giver adgang til økonomisk indsigt. Som standard bruges det aktive firma som et filter. Du kan ikke tilføje andre juridiske enheder. |
-| Vis økonomisk indsigt i hele firmaet   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 er denne opgave ikke tildelt en rolle. I den næste udgave knyttes denne pligt til rollen Økonomidirektør. | Denne pligt giver adgang til menuelementet for arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
+| Vis økonomisk analyse i aktuelt firma | <ul><li>Bogholder</li><li>Regnskabschef</li><li>Regnskabsansvarlig</li><li>Revisor</li><li>Budgetchef</li><li>Administrerende direktør</li><li>Økonomidirektør</li><li>Finansinspektør</li></ul> | Denne pligt giver adgang til økonomisk analyse. Som standard bruges det aktive firma som et filter. Du kan ikke tilføje andre juridiske enheder. |
+| Vis hele firmaets økonomisk analyse   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 er denne opgave ikke tildelt en rolle. I den næste udgave knyttes denne pligt til rollen Økonomidirektør. | Denne pligt giver adgang til menuelementet for arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
 
 
-## <a name="financial-reporting-vs-financial-insights"></a>Økonomirapportering vs. Økonomisk indsigt
-Selvom **Økonomisk indsigt** indeholder regnskaber, er det ikke en erstatning for Økonomirapportering i programmet. Standardregnskaberne i **Økonomisk indsigt** har begrænset omfang og omfatter ikke alle former for regnskaber. Økonomirapportering er stadig det primære værktøj til at designe, oprette og generere lovpligtige regnskaber.
+## <a name="financial-reporting-vs-financial-analysis"></a>Økonomirapportering vs. Økonomisk analyse
+Selvom **Økonomisk analyse** indeholder regnskaber, er det ikke en erstatning for Økonomirapportering i programmet. Standardregnskaberne i **Økonomisk analyse** har begrænset omfang og omfatter ikke alle former for regnskaber. Økonomirapportering er stadig det primære værktøj til at designe, oprette og generere lovpligtige regnskaber.
 
 I følgende diagram til sammenligning får du hjælp til at skelne mellem de to indstillinger:
 
 
-|                                                          | Økonomirapportering                                               | Økonomisk indsigt |
+|                                                          | Financial Reporting                                               | Økonomisk analyse |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Redigere standardrapporter**                                 | Ja                                                               | Nr. |
-| **Oprette nye rapporter**                                   | Ja                                                               | Nr. |
-| **Udskriv rapporter**                                        | Ja                                                               | Nr. |
+| **Redigere standardrapporter**                                 | Ja                                                               | Ingen |
+| **Oprette nye rapporter**                                   | Ja                                                               | Ingen |
+| **Udskrivning af rapporter**                                        | Ja                                                               | Nr. |
 | **Eksportér til Excel**                                      | Ja                                                               | Rådata for begrænsede eksporter til Excel, ikke en formateret rapport |
 | **Understøtte rapporteringshierarki/organisationshierarki**   | Ja                                                               | Nr. |
 | **Rapportere reskontrodata**                             | Ja Begrænset til kreditor, debitor                              | Ja Kreditor, debitor, kreditor-/debitorgrupper, kreditor-/debitoradresser osv. |
@@ -108,7 +104,7 @@ I følgende diagram til sammenligning får du hjælp til at skelne mellem de to 
 | **Rapportere eksterne data**                              | Nr.                                                                | Nr. |
 | **Understøtte konsolideringer**                               | Ja                                                               | Begrænset Kan rapportere om flere firmaer, men kun bruge regnskabsvaluta |
 
-Ud over brugergrænsefladen i det oprindelige arbejdsområde **Regnskabsdirektørens oversigt** er nye KPI'er, diagrammer og regnskaber nu tilgængelig. Følgende regnskaber er tilgængelige:
+Følgende regnskaber er tilgængelige:
 
 - Råbalance
 - Balance
@@ -121,7 +117,7 @@ Ud over brugergrænsefladen i det oprindelige arbejdsområde **Regnskabsdirektø
 - Salg pr. kunde
 
 ## <a name="edit-visuals"></a>Redigere visuelle elementer
-I den første version af **økonomisk indsigt** kan ingen af de visuelle elementer redigeres. I fremtidige versioner vil brugere, der har den nødvendige sikkerhed, kunne oprette nye visuelle elementer, kopiere eksisterende visuelle elementer og redigere visuelle elementer. Selvom de .pbix-filer, der indeholder rapporterne, er tilgængelige som ressourcer, anbefaler vi ikke, at du redigerer standardrapporterne. Der vil blive foretaget yderligere ændringer af datamodellen, standardrapporterne og de brugerdefinerede visuelle elementer til regnskab, der bruges til at oprette regnskabet. Hvis du derfor vil drage nytte af nye funktioner og ændringer til datamodellen i den næste version, vil du være nødt til at gentage alle de ændringer, du har foretaget i standardrapporterne via Microsoft Power BI Desktop.
+I tidligere versioner af **økonomisk analyse** kan ingen af de visuelle elementer redigeres. I fremtidige versioner vil brugere, der har den nødvendige sikkerhed, kunne oprette nye visuelle elementer, kopiere eksisterende visuelle elementer og redigere visuelle elementer. Selvom de .pbix-filer, der indeholder rapporterne, er tilgængelige som ressourcer, anbefaler vi ikke, at du redigerer standardrapporterne. Der vil blive foretaget yderligere ændringer af datamodellen, standardrapporterne og de brugerdefinerede visuelle elementer til regnskab, der bruges til at oprette regnskabet. Hvis du derfor vil drage nytte af nye funktioner og ændringer til datamodellen i den næste version, vil du være nødt til at gentage alle de ændringer, du har foretaget i standardrapporterne via Microsoft Power BI Desktop.
 
 ## <a name="filtering"></a>Filtrering
 Brugere kan filtrere rapporten ved hjælp af ruden **Filter** til venstre. Denne rude er den samme rude, der er tilgængelig via Power BI Desktop. Der findes forskellige niveauer af filtrering, hvoraf nogle muligvis ikke er tilgængelige, afhængigt af hvad du har valgt på en side (fane), eller om du bruger funktionerne til detaljeadgang:
@@ -168,7 +164,7 @@ Følgende dimensioner bruges i standardrapporterne. Ingen af disse dimensioner e
 - Bynavn
 
 > [!IMPORTANT] 
-> Hvis du opsummerer posteringer for flere leverandører eller kunder i et enkelt bilag ved hjælp af de økonomiske kladder, vil dataene være forkerte. Rapportering kan ikke fastslå, hvilken leverandør eller kunde er relateret til en bestemt finanskonto i en kladdepostering, da disse oplysninger ikke vedligeholdes overalt. Vi anbefaler derfor, at du ikke angiver flere leverandører, kunder, anlægsaktiver eller projekter i et enkelt bilag.
+> Hvis du opsummerer posteringer for flere leverandører eller kunder i et enkelt bilag ved hjælp af de økonomiske kladder, vil dataene være forkerte. Rapporteringsprocessen kan ikke fastslå, hvilken leverandør eller kunde er relateret til en bestemt finanskonto i en kladdepostering, da disse oplysninger ikke vedligeholdes overalt. Vi anbefaler derfor, at du ikke angiver flere leverandører, kunder, anlægsaktiver eller projekter i et enkelt bilag.
 
 ## <a name="drill-on-data"></a>Detailudledning på data
 
@@ -243,7 +239,7 @@ Power BI giver ikke mulighed for at vise og skjule tomme rækker. Hvis en række
 
 ## <a name="additional-resources-for-power-bi"></a>Yderligere ressourcer for Power BI
 
-Oplysningerne i følgende ressourcer er ikke påkrævet for at aktivere de integrerede rapporter til arbejdsområdet **Regnskabsdirektørens oversigt** eller **Økonomisk indsigt** i et produktionsmiljø. I stedet er de nyttige til udviklingsfelter, og hvis du vil integrere dine egne Power BI-rapporter.
+Oplysningerne i følgende ressourcer er ikke påkrævet for at aktivere de integrerede rapporter til arbejdsområdet **Økonomisk analyse** i et produktionsmiljø. I stedet er de nyttige til udviklingsfelter, og hvis du vil integrere dine egne Power BI-rapporter.
 
 - [Få adgang til analytiske arbejdsområder og rapporter i 1-box-miljøet](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 

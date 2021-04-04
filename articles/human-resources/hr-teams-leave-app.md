@@ -3,7 +3,7 @@ title: Administrere anmodninger i Teams
 description: I dette emne kan du se, hvordan du anmoder om fri i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/28/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 79bded5a241a8d5de1847adff3e663359ce1b26f
+ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128155"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571722"
 ---
-# <a name="manage-leave-requests-in-teams"></a>Administrere anmodninger i Teams
+# <a name="manage-leave-requests-in-teams"></a>Administrere fraværsanmodninger i Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du hurtigt anmode om at få fri og se dine flekskontooplysninger direkte i Microsoft Teams. Du kan interagere med en robot for at anmode om oplysninger og starte en orlovsanmodning. Fanen **Fridage** giver mere detaljerede oplysninger. Du kan også sende personer oplysninger om dine kommende fridage i teams og chatte uden for Human Resource-appen.
+Med Dynamics 365 Human Resources-appen i Microsoft Teams kan du hurtigt anmode om at få fri og se dine flekskontooplysninger direkte i Microsoft Teams. Du kan interagere med en robot for at anmode om oplysninger og starte en orlovsanmodning. Fanen **Fridage** giver mere detaljerede oplysninger. Du kan også sende personer oplysninger om dine kommende fridage i Teams og chatte uden for Human Resource-appen.
 
 ## <a name="install-the-app"></a>Installere appen
 
-Du kan finde Human Resources-appen i storen til Teams.
+Du kan finde appen Dynamics 365 Human Resources i lageret til Teams.
 
 1. I Microsoft Teams skal du vælge ellipserne.
 
@@ -70,29 +70,21 @@ Når appen er installeret, vises en velkomstmeddelelse, der giver dig besked om,
 
 Du kan bede bot om at:
 
-- Vise oplysninger om flekskontoen for hver orlovstype, du er tilmeldt.
-
-   ![Vise konti i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-balances.png)
- 
-- Vise flere detaljer om en bestemt orlovstype.
-
-   ![Vise detaljer i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-details.png)
-
 - Starte en anmodning om en orlov for dig.
 
-   ![Anmodning om orlov i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-request.png)
- 
-Når du har startet en orlovsanmodning, kan du justere dagene direkte på kortet.
+  ![Starte en anmodning om orlov i Teams-chat](./media/hr-teams-leave-app-initiate.png)
 
-![Redigering af anmodning i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-edit.png)
- 
-Når du er færdig med at angive oplysninger, skal du vælge **Send** for at sende dem til godkendelse. Du kan også vælge **Gem som kladde** for at vende tilbage til den senere.
+- Chatrobotten udfylder en orlovsanmodning for dig. Vælg **Anmod om fri**, og rediger detaljerne om anmodningen.
 
-![Afsendelse af anmodning i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot-submit.png)
+  ![Redigere detaljer om orlovsanmodning](./media/hr-teams-leave-app-details.png)
+
+- Når du er færdig med at redigere oplysningerne om din anmodning om orlov, skal du vælge **Send** for at sende den til godkendelse.
+
+  ![Sende orlovsanmodning](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Administrere din orlov i Teams
 
-Fanen **Fri** gør det muligt at vise:
+Fanen **Fri** gør det muligt at vise: 
 
 - Kontooplysninger om hver orlovstype, du er tilmeldt
 
@@ -164,21 +156,51 @@ Hvis du er chef med direkte underordnede, kan du få vist dit teams godkendte og
 
 1. I appen Human Resources i Teams skal du vælge **Fri**.
 
-2. Vælg **Teamkalender**.
+2. Vælg **Teamkalender**. I kalenderen vises dine direkte underordnedes godkendte og afventende fravær.
 
    ![Se kalender i Teams-appen Human Resources](./media/hr-teams-leave-app-view-calendar.png)
 
-I kalenderen vises dine direkte underordnedes godkendte og afventende fravær.
+   > [!NOTE]
+   > Hvis du ikke kan se teamkalenderen, kan du bede din administrator om at aktivere den. Du kan finde flere oplysninger i [Installere og konfigurere](hr-admin-teams-leave-app.md#install-and-setup).
 
-![Fraværskalender i Teams-appen Human Resources](./media/hr-teams-leave-app-calendar.png)
+## <a name="supported-languages"></a>Understøttede sprog
+
+Appen Dynamics 365 Human Resources i Teams understøtter følgende sprog:
+
+| Landestandard-id | Sprog |
+| --- | --- |
+| de-DE | Tysk (Tyskland) |
+| es-ES | Spansk (Spanien) |
+| es-MX | Spansk (Mexico) |
+| fr-CA | Fransk (Canada) |
+| fr-FR | Fransk (Frankrig) |
+| it-IT | Italiensk (Italien) |
+| nl-NL | Hollandsk (Nederlandene) |
+| pt-BR | Portugisisk (Brasilien) |
+| tr-TR | Tyrkisk (Tyrkiet) |
+| zh-CN | Kinesisk (forenklet) |
 
 ## <a name="troubleshooting"></a>Fejlfinding
 
-Hvis du har problemer med at logge på eller bruge appen Human Resources Teams, kan du prøve at følge disse fejlfindingsinstruktioner. Hvis du stadig har problemer efter fejlfinding, skal du kontakte Support. Du kan finde flere oplysninger under [Få support](hr-admin-troubleshooting-support.md).
+Hvis du har problemer med at logge på eller bruge Dynamics 365 Human Resources-appen Teams, kan du prøve at følge disse fejlfindingsinstruktioner. Hvis du stadig har problemer efter fejlfinding, skal du kontakte Support. Du kan finde flere oplysninger under [Få support](hr-admin-troubleshooting-support.md).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Der kan ikke logge på appen Human Resources i Teams
 
 Hvis du ikke kan logge på appen, er det muligt, at den konto, du bruger til at logge på Microsoft Teams, ikke er knyttet til en medarbejderpost i Dynamics 365 Human Resources. Kontakt systemadministratoren for at sikre, at din medarbejderpost er tilknyttet korrekt.
+
+### <a name="translations-dont-display-correctly"></a>Oversættelser vises ikke korrekt
+
+Hvis oversættelser ikke vises som forventet, skal du sørge for, at det sprog, du vælger i Teams, svarer til det sprog, der er valgt i **Brugerindstillinger** i Human Resources.
+
+I Teams skal du se på **App-sprog** i **Indstillinger**.
+
+![Teams-indstillinger](./media/hr-teams-leave-app-settings.png)
+
+Vælg **Indstillinger** i Human Resources, og vælg derefter **Brugerindstillinger**. Kontrollér, at feltet **Sprog** svarer til feltet **App-sprog** i Teams.
+
+![Brugerindstillinger i Human Resources](./media/hr-teams-leave-app-user-options.png)
+
+Hvis du stadig oplever oversættelsesproblemer, kan du give os besked. Du kan finde oplysninger i [Få support til Finance and Operations-apps eller Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/human-resources/toc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Der opstod en fejl under godkendelse af orlovsanmodninger i appen Human Resources i Teams
 
@@ -198,7 +220,6 @@ Human Resources-appen i Teams har følgende tilgængelighedsproblemer, som vi ar
 | Under fanen **Fridage** annoncerer VoiceOver en knaphandling under læsning af overskriften til gitteret for fridage. | Overskriften og elementerne i gitteret grupperes efter år, og de kan skjules. VoiceOver fortolker dette som et element, der kræver en handling, men det er ikke. |
 | Under fanen **Fridage** er der en ekstra strygebevægelse, når du navigerer til **Årsagskode** i en ny anmodning. | Der er ikke noget skjult kontrolelement, som strygenavigationen forsøger at få adgang til. |
 | Hvis du lave en strygebevægelser under fanen **Fridage**, mens kalenderen er åben, havner du uden for kontrolelementet i stedet for øverst i en ny anmodning, eller når du redigerer en anmodning. | Når du når **Gå til i dag**, skal du betragte det som slutningen af kontrolelementet og stryge i modsatte retning for at gå tilbage til toppen. |
-| VoiceOver kan ikke læse datoetiketterne. | De datoer, der optræder som par, er altid **Startdato** og **Slutdato**. |
 | Under fanen **Chat** springer fokus tilbage til toppen, når du angiver en dato, mens du bruger hjælpeværktøjet eller tastaturnavigation. | Tabulér, indtil du når til inputområdet igen. |
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger

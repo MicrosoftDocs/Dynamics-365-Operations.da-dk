@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967225"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580909"
 ---
 # <a name="release-product-structures"></a>Frigive produktstrukturer
 
@@ -76,8 +76,6 @@ Du kan se et eksempel på, hvordan du accepterer et produkt, under [Gennemse og 
 ## <a name="release-policies"></a>Frigivelsespolitikker
 
 Ikke alle driftsselskaber har brug for samme produktdata. Generelt skal driftsselskaber, der fremstiller tekniske produkter, kræve en stykliste, hvorimod et driftsselskab, der kun sælger tekniske produkter, ikke kræver en stykliste. Du kan bruge frigivelsespolitikker til at oprette de parametre, der bruges til frigivelse af produkter.
-
-For tekniske produkter tildeles frigivelsespolitikken i den tekniske produktkategori, og feltet er obligatorisk. For standardprodukter tildeles politikken til det delte produkt, og feltet er valgfrit.
 
 Du kan finde flere oplysninger om tekniske produktkategorier i [Tekniske versioner og tekniske produktkategorier](engineering-versions-product-category.md).
 

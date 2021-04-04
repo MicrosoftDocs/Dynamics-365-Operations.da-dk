@@ -3,10 +3,9 @@ title: Designe en konfiguration til at generere dokumenter i Excel-format
 description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094023"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574167"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -54,7 +53,7 @@ Du skal føje en **Excel \\Fil**-komponent til det konfigurerede ER-format, hvis
 Hvis du vil angive layoutet for det udgående dokument, skal du vedhæfte en Excel-projektmappe med filtypenavnet .xlsx til **Excel-\\fil**-komponenten som skabelon til udgående dokumenter.
 
 > [!NOTE]
-> Når du manuelt tilknytter en skabelon, skal du bruge en [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), der er konfigureret til dette formål i [ER-parametrene](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+> Når du manuelt tilknytter en skabelon, skal du bruge en [dokumenttype](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types), der er konfigureret til dette formål i [ER-parametrene](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Føje en tilknytning til Excel\Fil-komponenten](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ Du kan få mere at vide om, hvordan du integrerer billeder og figurer, under [In
 
 Komponenten **Sideskift** tvinger Excel til at starte en ny side. Denne komponent er ikke påkrævet, når du vil bruge Excels standardsideinddeling, men du bør bruge den, når du vil have, at Excel skal følge dit ER-format til opbygning af sideinddeling.
 
+## <a name="footer-component"></a>Sidefodskomponent
+
+Komponenten **Sidefod** bruges til at udfylde sidefødder nederst i et genereret regneark i en Excel-projektmappe.
+
+> [!NOTE]
+> Du kan tilføje denne komponent for hver **ark**-komponent for at angive forskellige sidefodsfødder til forskellige regneark i en genereret Excel-projektmappe.
+
+Når du konfigurerer en individuel **sidefod**-komponent, kan du bruge egenskaben for udseende for **sidehoved/sidefod** til at angive de sider, som komponenten bruges til. Følgende værdier er tilgængelige:
+
+- **Alle** – Kør den konfigurerede **sidefod**-komponent for enhver side i det overordnede Excel-regneark.
+- **Først** – Kør den konfigurerede **sidefod**-komponent kun for den første side i det overordnede Excel-regneark.
+- **Lige** – Kør den konfigurerede **sidefod**-komponent kun for hver lige side i det overordnede Excel-regneark.
+- **Ulige** – Kør den konfigurerede **sidefod**-komponent kun for ulige side i det overordnede Excel-regneark.
+
+I forbindelse med en komponent i et enkelt **ark** kan du tilføje flere komponenter i **sidefoden**, som hver især har en anden værdi for egenskaben for udseende for **sidehoved/sidefod**. På denne måde kan du generere forskellige sidefødder til forskellige typer sider i et Excel-regneark.
+
+> [!NOTE]
+> Sørg for, at hver **sidefod**-komponent, du tilføjer til et enkelt **ark**-komponent, har en anden værdi for egenskaben for udseende for **sidehoved/sidefod**. Ellers opstår en [valideringsfejl](er-components-inspections.md#i16). Den fejlmeddelelse, du modtager, giver dig besked om uoverensstemmelsen.
+
+Under den tilføjede **sidefod**-komponent skal du tilføje de nødvendige indlejrede komponenter i **Tekst\\Streng**, **Tekst\\Dato og tid** eller en anden type. Konfigurer bindingerne for disse komponenter for at angive, hvordan sidefoden skal udfyldes.
+
+Du kan også bruge særlige [formatteringskoder](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) til at formatere indholdet af en genereret sidefod korrekt. Du kan få mere at vide om, hvordan du bruger denne indfaldsvinkel ved at følge trinnene i [Eksempel 1](#example-1) senere i dette emne.
+
+> [!NOTE]
+> Når du konfigurerer ER-formater, skal du huske at bruge Excel [grænsen](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) og det maksimale antal tegn i et enkelt sidehoved eller en enkelt sidefod.
+
+## <a name="header-component"></a>Sidehovedkomponent
+
+Komponenten **Sidehoved** bruges til at udfylde sidehoveder øverst i et genereret regneark i en Excel-projektmappe. Det bruges på samme måde som **sidefod**-komponenten.
+
 ## <a name="edit-an-added-er-format"></a>Redigere et tilføjet ER-format
 
 ### <a name="update-a-template"></a>Opdatere en skabelon
@@ -175,6 +204,48 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
     >[!NOTE]
     > Genberegning af formler gennemtvinges manuelt, når et genereret dokument åbnes med henblik på visning i Excel.
     > Brug ikke denne indstilling, hvis du konfigurerer en ER-destination, der forudsætter brug af et genereret dokument uden visning i Excel (PDF-konvertering, afsendelse af mail osv.), da det genererede dokument muligvis ikke indeholder værdier i celler, der indeholder formler.
+
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>Eksempel 1: Formater sidefodsindhold
+
+1. Brug de angivne ER-konfigurationer til at [generere](er-generate-printable-fti-forms.md) et FTI-dokument (fritekstfaktura, der kan udskrives).
+2. Gennemse sidefoden i det genererede dokument. Bemærk, at den indeholder oplysninger om det aktuelle sidenummer og det samlede antal sider i dokumentet.
+
+    ![Gennemse sidefoden i et genereret dokument i Excel-format](./media/er-fillable-excel-footer-1.gif)
+
+3. I ER-formatdesigneren skal du [åbne](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format)-eksempelformatet ER til gennemsyn
+
+    Sidefoden i arbejdsarket **Faktura** genereres på basis af indstillingerne for de to **streg**-komponenter, der findes under komponenten **Sidefod**:
+
+    - Den første **streng**-komponent udfylder følgende særlige formateringskoder for at tvinge Excel til at anvende bestemt formatering:
+
+        - **&C** – Juster sidefodsteksten i den midterste del.
+        - **&"Segoe UI,Regular"&8** - Vis sidefodsteksten i "Segoe UI Regular"-skrifttypen på en størrelse på 8 point.
+
+    - Den anden **streng**-komponent udfylder den tekst, der indeholder det aktuelle sidenummer, og det samlede antal sider i det aktuelle dokument.
+
+    ![Gennemse ER-formatkomponenten på siden Formatdesigner for sidefod](./media/er-fillable-excel-footer-2.png)
+
+4. Tilpas eksempel-ER-formatet for at redigere den aktuelle sidefod:
+
+    1. [Opret](er-quick-start2-customize-report.md#DeriveProvidedFormat) en udledt **fritekst-faktura (Excel) brugerdefineret** ER-format, der er baseret på eksempel-ER-formatet.
+    2. Tilføj det første nye sæt **streng**-komponenter til **sidefod**-komponenten i arbejdsarket **Faktura**:
+
+        1. Tilføj en **Streng**-komponent, der justerer firmanavnet til venstre og viser det med skrifttypen 8 "Segoe UI Regular" (**"&L&"Segoe UI,Regular"&8"**).
+        2. Tilføj en **streng**-komponent, der udfylder firmanavnet (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Tilføj et andet nyt sæt **streng**-komponenter til **sidefod**-komponenten i arbejdsarket **Faktura**:
+
+        1. Tilføj en **Streng**-komponent, der justerer behandlingen af data til højre og viser det med skrifttypen 8 "Segoe UI Regular" (**"&R&"Segoe UI,Regular"&8"**).
+        2. Tilføj en **Streng**-komponent, der udfylder behandlingsdatoen i et brugerdefineret format (**"&nbsp;"&DATEFORMAT (SESSIONTODAY(), "yyy-MM-dd")**).
+
+        ![Gennemse ER-formatkomponenten på siden Formatdesigner for sidefod](./media/er-fillable-excel-footer-3.png)
+
+    4. [Fuldfør](er-quick-start2-customize-report.md#CompleteDerivedFormat) kladdeversionen af det afledte **Fritekstfaktura (Excel) brugerdefineret** ER-format .
+
+5. [Konfigurer](er-generate-printable-fti-forms.md#configure-print-management) udskriftsstyring til at bruge det afledte **Fritekstfaktura (Excel) brugerdefineret** ER-format i stedet for prøve ER-format.
+6. Generer et FTI-dokument, der kan udskrives, og gennemse sidefoden i det oprettede dokument.
+
+    ![Gennemse sidefoden i et genereret dokument i Excel-format](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

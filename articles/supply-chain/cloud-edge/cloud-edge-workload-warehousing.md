@@ -18,12 +18,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 91e614889c719ae700b13e54150e5025d64e2b97
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104934"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580959"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
 
@@ -85,7 +85,14 @@ Hubben ejer følgende data:
 > [!NOTE]
 > Det indgående indkøbsordreflow er grundlæggende forskelligt fra det udgående flow. Du kan operere det samme lagersted på enten skalaenheden eller hubben, afhængigt af om indkøbsordren er frigivet til lagerstedet eller ej. Når du har frigivet en ordre til lagerstedet, kan du kun arbejde med den pågældende ordre, når du er logget på skalaenheden.
 
-Hvis du bruger *frigivelse til lagersted* som proces, oprettes der [*lagerstedsordrer*](cloud-edge-warehouse-order.md), og ejerskabet af det tilknyttede modtagelsesflow tildeles til skalaenheden. Hubben kan ikke registrere indgående modtagelse.
+Hvis du bruger *Frigiv til lagersted* som proces, oprettes der [*lagerstedsordrer*](cloud-edge-warehouse-order.md), og ejerskabet af det tilknyttede modtagelsesflow tildeles til skalaenheden. Hubben kan ikke registrere indgående modtagelse.
+
+Du skal logge på hubben for at bruge *Frigiv til lagersted*-processen. Gå til en af følgende sider for at køre eller planlægge det:
+
+- **Indkøb og forsyning > Indkøbsordrer > Alle indkøbsordrer > Lagersted > Handlinger > Frigiv til lagersted**.
+- **Lagerstedsstyring > Frigiv til lagersted > Automatisk frigivelse af indkøbsordrer**
+
+Når du bruger **Automatisk frigivelse af indkøbsordrer**, kan du vælge bestemte indkøbsordrelinjer ud fra en forespørgsel. Det vil typisk være at konfigurere et tilbagevendende batchjob, der frigiver alle de bekræftede indkøbsordrelinjer, der forventes at ankomme næste dag.
 
 Arbejderne kan køre modtagelsen ved hjælp af en lagerstedsapp, der er tilknyttet skalaenheden. Dataene registreres derefter af skalaenheden og rapporteres i forhold til den indgående lagerordre. Oprettelsen og afviklingen af det efterfølgende læg på lager-arbejde vil også blive håndteret af skalaenheden.
 
@@ -222,7 +229,7 @@ I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor
 | Flytteordrelinje til modtagelse og placering på lager                        | Ja | Ingen |
 | Annuller arbejde (indgående)                                              | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, men kun når indstillingen <b>Fjern registrering af modtagelse, når du annullerer arbejde</b> (på siden <b>Parametre til lokationsstyring</b>) er ryddet</p> |
 | Behandle indkøbsordre - produktkvittering                          | Ja | Ingen |
-| Indkøbsordre, der modtages med underlevering                        | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej, da du kun kan annullere hele ordrelinjeantal på lagersted |
+| Indkøbsordre, der modtages med underlevering                        | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja, men kun ved at foretage en annulleringsanmodning fra hubben |
 | Indkøbsordre, der modtages med overlevering                        | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja  |
 | Modtagelse med oprettelse af *Cross-docking*-arbejde                   | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ingen |
 | Modtagelse med oprettelse af *Kvalitetsordre*-arbejde                  | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ingen |

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec952f8c121f97396c135d10258a6431e8f2257e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e3412f446fe9fb8e3c2ca5407b22680dec3c3b82
+ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111993"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5579325"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheder eller ændringer i Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Hver anden uge leverer vi en ny udgave til Microsoft Dynamics 365 Human Resources. Emnerne, som findes her, beskriver de ændringer, der er foretaget for hver frigivelse.
 
@@ -49,9 +51,11 @@ Du kan få yderligere oplysninger om kommende funktioner eller opdateringsproces
 
 Du kan få oplysninger om, hvad der er nyt eller ændret i hver 2-ugers frigivelse af Human Resources, i følgende artikler:
 
+[8. marts 2021](hr-whats-new-2021-03-08.md)</br>
+[22. februar 2021](hr-whats-new-2021-02-22.md)</br>
 [28. januar 2021](hr-whats-new-2021-01-28.md)</br>
 [21. januar 2021](hr-whats-new-2021-01-21.md)</br>
-[02. december 2020](hr-whats-new-2020-12-02.md)</br>
+[2. december 2020](hr-whats-new-2020-12-02.md)</br>
 [22. oktober 2020](hr-whats-new-2020-10-22.md)</br>
 [16. september 2020](hr-whats-new-2020-09-16.md)</br>
 [3. september 2020](hr-whats-new-2020-09-03.md)</br>

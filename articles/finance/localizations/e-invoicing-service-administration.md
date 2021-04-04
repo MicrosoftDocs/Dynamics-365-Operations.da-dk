@@ -3,7 +3,7 @@ title: Administrationskomponenter til tilføjelsesprogrammet til elektronisk fak
 description: Dette emne indeholder oplysninger om de komponenter, der er knyttet til administration af tilføjelsesprogrammet Elektronisk fakturering.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6f630ebb694217c3bd52378a649933a670c090f2
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 70ef47dd45200a14c9d780f3c280c554d0e52ac3
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104360"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592568"
 ---
 # <a name="electronic-invoicing-add-on-administration-components"></a>Administrationskomponenter til tilføjelsesprogrammet til elektronisk fakturering
 
@@ -39,11 +39,15 @@ Bruges Microsoft Azure til at oprette Key Vault og lagerkontoen. Brug derefter h
 
 Brug Microsoft Dynamics Lifecycle Services (LCS) for at aktivere tilføjelsesprogrammet til mikroservices til dit LCS-implementeringsprojekt.
 
-I LCS skal du vælge **Prøveversion af funktionsstyring** og derefter aktivere funktionen **e-faktureringstjeneste**.
+> [!NOTE]
+> Installationen af tilføjelsesprogrammet mikroservice i LCS kræver mindst en virtuel niveau 2-maskine. Du kan finde flere oplysninger om miljøplanlægning under [Miljøplanlægning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+ 
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) er den grænseflade, der anvendes til konfigurering af tilføjelsesprogrammet Elektronisk fakturering. Ressourcer som f.eks. miljøer og funktioner til elektronisk fakturering oprettes, vedligeholdes og er hostet i RCS. Når ressourcerne er klar, publiceres de til tilføjelsesprogrammet Elektronisk faktureringstjeneste.
+
+Vedrørende RCS-tilmelding se [Regulatory services](https://marketing.configure.global.dynamics.com/).
 
 Du kan finde flere oplysninger om RCS i [Regulatory Configuration Services (RCS) – globaliseringsfunktioner](rcs-globalization-feature.md)
 
@@ -53,22 +57,14 @@ Før du kan bruge RCS til at konfigurere elektroniske fakturaer, skal du konfigu
 
 #### <a name="service-endpoint"></a>Tjenesteslutpunkt
 
-URL-adressen for slutpunktet til tilføjelsesprogrammet Elektronisk fakturering kan variere alt efter Datacenter Azure-geografisk område. Følgende tabel viser tilgængeligheden pr. region:
+Tilføjelsesprogrammet til elektronisk fakturering er tilgængelig i flere geografiske Azure-datacentre. Følgende tabel viser tilgængeligheden pr. region.
 
-| Datacenter Azure-geografisk område | URL for tjenesteslutpunkt                                                       |
-|----------------------------|----------------------------------------------------------------------------|
-| Det østlige USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| Det vestlige USA                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| Det nordlige Europa                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| Det vestlige Europa                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
-
-#### <a name="application-id"></a>Program-id
-
-Applikations-id er id for tilføjelsesprogrammet Elektronisk fakturering. Her er værdien fastsat: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
-
-#### <a name="lcs-environment-id"></a>LCS miljø-id
-
-LCS miljø-id er id for organisationens LCS-abonnement.
+| Datacenter Azure-geografisk område |
+|----------------------------|
+| Det østlige USA                    |
+| Det vestlige USA                    |
+| Det nordlige Europa                   |
+| Det vestlige Europa                    |
 
 ### <a name="service-environments"></a>Tjenestemiljøer
 

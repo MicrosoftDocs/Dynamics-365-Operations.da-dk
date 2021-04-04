@@ -3,7 +3,7 @@ title: Introduktion til tilføjelsesprogrammet til elektronisk fakturering servi
 description: Dette emne beskriver, hvordan du kommer i gang med tilføjelsesprogrammet til elektronisk fakturering.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 111ec65aa826795125d4a9ce835f72e1a0f41b7b
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104358"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592520"
 ---
 # <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Introduktion til tilføjelsesprogrammet til elektronisk fakturering serviceadministration
 
@@ -35,7 +35,7 @@ ms.locfileid: "5104358"
 Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende forudsætninger er opfyldt:
 
 - Du skal have adgang til din Microsoft Dynamics Lifecycle Services-konto (LCS).
-- Du skal have et LCS-projekt, der omfatter version 10.0.13 eller en senere version af Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Derudover skal disse apps implementeres i en af følgende Azure-geografisk områder:
+- Du skal have et LCS-projekt, der omfatter version 10.0.17 eller en senere version af Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Derudover skal disse apps implementeres i en af følgende Azure-geografisk områder:
 
     - Det østlige USA
     - Det vestlige USA
@@ -52,6 +52,13 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 2. Vælg feltet **Prøveversion af funktionsstyring**.
 3. I afsnittet **Funktioner til offentlig visning** skal du vælge en **e-faktureringstjeneste**.
 4. Kontroller, at indstillingen **Prøveversion af funktion aktiveret** er indstillet til **Ja**.
+5. Vælg dit LCS-implementeringsprojekt på LCS-dashboardet. LCS-projektet skal køre.
+7. Vælg **Installér et nyt tilføjelsesprogram** på fanen **Tilføjelsesprogrammer for miljø**.
+8. Vælg **e-faktureringstjenester**, og angiv i feltet **AAD-ansøgnings-id** **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Denne værdi er en fast værdi.
+10. Angiv lejer-id for din Azure-abonnementskonto i feltet **AAD-lejer-id**.
+11. Gennemse vilkår og betingelser, og marker afkrydsningsfeltet.
+12. Vælg **Installer**.
+
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Konfigurer parametre for RCS-integration med tilføjelsesprogrammet til elektronisk fakturering.
 
@@ -73,7 +80,7 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 ## <a name="create-key-vault-secret"></a>Oprette Key Vault-hemmelighed
 
 1. Log på din RCS-konto.
-2. I arbejdsområdet **Globaliseringsfunktioner** i sektionen **Miljøer** skal du vælge feltet **e-fakturering**.
+2. I arbejdsområdet **Globaliseringsfunktionen** i sektionen **Miljø** skal du vælge feltet **Tilføjelsesprogram til elektronisk fakturering**.
 3. På siden **Miljøopsætninger** skal du vælge **Servicemiljø** i handlingsruden og derefter vælge **Key Vault-parametre**.
 4. Vælg **Ny** for at oprette en key vault-hemmelighed.
 5. Angiv navnet på key vault-hemmeligheden i feltet **Navn**. Indtast en beskrivelse i feltet **Beskrivelse**.
@@ -82,22 +89,31 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 
 ## <a name="create-storage-account-secret"></a>Oprette hemmelig lagerkonto
 
-1. Vælg **Tilføj** i afsnittet **Certifikater** på siden **Nøgleparametre**.
-2. Angiv det samme for lagerkontohemmeligheden i feltet **Navn**. Indtast en beskrivelse i feltet **Beskrivelse**.
-3. I **Type**-feltet skal du vælge **Certifikat**.
-4. Vælg **Gem**, og luk derefter siden.
+1. Gå til **Systemadministration** > **Konfiguration** > **Key Vault-parametre**, og vælg en hemmelig Key Vault.
+2. Vælg **Tilføj** under **Certifikater**.
+3. I feltet **Navn** angives navnet på den hemmelige lagerkonto og i feltet **Beskrivelse** indsættes en beskrivelse.
+4. I **Type**-feltet skal du vælge **Certifikat**.
+5. Vælg **Gem**, og luk derefter siden.
+
+## <a name="create-a-digital-certificate-secret"></a>Oprette en digital certifikathemmelighed
+
+1. Gå til **Systemadministration** > **Konfiguration** > **Key Vault-parametre**, og vælg en hemmelig Key Vault.
+2. Vælg **Tilføj** under **Certifikater**.
+3. I feltet **Navn** angives navnet på det hemmelige digitale certifikat, og i feltet **Beskrivelse** indsættes en beskrivelse.
+4. I **Type**-feltet skal du vælge **Certifikat**.
+5. Vælg **Gem**, og luk derefter siden.
 
 ## <a name="create-an-electronic-invoicing-add-on-environment"></a>Opret et miljø for tilføjelsesprogrammet til elektronisk fakturering
 
 1. Log på din RCS-konto.
-2. I arbejdsområdet **Globaliseringsfunktioner** i sektionen **Miljøer** skal du vælge feltet **e-fakturering**.
+2. I arbejdsområdet **Globaliseringsfunktionen** i sektionen **Miljø** skal du vælge feltet **Tilføjelsesprogram til elektronisk fakturering**.
 
 ## <a name="create-a-service-environment"></a>Opret et servicemiljø
 
 1. På siden **Miljøopsætninger** skal du vælge **Servicemiljø** i handlingsruden.
 2. Vælg **Ny** for at oprette et nyt servicemiljø.
 3. Angiv navnet på e-faktureringsmiljøet i feltet **Navn**. Indtast en beskrivelse i feltet **Beskrivelse**.
-4. Vælg navnet på det certifikat, der skal bruges til godkendelse af adgang til lagringskontoen, i feltet **Opbevaring af SAS-token**.
+4. Vælg navnet på den hemmelige lagerkonto, der skal bruges til godkendelse af adgang til lagringskontoen, i feltet **Opbevaring af SAS-token**.
 5. I afsnittet **Brugere** skal du vælge **Tilføj** for at tilføje en bruger, som har tilladelse til at sende elektroniske fakturaer gennem miljøet, og også oprette forbindelse til lagerkontoen.
 6. Angiv **Bruger-id** i feltet for brugerens alias. I feltet **E-mail** skal du angive brugerens e-mailadresse.
 7. Vælg **Gem**.

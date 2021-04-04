@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8e67a6faf52b51264555b06f56b289d19ca580d6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 39583c244f09f54551d560e8b1dd9f1a5a1590cc
+ms.sourcegitcommit: 72f70c81176e86cda714a4712525f73514c895b7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992489"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "5457323"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Fejlfinde planlægningsoptimering 
 
@@ -48,12 +48,6 @@ Når du aktiverer Planlægningsoptimering, deaktiveres det indbyggede varedispon
 Planlægningsoptimering adskiller sig fra det indbyggede planlægningsprogramdesign på visse områder. Dette kan også skyldes ventende funktioner.
 
 **Rettelse**: Kør analyse af tilpasning af planlægningsoptimering, og analysér derefter resultaterne, mens der henvises til den relaterede dokumentation for at forstå virkningen. Du kan finde flere oplysninger under [Analyse af om Planlægningsoptimering passer](planning-optimization-fit-analysis.md).
-
-## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>Varedisponering overholder ikke disponeringstidshorisonten
-
-Dette skyldes en ventende funktion i Planlægningsoptimering.
-
-**Rettelse** : Indtil den ventende funktion er tilgængelig, skal du filtrere eller slette ordreforslag for at fjerne forsyningsforslag uden for disponeringstidshorisonten.
 
 ## <a name="cant-enable-planning-optimization"></a>Kan ikke aktivere Planlægningsoptimering
 

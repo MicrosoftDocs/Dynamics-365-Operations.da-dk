@@ -3,10 +3,9 @@ title: Ofte stillede spørgsmål om adressekartoteker
 description: Dette emne indeholder svar på ofte stillede spørgsmål, der er relateret til adressekartoteker.
 author: msftbrking
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,16 +16,17 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ad2be27d406928222ca00fe696f49b8578fc8cb3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796892"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559935"
 ---
 # <a name="address-books-faq"></a>Ofte stillede spørgsmål om adressekartoteker
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 ## <a name="how-do-i-check-for-duplicate-records"></a>Hvordan kontrollerer jeg, om der er ens poster?
 
@@ -68,5 +68,10 @@ I det globale adressekartotek eller på den relevante enhedsside kan du angive p
 
 Du kan konfigurere oversættelser af adresseoplysninger, så oplysningerne vises på dit eget sprog (systemsprog) i dit program, men på et andet sprog i dokumenter, f.eks salgsordrer. Du kan angive oversættelser af land/område-navne, adresseformål og navnerækkefølge. Dit systemsprog er f.eks. dansk, og du opretter en salgsordre for en kunde i Frankrig. I dette tilfælde kan du se kundeposten på dansk i programmet, men få vist adresseoplysningerne på fransk i den udskrevne salgsordre. Når du konfigurerer oversættelser, skal du indtaste en oversættelse for hver vare på listen. De varer, du ikke angiver en oversættelse for, vises på systemsproget. Dit systemsprog er f.eks. dansk, og du sender et dokument til en kunde i Spanien. Hvis du ikke har angivet spanske (ESP) oversættelser af adresseoplysningerne, vises disse oplysninger på dansk både i dit program og på det udskrevne materiale.
 
+## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Når jeg har importeret adresser, og jeg får adgang til posterne, hvorfor kan jeg ikke redigere importerede adresser?
+
+Ved import af adresser er der et felt med navnet **IsLocationOwner**, som angiver, om den part, der er knyttet til lokaliteten (adressen), er ejer af adressen. Hvis parten er ejeren af adressen, kan adressen redigeres, når der åbnes adgang til den part, der er adgang til, i det globale adressekartotek eller fra formen med masterposten (f.eks. debitor, kreditor eller arbejder). Hvis parten ikke er ejer af adressen, kan posten ikke redigeres i de tidligere viste forms. Ved import af adresser skal **IsLocationOwner** angives til **Yes**, hvis adressen skal kunne redigeres ved hjælp af den tilknyttede part. Af og til importeres dette felt dog forkert. For at løse dette problem kan ejeren af lokaliteten opdateres i det globale adressekartotek fra partposten eller fra siden **Bekræft lokalitetsejere**. Hvis du vil opdatere en enkelt partpost, skal du gå til **Globalt adressekartotek > Adresse**. Vælg **Rediger** for at åbne siden **Rediger adresse** for at ændre ejeren af lokaliteten. Vælg **Skift ejer af lokalitet** for at se den tidligere lokalitetsejer, hvor den aktuelt valgte part er den nye ejer af lokaliteten. Hvis den tidligere lokalitetsejer er tom, betyder det, at ejeren af en lokalitet ikke er oprettet. Når indstillingen **Avanceret** vælges, åbnes siden **Administrer** adresser, hvor ejeren af lokaliteten også kan angives. Vælg den placering, der skal opdateres, og vælg derefter **Angiv lokalitetsejer** i menuen. Hvis du vil opdatere lokalitetsejeren til flere poster, skal du gå til **Globalt adressekartotek > Lokationer > Bekræft lokalitetsejere**. Listen indeholder placeringer, der er knyttet til en enkelt part, men denne part er ikke ejeren. Hvis du vælger **Bekræftet ejer**, angives **Foreslået ejer-id** til ejeren af den tilknyttede adresse. Når parten er angivet som ejer, kan den tilknyttede adresse redigeres fra partposten. Hvis du vil ændre ejeren af lokaliteten, skal du have tildelt rettigheden **Angiv lokalitetsejer** på siden **Sikkerhedskonfiguration**.  Systemadministratoren tildeles som standard denne rettighed.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,9 +1,9 @@
 ---
 title: Automatiseret rykkerproces
-description: I dette emne beskrives processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet (f.eks. et telefonopkald) eller et rykkerbrev, der sendes til kunden.
+description: I dette emne beskrives processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet eller et rykkerbrev, der sendes til kunden.
 author: panolte
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,23 +15,25 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5f5d65f3f757163b22d35c3c99b4d6b7fbdfafb
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969695"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582745"
 ---
-# <a name="collections-process-automation"></a>Automatiseret rykkerproces
+# <a name="collections-process-automation"></a>Automatisering af opkrævningsproces
 
 [!include [banner](../includes/banner.md)]
 
 I dette emne beskrives processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet (f.eks. et telefonopkald) eller et rykkerbrev, der sendes til kunden. 
 
-Organisationer bruger en betydelig del af tiden på at søge efter aldersfordelte saldorapporter, debitorkonti og åbne fakturaer for at afgøre, hvilke kunder der skal kontaktes om en åben faktura eller kontosaldo. Denne eftersøgning stjæler tid fra en inkassators tidsforbrug på kommunikation med kunderne for at opkræve forfaldne saldi eller løse fakturatvister. Med en automatiseret rykkerproces kan du oprette en strategibaseret tilgang til din rykkerproces. Dette hjælper dig med at anvende rykkeraktiviteter på en ensartet måde ved at bruge tilpassede mailpåmindelser eller en programproces til at udsende rykkere. 
+Organisationer bruger en betydelig del af tiden på at søge efter aldersfordelte saldorapporter, debitorkonti og åbne fakturaer for at lære, hvilke kunder der bør kontaktes om en åben faktura eller kontosaldo. Denne eftersøgning stjæler tid fra en inkassators tidsforbrug på kommunikation med kunderne for at opkræve forfaldne saldi eller løse fakturatvister. Med en automatiseret rykkerproces kan du oprette en strategibaseret tilgang til din rykkerproces. Dette hjælper dig med at anvende rykkeraktiviteter på en ensartet måde ved at bruge tilpassede mailpåmindelser eller en programproces til at udsende rykkere. 
 
 ## <a name="collections-process-setup"></a>Opsætning af rykkerproces
 Du kan bruge siden **Opsætning af rykkerproces** (**Kredit og rykkere > Opsætning > Opsætning af rykkerproces**) til at oprette en automatiseret rykkerproces, der planlægger aktiviteter, sender mailmeddelelser og opretter og bogfører debitorrykkerbreve. Procestrinnene er baseret på den indledende eller ældste åbne faktura. Hvert trin bruger denne faktura til at bestemme, hvilken kommunikation eller aktivitet der skal ske med en bestemt kunde.  
+
+Rykkerteam sender typisk en tidlig besked vedrørende hver udestående faktura, sådan at en kunde får besked, når fakturaen er forfalden. Valget **Varsel om rykker** kan angives, så der kan reageres på ét trin i hvert proceshierarki for hver faktura, efterhånden som tidspunktet for fakturaen når dette trin.
 
 ### <a name="process-hierarchy"></a>Proceshierarki
 Hver kundepulje kan kun tildeles ét proceshierarki. Hierarkirangen af dette trin identificerer, hvilken proces der har forrang, hvis en kunde er inkluderet i mere end én pulje, hvor der er tildelt et proceshierarki. Pulje-id'et bestemmer, hvilke kunder der vil blive tildelt processen. 
@@ -82,6 +84,7 @@ Følgende tabeller viser de sider og felter, som de angivne oversigtspaneler kan
 |                                                           |     Forretningsdokument                           |     Definerer den aktivitet eller mailskabelon, der bruges under procestrinnet.                                                                        |
 |                                                           |     Når                                          |     Angiver, om procestrinnet skal foregå før eller efter den indledende fakturas forfaldsdato, sammen med feltet **Dage i relation til fakturaens forfaldsdato**.        |
 |                                                           |     Dage i relation til fakturaens forfaldsdato        |     Sammen med feltet **Hvornår** identificerer det timingen af procestrinnet.                                                                          |
+|                                                           |     Varsel om rykker                                   |     Med dette valg kan du angive ét trin pr. proceshierarki og køre dem i forhold til hver faktura, når tidsmålingskriterierne er nået.                                                |
 |                                                           |     Modtager                                     |     Angiver, om der skal sendes en mail til en kontakt hos en kunde, salgsgruppe eller inkassator.                                                   |
 |                                                           |     Kontakt til forretningsformål                    |     Bestemmer, hvilken modtagers mailadresse der bruges i mailkommunikation.                                                                                 |
 
@@ -100,23 +103,29 @@ Følgende tabeller viser de sider og felter, som de angivne oversigtspaneler kan
 ### <a name="collections-history"></a>Rykkerhistorik 
 |     Side                              |     Felt     |      Beskrivelse                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Opsætning af rykkerproces       |               |     Se den seneste historik for det valgte proceshierarki.     |
+|     Opsætning af rykkerproces       |               |     Se den seneste historik for det valgte proceshierarki.       |
 
 ### <a name="collection-process-assignment"></a>Tildeling af rykkerproces
 |     Side                              |     Felt     |      Beskrivelse                                                  |
 |------------------------------------   |-------------- |-----------------------------------------------------------    |
-|     Opsætning af rykkerproces       |               |     Få vist kunder, der er tildelt en rykkerproces.  
+|     Opsætning af rykkerproces       |               |     Vise kunder, der er tildelt en rykkerproces.  
 |     Manuel tildeling               |               |     Få vist kunder, der er blevet tildelt en proces manuelt, eller vælg kunder, der skal tildeles en proces. |
 |     Prøveversion af procestildeling      |               |     Få vist de kunder, der skal tildeles en strategi, når den køres.   |
 |     Prøveversion af kundetildeling     |               |     Få vist den strategi, som en bestemt kunde er tildelt.    |
  
+ ### <a name="process-simulation"></a>Processimulering
+|     Side                              |     Felt     |      Betegnelse                                                  |
+|------------------------------------   |-------------- |-----------------------------------------------------------    |
+|    Processimulering                 |               |     Få vist de handlinger, der vil blive oprettet, hvis den valgte proces-automatisering køres på dette tidspunkt. |
+
 ### <a name="parameters"></a>Parametre
-|     Side                                                                  |     Felt                                             |      Beskrivelse                              |
+|     Side                                                                  |     Felt                                             |      Betegnelse                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
 |     Debitorparametre > Automatiseret rykkerproces     |     Procentdel af kunder pr. batchopgave          |     Indstilling til at bestemme antallet af batchopgaver pr. automatiseringsproces.                                          |
 |     Debitorparametre > Automatiseret rykkerproces     |     Bogfør rykkerbreve automatisk           |     Rykkerhandlingstyperne vil bogføre brevet under automatiseringen.                                      |
 |     Debitorparametre > Automatiseret rykkerproces     |     Oprette aktiviteter automatisk                |     Opret og luk aktiviteter for handlingstyper uden aktivitet for at få vist alle de automatiserede trin, der udføres på en konto.        |
 |     Debitorparametre > Automatiseret rykkerproces     |     Opbevaringsdage for automatiseret rykkerproces     |     Definerer, hvor mange dage rykkerhistorikken gemmes.                                                       |
+|     Debitorparametre > Automatiseret rykkerproces     |     Udeluk faktura efter aktivering af sidste procestrin    |     En faktura, der når til det sidste trin i rykkerprocessen, bruges ikke til at oprette aktionstyper for fremtidig proces-automatisering. Det næste ældste fakturatrin vil være bestemmende for næste trin i proces-automatiseringen for at sikre, at automatiseringshandlingerne for rykkerprocessen fortsætter.                                                        |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
