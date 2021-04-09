@@ -2,11 +2,9 @@
 title: Startside for Finance
 description: Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til økonomistyring i Microsoft Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b2338bcb727e0a513430c74b28b54f2101f2e3b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218877"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813453"
 ---
 # <a name="finance-home-page"></a>Startside for Finance
 
@@ -71,8 +69,10 @@ Reguleringer i land/område påvirker momsopsætning og andre områder af økono
 
 ### <a name="additional-content"></a>Yderligere indhold
 
-Funktionen til styring af forsyningskæden dækker dele af processen fra levering til betaling, der omfatter rekvisition, bestilling, modtagelse, fakturering og betaling af de varer og tjenester, som organisationen køber. Se [hjemmesiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) for at få flere oplysninger om funktionerne til administration af indkøb, lager og produktion. 
+Funktionen til styring af forsyningskæden dækker dele af processen fra levering til betaling, der omfatter rekvisition, bestilling, modtagelse, fakturering og betaling af de varer og tjenester, som organisationen køber. Besøg [Supply Chain Management-startsiden](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) for at få oplysninger om funktionerne til administration af køb, lager og produktion.
 
+## <a name="elearning-courses"></a>eLearning-kurser
 
+Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Finance on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

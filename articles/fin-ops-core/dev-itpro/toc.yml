@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platformsopdateringer til 10.0.16 (februar 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: Platformsopdateringer til 10.0.15 (januar 2021)
-                  href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -226,6 +224,10 @@
                               href: data-entities/dual-write/inventory-availability.md
                             - name: 'Integreret arbejder, job og position'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Part- og globalt adressekartotek
+                              href: data-entities/dual-write/party-gab.md
+                            - name: Brug af Power Portal sammen med datamodellen for part
+                              href: data-entities/dual-write/party-gab-portal.md
                             - name: Bemærk integration
                               href: data-entities/dual-write/notes-integration.md
                             - name: Tilknytningsreference
@@ -526,13 +528,15 @@
                   items:
                     - name: Konfigurere projekter i det lokale miljø i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Konfigurere og installere miljøer i det lokale miljø
+                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformopdatering 41 og senere)
+                      href: deployment/setup-deploy-on-premises-pu41.md
+                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformopdateringer 12 til 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                       href: deployment/deploy-retail-onprem.md
-                    - name: Udvikle og installere brugerdefinerede modeller i lokale miljøer
+                    - name: Udvikle og installere brugerdefinerede modeller i det lokale miljø
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Miljøvedligeholdelse
+                - name: Miljøhandlinger
                   items:
                     - name: Anvende opdateringer til en lokal installation
                       href: deployment/apply-updates-on-premises.md
@@ -542,6 +546,8 @@
                       href: user-interface/client-disconnected.md
                     - name: Konfigurere kun batch-AOS-noder og kun interaktive AOS-noder i lokale installationer
                       href: deployment/onprem-batchonly.md
+                    - name: Konfigurere høj tilgængelighed til SQL Server Reporting Services-noder (SSRS-noder)
+                      href: deployment/onprem-SSRSHA.md
                     - name: Konfigurere proxyer til lokale miljøer
                       href: deployment/onprem-reverseproxy.md
                     - name: Diagnosticering i det lokale miljø
@@ -1136,27 +1142,31 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integration
           items:
-            - name: Microsoft Power Platform-integration med Finance and Operations
-              href: power-platform/overview.md
-            - name: Oversigt over tilføjelser
-              href: power-platform/add-ins-overview.md
-            - name: Enhedsmodellering
-              href: power-platform/entity-modeling.md
-            - name: Applikationscyklusstyring
-              href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations- og Dataverse-administratorreference
-              href: power-platform/admin-reference.md
-            - name: Power Apps-portaler med Finance and Operations
-              href: power-platform/power-portal-reference.md
-            - name: Ofte stillede spørgsmål og virtuelle enheder i Finance and Operations
-              href: power-platform/faq.md
+            - name: Virtuelle objekter
+              items:
+                - name: Microsoft Power Platform-integration med Finance and Operations
+                  href: power-platform/overview.md
+                - name: Enhedsmodellering
+                  href: power-platform/entity-modeling.md
+                - name: Applikationscyklusstyring
+                  href: power-platform/application-lifecycle-management.md
+                - name: Finance and Operations- og Dataverse-administratorreference
+                  href: power-platform/admin-reference.md
+                - name: Power Apps-portaler med Finance and Operations
+                  href: power-platform/power-portal-reference.md
+                - name: Ofte stillede spørgsmål og virtuelle enheder i Finance and Operations
+                  href: power-platform/faq.md
+            - name: Tilføjelsesprogrammer
+              items:
+                - name: Oversigt over tilføjelser
+                  href: power-platform/add-ins-overview.md
         - name: Mobilplatform
           items:
             - name: Ressourcer til mobilplatform
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: Introduktion
+            - name: Start her
               items:
-                - name: Introduktion til mobilplatformen
+                - name: Start her med mobilplatformen
                   href: mobile-apps/platform/mobile-platform-getting-started.md
                 - name: Overvejelser om arkitektur og design
                   href: mobile-apps/platform/mobile-platform-architecture.md
@@ -1390,6 +1400,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Regression Suite Automation Tool-selvstudium
               href: perf-test/rsat/rsat-tutorial.md
+            - name: 'Konfigurere brugere, der ikke er administratorer'
+              href: perf-test/rsat/rsat-configure-nonadmin.md
             - name: Bedste fremgangsmåder
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostisk testning ved hjælp af Regression Suite Automation Tool
