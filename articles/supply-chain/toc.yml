@@ -4,7 +4,7 @@
       items:
         - name: Startside for Dynamics 365 Supply Chain Management
           href: index.md
-        - name: Introduktion
+        - name: Start her
           items:
             - name: Før du køber
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
@@ -210,7 +210,7 @@
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: Indien
               items:
-                - name: Ordrer til overførsler af lagerbeholdning
+                - name: Overføre lagerbeholdningsordrer
                   href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Rusland
               items:
@@ -763,17 +763,19 @@
               items:
                 - name: Oprette konfigurationer
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Definere afhængigheden af ER-konfigurationer for andre komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Forberede komponenter i løsningen til elektronisk rapportering
                   items:
                     - name: Designe domænespecifik datamodel
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Forberede programspecifikke metadata
+                    - name: Forberede applikationsspecifikke metadata
                       items:
-                        - name: '(ER) Klargøre programmetadata, der skal bruges i RCS'
+                        - name: 'Klargøre applikationsmetadata i ER, der skal bruges i RCS'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Få adgang til programmetadata ved hjælp af ER-konfiguration
+                        - name: Få adgang til applikationsmetadata i RCS ved hjælp af ER-konfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Få adgang til programmetadata ved hjælp af tilsluttede programmer
+                        - name: Få adgang til applikationsmetadata i RCS ved hjælp af tilsluttede applikationer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Definere modeltilknytninger og vælge datakilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -783,15 +785,15 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Knytte komponenter i det oprettede format til datamodelelementer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Teste den forberedte ER-løsning i destinationsprogrammet
+                    - name: Teste den forberedte ER-løsning i destinationsansøgningen
                       items:
-                        - name: (ER) Importere konfigurationer fra RCS
+                        - name: Importere konfigurationer fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Generere elektroniske dokumenter til betalinger ved hjælp af en formatkonfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Opgradere dit format ved at bruge en ny basisversion af det pågældende format
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Formeldesignere i elektronisk rapportering
+            - name: Formeldesignere i ER
               items:
                 - name: Formeldesigner
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
@@ -803,6 +805,12 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funktioner
                   items:
+                    - name: Container
+                      items:
+                        - name: Containerfunktioner
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Base64StringToContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Dato og klokkeslæt
                       items:
                         - name: Dato- og klokkeslætsfunktioner
@@ -833,7 +841,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: List
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Liste
                       items:
                         - name: Listefunktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -859,6 +869,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Liste
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListOfFields
@@ -887,14 +899,22 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/supply-chain/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Matematisk
                       items:
                         - name: Matematiske funktioner
@@ -990,7 +1010,7 @@
                         - name: CurCredRef
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/supply-chain/toc.json
                         - name: FA_Balance
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/supply-chain/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365supply-chain/toc.json
                         - name: FA_Sum
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/supply-chain/toc.json
                         - name: GetCurrentCompany
@@ -1019,6 +1039,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Type: Value'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Container: Base64StringToContainer'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Dato- og klokkeslæt: DateTimeValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Dato- og klokkeslæt: DateToDateTime'
@@ -1043,81 +1065,51 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Tekst: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Administrere ER-modeltilknytning i separate ER-konfigurationer
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 'Vælge datamodeldefinitioner, når du opretter formater'
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Udvidede filtreringsindstillinger til søgning efter konfigurationer i det globale lager
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
-            - name: (ER) Datakilder på tværs af firma i elektronisk rapportering
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Designe ER-formater til generering af udgående elektroniske dokumenter i forskellige formater
+            - name: Designe ER-formater til generering af udgående dokumenter i forskellige formater
               items:
-                - name: (ER) Designe en konfiguration til generering af rapporter i OPENXML-format
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: (ER) Designe konfigurationer til generering af rapporter i Word-format
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Designe konfigurationer til at generere udgående dokumenter i Excel-format
+                  items:
+                    - name: Designe en konfiguration til at generere dokumenter i Excel-format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Eksempel på generering af rapporter i OPENXML-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Redigere ER-formater ved at genanvende Excel-skabeloner
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
+                      items:
+                        - name: Designe formater til dynamisk tilføjelse af kolonner til Excel-rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Køre formater til dynamisk tilføjelse af kolonner til Excel-rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Designe konfigurationer til generering af rapporter i Word-format
+                  items:
+                    - name: Designe ny ER-konfiguration til generering af rapporter i Word-format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Genbruge Elektronisk rapporteringskonfigurationer med Excel-skabeloner til generering af rapporter i Word-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Skjule Word-indhold i genererede rapporter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Designe konfigurationer til udfyldelse af PDF-skabeloner
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Integrere billeder og figurer
-              items:
-                - name: '(ER) Integrere billeder og figurer i de dokumenter, du opretter'
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Eksempel på integrering af billeder og figurer
+                - name: Integrere billeder og figurer
                   items:
-                    - name: 'Designe konfigurationer til at generere rapporter i Office-formater, der har integrerede billeder'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Revidere konfigurationer til at generere rapporter i Office-formater, der har integrerede billeder'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Generere rapporter i Office-formater, der har integrerede billeder'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Definere afhængigheden af ER-konfigurationer for andre komponenter
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Designe en ER-løsning til at bruge økonomiske dimensioner
+                    - name: 'Integrere billeder og figurer i de dokumenter, du opretter'
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Eksempel på integrering af billeder og figurer
+                      items:
+                        - name: 'Designe konfigurationer til at generere rapporter i Office-formater, der har integrerede billeder'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Revidere konfigurationer til at generere rapporter i Office-formater, der har integrerede billeder'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Generere rapporter i Office-formater, der har integrerede billeder'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ignorere styklistetegn i genererede filer
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opdatere applikationsdata ved hjælp af ER
               items:
-                - name: Designe datamodeller til at bruge økonomiske dimensioner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Tilknytte modeller for at bruge økonomiske dimensioner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Designe rapporter til at bruge økonomiske dimensioner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Køre rapporter, som bruger økonomiske dimensioner som datakilder'
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Designe ER-formater til udførelse af optælling og opsummering ved hjælp af oplysninger fra genereret output
-              items:
-                - name: Oprette formater til at udføre optælling og opsummering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere format til at udføre optælling og opsummering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Bruge beregninger til at generere output til optælling og opsummering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Køre formater for at udføre optælling og opsummering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 'Tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
-              items:
-                - name: 'Designe formater for at tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Køre formater for at tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Bruge dokumentstyringsfiler i formatoutput
-              items:
-                - name: Forberede datamodeller til at bruge dokumentstyringsfiler i ER-output
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Udvide datamodeller til at bruge dokumentstyringsfiler i ER-output
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Oprette formater for at bruge dokumentstyringsfiler i ER-output
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Køre formater for at bruge dokumentstyringsfiler i ER-output
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Redigere og køre formater for at bruge dokumentstyringsfiler i ER-output
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Opdatere ansøgningsdata ved hjælp af elektronisk rapportering
-              items:
-                - name: Generere elektroniske dokumenter og opdatere ansøgningsdata
+                - name: Generere elektroniske dokumenter og opdatere applikationsdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Importere konfigurationer for at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/supply-chain/toc.json
@@ -1145,52 +1137,146 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere ER-formater til at importere XML-formatfiler med valgfrie attributter
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Understøt parameteriserede opkald om ER-datakilder af typen Beregnet felt
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
             - name: Livscyklus for konfiguration
               items:
                 - name: Administrere konfigurationslivscyklus
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Overføre konfigurationer til Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Importere konfigurationer fra Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Hente konfigurationer fra Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Importere konfigurationer
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Hente ER-konfigurationer fra RCS-lageret
+                - name: Lifecycle Services (LCS)
                   items:
-                    - name: Hente konfigurationer fra ER-lageret til RCS-typen
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Importere konfigurationer fra RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Overføre konfigurationer til LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importere konfigurationer fra LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Downloade konfigurationer fra LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importere konfigurationer (LBD)
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Regulatory services (RCS)
+                  items:
+                    - name: Globaliseringsfunktioner i RCS
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Downloade ER-konfigurationer til Supply Chain Management
+                      items:
+                        - name: Downloade konfigurationer fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importere konfigurationer fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Globalt lager (GR)
+                      items:
+                        - name: Importere konfigurationer fra GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importere opdaterede versioner af ER-konfigurationer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Udvidet filtrering til søgning efter konfigurationer i GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Overføre konfigurationer til GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Dele konfigurationer i GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Afbryde konfigurationer i RCS Global-lageret
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Hurtige introduktioner
+              items:
+                - name: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Design en ny ER-løsning til udskrivning af en brugerdefineret rapport
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Justere en ER-løsning for at oprette et brugerdefineret elektronisk dokument
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/supply-chain/toc.json
             - name: Selvstudier
               items:
-                - name: Bruge JOINFORBINDE-datakilder til at hente data fra flere programtabeller
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Konfigurere ER-formater til at bruge de parametre, der er angivet for den enkelte juridiske enhed'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere parametrene for et ER-format for hver juridisk enhed
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Udskyde udførelse af ER-formatelementer
+                - name: 'Få mere at vide om, hvordan du bruger datakilder'
                   items:
-                    - name: Udskyde udførelse af et sekvenselement
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Udskyde udførelse af et XML-element
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Bruge elektroniske rapporteringsløsninger i Finance and Operations
+                    - name: Bruge JOINFORBINDE til at hente data fra flere tabeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Bruge RAW XML til at tilføje indhold
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Understøtte parameteriserede opkald om datakilder af typen BEREGNET FELT
+                      items:
+                        - name: Forbedre brugeroplevelsen og vedligeholdelse af brugervenligheden
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Forbedre ydeevnen for dataadgang
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-datakilder på tværs af firmaer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Bruge DETALJER OM ØKONOMISKE DIMENSIONER-datakilder
+                      items:
+                        - name: Designe datamodeller
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Tilknytte modeller til brug af økonomiske dimensioner
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Designe rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Køre rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Bruge det genererede output som en datakilde til at udføre optælling og opsummering
+                      items:
+                        - name: Oprette formater
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurere format til at udføre optælling og opsummering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generere output til optælling og opsummering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Køre formater for at udføre optælling og opsummering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Bruge relationer til DOKUMENTER til at få adgang til dokumentstyringsfiler
+                      items:
+                        - name: Forberede datamodeller
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Udvide datamodeller til at bruge dokumentstyringsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Oprette formater
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Køre formater for at bruge dokumentstyringsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Redigere og køre formater for at bruge dokumentstyringsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Fejlfinde datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Bruge STREGKODE til at generere stregkodebilleder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere modeltilknytninger
+                  items:
+                    - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Administrere ER-modeltilknytning i separate ER-konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Administrere flere afledte tilknytninger for en enkelt modelrod
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere formater
+                  items:
+                    - name: 'Vælge modeldefinitioner, når du opretter formater'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Konfigurere ER-formater til at bruge de parametre, der er angivet for den enkelte juridiske enhed'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere parametrene for et ER-format for hver juridisk enhed
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Udskyde udførelse af ER-formatelementer
+                      items:
+                        - name: Udskyde udførelse af et sekvenselement
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Udskyde udførelse af et XML-element
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Designe flersprogede rapporter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Komprimere store udgående dokumenter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kontrollere konfigurerede ER-komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Relativ sti i databindinger
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Bruge ER-løsninger i Supply Chain Management
               items:
                 - name: Konfigurere strukturen
                   items:
                     - name: Konfigurere den elektroniske rapporteringsstruktur
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Sikkerhedskopiering og gendannelse af ER-skabeloner
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                      items:
+                        - name: Sikkerhedskopilager til ER-skabeloner
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Oprydning i ER-overflytning
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oprette konfigurationsudbydere og markere dem som aktive
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Destinationer
@@ -1213,6 +1299,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere destinationer
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere handlingsafhængige destinationer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere en reference til ER-format
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Validere genererede rapporter automatisk
@@ -1221,37 +1309,53 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Forbedringer i sporingsresultaterne fra genererede ER-rapporter og sammenligninger med basisværdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Automatisere test med elektronisk rapportering
+                    - name: Automatisere test med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatisere forretningsprocesser ved hjælp af konfigurationer af elektroniske rapporter
                   items:
-                    - name: Konfigurere elektronisk rapportering for at trække data ind i Power BI
+                    - name: Konfigurere ER til at trække data ind i Power BI
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Oprette formularer med fritekstfakturaer (FTI), der kan udskrives'
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Spore kørsel af ER-formater til fejlfinding af problemer med ydeevnen
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Styring af forretningsdokumenter
+                - name: Styring af forretningsdokumenter (BDM)
                   items:
-                    - name: Oversigt over styring af forretningsdokumenter
+                    - name: BDM (fordelt ordrestyring)-oversigt
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Brugergrænseflade for nyt dokument i styring af forretningsdokumenter
+                    - name: Brugergrænseflade for nyt dokument i BDM
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Føje nye felter til en forretningsdokumentskabelon i Microsoft Excel
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Redigere forretningsdokumentskabeloner i BDM
+                      items:
+                        - name: Føje nye felter til en forretningsdokumentskabelon i Microsoft Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Opdatere strukturen for en forretningsdokumentskabelon
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/supply-chain/toc.json
             - name: API til ER-struktur
               items:
-                - name: Udvide listen over elektroniske rapporteringsfunktioner
+                - name: Udvide listen over indbyggede funktioner
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ændringer af API-struktur til elektronisk rapportering for applikationsopdatering 7.3
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                - name: API-ændringer
+                  items:
+                    - name: Applikationsopdatering 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Applikationsopdatering 10.0.11
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Applikationsopdatering 10.0.17
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+                  items:
+                    - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Delegere oprettelsen af en ER-destination til en brugerdefineret destinationsfabrik
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Starte datakildeværdier for USER INPUT PARAMETER-typen fra kildekoden
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Lagerstyring
           items:
             - name: Oversigt over lagerstyring
               href: inventory/inventory-home-page.md
-            - name: Modtagelse
+            - name: Indlevering
               items:
                 - name: Modtagelsesoversigt
                   href: inventory/arrival-overview.md
@@ -1381,7 +1485,7 @@
               items:
                 - name: Oversigt over planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Kom i gang med planlægningsoptimering
+                - name: Start her med planlægningsoptimering
                   href: master-planning/planning-optimization/get-started.md
                 - name: Analyse af tilpasning af planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
@@ -1975,6 +2079,8 @@
                   items:
                     - name: Konfigurere en model for produktkonfiguration
                       href: pim/set-up-maintain-product-configuration-model.md
+                    - name: Beregninger af produktkonfigurationsmodel
+                      href: pim/config-model-calculations.md
                     - name: Ofte stillede spørgsmål om beregning af produktkonfigurationsmodel
                       href: pim/calculate-product-configuration-models.md
                     - name: Konfigurationsregel
@@ -2043,6 +2149,8 @@
               href: production-control/mixed-mode-plan.md
             - name: Administrere underleverandørarbejde i produktion
               href: production-control/manage-subcontract-work-production.md
+            - name: Samlet nummerserie for job-id'er
+              href: production-control/unified-job-ids.md
             - name: Separat fremstilling
               items:
                 - name: Vedligeholde masterdata for produktion
@@ -2347,6 +2455,28 @@
                       href: cost-management/production-posting.md
                 - name: Fejlfinde procesproduktion
                   href: production-control/troubleshoot-processmanufacturing.md
+        - name: Rabatstyring
+          items:
+            - name: Oversigt over modulet Rabatstyring
+              href: rebate-management/rebate-management-overview.md
+            - name: Opsætte og konfigurere modulet Rabatstyring
+              items:
+                - name: Parametre til Rabatstyring
+                  href: rebate-management/rebate-management-parameters.md
+                - name: Arbejdsgange for rabatstyringshandel
+                  href: rebate-management/rebate-management-workflows.md
+                - name: Rabatreduktionsprincipper
+                  href: rebate-management/rebate-reduction-principle.md
+                - name: Rabatstatusser
+                  href: rebate-management/rebate-statuses.md
+                - name: Rabatstyringsgrupper
+                  href: rebate-management/rebate-management-groups.md
+                - name: Opsætning af bogføring af rabatstyring
+                  href: rebate-management/rebate-management-posting.md
+            - name: Rabatstyringshandler
+              href: rebate-management/rebate-management-deals.md
+            - name: 'Behandle, gennemse og bogføre rabatter'
+              href: rebate-management/process-review-post.md
         - name: Salg og marketing
           items:
             - name: Oversigt over salg og marketing
@@ -2819,9 +2949,11 @@
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
                     - name: Fejlfinde reservationer i lagerstedsstyring
                       href: warehousing/troubleshoot-warehouse-reservations.md
+                    - name: Fejlfinde batch- og seriereservationshierarkier for lagersteder
+                      href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
                 - name: Delvis frigivelse og delvis forsendelse
                   items:
-                    - name: Delforsendelse af en transportlast
+                    - name: Delvis forsendelse af en transportlast
                       href: warehousing/partial-shipping-of-transport-loads.md
                     - name: Batch-udgivelse af delvist reserverede flytteordrer
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
@@ -2837,8 +2969,6 @@
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Angive forskellige dimensioner for pakning og opbevaring
                       href: warehousing/packing-vs-storage-dimensions.md
-                    - name: Konfigurere containerisering
-                      href: warehousing/tasks/set-up-containerization.md
                     - name: Bekræftelse af batch og nummerplade
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Aktivere udskrivning af id-etiket
@@ -2899,10 +3029,6 @@
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Regel for frigivelse til lagersted
                       href: warehousing/release-to-warehouse-rule.md
-                    - name: Bølgeskabelongruppering
-                      href: warehousing/wave-template-grouping.md
-                    - name: Genudskrive bølgeetiketter og erklære bølgeetiketter ugyldige
-                      href: warehousing/reprint-and-void-wave-labels.md
                     - name: Forsendelse af lille pakke
                       href: warehousing/small-parcel-shipping.md
                     - name: Fejlfinde lastopbygning og forsendelser
@@ -2921,8 +3047,12 @@
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: Eksempel 4 - Konsolidere forsendelser ved hjælp af forsendelseskonsolideringpanelet
                       href: warehousing/consolidate-shipments-manual-workbench.md
-                    - name: Eksempel 5 – Konsolidere forsendelser manuelt ved hjælp af siden Konsolidere forsendelser
+                    - name: Eksempel 5 – Konsolidere forsendelser manuelt ved hjælp af siden Konsolider forsendelser
                       href: warehousing/consolidate-shipments-manual-form.md
+                - name: Bølgeoprettelse og -behandling
+                  href: warehousing/wave-processing.md
+                - name: Genudskrive bølgeetiketter og erklære bølgeetiketter ugyldige
+                  href: warehousing/reprint-and-void-wave-labels.md
                 - name: Fejlfinde udgående lagerstedsoperationer
                   href: warehousing/troubleshoot-warehouse-outbound.md
             - name: På tværs af lagerstedsoperationer
@@ -3003,19 +3133,33 @@
                       href: warehousing/filters-and-filter-codes.md
                     - name: Grænser for lokationslagring
                       href: warehousing/location-stocking-limits.md
-                    - name: Bølgetrinskoder
-                      href: warehousing/wave-step-codes.md
-                    - name: Konfigurere behandling af bølge
-                      href: warehousing/tasks/configure-wave-processing.md
-                    - name: Planlægge oprettelse af arbejde under bølgen
-                      href: warehousing/configure-wave-schedule-work-creation.md
-                    - name: Angive og bruge bølgeetiketudskrivning
-                      href: warehousing/configure-wave-label-printing.md
+                    - name: Bølgegenerering og -behandling
+                      items:
+                        - name: Eksempel på konfigurere behandling af bølge
+                          href: warehousing/tasks/configure-wave-processing.md
+                        - name: Lagerstedsparametre til behandling af bølger
+                          href: warehousing/wave-warehouse-parameters.md
+                        - name: Bølgeskabeloner
+                          href: warehousing/wave-templates.md
+                        - name: Bølgetrinskoder
+                          href: warehousing/wave-step-codes.md
+                        - name: Bølgeskabelongruppering
+                          href: warehousing/wave-template-grouping.md
+                        - name: Bølgefordeling
+                          href: warehousing/wave-allocation-method.md
+                        - name: Planlægge oprettelse af arbejde under bølgen
+                          href: warehousing/configure-wave-schedule-work-creation.md
+                        - name: Beskeder om udførelse af bølge
+                          href: warehousing/wave-execution-notifications.md
+                        - name: Bølgeetiketudskrivning
+                          href: warehousing/configure-wave-label-printing.md
+                        - name: Containerisering
+                          href: warehousing/wave-containerization.md
                     - name: Opdatere forsendelser automatisk
                       href: warehousing/auto-update-shipment.md
                     - name: Oprette en lokationsprofil
                       href: warehousing/tasks/create-location-profile.md
-                    - name: Konfigurere lokationer på et WMS-aktiveret lagersted
+                    - name: Konfigurere placeringer på et WMS-aktiveret lagersted
                       href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
                     - name: Placeringsstatus for lagersted
                       href: warehousing/warehouse-location-status.md
@@ -3041,7 +3185,7 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Fejlfinde konfiguration af lagersted
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Installere og konfigurere lagerstedsapp
+                - name: Installere og konfigurere mobilapp til lagerstedsadministration
                   items:
                     - name: Installere og tilslutte mobilapp til lagerstedsadministration
                       href: warehousing/install-configure-warehouse-management-app.md
@@ -3049,15 +3193,15 @@
                       href: warehousing/mobile-device-user-settings.md
                     - name: Installere og tilslutte lagerstedsapp
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Scanne stregkoder med et kamera i lagerstedsappen
+                    - name: Scanne stregkoder med et kamera i mobilappen til lagerstedsadministration
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Konfigurere feltnavne i lagerstedsapp
+                    - name: Konfigurere felter til mobilappen til lagerstedsadministration
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurere mobilenheder til lagerstedsarbejde
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Hændelsesbehandling af lagerstedsapp
                       href: warehousing/warehouse-app-events.md
-                    - name: Modtage id med lagerstedsapp
+                    - name: Modtage id med mobilappen til lagerstedsadministration
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3075,7 +3219,7 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Procesvejledningsstruktur
                       href: warehousing/process-guide-framework.md
-                    - name: Fejlfinding af problemer med forbindelsen til lagerstedsappen
+                    - name: Fejlfinde problemer med forbindelse til mobilappen til lagerstedsadministration
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Opgradering og overflytning
                   items:

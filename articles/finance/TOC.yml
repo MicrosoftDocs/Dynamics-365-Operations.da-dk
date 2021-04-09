@@ -4,7 +4,7 @@
       items:
         - name: Startside for Dynamics 365 Finance
           href: index.md
-        - name: Introduktion
+        - name: Start her
           items:
             - name: Før du køber
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (februar 2021)
                       href: get-started/whats-new-changed-10-0-16.md
-                    - name: Finance 10.0.15 (januar 2021)
-                      href: get-started/whats-new-changed-10-0-15.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -1130,7 +1128,7 @@
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
         - name: Økonomirapportering
           items:
-            - name: Introduktion til Økonomirapportering
+            - name: Start her med Økonomirapportering
               href: general-ledger/financial-reporting-getting-started.md
             - name: Oversigt over økonomirapportering
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -1418,34 +1416,36 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: Lovmæssige opdateringer
               href: localizations/regulatory-updates.md
-            - name: Tilføjelsesprogram til elektronisk fakturering
+            - name: Elektronisk fakturering
               items:
-                - name: Tilføjelsesprogrammet til oversigt over elektronisk fakturering
+                - name: Oversigt over elektronisk fakturering
                   href: localizations/e-invoicing-service-overview.md
-                - name: Tilføjelseskomponenter til elektronisk fakturering i administration
+                - name: Komponenter til elektronisk fakturering i administration
                   href: localizations/e-invoicing-service-administration.md
-                - name: Konfigurere tilføjelsesprogrammet Elektronisk fakturering i RCS (Regulatory Configuration Services)
+                - name: Konfigurere Elektronisk fakturering i RCS (Regulatory Configuration Services)
                   href: localizations/e-invoicing-configuration-rcs.md
                 - name: Udstede elektroniske fakturaer i Finans og Supply Chain Management
                   href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
                 - name: Oprette en Azure-lagerkonto og en Key Vault
                   href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-                - name: Introduktion
+                - name: Start her
                   items:
-                    - name: Introduktion til tilføjelsesprogrammet til serviceadministration i elektronisk fakturering
+                    - name: Start her med serviceadministration i elektronisk fakturering
                       href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering
+                    - name: Start her med elektronisk fakturering
                       href: localizations/e-invoicing-get-started.md
-                    - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering for Brasilien
+                    - name: Start her med elektronisk fakturering for Brasilien
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering for Egypten
+                    - name: Start her med elektronisk fakturering for Egypten
                       href: localizations/e-invoicing-eg-get-started.md
-                    - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering for Italien
+                    - name: Start her med elektronisk fakturering for Italien
                       href: localizations/e-invoicing-ita-get-started.md
-                    - name: Introduktion til tilføjelsesprogrammet til elektronisk fakturering for Mexico
+                    - name: Start her med elektronisk fakturering for Mexico
                       href: localizations/e-invoicing-mex-get-started.md
-                    - name: Konfigurere tilføjelsesprogrammet til elektronisk fakturering
+                    - name: Konfigurere elektronisk fakturering
                       href: localizations/e-invoicing-setup.md
+                - name: Ofte stillede spørgsmål om elektronisk fakturering
+                  href: localizations/e-invoicing-faq.md
             - name: Australien
               items:
                 - name: Oversigt for Australien
@@ -1798,6 +1798,10 @@
                   href: localizations/emea-egy-invoice-layout.md
                 - name: Elektroniske fakturaer til kunder i Egypten
                   href: localizations/emea-egy-e-invoices.md
+                - name: Momsopgørelse for Egypten
+                  href: localizations/emea-egy-vat-declaration.md
+                - name: A-skatopgørelse for Egypten
+                  href: localizations/emea-egy-wht-declaration.md
             - name: Estland
               items:
                 - name: Oversigt for Estland
@@ -2082,6 +2086,38 @@
                   href: localizations/india.md
                 - name: Omfang af de indiske lokaliseringer
                   href: localizations/apac-ind-scope.md
+                - name: Nyheder eller ændringer i forbindelse med lokalisering for Indien
+                  items:
+                    - name: Nyheder eller ændringer i 10.0.0
+                      href: localizations/apac-ind-news-letter-10-0-00.md
+                    - name: Nyheder eller ændringer i 10.0.01
+                      href: localizations/apac-ind-news-letter-10-0-01.md
+                    - name: Nyheder eller ændringer i 10.0.02
+                      href: localizations/apac-ind-news-letter-10-0-02.md
+                    - name: Nyheder eller ændringer i 10.0.03
+                      href: localizations/apac-ind-news-letter-10-0-03.md
+                    - name: Nyheder eller ændringer i 10.0.04
+                      href: localizations/apac-ind-news-letter-10-0-04.md
+                    - name: Nyheder eller ændringer i 10.0.05
+                      href: localizations/apac-ind-news-letter-10-0-05.md
+                    - name: Nyheder eller ændringer i 10.0.06
+                      href: localizations/apac-ind-news-letter-10-0-06.md
+                    - name: Nyheder eller ændringer i 10.0.07
+                      href: localizations/apac-ind-news-letter-10-0-07.md
+                    - name: Nyheder eller ændringer i 10.0.08
+                      href: localizations/apac-ind-news-letter-10-0-08.md
+                    - name: Nyheder eller ændringer i 10.0.09
+                      href: localizations/apac-ind-news-letter-10-0-09.md
+                    - name: Nyheder eller ændringer i 10.0.10
+                      href: localizations/apac-ind-news-letter-10-0-10.md
+                    - name: Nyheder eller ændringer i 10.0.11
+                      href: localizations/apac-ind-news-letter-10-0-11.md
+                    - name: Nyheder eller ændringer i 10.0.12
+                      href: localizations/apac-ind-news-letter-10-0-12.md
+                    - name: Nyheder eller ændringer i 10.0.13
+                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: Nyheder eller ændringer i 10.0.14
+                      href: localizations/apac-ind-news-letter-10-0-14.md
                 - name: Anlægsaktiver
                   items:
                     - name: Oversigt over anlægsaktiver for Indien
@@ -2108,210 +2144,198 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Overførsel af kapitalvarer til anlægsaktivet
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: Indisk GST
+                - name: Indirekte skatter
                   items:
-                    - name: Oversigt over GST for Indien
-                      href: localizations/apac-ind-gst.md
-                    - name: Nyheder eller ændringer i forbindelse med lokalisering af GST for Indien
+                    - name: Indisk GST
                       items:
-                        - name: Nyheder eller ændringer i 10.0.0
-                          href: localizations/apac-ind-news-letter-10-0-00.md
-                        - name: Nyheder eller ændringer i 10.0.01
-                          href: localizations/apac-ind-news-letter-10-0-01.md
-                        - name: Nyheder eller ændringer i 10.0.02
-                          href: localizations/apac-ind-news-letter-10-0-02.md
-                        - name: Nyheder eller ændringer i 10.0.03
-                          href: localizations/apac-ind-news-letter-10-0-03.md
-                        - name: Nyheder eller ændringer i 10.0.04
-                          href: localizations/apac-ind-news-letter-10-0-04.md
-                        - name: Nyheder eller ændringer i 10.0.05
-                          href: localizations/apac-ind-news-letter-10-0-05.md
-                        - name: Nyheder eller ændringer i 10.0.06
-                          href: localizations/apac-ind-news-letter-10-0-06.md
-                        - name: Nyheder eller ændringer i 10.0.07
-                          href: localizations/apac-ind-news-letter-10-0-07.md
-                        - name: Nyheder eller ændringer i 10.0.08
-                          href: localizations/apac-ind-news-letter-10-0-08.md
-                        - name: Nyheder eller ændringer i 10.0.09
-                          href: localizations/apac-ind-news-letter-10-0-09.md
-                        - name: Nyheder eller ændringer i 10.0.10
-                          href: localizations/apac-ind-news-letter-10-0-10.md
-                        - name: Nyheder eller ændringer i 10.0.11
-                          href: localizations/apac-ind-news-letter-10-0-11.md
-                        - name: Nyheder eller ændringer i 10.0.12
-                          href: localizations/apac-ind-news-letter-10-0-12.md
-                        - name: Nyheder eller ændringer i 10.0.13
-                          href: localizations/ind-news-letter-10-0-13.md
-                        - name: Nyheder eller ændringer i 10.0.14
-                          href: localizations/apac-ind-news-letter-10-0-14.md
-                    - name: Indiske GST-referencegrupper
-                      href: localizations/apac-ind-gst-reference-groups.md
-                    - name: GST-integration for kasseapparater
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
-                    - name: Opsætning af masterdata
-                      items:
-                        - name: Oprette en forretningssektor
-                          href: localizations/apac-ind-GST-create-business-vertical.md
-                        - name: Opdatere områdekoden og fagforeningsdistriktet
-                          href: localizations/apac-ind-GST-update-state-code-union-territory.md
-                        - name: Oprette en GSTIN-master
-                          href: localizations/apac-ind-GST-create-gstin-master.md
-                        - name: Definere GSTIN'er og referencenummerserier
-                          href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
-                        - name: Definere HSN-koder og serviceregnskabskoder
-                          href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
-                        - name: Oprette momssatstype
-                          href: localizations/apac-ind-GST-create-tax-rate-type.md
-                        - name: Oprette hovedkonti til GST-bogføringstypen
-                          href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
-                        - name: Oprette momsafregningsperiode
-                          href: localizations/apac-ind-GST-create-tax-settlement-period.md
-                        - name: Knytte GSTIN til en momsregistreringsgruppe
-                          href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
-                    - name: Konfiguration af moms
-                      items:
-                        - name: Definere en momskonfiguration og implementere den til juridiske enheder
-                          href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
-                        - name: Tilknytte konfigurationsmomstyper - told
-                          href: localizations/apac-ind-GST-map-configuration-tax-types.md
-                        - name: Konfigurere sats- og procenttabeller
-                          href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
-                        - name: Konfigurere et momshierarki og momsposteringsregler
-                          href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
-                    - name: Indkøbstransaktion
-                      items:
-                        - name: Køb fra ikke-registrerede leverandører
-                          href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
-                        - name: 'Købe en vare, der er pålagt moms, fra en ikke-registrerede leverandør'
-                          href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
-                        - name: Køb fra registrerede leverandører
-                          href: localizations/apac-ind-GST-purchases-registered-vendor.md
-                        - name: Køb af rabatvarer
-                          href: localizations/apac-ind-GST-purchase-discounted-goods.md
-                        - name: 'Køb af varer, der er fritaget for moms'
-                          href: localizations/apac-ind-GST-purchase-exempted-goods.md
-                        - name: Køb af momsfrie varer
-                          href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
-                        - name: Køb af ikke-GST-varer
-                          href: localizations/apac-ind-GST-purchase-non-gst-goods.md
-                        - name: Køb fra sammensatte forhandlere
-                          href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
-                        - name: 'Køb af momspligtige varer, der har forsendelsesgebyrer'
-                          href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
-                        - name: Revidere en indkøbsfaktura med momspligtige varer
-                          href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
-                        - name: Køb af anlægsaktiver
-                          href: localizations/apac-ind-GST-purchase-fixed-asset.md
-                        - name: Oprette en kreditnota på baggrund af en indkøbsfaktura
-                          href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
-                        - name: Oprette en debetnota på baggrund af en indkøbsfaktura
-                          href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
-                        - name: 'Kvalitetsordrer, der involverer destruktion af prøveudtagningsvaren'
-                          href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
-                        - name: Returindkøbsordrer
-                          href: localizations/apac-ind-GST-purchase-return-order.md
-                        - name: 'Kreditorforudbetalinger, hvor der er tilbageførte gebyrer'
-                          href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
-                    - name: Salgstransaktion
-                      items:
-                        - name: Salg af momspligtige varer til forbrugere
-                          href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
-                        - name: Salg til registrerede kunder
-                          href: localizations/apac-ind-GST-sell-registered-customer.md
-                        - name: Fritekstfakturaer
-                          href: localizations/apac-ind-GST-free-text-invoices.md
-                        - name: 'Salg af momspligtige varer, hvor der er et tilbageført gebyr'
-                          href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
-                        - name: Salg af momsfritagne varer
-                          href: localizations/apac-ind-GST-sales-exempted-item.md
-                        - name: Salg af momsfrie varer
-                          href: localizations/apac-ind-GST-sell-zero-rated-goods.md
-                        - name: Salg af ikke-GST-varer
-                          href: localizations/apac-ind-GST-sell-non-gst-goods.md
-                        - name: 'Salg af momspligtige varer, der har en rabat og en foreløbig vurdering'
-                          href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
-                        - name: 'Salg af momspligtige varer, der har moms på forsendelsesgebyrer'
-                          href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
-                        - name: 'Salg, hvor priserne er inklusive og eksklusive moms'
-                          href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
-                        - name: Oprette en debetnota på baggrund af en salgsfaktura
-                          href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
-                        - name: Oprette en kreditnota på baggrund af en salgsfaktura
-                          href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
-                        - name: 'Salgsfakturaer, der er opdelt på basis af leveringsadresser'
-                          href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
-                        - name: Returordrer
-                          href: localizations/apac-ind-GST-return-order-form.md
-                    - name: Udenlandske transaktioner
-                      items:
-                        - name: 'Importvarer, der har GST'
-                          href: localizations/apac-ind-GST-import-goods-gst.md
-                        - name: 'Importtjenester, der har GST'
-                          href: localizations/apac-ind-import-services-gst.md
-                        - name: 'Eksportere varer, der er momsfrie'
-                          href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
-                        - name: 'Eksportere tjenester, der er momsfrie'
-                          href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
-                    - name: Lagerbeholdningstransaktion
-                      items:
-                        - name: Ordrer til overførsler af lagerbeholdning
-                          href: localizations/apac-ind-stock-transfer.md
-                        - name: 'Flytteordrer til lagerbeholdning, der har moms på flytteprisen'
-                          href: localizations/apac-ind-GST-stock-transfer-transactions.md
-                    - name: Debitorbetalingstransaktion
-                      items:
-                        - name: 'Forskudsbetalinger, der omfatter moms'
-                          href: localizations/apac-ind-GST-advance-payment-includes-tax.md
-                        - name: 'Forudbetalinger, der er udlignet under fakturabogføring'
-                          href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
-                        - name: 'Manuel udligning af en forskudsbetaling og faktura, der omfatter moms.'
-                          href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
-                        - name: 'Betaling af fakturaer, der omfatter moms'
-                          href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
-                        - name: 'Revider forskudsbetalinger, der omfatter moms'
-                          href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
-                        - name: Debitorbetalingsrefusioner
-                          href: localizations/apac-ind-GST-customer-payment-refund.md
-                    - name: Transaktion med direkte moms
+                        - name: Oversigt over GST for Indien
+                          href: localizations/apac-ind-gst.md
+                        - name: Momsprogram
+                          items:
+                            - name: Oversigt over momsprogram
+                              href: general-ledger/tax-engine.md
+                            - name: Importér konfiguration
+                              href: general-ledger/tax-engine-import-configuration.md
+                            - name: Avanceret formeldesigner
+                              href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                            - name: Anvendelse af momsprogram
+                              href: general-ledger/tax-engine-applicability.md
+                            - name: Oprette momskomponenter
+                              href: localizations/tax-engine-create-tax-component.md
+                            - name: Integration af momsprogram
+                              href: general-ledger/tax-engine-integration.md
+                            - name: Udvidelse af momsprogram
+                              href: general-ledger/extend-tax-engine-configurations.md
+                            - name: Rydde op i TaxDocumentJSON-tabellen
+                              href: localizations/gte-clean-up-tax-document-json-table.md
+                            - name: Fejlfinding GTE
+                              href: localizations/tax-engine-trouble-shooting.md
+                        - name: Opsætning af masterdata
+                          items:
+                            - name: Oprette en forretningssektor
+                              href: localizations/apac-ind-GST-create-business-vertical.md
+                            - name: Opdatere områdekoden og fagforeningsdistriktet
+                              href: localizations/apac-ind-GST-update-state-code-union-territory.md
+                            - name: Oprette en GSTIN-master
+                              href: localizations/apac-ind-GST-create-gstin-master.md
+                            - name: Definere GSTIN'er og referencenummerserier
+                              href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                            - name: Definere HSN-koder og serviceregnskabskoder
+                              href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                            - name: Oprette momssatstype
+                              href: localizations/apac-ind-GST-create-tax-rate-type.md
+                            - name: Oprette hovedkonti til GST-bogføringstypen
+                              href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                            - name: Oprette momsafregningsperiode
+                              href: localizations/apac-ind-GST-create-tax-settlement-period.md
+                            - name: Knytte GSTIN til en momsregistreringsgruppe
+                              href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                        - name: Konfiguration af moms
+                          items:
+                            - name: Definere en momskonfiguration og implementere den til juridiske enheder
+                              href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                            - name: Tilknytte konfigurationsmomstyper - told
+                              href: localizations/apac-ind-GST-map-configuration-tax-types.md
+                            - name: Konfigurere sats- og procenttabeller
+                              href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                            - name: Konfigurere et momshierarki og momsposteringsregler
+                              href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                            - name: Indiske GST-referencegrupper
+                              href: localizations/apac-ind-gst-reference-groups.md
+                        - name: Momstransaktioner
+                          items:
+                            - name: Indkøbstransaktioner
+                              items:
+                                - name: Køb fra ikke-registrerede leverandører
+                                  href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                                - name: 'Købe en vare, der er pålagt moms, fra en ikke-registrerede leverandør'
+                                  href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                                - name: Køb fra registrerede leverandører
+                                  href: localizations/apac-ind-GST-purchases-registered-vendor.md
+                                - name: Køb af rabatvarer
+                                  href: localizations/apac-ind-GST-purchase-discounted-goods.md
+                                - name: 'Køb af varer, der er fritaget for moms'
+                                  href: localizations/apac-ind-GST-purchase-exempted-goods.md
+                                - name: Køb af momsfrie varer
+                                  href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                                - name: Køb af ikke-GST-varer
+                                  href: localizations/apac-ind-GST-purchase-non-gst-goods.md
+                                - name: Køb fra sammensatte forhandlere
+                                  href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                                - name: 'Køb af momspligtige varer, der har forsendelsesgebyrer'
+                                  href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                                - name: Revidere en indkøbsfaktura med momspligtige varer
+                                  href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                                - name: Køb af anlægsaktiver
+                                  href: localizations/apac-ind-GST-purchase-fixed-asset.md
+                                - name: Oprette en kreditnota på baggrund af en indkøbsfaktura
+                                  href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                                - name: Oprette en debetnota på baggrund af en indkøbsfaktura
+                                  href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                                - name: 'Kvalitetsordrer, der involverer destruktion af prøveudtagningsvaren'
+                                  href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                                - name: Returindkøbsordrer
+                                  href: localizations/apac-ind-GST-purchase-return-order.md
+                                - name: 'Kreditorforudbetalinger, hvor der er tilbageførte gebyrer'
+                                  href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                            - name: Salgstransaktioner
+                              items:
+                                - name: Salg af momspligtige varer til forbrugere
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                                - name: Salg til registrerede kunder
+                                  href: localizations/apac-ind-GST-sell-registered-customer.md
+                                - name: Fritekstfakturaer
+                                  href: localizations/apac-ind-GST-free-text-invoices.md
+                                - name: 'Salg af momspligtige varer, hvor der er et tilbageført gebyr'
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                                - name: Salg af momsfritagne varer
+                                  href: localizations/apac-ind-GST-sales-exempted-item.md
+                                - name: Salg af momsfrie varer
+                                  href: localizations/apac-ind-GST-sell-zero-rated-goods.md
+                                - name: Salg af ikke-GST-varer
+                                  href: localizations/apac-ind-GST-sell-non-gst-goods.md
+                                - name: 'Salg af momspligtige varer, der har en rabat og en foreløbig vurdering'
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                                - name: 'Salg af momspligtige varer, der har moms på forsendelsesgebyrer'
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                                - name: 'Salg, hvor priserne er inklusive og eksklusive moms'
+                                  href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                                - name: Oprette en debetnota på baggrund af en salgsfaktura
+                                  href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                                - name: Oprette en kreditnota på baggrund af en salgsfaktura
+                                  href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                                - name: 'Salgsfakturaer, der er opdelt på basis af leveringsadresser'
+                                  href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                                - name: Returordrer
+                                  href: localizations/apac-ind-GST-return-order-form.md
+                            - name: Udenlandske transaktioner
+                              items:
+                                - name: 'Importvarer, der har GST'
+                                  href: localizations/apac-ind-GST-import-goods-gst.md
+                                - name: 'Importtjenester, der har GST'
+                                  href: localizations/apac-ind-import-services-gst.md
+                                - name: 'Eksportere varer, der er momsfrie'
+                                  href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                                - name: 'Eksportere tjenester, der er momsfrie'
+                                  href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                                - name: Kredit- eller debetnote i forhold til en eksportordre
+                                  href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
+                            - name: Overføre lagerbeholdningstransaktioner
+                              items:
+                                - name: Overføre lagerbeholdningsordrer
+                                  href: localizations/apac-ind-stock-transfer.md
+                                - name: 'Overføre lagerbeholdningsordrer, der har moms på overførselsprisen'
+                                  href: localizations/apac-ind-GST-stock-transfer-transactions.md
+                            - name: Debitorbetalingstransaktioner
+                              items:
+                                - name: 'Forskudsbetalinger, der omfatter moms'
+                                  href: localizations/apac-ind-GST-advance-payment-includes-tax.md
+                                - name: 'Forudbetalinger, der er udlignet under fakturabogføring'
+                                  href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                                - name: 'Manuel udligning af en forskudsbetaling og faktura, der omfatter moms.'
+                                  href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                                - name: 'Betaling af fakturaer, der omfatter moms'
+                                  href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                                - name: 'Revider forskudsbetalinger, der omfatter moms'
+                                  href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                                - name: Debitorbetalingsrefusioner
+                                  href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Momsregulering
+                              items:
+                                - name: Regulering af momsbeløb
+                                  href: localizations/apac-ind-GST-tax-adjustments.md
+                                - name: Oprette en momskladde
+                                  href: localizations/apac-ind-GST-tax-journal.md
+                            - name: Forespørgsler på momsdokument
+                              items:
+                                - name: Momsundersøgelse
+                                  href: localizations/apac-ind-GST-tax-inquiry.md
+                        - name: Momsafregning
+                          items:
+                            - name: Regelbaseret momsafregning
+                              href: localizations/apac-ind-GST-tax-settlement.md
+                        - name: GSTR-rapporter
+                          items:
+                            - name: Nye GSTR-1- og GSTR-2-returformater
+                              href: localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md
+                            - name: Nyt offlineværktøj til GSTR til ANX-1 og indkøbsregister
+                              href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
+                            - name: Generere GSTR-rapportdata til angivelse af moms
+                              href: localizations/apac-ind-GST-tax-returns.md
+                            - name: Aktivere multi-batchafvikling for GSTR-rapporter
+                              href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                - name: Direkte skatter
+                  items:
+                    - name: A-skat i Indien
                       items:
                         - name: Medtag GST ved beregning af momsfradrag
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
                         - name: Medtag GST ved beregning af momsopkrævninger
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-                    - name: Regulering af momsbeløb
-                      href: localizations/apac-ind-GST-tax-adjustments.md
-                    - name: Regelbaseret momsafregning
-                      href: localizations/apac-ind-GST-tax-settlement.md
-                    - name: Oprette en momskladde
-                      href: localizations/apac-ind-GST-tax-journal.md
-                    - name: Generere GSTR-rapportdata til angivelse af moms
-                      href: localizations/apac-ind-GST-tax-returns.md
-                    - name: Aktivere multi-batchafvikling for GSTR-rapporter
-                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
-                    - name: Momsundersøgelse
-                      href: localizations/apac-ind-GST-tax-inquiry.md
-                    - name: Rydde op i TaxDocumentJSON-tabellen
-                      href: localizations/gte-clean-up-tax-document-json-table.md
-                - name: Momsprogram
-                  items:
-                    - name: Oversigt over momsprogram
-                      href: general-ledger/tax-engine.md
-                    - name: Importere konfiguration
-                      href: general-ledger/tax-engine-import-configuration.md
-                    - name: Avanceret formeldesigner
-                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
-                    - name: Anvendelse af momsprogram
-                      href: general-ledger/tax-engine-applicability.md
-                    - name: Oprette momskomponenter
-                      href: localizations/tax-engine-create-tax-component.md
-                    - name: Integration af momsprogram
-                      href: general-ledger/tax-engine-integration.md
-                    - name: Udvidelse af momsprogram
-                      href: general-ledger/extend-tax-engine-configurations.md
-                    - name: Fejlfinding GTE
-                      href: localizations/tax-engine-trouble-shooting.md
-                - name: Ofte stillede spørgsmål om momsgrænser
-                  href: localizations/apac-ind-tax-thresholds.md
+                        - name: Ofte stillede spørgsmål om momsgrænser
+                          href: localizations/apac-ind-tax-thresholds.md
+                        - name: TCS for salg af varer
+                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
             - name: Italien
               items:
                 - name: Oversigt for Italien
@@ -2568,6 +2592,8 @@
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: i.SAF-rapportering for Litauen
                   href: localizations/emea-ltu-isaf.md
+                - name: Standardrevisionsfil for moms (SAF-T) for Litauen
+                  href: localizations/emea-ltu-saf-t.md
             - name: Malaysia
               items:
                 - name: Oversigt for Malaysia
@@ -2924,12 +2950,14 @@
                   items:
                     - name: Udgifts- og indtægtskoder
                       href: localizations/rus-expense-and-income-codes.md
-                    - name: Momsjournaler for aktiver
+                    - name: Momsregistre for aktiver
                       href: localizations/rus-assets-tax-registers.md
                     - name: Register over udskudt moms
                       href: localizations/rus-deferred-expenses-register.md
-                    - name: Kasseapparater til likviditetsskat
+                    - name: Registre til likviditetsmoms
                       href: localizations/rus-cash-flow-tax-registers.md
+                    - name: Registre til vurderede udgifter
+                      href: localizations/rus-rated-expenses-registers.md
             - name: Saudi-Arabien
               items:
                 - name: Oversigt for Saudi-Arabien
@@ -3357,7 +3385,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/finance/toc.json
                 - name: Tilpasse App Suite-rapporter ved hjælp af udvidelser
                   href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/finance/toc.json
-                - name: Udvide rapportdatasæt for ansøgningspakke
+                - name: Udvide rapportdatasæt for programpakke
                   href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/finance/toc.json
                 - name: Udvide rapportmenupunkter for at omdirigere brugernavigation
                   href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/finance/toc.json
@@ -3379,13 +3407,13 @@
                   items:
                     - name: Designe domænespecifik datamodel
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Forberede ansøgningsspecifikke metadata
+                    - name: Forberede applikationsspecifikke metadata
                       items:
-                        - name: '(ER) Klargøre ansøgningsmetadata, der skal bruges i RCS'
+                        - name: 'Klargøre applikationsmetadata i ER, der skal bruges i RCS'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Få adgang til ansøgningsmetadata ved hjælp af ER-konfiguration
+                        - name: Få adgang til applikationsmetadata i RCS ved hjælp af ER-konfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Få adgang til ansøgningsmetadata ved hjælp af tilsluttede programmer
+                        - name: Få adgang til applikationsmetadata i RCS ved hjælp af tilsluttede applikationer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
                         - name: Definere modeltilknytninger og vælge datakilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3403,7 +3431,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
                     - name: Opgradere dit format ved at bruge en ny basisversion af det pågældende format
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
-            - name: Formeldesignere i elektronisk rapportering
+            - name: Formeldesignere i ER
               items:
                 - name: Formeldesigner
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
@@ -3675,7 +3703,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Tekst: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: Designe ER-formater til generering af udgående elektroniske dokumenter i forskellige formater
+            - name: Designe ER-formater til generering af udgående dokumenter i forskellige formater
               items:
                 - name: Designe konfigurationer til at generere udgående dokumenter i Excel-format
                   items:
@@ -3703,7 +3731,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Integrere billeder og figurer
                   items:
-                    - name: '(ER) Integrere billeder og figurer i de dokumenter, du opretter'
+                    - name: 'Integrere billeder og figurer i de dokumenter, du opretter'
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
                     - name: Eksempel på integrering af billeder og figurer
                       items:
@@ -3717,9 +3745,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Ignorere styklistetegn i genererede filer
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
-            - name: Opdatere ansøgningsdata ved hjælp af elektronisk rapportering
+            - name: Opdatere applikationsdata ved hjælp af ER
               items:
-                - name: Generere elektroniske dokumenter og opdatere ansøgningsdata
+                - name: Generere elektroniske dokumenter og opdatere applikationsdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
                 - name: Importere konfigurationer for at generere dokumenter med ansøgningsdata
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/finance/toc.json
@@ -3757,17 +3785,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
                     - name: Importere konfigurationer fra LCS
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                    - name: Hent konfigurationer fra LCS
+                    - name: Downloade konfigurationer fra LCS
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Importere konfigurationer (LBD).
+                    - name: Importere konfigurationer (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory services (RCS)
                   items:
-                    - name: Regulatory Configuration Services (RCS) – globaliseringsfunktioner
-                      href: localizations/rcs-globalization-feature.md
-                    - name: Hente ER-konfigurationer til Finance
+                    - name: Globaliseringsfunktioner i RCS
+                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
+                    - name: Downloade ER-konfigurationer til Finance
                       items:
-                        - name: Hente konfigurationer fra RCS
+                        - name: Downloade konfigurationer fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Importere konfigurationer fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
@@ -3896,17 +3924,17 @@
                     - name: Destinationstyper
                       items:
                         - name: Arkivdestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
                         - name: Maildestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
                         - name: Fildestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
                         - name: Power BI-destination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
                         - name: Printerdestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
                         - name: Skærmdestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere destinationer
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere handlingsafhængige destinationer
@@ -3919,11 +3947,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
                     - name: Forbedringer i sporingsresultaterne fra genererede ER-rapporter og sammenligninger med basisværdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                    - name: Automatisere test med elektronisk rapportering
+                    - name: Automatisere test med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
                 - name: Automatisere forretningsprocesser ved hjælp af konfigurationer af elektroniske rapporter
                   items:
-                    - name: Konfigurere elektronisk rapportering for at trække data ind i Power BI
+                    - name: Konfigurere ER til at trække data ind i Power BI
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: 'Oprette formularer med fritekstfakturaer (FTI), der kan udskrives'
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
