@@ -1,8 +1,7 @@
 ---
 title: Plan for at det globale adressekartotek og andre adressekartoteker
-description: I dette emne beskrives de overvejelser og de beslutninger, du skal foretage i planlægningsprocessen, før du opsætter og konfigurerer det globale adressekartotek og eventuelle supplerende adressekartoteker.
+description: I dette emne beskrives de overvejelser og de beslutninger, du skal foretage i planlægningsprocessen.
 author: msftbrking
-manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a0613b944d0446e339480a71fa890702190ed53
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d1d3a476a183453f170dae9b812949822ea60edd
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559959"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747603"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planen for det globale adressekartotek og andre adressekartoteker
 

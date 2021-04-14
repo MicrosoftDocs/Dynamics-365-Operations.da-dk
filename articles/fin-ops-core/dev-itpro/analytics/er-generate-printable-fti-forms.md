@@ -2,7 +2,6 @@
 title: Generere FTI-formularer, der kan udskrives
 description: Dette emne forklarer, hvordan du bruger strukturen i elektronisk rapportering (ER) til at generere fritekstfakturaformularer (FTI), der kan udskrives, som Microsoft Office-dokumenter.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da671d7b9302f99fc71860cf41846290d74d11e1
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 9e64899e0bbdb5a9d8899e865de9ee32aae59382
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570680"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751650"
 ---
 # <a name="generate-printable-fti-forms"></a>Generere FTI-formularer, der kan udskrives
 

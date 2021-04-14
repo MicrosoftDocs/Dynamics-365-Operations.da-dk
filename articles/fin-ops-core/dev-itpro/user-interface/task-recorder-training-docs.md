@@ -2,7 +2,6 @@
 title: Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
 description: Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter registreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp.
 author: josaw1
-manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b0a31b709c964bbb896079f2db5aeee3c1f22f2
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563124"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744157"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
 

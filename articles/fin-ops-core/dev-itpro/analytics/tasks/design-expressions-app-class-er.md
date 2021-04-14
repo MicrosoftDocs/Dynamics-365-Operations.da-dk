@@ -2,7 +2,6 @@
 title: Designe ER-udtryk til kald af programklassemetoder
 description: Dette emne indeholder oplysninger om, hvordan du genbruge den eksisterende programlogik i konfigurationer til elektronisk rapportering ved at kalde de krævede metoder for programklasser.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11b4d185703731d8491ad10bdeedea40ce811f5d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 37cf01ac4b23717ebddaaefe6bcb06be0ff82dc6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564088"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752502"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Designe ER-udtryk til kald af programklassemetoder
 
