@@ -2,7 +2,6 @@
 title: ER-funktionen INDEX
 description: Dette emne indeholder oplysninger om, hvordan funktionen INDEX til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,52 +15,52 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88be8f8bdc82bf3eab5c99e72046c794d8fac361
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 14f10359a3f20fb9d23639babce764b9ef64243d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566919"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750454"
 ---
-# <a name="index-er-function"></a><span data-ttu-id="ccf33-103">ER-funktionen INDEX</span><span class="sxs-lookup"><span data-stu-id="ccf33-103">INDEX ER function</span></span>
+# <a name="index-er-function"></a><span data-ttu-id="03fc0-103">ER-funktionen INDEX</span><span class="sxs-lookup"><span data-stu-id="03fc0-103">INDEX ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ccf33-104">Funktionen `INDEX` returnerer en *Container (post)*-værdi, der er valgt ved hjælp af det angivne numeriske indeks på den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="ccf33-104">The `INDEX` function returns a *Container (record)* value that is selected by using the specified numeric index in the specified list.</span></span> <span data-ttu-id="ccf33-105">Der udløses en undtagelse, hvis indekset er uden for området for posterne på den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="ccf33-105">If the index is out of range for the records in the specified list, an exception is thrown.</span></span>
+<span data-ttu-id="03fc0-104">Funktionen `INDEX` returnerer en *Container (post)*-værdi, der er valgt ved hjælp af det angivne numeriske indeks på den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="03fc0-104">The `INDEX` function returns a *Container (record)* value that is selected by using the specified numeric index in the specified list.</span></span> <span data-ttu-id="03fc0-105">Der udløses en undtagelse, hvis indekset er uden for området for posterne på den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="03fc0-105">If the index is out of range for the records in the specified list, an exception is thrown.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ccf33-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="ccf33-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="03fc0-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="03fc0-106">Syntax</span></span>
 
 ```vb
 INDEX (list, index)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ccf33-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="ccf33-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="03fc0-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="03fc0-107">Arguments</span></span>
 
-<span data-ttu-id="ccf33-108">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="ccf33-108">`list`: *Record list*</span></span>
+<span data-ttu-id="03fc0-108">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="03fc0-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="ccf33-109">Den gyldige sti til en datakilde af datatypen *Postliste*.</span><span class="sxs-lookup"><span data-stu-id="ccf33-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="03fc0-109">Den gyldige sti til en datakilde af datatypen *Postliste*.</span><span class="sxs-lookup"><span data-stu-id="03fc0-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-<span data-ttu-id="ccf33-110">`index`: *Heltal*</span><span class="sxs-lookup"><span data-stu-id="ccf33-110">`index`: *Integer*</span></span>
+<span data-ttu-id="03fc0-110">`index`: *Heltal*</span><span class="sxs-lookup"><span data-stu-id="03fc0-110">`index`: *Integer*</span></span>
 
-<span data-ttu-id="ccf33-111">Et numerisk indeks, der angiver placeringen af den ønskede post på den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="ccf33-111">A numeric index that indicates the position of the desired record in the specified list.</span></span>
+<span data-ttu-id="03fc0-111">Et numerisk indeks, der angiver placeringen af den ønskede post på den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="03fc0-111">A numeric index that indicates the position of the desired record in the specified list.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ccf33-112">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="ccf33-112">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="03fc0-112">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="03fc0-112">Return values</span></span>
 
-<span data-ttu-id="ccf33-113">*Container (post)*</span><span class="sxs-lookup"><span data-stu-id="ccf33-113">*Container (record)*</span></span>
+<span data-ttu-id="03fc0-113">*Container (post)*</span><span class="sxs-lookup"><span data-stu-id="03fc0-113">*Container (record)*</span></span>
 
-<span data-ttu-id="ccf33-114">Den resulterende postværdi.</span><span class="sxs-lookup"><span data-stu-id="ccf33-114">The resulting record value.</span></span>
+<span data-ttu-id="03fc0-114">Den resulterende postværdi.</span><span class="sxs-lookup"><span data-stu-id="03fc0-114">The resulting record value.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="ccf33-115">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="ccf33-115">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="03fc0-115">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="03fc0-115">Example 1</span></span>
 
-<span data-ttu-id="ccf33-116">Hvis du angiver datakilden **DS** af typen *Beregnet felt*, og den indeholder udtrykket `SPLIT ("A|B|C", "|")`, returnerer udtrykket `DS.Value` tekstværdien **"B"** for den anden post på denne postliste.</span><span class="sxs-lookup"><span data-stu-id="ccf33-116">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `DS.Value` returns the text value **"B"** for the second record of this record list.</span></span> <span data-ttu-id="ccf33-117">Udtrykket `INDEX (SPLIT ("A|B|C", "|"), 2).Value` returnerer også tekstværdien **"B"**.</span><span class="sxs-lookup"><span data-stu-id="ccf33-117">The expression `INDEX (SPLIT ("A|B|C", "|"), 2).Value` also returns the text value **"B"**.</span></span>
+<span data-ttu-id="03fc0-116">Hvis du angiver datakilden **DS** af typen *Beregnet felt*, og den indeholder udtrykket `SPLIT ("A|B|C", "|")`, returnerer udtrykket `DS.Value` tekstværdien **"B"** for den anden post på denne postliste.</span><span class="sxs-lookup"><span data-stu-id="03fc0-116">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `DS.Value` returns the text value **"B"** for the second record of this record list.</span></span> <span data-ttu-id="03fc0-117">Udtrykket `INDEX (SPLIT ("A|B|C", "|"), 2).Value` returnerer også tekstværdien **"B"**.</span><span class="sxs-lookup"><span data-stu-id="03fc0-117">The expression `INDEX (SPLIT ("A|B|C", "|"), 2).Value` also returns the text value **"B"**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="ccf33-118">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="ccf33-118">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="03fc0-118">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="03fc0-118">Example 2</span></span>
 
-<span data-ttu-id="ccf33-119">Hvis du indtaster datakilden **DS** af typen *Beregnet felt*, og den indeholder udtrykket `SPLIT ("A|B|C", "|")`, udløser udtrykket `INDEX (SPLIT ("A|B|C", "|"), 4).Value` en undtagelse under kørslen.</span><span class="sxs-lookup"><span data-stu-id="ccf33-119">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `INDEX (SPLIT ("A|B|C", "|"), 4).Value` throws an exception at runtime.</span></span>
+<span data-ttu-id="03fc0-119">Hvis du indtaster datakilden **DS** af typen *Beregnet felt*, og den indeholder udtrykket `SPLIT ("A|B|C", "|")`, udløser udtrykket `INDEX (SPLIT ("A|B|C", "|"), 4).Value` en undtagelse under kørslen.</span><span class="sxs-lookup"><span data-stu-id="03fc0-119">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `INDEX (SPLIT ("A|B|C", "|"), 4).Value` throws an exception at runtime.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ccf33-120">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="ccf33-120">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="03fc0-120">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="03fc0-120">Additional resources</span></span>
 
-[<span data-ttu-id="ccf33-121">Listefunktioner</span><span class="sxs-lookup"><span data-stu-id="ccf33-121">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="03fc0-121">Listefunktioner</span><span class="sxs-lookup"><span data-stu-id="03fc0-121">List functions</span></span>](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
