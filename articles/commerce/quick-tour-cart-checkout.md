@@ -2,11 +2,9 @@
 title: Oversigt over sider til indkøbsvogn og betaling ved kassen
 description: Dette emne indeholder en oversigt over sider til indkøbsvogn og betaling ved kassen i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f7c708aa7f1a858e78cdbda809b90b944606022
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244785"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792237"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversigt over sider til indkøbsvogn og betaling ved kassen
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over sider til indkøbsvogn og betaling ved kassen i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 På indkøbsvognssiden på et e-handels-websted vises alle de varer, som en kunde har lagt i indkøbsvognen. Siden med indkøbsvognen opbygges ved hjælp af indkøbsvognsmodulet. Indkøbsvognsmodulet er en container, der agerer vært for alle de moduler, der kræves for at fremvise varerne i indkøbsvognen. Modulet til indkøbsvognen kan også bruge andre moduler til at vise ordreoversigten og eventuelle kampagnekoder, der er anvendt på kundeordren.
 

@@ -2,11 +2,9 @@
 title: Sidefodsmodul
 description: Dette emne omhandler sidefodsmoduler og beskriver, hvordan du kan oprette dem i Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16c9ca145aff97f0af242da4cf662367f1f4ca3d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d6e7b0ad4fe0723575a0ec55a9b02d110568db58
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211442"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797227"
 ---
 # <a name="footer-module"></a>Sidefodsmodul  
 
@@ -35,13 +33,13 @@ Det følgende billede viser et eksempel på et sidefodsmodul på en webstedside.
 
 ![Eksempel på et sidefodsmodul](./media/ecommerce-footer.PNG)
 
-## <a name="footer-module-properties"></a>Egenskaber for sidefodsmodul 
+## <a name="footer-module-properties&quot;></a>Egenskaber for sidefodsmodul 
 
 Som de fleste containere understøtter et sidefodsmodul egenskaber for overskriften og bredden. Det understøtter også tilføjelse af flere sidefodskategorimoduler. Hver af de sidefodskategorimodul, der tilføjes, gengives som en kolonne i sidefodsmodulet.
 
-## <a name="modules-available-in-a-footer-module"></a>Moduler, der er tilgængelige i et sidefodsmodul
+## <a name=&quot;modules-available-in-a-footer-module&quot;></a>Moduler, der er tilgængelige i et sidefodsmodul
 
-**Sidefodselementer** – Et sidefodselementmodul kan indeholde en overskrift, et billede og et link. Overskriften kan enten bruges alene eller sammen med et billede og et link. Alle links i sidefoden kan konfigureres, så de kun har tekst (f.eks. links som "Kontakt os" og "Beskyttelse af personlige oplysninger"), eller så det indeholder både tekst og et billede (f.eks. sociale medielinks).
+**Sidefodselementer** – Et sidefodselementmodul kan indeholde en overskrift, et billede og et link. Overskriften kan enten bruges alene eller sammen med et billede og et link. Alle links i sidefoden kan konfigureres, så de kun har tekst (f.eks. links som &quot;Kontakt os&quot; og &quot;Beskyttelse af personlige oplysninger"), eller så det indeholder både tekst og et billede (f.eks. sociale medielinks).
 
 **Tilbage til toppen** – Et tilbage til toppen-modul indeholder et link til hurtig navigation til toppen af siden. Der skal angives en destination. Standarddestinationsværdien er \#, som fører brugeren op til toppen af siden.
 

@@ -2,7 +2,6 @@
 title: Sammenligning af funktioner i skyen og i det lokale miljø
 description: Emnet viser, hvilke funktioner der understøttes i skyen og lokalt.
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 52dfff77fa7d14e560ce20596a4d79edeadb5390
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566630"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744045"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning af funktioner i skyen og i det lokale miljø
 
@@ -42,10 +41,10 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 | **Areal**             | **Funktion**                | **Sky** | **I det lokale miljø** |
 |---------------------|-----------------------------|-----------|-----------------|
 | Overholdelse og certificeringer        |                                                                                           | Ja       | Ja             |
-|                                      | SOC 1 Type 1-certificering                                                                | Ja       | Nr.              |
-| Datastyring og -integration      |                                                                                           | Ja       | Ja             
+|                                      | SOC 1 Type 1-certificering                                                                | Ja       | Nej              |
+| Datastyring og -integration      |                                                                                           | Ja       | Ja             |
 |                                      | Eksportere data til dit eget datalager                                                    | Ja       | Ja             |
-|                                      | Aktiver eksport af trinvise opdateringer til en dataenhed                                 | Ja       | Ja              |
+|                                      | Aktiver eksport af trinvise opdateringer til en dataenhed                                 | Ja       | Ja             |
 |                                      | Dataintegrationer                                                                         | Ja       | Ja             |
 | Dokumentstyring                  |                                                                                           | Ja       | Ja             |
 | Økonomistyring                 |                                                                                           | Ja       | Ja             |
@@ -54,16 +53,16 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 | Intelligence                         |                                                                                           | Ja       | Ja             |
 |                                      | Elektronisk rapportering (ER)                                                                 | Ja       | Ja             |
 |                                      | ER: integration med LCS                                                                  | Ja       | Nr.              |
-|                                      | ER: integration med SharePoint                                                           | Ja       | Nr.              |
+|                                      | ER: integration med SharePoint                                                           | Ja       | Nej              |
 |                                      | ER: integration med Regulatory Configuration Services (RCS)                              | Ja       | Nr.              |
 |                                      | ER: anvender lokalt filsystem til at lagre ER-konfigurationer, der kan tilgås via ER-lagre | Ingen        | Ja             |
 |                                      | Integration med PowerBI.com                                                              | Ja       | Ingen              |
 |                                      | Integration med Power BI Desktop                                                          | Ingen        | Ja             |
 |                                      | Analytiske arbejdsområder                                                                     | Ja       | Ingen              |
 |                                      | Intelligent forretningsproces: anbefalinger                                             | Ja       | Nr.              |
-|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery    | Ja       | Nr.              |
-|                                      | SQL Server Reporting Services (SSRS) understøtter udskalering                                 | Ja       | Nr.              |
-|                                      | Telemetri overføres til skyen                                                   | Ja       | Nr.              |
+|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery    | Ja       | Nej              |
+|                                      | SQL Server Reporting Services (SSRS) understøtter udskalering                                 | Ja       | Ja             |
+|                                      | Telemetri overføres til skyen                                                   | Ja       | Ingen              |
 | Lifecycle Services                   |                                                                                           | Ja       | Ja             |
 |                                      | Forretningsprocesser, der kan konfigureres                                                           | Ja       | Nr.              |
 | Lokaliseringer                        |                                                                                           | Ja       | Ja             |
@@ -85,7 +84,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 
 | **Areal**                | **Funktion**             | **Sky** | **I det lokale miljø** |
 |-------------------------|-------------------|-----------|-----------------|
-| Aktivstyring                     |                                                                                           | Ja       | Ingen |
+| Aktivstyring                     |                                                                                           | Ja       | Ingen              |
 | Overholdelse og certificeringer        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1-certificering                                                                | Ja       | Nr.              |
 | Omkostningsregnskab                      |                                                                                           | Ja       | Ja             |
@@ -96,7 +95,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 | Datastyring og -integration      |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurationsdrevet udvidelse                                                            | Ja       | Nej              |
 |                                      | Eksportere data til dit eget datalager                                                    | Ja       | Ja             |
-|                                      | Aktiver eksport af trinvise opdateringer til en dataenhed                                 | Ja       | Ja              |
+|                                      | Aktiver eksport af trinvise opdateringer til en dataenhed                                 | Ja       | Ja             |
 |                                      | Dataintegrationer                                                                         | Ja       | Ja             |
 | Dokumentstyring                  |                                                                                           | Ja       | Ja             |
 | Hjælp                                 |                                                                                           | Ja       | Nr.              |
@@ -111,8 +110,8 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 |                                      | Analytiske arbejdsområder                                                                     | Ja       | Ingen              |
 |                                      | Intelligent forretningsproces: anbefalinger                                             | Ja       | Nr.              |
 |                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery    | Ja       | Nr.              |
-|                                      | SQL Server Reporting Services (SSRS) understøtter udskalering                                 | Ja       | Nej              |
-|                                      | Telemetri overføres til skyen                                                   | Ja       | Nej              |
+|                                      | SQL Server Reporting Services (SSRS) understøtter udskalering                                 | Ja       | Ja             |
+|                                      | Telemetri overføres til skyen                                                   | Ja       | Ingen              |
 | Lagerstyring                 |                                                                                           | Ja       | Ja             |
 | Lifecycle Services                   |                                                                                           | Ja       | Ja             |
 |                                      | Forretningsprocesser, der kan konfigureres                                                           | Ja       | Nej              |

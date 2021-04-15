@@ -2,11 +2,9 @@
 title: Tilslutte et eksperiment og redigere variationer
 description: Dette emne indeholder en beskrivelse af, hvordan du kan oprette forbindelse fra et eksperiment i en tredjepartstjeneste til Dynamics 365 Commerce, og hvordan du redigerer variationer til eksperimentet.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c295f6f8170b6314ddf2d0c3582343b312c815b6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4c9c9463162f21cdaf40f1c4ed6d5ae51e97cb88
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238648"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799077"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Tilslutte et eksperiment og redigere variationer
 
