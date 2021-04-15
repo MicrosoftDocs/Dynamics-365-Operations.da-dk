@@ -2,11 +2,9 @@
 title: Udligne en delvis betaling før rabatdatoen og en endelig betaling efter rabatdatoen
 description: Denne artikel fører dig gennem et scenario, hvor der foretages flere delvise betalinger, hvor nogle ligger inden for kasserabatperioden og andre uden for kasserabatperioden.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227322"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810336"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Udligne en delvis betaling før rabatdatoen og en endelig betaling efter rabatdatoen
 
@@ -48,11 +46,11 @@ D. 2. juli vil April udligne 300,00 af denne faktura. Betalingen er rabatberetti
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
+| Kasserabatdato           | 09-07-2015 |
 | Kasserabatbeløb         | -10,00    |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -3,00     |
 
@@ -73,11 +71,11 @@ April betaler resten af fakturaen den 15. juli, som er efter rabatperioden. På 
 
 Rabatoplysninger vises nederst på siden **Udlign transaktioner**. April kan se, at hun allerede har fået 3,00 i rabat.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
+| Kasserabatdato           | 09-07-2015 |
 | Kasserabatbeløb         | 0,00      |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | -3,00     |
 | Kasserabatbeløb, der skal medtages | 0,00      |
 
@@ -99,11 +97,11 @@ Hvis kreditoren giver April rabat, selvom hun betaler efter rabatdatoen, kan hun
 
 Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
-| Kasserabatbeløb         | 7:00      |
-| Anvend kasserabat            | Altid    |
+| Kasserabatdato           | 09-07-2015 |
+| Kasserabatbeløb         | 7.00      |
+| Anvende kasserabat            | Altid    |
 | Medtaget kasserabat          | -3,00     |
 | Kasserabatbeløb, der skal medtages | -7,00     |
 

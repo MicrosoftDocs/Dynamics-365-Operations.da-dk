@@ -2,11 +2,9 @@
 title: Konfigurer et lagersted
 description: Dette emne beskriver, hvordan du kan konfigurere et lagersted til brug med en ny kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 772c7584549b30a34e371a7911131edc01214ed8
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477628"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800489"
 ---
 # <a name="warehouse-set-up"></a>Konfigurere lagersted
 
@@ -49,7 +47,7 @@ Følgende billede viser et eksempel på et sted til et lagersted.
 
 ![Eksempel på et sted til et lagersted](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse"></a>Konfigurer et lagersted
+## <a name="set-up-a-warehouse&quot;></a>Konfigurer et lagersted
 
 Gør følgende for at konfigurere et lagersted.
 
@@ -63,14 +61,14 @@ Gør følgende for at konfigurere et lagersted.
     - Hvis du vil angive et **Transitlagersted**, skal du først følge disse trin for at oprette et ekstra lagersted, hvor **Type** er indstillet til **Transit**.
 1. Gå til handlingsruden, og vælg **Gem**.
 
-## <a name="set-up-inventory-aisles"></a>Konfigurer lagergange
+## <a name=&quot;set-up-inventory-aisles&quot;></a>Konfigurer lagergange
 
 Følg disse trin for at konfigurere lagergange.
 
 1. Gå til **Moduler \> Retail og Commerce \> Konfiguration af kanal \> Konfiguration af lokation \> Lagergange** i navigationsruden..
 1. Gå til handlingsruden, og vælg **Ny**.
 1. Vælg det lagersted, du tidligere har oprettet, på rullelisten **Lagersted**.
-1. Angiv et navn i feltet **Gang** (f.eks. "Def").
+1. Angiv et navn i feltet **Gang** (f.eks. &quot;Def").
 1. Angiv et navn i feltet **Navn** (f.eks. "Standardgang").
 1. Gå til handlingsruden, og vælg **Gem**.
 

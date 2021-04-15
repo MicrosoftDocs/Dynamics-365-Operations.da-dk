@@ -2,11 +2,9 @@
 title: Foreløbige budgetter og fordelinger i den offentlige sektor
 description: I dette emne beskrives oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89edf658c1270740cea16bd81111ba0cf93f6b2e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 481df7c2f811424b0b1e0f5c43320ef3a206b123
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255675"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814893"
 ---
 # <a name="preliminary-budgets-and-apportionments-in-the-public-sector"></a>Foreløbige budgetter og fordelinger i den offentlige sektor
 

@@ -2,11 +2,9 @@
 title: Konfigurere mobilenheder til lagerstedsarbejde
 description: Dette emne beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db4c3a8c4bae226b5e154f4761e30b7341bc527b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232977"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808792"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
@@ -64,7 +62,7 @@ Hvis feltet **Tilstand** for et menupunkt er angivet til **Indirekte**, kan du o
 | Ryd cachen med nummerserie | Slet numre i nummerserier fra cachen med nummerserier. Denne aktivitet udføres typisk af en systemadministrator for at løse cachingproblemer, når der bruges mobilenheder. |
 | Skift batchdisposition | Tillad, at en arbejder kan angive en batchdispositionskode for en vare og batch. Denne indstilling opdaterer den dispositionskode, der er angivet for batchen. |
 | Vis oversigt over åbent arbejde | Vis en liste over tilgængeligt arbejde for en bestemt bruger. Brugeren kan derefter vælge arbejde, der skal udføres, og sendes videre til det. Denne liste er beregnet til at blive vist tabletenheder med en skærmstørrelse på 7 tommer eller derover. Når du vælger denne indstilling, bliver menupunkterne **Rediger forespørgsel** og **Feltliste** tilgængelige. På siden **Rediger forespørgsel** kan du angive kriterier for det arbejde, der vises på listen. På siden **Feltliste** kan du vælge, hvilke felter der skal vises på opgavelisten. Du kan f.eks. reducere antallet af felter, der vises, så brugeren hurtigere kan vælge den mest hensigtsmæssige workflowopgave. Du kan også vælge, hvor mange arbejdsposter der skal vises pr. side, i feltet **poster pr. side** i oversigtspanelet **Generelt**. Hvis indstillingen **Tillad, at brugere filtrerer arbejde efter transaktionstype** er markeret, inkluderer opgavelisten kontrolelementet **Filtrer arbejde**, så brugeren kan filtrere efter transaktionstype. Brugeren kan kun se arbejde på opgavelisten, som de har adgangstilladelse til. Du skal sikre, at brugere har tilladelse til en eller flere brugerstyrede menupunkter, der understøtter de specifikke opgaveklassetyper, som de skal have adgang til. Tilladelser kontrolleres, når en bruger forsøger at udføre arbejde på listen.|
-| Opret flytteordre fra id'er. | Giver lagermedarbejderne mulighed for at oprette og behandle flytteordrer direkte fra lagerstedsappen. Lagermedarbejderne starter ved at vælge destinationslagerstedet og kan derefter scanne et eller flere id'er ved hjælp af appen. Når lagermedarbejderen vælger **Fuldfør ordre**, opretter et batchjob den krævede flytteordre og ordrelinjer, der er baseret på den disponible lagerbeholdning, som er registreret for disse id'er. Du kan finde flere oplysninger under [Oprette flytteordrer fra lagerstedsappen](create-transfer-order-from-warehouse-app.md)
+| Opret flytteordre fra id'er. | Giver lagermedarbejderne mulighed for at oprette og behandle flytteordrer direkte fra mobilappen Lokationsstyring. Lagermedarbejderne starter ved at vælge destinationslagerstedet og kan derefter scanne et eller flere id'er ved hjælp af appen. Når lagermedarbejderen vælger **Fuldfør ordre**, opretter et batchjob den krævede flytteordre og ordrelinjer, der er baseret på den disponible lagerbeholdning, som er registreret for disse id'er. Du kan finde flere oplysninger under [Oprette flytteordrer fra lagerstedsappen](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurer menupunkter for at oprette arbejde for en anden arbejder eller proces

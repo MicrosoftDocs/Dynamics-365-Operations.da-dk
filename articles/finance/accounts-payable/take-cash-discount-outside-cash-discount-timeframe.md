@@ -2,11 +2,9 @@
 title: Brug en kasserabat uden for kasserabatperioden
 description: Denne artikel indeholder to scenarier, der viser, hvordan en kasserabat kan anvendes, selvom betalingen sker uden for kasserabatperioden.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df635e78fff1994b9a9e1abc99c67470852ad81
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 47acacf9b1e9667e86fcdd5ce1ed62e79d8afec3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235855"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810216"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Brug en kasserabat uden for kasserabatperioden
 
@@ -43,11 +41,11 @@ April markerer fakturaen til betaling. Der anvendes ingen kasserabat, da betalin
 
 Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
 | Kasserabatdato           | 12-7-2015 |
 | Kasserabatbeløb         | -20,00    |
-| Anvend kasserabat            | Altid    |
+| Anvende kasserabat            | Altid    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -20,00    |
 
@@ -61,11 +59,11 @@ Hvis både fakturaen og betalingen er blevet bogført, kan kasserabatten stadig 
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Det rabatbeløb, der skal medtages, er 20,00, da det beløb, der skal udlignes for fakturaen, er standardbeløbet 1.980,00.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
 | Kasserabatdato           | 12-7-2015 |
 | Kasserabatbeløb         | -20,00    |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -20,00    |
 
@@ -78,11 +76,11 @@ April opdaterer værdien i feltet **Beløb, der skal udlignes** til **500,00**. 
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Værdien i feltet **Kasserabatbeløb, der skal medtages** er **5,05**, da det beløb, der skal udlignes for fakturaen, er ændret til betalingsbeløbet 500,00.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
 | Kasserabatdato           | 12-7-2015 |
 | Kasserabatbeløb         | -20,00    |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -5,05     |
 

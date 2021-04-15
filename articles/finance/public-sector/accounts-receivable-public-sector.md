@@ -2,11 +2,9 @@
 title: Oversigt over Debitor i den offentlige sektor
 description: I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustInvoiceJournal, CustParameters, CustTradingPartnerCode
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91201999389682fea316889cd4d27ce4ba4e0bd4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dea003e658a8f96f4904ffff752a7f9fb1567205
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208341"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809907"
 ---
 # <a name="accounts-receivable-in-the-public-sector-overview"></a>Oversigt over Debitor i den offentlige sektor
 

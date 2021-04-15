@@ -2,11 +2,9 @@
 title: Arbejde med moduler
 description: Dette emne beskriver, hvornår og hvordan du bruger moduler i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eddee09fa81c18bc464b7768921981e6b5159a3e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6d872719d3b1aa27ccfdcf36d7739c883e7b4996
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210893"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801355"
 ---
 # <a name="work-with-modules"></a>Arbejde med moduler
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvornår og hvordan du bruger moduler i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Moduler er logiske byggeklodser, der udgør sidestrukturen, og de har forskellige formål og omfang. Nogle moduler er containere på højt niveau, hvis eneste formål er at opbevare og organisere andre moduler (underordnede moduler). Andre moduler, f.eks. et enkelt modul til billedplacering, har et meget specifikt formål. Andre moduler som f.eks. et karruselmodul falder et sted mellem disse to kategorier.
 
