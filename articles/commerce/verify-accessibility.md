@@ -2,11 +2,9 @@
 title: Bekræft tilgængelighed af sideindhold
 description: Dette emne beskriver, hvordan du kontrollerer tilgængeligheden af sideindhold i Microsoft Dynamics 365 Commerce.
 author: josaw1
-manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 186044fc7a360f227cecffb39bad0e225245dd4d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 885696c13b0e5353e6dbd9dc21cf075d5e301786
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210965"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791625"
 ---
 # <a name="verify-page-content-accessibility"></a>Bekræfte tilgængelighed af sideindhold
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du kontrollerer tilgængeligheden af sideindhold i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Når du er færdig med at ændre en side, skal du sørge for, at indholdet er tilgængeligt for alle på internettet. I Commerce-oprettelsesværktøjerne kan du nemt kontrollere tilgængeligheden af sideindhold ved hjælp af den integrerede [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjeneste. Denne tjeneste bekræfter dit sideindhold i forhold til de seneste retningslinjer for hjælp til handicappede [World Wide Web Consortium (W3C)](https://www.w3.org/standards/webdesign/accessibility).
 

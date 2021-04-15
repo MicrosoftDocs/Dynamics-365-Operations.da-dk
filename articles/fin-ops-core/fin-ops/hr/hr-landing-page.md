@@ -1,8 +1,7 @@
 ---
-title: Oversigt over personale
-description: Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.
+title: Oversigt over Human Resources
+description: Human Resources strømliner rutineregistreringsopgaver, automatisere processer for medarbejdere i din organisation og angiver en ramme for, hvordan de kan håndtere tilsynsområder.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,14 +13,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fb04ed91c28dc87bdcf4e218cbeaf99f5442ab4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d6f70e7626100646feb12e8544b5ab943097b1a3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566692"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752174"
 ---
-# <a name="human-resources-overview"></a>Oversigt over personale
+# <a name="human-resources-overview"></a>Oversigt over Human Resources
 
 [!include [banner](../includes/banner.md)]
 

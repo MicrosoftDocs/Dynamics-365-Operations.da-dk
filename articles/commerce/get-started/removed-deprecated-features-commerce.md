@@ -2,11 +2,9 @@
 title: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Commerce.
 author: josaw
-manager: AnnBe
 ms.date: 01/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 357f4673d77ee990c4e1b0ce84a704fd4d778402
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ccfbab6055b8b64ce0926cda04090583e0d7a6ae
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240213"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797174"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 
@@ -36,9 +34,6 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://docs.microsoft.com/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.17-frigivelsen
-
-> [!Important]
-> Version 10.0.17 er tilgængelig som del af en prøveversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om prøveversioner i [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ### <a name="full-dataset-generation-interval-is-deprecated"></a>Det frarådes at bruge det fulde interval for generering af datasæt
 

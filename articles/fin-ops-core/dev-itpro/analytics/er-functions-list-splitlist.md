@@ -2,8 +2,7 @@
 title: ER-funktionen SPLITLIST
 description: Dette emne indeholder oplysninger om, hvordan funktionen SPLITLIST til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af8c413726ca8d9f92eff18807e7fa9002fc9d37
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 99e199e238b3132622a8b305895637b430e8f6d2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559132"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745563"
 ---
 # <a name="splitlist-er-function"></a>ER-funktionen SPLITLIST
 
@@ -29,10 +28,16 @@ ms.locfileid: "5559132"
 
 Funktionen `SPLITLIST` opdeler den angivne liste i underlister (eller batches), som hver især indeholder det angivne antal poster. Derefter returneres resultatet som en ny *Postliste*-værdi, der består af batches.
 
-## <a name="syntax"></a>Syntaks
+## <a name="syntax-1"></a>Syntaks 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## <a name="syntax-2"></a>Syntaks 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumenter
@@ -45,9 +50,13 @@ Den gyldige sti til en datakilde af datatypen *Postliste*.
 
 Det højeste antal viste poster per batch.
 
+`on-demand reading flag`: *Boolesk*
+
+En *boolesk* værdi, der angiver, om elementer i underlister skal genereres efter behov.
+
 ## <a name="return-values"></a>Returnerede værdier
 
-*Postliste*
+*Liste over poster*
 
 Den resulterende liste over poster.
 
@@ -62,6 +71,8 @@ Den returnerede batchliste indeholder følgende elementer:
 - **Batchnumber:** *Heltal*
 
     Antallet af aktuelle batches på den returnerede liste.
+
+Når aflæsningsflaget efter behov angives til **Sand**, genereres der underlister ved anmodning, hvilket gør det muligt at reducere forbruget af hukommelse, men det kan medføre nedsat ydeevne, hvis elementer ikke bruges sekventielt.
 
 ## <a name="example"></a>Eksempel
 

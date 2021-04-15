@@ -2,7 +2,6 @@
 title: Konfigurere og filtrere arbejdsområder
 description: Denne artikel indeholder en oversigt over, hvordan du konfigurerer og filtrerer arbejdsområder.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4f587608b03512aabce1d9b76ec4b9d6ec9227b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d92427c1aeee92921b5b817b67530cf8aeddbbfb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559426"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744021"
 ---
 # <a name="configure-and-filter-workspaces"></a>Konfigurere og filtrere arbejdsområder
 
@@ -55,9 +54,9 @@ Når du klikker for at åbne filteret, vises der forskellige indstillinger.
 
 Vælg en indstilling for at filtrere arbejdsområdet baseret på denne indstilling.
 
-### <a name="workspace-section-filters"></a>Filtre i arbejdsområdets sektion
+### <a name="workspace-section-filters&quot;></a>Filtre i arbejdsområdets sektion
 
-Hvis enkelte dele af arbejdsområdet har filtre, kan du filtrere hver sektion separat. På følgende illustration er filteret (feltet med teksten "Filter") et eksempel på et filter med fritekst.
+Hvis enkelte dele af arbejdsområdet har filtre, kan du filtrere hver sektion separat. På følgende illustration er filteret (feltet med teksten &quot;Filter") et eksempel på et filter med fritekst.
 
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 

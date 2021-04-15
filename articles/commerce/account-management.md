@@ -2,11 +2,9 @@
 title: Kontostyringssider og -moduler
 description: Dette emne omfatter sider og moduler til kontostyring i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df4959a61f1b2948c62a558523a848ff8b2fe0a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206625"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796288"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontostyringssider og -moduler
 
@@ -51,9 +49,9 @@ På ordrehistoriksiden bruges modulet for ordrehistorik til at vise alle de sene
 
 På ordredetaljesiden vises der detaljerede oplysninger om hver enkelt ordre, og du kan få adgang til den fra ordrehistoriksiden. Den bruger ordredetaljemodulet, som kræver salgs-id'et eller transaktions-id'et for at kunne hente ordreoplysningerne.
 
-### <a name="user-profile-page"></a>Brugerprofilside
+### <a name="my-profile-page"></a>Siden Min profil
 
-På brugerprofilsiden forevises detaljer om brugerkonti, f.eks. en brugers navn og mailadresse. Den bruger brugerprofilen og redigeringsmodulerne til brugerprofiler. Mailadressen kan ikke fjernes, men den kan redigeres. Brugerprofilsiden viser også brugerpræferencer, der giver en bruger mulighed for at tilmelde sig eller fravælge visse funktioner som f.eks. personalisering af anbefalingslister. 
+På siden Min profil vises brugerens kontoprofiloplysninger ved hjælp af kontoprofilmodulet. Siden viser den mailadresse, der er tilknyttet brugerens konto, samt de indstillinger, der er angivet for kontoen. Hvis du konfigurerer brugerdefinerede kundeattributter, vises disse attributter også i afsnittet "Yderligere oplysninger". Brugere kan redigere deres navn, indstillinger eller flere oplysninger (hvis de er tilgængelige).
 
 ### <a name="user-address-page"></a>Brugeradresseside
 

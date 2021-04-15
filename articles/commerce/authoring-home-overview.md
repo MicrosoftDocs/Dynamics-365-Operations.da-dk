@@ -2,11 +2,9 @@
 title: Oprette oversigt over side
 description: Dette emne indeholder en oversigt over oprettelsessiden i Microsoft Dynamics 365 Commerce.
 author: brendans
-manager: annbe
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 030fa93e938df0ab22dd3e85c2d48d149ac239df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b5e1e7dd669a9608d385086cf24d388b065c9ca6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211291"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799871"
 ---
 # <a name="authoring-page-overview"></a>Oprette oversigt over side
 
@@ -29,8 +27,6 @@ ms.locfileid: "5211291"
  [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over oprettelsessiden i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Websteder kan oprettes for at understøtte forskellige forretningsbehov. De kan repræsentere et helt firma, tilbyde en enkelt kanal i firmaet eller fokusere på et bestemt segment i en målgruppe. En tøjproducent kan f.eks. have et websted, der viser alle de mærker, producenten ejer. Den samme producent kan have et særskilt websted for hvert af disse mærker og desuden et sæt websteder, der har luksusvarer, udendørsbeklædning og tøj til børn.
 

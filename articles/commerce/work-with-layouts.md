@@ -2,11 +2,9 @@
 title: Arbejde med forudindstillede layout
 description: Dette emne beskriver, hvordan du kan arbejde med forudindstillede layout i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a2539880e76ffb1861e0d18227a935a2ef35c120
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce54be1032777ffcaac474773cdeeef3b9028110
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210869"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793915"
 ---
 # <a name="work-with-preset-layouts"></a>Arbejde med forudindstillede layout
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan arbejde med forudindstillede layout i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Før du fuldfører procedurerne i dette emne, skal du sørge for at læse [Forudindstillede og brugerdefinerede layout](templates-layouts-overview.md#preset-and-custom-layouts). Du kan finde en generel oversigt under [Oversigt over skabeloner og layout](templates-layouts-overview.md).
 
