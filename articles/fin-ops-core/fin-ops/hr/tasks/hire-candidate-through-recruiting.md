@@ -2,7 +2,6 @@
 title: Ansætte en ansøger gennem rekruttering
 description: Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,35 +13,35 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dfb87044b33abe6155b971d12d3ae516f0301ac3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 531b1e7d12db844ff438698699b2827f5b72601f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560191"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752000"
 ---
-# <a name="hiring-candidate-through-recruiting"></a><span data-ttu-id="bc6fe-103">Ansætte en ansøger gennem rekruttering</span><span class="sxs-lookup"><span data-stu-id="bc6fe-103">Hiring candidate through recruiting</span></span>
+# <a name="hiring-candidate-through-recruiting"></a><span data-ttu-id="b94f3-103">Ansætte en ansøger gennem rekruttering</span><span class="sxs-lookup"><span data-stu-id="b94f3-103">Hiring candidate through recruiting</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="bc6fe-104">Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-104">This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project.</span></span> <span data-ttu-id="bc6fe-105">Når du ansætter en ansøger via et rekrutteringsprojekt, oprettes der en ny arbejderpost, og ansøgerens post får status som Ansat.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-105">When you hire an applicant through a recruiting project, a new worker record will be created and the applicant's record will have a status of Employed.</span></span> <span data-ttu-id="bc6fe-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="bc6fe-107">Du færdiggør denne procedure ved at gå til Personale > Rekruttering > Ansøgninger > Ansøgninger</span><span class="sxs-lookup"><span data-stu-id="bc6fe-107">To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications</span></span> 
+<span data-ttu-id="b94f3-104">Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt.</span><span class="sxs-lookup"><span data-stu-id="b94f3-104">This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project.</span></span> <span data-ttu-id="b94f3-105">Når du ansætter en ansøger via et rekrutteringsprojekt, oprettes der en ny arbejderpost, og ansøgerens post får status som Ansat.</span><span class="sxs-lookup"><span data-stu-id="b94f3-105">When you hire an applicant through a recruiting project, a new worker record will be created and the applicant's record will have a status of Employed.</span></span> <span data-ttu-id="b94f3-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="b94f3-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b94f3-107">Du færdiggør denne procedure ved at gå til Personale > Rekruttering > Ansøgninger > Ansøgninger</span><span class="sxs-lookup"><span data-stu-id="b94f3-107">To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications</span></span> 
 
-1. <span data-ttu-id="bc6fe-108">Vælg en ansøgning for en ekstern ansøger</span><span class="sxs-lookup"><span data-stu-id="bc6fe-108">Select an Application for an External applicant</span></span>
-2. <span data-ttu-id="bc6fe-109">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-109">In the list, click the link in the selected row.</span></span>
-3. <span data-ttu-id="bc6fe-110">Klik på Ansøgningsstatus.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-110">Click Application status.</span></span>
-4. <span data-ttu-id="bc6fe-111">Klik på Ansæt en ny arbejder.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-111">Click Hire new worker.</span></span>
-5. <span data-ttu-id="bc6fe-112">Angiv en dato og et klokkeslæt i feltet Ansættelsens startdato.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-112">In the Employment start date field, enter a date and time.</span></span>
-6. <span data-ttu-id="bc6fe-113">Klik på rullelisten i feltet Stilling for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-113">In the Position field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="bc6fe-114">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-114">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="bc6fe-115">Angiv en dato og et klokkeslæt i feltet Start for tildeling.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-115">In the Assignment start field, enter a date and time.</span></span>
-9. <span data-ttu-id="bc6fe-116">Klik på Ansæt en ny arbejder.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-116">Click Hire new worker.</span></span>
-10. <span data-ttu-id="bc6fe-117">Udvid faktaboksen Ansættelseshistorik.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-117">Expand the Employment history FactBox.</span></span>
-11. <span data-ttu-id="bc6fe-118">Udvid faktaboksen Nuværende stillinger.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-118">Expand the Current positions FactBox.</span></span>
-12. <span data-ttu-id="bc6fe-119">Udvid faktaboksen Ansættelseshistorik.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-119">Expand the Employment history FactBox.</span></span>
-13. <span data-ttu-id="bc6fe-120">Udvid faktaboksen Nuværende stillinger.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-120">Expand the Current positions FactBox.</span></span>
-14. <span data-ttu-id="bc6fe-121">Udvis eller skjul sektionen Adresser.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-121">Expand or collapse the Addresses section.</span></span>
-15. <span data-ttu-id="bc6fe-122">Udvis eller skjul sektionen Kontaktoplysninger.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-122">Expand or collapse the Contact information section.</span></span>
-16. <span data-ttu-id="bc6fe-123">Udvid eller skjul sektionen Personlige oplysninger.</span><span class="sxs-lookup"><span data-stu-id="bc6fe-123">Expand or collapse the Personal information section.</span></span>
+1. <span data-ttu-id="b94f3-108">Vælg en ansøgning for en ekstern ansøger</span><span class="sxs-lookup"><span data-stu-id="b94f3-108">Select an Application for an External applicant</span></span>
+2. <span data-ttu-id="b94f3-109">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="b94f3-109">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="b94f3-110">Klik på Ansøgningsstatus.</span><span class="sxs-lookup"><span data-stu-id="b94f3-110">Click Application status.</span></span>
+4. <span data-ttu-id="b94f3-111">Klik på Ansæt en ny arbejder.</span><span class="sxs-lookup"><span data-stu-id="b94f3-111">Click Hire new worker.</span></span>
+5. <span data-ttu-id="b94f3-112">Angiv en dato og et klokkeslæt i feltet Ansættelsens startdato.</span><span class="sxs-lookup"><span data-stu-id="b94f3-112">In the Employment start date field, enter a date and time.</span></span>
+6. <span data-ttu-id="b94f3-113">Klik på rullelisten i feltet Stilling for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="b94f3-113">In the Position field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="b94f3-114">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="b94f3-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="b94f3-115">Angiv en dato og et klokkeslæt i feltet Start for tildeling.</span><span class="sxs-lookup"><span data-stu-id="b94f3-115">In the Assignment start field, enter a date and time.</span></span>
+9. <span data-ttu-id="b94f3-116">Klik på Ansæt en ny arbejder.</span><span class="sxs-lookup"><span data-stu-id="b94f3-116">Click Hire new worker.</span></span>
+10. <span data-ttu-id="b94f3-117">Udvid faktaboksen Ansættelseshistorik.</span><span class="sxs-lookup"><span data-stu-id="b94f3-117">Expand the Employment history FactBox.</span></span>
+11. <span data-ttu-id="b94f3-118">Udvid faktaboksen Nuværende stillinger.</span><span class="sxs-lookup"><span data-stu-id="b94f3-118">Expand the Current positions FactBox.</span></span>
+12. <span data-ttu-id="b94f3-119">Udvid faktaboksen Ansættelseshistorik.</span><span class="sxs-lookup"><span data-stu-id="b94f3-119">Expand the Employment history FactBox.</span></span>
+13. <span data-ttu-id="b94f3-120">Udvid faktaboksen Nuværende stillinger.</span><span class="sxs-lookup"><span data-stu-id="b94f3-120">Expand the Current positions FactBox.</span></span>
+14. <span data-ttu-id="b94f3-121">Udvis eller skjul sektionen Adresser.</span><span class="sxs-lookup"><span data-stu-id="b94f3-121">Expand or collapse the Addresses section.</span></span>
+15. <span data-ttu-id="b94f3-122">Udvis eller skjul sektionen Kontaktoplysninger.</span><span class="sxs-lookup"><span data-stu-id="b94f3-122">Expand or collapse the Contact information section.</span></span>
+16. <span data-ttu-id="b94f3-123">Udvid eller skjul sektionen Personlige oplysninger.</span><span class="sxs-lookup"><span data-stu-id="b94f3-123">Expand or collapse the Personal information section.</span></span>
 
 
 

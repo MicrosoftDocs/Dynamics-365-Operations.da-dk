@@ -2,11 +2,9 @@
 title: Oprette en teamkalender
 description: Få vist og opret teamkalendere i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
@@ -18,61 +16,61 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ca7ccb7959eab6f8a9bdc0292e28c3126cb0364c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 07c7f1303238fe61d70be26ec5a198f1ac489090
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466442"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790758"
 ---
-# <a name="view-team-and-company-calendars"></a><span data-ttu-id="79149-103">Vis team- og firmakalendere</span><span class="sxs-lookup"><span data-stu-id="79149-103">View team and company calendars</span></span>
+# <a name="view-team-and-company-calendars"></a><span data-ttu-id="bde62-103">Vis team- og firmakalendere</span><span class="sxs-lookup"><span data-stu-id="bde62-103">View team and company calendars</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="79149-104">Du kan få vist team- og firmakalendere i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="79149-104">You can view team and company calendars in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="79149-105">Teamkalendere viser kun direkte underordnede som defineret i linjehierarkiet.</span><span class="sxs-lookup"><span data-stu-id="79149-105">Team calendars only display direct reports, as defined in the line hierarchy.</span></span>
+<span data-ttu-id="bde62-104">Du kan få vist team- og firmakalendere i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="bde62-104">You can view team and company calendars in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="bde62-105">Teamkalendere viser kun direkte underordnede som defineret i linjehierarkiet.</span><span class="sxs-lookup"><span data-stu-id="bde62-105">Team calendars only display direct reports, as defined in the line hierarchy.</span></span>
 
-## <a name="view-your-team-calendar-as-an-employee"></a><span data-ttu-id="79149-106">Få vist din teamkalender som medarbejder</span><span class="sxs-lookup"><span data-stu-id="79149-106">View your team calendar as an employee</span></span>
+## <a name="view-your-team-calendar-as-an-employee"></a><span data-ttu-id="bde62-106">Få vist din teamkalender som medarbejder</span><span class="sxs-lookup"><span data-stu-id="bde62-106">View your team calendar as an employee</span></span>
 
-1. <span data-ttu-id="79149-107">Vælg **Teamfraværskalender** under **Oversigt** i arbejdsområdet **Medarbejderselvbetjening**.</span><span class="sxs-lookup"><span data-stu-id="79149-107">In the **Employee self service** workspace, select **Team absence calendar** under **Summary**.</span></span>
+1. <span data-ttu-id="bde62-107">Vælg **Teamfraværskalender** under **Oversigt** i arbejdsområdet **Medarbejderselvbetjening**.</span><span class="sxs-lookup"><span data-stu-id="bde62-107">In the **Employee self service** workspace, select **Team absence calendar** under **Summary**.</span></span>
 
-## <a name="view-your-team-calendar-as-a-manager"></a><span data-ttu-id="79149-108">Få vist din teamkalender som leder</span><span class="sxs-lookup"><span data-stu-id="79149-108">View your team calendar as a manager</span></span>
+## <a name="view-your-team-calendar-as-a-manager"></a><span data-ttu-id="bde62-108">Få vist din teamkalender som leder</span><span class="sxs-lookup"><span data-stu-id="bde62-108">View your team calendar as a manager</span></span>
 
-1. <span data-ttu-id="79149-109">Vælg **Mit team** i arbejdsområdet **Medarbejderselvbetjening**.</span><span class="sxs-lookup"><span data-stu-id="79149-109">In the **Employee self service** workspace, select **My team**.</span></span>
+1. <span data-ttu-id="bde62-109">Vælg **Mit team** i arbejdsområdet **Medarbejderselvbetjening**.</span><span class="sxs-lookup"><span data-stu-id="bde62-109">In the **Employee self service** workspace, select **My team**.</span></span>
 
-2. <span data-ttu-id="79149-110">Vælg **Orlov og fravær**, og vælg derefter **Vis cheffraværskalender**.</span><span class="sxs-lookup"><span data-stu-id="79149-110">Select **Leave and absence**, and then select **View manager absence calendar**.</span></span>
+2. <span data-ttu-id="bde62-110">Vælg **Orlov og fravær**, og vælg derefter **Vis cheffraværskalender**.</span><span class="sxs-lookup"><span data-stu-id="bde62-110">Select **Leave and absence**, and then select **View manager absence calendar**.</span></span>
 
-<span data-ttu-id="79149-111">Ledere kan også få adgang til teamkalenderen fra **Afventer anmodninger om fridage for mit team**, **Godkendt fritid** og **Anmodninger om fridage**.</span><span class="sxs-lookup"><span data-stu-id="79149-111">Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**.</span></span> 
+<span data-ttu-id="bde62-111">Ledere kan også få adgang til teamkalenderen fra **Afventer anmodninger om fridage for mit team**, **Godkendt fritid** og **Anmodninger om fridage**.</span><span class="sxs-lookup"><span data-stu-id="bde62-111">Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**.</span></span> 
 
-## <a name="view-a-company-calendar"></a><span data-ttu-id="79149-112">Få vist en firmakalender</span><span class="sxs-lookup"><span data-stu-id="79149-112">View a company calendar</span></span>
+## <a name="view-a-company-calendar"></a><span data-ttu-id="bde62-112">Få vist en firmakalender</span><span class="sxs-lookup"><span data-stu-id="bde62-112">View a company calendar</span></span>
 
-<span data-ttu-id="79149-113">Personer, der har HR-roller, kan få vist firmakalendere.</span><span class="sxs-lookup"><span data-stu-id="79149-113">People who are in human resources roles can view company calendars.</span></span> <span data-ttu-id="79149-114">I firmakalendere vises alle medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="79149-114">Company calendars display all employees.</span></span> <span data-ttu-id="79149-115">Kalenderen viser som standard dags dato plus 28 dage, men du kan ændre datointervallet.</span><span class="sxs-lookup"><span data-stu-id="79149-115">By default, the calendar displays today's date plus 28 days, but you can change the date range.</span></span> <span data-ttu-id="79149-116">Du kan også filtrere kalenderen efter **Navn**, **Personalenummer** og **Orlovstype.**</span><span class="sxs-lookup"><span data-stu-id="79149-116">You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.</span></span>
+<span data-ttu-id="bde62-113">Personer, der har HR-roller, kan få vist firmakalendere.</span><span class="sxs-lookup"><span data-stu-id="bde62-113">People who are in human resources roles can view company calendars.</span></span> <span data-ttu-id="bde62-114">I firmakalendere vises alle medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="bde62-114">Company calendars display all employees.</span></span> <span data-ttu-id="bde62-115">Kalenderen viser som standard dags dato plus 28 dage, men du kan ændre datointervallet.</span><span class="sxs-lookup"><span data-stu-id="bde62-115">By default, the calendar displays today's date plus 28 days, but you can change the date range.</span></span> <span data-ttu-id="bde62-116">Du kan også filtrere kalenderen efter **Navn**, **Personalenummer** og **Orlovstype.**</span><span class="sxs-lookup"><span data-stu-id="bde62-116">You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.</span></span>
 
-1. <span data-ttu-id="79149-117">Vælg **Links** i arbejdsområdet **Orlov og fravær**.</span><span class="sxs-lookup"><span data-stu-id="79149-117">In the **Leave and absence** workspace, select **Links**.</span></span>
+1. <span data-ttu-id="bde62-117">Vælg **Links** i arbejdsområdet **Orlov og fravær**.</span><span class="sxs-lookup"><span data-stu-id="bde62-117">In the **Leave and absence** workspace, select **Links**.</span></span>
 
-2. <span data-ttu-id="79149-118">Vælg **Orlovs- og fraværskalender**.</span><span class="sxs-lookup"><span data-stu-id="79149-118">Select **Leave and absence calendar**.</span></span>
+2. <span data-ttu-id="bde62-118">Vælg **Orlovs- og fraværskalender**.</span><span class="sxs-lookup"><span data-stu-id="bde62-118">Select **Leave and absence calendar**.</span></span>
 
-<span data-ttu-id="79149-119">Human Resources-roller kan også få adgang til firmakalenderen fra **Orlovs- og fraværsanmodninger**, **Godkendt fritid** og **Anmodninger om fridage**.</span><span class="sxs-lookup"><span data-stu-id="79149-119">Human resources roles can also access the company calendar from **Leave and absence requests**, **Approved time off**, and **Time off requests**.</span></span> 
+<span data-ttu-id="bde62-119">Human Resources-roller kan også få adgang til firmakalenderen fra **Orlovs- og fraværsanmodninger**, **Godkendt fritid** og **Anmodninger om fridage**.</span><span class="sxs-lookup"><span data-stu-id="bde62-119">Human resources roles can also access the company calendar from **Leave and absence requests**, **Approved time off**, and **Time off requests**.</span></span> 
 
-<span data-ttu-id="79149-120">Kalenderne indeholder nu yderligere filtre og indstillinger.</span><span class="sxs-lookup"><span data-stu-id="79149-120">Calendars now contain additional filters and options.</span></span> <span data-ttu-id="79149-121">Alle kalendere indeholder visningsindstillinger for:</span><span class="sxs-lookup"><span data-stu-id="79149-121">All calendars include view options for:</span></span>
+<span data-ttu-id="bde62-120">Kalenderne indeholder nu yderligere filtre og indstillinger.</span><span class="sxs-lookup"><span data-stu-id="bde62-120">Calendars now contain additional filters and options.</span></span> <span data-ttu-id="bde62-121">Alle kalendere indeholder visningsindstillinger for:</span><span class="sxs-lookup"><span data-stu-id="bde62-121">All calendars include view options for:</span></span>
 
-- <span data-ttu-id="79149-122">Godkendte anmodninger</span><span class="sxs-lookup"><span data-stu-id="79149-122">Approved requests</span></span>
-- <span data-ttu-id="79149-123">Ventende anmodninger</span><span class="sxs-lookup"><span data-stu-id="79149-123">Pending requests</span></span>
-- <span data-ttu-id="79149-124">Medarbejdere med orlovsanmodninger</span><span class="sxs-lookup"><span data-stu-id="79149-124">Employees with leave requests</span></span>
-- <span data-ttu-id="79149-125">Medarbejdere uden orlovsanmodninger</span><span class="sxs-lookup"><span data-stu-id="79149-125">Employees without leave requests</span></span>
-- <span data-ttu-id="79149-126">Medarbejdernes fødselsdage</span><span class="sxs-lookup"><span data-stu-id="79149-126">Employee birthdays</span></span>
-- <span data-ttu-id="79149-127">Anmodninger om fri</span><span class="sxs-lookup"><span data-stu-id="79149-127">Time-off requests</span></span> 
-- <span data-ttu-id="79149-128">Orlovsanmodninger</span><span class="sxs-lookup"><span data-stu-id="79149-128">Leave of absence requests</span></span>
+- <span data-ttu-id="bde62-122">Godkendte anmodninger</span><span class="sxs-lookup"><span data-stu-id="bde62-122">Approved requests</span></span>
+- <span data-ttu-id="bde62-123">Ventende anmodninger</span><span class="sxs-lookup"><span data-stu-id="bde62-123">Pending requests</span></span>
+- <span data-ttu-id="bde62-124">Medarbejdere med orlovsanmodninger</span><span class="sxs-lookup"><span data-stu-id="bde62-124">Employees with leave requests</span></span>
+- <span data-ttu-id="bde62-125">Medarbejdere uden orlovsanmodninger</span><span class="sxs-lookup"><span data-stu-id="bde62-125">Employees without leave requests</span></span>
+- <span data-ttu-id="bde62-126">Medarbejdernes fødselsdage</span><span class="sxs-lookup"><span data-stu-id="bde62-126">Employee birthdays</span></span>
+- <span data-ttu-id="bde62-127">Anmodninger om fri</span><span class="sxs-lookup"><span data-stu-id="bde62-127">Time-off requests</span></span> 
+- <span data-ttu-id="bde62-128">Orlovsanmodninger</span><span class="sxs-lookup"><span data-stu-id="bde62-128">Leave of absence requests</span></span>
 
-<span data-ttu-id="79149-129">Kalenderkonfiguration i orlovs- og fraværsparametre bestemmer tilgængelige visningsindstillinger.</span><span class="sxs-lookup"><span data-stu-id="79149-129">Calendar configuration in Leave and absence parameters determine available view options.</span></span>
+<span data-ttu-id="bde62-129">Kalenderkonfiguration i orlovs- og fraværsparametre bestemmer tilgængelige visningsindstillinger.</span><span class="sxs-lookup"><span data-stu-id="bde62-129">Calendar configuration in Leave and absence parameters determine available view options.</span></span>
 
-<span data-ttu-id="79149-130">Du kan også filtrere kalendere efter leder eller afdeling.</span><span class="sxs-lookup"><span data-stu-id="79149-130">You can also filter calendars by manager or department.</span></span> <span data-ttu-id="79149-131">Den primære stillingstildeling bestemmer, hvilke medarbejdere der vises, når disse filtre angives.</span><span class="sxs-lookup"><span data-stu-id="79149-131">The primary position assignment determines the employees displayed when these filters are set.</span></span> 
+<span data-ttu-id="bde62-130">Du kan også filtrere kalendere efter leder eller afdeling.</span><span class="sxs-lookup"><span data-stu-id="bde62-130">You can also filter calendars by manager or department.</span></span> <span data-ttu-id="bde62-131">Den primære stillingstildeling bestemmer, hvilke medarbejdere der vises, når disse filtre angives.</span><span class="sxs-lookup"><span data-stu-id="bde62-131">The primary position assignment determines the employees displayed when these filters are set.</span></span> 
 
 >[!IMPORTANT]
-><span data-ttu-id="79149-132">Visning af orlov og fravær på tværs af firmaer er i øjeblikket i prøveversion.</span><span class="sxs-lookup"><span data-stu-id="79149-132">Viewing leave and absence across companies is currently in preview.</span></span> <span data-ttu-id="79149-133">Du skal aktivere den i dit **Sandkasse**-miljø.</span><span class="sxs-lookup"><span data-stu-id="79149-133">You'll need to enable it in your **Sandbox** environment.</span></span> <span data-ttu-id="79149-134">Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="79149-134">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span><br><br>
-><span data-ttu-id="79149-135">Derefter skal du aktivere funktionen i **Delte parametre for personale** for at få vist filteret for juridiske enheder i kalendere.</span><span class="sxs-lookup"><span data-stu-id="79149-135">Then you must enable the feature in **Human resources shared parameters** to display the legal entity filter in calendars.</span></span> <span data-ttu-id="79149-136">Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværsparametre](hr-leave-and-absence-parameters.md).</span><span class="sxs-lookup"><span data-stu-id="79149-136">For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).</span></span><br><br>
-><span data-ttu-id="79149-137">Du kan filtrere kalenderen efter juridisk enhed.</span><span class="sxs-lookup"><span data-stu-id="79149-137">You can filter the calendar by legal entity.</span></span> <span data-ttu-id="79149-138">Hvis du vil se alle medarbejdere uanset juridisk enhed, skal du fjerne markeringen i filtreringsfeltet og vælge Angiv.</span><span class="sxs-lookup"><span data-stu-id="79149-138">If you want to see all employees regardless of legal entity, clear the filter box and select enter.</span></span> 
+><span data-ttu-id="bde62-132">Visning af orlov og fravær på tværs af firmaer er i øjeblikket i prøveversion.</span><span class="sxs-lookup"><span data-stu-id="bde62-132">Viewing leave and absence across companies is currently in preview.</span></span> <span data-ttu-id="bde62-133">Du skal aktivere den i dit **Sandkasse**-miljø.</span><span class="sxs-lookup"><span data-stu-id="bde62-133">You'll need to enable it in your **Sandbox** environment.</span></span> <span data-ttu-id="bde62-134">Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="bde62-134">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span><br><br>
+><span data-ttu-id="bde62-135">Derefter skal du aktivere funktionen i **Delte parametre for personale** for at få vist filteret for juridiske enheder i kalendere.</span><span class="sxs-lookup"><span data-stu-id="bde62-135">Then you must enable the feature in **Human resources shared parameters** to display the legal entity filter in calendars.</span></span> <span data-ttu-id="bde62-136">Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværsparametre](hr-leave-and-absence-parameters.md).</span><span class="sxs-lookup"><span data-stu-id="bde62-136">For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).</span></span><br><br>
+><span data-ttu-id="bde62-137">Du kan filtrere kalenderen efter juridisk enhed.</span><span class="sxs-lookup"><span data-stu-id="bde62-137">You can filter the calendar by legal entity.</span></span> <span data-ttu-id="bde62-138">Hvis du vil se alle medarbejdere uanset juridisk enhed, skal du fjerne markeringen i filtreringsfeltet og vælge Angiv.</span><span class="sxs-lookup"><span data-stu-id="bde62-138">If you want to see all employees regardless of legal entity, clear the filter box and select enter.</span></span> 
 
-<span data-ttu-id="79149-139">Du kan få flere oplysninger om kalenderindstillinger i [Konfigurere kalenderparametre](hr-leave-and-absence-parameters.md?configure-calendar-parameters).</span><span class="sxs-lookup"><span data-stu-id="79149-139">For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).</span></span>
+<span data-ttu-id="bde62-139">Du kan få flere oplysninger om kalenderindstillinger i [Konfigurere kalenderparametre](hr-leave-and-absence-parameters.md?configure-calendar-parameters).</span><span class="sxs-lookup"><span data-stu-id="bde62-139">For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).</span></span>
 
 
 

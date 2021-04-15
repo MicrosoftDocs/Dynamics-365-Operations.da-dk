@@ -2,11 +2,9 @@
 title: Tildeling af opgavelister til butikker eller medarbejdere
 description: Dette emne beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,80 +13,80 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3d249809f15b50c59620d69a901a427dc3ecb2f0
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 0c4f028367c894c54392963ffc4f6a0f0c04c03a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477578"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795255"
 ---
-# <a name="assign-task-lists-to-stores-or-employees"></a><span data-ttu-id="d5a67-103">Tildele opgavelister til butikker eller medarbejdere</span><span class="sxs-lookup"><span data-stu-id="d5a67-103">Assign task lists to stores or employees</span></span>
+# <a name="assign-task-lists-to-stores-or-employees"></a><span data-ttu-id="8c86f-103">Tildele opgavelister til butikker eller medarbejdere</span><span class="sxs-lookup"><span data-stu-id="8c86f-103">Assign task lists to stores or employees</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="d5a67-104">Dette emne beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="d5a67-104">This topic describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="8c86f-104">Dette emne beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="8c86f-104">This topic describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="d5a67-105">Opgavestyring i Dynamics 365 Commerce giver dig mulighed for at tildele en opgaveliste til flere butikker eller medarbejdere eller til en kombination af butikker og medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="d5a67-105">Task management in Dynamics 365 Commerce lets you assign a task list to multiple stores or employees, or to a combination of stores and employees.</span></span> <span data-ttu-id="d5a67-106">En regional chef for 20 butikker kan f.eks. vælge at tildele opgavelisten **Forberedelser til juleferien** til alle 20 butikker.</span><span class="sxs-lookup"><span data-stu-id="d5a67-106">For example, a regional manager for 20 stores might want to assign the **Holiday season preparation** task list to all 20 stores.</span></span>
+<span data-ttu-id="8c86f-105">Opgavestyring i Dynamics 365 Commerce giver dig mulighed for at tildele en opgaveliste til flere butikker eller medarbejdere eller til en kombination af butikker og medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="8c86f-105">Task management in Dynamics 365 Commerce lets you assign a task list to multiple stores or employees, or to a combination of stores and employees.</span></span> <span data-ttu-id="8c86f-106">En regional chef for 20 butikker kan f.eks. vælge at tildele opgavelisten **Forberedelser til juleferien** til alle 20 butikker.</span><span class="sxs-lookup"><span data-stu-id="8c86f-106">For example, a regional manager for 20 stores might want to assign the **Holiday season preparation** task list to all 20 stores.</span></span>
 
-## <a name="start-the-task-list-assignment-process"></a><span data-ttu-id="d5a67-107">Start tildelingsprocessen for opgavelisten</span><span class="sxs-lookup"><span data-stu-id="d5a67-107">Start the task list assignment process</span></span>
+## <a name="start-the-task-list-assignment-process"></a><span data-ttu-id="8c86f-107">Start tildelingsprocessen for opgavelisten</span><span class="sxs-lookup"><span data-stu-id="8c86f-107">Start the task list assignment process</span></span>
 
-<span data-ttu-id="d5a67-108">Benyt følgende fremgangsmåde for at starte tildelingen af en opgaveliste.</span><span class="sxs-lookup"><span data-stu-id="d5a67-108">To start the process of assigning a task list, follow these steps.</span></span>
+<span data-ttu-id="8c86f-108">Benyt følgende fremgangsmåde for at starte tildelingen af en opgaveliste.</span><span class="sxs-lookup"><span data-stu-id="8c86f-108">To start the process of assigning a task list, follow these steps.</span></span>
 
-1. <span data-ttu-id="d5a67-109">Gå til **Retail og Commerce \> Opgavestyring \> Administration af opgavestyring**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-109">Go to **Retail and Commerce \> Task management \> Task management administration**.</span></span>
-1. <span data-ttu-id="d5a67-110">Vælg den opgaveliste, der skal tildeles.</span><span class="sxs-lookup"><span data-stu-id="d5a67-110">Select the task list to assign.</span></span>
-1. <span data-ttu-id="d5a67-111">Vælg **Start proces**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-111">Select **Start process**.</span></span>
-1. <span data-ttu-id="d5a67-112">Angiv et navn (f.eks. **Butikker i den østlige region**) i feltnavnet **Procesnavn** i dialogboksen **Start proces** på fanen **Generelt**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-112">In the **Start process** dialog box, on the **General** tab, in the **Process name** field, enter a name (for example, **East region stores**).</span></span>
-1. <span data-ttu-id="d5a67-113">Angiv en dato i feltet **Måldato**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-113">In the **Target date** field, specify a date.</span></span>
-1. <span data-ttu-id="d5a67-114">Hvis du vil tildele opgavelisten til butikker, skal du finde og vælge butikker på fanen **Butikker** vha. filteret **Organisationshierarki**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-114">To assign the task list to stores, on the **Stores** tab, use the **Organization hierarchy** filter to find and select the stores.</span></span>
+1. <span data-ttu-id="8c86f-109">Gå til **Retail og Commerce \> Opgavestyring \> Administration af opgavestyring**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-109">Go to **Retail and Commerce \> Task management \> Task management administration**.</span></span>
+1. <span data-ttu-id="8c86f-110">Vælg den opgaveliste, der skal tildeles.</span><span class="sxs-lookup"><span data-stu-id="8c86f-110">Select the task list to assign.</span></span>
+1. <span data-ttu-id="8c86f-111">Vælg **Start proces**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-111">Select **Start process**.</span></span>
+1. <span data-ttu-id="8c86f-112">Angiv et navn (f.eks. **Butikker i den østlige region**) i feltnavnet **Procesnavn** i dialogboksen **Start proces** på fanen **Generelt**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-112">In the **Start process** dialog box, on the **General** tab, in the **Process name** field, enter a name (for example, **East region stores**).</span></span>
+1. <span data-ttu-id="8c86f-113">Angiv en dato i feltet **Måldato**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-113">In the **Target date** field, specify a date.</span></span>
+1. <span data-ttu-id="8c86f-114">Hvis du vil tildele opgavelisten til butikker, skal du finde og vælge butikker på fanen **Butikker** vha. filteret **Organisationshierarki**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-114">To assign the task list to stores, on the **Stores** tab, use the **Organization hierarchy** filter to find and select the stores.</span></span>
 
-    <span data-ttu-id="d5a67-115">Hvis du vil tildele opgavelisten til medarbejdere, skal du finde og vælge medarbejderne under fanen **Arbejdere**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-115">To assign the task list to employees, on the **Workers** tab, find and select the employees.</span></span>
+    <span data-ttu-id="8c86f-115">Hvis du vil tildele opgavelisten til medarbejdere, skal du finde og vælge medarbejderne under fanen **Arbejdere**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-115">To assign the task list to employees, on the **Workers** tab, find and select the employees.</span></span>
 
-1. <span data-ttu-id="d5a67-116">Vælg **OK** for at starte processen.</span><span class="sxs-lookup"><span data-stu-id="d5a67-116">Select **OK** to start the process.</span></span> <span data-ttu-id="d5a67-117">Opgavelisten tildeles til de valgte butikker eller medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="d5a67-117">The tasks list is assigned to the selected stores or employees.</span></span>
+1. <span data-ttu-id="8c86f-116">Vælg **OK** for at starte processen.</span><span class="sxs-lookup"><span data-stu-id="8c86f-116">Select **OK** to start the process.</span></span> <span data-ttu-id="8c86f-117">Opgavelisten tildeles til de valgte butikker eller medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="8c86f-117">The tasks list is assigned to the selected stores or employees.</span></span>
 
-<span data-ttu-id="d5a67-118">I følgende illustration vises et eksempel på, hvordan du finder og vælger butikker i dialogboksen **Start proces**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-118">The following illustration shows an example of how to find and select stores in the **Start process** dialog box.</span></span>
+<span data-ttu-id="8c86f-118">I følgende illustration vises et eksempel på, hvordan du finder og vælger butikker i dialogboksen **Start proces**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-118">The following illustration shows an example of how to find and select stores in the **Start process** dialog box.</span></span>
 
 ![Finde og vælge butikker i dialogboksen Start proces](media/HQ-Assign-Tasks-Lists.png)
 
-## <a name="assign-task-lists-on-a-recurring-basis"></a><span data-ttu-id="d5a67-120">Tildele tilbagevendende opgavelister</span><span class="sxs-lookup"><span data-stu-id="d5a67-120">Assign task lists on a recurring basis</span></span>
+## <a name="assign-task-lists-on-a-recurring-basis"></a><span data-ttu-id="8c86f-120">Tildele tilbagevendende opgavelister</span><span class="sxs-lookup"><span data-stu-id="8c86f-120">Assign task lists on a recurring basis</span></span>
 
-<span data-ttu-id="d5a67-121">Detailhandleren har nogle gange tilbagevendende opgaver, f.eks. "Tjekliste til torsdagslukning" eller "Tjekliste til første dag i måneden".</span><span class="sxs-lookup"><span data-stu-id="d5a67-121">Retailer sometimes have recurrent tasks, such as "Thursday closure checklist" or "First day of the month checklist."</span></span> <span data-ttu-id="d5a67-122">Det kan derfor være en god ide at tildele en tilbagevendende opgaveliste.</span><span class="sxs-lookup"><span data-stu-id="d5a67-122">Therefore, they might want to assign the task list on a recurring basis.</span></span>
+<span data-ttu-id="8c86f-121">Detailhandleren har nogle gange tilbagevendende opgaver, f.eks. "Tjekliste til torsdagslukning" eller "Tjekliste til første dag i måneden".</span><span class="sxs-lookup"><span data-stu-id="8c86f-121">Retailer sometimes have recurrent tasks, such as "Thursday closure checklist" or "First day of the month checklist."</span></span> <span data-ttu-id="8c86f-122">Det kan derfor være en god ide at tildele en tilbagevendende opgaveliste.</span><span class="sxs-lookup"><span data-stu-id="8c86f-122">Therefore, they might want to assign the task list on a recurring basis.</span></span>
 
-1. <span data-ttu-id="d5a67-123">Gå til **Retail og Commerce \> Opgavestyring \> Administration af opgavestyring**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-123">Go to **Retail and Commerce \> Task management \> Task management administration**.</span></span>
-1. <span data-ttu-id="d5a67-124">Vælg den opgaveliste, der skal tildeles.</span><span class="sxs-lookup"><span data-stu-id="d5a67-124">Select the task list to assign.</span></span>
-1. <span data-ttu-id="d5a67-125">Vælg **Start proces**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-125">Select **Start process**.</span></span>
-1. <span data-ttu-id="d5a67-126">Angiv et navn i feltet **Procesnavn** i dialogboksen **Start proces** på fanen **Generelt**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-126">In the **Start process** dialog box, on the **General** tab, in the **Process name** field, enter a name.</span></span>
-1. <span data-ttu-id="d5a67-127">Indstil indstillingen **Gentagelse** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-127">Set the **Recurrence** option to **Yes**.</span></span>
-1. <span data-ttu-id="d5a67-128">Angiv antallet af dage i feltet **Forskydning af gentagelse af måldage i dage**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-128">In the **Recurrence target date offset in days** field, enter a number of days.</span></span> <span data-ttu-id="d5a67-129">Hvis du f.eks. angiver **4**, vil måldatoen være gentagelsesdatoen plus fire dage.</span><span class="sxs-lookup"><span data-stu-id="d5a67-129">For example, if you enter **4**, the target date is the recurrence date plus four days.</span></span>
-1. <span data-ttu-id="d5a67-130">Vælg **Gentagelse** på fanen **Kør i baggrunden**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-130">On the **Run in the background** tab, select **Recurrence**.</span></span>
-1. <span data-ttu-id="d5a67-131">Angiv frekvenskriterierne i dialogboksen **Definer gentagelse**, og vælg derefter **OK**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-131">In the **Define recurrence** dialog box, enter the frequency criteria, and then select **OK**.</span></span>
+1. <span data-ttu-id="8c86f-123">Gå til **Retail og Commerce \> Opgavestyring \> Administration af opgavestyring**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-123">Go to **Retail and Commerce \> Task management \> Task management administration**.</span></span>
+1. <span data-ttu-id="8c86f-124">Vælg den opgaveliste, der skal tildeles.</span><span class="sxs-lookup"><span data-stu-id="8c86f-124">Select the task list to assign.</span></span>
+1. <span data-ttu-id="8c86f-125">Vælg **Start proces**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-125">Select **Start process**.</span></span>
+1. <span data-ttu-id="8c86f-126">Angiv et navn i feltet **Procesnavn** i dialogboksen **Start proces** på fanen **Generelt**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-126">In the **Start process** dialog box, on the **General** tab, in the **Process name** field, enter a name.</span></span>
+1. <span data-ttu-id="8c86f-127">Indstil indstillingen **Gentagelse** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-127">Set the **Recurrence** option to **Yes**.</span></span>
+1. <span data-ttu-id="8c86f-128">Angiv antallet af dage i feltet **Forskydning af gentagelse af måldage i dage**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-128">In the **Recurrence target date offset in days** field, enter a number of days.</span></span> <span data-ttu-id="8c86f-129">Hvis du f.eks. angiver **4**, vil måldatoen være gentagelsesdatoen plus fire dage.</span><span class="sxs-lookup"><span data-stu-id="8c86f-129">For example, if you enter **4**, the target date is the recurrence date plus four days.</span></span>
+1. <span data-ttu-id="8c86f-130">Vælg **Gentagelse** på fanen **Kør i baggrunden**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-130">On the **Run in the background** tab, select **Recurrence**.</span></span>
+1. <span data-ttu-id="8c86f-131">Angiv frekvenskriterierne i dialogboksen **Definer gentagelse**, og vælg derefter **OK**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-131">In the **Define recurrence** dialog box, enter the frequency criteria, and then select **OK**.</span></span>
 
-<span data-ttu-id="d5a67-132">I følgende illustration vises et eksempel på, hvordan du kan angive hyppighedskriterier i dialogboksen **Definer gentagelse**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-132">The following illustration shows an example of how to enter frequency criteria in the **Define recurrence** dialog box.</span></span>
+<span data-ttu-id="8c86f-132">I følgende illustration vises et eksempel på, hvordan du kan angive hyppighedskriterier i dialogboksen **Definer gentagelse**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-132">The following illustration shows an example of how to enter frequency criteria in the **Define recurrence** dialog box.</span></span>
 
 ![Angive frekvenskriterierne i dialogboksen Definer gentagelse](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
-## <a name="track-task-list-status"></a><span data-ttu-id="d5a67-134">Spor status for opgaveliste</span><span class="sxs-lookup"><span data-stu-id="d5a67-134">Track task list status</span></span>
+## <a name="track-task-list-status"></a><span data-ttu-id="8c86f-134">Spor status for opgaveliste</span><span class="sxs-lookup"><span data-stu-id="8c86f-134">Track task list status</span></span>
 
-<span data-ttu-id="d5a67-135">Hvis du er regional chef eller butikschef, kan det være en god ide at spore status for opgavelister, der er tildelt til flere butikker eller medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="d5a67-135">If you're a regional manager or store manager, you might want to track the status of task lists that have been assigned to multiple stores or employees.</span></span> <span data-ttu-id="d5a67-136">Du kan derefter følge op med butikker eller arbejdere, der ikke har fuldført deres tildelte opgaver til tiden.</span><span class="sxs-lookup"><span data-stu-id="d5a67-136">You can then follow up with stores or workers that didn't complete their assigned tasks on time.</span></span> <span data-ttu-id="d5a67-137">Med funktionen Commerce-bagkontor kan du få vist status for opgavelister, tildele opgaver igen eller ændre status for en opgave.</span><span class="sxs-lookup"><span data-stu-id="d5a67-137">Commerce back office lets you view the status of task lists, reassign tasks, or change the status of a task.</span></span>
+<span data-ttu-id="8c86f-135">Hvis du er regional chef eller butikschef, kan det være en god ide at spore status for opgavelister, der er tildelt til flere butikker eller medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="8c86f-135">If you're a regional manager or store manager, you might want to track the status of task lists that have been assigned to multiple stores or employees.</span></span> <span data-ttu-id="8c86f-136">Du kan derefter følge op med butikker eller arbejdere, der ikke har fuldført deres tildelte opgaver til tiden.</span><span class="sxs-lookup"><span data-stu-id="8c86f-136">You can then follow up with stores or workers that didn't complete their assigned tasks on time.</span></span> <span data-ttu-id="8c86f-137">Med funktionen Commerce-bagkontor kan du få vist status for opgavelister, tildele opgaver igen eller ændre status for en opgave.</span><span class="sxs-lookup"><span data-stu-id="8c86f-137">Commerce back office lets you view the status of task lists, reassign tasks, or change the status of a task.</span></span>
 
-<span data-ttu-id="d5a67-138">Hvis du vil følge op på opgavelistestatus for alle opgaver, skal du følge disse trin.</span><span class="sxs-lookup"><span data-stu-id="d5a67-138">To track the task list status for all tasks, follow these steps.</span></span>
+<span data-ttu-id="8c86f-138">Hvis du vil følge op på opgavelistestatus for alle opgaver, skal du følge disse trin.</span><span class="sxs-lookup"><span data-stu-id="8c86f-138">To track the task list status for all tasks, follow these steps.</span></span>
 
-1. <span data-ttu-id="d5a67-139">Gå til **Retail og Commerce \> Opgavestyring \> Opgavestyringsprocesser**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-139">Go to **Retail and Commerce \> Task management \> Task management processes**.</span></span>
-1. <span data-ttu-id="d5a67-140">Vælg fanen **Alle opgavelister** for at få vist status for alle opgavelister, der er knyttet til forskellige butikker.</span><span class="sxs-lookup"><span data-stu-id="d5a67-140">Select the **All task lists** tab to view the status of all task lists that are assigned to various stores.</span></span>
+1. <span data-ttu-id="8c86f-139">Gå til **Retail og Commerce \> Opgavestyring \> Opgavestyringsprocesser**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-139">Go to **Retail and Commerce \> Task management \> Task management processes**.</span></span>
+1. <span data-ttu-id="8c86f-140">Vælg fanen **Alle opgavelister** for at få vist status for alle opgavelister, der er knyttet til forskellige butikker.</span><span class="sxs-lookup"><span data-stu-id="8c86f-140">Select the **All task lists** tab to view the status of all task lists that are assigned to various stores.</span></span>
 
-<span data-ttu-id="d5a67-141">Hvis du vil følge spore status for opgavelister for alle opgaver, som er tildelt dig, skal du følge disse trin.</span><span class="sxs-lookup"><span data-stu-id="d5a67-141">To track the task list status for all tasks that are assigned to you, follow these steps.</span></span>
+<span data-ttu-id="8c86f-141">Hvis du vil følge spore status for opgavelister for alle opgaver, som er tildelt dig, skal du følge disse trin.</span><span class="sxs-lookup"><span data-stu-id="8c86f-141">To track the task list status for all tasks that are assigned to you, follow these steps.</span></span>
 
-1. <span data-ttu-id="d5a67-142">Gå til **Retail og Commerce \> Opgavestyring \> Opgavestyringsprocesser**.</span><span class="sxs-lookup"><span data-stu-id="d5a67-142">Go to **Retail and Commerce \> Task management \> Task management processes**.</span></span>
-1. <span data-ttu-id="d5a67-143">Vælg fanen **Mine opgaver** eller **Alle opgaver** for at få vist eller opdatere status for de opgaver, der er tildelt til dig.</span><span class="sxs-lookup"><span data-stu-id="d5a67-143">Select the **My tasks** or **All tasks** tab to view or update the status of tasks that are assigned to you.</span></span>
+1. <span data-ttu-id="8c86f-142">Gå til **Retail og Commerce \> Opgavestyring \> Opgavestyringsprocesser**.</span><span class="sxs-lookup"><span data-stu-id="8c86f-142">Go to **Retail and Commerce \> Task management \> Task management processes**.</span></span>
+1. <span data-ttu-id="8c86f-143">Vælg fanen **Mine opgaver** eller **Alle opgaver** for at få vist eller opdatere status for de opgaver, der er tildelt til dig.</span><span class="sxs-lookup"><span data-stu-id="8c86f-143">Select the **My tasks** or **All tasks** tab to view or update the status of tasks that are assigned to you.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="d5a67-144">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="d5a67-144">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8c86f-144">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="8c86f-144">Additional resources</span></span>
 
-[<span data-ttu-id="d5a67-145">Oversigt over opgavestyring</span><span class="sxs-lookup"><span data-stu-id="d5a67-145">Task management overview</span></span>](task-mgmt-overview.md)
+[<span data-ttu-id="8c86f-145">Oversigt over opgavestyring</span><span class="sxs-lookup"><span data-stu-id="8c86f-145">Task management overview</span></span>](task-mgmt-overview.md)
 
-[<span data-ttu-id="d5a67-146">Konfigurer opgavestyring</span><span class="sxs-lookup"><span data-stu-id="d5a67-146">Configure task management</span></span>](task-mgmt-configure.md)
+[<span data-ttu-id="8c86f-146">Konfigurer opgavestyring</span><span class="sxs-lookup"><span data-stu-id="8c86f-146">Configure task management</span></span>](task-mgmt-configure.md)
 
-[<span data-ttu-id="d5a67-147">Oprette opgavelister og tilføje opgaver</span><span class="sxs-lookup"><span data-stu-id="d5a67-147">Create task lists and add tasks</span></span>](task-mgmt-create-lists.md)
+[<span data-ttu-id="8c86f-147">Oprette opgavelister og tilføje opgaver</span><span class="sxs-lookup"><span data-stu-id="8c86f-147">Create task lists and add tasks</span></span>](task-mgmt-create-lists.md)
 
-[<span data-ttu-id="d5a67-148">Opgavestyring i POS</span><span class="sxs-lookup"><span data-stu-id="d5a67-148">Task management in POS</span></span>](task-mgmt-POS.md)
+[<span data-ttu-id="8c86f-148">Opgavestyring i POS</span><span class="sxs-lookup"><span data-stu-id="8c86f-148">Task management in POS</span></span>](task-mgmt-POS.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
