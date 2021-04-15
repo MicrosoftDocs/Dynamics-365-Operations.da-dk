@@ -2,7 +2,6 @@
 title: Grænseflade for materialehåndteringsudstyr (MHAX)
 description: I dette emne beskrives, hvordan du kan konfigurere MHAX-grænsefladen til materialehåndtering, så du kan oprette forbindelse til eksterne MH-systemer for fysisk materialehåndtering.
 author: Mirzaab
-manager: tfehr
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ea021529d7417fb3170c859c7fffcb2cfd23a43f
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 9273e4a1f6b3f57086c921c4beb0530a67ccd976
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571836"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810504"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Grænseflade for materialehåndteringsudstyr (MHAX)
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruge *grænsefladen til materialehåndtering* (MHAX) til at knytte eksterne MH-systemer for fysisk materialehåndtering til et lagersted, der administreres af den avancerede lokationsstyring (WMS) i Microsoft Dynamics 365 Supply Chain Management. Grænsefladen mellem WMS- og MH-systemerne består af to køer: en til udgående hændelser (WMS til MH) og en til indgående hændelser (MH til WMS). WMS-systemet genererer udgående hændelser baseret på arbejdslinjer, der er oprettet under forskellige arbejdsoprettelses- og udførelsesprocesser. MH-systemet poller derefter jævnligt WMS-systemet for nye hændelser og behandler svarene. Når MH-systemet er færdig med at håndtere hændelserne i overensstemmelse med arbejdsinstruktioner, sender det indgående hændelser som f.eks. færdiggørelse af en arbejdslinje og kort pluk.
 

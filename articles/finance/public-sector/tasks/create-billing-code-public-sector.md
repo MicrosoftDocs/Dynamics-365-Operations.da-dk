@@ -2,11 +2,9 @@
 title: Oprette en faktureringskode for den offentlige sektor
 description: Brugerdefinerede felter til faktureringskoder gør det muligt at indsamle værdier for faktureringskodefelter, når der oprettes fritekstfakturaer.
 author: twheeloc
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCustomField
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f2fc90010890a4ae55dead4ff4a90e8e8391397d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cd86909767e8b61adfe443f78478b3e371abea76
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246829"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816816"
 ---
 # <a name="create-a-billing-code-for-the-public-sector"></a>Oprette en faktureringskode for den offentlige sektor
 

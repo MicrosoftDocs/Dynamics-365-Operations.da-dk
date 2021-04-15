@@ -2,11 +2,9 @@
 title: Avancerede finansposter i den offentlige sektor
 description: Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter. For eksempel kan avancerede finansposter bruges til at ompostere udgifter, hvis fakturaer fejlagtigt er blevet bogført til den forkerte konto eller det forkerte projekt.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameters
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ad0d8a9137ba295affe3e795aebd62106e643cf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e1ad407f1908da4da4981cd23700a848d7470b02
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264086"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809904"
 ---
 # <a name="advanced-ledger-entries-in-the-public-sector"></a>Avancerede finansposter i den offentlige sektor
 

@@ -2,11 +2,9 @@
 title: Oprette en finansieringskildetype i den offentlige sektor
 description: Middeltyper er kategorier, du kan bruge til gruppere midler til detaljeret sporing og rapportering i regnskabet.
 author: twheeloc
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerFundType
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36b925c90ce17e67ad968820292fdd87b320894e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5d49cf348126f2ed531b99e0037910b613ccefa9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242821"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816813"
 ---
 # <a name="create-a-fund-type-in-the-public-sector"></a>Oprette en finansieringskildetype i den offentlige sektor
 

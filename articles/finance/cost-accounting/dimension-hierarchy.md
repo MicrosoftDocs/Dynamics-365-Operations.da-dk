@@ -2,11 +2,9 @@
 title: Dimensionshierarki
 description: Dette emne indeholder oplysninger om dimensionshierarkier. Du kan bruge et dimensionshierarki til at definere rapporteringsstrukturen, omkostningspolitikker og sikkerhedsopsætning i Omkostningsregnskab.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217380"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810168"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
@@ -124,12 +122,13 @@ Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan ko
 
 Dimensionshierarkiet til rapportering kan konfigureres som vist her.
 
-|                   | Intervaller for dimensionsmedlemmer   |                         |
+**Intervaller for dimensionsmedlemmer**
+
+|   Noder           |   Fra dimensionsmedlem   |   Til dimensionsmedlem   |
 |-------------------|---------------------------|-------------------------|
-| **Noder**         | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
 | Organisation      |                           |                         |
 | &nbsp;&nbsp;Administration         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finans   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finans   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produktion    |                           |                         |
@@ -146,12 +145,13 @@ Et dimensionshierarki, der opfylder kravene i politikken, kan konfigureres som v
 
 Dimensionshierarkiet til politikken kan konfigureres som vist her.
 
-|                   | Intervaller for dimensionsmedlemmer   |                         |
+**Intervaller for dimensionsmedlemmer**
+
+|   Noder           |   Fra dimensionsmedlem   |   Til dimensionsmedlem   |
 |-------------------|---------------------------|-------------------------|
-| **Noder**         | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
 | Funktionalitet af omkostning     |                           |                         |
 | &nbsp;&nbsp;Fast omkostning    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Variabel omkostning | 40001                     | 40010                   |
+| &nbsp;&nbsp;Variabel omkostning | 40001                     | 40010                   |
 
 > [!NOTE]
 > Under **Intervaller for dimensionsmedlemmer** kan en node indeholde 1:_n_ dimensionsmedlemsintervaller. Du kan indsætte dimensionsmedlem-id'er, der endnu ikke findes som medlemmer af dimensionen. Denne fremgangsmåde gør hierarkiet fleksibelt i fremtiden.  
@@ -297,9 +297,10 @@ Potentielt skal alle ledere kunne få adgang til følsomme forretningsoplysninge
 
 Et nyt oversigtspanel **Brugere** er tilgængeligt i hierarkidesigneren. Her kan du indsætte et eller flere bruger-id'er på hver node i hierarkiet.
 
-|                 | Brugere            | Intervaller for dimensionsmedlemmer   |                         |
+**Intervaller for brugere og dimensionsmedlemmer**
+
+|   Noder         |   Bruger-id        |   Fra dimensionsmedlem   |   Til dimensionsmedlem   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Noder**       | **Bruger-id**      | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
 | Organisation    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Administration         | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finans   | Alicia           | CC002                     | CC003                   |

@@ -2,11 +2,9 @@
 title: Konfigurere og administrere databaselogning
 description: Du kan spore ændringer af tabeller og felter i Dynamics 365 Human Resources med databaselogning.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467643"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801329"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurere og administrere databaselogning
 
@@ -68,7 +66,22 @@ Du kan forbedre ydeevnen ved at udvælge bestemte felter til loggen i stedet for
 Du kan bruge guiden **Registrering af databaseændringer** til at konfigurere databaselogning. Guiden giver en fleksibel måde at konfigurere logføring for tabeller eller felter.
 
 1. Gå til **Systemadministration > Links > Database > Opsætning af databaselog**. Vælg **Ny** for at starte guiden **Registrering af databaseændringer**.
-2. Fuldfør guiden.
+2. Vælg **Næste**. 
+3. På siden **Tabeller og felter** i guiden skal du vælge de tabeller og felter, hvor du vil aktivere databaselogføring, og vælge **Næste**.
+
+   > [!Note]
+   > Databaselogføring er ikke tilgængelig i alle tabeller i Human Resources-databasen. Hvis du vælger **Vis alle tabeller** under listen, udvides listen over tabeller og felter til at vise alle databasetabeller, som databaselogføring er tilgængelig for, men dette vil være en delmængde af den fulde liste over databasetabeller.
+
+4. På siden **Typer af ændringer** i guiden skal du vælge de datahandlinger, du vil spore ændringer for i hver af tabellerne og felterne, og vælge **Næste**. I tabellen nedenfor kan du se en beskrivelse af de datahandlinger, der er tilgængelige til logføring.
+5. Gennemse de ændringer, der vil blive foretaget, på siden **Udfør**, og vælg **Udfør**.
+
+| Operation | Betegnelse |
+| -- | -- |
+| Spor nye transaktioner | Opret en log for nye poster, der er oprettet i tabellen. |
+| Opdater | Opret en log for opdateringer af tabelposter eller opdateringer af individuelt valgte felter i tabellen. Hvis du vælger at logføre opdateringer for tabellen, oprettes der en logpost, hver gang der foretages en opdatering af et felt i en vilkårlig post i tabellen. Hvis du vælger at logføre opdateringer for bestemte felter, oprettes der kun en logpost, når der foretages opdateringer af disse felter med tabelposter. |
+| Slet | Opret en log for poster, der er slettet fra tabellen. |
+| Omdøb nøgle | Opret en logpost, når en tabelnøgle omdøbes. |
+
 
 ## <a name="clean-up-database-logs"></a>Rydde op i databaselogfiler
 

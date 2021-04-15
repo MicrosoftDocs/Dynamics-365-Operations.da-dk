@@ -2,11 +2,9 @@
 title: Vælg en dataintegrationsteknologi
 description: Denne artikel indeholder oplysninger om integration med data, der administreres Human Resources. Den beskriver forskellige integrationsteknologier, der kan hjælpe dig med at afgøre, hvilke teknologier der bedst opfylder dine behov.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b2bd8707d873955ec53dcaebb503a6c8e666d9f8
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: f0e50cc1e18400258a4ad5da008e1719d39bd1da
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465840"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801209"
 ---
 # <a name="choose-a-data-integration-technology"></a>Vælg en dataintegrationsteknologi
 
@@ -146,7 +144,7 @@ Med så mange forskellige integrationsteknologier, der er til rådighed, kan bes
 | REST API for DMF-pakke   | Ja, planlagt via middleware        | Asynkon, batch                                | Ja                                       | Høj (hundredtusindvis af poster)                    | API understøtter alle DMF-enheder       |
 | BYOD                   | Ja, planlagt af administrator i Human Resources        | Asynkon, batch                                | Nej<sup>3</sup>                                    | Høj (hundredtusindvis af poster)                    | Understøtter alle DMF-enheder           |
 | OData-aktiverede enheder | Ja, ved hjælp af middleware                    | Synkroniser                                        | Ja, via Human Resources-datatjenesten (OData)  | Varierer efter brug (understøtter sideinddeling til interaktiv brug) | Høj                                |
-| Excel-tilføjelsesprogram           | Nr.                                       | Synkroniser                                        | Nr.                                        | Mellem (titusindvis af poster)                      | Understøtter alle OData-aktiverede enheder |
+| Excel-tilføjelsesprogram           | Nej                                       | Synkroniser                                        | Nej                                        | Mellem (titusindvis af poster)                      | Understøtter alle OData-aktiverede enheder |
 | Dataintegrator        | Ja, planlagt i Dataintegrator        | Asynkon, batch                                | Ingen                                        | Varierer efter brug                                       | Understøtter alle Dataverse-tabeller           |
 
 <sup>2</sup>Microsoft investerer meget for at øge datadækningen af Dataverse-tabeller. Vi anbefaler, at du bruger Dataverse, når dækningen er tilgængelig. I øjeblikket er Dataverse-datadækningen lav sammenlignet med DMF- og OData-aktiverede enheder.

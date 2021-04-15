@@ -2,11 +2,9 @@
 title: Redigere en eksisterende webstedsside
 description: Dette emne indeholder en beskrivelse af, hvordan du kan redigere en eksisterende webstedsside i Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6afd19a01520813e54871f4849aeb18f4424173c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b633965e45c16cb4e5991fab67783b867223f6ec
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223041"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803723"
 ---
 # <a name="modify-an-existing-site-page"></a>Redigere en eksisterende webstedsside
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af, hvordan du kan redigere en eksisterende webstedsside i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Når du skal redigere en side, skal du først åbne den i sideeditoren. Gå til det websted, der indeholder siden, og søg derefter efter den ønskede side på listen over sider. Hvis du ikke kan finde siden, kan du bruge funktionen til avanceret søgning i oprettelsesværktøjet. Skriv enten det præcise sidenavn, eller skriv de første par bogstaver i navnet og derefter en stjerne (\*). Der vises en filtreret liste over sider. Du kan bruge denne liste til at finde den ønskede side. Når du har fundet siden, skal du vælge sidenavnet for at åbne siden i sideeditoren.
 

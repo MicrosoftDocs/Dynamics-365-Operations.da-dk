@@ -2,11 +2,9 @@
 title: Refusioner i den offentlige sektor
 description: I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustBillingClassification
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cac4440c2f61523c657c4e3a9292ffa88f5e1bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d825d944eaed98e916566954d96333f3c90a1c93
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231463"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816837"
 ---
 # <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
 
@@ -56,7 +54,7 @@ Det gør de ikke. Faktureringsklassifikationer anvendes aldrig til debitorbetali
 Ja. Hvis du vil behandle en refusion for en kunde med udestående debiteringer, skal du bruge filtre på siden refusion til at vælge debitoren og vælge indstillingen for at medtage debitorer med udestående debiteringer. Når du gør dette, oprettes refusionsposteringer for det fulde beløb af alle kundens kreditposteringer. De udestående debetbeløb er ikke trukket fra kreditbeløbene.
 
 ## <a name="can-i-process-reimbursements-for-customers-who-have-pending-settlements"></a>Kan jeg ikke behandle refusioner for kunder, der har ventende udligninger?
-Nr. Refusioner behandles ikke for en kunde, der har ventende udligninger, der ikke er blevet bogført til journalen.
+Nej. Refusioner behandles ikke for en kunde, der har ventende udligninger, der ikke er blevet bogført til journalen.
 
 ## <a name="can-i-reverse-reimbursement-settlements"></a>Kan jeg fortryde refusionsudligninger?
 Nej, ikke direkte. Du kan dog bruge finanskladdeposter til at oprette posteringer, der ville medføre tilbageførsel af finansposterne.

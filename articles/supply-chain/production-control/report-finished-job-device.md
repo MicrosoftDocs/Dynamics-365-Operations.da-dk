@@ -2,11 +2,9 @@
 title: Færdigmelde fra jobkortenheden
 description: Dette emne beskriver, hvordan systemet konfigureres, så brugere af en jobkortenhed kan rapportere færdigvarer fra en produktionsordre til lageret.
 author: johanhoffmann
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7eabcb23681a9b2427fa1065b045e639cc98f9d7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd21bdf532e1e607e66bb8f5ef032f0855c99612
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262135"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811624"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Færdigmelde fra jobkortenheden
 
@@ -64,7 +62,7 @@ Jobkortenheden understøtter tre scenarier til rapportering af batchvarer. Disse
 Hvis du vil sætte dine jobkortenheder i gang med at acceptere et batchnummer under færdigmeldingen, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere følgende funktioner (i denne rækkefølge):
 
 1. Forbedret brugeroplevelse for dialogboksen Rapport i gang på jobkortenheden.
-1. Aktivér denne funktion for at kunne angive batch- og serienumre, når der færdigmeldes fra jobkortenheden (prøveversion)
+1. Aktivere for at angive batch- og serienumre, når der færdigmeldes fra jobkortenheden
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurere produkter, der kræver batchnummerrapportering
 
@@ -142,7 +140,7 @@ Jobkortenheden understøtter tre scenarier til rapportering af seriestyrede vare
 Hvis du vil sætte dine jobkortenheder i gang med at acceptere et serienummer under færdigmeldingen, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere følgende funktioner (i denne rækkefølge):
 
 1. Forbedret brugeroplevelse for dialogboksen Rapport i gang på jobkortenheden.
-1. Aktivér denne funktion for at kunne angive batch- og serienumre, når der færdigmeldes fra jobkortenheden (prøveversion)
+1. Aktivere for at angive batch- og serienumre, når der færdigmeldes fra jobkortenheden
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurere produkter, der kræver serienummerrapportering
 

@@ -2,11 +2,9 @@
 title: Glidende gennemsnit
 description: Glidende gennemsnit er en permanent kalkulationsmetode baseret på gennemsnitsprincippet, hvor omkostninger på lagerafgange ikke ændres, når indkøbsprisen ændres. Differencen er aktiveret og baseret på en proportional beregning. Det beløb, der er tilbage, udgiftsføres.
 author: AndersGirke
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f3a996ebbfb8c3a75b302925ffe0a3ef40e18a5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3616ade55b2055a30af8ebc2da7e2ade41973543
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263584"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809704"
 ---
 # <a name="moving-average"></a>Glidende gennemsnit
 

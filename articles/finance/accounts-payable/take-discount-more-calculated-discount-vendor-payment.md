@@ -2,11 +2,9 @@
 title: Få mere end den beregnede rabat til en kreditorbetaling
 description: Denne artikel fører dig gennem en situation, hvor en kasserabat anvendes for et beløb, der er større end den rabat, der oprindeligt blev brugt på fakturaen. Denne situation kan opstå, hvis en organisation har en aftale med leverandøren om at betale et mindre beløb på fakturaen.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a56331f76867aeac0bad0912749d96f959513e0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 62f2088ff04a0ef5ffe6ffe47b85f47e6957264d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235879"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810240"
 ---
 # <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>Få mere end den beregnede rabat til en kreditorbetaling
 
@@ -38,11 +36,11 @@ Leverandøren 3051 giver Fabrikam en kasserabat på 4 %, hvis en faktura betales
 
 Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
 | Kasserabatdato           | 12-7-2015 |
-| Kasserabatbeløb         | 60,00     |
-| Anvend kasserabat            | Almindelig    |
+| Kasserabatbeløb         | 60.00     |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | 60,00     |
 

@@ -1,12 +1,10 @@
 ---
-title: Konfigurere appfeltnavne i lagerstedsappen
-description: I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Dynamics 365 Supply Chain Management.
+title: Konfigurere felter til mobilappen Lokationsstyring
+description: I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i mobilappen Lokationsstyring.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -18,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c22a4314c36ba7112456ef264df500af98996f3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c6ed726536085b836f4014c59ea8df4755577ab5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232953"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808816"
 ---
-# <a name="configure-app-field-names-in-the-warehouse-app"></a>Konfigurere appfeltnavne i lagerstedsappen
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurere felter til mobilappen Lokationsstyring
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Dynamics 365 Supply Chain Management. 
+I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i mobilappen Lokationsstyring.
 
 > [!NOTE]
-> Dette emne vedrører funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Lagersted er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i lagerstedsappen, og hvordan de bruges i Lagersted. Du kan finde flere oplysninger om at konfigurere forbindelsen til Lagersted i selvstudiet [Oversigt over installation og konfiguration af lagerstedsappen](install-configure-warehousing-app.md).
+> Dette emne vedrører funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Mobilappen Lokationsstyring er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i mobilappen Lokationsstyring, og hvordan de bruges.
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurere feltnavne for lagerstedsapp
 
@@ -142,7 +140,7 @@ De resterende metadata, f.eks. placering, vises ikke på opgavesiden, men vises 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Oversigt over installation og konfiguration af lagerstedsappen](install-configure-warehousing-app.md)
+[Installere og tilslutte mobilapp til lagerstedsadministration](../warehousing/install-configure-warehouse-management-app.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

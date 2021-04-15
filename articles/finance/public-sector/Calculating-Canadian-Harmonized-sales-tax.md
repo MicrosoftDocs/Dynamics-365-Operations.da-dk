@@ -2,11 +2,9 @@
 title: Canadisk harmoniseret moms (Harmonized Sales Tax - HST)
 description: Dette emne giver oplysninger om funktionerne til at understøtte harmoniseret moms for den offentlige sektor.
 author: velofog
-manager: Ann Beebe
 ms.date: 04/2/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
@@ -19,12 +17,12 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2020-4-01
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 519cae6aafd707676962de456b532fe40dcb0fdf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 30d13091279e4a7be06c494eb393793166acd2ee
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224609"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809910"
 ---
 # <a name="calculating-canadian-harmonized-sales-tax"></a>Beregning af canadisk harmoniseret moms
 

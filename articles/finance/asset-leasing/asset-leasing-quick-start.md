@@ -2,11 +2,9 @@
 title: Kom i gang med aktivleasing
 description: Dette emne beskriver aktivleasingkapaciteten og gennemgår trinnene til oprettelse af aktivleasing og visning af oplysninger for disse leasinger.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b4f1bdf74dc5319f0b3ba145969b064ad33d5010
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229592"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814122"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gang med aktivleasing
 
@@ -41,16 +39,16 @@ Et leaset aktiv indeholder følgende hovedkomponenter:
 
 - **Leasingaftale** – Leasinggiveren ejer aktivet og aftaler med leasingtageren, at et aktiv leases i en bestemt periode mod regelmæssige leasingbetalinger. Ud over den juridiske kontrakt mellem leasinggiveren og leasingtageren indeholder leasingaftalen administrative beslutninger som f.eks. sandsynligheden for at gennemføre en fornyelsesmulighed og overdragelse af ejerskab.
 
-- **Leasingberegning og klassificering pr. regnskabsstandard** - Leasingberegningen og klassificeringen identificerer den regnskabsstandard, der anvendes i den første og den efterfølgende måling, samt klassifikationstesten, der bestemmer, hvad leasingtypen vil være. En leasing kan være en finansiel leasing, en operationel leasing, en kortfristet leasing eller en lavværdileasing. Systemet beregner også den nuværende værdi af fremtidige minimumsleasingbetalinger med henblik på værdiansættelse og klassifikation.
+- **Leasingberegning og klassificering pr. regnskabsstandard** - Leasingberegningen og klassificeringen identificerer den regnskabsstandard, der anvendes i den første og den efterfølgende måling, samt klassifikationstesten, der bestemmer, hvad leasingtypen vil være. En leasing kan være en finansiel leasing, en operationel leasing, en kortfristet leasing eller en lavværdileasing. Systemet beregner også den nuværende nettoværdi af fremtidige minimumsleasingbetalinger med henblik på værdiansættelse og klassifikation.
 
-- **Leasingtransaktioner** – Aktivleasing understøtter den første anerkendelse af brugsretsaktivet for leasinger på balancen samt efterfølgende måling af enten balanceførte leasinger eller ikke-balanceførte leasinger. Ved den første genkendelsestransaktion måles den aktuelle værdi af fremtidige mindsteleasingbetalinger. Disse data bruges til at bestemme værdien af det første brugsretsaktiv og den første leasingforpligtelse, som påvirker organisationens balance. Den efterfølgende måling af de månedlige leasingtransaktioner omfatter akkumulering af rente for leasingforpligtelsen, hvilket øger leasingforpligtelsen. Det måler også de periodiserede leasingbetalinger, der reducerer leasingforpligtelsen, og som efterfølgende vil blive udbetalt til leasinggiveren. Målingen indeholder også amortisering af brugsretsaktivet.
+- **Leasingtransaktioner** – Aktivleasing understøtter den første anerkendelse af brugsretsaktivet for leasinger på balancen samt efterfølgende måling af enten balanceførte leasinger eller ikke-balanceførte leasinger. Ved den første genkendelsestransaktion måles den aktuelle nettoværdi af fremtidige mindsteleasingbetalinger. Disse data bruges til at bestemme værdien af det første brugsretsaktiv og den første leasingforpligtelse, som påvirker organisationens balance. Den efterfølgende måling af de månedlige leasingtransaktioner omfatter akkumulering af rente for leasingforpligtelsen, hvilket øger leasingforpligtelsen. Det måler også de periodiserede leasingbetalinger, der reducerer leasingforpligtelsen, og som efterfølgende vil blive udbetalt til leasinggiveren. Målingen indeholder også amortisering af brugsretsaktivet.
 
   I forbindelse med ikke-balanceførte leasinger beregner systemet den lineære leasingudgift i forhold til det mindste beløb: aktivets økonomiske levetid eller leasingperioden. Ved leasingreguleringerne måles kontraktændringer, f.eks. en leasings forlængelse eller udvidelse, og den værdiforringelsestransaktion, der bruger brugsretsaktivet til ikke-refunderbare omkostninger.
 
   Aktivleasing integreres med Finans for at sikre, at alle bogførte leasingtransaktioner opdaterer kontoplanen. Aktivleasing integreres med kreditorer for at spore leasinggiverfakturaer i kreditor og foretage fremtidige betalinger derfra. Integrationen med anlægsaktiver giver dig mulighed for at spore leasinger i anlægsaktivregistret og bogføre brugsretsaktivstransaktioner, herunder den første anerkendelse, afskrivning og værdiforringelse af aktivet, inde fra Anlægsaktiver.   
 
 ## <a name="asset-leasing-components"></a>Komponenter for aktivleasing 
-Aktivleasing tilknytter leasingoplysninger, betalingsplaner, start- og slutdatoer og betalingsfrekvensen. Den automatiserer også beregninger for nutidsværdien, månedlige leasingbetalinger, renter og amortisering af leasing. Systemet udfører test af leasingklassifikation afhængigt af konfigurationen. I systemet oprettes og bogføres også de tilsvarende leasingtransaktioner, som er baseret på den struktur, der er defineret af den regnskabsstandard, du følger.
+Aktivleasing tilknytter leasingoplysninger, betalingsplaner, start- og slutdatoer og betalingsfrekvensen. Den automatiserer også beregninger for nettonutidsværdien, månedlige leasingbetalinger, renter og amortisering af leasing. Systemet udfører test af leasingklassifikation afhængigt af konfigurationen. I systemet oprettes og bogføres også de tilsvarende leasingtransaktioner, som er baseret på den struktur, der er defineret af den regnskabsstandard, du følger.
 
 I følgende diagram vises leasingbogen, leasingen, beregnet betalingsplan, klassifikationstest for leasinger og leasingbøger samt de tilsvarende regnskabstransaktioner.
 
@@ -62,13 +60,13 @@ I følgende diagram vises leasingbogen, leasingen, beregnet betalingsplan, klass
 
 - **Aktivets brugstid** - Repræsenterer de resterende perioder for et aktivs brugstid fra leasingens startdato. Aktivets brugstid vil blive taget i betragtning i klassifikationens testligning. Den adskiller sig fra den brugstid, der er defineret i anlægsaktiver.
 
-- **Trinvis lånesats** - Dette er den rentesats, der vil blive brugt til beregning af nutidsværdien. Systemet bruger den implicitte sats, hvis den er defineret i leasingdataene, til beregning af den aktuelle værdi af leasingbetalingerne. Hvis den implicitte sats ikke er defineret, vil systemet bruge den trinvise lånesats.
+- **Trinvis lånesats** - Dette er den rentesats, der vil blive brugt til beregning af nettonutidsværdien. Systemet bruger den implicitte sats, hvis den er defineret i leasingdataene, til beregning af den aktuelle nettoværdi af leasingbetalingerne. Hvis den implicitte sats ikke er defineret, vil systemet bruge den trinvise lånesats.
 
 - **Annuitetstype** - Dette er leasingbetalingen, som enten forfalder i starten af betalingsperioden eller i slutningen af perioden. Dette kan være forskudsbetaling eller forfalden annuitet (ved begyndelsen af leasingbetalingsperioden) eller almindelige annuiteter (ved afslutningen af leasingbetalingsperioden).
 
   Den første måned betragtes som periode nummer nul for forskudsbetaling. Den første måned vil blive vurderet som en periode for efterbetalinger.
 
-- **Sammenlægningsinterval** - Det repræsenterer det antal perioder, som renten sammenlægges pr. år. Dette kan f.eks. være månedligt (12 perioder pr. år), kvartalsvist (4 perioder pr. år), halvårligt (2 perioder pr. år) eller hvert år (1 periode pr. år). Antallet af perioder tages i betragtning i beregningen af nutidsværdien.
+- **Sammenlægningsinterval** - Det repræsenterer det antal perioder, som renten sammenlægges pr. år. Dette kan f.eks. være månedligt (12 perioder pr. år), kvartalsvist (4 perioder pr. år), halvårligt (2 perioder pr. år) eller hvert år (1 periode pr. år). Antallet af perioder tages i betragtning i beregningen af nettonutidsværdien.
 
 - **Ikrafttrædelsesdato** - Dette er den dato, hvor leasinggiveren gør aktivet tilgængeligt for leasingtagerens brug. Alle leasingberegninger og transaktioner baseres på ikrafttrædelsesdatoen. Ikrafttrædelsesdatoen skal være i begyndelsen af en periode (først i måneden) for at sikre nøjagtigheden af efterfølgende beregninger. Du kan bruge feltet **Kontraktsignaturdato** til at angive den faktiske dato, hvor kontrakten blev underskrevet.
 
@@ -81,7 +79,7 @@ I følgende diagram vises leasingbogen, leasingen, beregnet betalingsplan, klass
 
 - **Betalingsfrekvens** – Dette angiver, om betalingen er månedlig, kvartalsvis, halvårlig eller årlig. Slutdatoen beregnes automatisk på baggrund af startdatoen og antallet af angivne perioder.
 
-- **Betalingsplan** - Dette er den beregnede nutidsværdi baseret på den tid, der er omfattet af leasingbetalingerne, betalingernes beløb, sammenlægningsperioderne og annuitetstypen.
+- **Betalingsplan** - Dette er den beregnede nettonutidsværdi baseret på den tid, der er omfattet af leasingbetalingerne, betalingernes beløb, sammenlægningsperioderne og annuitetstypen.
 
 - **Perioder** - Det er de leasingperioder, der afspejler den interne sammenlægning og annuitetstype. Sammenlægningsintervallet bestemmer, hvordan perioderne opdeles. Du kan angive følgende sammenlægningsintervaller:
 
@@ -92,10 +90,10 @@ I følgende diagram vises leasingbogen, leasingen, beregnet betalingsplan, klass
 
 Den første periode starter med periode nul, hvis annuitetstypen er forfalden annuitet. Ellers starter den første periode med periode ét, hvis annuitetstypen er efterbetalinger.
 
-- **Måneder** - Dette angiver antallet af kalendermåneder i leasingforløbet. Betalingsbeløbet er det forfaldne beløb, som det er defineret i betalingsfrekvensen. Den beregnede nutidsværdi er den aktuelle værdibaserede leasingbetaling pr. periode, sammenlægningsintervallerne og den trinvise lånesats.
+- **Måneder** - Dette angiver antallet af kalendermåneder i leasingforløbet. Betalingsbeløbet er det forfaldne beløb, som det er defineret i betalingsfrekvensen. Den beregnede nettonutidsværdi er den nettonutidsbaserede leasingbetaling pr. periode, sammenlægningsintervallerne og den trinvise lånesats.
 
 > [!NOTE] 
-> Nutidsværdien beregnes på baggrund af den nedsatte likviditetsligning.
+> Nettonutidsværdien beregnes på baggrund af den nedsatte likviditetsligning.
 
 - **Bøger** - Dette er den forudkonfigurerede opsætning, der vil blive knyttet til hver leasing. I bogen defineres de anvendte regnskabsstandarder, leasingtyper og den tærskel, der skal bruges som grundlag for klassifikationstestene. Klassifikationstest bruges til at angive leasingtypen automatisk.
 
@@ -107,7 +105,7 @@ Den første periode starter med periode nul, hvis annuitetstypen er forfalden an
 
   - **Leasingperiode** - Det er den procentdel af brugstiden, der skal bruges i klassifikationstesten. Systemet klassificerer leasingen som finansiel, hvis leasingtypen er angivet til automatisk, og hvis leasingperioden for aktivets brugstid er større end eller lig med den procent, der er defineret her.
 
-  - **Nutidsværdi** - Det er den procentdel af aktivets handelsværdi, der skal bruges i klassifikationstesten. Systemet klassificerer leasingen som finansiel, hvis leasingtypen er angivet til automatisk, og hvis nutidsværdien af fremtidige leasingbetalinger for aktivets handelsværdi er større end eller lig med den procent, der er defineret her.
+  - **Nettonutidsværdi** - Det er den procentdel af aktivets handelsværdi, der skal bruges i klassifikationstesten. Systemet klassificerer leasingen som finansiel, hvis leasingtypen er angivet til automatisk, og hvis nettonutidsværdien af fremtidige leasingbetalinger for aktivets handelsværdi er større end eller lig med den procent, der er defineret her.
 
   - **Kortfristet leasing** – Hvis leasingperioden er mindre end eller lig med den angivne værdi, klassificeres leasingen som en kortfristet leasing.
 
@@ -115,7 +113,7 @@ Den første periode starter med periode nul, hvis annuitetstypen er forfalden an
 
   - **Leasingklassifikation og -transaktioner** Leasingklassifikationen er en automatisk proces, der bruges til at klassificere leasinger baseret på de fastsatte tærskler i bøger ud over andre klassifikationstestkriterier, for at identificere, om leasingen er en finansiel leasing, operationel leasing, kortfristet leasing eller lavværdileasing. Dette bruges også til at identificere, om den udskudte lejeproces følges.
 
-Klassifikationstest omfatter overdragelse af ejendomsretten, købsoption, leasingperiode, nutidsværdi og entydigt aktiv. Følgende diagram viser klassifikationstest af leasinger.
+Klassifikationstest omfatter overdragelse af ejendomsretten, købsoption, leasingperiode, nettonutidsværdi og entydigt aktiv. Følgende diagram viser klassifikationstest af leasinger.
 
 [![Test af leasingklassifikation](./media/overview-03.png)](./media/overview-03.png)
 
@@ -124,22 +122,22 @@ Hver leasingtype håndterer regnskabet forskelligt for forskellige leasingtransa
 ## <a name="asset-leasing-transactions"></a>Leasingtransaktioner for aktiv
 
 #### <a name="initial-recognition"></a>Første indregning 
-Den første anerkendelse af et leaset aktiv bruger den beregnede nutidsværdi, så den kan rapporteres på balancen. Regnskabsposten for denne genereres automatisk. Denne transaktion debiterer kontoen for brugsretsaktivet og krediterer den operationelle leasingforpligtelseskonto på følgende måde. Hvis der er knyttet et anlægsaktiv til leasingen, vil den oprindelige anerkendelsespost blive vist som en anskaffelse af et anlægsaktiv. I dette scenario skal du definere en posteringsprofil for anlægsaktiver, der skal bogføres på brugsretsaktivets konto. 
+Den første anerkendelse af et leaset aktiv bruger den beregnede nettonutidsværdi, så den kan rapporteres på balancen. Regnskabsposten for denne genereres automatisk. Denne transaktion debiterer kontoen for brugsretsaktivet og krediterer den operationelle leasingforpligtelseskonto på følgende måde. Hvis der er knyttet et anlægsaktiv til leasingen, vil den oprindelige anerkendelsespost blive vist som en anskaffelse af et anlægsaktiv. I dette scenario skal du definere en posteringsprofil for anlægsaktiver, der skal bogføres på brugsretsaktivets konto. 
 
 > [!NOTE]
 > Operationelle leasinger understøttes kun af US GAAP ASC 842.
 
 |     Type                                          |     Debet                     |     Kredit                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Operationel leasing under US GAAP              |     Brugsretsaktiv      |     Operationel leasingforpligtelse       |
-|     Finansiel leasing under IFRS og US GAAP        |     Brugsretsaktiv      |     Operationel leasingforpligtelse       |
+|     Operationel leasing under US GAAP            |     Brugsretsaktiv        |     Operationel leasingforpligtelse     |
+|     Finansiel leasing under IFRS og US GAAP      |     Brugsretsaktiv        |     Finansiel leasingforpligtelse       |
 
 #### <a name="lease-liability-amortization-interest-expense"></a>Amortisering af leasingforpligtelse (renteudgift) 
 Renten for en leasing anerkendes ved at beregne rente for leasingens startsaldo, leasingbetaling for perioder, rentelånesats og sammenlægningsintervalperioder pr. år. Rentebeløbet øger den operationelle leasingforpligtelseskonto ved at kreditere den, hvilket vil blive afspejlet i organisationens balance. Transaktionen omfatter også en debetpost på renteudgiftskontoen, som afspejles på driftsregnskabet for finansielle leasinger og på leasingudgiftskontoen for operationelle leasinger.
 
 |     Type                                          |     Debet                     |     Kredit                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Post for operationel leasingforpligtelse under US GAAP ASC 842    |     Renteudgift          |     Operationel leasingforpligtelse         |
+|     Post for operationel leasingforpligtelse under US GAAP ASC 842    |     Leasingudgift         |     Operationel leasingforpligtelse         |
 |     Post for finansiel leasingforpligtelse under IFRS og US GAAP      |     Renteudgift          |     Finansiel leasingforpligtelse           |
 
 #### <a name="accrued-lease-payment"></a>Periodiseret leasingbetaling
@@ -151,7 +149,7 @@ En periodiseret leasingbetaling anerkendes som en fremtidig leasingbetaling, der
 |     Finansiel leasing under IFRS og US GAAP        |  Finansiel leasingforpligtelse      |   Kreditors passiv (reskontro)/Vekselgæld  |
 
 #### <a name="asset-depreciation"></a>Afskrivning af aktiv
-Brugsretsaktivet afskrives i forhold til den mindste værdi, som enten er aktivets brugstid eller leasingperioden. Metoden til beregning af afskrivning for US GAAP (ASC 842) er baseret på forskellen mellem den lineære leasingudgift og rentebeløbet. Renter på finansiel leasing beregnes ved hjælp af en lineær standardmetode. Leasingafskrivningen har indflydelse på driftsregnskabet ved debitering af renteudgifter. Balancen påvirkes ved kreditering af akkumuleret brugsretsaktivkonto for finansielle leasinger. For operationel leasing krediterer afskrivningen leasingens udgiftskonto. Hvis leasingen er knyttet til et anlægsaktiv, udføres afskrivningstransaktionerne kun fra anlægsaktivmodulet. 
+Brugsretsaktivet afskrives i forhold til den mindste værdi, som enten er aktivets brugstid eller leasingperioden. Metoden til beregning af afskrivning for operationel leasing US GAAP (ASC 842) er baseret på forskellen mellem den lineære leasingudgift og rentebeløbet. Afskrivning på finansiel leasing beregnes ved hjælp af en lineær standardmetode. Leasingafskrivningen har indflydelse på driftsregnskabet ved debitering af renteudgifter. Balancen påvirkes ved kreditering af akkumuleret brugsretsaktivkonto for finansielle leasinger. Hvis leasingen er knyttet til et anlægsaktiv, udføres afskrivningstransaktionerne kun fra anlægsaktivmodulet. 
 
 |     Type                                          |     Debet                     |     Kredit                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |

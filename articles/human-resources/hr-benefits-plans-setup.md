@@ -2,11 +2,9 @@
 title: Oprette en frynsegodeplan
 description: Konfigurer frynsegodeplaner i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d398da8fa53f39cfbdc3911d5acd0967f0c5d5b
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: da11799d3340798067fc03061159896f44750c77
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464272"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805724"
 ---
-# <a name="create-a-benefits-plan"></a>Oprette en frynsegodeplan
+# <a name="create-a-benefit-plan"></a>Oprette en frynsegodeplan
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -46,9 +44,8 @@ Denne artikel viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Huma
    | **Program** | Angiver et program, som planen eventuelt kan tildeles til. |
    | **Bundt** | Angiver et bundt, som planen eventuelt kan tildeles til. |
    | **Hoved** | Angiver, om planen er behovsplanen i det bundt, den er tildelt til. |
-   | **Status** | Angiver frynsegodeplanens aktuelle status. Standardværdien er Aktiv. Hvis du ændrer status til Inaktiv, vil planen ikke være tilgængelig som et valg under registreringen. |
    | **Dato og tidspunkt for Gyldig fra** | Dato og klokkeslæt, som planen starter. Standardværdien er den aktuelle systemdato. |
-   | **Dato og tidspunkt for Gyldig til** | Den dato og det klokkeslæt, hvor planen slutter (status er angivet til Inaktiv). Standardværdien er 31-12-2154, som angiver aldrig. |
+   | **Dato og tidspunkt for Gyldig til** | Dato og klokkeslæt, hvor planen slutter. Standardværdien er 31-12-2154, som angiver aldrig. |
 
 4. Under fanen **Konfiguration** skal du angive værdier for følgende felter, afhængigt af den plantype, du er ved at oprette:
 
@@ -56,18 +53,18 @@ Denne artikel viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Huma
    | --- | --- | --- |
    | Medicinsk (læge, tandlæge, optiker, HMO) | COBRA | Angiver, om planen er berettiget til COBRA (Consolidated Omnibus Budget Reconciliation Act). |
    | Medicinsk (læge, tandlæge, optiker, HMO) | HIPAA | Angiver, om planen er berettiget til HIPAA (Health Insurance Portability and Accountability Act). |
-   | <ul><li>Medicinsk (læge, tandlæge, optiker, HMO)</li><li>Andet (PTO, fitness)</li><li>Diverse</li><li>Langvarigt handicap</li><li>ADD (basisliv, frivilligt liv)</li><li>Opsparing (f.eks. 401(k))</li><li>FSA</li></ul> | Beløb før skat, der er berettiget | Angiver, om der kan betales bidrag til planen, før der beregnes moms. |
-   | <ul><li>Medicinsk (læge, tandlæge, optiker, HMO)</li><li>Andet (PTO, fitness)</li><li>Langvarigt handicap</li><li>ADD (basisliv, frivilligt liv)</li><li>Opsparing (f.eks. 401(k))</li><li>FSA</li></ul> | Bogfør berettiget moms | Angiver, om der kan betales bidrag til planen, efter der beregnes moms. |
-   | <ul><li>Medicinsk (læge, tandlæge, optiker, HMO)</li><li>Andet (PTO, fitness)</li><li>Langvarigt handicap</li><li>ADD (basisliv, frivilligt liv)</li><li>Opsparing (f.eks. 401(k))</li><li>FSA</li></ul> | Bidragyder | Angiver, hvem der bidrager til planen – medarbejderen, arbejdsgiveren eller begge. |
-   | <ul><li>Langvarigt handicap</li><li>ADD (basisliv, frivilligt liv)</li></ul> | Minimumsdækning | Det minimumbeløb for forsikringsdækning, der er påkrævet for planen. |
-   | <ul><li>Langvarigt handicap</li><li>ADD (basisliv, frivilligt liv)</li></ul> | Maksimum dækning | Det maksimumbeløb for forsikringsdækning, der er påkrævet for planen. |
-   | <ul><li>Langvarigt handicap</li><li>ADD (basisliv, frivilligt liv)</li></ul> | Brug trinvise intervaller for dækning | Angiver, om det skal kontrolleres, om dækningsbeløbet svarer til et gyldigt trinvist beløb. |
-   | <ul><li>Langvarigt handicap</li><li>ADD (basisliv, frivilligt liv)</li></ul> | Trinvise intervaller for beløb | Det trinvise beløb for forsikringsdækning for planen. Hvis det trinvise beløb f.eks. er 1.000, kan en medarbejder ikke have en forsikring på 200.500 DKK, de skal runde op til 201.000 DKK eller ned til 200.000 DKK. |
-   | <ul><li>Langvarigt handicap</li><li>ADD (basisliv, frivilligt liv)</li></ul> | Retning med trinvise intervaller | Angiver den retning, der skal afrundes – enten op eller ned – når dækningsbeløbet ikke opfylder den trinvist stigende beløbsværdi. |
+   | Medicinsk (læge, tandlæge, optiker, HMO)<br><br>Andet (PTO, fitness)<br><br>Diverse<br><br>Langvarigt handicap<br><br>ADD (basisliv, frivilligt liv)<br><br>Opsparing (f.eks. 401(k))<br><br>FSA | Beløb før skat, der er berettiget | Angiver, om der kan betales bidrag til planen, før der beregnes moms. |
+   | Medicinsk (læge, tandlæge, optiker, HMO)<br><br>Andet (PTO, fitness)<br><br>Langvarigt handicap<br><br>ADD (basisliv, frivilligt liv)<br><br>Opsparing (f.eks. 401(k))<br><br>FSA | Bogfør berettiget moms | Angiver, om der kan betales bidrag til planen, efter der beregnes moms. |
+   | Medicinsk (læge, tandlæge, optiker, HMO)<br><br>Andet (PTO, fitness)<br><br>Langvarigt handicap<br><br>ADD (basisliv, frivilligt liv)<br><br>Opsparing (f.eks. 401(k))<br><br>FSA | Bidragyder | Angiver, hvem der bidrager til planen – medarbejderen, arbejdsgiveren eller begge. |
+   | Langvarigt handicap<br><br>ADD (basisliv, frivilligt liv) | Minimumsdækning | Det minimumbeløb for forsikringsdækning, der er påkrævet for planen. |
+   | Langvarigt handicap<br><br>ADD (basisliv, frivilligt liv) | Maksimum dækning | Det maksimumbeløb for forsikringsdækning, der er påkrævet for planen. |
+   | Langvarigt handicap<br><br>ADD (basisliv, frivilligt liv) | Brug trinvise intervaller for dækning | Angiver, om det skal kontrolleres, om dækningsbeløbet svarer til et gyldigt trinvist beløb. |
+   | Langvarigt handicap<br><br>ADD (basisliv, frivilligt liv) | Trinvise intervaller for beløb | Det trinvise beløb for forsikringsdækning for planen. Hvis det trinvise beløb f.eks. er 1.000, kan en medarbejder ikke have en forsikring på 200.500 DKK, de skal runde op til 201.000 DKK eller ned til 200.000 DKK. |
+   | Langvarigt handicap<br><br>ADD (basisliv, frivilligt liv) | Retning med trinvise intervaller | Angiver den retning, der skal afrundes – enten op eller ned – når dækningsbeløbet ikke opfylder den trinvist stigende beløbsværdi. |
    | ADD (basisliv, frivilligt liv) | EOI (Evidence of insurability - forsikringsbar) | Angiver, om en medarbejder skal fremvise bevis på, at medarbejderen er forsikringsberettiget. |
    | ADD (basisliv, frivilligt liv) | Beløb | Beløbet i regnskabsvaluta. Dette felt er kun aktivt, hvis afkrydsningsfeltet Bevis på forsikringsberettigelse er markeret. |
-   | <ul><li>Opsparing (f.eks. 401(k))</li><li>FSA</li></ul> | Årligt minimumsbidrag | Det minimumbidragsbeløb, der er påkrævet for planen. |
-   | <ul><li>Opsparing (f.eks. 401(k))</li><li>FSA</li></ul> | Maksimalt årligt bidrag | Det maksimumbidragsbeløb, der er påkrævet for planen. |
+   | Opsparing (f.eks. 401(k))<br><br>FSA | Årligt minimumsbidrag | Det minimumbidragsbeløb, der er påkrævet for planen. |
+   | Opsparing (f.eks. 401(k))<br><br>FSA | Maksimalt årligt bidrag | Det maksimumbidragsbeløb, der er påkrævet for planen. |
    | Opsparing (f.eks. 401(k)) | Arbejdsgivers maksimale årlige beløb | Det maksimumbeløb, en arbejdsgiver må bidrage med til en medarbejders opsparingsplan i løbet af en frynsegodeperiode. Du skal markere afkrydsningsfeltet Medarbejdermatch for at bruge dette felt. |
    | Opsparing (f.eks. 401(k)) | Arbejdsgivermatch | Angiver, om arbejdsgiveren bidrager til en medarbejders opsparingsplan. |
    | Opsparing (f.eks. 401(k)) | Procentdel for arbejdsgivermatch | Den procentdel af et medarbejderbidrag, som arbejdsgiveren vil betale. |
@@ -122,7 +119,7 @@ Du kan se de arbejdere, der er tilmeldt til en valgt frynsegodeplan.
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 
-2. Vælg **Tilmeldte arbejdere**.
+2. Vælg **Tilmeldte arbejdere** på navigationslinjen under fanen **Frynsegoder**.
 
 ## <a name="attach-coverage-options"></a>Tilknyt dækningsindstillinger
 
@@ -130,7 +127,7 @@ Du kan tilføje dækningsindstillinger for den valgte frynsegodeplan. Hvis du ti
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 
-2. Vælg **Tilknyt dækningsindstillinger**.
+2. Vælg **Tilknyt dækningsindstillinger** på navigationslinjen under fanen **Frynsegoder**.
 
 ## <a name="override-eligibility-rules"></a>Tilsidesæt berettigelsesregler
 
@@ -138,7 +135,7 @@ Du kan føje arbejdere til en plan som undtagelser til berettigelsesreglerne. Hv
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 
-2. Vælg **Tilsidesæt berettigelsesregler**.
+2. Vælg **Tilsidesæt berettigelsesregler** på navigationslinjen under fanen **Frynsegoder**.
 
 ## <a name="view-attached-periods"></a>Vis tilknyttede perioder
 
@@ -146,21 +143,21 @@ Du kan få vist en liste over tilgængelige frynsegodeperioder.
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 
-2. Vælg **Perioder**.
+2. Vælg fanen **Perioder** på navigationslinjen.
 
-## <a name="view-plan-information"></a>Vis planoplysninger
+## <a name="view-plan-description"></a>Se planbeskrivelse
 
-Du kan angive en beskrivelse af planen for at hjælpe medarbejderne med at vælge frynsegoder. De planoplysninger, du angiver her, vises i medarbejdernes selvbetjening, når de peger på planen på listen over dækningsindstillinger.
+Du kan angive en beskrivelse af planen for at hjælpe medarbejderne med at vælge frynsegoder. Den planbeskrivelse, du angiver her, vises i medarbejdernes selvbetjening, når de peger på planen på listen over dækningsindstillinger.
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 
-2. Vælg **Oplysninger om plan**.
+2. Vælg **Planbeskrivelse** på navigationslinjen under fanen **Frynsegoder**.
 
 ## <a name="view-flex-credit-programs"></a>Vis programmer for fleksibel kredit
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 
-2. Vælg **Flekskreditprogrammer**.
+2. Vælg **Programmer for fleksibel kredit** på navigationslinjen under fanen **Frynsegoder**.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

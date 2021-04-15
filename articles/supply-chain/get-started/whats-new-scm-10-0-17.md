@@ -1,12 +1,10 @@
 ---
-title: Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
+title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.17.
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 985879ef765bf3074387a909d508f0f93a4771ed
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571806"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813165"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10017-april-2021"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management-prøveversionen af version 10.0.17. Denne version har et build-nummer på 10.0.761 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.17. Denne version har et build-nummer på 10.0.761 og er tilgængelig som følger:
 
 - **Forhåndsversion:** Februar 2021
 - **Generel tilgængelighed af version (selvopdatering):** Marts 2021
@@ -36,9 +33,9 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende funktioner er inkluderet i denne version. Nogle af de viste funktioner findes stadig i prøveversionen, mens andre muligvis allerede er generelt tilgængelige. Følg linkene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
+Følgende funktioner er inkluderet i denne version.  Følg linkene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
 
-De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
+De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem. Nogle af de viste funktioner er måske stadig i forhåndsversion, men de fleste er nu generelt tilgængelige.
 
 ### <a name="asset-management"></a>Aktivstyring
 
@@ -68,9 +65,13 @@ De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](..
 
 - [Mobilappen Lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Du kan finde flere oplysninger under [Installere og forbinde appen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md) og [Brugerindstillinger for mobilenhed](../warehousing/mobile-device-user-settings.md).
 
+- Beskeder om udførelse af bølge<br> - Du kan finde flere oplysninger under [Beskeder om bølgeudførelse](../warehousing/wave-execution-notifications.md)
+
 ### <a name="manufacturing"></a>Produktion
 
-- [Aktivstyringsfunktioner i grænsefladen til produktionsudførelse](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Der er flere oplysninger under [Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere](../production-control/production-floor-execution-use.md).
+- [Aktivstyringsfunktioner i grænsefladen til produktionsudførelse](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Yderligere oplysninger finder du i [Konfigurere grænsefladen til kørsel af produktionsudstyr](../production-control/production-floor-execution-configure.md).
+
+- Samlet nummerserie for job-id'er<br> - Du kan få flere oplysninger i 
 
 - [Tilsidesætte standardreservationsprincippet for materialer i produktion](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Du kan finde flere oplysninger under [Tilsidesætte standardreservationsprincippet for materialer i produktion](../production-control/override-default-reservation-principle.md).
 
