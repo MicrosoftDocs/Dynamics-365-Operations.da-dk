@@ -2,11 +2,9 @@
 title: Pluk det ældste batch på en mobilenhed
 description: I dette emne beskrives, hvordan du kan konfigurere og anvende indstillingerne for at plukke det ældste batch fra en mobilenhed.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
@@ -16,30 +14,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e0deadaeb403e1f645309a141c5678fbe3f716
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eb0012689cc814daaf8f685c81d4630164b6e0c5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232881"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810432"
 ---
-# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="5ae8a-103">Pluk det ældste batch på en mobilenhed</span><span class="sxs-lookup"><span data-stu-id="5ae8a-103">Pick oldest batch on a mobile device</span></span>
+# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="5aeac-103">Pluk det ældste batch på en mobilenhed</span><span class="sxs-lookup"><span data-stu-id="5aeac-103">Pick oldest batch on a mobile device</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5ae8a-104">Du kan få adgang til konfigurationen af **Pluk den ældste batch** via en menu på mobilenhed, og det giver dig mulighed at tvinge lagermedarbejdere til eller advare dem mod at plukke det ældste batch på deres aktuelle placering.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
+<span data-ttu-id="5aeac-104">Du kan få adgang til konfigurationen af **Pluk den ældste batch** via en menu på mobilenhed, og det giver dig mulighed at tvinge lagermedarbejdere til eller advare dem mod at plukke det ældste batch på deres aktuelle placering.</span><span class="sxs-lookup"><span data-stu-id="5aeac-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
 
-## <a name="where-it-applies"></a><span data-ttu-id="5ae8a-105">Hvor det er relevant</span><span class="sxs-lookup"><span data-stu-id="5ae8a-105">Where it applies</span></span>
-<span data-ttu-id="5ae8a-106">Vælg den ældste batch konfigureres i menupunkter på en mobilenhed og påvirker pluk for-batchet under varer.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="5aeac-105">Hvor det er relevant</span><span class="sxs-lookup"><span data-stu-id="5aeac-105">Where it applies</span></span>
+<span data-ttu-id="5aeac-106">Vælg den ældste batch konfigureres i menupunkter på en mobilenhed og påvirker pluk for-batchet under varer.</span><span class="sxs-lookup"><span data-stu-id="5aeac-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
 
-## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="5ae8a-107">Sådan indstilles konfigurationen for Pluk den ældste batch</span><span class="sxs-lookup"><span data-stu-id="5ae8a-107">How to set up the configuration for Pick oldest batch</span></span> 
-<span data-ttu-id="5ae8a-108">For varer, der er indstillet til at bruge eksisterende arbejde, kan **Pluk den ældste batch** indstilles til **Ingen**, **Advar** eller **Gennemtving** fra en menu på en mobilenhed.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
+## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="5aeac-107">Sådan indstilles konfigurationen for Pluk den ældste batch</span><span class="sxs-lookup"><span data-stu-id="5aeac-107">How to set up the configuration for Pick oldest batch</span></span> 
+<span data-ttu-id="5aeac-108">For varer, der er indstillet til at bruge eksisterende arbejde, kan **Pluk den ældste batch** indstilles til **Ingen**, **Advar** eller **Gennemtving** fra en menu på en mobilenhed.</span><span class="sxs-lookup"><span data-stu-id="5aeac-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
 
-<span data-ttu-id="5ae8a-109">**Ingen**: Arbejdere modtager ingen meddelelser, og de kan plukke ethvert batch på deres placering.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
+<span data-ttu-id="5aeac-109">**Ingen**: Arbejdere modtager ingen meddelelser, og de kan plukke ethvert batch på deres placering.</span><span class="sxs-lookup"><span data-stu-id="5aeac-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
 
-<span data-ttu-id="5ae8a-110">**Advar** og **Gennemtving**: Der vises en liste over batches med den ældste udløbsdato over batchkontrolelementet, når arbejderen vælger et batch.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="5ae8a-111">Hvis placeringen er id-kontrolleret, vises en liste over id'er, der har det ældste batch, over id-kontrolelementet.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
--   <span data-ttu-id="5ae8a-112">**Advar**: Hvis en arbejder vælger et id eller et batch, der ikke findes på listen, er kontrolelement tomt, og der vises en advarsel om, at et ældre batch kan vælges.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="5ae8a-113">Hvis arbejderen vil have mulighed for at fortsætte arbejdet, kan vedkommende vælge det samme id eller batch igen.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
--   <span data-ttu-id="5ae8a-114">**Gennemtving**: Arbejdere kan fortsat modtage meddelelsen om, at et ældre batch skal plukkes.</span><span class="sxs-lookup"><span data-stu-id="5ae8a-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
+<span data-ttu-id="5aeac-110">**Advar** og **Gennemtving**: Der vises en liste over batches med den ældste udløbsdato over batchkontrolelementet, når arbejderen vælger et batch.</span><span class="sxs-lookup"><span data-stu-id="5aeac-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="5aeac-111">Hvis placeringen er id-kontrolleret, vises en liste over id'er, der har det ældste batch, over id-kontrolelementet.</span><span class="sxs-lookup"><span data-stu-id="5aeac-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
+-   <span data-ttu-id="5aeac-112">**Advar**: Hvis en arbejder vælger et id eller et batch, der ikke findes på listen, er kontrolelement tomt, og der vises en advarsel om, at et ældre batch kan vælges.</span><span class="sxs-lookup"><span data-stu-id="5aeac-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="5aeac-113">Hvis arbejderen vil have mulighed for at fortsætte arbejdet, kan vedkommende vælge det samme id eller batch igen.</span><span class="sxs-lookup"><span data-stu-id="5aeac-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
+-   <span data-ttu-id="5aeac-114">**Gennemtving**: Arbejdere kan fortsat modtage meddelelsen om, at et ældre batch skal plukkes.</span><span class="sxs-lookup"><span data-stu-id="5aeac-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
