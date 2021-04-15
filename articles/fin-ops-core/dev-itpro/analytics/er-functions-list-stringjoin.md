@@ -2,7 +2,6 @@
 title: ER-funktionen STRINGJOIN
 description: Dette emne indeholder oplysninger om, hvordan funktionen STRINGJOIN til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,52 +15,52 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 755e6481abb65dfecc8ddb6bceb032c8110095e2
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ac21651e0f5b5a1579b9335bb7f3217370c4d5a1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568164"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745515"
 ---
-# <a name="stringjoin-er-function"></a><span data-ttu-id="adb9f-103">ER-funktionen STRINGJOIN</span><span class="sxs-lookup"><span data-stu-id="adb9f-103">STRINGJOIN ER function</span></span>
+# <a name="stringjoin-er-function"></a><span data-ttu-id="f6fa5-103">ER-funktionen STRINGJOIN</span><span class="sxs-lookup"><span data-stu-id="f6fa5-103">STRINGJOIN ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="adb9f-104">Funktionen `STRINGJOIN` returnerer en *Streng*-værdi, der består af sammenføjede værdier for det angivne felt fra den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="adb9f-104">The `STRINGJOIN` function returns a *String* value that consists of concatenated values of the specified field from the specified list.</span></span> <span data-ttu-id="adb9f-105">Værdierne kan være adskilt af et angivet separatortegn.</span><span class="sxs-lookup"><span data-stu-id="adb9f-105">The values can be separated by the specified delimiter.</span></span>
+<span data-ttu-id="f6fa5-104">Funktionen `STRINGJOIN` returnerer en *Streng*-værdi, der består af sammenføjede værdier for det angivne felt fra den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="f6fa5-104">The `STRINGJOIN` function returns a *String* value that consists of concatenated values of the specified field from the specified list.</span></span> <span data-ttu-id="f6fa5-105">Værdierne kan være adskilt af et angivet separatortegn.</span><span class="sxs-lookup"><span data-stu-id="f6fa5-105">The values can be separated by the specified delimiter.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="adb9f-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="adb9f-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f6fa5-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="f6fa5-106">Syntax</span></span>
 
 ```vb
 STRINGJOIN (list, field, delimiter)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="adb9f-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="adb9f-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="f6fa5-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="f6fa5-107">Arguments</span></span>
 
-<span data-ttu-id="adb9f-108">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="adb9f-108">`list`: *Record list*</span></span>
+<span data-ttu-id="f6fa5-108">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="f6fa5-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="adb9f-109">Den gyldige sti til en datakilde af datatypen *Postliste*.</span><span class="sxs-lookup"><span data-stu-id="adb9f-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="f6fa5-109">Den gyldige sti til en datakilde af datatypen *Postliste*.</span><span class="sxs-lookup"><span data-stu-id="f6fa5-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-<span data-ttu-id="adb9f-110">`field`: *Felt*</span><span class="sxs-lookup"><span data-stu-id="adb9f-110">`field`: *Field*</span></span>
+<span data-ttu-id="f6fa5-110">`field`: *Felt*</span><span class="sxs-lookup"><span data-stu-id="f6fa5-110">`field`: *Field*</span></span>
 
-<span data-ttu-id="adb9f-111">Den gyldige sti til et felt af datatypen *Streng* på den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="adb9f-111">The valid path of a field of the *String* data type in the specified list.</span></span>
+<span data-ttu-id="f6fa5-111">Den gyldige sti til et felt af datatypen *Streng* på den angivne liste.</span><span class="sxs-lookup"><span data-stu-id="f6fa5-111">The valid path of a field of the *String* data type in the specified list.</span></span>
 
-<span data-ttu-id="adb9f-112">`delimiter`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="adb9f-112">`delimiter`: *String*</span></span>
+<span data-ttu-id="f6fa5-112">`delimiter`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="f6fa5-112">`delimiter`: *String*</span></span>
 
-<span data-ttu-id="adb9f-113">En afgrænser, der bruges til at adskille understrenge.</span><span class="sxs-lookup"><span data-stu-id="adb9f-113">A delimiter that is used to separate substrings.</span></span>
+<span data-ttu-id="f6fa5-113">En afgrænser, der bruges til at adskille understrenge.</span><span class="sxs-lookup"><span data-stu-id="f6fa5-113">A delimiter that is used to separate substrings.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="adb9f-114">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="adb9f-114">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="f6fa5-114">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="f6fa5-114">Return values</span></span>
 
-<span data-ttu-id="adb9f-115">*Streng*</span><span class="sxs-lookup"><span data-stu-id="adb9f-115">*String*</span></span>
+<span data-ttu-id="f6fa5-115">*Streng*</span><span class="sxs-lookup"><span data-stu-id="f6fa5-115">*String*</span></span>
 
-<span data-ttu-id="adb9f-116">Den returnerede tekstværdi.</span><span class="sxs-lookup"><span data-stu-id="adb9f-116">The resulting text value.</span></span>
+<span data-ttu-id="f6fa5-116">Den returnerede tekstværdi.</span><span class="sxs-lookup"><span data-stu-id="f6fa5-116">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="adb9f-117">Eksempel</span><span class="sxs-lookup"><span data-stu-id="adb9f-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f6fa5-117">Eksempel</span><span class="sxs-lookup"><span data-stu-id="f6fa5-117">Example</span></span>
 
-<span data-ttu-id="adb9f-118">Hvis du indtaster `SPLIT("abc" , 1)` som datakilde **DS**, returnerer udtrykket `STRINGJOIN (DS, DS.Value, "-")` **"a-b-c"**.</span><span class="sxs-lookup"><span data-stu-id="adb9f-118">If you enter `SPLIT("abc" , 1)` as data source **DS**, the expression `STRINGJOIN (DS, DS.Value, "-")` returns **"a-b-c"**.</span></span>
+<span data-ttu-id="f6fa5-118">Hvis du indtaster `SPLIT("abc" , 1)` som datakilde **DS**, returnerer udtrykket `STRINGJOIN (DS, DS.Value, "-")` **"a-b-c"**.</span><span class="sxs-lookup"><span data-stu-id="f6fa5-118">If you enter `SPLIT("abc" , 1)` as data source **DS**, the expression `STRINGJOIN (DS, DS.Value, "-")` returns **"a-b-c"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="adb9f-119">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="adb9f-119">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="f6fa5-119">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="f6fa5-119">Additional resources</span></span>
 
-[<span data-ttu-id="adb9f-120">Listefunktioner</span><span class="sxs-lookup"><span data-stu-id="adb9f-120">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="f6fa5-120">Listefunktioner</span><span class="sxs-lookup"><span data-stu-id="f6fa5-120">List functions</span></span>](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

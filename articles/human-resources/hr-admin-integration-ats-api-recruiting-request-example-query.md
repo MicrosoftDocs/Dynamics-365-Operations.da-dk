@@ -2,11 +2,9 @@
 title: Eksempelforespørgsel til anmodning om rekruttering
 description: Dette emne indeholder en eksempelforespørgsel til rekrutteringsforespørgselsenheden i Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,28 +14,28 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec8b881282d3e79f83cc7205e4742f7e6c5c3464
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: e3bba96988f3ccef9ef54c1dad2a4c63e829198f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465984"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5789702"
 ---
-# <a name="example-query-for-recruiting-request"></a><span data-ttu-id="f504b-103">Eksempelforespørgsel til anmodning om rekruttering</span><span class="sxs-lookup"><span data-stu-id="f504b-103">Example query for Recruiting request</span></span>
+# <a name="example-query-for-recruiting-request"></a><span data-ttu-id="77a04-103">Eksempelforespørgsel til anmodning om rekruttering</span><span class="sxs-lookup"><span data-stu-id="77a04-103">Example query for Recruiting request</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="f504b-104">Dette emne indeholder en eksempelforespørgsel til rekrutteringsforespørgselsenheden i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="f504b-104">This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="77a04-104">Dette emne indeholder en eksempelforespørgsel til rekrutteringsforespørgselsenheden i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="77a04-104">This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="f504b-105">Følgende forespørgsel viser, hvordan du kan bruge indstillingen $expand-forespørgsel i en GET-operation til at hente en angivet post med rekrutteringsanmodninger og alle tilknyttede stillinger, påkrævede færdigheder og uddannelseskrav til den angivne anmodning.</span><span class="sxs-lookup"><span data-stu-id="f504b-105">The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request.</span></span> <span data-ttu-id="f504b-106">Svaret på eksemplet viser en rekrutteringsanmodning til to stillinger og de påkrævede færdigheder og uddannelser til de ønskede stillinger.</span><span class="sxs-lookup"><span data-stu-id="f504b-106">The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.</span></span>
+<span data-ttu-id="77a04-105">Følgende forespørgsel viser, hvordan du kan bruge indstillingen $expand-forespørgsel i en GET-operation til at hente en angivet post med rekrutteringsanmodninger og alle tilknyttede stillinger, påkrævede færdigheder og uddannelseskrav til den angivne anmodning.</span><span class="sxs-lookup"><span data-stu-id="77a04-105">The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request.</span></span> <span data-ttu-id="77a04-106">Svaret på eksemplet viser en rekrutteringsanmodning til to stillinger og de påkrævede færdigheder og uddannelser til de ønskede stillinger.</span><span class="sxs-lookup"><span data-stu-id="77a04-106">The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.</span></span>
 
-<span data-ttu-id="f504b-107">**Anmodning**</span><span class="sxs-lookup"><span data-stu-id="f504b-107">**Request**</span></span>
+<span data-ttu-id="77a04-107">**Anmodning**</span><span class="sxs-lookup"><span data-stu-id="77a04-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruiting request entity ID>)?$expand=mshr_FK_HcmRecruitingRequestPositionEntity_RecruitingRequest,mshr_FK_HcmRecruitingRequestSkillEntity_RecruitingRequest,mshr_FK_HcmRecruitingRequestEducationEntity_RecruitingRequest
 ```
 
-<span data-ttu-id="f504b-108">**Svar**</span><span class="sxs-lookup"><span data-stu-id="f504b-108">**Response**</span></span>
+<span data-ttu-id="77a04-108">**Svar**</span><span class="sxs-lookup"><span data-stu-id="77a04-108">**Response**</span></span>
 
 ```json
 {
@@ -182,8 +180,8 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f504b-109">Se også</span><span class="sxs-lookup"><span data-stu-id="f504b-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="77a04-109">Se også</span><span class="sxs-lookup"><span data-stu-id="77a04-109">See also</span></span>
 
-[<span data-ttu-id="f504b-110">Introduktion til API-integration for ansøgersporingssystem</span><span class="sxs-lookup"><span data-stu-id="f504b-110">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="77a04-110">Introduktion til API-integration for ansøgersporingssystem</span><span class="sxs-lookup"><span data-stu-id="77a04-110">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
