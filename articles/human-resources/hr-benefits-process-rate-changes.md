@@ -2,11 +2,9 @@
 title: Behandle satsændringer
 description: Behandle ændringer i frynsegodesatsen i Microsoft Dynamics 365 Human Resources, når en ny eller eksisterende frynsegodeplan har en ændring i indstillingerne for berettigelsesregler.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitRate, BenefitEligibilityProcessResultViewer
 audience: Application User
@@ -18,38 +16,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c87d98a16431805ad652e28e5ca100a4152ad0c6
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: c841f5d5d409c7e73cdc38988f8233747a11f837
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466224"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803819"
 ---
-# <a name="process-rate-changes"></a><span data-ttu-id="db441-103">Behandle satsændringer</span><span class="sxs-lookup"><span data-stu-id="db441-103">Process rate changes</span></span>
+# <a name="process-rate-changes"></a><span data-ttu-id="1433b-103">Behandle satsændringer</span><span class="sxs-lookup"><span data-stu-id="1433b-103">Process rate changes</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="db441-104">Behandle ændringer i frynsegodesatsen i Microsoft Dynamics 365 Human Resources, når en ny eller eksisterende frynsegodeplan har en ændring i indstillingerne for berettigelsesregler.</span><span class="sxs-lookup"><span data-stu-id="db441-104">Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.</span></span> <span data-ttu-id="db441-105">Hvis der oprettes en ny berettigelsesregel, som tildeles til planen, bliver systemet bedt om at køre medarbejderberettigelse igen for at kontrollere, om arbejdere nu er berettiget til planen baseret på nye indstillinger for berettigelse.</span><span class="sxs-lookup"><span data-stu-id="db441-105">If a new eligibility rule is created and assigned to the plan, this prompts the system to rerun worker eligibility to check if workers may now be eligible for the plan based on new eligibility options.</span></span> 
+<span data-ttu-id="1433b-104">Behandle ændringer i frynsegodesatsen i Microsoft Dynamics 365 Human Resources, når en ny eller eksisterende frynsegodeplan har en ændring i indstillingerne for berettigelsesregler.</span><span class="sxs-lookup"><span data-stu-id="1433b-104">Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.</span></span> <span data-ttu-id="1433b-105">Hvis der oprettes en ny berettigelsesregel, som tildeles til planen, bliver systemet bedt om at køre medarbejderberettigelse igen for at kontrollere, om arbejdere nu er berettiget til planen baseret på nye indstillinger for berettigelse.</span><span class="sxs-lookup"><span data-stu-id="1433b-105">If a new eligibility rule is created and assigned to the plan, this prompts the system to rerun worker eligibility to check if workers may now be eligible for the plan based on new eligibility options.</span></span> 
 
-1. <span data-ttu-id="db441-106">Vælg **Behandling af opdateret satsændring** under **Behandling** i arbejdsområdet **Frynsegodeadministration**.</span><span class="sxs-lookup"><span data-stu-id="db441-106">In the **Benefits management** workspace, under **Processing**, select **Rate change update processing**.</span></span>
+1. <span data-ttu-id="1433b-106">Vælg **Behandling af opdateret satsændring** under **Behandling** i arbejdsområdet **Frynsegodeadministration**.</span><span class="sxs-lookup"><span data-stu-id="1433b-106">In the **Benefits management** workspace, under **Processing**, select **Rate change update processing**.</span></span>
 
-2. <span data-ttu-id="db441-107">Angiv værdier for følgende felter i dialogboksen **Kør behandling af opdateret frynsegodesats**:</span><span class="sxs-lookup"><span data-stu-id="db441-107">In the **Run benefit rate update process** dialog box, specify values for the following fields:</span></span>
+2. <span data-ttu-id="1433b-107">Angiv værdier for følgende felter i dialogboksen **Kør behandling af opdateret frynsegodesats**:</span><span class="sxs-lookup"><span data-stu-id="1433b-107">In the **Run benefit rate update process** dialog box, specify values for the following fields:</span></span>
 
-   | <span data-ttu-id="db441-108">Felt</span><span class="sxs-lookup"><span data-stu-id="db441-108">Field</span></span> | <span data-ttu-id="db441-109">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="db441-109">Description</span></span> |
+   | <span data-ttu-id="1433b-108">Felt</span><span class="sxs-lookup"><span data-stu-id="1433b-108">Field</span></span> | <span data-ttu-id="1433b-109">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="1433b-109">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="db441-110">**Tilmeldingsperiode**</span><span class="sxs-lookup"><span data-stu-id="db441-110">**Enrollment period**</span></span> | <span data-ttu-id="db441-111">Den tilmeldingsperiode, som satsændringer skal behandles for.</span><span class="sxs-lookup"><span data-stu-id="db441-111">The enrollment period to process rate changes for.</span></span> |
+   | <span data-ttu-id="1433b-110">**Tilmeldingsperiode**</span><span class="sxs-lookup"><span data-stu-id="1433b-110">**Enrollment period**</span></span> | <span data-ttu-id="1433b-111">Den tilmeldingsperiode, som satsændringer skal behandles for.</span><span class="sxs-lookup"><span data-stu-id="1433b-111">The enrollment period to process rate changes for.</span></span> |
 
-3. <span data-ttu-id="db441-112">Hvis du vil køre processen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:</span><span class="sxs-lookup"><span data-stu-id="db441-112">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
+3. <span data-ttu-id="1433b-112">Hvis du vil køre processen i baggrunden, skal du vælge **Kør i baggrunden** og udføre følgende opgaver:</span><span class="sxs-lookup"><span data-stu-id="1433b-112">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
 
-   1. <span data-ttu-id="db441-113">Angiv oplysninger om processen.</span><span class="sxs-lookup"><span data-stu-id="db441-113">Enter information for the process.</span></span>
+   1. <span data-ttu-id="1433b-113">Angiv oplysninger om processen.</span><span class="sxs-lookup"><span data-stu-id="1433b-113">Enter information for the process.</span></span>
 
-   2. <span data-ttu-id="db441-114">Hvis du vil konfigurere et tilbagevendende job, skal du vælge **Gentagelse**, angive gentagelsesoplysningerne og vælge **OK**.</span><span class="sxs-lookup"><span data-stu-id="db441-114">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
+   2. <span data-ttu-id="1433b-114">Hvis du vil konfigurere et tilbagevendende job, skal du vælge **Gentagelse**, angive gentagelsesoplysningerne og vælge **OK**.</span><span class="sxs-lookup"><span data-stu-id="1433b-114">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
 
-   3. <span data-ttu-id="db441-115">Hvis du vil oprette en jobpåmindelse, skal du vælge **Påmindelser**, vælge de påmindelser, du vil modtage, og derefter vælge **OK**.</span><span class="sxs-lookup"><span data-stu-id="db441-115">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
+   3. <span data-ttu-id="1433b-115">Hvis du vil oprette en jobpåmindelse, skal du vælge **Påmindelser**, vælge de påmindelser, du vil modtage, og derefter vælge **OK**.</span><span class="sxs-lookup"><span data-stu-id="1433b-115">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
 
-   4. <span data-ttu-id="db441-116">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="db441-116">Select **OK**.</span></span> <span data-ttu-id="db441-117">Processen køres med de parametre, du angiver.</span><span class="sxs-lookup"><span data-stu-id="db441-117">The process will run with the parameters you set.</span></span>
+   4. <span data-ttu-id="1433b-116">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="1433b-116">Select **OK**.</span></span> <span data-ttu-id="1433b-117">Processen køres med de parametre, du angiver.</span><span class="sxs-lookup"><span data-stu-id="1433b-117">The process will run with the parameters you set.</span></span>
 
-4. <span data-ttu-id="db441-118">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="db441-118">Select **OK**.</span></span>
+4. <span data-ttu-id="1433b-118">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="1433b-118">Select **OK**.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

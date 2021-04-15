@@ -2,11 +2,9 @@
 title: Modtagelse af blandede id'er
 description: I dette emne beskrives, hvordan du bruger Modtagelse af blandede id'er til at registrere og oprette arbejde for flere varer med en mobilenhed.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSLicensePlate
 audience: Application User
@@ -16,38 +14,38 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948942f137b75c83cc337c5b05300ed8b8857ab8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b17b3a4d704c5bfd051426e708d39022e59cc67a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227716"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810456"
 ---
-# <a name="mixed-license-plate-receiving"></a><span data-ttu-id="cc6d9-103">Modtagelse af blandede id'er</span><span class="sxs-lookup"><span data-stu-id="cc6d9-103">Mixed license plate receiving</span></span>
+# <a name="mixed-license-plate-receiving"></a><span data-ttu-id="fbe92-103">Modtagelse af blandede id'er</span><span class="sxs-lookup"><span data-stu-id="fbe92-103">Mixed license plate receiving</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cc6d9-104">Med Modtagelse af blandede id'er kan du oprette et id, der består af flere varer, før du registrerer og opretter læg-på-lager-arbejde.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-104">Mixed license plate receiving allows you to build a license plate consisting of multiple items before you register and create put-away work.</span></span> 
+<span data-ttu-id="fbe92-104">Med Modtagelse af blandede id'er kan du oprette et id, der består af flere varer, før du registrerer og opretter læg-på-lager-arbejde.</span><span class="sxs-lookup"><span data-stu-id="fbe92-104">Mixed license plate receiving allows you to build a license plate consisting of multiple items before you register and create put-away work.</span></span> 
 
-<span data-ttu-id="cc6d9-105">Et id, der består af flere varer, behøver ikke at blive opdelt i modtagelsesområdet, for at du kan registrere de enkelte varer.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-105">A license plate that consists of multiple items does not have to be split at the receiving dock for you to register each item.</span></span> 
+<span data-ttu-id="fbe92-105">Et id, der består af flere varer, behøver ikke at blive opdelt i modtagelsesområdet, for at du kan registrere de enkelte varer.</span><span class="sxs-lookup"><span data-stu-id="fbe92-105">A license plate that consists of multiple items does not have to be split at the receiving dock for you to register each item.</span></span> 
 
-<span data-ttu-id="cc6d9-106">Når du bruger en varerelateret proces til at identificere kildedokumentlinjerne, kan du scanne stregkoder på varekontrolelementet.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-106">When using an item-related flow to identify the source document lines, you can scan bar codes on the item control.</span></span> <span data-ttu-id="cc6d9-107">Hvis der er konfigureret et antal og en måleenhed (UOM) i stregkoden, føjes varen og antallet automatisk til det blandede id, og du sendes tilbage til skærmbilledet for at scanne et andet element.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-107">If the bar code has a quantity and a unit of measure (UOM) configured on it, the item and quantity will automatically be added to the mixed license plate, and you will be returned to the screen to scan another item.</span></span> <span data-ttu-id="cc6d9-108">Dette gør det muligt hurtigt at scanne alle varer uden at skulle foretage en bekræftelse på hvert trin.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-108">This allows you to quickly scan all the items without having to make a confirmation at each step.</span></span> 
+<span data-ttu-id="fbe92-106">Når du bruger en varerelateret proces til at identificere kildedokumentlinjerne, kan du scanne stregkoder på varekontrolelementet.</span><span class="sxs-lookup"><span data-stu-id="fbe92-106">When using an item-related flow to identify the source document lines, you can scan bar codes on the item control.</span></span> <span data-ttu-id="fbe92-107">Hvis der er konfigureret et antal og en måleenhed (UOM) i stregkoden, føjes varen og antallet automatisk til det blandede id, og du sendes tilbage til skærmbilledet for at scanne et andet element.</span><span class="sxs-lookup"><span data-stu-id="fbe92-107">If the bar code has a quantity and a unit of measure (UOM) configured on it, the item and quantity will automatically be added to the mixed license plate, and you will be returned to the screen to scan another item.</span></span> <span data-ttu-id="fbe92-108">Dette gør det muligt hurtigt at scanne alle varer uden at skulle foretage en bekræftelse på hvert trin.</span><span class="sxs-lookup"><span data-stu-id="fbe92-108">This allows you to quickly scan all the items without having to make a confirmation at each step.</span></span> 
 
-<span data-ttu-id="cc6d9-109">I processen til modtagelse af blandede id'er kan du få vist listen over varer, der allerede er indscannet i id'et, og herfra kan du ændre eller rette mængde eller antallet af en vare.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-109">In the flow for mixed license plate receiving, you can display the list of items that are already scanned to the license plate and from here you can modify or correct the quantity of an item.</span></span>
+<span data-ttu-id="fbe92-109">I processen til modtagelse af blandede id'er kan du få vist listen over varer, der allerede er indscannet i id'et, og herfra kan du ændre eller rette mængde eller antallet af en vare.</span><span class="sxs-lookup"><span data-stu-id="fbe92-109">In the flow for mixed license plate receiving, you can display the list of items that are already scanned to the license plate and from here you can modify or correct the quantity of an item.</span></span>
 
-## <a name="where-it-applies"></a><span data-ttu-id="cc6d9-110">Hvor det er relevant</span><span class="sxs-lookup"><span data-stu-id="cc6d9-110">Where it applies</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="fbe92-110">Hvor det er relevant</span><span class="sxs-lookup"><span data-stu-id="fbe92-110">Where it applies</span></span>
 
-<span data-ttu-id="cc6d9-111">Modtagelse af blandede id'er er en modtagelsesproces til mobilenheder, hvor du kan registrere og oprette arbejde for flere linjer/varer på samme tid.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-111">Mixed license plate receiving is a mobile device receiving flow to register and create work for multiple lines/items at the same time.</span></span> <span data-ttu-id="cc6d9-112">Dette er nyttigt, hvis du modtager indgående id'er med flere elementer.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-112">This is useful if you receive inbound license plates with multiple items.</span></span> 
+<span data-ttu-id="fbe92-111">Modtagelse af blandede id'er er en modtagelsesproces til mobilenheder, hvor du kan registrere og oprette arbejde for flere linjer/varer på samme tid.</span><span class="sxs-lookup"><span data-stu-id="fbe92-111">Mixed license plate receiving is a mobile device receiving flow to register and create work for multiple lines/items at the same time.</span></span> <span data-ttu-id="fbe92-112">Dette er nyttigt, hvis du modtager indgående id'er med flere elementer.</span><span class="sxs-lookup"><span data-stu-id="fbe92-112">This is useful if you receive inbound license plates with multiple items.</span></span> 
 
-## <a name="how-to-set-up-mixed-license-plate-receiving"></a><span data-ttu-id="cc6d9-113">Sådan konfigurerer du modtagelse af blandede id'er</span><span class="sxs-lookup"><span data-stu-id="cc6d9-113">How to set up mixed license plate receiving</span></span>
-<span data-ttu-id="cc6d9-114">Modtagelse af blandet nummerplade konfigureres som et menupunkt på en mobilenhed.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-114">Mixed license plate receiving is set up as a mobile device menu item.</span></span>
+## <a name="how-to-set-up-mixed-license-plate-receiving"></a><span data-ttu-id="fbe92-113">Sådan konfigurerer du modtagelse af blandede id'er</span><span class="sxs-lookup"><span data-stu-id="fbe92-113">How to set up mixed license plate receiving</span></span>
+<span data-ttu-id="fbe92-114">Modtagelse af blandet nummerplade konfigureres som et menupunkt på en mobilenhed.</span><span class="sxs-lookup"><span data-stu-id="fbe92-114">Mixed license plate receiving is set up as a mobile device menu item.</span></span>
 
-<span data-ttu-id="cc6d9-115">Du skal oprette et nyt menupunkt med tilstandsarbejde, der ikke bruger eksisterende arbejde, og bruge en af følgende metoder:</span><span class="sxs-lookup"><span data-stu-id="cc6d9-115">You need to create a new menu item with mode work that does not use existing work and use one of the following methods:</span></span>
+<span data-ttu-id="fbe92-115">Du skal oprette et nyt menupunkt med tilstandsarbejde, der ikke bruger eksisterende arbejde, og bruge en af følgende metoder:</span><span class="sxs-lookup"><span data-stu-id="fbe92-115">You need to create a new menu item with mode work that does not use existing work and use one of the following methods:</span></span>
 
-- <span data-ttu-id="cc6d9-116">Modtagelse af blandede id'er</span><span class="sxs-lookup"><span data-stu-id="cc6d9-116">Mixed license plate receiving</span></span>
-- <span data-ttu-id="cc6d9-117">Modtagelse af blandede id'er og placering på lager</span><span class="sxs-lookup"><span data-stu-id="cc6d9-117">Mixed license plate receiving and put away</span></span>
+- <span data-ttu-id="fbe92-116">Modtagelse af blandede id'er</span><span class="sxs-lookup"><span data-stu-id="fbe92-116">Mixed license plate receiving</span></span>
+- <span data-ttu-id="fbe92-117">Modtagelse af blandede id'er og placering på lager</span><span class="sxs-lookup"><span data-stu-id="fbe92-117">Mixed license plate receiving and put away</span></span>
 
-<span data-ttu-id="cc6d9-118">Indstillingerne til identifikation af kildedokumentlinjerne er indkøbsordrevare, indkøbsordrelinje, returordre, vare i flytteordre og flytteforslagslinje.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-118">The options to identify the source document lines are purchase order item, purchase order line, return order, transfer order item, and transfer order line.</span></span> <span data-ttu-id="cc6d9-119">Disse indstillinger kan ændre modtagelsesordren på et enkelt id.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-119">These options can change the receiving order on a single license plate.</span></span> <span data-ttu-id="cc6d9-120">Den sidste indstilling er vare efter last.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-120">The last option is by load item.</span></span> <span data-ttu-id="cc6d9-121">Du kan føje flere varer til et id, men du kan ikke skifte mellem flere laster.</span><span class="sxs-lookup"><span data-stu-id="cc6d9-121">You can add multiple items to a license plate, but you cannot switch between multiple loads.</span></span>
+<span data-ttu-id="fbe92-118">Indstillingerne til identifikation af kildedokumentlinjerne er indkøbsordrevare, indkøbsordrelinje, returordre, vare i flytteordre og flytteforslagslinje.</span><span class="sxs-lookup"><span data-stu-id="fbe92-118">The options to identify the source document lines are purchase order item, purchase order line, return order, transfer order item, and transfer order line.</span></span> <span data-ttu-id="fbe92-119">Disse indstillinger kan ændre modtagelsesordren på et enkelt id.</span><span class="sxs-lookup"><span data-stu-id="fbe92-119">These options can change the receiving order on a single license plate.</span></span> <span data-ttu-id="fbe92-120">Den sidste indstilling er vare efter last.</span><span class="sxs-lookup"><span data-stu-id="fbe92-120">The last option is by load item.</span></span> <span data-ttu-id="fbe92-121">Du kan føje flere varer til et id, men du kan ikke skifte mellem flere laster.</span><span class="sxs-lookup"><span data-stu-id="fbe92-121">You can add multiple items to a license plate, but you cannot switch between multiple loads.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
