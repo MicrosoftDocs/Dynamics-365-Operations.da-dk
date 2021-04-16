@@ -2,11 +2,9 @@
 title: Vedligehold generelle budgetreservationer
 description: Dette emne indeholder trin til at arbejde med generelle budgetreservationer i den offentlige sektor i Microsoft Dynamics 365 Finance.
 author: AlexRenney
-manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetReservation_PSN, BudgetReservationYearEndClose_PSN
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ed6131fffa67ff08086a454db1e394936fc9d391
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 31a38a3460bf31f0c7f70f78de6d847ee8aa5143
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258136"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839723"
 ---
 # <a name="maintain-general-budget-reservations"></a>Vedligehold generelle budgetreservationer
 

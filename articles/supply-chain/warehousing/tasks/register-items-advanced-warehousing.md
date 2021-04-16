@@ -1,12 +1,10 @@
 ---
 title: Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
-description: Denne procedure viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser.
+description: Dette emne præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser.
 author: ShylaThompson
-manager: tfehr
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User
@@ -16,65 +14,66 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c25fb55afb01ed59b66045f24400e03e2ec60b2a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238888"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830828"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
 
 [!include [banner](../../includes/banner.md)]
 
-Denne procedure viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser. Dette vil normalt blive udført af en modtagende medarbejder. 
+Dette emne præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser. Dette vil normalt blive udført af en modtagende medarbejder.
 
-Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. Du skal have en bekræftet indkøbsordre med en åben indkøbsordrelinje, før du starter denne guide. Varen på linjen skal på lager, og den skal ikke bruge produktvarianter og ikke have sporingsdimensioner. Og varen skal tilknyttes en lagerstyringsprocesaktiveret lagringsdimensionsgruppe. Det lagersted, der bruges, skal være aktiveret for lagerstyringsprocesser og den lokalitet, du bruger til modtagelse, skal være id-kontrolleret. Hvis du bruger USMF, kan du bruge regnskab 1001, lagersted 51 og vare M9200 til at oprette din IO. 
+## <a name="enable-sample-data"></a>Aktivér eksempeldata
 
-Noter nummeret på den indkøbsordre, du opretter, og bemærk også varenummeret og det sted, du har brugt til din indkøbsordrelinje.
+Hvis du vil gennemgå dette scenario ved hjælp af de eksempelposter og værdier, der er angivet i dette emne, skal du bruge et system, hvor standarddemodataene er installeret, og du skal vælge den juridiske enhed *USMF*, før du går i gang.
 
+Du kan i stedet gennemgå dette scenario ved at erstatte værdier fra dine egne data, hvis du har følgende tilgængelige data:
 
-## <a name="create-an-item-arrival-journal-header"></a>Oprette en varemodtagelseskladde
-1. Gå til Varemodtagelse.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-    * Hvis du bruger USMF, kan du skrive WHS. Hvis du bruger andre data, skal kladden, hvis navn du vælger, have følgende egenskaber: Undersøg plukplads skal angives til Nej, og Karantænestyring skal angives til Nej.  
-4. Skriv en værdi i feltet Nummer.
-5. Skriv en værdi i feltet Sted.
-    * Vælg det sted, du brugte til din indkøbsordrelinje. Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden. Hvis du brugte lagersted 51 i USMF, skal du vælge sted 5.  
-6. Skriv en værdi i feltet Lagersted.
-    * Vælg et lagersted, der er gyldigt for det sted, du har valgt. Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden. Hvis du bruger eksempelværdierne i USMF, skal du vælge 51.  
-7. Skriv en værdi i feltet Lokalitet.
-    * Vælg en gyldig lokalitet på det lagersted, du har valgt. Lokaliteten skal knyttet til en lokalitetsprofil, som er nummerpladekontrolleret. Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden. Hvis du bruger eksempelværdierne i USMF, skal du vælge Bulk-008.  
-8. Højreklik på rullepilen i feltet Nummerplade, og vælg derefter Vis detaljer.
-9. Klik på Ny.
-10. Skriv en værdi i feltet Nummerplade.
-    * Noter værdien.  
-11. Klik på Gem.
-12. Luk siden.
-13. Skriv en værdi i feltet Nummerplade.
-    * Angiv værdien af den nummerplade, du netop har oprettet. Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden.  
-14. Klik på OK.
+- Du skal have en bekræftet indkøbsordre med en åben indkøbsordrelinje.
+- Varen på linjen skal være på lager. Den må ikke bruge produktvarianter og må ikke have sporingsdimensioner.
+- Varen skal være tilknyttet en lagringsdimensionsgruppe, hvor lagerstyringsproces er aktiveret.
+- Det lagersted, der bruges, skal være aktiveret for lagerstyringsprocesser og den lokalitet, du bruger til modtagelse, skal være id-kontrolleret.
 
-## <a name="add-a-line"></a>Tilføj en linje
-1. Klik på Tilføj linje.
-2. Indtast en værdi i feltet Varenummer.
-    * Angiv det varenummer, som du brugte på indkøbsordrelinjen.  
-3. Angiv et tal i feltet Antal.
-    * Angiv den mængde, du vil registrere.  
-    * Feltet Dato angiver den dato, hvor den disponible mængde af denne vare registreres på lageret.  
-    * Parti-id udfyldes af systemet, hvis det kan identificeres entydigt fra de givne oplysninger. Ellers skal du tilføje dem manuelt. Dette er et obligatorisk felt, der sammenkæder denne registrering med en bestemt kildedokumentlinje.  
+## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Oprette en overskrift til varemodtagelseskladde, der bruger lokationsstyring
 
-## <a name="complete-the-registration"></a>Fuldføre registreringen
-1. Klik på Valider.
-    * Dette kontrollerer, at kladden er klar til at blive bogført. Hvis valideringen mislykkes, skal du rette fejlene, før du kan bogføre kladden.  
-2. Klik på OK.
-    * Når du har klikket på OK, kan du se meddelelsen. Der bør være en meddelelse om, at kladden er OK.  
-3. Klik på Bogfør.
-4. Klik på OK.
-    * Når du har klikket på OK, skal du tjekke meddelelseslinjen. Der bør være en meddelelse om, at handlingen er fuldført.  
-5. Luk siden.
+I følgende scenario vises, hvordan du kan oprette en overskrift til varemodtagelseskladden, der bruger lokationsstyring:
 
+1. Kontrollér, at systemet indeholder en bekræftet indkøbsordre, der opfylder de krav, der er beskrevet i forrige afsnit. I dette scenario bruges en indkøbsordre for firmaet *USMF*, leverandørkonto *1001*, lagersted *51*, med en ordrelinje på *10 PL* (10 paller) af varenummer *M9200*.
+1. Notér dig købsordrenummeret, du skal bruge.
+1. Gå til **Lagerstyring \> Kladdeposteringer \> Varemodtagelse \> Varemodtagelse**.
+1. Vælg **Ny** i handlingsrude.
+1. Dialogboksen **Opret lokationsstyringskladde** åbnes. Vælg et kladdenavn i feltet **Navn**.
+    - Hvis du bruger eksempeldataene *USMF*, skal du vælge *WHS*.
+    - Hvis du bruger dine egne data, skal den kladde, du vælger, have **Undersøg plukplads** angivet til *Nej*, og **Karantænestyring** skal være angivet til *Nej*.
+1. Indstil **Reference** til *Indkøbsordre*.
+1. Angiv **Kontonummer** til *1001*.
+1. Angiv **Nummer** til nummeret på den indkøbsordre, du har identificeret til denne øvelse.
+
+    ![Varemodtagelseskladde](../media/item-arrival-journal-header.png "Varemodtagelseskladde")
+
+1. Vælg **OK** for at oprette kladdehovedet.
+1. Vælg **Tilføj linje** i sektionen **Kladdelinjer**, og angiv følgende data:
+    - **Varenummer** – Angiv til *M9200*. **Lokation**, **Lagersted** og **Antal** angives på basis af lagertransaktionsdataene for de 10 paller (1000 hver).
+    - **Lokation** – Angiv til *001*. Denne specifikke lokation sporer ikke nummerplader.
+
+    ![Varemodtagelseskladdelinje](../media/item-arrival-journal-line.png "Varemodtagelseskladdelinje")
+
+    > [!NOTE]
+    > Feltet **Dato** angiver den dato, hvor det disponible antal af denne vare registreres på lageret.  
+    >
+    > **Parti-id** udfyldes af systemet, hvis det kan identificeres entydigt fra de givne oplysninger. Ellers skal du angive det manuelt. Dette er et påkrævet felt, der sammenkæder denne registrering med en bestemt kildedokumentlinje.  
+
+1. Vælg **Valider** i handlingsruden. Dette kontrollerer, at kladden er klar til at blive bogført. Hvis valideringen mislykkes, skal du rette fejlene, før du kan bogføre kladden.  
+1. Dialogboksen **Kontrollér kladde** åbnes. Vælg **OK**.
+1. Gennemgå meddelelseslinjen. Der bør være en meddelelse om, at handlingen er fuldført.  
+1. Vælg **Bogfør** i handlingsruden.
+1. Dialogboksen **Bogfør kladde** åbnes. Vælg **OK**.
+1. Gennemgå meddelelseslinjen. Der bør være en meddelelse om, at handlingen er fuldført.
+1. Vælg **Funktioner > Produktkvittering** i handlingsruden for at opdatere indkøbsordrelinjen og bogføre en produktkvittering.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

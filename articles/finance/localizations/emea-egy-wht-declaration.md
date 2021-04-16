@@ -2,7 +2,6 @@
 title: A-skatopgørelse for Egypten
 description: Dette emne forklarer, hvordan du konfigurerer og genererer A-skatopgørelse til Egypten.
 author: sndray
-manager: AnnBe
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: cec903c56439957bcafb77c3da774a903d4433a1
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: 4e3d68ac003fabaa504ffe81b8bf2f7ff8d7538d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574318"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839786"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>A-skatopgørelse for Egypten (EG-00005)
 

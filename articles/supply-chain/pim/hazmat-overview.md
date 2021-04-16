@@ -2,11 +2,9 @@
 title: Oversigt over farligt materiale
 description: Dette emne indeholder en oversigt over funktioner, der vedrører håndtering og dokumentation af farligt materiale under administration af produktoplysninger og lokationsstyring.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 4ff997214f80d97f6e558d32fbf66663cbc84143
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231882"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829372"
 ---
 # <a name="hazardous-materials-overview"></a>Oversigt over farligt materiale
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 For at overholde angivne standarder og transportreglementer skal organisationer, der leverer materialer, der er klassificeret som farligt gods, medsende ekstra papirarbejde med forsendelserne. Med funktionen til farlige materialer kan kunder lagre oplysninger, der er relateret til frigivne varer. Disse oplysninger kan derefter bruges til at udarbejde forsendelsesdokumentation. En organisation, der leverer farligt gods, skal have sine egne processer og procedurer til administration af leveringsprocessen. Microsoft Dynamics 365 Supply Chain Management er blot et værktøj, der kan hjælpe dig med at oprette de nødvendige dokumenter.
 
