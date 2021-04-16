@@ -1,12 +1,10 @@
 ---
 title: Vedligeholdelsesprognoser
 description: I dette emne beskrives vedligeholdelsesprognoser i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast
 audience: Application User
@@ -14,113 +12,113 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5cf1a634ef5ab60707cf471ef017ec167e3013f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd652af3100f8de59e06490443baeebca58a4dd3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263656"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838532"
 ---
-# <a name="maintenance-forecasts"></a><span data-ttu-id="dd877-103">Vedligeholdelsesbudgetter</span><span class="sxs-lookup"><span data-stu-id="dd877-103">Maintenance forecasts</span></span>
+# <a name="maintenance-forecasts"></a><span data-ttu-id="c4833-103">Vedligeholdelsesbudgetter</span><span class="sxs-lookup"><span data-stu-id="c4833-103">Maintenance forecasts</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-<span data-ttu-id="dd877-104">Når du opretter en arbejdsordre, opretter du arbejdsordrejob, der har relaterede aktiver og vedligeholdelsesjobtyper.</span><span class="sxs-lookup"><span data-stu-id="dd877-104">When you create a work order, you create work order jobs that have related assets and maintenance job types.</span></span> <span data-ttu-id="dd877-105">Når du vælger en vedligeholdelsesjobtype, der indeholder vedligeholdelsesprognoser, kopieres prognoserne automatisk til arbejdsordren.</span><span class="sxs-lookup"><span data-stu-id="dd877-105">When you select a maintenance job type that contains maintenance forecasts, the forecasts are automatically copied to the work order.</span></span>
+<span data-ttu-id="c4833-104">Når du opretter en arbejdsordre, opretter du arbejdsordrejob, der har relaterede aktiver og vedligeholdelsesjobtyper.</span><span class="sxs-lookup"><span data-stu-id="c4833-104">When you create a work order, you create work order jobs that have related assets and maintenance job types.</span></span> <span data-ttu-id="c4833-105">Når du vælger en vedligeholdelsesjobtype, der indeholder vedligeholdelsesprognoser, kopieres prognoserne automatisk til arbejdsordren.</span><span class="sxs-lookup"><span data-stu-id="c4833-105">When you select a maintenance job type that contains maintenance forecasts, the forecasts are automatically copied to the work order.</span></span>
 
-<span data-ttu-id="dd877-106">Du kan muligvis føje prognoselinjer til en arbejdsordre eller slette dem fra en arbejdsordre.</span><span class="sxs-lookup"><span data-stu-id="dd877-106">You might be able to add forecast lines to a work order or delete them from a work order.</span></span> <span data-ttu-id="dd877-107">Opsætningen af en livscyklustilstand for en arbejdsordre, den relaterede projekttype og stadiereglerne, der er relateret til projekttypen, bestemmer, om du kan tilføje eller redigere prognoselinjer.</span><span class="sxs-lookup"><span data-stu-id="dd877-107">The setup of the work order lifecycle state, the related project type, and the stage rules that are related to the project type determine whether you can add or edit forecast lines.</span></span> <span data-ttu-id="dd877-108">Du kan finde flere oplysninger om arbejdsordrers livscyklustilstande og relaterede projektstadier i [Budgetter, arbejdsordrer og projekter](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).</span><span class="sxs-lookup"><span data-stu-id="dd877-108">For more information about work order lifecycle states and related project stages, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).</span></span>
+<span data-ttu-id="c4833-106">Du kan muligvis føje prognoselinjer til en arbejdsordre eller slette dem fra en arbejdsordre.</span><span class="sxs-lookup"><span data-stu-id="c4833-106">You might be able to add forecast lines to a work order or delete them from a work order.</span></span> <span data-ttu-id="c4833-107">Opsætningen af en livscyklustilstand for en arbejdsordre, den relaterede projekttype og stadiereglerne, der er relateret til projekttypen, bestemmer, om du kan tilføje eller redigere prognoselinjer.</span><span class="sxs-lookup"><span data-stu-id="c4833-107">The setup of the work order lifecycle state, the related project type, and the stage rules that are related to the project type determine whether you can add or edit forecast lines.</span></span> <span data-ttu-id="c4833-108">Du kan finde flere oplysninger om arbejdsordrers livscyklustilstande og relaterede projektstadier i [Budgetter, arbejdsordrer og projekter](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).</span><span class="sxs-lookup"><span data-stu-id="c4833-108">For more information about work order lifecycle states and related project stages, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).</span></span>
 
-1. <span data-ttu-id="dd877-109">Vælg **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.</span><span class="sxs-lookup"><span data-stu-id="dd877-109">Select **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.</span></span>
+1. <span data-ttu-id="c4833-109">Vælg **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.</span><span class="sxs-lookup"><span data-stu-id="c4833-109">Select **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.</span></span>
 
-2. <span data-ttu-id="dd877-110">Vælg arbejdsordren på listen, og vælg derefter **Budget** i gruppen **Projekt** under fanen **Arbejdsordre** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="dd877-110">Select the work order in the list, and then, on the Action Pane > **Work order** tab > the **Project** group, select **Forecast**.</span></span> <span data-ttu-id="dd877-111">På siden **Vedligeholdelsesprognose for arbejdsordre** vises prognoselinjer fra den type af vedligeholdelsesjob, der er valgt på arbejdsordrejobbet.</span><span class="sxs-lookup"><span data-stu-id="dd877-111">The **Work order maintenance forecast** page shows forecast lines from the maintenance job type that is selected on the work order job.</span></span>
-
-
-## <a name="add-an-hours-forecast-to-a-work-order"></a><span data-ttu-id="dd877-112">Føje en timeprognose til en arbejdsordre</span><span class="sxs-lookup"><span data-stu-id="dd877-112">Add an hours forecast to a work order</span></span>
-
-1. <span data-ttu-id="dd877-113">Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="dd877-113">On the **Work order maintenance forecast** page, select the work order job to add a forecast to.</span></span>
-
-2. <span data-ttu-id="dd877-114">I oversigtspanelet **Timer** skal du vælge **Tilføj** for at oprette en ny linje.</span><span class="sxs-lookup"><span data-stu-id="dd877-114">On the **Hours** FastTab, select **Add** to create a new line.</span></span>
-
-3. <span data-ttu-id="dd877-115">Vælg en kategori i feltet **Kategori**.</span><span class="sxs-lookup"><span data-stu-id="dd877-115">In the **Category** field, select a category.</span></span>
-
-4. <span data-ttu-id="dd877-116">Indsæt antal budgetterede timer i feltet **Timer**.</span><span class="sxs-lookup"><span data-stu-id="dd877-116">In the **Hours** field, enter the number of forecasted hours.</span></span>
-
-5. <span data-ttu-id="dd877-117">Vælg den gebyrtype, der skal bruges på linjen, i feltet **Linjeegenskab**.</span><span class="sxs-lookup"><span data-stu-id="dd877-117">In the **Line property** field, select the type of charge that should be used on the line.</span></span>
+2. <span data-ttu-id="c4833-110">Vælg arbejdsordren på listen, og vælg derefter **Budget** i gruppen **Projekt** under fanen **Arbejdsordre** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="c4833-110">Select the work order in the list, and then, on the Action Pane > **Work order** tab > the **Project** group, select **Forecast**.</span></span> <span data-ttu-id="c4833-111">På siden **Vedligeholdelsesprognose for arbejdsordre** vises prognoselinjer fra den type af vedligeholdelsesjob, der er valgt på arbejdsordrejobbet.</span><span class="sxs-lookup"><span data-stu-id="c4833-111">The **Work order maintenance forecast** page shows forecast lines from the maintenance job type that is selected on the work order job.</span></span>
 
 
-## <a name="add-an-items-forecast-to-a-work-order"></a><span data-ttu-id="dd877-118">Føje en vareprognose til en arbejdsordre</span><span class="sxs-lookup"><span data-stu-id="dd877-118">Add an items forecast to a work order</span></span>
+## <a name="add-an-hours-forecast-to-a-work-order"></a><span data-ttu-id="c4833-112">Føje en timeprognose til en arbejdsordre</span><span class="sxs-lookup"><span data-stu-id="c4833-112">Add an hours forecast to a work order</span></span>
 
-<span data-ttu-id="dd877-119">Du kan føje varer til en vedligeholdelsesprognose for en arbejdsordre på tre måder.</span><span class="sxs-lookup"><span data-stu-id="dd877-119">There are three ways to add items to a work order maintenance forecast.</span></span> <span data-ttu-id="dd877-120">Du kan oprette linjer for varer (reservedele), der ikke er medtaget på listen over reservedele eller aktivstyklisten, du kan vælge reservedele på listen over godkendte reservedele, og du kan vælge varer fra aktivstyklisten.</span><span class="sxs-lookup"><span data-stu-id="dd877-120">You can create lines for items (spare parts) that aren't included on the spare parts list or the asset bill of materials (BOM), you can select spare parts from the approved spare parts list, or you can select items from the asset BOM.</span></span>
+1. <span data-ttu-id="c4833-113">Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="c4833-113">On the **Work order maintenance forecast** page, select the work order job to add a forecast to.</span></span>
 
-- <span data-ttu-id="dd877-121">Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="dd877-121">On the **Work order maintenance forecast** page, select the work order job to add a forecast to.</span></span>
+2. <span data-ttu-id="c4833-114">I oversigtspanelet **Timer** skal du vælge **Tilføj** for at oprette en ny linje.</span><span class="sxs-lookup"><span data-stu-id="c4833-114">On the **Hours** FastTab, select **Add** to create a new line.</span></span>
 
-- <span data-ttu-id="dd877-122">I oversigtspanelet **Varer** kan du føje varer til vedligeholdelsesprognosen ved at bruge den relevante metode.</span><span class="sxs-lookup"><span data-stu-id="dd877-122">On the **Items** FastTab, add items to the maintenance forecast by using the appropriate method.</span></span>
+3. <span data-ttu-id="c4833-115">Vælg en kategori i feltet **Kategori**.</span><span class="sxs-lookup"><span data-stu-id="c4833-115">In the **Category** field, select a category.</span></span>
 
-<span data-ttu-id="dd877-123">Følg disse trin for at oprette en ny linje til en reservedel, der ikke findes på listen over reservedele eller aktivstyklisten:</span><span class="sxs-lookup"><span data-stu-id="dd877-123">To create a line for a spare part that isn't on the spare parts list or the asset BOM, follow these steps:</span></span>
+4. <span data-ttu-id="c4833-116">Indsæt antal budgetterede timer i feltet **Timer**.</span><span class="sxs-lookup"><span data-stu-id="c4833-116">In the **Hours** field, enter the number of forecasted hours.</span></span>
 
-1. <span data-ttu-id="dd877-124">Vælg **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="dd877-124">Select **Add**.</span></span>
-2. <span data-ttu-id="dd877-125">Vælg varen i feltet **Varenummer**.</span><span class="sxs-lookup"><span data-stu-id="dd877-125">In the **Item number** field, select the item.</span></span>
-3. <span data-ttu-id="dd877-126">Angiv antallet i feltet **Salgsantal**.</span><span class="sxs-lookup"><span data-stu-id="dd877-126">In the **Sales quantity** field, enter the quantity.</span></span>
-4. <span data-ttu-id="dd877-127">Vælg måleenheden for antallet i feltet **Enhed**.</span><span class="sxs-lookup"><span data-stu-id="dd877-127">In the **Unit** field, select the unit of measure for the quantity.</span></span>
-5. <span data-ttu-id="dd877-128">I felterne **Kostpris** og **Valuta** skal du angive relevante værdier.</span><span class="sxs-lookup"><span data-stu-id="dd877-128">In the **Cost price** and **Currency** fields, enter appropriate values.</span></span>
-6. <span data-ttu-id="dd877-129">Vælg en linjeegenskab i feltet **Linjeegenskab**.</span><span class="sxs-lookup"><span data-stu-id="dd877-129">In the **Line property** field, select a line property.</span></span>
-7. <span data-ttu-id="dd877-130">Hvis du vil ændre listen over de dimensioner, der vises på varelinjerne, skal du vælge **Lager** > **Vis dimensioner**, vælge dimensioner og indstille **Gem opsætning** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="dd877-130">To change the list of dimensions that is shown on the item lines, select **Inventory** > **Display dimensions**, select the dimensions, and then set the **Save setup** option to **Yes**.</span></span>
-
-<span data-ttu-id="dd877-131">Hvis du vil tilføje en reservedel fra en godkendt reservedelsliste, skal du følge disse trin:</span><span class="sxs-lookup"><span data-stu-id="dd877-131">To add a spare part from an approved spare parts list, follow these steps:</span></span>
-
-1. <span data-ttu-id="dd877-132">Vælg **Tilføj reservedele**.</span><span class="sxs-lookup"><span data-stu-id="dd877-132">Select **Add spare parts**.</span></span>
-2. <span data-ttu-id="dd877-133">Vælg reservedelen, og rediger de relaterede oplysninger efter behov.</span><span class="sxs-lookup"><span data-stu-id="dd877-133">Select the spare part, and edit the related information as you require.</span></span>
-3. <span data-ttu-id="dd877-134">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="dd877-134">Select **OK**.</span></span>
-
-<span data-ttu-id="dd877-135">Udfør følgende trin for at tilføje en vare fra aktivstyklisten:</span><span class="sxs-lookup"><span data-stu-id="dd877-135">To add an item from the asset BOM, follow these steps:</span></span>
-
-1. <span data-ttu-id="dd877-136">Vælg **Tilføj styklistevarer**.</span><span class="sxs-lookup"><span data-stu-id="dd877-136">Select **Add BOM items**.</span></span>
-2. <span data-ttu-id="dd877-137">Vælg varen, og rediger de relaterede oplysninger efter behov.</span><span class="sxs-lookup"><span data-stu-id="dd877-137">Select the item, and edit the related information as you require.</span></span>
-3. <span data-ttu-id="dd877-138">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="dd877-138">Select **OK**.</span></span>
-
-<span data-ttu-id="dd877-139">Hvis du vil have en oversigt over, hvor varen på den valgte linje bruges i relation til aktiver,typestandarder for vedligeholdelsesjob, reservedele og arbejdsordrer i Styring af aktiver, skal du vælge **Hvor er varen brugt?**.</span><span class="sxs-lookup"><span data-stu-id="dd877-139">To get an overview that shows where the item on the selected line is used in relation to assets, maintenance job type defaults, spare parts, and work orders in Asset Management, select **Item where used**.</span></span> <span data-ttu-id="dd877-140">Yderligere oplysninger om denne oversigt finder du under [Hvor er varen brugt?](../controlling-and-reporting/item-where-used.md).</span><span class="sxs-lookup"><span data-stu-id="dd877-140">For more information about this overview, see [Item where used](../controlling-and-reporting/item-where-used.md).</span></span>
+5. <span data-ttu-id="c4833-117">Vælg den gebyrtype, der skal bruges på linjen, i feltet **Linjeegenskab**.</span><span class="sxs-lookup"><span data-stu-id="c4833-117">In the **Line property** field, select the type of charge that should be used on the line.</span></span>
 
 
-## <a name="add-an-expense-forecast-to-a-work-order"></a><span data-ttu-id="dd877-141">Føje et udgiftsbudget til en arbejdsordre</span><span class="sxs-lookup"><span data-stu-id="dd877-141">Add an expense forecast to a work order</span></span>
+## <a name="add-an-items-forecast-to-a-work-order"></a><span data-ttu-id="c4833-118">Føje en vareprognose til en arbejdsordre</span><span class="sxs-lookup"><span data-stu-id="c4833-118">Add an items forecast to a work order</span></span>
 
-1. <span data-ttu-id="dd877-142">Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="dd877-142">On the **Work order maintenance forecast** page, select the work order job to add a forecast to.</span></span>
+<span data-ttu-id="c4833-119">Du kan føje varer til en vedligeholdelsesprognose for en arbejdsordre på tre måder.</span><span class="sxs-lookup"><span data-stu-id="c4833-119">There are three ways to add items to a work order maintenance forecast.</span></span> <span data-ttu-id="c4833-120">Du kan oprette linjer for varer (reservedele), der ikke er medtaget på listen over reservedele eller aktivstyklisten, du kan vælge reservedele på listen over godkendte reservedele, og du kan vælge varer fra aktivstyklisten.</span><span class="sxs-lookup"><span data-stu-id="c4833-120">You can create lines for items (spare parts) that aren't included on the spare parts list or the asset bill of materials (BOM), you can select spare parts from the approved spare parts list, or you can select items from the asset BOM.</span></span>
 
-2. <span data-ttu-id="dd877-143">I oversigtspanelet **Udgift** skal du vælge **Tilføj** for at oprette en ny linje.</span><span class="sxs-lookup"><span data-stu-id="dd877-143">On the **Expense** FastTab, select **Add** to create a line.</span></span>
+- <span data-ttu-id="c4833-121">Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="c4833-121">On the **Work order maintenance forecast** page, select the work order job to add a forecast to.</span></span>
 
-3. <span data-ttu-id="dd877-144">Vælg en kategori i feltet **Kategori**.</span><span class="sxs-lookup"><span data-stu-id="dd877-144">In the **Category** field, select a category.</span></span>
+- <span data-ttu-id="c4833-122">I oversigtspanelet **Varer** kan du føje varer til vedligeholdelsesprognosen ved at bruge den relevante metode.</span><span class="sxs-lookup"><span data-stu-id="c4833-122">On the **Items** FastTab, add items to the maintenance forecast by using the appropriate method.</span></span>
 
-4. <span data-ttu-id="dd877-145">Angiv antallet i feltet **Antal**.</span><span class="sxs-lookup"><span data-stu-id="dd877-145">In the **Quantity** field, enter the quantity.</span></span>
+<span data-ttu-id="c4833-123">Følg disse trin for at oprette en ny linje til en reservedel, der ikke findes på listen over reservedele eller aktivstyklisten:</span><span class="sxs-lookup"><span data-stu-id="c4833-123">To create a line for a spare part that isn't on the spare parts list or the asset BOM, follow these steps:</span></span>
 
-5. <span data-ttu-id="dd877-146">Indsæt relevante værdier i felterne **Kostpris**, **Salgsvaluta** og **Salgspris**.</span><span class="sxs-lookup"><span data-stu-id="dd877-146">In the **Cost price**, **Sales currency**, and **Sales price** fields, enter appropriate values.</span></span>
+1. <span data-ttu-id="c4833-124">Vælg **Tilføj**.</span><span class="sxs-lookup"><span data-stu-id="c4833-124">Select **Add**.</span></span>
+2. <span data-ttu-id="c4833-125">Vælg varen i feltet **Varenummer**.</span><span class="sxs-lookup"><span data-stu-id="c4833-125">In the **Item number** field, select the item.</span></span>
+3. <span data-ttu-id="c4833-126">Angiv antallet i feltet **Salgsantal**.</span><span class="sxs-lookup"><span data-stu-id="c4833-126">In the **Sales quantity** field, enter the quantity.</span></span>
+4. <span data-ttu-id="c4833-127">Vælg måleenheden for antallet i feltet **Enhed**.</span><span class="sxs-lookup"><span data-stu-id="c4833-127">In the **Unit** field, select the unit of measure for the quantity.</span></span>
+5. <span data-ttu-id="c4833-128">I felterne **Kostpris** og **Valuta** skal du angive relevante værdier.</span><span class="sxs-lookup"><span data-stu-id="c4833-128">In the **Cost price** and **Currency** fields, enter appropriate values.</span></span>
+6. <span data-ttu-id="c4833-129">Vælg en linjeegenskab i feltet **Linjeegenskab**.</span><span class="sxs-lookup"><span data-stu-id="c4833-129">In the **Line property** field, select a line property.</span></span>
+7. <span data-ttu-id="c4833-130">Hvis du vil ændre listen over de dimensioner, der vises på varelinjerne, skal du vælge **Lager** > **Vis dimensioner**, vælge dimensioner og indstille **Gem opsætning** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="c4833-130">To change the list of dimensions that is shown on the item lines, select **Inventory** > **Display dimensions**, select the dimensions, and then set the **Save setup** option to **Yes**.</span></span>
 
-6. <span data-ttu-id="dd877-147">Vælg den gebyrtype, der skal bruges på linjen, i feltet **Linjeegenskab**.</span><span class="sxs-lookup"><span data-stu-id="dd877-147">In the **Line property** field, select the type of charge that should be used on the line.</span></span>
+<span data-ttu-id="c4833-131">Hvis du vil tilføje en reservedel fra en godkendt reservedelsliste, skal du følge disse trin:</span><span class="sxs-lookup"><span data-stu-id="c4833-131">To add a spare part from an approved spare parts list, follow these steps:</span></span>
+
+1. <span data-ttu-id="c4833-132">Vælg **Tilføj reservedele**.</span><span class="sxs-lookup"><span data-stu-id="c4833-132">Select **Add spare parts**.</span></span>
+2. <span data-ttu-id="c4833-133">Vælg reservedelen, og rediger de relaterede oplysninger efter behov.</span><span class="sxs-lookup"><span data-stu-id="c4833-133">Select the spare part, and edit the related information as you require.</span></span>
+3. <span data-ttu-id="c4833-134">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="c4833-134">Select **OK**.</span></span>
+
+<span data-ttu-id="c4833-135">Udfør følgende trin for at tilføje en vare fra aktivstyklisten:</span><span class="sxs-lookup"><span data-stu-id="c4833-135">To add an item from the asset BOM, follow these steps:</span></span>
+
+1. <span data-ttu-id="c4833-136">Vælg **Tilføj styklistevarer**.</span><span class="sxs-lookup"><span data-stu-id="c4833-136">Select **Add BOM items**.</span></span>
+2. <span data-ttu-id="c4833-137">Vælg varen, og rediger de relaterede oplysninger efter behov.</span><span class="sxs-lookup"><span data-stu-id="c4833-137">Select the item, and edit the related information as you require.</span></span>
+3. <span data-ttu-id="c4833-138">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="c4833-138">Select **OK**.</span></span>
+
+<span data-ttu-id="c4833-139">Hvis du vil have en oversigt over, hvor varen på den valgte linje bruges i relation til aktiver,typestandarder for vedligeholdelsesjob, reservedele og arbejdsordrer i Styring af aktiver, skal du vælge **Hvor er varen brugt?**.</span><span class="sxs-lookup"><span data-stu-id="c4833-139">To get an overview that shows where the item on the selected line is used in relation to assets, maintenance job type defaults, spare parts, and work orders in Asset Management, select **Item where used**.</span></span> <span data-ttu-id="c4833-140">Yderligere oplysninger om denne oversigt finder du under [Hvor er varen brugt?](../controlling-and-reporting/item-where-used.md).</span><span class="sxs-lookup"><span data-stu-id="c4833-140">For more information about this overview, see [Item where used](../controlling-and-reporting/item-where-used.md).</span></span>
+
+
+## <a name="add-an-expense-forecast-to-a-work-order"></a><span data-ttu-id="c4833-141">Føje et udgiftsbudget til en arbejdsordre</span><span class="sxs-lookup"><span data-stu-id="c4833-141">Add an expense forecast to a work order</span></span>
+
+1. <span data-ttu-id="c4833-142">Vælg det arbejdsordrejob, der skal føjes et budget til, på siden **Vedligeholdelsesprognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="c4833-142">On the **Work order maintenance forecast** page, select the work order job to add a forecast to.</span></span>
+
+2. <span data-ttu-id="c4833-143">I oversigtspanelet **Udgift** skal du vælge **Tilføj** for at oprette en ny linje.</span><span class="sxs-lookup"><span data-stu-id="c4833-143">On the **Expense** FastTab, select **Add** to create a line.</span></span>
+
+3. <span data-ttu-id="c4833-144">Vælg en kategori i feltet **Kategori**.</span><span class="sxs-lookup"><span data-stu-id="c4833-144">In the **Category** field, select a category.</span></span>
+
+4. <span data-ttu-id="c4833-145">Angiv antallet i feltet **Antal**.</span><span class="sxs-lookup"><span data-stu-id="c4833-145">In the **Quantity** field, enter the quantity.</span></span>
+
+5. <span data-ttu-id="c4833-146">Indsæt relevante værdier i felterne **Kostpris**, **Salgsvaluta** og **Salgspris**.</span><span class="sxs-lookup"><span data-stu-id="c4833-146">In the **Cost price**, **Sales currency**, and **Sales price** fields, enter appropriate values.</span></span>
+
+6. <span data-ttu-id="c4833-147">Vælg den gebyrtype, der skal bruges på linjen, i feltet **Linjeegenskab**.</span><span class="sxs-lookup"><span data-stu-id="c4833-147">In the **Line property** field, select the type of charge that should be used on the line.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="dd877-148">I oversigtspanelet **Vedligeholdelsesprognosetotaler** vises en oversigt over antallet af linjer, der er oprettet for det valgte arbejdsordrejob og for arbejdsordren, i hvert oversigtspanel.</span><span class="sxs-lookup"><span data-stu-id="dd877-148">The **Maintenance forecast totals** FastTab shows an overview of the number of lines that have been created, for the selected work order job and for the work order, on each FastTab.</span></span> <span data-ttu-id="dd877-149">Du kan også se en total af de budgetterede arbejdstimer for arbejdsordrejobbet og arbejdsordren.</span><span class="sxs-lookup"><span data-stu-id="dd877-149">It also shows the total forecasted work hours for the work order job and the work order.</span></span>
+><span data-ttu-id="c4833-148">I oversigtspanelet **Vedligeholdelsesprognosetotaler** vises en oversigt over antallet af linjer, der er oprettet for det valgte arbejdsordrejob og for arbejdsordren, i hvert oversigtspanel.</span><span class="sxs-lookup"><span data-stu-id="c4833-148">The **Maintenance forecast totals** FastTab shows an overview of the number of lines that have been created, for the selected work order job and for the work order, on each FastTab.</span></span> <span data-ttu-id="c4833-149">Du kan også se en total af de budgetterede arbejdstimer for arbejdsordrejobbet og arbejdsordren.</span><span class="sxs-lookup"><span data-stu-id="c4833-149">It also shows the total forecasted work hours for the work order job and the work order.</span></span>
 
-<span data-ttu-id="dd877-150">I illustrationen herunder vises et eksempel på siden **Vedligeholdelsesprognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="dd877-150">The illustration below shows an example of the **Work order maintenance forecast** page.</span></span>
+<span data-ttu-id="c4833-150">I illustrationen herunder vises et eksempel på siden **Vedligeholdelsesprognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="c4833-150">The illustration below shows an example of the **Work order maintenance forecast** page.</span></span>
 
 ![Figur 1](media/06-work-orders.png)
 
 
-## <a name="automatic-update-of-work-order-forecasts"></a><span data-ttu-id="dd877-152">Automatisk opdatering af prognoser for arbejdsordrer</span><span class="sxs-lookup"><span data-stu-id="dd877-152">Automatic update of work order forecasts</span></span>
+## <a name="automatic-update-of-work-order-forecasts"></a><span data-ttu-id="c4833-152">Automatisk opdatering af prognoser for arbejdsordrer</span><span class="sxs-lookup"><span data-stu-id="c4833-152">Automatic update of work order forecasts</span></span>
 
-<span data-ttu-id="dd877-153">I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i arbejdsordrebudgetter for timeomkostninger, vareomkostninger og udgifter, der er opdateret i andre moduler i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dd877-153">If hour costs, item costs, and expenses are updated in other modules in Microsoft Dynamics 365 for Finance and Operations, work order forecasts in Asset Management can automatically be updated to reflect those changes.</span></span> <span data-ttu-id="dd877-154">Dette er med til at sikre, at de seneste kostpriser altid bruges i dine prognoser for arbejdsordrer.</span><span class="sxs-lookup"><span data-stu-id="dd877-154">This capability helps guarantee that the latest cost prices are always used in your work order forecasts.</span></span> <span data-ttu-id="dd877-155">Det er også muligt at foretage lignende opdateringer af [budgetter for vedligeholdelsesjobtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).</span><span class="sxs-lookup"><span data-stu-id="dd877-155">You can also do similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).</span></span>
+<span data-ttu-id="c4833-153">I Styring af aktiver kan du automatisk opdatere eventuelle ændringer i arbejdsordrebudgetter for timeomkostninger, vareomkostninger og udgifter, der er opdateret i andre moduler i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c4833-153">If hour costs, item costs, and expenses are updated in other modules in Microsoft Dynamics 365 for Finance and Operations, work order forecasts in Asset Management can automatically be updated to reflect those changes.</span></span> <span data-ttu-id="c4833-154">Dette er med til at sikre, at de seneste kostpriser altid bruges i dine prognoser for arbejdsordrer.</span><span class="sxs-lookup"><span data-stu-id="c4833-154">This capability helps guarantee that the latest cost prices are always used in your work order forecasts.</span></span> <span data-ttu-id="c4833-155">Det er også muligt at foretage lignende opdateringer af [budgetter for vedligeholdelsesjobtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).</span><span class="sxs-lookup"><span data-stu-id="c4833-155">You can also do similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).</span></span>
 
-1. <span data-ttu-id="dd877-156">Vælg **Styring af aktiver** > **Periodisk** > **Prognose** > **Opdater prognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="dd877-156">Select **Asset management** > **Periodic** > **Forecast** > **Update work order forecast**.</span></span>
+1. <span data-ttu-id="c4833-156">Vælg **Styring af aktiver** > **Periodisk** > **Prognose** > **Opdater prognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="c4833-156">Select **Asset management** > **Periodic** > **Forecast** > **Update work order forecast**.</span></span>
 
-2. <span data-ttu-id="dd877-157">I dialogboksen **Opdater prognose for arbejdsordre** i oversigtspanelet **Poster, der skal indgå** kan du tilføje valg for bestemte arbejdsordrer eller arbejdsordrejob efter behov.</span><span class="sxs-lookup"><span data-stu-id="dd877-157">In the **Update work order forecast** dialog, on the **Records to include** FastTab, you can add selections regarding specific work orders or work order jobs, as you require.</span></span> <span data-ttu-id="dd877-158">Klik på **Filter** for at foretage de relevante valg.</span><span class="sxs-lookup"><span data-stu-id="dd877-158">Click **Filter** to make the relevant selections.</span></span>
+2. <span data-ttu-id="c4833-157">I dialogboksen **Opdater prognose for arbejdsordre** i oversigtspanelet **Poster, der skal indgå** kan du tilføje valg for bestemte arbejdsordrer eller arbejdsordrejob efter behov.</span><span class="sxs-lookup"><span data-stu-id="c4833-157">In the **Update work order forecast** dialog, on the **Records to include** FastTab, you can add selections regarding specific work orders or work order jobs, as you require.</span></span> <span data-ttu-id="c4833-158">Klik på **Filter** for at foretage de relevante valg.</span><span class="sxs-lookup"><span data-stu-id="c4833-158">Click **Filter** to make the relevant selections.</span></span>
 
-3. <span data-ttu-id="dd877-159">I oversigtspanelet **Kør i baggrunden** kan du konfigurere automatisk opdatering som et batchjob efter behov.</span><span class="sxs-lookup"><span data-stu-id="dd877-159">On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.</span></span>
+3. <span data-ttu-id="c4833-159">I oversigtspanelet **Kør i baggrunden** kan du konfigurere automatisk opdatering som et batchjob efter behov.</span><span class="sxs-lookup"><span data-stu-id="c4833-159">On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.</span></span>
 
-4. <span data-ttu-id="dd877-160">Vælg **OK** for at starte budgetopdateringen.</span><span class="sxs-lookup"><span data-stu-id="dd877-160">Select **OK** to start the forecast update.</span></span>
+4. <span data-ttu-id="c4833-160">Vælg **OK** for at starte budgetopdateringen.</span><span class="sxs-lookup"><span data-stu-id="c4833-160">Select **OK** to start the forecast update.</span></span>
 
 
-<span data-ttu-id="dd877-161">I illustrationen herunder vises et eksempel på dialogboksen **Opdater prognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="dd877-161">The illustration below shows an example of the **Update work order forecast** dialog.</span></span>
+<span data-ttu-id="c4833-161">I illustrationen herunder vises et eksempel på dialogboksen **Opdater prognose for arbejdsordre**.</span><span class="sxs-lookup"><span data-stu-id="c4833-161">The illustration below shows an example of the **Update work order forecast** dialog.</span></span>
 
 ![Figur 2](media/07-work-orders.png)
 
