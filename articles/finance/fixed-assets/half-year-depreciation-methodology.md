@@ -2,11 +2,9 @@
 title: Metode for halvårligt afskrivningsprincip
 description: I dette emne beskrives den metode, som anlægsaktiver bruger til at beregne afskrivning ved hjælp af halvårsprincippet, der beregner seks måneders afskrivning i et aktivs første og sidste år i brug.
 author: moaamer
-manager: Ann Beebe
 ms.date: 08/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,30 +15,30 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: cb027513da086d882942c4677892b15cf8e7b338
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0e33128c37e970ebf5af87bd601ae30aef96952
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260799"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818577"
 ---
-# <a name="half-year-depreciation-convention-methodology"></a><span data-ttu-id="1eb0f-103">Metode for halvårligt afskrivningsprincip</span><span class="sxs-lookup"><span data-stu-id="1eb0f-103">Half-year depreciation convention methodology</span></span>
+# <a name="half-year-depreciation-convention-methodology"></a><span data-ttu-id="36d12-103">Metode for halvårligt afskrivningsprincip</span><span class="sxs-lookup"><span data-stu-id="36d12-103">Half-year depreciation convention methodology</span></span>
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="1eb0f-104">I dette emne beskrives den metode, der bruges i anlægsaktiver til at beregne afskrivninger ved hjælp af halvårsprincippet.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-104">This topic describes the method that is used in fixed assets to calculate depreciation using the half-year convention.</span></span> <span data-ttu-id="1eb0f-105">Det halvårlige princip beregner seks afskrivningsmåneder under et anlægs første og sidste år i brug.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-105">The half-year convention calculates six months of depreciation during an asset’s first and last year of service.</span></span> <span data-ttu-id="1eb0f-106">Du kan finde flere oplysninger om afskrivningsprincipper under [Afskrivningsmetoder og -principper](Fixed-asset-depreciation-conventions.md).</span><span class="sxs-lookup"><span data-stu-id="1eb0f-106">For more information about depreciation conventions, see [Depreciation methods and conventions](Fixed-asset-depreciation-conventions.md).</span></span> 
+<span data-ttu-id="36d12-104">I dette emne beskrives den metode, der bruges i anlægsaktiver til at beregne afskrivninger ved hjælp af halvårsprincippet.</span><span class="sxs-lookup"><span data-stu-id="36d12-104">This topic describes the method that is used in fixed assets to calculate depreciation using the half-year convention.</span></span> <span data-ttu-id="36d12-105">Det halvårlige princip beregner seks afskrivningsmåneder under et anlægs første og sidste år i brug.</span><span class="sxs-lookup"><span data-stu-id="36d12-105">The half-year convention calculates six months of depreciation during an asset’s first and last year of service.</span></span> <span data-ttu-id="36d12-106">Du kan finde flere oplysninger om afskrivningsprincipper under [Afskrivningsmetoder og -principper](Fixed-asset-depreciation-conventions.md).</span><span class="sxs-lookup"><span data-stu-id="36d12-106">For more information about depreciation conventions, see [Depreciation methods and conventions](Fixed-asset-depreciation-conventions.md).</span></span> 
 
-<span data-ttu-id="1eb0f-107">Når du bruger afskrivningsprincippet på seks måneder, bruger systemet anskaffelsesåret eller det år, hvor anlægsaktivet blev taget i brug, og beregner derefter fem års afskrivning fra det pågældende år og tilføjer derefter seks måneder.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-107">When you use the six-month depreciation convention, the system uses the acquisition year or the year that the asset was placed in service, then calculates five years of depreciation from that year, and then adds six months.</span></span> <span data-ttu-id="1eb0f-108">For at illustrere denne proces skal du forestille dig et aktiv, der er anskaffet til en pris af 50.000 og taget i brug i april 2020.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-108">To illustrate this process, consider an asset that was acquired for the price of 50,000, and placed in service in April 2020.</span></span> <span data-ttu-id="1eb0f-109">Det antages også, at aktivet har en levetid på fem år.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-109">Also assume that the asset has a five-year service life.</span></span>
+<span data-ttu-id="36d12-107">Når du bruger afskrivningsprincippet på seks måneder, bruger systemet anskaffelsesåret eller det år, hvor anlægsaktivet blev taget i brug, og beregner derefter fem års afskrivning fra det pågældende år og tilføjer derefter seks måneder.</span><span class="sxs-lookup"><span data-stu-id="36d12-107">When you use the six-month depreciation convention, the system uses the acquisition year or the year that the asset was placed in service, then calculates five years of depreciation from that year, and then adds six months.</span></span> <span data-ttu-id="36d12-108">For at illustrere denne proces skal du forestille dig et aktiv, der er anskaffet til en pris af 50.000 og taget i brug i april 2020.</span><span class="sxs-lookup"><span data-stu-id="36d12-108">To illustrate this process, consider an asset that was acquired for the price of 50,000, and placed in service in April 2020.</span></span> <span data-ttu-id="36d12-109">Det antages også, at aktivet har en levetid på fem år.</span><span class="sxs-lookup"><span data-stu-id="36d12-109">Also assume that the asset has a five-year service life.</span></span>
 
-<span data-ttu-id="1eb0f-110">Det første år, det er i brug, afsluttes i december 2020, hvilket betyder, at anlægsaktivets fem års levetid vil ophøre i december 2024.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-110">The first year of service will conclude in December 2020, which means the end of the asset’s five-year service life will be December 2024.</span></span> <span data-ttu-id="1eb0f-111">I det halvårlige afskrivningsprincip lægges der seks måneder til aktivets levetid, hvilket betyder, at levetiden slutter i juni 2025.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-111">The half-year depreciation convention will add six months to the asset’s life, which means its service life will end in June 2025.</span></span> 
+<span data-ttu-id="36d12-110">Det første år, det er i brug, afsluttes i december 2020, hvilket betyder, at anlægsaktivets fem års levetid vil ophøre i december 2024.</span><span class="sxs-lookup"><span data-stu-id="36d12-110">The first year of service will conclude in December 2020, which means the end of the asset’s five-year service life will be December 2024.</span></span> <span data-ttu-id="36d12-111">I det halvårlige afskrivningsprincip lægges der seks måneder til aktivets levetid, hvilket betyder, at levetiden slutter i juni 2025.</span><span class="sxs-lookup"><span data-stu-id="36d12-111">The half-year depreciation convention will add six months to the asset’s life, which means its service life will end in June 2025.</span></span> 
 
-> <span data-ttu-id="1eb0f-112">Årlig afskrivning 50.000/5 = 10.000 månedlig afskrivning 10.000/12 = 833,33</span><span class="sxs-lookup"><span data-stu-id="1eb0f-112">Yearly depreciation 50,000/5 = 10,000 monthly depreciation 10,000/12 = 833.33</span></span> <br>
-> <span data-ttu-id="1eb0f-113">Første års afskrivning 10.000/2 = 5.000 og den efterfølgende månedlige afskrivning 5.000/9 = 555,56</span><span class="sxs-lookup"><span data-stu-id="1eb0f-113">First year depreciation 10,000/2 = 5,000  and the subsequent monthly depreciation 5,000/9 = 555.56</span></span>
+> <span data-ttu-id="36d12-112">Årlig afskrivning 50.000/5 = 10.000 månedlig afskrivning 10.000/12 = 833,33</span><span class="sxs-lookup"><span data-stu-id="36d12-112">Yearly depreciation 50,000/5 = 10,000 monthly depreciation 10,000/12 = 833.33</span></span> <br>
+> <span data-ttu-id="36d12-113">Første års afskrivning 10.000/2 = 5.000 og den efterfølgende månedlige afskrivning 5.000/9 = 555,56</span><span class="sxs-lookup"><span data-stu-id="36d12-113">First year depreciation 10,000/2 = 5,000  and the subsequent monthly depreciation 5,000/9 = 555.56</span></span>
 
-   <span data-ttu-id="1eb0f-114">[![Afskrivningsplan for halvårligt afskrivningsprincip](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)</span><span class="sxs-lookup"><span data-stu-id="1eb0f-114">[![Depreciation schedule for half-year depreciation convention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)</span></span>
+   <span data-ttu-id="36d12-114">[![Afskrivningsplan for halvårligt afskrivningsprincip](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)</span><span class="sxs-lookup"><span data-stu-id="36d12-114">[![Depreciation schedule for half-year depreciation convention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)</span></span>
 
-<span data-ttu-id="1eb0f-115">De udvidede afskrivningsperioder, der tilføjes af halvårsprincippet, giver en mere præcis afskrivningsfordeling.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-115">The extended depreciation periods that are added by the half-year convention provide more accurate allocation of depreciation.</span></span> <span data-ttu-id="1eb0f-116">Seks måneders princippet fordeler afskrivningsudgifter mere ligeligt, hvilket er nyttigt ved rapportering til driftsregnskabet.</span><span class="sxs-lookup"><span data-stu-id="1eb0f-116">The six-month convention represents depreciation expenses more equally, which is useful for reporting on the profit and loss statement.</span></span>
+<span data-ttu-id="36d12-115">De udvidede afskrivningsperioder, der tilføjes af halvårsprincippet, giver en mere præcis afskrivningsfordeling.</span><span class="sxs-lookup"><span data-stu-id="36d12-115">The extended depreciation periods that are added by the half-year convention provide more accurate allocation of depreciation.</span></span> <span data-ttu-id="36d12-116">Seks måneders princippet fordeler afskrivningsudgifter mere ligeligt, hvilket er nyttigt ved rapportering til driftsregnskabet.</span><span class="sxs-lookup"><span data-stu-id="36d12-116">The six-month convention represents depreciation expenses more equally, which is useful for reporting on the profit and loss statement.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

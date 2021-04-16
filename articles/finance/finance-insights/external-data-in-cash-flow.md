@@ -2,11 +2,9 @@
 title: Bruge eksterne data i likviditetsbudgetter (prøveversion)
 description: I dette emne beskrives de opsætningstrin, du skal udføre, så eksterne data kan angives eller importeres i likviditetsbudgetter.
 author: rcarlson
-manager: AnnBe
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
@@ -17,51 +15,51 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 03318eaae0b3329dc758c48202f8f47ca2c4ab08
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7d5768a6cb2b3623333fab93a42ac5840e87ec68
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245562"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818603"
 ---
-# <a name="use-external-data-in-cash-flow-forecasts-preview"></a><span data-ttu-id="4b82b-103">Bruge eksterne data i likviditetsbudgetter (prøveversion)</span><span class="sxs-lookup"><span data-stu-id="4b82b-103">Use external data in cash flow forecasts (preview)</span></span>
+# <a name="use-external-data-in-cash-flow-forecasts-preview"></a><span data-ttu-id="fcdfa-103">Bruge eksterne data i likviditetsbudgetter (prøveversion)</span><span class="sxs-lookup"><span data-stu-id="fcdfa-103">Use external data in cash flow forecasts (preview)</span></span>
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="4b82b-104">Eksterne data kan indtastes eller importeres i likviditetsbudgetter.</span><span class="sxs-lookup"><span data-stu-id="4b82b-104">External data can be entered or imported into cash flow forecasts.</span></span> <span data-ttu-id="4b82b-105">I dette emne beskrives de opsætningstrin, der er specifikke for brugen af eksterne data, og som gør det muligt at inkludere de eksterne data i et likviditetsbudget.</span><span class="sxs-lookup"><span data-stu-id="4b82b-105">This topic describes the setup steps that are specific to the use of external data and that enable the external data to be included in a cash flow forecast.</span></span>
+<span data-ttu-id="fcdfa-104">Eksterne data kan indtastes eller importeres i likviditetsbudgetter.</span><span class="sxs-lookup"><span data-stu-id="fcdfa-104">External data can be entered or imported into cash flow forecasts.</span></span> <span data-ttu-id="fcdfa-105">I dette emne beskrives de opsætningstrin, der er specifikke for brugen af eksterne data, og som gør det muligt at inkludere de eksterne data i et likviditetsbudget.</span><span class="sxs-lookup"><span data-stu-id="fcdfa-105">This topic describes the setup steps that are specific to the use of external data and that enable the external data to be included in a cash flow forecast.</span></span>
 
-## <a name="external-data-setup"></a><span data-ttu-id="4b82b-106">Ekstern opsætning af data</span><span class="sxs-lookup"><span data-stu-id="4b82b-106">External data setup</span></span>
+## <a name="external-data-setup"></a><span data-ttu-id="fcdfa-106">Ekstern opsætning af data</span><span class="sxs-lookup"><span data-stu-id="fcdfa-106">External data setup</span></span>
 
-<span data-ttu-id="4b82b-107">Brug fanen **Ekstern kilde** på siden **Opsætning af likviditetsbudget** (**Likviditets- og bankstyring \> Likviditetsbudget**) til at angive indstillinger, der understøtter brugen af eksterne data i likviditetsbudgetter.</span><span class="sxs-lookup"><span data-stu-id="4b82b-107">Use the **External source** tab on the **Cash flow forecast setup** page (**Cash and bank management \> Cash flow forecasting**) to enter settings that support the use of external data in cash flow forecasts.</span></span>
+<span data-ttu-id="fcdfa-107">Brug fanen **Ekstern kilde** på siden **Opsætning af likviditetsbudget** (**Likviditets- og bankstyring \> Likviditetsbudget**) til at angive indstillinger, der understøtter brugen af eksterne data i likviditetsbudgetter.</span><span class="sxs-lookup"><span data-stu-id="fcdfa-107">Use the **External source** tab on the **Cash flow forecast setup** page (**Cash and bank management \> Cash flow forecasting**) to enter settings that support the use of external data in cash flow forecasts.</span></span>
 
-<span data-ttu-id="4b82b-108">Du kan finde flere oplysninger om opsætningen finder du i [Likviditetsbudget](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).</span><span class="sxs-lookup"><span data-stu-id="4b82b-108">For more information about the setup, see [Cash flow forecasting](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).</span></span>
+<span data-ttu-id="fcdfa-108">Du kan finde flere oplysninger om opsætningen finder du i [Likviditetsbudget](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).</span><span class="sxs-lookup"><span data-stu-id="fcdfa-108">For more information about the setup, see [Cash flow forecasting](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).</span></span>
 
-<span data-ttu-id="4b82b-109">Hvis du vil angive eksterne data til likviditetsbudgetter, kan du bruge funktionen Åbn i Excel til at indtaste og redigere eksterne data.</span><span class="sxs-lookup"><span data-stu-id="4b82b-109">To enter external data for cash flow forecasts, you can use the Open in Excel experience for entering and modifying external data.</span></span> <span data-ttu-id="4b82b-110">Vælg knappen **Eksterne data**, og vælg derefter enten **Tilføj eksterne data** eller **Rediger eksisterende eksterne data**.</span><span class="sxs-lookup"><span data-stu-id="4b82b-110">Select the **External data** button, and then select either **Add External Data** or **Edit existing external data**.</span></span> <span data-ttu-id="4b82b-111">Når Microsoft Excel-filen åbnes, kan du angive oplysninger i følgende felter:</span><span class="sxs-lookup"><span data-stu-id="4b82b-111">When the Microsoft Excel file is opened, you can enter information in the following fields:</span></span>
+<span data-ttu-id="fcdfa-109">Hvis du vil angive eksterne data til likviditetsbudgetter, kan du bruge funktionen Åbn i Excel til at indtaste og redigere eksterne data.</span><span class="sxs-lookup"><span data-stu-id="fcdfa-109">To enter external data for cash flow forecasts, you can use the Open in Excel experience for entering and modifying external data.</span></span> <span data-ttu-id="fcdfa-110">Vælg knappen **Eksterne data**, og vælg derefter enten **Tilføj eksterne data** eller **Rediger eksisterende eksterne data**.</span><span class="sxs-lookup"><span data-stu-id="fcdfa-110">Select the **External data** button, and then select either **Add External Data** or **Edit existing external data**.</span></span> <span data-ttu-id="fcdfa-111">Når Microsoft Excel-filen åbnes, kan du angive oplysninger i følgende felter:</span><span class="sxs-lookup"><span data-stu-id="fcdfa-111">When the Microsoft Excel file is opened, you can enter information in the following fields:</span></span>
 
-- <span data-ttu-id="4b82b-112">**Adgangskode**</span><span class="sxs-lookup"><span data-stu-id="4b82b-112">**Entry ID**</span></span>
-- <span data-ttu-id="4b82b-113">**Beskrivelse** (valgfri)</span><span class="sxs-lookup"><span data-stu-id="4b82b-113">**Description** (optional)</span></span>
-- <span data-ttu-id="4b82b-114">**Navn på ekstern kilde** – Vælg en af de værdier på listen, som du definerede, da du konfigurerede Finance Insights.</span><span class="sxs-lookup"><span data-stu-id="4b82b-114">**External Source name** – Select one of the values in the list that you defined when you set up Finance Insights.</span></span>
-- <span data-ttu-id="4b82b-115">**Juridisk enhed**</span><span class="sxs-lookup"><span data-stu-id="4b82b-115">**Legal Entity**</span></span>
-- <span data-ttu-id="4b82b-116">**Dato**</span><span class="sxs-lookup"><span data-stu-id="4b82b-116">**Date**</span></span>
-- <span data-ttu-id="4b82b-117">**Beløb i transaktionsvaluta**</span><span class="sxs-lookup"><span data-stu-id="4b82b-117">**Amount in transaction currency**</span></span>
-- <span data-ttu-id="4b82b-118">**Valutakode**</span><span class="sxs-lookup"><span data-stu-id="4b82b-118">**Currency Code**</span></span>
-- <span data-ttu-id="4b82b-119">**Standarddimension** (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="4b82b-119">**Default Dimension** (optional)</span></span>
-- <span data-ttu-id="4b82b-120">**Dokumentnummer** (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="4b82b-120">**Document number** (optional)</span></span>
-- <span data-ttu-id="4b82b-121">**Kontonummer** (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="4b82b-121">**Account number** (optional)</span></span>
-- <span data-ttu-id="4b82b-122">**Kontonavn** (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="4b82b-122">**Account name** (optional)</span></span>
+- <span data-ttu-id="fcdfa-112">**Adgangskode**</span><span class="sxs-lookup"><span data-stu-id="fcdfa-112">**Entry ID**</span></span>
+- <span data-ttu-id="fcdfa-113">**Beskrivelse** (valgfri)</span><span class="sxs-lookup"><span data-stu-id="fcdfa-113">**Description** (optional)</span></span>
+- <span data-ttu-id="fcdfa-114">**Navn på ekstern kilde** – Vælg en af de værdier på listen, som du definerede, da du konfigurerede Finance Insights.</span><span class="sxs-lookup"><span data-stu-id="fcdfa-114">**External Source name** – Select one of the values in the list that you defined when you set up Finance Insights.</span></span>
+- <span data-ttu-id="fcdfa-115">**Juridisk enhed**</span><span class="sxs-lookup"><span data-stu-id="fcdfa-115">**Legal Entity**</span></span>
+- <span data-ttu-id="fcdfa-116">**Dato**</span><span class="sxs-lookup"><span data-stu-id="fcdfa-116">**Date**</span></span>
+- <span data-ttu-id="fcdfa-117">**Beløb i transaktionsvaluta**</span><span class="sxs-lookup"><span data-stu-id="fcdfa-117">**Amount in transaction currency**</span></span>
+- <span data-ttu-id="fcdfa-118">**Valutakode**</span><span class="sxs-lookup"><span data-stu-id="fcdfa-118">**Currency Code**</span></span>
+- <span data-ttu-id="fcdfa-119">**Standarddimension** (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="fcdfa-119">**Default Dimension** (optional)</span></span>
+- <span data-ttu-id="fcdfa-120">**Dokumentnummer** (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="fcdfa-120">**Document number** (optional)</span></span>
+- <span data-ttu-id="fcdfa-121">**Kontonummer** (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="fcdfa-121">**Account number** (optional)</span></span>
+- <span data-ttu-id="fcdfa-122">**Kontonavn** (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="fcdfa-122">**Account name** (optional)</span></span>
 
-## <a name="importing-external-data-by-using-the-data-management-framework"></a><span data-ttu-id="4b82b-123">Importere eksterne data ved hjælp af data Management Framework</span><span class="sxs-lookup"><span data-stu-id="4b82b-123">Importing external data by using the Data Management framework</span></span>
+## <a name="importing-external-data-by-using-the-data-management-framework"></a><span data-ttu-id="fcdfa-123">Importere eksterne data ved hjælp af data Management Framework</span><span class="sxs-lookup"><span data-stu-id="fcdfa-123">Importing external data by using the Data Management framework</span></span>
 
-<span data-ttu-id="4b82b-124">Du kan importere eksterne data til likviditetsbudgetter ved hjælp af arbejdsområdet **Datastyring** og den enhed, der hedder **Eksternt likviditetsbudget**.</span><span class="sxs-lookup"><span data-stu-id="4b82b-124">You can import external data for cash flow forecasts by using the **Data Management** workspace and the entity that is named **Cash flow forecast external source entry**.</span></span>
+<span data-ttu-id="fcdfa-124">Du kan importere eksterne data til likviditetsbudgetter ved hjælp af arbejdsområdet **Datastyring** og den enhed, der hedder **Eksternt likviditetsbudget**.</span><span class="sxs-lookup"><span data-stu-id="fcdfa-124">You can import external data for cash flow forecasts by using the **Data Management** workspace and the entity that is named **Cash flow forecast external source entry**.</span></span>
 
-<span data-ttu-id="4b82b-125">Hvis du desuden skal flytte konfigurationsdata fra ét miljø til et andet, er området for følgende objekter tilgængelige for de opsætningstabeller, der er nødvendige:</span><span class="sxs-lookup"><span data-stu-id="4b82b-125">Additionally, if you must move setup data from one environment to another, the following entities area available for the setup tables that are required:</span></span>
+<span data-ttu-id="fcdfa-125">Hvis du desuden skal flytte konfigurationsdata fra ét miljø til et andet, er området for følgende objekter tilgængelige for de opsætningstabeller, der er nødvendige:</span><span class="sxs-lookup"><span data-stu-id="fcdfa-125">Additionally, if you must move setup data from one environment to another, the following entities area available for the setup tables that are required:</span></span>
 
-- <span data-ttu-id="4b82b-126">Konfiguration af ekstern kilde til likviditetsbudget</span><span class="sxs-lookup"><span data-stu-id="4b82b-126">Cash flow forecast external source setup</span></span>
-- <span data-ttu-id="4b82b-127">Konfiguration af ekstern kildes juridiske enhed til likviditetsbudget</span><span class="sxs-lookup"><span data-stu-id="4b82b-127">Cash flow forecast external source legal entity setup</span></span>
+- <span data-ttu-id="fcdfa-126">Konfiguration af ekstern kilde til likviditetsbudget</span><span class="sxs-lookup"><span data-stu-id="fcdfa-126">Cash flow forecast external source setup</span></span>
+- <span data-ttu-id="fcdfa-127">Konfiguration af ekstern kildes juridiske enhed til likviditetsbudget</span><span class="sxs-lookup"><span data-stu-id="fcdfa-127">Cash flow forecast external source legal entity setup</span></span>
 
-#### <a name="privacy-notice"></a><span data-ttu-id="4b82b-128">Erklæring om beskyttelse af personlige oplysninger</span><span class="sxs-lookup"><span data-stu-id="4b82b-128">Privacy notice</span></span>
-<span data-ttu-id="4b82b-129">Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.</span><span class="sxs-lookup"><span data-stu-id="4b82b-129">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
+#### <a name="privacy-notice"></a><span data-ttu-id="fcdfa-128">Erklæring om beskyttelse af personlige oplysninger</span><span class="sxs-lookup"><span data-stu-id="fcdfa-128">Privacy notice</span></span>
+<span data-ttu-id="fcdfa-129">Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.</span><span class="sxs-lookup"><span data-stu-id="fcdfa-129">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
