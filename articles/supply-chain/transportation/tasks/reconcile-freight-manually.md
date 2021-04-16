@@ -2,11 +2,9 @@
 title: Afstemme fragt manuelt
 description: Denne procedure viser, hvordan du afstemmer fragt manuelt.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile
 audience: Application User
@@ -16,49 +14,49 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: becda50b5d176ceb350c471b154aed1842c31a3b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0a0a5450697a09e5e54e74b35b2576eb6bbd4cdf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247184"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838508"
 ---
-# <a name="reconcile-freight-manually"></a><span data-ttu-id="d7246-103">Afstemme fragt manuelt</span><span class="sxs-lookup"><span data-stu-id="d7246-103">Reconcile freight manually</span></span>
+# <a name="reconcile-freight-manually"></a><span data-ttu-id="2b497-103">Afstemme fragt manuelt</span><span class="sxs-lookup"><span data-stu-id="2b497-103">Reconcile freight manually</span></span>
 
-<span data-ttu-id="d7246-104">[!include [banner](../../includes/banner.md)]]</span><span class="sxs-lookup"><span data-stu-id="d7246-104">[!include [banner](../../includes/banner.md)]]</span></span>
+<span data-ttu-id="2b497-104">[!include [banner](../../includes/banner.md)]]</span><span class="sxs-lookup"><span data-stu-id="2b497-104">[!include [banner](../../includes/banner.md)]]</span></span>
 
-<span data-ttu-id="d7246-105">Denne procedure viser, hvordan du afstemmer fragt manuelt.</span><span class="sxs-lookup"><span data-stu-id="d7246-105">This procedure shows how to reconcile freight manually.</span></span> <span data-ttu-id="d7246-106">Denne konfiguration vil normalt blive udført af en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="d7246-106">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="d7246-107">Du kan bruge denne procedure i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="d7246-107">You can use this procedure in the USMF demo data company.</span></span>
+<span data-ttu-id="2b497-105">Denne procedure viser, hvordan du afstemmer fragt manuelt.</span><span class="sxs-lookup"><span data-stu-id="2b497-105">This procedure shows how to reconcile freight manually.</span></span> <span data-ttu-id="2b497-106">Denne konfiguration vil normalt blive udført af en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="2b497-106">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="2b497-107">Du kan bruge denne procedure i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="2b497-107">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-a-load-to-reconcile"></a><span data-ttu-id="d7246-108">Vælg en last, der skal afstemmes</span><span class="sxs-lookup"><span data-stu-id="d7246-108">Select a load to reconcile</span></span>
-1. <span data-ttu-id="d7246-109">Gå til Transportstyring > Planlægning > Lastplanlægningspanel.</span><span class="sxs-lookup"><span data-stu-id="d7246-109">Go to Transportation management > Planning > Load planning workbench.</span></span>
-2. <span data-ttu-id="d7246-110">Fjern markeringen i afkrydsningsfeltet Skjul leverede og modtagne.</span><span class="sxs-lookup"><span data-stu-id="d7246-110">Clear the Hide shipped and received check box.</span></span> 
-3. <span data-ttu-id="d7246-111">Vælg på listen den last, som har last-id'et 00006.</span><span class="sxs-lookup"><span data-stu-id="d7246-111">In the list, select the load that has load ID 00006.</span></span>
+## <a name="select-a-load-to-reconcile"></a><span data-ttu-id="2b497-108">Vælg en last, der skal afstemmes</span><span class="sxs-lookup"><span data-stu-id="2b497-108">Select a load to reconcile</span></span>
+1. <span data-ttu-id="2b497-109">Gå til Transportstyring > Planlægning > Lastplanlægningspanel.</span><span class="sxs-lookup"><span data-stu-id="2b497-109">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="2b497-110">Fjern markeringen i afkrydsningsfeltet Skjul leverede og modtagne.</span><span class="sxs-lookup"><span data-stu-id="2b497-110">Clear the Hide shipped and received check box.</span></span> 
+3. <span data-ttu-id="2b497-111">Vælg på listen den last, som har last-id'et 00006.</span><span class="sxs-lookup"><span data-stu-id="2b497-111">In the list, select the load that has load ID 00006.</span></span>
 
-## <a name="create-a-carrier-invoice"></a><span data-ttu-id="d7246-112">Oprette en faktura fra fragtmand</span><span class="sxs-lookup"><span data-stu-id="d7246-112">Create a carrier invoice</span></span>
-<span data-ttu-id="d7246-113">Hvis du manuelt afstemmer fragt og ikke automatisk modtager fakturaer fra fragtmænd, kan du oprette en faktura ud fra fragtbrevet.</span><span class="sxs-lookup"><span data-stu-id="d7246-113">If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.</span></span>  
-1. <span data-ttu-id="d7246-114">Klik på Relaterede oplysninger.</span><span class="sxs-lookup"><span data-stu-id="d7246-114">Click Related information.</span></span>
-2. <span data-ttu-id="d7246-115">Klik på Fragtbrevsdetaljer.</span><span class="sxs-lookup"><span data-stu-id="d7246-115">Click Freight bill details.</span></span>
-3. <span data-ttu-id="d7246-116">Klik på Generér fragtbrevsfaktura.</span><span class="sxs-lookup"><span data-stu-id="d7246-116">Click Generate freight bill invoice.</span></span>
-4. <span data-ttu-id="d7246-117">Skriv en værdi i feltet Faktura.</span><span class="sxs-lookup"><span data-stu-id="d7246-117">In the Invoice field, type a value.</span></span>
-5. <span data-ttu-id="d7246-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d7246-118">Click OK.</span></span>
+## <a name="create-a-carrier-invoice"></a><span data-ttu-id="2b497-112">Oprette en faktura fra fragtmand</span><span class="sxs-lookup"><span data-stu-id="2b497-112">Create a carrier invoice</span></span>
+<span data-ttu-id="2b497-113">Hvis du manuelt afstemmer fragt og ikke automatisk modtager fakturaer fra fragtmænd, kan du oprette en faktura ud fra fragtbrevet.</span><span class="sxs-lookup"><span data-stu-id="2b497-113">If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.</span></span>  
+1. <span data-ttu-id="2b497-114">Klik på Relaterede oplysninger.</span><span class="sxs-lookup"><span data-stu-id="2b497-114">Click Related information.</span></span>
+2. <span data-ttu-id="2b497-115">Klik på Fragtbrevsdetaljer.</span><span class="sxs-lookup"><span data-stu-id="2b497-115">Click Freight bill details.</span></span>
+3. <span data-ttu-id="2b497-116">Klik på Generér fragtbrevsfaktura.</span><span class="sxs-lookup"><span data-stu-id="2b497-116">Click Generate freight bill invoice.</span></span>
+4. <span data-ttu-id="2b497-117">Skriv en værdi i feltet Faktura.</span><span class="sxs-lookup"><span data-stu-id="2b497-117">In the Invoice field, type a value.</span></span>
+5. <span data-ttu-id="2b497-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="2b497-118">Click OK.</span></span>
 
-## <a name="reconcile-the-invoice"></a><span data-ttu-id="d7246-119">Afstem fakturaen</span><span class="sxs-lookup"><span data-stu-id="d7246-119">Reconcile the invoice</span></span>
-<span data-ttu-id="d7246-120">Når du afstemmer en fragtfaktura og et fragtbrev, kan du gøre det linje for linje.</span><span class="sxs-lookup"><span data-stu-id="d7246-120">When you reconcile a carrier invoice and a freight bill, this is done line by line.</span></span>  
-1. <span data-ttu-id="d7246-121">Klik på Afstem fragtbreve og fakturaer.</span><span class="sxs-lookup"><span data-stu-id="d7246-121">Click Match freight bills and invoices.</span></span>
-2. <span data-ttu-id="d7246-122">Udvid sektionen Fakturadetaljer.</span><span class="sxs-lookup"><span data-stu-id="d7246-122">Expand the Invoice details section.</span></span>
-3. <span data-ttu-id="d7246-123">Udvid sektionen Oplysninger om uafstemte fragtbreve.</span><span class="sxs-lookup"><span data-stu-id="d7246-123">Expand the Unmatched freight bill details section.</span></span>
-4. <span data-ttu-id="d7246-124">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="d7246-124">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="d7246-125">Klik på Afstem.</span><span class="sxs-lookup"><span data-stu-id="d7246-125">Click Match.</span></span>
-6. <span data-ttu-id="d7246-126">Udvid sektionen Oplysninger om afstemte fragtbreve.</span><span class="sxs-lookup"><span data-stu-id="d7246-126">Expand the Matched freight bill details section.</span></span>
+## <a name="reconcile-the-invoice"></a><span data-ttu-id="2b497-119">Afstem fakturaen</span><span class="sxs-lookup"><span data-stu-id="2b497-119">Reconcile the invoice</span></span>
+<span data-ttu-id="2b497-120">Når du afstemmer en fragtfaktura og et fragtbrev, kan du gøre det linje for linje.</span><span class="sxs-lookup"><span data-stu-id="2b497-120">When you reconcile a carrier invoice and a freight bill, this is done line by line.</span></span>  
+1. <span data-ttu-id="2b497-121">Klik på Afstem fragtbreve og fakturaer.</span><span class="sxs-lookup"><span data-stu-id="2b497-121">Click Match freight bills and invoices.</span></span>
+2. <span data-ttu-id="2b497-122">Udvid sektionen Fakturadetaljer.</span><span class="sxs-lookup"><span data-stu-id="2b497-122">Expand the Invoice details section.</span></span>
+3. <span data-ttu-id="2b497-123">Udvid sektionen Oplysninger om uafstemte fragtbreve.</span><span class="sxs-lookup"><span data-stu-id="2b497-123">Expand the Unmatched freight bill details section.</span></span>
+4. <span data-ttu-id="2b497-124">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="2b497-124">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="2b497-125">Klik på Afstem.</span><span class="sxs-lookup"><span data-stu-id="2b497-125">Click Match.</span></span>
+6. <span data-ttu-id="2b497-126">Udvid sektionen Oplysninger om afstemte fragtbreve.</span><span class="sxs-lookup"><span data-stu-id="2b497-126">Expand the Matched freight bill details section.</span></span>
 
-## <a name="submit-the-invoice-for-approval"></a><span data-ttu-id="d7246-127">Send fakturaen til godkendelse</span><span class="sxs-lookup"><span data-stu-id="d7246-127">Submit the invoice for approval</span></span>
-1. <span data-ttu-id="d7246-128">Klik på Send til godkendelse.</span><span class="sxs-lookup"><span data-stu-id="d7246-128">Click Submit for approval.</span></span>
-2. <span data-ttu-id="d7246-129">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d7246-129">Close the page.</span></span>
-3. <span data-ttu-id="d7246-130">Fjern markeringen i afkrydsningsfeltet Skjul godkendte.</span><span class="sxs-lookup"><span data-stu-id="d7246-130">Clear the Hide approved check box.</span></span> 
-4. <span data-ttu-id="d7246-131">Klik på Kreditorfakturajournaler.</span><span class="sxs-lookup"><span data-stu-id="d7246-131">Click Vendor invoice journals.</span></span>
-5. <span data-ttu-id="d7246-132">Klik for at følge linket i feltet Referencekladdenummer.</span><span class="sxs-lookup"><span data-stu-id="d7246-132">Click to follow the link in the Reference journal number field.</span></span>
-6. <span data-ttu-id="d7246-133">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="d7246-133">Click Lines.</span></span>
+## <a name="submit-the-invoice-for-approval"></a><span data-ttu-id="2b497-127">Send fakturaen til godkendelse</span><span class="sxs-lookup"><span data-stu-id="2b497-127">Submit the invoice for approval</span></span>
+1. <span data-ttu-id="2b497-128">Klik på Send til godkendelse.</span><span class="sxs-lookup"><span data-stu-id="2b497-128">Click Submit for approval.</span></span>
+2. <span data-ttu-id="2b497-129">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2b497-129">Close the page.</span></span>
+3. <span data-ttu-id="2b497-130">Fjern markeringen i afkrydsningsfeltet Skjul godkendte.</span><span class="sxs-lookup"><span data-stu-id="2b497-130">Clear the Hide approved check box.</span></span> 
+4. <span data-ttu-id="2b497-131">Klik på Kreditorfakturajournaler.</span><span class="sxs-lookup"><span data-stu-id="2b497-131">Click Vendor invoice journals.</span></span>
+5. <span data-ttu-id="2b497-132">Klik for at følge linket i feltet Referencekladdenummer.</span><span class="sxs-lookup"><span data-stu-id="2b497-132">Click to follow the link in the Reference journal number field.</span></span>
+6. <span data-ttu-id="2b497-133">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="2b497-133">Click Lines.</span></span>
 
 
 
