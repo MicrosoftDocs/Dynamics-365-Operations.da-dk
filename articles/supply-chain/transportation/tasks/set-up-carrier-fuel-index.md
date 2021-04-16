@@ -2,11 +2,9 @@
 title: Konfigurere et brændstofindeks for fragtmand
 description: Denne vejledning viser, hvordan du opretter et område for brændstofindeks, et brændstofindeks og fragtmandens brændstofindeks.
 author: ShylaThompson
-manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFuelIndexRegion,TMSCarrierFuelIndexTable,TMSFuelIndex
 audience: Application User
@@ -16,55 +14,55 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09dc948e673bb8be49ac81e5ad2b20bc6c62b286
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c1e972f2ba8211c47b11a4b83dac9ff60f813b1a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233649"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837571"
 ---
-# <a name="set-up-a-carrier-fuel-index"></a><span data-ttu-id="79373-103">Konfigurere et brændstofindeks for fragtmand</span><span class="sxs-lookup"><span data-stu-id="79373-103">Set up a carrier fuel index</span></span>
+# <a name="set-up-a-carrier-fuel-index"></a><span data-ttu-id="8cc04-103">Konfigurere et brændstofindeks for fragtmand</span><span class="sxs-lookup"><span data-stu-id="8cc04-103">Set up a carrier fuel index</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="79373-104">Denne vejledning viser, hvordan du opretter et område for brændstofindeks, et brændstofindeks og fragtmandens brændstofindeks.</span><span class="sxs-lookup"><span data-stu-id="79373-104">This guide shows how to create a fuel index region, a fuel index and a carrier fuel index.</span></span> <span data-ttu-id="79373-105">Området for brændstofindeks angiver hvilket område brændstofindekset skal gælde for, og brændstofindekset angiver en brændstofpris for en bestemt tidsperiode.</span><span class="sxs-lookup"><span data-stu-id="79373-105">The fuel index region specifies which region the fuel index should apply to, and the fuel index specifies a fuel price for a particular period of time.</span></span> <span data-ttu-id="79373-106">For at afspejle ændringer i brændstofpriser over tid kan du knytte flere brændstofindekser til en fragtmand.</span><span class="sxs-lookup"><span data-stu-id="79373-106">To reflect the change in fuel prices over time, you can associate multiple fuel indexes with a carrier.</span></span>  <span data-ttu-id="79373-107">Disse opgaver udføres normalt af en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="79373-107">These tasks are normally done by a transportation coordinator.</span></span> <span data-ttu-id="79373-108">Du kan bruge denne procedure i USMF-demodatafirmaet eller ved at bruge dine egne data.</span><span class="sxs-lookup"><span data-stu-id="79373-108">You can use this procedure in demo data company USMF or using your own data.</span></span>
+<span data-ttu-id="8cc04-104">Denne vejledning viser, hvordan du opretter et område for brændstofindeks, et brændstofindeks og fragtmandens brændstofindeks.</span><span class="sxs-lookup"><span data-stu-id="8cc04-104">This guide shows how to create a fuel index region, a fuel index and a carrier fuel index.</span></span> <span data-ttu-id="8cc04-105">Området for brændstofindeks angiver hvilket område brændstofindekset skal gælde for, og brændstofindekset angiver en brændstofpris for en bestemt tidsperiode.</span><span class="sxs-lookup"><span data-stu-id="8cc04-105">The fuel index region specifies which region the fuel index should apply to, and the fuel index specifies a fuel price for a particular period of time.</span></span> <span data-ttu-id="8cc04-106">For at afspejle ændringer i brændstofpriser over tid kan du knytte flere brændstofindekser til en fragtmand.</span><span class="sxs-lookup"><span data-stu-id="8cc04-106">To reflect the change in fuel prices over time, you can associate multiple fuel indexes with a carrier.</span></span>  <span data-ttu-id="8cc04-107">Disse opgaver udføres normalt af en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="8cc04-107">These tasks are normally done by a transportation coordinator.</span></span> <span data-ttu-id="8cc04-108">Du kan bruge denne procedure i USMF-demodatafirmaet eller ved at bruge dine egne data.</span><span class="sxs-lookup"><span data-stu-id="8cc04-108">You can use this procedure in demo data company USMF or using your own data.</span></span>
 
 
-## <a name="create-a-fuel-index-region"></a><span data-ttu-id="79373-109">Opret et område for brændstofindeks</span><span class="sxs-lookup"><span data-stu-id="79373-109">Create a fuel index region</span></span>
-1. <span data-ttu-id="79373-110">Gå til Transportstyring > Opsætning > Brændstofindekser > Områder for brændstofindeks.</span><span class="sxs-lookup"><span data-stu-id="79373-110">Go to Transportation management > Setup > Fuel indexes > Fuel index regions.</span></span>
-    * <span data-ttu-id="79373-111">Først er det nødvendigt at oprette forskellige områder, hvor du bruger og beregner forskellige brændstoftillæg.</span><span class="sxs-lookup"><span data-stu-id="79373-111">First you have to create the different regions, where you operate and calculate different fuel surcharges.</span></span>  
-2. <span data-ttu-id="79373-112">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="79373-112">Click New.</span></span>
-3. <span data-ttu-id="79373-113">Skriv en værdi i feltet Område.</span><span class="sxs-lookup"><span data-stu-id="79373-113">In the Region field, type a value.</span></span>
-4. <span data-ttu-id="79373-114">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="79373-114">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="79373-115">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="79373-115">Click Save.</span></span>
+## <a name="create-a-fuel-index-region"></a><span data-ttu-id="8cc04-109">Opret et område for brændstofindeks</span><span class="sxs-lookup"><span data-stu-id="8cc04-109">Create a fuel index region</span></span>
+1. <span data-ttu-id="8cc04-110">Gå til Transportstyring > Opsætning > Brændstofindekser > Områder for brændstofindeks.</span><span class="sxs-lookup"><span data-stu-id="8cc04-110">Go to Transportation management > Setup > Fuel indexes > Fuel index regions.</span></span>
+    * <span data-ttu-id="8cc04-111">Først er det nødvendigt at oprette forskellige områder, hvor du bruger og beregner forskellige brændstoftillæg.</span><span class="sxs-lookup"><span data-stu-id="8cc04-111">First you have to create the different regions, where you operate and calculate different fuel surcharges.</span></span>  
+2. <span data-ttu-id="8cc04-112">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8cc04-112">Click New.</span></span>
+3. <span data-ttu-id="8cc04-113">Skriv en værdi i feltet Område.</span><span class="sxs-lookup"><span data-stu-id="8cc04-113">In the Region field, type a value.</span></span>
+4. <span data-ttu-id="8cc04-114">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="8cc04-114">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="8cc04-115">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8cc04-115">Click Save.</span></span>
 
-## <a name="create-a-fuel-index"></a><span data-ttu-id="79373-116">Oprette et brændstofindeks</span><span class="sxs-lookup"><span data-stu-id="79373-116">Create a fuel index</span></span>
-1. <span data-ttu-id="79373-117">Gå til Transportstyring > Opsætning > Brændstofindekser > Brændstofindekser.</span><span class="sxs-lookup"><span data-stu-id="79373-117">Go to Transportation management > Setup > Fuel indexes > Fuel indexes.</span></span>
-    * <span data-ttu-id="79373-118">Du skal angive de aktuelle priser for brændstof for de områder, du har oprettet.</span><span class="sxs-lookup"><span data-stu-id="79373-118">For the regions you have set up you need to enter the current prices for the fuel.</span></span>  
-2. <span data-ttu-id="79373-119">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="79373-119">Click New.</span></span>
-3. <span data-ttu-id="79373-120">Klik på rullelisten i feltet Område for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="79373-120">In the Region field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="79373-121">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="79373-121">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="79373-122">Angiv et tal i feltet Pris pr. gallon.</span><span class="sxs-lookup"><span data-stu-id="79373-122">In the Price per gallon field, enter a number.</span></span>
-6. <span data-ttu-id="79373-123">Angiv en dato og et klokkeslæt i feltet Gældende startdato og -klokkeslæt.</span><span class="sxs-lookup"><span data-stu-id="79373-123">In the Effective start date and time field, enter a date and time.</span></span>
-7. <span data-ttu-id="79373-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="79373-124">Click Save.</span></span>
+## <a name="create-a-fuel-index"></a><span data-ttu-id="8cc04-116">Oprette et brændstofindeks</span><span class="sxs-lookup"><span data-stu-id="8cc04-116">Create a fuel index</span></span>
+1. <span data-ttu-id="8cc04-117">Gå til Transportstyring > Opsætning > Brændstofindekser > Brændstofindekser.</span><span class="sxs-lookup"><span data-stu-id="8cc04-117">Go to Transportation management > Setup > Fuel indexes > Fuel indexes.</span></span>
+    * <span data-ttu-id="8cc04-118">Du skal angive de aktuelle priser for brændstof for de områder, du har oprettet.</span><span class="sxs-lookup"><span data-stu-id="8cc04-118">For the regions you have set up you need to enter the current prices for the fuel.</span></span>  
+2. <span data-ttu-id="8cc04-119">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8cc04-119">Click New.</span></span>
+3. <span data-ttu-id="8cc04-120">Klik på rullelisten i feltet Område for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="8cc04-120">In the Region field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="8cc04-121">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8cc04-121">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="8cc04-122">Angiv et tal i feltet Pris pr. gallon.</span><span class="sxs-lookup"><span data-stu-id="8cc04-122">In the Price per gallon field, enter a number.</span></span>
+6. <span data-ttu-id="8cc04-123">Angiv en dato og et klokkeslæt i feltet Gældende startdato og -klokkeslæt.</span><span class="sxs-lookup"><span data-stu-id="8cc04-123">In the Effective start date and time field, enter a date and time.</span></span>
+7. <span data-ttu-id="8cc04-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8cc04-124">Click Save.</span></span>
 
-## <a name="create-a-carrier-fuel-index"></a><span data-ttu-id="79373-125">Opret et Brændstofindeks for fragt</span><span class="sxs-lookup"><span data-stu-id="79373-125">Create a Carrier fuel index</span></span>
-1. <span data-ttu-id="79373-126">Gå til Transportstyring > Opsætning > Brændstofindekser > Brændstofindeks for fragt.</span><span class="sxs-lookup"><span data-stu-id="79373-126">Go to Transportation management > Setup > Fuel indexes > Carrier fuel indexes.</span></span>
-2. <span data-ttu-id="79373-127">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="79373-127">Click New.</span></span>
-3. <span data-ttu-id="79373-128">Indtast en værdi i feltet Brændstofindeks for fragt.</span><span class="sxs-lookup"><span data-stu-id="79373-128">In the Carrier fuel index field, type a value.</span></span>
-4. <span data-ttu-id="79373-129">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="79373-129">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="79373-130">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="79373-130">Click New.</span></span>
-6. <span data-ttu-id="79373-131">Angiv en dato og et klokkeslæt i feltet Gældende startdato og -klokkeslæt.</span><span class="sxs-lookup"><span data-stu-id="79373-131">In the Effective start date and time field, enter a date and time.</span></span>
-7. <span data-ttu-id="79373-132">Angiv et tal i feltet PGG fra.</span><span class="sxs-lookup"><span data-stu-id="79373-132">In the PPG From field, enter a number.</span></span>
-    * <span data-ttu-id="79373-133">I dette eksempel kan du angive feltet PPG fra til 1.95.</span><span class="sxs-lookup"><span data-stu-id="79373-133">In this example, you can set PPG From field to 1.95.</span></span>  
-8. <span data-ttu-id="79373-134">Angiv et tal i feltet PGG til.</span><span class="sxs-lookup"><span data-stu-id="79373-134">In the PPG To field, enter a number.</span></span>
-    * <span data-ttu-id="79373-135">I dette eksempel kan du angive feltet PPG til til 2.</span><span class="sxs-lookup"><span data-stu-id="79373-135">In this example you can set the PPG To field to 2.</span></span>  
-9. <span data-ttu-id="79373-136">Angiv et tal i feltet Procent.</span><span class="sxs-lookup"><span data-stu-id="79373-136">In the Percentage field, enter a number.</span></span>
-    * <span data-ttu-id="79373-137">I dette eksempel kan du angive procenten til 3.</span><span class="sxs-lookup"><span data-stu-id="79373-137">In this example you can set the percentage to 3.</span></span>  
-10. <span data-ttu-id="79373-138">Klik på rullelisten i feltet Valuta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="79373-138">In the Currency field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="79373-139">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="79373-139">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="79373-140">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="79373-140">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="79373-141">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="79373-141">Click Save.</span></span>
+## <a name="create-a-carrier-fuel-index"></a><span data-ttu-id="8cc04-125">Opret et Brændstofindeks for fragt</span><span class="sxs-lookup"><span data-stu-id="8cc04-125">Create a Carrier fuel index</span></span>
+1. <span data-ttu-id="8cc04-126">Gå til Transportstyring > Opsætning > Brændstofindekser > Brændstofindeks for fragt.</span><span class="sxs-lookup"><span data-stu-id="8cc04-126">Go to Transportation management > Setup > Fuel indexes > Carrier fuel indexes.</span></span>
+2. <span data-ttu-id="8cc04-127">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8cc04-127">Click New.</span></span>
+3. <span data-ttu-id="8cc04-128">Indtast en værdi i feltet Brændstofindeks for fragt.</span><span class="sxs-lookup"><span data-stu-id="8cc04-128">In the Carrier fuel index field, type a value.</span></span>
+4. <span data-ttu-id="8cc04-129">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="8cc04-129">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="8cc04-130">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8cc04-130">Click New.</span></span>
+6. <span data-ttu-id="8cc04-131">Angiv en dato og et klokkeslæt i feltet Gældende startdato og -klokkeslæt.</span><span class="sxs-lookup"><span data-stu-id="8cc04-131">In the Effective start date and time field, enter a date and time.</span></span>
+7. <span data-ttu-id="8cc04-132">Angiv et tal i feltet PGG fra.</span><span class="sxs-lookup"><span data-stu-id="8cc04-132">In the PPG From field, enter a number.</span></span>
+    * <span data-ttu-id="8cc04-133">I dette eksempel kan du angive feltet PPG fra til 1.95.</span><span class="sxs-lookup"><span data-stu-id="8cc04-133">In this example, you can set PPG From field to 1.95.</span></span>  
+8. <span data-ttu-id="8cc04-134">Angiv et tal i feltet PGG til.</span><span class="sxs-lookup"><span data-stu-id="8cc04-134">In the PPG To field, enter a number.</span></span>
+    * <span data-ttu-id="8cc04-135">I dette eksempel kan du angive feltet PPG til til 2.</span><span class="sxs-lookup"><span data-stu-id="8cc04-135">In this example you can set the PPG To field to 2.</span></span>  
+9. <span data-ttu-id="8cc04-136">Angiv et tal i feltet Procent.</span><span class="sxs-lookup"><span data-stu-id="8cc04-136">In the Percentage field, enter a number.</span></span>
+    * <span data-ttu-id="8cc04-137">I dette eksempel kan du angive procenten til 3.</span><span class="sxs-lookup"><span data-stu-id="8cc04-137">In this example you can set the percentage to 3.</span></span>  
+10. <span data-ttu-id="8cc04-138">Klik på rullelisten i feltet Valuta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="8cc04-138">In the Currency field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="8cc04-139">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8cc04-139">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="8cc04-140">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8cc04-140">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="8cc04-141">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8cc04-141">Click Save.</span></span>
 
 
 
