@@ -2,11 +2,9 @@
 title: Oprette arbejdsordrer
 description: Dette emne beskriver, hvordan du opretter arbejdsordrer i Styring af aktiver.
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500568"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836728"
 ---
 # <a name="creating-work-orders"></a>Oprette arbejdsordrer
 
@@ -62,8 +60,6 @@ Hvis du vil oprette arbejdsordrer, der er baseret på din vedligeholdelsestidspl
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Gruppere arbejdsordrelinjer, som oprettes automatisk, mens vedligeholdelsesplanen køres
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Denne funktion giver dig mulighed for at definere regler for gruppering af arbejdsordrelinjer under en enkelt arbejdsordre, når systemet er konfigureret til at generere arbejdsordrer automatisk på baggrund af en vedligeholdelsesplan. Tidligere kunne automatisk genererede arbejdsordrer kun indeholde én linje. Men du kan nu gruppere arbejdsordrer efter f.eks. aktiv, aktivtype eller arbejdssted. (Manuelt genererede arbejdsordrer kan allerede være grupperet på denne måde som beskrevet i forrige afsnit i dette emne).
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Aktivere gruppering for automatisk genererede arbejdsordrer
@@ -71,7 +67,7 @@ Denne funktion giver dig mulighed for at definere regler for gruppering af arbej
 Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Aktivadministration*
-- **Funktionsnavn:** *(forhåndsversion) Anvende regler for gruppering af arbejdsordrer, mens en vedligeholdelsesplan køres*
+- **Funktionsnavn:** *Anvende regler for gruppering af arbejdsordrer, mens en vedligeholdelsesplan køres*
 
 ### <a name="set-up-grouping-for-automatically-generated-work-orders"></a>Konfigurere gruppering for automatisk genererede arbejdsordrer
 

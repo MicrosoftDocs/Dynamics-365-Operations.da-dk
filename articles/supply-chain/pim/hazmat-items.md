@@ -2,11 +2,9 @@
 title: Farlige materialer i produkter, ordrer, forsendelser og laster
 description: Dette emne forklarer, hvordan du angiver egenskaber for farligt materiale for frigivne produkter, hvordan du kan lægge lagergrænser på farlige varer, og hvordan farligt materiale medtages i en salgsordre, forsendelse eller last.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 7e0564802bc53ce21236ffc6ed065bf6abac7c78
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b0fb2f77b4e95c90e3eb8a4c74929deead34de5c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243147"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829396"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Farlige materialer i produkter, ordrer, forsendelser og laster
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne forklarer, hvordan du angiver egenskaber for farligt materiale for frigivne produkter, hvordan du kan lægge lagergrænser på farlige varer, og hvordan farligt materiale medtages i en salgsordre, forsendelse eller last.
 

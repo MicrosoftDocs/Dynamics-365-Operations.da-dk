@@ -2,11 +2,9 @@
 title: Frigive produktstrukturer
 description: I dette emne forklares det, hvordan du kan frigive hele produktstrukturer ud over at frigive produkter sammen med deres tekniske versioner. På denne måde kan du sikre dig, at teknisk relevante produktdata nemt kan genbruges i forskellige juridiske enheder.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: e9cd90d74b92754d4a5432485d5dd59c31e34c61
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580909"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841979"
 ---
 # <a name="release-product-structures"></a>Frigive produktstrukturer
 

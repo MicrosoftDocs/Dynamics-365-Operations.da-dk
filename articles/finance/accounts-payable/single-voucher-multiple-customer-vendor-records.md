@@ -2,11 +2,9 @@
 title: Enkelt bilag med flere debitor- eller kreditorposter
 description: Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 Finance, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bca422d7c79bef2155b84e3da964c5e47af8ac8f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a4e12eb3162d00c76254582c0621c9dd567df562
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231584"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837291"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere debitor- eller kreditorposter
 

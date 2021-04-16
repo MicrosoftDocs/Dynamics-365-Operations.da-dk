@@ -2,11 +2,9 @@
 title: Modtage returnerede varer
 description: Når der ankommer en returvareleverance, matcher du den med en returvareordre, der allerede er oprettet.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23d18800508c6994f62e15921ef574062781b1be
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4f02b22249e5a03a079d4b2df1f51200088a24fb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234819"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836104"
 ---
 # <a name="receive-returned-items"></a>Modtage returnerede varer 
 

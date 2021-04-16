@@ -2,11 +2,9 @@
 title: Leasingbogføringstyper
 description: I dette emne beskrives de bogføringstyper, der bruges til aktivleasingtransaktioner.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229496"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841135"
 ---
 # <a name="lease-posting-types"></a>Leasingbogføringstyper
 
@@ -90,15 +88,6 @@ Kontoen er tilknyttet ROU-anlægsaktivets konto. Denne konto krediteres, når de
 **Eksempel på kladdeposter:** Afskrivningsperiodisering<br>
 **Debet:** Afskrivningsudgift xxx<br>
 **Kredit:** Akkumuleret afskrivning xxx
-
-## <a name="retained-earnings"></a>Overført resultat
-
-Den konto, der er tilknyttet overførte tillæg. Denne konto kan enten debiteres eller krediteres i en overgangsreguleringskladdepostering ved hjælp af den komplette retrospektive metode eller den kumulative opsamlingsindstilling for metode A. Forskellen mellem det oprindelige ROU-aktiv og leasingforpligtelsen registreres i den overførte indtægt. I sjældne tilfælde kan den tilbageholdte indtægt også berøres under ændring af leasingaftaler, hvis klassifikationen af en rettighed er ændret fra økonomi til drift for at skrive ROU-aktiver op eller ned, så det svarer til ansvarsforsikring.
-
-**Eksempel Journal indgange:** Transaktionsjustering (komplet retrospektiv akkumuleret opsummeringsindstilling for metode A)<br>
-**Debet:** Leasingforpligtelse xxx<br>
-**Kredit:** Leasingaktiv xxx<br>
-**Kredit:** Overført indtægt xxx
 
 ## <a name="variable-payment"></a>Variabel betaling
 

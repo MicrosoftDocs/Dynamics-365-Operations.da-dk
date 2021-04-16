@@ -2,11 +2,9 @@
 title: Sky- og kantskalaenheder til arbejdsbyrder i lokationsstyring
 description: Dette emne indeholder oplysninger om funktionen, der gør det muligt for skalaenheder at køre udvalgte processer fra din arbejdsbyrde i lokationsstyring.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, SysSecRolesEditUsers
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580959"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832388"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
 
@@ -70,7 +68,7 @@ Hubben ejer følgende data:
 - Ordrefordeling og behandling af udgående last
 - Processerne frigiv til lagersted, forsendelsesoprettelse, bølgeoprettelse og bølgefærdiggørelse
 
-Skalaenhederne ejer den faktiske bølgebehandling (f.eks. arbejdsfordeling, genopfyldningsarbejde og oprettelse af behovsarbejde) efter frigivelsen af bølgen. Lagermedarbejderne kan derfor behandle udgående arbejde ved hjælp af en lagerstedsapp, der er tilknyttet skalaenheden.
+Skalaenhederne ejer den faktiske bølgebehandling (f.eks. arbejdsfordeling, genopfyldningsarbejde og oprettelse af behovsarbejde) efter frigivelsen af bølgen. Lagermedarbejderne kan derfor behandle udgående arbejde ved hjælp af mobilappen Lokationsstyring, der er tilknyttet skalaenheden.
 
 ![Bølgebehandlingsflow](./media/wes-wave-processing-ga.png "Bølgebehandlingsflow")
 
@@ -94,7 +92,7 @@ Du skal logge på hubben for at bruge *Frigiv til lagersted*-processen. Gå til 
 
 Når du bruger **Automatisk frigivelse af indkøbsordrer**, kan du vælge bestemte indkøbsordrelinjer ud fra en forespørgsel. Det vil typisk være at konfigurere et tilbagevendende batchjob, der frigiver alle de bekræftede indkøbsordrelinjer, der forventes at ankomme næste dag.
 
-Arbejderne kan køre modtagelsen ved hjælp af en lagerstedsapp, der er tilknyttet skalaenheden. Dataene registreres derefter af skalaenheden og rapporteres i forhold til den indgående lagerordre. Oprettelsen og afviklingen af det efterfølgende læg på lager-arbejde vil også blive håndteret af skalaenheden.
+Arbejderne kan køre modtagelsen ved hjælp af mobilappen Lokationsstyring, der er tilknyttet skalaenheden. Dataene registreres derefter af skalaenheden og rapporteres i forhold til den indgående lagerordre. Oprettelsen og afviklingen af det efterfølgende læg på lager-arbejde vil også blive håndteret af skalaenheden.
 
 Hvis du ikke bruger processen *frigivelse til lagersted*, og du derfor ikke bruger *lagerordrer*, kan hubben behandle lagermodtagelse og arbejde uafhængigt af skalaenheder.
 
@@ -117,10 +115,10 @@ Brugere, der kun fungerer som lagerchefer på både hubben og skalaenheder, bør
 Følgende processer til lagerudførelse kan aktiveres for en WES-arbejdsbyrde på en skalaenhed:
 
 - Udvalgte metoder til salgs- og flytteordrer (fordeling, efterspørgselsopfyldning, containerisering, oprettelse af arbejde og udskrivning af label til bølge)
-- Behandle arbejde med salgs- og flytteordrelagersteder ved hjælp af lagerstedsappen (herunder genopfyldningsarbejde)
-- Forespørge på disponibel lagerbeholdning ved hjælp af lagerstedsappen
-- Oprette og køre lagerbevægelser ved hjælp af lagerstedsappen
-- Registrere indkøbsordrer og udføre læg på lager-arbejde med lagerstedsappen
+- Behandle arbejde med salgs- og flytteordrelagersteder ved hjælp af mobilappen Lokationsstyring (herunder genopfyldningsarbejde)
+- Forespørge på disponibel lagerbeholdning ved hjælp af mobilappen Lokationsstyring
+- Oprette og køre lagerbevægelser ved hjælp af mobilappen Lokationsstyring
+- Registrere indkøbsordrer og udføre læg på lager-arbejde med mobilappen Lokationsstyring
 
 Følgende arbejdsordretyper understøttes i øjeblikket for WES-arbejdsbyrder på implementeringer af skalaenheder:
 
@@ -133,7 +131,7 @@ Følgende arbejdsordretyper understøttes i øjeblikket for WES-arbejdsbyrder p�
 Ingen anden behandling af kildedokumenter eller lagerstedsarbejde understøttes i øjeblikket på skalaenheder. I forbindelse med en WES-arbejdsbyrde på en skalaenhed kan du f.eks. ikke udføre en modtagelsesproces for overførselsordrer (overførselstilgang) eller behandle cyklusoptællingsarbejde.
 
 > [!NOTE]
-> Menupunkter og knapper til mobilenheder til funktioner, der ikke understøttes, vises ikke i _lagerstedsappen_, når den er knyttet til en implementering af skalaenhed.
+> Menupunkter og knapper til mobilenheder til funktioner, der ikke understøttes, vises ikke i _mobilappen Lokationsstyring_, når den er knyttet til en implementering af skalaenhed.
 
 > [!WARNING]
 > Når du kører en arbejdsbyrde i en skalaenhed, kan du ikke køre processer, der ikke understøttes, for det specifikke lagersted på hubben. Tabellerne senere i dette emne dokumenterer de understøttede egenskaber.
@@ -164,7 +162,7 @@ Følgende lokationsstyringsfunktioner understøttes ikke i øjeblikket i arbejds
 - Behandling af lagerstedsarbejde med forsendelsesnotaer
 - Behandling af lagerstedsarbejde med grænseværdi for behandling af cyklusoptælling
 - Behandling af lagerstedsarbejde med materialehåndtering/automatisk lagersted
-- Brug af billede af produktmasterdata (f.eks. på lagerstedsappen)
+- Brug af billede af produktmasterdata (f.eks. på mobilappen Lokationsstyring)
 
 > [!WARNING]
 > Nogle af lagerstedsfunktionerne er ikke tilgængelige for lagersteder, der kører arbejdsbyrderne for lokationsstyring på en skalaenhed, og de understøttes heller ikke i hubben eller i arbejdsbyrden for skalaenheden.
@@ -253,7 +251,7 @@ I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer o
 | Bevægelse                                           | Ja | Ja                          |
 | Bevægelse efter skabelon                               | Ja | Ja                          |
 | Overførsel af lagersted                                 | Ja | Ingen                           |
-| Oprette flytteordre fra lagerstedsappen           | Ja | Ingen                           |
+| Oprette flytteordre fra mobilappen Lokationsstyring           | Ja | Ingen                           |
 | Regulering (ind/ud)                                | Ja | Ingen                           |
 | Ændring af lagerstatus                            | Ja | Ingen                           |
 | Behandling af cyklusoptælling og optællingsafvigelser | Ja | Ingen                           |
