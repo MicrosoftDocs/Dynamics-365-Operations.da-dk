@@ -2,11 +2,9 @@
 title: Foretage fejlfinding af lagerstedsarbejde
 description: Dette emne beskriver, hvordan du løser almindelige problemer, der kan opstå, når du arbejder med lagerstedsarbejde i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1814f7b23efda2cabdb7bfc7bea4de6e3d6ec2f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 08cc074fe851b952ebfc942ae3d1cb05240d3b91
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237053"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837435"
 ---
 # <a name="troubleshoot-warehouse-work"></a>Foretage fejlfinding af lagerstedsarbejde
 
@@ -40,11 +38,11 @@ Du kan ikke flytte et id ved at bruge menupunktet **Bevægelse**, hvis serienumm
 
 Dette problem løses af de ændringer, der implementeres i [KB 4571546](https://fix.lcs.dynamics.com/Issue/Details?kb=4571546&bugId=467880&dbType=3&qc=5b46d7faa9cc326cebfe9854cb30be8ea30b21ef33d3572c325fbb21202de687). Disse ændringer gør feltet **Serienummer** valgfrit, når blank tilgang og blank afgang er tilladt.
 
-## <a name="i-receive-the-following-error-message-in-the-warehouse-app-when-i-process-movements-the-inventory-owner-1-is-not-allowed-in-this-process"></a>Jeg modtager følgende fejlmeddelelse i lagerstedsappen, når jeg behandler bevægelser: "Lagerejeren %1 er ikke tilladt i denne proces".
+## <a name="i-receive-the-following-error-message-in-the-warehouse-management-mobile-app-when-i-process-movements-the-inventory-owner-1-is-not-allowed-in-this-process"></a>Jeg modtager følgende fejlmeddelelse i mobilappen Lokationsstyring, når jeg behandler bevægelser: "Lagerejeren %1 er ikke tilladt i denne proces".
 
 ### <a name="issue-description"></a>Problembeskrivelse
 
-Sporingsdimensionen **Ejer** mangler, når lagerstedsappen bruges til at foretage bevægelser. En almindelig lageroverførselskladde fra Supply Chain Management-klienten ser ud til at fungere efter hensigten og kan kun bogføres, hvis dimensionen **Ejer** er udfyldt.
+Sporingsdimensionen **Ejer** mangler, når mobilappen Lokationsstyring bruges til at foretage bevægelser. En almindelig lageroverførselskladde fra Supply Chain Management-klienten ser ud til at fungere efter hensigten og kan kun bogføres, hvis dimensionen **Ejer** er udfyldt.
 
 ### <a name="issue-resolution"></a>Problemløsning
 

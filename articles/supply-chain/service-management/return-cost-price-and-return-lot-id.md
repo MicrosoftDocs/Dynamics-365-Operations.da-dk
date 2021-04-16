@@ -2,11 +2,9 @@
 title: Returkostpris og returparti-id
 description: I visse tilfælde ønsker du muligvis, at kostprisen for de returnerede produkter er lig med kostprisen for produkterne på det tidspunkt, da du solgte produkterne til kunden. Du kan gøre dette ved hjælp af **Returparti-id**.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLookup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b420c0716823f587ea3f349a5d654ace23d84f41
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 86e048139da28c04c9f5ca03d71f92e5a7e60652
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219263"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835984"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Returkostpris og returparti-id        
 

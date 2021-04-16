@@ -2,11 +2,9 @@
 title: Nummerering af dokumenter og bilag kronologisk
 description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere og bruge kronologiske numre til relevante dokumenter og relaterede bilag.
 author: ikond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceGroup
 audience: Application User
@@ -17,18 +15,17 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a27b6fdd1e244fb0cb8c5fcefc484494aeb88bd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254510"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838855"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Nummerering af dokumenter og bilag kronologisk
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 I nogle lande er der et juridisk krav om at nummerere dokumenter og relaterede bilag i kronologisk rækkefølge. Kronologien skal understøttes af perioder. Alle de tal, der tilhører tidligere perioder, skal være mindre end de tal, der tilhører senere perioder. For at opfylde dette krav er der implementeret kronologisk nummereringsfunktionalitet. Dette emne indeholder en forklaring på, hvordan du kan konfigurere og bruge kronologiske numre til relevante dokumenter og relaterede bilag.
 

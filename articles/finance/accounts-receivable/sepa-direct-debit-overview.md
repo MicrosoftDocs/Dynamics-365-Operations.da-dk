@@ -2,11 +2,9 @@
 title: Oversigt over direkte debitering (SEPA)
 description: Det Fælles eurobetalingsområde (SEPA) er nedsat af Europa-Kommissionen og bestemmer, at alle elektroniske betalinger behandles som indenlandske, uanset det land/område, hvor personen, virksomheden eller organisationen og banken er placeret. Der er ingen forskel imellem nationale betalinger og betalinger, der involverer udlandet. SEPA omfatter de 28 EU-medlemsstater, foruden Island, Liechtenstein, Norge, Schweiz, Monaco og San Marino. SEPA er med til at danne et enkelt marked for betalingstransaktioner inden for Det Europæiske Økonomiske Samarbejdsområde (EEA). I sidste ende forventes SEPA at reducere antallet af betalingsformater, som banker, virksomheder og enkeltpersoner skal arbejde med.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c0a64e2bfefb7c4ed0e0f07be60e9f5293f8d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf3872a47a92509af5857c0c1aec0d4da4095d19
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229616"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835262"
 ---
 # <a name="sepa-direct-debit-overview"></a>Oversigt over direkte debitering (SEPA)
 

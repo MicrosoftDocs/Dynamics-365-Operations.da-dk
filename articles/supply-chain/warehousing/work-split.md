@@ -2,11 +2,9 @@
 title: Arbejdsopdeling
 description: Dette emne indeholder oplysninger om arbejdsopdelingsfunktionen. Med denne funktionalitet kan du opdele store arbejdsordrer i flere mindre arbejdsordrer, som du derefter kan tildele til flere lagermedarbejdere. På denne måde kan det samme arbejde plukkes samtidig af flere lagermedarbejdere.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6dbf0f6dd0c691db74eaad2174d8f9849b4cb26a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245076"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830756"
 ---
 # <a name="work-split"></a>Arbejdsopdeling
 
@@ -69,7 +67,7 @@ Funktionen *Arbejdsopdeling* føjer følgende to knapper til fanen **Arbejde** i
 >
 > - Arbejdet opdeles i øjeblikket af en anden bruger. Hvis du forsøger at åbne opdelingssiden for arbejde, der allerede er ved at blive opdelt af en anden bruger, får du vist følgende fejlmeddelelse: "Arbejdet med id \#\#\#\# er ved at blive opdelt. Prøv igen om et par minutter. Hvis du fortsætter med at modtage denne meddelelse, skal du kontakte en tilsynsførende".
 
-En ny årsag til arbejdsblokering, *Opdelt arbejde*, angiver, hvornår arbejds-id'et er ved at blive opdelt. Det vises både på siden **Opdel arbejde** og i lagerstedsappen, hvis en bruger forsøger at køre arbejdet. Når der bruges blokeringsårsager, ændres navnet på feltet **Blokeret bølge** fra arbejds-id'et til **Blokeret**.
+En ny årsag til arbejdsblokering, *Opdelt arbejde*, angiver, hvornår arbejds-id'et er ved at blive opdelt. Det vises både på siden **Opdel arbejde** og i mobilappen Lokationsstyring, hvis en bruger forsøger at køre arbejdet. Når der bruges blokeringsårsager, ændres navnet på feltet **Blokeret bølge** fra arbejds-id'et til **Blokeret**.
 
 ## <a name="initiate-a-work-split"></a>Starte en opdeling af arbejde
 
@@ -147,9 +145,9 @@ Hvis du vil afslutte opdeling af arbejde, skal blokeringsårsagen *Opdel arbejde
 
 Når blokeringsårsagen *Opdel arbejde* er fjernet, kan arbejdet køres på mobilenheden, hvis den **blokerede** tilstand er angivet til *Nej* på arbejds-id'et.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Brugerblokering på lagerstedsappen
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Brugerblokering på mobilappen Lokationsstyring
 
-Hvis du forsøger at bruge lagerstedsappen til at køre plukarbejde på et arbejds-id, der er ved at blive opdelt, får du vist følgende fejlmeddelelse: "Arbejdet med id \#\#\#\# er ved at blive opdelt". Hvis du modtager denne meddelelse, skal du vælge **Annuller**. Du kan derefter fortsætte med at behandle andet arbejde.
+Hvis du forsøger at bruge mobilappen Lokationsstyring til at køre plukarbejde på et arbejds-id, der er ved at blive opdelt, får du vist følgende fejlmeddelelse: "Arbejdet med id \#\#\#\# er ved at blive opdelt". Hvis du modtager denne meddelelse, skal du vælge **Annuller**. Du kan derefter fortsætte med at behandle andet arbejde.
 
 ## <a name="other-blocked-operations"></a>Andre blokerede handlinger
 

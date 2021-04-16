@@ -2,11 +2,9 @@
 title: Reservationspolitik for fleksibel dimension for lagerstedsniveau
 description: I dette emne beskrives politikken for lagerreservation, hvor virksomheder, der sælger batchsporede produkter og kører deres logistik som WMS-aktiverede operationer, kan reservere bestemte batches for kundesalgsordrer, selvom det reservationshierarki, der er tilknyttet produkterne, ikke tillader reservation af bestemte batches.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,33 +13,33 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7d855914e59d90dd082c9e9a027604579a2f411
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235406"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835672"
 ---
-# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Reservationspolitik for fleksibel dimension for lagerstedsniveau
+# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel reservationspolitik for dimension på lagerstedsniveau
 
 [!include [banner](../includes/banner.md)]
 
-Når et lagerreservationshierarki af typen "Batch under\[lokation\]" er knyttet til produkter, kan virksomheder, der sælger batchsporede produkter og kører logistik som handlinger, der er aktiveret for Microsoft Dynamics 365 Warehouse Management System (WMS), ikke reservere bestemte batches af de pågældende produkter til kundesalgsordrer.
+Når et lagerreservationshierarki af typen *Batch under\[lokation\]* er knyttet til produkter, kan virksomheder, der sælger batchsporede produkter og kører logistik som handlinger, der er aktiveret for Microsoft Dynamics 365 Warehouse Management System (WMS), ikke reservere bestemte batches af de pågældende produkter til kundesalgsordrer.
 
 På samme måde kan specifikke id'er ikke reserveres til produkter i salgsordrer, når disse produkter er knyttet til standardreservationshierarkiet.
 
-Dette emne beskriver den politik for lagerreservation, der giver disse virksomheder mulighed for at reservere bestemte batches eller id'er, selv når produkterne er knyttet til et reservationshierarki af typen "batch-under\[lokation\]".
+Dette emne beskriver den politik for lagerreservation, der giver disse virksomheder mulighed for at reservere bestemte batches eller id'er, selv når produkterne er knyttet til et reservationshierarki af typen *Batch under\[lokation\]*.
 
 ## <a name="inventory-reservation-hierarchy"></a>Lagerreservationshierarki
 
 I dette afsnit opsummeres det eksisterende lagerreservationshierarki.
 
-Lagerreservationshierarkiet bestemmer, at med hensyn til lagringsdimensioner er det behovsordren, der har de obligatoriske dimensioner for websted, lagersted og lagerstatus, hvorimod lagerstedets logik er ansvarlig for at tildele en lokation til de ønskede antal og reserve lokationen. I interaktionerne mellem behovsordren og lagerstedsoperationerne forventes det med andre ord, at behovsordren angiver, hvor ordren skal afsendes fra (dvs. hvilket sted og lagersted). Lagerstedet er derefter afhængig af logikken for at finde det påkrævede antal på lagerstedet.
+Lagerreservationshierarkiet bestemmer, at behovsrækkefølgen i forbindelse med lagringsdimensioner indeholder de obligatoriske dimensioner for lokation, lagersted og lagerstatus. Det vil sige, at de obligatoriske dimensioner alle er dimensioner over lokationsdimensionen i reservationshierarkiet, mens lagerstedslogikken er ansvarlig for at tildele en lokation til de ønskede antal og reservere lokationen. I interaktionerne mellem behovsordren og lagerstedsoperationerne forventes det med andre ord, at behovsordren angiver, hvor ordren skal afsendes fra (dvs. sted og lagersted). Lagerstedet er derefter afhængig af logikken for at finde det påkrævede antal på lagerstedet.
 
 For at afspejle den operationelle model for virksomheden er sporingsdimensionerne (batch- og serienumre) dog underlagt større fleksibilitet. Et lagerreservationshierarki kan tage højde for scenarier, hvor følgende betingelser gælder:
 
-- Virksomheden er afhængig af sin lagerdrift for at administrere plukning af antal, der har batch- eller serienumre, efter at antallene er fundet på lagerpladsen i lagerstedet. Denne model kaldes ofte *Batch-under\[lokation\]*. Den bruges typisk, når et produkts batch- eller serienummeridentifikation ikke er vigtig for de kunder, der placerer efterspørgslen hos den sælgende virksomhed.
-- Hvis batch- eller serienumre er en del af en kundes ordrespecifikation, og de registreres i behovsordren, er den lagerdrift, der finder antal på lagerstedet, begrænset af de specifikt ønskede numre, og de kan ikke ændres. Denne model kaldes ofte *Batch-over\[lokation\]*.
+- Virksomheden er afhængig af sin lagerdrift for at administrere plukning af antal, der har batch- eller serienumre, *efter* at antallene er fundet på lagerpladsen i lagerstedet. Denne model kaldes ofte *Batch under\[lokation\]* eller *Serie under\[lokation\]*. Den bruges typisk, når et produkts batch- eller serienummeridentifikation ikke er vigtig for de kunder, der placerer efterspørgslen hos den sælgende virksomhed.
+- Virksomheden er afhængig af sin lagerdrift for at administrere plukning af antal, der har batch- eller serienumre, *før* at antallene er fundet på lagerpladsen i lagerstedet. Hvis batch- eller serienumre er en nødvendig del af en kundes ordrespecifikation, registreres de i behovsordren, og den lagerdrift, der finder antallet på lagerstedet, kan ikke ændre dem. Denne model kaldes ofte *Batch over\[lokation\]* eller *Serie over\[lokation\]*. Da dimensionerne over lokationen er de specifikke krav i forbindelse med de behov, der skal opfyldes, tildeles de ikke i lagerstedslogikken. Disse dimensioner **skal** altid angives på behovsordren eller i de tilknyttede reservationer.
 
 I disse scenarier er udfordringen, at der kun kan tildeles ét lagerreservationshierarki til hvert frigivet produkt. For at WMS kan håndtere sporede varer, efter at hierarkitildelingen bestemmer, hvornår batch- eller serienummeret skal reserveres (enten når behovsordren udtages eller under pluk på lagerstedet), kan denne tidsindstilling ikke ændres på ad hoc-basis.
 
@@ -49,16 +47,16 @@ I disse scenarier er udfordringen, at der kun kan tildeles ét lagerreservations
 
 ### <a name="business-scenario"></a>Forretningsscenarie
 
-I dette scenario bruger et firma en lagerstrategi, hvor færdigvarer spores efter batchnumre. Dette firma bruger også WMS-arbejdsbyrden. Da denne arbejdsbyrde har en veludviklet logik til planlægning og kørsel af lagerstedspluk- og forsendelsesoperationer for batchaktiverede varer, er de fleste af de færdige varer knyttet til et lagerreservationshierarki af typen "Batch-under\[lokation\]". Fordelen ved denne type driftsopsætning er, at beslutninger (der rent faktisk er reservationsbeslutninger) om, hvilke batches der skal plukkes, og hvor de skal placeres på lagerstedet, udskydes, indtil lagerstedsplukoperationerne er startet. De foretages ikke, når kundeordren afgives.
+I dette scenario bruger et firma en lagerstrategi, hvor færdigvarer spores efter batchnumre. Dette firma bruger også WMS-arbejdsbyrden. Da denne arbejdsbyrde har en veludviklet logik til planlægning og kørsel af lagerstedspluk- og forsendelsesoperationer for batchaktiverede varer, er de fleste af de færdige varer knyttet til et lagerreservationshierarki af typen *Batch under\[lokation\]*. Fordelen ved denne type driftsopsætning er, at beslutninger (der rent faktisk er reservationsbeslutninger) om, hvilke batches der skal plukkes, og hvor de skal placeres på lagerstedet, udskydes, indtil lagerstedsplukoperationerne er startet. De foretages ikke, når kundeordren afgives.
 
-Selvom reservationshierarkiet "Batch-under\[lokation\]" fungerer godt for firmaets forretningsmål, kræver mange af firmaets etablerede kunder samme batch, som de tidligere har købt, når de genbestiller produkter. Derfor vil firmaet søge efter fleksibilitet i den måde, som reglerne for batchreservation håndteres på, så der sker følgende, afhængigt af kundernes behov for den samme vare:
+Selvom reservationshierarkiet *Batch under\[lokation\]* fungerer godt for firmaets forretningsmål, kræver mange af firmaets etablerede kunder samme batch, som de tidligere har købt, når de genbestiller produkter. Derfor vil firmaet søge efter fleksibilitet i den måde, som reglerne for batchreservation håndteres på, så der sker følgende, afhængigt af kundernes behov for den samme vare:
 
 - Et batchnummer kan registreres og reserveres, når ordren udtages af salgsbehandleren, og det kan ikke ændres under lagerdrift og/eller udtages af andre behov. Denne funktionsmåde er en hjælp til at sikre, at det batchnummer, der blev bestilt, sendes til kunden.
 - Hvis batchnummeret ikke er vigtigt for kunden, kan lagerdriften bestemme et batchnummer under pluk, efter salgsordreregistrering og reservation er udført.
 
 ### <a name="allowing-reservation-of-a-specific-batch-on-the-sales-order"></a>Tilladelse af reservation af en bestemt batch i salgsordren
 
-For at give plads til den ønskede fleksibilitet i batchreservationens funktionsmåde for varer, der er knyttet til et lagerreservationshierarki af typen "Batch-under\[lokation\]", skal lagerstyringen markere afkrydsningsfeltet **Tillad reservation i behovsordre** for niveauet **Batchnummer** på siden **Lagerreservationshierarkier**.
+For at give plads til den ønskede fleksibilitet i batchreservationens funktionsmåde for varer, der er knyttet til et lagerreservationshierarki af typen *Batch under\[lokation\]*, skal lagerstyringen markere afkrydsningsfeltet **Tillad reservation i behovsordre** for niveauet **Batchnummer** på siden **Lagerreservationshierarkier**.
 
 ![Angivelse af fleksibelt lagerreservationshierarki](media/Flexible-inventory-reservation-hierarchy.png)
 
@@ -69,25 +67,25 @@ Når niveauet **Batchnummer** i hierarkiet vælges, vil alle dimensioner over de
 >
 > **Batchnummer** og **id** er de eneste niveauer i hierarkiet, der er åbne for den fleksible reservationspolitik. Du kan med andre ord ikke markere afkrydsningsfeltet **Tillad reservation i behovsordre** for niveauet **Lokation** eller **Serienummer**.
 >
-> Hvis reservationshierarkiet indeholder serienummerdimensionen (der altid skal være under niveauet **Batchnummer**), og hvis du har aktiveret batchspecifik reservation for batchnummeret, fortsætter systemet med at håndtere serienummerreservation og plukoperationer baseret på de regler, der gælder for reservationspolitikken "Serie-under\[lokation\]".
+> Hvis reservationshierarkiet indeholder serienummerdimensionen (der altid skal være under niveauet **Batchnummer**), og hvis du har aktiveret batchspecifik reservation for batchnummeret, fortsætter systemet med at håndtere serienummerreservation og plukoperationer baseret på de regler, der gælder for reservationspolitikken *Serie under\[lokation\]*.
 
-Du kan på et hvilket som helst tidspunkt tillade batchspecifik reservation for et eksisterende reservationshierarki af typen "Batch-under\[lokation\]" i din installation. Denne ændring påvirker ikke reservationer og åbent lagerstedsarbejde, der er oprettet, før ændringen blev foretaget. Det er dog ikke muligt at fjerne markeringen af afkrydsningsfeltet **Tillad reservation i behovsordre**, hvis der findes lagertransaktioner af afgangstypen **Reserveret bestilt**, **Reserveret fysisk** eller **Bestilt** for en eller flere varer, der er tilknyttet det pågældende reservationshierarki.
+Du kan på et hvilket som helst tidspunkt tillade batchspecifik reservation for et eksisterende reservationshierarki af typen *Batch under\[lokation\]* i din installation. Denne ændring påvirker ikke reservationer og åbent lagerstedsarbejde, der er oprettet, før ændringen blev foretaget. Det er dog ikke muligt at fjerne markeringen af afkrydsningsfeltet **Tillad reservation i behovsordre**, hvis der findes lagertransaktioner af afgangstypen **Reserveret bestilt**, **Reserveret fysisk** eller **Bestilt** for en eller flere varer, der er tilknyttet det pågældende reservationshierarki.
 
 > [!NOTE]
 > Hvis en vares eksisterende reservationshierarki ikke tillader batchspecifikation i ordren, kan du igen tildele det til et reservationshierarki, der tillader batchspecifikation, forudsat at strukturen i hierarkiniveauet er den samme i begge hierarkier. Brug funktionen **Skift reservationshierarki til varer** til at udføre omfordelingen. Denne ændring kan være relevant, når du vil forhindre fleksibel batchreservation af et undersæt af batchsporede varer, men tillade den for resten af produktsortimentet.
 
-Hvis du ikke vil reservere et bestemt batchnummer for varen på en ordrelinje, så gælder standardlogikken for lagerdrift, der er gældende for et reservationshierarki af typen "Batch-under\[lokation\]", stadig, uanset om du har markeret afkrydsningsfeltet **Tillad reservation i behovsordre**.
+Hvis du ikke vil reservere et bestemt batchnummer for varen på en ordrelinje, så gælder standardlogikken for lagerdrift, der er gældende for et reservationshierarki af typen *Batch under\[lokation\]*, stadig, uanset om du har markeret afkrydsningsfeltet **Tillad reservation i behovsordre**.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Reservere et bestemt batchnummer til en kundeordre
 
-Efter en batchsporet vares lagerreservationshierarki af typen "Batch-under\[lokation\]" er konfigureret til at tillade reservation af bestemte batchnumre i salgsordrer, kan salgsordrebehandlere udtage kundeordrer på samme vare på en af følgende måder afhængigt af kundens anmodning:
+Efter en batchsporet vares lagerreservationshierarki af typen *Batch under\[lokation\]* er konfigureret til at tillade reservation af bestemte batchnumre i salgsordrer, kan salgsordrebehandlere udtage kundeordrer på samme vare på en af følgende måder afhængigt af kundens anmodning:
 
 - **Angiv ordredetaljer uden at angive et batchnummer** – denne tilgang skal bruges, når produktets batchspecifikation ikke er vigtig for kunden. Alle eksisterende processer, der er knyttet til håndtering af en ordre af denne type i systemet, ændres ikke. Der kræves ingen yderligere overvejelser fra brugernes side.
 - **Angiv ordredetaljer, og reservér et bestemt batchnummer** – denne tilgang skal bruges, når kunden anmoder om en bestemt batch. Kunderne anmoder typisk om en bestemt batch, når de genbestiller et produkt, som de tidligere har købt. Denne type batchspecifik reservation er en såkaldt *ordrebekræftet reservation*.
 
 Følgende regelsæt er gældende, når antal behandles, og et batchnummer bekræftes for en bestemt ordre:
 
-- Hvis der skal kunne foretages reservation af et bestemt batchnummer for en vare i henhold til reservationspolitikken "Batch-under\[lokation\], skal systemet reservere alle dimensioner til og med lokation. Dette område omfatter typisk id-dimensionen.
+- Hvis der skal kunne foretages reservation af et bestemt batchnummer for en vare i henhold til reservationspolitikken *Batch under\[lokation\]*, skal systemet reservere alle dimensioner til og med lokation. Dette område omfatter typisk id-dimensionen.
 - Lokationsvejledninger bruges ikke, når der oprettes plukarbejde for en salgslinje, hvor der bruges ordrebekræftet batchreservation.
 - Hverken brugeren eller systemet må ændre batchnummeret under lagerstedsbehandling af arbejde for ordrebekræftede batches. (Denne behandling omfatter undtagelseshåndtering).
 
@@ -131,19 +129,19 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 2. Vælg **Ny**.
 3. Angiv **US-003** i feltet **Debitorkonto** i salgsordrehovedet.
 4. Tilføj en linje for den nye vare, og angiv **10** som antal. Sørg for, at feltet **Lagersted** er angivet til **24**.
-5. Vælg **Lager** i oversigtspanelet **Salgsordrelinjer**, og vælg derefter **Batchreservation** i gruppen **Vedligehold**. På siden **Batchreservation** vises en liste over batches, der er tilgængelige til reservation for ordrelinjen. I dette eksempel vises antallet **20** for batchnummer **B11** og antallet **10** for batchnummer **B22**. Bemærk, at der ikke kan opnås adgang til siden **Batchreservation** fra en linje, hvis varen på linjen er tilknyttet reservationshierarkiet "Batch-under\[lokation\]", medmindre den er konfigureret til at tillade batchspecifik reservation.
+5. Vælg **Lager** i oversigtspanelet **Salgsordrelinjer**, og vælg derefter **Batchreservation** i gruppen **Vedligehold**. På siden **Batchreservation** vises en liste over batches, der er tilgængelige til reservation for ordrelinjen. I dette eksempel vises antallet **20** for batchnummer **B11** og antallet **10** for batchnummer **B22**. Bemærk, at der ikke kan opnås adgang til siden **Batchreservation** fra en linje, hvis varen på linjen er tilknyttet reservationshierarkiet *Batch under\[lokation\]*, medmindre den er konfigureret til at tillade batchspecifik reservation.
 
     > [!NOTE]
     > Hvis du vil reservere et bestemt batch til en salgsordre, skal du bruge siden **Batchreservation**.
     >
-    > Hvis du angiver batchnummeret direkte på salgsordrelinjen, fungerer systemet, som om du har angivet en bestemt batchværdi for en vare, der er underlagt reservationspolitikken "Batch-under\[lokation\]". Når du gemmer linjen, vil du modtage en advarselsmeddelelse. Hvis du bekræfter, at batchnummeret skal angives direkte på ordrelinjen, håndteres linjen ikke af den almindelige lokationsstyringslogik.
+    > Hvis du angiver batchnummeret direkte på salgsordrelinjen, fungerer systemet, som om du har angivet en bestemt batchværdi for en vare, der er underlagt reservationspolitikken *Batch under\[lokation\]*. Når du gemmer linjen, vil du modtage en advarselsmeddelelse. Hvis du bekræfter, at batchnummeret skal angives direkte på ordrelinjen, håndteres linjen ikke af den almindelige lokationsstyringslogik.
     >
-    > Hvis du reserverer antallet fra siden **Reservation**, reserveres der ikke noget bestemt batch, og udførelsen af lagerdrift for linjen følger de regler, der gælder i henhold til reservationspolitikken "Batch-under\[lokation\]".
+    > Hvis du reserverer antallet fra siden **Reservation**, reserveres der ikke noget bestemt batch, og udførelsen af lagerdrift for linjen følger de regler, der gælder i henhold til reservationspolitikken *Batch under\[lokation\]*.
 
-    Generelt er funktionen og interaktionen med denne side meget lig den måde, der arbejdes og interageres med varer, som har et tilknyttet reservationshierarki af typen "Batch-over\[lokation\]". Der gælder dog følgende undtagelser:
+    Generelt er funktionen og interaktionen med denne side meget lig den måde, der arbejdes og interageres med varer, som har et tilknyttet reservationshierarki af typen *Batch over\[lokation\]*. Der gælder dog følgende undtagelser:
 
     - Oversigtspanelet **Batchnumre bundet til kildelinje** viser de batchnumre, der er reserveret til ordrelinjen. Batchværdierne i gitteret vises under hele udførelsescyklussen for ordrelinjen, herunder lagerstedets behandlingsstadier. Derimod vises der i oversigtspanelet **Oversigt** en almindelig ordrelinjereservation (dvs. reservation, der udføres for dimensionerne over niveauet **Lokation**) i gitteret op til det punkt, hvor der oprettes lagerstedsarbejde. Arbejdsenheden overtager derefter linjereservationen, og linjereservationen vises ikke længere på siden. Oversigtspanelet **Batchnumre bundet til kildelinje** sikrer, at salgsordrebehandleren kan få vist de batchnumre, der er bundet til kundens ordre på et tidspunkt i løbet livscyklussen op til og med fakturering.
-    - Ud over at reservere en bestemt batch kan en bruger manuelt vælge batchens specifikke lokation og id i stedet for at lade systemet vælge dem automatisk. Denne funktion er relateret til designet af den ordrebekræftede batchreservationsmekanisme. Når et batchnummer reserveres for en vare i henhold til reservationspolitikken "Batch-under\[lokation\], skal systemet som tidligere nævnt reservere alle dimensioner til og med lokation. Lagerstedsarbejdet vil derfor indeholde de samme lagringsdimensioner, der blev reserveret af de brugere, der har arbejdet med ordrerne, og de repræsenterer muligvis ikke altid den varelagringsplacering, der er praktisk eller endda mulig for plukoperationer. Hvis ordrebehandlere er opmærksomme på lagerbegrænsningerne, kan det være en god ide manuelt at vælge de specifikke lokationer og id'er, når de reserverer en batch. I dette tilfælde skal brugeren bruge funktionen **Vis dimensioner** i sidehovedet og tilføje lokationen og id'et i gitteret i oversigtspanelet **Oversigt**.
+    - Ud over at reservere en bestemt batch kan en bruger manuelt vælge batchens specifikke lokation og id i stedet for at lade systemet vælge dem automatisk. Denne funktion er relateret til designet af den ordrebekræftede batchreservationsmekanisme. Når et batchnummer reserveres for en vare i henhold til reservationspolitikken *Batch under\[lokation\]*, skal systemet som tidligere nævnt reservere alle dimensioner til og med lokation. Lagerstedsarbejdet vil derfor indeholde de samme lagringsdimensioner, der blev reserveret af de brugere, der har arbejdet med ordrerne, og de repræsenterer muligvis ikke altid den varelagringsplacering, der er praktisk eller endda mulig for plukoperationer. Hvis ordrebehandlere er opmærksomme på lagerbegrænsningerne, kan det være en god ide manuelt at vælge de specifikke lokationer og id'er, når de reserverer en batch. I dette tilfælde skal brugeren bruge funktionen **Vis dimensioner** i sidehovedet og tilføje lokationen og id'et i gitteret i oversigtspanelet **Oversigt**.
 
 6. På siden **Batchreservation** skal du vælge linjen for batch **B11** og derefter vælge **Reserver linje**. Der er ingen foruddefineret logik ved tildeling af lokationer og id'er under automatisk reservation. Du kan angive antallet manuelt i feltet **Reservation**. Bemærk, at oversigtspanelet **Batchnumre bundet til kildelinje**, batch **B11** er vist som **Bindende**.
 
@@ -172,7 +170,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
     Det arbejde, der håndterer plukoperationen for batchantal, der er bundet til salgsordrelinjen, har følgende karakteristika:
 
     - For at kunne oprette arbejde bruger systemet arbejdsskabeloner, men ikke lokationsvejledninger. Alle de standardindstillinger, der er defineret for arbejdsskabeloner, f.eks. det maksimale antal pluklinjer eller en bestemt måleenhed, vil blive anvendt til at bestemme, hvornår der skal oprettes nyt arbejde. De regler, der er knyttet til lokationsvejledninger til identifikation af pluklokationer, tages dog ikke i betragtning, fordi den ordrebekræftede reservation allerede angiver alle lagerdimensionerne. Disse lagerdimensioner omfatter dimensionerne på lagerstedets lagerniveau. Derfor arver arbejdet disse dimensioner, uden at lokationsvejledninger skal benyttes.
-    - Batchnummeret vises ikke på pluklinjen (som det er tilfældet for den arbejdslinje, der er oprettet for en vare, der har et tilknyttet reservationshierarki for "Batch-over\[lokation\]"). I stedet vises batchnummeret "fra" og alle andre lagringsdimensioner i arbejdslinjens lagertransaktion, der refereres til fra de tilknyttede lagertransaktioner.
+    - Batchnummeret vises ikke på pluklinjen (som det er tilfældet for den arbejdslinje, der er oprettet for en vare, der har et tilknyttet reservationshierarki for *Batch over\[lokation\]*). I stedet vises batchnummeret "fra" og alle andre lagringsdimensioner i arbejdslinjens lagertransaktion, der refereres til fra de tilknyttede lagertransaktioner.
 
         ![Lagersteds lagertransaktion for arbejde, der stammer fra ordrebekræftet reservation](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
@@ -215,7 +213,7 @@ Du kan aktivere id-reservation på ordren på et hvilket som helst tidspunkt i d
 
 Selvom afkrydsningsfeltet **Tillad reservation ved behovsordre** er markeret for niveauet **Id**, er det stadig muligt *ikke* at reservere et bestemt id i ordren. I dette tilfælde gælder den standardlagerlogik for lagerstedsoperationer, der er gyldig for reservationshierarkiet.
 
-Hvis du vil reservere et bestemt id, skal du bruge en [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md)-proces. I programmet kan du foretage reservationen direkte fra en salgsordre ved at bruge indstillingen **Ordrebekræftede reservationer pr. id** for kommandoen **Åbn i Excel**. I de enhedsdata, der åbnes i tilføjelsesprogrammet til Excel, skal du angive følgende reservationsrelaterede data og derefter vælge **Publicer** for at sende dataene tilbage til Supply Chain Management:
+Hvis du vil reservere en bestemt nummerplade, skal du bruge en [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) som proces. I programmet kan du foretage denne reservation direkte fra en salgsordre ved at bruge indstillingen **Ordrebekræftede reservationer pr. id** til kommandoen **Åbn i Excel**. I de enhedsdata, der åbnes i tilføjelsesprogrammet til Excel, skal du angive følgende reservationsrelaterede data og derefter vælge **Publicer** for at sende dataene tilbage til Supply Chain Management:
 
 - Reference (kun *Salgsordre*-værdien understøttes).
 - Ordrenummer (værdien kan afledes af partiet).
@@ -409,7 +407,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på lagerstedsappen, når du starter pluk af arbejde.</li>
+<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på mobilappen Lokationsstyring, når du starter pluk af arbejde.</li>
 <li>Vælg <strong>Foreslå</strong>.</li>
 <li>Bekræft den nye lokation, der foreslås, på basis af tilgængeligheden af batchantal.</li>
 </ol>
@@ -420,13 +418,13 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <li>Hvis antallet findes på mere end ét id på den nye lokation, opdeles den oprindelige pluklinje i flere linjer, så den svarer til hvert enkelt id.</li>
 </ul>
 </td>
-<td>Ikke relevant</td>
+<td>Ikke anvendelig</td>
 </tr>
 <tr>
 <td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på lagerstedsappen, når du starter pluk af arbejde.</li>
+<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på mobilappen Lokationsstyring, når du starter pluk af arbejde.</li>
 <li>Angiv en lokation manuelt.</li>
 </ol>
 </td>
@@ -451,10 +449,10 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <tbody>
 <tr>
 <td>Indstillingen <strong>Tillad opdeling af arbejde</strong> er aktiveret for menupunktet mobilenhed.</td>
-<td>Ikke relevant</td>
+<td>Ikke anvendelig</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Fuld</strong> på lagerstedsapp, når du behandler plukarbejde.</li>
+<li>Vælg menupunktet <strong>Fuld</strong> på mobilappen Lokationsstyring, når du behandler plukarbejde.</li>
 <li>I feltet <strong>Plukantal</strong> skal du angive en del af antallet af det krævede pluk for at angive den fulde kapacitet.</li>
 </ol>
 </td>
@@ -529,7 +527,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Start en bevægelse på lagerstedsappen.</li>
+<li>Start en flytning på mobilappen Lokationsstyring.</li>
 <li>Angiv "fra"- og "til"-lokationer.</li>
 </ol></td>
 <td>
@@ -645,7 +643,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du angive <strong>Ingen omfordeling</strong>.</li>
 </ol>
@@ -674,7 +672,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du angive <strong>Ingen omfordeling</strong>.</li>
 </ol>
@@ -698,7 +696,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 <li>Vælg lokationen/id'et på listen.</li>
@@ -724,7 +722,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 </ol>
@@ -737,7 +735,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 <li>Vælg lokationen/id'et på listen.</li>
@@ -758,10 +756,10 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 </tr>
 <tr>
 <td>En arbejdsundtagelse af typen <strong>Kort pluk</strong> er angivet, hvor <strong>Vareomfordeling</strong> = <strong>Automatisk</strong>, <strong>Reguler lager</strong> = <strong>Ja/Nej</strong>, og <strong>Fjern reservationer</strong> = <strong>Ja/Nej</strong>.</td>
-<td>Ikke relevant</td>
+<td>Ikke anvendelig</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på lagerstedsappen, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med automatisk omfordeling</strong>.</li>
 </ol>
@@ -853,6 +851,14 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
     - Flytteordrer og pluk af råvarer
 
 - Der er begrænsninger for containerkonsolideringsreglen for pakning efter vejledningsenhed. I forbindelse med ordrebekræftede reservationer anbefales det, at du ikke bruger skabeloner til containerbuild, hvor feltet **Pakning efter vejledningsenhed** er aktiveret. I det aktuelle design bruges lokationsvejledninger ikke, når der oprettes lagerstedsarbejde. Derfor er det kun den laveste enhed i enhedsseriegruppen (lagerenheden), der anvendes under containeriseringsbølgetrinnet.
+
+## <a name="see-also"></a>Se også
+
+- [Batchnumre i Lokationsstyring](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Reservere samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Plukke den ældste batch på en mobilenhed](pick-oldest-batch.md)
+- [Bekræftelse af batch og nummerplade](batch-and-license-plate-confirmation.md)
+- [Fejlfinde reservationer i lagerstedsstyring](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,6 @@
 title: Opsætning af parametre for landingsomkostninger
 description: I dette emne beskrives, hvordan du kan konfigurere generelle oplysninger og konfigurationsindstillinger, der bruges på tværs af modulet Landingsomkostninger til bogføring, statusopdateringer, nummerserier og funktionalitet.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 489c0db50d52c1e58eab73ad19a73babf22b4de7
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 973f23a18166abeb05bdea660ef69230d9a8c4c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500760"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833899"
 ---
 # <a name="landed-cost-parameters-setup"></a>Opsætning af parametre for landingsomkostninger
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du bruger siden **Parametre for landingsomkostninger** til at konfigurere generelle oplysninger og konfigurationsindstillinger, der bruges på tværs af modulet **Landingsomkostninger** til bogføring, statusopdateringer, nummerserier og funktionalitet. Konfigurationen af parametre deles på tværs af juridiske enheder og kan redigeres af en administrator.
 

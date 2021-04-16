@@ -2,7 +2,6 @@
 title: Landingsomkostninger sammenlignet med Transportstyring
 description: Microsoft Dynamics 365 Supply Chain Management leverer to forskellige moduler til arbejdet med transport, Transportstyring (TMS) og landingsomkostninger. I dette emne opsummeres de funktioner, som de to moduler har til fælles, og der fremhæver forskellene mellem dem.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500712"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833851"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Landingsomkostninger sammenlignet med Transportstyring
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management leverer to forskellige moduler til arbejdet med transport: **Transportstyring** (TMS) og **Landingsomkostninger**. I dette emne opsummeres de funktioner, som de to moduler har til fælles, og der fremhæver forskellene mellem dem. Du kan bruge disse oplysninger til at afgøre, hvilket modul der passer bedst til din forretningspraksis. Det kan være, at nogle forretningsmetoder fungerer bedre med TMS, mens andre fungerer bedst med landingsomkostninger. Derefter kan du vælge at bruge ét modul eksklusivt, afhængigt af dine forretningsbehov, eller du kan kombinere de to moduler.
 
@@ -158,15 +156,15 @@ Både TMS og landingsomkostninger giver mulighed for at administrere varemodtage
 
 ### <a name="tms-receiving-by-container-features"></a>TMS-funktioner til modtagelse af container
 
-TMS understøtter indgående ASN'er, alle modtagelsesvarianter via lagerstedsappen og alle modtagelsesmetoder via Supply Chain Management-klienten.
+TMS understøtter indgående ASN'er, alle modtagelsesvarianter via mobilappen Lokationsstyring og alle modtagelsesmetoder via Supply Chain Management-klienten.
 
 ### <a name="landed-cost-receiving-by-container-features"></a>Funktioner i landingsomkostninger til modtagelse af container
 
 For at understøtte modtagelse af container opretter landingsomkostninger forsendelsescontainerposter og knytter indkøbsordrer til en bestemt forsendelsescontainer ved hjælp af container-id'et. Indirekte omkostninger kan derefter anvendes på den pågældende forsendelsescontainer og fordeles, så de er knyttet til de relevante indkøbsordrer.
 
-Containere i landingsomkostninger kan modtages via en ny type tilgang, der kaldes en *kvittering for varer undervejs*, via modtagelseskladder eller via modtagelse i mobilenhed. Når der bruges modtagelseskladder, kan antal initialiseres fra ordren for varerne undervejs eller fra de oprindelige indkøbsordrelinjer i containeren. Landingsomkostninger omfatter to arbejdstyper til modtagelse via lagerstedsappen.
+Containere i landingsomkostninger kan modtages via en ny type tilgang, der kaldes en *kvittering for varer undervejs*, via modtagelseskladder eller via modtagelse i mobilenhed. Når der bruges modtagelseskladder, kan antal initialiseres fra ordren for varerne undervejs eller fra de oprindelige indkøbsordrelinjer i containeren. Landingsomkostninger omfatter to arbejdstyper til modtagelse via mobilappen Lokationsstyring.
 
-Landingsomkostninger angiver ikke ASN for den elektroniske varemodtagelse. Derudover understøtter den ikke lagerstedsappflow, der behandler lastmodtagelse, modtagelse af nummerplader eller modtagelse af en blandet nummerplade.
+Landingsomkostninger angiver ikke ASN for den elektroniske varemodtagelse. Derudover understøtter den ikke flow i mobilappen Lokationsstyring, der behandler lastmodtagelse, modtagelse af nummerplader eller modtagelse af en blandet nummerplade.
 
 ## <a name="rate-shopping-by-vendor"></a>Indhentning og visning af forsendelsessatser efter leverandør
 
