@@ -1,12 +1,10 @@
 ---
-title: Modtagelse af nummerplade via lagerstedsappen
-description: I dette emne beskrives, hvordan du konfigurerer lagerstedsappen til at understøtte brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
+title: Modtagelse af nummerplade via mobilappen Lokationsstyring
+description: I dette emne beskrives, hvordan du konfigurerer mobilappen Lokationsstyring til at understøtte brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
 author: perlynne
-manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: f921d08572038d2ac53948825a8ca2459103b7f7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8c662da296bea7def443cb166bd3f7e501c9abcc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245148"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823185"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-app"></a>Modtagelse af nummerplade via lagerstedsappen
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Modtagelse af nummerplade via mobilappen Lokationsstyring
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer lagerstedsappen, så den understøtter brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
+I dette emne beskrives, hvordan du konfigurerer mobilappen Lokationsstyring, så den understøtter brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
 
 Du kan bruge denne funktion til hurtigt at registrere modtagelsen af det indgående lager, der er knyttet til en ASN (Advance Ship Notice). Systemet opretter automatisk en ASN, når der bruges lokationsstyringsprocesser til at levere en flytteordre. I forbindelse med indkøbsordreprocessen kan en ASN registreres manuelt, eller den kan importeres automatisk ved hjælp af en indgående ASN-dataenhedsproces.
 
@@ -72,7 +70,7 @@ Hvis du vil gøre denne funktionalitet tilgængelig på systemet, skal du aktive
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Få vist eller spring over siden til opsummering af modtagelse
 
-Du kan bruge funktionen *Kontrolelementet til at få vist en side med status for modtagelse på mobilenheder* for at udnytte et mere detaljeret flow i Warehouse-appen som del af modtagelsesprocessen af nummerplader.
+Du kan bruge funktionen *Kontrolelementet til at få vist en side med status for modtagelse på mobilenheder* for at udnytte et mere detaljeret flow i mobilappen Lokationsstyring som del af modtagelsesprocessen af nummerplader.
 
 Når denne funktion er slået til, indeholder den mobile enhed menupunkter til modtagelse af nummerplader, og læg-på-lager, der viser indstillingen **Oversigtsside til visning af modtagelse**. Denne indstilling har følgende indstillinger:
 

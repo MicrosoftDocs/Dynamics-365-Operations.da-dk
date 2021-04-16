@@ -2,11 +2,9 @@
 title: Føje en adresse til en serviceordre
 description: Dette emne beskriver, hvordan du føjer en kundeadresse til en serviceordre.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b9c6a410acbfebb3a83e753c422dd87dbf52566
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a54ec439fc88dc9688bbb3d6b833b5d80482f024
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205851"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824648"
 ---
 # <a name="add-an-address-to-a-service-order"></a>Føje en adresse til en serviceordre    
 

@@ -1,12 +1,10 @@
 ---
 title: Forudbetalingsfakturaer vs. forudbetalinger
-description: I dette emne beskrives og sammenlignes de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger). I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling.
+description: I dette emne beskrives og sammenlignes de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger).
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e882cb2063133324005a8e4585daa1c6a0752b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 64301ac540ce2e6e914b6b23668fddeb295ef84c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227468"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827980"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Forudbetalingsfakturaer vs. forudbetalinger
 
@@ -37,7 +35,7 @@ Organisationer kan udstede forudbetalinger til kreditorer for varer eller tjenes
 | Forudbetalingsfakturering                                                                | Forudbetalinger                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definer forudbetalingsværdi på en indkøbsordre.                                    | Der er ikke defineret en forudbetalingsværdi på en indkøbsordre.                    |
-| Nøgle: En forudbetalingsfaktura og en endelig faktura skal bogføres.                       | Ingen forudbetalingsfaktura skal bogføres.                                    |
+| En forudbetalingsfaktura og en endelig faktura skal bogføres.                       | Ingen forudbetalingsfaktura skal bogføres.                                    |
 | Ansvar for forudbetalingen er på forudbetalingskontoen, ikke på kreditorkontoen. | Ansvar for forudbetalingen er på kreditorkontoen.                  |
 | Kreditorsaldoen afspejler ikke forudbetalingsværdien under hele processen.     | Kreditorsaldoen afspejler forudbetalingsværdien under hele processen. |
 | Forudbetalingsfakturering er kun tilgængelig i Kreditor.                         | Forudbetalinger er også tilgængelige i Debitor og Kreditor.    |
@@ -59,11 +57,41 @@ Forudbetalingsfakturaer er en del af almindelig forretningspraksis. En kreditor 
 1.  Indkøberen opretter, bekræfter og sender derefter en indkøbsordre, som kreditoren har anmodet om forudbetaling for. Værdien af forudbetalingen er defineret på indkøbsordren som en del af aftalen.
 2.  Kreditoren sender en forudbetalingsfaktura.
 3.  Kreditorkoordinatoren registrerer forudbetalingsfakturaen på indkøbsordren, og derefter betales forudbetalingsfakturaen.
-4.  Når kreditoren leverer varerne eller tjenesterne, og de tilhørende kreditorfakturaer er modtaget, anvender kreditorkoordinatoren det forudbetalingsbeløb, der allerede er betalt på fakturaen.
-5.  Kreditorkoordinatoren betaler og udligner det resterende beløb på fakturaen.
+4.  Kreditoren sender en anmodning om betaling, der kaldes en standardkreditorfaktura. Når kreditoren leverer varerne eller tjenesterne, og de tilhørende standardkreditorfakturaer er modtaget, anvender kreditorkoordinatoren det forudbetalingsbeløb, der allerede er betalt på standardfakturaen.
+5.  Kreditorkoordinatoren betaler og udligner det resterende beløb på standardfakturaen.
 
+## <a name="set-up-parameters-to-enable-the-prepayment-invoicing-process"></a>Konfigurere parametre for at aktivere faktureringsprocessen til forudbetaling
+Der skal defineres en forudbetalingskonto under fanen **Indkøbsordre** på siden **Lagerbogføring** (**Lagerstyring \> Konfiguration \> Bogføring \> Bogføring**). Forudbetalingskontoen opdateres, normalt debiteres, når forudbetalingsfakturaen bogføres. Saldoen på forudbetalingskontoen tilbageføres, når den standardfaktura, der er anvendt på forudbetalingsfakturaen, bogføres. Hvis du ikke udligner forudbetalingsfakturaen på en betaling, før forudbetalingsfakturaen anvendes på standardfakturaen, tilbageføres regnskabsposterne fra den bogførte forudbetalingsfaktura, når standardfakturaen bogføres.
 
+Den modkonto, der udligner kreditorkontoen, defineres i **Kreditorpostering**-profilen. Hvis du vil definere standardposteringsprofilen, skal du klikke på **Kreditor \>Konfiguration \> Kreditorparametre \>Finans og moms \> Bogføringsprofil med kreditorfaktura for forudbetaling**.
 
+**Politikken for anvendelse af forudbetaling** angiver, om systemet automatisk vil anvende udlignede forudbetalingsfakturaer på den endelige faktura, der er oprettet manuelt. Fakturaer, der oprettes ved hjælp af en dataenhed, henviser ikke til **Politik for anvendelse af forudbetaling**. Du skal anvende udlignede forudbetalingsfakturaer manuelt på fakturaer, der er oprettet ved hjælp af en dataenhed. Hvis du vil definere politikken, skal du gå til **Kreditor \>Konfiguration \> Kreditorparametre \> Finans og moms \> Politik for anvendelse af forudbetaling**. Hvis feltet **Politik for anvendelse af forudbetaling** er angivet til **Automatisk**, markeres forudbetalingsfakturaen automatisk til udligning med den endelige faktura. Hvis feltet er angivet til **Besked**, vises en visuel angivelse af, at der er en tilgængelig forudbetalingsfaktura til anvendelse, når den endelige faktura oprettes.
+
+## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Oprette en indkøbsordre, der indeholder oplysninger om forudbetalingsfaktura
+Når en leverandør fortæller dig, at de kræver forudbetaling for varer og tjenester i en indkøbsordre, skal du definere forudbetalingsværdien for den tilknyttede indkøbsordre. Gå til **Kreditor \> Almindelige \> Indkøbsordrer \> Alle indkøbsordrer**, og find leverandørens indkøbsordre. Vælg fanen **Indkøb**, i handlingsruden, og vælg derefter **Forudbetaling**. Angiv oplysninger om forudbetalingen, herunder en beskrivelse, værdien af forudbetalingen, om forudbetalingen er et fast beløb eller en procentdel, og et id for forudbetalingskategorien. 
+
+Bemærk, at flere forudbetalingsdefinitioner i en indkøbsordre ikke er tilladt. Hvis du vil tillade flere forudbetalinger på en indkøbsordre, skal du bogføre betalingerne ved hjælp af betalingskladden i stedet for en forudbetalingsfaktura.
+
+Forudbetalingen kan fjernes fra indkøbsordren, medmindre du allerede har udlignet en betaling mod den bogførte forudbetalingsfaktura eller bogført standardfakturaen. Hvis du vil fjerne en forudbetalingsoplysning fra indkøbsordren, skal du vælge **Kreditor \> Almindelige \> Indkøbsordrer \> Alle indkøbsordrer** og finde kreditorens indkøbsordre. Vælg fanen **Indkøb** i handlingsruden, og vælg derefter **Fjern forudbetaling**.
+
+## <a name="create-and-post-a-prepayment-invoice"></a>Oprette og bogføre en forudbetalingsfaktura
+Hvis du vil registrere kreditorens forudbetalingsfaktura, skal du gå til siden **Kreditorfaktura** ved at vælge indstillingen **Forudbetalingsfaktura** på siden **Indkøbsordrer** (fanen **Kreditor \> Almindelige \> Indkøbsordrer \> Alle indkøbsordrer \> fanen Faktura \> Forudbetalingsfaktura**). Angiv oplysninger om forudbetalingsfakturaen, herunder fakturanummeret. Du kan ikke ændre antal i en forudbetalingsfaktura. Hvis kreditoren har faktureret et delvist beløb af den forudbetalingsværdi, der er defineret på indkøbsordren, kan du opdatere enhedsprisen, så den afspejler delværdien.
+
+Når forudbetalingsfakturaen bogføres, opdateres kreditorsaldoen og forudbetalingskontoen. Værdien **Anvendelse af forudbetaling** i forudbetalingsdefinitionen, som findes på indkøbsordren, opdateres også. De økonomiske standarddimensionsposter for det bogførte forudbetalingsbilag tages fra overskriftsoplysningerne på indkøbsordren.
+
+## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Bogføre og udligne betalinger for forudbetalingsfakturaen
+Derefter betales forudbetalingsfakturaen fra siden **Betalingskladde**. Klik på **Kreditor \> Kladder \> Betalinger \> Betalingskladde** for at få adgang til betalingskladder. Når udligningen af betalingen er bogført på forudbetalingsfakturaen, opdateres indkøbsordrens **Restværdi for anvendelse af forudbetaling**.
+
+Før du bogfører standardfakturaen for forudbetalingsfakturaen, kan du tilbageføre udligningen af betalingen fra forudbetalingsfakturaen. Men når der er anvendt en standardfaktura på forudbetalingsfakturaen, kan du ikke tilbageføre udligningen af betalingen fra forudbetalingsfakturaen.
+
+## <a name="post-the-standard-vendor-invoice-for-the-purchase-order-and-apply-the-prepayment-invoice-to-the-standard-invoice"></a>Bogføre standardleverandørfakturaen for indkøbsordren og anvende forudbetalingsfakturaen på standardfakturaen
+Registrer den standardfaktura, der er modtaget fra kreditoren. Som en del af denne proces kan du anvende den udlignede forudbetalingsfaktura på kreditorfakturaen, så fakturaens værdi reduceres med det beløb, der allerede er betalt. Hvis du anvender forudbetalingsfakturaen på kreditorfakturaen, sikrer du, at regnskabsposter fra forudbetalingsfakturaen tilbageføres.
+
+## <a name="application-of-the-prepayment-invoice-after-posting-the-standard-invoice"></a>Anvendelse af forudbetalingsfakturaen efter bogføring af standardfakturaen
+Hvis du glemmer at anvende forudbetalingen på standardkreditorfakturaen på tidspunktet for bogføring af kreditorfakturaen, kan den udlignede forudbetaling anvendes på andre fakturaer fra denne kreditor fra siden **Kreditorer** (**Kreditor \> Almindelige \> Kreditorer \> Alle kreditorer \> fanen Faktura \> Anvend**).
+
+## <a name="reversal-of-the-prepayment-application-process"></a>Tilbageførsel af processen til anvendelse af forudbetaling
+Hvis du har brug for at fjerne udligningen af eller tilbageføre anvendelsen af en forudbetalingsfaktura fra en standardfaktura, skal du vælge handlingen **Tilbagefør** på siden **Kreditorer** (**Kreditor \> Almindelige \> Kreditorer \> Alle kreditorer \> fanen Faktura \> Tilbagefør**). Når anvendelsen af forudbetaling er tilbageført, kan du anvende forudbetalingen på en anden standardfaktura. 
 
 
 

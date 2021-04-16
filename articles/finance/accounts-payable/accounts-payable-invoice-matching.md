@@ -2,11 +2,9 @@
 title: Oversigt over fakturasammenholdelse for kreditorer
 description: Fakturasammenholdelse for kreditorer er den proces, hvor kreditorfakturaen, indkøbsordren og produktkvitteringen sammenholdes.
 author: abruer
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ecbfdd157985899da04aa6b41d9a96cdf2fa6bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 86fe870c43721ac737a7bd34cc3c985e61911dc1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213038"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820901"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Oversigt over fakturasammenholdelse for kreditorer
 
@@ -48,7 +46,7 @@ Du kan bruge følgende typer fakturasammenholdelse for kreditorer:
 
 Ved tovejs- og trevejs-sammenholdelse sammenlignes prisoplysninger altid med enhedsprisen. Du kan også konfigurere disse sammenholdelsespolitikker, så du kan sammenligne prisoplysninger med den samlede pris.
 -   Sammenholdelse af nettoenhedspris – sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettoenhedsprisen for hver linje på fakturaen med den tilsvarende nettoenhedspris på indkøbsordren. Nettoenhedsprisen bestemmes af følgende formel: Nettobeløbet for linjen/antallet på linjen
--   Sammenholdelse af samlede priser – sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettobeløbet (den samlede pris) for hver linje på fakturaen med det tilsvarende nettobeløb på indkøbsordren. Nettobeløbet bestemmes af følgende formel: *(Enhedspris \* linjeantal) + linjetillæg - linjerabatter*. Når du sammenholder pristotaler med procentdel, sammenligner systemet værdier ved hjælp af transaktionsvalutaen. Når du sammenholder pristotaler med beløb, sammenligner systemet værdierne ved hjælp regnskabsvalutaen.
+-   Sammenholdelse af samlede priser – sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettobeløbet (den samlede pris) for hver linje på fakturaen med det tilsvarende nettobeløb på indkøbsordren. Nettobeløbet bestemmes af følgende formel: *(Enhedspris \* linjeantal) + linjetillæg - linjerabatter*. Når du sammenholder pristotaler med procentdel, sammenligner systemet værdier ved hjælp af transaktionsvalutaen. Når du sammenholder pristotaler med beløb, sammenligner systemet værdierne ved hjælp regnskabsvalutaen. Når du fakturerer en indkøbsordrelinje delvist, foretages valideringen af sammenholdelse af pristotaler på den sidste faktura for den pågældende linje. 
 
 Beregninger af fakturasammenholdelse udføres som regel automatisk, når du redigerer kreditorfakturaer på siden Kreditorfaktura. Alternativt kan fakturasammenholdelse udføres efter behov. Fakturasammenholdelse ved behov styres for den juridiske enhed af Opdater status for fakturahoved automatisk på siden kontiene Kreditorparametre under fanen Fakturavalidering. Fakturasammenholdelse kan også udføres som del af en fakturavalidering. Du kan få vist resultaterne af fakturasammenholdelse på siden Kreditorfaktura og relaterede fakturasammenholdelsesformularer.
 

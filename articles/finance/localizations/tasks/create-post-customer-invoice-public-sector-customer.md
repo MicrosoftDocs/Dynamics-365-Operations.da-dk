@@ -2,11 +2,9 @@
 title: Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor
 description: Denne procedure hjælper dig med at oprette og bogføre en salgsordrefaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, ContactPersonLookup, SalesEditLines,  CustInvoiceJournal, ERFormatMappingRunJobTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6148ea5b49a8cd6b941d663e2129f8f5db538527
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 21d37372065fffe322b44013fed2edf8ab3f6f85
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260737"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822665"
 ---
 # <a name="create-and-post-a-customer-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor
 
