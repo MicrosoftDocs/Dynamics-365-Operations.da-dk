@@ -2,7 +2,6 @@
 title: Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
 description: Dette emne indeholder oplysninger om, hvordan du bruger typen Beregnet felt til ER-datakilder.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c2c13cd3f165826e0d5b5ac901ffa61895301e7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569195"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749483"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
 
@@ -194,7 +193,7 @@ På siden **Formatdesigner** kræver det konfigurerede beregnede felt med parame
 
 ![Udvidet liste over beregnede feltniveauer](media/er-calculated-field-type-08.png)
 
-### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Brug det konfigurerede beregnede felt til bindingsformatelementer
+### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Brug det konfigurerede beregnede felt til bindingsformatelementer
 
 1. Vælg **Model.Data2.Levels** for at vælge det konfigurerede beregnede felt.
 2. Vælg formatelementet **Statement.Taxation.Regular**.
@@ -215,7 +214,7 @@ På siden **Formatdesigner** kræver det konfigurerede beregnede felt med parame
 9. Vælg **Bind**.
 10. Vælg **Ja** for at bekræfte erstatningen af den aktuelt anvendte datakilde, **Level3** med den nye datakilde **Niveauer** i alle indlejrede formatelementer under det valgte formatelement.
 
-   Når du angiver argumentet for det beregnede felt med parametre for det XML-element, der repræsenterer beskatningsniveau (f.eks. **Model.Data2.Levels("Reduced")** som en tekstværdi), behøver du ikke gøre det samme for indlejrede XML-attributter – deres bindinger overtager automatisk værdien af det argument, der er defineret på det overordnede niveau (**Model.Data2.Levels.aggregated.Base**, ikke **Model.Data2.Levels("Reduced").aggregated.Base**).
+   Når du angiver argumentet for det beregnede felt med parametre for det XML-element, der repræsenterer beskatningsniveau (f.eks. **Model.Data2.Levels(&quot;Reduced")** som en tekstværdi), behøver du ikke gøre det samme for indlejrede XML-attributter – deres bindinger overtager automatisk værdien af det argument, der er defineret på det overordnede niveau (**Model.Data2.Levels.aggregated.Base**, ikke **Model.Data2.Levels("Reduced").aggregated.Base**).
 
 Tilbagevendende kald af beregnet felt med parametre understøttes ikke.
 
