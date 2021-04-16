@@ -2,11 +2,9 @@
 title: Foretage fejlfinding af indgående lagerstedsoperationer
 description: Dette emne beskriver, hvordan du løser almindelige problemer, der kan opstå, når du arbejder med indgående lagerstedsoperationer i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250876"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828220"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Foretage fejlfinding af indgående lagerstedsoperationer
 
@@ -65,5 +63,22 @@ En ny funktion til håndtering af indgående last, *Overtilgang af lastantal*, l
 
 Du kan finde flere oplysninger under [Bogføre registrerede produktantal i forhold til indkøbsordrer](inbound-load-handling.md#post-registered-quantities).
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>Når jeg registrerer indgående ordrer, modtager jeg følgende fejlmeddelelse: "Antallet er ikke gyldigt".
+
+### <a name="issue-description"></a>Problembeskrivelse
+
+Hvis feltet **Politik for nummerpladegruppering** er indstillet til *Brugerdefineret* for et menupunkt på en mobilenhed, som bruges til at registrere indgående ordrer, får du vist en fejlmeddelelse ("Antallet er ikke gyldigt"), og du kan ikke fuldføre registreringen.
+
+### <a name="issue-cause"></a>Problemårsag
+
+Når *Brugerdefineret* bruges som nummerpladegrupperingspolitik, opdeles den indgående lagerbeholdning i separate nummerplader, som angivet af enhedsseriegruppen. Hvis der bruges batch- eller serienumre til at spore den vare, der modtages, skal antallene for hver batch eller serie angives pr. nummerplade, der registreres. Hvis det antal, der er angivet for nummerplade, overstiger det antal, der stadig skal modtages for de aktuelle dimensioner, får du vist fejlmeddelelsen.
+
+### <a name="issue-resolution"></a>Problemløsning
+
+Når du registrerer en vare ved hjælp af menupunktet på en mobilenhed, hvor feltet **Politik for nummerpladegruppering** er angivet til *Brugerdefineret*, kan systemet kræve, at du bekræfter eller angiver nummerpladenumre, batchnumre eller serienumre.
+
+På siden til bekræftelse af nummerplade vil systemet vise det antal, der er tildelt den aktuelle nummerplade. På batch- eller seriebekræftelsessiderne viser systemet det antal, der stadig skal modtages på den aktuelle nummerplade. Der findes også et felt, hvor du kan angive det antal, der skal registreres for denne kombination af nummerplade og batch- eller serienummer. Hvis det er tilfældet, skal du sikre dig, at det antal, der registreres for nummerpladen, ikke overstiger det antal, der stadig skal modtages.
+
+Hvis der genereres for mange nummerplader ved indgående ordreregistrering, kan værdien i feltet **Politik for nummerpladegruppering** ændres til *Nummerpladegruppering*, og derfor kan der tildeles en ny enhedsseriegruppe til varen, eller indstillingen af **Nummerpladegruppering** for enhedsseriegruppen kan deaktiveres.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Lagerstatusser
 description: I denne artikel beskrives det, hvordan du kan bruge lagerstatus til at kategorisere og holde styr på lageret.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
-ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
+ms.openlocfilehash: e3c8b467f29037bbb869189e3607e11f40aad2c2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476693"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829854"
 ---
 # <a name="inventory-statuses"></a>Lagerstatusser
 
@@ -45,10 +43,14 @@ En lagerstatus er en af dimensionerne i lagringsdimensionsgruppen. Lagerstatusse
 
 Du kan bruge lagerstedsvarer, der enten har disponibel eller ikke-disponibel lagerstatus for indgående arbejde. For eksempel skal du oprette en disponibel status, som hedder *Klar*, en ikke-tilgængelig status, som hedder *Beskadiget* og en spærret status, som hedder *Spærret*. Når du opretter en indkøbsordre for modtagne eller returnerede varer, og hvis nogle af varerne er beskadiget eller ødelagt, kan du ændre lagerstatus for varerne til *Beskadiget* på indkøbsordrelinjen. Når disse varer modtages, angives status automatisk til *Spærret*. Hvis du scanner de beskadigede varer ved hjælp af en mobilenhed, kan Supply Chain Management bruge placeringsinstruktioner og arbejdsskabeloner til at vise oplysninger om en passende placering eller en række placeringer, hvor du kan de lægge disse varer på lager. For returnerede varer oprettes afgangstypen *Reservation* på siden **Lagertransaktioner**.
 
+Du kan angive, hvilke lagerstatusser, der er blokeringsstatusser, ved hjælp af afkrydsningsfelterne **Lagerblokering** på siden **Lagerstatusser**. Du kan ikke bruge lagerstatusser som blokeringsstatusser for salgsordrer, flytteordrer eller projektintegrationer.
+
+Ved udgående arbejde kan du bruge forskellige ikke-blokerende lagerstatusser til at styre, hvilken lagerbeholdning der skal reserveres mod. Hvis du har varer med status *Blokering*, og der køres varedisponering på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk. Desuden er det ikke muligt at opdatere **Lagerstatus** i forbindelse med kvalitetsordrevalidering for kvalitetsordrer i forbindelse med udgående arbejde.
+
 > [!NOTE]
 > Du kan ikke ændre lagerstatus på de lokationer, hvor der findes åbent arbejde. Hvis du f.eks. har modtaget et indkøb for en vare, men ikke har udført trinnet Læg på lager, vil der findes åbent arbejde for den modtagende lokation, og du vil få en fejl, hvis du har forsøgt at ændre lagerstatus på den pågældende lokation. Hvis du fuldfører eller annullerer det relaterede arbejde, kan du ændre status.
- 
-Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har varer med status *Ødelagt*, og der køres varedisponering på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk.
+>
+> Normalt ændres status for den lagerbeholdning, der er relateret til åbent lagerstedsarbejde, kun af arbejdere, der bruger mobilappen Lokationsstyring, f.eks. i forbindelse med en bevægelsesproces.
 
 Når du har oprettet lagerstatusser, kan du angive standardlagerstatus for et sted, vare og lagersted. Du kan også angive en standardstatus for salg, overdragelse og indkøbsordrer. Standardstatus for salgsordrer og udgående overflytningsordre kan ikke have indstillingen **Lagerspærring** angivet til *Ja*. Lagerstatus, der er nedarvet fra standardindstillinger for et websted, lagersted, vare, indkøbsordre, flytteordre eller salgsordre, kan ændres ved hjælp af den mobile enhed, eller på indkøbsordren, salgsordren eller flytteforslagslinjen.
 

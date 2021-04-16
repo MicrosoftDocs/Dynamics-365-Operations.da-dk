@@ -2,11 +2,9 @@
 title: Arbejdspolitikker
 description: I dette emne forklares, hvordan du konfigurerer arbejdspolitikker.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3e7814790bce0aee648421e3a69d702fd0012404
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248541"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838124"
 ---
 # <a name="work-policies"></a>Arbejdspolitikker
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan du kan konfigurere systemet og lagerstedsappen, så de understøtter arbejdspolitikker. Du kan bruge denne funktion til hurtigt at registrere lagerbeholdningen uden at oprette læg på lager-arbejde, når du modtager indkøbs- eller flytteordrer, eller når du fuldfører produktionsprocesser. Dette emne indeholder generelle oplysninger. Du kan finde detaljerede oplysninger, der er relateret til id-modtagelse, under [Modtagelse af id via lagerstedsappen](warehousing-mobile-device-app-license-plate-receiving.md).
+I dette emne forklares, hvordan du kan konfigurere systemet og mobilappen Lokationsstyring, så de understøtter arbejdspolitikker. Du kan bruge denne funktion til hurtigt at registrere lagerbeholdningen uden at oprette læg på lager-arbejde, når du modtager indkøbs- eller flytteordrer, eller når du fuldfører produktionsprocesser. Dette emne indeholder generelle oplysninger. Du kan finde detaljerede oplysninger, der er relateret til id-modtagelse, under [Modtagelse af id via mobilappen Lokationsstyring](warehousing-mobile-device-app-license-plate-receiving.md).
 
-En arbejdspolitik styrer, om der oprettes lagerstedsarbejde, når en produceret vare færdigmeldes, eller når varer modtages ved hjælp af lagerstedsappen. Du konfigurerer hver arbejdspolitik ved at definere de betingelser, der gælder: arbejdsordretyper og processer, lagerlokation og (valgfrit) produkter. En indkøbsordre på produkt *A0001* skal f.eks. modtages på lokation *RECV* på lagersted *24*. Senere forbruges produktet i en anden proces på lokation *RECV*. I dette tilfælde kan du konfigurere en arbejdspolitik for at forhindre, at læg på lager-arbejde oprettes, når en arbejder rapporterer, at produkt *A0001* er modtaget på lokation *RECV*.
+En arbejdspolitik styrer, om der oprettes lagerstedsarbejde, når en produceret vare færdigmeldes, eller når varer modtages ved hjælp af mobilappen Lokationsstyring. Du konfigurerer hver arbejdspolitik ved at definere de betingelser, der gælder: arbejdsordretyper og processer, lagerlokation og (valgfrit) produkter. En indkøbsordre på produkt *A0001* skal f.eks. modtages på lokation *RECV* på lagersted *24*. Senere forbruges produktet i en anden proces på lokation *RECV*. I dette tilfælde kan du konfigurere en arbejdspolitik for at forhindre, at læg på lager-arbejde oprettes, når en arbejder rapporterer, at produkt *A0001* er modtaget på lokation *RECV*.
 
 > [!NOTE]
 > - Hvis en arbejdspolitik skal være aktiv, skal du definere mindst én lokation for den i oversigtspanelet **Lagerlokationer** på siden **Arbejdspolitikker**. 
@@ -297,7 +295,7 @@ Når produktionsordren er færdigmeldt, oprettes der intet arbejde for læg på 
 
 Du kan få flere oplysninger om menupunkter på mobilenheder, i [Konfigurere mobilenheder til lagerstedsarbejde](configure-mobile-devices-warehouse.md).
 
-Du kan finde flere oplysninger om id-modtagelse og arbejdspolitikker under [Modtagelse af id via lagerstedsappen](warehousing-mobile-device-app-license-plate-receiving.md).
+Du kan finde flere oplysninger om id-modtagelse og arbejdspolitikker under [Modtagelse af id via mobilappen Lokationsstyring](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Du finder flere oplysninger om indgående laststyring i [Lagerstedshåndtering af indgående laster til indkøbsordrer](inbound-load-handling.md).
 

@@ -2,11 +2,9 @@
 title: Bruge grænser for kontantstyring
 description: I dette emne forklares det, hvordan du bruger kontantstyring til at definere transaktionsgrænser, når der ikke er nogen kontantsaldo, eller en transaktion vil medføre, at kontantsaldoen falder under et foruddefineret beløb.
 author: v-kiarnd
-manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -15,12 +13,12 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 83e9d798d4da7bd0afcebdc3cccd73d94c06b54e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 08e3bf5caa28328d29d17fbee3ad44411872c4ee
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225184"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837963"
 ---
 # <a name="use-cash-control-limits"></a>Bruge grænser for kontantstyring
 

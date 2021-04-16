@@ -2,11 +2,9 @@
 title: Foretage fejlfinding af reservationer i lokationsstyring
 description: Dette emne beskriver, hvordan du løser almindelige problemer, der kan opstå, når du arbejder med lagerstedsreservationer i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248709"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828100"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>Foretage fejlfinding af reservationer i lokationsstyring
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du løser almindelige problemer, der kan opstå, når du arbejder med lagerstedsreservationer i Microsoft Dynamics 365 Supply Chain Management.
+
+Se [Fejlfinde batch- og seriereservationshierarkier for lagersteder](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) for emner, der er relateret til batch- og serienummerregistreringer.
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>Jeg modtager fejlen "Reservationer kan ikke fjernes, fordi der er oprettet arbejde, der er afhængig af reservationerne".
 
@@ -63,20 +63,6 @@ Dette problem kan opstå, hvis systemet ikke kan opdatere et lagerantal, fordi d
 ### <a name="issue-resolution"></a>Problemløsning
 
 Dette problem skyldes sandsynligvis åbent arbejde. Du skal enten fuldføre arbejdet eller modtage uden arbejdsoprettelse. Sørg for, at der ikke er lagertransaktioner, som fysisk reserverer antallet. Disse transaktioner kan f.eks. være åbne kvalitetsordrer, lagerblokeringsposter eller udlagringsordrer.
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>Jeg får vist følgende fejlmeddelelse: "For at blive tildelt en bølge skal lastlinjer angive dimensionerne over lokationen. Du kan tildele disse dimensioner ved at reservere og genoprette lastlinjen".
-
-### <a name="issue-description"></a>Problembeskrivelse
-
-Når du bruger en vare, der har et "batch over"-reservationshierarki (hvor **batchnummer**-dimensionen er placeret *oven over* **Lokation**-dimensionen), vil kommandoen **Frigiv til lagersted** på siden **Panelet Lastplanlægning** for en delmængde ikke fungere. Du får vist denne fejlmeddelelse, og der oprettes ikke noget arbejde for delmængden.
-
-Men, hvis du bruger en vare, der har et "batch under"-reservationshierarki (hvor **batchnummer**-dimensionen er placeret *under* **Lokation**-dimensionen), kan du frigive en last fra siden **Panelet Lastplanlægning** for en delmængde.
-
-### <a name="issue-resolution"></a>Problemløsning
-
-Denne funktionsmåde er tilsigtet. Hvis du placerer en dimension over **Lokation**-dimensionen i reservationshierarkiet, skal den angives før frigivelsen til lagerstedet. Microsoft har evalueret dette problem og har fastslået, at det er en funktionsbegrænsning under frigivelsen til lagerstedet fra lastplanlægningspanelet. Delmængder kan ikke frigives, hvis en eller flere dimensioner over **Lokation** ikke er angivet.
-
-Du kan finde flere oplysninger under [Fleksibel reservationspolitik for dimension på lagerstedsniveau](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

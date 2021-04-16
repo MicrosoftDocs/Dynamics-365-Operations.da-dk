@@ -2,11 +2,9 @@
 title: Lagerstedsordrer til sky- og kantskalaenheder
 description: Dette emne indeholder oplysninger om lagerstedsordrefunktionaliteten, der bruges som en del af arbejdsbyrden for lagerstedsskalaenheden.
 author: perlynne
-manager: tfeyr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
@@ -19,12 +17,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556356"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836680"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerstedsordrer til sky- og kantskalaenheder
 
@@ -38,7 +36,7 @@ ms.locfileid: "5556356"
 
 *Lagerstedsordrer* er en ordretype, der er oprettet for at understøtte implementering af lagersteders hub og skalaenhed. De giver dig mulighed for at modtage lager, når du kører en lagerstedsbelastning på en skalaenhed. De bruges i øjeblikket kun i forbindelse med indkøbsordrer.
 
-Lagerstedsordrer bruges som en del af behandlingen af lokationsstyring, f.eks. når lagerstedsappen bruges til at registrere fysisk lagerbeholdning under behandlingen af en indgående indkøbsordre. Lagerstedsordrer oprettes som en del af processen *Frigiv til lagersted*, der er tilgængelig for indkøbsordrer, som angiver et skalaenhedslagersted og varer, der er aktiveret til at bruge lokationsstyringsprocesser.
+Lagerstedsordrer bruges som en del af behandlingen af lokationsstyring, f.eks. når mobilappen Lokationsstyring bruges til at registrere fysisk lagerbeholdning under behandlingen af en indgående indkøbsordre. Lagerstedsordrer oprettes som en del af processen *Frigiv til lagersted*, der er tilgængelig for indkøbsordrer, som angiver et skalaenhedslagersted og varer, der er aktiveret til at bruge lokationsstyringsprocesser.
 
 > [!IMPORTANT]
 > Lagerstedsordrer er kun tilgængelige i installationer, hvor der bruges [sky- og kantskalaenheder til arbejdsbyrder i lokationsstyring](cloud-edge-workload-warehousing.md).
@@ -70,7 +68,7 @@ Følg disse trin for at annullere en lagerstedsordrelinjer.
 
 ## <a name="monitor-a-warehouse-order"></a>Overvåge en lagerstedsordre
 
-I visningen **Lagerstedsordrelinjer** kan du overvåge status for indgående modtagelse ved at gennemse værdierne i kolonnen **Resterende antal til modtagelse**. Hvis du vil have vist detaljer, der er relateret til arbejde, der udføres ved hjælp af lagerstedsappen, skal du følge et af disse trin.
+I visningen **Lagerstedsordrelinjer** kan du overvåge status for indgående modtagelse ved at gennemse værdierne i kolonnen **Resterende antal til modtagelse**. Hvis du vil have vist detaljer, der er relateret til arbejde, der udføres ved hjælp af mobilappen Lokationsstyring, skal du følge et af disse trin.
 
 - Gå til **Lokationsstyring \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**, og brug filteret til at finde det, du leder efter.
 - Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**, og åbn den relevante indkøbsordre. Vælg en eller flere linjer i sektionen **Indkøbsordrelinjer**, og vælg derefter **Lagersted \> Lagerstedstilgangsposter**.

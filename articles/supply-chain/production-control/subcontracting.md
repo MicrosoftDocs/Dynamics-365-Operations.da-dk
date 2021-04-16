@@ -2,11 +2,9 @@
 title: Underleverandørarbejde
 description: Med dette emne kan du opbygge en gennemgang af underleverandørarbejde i produktion i Dynamics 365 Supply Chain Management.
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255535"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825176"
 ---
 # <a name="subcontracting"></a>Underleverandørarbejde
 
@@ -210,7 +208,7 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
 
     ![To sæt af arbejde til pluk af råmateriale på siden Arbejde](./media/subcontract22_work-page.png)
 
-26. Start lagerstedsappen for at behandle lagerstedets arbejde for operation 10.
+26. Start mobilappen Lokationsstyring for at behandle lagerstedets arbejde for operation 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
     - I feltet **Fra opr.nr.** skal du vælge **10**.
     - I feltet **Til opr.nr.** skal du vælge **10**.
 
-    ![Værdier, der er angivet under fanen Generelt](./media/subcontract23_start-dialog.png)
+    ![Værdier, der er angivet under fanen Generelt 1](./media/subcontract23_start-dialog.png)
 
 31. Vælg **OK** for at lukke **Start**-dialogboksen og vende tilbage til siden **Alle produktionsordrer**.
 
     Bemærk, at status for produktionsordren nu er **Startet**. Materialerne til operation 10 forbruges af en automatisk bogføring af pluklistekladden. Tidsforbruget for operation 10 er medtaget i en automatisk bogføring af en rutekortskladde.
 
-32. Start lagerstedsappen for at behandle lagerstedets arbejde for operation 20.
+32. Start mobilappen Lokationsstyring for at behandle lagerstedets arbejde for operation 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
     - Angiv **10** i feltet **Antal**.
     - Vælg **Nej** i feltet **Bogfør plukliste nu**.
 
-    ![Værdier, der er angivet under fanen Generelt](./media/subcontract24_general-tab.png)
+    ![Værdier, der er angivet under fanen Generelt 2](./media/subcontract24_general-tab.png)
 
 35. Vælg **OK** for at lukke **Start**-dialogboksen og vende tilbage til siden **Alle produktionsordrer**.
 

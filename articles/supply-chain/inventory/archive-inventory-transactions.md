@@ -2,7 +2,6 @@
 title: Arkivere lagertransaktioner
 description: Dette emne beskriver, hvordan du arkiverer lagertransaktionsdata for at forbedre systemets ydeevne.
 author: sherry-zheng
-manager: tfehr
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 3a0fa65eb728e4ce96bdfc3f7a0f04901551ccea
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: bacc27c1a9066892c51110d28ba9a2ad26bebe77
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556411"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839289"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivere lagertransaktioner
 

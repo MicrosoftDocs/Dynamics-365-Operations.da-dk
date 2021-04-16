@@ -2,11 +2,9 @@
 title: Automatisk frigivelse af forsendelse til cross-docking
 description: I dette emne beskrives en strategi for cross-docking, hvor du kan frigive en behovsordre automatisk til lagerstedet, når den produktionsordre, der leverer behovsantallet, færdigmeldes, så antallet flyttes direkte fra udlagringslokationen for produktionen til forsendelsesområdet.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c831030659b38b52932e504f744d24d999958a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233169"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831428"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse af forsendelse til cross-docking
 
@@ -163,7 +161,7 @@ Udfør følgende trin for at foretage cross-docking af antal færdigvarer til de
 8. På siden **Produktionsordre** i handlingsruden skal du vælge fanen **Produktionsordre**, og i gruppen **Proces** skal du vælge **Estimat** og derefter vælge **OK**. Ordren forkalkuleres, og råvareantallet er reserveret til produktionen.
 9. Under fanen **Produktionsordre** i handlingsruden skal du vælge gruppen **Proces**, vælge **Frigiv** og derefter vælge **OK**. Der oprettes lagerpluk for råvarerne.
 10. Åbn og gennemse arbejdet. Vælg **Arbejdsdetaljer** i gruppen **Generelt** under fanen **Lagersted** i handlingsruden. Notér dig arbejds-id'et.
-11. Log på lagerstedsappen for at køre arbejde på lagersted 51.
+11. Log på mobilappen Lokationsstyring for at køre arbejde på lagersted 51.
 12. Gå til **Produktion** \> **Produktionspluk**.
 13. Angiv arbejds-id'et for at starte og fuldføre råvarepluk. 
 

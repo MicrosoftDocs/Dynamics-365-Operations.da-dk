@@ -2,11 +2,9 @@
 title: Konfigurere indbetalingskortformat
 description: Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e390a8cb25b7f72c7eaa261b63d65121dcab026f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c2cfcd1adf558bc22e2449f2ae88674174350b67
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217285"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830395"
 ---
 # <a name="set-up-payment-slip-format"></a>Konfigurere indbetalingskortformat
 

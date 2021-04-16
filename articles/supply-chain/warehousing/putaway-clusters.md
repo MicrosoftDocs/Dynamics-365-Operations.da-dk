@@ -2,11 +2,9 @@
 title: Læg på lager-klynger
 description: Læg på lager-klynger giver mulighed for at plukke flere id'er samtidigt og derefter tage dem til læg på lager forskellige steder. De kan være meget nyttige for detailforretninger, hvor id'erne typisk ikke er fulde lagerpaller.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228435"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840359"
 ---
 # <a name="putaway-clusters"></a>Læg på lager-klynger
 
@@ -230,7 +228,7 @@ Dette scenario simulerer behandling af læg på lager-klyngen.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Modtage og sortere lageret i en klynge
 
-1. Log på lagerstedsappen som en bruger, der er konfigureret til lagersted *61*.
+1. Log på mobilappen Lokationsstyring som en bruger, der er konfigureret til lagersted *61*.
 1. I hovedmenuen skal du vælge **Indgående**.
 1. Vælg **Modtag og sortér klynge** i menuen **Indgående**.
 1. Angiv indkøbsordrenummeret i feltet **IO-num**.
@@ -272,7 +270,7 @@ Før varerne i klyngen kan lægges på lager, skal klyngen lukkes.
 
 #### <a name="put-the-cluster-away"></a>Lægge klyngen på lager
 
-1. Log på lagerstedsappen som en bruger, der er konfigureret til lagersted *61*.
+1. Log på mobilappen Lokationsstyring som en bruger, der er konfigureret til lagersted *61*.
 1. I hovedmenuen skal du vælge **Indgående**.
 1. Vælg **Læg på lager-klynge** i menuen **Indgående**.
 1. Vælg **Klynge-id**, og angiv det klynge-id, du tidligere har angivet til den lukkede klynge.

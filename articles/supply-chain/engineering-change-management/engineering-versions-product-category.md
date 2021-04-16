@@ -2,11 +2,9 @@
 title: Tekniske versioner og tekniske produktkategorier
 description: Dette emne giver oplysninger om begrebet tekniske versioner. Tekniske versioner sikrer, at forskellige tilstande af et produkt og dets data holdes opdaterede og tydelige, og at de kan visualiseres i systemet.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e1f8c8d74a5da1dceb54bcc7c16aebdfe2bf4fd1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1ebcb43b6c62ce895d3b1b36d7793f90208ca23e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214932"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836632"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Tekniske versioner og tekniske produktkategorier
 

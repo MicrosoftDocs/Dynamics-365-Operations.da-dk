@@ -2,11 +2,9 @@
 title: Betalingsspærring af kreditorfakturaer i den offentlige sektor i Frankrig
 description: De almindelige processer, der vedrører betalingsspærring af kreditorfakturaer i Microsoft Dynamics 365 Finance, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PaymTerm
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e830ad4e58fb3552ecbb7b961504b75b6c287c05
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7586551ea3c2d5887db193c95e03ee2c54ac2fce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248863"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823644"
 ---
 # <a name="vendor-invoice-payment-holds-in-the-public-sector-in-france"></a>Betalingsspærring af kreditorfakturaer i den offentlige sektor i Frankrig
 

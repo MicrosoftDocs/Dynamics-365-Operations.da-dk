@@ -2,11 +2,9 @@
 title: Tildele et indbetalingskortformat til en debitorkonto
 description: Denne procedure fører dig gennem oprettelse af formatet for vedhæftningen af indbetalingskortet for en udvalgt debitor.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c14ec1a87a3a11caf1fcfbd6d58f2962babf9c5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dac89bebfdcbb17c61393af8963fa27a2db56635
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234098"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832522"
 ---
 # <a name="assign-a-payment-slip-format-to-a-customer-account"></a>Tildele et indbetalingskortformat til en debitorkonto
 
