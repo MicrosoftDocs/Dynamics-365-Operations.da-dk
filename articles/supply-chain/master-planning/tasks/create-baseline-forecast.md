@@ -2,11 +2,9 @@
 title: Oprette en baselineprognose
 description: En produktionsplanlægger kan oprette et prognosegrundlag ved hjælp af prognosemodeller med tidsserier eller ved at kopiere den historiske efterspørgsel.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqIntercompanyPlanningGroupSetup, ReqIntercompanyPlanningGroupAllocKeys, ReqDemPlanForecastParameters, ReqDemPlanCreateForecastDialog, SysQueryForm, ReqDemPlanForecastViewer
 audience: Application User
@@ -15,71 +13,71 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f18da9563421e7e092869451376e53a450abdf7e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d89219d90ddff7cec70195025ffc361fb8101552
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246711"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841713"
 ---
-# <a name="create-a-baseline-forecast"></a><span data-ttu-id="eb277-103">Oprette en baselineprognose</span><span class="sxs-lookup"><span data-stu-id="eb277-103">Create a baseline forecast</span></span>
+# <a name="create-a-baseline-forecast"></a><span data-ttu-id="34ca3-103">Oprette en baselineprognose</span><span class="sxs-lookup"><span data-stu-id="34ca3-103">Create a baseline forecast</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="eb277-104">En produktionsplanlægger kan oprette et prognosegrundlag ved hjælp af prognosemodeller med tidsserier eller ved at kopiere den historiske efterspørgsel.</span><span class="sxs-lookup"><span data-stu-id="eb277-104">A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand.</span></span> <span data-ttu-id="eb277-105">Denne procedure viser, hvordan du kopierer den historiske efterspørgsel for at oprette et prognosegrundlag for alle produkter ved brug af en varefordelingsnøgle.</span><span class="sxs-lookup"><span data-stu-id="eb277-105">This procedure shows how to copy the historical demand to create a baseline forecast for all products using one item allocation key.</span></span> 
+<span data-ttu-id="34ca3-104">En produktionsplanlægger kan oprette et prognosegrundlag ved hjælp af prognosemodeller med tidsserier eller ved at kopiere den historiske efterspørgsel.</span><span class="sxs-lookup"><span data-stu-id="34ca3-104">A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand.</span></span> <span data-ttu-id="34ca3-105">Denne procedure viser, hvordan du kopierer den historiske efterspørgsel for at oprette et prognosegrundlag for alle produkter ved brug af en varefordelingsnøgle.</span><span class="sxs-lookup"><span data-stu-id="34ca3-105">This procedure shows how to copy the historical demand to create a baseline forecast for all products using one item allocation key.</span></span> 
 
 
-## <a name="set-up-an-item-allocation-key"></a><span data-ttu-id="eb277-106">Oprette en varefordelingsnøgle</span><span class="sxs-lookup"><span data-stu-id="eb277-106">Set up an item allocation key</span></span>
-1. <span data-ttu-id="eb277-107">Gå til Overordnet planlægning > Opsætning > Interne planlægningsgrupper.</span><span class="sxs-lookup"><span data-stu-id="eb277-107">Go to Master planning > Setup > Intercompany planning groups.</span></span>
-2. <span data-ttu-id="eb277-108">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="eb277-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="eb277-109">For eksempel kan du filtrere på feltet Navn med værdien '10'.</span><span class="sxs-lookup"><span data-stu-id="eb277-109">For example, filter on the Name field with a value of '10'.</span></span>
-    * <span data-ttu-id="eb277-110">Behovsprognose kører på tværs af juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="eb277-110">Demand forecasting runs across legal entities.</span></span> <span data-ttu-id="eb277-111">Derfor skal du konfigurere alle firmaer, som du generere prognoser for, i en intern planlægningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="eb277-111">That's why you need to set up all the companies for which you want to generate forecasts in one intercompany planning group.</span></span>  
-3. <span data-ttu-id="eb277-112">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eb277-112">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="eb277-113">Klik på Vis varefordelingsnøgler.</span><span class="sxs-lookup"><span data-stu-id="eb277-113">Click Item allocation keys.</span></span>
-    * <span data-ttu-id="eb277-114">Vælg alle de varefordelingsnøgler, hvortil du vil oprette prognoser.</span><span class="sxs-lookup"><span data-stu-id="eb277-114">Select all the item allocation keys for which you want to create forecasts.</span></span>  
-5. <span data-ttu-id="eb277-115">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eb277-115">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="eb277-116">Vælg D_Aloc-varefordelingsnøgle.</span><span class="sxs-lookup"><span data-stu-id="eb277-116">Select D_Aloc item allocation key.</span></span>  
-6. <span data-ttu-id="eb277-117">Klik på >.</span><span class="sxs-lookup"><span data-stu-id="eb277-117">Click >.</span></span>
-7. <span data-ttu-id="eb277-118">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="eb277-118">Close the page.</span></span>
-8. <span data-ttu-id="eb277-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="eb277-119">Close the page.</span></span>
+## <a name="set-up-an-item-allocation-key"></a><span data-ttu-id="34ca3-106">Oprette en varefordelingsnøgle</span><span class="sxs-lookup"><span data-stu-id="34ca3-106">Set up an item allocation key</span></span>
+1. <span data-ttu-id="34ca3-107">Gå til Overordnet planlægning > Opsætning > Interne planlægningsgrupper.</span><span class="sxs-lookup"><span data-stu-id="34ca3-107">Go to Master planning > Setup > Intercompany planning groups.</span></span>
+2. <span data-ttu-id="34ca3-108">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="34ca3-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="34ca3-109">For eksempel kan du filtrere på feltet Navn med værdien '10'.</span><span class="sxs-lookup"><span data-stu-id="34ca3-109">For example, filter on the Name field with a value of '10'.</span></span>
+    * <span data-ttu-id="34ca3-110">Behovsprognose kører på tværs af juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="34ca3-110">Demand forecasting runs across legal entities.</span></span> <span data-ttu-id="34ca3-111">Derfor skal du konfigurere alle firmaer, som du generere prognoser for, i en intern planlægningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="34ca3-111">That's why you need to set up all the companies for which you want to generate forecasts in one intercompany planning group.</span></span>  
+3. <span data-ttu-id="34ca3-112">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="34ca3-112">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="34ca3-113">Klik på Vis varefordelingsnøgler.</span><span class="sxs-lookup"><span data-stu-id="34ca3-113">Click Item allocation keys.</span></span>
+    * <span data-ttu-id="34ca3-114">Vælg alle de varefordelingsnøgler, hvortil du vil oprette prognoser.</span><span class="sxs-lookup"><span data-stu-id="34ca3-114">Select all the item allocation keys for which you want to create forecasts.</span></span>  
+5. <span data-ttu-id="34ca3-115">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="34ca3-115">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="34ca3-116">Vælg D_Aloc-varefordelingsnøgle.</span><span class="sxs-lookup"><span data-stu-id="34ca3-116">Select D_Aloc item allocation key.</span></span>  
+6. <span data-ttu-id="34ca3-117">Klik på >.</span><span class="sxs-lookup"><span data-stu-id="34ca3-117">Click >.</span></span>
+7. <span data-ttu-id="34ca3-118">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="34ca3-118">Close the page.</span></span>
+8. <span data-ttu-id="34ca3-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="34ca3-119">Close the page.</span></span>
 
-## <a name="set-up-the-demand-forecasting-parameters"></a><span data-ttu-id="eb277-120">Konfigurere parametre til behovsprognoserne</span><span class="sxs-lookup"><span data-stu-id="eb277-120">Set up the demand forecasting parameters</span></span>
-1. <span data-ttu-id="eb277-121">Gå til Overordnet planlægning > Opsætning > Behovsprognose > Parametre til behovsprognoser.</span><span class="sxs-lookup"><span data-stu-id="eb277-121">Go to Master planning > Setup > Demand forecasting > Demand forecasting parameters.</span></span>
-2. <span data-ttu-id="eb277-122">Udvid sektionen Parametre til prognosealgoritme.</span><span class="sxs-lookup"><span data-stu-id="eb277-122">Expand the Forecast algorithm parameters section.</span></span>
-3. <span data-ttu-id="eb277-123">Vælg "Kopiér over historisk efterspørgsel" i feltet Strategi for generering af prognose.</span><span class="sxs-lookup"><span data-stu-id="eb277-123">In the Forecast generation strategy field, select 'Copy over historical demand'.</span></span>
-4. <span data-ttu-id="eb277-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="eb277-124">Click Save.</span></span>
+## <a name="set-up-the-demand-forecasting-parameters"></a><span data-ttu-id="34ca3-120">Konfigurere parametre til behovsprognoserne</span><span class="sxs-lookup"><span data-stu-id="34ca3-120">Set up the demand forecasting parameters</span></span>
+1. <span data-ttu-id="34ca3-121">Gå til Overordnet planlægning > Opsætning > Behovsprognose > Parametre til behovsprognoser.</span><span class="sxs-lookup"><span data-stu-id="34ca3-121">Go to Master planning > Setup > Demand forecasting > Demand forecasting parameters.</span></span>
+2. <span data-ttu-id="34ca3-122">Udvid sektionen Parametre til prognosealgoritme.</span><span class="sxs-lookup"><span data-stu-id="34ca3-122">Expand the Forecast algorithm parameters section.</span></span>
+3. <span data-ttu-id="34ca3-123">Vælg "Kopiér over historisk efterspørgsel" i feltet Strategi for generering af prognose.</span><span class="sxs-lookup"><span data-stu-id="34ca3-123">In the Forecast generation strategy field, select 'Copy over historical demand'.</span></span>
+4. <span data-ttu-id="34ca3-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="34ca3-124">Click Save.</span></span>
 
-## <a name="create-a-baseline-forecast"></a><span data-ttu-id="eb277-125">Oprette en baselineprognose</span><span class="sxs-lookup"><span data-stu-id="eb277-125">Create a baseline forecast</span></span>
-1. <span data-ttu-id="eb277-126">Gå til Overordnet planlægning > Prognose > Behovsprognose > Generér statistisk budgetgrundlag.</span><span class="sxs-lookup"><span data-stu-id="eb277-126">Go to Master planning > Forecasting > Demand forecasting > Generate statistical baseline forecast.</span></span>
-2. <span data-ttu-id="eb277-127">Indtast en dato i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="eb277-127">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="eb277-128">Hvis du har salgsordrer med start fra 1. januar 2015, skal du angive denne dato.</span><span class="sxs-lookup"><span data-stu-id="eb277-128">If you have sales orders starting from January 1, 2015, enter this date.</span></span> <span data-ttu-id="eb277-129">Hvis du ikke har det, kan du angive den tidligste dato for salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="eb277-129">If you don't, enter the earliest date of your sales orders.</span></span>  
-3. <span data-ttu-id="eb277-130">Indtast en dato i feltet Til dato.</span><span class="sxs-lookup"><span data-stu-id="eb277-130">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="eb277-131">Angiv den sidste dato for dine salgsordrer, f.eks. '31-03-2015'.</span><span class="sxs-lookup"><span data-stu-id="eb277-131">Enter the last date of your sales orders, for example '2015-03-31'.</span></span>  
-4. <span data-ttu-id="eb277-132">Indtast en dato i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="eb277-132">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="eb277-133">Indtast '01-04-2015'.</span><span class="sxs-lookup"><span data-stu-id="eb277-133">Enter '2015-04-01'.</span></span> <span data-ttu-id="eb277-134">Denne dato beregnes automatisk som startdatoen for det næste prognosegruppe.</span><span class="sxs-lookup"><span data-stu-id="eb277-134">This date will be automatically calculated as the start date of the next forecasting bucket.</span></span>  
-5. <span data-ttu-id="eb277-135">Udvid posterne for at inkludere sektion.</span><span class="sxs-lookup"><span data-stu-id="eb277-135">Expand the Records to include section.</span></span>
-6. <span data-ttu-id="eb277-136">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="eb277-136">Click Filter.</span></span>
-7. <span data-ttu-id="eb277-137">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eb277-137">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="eb277-138">Markér rækken, hvor feltet = intern planlægningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="eb277-138">Mark the row where Field = Intercompany planning group.</span></span>  
-8. <span data-ttu-id="eb277-139">Skriv en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="eb277-139">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="eb277-140">Indtast den interne planlægningsgruppe, f.eks. 10, som du brugte i den første opgave.</span><span class="sxs-lookup"><span data-stu-id="eb277-140">Type the intercompany planning group, for example, 10, that you used in the first task.</span></span>  
-9. <span data-ttu-id="eb277-141">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eb277-141">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="eb277-142">Markér rækken, hvor feltet = varefordelingsnøgle.</span><span class="sxs-lookup"><span data-stu-id="eb277-142">Select the row where Field = Item allocation key.</span></span>  
-10. <span data-ttu-id="eb277-143">Skriv en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="eb277-143">In the Criteria field, type a value.</span></span>
-11. <span data-ttu-id="eb277-144">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="eb277-144">Click OK.</span></span>
-12. <span data-ttu-id="eb277-145">Udvid sektionen Avancerede parametre.</span><span class="sxs-lookup"><span data-stu-id="eb277-145">Expand the Advanced parameters section.</span></span>
-13. <span data-ttu-id="eb277-146">Vælg "Måned" i feltet Prognosegruppe.</span><span class="sxs-lookup"><span data-stu-id="eb277-146">In the Forecast bucket field, select 'Month'.</span></span>
-14. <span data-ttu-id="eb277-147">Angiv "3" i feltet Prognosehorisont.</span><span class="sxs-lookup"><span data-stu-id="eb277-147">In the Forecast horizon field, enter '3'.</span></span>
-15. <span data-ttu-id="eb277-148">Angiv "1" i feltet Låsningstidshorisont.</span><span class="sxs-lookup"><span data-stu-id="eb277-148">In the Freeze time fence field, enter '1'.</span></span>
-16. <span data-ttu-id="eb277-149">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="eb277-149">Click OK.</span></span>
+## <a name="create-a-baseline-forecast"></a><span data-ttu-id="34ca3-125">Oprette en baselineprognose</span><span class="sxs-lookup"><span data-stu-id="34ca3-125">Create a baseline forecast</span></span>
+1. <span data-ttu-id="34ca3-126">Gå til Overordnet planlægning > Prognose > Behovsprognose > Generér statistisk budgetgrundlag.</span><span class="sxs-lookup"><span data-stu-id="34ca3-126">Go to Master planning > Forecasting > Demand forecasting > Generate statistical baseline forecast.</span></span>
+2. <span data-ttu-id="34ca3-127">Indtast en dato i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="34ca3-127">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="34ca3-128">Hvis du har salgsordrer med start fra 1. januar 2015, skal du angive denne dato.</span><span class="sxs-lookup"><span data-stu-id="34ca3-128">If you have sales orders starting from January 1, 2015, enter this date.</span></span> <span data-ttu-id="34ca3-129">Hvis du ikke har det, kan du angive den tidligste dato for salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="34ca3-129">If you don't, enter the earliest date of your sales orders.</span></span>  
+3. <span data-ttu-id="34ca3-130">Indtast en dato i feltet Til dato.</span><span class="sxs-lookup"><span data-stu-id="34ca3-130">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="34ca3-131">Angiv den sidste dato for dine salgsordrer, f.eks. '31-03-2015'.</span><span class="sxs-lookup"><span data-stu-id="34ca3-131">Enter the last date of your sales orders, for example '2015-03-31'.</span></span>  
+4. <span data-ttu-id="34ca3-132">Indtast en dato i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="34ca3-132">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="34ca3-133">Indtast '01-04-2015'.</span><span class="sxs-lookup"><span data-stu-id="34ca3-133">Enter '2015-04-01'.</span></span> <span data-ttu-id="34ca3-134">Denne dato beregnes automatisk som startdatoen for det næste prognosegruppe.</span><span class="sxs-lookup"><span data-stu-id="34ca3-134">This date will be automatically calculated as the start date of the next forecasting bucket.</span></span>  
+5. <span data-ttu-id="34ca3-135">Udvid posterne for at inkludere sektion.</span><span class="sxs-lookup"><span data-stu-id="34ca3-135">Expand the Records to include section.</span></span>
+6. <span data-ttu-id="34ca3-136">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="34ca3-136">Click Filter.</span></span>
+7. <span data-ttu-id="34ca3-137">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="34ca3-137">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="34ca3-138">Markér rækken, hvor feltet = intern planlægningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="34ca3-138">Mark the row where Field = Intercompany planning group.</span></span>  
+8. <span data-ttu-id="34ca3-139">Skriv en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="34ca3-139">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="34ca3-140">Indtast den interne planlægningsgruppe, f.eks. 10, som du brugte i den første opgave.</span><span class="sxs-lookup"><span data-stu-id="34ca3-140">Type the intercompany planning group, for example, 10, that you used in the first task.</span></span>  
+9. <span data-ttu-id="34ca3-141">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="34ca3-141">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="34ca3-142">Markér rækken, hvor feltet = varefordelingsnøgle.</span><span class="sxs-lookup"><span data-stu-id="34ca3-142">Select the row where Field = Item allocation key.</span></span>  
+10. <span data-ttu-id="34ca3-143">Skriv en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="34ca3-143">In the Criteria field, type a value.</span></span>
+11. <span data-ttu-id="34ca3-144">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="34ca3-144">Click OK.</span></span>
+12. <span data-ttu-id="34ca3-145">Udvid sektionen Avancerede parametre.</span><span class="sxs-lookup"><span data-stu-id="34ca3-145">Expand the Advanced parameters section.</span></span>
+13. <span data-ttu-id="34ca3-146">Vælg "Måned" i feltet Prognosegruppe.</span><span class="sxs-lookup"><span data-stu-id="34ca3-146">In the Forecast bucket field, select 'Month'.</span></span>
+14. <span data-ttu-id="34ca3-147">Angiv "3" i feltet Prognosehorisont.</span><span class="sxs-lookup"><span data-stu-id="34ca3-147">In the Forecast horizon field, enter '3'.</span></span>
+15. <span data-ttu-id="34ca3-148">Angiv "1" i feltet Låsningstidshorisont.</span><span class="sxs-lookup"><span data-stu-id="34ca3-148">In the Freeze time fence field, enter '1'.</span></span>
+16. <span data-ttu-id="34ca3-149">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="34ca3-149">Click OK.</span></span>
 
-## <a name="visualize-the-demand-forecast"></a><span data-ttu-id="eb277-150">Visualiser behovsprognosen</span><span class="sxs-lookup"><span data-stu-id="eb277-150">Visualize the demand forecast</span></span>
-1. <span data-ttu-id="eb277-151">Gå til Overordnet planlægning > Prognose > Behovsprognose > Justeret behovsprognose.</span><span class="sxs-lookup"><span data-stu-id="eb277-151">Go to Master planning > Forecasting > Demand forecasting > Adjusted demand forecast.</span></span>
-2. <span data-ttu-id="eb277-152">Vælg cellen i række 1, kolonne 2 i tabellen for aggregeret visning.</span><span class="sxs-lookup"><span data-stu-id="eb277-152">In the aggregated view table, select the cell in row 1, column 2.</span></span> <span data-ttu-id="eb277-153">Dette er den anden måned, du har oprettet budget for.</span><span class="sxs-lookup"><span data-stu-id="eb277-153">This is the second month for which you have created forecast.</span></span>
-3. <span data-ttu-id="eb277-154">Angiv QtyCell til "400".</span><span class="sxs-lookup"><span data-stu-id="eb277-154">Set QtyCell to '400'.</span></span>
-    * <span data-ttu-id="eb277-155">Angiv et andet tal i cellen end det, der blev prognosticeret, f.eks. 400.</span><span class="sxs-lookup"><span data-stu-id="eb277-155">In the cell, enter a different number than the one that was forecasted, for example, 400.</span></span>  
-4. <span data-ttu-id="eb277-156">Du har foretaget en manuel regulering af prognosen.</span><span class="sxs-lookup"><span data-stu-id="eb277-156">You have made a manual adjustment to the forecast.</span></span> <span data-ttu-id="eb277-157">Bemærk den grafiske indikator i næste trin.</span><span class="sxs-lookup"><span data-stu-id="eb277-157">Notice the graphical indication in the next step.</span></span>
-5. <span data-ttu-id="eb277-158">Klik på Prognoselinjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="eb277-158">Click Forecast line details.</span></span>
-    * <span data-ttu-id="eb277-159">Du kan se de nøjagtige værdier, historisk efterspørgsel og prognose på denne side.</span><span class="sxs-lookup"><span data-stu-id="eb277-159">In this page, you can see the accuracy values, historical demand, and forecast.</span></span> <span data-ttu-id="eb277-160">Du kan også foretage ændringer af prognosen.</span><span class="sxs-lookup"><span data-stu-id="eb277-160">You can make changes to the forecast as well.</span></span>  
+## <a name="visualize-the-demand-forecast"></a><span data-ttu-id="34ca3-150">Visualiser behovsprognosen</span><span class="sxs-lookup"><span data-stu-id="34ca3-150">Visualize the demand forecast</span></span>
+1. <span data-ttu-id="34ca3-151">Gå til Overordnet planlægning > Prognose > Behovsprognose > Justeret behovsprognose.</span><span class="sxs-lookup"><span data-stu-id="34ca3-151">Go to Master planning > Forecasting > Demand forecasting > Adjusted demand forecast.</span></span>
+2. <span data-ttu-id="34ca3-152">Vælg cellen i række 1, kolonne 2 i tabellen for aggregeret visning.</span><span class="sxs-lookup"><span data-stu-id="34ca3-152">In the aggregated view table, select the cell in row 1, column 2.</span></span> <span data-ttu-id="34ca3-153">Dette er den anden måned, du har oprettet budget for.</span><span class="sxs-lookup"><span data-stu-id="34ca3-153">This is the second month for which you have created forecast.</span></span>
+3. <span data-ttu-id="34ca3-154">Angiv QtyCell til "400".</span><span class="sxs-lookup"><span data-stu-id="34ca3-154">Set QtyCell to '400'.</span></span>
+    * <span data-ttu-id="34ca3-155">Angiv et andet tal i cellen end det, der blev prognosticeret, f.eks. 400.</span><span class="sxs-lookup"><span data-stu-id="34ca3-155">In the cell, enter a different number than the one that was forecasted, for example, 400.</span></span>  
+4. <span data-ttu-id="34ca3-156">Du har foretaget en manuel regulering af prognosen.</span><span class="sxs-lookup"><span data-stu-id="34ca3-156">You have made a manual adjustment to the forecast.</span></span> <span data-ttu-id="34ca3-157">Bemærk den grafiske indikator i næste trin.</span><span class="sxs-lookup"><span data-stu-id="34ca3-157">Notice the graphical indication in the next step.</span></span>
+5. <span data-ttu-id="34ca3-158">Klik på Prognoselinjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="34ca3-158">Click Forecast line details.</span></span>
+    * <span data-ttu-id="34ca3-159">Du kan se de nøjagtige værdier, historisk efterspørgsel og prognose på denne side.</span><span class="sxs-lookup"><span data-stu-id="34ca3-159">In this page, you can see the accuracy values, historical demand, and forecast.</span></span> <span data-ttu-id="34ca3-160">Du kan også foretage ændringer af prognosen.</span><span class="sxs-lookup"><span data-stu-id="34ca3-160">You can make changes to the forecast as well.</span></span>  
 
 
 

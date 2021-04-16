@@ -1,12 +1,10 @@
 ---
 title: Vedligeholdelsesanmodningsrapporter
 description: Dette emne forklarer, hvordan du opretter vedligeholdelsesanmodningsrapporter i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,47 +12,47 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9e10327ad65b712cf7713eb3e25713ac5dae950e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0057d1a2dc00cef2474bc77b76af0d2e2b783d0c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253296"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839649"
 ---
-# <a name="maintenance-request-reports"></a><span data-ttu-id="541e6-103">Vedligeholdelsesanmodningsrapporter</span><span class="sxs-lookup"><span data-stu-id="541e6-103">Maintenance request reports</span></span>
+# <a name="maintenance-request-reports"></a><span data-ttu-id="f7859-103">Vedligeholdelsesanmodningsrapporter</span><span class="sxs-lookup"><span data-stu-id="f7859-103">Maintenance request reports</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="541e6-104">I Styring af aktiver kan du generere to rapporter, der er relateret til vedligeholdelsesanmodninger.</span><span class="sxs-lookup"><span data-stu-id="541e6-104">In Asset Management, you can generate two reports that are related to maintenance requests.</span></span> <span data-ttu-id="541e6-105">Den ene rapport viser detaljerne, og den anden rapport indeholder en liste, der kan bruges til planlægning og opfølgning.</span><span class="sxs-lookup"><span data-stu-id="541e6-105">One report shows details, and the other report provides a list that can be used for planning and follow-up.</span></span>
+<span data-ttu-id="f7859-104">I Styring af aktiver kan du generere to rapporter, der er relateret til vedligeholdelsesanmodninger.</span><span class="sxs-lookup"><span data-stu-id="f7859-104">In Asset Management, you can generate two reports that are related to maintenance requests.</span></span> <span data-ttu-id="f7859-105">Den ene rapport viser detaljerne, og den anden rapport indeholder en liste, der kan bruges til planlægning og opfølgning.</span><span class="sxs-lookup"><span data-stu-id="f7859-105">One report shows details, and the other report provides a list that can be used for planning and follow-up.</span></span>
 
-## <a name="create-a-maintenance-request-details-report"></a><span data-ttu-id="541e6-106">Opret en deltaljeret rapport for vedligeholdelsesanmodninger</span><span class="sxs-lookup"><span data-stu-id="541e6-106">Create a Maintenance request details report</span></span>
+## <a name="create-a-maintenance-request-details-report"></a><span data-ttu-id="f7859-106">Opret en deltaljeret rapport for vedligeholdelsesanmodninger</span><span class="sxs-lookup"><span data-stu-id="f7859-106">Create a Maintenance request details report</span></span>
 
-<span data-ttu-id="541e6-107">Rapporten **Detaljer for vedligeholdelsesanmodning** viser forskellige oplysninger, der er relateret til vedligeholdelsesanmodninger.</span><span class="sxs-lookup"><span data-stu-id="541e6-107">The **Maintenance request details** report shows various information that is related to maintenance requests.</span></span>
+<span data-ttu-id="f7859-107">Rapporten **Detaljer for vedligeholdelsesanmodning** viser forskellige oplysninger, der er relateret til vedligeholdelsesanmodninger.</span><span class="sxs-lookup"><span data-stu-id="f7859-107">The **Maintenance request details** report shows various information that is related to maintenance requests.</span></span>
 
-1. <span data-ttu-id="541e6-108">Vælg **Styring af aktiver** \> **Rapporter** \> **Vedligeholdelsesanmodninger** \> **Detaljer for vedligeholdelsesanmodninger**.</span><span class="sxs-lookup"><span data-stu-id="541e6-108">Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request details**.</span></span>
-2. <span data-ttu-id="541e6-109">I oversigtspanelet **Poster, der skal medtages** kan du vælge bestemte vedligeholdelsesanmodninger, der skal medtages i rapporten.</span><span class="sxs-lookup"><span data-stu-id="541e6-109">On the **Records to include** FastTab, you can select specific maintenance requests to include on the report.</span></span>
-3. <span data-ttu-id="541e6-110">I oversigtspanelet **Kør i baggrunden** kan du konfigurere generering af rapporter som et batchjob efter behov.</span><span class="sxs-lookup"><span data-stu-id="541e6-110">On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.</span></span>
-4. <span data-ttu-id="541e6-111">Vælg **OK** for at generere rapporten.</span><span class="sxs-lookup"><span data-stu-id="541e6-111">Select **OK** to generate the report.</span></span>
+1. <span data-ttu-id="f7859-108">Vælg **Styring af aktiver** \> **Rapporter** \> **Vedligeholdelsesanmodninger** \> **Detaljer for vedligeholdelsesanmodninger**.</span><span class="sxs-lookup"><span data-stu-id="f7859-108">Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request details**.</span></span>
+2. <span data-ttu-id="f7859-109">I oversigtspanelet **Poster, der skal medtages** kan du vælge bestemte vedligeholdelsesanmodninger, der skal medtages i rapporten.</span><span class="sxs-lookup"><span data-stu-id="f7859-109">On the **Records to include** FastTab, you can select specific maintenance requests to include on the report.</span></span>
+3. <span data-ttu-id="f7859-110">I oversigtspanelet **Kør i baggrunden** kan du konfigurere generering af rapporter som et batchjob efter behov.</span><span class="sxs-lookup"><span data-stu-id="f7859-110">On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.</span></span>
+4. <span data-ttu-id="f7859-111">Vælg **OK** for at generere rapporten.</span><span class="sxs-lookup"><span data-stu-id="f7859-111">Select **OK** to generate the report.</span></span>
 
-<span data-ttu-id="541e6-112">I følgende illustration vises et eksempel på rapporten **Detaljer for vedligeholdelsesanmodninger**.</span><span class="sxs-lookup"><span data-stu-id="541e6-112">The following illustration shows an example of the **Maintenance request details** report.</span></span>
+<span data-ttu-id="f7859-112">I følgende illustration vises et eksempel på rapporten **Detaljer for vedligeholdelsesanmodninger**.</span><span class="sxs-lookup"><span data-stu-id="f7859-112">The following illustration shows an example of the **Maintenance request details** report.</span></span>
 
 ![Rapporten Detaljer for vedligeholdelsesanmodninger](media/09-manage-maintenance-requests.png)
 
-## <a name="create-a-maintenance-request-list-report"></a><span data-ttu-id="541e6-114">Opret en listerapport for vedligeholdelsesanmodninger</span><span class="sxs-lookup"><span data-stu-id="541e6-114">Create a Maintenance request list report</span></span>
+## <a name="create-a-maintenance-request-list-report"></a><span data-ttu-id="f7859-114">Opret en listerapport for vedligeholdelsesanmodninger</span><span class="sxs-lookup"><span data-stu-id="f7859-114">Create a Maintenance request list report</span></span>
 
-<span data-ttu-id="541e6-115">Rapporten **Vedligeholdelsesanmodningsliste** viser en liste over alle vedligeholdelsesanmodninger af samme anmodningstype.</span><span class="sxs-lookup"><span data-stu-id="541e6-115">The **Maintenance request list** report shows a list of all maintenance requests of the same request type.</span></span>
+<span data-ttu-id="f7859-115">Rapporten **Vedligeholdelsesanmodningsliste** viser en liste over alle vedligeholdelsesanmodninger af samme anmodningstype.</span><span class="sxs-lookup"><span data-stu-id="f7859-115">The **Maintenance request list** report shows a list of all maintenance requests of the same request type.</span></span>
 
-1. <span data-ttu-id="541e6-116">Vælg **Styring af aktiver** \> **Rapporter** \> **Vedligeholdelsesanmodninger** \> **Vedligeholdelsesanmodningsliste**.</span><span class="sxs-lookup"><span data-stu-id="541e6-116">Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request list**.</span></span>
-2. <span data-ttu-id="541e6-117">I oversigtspanelet **Poster, der skal medtages** kan du foretage valg for at definere, hvilke vedligeholdelsesanmodninger, der skal medtages i rapporten.</span><span class="sxs-lookup"><span data-stu-id="541e6-117">On the **Records to include** FastTab, you can make selections to define which maintenance requests are included on the report.</span></span>
-3. <span data-ttu-id="541e6-118">I oversigtspanelet **Kør i baggrunden** kan du konfigurere generering af rapporter som et batchjob efter behov.</span><span class="sxs-lookup"><span data-stu-id="541e6-118">On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.</span></span>
-4. <span data-ttu-id="541e6-119">Vælg **OK** for at generere rapporten.</span><span class="sxs-lookup"><span data-stu-id="541e6-119">Select **OK** to generate the report.</span></span>
+1. <span data-ttu-id="f7859-116">Vælg **Styring af aktiver** \> **Rapporter** \> **Vedligeholdelsesanmodninger** \> **Vedligeholdelsesanmodningsliste**.</span><span class="sxs-lookup"><span data-stu-id="f7859-116">Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request list**.</span></span>
+2. <span data-ttu-id="f7859-117">I oversigtspanelet **Poster, der skal medtages** kan du foretage valg for at definere, hvilke vedligeholdelsesanmodninger, der skal medtages i rapporten.</span><span class="sxs-lookup"><span data-stu-id="f7859-117">On the **Records to include** FastTab, you can make selections to define which maintenance requests are included on the report.</span></span>
+3. <span data-ttu-id="f7859-118">I oversigtspanelet **Kør i baggrunden** kan du konfigurere generering af rapporter som et batchjob efter behov.</span><span class="sxs-lookup"><span data-stu-id="f7859-118">On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.</span></span>
+4. <span data-ttu-id="f7859-119">Vælg **OK** for at generere rapporten.</span><span class="sxs-lookup"><span data-stu-id="f7859-119">Select **OK** to generate the report.</span></span>
 
-<span data-ttu-id="541e6-120">I følgende illustration vises et eksempel på rapporten **vedligeholdelses anmodnings liste** for alle aktive reparations anmodninger.</span><span class="sxs-lookup"><span data-stu-id="541e6-120">The following illustration shows an example of the **Maintenance request list** report for all active maintenance requests.</span></span>
+<span data-ttu-id="f7859-120">I følgende illustration vises et eksempel på rapporten **vedligeholdelses anmodnings liste** for alle aktive reparations anmodninger.</span><span class="sxs-lookup"><span data-stu-id="f7859-120">The following illustration shows an example of the **Maintenance request list** report for all active maintenance requests.</span></span>
 
 ![Listerapport over vedligeholdelsesanmodninger](media/10-manage-maintenance-requests.png)
 

@@ -1,12 +1,10 @@
 ---
 title: Arbejdssteder og aktiver
 description: I dette emne beskrives arbejdssteder og aktiver i Styring af aktiver. Styring af aktiver er et avanceret modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,47 +12,47 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53091f2e3c159f73f11b3dfcefd597f2c1494d19
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253080"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816743"
 ---
-# <a name="functional-locations-and-assets"></a><span data-ttu-id="5c947-104">Arbejdssteder og aktiver</span><span class="sxs-lookup"><span data-stu-id="5c947-104">Functional locations and assets</span></span>
+# <a name="functional-locations-and-assets"></a><span data-ttu-id="e3931-104">Arbejdssteder og aktiver</span><span class="sxs-lookup"><span data-stu-id="e3931-104">Functional locations and assets</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="5c947-105">I dette emne beskrives arbejdssteder og aktiver i Styring af aktiver.</span><span class="sxs-lookup"><span data-stu-id="5c947-105">This topic describes functional locations and assets in Asset Management.</span></span> <span data-ttu-id="5c947-106">Styring af aktiver er et avanceret modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="5c947-106">Asset Management is an advanced module for managing assets and maintenance jobs in Dynamics 365 Supply Chain Management.</span></span>
+<span data-ttu-id="e3931-105">I dette emne beskrives arbejdssteder og aktiver i Styring af aktiver.</span><span class="sxs-lookup"><span data-stu-id="e3931-105">This topic describes functional locations and assets in Asset Management.</span></span> <span data-ttu-id="e3931-106">Styring af aktiver er et avanceret modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="e3931-106">Asset Management is an advanced module for managing assets and maintenance jobs in Dynamics 365 Supply Chain Management.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="5c947-107">Overblik</span><span class="sxs-lookup"><span data-stu-id="5c947-107">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="e3931-107">Overblik</span><span class="sxs-lookup"><span data-stu-id="e3931-107">Overview</span></span>
 
-<span data-ttu-id="5c947-108">Aktivadministration kan problemfrit integreres med flere moduler i andre Finance and Operations-apps.</span><span class="sxs-lookup"><span data-stu-id="5c947-108">Asset Management is integrated seamlessly with several modules with other Finance and Operations apps.</span></span> <span data-ttu-id="5c947-109">I følgende illustration vises grænsefladerne med andre moduler.</span><span class="sxs-lookup"><span data-stu-id="5c947-109">The following illustration shows the interfaces with other modules.</span></span>
+<span data-ttu-id="e3931-108">Aktivadministration kan problemfrit integreres med flere moduler i andre Finance and Operations-apps.</span><span class="sxs-lookup"><span data-stu-id="e3931-108">Asset Management is integrated seamlessly with several modules with other Finance and Operations apps.</span></span> <span data-ttu-id="e3931-109">I følgende illustration vises grænsefladerne med andre moduler.</span><span class="sxs-lookup"><span data-stu-id="e3931-109">The following illustration shows the interfaces with other modules.</span></span>
 
 ![Diagram, der viser, hvordan aktivstyring integreres med andre moduler](media/01-overview-image.png)
 
-<span data-ttu-id="5c947-111">Styring af aktiver giver dig mulighed for effektivt at administrere og udføre alle opgaver, der er relateret til administration og servicering af mange typer udstyr i din virksomhed.</span><span class="sxs-lookup"><span data-stu-id="5c947-111">Asset Management lets you efficiently manage and perform all tasks that are related to managing and servicing many types of equipment in your company.</span></span> <span data-ttu-id="5c947-112">Dette udstyr omfatter maskiner, produktionsudstyr og køretøjer.</span><span class="sxs-lookup"><span data-stu-id="5c947-112">This equipment includes machines, production equipment, and vehicles.</span></span> <span data-ttu-id="5c947-113">Styring af aktiver understøtter også løsninger på tværs af adskillige brancher.</span><span class="sxs-lookup"><span data-stu-id="5c947-113">Asset Management also supports solutions across numerous industries.</span></span>
+<span data-ttu-id="e3931-111">Styring af aktiver giver dig mulighed for effektivt at administrere og udføre alle opgaver, der er relateret til administration og servicering af mange typer udstyr i din virksomhed.</span><span class="sxs-lookup"><span data-stu-id="e3931-111">Asset Management lets you efficiently manage and perform all tasks that are related to managing and servicing many types of equipment in your company.</span></span> <span data-ttu-id="e3931-112">Dette udstyr omfatter maskiner, produktionsudstyr og køretøjer.</span><span class="sxs-lookup"><span data-stu-id="e3931-112">This equipment includes machines, production equipment, and vehicles.</span></span> <span data-ttu-id="e3931-113">Styring af aktiver understøtter også løsninger på tværs af adskillige brancher.</span><span class="sxs-lookup"><span data-stu-id="e3931-113">Asset Management also supports solutions across numerous industries.</span></span>
 
-<span data-ttu-id="5c947-114">I følgende illustration vises en oversigt over de vigtigste funktioner, der dækkes af Styring af aktiver.</span><span class="sxs-lookup"><span data-stu-id="5c947-114">The following illustration shows an overview of the main functionality that is covered by Asset Management.</span></span>
+<span data-ttu-id="e3931-114">I følgende illustration vises en oversigt over de vigtigste funktioner, der dækkes af Styring af aktiver.</span><span class="sxs-lookup"><span data-stu-id="e3931-114">The following illustration shows an overview of the main functionality that is covered by Asset Management.</span></span>
 
 ![Diagram, der viser de vigtigste funktioner i aktivstyring](media/02-overview-image.png)
 
-## <a name="functional-locations-and-assets"></a><span data-ttu-id="5c947-116">Funktionelle placeringer og aktiver</span><span class="sxs-lookup"><span data-stu-id="5c947-116">Functional locations and assets</span></span>
+## <a name="functional-locations-and-assets"></a><span data-ttu-id="e3931-116">Funktionelle placeringer og aktiver</span><span class="sxs-lookup"><span data-stu-id="e3931-116">Functional locations and assets</span></span>
 
-<span data-ttu-id="5c947-117">Arbejdssteder bruges til at administrere aktiver på lokationer.</span><span class="sxs-lookup"><span data-stu-id="5c947-117">Functional locations are used to manage assets on locations.</span></span> <span data-ttu-id="5c947-118">Denne styring omfatter sporing af aktivomkostninger på arbejdssteder.</span><span class="sxs-lookup"><span data-stu-id="5c947-118">This management includes tracking of asset costs on functional locations.</span></span> <span data-ttu-id="5c947-119">Arbejdssteder er struktureret hierarkisk, og lokationer kan have underlokationer.</span><span class="sxs-lookup"><span data-stu-id="5c947-119">Functional locations are structured hierarchically, and locations can have sub-locations.</span></span> <span data-ttu-id="5c947-120">Strukturen af arbejdssteder er statisk.</span><span class="sxs-lookup"><span data-stu-id="5c947-120">The structure of functional locations is static.</span></span> <span data-ttu-id="5c947-121">Med andre ord kan lokationer ikke skifte sted.</span><span class="sxs-lookup"><span data-stu-id="5c947-121">In other words, locations can't change place.</span></span> <span data-ttu-id="5c947-122">Aktiver kan installeres på arbejdssteder og kan efter behov installeres på andre arbejdssteder senere.</span><span class="sxs-lookup"><span data-stu-id="5c947-122">Assets can be installed on functional locations and, as required, can be installed on other functional locations later.</span></span>
+<span data-ttu-id="e3931-117">Arbejdssteder bruges til at administrere aktiver på lokationer.</span><span class="sxs-lookup"><span data-stu-id="e3931-117">Functional locations are used to manage assets on locations.</span></span> <span data-ttu-id="e3931-118">Denne styring omfatter sporing af aktivomkostninger på arbejdssteder.</span><span class="sxs-lookup"><span data-stu-id="e3931-118">This management includes tracking of asset costs on functional locations.</span></span> <span data-ttu-id="e3931-119">Arbejdssteder er struktureret hierarkisk, og lokationer kan have underlokationer.</span><span class="sxs-lookup"><span data-stu-id="e3931-119">Functional locations are structured hierarchically, and locations can have sub-locations.</span></span> <span data-ttu-id="e3931-120">Strukturen af arbejdssteder er statisk.</span><span class="sxs-lookup"><span data-stu-id="e3931-120">The structure of functional locations is static.</span></span> <span data-ttu-id="e3931-121">Med andre ord kan lokationer ikke skifte sted.</span><span class="sxs-lookup"><span data-stu-id="e3931-121">In other words, locations can't change place.</span></span> <span data-ttu-id="e3931-122">Aktiver kan installeres på arbejdssteder og kan efter behov installeres på andre arbejdssteder senere.</span><span class="sxs-lookup"><span data-stu-id="e3931-122">Assets can be installed on functional locations and, as required, can be installed on other functional locations later.</span></span>
 
-<span data-ttu-id="5c947-123">Aktivomkostninger følger altid aktivets lokation.</span><span class="sxs-lookup"><span data-stu-id="5c947-123">Asset costs always follow the location of the asset.</span></span> <span data-ttu-id="5c947-124">Hvis du med andre ord installerer et aktiv på et nyt arbejdssted, bruger aktivet automatisk de økonomiske dimensioner, der er relateret til det nye arbejdssted.</span><span class="sxs-lookup"><span data-stu-id="5c947-124">In other words, if you install an asset on a new functional location, the asset automatically uses the financial dimensions that are related to the new functional location.</span></span> <span data-ttu-id="5c947-125">Derfor er aktivets omkostninger altid relateret til det arbejdssted, som aktivet aktuelt er installeret på.</span><span class="sxs-lookup"><span data-stu-id="5c947-125">Therefore, asset costs are always related to the functional location that the asset is  currently installed on.</span></span> <span data-ttu-id="5c947-126">Denne automatiske håndtering af økonomiske dimensioner hjælper med at sikre en fuldstændig sporing af omkostninger, når din virksomhed kontrollerer og rapporterer om arbejdssteder for projekter.</span><span class="sxs-lookup"><span data-stu-id="5c947-126">This automatic handling of financial dimensions helps guarantee complete tracking of costs when your company does project controlling and reporting on functional locations.</span></span>
+<span data-ttu-id="e3931-123">Aktivomkostninger følger altid aktivets lokation.</span><span class="sxs-lookup"><span data-stu-id="e3931-123">Asset costs always follow the location of the asset.</span></span> <span data-ttu-id="e3931-124">Hvis du med andre ord installerer et aktiv på et nyt arbejdssted, bruger aktivet automatisk de økonomiske dimensioner, der er relateret til det nye arbejdssted.</span><span class="sxs-lookup"><span data-stu-id="e3931-124">In other words, if you install an asset on a new functional location, the asset automatically uses the financial dimensions that are related to the new functional location.</span></span> <span data-ttu-id="e3931-125">Derfor er aktivets omkostninger altid relateret til det arbejdssted, som aktivet aktuelt er installeret på.</span><span class="sxs-lookup"><span data-stu-id="e3931-125">Therefore, asset costs are always related to the functional location that the asset is  currently installed on.</span></span> <span data-ttu-id="e3931-126">Denne automatiske håndtering af økonomiske dimensioner hjælper med at sikre en fuldstændig sporing af omkostninger, når din virksomhed kontrollerer og rapporterer om arbejdssteder for projekter.</span><span class="sxs-lookup"><span data-stu-id="e3931-126">This automatic handling of financial dimensions helps guarantee complete tracking of costs when your company does project controlling and reporting on functional locations.</span></span>
 
-<span data-ttu-id="5c947-127">Den måde, du opbygger hierarkiet af arbejdssteder på, afhænger af virksomhedens krav til vedligeholdelse af internt udstyr eller servicering af kundeudstyr.</span><span class="sxs-lookup"><span data-stu-id="5c947-127">The way that you build your hierarchy of functional locations depends on your company's requirements for maintaining internal equipment or servicing customer equipment.</span></span> <span data-ttu-id="5c947-128">I følgende figur vises et eksempel på arbejdssteder, der er baseret på geografiske placeringer.</span><span class="sxs-lookup"><span data-stu-id="5c947-128">The following figure shows an example of functional locations that are based on geographical locations.</span></span>
+<span data-ttu-id="e3931-127">Den måde, du opbygger hierarkiet af arbejdssteder på, afhænger af virksomhedens krav til vedligeholdelse af internt udstyr eller servicering af kundeudstyr.</span><span class="sxs-lookup"><span data-stu-id="e3931-127">The way that you build your hierarchy of functional locations depends on your company's requirements for maintaining internal equipment or servicing customer equipment.</span></span> <span data-ttu-id="e3931-128">I følgende figur vises et eksempel på arbejdssteder, der er baseret på geografiske placeringer.</span><span class="sxs-lookup"><span data-stu-id="e3931-128">The following figure shows an example of functional locations that are based on geographical locations.</span></span>
 
 ![Diagram, der viser arbejdssteder baseret på geografiske placeringer](media/03-overview-image.png)
 
-<span data-ttu-id="5c947-130">I følgende figur vises et eksempel på arbejdssteder, der er baseret på kunder.</span><span class="sxs-lookup"><span data-stu-id="5c947-130">The following figure shows an example of functional locations that are based on customers.</span></span>
+<span data-ttu-id="e3931-130">I følgende figur vises et eksempel på arbejdssteder, der er baseret på kunder.</span><span class="sxs-lookup"><span data-stu-id="e3931-130">The following figure shows an example of functional locations that are based on customers.</span></span>
 
 ![Diagram, der viser arbejdssteder baseret på kunder](media/04-overview-image.png)
 
