@@ -2,11 +2,9 @@
 title: Arbejde med publiceringsgrupper
 description: I dette emne beskrives funktionen publicering af grupper i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b623573f598f6b21291cafe95fa04e6777cffe11
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15ac04721e440dcd7c0f8984c14e86aa0f68963e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244833"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792309"
 ---
 # <a name="work-with-publish-groups"></a>Arbejde med publiceringsgrupper
-
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives funktionen publicering af grupper i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 E-Commerce-websteder opdateres konstant med nyt indhold i løbet af året. Opdateringer udgives ofte i batches omkring tidspunktet for travle e-Commerce-hændelser som helligdage, sæsonbetonede marketingkampagner eller salgsfremmende lanceringer. Disse opdateringer kræver ofte, at grupper af webstedsindhold (f.eks. sider, billeder, fragmenter og skabeloner) iscenesættes, valideres og udgives samtidigt i en enkelt handling.
 

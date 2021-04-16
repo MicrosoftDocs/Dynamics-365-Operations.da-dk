@@ -2,7 +2,6 @@
 title: Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 description: Dette emne forklarer, hvordan du inspicerer de konfigurerede ER-komponenter (elektronisk rapportering) for at forhindre kørselsproblemer, der kan opstå.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574119"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753834"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 
@@ -666,19 +665,19 @@ I følgende illustration vises den kørselsfejl, der opstår, hvis du ignorerer 
 
 ![Der opstod kørselsfejl under kørsel af formattilknytningen på siden Formatdesigner](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution"></a>Automatisk løsning
+### <a name="automatic-resolution&quot;></a>Automatisk løsning
 
 Det er ikke muligt at løse dette problem automatisk.
 
-### <a name="manual-resolution"></a>Manuel løsning
+### <a name=&quot;manual-resolution&quot;></a>Manuel løsning
 
-#### <a name="option-1"></a>Indstilling 1
+#### <a name=&quot;option-1&quot;></a>Indstilling 1
 
 Fjern flaget **Cache** fra datakilden **Kreditor**. Datakilden **FilteredVendor** bliver derefter eksekverbar, men datakilden **Kreditor**, der refereres til i tabellen VendTable, åbnes, hver gang datakilden **FilteredVendor** kaldes.
 
-#### <a name="option-2"></a>Indstilling 2
+#### <a name=&quot;option-2&quot;></a>Indstilling 2
 
-Rediger udtrykket i datakilden **FilteredVendor** fra `FILTER(Vendor, Vendor.AccountNum="US-101")` til `WHERE(Vendor, Vendor.AccountNum="US-101")`. I dette tilfælde åbnes datakilden **Kreditor**, der refereres til i tabellen VendTable, kun under det første opkald fra datakilden **Kreditor**. Valg af poster sker dog i hukommelsen. Denne fremgangsmåde kan derfor forårsage dårlig ydeevne.
+Rediger udtrykket i datakilden **FilteredVendor** fra `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` til `WHERE(Vendor, Vendor.AccountNum="US-101")`. I dette tilfælde åbnes datakilden **Kreditor**, der refereres til i tabellen VendTable, kun under det første opkald fra datakilden **Kreditor**. Valg af poster sker dog i hukommelsen. Denne fremgangsmåde kan derfor forårsage dårlig ydeevne.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Manglende binding
 

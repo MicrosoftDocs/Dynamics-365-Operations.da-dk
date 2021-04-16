@@ -2,7 +2,6 @@
 title: Konfigurere handlingsafhængige ER-destinationer
 description: Dette emne forklarer, hvordan du kan konfigurere handlingsafhængige destinationer for et elektronisk rapporteringsformat (ER), der er konfigureret til at generere udgående dokumenter.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 80624e286fd1300b8de6fd8a7fc67c246cb3a41b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ac0efbbe645969cdf0419bf533d34e38b76fb67a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751226"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsafhængige ER-destinationer
 

@@ -2,11 +2,9 @@
 title: Opdater proces
 description: Microsoft Dynamics 365 Human Resources er en ægte Software som en service (SaaS), der tilbyder kontinuerlige serviceopdateringer til program- og platformændringer.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27561bfd9cb4f115cc507954c837ea93f9c93b72
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466826"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791527"
 ---
 # <a name="update-process"></a>Opdater proces
 
@@ -58,14 +56,14 @@ Når det er nødvendigt, leverer Human Resources også følgende typer rettelser
 
 Versioner gennemses, testes og valideres i et internt miljø. Når builds er godkendt, kan de installeres.
 
-## <a name="release-cadence-exceptions-in-2020"></a>Undtagelser til udgivelsestakten i 2020
+## <a name="release-cadence-exceptions-in-2021"></a>Undtagelser til udgivelsestakten i 2021
 
-For at kunne tage højde for feriedage er frigivelsesplanen for november og december 2020 følgende.
+For at kunne tage højde for feriedage er frigivelsesplanen for november og december 2021 følgende.
 
-- Frigivelse i november: 2. november - 13. november
-- Frigivelse i december: 30. november - 11. december
+- Frigivelse i november: 1. november - 14. november
+- Frigivelse i december: 29. november - 12. december
  
-Den to-ugers frigivelsestakt vil fortsætte som sædvanligt den 11. januar 2021.
+Den to-ugers frigivelsestakt vil fortsætte som sædvanligt den 10. januar 2022.
 
 ## <a name="communications"></a>Kommunikation
 
