@@ -2,11 +2,9 @@
 title: Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 description: Leverandører, der har spørgsmål til en RFP, kan sende deres spørgsmål og læse svarene på siden til **Kreditorsamarbejde**.
 author: velofog
-manager: tfehr
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQVendQuestionAnswer
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: public sector
 ms.author: kamaybac
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 51b7c6de78eeb34f09c636c3e6ebbad828fc538e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7abad07feefe2e929b8b7957b7ae817cd241742f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237363"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812534"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 

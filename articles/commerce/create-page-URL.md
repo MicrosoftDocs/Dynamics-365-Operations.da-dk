@@ -2,11 +2,9 @@
 title: Oprette en side-URL
 description: I dette emne beskrives de grundlæggende begreber og procedurer til oprettelse af en URL-adresse til en side på dit websted.
 author: bicyclingfool
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8e221bd975fd984379724b751f6c026acfda7b07
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 98743d8948669f32d3c74e1915c7ed53db81141c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207889"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795685"
 ---
 # <a name="create-a-page-url"></a>Oprette en side-URL
-
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives de grundlæggende begreber og procedurer til oprettelse af en URL-adresse til en side på dit websted.
-
-## <a name="overview"></a>Oversigt
 
 Den fuldstændige eller absolutte URL-adresse, der peger på en side på dit websted, består af særskilte dele. URL-adressen `https://www.contoso.com/en-us/contactus` har f.eks. følgende dele:
 

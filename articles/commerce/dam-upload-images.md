@@ -2,11 +2,9 @@
 title: Overføre billeder
 description: I dette emne beskrives, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 51571ce221714598b2e2d39c76cb69dcb57cc52b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2a0a2fdb275cbeb65c06c01128e90ba660f98c9b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213788"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799223"
 ---
 # <a name="upload-images"></a>Overføre billeder
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
-
-## <a name="overview"></a>Overblik
 
 I Commerce-webstedsgeneratorens mediebibliotek kan du uploade billeder enkeltvist eller masseupload ved hjælp af mapper. Du bør altid uploade billedet med den højeste opløsning og kvalitet, da funktionen til tilpasning af billedstørrelsen optimerer automatisk billedet for forskellige billeder og pausepunkterne.
 
@@ -58,7 +54,8 @@ Standardnavngivningskonventionen varierer, afhængigt af kategorien:
 - Medarbejderbilleder skal navngives "**/Workers/\{WorkerNumber\}.jpg**"
 - Produktbilleder skal navngives "**/Products/\{ProductNumber\}_000_001.png**"
     - 001 er rækkefølgen af billedet, og det kan være 001, 002, 003, 004 eller 005
-- Produktvariantbilleder skal navngives "**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**"
+- Produktvariantbilleder skal navngives "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
+    - For eksempel: 93039 \^ \^ 2 \^ Black \^_000_001.png
 
 ## <a name="upload-an-image"></a>Upload et billede
 

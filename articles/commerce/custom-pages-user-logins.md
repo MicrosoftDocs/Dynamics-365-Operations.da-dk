@@ -2,11 +2,9 @@
 title: Konfigurere brugerdefinerede sider til brugerlogon
 description: Dette emne beskriver, hvordan du bygger tilpassede sider i Microsoft Dynamics 365 Commerce, der håndterer tilpasset logon for brugere af Azure Active Directory (Azure AD) Business-to-Consumer-lejere (B2C).
 author: brianshook
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3328fad5328ae1954a6749f9a5eebcb71c723698
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 0318814f421ab862559965bb4b003308d6279812
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477942"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799439"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfigurere brugerdefinerede sider til brugerlogon
 
@@ -31,7 +29,12 @@ Dette emne beskriver, hvordan du bygger tilpassede sider i Microsoft Dynamics 36
 
 Hvis du vil bruge brugerdefinerede sider, der er oprettet i Dynamics 365 Commerce, til at håndtere brugerlogon, skal du konfigurere de Azure AD-politikker, der skal refereres til i Commerce-miljøet. Du kan konfigurere Azure AD B2C-politikkerne "Tilmelding og logon", "Profilredigering" og "Nulstilling af adgangskode" ved hjælp af Azure AD B2C-programmet. Der kan derefter refereres til Azure AD B2C-lejeren og politiknavne under den klargørings proces, der udføres for Commerce-miljøet ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
 
-De brugerdefinerede Commerce-sider kan opbygges ved hjælp af modulet til logon, tilmelding, kontoprofilredigering eller genstart af adgangskode. De URL-adresser til sider, der udgives for disse brugerdefinerede sider, skal derefter refereres i Azure AD B2C-politikkonfigurationerne i Azure-portalen.
+De brugerdefinerede Commerce-sider kan opbygges ved hjælp af modulet til logon, tilmelding, kontoprofilredigering, nulstilling af adgangskode eller generiske AAD-moduler. De URL-adresser til sider, der udgives for disse brugerdefinerede sider, skal derefter refereres i Azure AD B2C-politikkonfigurationerne i Azure-portalen.
+
+> [!WARNING] 
+> Azure AD B2C gør gamle (ældre) brugerflow forældet inden 1. august 2021. Derfor skal du planlægge at overføre dine brugerflow til den nye anbefalede version. Den nye version indeholder funktionsparitet og nye funktioner. Du kan finde flere oplysninger i [Brugerflow i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+
+>Modulbiblioteket til Commerce version 10.0.15 eller derover skal bruges sammen med de anbefalede B2C-brugerflow. De standardbrugerpolitiksider, der tilbydes i Azure AD B2C, kan også bruges og giver mulighed for ekstra ændringer i baggrundsbillede, logo og baggrundsfarve, der er relateret til firmabranding. Selvom de er mere begrænsede i designegenskaber, indeholder standardbrugerpolitiksider Azure AD B2C-politikfunktionaliteten uden at oprette og konfigurere dedikerede brugerdefinerede sider. 
 
 ## <a name="set-up-b2c-policies"></a>Konfigurere B2C-politikker
 
@@ -45,7 +48,7 @@ Du kan nu konfigurere brugerlogonstrømmene "Tilmelding og logon", "Profilredige
 
 For at konfigurere politikken "Tilmelding og logon" skal du udføre følgende trin.
 
-1. Vælg **Ny brugerstrøm**, og vælg derefter politikken **Tilmelding og logon** under fanen **Anbefalet**.
+1. Vælg **Nyt brugerflow**, vælg **Tilmelding og logon**, vælg fanen **Anbefalet** og vælg derefter **Opret**.
 1. Angiv et navn til politikken (f.eks. **B2C\_1\_TilmeldingLogon**).
 1. Vælg de id-udbydere, der skal bruges til politikken, i sektionen **Identitetsudbydere**. Du skal som minimum vælge **E-mailtilmelding**.
 1. I kolonnen **Indsaml attribut** skal du markere afkrydsningsfelterne for **E-mailadresse**, **Tildelt navn** og **Efternavn**.
@@ -68,10 +71,10 @@ Du skal vende tilbage til denne politik for at afslutte installationen, når du 
 
 Du kan konfigurere politikken "Profilredigering" ved at følge disse trin.
 
-1. Vælg **Ny brugerstrøm**, og vælg derefter politikken **Profilredigering** under fanen **Anbefalet**.
+1. Vælg **Nyt brugerflow**, vælg **Profilredigering**, vælg fanen **Anbefalet**, og vælg derefter **Opret**.
 1. Angiv et navn til politikken (f.eks. **B2C\_1\_RedigerProfil**).
 1. Vælg de id-udbydere, der skal bruges til politikken, i sektionen **Identitetsudbydere**. Der skal som minimum være valgt **Log på lokal konto**.
-1. I kolonnen **Indsaml attribut** skal du markere afkrydsningsfelterne for **E-mailadresse** og **Efternavn**.
+1. I kolonnen **Indsaml attribut** skal du markere afkrydsningsfelterne for **Fornavn** og **Efternavn**.
 1. I kolonnen **Returkrav** skal du markere afkrydsningsfelterne **E-mailadresser**, **Tildelt navn**, **Identitetsudbyder**, **Efternavn** og **Brugerens objekt-id**.
 1. Vælg **OK** for at oprette politikken.
 1. Dobbeltklik på navnet på den nye politik, og vælg derefter **Egenskaber** i navigationsruden.
@@ -83,16 +86,10 @@ Du skal vende tilbage til denne politik for at afslutte installationen, når du 
 
 Du kan konfigurere politikken "Nulstilling af adgangskode" ved at følge disse trin.
 
-1. Vælg **Ny brugerstrøm**, og vælg derefter politikken **Nulstilling af adgangskode v1.1** under fanen **Eksempel**.
-
-    ![Politikken for Nulstilling af adgangskode v.1.1 valgt under fanen Eksempel](./media/B2C_ForgetPassword_Menu.png)
-
+1. Vælg **Nyt brugerflow**, og vælg derefter indstillingen **Nulstil adgangskode**, og vælg fanen **Anbefalet**, og klik på **Opret**.
 1. Angiv et navn til politikken (f.eks. **B2C\_1\_GlemtAdgangskode**).
 1. Vælg **Nulstil adgangskode ved hjælp af e-mailadresse** i sektionen **Identitetsudbydere**.
 1. I kolonnen **Returkrav** skal du markere afkrydsningsfelterne **E-mailadresser**, **Tildelt navn**, **Efternavn** og **Brugerens objekt-id**.
-
-    ![Valgte krav](./media/B2C_ForgetPassword_Attributes.png)
-
 1. Vælg **OK** for at oprette politikken.
 1. Dobbeltklik på navnet på den nye politik, og vælg derefter **Egenskaber** i navigationsruden.
 1. Vælg **Til** i indstillingen **Aktivér JavaScript-valg af sidelayout (eksempel)**.
@@ -101,16 +98,24 @@ Du skal vende tilbage til denne politik for at afslutte installationen, når du 
 
 ## <a name="build-the-custom-pages"></a>Oprette brugerdefinerede sider
 
-Udfør følgende trin for at opbygge de brugerdefinerede sider til håndtering af brugerlogon.
+Dedikerede Azure AD-moduler inkluderes i Commerce for at bygge brugerdefinerede sider til Azure AD B2C-brugerpolitikker. Sider kan opbygges specifikt til hver brugerpolitiksides layout ved hjælp af de Azure AD-hovedmoduler til B2C, der vises herunder. Du kan også bruge **Generisk AAD**-modul til alle sidelayout og politikker i Azure AD B2C (også for indstillinger af sidelayout i politikker, der ikke er vist nedenfor). 
 
-1. Gå til dit websted i Commerce-oprettelsesværktøjerne.
-1. Opbyg følgende fem skabeloner og fem sider:
+- Sidespecifikke Azure AD-moduler er bundet til datainddata, der er gengivet af Azure AD B2C. Disse moduler giver dig mere kontrol over placeringen af elementerne på siderne. Der skal dog muligvis oprettes flere sider og moduludvidelser for at tage højde for afvigelser ud over de standardindstillinger, der er beskrevet nedenfor.
+- I modulet **Generisk AAD** oprettes elementet "div" til Azure AD B2C, så alle elementer vises i siden med brugerpolitiksidelayout, hvilket giver mere fleksibilitet til sidens B2C-funktioner, men mindre styring af placeringen og typografien (men CSS kan bruges til at matche webstedets udseende).
 
+Du kan oprette en enkelt side med **Generisk AAD**-modul og bruge det til alle dine brugerpolitiksider, eller du kan opbygge specifikke sider ved hjælp af de enkelte Azure AD-moduler til logon, tilmelding, profilredigering, nulstilling af adgangskode og bekræftelse af nulstilling af adgangskode. Du kan også bruge en blanding af begge ved hjælp af de specifikke Azure AD-sider for sidelayoutene, der er angivet nedenfor, og den generiske AAD-modulside til de resterende sidelayout i disse eller andre brugerpolitiksider.
+
+Du kan få mere at vide om Azure AD-moduler, der leveres med modulbiblioteket, ved at læse mere på [Identificere styringssider og -moduler](identity-mgmt-modules.md).
+
+Udfør følgende trin for at opbygge de brugerdefinerede sider med specifikke identitetsmoduler til håndtering af brugerlogon.
+
+1. Naviger til dit websted i Commerce-webstedsgeneratoren.
+1. Opbyg følgende fem skabeloner og sider (hvis de ikke allerede findes på dit websted):
     - En **Logon**-skabelon og -side, der bruger logonmodulet.
-    - En **Logon**-skabelon og -side, der bruger logonmodulet.
+    - En **Tilmelding**-skabelon og -side, der bruger tilmeldingsmodulet.
     - En skabelon og side til **Nulstilling af adgangskod**, der bruger modulet til nulstilling af adgangskode.
     - En skabelon og side til **Bekræftelse af nulstilling af adgangskod**, der bruger modulet til bekræftelse af nulstilling af adgangskode.
-    - En skabelon og side til **Profilredigering**, der bruger modulet til redigering af kontoprofilen
+    - En skabelon og side til **Profilredigering**, der bruger modulet til redigering af kontoprofilen.
 
 Når du opbygger siderne, skal du følge disse retningslinjer:
 
@@ -119,7 +124,7 @@ Når du opbygger siderne, skal du følge disse retningslinjer:
 - Når siderne og URL-adresserne er publiceret, skal du indsamle de URL-adresser, der skal bruges til konfigurationer af Azure AD B2C-politikken. Der føjes et **?preloadscripts=true**-suffiks til hver URL-adresse, når den bruges.
 
 > [!IMPORTANT]
-> Du må ikke genbruge universelle sidehoveder og sidefødder, der har relative hyperlinks. Da disse sider findes på Azure AD B2C-domænet, når de bruges, bør der kun bruges absolutte URL-adresser til alle links.
+> Sider, der er opbygget til at blive refereret til i Azure AD B2C, serviceres direkte fra Azure AD B2C-lejerens domæne. Du må ikke genbruge universelle sidehoveder og sidefødder, der har relative links. Da disse sider findes på Azure AD B2C-domænet, når de bruges, bør der kun bruges absolutte URL-adresser til alle links. Det anbefales, at du opretter et bestemt sidehoved og en bestemt sidefod med absolutte URL-adresser til dine Azure AD-relaterede brugerdefinerede sider, hvor eventuelle Commerce-specifikke moduler, der kræver forbindelse til Retail Server, er fjernet. Favoritter, søgepanel, link til logon og indkøbsvognsmoduler skal f.eks. ikke medtages i de sider, der bruges i Azure AD B2C-brugerflow.
 
 ## <a name="configure-azure-ad-b2c-policies-with-custom-page-information"></a>Konfigurere Azure AD B2C-politikker med oplysninger om brugerdefinerede sider 
 
@@ -133,51 +138,53 @@ Følg disse trin for at opdatere politikken "Tilmelding og logon" med oplysninge
 1. Vælg layoutet **Side for samlet tilmelding eller logon**.
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
 1. Angiv hele URL-adressen til logon i feltet **Brugerdefineret side-URI**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/sign-in?preloadscripts=true``.
-1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
+1. Vælg version **2.1.0** eller senere (kræver modulbibliotek til Commerce version 10.0.15 eller højere) i feltet **Sidelayoutversion**.
+1. Vælg **Gem**.
 1. Vælg layoutet **Lokal kontotilmelding**.
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
 1. Angiv hele URL-adressen til tilmelding i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/sign-up?preloadscripts=true``.
-1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
+1. Vælg version **2.1.0** eller senere (kræver modulbibliotek til Commerce version 10.0.15 eller højere) i feltet **Sidelayoutversion**.
 1. Benyt følgende fremgangsmåde i sektionen **Brugerattributter**:
+    1. Vælg **Nej** i kolonnen **Kræver bekræftelse** for attributterne **Fornavn** og **Efternavn**.
+    1. I forbindelse med **Mailadresse**-attributten anbefales det, at standardværdien **Ja** vælges i kolonnen **Kræver bekræftelse**. Denne indstilling sikrer, at brugere, der tilmelder sig med en bestemt mailadresse, kontrollerer, at de ejer mailadressen.
+    1. Vælg **Nej** i kolonnen **Valgfri** for attributterne **Mailadresse**, **Fornavn** og **Efternavn**.
+1. Vælg **Gem**.
 
-    1. Vælg **Nej** i feltet **Kræver bekræftelse** for attributterne **E-mailadresse**, **Tildelt navn** og **Efternavn**.
-    1. Vælg **Nej** i feltet **Valgfrit** for attributterne **Tildelt navn** og **Efternavn**.
-
-    ![Konfiguration af politikken for tilmelding til en lokal konto](./media/B2C_SignUp_PageURLConfig.png)
+    ![Konfiguration af politikken for tilmeldingssiden til en lokal konto](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>Opdatere politikken "Profilredigering" med oplysninger om brugerdefinerede sider
 
 Følg disse trin for at opdatere politikken "Profilredigering" med oplysninger om brugerdefinerede sider.
 
 1. Vælg **Sidelayout** i den **Profilredigering**-politik, du har konfigureret tidligere, i navigationsruden.
-1. Vælg layoutet til **Profilredigeringsside**.
+1. Vælg layoutet **Profilredigeringsside** (kan kræve, at du ruller ned over andre layoutindstillinger, afhængigt af skærmen).
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
 1. Angiv hele URL-adressen til profilredigering i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/profile-edit?preloadscripts=true``.
-1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
+1. Vælg version **2.1.0** eller højere (kræver modulbibliotek til Commerce version 10.0.15 eller højere) som **Sidelayoutversion**.
 1. Benyt følgende fremgangsmåde i sektionen **Brugerattributter**:
-
-    1. Vælg **Nej** i feltet **Kræver bekræftelse** for attributterne **E-mailadresse**, **Tildelt navn**.
-    1. Vælg **Nej** i feltet **Valgfrit** for attributterne **Tildelt navn** og **Efternavn**.
+    1. Vælg **Nej** i kolonnen **Valgfrit** for attributterne **Fornavn** og **Efternavn**.
+    1. Vælg **Nej** i kolonnen **Kræver bekræftelse** for attributterne **Fornavn** og **Efternavn**.
+1. Vælg **Gem**.
 
 ### <a name="update-the-password-reset-policy-with-custom-page-information"></a>Opdatere politikken "Nulstilling af adgangskode" med oplysninger om brugerdefinerede sider
 
 Følg disse trin for at opdatere politikken "Nulstilling af adgangskode" med oplysninger om brugerdefinerede sider.
 
 1. Vælg **Sidelayout** i den **Nulstilling af adgangskode**-politik, du har konfigureret tidligere, i navigationsruden.
-1. Vælg layoutet **Side for ny adgangskode**.
+1. Vælg layoutet **Side for glemt adgangskode**.
 1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
-1. Angiv hele URL-adressen til nulstilling af kodeord i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/passwordreset?preloadscripts=true``.
-1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
-1. Vælg layoutet for **Side til kontogodkendelse**.
-1. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
-1. Angiv hele URL-adressen til verificering af nulstilling af kodeord i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
-1. I feltet **Sidelayoutversion (Eksempel)** skal du vælge **1.2.0**.
-
-
+1. Angiv hele URL-adressen til verificering af nulstilling af kodeord i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/password-reset-verification?preloadscripts=true``.
+1. Vælg version **2.1.0** eller højere (kræver modulbibliotek til Commerce version 10.0.15 eller højere) i feltet **Sidelayoutversion**.
+2. Vælg **Gem**.
+3. Vælg layoutet **Side for skift adgangskode**.
+4. Vælg **Ja** i indstillingen **Anvend brugerdefineret sideindhold**.
+5. Angiv hele URL-adressen til nulstilling af kodeord i feltet **URL-adresse til brugerdefineret side**. Medtag suffikset **?preloadscripts=true**. Angiv for eksempel ``www.<my domain>.com/password-reset?preloadscripts=true``.
+6. Vælg version **2.1.0** eller højere (kræver modulbibliotek til Commerce version 10.0.15 eller højere) i feltet **Sidelayoutversion**.
+7. Vælg **Gem**.
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Tilpasse standardtekststrenge for etiketter og beskrivelser
 
-I modulbiblioteket er logonmoduler udfyldt på forhånd med standardtekststrenge til etiketter og beskrivelser. Du kan tilpasse disse strenge i SDK (Software Development Kit) ved at opdatere værdierne i filen global.json for logonmodulet.
+I modulbiblioteket er logonmoduler udfyldt på forhånd med standardtekststrenge til etiketter og beskrivelser. Du kan tilpasse strengene i egenskabsruden for det modul, du arbejder på. Yderligere strenge på siden (f.eks. linkteksten **Har du glemt adgangskoden?** eller tekst til handlingen **Opret en konto**) kræver brug af Commerce SDK (Software Development Kit) og opdatering af værdierne i filen globale.json for tilmeldingsmodulet.
 
 Standardteksten for linket til den glemte adgangskode er f.eks. **Har du glemt adgangskoden?**. I det følgende vises denne standardtekst på logonsiden.
 

@@ -2,11 +2,9 @@
 title: Metoder til at tilføje indhold
 description: Dette emne giver en oversigt og udvalgte links til, hvor og hvordan du begynder at administrere indhold vha. Microsoft Dynamics 365 Commerce-webstedsgeneratorens værktøjssæt til webredigering.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e6794e528d9fa6066d7246e99a3307bb1bdc9c78
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208057"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797569"
 ---
 # <a name="ways-to-add-content"></a>Metoder til at tilføje indhold
 
 [!include [banner](includes/banner.md)]
 
 Dette emne giver en oversigt og udvalgte links til dokumentation af, hvordan du administrerer indhold vha. Microsoft Dynamics 365 Commerce-webstedsgeneratorens værktøjssæt til webredigering.
-
-## <a name="overview"></a>Overblik
 
 Der er mange måder at ændre webstedets udseende, layout og indhold på. Afhængigt af det nødvendige tilpasningsniveau kan mange af disse ændringer implementeres af ikke-udviklere i webstedsgeneratoren, som er de værktøjer til weboprettelse, der leveres sammen med Dynamics 365 Commerce. Du kan bruge webstedsgeneratoren til at oprette skabeloner, vælge temaer og vælge og konfigurere moduler uden at skrive nogen kode. Derimod kræves der udviklingsfærdigheder for at oprette et nyt tema eller modul, fordi e-handels-SDK'et (Software Development Kit) og Microsoft Dynamics Lifecycle Services (LCS)-arbejdsgangen til implementering skal bruges.
 

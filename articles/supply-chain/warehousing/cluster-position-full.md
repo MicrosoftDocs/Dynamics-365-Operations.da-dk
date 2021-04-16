@@ -2,11 +2,9 @@
 title: Klyngeplacering fuld
 description: Dette emne indeholder oplysninger om funktionen Klyngeplacering fuld. Denne funktion er et alternativ til en mere stiv håndhævelse af regler for arbejdspause, når der bruges klyngepluk, da det giver mulighed for større fejlmargener i volumenbegrænsningerne af containere eller transport.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ad0f8e2fa6b3767c6b5d5549a36d52990f871531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233001"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808840"
 ---
 # <a name="cluster-position-full"></a>Klyngeplacering fuld
 
@@ -213,7 +211,7 @@ Der skal være oprettet to arbejds-id'er, som hver især har to pluklinjer. Udf�
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Udførelse af mobilenhedsproces – Konfiguration af arbejdsbekræftelse for produktet
 
-1. Log på lagerstedsappen som en bruger på lagersted *61*.
+1. Log på mobilappen Lokationsstyring som en bruger på lagersted *61*.
 1. Gå til **Udgående \> Opret klyngepluk**.
 
     Siden **OPGAVE: Tildel arbejde til klynge** vises.
