@@ -2,7 +2,6 @@
 title: Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten
 description: Dette emne forklarer, hvordan du kan hente ER-konfigurationer (elektronisk rapportering) fra det globale lager til Konfigurationstjenesten.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
@@ -16,79 +15,79 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c4f083163db72569d91825819a904319a0fe3123
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 3a232cd319970e572580bc11f2dbaccbe208f127
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561896"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753378"
 ---
-# <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a><span data-ttu-id="93541-103">Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten</span><span class="sxs-lookup"><span data-stu-id="93541-103">Download ER configurations from the Global repository of Configuration service</span></span>
+# <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a><span data-ttu-id="0b225-103">Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten</span><span class="sxs-lookup"><span data-stu-id="0b225-103">Download ER configurations from the Global repository of Configuration service</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="93541-104">Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapportering)](general-electronic-reporting.md#Configuration) fra det globale lager til konfigurationstjenesten.</span><span class="sxs-lookup"><span data-stu-id="93541-104">This topic explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the Global repository of configuration service.</span></span> <span data-ttu-id="93541-105">Du kan finde flere oplysninger under [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurationstjeneste](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).</span><span class="sxs-lookup"><span data-stu-id="93541-105">For more information, see [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).</span></span>
+<span data-ttu-id="0b225-104">Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapportering)](general-electronic-reporting.md#Configuration) fra det globale lager til konfigurationstjenesten.</span><span class="sxs-lookup"><span data-stu-id="0b225-104">This topic explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the Global repository of configuration service.</span></span> <span data-ttu-id="0b225-105">Du kan finde flere oplysninger under [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurationstjeneste](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).</span><span class="sxs-lookup"><span data-stu-id="0b225-105">For more information, see [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).</span></span>
 
-## <a name="open-configurations-repository"></a><span data-ttu-id="93541-106">Åbn konfigurationslageret</span><span class="sxs-lookup"><span data-stu-id="93541-106">Open configurations repository</span></span>
+## <a name="open-configurations-repository"></a><span data-ttu-id="0b225-106">Åbn konfigurationslageret</span><span class="sxs-lookup"><span data-stu-id="0b225-106">Open configurations repository</span></span>
 
-1. <span data-ttu-id="93541-107">Log på programmet Dynamics 365 Finance ved hjælp af en af følgende roller:</span><span class="sxs-lookup"><span data-stu-id="93541-107">Sign in to the Dynamics 365 Finance application using one of the following roles:</span></span>
+1. <span data-ttu-id="0b225-107">Log på programmet Dynamics 365 Finance ved hjælp af en af følgende roller:</span><span class="sxs-lookup"><span data-stu-id="0b225-107">Sign in to the Dynamics 365 Finance application using one of the following roles:</span></span>
 
-    - <span data-ttu-id="93541-108">Udvikler til elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="93541-108">Electronic reporting developer</span></span>
-    - <span data-ttu-id="93541-109">Funktionel konsulent i elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="93541-109">Electronic reporting functional consultant</span></span>
-    - <span data-ttu-id="93541-110">Systemadministrator</span><span class="sxs-lookup"><span data-stu-id="93541-110">System administrator</span></span>
+    - <span data-ttu-id="0b225-108">Udvikler til elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="0b225-108">Electronic reporting developer</span></span>
+    - <span data-ttu-id="0b225-109">Funktionel konsulent i elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="0b225-109">Electronic reporting functional consultant</span></span>
+    - <span data-ttu-id="0b225-110">Systemadministrator</span><span class="sxs-lookup"><span data-stu-id="0b225-110">System administrator</span></span>
 
-2. <span data-ttu-id="93541-111">Gå til **Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="93541-111">Go to **Organization administration > Workspaces > Electronic reporting**.</span></span>
-3. <span data-ttu-id="93541-112">I sektionen **Konfigurationsudbydere** skal du vælge feltet **Microsoft**.</span><span class="sxs-lookup"><span data-stu-id="93541-112">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
-3. <span data-ttu-id="93541-113">I feltet **Microsoft** skal du vælge **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="93541-113">On the **Microsoft** tile, select **Repositories**.</span></span>
+2. <span data-ttu-id="0b225-111">Gå til **Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="0b225-111">Go to **Organization administration > Workspaces > Electronic reporting**.</span></span>
+3. <span data-ttu-id="0b225-112">I sektionen **Konfigurationsudbydere** skal du vælge feltet **Microsoft**.</span><span class="sxs-lookup"><span data-stu-id="0b225-112">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
+3. <span data-ttu-id="0b225-113">I feltet **Microsoft** skal du vælge **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="0b225-113">On the **Microsoft** tile, select **Repositories**.</span></span>
 
     ![Arbejdsområde til elektronisk rapportering](./media/er-download-configurations-global-repo-er-workspace.png)
 
-4. <span data-ttu-id="93541-115">På siden **Konfigurationslagre** i gitteret skal du vælge det eksisterende lager for **Global**-typen.</span><span class="sxs-lookup"><span data-stu-id="93541-115">On the **Configuration repositories** page, in the grid, select the existing repository of the **Global** type.</span></span> <span data-ttu-id="93541-116">Hvis lageret ikke vises i gitteret, skal du følge disse trin:</span><span class="sxs-lookup"><span data-stu-id="93541-116">If this repository doesn't appear in the grid, follow these steps:</span></span>
+4. <span data-ttu-id="0b225-115">På siden **Konfigurationslagre** i gitteret skal du vælge det eksisterende lager for **Global**-typen.</span><span class="sxs-lookup"><span data-stu-id="0b225-115">On the **Configuration repositories** page, in the grid, select the existing repository of the **Global** type.</span></span> <span data-ttu-id="0b225-116">Hvis lageret ikke vises i gitteret, skal du følge disse trin:</span><span class="sxs-lookup"><span data-stu-id="0b225-116">If this repository doesn't appear in the grid, follow these steps:</span></span>
 
-    1. <span data-ttu-id="93541-117">Vælg **Tilføj** for at tilføje et nyt lager.</span><span class="sxs-lookup"><span data-stu-id="93541-117">Select **Add** to add a new repository.</span></span>
-    2. <span data-ttu-id="93541-118">Vælg **Global** som lagertype, og vælg derefter **Opret lager**.</span><span class="sxs-lookup"><span data-stu-id="93541-118">Select **Global** as the repository type, and then select **Create repository**.</span></span>
-    3. <span data-ttu-id="93541-119">Hvis du bliver spurgt, skal du følge godkendelsesinstruktionerne.</span><span class="sxs-lookup"><span data-stu-id="93541-119">If prompted, follow the authorization instructions.</span></span>
-    4. <span data-ttu-id="93541-120">Angiv et navn til og en beskrivelse af lagringsstedet, og vælg derefter **OK** for at bekræfte den nye lagerpost.</span><span class="sxs-lookup"><span data-stu-id="93541-120">Enter a name and description for the repository and then select **OK** to confirm the new repository entry.</span></span>
-    5. <span data-ttu-id="93541-121">I gitteret skal du vælge det nye lager for **Global**-typen.</span><span class="sxs-lookup"><span data-stu-id="93541-121">In the grid, select the new repository of the **Global** type.</span></span>
+    1. <span data-ttu-id="0b225-117">Vælg **Tilføj** for at tilføje et nyt lager.</span><span class="sxs-lookup"><span data-stu-id="0b225-117">Select **Add** to add a new repository.</span></span>
+    2. <span data-ttu-id="0b225-118">Vælg **Global** som lagertype, og vælg derefter **Opret lager**.</span><span class="sxs-lookup"><span data-stu-id="0b225-118">Select **Global** as the repository type, and then select **Create repository**.</span></span>
+    3. <span data-ttu-id="0b225-119">Hvis du bliver spurgt, skal du følge godkendelsesinstruktionerne.</span><span class="sxs-lookup"><span data-stu-id="0b225-119">If prompted, follow the authorization instructions.</span></span>
+    4. <span data-ttu-id="0b225-120">Angiv et navn til og en beskrivelse af lagringsstedet, og vælg derefter **OK** for at bekræfte den nye lagerpost.</span><span class="sxs-lookup"><span data-stu-id="0b225-120">Enter a name and description for the repository and then select **OK** to confirm the new repository entry.</span></span>
+    5. <span data-ttu-id="0b225-121">I gitteret skal du vælge det nye lager for **Global**-typen.</span><span class="sxs-lookup"><span data-stu-id="0b225-121">In the grid, select the new repository of the **Global** type.</span></span>
 
-5. <span data-ttu-id="93541-122">Vælg **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager.</span><span class="sxs-lookup"><span data-stu-id="93541-122">Select **Open** to view the list of ER configurations for the selected repository.</span></span>
+5. <span data-ttu-id="0b225-122">Vælg **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager.</span><span class="sxs-lookup"><span data-stu-id="0b225-122">Select **Open** to view the list of ER configurations for the selected repository.</span></span>
 
     ![Siden Konfigurationslagre](./media/er-download-configurations-global-repo-repositories-list.png)
 
-## <a name="import-a-single-configuration"></a><span data-ttu-id="93541-124">Importere en enkelt konfiguration</span><span class="sxs-lookup"><span data-stu-id="93541-124">Import a single configuration</span></span>
+## <a name="import-a-single-configuration"></a><span data-ttu-id="0b225-124">Importere en enkelt konfiguration</span><span class="sxs-lookup"><span data-stu-id="0b225-124">Import a single configuration</span></span>
 
-1. <span data-ttu-id="93541-125">På siden **Konfigurationslagre** skal du i konfigurationstræet vælge den ER-konfiguration, du vil bruge.</span><span class="sxs-lookup"><span data-stu-id="93541-125">On the **Configuration repositories** page, in the configurations tree, select the ER configuration that you want.</span></span>
-2. <span data-ttu-id="93541-126">I oversigtspanelet **Versioner** skal vælge den krævede version af den valgte ER-konfiguration.</span><span class="sxs-lookup"><span data-stu-id="93541-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
-3. <span data-ttu-id="93541-127">Vælg **Importér** for at hente den valgte version fra Global-lager til den aktuelle Finans-forekomst.</span><span class="sxs-lookup"><span data-stu-id="93541-127">Select **Import** to download the selected version from Global repository to the current Finance instance.</span></span>
+1. <span data-ttu-id="0b225-125">På siden **Konfigurationslagre** skal du i konfigurationstræet vælge den ER-konfiguration, du vil bruge.</span><span class="sxs-lookup"><span data-stu-id="0b225-125">On the **Configuration repositories** page, in the configurations tree, select the ER configuration that you want.</span></span>
+2. <span data-ttu-id="0b225-126">I oversigtspanelet **Versioner** skal vælge den krævede version af den valgte ER-konfiguration.</span><span class="sxs-lookup"><span data-stu-id="0b225-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
+3. <span data-ttu-id="0b225-127">Vælg **Importér** for at hente den valgte version fra Global-lager til den aktuelle Finans-forekomst.</span><span class="sxs-lookup"><span data-stu-id="0b225-127">Select **Import** to download the selected version from Global repository to the current Finance instance.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="93541-128">Knappen **Importer** er ikke tilgængelig for ER-konfigurationsversioner, der allerede findes i den aktuelle Finans-forekomst.</span><span class="sxs-lookup"><span data-stu-id="93541-128">The **Import** button is unavailable for ER configuration versions that are already present in the current Finance instance.</span></span>
+    > <span data-ttu-id="0b225-128">Knappen **Importer** er ikke tilgængelig for ER-konfigurationsversioner, der allerede findes i den aktuelle Finans-forekomst.</span><span class="sxs-lookup"><span data-stu-id="0b225-128">The **Import** button is unavailable for ER configuration versions that are already present in the current Finance instance.</span></span>
 
     ![Siden Konfigurationslager](./media/er-download-configurations-global-repo-repository-content.png)
 
-## <a name="import-filtered-configurations"></a><span data-ttu-id="93541-130">Importere filtrerede konfigurationer</span><span class="sxs-lookup"><span data-stu-id="93541-130">Import filtered configurations</span></span>
+## <a name="import-filtered-configurations"></a><span data-ttu-id="0b225-130">Importere filtrerede konfigurationer</span><span class="sxs-lookup"><span data-stu-id="0b225-130">Import filtered configurations</span></span>
 
-1. <span data-ttu-id="93541-131">På siden **Konfigurationslagre** skal du i konfigurationstræet udvide oversigtspanelet **Filter**.</span><span class="sxs-lookup"><span data-stu-id="93541-131">On the **Configuration repositories** page, in the configurations tree, expand the **Filter** FastTab.</span></span>
-2. <span data-ttu-id="93541-132">I gitteret **Koder** skal du tilføje eventuelle koder, der skal bruges.</span><span class="sxs-lookup"><span data-stu-id="93541-132">In the **Tags** grid, add any tags that are needed.</span></span>
-3. <span data-ttu-id="93541-133">I feltet **Land/område** skal du vælge de relevante land/område-koder og derefter vælge **Anvend filter**.</span><span class="sxs-lookup"><span data-stu-id="93541-133">In the **Country/region applicability** field, select the appropriate country/region codes, and then select  **Apply filter**.</span></span>
+1. <span data-ttu-id="0b225-131">På siden **Konfigurationslagre** skal du i konfigurationstræet udvide oversigtspanelet **Filter**.</span><span class="sxs-lookup"><span data-stu-id="0b225-131">On the **Configuration repositories** page, in the configurations tree, expand the **Filter** FastTab.</span></span>
+2. <span data-ttu-id="0b225-132">I gitteret **Koder** skal du tilføje eventuelle koder, der skal bruges.</span><span class="sxs-lookup"><span data-stu-id="0b225-132">In the **Tags** grid, add any tags that are needed.</span></span>
+3. <span data-ttu-id="0b225-133">I feltet **Land/område** skal du vælge de relevante land/område-koder og derefter vælge **Anvend filter**.</span><span class="sxs-lookup"><span data-stu-id="0b225-133">In the **Country/region applicability** field, select the appropriate country/region codes, and then select  **Apply filter**.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="93541-134">Oversigtspanelet **Konfigurationer** viser alle de konfigurationer, der opfylder de angivne udvælgelsesbetingelser.</span><span class="sxs-lookup"><span data-stu-id="93541-134">The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions.</span></span>
+    > <span data-ttu-id="0b225-134">Oversigtspanelet **Konfigurationer** viser alle de konfigurationer, der opfylder de angivne udvælgelsesbetingelser.</span><span class="sxs-lookup"><span data-stu-id="0b225-134">The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions.</span></span>
 
-4. <span data-ttu-id="93541-135">I oversigtspanelet **Konfigurationer** skal du vælge **Importér** for at hente de filtrerede konfigurationer fra det globale lager til den aktuelle forekomst.</span><span class="sxs-lookup"><span data-stu-id="93541-135">On the **Configurations** FastTab, select **Import** to download the filtered configurations from the Global repository to the current instance.</span></span>
-5. <span data-ttu-id="93541-136">I oversigtspanelet **Konfigurationer** skal du vælge **Nulstil filter** for at rydde op i de angivne udvælgelsesbetingelser.</span><span class="sxs-lookup"><span data-stu-id="93541-136">On the **Configurations** FastTab, select **Reset filter** to clean up the specified selection conditions.</span></span>
+4. <span data-ttu-id="0b225-135">I oversigtspanelet **Konfigurationer** skal du vælge **Importér** for at hente de filtrerede konfigurationer fra det globale lager til den aktuelle forekomst.</span><span class="sxs-lookup"><span data-stu-id="0b225-135">On the **Configurations** FastTab, select **Import** to download the filtered configurations from the Global repository to the current instance.</span></span>
+5. <span data-ttu-id="0b225-136">I oversigtspanelet **Konfigurationer** skal du vælge **Nulstil filter** for at rydde op i de angivne udvælgelsesbetingelser.</span><span class="sxs-lookup"><span data-stu-id="0b225-136">On the **Configurations** FastTab, select **Reset filter** to clean up the specified selection conditions.</span></span>
 
     ![Siden Konfigurationslager](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
-> <span data-ttu-id="93541-138">Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne.</span><span class="sxs-lookup"><span data-stu-id="93541-138">Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="93541-139">Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget.</span><span class="sxs-lookup"><span data-stu-id="93541-139">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="93541-140">Før du kan bruge den importerede konfigurationsversion, skal du løse problemerne.</span><span class="sxs-lookup"><span data-stu-id="93541-140">Before you can use the imported configuration version, you must resolve the issues.</span></span> <span data-ttu-id="93541-141">Se listen over relaterede ressourcer i dette emne for at få flere oplysninger.</span><span class="sxs-lookup"><span data-stu-id="93541-141">For more information, see the list of related resources for this topic.</span></span>
+> <span data-ttu-id="0b225-138">Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne.</span><span class="sxs-lookup"><span data-stu-id="0b225-138">Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="0b225-139">Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget.</span><span class="sxs-lookup"><span data-stu-id="0b225-139">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="0b225-140">Før du kan bruge den importerede konfigurationsversion, skal du løse problemerne.</span><span class="sxs-lookup"><span data-stu-id="0b225-140">Before you can use the imported configuration version, you must resolve the issues.</span></span> <span data-ttu-id="0b225-141">Se listen over relaterede ressourcer i dette emne for at få flere oplysninger.</span><span class="sxs-lookup"><span data-stu-id="0b225-141">For more information, see the list of related resources for this topic.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="93541-142">ER-konfigurationer kan konfigureres som værende afhængige af andre konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="93541-142">ER configurations can be configured as being dependent on other configurations.</span></span> <span data-ttu-id="93541-143">Sammen med en valgt konfiguration kan andre konfigurationer derfor blive importeret automatisk.</span><span class="sxs-lookup"><span data-stu-id="93541-143">Therefore, along with a selected configuration, other configurations might be automatically imported.</span></span> <span data-ttu-id="93541-144">Yderligere oplysninger om konfigurationsafhængigheder finder du i [Definere afhængigheden for ER-konfigurationer af andre komponenter](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).</span><span class="sxs-lookup"><span data-stu-id="93541-144">For more about configuration dependencies, see [Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).</span></span>
+> <span data-ttu-id="0b225-142">ER-konfigurationer kan konfigureres som værende afhængige af andre konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="0b225-142">ER configurations can be configured as being dependent on other configurations.</span></span> <span data-ttu-id="0b225-143">Sammen med en valgt konfiguration kan andre konfigurationer derfor blive importeret automatisk.</span><span class="sxs-lookup"><span data-stu-id="0b225-143">Therefore, along with a selected configuration, other configurations might be automatically imported.</span></span> <span data-ttu-id="0b225-144">Yderligere oplysninger om konfigurationsafhængigheder finder du i [Definere afhængigheden for ER-konfigurationer af andre komponenter](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).</span><span class="sxs-lookup"><span data-stu-id="0b225-144">For more about configuration dependencies, see [Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="93541-145">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="93541-145">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="0b225-145">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="0b225-145">Additional resources</span></span>
 
-[<span data-ttu-id="93541-146">Oversigt over elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="93541-146">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
+[<span data-ttu-id="0b225-146">Oversigt over elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="0b225-146">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
