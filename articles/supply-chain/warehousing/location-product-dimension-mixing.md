@@ -2,11 +2,9 @@
 title: Blanding af produktdimension for lokation
 description: Dette emne indeholder oplysninger om blanding af produktdimensioner på lokation. Denne lokationsprofilfunktion hjælper med at forbedre lokationsstyringen, når der bruges produktvarianter eller produkter med dimensioner, f.eks. i modebranchen. Den giver dig mulighed for at bestemme, om konfigurationer, farver, stilarter og størrelser kan blandes for en bestemt lokationsprofil, eller om kun en af disse dimensioner eller en kombination af dem kan placeres på samme lokation.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b0309c7a7240d7cac9e5b5724a028f2dc70199e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217023"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831284"
 ---
 # <a name="location-product-dimension-mixing"></a>Blanding af produktdimension for lokation
 
@@ -206,9 +204,9 @@ Du skal oprette en indkøbsordre, der indeholder tre linjer: to linjer for samme
 
 1. Vælg **Gem**.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Modtage indkøbsordrelinjer i lagerstedsappen
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Modtage indkøbsordrelinjer i mobilappen Lokationsstyring
 
-1. Log på lagerstedsappen som en bruger, der er aktiveret til lagersted *24*.
+1. Log på mobilappen Lokationsstyring som en bruger, der er aktiveret til lagersted *24*.
 1. Vælg menuen **Indgående**.
 1. Vælg **Modtagelse af indkøbsordrelinje**.
 1. Vælg feltet **IO-num**, angiv derefter indkøbsordrenummeret.

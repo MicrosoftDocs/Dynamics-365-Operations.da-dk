@@ -2,11 +2,9 @@
 title: Udligne en delvis kreditorbetaling med rabatter på kreditnotaer
 description: Denne artikel fører dig gennem et scenario, hvor en kreditnota udlignes med en faktura.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a23ef6bff5f135e7f4189add776aeed18fbe79
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6e634796c7143c14a872c721f298f3ab28cbddd6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227298"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827836"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Udligne en delvis kreditorbetaling med rabatter på kreditnotaer
 
@@ -42,11 +40,11 @@ Den 29. juni opretter April en faktura på 1.000,00 til kreditor 3050. Den 2. ju
 
 Rabatoplysninger for kreditnotaen vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
 | Kasserabatdato           | 13/07/2015 |
-| Kasserabatbeløb         | 2,00      |
-| Anvend kasserabat            | Almindelig    |
+| Kasserabatbeløb         | 2.00      |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | 2,00      |
 

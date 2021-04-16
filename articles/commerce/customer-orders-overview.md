@@ -2,11 +2,9 @@
 title: Kundeordrer i POS
 description: Dette emne indeholder oplysninger om kundeordrer i POS. Kundeordrer kaldes også specialordrer. Emnet indeholder en beskrivelse af relaterede parametre og transaktionsflow.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220504"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821002"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer i POS
 
@@ -61,7 +59,8 @@ I Commerce version 10.0.12 og nyere kan organisationer definere, om lagerstedet 
 
 Når du arbejder med kundeordrer i POS, skal du overveje nogle af indstillingerne for butikskanalen. Disse indstillinger findes på siden **Butikker** i Commerce Headquarters.
 
-- **Lagersted** – I dette felt angives det lagersted, der skal bruges til at opfylde ordrer, der er konfigureret til forsendelse fra butikken.
+- **Lagersted** – Dette felt angiver det lagersted, der skal bruges, når lagerbeholdningen falder for cash and carry og kundeafhentningsordrer, der er bundet til denne butik. Som en bedste praksis opfordrer vi til brug af entydige lagersteder for hver butikskanal for at forhindre konflikter mellem forretningslogik på tværs af butikker.
+- **Forsendelseslagersted** – Dette felt angiver det lagersted, der skal bruges, når lagerbeholdningen falder for kundeordrer, der skal afsendes fra den valgte butik. Hvis funktionen **Mulighed for at angive lokationer som "Forsendelse" eller "Afhentning" er aktiveret i Opfyldningsgruppe**, er aktiveret i dit miljø, kan POS-brugere vælge et bestemt lagersted, der skal afsendes fra i POS, i stedet for at vælge en butik, der skal afsendes fra. Når denne funktion er aktiveret, anvendes afsendelseslagerstedet derfor ikke længere, da brugeren skal plukke det specifikke lagersted for at afsende ordren fra det tidspunkt, hvor ordren oprettes.
 - **Gruppetildeling for opfyldelse** – Vælg denne knap (under fanen **Konfigurer** i handlingsruden) for at knytte de opfyldelsesgrupper, der refereres til, til at vise indstillinger for afhentningssteder eller forsendelsesoprindelse, når der oprettes kundeordrer i POS.
 - **Brug destinationsbaseret moms** – Denne indstilling angiver, om forsendelsesadressen bruges til at bestemme, hvilken momsgruppe der anvendes på de ordrelinjer, der leveres til kundens adresse.
 - **Brug kundebaseret moms** – Denne indstilling angiver, om den momsgruppe, der er defineret for kundens leveringsadresse, skal bruges til af lægge moms til kundeordrer, der oprettes i POS ved forsendelse til kundens hjem.

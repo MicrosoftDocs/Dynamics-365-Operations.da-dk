@@ -2,11 +2,9 @@
 title: Genopfyldning over lokationskapacitet
 description: Dette emne indeholder oplysninger om funktionen Genopfyldning over lokationskapacitet. Denne funktion aktiverer alt genopfyldningsarbejde, der kræves for dagen, der skal oprettes, og styrer tilgængeligheden af genbestillingsarbejdet for at sikre, at plukpladsen ikke løber tør for lager eller overstiger kapaciteten.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228387"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823233"
 ---
 # <a name="replenishment-over-location-capacity"></a>Genopfyldning over lokationskapacitet
 
@@ -241,7 +239,7 @@ Afhængigt af de disponible antal kan de arbejdsantal, der oprettes, variere en 
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Id for disponibel lagerbeholdning
 
-Senere i dette scenario skal du bruge appen Lagersted (eller en emulator), hvor du skal identificere id'et for at fuldføre pluk- og genopfyldningsscenarierne.
+Senere i dette scenario skal du bruge mobilappen Lokationsstyring (eller en emulator), hvor du skal identificere id'et for at fuldføre pluk- og genopfyldningsscenarierne.
 
 Du kan finde de id'er, du skal bruge, senere ved at følge disse trin.
 
@@ -266,7 +264,7 @@ Du skal udføre genopfyldning af lagerstedet for de første to arbejds-id'er. Ar
 
 #### <a name="replenishment"></a>Opfyldning
 
-1. Log på lagerstedsappen som en bruger på lagersted *61*. (Angiv *61* som bruger-id og *1* som adgangskode).
+1. Log på mobilappen Lokationsstyring som en bruger på lagersted *61*. (Angiv *61* som bruger-id og *1* som adgangskode).
 1. Gå til **Lager \> Genopfyldning**.
 
     Du bliver bedt om at fuldføre det første genopfyldningsarbejde. Varenummeret, antallet og pluklokationen vises.
@@ -296,7 +294,7 @@ Indtil der er plukket tilstrækkeligt med lagervarer fra lokationen, så de komm
 
 Før den resterende genopfyldningsarbejdsopgave kan fuldføres, skal plukpladsen tømmes for lager til et niveau, hvor blokering af det resterende genopfyldningsarbejde kan ophæves. Det vil sige, at summen af antallet af disponible lagerbeholdninger på lokationen og genopfyldningsantallet ikke overstiger værdien af **Overløbsantal**. Når denne sum er mindre end overløbsantallet, fjernes spærringen af det resterende genopfyldningsarbejde.
 
-1. Log på lagerstedsappen som en bruger på lagersted *61*. (Angiv *61* som bruger-id og *1* som adgangskode).
+1. Log på mobilappen Lokationsstyring som en bruger på lagersted *61*. (Angiv *61* som bruger-id og *1* som adgangskode).
 1. Gå til **Udgående \> Salgsplukning**.
 1. Angiv første arbejds-id for salgsordre 1.
 

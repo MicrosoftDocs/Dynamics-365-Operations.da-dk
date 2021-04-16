@@ -2,11 +2,9 @@
 title: Importér remburs
 description: Denne procedure fører dig gennem processen med at importere en remburs.
 author: kweekley
-manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ac0b1aacbf0e5dbe69a8125dc0a1373de0957d4e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6ce0a12aff70da1ec556b69198aa5210519b6af2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225387"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834734"
 ---
 # <a name="import-letter-of-credit"></a>Importér remburs
 

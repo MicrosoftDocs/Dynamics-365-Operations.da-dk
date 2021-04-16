@@ -2,11 +2,9 @@
 title: Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 description: Dette emne beskriver, hvordan grænsefladen til kørsel af produktionsudstyr anvendes af arbejderne.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500784"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814650"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Grænsefladen til kørsel af produktionsudstyr er blevet optimeret med berøringsinteraktion. Designet giver en visuel kontrast, der lever op til tilgængelighedskravene i produktionsmiljøer. Det har de samme funktionelle egenskaber som jobkortenheden. Det betyder imidlertid også, at flere job kan startes parallelt fra en jobliste. (Denne egenskab kaldes også *job i bundter*). Arbejderne kan også på en jobliste åbne en guide, der er oprettet i vejledningen til Microsoft Dynamics 365. På denne måde kan de få visuelle instruktioner på en HoloLens.
 
@@ -90,7 +87,7 @@ Fanen **Min maskine** indeholder følgende kolonner. Tallene svarer til tallene 
 
 1. **Indstillinger** – Vælg tandhjulsikonet for at åbne en dialogboks, hvor du kan vælge, hvilke tællere der skal vises for det valgte maskinaktiv. Værdierne for disse tællere vises øverst på fanen **Aktivstyring**. Menuen **Indstillinger** (vist i følgende skærmbillede) giver dig mulighed for at aktivere op til fire tællere. For hver tæller, du vil aktivere, skal du bruge opslagsfeltet øverst i felterne til at vælge en tæller. Opslagsfeltet viser alle de tællere, der er tilknyttet aktivet, som er valgt øverst på siden **Aktivstyring**. Indstil hver tæller til enten at overvåge den **samlede** værdi eller den seneste **faktiske** værdi for tælleren. Hvis du f.eks. angiver en tæller, der sporer, hvor mange timer maskinen har kørt, skal du angive den til **Samlet**. Hvis du angiver en tæller for at måle den seneste opdaterede temperatur eller måling, skal du angive den til **Faktisk**. Vælg **OK** for at gemme dine indstillinger og lukke dialogboksen.
 
-    ![Fanen Min maskine](media/pfei-my-machine-tab-settings.png "Fanen Min maskine")
+    ![Indstillinger under fanen Min maskine](media/pfei-my-machine-tab-settings.png "Indstillinger under fanen Min maskine")
 
 1. **Anmod om vedligeholdelse** – Vælg denne knap for at åbne en dialogboks, hvor du kan oprette en vedligeholdelsesanmodning. Du kan angive en beskrivelse og et notat. En bruger af Supply Chain Management vil blive gjort opmærksom på anmodningen, som derefter vil kunne konvertere vedligeholdelsesanmodningen til en arbejdsordre for vedligeholdelse.
 1. **Registrér nedetid** – Vælg denne knap for at åbne en dialogboks, hvor du kan registrere maskinnedetid. Du kan vælge en årsagskode og angive en dato/tidsperiode for nedetiden. Registreringen af maskinnedetid bruges til at beregne effektiviteten af maskinaktivet.
