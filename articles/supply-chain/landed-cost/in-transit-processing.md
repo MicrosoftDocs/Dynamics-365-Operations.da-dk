@@ -2,7 +2,6 @@
 title: Behandle varer undervejs
 description: I dette emne beskrives, hvordan du kan arbejde med ordrer på varer undervejs. Når en ordre eller fragt er konfigureret til at bruge varer undervejs, kan varer faktureres, før de er modtaget på lagerstedet til forbrug.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500398"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823403"
 ---
 # <a name="goods-in-transit-processing"></a>Behandle varer undervejs
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I dette emne beskrives, hvordan du kan arbejde med ordrer på varer undervejs. Denne ordretype bruges kun i modulet **Landingsomkostninger**. Når en ordre eller fragt er konfigureret til at bruge varer undervejs, skal du ikke vente på, at varer er modtaget på lagerstedet, før du kan fakturere dem. Varerne faktureres i stedet, når de forlader leverandørens lagersted eller oprindelseshavn, og de økonomiske omkostninger registreres, når fragten starter. Denne funktionalitet giver dig mulighed for at tage ejerskab over lageret, da varer ofte bliver organisationens ejendom, når de forlader forsendelseshavnen.
 
@@ -135,7 +133,7 @@ Landingsomkostninger føjer følgende arbejdsprocesser til menupunkterne for mob
 
 Konfigurationsindstillingerne for disse processer ligner indstillingerne for [arbejdsoprettelsesprocesser for modtagelse og placering af indkøbsordrer](https://technet.microsoft.com/library/dn553216.aspx). I processen *Modtagelse og placering af varer undervejs* tilføjes dog også følgende felt.
 
-- **Aktivér fuldført forsendelsescontainer** – Hvis denne indstilling er angivet til *Ja*, når arbejdsstedet læg-arbejdet er fuldført, indeholder lagerstedsappen en ekstra indstilling med navnet **Forsendelsescontainer fuldført**. Når denne indstilling er valgt, vil arbejderen blive bedt om at bekræfte, at containeren er fuldført. På dette tidspunkt vil alle korte tilgange blive behandlet som en undertransaktion.
+- **Aktivér fuldført forsendelsescontainer** – Hvis denne indstilling er angivet til *Ja*, når arbejdsstedet læg-arbejdet er fuldført, indeholder mobilappen Lokationsstyring en ekstra indstilling med navnet **Forsendelsescontainer fuldført**. Når denne indstilling er valgt, vil arbejderen blive bedt om at bekræfte, at containeren er fuldført. På dette tidspunkt vil alle korte tilgange blive behandlet som en undertransaktion.
 
 ### <a name="location-directives"></a>Lokationsvejledninger
 

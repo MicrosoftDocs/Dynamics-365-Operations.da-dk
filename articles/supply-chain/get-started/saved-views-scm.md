@@ -2,11 +2,9 @@
 title: Gemte standardvisninger for Supply Chain Management
 description: Dette emne beskriver de gemte standardvisninger, der er tilgængelige, og forklarer, hvordan de aktiveres.
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500688"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821243"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gemte standardvisninger for Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management indeholder adskillige gemte visninger, som du kan aktivere og bruge efter behov. Nogle af disse gemte standardvisninger er optimeret og navngivet til en bestemt rolle eller opgave (f.eks. "Kvalitetskontrol" eller "Modtagelse"). Andre er optimeret, så de kun inkluderer de felter og indstillinger, som Microsoft-brugsstatistikken angiver, at der oftest bruges af kunder. Disse gemte visninger kaldes typisk *forenklede* visninger. Dette emne beskriver de gemte standardvisninger, der er tilgængelige, og forklarer, hvordan de aktiveres og tilpasses.
 
@@ -82,14 +79,16 @@ I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet
 
 ## <a name="saved-views-for-the-production-control-module"></a>Gemte visninger for modulet Produktionsstyring
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet Produktionsstyring.
 
 | Side | Visningsnavn | Få vist beskrivelsen | Funktionsnavn |
 |---|---|---|---|
-| Siden med produktionsordrens stykliste | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring |
-| Siden med detaljer om produktionsordrer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring |
-| Siden med produktionsordreplukliste | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring |
-| Listeside med produktionsordrer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring |
+| Siden med produktionsordrens stykliste | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | (Prøveversion) Gemte visninger til produktionsstyring |
+| Siden med detaljer om produktionsordrer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | (Prøveversion) Gemte visninger til produktionsstyring |
+| Siden med produktionsordreplukliste | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | (Prøveversion) Gemte visninger til produktionsstyring |
+| Listeside med produktionsordrer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | (Prøveversion) Gemte visninger til produktionsstyring |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Gemte visninger for modulet Salg og marketing
 

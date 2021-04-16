@@ -2,11 +2,9 @@
 title: Angive forskellige dimensioner for pakning og lagring
 description: I dette emne vises, hvordan du kan angive, hvilken proces (pakning, lagring eller indlejret emballage) hver enkelt dimension bruges til.
 author: mirzaab
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: e997f8bccde7856303d8b3c6407143598ccc6030
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501288"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818914"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Angive forskellige dimensioner for pakning og lagring
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Nogle varer er pakket eller lagret på en sådan måde, at du kan få brug for at spore fysiske dimensioner forskelligt for hver af flere forskellige processer. Funktionen *Emballageproduktdimensioner* gør det muligt at konfigurere en eller flere typer dimensioner for hvert produkt. Hver dimensionstype indeholder et sæt fysiske målinger (vægt, bredde, dybde og højde) og fastlægger den proces, hvor disse fysiske målingsværdier gælder. Når denne funktion er aktiveret, understøtter systemet følgende dimensionstyper:
 

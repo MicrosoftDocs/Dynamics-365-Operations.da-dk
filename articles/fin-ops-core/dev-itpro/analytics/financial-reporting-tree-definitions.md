@@ -1,27 +1,26 @@
 ---
 title: Rapportering af trædefinitioner i økonomiske rapporter
 description: I denne artikel beskrives definitioner af rapporteringstræer. En definition af et rapporteringstræ er en rapportkomponent, der definerer strukturen i en organisation.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 367df467d20fb7c60821c9de1f86758196f4faf3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568769"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819932"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
@@ -74,7 +73,7 @@ Hvis du vil oprette et rapporteringstræ, skal du følge disse trin.
     | Medtag/tegnposition       | I dette afsnit vises de dimensioner, der er defineret i de økonomiske data, og antallet af tegn i den længste værdi, der er defineret for hver dimension. Marker afkrydsningsfeltet for en dimension for at medtage den i rapporteringstræhierarkiet. |
     | Hierarki og intervaller for segmenter     | I dette afsnit vises dimensionshierarkiet. Du kan flytte dimensionerne på listen for at ændre deres rapporteringsrækkefølge. I felterne **Fra dimension** og **Til dimension** kan angive et interval af værdier inden for hver dimension. Hvis du ikke angiver et interval, indsættes alle dimensionsværdier i rapporteringstræet.<blockquote>[!NOTE] Hvis du bruger mere end én dimension, er det kun kombinationer af de dimensioner, der er bogført til, som returneres i resultaterne.</blockquote> |
 
-    Du kan finde et skærmbillede, der viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, i afsnittet "Eksempel på dialogboksen Indsæt rapporteringsenheder fra dimensioner" senere i denne artikel.
+    Du kan finde en illustration, der viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, i afsnittet "Eksempel på dialogboksen Indsæt rapporteringsenheder fra dimensioner" senere i denne artikel.
 
 5. Hvis du vil oprette flere segmenter (f.eks ved at opdele ét segment i to kortere segmenter), skal du klikke på den korrekte placering i et felt af typen **Tegnposition** og derefter klikke på **Opdel segmenter**.
 6. Hvis du vil flette to segmenter i ét segment, skal du klikke i en af boksene for segmentet, der skal flettes, og derefter klikke på **Kombiner segmenter**.
@@ -186,23 +185,23 @@ Her er strukturen for rapporteringsenhederne i følgende rapporteringstræ:
 - Rapporteringsenhederne på det laveste niveau (Hjemmesalg, Autosalg, Kundeservice og Operationer) repræsenterer afdelinger i de økonomiske data. Disse rapporteringsenheder er i det nedtonede område i diagrammet.
 - Oversigtsenhederne på de højere niveauer opsummerer oplysninger fra detaljeenhederne.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso-oversigtsrapportstruktur – eksempel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Rapporteringsenhedstruktur – eksempel 2
 
 I følgende diagram har rapporteringstræet en organisationsstruktur, der er opdelt efter forretningsfunktion.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso-oversigtsrapportstruktur – eksempel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Eksempel på dialogboksen Indsæt rapporteringsenheder fra Dimensioner
 
 Følgende illustration viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra Dimensioner**. I dette eksempel returnerer resultaterne kombinationen af virksomhedsenheder, bærere og afdelinger.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Indsætte rapporteringsenheder](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Den resulterende rapporteringstrædefinition er sorteret efter virksomhedsenhed og derefter efter bærer og derefter efter afdeling. Dimensionen for den femte rapporteringsenhed er **Virksomhedsenhed = \[001\] Bærer =\[\], Afdeling = \[022\]**, og den identificerer en rapporteringsenhed for konti, der er specifikke for virksomhedsenhed 001 og afdeling 022.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustration af rapporteringstræet](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Eksempler på dataakkumulering
 
@@ -210,11 +209,11 @@ Følgende eksempler viser mulige oplysninger, der bruges i en definition af et r
 
 #### <a name="example-1"></a>Eksempel 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Total af flere firmaer](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Eksempel 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Total på tværs af firmaafdeling](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -2,11 +2,9 @@
 title: Beregne leveringsdatoen for en linje baseret på gennemløbstiden
 description: Dette emne indeholder en beskrivelse af, hvordan du kan beregne en leveringsdato for en linje på baggrund af leverandørens gennemløbstid og din organisations kalender med arbejdsdage.
 author: velofog
-manager: AnnBe
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 89a9144a828121dc5360ebe2b7ed89605e1a0e1d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28ec0491f2956b5a4b1e90965fa2df8cb494947c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207149"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820459"
 ---
 # <a name="calculate-the-delivery-date-for-a-line-based-on-the-lead-time"></a>Beregne leveringsdatoen for en linje baseret på gennemløbstiden
 

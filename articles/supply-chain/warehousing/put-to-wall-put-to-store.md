@@ -2,11 +2,9 @@
 title: Sæt til væg – læg til butik
 description: Dette emne indeholder oplysninger om funktionaliteten Sæt til væg – læg til butik. Denne funktionalitet giver dig mulighed for at håndtere scenarier, hvor du skal konsolidere et produkt til et midlertidig lagring til forpakning, der er baseret på konfigurerbare kriterier. Det er med til at reducere pluktiden, da det giver mulighed for at plukke til en enkelt destinations nummerplade og kan bruge flere læg på lager-placeringer end klyngeplukning.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e2dcfa18af457ea21618704bafa2ed81c615d952
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228507"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823281"
 ---
 # <a name="put-to-wall---put-to-store"></a>Sæt til væg – læg til butik
 
@@ -524,7 +522,7 @@ Nu, hvor alt lager er blevet placeret på sorteringslokationen, og at det skal s
 
 Hvis sorteringspositionerne skal lukkes manuelt, skal indstillingen **Luk sorteringsposition automatisk** for skabelon til udgående sortering angives til *Nej*, og lukningen skal foretages, før lageret kan flyttes til lagerportområdet. Positioner kan lukkes på flere forskellige måder:
 
-- Via lagerstedsappen:
+- Via mobilappen Lokationsstyring:
 
     - Brugeren kan scanne en af de varer, der allerede findes på positionen, og derefter vælge **Luk** for at lukke positionen.
     - Hvis brugeren scanner en container, der allerede er sorteret til container, vises en fejlmeddelelse. Brugeren kan dog stadig fortsætte med at lukke positionen.

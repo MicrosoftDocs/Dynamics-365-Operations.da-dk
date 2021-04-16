@@ -2,11 +2,9 @@
 title: Antal bøger pr. kladde
 description: Dette emne beskriver forholdet mellem kladder og anlægsaktivbøger, når du opretter et anlægsaktivanskaffelse eller et afskrivningsforslag via et batchjob. Du kan definere det maksimale antal kartoteker, der er inkluderet for hver anskaffelse, og til afskrivning.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7f266e458802e65f0955ae8f8933f9bee2eca972
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e948b4353d0216f1e09019a98319e343bd535861
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256709"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822027"
 ---
 # <a name="number-of-books-per-journal"></a>Antal bøger pr. kladde
 
@@ -43,11 +41,14 @@ Du kan bruge batchafvikling til at køre afskrivning for det samme sæt anskaffe
 
 Batchafviklingsjobbet udelader lukkede kartoteker. I et batchjob til afskrivning lukkes f. eks. 10 af de første 2.000 kartoteker. Den første kladde vil således indeholde de kartoteker, der er knyttet til anlægsaktiverne med numrene 1 til 2.011. Den anden kladde vil indeholde de kartoteker, der er knyttet til anlægsaktiverne med numrene 2,012 til 4.000.
 
+> [!NOTE]
+> Hvis du har anlægsaktiv-id'er med forskellige separatorer (som f.eks. – eller /), og du opretter anlægsaktivposteringer i batchjob, skal du køre et separat batchjob for hver type separator. Systemet kan ikke behandle forskellige separatorer i det samme batchjob.
+
 Grænsen for antallet af kartoteker anvendes, hvis der ikke findes identiske anlægs-id'er i samme kladde. Men hvis aktiv-id'et er det samme som det bogførte ID, kan antallet af kartoteker pr. kladde overskrides for at beholde aktiv-id'et i samme kladde.
 
 Der er f. eks. 5.001 anlægsaktiv-id'er, der knyttes tre kartoteker til hvert anlægsaktiv-ID, og hver enkelt anlægs model bogføres på samme posteringslag. Du kører afskrivning for tre på hinanden følgende måneder uden opsummering.  Afskrivningskladden oprettes via et batchjob, og der oprettes syv kladder med 667 anlægsaktiv-id'er og tre kartoteker for hvert anlægsaktiv-ID. Resultatet vil være 2.001 kartoteker. I tre måneder vil der derfor være 6.003 kladdelinjer til at vedligeholde samme anlægs-id'er i samme kladde. Der oprettes også én kladde med 332 anlægsaktiv-id'er og tre kartoteker for hvert anlægsaktiv-ID. Inden for tre måneder vil der være 2.988 linjer.
 
-> [!Note] 
+> [!NOTE] 
 > Hvis parameteren **Opsummer afskrivning** er aktiveret, når du opretter et afskrivningsforslag, har værdien i feltet **Antal kladder pr. kladde** - Afskrivningsforslag har ingen virkning. I dette tilfælde er antallet af bøger pr. kladde 6000, hvilket er den interne definerede grænse.
 
 

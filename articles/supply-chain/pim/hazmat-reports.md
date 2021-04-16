@@ -2,11 +2,9 @@
 title: Forespørgsler og rapporter om farligt materiale
 description: Dette emne forklarer, hvordan du kan arbejde med forskellige rapporter, der er relateret til farlige materialer. Mange af disse rapporter er påkrævet, så du overholder angivne standarder i forordninger for forskellige farlige materialet under forsendelse og opbevaring på lager.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cee824e9e8f7577d1d4a6c0a21c7341608e1f588
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 07f103680cacc1273b2b28f6e4e905d6dabb006a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243123"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820316"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Forespørgsler og rapporter om farligt materiale
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management leverer forskellige rapporter, der er relateret til farlige materialer. Mange af disse rapporter er påkrævet, så du overholder angivne standarder i forordninger for forskellige farlige materialet under forsendelse og opbevaring på lager.
 
