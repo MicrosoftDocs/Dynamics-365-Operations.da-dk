@@ -2,11 +2,9 @@
 title: Kvalitetskontrol
 description: Dette emne indeholder oplysninger om funktionen Kvalitetskontrol. Denne funktion giver lagermedarbejderne mulighed for hurtig spottjek af kvalitet, mens de modtager varer i modtagelsesområdet.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 31afcfcb9d8dbb91f4ea4e3e7a7282c2a87328d4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228459"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838220"
 ---
 # <a name="quality-check"></a>Kvalitetskontrol
 
@@ -301,7 +299,7 @@ Når indkøbsordren er blevet oprettet, kan den modtages ved hjælp af menupunkt
 
 #### <a name="receive-pallet-1"></a>Modtage palle 1
 
-1. Log på lagerstedsappen som bruger af lagersted *51*. (Angiv *51* som bruger-id og *1* som adgangskode).
+1. Log på mobilappen Lokationsstyring som en bruger for lagersted *51*. (Angiv *51* som bruger-id og *1* som adgangskode).
 1. Gå til **Indgående \> Modtagelse af indkøbsordrelinje**.
 1. Angiv dit indkøbsordrenummer i feltet **IO-num**.
 1. Bekræft indkøbsordrens nummer.

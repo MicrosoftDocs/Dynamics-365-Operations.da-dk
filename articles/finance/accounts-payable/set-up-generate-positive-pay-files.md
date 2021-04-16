@@ -2,11 +2,9 @@
 title: Konfigurere og generere filer til positive betalinger
 description: I dette emne beskrives, hvordan du opretter positive betalinger og genererer filer til positive betalinger.
 author: panolte
-manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7d1520828bc626784f1555d8878a1fdad1bd5b9e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f96e34b8d94f9e83afb39d6ad97aca85386b458
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227370"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830706"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Konfigurere og generere filer til positive betalinger
 
@@ -140,6 +138,9 @@ Filer til positiv betaling oprettes ved hjælp af dataenheder. Før du kan gener
   </xsl:template>
 </xsl:stylesheet>
 ```
+
+> [!NOTE]
+> XML-navne i XSLT skal svare til store og små bogstaver af noder i XML-filen. Der skelnes mellem store og små bogstaver i både XSLT- og XML-filerne. 
 
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Tildele formatet for positiv betaling til en bankkonto
 For hver bankkonto, du vil generere oplysninger om positiv betaling for, skal du tildele det format for positiv betaling, du angav i forrige afsnit. På siden **Bankkonti** skal du vælge formatet for positive betalinger, der svarer til bankkontoen. Angiv den første dato til generering af filer til positiv betaling i feltet **Startdato for positiv betaling**. Det er vigtigt, at du indtaster en dato i dette felt. Ellers vil den første positive lønfil, du opretter, indeholde alle checks, der nogensinde er oprettet for denne bankkonto.

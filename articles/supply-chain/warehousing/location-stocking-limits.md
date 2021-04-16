@@ -2,11 +2,9 @@
 title: Grænser for lokationslagring
 description: I dette emne beskrives funktionerne til grænser for lokationslagring.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e336b54b894669f8a49091473314e1d7d2639e5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b9fb3c35f2f2e0fd7c0e3afe132efb4c51f163a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216975"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831260"
 ---
 # <a name="location-stocking-limits"></a>Grænser for lokationslagring
 
@@ -83,7 +81,7 @@ I dette eksempel skal du køre en indkøbsordre, der modtager flow for to linjer
 
 Du modtager først antallet *4* af enhed *PL* i størrelse *S*, og du kan gennemse lokationer af læg på-linje for det arbejde, der oprettes. Du modtager derefter antallet *4* af enhed *PL* i størrelse *L*, og du kan gennemse lokationer af læg på-linje for det arbejde, der oprettes.
 
-1. I lagerstedsappen skal du logge på ved at bruge *24* som bruger-id og *1* som adgangskode.
+1. I mobilappen Lokationsstyring skal du logge på ved at bruge *24* som bruger-id og *1* som adgangskode.
 1. Vælg **Indgående** \> **Købsmodtagelse**.
 1. Modtag *4* *PL* af varenummer *D0013* i størrelse *S*.
 1. Gennemgå det læg på lager-arbejde, der er oprettet. Du bør se følgende resultat:

@@ -2,11 +2,9 @@
 title: Midler i den offentlige sektor
 description: Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerFund, LedgerFundType
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 332cbd7278b66e5dc4784c08f26fd28ec45bbd91
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1b19b4df4a5c28f4a13aa6ce5e8aec1b9cd06e75
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258152"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839728"
 ---
 # <a name="funds-in-the-public-sector"></a>Midler i den offentlige sektor
 
@@ -75,9 +73,8 @@ Her er en liste over nogle af de midler, der kan bruges af myndighederne i en by
 
 Følgende tabel viser disse midler grupperet efter klasse og middeltype.
 
-|                |                        |                 |                                  |
+| Finansieringskildeklasse | Finansieringskildetype          | Finansieringskildenummer | Navn på finansieringskilde                    |
 |----------------|------------------------|-----------------|----------------------------------|
-| **Finansieringskildeklasse** | **Finansieringskildetype**          | **Finansieringskildenummer** | **Navn på finansieringskilde**                    |
 | Offentlig   | Generelt middel           | 1103            | Generelt middel                     |
 |                | Særlige indtægtsmidler  | 1343            | School of Technology             |
 |                |                        | 1372            | Informationsteknologi           |

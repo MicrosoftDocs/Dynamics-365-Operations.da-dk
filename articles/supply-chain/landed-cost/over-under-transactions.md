@@ -2,7 +2,6 @@
 title: Over-/undertransaktioner
 description: Dette emne indeholder oplysninger, der kan hjælpe dig med at konfigurere detaljerne om politikker for over-/undertransaktioner, så systemet kan bestemme, hvordan det skal administrere overbehandlingen og underbehandlingen af varer på modtagelsestidspunktet.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500976"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833731"
 ---
 # <a name="overunder-transactions"></a>Over-/undertransaktioner
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Når ordrerne i en fragt behandles, forventer systemet, at det modtagne vareantal på det endelige destinationslagersted til forbrug svarer til det antal, der er angivet på de indkøbsordrelinjer, der er tilknyttet fragten. Da det nøjagtige antal på indkøbsordrelinjerne dog ikke altid modtages på lagerstedet, definerer modulet **Landingsomkostninger** et sæt regler, der bruges til håndtering af over- og undermodtagelse af varer. Disse regler er især vigtige, fordi den oprindelige indkøbsordre er faktureret og ikke længere kan ændres. Hvis du konfigurerer detaljerne om politikker for over-/undertransaktioner, kan systemet bestemme, hvordan det skal administrere overbehandlingen og underbehandlingen af varer på modtagelsestidspunktet. Du kan også administrere over- og underlager manuelt ved hjælp af siden **Over-/undertransaktioner**.
 

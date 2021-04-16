@@ -2,11 +2,9 @@
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f9eb0685fcefe5d0734dc01fa82971958c3952d2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236069"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829974"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 
@@ -35,11 +33,13 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende funktioner er inkluderet i denne version. Nogle af de viste funktioner findes stadig i prøveversionen, mens andre muligvis allerede er generelt tilgængelige. Følg linkene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
+Følgende funktioner er inkluderet i denne version. Følg linkene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
 
 - [Brugerdefinerbar grænseflade til kørsel af produktion](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Du kan finde flere oplysninger under [Konfigurere en enhed til at køre grænsefladen for produktionsudstyr](../production-control/production-floor-execution-setup.md).
 
 - [Tilføjelsesprogrammet Lagersynlighed til Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Yderligere oplysninger finder du i [Tilføjelsesprogrammet Lagersynlighed](../inventory/inventory-visibility.md)
+
+- Samlet nummerserie for job-id'er<br> - Du kan finde flere oplysninger under [Samlet nummerserie for job-id'er](../production-control/unified-job-ids.md).
 
 - [Validere id'er på kildedokumentlinjer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Du kan finde flere oplysninger under [Oversigt over konfiguration af lagersted](../warehousing/warehouse-configuration.md).
 
@@ -74,8 +74,8 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. D
 - [Foretage fejlfinding af reservationer i lokationsstyring](../warehousing/troubleshoot-warehouse-reservations.md)
 - [Fejlfinde salgsordrer](../sales-marketing/troubleshooting-sales.md)
 - [Fejlfinde salgstilbud](../sales-marketing/troubleshooting-salesquotation.md)
-- [Foretage fejlfinding af opgradering og migrering til avanceret lokationsstyring](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Fejlfinding af problemer med forbindelsen til lagerstedsappen](../warehousing/troubleshoot-warehouse-app-connection.md)
+- [Fejlfinde opgradering og migrering til avanceret lagerstedsstyring](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
+- [Foretage fejlfinding af problemer med forbindelsen til mobilappen Lokationsstyring](../warehousing/troubleshoot-warehouse-app-connection.md)
 - [Foretage fejlfinding af konfiguration af lagersted](../warehousing/troubleshoot-warehouse-configuration.md)
 - [Foretage fejlfinding i forbindelse med genopfyldning af lagersted](../warehousing/troubleshoot-warehouse-replenishment.md)
 - [Foretage fejlfinding af lagerstedskonfiguration](../warehousing/troubleshoot-warehouse-setup.md)

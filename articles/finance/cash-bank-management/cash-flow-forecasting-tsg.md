@@ -2,11 +2,9 @@
 title: Foretage fejlfinding af opsætning af likviditetsbudget
 description: Dette emne giver svar på spørgsmål, som du kan have, når du konfigurerer likviditetsbudgettering. Den løser ofte stillede spørgsmål om opsætningen af likviditet, opdateringer til likviditet og Power BI-pengestrøm.
 author: panolte
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1cde9321259753bd0cacab3706c7f8455598ff3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b4760d7a0d0c14e2df8df20c2f81ec41e077cc0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232483"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827308"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Foretage fejlfinding af opsætning af likviditetsbudget
 
@@ -47,11 +45,19 @@ Der er flere trin, der skal udføres, før likviditetsbudgetter kan vises i Powe
 
 ## <a name="why-did-cash-flow-power-bi-work-in-previous-versions-but-is-now-blank"></a>Hvorfor blev Power BI-likviditetsarbejdet i tidligere versioner, men det er nu tomt?
 
-Kontroller, at målingerne "Likviditetsmåleenhed V2" og "LedgerCovLiquidityMeasurement" fra en enhed er konfigureret. Du kan få flere oplysninger om, hvordan du arbejder med data i Enhedslager, under [Power BI-integration med enhedslager](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Bekræft, at alle trin til visning af Power BI-indhold er udført. Du kan finde flere oplysninger i [Power BI-indhold for oversigt over kontanter](Cash-Overview-Power-BI-content.md).
+Kontroller, at målingerne "Likviditetsmåleenhed V2" og "LedgerCovLiquidityMeasurement" fra en enhed er konfigureret. Du kan finde flere oplysninger om, hvordan du arbejder med data i enhedslager, i [Power BI-integration med enhedslager](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Kontrollér, at alle trin, der kræves for at se Power BI-indhold, er fuldført. Du kan finde flere oplysninger i [Power BI-indhold for oversigt over kontanter](Cash-Overview-Power-BI-content.md).
 
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Er enhederne i enhedslageret blevet opdateret?
 
 Du skal opdatere enhederne jævnligt for at sikre, at dataene er aktuelle og nøjagtige. Hvis du vil opdatere en bestemt enhed manuelt, skal du gå til **Systemadministration \> Opsætning \> Enhedslager** og vælge enheden og derefter vælge **Opdater**. Dataene kan også opdateres automatisk. På siden **Enhedslager** skal du indstille til **Automatisk opdatering aktiveret** til **Ja**.
 
+## <a name="which-calculation-method-should-be-used-when-calculating-cash-flow-forecasts"></a>Hvilken beregningsmetode skal bruges ved beregning af likviditetsbudgetter?
+
+Beregningsmetoden likviditetsbudget har to vigtige valgmuligheder. Indstillingen **Ny** beregner likviditetsbudgetter for nye dokumenter og dokumenter, der er ændret, siden det seneste batchjob blev kørt. Denne indstilling betyder, at det køres hurtigere, fordi den behandler et mindre undersæt af dokumenterne. Indstillingen **Total** genberegner likviditetsbudgetter for hvert dokument i systemet. Denne indstilling tager længere tid, fordi der er mere arbejde at udføre.
+
+### <a name="how-do-i-improve-the-performance-of-the-cash-flow-forecasting-recurring-batch-job"></a>Hvordan forbedrer jeg ydeevnen for det batchjob, der gentages ved likviditetsbudgettering?
+
+Det anbefales, at du kører likviditetsbudgettet én gang om dagen på de mindst belastede tidspunkter ved hjælp af beregningsmetoden **Ny**. Det anbefales at bruge denne fremgangsmåde seks dage om ugen. Kør derefter et likviditetsbudget én gang om ugen med brug af metoden **Total** på dagen med mindst aktivitet.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

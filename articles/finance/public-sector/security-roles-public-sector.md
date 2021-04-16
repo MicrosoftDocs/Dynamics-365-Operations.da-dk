@@ -2,11 +2,9 @@
 title: Sikkerhedsroller i den offentlige sektor
 description: Dette emne indeholder oplysninger om sikkerhedsroller i den offentlige sektor, herunder projektleder- og indkøberroller.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: UserRequestListPage
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46782e164c0bfe063de69ddfde88fd7b924c1974
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 37fd785dbf0990d4c92264c100b000bcb79cbf3a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217308"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816834"
 ---
 # <a name="security-roles-in-the-public-sector"></a>Sikkerhedsroller i den offentlige sektor
 

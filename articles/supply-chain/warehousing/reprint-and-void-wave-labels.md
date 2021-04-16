@@ -2,10 +2,8 @@
 title: Genudskrive og annullere bølgeetiketter
 description: I dette emne forklares, hvordan du kan annullere og udskrive eksisterende bølgeetiketter.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228363"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817359"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Genudskrive og annullere bølgeetiketter
 
@@ -218,5 +216,8 @@ Arbejdsundtagelser styrer funktionsmåden ved kort plukning. Følg disse trin fo
 1. Vælg den arbejdsundtagelseskode, som du har oprettet til dette scenarie.
 1. Hvis du valgte den korrekte undtagelse, skal afkrydsningsfeltet **Annuller og udskriv igen** være tilgængeligt. Markér dette afkrydsningsfelt, og bekræft. Når det er bekræftet, genberegnes serien for etiketrulle, der er identificeret af feltet **Etiket-build-id**, på basis af det ændrede antal på arbejdslinje. Derefter udskrives den på den angivne printer.
 
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+- [Bølgeetiketudskrivning](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

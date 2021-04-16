@@ -2,11 +2,9 @@
 title: Værdiregulering af udenlandsk valuta for Finans
 description: 'Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt.'
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7433c6753b612a9721917c036a8b36b7e3165177
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e2f24c60b3fb82532f50e58dde9a19f5fefb25d5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249257"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832916"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Værdiregulering af udenlandsk valuta for Finans
 
@@ -83,7 +81,7 @@ Hovedkontoen værdireguleres den 31 januar.  Ikke-realiseret gevinst eller tab b
 
 | Aktuel saldo i transaktionsvaluta | Aktuel saldo i regnskabsvaluta | Valutakurs på værdiregulering | Nyt beløb i regnskabsvaluta | Ikke-realiseret gevinst/tab    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 tab (833,33 – 1000) |
+| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 tab (833,33 – 1000) |
 
 Der oprettes følgende regnskabspost.
 

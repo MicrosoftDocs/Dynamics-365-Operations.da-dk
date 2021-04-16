@@ -2,11 +2,9 @@
 title: Upload andre filer end billeder og videoer
 description: I dette emne beskrives, hvordan du kan uploade andre binære filer end billeder og videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c065aa961cf5c2d6770ae47c63a75953e6d38e00
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 380bcccd1053cbcc276e964ce97f16d1d39ea75a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222531"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799247"
 ---
 # <a name="upload-files-other-than-images-and-videos"></a>Overføre andre filer end billeder og videoer
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du kan uploade andre filer end billeder og videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.
-
-## <a name="overview"></a>Overblik
 
 Mediebiblioteket i Commerce-webstedsgenerator understøtter upload af andre binære aktiver end billeder eller videoer. Du kan f.eks. uploade Microsoft Excel-, Microsoft Word-, Microsoft PowerPoint- eller PDF-filer.
 

@@ -2,11 +2,9 @@
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.12 (august 2020)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.12.
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8fdd831bd774f65e1737d5dec3046fa5ea978390
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0513dffb6395eaf00f4c71df91938a5db6486daf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258965"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832196"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.12 (august 2020)
 
@@ -47,11 +45,11 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 
 - [Kerneindsigt i IoT-intelligens](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Du kan finde flere oplysninger på [Startside for IoT-intelligens](../iot/iot-intelligence-home-page.md).
 
-- [Forbedringer af modtager-id med lagerstedsapp (fortsat)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Du kan finde flere oplysninger under [Modtagelse af id via lagerstedsappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Forbedringer af modtager-id med lagerstedsapp (fortsat)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Du kan finde flere oplysninger under [Modtagelse af id via mobilappen Lokationsstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Masseinstallation for Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Du kan finde flere oplysninger under [Oversigt over installation og konfiguration af lagerstedsappen](../warehousing/install-configure-warehousing-app.md).
+- [Masseinstallation for Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Du kan finde flere oplysninger under [Installere og tilslutte mobilappen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md).
 
-- [Maksimal udførelsestid for jobbet til oprydning i disponible poster til lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Du kan finde flere oplysninger under [Oprydningsjob for disponible poster for lokationsstyring](../warehousing/onhand-cleanup.md).
+- [Maksimal udførelsestid for jobbet i lokationsstyring til oprydning i disponible poster](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Du kan finde flere oplysninger under [Oprydningsjob for disponible poster for lokationsstyring](../warehousing/onhand-cleanup.md).
 
 - [Understøttelse af planlægningsoptimering for handelsaftaler om indkøb](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - Du kan finde flere oplysninger under [Varedisponering med samhandelsaftaler vedrørende indkøb](../master-planning/planning-optimization/purchase-trade-agreement.md).
 

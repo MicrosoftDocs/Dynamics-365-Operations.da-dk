@@ -2,11 +2,9 @@
 title: Foretage fejlfinding af opgradering og migrering til avanceret lokationsstyring
 description: Dette emne beskriver, hvordan du løser almindelige problemer, der kan opstå, når du opgraderer og overfører til avanceret lokationsstyring.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208081"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826389"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Foretage fejlfinding af opgradering og migrering til avanceret lokationsstyring
 
@@ -34,11 +32,11 @@ Dette emne beskriver, hvordan du løser almindelige problemer, der kan opstå, n
 
 ### <a name="issue-description"></a>Problembeskrivelse
 
-Du modtager denne fejlmeddelelse i lagerstedsappen, fordi der ikke er tillid til selvsignerede certifikater på Android 8 + i lokale miljøer.
+Du modtager denne fejlmeddelelse i mobilappen Lokationsstyring, fordi der ikke er tillid til selvsignerede certifikater på Android 8 + i lokale miljøer.
 
 ### <a name="issue-resolution"></a>Problemløsning
 
-Brug et eksternt (offentligt) nøglecenter. Der findes en rettelse til dette problem i version 1.9.0.0 af lagerstedsappen. Du kan finde flere oplysninger om dette problem, og hvordan det løses, under [Foretage fejlfinding af problemer med forbindelsen til lagerstedsappen](troubleshoot-warehouse-app-connection.md).
+Brug et eksternt (offentligt) nøglecenter. Der findes en rettelse til dette problem i version 1.9.0.0 af lagerstedsappen. Du kan finde flere oplysninger om dette problem, og hvordan det løses, under [Foretage fejlfinding af problemer med forbindelsen til mobilappen Lokationsstyring](troubleshoot-warehouse-app-connection.md).
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>Hvad er den godkendte proces for flytning fra grundlæggende lagerstyring til avanceret lagerstyring?
 
