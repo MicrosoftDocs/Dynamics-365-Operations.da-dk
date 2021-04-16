@@ -1,12 +1,10 @@
 ---
 title: Vedligeholdelsesplaner
 description: I dette emne beskrives vedligeholdelsesplaner i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500808"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839601"
 ---
 # <a name="maintenance-plans"></a>Vedligeholdelsesplaner
 
@@ -195,8 +193,6 @@ I følgende illustration vises et eksempel på vedligeholdelsesplaner på et akt
 
 ## <a name="counter-based-maintenance-enhancements"></a>Forbedringer af tællerbaseret vedligeholdelse
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Funktionen *Forbedringer af tællerbaseret vedligeholdelse* introducerer følgende funktionalitet:
 
 - Indstillingen til automatisk at indsætte en tæller, der har en værdi på *0* (nul), når der oprettes et aktiv. Denne indstilling kan være nyttig, når du bruger forventet vedligeholdelse, der er baseret på tællere. Når funktionen *Forbedringer af tællerbaseret vedligeholdelse* ikke bruges, skal tællere med en værdi på *0* (nul) indsættes manuelt.
@@ -209,7 +205,7 @@ Funktionen *Forbedringer af tællerbaseret vedligeholdelse* introducerer følgen
 Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Aktivadministration*
-- **Funktionsnavn:** *(forhåndsversion) Forbedringer af tællerbaseret vedligeholdelse*
+- **Funktionsnavn:** *Forbedringer af tællerbaseret vedligeholdelse*
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>Oprette og initialisere tællere, når et aktiv oprettes
 

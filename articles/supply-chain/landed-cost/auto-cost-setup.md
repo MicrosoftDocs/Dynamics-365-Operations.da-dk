@@ -2,7 +2,6 @@
 title: Konfigurere automatiske omkostninger
 description: Dette emne beskriver, hvordan du konfigurerer omkostningsregler for forskellige indgående niveauer. Ud fra disse regler beregner systemet omkostningerne og tilføjer dem automatisk. Brugerne behøver derfor ikke tilføje omkostningerne manuelt.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 86dcbfbe6e00e7324e29541da6d682794e7487b3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 2e9135019323db74a4dca9343d315cbbf9683e32
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501144"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841953"
 ---
 # <a name="auto-costs-setup"></a>Konfigurere automatiske omkostninger
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruge siden **Automatiske omkostninger** til at definere omkostningsregler for forskellige omkostningsområder (f.eks. fragter, forsendelsescontainere, porteføljer, indkøbsordrer, varer eller flytteordrelinjer). Ud fra reglerne og de felter, brugerne vælger, når de opretter poster for et af omkostningsområderne, beregner systemet omkostningerne og tilføjer dem automatisk. Brugerne behøver derfor ikke tilføje omkostningerne manuelt.
 
