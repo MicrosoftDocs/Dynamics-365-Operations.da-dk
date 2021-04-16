@@ -1,8 +1,7 @@
 ---
 title: Klientpåmindelsesbeskeder via e-mail
 description: Dette emne indeholder oplysninger om, hvordan du opretter regler, der sender e-mailbeskeder om foruddefinerede hændelser, der indtræffer.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
@@ -11,44 +10,44 @@ ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: fe422d645c8f2c0c564af30624090828e10ea4bf
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d132ed979a84c2906298c05708cef1ee87f47078
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567246"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752908"
 ---
-# <a name="client-alert-notifications-by-email"></a><span data-ttu-id="02f49-103">Klientpåmindelsesbeskeder via mail</span><span class="sxs-lookup"><span data-stu-id="02f49-103">Client alert notifications by email</span></span>
+# <a name="client-alert-notifications-by-email"></a><span data-ttu-id="91b38-103">Klientpåmindelsesbeskeder via mail</span><span class="sxs-lookup"><span data-stu-id="91b38-103">Client alert notifications by email</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="02f49-104">Du kan definere brugerdefinerede regler for påmindelser, som overvåger filtrerede visninger af data og automatisk sender e-mailbeskeder, når foruddefinerede hændelser indtræffer.</span><span class="sxs-lookup"><span data-stu-id="02f49-104">You can define custom alert rules that monitor filtered views of data and automatically send email notifications when predefined events occur.</span></span> <span data-ttu-id="02f49-105">Muligheden for at sende mailbeskeder er tilgængelig for alle understøttede påmindelsestyper, og du kan også aktivere dem for eksisterende påmindelsesregler.</span><span class="sxs-lookup"><span data-stu-id="02f49-105">The option to send email notifications is available for all supported alert types and you can also turn them on for existing alert rules.</span></span>
+<span data-ttu-id="91b38-104">Du kan definere brugerdefinerede regler for påmindelser, som overvåger filtrerede visninger af data og automatisk sender e-mailbeskeder, når foruddefinerede hændelser indtræffer.</span><span class="sxs-lookup"><span data-stu-id="91b38-104">You can define custom alert rules that monitor filtered views of data and automatically send email notifications when predefined events occur.</span></span> <span data-ttu-id="91b38-105">Muligheden for at sende mailbeskeder er tilgængelig for alle understøttede påmindelsestyper, og du kan også aktivere dem for eksisterende påmindelsesregler.</span><span class="sxs-lookup"><span data-stu-id="91b38-105">The option to send email notifications is available for all supported alert types and you can also turn them on for existing alert rules.</span></span>
 
-<span data-ttu-id="02f49-106">Du kan bruge indbyggede kontrolelementer til at oprette påmindelsesregler, der overvåger de filtrerede visninger af batchjob i systemet.</span><span class="sxs-lookup"><span data-stu-id="02f49-106">You can use built-in controls to create alert rules that monitor the filtered views of system batch jobs.</span></span> <span data-ttu-id="02f49-107">Ved at overvåge værdien af feltet **Status** kan du også konfigurere regler for påmindelser, der sender e-mail, når der opstår fejl i et batchjob.</span><span class="sxs-lookup"><span data-stu-id="02f49-107">By monitoring the value of the **Status** field, you can also configure alert rules that send email when a batch job fails.</span></span> <span data-ttu-id="02f49-108">Når disse påmindelsesregler er oprettet, behøver du ikke længere at kontrollere, om der er ændringer af forretningsdata i rapporter.</span><span class="sxs-lookup"><span data-stu-id="02f49-108">After you create these alert rules, you no longer have to check reports for changes to business data.</span></span> <span data-ttu-id="02f49-109">Du kan i stedet lade den intelligente ændringsregistreringstjeneste foretage overvågning for dig.</span><span class="sxs-lookup"><span data-stu-id="02f49-109">Instead, you can let the intelligent change detection service do the monitoring for you.</span></span>
+<span data-ttu-id="91b38-106">Du kan bruge indbyggede kontrolelementer til at oprette påmindelsesregler, der overvåger de filtrerede visninger af batchjob i systemet.</span><span class="sxs-lookup"><span data-stu-id="91b38-106">You can use built-in controls to create alert rules that monitor the filtered views of system batch jobs.</span></span> <span data-ttu-id="91b38-107">Ved at overvåge værdien af feltet **Status** kan du også konfigurere regler for påmindelser, der sender e-mail, når der opstår fejl i et batchjob.</span><span class="sxs-lookup"><span data-stu-id="91b38-107">By monitoring the value of the **Status** field, you can also configure alert rules that send email when a batch job fails.</span></span> <span data-ttu-id="91b38-108">Når disse påmindelsesregler er oprettet, behøver du ikke længere at kontrollere, om der er ændringer af forretningsdata i rapporter.</span><span class="sxs-lookup"><span data-stu-id="91b38-108">After you create these alert rules, you no longer have to check reports for changes to business data.</span></span> <span data-ttu-id="91b38-109">Du kan i stedet lade den intelligente ændringsregistreringstjeneste foretage overvågning for dig.</span><span class="sxs-lookup"><span data-stu-id="91b38-109">Instead, you can let the intelligent change detection service do the monitoring for you.</span></span>
 
-<span data-ttu-id="02f49-110">Klientpåmindelser afhænger af det e-mailundersystem, der leveres via integration med Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="02f49-110">Client alerts depend on the email subsystem that is provided through integration with Microsoft Office.</span></span> <span data-ttu-id="02f49-111">Det anbefales, at du bruger SMTP-udbyderen (Simple Mail Transfer Protocol), så e-maildistribution ikke behøver at kræve en lokal mailklient.</span><span class="sxs-lookup"><span data-stu-id="02f49-111">We recommend that you use the Simple Mail Transfer Protocol (SMTP) provider, so that email distribution doesn't have to rely on a local mail client.</span></span>
+<span data-ttu-id="91b38-110">Klientpåmindelser afhænger af det e-mailundersystem, der leveres via integration med Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="91b38-110">Client alerts depend on the email subsystem that is provided through integration with Microsoft Office.</span></span> <span data-ttu-id="91b38-111">Det anbefales, at du bruger SMTP-udbyderen (Simple Mail Transfer Protocol), så e-maildistribution ikke behøver at kræve en lokal mailklient.</span><span class="sxs-lookup"><span data-stu-id="91b38-111">We recommend that you use the Simple Mail Transfer Protocol (SMTP) provider, so that email distribution doesn't have to rely on a local mail client.</span></span>
 
-<span data-ttu-id="02f49-112">Hvis du vil sende beskeder via e-mail, skal kunder konfigurere integrerede e-mailtjenester.</span><span class="sxs-lookup"><span data-stu-id="02f49-112">To send notifications by email, customers must configure integrated email services.</span></span> <span data-ttu-id="02f49-113">E-mailbeskederne sendes til modtagerne på vegne af påmindelsesejere.</span><span class="sxs-lookup"><span data-stu-id="02f49-113">Email notifications are sent to recipients on behalf of alert owners.</span></span>
+<span data-ttu-id="91b38-112">Hvis du vil sende beskeder via e-mail, skal kunder konfigurere integrerede e-mailtjenester.</span><span class="sxs-lookup"><span data-stu-id="91b38-112">To send notifications by email, customers must configure integrated email services.</span></span> <span data-ttu-id="91b38-113">E-mailbeskederne sendes til modtagerne på vegne af påmindelsesejere.</span><span class="sxs-lookup"><span data-stu-id="91b38-113">Email notifications are sent to recipients on behalf of alert owners.</span></span>
 
-<span data-ttu-id="02f49-114">Yderligere oplysninger om, hvordan du kan konfigurere e-mail, finder du i [Konfigurere og sende e-mail](../organization-administration/configure-email.md).</span><span class="sxs-lookup"><span data-stu-id="02f49-114">For more information about how to configure email, see [Configure and send email](../organization-administration/configure-email.md).</span></span>
+<span data-ttu-id="91b38-114">Yderligere oplysninger om, hvordan du kan konfigurere e-mail, finder du i [Konfigurere og sende e-mail](../organization-administration/configure-email.md).</span><span class="sxs-lookup"><span data-stu-id="91b38-114">For more information about how to configure email, see [Configure and send email](../organization-administration/configure-email.md).</span></span>
 
-<span data-ttu-id="02f49-115">Følgende billede viser **Opret påmindelsesregel** dialogboksen, som nu indeholder en **Send e-mail** indstilling.</span><span class="sxs-lookup"><span data-stu-id="02f49-115">The following image shows the **Create alert rule** dialog box, which now includes a **Send email** option.</span></span>
+<span data-ttu-id="91b38-115">Følgende billede viser **Opret påmindelsesregel** dialogboksen, som nu indeholder en **Send e-mail** indstilling.</span><span class="sxs-lookup"><span data-stu-id="91b38-115">The following image shows the **Create alert rule** dialog box, which now includes a **Send email** option.</span></span>
 
-<span data-ttu-id="02f49-116">[![Dialogboksen Opret påmindelsesregel, hvor indstillingen Send e-mail er sat til Ja](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)</span><span class="sxs-lookup"><span data-stu-id="02f49-116">[![Create alert rule dialog box, where the Send email option is set to Yes](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)</span></span>
+<span data-ttu-id="91b38-116">[![Dialogboksen Opret påmindelsesregel, hvor indstillingen Send e-mail er sat til Ja](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)</span><span class="sxs-lookup"><span data-stu-id="91b38-116">[![Create alert rule dialog box, where the Send email option is set to Yes](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="02f49-117">Når **Send e-mail** er indstillet til **Ja**, bliver påmindelsesbeskeder fortsat leveret via Handlingscenter.</span><span class="sxs-lookup"><span data-stu-id="02f49-117">When the **Send email** option is set to **Yes**, alert notifications will continue to be delivered from the Action Center.</span></span>
+> <span data-ttu-id="91b38-117">Når **Send e-mail** er indstillet til **Ja**, bliver påmindelsesbeskeder fortsat leveret via Handlingscenter.</span><span class="sxs-lookup"><span data-stu-id="91b38-117">When the **Send email** option is set to **Yes**, alert notifications will continue to be delivered from the Action Center.</span></span>
 
-## <a name="alert-notification-email-templates"></a><span data-ttu-id="02f49-118">E-mailskabeloner til påmindelsesbeskeder</span><span class="sxs-lookup"><span data-stu-id="02f49-118">Alert notification email templates</span></span>
+## <a name="alert-notification-email-templates"></a><span data-ttu-id="91b38-118">E-mailskabeloner til påmindelsesbeskeder</span><span class="sxs-lookup"><span data-stu-id="91b38-118">Alert notification email templates</span></span>
 
-<span data-ttu-id="02f49-119">Tjenesten sender e-mailbeskeder ved hjælp af foruddefinerede e-mailskabeloner, der leverer de grundlæggende oplysninger om påmindelsesbeskeden.</span><span class="sxs-lookup"><span data-stu-id="02f49-119">The service sends email notifications by using predefined email templates that deliver the basic details of the alert notification.</span></span>
+<span data-ttu-id="91b38-119">Tjenesten sender e-mailbeskeder ved hjælp af foruddefinerede e-mailskabeloner, der leverer de grundlæggende oplysninger om påmindelsesbeskeden.</span><span class="sxs-lookup"><span data-stu-id="91b38-119">The service sends email notifications by using predefined email templates that deliver the basic details of the alert notification.</span></span>
 
-<span data-ttu-id="02f49-120">Følgende billede viser strukturen af påmindelsesbeskederne, når de modtages via mail.</span><span class="sxs-lookup"><span data-stu-id="02f49-120">The following image shows the structure of the alert notifications when they are received by email.</span></span>
+<span data-ttu-id="91b38-120">Følgende billede viser strukturen af påmindelsesbeskederne, når de modtages via mail.</span><span class="sxs-lookup"><span data-stu-id="91b38-120">The following image shows the structure of the alert notifications when they are received by email.</span></span>
 
-<span data-ttu-id="02f49-121">[![Skabelonbaserede påmindelsesbeskeder til oprettelse af poster, ændringer af felter og sletning af skabelon](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)</span><span class="sxs-lookup"><span data-stu-id="02f49-121">[![Template-based alert notifications for record creation, field changes, and template deletion](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)</span></span>
+<span data-ttu-id="91b38-121">[![Skabelonbaserede påmindelsesbeskeder til oprettelse af poster, ændringer af felter og sletning af skabelon](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)</span><span class="sxs-lookup"><span data-stu-id="91b38-121">[![Template-based alert notifications for record creation, field changes, and template deletion](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

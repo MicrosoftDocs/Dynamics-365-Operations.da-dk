@@ -2,7 +2,6 @@
 title: LISTJOIN ER-funktion
 description: Dette emne indeholder oplysninger om, hvordan funktionen LISTJOIN til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
@@ -16,72 +15,72 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6713823d8d089a677c39bc2a8b5cfe1d1b23b459
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: efee93df7d1cf40d016b36042bb5e7f33c47ae44
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563770"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743793"
 ---
-# <a name="listjoin-er-function"></a><span data-ttu-id="59058-103">LISTJOIN ER-funktion</span><span class="sxs-lookup"><span data-stu-id="59058-103">LISTJOIN ER function</span></span>
+# <a name="listjoin-er-function"></a><span data-ttu-id="05c17-103">LISTJOIN ER-funktion</span><span class="sxs-lookup"><span data-stu-id="05c17-103">LISTJOIN ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="59058-104">Funktionen `LISTJOIN` returnerer en *Postliste*-værdi, der repræsenterer en ny forenet liste af poster, som er oprettet på grundlag af de angivne argumenter.</span><span class="sxs-lookup"><span data-stu-id="59058-104">The `LISTJOIN` function returns a *Record list* value that represents a new joined list of records that is created from the specified arguments.</span></span>
+<span data-ttu-id="05c17-104">Funktionen `LISTJOIN` returnerer en *Postliste*-værdi, der repræsenterer en ny forenet liste af poster, som er oprettet på grundlag af de angivne argumenter.</span><span class="sxs-lookup"><span data-stu-id="05c17-104">The `LISTJOIN` function returns a *Record list* value that represents a new joined list of records that is created from the specified arguments.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="59058-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="59058-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="05c17-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="05c17-105">Syntax</span></span>
 
 ```vb
 LIST (list 1 [, list 2, …, list N])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="59058-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="59058-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="05c17-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="05c17-106">Arguments</span></span>
 
-<span data-ttu-id="59058-107">`list 1`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="59058-107">`list 1`: *Record list*</span></span>
+<span data-ttu-id="05c17-107">`list 1`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="05c17-107">`list 1`: *Record list*</span></span>
 
-<span data-ttu-id="59058-108">En reference til en datakilde af datatypen *Postliste*.</span><span class="sxs-lookup"><span data-stu-id="59058-108">A reference to a data source of the *Record list* data type.</span></span> <span data-ttu-id="59058-109">Dette argument skal udfyldes.</span><span class="sxs-lookup"><span data-stu-id="59058-109">This argument is mandatory.</span></span>
+<span data-ttu-id="05c17-108">En reference til en datakilde af datatypen *Postliste*.</span><span class="sxs-lookup"><span data-stu-id="05c17-108">A reference to a data source of the *Record list* data type.</span></span> <span data-ttu-id="05c17-109">Dette argument skal udfyldes.</span><span class="sxs-lookup"><span data-stu-id="05c17-109">This argument is mandatory.</span></span>
 
-<span data-ttu-id="59058-110">`list N`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="59058-110">`list N`: *Record list*</span></span>
+<span data-ttu-id="05c17-110">`list N`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="05c17-110">`list N`: *Record list*</span></span>
 
-<span data-ttu-id="59058-111">En reference til en datakilde af datatypen *Postliste*.</span><span class="sxs-lookup"><span data-stu-id="59058-111">A reference to a data source of the *Record list* data type.</span></span> <span data-ttu-id="59058-112">Disse yderligere argumenter er valgfrie.</span><span class="sxs-lookup"><span data-stu-id="59058-112">These additional arguments are optional.</span></span>
+<span data-ttu-id="05c17-111">En reference til en datakilde af datatypen *Postliste*.</span><span class="sxs-lookup"><span data-stu-id="05c17-111">A reference to a data source of the *Record list* data type.</span></span> <span data-ttu-id="05c17-112">Disse yderligere argumenter er valgfrie.</span><span class="sxs-lookup"><span data-stu-id="05c17-112">These additional arguments are optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="59058-113">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="59058-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="05c17-113">Returnerede værdier</span><span class="sxs-lookup"><span data-stu-id="05c17-113">Return values</span></span>
 
-<span data-ttu-id="59058-114">*Postliste*</span><span class="sxs-lookup"><span data-stu-id="59058-114">*Record list*</span></span>
+<span data-ttu-id="05c17-114">*Postliste*</span><span class="sxs-lookup"><span data-stu-id="05c17-114">*Record list*</span></span>
 
-<span data-ttu-id="59058-115">Den resulterende liste over poster.</span><span class="sxs-lookup"><span data-stu-id="59058-115">The resulting list of records.</span></span>
+<span data-ttu-id="05c17-115">Den resulterende liste over poster.</span><span class="sxs-lookup"><span data-stu-id="05c17-115">The resulting list of records.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="59058-116">Bemærkninger til brug</span><span class="sxs-lookup"><span data-stu-id="59058-116">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="05c17-116">Bemærkninger til brug</span><span class="sxs-lookup"><span data-stu-id="05c17-116">Usage notes</span></span>
 
-<span data-ttu-id="59058-117">Strukturen i den liste, der oprettes, indeholder kun de felter, som findes i strukturen for hver postliste, der er henvist til i argumenterne.</span><span class="sxs-lookup"><span data-stu-id="59058-117">The structure of the list that is created contains only the fields that are present in the structure of every record list that is referenced in the arguments.</span></span>
+<span data-ttu-id="05c17-117">Strukturen i den liste, der oprettes, indeholder kun de felter, som findes i strukturen for hver postliste, der er henvist til i argumenterne.</span><span class="sxs-lookup"><span data-stu-id="05c17-117">The structure of the list that is created contains only the fields that are present in the structure of every record list that is referenced in the arguments.</span></span>
 
-## <a name="example"></a><span data-ttu-id="59058-118">Eksempel</span><span class="sxs-lookup"><span data-stu-id="59058-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="05c17-118">Eksempel</span><span class="sxs-lookup"><span data-stu-id="05c17-118">Example</span></span>
 
-<span data-ttu-id="59058-119">Du indtaster datakilde **Post 1** af typen `Container`.</span><span class="sxs-lookup"><span data-stu-id="59058-119">You enter data source **Record 1** of the `Container` type.</span></span> <span data-ttu-id="59058-120">Denne datakilde indeholder følgende indlejrede felter af typen `Calculated field`:</span><span class="sxs-lookup"><span data-stu-id="59058-120">This data source contains the following nested fields of the `Calculated field` type:</span></span>
+<span data-ttu-id="05c17-119">Du indtaster datakilde **Post 1** af typen `Container`.</span><span class="sxs-lookup"><span data-stu-id="05c17-119">You enter data source **Record 1** of the `Container` type.</span></span> <span data-ttu-id="05c17-120">Denne datakilde indeholder følgende indlejrede felter af typen `Calculated field`:</span><span class="sxs-lookup"><span data-stu-id="05c17-120">This data source contains the following nested fields of the `Calculated field` type:</span></span>
 
-- <span data-ttu-id="59058-121">**Kode**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `String`.</span><span class="sxs-lookup"><span data-stu-id="59058-121">**Code**: This field contains an expression that returns a value of the `String` type.</span></span>
-- <span data-ttu-id="59058-122">**Beløb**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `Real`.</span><span class="sxs-lookup"><span data-stu-id="59058-122">**Amount**: This field contains an expression that returns a value of the `Real` type.</span></span>
+- <span data-ttu-id="05c17-121">**Kode**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `String`.</span><span class="sxs-lookup"><span data-stu-id="05c17-121">**Code**: This field contains an expression that returns a value of the `String` type.</span></span>
+- <span data-ttu-id="05c17-122">**Beløb**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `Real`.</span><span class="sxs-lookup"><span data-stu-id="05c17-122">**Amount**: This field contains an expression that returns a value of the `Real` type.</span></span>
 
-<span data-ttu-id="59058-123">Du indtaster derefter datakilde **Post 2** af typen `Container`.</span><span class="sxs-lookup"><span data-stu-id="59058-123">You then enter data source **Record 2** of the `Container` type.</span></span> <span data-ttu-id="59058-124">Denne datakilde indeholder følgende indlejrede felter af typen `Calculated field`:</span><span class="sxs-lookup"><span data-stu-id="59058-124">This data source contains the following nested fields of the `Calculated field` type:</span></span>
+<span data-ttu-id="05c17-123">Du indtaster derefter datakilde **Post 2** af typen `Container`.</span><span class="sxs-lookup"><span data-stu-id="05c17-123">You then enter data source **Record 2** of the `Container` type.</span></span> <span data-ttu-id="05c17-124">Denne datakilde indeholder følgende indlejrede felter af typen `Calculated field`:</span><span class="sxs-lookup"><span data-stu-id="05c17-124">This data source contains the following nested fields of the `Calculated field` type:</span></span>
 
-- <span data-ttu-id="59058-125">**Beløb**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `Real`.</span><span class="sxs-lookup"><span data-stu-id="59058-125">**Amount**: This field contains an expression that returns a value of the `Real` type.</span></span>
-- <span data-ttu-id="59058-126">**ErGyldig**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `Boolean`.</span><span class="sxs-lookup"><span data-stu-id="59058-126">**IsValid**: This field contains an expression that returns a value of the `Boolean` type.</span></span>
+- <span data-ttu-id="05c17-125">**Beløb**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `Real`.</span><span class="sxs-lookup"><span data-stu-id="05c17-125">**Amount**: This field contains an expression that returns a value of the `Real` type.</span></span>
+- <span data-ttu-id="05c17-126">**ErGyldig**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `Boolean`.</span><span class="sxs-lookup"><span data-stu-id="05c17-126">**IsValid**: This field contains an expression that returns a value of the `Boolean` type.</span></span>
 
 ![Side for ER-modeltilknytningsdesigner](./media/er-functions-list-listjoin-image1.gif)
 
-<span data-ttu-id="59058-128">I dette tilfælde returnerer udtrykket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny liste, der indeholder to poster.</span><span class="sxs-lookup"><span data-stu-id="59058-128">In this case, the expression `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` returns a new list that contains two records.</span></span>
+<span data-ttu-id="05c17-128">I dette tilfælde returnerer udtrykket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny liste, der indeholder to poster.</span><span class="sxs-lookup"><span data-stu-id="05c17-128">In this case, the expression `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` returns a new list that contains two records.</span></span>
 
 ![Designerside med to poster til ER-modeltilknytning](./media/er-functions-list-listjoin-image2.gif)
 
-<span data-ttu-id="59058-130">Strukturen i denne liste består af et enkelt felt for **Beløb** af typen `Real`, fordi dette felt er det eneste felt, der vises i alle argumenterne for den kaldte funktion.</span><span class="sxs-lookup"><span data-stu-id="59058-130">The structure of this list consists of a single **Amount** field of the `Real` type, because this field is the only field that is presented in every argument of the called function.</span></span>
+<span data-ttu-id="05c17-130">Strukturen i denne liste består af et enkelt felt for **Beløb** af typen `Real`, fordi dette felt er det eneste felt, der vises i alle argumenterne for den kaldte funktion.</span><span class="sxs-lookup"><span data-stu-id="05c17-130">The structure of this list consists of a single **Amount** field of the `Real` type, because this field is the only field that is presented in every argument of the called function.</span></span>
 
 ![Designerside med beløbsfelt til ER-modeltilknytning](./media/er-functions-list-listjoin-image3.gif)
 
-## <a name="additional-resources"></a><span data-ttu-id="59058-132">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="59058-132">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="05c17-132">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="05c17-132">Additional resources</span></span>
 
-[<span data-ttu-id="59058-133">Listefunktioner</span><span class="sxs-lookup"><span data-stu-id="59058-133">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="05c17-133">Listefunktioner</span><span class="sxs-lookup"><span data-stu-id="05c17-133">List functions</span></span>](er-functions-category-list.md)
 
-[<span data-ttu-id="59058-134">Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering</span><span class="sxs-lookup"><span data-stu-id="59058-134">Debug data sources of an executed ER format to analyze data flow and transformation</span></span>](er-debug-data-sources.md)
+[<span data-ttu-id="05c17-134">Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering</span><span class="sxs-lookup"><span data-stu-id="05c17-134">Debug data sources of an executed ER format to analyze data flow and transformation</span></span>](er-debug-data-sources.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
