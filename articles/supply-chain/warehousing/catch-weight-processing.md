@@ -2,30 +2,27 @@
 title: Behandling af fastvægtprodukter med lokationsstyring
 description: I dette emne beskrives, hvordan du kan bruge arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor arbejde skal udføres på lageret.
 author: perlynne
-manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 45f8d53b5ac212866a9c693e0039631507e14dd7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3882e40b4083f9246a03db3078cae8e18bec3c1e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233073"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808912"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
 [!include [banner](../includes/banner.md)]
-
 
 ## <a name="feature-exposure"></a>Visning af funktioner
 
@@ -52,7 +49,7 @@ Da vægten af lagervaren, når den leveres på et lagersted, kan afvige fra væg
 > [!NOTE]
 > Aktivitet af mobilenhed udløser kun transaktionsreguleringer, hvis metoden til beregning af den udgående vægtafvigelse for varens håndteringspolitik for fastvægtvarer er **Tillad vægtafvigelse**.
 
-**Eksempel 1**
+### <a name="example-1"></a>Eksempel 1
 
 Under en **Færdigmelding**-produktionsproces registreres den indgående vægt af et id, der indeholder otte kasser med et fastvægtprodukt, som 80,1 kg. Id'et gemmes derefter i området for færdigvarer, og under oplagringsperioden går noget af vægten tabt.
 
@@ -60,7 +57,7 @@ Vægten af det samme id registreres senere som 79,8 kg som en del af en salgsord
 
 I sådanne tilfælde regulerer systemet automatisk forskellen ved at bogføre en postering for de manglende 0,3 kg.
 
-**Eksempel 2**
+### <a name="example-2"></a>Eksempel 2
 
 I definitionen konfigureres et produkt til at acceptere en mindstevægt på 8 kg og en maksimal vægt på 12 kg for fastvægtenheden **Kasse**.
 
@@ -106,7 +103,7 @@ Når en vare kodespores, findes der desuden en parameter til **Registreringsmeto
 **Når der bruges sporing af fangstvægtkode**, skal der altid oprettes en kode for hver fastvægtenhed, der modtages, og alle koder skal altid være tilknyttet en vægt.
 
 **Kasse** er f.eks. fastvægtenheden, og du modtager en palle med otte kasser. I dette tilfælde skal der oprettes otte entydige fastvægtkoder, og der skal knyttes en vægt til hver kode. Alt efter den indgående fastvægtkode kan vægten af alle de otte kasser registreres, og den gennemsnitlige vægt kan derefter distribueres til hver kasse, eller der kan registreres en entydig vægt for hver kasse.
-Når du bruger funktionen **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes** med den proces, der er aktiveret via et menupunkt i en mobil enhed, opdateres lageret på basis af eksisterende oplysninger om fangstvægtmærkatet. Derfor beder lagerstedsappen dig ikke om at registrere fangstvægtmærkatets data som del af en produktionsrapport som en færdigmeldt handling.
+Når du bruger funktionen **Brug eksisterende fangstvægtkoder, når produktionsordrer færdigmeldes** med den proces, der er aktiveret via et menupunkt i en mobil enhed, opdateres lageret på basis af eksisterende oplysninger om fangstvægtmærkatet. Derfor beder mobilappen Lokationsstyring dig ikke om at registrere fastvægtkodens data som del af en produktionsrapport som en færdigmeldt handling.
 
 **Når sporing af fastvægtkode ikke bruges**, kan vægten registreres for hver dimensionsopsætning (f.eks. for hvert id og sporingsdimension). Vægten kan også registreres på basis af et samlet niveau, f.eks. fem id-numre (paller).
 
@@ -194,7 +191,11 @@ Ikke alle arbejdsgange understøtter behandling af fastvægtprodukter med lokati
 
 ### <a name="catch-weight-tags"></a>Fastvægtkoder
 
-En kode for fastvægt kan oprettes ved at bruge en proces i lagerstedsappen, den kan oprettes manuelt i formularen, eller den kan oprettes ved at bruge en dataenhedsproces. Hvis en fastvægtkode tilknyttes en linje i et indgående kildedokument, såsom en linje i en indkøbsordre, registreres koden. Hvis linjen bruges til udgående behandling, vil koden blive opdateret som leveret.
+En kode for fastvægt kan oprettes ved at bruge en proces i mobilappen Lokationsstyring, den kan oprettes manuelt i formularen **Lokationsstyring > Forespørgsler og rapporter > Fastvægtkode**, eller den kan oprettes ved at bruge en dataenhedsproces. Hvis en fastvægtkode tilknyttes en linje i et indgående kildedokument, såsom en linje i en indkøbsordre, registreres koden. Hvis linjen bruges til udgående behandling, vil koden blive opdateret som leveret. Du kan få vist alle historiske registreringshændelser for fastvægtkode via indstillingen **Registrering af fastvægtkode** fra siden **Fastvægtkode**.
+
+Du kan bruge indstillingen **Skift koderegistreret vægt** til manuelt at opdatere vægtværdien for en fastvægtkode. Bemærk, at vægten af den tilgængelige lagerbeholdning ikke bliver justeret som en del af denne manuelle proces, men du kan nemt bruge siden **Uoverensstemmelser i beholdninger for fastvægtkodede varer** til at få vist eventuelle uoverensstemmelser mellem de aktuelt aktive fastvægtkoder og det aktuelle lager.
+
+Andre manuelle indstillinger er **Registrer kode** på en kildedokumentlinje og **Registrer arbejde** på et eksisterende lagerstedsarbejde.
 
 Ud over de begrænsninger, der gælder for fastvægtprodukter, har kodede fastvægtprodukter andre begrænsninger, der gælder i øjeblikket.
 

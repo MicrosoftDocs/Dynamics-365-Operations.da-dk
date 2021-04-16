@@ -2,7 +2,6 @@
 title: Planlægge dit organisationshierarki
 description: Før du opretter organisationer og organisationshierarkier, skal du være sikker på, at du forstår, hvordan du bedst udformer en model af din virksomhed.
 author: sericks007
-manager: AnnBe
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7bf683487a20203d49fbab680373fbf48a5c58b6
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ec071844f09caca1c83ff35a75b26922c6185c5b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569355"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747579"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planlægge dit organisationshierarki
 

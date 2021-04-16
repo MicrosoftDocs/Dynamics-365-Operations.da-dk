@@ -2,7 +2,6 @@
 title: Modulet Landingsomkostninger
 description: Modulet Landingsomkostninger hjælper virksomheder med at strømline indgående forsendelsesoperationer ved at give brugerne fuld økonomisk og logistikstyring over importeret fragt fra producenten til lagerstedet.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9d04c377080a1d301efb771b98c249f610a3289d
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 524fcdbcf9ba607fe9bcec1f1e894beb45f265e6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500326"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823331"
 ---
 # <a name="landed-cost-module"></a>Modulet Landingsomkostninger
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Modulet **Landingsomkostninger** hjælper virksomheder med at strømline indgående forsendelsesoperationer ved at give brugerne fuld økonomisk og logistikstyring over importeret fragt fra producenten til lagerstedet. For importerede varer kan landingsomkostninger udgøre 40 procent eller mere af de samlede omkostninger for hver importerede vare. Det er derfor vigtigt at levere præcise estimater af landingsomkostninger.
 

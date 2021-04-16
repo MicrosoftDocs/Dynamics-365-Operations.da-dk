@@ -1,8 +1,7 @@
 ---
 title: Avanceret filtrering og forespørgselssyntaks
-description: I dette emne beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering, eller operatoren forekomster i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
+description: I dette emne beskrives indstillingerne for filtrering og forespørgsler i dialogboksen Avanceret filtrering/sortering og operatoren matches i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15805e24c46603afd34d40c5f94c1422b01cab4c
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: fdb55a9552759e5f2b670a4eeb4e5d6572ebfb77
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566060"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744093"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avanceret filtrering og forespørgselssyntaks
 

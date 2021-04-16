@@ -2,11 +2,9 @@
 title: Delvis cyklusoptælling for sted
 description: Cyklusoptællingsplaner guider de faktiske optællingshandlinger. Du kan anmode om, at kun specifikke produkter og produktvarianter optælles i stedet for alle disponible lagerbeholdninger på en lokalitet.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abafe64a17b7b284e5e045da33bb15cf3c42800b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4fa017c9702524d4637ef73a4c2e506a9c53b28
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234675"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818890"
 ---
 # <a name="partial-location-cycle-counting"></a>Delvis cyklusoptælling for sted
 
@@ -48,7 +46,7 @@ Før delvis cyklusoptællingsarbejde kan behandles, skal du som minimum vælge *
 For processen til delvis cyklusoptælling opdateres dato/klokkeslæt for **Seneste cyklusoptælling** ikke for lokationen, selvom alle disponible varer på en bestemt lokation tælles. Den delvise cyklusoptælling tager ikke højde for parameteren **Dage mellem cyklusoptælling**, der er angivet på siden **Cyklusoptællingsplaner**. Delvis cyklusoptælling understøtter ikke samtidig optælling af flere varer på samme lokation. Funktionen for delvis cyklusoptælling kan resultere i, at samme lokation optælles flere gange for en vare, når **Udfør behandling af cyklusoptællingsplan** køres. Hvis du vil undgå dette scenario, skal du angive filtre i feltet **Vælg lokationer**.
 
 > [!NOTE]
-> Lagerstedsappen har ikke knappen **Tilføj NP eller vare**, når du bruger den delvise cyklusoptællingsproces.
+> Mobilappen Lokationsstyring har ikke knappen **Tilføj NP eller vare**, når du bruger den delvise cyklusoptællingsproces.
 
 ## <a name="example"></a>Eksempel
 
