@@ -2,7 +2,6 @@
 title: Administrere fragter
 description: Dette emne beskriver, hvordan du kan arbejde med fragter. En fragt repræsenterer typisk et fartøj. Afhængigt af dine fremgangsmåder og procedurer kan den dog repræsentere en leverandør, en indkøbsordre eller et andet element, der kan give mening for din organisation.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 850fbb2077a592ec4ba8578cab4795d573464f54
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 0b1414efbdde77af5d7fa15ff066e4ddcfd6bad2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501000"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833779"
 ---
 # <a name="manage-voyages"></a>Administrere fragter
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 En fragt repræsenterer typisk et fartøj. Afhængigt af dine fremgangsmåder og procedurer kan den dog repræsentere en leverandør, en indkøbsordre eller et andet element, der kan give mening for din organisation.
 
@@ -74,9 +72,9 @@ I følgende tabel beskrives de handlinger, der er tilgængelige i handlingsruden
 | Bogfør faktura | Bogfør en faktura for alle indkøbsordrelinjer i fragten. Hvis varerne i fragtsen gennemgår behandlingen af varer undervejs, faktureres indkøbsordrelinjerne, før modtagelsesprocessen er udført. Når den oprindelige indkøbsordre faktureres, oprettes de varer undervejs, som er knyttet til de oprindelige indkøbsordrelinjer. Disse ordrer kan derefter modtages af lagerstedet. Hvis der bruges forsendelser for flere virksomheder, åbnes en ny dialogboks til fakturabogføring for hvert firma. |
 | Forsendelsesflytteordre | Bogfør en fragt af flytteordre for alle flytteordrelinjer i fragten. Når denne knap er valgt, er det kun flytteordrer, der kan opdateres. |
 | Modtag flytteordre | Bogfør en flytteordrekvittering for alle flytteordrelinjer i fragten. |
-| Modtag varer i transit | Modtag alle ordrelinjer, der er i transit, i fragten. Denne knap er en af de tre muligheder, der er tilgængelige for modtagelse af varer i transit i en fragt. (De to øvrige indstillinger er Knappen **Opret modtagelseskladde**, som beskrives senere i denne tabel, og lagerstedsappen). Denne indstilling er den simpleste, og den bruges til at behandle varerne i transit ud fra lagerstedet for varer i transit og til det endelige destinationslagersted. Hvis du vil have mere kontrol over processen, skal du bruge modtagelseskladden eller en mobilenhed til at behandle varemodtagelsen. |
+| Modtag varer i transit | Modtag alle ordrelinjer, der er i transit, i fragten. Denne knap er en af de tre muligheder, der er tilgængelige for modtagelse af varer i transit i en fragt. (De to øvrige indstillinger er Knappen **Opret modtagelseskladde**, som beskrives senere i denne tabel, og mobilappen Lokationsstyring). Denne indstilling er den simpleste, og den bruges til at behandle varerne i transit ud fra lagerstedet for varer i transit og til det endelige destinationslagersted. Hvis du vil have mere kontrol over processen, skal du bruge modtagelseskladden eller en mobilenhed til at behandle varemodtagelsen. |
 | Søg efter automatiske omkostninger | Find alle relevante fragtomkostninger. Hvis disse omkostninger allerede er fundet eller opdateret, får du følgende meddelelse: "Der findes ikke-fakturerede omkostningslinjer. Vil du overskrive dem?" Eventuelle omkostninger, som ikke er tilknyttet fragten på oprettelsestidspunktet, findes. Fragtomkostninger, der er knyttet til en fragt og er faktureret, bliver ikke overskrevet. |
-| Opret modtagelseskladde | <p>Åbn dialogboksen **Opret modtagelseskladde**, hvor du kan oprette en modtagelseskladde, der angiver en lokation. Dialogboksen indeholder følgende indstillinger:</p><ul><li>**Opret fra varer i transit**, eller **Opret fra flytteordre** –Navnet på denne indstilling ændres, afhængigt af om du bruger varer i transit. Angiv den til *Ja*, hvis du vil åbne en modtagelseskladdeside, hvor du kan behandle en standardmodtagelseskladde for de varer i transit, der er tilknyttet fragten. Hvis varen allerede er modtaget på det endelige destinationslagersted, føjes den ikke til modtagelseskladdelinjerne.</li><li>**Initialiser antal** – Angiv denne indstilling til *Ja* for at initialisere det antal, der vil blive modtaget, baseret på antallet af varer, der er angivet på fragtlinjen. Hvis fragtlinjen er delvist modtaget, vil dette antal være restantallet. Det anbefales, at du angiver denne indstilling til *Ja*.</li><li>**Opret fra ordrelinjer** – Angiv denne indstilling til *Ja* for at tage værdien fra ordrelinjerne.</li></ul><p>Denne knap er en af de tre muligheder, der er tilgængelige for modtagelse af varer i en fragt. (De øvrige indstillinger er knappen **Modtag varer i transit**, som er beskrevet tidligere i denne tabel, og lagerstedsappen).</p> |
+| Opret modtagelseskladde | <p>Åbn dialogboksen **Opret modtagelseskladde**, hvor du kan oprette en modtagelseskladde, der angiver en lokation. Dialogboksen indeholder følgende indstillinger:</p><ul><li>**Opret fra varer i transit**, eller **Opret fra flytteordre** –Navnet på denne indstilling ændres, afhængigt af om du bruger varer i transit. Angiv den til *Ja*, hvis du vil åbne en modtagelseskladdeside, hvor du kan behandle en standardmodtagelseskladde for de varer i transit, der er tilknyttet fragten. Hvis varen allerede er modtaget på det endelige destinationslagersted, føjes den ikke til modtagelseskladdelinjerne.</li><li>**Initialiser antal** – Angiv denne indstilling til *Ja* for at initialisere det antal, der vil blive modtaget, baseret på antallet af varer, der er angivet på fragtlinjen. Hvis fragtlinjen er delvist modtaget, vil dette antal være restantallet. Det anbefales, at du angiver denne indstilling til *Ja*.</li><li>**Opret fra ordrelinjer** – Angiv denne indstilling til *Ja* for at tage værdien fra ordrelinjerne.</li></ul><p>Denne knap er en af de tre muligheder, der er tilgængelige for modtagelse af varer i en fragt. (De øvrige indstillinger er knappen **Modtag varer i transit**, som er beskrevet tidligere i denne tabel, og mobilappen Lokationsstyring).</p> |
 | Periodiser omkostninger | Du kan periodisere omkostninger, når en omkostningstype har en finanskonto angivet til debet. Denne knap bruges typisk, når lageret er i transit, eller når der er modtaget og faktureret varer. |
 | Aggreger omkostninger | Flyt omkostninger fra forsendelsescontainerniveauet til fragtniveauet. Du kan bruge denne knap i et scenario med delte tjenester/forsendelse, hvor flere enheder deler en forsendelsescontainer eller en kartonplads. Fragten har f.eks. en forsendelsescontainer på 40 meter og en forsendelsescontainer på 20 meter, og fordeling sker efter volumen. I dette tilfælde kan de varer/enheder, der deler eller bruger plads i forsendelsescontaineren på 20 meter, blive ændret. For at fordele omkostningerne ligeligt kan det være en fordel for nogle organisationer at overføre omkostningerne til fragten og fordele dem på basis af fordelingsmetoden på fragtniveau. |
 | Skift rejseskabelon | Åbn en dialogboks, hvor du kan ændre rejseskabelonen. Når du har ændret skabelonen, slettes fragtomkostningerne. Du skal derfor muligvis vælge **Find automatiske omkostninger** (se beskrivelsen tidligere i denne tabel) eller manuelt tilføje omkostninger igen. |

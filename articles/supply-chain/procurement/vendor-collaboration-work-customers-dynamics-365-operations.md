@@ -2,11 +2,9 @@
 title: Kreditorsamarbejde med kunder
 description: Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til at arbejde med indkøbsordrer og overvåge konsignationslager.
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
@@ -17,17 +15,16 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3b4e2d3e4b4fc27107e34cdf8f87e32d0f56f556
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c734b62dff6fc6151e192f239ad319b78f8faa8f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246663"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825200"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorsamarbejde med kunder
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med kunder i Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan udføre en række forretningsprocesser fra følgende arbejdsområder:
 

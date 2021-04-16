@@ -2,11 +2,9 @@
 title: Ofte stillede spørgsmål om produktanbefalinger
 description: Dette emne indeholder oplysninger om processer og værktøjer, du kan bruge til at foretage fejlfinding af problemer, der vedrører produktanbefalinger eller resultaterne af dem.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f0140f798e000ca66c67afa00f788abc560c8a07
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fa845f4d41e0bd7725349a216b9e4ee79efee79d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216693"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792409"
 ---
 # <a name="product-recommendations-faq"></a>Ofte stillede spørgsmål om produktanbefalinger
 

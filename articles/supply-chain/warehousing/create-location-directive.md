@@ -2,11 +2,9 @@
 title: Arbejde med lokationsvejledninger
 description: Dette emne beskriver, hvordan du kan arbejde med lokationsvejledninger. Lokationsvejledninger er brugerdefinerede regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
-ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
+ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470513"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838388"
 ---
 # <a name="work-with-location-directives"></a>Arbejde med lokationsvejledninger
 
@@ -152,7 +150,7 @@ Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbe
     > [!IMPORTANT]
     > Hvis du vil kunne udføre SKU'er med både læg-flere-varer-på-lager læg-enkelt-vare-på-lager, skal du angive to linjer med samme struktur og opsætning, men du skal angive indstillingen **Flere SKU'er** til *Ja* for én linje og *Nej* for den anden. I forbindelse med læg på lager skal du derfor have to lokationsvejledninger, der er identiske, selvom du ikke skal skelne mellem enkelte og flere SKU'er på en arbejds-id. Hvis du ofte ikke konfigurerer begge disse lokationsvejledninger, kommer der uventede forretningsproceslokationer fra den anvendte lokationsvejledning. Du skal bruge en lignende opsætning til lokationsvejledninger, der har **Arbejdstypen** *Pluk*, hvis du skal behandle ordrer, der omfatter flere SKU'er.
 
-    Brug indstillingen **Flere SKU'er** for arbejdslinjer, der håndterer mere end ét varenummer. (Varenummeret vil være tomt i arbejdsdetaljerne, og det vil blive vist som **Flere** på behandlingssiderne i lagerstedsappen).
+    Brug indstillingen **Flere SKU'er** for arbejdslinjer, der håndterer mere end ét varenummer. (Varenummeret vil være tomt i arbejdsdetaljerne, og det vil blive vist som **Flere** på behandlingssiderne i mobilappen Lokationsstyring).
 
     I et typisk eksempel scenario er der konfigureret en arbejdsskabelon, så den har mere end ét pluk/læg på lager-par. I dette tilfælde kan du søge efter en bestemt lokationen for midlertidig lagring til brug af linjer med **Arbejdstype** *Læg på lager*.
 
@@ -171,7 +169,7 @@ Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbe
     > [!NOTE]
     > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types).
 
-- **Dispositionskode** – Dette felt bruges til lokationsvejledninger, der har arbejdsordretypen *Indkøbsordrer*, *Færdige varer, læg på lager* eller *Returordrer* og arbejdstypen *Læg på lager*. Brug den til at vejlede flowet, så det bruger en bestemt lokationsvejledning, afhængigt af den dispositionskode, som en arbejder har valgt i lagerstedsappen. Du kan f.eks. sende returvarer til et inspektionssted, før de returneres til lageret. En dispositionskode kan knyttes til en lagerstatus. På denne måde kan den bruges til at ændre lagerstatussen som en del af en modtagelsesproces. Du har f.eks. dispositionskoden *Karantæne*, der angiver lagerstatussen til *Karantæne*. Du kan derefter have en separat lokationsvejledning, der flytter den pågældende lagerbeholdning til en karantænelokation.
+- **Dispositionskode** – Dette felt bruges til lokationsvejledninger, der har arbejdsordretypen *Indkøbsordrer*, *Færdige varer, læg på lager* eller *Returordrer* og arbejdstypen *Læg på lager*. Brug den til at vejlede flowet, så det bruger en bestemt lokationsvejledning, afhængigt af den dispositionskode, som en arbejder har valgt i mobilappen Lokationsstyring. Du kan f.eks. sende returvarer til et inspektionssted, før de returneres til lageret. En dispositionskode kan knyttes til en lagerstatus. På denne måde kan den bruges til at ændre lagerstatussen som en del af en modtagelsesproces. Du har f.eks. dispositionskoden *Karantæne*, der angiver lagerstatussen til *Karantæne*. Du kan derefter have en separat lokationsvejledning, der flytter den pågældende lagerbeholdning til en karantænelokation.
 
     > [!NOTE]
     > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types).

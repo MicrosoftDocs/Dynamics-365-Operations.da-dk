@@ -2,11 +2,9 @@
 title: Lagerekspedition af indgående laster for indkøbsordrer
 description: I dette emne beskrives lagerekspeditionsprocessen for indgående laster for indkøbsordrer.
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235334"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835624"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerekspedition af indgående laster for indkøbsordrer
 
@@ -66,7 +64,7 @@ Når der først ankommer en indgående last på lagerstedet, skal lagermedarbejd
 
 - **En mobil enheds menu, der er konfigureret til at understøtte modtagelse af last**
 
-    [Lagerstedsappen](install-configure-warehousing-app.md) til mobile enheder understøtter følgende arbejdsoprettelsesprocesser:
+    [Mobilappen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md) til mobilenheder understøtter følgende arbejdsoprettelsesprocesser:
 
     - Modtagelse af varelast
     - Modtagelse af lagervare og placering på lager
@@ -285,7 +283,7 @@ Hvis du vil arbejde gennem disse scenarier ved hjælp af de angivne eksempelpost
 
 Før lagermodtagelsesassistenter kan bruge en mobil enhed til at registrere indgående lager, der er knyttet til en last, skal du oprette et menupunkt på en mobil enhed til dette formål.
 
-I dette afsnit skal du oprette et menupunkt på den mobil enhed og føje det til en eksisterende menu. En lagermedarbejder kan derefter vælge menupunktet i lagerstedsappen.
+I dette afsnit skal du oprette et menupunkt på den mobil enhed og føje det til en eksisterende menu. En lagermedarbejder kan derefter vælge menupunktet i mobilappen Lokationsstyring.
 
 1. Gå til **Lokationsstyring \> Opsætning \> Mobil enhed \> Menupunkter i mobilenhed**, og kontrollér, at din mobile enheds menu indeholder et menupunkt, der har følgende indstillinger:
 

@@ -2,11 +2,9 @@
 title: Udlign en delvis debitorbetaling, der omfatter flere rabatperioder
 description: Denne artikel viser, hvordan delvise debitorbetalinger udlignes, når der er flere rabatperioder.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5047debd0f3d035ec5fc8bc24745183b28e9f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241708"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835094"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Udlign en delvis debitorbetaling, der omfatter flere rabatperioder
 
@@ -56,7 +54,7 @@ Kunde 4031 foretager en delvis betaling på 294,00 d. 28. juni. Da d. 28 juni er
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Hvis du ikke ændrer værdien **Beløb, der skal udlignes** til **294,00**, vil værdierne **Kasserabatbeløb**, der vises, variere. 6,00 vil dog blive medtaget som kasserabatten, når betalingen bogføres, fordi udligning automatisk justerer værdien **Beløb, der skal udlignes** for dig.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Kasserabatdato           | 30-6-2015 |
 | Kasserabatbeløb         | 20,00     |
@@ -75,7 +73,7 @@ Den 8. juli betaler debitoren resten af fakturabeløbet. En rabat på 7,00 (1 %)
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Kasserabatdato           | 7/09/2015 |
 | Kasserabatbeløb         | 30,00     |

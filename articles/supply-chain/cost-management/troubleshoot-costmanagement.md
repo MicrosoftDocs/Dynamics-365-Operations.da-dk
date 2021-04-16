@@ -1,12 +1,10 @@
 ---
 title: Foretage fejlfinding af omkostningsstyring
 description: Dette emne beskriver, hvordan du løser problemer, der kan opstå, når du arbejder med omkostningsstyring.
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc6a48a44a529c82c2a9ee818af95569d9bcb249
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262447"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834283"
 ---
 # <a name="troubleshoot-cost-management"></a>Foretage fejlfinding af omkostningsstyring
 
@@ -37,7 +35,7 @@ Funktionerne [Lagerrapport over aldersfordelt lager](inventory-aging-report-stor
 
 Subtotaler kan give problemer, når resultatet eksporteres, især hvis brugerne ændrer postsekvensen.
 
-Hvis du vil kontrollere subtotalerne, kan du eksportere resultatet til Microsoft Excel. Hvis du vil kontrollere subtotaler i Supply Chain Management, kan du bruge [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere funktionerne *Nyt gitterkontrolelement* og *(Prøveversion) gruppering i gitre*, hvilket giver en meget mere fleksibel måde at se subtotalen for en hvilken som helst gruppe efter kolonne. Du kan finde flere oplysninger under [Gitteregenskaber](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
+Hvis du vil kontrollere subtotalerne, kan du eksportere resultatet til Microsoft Excel. Hvis du vil kontrollere subtotaler i Supply Chain Management, kan du bruge [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere funktionerne *Nyt gitterkontrolelement* og *Gruppering i gitre*, hvilket giver en meget mere fleksibel måde at se subtotalen for en hvilken som helst gruppe efter kolonne. Du kan finde flere oplysninger under [Gitteregenskaber](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>Lagerrapport over lagerværdi understøtter ikke finanskontooplysninger
 
