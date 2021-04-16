@@ -2,11 +2,9 @@
 title: Bruge stadieårsagskoder
 description: Ved at bruge en årsagskode kan du angive, hvorfor en serviceniveauaftale er annulleret, eller hvorfor en serviceniveauaftale har overskredet den tidsgrænse, der er angivet i serviceniveauaftalen.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAParameters
 audience: Application User
@@ -17,57 +15,57 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 220012011e6fb1818cffa3992a3c39f46e5c071a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 307e6b3e67de702135662e047aef00fd181d4749
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259620"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824240"
 ---
-# <a name="use-stage-reason-codes"></a><span data-ttu-id="02ae2-103">Bruge stadieårsagskoder</span><span class="sxs-lookup"><span data-stu-id="02ae2-103">Use stage reason codes</span></span> 
+# <a name="use-stage-reason-codes"></a><span data-ttu-id="eb874-103">Bruge stadieårsagskoder</span><span class="sxs-lookup"><span data-stu-id="eb874-103">Use stage reason codes</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="02ae2-104">Ved at bruge en årsagskode kan du angive, hvorfor en serviceniveauaftale er annulleret, eller hvorfor en serviceniveauaftale har overskredet den tidsgrænse, der er angivet i serviceniveauaftalen.</span><span class="sxs-lookup"><span data-stu-id="02ae2-104">You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the time limit that is you define in the SLA.</span></span>
+<span data-ttu-id="eb874-104">Ved at bruge en årsagskode kan du angive, hvorfor en serviceniveauaftale er annulleret, eller hvorfor en serviceniveauaftale har overskredet den tidsgrænse, der er angivet i serviceniveauaftalen.</span><span class="sxs-lookup"><span data-stu-id="eb874-104">You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the time limit that is you define in the SLA.</span></span>
 
-<span data-ttu-id="02ae2-105">Du kan også angive, at en årsagskode er påkrævet, når en serviceniveauaftale annulleres, eller når tidsgrænsen overskrider den tid, der er angivet i serviceniveauaftalen for serviceordren.</span><span class="sxs-lookup"><span data-stu-id="02ae2-105">You can also specify that a reason code is required when an SLA is canceled, or when the time limit exceeds the time that is specified in the SLA for the service order.</span></span>
+<span data-ttu-id="eb874-105">Du kan også angive, at en årsagskode er påkrævet, når en serviceniveauaftale annulleres, eller når tidsgrænsen overskrider den tid, der er angivet i serviceniveauaftalen for serviceordren.</span><span class="sxs-lookup"><span data-stu-id="eb874-105">You can also specify that a reason code is required when an SLA is canceled, or when the time limit exceeds the time that is specified in the SLA for the service order.</span></span>
 
-<span data-ttu-id="02ae2-106">Hvis du har angivet, at der kræves en årsagskode, skal du angive en årsagskode i følgende situationer:</span><span class="sxs-lookup"><span data-stu-id="02ae2-106">If you have specified that a reason code is required, you must enter a reason code in the following situations:</span></span>
+<span data-ttu-id="eb874-106">Hvis du har angivet, at der kræves en årsagskode, skal du angive en årsagskode i følgende situationer:</span><span class="sxs-lookup"><span data-stu-id="eb874-106">If you have specified that a reason code is required, you must enter a reason code in the following situations:</span></span>
 
-  - <span data-ttu-id="02ae2-107">Når en serviceordre overgår til et stadie, hvor tidsregistreringen i forhold til serviceniveauaftalen stoppes for serviceordren.</span><span class="sxs-lookup"><span data-stu-id="02ae2-107">When a service order is moved to a stage that stops time recording against the SLA for the service order.</span></span>
+  - <span data-ttu-id="eb874-107">Når en serviceordre overgår til et stadie, hvor tidsregistreringen i forhold til serviceniveauaftalen stoppes for serviceordren.</span><span class="sxs-lookup"><span data-stu-id="eb874-107">When a service order is moved to a stage that stops time recording against the SLA for the service order.</span></span>
 
-  - <span data-ttu-id="02ae2-108">Når serviceordren lukkes.</span><span class="sxs-lookup"><span data-stu-id="02ae2-108">When the service order is signed off.</span></span>
+  - <span data-ttu-id="eb874-108">Når serviceordren lukkes.</span><span class="sxs-lookup"><span data-stu-id="eb874-108">When the service order is signed off.</span></span>
 
-  - <span data-ttu-id="02ae2-109">Når tidsregistreringen stoppes manuelt.</span><span class="sxs-lookup"><span data-stu-id="02ae2-109">When time recording is manually stopped.</span></span>
+  - <span data-ttu-id="eb874-109">Når tidsregistreringen stoppes manuelt.</span><span class="sxs-lookup"><span data-stu-id="eb874-109">When time recording is manually stopped.</span></span>
 
-## <a name="set-up-reason-codes"></a><span data-ttu-id="02ae2-110">Definer årsagskoder</span><span class="sxs-lookup"><span data-stu-id="02ae2-110">Set up reason codes</span></span>
+## <a name="set-up-reason-codes"></a><span data-ttu-id="eb874-110">Definer årsagskoder</span><span class="sxs-lookup"><span data-stu-id="eb874-110">Set up reason codes</span></span>
 
-1.  <span data-ttu-id="02ae2-111">Klik på **Servicestyring** \> **Opsætning** \> **Serviceordrer** \> **Stadieårsagskoder**.</span><span class="sxs-lookup"><span data-stu-id="02ae2-111">Click **Service management** \> **Setup** \> **Service orders** \> **Stage reason codes**.</span></span>
+1.  <span data-ttu-id="eb874-111">Klik på **Servicestyring** \> **Opsætning** \> **Serviceordrer** \> **Stadieårsagskoder**.</span><span class="sxs-lookup"><span data-stu-id="eb874-111">Click **Service management** \> **Setup** \> **Service orders** \> **Stage reason codes**.</span></span>
 
-2.  <span data-ttu-id="02ae2-112">Klik på **Ny** i formularen **Stadieårsagskoder** for at oprette en ny årsagskode.</span><span class="sxs-lookup"><span data-stu-id="02ae2-112">In the **Stage reason codes** form, click **New** to create a new reason code.</span></span>
+2.  <span data-ttu-id="eb874-112">Klik på **Ny** i formularen **Stadieårsagskoder** for at oprette en ny årsagskode.</span><span class="sxs-lookup"><span data-stu-id="eb874-112">In the **Stage reason codes** form, click **New** to create a new reason code.</span></span>
 
-3.  <span data-ttu-id="02ae2-113">Indtast en entydig stadieårsagskode i feltet **Stadieårsagskode**.</span><span class="sxs-lookup"><span data-stu-id="02ae2-113">In the **Stage reason code** field, enter a unique stage reason code.</span></span>
+3.  <span data-ttu-id="eb874-113">Indtast en entydig stadieårsagskode i feltet **Stadieårsagskode**.</span><span class="sxs-lookup"><span data-stu-id="eb874-113">In the **Stage reason code** field, enter a unique stage reason code.</span></span>
 
-4.  <span data-ttu-id="02ae2-114">Indtast en beskrivelse af stadieårsagskoden i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="02ae2-114">In the **Description** field, enter a description of the stage reason code.</span></span>
+4.  <span data-ttu-id="eb874-114">Indtast en beskrivelse af stadieårsagskoden i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="eb874-114">In the **Description** field, enter a description of the stage reason code.</span></span>
 
-5.  <span data-ttu-id="02ae2-115">Luk formen for at gemme ændringerne.</span><span class="sxs-lookup"><span data-stu-id="02ae2-115">Close the form to save your changes.</span></span>
+5.  <span data-ttu-id="eb874-115">Luk formen for at gemme ændringerne.</span><span class="sxs-lookup"><span data-stu-id="eb874-115">Close the form to save your changes.</span></span>
 
-## <a name="require-reason-codes-when-a-service-level-agreement-is-canceled"></a><span data-ttu-id="02ae2-116">Kræve årsagskoder, når en serviceniveauaftale annulleres</span><span class="sxs-lookup"><span data-stu-id="02ae2-116">Require reason codes when a service level agreement is canceled</span></span>
+## <a name="require-reason-codes-when-a-service-level-agreement-is-canceled"></a><span data-ttu-id="eb874-116">Kræve årsagskoder, når en serviceniveauaftale annulleres</span><span class="sxs-lookup"><span data-stu-id="eb874-116">Require reason codes when a service level agreement is canceled</span></span>
 
-1.  <span data-ttu-id="02ae2-117">Klik på **Servicestyring** \> **Opsætning** \> **Parametre for servicestyring**.</span><span class="sxs-lookup"><span data-stu-id="02ae2-117">Click **Service management** \> **Setup** \> **Service management parameters**.</span></span>
+1.  <span data-ttu-id="eb874-117">Klik på **Servicestyring** \> **Opsætning** \> **Parametre for servicestyring**.</span><span class="sxs-lookup"><span data-stu-id="eb874-117">Click **Service management** \> **Setup** \> **Service management parameters**.</span></span>
 
-2.  <span data-ttu-id="02ae2-118">I formularen **Parametre for servicestyring** skal du klikke på linket **Generelt** og derefter markere afkrydsningsfeltet **Årsagskode ved annullering**.</span><span class="sxs-lookup"><span data-stu-id="02ae2-118">In the **Service management parameters** form, click the **General** link, and then select the **Reason code on canceling** check box.</span></span>
+2.  <span data-ttu-id="eb874-118">I formularen **Parametre for servicestyring** skal du klikke på linket **Generelt** og derefter markere afkrydsningsfeltet **Årsagskode ved annullering**.</span><span class="sxs-lookup"><span data-stu-id="eb874-118">In the **Service management parameters** form, click the **General** link, and then select the **Reason code on canceling** check box.</span></span>
 
-## <a name="require-reason-codes-when-the-a-service-order-exceeds-the-time-limit-that-is-set-by-the-service-level-agreement"></a><span data-ttu-id="02ae2-119">Kræve årsagskoder, når en serviceordre overskrider den tidsgrænse, der er fastsat i serviceniveauaftalen</span><span class="sxs-lookup"><span data-stu-id="02ae2-119">Require reason codes when the a service order exceeds the time limit that is set by the service level agreement</span></span>
+## <a name="require-reason-codes-when-the-a-service-order-exceeds-the-time-limit-that-is-set-by-the-service-level-agreement"></a><span data-ttu-id="eb874-119">Kræve årsagskoder, når en serviceordre overskrider den tidsgrænse, der er fastsat i serviceniveauaftalen</span><span class="sxs-lookup"><span data-stu-id="eb874-119">Require reason codes when the a service order exceeds the time limit that is set by the service level agreement</span></span>
 
-1.  <span data-ttu-id="02ae2-120">Klik på **Servicestyring** \> **Opsætning** \> **Parametre for servicestyring**.</span><span class="sxs-lookup"><span data-stu-id="02ae2-120">Click **Service management** \> **Setup** \> **Service management parameters**.</span></span>
+1.  <span data-ttu-id="eb874-120">Klik på **Servicestyring** \> **Opsætning** \> **Parametre for servicestyring**.</span><span class="sxs-lookup"><span data-stu-id="eb874-120">Click **Service management** \> **Setup** \> **Service management parameters**.</span></span>
 
-2.  <span data-ttu-id="02ae2-121">I formularen **Parametre for servicestyring** skal du klikke på linket **Generelt** og derefter markere afkrydsningsfeltet **Årsagskode ved overskridelse af tid**.</span><span class="sxs-lookup"><span data-stu-id="02ae2-121">In the **Service management parameters** form, click the **General** link, and then select the **Reason code on exceeding time** check box.</span></span>
+2.  <span data-ttu-id="eb874-121">I formularen **Parametre for servicestyring** skal du klikke på linket **Generelt** og derefter markere afkrydsningsfeltet **Årsagskode ved overskridelse af tid**.</span><span class="sxs-lookup"><span data-stu-id="eb874-121">In the **Service management parameters** form, click the **General** link, and then select the **Reason code on exceeding time** check box.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="02ae2-122">Se også</span><span class="sxs-lookup"><span data-stu-id="02ae2-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eb874-122">Se også</span><span class="sxs-lookup"><span data-stu-id="eb874-122">See also</span></span>
 
-[<span data-ttu-id="02ae2-123">Starte og stoppe tidsregistrering på en serviceordre</span><span class="sxs-lookup"><span data-stu-id="02ae2-123">Start and stop time recording on a service order</span></span>](start-and-stop-time-recording-on-a-service-order.md)
+[<span data-ttu-id="eb874-123">Starte og stoppe tidsregistrering på en serviceordre</span><span class="sxs-lookup"><span data-stu-id="eb874-123">Start and stop time recording on a service order</span></span>](start-and-stop-time-recording-on-a-service-order.md)
 
   
 
