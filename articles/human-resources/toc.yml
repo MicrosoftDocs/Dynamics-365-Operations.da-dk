@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 5. april 2021
+          href: hr-whats-new-2021-04-05.md
         - name: 22. marts 2021
           href: hr-whats-new-2021-03-22.md
         - name: 8. marts 2021
@@ -305,6 +307,8 @@
               href: hr-admin-integration-choose-technology.md
             - name: Konfigurere Dataverse-integration
               href: hr-admin-integration-common-data-service.md
+            - name: Konfigurere virtuelle Dataverse-tabeller
+              href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Konfigurere integration med Finance
               href: hr-admin-integration-finance.md
             - name: Konfigurere integration med Dayforce
@@ -321,6 +325,12 @@
                   href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Fejlfinding af Office-integration
                   href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Fejlfinde udvikling med Dataverse-virtuelle tabeller
+          items:
+            - name: Optimere forespørgsler til Dataverse-virtuelle tabeller
+              href: hr-developer-optimize-virtual-table-queries.md
+            - name: Ofte stillede spørgsmål om Human Resources virtuelle tabeller
+              href: hr-admin-virtual-entity-faq.md
         - name: Enheds-API-reference
           items:
             - name: Godkendelse
@@ -419,6 +429,22 @@
                   href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
                 - name: Færdighedsniveautype
                   href: hr-admin-integration-ats-api-skill-level-type.md
+        - name: Lønintegration API
+          items:
+            - name: Introduktion
+              href: hr-admin-integration-payroll-api-introduction.md
+            - name: Generere og gennemse lønenheder
+              href: hr-admin-integration-payroll-api-generate-review-entities.md
+            - name: Medarbejders løn
+              href: hr-admin-integration-payroll-api-payroll-employee.md
+            - name: Lønarbejderadresse
+              href: hr-admin-integration-payroll-api-payroll-worker-address.md
+            - name: Plan for fast løn
+              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+            - name: Lønstillingsjob
+              href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Lønstilling
+              href: hr-admin-integration-payroll-api-payroll-position.md
     - name: Brugervejledning
       items:
         - name: Oversigt

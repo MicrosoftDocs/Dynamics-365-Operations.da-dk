@@ -280,7 +280,7 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfiguration og installation af Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
-                - name: Masseinstallation af selvbetjeningskomponenter
+                - name: Masseinstallation af ældre selvbetjeningskomponenter
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Commerce-komponenthændelser for diagnosticering og fejlfinding
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -1050,12 +1050,22 @@
                       href: add-hero-module.md
                     - name: Videoafspillermodul
                       href: add-video-player.md
-                - name: Overskrifts- og sidefodmoduler
+                - name: Overskrifts- og sidefodsmoduler
                   items:
                     - name: Overskriftsmodul
                       href: author-header-module.md
                     - name: Sidefodsmodul
                       href: author-footer-module.md
+                - name: 'Side-, metadata- og scriptmoduler'
+                  items:
+                    - name: Standardsidemodul
+                      href: default-page-module.md
+                    - name: Moduler til sideoversigt
+                      href: page-summary-module.md
+                    - name: Metatags-modul
+                      href: metatags-module.md
+                    - name: Eksterne og inline-scriptmoduler
+                      href: script-module.md
                 - name: Moduler til produktdetaljeside
                   items:
                     - name: Boksmodul til køb
