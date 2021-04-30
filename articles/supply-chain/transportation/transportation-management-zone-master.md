@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: aec1c17d32d1469f3a452084138404de3d498b71
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7347add052ec4a9540417a5aeea64ab623026954
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807578"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880732"
 ---
-# <a name="transportation-management-zone-master"></a><span data-ttu-id="2c512-103">Zonemaster i transportstyring</span><span class="sxs-lookup"><span data-stu-id="2c512-103">Transportation management zone master</span></span>
+# <a name="transportation-management-zone-master"></a><span data-ttu-id="8158c-103">Zonemaster i transportstyring</span><span class="sxs-lookup"><span data-stu-id="8158c-103">Transportation management zone master</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2c512-104">I transportstyring kan du opdele geografiske steder i zoner.</span><span class="sxs-lookup"><span data-stu-id="2c512-104">Transport management lets you divide geographic locations into zones.</span></span> <span data-ttu-id="2c512-105">Opdeling af steder i zoner kan hjælpe med at:</span><span class="sxs-lookup"><span data-stu-id="2c512-105">Dividing locations into zones can help to:</span></span>
+<span data-ttu-id="8158c-104">I transportstyring kan du opdele geografiske steder i zoner.</span><span class="sxs-lookup"><span data-stu-id="8158c-104">Transport management lets you divide geographic locations into zones.</span></span> <span data-ttu-id="8158c-105">Opdeling af steder i zoner kan hjælpe med at:</span><span class="sxs-lookup"><span data-stu-id="8158c-105">Dividing locations into zones can help to:</span></span>
 
-- <span data-ttu-id="2c512-106">**Forenkle transportprisen** – Zonevis prissætning kan være mere enkel end en individuel stedbaseret prisfastsættelse, især når transportadresser er spredte.</span><span class="sxs-lookup"><span data-stu-id="2c512-106">**Simplify transportation pricing** – Zone-wise pricing can be simpler than individual location-based pricing, especially when transportation locations are scattered.</span></span>
-- <span data-ttu-id="2c512-107">**Optimere lastplanlægning** – Ved at konsolidere laster efter zoner.</span><span class="sxs-lookup"><span data-stu-id="2c512-107">**Optimize load planning** – By consolidating loads by zones.</span></span>
-- <span data-ttu-id="2c512-108">**Optimere ruteplanlægning** – Ved at tildele bestemte ruteplaner i bestemte zoner.</span><span class="sxs-lookup"><span data-stu-id="2c512-108">**Optimize route planning** – By assigning specific route plans to specific zones.</span></span>
+- <span data-ttu-id="8158c-106">**Forenkle transportprisen** – Zonevis prissætning kan være mere enkel end en individuel stedbaseret prisfastsættelse, især når transportadresser er spredte.</span><span class="sxs-lookup"><span data-stu-id="8158c-106">**Simplify transportation pricing** – Zone-wise pricing can be simpler than individual location-based pricing, especially when transportation locations are scattered.</span></span>
+- <span data-ttu-id="8158c-107">**Optimere lastplanlægning** – Ved at konsolidere laster efter zoner.</span><span class="sxs-lookup"><span data-stu-id="8158c-107">**Optimize load planning** – By consolidating loads by zones.</span></span>
+- <span data-ttu-id="8158c-108">**Optimere ruteplanlægning** – Ved at tildele bestemte ruteplaner i bestemte zoner.</span><span class="sxs-lookup"><span data-stu-id="8158c-108">**Optimize route planning** – By assigning specific route plans to specific zones.</span></span>
 
-<span data-ttu-id="2c512-109">Du kan definere zoner på baggrund af metadatafeltværdier (f.eks. land/område, postnummer eller fragttjeneste), der skal kvalificere de enkelte zoner.</span><span class="sxs-lookup"><span data-stu-id="2c512-109">You define zones based on the metadata field values (such as country, zip code range, or carrier service) that qualify each zone.</span></span> <span data-ttu-id="2c512-110">Der kræves ikke zonedefinitioner, hvis din transportpris ikke anvender et zonebegreb.</span><span class="sxs-lookup"><span data-stu-id="2c512-110">Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.</span></span>
+<span data-ttu-id="8158c-109">Du kan definere zoner på baggrund af metadatafeltværdier (f.eks. land/område, postnummer eller fragttjeneste), der skal kvalificere de enkelte zoner.</span><span class="sxs-lookup"><span data-stu-id="8158c-109">You define zones based on the metadata field values (such as country, zip code range, or carrier service) that qualify each zone.</span></span> <span data-ttu-id="8158c-110">Der kræves ikke zonedefinitioner, hvis din transportpris ikke anvender et zonebegreb.</span><span class="sxs-lookup"><span data-stu-id="8158c-110">Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
