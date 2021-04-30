@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750052"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893171"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -183,11 +183,11 @@ Bemærk, at denne lagertype er tilgængelig i følgende miljøer:
 
 Du kan finde flere oplysninger under [Importer konfigurationer for elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md).
 
-Et **RCS**-lager giver adgang til listen over konfigurationer af en bestemt forekomst af [Konfigurationstjeneste (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration), der blev valgt på stadiet for lagerregistrering. Med ER kan du importere fuldførte eller delte konfigurationer fra den valgte RCS-forekomst til den aktuelle forekomst, hvor du kan anvende dem til elektronisk rapportering.
+Et **RCS**-lager giver adgang til listen over konfigurationer af en bestemt forekomst af [Konfigurationstjeneste (RCS)](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration), der blev valgt på stadiet for lagerregistrering. Med ER kan du importere fuldførte eller delte konfigurationer fra den valgte RCS-forekomst til den aktuelle forekomst, hvor du kan anvende dem til elektronisk rapportering.
 
 Du kan finde flere oplysninger under [Importere konfigurationer for elektronisk rapportering (ER) fra RCS](./rcs-download-configurations.md).
 
-Et **Globalt lager** giver adgang til listen over konfigurationer i det globale lager i [Konfigurationstjenesten](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Denne type ER-lager kan alene registreres for Microsoft-udbydere. Fra det globale lager kan du importere de seneste versioner af ER-konfigurationer til den aktuelle forekomst.
+Et **Globalt lager** giver adgang til listen over konfigurationer i det globale lager i [Konfigurationstjenesten](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Denne type ER-lager kan alene registreres for Microsoft-udbydere. Fra det globale lager kan du importere de seneste versioner af ER-konfigurationer til den aktuelle forekomst.
 
 Du kan finde flere oplysninger under [Importere konfigurationer af elektronisk rapportering (ER) fra det globale lager i konfigurationstjenesten](./er-download-configurations-global-repo.md).
 

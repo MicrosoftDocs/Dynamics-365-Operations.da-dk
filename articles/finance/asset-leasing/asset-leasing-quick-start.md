@@ -2,11 +2,11 @@
 title: Kom i gang med aktivleasing
 description: Dette emne beskriver aktivleasingkapaciteten og gennemgår trinnene til oprettelse af aktivleasing og visning af oplysninger for disse leasinger.
 author: moaamer
-ms.date: 10/16/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814122"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892427"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gang med aktivleasing
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne beskriver aktivleasingkapaciteten og gennemgår trinnene til oprettelse af aktivleasing og visning af oplysninger for disse leasinger. Emnet definerer også den terminologi, der bruges i brugergrænsefladen og dokumentationen. Aktivleasing er et avanceret funktion til styring, sporing og automatisering af finanstransaktioner for leasede aktiver i Microsoft Dynamics 365 Finance. Aktivleasing overholder internationale regnskabsstandarder (IFRS 16) og US GAAP-standarder (ASC 842). Aktivleasing registrerer og behandler leasingoplysninger og opretter kladdeposteringer for leasingens levetid fra den første registrering over månedlige kladdeposteringer til værdiforringelsen og afslutningen af leasingen. Aktivleasing integreres problemfrit med andre komponenter i Dynamics 365 Finance, herunder anlægsaktiver, kreditor og finans.
+
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet i **Funktionsstyring** skal du finde og vælge den funktion, der hedder **Aktivleasing**, og derefter vælge knappen **Aktivér nu**.
 
 Du kan få flere oplysninger om regnskabsstandarder i standarddokumentationen til IFRS 16 og US GAAP ASC 842.
 

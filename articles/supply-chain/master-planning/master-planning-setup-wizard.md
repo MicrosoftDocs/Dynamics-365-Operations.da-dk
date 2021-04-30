@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 770800e63de73c60e0e811734d4273ff2392620f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c55c36358b8acf93ab25a358d4d7cd6a4212c2b2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829684"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909421"
 ---
 # <a name="master-planning-setup-wizard"></a>Guiden installation af varedisponering
 
@@ -45,13 +45,13 @@ Den første side i guiden spørger ind til de specifikke krav i din virksomhed. 
 
 Hvis antallet af tråde, der beregnes, overstiger 75 procent af det tilgængelige antal tråde, er det begrænset til 75 procent af det antal tråde, der er tilgængelige for hver kunde. (Antallet af tilgængelige tråde vil blive fastlagt for hver kunde.)
 
-Du kan finde flere oplysning er i [Antal af tråde](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+Du kan finde flere oplysning er i [Antal af tråde](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### <a name="bundle-size"></a>Bundtstørrelse
 
 Bundtstørrelsen vil blive angivet til **1**. Denne værdi er ofte den bedste værdi, fordi den hjælper med at forbedre ydeevnen i forbindelse med varedisponering.
 
-Du finder flere oplysninger under [Antal opgaver i hjælpeopgavebundter](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Du finder flere oplysninger under [Antal opgaver i hjælpeopgavebundter](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Autorisation af bundtstørrelse
 
@@ -64,7 +64,7 @@ Bundtberegning = (antal ordreforslag × (autorisation af tidshorisont ÷ tidshor
 
 Cachestørrelsen vil blive angivet til **Maksimum**. Denne værdi er ofte den bedste værdi, fordi den hjælper med at forbedre ydeevnen i forbindelse med varedisponering.
 
-Du finder flere oplysninger under [Alloker tid til jobs i et jobbundt](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Du finder flere oplysninger under [Alloker tid til jobs i et jobbundt](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Opsætning af produktion
 
@@ -88,7 +88,7 @@ De resterende spørgsmål på denne side og deres svar følger det samme skema:
 - **Ja, som defineret i denne behovsplan** – indstillingen **Hovedplan (tidshorisont)** angives til **Ja**. Det antal dage, du indtaster, vil blive brugt og vil tilsidesætte de værdier, der er angivet i disponeringsgrupperne.
 - **Ja, som defineret i dækningsgruppen** – indstillingen **Hovedplan (tidshorisont)** angives til **Nej**.
 
-Du kan finde flere oplysninger i [Jobplanlægning](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Du kan finde flere oplysninger i [Jobplanlægning](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Planlægningsindstillinger
 
@@ -99,7 +99,7 @@ Dit svar på det første spørgsmål på denne side ("Har du brug for at planlæ
 - **Ja** – jobplanlægning bliver brugt.
 - **Nej** – planlægning af operation bliver brugt.
 
-Du kan finde flere oplysninger under [Planlægning af operationer](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) og [Jobplanlægning](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Du kan finde flere oplysninger under [Planlægning af operationer](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) og [Jobplanlægning](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Opdateringer af udbud og efterspørgsel
 

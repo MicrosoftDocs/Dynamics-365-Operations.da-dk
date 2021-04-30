@@ -2,7 +2,7 @@
 title: Cookie-overholdelse
 description: Dette emne beskriver overvejelser om cookie-overholdelse og de standardpolitikker, der er inkluderet i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/31/2020
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2cc2089bc3052c0c59cb0414f8301123a9a30df2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796021"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908178"
 ---
 # <a name="cookie-compliance"></a>Cookieoverholdelse
 
@@ -50,6 +50,57 @@ I følgende tabel vises den aktuelle referenceliste over cookies, der er placere
 | x-ms-cpim-slice                             | Bruges til at dirigere anmodninger til den relevante forekomst af produktionens godkendelsesserver. |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Bruges til vedligeholdelse af SSO-sessionen.                        |
 | x-ms-cpim-trans                             | Bruges til sporing af posteringer (antallet af åbne faner, der godkender mod et B2C-websted (Business-to-Consumer)), herunder den aktuelle postering. |
+| \_msdyn365___muid_                            | Bruges, hvis Eksperimenteren er aktiveret for miljøet. Anvendes som et bruger-id til eksperimentformål. |
+| \_msdyn365___exp_                             | Bruges, hvis Eksperimenteren er aktiveret for miljøet. Bruges til at måle belastningsjustering for ydeevne.         |
+
+
+
+Hvis en bruger vælger sociale medielinks på et websted, spores cookies i nedenstående tabel også i deres browser.
+
+
+| Domæne                      | Cookie               | Betegnelse                                                  | Kildetekst                                          |
+| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| .linkedin.com                | UserMatchHistory         | Synkronisering af LinkedIn-annonce-id                                      | LinkedIn-feed og indsigtskode                                |
+| .linkedin.com               | li_sugr                  | Browseridentifikator                                           | LinkedIn-indsigtskode, hvis IP-adressen ikke er i et angivet land |
+| .linkedin.com               | BizographicsOptOut       | Angiver frameldingsstatus for tredjepartssporing.              | LinkedIn-gæstekontrolelementer og sider til framelding i branche           |
+| .linkedin.com               | \_guid                    | Browseridentifikator for Google-annoncer.                            | LinkedIn-feed                                                |
+| .linkedin.com               | li_oatml                 | Medlem af indirekte identifikator til konverteringssporing, omdirigering og analyser. | LinkedIn-annoncer og indsigtskoder                                |
+| Forskellige førstepartsdomæner | li_fat_id                | Medlem af indirekte identifikator til konverteringssporing, omdirigering og analyser. | LinkedIn-annoncer og indsigtskoder                                |
+| .adsymptotic.com            | U                        | Browseridentifikator                                           | LinkedIn-indsigtskode, hvis IP-adressen ikke er i et angivet land |
+| .linkedin.com                | bcookie                  | Browser-id-cookie                                            | Anmodninger til LinkedIn                                         |
+| .linkedin.com                | bscookie                 | Sikker browser-cookie                                        | Anmodninger til LinkedIn                                         |
+| .linkedin.com               | lang                     | Angiver landestandard og standardsprog.                                 | Anmodninger til LinkedIn                                         |
+| .linkedin.com                | lidc                     | Bruges til ruteplanlægning.                                             | Anmodninger til LinkedIn                                         |
+| .linkedin.com               | aam_uuid                 | Adobe-målgruppeadministrator-cookie                                                     | Angiv til id-synkronisering                                              |
+| .linkedin.com               | \_ga                      | Google Analytics-cookie                                            | Google Analytics                                             |
+| .linkedin.com               | \_gat                     | Google Analytics-cookie                                             | Google Analytics                                             |
+| .linkedin.com               | liap                     | Google Analytics-cookie                                             | Google Analytics                                             |
+| .linkedin.com               | lissc                    |                                                              |                                                              |
+| .facebook.com               | c_user                   | Cookies indeholder bruger-id'et for den bruger, der aktuelt er logget på.  |   Facebook                                                           |
+| .facebook.com               | datr                     | Bruges til at identificere den webbrowser, der bruges til at oprette forbindelse til Facebook uafhængigt af den bruger, der er logget på. | Facebook                                                             |
+| .facebook.com               | wd                       | Gemmer dimensionerne i browservinduet og bruges af Facebook til at optimere gengivelsen af siden. | Facebook                                                             |
+| .facebook.com               | xs                       | Et tocifret tal, der repræsenterer sessionsnummeret. Den anden del af værdien er en sessionshemmelighed. |  Facebook                                                            |
+| .facebook.com               | fr                       | Indeholder en entydig browser og et bruger-id, der bruges til målrettet annoncering. |  Facebook                                                            |
+| .facebook.com               | sb                       | Bruges til at forbedre Facebook-venneforslag.                                |  Facebook                                                            |
+| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
+| .twitter.com                | guest_id                 |                                                              |  Twitter                                                            |
+| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
+| .twitter.com                | personalization_id       | Cookies indeholder bruger-id'et for den bruger, der aktuelt er logget på.  |  Twitter                                                             |
+| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
+| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
+| .pinterest.com              | \_auth                    | Cookies indeholder bruger-id'et for den bruger, der aktuelt er logget på.  |   Pinterest                                                           |
+| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
+| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_referrer      | Cookie indeholder sider, når brugeren vælger knappen Pinterest.      |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_sess          | Cookie indeholder sider, når brugeren vælger knappen Pinterest.      |  Pinterest                                                            |
+| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
+| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
+| .pinterest.com              | cm_sub                   | Indeholder et bruger-id og tidsstempel for, hvornår cookien blev oprettet. |  Pinterest                                                            |
+| .pinterest.com              | csrftoken                | Cookie indeholder sider, når brugeren vælger knappen Pinterest.      | Pinterest                                                             |
+| .pinterest.com              | sessionFunnelEventLogged | Cookie indeholder sider, når brugeren vælger knappen Pinterest.      | Pinterest                                                             |
+| .pinterest.com              | Lokalt lager            |                                                              |  Pinterest                                                            |
+| .pinterest.com              | Servicemedarbejdere          |                                                              |  Pinterest                                                            |
+
 
 ## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Cookie-samtykke på websted for bruger af et e-handels-websted 
 

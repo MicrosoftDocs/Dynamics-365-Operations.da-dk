@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840238"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897714"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurere Elektronisk fakturering i RCS (Regulatory Configuration Services)
 
@@ -50,6 +50,14 @@ Endelig understøtter funktionerne udveksling af meddelelser med eksterne webtje
 
 Tilgængeligheden af funktionerne til elektronisk fakturering afhænger af landet eller området. Selvom nogle funktioner generelt er tilgængelige, er andre en del af forhåndsvisningen.
 
+#### <a name="generally-available-features"></a>Generelt tilgængelige funktioner
+
+Følgende tabel viser de funktioner for elektronisk fakturering, der er generelt tilgængelige.
+
+| Land/område | Funktionsnavn                         | Forretningsdokument |
+|----------------|--------------------------------------|-------------------|
+| Egypten          | Egyptisk elektronisk faktura (EG) | Salgsfakturaer og projektfakturaer |
+
 #### <a name="preview-features"></a>Prøveversioner
 
 Følgende tabel viser de funktioner for elektronisk fakturering, der er en forhåndsvisning i øjeblikket.
@@ -61,7 +69,6 @@ Følgende tabel viser de funktioner for elektronisk fakturering, der er en forh�
 | Brasilien         | Brasiliansk NF-e (BR)                  | Regnskabsdokumentmodel 55, korrektionsbreve, annulleringer og annulleringer |
 | Brasilien         | Brasiliansk NFS-e ABRASF Curitiba (BR) | Service regnskabsdokumenter |
 | Danmark        | Dansk elektronisk faktura (DK)       | Salgsfakturaer og projektfakturaer |
-| Egypten          | Egyptisk elektronisk faktura (EG) | Salgsfakturaer og projektfakturaer |
 | Estland        | Estisk elektronisk faktura (EE)     | Salgsfakturaer og projektfakturaer |
 | Finland        | Finsk elektronisk faktura (FI)      | Salgsfakturaer og projektfakturaer |
 | Frankrig         | Fransk elektronisk faktura (FR)       | Salgsfakturaer og projektfakturaer |
@@ -202,6 +209,91 @@ Følgende tabel indeholder de tilgængelige handlinger, og om de aktuelt er tilg
 | Kald mexicansk PAC-tjeneste                      | Integrer med mexicansk PAC-tjeneste til CFDI-overførsel.                      | Som eksempel           |
 | Behandle svar                              | Analyser svaret, der er modtaget fra webtjenesteopkaldet.                     | Generelt tilgængelig  |
 | Brug MS Power Automate                         | Integrer med det indbyggede flow i Microsoft Power Automate.                       | Som eksempel           |
+
+### <a name="applicability-rules"></a>Anvendelighedsregler
+
+Anvendelsesregler er konfigurerbare udtryk, der defineres på funktionsniveau til elektronisk fakturering. Reglerne er konfigureret til at give en kontekst til udførelse af funktioner for elektronisk fakturering via egenskabssættet for elektronisk fakturering.
+
+Når et forretningsdokument fra Finance eller Supply Chain Management sendes til elektronisk fakturering, indeholder forretningsdokumentet ikke en eksplicit reference, der giver mulighed for, at funktionen Elektronisk fakturering er indstillet til at kalde en bestemt elektronisk faktureringsfunktion for at behandle afsendelsen.
+
+Når forretningsdokumentet er konfigureret korrekt, indeholder det dog de elementer, der er nødvendige for, at elektronisk fakturering kan fortolke, hvilken funktion til elektronisk fakturering der skal vælges, og derefter generere den elektroniske faktura.
+
+Anvendelsesregler giver mulighed for, at den elektroniske faktureringsfunktionalitet kan finde de nøjagtige funktioner for elektronisk fakturering, der skal bruges til behandling af indsendelsen. Dette gøres ved at sammenholde indholdet fra det indsendte forretningsdokument med klausulerne i anvendelsesreglerne.
+
+Der implementeres f.eks. to funktioner til elektronisk fakturering med relaterede anvendelsesregler i egenskabssættet for elektronisk fakturering.
+
+| Elektronisk faktureringsfunktion | Anvendelighedsregler        |
+|------------------------------|--------------------------- |
+| T                            | <p>Land = BR</p><p>og</p><p>Juridisk enhed = BRMF</p>  |
+| B                            | <p>Land = MX</p><p>og</p><p>Juridisk enhed = MXMF</p>  |
+
+Hvis et forretningsdokument fra Finance eller Supply Chain Management indsendes til egenskabssættet for elektronisk fakturering, indeholder forretningsdokumentet følgende attributter angivet som:
+
+- Land = BR
+- Juridisk enhed = BRMF
+
+Funktionen Elektronisk fakturering vælger den elektroniske faktureringsfunktion **A**, som bruges til at behandle indsendelsen og generere den elektroniske faktura.
+
+Ligeledes, hvis forretningsdokumentet indeholder:
+
+- Land = MX
+- Juridisk enhed = MXMF
+
+Funktionen **B** til elektronisk fakturering er valgt for at generere den elektroniske faktura.
+
+Konfigurationen af regler for anvendelighed kan ikke være tvetydig. Det betyder, at to eller flere funktioner til elektronisk fakturering ikke kan have samme klausul, da det ellers ikke medfører et valg. Hvis der er dobbeltfunktioner til elektronisk fakturering, skal du for at undgå tvetydighed bruge ekstra klausuler til at tillade, at funktionen Elektronisk fakturering bruges til at skelne mellem de to funktioner til elektronisk fakturering.
+
+Se f.eks. funktionen **C** til elektronisk fakturering. Denne funktion er en kopi af funktionen **A** til elektronisk fakturering.
+
+| Elektronisk faktureringsfunktion | Anvendelighedsregler        |
+|------------------------------|--------------------------- |
+| T                            | <p>Land = BR</p><p>og</p><p>Juridisk enhed = BRMF</p>  |
+| K                            | <p>Land = BR</p><p>og</p><p>Juridisk enhed = BRMF</p>  |
+
+I dette eksempel er funktion **C** foran indsendelse af et forretningsdokument, der indeholder følgende:
+
+- Land = BR
+- Juridisk enhed = BRMF
+
+Funktionen Elektronisk fakturering kan ikke se, hvilken elektronisk faktureringsfunktion der skal bruges til behandling af indsendelsen, da indsendelserne indeholder nøjagtigt de samme klausuler.
+
+Hvis du vil oprette en forskel mellem de to funktioner via anvendelighedsregler, skal der føjes en ny klausul til en af funktionerne, så funktionssættet Elektronisk fakturering kan vælge den korrekte funktion til elektronisk fakturering.
+
+| Elektronisk faktureringsfunktion | Anvendelighedsregler        |
+|------------------------------|--------------------------- |
+| T                            | <p>Land = BR</p><p>og</p><p>Juridisk enhed = BRMF</p>  |
+| K                            | <p>Land = BR</p><p>og</p><p>Juridisk enhed = BRMF</p><p>og</p><p>Model=55</p>  |
+
+Følgende ressourcer er tilgængelige for at understøtte oprettelse af mere komplekse klausuler:
+
+Logiske operatorer:
+- Og
+- Eller
+
+Operatortyper:
+- Lig med
+- Ikke lig med
+- Større end
+- Mindre end
+- Større end eller lig med
+- Mindre end eller lig med
+- Indeholder
+- Begynder med
+
+Datatyper:
+- Streng
+- Tal
+- Boolesk
+- Dato
+- UUID
+
+Egenskab til gruppering og opdeling af grupperede klausuler.
+Eksemplet ser sådan ud.
+
+| Elektronisk faktureringsfunktion | Anvendelighedsregler        |
+|------------------------------|--------------------------- |
+| K                            | <p>Land = BR</p><p>og</p><p>(Juridisk enhed = BRMF</p><p>eller</p><p>Model=55)</p>  |
+
 
 ## <a name="configuration-providers"></a>Konfigurationsudbydere
 

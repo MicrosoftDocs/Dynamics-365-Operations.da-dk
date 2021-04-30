@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 497061500660e41c8f82c73e5dd6c085810c9209
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744045"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910443"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning af funktioner i skyen og i det lokale miljø
 
@@ -53,14 +53,14 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 | Intelligence                         |                                                                                           | Ja       | Ja             |
 |                                      | Elektronisk rapportering (ER)                                                                 | Ja       | Ja             |
 |                                      | ER: integration med LCS                                                                  | Ja       | Nr.              |
-|                                      | ER: integration med SharePoint                                                           | Ja       | Nej              |
+|                                      | ER: integration med SharePoint                                                           | Ja       | Nr.              |
 |                                      | ER: integration med Regulatory Configuration Services (RCS)                              | Ja       | Nr.              |
 |                                      | ER: anvender lokalt filsystem til at lagre ER-konfigurationer, der kan tilgås via ER-lagre | Ingen        | Ja             |
 |                                      | Integration med PowerBI.com                                                              | Ja       | Ingen              |
 |                                      | Integration med Power BI Desktop                                                          | Ingen        | Ja             |
 |                                      | Analytiske arbejdsområder                                                                     | Ja       | Ingen              |
 |                                      | Intelligent forretningsproces: anbefalinger                                             | Ja       | Nr.              |
-|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery    | Ja       | Nej              |
+|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery    | Ja       | Nr.              |
 |                                      | SQL Server Reporting Services (SSRS) understøtter udskalering                                 | Ja       | Ja             |
 |                                      | Telemetri overføres til skyen                                                   | Ja       | Ingen              |
 | Lifecycle Services                   |                                                                                           | Ja       | Ja             |
@@ -84,7 +84,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 
 | **Areal**                | **Funktion**             | **Sky** | **I det lokale miljø** |
 |-------------------------|-------------------|-----------|-----------------|
-| Aktivstyring                     |                                                                                           | Ja       | Ingen              |
+| Aktivstyring                     |                                                                                           | Ja       | Ja             |
 | Overholdelse og certificeringer        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1-certificering                                                                | Ja       | Nr.              |
 | Omkostningsregnskab                      |                                                                                           | Ja       | Ja             |
@@ -147,7 +147,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 
 ## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Du kan se en liste over funktioner, der er tilgængelige i lokale installationer, i [Commerce-egenskaber, der er tilgængelige i lokale installationer](../../../retail/retail-onprem.md).
+Du kan se en liste over funktioner, der er tilgængelige i lokale installationer, i [Commerce-egenskaber, der er tilgængelige i lokale installationer](../../../commerce/retail-onprem.md).
 
 ## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 

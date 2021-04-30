@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dab70b213efc7e7a3537aa2b47b9edf38d492d34
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753714"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894118"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angive en brugerdefineret placering, hvor oprettede dokumenter kan gemmes
 
@@ -27,7 +27,7 @@ Med API'en (application programming interface) i den elektroniske rapporteringss
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Du skal installere en topologi, der understøtter fortløbende build. Yderligere oplysninger finder du i [Installere topologier, der understøtter fortløbende build og automatisering af test](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Du skal have adgang til denne topologi for en af følgende roller:
+Du skal installere en topologi, der understøtter fortløbende build. Yderligere oplysninger finder du i [Installere topologier, der understøtter fortløbende build og automatisering af test](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Du skal have adgang til denne topologi for en af følgende roller:
 
 - Udvikler til elektronisk rapportering
 - Funktionel konsulent i elektronisk rapportering
@@ -53,7 +53,7 @@ I den aktuelle topologi skal du [oprette et nyt ER-format](tasks/er-format-confi
 
 Hvis du vil angive, hvordan dokumenter, der genereres af et ER-format, skal sendes, skal du konfigurere [Destinationer for Elektronisk rapportering (ER)](electronic-reporting-destinations.md). I hver ER destination, der er konfigureret til at gemme genererede dokumenter som filer, skal du angive en dokumenttype i dokumentstyringsstrukturen. Der kan bruges forskellige dokumenttyper til at sende dokumenter, som forskellige ER-formater genererer.
 
-1. Tilføj en ny [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) for det ER-format, som du har oprettet eller tidligere har importeret. I følgende illustration er dokumenttypen **FileX**.
+1. Tilføj en ny [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md) for det ER-format, som du har oprettet eller tidligere har importeret. I følgende illustration er dokumenttypen **FileX**.
 2. For at skelne denne dokumenttype fra andre dokumenttyper skal du medtage et bestemt nøgleord i dens navn. F.eks. i illustrationen, der følger, er navnet **(LOKAL) mappe**.
 3. I feltet **Klasse** skal du angive **Vedhæft fil**.
 4. I feltet **Gruppe** skal du angive **Fil**.
@@ -117,14 +117,14 @@ Hændelsen **AttachingFile()** udføres, når de følgende ER-destinationer beha
 
 ## <a name="configure-an-er-destination"></a>Konfigurere en ER-destination
 
-1. Konfigurer den arkiverede destination for et af de tidligere nævnte elementer (fil, mappe, fletning eller vedhæftet fil) for det ER-format, du har oprettet eller importeret. Du kan finde en vejledning i [Konfigurere ER-destinationer](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Konfigurer den arkiverede destination for et af de tidligere nævnte elementer (fil, mappe, fletning eller vedhæftet fil) for det ER-format, du har oprettet eller importeret. Du kan finde en vejledning i [Konfigurere ER-destinationer](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Brug den dokumenttype, du har tilføjet tidligere for den konfigurerede destination. (I dette emne f.eks. er dokumenttypen **FileX**).
 
 ![Dialogboksen Indstillinger for destination](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Ændre kildekode
 
-1. Tilføj en ny klasse til dit Microsoft Visual Studio-projekt, og skriv kode for at abonnere på den **AttachingFile()** hændelse, der blev nævnt tidligere. (Du kan finde flere oplysninger om det anvendte mønster for udvidelsesmuligheder i [Svare ved hjælp af EventHandlerResult](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result)). Skriv f.eks. kode, der udfører følgende handlinger, i den nye klasse:
+1. Tilføj en ny klasse til dit Microsoft Visual Studio-projekt, og skriv kode for at abonnere på den **AttachingFile()** hændelse, der blev nævnt tidligere. (Du kan finde flere oplysninger om det anvendte mønster for udvidelsesmuligheder i [Svare ved hjælp af EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result)). Skriv f.eks. kode, der udfører følgende handlinger, i den nye klasse:
 
     1. Du kan gemme genererede filer i en mappe i det lokale filsystem på den server, der kører Applikationsobjektserver-tjenesten (AOS).
     2. Du skal kun gemme de genererede filer, når den nye dokumenttype (f.eks. typen **FileX**, der har nøgleordet "(lokal)" i navnet) bruges, mens en fil er knyttet til posten i logfilen for ER-kørselsjobbet.

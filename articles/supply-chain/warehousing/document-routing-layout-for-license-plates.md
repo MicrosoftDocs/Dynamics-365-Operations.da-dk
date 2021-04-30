@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838268"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907981"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutelayout for id-nummeretiketter
 
@@ -73,7 +73,7 @@ Følgende eksempler viser, hvordan du kan tilpasse feltet arbejdsantal (**Antal*
 - Hvis du altid vil have vist fire cifre (ved hjælp af nuller som pladsholdere), skal du bruge `$Qty:0000$`. Hvis antallet f.eks. er 10, vil etiketten vise "0010".
 - Hvis du altid vil have vist to decimaler, skal du bruge `$Qty:0.00$`. Hvis antallet f.eks. er 10, vil etiketten vise "10,00".
 
-Du kan få vist en komplet liste over de tilgængelige numeriske formatstrenge i [Brugerdefinerede numeriske formatstrenge ](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+Du kan få vist en komplet liste over de tilgængelige numeriske formatstrenge i [Brugerdefinerede numeriske formatstrenge ](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Brugerdefinerede strengformater
 
@@ -95,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 I dette eksempel vil datoen 30. april 2020 blive udskrevet som "30-04-2020".
 
-Du kan få vist en komplet liste over de tilgængelige dato/klokkeslætsformater i [Brugerdefinerede dato/klokkeslætsformatstrenge ](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Du kan få vist en komplet liste over de tilgængelige dato/klokkeslætsformater i [Brugerdefinerede dato/klokkeslætsformatstrenge ](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Udskrive individuelle linjer fra data på flere linjer
 

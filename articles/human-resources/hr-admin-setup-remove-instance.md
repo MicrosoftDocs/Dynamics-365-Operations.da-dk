@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 399c710b99c5721ff9867ce332b815bd362d6103
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a6f23adedc287b85018fe0b0af445677f6dc597c
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795015"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889902"
 ---
 # <a name="remove-an-instance"></a>Fjern en forekomst
 
@@ -81,7 +81,7 @@ Sådan gendannes miljøet:
 
 1. Følg vejledningen i [Gendanne Power Apps-miljøet](/power-platform/admin/recover-environment.md).
 
-2. Kontakt support for at gendanne personalemiljøet. Du kan finde flere oplysninger under [Få support](hr-admin-troubleshooting-support.md).
+2. Kontakt support for at gendanne personalemiljøet. Du kan finde flere oplysninger under [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
 > Power Apps-miljøer gemmes kun i syv dage efter sletning. Du skal gendanne miljøet inden for perioden på syv dage.

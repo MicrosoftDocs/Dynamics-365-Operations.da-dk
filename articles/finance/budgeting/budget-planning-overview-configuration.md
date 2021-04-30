@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822125"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898204"
 ---
 # <a name="budget-planning-overview"></a>Oversigt over budgetplanlægning
 
@@ -75,7 +75,7 @@ I følgende illustration vises et eksempel, hvor virksomhedens hovedkvarter bere
 
 På siden **Organisationshierarki** kan du angive et organisationshierarki som et budgetplanlægningshierarki til hver budgetplanlægningsproces. Budgetplanlægningshierarkiet behøver ikke at matche det standardorganisationshierarki, der bruges til andre formål. Da dette hierarki bruges til at samle og distribuere data, vil du måske have en anden struktur. I eksempelskemaet er salgsafdelingerne under et hovedkvarterniveau, der omfatter budget- og økonomiafdelinger. Denne struktur er sandsynligvis forskellig fra den struktur, der bruges til at styre handlinger for salgsafdelingerne. Kun et organisationshierarki kan tildeles til hver budgetplanlægningsproces.
 
-Du kan finde flere oplysninger i [Organisationer og organisationshierarkier](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Du kan finde flere oplysninger i [Organisationer og organisationshierarkier](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Brugersikkerhed
 
@@ -163,7 +163,7 @@ Ud over kolonner til budgetbeløb kan du definere kolonner til projektet, foresl
 
 I eksempelskemaet kan du oprette kolonner til scenarierne "PY-salg", "Kontrakter" og "Prognose". (I følgende illustration vises skemaets relevante afsnit). Du kan derefter opbryde en eller flere af disse scenarier i separate kolonner for hvert kvartal af regnskabsåret, så lederen af salgsafdelingen præcist kan angive budgetterede beløb for hver periode.
 
-[![Kolonner](./media/columns.png)](./media/columns.png)
+[![Illustration af sektioner i skemaet til tilføjelse af kolonner](./media/columns.png)](./media/columns.png)
 
 Du kan også angive, om hvert layoutelement (kolonne) kan redigeres, og om det er tilgængeligt i en regnearksskabelon, der er oprettet for dette layout. Til eksempelskemaet kan kolonnerne "Prognose", der bruges til layoutet til stadiet "Estimat", redigeres, hvorimod kolonnerne "PY-salg" og "Kontrakter" er skrivebeskyttet.
 

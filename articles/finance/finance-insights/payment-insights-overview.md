@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 079ac1e8020c5fb80618b0237c4cf3a747b1e85c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4151b56b8b385e29d3926dc7e245728158cbcd34
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827260"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898006"
 ---
 # <a name="customer-payment-predictions-preview"></a>Forudsigelser for debitorbetaling (prøveversion)
 
@@ -71,7 +71,7 @@ Tidligere har det ofte været vanskeligt at udvikle og installere en kunstig int
 
 Financial Insights, offentlig prøveversion er tilgængelig for prøveimplementeringer i USA, Europa og Storbritannien. Microsoft tilføjer trinvist understøttelse af yderligere områder.
 
-De offentlige prøveversionsfunktioner kan og bør kun aktiveres i sandkassemiljøer i niveau 2. Opsætnings- og AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
+De offentlige prøveversionsfunktioner kan og bør kun aktiveres i sandkassemiljøer i niveau 2. Opsætnings- og AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 

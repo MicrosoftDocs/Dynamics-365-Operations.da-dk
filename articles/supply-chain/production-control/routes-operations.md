@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819274"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908922"
 ---
 # <a name="routes-and-operations"></a>Ruter og operationer
 
@@ -79,7 +79,7 @@ En rute skal være godkendt, før den kan bruges i planlægnings- eller fremstil
 
 Hver rute kan være godkendt eller ikke-godkendt separat. Bemærk imidlertid, at hvis en rute ikke er godkendt, er alle relaterede ruteversioner heller ikke godkendt. I produktionsstyringsparametrene kan du angive, om ruter kan være ikke-godkendt, og om godkendte ruter kan ændres.  
 
-Hvis du skal holde en log, der registrerer, hvem der godkender hver rute, kan du kræve elektroniske signaturer til rutegodkendelsen. Brugerne er så nødt til at bekræfte deres identitet ved hjælp af en [elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Hvis du skal holde en log, der registrerer, hvem der godkender hver rute, kan du kræve elektroniske signaturer til rutegodkendelsen. Brugerne er så nødt til at bekræfte deres identitet ved hjælp af en [elektronisk signatur](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ## <a name="operations"></a>Operations
 En operation er trin i produktionsprocessen. Hver operation har et id og en kort beskrivelse. Følgende tabeller viser typiske eksempler på operationer fra en maskinfabrik.
@@ -185,7 +185,7 @@ Når du aktiverer en ruteversion, angiver du den som den standardruteversion, va
 
 ### <a name="electronic-signatures"></a>Elektroniske signaturer
 
-Hvis du skal holde en log, der registrerer, hvem der godkender og aktiverer hver ruteversion, kan du kræve elektroniske signaturer til disse opgaver. Brugere, der kan godkende og aktivere ruteversioner, skal bekræfte deres identitet ved hjælp af en [elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Hvis du skal holde en log, der registrerer, hvem der godkender og aktiverer hver ruteversion, kan du kræve elektroniske signaturer til disse opgaver. Brugere, der kan godkende og aktivere ruteversioner, skal bekræfte deres identitet ved hjælp af en [elektronisk signatur](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ### <a name="product-change-that-uses-case-management"></a>Produktændring, der bruger sagsstyring
 
@@ -253,7 +253,7 @@ Derfor påvirker de øvrige indstillinger (jobstyring, arbejdstid og kapacitet) 
 
 - [Ressourceegenskaber](resource-capabilities.md)
 
-- [Oversigt over elektroniske signaturer](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Oversigt over elektroniske signaturer](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

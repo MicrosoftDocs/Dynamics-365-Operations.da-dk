@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1e021105c19273db5ded7cb0902eca1d502ced8e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753354"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893950"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importere opdaterede versioner af ER-konfigurationer
 
@@ -28,7 +28,7 @@ ms.locfileid: "5753354"
 
 ER-[lagre](general-electronic-reporting.md#Repository) (Elektroniske rapportering) bruges til at dele [ER-konfigurationer](general-electronic-reporting.md#Configuration). Du kan [importere](download-electronic-reporting-configuration-lcs.md) ER-konfigurationer fra forskellige lagre i din forekomst af Microsoft Dynamics 365 Finance. Når du importerer ER-konfigurationer, [kan konfigurationsudbydere](general-electronic-reporting.md#Provider) udgive nye [versioner](general-electronic-reporting.md#component-versioning) af lagrene, så de kan deles.
 
-Dette emne forklarer, hvordan du kan importere ER-fra det globale lager til Konfigurationstjeneste. Du kan finde flere oplysninger under [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurationstjeneste](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Dette emne forklarer, hvordan du kan importere ER-fra det globale lager til Konfigurationstjeneste. Du kan finde flere oplysninger under [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurationstjeneste](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Gennemse de tilgængelige opdaterede versioner
 

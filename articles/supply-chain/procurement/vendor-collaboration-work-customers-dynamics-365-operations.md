@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c734b62dff6fc6151e192f239ad319b78f8faa8f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5931d718d34db81ebd032eda821f071d9d329a26
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825200"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908029"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorsamarbejde med kunder
 
@@ -31,7 +31,7 @@ Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med ku
 - **Indkøbsordrebekræftelse** – Overvåge og reagere på indkøbsordrer (IO'er).
 - **Kreditorbud** – Få vist anmodninger om tilbud (tilbudsanmodninger) og reagere på dem ved at afgive bud.
 - **Kreditoroplysninger** – Få vist eller opdatere kreditormasterdata.
-- **Fakturering** – Arbejde med fakturaer. Dette emne dækker ikke arbejdsområdet **Fakturering**. Du kan finde flere oplysninger om dette arbejdsområde under [Arbejdsområde for kreditorsamarbejdsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturering** – Arbejde med fakturaer. Dette emne dækker ikke arbejdsområdet **Fakturering**. Du kan finde flere oplysninger om dette arbejdsområde under [Arbejdsområde for kreditorsamarbejdsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Kreditorer kan også overvåge oplysninger om konsignationslager.
 

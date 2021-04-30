@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828028"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897690"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilfakturagodkendelser
 
@@ -32,7 +32,7 @@ Virksomhedsbrugere kan designe mobiloplevelser med mobilfunktioner. I avancerede
 
 | Forudsætning                                                                                            | Betegnelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Håndbog til forhåndslæsning om brug af mobilenhed                                                                                |[Mobilplatform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Håndbog til forhåndslæsning om brug af mobilenhed                                                                                |[Mobilplatform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Et miljø, der har version 1611 og Platform update 3 (november 2016)                   |
 | Installer hotfix-KB 3204341.                                                                              | Arbejdsrutineoptager kan fejlagtigt optage to Luk-kommandoer til rullelistedialogbokse. Dette er medtaget i Platform update 3 (november 2016). |
 | Installer hotfix-KB 3207800.                                                                              | Dette hotfix gør det muligt at se vedhæftede filer på mobilklienten. Dette er medtaget i Platform update 3 (november 2016).           |
@@ -213,7 +213,7 @@ Når du vil designe siden med fakturadetaljer til mobilenheder, skal du bruge si
 
 11. Når alle felter fra de forrige to trin er tilføjet, skal du klikke på **Udført**. Siden skal ligne følgende illustration.
     
-    [![Side, efter at der er tilføjet felter](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Illustration, der viser yderligere felter, der er tilføjet](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Klik på **Udført** for at afslutte redigeringstilstand.
 
