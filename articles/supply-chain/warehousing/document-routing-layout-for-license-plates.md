@@ -13,23 +13,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838268"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907981"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a><span data-ttu-id="c5d06-103">Dokumentrutelayout for id-nummeretiketter</span><span class="sxs-lookup"><span data-stu-id="c5d06-103">Document routing layout for license plate labels</span></span>
+# <a name="document-routing-layout-for-license-plate-labels"></a><span data-ttu-id="d21a5-103">Dokumentrutelayout for id-nummeretiketter</span><span class="sxs-lookup"><span data-stu-id="d21a5-103">Document routing layout for license plate labels</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="c5d06-104">I dokumentrutelayoutet defineres layoutet for id-nummeretiketter og de data, der udskrives på dem.</span><span class="sxs-lookup"><span data-stu-id="c5d06-104">The document routing layout defines the layout of license plate labels, and the data that is printed on them.</span></span> <span data-ttu-id="c5d06-105">Du kan konfigurere udløsningspunkterne for udskrivning, når du konfigurerer menupunkter i mobilenheder og arbejdsskabeloner.</span><span class="sxs-lookup"><span data-stu-id="c5d06-105">You configure the printing trigger points when you set up mobile device menu items and work templates.</span></span>
+<span data-ttu-id="d21a5-104">I dokumentrutelayoutet defineres layoutet for id-nummeretiketter og de data, der udskrives på dem.</span><span class="sxs-lookup"><span data-stu-id="d21a5-104">The document routing layout defines the layout of license plate labels, and the data that is printed on them.</span></span> <span data-ttu-id="d21a5-105">Du kan konfigurere udløsningspunkterne for udskrivning, når du konfigurerer menupunkter i mobilenheder og arbejdsskabeloner.</span><span class="sxs-lookup"><span data-stu-id="d21a5-105">You configure the printing trigger points when you set up mobile device menu items and work templates.</span></span>
 
-<span data-ttu-id="c5d06-106">I et typisk scenarie vil de lagermedarbejdere, som modtager varen, udskrive id-nummeretiketter, umiddelbart efter at de har registreret indholdet af paller, der ankommer i modtagelsesområdet.</span><span class="sxs-lookup"><span data-stu-id="c5d06-106">In a typical scenario, warehouse receiving clerks print license plate labels immediately after they record the contents of pallets that arrive in the receiving area.</span></span> <span data-ttu-id="c5d06-107">De fysiske etiketter påsættes pallerne.</span><span class="sxs-lookup"><span data-stu-id="c5d06-107">The physical labels are applied to the pallets.</span></span> <span data-ttu-id="c5d06-108">De kan derefter bruges til validering som del af den læg-på-lager-proces, der følger efter, og fremtidige udgående pluk-handlinger.</span><span class="sxs-lookup"><span data-stu-id="c5d06-108">They can then be used for validation as part of the put-away process that follows and future outbound picking operations.</span></span>
+<span data-ttu-id="d21a5-106">I et typisk scenarie vil de lagermedarbejdere, som modtager varen, udskrive id-nummeretiketter, umiddelbart efter at de har registreret indholdet af paller, der ankommer i modtagelsesområdet.</span><span class="sxs-lookup"><span data-stu-id="d21a5-106">In a typical scenario, warehouse receiving clerks print license plate labels immediately after they record the contents of pallets that arrive in the receiving area.</span></span> <span data-ttu-id="d21a5-107">De fysiske etiketter påsættes pallerne.</span><span class="sxs-lookup"><span data-stu-id="d21a5-107">The physical labels are applied to the pallets.</span></span> <span data-ttu-id="d21a5-108">De kan derefter bruges til validering som del af den læg-på-lager-proces, der følger efter, og fremtidige udgående pluk-handlinger.</span><span class="sxs-lookup"><span data-stu-id="d21a5-108">They can then be used for validation as part of the put-away process that follows and future outbound picking operations.</span></span>
 
-<span data-ttu-id="c5d06-109">Du kan udskrive meget komplekse etiketter, hvis udskrivningsenheden kan fortolke den tekst, der sendes til den.</span><span class="sxs-lookup"><span data-stu-id="c5d06-109">You can print highly complex labels, provided that the printing device can interpret the text that is sent to it.</span></span> <span data-ttu-id="c5d06-110">Et ZPL-layout (Zebra Programming Language), der indeholder en stregkode, kan f.eks. ligne følgende eksempel.</span><span class="sxs-lookup"><span data-stu-id="c5d06-110">For example, a Zebra Programming Language (ZPL) layout that includes a bar code might resemble the following example.</span></span>
+<span data-ttu-id="d21a5-109">Du kan udskrive meget komplekse etiketter, hvis udskrivningsenheden kan fortolke den tekst, der sendes til den.</span><span class="sxs-lookup"><span data-stu-id="d21a5-109">You can print highly complex labels, provided that the printing device can interpret the text that is sent to it.</span></span> <span data-ttu-id="d21a5-110">Et ZPL-layout (Zebra Programming Language), der indeholder en stregkode, kan f.eks. ligne følgende eksempel.</span><span class="sxs-lookup"><span data-stu-id="d21a5-110">For example, a Zebra Programming Language (ZPL) layout that includes a bar code might resemble the following example.</span></span>
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,99 +45,99 @@ ms.locfileid: "5838268"
 ^PQ1,,,Y^XZ
 ```
 
-<span data-ttu-id="c5d06-111">Teksten `$LicensePlateId$` i dette eksempel vil blive erstattet af en dataværdi som del af etiketudskrivningen.</span><span class="sxs-lookup"><span data-stu-id="c5d06-111">As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value.</span></span>
+<span data-ttu-id="d21a5-111">Teksten `$LicensePlateId$` i dette eksempel vil blive erstattet af en dataværdi som del af etiketudskrivningen.</span><span class="sxs-lookup"><span data-stu-id="d21a5-111">As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value.</span></span>
 
-<span data-ttu-id="c5d06-112">Hvis du vil have vist de værdier, der vil blive udskrevet, skal du gå til **Lokationsstyring \> Forespørgsler og rapporter \> Id-nummeretiketter**.</span><span class="sxs-lookup"><span data-stu-id="c5d06-112">To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.</span></span>
+<span data-ttu-id="d21a5-112">Hvis du vil have vist de værdier, der vil blive udskrevet, skal du gå til **Lokationsstyring \> Forespørgsler og rapporter \> Id-nummeretiketter**.</span><span class="sxs-lookup"><span data-stu-id="d21a5-112">To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.</span></span>
 
-<span data-ttu-id="c5d06-113">Flere meget tilgængelige værktøjer til oprettelse af etiketter kan hjælpe dig med at formatere teksten til etiketlayoutet.</span><span class="sxs-lookup"><span data-stu-id="c5d06-113">Several widely available label generation tools can help you format the text for the label layout.</span></span> <span data-ttu-id="c5d06-114">Mange af disse værktøjer understøtter `$FieldName$`-formatet.</span><span class="sxs-lookup"><span data-stu-id="c5d06-114">Many of these tools support the `$FieldName$` format.</span></span> <span data-ttu-id="c5d06-115">Microsoft Dynamics 365 Supply Chain Management bruger desuden en særlig formateringslogik som del af felttilknytningen for dokumentrutelayoutet.</span><span class="sxs-lookup"><span data-stu-id="c5d06-115">In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.</span></span>
+<span data-ttu-id="d21a5-113">Flere meget tilgængelige værktøjer til oprettelse af etiketter kan hjælpe dig med at formatere teksten til etiketlayoutet.</span><span class="sxs-lookup"><span data-stu-id="d21a5-113">Several widely available label generation tools can help you format the text for the label layout.</span></span> <span data-ttu-id="d21a5-114">Mange af disse værktøjer understøtter `$FieldName$`-formatet.</span><span class="sxs-lookup"><span data-stu-id="d21a5-114">Many of these tools support the `$FieldName$` format.</span></span> <span data-ttu-id="d21a5-115">Microsoft Dynamics 365 Supply Chain Management bruger desuden en særlig formateringslogik som del af felttilknytningen for dokumentrutelayoutet.</span><span class="sxs-lookup"><span data-stu-id="d21a5-115">In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.</span></span>
 
-## <a name="turn-on-this-feature-for-your-system"></a><span data-ttu-id="c5d06-116">Aktivere denne funktion i dit system</span><span class="sxs-lookup"><span data-stu-id="c5d06-116">Turn on this feature for your system</span></span>
+## <a name="turn-on-this-feature-for-your-system"></a><span data-ttu-id="d21a5-116">Aktivere denne funktion i dit system</span><span class="sxs-lookup"><span data-stu-id="d21a5-116">Turn on this feature for your system</span></span>
 
-<span data-ttu-id="c5d06-117">Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Udvidede layout for id-etiket*.</span><span class="sxs-lookup"><span data-stu-id="c5d06-117">If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature.</span></span>
+<span data-ttu-id="d21a5-117">Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Udvidede layout for id-etiket*.</span><span class="sxs-lookup"><span data-stu-id="d21a5-117">If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature.</span></span>
 
-## <a name="custom-number-formats"></a><span data-ttu-id="c5d06-118">Brugerdefinerede talformater</span><span class="sxs-lookup"><span data-stu-id="c5d06-118">Custom number formats</span></span>
+## <a name="custom-number-formats"></a><span data-ttu-id="d21a5-118">Brugerdefinerede talformater</span><span class="sxs-lookup"><span data-stu-id="d21a5-118">Custom number formats</span></span>
 
-<span data-ttu-id="c5d06-119">Du kan tilpasse formateringen af numeriske feltværdier, der udskrives, ved hjælp af koder, som har følgende format.</span><span class="sxs-lookup"><span data-stu-id="c5d06-119">You can customize the formatting of numerical field values that are printed by using codes that have the following format.</span></span>
+<span data-ttu-id="d21a5-119">Du kan tilpasse formateringen af numeriske feltværdier, der udskrives, ved hjælp af koder, som har følgende format.</span><span class="sxs-lookup"><span data-stu-id="d21a5-119">You can customize the formatting of numerical field values that are printed by using codes that have the following format.</span></span>
 
 ```dos
 $FieldName:FormatString$
 ```
 
-<span data-ttu-id="c5d06-120">Her er en beskrivelse af dette format:</span><span class="sxs-lookup"><span data-stu-id="c5d06-120">Here is an explanation of this format:</span></span>
+<span data-ttu-id="d21a5-120">Her er en beskrivelse af dette format:</span><span class="sxs-lookup"><span data-stu-id="d21a5-120">Here is an explanation of this format:</span></span>
 
-- <span data-ttu-id="c5d06-121">`FieldName` er navnet på datafeltet (f.eks. **Antal**).</span><span class="sxs-lookup"><span data-stu-id="c5d06-121">`FieldName` is the name of the data field (such as **Qty**).</span></span>
-- <span data-ttu-id="c5d06-122">`FormatString` definerer, hvordan dataene skal udskrives.</span><span class="sxs-lookup"><span data-stu-id="c5d06-122">`FormatString` defines how the data must be printed.</span></span>
+- <span data-ttu-id="d21a5-121">`FieldName` er navnet på datafeltet (f.eks. **Antal**).</span><span class="sxs-lookup"><span data-stu-id="d21a5-121">`FieldName` is the name of the data field (such as **Qty**).</span></span>
+- <span data-ttu-id="d21a5-122">`FormatString` definerer, hvordan dataene skal udskrives.</span><span class="sxs-lookup"><span data-stu-id="d21a5-122">`FormatString` defines how the data must be printed.</span></span>
 
-<span data-ttu-id="c5d06-123">Følgende eksempler viser, hvordan du kan tilpasse feltet arbejdsantal (**Antal**):</span><span class="sxs-lookup"><span data-stu-id="c5d06-123">The following examples show how you can customize the work quantity (**Qty**) field:</span></span>
+<span data-ttu-id="d21a5-123">Følgende eksempler viser, hvordan du kan tilpasse feltet arbejdsantal (**Antal**):</span><span class="sxs-lookup"><span data-stu-id="d21a5-123">The following examples show how you can customize the work quantity (**Qty**) field:</span></span>
 
-- <span data-ttu-id="c5d06-124">Hvis du altid vil have vist fire cifre (ved hjælp af nuller som pladsholdere), skal du bruge `$Qty:0000$`.</span><span class="sxs-lookup"><span data-stu-id="c5d06-124">To always show four digits (by using zeros as placeholders), use `$Qty:0000$`.</span></span> <span data-ttu-id="c5d06-125">Hvis antallet f.eks. er 10, vil etiketten vise "0010".</span><span class="sxs-lookup"><span data-stu-id="c5d06-125">For example, if the quantity is 10, the label will show "0010."</span></span>
-- <span data-ttu-id="c5d06-126">Hvis du altid vil have vist to decimaler, skal du bruge `$Qty:0.00$`.</span><span class="sxs-lookup"><span data-stu-id="c5d06-126">To always show two decimal places, use `$Qty:0.00$`.</span></span> <span data-ttu-id="c5d06-127">Hvis antallet f.eks. er 10, vil etiketten vise "10,00".</span><span class="sxs-lookup"><span data-stu-id="c5d06-127">For example, if the quantity is 10, the label will show "10.00."</span></span>
+- <span data-ttu-id="d21a5-124">Hvis du altid vil have vist fire cifre (ved hjælp af nuller som pladsholdere), skal du bruge `$Qty:0000$`.</span><span class="sxs-lookup"><span data-stu-id="d21a5-124">To always show four digits (by using zeros as placeholders), use `$Qty:0000$`.</span></span> <span data-ttu-id="d21a5-125">Hvis antallet f.eks. er 10, vil etiketten vise "0010".</span><span class="sxs-lookup"><span data-stu-id="d21a5-125">For example, if the quantity is 10, the label will show "0010."</span></span>
+- <span data-ttu-id="d21a5-126">Hvis du altid vil have vist to decimaler, skal du bruge `$Qty:0.00$`.</span><span class="sxs-lookup"><span data-stu-id="d21a5-126">To always show two decimal places, use `$Qty:0.00$`.</span></span> <span data-ttu-id="d21a5-127">Hvis antallet f.eks. er 10, vil etiketten vise "10,00".</span><span class="sxs-lookup"><span data-stu-id="d21a5-127">For example, if the quantity is 10, the label will show "10.00."</span></span>
 
-<span data-ttu-id="c5d06-128">Du kan få vist en komplet liste over de tilgængelige numeriske formatstrenge i [Brugerdefinerede numeriske formatstrenge ](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).</span><span class="sxs-lookup"><span data-stu-id="c5d06-128">For a complete list of the available number format strings, see [Custom numeric format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).</span></span>
+<span data-ttu-id="d21a5-128">Du kan få vist en komplet liste over de tilgængelige numeriske formatstrenge i [Brugerdefinerede numeriske formatstrenge ](/dotnet/standard/base-types/custom-numeric-format-strings).</span><span class="sxs-lookup"><span data-stu-id="d21a5-128">For a complete list of the available number format strings, see [Custom numeric format strings](/dotnet/standard/base-types/custom-numeric-format-strings).</span></span>
 
-## <a name="custom-string-formats"></a><span data-ttu-id="c5d06-129">Brugerdefinerede strengformater</span><span class="sxs-lookup"><span data-stu-id="c5d06-129">Custom string formats</span></span>
+## <a name="custom-string-formats"></a><span data-ttu-id="d21a5-129">Brugerdefinerede strengformater</span><span class="sxs-lookup"><span data-stu-id="d21a5-129">Custom string formats</span></span>
 
-<span data-ttu-id="c5d06-130">Du kan fjerne de første tegn i en streng ved hjælp af følgende felt og formateringskode.</span><span class="sxs-lookup"><span data-stu-id="c5d06-130">You can remove the first characters of a string by using the following field and format code.</span></span>
+<span data-ttu-id="d21a5-130">Du kan fjerne de første tegn i en streng ved hjælp af følgende felt og formateringskode.</span><span class="sxs-lookup"><span data-stu-id="d21a5-130">You can remove the first characters of a string by using the following field and format code.</span></span>
 
 ```dos
 $FieldName:#..$
 ```
 
-<span data-ttu-id="c5d06-131">Her angiver `#` det antal tegn, der skal springes over.</span><span class="sxs-lookup"><span data-stu-id="c5d06-131">Here, `#` specifies the number of characters to skip.</span></span> <span data-ttu-id="c5d06-132">Hvis du f.eks. vil udskrive et SSCC-id-nummer (Serial Shipping Container Code), der ikke indeholder de første to tegn, skal du bruge `$LicensePlateId:2..$`.</span><span class="sxs-lookup"><span data-stu-id="c5d06-132">For example, to print a Serial Shipping Container Code (SSCC) license plate number that doesn't include the first two characters, use `$LicensePlateId:2..$`.</span></span> <span data-ttu-id="c5d06-133">I dette tilfælde udskrives id-nummeret 0011111111111222221 som "11111111111222221".</span><span class="sxs-lookup"><span data-stu-id="c5d06-133">In this case, the license plate number 0011111111111222221 will be printed as "11111111111222221."</span></span>
+<span data-ttu-id="d21a5-131">Her angiver `#` det antal tegn, der skal springes over.</span><span class="sxs-lookup"><span data-stu-id="d21a5-131">Here, `#` specifies the number of characters to skip.</span></span> <span data-ttu-id="d21a5-132">Hvis du f.eks. vil udskrive et SSCC-id-nummer (Serial Shipping Container Code), der ikke indeholder de første to tegn, skal du bruge `$LicensePlateId:2..$`.</span><span class="sxs-lookup"><span data-stu-id="d21a5-132">For example, to print a Serial Shipping Container Code (SSCC) license plate number that doesn't include the first two characters, use `$LicensePlateId:2..$`.</span></span> <span data-ttu-id="d21a5-133">I dette tilfælde udskrives id-nummeret 0011111111111222221 som "11111111111222221".</span><span class="sxs-lookup"><span data-stu-id="d21a5-133">In this case, the license plate number 0011111111111222221 will be printed as "11111111111222221."</span></span>
 
-## <a name="custom-datetime-formats"></a><span data-ttu-id="c5d06-134">Brugerdefinerede dato/klokkeslætsformater</span><span class="sxs-lookup"><span data-stu-id="c5d06-134">Custom date/time formats</span></span>
+## <a name="custom-datetime-formats"></a><span data-ttu-id="d21a5-134">Brugerdefinerede dato/klokkeslætsformater</span><span class="sxs-lookup"><span data-stu-id="d21a5-134">Custom date/time formats</span></span>
 
-<span data-ttu-id="c5d06-135">I følgende eksempel vises, hvordan du kan styre det format, der bruges til at udskrive datoer.</span><span class="sxs-lookup"><span data-stu-id="c5d06-135">The following example shows how you can control the format that is used to print dates.</span></span>
+<span data-ttu-id="d21a5-135">I følgende eksempel vises, hvordan du kan styre det format, der bruges til at udskrive datoer.</span><span class="sxs-lookup"><span data-stu-id="d21a5-135">The following example shows how you can control the format that is used to print dates.</span></span>
 
 ```dos
 $PrintedDate:dd-MM-yyyy$
 ```
 
-<span data-ttu-id="c5d06-136">I dette eksempel vil datoen 30. april 2020 blive udskrevet som "30-04-2020".</span><span class="sxs-lookup"><span data-stu-id="c5d06-136">In this example, the date April 30, 2020, will be printed as "30-04-2020."</span></span>
+<span data-ttu-id="d21a5-136">I dette eksempel vil datoen 30. april 2020 blive udskrevet som "30-04-2020".</span><span class="sxs-lookup"><span data-stu-id="d21a5-136">In this example, the date April 30, 2020, will be printed as "30-04-2020."</span></span>
 
-<span data-ttu-id="c5d06-137">Du kan få vist en komplet liste over de tilgængelige dato/klokkeslætsformater i [Brugerdefinerede dato/klokkeslætsformatstrenge ](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).</span><span class="sxs-lookup"><span data-stu-id="c5d06-137">For a complete list of the available date/time formats, see [Custom date and time format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).</span></span>
+<span data-ttu-id="d21a5-137">Du kan få vist en komplet liste over de tilgængelige dato/klokkeslætsformater i [Brugerdefinerede dato/klokkeslætsformatstrenge ](/dotnet/standard/base-types/custom-date-and-time-format-strings).</span><span class="sxs-lookup"><span data-stu-id="d21a5-137">For a complete list of the available date/time formats, see [Custom date and time format strings](/dotnet/standard/base-types/custom-date-and-time-format-strings).</span></span>
 
-## <a name="print-individual-lines-from-multiline-data"></a><span data-ttu-id="c5d06-138">Udskrive individuelle linjer fra data på flere linjer</span><span class="sxs-lookup"><span data-stu-id="c5d06-138">Print individual lines from multiline data</span></span>
+## <a name="print-individual-lines-from-multiline-data"></a><span data-ttu-id="d21a5-138">Udskrive individuelle linjer fra data på flere linjer</span><span class="sxs-lookup"><span data-stu-id="d21a5-138">Print individual lines from multiline data</span></span>
 
-<span data-ttu-id="c5d06-139">Hvis et datafelt indeholder flere linjer (dvs. linjer, der er adskilt af linjeskift), kan du udskrive en enkelt linje ved hjælp af følgende format.</span><span class="sxs-lookup"><span data-stu-id="c5d06-139">If a data field contains multiple lines (that is, lines that are separated by line breaks), you can print an individual line by using the following format.</span></span>
+<span data-ttu-id="d21a5-139">Hvis et datafelt indeholder flere linjer (dvs. linjer, der er adskilt af linjeskift), kan du udskrive en enkelt linje ved hjælp af følgende format.</span><span class="sxs-lookup"><span data-stu-id="d21a5-139">If a data field contains multiple lines (that is, lines that are separated by line breaks), you can print an individual line by using the following format.</span></span>
 
 ```dos
 $FieldName[#]$
 ```
 
-<span data-ttu-id="c5d06-140">Her er `#` det linjenummer, du vil udskrive.</span><span class="sxs-lookup"><span data-stu-id="c5d06-140">Here, `#` is the line number that you want to print.</span></span> <span data-ttu-id="c5d06-141">(Brug 1 til den første linje.)</span><span class="sxs-lookup"><span data-stu-id="c5d06-141">(Use 1 for the first line.)</span></span>
+<span data-ttu-id="d21a5-140">Her er `#` det linjenummer, du vil udskrive.</span><span class="sxs-lookup"><span data-stu-id="d21a5-140">Here, `#` is the line number that you want to print.</span></span> <span data-ttu-id="d21a5-141">(Brug 1 til den første linje.)</span><span class="sxs-lookup"><span data-stu-id="d21a5-141">(Use 1 for the first line.)</span></span>
 
-<span data-ttu-id="c5d06-142">Systemet har f.eks. et `AdditionalAddress`-felt, der indeholder følgende adresse med flere linjer:</span><span class="sxs-lookup"><span data-stu-id="c5d06-142">For example, your system has an `AdditionalAddress` field that stores the following multiline address:</span></span>
+<span data-ttu-id="d21a5-142">Systemet har f.eks. et `AdditionalAddress`-felt, der indeholder følgende adresse med flere linjer:</span><span class="sxs-lookup"><span data-stu-id="d21a5-142">For example, your system has an `AdditionalAddress` field that stores the following multiline address:</span></span>
 
-<span data-ttu-id="c5d06-143">Contoso Inc.</span><span class="sxs-lookup"><span data-stu-id="c5d06-143">Contoso Inc.</span></span>  
-<span data-ttu-id="c5d06-144">Gadenavn 123</span><span class="sxs-lookup"><span data-stu-id="c5d06-144">123 Street Name</span></span>  
-<span data-ttu-id="c5d06-145">En by, en stat</span><span class="sxs-lookup"><span data-stu-id="c5d06-145">Some City, Some State</span></span>
+<span data-ttu-id="d21a5-143">Contoso Inc.</span><span class="sxs-lookup"><span data-stu-id="d21a5-143">Contoso Inc.</span></span>  
+<span data-ttu-id="d21a5-144">Gadenavn 123</span><span class="sxs-lookup"><span data-stu-id="d21a5-144">123 Street Name</span></span>  
+<span data-ttu-id="d21a5-145">En by, en stat</span><span class="sxs-lookup"><span data-stu-id="d21a5-145">Some City, Some State</span></span>
 
-<span data-ttu-id="c5d06-146">Du kan udskrive denne adresse, en linje ad gangen, ved hjælp af følgende koder.</span><span class="sxs-lookup"><span data-stu-id="c5d06-146">You can print this address, one line at a time, by using the following codes.</span></span>
+<span data-ttu-id="d21a5-146">Du kan udskrive denne adresse, en linje ad gangen, ved hjælp af følgende koder.</span><span class="sxs-lookup"><span data-stu-id="d21a5-146">You can print this address, one line at a time, by using the following codes.</span></span>
 
-| <span data-ttu-id="c5d06-147">Kode</span><span class="sxs-lookup"><span data-stu-id="c5d06-147">Code</span></span> | <span data-ttu-id="c5d06-148">Tekst, der udskrives</span><span class="sxs-lookup"><span data-stu-id="c5d06-148">Text that is printed</span></span> |
+| <span data-ttu-id="d21a5-147">Kode</span><span class="sxs-lookup"><span data-stu-id="d21a5-147">Code</span></span> | <span data-ttu-id="d21a5-148">Tekst, der udskrives</span><span class="sxs-lookup"><span data-stu-id="d21a5-148">Text that is printed</span></span> |
 |---|---|
-| `$AdditionalAddress[1]$` | <span data-ttu-id="c5d06-149">Contoso Inc.</span><span class="sxs-lookup"><span data-stu-id="c5d06-149">Contoso Inc.</span></span> |
-| `$AdditionalAddress[2]$` | <span data-ttu-id="c5d06-150">Gadenavn 123</span><span class="sxs-lookup"><span data-stu-id="c5d06-150">123 Street Name</span></span> |
-| `$AdditionalAddress[3]$` | <span data-ttu-id="c5d06-151">En by, en stat</span><span class="sxs-lookup"><span data-stu-id="c5d06-151">Some City, Some State</span></span> |
+| `$AdditionalAddress[1]$` | <span data-ttu-id="d21a5-149">Contoso Inc.</span><span class="sxs-lookup"><span data-stu-id="d21a5-149">Contoso Inc.</span></span> |
+| `$AdditionalAddress[2]$` | <span data-ttu-id="d21a5-150">Gadenavn 123</span><span class="sxs-lookup"><span data-stu-id="d21a5-150">123 Street Name</span></span> |
+| `$AdditionalAddress[3]$` | <span data-ttu-id="d21a5-151">En by, en stat</span><span class="sxs-lookup"><span data-stu-id="d21a5-151">Some City, Some State</span></span> |
 
-## <a name="print-and-format-from-a-display-method"></a><span data-ttu-id="c5d06-152">Udskrive og formatere fra en visningsmetode</span><span class="sxs-lookup"><span data-stu-id="c5d06-152">Print and format from a display method</span></span>
+## <a name="print-and-format-from-a-display-method"></a><span data-ttu-id="d21a5-152">Udskrive og formatere fra en visningsmetode</span><span class="sxs-lookup"><span data-stu-id="d21a5-152">Print and format from a display method</span></span>
 
-<span data-ttu-id="c5d06-153">Du kan udskrive fra en visningsmetode ved hjælp af følgende format.</span><span class="sxs-lookup"><span data-stu-id="c5d06-153">You can print from a display method by using the following format.</span></span>
+<span data-ttu-id="d21a5-153">Du kan udskrive fra en visningsmetode ved hjælp af følgende format.</span><span class="sxs-lookup"><span data-stu-id="d21a5-153">You can print from a display method by using the following format.</span></span>
 
 ```dos
 $DisplayMethod()$
 ```
 
-<span data-ttu-id="c5d06-154">Du kan kombinere dette format med andre typer, der blev beskrevet tidligere i dette emne.</span><span class="sxs-lookup"><span data-stu-id="c5d06-154">You can combine this format with other types that were described earlier in this topic.</span></span> <span data-ttu-id="c5d06-155">Du har f.eks. en visningsmetode med navnet `DisplayListOfItemsNumbers()`, og du vil udskrive det første varenummer af denne metode.</span><span class="sxs-lookup"><span data-stu-id="c5d06-155">For example, you have a display method that is named `DisplayListOfItemsNumbers()`, and you want to print the first item number of this method.</span></span> <span data-ttu-id="c5d06-156">I dette tilfælde kan du bruge følgende kode.</span><span class="sxs-lookup"><span data-stu-id="c5d06-156">In this case, you can use the following code.</span></span>
+<span data-ttu-id="d21a5-154">Du kan kombinere dette format med andre typer, der blev beskrevet tidligere i dette emne.</span><span class="sxs-lookup"><span data-stu-id="d21a5-154">You can combine this format with other types that were described earlier in this topic.</span></span> <span data-ttu-id="d21a5-155">Du har f.eks. en visningsmetode med navnet `DisplayListOfItemsNumbers()`, og du vil udskrive det første varenummer af denne metode.</span><span class="sxs-lookup"><span data-stu-id="d21a5-155">For example, you have a display method that is named `DisplayListOfItemsNumbers()`, and you want to print the first item number of this method.</span></span> <span data-ttu-id="d21a5-156">I dette tilfælde kan du bruge følgende kode.</span><span class="sxs-lookup"><span data-stu-id="d21a5-156">In this case, you can use the following code.</span></span>
 
 ```dos
 $DisplayListOfItemsNumbers()[1]$
 ```
 
-## <a name="more-information-about-how-to-print-labels"></a><span data-ttu-id="c5d06-157">Flere oplysninger om, hvordan du udskriver etiketter</span><span class="sxs-lookup"><span data-stu-id="c5d06-157">More information about how to print labels</span></span>
+## <a name="more-information-about-how-to-print-labels"></a><span data-ttu-id="d21a5-157">Flere oplysninger om, hvordan du udskriver etiketter</span><span class="sxs-lookup"><span data-stu-id="d21a5-157">More information about how to print labels</span></span>
 
-<span data-ttu-id="c5d06-158">Du kan få flere oplysninger om, hvordan du kan opsætte og udskrive etiketter, i [Aktivere udskrivning af id-etiket](tasks/license-plate-label-printing.md).</span><span class="sxs-lookup"><span data-stu-id="c5d06-158">For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).</span></span>
+<span data-ttu-id="d21a5-158">Du kan få flere oplysninger om, hvordan du kan opsætte og udskrive etiketter, i [Aktivere udskrivning af id-etiket](tasks/license-plate-label-printing.md).</span><span class="sxs-lookup"><span data-stu-id="d21a5-158">For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
