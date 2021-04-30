@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a81e5c56e219ec9d7fb95ac6cc053fb13601f0f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac4c15b4dbf60f378ba325adedb377e12585481a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801161"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889950"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurere integration med Finance
 
@@ -29,7 +29,7 @@ ms.locfileid: "5801161"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Hvis du vil integrere Dynamics 365 Human Resources med Dynamics 365 Finance, kan du bruge skabelonen Human Resources til Finance i [Dataintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator). Skabelonen Human Resources til Finance aktiverer dataflow for job, stillinger og arbejdere. Skabelonen gør det muligt at overføre data fra Human Resources til Finance, men tillader ikke, at data overføres fra Finance til Human Resources.
+Hvis du vil integrere Dynamics 365 Human Resources med Dynamics 365 Finance, kan du bruge skabelonen Human Resources til Finance i [Dataintegrator](/powerapps/administrator/data-integrator). Skabelonen Human Resources til Finance aktiverer dataflow for job, stillinger og arbejdere. Skabelonen gør det muligt at overføre data fra Human Resources til Finance, men tillader ikke, at data overføres fra Finance til Human Resources.
 
 ![Integrationsflow fra Human Resources til Finance](./media/hr-admin-integration-finance-flow.png)
 
@@ -248,7 +248,7 @@ Ved integration fra Human Resources til Finance vil integrationen forsøge at sa
 
 Dette problem kan opstå for **Arbejder**, som bruger **Personalenummeret** til at foretage sammenligningen, og **Stillinger**. Der bruges ikke nummerserier til job. Det betyder, at hvis det samme job-id findes i både Human Resources og Finance, overskriver Human Resources-oplysningerne oplysningerne i Dynamics 365 Finance. 
 
-Hvis du vil undgå problemer med identiske id'er, kan du enten føje et præfiks til [nummerserien](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) eller angive et startnummer på nummerserien, der ligger ud over området for det andet system. 
+Hvis du vil undgå problemer med identiske id'er, kan du enten føje et præfiks til [nummerserien](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) eller angive et startnummer på nummerserien, der ligger ud over området for det andet system. 
 
 Det lokations-id, der bruges til en arbejderadresse, er ikke del af en nummerserie. Når en arbejders adresse integreres fra Human Resources til Finance, kan der blive oprettet en dublet af adresseposten, hvis arbejderadressen allerede findes i Finance. 
 

@@ -2,7 +2,8 @@
 title: Konfigurer ER-formater for at bruge de parametre, der er angivet for den enkelte juridiske enhed
 description: I dette emne forklares det, hvordan du kan konfigurere Elektroniske rapporteringsformater til at bruge de parametre, der er angivet for den enkelte juridiske enhed.
 author: NickSelin
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 16eab3ffa7d4a780ec9709f5c8a5c263b1e75365
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3802675b2fe0615f4c2ad682462a233c67f18f1a
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751172"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853487"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurer ER-formater for at bruge de parametre, der er angivet for den enkelte juridiske enhed
 
@@ -28,7 +29,7 @@ ms.locfileid: "5751172"
 
 ## <a name="overview"></a>Oversigt
 
-I mange af de Elektroniske rapporteringsformater, du kommer til at designe, skal du filtrere data ved hjælp af et sæt værdier, der er specifikke for de enkelte juridiske enheder i din forekomst (f.eks. et sæt momskoder til filtrering af momstransaktioner). Når filtrering af denne type i øjeblikket er konfigureret i et ER-format, bruges de værdier, der er afhængige af den juridiske enhed (f.eks. momskoder) i udtryk for ER-formatet, til at angive data filtreringsregler. ER-formatet er derfor gjort specifikt for den juridiske enheds, og hvis du vil generere de nødvendige rapporter, skal du oprette afledte kopier af det oprindelige ER-format for hver juridisk enhed, hvor du skal køre ER-formatet. Hvert afledte ER-format skal redigeres for at samle de specifikke værdier for juridiske i det, og omorganiseres, når den oprindelige (basis)version er blevet opdateret, eksporteret fra et testmiljø og importeret til et produktionsmiljø, når det skal udrulles med henblik på anvendelse i produktionen osv. Vedligeholdelse af denne type af konfigurerede ER-løsninger er derfor temmelig kompliceret og tidskrævende af flere årsager:
+I mange af de Elektroniske rapporteringsformater, du kommer til at designe, skal du filtrere data ved hjælp af et sæt værdier, der er specifikke for de enkelte juridiske enheder i din forekomst (f.eks. et sæt momskoder til filtrering af momstransaktioner). Når filtrering af denne type i øjeblikket er konfigureret i et ER-format, bruges de værdier, der er afhængige af den juridiske enhed (f.eks. momskoder) i udtryk for ER-formatet, til at angive data filtreringsregler. ER-formatet er derfor gjort specifikt for den juridiske enheds, og hvis du vil generere de nødvendige rapporter, skal du oprette afledte kopier af det oprindelige ER-format for hver juridisk enhed, hvor du skal køre ER-formatet. Hvert afledte ER-format skal redigeres for at samle de specifikke værdier for juridiske i det, og omorganiseres, når den oprindelige (basis)version er blevet opdateret, eksporteret fra et testmiljø og importeret til et produktionsmiljø, når det skal udrulles med henblik på anvendelse i produktionen osv. Vedligeholdelse af denne type af konfigurerede ER-løsninger er derfor kompliceret og tidskrævende af flere årsager:
 
 -   Jo flere juridiske enheder der er, des flere ER-formatkonfigurationer skal der vedligeholdes.
 -   Vedligeholdelse af ER-konfigurationer kræver, at erhvervsbrugere er bekendt med ER.
@@ -86,7 +87,7 @@ I dette eksempel skal du oprette en konfiguration til eksempelfirmaet Litware, I
 
     ![Datakilden Model.Data.Opsummering med liste over momstransaktioner](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
-    Det beregnede felt **Model.Data.Opsummering** er konfigureret, så det indeholder et ET-udtryk. Bemærk, at momskoderne codes (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD**, and **InVAT0**) er hardcoded ind i denne konfiguration. Derfor er dette ER-format afhængigt af den juridiske enhed, hvor disse momskoder er blevet konfigureret.
+    Det beregnede felt **Model.Data.Opsummering** er konfigureret, så det indeholder et ET-udtryk. Momskoderne (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** og **InVAT0**) er hardcoded ind i denne konfiguration. Derfor er dette ER-format afhængigt af den juridiske enhed, hvor disse momskoder er blevet konfigureret.
 
     ![Det beregnede felt Model.Data.Opsummering.Niveau med hardcodede momskoder](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
@@ -135,7 +136,7 @@ Derefter skal du tilføje et nyt ER-fasttekstformat. Værdierne i dette fastteks
 14. Vælg en post for **Ingen beskatning**.
 15. Klik på feltet **Etikette**.
 16. Vælg **Oversæt**.
-17. I panelet **Tekstoversættelse** i feltet **Etikette-ID** skal du indtaste **LBL_LEVELENUM_NO**.
+17. I panelet **Tekstoversættelse** i feltet **Etiket-id** skal du indtaste **LBL_LEVELENUM_NO**.
 18. I feltet **Tekst i standardsprog** skal du indtaste **Ingen beskatning**.
 19. I feltet **Sprog** skal du vælge **DE**.
 20. I feltet **Oversat tekst** skal du indtaste **keine Besteuerung**.
@@ -153,12 +154,12 @@ Derefter skal du tilføje en ny datakilde for at angive, hvordan erhvervsbrugere
 1.  På fanen **Tilknytning** skal du vælge **Tilføj**.
 2.  Vælg **Fasttekst-format\Opslag**.
 
-    Du har netop identificeret, at de enkelte regler, som erhvervsbrugere angiver for genkendelse af beskatningsniveau, skal returnere en værdi i et ER-fasttekstformat. Bemærk, at datakildetypen **Opslag** kan tilgås under blokkene **Datamodel** og **Dynamics 365 for Operations** ud over blokken **Fasttekstformat**. Du kan derfor bruge fasttekst for ER-datamodeller og programmer til at angive den type værdier, der skal returneres for datakilder af den pågældende type.
+    Du har netop identificeret, at de enkelte regler, som erhvervsbrugere angiver for genkendelse af beskatningsniveau, skal returnere en værdi i et ER-fasttekstformat. Bemærk, at datakildetypen **Opslag** kan tilgås under blokkene **Datamodel** og **Dynamics 365 for Operations** ud over blokken **Fasttekstformat**. Du kan derfor bruge fasttekst for ER-datamodeller og programmer til at angive den type værdier, der skal returneres for datakilder af den pågældende type. Du kan få mere at vide om datakilderne til **Opslag** i [Konfigurere opslagsdatakilder til at bruge den ER-programspecifikke parameterfunktion](er-lookup-data-sources.md).
     
 3.  I feltet **Navn** skal du angive **Vælger**.
 4.  I feltet **Fasttekstformat** skal du vælge **Liste med beskatningsniveauer**.
 
-    Du har netop angivet, at for hver regel, der er angivet i denne datakilde, skal en erhvervsbruger vælge en af værdierne fra fasttekstformatet **Listen over beskatningsniveauer** som en returneret værdi.
+    Du har angivet, at for hver regel, der er angivet i denne datakilde, skal en erhvervsbruger vælge en af værdierne fra fasttekstformatet **Listen over beskatningsniveauer** som en returneret værdi.
     
 5.  Vælg **Rediger opslag**.
 6.  Vælg **Kolonner**.
@@ -190,7 +191,7 @@ Derefter skal du tilføje en ny datakilde for at angive, hvordan erhvervsbrugere
     
     ![Formatdesignerside med ny datakilde](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
-    Bemærk, at evalueringen af konfigurerede regler afhænger af datatypen for de felter, der er valgt til at skulle definere betingelserne for disse regler. Når du vælger et felt, der er konfigureret som et felt af datatypen **Numerisk** eller **data**, vil kriterierne være forskellige fra de kriterier, der blev beskrevet tidligere for datatypen **Streng**. I felterne **Numerisk** og **Dato** skal reglen angives som et værdiinterval. Reglens betingelse betragtes derefter som opfyldt, når en værdi, der overføres til datakilden, ligger inden for det konfigurerede interval.
+    Evalueringen af konfigurerede regler afhænger af datatypen for de felter, der er valgt til at skulle definere betingelserne for disse regler. Når du vælger et felt, der er konfigureret som et felt af datatypen **Numerisk** eller **data**, vil kriterierne være forskellige fra de kriterier, der blev beskrevet tidligere for datatypen **Streng**. I felterne **Numerisk** og **Dato** skal reglen angives som et værdiinterval. Reglens betingelse betragtes derefter som opfyldt, når en værdi, der overføres til datakilden, ligger inden for det konfigurerede interval.
     
     I følgende illustration vises et eksempel på denne type opsætning. Ud over feltet **Model.Data.Moms.Kode** af datatypen **Streng** er det feltet **Model.Moms.Opsummering.Grundlag** for datatypen **Reel**, der bruges til at angive betingelser for en opslagsdatakilde.
     
@@ -216,7 +217,7 @@ Da erhvervsbrugere kan bruge forskellige sprog til at angive juridisk enheds-afh
 2.  Vælg **Rediger**.
 3.  Klik på feltet **Etikette**.
 4.  Vælg **Oversæt**.
-5.  I panelet **Tekstoversættelse** i feltet **Etikette-ID** skal du indtaste **LBL_SELECTOR_DS**.
+5.  I panelet **Tekstoversættelse** i feltet **Etiket-id** skal du indtaste **LBL_SELECTOR_DS**.
 6.  I feltet **Tekst i standardsprog** skal du angive **Vælg beskatningsniveau efter momskode**.
 7.  I feltet **Sprog** skal du vælge **DE**.
 8.  I feltet **Oversat tekst** skal du angive **Steuerebene für Steuerkennzeichen auswählen**.
@@ -287,7 +288,7 @@ Derefter skal du redigere det eksisterende beregnede felt, så det bruger den ko
 
 ## <a name="export-completed-version-of-modified-format"></a>Eksportér den fuldførte version af et tilpasset format
 
-1.  I konfigurationstræet skal du vælge elementet **Format for at lære, hvordan man slår LE-data op**.
+1.  I konfigurationstræet skal du vælge elementet **Format for at lære, hvordan du søger efter LE-data**.
 2.  På oversigtspanelet **Versioner** skal du vælge den post, der har statussen **Fuldført**.
 3.  Vælg **Udveksling**.
 4.  Vælg **Eksporter som XML-fil**.
@@ -306,7 +307,9 @@ Du kan få mere at vide om konfigurationen af ER-formatet **Format til at lære,
 
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
-[Konfigurer parametrene for et ER-format for hver juridisk enhed](er-app-specific-parameters-set-up.md)
+[Konfigurere parametrene for et ER-format for hver juridisk enhed](er-app-specific-parameters-set-up.md)
+
+[Konfigurere opslagsdatakilder til at bruge den ER-programspecifikke parameterfunktion](er-lookup-data-sources.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

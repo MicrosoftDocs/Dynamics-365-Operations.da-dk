@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791941"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857267"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -142,6 +142,9 @@ UWP, for så vidt angår eksterne enheder, er relateret til understøttelse af P
 ### <a name="keyboard-wedge"></a>Kreditkortlæser
 
 Enheder til kreditkortlæsning sender data til computeren, som om dataene blev indtastet på et tastatur. Som standard vil feltet der er aktivt på POS-enheden, derfor modtage de data, der er scannet eller ført gennem kortlæseren. Denne funktionsmåde kan i nogle tilfælde medføre, at den forkerte type data scannes ind i det forkerte felt. En stregkode scannes f.eks. ind i et felt, der er beregnet til indtastning af kreditkortdata. I mange tilfælde er der logik i POS-enheden, der bestemmer, om de data, der er scannet eller ført gennem kortlæser, er en stregkode eller et kort, der er ført gennem kortlæseren. Derfor håndteres dataene korrekt. Men når enhederne er angivet som OPOS i stedet for som enheder til kreditkortlæsning, er der mere kontrol med, hvordan dataene fra disse enheder kan bruges, fordi der er større "kendskab" til den enhed, som dataene stammer fra. F.eks. genkendes data fra en stregkodescanner automatisk som en stregkode, og den tilknyttede post i databasen findes lettere og hurtigere, end hvis en søgning med generisk streng blev brugt, som det er tilfældet med enheder til kreditkortlæsning.
+
+> [!NOTE]
+> Når der bruges kreditkortlæsere i POS, skal de programmeres til at sende en vognretur, eller en **Enter**-hændelse efter det sidste scannede tegn. Hvis denne konfiguration ikke er udført, fungerer kreditkortlæsere ikke korrekt. Læs dokumentationen fra enhedsproducenten for at få oplysninger om, hvordan du tilføjer hændelsen med vognretur.  
 
 ### <a name="native-printer"></a>Indbygget printer
 

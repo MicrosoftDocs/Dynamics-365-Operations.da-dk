@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 84c8c782b917850267c34696f3b2afa607118d84
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753613"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894046"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Udskyde udførelse af XML-elementer i ER-formater
 
@@ -44,7 +44,7 @@ Indstillingen **Udskudt udførelse** understøttes ikke for XML-elementer, der f
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Udskyde udførelse af et XML-element i et ER-format
 
-I følgende fremgangsmåde forklares det, hvordan en bruger i systemadministratoren eller den funktionelle konsulent i elektronisk rapportering [rolle](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) kan konfigurere et ER-format, der indeholder et XML-element, hvor udførelsessekvensen er forskellig fra sekvensen i formathierarkiet.
+I følgende fremgangsmåde forklares det, hvordan en bruger i systemadministratoren eller den funktionelle konsulent i elektronisk rapportering [rolle](../sysadmin/tasks/assign-users-security-roles.md) kan konfigurere et ER-format, der indeholder et XML-element, hvor udførelsessekvensen er forskellig fra sekvensen i formathierarkiet.
 
 Disse trin kan udføres i firmaet **USMF** i Microsoft Dynamics 365 Finance.
 

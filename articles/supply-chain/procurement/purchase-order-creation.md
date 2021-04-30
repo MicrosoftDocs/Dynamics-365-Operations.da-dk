@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825392"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909150"
 ---
 # <a name="create-purchase-orders"></a>Opret indkøbsordrer
 
@@ -65,7 +65,7 @@ Nogle gange kan du opdele det antal, du har bestilt, så forskellige dele af det
 Gebyrer kan føjes automatisk til indkøbsordrelinjer, hvis der er oprettet automatiske gebyrer for kreditoren eller kreditorgebyrgruppen og for varen eller varegebyrgruppen. Dog mere typisk tilføjes gebyrer manuelt på ordrelinjeniveau. Når du vil tilføje et gebyr, skal du åbne siden **Vedligehold gebyrer** ved hjælp af handlingen **Vedligehold gebyrer** i menuen **Finans** i visningen **Linjer**. Fordelen ved at tilføje gebyrer direkte på ordrelinjeniveau er, at gebyret kan tildeles som en lageromkostning. Du kan konfigurere gebyrkoder til kontoproduktomkostninger ved at bruge debetindstillingen **Vare**. Disse typer af gebyrer, der skal fordeles fra indkøbsordrehovedets linjer, før ordren kan bekræftes. For eksempel kan du fordele gebyrer, der er baseret på antallet på hver linje. Gebyrkategorien påvirker også, hvordan gebyrer efterkalkuleres. For eksempel angiver faste gebyrer et fast beløb, og procentbaserede gebyrer beregnes som en procentdel af nettobeløbet for ordrelinjen. IO'er kan tildeles til en belastning, og belastningen kan indeholde et overslag over de forventede udgifter til transportomkostningerne. Du kan tildele denne udgift fra belastningen tilbage til IO-linjerne.
 
 ## <a name="purchase-order-actions"></a>Indkøbsordrehandlinger
-Når du har føjet hovedet og linjerne til indkøbsordren, skal du ofte udføre yderligere trin, før ordren er klar til at blive bekræftet. Da der findes så mange muligheder, kan det være nyttigt at bruge [Handlingssøgning](../../fin-and-ops/get-started/action-search.md) til at finde det relevante menupunkt.  
+Når du har føjet hovedet og linjerne til indkøbsordren, skal du ofte udføre yderligere trin, før ordren er klar til at blive bekræftet. Da der findes så mange muligheder, kan det være nyttigt at bruge [Handlingssøgning](../../fin-ops-core/fin-ops/get-started/action-search.md) til at finde det relevante menupunkt.  
 
 Du kan konfigurere produkter i ordren, så de får supplerende varer. Supplerende varer er varer, der skal eller kan købes sammen med andre produkter. Supplerende produkter kan tilføjes gratis, som ledsageprodukter, eller du vil muligvis kunne afgøre, om du vil føje til ordren eller ej. Når hver ordrelinje er tilføjet, kan du gennemse de supplerende varer. Dog vil det nok være mere praktisk at gennemgå og tilføje relevante supplerende varer til alle ordrelinjer ved hjælp af siden **Supplerende varer**, som du kan åbne fra handlingsruden.  
 

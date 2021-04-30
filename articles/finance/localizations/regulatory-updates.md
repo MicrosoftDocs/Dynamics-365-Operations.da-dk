@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c5e8f4e7b27cdffe97d73e67d33f023155b60ef0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822751"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890770"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -25,7 +25,7 @@ ms.locfileid: "5822751"
 
 I dette emne beskrives de lovmæssige opdateringer, der er planlagt og frigivet i Dynamics 365 Finance-understøttede lokaliseringer. Leveringstidslinjer kan blive ændret og planlagte funktioner kan være anderledes eller måske ikke frigivet. Yderligere oplysninger findre du i [Microsofts politik](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Lovgivningsmæssige opdateringer er funktioner, som integreres med henblik på at understøtte ny eller ændret lovgivning, der er specifik for det enkelte land/område. Du kan finde flere oplysninger om planlagte og frigivne funktioner, der gælder specifikt for det enkelte land/område, i [Produktbemærkninger til Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index).
+Lovgivningsmæssige opdateringer er funktioner, som integreres med henblik på at understøtte ny eller ændret lovgivning, der er specifik for det enkelte land/område. Du kan finde flere oplysninger om planlagte og frigivne funktioner, der gælder specifikt for det enkelte land/område, i [Produktbemærkninger til Dynamics 365 og Power Platform](/business-applications-release-notes/index).
 
 Microsoft bestræber sig på at gennemføre nye lovkrav så tidligt som muligt. Den faktiske leveringsdato afhænger af datoen for lovens offentliggørelse, de lokale myndigheders tilvejebringelse af deltaljerede oplysninger om lovkravene, valideringsværktøjernes tilgængelighed samt af ændringens omfang og kompleksitet.
 

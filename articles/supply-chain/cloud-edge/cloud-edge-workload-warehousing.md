@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832388"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899161"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832388"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Lagerudførelse på skalaenheder
 
-Med denne funktion kan skalaenheder køre udvalgte processer fra funktionerne til lokationsstyring. Enheder i skyskala kører deres arbejdsbyrder i skyen ved at bruge dedikeret behandlingskapacitet i det valgte Microsoft Azure-område. I forbindelse med kantskalaenheder kan du køre nogle arbejdsbyrder uafhængigt i det lokale miljø, også selvom skalaenhederne midlertidigt afbrydes fra skyen.
+Med denne funktion kan skalaenheder køre udvalgte processer fra funktionerne til lokationsstyring.
 
 I dette emne kaldes udførelse af lokationsstyring på et lagersted, der er defineret som en skalaenhed, for et *Lagerudførelsessystem* (*WES*).
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Du skal have en Dynamics 365 Supply Chain Management-hub og en skalaenhed, der er implementeret med arbejdsbyrden for lokationsstyring. Du kan finde flere oplysninger om arkitektur og udrulningsprocesser under [Sky- og kantskalaenheder til arbejdsbyrder i produktion og lokationsstyring](cloud-edge-landing-page.md).
+Du skal have en Dynamics 365 Supply Chain Management-hub og en skalaenhed, der er implementeret med arbejdsbyrden for lokationsstyring. Du kan finde flere oplysninger om arkitektur og udrulningsprocesser under [Bruge skalaenheder til at øge modstandsdygtigheden i arbejdsbyrder for styring af forsyningskæder](cloud-edge-landing-page.md).
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>Sådan fungerer WES-arbejdsbyrde på skalaenheder
 
@@ -297,6 +297,8 @@ På arbejdsbyrden i skalaenheder kan du administrere følgende batchjob i **Loka
 - Behandle bølgetabelposter
 - Meddelelsesprocessor for lagerstedshub til skalaenhed
 - Foretag behandling af anmodninger om opdatering af antal for lagerstedsordrelinjer
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

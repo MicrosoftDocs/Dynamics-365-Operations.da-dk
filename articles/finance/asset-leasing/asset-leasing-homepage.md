@@ -2,11 +2,11 @@
 title: Hjemmeside for aktivleasing
 description: Dette emne giver et overblik over Aktivleasing-dokumentationen for og links til bestemte emner.
 author: moaamer
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 532601d08d52e9edaf97253df4efd2fc10985dc0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 202a353929fbcd8d81593db155d7bfeebb8f3021
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816142"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898104"
 ---
 # <a name="asset-leasing-home-page"></a>Hjemmeside for aktivleasing
 
@@ -28,7 +28,9 @@ ms.locfileid: "5816142"
 
 Dette emne indeholder en liste over de emner i hjælp, der er tilgængelige for aktivleasing, og som indeholder hyperlinks til bestemte emner. 
 
-Aktivleasing er et avanceret funktion til styring, sporing og automatisering af finanstransaktioner for leasede aktiver i Microsoft Dynamics 365 Finance. Aktivleasing overholder internationale regnskabsstandarder (IFRS 16) og US GAAP-standarder (ASC 842). Aktivleasing registrerer og behandler leasingoplysninger og opretter kladdeposteringer for leasingens levetid fra den første registrering over månedlige kladdeposteringer til værdiforringelsen og afslutningen af leasingen.  
+Aktivleasing er et avanceret funktion til styring, sporing og automatisering af finanstransaktioner for leasede aktiver i Microsoft Dynamics 365 Finance. Aktivleasing overholder internationale regnskabsstandarder (IFRS 16) og US GAAP-standarder (ASC 842). Aktivleasing registrerer og behandler leasingoplysninger og opretter kladdeposteringer for leasingens levetid fra den første registrering over månedlige kladdeposteringer til værdiforringelsen og afslutningen af leasingen.
+
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet i **Funktionsstyring** skal du finde og vælge den funktion, der hedder **Aktivleasing**, og derefter vælge knappen **Aktivér nu**.
 
 ## <a name="asset-leasing-topics"></a>Aktivleasing, emner
 Følgende emne kan hjælpe dig med at konfigurere og bruge aktivleasing. 
@@ -82,7 +84,7 @@ I dette emne beskrives de rapporter, der er tilgængelige for aktivleasing.
 
 ### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-frigivelsesplaner](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
+Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) for at se, hvilke nye funktioner der er planlagt. 
 
 ### <a name="blogs"></a>Blogs
 

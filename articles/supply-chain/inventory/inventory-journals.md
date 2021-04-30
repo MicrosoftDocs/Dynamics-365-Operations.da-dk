@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a94c5371db10fa4f0090f2d177b1a01233ab0f30
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fe02a7b785b7d53763f314eec4d9b23fe723173a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826029"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910179"
 ---
 # <a name="inventory-journals"></a>Lagerkladder
 
@@ -95,7 +95,7 @@ Dataenheder understøtter følgende typer integrationsmuligheder:
 -    Synkron service (OData)
 -  Asynkron integration
 
-Du kan finde flere oplysninger under [Dataenheder](../../dev-itpro/data-entities/data-entities.md).
+Du kan finde flere oplysninger under [Dataenheder](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > Ikke alle lagerkladder er OData-aktiverede, så du kan ikke bruge Excel-dataconnectoren til at hente data, der er udgivet, opdateret og importeret tilbage til Supply Chain Management. 
@@ -113,7 +113,7 @@ Disse to lagerkladder understøtter kun scenariet *Initialisere lager* som en de
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Dataenheder](../../dev-itpro/data-entities/data-entities.md)
+[Dataenheder](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 4885caf017fa0f9d36d293fa32aad53c21d3f162
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753570"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894070"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Designe en ny ER-konfigurationer til generering af rapporter i Word-format
 
@@ -38,7 +38,7 @@ Hvis du vil bruge et Word-dokument som skabelon til rapporter i Word-format, kan
 Løsningens ER-formatkomponent skal indeholde formatelementet **Excel\\Fil**, og det pågældende formatelement skal knyttes til Word-dokumentet, der skal bruges som skabelon for genererede rapporter under kørslen. Hvis du vil konfigurere ER-formatkomponenten, skal du åbne [kladde](general-electronic-reporting.md#component-versioning)-versionen af den oprettede ER-konfiguration i ER-formatdesigneren. Tilføj derefter elementet **Excel\\Fil**, knyt Word-skabelonen til det ER-format, der kan redigeres, og knyt skabelonen til det **Excel\\File**-element, du har tilføjet.
 
 > [!NOTE]
-> Når du manuelt tilknytter en skabelon, skal du bruge en [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), der er [konfigureret](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) i ER-parametrene til lagring af skabeloner i ER-formater.
+> Når du manuelt tilknytter en skabelon, skal du bruge en [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), der er [konfigureret](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) i ER-parametrene til lagring af skabeloner i ER-formater.
 
 ![Tilknytte en skabelon på siden Formatdesigner](./media/er-design-configuration-word-image3.gif)
 
@@ -46,11 +46,11 @@ Du kan tilføje indlejrede elementer **Excel\\Område** og **Excel\\Celle** elem
 
 ![Tilføjelse af indlejrede element på siden Formatdesigner](./media/er-design-configuration-word-image4.gif)
 
-Når du gemmer ændringerne i ER-formatet på designtidspunktet, gemmes den hierarkiske formatstruktur i den tilknyttede Word-skabelon som en [brugerdefineret XML-del](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med navnet **Rapport**. Du skal åbne den ændrede skabelon, hente den fra Finans, gemme den lokalt og åbne den i Word-skrivebordsapplikationen. I følgende illustration vises den lokalt gemte eksempelskabelon til kontrolrapporten, der indeholder den brugerdefinerede XML-del **Rapport**.
+Når du gemmer ændringerne i ER-formatet på designtidspunktet, gemmes den hierarkiske formatstruktur i den tilknyttede Word-skabelon som en [brugerdefineret XML-del](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med navnet **Rapport**. Du skal åbne den ændrede skabelon, hente den fra Finans, gemme den lokalt og åbne den i Word-skrivebordsapplikationen. I følgende illustration vises den lokalt gemte eksempelskabelon til kontrolrapporten, der indeholder den brugerdefinerede XML-del **Rapport**.
 
 ![Visning af eksempelrapportskabelon i Word-skrivebordsapplikationen](./media/er-design-configuration-word-image5.gif)
 
-Når bindinger af formatelementerne **Excel\\Område** og **Excel\\Celle** køres, kommer de data, som hver binding leverer, ind i det genererede Word-dokument som et individuelt felt i den brugerdefinerede XML-del **Rapport**. Hvis du vil angive værdierne fra felterne i den brugerdefinerede XML-del i et genereret dokument, skal du føje de relevante Word-[indholdskontrolelementer](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) til Word-skabelonen, så de fungerer som pladsholdere for data, der udfyldes under kørslen. Hvis du vil angive, hvordan indholdskontrolelementer skal udfyldes, skal du knytte alle indholdskontroller til det relevante felt i den brugerdefinerede XML-del **Rapport**.
+Når bindinger af formatelementerne **Excel\\Område** og **Excel\\Celle** køres, kommer de data, som hver binding leverer, ind i det genererede Word-dokument som et individuelt felt i den brugerdefinerede XML-del **Rapport**. Hvis du vil angive værdierne fra felterne i den brugerdefinerede XML-del i et genereret dokument, skal du føje de relevante Word-[indholdskontrolelementer](/office/client-developer/word/content-controls-in-word) til Word-skabelonen, så de fungerer som pladsholdere for data, der udfyldes under kørslen. Hvis du vil angive, hvordan indholdskontrolelementer skal udfyldes, skal du knytte alle indholdskontroller til det relevante felt i den brugerdefinerede XML-del **Rapport**.
 
 ![Tilføjelse og tilknytning af indholdskontrolelementer i Word-skrivebordsapplikationen](./media/er-design-configuration-word-image6.gif)
 

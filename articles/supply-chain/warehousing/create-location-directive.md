@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838388"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911290"
 ---
 # <a name="work-with-location-directives"></a>Arbejde med lokationsvejledninger
 
@@ -44,8 +44,8 @@ Før du kan oprette en lokationsvejledning, skal du følge disse trin for at sik
 1. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lagersteder**.
 1. Opret et lagersted.
 1. På oversigtspanelet **Lagersted** skal du for indstillingen **Brug lagerstedsstyringsprocesser** vælge *Ja*.
-1. Opret lokationer, lokationstyper, lokationsprofiler og lokationsformater. Yderligere oplysninger finder du i afsnittet [Konfigurere lokationer i et WMS-aktiveret lagersted](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Opret steder, zoner og zonegrupper. Yderligere oplysninger finder du i [Konfigurere lagersted](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) og [Konfigurere lokationer i et WMS-aktiveret lagersted](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Opret lokationer, lokationstyper, lokationsprofiler og lokationsformater. Yderligere oplysninger finder du i afsnittet [Konfigurere lokationer i et WMS-aktiveret lagersted](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Opret steder, zoner og zonegrupper. Yderligere oplysninger finder du i [Konfigurere lagersted](../../commerce/channels-setup-warehouse.md) og [Konfigurere lokationer i et WMS-aktiveret lagersted](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Arbejdsordretyper for lokationsvejledninger
 
@@ -143,7 +143,7 @@ Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbe
 - **Vejledningskode** – Vælg den vejledningskode, der skal knyttes til en arbejds- eller genopfyldningsskabelon. På siden **Vejledningskode** kan du oprette nye koder, som kan bruges til at oprette forbindelse mellem arbejdsskabeloner eller genopfyldningsskabeloner og lokationsvejledninger. Vejledningskoder kan også bruges til at oprette forbindelse mellem enhver arbejdsskabelonlinje og en lokationsvejledning (f.eks. lagerporten eller den midlertidige lagerlokation).
 
     > [!TIP]
-    > Hvis der er angivet en vejledningskode, søger systemet ikke i lokationsvejledninger efter sekvensnummer, når der skal genereres arbejde. Det vil i stedet søge efter vejledningskode. På denne måde kan du være mere præcis om den lokationsskabelon, der bruges til et bestemt trin i en arbejdsskabelon , f.eks. trinnet for midlertidig lagring af materialer.
+    > Hvis der er angivet en vejledningskode, søger systemet ikke i lokationsvejledninger efter sekvensnummer, når der skal genereres arbejde. Det vil i stedet søge efter vejledningskode. På denne måde kan du være mere præcis om den lokalitetsvejledning, der bruges til et bestemt trin i en arbejdsskabelon , f.eks. trinnet for midlertidig lagring af materialer.
 
 - **Flere SKU'er** – Angiv denne indstilling til *Ja* for at bruge flere lagerenheder (SKU'er) på en lokation. F.eks. skal flere SKU'er aktiveres for placeringen af lagerporten. Hvis du aktiverer flere SKU'er, vil læg på lager-lokationen blive angivet i arbejde som forventet. Men læg på lager-lokationen kan dog kun håndtere en læg-flere-varer-på-lager (hvis arbejde indeholder forskellige SKU'er, der skal plukkes og placeres). Den kan ikke håndtere en enkelt SKU-læg-på-lager. Hvis du angiver denne indstilling til *Nej*, angives lokationen kun, hvis dit læg-på-lager kun har én slags SKU.
 
@@ -249,7 +249,7 @@ I dette scenarie skal du definere to handlinger i lokationsvejledningen. Den fø
 
 ## <a name="next-step"></a>Næste trin
 
-Når du opretter lokationsvejledninger, kan du knytte hver vejledningskode til en arbejdsskabelonkode med henblik på arbejdsoprettelse. Få flere oplysninger under [Styre lagerarbejde ved hjælp af arbejdsskabeloner og lokationsvejledninger](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Når du opretter lokationsvejledninger, kan du knytte hver vejledningskode til en arbejdsskabelonkode med henblik på arbejdsoprettelse. Få flere oplysninger under [Styre lagerarbejde ved hjælp af arbejdsskabeloner og lokationsvejledninger](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

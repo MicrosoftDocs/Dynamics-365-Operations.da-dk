@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840046"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894877"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Start her med elektronisk fakturering for Mexico
 
@@ -86,7 +86,7 @@ Du kan oprette en ny version, hvis f.eks. URL-adresser skal opdateres. Du kan fi
 
     ![Åbne siden Formatdesigner](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Du kan bruge siden **Formatdesigner** til at redigere og få vist filkonfigurationer for ER-formatet. Du kan finde flere oplysninger i [Oprette konfigurationer for elektroniske dokumenter](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Du kan bruge siden **Formatdesigner** til at redigere og få vist filkonfigurationer for ER-formatet. Du kan finde flere oplysninger i [Oprette konfigurationer for elektroniske dokumenter](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Siden Formatdesigner](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
@@ -161,7 +161,7 @@ Hvis du vil konfigurere elektronisk fakturering i Finance, skal du fuldføre dis
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Importere ER-datamodellen, ER-datamodeltilknytningen og kontekstkonfigurationerne for CFDI-fakturaer
 
 1. Log på Finance.
-2. Gå til arbejdsområdet **Elektronisk rapportering**, og vælg feltet **Microsoft** i sektionen **Konfigurationsudbydere**. Kontrollér, at denne konfigurationsudbyder er angivet til **Aktiv**. Du kan finde flere oplysninger om, hvordan du angiver en udbyder til **Aktiv**, i [Oprette konfigurationsudbydere og markere dem som aktive](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. Gå til arbejdsområdet **Elektronisk rapportering**, og vælg feltet **Microsoft** i sektionen **Konfigurationsudbydere**. Kontrollér, at denne konfigurationsudbyder er angivet til **Aktiv**. Du kan finde flere oplysninger om, hvordan du angiver en udbyder til **Aktiv**, i [Oprette konfigurationsudbydere og markere dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Vælg **Lagre**.
 4. Vælg **Globalt lager \> Åbn**.
 5. Importér **Fakturamodel**, **Fakturamodeltilknytning**, **CFDI-fakturaformat (MX)**, **CFDI-fakturaformat for anmodning om annullering (MX)** og **CFDI fakturaformat for annullering (MX)**.
@@ -215,7 +215,7 @@ Du kan udføre følgende opgaver under behandlingen af CFDI-fakturaer i Finance 
 Når du har aktiveret funktionen **Konfigurerbar integration for elektronisk fakturering**, kan processen **Eksportér/importér elektronisk faktura** (**Debitor \> Fakturaer \> E-fakturaer**) ikke længere bruges til at sende CFDI-fakturaer. Den erstattes af den nye proces **Send elektroniske dokumenter**.
 
 > [!NOTE]
-> Før du bruger den nye proces **Send elektroniske dokumenter**, skal du kontrollere, at den opsætning, der kræves til mexicanske e-fakturaer, blev fuldført. Du kan finde flere oplysninger i [CFDI-layoutversion 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
+> Før du bruger den nye proces **Send elektroniske dokumenter**, skal du kontrollere, at den opsætning, der kræves til mexicanske e-fakturaer, blev fuldført. Du kan finde flere oplysninger i [CFDI-layoutversion 3.3](./latam-mex-cfdi-3-3.md).
 
 1. Gå til **Organisationsadministration \> Periodisk \> Elektroniske dokumenter \> Send elektroniske dokumenter**.
 2. Ved den første indsendelse af et dokument skal du altid angive indstillingen **Send dokumenter igen** til **Nej**. Hvis du skal sende et dokument igen via tjenesten, skal du angive denne indstilling til **Ja**.

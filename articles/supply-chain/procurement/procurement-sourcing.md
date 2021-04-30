@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96e112432ba79d2657a8d440e8e040fca45392a2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d94426580d65dc1639de4b2dd1b3f283724a1a9e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825512"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909198"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startside for indkøb og forsyning
 
@@ -83,12 +83,12 @@ Indkøb og forsyning dækker alle trin fra identifikationen af et behov for prod
 ## <a name="prices-and-discounts"></a>Priser og rabatter
 -   [Købsaftaler](purchase-agreements.md)
 -   [Oprette en købsaftale](tasks/create-purchase-agreement.md)
--   [Kreditorrabatter](https://docs.microsoft.com/dynamics/s-e/) (hvidbog)
+-   [Kreditorrabatter](/dynamics/s-e/) (hvidbog)
 
 ## <a name="product-receipt-and-invoicing"></a>Modtagelse og fakturering af produkter
 -   [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
--   [Oversigt over kreditorfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Kreditorposteringsprofiler](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Oversigt over kreditorfakturaer](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Kreditorposteringsprofiler](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Indkøbs- og forsyningsarbejdsgange
 -   [Oversigt over indkøb og forsyning](procurement-sourcing-overview.md)

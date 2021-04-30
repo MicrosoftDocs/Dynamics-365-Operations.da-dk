@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcb57082a49fc07a4139aa37f9507890ca7ed620
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1647b7fbf84a78051e745e918954df32a2e7e1dd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805076"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889998"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurer integration med Dayforce
 
@@ -53,8 +53,8 @@ Når integrationen er aktiveret, oprettes dataeksportpakken og -filerne, og hypp
 
 Yderligere oplysninger om Azure-lagerkonti og Azure-lagerforbindelsesstrenge finder du i følgende Azure-artikler:
 
-- [Om Azure-lagerkonti](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurere forbindelsesstrenge for Azure-datalager](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Om Azure-lagerkonti](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurere forbindelsesstrenge for Azure-datalager](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniske oplysninger ved aktivering af lønintegration
 
@@ -65,6 +65,7 @@ Aktivering af lønintegration har to primære effekter:
 
 > [!NOTE]
 > Den datapakke, der overføres til SFTP-slutpunktet, krypteres ved hjælp af en nøgle, der er entydig for pakken. Nøglen er i en Azure Key Vault, der kun kan åbnes af Ceridian. Det er ikke muligt at dekryptere og undersøge datapakkens indhold. Hvis du har brug for at undersøge indholdet af datapakken, skal du eksportere dataprojektet "Lønintegrationseksport" manuelt, download det og derefter åbne det. Manuel eksport anvender ikke kryptering eller overførsel af pakken.
+> I tilfælde, hvor integrationsfilerne sendes fra et Dynamics 365 Human Resources UAT- eller sandkassemiljø til et Ceridian Dayforce-testmiljø, kan du bruge følgende URL-adresse til Key Vault: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Konfigurere dine data 
 
@@ -124,10 +125,10 @@ Dayforce opretter følgende fradrag, der er baseret på den løneffekt, der er d
 
 Du kan finde flere oplysninger om, hvordan du definerer og administrerer et frynsegodeprogram i følgende artikler:
 
-- [Levere et frynsegodeprogram for medarbejdere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Opret et nyt frynsegode](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definere regler og politikker for frynsegodeberettigelse](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Tilmelde og fjerne frynsegoder fra arbejdere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Levere et frynsegodeprogram for medarbejdere](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Opret et nyt frynsegode](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definere regler og politikker for frynsegodeberettigelse](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Tilmelde og fjerne frynsegoder fra arbejdere](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensation 
 
@@ -137,20 +138,20 @@ Dayforce anvendes kompensationsoplysninger til at beregne en medarbejders timesa
 
 Du kan finde flere oplysninger om kompensationsplaner i følgende artikler:
 
-- [Oprette planer for fast løn](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Oprette planer for variabel kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Udarbejde løn-/kompensationsstruktur og -planer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Proceskompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Definere kompensationsproces og beregne resultater](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Melde en medarbejder til en fast lønplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Melde en medarbejder til en variabel lønplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Oprette planer for fast løn](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Oprette planer for variabel kompensation](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Udarbejde løn-/kompensationsstruktur og -planer](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Proceskompensation](/dynamics365/unified-operations/talent/process-compensation)
+- [Definere kompensationsproces og beregne resultater](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Melde en medarbejder til en fast lønplan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Melde en medarbejder til en variabel lønplan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Job 
 
 Et job er en samling af de opgaver og ansvarsområder, der kræves af en person, der udfører et job. Du kan finde flere oplysninger i følgende artikler:
 
-- [Konfiguration af komponenter i et job](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Definere nye job](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Konfiguration af komponenter i et job](/dynamics365/unified-operations/talent/create-job)
+- [Definere nye job](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Stillinger
 
@@ -174,8 +175,8 @@ Hvis flere stillinger i den samme afdeling er knyttet til samme job, konsolidere
 
 Du kan finde flere oplysninger i følgende artikler:
 
-- [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Konfigurere stillinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Konfigurere stillinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Afdelinger
 
@@ -183,8 +184,8 @@ En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktions
 
 Du kan finde flere oplysninger i følgende artikler:
 
-- [Oprette en afdeling og knytte den til afdelingshierarkiet](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definere nye afdelinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Oprette en afdeling og knytte den til afdelingshierarkiet](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definere nye afdelinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Betalingscyklusser og lønperioder
 

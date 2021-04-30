@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 3c4382336e53bc09c51dd845446af9a20a2ba8af
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c43b45c7919be4673224b0f83606c390d0bb6265
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794463"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891072"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Oprette afdelinger og knytte dem til afdelingshierarkiet
 
@@ -53,7 +53,7 @@ Følg disse trin for at føje en afdeling til afdelingshierarkiet.
 6.  Når du er klar, skal du klikke på **Udgiv** i hierarkidesigner. Du kan angive en ikrafttrædelsesdato, der angiver, hvornår hierarkiet skal offentliggøres. Hvis du f.eks. vil tilføje en ny afdeling i starten af næste kalenderår, skal du sætte ikrafttrædelsesdatoen til 1. januar i det nye kalenderår. Ændringer af hierarkiet træder i kraft på denne dato.
 
 ## <a name="steps-for-creating-a-department"></a>Trin til oprettelse af en afdeling
-Se artiklen [Definerere nye afdelinger](../fin-and-ops/hr/tasks/define-new-departments.md) for den trinvise procedure til at oprette en ny afdeling. 
+Se artiklen [Definerere nye afdelinger](./hr-personnel-define-departments.md) for den trinvise procedure til at oprette en ny afdeling. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

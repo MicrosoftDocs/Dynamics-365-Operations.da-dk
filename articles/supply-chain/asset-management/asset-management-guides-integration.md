@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 4af14a66c839ccee02008057ad1de8ef5b9d291b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813911"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908561"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Styring af aktiver) med Dynamics 365 Guides
 
@@ -30,12 +30,12 @@ Før du kan føje hjælpelinjer til arbejdsordrer i Styring af aktiver, skal du 
 - [Konfigurere Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 eller nyere.
 - [Slå dobbeltskrivning til for Supply Chain Management-apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Slå flight til](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) for **MRGuidesFeature**-funktionen. (I forbindelse med produktionsmiljøer skal du først sende en supportanmodning for at få din lejer føjet til flighting-gruppen).
-- [Slå følgende konfigurationsnøgler til](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) på siden **Licenskonfiguration**:
+- [Slå følgende konfigurationsnøgler til](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) på siden **Licenskonfiguration**:
 
     - Styring af aktiver \> Styring af aktiver – Mixed Reality
     - Mixed Reality \> Hjælpelinje til Mixed Reality
 
-- [Konfigurere Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 eller nyere.
+- [Konfigurere Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 eller nyere.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>Bruge Dynamics 365 Guides med Styring af aktiver
 
@@ -47,8 +47,8 @@ Du kan knytte en hjælpelinje til en vedligeholdelsestjekliste ved at følge dis
 
 1. Opret en hjælpelinje ved hjælp af Dynamics 365 Guides-pc- og HoloLens-appen. Du kan få oplysninger om, hvordan du opretter en hjælpelinje, i følgende emner:
 
-    - [Bruge pc-appen til at oprette en hjælpelinje](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [Bruge HoloLens-appen til at placere din hologrammer](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [Bruge pc-appen til at oprette en hjælpelinje](/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [Bruge HoloLens-appen til at placere din hologrammer](/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. [Opret en vedligeholdelsestjeklisteskabelon](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template) i Supply Chain Management.
 1. Knyt den hjælpelinje, du har oprettet, til en vedligeholdelsestjeklistelinje i den nye vedligeholdelsestjeklisteskabelon:

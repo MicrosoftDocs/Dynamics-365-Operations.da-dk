@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5eca902ee7df7eb6835caf6f64b17f3f004b0776
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 387caeee3ba44e1fbc661e2c31915b75dd80c31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802449"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892123"
 ---
 # <a name="view-and-manage-address-changes"></a>Få vist og administrere adresseændringer
 
@@ -125,9 +125,9 @@ Human Resourcesmedarbejdere kan få vist og overvåge adresseændringer fra arbe
 Når du markerer feltet **Adresseændringer**, vises oplysningerne om eventuelle adresseændringer på en ny side. Du kan evt. vælge **Medtag fremtidige adresseændringer** i øverste højre hjørne for at få vist adresseændringer med en fremtidig dato.
 
 > [!NOTE]
-> Hvis du vil modtage en påmindelse eller mail om disse adresseændringer, kan du oprette en ny påmindelsesregel på fanen **Indstillinger** i handlingsruden. Du kan finde flere oplysninger om påmindelsesregler under [Oprette påmindelsesregler](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> Hvis du vil modtage en påmindelse eller mail om disse adresseændringer, kan du oprette en ny påmindelsesregel på fanen **Indstillinger** i handlingsruden. Du kan finde flere oplysninger om påmindelsesregler under [Oprette påmindelsesregler](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> Hvis du vil konfigurere en arbejdsgang for adresseændringerne, kan du vælge indstillingen **Send eksternt** på din påmindelsesregel og derefter bruge Power Automate til at udløse forretningshændelsen og konfigurere en arbejdsgang. Yderligere oplysninger finder du under [Påmindelser som forretningshændelser](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> Hvis du vil konfigurere en arbejdsgang for adresseændringerne, kan du vælge indstillingen **Send eksternt** på din påmindelsesregel og derefter bruge Power Automate til at udløse forretningshændelsen og konfigurere en arbejdsgang. Yderligere oplysninger finder du under [Påmindelser som forretningshændelser](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

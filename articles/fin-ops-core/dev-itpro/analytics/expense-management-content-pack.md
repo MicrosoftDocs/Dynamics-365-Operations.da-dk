@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aadf43d478eb4bf5af20df02dcc6399a7a2e71a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e95fa06745840a6ba1782f135af0e7625c934aa
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743501"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893246"
 ---
 # <a name="expense-management-power-bi-content"></a>Power BI-indhold til udgiftsstyring
 
@@ -41,7 +41,7 @@ Der er to Power BI-indholdspakker tilgængelige, som kan anvendes sammen med udg
 Alle beløb vises i virksomhedens valuta. Data for alle virksomheder vises, men det er muligt at tilføje et virksomhedsfilter. 
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
-Du kan finde Power BI-indholdet "Expense Admin Dashboard.pbix" og "Expense Personal Dashboard.pbix" i biblioteket "Delte aktiver" i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Du kan finde Power BI-indholdet "Expense Admin Dashboard.pbix" og "Expense Personal Dashboard.pbix" i biblioteket "Delte aktiver" i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 Indholdet er tilgængeligt fra den udgiftsansvarliges arbejdsområde som en del af Power Bi-indholdet. Alle udgiftsejere kan tilgå deres egne personlige udgifter, hvorimod alene kreditormedarbejdere og -ansvarlige har adgang til administratorindholdet, hvor de kan se alle brugerens udgiftsdata.
 
 ## <a name="refreshing-the-power-bi-content"></a>Opdatering af Power BI-indholdet

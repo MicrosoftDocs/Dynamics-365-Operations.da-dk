@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753810"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894166"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimere store dokumenter, der er genereret i elektronisk rapportering 
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge [strukturen for elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere en løsning, der henter transaktionsdata for at oprette et udgående dokument. Dette oprettede dokument kan være temmelig stort. Når denne dokumenttype oprettes, bruges hukommelsen fra [Microsoft Dynamics AX Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) til at opbevare den. På et tidspunkt skal dokumentet downloades fra dit Microsoft Dynamics 365 Finance-program. I øjeblikket er maksimumstørrelsen på et enkelt dokument, der er oprettet i ER, begrænset til 2 gigabyte (GB). Finance sætter i øjeblikket en [begrænsning](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) på størrelsen af en downloadet fil til 1 GB. Derfor skal du konfigurere en ER-løsning, der reducerer sandsynligheden for, at disse begrænsninger overskrides, og at du modtager en af undtagelserne **Streamen er for lang** eller **Overløb eller underløb i den aritmetiske handling**.
+Du kan bruge [strukturen for elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere en løsning, der henter transaktionsdata for at oprette et udgående dokument. Dette oprettede dokument kan være temmelig stort. Når denne dokumenttype oprettes, bruges hukommelsen fra [Microsoft Dynamics AX Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) til at opbevare den. På et tidspunkt skal dokumentet downloades fra dit Microsoft Dynamics 365 Finance-program. I øjeblikket er maksimumstørrelsen på et enkelt dokument, der er oprettet i ER, begrænset til 2 gigabyte (GB). Finance sætter i øjeblikket en [begrænsning](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) på størrelsen af en downloadet fil til 1 GB. Derfor skal du konfigurere en ER-løsning, der reducerer sandsynligheden for, at disse begrænsninger overskrides, og at du modtager en af undtagelserne **Streamen er for lang** eller **Overløb eller underløb i den aritmetiske handling**.
 
 Når du konfigurerer en løsning, kan du justere dit ER-format i Operationsdesigner ved at tilføje et rodelement af typen **Mappe** for at komprimere det indhold, der oprettes af de indlejrede elementer. Komprimering fungerer via "JIT (just in time)", så det maksimale hukommelsesforbrug og størrelsen på den fil, der skal downloades, kan reduceres.
 

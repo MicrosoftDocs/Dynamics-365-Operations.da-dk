@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: bacc27c1a9066892c51110d28ba9a2ad26bebe77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b740da1a8a349f4a1a80b41bf717c388fd3db0c0
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839289"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881826"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivere lagertransaktioner
 
@@ -38,7 +38,7 @@ Hvis en kombination af `itemId` og `inventDimId` kun indeholder én tilgangs- el
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funktionen i systemet
 
-Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Arkivér lagertransaktioner*.
+Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Arkivér lagertransaktioner*. Bemærk, at denne funktion ikke kan deaktiveres, når den først er aktiveret.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Ting, der skal overvejes, før du arkiverer lagertransaktioner
 

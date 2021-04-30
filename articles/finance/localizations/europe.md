@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3954660e04b4da26908b9b981fa043474e62bf59
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 382cfc3eaacd0610491646f32e8c7684e0451d7f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832614"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892367"
 ---
 # <a name="europe-overview"></a>Oversigt for Europa
 
@@ -96,8 +96,8 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Oversigt over elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Oversigt over elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

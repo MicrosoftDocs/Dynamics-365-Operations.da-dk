@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841761"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908365"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og varedisponering
 
@@ -90,7 +90,7 @@ Du kan angive de datoer, hvor en kunde kan acceptere leverancer, ved at tildele 
 
 Bemærk, at det kun er muligt at medtage én kalender pr. kunde. Hvis du vil medtage en kalender for hver anden adresse for en kunde, kan du oprette én kunde pr. adresse og derefter tildele dens respektive kalender. 
 
-Den ønskede modtagelsesdato på salgsordrelinjerne påvirkes af kundekalenderen og kontrolmetoden for leveringsdatoen. Du kan læse mere om, hvordan den tidligste leveringsdato beregnes i [Ordretilsagn](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Den ønskede modtagelsesdato på salgsordrelinjerne påvirkes af kundekalenderen og kontrolmetoden for leveringsdatoen. Du kan læse mere om, hvordan den tidligste leveringsdato beregnes i [Ordretilsagn](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Forsendelseskalender for en juridisk enhed
 Hvis du vil angive de datoer, hvor en juridisk enhed kan afsende varer, kan du konfigurere en forsendelseskalender under **Virksomhedsadministration > Organisationer > Juridiske enheder**. Vælg den juridiske enhed, og tilføj kalenderen under fanen **Udenrigshandel og logistik** i feltet **Forsendelseskalender**. Forsendelseskalenderen fungerer som kilde til standardindstillinger for alle lagerstedskalendere i den juridiske enhed. 

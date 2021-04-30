@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a4de42c23bf96591d1ac99ed32438fe34a485998
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792019"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906643"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurere kuponer for detailsalg
 
@@ -38,6 +38,8 @@ Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Der
 
 > [!NOTE]
 > Når en kupon er knyttet til en rabat, bliver flere af felterne på rabatsiden i Commerce skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.
+> 
+> Når du bruger kuponen i callcenter-kanalen, skal du vælge knappen **Genberegn** **(fanen Sælg > Beregn > Genberegn)** for at få rabatten tilknyttet kuponen, der skal anvendes. Dette ekstra trin vil blive fjernet i en fremtidig version.
 
 ### <a name="limited-use-coupons"></a>Kuponer med begrænset anvendelse
 

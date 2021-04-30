@@ -2,7 +2,7 @@
 title: Oversigt over styring af forretningsdokumenter
 description: Dette emne indeholder oplysninger om, hvordan du kan bruge funktionen til styring af forretningsdokumenter i ER-strukturen.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749531"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891299"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
@@ -45,9 +45,9 @@ Hvis du vil bruge styring af forretningsdokumenter til redigering af skabeloner 
 
 ## <a name="business-document-availability"></a>Tilgængelighed af forretningsdokument
 
-En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2019, findes i [Konfigurerbar rapportering af forretningsdokumenter i Word og Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2019, findes i [Konfigurerbar rapportering af forretningsdokumenter i Word og Excel](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2020, findes i [Konfigurerbare forretningsdokumenter – Word-skabeloner](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2020, findes i [Konfigurerbare forretningsdokumenter – Word-skabeloner](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 Der vil være flere tilgængelige rapporter i fremtidige versioner. Der vil blive udsendt særlige beskeder om flere rapporter separat. Du kan få mere at vide om, hvordan du gennemser listen over aktuelt tilgængelige rapporter, i afsnittet [Liste over ER-konfigurationer, der er udgivet i Finans for at understøtte konfigurerbare forretningsdokumenter](#list-of-configurations-cbd) nedenfor.
 
@@ -272,7 +272,23 @@ Indstillingen **Rediger skabelon** er tilgængelig for den valgte skabelon. Denn
 
 ![Bekræfte starten af redigeringsprocessen for at oprette en ny skabelon](./media/BDM-Overview-EditingTemplate4.png)
 
+Hvis der ikke er nogen udbyder, vil den blive tilbudt at oprette. Hvis der ikke er nogen aktiv udbyder, vil den blive tilbudt at vælge den til aktivering.
+
+Hvis du vil oprette en udbyder, skal du ændre navnet på udbyderen i feltet **Navn**, opdatere den nye udbyders internetadresse i feltet **Internetadresse** og vælge **OK** for at bekræfte.
+
+   ![Oprette en ny udbyder i BDM](./media/bdm_create_provider.png)
+
+Hvis du vil aktivere en eksisterende udbyder, skal du vælge navnet på udbyderen i feltet **Konfigurationsudbyder** og vælge **OK** for at indstille udbyderen til aktiv.
+
+   ![Aktivere udbyder i BDM](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Hver BDM-skabelon refererer til udbyderen som konfigurations forfatter. Derfor kræves der en aktiv udbyder for skabelonen.
+
+
 Indstillingen **Nyt dokument** er altid tilgængelig for en skabelon i en ER-formatkonfiguration, der er leveret af den aktuelle udbyder og en anden udbyder (Microsoft i dette eksempel), som ikke har nogen revision. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
+
+
 
 ### <a name="start-editing-a-template"></a>Starte redigering af en skabelon
 
@@ -419,7 +435,7 @@ Du har højst sandsynligt logget på den aktuelle forekomst af appen i et Azure 
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Liste over ER-konfigurationer, der er udgivet i Finans for at understøtte konfigurerbare forretningsdokumenter
 
-[Listen](general-electronic-reporting.md#list-of-configurations) over ER-konfigurationer for Finans opdateres konstant. Åbn det [globale lager](er-download-configurations-global-repo.md) for at gennemgå listen over ER-konfigurationer, der understøttes i øjeblikket. Du kan [filtrere](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) det globale lager for at gennemgå listen over ER-konfigurationer, der bruges til at understøtte forretningsdokumenter, der kan konfigureres.
+[Listen](general-electronic-reporting.md#list-of-configurations) over ER-konfigurationer for Finans opdateres konstant. Åbn det [globale lager](er-download-configurations-global-repo.md) for at gennemgå listen over ER-konfigurationer, der understøttes i øjeblikket. Du kan [filtrere](../../../finance/localizations/enhanced-filtering-global-repo.md) det globale lager for at gennemgå listen over ER-konfigurationer, der bruges til at understøtte forretningsdokumenter, der kan konfigureres.
 
 ![Filtrering af indholdet af det globale lager på siden Konfigurationslager](./media/bdm-overview-filterglobalrepo.gif)
 

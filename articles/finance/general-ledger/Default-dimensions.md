@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7783c22659c5a2b070648c82a8b72e49e17b8e34
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823854"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897302"
 ---
 # <a name="financial-dimensions-and-posting"></a>Økonomiske dimensioner og bogføring 
 
@@ -83,17 +83,17 @@ Standarddimensionen i kladdehovedet medfører, at afdeling 023 skal anvendes som
 
 Når linjen bogføres, anvendes den faste dimension dog, og linjen bogføres til afdeling 022. I følgende illustration vises det bogførte bilag, hvor den faste dimension anvendes for salgskontoen.
 
-[![Poster på bilag](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Bilagstransaktioner med fast dimension anvendt](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
 I dette eksempel bruges samme opsætning som i det første eksempel. Vi vil dog tilføje endnu en komponent og bruge afdelingsdimensionen som en udligningsdimension. I følgende illustration er **Afdeling** angivet som den økonomiske udligningsdimension for USMF-finans.
 
-[![Finans](./media/ledger.png)](./media/ledger.png)
+[![Illustration, der viser afdeling som økonomisk udligningsdimension](./media/ledger.png)](./media/ledger.png)
 
 Når der bruges samme kladdehovedopsætning, og den samme postering bogføres, anvendes den faste dimension først. Derefter anvendes udligningslogikken for at hjælpe med at sikre, at hver afdeling har en udlignet post. I følgende illustration vises bilagsposteringer, der omfatter modposten, når den faste dimension anvendes.
 
-[![Poster på bilag](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Bilagstransaktioner efter anvendelse af udligningsposten](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Eksempel 3
 
@@ -119,11 +119,11 @@ Nogle af følgende ressourcer refererer til en tidligere version af vores softwa
 
 [Planlægge din kontoplan](plan-chart-of-accounts.md) 
 
-[Planlægning af kontoplanen i AX 2012 blog](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – Dette link fører til del 1 i en serie på syv dele.
+[Planlægning af kontoplanen i AX 2012 blog](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – Dette link fører til del 1 i en serie på syv dele.
 
-[Dimension, der benyttes som standard i regnskabsfordelinger](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Dimension, der benyttes som standard i regnskabsfordelinger](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Dimension, der benyttes som standard i dimensionsstruktur](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimension, der benyttes som standard i dimensionsstruktur](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840094"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894771"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Start her med elektronisk fakturering for Italien
 
@@ -201,7 +201,7 @@ Når du har aktiveret funktionen **Konfigurerbar integration af elektronisk fakt
 Du kan sende dokumenterne manuelt baseret på dit behov for e-fakturadokumenter.
 
 > [!NOTE]
-> Før du fortsætter, skal du kontrollere, at den opsætning, der kræves til italienske e-fakturaer, blev fuldført. Du kan finde flere oplysninger i [Elektroniske fakturaer til kunder](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Bemærk, at nogle af de opsætningstrin, der er beskrevet i dette emne, muligvis ikke er tilgængelige pga. aktivering af elektronisk fakturering.
+> Før du fortsætter, skal du kontrollere, at den opsætning, der kræves til italienske e-fakturaer, blev fuldført. Du kan finde flere oplysninger i [Elektroniske fakturaer til kunder](./emea-ita-e-invoices.md). Bemærk, at nogle af de opsætningstrin, der er beskrevet i dette emne, muligvis ikke er tilgængelige pga. aktivering af elektronisk fakturering.
 
 1. Gå til **Organisationsadministration \> Periodisk \> Elektroniske dokumenter \> Send elektroniske dokumenter**.
 2. Ved den første indsendelse af et dokument skal du angive indstillingen **Send dokumenter igen** til **Nej**. Hvis du skal sende et dokument igen via tjenesten, skal du angive denne indstilling til **Ja**.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbf5ed3d0f83619746ae66ae7008940f4600060c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6aede26fb7d371806624742792ded5be23ad0e51
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824912"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908078"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditmaksimum for debitorer
 
@@ -90,7 +90,7 @@ Brug formularen **Debitorparametre** til at angive de oplysninger, der skal samm
 
 **Hvor bruges der oplysninger om en kundes resterende kredit?**
 
-Oplysninger om en kundes saldo og resterende kreditbeløb beregnes og gemmes, når du opretter et aldersfordelt øjebliksbillede, og de vises i formularen **Rykkere**. De beløb, der vises i formularen **Rykkere**, indeholder muligvis ikke alle transaktionsaktiviteter, før der oprettes et nyt aldersfordelt øjebliksbillede. Du kan finde flere oplysninger under [Rykkere og kredit i debitorparametre](https://technet.microsoft.com/library/hh209221.aspx).
+Oplysninger om en kundes saldo og resterende kreditbeløb beregnes og gemmes, når du opretter et aldersfordelt øjebliksbillede, og de vises i formularen **Rykkere**. De beløb, der vises i formularen **Rykkere**, indeholder muligvis ikke alle transaktionsaktiviteter, før der oprettes et nyt aldersfordelt øjebliksbillede. Du kan finde flere oplysninger under [Rykkere og kredit i debitorparametre](/dynamicsax-2012/appuser-itpro/collections-and-credit-in-accounts-receivable).
 
 Oplysninger om en kundes saldo og resterende kreditbeløb beregnes, når salgsordrer, følgesedler og fakturaer opdateres, afhængigt af de dokumenter der er valgt. Hvis beløbet på det dokument, du arbejder med, medfører, at kreditmaksimum overskrides, vises der en meddelelse.
 

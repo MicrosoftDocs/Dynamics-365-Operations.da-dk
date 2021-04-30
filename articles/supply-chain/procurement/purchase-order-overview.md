@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45c8b1d0ea12c8e42f3a4383f16105b0b0cfb5c6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b173f856c79973eec6ce884e7b8e44420c93fc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825320"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909125"
 ---
 # <a name="purchase-order-overview"></a>Oversigt over indkøbsordrer
 
@@ -41,7 +41,7 @@ Følgende artikler indeholder en oversigt over de forskellige faser, som en IO g
 -   [Oprette indkøbsordrer](purchase-order-creation.md)
 -   [Godkende og bekræfte indkøbsordrer](purchase-order-approval-confirmation.md)
 -   [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
--   [Oversigt over kreditorfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Oversigt over kreditorfakturaer](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Indkøbsordretyper
 Der er tre typer IO'er. Når du opretter en IO, skal du angive typen. Du kan oprette en standardordretype for nye ordrer på siden **Indkøbs- og forsyningsparametre**.
@@ -85,7 +85,7 @@ Feltet **Godkendelsesstatus** bruges, når en IO gennemgår en gennemsynsproces 
 
 [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
 
-[Oversigt over kreditorfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Oversigt over kreditorfakturaer](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

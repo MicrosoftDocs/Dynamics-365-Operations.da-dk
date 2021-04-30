@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9590213ef73f7623aff10d4c8ee3efbea0e7984b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823451"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907685"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrering til planlægningsoptimering for varedisponering
 
@@ -63,8 +63,12 @@ I øjeblikket er undtagelser fra migrering til Planlægningsoptimering kun relev
 
 Når de påkrævede funktioner bliver tilgængelige, vil Microsoft give en frist, indtil undtagelsen udløber. Miljøadministratoren vil blive informeret, når de påkrævede funktioner er blevet tilgængelige, og fristen er påbegyndt.
 
+Følgende rutediagram opsummerer oplysningerne i dette emne, så du hurtigt kan finde ud af, om du skal anmode om en undtagelse. Hvis du har brug for at anmode om en undtagelse, skal du udfylde og sende [spørgeskemaet til migrering og undtagelse for planlægningsoptimering](https://go.microsoft.com/fwlink/?linkid=2144962).
+
+![Undtagelsesrutediagram](media/exception-diagram.png "Undtagelsesrutediagram")
+
 > [!NOTE]
-> Du kan kun anmode om en undtagelse for produktionsmiljøer, ikke for sandkassemiljøer. Hvis du har brug for at deaktivere undtagelsesfejlen i Planlægningsoptimering i et sandkassemiljø på en infrastruktur som en service (IaaS), skal du køre den SQL-forespørgsel, der er indeholdt i [Sandkassemiljøer](#faq-sandbox).
+> Du kan kun anmode om en undtagelse for lejere, der i øjeblikket omfatter eller vil omfatte et produktionsmiljø, ikke for lejere kun med sandkassemiljøer. Hvis du har brug for at deaktivere undtagelsesfejlen i Planlægningsoptimering i et sandkassemiljø på en infrastruktur som en service (IaaS), skal du køre den SQL-forespørgsel, der er indeholdt i [Sandkassemiljøer](#faq-sandbox).
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 

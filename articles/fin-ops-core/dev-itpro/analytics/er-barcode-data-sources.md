@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: 08b9d03517a600cf46b1093cfa3bc454621eabd0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cbc2b5870e855ff4d4a099a51cbb6887dd30bba7
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748359"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893546"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Bruge stregkodedatakilder til at generere stregkodebilleder
 
@@ -37,7 +37,7 @@ ER understøtter nu datakildetypen **Stregkode**. Derfor kan du nu generere et b
 
 Følgende pladsholdere kan bruges i rapportskabeloner til at angive stregkodebilleder:
 
-- Kontrolelement til [billedindhold](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) for Word
+- Kontrolelement til [billedindhold](/office/client-developer/word/content-controls-in-word) for Word
 - [Billede](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344)-objekt i Excel
 
 Ved at bruge en datakilde af **Stregkode**-typen kan du generere stregkoder i følgende formater:

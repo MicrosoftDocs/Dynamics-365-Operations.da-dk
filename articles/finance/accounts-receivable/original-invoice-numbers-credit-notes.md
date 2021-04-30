@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ce06a0ce4f2a308e1917ac2c7cbc66f0494a2ec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811504"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897326"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Referencer til oprindelige fakturaer på kreditnotaer
 
@@ -30,7 +30,7 @@ I nogle lande og områder er der et juridisk krav om, at udskrevne kreditnotaer 
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-- Brug arbejdsområdet **Funktionsstyring** til at aktivere funktionen **Layout til fakturakreditering i salgs- og projektfakturarapporter**. Få flere oplysninger i [Oversigt over funktionsstyring](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- Brug arbejdsområdet **Funktionsstyring** til at aktivere funktionen **Layout til fakturakreditering i salgs- og projektfakturarapporter**. Få flere oplysninger i [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - De formater til krævede dokumenter, der kan udskrives, skal konfigureres i Udskriftsstyring.
 
 De funktioner, der er beskrevet i dette emne, gælder for følgende dokumenter:

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2443bb057a8b7fe280ed26ecae4e50f671b5e082
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818793"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908824"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfiguration til Finance Insights (prøveversion)
 
@@ -69,7 +69,7 @@ Du kan fuldføre de manuelle konfigurationstrin, der følger, eller du kan gøre
     13. Vælg **Ressourcer \> Alle tidligere indstillinger**.
     14. Vælg indstillinger på den øverste navigationslinje **Indstillinger**, og vælg derefter **Tilpasninger**.
     15. Vælg **Udviklerressourcer**.
-    16. Indstil feltet **Forekomstreferenceoplysninger-id** til den Dataverse-organisations-id, som du noterede tidligere.
+    16. Kopiér værdien af **Dataverse-organisations-id**.
     17. I adresselinjen i browseren skal du notere URL-adressen for Dataverse-organisationen. URL-adressen kan f. eks være `https://org42b2b3d3.crm.dynamics.com`.
 
 2. Hvis du planlægger at bruge funktionen Likviditetsflowbudgetter eller budgetprognoser, skal du følge disse trin for at opdatere din organisations anmærkningsgrænse til mindst 50 MB:
@@ -286,12 +286,12 @@ catch {
 
 # <a name="use-a-windows-powershell-script"></a>[Brug et Windows PowerShell-script](#tab/use-a-powershell-script)
 
-Der er angivet et Windows PowerShell-script, så du nemt kan konfigurere de Azure-ressourcer, der er beskrevet under [Konfigurere eksport til Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). Hvis du foretrækker at foretage manuel opsætning, kan du springe denne procedure over og fortsætte med proceduren i afsnittet [Manuel opsætning](#manual-setup).
+Der er angivet et Windows PowerShell-script, så du nemt kan konfigurere de Azure-ressourcer, der er beskrevet under [Konfigurere eksport til Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). Hvis du foretrækker at foretage manuel opsætning, kan du springe denne procedure over og fortsætte med proceduren i afsnittet [Manuel opsætning](#manual-setup).
 
 > [!NOTE]
 > Følg nedenstående trin for at køre PowerShell-scriptet. Indstillingen Azure CLI "Try it" eller kørsel af scriptet på din PC fungerer muligvis ikke.
 
-Udfør følgende trin for at konfigurere Azure ved hjælp af Windows PowerShell-scriptet. Du skal have rettigheder til at oprette en Azure-ressourcegruppe, Azure-ressourcer og et Azure AD-program. Yderligere oplysninger om de påkrævede tilladelser finder du i [Kontrollér Azure AD-tilladelser](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Udfør følgende trin for at konfigurere Azure ved hjælp af Windows PowerShell-scriptet. Du skal have rettigheder til at oprette en Azure-ressourcegruppe, Azure-ressourcer og et Azure AD-program. Yderligere oplysninger om de påkrævede tilladelser finder du i [Kontrollér Azure AD-tilladelser](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. Gå til dit Azure-abonnement på [Azure-portalen](https://portal.azure.com). Vælg knappen **Cloud Shell** til højre for feltet **Søg**.
 2. Vælg **PowerShell**.
@@ -943,18 +943,7 @@ finally {
 ```
 ---
 
-## <a name="configure-the-entity-store"></a>Konfigurer enhedslager
 
-Udfør følgende trin for at konfigurere enhedslageret i Finance-miljøet.
-
-1. Gå til **Systemadministration \> Opsætning \> Systemparametre \> Dataforbindelser**.
-2. Indstil **Aktivér Data Lake-integration** til **Ja**.
-3. Indstille følgende Key Vault-felter:
-
-    - **Program-id (klient)** - Angiv det programklient-id, du har oprettet tidligere.
-    - **Programhemmelighed** - Angiv den hemmelighed, du har gemt for det program, du har oprettet tidligere.
-    - **DNS-navn** - Find DNS-navnet (Domain Name System) på siden Programdetaljer for det program, du har oprettet tidligere.
-    - **Hemmeligt navn** - Angiv **lager-konto-forbindelsesstreng**.
 
 ## <a name="configure-the-data-lake"></a>Konfigurer Data Lake
 
@@ -991,6 +980,19 @@ Tilføjelsesprogrammet vil blive installeret inden for et par minutter.
     | CDS-lejer-id (mappe-id fra AAD)               | Lejer-id for Dataverse-forekomst. Hvis du vil finde denne værdi, skal åbne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory** og kopiere værdien **Lejer-id**. |
     | Angiv det brugerobjekt-id, der har rollen som systemadministrator | Azure AD-brugerobjekt-id for brugeren i Dataverse. Denne bruger skal være systemadministrator for Dataverse-forekomsten. Hvis du vil finde denne værdi, skal du åbne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory\> Brugere**, vælge brugeren og derefter kopiere **Objekt-id**-værdien i afsnittet **Identitet**. |
     | Er dette standard-CDS-miljø for lejeren?      | Hvis Dataverse-forekomsten var den første produktionsforekomst, der blev oprettet, skal du markere dette afkrydsningsfelt. Hvis Dataverse-forekomsten er oprettet manuelt, skal du fjerne markeringen i dette afkrydsningsfelt. |
+
+## <a name="configure-the-entity-store"></a>Konfigurer enhedslager
+
+Udfør følgende trin for at konfigurere enhedslageret i Finance-miljøet.
+
+1. Gå til **Systemadministration \> Opsætning \> Systemparametre \> Dataforbindelser**.
+2. Indstil **Aktivér Data Lake-integration** til **Ja**.
+3. Indstil følgende Key Vault-felter:
+
+    - **Program-id (klient)** - Angiv det programklient-id, du har oprettet tidligere.
+    - **Programhemmelighed** - Angiv den hemmelighed, du har gemt for det program, du har oprettet tidligere.
+    - **DNS-navn** - Find DNS-navnet (Domain Name System) på siden Programdetaljer for det program, du har oprettet tidligere.
+    - **Hemmeligt navn** - Angiv **lager-konto-forbindelsesstreng**.
 
 ## <a name="feedback-and-support"></a>Feedback og support
 

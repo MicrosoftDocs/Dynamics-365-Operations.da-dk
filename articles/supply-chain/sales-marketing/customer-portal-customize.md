@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 16d5c13c0fbff8c5033b0d1e9dd0d07851521126
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840767"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908994"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruge debitorportalen
 
@@ -33,14 +33,14 @@ Debitorportalen indeholder nogle websider og handlinger lige fra starten. Følge
 
 I følgende emner kan du finde grundlæggende oplysninger om Power Apps-portaler og oplysninger om, hvordan du kan tilpasse portaler:
 
-- [Arbejde med skabeloner](https://docs.microsoft.com/powerapps/maker/portals/work-with-templates) – Dette emne indeholder en generel oversigt over, hvordan Power Apps-portaler fungerer, og hvordan du kan foretage simple tilpasninger af portaler.
-- [Administrere portalindhold](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) – Dette emne forklarer, hvordan du kan administrere og tilpasse det indhold, der skal vises i din portal.
-- [Redigere CSS](https://docs.microsoft.com/powerapps/maker/portals/edit-css) – Dette emne hjælper dig med at lave mere komplekse tilpasninger af portalens brugergrænseflade (UI).
-- [Oprette et tema til din portal](https://docs.microsoft.com/dynamics365/portals/create-theme) – Dette emne hjælper dig med at oprette et brugergrænsefladetema til din portal.
-- [Oprette og vise portalindhold nemt](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – Dette emne hjælper dig med at administrere de underliggende data og tabeller, du bruger til din portal.
-- [Konfigurere en kontaktperson til brug i en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) – Dette emne forklarer, hvordan du opretter og tilpasser brugerroller, og hvordan sikkerhed og godkendelse fungerer i Power Apps-portaler.
-- [Konfigurere noter til tabelformularer og webformularer på portaler](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – Dette emne forklarer, hvordan du kan føje dokumenter og yderligere lagerplads til din portal.
-- [Fejlhåndtering for portalwebsted](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) – Dette emne forklarer, hvordan du kan få vist logfilerne for portalfejl og gemme dem i din Microsoft Azure Blob-lagerkonto.
+- [Arbejde med skabeloner](/powerapps/maker/portals/work-with-templates) – Dette emne indeholder en generel oversigt over, hvordan Power Apps-portaler fungerer, og hvordan du kan foretage simple tilpasninger af portaler.
+- [Administrere portalindhold](/dynamics365/portals/manage-portal-content) – Dette emne forklarer, hvordan du kan administrere og tilpasse det indhold, der skal vises i din portal.
+- [Redigere CSS](/powerapps/maker/portals/edit-css) – Dette emne hjælper dig med at lave mere komplekse tilpasninger af portalens brugergrænseflade (UI).
+- [Oprette et tema til din portal](/dynamics365/portals/create-theme) – Dette emne hjælper dig med at oprette et brugergrænsefladetema til din portal.
+- [Oprette og vise portalindhold nemt](/dynamics365/portals/create-expose-portal-content) – Dette emne hjælper dig med at administrere de underliggende data og tabeller, du bruger til din portal.
+- [Konfigurere en kontaktperson til brug i en portal](/powerapps/maker/portals/configure/configure-contacts) – Dette emne forklarer, hvordan du opretter og tilpasser brugerroller, og hvordan sikkerhed og godkendelse fungerer i Power Apps-portaler.
+- [Konfigurere noter til tabelformularer og webformularer på portaler](/powerapps/maker/portals/configure-notes) – Dette emne forklarer, hvordan du kan føje dokumenter og yderligere lagerplads til din portal.
+- [Fejlhåndtering for portalwebsted](/powerapps/maker/portals/admin/view-portal-error-log) – Dette emne forklarer, hvordan du kan få vist logfilerne for portalfejl og gemme dem i din Microsoft Azure Blob-lagerkonto.
 
 ## <a name="customize-the-order-creation-process"></a>Tilpasse processen til oprettelse af ordrer
 
@@ -88,7 +88,7 @@ Her er standardtrinnene for afsendelse af en ordre fra debitorportalen.
 
 For at hjælpe med at sikre en problemfri brugeroplevelse udfylder debitorportalen automatisk værdier for flere obligatoriske felter. Disse værdier er baseret på oplysningerne i kontaktpersonposten for den kunde, der skal sende ordren.
 
-For hver [kontaktrække](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), der tilhører en kunde, som skal bruge kundeportalen til at sende ordrer, skal der angives værdier for følgende obligatoriske felter. Ellers opstår der fejl.
+For hver [kontaktrække](/powerapps/maker/portals/configure/configure-contacts), der tilhører en kunde, som skal bruge kundeportalen til at sende ordrer, skal der angives værdier for følgende obligatoriske felter. Ellers opstår der fejl.
 
 - **Firma** – Den juridiske enhed, som ordren tilhører
 - **Potentiel kunde** – Den kundekonto, der er tilknyttet ordren
@@ -134,16 +134,16 @@ Følgende kolonner er påkrævet for varer:
 
 Du skal sikre dig, at debitorportalen kan sende værdier for alle disse kolonner.
 
-Hvis du vil føje kolonner til siden eller fjerne kolonner, kan du finde flere oplysninger under [Oprette eller redigere formularer til hurtig oprettelse for en strømlinet dataindtastningsoplevelse](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Hvis du vil føje kolonner til siden eller fjerne kolonner, kan du finde flere oplysninger under [Oprette eller redigere formularer til hurtig oprettelse for en strømlinet dataindtastningsoplevelse](/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
 Hvis du vil ændre, hvordan kolonner forudindstilles, og hvordan værdier angives, når siden gemmes, skal du se følgende oplysninger i dokumentationen for Power Apps-portalerne:
 
-- [Udfyldning af felt på forhånd](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
-- [Angive værdi ved lagring](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
+- [Udfyldning af felt på forhånd](/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
+- [Angive værdi ved lagring](/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
 
 ## <a name="customize-the-home-page"></a>Tilpasse startsiden
 
-Alle kontrolelementer i debitorportalen er indbyggede kontrolelementer i Power Apps-portalerne. Du kan tilpasse dem ved at følge trinnene i [Oprette en side](https://docs.microsoft.com/powerapps/maker/portals/compose-page) i dokumentationen for Power Apps- portaler.
+Alle kontrolelementer i debitorportalen er indbyggede kontrolelementer i Power Apps-portalerne. Du kan tilpasse dem ved at følge trinnene i [Oprette en side](/powerapps/maker/portals/compose-page) i dokumentationen for Power Apps- portaler.
 
 Det eneste brugerdefinerede kontrolelement, der er medtaget i debitorportalskabelonen, bruges til at oprette felterne på startsiden.
 
@@ -151,7 +151,7 @@ Det eneste brugerdefinerede kontrolelement, der er medtaget i debitorportalskabe
 
 Følg disse trin for at ændre felterne.
 
-1. Åbn [Portal Management-appen](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
+1. Åbn [Portal Management-appen](/powerapps/maker/portals/configure/configure-portal).
 1. Vælg **Sideskabeloner** i navigationsruden til venstre.
 
     ![Navigationsruden Portalstyring](media/customer-portal-nav.png "Navigationsruden Portalstyring")
@@ -167,11 +167,11 @@ Følg disse trin for at ændre felterne.
 
 Yderligere oplysninger om, hvordan du kan konfigurere og tilpasse debitorportalen, finder du i følgende ressourcer:
 
-- [Power Apps-dokumentationen til portaler](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Power Apps-dokumentationen til portaler](/powerapps/maker/portals/overview)
 - [Dokumentationen til dobbeltskrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
-- [Om portalens livscyklus](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Opgradering af en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Overflytning af portalkonfiguration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Om portalens livscyklus](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Opgradering af en portal](/powerapps/maker/portals/admin/upgrade-portal)
+- [Overflytning af portalkonfiguration](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement-apps](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

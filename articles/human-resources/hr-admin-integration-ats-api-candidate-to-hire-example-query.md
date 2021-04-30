@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea6fc745ffb5892a32196394cb28cb5e646b7639
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a8c3655e7ff609eedbf92fa90a36b65002f40306
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795063"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893466"
 ---
 # <a name="example-query-for-candidate-to-hire"></a>Eksempelforespørgsel til ansøger til ansættelse
 
@@ -27,7 +27,7 @@ ms.locfileid: "5795063"
 
 Dette emne indeholder en eksempelforespørgsel til kandidaten, der skal ansættes en enhed i Dynamics 365 Human Resources.
 
-Dette emne viser et eksempel på, hvordan du kan bruge *dybdeindlæg* til at oprette alle detaljer til en ny kandidatpost med en enkelt API-handling. Du kan finde flere oplysninger om dybdeindlæg i [Oprette relaterede enhedsposter i én handling](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
+Dette emne viser et eksempel på, hvordan du kan bruge *dybdeindlæg* til at oprette alle detaljer til en ny kandidatpost med en enkelt API-handling. Du kan finde flere oplysninger om dybdeindlæg i [Oprette relaterede enhedsposter i én handling](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
 
 Enheden **mshr_hcmcandidatetohireentity** er entydig på grund af dens relation til enheden **mshr_dirpersonentity**. Mange af egenskaberne i **mshr_hcmcandidatetohireentity** (f.eks. **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) er afledt af posten **mshr_dirpersonentity** . Hvis du bogfører en ny kandidatpost for **mshr_hcmcandidatetohireentity** uden brug af dybdeindlæg, kan du definere værdier for disse egenskaber direkte i posten **mshr_hcmcandidatetohireentity**. Den tilknyttede post **mshr_dirpersonentity** oprettes uden tilknytning til de definerede værdier for egenskaberne. Du kan derefter oprette alle andre relaterede enhedsposter (f.eks. færdigheder eller uddannelse) som separate API-opkald.
 

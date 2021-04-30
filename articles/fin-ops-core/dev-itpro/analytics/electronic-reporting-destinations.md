@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03dd6f81185e8944019eaadbb77690e4cd9ba9a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751310"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893598"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -57,7 +57,7 @@ Standardfunktionsmåden for en ER-formatkonfiguration afhænger af den udførels
 
 Hvis du angiver indstillingen **Batchbehandling** til **Nej** i dialogboksen **Intrastat-rapport** på oversigtspanelet **Kør i baggrunden**, køres der øjeblikkeligt et ER-format i interaktiv tilstand. Når denne udførelse er fuldført, er et genereret udgående dokument gjort tilgængeligt for download.
 
-Hvis du angiver **Batchbehandling** til **Ja**, køres et ER-format i [batch](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview)-tilstand. Det relevante batchjob oprettes på basis af de parametre, du angiver på fanen **Kør i baggrunden** i dialogboksen **ER-parametre**.
+Hvis du angiver **Batchbehandling** til **Ja**, køres et ER-format i [batch](../sysadmin/batch-processing-overview.md)-tilstand. Det relevante batchjob oprettes på basis af de parametre, du angiver på fanen **Kør i baggrunden** i dialogboksen **ER-parametre**.
 
 > [!NOTE]
 > Jobbeskrivelsen informerer dig om kørslen af en ER-formattilknytning. Den indeholder også navnet på den kørte ER-komponent.
@@ -70,7 +70,7 @@ Du kan finde oplysninger om dette job på flere steder:
 - Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Elektroniske rapportingsjob** for at kontrollere status for det planlagte job og udførelsesresultaterne af det fuldførte job. Når jobudførelsen er fuldført, skal du vælge **Vis filer** på siden **Elektroniske rapportingsjob** for at få et genereret udgående dokument.
 
     > [!NOTE]
-    > Dette dokument gemmes som en vedhæftet fil for den aktuelle jobpost og styres af strukturen [Dokumentstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). Den [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), der bruges til at gemme ER-artefakter af denne type, konfigureres i [ER-parametrene](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+    > Dette dokument gemmes som en vedhæftet fil for den aktuelle jobpost og styres af strukturen [Dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md). Den [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), der bruges til at gemme ER-artefakter af denne type, konfigureres i [ER-parametrene](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 - På siden **Elektroniske rapporteringsjob** skal du vælge **Vis filer** for at få vist listen over de fejl og advarsler, der blev genereret under jobudførelsen.
 

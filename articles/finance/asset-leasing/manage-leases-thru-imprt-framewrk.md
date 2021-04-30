@@ -2,11 +2,11 @@
 title: Administrere leasingaftaler via struktur for leasingimport
 description: Dette emne forklarer, hvordan du kan bruge leasingimportframework til at justere flere leasingaftaler på én gang.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseImportHeader
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 26fb195ff18dc0c86d3546b782265043c2c78bf4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 083adf0a4bb74ac65e6f8b5077f65c74eb3fa337
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819788"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880904"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Administrere leasingaftaler via struktur for leasingimport
 
@@ -51,9 +51,9 @@ Hvis du vil have vist de midlertidige leasingdata, før behandlingen køres, ska
 Med sammenligningsfunktionen kan du sammenligne en post, der er ved at blive importeret, med den tilsvarende post, der allerede findes i systemet. Hvis du vil sammenligne en individuel leasingpost, skal du vælge en leasingaftale og derefter vælge **Sammenlign**. Du skal udføre dette trin for at generere en rapport **Forskelle**, før du overfører leasingposterne. Sammenligningsfunktionaliteten sammenligner værdierne i de midlertidige data med de værdier for leasingaftaler, der aktuelt findes i systemet.
 
 > [!NOTE]
-> Sammenligningsfunktionaliteten virker ikke for leasingaftaler, der har procestypen **Tilføj post**, da der ikke er noget at sammenligne med den pågældende leasingaftale.
+> Sammenligningsfunktionaliteten virker ikke for leasinger, der har procestypen **Tilføj post**, da der ikke er noget at sammenligne med den pågældende leasingaftale.
 >
-> Hvis du vil sammenligne flere leasingaftaler samtidig, skal du gå til **Aktivleasing \> Struktur af leasingimport \> Periodisk \> Sammenligning** og vælg **Sammenlign**.
+> Hvis du vil sammenligne flere leasinger samtidig, skal du gå til **Aktivleasing \> Struktur af leasingimport \> Periodisk** og vælge **Sammenlign**.
 
 For de enkelte objekter kan du få vist forskellene mellem det, der aktuelt findes i systemet, og hvad der er i de midlertidige tabeller. For de enkelte objekter i de midlertidige tabeller skal du vælge **Se forskelle**. Den dialogboks, der vises, viser den aktuelle værdi og den foreslåede midlertidige værdi.
 
@@ -62,17 +62,17 @@ Du kan også opdatere den midlertidige værdi ved at ændre den i kolonnen **Ny 
 Du kan validere leasingaftaler for at sikre, at posterne kan bringes ind i systemet, uden at der indføres fejl. Før en leasingpost overføres, kører systemet flere valideringer for at sikre, at posten importeres korrekt. Hvis du vil validere en individuel leasingaftale, skal du vælge **Valider**.
 
 > [!NOTE]
-> Hvis du vil validere flere leasingaftaler samtidig, skal du gå til **Aktivleasing \> Struktur af leasingimport \> Periodisk \> Valider** og vælg **Sammenlign**.
+> Hvis du vil validere flere leasinger samtidig, skal du gå til **Aktivleasing \> Struktur af leasingimport \> Periodisk** og vælge **Valider**.
 
 Hvis du vil behandle en individuel leasing, skal du vælge **Overfør leasingposter** på siden **Importer sidehoved**. Når en leasingaftale overføres, udfører systemet den handling, der er angivet i feltet **Procestype**.
 
 > [!NOTE]
-> Hvis du vil validere flere leasingaftaler samtidig, skal du gå til **Aktivleasing \> Struktur af leasingimport \> Periodisk \> Valider** og vælg **Sammenlign**.
+> Hvis du vil overføre flere leasinger samtidig, skal du gå til **Aktivleasing \> Struktur af leasingimport \> Periodisk** og vælge **Overfør**.
 
 Når leasingaftalerne sammenlignes, kan du køre en rapport for at få vist forskellene for hver leasingaftale, der er medtaget i import-id. Hvis du vil køre rapporten for én leasingaftale, skal du vælge den pågældende leasingaftale i de midlertidige data og derefter vælge **Sammenlign, og vis rapport \> Rapport med forskelle**.
 
 > [!NOTE]
-> Hvis du vil validere flere leasingaftaler samtidig, skal du gå til **Aktivleasing \> Forespørgsler og rapporter \> Rapport med forskelle**, og vælg **Sammenlign**.
+> Hvis du vil sammenligne flere leasinger samtidig, skal du gå til **Aktivleasing \> Struktur af leasingimport \> Periodisk** og vælge **Sammenlign**. 
 
 ## <a name="set-up-update-fields"></a>Konfigurer opdateringsfelter
 

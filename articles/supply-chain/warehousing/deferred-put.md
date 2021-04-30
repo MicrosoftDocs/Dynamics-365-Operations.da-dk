@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dad97e13624449d287ded74e7e25f94eb0dbde3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f571f80330d2cc7858ef11271b0466d71aa9709c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838316"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908005"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Udskudt behandling af lagerstedsarbejde
 
@@ -28,7 +28,7 @@ I dette emne beskrives de funktioner, der gør udskudt behandling af lagerstedet
 
 Med den udskudte behandlingsfunktion kan lagermedarbejderne fortsætte med at udføre andet arbejde, mens læg på lager-operationen behandles i baggrunden. Udskudt behandling er nyttig, når mange arbejdslinjer skal behandles, og arbejderen kan lade dette arbejde blive behandlet asynkront. Det er også nyttigt, når serveren kan have ad hoc eller ikke-planlagte stigninger i behandlingstiden, og den øgede behandlingstid kan påvirke brugerens produktivitet.
 
-Baggrundsbehandling opnås ved hjælp af SysOperations-strukturen. Du kan finde flere oplysninger under [Oversigt over SysOperation-struktur](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+Baggrundsbehandling opnås ved hjælp af SysOperations-strukturen. Du kan finde flere oplysninger under [Oversigt over SysOperation-struktur](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Konfiguration af politikker for arbejdsbehandling
 

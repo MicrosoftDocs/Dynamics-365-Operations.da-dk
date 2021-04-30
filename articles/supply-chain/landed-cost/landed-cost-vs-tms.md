@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 244d378316caf639c3520a1179dd82955d94220a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833851"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909469"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Landingsomkostninger sammenlignet med Transportstyring
 
@@ -51,8 +51,8 @@ TMS og landingsomkostninger deler ikke referencedata for enheder som f.eks. omko
 
 Følgende rapporter fungerer ikke sammen med funktionen for varer undervejs, som landingsomkostninger gør:
 
-- [Rapport over interne varer undervejs i alt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Rapport over interne varer undervejs i alt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Rapport over interne varer undervejs i alt](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Rapport over interne varer undervejs i alt](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 I disse rapporter antages det, at varer er undervejs, så snart du udsteder en salgsfølgeseddel, og at de overføres til lageret fra transit ved modtagelse. Varer undervejs behandles dog ikke på denne måde. Hvis du bruger varerne undervejs og funktionerne for intern handel sammen, vil resultatet af begge disse rapporter derfor være forkerte.
 

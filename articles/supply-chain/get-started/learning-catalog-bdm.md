@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b608a5434d92dfc646d7f16b242e807ca00f89cf
-ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
+ms.openlocfilehash: 3c83d0e1895c283b6034f187d791a1df9387c2aa
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "5637356"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908636"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-supply-chain-management"></a>Undervisningskatalog til forretningsmæssige beslutningstagere, der overvejer Dynamics 365 Supply Chain Management
 
@@ -29,17 +29,17 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 | Indhold   | Beskrivende tekst   | Formater    | Længde    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
-| [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed. | Gratis onlinelæringssti i dit eget tempo | 7 timer |
-| [Grundlæggende funktioner i Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo | 5.5 timer |
-| [Kom i gang med Finance and Operations-apps](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan Finance and Operations-apps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations-apps skal du være bekendt med deres funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
+| [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed. | Gratis onlinelæringssti i dit eget tempo | 7 timer |
+| [Grundlæggende funktioner i Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo | 5.5 timer |
+| [Kom i gang med Finance and Operations-apps](/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan Finance and Operations-apps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations-apps skal du være bekendt med deres funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
 | [Kursus MB-900T01-A: Grundlæggende funktioner i Dynamics 365](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Dette kursus giver kendskab til funktionerne i Dynamics 365 og forretningsværdien. Kurset dækker Dynamics 365-programmer, Power Platform, skybegreber, sikkerhedsmodellen og licensovervejelserne. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag |
-| [Kom i gang med aktivstyring til Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/modules/get-started-asset-management/index) | Styring af aktiver er et modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management. Styring af aktiver giver dig mulighed for effektivt at administrere og udføre opgaver i forbindelse med styring og servicering af mange typer udstyr i din virksomhed, f.eks. maskiner, produktionsudstyr og køretøjer. Styring af aktiver understøtter løsninger på tværs af adskillige brancher. | Gratis onlinelæringsmodul i dit eget tempo | 1 time |
+| [Kom i gang med aktivstyring til Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Styring af aktiver er et modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management. Styring af aktiver giver dig mulighed for effektivt at administrere og udføre opgaver i forbindelse med styring og servicering af mange typer udstyr i din virksomhed, f.eks. maskiner, produktionsudstyr og køretøjer. Styring af aktiver understøtter løsninger på tværs af adskillige brancher. | Gratis onlinelæringsmodul i dit eget tempo | 1 time |
 
 ## <a name="exam"></a>Eksamen<a name="exam"></a>
 
 | Indhold  | Beskrivende tekst  | Formater  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Grundlæggende funktioner i Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bevis, at du forstår Microsoft Dynamics 365, Power Platform, skybegreber, licensmuligheder samt udrulnings- og frigivelsesmuligheder. | Eksamen, hvor omkostning varierer alt efter region |
+| [Grundlæggende funktioner i Dynamics 365](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bevis, at du forstår Microsoft Dynamics 365, Power Platform, skybegreber, licensmuligheder samt udrulnings- og frigivelsesmuligheder. | Eksamen, hvor omkostning varierer alt efter region |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a39dbdcae29df5e838673dc1fe77ae7e76ebfc86
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752960"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908335"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Få vist og opdatere enhedsdata med Excel 
 
@@ -45,7 +45,7 @@ Hvis du vil vide mere om brug af tilføjelsesprogrammet til Excel, kan du se den
 2. Vælg en **Åbn i Excel**-indstilling, og åbn den projektmappe, der er genereret. Denne projektmappe har binding-oplysningerne for enheden, en pointer til dit miljø og en pointer til Excel-tilføjelsesprogrammet.
 3. I Excel skal du vælge **Aktivér redigering** for at aktivere Excel-tilføjelsesprogrammet til at køre. Excel-tilføjelsesprogrammet kører i ruden til højre i Excel-vinduet.
 4. Hvis du kører Excel-tilføjelsesprogrammet for første gang, skal du vælge **Har tillid til dette tilføjelsesprogram**.
-5. Hvis du bliver bedt om at logge på, skal du vælge **Log på** og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Finance and Operations-appen. Excel-tilføjelsesprogrammet bruger en tidligere logon-kontekst fra browseren og logger dig automatisk på, hvis det er muligt. (Du kan finde oplysninger om den browser, der bruges baseret på operativsystemet, i [Browsere, der bruges af Office-tilføjelsesprogrammet](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Du kan sikre, at det lykkedes at logge på ved at kontrollere brugernavnet øverst til højre i Excel-tilføjelsesprogrammet. 
+5. Hvis du bliver bedt om at logge på, skal du vælge **Log på** og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Finance and Operations-appen. Excel-tilføjelsesprogrammet bruger en tidligere logon-kontekst fra browseren og logger dig automatisk på, hvis det er muligt. (Du kan finde oplysninger om den browser, der bruges baseret på operativsystemet, i [Browsere, der bruges af Office-tilføjelsesprogrammet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Du kan sikre, at det lykkedes at logge på ved at kontrollere brugernavnet øverst til højre i Excel-tilføjelsesprogrammet. 
 
 Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har valgt. Bemærk, at der ikke er nogen data i projektmappen, før Excel-tilføjelsesprogrammet læser dem ind.
 
@@ -60,7 +60,7 @@ Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har val
 
 6. Vælg **OK**, og vælg derefter **Ja** for at bekræfte ændringen. Excel-tilføjelsesprogrammet genstarter og indlæser metadata.
 
-    Knappen **Design** er nu tilgængelig. Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan finde yderligere oplysninger i "Knappen Indlæs applets vises" i afsnittet [Fejlfinding](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) i dette emne.
+    Knappen **Design** er nu tilgængelig. Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan finde yderligere oplysninger i "Knappen Indlæs applets vises" i afsnittet [Fejlfinding](../office-integration/use-excel-add-in.md#troubleshooting) i dette emne.
 
 7. Vælg **Design**. Excel-tilføjelsesprogrammet henter enhedsmetadata.
 8. Vælg **Tilføj tabel**. Der vises en liste over enheder. Enhederne er angivet i formatet "Navn – label".
@@ -138,7 +138,7 @@ Der er nogle få problemer, der kan løses gennem nogle nemme trin.
 
 - **Knappen Indlæs applets vises** – Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, når du er logget på, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan løse dette problem ved at kontrollere, at det rigtige brugernavn vises i øverste højre hjørne af Excel-tilføjelsesprogrammet. Hvis der vises et forkert brugernavn, skal du vælge det, logge af og derefter logge på igen.
 - **Du får vist meddelelsen "Forbudt"** – Hvis du får vist meddelelsen "Forbudt", mens Excel-tilføjelsesprogrammet indlæser metadata, har den konto, der er logget på Excel-tilføjelsesprogrammet ikke tilladelse til at bruge den målsatte tjeneste, forekomst eller database. Du kan løse dette problem ved at kontrollere, at det rigtige brugernavn vises i øverste højre hjørne af Excel-tilføjelsesprogrammet. Hvis der vises et forkert brugernavn, skal du vælge det, logge af og derefter logge på igen.
-- **En tom webside vises i Excel** – Hvis der åbnes en tom webside under logonprocessen, kræver kontoen AD FS, men den version af Excel, der kører tilføjelsesprogrammet, er ikke ny nok til at indlæse logondialogboksen. Du kan løse dette problem ved at opdatere den version af Excel, du bruger. For at opdatere versionen af Excel, når du er i en virksomhed, der er på den udskudte kanal, kan du bruge [Office Udrulningsværktøj](https://technet.microsoft.com/library/jj219422.aspx) til [at flytte fra den udskudte kanal til den aktuelle kanal](https://technet.microsoft.com/library/mt455210.aspx).
+- **En tom webside vises i Excel** – Hvis der åbnes en tom webside under logonprocessen, kræver kontoen AD FS, men den version af Excel, der kører tilføjelsesprogrammet, er ikke ny nok til at indlæse logondialogboksen. Du kan løse dette problem ved at opdatere den version af Excel, du bruger. For at opdatere versionen af Excel, når du er i en virksomhed, der er på den udskudte kanal, kan du bruge [Office Udrulningsværktøj](/deployoffice/overview-office-deployment-tool) til [at flytte fra den udskudte kanal til den aktuelle kanal](/deployoffice/overview-update-channels).
 - **Du får en timeout, når du publicerer dataændringer** – Hvis du får timeoutmeddelelser, når du forsøger at publicere dataændringer til en enhed, skal du overveje at reducere publiceringsbatchstørrelsen for den berørte projektmappe. Enheder, der udløser større logiske ændringer i postændringer, kræver måske, at der sendes opdateringer i mindre batches for at hjælpe med at forhindre timeout.
 
 

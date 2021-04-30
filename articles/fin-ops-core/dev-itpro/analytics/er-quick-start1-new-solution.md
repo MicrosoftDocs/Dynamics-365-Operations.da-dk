@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 986beb6d46ac69192206c86fc3660c2e2345d6a9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743721"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891787"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Designe en ny ER-løsning til udskrivning af en brugerdefineret rapport
 
@@ -119,7 +119,7 @@ I følgende fremgangsmåde forklares det, hvordan en bruger i rollen Systemadmin
 
 - [Yderligere ressourcer](#References)
 
-I dette eksempel skal du oprette en ny ER-løsning til modulet [Spørgeskema](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires). Med denne nye ER-løsning kan du oprette en rapport ved at bruge et Microsoft Excel-regneark som skabelon. Du kan derefter generere rapporten for **Spørgeskema** i Excel- eller PDF-format, ud over at generere den eksisterende rapport for SQL Server Reporting Services (SSRS). Du kan også ændre den nye rapport senere og efter anmodning. Der kræves ingen kodning.
+I dette eksempel skal du oprette en ny ER-løsning til modulet [Spørgeskema](../../../human-resources/hr-learning-questionnaires.md). Med denne nye ER-løsning kan du oprette en rapport ved at bruge et Microsoft Excel-regneark som skabelon. Du kan derefter generere rapporten for **Spørgeskema** i Excel- eller PDF-format, ud over at generere den eksisterende rapport for SQL Server Reporting Services (SSRS). Du kan også ændre den nye rapport senere og efter anmodning. Der kræves ingen kodning.
 
 1. Hvis du vil køre den eksisterende rapport skal du gå til **Spørgeskema** \> **Design** \> **Rapport for spørgeskemaer**.
 

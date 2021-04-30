@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 648a793b15df5597c0c4c6f2f972e28bb0ce79a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ef556c44ac0241f19e9e1891fb3ce32294667827
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750908"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909857"
 ---
 # <a name="before-you-buy"></a>Før du køber
 
@@ -86,7 +86,7 @@ Du kan få yderligere ressourcer her:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Trin 4: Få mere at vide om FastTrack, og planlæg installationen
 
-Microsoft FastTrack til Dynamics 365 er vores populære tjeneste, der gør det nemmere, mere fleksibelt og sikkert at flytte til Dynamics 365, så du hurtigere kan realisere forretningsmæssig værditilvækst. Når du deltager i programmet FastTrack, får du vejledning i best practices, og hvordan du planlægger vellykkede installationer. Du lærer også metoder til at gå nye brugere i gang og udvide funktioner – alle i dit eget tempo. Derudover har du adgang til tekniske ressourcer fra Microsoft, der hjælper dig med at gøre Dynamics 365-oplevelsen til en succes. Du kan få flere oplysninger i [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
+Microsoft FastTrack til Dynamics 365 er vores populære tjeneste, der gør det nemmere, mere fleksibelt og sikkert at flytte til Dynamics 365, så du hurtigere kan realisere forretningsmæssig værditilvækst. Når du deltager i programmet FastTrack, får du vejledning i best practices, og hvordan du planlægger vellykkede installationer. Du lærer også metoder til at gå nye brugere i gang og udvide funktioner – alle i dit eget tempo. Derudover har du adgang til tekniske ressourcer fra Microsoft, der hjælper dig med at gøre Dynamics 365-oplevelsen til en succes. Du kan få flere oplysninger i [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Hvis du opgraderer fra Dynamics AX 2012 eller overfører fra AX 2009
 

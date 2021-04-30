@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753330"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893926"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillad brugere at konfigurerer en ER-formatreference, der forespørger om et format fra den globale lagermappe
 
@@ -30,7 +30,7 @@ Du kan bruge strukturen [elektronisk rapportering](general-electronic-reporting.
 
 Normalt skal du angive, hvilket ER-format der skal bruges i en bestemt forretningsproces. Hvis du vil gøre det, skal du vælge ER-formatet i et opslagsfelt, der er konfigureret som en del af forretningsprocesspecifikke parametre. Disse opslagsfelter implementeres normalt ved hjælp af den relevante API i ER-strukturen. Du kan finde flere oplysninger i [API til ER-struktur – kode til visning af et formattilknytningopslag](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-Når du f.eks. konfigurerer [udenrigshandelsparametre](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters), skal du konfigurere referencerne til de enkelte ER-formater, der bruges til at generere Intrastat-opgørelsen og kontrolrapporten til Intrastat-opgørelsen. Skærmbillederne nedenfor viser, hvordan opslagsfeltet til ER-formater ser ud på siden **Udenrigshandelsparametre**.
+Når du f.eks. konfigurerer [udenrigshandelsparametre](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters), skal du konfigurere referencerne til de enkelte ER-formater, der bruges til at generere Intrastat-opgørelsen og kontrolrapporten til Intrastat-opgørelsen. Skærmbillederne nedenfor viser, hvordan opslagsfeltet til ER-formater ser ud på siden **Udenrigshandelsparametre**.
 
 Hvis den aktuelle Finance-forekomst ikke indeholder nogen Intrastat-forretningsprocesrelaterede ER-formater, er dette opslagsfelt tomt.
 

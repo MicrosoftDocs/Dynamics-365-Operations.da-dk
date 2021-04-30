@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 502205f76f1519153caf6e976ffbb5eb9412c4ea
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818554"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898054"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (prøveversion)
 
@@ -31,7 +31,7 @@ Med Finance Insights kan du konfigurere og udvide modeller, så du præcist og i
 
 Financial Insights prøveversion er tilgængelig for prøveimplementeringer i USA, Europa og Storbritannien. Microsoft tilføjer trinvist understøttelse af flere regioner.
 
-Prøveversionsfunktioner kan og bør kun aktiveres i sandkasse miljøer i niveau 2. Opsætnings- og kunstige AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Prøveversionsfunktioner kan og bør kun aktiveres i sandkasse miljøer i niveau 2. Opsætnings- og kunstige AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -43,7 +43,7 @@ Hvis du vil anvende til prøveversionsprogrammet, skal du udfylde den [Finance I
 
 ### <a name="system-requirements"></a>Systemkrav
 
-Der kræves et niveau 2-sandkassemiljø (flere bokse) for at få vist Finance Insights. Du kan finde flere baggrundsoplysninger om miljøer under [Miljøplanlægning](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+Der kræves et niveau 2-sandkassemiljø (flere bokse) for at få vist Finance Insights. Du kan finde flere baggrundsoplysninger om miljøer under [Miljøplanlægning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Versionskrav
 
@@ -53,7 +53,7 @@ Dette dokument gælder for version 10.0.11 af Finance and Operations-apps (platf
 
 Mindst et års antal kundefakturaer er påkrævet for at træne den maskinelle indlæringsmodel, der bruges til funktionen debitorbetalingsforudsigelser, korrekt.
 
-Der findes eksempeldata til demosystemer, hvor Contoso-demonstrationsdata er angivet.
+Der findes eksempeldata til demosystemer, hvor Contoso-demodata er angivet.
 
 ### <a name="role-and-permission-requirements"></a>Rolle- og tilladelseskrav
 
@@ -79,7 +79,7 @@ Du skal oprette et dataintegratorprojekt, så de data, som den maskinelle indlæ
 Når du har fuldført konfigurationstrinnene og konfigureret demodata, skal du aktivere og konfigurere hver egenskab, du vil bruge: Debitorbetalingsforudsigelser, likviditetsbudgettering og budgetforslag.
 
 ### <a name="enable-customer-payment-predictions"></a>Aktivere forudsigelser om debitorbetalinger
-Hvis du bruger demodata til at teste kundens betalingsforudsigelser, kan det være nødvendigt at importere yderligere demodata for at oprette AI-modellen. De specifikke trin til import af demodata finder du i [Opsætning af demodata til betalingsforudsigelser](set-up-demo-data.md).
+Hvis du bruger demodata til at teste kundens betalingsforudsigelser, kan det være nødvendigt at importere yderligere demodata for at oprette AI-modellen. 
 
 Hvis du vil aktivere funktionen til debitorbetalinger, skal du udføre et sæt trin for at opbygge en model til maskinel indlæring, der bruger organisationens data til organisationens data for at generere forudsigelser om, hvornår kunderne sandsynligvis vil betale udestående fakturaer, og hvornår der sandsynligvis vil blive betalt bestemte fakturaer. Yderligere oplysninger og trin, der skal udføres, finder du i afsnittet [Aktivere debitorbetalingsforudsigelser](enable-cust-paymnt-prediction.md). 
 

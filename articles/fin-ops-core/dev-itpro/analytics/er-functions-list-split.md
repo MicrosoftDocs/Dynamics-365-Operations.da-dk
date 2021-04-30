@@ -2,7 +2,7 @@
 title: ER-funktionen SPLIT
 description: Dette emne indeholder oplysninger om, hvordan funktionen SPLIT til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c99ee5e8129ed45253893dc83acdef99b4ce2c9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26b6ddeb2880fc220283b6389327a497549a4511
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745587"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853437"
 ---
 # <a name="split-er-function"></a>ER-funktionen SPLIT
 
@@ -79,6 +79,14 @@ Hvis `input`-argumentet er tomt, returneres en ny tom liste. Hvis hverken `input
 ## <a name="example-2"></a>Eksempel 2
 
 `SPLIT ("XAb aBy", "aB")` returnerer en ny liste, der består af tre poster, som har et **Værdi**-felt af typen *Streng*. Feltet **Værdi** i den første post indeholder teksten **"X"**, feltet **Værdi** i den anden post indeholder teksten **"&nbsp;"**, og feltet **Værdi** i den tredje post indeholder teksten **"y"**. 
+
+## <a name="example-3"></a>Eksempel 3
+
+Du kan bruge funktionen [INDEX](er-functions-list-index.md) til at få adgang til individuelle elementer i den angivne inputstreng. Hvis du indtaster datakilden **MyList** af typen **Beregnet felt** og konfigurerer den for udtrykket `SPLIT("abc", 1)`, returnerer udtrykket `INDEX(MyList,2).Value` tekstværdien **"b"**.
+
+## <a name="example-4"></a>Eksempel 4
+
+Du kan også bruge funktionen [ENUMERATE](er-functions-list-enumerate.md) til at få adgang til individuelle elementer i den angivne inputstreng. Hvis du først angiver datakilden **MyList** for typen **Beregnet felt** og konfigurerer den for udtrykket `SPLIT("abc", 1)` og derefter angiver datakilden for **EnumeratedList** for typen **Beregnet felt** og konfigurerer udtrykket `ENUMERATE(MyList)` for den, returnerer udtrykket `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` teksten **"b"**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2335721cfe8fd7ff3f76e3c7ca2560a56d45d583
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
+ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818674"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5867441"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Opret et dataintegratorprojekt (prøveversion)
 
@@ -59,6 +59,7 @@ Dette emne forklarer, hvordan du opretter et dataintegratorprojekt.
     1. Opret dataintegrationsprojekter til følgende skabeloner ved hjælp af det forbindelsessæt, du lige har oprettet:
 
         - Resultater af indsigt i kundebetaling (CDS til Fin og Ops)
+            - Hvis du bruger version 10.0.17 eller senere, skal du bruge skabelonen med navnet Resultater af indsigt i kundebetaling (CDS til Fin og Ops 10.0.17+).
         - Pengestrømsresultater for likviditetsserier (CDS Fin og Ops)
         - Budgetresultater for tidsserier (CDS Fin og Ops)
 

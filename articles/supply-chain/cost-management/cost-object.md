@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0a8c39977dacd78afc3bec977501abaf8081dc7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c6829f24b8efa29b39f5ed742d8ca99e09bcef01
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839337"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910347"
 ---
 # <a name="cost-objects"></a>Omkostningsobjekter
 
@@ -67,13 +67,13 @@ Tabellen nedenfor viser, hvad der er et omkostningsobjekt, og hvad er et lagerob
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Produktdimensionsgruppe](https://technet.microsoft.com/library/aa499382.aspx)
+[Produktdimensionsgruppe](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Lagringsdimensionsgruppe](https://technet.microsoft.com/library/hh209317.aspx)
+[Lagringsdimensionsgruppe](/dynamicsax-2012//storage-dimension-groups-form)
 
-[Sporingsdimensionsgruppe](https://technet.microsoft.com/library/hh209465.aspx)
+[Sporingsdimensionsgruppe](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[Nyheder eller ændringer](../../fin-and-ops/get-started/whats-new-changed.md)
+[Nyheder eller ændringer](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 [Omkostningsposter](cost-entries.md)
 

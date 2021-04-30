@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfc0497286ae0286cde05412c82fcaac76f4042a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 476dfd6be55ce484cb9bc101ac27dc6181f3c010
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837627"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910371"
 ---
 # <a name="modeling-a-lean-organization"></a>Modellering af en lean organisation
 
@@ -51,7 +51,7 @@ Den fremtidige værdistrøm modelleres som en version af produktionsflowet. Alle
 
 Selve værdistrømmen er udformet som en driftsenhed. Værdistrømmen kan derfor bruges som en økonomisk dimension.
 
-Du kan finde flere oplysninger om driftsenheder under [Oprette en driftsenhed](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
+Du kan finde flere oplysninger om driftsenheder under [Oprette en driftsenhed](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Efterkalkulation af lean manufacturing baseret på produktionsflowet
 Periodisk konsolidering af omkostningerne for et produktionsflow retter den relaterede IGVF-konto og giver mulighed for bestemmelse af afvigelser for produkterne, der leveres af produktionsflowet.

@@ -16,22 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a8c263104e209a81e33ea0db9e5fecddff3bc95b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809776"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899089"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Produktionsarbejdsbyrder for sky- og kantskalaenheder
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Arbejdsbyrden for produktionsudførelse er tilgængelig i forhåndsversion på nuværende tidspunkt.
 > Nogle forretningsfunktioner understøttes ikke fuldt ud i den offentlige prøveversion, når der anvendes skalaenheder for arbejdsbyrder.
 
-I produktionsudførelse giver sky- og kantskalaenheder følgende funktioner, også selvom der ikke er forbindelse mellem kantenheder og hubben:
+I produktionsudførelse giver skalaenheder følgende egenskaber:
 
 - Maskinoperatører og tilsynsførende kan få adgang til den operationelle produktionsplan.
 - Maskinoperatører kan holde planen opdateret ved at køre diskrete og procesproduktionsjob.
@@ -108,5 +109,6 @@ Hvis du vil gennemgå historikken for de produktionsjob, der er behandlet på en
 
 Jobbet _Meddelelsesprocessor for produktionshub til skalaenhed_ behandler data fra hubben til skalaenheden. Dette job startes automatisk, når arbejdsbyrden for produktionsudførelse udrulles. Du kan dog køre den manuelt på et hvilket som helst tidspunkt ved at gå til **Produktionsstyring \> Periodiske opgaver \> BackOffice-styring af arbejdsbyrder \> Meddelelsesprocessor for produktionshub til skalaenhed**.
 
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

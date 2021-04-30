@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: e98f1803e43df0fbd5ab700b959faaeee017b7a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834494"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897762"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -48,7 +48,7 @@ Den eksisterende funktion til økonomikladder (finanskladde, anlægsaktivkladde,
 
 ## <a name="issues-with-one-voucher"></a>Problemer med ét bilag
 
-Funktionen ét bilag forårsager problemer under udligning, momsberegning, tilbageførsel af postering, afstemning af en reskontrokladde til Finans, regnskabsaflæggelse og meget mere. (Du kan finde flere oplysninger om problemer, der kan opstå under udligning, f.eks. i [Enkelt bilag med flere debitor- eller kreditorposter](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) For at kunne fungere og rapportere korrekt kræver disse processer og rapporter transaktionsdetaljer. Selvom nogle scenarier stadig kan fungere korrekt, afhængigt af organisationens opsætning, er der ofte problemer, når flere posteringer angives i ét bilag.
+Funktionen ét bilag forårsager problemer under udligning, momsberegning, tilbageførsel af postering, afstemning af en reskontrokladde til Finans, regnskabsaflæggelse og meget mere. (Du kan finde flere oplysninger om problemer, der kan opstå under udligning, f.eks. i [Enkelt bilag med flere debitor- eller kreditorposter](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).) For at kunne fungere og rapportere korrekt kræver disse processer og rapporter transaktionsdetaljer. Selvom nogle scenarier stadig kan fungere korrekt, afhængigt af organisationens opsætning, er der ofte problemer, når flere posteringer angives i ét bilag.
 
 Du bogfører f.eks. følgende bilag med flere linjer.
 

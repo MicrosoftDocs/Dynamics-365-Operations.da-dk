@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ca8868069fca4453efbb76694702a554da6d7aa6
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791527"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892269"
 ---
 # <a name="update-process"></a>Opdater proces
 
@@ -39,7 +39,7 @@ Opdateringer udgives regelmæssigt til alle miljøer. Human Resources understøt
 
 Human Resources-opdateringer anvendes automatisk til alle miljøer. Der frigives to typer versioner af Human Resources:
 
-- **Serviceopdateringer**: Opdateringer foretages hver anden uge og omfatter fejlrettelser og nye funktioner. Serviceopdateringer omfatter også relevante platformsopdateringer, når de frigives. Du kan få en ide om, hvornår der udgives opdateringer af platformen i [Tabel 3: Platformsversioner](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Opdateringer hver anden uge sker i en midlertidigt global udrulning på tværs af områder. Du kan finde flere oplysninger om opdateringer hver anden uge i [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Serviceopdateringer**: Opdateringer foretages hver anden uge og omfatter fejlrettelser og nye funktioner. Serviceopdateringer omfatter også relevante platformsopdateringer, når de frigives. Du kan få en ide om, hvornår der udgives opdateringer af platformen i [Tabel 3: Platformsversioner](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Opdateringer hver anden uge sker i en midlertidigt global udrulning på tværs af områder. Du kan finde flere oplysninger om opdateringer hver anden uge i [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Alle understøttede datacentre opdateres hver anden uge, medmindre andet er angivet. Områderne USA, Australien, Europa, Storbritannien, Asien og Canada medtages i opdateringer hver anden uge. 
 
@@ -71,11 +71,11 @@ Du kan finde ud af, hvad der planlægges for Human Resources, og hvad vi har udg
 
 - [Dynamics 365 Human Resources-oversigt](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Dynamics 365-frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/)
+- [Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/)
 
 - [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
-- [Problemsøgning i Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (kun for platformsrelaterede fejl)
+- [Problemsøgning i Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (kun for platformsrelaterede fejl)
 
 - [Human Resources-blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -83,7 +83,7 @@ Du kan finde ud af, hvad der planlægges for Human Resources, og hvad vi har udg
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Prøveversionsfunktioner i et sandkassemiljø
 
-Du kan validere funktioner i prøveversioner i et sandkassemiljø, før du aktiverer dem i produktionsmiljøet. Du kan finde flere oplysninger om aktivering af nye funktioner under [Oversigt over funktionsstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Du kan validere funktioner i prøveversioner i et sandkassemiljø, før du aktiverer dem i produktionsmiljøet. Du kan finde flere oplysninger om aktivering af nye funktioner under [Oversigt over funktionsstyring](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Alle nye funktioner vises i forhåndsvisning i mindst 30 dage og typisk 30-60 dage. De vigtigste funktioner er normalt tilgængelige i oktober og april hvert år efter forhåndsvisningsperioden. Så snart du ser nye egenskaber i arbejdsområdet Administration af funktioner, kan du slå dem til. Nogle funktioner er muligvis som slået til som standard.
 
@@ -101,9 +101,9 @@ Under test af funktioner i prøveversion eller afprøvning af nye funktioner, ka
 
 ## <a name="see-also"></a>Se også
 
-[Dynamics 365 og Power Platform frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Dynamics 365 og Power Platform frigivelsesplaner](/dynamics365/release-plans)</br>
 [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md)</br>
-[Livscykluspolitik for software](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Livscykluspolitik for software](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
 
 
 

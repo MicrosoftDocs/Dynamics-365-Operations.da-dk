@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f6dbcbd92a99699ce8d7e91c1a7e89a6063035f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795135"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892747"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Forberedelse af udgivelse med Human Resources
 
@@ -43,7 +43,7 @@ I følgende tabel vises alle trinnene i processen, den forventede varighed og hv
 | 2 | Fuldføre og sende tjekliste | Når test af brugeraccept (UAT) er fuldført | Partner/kunde | Følg instruktionerne i [Udgivelsesvurdering med FastTrack](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment). |
 | 3 | Projektvurdering (FastTrack) | FastTrack-arkitekt* | Arkitekten leverer en vurdering, når tjeklisten er modtaget, og fortsætter gennemgangen, indtil eventuelle spørgsmål er besvaret, og afhjælpninger er udført. |
 | 4 | Projektworkshop (FastTrack) | FastTrack-arkitekt* | |
-| 5 | Import af datapakke | Afhænger af projektet | Partner/kunde | Følg instruktionerne i [Oversigt over datastyring](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).|
+| 5 | Import af datapakke | Afhænger af projektet | Partner/kunde | Følg instruktionerne i [Oversigt over datastyring](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).|
 | 6 | Produktionsklar | Når alle foregående trin er fuldført | Partner/kunde | Partner/kunde kan overtage styringen med produktionsmiljøet.|
 | 7 | Efterkalkulationsaktiviteter | Afhænger af projektet | Partner/kunde | |
 | 8 | Udgivelse | Afhænger af projektet | Kunde | |
@@ -66,7 +66,7 @@ Under UAT-fasen skal du teste alle de forretningsprocesser, du har implementeret
 
 - Det anbefales, at UAT-processen begynder med et rent og nyt miljø, hvor dataene fra DIN GOLD-konfiguration kopieres til miljøet, før UAT-processen startes. Det anbefales, at du bruger produktionsmiljøet som GULD-miljø, indtil du går i gang med at producere på et bestemt tidspunkt.
 - Testsager omfatter alle krav. 
-- Test ved hjælp af overførte data. Disse data skal omfatte masterdata som f.eks. arbejdere, job og stillinger. Medtag også startsaldi, f.eks. orlovs- og fraværsperiodiseringer. Endelig skal du inkludere åbne posteringer, f.eks. aktuelle tilmeldinger til frynsegoder. Fuldfør testen med alle typer data, også selvom datasættet ikke er færdiggjort. 
+- Test ved hjælp af overførte data. Dette skal omfatte data som f.eks. arbejdere, job og stillinger. Medtag også startsaldi, f.eks. orlovs- og fraværsperiodiseringer. Endelig skal du inkludere åbne posteringer, f.eks. aktuelle tilmeldinger til frynsegoder. Fuldfør testen med alle typer data, også selvom datasættet ikke er færdiggjort. 
 - Test ved hjælp af de korrekte sikkerhedsroller (standardroller og brugerdefinerede roller), der er tildelt til brugere. 
 - Sørg for, at løsningen overholder alle firma- og branchespecifikke lovgivningsmæssige krav. 
 - Dokumenter alle funktioner, og få godkendelser fra kunden. 
@@ -86,7 +86,7 @@ Før du går i gang, skal du udføre en go-live-test for at teste de trin, der e
 
 ## <a name="fasttrack-go-live-assessment"></a>Udgivelsesvurdering med FastTrack
 
-Kunder, der er kvalificerede til FastTrack og bruger en FastTrack-løsningsarkitekt, skal fuldføre en udgivelsesgennemgang med Microsoft FastTrack. Du kan finde flere oplysninger i  [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
+Kunder, der er kvalificerede til FastTrack og bruger en FastTrack-løsningsarkitekt, skal fuldføre en udgivelsesgennemgang med Microsoft FastTrack. Du kan finde flere oplysninger i  [Microsoft FastTrack](/dynamics365/fasttrack/). 
 
 Cirka otte uger før udgivelsen beder FastTrack-teamet dig om at udfylde en [Kontrolliste før udgivelse](https://go.microsoft.com/fwlink/?linkid=2146013).
 

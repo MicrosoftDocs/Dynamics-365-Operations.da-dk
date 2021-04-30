@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1594babd6f27a6af867267d2ae745549355d3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a42709621c692bb9a20ade0d1835893f534ec4e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839361"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908776"
 ---
 # <a name="cost-management-home-page"></a>Startside for omkostningsstyring
 
@@ -43,7 +43,7 @@ Du kan få adgang til lagerregnskab og produktionsregnskab fra arbejdsområderne
 
 Med produktionsregnskab kan du håndtere [Efterkalkulering af jobordre](production-order-cost-analysis.md) i produktionsordrer og batchordrer samt [Efterkalkuleret varetræk](backflush-costing.md) i lean manufacturing.
 
-[Power BI-indholdet til Omkostningsstyring](../../dev-itpro/analytics/cost-management-content-pack.md) giver ledelsesmæssig indsigt i lager og lager for igangværende forarbejdning (IGVF), og hvordan kostprisen flyder gennem dem efter kategori over tid. Oplysningerne kan også bruges som et detaljeret supplement til regnskabet.
+[Power BI-indholdet til Omkostningsstyring](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) giver ledelsesmæssig indsigt i lager og lager for igangværende forarbejdning (IGVF), og hvordan kostprisen flyder gennem dem efter kategori over tid. Oplysningerne kan også bruges som et detaljeret supplement til regnskabet.
 
 ### <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -57,7 +57,7 @@ Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for a
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger om omkostningsstyring på [Dynamics AX Manufacturing R&D-teamets blog](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selvom nogle af disse opslag er skrevet til den tidligere version af Omkostningsstyring, gælder de samme begreber stadig, og procedurerne i den aktuelle version ligner også.
+Du kan finde meninger, nyheder og andre oplysninger om omkostningsstyring på [Dynamics AX Manufacturing R&D-teamets blog](/archive/blogs/axmfg/) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selvom nogle af disse opslag er skrevet til den tidligere version af Omkostningsstyring, gælder de samme begreber stadig, og procedurerne i den aktuelle version ligner også.
 
 #### <a name="task-guides"></a>Opgaveguider
 
