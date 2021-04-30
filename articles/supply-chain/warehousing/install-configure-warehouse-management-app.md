@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835600"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908946"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Lokationsstyring
 
@@ -50,7 +50,7 @@ Før du kan bruge appen, skal en relateret funktion være slået til i dit syste
 
 Ved mindre udrulninger vil du måske installere appen fra den relevante store på hver enkelt enhed og derefter konfigurere forbindelsen til de miljøer, du bruger, manuelt.
 
-Til større udrulning kan du automatisere udrulning og/eller konfiguration af appen, hvilket kan være mere praktisk, hvis du administrerer mange enheder. Du kan f.eks. bruge en løsning til administration af mobilenheder og administration af mobilapps som f.eks. [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Du kan få oplysninger om, hvordan du bruger Intune til at tilføje applikationer, i [Tilføj apps til Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+Til større udrulning kan du automatisere udrulning og/eller konfiguration af appen, hvilket kan være mere praktisk, hvis du administrerer mange enheder. Du kan f.eks. bruge en løsning til administration af mobilenheder og administration af mobilapps som f.eks. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Du kan få oplysninger om, hvordan du bruger Intune til at tilføje applikationer, i [Tilføj apps til Microsoft Intune](/mem/intune/apps/apps-add).
 
 ### <a name="install-the-app-from-an-app-store"></a>Installere appen fra en appbutik
 
@@ -65,10 +65,10 @@ Det er lettest at installere appen på en enkelt enhed ved at installere den fra
 Som et alternativ til at installere fra en appbutik kan du i stedet hente appen fra Microsoft App Center. App Center indeholder installerbare pakker, som du kan indlæse. Ud over den aktuelle version giver App Center dig også mulighed for at hente tidligere versioner og eventuelt forhåndsversioner med kommende funktioner, som du kan prøve af. Hvis du vil hente aktuelle, tidligere eller forhåndsversioner af mobilappen Lokationsstyring fra Microsoft App Center, skal du bruge følgende links:
 
 - **Windows (UWP):** [Lokationsstyring (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    Du kan finde oplysninger om, hvordan du installerer en hentet pakke på en Windows-enhed og derefter konfigurerer de nødvendige certifikater, under [Installere en build fra App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+    Du kan finde oplysninger om, hvordan du installerer en hentet pakke på en Windows-enhed og derefter konfigurerer de nødvendige certifikater, under [Installere en build fra App Center](/appcenter/distribution/installation).
 
 - **Android:** [Lokationsstyring (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    Hvis du henter en forhåndsversion, skal du følge nogle få ekstra trin for at installere den. Yderligere oplysninger finder du i [Teste Android-apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+    Hvis du henter en forhåndsversion, skal du følge nogle få ekstra trin for at installere den. Yderligere oplysninger finder du i [Teste Android-apps](/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Oprette en webtjenesteapplikation i Azure Active Directory
 
@@ -103,11 +103,11 @@ For at aktivere mobilappen Lokationsstyring til at kommunikere med en bestemt Su
 
 Få flere oplysninger om, hvordan du konfigurerer webtjenesteapplikationer i Azure AD, i følgende ressourcer:
 
-- Du kan finde instruktioner, der viser, hvordan du bruger Windows PowerShell til at konfigurere webtjenesteapplikationer i Azure AD, i [Sådan bruger du Azure PowerShell til at oprette en tjenesteprincipal med et certifikat](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Du kan finde instruktioner, der viser, hvordan du bruger Windows PowerShell til at konfigurere webtjenesteapplikationer i Azure AD, i [Sådan bruger du Azure PowerShell til at oprette en tjenesteprincipal med et certifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Få flere oplysninger om, hvordan du opretter en webtjenesteapplikation manuelt i Azure AD, i følgende emner:
 
-    - [Hurtig start: Registrer et program med platformen Microsoft-identitet](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Sådan bruges portalen til at oprette en Azure AD-applikation og tjenesteportal, der kan få adgang til ressourcer](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Hurtig start: Registrer et program med platformen Microsoft-identitet](/azure/active-directory/develop/quickstart-register-app)
+    - [Sådan bruges portalen til at oprette en Azure AD-applikation og tjenesteportal, der kan få adgang til ressourcer](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Opret og konfigurer en brugerkonto i Supply Chain Management
 
@@ -135,7 +135,7 @@ Godkendelse med Azure AD giver en sikker metode til at forbinde en mobilenhed me
 
 Certifikater kan bruges som hemmeligheder for at bevise applikationens identitet, når der anmodes om et token. Den offentlige del af certifikatet overføres til appregistreringen på Azure-portalen, hvorimod hele certifikatet skal installeres på hver enkelt enhed, hvor mobilappen Lokationsstyring er installeret. Din organisation er ansvarlig for at administrere certifikatet i form af rotation osv. Du kan bruge selvsignerede certifikater, men du bør altid bruge certifikater, der ikke kan eksporteres.
 
-Du skal gøre certifikatet lokalt tilgængeligt på hver enhed, hvor du kører mobilappen Lokationsstyring. Du kan finde oplysninger om, hvordan du administrerer certifikater til Intune-styrede enheder, hvis du bruger Intune, under [Bruge certifikater til godkendelse i Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Du skal gøre certifikatet lokalt tilgængeligt på hver enhed, hvor du kører mobilappen Lokationsstyring. Du kan finde oplysninger om, hvordan du administrerer certifikater til Intune-styrede enheder, hvis du bruger Intune, under [Bruge certifikater til godkendelse i Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurere applikationen ved at importere forbindelsesindstillinger
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b0a3efffaac5158f8dcdbc424139046a3fbc2f07
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c232955873706bcceb6c685527a0dd92b129e543
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793651"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893418"
 ---
 # <a name="custom-fields"></a>Brugerdefinerede felter
 
@@ -29,16 +29,16 @@ ms.locfileid: "5793651"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Du kan føje brugerdefinerede felter til sider i Dynamics 365 Human Resources. Du kan finde flere oplysninger om, hvordan du opretter brugerdefinerede felter, i [Oprette og arbejde med brugerdefinerede felter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
+Du kan føje brugerdefinerede felter til sider i Dynamics 365 Human Resources. Du kan finde flere oplysninger om, hvordan du opretter brugerdefinerede felter, i [Oprette og arbejde med brugerdefinerede felter](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-De fleste Dataverse-tabeller understøtter brugerdefinerede felter. Du kan få vist en komplet liste over Dataverse-tabeller i [Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
+De fleste Dataverse-tabeller understøtter brugerdefinerede felter. Du kan få vist en komplet liste over Dataverse-tabeller i [Dataverse-tabeller](./hr-developer-entities.md). 
 
-Sørg for at aktivere eventuelle brugerdefinerede felter, du opretter, så du kan bruge dem i Dataverse. Du kan finde flere oplysninger [Visning af brugerdefinerede felter på dataenheder](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+Sørg for at aktivere eventuelle brugerdefinerede felter, du opretter, så du kan bruge dem i Dataverse. Du kan finde flere oplysninger [Visning af brugerdefinerede felter på dataenheder](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 
 ## <a name="see-also"></a>Se også
 
-[Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
-[Oprette og arbejde med brugerdefinerede felter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
-[Visning af brugerdefinerede felter på dataenheder](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+[Dataverse-tabeller](./hr-developer-entities.md)</br>
+[Oprette og arbejde med brugerdefinerede felter](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[Visning af brugerdefinerede felter på dataenheder](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

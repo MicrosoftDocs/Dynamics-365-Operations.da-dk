@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dd49edeb92e6a23723b1b6b6ea7800b69a81bd0f
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823782"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897594"
 ---
 # <a name="electronic-messaging"></a>Elektroniske meddelelser
 
@@ -29,7 +29,7 @@ Offentlige myndigheder og lovgivende forsamlinger i forskellige lande og område
 
 Den elektroniske meddelelsesfunktion i Finance understøtter forskellige elektroniske kommunikationsprocesser mellem Finance og de systemer, som offentlige myndigheder tilbyder til rapportering, afsendelse og modtagelse af officielle oplysninger.
 
-Den elektroniske meddelelsesfunktion er integreret i modulet **Elektronisk rapportering** (Electronic Reporting – ER). Derfor kan du konfigurere ER-formater til elektroniske meddelelser. Du kan finde flere oplysninger under [Elektronisk rapportering (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Den elektroniske meddelelsesfunktion er integreret i modulet **Elektronisk rapportering** (Electronic Reporting – ER). Derfor kan du konfigurere ER-formater til elektroniske meddelelser. Du kan finde flere oplysninger under [Elektronisk rapportering (ER)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Elektroniske meddelelser er baseret på følgende enheder:
 
@@ -56,7 +56,7 @@ Den elektroniske meddelelsesfunktion understøtter følgende scenarier:
 
 ## <a name="set-up-electronic-messaging"></a>Konfigurere elektroniske meddelelser
 
-Elektroniske meddelelser kan hjælpe dig med at vedligeholde forskellige elektroniske rapporteringsprocesser for forskellige dokumenttyper. Elektroniske meddelelser er i visse komplekse scenarier konfigureret på en sådan måde, at de indeholder en kombination af mange meddelelsesstatusser, statusser for meddelelseselementer, handlinger, ekstra felter og udførelsesklasser. Der findes pakker med dataenheder til import i disse scenarier. Hvis du bruger disse dataenhedspakker, skal du importere dem til en juridisk enhed ved hjælp af datastyringsværktøjet. Du kan finde flere oplysninger om, hvordan du bruger af datastyringsværktøjet, i [Datastyring](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Elektroniske meddelelser kan hjælpe dig med at vedligeholde forskellige elektroniske rapporteringsprocesser for forskellige dokumenttyper. Elektroniske meddelelser er i visse komplekse scenarier konfigureret på en sådan måde, at de indeholder en kombination af mange meddelelsesstatusser, statusser for meddelelseselementer, handlinger, ekstra felter og udførelsesklasser. Der findes pakker med dataenheder til import i disse scenarier. Hvis du bruger disse dataenhedspakker, skal du importere dem til en juridisk enhed ved hjælp af datastyringsværktøjet. Du kan finde flere oplysninger om, hvordan du bruger af datastyringsværktøjet, i [Datastyring](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 Hvis du ikke importerer en dataenhedspakke, kan du manuelt konfigurere den elektroniske meddelelsesfunktion. I dette tilfælde skal du definere følgende elementer:
 

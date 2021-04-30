@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819932"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866296"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
@@ -52,9 +52,7 @@ En rapporteringstrædefinition indeholder de kolonner, der er beskrevet i følge
 | Enhedsbeskrivelse      | Rapporteringsenhedens titel vises i rapportens sidehoved eller sidefod, hvis du angiver **UnitDesc** som kode på fanen **Sidehoveder og sidefødder** i rapportdefinitionen. Titlen vises i rapportrækkebeskrivelsen, hvis du angiver **UnitDesc** i cellen **Beskrivelse** i rækkedefinitionen. |
 | Dimensioner            | En rapporteringsenhed henter oplysninger direkte fra de økonomiske data. Den definerer den logiske placering og længder for kontoen og relaterede segmenter. Hver rapporteringsenhedsrække skal have en dimension i denne kolonne. Du kan også placere en dimension i en oversigtsrække (for eksempel for udgifter, der er direkte relateret til denne enhed). Hvis du angiver en dimension i en oversigtsrække, bør konti, der bruges i overordnede enheder, ikke bruges i underordnede enheder. Ellers kan beløb blive dubleret. |
 | Rækkedefinitioner       | Navnet på rækkedefinitionen for rapporteringsenheden. Den samme rækkedefinition bruges til hver enkelt enhed i trædiagrammet. Når du opretter en rapport, bruges denne rækkedefinition til hver enhed i trædiagrammet. Rækkedefinitionen kan indeholde flere sammenkædninger af økonomiske dimensioner. Hvis der er angivet en rækkedefinition i rapporteringstræet, skal du markere afkrydsningsfeltet **Brug rækkedefinition fra rapporteringstræ** under fanen **Rapport** i rapportdefinitionen. |
-| Rækkelink              | Det rækkelink, der skal bruges til enheden i trædiagrammet. Rækkelinks defineres for rækkedefinitionen for at identificere de økonomiske dimensioner, der skal linkes til. |
-| Eksternt link         | Det rækkelink, der skal bruges til enheden i trædiagrammet. Der er defineret link til rækker for rækkedefinitionen for at identificere den rapport, der skal være link til. |
-| Ekstern fil         | Filstien til økonomirapporteringsregnearket, der skal hentes data fra. |
+| Link til økonomiske dimensioner| Link til økonomiske dimensioner, der skal bruges til rapporteringsenheden. Link til økonomiske dimensioner defineres for rækkedefinitionen for at identificere de økonomiske dimensioner, der skal linkes til. |
 | Sideindstillinger          | Denne kolonne angiver, om detaljerne for den rapporteringsenheden tilsidesættes, når rapporten vises eller udskrives. |
 | Opløsning %              | Procentdelen af rapporteringsenheden, der skal allokeres til den overordnede enhed. Den procentdel, du angiver i denne kolonne, gælder for hver række i rækkedefinitionen, før værdien i rækken føjes til den overordnede rapport. Hvis en underordnet enhed for eksempel skal være fordelt ligeligt mellem to afdelinger, skal beløbene i hver række ganges med 50 procent, før værdien føjes til afdelingsrapporten. En rapporteringsenhed kan ikke have to overordnede enheder. Hvis du vil tildele beløbene fra en rapporteringsenhed til to overordnede enheder, skal du oprette en anden rapporteringsenhed, der har samme dimension, for at få vist yderligere 50 procent. Angiv hele procentsatser uden et decimaltegn. For eksempel repræsenterer **25** 25 procent allokering til den overordnede enhed. Hvis du medtager et decimaltegn (**0,25**), fordeles 0,25 procent til den overordnede enhed. Hvis du vil bruge en procentdel, der er mindre end 1 procent, skal du anvende indstillingen **Tillad opløftning på &lt;1 %** i rapportdefinitionen. Denne indstilling er på fanen **Flere indstillinger** i dialogboksen **Rapportindstillinger**. Denne dialogboks er tilgængelig via knappen **Andre** under fanen **Indstillinger** i rapportdefinitionen. |
 | Sikkerhed for enhed         | Begrænsninger for de brugere og grupper, der har adgang til oplysninger for rapporteringsenheden. |
@@ -113,10 +111,10 @@ Hver rapportingstrædefinition vises i entydige visninger. Der er en grafisk vis
 
 Der anvendes følgende typer rapporteringsenheder i økonomirapportering:
 
-- En detaljeenhed henter oplysninger direkte fra de økonomiske data, fra et Excel-regneark eller fra et andet regneark til økonomirapportering.
+- En detaljeenhed henter oplysninger direkte fra de økonomiske data.
 - En oversigtsenhed opsummerer data fra enheder på et lavere niveau.
 
-En overordnet rapporteringsenhed er en oversigtsenhed, der indsamler opsummerede oplysninger fra en detaljeenhed. En oversigtsenhed kan være både en detaljeenhed og en sammenfattende enhed. Derfor kan en oversigtsenhed hente oplysninger fra en enhed på et lavere niveau, de økonomiske data eller et Excel-regneark. En overordnet enhed kan være underordnet enhed for en overordnet enhed på et højere niveau. En underordnet rapporteringsenhed kan være en detaljeenhed, der henter oplysninger direkte fra de økonomiske data eller et Excel-regneark. En underordnet rapporteringsenhed kan også være en midlertidig oversigtsenhed. Med andre ord kan det være den overordnede enhed for en enhed på et lavere niveau og også den underordnede enhed i en oversigtsenhed på et højere niveau. I det mest almindelige scenario for rapporteringsenheder har overordnede enheder en tom celle i kolonnen **Dimensioner**, og underordnede enheder har links til kombinationer af specifikke dimensioner eller dimensioner med jokertegn.
+En overordnet rapporteringsenhed er en oversigtsenhed, der indsamler opsummerede oplysninger fra en detaljeenhed. En oversigtsenhed kan være både en detaljeenhed og en sammenfattende enhed. Derfor kan en oversigtsenhed hente oplysninger fra en enhed på et lavere niveau eller de økonomiske data. En overordnet enhed kan være underordnet enhed for en overordnet enhed på et højere niveau. En underordnet rapporteringsenhed kan være en detaljeenhed, der henter oplysninger direkte fra de økonomiske data. En underordnet rapporteringsenhed kan også være en midlertidig oversigtsenhed. Med andre ord kan det være den overordnede enhed for en enhed på et lavere niveau og også den underordnede enhed i en oversigtsenhed på et højere niveau. I det mest almindelige scenario for rapporteringsenheder har overordnede enheder en tom celle i kolonnen **Dimensioner**, og underordnede enheder har links til kombinationer af specifikke dimensioner eller dimensioner med jokertegn.
 
 ### <a name="organize-reporting-units"></a>Organisere rapporteringsenheder
 
@@ -161,19 +159,6 @@ Du kan forhindre bestemte brugere og grupper i at få adgang til en rapportering
 2. Dobbeltklik på cellen **Sikkerhed for enhed** for den rapporteringsenhedsrække, du vil fjerne adgangen til.
 3. Marker et navn i dialogboksen **Sikkerhed for enhed**, og klik derefter på **Fjern**.
 4. Klik på **OK**.
-
-### <a name="link-to-reports"></a>Link til rapporter
-
-Når du har oprettet en **rapport**-kolonne i rækkedefinitionen og har angivet den rapport, der skal medtages i rapporten, skal du opdatere rapporteringstræet med den tilknyttede kolonne og oplysningerne om rapporten. Der kan importeres en rapport til enhver enhed i rapporteringstræet.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>Identificer rapporten i et rapporteringstræ
-
-1. Åbn den rapporteringstrædefinition, der skal ændres, i Report Designer.
-2. I kolonnen **Rækkedefinitioner** er oplysningerne i cellerne baseret på oplysningerne for den valgte række, fordi det samme rækkedefinition skal bruges i alle rapporteringstræets enheder. Dobbeltklik på cellen **Rækkedefinitioner**, og vælg derefter den rækkedefinition, der indeholder oplysninger om rapporten.
-3. I cellen **Link til regneark** for en rapporteringsenhed skal du vælge det linknavn, der svarer til rapporten.
-4. I cellen **Projektmappe eller rapportsti** for en rapporteringsenhed, skal du angive navnet på rapporten eller søge efter og vælge rapporten.
-5. Hvis du vil angive et regneark i en rapport, skal du angive navnet på regnearket i cellen **Navn på regneark**.
-6. Gentag trin 3 til og med 5 for hver rapporteringsenhed, der skal modtage data fra en rapport. For at forhindre, at der vises forkerte data i rapporten, skal du sørge for, at de korrekte rapportnavne vises i den tilsvarende enhed i rapporteringstræet.
 
 ## <a name="examples"></a>Eksempler
 ### <a name="reporting-unit-structure--example-1"></a>Rapporteringsenhedstruktur – eksempel 1

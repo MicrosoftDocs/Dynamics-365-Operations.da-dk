@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d2d590c95aa4069a1bed306910486c47200cdfd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5befac6c72153332319eefc1aaeab30c33f4c69
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794847"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892245"
 ---
 # <a name="integration-with-finance-faq"></a>Ofte stillede spørgsmål til integration with Finance
 
@@ -50,7 +50,7 @@ Som standard er Dataverse-integrationen slået fra i nye miljøer, der ikke inde
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jeg oprette en ny tilknytning uden at bruge skabelonerne?
 
-Skabeloner bruges som udgangspunkt. Du kan oprette din egen skabelon, men der skal altid bruges en skabelon ved oprettelse af et integrationsprojekt. Du kan finde flere oplysninger om dataintegrator (DI), skabeloner og projekter under [Integrer data i Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+Skabeloner bruges som udgangspunkt. Du kan oprette din egen skabelon, men der skal altid bruges en skabelon ved oprettelse af et integrationsprojekt. Du kan finde flere oplysninger om dataintegrator (DI), skabeloner og projekter under [Integrer data i Microsoft Dataverse](/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>Kan jeg tilknytte økonomiske dimensioner for at overføre mellem Human Resources og Finance?
 
@@ -145,7 +145,7 @@ Integrationen i Finance er en totrinsproces. Kontroller først, at Human Resourc
 
 Hvis dataene ikke vises som forventet i Dataverse, skal du kontrollere, om enheden understøttes i integrationen. For at medtage flere data i Dataverse kræver det en ændring fra Microsofts side.
 
-Hvis enheden understøttes, og dataene er tilgængelige i Dataverse, skal du kontrollere, at tilknytningen i dataintegrator er korrekt. Hvis integratortilknytningen ser ud til at være i orden, skal du kontrollere, at datastyringsjobbet er kørt korrekt. Fejl kan opstå under kørsel af batchjob. Du kan finde flere oplysninger om datastyring i [Datastyring](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Hvis enheden understøttes, og dataene er tilgængelige i Dataverse, skal du kontrollere, at tilknytningen i dataintegrator er korrekt. Hvis integratortilknytningen ser ud til at være i orden, skal du kontrollere, at datastyringsjobbet er kørt korrekt. Fejl kan opstå under kørsel af batchjob. Du kan finde flere oplysninger om datastyring i [Datastyring](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Adresserne for mine medarbejdere er forkerte, når jeg har importeret dem i Finance. Hvad skal jeg gøre?
 
@@ -172,15 +172,15 @@ Opdater dataenhederne i Finance ved at gå til **Datastyring \> Rammeparametre \
 
 - Dataintegrator (DI): 
 
-  - [Integrer data i Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integrer data i Microsoft Dataverse](/powerapps/administrator/data-integrator)
 
-  - [Dataintegrator-fejlstyring og fejlfinding](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [Dataintegrator-fejlstyring og fejlfinding](/powerapps/administrator/data-integrator-error-management)
 
-  - [Svar på DSR-anmodninger om systemgenererede logfiler i Power Apps, Microsoft Power Automate og Dataverse](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Svar på DSR-anmodninger om systemgenererede logfiler i Power Apps, Microsoft Power Automate og Dataverse](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Datastyring:
 
-  - [Datastyring](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Datastyring](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

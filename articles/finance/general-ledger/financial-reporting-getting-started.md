@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37af06a33667f7cfe5df182d5197dee5edc912b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811281"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897030"
 ---
 # <a name="get-started-with-financial-reporting"></a>Introduktion til Financial Reporting 
 
@@ -148,7 +148,7 @@ Problem 1: Report Designer starter ikke, når du vælger **Ny** eller **Rediger*
 * I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til. I området, der er angivet med Sikkerhedsniveau for denne zone, skal du ændre indstillingen til **Mellem-Lav**.
 * Deaktiver blokering af pop op-vinduer i din browser.
 * Der kræves arbejdsstationer for at installere Microsoft .NET Framework 4.6.2 eller nyere. Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Hvis du bruger Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører Chrome i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Du kan finde flere oplysninger om Chrome ClickOnce-udvidelsen i [Systemkrav til skyinstallationer](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Hvis du bruger Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører Chrome i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Du kan finde flere oplysninger om Chrome ClickOnce-udvidelsen i [Systemkrav til skyinstallationer](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Hvis du bruger Microsoft Edge med en Chrome-browser, behøver du ikke installere en ClickOnce-udvidelse til Edge Chromium. Du skal dog aktivere ClickOnce-indstillingen for at hente rapportdesigner-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand.
      1. Åbn en ny browser i Microsoft Edge.
      2. Angiv **edge://flags**, og vælg **Enter**.

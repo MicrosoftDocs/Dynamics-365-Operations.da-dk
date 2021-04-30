@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818610"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897906"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluer den indledende forudsigelsesmodel for debitorbetalinger (prøveversion)
 
@@ -41,7 +41,7 @@ Dette link fører dig til AI Builder, hvor du kan lære mere om den aktuelle mod
 
 Den side, der er åbnet, viser følgende oplysninger:
 
-- I afsnittet **Ydeevne** giver modellens ydeevne et overslag over modellens kvalitet. Du kan finde flere oplysninger om denne klasse i [Forudsigelsesmodel-ydeevne](https://docs.microsoft.com/ai-builder/prediction-performance) i dokumentationen til AI Builder.
+- I afsnittet **Ydeevne** giver modellens ydeevne et overslag over modellens kvalitet. Du kan finde flere oplysninger om denne klasse i [Forudsigelsesmodel-ydeevne](/ai-builder/prediction-performance) i dokumentationen til AI Builder.
 - Afsnittet **Data med mest indflydelse** viser, hvordan vigtige andre inputtyper for data var for din model. Du kan evaluere denne liste og de tilsvarende procenter for at afgøre, om oplysningerne er i overensstemmelse med det, du kender til din virksomhed og dit marked.
 
     [![Ydeevne og de dataafsnit med mest indflydelse til forudsigelsesmodellen](./media/models.png)](./media/models.png)

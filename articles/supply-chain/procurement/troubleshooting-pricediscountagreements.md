@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 12bc3cbccb1577c278489f640299510b3ced17e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ccc1d52b83f9319af1c6336c1876c795c70028a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811080"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908513"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Lokalisere fejl i priser, rabatter og aftaler
 
@@ -37,7 +37,7 @@ Når du ændrer afsendelsesdatoen, kan du få vist en meddelelse, der angiver "O
 
 Meddelelsen udløses, hver gang en af datoerne eller andre parametre ændres. Formålet med meddelelsen er at sikre, at du er opmærksom på prisændringer, der kan forekomme på grund af disse ændringer.
 
-Meddelelsen er anmodningen om evaluering af samhandelsaftalen. En fuldstændig beskrivelse finder du i [Politikker til evaluering af samhandelsaftale](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
+Meddelelsen er anmodningen om evaluering af samhandelsaftalen. En fuldstændig beskrivelse finder du i [Politikker til evaluering af samhandelsaftale](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
 
 ## <a name="a-purchase-order-receipt-doesnt-include-all-charges"></a>En købsordrekvittering omfatter ikke alle gebyrer.
 

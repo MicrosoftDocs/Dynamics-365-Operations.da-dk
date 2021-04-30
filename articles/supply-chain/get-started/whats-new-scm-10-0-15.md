@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e550f310fe3ec0aaee9c16f3edccd775921a64be
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c993c10bdd3517ed8a3e192851b4716cba1c638
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821147"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909961"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.15 (januar 2021)
 
@@ -33,23 +33,23 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende funktioner er inkluderet i denne version. Følg linkene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
+Følgende funktioner er inkluderet i denne version. Følg linkene til [frigivelsesplanen](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
 
 - Enhedsstyring i sky- og kantskalering med produktions- og udførelsesbelastninger for lagersted<br> - Du kan finde flere oplysninger under [Enhedsstyring i sky- og kantskalering til arbejdsbyrder i produktion og lokationsstyring](../cloud-edge/cloud-edge-landing-page.md).
 
-- [Opret, og behandl overførselsordrer fra lagersteds-appen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Du kan finde flere oplysninger under [Oprette flytteordrer fra lagerstedsappen](../warehousing/create-transfer-order-from-warehouse-app.md).
+- [Opret, og behandl overførselsordrer fra lagersteds-appen](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Du kan finde flere oplysninger under [Oprette flytteordrer fra lagerstedsappen](../warehousing/create-transfer-order-from-warehouse-app.md).
 
-- [Standardfelter til svar på tilbudsanmodninger for leverandørbud](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Du kan finde flere oplysninger under [Oversigt over tilbudsanmodninger](../procurement/request-quotations.md).
+- [Standardfelter til svar på tilbudsanmodninger for leverandørbud](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Du kan finde flere oplysninger under [Oversigt over tilbudsanmodninger](../procurement/request-quotations.md).
 
-- [Tilføjelsesprogram for teknisk ændringsstyring til Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Yderligere oplysninger finder du i [Oversigt over teknisk ændringsstyring](../engineering-change-management/product-engineering-overview.md).
+- [Tilføjelsesprogram for teknisk ændringsstyring til Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Yderligere oplysninger finder du i [Oversigt over teknisk ændringsstyring](../engineering-change-management/product-engineering-overview.md).
 
-- [Mixed-Reality-vejledninger til produktion](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Du kan finde flere oplysninger under [Levere Mixed-Reality-vejledninger til arbejdere i produktion](../production-control/instruction-guides-in-production-overview.md).
+- [Mixed-Reality-vejledninger til produktion](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Du kan finde flere oplysninger under [Levere Mixed-Reality-vejledninger til arbejdere i produktion](../production-control/instruction-guides-in-production-overview.md).
 
-- [Ny brugeroplevelse af udførelse i produktionsanlægget](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Der er flere oplysninger under [Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere](../production-control/production-floor-execution-use.md).
+- [Ny brugeroplevelse af udførelse i produktionsanlægget](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Der er flere oplysninger under [Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere](../production-control/production-floor-execution-use.md).
 
-- [Proces for hændelser for lagerapp](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Du kan finde flere oplysninger under [Hændelsesbehandling i lagerstedsapp](../warehousing/warehouse-app-events.md).
+- [Proces for hændelser for lagerapp](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Du kan finde flere oplysninger under [Hændelsesbehandling i lagerstedsapp](../warehousing/warehouse-app-events.md).
 
-- [Gemte visninger for siden Frigivne produkter](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Du kan finde flere oplysninger i [Gemte visninger](../../fin-ops-core/fin-ops/get-started/saved-views.md).
+- [Gemte visninger for siden Frigivne produkter](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Du kan finde flere oplysninger i [Gemte visninger](../../fin-ops-core/fin-ops/get-started/saved-views.md).
 
 - USMCA-certificering af oprindelsesdokument<br> - Yderligere oplysninger finder du i [USMCA-certificering af oprindelse](../transportation/usmca-certification-of-origin.md).
 
@@ -69,7 +69,7 @@ Du kan finde flere oplysninger om de fejlrettelser, der er inkluderet i hver af 
 
 Vil du gerne vide mere om kommende og de senest frigivne funktioner i en af vores forretningsapps eller platforme?
 
-Se [Dynamics 365: 2020-frigivelsesplan bølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
+Se [Dynamics 365: 2020-frigivelsesplan bølge 2](/dynamics365-release-plan/2020wave2/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 

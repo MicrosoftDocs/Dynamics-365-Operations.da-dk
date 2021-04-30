@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 1762425642ee976b32c9daf3fbb90961fa983d19
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b7d26144421b9a9bd0550a2fe9e73312ed8e8fa5
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819394"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909274"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.8 (februar 2020)
 
@@ -33,28 +33,28 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. Nogle af disse funktioner kan også have været medtaget i en tidligere trinvis version, men de blev ikke annonceret i det forrige emne *Nyheder*, så vi tilføjer dem her. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
+Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. Nogle af disse funktioner kan også have været medtaget i en tidligere trinvis version, men de blev ikke annonceret i det forrige emne *Nyheder*, så vi tilføjer dem her. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
-- [Flere lokationszoner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [Flere lokationszoner](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 
-- [Aktivstyring](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Få flere oplysninger i [Oversigt over aktivstyring](../asset-management/index.md).
-- [Annuller arbejde](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Du kan finde flere oplysninger i [Annullere lagerstedsarbejde for undtagelseshåndtering](../warehousing/cancel-warehouse-work.md).
-- [Skift arbejdspulje på arbejde](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Du kan finde flere oplysninger under [Skift arbejdspulje på arbejde](../warehousing/change-work-pool-on-work.md).
-- [Klyngeplacering fuld](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - Du kan finde flere oplysninger under [Klyngeplacering fuld](../warehousing/cluster-position-full.md).
-- [Bekræft og flyt](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Yderligere oplysninger finder du under [Bekræfte og flytte](../warehousing/confirm-and-transfer.md).
-- [Aldersfordeling i lokalitetsvejledning til lagerpluk](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Yderligere oplysninger finder du under [Aldersfordeling i lokalitetsvejledning til lagerpluk](../warehousing/location-directive-inventory-picking-aging.md).
-- [Placeringsstatus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
-- [Pluklinjegruppering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Du kan finde flere oplysninger i [Pluklinjegruppering](../warehousing/pick-line-grouping.md).
-- [Automatisk opdatering af forsendelse](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Du kan finde flere oplysninger under [Automatiske opdateringer af forsendelser](../warehousing/auto-update-shipment.md).
-- [Opdel efterspørgsel af genopfyldningsarbejde fra trinnet Opret plukarbejde](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
-- [Opdel arbejde](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
-- [Systembaseret klyngepluk](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)<br> - Du kan finde flere oplysninger under [Systembaseret klyngepluk](../warehousing/system-directed-cluster-pick.md).
-- [Opgavevalidering af appen Lagersted med RSAT](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
-- [Regel for frigivelse til lagersted](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
-- [Visuel bølgestatus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [Bølgeskabelongruppering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - Du kan finde flere oplysninger under [Bølgeskabelongruppering](../warehousing/wave-template-grouping.md).
-- [Arbejdslinjedetaljer](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Du kan få flere oplysninger under [Arbejdslinjedetaljer](../warehousing/work-line-details.md) og ved at se videoen [Arbejdslinjedetaljer](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
-- [Tærskel for genopfyldning af zone](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - Yderligere oplysninger finder du under [Tærskel for genopfyldning af zone](../warehousing/zone-threshold-replenishment.md).
+- [Aktivstyring](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Få flere oplysninger i [Oversigt over aktivstyring](../asset-management/index.md).
+- [Annuller arbejde](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Du kan finde flere oplysninger i [Annullere lagerstedsarbejde for undtagelseshåndtering](../warehousing/cancel-warehouse-work.md).
+- [Skift arbejdspulje på arbejde](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Du kan finde flere oplysninger under [Skift arbejdspulje på arbejde](../warehousing/change-work-pool-on-work.md).
+- [Klyngeplacering fuld](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - Du kan finde flere oplysninger under [Klyngeplacering fuld](../warehousing/cluster-position-full.md).
+- [Bekræft og flyt](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Yderligere oplysninger finder du under [Bekræfte og flytte](../warehousing/confirm-and-transfer.md).
+- [Aldersfordeling i lokalitetsvejledning til lagerpluk](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Yderligere oplysninger finder du under [Aldersfordeling i lokalitetsvejledning til lagerpluk](../warehousing/location-directive-inventory-picking-aging.md).
+- [Placeringsstatus](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
+- [Pluklinjegruppering](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Du kan finde flere oplysninger i [Pluklinjegruppering](../warehousing/pick-line-grouping.md).
+- [Automatisk opdatering af forsendelse](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Du kan finde flere oplysninger under [Automatiske opdateringer af forsendelser](../warehousing/auto-update-shipment.md).
+- [Opdel efterspørgsel af genopfyldningsarbejde fra trinnet Opret plukarbejde](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
+- [Opdel arbejde](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
+- [Systembaseret klyngepluk](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)<br> - Du kan finde flere oplysninger under [Systembaseret klyngepluk](../warehousing/system-directed-cluster-pick.md).
+- [Opgavevalidering af appen Lagersted med RSAT](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
+- [Regel for frigivelse til lagersted](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
+- [Visuel bølgestatus](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
+- [Bølgeskabelongruppering](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - Du kan finde flere oplysninger under [Bølgeskabelongruppering](../warehousing/wave-template-grouping.md).
+- [Arbejdslinjedetaljer](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Du kan få flere oplysninger under [Arbejdslinjedetaljer](../warehousing/work-line-details.md) og ved at se videoen [Arbejdslinjedetaljer](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
+- [Tærskel for genopfyldning af zone](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - Yderligere oplysninger finder du under [Tærskel for genopfyldning af zone](../warehousing/zone-threshold-replenishment.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -70,7 +70,7 @@ Du kan finde flere oplysninger om de fejlrettelser, der er inkluderet i hver af 
 
 Vil du gerne vide mere om kommende og de senest frigivne funktioner i en af vores forretningsapps eller platforme?
 
-Se [Dynamics 365: 2019-frigivelsesplan bølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
+Se [Dynamics 365: 2019-frigivelsesplan bølge 2](/dynamics365-release-plan/2019wave2/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 

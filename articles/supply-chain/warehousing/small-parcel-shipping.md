@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 3969ee6b46f38fe2650881fb0183c60aadce6c8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3e72959d79e9b3b03e061a0f26750e3bd025219e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831164"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910203"
 ---
 # <a name="small-parcel-shipping"></a>Forsendelse af småpakker
 
@@ -58,7 +58,7 @@ Følg disse trin for at hente demosatsprogrammet.
 Du kan finde flere oplysninger om oprettelse og implementering af funktionelle satsprogrammer, så de kan bruges i en produktion eller et testmiljø, under følgende emner:
 
 - [Oprette et nyt transportstyringsprogram](../transportation/create-new-transportation-management-engine.md)
-- [Konfigurere transportstyringsprogrammer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
+- [Konfigurere transportstyringsprogrammer](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
 
 Yderligere oplysninger om, hvordan du opretter et SPS-satsprogram, finder du i følgende blogindlæg: [Forsendelse af småpakker: Sådan udnytter du funktionen til forsendelse af småpakker i Microsoft Dynamics 365](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
 

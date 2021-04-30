@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0513dffb6395eaf00f4c71df91938a5db6486daf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 16f4ead0e195280555f0825d617b9c4fcf0e827a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832196"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909567"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.12 (august 2020)
 
@@ -33,25 +33,25 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
+Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
-- [Tillad låsning af berøringsskærm til jobkort for rensning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - Du kan finde flere oplysninger under [Konfigurere jobkort for enheder](../production-control/config-job-card-device.md).
+- [Tillad låsning af berøringsskærm til jobkort for rensning](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - Du kan finde flere oplysninger under [Konfigurere jobkort for enheder](../production-control/config-job-card-device.md).
 
-- [Hent produktvarianter og sporingsdimensioner i lagerstedsappen under modtagelse af varelast](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - Du kan finde flere oplysninger under [Konfigurere mobilenheder til lagerstedsarbejde](../warehousing/configure-mobile-devices-warehouse.md).
+- [Hent produktvarianter og sporingsdimensioner i lagerstedsappen under modtagelse af varelast](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - Du kan finde flere oplysninger under [Konfigurere mobilenheder til lagerstedsarbejde](../warehousing/configure-mobile-devices-warehouse.md).
 
 - Omkostningsberegningsniveau (nyt styklisteniveau)<br> - Du kan finde flere oplysninger under [Omkostningsberegningsniveau](../cost-management/cost-calculation-level.md).
 
-- [Kundeportal til Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - Du kan finde flere oplysninger i [Oversigt over kundeportal til Dynamics 365 Supply Chain Management](../sales-marketing/customer-portal-overview.md).
+- [Kundeportal til Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - Du kan finde flere oplysninger i [Oversigt over kundeportal til Dynamics 365 Supply Chain Management](../sales-marketing/customer-portal-overview.md).
 
-- [Kerneindsigt i IoT-intelligens](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Du kan finde flere oplysninger på [Startside for IoT-intelligens](../iot/iot-intelligence-home-page.md).
+- [Kerneindsigt i IoT-intelligens](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Du kan finde flere oplysninger på [Startside for IoT-intelligens](../iot/iot-intelligence-home-page.md).
 
-- [Forbedringer af modtager-id med lagerstedsapp (fortsat)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Du kan finde flere oplysninger under [Modtagelse af id via mobilappen Lokationsstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Forbedringer af modtager-id med lagerstedsapp (fortsat)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Du kan finde flere oplysninger under [Modtagelse af id via mobilappen Lokationsstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Masseinstallation for Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Du kan finde flere oplysninger under [Installere og tilslutte mobilappen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md).
+- [Masseinstallation for Warehouse Mobile App](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Du kan finde flere oplysninger under [Installere og tilslutte mobilappen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md).
 
-- [Maksimal udførelsestid for jobbet i lokationsstyring til oprydning i disponible poster](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Du kan finde flere oplysninger under [Oprydningsjob for disponible poster for lokationsstyring](../warehousing/onhand-cleanup.md).
+- [Maksimal udførelsestid for jobbet i lokationsstyring til oprydning i disponible poster](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Du kan finde flere oplysninger under [Oprydningsjob for disponible poster for lokationsstyring](../warehousing/onhand-cleanup.md).
 
-- [Understøttelse af planlægningsoptimering for handelsaftaler om indkøb](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - Du kan finde flere oplysninger under [Varedisponering med samhandelsaftaler vedrørende indkøb](../master-planning/planning-optimization/purchase-trade-agreement.md).
+- [Understøttelse af planlægningsoptimering for handelsaftaler om indkøb](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - Du kan finde flere oplysninger under [Varedisponering med samhandelsaftaler vedrørende indkøb](../master-planning/planning-optimization/purchase-trade-agreement.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -67,7 +67,7 @@ Du kan finde flere oplysninger om de fejlrettelser, der er inkluderet i hver af 
 
 Vil du gerne vide mere om kommende og de senest frigivne funktioner i en af vores forretningsapps eller platforme?
 
-Se [Dynamics 365: 2020-frigivelsesplan bølge 1](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
+Se [Dynamics 365: 2020-frigivelsesplan bølge 1](/dynamics365-release-plan/2020wave1/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 

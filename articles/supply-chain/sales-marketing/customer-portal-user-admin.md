@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4d6d88f69f9b958c9e8f49695d07d0b593da2258
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840695"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907759"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Oprette og administrere brugere af kundeportalen
 
@@ -44,26 +44,26 @@ Før du begynder at invitere nye kunder, skal du sikre dig, at du har aktiveret 
 
 ## <a name="the-invitation-process"></a>Invitationsprocessen
 
-Hvis du vil invitere en eksisterende kontaktperson til kundeportalen, skal du følge trinnene i [Inviter kontaktpersoner til dine portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) i dokumentation for Power Apps-portaler.
+Hvis du vil invitere en eksisterende kontaktperson til kundeportalen, skal du følge trinnene i [Inviter kontaktpersoner til dine portaler](/powerapps/maker/portals/configure/invite-contacts) i dokumentation for Power Apps-portaler.
 
-Før du inviterer en kunde til at deltage i kundeportalen, skal du kontrollere, at kundens [kontaktpersonpost](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) er tilgængelig og konfigureret på følgende måde:
+Før du inviterer en kunde til at deltage i kundeportalen, skal du kontrollere, at kundens [kontaktpersonpost](/powerapps/maker/portals/configure/configure-contacts) er tilgængelig og konfigureret på følgende måde:
 
 1. Angiv feltet til **Firma** for den juridiske enhed, som du ønsker, kunden skal tilhøre i Supply Chain Management.
 2. Angiv feltet **Kontonummer** til det kundekontonummer, som du ønsker, kunden skal have i Supply Chain Management.
 
 Når en kontakt er oprettet, skal du kunne se den i Supply Chain Management.
 
-Du kan finde flere oplysninger under [Konfigurere en kontaktperson til brug på en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) i dokumentationen for Power Apps-portaler.
+Du kan finde flere oplysninger under [Konfigurere en kontaktperson til brug på en portal](/powerapps/maker/portals/configure/configure-contacts) i dokumentationen for Power Apps-portaler.
 
 ## <a name="out-of-box-web-roles-and-table-permissions"></a>Køreklare webroller og tabeltilladelser
 
-Brugerroller i Power Apps-portaler defineres af [webroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [tabeltilladelser](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Der er defineret nogle få roller for kundeportalen lige fra starten. Du kan oprette nye roller, og du kan redigere eller fjerne eksisterende roller.
+Brugerroller i Power Apps-portaler defineres af [webroller](/powerapps/maker/portals/configure/create-web-roles) og [tabeltilladelser](/powerapps/maker/portals/configure/assign-entity-permissions). Der er defineret nogle få roller for kundeportalen lige fra starten. Du kan oprette nye roller, og du kan redigere eller fjerne eksisterende roller.
 
 ### <a name="out-of-box-web-roles"></a>Out-of-box-webroller
 
 I dette afsnit beskrives de webroller, der leveres sammen med kundeportalen.
 
-Du kan finde flere oplysninger om, hvordan du redigerer køreklare brugerroller, under [Oprette webroller til portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [Tilføje postbaseret sikkerhed ved at bruge tabeltilladelser til portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen for Power Apps-portaler.
+Du kan finde flere oplysninger om, hvordan du redigerer køreklare brugerroller, under [Oprette webroller til portaler](/powerapps/maker/portals/configure/create-web-roles) og [Tilføje postbaseret sikkerhed ved at bruge tabeltilladelser til portaler](/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen for Power Apps-portaler.
 
 #### <a name="administrator"></a>Administrator
 

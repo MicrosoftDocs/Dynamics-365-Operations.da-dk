@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7642b26be08427ccbef3929f2a2e083ce43d4e75
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819644"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897398"
 ---
 # <a name="cash-flow-forecasting"></a>Likviditetsbudget
 
@@ -144,7 +144,7 @@ Arbejdsområdet **Oversigt over kontanter – alle firmaer** viser likviditetsbu
 
 Arbejdsområdet **Oversigt over kontanter - aktuelt firma** viser likviditetsbudgetteringsanalyser i firmaets definerede regnskabsvaluta. Den regnskabsvaluta, der bruges til analyser, defineres på siden **Finans**. Dette arbejdsområde viser en oversigt over likviditetsbudgettering og bankkontosaldi for det aktuelle firma. Et diagram over indgående og udgående pengestrømme giver et overblik over de fremtidige kontantbevægelser og -saldi i regnskabsvalutaen sammen med detaljerede oplysninger om de budgetterede posteringer. Du kan også se saldi for budgetteret valuta.
 
-Du kan finde flere oplysninger om likviditetsbudgetteringsanalyser i emnet [Power BI-indhold for oversigt over kontanter](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
+Du kan finde flere oplysninger om likviditetsbudgetteringsanalyser i emnet [Power BI-indhold for oversigt over kontanter](./cash-overview-power-bi-content.md).
 
 Desuden kan du få vist likviditetsbudgetteringsdata for bestemte konti, ordrer og varer på de følgende sider:
 

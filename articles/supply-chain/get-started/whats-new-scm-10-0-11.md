@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fa6a57266838fff4c34384337200fc6f24cbe640
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b66fd7c0ca79f21ff51beee22e4fc57c37a1904
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821171"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909591"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.11. (juli 2020)
 
@@ -33,19 +33,19 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
+Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation eller videoer, der aktuelt er tilgængelige for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
-- [Lagring af rapporten Disponibelt lager](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
+- [Lagring af rapporten Disponibelt lager](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [Forbedringer af modtager-id med lagerstedsapp](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Du kan finde flere oplysninger under [Modtagelse af id via mobilappen Lokationsstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Forbedringer af modtager-id med lagerstedsapp](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Du kan finde flere oplysninger under [Modtagelse af id via mobilappen Lokationsstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Forbedringer af linjereservation i formular for batchnummerreservation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Yderligere oplysninger finder du under [Reservere samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md).
+- [Forbedringer af linjereservation i formular for batchnummerreservation](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Yderligere oplysninger finder du under [Reservere samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md).
 
-- [Nye dataenheder til produktionsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Nye dataenheder til produktionsområdet](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Overtilgang af lastantal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Du finder flere oplysninger under [Lagerstedshåndtering af indgående laster til indkøbsordrer](../warehousing/inbound-load-handling.md).
+- [Overtilgang af lastantal](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Du finder flere oplysninger under [Lagerstedshåndtering af indgående laster til indkøbsordrer](../warehousing/inbound-load-handling.md).
 
-- [Rapportér som afsluttet på batchnumre fra jobkortenheden](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Du kan finde flere oplysninger under [Færdigmelde fra jobkortenheden](../production-control/report-finished-job-device.md).
+- [Rapportér som afsluttet på batchnumre fra jobkortenheden](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Du kan finde flere oplysninger under [Færdigmelde fra jobkortenheden](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -61,7 +61,7 @@ Du kan finde flere oplysninger om de fejlrettelser, der er inkluderet i hver af 
 
 Vil du gerne vide mere om kommende og de senest frigivne funktioner i en af vores forretningsapps eller platforme?
 
-Se [Dynamics 365: 2020-frigivelsesplan bølge 1](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
+Se [Dynamics 365: 2020-frigivelsesplan bølge 1](/dynamics365-release-plan/2020wave1/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8969345b8499bacfeecb0a1535174ce988eabc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 31bfc203e9db28acee4b5b52b36f64d90dc4f714
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837411"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909249"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Opgradere lokationsstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management 
 
@@ -66,7 +66,7 @@ Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produk
 1.  Opret mindst én ny lokationsprofil.
 2.  Klik på **Lokationsstyring** &gt; **Konfiguration** &gt; **Aktivér lokationsstyringsprocesser** &gt; **Aktivér opsætning af lagersted**.
 3.  På siden **Aktivér opsætning af lagersted** skal du tilføje de lagersteder, der skal aktiveres. Du kan udføre dette trin enten direkte på siden eller ved hjælp af Microsoft Office-integration.
-4.  Tildel alle lokationer en lokationsprofil. Du kan nemt udføre dette trin ved hjælp af Microsoft Office-integration direkte fra siden. Du kan eksportere og importere dataene, eller du kan bruge behandling af dataenhed i [Datastyring](../../dev-itpro/data-entities/data-entities.md).
+4.  Tildel alle lokationer en lokationsprofil. Du kan nemt udføre dette trin ved hjælp af Microsoft Office-integration direkte fra siden. Du kan eksportere og importere dataene, eller du kan bruge behandling af dataenhed i [Datastyring](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 5.  Valider ændringerne. Som en del af valideringsprocessen forekommer forskellige valideringer af dataintegriteten. Som en del af en større opgraderingsproces skal problemer, der måtte opstå, tilpasses på kildeimplementeringen. I så fald skal der foretages en yderligere dataopgradering.
 6.  Få behandlet ændringerne.
 
@@ -77,7 +77,7 @@ Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produk
 3.  På siden **Reservationshierarki** skal du definere et nyt hierarki til reservation i henhold til varens lagrings- og sporingsdimensionsgrupper.
 4.  Opret en eller flere enhedsseriegrupper, der omfatter mindst samme enheder, der bruges til varens lagerenheder.
 5.  Klik på **Lokationsstyring** &gt; **Konfiguration** &gt; **Aktivér lokationsstyringsprocesser** &gt; **Ændre lagringsdimensionsgruppen for varer**.
-6.  På siden **Ændre lagringsdimensionsgruppen for varer** skal du tilføje varenumre, lagringsdimensionsgrupper og enhedsseriegrupper. Du kan udføre dette trin direkte på siden, ved at bruge Microsoft Office-integration eller ved hjælp af dataenhedsprocessen i [Datastyring](../../dev-itpro/data-entities/data-entities.md).
+6.  På siden **Ændre lagringsdimensionsgruppen for varer** skal du tilføje varenumre, lagringsdimensionsgrupper og enhedsseriegrupper. Du kan udføre dette trin direkte på siden, ved at bruge Microsoft Office-integration eller ved hjælp af dataenhedsprocessen i [Datastyring](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 7.  Valider ændringerne. Som en del af valideringsprocessen forekommer forskellige valideringer af dataintegriteten. Som en del af en større opgraderingsproces skal problemer, der måtte opstå, tilpasses på kildeimplementeringen. I så fald skal der foretages en yderligere dataopgradering.
 8.  Få behandlet ændringerne. En opdatering af alle lagerdimensionerne kan tage et stykke tid. Du kan overvåge status ved hjælp af batchjobopgaverne.
 

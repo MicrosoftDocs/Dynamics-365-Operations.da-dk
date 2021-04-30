@@ -2,7 +2,8 @@
 title: Modulet Butiksvælger
 description: Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798627"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853411"
 ---
 # <a name="store-selector-module"></a>Butiksvælgermodul
 
@@ -32,11 +33,32 @@ Kunder kan bruge butiksvælgermodulet til at hente et produkt i en valgt butik e
 
 I butiksvælgermodulet kan brugerne angive en placering (by, stat, adresse osv.) til søgning efter butikker inden for en søgeradius. Når modulet åbnes første gang, bruges kundens browserplacering til at søge efter butikker (hvis der er givet samtykke).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Brug af butiksvælgermodul i e-handel
+## <a name="store-selector-module-usage"></a>Brug af butiksvælgermodul
 
 - Et butiksvælgermodul kan bruges på siden med produktdetaljer (PDP) til at vælge en butik til afhentning.
 - Et butiksvælgermodul kan bruges på en side med indkøbsvogn til at vælge en butik til afhentning.
 - Et butiksvælgermodul kan bruges på en enkeltstående side, der viser alle tilgængelige butikker.
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Konfigurere opfyldelsesgruppe i Commerce-hovedkontoret
+
+For at butiksvælgeren kan vise tilgængelige butikker, skal opfyldelsesgruppen være konfigureret i Commerce-hovedkontoret. Du kan finde flere oplysninger under [Konfigurere opfyldelsesgrupper](customer-orders-overview.md#set-up-fulfillment-groups).
+
+Derudover skal butikslokationens længdegrad og breddegrad defineres i hovedkontoret for hver butik i opfyldelsesgruppen.
+
+Følg disse trin for at angive længde- og breddegrad for butiksadressen i Commerce-hovedkontoret.
+
+1. Gå til **Lagerstyring \> Opsætning \> Lageropdeling**.
+1. Vælg lagerstedslokation i venstre rude.
+1. Vælg **Avanceret** i oversigtspanelet **Adresser**.
+
+    ![Eksempel på butiksoplysninger i hovedkvarter](./media/Store-address.png)
+
+1. Vælg **Rediger** i handlingsruden.
+1. Angiv værdier for **Længdegrad** og **Breddegrad** i oversigtspanelet **Generelt**.
+
+    ![Eksempel på konfiguration af breddegrad og længdegrad for en butik i hovedkontoret](./media/Store-latitude-longitude.png)
+
+1. Vælg **Gem** i handlingsruden. 
 
 ## <a name="bing-maps-integration"></a>Bing Kort-integration
 
@@ -48,6 +70,7 @@ For Autosuggest-REST-API'en skal du sikre, at følgende URL-adresser er tilladte
 - Til **img-src**-direktivet skal du tilføje **&#42;.virtualearth.net**.
 - Til direktivet **script-src** skal du **tilføje &#42;.bing.com, &#42;.virtualearth.net**.
 - Til direktivet **script style-src** skal du tilføje **&#42;.bing.com**.
+
  
 ## <a name="pickup-in-store-mode"></a>Afhent i butik-tilstand
 

@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9aa3e1f6fc14d2c0c8f35307f1084d09399c08f5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d46b87428e642d970a5efd8c6d4c4a462f3a3ea
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832706"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894712"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Understøttede standarder til elektronisk fakturering i Europa
 
@@ -44,7 +44,7 @@ Der findes følgende landespecifikke formater for elektroniske fakturaer:
 -   Estisk specifikt format version 1.2
 -   Finvoice 3.0 for Finland
 
-Elektronisk fakturering er baseret på [Elektronisk indberetning (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). Der er oprettet en **Fakturamodel**-datamodel, fakturamodeltilknytning og flere forskellige lande-/områdespecifikke formatkonfigurationer for følgende lande/områder: 
+Elektronisk fakturering er baseret på [Elektronisk indberetning (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). Der er oprettet en **Fakturamodel**-datamodel, fakturamodeltilknytning og flere forskellige lande-/områdespecifikke formatkonfigurationer for følgende lande/områder: 
 
 - Østrig (AT)
 - Danmark (DK)
@@ -105,7 +105,7 @@ Opsætningen og de særlige oplysninger om elektroniske fakturaer afhænger af d
 - [PEPPOL](https://support.microsoft.com/help/4490320)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-Du kan få flere oplysninger om opsætning af elektroniske fakturaer ved at afspille følgende [opgaveguider](../../fin-and-ops/get-started/help-overview.md#task-guides) i ruden Hjælp:
+Du kan få flere oplysninger om opsætning af elektroniske fakturaer ved at afspille følgende [opgaveguider](../../fin-ops-core/fin-ops/get-started/help-overview.md#task-guides) i ruden Hjælp:
 
  - Konfigurere elektronisk OIOUBL-fakturering
  - Importere OIOUBL elektroniske faktureringskonfigurationer

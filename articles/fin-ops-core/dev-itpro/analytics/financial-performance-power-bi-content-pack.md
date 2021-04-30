@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce180c28be2cea1115937b1b1fbdf2323903e4ad
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 953f477e7e00cde7f814ff28d3dfd8ed7075dafc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743371"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893220"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>PowerBI.com-løsning til driftsregnskab
 
@@ -85,7 +85,7 @@ Følgende enheder blev brugt som grundlag for PowerBI.com-løsningen til **Drift
 - Finans
 - ChartofAccounts
 
-Disse enheder blev brugt til at oprette beregnede målinger i datamodellen. De beregnede mål bruges til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdet. Som standard omfatter indholdet data for de sidste tre år og et år frem. Hvis du vil medtage yderligere beregninger i rapporter og dashboard, kan du redigere [Microsoft Excel-projektmappen](https://docs.microsoft.com/dynamics/s-e/). Denne projektmappe er den standarddatamodel, der blev brugt til at oprette indholdet.
+Disse enheder blev brugt til at oprette beregnede målinger i datamodellen. De beregnede mål bruges til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdet. Som standard omfatter indholdet data for de sidste tre år og et år frem. Hvis du vil medtage yderligere beregninger i rapporter og dashboard, kan du redigere [Microsoft Excel-projektmappen](/dynamics/s-e/). Denne projektmappe er den standarddatamodel, der blev brugt til at oprette indholdet.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

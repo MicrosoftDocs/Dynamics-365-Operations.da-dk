@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 49807c90c145eee55fae2d515fd19925eb2d944c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 11e044e04e05c68af676bf97e6085e9975da5c1d
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810408"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911242"
 ---
 # <a name="planned-cross-docking"></a>Planlagt cross-docking
 
@@ -28,19 +28,21 @@ Dette emne beskriver avanceret planlagt cross-docking. Cross-docking er en lager
 
 Cross-docking giver arbejdere mulighed for at overspringe indgående læg på lager og udgående plukning af lager, der allerede er markeret for en udgående ordre. Derfor minimeres det antal gange, som lageret berøres med, hvor det er muligt. Da der desuden sker mindre interaktion med systemet, forhøjes tids- og lagerpladsbesparelserne i forhold til lagerets produktion.
 
-Før cross-docking kan køres, skal brugeren konfigurere en ny cross-docking/skabelon, hvor forsyningskilden og andre sæt af krav til cross-docking er angivet. Efterhånden som den udgående ordre oprettes, skal linjen markeres i forhold til en indgående ordre, der indeholder den samme vare.
+Før cross-docking kan køres, skal du konfigurere en ny cross-docking/skabelon, hvor forsyningskilden og andre sæt af krav til cross-docking er angivet. Efterhånden som den udgående ordre oprettes, skal linjen markeres i forhold til en indgående ordre, der indeholder den samme vare. Du kan vælge feltet med vejledningskode i skabelonen for cross-docking, på samme måde som du konfigurerer genopfyldnings- og indkøbsordrer.
 
 På tidspunktet for modtagelse af indgående ordrer identificerer opsætningen af cross-docking automatisk behovet for cross-docking og opretter bevægelsesarbejdet for den ønskede mængde på basis af opsætningen af lokationsvejledningen.
 
 > [!NOTE]
-> Registreringen af lagertransaktioner annulleres **ikke**, når cross-docking annulleres, også selvom indstillingen for denne funktion er aktiveret i parametrene for lokationsstyring.
+> Registreringen af lagertransaktioner annulleres *ikke*, når cross-docking annulleres, også selvom indstillingen for denne funktion er aktiveret i parametrene for lokationsstyring.
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Slå funktionerne til planlagt cross-docking til
 
 Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funktioner i denne rækkefølge:
 
 1. *Planlagt direkte levering*
-2. *Skabeloner til cross-docking med lokationsvejledninger*
+1. *Skabeloner til cross-docking med lokationsvejledninger*
+    > [!NOTE]
+    > Denne funktion gør det muligt at angive feltet **Vejledningskode** i skabelonen til cross-docking, ligesom du konfigurerer genopfyldningsskabeloner. Hvis du aktiverer denne funktion, kan du ikke føje en vejledningskode til linjerne i arbejdsskabelonen til cross-docking for den endelige *Læg*-linje. Derved sikres, at den endelige læg-placering kan bestemmes under oprettelsen af arbejdet, før du overvejer arbejdsskabeloner.
 
 ## <a name="setup"></a>Konfiguration
 
@@ -88,9 +90,9 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
 
         Denne indstilling angiver, om forsyningen skal valideres igen under modtagelsen. Hvis denne indstilling er angivet til *Ja*, kontrolleres både det maksimale tidsinterval og udløbsintervallet i dage.
 
-    - **Vejledningskode** Lad feltet være tomt
+    - **Vejledningskode:** Lad feltet være tomt
 
-        Denne indstilling giver systemet mulighed for at bruge lokationsvejledninger som en hjælp til at bestemme, hvilken lokation cross-docking-lager skal flyttes til. Du kan definere den ved at tildele en vejledningskode til hver relevante cross-docking-skabelon. De enkelte vejledningskoder identificerer en entydig lokationsvejledning.
+        Denne indstilling aktiveres med funktionen *Skabeloner til cross-docking med lokationsvejledninger*. Systemet bruger lokationsvejledninger som en hjælp til at bestemme, hvilken lokation cross-docking-lager skal flyttes til. Du kan definere den ved at tildele en vejledningskode til hver relevante cross-docking-skabelon. Hvis der er angivet en vejledningskode, når arbejde genereres, søger systemet i lokationsvejledninger ved hjælp af vejledningskoden. På denne måde kan du begrænse lokationsvejledninger, der bruges til en bestemt cross-docking-skabelon.
 
     - **Valider tidsvindue:** *Ja*
 

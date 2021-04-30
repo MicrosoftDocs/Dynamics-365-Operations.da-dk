@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 25719de3d86785442e00f7375de525b95bdb094d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753690"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894142"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Angive brugerdefinerede lagersteder til oprettede dokumenter
 
@@ -27,7 +27,7 @@ Med API'en (application programming interface) i den elektroniske rapporteringss
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Installer en topologi, der understøtter fortløbende build. Du kan finde flere oplysninger under [Installere topologier, der understøtter fortløbende build og automatisering af test](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Du skal også have adgang til denne topologi for en af følgende roller:
+Installer en topologi, der understøtter fortløbende build. Du kan finde flere oplysninger under [Installere topologier, der understøtter fortløbende build og automatisering af test](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Du skal også have adgang til denne topologi for en af følgende roller:
 
 - Udvikler til elektronisk rapportering
 - Funktionel konsulent i elektronisk rapportering
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Rediger den eksisterende `AssetRollForwardService`-klasse, og skriv kode for at oprette en brugerdefineret destinationsfabrik for rapportkørslen. Bemærk, at når der er oprettet en brugerdefineret destinationsfabrik, overføres den applikationsbaserede parameter, der angiver en destinationsmappe. På denne måde bruges denne destinationsmappe til lagring af genererede filer.
 
     > [!NOTE] 
-    > Kontroller, at den angivne mappe (**c:\\0** i dette eksempel) findes i det lokale filsystem på den server, der kører AOS-tjenesten. Ellers udløses der en [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-undtagelse ved kørsel.
+    > Kontroller, at den angivne mappe (**c:\\0** i dette eksempel) findes i det lokale filsystem på den server, der kører AOS-tjenesten. Ellers udløses der en [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-undtagelse ved kørsel.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

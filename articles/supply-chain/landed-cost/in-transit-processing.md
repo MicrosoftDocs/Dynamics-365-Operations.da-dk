@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fff3c3cfe5d0628fd4df6e719b72bc134c9d9c0a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823403"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909445"
 ---
 # <a name="goods-in-transit-processing"></a>Behandle varer undervejs
 
@@ -40,7 +40,7 @@ Når du aktiverer modulet **Landingsomkostninger**, er standardenheden for *leve
 
 Når indstillingen **Styring af varer undervejs** er angivet til *Ja* for de relevante leveringsbetingelser, overføres varerne til lagerstedet for varer undervejs. Denne handling udløses kun, hvis lagertilgangen ikke behandles, før en faktura behandles. Når leveringsbetingelserne for en ordre er angivet til at bruge varer undervejs, kan brugerne ikke længere bogføre en produktkvittering for indkøbsordren. Hvis de prøver, opstår der en fejl. Fejlmeddelelsen viser, at de skal bruge funktionen varer undervejs for at fortsætte.
 
-Hvis du vil arbejde med oplysninger om leveringsbetingelser for varer undervejs, skal du gå til **Indkøb og forsyning \> Konfiguration \> Distribution \> Leveringsbetingelser**. Følgende tabel indeholder en beskrivelse af de felter, som modulet **Landingsomkostninger** føjer til siden **Leveringsbetingelser** for at understøtte funktionaliteten for varer undervejs. Begge felter findes i oversigtspanelet **Generelt**. Yderligere oplysninger om de andre felter på denne side finder du i [Leveringsbetingelser (formular)](https://technet.microsoft.com/library/aa575567.aspx).
+Hvis du vil arbejde med oplysninger om leveringsbetingelser for varer undervejs, skal du gå til **Indkøb og forsyning \> Konfiguration \> Distribution \> Leveringsbetingelser**. Følgende tabel indeholder en beskrivelse af de felter, som modulet **Landingsomkostninger** føjer til siden **Leveringsbetingelser** for at understøtte funktionaliteten for varer undervejs. Begge felter findes i oversigtspanelet **Generelt**. Yderligere oplysninger om de andre felter på denne side finder du i [Leveringsbetingelser (formular)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Felt | Beskrivelse |
 |---|---|
@@ -55,7 +55,7 @@ Landingsomkostninger tilføjer to nye typer lagersted: *varer undervejs* og *und
 
 Lagerstedstypen *varer undervejs* knyttes til stedet for varer undervejs, og dette lagersted bruges til behandling af varerne i ordrer for varer undervejs, før de modtages på det endelige destinationslagersted. Generelt er ét lagersted for varer undervejs tilstrækkeligt for hver lokation, hvis Lokation og Lagersted er de eneste lagerdimensioner, der bruges til lagerstyring. Hvis lagerdimensionen Lokation også bruges, skal der konfigureres et lagersted for varer undervejs for hver kombination af lokation og lagersted, så standardlokationen også kan angives.
 
-Du kan arbejde med indstillinger for varer undervejs til lagerstederne ved at gå til **Lagerstyring \> Konfiguration \> Lageropdeling \> Lagersteder**. Følgende tabel indeholder en beskrivelse af de felter, som modulet **Landingsomkostninger** føjer til siden **Lagersteder** for at understøtte funktionaliteten for varer undervejs. Begge felter findes i oversigtspanelet **Generelt**. Du kan finde oplysningerne om de andre felter på siden under [Lagersteder (formular)](https://technet.microsoft.com/library/aa620570.aspx).
+Du kan arbejde med indstillinger for varer undervejs til lagerstederne ved at gå til **Lagerstyring \> Konfiguration \> Lageropdeling \> Lagersteder**. Følgende tabel indeholder en beskrivelse af de felter, som modulet **Landingsomkostninger** føjer til siden **Lagersteder** for at understøtte funktionaliteten for varer undervejs. Begge felter findes i oversigtspanelet **Generelt**. Du kan finde oplysningerne om de andre felter på siden under [Lagersteder (formular)](/dynamicsax-2012//warehouses-form).
 
 | Felt | Beskrivelse |
 |---|---|
@@ -109,7 +109,7 @@ Du kan også modtage varer ved at oprette en modtagelseskladde. Du kan oprette e
     - **Opret fra varer undervejs** – Angiv denne indstilling til *Ja*, hvis du vil tage antal fra de valgte linjer undervejs for den valgte fragt, container eller folio.
     - **Opret fra ordrelinjer** – Angiv denne indstilling til *Ja* for at angive standardantallet i modtagelseskladden fra indkøbsordrelinjerne. Standardantallet i modtagelseskladden kan kun angives på denne måde, hvis antallet på indkøbsordrelinjen svarer til antallet i ordren for varer undervejs.
 
-1. Kør processen for modtagelseskladden som beskrevet i [Registrere varetilgange med en varemodtagelseskladde](https://technet.microsoft.com/library/aa571129.aspx).
+1. Kør processen for modtagelseskladden som beskrevet i [Registrere varetilgange med en varemodtagelseskladde](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
 
 > [!NOTE]
 > Modtagelseskladden bruges normalt i situationer, hvor der bruges lokationer og batch-/seriesporing, men hvor lokationsstyring ikke bruges.
@@ -131,15 +131,14 @@ Landingsomkostninger føjer følgende arbejdsprocesser til menupunkterne for mob
 - Varemodtagelse af varer i transit
 - Modtagelse og placering af varer undervejs
 
-Konfigurationsindstillingerne for disse processer ligner indstillingerne for [arbejdsoprettelsesprocesser for modtagelse og placering af indkøbsordrer](https://technet.microsoft.com/library/dn553216.aspx). I processen *Modtagelse og placering af varer undervejs* tilføjes dog også følgende felt.
+Konfigurationsindstillingerne for disse processer ligner indstillingerne for [arbejdsoprettelsesprocesser for modtagelse og placering af indkøbsordrer](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). I processen *Modtagelse og placering af varer undervejs* tilføjes dog også følgende felt.
 
 - **Aktivér fuldført forsendelsescontainer** – Hvis denne indstilling er angivet til *Ja*, når arbejdsstedet læg-arbejdet er fuldført, indeholder mobilappen Lokationsstyring en ekstra indstilling med navnet **Forsendelsescontainer fuldført**. Når denne indstilling er valgt, vil arbejderen blive bedt om at bekræfte, at containeren er fuldført. På dette tidspunkt vil alle korte tilgange blive behandlet som en undertransaktion.
 
 ### <a name="location-directives"></a>Lokationsvejledninger
 
-Landingsomkostninger tilføjer en ny arbejdsordretype med navnet *Varer undervejs* på siden **Lokationsvejledninger**. Denne arbejdsordretype skal konfigureres på samme måde som [arbejdsordretyperne for indkøbsordrer](https://technet.microsoft.com/library/dn553184.aspx).
+Landingsomkostninger tilføjer en ny arbejdsordretype med navnet *Varer undervejs* på siden **Lokationsvejledninger**. Denne arbejdsordretype skal konfigureres på samme måde som [arbejdsordretyperne for indkøbsordrer](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### <a name="work-templates"></a>Arbejdsskabeloner
 
-Landingsomkostninger tilføjer en ny arbejdsordretype med navnet *Varer undervejs* på siden **Arbejdsskabeloner**. Denne arbejdsordretype skal konfigureres på samme måde som [arbejdsskabeloner for indkøbsordrer](https://technet.microsoft.com/library/dn553184.aspx).
-
+Landingsomkostninger tilføjer en ny arbejdsordretype med navnet *Varer undervejs* på siden **Arbejdsskabeloner**. Denne arbejdsordretype skal konfigureres på samme måde som [arbejdsskabeloner for indkøbsordrer](/dynamicsax-2012/appuser-itpro/create-a-work-template).
