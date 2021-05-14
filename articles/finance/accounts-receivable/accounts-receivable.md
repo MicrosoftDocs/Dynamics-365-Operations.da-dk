@@ -15,98 +15,82 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5064ea3b9435d0fb9e97c00df6b17a304b8a6a0f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 799619e6fc03174c8ad47512ea839ca7b2aab20e
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827716"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898130"
 ---
-# <a name="accounts-receivable-home-page"></a><span data-ttu-id="7b8f2-103">Startside for debitor</span><span class="sxs-lookup"><span data-stu-id="7b8f2-103">Accounts receivable home page</span></span>
+# <a name="accounts-receivable-home-page"></a><span data-ttu-id="83833-103">Startside for debitor</span><span class="sxs-lookup"><span data-stu-id="83833-103">Accounts receivable home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="7b8f2-104">Du kan bruge Debitor til at spore debitorfakturaer og indgående betalinger.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-104">Use Accounts receivable to track customer invoices and incoming payments.</span></span> 
+<span data-ttu-id="83833-104">Du kan bruge Debitor til at spore debitorfakturaer og indgående betalinger.</span><span class="sxs-lookup"><span data-stu-id="83833-104">Use Accounts receivable to track customer invoices and incoming payments.</span></span> 
 
-<span data-ttu-id="7b8f2-105">Du kan oprette debitorfakturaer baseret på salgsordrer eller følgesedler.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-105">You can create customer invoices that are based on sales orders or packing slips.</span></span> <span data-ttu-id="7b8f2-106">Du kan også angive fritekstfakturaer, der ikke er knyttet til salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-106">You can also enter free text invoices that are not related to sales orders.</span></span> <span data-ttu-id="7b8f2-107">Du kan modtage betalinger ved at bruge flere forskellige betalingsmåder.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-107">You can receive payments by using several different payment types.</span></span> <span data-ttu-id="7b8f2-108">De omfatter veksler, kontanter, checks, kreditkort og elektronisk betaling.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-108">These include bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> <span data-ttu-id="7b8f2-109">Hvis din organisation omfatter flere juridiske enheder, kan du benytte centraliserede betalinger til at registrere betalinger i én juridisk enhed på vegne af de andre juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-109">If your organization includes multiple legal entities, you can use centralized payments to record payments in a single legal entity on behalf of the other legal entities.</span></span>
-
-
-<span data-ttu-id="7b8f2-110">**Forretningsprocesser**</span><span class="sxs-lookup"><span data-stu-id="7b8f2-110">**Business processes**</span></span>
-
-<span data-ttu-id="7b8f2-111">[![Forretningsproces](./media/AR-process.PNG)](./media/AR-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="7b8f2-111">[![Business process](./media/AR-process.PNG)](./media/AR-process.PNG)</span></span>
-
-## <a name="set-up-accounts-receivable"></a><span data-ttu-id="7b8f2-112">Konfigurere Debitorer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-112">Set up Accounts receivable</span></span>
-
-<span data-ttu-id="7b8f2-113">Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modtager fra debitorer.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-113">Use Accounts receivable to track customer invoices and payments that you receive from customers.</span></span> <span data-ttu-id="7b8f2-114">Du kan definere debitorgrupper, debitorer, posteringsprofiler, rentenotaer, rykkere, provisioner og parametre for debitorer, gebyrer, leveringer og destinationer, veksler og andre typer debitoroplysninger.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-114">You can set up customer groups, customers, posting profiles, interest notes, collection letters, commissions, and parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable information.</span></span> 
-
-:::row:::
-    :::column:::
-        - [<span data-ttu-id="7b8f2-115">Regnskabsfordelinger og kladdepostering for reskontro til fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-115">Accounting distributions and subledger journal entries for free text invoices</span></span>](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-        - [<span data-ttu-id="7b8f2-116">Debitorposteringsprofiler</span><span class="sxs-lookup"><span data-stu-id="7b8f2-116">Customer posting profiles</span></span>](customer-posting-profiles.md)
-        - [<span data-ttu-id="7b8f2-117">Opsætning, godkendelse og verifikation af kreditkort</span><span class="sxs-lookup"><span data-stu-id="7b8f2-117">Credit card setup, authorization, and capture</span></span>](credit-card-authorizations.md)
-        - [<span data-ttu-id="7b8f2-118">Oprette en debitorfaktura</span><span class="sxs-lookup"><span data-stu-id="7b8f2-118">Create a customer invoice</span></span>](configure-customer-invoices.md)
-        - [<span data-ttu-id="7b8f2-119">Oprette og behandle tilbagevendende fakturaer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-119">Set up and process recurring invoices</span></span>](set-up-process-recurring-invoices.md)
-        - [<span data-ttu-id="7b8f2-120">Korrigere en fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="7b8f2-120">Correct a free text invoice</span></span>](correct-free-text-invoice.md)
-    :::column-end:::
-    :::column:::
-        - [<span data-ttu-id="7b8f2-121">Oprette veksler</span><span class="sxs-lookup"><span data-stu-id="7b8f2-121">Set up bills of exchange</span></span>](set-up-bills-exchange.md)
-        - [<span data-ttu-id="7b8f2-122">Angive rentesatser for en rentekode</span><span class="sxs-lookup"><span data-stu-id="7b8f2-122">Set up interest rates for an interest code</span></span>](set-up-interest-rates-interest-code.md)
-        - [<span data-ttu-id="7b8f2-123">Frafalde, genindføre eller tilbageføre renter</span><span class="sxs-lookup"><span data-stu-id="7b8f2-123">Waive, reinstate, or reverse interest fees</span></span>](waive-reinstate-reverse-interest-fees.md)
-        - [<span data-ttu-id="7b8f2-124">Oversigt over SEPA Direct Debit</span><span class="sxs-lookup"><span data-stu-id="7b8f2-124">SEPA direct debit overview</span></span>](sepa-direct-debit-overview.md)
-        - [<span data-ttu-id="7b8f2-125">Oprette bemyndigelse til SEPA Direct Debit</span><span class="sxs-lookup"><span data-stu-id="7b8f2-125">Set up SEPA direct debit mandate</span></span>](sepa-direct-debit-mandate.md)
-        - [<span data-ttu-id="7b8f2-126">Lukke Debitorer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-126">Close Accounts receivable</span></span>](close-accounts-receivable.md)
-    :::column-end:::
-:::row-end:::
+<span data-ttu-id="83833-105">Du kan oprette debitorfakturaer baseret på salgsordrer eller følgesedler.</span><span class="sxs-lookup"><span data-stu-id="83833-105">You can create customer invoices that are based on sales orders or packing slips.</span></span> <span data-ttu-id="83833-106">Du kan også angive fritekstfakturaer, der ikke er knyttet til salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="83833-106">You can also enter free text invoices that are not related to sales orders.</span></span> <span data-ttu-id="83833-107">Du kan modtage betalinger ved at bruge flere forskellige betalingsmåder.</span><span class="sxs-lookup"><span data-stu-id="83833-107">You can receive payments by using several different payment types.</span></span> <span data-ttu-id="83833-108">De omfatter veksler, kontanter, checks, kreditkort og elektronisk betaling.</span><span class="sxs-lookup"><span data-stu-id="83833-108">These include bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> <span data-ttu-id="83833-109">Hvis din organisation omfatter flere juridiske enheder, kan du benytte centraliserede betalinger til at registrere betalinger i én juridisk enhed på vegne af de andre juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="83833-109">If your organization includes multiple legal entities, you can use centralized payments to record payments in a single legal entity on behalf of the other legal entities.</span></span>
 
 
-## <a name="set-up-credit-and-collections"></a><span data-ttu-id="7b8f2-127">Konfigurere kredit og rykkere</span><span class="sxs-lookup"><span data-stu-id="7b8f2-127">Set up credit and collections</span></span>
+<span data-ttu-id="83833-110">**Forretningsprocesser**</span><span class="sxs-lookup"><span data-stu-id="83833-110">**Business processes**</span></span>
 
-<span data-ttu-id="7b8f2-128">Oplysninger om rykkere for debitorer administreres i en central visning, siden Rykkere.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-128">Accounts receivable collections information is managed in one central view, the Collections page.</span></span> <span data-ttu-id="7b8f2-129">De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-129">Credit and collections managers can use this central view to manage collections.</span></span> <span data-ttu-id="7b8f2-130">Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier eller fra siden Debitorer.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-130">Collections agents can begin the collections process from customer lists that are generated by using predefined collection criteria, or from the Customers page.</span></span>
+<span data-ttu-id="83833-111">[![Forretningsproces](./media/AR-process.PNG)](./media/AR-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="83833-111">[![Business process](./media/AR-process.PNG)](./media/AR-process.PNG)</span></span>
 
-[<span data-ttu-id="7b8f2-131">Kredit i Debitorer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-131">Credit and collections in Accounts receivable</span></span>](collections-credit-accounts-receivable.md)
+## <a name="set-up-accounts-receivable"></a><span data-ttu-id="83833-112">Konfigurere Debitorer</span><span class="sxs-lookup"><span data-stu-id="83833-112">Set up Accounts receivable</span></span>
 
-[<span data-ttu-id="7b8f2-132">Konfigurere Debitorer og Kredit</span><span class="sxs-lookup"><span data-stu-id="7b8f2-132">Configure Accounts receivables and Credit and collections</span></span>](accounts-receivables-set-up-overview.md)
+<span data-ttu-id="83833-113">Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modtager fra debitorer.</span><span class="sxs-lookup"><span data-stu-id="83833-113">Use Accounts receivable to track customer invoices and payments that you receive from customers.</span></span> <span data-ttu-id="83833-114">Du kan definere debitorgrupper, debitorer, posteringsprofiler, rentenotaer, rykkere, provisioner og parametre for debitorer, gebyrer, leveringer og destinationer, veksler og andre typer debitoroplysninger.</span><span class="sxs-lookup"><span data-stu-id="83833-114">You can set up customer groups, customers, posting profiles, interest notes, collection letters, commissions, and parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable information.</span></span> 
 
-[<span data-ttu-id="7b8f2-133">Konfigurere kredit og rykkere</span><span class="sxs-lookup"><span data-stu-id="7b8f2-133">Set up Credit and collections</span></span>](set-up-collections.md)
+- [<span data-ttu-id="83833-115">Regnskabsfordelinger og kladdepostering for reskontro til fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="83833-115">Accounting distributions and subledger journal entries for free text invoices</span></span>](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+- [<span data-ttu-id="83833-116">Debitorposteringsprofiler</span><span class="sxs-lookup"><span data-stu-id="83833-116">Customer posting profiles</span></span>](customer-posting-profiles.md)
+- [<span data-ttu-id="83833-117">Opsætning, godkendelse og verifikation af kreditkort</span><span class="sxs-lookup"><span data-stu-id="83833-117">Credit card setup, authorization, and capture</span></span>](credit-card-authorizations.md)
+- [<span data-ttu-id="83833-118">Oprette en debitorfaktura</span><span class="sxs-lookup"><span data-stu-id="83833-118">Create a customer invoice</span></span>](configure-customer-invoices.md)
+- [<span data-ttu-id="83833-119">Oprette og behandle tilbagevendende fakturaer</span><span class="sxs-lookup"><span data-stu-id="83833-119">Set up and process recurring invoices</span></span>](set-up-process-recurring-invoices.md)
+- [<span data-ttu-id="83833-120">Korrigere en fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="83833-120">Correct a free text invoice</span></span>](correct-free-text-invoice.md)
+- [<span data-ttu-id="83833-121">Oprette veksler</span><span class="sxs-lookup"><span data-stu-id="83833-121">Set up bills of exchange</span></span>](set-up-bills-exchange.md)
+- [<span data-ttu-id="83833-122">Angive rentesatser for en rentekode</span><span class="sxs-lookup"><span data-stu-id="83833-122">Set up interest rates for an interest code</span></span>](set-up-interest-rates-interest-code.md)
+- [<span data-ttu-id="83833-123">Frafalde, genindføre eller tilbageføre renter</span><span class="sxs-lookup"><span data-stu-id="83833-123">Waive, reinstate, or reverse interest fees</span></span>](waive-reinstate-reverse-interest-fees.md)
+- [<span data-ttu-id="83833-124">Oversigt over SEPA Direct Debit</span><span class="sxs-lookup"><span data-stu-id="83833-124">SEPA direct debit overview</span></span>](sepa-direct-debit-overview.md)
+- [<span data-ttu-id="83833-125">Oprette bemyndigelse til SEPA Direct Debit</span><span class="sxs-lookup"><span data-stu-id="83833-125">Set up SEPA direct debit mandate</span></span>](sepa-direct-debit-mandate.md)
+- [<span data-ttu-id="83833-126">Lukke Debitorer</span><span class="sxs-lookup"><span data-stu-id="83833-126">Close Accounts receivable</span></span>](close-accounts-receivable.md)
+    
+## <a name="set-up-credit-and-collections"></a><span data-ttu-id="83833-127">Konfigurere kredit og rykkere</span><span class="sxs-lookup"><span data-stu-id="83833-127">Set up credit and collections</span></span>
 
-## <a name="set-up-payments-and-settlements"></a><span data-ttu-id="7b8f2-134">Konfigurere betalinger og udligninger</span><span class="sxs-lookup"><span data-stu-id="7b8f2-134">Set up payments and settlements</span></span>
+<span data-ttu-id="83833-128">Oplysninger om rykkere for debitorer administreres i en central visning, siden Rykkere.</span><span class="sxs-lookup"><span data-stu-id="83833-128">Accounts receivable collections information is managed in one central view, the Collections page.</span></span> <span data-ttu-id="83833-129">De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere.</span><span class="sxs-lookup"><span data-stu-id="83833-129">Credit and collections managers can use this central view to manage collections.</span></span> <span data-ttu-id="83833-130">Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier eller fra siden Debitorer.</span><span class="sxs-lookup"><span data-stu-id="83833-130">Collections agents can begin the collections process from customer lists that are generated by using predefined collection criteria, or from the Customers page.</span></span>
 
-<span data-ttu-id="7b8f2-135">Acceptere forskellige betalingsmåder fra debitorer som f.eks. veksler, kontanter, checks, kreditkort og elektroniske betalinger.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-135">Accept different types of payments from customers, such as bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> 
+- [<span data-ttu-id="83833-131">Kredit i Debitorer</span><span class="sxs-lookup"><span data-stu-id="83833-131">Credit and collections in Accounts receivable</span></span>](collections-credit-accounts-receivable.md)
+- [<span data-ttu-id="83833-132">Konfigurere Debitorer og Kredit</span><span class="sxs-lookup"><span data-stu-id="83833-132">Configure Accounts receivables and Credit and collections</span></span>](accounts-receivables-set-up-overview.md)
+- [<span data-ttu-id="83833-133">Konfigurere kredit og rykkere</span><span class="sxs-lookup"><span data-stu-id="83833-133">Set up Credit and collections</span></span>](set-up-collections.md)
 
-:::row:::
-    :::column:::
-        - [<span data-ttu-id="7b8f2-136">Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder</span><span class="sxs-lookup"><span data-stu-id="7b8f2-136">Use a customer payment to settle multiple invoices that span multiple discount periods</span></span>](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-        - [<span data-ttu-id="7b8f2-137">Centraliserede debitorbetalinger</span><span class="sxs-lookup"><span data-stu-id="7b8f2-137">Centralized payments for Accounts receivable</span></span>](centralized-payments-accounts-receivable.md)
-        - [<span data-ttu-id="7b8f2-138">Udligne en delvis debitorbetaling og udligne den endelige betaling fuldt ud før rabatdatoen</span><span class="sxs-lookup"><span data-stu-id="7b8f2-138">Settle a partial customer payment and the final payment in full before the discount date</span></span>](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [<span data-ttu-id="7b8f2-139">Udligne en delvis debitorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen</span><span class="sxs-lookup"><span data-stu-id="7b8f2-139">Settle a partial customer payment before the discount date with a final payment after the discount date</span></span>](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-    :::column-end:::
-    :::column:::
-        - [<span data-ttu-id="7b8f2-140">Udligne en delvis debitorbetaling med rabatter på kreditnotaer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-140">Settle a partial customer payment that has discounts on credit notes</span></span>](settle-partial-customer-payment-discounts-credit-notes.md)
-        - [<span data-ttu-id="7b8f2-141">Udligne en delvis debitorbetaling, der omfatter flere rabatperioder</span><span class="sxs-lookup"><span data-stu-id="7b8f2-141">Settle a partial customer payment that has multiple discount periods</span></span>](settle-partial-customer-payment-multiple-discount-periods.md)
-        - [<span data-ttu-id="7b8f2-142">Refundere debitorer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-142">Reimburse customers</span></span>](reimburse-customers.md)
-        - [<span data-ttu-id="7b8f2-143">Debitorbetalinger af et delvist beløb</span><span class="sxs-lookup"><span data-stu-id="7b8f2-143">Customer payments for a partial amount</span></span>](customer-payments-partial-amount.md)
-    :::column-end:::
-:::row-end:::
+## <a name="set-up-payments-and-settlements"></a><span data-ttu-id="83833-134">Konfigurere betalinger og udligninger</span><span class="sxs-lookup"><span data-stu-id="83833-134">Set up payments and settlements</span></span>
 
+<span data-ttu-id="83833-135">Acceptere forskellige betalingsmåder fra debitorer som f.eks. veksler, kontanter, checks, kreditkort og elektroniske betalinger.</span><span class="sxs-lookup"><span data-stu-id="83833-135">Accept different types of payments from customers, such as bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> 
 
-### <a name="additional-resources"></a><span data-ttu-id="7b8f2-144">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-144">Additional resources</span></span>
+- [<span data-ttu-id="83833-136">Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder</span><span class="sxs-lookup"><span data-stu-id="83833-136">Use a customer payment to settle multiple invoices that span multiple discount periods</span></span>](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+- [<span data-ttu-id="83833-137">Centraliserede debitorbetalinger</span><span class="sxs-lookup"><span data-stu-id="83833-137">Centralized payments for Accounts receivable</span></span>](centralized-payments-accounts-receivable.md)
+- [<span data-ttu-id="83833-138">Udligne en delvis debitorbetaling og udligne den endelige betaling fuldt ud før rabatdatoen</span><span class="sxs-lookup"><span data-stu-id="83833-138">Settle a partial customer payment and the final payment in full before the discount date</span></span>](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+- [<span data-ttu-id="83833-139">Udligne en delvis debitorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen</span><span class="sxs-lookup"><span data-stu-id="83833-139">Settle a partial customer payment before the discount date with a final payment after the discount date</span></span>](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+- [<span data-ttu-id="83833-140">Udligne en delvis debitorbetaling med rabatter på kreditnotaer</span><span class="sxs-lookup"><span data-stu-id="83833-140">Settle a partial customer payment that has discounts on credit notes</span></span>](settle-partial-customer-payment-discounts-credit-notes.md)
+- [<span data-ttu-id="83833-141">Udligne en delvis debitorbetaling, der omfatter flere rabatperioder</span><span class="sxs-lookup"><span data-stu-id="83833-141">Settle a partial customer payment that has multiple discount periods</span></span>](settle-partial-customer-payment-multiple-discount-periods.md)
+- [<span data-ttu-id="83833-142">Refundere debitorer</span><span class="sxs-lookup"><span data-stu-id="83833-142">Reimburse customers</span></span>](reimburse-customers.md)
+- [<span data-ttu-id="83833-143">Debitorbetalinger af et delvist beløb</span><span class="sxs-lookup"><span data-stu-id="83833-143">Customer payments for a partial amount</span></span>](customer-payments-partial-amount.md)
+   
+### <a name="additional-resources"></a><span data-ttu-id="83833-144">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="83833-144">Additional resources</span></span>
 
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="7b8f2-145">Nyheder og funktioner under udvikling</span><span class="sxs-lookup"><span data-stu-id="7b8f2-145">What's new and in development</span></span>
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="83833-145">Nyheder og funktioner under udvikling</span><span class="sxs-lookup"><span data-stu-id="83833-145">What's new and in development</span></span>
 
-<span data-ttu-id="7b8f2-146">Gå til [Microsoft Dynamics 365 oversigten](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-146">Go to the [Microsoft Dynamics 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned.</span></span> 
+<span data-ttu-id="83833-146">Gå til [Microsoft Dynamics 365 oversigten](/dynamics365/release-plans/) for at se, hvilke nye funktioner der er planlagt.</span><span class="sxs-lookup"><span data-stu-id="83833-146">Go to the [Microsoft Dynamics 365 Roadmap](/dynamics365/release-plans/) to see what new features are planned.</span></span> 
 
-#### <a name="blogs"></a><span data-ttu-id="7b8f2-147">Blogs</span><span class="sxs-lookup"><span data-stu-id="7b8f2-147">Blogs</span></span>
+#### <a name="blogs"></a><span data-ttu-id="83833-147">Blogs</span><span class="sxs-lookup"><span data-stu-id="83833-147">Blogs</span></span>
 
-<span data-ttu-id="7b8f2-148">Du kan finde meninger, nyheder og andre oplysninger om Debitorer og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="7b8f2-148">You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+<span data-ttu-id="83833-148">Du kan finde meninger, nyheder og andre oplysninger om Debitorer og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="83833-148">You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
 
-<span data-ttu-id="7b8f2-149">[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-149">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.</span></span>
+<span data-ttu-id="83833-149">[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="83833-149">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.</span></span>
 
-#### <a name="task-guides"></a><span data-ttu-id="7b8f2-150">Opgaveguider</span><span class="sxs-lookup"><span data-stu-id="7b8f2-150">Task guides</span></span>
-<span data-ttu-id="7b8f2-151">Yderligere hjælp er tilgængelig som opgaveguider i ansøgningen.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-151">Additional help is available as task guides inside the application.</span></span> <span data-ttu-id="7b8f2-152">Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.</span><span class="sxs-lookup"><span data-stu-id="7b8f2-152">To access task guides, click the Help button on any page.</span></span>
+#### <a name="task-guides"></a><span data-ttu-id="83833-150">Opgaveguider</span><span class="sxs-lookup"><span data-stu-id="83833-150">Task guides</span></span>
+<span data-ttu-id="83833-151">Yderligere hjælp er tilgængelig som opgaveguider i ansøgningen.</span><span class="sxs-lookup"><span data-stu-id="83833-151">Additional help is available as task guides inside the application.</span></span> <span data-ttu-id="83833-152">Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.</span><span class="sxs-lookup"><span data-stu-id="83833-152">To access task guides, click the Help button on any page.</span></span>
 
-#### <a name="videos"></a><span data-ttu-id="7b8f2-153">Videoer</span><span class="sxs-lookup"><span data-stu-id="7b8f2-153">Videos</span></span>
+#### <a name="videos"></a><span data-ttu-id="83833-153">Videoer</span><span class="sxs-lookup"><span data-stu-id="83833-153">Videos</span></span>
 
-<span data-ttu-id="7b8f2-154">Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="7b8f2-154">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+<span data-ttu-id="83833-154">Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="83833-154">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
 
 
