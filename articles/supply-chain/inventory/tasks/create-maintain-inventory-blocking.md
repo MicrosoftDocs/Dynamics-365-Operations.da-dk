@@ -1,8 +1,8 @@
 ---
 title: Opret og vedligehold en lagerblokering
-description: Denne fremgangsmåde viser, hvordan du ved hjælp af lagerblokeringen forhindrer, at fysisk disponibel lagerbeholdning reserveres af udgående kildedokumenter.
+description: Dette emne beskriver, hvordan du kan bruge lagerblokeringen til at forhindre, at den fysiske disponible lagerbeholdning reserveres af andre udgående kildedokumenter.
 author: perlynne
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,41 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 319ae6da1e0e504316b2d96001d582e835cef20c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9aa38ca52da577fff258bb330922ad7f4044330
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833995"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956152"
 ---
-# <a name="create-and-maintain-an-inventory-blocking"></a><span data-ttu-id="f313b-103">Opret og vedligehold en lagerblokering</span><span class="sxs-lookup"><span data-stu-id="f313b-103">Create and maintain an inventory blocking</span></span>
+# <a name="create-and-maintain-an-inventory-blocking"></a><span data-ttu-id="19943-103">Opret og vedligehold en lagerblokering</span><span class="sxs-lookup"><span data-stu-id="19943-103">Create and maintain an inventory blocking</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f313b-104">Denne fremgangsmåde viser, hvordan du ved hjælp af lagerblokeringen forhindrer, at fysisk disponibel lagerbeholdning reserveres af udgående kildedokumenter.</span><span class="sxs-lookup"><span data-stu-id="f313b-104">This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.</span></span> <span data-ttu-id="f313b-105">Du kan køre proceduren i USMF-demodatafirmaet ved hjælp af eksempelværdierne, der vises.</span><span class="sxs-lookup"><span data-stu-id="f313b-105">You can run the procedure in demo data company USMF using the example values that are shown.</span></span> <span data-ttu-id="f313b-106">Du skal have en vare med en tilgængelig fysisk disponibel lagerbeholdning, før du begynder denne procedure.</span><span class="sxs-lookup"><span data-stu-id="f313b-106">You need to have an item with physical on-hand inventory available before you start this procedure.</span></span>
+<span data-ttu-id="19943-104">Dette emne beskriver, hvordan du kan bruge lagerblokeringen til at forhindre, at den fysiske disponible lagerbeholdning reserveres af andre udgående kildedokumenter.</span><span class="sxs-lookup"><span data-stu-id="19943-104">This topic describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents.</span></span> <span data-ttu-id="19943-105">Før du starter procedurerne i dette emne, skal du have en vare, der er tilgængelig i den fysiske disponibke lagerbeholdning.</span><span class="sxs-lookup"><span data-stu-id="19943-105">Before you start the procedures in this topic, you must have an item that physical on-hand inventory is available for.</span></span>
 
+## <a name="block-inventory"></a><span data-ttu-id="19943-106">Bloker lager</span><span class="sxs-lookup"><span data-stu-id="19943-106">Block inventory</span></span>
 
-## <a name="create-an-inventory-blocking"></a><span data-ttu-id="f313b-107">Opret en lagerblokering</span><span class="sxs-lookup"><span data-stu-id="f313b-107">Create an inventory blocking</span></span>
-1. <span data-ttu-id="f313b-108">I **navigationsruden** skal du gå til **Moduler > Lagerstyring > Periodiske opgaver > Lagerblokering**.</span><span class="sxs-lookup"><span data-stu-id="f313b-108">In the **Navigation pane**, go to **Modules > Inventory management > Periodic tasks > Inventory blocking**.</span></span>
-2. <span data-ttu-id="f313b-109">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="f313b-109">Click **New**.</span></span>
-3. <span data-ttu-id="f313b-110">Klik på rullelisten i feltet **Varenummer** for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="f313b-110">In the **Item number** field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="f313b-111">Vælg den vare, du vil bruge, på listen.</span><span class="sxs-lookup"><span data-stu-id="f313b-111">In the list, select the item you want to choose.</span></span> <span data-ttu-id="f313b-112">Vælg et varenummer med fysisk disponibel lagerbeholdning, du vil blokere.</span><span class="sxs-lookup"><span data-stu-id="f313b-112">Select an item number with physical on-hand inventory that you want to block.</span></span> <span data-ttu-id="f313b-113">Hvis du bruger USMF, kan du vælge vare M9201.</span><span class="sxs-lookup"><span data-stu-id="f313b-113">If you're using USMF you can select item M9201.</span></span>  
-5. <span data-ttu-id="f313b-114">Angiv et tal i feltet **Antal**.</span><span class="sxs-lookup"><span data-stu-id="f313b-114">In the **Quantity** field, enter a number.</span></span> <span data-ttu-id="f313b-115">Hvis du bruger vare M9201, skal du vælge mindre end 200.</span><span class="sxs-lookup"><span data-stu-id="f313b-115">If you're using item M9201, you need to select less than 200.</span></span>
-6. <span data-ttu-id="f313b-116">Udvid oversigtspanelet **Lagerdimensioner**.</span><span class="sxs-lookup"><span data-stu-id="f313b-116">Expand the **Inventory dimensions** fastTab.</span></span>
-7. <span data-ttu-id="f313b-117">Klik på rullelisten i feltet **Lagersted** for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="f313b-117">In the **Warehouse** field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="f313b-118">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="f313b-118">In the list, find and select the desired record.</span></span> <span data-ttu-id="f313b-119">Hvis du bruger vare M9201, kan du vælge lagersted 51.</span><span class="sxs-lookup"><span data-stu-id="f313b-119">If you're using item M9201, you can select warehouse 51.</span></span>  
-9. <span data-ttu-id="f313b-120">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="f313b-120">Click **Save**.</span></span>
+<span data-ttu-id="19943-107">Hvis du vil oprette en lagerblokeringspost, så lageret blokeres, skal du benytte følgende fremgangsmåde.</span><span class="sxs-lookup"><span data-stu-id="19943-107">To create an inventory blocking record so that inventory is blocked, follow these steps.</span></span>
 
-## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="f313b-121">Opdater betingelserne for lagerblokeringen</span><span class="sxs-lookup"><span data-stu-id="f313b-121">Update the conditions of the inventory blocking</span></span>
-1. <span data-ttu-id="f313b-122">Skriv et tal i feltet **Antal** i oversigtspanelet **Generelt**.</span><span class="sxs-lookup"><span data-stu-id="f313b-122">In the **General** fastTab, in the **Quantity** field, enter a number.</span></span> <span data-ttu-id="f313b-123">Opdater feltet fast lagerantal for at afspejle mængden, der skal blokeres.</span><span class="sxs-lookup"><span data-stu-id="f313b-123">Update the inventory quantity field to reflect the quantity to block.</span></span>  
-2. <span data-ttu-id="f313b-124">Indtast en dato i feltet **Forventet dato**.</span><span class="sxs-lookup"><span data-stu-id="f313b-124">In the **Expected date** field, enter a date.</span></span> <span data-ttu-id="f313b-125">Du vil måske angive, hvornår det blokerede lager forventes at blive tilgængeligt for reservation ved at tildele en forventet dato.</span><span class="sxs-lookup"><span data-stu-id="f313b-125">You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date.</span></span> <span data-ttu-id="f313b-126">Hvis den indstillingen Forventede tilgange er markeret for lagerblokeringen, som den er som standard, når du manuelt opretter en blokering, vises denne dato på den forventede transaktion.</span><span class="sxs-lookup"><span data-stu-id="f313b-126">If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.</span></span>  
-3. <span data-ttu-id="f313b-127">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="f313b-127">Click **Save**.</span></span>
+1. <span data-ttu-id="19943-108">Gå til **Lagerstyring \> Periodiske opgaver \> Lagerblokering**.</span><span class="sxs-lookup"><span data-stu-id="19943-108">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="19943-109">Gå til handlingsruden, og vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="19943-109">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="19943-110">I overskriften i den nye blokeringspost skal du angive feltet **Varenummer** til den vare, der skal spærres, og angive en beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="19943-110">On the header of the new blocking record, set the **Item number** field to the item that you want to block, and enter a description.</span></span>
+1. <span data-ttu-id="19943-111">Indtast antallet af varer til blokering i feltet **Antal** i oversigtspanelet **Generelt**.</span><span class="sxs-lookup"><span data-stu-id="19943-111">On the **General** FastTab, in the **Quantity** field, enter the number of items to block.</span></span>
+1. <span data-ttu-id="19943-112">I oversigtspanelet **Lagerdimensioner** skal du angive den lokation og det lagersted, hvor de varer, du vil blokere, er placeret i øjeblikket.</span><span class="sxs-lookup"><span data-stu-id="19943-112">On the **Inventory dimensions** FastTab, specify the site and warehouse where the items that you want to block are currently located.</span></span>
+1. <span data-ttu-id="19943-113">Vælg **Gem** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="19943-113">On the Action Pane, select **Save**.</span></span>
 
-## <a name="remove-the-inventory-blocking"></a><span data-ttu-id="f313b-128">Fjern lagerblokeringen</span><span class="sxs-lookup"><span data-stu-id="f313b-128">Remove the inventory blocking</span></span>
-1. <span data-ttu-id="f313b-129">Klik på **Slet** i **handlingsruden**.</span><span class="sxs-lookup"><span data-stu-id="f313b-129">On the **Action Pane**, click **Delete**.</span></span>
-2. <span data-ttu-id="f313b-130">Klik på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="f313b-130">Click **Yes**.</span></span>
-3. <span data-ttu-id="f313b-131">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="f313b-131">Close the page.</span></span>
+## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="19943-114">Opdater betingelserne for lagerblokeringen</span><span class="sxs-lookup"><span data-stu-id="19943-114">Update the conditions of the inventory blocking</span></span>
 
+<span data-ttu-id="19943-115">Benyt følgende fremgangsmåde for at opdatere en lagerblokeringspost.</span><span class="sxs-lookup"><span data-stu-id="19943-115">To update an inventory blocking record, follow these steps.</span></span>
 
+1. <span data-ttu-id="19943-116">Gå til **Lagerstyring \> Periodiske opgaver \> Lagerblokering**.</span><span class="sxs-lookup"><span data-stu-id="19943-116">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="19943-117">Vælg den relevante blokeringspost i listeruden.</span><span class="sxs-lookup"><span data-stu-id="19943-117">In the list pane, select the relevant blocking record.</span></span>
+1. <span data-ttu-id="19943-118">Rediger posten efter behov.</span><span class="sxs-lookup"><span data-stu-id="19943-118">Edit the record as required.</span></span> <span data-ttu-id="19943-119">Du kan f.eks ændre værdien for feltet **Forventet dato** for at angive, hvornår det blokerede lager forventes at blive tilgængeligt for reservation.</span><span class="sxs-lookup"><span data-stu-id="19943-119">For example, you might change the value of the **Expected date** field to indicate when the blocked inventory is expected to become available for reservation.</span></span> <span data-ttu-id="19943-120">Hvis indstillingen **Forventede tilgange** er valgt, vises datoen i den forventede transaktion.</span><span class="sxs-lookup"><span data-stu-id="19943-120">If the **Expected receipts** option is selected, the date will appear on the expected transaction.</span></span> <span data-ttu-id="19943-121">(Indstillingen **Forventede tilgange** vælges som standard, når du opretter en blokeringspost manuelt.)</span><span class="sxs-lookup"><span data-stu-id="19943-121">(The **Expected receipts** option is selected by default when you manually create a blocking record.)</span></span>
+1. <span data-ttu-id="19943-122">Vælg **Gem** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="19943-122">On the Action Pane, select **Save**.</span></span>
+
+## <a name="unblock-inventory"></a><span data-ttu-id="19943-123">Blokere lager</span><span class="sxs-lookup"><span data-stu-id="19943-123">Unblock inventory</span></span>
+
+<span data-ttu-id="19943-124">Hvis du vil fjerne en lagerblokeringspost, så lagerets blokering ophæves, skal du benytte følgende fremgangsmåde.</span><span class="sxs-lookup"><span data-stu-id="19943-124">To remove an inventory blocking record so that inventory is unblocked, follow these steps.</span></span>
+
+1. <span data-ttu-id="19943-125">Gå til **Lagerstyring \> Periodiske opgaver \> Lagerblokering**.</span><span class="sxs-lookup"><span data-stu-id="19943-125">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="19943-126">Vælg den relevante blokeringspost i listeruden.</span><span class="sxs-lookup"><span data-stu-id="19943-126">In the list pane, select the relevant blocking record.</span></span>
+1. <span data-ttu-id="19943-127">Vælg **Slet** i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="19943-127">On the Action Pane, select **Delete**.</span></span>
+1. <span data-ttu-id="19943-128">Du bliver bedt om at bekræfte handlingen.</span><span class="sxs-lookup"><span data-stu-id="19943-128">You're prompted to confirm the operation.</span></span> <span data-ttu-id="19943-129">Vælg **Ja** for at fortsætte.</span><span class="sxs-lookup"><span data-stu-id="19943-129">Select **Yes** to continue.</span></span>
+1. <span data-ttu-id="19943-130">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="19943-130">Close the page.</span></span>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
