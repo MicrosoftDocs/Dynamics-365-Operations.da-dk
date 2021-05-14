@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811299"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923019"
 ---
 # <a name="financial-reporting-faq"></a>Ofte stillede spørgsmål vedrørende Økonomirapportering 
 
-Dette emne indeholder en oversigt over spørgsmål vedrørende økonomirapportering, som andre brugere har haft. 
-
+Dette emne indeholder svar på ofte stillede spørgsmål om økonomirapportering. 
 
 ## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Hvordan begrænser jeg adgangen til en rapport ved hjælp af sikkerhedstræet?
 
-Scenario: USMF-demofirmaet har en finansbalancerapport, som ikke ønsker, at alle brugere af økonomirapportering skal kunne se i D365. Løsning: Du kan bruge sikkerhedstræet til at begrænse adgangen til en enkelt rapport, så kun bestemte brugere kan få adgang til rapporten. 
+I følgende eksempel vises, hvordan du kan begrænse adgangen til en rapport ved hjælp af sikkerhedstræet.
 
-1.  Log på Rapportdesigner til økonomirapporter
+USMF-demofirmaet har en finansbalancerapport, som ikke alle brugere af økonomirapportering bør have adgang til. Til at begrænse adgangen kan du bruge sikkerhedstræet til at begrænse adgangen til en enkelt rapport, så kun bestemte brugere kan få adgang til rapporten. Benyt følgende fremgangsmåde for at begrænse adgangen: 
 
-2.  Opret en ny trædiagramdefinition (Fil | Ny | Trædiagramdefinition) a.    Dobbeltklik på linjen **Oversigt** i kolonnen **Enhedssikkerhed**.
-  i.    Klik på Brugere og Grupper.  
-          1. Vælg de brugere eller grupper, som skal have adgang til denne rapport. 
-          
-[![brugerskærm](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+1. Log på Financial Reporter Report Designer.
+2. Opret en ny trædefinition. Gå til **Fil > Ny > Trædefinition**.
+3. Dobbeltklik på linjen **Oversigt** i kolonnen **Enhedssikkerhed**.
+4. Vælg **Brugere og Grupper**.  
+5. Vælg de brugere eller grupper, som har behov for at have adgang til denne rapport. 
+6. Vælg **Gem**.
+7. Tilføj den nye trædefinition i rapportdefinitionen.
+8. Vælg **Indstilling** i trædefinitionen. Vælg **Medtag alle enheder** under **Valg af rapporteringsenhed**.
 
-[![sikkerhedsskærm](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a>Hvordan identificerer jeg, hvilke konti der ikke svarer til mine saldi?
 
-  b.    Klik på **Gem**.
-  
-[![knappen Gem](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
+Når du har en rapport, der ikke har tilsvarende saldi, kan du gøre følgende for at identificere hver af kontiene og afvigelserne. 
 
-3.  Tilføj den nye trædiagramdefinition i rapportdefinitionen
+**Financial Reporter Report Designer**
+1. I Financial Reporter Report Designer skal du oprette en ny rækkedefinition. 
+2. Vælg **Rediger > Indsæt rækker fra dimensioner**.
+3. Vælg **MainAccount**.  
+4. Vælg **OK**.
+5. Gem rækkedefinitionen.
+6. Opret en ny kolonnedefinition
+7. Opret en ny rapportdefinition.
+8. Vælg **Indstillinger**, og fjern markering af denne indstilling.  
+9. Opret rapporten. 
+10. Eksporter rapporten til Microsoft Excel.
 
-[![trædiagramdefinition, formular](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
+**Dynamics 365 Finance** 
+1. I Dynamics 365 Finance skal du gå til **Finans > Forespørgsler og rapporter > Råbalance**.
+2. Angiv følgende parametre:
+   - **Fra dato** – Angiv starten af regnskabsåret.
+   - **Til dato** – Angiv den dato, rapporten skal genereres for.
+   - **Økonomisk dimension** – Angiv dette felt til **Hovedkontosæt**.
+ 3. Vælg **Beregn**.
+ 4. Eksporter rapporten til Microsoft Excel.
 
-A.  I trædiagramdefinitionen skal du klikke på Indstilling og under "Valg af rapporteringsenhed" og "Medtag alle enheder"
-
-[![formular til valg af rapporteringsenhed](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
-
-**Før:** [![før skærmbillede](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
-
-**Efter:** [![efter skærmbillede](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
-
-Bemærk: Årsagen til ovenstående meddelelse er, at min bruger ikke har adgang til rapporten, efter at der har anvendt enhedssikkerhed
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a>Hvordan kan jeg bestemme, hvilke konti der ikke svarer til mine saldi i D365?
-
-Når du har en rapport, der ikke svarer til det, du ville forvente i D365, kan du gøre følgende for at identificere disse konti og afvigelserne. 
-
-### <a name="in-financial-reporter-report-designer"></a>I Rapportdesigner til økonomirapporter
-
-1.  Opret en ny rækkedefinition a.    Klik på Rediger | Indsæt rækker fra dimensioner i.  Vælg MainAccount [![Vælg hovedkontoskærm](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
-    
-    ii. Klik på Ok b.    Gem rækkedefinitionen
-
-2.  Opret en ny kolonnedefinition     [![Opret en ny kolonnedefinition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
-
-3.  Opret en ny rapportdefinition a.    Klik på Indstillinger, og fjern markeringen [![Indstillinger-formular](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)
-   
-4.  Opret rapporten. 
-
-5.  Eksporter rapporten til Excel.
-
-### <a name="in-d365"></a>I D365: 
-1.  Klik på Finans | Forespørgsler og rapporter | Råbalance a.    Parametre i.  Fra dato: Startdato for regnskabsåret ii. Til dato: Den dato, hvor du genererede rapporten til iii.    Økonomiske dimensionsopsætninger "Hovedkontoopsætninger" [![Hovedkontoformular](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
-      
-  b.    Klik på Beregn
-
-2.  Eksporter rapporten til Excel
-
-Du skal nu kunne kopiere data fra FR Excel-rapporten til rapporten D365 Råbalance og sammenligne kolonnerne med "Ultimosaldo".
-
+Du skal nu kunne kopiere data fra Excel-rapporten i økonomirapport til rapporten Råbalance, så du kan sammenligne kolonnerne med **Ultimosaldo**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

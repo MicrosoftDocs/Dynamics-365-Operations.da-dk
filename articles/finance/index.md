@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 33c12fc47dc5781867ad6872a8be2a9ae1f28a2d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813453"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890323"
 ---
 # <a name="finance-home-page"></a>Startside for Finance
 
@@ -38,11 +38,11 @@ Vælg et funktionsområde, du vil vide mere om.
         - [Omkostningsregnskab](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Udgiftsstyring](expense-management/expense-management.md)
-        - [Økonomirapportering](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [Udgiftsstyring](/dynamics365/project-operations/prod-exp/expense-management)
+        - [Økonomirapportering](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Anlægsaktiver](fixed-assets/fixed-assets.md)
         - [Finans- og økonomirapportering](general-ledger/general-ledger.md) 
-        - [Projektstyring og regnskab](project-management/overview-project-management-accounting.md)
+        - [Projektstyring og regnskab](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Offentlig sektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -65,7 +65,7 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 
 ### <a name="countryregion-functionality"></a>Lande-/områdefunktionalitet
 
-Reguleringer i land/område påvirker momsopsætning og andre områder af økonomistyring. Se afsnittet [Lokalisering og lovpligtige funktioner](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i vores Hjælp-indhold for at få mere at vide om lande/områdespecifikke funktioner.
+Reguleringer i land/område påvirker momsopsætning og andre områder af økonomistyring. Se afsnittet [Lokalisering og lovpligtige funktioner](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) i vores Hjælp-indhold for at få mere at vide om lande/områdespecifikke funktioner.
 
 ### <a name="additional-content"></a>Yderligere indhold
 
@@ -73,6 +73,6 @@ Funktionen til styring af forsyningskæden dækker dele af processen fra leverin
 
 ## <a name="elearning-courses"></a>eLearning-kurser
 
-Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Finance on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path).
+Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Finance on Microsoft Learn](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

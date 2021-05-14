@@ -94,12 +94,12 @@
                   items:
                     - name: Nyheder eller ændringer på Commerce-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.19 (juli 2021)
+                      href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (maj 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
                     - name: Commerce 10.0.17 (april 2021)
                       href: get-started/whats-new-commerce-10-0-17.md
-                    - name: Commerce 10.0.16 (februar 2021)
-                      href: get-started/whats-new-commerce-10-0-16.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner på startsiden
@@ -184,6 +184,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Integrere lærredsapps fra Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+                - name: Integrere tredjepartsapps
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
                 - name: Finde oplysninger ved hjælp af opslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Ændre datoen for en session
@@ -280,6 +282,8 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfiguration og installation af Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
+                - name: Masseinstallation af forseglede Commerce-selvbetjeningskomponenter
+                  href: dev-itpro/Enhanced-Mass-Deployment.md
                 - name: Masseinstallation af ældre selvbetjeningskomponenter
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Commerce-komponenthændelser for diagnosticering og fejlfinding
@@ -368,7 +372,7 @@
                       href: pos-operations.md
                     - name: Enhedsaktivering af en brugerdefineret Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Aktivere Azure Active Directory-godkendelse for POS-login
+                    - name: Konfigurere Azure Active Directory-godkendelse for POS-login
                       href: aad-pos-logon.md
                     - name: Produkt- og kundesøgning i POS
                       href: POS-search-improvements.md
@@ -630,10 +634,12 @@
                   href: define-channel-specific-discounts.md
                 - name: Indstillinger til forhindring af rabatter for detailprodukter
                   href: prevent-discounts.md
-                - name: Betalingsmiddelrabatter
+                - name: Betalingsmiddelbaserede rabatter
                   href: tender_based_discounts.md
                 - name: Oversigt over forsendelsesrabat
                   href: retail-shipping-discount.md
+                - name: Konfigurere gave sammen med købskampagner
+                  href: gift-with-purchase.md
                 - name: Konfigurere kuponer
                   href: retail-coupons.md
                 - name: Få vist rabatter i POS
@@ -760,6 +766,8 @@
                   href: notifications-pos.md
                 - name: Sælge kontinuitetsprogrammer og behandle salgsordrer
                   href: tasks/use-continuity-program.md
+                - name: Aktivere beskeder om kundeindtjekning på POS
+                  href: enable-customer-check-in.md
             - name: Returneringer
               items:
                 - name: Sammenkædede refusioner
@@ -922,6 +930,8 @@
                   href: manage-csp.md
                 - name: Fravælge samling af webaktivitetshændelse
                   href: web-activity-opt-out.md
+                - name: Anvende måleenhedsindstillinger
+                  href: unit-of-measure.md
             - name: Administrere dit webstedsindhold
               items:
                 - name: Metoder til at tilføje indhold
@@ -1092,6 +1102,8 @@
                       href: delivery-options-module.md
                     - name: Modul til afhentningsoplysninger
                       href: pickup-info-module.md
+                    - name: Modul til indtjekning til afhentning
+                      href: check-in-pickup-module.md
                     - name: Ordredetaljer-modul
                       href: order-confirmation-module.md
                     - name: Gavekortsmodul
@@ -1194,6 +1206,8 @@
               href: store-performance-information.md
             - name: 'Konfigurere RFM-analyse (Recency, Frekvens og Monetær)'
               href: set-up-rfm-analysis.md
+            - name: Konfigurere Microsoft Clarity i Dynamics 365 Commerce
+              href: set-up-clarity.md
         - name: Globalisering
           items:
             - name: Oversigt over regnskabsintegration for Commerce-kanal
@@ -1202,6 +1216,14 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Brugerdefinerede certifikatprofiler til detailbutikker
               href: localizations/certificate-profiles-for-retail-stores.md
+            - name: Regulatory Configuration Service
+              items:
+                - name: Oversigt over Regulatory Configuration Service
+                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Services (RCS) – globaliseringsfunktioner
+                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                - name: Oprette ER-konfigurationer i Regulatory Configuration Service og overføre dem til det globale lager
+                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
             - name: Østrig
               items:
                 - name: Eksempel på integration af regnskabsregistreringstjeneste i Østrig
@@ -2210,6 +2232,8 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: Modulet props.autogenerated.ts-fil
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                    - name: Forudindstillinger for modulkonfiguration
+                      href: e-commerce-extensibility/module-config-presets.md
                 - name: Udvikle moduler
                   items:
                     - name: Oprette et nyt model
@@ -2416,6 +2440,18 @@
                   href: dev-itpro/cart-view-handlers.md
                 - name: Føje brugerdefinerede knapper til POS-overskriftslinjen
                   href: dev-itpro/pos-header-bar.md
+                - name: POS-uafhængige SDK-pakker
+                  items:
+                    - name: Oversigt over POS-udvidelse
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: Introduktion til POS-udvidelser
+                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: Oprette et POS-udvidelsespakkeprojekt
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Oprette en appx-fil til udvidelse af Modern POS
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: Fejlfinde en POS-udvidelse
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
             - name: Hardware Station-udvidelse
               items:
                 - name: Hardware Station og udvidelse

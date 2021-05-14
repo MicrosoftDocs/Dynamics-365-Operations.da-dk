@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e20c26939389a72a8b3249bcb26bb3871768bbee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62e075fc26ee2e183cd859c5ec2c90faa3bfe3ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820853"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897004"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for kreditor
 
@@ -120,7 +120,7 @@ Under følgende emner finder du oplysninger om udligninger. Udligningsprocessen 
 
 #### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-frigivelsesplaner](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
+Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) for at se, hvilke nye funktioner der er planlagt. 
 
 #### <a name="blogs"></a>Blogs
 

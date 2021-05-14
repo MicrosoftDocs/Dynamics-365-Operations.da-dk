@@ -58,7 +58,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Købe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere lagersted for installationer i det lokale miljø
+                - name: Konfigurere lagersted for lokale installationer
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance and Operations-apps drevet af 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
@@ -70,14 +70,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nyheder eller ændringer i Supply Chain Management
                   items:
-                    - name: Startside for nyheder eller ændringer i Supply Chain Management
+                    - name: Nyheder eller ændringer i Supply Chain Management-startside
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.19 (juli 2021)
+                      href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (maj 2021)
                       href: get-started/whats-new-scm-10-0-18.md
                     - name: Supply Chain Management 10.0.17 (april 2021)
                       href: get-started/whats-new-scm-10-0-17.md
-                    - name: Supply Chain Management 10.0.16 (februar 2021)
-                      href: get-started/whats-new-scm-10-0-16.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner på startsiden
@@ -164,6 +164,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Integrere lærredsapps fra Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Integrere tredjepartsapps
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finde oplysninger ved hjælp af opslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ændre datoen for en session
@@ -179,7 +181,7 @@
                 - name: Arkitektur for Finance and Operations-apps
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack
-                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
+                  href: /dynamics365/fasttrack/
                 - name: Onboarde et implementeringsprojekt
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Miljøplanlægning
@@ -206,6 +208,64 @@
           items:
             - name: Globaliseringsressourcer
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Globaliseringstjenester
+              items:
+                - name: Oversigt over globaliseringstjenester
+                  href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Regulatory Configuration Service
+                  items:
+                    - name: Oversigt over Regulatory Configuration Service
+                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Services (RCS) – globaliseringsfunktioner
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Oprette ER-konfigurationer i Regulatory Configuration Service og overføre dem til det globale lager
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Elektronisk fakturering
+                  items:
+                    - name: Oversigt over elektronisk fakturering
+                      href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Komponenter til elektronisk fakturering i administration
+                      href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere Elektronisk fakturering i RCS (Regulatory Configuration Services)
+                      href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Udstede elektroniske fakturaer i Finance og Supply Chain Management
+                      href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Oprette en Azure-lagerkonto og en Key Vault
+                      href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Start her
+                      items:
+                        - name: Start her med serviceadministration i elektronisk fakturering
+                          href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Start her med elektronisk fakturering
+                          href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Start her med elektronisk fakturering for Brasilien
+                          href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Start her med elektronisk fakturering for Egypten
+                          href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Start her med elektronisk fakturering for Italien
+                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Start her med elektronisk fakturering for Mexico
+                          href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurere elektronisk fakturering
+                          href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ofte stillede spørgsmål om elektronisk fakturering
+                      href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Momsberegning
+                  items:
+                    - name: Oversigt over momsberegning
+                      href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Start her med momsberegning
+                      href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Understøttelse af momsfunktion til flytteordrer
+                      href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Føje datafelter til momskonfigurationer
+                      href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
+                      href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Flere momsregistreringsnumre
+                      href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere et miljø til opslag efter masterdata
+                      href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
             - name: Lovmæssige opdateringer
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: Indien
@@ -224,15 +284,21 @@
           items:
             - name: Sky- og edge-skaleringsenheder for arbejdsbelastninger i forbindelse med produktion og lagerstedsstyring
               href: cloud-edge/cloud-edge-landing-page.md
+            - name: Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD
+              href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
             - name: Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Arbejdsbelastninger i forbindelse med lagerstedsstyring for sky- og edge-skaleringsenheder
               href: cloud-edge/cloud-edge-workload-warehousing.md
             - name: Lagerstedsordrer til sky- og edge-skaleringsenheder
               href: cloud-edge/cloud-edge-warehouse-order.md
+            - name: Lagerregulering for lagersted
+              href: cloud-edge/cloud-edge-warehouse-inventory-adjustment.md
+            - name: Meddelelser om meddelelsesprocessor
+              href: cloud-edge/cloud-edge-message-processor-messages.md
         - name: Aktivadministration
           items:
-            - name: Oversigt over aktivadministration
+            - name: Oversigt over aktivstyring
               href: asset-management/index.md
               items:
                 - name: Arbejdssteder og aktiver
@@ -1363,24 +1429,46 @@
                   href: inventory/tasks/set-up-item-arrival-overview-profile.md
             - name: Kvalitetsstyring
               items:
-                - name: Oversigt over kvalitetsstyring
-                  href: inventory/enable-quality-management.md
-                - name: Processer for kvalitetsstyring
+                - name: Oversigt over styring af kvalitet og uoverensstemmelse
                   href: inventory/quality-management-processes.md
-                - name: Kvalitetsstyring for lagerstedsprocesser
-                  href: inventory/quality-management-for-warehouses-processes.md
-                - name: Håndtering af uoverensstemmelse
-                  href: inventory/enable-nonconformance-management.md
-                - name: Konfigurere forudsætninger for administration
-                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
-                - name: Oprette og behandle en overensstemmelse
-                  href: inventory/tasks/create-process-non-conformance.md
-                - name: Karantæneordrer
-                  href: inventory/quarantine-orders.md
-                - name: Konfigurere kvalitetsordrer
-                  href: inventory/tasks/set-up-quality-orders.md
+                - name: Aktivere og konfigurere styring af kvalitet og uoverensstemmelse
+                  items:
+                    - name: Aktivere styring af kvalitet og uoverensstemmelse
+                      href: inventory/enable-quality-management.md
+                    - name: Testinstrumenter til kvalitetsstyring
+                      href: inventory/quality-test-instruments.md
+                    - name: Kvalitetsstyringstest
+                      href: inventory/quality-tests.md
+                    - name: Variabler til kvalitetsstyringstest
+                      href: inventory/quality-test-variables.md
+                    - name: Testgrupper til kvalitetsstyring
+                      href: inventory/quality-test-groups.md
+                    - name: Varegrupper til kvalitetsstyring
+                      href: inventory/quality-groups.md
+                    - name: Vareprøve til kvalitetsstyring
+                      href: inventory/quality-item-sampling.md
+                    - name: Kvalitetstilknytninger
+                      href: inventory/quality-associations.md
+                    - name: 'Arbejdere, der er ansvarlige for godkendelse af uoverensstemmelser'
+                      href: inventory/quality-responsible-workers.md
+                    - name: Problemtyper for uoverensstemmelse
+                      href: inventory/quality-problem-types.md
+                    - name: Karantænezoner for uoverensstemmelse
+                      href: inventory/quality-quarantine-zones.md
+                    - name: Diagnosticeringstyper for uoverensstemmelse
+                      href: inventory/quality-diagnostic-types.md
+                    - name: Handlinger for uoverensstemmelse
+                      href: inventory/quality-operations.md
+                    - name: Gebyrer for handlinger for uoverensstemmelse
+                      href: inventory/quality-charges.md
+                - name: Arbejde med kvalitetsordrer
+                  href: inventory/quality-orders.md
                 - name: Inspicere varers kvalitet
                   href: inventory/tasks/inspect-quality-goods.md
+                - name: Oprette og behandle en uoverensstemmelse
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: Arbejde med karantæneordrer
+                  href: inventory/quarantine-orders.md
                 - name: Lagerblokering
                   href: inventory/inventory-blocking.md
                 - name: Oprette og vedligeholde lagerblokering
@@ -1511,8 +1599,8 @@
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Godkende ordreforslag
                   href: master-planning/planning-optimization/approved-planned-order.md
-                - name: Automatisk autorisation med planlægningsoptimering
-                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Autoriser ordreforslag
+                  href: master-planning/planning-optimization/planned-order-firming.md
                 - name: Planlægning med negative disponible lagerantal
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Få vist planhistorik og planlægningslogfiler
@@ -1628,7 +1716,7 @@
                 - name: Omkostningsstyring
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Udgiftsstyring
-                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Disponibel lagerbeholdning
                   href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Fakturagodkendelser
@@ -1636,11 +1724,11 @@
                 - name: Mit team
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Oversigt over Project-mobilprogrammer
-                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Tidsregistrering for projekt
-                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Project Timesheet
-                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Godkendelse af indkøbsordrer
                   href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Salgsordrer
@@ -1927,9 +2015,15 @@
                   href: procurement/vendor-onboarding.md
                 - name: Kreditorsamarbejde med eksterne kreditorer
                   href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: Vedligeholde kreditorcertificering
+                  href: ../finance/public-sector/manage-vendor-certification.md
+                - name: Kategorianmodninger fra kreditorer
+                  href: procurement/category-requests-from-vendors.md
                 - name: Kreditorsamarbejde med kunder
                   href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
-                - name: Importere kreditorkataloger
+                - name: Vedligeholde oplysninger om kreditorbankkonto
+                  href: ../finance/accounts-payable/maintain-vendor-bank-info.md
+                - name: Importér kreditorkataloger
                   href: procurement/vendor-catalogs-import.md
                 - name: Konfigurere et eksternt katalog til PunchOut e-indkøb
                   href: procurement/set-up-external-catalog-for-punchout.md
@@ -1979,6 +2073,8 @@
                   href: pim/tasks/create-product-master.md
                 - name: Oprette foruddefinerede produktvarianter
                   href: pim/tasks/create-predefined-product-variants.md
+                - name: Administrere måleenheder
+                  href: pim/tasks/manage-unit-measure.md
                 - name: Måleenhedskonvertering pr. produktvariant
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Oprette et frigivet produkt for et enkelt firma
@@ -2141,6 +2237,8 @@
               href: engineering-change-management/product-readiness.md
             - name: Strukturen for frigivne produkter
               href: engineering-change-management/release-product-structure.md
+            - name: Ofte stillede spørgsmål om styring af tekniske ændringer
+              href: engineering-change-management/change-management-faq.md
         - name: Produktionsstyring
           items:
             - name: Oversigt over produktionsproces
@@ -2167,8 +2265,6 @@
                       href: production-control/phantom-items.md
                     - name: Styklistekalkulationer
                       href: cost-management/bom-calculations.md
-                    - name: Administrere måleenhed
-                      href: pim/tasks/manage-unit-measure.md
                     - name: Produktionsparametre i produktionsudførelse
                       href: production-control/production-parameters-manufacturing-execution.md
                     - name: Operationsressourcer
@@ -2849,6 +2945,10 @@
               href: transportation/tasks/load-template.md
             - name: Vurderingsprofiler
               href: transportation/tasks/setup-a-rating-profile.md
+            - name: LTL-klasser
+              href: transportation/ltl-class.md
+            - name: NMFC-koder
+              href: transportation/nmfc-codes.md
             - name: Konfigurere et brændstofindeks for fragtmand
               href: transportation/tasks/set-up-carrier-fuel-index.md
             - name: Konfigurere et transporttilbud
@@ -2937,6 +3037,8 @@
                   href: warehousing/location-product-dimension-mixing.md
                 - name: Læg på lager-klynger
                   href: warehousing/putaway-clusters.md
+                - name: Kvalitetsstyring for lagerstedsprocesser
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Kvalitetskontrol
                   href: warehousing/quality-check.md
                 - name: Fejlfinde indgående lagerstedsoperationer
@@ -3069,6 +3171,8 @@
                       href: warehousing/manage-warehouse-workers.md
                     - name: Udskudt behandling af lagerstedsarbejde
                       href: warehousing/deferred-put.md
+                    - name: Udskudt behandling af manuel lagerbevægelseshandling
+                      href: warehousing/deferred-processing-manual-inventory-movement.md
                 - name: Cross-docking
                   items:
                     - name: Cross-docking fra produktionsordrer til forsendelsesområder
@@ -3237,6 +3341,40 @@
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
             - name: Udvide dataenheder for lagerbeholdning
               href: inventory/extend-on-hand-entities.md
+        - name: Fejlfinding
+          items:
+            - name: Lagerstedsstyring
+              items:
+                - name: Du kan ikke bekræfte en forsendelse på grund af problemer med kalenderen
+                  href: troubleshooting/warehousing/load-has-active-appo.md
+                - name: Du kan ikke bekræfte en forsendelse på grund af ufuldstændigt eller manglende arbejde
+                  href: troubleshooting/warehousing/open-or-no-work-exis.md
+                - name: 'Du kan ikke bekræfte en forsendelse, fordi der ikke er plukket varer'
+                  href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
+                - name: 'Du kan ikke bekræfte en forsendelse, fordi antallet er nul'
+                  href: troubleshooting/warehousing/picked-quantity-is-zero.md
+                - name: 'En forsendelse kan ikke bekræftes, fordi antallet overstiger procentdelen for overlevering'
+                  href: troubleshooting/warehousing/quantity-exceeds-ove.md
+                - name: 'En forsendelse kan ikke bekræftes, fordi antallet overstiger procentdelen for underlevering'
+                  href: troubleshooting/warehousing/quantity-exceeds-und.md
+                - name: Den seneste lukkede arbejdslinje skal være læg på lager
+                  href: troubleshooting/warehousing/the-last-closed-work.md
+                - name: Vægtfelterne på lastlinjer svarer ikke til vægtfelterne ved lasten
+                  href: troubleshooting/warehousing/the-weight-fields-on.md
+                - name: Bølge er ikke berettiget til oprydning
+                  href: troubleshooting/warehousing/wave-is-not-eligible.md
+                - name: Vægt skal være positiv
+                  href: troubleshooting/warehousing/weight-must-be-posit.md
+                - name: 'Arbejde kan ikke annulleres, fordi det er blokeret'
+                  href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
+                - name: Arbejde kan ikke annulleres på grund af status
+                  href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
+                - name: Arbejde er ikke blokeret
+                  href: troubleshooting/warehousing/work-is-not-blocked.md
+                - name: Arbejde forbliver blokeret
+                  href: troubleshooting/warehousing/work-remains-blocked.md
+                - name: 'Du kan ikke annullere arbejde, der er hos en bruger'
+                  href: troubleshooting/warehousing/you-cannot-cancel-wo.md
     - name: Udvikling og administration af Finance and Operations-apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
