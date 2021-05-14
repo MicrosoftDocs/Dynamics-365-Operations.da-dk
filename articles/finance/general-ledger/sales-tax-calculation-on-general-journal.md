@@ -2,25 +2,25 @@
 title: Beregning af moms på finanskladdelinjer
 description: Dette emne forklarer, hvordan der beregnes moms for forskellige typer konti (kreditor, debitor, finans og projekt) på finanskladdelinjer.
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815326"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937300"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Beregning af moms på finanskladdelinjer
 [!include [banner](../includes/banner.md)]
@@ -117,7 +117,7 @@ I dette afsnit beskrives, hvordan momsbeløbs fortegn beregnes.
 
 ![Siden Momstransaktioner](media/sales-tax-amount-sign.jpg)
 
-Følgende tabel indeholder den generelle regel til bestemmelse af fortegn på momsbeløb i den midlertidige momstabel.
+Følgende tabel indeholder den generelle regel til bestemmelse af momsretningen og fortegnet for momsbeløb i den midlertidige momstabel.
 
 | Kladdelinjebeløb | Momsretning  | Fortegn for momsbeløb |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +126,7 @@ Følgende tabel indeholder den generelle regel til bestemmelse af fortegn på mo
 | Negativ            | Indgående moms | Negativ              |
 | Negativ            | Udgående moms    | Positiv              |
 
-Der findes en særlig regel for bilag, der kun indeholder **Projekt**- eller **Finans**-linjer, når der er valgt en momsgruppe eller varemomsgruppe på **Finans**-linjen. Denne regel styres ved at aktivere den uafhængige momsberegningsfunktion for finanskladder. Når denne funktion er deaktiveret, bruger momsbeløbet i **Finans**-linjen debet- og kreditretningen for **Projekt**-linjen. Når denne funktion er aktiveret, bruger momsbeløbet i **Finans**-linjen egen debet- og kreditretning. I følgende tabeller vises reglen for de enkelte scenarier. 
+Der findes en særlig regel for bilag, der kun indeholder **Projekt**- eller **Finans**-linjer, når der er valgt en momsgruppe eller varemomsgruppe på **Finans**-linjen. Denne regel styres af funktionen **Aktivér funktionen til uafhængig beregning af moms for finanskladder**. Når denne funktion er deaktiveret, bruger momsbeløbet i **Finans**-linjen debet- og kreditretningen for **Projekt**-linjen. Når denne funktion er aktiveret, bruger momsbeløbet i **Finans**-linjen egen debet- og kreditretning. I følgende tabeller vises reglen for de enkelte scenarier. 
 
 **Regel, når funktionen er slåer til**
 

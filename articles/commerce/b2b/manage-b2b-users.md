@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7c1bd8d9cb494cef78fa7c14f6c391821d48749a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799847"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936650"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Administrere forretningspartnerbrugere på B2B-e-handelswebsteder
 
@@ -43,7 +43,7 @@ Følg disse trin for at aktivere funktionen til B2B-e-handel i Commerce Headquar
 
 ## <a name="create-a-number-sequence-and-add-it-to-commerce-shared-parameters"></a>Oprette en nummerserie og føje den til delte parametre for handel
 
-Talserier bruges til generering af læselige, entydige identifikatorer for masterdataposter og transaktionsposter, der kræver identifikatorer. Du kan finde flere oplysninger om nummerserier i [Oversigt over nummerserier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+Talserier bruges til generering af læselige, entydige identifikatorer for masterdataposter og transaktionsposter, der kræver identifikatorer. Du kan finde flere oplysninger om nummerserier i [Oversigt over nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 Hvis du vil oprette en nummerserie og føje den til delte parametre for handel i Commerce Headquarters, skal du følge disse trin.
 
@@ -136,7 +136,7 @@ Følg disse trin for at administratorer kan få forretningspartnere og brugere d
 
 [Angive produktantalsgrænser for B2B-e-handelswebsteder](quantity-limits.md)
 
-[Oversigt over nummerserier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+[Oversigt over nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Komponenter til elektronisk fakturering i administration
 description: Dette emne indeholder oplysninger om de komponenter, der er knyttet til administration af Elektronisk fakturering.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840022"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963185"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Komponenter til elektronisk fakturering i administration
 
@@ -31,7 +31,7 @@ Dette emne indeholder oplysninger om de komponenter, der er knyttet til administ
 
 ## <a name="azure"></a>Azure
 
-Bruges Microsoft Azure til at oprette Key Vault og lagerkontoen. Brug derefter hemmeligheder i konfigurationen af Elektronisk fakturering.
+Brug Microsoft Azure til at oprette hemmeligheder for Key Vault og lagerkontoen. Brug derefter hemmeligheder i konfigurationen af Elektronisk fakturering.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
@@ -85,12 +85,14 @@ Tjenestemiljøer kan administreres via status. De mulige indstillinger er:
 Tjenesten til elektronisk fakturering er ansvarlig for at opbevare af alle dine virksomhedsdata i de Azure-ressourcer, der ejes af din virksomhed. Hvis du vil sikre dig, at tjenesten fungerer korrekt, og at alle de virksomhedsdata, der kræves til og oprettes af Elektronisk fakturering, tilgås korrekt, skal du oprette to hovedressourcer i Azure:
 
 - En Azure Storage-konto (Blob-lager) der kan opbevare elektroniske fakturaer
-- En Azure Key Vault, der kan opbevare certifikater og URI'en (Uniform Resource Identifier) for lagerkontoen
+- En Azure Key Vault, der opbevarer certifikater og URI'en (Uniform Resource Identifier) for lagerkontoen
 
-> [!NOTE]
-> En dedikeret Key Vault og kundelagerkonto skal tildeles specifikt til brug sammen med Elektronisk fakturering.
 
-Du kan finde flere oplysninger i [Oprette en Azure-lagerkonto og Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+En dedikeret Key Vault og kundelagerkonto skal tildeles specifikt til brug sammen med Elektronisk fakturering. Du kan finde flere oplysninger i [Oprette en Azure-lagerkonto og en Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+
+Hvis du vil overvåge sundheden af Key Vault og modtage advarsler, skal du konfigurere Azure Monitor til Key Vault. Ved at aktivere logføring af Key Vault kan du overvåge, hvordan, hvornår og hvem der tilgår Key Vaults. Du kan finde flere oplysninger i [Overvågning og advarsler for Azure Key Vault](/azure/key-vault/general/alert), og [Hvordan du aktiverer logning af Key Vault](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+Som bedste praksis skal hemmeligheder jævnligt ombyttes. Yderligere oplysninger finder du i [Dokumentation af hemmeligheder](/azure/key-vault/secrets/).
 
 #### <a name="users"></a>Brugere
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4767d5dc3944d2595a5b2a74a6d5c7c0ea0c849a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2c945756997b0580ac7ffb19261f9184e53a1c10
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809440"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920501"
 ---
 # <a name="approve-a-product-configuration-model"></a>Godkende en produktkonfigurationsmodel
 
@@ -26,25 +26,24 @@ ms.locfileid: "5809440"
 
 Kørsel af denne procedure kræver, at der er mindst én tilgængelig produktkonfigurationsmodel. Denne procedure bruger Højttaler af topkvalitet-modellen i demodatafirmaet USMF. Bemærk, at denne model er blevet godkendt, men at proceduren fører dig gennem hele processen.
 
-1. Klik på Definition af produktvariantmodel.
-2. Klik på Produktkonfigurationsmodeller.
-3. Find og vælg den ønskede post på listen.
+1. Gå til **Administration af produktoplysninger \> Produkter \> Produktkonfigurationsmodeller**.
+1. Find og vælg den ønskede post på listen.
     * Vælg modellen Højttaler af topkvalitet til denne procedure.  
-4. Klik på Versioner.
-5. Klik på Ny.
-6. Indtast eller vælg en værdi i feltet Produktnummer.
+1. Vælg **Versioner**.
+1. Vælg **Ny**.
+1. Indtast eller vælg en værdi i feltet **Produktnummer**.
     * Referencen til et produkt repræsenterer en version af en produktkonfigurationsmodel. Kun produktmastere, der har den begrænsningsbaserede konfigurationsteknologi, vises på denne liste.  
-7. Indtast en dato i feltet Fra dato.
+1. Indtast en dato i feltet **Fra dato**.
     * Vælg, hvornår produktmodelversionen er tilgængelig.  
-8. Indtast en dato i feltet Til dato.
+1. Indtast en dato i feltet **Til dato**.
     * Vælg en slutdato for, hvornår denne produktmodelversion skal udløbe, eller vælg Aldrig.  
-9. Klik på Godkend for at åbne dialogboksen.
-10. Indtast eller vælg en værdi i feltet Godkendt af.
+1. Vælg **Godkend** for at åbne dialogboksen med rullelisten.
+1. Indtast eller vælg en værdi i feltet **Godkendt af**.
     * Vælg den person, der er ansvarlig for godkendelse af produktmodeller til brug i operationer.  
-11. Klik på OK.
-12. Vælg en indstilling i feltet Prissætningsmetode.
+1. Vælg **OK**.
+1. Vælg en indstilling i feltet **Prissætningsmetode**.
     * Aktivér produktmodelversionen. Det er kun muligt at have ét aktivt produkt for en produktmodel ad gangen.  
-13. Luk siden.
+1. Luk siden.
 
 
 

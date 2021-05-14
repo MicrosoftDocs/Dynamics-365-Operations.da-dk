@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d5d5303b6d81ad182e0e28a51790166b833bee7b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754794"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923301"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -140,7 +140,7 @@ Med Administration af funktioner kan du styre de funktioner, der leveres i hver 
 
 ## <a name="new-features-are-optional-for-12-months"></a>Nye funktioner er valgfrie i 12 måneder
 
-Når der er installeret en ny funktion, der ikke er kritisk, er den valgfri i en periode på 12 måneder. Dette giver dig og din organisation tid til at planlægge, hvornår I skal tage funktion i anvendelse og få den testet i forhold til de daglige operationer. Du kan finde flere oplysninger under [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+Når der er installeret en ny funktion, der ikke er kritisk, er den valgfri i en periode på 12 måneder. Dette giver dig og din organisation tid til at planlægge, hvornår I skal tage funktion i anvendelse og få den testet i forhold til de daglige operationer. Du kan finde flere oplysninger under [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](../one-version.md#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Bruge Administration af funktioner til at slå ISV-funktioner eller brugerdefinerede funktioner til
 
@@ -161,7 +161,7 @@ Politikken er, at alle nye funktioner vil være tilvalg i en periode på 12 mån
 Timing af opdateringsfrigivelse er variabel, timing af miljøopdateringer er variabel, og kunder kan vælge at springe visse opdateringer over. Derfor er det vanskeligt at fastlægge bestemte datoer. 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Hvor er dokumentationen til de funktioner, der gøres obligatoriske? 
-Denne dokumentation kommer fra programteams. Disse vil ofte være nævnt i [Fjernede eller udfasede funktioner](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+Denne dokumentation kommer fra programteams. Disse vil ofte være nævnt i [Fjernede eller udfasede funktioner](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Er der en besked i produktet eller et signal om, at en funktion skal være obligatorisk? 
 I dag findes der ikke en beskedmekanisme, der vedrører, at funktionen er obligatorisk.

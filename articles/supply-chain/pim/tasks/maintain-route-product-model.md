@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db87d0a26efa948a618344ed392ab638b8790
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45c6b1e6e75645bb17ce4defa0bca0e6d2131b6e
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817983"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921259"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Vedligehold rute for en produktmodel
 
@@ -26,43 +26,43 @@ ms.locfileid: "5817983"
 
 Kørsel af denne procedure kræver, at der findes en model til produktkonfiguration. Denne procedure bruger modellen Højttaler af topkvalitet i demofirmaet USMF til at føre dig gennem processen.
 
-
 ## <a name="add-a-route-operation"></a>Tilføj en ruteoperation
-1. Klik på Definition af produktvariantmodel.
-2. Klik på Produktkonfigurationsmodeller.
-3. Find og vælg den ønskede post på listen.
+
+1. Gå til **Administration af produktoplysninger \> Produkter \> Produktkonfigurationsmodeller**.
+1. Find og vælg den ønskede post på listen.
     * Vælg modellen Højttaler af topkvalitet til denne øvelse.  
-4. Klik op linket i den valgte række på listen.
-5. Udvid sektionen Ruteoperationer.
-6. Klik på Tilføj.
-7. Skriv en værdi i feltet Navn.
-8. Skriv en værdi i feltet Beskrivelse.
-9. Klik på Gem.
+1. Vælg linket i den valgte række på listen.
+1. Udvid sektionen **Ruteoperationer**.
+1. Vælg **Tilføj**.
+1. Skriv en værdi i feltet **Navn**.
+1. Indtast en værdi i feltet **Beskrivelse**.
+1. Vælg **Gem**.
 
 ## <a name="enter-route-operation-details"></a>Angiv oplysninger om ruteoperation
-1. Klik på Oplysninger om ruteoperation.
-2. Indtast eller vælg en værdi i feltet Handling.
-3. I feltet Ope. Nr. skal du angive et tal.
+
+1. Vælg **Oplysninger om ruteoperation**.
+1. Indtast eller vælg en værdi i feltet **Operation**.
+1. I feltet **Oper.nr.** skal du angive et tal.
     * Operationsnumre bestemmer ruteforløbet.  
     * Hver egenskab for en ruteoperation kan få en statisk værdi eller kan knyttes til en attribut. Tilknytning til en attribut medfører, at værdien angives som en del af konfigurationen.  
-4. Indtast eller vælg en værdi i feltet Rutegruppe.
+1. Indtast eller vælg en værdi i feltet **Rutegruppe**.
     * Rutegruppen afgør den væsentlige funktionsmåde i forbindelse med efterkalkulation, forbrug og installation.  
-5. Klik på fanen Opsætning.
-6. Klik på fanen Tider.
-7. I feltet Procesantal skal du angive et tal.
+1. Vælg fanen **Opsætning**.
+1. Vælg fanen **Tider**.
+1. Indtast et tal i feltet **Behandlingsantal**.
     * Bestem, hvor mange der vil blive behandlet under én handling.  
-8. Angiv et tal i feltet Timer/tid.
+1. Indtast et tal i feltet **Timer/tid**.
     * Indtast tidsforholdet.  
-9. Marker afkrydsningsfeltet Indstil.
-10. Angiv et tal i feltet Procestid.
+1. Marker afkrydsningsfeltet **Indstil**.
+1. Indtast et tal i feltet **Kørselstid**.
     * Bestemme behandlingstiden for den mængde, du har angivet.  
-11. Klik på fanen Ressourcebehov.
-12. Klik på Tilføj.
-13. Markér den valgte række på listen.
-14. Vælg en indstilling i feltet Kravtype.
+1. Vælg fanen **Ressourcebehov**.
+1. Vælg **Tilføj**.
+1. Markér den valgte række på listen.
+1. Vælg en indstilling i feltet **Kravtype**.
     * Beslut, om du vil angive bestemte ressourcer eller egenskaber, som de skal have.  
-15. Indtast eller vælg en værdi i feltet Krav.
-16. Klik på OK.
+1. Indtast eller vælg en værdi i feltet **Krav**.
+1. Vælg **OK**.
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: Inspicere varers kvalitet
-description: Dette emne forklarer, hvordan du behandler en kvalitetsordre.
+description: Dette emne beskriver, hvordan du behandler kvalitetsordrer.
 author: perlynne
-ms.date: 08/01/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,40 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47e7156e5c57d5f983564cc966b4108f1180ff8d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ec67e7864db12178c0f3cfe8b93d510a46e8a0d4
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825909"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956128"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Inspicere varers kvalitet
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne forklarer, hvordan du behandler en kvalitetsordre. Du kan køre denne guide i USMF-demodatafirmaet. Inden du begynder denne eksempelprocedure, skal du bekræfte indkøbsordren "000016" og bogføre en produktkvittering. Dette vil automatisk oprette en kvalitetsordre. Kvalitetskontroller foretages normalt af en kvalitetsmedarbejder.
+Dette emne beskriver, hvordan du behandler kvalitetsordrer. Kvalitetskontroller er udføres typisk af en kvalitetsmedarbejder.
 
+Hvis standarddemodataene er installeret, kan du bruge dem til at gennemføre procedurerne i dette emne. Hvis du vil bruge demodataene, skal du vælge den juridiske enhed *USMF*, før du starter. Du skal derefter bekræfte indkøbsordre *000016* og bogføre en produktmodtagelse. En kvalitetsordre genereres automatisk.
 
-## <a name="select-a-quality-order"></a>Vælg en kvalitetsordre
-1. I navigationsruden skal du gå til **Moduler > Lagerstyring > Periodiske opgaver > Kvalitetsstyring > Kvalitetsordrer.**
-2. Vælg den kvalitetsordre, der blev oprettet, før du startede denne procedure.  
+## <a name="step-1-select-a-quality-order"></a>Trin 1: Vælg en kvalitetsordre
 
-## <a name="record-test-results"></a>Registrere testresultater
+Benyt denne fremgangsmåde for at vælge en kvalitetsordre.
+
+1. Gå til **Lagerstyring \> Periodiske opgaver \> Kvalitetsstyring \> Kvalitetsordrer**.
+1. Vælg den kvalitetsordre, der blev genereret, før du startede denne procedure.
+
+## <a name="step-2-record-test-results"></a>Trin 2: Registrere testresultater
+
+Benyt følgende fremgangsmåde for at registrere testresultater.
+
 1. Vælg **Resultater**.
-2. Vælg **Rediger**.
-3. I feltet **Antal resultater** skal du skrive et tal.
-4. I feltet **Udfald** skal du vælge den ønskede post i rullemenuen.  
-- I dette eksempel er resultatet baseret på et foruddefineret udfald. Normalt ville du registrere et mere specifikt testresultat, for eksempel en størrelse eller anden dimension.  
-5. Vælg **Gem**.
-6. Luk siden.
+1. Vælg **Rediger**.
+1. I feltet **Antal resultater** skal du skrive et tal.
+1. I feltet **Udfald** skal du vælge det ønskede post. I dette eksempel er resultatet baseret på et foruddefineret udfald. Normalt vil du registrere et mere specifikt testresultat som f.eks. en størrelse eller anden dimension.
+1. Vælg **Gem**.
+1. Luk siden.
 
-## <a name="validate-the-quality-order"></a>Valider kvalitetsordren
+## <a name="step-3-validate-the-quality-order"></a>Trin 3: Validere kvalitetsordren
+
+Benyt denne fremgangsmåde for at validere kvalitetsordren.
+
 1. Vælg **Valider**.
-2. I feltet **Valideret af** skal du i rullemenuen vælge den bruger, som udfører inspektionen.  
-3. Klik på **Vælg**.
-4. Vælg **OK**.
-5. Luk siden.
-
-
+1. Vælg den bruger, der skal udføre inspektionen, i feltet **Valideret af**.
+1. Vælg **Vælg**.
+1. Vælg **OK**.
+1. Luk siden.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

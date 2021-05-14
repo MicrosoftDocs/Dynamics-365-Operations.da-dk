@@ -2,7 +2,7 @@
 title: Kvalitetsstyring for lagerstedsprocesser.
 description: Dette emne indeholder oplysninger om kvalitetsstyring af funktionen for lagerstedsprocesser. Denne funktion udvider funktionerne til kvalitetsstyring og giver brugerne mulighed for at integrere kontrolelementer til vareprøver i modtagelsesprocessen på lagerstedet ved hjælp af den avancerede lokationsstyring.
 author: Henrikan
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: a049a7832e02dbd2debdd016a6b723726cc25df0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db23ffcea4da28fa309ccca12540e0edaf00ad6c
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834259"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956076"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerstedsprocesser.
 
@@ -620,5 +620,8 @@ Du har konfigureret arbejds- og lokalitetsdataene for lagersted 51 for at sikre,
 > [!NOTE]
 > Overvej at føje kvalitet ud-posten til et menupunkt i en mobilenhed, hvor aktivitetskoden er *Vis åben arbejdsliste*. Du kan finde et eksempel i menupunktet på mobilenheden, der hedder **Opgaveliste** i demodataene. Du skal først føje arbejdsklassen *Kvalitetsordre* til et brugerstyret menupunkt, da denne arbejdsopgave er nødvendig, for at arbejdet kan vises på opgavelisten. Føj derefter klassen *Kvalitetsordre* til menupunktet **Arbejdsliste**. Brugere, der har adgang til opgavelisten, vil derefter kunne plukke og behandle det arbejde, der automatisk genereres af en kvalitetsordrevalidering.
 
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+- [Oversigt over styring af kvalitet og uoverensstemmelse](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fee496157db581bf77f444674ca858aa4383e27c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889782"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963209"
 ---
 # <a name="provision-human-resources"></a>Klargør Human Resources
 
@@ -55,6 +55,9 @@ Overvejelser i forbindelse med yderligere miljøer omfatter, men det er ikke beg
 Når du vil bruge LCS til at administrere dine Human Resources-miljøer, skal du først oprette et LCS-projekt.
 
 1. Log på [LCS](https://lcs.dynamics.com/Logon/Index) ved hjælp af den konto, som du brugte til dit abonnement på Human Resources.
+
+   > [!NOTE]
+   > For at sikre en vellykket klargøring skal den konto, du bruger til klargøring af Human Resources-miljøet, enten tildeles rollen **Systemadministrator** eller **Systemtilpasser** i det Power Apps-miljø, der er tilknyttet Human Resources-miljøet. Se [Konfigurere brugersikkerhed for ressourcer](https://docs.microsoft.com/power-platform/admin/database-security) for at få flere oplysninger om tildeling af sikkerhedsroller til brugere i Power Platform.
 
 2. Markér plustegnet (**+**) for at oprette et projekt.
 
@@ -115,13 +118,30 @@ Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø so
    
     - **Prøvemiljøer** - Disse miljøer oprettes med en udløbsdato. Ved udløb fjernes dit miljø og eventuelle forekomster af Human Resources, der er indeholdt i det, automatisk.
    
-    - **Ikke-understøttede områder** - I øjeblikket understøttes Human Resources kun i følgende områder: USA, Europa, Storbritannien, Australien, Canada og Asien.
-
-    > [!NOTE]
-    > Human Resources-miljøet klargøres i det samme område, som Power Apps-miljøet klargøres. Overflytning af et Human Resources-miljø til et andet område understøttes ikke.
+    - **Ikke-understøttede geografier** – Miljøet skal være placeret i en understøttet geografi. Yderligere oplysninger finder du i [Understøttede geografier](hr-admin-setup-provision.md#supported-geographies).
 
 6. Når du har besluttet, hvilket miljø der er bedst at anvende, kan du fortsætte klargøringsprocessen. 
- 
+
+### <a name="supported-geographies"></a>Understøttede geografier
+
+Human Resources understøtter i øjeblikket følgende geografier:
+
+- United States
+- Europa
+- Storbritannien
+- Australien
+- Canada
+- Asien 
+
+Når du opretter et Human Resources-miljø, vælger du et Power Apps-miljø, der skal knyttes til Human Resources-miljøet. Derefter klargøres Human Resources-miljøet i samme Azure-geografi som det valgte Power Apps-miljø. Du kan vælge, hvor Human Resources-miljøet og databasen skal befinde sig fysisk, ved at vælge den geografi, når du opretter det Power Apps-miljø, der skal knyttes til Human Resources-miljøet.
+
+Du kan vælge den *geografi* i Azure, hvor miljøet klargøres, men du kan ikke vælge det specifikke *område* i Azure. Automatisering bestemmer det specifikke område i den geografi, hvor miljøet oprettes, for at optimere belastningsjustering og ydeevne. Du kan finde oplysninger om geografier og områder i Azure i dokumentationen om [Azure-geografier](https://azure.microsoft.com/global-infrastructure/geographies).
+
+Dataene til Human Resources-miljøet vil altid være indeholdt i den Azure-geografi, hvor de oprettes. De vil dog ikke altid være opbevaret i samme Azure-område. Med henblik på katastrofeberedskab replikeres dataene både i det primære Azure-område og i et sekundært failover-område inden for geografien.
+
+ > [!NOTE]
+ > Overflytning af et Human Resources-miljø fra et Azure-område til et andet område understøttes ikke.
+
 ## <a name="grant-access-to-the-environment"></a>Give adgang til miljøet
 
 Som standard har den globale administrator, der oprettede miljøet, adgang til det. Du skal eksplicit tildele andre programbrugere adgang. Du skal tilføje brugere og tildele dem de relevante roller i Human Resources-miljøet. Den globale administrator, der installerede Human Resources, skal også starte både Attract og Onboard for at fuldføre initialiseringen og aktivere adgang for andre lejerbrugere. Før dette er gjort, kan andre brugere ikke få adgang til Attract og Onboard, men får adgangsfejl. Du kan finde flere oplysninger under [Opret nye brugere](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tildel sikkerhedsroller til brugere](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

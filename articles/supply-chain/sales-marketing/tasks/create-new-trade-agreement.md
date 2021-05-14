@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad1221bb57aea4c93cb60fc29caec2d3b41798f9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 592b3d0265a3be92a5a823c6aabdd40b4e3f0a27
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836392"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919935"
 ---
 # <a name="create-a-new-trade-agreement"></a>Oprette en ny samhandelsaftale
 
@@ -26,8 +26,8 @@ ms.locfileid: "5836392"
 
 Denne fremgangsmåde viser, hvordan du kan oprette en samhandelsaftale, hvor du registrerer en ny produktsalgspris, som du har aftalt med en bestemt debitor. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. Hvis du bruger dine egne data, før du starter denne vejledning, skal du sikre, at der findes et navn på en Samhandelskladde, hvor standardrelationen er indstillet til "Pris (salg)".
 
-
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Opret og bogfør en ny samhandelsaftalekladde
+
 1. Gå til **Navigationsrude > Moduler > Salg og marketing > Priser og rabatter > Samhandelskladder**.
 2. Klik på **Ny**.
 3. Klik på rullelisten i feltet **Navn** for at åbne opslaget.
@@ -58,22 +58,26 @@ Denne fremgangsmåde viser, hvordan du kan oprette en samhandelsaftale, hvor du 
 20. Klik på **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Få vist samhandelsaftaler for et produkt
+
 1. Gå til **Navigationsrude > Moduler > Administration af produktoplysninger > Produkter > Frigivne produkter**.
 2. På listen skal du finde og vælge produktet, hvis pris du netop har opdateret.
 3. Klik på **Sælg** i **handlingsruden**.
 4. Klik på **Vis samhandelsaftaler**.
     
-    Gennemse oplysningerne om samhandelsaftalens pris, som du lige har oprettet.    
+    Gennemse oplysningerne om samhandelsaftalens pris, som du lige har oprettet.
 
 5. Luk siden.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 ### <a name="whitepaper"></a>Hvidbog
+
 Yderligere oplysninger finder du ved at downloade følgende hvidbog (skrevet som support til AX2012, men gælder stadig for Dynamics 365 Supply Chain Management)
-- [Samhandelsaftale](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
+- [Samhandelsaftale](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
 ### <a name="community-blogs"></a>Fællesskabsblogge
+
 - [Salgspriser i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
 
 

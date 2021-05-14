@@ -1,8 +1,8 @@
 ---
 title: Karantæneordrer
-description: I dette emne beskrives, hvordan karantæneordrer bruges til at blokere for lager.
+description: Dette emne beskriver, hvordan du bruger karantæneordrer til at blokere lagerbeholdning.
 author: perlynne
-ms.date: 11/02/2017
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,48 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a44909a7880b0cd53e39ccbadf8b79ae5c9dafc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e1eed14b7d38cf569af7192dec9580e771f06df
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834211"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956176"
 ---
 # <a name="quarantine-orders"></a>Karantæneordrer
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan karantæneordrer bruges til at blokere for lager.
+Dette emne beskriver, hvordan du bruger karantæneordrer til at blokere lagerbeholdning.
 
-Karantæneordrer kan bruges til at blokere lager. Det kan f.eks. være, at du vil sætte varer i karantæne af kvalitetskontrolmæssige årsager. Lager, der er blevet sat i karantæne, overføres til et karantænelagersted. **Bemærk!** Hvis du anvender avancerede lagerstyringsprocesser (i Lagerstedsstyring), bruges karantæneordrebehandling kun til retursalgsordrer.
+Du kan blokere lagerbeholdning ved hjælp af karantæneordrer. Det kan f.eks. være, at du vil sætte varer i karantæne af kvalitetskontrolmæssige årsager. Lager, der er blevet sat i karantæne, overføres til et karantænelagersted.
+
+> [!NOTE]
+> Hvis du anvender avancerede lagerstyringsprocesser (i Lagerstedsstyring), bruges karantæneordrebehandling kun til retursalgsordrer.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Sæt disponible lagervarer i karantæne
-Når du sætter varer i karantæne, kan du enten oprette karantæneordrerne manuelt eller definere, at systemet skal oprette karantæneordrer automatisk under indgående behandling. Du kan oprette karantæneordrer automatisk ved at vælge indstillingen **Karantænestyring** under fanen **Lagerpolitikker** på siden **Varemodelgrupper**. Du skal også angive et standardkarantænelagersted i feltet **Karantænelagersted** for de modtagende lagersteder. Når den fysisk disponible lagerbeholdning bliver registreret i en indkøbsordre eller produktionsordre, flyttes varerne i karantæne automatisk til et karantænelagersted i Supply Chain Management. Denne bevægelse opstår, fordi status for karantæneordren ændres til **Startet**. Når du opretter karantæneordrer manuelt, behøver varen ikke at være sat op til karantænestyring i den tilknyttede varemodelgruppe. For denne proces skal du angive den disponible lagerbeholdning, der skulle sættes i karantæne, og det karantænelagersted, der skal bruges. Du kan bruge karantæneordrestatusser til at planlægge processen.
+
+Når du sætter varer i karantæne, kan du enten oprette karantæneordrerne manuelt eller definere, at systemet skal oprette dem automatisk under indgående behandling.
+
+Benyt følgende fremgangsmåde, hvis du vil konfigurere systemet til automatisk at generere karantæneordrer.
+
+1. Gå til **Lagerstyring \> Opsætning \> Lagerbeholdning \> Varemodelgrupper**.
+1. Vælg en relevant modelgruppe i listeruden, eller opret en ny modelgruppe.
+1. I oversigtspanelet **Lagerpolitikker** skal du markere afkrydsningsfeltet **Karatænestyring**.
+1. Luk siden.
+1. Du skal angive et standardlagersted for karantænen i feltet **Karantænelagersted** for de modtagende lagersteder.
+
+Når en vare, der er registreret som modtaget på lagerstedet, tilhører en modelgruppe, hvor afkrydsningsfeltet **Karantænestyring** er markeret, genererer systemet en karantæneordre for den. Karantæneordren beder arbejderne om at flytte varen til karantænelagerstedet.
+
+Når du opretter karantæneordrer manuelt på siden **Karantæneordrer**, behøver varen ikke at være indstillet til karantænestyring i den tilknyttede varemodelgruppe. For denne proces skal du angive den disponible lagerbeholdning, der skulle sættes i karantæne, og det karantænelagersted, der skal bruges. Du kan bruge karantæneordrestatusser til at planlægge processen.
 
 ## <a name="quarantine-order-statuses"></a>Karantæneordrens status
+
 Karantæneordrer kan have følgende statusværdier:
 
--   Oprettet
--   Startet
--   Færdigmeldt
--   Afsluttet
+- Oprettet
+- Startet
+- Færdigmeldt
+- Afsluttet
 
 ### <a name="created"></a>Oprettet
 
@@ -51,19 +68,18 @@ Når en karantæneordren har statussen **Startet**, overføres lageret fra det a
 
 ### <a name="reported-as-finished"></a>Færdigmeldt
 
-Hvis du klikker på **Færdigmeld**, kan du færdigmelde en igangsat karantæneordre. Varen frigives fra karantæne, men den er endnu ikke flyttet tilbage til det almindelige lagersted. Flytningen tilbage til det almindelige lagersted kan behandles via en varemodtagelseskladde, som kan initialiseres under færdigmeldingsprocessen.
+Hvis du vil færdigmelde en igangsat karantæneordre, skal du åbne ordren og vælge **Færdigmeld** i handlingsruden. Varen frigives fra karantæne, men den er endnu ikke flyttet tilbage til det almindelige lagersted. Flytningen tilbage til det almindelige lagersted kan behandles via en varemodtagelseskladde, som kan initialiseres under færdigmeldingsprocessen.
 
 ### <a name="ended"></a>Afsluttet
 
-Når en karantæneordre afsluttes, flyttes varen fra karantænelagerstedet tilbage til det almindelige lagersted. Status for varebevægelsen er angivet til **Solgt** på karantænelagerstedet og **Købt** på det almindelige lagersted.
+Når en karantæneordre afsluttes, flyttes varen fra karantænelagerstedet tilbage til det almindelige lagersted. Status for varebevægelsen er angivet til *Solgt* på karantænelagerstedet og *Købt* på det almindelige lagersted.
 
 ## <a name="quarantine-order-scrap"></a>Kassering af karantæneordre
-Du kan kassere lageret som en del af karantæneordreprocessen. Når du behandler en kassering, indstilles lagerstatus til **Solgt** med en afgangspostering fra karantænelagerstedet.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+Du kan kassere lageret som en del af karantæneordreprocessen. Når du behandler en kassering, indstilles lagerstatus til *Solgt* med en afgangstransaktion fra karantænelagerstedet.
 
-[Lagerblokering](inventory-blocking.md)
+## <a name="additional-resources"></a>Yderligere ressourcer
 
+- [Lagerblokering](inventory-blocking.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

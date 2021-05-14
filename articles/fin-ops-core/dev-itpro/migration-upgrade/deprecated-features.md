@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745257"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921417"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -37,7 +37,7 @@ I dette emne beskrives funktioner, der er blevet fjernet eller er udfaset fra Dy
 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
-Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finans 10.0.7 med Platform update 31
 
@@ -147,7 +147,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Overskriftsjustering med andre Dynamics- og Office-produkter. Yderligere oplysninger finder du i [Opdateret navigationslinje er nu tilpasset overskriften i Office](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Årsagen til forældelsen/fjernelsen** | Overskriftsjustering med andre Dynamics- og Office-produkter. Yderligere oplysninger finder du i [Opdateret navigationslinje er nu tilpasset overskriften i Office](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Erstattet af en anden funktion?**   | I platformsopdatering 24 blev der introduceret en navigationslinje med søgefunktionen. |
 | **Produktområder, der er berørt**         | Webklient |
 | **Installationsindstilling**              | Alt |
@@ -161,7 +161,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Den ældre opførelse for standardhandlinger i gitre resulterer i, at en uventet kolonne indeholder linket til standardhandlingen, efter at gitterkolonnerne er blevet omfordelt via tilpasning. Den nye funktion for standardtastaturhandlinger retter op på dette. Du kan finde yderligere oplysninger under [Standardtastaturhandlinger i gitre](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Årsagen til forældelsen/fjernelsen** | Den ældre opførelse for standardhandlinger i gitre resulterer i, at en uventet kolonne indeholder linket til standardhandlingen, efter at gitterkolonnerne er blevet omfordelt via tilpasning. Den nye funktion for standardtastaturhandlinger retter op på dette. Du kan finde yderligere oplysninger under [Standardtastaturhandlinger i gitre](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Erstattet af en anden funktion?**   | Indførelsen af en funktion til "standardtastaturhandlinger" blev påbegyndt i platformsopdatering 21. Denne funktion kan aktiveres på siden **Indstillinger for klientydelse**. |
 | **Produktområder, der er berørt**         | Gitre i webklienten |
 | **Installationsindstilling**              | Alt |
@@ -172,7 +172,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | "Er en af"-filtreringsoplevelsen blev redesignet i platformsopdatering 22, og planen er, at den med tiden skal være den eneste "er en af"-filtreringsoplevelse. |
-| **Erstattet af en anden funktion?**   | I platformsopdatering 22 blev en ny og forbedret "er en af"-filtreringsoplevelse tilgængelig på siden **Indstillinger for klientydelse**. Du kan finde yderligere oplysninger under [Den optimerede filtreringsoplevelse "er en af"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Erstattet af en anden funktion?**   | I platformsopdatering 22 blev en ny og forbedret "er en af"-filtreringsoplevelse tilgængelig på siden **Indstillinger for klientydelse**. Du kan finde yderligere oplysninger under [Den optimerede filtreringsoplevelse "er en af"](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Produktområder, der er berørt**         | Webklient |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfasning: fra april 2020 vil den forbedrede "er en af"-oplevelse være standardopførelsen, såfremt der ikke forefindes en mekanisme, som kan gå tilbage til den ældre opførelse. |
@@ -1333,7 +1333,7 @@ Med webstedstjenester kan du opbygge websteder, der udvider dine forretningsproc
 
 ### <a name="virtual-company-accounts"></a>Virtuelle regnskaber
 
-Funktionen til virtuelle regnskaber understøttes ikke længere i Dynamics AX. Funktionen til virtuelle regnskaber gør det muligt for brugere at oprette tabeller, der skulle deles med en række regnskaber. Du kan finde en beskrivelse af funktionen her: [Regnskaber og virtuelle regnskaber](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funktionen fungerer ved at gruppere tabeller i samlinger, der er tildelt til virtuelle regnskaber, som er grupper af eksisterende "reelle" regnskaber. Forespørgsler oprettes, så alle regnskaber i det virtuelle regnskab kan få adgang til dataene i tabellerne i de tilknyttede tabelsamlinger.
+Funktionen til virtuelle regnskaber understøttes ikke længere i Dynamics AX. Funktionen til virtuelle regnskaber gør det muligt for brugere at oprette tabeller, der skulle deles med en række regnskaber. Du kan finde en beskrivelse af funktionen her: [Regnskaber og virtuelle regnskaber](../../fin-ops/get-started/ax4-content-retired.md). Funktionen fungerer ved at gruppere tabeller i samlinger, der er tildelt til virtuelle regnskaber, som er grupper af eksisterende "reelle" regnskaber. Forespørgsler oprettes, så alle regnskaber i det virtuelle regnskab kan få adgang til dataene i tabellerne i de tilknyttede tabelsamlinger.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

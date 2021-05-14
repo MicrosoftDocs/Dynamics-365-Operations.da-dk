@@ -1,5 +1,5 @@
 ---
-title: Arbejdsområdet Kreditorfakturapostering
+title: Arbejdsområde for automatisering af kreditorfakturaer
 description: Dette emne forklarer, hvordan du konfigurerer det arbejdsområde, der er relateret til kreditorfakturaer, og som viser de oplysninger, der er tilgængelige via Microsoft Power BI.
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837244"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954129"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Arbejdsområde for kreditorfakturapost
+# <a name="vendor-invoice-automation-workspace"></a>Arbejdsområde for automatisering af kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ Dette emne forklarer, hvordan du konfigurerer det arbejdsområde, der er relater
 
 ## <a name="overview"></a>Overblik
 
-Arbejdsområdet **Kreditorfakturapostering** viser oplysninger, der vedrører behandling af kreditorfakturaer. Det indeholder en **Mit arbejde**-visning og siden **Analyser – Alle firmaer**. Visningen **Mit arbejde** viser oversigtsfelter, gitre til kreditorpostering og relaterede kreditoroplysninger. Siden **Analyser – Alle firmaer** bruger funktionerne i Power BI til at vise visualiseringer, der vedrører kreditorfakturaer.
+Arbejdsområdet **Automatisering af kreditorfakturaer** viser oplysninger, der vedrører behandling af kreditorfakturaer. Det indeholder en **Mit arbejde**-visning og siden **Analyser – Alle firmaer**. Visningen **Mit arbejde** viser oversigtsfelter, gitre til kreditorpostering og relaterede kreditoroplysninger. Siden **Analyser – Alle firmaer** bruger funktionerne i Power BI til at vise visualiseringer, der vedrører kreditorfakturaer.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Konfigurere arbejdsområdet til at vise Power BI-indhold
 
-Du skal fuldføre denne opsætning, før data kan vises i Power BI-visualiseringer i arbejdsområdet **Kreditorfakturapostering**.
+Du skal fuldføre denne opsætning, før data kan vises i Power BI-visualiseringer i arbejdsområdet **Automatisering af kreditorfakturaer**.
 
 1. I arbejdsområdet **Funktionsstyring** skal du filtrere listen for at finde funktionen **Automatisering af kreditorfaktura**.
 3. Vælg **Aktiver nu**.
@@ -54,7 +54,7 @@ Hvis du vil have vist de oplysninger, der vises i arbejdsområdet, skal du have 
 
 ### <a name="company-selection"></a>Firmavalg
 
-Når funktionen **Automatiser kreditorfakturaer** er aktiveret, vises feltet **Firma** øverst i arbejdsområdet. Valget i feltet **Firma** påvirker alle de oplysninger, der vises i arbejdsområdet. I visningen ses standardoplysninger om det firma, du har logget på. Hvis du vælger et andet firma i feltet **Firma**, kan du få vist oplysninger om det pågældende firma i arbejdsområdet. Du kan derefter vælge et felt i arbejdsområdet for at gå til den relaterede side i det valgte firma.
+Når funktionen **Automatisering af kreditorfakturaer** er aktiveret, vises feltet **Virksomhed** øverst i arbejdsområdet. Valget i feltet **Firma** påvirker alle de oplysninger, der vises i arbejdsområdet. I visningen ses standardoplysninger om det firma, du har logget på. Hvis du vælger et andet firma i feltet **Firma**, kan du få vist oplysninger om det pågældende firma i arbejdsområdet. Du kan derefter vælge et felt i arbejdsområdet for at gå til den relaterede side i det valgte firma.
 
 ### <a name="summary-tiles"></a>Oversigt over felter
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f9b37ffe1f3c13672bfed29918bfc6d108b0eaea
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f11043005ba6ec32b81b923aa78248100134c130
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744633"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923369"
 ---
 # <a name="removed-or-deprecated-features-home-page"></a>Fjernede eller udfasede funktioner på startsiden
 
@@ -37,6 +37,4 @@ Følgende emner indeholder oplysninger om fjernede eller frarådede funktioner i
 ## <a name="deprecations-in-the-microsoft-power-platform"></a>Afskrivninger i Microsoft Power Platform
 Følgende emner indeholder oplysninger om afskrivninger Microsoft Power Platform:
 
-- [Vigtige ændringer (afskrivninger), der kommer i Power Apps, og Customer Engagement-apps til Power Automate](https://docs.microsoft.com/power-platform/important-changes-coming)
-
-
+- [Vigtige ændringer (afskrivninger), der kommer i Power Apps, og Customer Engagement-apps til Power Automate](/power-platform/important-changes-coming)

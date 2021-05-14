@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb242e32d3ad399acc82b855da3096dfa5c2c1a5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 584bb558ee0afeaffaeb003e9f1d1b0bca42d19d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809392"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920675"
 ---
 # <a name="create-dimension-based-configurations"></a>Oprette dimensionsbaserede konfigurationer
 
@@ -26,29 +26,29 @@ ms.locfileid: "5809392"
 
 Denne procedure viser, hvordan du definerer en konfiguration for et dimensionsbaseret produkt. Dette er den sidste procedure i serien, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration. Udførelse af denne procedure er afhængig af de data, der er oprettet i de foregående syv optagelser. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
-
 ## <a name="find-the-dimension-based-product-master"></a>Finde den dimensionsbaserede produktmaster
-1. Klik på Vedligeholdelse af frigivet produkt.
-2. Klik på Frigivne produkter.
-3. Markér den valgte række på listen.
+
+1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
+1. Markér den valgte række på listen.
     * Vælg den dimensionsbaserede produktmaster, du oprettede i den første optagelse i denne sekvens på 8 optagelser.  
 
 ## <a name="create-configurations"></a>Oprette konfigurationer
-1. Klik på Vedligehold konfigurationer i handlingsruden Teknikere.
-2. Klik på Konfigurer.
-3. Markér den valgte række på listen.
-4. Indtast eller vælg en værdi i feltet Varenummer.
+
+1. Vælg **Vedligehold konfigurationer** i handlingsruden **Teknik**.
+1. Vælg **Konfigurer**.
+1. Markér den valgte række på listen.
+1. Indtast eller vælg en værdi i feltet **Varenummer**.
     * Vælg en af varerne i den første variantgruppe.  
-5. Find og vælg den ønskede post på listen.
-6. Indtast eller vælg en værdi i feltet Varenummer.
+1. Find og vælg den ønskede post på listen.
+1. Indtast eller vælg en værdi i feltet **Varenummer**.
     * Vælg en vare fra den anden variantgruppe.  
-7. Klik på OK.
-8. Markér den valgte række på listen.
-9. Skriv en værdi i feltet Konfiguration.
+1. Vælg **OK**.
+1. Markér den valgte række på listen.
+1. Skriv en værdi i feltet **Konfiguration**.
     * Angiv et konfigurationsnavn, der gør det nemt at identificere konfigurationen.  
-10. Skriv en værdi i feltet Beskrivelse.
+1. Indtast en værdi i feltet **Beskrivelse**.
     * Angiv en beskrivelse af konfigurationen for at forklare, hvad den indeholder.  
-11. Klik på OK.
+1. Vælg **OK**.
 
 
 

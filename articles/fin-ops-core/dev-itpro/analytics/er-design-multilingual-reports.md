@@ -2,7 +2,7 @@
 title: Designe flersprogede rapporter i elektronisk rapportering
 description: I dette emne forklares det, hvordan du kan bruge elektroniske rapporteringsetiketter (ER) til at designe og generere flersprogede rapporter.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753546"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951979"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Designe flersprogede rapporter i elektronisk rapportering
 
@@ -50,7 +50,7 @@ Hver ER-etiket identificeres med et id, der er entydigt i omfanget af den ER-kon
 
 ## <a name="entry"></a>Inddatering
 
-Når du designer en ER-datamodel, en ER-modeltilknytning eller et ER-format, vises indstillingen **Oversæt**, når du vælger et felt, der måske indeholder den kontekst, der kan oversættes. Når du vælger denne indstilling, kan du sammenkæde det valgte felt med en ER-etiket i **Tekstoversættelse**-<a name="TextTranslationPane">ruden</a>. Du kan vælge en eksisterende ER-etiket, eller du kan tilføje en ny ER-etiket, hvis den ikke er tilgængelig endnu. Når du vælger eller tilføjer en ER-etiket, kan du tilføje relateret tekst for alle sprog, der understøttes i den aktuelle Finance-forekomst.
+Når du designer en ER-datamodel, en ER-modeltilknytning eller et ER-format, vises indstillingen **Oversæt**, når du vælger et felt, der måske indeholder den kontekst, der kan oversættes. Når du vælger denne indstilling, kan du sammenkæde det valgte felt med en ER-etiket i **Tekstoversættelse**<a name="TextTranslationPane">ruden </a>. Du kan vælge en eksisterende ER-etiket, eller du kan tilføje en ny ER-etiket, hvis den ikke er tilgængelig endnu. Når du vælger eller tilføjer en ER-etiket, kan du tilføje relateret tekst for alle sprog, der understøttes i den aktuelle Finance-forekomst.
 
 I følgende illustration vises, hvordan denne oversættelse foretages i en redigerbar datamodel. I dette eksempel oversættes **Beskrivelse**-attributten i feltet **PurchaseOrder** for den redigerbare **Fakturamodel** til sprogene østrigsk tysk (DE-AT) og japanske (JA).
 
@@ -158,6 +158,31 @@ ER understøtter forskellige måder at angive et sprog til en genereret rapport 
 - **Defineret på kørselstidspunktet** – Generér en rapport på et sprog, der er angivet på kørselstidspunktet. Hvis du vælger denne værdi, skal du i feltet **Sprog** konfigurere et ER-udtryk, der returnerer sprogkoden for sproget, f.eks. sproget for den tilsvarende kunde.
 
     ![Angiv i ER-operationsdesigneren et sprog, der er angivet på kørselstidspunktet, som sproget i en genereret rapport](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Kulturspecifik formatering
+
+ER understøtter forskellige metoder til at angive kulturen for en genereret rapport. Derfor kan den korrekte kulturspecifikke formatering bruges til dato, klokkeslæt og numeriske værdier. Når du designer et ER-format, kan du i feltet **Kulturindstillinger** under fanen **Format** vælge en af følgende værdier for alle formatkomponenter af typen **Almindelig\\Fil**, **Excel\\Fil**, **PDF\\Fil** eller **PDF\\Fletning**:
+
+- **Brugerindstilling** – Formatér værdierne i overensstemmelse med brugerens foretrukne kultur. Denne kultur defineres i feltet **Dato, klokkeslæt og nummerformat** under fanen **Indstillinger** på siden **Brugerindstillinger**.
+
+    ![I ER Operations-designeren defineres brugerens foretrukne kultur som en kultur for en genereret rapport](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Eksplicit defineret** – Formatér værdierne i overensstemmelse med den kultur, der er angivet på designtidspunktet.
+
+    ![I ER Operations-designeren defineres den kultur, som er angivet på designtidspunktet, som en kultur for en genereret rapport](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Defineret på kørselstidspunkt** – Formatér værdierne i overensstemmelse med den kultur, der er angivet på kørselstidspunktet. Hvis du vælger denne værdi i feltet **Dato, klokkeslæt og nummerformat** under fanen **Tilknytning**, skal du konfigurere et ER-udtryk, der returnerer kulturkoden for kulturen, f.eks. den tilsvarende kundes kultur.
+
+    ![I ER Operations-designeren defineres den kultur, som er defineret på kørselstidspunktet, som en kultur for en genereret rapport](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> En ER-komponent, som du definerer en bestemt kultur for, kan indeholde underordnede ER-komponenter, der er konfigureret til at udfylde en tekstværdi. Som standard bruges kulturen for den overordnede komponent til at formatere værdierne for disse komponenter. Du kan bruge følgende indbyggede ER-funktioner til at konfigurere bindinger for disse komponenter og anvende en alternativ kultur til værdiformatering:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> I version 10.0.20 og senere bruges landestandarden for formatkomponenter af typen **Almindelig\\Fil** og **Excel\\Fil** til at formatere værdier under [PDF-konvertering](electronic-reporting-destinations.md#OutputConversionToPDF) af et genereret dokument.
 
 ## <a name="translation"></a>Oversættelse
 

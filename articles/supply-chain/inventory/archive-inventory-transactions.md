@@ -10,22 +10,20 @@ ms.technology: ''
 ms.search.form: InventTransArchiveProcessForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b740da1a8a349f4a1a80b41bf717c388fd3db0c0
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 0526eb42a886817d50e1ecfd252a6e971875ba92
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881826"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956052"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivere lagertransaktioner
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Med tiden fortsætter tabellen med lagertransaktioner (`InventTrans`) med at stige og forbruge mere databaseplads. Derfor bliver de forespørgsler, der foretages mod tabellen, efterhånden langsommere. Dette emne beskriver, hvordan du kan bruge funktionen *Arkivér lagertransaktioner* til at arkivere data om lagertransaktioner for at forbedre systemets ydeevne.
 

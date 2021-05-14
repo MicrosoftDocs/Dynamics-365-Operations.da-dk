@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3087ab8853b14308da9496eead7478822cec86b8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750734"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941190"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
@@ -124,7 +124,7 @@ Produktdimensioner er egenskaber, der identificerer en produktvariant. De fire p
 
 Når et produkt har forskellige produktdimensioner (en produktmaster har f.eks. størrelse og farve som produktdimensioner), defineres hvert specifikt produkt (dvs. de enkelte produktvarianter) som en kombination af disse produktdimensioner. Produktnummer B0001 er f.eks. en ekstra lille sort T-shirt, og produktnummer B0002 er en lille sort T-shirt. I dette tilfælde defineres de eksisterende kombinationer af produktdimensioner. F.eks. kan T-shirten fra det foregående eksempel være ekstra lille og sort, lille og sort, mellem og sort eller stor og sort, men den kan ikke være ekstrastor og sort. Det vil sige, at de produktdimensioner, en produktmaster kan antage, angives, og varianter kan frigives ud fra disse værdier.
 
-For at holde styr på de produktdimensioner, en produktmaster kan antage, oprettes og tilknyttes følgende tabeller i Dataverse for hver produktdimension. Du kan finde flere oplysninger under [Oversigt over produktoplysninger](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
+For at holde styr på de produktdimensioner, en produktmaster kan antage, oprettes og tilknyttes følgende tabeller i Dataverse for hver produktdimension. Yderligere oplysninger finder du i [Oversigt over produktoplysninger](.. /.. /.. /supply-chain/pim/product-information.md).
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
@@ -138,7 +138,7 @@ For at holde styr på de produktdimensioner, en produktmaster kan antage, oprett
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Standardindstillinger for ordrer og produktspecifikke standardindstillinger for ordrer
 
-Standardindstillinger for ordre definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum-, maksimum-, flere og standardmængder, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn. Disse oplysninger er tilgængelige i Dataverse ved hjælp af standardindstillingerne for vareordrer og enheden for produktspecifikke standardindstillinger for vareordrer. Du kan finde flere oplysninger om funktionaliteten under [emnet Standardindstillinger for ordre](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
+Standardindstillinger for ordre definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum-, maksimum-, flere og standardmængder, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn. Disse oplysninger er tilgængelige i Dataverse ved hjælp af standardindstillingerne for vareordrer og enheden for produktspecifikke standardindstillinger for vareordrer. Du kan finde flere oplysninger om funktionaliteten under [emnet Standardindstillinger for ordre](../../../../supply-chain/production-control/default-order-settings.md).
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 

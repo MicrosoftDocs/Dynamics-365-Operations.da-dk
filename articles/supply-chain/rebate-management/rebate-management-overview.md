@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 826cee7b1e30020aec99f6148dd9ab16f126c417
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7917f36d8ff3c1ae2d37c5390806ef82771b5211
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839119"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920031"
 ---
 # <a name="rebate-management-module-overview"></a>Oversigt over modulet Rabatstyring
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruge modulet **Rabatstyring** til at oprette kontrakter, handler eller aftaler mellem din virksomhed og dens kunder eller leverandører, så du kan beregne rabatter, fradrag og royalties. Rabatstyring sporer og vedligeholder rabat- og fradragstransaktioner et centralt sted, hvor brugerne effektivt kan oprette, gennemgå og behandle dem.
 

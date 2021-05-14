@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0318814f421ab862559965bb4b003308d6279812
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799439"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936774"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfigurere brugerdefinerede sider til brugerlogon
 
@@ -32,7 +32,7 @@ Hvis du vil bruge brugerdefinerede sider, der er oprettet i Dynamics 365 Commerc
 De brugerdefinerede Commerce-sider kan opbygges ved hjælp af modulet til logon, tilmelding, kontoprofilredigering, nulstilling af adgangskode eller generiske AAD-moduler. De URL-adresser til sider, der udgives for disse brugerdefinerede sider, skal derefter refereres i Azure AD B2C-politikkonfigurationerne i Azure-portalen.
 
 > [!WARNING] 
-> Azure AD B2C gør gamle (ældre) brugerflow forældet inden 1. august 2021. Derfor skal du planlægge at overføre dine brugerflow til den nye anbefalede version. Den nye version indeholder funktionsparitet og nye funktioner. Du kan finde flere oplysninger i [Brugerflow i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Azure AD B2C gør gamle (ældre) brugerflow forældet inden 1. august 2021. Derfor skal du planlægge at overføre dine brugerflow til den nye anbefalede version. Den nye version indeholder funktionsparitet og nye funktioner. Du kan finde flere oplysninger i [Brugerflow i Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
 
 >Modulbiblioteket til Commerce version 10.0.15 eller derover skal bruges sammen med de anbefalede B2C-brugerflow. De standardbrugerpolitiksider, der tilbydes i Azure AD B2C, kan også bruges og giver mulighed for ekstra ændringer i baggrundsbillede, logo og baggrundsfarve, der er relateret til firmabranding. Selvom de er mere begrænsede i designegenskaber, indeholder standardbrugerpolitiksider Azure AD B2C-politikfunktionaliteten uden at oprette og konfigurere dedikerede brugerdefinerede sider. 
 

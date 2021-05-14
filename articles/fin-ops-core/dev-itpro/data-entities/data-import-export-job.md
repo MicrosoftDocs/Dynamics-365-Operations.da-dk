@@ -2,7 +2,7 @@
 title: Oversigt over dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: Sunil-Garg
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750994"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937324"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -161,19 +161,7 @@ For at gøre det hurtigere at importere data kan parallel behandling af en filim
     - I feltet **Antal poster for importtærskel** skal du angive grænsen for antallet af poster til import. Dette bestemmer det antal poster, der skal behandles af en tråd. Hvis en fil har 10.000 poster, vil et postantal på 2500 med et opgaveantal på 4 betyde, at hver tråd behandler 2500 poster.
     - Angiv antallet af importopgaver i feltet **Antal importopgaver**. Dette må ikke overstige det maksimale antal batchtråde, der er tildelt batchbehandling i **Systemadministration \>Serverkonfiguration**.
 
-## <a name="clean-up-the-staging-tables"></a>Ryd op i de midlertidige tabeller
-Med start i Platform update 29 er denne funktionalitet blevet udfaset. Den er erstattet af en ny version af oprydningsfunktionalitet af jobhistorik, der er forklaret nedenfor.
-
-Du kan rydde op i midlertidige tabeller ved hjælp af funktionen **Oprydning i midlertidige filer** i arbejdsområdet **Datastyring**. Du kan bruge følgende indstillinger til at vælge, hvilke poster der skal slettes fra de midlertidige tabeller:
-
-- **Enhed** – Hvis der kun angives en enhed, slettes alle poster fra den pågældende enheds midlertidig tabel. Vælg denne indstilling for at rydde op i alle dataene for enheden på tværs af alle dataprojekter og alle job.
-- **Job-id** – Hvis der kun angives et job-id, slettes alle poster for alle enheder i det valgte job fra de relevante midlertidige tabeller.
-- **Dataprojekter** – Hvis der kun er markeret et dataprojekt, slettes alle poster for alle enheder og på tværs af alle job for det valgte dataprojekt.
-
-Du kan også kombinere indstillingerne for yderligere at begrænse det postsæt, der slettes.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Oprydning af jobhistorik (tilgængelig i Platform update 29 og nyere)
-
+## <a name="job-history-clean-up"></a>Oprydning i jobhistorik 
 Funktionen til oprydning i jobhistorik i datastyring skal bruges til at planlægge en regelmæssig oprydning af udførelseshistorikken. Denne funktionalitet erstatter den tidligere oprydningsfunktion til midlertidig tabel, som nu udfases. Følgende tabeller vil blive ryddet op af oprydningsprocessen.
 
 -   Alle midlertidige tabeller

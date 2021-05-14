@@ -2,7 +2,7 @@
 title: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
 description: Dette emne indeholder oplysninger om, hvordan du opdeler genererede filer baseret på filstørrelsen og antallet af indholdselementer.
 author: NickSelin
-ms.date: 05/25/2018
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: f39cb93f4ba2d41b145ed7cfa52da287ccac3df5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9b0c8d215d1932a4c897488cb9c6ed7fa2127d82
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743551"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944335"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
 
@@ -38,8 +38,8 @@ Hvis du har konfigureret fildestinationer for et FILE-formatelement, der er konf
 
 Hvis du vil vide mere om denne funktion, kan du afspille opgaveguiden **ER Opdele XML-filer baseret på filstørrelsen eller antallet af indholdselementer**, som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde komponenter til it-servicer og -løsninger (10677)**, og som kan hentes fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Denne opgaveguide gennemgår konfigurationen af et ER-format for at opdele genererede filer baseret på begrænsninger i filstørrelsen og antallet af indholdselementer. Du skal hente følgende filer for at fuldføre opgaveguiden:
 
-- [ER-modelkonfiguration - XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
-- [ER-formatkonfiguration - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+- [ER-modelkonfiguration - XmlFilesSplittingModel.xml](https://download.microsoft.com/download/e/a/f/eaffe96a-22ec-4a32-898a-f4328c91c387/XmlFilesSplittingModel.xml)
+- [ER-formatkonfiguration - XmlFilesSplittingFormat.xml](https://download.microsoft.com/download/e/9/c/e9c5849b-8254-4cdf-bb00-4c2ebc72ddec/XmlFilesSplittingFormat.xml)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)

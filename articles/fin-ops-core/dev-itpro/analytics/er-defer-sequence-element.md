@@ -2,7 +2,7 @@
 title: Udskyde udførelse af sekvenselementer i ER-formater
 description: Dette emne forklarer, hvordan du udskyder udførelsen af et sekvenselement i et elektronisk rapporteringsformat (ER).
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894094"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944503"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Udskyde udførelse af sekvenselementer i ER-formater
 
@@ -57,14 +57,14 @@ Hvis du endnu ikke har fuldført eksemplet i emnet [Udskyde udførelse af XML-el
 
 | Indholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|
-| ER-datamodelkonfiguration    | [Model til at lære udskudte elementer.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER-modeltilknytningskonfiguration | [Tilknytning for at lære udskudte elementer.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-datamodelkonfiguration    | [Model til at lære udskudte elementer.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER-modeltilknytningskonfiguration | [Tilknytning for at lære udskudte elementer.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Før du går i gang, skal du også hente og gemme følgende konfiguration af ER-eksempelløsningen.
 
 | Indholdsbeskrivelse     |Filnavn |
 |-------------------------|----------|
-| Konfiguration af ER-format | [Format til at lære udskudte sekvenser.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguration af ER-format | [Format til at lære udskudte sekvenser.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importere ER-eksempelkonfigurationerne
 
@@ -169,7 +169,7 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
 1. På siden **Formatdesigner** skal du vælge **Kør**.
 2. Hent den fil, som webbrowseren tilbyder, og åbn den til gennemsyn.
 
-    ![Hentet fil](./media/ER-DeferredSequence-Run.png)
+    ![Hentet eksempelrapportfil](./media/ER-DeferredSequence-Run.png)
 
 Bemærk, at oversigtslinje 22 præsenterer summen af momsværdierne for de behandlede transaktioner. Da formatet er konfigureret til at bruge bindingen **model.Data.Summary.Total** til at returnere denne sum, beregnes summen ved at kalde aggregeringen **TotalSum** for datakilden **Grupperet** for typen *GroupBy*, der bruger modeltilknytningen. Hvis du vil beregne denne aggregering, gentages modeltilknytningen over alle de transaktioner, der er valgt i datakilden **Filtreret**. Ved at sammenligne udførselstiderne i linje 21 og 22 kan du fastlægge, at beregningen af summen har taget 10 millisekunder (ms). Ved at sammenligne udførselstiderne i linje 2 og 21 kan du fastlægge, at oprettelse af alle transaktionslinjer har taget 7 ms. Der kræves derfor 17 ms i alt.
 
@@ -202,7 +202,7 @@ Hvis mængden af transaktioner er meget større end mængden i det aktuelle ekse
 12. Vælg **Gem**, og vælg derefter **Kør**.
 13. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredSequence-Run1.png)
+    ![Hentet fil – Opsummerede momsværdier](./media/ER-DeferredSequence-Run1.png)
 
     Linje 21 indeholder den løbende total af momsværdier, der er beregnet for alle behandlede transaktioner ved brug af det genererede output som datakilde. Denne datakilde starter fra starten af rapporten og fortsætter gennem den seneste momstransaktion. Linje 22 indeholder summen af momsværdierne for alle behandlede transaktioner, der er beregnet i modeltilknytningen ved hjælp af datakilden af typen *GroupBy*. Bemærk, at disse værdier er ens. Derfor kan den outputbaserede opsummering bruges i stedet for **GroupBy**. Ved at sammenligne udførselstiderne i linje 2 og 21 kan du fastlægge, at oprettelse af alle transaktionslinjer og opsummering har taget 9 ms. Så vidt angår oprettelse af detaljerede linjer og opsummering af momsværdier, er det ændrede format ca. to gange hurtigere end det oprindelige format.
 
@@ -211,7 +211,7 @@ Hvis mængden af transaktioner er meget større end mængden i det aktuelle ekse
 16. Vælg **Gem**, og vælg derefter **Kør**.
 17. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredSequence-Run2.png)
+    ![Hentet fil med redigeret formel](./media/ER-DeferredSequence-Run2.png)
 
     Bemærk, at den løbende total for momsværdier på den sidste linje med transaktionsdetaljer nu svarer til summen på opsummeringslinjen.
 
@@ -224,7 +224,7 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 3. Vælg **Gem**, og vælg derefter **Kør**.
 4. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredSequence-Run3.png)
+    ![Hentet fil til opsummering i rapporthoved](./media/ER-DeferredSequence-Run3.png)
 
     Bemærk, at summen af momsværdier på oversigtslinje 2 nu er lig med 0 (nul), fordi denne sum nu beregnes ud fra det genererede output. Når linje 2 genereres, indeholder det genererede output endnu ikke linjer med transaktionsdetaljer. Du kan konfigurere dette format for at udskyde udførelsen af sekvenselementet **Rapport\\Linjer\\Oversigt**, indtil sekvenselementet **Rapport\\Linjer\\Post** er kørt for alle momstransaktionerne.
 
@@ -238,7 +238,7 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 3. Vælg **Gem**, og vælg derefter **Kør**.
 4. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredSequence-Run4.png)
+    ![Hentet fil – udskudt udførelse](./media/ER-DeferredSequence-Run4.png)
 
     Sekvenselementet **Rapport\\Linjer\\Oversigt** køres nu kun, efter alle andre elementer, der er indlejret under det overordnede element **Rapport\\Linjer**, er kørt. Derfor køres det, efter at sekvenselementet **Rapport\\Linjer\\Post** er kørt for alle momstransaktioner i datakilden **model.Data.List**. Udførelsestiderne for linje 1, 2 og 3 og for den sidste linje, 22, viser denne oplysning.
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3758ff51de8217a209b40d7dd461e42ea9632f0a
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799636"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936876"
 ---
 # <a name="call-center-catalogs"></a>Callcenter-kataloger
 
@@ -39,7 +39,7 @@ Firmaer, der benytter marketing direkte til forbrugerne, er meget fokuserede på
 
 Gå til **Retail og Commerce** \> **Kataloger og sortimenter** \> **Alle kataloger** for at konfigurere dit katalog.
 
-Når du opretter et nyt katalog, skal du først knytte kataloget til en eller flere kanaler. Det gør du i oversigtspanelet **Commerce-kanaler** i formularen **Opsætning af katalog**. Klik på **Tilføj**, og vælg en eller flere kanaler. Kun varer, der er knyttet til den valgte kanals [udvalg](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) kan bruges, når du opretter kataloget.
+Når du opretter et nyt katalog, skal du først knytte kataloget til en eller flere kanaler. Det gør du i oversigtspanelet **Commerce-kanaler** i formularen **Opsætning af katalog**. Klik på **Tilføj**, og vælg en eller flere kanaler. Kun varer, der er knyttet til den valgte kanals [udvalg](/dynamics365/unified-operations/retail/assortments) kan bruges, når du opretter kataloget.
 
 Hvis du vil føje produkter til et katalog, skal du vælge et navigationshierarki. Navigationshierarkiet understøtter kategoristrukturen for kataloget. Du skal vælge et af de navigationshierarkier, der er knyttet til kanaler, der er valgt i oversigtspanelet **Commerce-kanaler** på siden **Katalog**. Hvis en navigationskanal ikke tidligere er blevet knyttet til en kanal, kan du gå til **Retail og Commerce** \> **Konfiguration af kanal** \> **Kanalkategorier og produktattributter** for at knytte en navigationshierarkistandard til hver af dine kanaler.
 

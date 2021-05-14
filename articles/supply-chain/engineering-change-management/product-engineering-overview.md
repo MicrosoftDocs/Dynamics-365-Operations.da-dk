@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 964db71efc9dc81d60199e37de8668de9d667496
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842075"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947514"
 ---
 # <a name="engineering-change-management-overview"></a>Oversigt over teknisk ændringsstyring
 
@@ -48,7 +48,7 @@ Før du kan bruge styring af tekniske ændringer, skal du aktivere både funktio
 
 Du skal først aktivere disse funktioner ved at følge disse trin.
 
-1. Gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Gå til arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Søg efter opdateringer.
 1. Aktivér den funktion, der hedder **Teknisk ændringsstyring**.
 1. Hvis du vil bruge den, skal du også aktivere funktionen med navnet **Produktdimensionsversion**.
@@ -58,8 +58,11 @@ Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin.
 1. Sæt systemet i vedligeholdelsestilstand som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**.
 1. Udvid noden **Handel**.
-1. Markér afkrydsningsfeltet **Styring af tekniske ændringer**.
-1. Hvis du vil bruge den, skal du også markere afkrydsningsfeltet **Produktdimension - Version**.
+1. Aktiver konfigurationsnøglen for hovedfunktionen ved at markere afkrydsningsfeltet **Styring af tekniske ændringer**. (Det er ikke nødvendigt at udvide noden, medmindre du også vil deaktivere en eller begge af dens underfunktioner.)
+1. Hvis du også vil bruge versionsdimensionen, skal du markere afkrydsningsfeltet **Produktdimension - Version**. (Dette afkrydsningsfelt er placeret længere nede på listen og er ikke indlejret under noden **Styring af tekniske ændringer**.)
 1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+> [!IMPORTANT]
+> Fra april 2022 vil licensnøglerne til både **Styring af tekniske ændringer** og **Produktdimension – Version** som standard være aktiveret for alle nye installationer, men du vil stadig kunne deaktivere dem, hvis det er nødvendigt.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

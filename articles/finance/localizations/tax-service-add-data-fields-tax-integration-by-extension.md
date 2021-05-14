@@ -2,7 +2,7 @@
 title: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
 description: Dette emne forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen.
 author: qire
-ms.date: 03/26/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fdf112bbdd5245d19ab1d07cfcf94c58bf8208c5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8e3573f9c9971d4a5af33ece08b7e0b43f2e813a
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830334"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921159"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Tilføje datafelter i momsintegrationen ved hjælp af udvidelse
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emne forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen. Disse felter kan udvides til momsdatamodellen for momstjenesten og bruges til bestemmelse af momskoder. Du kan finde flere oplysninger i [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
 

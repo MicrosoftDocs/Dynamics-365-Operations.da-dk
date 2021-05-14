@@ -2,7 +2,8 @@
 title: Mediegallerimodul
 description: Dette emne omhandler mediegallerimoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b0b1ec7324ff60ee7cdd01c97c8c08260bd8c947
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de0bc650393b035adea4570c5e64ecb76283117e
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802809"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937380"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler mediegallerimoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -49,11 +51,13 @@ I eksemplet i følgende illustration er der et købsfelt på en PDP-vært for pr
 |---------------|--------|-------------|
 | Billedkilde | **Sidekontekst** eller **Produkt-id** | Standardværdien er **Sidekontekst**. Hvis der er valgt **Sidekontekst**, forventer modulet, at siden indeholder oplysninger om produkt-id. Hvis **Produkt-id** er valgt, skal produkt-id'et for et billede angives som værdien af egenskaben **Produkt-id**. Denne funktion er tilgængelig i Commerce version 10.0.12. |
 | Produkt-id | Et produkt-id | Denne egenskab kan kun anvendes, hvis værdien af egenskaben **Billedkilde** er **Produkt-id**. |
-| Billedzoom | **Indbygget** eller **Container** | Denne egenskab giver brugeren mulighed for at zoome billeder i mediegallerimodulet. Et billede kan zoomes enten indbygget eller i en separat container ved siden af billedet. Denne funktion er tilgængelig i 10.0.12 |
-| Zoomskala | Et decimaltal | Denne egenskab specificerer den skaleringsfaktor, der skal anvendes til zoom af billeder. Hvis f.eks. værdien er indstillet til **2,5**, forstørres billederne 2,5 gange.|
-| Fuld skærm | **Sand** eller **Falsk** | Denne egenskab specificerer, om billeder kan vises i fuld skærmtilstand. I fuld skærmtilstand kan billeder også forstørres, hvis zoomfunktionen er slået til. Denne funktion er tilgængelig i Commerce version 10.0.13. |
+| Billedzoom | **Indbygget** eller **Container** | Denne egenskab giver brugeren mulighed for at zoome billeder i mediegallerimodulet. Et billede kan zoomes enten indbygget eller i en separat container ved siden af billedet. Denne funktion er tilgængelig i 10.0.12. |
+| Zoomfaktor | Et decimaltal | Denne egenskab specificerer den skaleringsfaktor, der skal anvendes til zoom af billeder. Hvis f.eks. værdien er indstillet til **2,5**, forstørres billederne 2,5 gange. |
+| Fuld skærm | **Sand** eller **Falsk** | Denne egenskab specificerer, om billeder kan vises i fuld skærmtilstand. I fuld skærmtilstand kan billeder også forstørres, hvis zoomfunktionen er slået til. Denne funktion er tilgængelig fra frigivelsen af Commerce version 10.0.13. |
+| Kvalitet af zoomet billede | Et tal fra 1 til og med 100, der repræsenterer en procentdel og vælges ved hjælp af en skyder | Denne egenskab definerer billedkvaliteten for zoomede billeder. Den kan angives til 100 procent for at sikre, at et billede altid bruger den højest mulige opløsning. Denne egenskab kan ikke anvendes til PNG-filer, da de bruger et format uden tab. Denne funktion er tilgængelig fra frigivelsen af Commerce version 10.0.19. |
 | Billeder | Billeder, der er valgt fra mediebiblioteket til webstedsgenerator | Ud over at blive gengivet fra et produkt kan billeder organiseres for et mediegallerimodul. Disse billeder vil blive føjet til alle de produktbilleder, der er tilgængelige. Denne funktion er tilgængelig i Commerce version 10.0.12. |
 | Miniatureretning | **Lodret** eller **Vandret** | Denne egenskab specificerer, om miniaturebilleder skal vises i en lodret stribe eller i en vandret stribe. |
+| Skjule masterproduktbilleder for variant | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, når der vælges en variant, skjules billeder af masterproduktet, medmindre varianten ikke har nogen billeder. Denne egenskab påvirker ikke produkter, der ikke har varianter. |
 
 I følgende illustration vises et eksempel på et mediegallerimodul, hvor indstillingerne af fuld skærm og zoom er tilgængelige.
 

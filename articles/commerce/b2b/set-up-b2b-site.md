@@ -2,7 +2,8 @@
 title: Konfigurere et B2B-e-handelswebsted
 description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere et business-to-business (B2B)-e-handelswebsted i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3c6ea6118c3ba0ab77fea91b2eafa75c89b8d71d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db33bf941303c6a74f9c6b2d5a782762f7180f1b
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799751"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937500"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Oprette et B2B-e-handelswebsted
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Business-to-business-e-handelswebsteder indeholder nogle af de vigtigste funktioner, der optimerer arbejdsgangen for en B2B-bruger. Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere et business-to-business (B2B)-e-handelswebsted i Microsoft Dynamics 365 Commerce. Den gennemgår de moduler og lokationsindstillinger, der skal konfigureres for at aktivere B2B-specifikke scenarier.
 
@@ -283,9 +285,35 @@ Hvis du vil oprette en side med fakturadetaljer i webstedgeneratoren, skal du f�
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 1. Udgiv URL-adressen for siden.
 
+## <a name="add-a-quick-add-module-to-the-cart-page"></a>Føje et modul til hurtig tilføjelse til indkøbsvognssiden
+
+Du kan bruge modulet Hurtig tilføjelse til hurtigt at føje flere varer til indkøbsvognen ved hjælp af vare-id'er (også kaldet \[SKU\]-id'er for lagerenhed). Modulet Hurtig tilføjelse er føjet til et websteds indkøbsvogn.
+
+Hvis du vil tilføje modulet Hurtig tilføjelse til en indkøbsvognsside i Commerce Site Builder, skal du benytte følgende fremgangsmåde.
+
+1. Gå til **Skabeloner**, og vælg skabelonen for webstedets indkøbsvognsside.
+1. Vælg **Rediger**.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Hurtig tilføjelse** og derefter **OK**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
+1. Gå til **Sider**, og vælg webstedets indkøbsvognsside.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. I egenskabsruden for modulet **Container** skal du vælge **Fyld container** under **Bredde**.
+1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Hurtig tilføjelse** og derefter **OK**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
+
+> [!NOTE] 
+> Modulet Hurtig tilføjelse er tilgængeligt fra frigivelsen af Commerce version 10.0.17. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Modulbibliotek, oversigt](../starter-kit-overview.md)
+
+[Opdateringer til SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Oprette oversigt over side](../authoring-home-overview.md)
 
@@ -299,7 +327,7 @@ Hvis du vil oprette en side med fakturadetaljer i webstedgeneratoren, skal du f�
 
 [Indholdsblokmodul](../add-hero-module.md)
 
-[Produktsamling](../product-collection-module-overview.md)
+[Produktsamlingsmodul](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

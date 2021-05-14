@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 54929f924bd9c2b59dec453cf580e0b2bc149d38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799463"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937056"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ændre sorteringsrækkefølgen for merchandisingenheder
 
@@ -84,7 +84,7 @@ Visningsrækkefølgen i navigationshierarkiet for kanal afspejles i hovedkontore
 ![POS med brugerdefinerede sorterede kategorier](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Funktionen for brugerdefineret sorteringsrækkefølge er som standard slået fra. Du kan få mere at vide om, hvordan du aktiverer denne og andre funktioner, under [Administration af funktioner](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> Funktionen for brugerdefineret sorteringsrækkefølge er som standard slået fra. Du kan få mere at vide om, hvordan du aktiverer denne og andre funktioner, under [Administration af funktioner](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

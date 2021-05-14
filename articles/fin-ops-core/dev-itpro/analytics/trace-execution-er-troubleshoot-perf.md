@@ -2,7 +2,7 @@
 title: Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen
 description: Dette emne indeholder oplysninger om, hvordan du kan bruge funktionen til performancesporing i elektroniske rapporter (ER) til at foretage fejlfinding af problemer med ydeevnen.
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754210"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944647"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore kørslen af ER-formater for at foretage fejlfinding af problemer med ydeevnen
 
@@ -47,10 +47,10 @@ Du skal også hente og lokalt gemme følgende filer.
 
 | Fil                                  | Indhold                               |
 |---------------------------------------|---------------------------------------|
-| Performance trace model.version.1     | [Eksempler på ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Performance trace metadata.version.1  | [Eksempler på ER-metadatakonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Performance trace mapping.version.1.1 | [Eksempler på ER-modeltilknytningskonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance trace format.version.1.1  | [Eksempler på ER-formatkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Performance trace model.version.1     | [Eksempler på ER-datamodelkonfiguration](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Performance trace metadata.version.1  | [Eksempler på ER-metadatakonfiguration](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Performance trace mapping.version.1.1 | [Eksempler på ER-modeltilknytningskonfiguration](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Performance trace format.version.1.1  | [Eksempler på ER-formatkonfiguration](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>Konfigurere ER-parametre
 
@@ -84,7 +84,7 @@ Hvis en DM-dokumenttype skal være tilgængelig i opslagsfeltet **Andet**, skal 
 Antag, at du er begyndt at designe en ny ER-løsning for at generere en ny rapport, der viser kreditorposteringer. I øjeblikket kan du finde posteringerne for en valgt kreditor på siden **Kreditorposteringer** (gå til **Kreditor \> Kreditorer \> Alle kreditorer**, vælg en kreditor, og vælg derefter i handlingsruden under fanen **Kreditor** i gruppen **Transaktioner** på **Posteringer**). Men du vil have alle kreditorposteringer samtidig i et elektronisk dokument i XML-format. Denne løsning består af flere ER-konfigurationer, der indeholder den nødvendige datamodel, metadata, modeltilknytning og formatkomponenter.
 
 1. Log på den forekomst af RCS, der er klargjort for dit firma.
-2. I dette selvstudium skal du oprette og ændre ER-konfigurationerne for eksempelfirmaet **Litware Inc.**. Kontroller derfor, at denne konfigurationsudbyder er føjet til RCS og valgt som aktiv. Du kan finde instruktioner i proceduren [Oprette konfigurationsudbydere og markere dem som aktive](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. I dette selvstudium skal du oprette og ændre ER-konfigurationerne for eksempelfirmaet **Litware Inc.**. Kontroller derfor, at denne konfigurationsudbyder er føjet til RCS og valgt som aktiv. Du kan finde instruktioner i proceduren [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. I arbejdsområdet **Elektronisk rapportering** skal du vælge feltet **Rapporteringskonfigurationer**.
 4. På siden **Konfigurationer** skal du importere de ER-konfigurationer, som du har hentet som en forudsætning i RCS, i følgende rækkefølge: datamodel, metadata, modeltilknytning, format. Benyt følgende fremgangsmåde for hver konfiguration:
 
@@ -101,7 +101,7 @@ Antag, at du er færdig med at designe den første version af ER-løsningen. Du 
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importere en ER-konfigurationer fra RCS til Finance and Operations
 
 1. Log på din programforekomst.
-2. I dette selvstudium skal du importere konfigurationer fra din RCS-forekomst (hvor du udformer dine ER-komponenter) i din forekomst (hvor du tester og til slut bruger dem). Du skal derfor sikre dig, at alle påkrævede artefakter er forberedt. Du kan finde instruktioner i proceduren [Importer konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. I dette selvstudium skal du importere konfigurationer fra din RCS-forekomst (hvor du udformer dine ER-komponenter) i din forekomst (hvor du tester og til slut bruger dem). Du skal derfor sikre dig, at alle påkrævede artefakter er forberedt. Du kan finde instruktioner i proceduren [Importer konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
 3. Udfør følgende trin for at importere konfigurationerne fra RCS i programmet:
 
     1. I arbejdsområdet **Elektronisk rapportering** skal du vælge **Lagre** i feltet for **Litware, Inc.**-konfigurationsudbyder.

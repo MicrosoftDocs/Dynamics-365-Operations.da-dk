@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9267047b4bf1ab4185efca9980e0f517f4b05096
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a816f6cff90b8292f66d73b12d328c3f56108957
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812514"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920551"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
 
@@ -40,7 +40,7 @@ Det eksterne katalog skal gøre det muligt for en medarbejder, der angiver en in
 
 1. Konfigurer et indkøbskategorihierarki. Du kan finde flere oplysninger under [Konfigurere politikker for indkøbskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Registrer leverandøren i Supply Chain Management. Før du kan oprette konfigurationer for at få adgang til en ekstern leverandørs katalog, skal du konfigurere leverandøren og leverandørens kontakt i Microsoft Dynamics 365. Det eksterne katalogs leverandør skal også føjes til den valgte indkøbskategori. Du kan finde flere oplysninger om registrering af leverandører under [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md). Du kan finde flere oplysninger om at tildele leverandører en indkøbskategori under [Godkend leverandører til bestemte indkøbskategorier](tasks/approve-vendors-specific-procurement-categories.md).
-3. Sørg for, at de måleenheder og den valuta, som leverandøren bruger, er konfigureret. Du kan finde oplysninger om, hvordan du opretter en måleenhed, i [Administrere måleenhed](../pim/tasks/manage-unit-measure.md).
+3. Sørg for, at de måleenheder og den valuta, som leverandøren bruger, er konfigureret. Du kan finde oplysninger om, hvordan du opretter en måleenhed, i [Administrere måleenheder](../pim/tasks/manage-unit-measure.md).
 4. Konfigurer det eksterne kreditorkatalog ved hjælp af kravene til leverandørens eksterne katalogwebsted. Du kan finde yderligere oplysninger om denne opgave i [Konfigurere det eksterne kreditorkatalog](#configure-the-external-vendor-catalog).
 5. Test konfigurationerne af leverandørens eksterne katalog for at kontrollere, at indstillingerne er gyldige, og at du kan få adgang til leverandørens eksterne katalog. Brug handlingen **Valider indstillinger** til at validere den meddelelse om konfigurationsanmodning, du har defineret. Denne meddelelse bør medføre, at kreditorens eksterne katalogwebsted åbnes i et browservindue. Under valideringen kan du ikke bestille varer og tjenester fra leverandøren. Hvis du vil bestille varer og tjenester, skal du have adgang til leverandørkataloget fra en indkøbsrekvisition.
 6. Aktivér det eksterne katalog ved hjælp af knappen **Aktivér katalog** på siden **Eksterne kataloger**. Det eksterne katalog skal aktiveres, før medarbejdere kan bruge det. Du kan deaktivere det eksterne katalog når som helst.

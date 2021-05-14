@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907957"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935599"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
 
@@ -35,7 +35,7 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 Følgende funktioner er inkluderet i denne version.  Følg linkene til [frigivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
 
-De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem. Nogle af de viste funktioner er måske stadig i forhåndsversion, men de fleste er nu generelt tilgængelige.
+De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 ### <a name="asset-management"></a>Aktivstyring
 
@@ -71,13 +71,13 @@ De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](..
 
 - [Aktivstyringsfunktioner i grænsefladen til produktionsudførelse](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Yderligere oplysninger finder du i [Konfigurere grænsefladen til kørsel af produktionsudstyr](../production-control/production-floor-execution-configure.md).
 
-- Samlet nummerserie for job-id'er<br> - Du kan få flere oplysninger i 
+- [Produktionsudførelse med skaleringsenheder i skyen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 - [Tilsidesætte standardreservationsprincippet for materialer i produktion](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Du kan finde flere oplysninger under [Tilsidesætte standardreservationsprincippet for materialer i produktion](../production-control/override-default-reservation-principle.md).
 
 - [Gemte visninger for produktionsstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Du kan finde flere oplysninger i [Gemte standardvisninger for Supply Chain Management](saved-views-scm.md).
 
-- [Produktionsudførelse med skaleringsenheder i skyen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- Samlet nummerserie for job-id'er<br> - Du kan finde flere oplysninger under [Samlet nummerserie for job-id'er](../production-control/unified-job-ids.md).
 
 ### <a name="planning"></a>Planlægning
 

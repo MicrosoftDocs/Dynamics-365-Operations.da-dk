@@ -1,8 +1,8 @@
 ---
 title: Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder
-description: I dette emne forklares det, hvordan du kan forbedre ydeevnen af løsninger til elektronisk rapportering (ER) ved at tilføje parameteriserede BEREGNET FELT-datakilder.
+description: I dette emne forklares det, hvordan du kan forbedre ydeevnen for løsninger til Elektronisk rapportering (ER) ved at tilføje parametre for BEREGNET FELT-datakilder.
 author: NickSelin
-ms.date: 09/02/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 299570d6a94b0f9e7ee7cf490d4c1aeeb86d5716
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749507"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944825"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder
 
@@ -244,9 +244,9 @@ Du skal også downloade og lokalt gemme følgende filer.
 
 | Filer                                        | Indhold |
 |---------------------------------------------|---------|
-| Model til forbedret ydeevne.version.1     | [Eksempler på ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Tilknytning af forbedret ydeevne.version.1.1 | [Eksempler på ER-modeltilknytningskonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Format af forbedret ydeevne.version.1.1  | [Eksempler på ER-formatkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Model til forbedret ydeevne.version.1     | [Eksempler på ER-datamodelkonfiguration](https://download.microsoft.com/download/4/6/f/46f0f3fa-782b-414a-8f7b-b6c64a388661/Performance_improvement_model.version.1.xml) |
+| Tilknytning af forbedret ydeevne.version.1.1 | [Eksempler på ER-modeltilknytningskonfiguration](https://download.microsoft.com/download/8/9/1/8913a763-afb8-4bf4-aaf1-95ad793ffc5a/Performance_improvement_mapping.version.1.1.xml) |
+| Format af forbedret ydeevne.version.1.1  | [Eksempler på ER-formatkonfiguration](https://download.microsoft.com/download/9/0/c/90c75963-bc78-4edc-9096-556bbe281f10/Performance_improvement_format.version.1.1.xml) |
 
 ## <a name="appendix-2-configure-the-er-framework"></a><a name="appendix2"></a>Appendiks 2: Konfigurere ER-strukturen
 

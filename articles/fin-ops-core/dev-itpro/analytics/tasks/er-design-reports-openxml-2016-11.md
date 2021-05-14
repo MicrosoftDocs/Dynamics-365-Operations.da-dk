@@ -2,7 +2,7 @@
 title: Designe en ER-konfiguration til generering af rapporter i OPENXML-format (november 2016)
 description: Dette emne beskriver, hvordan du opretter en ny konfiguration af elektronisk rapportering, der indeholder en skabelon til oprettelse af elektroniske dokumenter i OPENXML-format.
 author: NickSelin
-ms.date: 08/12/2019
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2f84621028c36cf79d6fb9ab07707bdb970d97e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0f23748f6f1d2c3045b1dc69d8e46821f67da593
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754980"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944262"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>Designe en ER-konfiguration til generering af rapporter i OPENXML-format (november 2016)
 
@@ -28,7 +28,7 @@ Dette emne beskriver, hvordan en bruger i rollen som systemadministrator eller u
 
 I dette eksempel skal du oprette en konfiguration af en udbyder for eksempelfirmaet Litware, Inc. Denne fremgangsmåde kan udføres i GBSI-virksomheden.
 
-Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin. Du skal også have en Excel-fil, der vil blive importeret, når du opretter skabelonen. Denne fil kan åbnes fra [Skabelon for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266).
+Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin. Du skal også have en Excel-fil, der vil blive importeret, når du opretter skabelonen. Denne fil kan åbnes fra [Skabelon for betalingsrapport](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx).
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Overføre konfiguration for betalingsdatamodel

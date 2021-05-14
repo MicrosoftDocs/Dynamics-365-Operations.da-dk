@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 04997aba427ae6013c8154593b09ae1a45a580c3
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890046"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935747"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurere virtuelle Dataverse-tabeller
 
@@ -102,27 +102,15 @@ Du skal registrere dine forekomst af Human Resources i Azure-portalen, så Micro
 
 Installer appen Dynamics 365 HR Virtual Table i dit Power Apps-miljø for at udrulle den virtuelle tabelløsningspakke til Dataverse.
 
-1. Åbn [Power Platform Administration](https://admin.powerplatform.microsoft.com).
+1. I Human Resources skal du åbne siden **Microsoft Dataverse-integration**.
 
-2. Vælg det Power Apps-miljø, der er knyttet til din forekomst af Human Resources, på listen over **Miljøer**.
+2. Vælg fanen **Virtuelle tabeller**.
 
-3. Vælg **Dynamics 365-apps** i sektionen **Ressourcer**.
+3. Vælg **Installer virtuel tabelapp**.
 
-4. Vælg handlingen **Installer app**.
+### <a name="configure-the-virtual-table-data-source"></a>Konfigurere datakilden til den virtuelle tabel
 
-5. Vælg **Dynamics 365 HR Virtual Table**, og vælg **Næste**.
-
-6. Gennemgå og markér, at du accepterer servicebetingelserne.
-
-7. Vælg **Installer**.
-
-Installationen tager et par minutter. Når den er fuldført, skal du fortsætte til de næste trin.
-
-![Installer appen Dynamics 365 HR Virtual Table fra Power Platform Administration](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### <a name="configure-the-virtual-table-data-source"></a>Konfigurere datakilden til den virtuelle tabel 
-
-Det næste trin er at konfigurere datakilden til den virtuelle tabel i Power Apps-miljøet. 
+Det næste trin er at konfigurere datakilden til den virtuelle tabel i Power Apps-miljøet.
 
 1. Åbn [Power Platform Administration](https://admin.powerplatform.microsoft.com).
 
@@ -133,6 +121,9 @@ Det næste trin er at konfigurere datakilden til den virtuelle tabel i Power App
 4. I **Løsningstilstandshub** skal du vælge ikonet **Avanceret søgning** øverst til højre på programsiden.
 
 5. Vælg **Finance and Operations-konfigurationer af virtuel datakilde** r på rullelisten **Søg efter** på siden **Avanceret søgning**.
+
+   > [!NOTE]
+   > Installationen af den virtuelle tabelapp fra det forrige opsætningstrin kan tage et par minutter. Hvis **Konfiguration af virtuel datakilde for Finance and Operations** ikke er tilgængelige på listen, skal du vente et minut og opdatere listen.
 
 6. Vælg **Resultater**.
 
@@ -186,7 +177,7 @@ Give tilladelser til de to Azure AD-programmer i Human Resources:
 
 Når installationen er fuldført, kan du vælge de virtuelle tabeller, du vil generere og aktivere i din Dataverse-forekomst.
 
-1. I Human Resources skal du åbne siden **Dataverse-integration**.
+1. I Human Resources skal du åbne siden **Microsoft Dataverse-integration**.
 
 2. Vælg fanen **Virtuelle tabeller**.
 
@@ -197,7 +188,7 @@ Når installationen er fuldført, kan du vælge de virtuelle tabeller, du vil ge
 
 4. Vælg **Generer/Opdater**.
 
-![Dataverse-integration](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse-integration](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Kontrollere status for oprettelse af tabel
 

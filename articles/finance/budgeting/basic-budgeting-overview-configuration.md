@@ -1,8 +1,8 @@
 ---
 title: Budgetteringsoversigt
 description: Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 Finance, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Finance and Operations eller indlæse dem fra et tredjepartsprogram.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827452"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5960043"
 ---
 # <a name="budgeting-overview"></a>Budgetteringsoversigt 
 
@@ -71,7 +71,7 @@ Funktioner, der blev introduceret i Microsoft Dynamics 365 Finance version 10.0.
 
 Du kan bruge funktionen **Kun budgetregisterposter for antal**, hvis du kun vil bogføre en budgetregisterpost med beløb, der kun er antal. Du kan f.eks. bogføre en budgetpost med et antal på 32 og en pris på nul, hvilket giver et beløb på nul. Du kan derefter bruge dette antal inden for rammerne af en økonomisk rapport til at bestemme en pris pr. antal. Bemærk, at ingen forespørgsler eller rapporter er opdateret som en del af denne funktion. Med funktionen kan du kun bogføre et beløb på nul.
 
-Med **Budgetregisterposter med beløbstype som standard**-funktionen kan standardbeløbstypen i en budgetregisterpost være en anden beløbstype end udgift. Budgetregisterpostlinjen vil nu som standard blive udgift, når hovedkontotypen er udgift, vil som standard være omsætning, når hovedkontotypen er udgift, og som standard være udgift for alle andre kontotyper.
+Med **Budgetregisterposter med beløbstype som standard**-funktionen kan standardbeløbstypen i en budgetregisterpost være en anden beløbstype end udgift. Postlinjen i budgetregisteret vil nu som standard være udgift, når hovedkontotypen er udgift, den vil som standard være omsætning, når hovedkontotypen er omsætning, og den vil som standard være udgift for alle andre kontotyper.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Bruge arbejdsområder og forespørgselssider til at spore budget vs. faktiske tal
 Budgetadministratoren kan gennemgå den aktuelle tilstand for et budget i arbejdsområdet **Finansbudgetter og budgetter**. Fanerne **Udgifter over budget** og **Omsætning under budget** giver et hurtigt overblik over de økonomiske dimensionskombinationer, hvor budgetmål ikke opfyldes eller nærmer sig grænsen. Du kan tilpasse budgettærskelprocent og økonomiske dimensionssæt, der bruges på disse faner ved at klikke på **Konfigurer mit arbejdsområde**. Du kan klikke på **Afdelingsledere** for at se de arbejdere, der er ansvarlige for bestemte økonomiske dimensionskombinationer, der er valgt under disse faner. Hvis du f.eks. kan se, at driftsafdelingens udgiftsbudget overskrider budgettærsklen, kan du nemt finde og kontakte driftsafdelingens leder for at diskutere problemet. 

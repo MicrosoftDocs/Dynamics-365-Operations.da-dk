@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e33a2d4c50d17125a91b3b55b46626c6199575c8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897810"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923440"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -39,7 +39,7 @@ I alle disse apps kan du få adgang til produktspecifik hjælp fra ruden **Hjæl
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjælp til docs.microsoft.com
 
-Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) er standardkilden til produktdokumentation for de tidligere angivne apps. Dette websted indeholder følgende funktioner:
+Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) er standardkilden til produktdokumentation for de tidligere angivne apps. Dette websted indeholder følgende funktioner:
 
 - **Adgang til det mest opdaterede indhold** – webstedet giver Microsoft en hurtigere og mere fleksibel måde at oprette, levere og opdatere produktdokumentationen på. Derfor kan du få nem adgang til de seneste tekniske oplysninger.
 - **Indhold, der er skrevet af eksperter** – indholdet af webstedet er åbent for bidrag fra gruppemedlemmer både inden for og uden for Microsoft.
@@ -50,7 +50,7 @@ Du kan finde indhold på docs.microsoft.com ved hjælp af en søgemaskine. For a
 
 Hvis du vil abonnere på et RSS-feed (Really Simple Syndication) af alle opdateringer, der er til indholdet på docs.microsoft.com, skal du bruge følgende link:
 
-[RSS-feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
+[RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
 
 ### <a name="leave-us-feedback"></a>Give os feedback
 
@@ -73,7 +73,7 @@ Du kan bidrage til og foretage redigeringer til dokumentationen. For at komme i 
 
 Videoen [Sådan kan du bidrage til Microsoft Dynamics 365-dokumentation](https://youtu.be/m5djioozRbg) (vist ovenfor ) findes i Microsoft Dynamics 365-kanalen på YouTube.
 
-Få flere oplysninger i [Docs-bidragyderguide](https://docs.microsoft.com/contribute), der udgives af det team, der har bygget webstedet docs.microsoft.com.
+Få flere oplysninger i [Docs-bidragyderguide](/contribute), der udgives af det team, der har bygget webstedet docs.microsoft.com.
 
 > [!NOTE]
 > Vi accepterer kun oprettelse af bidrag til vores engelske indhold på nuværende tidspunkt.
@@ -155,12 +155,13 @@ Følgende tabel viser vores websteder. Websteder, der har en stjerne (\*) ud for
 | Lokation | Beskrivende tekst |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | Dette websted er vært for eller indeholder hyperlinks til al produktdokumentation til Dynamics 365. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/) | Dette websted er det gratis websted for Microsoft eLearning. |
+| [Microsoft Learn](/learn/) | Dette websted er det gratis websted for Microsoft eLearning. |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Dette websted indeholder et skybaseret arbejdsområde til samarbejde, som kunder og partnere kan bruge til at administrere projekter, lige fra førsalg til implementering og drift. Det er nyttigt i alle faserne i en installation. |
 | [Supportblog](https://aka.ms/AXSupportBlog) | Dette websted indeholder tip og trick, der er oprettet af supportteamet. |
 | [Docs.microsoft.com/tidligere versioner](/previous-versions/dynamics/) | Dette websted er vært for indhold fra tidligere versioner. |
 | [Dynamics Community](https://community.dynamics.com/) | Dette websted er vært for blogs, fora og videoer. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Dette websted indeholder oplysninger om evaluering og salg. |
+
 
 
 

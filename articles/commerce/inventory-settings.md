@@ -2,7 +2,8 @@
 title: Anvendelse af lagerindstillinger
 description: Dette emne dækker lagerindstillinger og beskriver, hvordan du anvender dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +16,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b2c44eb5ece74de15e22180abc6d9d0448ab401b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: dd3db0039525c18521ad6a42b2f281976b7b236a
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798883"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937404"
 ---
 # <a name="apply-inventory-settings"></a>Anvend lagerindstillinger
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne dækker lagerindstillinger og beskriver, hvordan du anvender dem i Microsoft Dynamics 365 Commerce.
 
@@ -39,12 +41,17 @@ I Commerce Site Builder kan der defineres lagergrænseværdier og -intervaller f
 
 ## <a name="inventory-settings"></a>Lagerindstillinger
 
-I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Udvidelser \> Lagerstyring** i webstedsgeneratoren. Der er fire lagerindstillinger, hvoraf en er forældet (frarådes):
+I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Udvidelser \> Lagerstyring** i webstedsgeneratoren. Der er fem lagerindstillinger, hvoraf en er forældet (frarådet):
 
 - **Aktivér kontrol af lagerbeholdning i app** – Denne indstilling slår kontrol af et produktlager til. Modulerne købefelt, indkøbsvogn og afhentning i butik kontrollerer derefter produktlageret og tillader kun, at der føjes et produkt til indkøbsvognen, hvis lageret er tilgængeligt.
 - **Lagerniveau baseret på** – Denne indstilling definerer, hvordan lagerniveauer beregnes. De tilgængelige værdier er **I alt disponibelt**, **Fysisk disponibelt** og **Grænse for udsolgt**. I Commerce kan der defineres lagergrænseværdier og -intervaller for de enkelte produkter eller kategorier. Lager-API'erne returnerer produktlageroplysninger for både egenskaben **I alt disponibelt** og egenskaben **Fysisk disponibelt**. Forhandleren bestemmer, om værdien for **I alt disponibelt** eller **Fysisk disponibelt** skal bruges til at bestemme lageroptællingen og de tilsvarende intervaller for statusserne på lager og udsolgt.
 
     Værdien **Grænse for udsolgt** for indstillingen **Lagerniveau baseret på** er en gammel (ældre), forældet værdi. Når den er valgt, bestemmes lageroptællingen ud fra resultaterne af værdien **Disponibelt i alt**, men grænsen defineres af den numeriske indstilling **Grænse for udsolgt**, der beskrives senere. Tærskelindstillingen gælder for alle produkter på tværs af et e-handelswebsted. Hvis lagerbeholdningen ligger under tærskelantallet, anses et produkt for at være udsolgt. Ellers betragtes det som værende på lager. Mulighederne for værdien **Grænse for udsolgt** er begrænsede, og det anbefales ikke, at du bruger værdien i version 10.0.12 og senere.
+
+- **Lagerniveau for flere lagersteder** – Med denne indstilling kan lagerniveauet beregnes i forhold til standardlagerstedet eller flere lagersteder. Indstillingen **Baseret på individuelt lagersted** beregner lagerniveauerne ud fra standardlagerstedet. En e-handelslokation kan også pege på flere lagersteder for at lette opfyldningen. I dette tilfælde bruges indstillingen **Baseret på samling af lagersteder for forsendelse og afhentning** til at angive lagertilgængelighed. Når en kunde f.eks. køber en vare og vælger "forsendelse" som leveringsmåde, kan varen afsendes fra ethvert lagersted i den opfyldningsgruppe, der har en tilgængelig lagerbeholdning. Siden Produktdetaljer (PDP) viser en meddelelse "På lager" for forsendelse, hvis et tilgængeligt lagersted for forsendelse i opfyldningsgruppen har lager. 
+
+> [!IMPORTANT] 
+> Indstillingen **Lagerniveau for flere lagersteder** er tilgængelig fra frigivelsen af Commerce version 10.0.19. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Lagerintervaller** – Denne indstilling definerer de lagerintervaller, som der vises meddelelser for i webstedsmoduler. Den kan kun anvendes, hvis enten værdien **I alt disponibelt** eller værdien **Fysisk disponibelt** er valgt for indstillingen **Lagerniveau baseret på**. De tilgængelige værdier er **Alle**, **Lav lagerbeholdning og udsolgt** og **Udsolgt**.
 
@@ -61,15 +68,15 @@ I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Ud
 
 Modulerne købefelt, ønskeliste, butiksvælger, indkøbsvogn og indkøbsvognikon bruger lagerindstillinger til at vise lagerintervaller og -meddelelser.
 
-Følgende billede viser et eksempel på en side med produktdetaljer (PDP), der viser en på lager-meddelelse ("Tilgængelig").
+I eksemplet i følgende illustration viser en PDP en meddelelse for På lager ("Tilgængelig").
 
 ![Eksempel på et PDP-modul, der har en på lager-meddelelse](./media/pdp-InStock.png)
 
-Følgende billede viser et eksempel på en side med produktdetaljer (PDP), der viser en udsolgt-meddelelse ("Udsolgt").
+I eksemplet i følgende illustration viser en PDP en meddelelse for "Udsolgt".
 
 ![Eksempel på et PDP-modul, der har en udsolgt-meddelelse](./media/pdp-outofstock.png)
 
-Følgende billede viser et eksempel på en indkøbsvogn, der viser en på lager-meddelelse ("Tilgængelig").
+I eksemplet i følgende illustration viser en indkøbsvogn en meddelelse for På lager ("Tilgængelig").
 
 ![Eksempel på en indkøbsvognmodul, der har en på lager-meddelelse](./media/cart-instock.png)
 

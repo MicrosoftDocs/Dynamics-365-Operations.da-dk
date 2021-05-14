@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811984"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920575"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angive og sammenligne bud på tilbudsanmodninger og tildeler kontrakter
 
@@ -32,7 +32,7 @@ Du kan sende buddet som enten leverandør eller indkøber. Du kan finde flere op
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Angive et svar som leverandør
 
-1. Vælg **Kreditorbud** på dashboardet.
+1. Gå til **Leverandørsamarbejde \> Arbejdsområder \> Leverandørtilbud**.
 2. Find en tilbudsanmodning, der lige er blevet sendt, på listen **Invitationer til nyt bud**. Vælg tilbudsanmodningen for at gennemse, hvad der blev anmodet om.
 3. Vælg **Tilbudsanmodning i vedhæftede filer** for at gennemse evt. vedhæftede filer, der er tilføjet.
 4. Vælg **Bud** for at gøre felterne redigerbare. Bemærk, at **Status for bud** feltet er indstillet til **Leverandør opdaterer**.

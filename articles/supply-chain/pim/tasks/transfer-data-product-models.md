@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 94372960c7478ec07540edb6bce9ca8bc68ec39f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 799e7bce1ce7fd2d912b2ff5f97da61123f7293a
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825488"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920625"
 ---
 # <a name="transfer-data-for-product-models"></a>Overføre data for produktmodeller
 
@@ -26,14 +26,12 @@ ms.locfileid: "5825488"
 
 Eksport af data til en produktkonfigurationsmodel kræver, at du har mindst én produktmodel tilgængelig. Denne procedure bruger modellen Højttaler af topkvalitet i demofirmaet USMF til at vise dig, hvordan du eksporterer data til denne model.
 
-1. Klik på Definition af produktvariantmodel.
-2. Klik på Produktkonfigurationsmodeller.
-3. Find og vælg den ønskede post på listen.
+1. Gå til **Administration af produktoplysninger \> Produkter \> Produktkonfigurationsmodeller**.
+1. Find og vælg den ønskede post på listen.
     * Vælg modellen Højttaler af topkvalitet til denne procedure.  
-4. Klik på Model i handlingsruden.
-5. Klik på Eksportér produktmodel.
+1. Vælg **Model** i handlingsruden.
+1. Vælg **Eksportér produktmodel**.
     * Downloadfunktionsmåden varierer fra browser til browser, alt efter hvordan sikkerhedsindstillingerne er konfigureret.  
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

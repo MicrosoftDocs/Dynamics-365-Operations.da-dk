@@ -2,7 +2,7 @@
 title: Procesautomatisering
 description: Dette emne indeholder oplysninger om, hvordan procesautomatisering tillader enkel planlægning af processer, der køres af batchserveren.
 author: RyanCCarlson2
-ms.date: 08/12/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 509decec3c3d3b598a2457cddba4896730480ec6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a8722adfe410f15bc379f9b550f0618c881f067d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745919"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920823"
 ---
 # <a name="process-automation"></a>Procesautomatisering
 
@@ -30,7 +30,7 @@ Procesautomatisering tillader enkel planlægning af processer, der køres af bat
 
 Den centrale administrationsside for alle procesautomatiseringer findes i modulet Systemadministration under menuen **Konfiguration** . På denne side vises en liste over alle automatiserede processer (serier), der er oprettet i systemet. Du kan også tilføje nye procesautomatiseringer direkte fra denne side. Når en serie er konfigureret, kan du administrere hver serie på denne liste. Du kan vælge at redigere hele serien, slette den, få vist alle forekomster i en listevisning eller deaktivere serien, hvis du vil stoppe det planlagte arbejde i et stykke tid. 
 
-Processer, der er deaktiveret i funktionsstyringen, vises ikke, når funktionen er deaktiveret. Derudover vil planlægningsprogrammet for procesautomatisering ikke planlægge nogen forekomster eller baggrundsprocesser for en deaktiveret funktion. Hvis du genaktiverer funktionen, vil eventuelle planlagte forekomster eller baggrundsprocesser fra tidligere straks blive kørt.
+Processer, der er deaktiveret i funktionsstyringen, vises ikke, når funktionen er deaktiveret. Derudover vil planlægningsprogrammet for procesautomatisering ikke planlægge nogen forekomster eller baggrundsprocesser for en deaktiveret funktion. Hvis du genaktiverer funktionen, vil eventuelle planlagte forekomster eller baggrundsprocesser fra tidligere straks blive kørt. Planlægningsprogrammet for procesautomatisering benytter systembatchjobbet **Systemjob til forespørgsler på procesautomatisering** til at køre. Jobbet bør ikke tilpasses eller ændres på noget tidspunkt. 
 
 ## <a name="calendar-view"></a>Kalendervisning
 

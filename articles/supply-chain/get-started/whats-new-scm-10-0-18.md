@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
+title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.18 (maj 2021)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
 ms.date: 03/01/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
+ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909347"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934961"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.18 (maj 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management-prøveversionen af version 10.0.18. Denne version har et build-nummer på 10.0.793 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.18. Denne version har et build-nummer på 10.0.793 og er tilgængelig som følger:
 
 - **Forhåndsversion:** marts 2021
 - **Generel tilgængelighed af version (selvopdatering):** april 2021
@@ -43,9 +42,17 @@ Følgende funktioner er inkluderet i denne version. Følg linkene til [frigivels
 
 - [Rabatstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Yderligere oplysninger finder du i [Oversigt over rabatstyringsmodul](../rebate-management/rebate-management-overview.md)
 
+- [Politik for opsætning af eksport af salgsdataenhed](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Registrering af salgsreturordrelinje med decimalpræcision med og uden fastvægt](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Salgsordrebekræftelse med et enkelt klik](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Politik for sletning af salgsordrer til indkøbsordrelinjer](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
 - Forenklet brugergrænseflade til kun komme- og gå-tid (forbedret grænseflade til [Produktionsudførelse for produktion](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Yderligere oplysninger finder du i [Konfigurere grænsefladen til kørsel af produktionsudstyr](../production-control/production-floor-execution-configure.md).
 
-De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem. Nogle af de viste funktioner findes stadig i prøveversionen, mens andre muligvis allerede er generelt tilgængelige. 
+De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og opdaterede dokumentationsressourcer
 

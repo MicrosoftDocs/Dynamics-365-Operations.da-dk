@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fb2a25d9e2ffc26f0a37a09cdf3e28a7ca4b84bc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c56b5a333854c9a95fdc74b8f98a3552ff0f7719
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892401"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944795"
 ---
 # <a name="number-of-books-per-journal"></a>Antal bøger pr. kladde
 
@@ -47,9 +47,5 @@ Batchafviklingsjobbet udelader lukkede kartoteker. I et batchjob til afskrivning
 Grænsen for antallet af kartoteker anvendes, hvis der ikke findes identiske anlægs-id'er i samme kladde. Men hvis aktiv-id'et er det samme som det bogførte ID, kan antallet af kartoteker pr. kladde overskrides for at beholde aktiv-id'et i samme kladde.
 
 Der er f. eks. 5.001 anlægsaktiv-id'er, der knyttes tre kartoteker til hvert anlægsaktiv-ID, og hver enkelt anlægs model bogføres på samme posteringslag. Du kører afskrivning for tre på hinanden følgende måneder uden opsummering.  Afskrivningskladden oprettes via et batchjob, og der oprettes syv kladder med 667 anlægsaktiv-id'er og tre kartoteker for hvert anlægsaktiv-ID. Resultatet vil være 2.001 kartoteker. I tre måneder vil der derfor være 6.003 kladdelinjer til at vedligeholde samme anlægs-id'er i samme kladde. Der oprettes også én kladde med 332 anlægsaktiv-id'er og tre kartoteker for hvert anlægsaktiv-ID. Inden for tre måneder vil der være 2.988 linjer.
-
-> [!NOTE] 
-> Hvis parameteren **Opsummer afskrivning** er aktiveret, når du opretter et afskrivningsforslag, har værdien i feltet **Antal kladder pr. kladde** - Afskrivningsforslag har ingen virkning. I dette tilfælde er antallet af bøger pr. kladde 6000, hvilket er den interne definerede grænse.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890770"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941134"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -47,6 +47,7 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 |      Brasilien         |   2020. oktober      | 10.0.16      |   DRCST-erklæring-SC - SEF 262/2020   |
 |      Brasilien         |   2020. oktober      | 10.0.16      |   HURTIGE regnskabs ICMS/IPI-post C176   |
 |      Brasilien         |   2020. december      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 – Identifikation af det digitale platformmellemled (opdatering af layout og valideringsregler)   |
+|      Brasilien         |   2021. marts         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF-layout 1.5.1
 |      Europa        |   2021. januar       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit - Nordirlands protokol har indflydelse på rapportering af fællesskabshandel i EU-lande  |
 |      Tyskland        |   2021. januar       | 10.0.16HF      |   ELSTER UstVA MOMS-forskudsbetaling for er blevet udvidet med to nye felter 37,50 for afskrivning af uoprettelig gæld  |
 |      Tyskland        |   2021. januar       | 10.0.17      |   Ændringer i ELSTER VAT-forskudsbetaling i XML-struktur (UstVA)  |

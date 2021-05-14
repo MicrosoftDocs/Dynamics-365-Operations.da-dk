@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a2fd383944a96a073f12399e1a29d0fcf520e3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9cd5475e48cbcd8dcee6b228297f58e364ac503d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812637"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920875"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Tilføje en udtryksbegrænsing til en produktkonfigurationsmodel
 
@@ -26,27 +26,27 @@ ms.locfileid: "5812637"
 
 Denne procedure viser, hvordan du kan føje et nyt begrænsningsudtryk til en produktkonfigurationsmodel. Den viser, hvordan du kan bemyndige, at der skal anvendes hjørnebeskyttelse på en højttaler, hvis brugeren har valgt et frontgitter i metal. Proceduren bruger komponenten Højttaler af topkvalitet i demofirmaet USMF.
 
-
 ## <a name="create-an-expression-constraint"></a>Oprette en udtryksbegrænsning
-1. Klik på Definition af produktvariantmodel.
-2. Klik på Produktkonfigurationsmodeller.
+
+1. Gå til **Administration af produktoplysninger \> Produkter \> Produktkonfigurationsmodeller**.
 3. Find og vælg den ønskede post på listen.
     * I dette eksempel bruges højttalermodellen af topkvalitet.  
-4. Klik op linket i den valgte række på listen.
-5. Udvid afsnittet Begrænsninger.
-6. Klik på Tilføj.
-7. Klik på Opret.
-8. Skriv en værdi i feltet Navn.
+4. Vælg linket i den valgte række på listen.
+5. Udvid sektionen **Begrænsninger**.
+6. Vælg **Tilføj**.
+7. Vælg **Opret**.
+8. Skriv en værdi i feltet **Navn**.
 
 ## <a name="enter-expression"></a>Indtast udtryk
-1. Klik på udtrykket Rediger.
+
+1. Vælg **Rediger udtryk**.
     * Hvis du låser op brugergrænsefladen i opgaveregistrering på dette tidspunkt, kan du bruge IntelliSense og listen over symboler til at opbygge begrænsningsudtrykket.  
-2. I feltet ConstraintBody skal du angive 'Implies[FrontGrill=="Metal", CornerProtection]'.
+2. I feltet **ConstraintBody** skal du indtaste 'Implies[FrontGrill=="Metal", CornerProtection]'.
     * Logikken for dette udtryk siger: Hvis kølergitteret er af metal, skal hjørnebeskyttelsesindstillingen være markeret.  
-3. Klik på Valider.
+3. Vælg **Valider**.
     * Valideringsfunktionen kører gennem begrænsningsudtrykket og kontrollerer for syntaksfejl.  
-4. Klik på Luk.
-5. Klik på OK.
+4. Vælg **Luk**.
+5. Vælg **OK**.
 
 
 

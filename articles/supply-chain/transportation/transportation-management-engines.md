@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6ec8714ef208b25284f218e81dda0ff94ed49d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828362"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920103"
 ---
 # <a name="transportation-management-engines"></a>Transportstyringsprogrammer
 
@@ -94,8 +94,14 @@ Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskel
 | 1        | Oprindelse – postnummer            | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 2        | Destination – delstat             | Tilknytning | Streng    | Stat          |           |
 | 3        | Destination – startpostnummer | Tilknytning | Streng    | Postnummer    | Markeret  |
-| 4        | Destination – slutpostnummer   | Tilknytning | Streng    | Postnummer    | Markeret  |
+| 4        | Destination – slutpostnummer   | Tilknytning | Streng    | Postnummer    | Udvalgt  |
 | 5        | Destinationsland           | Tilknytning | Streng    | Land/område |           |
+
+### <a name="whitepaper"></a>Hvidbog
+
+Yderligere oplysninger finder du ved at downloade følgende hvidbog (skrevet som support til AX2012, men gælder stadig for Dynamics 365 Supply Chain Management)
+
+- [Programmer til transportstyring](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

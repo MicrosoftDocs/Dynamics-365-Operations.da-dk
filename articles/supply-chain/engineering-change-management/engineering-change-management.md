@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830022"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954639"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Administrere ændringer af tekniske produkter
 
@@ -139,13 +139,14 @@ Mens du gennemgår en anmodning om ændring, skal du i handlingsruden under fane
 
 Som det er beskrevet i [Tekniske virksomheder og regler for ejerskab af data](engineering-org-data-ownership-rules.md), varierer de produktdata, du kan redigere, afhængigt af den type juridiske enhed, du arbejder i (en teknisk virksomhed i forhold til et driftsselskab). Regler for ejerskab af data anvendes også på tekniske ændringsordrer. Derfor kan der foretages forskellige typer ændringer, afhængigt af den juridiske enhed, hvor du opretter en teknisk ændringsordre. Her er nogle eksempler:
 
-- I forbindelse med tekniske ændringsordrer i et **teknisk virksomhed** kan du foretage grundlæggende ændringer af de tekniske data. Du kan f.eks. oprette nye versioner af et produkt, ændre et produkts struktur via styklisten og ændre dens tekniske attributværdier. Vælg en af følgende værdier i feltet **Effekt** for hvert berørt produkt:
+- I forbindelse med tekniske ændringsordrer i et *teknisk virksomhed* kan du foretage grundlæggende ændringer af de tekniske data. Du kan f.eks. oprette nye versioner af et produkt, ændre et produkts struktur via styklisten og ændre dens tekniske attributværdier. Vælg en af følgende værdier i feltet **Effekt** for hvert berørt produkt:
 
     - **Ingen** – Opdater den eksisterende produktversion (i version-opdatering).
     - **Ny version** – Opret en ny version, der er baseret på den valgte produktversion.
-    - **Nyt produkt** – Opret et helt nyt produkt eller en produktvariant, der er baseret på den valgte produktversion.
+    - **Nyt produkt** – Opret et helt nyt produkt, der er baseret på den valgte produktversion.
+    - **Ny variant** – Opret en ny variant, der er baseret på den valgte produktversion. Dens stykliste- og ruteoplysninger kopieres.
 
-- I forbindelse med tekniske ændringsordrer i et **driftsselskab** kan du ændre produktets logistiske data. Du kan f.eks. forbedre den eksisterende stykliste med indstillinger for forsyning, tilføje lokale ruter eller lokale styklister og endda forbedre en stykliste ved at tilføje nye styklistelinjer til lokale emballager, smørevæsker eller instruktioner på det lokale sprog. De forbedringer, som brugerne foretager i driftsselskabet, bevares, når der sendes nye opdateringer fra den tekniske virksomhed. Yderligere oplysninger finder du i [Tekniske virksomheder og regler for ejerskab af data](engineering-org-data-ownership-rules.md).
+- I forbindelse med tekniske ændringsordrer i et *driftsselskab* kan du ændre produktets logistiske data. Du kan f.eks. forbedre den eksisterende stykliste med indstillinger for forsyning, tilføje lokale ruter eller lokale styklister og endda forbedre en stykliste ved at tilføje nye styklistelinjer til lokale emballager, smørevæsker eller instruktioner på det lokale sprog. De forbedringer, som brugerne foretager i driftsselskabet, bevares, når der sendes nye opdateringer fra den tekniske virksomhed. Yderligere oplysninger finder du i [Tekniske virksomheder og regler for ejerskab af data](engineering-org-data-ownership-rules.md).
 
     Når der behandles tekniske ændringsordrer i den tekniske virksomhed, bliver produkterne kun oprettet og/eller opdateret i den tekniske virksomhed. Hvis produktmasterdataene også skal opdateres, skal du derfor også frigive produkterne til driftsselskaber.
 

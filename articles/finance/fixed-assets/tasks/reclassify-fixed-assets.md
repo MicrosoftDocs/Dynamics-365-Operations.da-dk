@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8935213c4629de408a48df5e54a2122324e1b3e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fbfb754459fad1f3b1509f4f9c65c20e0385b013
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823926"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944705"
 ---
 # <a name="reclassify-fixed-assets"></a>Genklassificer anlægsaktiver
 
@@ -27,11 +27,25 @@ Hvis du vil genklassificere et anlægsaktiv, skal du overføre det til en ny anl
 
 Når et anlægsaktiv genklassificeres:
 
-* Alle bøger til det eksisterende anlægsaktiv oprettes for det nye anlægsaktiv. Oplysninger, der var oprettet for det oprindelige anlægsaktiv, kopieres til det nye anlægsaktiv. Status for det oprindelige anlægsaktivs bøger er Lukket. 
+- Alle bøger til det eksisterende anlægsaktiv oprettes for det nye anlægsaktiv. Oplysninger, der var oprettet for det oprindelige anlægsaktiv, kopieres til det nye anlægsaktiv. Status for det oprindelige anlægsaktivs bøger er Lukket. 
 
-* Det nye anlægsaktivs nye bøger indeholder datoen for genklassificeringen i feltet **Anskaffelsesdato**. Datoen i feltet **Startdato for afskrivning** kopieres fra de oprindelige aktivoplysninger. Hvis afskrivningen allerede er startet, vises datoen for genklassificeringen i feltet **Dato, hvor afskrivning sidst blev udført**. 
+- De nye anlægskartoteker indeholder datoen for genklassificeringen i feltet **Anskaffelsesdato**. Datoen i feltet **Startdato for afskrivning** kopieres fra de oprindelige aktivoplysninger. Hvis afskrivningen allerede er startet, vises datoen for genklassificeringen i feltet **Dato, hvor afskrivning sidst blev udført**. 
 
-* De eksisterende anlægsaktivposteringer for det oprindelige anlægsaktiv annulleres og oprettes for det nye anlægsaktiv igen.
+- De eksisterende anlægsaktivposteringer for det oprindelige anlægsaktiv annulleres og oprettes for det nye anlægsaktiv igen.
+
+- Når et aktiv, der har en overførselstransaktion, er blevet omklassificeret, vil systemet vise en meddelelse i **Handlingscenteret** for at angive, at en overførselstransaktion ikke er fuldført under genklassificeringsprocessen. Det er nødvendigt at fuldføre en overførselstransaktion for at flytte de eksisterende genklassificeringstransaktioner til de relevante økonomiske dimensioner. 
+
+   Under genklassificeringsprocessen kører systemet følgende handlinger for at genklassificere aktivsaldoen fra det oprindelige aktiv til det nye aktiv. 
+   
+   - I genklassificeringsprocessen kopieres dataene fra det oprindelige anlægskartotek til det nye anlægskartotek.
+
+   - Genklassificeringstransaktionen bruger oplysninger fra den oprindelige bogførte anskaffelse, som omfatter oplysninger om økonomiske dimensioner, der er medtaget i anskaffelsestransaktionen.  
+   
+   - Samtidig tilbagefører genklassificeringsprocessen den oprindelige transaktion for aktivets anskaffelse og overførsel. 
+
+Følgende diagram og procedure viser et eksempel på genklassificeringsprocessen. 
+
+[![Diagram, der viser processen for genklassificering](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Benyt følgende fremgangsmåde for at genklassificere et anlægsaktiv:
 
@@ -42,7 +56,7 @@ Benyt følgende fremgangsmåde for at genklassificere et anlægsaktiv:
     * Hvis den nye anlægsaktivgruppe er knyttet til en nummerserie, opdateres feltet **Nyt nummer på anlægsaktivet** med nummeret fra nummerserien for den nye anlægsaktivgruppe. Ellers opdateres feltet **Nyt nummer på anlægsaktivet** med nummeret fra nummerserien, der er konfigureret på siden **Parametre for anlægsaktiver**. Hvis der ikke er konfigureret en nummerserie på siden **Parametre for anlægsaktiver**, skal du angive et tal i feltet **Nyt nummer på anlægsaktivet**.  
 5. Indtast en dato i feltet **Dato for genklassificering**.
 6. Indtast eller vælg en værdi i feltet **Bilagsserie**.
-7. Klik på **OK**.
+7. Vælg **OK**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

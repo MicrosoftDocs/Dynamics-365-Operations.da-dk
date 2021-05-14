@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821002"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936724"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer i POS
 
@@ -42,7 +42,7 @@ Før du forsøger at bruge kundeordrefunktionaliteten i POS, skal du sørge for 
 
 ### <a name="configure-modes-of-delivery"></a>Konfigurere leveringsmetoder
 
-Hvis du vil bruge kundeordrer, skal du konfigurere leveringsmåder, som butikskanalen kan bruge. Du skal definere mindst én leveringsmåde, der kan bruges, når der sendes ordrelinjer til en kunde fra en butik. Du skal også definere mindst én levering gennem afhentning, der kan bruges, når der afhentes ordrelinjer fra butikken. Leveringsmåder defineres på siden **Leveringsmåder** i Commerce Headquarters. Du kan finde flere oplysninger om, hvordan du kan konfigurere leveringsmåden for Commerce-kanaler, under [Definere leveringsmåder](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
+Hvis du vil bruge kundeordrer, skal du konfigurere leveringsmåder, som butikskanalen kan bruge. Du skal definere mindst én leveringsmåde, der kan bruges, når der sendes ordrelinjer til en kunde fra en butik. Du skal også definere mindst én levering gennem afhentning, der kan bruges, når der afhentes ordrelinjer fra butikken. Leveringsmåder defineres på siden **Leveringsmåder** i Commerce Headquarters. Du kan finde flere oplysninger om, hvordan du kan konfigurere leveringsmåden for Commerce-kanaler, under [Definere leveringsmåder](./configure-call-center-delivery.md#define-delivery-modes).
 
 ![Siden Leveringsmåder](media/customer-order-modes-of-delivery.png)
 
@@ -78,19 +78,19 @@ Før du forsøger at oprette kundeordrer i POS, skal du konfigurere de relevante
 - **Annulleringsgebyrprocent** – Hvis et gebyr skal anvendes, når en kundeordre annulleres, skal du angive beløbet på dette gebyr.
 - **Annulleringsgebyrkode** – Angiv den debitorgebyrkode, der skal bruges, når et annulleringsgebyr anvendes på annullerede kundeordrer via POS. Gebyrkoden definerer den økonomiske bogføringslogik for annulleringsgebyret.
 - **Forsendelsesgebyrkode** – Hvis indstillingen **Brug avancerede automatiske gebyr** er angivet til **Ja**, har denne parameter ingen virkning. Hvis denne indstilling er angivet til **Nej**, vil brugerne blive bedt om manuelt at angive et forsendelsesgebyr, når de opretter kundeordrer i POS. Brug denne parameter til at tilknytte en debitorgebyrkode, der skal anvendes på ordrer, når brugerne angiver et forsendelsesgebyr. Gebyrkoden definerer den økonomiske bogføringslogik for forsendelsesgebyret.
-- **Brug avancerede automatiske gebyrer** – Angiv denne indstilling til **Ja** for at bruge systemberegnede automatiske gebyrer, når der oprettes kundeordrer i POS. Disse automatiske gebyrer kan bruges til at beregne forsendelsesgebyrer eller andre ordre- eller varespecifikke gebyrer. Du kan få flere oplysninger om, hvordan du konfigurerer og bruger avancerede automatiske gebyrer, i [Avancerede automatiske gebyrer for omni-kanal](https://docs.microsoft.com/dynamics365/commerce/omni-auto-charges).
+- **Brug avancerede automatiske gebyrer** – Angiv denne indstilling til **Ja** for at bruge systemberegnede automatiske gebyrer, når der oprettes kundeordrer i POS. Disse automatiske gebyrer kan bruges til at beregne forsendelsesgebyrer eller andre ordre- eller varespecifikke gebyrer. Du kan få flere oplysninger om, hvordan du konfigurerer og bruger avancerede automatiske gebyrer, i [Avancerede automatiske gebyrer for omni-kanal](./omni-auto-charges.md).
 
 ![Fanen Kundeordrer på siden Commerce-parametre](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Opdatere transaktionsskærmlayout i POS
 
-Sørg for, at POS-[skærmlayoutet](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) er konfigureret til at understøtte oprettelse og styring af kundeordrer, og at alle nødvendige POS-operationer er konfigureret. Her er nogle af de POS-handlinger, der anbefales til at understøtte oprettelse og styring af kundeordrer korrekt:
+Sørg for, at POS-[skærmlayoutet](./pos-screen-layouts.md) er konfigureret til at understøtte oprettelse og styring af kundeordrer, og at alle nødvendige POS-operationer er konfigureret. Her er nogle af de POS-handlinger, der anbefales til at understøtte oprettelse og styring af kundeordrer korrekt:
 - **Send alle produkter** – Denne operation bruges til at angive, at alle linjer i transaktionskurven skal leveres til en destination.
 - **Send valgte produkter** – Denne operation bruges til at angive, at de valgte linjer i transaktionskurven skal leveres til en destination.
 - **Afhent alle produkter** – Denne operation bruges til at angive, at alle linjer i transaktionskurven skal afhentes fra den valgte butiksadresse.
 - **Afhent valgte produkter** – Denne operation bruges til at angive, at de valgte linjer i transaktionskurven skal afhentes fra den valgte butiksadresse.
 - **Udfør alle produkter** – Denne operation bruges til at angive, at alle linjer i transaktionskurven skal udføres. Hvis denne operation bruges i POS, vil kundeordren blive konverteret til en kontant og afhentet-transaktion.
-- **Udfør valgte produkter** – Denne operation bruges til at angive, at de valgte linjer i transaktionskurven udføres af kunden på købstidspunktet. Denne handling er kun nyttig i et scenarie for [hybrid ordre](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders).
+- **Udfør valgte produkter** – Denne operation bruges til at angive, at de valgte linjer i transaktionskurven udføres af kunden på købstidspunktet. Denne handling er kun nyttig i et scenarie for [hybrid ordre](./hybrid-customer-orders.md).
 - **Tilbagekald ordre** – Denne handling bruges til at søge efter og hente kundeordrer, så POS-brugere kan redigere, annullere eller udføre opfyldelsesrelaterede operationer på dem efter behov.
 - **Skift leveringsmåde** – Denne handling kan bruges til hurtigt at ændre leveringsmåden for linjer, der allerede er konfigureret til forsendelse, uden at kræve, at brugerne går gennem flowet "Send alle produkter" eller "Send valgte produkter" igen.
 - **Tilsidesæt depositum** – Denne operation kan bruges til at ændre det depositumbeløb, som kunden vil betale for den valgte kundeordre.
@@ -128,7 +128,7 @@ Sørg for, at POS-[skærmlayoutet](https://docs.microsoft.com/dynamics365/commer
 Detailordrer, der er oprettet i enten online- eller butikskanalen, kan tilbagekaldes og redigeres via POS efter behov.
 
 > [!IMPORTANT]
-> Ikke alle detailordrer kan redigeres via kasseprogrammet. Ordrer, der oprettes i en callcenter-kanal, kan ikke redigeres via POS, hvis indstillingen [Aktivér ordrefuldførelse](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) er slået til for callcenter-kanalen. For at sikre korrekt betalingsbehandling skal ordrer, der kommer fra en callcenter-kanal, og som bruger funktionen Aktivér ordrefuldførelse, skal redigeres via callcenter-programmet i Commerce Headquarters.
+> Ikke alle detailordrer kan redigeres via kasseprogrammet. Ordrer, der oprettes i en callcenter-kanal, kan ikke redigeres via POS, hvis indstillingen [Aktivér ordrefuldførelse](./set-up-order-processing-options.md#enable-order-completion) er slået til for callcenter-kanalen. For at sikre korrekt betalingsbehandling skal ordrer, der kommer fra en callcenter-kanal, og som bruger funktionen Aktivér ordrefuldførelse, skal redigeres via callcenter-programmet i Commerce Headquarters.
 
 I version 10.0.17 og senere kan brugere redigere berettigede ordrer via kasseansøgningen, selvom ordren er delvist opfyldt. Ordrer, der er fuldt faktureret, kan dog ikke redigeres via POS. Hvis du vil aktivere denne funktion og give yderligere feedback, skal du aktivere funktionen **Rediger delvist opfyldte ordrer i POS** i arbejdsområdet **Funktionsstyring**. Hvis denne funktion ikke er aktiveret, eller hvis du bruger version 10.0.16 eller tidligere, kan brugerne kun redigere kundeordrer i POS, hvis ordren er helt åben. Hvis funktionen er aktiveret, kan du desuden begrænse de butikker, der kan redigere delvist opfyldte ordrer. Indstillingen for deaktivering af denne egenskab for bestemte butikker kan konfigureres via **funktionalitetsprofilen** i oversigtspanelet **Generelt**.
 
@@ -153,7 +153,7 @@ I version 10.0.17 og senere kan brugere redigere berettigede ordrer via kasseans
 
 ## <a name="finalizing-the-customer-order-shipment-or-pickup-from-pos"></a>Afslutte forsendelse eller afhentning af kundeordre fra POS
 
-Når en ordre er oprettet, vil varerne blive afhentet af kunden fra en butiksadresse eller afsendt, afhængigt af ordrens konfiguration. Du kan finde flere oplysninger om denne proces i dokumentationen til [opfyldelse af butiksordrer](https://docs.microsoft.com/dynamics365/commerce/order-fulfillment-overview).
+Når en ordre er oprettet, vil varerne blive afhentet af kunden fra en butiksadresse eller afsendt, afhængigt af ordrens konfiguration. Du kan finde flere oplysninger om denne proces i dokumentationen til [opfyldelse af butiksordrer](./order-fulfillment-overview.md).
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynkront transaktionsflow for kundeordrer
 

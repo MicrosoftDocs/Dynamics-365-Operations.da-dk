@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 219504da62fd4637ed01f9acbab32f873cef81b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 56319035ac092a376f0766c20eee71af6256b6f9
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795949"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936904"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø
 
@@ -29,7 +29,7 @@ Dette emne forklarer, hvordan du konfigurerer køb online, afhent i butikken (BO
 
 ## <a name="prerequisite"></a>Forudsætning
 
-Fuldfør kun procedurerne i dette emne, efter dit Commerce-evalueringsmiljø er klargjort og konfigureret. Oplysninger om, hvordan du klargør og konfigurerer dit miljø, finder du under [Klargøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Fuldfør kun procedurerne i dette emne, efter dit Commerce-evalueringsmiljø er klargjort og konfigureret. Oplysninger om, hvordan du klargør og konfigurerer dit miljø, finder du under [Klargøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](./cpe-post-provisioning.md).
 
 Når Commerce-miljøet er blevet klargjort og konfigureret fra ende til anden, kan du bruge dette emne til at aktivere BOPIS-scenarier.
 
@@ -37,7 +37,7 @@ Når Commerce-miljøet er blevet klargjort og konfigureret fra ende til anden, k
 
 ### <a name="configure-modern-pos"></a>Konfigurere Modern POS
 
-BOPIS-scenarier, der involverer en kreditkortbetaling, kræver en hardwarestation. Hardwarestationen er indbygget i Modern POS til Windows og Android-klienter. Hvis du bruger Cloud POS eller Modern POS til iOS, skal POS-klienten kombineres med en delt hardwarestation. Dette emne forklarer, hvordan du kan konfigurere BOPIS til Windows- og Android-klienter. Du kan finde oplysninger om, hvordan du konfigurerer en delt hardwarestationen, under [Konfigurere og installere Retail-hardwarestation](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
+BOPIS-scenarier, der involverer en kreditkortbetaling, kræver en hardwarestation. Hardwarestationen er indbygget i Modern POS til Windows og Android-klienter. Hvis du bruger Cloud POS eller Modern POS til iOS, skal POS-klienten kombineres med en delt hardwarestation. Dette emne forklarer, hvordan du kan konfigurere BOPIS til Windows- og Android-klienter. Du kan finde oplysninger om, hvordan du konfigurerer en delt hardwarestationen, under [Konfigurere og installere Retail-hardwarestation](./retail-hardware-station-configuration-installation.md).
 
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> Kasseapparater**.
 2. Vælg kasseapparatet **SANFRAN-5**, og vælg derefter **Rediger**.
@@ -87,7 +87,7 @@ BOPIS-scenarier, der involverer en kreditkortbetaling, kræver en hardwarestatio
 
 ### <a name="create-a-storefront-order-for-in-store-pickup"></a>Oprette en butiksordre til afhentning i butikken
 
-1. Gå til den URL-adresse, du har angivet i afsnittet [Initialisere e-handel](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) under konfigurationen af miljøet.
+1. Gå til den URL-adresse, du har angivet i afsnittet [Initialisere e-handel](./provisioning-guide.md#initialize-e-commerce) under konfigurationen af miljøet.
 2. Vælg en vare, og vælg **Føj til indkøbsvogn**.
 3. Vælg **Afhent** for den ordrelinje, du lige har tilføjet, på siden med indkøbsposen.
 4. Skriv **San Francisco** i dialogboksen **Vælg en butik**, og vælg derefter knappen **Søg**.
@@ -112,7 +112,7 @@ BOPIS-scenarier, der involverer en kreditkortbetaling, kræver en hardwarestatio
 
 ### <a name="synchronize-online-orders-to-the-back-office"></a>Synkronisere onlineordrer til administrationen
 
-Du kan finde oplysninger om, hvordan du synkroniserer onlineordrer, under [Bogføre onlinesalg og -betalinger](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments).
+Du kan finde oplysninger om, hvordan du synkroniserer onlineordrer, under [Bogføre onlinesalg og -betalinger](./tasks/posting-online-sales-payments.md).
 
 ### <a name="pick-up-an-order-in-the-store"></a>Afhente en ordre i butikken
 
@@ -148,19 +148,19 @@ Ved alle generelle problemer skal du altid konsultere hændelseslogfilerne for h
 
 [Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Adyen-betalingsconnector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+[Adyen-betalingsconnector](./dev-itpro/adyen-connector.md?tabs=8-1-3)
 
-[Gemme onlinebetalingsmidler med Adyen-connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+[Gemme onlinebetalingsmidler med Adyen-connector](./dev-itpro/adyen-connector-listpi.md)
 
-[Oversigt over omni-kanalbetalinger](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[Oversigt over omni-kanalbetalinger](./omni-channel-payments.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

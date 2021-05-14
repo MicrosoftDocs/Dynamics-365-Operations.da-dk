@@ -2,7 +2,7 @@
 title: Anmode om fridag
 description: Anmod om fridag i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0159935e98e720d401923230dd7b69e22581df84
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4885c91eb0406acda2cf60ed4e30f494ebaa2a99
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790686"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924848"
 ---
 # <a name="request-time-off"></a>Anmode om fridag
 
@@ -45,7 +45,7 @@ Du kan sende anmodninger om fridage, få vist din ferie- og orlovssaldi og få v
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Føje en vedhæftet fil til en eksisterende anmodning
 
-Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæftet fil. Du kan også se alle relaterede anmodninger for en bestemt dato. 
+Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæftet fil. Du kan også se alle relaterede anmodninger for en bestemt dato.
 
 ## <a name="view-leave-balances"></a>Få vist orlovssaldi
 
@@ -58,6 +58,20 @@ Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæ
 1. I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere** (...) i feltet **Fritidssaldi**.
 
 2. Hvis du vil have vist dine godkendte anmodninger om fridage, skal du vælge **Godkendt fritid**. Hvis du vil have vist dine ventende anmodninger om fridage, skal du vælge **Anmodninger om fridage**.
+
+## <a name="cancel-time-off-requests"></a>Annullere anmodninger om fridage
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Vis fridage** i feltet **Fritidssaldi**.
+
+2. I formularen **Fridage** skal du vælge en eller flere anmodninger om fridage, som skal annulleres.
+
+3. Vælg knappen **Annuller**.
+
+4. Skriv en kommentar i ruden **Annulleringsdetaljer**, og vælg derefter **Send**.
+
+   ![Annullere orlovsanmodning](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Se også
 

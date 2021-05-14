@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f62398934d029a3269bd2b6aa33531e6807be490
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6452a126f4962104fca7c62f3518b89fff657f08
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809320"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921029"
 ---
 # <a name="create-product-model-components"></a>Oprette produktmodelkomponenter
 
@@ -26,14 +26,13 @@ ms.locfileid: "5809320"
 
 Begrænsningsbaserede produktkonfigurationsmodeller bruger komponenter som byggeklodser for at oprette modelproduktstrukturen. Komponenterne skal oprettes, før en produktmodel kan bygges. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
-1. Klik på Definition af produktvariantmodel.
-2. Klik på Produktkonfigurationsmodeller.
-3. Klik på Model i handlingsruden.
-4. Klik på Komponenter.
-5. Klik på Ny.
-6. Skriv en værdi i feltet Navn.
-7. Skriv en værdi i feltet Beskrivelse.
-8. Luk siden.
+1. Gå til **Administration af produktoplysninger \> Produkter \> Produktkonfigurationsmodeller**.
+1. Vælg **Model** i handlingsruden.
+1. Vælg **Komponenter**.
+1. Vælg **Ny**.
+1. Skriv en værdi i feltet **Navn**.
+1. Indtast en værdi i feltet **Beskrivelse**.
+1. Luk siden.
 
 
 

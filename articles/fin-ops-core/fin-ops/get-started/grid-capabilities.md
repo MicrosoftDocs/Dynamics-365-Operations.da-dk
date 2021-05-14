@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c8f417b3ba427104d6d0e57ac595ab7b453f48fa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749559"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923592"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -134,7 +134,7 @@ Bemærk, at rækkevalget og rækkestatuskolonnerne i det nye gitter altid fryses
 
 **10.0.9 / Platform update 33 og senere**
 
-Funktionen **Nyt gitterkontrolelement** er tilgængelig direkte i funktionsstyring i ethvert miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).  
+Funktionen **Nyt gitterkontrolelement** er tilgængelig direkte i funktionsstyring i ethvert miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](public-preview-terms.md).  
 
 **10.0.8 / Platform update 32 og 10.0.7 / Platform update 31**
 

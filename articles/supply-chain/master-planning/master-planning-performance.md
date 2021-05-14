@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 73ef52580ffe80c6c5cc9f77c2088d071a749ca7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 27c1f910fc9fa533877726562c45a9eaa13e2858
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833443"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935803"
 ---
 # <a name="improve-master-planning-performance"></a>Forbedre ydeevne af varedisponering
 
@@ -79,14 +79,14 @@ Du kan indstille parameteren **Brug af cache** i sektionen **Performance** under
 
 ### <a name="number-of-orders-in-firming-bundle"></a>Antal ordrer i autorisationsbundt
 
-Parameteren **Antal ordrer i autorisationsbundt** angiver det samlede antal ordrer, der skal behandles ad gangen af hver tråd/batch. Den medfører parallelisering af processen til automatisk autorisation.
+Parameteren **Antal ordrer i autorisationsbundt** angiver det samlede antal ordrer, der skal behandles ad gangen af hver tråd/batch. Det medfører parallelisering af den automatiske autorisationsproces.
 
-Du kan indstille parameteren **Antal ordrer i autorisationsbundt** i sektionen **Performance** under fanen **Generelt** på siden **Varedisponeringsparametre** (**Varedisponering \> Konfiguration \> Varedisponeringsparametre**). Paralliseringen af processen til automatisk autorisation er baseret på de ordrer, der skal behandles sammen. Hvis dette parameter eksempelvis er angivet til **50**, vil hver tråd eller batchopgave f.eks. hente 50 ordrer ad gangen og behandle dem sammen. Det anbefales, at du bruger en proces, hvor du prøver dig frem, for at finde den bedste værdi. Du kan dog bruge følgende formel til at beregne en startværdi:
+Du kan indstille parameteren **Antal ordrer i autorisationsbundt** i sektionen **Performance** under fanen **Generelt** på siden **Varedisponeringsparametre** (**Varedisponering \> Konfiguration \> Varedisponeringsparametre**). Paralliseringen af den automatiske autorisationsproces er baseret på de ordrer, der skal behandles sammen. Hvis dette parameter eksempelvis er angivet til **50**, vil hver tråd eller batchopgave f.eks. hente 50 ordrer ad gangen og behandle dem sammen. Det anbefales, at du bruger en proces, hvor du prøver dig frem, for at finde den bedste værdi. Du kan dog bruge følgende formel til at beregne en startværdi:
 
 (Antal ordrer pr. bundt) = (Antal efterspørgselsvarer ÷ antal tråde)
 
 > [!NOTE]
-> Hvis du angiver parameteren **Antal ordrer i autorisationsbundt** til **0** (nul), sker der ingen parallisering af processen til automatisk autorisation. Hele processen vil blive kørt på en enkelt batchopgave og have en akkumuleret kørselstid. Kørselstiden for varedisponeringen vil derfor stige. Derfor anbefales det, at du angiver denne parameter til en værdi, der er større end **0** (nul).
+> Hvis du angiver parameteren **Antal ordrer i autorisationsbundt** til **0** (nul), sker der ingen parallisering af den automatiske autorisationsproces. Hele processen vil blive kørt på en enkelt batchopgave og have en akkumuleret kørselstid. Kørselstiden for varedisponeringen vil derfor stige. Derfor anbefales det, at du angiver denne parameter til en værdi, der er større end **0** (nul).
 
 ### <a name="time-fences"></a>Tidshorisonter
 

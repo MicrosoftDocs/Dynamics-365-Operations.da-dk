@@ -2,7 +2,7 @@
 title: Udskyde udførelse af XML-elementer i ER-formater
 description: Dette emne forklarer, hvordan du udskyder udførelsen af et XLM-element i et elektronisk rapporteringsformat (ER).
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894046"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944479"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Udskyde udførelse af XML-elementer i ER-formater
 
@@ -59,14 +59,14 @@ Hvis du endnu ikke har fuldført eksemplet i emnet [Udskyde udførelse af sekven
 
 | Indholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|
-| ER-datamodelkonfiguration    | [Model til at lære udskudte elementer.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER-modeltilknytningskonfiguration | [Tilknytning for at lære udskudte elementer.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-datamodelkonfiguration    | [Model til at lære udskudte elementer.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER-modeltilknytningskonfiguration | [Tilknytning for at lære udskudte elementer.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Før du går i gang, skal du også hente og gemme følgende konfiguration af ER-eksempelløsningen på den lokale computer.
 
 | Indholdsbeskrivelse     | Filnavn |
 |-------------------------|-----------|
-| Konfiguration af ER-format | [Format til at lære udskudte XML-elementer.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguration af ER-format | [Format til at lære udskudte XML-elementer.version.1.1.xml](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importere ER-eksempelkonfigurationerne
 
@@ -164,7 +164,7 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
 1. På siden **Formatdesigner** skal du vælge **Kør**.
 2. Hent den fil, som webbrowseren tilbyder, og åbn den til gennemsyn.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run.png)
+    ![Hentet fil i importeret format](./media/ER-DeferredXml-Run.png)
 
 Bemærk, at oversigtsnoden præsenterer summen af momsværdierne for de behandlede transaktioner. Da formatet er konfigureret til at bruge bindingen **model.Data.Summary.Total** til at returnere denne sum, beregnes summen ved at kalde aggregeringen **TotalSum** for datakilden **Grupperet** for typen *GroupBy* i modeltilknytningen. Hvis du vil beregne denne aggregering, gentages modeltilknytningen over alle transaktioner, der er valgt i datakilden **Filtreret**. Ved at sammenligne udførselstiderne for oversigtsnoden og den sidste postnode kan du fastlægge, at beregningen af summen tog 12 millisekunder (ms). Ved at sammenligne udførselstiderne for den første og sidste postnode kan du fastlægge, at oprettelse af alle postnoder har taget 9 ms. Der kræves derfor 21 ms i alt.
 
@@ -196,7 +196,7 @@ Hvis mængden af en transaktion er meget større end mængden i det aktuelle eks
 11. Vælg **Gem**, og vælg derefter **Kør**.
 12. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run1.png)
+    ![Genereret momsliste med løbende total](./media/ER-DeferredXml-Run1.png)
 
     Den sidste postnode indeholder den løbende total af momsværdier, der er beregnet for alle behandlede transaktioner ved brug af det genererede output som datakilde. Denne datakilde starter fra starten af rapporten og fortsætter gennem den seneste momstransaktion. Oversigtsnoden indeholder summen af momsværdierne for alle behandlede transaktioner, der er beregnet i modeltilknytningen ved hjælp af datakilden af typen *GroupBy*. Bemærk, at disse værdier er ens. Derfor kan den outputbaserede opsummering bruges i stedet for **GroupBy**. Ved at sammenligne udførselstiderne for den første postnode og oversigtsnoden kan du fastlægge, at oprettelse af alle postnoder og oversigt har taget 11 ms. Så vidt angår oprettelse af postnoder og oversigt over momsværdier, er det ændrede format ca. to gange hurtigere end det oprindelige format.
 
@@ -205,7 +205,7 @@ Hvis mængden af en transaktion er meget større end mængden i det aktuelle eks
 15. Vælg **Gem**, og vælg derefter **Kør**.
 16. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run2.png)
+    ![Genereret liste med momsværdier ved hjælp af redigeret formel](./media/ER-DeferredXml-Run2.png)
 
     Bemærk, at den løbende total for momsværdier i den sidste postnode nu svarer til summen i oversigtsnoden.
 
@@ -218,7 +218,7 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 3. Vælg **Gem**, og vælg derefter **Kør**.
 4. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run3.png)
+    ![Hentet fil med momsværdier for rapporthoved](./media/ER-DeferredXml-Run3.png)
 
     Bemærk, at summen af momsværdier i oversigtsnoden nu er lig med 0 (nul), fordi denne sum nu beregnes ud fra det genererede output. Når den første postnode genereres, indeholder det genererede output endnu ikke postnoder med transaktionsdetaljer. Du kan konfigurere dette format for at udskyde udførelsen af elementet **Rapport\\Meddelelse\\Oversigt**, indtil elementet **Rapport\\Meddelelse\\Post** er kørt for alle momstransaktionerne.
 
@@ -232,7 +232,7 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 3. Vælg **Gem**, og vælg derefter **Kør**.
 4. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run4.png)
+    ![Hentet fil for udskudt udførelse](./media/ER-DeferredXml-Run4.png)
 
     Elementet **Rapport\\Meddelelse\\Oversigt** køres nu kun, efter alle andre elementer, der er indlejret under det overordnede element **Rapport\\Meddelelse**, er kørt. Derfor køres det, efter at elementet **Rapport\\Meddelelse\\Post** er kørt for alle momstransaktioner i datakilden **model.Data.List**. Udførelsestiderne for de første og sidste postnoder og for overskrifts- og oversigtsnoder viser dette.
 

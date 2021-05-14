@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0c29d68b29475c2c7040d06e60f7624c49a42002
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890070"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951926"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimere BYOD-planlagte batchjob
 
@@ -89,6 +89,12 @@ BYOD-funktionen har følgende begrænsninger:
 **Problem:** Når der foretages en fuld push for en enhed, kan du se et stort sæt poster i BYOD, når du bruger en **select**-sætning. Men når du foretager en trinvis push, får du kun vist nogle få poster i BYOD. Det ser ud til, at den trinvise push slettede alle poster og kun tilføjede de ændrede poster i BYOD.
 
 **Løsning:** SQL-ændringssporingstabellerne er muligvis ikke i den forventede tilstand. I tilfælde af denne type anbefales det, at du slår sporing af ændringer fra for enheden og derefter aktiverer den igen. Du kan finde flere oplysninger under [Aktivere ændringssporing for enheder](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Midlertidige lagringstabeller ryddes ikke
+
+**Problem:** Når der bruges midlertidig lagring til projektet, ryddes de midlertidige lagringstabeller ikke korrekt. Dataene i tabellerne fortsætter med at stige, hvilket giver problemer med ydeevnen.
+
+**Løsning:** Historikken over syv dage vedligeholdes i de midlertidige lagringstabeller. Historikdata, der er ældre end syv dage, ryddes automatisk fra de midlertidige lagringstabeller af batchjobbet **Import/eksport af oprydning af midlertidig lagring**. Hvis jobbet går i stå, ryddes tabellerne ikke korrekt. Hvis du genstarter dette batchjob, fortsætter processen, så de midlertidige lagringstabeller ryddes automatisk.
 
 ## <a name="see-also"></a>Se også
 

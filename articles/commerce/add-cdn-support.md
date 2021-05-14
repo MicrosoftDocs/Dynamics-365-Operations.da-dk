@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797833"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936824"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tilføje understøttelse af et netværk, der leverer indhold (CDN)
 
@@ -47,7 +47,7 @@ Som tidligere nævnt understøtter det genererede værtsnavn eller slutpunkt kun
 
 Der kan bruges en CDN-tjeneste sammen med et Commerce-miljø. Her er to eksempler:
 
-- **Microsoft Azure Front Door Service** – Azure CDN-løsningen. Du kan finde flere oplysninger om Azure Front Door Service i [Dokumentation til Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/) (artiklen er muligvis på engelsk).
+- **Microsoft Azure Front Door Service** – Azure CDN-løsningen. Du kan finde flere oplysninger om Azure Front Door Service i [Dokumentation til Azure Front Door Service](/azure/frontdoor/) (artiklen er muligvis på engelsk).
 - **Akamai Dynamic Site Accelerator** – du kan finde flere oplysninger i [Dynamic Site Accelerator](https://www.akamai.com/us/en/products/performance/dynamic-site-accelerator.jsp).
 
 ## <a name="cdn-setup"></a>CDN-opsætning
@@ -62,7 +62,7 @@ CDN-konfigurationsprocessen består af følgende generelle trin:
 
 Alle CDN-tjenester kan bruges, men i eksemplet i dette emne bruges Azure Front Door Service. 
 
-Du kan finde oplysninger om, hvordan du konfigurerer Azure Front Door Service, i [Hurtigstart: Opret en Front Door til et globalt webprogram med høj tilgængelighed](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
+Du kan finde oplysninger om, hvordan du konfigurerer Azure Front Door Service, i [Hurtigstart: Opret en Front Door til et globalt webprogram med høj tilgængelighed](/azure/frontdoor/quickstart-create-front-door).
 
 ### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurere en back-end-pulje i Azure Front Door Service
 
@@ -115,7 +115,7 @@ I følgende illustration vises dialogboksen **HTTPS for brugerdefineret domæne*
 
 ![Dialogboksen HTTPS for brugerdefineret domæne](./media/Custom_Domain_HTTPS.png)
 
-Detaljerede oplysninger om, hvordan du føjer et brugerdefineret domæne Azure Front Door, finder du under [Føje et brugerdefineret domæne til Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
+Detaljerede oplysninger om, hvordan du føjer et brugerdefineret domæne Azure Front Door, finder du under [Føje et brugerdefineret domæne til Front Door](/azure/frontdoor/front-door-custom-domain).
 
 Dit CDN bør nu være korrekt konfigureret, så det kan bruges sammen med Commerce-webstedet.
 

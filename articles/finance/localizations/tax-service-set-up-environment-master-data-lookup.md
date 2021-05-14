@@ -2,7 +2,7 @@
 title: Konfigurere et miljø til opslag efter masterdata
 description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere dit miljø til at bruge funktionen til opslag af masterdata for momsberegning.
 author: kai-cloud
-ms.date: 03/31/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,43 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eda093a75898bace2f3c7968933b83ccafa7fabb
-ms.sourcegitcommit: 66095f1b7e0fd2756aa29fd7deb9ce5392b7e0b2
+ms.openlocfilehash: 9f9b385df1db60b27698d90281c43fabb574af49
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "5869052"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924148"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>Konfigurere et miljø til opslag efter masterdata
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 Dette emne indeholder en forklaring på, hvordan du kan konfigurere dit miljø til at bruge funktionen til opslag af masterdata for momsberegning.
 
 1. Konfigurer integration af Power Platform i Lifecycle Services (LCS). Du kan finde flere oplysninger under [Microsoft Power Platform integration - Oversigt over tilføjelsesprogrammer](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Konfigurer Dynamics 365 Finance og Microsoft Dataverse. Du kan finde flere oplysninger under [Hente løsningen](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) og [Godkendelse og autorisation](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Importér den *forudsættende løsning med den virtuelle enhed for momstjeneste* fra den [virtuelle enhed for momstjenesten](https://go.microsoft.com/fwlink/?linkid=2158160).
+3. Konfigurer følgende enheder. Du kan finde flere oplysninger i [Aktivering af virtuelle enheder](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
+      - CompanyInfoEntity
+      - CurrencyEntity
+      - CustCustomerV3Entity
+      - DeliveryTermsEntity
+      - EcoResProductCategoryEntity
+      - EcoResReleasedProductV2Entity
+      - LogisticsAddressCityEntity
+      - LogisticsAddressCountryRegionTranslationEntity
+      - LogisticsAddressStateEntity
+      - PurchProcurementChargeCDSEntity
+      - SalesChargeCDSEntity
+      - TaxGroupEntity
+      - TaxItemGroupHeadingEntity
+      - VendVendorV2Entity
 4. Konfigurere Dynamics 365 Regulatory Configuration Service (RCS). 
 5. Opret en serviceanmodning til Microsoft for at aktivere flighting for følgende funktioner:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
 
-6. I arbejdsområdet **Funktionsstyring** i Finance skal du aktivere følgende funktioner:
+6. Gå til arbejdsområdet **Funktionsstyring**, og aktivér følgende funktioner:
 
       - (Forhåndsversion) Understøttelse af Dataverse-datakilder for elektronisk rapportering
       - (Prøveversion) Understøttelse af Dataverse-datakilder i momstjenesten

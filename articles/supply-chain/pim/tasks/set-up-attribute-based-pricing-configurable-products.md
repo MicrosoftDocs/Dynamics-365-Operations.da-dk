@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f54d0ea87d8ce5ffdf5600995004e558ddd86fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c30c520e7265c2676937f5191844f6789c364e6
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833251"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921235"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Konfigurere attributbaseret prissætning for konfigurerbare produkter
 
@@ -28,17 +28,18 @@ I dette emne beskrives, hvordan du opretter attributbaserede priser. Som en foru
 
 
 ## <a name="create-a-new-price-model"></a>Opret en ny prismodel
-1. Vælg **Definition af produktvariantmodel** på startsiden.
-2. Vælg **Produktkonfigurationsmodeller** i sektionen **Links**.
-3. På listen skal du vælge linjen **Højttaler af topkvalitet**, men vælg ikke linket for navnet.
-4. Vælg **Model** i handlingsruden.
-5. Vælg **Prismodeller**.
-6. Vælg **Ny**.
-7. Angiv en værdi i feltet **Navn på prismodel**. Brug et navn, der gør det nemt at identificere modellen.  
-8. Indtast en værdi i feltet **Beskrivelse**.
-9. Vælg **Gem**.
+
+1. Gå til **Administration af produktoplysninger \> Produkter \> Produktkonfigurationsmodeller**.
+1. På listen skal du vælge linjen **Højttaler af topkvalitet**, men vælg ikke linket for navnet.
+1. Vælg **Model** i handlingsruden.
+1. Vælg **Prismodeller**.
+1. Vælg **Ny**.
+1. Angiv en værdi i feltet **Navn på prismodel**. Brug et navn, der gør det nemt at identificere modellen.  
+1. Indtast en værdi i feltet **Beskrivelse**.
+1. Vælg **Gem**.
 
 ## <a name="add-price-elements"></a>Tilføj priselementer
+
 1. Vælg **Rediger**. Hver komponent i en produktmodel kan have et basispriselement og et vilkårligt antal prisudtryksregler. Du kan også tilføje priser i forskellige valutaer.  
 2. Indtast en værdi i feltet **Basisprisudtryk**. Skriv for eksempel 100. En basisprisudtryk kan være en numerisk værdi, eller det kan bestå af en matematisk beregning, der omfatter en eller flere attributter.  
 3. Vælg **Tilføj**.
