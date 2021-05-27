@@ -365,9 +365,7 @@
                   href: asset-management/objects/object-specification-overview.md
             - name: Konfigurere vedligeholdelsesanmodninger
               items:
-                - name: Vedligeholdelsesanmodninger
-                  href: asset-management/setup-for-maintenance-requests/requests.md
-                - name: Levetidstilstande for vedligeholdelsesanmodninger
+                - name: Livscyklustilstande for vedligeholdelsesanmodning
                   href: asset-management/setup-for-maintenance-requests/request-stages.md
                 - name: Vedligeholdelsesanmodningstyper
                   href: asset-management/setup-for-maintenance-requests/request-types.md
@@ -2357,7 +2355,7 @@
                       href: production-control/register-material-consumption-hand-held-device.md
                     - name: Styre forbrug af råmaterialer ved hjælp af rydningsprincipper
                       href: production-control/flushing-principles.md
-                    - name: Angive udlagringslokationen for produktionen for færdigvarer
+                    - name: Angive udlagringsadressen for produktionen for færdigvarer
                       href: production-control/production-output-location.md
                     - name: Færdigrapportere styklister
                       href: production-control/report-boms-as-finished.md
@@ -3343,8 +3341,94 @@
               href: inventory/extend-on-hand-entities.md
         - name: Fejlfinding
           items:
+            - name: Omkostningsstyring
+              items:
+                - name: Manglende feltindstillinger ved kopiering af varemodelgrupper til en anden juridisk enhed
+                  href: troubleshooting/costing/copying-item-model-groups.md
+                - name: Rapporten "Indirekte omkostninger i proces" indeholder slettede produktionsordrer
+                  href: troubleshooting/costing/indirect-costs-in-pr.md
+                - name: Indkøbsperiodisering er bogført med beløb nul for produktkvittering med nul værdi
+                  href: troubleshooting/costing/posting-to-purchase.md
+                - name: Fysisk modtagne indkøbsordrer vises ikke i lagerlukningsrapporten
+                  href: troubleshooting/costing/purchase-orders-rece.md
+                - name: Der er ingen Fra-dato under fanen Aktive priser på siden Varepris
+                  href: troubleshooting/costing/there-is-no-from-dat.md
+            - name: Lagerstyring
+              items:
+                - name: Flere lagertransaktioner for batchnumre uden "Ved fysisk opdatering"
+                  href: troubleshooting/inventory/multiple-inventory-t.md
+                - name: 'Når en rapport er tilbageført, oprettes der en uventet åben transaktion'
+                  href: troubleshooting/inventory/reverse-report-as-fi.md
+                - name: 'Det var ikke muligt at få vist nye notater, der er vedhæftet en kladde i pluklisterapporten'
+                  href: troubleshooting/inventory/unable-to-print-the.md
+                - name: 'Antallet i en igangsat karantæneordre opdateres ikke, når ordren opdeles'
+                  href: troubleshooting/inventory/quantity-on-a-start.md
+                - name: 'Feltet "Sidst testede dato" opdateres ikke, når der oprettes flere kvalitetsordrer'
+                  href: troubleshooting/inventory/the-field-last-test.md
+                - name: Ved opdeling af et fangstvægtantal anvendes minimum i stedet for nominelt antal
+                  href: troubleshooting/inventory/while-splitting-the.md
+            - name: Varedisponering
+              items:
+                - name: Direkte afledte autoriserede ordrer behandles af en arbejdsgang til gennemsyn
+                  href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Ved behovsplanlægningen oprettes der ordreforslag til fantomprodukter
+                  href: troubleshooting/planning/planned-orders-are-g.md
+                - name: 'Der oprettes indkøbsordreforslag, når et indkøb findes inden for negative dage'
+                  href: troubleshooting/planning/planning-optimisatio.md
+                - name: Det var ikke muligt at uploade kostprisen i poster med behovsprognoser
+                  href: troubleshooting/planning/unable-to-upload-the.md
+                - name: Du kan ikke fjerne behovsprognosedimensionen for lagersted fra budgetlinjer
+                  href: troubleshooting/planning/warehouse-removal-fr.md
+            - name: Indkøb
+              items:
+                - name: 'Du kan ikke fakturere en salgsordre, der kan faktureres for en kunde, i firmaet VEL'
+                  href: troubleshooting/procurement/not-able-to-invoice-.md
+                - name: 'Du kan ikke føje en linje til en indkøbsrekvisition, når du har anmodet om en ændring'
+                  href: troubleshooting/procurement/purchase-requisition.md
+            - name: Administration af produktoplysninger
+              items:
+                - name: Du kan ikke anvende en skabelon til at oprette et frigivet produkt
+                  href: troubleshooting/products/apply-template-in-re.md
+                - name: Du kan ikke importere en vare ved hjælp af enheden Frigivne produkter V2
+                  href: troubleshooting/products/cannot-import-with-r.md
+                - name: Indkøbsordrer indeholder ikke oversat produkttekst
+                  href: troubleshooting/products/when-the-customer-ad.md
+            - name: Produktionsstyring
+              items:
+                - name: Indstillinger af rydningsprincippet på styklistelinjer overholdes ikke
+                  href: troubleshooting/production/flushing-principle-n.md
+                - name: 'Når der vælges et nyt parti-id, fjernes batchnummeret'
+                  href: troubleshooting/production/when-customer-is-try.md
+                - name: 'Forsinket valg overholdes ikke, når produktionsordrer nulstilles via batchjob'
+                  href: troubleshooting/production/late-selection-is-no.md
+                - name: 'Brugere kan fjerne plukkede materialelinjer for produkter, der er blevet rapporteret som afsluttet'
+                  href: troubleshooting/production/raw-material-lines-a.md
+                - name: Fejl ved bogføring af en færdigmeldingskladde
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: Lagerstedet i pluklistekladden opdateres ikke på en styklistelinje
+                  href: troubleshooting/production/the-warehouse-in-pic.md
+            - name: Rabatstyring
+              items:
+                - name: Akkumulering af debitorrabatter ved hjælp af varerabatgrupper mislykkes
+                  href: troubleshooting/rebates/cumulating-customer-.md
+            - name: Salg og marketing
+              items:
+                - name: 'Systemadministratorer kan ikke rydde tilbageholdte ordrer, fordi de ikke er godkendt'
+                  href: troubleshooting/sales/system-administrator.md
+            - name: Transportstyring
+              items:
+                - name: Du kan kun tilføje hovedkontoen som kreditkonto af afstemningsmæssige årsager
+                  href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerstedsstyring
               items:
+                - name: 'Der opstår en fejl, når adressen vælges under registrering af pluklisten'
+                  href: troubleshooting/warehousing/error-cannot-update.md
+                - name: Pakkestation viser ikke produktnoter
+                  href: troubleshooting/warehousing/packing-station-not-.md
+                - name: 'Adresseprofil tillader negativt lager, men negativ lagerbeholdning er tilladt'
+                  href: troubleshooting/warehousing/location-profile-set.md
+                - name: Der udskrives kun én label for flere arbejdshoveder på en enkelt kvittering
+                  href: troubleshooting/warehousing/when-receipting-prod.md
                 - name: Du kan ikke bekræfte en forsendelse på grund af problemer med kalenderen
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Du kan ikke bekræfte en forsendelse på grund af ufuldstændigt eller manglende arbejde
