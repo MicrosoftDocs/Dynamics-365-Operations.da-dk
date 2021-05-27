@@ -5,7 +5,9 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
-        - name: 19. april 2020
+        - name: 3. maj 2021
+          href: hr-whats-new-2021-05-03.md
+        - name: 19. april 2021
           href: hr-whats-new-2021-04-19.md
         - name: 5. april 2021
           href: hr-whats-new-2021-04-05.md
@@ -157,7 +159,7 @@
               items:
                 - name: Oversigt over dataimport- og -eksportjob
                   href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde
+                - name: Bedste praksis for import af bilag ved hjælp af enheden Finanskladde
                   href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Udvikling for dataenheder
               items:
