@@ -380,8 +380,6 @@
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Forbedringer af likviditetsstyring
                       href: cash-mgmt.md
-                    - name: Lagersøgning i POS
-                      href: product-variants-POS.md
                     - name: Afbryde og genoptage transaktioner i POS
                       href: pos-suspend-recall-transactions.md
                     - name: Offline POS-funktionalitet
@@ -714,6 +712,8 @@
                       href: pos-outbound-inventory-operation.md
                     - name: Beregne lagertilgængelighed for detailkanaler
                       href: calculated-inventory-retail-channels.md
+                    - name: Lageropslagshandling i POS
+                      href: pos-inventory-lookup-operation.md
                 - name: Indkøbsordrer
                   items:
                     - name: Oversigt over indkøbsordrer
@@ -2448,10 +2448,34 @@
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
                     - name: Oprette et POS-udvidelsespakkeprojekt
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Oprette en appx-fil til udvidelse af Modern POS
+                    - name: Oprette en .appx-fil til udvidelsespakken Modern POS
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Fejlfinde en POS-udvidelse
+                    - name: Fejlfinde POS-udvidelser
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: Udvidelsesemballage og -implementering
+                      items:
+                        - name: Oprette en udvidelsespakke til Modern POS
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: Kodesignering af en udvidelsespakke til Modern POS (MSIX)
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: Oprette en udvidelsespakke til Cloud POS
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Overflytte en POS-udvidelse til den uafhængige pakningsmodel
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Udviklingsvejledning til POS-udvidelse
+                      items:
+                        - name: Grundlæggende oplysninger om POS-udvidelse
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: Oprette en brugerdefineret visning i POS
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: Bruge POS-kontrolelementer i udvidelser
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: Opgaver
+                          items:
+                            - name: Bruge Knockout.js i POS-udvidelser
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: 'Forbruge brugerdefinerede, konsolløse API''er til Commerce'
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Hardware Station-udvidelse
               items:
                 - name: Hardware Station og udvidelse
