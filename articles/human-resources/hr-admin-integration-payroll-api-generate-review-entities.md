@@ -2,7 +2,6 @@
 title: Generere og gennemse lønenheder
 description: I dette emne beskrives, hvordan du genererer og gennemser lønenheder.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: ''
@@ -15,24 +14,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6e043498d4e36e38575a16c6475a5edfef51fc6
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 4adab0225190b4dea5213dccf297eaab33efc863
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881951"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021314"
 ---
-# <a name="generate-payroll-entities"></a><span data-ttu-id="ccb27-103">Generere lønenheder</span><span class="sxs-lookup"><span data-stu-id="ccb27-103">Generate payroll entities</span></span>
+# <a name="generate-payroll-entities"></a><span data-ttu-id="e098a-103">Generere lønenheder</span><span class="sxs-lookup"><span data-stu-id="e098a-103">Generate payroll entities</span></span>
 
-<span data-ttu-id="ccb27-104">Brug denne OData-funktion til at generere de enheder, der er nødvendige for lønintegration.</span><span class="sxs-lookup"><span data-stu-id="ccb27-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="ccb27-105">Hvis der foretages ændringer af disse enheder i Human Resources, f.eks. tilføjelse af brugerdefinerede felter, kan denne funktion kaldes igen for at opdatere metadata for hver enhed.</span><span class="sxs-lookup"><span data-stu-id="ccb27-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="ccb27-106">Svaret indeholder et handlings-id, som du kan overvåge, så du ved, hvornår oprettelsesprocessen er fuldført.</span><span class="sxs-lookup"><span data-stu-id="ccb27-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
+<span data-ttu-id="e098a-104">Brug denne OData-funktion til at generere de enheder, der er nødvendige for lønintegration.</span><span class="sxs-lookup"><span data-stu-id="e098a-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="e098a-105">Hvis der foretages ændringer af disse enheder i Human Resources, f.eks. tilføjelse af brugerdefinerede felter, kan denne funktion kaldes igen for at opdatere metadata for hver enhed.</span><span class="sxs-lookup"><span data-stu-id="e098a-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="e098a-106">Svaret indeholder et handlings-id, som du kan overvåge, så du ved, hvornår oprettelsesprocessen er fuldført.</span><span class="sxs-lookup"><span data-stu-id="e098a-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
 
-<span data-ttu-id="ccb27-107">**Anmodning**</span><span class="sxs-lookup"><span data-stu-id="ccb27-107">**Request**</span></span>
+<span data-ttu-id="e098a-107">**Anmodning**</span><span class="sxs-lookup"><span data-stu-id="e098a-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
-<span data-ttu-id="ccb27-108">**brødtekst**</span><span class="sxs-lookup"><span data-stu-id="ccb27-108">**body**</span></span>
+<span data-ttu-id="e098a-108">**brødtekst**</span><span class="sxs-lookup"><span data-stu-id="e098a-108">**body**</span></span>
 
 ```json
 {
@@ -40,7 +39,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-<span data-ttu-id="ccb27-109">**Svar**</span><span class="sxs-lookup"><span data-stu-id="ccb27-109">**Response**</span></span>
+<span data-ttu-id="e098a-109">**Svar**</span><span class="sxs-lookup"><span data-stu-id="e098a-109">**Response**</span></span>
 
 ```json
 {
@@ -48,17 +47,17 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-## <a name="review-payroll-entities"></a><span data-ttu-id="ccb27-110">Gennemse lønenheder</span><span class="sxs-lookup"><span data-stu-id="ccb27-110">Review payroll entities</span></span>
+## <a name="review-payroll-entities"></a><span data-ttu-id="e098a-110">Gennemse lønenheder</span><span class="sxs-lookup"><span data-stu-id="e098a-110">Review payroll entities</span></span>
 
-<span data-ttu-id="ccb27-111">Brug denne API til at hente en liste over de enheder, der er oprettet og klar til brug.</span><span class="sxs-lookup"><span data-stu-id="ccb27-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
+<span data-ttu-id="e098a-111">Brug denne API til at hente en liste over de enheder, der er oprettet og klar til brug.</span><span class="sxs-lookup"><span data-stu-id="e098a-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
 
-<span data-ttu-id="ccb27-112">**Anmodning**</span><span class="sxs-lookup"><span data-stu-id="ccb27-112">**Request**</span></span>
+<span data-ttu-id="e098a-112">**Anmodning**</span><span class="sxs-lookup"><span data-stu-id="e098a-112">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
 
-<span data-ttu-id="ccb27-113">**Svar**</span><span class="sxs-lookup"><span data-stu-id="ccb27-113">**Response**</span></span>
+<span data-ttu-id="e098a-113">**Svar**</span><span class="sxs-lookup"><span data-stu-id="e098a-113">**Response**</span></span>
 
 ```json
 {

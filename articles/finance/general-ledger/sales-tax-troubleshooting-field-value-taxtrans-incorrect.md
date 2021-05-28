@@ -2,11 +2,9 @@
 title: Forkert feltværdi i TaxTrans
 description: Dette emne indeholder oplysninger om fejlfinding af forkerte feltværdier i TaxTrans.
 author: bijian
-manager: beya
 ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: kfend
@@ -15,37 +13,37 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 97f9bb24d32180f2fccb69c5a13e2aa0349c1ee4
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: 488ff54f1dd99208db940024a2fe8b2d25861f44
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947612"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020157"
 ---
-# <a name="incorrect-field-value-in-taxtrans"></a><span data-ttu-id="cabf7-103">Forkert feltværdi i TaxTrans</span><span class="sxs-lookup"><span data-stu-id="cabf7-103">Incorrect field value in TaxTrans</span></span>
+# <a name="incorrect-field-value-in-taxtrans"></a><span data-ttu-id="94fc5-103">Forkert feltværdi i TaxTrans</span><span class="sxs-lookup"><span data-stu-id="94fc5-103">Incorrect field value in TaxTrans</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cabf7-104">Hvis en feltværdi i **TaxTrans** ikke er korrekt, kan du bruge oplysningerne i dette emne til at løse problemet.</span><span class="sxs-lookup"><span data-stu-id="cabf7-104">If a field value in **TaxTrans** is incorrect, use the information in this topic to try to resolve the issue.</span></span>
+<span data-ttu-id="94fc5-104">Hvis en feltværdi i **TaxTrans** ikke er korrekt, kan du bruge oplysningerne i dette emne til at løse problemet.</span><span class="sxs-lookup"><span data-stu-id="94fc5-104">If a field value in **TaxTrans** is incorrect, use the information in this topic to try to resolve the issue.</span></span>
 
-## <a name="overview-of-values"></a><span data-ttu-id="cabf7-105">Oversigt over værdier</span><span class="sxs-lookup"><span data-stu-id="cabf7-105">Overview of values</span></span>
-<span data-ttu-id="cabf7-106">Følgende liste viser, hvordan **TaxTrans**, **TaxUncommitted** og **TmpTaxWorkTrans** er tilsvarende datasæt, men fungerer forskelligt.</span><span class="sxs-lookup"><span data-stu-id="cabf7-106">The following list shows how **TaxTrans**, **TaxUncommitted**, and **TmpTaxWorkTrans** are similar data sets, but in work differently.</span></span>
+## <a name="overview-of-values"></a><span data-ttu-id="94fc5-105">Oversigt over værdier</span><span class="sxs-lookup"><span data-stu-id="94fc5-105">Overview of values</span></span>
+<span data-ttu-id="94fc5-106">Følgende liste viser, hvordan **TaxTrans**, **TaxUncommitted** og **TmpTaxWorkTrans** er tilsvarende datasæt, men fungerer forskelligt.</span><span class="sxs-lookup"><span data-stu-id="94fc5-106">The following list shows how **TaxTrans**, **TaxUncommitted**, and **TmpTaxWorkTrans** are similar data sets, but in work differently.</span></span>
 
-  - <span data-ttu-id="cabf7-107">**TaxTrans** er det endelige resultat af den bogførte momspostering i databasen.</span><span class="sxs-lookup"><span data-stu-id="cabf7-107">**TaxTrans** is the final posted tax transaction result persisted in the database.</span></span>
-  - <span data-ttu-id="cabf7-108">**TaxUncommitted** er det midlertidige beregnede momsresultat, der bevares i databasen (hvis det er relevant), og som bruges senere i bogføringen.</span><span class="sxs-lookup"><span data-stu-id="cabf7-108">**TaxUncommitted** is the intermediate calculated tax result persisted in the database (if applicable), which will be used later in posting.</span></span>
-  - <span data-ttu-id="cabf7-109">**TmpTaxWorkTrans** er det midlertidige beregnede momsresultat i tabellen i hukommelsen (tabeltype = InMemory).</span><span class="sxs-lookup"><span data-stu-id="cabf7-109">**TmpTaxWorkTrans** is the temporary calculated tax result in the in-memory table (Table Type = InMemory).</span></span>
+  - <span data-ttu-id="94fc5-107">**TaxTrans** er det endelige resultat af den bogførte momspostering i databasen.</span><span class="sxs-lookup"><span data-stu-id="94fc5-107">**TaxTrans** is the final posted tax transaction result persisted in the database.</span></span>
+  - <span data-ttu-id="94fc5-108">**TaxUncommitted** er det midlertidige beregnede momsresultat, der bevares i databasen (hvis det er relevant), og som bruges senere i bogføringen.</span><span class="sxs-lookup"><span data-stu-id="94fc5-108">**TaxUncommitted** is the intermediate calculated tax result persisted in the database (if applicable), which will be used later in posting.</span></span>
+  - <span data-ttu-id="94fc5-109">**TmpTaxWorkTrans** er det midlertidige beregnede momsresultat i tabellen i hukommelsen (tabeltype = InMemory).</span><span class="sxs-lookup"><span data-stu-id="94fc5-109">**TmpTaxWorkTrans** is the temporary calculated tax result in the in-memory table (Table Type = InMemory).</span></span>
 
-<span data-ttu-id="cabf7-110">Hvis du finder rodårsagen til en forkert **TaxTrans**-kolonne, har du også fundet rodårsagen til en forkert kolonne for **TaxUncommitted** eller **TmpTaxWorkTrans**.</span><span class="sxs-lookup"><span data-stu-id="cabf7-110">If you find the root cause of an incorrect **TaxTrans** column, you've also found the root cause of an incorrect **TaxUncommitted** or **TmpTaxWorkTrans** column.</span></span> <span data-ttu-id="cabf7-111">Det skyldes, at de tre kolonner kopieres mellem hinanden.</span><span class="sxs-lookup"><span data-stu-id="cabf7-111">This is because the three columns are copied from each other.</span></span>
+<span data-ttu-id="94fc5-110">Hvis du finder rodårsagen til en forkert **TaxTrans**-kolonne, har du også fundet rodårsagen til en forkert kolonne for **TaxUncommitted** eller **TmpTaxWorkTrans**.</span><span class="sxs-lookup"><span data-stu-id="94fc5-110">If you find the root cause of an incorrect **TaxTrans** column, you've also found the root cause of an incorrect **TaxUncommitted** or **TmpTaxWorkTrans** column.</span></span> <span data-ttu-id="94fc5-111">Det skyldes, at de tre kolonner kopieres mellem hinanden.</span><span class="sxs-lookup"><span data-stu-id="94fc5-111">This is because the three columns are copied from each other.</span></span>
 
-<span data-ttu-id="cabf7-112">Ved momsberegning genereres **TmpTaxWorkTrans** typisk, og derefter genereres **TaxUncommitted**, hvis det er relevant.</span><span class="sxs-lookup"><span data-stu-id="cabf7-112">Typically, during tax calculation, **TmpTaxWorkTrans** is generated, and then, if applicable, **TaxUncommitted** is generated.</span></span> <span data-ttu-id="cabf7-113">Ved momsbogføring genereres **TaxTrans**.</span><span class="sxs-lookup"><span data-stu-id="cabf7-113">During tax posting, **TaxTrans** is generated.</span></span>
+<span data-ttu-id="94fc5-112">Ved momsberegning genereres **TmpTaxWorkTrans** typisk, og derefter genereres **TaxUncommitted**, hvis det er relevant.</span><span class="sxs-lookup"><span data-stu-id="94fc5-112">Typically, during tax calculation, **TmpTaxWorkTrans** is generated, and then, if applicable, **TaxUncommitted** is generated.</span></span> <span data-ttu-id="94fc5-113">Ved momsbogføring genereres **TaxTrans**.</span><span class="sxs-lookup"><span data-stu-id="94fc5-113">During tax posting, **TaxTrans** is generated.</span></span>
 
 
-## <a name="add-breakpoints"></a><span data-ttu-id="cabf7-114">Tilføje pausepunkter</span><span class="sxs-lookup"><span data-stu-id="cabf7-114">Add breakpoints</span></span>
-<span data-ttu-id="cabf7-115">Hvis du vil tilføje pausepunkter, skal du benytte følgende fremgangsmdåe:</span><span class="sxs-lookup"><span data-stu-id="cabf7-115">To add breakpoints, complete the following steps:</span></span> 
+## <a name="add-breakpoints"></a><span data-ttu-id="94fc5-114">Tilføje pausepunkter</span><span class="sxs-lookup"><span data-stu-id="94fc5-114">Add breakpoints</span></span>
+<span data-ttu-id="94fc5-115">Hvis du vil tilføje pausepunkter, skal du benytte følgende fremgangsmdåe:</span><span class="sxs-lookup"><span data-stu-id="94fc5-115">To add breakpoints, complete the following steps:</span></span> 
 
-1. <span data-ttu-id="cabf7-116">Tilføj udvidelser og pausepunkter i *indsert()* og *update()* i udvidelserne som vist nedenfor.</span><span class="sxs-lookup"><span data-stu-id="cabf7-116">Add extensions and breakpoints in *insert()* and *update()* in the extensions as shown below.</span></span>
+1. <span data-ttu-id="94fc5-116">Tilføj udvidelser og pausepunkter i *indsert()* og *update()* i udvidelserne som vist nedenfor.</span><span class="sxs-lookup"><span data-stu-id="94fc5-116">Add extensions and breakpoints in *insert()* and *update()* in the extensions as shown below.</span></span>
 
-     - <span data-ttu-id="cabf7-117">**TaxTrans**</span><span class="sxs-lookup"><span data-stu-id="cabf7-117">**TaxTrans**</span></span>
+     - <span data-ttu-id="94fc5-117">**TaxTrans**</span><span class="sxs-lookup"><span data-stu-id="94fc5-117">**TaxTrans**</span></span>
 
         ```x++
         [ExtensionOf(tableStr(TaxTrans))]
@@ -64,7 +62,7 @@ ms.locfileid: "5947612"
         }
         ```
 
-     - <span data-ttu-id="cabf7-118">**TaxUncommitted**</span><span class="sxs-lookup"><span data-stu-id="cabf7-118">**TaxUncommitted**</span></span>
+     - <span data-ttu-id="94fc5-118">**TaxUncommitted**</span><span class="sxs-lookup"><span data-stu-id="94fc5-118">**TaxUncommitted**</span></span>
 
         ```x++
         [ExtensionOf(tableStr(TaxUncommitted))]
@@ -83,7 +81,7 @@ ms.locfileid: "5947612"
         }
         ```
 
-     - <span data-ttu-id="cabf7-119">**TmpTaxWorkTrans**</span><span class="sxs-lookup"><span data-stu-id="cabf7-119">**TmpTaxWorkTrans**</span></span>
+     - <span data-ttu-id="94fc5-119">**TmpTaxWorkTrans**</span><span class="sxs-lookup"><span data-stu-id="94fc5-119">**TmpTaxWorkTrans**</span></span>
 
         ```x++
         [ExtensionOf(tableStr(TmpTaxWorkTrans))]
@@ -103,21 +101,21 @@ ms.locfileid: "5947612"
         
         ```
 
-2. <span data-ttu-id="cabf7-120">Du kan også tilføje pausepunkter direkte, når **TaxUncommitted** ikke er medtaget.</span><span class="sxs-lookup"><span data-stu-id="cabf7-120">Alternatively, you can add breakpoints directly when **TaxUncommitted** is not included.</span></span>
+2. <span data-ttu-id="94fc5-120">Du kan også tilføje pausepunkter direkte, når **TaxUncommitted** ikke er medtaget.</span><span class="sxs-lookup"><span data-stu-id="94fc5-120">Alternatively, you can add breakpoints directly when **TaxUncommitted** is not included.</span></span>
 
-     - <span data-ttu-id="cabf7-121">*TaxTrans.insert()*, *TaxTrans.update()*</span><span class="sxs-lookup"><span data-stu-id="cabf7-121">*TaxTrans.insert()*, *TaxTrans.update()*</span></span>
-     - <span data-ttu-id="cabf7-122">*TmpTaxWorkTrans.insert()*, *TmpTaxWorkTrans.update()*</span><span class="sxs-lookup"><span data-stu-id="cabf7-122">*TmpTaxWorkTrans.insert()*, *TmpTaxWorkTrans.update()*</span></span>
+     - <span data-ttu-id="94fc5-121">*TaxTrans.insert()*, *TaxTrans.update()*</span><span class="sxs-lookup"><span data-stu-id="94fc5-121">*TaxTrans.insert()*, *TaxTrans.update()*</span></span>
+     - <span data-ttu-id="94fc5-122">*TmpTaxWorkTrans.insert()*, *TmpTaxWorkTrans.update()*</span><span class="sxs-lookup"><span data-stu-id="94fc5-122">*TmpTaxWorkTrans.insert()*, *TmpTaxWorkTrans.update()*</span></span>
 
-## <a name="reproduce-and-debug"></a><span data-ttu-id="cabf7-123">Genskabe og løse fejl</span><span class="sxs-lookup"><span data-stu-id="cabf7-123">Reproduce and debug</span></span>
+## <a name="reproduce-and-debug"></a><span data-ttu-id="94fc5-123">Genskabe og løse fejl</span><span class="sxs-lookup"><span data-stu-id="94fc5-123">Reproduce and debug</span></span>
 
-<span data-ttu-id="cabf7-124">Når pausepunkterne er angivet, vises alle ændringer af dataene under fejlfinding.</span><span class="sxs-lookup"><span data-stu-id="cabf7-124">After the breakpoints are set, every data persistency change is visible during debugging.</span></span> <span data-ttu-id="cabf7-125">Hvis du vil finde rodårsagen til en forkert kolonne for **TaxTrans**, **TaxUncommitted** eller **TmpTaxWorkTrans**, skal du gennemse og notere følgende punkter ned:</span><span class="sxs-lookup"><span data-stu-id="cabf7-125">To find the root cause of an incorrect column of **TaxTrans**, **TaxUncommitted**, or **TmpTaxWorkTrans**, review and note the following items:</span></span>
+<span data-ttu-id="94fc5-124">Når pausepunkterne er angivet, vises alle ændringer af dataene under fejlfinding.</span><span class="sxs-lookup"><span data-stu-id="94fc5-124">After the breakpoints are set, every data persistency change is visible during debugging.</span></span> <span data-ttu-id="94fc5-125">Hvis du vil finde rodårsagen til en forkert kolonne for **TaxTrans**, **TaxUncommitted** eller **TmpTaxWorkTrans**, skal du gennemse og notere følgende punkter ned:</span><span class="sxs-lookup"><span data-stu-id="94fc5-125">To find the root cause of an incorrect column of **TaxTrans**, **TaxUncommitted**, or **TmpTaxWorkTrans**, review and note the following items:</span></span>
 
-- <span data-ttu-id="cabf7-126">Det sidste pausepunkt, hvor kolonnen var korrekt.</span><span class="sxs-lookup"><span data-stu-id="cabf7-126">The last breakpoint where the column is correct.</span></span>
-- <span data-ttu-id="cabf7-127">Det første pausepunkt, hvor kolonnen var korrekt.</span><span class="sxs-lookup"><span data-stu-id="cabf7-127">The first breakpoint where the column is incorrect.</span></span>
-- <span data-ttu-id="cabf7-128">Hvad der er sket mellem disse to punkter.</span><span class="sxs-lookup"><span data-stu-id="cabf7-128">What happens in between those two points.</span></span>
+- <span data-ttu-id="94fc5-126">Det sidste pausepunkt, hvor kolonnen var korrekt.</span><span class="sxs-lookup"><span data-stu-id="94fc5-126">The last breakpoint where the column is correct.</span></span>
+- <span data-ttu-id="94fc5-127">Det første pausepunkt, hvor kolonnen var korrekt.</span><span class="sxs-lookup"><span data-stu-id="94fc5-127">The first breakpoint where the column is incorrect.</span></span>
+- <span data-ttu-id="94fc5-128">Hvad der er sket mellem disse to punkter.</span><span class="sxs-lookup"><span data-stu-id="94fc5-128">What happens in between those two points.</span></span>
 
-## <a name="determine-whether-customization-exists"></a><span data-ttu-id="cabf7-129">Afgøre, om der findes tilpasninger</span><span class="sxs-lookup"><span data-stu-id="cabf7-129">Determine whether customization exists</span></span>
-<span data-ttu-id="cabf7-130">Hvis du har udført trinnene i de forrige afsnit, men ikke har kunnet løse problemet, skal du afgøre, om der er foretaget tilpasninger.</span><span class="sxs-lookup"><span data-stu-id="cabf7-130">If you've completed the steps in the previous sections but have not been able to resolve the issue, determine whether customization exists.</span></span> <span data-ttu-id="cabf7-131">Hvis der ikke er foretaget tilpasninger, skal du kontakte Microsoft Support for at få hjælp.</span><span class="sxs-lookup"><span data-stu-id="cabf7-131">If no customization exists, contact Microsoft Support for assistance.</span></span>
+## <a name="determine-whether-customization-exists"></a><span data-ttu-id="94fc5-129">Afgøre, om der findes tilpasninger</span><span class="sxs-lookup"><span data-stu-id="94fc5-129">Determine whether customization exists</span></span>
+<span data-ttu-id="94fc5-130">Hvis du har udført trinnene i de forrige afsnit, men ikke har kunnet løse problemet, skal du afgøre, om der er foretaget tilpasninger.</span><span class="sxs-lookup"><span data-stu-id="94fc5-130">If you've completed the steps in the previous sections but have not been able to resolve the issue, determine whether customization exists.</span></span> <span data-ttu-id="94fc5-131">Hvis der ikke er foretaget tilpasninger, skal du kontakte Microsoft Support for at få hjælp.</span><span class="sxs-lookup"><span data-stu-id="94fc5-131">If no customization exists, contact Microsoft Support for assistance.</span></span>
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

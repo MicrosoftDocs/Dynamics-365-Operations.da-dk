@@ -5,7 +5,6 @@ author: qire
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,99 +15,99 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8e3573f9c9971d4a5af33ece08b7e0b43f2e813a
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: a3da8e1b8176eb25fe4e0a320aa3e907c06e09c5
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921159"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021386"
 ---
-# <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a><span data-ttu-id="8b6c9-103">Tilføje datafelter i momsintegrationen ved hjælp af udvidelse</span><span class="sxs-lookup"><span data-stu-id="8b6c9-103">Add data fields in the tax integration by using extension</span></span>
+# <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a><span data-ttu-id="958fd-103">Tilføje datafelter i momsintegrationen ved hjælp af udvidelse</span><span class="sxs-lookup"><span data-stu-id="958fd-103">Add data fields in the tax integration by using extension</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="8b6c9-104">Dette emne forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-104">This topic explains how to use X++ extensions to add data fields in the tax integration.</span></span> <span data-ttu-id="8b6c9-105">Disse felter kan udvides til momsdatamodellen for momstjenesten og bruges til bestemmelse af momskoder.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-105">These fields can be extended to the tax data model of the tax service and used to determine tax codes.</span></span> <span data-ttu-id="8b6c9-106">Du kan finde flere oplysninger i [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).</span><span class="sxs-lookup"><span data-stu-id="8b6c9-106">For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).</span></span>
+<span data-ttu-id="958fd-104">Dette emne forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen.</span><span class="sxs-lookup"><span data-stu-id="958fd-104">This topic explains how to use X++ extensions to add data fields in the tax integration.</span></span> <span data-ttu-id="958fd-105">Disse felter kan udvides til momsdatamodellen for momstjenesten og bruges til bestemmelse af momskoder.</span><span class="sxs-lookup"><span data-stu-id="958fd-105">These fields can be extended to the tax data model of the tax service and used to determine tax codes.</span></span> <span data-ttu-id="958fd-106">Du kan finde flere oplysninger i [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).</span><span class="sxs-lookup"><span data-stu-id="958fd-106">For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).</span></span>
 
-## <a name="data-model"></a><span data-ttu-id="8b6c9-107">Datamodel</span><span class="sxs-lookup"><span data-stu-id="8b6c9-107">Data model</span></span>
+## <a name="data-model"></a><span data-ttu-id="958fd-107">Datamodel</span><span class="sxs-lookup"><span data-stu-id="958fd-107">Data model</span></span>
 
-<span data-ttu-id="8b6c9-108">Dataene i datamodellen udføres af objekter og implementeres af klasser.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-108">The data in the data model is carried by objects and implemented by classes.</span></span>
+<span data-ttu-id="958fd-108">Dataene i datamodellen udføres af objekter og implementeres af klasser.</span><span class="sxs-lookup"><span data-stu-id="958fd-108">The data in the data model is carried by objects and implemented by classes.</span></span>
 
-<span data-ttu-id="8b6c9-109">Her er en liste over de vigtigste objekter:</span><span class="sxs-lookup"><span data-stu-id="8b6c9-109">Here is a list of the major objects:</span></span>
+<span data-ttu-id="958fd-109">Her er en liste over de vigtigste objekter:</span><span class="sxs-lookup"><span data-stu-id="958fd-109">Here is a list of the major objects:</span></span>
 
-* <span data-ttu-id="8b6c9-110">AxClass/TaxIntegration **Document** Object</span><span class="sxs-lookup"><span data-stu-id="8b6c9-110">AxClass/TaxIntegration **Document** Object</span></span>
-* <span data-ttu-id="8b6c9-111">AxClass/TaxIntegration **Line** Object</span><span class="sxs-lookup"><span data-stu-id="8b6c9-111">AxClass/TaxIntegration **Line** Object</span></span>
-* <span data-ttu-id="8b6c9-112">AxClass/TaxIntegration **TaxLine** Object</span><span class="sxs-lookup"><span data-stu-id="8b6c9-112">AxClass/TaxIntegration **TaxLine** Object</span></span>
+* <span data-ttu-id="958fd-110">AxClass/TaxIntegration **Document** Object</span><span class="sxs-lookup"><span data-stu-id="958fd-110">AxClass/TaxIntegration **Document** Object</span></span>
+* <span data-ttu-id="958fd-111">AxClass/TaxIntegration **Line** Object</span><span class="sxs-lookup"><span data-stu-id="958fd-111">AxClass/TaxIntegration **Line** Object</span></span>
+* <span data-ttu-id="958fd-112">AxClass/TaxIntegration **TaxLine** Object</span><span class="sxs-lookup"><span data-stu-id="958fd-112">AxClass/TaxIntegration **TaxLine** Object</span></span>
 
-<span data-ttu-id="8b6c9-113">I følgende illustration vises, hvordan disse objekter er relateret.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-113">The following illustration shows how these objects are related.</span></span>
+<span data-ttu-id="958fd-113">I følgende illustration vises, hvordan disse objekter er relateret.</span><span class="sxs-lookup"><span data-stu-id="958fd-113">The following illustration shows how these objects are related.</span></span>
 
-<span data-ttu-id="8b6c9-114">[![Datamodelobjektrelation](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)</span><span class="sxs-lookup"><span data-stu-id="8b6c9-114">[![Data model object relationship](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)</span></span>
+<span data-ttu-id="958fd-114">[![Datamodelobjektrelation](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)</span><span class="sxs-lookup"><span data-stu-id="958fd-114">[![Data model object relationship](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)</span></span>
 
-<span data-ttu-id="8b6c9-115">Et **Document**-objekt kan indeholde mange **Line**-objekter.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-115">A **Document** object can contain many **Line** objects.</span></span> <span data-ttu-id="8b6c9-116">Hvert objekt indeholder metadata til momstjenesten.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-116">Each object contains metadata for the tax service.</span></span>
+<span data-ttu-id="958fd-115">Et **Document**-objekt kan indeholde mange **Line**-objekter.</span><span class="sxs-lookup"><span data-stu-id="958fd-115">A **Document** object can contain many **Line** objects.</span></span> <span data-ttu-id="958fd-116">Hvert objekt indeholder metadata til momstjenesten.</span><span class="sxs-lookup"><span data-stu-id="958fd-116">Each object contains metadata for the tax service.</span></span>
 
-- <span data-ttu-id="8b6c9-117">`TaxIntegrationDocumentObject` har `originAddress`-metadata, som indeholder oplysninger om kildeadressen, og `includingTax`-metadata, der angiver, om linjebeløbet inkluderer moms.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-117">`TaxIntegrationDocumentObject` has `originAddress` metadata, which contains information about the source address, and `includingTax` metadata, which indicates whether the line amount includes sales tax.</span></span>
-- <span data-ttu-id="8b6c9-118">`TaxIntegrationLineObject` har `itemId`, `quantity` og `categoryId` som metadata.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-118">`TaxIntegrationLineObject` has `itemId`, `quantity`, and `categoryId` metadata.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8b6c9-119">`TaxIntegrationLineObject` implementerer også **Charge**-objekter.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-119">`TaxIntegrationLineObject` also implements **Charge** objects.</span></span>
-
-## <a name="integration-flow"></a><span data-ttu-id="8b6c9-120">Integrationsflow</span><span class="sxs-lookup"><span data-stu-id="8b6c9-120">Integration flow</span></span>
-
-<span data-ttu-id="8b6c9-121">Dataene i flowet manipuleres af aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-121">The data in the flow is manipulated by activities.</span></span>
-
-### <a name="key-activities"></a><span data-ttu-id="8b6c9-122">Nøgleaktiviteter</span><span class="sxs-lookup"><span data-stu-id="8b6c9-122">Key activities</span></span>
-
-* <span data-ttu-id="8b6c9-123">AxClass/TaxIntegration **Calculation** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="8b6c9-123">AxClass/TaxIntegration **Calculation** ActivityOnDocument</span></span>
-* <span data-ttu-id="8b6c9-124">AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="8b6c9-124">AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument</span></span>
-* <span data-ttu-id="8b6c9-125">AxClass/TaxIntegration **DataPersistence** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="8b6c9-125">AxClass/TaxIntegration **DataPersistence** ActivityOnDocument</span></span>
-* <span data-ttu-id="8b6c9-126">AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="8b6c9-126">AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument</span></span>
-* <span data-ttu-id="8b6c9-127">AxClass/TaxIntegration **SettingRetrieval** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="8b6c9-127">AxClass/TaxIntegration **SettingRetrieval** ActivityOnDocument</span></span>
-
-<span data-ttu-id="8b6c9-128">Aktiviteterne køres i følgende rækkefølge:</span><span class="sxs-lookup"><span data-stu-id="8b6c9-128">Activities are run in the following order:</span></span>
-
-1. <span data-ttu-id="8b6c9-129">Hentning af indstilling</span><span class="sxs-lookup"><span data-stu-id="8b6c9-129">Setting Retrieval</span></span>
-2. <span data-ttu-id="8b6c9-130">Datahentning</span><span class="sxs-lookup"><span data-stu-id="8b6c9-130">Data Retrieval</span></span>
-3. <span data-ttu-id="8b6c9-131">Beregningstjeneste</span><span class="sxs-lookup"><span data-stu-id="8b6c9-131">Calculation Service</span></span>
-4. <span data-ttu-id="8b6c9-132">Valutakurs</span><span class="sxs-lookup"><span data-stu-id="8b6c9-132">Currency Exchange</span></span>
-5. <span data-ttu-id="8b6c9-133">Datapersistens</span><span class="sxs-lookup"><span data-stu-id="8b6c9-133">Data Persistence</span></span>
-
-<span data-ttu-id="8b6c9-134">Udvid f.eks. **Hentning af data** før **Beregningstjeneste**.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-134">For example, extend **Data Retrieval** before **Calculation Service**.</span></span>
-
-#### <a name="data-retrieval-activities"></a><span data-ttu-id="8b6c9-135">Datahentningsaktiviteter</span><span class="sxs-lookup"><span data-stu-id="8b6c9-135">Data Retrieval activities</span></span>
-
-<span data-ttu-id="8b6c9-136">**Datahentning**-aktiviteter henter data fra databasen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-136">**Data Retrieval** activities retrieve data from the database.</span></span> <span data-ttu-id="8b6c9-137">Der er adaptere til forskellige transaktioner, som kan hente data fra forskellige transaktionstabeller:</span><span class="sxs-lookup"><span data-stu-id="8b6c9-137">Adapters for different transactions are available to retrieve data from different transaction tables:</span></span>
-
-- <span data-ttu-id="8b6c9-138">AxClass/TaxIntegration **PurchTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="8b6c9-138">AxClass/TaxIntegration **PurchTable** DataRetrieval</span></span>
-- <span data-ttu-id="8b6c9-139">AxClass/TaxIntegration **PurchParmTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="8b6c9-139">AxClass/TaxIntegration **PurchParmTable** DataRetrieval</span></span>
-- <span data-ttu-id="8b6c9-140">AxClass/TaxIntegration **PurchREQTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="8b6c9-140">AxClass/TaxIntegration **PurchREQTable** DataRetrieval</span></span>
-- <span data-ttu-id="8b6c9-141">AxClass/TaxIntegration **PurchRFQTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="8b6c9-141">AxClass/TaxIntegration **PurchRFQTable** DataRetrieval</span></span>
-- <span data-ttu-id="8b6c9-142">AxClass/TaxIntegration **VendInvoiceInfoTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="8b6c9-142">AxClass/TaxIntegration **VendInvoiceInfoTable** DataRetrieval</span></span>
-- <span data-ttu-id="8b6c9-143">AxClass/TaxIntegration **SalesTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="8b6c9-143">AxClass/TaxIntegration **SalesTable** DataRetrieval</span></span>
-- <span data-ttu-id="8b6c9-144">AxClass/TaxIntegration **SalesParm** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="8b6c9-144">AxClass/TaxIntegration **SalesParm** DataRetrieval</span></span>
-
-<span data-ttu-id="8b6c9-145">I disse **Datahentning**-aktiviteter kopieres data fra databasen til `TaxIntegrationDocumentObject` og `TaxIntegrationLineObject`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-145">In these **Data Retrieval** activities, data is copied from the database to `TaxIntegrationDocumentObject` and `TaxIntegrationLineObject`.</span></span> <span data-ttu-id="8b6c9-146">Da alle disse aktiviteter udvider den samme abstrakte skabelonklasse, har de almindelige metoder.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-146">Because all these activities extend the same abstract template class, they have common methods.</span></span>
-
-#### <a name="calculation-service-activities"></a><span data-ttu-id="8b6c9-147">Aktiviteter for beregningstjeneste</span><span class="sxs-lookup"><span data-stu-id="8b6c9-147">Calculation Service activities</span></span>
-
-<span data-ttu-id="8b6c9-148">Aktiviteten **Beregningstjeneste** er linket mellem momstjenesten og momsintegrationen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-148">The **Calculation Service** activity is the link between the tax service and the tax integration.</span></span> <span data-ttu-id="8b6c9-149">Denne aktivitet er ansvarlig for følgende funktioner:</span><span class="sxs-lookup"><span data-stu-id="8b6c9-149">This activity is responsible for the following functions:</span></span>
-
-1. <span data-ttu-id="8b6c9-150">Konstruere anmodningen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-150">Construct the request.</span></span>
-2. <span data-ttu-id="8b6c9-151">Bogføre anmodningen til momstjenesten.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-151">Post the request to the tax service.</span></span>
-3. <span data-ttu-id="8b6c9-152">Få svaret fra momstjenesten.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-152">Get the response from the tax service.</span></span>
-4. <span data-ttu-id="8b6c9-153">Analysere svaret.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-153">Parse the response.</span></span>
-
-<span data-ttu-id="8b6c9-154">Et datafelt, du føjer til anmodningen, bogføres sammen med andre metadata.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-154">A data field that you add to the request will be posted together with other metadata.</span></span> 
-
-## <a name="extension-implementation"></a><span data-ttu-id="8b6c9-155">Implementering af udvidelse</span><span class="sxs-lookup"><span data-stu-id="8b6c9-155">Extension implementation</span></span>
-
-<span data-ttu-id="8b6c9-156">Dette afsnit indeholder detaljerede trin, der forklarer, hvordan du implementerer udvidelsen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-156">This section provides detailed steps that explain how to implement the extension.</span></span> <span data-ttu-id="8b6c9-157">Til dette formål bruges **Bærer** og **Projekt** som eksempler på de økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-157">It uses the **Cost center** and **Project** financial dimensions as examples.</span></span>
-
-### <a name="step-1-add-the-data-variable-in-the-object-class"></a><span data-ttu-id="8b6c9-158">Trin 1.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-158">Step 1.</span></span> <span data-ttu-id="8b6c9-159">Tilføje datavariablen i objektklassen</span><span class="sxs-lookup"><span data-stu-id="8b6c9-159">Add the data variable in the object class</span></span>
-
-<span data-ttu-id="8b6c9-160">Objektklassen indeholder datavariablen og henter/sætter-metoderne for dataene.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-160">The object class contains the data variable and getter/setter methods for the data.</span></span> <span data-ttu-id="8b6c9-161">Føj datafeltet til enten `TaxIntegrationDocumentObject` eller `TaxIntegrationLineObject` afhængigt af feltets niveau.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-161">Add the data field to either `TaxIntegrationDocumentObject` or `TaxIntegrationLineObject`, depending on the level of the field.</span></span> <span data-ttu-id="8b6c9-162">I følgende eksempel bruges linjeniveauet, og filnavnet er `TaxIntegrationLineObject_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-162">The following example uses the line level, and the file name is `TaxIntegrationLineObject_Extension.xpp`.</span></span>
+- <span data-ttu-id="958fd-117">`TaxIntegrationDocumentObject` har `originAddress`-metadata, som indeholder oplysninger om kildeadressen, og `includingTax`-metadata, der angiver, om linjebeløbet inkluderer moms.</span><span class="sxs-lookup"><span data-stu-id="958fd-117">`TaxIntegrationDocumentObject` has `originAddress` metadata, which contains information about the source address, and `includingTax` metadata, which indicates whether the line amount includes sales tax.</span></span>
+- <span data-ttu-id="958fd-118">`TaxIntegrationLineObject` har `itemId`, `quantity` og `categoryId` som metadata.</span><span class="sxs-lookup"><span data-stu-id="958fd-118">`TaxIntegrationLineObject` has `itemId`, `quantity`, and `categoryId` metadata.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8b6c9-163">Hvis det datafelt, du tilføjer, er på dokumentniveau, skal du ændre filnavnet til `TaxIntegrationDocumentObject_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-163">If the data field that you're adding is at the document level, change the file name to `TaxIntegrationDocumentObject_Extension.xpp`.</span></span>
+> <span data-ttu-id="958fd-119">`TaxIntegrationLineObject` implementerer også **Charge**-objekter.</span><span class="sxs-lookup"><span data-stu-id="958fd-119">`TaxIntegrationLineObject` also implements **Charge** objects.</span></span>
+
+## <a name="integration-flow"></a><span data-ttu-id="958fd-120">Integrationsflow</span><span class="sxs-lookup"><span data-stu-id="958fd-120">Integration flow</span></span>
+
+<span data-ttu-id="958fd-121">Dataene i flowet manipuleres af aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="958fd-121">The data in the flow is manipulated by activities.</span></span>
+
+### <a name="key-activities"></a><span data-ttu-id="958fd-122">Nøgleaktiviteter</span><span class="sxs-lookup"><span data-stu-id="958fd-122">Key activities</span></span>
+
+* <span data-ttu-id="958fd-123">AxClass/TaxIntegration **Calculation** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="958fd-123">AxClass/TaxIntegration **Calculation** ActivityOnDocument</span></span>
+* <span data-ttu-id="958fd-124">AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="958fd-124">AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument</span></span>
+* <span data-ttu-id="958fd-125">AxClass/TaxIntegration **DataPersistence** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="958fd-125">AxClass/TaxIntegration **DataPersistence** ActivityOnDocument</span></span>
+* <span data-ttu-id="958fd-126">AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="958fd-126">AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument</span></span>
+* <span data-ttu-id="958fd-127">AxClass/TaxIntegration **SettingRetrieval** ActivityOnDocument</span><span class="sxs-lookup"><span data-stu-id="958fd-127">AxClass/TaxIntegration **SettingRetrieval** ActivityOnDocument</span></span>
+
+<span data-ttu-id="958fd-128">Aktiviteterne køres i følgende rækkefølge:</span><span class="sxs-lookup"><span data-stu-id="958fd-128">Activities are run in the following order:</span></span>
+
+1. <span data-ttu-id="958fd-129">Hentning af indstilling</span><span class="sxs-lookup"><span data-stu-id="958fd-129">Setting Retrieval</span></span>
+2. <span data-ttu-id="958fd-130">Datahentning</span><span class="sxs-lookup"><span data-stu-id="958fd-130">Data Retrieval</span></span>
+3. <span data-ttu-id="958fd-131">Beregningstjeneste</span><span class="sxs-lookup"><span data-stu-id="958fd-131">Calculation Service</span></span>
+4. <span data-ttu-id="958fd-132">Valutakurs</span><span class="sxs-lookup"><span data-stu-id="958fd-132">Currency Exchange</span></span>
+5. <span data-ttu-id="958fd-133">Datapersistens</span><span class="sxs-lookup"><span data-stu-id="958fd-133">Data Persistence</span></span>
+
+<span data-ttu-id="958fd-134">Udvid f.eks. **Hentning af data** før **Beregningstjeneste**.</span><span class="sxs-lookup"><span data-stu-id="958fd-134">For example, extend **Data Retrieval** before **Calculation Service**.</span></span>
+
+#### <a name="data-retrieval-activities"></a><span data-ttu-id="958fd-135">Datahentningsaktiviteter</span><span class="sxs-lookup"><span data-stu-id="958fd-135">Data Retrieval activities</span></span>
+
+<span data-ttu-id="958fd-136">**Datahentning**-aktiviteter henter data fra databasen.</span><span class="sxs-lookup"><span data-stu-id="958fd-136">**Data Retrieval** activities retrieve data from the database.</span></span> <span data-ttu-id="958fd-137">Der er adaptere til forskellige transaktioner, som kan hente data fra forskellige transaktionstabeller:</span><span class="sxs-lookup"><span data-stu-id="958fd-137">Adapters for different transactions are available to retrieve data from different transaction tables:</span></span>
+
+- <span data-ttu-id="958fd-138">AxClass/TaxIntegration **PurchTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="958fd-138">AxClass/TaxIntegration **PurchTable** DataRetrieval</span></span>
+- <span data-ttu-id="958fd-139">AxClass/TaxIntegration **PurchParmTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="958fd-139">AxClass/TaxIntegration **PurchParmTable** DataRetrieval</span></span>
+- <span data-ttu-id="958fd-140">AxClass/TaxIntegration **PurchREQTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="958fd-140">AxClass/TaxIntegration **PurchREQTable** DataRetrieval</span></span>
+- <span data-ttu-id="958fd-141">AxClass/TaxIntegration **PurchRFQTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="958fd-141">AxClass/TaxIntegration **PurchRFQTable** DataRetrieval</span></span>
+- <span data-ttu-id="958fd-142">AxClass/TaxIntegration **VendInvoiceInfoTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="958fd-142">AxClass/TaxIntegration **VendInvoiceInfoTable** DataRetrieval</span></span>
+- <span data-ttu-id="958fd-143">AxClass/TaxIntegration **SalesTable** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="958fd-143">AxClass/TaxIntegration **SalesTable** DataRetrieval</span></span>
+- <span data-ttu-id="958fd-144">AxClass/TaxIntegration **SalesParm** DataRetrieval</span><span class="sxs-lookup"><span data-stu-id="958fd-144">AxClass/TaxIntegration **SalesParm** DataRetrieval</span></span>
+
+<span data-ttu-id="958fd-145">I disse **Datahentning**-aktiviteter kopieres data fra databasen til `TaxIntegrationDocumentObject` og `TaxIntegrationLineObject`.</span><span class="sxs-lookup"><span data-stu-id="958fd-145">In these **Data Retrieval** activities, data is copied from the database to `TaxIntegrationDocumentObject` and `TaxIntegrationLineObject`.</span></span> <span data-ttu-id="958fd-146">Da alle disse aktiviteter udvider den samme abstrakte skabelonklasse, har de almindelige metoder.</span><span class="sxs-lookup"><span data-stu-id="958fd-146">Because all these activities extend the same abstract template class, they have common methods.</span></span>
+
+#### <a name="calculation-service-activities"></a><span data-ttu-id="958fd-147">Aktiviteter for beregningstjeneste</span><span class="sxs-lookup"><span data-stu-id="958fd-147">Calculation Service activities</span></span>
+
+<span data-ttu-id="958fd-148">Aktiviteten **Beregningstjeneste** er linket mellem momstjenesten og momsintegrationen.</span><span class="sxs-lookup"><span data-stu-id="958fd-148">The **Calculation Service** activity is the link between the tax service and the tax integration.</span></span> <span data-ttu-id="958fd-149">Denne aktivitet er ansvarlig for følgende funktioner:</span><span class="sxs-lookup"><span data-stu-id="958fd-149">This activity is responsible for the following functions:</span></span>
+
+1. <span data-ttu-id="958fd-150">Konstruere anmodningen.</span><span class="sxs-lookup"><span data-stu-id="958fd-150">Construct the request.</span></span>
+2. <span data-ttu-id="958fd-151">Bogføre anmodningen til momstjenesten.</span><span class="sxs-lookup"><span data-stu-id="958fd-151">Post the request to the tax service.</span></span>
+3. <span data-ttu-id="958fd-152">Få svaret fra momstjenesten.</span><span class="sxs-lookup"><span data-stu-id="958fd-152">Get the response from the tax service.</span></span>
+4. <span data-ttu-id="958fd-153">Analysere svaret.</span><span class="sxs-lookup"><span data-stu-id="958fd-153">Parse the response.</span></span>
+
+<span data-ttu-id="958fd-154">Et datafelt, du føjer til anmodningen, bogføres sammen med andre metadata.</span><span class="sxs-lookup"><span data-stu-id="958fd-154">A data field that you add to the request will be posted together with other metadata.</span></span> 
+
+## <a name="extension-implementation"></a><span data-ttu-id="958fd-155">Implementering af udvidelse</span><span class="sxs-lookup"><span data-stu-id="958fd-155">Extension implementation</span></span>
+
+<span data-ttu-id="958fd-156">Dette afsnit indeholder detaljerede trin, der forklarer, hvordan du implementerer udvidelsen.</span><span class="sxs-lookup"><span data-stu-id="958fd-156">This section provides detailed steps that explain how to implement the extension.</span></span> <span data-ttu-id="958fd-157">Til dette formål bruges **Bærer** og **Projekt** som eksempler på de økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="958fd-157">It uses the **Cost center** and **Project** financial dimensions as examples.</span></span>
+
+### <a name="step-1-add-the-data-variable-in-the-object-class"></a><span data-ttu-id="958fd-158">Trin 1.</span><span class="sxs-lookup"><span data-stu-id="958fd-158">Step 1.</span></span> <span data-ttu-id="958fd-159">Tilføje datavariablen i objektklassen</span><span class="sxs-lookup"><span data-stu-id="958fd-159">Add the data variable in the object class</span></span>
+
+<span data-ttu-id="958fd-160">Objektklassen indeholder datavariablen og henter/sætter-metoderne for dataene.</span><span class="sxs-lookup"><span data-stu-id="958fd-160">The object class contains the data variable and getter/setter methods for the data.</span></span> <span data-ttu-id="958fd-161">Føj datafeltet til enten `TaxIntegrationDocumentObject` eller `TaxIntegrationLineObject` afhængigt af feltets niveau.</span><span class="sxs-lookup"><span data-stu-id="958fd-161">Add the data field to either `TaxIntegrationDocumentObject` or `TaxIntegrationLineObject`, depending on the level of the field.</span></span> <span data-ttu-id="958fd-162">I følgende eksempel bruges linjeniveauet, og filnavnet er `TaxIntegrationLineObject_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="958fd-162">The following example uses the line level, and the file name is `TaxIntegrationLineObject_Extension.xpp`.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="958fd-163">Hvis det datafelt, du tilføjer, er på dokumentniveau, skal du ændre filnavnet til `TaxIntegrationDocumentObject_Extension.xpp`.</span><span class="sxs-lookup"><span data-stu-id="958fd-163">If the data field that you're adding is at the document level, change the file name to `TaxIntegrationDocumentObject_Extension.xpp`.</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationLineObject))]
@@ -155,18 +154,18 @@ final class TaxIntegrationLineObject_Extension
 }
 ```
 
-<span data-ttu-id="8b6c9-164">**Bærer** og **Projekt** tilføjes som private variabler.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-164">**Cost center** and **Project** are added as private variables.</span></span> <span data-ttu-id="8b6c9-165">Opret henter- og sættermetoder for disse datafelter for at manipulere dataene.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-165">Create getter and setter methods for these data fields to manipulate the data.</span></span>
+<span data-ttu-id="958fd-164">**Bærer** og **Projekt** tilføjes som private variabler.</span><span class="sxs-lookup"><span data-stu-id="958fd-164">**Cost center** and **Project** are added as private variables.</span></span> <span data-ttu-id="958fd-165">Opret henter- og sættermetoder for disse datafelter for at manipulere dataene.</span><span class="sxs-lookup"><span data-stu-id="958fd-165">Create getter and setter methods for these data fields to manipulate the data.</span></span>
 
-### <a name="step-2-retrieve-data-from-the-database"></a><span data-ttu-id="8b6c9-166">Trin 2.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-166">Step 2.</span></span> <span data-ttu-id="8b6c9-167">Hente data fra databasen</span><span class="sxs-lookup"><span data-stu-id="8b6c9-167">Retrieve data from the database</span></span>
+### <a name="step-2-retrieve-data-from-the-database"></a><span data-ttu-id="958fd-166">Trin 2.</span><span class="sxs-lookup"><span data-stu-id="958fd-166">Step 2.</span></span> <span data-ttu-id="958fd-167">Hente data fra databasen</span><span class="sxs-lookup"><span data-stu-id="958fd-167">Retrieve data from the database</span></span>
 
-<span data-ttu-id="8b6c9-168">Angiv transaktionen, og udvid de relevante adapterklasser for at hente dataene.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-168">Specify the transaction, and extend the appropriate adapter classes to retrieve the data.</span></span> <span data-ttu-id="8b6c9-169">Hvis du f.eks. bruger transaktionen **Indkøbsordre**, skal du udvide `TaxIntegrationPurchTableDataRetrieval` og `TaxIntegrationVendInvoiceInfoTableDataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-169">For example, if you use a **Purchase order** transaction, you must extend `TaxIntegrationPurchTableDataRetrieval` and `TaxIntegrationVendInvoiceInfoTableDataRetrieval`.</span></span> 
+<span data-ttu-id="958fd-168">Angiv transaktionen, og udvid de relevante adapterklasser for at hente dataene.</span><span class="sxs-lookup"><span data-stu-id="958fd-168">Specify the transaction, and extend the appropriate adapter classes to retrieve the data.</span></span> <span data-ttu-id="958fd-169">Hvis du f.eks. bruger transaktionen **Indkøbsordre**, skal du udvide `TaxIntegrationPurchTableDataRetrieval` og `TaxIntegrationVendInvoiceInfoTableDataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="958fd-169">For example, if you use a **Purchase order** transaction, you must extend `TaxIntegrationPurchTableDataRetrieval` and `TaxIntegrationVendInvoiceInfoTableDataRetrieval`.</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="8b6c9-170">`TaxIntegrationPurchParmTableDataRetrieval` er nedarvet fra `TaxIntegrationPurchTableDataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-170">`TaxIntegrationPurchParmTableDataRetrieval` is inherited from `TaxIntegrationPurchTableDataRetrieval`.</span></span> <span data-ttu-id="8b6c9-171">Den må ikke ændres, medmindre logikken i `purchTable`- og `purchParmTable`-tabellerne er forskellig.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-171">It should not be changed unless the logic of the `purchTable` and `purchParmTable` tables differs.</span></span>
+> <span data-ttu-id="958fd-170">`TaxIntegrationPurchParmTableDataRetrieval` er nedarvet fra `TaxIntegrationPurchTableDataRetrieval`.</span><span class="sxs-lookup"><span data-stu-id="958fd-170">`TaxIntegrationPurchParmTableDataRetrieval` is inherited from `TaxIntegrationPurchTableDataRetrieval`.</span></span> <span data-ttu-id="958fd-171">Den må ikke ændres, medmindre logikken i `purchTable`- og `purchParmTable`-tabellerne er forskellig.</span><span class="sxs-lookup"><span data-stu-id="958fd-171">It should not be changed unless the logic of the `purchTable` and `purchParmTable` tables differs.</span></span>
 
-<span data-ttu-id="8b6c9-172">Hvis datafeltet skal tilføjes for alle transaktioner, skal du udvide alle `DataRetrieval`-klasser.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-172">If the data field should be added for all transactions, extend all `DataRetrieval` classes.</span></span>
+<span data-ttu-id="958fd-172">Hvis datafeltet skal tilføjes for alle transaktioner, skal du udvide alle `DataRetrieval`-klasser.</span><span class="sxs-lookup"><span data-stu-id="958fd-172">If the data field should be added for all transactions, extend all `DataRetrieval` classes.</span></span>
 
-<span data-ttu-id="8b6c9-173">Da alle aktiviteter for **Datahentning** udvider den samme skabelonklasse, er klassestrukturerne, variablerne og metoderne ens.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-173">Because all **Data Retrieval** activities extend the same template class, the class structures, variables, and methods are similar.</span></span>
+<span data-ttu-id="958fd-173">Da alle aktiviteter for **Datahentning** udvider den samme skabelonklasse, er klassestrukturerne, variablerne og metoderne ens.</span><span class="sxs-lookup"><span data-stu-id="958fd-173">Because all **Data Retrieval** activities extend the same template class, the class structures, variables, and methods are similar.</span></span>
 
 ```X++
 protected TaxIntegrationDocumentObject document;
@@ -199,7 +198,7 @@ protected abstract void copyToLine(TaxIntegrationLineObject _line)
 }
 ```
 
-<span data-ttu-id="8b6c9-174">I følgende eksempel vises den grundlæggende struktur, når tabellen `PurchTable` bruges.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-174">The following example shows the basic structure when the `PurchTable` table is used.</span></span>
+<span data-ttu-id="958fd-174">I følgende eksempel vises den grundlæggende struktur, når tabellen `PurchTable` bruges.</span><span class="sxs-lookup"><span data-stu-id="958fd-174">The following example shows the basic structure when the `PurchTable` table is used.</span></span>
 
 ```X++
 public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstractDataRetrievalTemplate
@@ -226,13 +225,13 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
 }
 ```
 
-<span data-ttu-id="8b6c9-175">Når metoden `CopyToDocument` kaldes, findes `this.purchTable`-bufferen allerede.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-175">When the `CopyToDocument` method is called, the `this.purchTable` buffer already exists.</span></span> <span data-ttu-id="8b6c9-176">Formålet med denne metode er at kopiere alle de påkrævede data fra `this.purchTable` til objektet `document` ved hjælp af den sættermetode, der blev oprettet i `DocumentObject`-klassen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-176">The purpose of this method is to copy all the required data from `this.purchTable` to the `document` object by using the setter method that was created in the `DocumentObject` class.</span></span>
+<span data-ttu-id="958fd-175">Når metoden `CopyToDocument` kaldes, findes `this.purchTable`-bufferen allerede.</span><span class="sxs-lookup"><span data-stu-id="958fd-175">When the `CopyToDocument` method is called, the `this.purchTable` buffer already exists.</span></span> <span data-ttu-id="958fd-176">Formålet med denne metode er at kopiere alle de påkrævede data fra `this.purchTable` til objektet `document` ved hjælp af den sættermetode, der blev oprettet i `DocumentObject`-klassen.</span><span class="sxs-lookup"><span data-stu-id="958fd-176">The purpose of this method is to copy all the required data from `this.purchTable` to the `document` object by using the setter method that was created in the `DocumentObject` class.</span></span>
 
-<span data-ttu-id="8b6c9-177">På samme måde findes der allerede en `this.purchLine`-buffer i `CopyToLine`-metoden.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-177">Likewise, a `this.purchLine` buffer already exists in the `CopyToLine` method.</span></span> <span data-ttu-id="8b6c9-178">Formålet med denne metode er at kopiere alle de påkrævede data fra `this.purchLine` til objektet `_line` ved hjælp af den sættermetode, der blev oprettet i `LineObject`-klassen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-178">The purpose of this method is to copy all the required data from `this.purchLine` to the `_line` object by using the setter method that was created in the `LineObject` class.</span></span>
+<span data-ttu-id="958fd-177">På samme måde findes der allerede en `this.purchLine`-buffer i `CopyToLine`-metoden.</span><span class="sxs-lookup"><span data-stu-id="958fd-177">Likewise, a `this.purchLine` buffer already exists in the `CopyToLine` method.</span></span> <span data-ttu-id="958fd-178">Formålet med denne metode er at kopiere alle de påkrævede data fra `this.purchLine` til objektet `_line` ved hjælp af den sættermetode, der blev oprettet i `LineObject`-klassen.</span><span class="sxs-lookup"><span data-stu-id="958fd-178">The purpose of this method is to copy all the required data from `this.purchLine` to the `_line` object by using the setter method that was created in the `LineObject` class.</span></span>
 
-<span data-ttu-id="8b6c9-179">Den mest ligetil fremgangsmåde er at udvide metoderne `CopyToDocument` og `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-179">The most straightforward approach is to extend the `CopyToDocument` and `CopyToLine` methods.</span></span> <span data-ttu-id="8b6c9-180">Det anbefales dog, at du prøver metoderne `copyToDocumentFromHeaderTable` og `copyToLineFromLineTable` først.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-180">However, we recommend that you try the `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable` methods first.</span></span> <span data-ttu-id="8b6c9-181">Hvis de ikke virker efter behov, skal du implementere din egen metode og kalde den i `CopyToDocument` og `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-181">If they don't work as you require, implement your own method, and call it in `CopyToDocument` and `CopyToLine`.</span></span> <span data-ttu-id="8b6c9-182">Der er tre almindelige situationer, hvor du kan bruge denne metode:</span><span class="sxs-lookup"><span data-stu-id="8b6c9-182">There are three common situations where you might use this approach:</span></span>
+<span data-ttu-id="958fd-179">Den mest ligetil fremgangsmåde er at udvide metoderne `CopyToDocument` og `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="958fd-179">The most straightforward approach is to extend the `CopyToDocument` and `CopyToLine` methods.</span></span> <span data-ttu-id="958fd-180">Det anbefales dog, at du prøver metoderne `copyToDocumentFromHeaderTable` og `copyToLineFromLineTable` først.</span><span class="sxs-lookup"><span data-stu-id="958fd-180">However, we recommend that you try the `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable` methods first.</span></span> <span data-ttu-id="958fd-181">Hvis de ikke virker efter behov, skal du implementere din egen metode og kalde den i `CopyToDocument` og `CopyToLine`.</span><span class="sxs-lookup"><span data-stu-id="958fd-181">If they don't work as you require, implement your own method, and call it in `CopyToDocument` and `CopyToLine`.</span></span> <span data-ttu-id="958fd-182">Der er tre almindelige situationer, hvor du kan bruge denne metode:</span><span class="sxs-lookup"><span data-stu-id="958fd-182">There are three common situations where you might use this approach:</span></span>
 
-- <span data-ttu-id="8b6c9-183">Det påkrævede felt er i `PurchTable` eller `PurchLine`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-183">The required field is in `PurchTable` or `PurchLine`.</span></span> <span data-ttu-id="8b6c9-184">I denne situation kan du udvide `copyToDocumentFromHeaderTable` og `copyToLineFromLineTable`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-184">In this situation, you can extend `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable`.</span></span> <span data-ttu-id="8b6c9-185">Her er eksempelkoden.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-185">Here is the sample code.</span></span>
+- <span data-ttu-id="958fd-183">Det påkrævede felt er i `PurchTable` eller `PurchLine`.</span><span class="sxs-lookup"><span data-stu-id="958fd-183">The required field is in `PurchTable` or `PurchLine`.</span></span> <span data-ttu-id="958fd-184">I denne situation kan du udvide `copyToDocumentFromHeaderTable` og `copyToLineFromLineTable`.</span><span class="sxs-lookup"><span data-stu-id="958fd-184">In this situation, you can extend `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable`.</span></span> <span data-ttu-id="958fd-185">Her er eksempelkoden.</span><span class="sxs-lookup"><span data-stu-id="958fd-185">Here is the sample code.</span></span>
 
     ```X++
     /// <summary>
@@ -247,7 +246,7 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
     }
     ```
 
-- <span data-ttu-id="8b6c9-186">De påkrævede data findes ikke i standardtabellen for transaktionen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-186">The required data isn't in the default table of the transaction.</span></span> <span data-ttu-id="8b6c9-187">Der findes dog visse join-relationer til standardtabellen, og feltet skal udfyldes på de fleste linjer.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-187">However, there are some join relationships with the default table, and the field is required on most lines.</span></span> <span data-ttu-id="8b6c9-188">I denne situation skal du erstatte `getDocumentQueryObject` eller `getLineObject` for at forespørge på tabellen ved hjælp af en join-relation.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-188">In this situation, replace `getDocumentQueryObject` or `getLineObject` to query the table by join relationship.</span></span> <span data-ttu-id="8b6c9-189">I følgende eksempel er feltet **Levér nu** integreret med salgsordren på linjeniveau.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-189">In the following example, the **Deliver Now** field is integrated with the sales order at the line level.</span></span>
+- <span data-ttu-id="958fd-186">De påkrævede data findes ikke i standardtabellen for transaktionen.</span><span class="sxs-lookup"><span data-stu-id="958fd-186">The required data isn't in the default table of the transaction.</span></span> <span data-ttu-id="958fd-187">Der findes dog visse join-relationer til standardtabellen, og feltet skal udfyldes på de fleste linjer.</span><span class="sxs-lookup"><span data-stu-id="958fd-187">However, there are some join relationships with the default table, and the field is required on most lines.</span></span> <span data-ttu-id="958fd-188">I denne situation skal du erstatte `getDocumentQueryObject` eller `getLineObject` for at forespørge på tabellen ved hjælp af en join-relation.</span><span class="sxs-lookup"><span data-stu-id="958fd-188">In this situation, replace `getDocumentQueryObject` or `getLineObject` to query the table by join relationship.</span></span> <span data-ttu-id="958fd-189">I følgende eksempel er feltet **Levér nu** integreret med salgsordren på linjeniveau.</span><span class="sxs-lookup"><span data-stu-id="958fd-189">In the following example, the **Deliver Now** field is integrated with the sales order at the line level.</span></span>
 
     ```X++
     public class TaxIntegrationSalesTableDataRetrieval
@@ -270,14 +269,14 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
     }
     ```
 
-    <span data-ttu-id="8b6c9-190">I dette eksempel erklæres en `mcrSalesLineDropShipment`-buffer, og forespørgslen defineres i `getLineQueryObject`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-190">In this example, a `mcrSalesLineDropShipment` buffer is declared, and the query is defined in `getLineQueryObject`.</span></span> <span data-ttu-id="8b6c9-191">Forespørgslen bruger relationen `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-191">The query uses the relationship `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`.</span></span> <span data-ttu-id="8b6c9-192">Når du udvider i denne situation, kan du erstatte `getLineQueryObject` med dit eget konstruerede forespørgselsobjekt.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-192">While you're extending in this situation, you can replace `getLineQueryObject` with your own constructed query object.</span></span> <span data-ttu-id="8b6c9-193">Men bemærk følgende punkter:</span><span class="sxs-lookup"><span data-stu-id="8b6c9-193">However, note the following points:</span></span>
+    <span data-ttu-id="958fd-190">I dette eksempel erklæres en `mcrSalesLineDropShipment`-buffer, og forespørgslen defineres i `getLineQueryObject`.</span><span class="sxs-lookup"><span data-stu-id="958fd-190">In this example, a `mcrSalesLineDropShipment` buffer is declared, and the query is defined in `getLineQueryObject`.</span></span> <span data-ttu-id="958fd-191">Forespørgslen bruger relationen `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`.</span><span class="sxs-lookup"><span data-stu-id="958fd-191">The query uses the relationship `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`.</span></span> <span data-ttu-id="958fd-192">Når du udvider i denne situation, kan du erstatte `getLineQueryObject` med dit eget konstruerede forespørgselsobjekt.</span><span class="sxs-lookup"><span data-stu-id="958fd-192">While you're extending in this situation, you can replace `getLineQueryObject` with your own constructed query object.</span></span> <span data-ttu-id="958fd-193">Men bemærk følgende punkter:</span><span class="sxs-lookup"><span data-stu-id="958fd-193">However, note the following points:</span></span>
 
-    * <span data-ttu-id="8b6c9-194">Da returværdien af metoden `getLineQueryObject` er `SysDaQueryObject`, skal du opbygge dette objekt ved hjælp af metoden SysDa.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-194">Because the return value of the `getLineQueryObject` method is `SysDaQueryObject`, you must construct this object by using the SysDa approach.</span></span>
-    * <span data-ttu-id="8b6c9-195">Den eksisterende tabel kan ikke fjernes.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-195">Can't remove existed table.</span></span>
+    * <span data-ttu-id="958fd-194">Da returværdien af metoden `getLineQueryObject` er `SysDaQueryObject`, skal du opbygge dette objekt ved hjælp af metoden SysDa.</span><span class="sxs-lookup"><span data-stu-id="958fd-194">Because the return value of the `getLineQueryObject` method is `SysDaQueryObject`, you must construct this object by using the SysDa approach.</span></span>
+    * <span data-ttu-id="958fd-195">Den eksisterende tabel kan ikke fjernes.</span><span class="sxs-lookup"><span data-stu-id="958fd-195">Can't remove existed table.</span></span>
 
-- <span data-ttu-id="8b6c9-196">De påkrævede data er relateret til transaktionstabellen af en kompliceret join-relation, eller relationen er ikke en til en (1:1), men en til mange (1:N).</span><span class="sxs-lookup"><span data-stu-id="8b6c9-196">The required data is related to the transaction table by a complicated join relationship, or the relation isn't one to one (1:1) but one to many (1:N).</span></span> <span data-ttu-id="8b6c9-197">I denne situation bliver det lidt kompliceret.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-197">In this situation, things become a little complicated.</span></span> <span data-ttu-id="8b6c9-198">Denne situation gælder for eksemplet med økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-198">This situation applies to the example of financial dimensions.</span></span> 
+- <span data-ttu-id="958fd-196">De påkrævede data er relateret til transaktionstabellen af en kompliceret join-relation, eller relationen er ikke en til en (1:1), men en til mange (1:N).</span><span class="sxs-lookup"><span data-stu-id="958fd-196">The required data is related to the transaction table by a complicated join relationship, or the relation isn't one to one (1:1) but one to many (1:N).</span></span> <span data-ttu-id="958fd-197">I denne situation bliver det lidt kompliceret.</span><span class="sxs-lookup"><span data-stu-id="958fd-197">In this situation, things become a little complicated.</span></span> <span data-ttu-id="958fd-198">Denne situation gælder for eksemplet med økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="958fd-198">This situation applies to the example of financial dimensions.</span></span> 
 
-    <span data-ttu-id="8b6c9-199">I denne situation kan du implementere din egen metode for at hente dataene.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-199">In this situation, you can implement your own method to retrieve the data.</span></span> <span data-ttu-id="8b6c9-200">Her er eksempelkoden i `TaxIntegrationPurchTableDataRetrieval_Extension.xpp`-filen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-200">Here is the sample code in the `TaxIntegrationPurchTableDataRetrieval_Extension.xpp` file.</span></span>
+    <span data-ttu-id="958fd-199">I denne situation kan du implementere din egen metode for at hente dataene.</span><span class="sxs-lookup"><span data-stu-id="958fd-199">In this situation, you can implement your own method to retrieve the data.</span></span> <span data-ttu-id="958fd-200">Her er eksempelkoden i `TaxIntegrationPurchTableDataRetrieval_Extension.xpp`-filen.</span><span class="sxs-lookup"><span data-stu-id="958fd-200">Here is the sample code in the `TaxIntegrationPurchTableDataRetrieval_Extension.xpp` file.</span></span>
 
     ```X++
     [ExtensionOf(classStr(TaxIntegrationPurchTableDataRetrieval))]
@@ -327,9 +326,9 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
     }
     ```
 
-### <a name="step-3-add-data-to-the-request"></a><span data-ttu-id="8b6c9-201">Trin 3.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-201">Step 3.</span></span> <span data-ttu-id="8b6c9-202">Føje data til anmodningen</span><span class="sxs-lookup"><span data-stu-id="8b6c9-202">Add data to the request</span></span>
+### <a name="step-3-add-data-to-the-request"></a><span data-ttu-id="958fd-201">Trin 3.</span><span class="sxs-lookup"><span data-stu-id="958fd-201">Step 3.</span></span> <span data-ttu-id="958fd-202">Føje data til anmodningen</span><span class="sxs-lookup"><span data-stu-id="958fd-202">Add data to the request</span></span>
 
-<span data-ttu-id="8b6c9-203">Udvid metoden `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` eller `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` for at føje data til anmodningen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-203">Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` or `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method to add data to the request.</span></span> <span data-ttu-id="8b6c9-204">Her er eksempelkoden i `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp`-filen.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-204">Here is the sample code in the `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp` file.</span></span>
+<span data-ttu-id="958fd-203">Udvid metoden `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` eller `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` for at føje data til anmodningen.</span><span class="sxs-lookup"><span data-stu-id="958fd-203">Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` or `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method to add data to the request.</span></span> <span data-ttu-id="958fd-204">Her er eksempelkoden i `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp`-filen.</span><span class="sxs-lookup"><span data-stu-id="958fd-204">Here is the sample code in the `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp` file.</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
@@ -354,17 +353,17 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-<span data-ttu-id="8b6c9-205">I denne kode er `_destination` det ombryderobjekt, der bruges til at generere bogføringsanmodningen, og `_source` er `TaxIntegrationLineObject`-objektet.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-205">In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.</span></span> 
+<span data-ttu-id="958fd-205">I denne kode er `_destination` det ombryderobjekt, der bruges til at generere bogføringsanmodningen, og `_source` er `TaxIntegrationLineObject`-objektet.</span><span class="sxs-lookup"><span data-stu-id="958fd-205">In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.</span></span> 
 
 > [!NOTE]
-> * <span data-ttu-id="8b6c9-206">Definer den nøgle, der bruges i anmodningsformularen, som `private const str`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-206">Define the key that is used in the request form as `private const str`.</span></span>
-> * <span data-ttu-id="8b6c9-207">Angiv feltet i metoden `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` ved hjælp af `SetField`-metoden.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-207">Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method.</span></span> <span data-ttu-id="8b6c9-208">Datatypen for den anden parameter skal være `string`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-208">The data type of the second parameter should be `string`.</span></span> <span data-ttu-id="8b6c9-209">Hvis datatypen ikke er `string`, skal du konvertere den til `string`.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-209">If the data type isn't `string`, convert it to `string`.</span></span>
+> * <span data-ttu-id="958fd-206">Definer den nøgle, der bruges i anmodningsformularen, som `private const str`.</span><span class="sxs-lookup"><span data-stu-id="958fd-206">Define the key that is used in the request form as `private const str`.</span></span>
+> * <span data-ttu-id="958fd-207">Angiv feltet i metoden `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` ved hjælp af `SetField`-metoden.</span><span class="sxs-lookup"><span data-stu-id="958fd-207">Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method.</span></span> <span data-ttu-id="958fd-208">Datatypen for den anden parameter skal være `string`.</span><span class="sxs-lookup"><span data-stu-id="958fd-208">The data type of the second parameter should be `string`.</span></span> <span data-ttu-id="958fd-209">Hvis datatypen ikke er `string`, skal du konvertere den til `string`.</span><span class="sxs-lookup"><span data-stu-id="958fd-209">If the data type isn't `string`, convert it to `string`.</span></span>
 
-## <a name="appendix"></a><span data-ttu-id="8b6c9-210">Appendiks</span><span class="sxs-lookup"><span data-stu-id="8b6c9-210">Appendix</span></span>
+## <a name="appendix"></a><span data-ttu-id="958fd-210">Appendiks</span><span class="sxs-lookup"><span data-stu-id="958fd-210">Appendix</span></span>
 
-<span data-ttu-id="8b6c9-211">Dette appendiks viser den komplette eksempelkode til integration af økonomiske dimensioner (**Bærer** og **Projekt**) på linjeniveau.</span><span class="sxs-lookup"><span data-stu-id="8b6c9-211">This appendix shows the complete sample code for the integration of financial dimensions (**Cost center** and **Project**) at the line level.</span></span>
+<span data-ttu-id="958fd-211">Dette appendiks viser den komplette eksempelkode til integration af økonomiske dimensioner (**Bærer** og **Projekt**) på linjeniveau.</span><span class="sxs-lookup"><span data-stu-id="958fd-211">This appendix shows the complete sample code for the integration of financial dimensions (**Cost center** and **Project**) at the line level.</span></span>
 
-### <a name="taxintegrationlineobject_extensionxpp"></a><span data-ttu-id="8b6c9-212">TaxIntegrationLineObject_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="8b6c9-212">TaxIntegrationLineObject_Extension.xpp</span></span>
+### <a name="taxintegrationlineobject_extensionxpp"></a><span data-ttu-id="958fd-212">TaxIntegrationLineObject_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="958fd-212">TaxIntegrationLineObject_Extension.xpp</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationLineObject))]
@@ -411,7 +410,7 @@ final class TaxIntegrationLineObject_Extension
 }
 ```
 
-### <a name="taxintegrationpurchtabledataretrieval_extensionxpp"></a><span data-ttu-id="8b6c9-213">TaxIntegrationPurchTableDataRetrieval_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="8b6c9-213">TaxIntegrationPurchTableDataRetrieval_Extension.xpp</span></span>
+### <a name="taxintegrationpurchtabledataretrieval_extensionxpp"></a><span data-ttu-id="958fd-213">TaxIntegrationPurchTableDataRetrieval_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="958fd-213">TaxIntegrationPurchTableDataRetrieval_Extension.xpp</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationPurchTableDataRetrieval))]
@@ -459,7 +458,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 }
 ```
 
-### <a name="taxintegrationcalculationactivityondocument_calculationservice_extensionxpp"></a><span data-ttu-id="8b6c9-214">TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="8b6c9-214">TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp</span></span>
+### <a name="taxintegrationcalculationactivityondocument_calculationservice_extensionxpp"></a><span data-ttu-id="958fd-214">TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp</span><span class="sxs-lookup"><span data-stu-id="958fd-214">TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp</span></span>
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
