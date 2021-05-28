@@ -2,7 +2,7 @@
 title: Start her med serviceadministration i elektronisk fakturering
 description: Dette emne beskriver, hvordan du kommer i gang med elektronisk fakturering.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840142"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980969"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Start her med serviceadministration i elektronisk fakturering
 
@@ -33,10 +33,10 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 - Du skal have adgang til din Microsoft Dynamics Lifecycle Services-konto (LCS).
 - Du skal have et LCS-projekt, der omfatter version 10.0.17 eller en senere version af Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Derudover skal disse apps implementeres i en af følgende Azure-geografisk områder:
 
-    - Det østlige USA
-    - Det vestlige USA
-    - Det nordlige Europa
-    - Det vestlige Europa
+    - United States
+    - Europa
+    - Storbritannien
+    - Asien
 
 - Du skal have adgang til din Dynamics 365 Regulatory Configuration Services (RCS-konto).
 - Du skal aktivere globaliseringsfunktionen for din RCS-konto i modulet Funktionsstyring. Du kan finde flere oplysninger i [Regulatory Configuration Services (RCS) – globaliseringsfunktioner](rcs-globalization-feature.md).
@@ -46,11 +46,12 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 
 1. Log på din LCS-konto.
 2. Vælg feltet **Prøveversion af funktionsstyring**.
-3. I afsnittet **Funktioner til offentlig visning** skal du vælge en **e-faktureringstjeneste**.
+3. I afsnittet **Funktioner til offentlig visning** skal du vælge **Elektronisk fakturering**.
 4. Kontroller, at indstillingen **Prøveversion af funktion aktiveret** er indstillet til **Ja**.
-5. Vælg dit LCS-implementeringsprojekt på LCS-dashboardet. LCS-projektet skal køre.
-7. Vælg **Installér et nyt tilføjelsesprogram** på fanen **Tilføjelsesprogrammer for miljø**.
-8. Vælg **e-faktureringstjenester**.
+5. Vælg et LCS-projekt på LCS-projektdashboardet.
+6. I LCS-projektet skal du vælge dit LCS-implementeringsprojekt på LCS-miljødashboardet. LCS-implementeringsprojektet skal køre.
+7. Under fanen **Power Platform Integration** i feltgruppen **Tilføjelsesprogrammer for miljø** skal du vælge **Installer et nyt tilføjelsesprogram**.
+8. Vælg **Elektronisk fakturering**.
 9. Angiv i feltet **AAD-program-id** **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Denne værdi er en fast værdi.
 10. Angiv lejer-id for din Azure-abonnementskonto i feltet **AAD-lejer-id**.
 11. Gennemse vilkår og betingelser, og marker afkrydsningsfeltet.
@@ -65,10 +66,10 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 
     | Datacenter Azure-geografisk område | URI for tjenesteslutpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Det østlige USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | Det vestlige USA                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Det nordlige Europa                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Det vestlige Europa                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | United States              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Storbritannien             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asien                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 4. Kontrollér, at **Applikations-id** er angivet til **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Denne værdi er en fast værdi.
 5. Angiv id'et for dit LCS-abonnementsmiljø i feltet **LCS-miljø-id**.
@@ -152,12 +153,12 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 1. Gå til **Organisationsadministration \> Konfiguration \> Parametre for elektroniske dokumenter**.
 2. Angiv det relevante serviceslutpunkt for din Azure-geografi som vist i følgende tabel, i feltet URL i feltet **Serviceslutpunkt URL** under fanen **Indsendelsestjeneste**.
 
-    | Datacenter Azure-geografisk område | URL for tjenesteslutpunkt                                                       |
+    | Datacenter Azure-geografisk område | URI for tjenesteslutpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Det østlige USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | Det vestlige USA                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Det nordlige Europa                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Det vestlige Europa                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | United States              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Storbritannien             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asien                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. Angiv navnet på det servicemiljø, der er publiceret i elektronisk fakturering, i feltet **Miljø**.
 4. Vælg **Gem**, og luk derefter siden.

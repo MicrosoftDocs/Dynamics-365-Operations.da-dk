@@ -2,11 +2,9 @@
 title: Lagerregulering for lagersted
 description: Dette emne indeholder oplysninger om lagerstedets lagerreguleringskladde og behandling, når du bruger skaleringsenheder.
 author: perlynne
-manager: tfehr
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSInventoryAdjustmentJournal, InventJournalCount
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: be386539ea7addf20256ac2b1f8a2a72736fcbec
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: a451816078ca2e77f30379828777209dc48bd849
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938220"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026127"
 ---
 # <a name="warehouse-inventory-adjustment"></a>Lagerregulering for lagersted
 
@@ -40,7 +38,7 @@ Følgende arbejdsprocesser for lagerstedsappen bruger aktuelt **Lagerregulerings
 - Cyklusoptælling
 - Indlæsning af nummerplade
 
-Flere lagertransaktioner oprettes som en del skyen eller edge i en lagerreguleringsproces, fordi hubbens og skaleringsenhedens installationer deler lagerposter.
+Flere lagertransaktioner oprettes som en del af hver lagerreguleringsproces, fordi hubbens og skaleringsenhedens installationer deler lagerposter.
 
 ## <a name="inventory-adjustment-example"></a>Eksempel på lagerregulering
 

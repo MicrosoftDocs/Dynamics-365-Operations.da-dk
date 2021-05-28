@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: 570b0995821dcaa2e180b48c25facee01e98f8e3
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961699"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015895"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Varedisponering med handelsaftaler om indkøb
 
@@ -67,7 +67,7 @@ Når systemet er forberedt som beskrevet i forrige afsnit, skal du følge disse 
 1. Gentag denne procedure for hvert relevant produkt.
 
 > [!NOTE]
-> Planlægningsoptimering understøtter handelsaftaler for køb med flere valutaer. Når der søges efter en handelsaftale ved hjælp af indstillingen **Laveste enhedspris**, vil systemet overveje handelsaftalelinjer for køb med forskellige valutaer, forudsat at der er defineret en valutakurs mellem valutaen i handelsaftalelinjen og regnskabsvalutaen for den juridiske enhed. Ellers ignoreres handelsaftalelinjen, og du vil få vist en fejl under varedisponering. Varedisponering vil derfor indeholde oplysninger fra alle relevante handelsaftalelinjer for køb, hvor priser kan omregnes til regnskabsvalutaen.
+> Planlægningsoptimering understøtter handelsaftaler for køb med flere valutaer. Når der søges efter en handelsaftale ved hjælp af indstillingen **Laveste enhedspris**, vil systemet overveje handelsaftalelinjer for køb med forskellige valutaer, forudsat at der er defineret en valutakurs mellem valutaen i handelsaftalelinjen og regnskabsvalutaen for den juridiske enhed. Ellers ignoreres handelsaftalelinjen, og du vil få vist en fejl under varedisponering. Varedisponering vil derfor indeholde oplysninger fra alle relevante handelsaftalelinjer for køb, hvor priser kan omregnes til regnskabsvalutaen. Det er vigtigt at bemærke, at der ikke tages højde for afrundingsregler under prisomregningen for samhandelsaftalen.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Eksempler på, hvordan planlægningsoptimering finder leverandør og leveringstider
 
@@ -75,14 +75,14 @@ Følgende tabel indeholder eksempler, der viser, hvordan forskellige indstilling
 
 | Frigivet produkt: Leverandør | Standardindstillinger for ordre: Leveringstid | Varedisponering: Tilsidesæt leverandør | Varedisponering: Tilsidesæt leveringstid | Handelsaftale: Leverandør | Handelsaftale: Leveringstid | Handelsaftale: Ignorer leveringstid | Resulterende leverandør | Resulterende leveringstid |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Ingen | Ingen | US003 | 3 | Ingen | **US001** | **1** |
-| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Ingen | **US002** | **2** |
-| *(Tom)* | 1 | Ingen | Ingen | ***US003** _ | _*_3_*_ | Ingen | **US003** | **3** |
-| *(Tom)* | ***1** _ | Ingen | Ingen | _*_US003_*_ | 3 | Ja | **US003** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | **US002** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | **US002** | **1** |
-| *(Tom)* | 1 | Ingen | Ja: 2 | ***US003** _ | _*_3_*_ | Ingen | **US003** | **3** |
-| *(Tom)* | 1 | Ingen | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | **US003** | **2** |
+| ***US001** _ | _*_1_*_ | Ingen | Ingen | US003 | 3 | Ingen | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Ingen | _ *US002** | **2** |
+| *(Tom)* | 1 | Ingen | Ingen | ***US003** _ | _*_3_*_ | Ingen | _ *US003** | **3** |
+| *(Tom)* | ***1** _ | Ingen | Ingen | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | _ *US002** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | _ *US002** | **1** |
+| *(Tom)* | 1 | Ingen | Ja: 2 | ***US003** _ | _*_3_*_ | Ingen | _ *US003** | **3** |
+| *(Tom)* | 1 | Ingen | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

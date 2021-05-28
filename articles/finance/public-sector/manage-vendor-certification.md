@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 480fdd99abeea731802dbe5bc5e1da9c1ceec6b7
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 06f4a0feda82d20e5ec01fd75e4bb8a597a6d09b
+ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956876"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "5989010"
 ---
 # <a name="maintain-vendor-certification"></a>Bevare kreditorcertificering
 
@@ -23,6 +23,8 @@ ms.locfileid: "5956876"
 [!include [preview banner](../includes/preview-banner.md)]
 
 I dette emne beskrives den fremgangsmåde, som dine kreditorer kan bruge til at bevare deres certificeringer ved hjælp af **arbejdsområdet Kreditorsamarbejde**. Eksempler på certificeringer kan omfatte en virksomhed af typen Woman Business Enterprise (WBE) eller Leadership in Energy and Environment Design (LEED). Kreditorer skal angive certificeringsoplysninger i arbejdsområdet **Kreditoroplysninger**. Derfra vælger kreditorerne vælge **Flere detaljer** og derefter **Certificeringer**.
+
+## <a name="add-a-new-certification"></a>Tilføje en ny certificering
 
 Hvis du vil tilføje en ny certificering, skal du vælge knappen **Tilføj**, der er placeret over gitteret for **Certificering** i arbejdsområdet **Kreditoroplysninger**. Angiv følgende oplysninger:
  
@@ -40,3 +42,10 @@ Hvis der er dokumenter relateret til den specifikke certificering, kan du tilkny
 Certificeringer, der er angivet af dine kreditorer på denne side, tildeles kilden "Kreditor". Du kan angive certifikatoplysninger på kreditorens vegne under kreditorbankkonti. Oplysningerne vises her, og kilden vises som **Debitor**.
 
 Kreditorer kan redigere eller slette deres certificeringer efter behov.
+
+## <a name="vendor-collaboration-generated-certification-records"></a>Certificeringsposter oprettet under kreditorsamarbejde 
+ 
+Når en leverandør har tilføjet certificeringsoplysninger, kan oplysningerne ses på siden **Certificeringer oprettet under kreditorsamarbejde**. Du kan åbne siden ved at gå til **Kreditor > Forespørgsler > Kreditorrapporter > Certificeringer oprettet under kreditorsamarbejde**. Som standard vises alle nye eller ændrede certificeringsposter. Kreditormedarbejderen kan få vist ændringerne og kontrollere oplysningerne via sin bekræftelsesproces for at validere dem. Når oplysningerne er bekræftet, kan den certificeringspost, der vises på siden, vælges og markeres som gennemset. Hvis du markerer posten som gennemset, fjernes den fra standardlisten.
+ 
+Alle certificeringsændringer er synlige på siden **Certificeringer oprettet under kreditorsamarbejde**. Hvis en ændring ikke vises på siden, kan du få den vist ved at justere filtrene for kreditorkontoen, ikrafttrædelsesdatointervallet eller vælge, om der skal medtages oplysninger om de certificeringsændringer, der er blevet gennemset. 
+

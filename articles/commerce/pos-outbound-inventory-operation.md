@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3cfe144f7bba2bbc4b25024b68155045271f6366
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5a2c596293e632bb6c06af56f413fcee9e867563
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795639"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022725"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Udgående lagerhandling i POS
 
@@ -71,7 +71,7 @@ De batchjob, du opretter, bruges til at behandle dokumenter, der ikke fejler ell
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Krav: Føj udgående handling til POS-skærmlayoutet
 
-Før din organisation kan bruge funktionerne i udgående handling, skal den konfigurere POS-handlingen **Udgående handling** på et eller flere af dine [POS-skærmlayout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Før du implementerer den nye handling i et produktionsmiljø, skal du sikre dig, at du tester den og lærer brugerne i at bruge den.
+Før din organisation kan bruge funktionerne i udgående handling, skal den konfigurere POS-handlingen **Udgående handling** på et eller flere af dine [POS-skærmlayout](/dynamics365/unified-operations/retail/pos-screen-layouts). Før du implementerer den nye handling i et produktionsmiljø, skal du sikre dig, at du tester den og lærer brugerne i at bruge den.
 
 ## <a name="overview"></a>Oversigt
 

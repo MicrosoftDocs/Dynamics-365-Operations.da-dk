@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: c32ffc8435c05c644bf836bb184400d067269208
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796869"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020645"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktivere flere leveringsmåder for afhentning af kundeordrer
 
@@ -82,7 +82,7 @@ Når der er flere tilgængelige leveringsmåder for en kanal, giver det en forbe
 
 ## <a name="considerations-for-distributed-order-management"></a>Overvejelser vedrørende fordelt ordrestyring
 
-Funktionerne for [fordelt ordrestyring (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) i Commerce ignorerer alle salgslinjer, der er markeret til afhentning i butikken. Disse funktioner er blevet opdateret for at sikre, at salgslinjer, der er knyttet til konfigurerede leveringsmåder, springer DOM-logikken over, og de omfordeles ikke til et nyt opfyldningslagersted.
+Funktionerne for [fordelt ordrestyring (DOM)](./dom.md) i Commerce ignorerer alle salgslinjer, der er markeret til afhentning i butikken. Disse funktioner er blevet opdateret for at sikre, at salgslinjer, der er knyttet til konfigurerede leveringsmåder, springer DOM-logikken over, og de omfordeles ikke til et nyt opfyldningslagersted.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

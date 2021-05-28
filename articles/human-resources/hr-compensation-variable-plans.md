@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 874d879c04e6b16889ca6900962394036278ba10
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ab5e0db339615ad9c434e3e65b6f04ff9fb4cc25
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800873"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027764"
 ---
 # <a name="create-variable-compensation-plans"></a>Oprette variable kompensationsstrukturer
 
@@ -38,7 +38,7 @@ Beregning af beløb i variabel kompensation for dine medarbejdere kan være base
 
 ### <a name="describe-vesting-rules"></a>Beskrive fordelingsregler
 
-Virksomheder kan selv vælge, om de vil konfigurere **fordelingsregler**. Fordelingsregler beskriver, hvordan den variable bonus skal fordeles over tid. En fordelingsregel kan for eksempel angive, at medarbejderen får 25 % af sin samlede bonus hvert år i de næste fire år. Fordelingsregler er kun til orientering.
+Virksomheder kan selv vælge, om de vil konfigurere **fordelingsregler**. Fordelingsregler beskriver, hvordan den variable bonus skal fordeles over tid. En fordelingsregel kan for eksempel angive, at medarbejderen får 25 % af den samlede bonus hvert år i de næste fire år. Fordelingsregler er kun til orientering.
 
 ## <a name="variable-compensation-plans"></a>Variabel løn-strukturer
 Den **variable lønstruktur** indeholder regler, beregningsmetoder og standardværdier for beregningen af variabel kompensation for tilmeldte medarbejdere. Når du opretter en variabel lønstruktur, skal du angive den variable kompensationstype. Den variable kompensationstype bestemmer, om systemet beregner bonussen som et valutabeløb eller et antal enheder. Du skal også angive beregningsmetoden:
@@ -49,7 +49,7 @@ Den **variable lønstruktur** indeholder regler, beregningsmetoder og standardv�
 Størrelsen af den variable bonus kan være baseret på enten en procentdel af medarbejderens almindelige grundlæggende indtjening eller et angivet antal enheder.
 
 -   Vælg indstillingen **Procent af basis** for at indtaste en standardprocent, og angiv, om grundlaget skal være medarbejderens faste lønsats eller kontrolpunktet for medarbejderens kompensationsniveau. Kompensationsniveauet er angivet på medarbejderens job. Et af referencepunkterne i kompensationsstrukturen kan angives som referencepunktet på den faste kompensationsplan. Systemet bruger kompensationsniveauet fra medarbejderens job og opretter krydshenvisninger til det med det referencepunkt, der er angivet på medarbejderens faste lønstruktur for at finde referencepunktbeløbet for medarbejderens kompensationsniveau. Referencepunkbeløbet kan derefter bruges i stedet for medarbejderens faste lønsats som grundlag for bonussen.
--   Vælg indstillingen **Antal enheder** for at angive et standardantal enheder, værdien af hver enkelt enhed og valutaen for enhedsværdien, hvis kompensationsplanen gælder for en ikke-kontant bonus (eksempelvis 200 aktieenheder, som værdiansættes til 40 USD) eller kun antallet af enheder, hvis kompensationsplanen er for en kontantbonus. For en kontantbonus modtager medarbejderen det angivne antal enheder af den valuta, der bruges til hans eller hendes fast løn-struktur (eksempelvis 500 enheder af 1 USD). Kontrolelementet for en til en-relationen kan bruges til at angive, om der er en direkte én til én-tilknytning mellem antallet af enheder og enhedsværdien. Når du opretter en variabel lønstruktur for en kontantbaseret plan ved hjælp af antallet enheder, er denne indstilling automatisk låst til **Ja**, og enhedsværdien er **1.0000**.
+-   Vælg indstillingen **Antal enheder** for at angive et standardantal enheder, værdien af hver enkelt enhed og valutaen for enhedsværdien, hvis kompensationsplanen gælder for en ikke-kontant bonus (eksempelvis 200 aktieenheder, som værdiansættes til 40 USD) eller kun antallet af enheder, hvis kompensationsplanen er for en kontantbonus. For en kontantbonus modtager medarbejderen det angivne antal enheder af den valuta, der bruges til fast løn-strukturen (eksempelvis 500 enheder af 1 USD). Kontrolelementet for en til en-relationen kan bruges til at angive, om der er en direkte én til én-tilknytning mellem antallet af enheder og enhedsværdien. Når du opretter en variabel lønstruktur for en kontantbaseret plan ved hjælp af antallet enheder, er denne indstilling automatisk låst til **Ja**, og enhedsværdien er **1.0000**.
 
 Med indstillingen **Ansættelsesregel** kan du angive, om alle medarbejdere skal have den samme stigning uanset datoen for deres ansættelse (**Ansættelsesregel** = **Ingen**), eller om medarbejderne skal modtage en procentdel af bonussen, der er baseret på længden af deres ansættelse i løbet af cyklussen (**Ansættelsesregel** = **Procent**). 
 

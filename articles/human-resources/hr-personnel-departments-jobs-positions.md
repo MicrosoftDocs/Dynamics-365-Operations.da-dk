@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 48427bb52d4e398edba152ff25e28c3625b6a5d3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 31b9532eea82fd5b88fe59718af7be4d242dc885
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803579"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027884"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger
 
@@ -120,7 +120,7 @@ Når du tildeler en medarbejder til en stilling, udfylder du stillingen. Du kan 
 
 Stillinger er vigtige elementer i et organisationshierarkis lavere niveau. I formen Stilling kan du angive den stilling, en stilling rapporterer til. Når du tildeler en medarbejder til en stilling, der refererer til en anden stilling, opretter du en rapporteringsrelation mellem de arbejdere, der er tildelt til to stillinger. For eksempel rapporterer stillingen "Bogholder-A" til stillingen "Regnskabsansvarlig". Kim Akers er tildelt stillingen "Regnskabsansvarlig", og Sanjay Patel er tildelt stillingen "Bogholder-A". Det betyder, at Sanjay Patel rapporter til Kim Akers. 
 
-Hvis organisationen bruger et matrixhierarki eller et andet brugerdefineret hierarki, kan du konfigurere stillingshierarkityper og derefter tilføje rapporteringsforhold for hver enkelt hierarki, du har angivet. Lori Penor er f.eks. administrerende direktør hos Eventyrcykler og er tildelt stillingen "Adm. direktør". Lori styrer udviklingen af et produkt, der bruges til at rense dimser. Lori har brug for, at en bogholde hjælper hende med økonomi til udvikling af produktet. Derfor har hun ansat Sanjay Patel sin bogholder. Sanjay rapporterer direkte til Kim Akers, men samarbejder også med Lori Penor med regnskabsopgaver til udvikling af renseanordningen. 
+Hvis organisationen bruger et matrixhierarki eller et andet brugerdefineret hierarki, kan du konfigurere stillingshierarkityper og derefter tilføje rapporteringsforhold for hver enkelt hierarki, du har angivet. Lori Penor er f.eks. administrerende direktør hos Eventyrcykler og er tildelt stillingen "Adm. direktør". Lori styrer udviklingen af et produkt, der bruges til at rense dimser. Lori har brug for, at en bogholder hjælper med økonomien til udvikling af produktet. Derfor har hun ansat Sanjay Patel som bogholder. Sanjay rapporterer direkte til Kim Akers, men samarbejder også med Lori Penor med regnskabsopgaver til udvikling af renseanordningen. 
 
 Du ville skulle udføre følgende opgaver for at konfigurere samarbejdsforhold mellem Sanjay Patel og Lori Penor i det forrige eksempel:
 1.  Opret en brugerdefineret stillingshierarkitype kaldes "Dims" for at oprette et hierarki, der omfatter stillinger, der er ansvarlig for at arbejde på rensningsproduktet.
@@ -159,7 +159,7 @@ For nogle poster kan du angive fremtidige ændringer i posten. Følgende oplysni
 </tbody>
 </table>
 
-Du kan ændre de oplysninger, der er nævnt i den foregående tabel for en stilling eller et job og angive en dato, hvor ændringer til stillingen eller jobbet skal træde i kraft. For eksempel kan en stilling kun tildeles én arbejder, men Sanjay Patel, der er tildelt stillingen Bogholder-A, forlader jobbet om to uger. Joe Healy erstatter Sanjay Patel, når han rejser. Selvom Sanjay stadig er knyttet til hans stilling, kan du tildele Joe Healy til samme stilling, så tildelingen træder i kraft efter Sanjays sidste dag på jobbet.
+Du kan ændre de oplysninger, der er nævnt i den foregående tabel for en stilling eller et job og angive en dato, hvor ændringer til stillingen eller jobbet skal træde i kraft. For eksempel kan en stilling kun tildeles én arbejder, men Sanjay Patel, der er tildelt stillingen Bogholder-A, forlader jobbet om to uger. Joe Healy erstatter Sanjay Patel, når Sanjay rejser. Selvom Sanjay stadig er knyttet til hans stilling, kan du tildele Joe Healy til samme stilling, så tildelingen træder i kraft efter Sanjays sidste dag på jobbet.
 
 
 

@@ -5,7 +5,6 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: beab7f2fc4fd96ce7a28734d2449445b3b5d4451
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750830"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018380"
 ---
 # <a name="note-integration"></a>Notaintegration
 
@@ -34,8 +33,8 @@ I løbet af Microsoft Dynamics 365-forretningsprocesserne indsamler brugere ofte
 
 Kundeoplysninger kan klassificeres på følgende måder:
 
-+ **Handlingsbare oplysninger, som en Dynamics 365-bruger håndterer på vegne af en kunde** - f.eks. udfører Contoso (en Dynamics 365-bruger) et spil show. En af Contosos kunder (en kunde) ønsker at deltage i dette show. Kunden beder en medarbejder hos Contoso om at booke en plads i spilopvisning for dem. Reservationen sker i Contosos hændelseskalender.
-+ **Oplysninger, der kan ageres på, for en Dynamics 365-bruger** - En kunde, der køber en Surface-enhed, angiver f.eks., at enheden skal være pakket ind som gave før levering. Disse instruktioner er oplysninger, der kan anvendes, og som håndteres af den medarbejder hos Contoso, der er ansvarlig for emballagen.
++ **Handlingsbare oplysninger, som en Dynamics 365-bruger håndterer på vegne af en kunde** - f.eks. udfører Contoso (en Dynamics 365-bruger) et spilshow. En af Contosos kunder (en kunde) ønsker at deltage i dette show. Kunden beder en medarbejder hos Contoso om at booke en plads i spilshowet for sig. Reservationen sker i Contosos hændelsesdeltagerkalender.
++ **Oplysninger, der kan ageres på, for en Dynamics 365-bruger** - En kunde, der køber en Surface-enhed, angiver f.eks., at enheden skal være pakket ind som gave før levering. Disse instruktioner er oplysninger, der kan anvendes, og som håndteres af den medarbejder hos Contoso, der er ansvarlig for indpakningen.
 + **Oplysninger, der ikke kan ageres på** - En kunde besøger f.eks. Contoso-butikken, og under samtalen med en butiksmedarbejder udtrykkes interessen for *Halo*-spil og spiltilbehør. Butikspartneren noterer sig disse oplysninger. Programmet til produktanbefalinger bruger det derefter til at komme med anbefalinger til kunden.
 
 Generelt registreres handlingsbare oplysninger som *aktiviteter* i Finance and Operations-apps og kundetilfredshedsapps. Oplysninger, der ikke kan ageres på, registreres som *noter* i Finance and Operations-apps, and som *bemærkninger* i kundetilfredshedsapps.

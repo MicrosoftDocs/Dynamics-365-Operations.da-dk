@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818746"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028197"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultater fra Machine Learning Models (prøveversion)
 
@@ -63,8 +63,8 @@ Hvis du vil begynde at løse dette problem, skal du overveje nøjagtigheden af e
 
 Et andet aspekt er også værd at bemærke. Tænk på et scenarie, hvor en medicinsk test bruges til at registrere en sygdom hos en patient. Dette problem er et binært klassifikationsproblem, hvor et positivt resultat viser, at patienten har sygdommen. I dette scenarie skal du overveje følgende fejl:
 
-- Falske positivværdier, hvor testen viser, at der er tale om, at en patient har en sygdom, men patienten har ikke alligevel sygdommen
-- Falske negativværdier, hvor testen viser, at der er tale om, at en patient ikke har en sygdom, men patienten har alligevel sygdommen
+- Falske positivværdier, hvor testen viser, at der er tale om, at patienten har en sygdom, men patienten har ikke alligevel sygdommen.
+- Falske negativværdier, hvor testen viser, at der er tale om, at patienten ikke har en sygdom, men patienten har alligevel sygdommen.
 
 Det kan naturligvis være, at begge fejltyper er uønskede, men hvad er det værste? Det afhænger igen af omstændighederne. Hvis der er tale om en livstruende sygdom, der kræver hurtig behandling, har det højere prioritet at minimere falske negativer (som forhåbentligt efterfølges af yderligere test). I andre tilfælde, hvor der er tale om mindre kritiske situationer, kan modeloprettelser minimere falske positiver i stedet. Når det sker, er det en rimelig konklusion, at du skal have flere oplysninger end en nøjagtighedsmetrikværdi, hvis du effektivt skal kunne bestemme en models kvalitet.
 

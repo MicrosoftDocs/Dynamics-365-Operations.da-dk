@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e785d591c25669d90c91ca1b676388522da3da36
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1296dc994e43d75fd9b834acf345134494b4810
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835166"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027498"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Udlign en delvis debitorbetaling med rabatter på kreditnotaer
 
@@ -39,7 +39,7 @@ Debitor 4035 har en faktura på 1.000,00 og en kreditnota på 100,00. Hvert doku
 | CCRN-10050 | Kreditnota      | 28-6-2015 | CR-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Udlign en kreditnota med en faktura.
-Fra siden **Kundetransaktioner** åbner Arnie siden **Udlign transaktioner**. Han kan bruge siden **Udlign transaktioner** til at udligne fakturaen og kreditnotaen. Som en del af udligningsprocessen får han datoer og beløb for kasserabatten. Han markerer de to dokumenter og klikker derefter på **Bogfør** for at udligne posteringer. Der er en rabat på -1,00 på kreditnotaen, fordi Fabrikam guver rabatter på kreditnotaer.
+Fra siden **Kundetransaktioner** åbner Arnie siden **Udlign transaktioner**. Arnie kan bruge siden **Udlign transaktioner** til at udligne fakturaen og kreditnotaen. Som en del af udligningsprocessen får han datoer og beløb for kasserabatten. Han markerer de to dokumenter og klikker derefter på **Bogfør** for at udligne posteringer. Der er en rabat på -1,00 på kreditnotaen, fordi Fabrikam guver rabatter på kreditnotaer.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag    | Konto | Dato      | Forfaldsdato  | Faktura  | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|

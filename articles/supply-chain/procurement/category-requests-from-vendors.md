@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb3555e6d923fe37479c3204f0b78f7cdf510118
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 1951f85f84c3b8b2d42f49d5f464d90d410ebfa2
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938438"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015945"
 ---
 # <a name="category-requests-from-vendors"></a>Kategorianmodninger fra kreditorer
 
@@ -36,10 +36,7 @@ Når funktionen er aktiveret, kan du stadig føje indkøbskategorier til kredito
 
 Før en kreditor kan udstede kategorianmodninger, skal kreditoren være konfigureret til kreditorsamarbejde.
 
-Kreditoren skal mindst have én bruger for leverandørsamarbejdet. Kun kreditorbrugere med én eller begge af følgende sikkerhedsroller kan oprette og sende kategorianmodninger:
-
-- Leverandørkontakt (ekstern)
-- Kreditoradministrator (ekstern)
+Kreditoren skal mindst have én bruger for leverandørsamarbejdet. Kun kreditorbrugere med sikkerhedsrollen *Kreditoradministrator (ekstern)* kan oprette og sende kategorianmodninger.
 
 Du kan finde flere oplysninger under [Konfigurere og vedligeholde kreditorsamarbejde](set-up-maintain-vendor-collaboration.md).
 

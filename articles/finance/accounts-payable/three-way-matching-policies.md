@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 829c9c5549c337c5c2b118f3027111831f2632ca
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814290"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027788"
 ---
 # <a name="three-way-matching-policies"></a>Trevejs-sammenholdelsespolitikker
 
@@ -47,17 +47,17 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 -   Ken angiver til/fra for automatisk opdatering på overskriftens sammenholdelsesstatus i den juridiske enhed til Ja.
 -   Ken angiver feltet Afstem pristotaler for den juridiske enhed til procent og angiver 15 % som toleranceprocenten.
 -   Ken angiver sammenholdelsespolitikken på vareniveauet for vare 1500 – CNC Milicron-maskine til Trevejs-sammenholdelse. Denne vare er en anlægsvare, der bruges til fremstilling hos Fabrikam. Fakturaer for denne vare sammenholdes med indkøbsordrelinjer for priser og med produktkvitteringer for antal.
--   Thomas angiver en rekvisition for fem CNC Milicron-maskiner. Anja, en købsordreassistent hos Fabrikam, udsteder en indkøbsordre til en juridisk enhed, der hedder Contoso, om levering af varerne.
+-   Thomas angiver en rekvisition for fem CNC Milicron-maskiner. Anja, en købsordreassistent hos Fabrikam, udsteder en indkøbsordre til en juridisk enhed med navnet Contoso om levering af varerne.
 
-    | Varenummer                 | Antal | Enhedspris | Nettobeløb | Gebyrkode        | Gebyrværdi |
+    | varenummer                 | Mængde | Enhedspris | Nettobeløb | Gebyrkode        | Gebyrværdi |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – CNC Milicron-maskine | 5        | 8.000,00   | 40.000,00  | Forsendelse og ekspedition | 3.000,00      |
+    | 1500 – CNC Milicron-maskine | 5        | 8.000,00   | 40.000,00  | Forsendelse og ekspedition | 3,000.00      |
 
 -   Adam, en debitorassistent hos Contoso, gennemgår leverancer for ugen. Adam vælger forsendelsesposteringer for at fakturere Fabrikam for leveringen af CNC Milicron-maskiner. Adam inkluderer et gebyr for forsendelse og ekspedition. Fabrikam overvejer, om afgiften skal være en del af aktivets kostpris.
 
 ### <a name="scenario"></a>Situation
 
-1.  Claus, en arbejder i modtagelsesafdelingen hos Fabrikam, modtager det samlede antal maskiner, der leveres fra Contoso. Han angiver antallet 5 ved modtagelse af produkterne. Da indkøbsordren er blevet fuldt modtaget, ændres status for indkøbsordren til Modtaget.
+1.  Claus, en medarbejder i modtagelsesafdelingen hos Fabrikam, modtager det samlede antal maskiner, der leveres fra Contoso. Claus angiver antallet 5 ved modtagelse af produkterne. Da indkøbsordren er blevet fuldt modtaget, ændres status for indkøbsordren til Modtaget.
 2.  Pernille, kreditorkoordinator hos Fabrikam, indtaster og kontrollerer den faktura, der er sendt af Contoso. Hun kontrollerer følgende oplysninger:
     -   For varer, der kræver trevejs-sammenholdelse, svarer antallet på fakturalinjen til det antal, der blev modtaget. Det modtagne antal angives på den produktkvittering, der sammenholdes med fakturaen.
     -   For varer, der kræver tovejs- eller trevejs-sammenholdelse, er priserne på fakturalinjen inden for de tolerancer, der er defineret i Microsoft Dynamics 365 Finance. Dette omfatter følgende typer prissammenholdelse:
@@ -66,7 +66,7 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 
 Papirfakturaen fra Contoso indeholder følgende oplysninger.
 
-| Vare                        | Antal | Enhedspris | Nettobeløb |
+| Post                        | Mængde | Enhedspris | Nettobeløb |
 |-----------------------------|----------|------------|------------|
 | 1500 – CNC Milicron-maskine | 5        | 8.100,00   | 40,500.00  |
 | Forsendelse og håndtering       |          |            | 4,000.00   |
@@ -96,7 +96,7 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 -   Ken angiver feltet Afstem pristotaler for den juridiske enhed til procent og angiver 10 % som toleranceprocenten.
 -   Mads angiver tolerancen for enhedspriser for alle varer til 2 %.
 -   Cassie angiver sammenholdelsespolitikken for kombinationen af varer og kreditor for varen PH2500 – Computer og kreditor Contoso til Trevejs-sammenholdelse.
--   Anja, en indkøbsordreassistent i Fabrikams division i Malaysia, udsteder indkøbsordrer til Contoso om at levere tre varer, som vist i følgende tabel. Når hun opretter indkøbsordren, tilsidesætter hun sammenholdelsespolitikken for den trådløse mus, så den er angives til trevejs-sammenholdelse i stedet for tovejs-sammenholdelse.
+-   Anja, en indkøbsordreassistent i Fabrikams division i Malaysia, udsteder indkøbsordrer til Contoso om levering af tre varer, som vist i følgende tabel. Når hun opretter indkøbsordren, tilsidesætter hun sammenholdelsespolitikken for den trådløse mus, så den er angives til trevejs-sammenholdelse i stedet for tovejs-sammenholdelse.
 
     | Varenummer           | Antal | Enhedspris | Nettobeløb | Sammenholdelsespolitik (standardpost) | Sammenholdelsespolitik (på indkøbsordrelinjen) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -115,7 +115,7 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 
 Papirfakturaen fra Contoso indeholder følgende oplysninger.
 
-| Vare                  | Antal | Enhedspris | Nettobeløb |
+| Post                  | Mængde | Enhedspris | Nettobeløb |
 |-----------------------|----------|------------|------------|
 | PH2500 – Computer     | 2        | 2.500,00   | 5.000,00   |
 | MM01 – Trådløs mus | 2        | 41.00      | 82.00      |

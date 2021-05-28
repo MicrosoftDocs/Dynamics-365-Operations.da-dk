@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ad75430c606f959b17c887531fb62bd37caec624
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8a3c7eb9580f9155dd33f6351f37eb1edd269a3d
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804301"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018627"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerede betalingsterminaler og anmodninger om printer og kasseskuffe
 
@@ -50,13 +50,13 @@ Den funktionalitet, der beskrives i dette emne, understøttes af Modern POS til 
 
 Denne funktionalitet understøtter netværksaktiverede betalingsterminaler og kvitteringsprintere. Du kan understøtte pengeskuffen ved at slutte den til den netværksaktiverede kvitteringsprinter via d/k-porten.
 
-Out-of-box-understøttelse af denne funktion findes i [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Andre betalingsforbindelser kan dog understøttes via SDK (Commerce Software Development Kit) til betalinger. Understøttede kvitteringsprintere omfatter netværksaktiverede kvitteringsprintere fra Star Micronics og Epson.
+Out-of-box-understøttelse af denne funktion findes i [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3). Andre betalingsforbindelser kan dog understøttes via SDK (Commerce Software Development Kit) til betalinger. Understøttede kvitteringsprintere omfatter netværksaktiverede kvitteringsprintere fra Star Micronics og Epson.
 
 Hvis du vil konfigurere Star Micronics-kvitteringsprintere, skal du bruge Star Micronics Printer Utility til at konfigurere enheden, så den kan bruges over netværket. Dette hjælpeværktøj angiver også enhedens IP-adresse.
 
 Hvis du vil konfigurere Epson-kvitteringsprintere, skal du bruge Epson ePOS-Print-værktøjet til at konfigurere enheden, så den kan bruge netværksprotokoller.
 
-Du kan finde flere oplysninger om, hvordan du konfigurerer eksterne netværksenheder, i [Oversigt over understøttelse af eksterne netværksenheder](https://go.microsoft.com/fwlink/?linkid=2129965).
+Du kan finde flere oplysninger om, hvordan du konfigurerer eksterne netværksenheder, i [Oversigt over understøttelse af eksterne netværksenheder](./dev-itpro/network-peripherals.md).
 
 ## <a name="set-up-a-dedicated-payment-terminal-and-a-prompt-for-a-printer-and-cash-drawer"></a>Konfigurere en dedikeret betalingsterminal og anmodning om en printer og kasseskuffe
 
@@ -75,9 +75,9 @@ Udfør følgende trin for at konfigurere den hardwareprofil, der er tildelt kass
 
     | Enhed | Type | Enhedens navn | Flere oplysninger |
     |---|---|---|---|
-    | Printer | Reserve | *Alle* | Der skelnes mellem store og små bogstaver i enhedsnavnet. **Id'et for kvitteringsprofilen** skal være det samme som det **Kvitteringsprofil-id**, som er knyttet til den netværksprinter, der er konfigureret i den hardwareprofil, der er tildelt hardwarestationen på kanalniveau. |
-    | Pengeskuffe | Reserve | *Alle* | Der skelnes mellem store og små bogstaver i enhedsnavnet. Angiv indstillingen **Brug af delt skift** til **Ja**. |
-    | Autorisationskodetjeneste | Adyen | Ikke relevant | Du kan finde oplysninger om, hvordan du konfigurerer out-of-box Adyen-betalingsconnectoren i [Dynamics 365-betalingsconnector til Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Andre betalingsconnectorer kan understøttes via [Commerce Software Development Kit (SDK) til betalinger](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
+    | Printer | Netværk | *Alle* | Der skelnes mellem store og små bogstaver i enhedsnavnet. **Id'et for kvitteringsprofilen** skal være det samme som det **Kvitteringsprofil-id**, som er knyttet til den netværksprinter, der er konfigureret i den hardwareprofil, der er tildelt hardwarestationen på kanalniveau. |
+    | Pengeskuffe | Netværk | *Alle* | Der skelnes mellem store og små bogstaver i enhedsnavnet. Angiv indstillingen **Brug af delt skift** til **Ja**. |
+    | Autorisationskodetjeneste | Adyen | Ikke relevant | Du kan finde oplysninger om, hvordan du konfigurerer out-of-box Adyen-betalingsconnectoren i [Dynamics 365-betalingsconnector til Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3). Andre betalingsconnectorer kan understøttes via [Commerce Software Development Kit (SDK) til betalinger](./dev-itpro/end-to-end-payment-extension.md). |
     | Pinkodetastatur | Netværk | **MicrosoftAdyenDeviceV001** | Ingen. |
 
 5. I Dynamics 365 Commerce skal du søge efter **Kasseapparater**.
@@ -85,7 +85,7 @@ Udfør følgende trin for at konfigurere den hardwareprofil, der er tildelt kass
 7. Tildel den hardwareprofil, du netop har oprettet, til det kasseapparat, der skal bruge en dedikeret betalingsterminal. Den enhed, der er knyttet til dette kasseapparat, skal enten bruge Modern POS til Windows-programmet eller Modern POS til Android-programmet.
 8. Vælg **Gem**.
 9. I handlingsruden skal du på fanen **Kasseapparater** vælge **Konfigurer IP-adresser**.
-10. I oversigtspanelet **Pinkodetastatur** skal du angive IP-adressen for betalingsterminalen. Yderligere oplysninger om, hvordan du får IP-adressen på betalingsterminalen ved hjælp af Adyen-forbindelsen, finder du i [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3).
+10. I oversigtspanelet **Pinkodetastatur** skal du angive IP-adressen for betalingsterminalen. Yderligere oplysninger om, hvordan du får IP-adressen på betalingsterminalen ved hjælp af Adyen-forbindelsen, finder du i [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3).
 11. Vælg **Gem**.
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>Konfigurere en hardwareprofil for kvitteringsprinteren og kasseskuffen
@@ -100,7 +100,7 @@ Hvis du vil konfigurere den hardwareprofil, der bruges til at gruppere netværks
     | Enhed | Type | Beskrivende tekst | Flere oplysninger |
     |---|---|---|---|
     | Printer | Netværk | **Epson** eller **Star** | Der skelnes mellem store og små bogstaver i enhedsnavnet. **Id'et for kvitteringsprofilen** skal være det samme som det **Kvitteringsprofil-id**, der er knyttet til den printer, der er konfigureret i den hardwareprofil, der er tildelt kasseapparatet. |
-    | Pengeskuffe | Netværk | **Epson** eller **Star** | Der skelnes mellem store og små bogstaver i enhedsnavnet. angiv indstillingen **Brug af delt skift** til **Ja**. |
+    | Pengeskuffe | Reserve | **Epson** eller **Star** | Der skelnes mellem store og små bogstaver i enhedsnavnet. angiv indstillingen **Brug af delt skift** til **Ja**. |
 
 5. Vælg **Gem**.
 
@@ -148,9 +148,9 @@ Butiksmedarbejderne bliver bedt om kun at vælge en hardwarestation én gang pr.
 
 ## <a name="related-articles"></a>Relaterede artikler
 
-- [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Dynamics 365-betalingsconnector til Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Oversigt over understøttelse af eksterne netværksenheder](https://go.microsoft.com/fwlink/?linkid=2129965)
+- [Konfigurere POS Hybrid-appen på Android og iOS](./dev-itpro/hybridapp.md)
+- [Dynamics 365-betalingsconnector til Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3)
+- [Oversigt over understøttelse af eksterne netværksenheder](./dev-itpro/network-peripherals.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

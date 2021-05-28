@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a195c725854eff1fe6d6fa20bb815673e2e307
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827332"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028221"
 ---
 # <a name="position-forecasting"></a>Budgetteret stilling
 
@@ -67,9 +67,9 @@ Jodis organisation giver kursusrabat på 5 % af en medarbejders grundløn. Jodi 
 
 Jodi ønsker ikke, at chefer skal kunne ændre beløbet på frynsegoden. Hun vælger derfor **Tillad ikke omkostningsændringer** i feltet **Tilsidesættelse af budgetteret stilling**. Organisationen ønsker, at denne omkostning skal fordeles ligeligt på hver måned. Derfor vælger Jodi **Kvartalsvis** i feltet **Fordelingsmetode**. 
 
-Derefter tilføjer Jodi en omkostningsberegningslinje, angiver datoerne og hovedkontoen og indtaster **5,00** som procentdelen. Hendes organisation har et maksimum på $ 5,000 om året til dette frynsegode. Jodi angiver derfor dette beløb som den årlige grænse. 
+Derefter tilføjer Jodi en omkostningsberegningslinje, angiver datoerne og hovedkontoen og indtaster **5,00** som procentdelen. Organisationen har et maksimum på $ 5.000 om året til dette frynsegode. Jodi angiver derfor dette beløb som den årlige grænse. 
 
-Endelig tilføjer Jodi de indtjeningsomkostningselementer, der bruges til grundløn, som beregningsgrundlag. Hendes budgetomkostningselement er nu klar til at blive brugt.
+Endelig tilføjer Jodi de indtjeningsomkostningselementer, der bruges til grundløn, som beregningsgrundlag. Budgetomkostningselementet er nu klar til at blive brugt.
 
 ### <a name="compensation-groups"></a>Kompensationsgrupper
 
@@ -137,7 +137,7 @@ Budgetelementomkostningslinjerne skal genberegnes, når værdien for fuldtidsans
 
 **Eksempel** 
 
-Organisationen overvejer to muligheder angående reducering af omkostningerne ved en bogholderstilling. En mulighed er at afslutte stilling halvvejs gennem året. Den anden mulighed er at ændre stillingen til halv tid for hele året. Brad har oprettet en prognosestilling for den eksisterende bogholderstilling i et grundscenarie. Han kopierer denne grundprognosestilling til scenarie A, indstiller ophørsdatoen til den 31 maj og genberegner. Brad kopierer derefter den oprindelige prognosestilling til scenarie B, ændrer værdien for fuldtidsansatte til **0,50** og genberegner. Brad har nu tre versioner, der hver især har omkostningstotaler, der er justeret med indstillingerne.
+Organisationen overvejer to muligheder angående reducering af omkostningerne ved en bogholderstilling. En mulighed er at afslutte stilling halvvejs gennem året. Den anden mulighed er at ændre stillingen til halv tid for hele året. Brad har oprettet en prognosestilling for den eksisterende bogholderstilling i et grundscenarie. Brad kopierer denne grundprognosestilling til scenarie A, indstiller ophørsdatoen til den 31. maj og genberegner. Brad kopierer derefter den oprindelige prognosestilling til scenarie B, ændrer værdien for fuldtidsansatte til **0,50** og genberegner. Brad har nu tre versioner, der hver især har omkostningstotaler, der er justeret med indstillingerne.
 
 #### <a name="assigning-a-compensation-group"></a>Tildele en løngruppe
 

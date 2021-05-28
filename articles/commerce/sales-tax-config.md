@@ -2,7 +2,6 @@
 title: Konfigurere moms for onlineordrer
 description: Dette emne giver en oversigt over valg af momsgrupper for forskellige onlineordretyper i Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: AnnBe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 8df939c1a566fb63bc53e455cc6c2aa85956ac79
-ms.sourcegitcommit: 583801af75c50915ea5ffc60e831fb617d045533
+ms.openlocfilehash: fff4f39703a146412b460dacc3805fde097ab756
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853805"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021434"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurere moms for onlineordrer
 
@@ -41,7 +40,7 @@ Når en onlineordre afgives, bruger Commerce-momsprogrammet leveringsadressen fo
 
 ### <a name="order-pick-up-in-store"></a>Ordreafhentning i butik
 
-For ordrelinjer, hvor der er angivet afhentning i butik eller ved fortovskant, anvendes momsgruppen fra den valgte afhentningsbutik. Du kan finde flere oplysninger om, hvordan du konfigurerer moms for en bestemt butik, i [Angive andre momsindstillinger for butikker](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+For ordrelinjer, hvor der er angivet afhentning i butik eller ved fortovskant, anvendes momsgruppen fra den valgte afhentningsbutik. Du kan finde flere oplysninger om, hvordan du konfigurerer moms for en bestemt butik, i [Angive andre momsindstillinger for butikker](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
 ## <a name="customer-account-based-taxes-for-online-orders"></a>Kundekontobaseret moms for onlineordrer
 
@@ -71,15 +70,15 @@ I følgende tabel forklares det, om destinationsbaseret moms eller kundekontobas
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Konfigurere moms for onlinebutikker, der er baseret på destinationen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
+[Konfigurere moms for onlinebutikker, der er baseret på destinationen](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
-[Momsoversigt](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
+[Momsoversigt](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Momsberegningsmetoder i feltet Grundlag](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
+[Momsberegningsmetoder i feltet Grundlag](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Tildeling og tilsidesættelser af moms](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
+[Tildeling og tilsidesættelser af moms](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Indstillinger for beregning af hele beløbet og intervaller for momskoder](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
+[Indstillinger for beregning af hele beløbet og intervaller for momskoder](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
 [Beregning af momsfritagelse](tax-exempt-price-inclusive.md) 
 

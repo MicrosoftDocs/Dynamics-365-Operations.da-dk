@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792237"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027933"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversigt over sider til indkøbsvogn og betaling ved kassen
 
@@ -83,7 +83,7 @@ Kunden kan gennemføre betalingsprocessen som gæstebruger eller som en bruger, 
 
 ### <a name="order-summary"></a>Ordreoversigt
 
-Ved kassen vises en oversigt over linjevarerne i indkøbsvognen, så kunden kan bekræfte ordren, før den afgives. Linjevarerne kan ikke redigeres i betalingsprocessen. Men der findes et link til indkøbsvognen, hvis brugeren vil gå tilbage og redigere linjevarer.
+Ved kassen vises en oversigt over linjevarerne i indkøbsvognen, så kunden kan bekræfte ordren, før ordren afgives. Linjevarerne kan ikke redigeres i betalingsprocessen. Men der findes et link til indkøbsvognen, hvis brugeren vil gå tilbage og redigere linjevarer.
 
 Når kunden har angivet forsendelses- og faktureringsoplysninger, afspejler ordreoversigten det beløb, der skal betales, når fordelskundepoint, gavekort og andre betalinger er anvendt.
 

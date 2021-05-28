@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6efc20de5309bc7ec209a557a4bc12c6a0a42a43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a14b98cab78896d3a6c2e567cadc1ff9a991a278
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804325"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018948"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Indgående lagerhandling i POS
 
@@ -70,7 +70,7 @@ De batchjob, du opretter, bruges til at behandle dokumenter, der ikke fejler ell
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Krav: Føj indgående handling til POS-skærmlayoutet
 
-Før din organisation kan bruge funktionerne i indgående handling, skal den konfigurere POS-handlingen **Indgående handling** på et eller flere af dine [POS-skærmlayout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Før du implementerer den nye handling i et produktionsmiljø, skal du sikre dig, at du tester den og lærer brugerne i at bruge den.
+Før din organisation kan bruge funktionerne i indgående handling, skal den konfigurere POS-handlingen **Indgående handling** på et eller flere af dine [POS-skærmlayout](/dynamics365/unified-operations/retail/pos-screen-layouts). Før du implementerer den nye handling i et produktionsmiljø, skal du sikre dig, at du tester den og lærer brugerne i at bruge den.
 
 ## <a name="overview"></a>Oversigt
 
@@ -159,9 +159,9 @@ I Commerce version 10.0.14 og nyere kan brugere modtage et produkt, der ikke opr
 
 Denne funktion fungerer kun i forbindelse med modtagelse af indkøbsordrer. Det er ikke muligt at modtage varer mod flytteordrer, når varerne ikke tidligere er bestilt og afsendt fra det udgående lagersted.
 
-Brugere kan ikke føje nye produkter til indkøbsordren under POS-modtagelse, hvis indkøbsordrens [arbejdsgang for ændringsstyring](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) er aktiveret i Commerce Headquarters (HQ). Hvis du vil aktivere ændringsstyring, skal alle ændringer af en indkøbsordre først godkendes, før modtagelse kan tillades. Da denne proces gør det muligt for en modtager at føje nye linjer til indkøbsordren, mislykkes modtagelsen, hvis arbejdsgangen for ændringsstyring er aktiveret. Hvis ændringsstyring er aktiveret for alle indkøbsordrer eller den leverandør, der er knyttet til indkøbsordren, der aktivt modtages på POS, kan brugeren ikke føje nye produkter til indkøbsordren under modtagelse i POS.
+Brugere kan ikke føje nye produkter til indkøbsordren under POS-modtagelse, hvis indkøbsordrens [arbejdsgang for ændringsstyring](../supply-chain/procurement/purchase-order-approval-confirmation.md) er aktiveret i Commerce Headquarters (HQ). Hvis du vil aktivere ændringsstyring, skal alle ændringer af en indkøbsordre først godkendes, før modtagelse kan tillades. Da denne proces gør det muligt for en modtager at føje nye linjer til indkøbsordren, mislykkes modtagelsen, hvis arbejdsgangen for ændringsstyring er aktiveret. Hvis ændringsstyring er aktiveret for alle indkøbsordrer eller den leverandør, der er knyttet til indkøbsordren, der aktivt modtages på POS, kan brugeren ikke føje nye produkter til indkøbsordren under modtagelse i POS.
 
-Den funktionalitet, der gør det muligt at tilføje linjer, kan ikke bruges som en løsning til at modtage yderligere mængder af produkter, der allerede findes på indkøbsordren. Overmodtagelse administreres via de standardindstillinger for [overmodtagelse](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) for produktlinjen på indkøbsordren.
+Den funktionalitet, der gør det muligt at tilføje linjer, kan ikke bruges som en løsning til at modtage yderligere mængder af produkter, der allerede findes på indkøbsordren. Overmodtagelse administreres via de standardindstillinger for [overmodtagelse](#over-receiving-validations) for produktlinjen på indkøbsordren.
 
 Hvis **Føj linjer til indkøbsordren under POS-modtagelse** er aktiveret, og en bruger modtager med den **Indgående handling** i POS, og brugeren scanner eller indtaster en produktstregkode eller et produktnummer, der ikke genkendes som en vare på den aktuelle indkøbsordre, men genkendes som en gyldig vare, vises der en meddelelse for brugeren om tilføjelse af varen på indkøbsordren. Hvis brugeren føjer varen til indkøbsordren, betragtes det antal, der er angivet under **Modtages nu**, for det bestilte antal på indkøbsordrelinjen.
 

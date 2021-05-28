@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834590"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026199"
 ---
 # <a name="set-up-postdated-checks"></a>Oprette fremdaterede checks
 
@@ -53,7 +53,11 @@ Rollen for denne procedure er Kasserer. Denne procedure bruger demofirmaet USMF.
     * Vælg den bankkonto, der bruges til at fratrække fakturabeløbet.  
 18. Klik på Gem.
 19. Luk siden.
-
-
+> [!NOTE]
+> Hvis du vil kunne bogføre en fremdateret check på en bankkonto, når sessionsdatoen er større end eller lig med forfaldsdatoen, skal du aktivere funktionen **Forfaldsdatovalidering af bogføring af betalingskladde med fremdaterede checks på bankkontoen**. Denne funktion giver dig mulighed for at bogføre betalingskladder for kreditorer eller debitorer med fremdaterede checks, når sessionsdatoen er større end eller lig med forfaldsdatoen.
+> 
+> Når du angiver **Betalingsmåde** (**Kreditor > Opsætning af betaling > Betalingsmåder**), skal du ikke udfylde **Mellemkonto**. I dette tilfælde udfyldes modkontoen med den bankkonto, der er angivet i **Betalingsmåde**.
+>  
+> Når funktionen er aktiveret, og sessionsdatoen er mindre end forfaldsdatoen, vises følgende fejlmeddelelse, når du bogfører en betalingskladde "Forfaldsdato skal være mindre eller lig med sessionsdatoen, hvis modkontotypen er Bank". Hvis funktionen ikke er aktiveret, kan du bogføre en betalingskladde med en fremdateret check, når sessionsdatoen er mindre end forfaldsdatoen.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

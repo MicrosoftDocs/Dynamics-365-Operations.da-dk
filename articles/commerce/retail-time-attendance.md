@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9bec213cd4954f69605387ae2801d8af98a8111c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7ac7eec69bda7ad2fa41a7311a71a969eddeafb6
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791889"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021482"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Tids- og fremmødestyring i Retail
 
@@ -38,9 +38,9 @@ Dette emne beskriver de scenarier, der understøttes for styring af tid og fremm
 
 ### <a name="plan-worker-schedules"></a>Planlæg tidsplaner for arbejdere
 
-- Anvende profiler ved hjælp af arbejdsplanlægningen. Du kan finde flere oplysninger om arbejdstidsprofiler i [Anvende profiler ved hjælp af arbejdsplanlægning](https://technet.microsoft.com/library/aa551234.aspx).
+- Anvende profiler ved hjælp af arbejdsplanlægningen. Du kan finde flere oplysninger om arbejdstidsprofiler i [Anvende profiler ved hjælp af arbejdsplanlægning](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner).
 
-Du kan finde oplysninger om konfigurationstrin under [Opsætning af tid og fremmøde](https://technet.microsoft.com/library/aa496971.aspx).
+Du kan finde oplysninger om konfigurationstrin under [Opsætning af tid og fremmøde](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance).
 
 ### <a name="commerce-specific-configuration"></a>Commerce-specifik konfiguration
 
@@ -135,7 +135,7 @@ En Commerce-bruger følger arbejdsgangen for at beregne, godkende og overføre t
 - Flere udklokninger
 - Registrere fravær
 
-Du kan finde flere oplysninger om, hvordan du behandler registreringer af tid og fremmøde, under [Behandle registreringer af tid og fremmøde](https://technet.microsoft.com/library/aa573180.aspx).
+Du kan finde flere oplysninger om, hvordan du behandler registreringer af tid og fremmøde, under [Behandle registreringer af tid og fremmøde](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4df5ebaf6e8ae8414515bd11087adcd05a88e581
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835141"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027522"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Udligne en delvis betaling før rabatdatoen med en endelig betaling efter rabatdatoen
 
@@ -40,7 +40,7 @@ Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 40
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Delvis betaling før kasserabatdatoen
 Den 2. juli gennemfører debitor 4027 en delbetaling på 297,00 for fakturaen. Betalingen er berettiget til en kasserabat, fordi Fabrikam tilbyder kasserabatter på delbetalinger, og delbetalingen foretages før datoen for kasserabat. Derfor får debitor 4027 3,00 i kasserabat. Arnie registrerer betalingen for debitor 4027 ved hjælp af betalingskladden. Arnie åbner derefter siden **Udlign posteringer**, så han kan markere fakturaen til udligning.
 
-| Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvalutadebet | Valuta | Beløb, der skal udlignes |
+| Marker     | Anvende kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvalutadebet | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Markeret | Almindelig            | FTI 10020 | 4027    | 25-6-2015 | 25-7-2015 | 10020   | 1.000,00                             | USD      | 297,00           |
 
@@ -95,7 +95,7 @@ Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 | Medtaget kasserabat          | 3,00      |
 | Kasserabatbeløb, der skal medtages | 7:00      |
 
-Arnie ændrer værdien i feltet **Anvend kasserabat** tilbage til **Normal**, da han ikke vil lade denne kunde få den resterende kasserabat på 7,00. Derefter bogfører Arnie betalingen. Når Arnie åbner siden **Kundetransaktioner**, kan han se, at fakturaen har en saldo på 0,00. Han kan også se, at der er to betalinger. Én betaling på 297,00 med en kasserabat på 3,00, og en anden betaling på 700,00.
+Arnie ændrer værdien i feltet **Anvend kasserabat** tilbage til **Normal**, da han ikke vil lade denne kunde få den resterende kasserabat på 7,00. Derefter bogfører Arnie betalingen. Når Arnie åbner siden **Kundetransaktioner**, har fakturaen en saldo på 0,00. Der er to betalinger. Én betaling på 297,00 med en kasserabat på 3,00, og en anden betaling på 700,00.
 
 | Bilag    | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

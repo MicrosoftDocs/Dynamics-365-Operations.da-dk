@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944407"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980943"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
 
@@ -58,7 +58,10 @@ Skalaenhederne ejer følgende data:
   - **Flytteordrer** (kun udgående med simpel pluk- og lastarbejde)
 
 - **Kvitteringsdata for lagerstedsordre** – Disse data bruges kun til indkøbsordrer, der er frigivet manuelt til et lagersted.
-- **Nummerpladedata** – Nummerplader kan oprettes på hubben og skalaenheden. Der er leveret dedikeret konflikthåndtering. Bemærk, at disse data ikke er lagerstedsspecifikke.
+- **Id-data** – Id'er kan oprettes både på hubben og på skalaenheder. Der leveres dedikeret konflikthåndtering. 
+
+    > [!IMPORTANT]
+    > Bemærk, at disse id-data ikke er lagerstedsspecifikke. Hvis det samme id-nummer oprettes på både hub og en vægtenhed under samme synkroniseringscyklus, mislykkes den næste synkronisering. Hvis det sker, skal du gå til **Systemadministration > Forespørgsler > Arbejdsbyrdeforespørgelser > Dublerede poster**, hvor du kan få vist og flette dataene.
 
 ## <a name="outbound-process-flow"></a>Udgående procesflow
 

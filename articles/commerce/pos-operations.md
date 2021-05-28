@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac3eb0da704e06376d8ca969e06fb177ce15a6b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b02f94bb2217729f35f0593fe99807273608811
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804275"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027642"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
@@ -64,7 +64,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 642 | Udfør alle produkter | Angiv leveringsmåden for alle linjer til **Udfør**. | Ja | Ja | Nej | Ja\* | Nej |
 | 641 | Udfør alle valgte produkter | Angiv leveringsmåden for de valgte linjer til **Udfør**. | Ja | Ja | Nr. | Ja\* | Nr. |
 | 647 | Ændring af leveringsmetode | Skift leveringsmåde for forudkonfigurerede salgslinjer til forsendelse. | Ja | Ja | Nr. | Nr.| Nr. |
-| 1215 | Skift adgangskode | Med denne handling kan POS-brugeren ændre sin adgangskode. | Ja | Ja | Ja | Nej | Nej |
+| 1215 | Skift adgangskode | Med denne handling kan POS-brugeren ændre sin adgangskode. | Ja | Ja | Ja | Ingen | Ingen |
 | 123 | Skift måleenhed | Ændre måleenheden for det valgte linjeelement. | Ja | Ja | Nej | Ja | Nej |
 | 639 | Ryd standardsælgeren for transaktionen | Fjern provisionssalgsgruppen (sælger) fra transaktionen. | Ja | Ja | Nej | Ja | Nej |
 | 106 | Ryd antal | Nulstil antallet på den aktuelt valgte linje for **1**. | Ja | Ja | Nej | Ja | Nej |

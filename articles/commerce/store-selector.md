@@ -2,7 +2,6 @@
 title: Modulet Butiksvælger
 description: Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853411"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021458"
 ---
 # <a name="store-selector-module"></a>Butiksvælgermodul
 
@@ -62,7 +61,7 @@ Følg disse trin for at angive længde- og breddegrad for butiksadressen i Comme
 
 ## <a name="bing-maps-integration"></a>Bing Kort-integration
 
-Butiksvælgermodulet er integreret med [Bing Kort REST-API'er (Application Programming Interfaces)](https://docs.microsoft.com/bingmaps/rest-services/) der skal bruge funktionerne for Bings geokodnings- og automatiske forslagsfunktioner (Autosuggest). Der kræves en Bing Kort-API-nøgle, og den skal føjes til siden med delte parametre for Commerce-hovedkontoret. Geokodnings-API'en bruges til at konvertere en placering til værdier for breddegrad og længdegrad. Integrationen med Autosuggest-API'en bruges til at vise søgeforslag, når brugerne angiver placeringer i søgefeltet.
+Butiksvælgermodulet er integreret med [Bing Kort REST-API'er (Application Programming Interfaces)](/bingmaps/rest-services/) der skal bruge funktionerne for Bings geokodnings- og automatiske forslagsfunktioner (Autosuggest). Der kræves en Bing Kort-API-nøgle, og den skal føjes til siden med delte parametre for Commerce-hovedkontoret. Geokodnings-API'en bruges til at konvertere en placering til værdier for breddegrad og længdegrad. Integrationen med Autosuggest-API'en bruges til at vise søgeforslag, når brugerne angiver placeringer i søgefeltet.
 
 For Autosuggest-REST-API'en skal du sikre, at følgende URL-adresser er tilladte pr. webstedets sikkerhedspolitik for indhold (CSP). Denne opsætning udføres i Commerce-webstedsgeneratoren ved at tilføje tilladte URL-adresser i forskellige CSP-direktiver for webstedet (f.eks. **img-src**). Du kan finde flere oplysninger under [Sikkerhedspolitik for indhold](manage-csp.md). 
 
@@ -78,14 +77,14 @@ Butiksvælgermodulet understøtter en **Afhent i butik**-tilstand, der viser en 
 
 Butiksvælgermodulet kan føjes til et købefeltmodul på siden med produktdetaljer (PDP) for at vise butikker, hvor et produkt kan afhentes. Modulet kan også føjes til et indkøbsvognmodul. I dette tilfælde viser butiksvælgermodulet afhentningsindstillinger for de enkelte linjeelementer i indkøbsvognen. Desuden kan butiksvælgermodulet føjes til andre sider eller moduler via udvidelser og tilpasninger.
 
-Hvis dette scenarie skal fungere, skal produkterne konfigureres med leveringstilstanden **afhentning**. Ellers bliver modulet ikke vist på produktsiderne. Du kan finde flere oplysninger om, hvordan du kan konfigurere leveringsmåden, under [Konfigurere leveringsmåder](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Hvis dette scenarie skal fungere, skal produkterne konfigureres med leveringstilstanden **afhentning**. Ellers bliver modulet ikke vist på produktsiderne. Du kan finde flere oplysninger om, hvordan du kan konfigurere leveringsmåden, under [Konfigurere leveringsmåder](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Følgende billede viser et eksempel på et butiksvælgermodul, der bruges på en produktoplysningsside (PDP).
 
 ![Eksempel på et butiksvælgermodul, der bruges på en PDP](./media/BOPIS.PNG)
 
 > [!NOTE]
-> I version 10.0.16 og nyere versioner kan der aktiveres en ny funktion, som giver en organisation mulighed for at definere flere afhentningsmåder i leveringsindstillinger for debitorer.  Hvis denne funktion er aktiveret, vil butiksvælgeren og andre e-handelsmoduler blive forbedret, så brugeren potentielt kan vælge mellem flere muligheder for at afhente leveringer, hvis de er konfigureret.  Yderligere oplysninger om denne funktion finder du i [denne dokumentation](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> I version 10.0.16 og nyere versioner kan der aktiveres en ny funktion, som giver en organisation mulighed for at definere flere afhentningsmåder i leveringsindstillinger for debitorer.  Hvis denne funktion er aktiveret, vil butiksvælgeren og andre e-handelsmoduler blive forbedret, så brugeren potentielt kan vælge mellem flere muligheder for at afhente leveringer, hvis de er konfigureret.  Yderligere oplysninger om denne funktion finder du i [denne dokumentation](./multiple-pickup-modes.md). 
 
 ## <a name="find-stores-mode"></a>Find butikker-tilstand
 
@@ -157,11 +156,11 @@ Hvis du vil konfigurere butiksvælgermodulet til at vise tilgængelige butikker 
 
 [Hurtig rundvisning i indkøbsvogn og betaling](quick-tour-cart-checkout.md)
 
-[Konfigurer leveringsmåder](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Konfigurer leveringsmåder](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Administrere Bing Kort for din organisation](dev-itpro/manage-bing-maps.md)
 
-[Bing Kort-REST-API'er](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Kort-REST-API'er](/bingmaps/rest-services/)
 
 [Kortmodul](map-module.md)
 

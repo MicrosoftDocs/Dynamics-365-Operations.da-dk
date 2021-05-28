@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857267"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018825"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -158,7 +158,7 @@ Netværksadresserbare pengeskuffer, bonprintere og betalingsterminaler kan bruge
 
 ### <a name="dedicated"></a>Dedikeret
 
-Modern POS-klienter til Windows og Android omfatter **dedikerede** eller indbyggede hardwarestationer. Disse klienter kan kommunikere direkte med eksterne enheder ved hjælp af forretningslogik, der er indbygget i programmerne. Android-programmet understøtter kun netværksenheder. Du kan finde yderligere oplysninger om understøttelse af eksterne enheder til Android i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Modern POS-klienter til Windows og Android omfatter **dedikerede** eller indbyggede hardwarestationer. Disse klienter kan kommunikere direkte med eksterne enheder ved hjælp af forretningslogik, der er indbygget i programmerne. Android-programmet understøtter kun netværksenheder. Du kan finde yderligere oplysninger om understøttelse af eksterne enheder til Android i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](./dev-itpro/hybridapp.md).
 
 Hvis du vil bruge den dedikerede hardwarestation, kan du tildele en hardwareprofil til et kasseapparat, som skal bruge Modern POS til Windows- eller Android-programmer. Opret derefter en hardwarestation af typen **Dedikeret** til den butik, hvor registret skal bruges. Start Modern POS uden for pengeskuffe-tilstand, og brug funktionen **Administrer hardwarestationer** til at aktivere hardwarestationens funktioner. Den dedikerede hardwarestation vil som standard være aktiv. Log derefter af Modern POS og derefter på igen, og åbne et skift, så de eksterne enheder, der er konfigureret i hardwareprofilen, kan anvendes. 
 
@@ -199,7 +199,7 @@ Du kan finde flere oplysninger i [Konfigurer, installer og aktiver Modern POS (M
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Installation og konfiguration af Modern POS til Android og iOS
 
-Du kan få flere oplysninger i [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Du kan få flere oplysninger i [Konfigurere POS Hybrid-appen på Android og iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Installation og konfiguration af OPOS-enhed
 
@@ -494,7 +494,7 @@ Denne konfiguration er den mest typiske konfiguration for traditionelle, faste P
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS til Android med en IPC-hardwarestation (indbygget)
 
-**Nyhed for 10.0.8** - Epson-netværksprintere og kontantskuffer, der er tilsluttet de pågældende printere via DK-porten, understøttes nu af Modern POS til Android-app. Du kan finde yderligere oplysninger i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+**Nyhed for 10.0.8** - Epson-netværksprintere og kontantskuffer, der er tilsluttet de pågældende printere via DK-porten, understøttes nu af Modern POS til Android-app. Du kan finde yderligere oplysninger i artiklen [Konfigurere POS Hybrid-appen på Android og iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-klienter, der har en bindende, delt IIS-hardwarestation
 
@@ -614,6 +614,9 @@ De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation,
 | Star         | TSP650II | Brugerdefineret    | Forbundet via netværket   |
 | Star         | mPOP     | OPOS      | Tilsluttet via Bluetooth |
 | HP           | F7M67AA  | OPOS      | Drevet via USB             |
+
+> [!NOTE]
+> Star TSP 100-printeren understøttes ikke for den indbyggede hardwarestation. Den indbyggede hardwarestation bruger en 64-bit proces, som ikke er kompatibel med de eksisterende Star TP 100-drivere. 
 
 #### <a name="bar-code-scanner"></a>Stregkodescanner
 

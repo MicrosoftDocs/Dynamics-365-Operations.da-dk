@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f062f40c9eb883d02c4a0ee06c797ed1b0b22665
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793989"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018574"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -30,7 +30,7 @@ I dette emne beskrives, hvordan du konfigurerer dine Azure Active Directory (Azu
 Dynamics 365 Commerce bruger Azure AD B2C til at understøtte brugerlegitimationsoplysninger og -godkendelsesstrømme. En bruger kan tilmelde dig, logge på og nulstille deres adgangskode via disse strømme. Azure AD B2C gemmer følsomme brugergodkendelsesoplysninger, f.eks. brugernavn og adgangskode. Brugerposten i B2C-lejeren vil gemme en B2C lokal kontopost eller en B2C social identitetsudbyderpost. Disse B2C-poster vil oprette et link tilbage til kundeposten i Commerce-miljøet.
 
 > [!WARNING] 
-> Azure AD B2C gør gamle (ældre) brugerflow forældet inden 1. august 2021. Derfor skal du planlægge at overføre dine brugerflow til den nye anbefalede version. Den nye version indeholder funktionsparitet og nye funktioner. Modulbiblioteket til Commerce version 10.0.15 eller derover skal bruges sammen med de anbefalede B2C-brugerflow. Du kan finde flere oplysninger i [Brugerflow i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Azure AD B2C gør gamle (ældre) brugerflow forældet inden 1. august 2021. Derfor skal du planlægge at overføre dine brugerflow til den nye anbefalede version. Den nye version indeholder funktionsparitet og nye funktioner. Modulbiblioteket til Commerce version 10.0.15 eller derover skal bruges sammen med de anbefalede B2C-brugerflow. Du kan finde flere oplysninger i [Brugerflow i Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
  
  > [!NOTE]
  > Commerce-evalueringsmiljøer har en forudindlæst Azure AD B2C-lejer til demonstrationsformål. Det er ikke nødvendigt at indlæse din egen Azure AD B2C-lejer ved hjælp af trinnene nedenfor til evalueringsmiljøer.
@@ -88,7 +88,7 @@ Hvis du vil oprette B2C-programmet, skal du følge disse trin.
 1. Under **Implicit tilladelse** skal du vælge både **Adgangstoken** og **ID-token** for at aktivere dem for programmet. Vælg **Gem**.
 1. Gå til menuen **Oversigt** på Azure-portalen, og kopiér **Program-id (klient)**. Notér dig dette id til senere opsætningstrin (der senere refereres til som **Klient-GUID**).
 
-Du kan finde yderligere oplysninger om appregistreringer i Azure AD B2C i [Den nye erfaring med appregistreringer for Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/app-registrations-training-guide)
+Du kan finde yderligere oplysninger om appregistreringer i Azure AD B2C i [Den nye erfaring med appregistreringer for Azure Active Directory B2C](/azure/active-directory-b2c/app-registrations-training-guide)
 
 ### <a name="reply-urls"></a>Svar-URL-adresser
 
@@ -110,7 +110,7 @@ Azure AD B2C omfatter tre grundlæggende brugerstrømtyper:
 
 Du kan vælge at bruge de standardbrugerstrømme, der leveres af Azure AD, og som viser en side, der er placeret på Aad B2C. Du kan også oprette en HTML-side for at styre udseendet af disse brugerstrømoplevelser. 
 
-Hvis du vil tilpasse brugerpolitiksiderne med indbyggede sider i Dynamics 365 Commerce, skal du se [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md). Du kan finde flere oplysninger under [Tilpasse grænsefladen af brugeroplevelser i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
+Hvis du vil tilpasse brugerpolitiksiderne med indbyggede sider i Dynamics 365 Commerce, skal du se [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md). Du kan finde flere oplysninger under [Tilpasse grænsefladen af brugeroplevelser i Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Oprette en tilmeldings- og login-politik for brugerstrøm
 
@@ -197,15 +197,15 @@ Hvis godkendelse af sociale identitetsudbydere er tilføjet, og en bruger vælge
 
 Før du kan tilføje en social identitetsudbyder til godkendelse, skal du gå til portalen for identitetsudbyderen og konfigurere et identitetsudbyderprogram som angivet i dokumentationen til Azure AD B2C. Der findes en liste over links til dokumentationen nedenfor.
 
-- [Amazon](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (Enkelt lejer)](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-- [Microsoft-konto](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-- [Facebook](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-- [GitHub](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-- [Google](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-- [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-- [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-- [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+- [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (Enkelt lejer)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Microsoft-konto](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### <a name="add-and-set-up-a-social-identity-provider"></a>Tilføje og konfigurere en sociale identitetsudbyder
 
@@ -346,11 +346,11 @@ Gør følgende for at knytte B2C-programmet til dit websted og din kanal.
 
 Hvis du overvejer at overflytte kundeposter fra en tidligere identitetsudbyderplatform, skal du arbejde med Dynamics 365 Commerce-teamet for at gennemgå dine behov for kundeoverflytning.
 
-Du kan få yderligere Azure AD B2C-dokumentation om kundeoverflytning under [Overflytte brugere til Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
+Du kan få yderligere Azure AD B2C-dokumentation om kundeoverflytning under [Overflytte brugere til Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### <a name="custom-policies"></a>Brugerdefinerede politikker
 
-Du kan få yderligere oplysninger om tilpasning af Azure AD B2C-interaktioner og politikstrømme, der ligger ud over, hvad der tilbydes af B2C standardpolitikker, i [Tilpassede politikker i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+Du kan få yderligere oplysninger om tilpasning af Azure AD B2C-interaktioner og politikstrømme, der ligger ud over, hvad der tilbydes af B2C standardpolitikker, i [Tilpassede politikker i Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### <a name="secondary-admin"></a>Sekundær administrator
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bb0e646cc4be5fa7fbb8a0ef47b524612a6f9a46
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9d8889581e2e11fa5261805c866a6014df57611
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792481"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027570"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Konfigurere udvidet logonfunktionalitet for MPOS og Cloud POS
 
@@ -51,7 +51,7 @@ Når indstillingen **Logon med medarbejderkort kræver adgangskode** er aktivere
 
 ## <a name="assigning-an-extended-logon"></a>Tildele et udvidet logon
 
-Som standard er det kun chefer, der kan tildele udvidet logon til medarbejdere. Hvis du vil tildele udvidet logon, skal du gå til **Udvidet logon** i POS. Søg derefter efter en medarbejder ved at angive hans eller hendes operatør-id i søgefeltet. Vælg medarbejderen, og klik derefter på **Tildel**. På næste side skal det udvidede logon stryges eller scannes for at tildele medarbejderen. Hvis strygningen eller scanning indlæses, bliver knappen **OK** tilgængelig. Klik på **OK** for at gemme det udvidede logon for den medarbejder.
+Som standard er det kun chefer, der kan tildele udvidet logon til medarbejdere. Hvis du vil tildele udvidet logon, skal du gå til **Udvidet logon** i POS. Søg derefter efter en medarbejder ved at angive vedkommendes operatør-id i søgefeltet. Vælg medarbejderen, og klik derefter på **Tildel**. På næste side skal det udvidede logon stryges eller scannes for at tildele medarbejderen. Hvis strygningen eller scanning indlæses, bliver knappen **OK** tilgængelig. Klik på **OK** for at gemme det udvidede logon for den medarbejder.
 
 ## <a name="deleting-an-extended-logon"></a>Slette et udvidet logon
 
@@ -63,7 +63,7 @@ Logontjenesten kan udvides til at understøtte yderligere enheder med udvidet lo
 
 ## <a name="using-extended-logon"></a>Brug af udvidet logon
 
-Når Udvidet logon er konfigureret, og en medarbejder har fået tildelt en stregkode eller magnetstribe, skal medarbejderen har blot stryge eller scanne sit kort, mens POS-logonsiden vises. Hvis der også kræves en adgangskode, før logon kan fortsætte, kan medarbejderen indtaste sin adgangskode.
+Når Udvidet logon er konfigureret, og en medarbejder har fået tildelt en stregkode eller magnetstribe, skal medarbejderen blot stryge eller scanne sit kort, mens POS-logonsiden vises. Hvis der også kræves en adgangskode, før logon kan fortsætte, kan medarbejderen indtaste sin adgangskode.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

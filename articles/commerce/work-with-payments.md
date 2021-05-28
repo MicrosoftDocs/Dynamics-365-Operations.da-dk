@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ff1cf8619bc94c35e416b2c7dcf2350d2238dbf5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f7ab0aadb9ef99e2a8f7263434ddbc2f4813926a
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793891"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027426"
 ---
 # <a name="payment-methods-in-call-centers"></a>Betalingsmetoder i callcentre
 
@@ -49,7 +49,7 @@ Når der defineres betalingsmåder, skal de knyttes til en finanskonto eller ban
 
 For refusionsbehandlingsscenarier bruger Callcenter også nogle af de betalingsmåder, der er defineret i Debitor. Hvis du vil konfigurere disse betalingsmetoder, skal du gå til **Retail og Commerce** \> **Konfiguration af kanal** \> **Call center-konfiguration** \> **Call center-refusionsmetoder**. Du skal udføre denne konfiguration for at behandle refusionschecks til debitorer. Hvis en debitor oprindeligt har betalt for en ordre ved hjælp af kontanter eller en check, vil brugeren muligvis sende debitoren en refusionscheck gennem Debitor. I så fald skal betalingstyperne for kontanter og check knyttes til den rette betalingsmetode i Debitor for at sikre, at refusionen behandles korrekt.
 
-Hvis en bruger behandler en returordre som en callcenter-bruger i Commerce, men han eller hun ikke kan knytte returneringen til et oprindeligt salg, skal betalingsmetoden **Returnering** defineres i parametrene for Callcenter. Gå til **Retail og Commerce** \> **Konfiguration af kanal** \> **Call center-konfiguration** \> **Call center-parametre**, og klik derefter på fanen **RMA/returnering** for at sikre i feltet **Betalingsmetode**, at der er defineret en betalingsmetode. Betalingsmetoden, bliver den betalingsmåde, der bruges til refusioner. Den vil typisk være defineret enten som betaling med check eller kundekonto.
+Hvis en bruger behandler en returordre som en callcenter-bruger i Commerce, men ikke er i stand til at knytte returneringen til et oprindeligt salg, skal betalingsmetoden **Returnering** defineres i parametrene for Callcenter. Gå til **Retail og Commerce** \> **Konfiguration af kanal** \> **Call center-konfiguration** \> **Call center-parametre**, og klik derefter på fanen **RMA/returnering** for at sikre i feltet **Betalingsmetode**, at der er defineret en betalingsmetode. Betalingsmetoden, bliver den betalingsmåde, der bruges til refusioner. Den vil typisk være defineret enten som betaling med check eller kundekonto.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

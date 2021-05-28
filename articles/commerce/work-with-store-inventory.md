@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4891f9dcb031f4cb8dfb91f3fe1a301aad9838e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 64106cb1aeea01f1f227247d32b8b1dfdea98362
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793867"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020189"
 ---
 # <a name="commerce-inventory-management"></a>Commerce-lagerstyring
 
@@ -39,11 +39,11 @@ Commerce-programmet, der kører på CSU, understøtter i øjeblikket ikke følge
 
 - POS-programmet kan i begrænset omfang understøtte følgende dimensioner. POS kan med andre automatisk angive nogle af de dimensioner i lagerposteringer baseret på konfigurationen af lagerstedet/butiksopsætningen. POS understøtter ikke dimensionerne fuldstændigt på den måde, de understøttes, hvis en salgstransaktion angives manuelt i Commerce Headquarters. 
 
-- **Lagerstyringssted** – når de bruger de nye POS-handlinger [Indgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) og [Udgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation), kan brugerne vælge et lagerstyringssted, som de vil modtage varer til, eller forsende udgående ordrevarer ud fra. Hvis der bruges den forældede handling **Pluk og modtagelse**, er understøttelse af begrænset lokationsstyring tilgængelig for modtagelse og afsendelse af udgående overflytninger. Denne understøttelse er kun tilgængelig, hvis indstillingen **Brug proces til lagerstyringssted** er aktiveret for varen og butikkens lager. En lagerlokation kan ikke bruges i øjeblikket med handlingen **Status** eller **Lagersøgning**.
+- **Lagerstyringssted** – når de bruger de nye POS-handlinger [Indgående handling](./pos-inbound-inventory-operation.md) og [Udgående handling](./pos-outbound-inventory-operation.md), kan brugerne vælge et lagerstyringssted, som de vil modtage varer til, eller forsende udgående ordrevarer ud fra. Hvis der bruges den forældede handling **Pluk og modtagelse**, er understøttelse af begrænset lokationsstyring tilgængelig for modtagelse og afsendelse af udgående overflytninger. Denne understøttelse er kun tilgængelig, hvis indstillingen **Brug proces til lagerstyringssted** er aktiveret for varen og butikkens lager. En lagerlokation kan ikke bruges i øjeblikket med handlingen **Status** eller **Lagersøgning**.
 
-- **Nummerplade** – nummerplader er kun relevante, når indstillingen **Brug proces til lagerstyringssted** er aktiveret på varen og butikkens lager. I POS er det sådan, at hvis lageret modtages på en butiks lager sted ved hjælp af **Indgående handling** eller handlingen **Pluk og modtagelse**, hvor processen til lagerstyringsstedet er aktiveret, og hvis den placering, der er valgt til at modtage varen, er knyttet til en lokationsprofil, der kræver nummerpladekontrol, anvender POS-programmet automatisk en nummerplade på modtagelseslinjen. POS-brugere kan ikke ændre eller administrere disse id-data. Hvis det er nødvendigt med fuld styring af id'er, anbefaler via, at butikken bruger [lagerstyringsappen](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) eller administrationsklient til at styre modtagelsen af disse varer.
+- **Nummerplade** – nummerplader er kun relevante, når indstillingen **Brug proces til lagerstyringssted** er aktiveret på varen og butikkens lager. I POS er det sådan, at hvis lageret modtages på en butiks lager sted ved hjælp af **Indgående handling** eller handlingen **Pluk og modtagelse**, hvor processen til lagerstyringsstedet er aktiveret, og hvis den placering, der er valgt til at modtage varen, er knyttet til en lokationsprofil, der kræver nummerpladekontrol, anvender POS-programmet automatisk en nummerplade på modtagelseslinjen. POS-brugere kan ikke ændre eller administrere disse id-data. Hvis det er nødvendigt med fuld styring af id'er, anbefaler via, at butikken bruger [lagerstyringsappen](../supply-chain/warehousing/install-configure-warehousing-app.md) eller administrationsklient til at styre modtagelsen af disse varer.
 
-- **Serienummer** – POS-programmet giver understøttelse af registrering af et enkelt serienummer på en transaktions salgslinje for ordrer, der er oprettet i POS, og omfatter serialiserede varer. Dette serienummer bliver ikke valideret mod registrerede serienumre, der allerede findes på lageret. Hvis der oprettes en salgsordre i callcenterkanalen, eller den opfyldes via ERP, og der er registreret flere serienumre på en enkelt salgslinje under opfyldningsprocessen i ERP, kan disse serienumre ikke anvendes eller valideres, hvis en returværdi behandles for denne ordre i POS. Når lageret modtages ved hjælp af **Indgående handling**, kan brugere [registrere eller bekræfte de modtagne serienumre](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+- **Serienummer** – POS-programmet giver understøttelse af registrering af et enkelt serienummer på en transaktions salgslinje for ordrer, der er oprettet i POS, og omfatter serialiserede varer. Dette serienummer bliver ikke valideret mod registrerede serienumre, der allerede findes på lageret. Hvis der oprettes en salgsordre i callcenterkanalen, eller den opfyldes via ERP, og der er registreret flere serienumre på en enkelt salgslinje under opfyldningsprocessen i ERP, kan disse serienumre ikke anvendes eller valideres, hvis en returværdi behandles for denne ordre i POS. Når lageret modtages ved hjælp af **Indgående handling**, kan brugere [registrere eller bekræfte de modtagne serienumre](./pos-serialized-items.md).
 
 - **Batch-id** – POS-programmet giver begrænset understøttelse under bogføring af opgørelsen, hvis en batchstyret vare sælges, men POS-brugere kan ikke definere det batch-id, der blev solgt eller plukket ved hjælp af POS-programmet.
 
@@ -56,11 +56,11 @@ Commerce-programmet, der kører på CSU, understøtter i øjeblikket ikke følge
 
 ## <a name="purchase-orders"></a>Indkøbsordrer
 
-Indkøbsordrer oprettes i Commerce Headquarters. Hvis en butiks lagersted er medtaget i indkøbsordrehovedet eller på indkøbsordrelinjer, kan linjerne modtages i butikken ved hjælp af [Indgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) i POS. 
+Indkøbsordrer oprettes i Commerce Headquarters. Hvis en butiks lagersted er medtaget i indkøbsordrehovedet eller på indkøbsordrelinjer, kan linjerne modtages i butikken ved hjælp af [Indgående handling](./pos-inbound-inventory-operation.md) i POS. 
 
 ## <a name="transfer-orders"></a>Flytteordrer
 
-Flytteordrer kan oprettes i Commerce Headquarters eller enten ved hjælp af [Indgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) eller [Udgående handling](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) i POS. Brug den **Indgående handling** for POS til at oprette en anmodning om flytteordre for at få lager sendt til butikken fra et andet lagersted eller butikslokalitet. Brug den **Udgående handling** for POS til at oprette en anmodning om flytteordre for at få lager sendt fra butikken til et andet lagersted eller en anden butikslokalitet. Når en flytteordre for en butik er oprettet, kan den pågældende butik administrere modtagelsen af flytteordren via den **Indgående handling** i POS. Hvis butikken sender lager til en anden lokation, bruges den **Udgående handling** i POS til at administrere butikkens proces for udgående forsendelser.
+Flytteordrer kan oprettes i Commerce Headquarters eller enten ved hjælp af [Indgående handling](./pos-inbound-inventory-operation.md) eller [Udgående handling](./pos-outbound-inventory-operation.md) i POS. Brug den **Indgående handling** for POS til at oprette en anmodning om flytteordre for at få lager sendt til butikken fra et andet lagersted eller butikslokalitet. Brug den **Udgående handling** for POS til at oprette en anmodning om flytteordre for at få lager sendt fra butikken til et andet lagersted eller en anden butikslokalitet. Når en flytteordre for en butik er oprettet, kan den pågældende butik administrere modtagelsen af flytteordren via den **Indgående handling** i POS. Hvis butikken sender lager til en anden lokation, bruges den **Udgående handling** i POS til at administrere butikkens proces for udgående forsendelser.
 
 ## <a name="stock-counts"></a>Lagerstatus
 
@@ -68,7 +68,7 @@ Status kan enten være planlagt eller ikke-planlagt. Planlagte statusopgørelser
 
 ## <a name="inventory-lookup"></a>Lagersøgning
 
-Det antal produkter, der i øjeblikket er disponibelt for flere butikker og lagersteder, kan ses på siden **Lagersøgning**. Ud over den aktuelle disponible beholdning kan det fremtidige disponible tilsagn (DTT) vises for hver enkelt butik. Vælg den butik, du vil se DTT-mængder for, og vælg derefter **Vis butikkens tilgængelighed**. Få flere oplysninger om de konfigurationsindstillinger, der er tilgængelige, i afsnittet [Beregne lagertilgængelighed for detailkanaler](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+Det antal produkter, der i øjeblikket er disponibelt for flere butikker og lagersteder, kan ses på siden **Lagersøgning**. Ud over den aktuelle disponible beholdning kan det fremtidige disponible tilsagn (DTT) vises for hver enkelt butik. Vælg den butik, du vil se DTT-mængder for, og vælg derefter **Vis butikkens tilgængelighed**. Få flere oplysninger om de konfigurationsindstillinger, der er tilgængelige, i afsnittet [Beregne lagertilgængelighed for detailkanaler](./calculated-inventory-retail-channels.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

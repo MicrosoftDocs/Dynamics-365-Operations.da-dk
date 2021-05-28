@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dc4ae56be1740f0160b4e4777f8db93a6bc4e704
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792261"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027957"
 ---
 # <a name="account-management-pages-overview"></a>Oversigt over sider til kontostyring
 
@@ -39,7 +39,7 @@ I følgende illustration vises et eksempel på landingssiden til kontostyring.
 
 ### <a name="my-profile-page"></a>Siden Min profil
 
-På siden **Min profil** vises kundens kontooplysninger, f.eks. personens navn og telefonnummer. Kunden kan opdatere sine profiloplysninger på denne side. Denne side kan tilpasses, så den indeholder yderligere indstillinger for kundekontoen, f.eks. en indstilling for tilmelding til marketingmail.
+På siden **Min profil** vises kundens kontooplysninger, f.eks. vedkommende persons navn og telefonnummer. Kunden kan opdatere sine profiloplysninger på denne side. Denne side kan tilpasses, så den indeholder yderligere indstillinger for kundekontoen, f.eks. en indstilling for tilmelding til marketingmail.
 
 I følgende illustration vises et eksempel på en **Min profil**-side, der er oprettet ved hjælp af modulbiblioteket.
 

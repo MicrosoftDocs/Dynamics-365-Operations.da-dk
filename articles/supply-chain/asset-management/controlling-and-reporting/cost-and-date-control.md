@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d6f0a155b38b1d732d17bd2f964677862ff363e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808658"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016126"
 ---
 # <a name="cost-and-date-control"></a>Dato- og omkostningsstyring
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-I Styring af aktiver kan du beregne omkostninger for at få et overblik over de faktiske omkostninger i forhold til budgetterede omkostninger på aktiver, arbejdssteder og arbejdsordrer. De faktiske omkostninger er baseret på bogførte transaktioner. 
+I Styring af aktiver kan du beregne omkostninger for at få et overblik over de faktiske omkostninger i forhold til budgetterede omkostninger på aktiver, arbejdssteder og arbejdsordrer. De faktiske omkostninger er baseret på bogførte transaktioner.
 
 Du kan også foretage en datoberegning, hvis du vil sammenligne planlagte start- og slutdatoer med faktiske start- og slutdatoer på arbejdsordrer.
 
@@ -46,8 +44,8 @@ De beregninger, der foretages for aktiver, arbejdssteder og arbejdsordrer, er n�
 
 5. Du kan bruge feltet **Niveau** til at angive, hvor detaljerede omkostningsstyringslinjerne skal være i forbindelse med arbejdssteder. 
 
-    Hvis du f.eks. indsætter tallet "1" i feltet, og du har et arbejdsstedshierarki med flere niveauer, vises alle omkostningsstyringslinjer for et arbejdssted på det øverste niveau, og derfor kan timerne på en linje være opsummeret fra arbejdssteder, der findes på et lavere niveau. 
-    
+    Hvis du f.eks. indsætter tallet "1" i feltet, og du har et arbejdsstedshierarki med flere niveauer, vises alle omkostningsstyringslinjer for et arbejdssted på det øverste niveau, og derfor kan timerne på en linje være opsummeret fra arbejdssteder, der findes på et lavere niveau.
+
     Hvis du indsætter tallet "0" i feltet **Niveau**, kan du se et detaljeret resultat, der viser alle omkostningsstyringslinjer på alle de arbejdsstedsniveauer, de er relateret til.
 
 6. Vælg "Ja" på knappen **Vis åben bindende omkostning**, hvis du vil medtage denne kolonne i beregningen.
@@ -64,7 +62,7 @@ De beregninger, der foretages for aktiver, arbejdssteder og arbejdsordrer, er n�
 
 10. Klik på **Sammenlæg pr.**-knapperne på siden **Omkostningsstyring for aktiv** for at få vist det nødvendige detaljeringsniveau i beregningen. De valgte **Sammenlæg pr.**-knapper er fremhævet. Klik på en knap for at aktivere eller deaktivere den.
 
-## <a name="example"></a>Eksempel
+## <a name="example-of-calculation-results-in-asset-cost-control"></a>Eksempel på beregningsresultater i omkostningsstyring for aktiv
 
 I skærmbilledet herunder vises et eksempel på beregningsresultater i **Omkostningsstyring for aktiv**.
 
@@ -76,7 +74,6 @@ I skærmbilledet herunder vises et eksempel på beregningsresultater i **Omkostn
 ![Eksempel på beregningsresultater i Omkostningsstyring for aktiv](media/02-controlling-and-reporting.png)
 
 Du kan også foretage en omkostningsberegning ved at vælge flere aktiver i **Alle aktiver** eller **Aktive aktiver**. Derefter skal du klikke på knappen **Omkostningsstyring** under fanen **Generelt**. I dialogboksen **Omkostningsstyring for aktiv** indsættes de valgte aktiver automatisk i feltet **Aktiv** i oversigtspanelet **Poster, der skal indgå**. Klik på **OK**, så der vises en omkostningsberegning for de valgte aktiver. Den samme procedure kan udføres for arbejdssteder i **Alle arbejdssteder** eller **Aktive arbejdssteder** og for arbejdsordrer i **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
-
 
 ## <a name="work-order-date-control"></a>Datokontrol af arbejdsordre
 
@@ -94,7 +91,7 @@ Brug denne side til at få en oversigt over forventede start- og slutdatoer samm
 
 6. Klik på **Sammenlæg pr.**-knapper for at få vist det nødvendige detaljeringsniveau i beregningen. De valgte **Sammenlæg pr.**-knapper er fremhævet. Klik på en knap for at aktivere eller deaktivere den.
 
-## <a name="example"></a>Eksempel
+## <a name="example-of-calculation-results-in-work-order-date-control"></a>Eksempel på beregningsresultater i datostyring af arbejdsordre
 
 I skærmbilledet herunder vises et eksempel på beregningsresultater i **Datostyring af arbejdsordre**.
 

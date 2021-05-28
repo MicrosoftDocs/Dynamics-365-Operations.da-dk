@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d6fa36d7bb45e1cd9f8c3fbc1e60ac521f1f9b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d9d36bcb05cf466d34d921d8cd5266b6c12a63d7
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795447"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028245"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Styring af skift og pengeskuffe
 
@@ -84,7 +84,7 @@ Denne handling er ofte den første handling, der udføres i et skift, der netop 
 
 ### <a name="tender-removal"></a>Fjernelse af betalingsmiddel
 
-*Fjernelse af betalingsmidler* er ikke-salgstransaktioner, der udføres i et aktivt skift for at reducere mængden af kontanter i pengeskuffen. Denne handling bruges oftest sammen med en handling med flydende tilgang på et andet skift. Hvis kasseapparat 1 f.eks. mangler byttepenge, så fortager brugeren på kasseapparat 2 en fjernelse af betalingsmiddel for at reducere beløbet i vedkommendes pengeskuffe. Brugeren på kasseapparatet 1 foretager derefter en flydende tilgang for at øge beløbet i vedkommendes pengeskuffe.
+*Fjernelse af betalingsmidler* er ikke-salgstransaktioner, der udføres i et aktivt skift for at reducere mængden af kontanter i pengeskuffen. Denne handling bruges oftest sammen med en handling med flydende tilgang på et andet skift. Hvis kasseapparat 1 f.eks. mangler byttepenge, så fortager brugeren på kasseapparat 2 en fjernelse af betalingsmiddel for at reducere beløbet i sin pengeskuffe. Brugeren på kasseapparatet 1 foretager derefter en flydende tilgang for at øge beløbet i sin pengeskuffe.
 
 ### <a name="suspend-shift"></a>Afbryd skifte
 
@@ -154,7 +154,7 @@ Gå til **Retail og Commerce \> Kanaler \> Butikker \> Alle butikker \> Opgørel
 
 Denne opsætning hjælper med til at sikre, at back office-opgørelser medtager de samme posteringer som skift på POS-enehden, og at dataene opsummeres efter dette skift.
 
-Yderligere oplysninger om opgørelse og lukkemetoder finder du i [Gemme konfigurationer for detailopgørelser](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+Yderligere oplysninger om opgørelse og lukkemetoder finder du i [Gemme konfigurationer for detailopgørelser](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

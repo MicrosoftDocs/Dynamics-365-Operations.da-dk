@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45376e43c00116d403f00c58772aefba6fa33eeb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fbd1d9c71ece77cbf4c6ecb741eb6d5e3e3455d9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794012"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028149"
 ---
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>POS-forbedringer for serialiserede produkter
 
@@ -30,7 +30,7 @@ Baseret på indstillingerne i Commerce Headquarters kan produkter klassificeres 
 
 ## <a name="pos-improvements"></a>POS-forbedringer
 
-- **Serienumre er ikke nødvendige, før betaling ved kassen** – tidligere skulle en kasserer, der tilføjede et serialiseret produkt til transaktionen, angive et serienummer. Dette krav blev et problem i scenarier med kundeaktiviteter, hvis kasserere og salgsmedarbejdere havde en mulighed for mersalg af produkter. Indtil betalingstrinnet blev produkterne ofte opdateret i indkøbsvognen. Hver gang en kasserer tilføjede et nyt produkt, bad systemet derfor ham eller hende om serienummeret. Dialogboksen Serienummer indeholder nu knappen **Tilføj senere**. Derfor kan salgsmedarbejderen tilføje varen til transaktionen, men kan angive serienummeret senere. Salgsmedarbejdere kan hurtigt tilføje og erstatte serialiserede varer i indkøbsvognen, og derefter angive serienummeret lige inden betalingen ved kassen. Hvis serienummeret ikke er angivet for alle serialiserede produkter, får en kasserer, der forsøger at afslutte transaktionen, vist en fejlmeddelelse. Denne meddelelse angiver, at kassereren skal angive de manglende serienumre, før han eller hun kan fortsætte.
+- **Serienumre er ikke nødvendige, før betaling ved kassen** – tidligere skulle en kasserer, der tilføjede et serialiseret produkt til transaktionen, angive et serienummer. Dette krav blev et problem i scenarier med kundeaktiviteter, hvis kasserere og salgsmedarbejdere havde en mulighed for mersalg af produkter. Indtil betalingstrinnet blev produkterne ofte opdateret i indkøbsvognen. Hver gang en kasserer tilføjede et nyt produkt, bad systemet derfor kassereren om serienummeret. Dialogboksen Serienummer indeholder nu knappen **Tilføj senere**. Derfor kan salgsmedarbejderen tilføje varen til transaktionen, men kan angive serienummeret senere. Salgsmedarbejdere kan hurtigt tilføje og erstatte serialiserede varer i indkøbsvognen, og derefter angive serienummeret lige inden betalingen ved kassen. Hvis serienummeret ikke er angivet for alle serialiserede produkter, får en kasserer, der forsøger at afslutte transaktionen, vist en fejlmeddelelse. Denne meddelelse angiver, at kassereren skal angive de manglende serienumre, før transaktionen kan fortsættes.
 
     For hver serialiseret vare, hvor serienummeret blev sprunget over, vises der en kommentar under transaktionslinjen. Denne kommentar angiver, at serienummeret ikke er blevet angivet for varen. Kassereren kan derfor hurtigt finde varer, der mangler et serienummer.
 

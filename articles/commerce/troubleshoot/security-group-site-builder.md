@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aa00e9331693600ced2f4ead399a0c005b77ad08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d29e560d0f7b2bbc2415d7a0f6fe18f2ca17dc7c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801501"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020726"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>Sikkerhedsgruppen kan ikke konfigureres for Commerce-webstedsgenerator under den første installation
 
@@ -38,7 +37,7 @@ Når du opretter e-handelskomponenterne som en del af implementeringsprocessen a
 ### <a name="provision-the-e-commerce-site-with-a-user-in-the-correct-tenant"></a>Klargør e-handelswebstedet med en bruger i den korrekte lejer
 
 1. Gå til [Azure-portalen](https://portal.azure.com/).
-1. Under den lejer, som LCS-projektet til dit e-handelswebsted er klargjort til, skal du følge instruktionerne i [Opret en basisgruppe og tilføj medlemmer ved hjælp Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+1. Under den lejer, som LCS-projektet til dit e-handelswebsted er klargjort til, skal du følge instruktionerne i [Opret en basisgruppe og tilføj medlemmer ved hjælp Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 1. Gå til [LCS](https://lcs.dynamics.com/), og log på med en konto, der deler samme lejer som den Azure AD-sikkerhedsgruppe, du lige har oprettet. Kontoen skal have adgang til for at få vist Azure AD-sikkerhedsgruppen.
 1. Gennemfør opsætningstrinnene for at konfigurere e-handelswebstedet. Når du klargør e-handelskomponenterne, skal sikkerhedsgruppen nu vises som en mulighed i dialogboksen.
 
@@ -47,6 +46,6 @@ Når du opretter e-handelskomponenterne som en del af implementeringsprocessen a
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oprette en basisgruppe og tilføje medlemmer ved hjælp af Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+[Oprette en basisgruppe og tilføje medlemmer ved hjælp af Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 [Implementere en ny e-handelslejer](../deploy-ecommerce-site.md)

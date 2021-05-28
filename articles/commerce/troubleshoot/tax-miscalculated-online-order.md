@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7f71add679e1d24f80db8ce3990058b591128ec1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f7cef533d76bdddfbad2e8c5f84f81ef62bccc38
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801405"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021097"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Moms på onlineordrer beregnes forkert
 
@@ -44,7 +43,7 @@ Følg disse trin for at konfigurere momsen for en detailbutik i Commerce Headqua
 1. Konfigurer momsoplysningerne for butikken i sektionen **Moms** i oversigtspanelet **Generelt**.
 
 > [!NOTE]
-> I forbindelse med produktafhentning fra en butik kommer momsgruppen fra den butik, der er valgt til afhentning. Du kan finde flere oplysninger i [Angivelse af andre momsindstillinger for butikker](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+> I forbindelse med produktafhentning fra en butik kommer momsgruppen fra den butik, der er valgt til afhentning. Du kan finde flere oplysninger i [Angivelse af andre momsindstillinger for butikker](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
 ### <a name="configure-the-sales-tax-for-a-customers-address-in-commerce-headquarters"></a>Konfigurere momsen for en kundes adresse i Commerce Headquarters
 
@@ -68,7 +67,7 @@ Følg disse trin for at konfigurere generelle momsgrupper i Commerce Headquarter
 1. Konfigurer momsen for momsgruppen i oversigtspanelet **Detaildestinationsbaseret moms**.
 
 > [!NOTE]
-> For forsendelse, der ikke involverer moms på kundens adresse, bestemmer leveringsadressen på linjen og den destinationsbaserede moms, der er konfigureret for momsgruppen, momsgruppen. Du kan finde flere oplysninger i [Konfigurere moms for onlinebutikker, der er baseret på destinationen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+> For forsendelse, der ikke involverer moms på kundens adresse, bestemmer leveringsadressen på linjen og den destinationsbaserede moms, der er konfigureret for momsgruppen, momsgruppen. Du kan finde flere oplysninger i [Konfigurere moms for onlinebutikker, der er baseret på destinationen](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

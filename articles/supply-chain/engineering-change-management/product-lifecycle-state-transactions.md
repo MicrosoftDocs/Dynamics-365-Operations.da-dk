@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 421fae6eab20eea50b9ce677a1ae7993add6cb93
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8bb3d5848b7e2c50a8fdaba1c6a1a7c0087d1390
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842051"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016950"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktlivscyklustilstande og transaktioner
 
@@ -74,5 +74,24 @@ Følgende felter er tilgængelige for hver proces, der vises i oversigtspanelet 
 
 Hvis du tilføjer flere regler for livscyklustilstand som en tilpasning, kan du få vist disse regler i brugergrænsefladen ved at vælge **Opdater processer** i den øverste rude. Knappen **Opdater processer** er kun tilgængelig for administratorer.
 
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Livscyklustilstande for frigivne produkter og produktvarianter
+
+Når et produkt har varianter (master og varianter), har produktet (masteren) en livscyklustilstand, og hver af varianterne kan også have en anden livscyklustilstand.
+
+Hvis enten varianten eller produktet blokeres i specifikke processer, vil processen også blive blokeret. For at afgøre om en proces er blokeret, kontrolleres følgende af systemet:
+
+- Ved teknikerstyrede produkter:
+  - Hvis den aktuelle teknikerversion er blokeret, skal processen blokeres.
+  - Hvis den aktuelle variant er blokeret, skal processen blokeres.
+  - Hvis det frigivne produkt er blokeret, skal processen blokeres.
+- For standardprodukter:
+  - Hvis den aktuelle variant er blokeret, skal processen blokeres.
+  - Hvis det frigivne produkt er blokeret, skal processen blokeres.
+
+Antag f.eks., at du kun vil sælge én variant (rød) af et bestemt produkt (t-shirts) og foreløbig blokere salget af alle andre varianter. Du kan implementere dette ved hjælp af følgende opsætning:
+
+- Tildel produktet en livscyklustilstand, der giver mulighed for at køre processen. Tildel f.eks. t-shirtproduktet livscyklustilstanden *Salgbar*, som giver mulighed for kørsel af forretningsprocessen *Salgsordre*.
+- Tildel den salgbare variant en livscyklustilstand, der giver mulighed for at køre processen. Tildel f.eks. også den røde variant livscyklustilstanden *Salgbar*.
+- Alle andre varianter tildeles en anden livscyklustilstand, hvor processen er blokeret. Tildel f.eks. den hvide variant (og alle andre varianter) livscyklustilstanden *Ikke salgbar*, hvilket blokerer forretningsprocessen *Salgsordrer*.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

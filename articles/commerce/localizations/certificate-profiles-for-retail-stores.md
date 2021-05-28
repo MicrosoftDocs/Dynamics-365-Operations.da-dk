@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 66a2cc5c87f5567f0e65842638017e5127d68a13
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44042fc43fa3b43358120fb6f8f633abeae7005f
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798855"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020307"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Brugerdefinerede certifikatprofiler til detailbutikker
 
@@ -79,7 +79,7 @@ Når du føjer en ny linje til siden **Indstillinger for certifikatprofil**, ska
 - **Key Vault-certifikat** – Dette felt er obligatorisk, hvis du angiver feltet **Lokationstype** til **Key Vault**. Brug det til at angive en Key Vault-certifikathemmelighed.
 
     > [!NOTE]
-    > Før du bruger et Key Vault-certifikat i certifikatprofiler, skal du sørge for at overføre et certifikat til Key Vault-lageret og følge instruktionerne i [Konfigurere Azure Key Vault-klienten](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
+    > Før du bruger et Key Vault-certifikat i certifikatprofiler, skal du sørge for at overføre et certifikat til Key Vault-lageret og følge instruktionerne i [Konfigurere Azure Key Vault-klienten](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
 - **Butiksnavn** – Dette felt er valgfrit og er kun tilgængeligt, hvis du angiver feltet **Lokationstype** til **Lokalt certifikat**. Brug det til at angive et standardbutiksnavn, der skal bruges til søgning efter lokale certifikater.
 - **Butiksplacering** – Dette felt er valgfrit og er kun tilgængeligt, hvis du angiver feltet **Lokationstype** til **Lokalt certifikat**. Brug det til at angive en standardbutiksplacering, der skal bruges til søgning efter lokale certifikater.

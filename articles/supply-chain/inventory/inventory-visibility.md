@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910419"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6017000"
 ---
 # <a name="inventory-visibility-add-in"></a>Tilføjelsesprogrammet Lagersynlighed
 
@@ -41,20 +41,23 @@ Du skal installere tilføjelsesprogrammet Lagersynlighed ved hjælp af Microsoft
 
 Yderligere oplysninger finder du i [Ressourcer til Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-### <a name="prerequisites"></a>Forudsætninger
+### <a name="inventory-visibility-add-in-prerequisites"></a>Forudsætninger for tilføjelsesprogrammet Lagersynlighed
 
 Før du installerer tilføjelsesprogrammet Lagersynlighed, skal du gøre følgende:
 
 - Få et LCS-implementeringsprojekt med mindst ét miljø installeret.
 - Kontrollér, at forudsætningerne for opsætning af tilføjelsesprogrammer, der er angivet i [oversigten over tilføjelsesprogrammer](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md), er fuldført. Lagersynlighed kræver ikke sammenkædning af dobbeltskrivning.
 - Kontakt teamet for lagersynlighed på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for at få følgende tre krævede filer:
-    - `Inventory Visibility Dataverse Solution.zip`
-    - `Inventory Visibility Configuration Trigger.zip`
-    - `Inventory Visibility Integration.zip` (hvis den version af Supply Chain Management, du kører, er tidligere end version 10.0.18)
+  - `Inventory Visibility Dataverse Solution.zip`
+  - `Inventory Visibility Configuration Trigger.zip`
+  - `Inventory Visibility Integration.zip` (hvis den version af Supply Chain Management, du kører, er tidligere end version 10.0.18)
+- Du kan også kontakte teamet for lagersynlighed på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for at få Package Deployer-pakkerne. Disse pakker kan bruges af et officielt Package Deployer-værktøj.
+  - `InventoryServiceBase.PackageDeployer.zip`
+  - `InventoryServiceApplication.PackageDeployer.zip` (denne pakke indeholder alle ændringerne i `InventoryServiceBase`-pakken samt yderligere komponenter til brugergrænsefladen)
 - Følg instruktionerne i [Hurtig start: Registrer et program med platformen Microsoft-identitet](/azure/active-directory/develop/quickstart-register-app) for at registrere et program og føje en klient til AAD under dit Azure-abonnement.
-    - [Registrere en applikation](/azure/active-directory/develop/quickstart-register-app)
-    - [Tilføje en klienthemmelighed](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-    - **Program-id (klient)** **Klienthemmelighed** og **Lejer-id** bruges i følgende trin.
+  - [Registrere en applikation](/azure/active-directory/develop/quickstart-register-app)
+  - [Tilføje en klienthemmelighed](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+  - **Program-id (klient)**, **Klienthemmelighed** og **Lejer-id** bruges i følgende trin.
 
 > [!NOTE]
 > De lande og områder, der i øjeblikket understøttes, omfatter Canada, USA og EU.
@@ -63,18 +66,49 @@ Hvis du har spørgsmål om disse forudsætninger, skal du kontakte produktteamet
 
 ### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Konfigurere Dataverse
 
-Gør følgende for at konfigurere Dataverse.
+Hvis du vil konfigurere Dataverse til brug med Lagersynlighed, skal du først forberede forudsætningerne og derefter beslutte, om du vil konfigurere Dataverse med Package Deployer-værktøjet eller ved manuelt at importere løsningerne (du behøver ikke at gøre begge dele). Installer derefter tilføjelsesprogrammet Lagersynlighed. I følgende underafsnit beskrives, hvordan du udfører hver af disse opgaver.
 
-1. Føj et serviceprincip til lejeren:
+#### <a name="prepare-dataverse-prerequisites"></a>Forberede Dataverse-forudsætninger
 
-    1. Installer Azure AD PowerShell-modul v2 som beskrevet i [Installere Azure Active Directory PowerShell til Graph](/powershell/azure/active-directory/install-adv2).
-    1. Kør følgende PowerShell-kommando.
+Før du begynder at konfigurere Dataverse, kan du føje et serviceprincip til din lejer på følgende måde:
 
-        ```powershell
-        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+1. Installer Azure AD PowerShell-modul v2 som beskrevet i [Installere Azure Active Directory PowerShell til Graph](/powershell/azure/active-directory/install-adv2).
 
-        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
-        ```
+1. Kør følgende PowerShell-kommando:
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+    
+    New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+    ```
+
+#### <a name="set-up-dataverse-using-the-package-deployer-tool"></a>Konfigurere Dataverse ved hjælp af Package Deployer-værktøjet
+
+Når du har forudsætningerne på plads, skal du benytte følgende fremgangsmåde, hvis du foretrækker at konfigurere Dataverse ved hjælp af Package Deployer-værktøjet. Se næste afsnit for at få oplysninger om, hvordan du importerer løsningerne manuelt i stedet (du skal ikke gøre begge dele).
+
+1. Installer udviklerværktøjer som beskrevet i [Hent værktøjer fra NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
+
+1. Vælg `InventoryServiceBase`- eller `InventoryServiceApplication`-pakken ud fra dine forretningsbehov.
+
+1. Importer løsningerne:
+    1. For `InventoryServiceBase`-pakken:
+        - Pak `InventoryServiceBase.PackageDeployer.zip` ud
+        - Find `InventoryServiceBase`-mappen, filen `[Content_Types].xml`, filen `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, filen `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config` og filen `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. 
+        - Kopier hver af disse mapper og filer til den `.\Tools\PackageDeployment`-mappe, der blev oprettet, da du installerede udviklerværktøjerne.
+    1. For `InventoryServiceApplication`-pakken:
+        - Pak `InventoryServiceApplication.PackageDeployer.zip` ud
+        - Find `InventoryServiceApplication`-mappen, filen `[Content_Types].xml`, filen `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, filen `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config` og filen `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`.
+        - Kopier hver af disse mapper og filer til den `.\Tools\PackageDeployment`-mappe, der blev oprettet, da du installerede udviklerværktøjerne.
+    1. Udfør `.\Tools\PackageDeployment\PackageDeployer.exe`. Følg instruktionerne på skærmen for at importere løsningerne.
+
+1. Tildel sikkerhedsroller til programbrugeren.
+    1. Åbn URL-adressen til dit Dataverse-miljø.
+    1. Gå til **Avancerede indstillinger \> System \> Sikkerhed \> Brugere**, og find brugeren med navnet **# InventoryVisibility**.
+    1. Vælg **Tildel rolle**, og vælg derefter **Systemadministrator**. Hvis der er en rolle med navnet **Common Data Service Bruger**, skal du også vælge den.
+
+#### <a name="set-up-dataverse-manually-by-importing-solutions"></a>Oprette Dataverse manuelt ved at importere løsninger
+
+Når du har forudsætningerne på plads, skal du benytte følgende fremgangsmåde, hvis du foretrækker at konfigurere Dataverse ved at importere løsninger manuelt. Se forrige afsnit for at få oplysninger om, hvordan du bruger Package Deployer-værktøjet i stedet (du skal ikke gøre begge dele).
 
 1. Opret en programbruger til lagersynlighed i Dataverse:
 
@@ -87,7 +121,7 @@ Gør følgende for at konfigurere Dataverse.
 
 1. Hvis dit standardsprog for Dataverse ikke er **engelsk**:
 
-    1. Gå til **Avancerede indstillinger \> Administration \>Sprog**.
+    1. Gå til **Avancerede indstillinger \> Administration \> Sprog**.
     1. Vælg **Engelsk (LanguageCode=1033)**, og vælg **Anvend**.
 
 1. Importér `Inventory Visibility Dataverse Solution.zip`-filen, der indeholder Dataverse-konfigurationsrelaterede enheder, og Power Apps:
@@ -266,7 +300,7 @@ Få et token til sikkerhedsservice ved at gøre følgende:
 
 ### <a name="sample-request"></a><a name="inventory-visibility-sample-request"></a>Eksempelanmodning
 
-Til reference er der en eksempel http-anmodning, og du kan bruge værktøjer eller kodningssprog til at sende denne anmodning, f.eks.``Postman``.
+Til reference er der en eksempel http-anmodning, og du kan bruge værktøjer eller kodningssprog til at sende denne anmodning, f.eks. ``Postman``.
 
 ```json
 # Url
