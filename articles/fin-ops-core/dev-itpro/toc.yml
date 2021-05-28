@@ -84,11 +84,11 @@
               href: dev-tools/version-models-build.md
         - name: Dataintegration
           items:
-            - name: Vælge en strategi for dataintegration (import/eksport)
+            - name: Integration mellem Finance and Operations-apps og tredjepartsservices
               href: data-entities/integration-overview.md
             - name: Prioritetsbaseret begrænsning
               hreF: data-entities/priority-based-throttling.md
-            - name: Prioritetsbaseret begrænsning (FAQ)
+            - name: Prioritetsbaseret begrænsning (Ofte stillede spørgsmål)
               href: data-entities/throttling-faq.md
             - name: API'er for dataintegration
               items:
@@ -126,196 +126,62 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: Oprette poster ved hjælp af postskabeloner
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Dataintegration ved brug af Dataverse
+                - name: Dataintegrator
                   items:
-                    - name: Oversigt over dataintegration ved brug af Dataverse
-                      href: data-entities/data-integration-cds.md
-                    - name: Integration med dobbeltskrivning
+                    - name: Konfigurere et kundeemne til kontant-scenarie
                       items:
-                        - name: Startside for dobbeltskrivning
-                          href: data-entities/dual-write/dual-write-home-page.md
-                        - name: Nyheder eller ændringer i dobbeltskrivning
-                          href: data-entities/dual-write/whats-new-dual-write.md
-                        - name: Oversigt over dobbeltskrivning
-                          href: data-entities/dual-write/dual-write-overview.md
-                        - name: Konfiguration af dobbeltskrivning
-                          items:
-                            - name: Systemkrav til dobbeltskrivning
-                              href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Vejledning i opsætning af dobbeltskrivning
-                              href: data-entities/dual-write/connection-setup.md
-                            - name: Overvejelser ved første synkronisering
-                              href: data-entities/dual-write/initial-sync-guidance.md
-                            - name: Konfiguration af dobbeltskrivning fra Lifecycle Services
-                              href: data-entities/dual-write/lcs-setup.md
-                            - name: Aktivere dobbeltskrivning for eksisterende Finance and Operations-apps
-                              items:
-                                - name: Aktivere dobbeltskrivning for eksisterende Finance and Operations-apps
-                                  href: data-entities/dual-write/enable-dual-write.md
-                                - name: Systemkrav og forudsætninger
-                                  href: data-entities/dual-write/requirements-and-prerequisites.md
-                                - name: Sådan bruges guiden Dobbeltskrivning til at sammenkæde dine miljøer
-                                  href: data-entities/dual-write/link-your-environment.md
-                                - name: Aktivere enhedstilknytning for dobbeltskrivning
-                                  href: data-entities/dual-write/enable-entity-map.md
-                            - name: Overføre valutadatatype til dobbelt skrivning
-                              href: data-entities/dual-write/currrency-decimal-places.md
-                            - name: Konfigurere tilknytning af felter for salgsordrestatus
-                              href: data-entities/dual-write/sales-status-map.md
-                            - name: Filtrere interne ordrer for at undgå synkronisering af ordrer og ordrelinjer
-                              href: data-entities/dual-write/filtering-intercompany-orders.md
-                        - name: Administrere dobbeltskrivning
-                          items:
-                            - name: Tilpasse enheds- og felttilknytninger
-                              href: data-entities/dual-write/customizing-mappings.md
-                            - name: Håndtere flere enhedstilknytninger
-                              href: data-entities/dual-write/multiple-entity-maps.md
-                            - name: Redigere en juridisk enhed efter konfiguration af dobbeltskrivning
-                              href: data-entities/dual-write/edit-legal-entity.md
-                            - name: Fejladministration og beskeder om påmindelser
-                              href: data-entities/dual-write/errors-and-alerts.md
-                            - name: Applikationscyklusstyring
-                              href: data-entities/dual-write/app-lifecycle-management.md
-                        - name: Tilknytning af begreber mellem apps
-                          items:
-                            - name: Integreret kundemaster
-                              href: data-entities/dual-write/customer-mapping.md
-                            - name: Kreditorintegration
-                              items:
-                                - name: Integreret kreditormaster
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Skifte mellem kreditordesign
-                                  href: data-entities/dual-write/vendor-switch.md
-                            - name: Kundefordelskundekort og -belønningspoint
-                              href: data-entities/dual-write/loyalty-mapping.md
-                            - name: Produktintegration
-                              items:
-                                - name: Samlet produktoplevelse
-                                  href: data-entities/dual-write/product-mapping.md
-                                - name: Integrerede lokationer og lagersteder
-                                  href: data-entities/dual-write/sites-warehouses-mapping.md
-                            - name: Firmaintegration
-                              items:
-                                - name: Firmabegreb i Dataverse
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Initialisere firmadata
-                                  href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Organisationshierarki på Dataverse
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Finansierings- og momsdata
-                              items:
-                                - name: Adgang til finansierings- og momsreferencedata
-                                  href: data-entities/dual-write/finance-tax-reference.md
-                                - name: Integreret finans
-                                  href: data-entities/dual-write/ledger-mapping.md
-                                - name: Integreret momsmaster
-                                  href: data-entities/dual-write/tax-mapping.md
-                            - name: Integrere indkøb i Supply Chain Management med Field Service
-                              href: data-entities/dual-write/scm-field-service-procurement.md
-                            - name: Synkronisere efter behov med Supply Chain Management-prissætningsprogrammet
-                              href: data-entities/dual-write/pricing-engine.md
-                            - name: Kundeemne til kontanter i dobbeltskrivning
-                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: Bruge Dynamics 365 Commerce-prissætningsprogrammet med Dynamics 365 Sales
-                              href: data-entities/dual-write/commerce-pricing.md
-                            - name: Interne aktiver til service
-                              href: data-entities/dual-write/in-house-assets.md
-                            - name: Lagertilgængelighed
-                              href: data-entities/dual-write/inventory-availability.md
-                            - name: 'Integreret arbejder, job og position'
-                              href: data-entities/dual-write/integrated-hr.md
-                            - name: Part- og globalt adressekartotek
-                              href: data-entities/dual-write/party-gab.md
-                            - name: Brug af Power Portal sammen med datamodellen for part
-                              href: data-entities/dual-write/party-gab-portal.md
-                            - name: Opgradere til modellen med part- og globalt adressekartotek
-                              href: data-entities/dual-write/upgrade-party-gab.md
-                            - name: Bemærk integration
-                              href: data-entities/dual-write/notes-integration.md
-                            - name: Tilknytningsreference
-                              href: data-entities/dual-write/mapping-reference.md
-                        - name: Understøttelse af dobbeltskrivning
-                          items:
-                            - name: Understøttelse af Field Service-løsninger og Project Service Automation-løsninger
-                              href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: Overflytte kundeemne til kontantdata fra Dataintegrator til skrivesystem
-                              href: data-entities/dual-write/migrate-prospect-to-cash.md
-                            - name: Fejlfinding
-                              items:
-                                - name: Kontroller dobbeltskrivning er konfigureret i Finance and Operations-apps og Dataverse
-                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                                - name: Foretage fejlfinding af problemer under den indledende opsætning
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                                - name: Foretage fejlfinding af problemer under den indledende synkronisering
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: Fejlfinding af problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
-                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                                - name: Foretage fejlfinding af problemer med aktiv synkronisering
-                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                                - name: Foretage fejlfinding af problemer med i forbindelse med løsningsforståelse
-                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: Fejlfinding af problemer fra opgraderinger af Finance and Operations-apps
-                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                                - name: Generel fejlfinding
-                                  href: data-entities/dual-write/dual-write-troubleshooting.md
-                        - name: Ofte stillede spørgsmål om dobbeltskrivning
-                          href: data-entities/dual-write/dual-write-faq.md
-                    - name: Integration med Power Platform
+                        - name: Kundeemne til kontanter
+                          href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                        - name: Synkronisere konti fra Sales direkte med debitorer i Finance and Operations
+                          href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                        - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
+                          href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                        - name: Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations
+                          href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                        - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations
+                          href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                        - name: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
+                          href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                        - name: Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Sales
+                          href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                    - name: Konfigurere integration med Field Service
                       items:
-                        - name: Konfigurere et kundeemne til kontanter-scenarie
-                          items:
-                            - name: Kundeemne til kontanter
-                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                            - name: Synkronisere konti fra Sales direkte med debitorer i Finance and Operations
-                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                            - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
-                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                            - name: Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations
-                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                            - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations
-                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                            - name: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
-                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                            - name: Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Sales
-                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                        - name: Konfigurere integration med Field Service
-                          items:
-                            - name: Oversigt over konfiguration af integration med Field Service
-                              href: ../../supply-chain/sales-marketing/field-service.md
-                            - name: Synkronisere produkter fra Finance and Operations med produkter i Field Service
-                              href: ../../supply-chain/sales-marketing/field-service-product.md
-                            - name: Synkronisere arbejdsordrer i Field Service med salgsordrer i Finance and Operations
-                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                            - name: Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i Finance and Operations
-                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                            - name: Synkronisere lageroverførsler og reguleringer fra Field Service til Finance and Operations
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                            - name: Synkronisere lagerniveauoplysninger fra Finance and Operations til Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                            - name: Synkronisere produkter med lagerenhed fra Finance and Operations til Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                            - name: Synkronisere projektliste fra Finance and Operations til Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                            - name: Synkronisere lagersteder fra Finance and Operations til Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                            - name: Synkronisere arbejdsordrer med projekt fra Field Service til Finance and Operations
-                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                        - name: Konfigurere integration af Project Service Automation
-                          items:
-                            - name: Oversigt over Project Service Automation
-                              href: /dynamics365/project-operations/prod-pma/PSA-integration
-                            - name: Integrationsparametre for Project Service Automation
-                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
-                            - name: Synkronisere projektkontrakter og projekter
-                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
-                            - name: Synkronisere projektopgaver
-                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
-                            - name: Synkronisere udgiftskategorier for projekt
-                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
-                            - name: Synkronisere projektestimater til projektprognoser
-                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
-                            - name: Synkronisere faktiske oplysninger om projekter til projektintegrationskladden
-                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
+                        - name: Oversigt over konfiguration af integration med Field Service
+                          href: ../../supply-chain/sales-marketing/field-service.md
+                        - name: Synkronisere produkter fra Finance and Operations med produkter i Field Service
+                          href: ../../supply-chain/sales-marketing/field-service-product.md
+                        - name: Synkronisere arbejdsordrer i Field Service med salgsordrer i Finance and Operations
+                          href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                        - name: Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i Finance and Operations
+                          href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                        - name: Synkronisere lageroverførsler og reguleringer fra Field Service til Finance and Operations
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                        - name: Synkronisere lagerniveauoplysninger fra Finance and Operations til Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                        - name: Synkronisere produkter med lagerenhed fra Finance and Operations til Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                        - name: Synkronisere projektliste fra Finance and Operations til Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                        - name: Synkronisere lagersteder fra Finance and Operations til Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                        - name: Synkronisere arbejdsordrer med projekt fra Field Service til Finance and Operations
+                          href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                    - name: Konfigurere integration af Project Service Automation
+                      items:
+                        - name: Oversigt over Project Service Automation
+                          href: /dynamics365/project-operations/prod-pma/PSA-integration
+                        - name: Integrationsparametre for Project Service Automation
+                          href: /dynamics365/project-operations/prod-pma/PSA-parameters
+                        - name: Synkronisere projektkontrakter og projekter
+                          href: /dynamics365/project-operations/prod-pma/project-contracts-templates
+                        - name: Synkronisere projektopgaver
+                          href: /dynamics365/project-operations/prod-pma/project-tasks-template
+                        - name: Synkronisere udgiftskategorier for projekt
+                          href: /dynamics365/project-operations/prod-pma/project-categories-templates
+                        - name: Synkronisere projektestimater til projektprognoser
+                          href: /dynamics365/project-operations/prod-pma/project-estimates-templates
+                        - name: Synkronisere faktiske oplysninger om projekter til projektintegrationskladden
+                          href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Forbrug af eksterne webtjenester
               href: data-entities/consume-external-web-service.md
             - name: Elektroniske meddelelser
@@ -496,6 +362,8 @@
                       href: deployment/updateenvironment-newinfrastructure.md
                     - name: 'Fejlfinding i miljøer, der er installeret via selvbetjeningsinstallation'
                       href: deployment/troubleshoot-newinfrastructure.md
+                    - name: Ofte stillede spørgsmål om planlagt vedligeholdelse i selvbetjeningsmiljøer
+                      href: deployment/plannedmaintenance-selfservice.md
                 - name: Komplet onboarding af Azure Resource Manager
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute og Finance and Operations
@@ -1150,8 +1018,140 @@
           items:
             - name: Microsoft Power Platform-integration med Finance and Operations
               href: power-platform/overview.md
+            - name: Dobbeltskrivning
+              items:
+                - name: Startside for dobbeltskrivning
+                  href: data-entities/dual-write/dual-write-home-page.md
+                - name: Nyheder eller ændringer i dobbeltskrivning
+                  href: data-entities/dual-write/whats-new-dual-write.md
+                - name: Oversigt over dobbeltskrivning
+                  href: data-entities/dual-write/dual-write-overview.md
+                - name: Konfiguration af dobbeltskrivning
+                  items:
+                    - name: Systemkrav til dobbeltskrivning
+                      href: data-entities/dual-write/dual-write-system-req.md
+                    - name: Vejledning i opsætning af dobbeltskrivning
+                      href: data-entities/dual-write/connection-setup.md
+                    - name: Overvejelser ved første synkronisering
+                      href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Konfiguration af dobbeltskrivning fra Lifecycle Services
+                      href: data-entities/dual-write/lcs-setup.md
+                    - name: Aktivere dobbeltskrivning for eksisterende Finance and Operations-apps
+                      items:
+                        - name: Aktivere dobbeltskrivning for eksisterende Finance and Operations-apps
+                          href: data-entities/dual-write/enable-dual-write.md
+                        - name: Systemkrav og forudsætninger
+                          href: data-entities/dual-write/requirements-and-prerequisites.md
+                        - name: Sådan bruges guiden Dobbeltskrivning til at sammenkæde dine miljøer
+                          href: data-entities/dual-write/link-your-environment.md
+                        - name: Aktivere enhedstilknytning for dobbeltskrivning
+                          href: data-entities/dual-write/enable-entity-map.md
+                    - name: Overføre valutadatatype til dobbelt skrivning
+                      href: data-entities/dual-write/currrency-decimal-places.md
+                    - name: Konfigurere tilknytning af felter for salgsordrestatus
+                      href: data-entities/dual-write/sales-status-map.md
+                    - name: Filtrere interne ordrer for at undgå synkronisering af ordrer og ordrelinjer
+                      href: data-entities/dual-write/filtering-intercompany-orders.md
+                - name: Administrere dobbeltskrivning
+                  items:
+                    - name: Tilpasse enheds- og felttilknytninger
+                      href: data-entities/dual-write/customizing-mappings.md
+                    - name: Håndtere flere enhedstilknytninger
+                      href: data-entities/dual-write/multiple-entity-maps.md
+                    - name: Redigere en juridisk enhed efter konfiguration af dobbeltskrivning
+                      href: data-entities/dual-write/edit-legal-entity.md
+                    - name: Fejladministration og beskeder om påmindelser
+                      href: data-entities/dual-write/errors-and-alerts.md
+                    - name: Applikationscyklusstyring
+                      href: data-entities/dual-write/app-lifecycle-management.md
+                - name: Tilknytning af begreber mellem apps
+                  items:
+                    - name: Integreret kundemaster
+                      href: data-entities/dual-write/customer-mapping.md
+                    - name: Kreditorintegration
+                      items:
+                        - name: Integreret kreditormaster
+                          href: data-entities/dual-write/vendor-mapping.md
+                        - name: Skifte mellem kreditordesign
+                          href: data-entities/dual-write/vendor-switch.md
+                    - name: Kundefordelskundekort og -belønningspoint
+                      href: data-entities/dual-write/loyalty-mapping.md
+                    - name: Produktintegration
+                      items:
+                        - name: Samlet produktoplevelse
+                          href: data-entities/dual-write/product-mapping.md
+                        - name: Integrerede lokationer og lagersteder
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
+                    - name: Firmaintegration
+                      items:
+                        - name: Firmabegreb i Dataverse
+                          href: data-entities/dual-write/company-data.md
+                        - name: Initialisere firmadata
+                          href: data-entities/dual-write/bootstrap-company-data.md
+                    - name: Organisationshierarki på Dataverse
+                      href: data-entities/dual-write/organization-mapping.md
+                    - name: Finansierings- og momsdata
+                      items:
+                        - name: Adgang til finansierings- og momsreferencedata
+                          href: data-entities/dual-write/finance-tax-reference.md
+                        - name: Integreret finans
+                          href: data-entities/dual-write/ledger-mapping.md
+                        - name: Integreret momsmaster
+                          href: data-entities/dual-write/tax-mapping.md
+                    - name: Integrere indkøb i Supply Chain Management med Field Service
+                      href: data-entities/dual-write/scm-field-service-procurement.md
+                    - name: Synkronisere efter behov med Supply Chain Management-prissætningsprogrammet
+                      href: data-entities/dual-write/pricing-engine.md
+                    - name: Kundeemne til kontanter i dobbeltskrivning
+                      href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                    - name: Bruge Dynamics 365 Commerce-prissætningsprogrammet med Dynamics 365 Sales
+                      href: data-entities/dual-write/commerce-pricing.md
+                    - name: Interne aktiver til service
+                      href: data-entities/dual-write/in-house-assets.md
+                    - name: Lagertilgængelighed
+                      href: data-entities/dual-write/inventory-availability.md
+                    - name: 'Integreret arbejder, job og position'
+                      href: data-entities/dual-write/integrated-hr.md
+                    - name: Part- og globalt adressekartotek
+                      href: data-entities/dual-write/party-gab.md
+                    - name: Brug af Power Portal sammen med datamodellen for part
+                      href: data-entities/dual-write/party-gab-portal.md
+                    - name: Opgradere til modellen med part- og globalt adressekartotek
+                      href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Bemærk integration
+                      href: data-entities/dual-write/notes-integration.md
+                    - name: Tilknytningsreference
+                      href: data-entities/dual-write/mapping-reference.md
+                - name: Understøttelse af dobbeltskrivning
+                  items:
+                    - name: Understøttelse af Field Service-løsninger og Project Service Automation-løsninger
+                      href: data-entities/dual-write/field-service-project-service-automation.md
+                    - name: Overflytte kundeemne til kontantdata fra Dataintegrator til skrivesystem
+                      href: data-entities/dual-write/migrate-prospect-to-cash.md
+                    - name: Fejlfinding
+                      items:
+                        - name: Kontroller dobbeltskrivning er konfigureret i Finance and Operations-apps og Dataverse
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Foretage fejlfinding af problemer under den indledende opsætning
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                        - name: Foretage fejlfinding af problemer under den indledende synkronisering
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                        - name: Fejlfinding af problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Foretage fejlfinding af problemer med aktiv synkronisering
+                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Foretage fejlfinding af problemer med i forbindelse med løsningsforståelse
+                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                        - name: Fejlfinding af problemer fra opgraderinger af Finance and Operations-apps
+                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                        - name: Generel fejlfinding
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                - name: Ofte stillede spørgsmål om dobbeltskrivning
+                  href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuelle enheder
               items:
+                - name: Oversigt over virtuelle enheder
+                  href: power-platform/virtual-entities-overview.md
                 - name: Enhedsmodellering
                   href: power-platform/entity-modeling.md
                 - name: Applikationscyklusstyring
@@ -1412,7 +1412,7 @@
               href: perf-test/rsat/rsat-tutorial.md
             - name: 'Konfigurere brugere, der ikke er administratorer'
               href: perf-test/rsat/rsat-configure-nonadmin.md
-            - name: Bedste fremgangsmåder
+            - name: Bedste praksis
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostisk testning ved hjælp af Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
