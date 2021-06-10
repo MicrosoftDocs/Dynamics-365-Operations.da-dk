@@ -1,8 +1,8 @@
 ---
 title: Råbalance - økonomiske rapporter
 description: I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816925"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103652"
 ---
 # <a name="trial-balance-financial-reports"></a>Råbalance - økonomiske rapporter
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816925"
 
 I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov. 
 
-<a name="default-trial-balance-reports"></a>Standardråbalancerapporter
------------------------------
+## <a name="default-trial-balance-reports"></a>Standardråbalancerapporter
 
 Tre råbalancerapporter er tilgængelige i Økonomirapportering.
 
@@ -47,6 +46,9 @@ Råbalance regnskabsrapporter bruger følgende komponenter.
 | Detaljeret råbalance – standard               | Råbalance – standard | Detaljeret råbalance – standard               |
 | Råbalanceoversigt – standard                | Råbalance – standard | Råbalanceoversigt – standard                |
 | Årlig råbalanceoversigt – standard | Råbalance – standard | Årlig råbalanceoversigt – standard |
+
+> [!NOTE] 
+> Når du kører rapporten **Råbalance** i Financial Reporting, skal du sørge for at markere afkrydsningsfelterne for **Vis rækker uden beløb** og **Vis rapporter uden aktive rækker** under fanen **Indstillinger**.
 
 ### <a name="row-definition"></a>Definition af række
 
@@ -94,10 +96,7 @@ Hver råbalancerapport bruger en anden kolonnedefinition. Disse kolonnedefinitio
     -   **FD** – Økonomiske data, der kun indeholder debiteringer for sidste år
     -   **FD** – Økonomiske data, der kun indeholder krediteringer for sidste år
 
-
-
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over økonomirapportering](financial-reporting-getting-started.md)
 

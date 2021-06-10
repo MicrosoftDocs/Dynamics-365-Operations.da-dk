@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95472a00d34ba939ac89b4e2484f34d50bee3088
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018306"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112667"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Opgradere til modellen med part- og globalt adressekartotek
 
@@ -22,28 +22,29 @@ ms.locfileid: "6018306"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[Azure Data Factory-skabelonen](https://aka.ms/dual-write-gab-adf) hjælper dig med at opgradere eksisterende tabeldata for **Konto**, **Kontakt** og **Leverandør** i dobbeltskrivning til part- og det globale adressekartoteks model. Skabelonen afstemmer dataene fra både Finance and Operations-apps og programmer til kundeengagement. I slutningen af processen oprettes der **Part**- og **Kontakt**-felter for **Part**-poster, som knyttes til posterne **Konto**, **Kontakt** og **Leverandør** i kundeengagementsprogrammer. Der genereres en .csv-fil (`FONewParty.csv`) for at oprette nye **Part**-poster i Finance and Operations-appen. Dette emne indeholder instruktioner til brug af Data Factory-skabelonen og opgradering af dine data.
+[Microsoft Azure Data Factory-skabelonen](https://aka.ms/dual-write-gab-adf) hjælper dig med at opgradere eksisterende tabeldata for **Konto**, **Kontakt** og **Leverandør** i dobbeltskrivning til part- og det globale adressekartoteks model. Skabelonen afstemmer dataene fra både Finance and Operations-apps og programmer til kundeengagement. I slutningen af processen oprettes der **Part**- og **Kontakt**-felter for **Part**-poster, som knyttes til posterne **Konto**, **Kontakt** og **Leverandør** i kundeengagementsprogrammer. Der genereres en .csv-fil (`FONewParty.csv`) for at oprette nye **Part**-poster i Finance and Operations-appen. Dette emne indeholder instruktioner i, hvordan du bruger Data Factory-skabelonen og opgraderer dine data.
 
 Hvis du ikke har tilpasninger, kan du bruge skabelonen, som den er. Hvis du har tilpasninger af **Konto**, **Kontakt** og **Leverandør**, skal du redigere skabelonen ved hjælp af følgende vejledning.
 
-> [!Note]
-> Skabelonen hjælper kun med at opgradere **Part**-dataene. I en fremtidig version inkluderes post- og elektroniske adresser.
+> [!NOTE]
+> Skabelonen opgraderer kun **Part**-dataene. I en fremtidig version inkluderes post- og elektroniske adresser.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Disse forudsætninger er obligatoriske:
+Der kræves følgende forudsætninger for at opgradere til partmodellen og modellen for det globale adressekartotek:
 
 + [Azure-abonnement](https://portal.azure.com/)
 + [Adgang til skabelonen](https://aka.ms/dual-write-gab-adf)
-+ Du er eksisterende dobbeltskrivningskunde.
++ Du skal være eksisterende dobbeltskrivningskunde.
 
 ## <a name="prepare-for-the-upgrade"></a>Forberede opgraderingen
+Følgende aktiviteter er nødvendige for at forberede opgraderingen:
 
 + **Fuldt synkroniseret**: Begge miljøer er synkroniseret fuldstændigt for **Konto (kunde)**, **Kontakt** og **Leverandør**.
 + **Integrationsnøgler**: **Konto (kunde)**, **Kontakt** og **Leverandør** tabeller i kundeengagementapps bruger de integrationsnøgler, der leveres som standard. Hvis du har tilpasset integrationsnøglerne, skal du tilpasse skabelonen.
 + **Partnummer**: Alle **Konto (kunde)**, **Kontakt** og **Leverandør** poster, der skal opgraderes, har et **Part**-nummer. Poster uden et **Part**-nummer ignoreres. Hvis du vil opgradere disse poster, skal du føje et **Part**-nummer til dem, før du starter opgraderingsprocessen.
-+ **Systemnedlukning**: Under opgraderingsprocessen skal både Finance and Operations og kundeengagementsmiljøer være offline.
-+ **Øjebliksbillede**: Tag øjebliksbilleder af både Finance and Operations og kundeengagementapps. Du kan bruge øjebliksbillederne til at gendanne den forrige tilstand, hvis det er nødvendigt.
++ **Systemnedlukning**: Under opgraderingsprocessen skal både Finance and Operations-miljøet og kundeengagementsmiljøet være offline.
++ **Øjebliksbillede**: Tag øjebliksbilleder af både Finance and Operations-apps og kundeengagementapps. Du kan bruge øjebliksbillederne til at gendanne den forrige tilstand, hvis det er nødvendigt.
 
 ## <a name="deployment"></a>Installation
 
@@ -78,15 +79,19 @@ Disse forudsætninger er obligatoriske:
     FO-sammenkædet Service_properties_type Properties_tenant | Angiv de lejeroplysninger (domænenavn eller lejer-id), hvor dit program er placeret.
     FO-sammenkædet Service_properties_type Properties_aad ressource-id | `https://sampledynamics.sandboxoperationsdynamics.com`
     FO-sammenkædet Service_properties_type Properties_service hoved-id | Angiv programmets klient-id.
-    Dynamics CRM-sammenkædet Service_properties_type Properties_username | Det brugernavn, der skal forbindes med Dynamics.
+    Dynamics CRM-sammenkædet Service_properties_type Properties_username | Det brugernavn, der skal forbindes med Dynamics 365.
 
-    Du kan finde flere oplysninger i [Manuelt promovere en Resource Manager-skabelon for hvert miljø](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Sammenkædede tjenesteegenskaber](/azure/data-factory/connector-dynamics-ax#linked-service-properties) og [Kopiere data vha. Azure Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Yderligere oplysninger finder du i følgende emner: 
+    
+    - [Opgradere en Resource Manager-skabelon manuelt for hvert miljø](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [Egenskaber for sammenkædet tjeneste](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Kopiere data ved hjælp af Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Efter installationen skal du validere datasæt, dataflow og tilknyttet tjeneste for datafabrikken.
 
    ![Datasæt, dataflow og tilknyttet tjeneste](media/data-factory-validate.png)
 
-11. Naviger til **Administrer**. Vælg **Sammenkædet tjeneste** under **Forbindelser**. Vælg **DynamicsCrmLinkedService**. Angiv følgende værdier i formularen **Rediger sammenkædet tjeneste (Dynamics CRM)**:
+11. Naviger til **Administrer**. Vælg **Sammenkædet tjeneste** under **Forbindelser**. Vælg **DynamicsCrmLinkedService**. Angiv følgende værdier i formularen **Rediger sammenkædet tjeneste (Dynamics CRM)**.
 
     Felt | Værdi
     ---|---
@@ -102,7 +107,7 @@ Disse forudsætninger er obligatoriske:
 
 ## <a name="run-the-template"></a>Køre skabelonen
 
-1. Stop følgende dobbeltskrivning af **Konto**, **Kontakt** og **Leverandør** ved hjælp af appen Finance and Operations.
+1. Stop følgende dobbeltskrivningstilknytninger af **Konto**, **Kontakt** og **Leverandør** ved hjælp af appen Finance and Operations.
 
     + Debitorer V3 (konti)
     + Debitorer V3 (kontakter)
@@ -114,7 +119,7 @@ Disse forudsætninger er obligatoriske:
 
 3. Installer [Løsninger til part og globalt adressekartotek for dobbeltskrivning](https://aka.ms/dual-write-gab) fra AppSource.
 
-4. Hvis følgende tabeller indeholder data i appen Finance and Operations, skal du køre **Første synkronisering** for dem.
+4. Hvis følgende tabeller indeholder data i Finance and Operations-appen, skal du køre **Første synkronisering** for dem.
 
     + Tiltaleformer
     + Personlige tegntyper
@@ -125,7 +130,7 @@ Disse forudsætninger er obligatoriske:
 
 5. Deaktiver følgende plugin-trin i kundeengagementsappen.
 
-    + Opdater konto
+    + Kontoopdatering
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Opdatering af konto
          + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Opdatering af konto
     + Opdatering af kontakt
@@ -157,13 +162,13 @@ Disse forudsætninger er obligatoriske:
 8. Importér de nye **Part**-poster i Finance and Operations-appen.
 
     + Download filen `FONewParty.csv` fra Azure Blob Storage. Stien er `partybootstrapping/output/FONewParty.csv`.
-    + Konverter filen `FONewParty.csv` til en Excel-fil, og importér Excel-filen til Finance and Operations-appen.  Hvis csv-importen fungerer for dig, kan du importere csv-filen direkte. Det kan tage et par timer at importere, afhængigt af datavolumen. Du kan finde flere oplysninger i [Oversigt over dataimport og eksportjob](../data-import-export-job.md).
+    + Konverter `FONewParty.csv`-filen til en Excel-fil, og importér Excel-filen til Finance and Operations-appen. Hvis csv-importen fungerer for dig, kan du importere csv-filen direkte. Det kan tage et par timer at importere, afhængigt af datavolumen. Du kan finde flere oplysninger i [Oversigt over dataimport og eksportjob](../data-import-export-job.md).
 
     ![Importere Dataverse-partposterne](media/data-factory-import-party.png)
 
 9. Aktivér følgende plugin-trin i kundeengagementsapps:
 
-    + Opdater konto
+    + Kontoopdatering
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Opdatering af konto
          + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Opdatering af konto
     + Opdatering af kontakt
@@ -198,4 +203,4 @@ Disse forudsætninger er obligatoriske:
 
 ## <a name="learn-more-about-the-template"></a>Få mere at vide om skabelonen
 
-Du kan finde kommentarer til skabelonen i filen [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+Du kan finde flere oplysninger om skabelonen i [Kommentarer til filen vigtige oplysninger til Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).

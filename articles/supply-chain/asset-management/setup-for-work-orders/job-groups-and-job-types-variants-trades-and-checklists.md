@@ -1,5 +1,5 @@
 ---
-title: Kategorier af vedligeholdelsesjobtyper og vedligeholdelsesjobtyper, varianter af vedligeholdelsesjobtyper, vedligeholdelsesjobfag og vedligeholdelsestjeklister
+title: Typer, kategorier, varianter, handler og kontrollister for vedligeholdelsesjob
 description: Dette emne beskriver kategorier af vedligeholdelsesjobtyper og vedligeholdelsesjobtyper, varianter af vedligeholdelsesjobtyper, vedligeholdelsesjobfag og vedligeholdelsestjeklister i Styring af aktiver.
 author: johanhoffmann
 ms.date: 08/13/2019
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb73fb36ee31d93b2121437d57d959ba6c01a337
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d2a2bcff302814903959f78d6435abd540b46ef5
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842267"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117077"
 ---
-# <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier af vedligeholdelsesjobtyper og vedligeholdelsesjobtyper, varianter af vedligeholdelsesjobtyper, vedligeholdelsesjobfag og vedligeholdelsestjeklister
+# <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Typer, kategorier, varianter, handler og kontrollister for vedligeholdelsesjob
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Der er knyttet en aktivtype til hvert aktiv. Aktivtyper definerer de vedligeholdelsesjobtyper (og dermed vedligeholdelsesjob), der kan udføres på aktiver. Du skal vælge en vedligeholdelsesjobtype, når du opretter en arbejdsordre. Du kan kun vælge de vedligeholdelsesjobtyper, der er relateret til opsætningen af den aktivtype, der bruges for aktivet.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5f0ed7d3344b43c477923ebd8c69acfb6630e6f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 30f7919e5ae0933b389a274d80aaed8e149631e7
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910395"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103090"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
@@ -240,7 +240,7 @@ For den offentlige sektor muliggør de udvidede funktioner, at en tilbudsanmodni
 - Linje i publicerede tilbudsanmodninger
 - Vedhæftede filer i overskrifter til publicerede tilbudsanmodninger
 
-Med disse enheder kan personer, der ikke er klargjorte brugere i Supply Chain Management, men har anonym adgang til det eksterne websted, se tilgængeligt og lukket arbejdet. Desuden gør de udvidede funktioner i **Send og publicer** det muligt for den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, at definere en e-mailskabelon. Derefter, når indkøberen opretter tilbudsanmodningssagen, skal han eller hun vælge e-mailskabelonen for at sende de nødvendige oplysninger til kreditorerne i tilbudsanmodningssagen. 
+Med disse enheder kan personer, der ikke er klargjorte brugere i Supply Chain Management, men har anonym adgang til det eksterne websted, se tilgængeligt og lukket arbejdet. Desuden gør de udvidede funktioner i **Send og publicer** det muligt for den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, at definere en e-mailskabelon. Når indkøberen derefter opretter tilbudsanmodningssagen, skal vedkommende vælge mailskabelonen for at sende de nødvendige oplysninger til kreditorerne i tilbudsanmodningssagen. 
 
 Den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, kan oprette flere e-mailskabeloner. Disse e-mailskabeloner kan indeholde både statisk tekst og følgende erstatningstokens. Tokenerne erstattes med kontekstafhængige værdier, når der oprettes en e-mail.
 

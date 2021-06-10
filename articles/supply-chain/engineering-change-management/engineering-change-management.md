@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
-ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
+ms.openlocfilehash: d31c73964877aeb1556c93b03d276698e8d84d30
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954639"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6114993"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Administrere ændringer af tekniske produkter
 
@@ -92,9 +92,13 @@ Denne liste er udelukkende til orientering. Derfor kan du tilføje så mange rel
 
 I oversigtspanelet **Kilde** kan du spore udgangspunktet for ændringsanmodningen. Det er nyttigt, hvis du f.eks. vil se, om ændringsanmodningen er oprettet ud fra en salgsordre, hvem der har oprettet den, og hvilket firma den blev oprettet i.
 
-### <a name="evaluate-the-business-impact-of-a-change-request"></a>Evaluere forretningseffekten af en anmodning om ændring
+### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>Evaluere forretningseffekten af en anmodning om ændring og sende beskeder
 
-Når du gennemgår en anmodning om ændringer, kan du søge efter afhængigheder. På denne måde kan du vurdere virkningen af den ønskede ændring på åbne transaktioner, f.eks. salgsordrer, produktionsordrer og disponibel lagerbeholdning.
+Når du gennemgår en anmodning om ændringer, kan du søge efter afhængigheder. På denne måde kan du vurdere virkningen af den ønskede ændring på åbne transaktioner, f.eks. salgsordrer, produktionsordrer og disponibel lagerbeholdning. Mens du gennemgår anmodninger om ændringer, kan du sende en besked til de personer, der er ansvarlige for at opfylde de forskellige typer relaterede ordrer.
+
+#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Gennemse berørte transaktioner, blokere valgte transaktioner og sende beskeder
+
+Hvis du vil gennemse berørte transaktioner, blokere valgte transaktioner og sende beskeder, skal du følge disse trin.
 
 1. Gå til **Teknisk ændringsstyring \> Fælles \> Teknisk ændringsstyring \> Tekniske ændringsanmodninger**.
 1. Du skal enten åbne en eksisterende anmodning om ændring eller vælge **Ny** i handlingsruden for at oprette en ny ændringsanmodning.
@@ -103,7 +107,30 @@ Når du gennemgår en anmodning om ændringer, kan du søge efter afhængigheder
     - **Søg** – Scanner alle åbne transaktioner og åbner derefter dialogboksen **Forretningskonsekvenser for åbne transaktioner**, som viser alle de transaktioner, der påvirkes af ændringen.
     - **Se forrige søgning** – Åbn dialogboksen **Forretningskonsekvenser for åbne transaktioner**, som viser resultaterne af den forrige søgning. (Der foretages ingen ny søgning).
 
-1. Hvis det problem, der kræver en ændring, er kritisk, kan du blokere de åbne transaktioner eller give den ansvarlige bruger besked ved hjælp af knapperne på værktøjslinjen i dialogboksen **Forretningskonsekvenser for åbne transaktioner**.
+1. Dialogboksen **Forretningskonsekvenser for åbne transaktioner** indeholder et sæt faner, som hver især viser en liste over berørte transaktioner af en bestemt type (**Salgsordrer**, **Indkøbsordrer**, **Produktionsordrer**, **Lager** osv.). Hver fane viser også et tal, der angiver antallet af berørte transaktioner af den pågældende type. Vælg en fane for at få vist den relevante liste.
+1. Hvis du vil arbejde med en transaktion på listen, skal du markere den og derefter vælge en af følgende knapper på værktøjslinjen:
+
+    - **Vis transaktion** – Åbn den valgte transaktionspost.
+    - **Bloker ordre** – Denne knap er kun tilgængelig under fanen **Salgsordrer**. Markér den for at blokere den valgte salgsordre.
+    - **Bloker linje** – Denne knap er kun tilgængelig under fanen **Købsordrer**. Markér den for at blokere den valgte købsordrelinje.
+    - **Giv den ansvarlige besked** – Denne knap er kun tilgængelig under fanen **Salgsordrer**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ansvarlig for den valgte salgsordre.
+    - **Giv ordregiver besked** – Denne knap er kun tilgængelig under fanen **Købsordrer**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ordregiver for den valgte købsordre.
+    - **Giv produktion besked** – Denne knap er kun tilgængelig under fanen **Produktionsordrer**. I modsætning til salgsordrer og indkøbsordrer har produktionsordrer ikke en enkelt bruger, der er angivet som ansvarlig for dem fra start til slut. I stedet overtager forskellige tilsynsførende eller planlæggere normalt ejerskab for en bestemt lokation eller for en bestemt del af produktionen (for eksempel for bestemte ressourcer eller ressourcegrupper). Når du vælger denne knap, modtager alle brugere, der er ansvarlige for en ressource, der er relateret til den valgte produktionsordre, derfor en ændringsbesked.
+    - **Giv klargører besked** – Denne knap er kun tilgængelig under fanen **Indkøbsrekvisition**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som klargører for den valgte indkøbsrekvisition.
+    - **Giv den salgsansvarlige besked** – Denne knap er kun tilgængelig under fanen **Tilbud**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ansvarlig for det valgte tilbud.
+    - **Kassér** – Denne knap er kun tilgængelig under fanen **Lager**. Markér den for at angive kassere det valgte lager.
+    - **Vis historik** – Åbn en historik over handlinger, der er udført på den valgte transaktion, ved at bruge dialogboksen **Forretningskonsekvenser for åbne transaktioner**. Historikken viser for eksempel, om der er sendt beskeder, eller om transaktioner er blevet blokeret. 
+    - **Vis alle transaktioner** – Åbn den fulde liste over alle transaktioner, ikke kun de åbne transaktioner.
+
+#### <a name="review-and-process-change-notifications-for-transactions"></a>Gennemse og behandle ændringsbeskeder for transaktioner
+
+Du kan læse og behandle de ændringsbeskeder, du modtager, på følgende måder:
+
+- Medmindre der er tale om produktionsordrer, vises ændringsbeskeder for de transaktioner, du er ansvarlig for, i handlingscenter. Knappen **Vis meddelelser** (klokkesymbol) i højre side af navigationslinjen angiver, hvornår en meddelelse er tilgængelig for dig i handlingscenteret. Vælg knappen **Vis meddelelser** for at åbne handlingscenteret og gennemse meddelelserne.
+- Hvis du vil have vist alle produktionsordrer, som en teknisk besked er sendt for, skal du gå til **Produktionsordrer \> Produktionsordrer \> Alle produktionsordrer**. I handlingsruden under fanen **Produktionsordre** skal du derefter vælge **Tekniske beskeder** i gruppen **Teknisk ændringsanmodning** for at åbne siden **Tekniske beskeder**.
+- I forbindelse med produktionsordrer kan du vælge kun at gennemse de ændringsbeskeder, der gælder for de produktionsressourcer, du administrerer. I arbejdsområdet **Administration af produktion** i handlingsruden skal du vælge **Konfigurer mit arbejdsområde** for at filtrere siden, så der kun vises oplysninger om de produktionsenheder, grupper og/eller ressourcer, du administrerer. I sektionen **Oversigt** viser et felt med navnet **Produktionsordrer med ændrede produkter** en optælling over beskeder, der opfylder dine filterindstillinger. Vælg dette felt for at åbne siden **Tekniske beskeder**, som viser den fulde liste over transaktioner, der opfylder kriterierne for dit filter.
+
+Når du gennemser beskeder om produktionsordrer på siden **Tekniske beskeder**, kan du følge links til relaterede ændringsordrer eller produktionsordrer ved at vælge kolonneværdier eller bruge de relaterede kommandoer i handlingsruden. Når du er færdig med at evaluere en ændring, og når du har annulleret eller ændret produktionsordrer efter behov, kan du markere en besked som løst. Vælg beskeden, og vælg derefter **Løs** i handlingsruden. Beskeden fjernes fra alle brugeres visninger.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Oprette en ændringsordre ud fra en ændringsanmodning
 

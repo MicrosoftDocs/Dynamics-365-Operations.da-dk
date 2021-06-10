@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 98fc102b308afb90d4665ecd80650f66d531da0b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3124ac0e161e003986d7e167e292cbb374e1bfa
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826708"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085444"
 ---
 # <a name="import-format-for-consolidation"></a>Import af format til konsolidering
 
@@ -36,7 +36,7 @@ Følgende tabel indeholder det importformat, du skal bruge, når du laver en kon
 | 2            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>Hovedkonto-id</li><li>Transaktionsdatoen</li><li>Regnskabsperiodetypen (**0** = Start, **1** = Drift og **2** = Ultimo)</li><li>Posteringsvaluta</li><li>Debet eller kredit (**0** = Debet og **1** = Kredit)</li><li>Posteringslag</li><li>Transaktionsbeløb</li><li>Kvantitet</li><li>Den lokale RecID (entydig værdi for int64 for posteringen)</li></ul> |
 | 3            | USMF0000009, 2017/01/01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0 | <ul><li>Postnummeret (posteringsnummer i budgethoved)</li><li>Standarddatoen i budgetregisteret</li><li>Budgetmodel-id'et</li><li>Værdien for optællingsheltal for posteringstypen (tomt, oprindeligt budget, så videre)</li><li>Dato for linjen</li><li>Hovedkonto-id for linjen</li><li>Valutakoden for linjen</li><li>Beløbet på linjen i transaktionsvalutaen</li><li>Værdien for heltal for budgettypen for linjen (udgift eller omsætning)</li></ul> |
 | 4            | DEMF | RecordCompany er den juridiske kildeenhed. |
-| 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | RecordCompany er den juridiske kildeenhed. |
+| 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>Hovedkonto-id</li><li>Transaktionsdato</li><li>Regnskabsperiodetype (0 Start, 1 Drift og 2 Ultimo)</li><li>Transaktionsvaluta</li><li>Debet eller kredit (0 for Debet og 1 for Kredit)</li><li>Posteringslag</li><li>Transaktionsbeløb</li><li>Mængde</li><li>Lokalt RecID (entydig værdi for int64 for posteringen)</li></ul>  |
 | 6            | BusinessUnit, 1 Afdeling, 2 | De økonomiske dimensionsattributter, der er defineret i segmentrækkefølgen.<p>Du kan bruge siden **Eksport** til at kontrollere, hvordan attributterne er defineret.</p> |
 | 7            | 002,1,658 | <ul><li>Økonomisk dimensionsværdi</li><li>Den økonomiske dimension som det indeks, der er angivet i RecordDimensions</li><li>Et entydigt post-id, der er entydigt og tilknyttet det entydige post-id fra RecordTrans eller RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Dimensionsværdier, der er knyttet til posteringen fra RecordBudget</li><li>Den økonomiske dimension som det indeks, der er angivet i RecordDimensions</li><li>Et entydigt linjepost-id, der justeres efter rækkefølgen af posteringslinjerne i filen</li></ul> |

@@ -2,13 +2,12 @@
 title: Administrere anmodninger i Teams
 description: I dette emne kan du se, hvordan du anmoder om fri i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953406"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097253"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Administrere fraværsanmodninger i Teams
 
@@ -33,21 +32,13 @@ Med Dynamics 365 Human Resources-appen i Microsoft Teams kan du hurtigt anmode o
 
 Du kan finde appen Dynamics 365 Human Resources i lageret til Teams.
 
-1. I Microsoft Teams skal du vælge ellipserne.
-
-   ![Ellipser i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-ellipses.png)
+1. Gå til listen over apps i Microsoft Teams.
  
 2. Søg efter Dynamics 365 Human Resources, og vælg derefter feltet **Human Resources**.
 
-   ![HR-feltet i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Klik på knappen **Tilføj** for at installere appen.
 
-   ![Installer orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-in-store.png)
-
 Hvis appen ikke automatisk logger dig på, skal du vælge fanen **Indstillinger** for at logge på.
-
-![Fanen Indstillinger i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Hvis du ikke kan se logondialogboksen, skal du kontrollere browserindstillingerne for at tillade pop op-vinduer. 
@@ -61,20 +52,24 @@ Hvis du har adgang til mere end én forekomst af Human Resources, kan du vælge,
 
 Når appen er installeret, vises en velkomstmeddelelse, der giver dig besked om, hvilke typer handlinger botten kan udføre på dine vegne.
 
-![Botvelkomstmeddelelse i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > Når du interagerer med bot for første gang, skal du muligvis logge på. Hvis du ikke kan se logondialogboksen, skal du kontrollere browserindstillingerne for at tillade pop op-vinduer.
 
 Du kan bede bot om at:
 
-- Starte en anmodning om en orlov for dig.
+- Få vist dine aktuelle orlovssaldi. Send f.eks. meddelelsen "Vis orlovssaldi".
+
+- Starte en anmodning om en orlov for dig. Send f.eks. en meddelelse med teksten "Tag fri" eller "Jeg ønsker holde ferie næste torsdag og fredag" for at være mere specifik, når du anmoder om orlov for ferietypen. 
 
   ![Starte en anmodning om orlov i Teams-chat](./media/hr-teams-leave-app-initiate.png)
 
 - Chatrobotten udfylder en orlovsanmodning for dig. Vælg **Anmod om fri**, og rediger detaljerne om anmodningen.
 
-  ![Redigere detaljer om orlovsanmodning](./media/hr-teams-leave-app-details.png)
+   Hvis du vil sende orlovsanmodninger for flere orlovstyper for den samme dato, skal du vælge indstillingen **Opdel dag med** fra menuen **Flere indstillinger**. 
+
+   Hvis du vælger en halv dags orlov, og orlovsanmodningsenheden er i dage, kan du angive, om du vil anmode om fri første halvdel af dagen eller anden halvdel af dagen, ved at vælge indstillingen **Halvdagsdefinition** i menuen **Flere indstillinger**.
+   
+   ![Halvdagsdefintioner](./media/HalfDayDefinitions.png)
 
 - Når du er færdig med at redigere oplysningerne om din anmodning om orlov, skal du vælge **Send** for at sende den til godkendelse.
 
@@ -91,42 +86,36 @@ Fanen **Fri** gør det muligt at vise:
 - Anmodninger om fri
 
 - kladdeorlovsanmodninger
-
-![Fanen Fri i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Oprette en ny anmodning
 
 1. Hvis du vil oprette en ny anmodning, skal du vælge **Ny anmodning**.
 
-   ![Ny anmodning i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Angiv den eller de dage, du vil have en fridag, og vælg derefter **Tilføj**.
 
-   ![Tilføj fridag i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Tilføj fridag i orlovsappen i Human Resources i Teams](./media/TimeOffHours.png)
 
 3. Angiv en årsagskode, hvis det er relevant. Skriv også eventuelle kommentarer, og tilføj evt. vedhæftede filer.
 
-4. Når du er færdig med at angive oplysninger, skal du skrive **Send** for at sende dem til godkendelse. Du kan også indtaste **Gem som kladde** for at vende tilbage til den senere.
+4. Vælg indstillingen **Opdel dag med** i menuen **Flere indstillinger**, hvis du vil sende flere orlovsanmodninger for den samme dato for forskellige orlovstyper.
+
+5. Vælg indstillingen **Halvdagsdefinition** for at angive, om du vil anmode om fri den første halvdel af dagen eller den anden halvdel af dagen. Denne indstilling er tilgængelig, når orlovsanmodningsenheden er i dage, og det ønskede antal dage er 0,5 dage.
+
+6. Når du er færdig med at angive oplysninger, skal du vælge **Send** for at sende dem til godkendelse. Du kan også vælge **Gem som kladde** for at vende tilbage til den senere.
 
 ### <a name="manage-draft-requests"></a>Administrere kladdeanmodninger
 
 1. Vælg fanen **Kladder**.
 
-   ![Fanen Kladder i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Vælg blyanten for at redigere anmodningen, eller vælg papirkurven, som kan slette anmodningen.
 
 3. Foretag eventuelle nødvendige ændringer. Når du er færdig med at angive oplysninger, skal du skrive **Send** for at sende dem til godkendelse. Du kan også vælge **Gem som kladde** for at vende tilbage til den senere.
-
-   ![Redigering af kladde i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Besvare Teams-beskeder
 
 Når du eller en arbejder, du er godkender for, sender en anmodning om orlov, modtager du en besked i appen Human Resources i Teams. Du kan vælge beskeden for at få den vist. Beskeder vises også i **Chat**-området.
 
 Hvis du er godkender, kan du vælge **Godkend** eller **Afvis** i beskeden. Du kan også angive en valgfri meddelelse.
-
-![Besked om orlovsanmodning i Teams-appen Human Resources](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Sende kommende oplysninger om fridage til dine kolleger
 
@@ -138,15 +127,9 @@ Når du har installeret Human Resources-appen for Teams, kan du nemt sende oplys
 
 2. Vælg den orlovsanmodning, du vil dele. Hvis du vil dele en kladde af orlovsanmodningen, skal du vælge **Kladder** først.
 
-   ![Vælge en kommende orlovsanmodning til at dele](./media/hr-teams-leave-app-chat-search.png)
-
 Din orlovsanmodning vises i chatten.
 
-![Human Resources-orlovsanmodningskort](./media/hr-teams-leave-app-chat-card.png)
-
-Hvis du har delt en kladdebaseret anmodning, vises den som en kladde:
-
-![Kladde af Human Resources-orlovsanmodningskort](./media/hr-teams-leave-app-chat-draft-card.png)
+Hvis du har delt en kladdebaseret anmodning, vises den som en kladde.
 
 ## <a name="view-your-teams-leave-calendar"></a>Se dit teams orlovskalender
 
@@ -155,8 +138,6 @@ Hvis du er chef med direkte underordnede, kan du få vist dit teams godkendte og
 1. I appen Human Resources i Teams skal du vælge **Fri**.
 
 2. Vælg **Teamkalender**. I kalenderen vises dine direkte underordnedes godkendte og afventende fravær.
-
-   ![Se kalender i Teams-appen Human Resources](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > Hvis du ikke kan se teamkalenderen, kan du bede din administrator om at aktivere den. Du kan finde flere oplysninger i [Installere og konfigurere](hr-admin-teams-leave-app.md#install-and-setup).

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7761366c0372c105ecbd4281c7bafa44bf6cf7b5
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: b88d3fe97d14d3e2f766367de501148063582000
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039921"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123356"
 ---
 # <a name="customer-aging-snapshots"></a>Aldersfordelte øjebliksbilleder for debitor
 
@@ -28,6 +28,8 @@ ms.locfileid: "6039921"
 Dette emne indeholder oplysninger om aldersfordelte øjebliksbilleder for debitorer. Et aldersfordelt øjebliksbillede beregner aldersfordelte saldi for en gruppe debitorer på et bestemt tidspunkt. Du kan oprette poster for aldersfordelte øjebliksbilleder enten for alle kunder eller for kunderne i kundepuljen.
 
 Oplysninger fra aldersfordelte øjebliksbilleder vises på listesiden **Aldersfordelte saldi** og på siden **Rykkere**. Du skal oprette et aldersfordelt øjebliksbillede, før du kan bruge listesiden **Aldersfordelte saldi**. Listesiden viser kun kunder, der allerede er oprettet et aldersfordelt øjebliksbillede for.
+
+Arbejdsområdet **Kundekredit og inkasso** viser også aldersfordelingen for kunder. Yderligere oplysninger finder du i [Styring af kredit og inkasso Power BI-indholdet](credit-collections-power-bi.md).
 
 > [!NOTE]
 > Hvis du vil reducere den tid, det tager at oprette et aldersfordelt øjebliksbillede, skal du aktivere funktionen **Forbedring af aldersfordelt ydeevne for debitorer** i arbejdsområdet **Funktionsstyring**. Du skal dog undlade at bruge kundepuljer, når denne funktion er aktiveret. Hvis der er valgt en kundepulje, fungerer funktionen ikke, men du kan stadig oprette et aldersfordelt øjebliksbillede.
@@ -62,4 +64,3 @@ Det anbefales, at du planlægger, at denne proces køres i en batch.
 > [!NOTE]
 > Hvis du vil forbedre batchydeevnen, når der oprettes aldersfordelte øjebliksbilleder, skal du angive et tal i feltet **Maksimalt antal batchopgaver** i oversigtspanelet **Rykkerstandard** under fanen **Rykkere** på siden **Debitorparametre**. I feltet **Aldersfordel kundesaldi** anbefales det, at du starter med standardværdien **100** og derefter justerer værdien for at optimere behandlingen til dit behov.
 
-Arbejdsområdet **Kundekredit og inkasso** viser også aldersfordelingen for kunder. Yderligere oplysninger finder du i [Styring af kredit og inkasso Power BI-indholdet](credit-collections-power-bi.md).

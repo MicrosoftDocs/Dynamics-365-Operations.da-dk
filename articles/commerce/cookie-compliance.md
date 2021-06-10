@@ -2,7 +2,7 @@
 title: Cookie-overholdelse
 description: Dette emne beskriver overvejelser om cookie-overholdelse og de standardpolitikker, der er inkluderet i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908178"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088381"
 ---
 # <a name="cookie-compliance"></a>Cookieoverholdelse
 
@@ -52,8 +52,7 @@ I følgende tabel vises den aktuelle referenceliste over cookies, der er placere
 | x-ms-cpim-trans                             | Bruges til sporing af posteringer (antallet af åbne faner, der godkender mod et B2C-websted (Business-to-Consumer)), herunder den aktuelle postering. |
 | \_msdyn365___muid_                            | Bruges, hvis Eksperimenteren er aktiveret for miljøet. Anvendes som et bruger-id til eksperimentformål. |
 | \_msdyn365___exp_                             | Bruges, hvis Eksperimenteren er aktiveret for miljøet. Bruges til at måle belastningsjustering for ydeevne.         |
-
-
+| d365mkt                                       | Bruges, hvis placeringsbaseret registrering til sporing af en brugers IP-adresse til forslag til butiksplacering er aktiveret i Commerce-webstedsgeneratoren på **Webstedsindstillinger > Generelt > Aktivér placeringsbaseret butiksregistrering**.      |
 
 Hvis en bruger vælger sociale medielinks på et websted, spores cookies i nedenstående tabel også i deres browser.
 

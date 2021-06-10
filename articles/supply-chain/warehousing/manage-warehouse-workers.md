@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f5676879f631fce9c9c674250a07723131906fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d1794d0f34ad9d22f012fc893f3e407eb57614e
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818962"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102944"
 ---
 # <a name="manage-warehouse-workers"></a>Styre lagerarbejdere
 
@@ -28,7 +28,7 @@ ms.locfileid: "5818962"
 
 I denne artikel beskrives, hvordan du kan bruge mobilappen Lokationsstyring til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 
-Hvis du bruger funktionerne i Lagerstedsstyring, henvises alle arbejderhandlinger på lagersted som *arbejde*. Arbejde som f.eks. plukning, flytning og optælling af den disponible lagerbeholdning registreres ved hjælp af mobilenheder. Før en lagermedarbejder kan udføre arbejdet, skal han eller hun skal være tilknyttet en arbejder i Personale. Hver **Arbejder**-konto kan have flere lagerstedsarbejdsbrugere, der er knyttet til den. Disse arbejdsbrugere kan arbejde på forskellige lagersteder og kan have forskellige adgangsniveauer til forskellige mobilenhedsmenuer. Du kan tænke på lagerstedsarbejdsbrugerne som flere logons for den valgte arbejder. De enkelte arbejdsbrugere har et standardlagersted, og bestemte arbejdsgange vises i de menupunkter, der er tilgængelige for den arbejdsbruger. 
+Hvis du bruger funktionerne i Lagerstedsstyring, henvises alle arbejderhandlinger på lagersted som *arbejde*. Arbejde som f.eks. plukning, flytning og optælling af den disponible lagerbeholdning registreres ved hjælp af mobilenheder. Før en lagermedarbejder kan udføre arbejdet, skal vedkommende være tilknyttet en arbejder i Personale. Hver **Arbejder**-konto kan have flere lagerstedsarbejdsbrugere, der er knyttet til den. Disse arbejdsbrugere kan arbejde på forskellige lagersteder og kan have forskellige adgangsniveauer til forskellige mobilenhedsmenuer. Du kan tænke på lagerstedsarbejdsbrugerne som flere logons for den valgte arbejder. De enkelte arbejdsbrugere har et standardlagersted, og bestemte arbejdsgange vises i de menupunkter, der er tilgængelige for den arbejdsbruger. 
 
 Hvis du vil oprette en ny arbejdsbruger skal du på siden **Arbejdere** under fanen **Generelt** klikke på **Arbejder** i sektionen **Lagersteder**. Du skal angive et bruger-id, et brugernavn, et standardlagersted og et menunavn. Denne menu er indlæst, når brugeren logger på Warehouse Mobile Device Portal, og gør det muligt at definere, hvilke menupunkter brugeren har adgang til. 
 
