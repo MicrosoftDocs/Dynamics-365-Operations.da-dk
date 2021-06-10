@@ -1,14 +1,14 @@
 ---
-title: Justere arbejdsstyrkens færdigheder med virksomhedens behov
-description: Du kan spore færdigheder, som arbejdere, ansøgere eller kontakter har eller bør have for at udfylde deres roller effektivt. Du kan også angive de færdigheder, der kræves til et bestemt job.
+title: Konfigurere færdigheder
+description: Du kan spore arbejderens færdigheder i Dynamics 365 Human Resources. Du kan også angive de færdigheder, der kræves til et bestemt job.
 author: andreabichsel
-ms.date: 11/01/2017
+manager: tfehr
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
@@ -16,52 +16,97 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: fc9996c31c3575ccf942907a66e59b00a344f3d1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 816822d1f3d365b4c5571c13e9f596e1c5d5e59c
+ms.sourcegitcommit: 48528233e0f02dbd47e96e030254ef65f2bb899e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793699"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6076553"
 ---
-# <a name="align-workforce-skills-with-business-needs"></a><span data-ttu-id="91b20-104">Justere arbejdsstyrkens færdigheder med virksomhedens behov</span><span class="sxs-lookup"><span data-stu-id="91b20-104">Align workforce skills with business needs</span></span>
+# <a name="configure-skills"></a><span data-ttu-id="00447-104">Konfigurere færdigheder</span><span class="sxs-lookup"><span data-stu-id="00447-104">Configure skills</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="91b20-105">Du kan spore færdigheder, som arbejdere, ansøgere eller kontakter har eller bør have for at udfylde deres roller effektivt.</span><span class="sxs-lookup"><span data-stu-id="91b20-105">You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively.</span></span> <span data-ttu-id="91b20-106">Du kan også angive de færdigheder, der kræves til et bestemt job.</span><span class="sxs-lookup"><span data-stu-id="91b20-106">You can also specify the skills that are required for a specific job.</span></span>
+<span data-ttu-id="00447-105">Du kan spore arbejderens færdigheder i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="00447-105">You can track your worker's skills in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="00447-106">Du kan også angive de færdigheder, der kræves til et bestemt job.</span><span class="sxs-lookup"><span data-stu-id="00447-106">You can also specify the skills that are required for a specific job.</span></span>
 
-<span data-ttu-id="91b20-107">Eksempler på færdigheder, du kan spore, omfatter følgende:</span><span class="sxs-lookup"><span data-stu-id="91b20-107">Examples of skills you can track include the following:</span></span>
--   <span data-ttu-id="91b20-108">Supervision – evnen til at føre tilsyn med andres arbejde.</span><span class="sxs-lookup"><span data-stu-id="91b20-108">Supervisory – Ability to supervise the work of others.</span></span>
--   <span data-ttu-id="91b20-109">Ledelse – evnen til at lede medarbejdere og forretningsområder.</span><span class="sxs-lookup"><span data-stu-id="91b20-109">Leadership – Ability to lead employees and business domains.</span></span>
--   <span data-ttu-id="91b20-110">Planlægning – evnen til at se fremad, formulere visioner og få dem gennemført.</span><span class="sxs-lookup"><span data-stu-id="91b20-110">Planning – Ability to look ahead, to form visions, and to see them through.</span></span>
--   <span data-ttu-id="91b20-111">HTML – evnen til at skrive HTML-kode.</span><span class="sxs-lookup"><span data-stu-id="91b20-111">HTML – Ability to write HTML code.</span></span>
+<span data-ttu-id="00447-107">Eksempler på færdigheder, du kan spore, omfatter:</span><span class="sxs-lookup"><span data-stu-id="00447-107">Examples of skills you can track include:</span></span>
 
-<span data-ttu-id="91b20-112">Før du kan tildele en færdighed til en person eller et job, oprette en kompetencesøgning eller oprette en kompetenceprofil, skal du angive oplysninger om færdigheder på siden **Færdigheder**.</span><span class="sxs-lookup"><span data-stu-id="91b20-112">Before you can assign a skill to a person or a job, create a skill-mapping search, or create a skill profile, you must enter information about the skills on the **Skills** page.</span></span> <span data-ttu-id="91b20-113">Du kan vælge en færdighedstype og en rangeringsmodel for hver færdighed.</span><span class="sxs-lookup"><span data-stu-id="91b20-113">For each skill, you can select a skill type and a rating model.</span></span>
+- <span data-ttu-id="00447-108">Supervision – evnen til at føre tilsyn med andres arbejde.</span><span class="sxs-lookup"><span data-stu-id="00447-108">Supervisory – Ability to supervise the work of others.</span></span>
+- <span data-ttu-id="00447-109">Ledelse – evnen til at lede medarbejdere og forretningsområder.</span><span class="sxs-lookup"><span data-stu-id="00447-109">Leadership – Ability to lead employees and business domains.</span></span>
+- <span data-ttu-id="00447-110">Planlægning – evnen til at se fremad, formulere visioner og få dem gennemført.</span><span class="sxs-lookup"><span data-stu-id="00447-110">Planning – Ability to look ahead, to form vision statements, and to see them through.</span></span>
+- <span data-ttu-id="00447-111">HTML – evnen til at skrive HTML-kode.</span><span class="sxs-lookup"><span data-stu-id="00447-111">HTML – Ability to write HTML code.</span></span>
 
-## <a name="rating-models"></a><span data-ttu-id="91b20-114">Klassifikationsmodeller</span><span class="sxs-lookup"><span data-stu-id="91b20-114">Rating models</span></span>
-<span data-ttu-id="91b20-115">Rangeringsmodeller er en hjælp til at evaluere en persons faktiske færdighedsniveau, det niveau de skal tilsigte, eller det færdighedsniveau, der kræves til et job.</span><span class="sxs-lookup"><span data-stu-id="91b20-115">Rating models help evaluate a person's actual level of skill, the level they should work to achieve, or the level of skill that is required for a job.</span></span> <span data-ttu-id="91b20-116">Du kan angive op til ti niveauer til en rangeringsmodel.</span><span class="sxs-lookup"><span data-stu-id="91b20-116">You can enter up to 10 levels for a rating model.</span></span>  <span data-ttu-id="91b20-117">Hvert niveau i en klassifikationsmodel er tildelt en faktor.</span><span class="sxs-lookup"><span data-stu-id="91b20-117">Each level in a rating model is assigned a factor.</span></span>  <span data-ttu-id="91b20-118">Faktorværdien bruges til at normalisere resultaterne af færdigheder, der bruger forskellige klassifikationsmodeller.</span><span class="sxs-lookup"><span data-stu-id="91b20-118">The factor value will be used to normalize the scores of skills that use different rating models.</span></span>  <span data-ttu-id="91b20-119">Faktoren skal være et tal mellem 0-9, og hvert niveau skal have en entydig faktor.</span><span class="sxs-lookup"><span data-stu-id="91b20-119">The factor must be a number between 0-9 and each level must have a unique factor.</span></span>  <span data-ttu-id="91b20-120">Niveauer med højere faktorværdier vægter mere i rangeringsmodellen.</span><span class="sxs-lookup"><span data-stu-id="91b20-120">Levels with higher factor values carry more weight in a rating model.</span></span>
+<span data-ttu-id="00447-112">Hvis du ikke allerede har konfigureret færdighedstyper og klassifikationsmodeller, skal du tilføje nogle, før du opretter færdigheder.</span><span class="sxs-lookup"><span data-stu-id="00447-112">If you haven't already set up skill types and rating models, you'll need to add some before creating skills.</span></span>
 
-## <a name="specify-job-skills"></a><span data-ttu-id="91b20-121">Angive jobfærdigheder</span><span class="sxs-lookup"><span data-stu-id="91b20-121">Specify job skills</span></span>
-<span data-ttu-id="91b20-122">Når du indtaster oplysninger om et job, kan du angive de færdigheder, en person skal have for at kunne udføre det arbejde, der kræves til jobbet.</span><span class="sxs-lookup"><span data-stu-id="91b20-122">When you enter information about a job, you can specify the skills that a person should have to perform the work required for the job.</span></span>  <span data-ttu-id="91b20-123">Desuden kan du angive det ønskede niveau for hver færdighed samt vigtighedsniveauet for færdigheden.</span><span class="sxs-lookup"><span data-stu-id="91b20-123">In addition you can specify the desired level for each skill as well the level of importance of the skill.</span></span> <span data-ttu-id="91b20-124">Forskellige job kan have forskellige krav til vigtighedsniveau for den samme færdighed.</span><span class="sxs-lookup"><span data-stu-id="91b20-124">Different jobs can require different levels of importance for the same skill.</span></span>
+<span data-ttu-id="00447-113">Følgende personer kan angive færdigheder for en arbejder:</span><span class="sxs-lookup"><span data-stu-id="00447-113">The following people can enter skills for a worker:</span></span>
 
-## <a name="enter-skills-for-workers-applicants-or-contacts"></a><span data-ttu-id="91b20-125">Angiv færdigheder for arbejdere, ansøgere eller kontakter</span><span class="sxs-lookup"><span data-stu-id="91b20-125">Enter skills for workers, applicants, or contacts</span></span>
-<span data-ttu-id="91b20-126">Du kan angive målfærdigheder eller reelle færdigheder for arbejdere, ansøgere eller kontakter.</span><span class="sxs-lookup"><span data-stu-id="91b20-126">You can enter target skills or actual skills for workers, applicants, or contacts.</span></span> <span data-ttu-id="91b20-127">En målfærdighed er en færdighed, som en person har til hensigt at opnå.</span><span class="sxs-lookup"><span data-stu-id="91b20-127">A target skill is a skill that a person plans to achieve.</span></span> <span data-ttu-id="91b20-128">En reel færdighed er en færdighed, som en person har i øjeblikket.</span><span class="sxs-lookup"><span data-stu-id="91b20-128">An actual skill is a skill that a person currently has.</span></span>
+- <span data-ttu-id="00447-114">Arbejdere kan indtaste færdigheder for sig selv i medarbejderselvbetjening.</span><span class="sxs-lookup"><span data-stu-id="00447-114">Workers can enter skills for themselves in Employee self-service.</span></span> <span data-ttu-id="00447-115">Disse færdigheder kræver en leders godkendelse.</span><span class="sxs-lookup"><span data-stu-id="00447-115">These skills require manager approval.</span></span>
+- <span data-ttu-id="00447-116">Ledere kan indtaste færdigheder for deres arbejdere.</span><span class="sxs-lookup"><span data-stu-id="00447-116">Managers can enter skills for their workers.</span></span> <span data-ttu-id="00447-117">Du kan oprette en arbejdsproces, der automatisk godkender disse færdigheder.</span><span class="sxs-lookup"><span data-stu-id="00447-117">You can create a workflow that auto-approves these skills.</span></span>
 
-## <a name="skill-mapping-and-skill-mapping-profiles"></a><span data-ttu-id="91b20-129"> Konfigurere kompetencesøgning og profiler for kompetencesøgning</span><span class="sxs-lookup"><span data-stu-id="91b20-129">Skill mapping and Skill mapping profiles</span></span>
-<span data-ttu-id="91b20-130">Du kan oprette en kompetencesøgning for at finde en medarbejder, ansøger eller kontaktperson, der er kvalificeret til at udføre en bestemt type opgave.</span><span class="sxs-lookup"><span data-stu-id="91b20-130">You can create a skill-mapping search to find a worker, applicant, or contact person who is qualified to perform a specific type of task.</span></span> <span data-ttu-id="91b20-131">Kompetencesøgninger søger på tværs af kvalifikationer, uddannelse, certifikater, tillidsposter og projekterfaring og returnerer et resultat, der svarer til de kriterier, der er angivet.</span><span class="sxs-lookup"><span data-stu-id="91b20-131">Skill-mapping searches look across skills, education, certificates, positions of trust and project experience and return results that match the criteria entered.</span></span>  <span data-ttu-id="91b20-132">Det kan f.eks. være nyttigt at vide, hvilke arbejdere i organisationen, der har oparbejdet deres CPA.</span><span class="sxs-lookup"><span data-stu-id="91b20-132">For example, it might be useful to know which workers in your organization earned their CPA.</span></span>
+## <a name="create-a-skill-type"></a><span data-ttu-id="00447-118">Oprette en færdighedstype</span><span class="sxs-lookup"><span data-stu-id="00447-118">Create a skill type</span></span>
 
-<span data-ttu-id="91b20-133">Ved hjælp af kompetencesøgningsprofiler kan du finde aktuelle medarbejdere eller ansøgere med kvalifikationer, der svarer direkte til virksomhedens behov.</span><span class="sxs-lookup"><span data-stu-id="91b20-133">Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.</span></span>  <span data-ttu-id="91b20-134">Du kan f.eks. oprette en kompetencesøgningsprofil til en ledig stilling i organisationen.</span><span class="sxs-lookup"><span data-stu-id="91b20-134">For example, you could create a skill-mapping profile for an open position in your organization.</span></span> <span data-ttu-id="91b20-135">Ved at oprette en profil for et bestemt job og kopiere færdigheder, uddannelse og certifikater fra dette job til profilen kan du hurtigt søge efter arbejdere, ansøgere og kontakter, der opfylder et eller flere af de kriterier, der er angivet i profilen, og se en liste over de ansøgere, hvis kvalifikationer bedst svarer de færdigheder, der kræves for jobbet.</span><span class="sxs-lookup"><span data-stu-id="91b20-135">By creating a profile for a particular job and copying the skills, education and certificates from that job to the profile, you can quickly search workers, applicants and contact persons who match one or more of the criteria entered on the profile and view a list of the candidates whose skills most closely match the skills required for the job.</span></span>
+<span data-ttu-id="00447-119">Færdighedstyper er kategorier, som individuelle færdigheder hører under, f.eks. Administration eller Salg.</span><span class="sxs-lookup"><span data-stu-id="00447-119">Skill types are categories that individual skills fall under, such as Administration or Sales.</span></span>
 
-> <span data-ttu-id="91b20-136">**Bemærk** Det er kun arbejdere, ansøgere og kontaktpersoner, som du har valgt til at indgå i kompetencesøgninger, der kan vises på en resultatliste for kompetencesøgning eller indgå i en kompetenceprofil.</span><span class="sxs-lookup"><span data-stu-id="91b20-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="91b20-137">Hvis du vil medtage en medarbejder, ansøger eller kontakt i kompetencesøgninger, skal du angive **Medtag i kompetencetilknytning** til Ja på de følgende sider:</span><span class="sxs-lookup"><span data-stu-id="91b20-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
-> 
-> + <span data-ttu-id="91b20-138">Arbejdstråd</span><span class="sxs-lookup"><span data-stu-id="91b20-138">Worker</span></span>
-> + <span data-ttu-id="91b20-139">Medarbejder</span><span class="sxs-lookup"><span data-stu-id="91b20-139">Employee</span></span>
-> + <span data-ttu-id="91b20-140">Ansøger</span><span class="sxs-lookup"><span data-stu-id="91b20-140">Applicant</span></span>
-> + <span data-ttu-id="91b20-141">Kontaktpersoner</span><span class="sxs-lookup"><span data-stu-id="91b20-141">Contacts</span></span>
+1. <span data-ttu-id="00447-120">I arbejdsområdet **Medarbejderudvikling** skal du vælge **Links**.</span><span class="sxs-lookup"><span data-stu-id="00447-120">In the **Employee development** workspace, select **Links**.</span></span>
 
-## <a name="skill-gap-analysis-and-skill-profile-analysis"></a><span data-ttu-id="91b20-142">Analyse af kompetencekløft og kompetenceprofilanalyse</span><span class="sxs-lookup"><span data-stu-id="91b20-142">Skill gap analysis and skill profile analysis</span></span>
-<span data-ttu-id="91b20-143">Du kan oprette en kompetenceprofilanalyse for at få vist en liste over en arbejders, ansøgers eller kontakts færdigheder pr. en bestemt dato.</span><span class="sxs-lookup"><span data-stu-id="91b20-143">You can create a skill profile analysis to view a list of the competencies of a worker, applicant, or contact person as of a specific date.</span></span> <span data-ttu-id="91b20-144">Oprette en analyse af kompetencekløft for at sammenligne en persons færdigheder med de færdigheder, der kræves til et bestemt job.</span><span class="sxs-lookup"><span data-stu-id="91b20-144">You can create a skill gap analysis to compare a person’s skills and the skills that are required for a specific job.</span></span>  
+2. <span data-ttu-id="00447-121">Vælg **Kompetencetyper** under **Kompetenceopsætning**.</span><span class="sxs-lookup"><span data-stu-id="00447-121">Under **Competency setup**, select **Skill types**.</span></span>
 
+3. <span data-ttu-id="00447-122">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="00447-122">Select **New**.</span></span>
 
+4. <span data-ttu-id="00447-123">Udfyld følgende felter:</span><span class="sxs-lookup"><span data-stu-id="00447-123">Complete the following fields:</span></span>
 
+   - <span data-ttu-id="00447-124">**Færdighedstype**: Angiv et navn til færdighedstypen.</span><span class="sxs-lookup"><span data-stu-id="00447-124">**Skill type**: Enter a name for the skill type.</span></span>
+   - <span data-ttu-id="00447-125">**Beskrivelse**: Angiv en beskrivelse af færdighedstypen.</span><span class="sxs-lookup"><span data-stu-id="00447-125">**Description**: Enter a description for the skill type.</span></span>
+
+5. <span data-ttu-id="00447-126">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="00447-126">Select **Save**.</span></span>
+
+## <a name="create-a-rating-model"></a><span data-ttu-id="00447-127">Oprette en rangeringsmodel</span><span class="sxs-lookup"><span data-stu-id="00447-127">Create a rating model</span></span>
+
+<span data-ttu-id="00447-128">Rangeringsmodeller er en hjælp til at evaluere en persons faktiske færdighedsniveau, det niveau de skal tilsigte, eller det færdighedsniveau, der kræves til et job.</span><span class="sxs-lookup"><span data-stu-id="00447-128">Rating models help evaluate a person's actual level of skill, the level they should work to achieve, or the level of skill required for a job.</span></span> <span data-ttu-id="00447-129">Hvert niveau i en klassifikationsmodel er tildelt en faktor.</span><span class="sxs-lookup"><span data-stu-id="00447-129">Each level in a rating model is assigned a factor.</span></span>
+
+1. <span data-ttu-id="00447-130">I arbejdsområdet **Medarbejderudvikling** skal du vælge **Links**.</span><span class="sxs-lookup"><span data-stu-id="00447-130">In the **Employee development** workspace, select **Links**.</span></span>
+
+2. <span data-ttu-id="00447-131">Vælg **Rangeringsmodeller** under **Opsætning af kompetence**.</span><span class="sxs-lookup"><span data-stu-id="00447-131">Under **Competency setup**, select **Rating models**.</span></span>
+
+3. <span data-ttu-id="00447-132">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="00447-132">Select **New**.</span></span>
+
+4. <span data-ttu-id="00447-133">Udfyld følgende felter:</span><span class="sxs-lookup"><span data-stu-id="00447-133">Complete the following fields:</span></span>
+
+   - <span data-ttu-id="00447-134">**Rangering**: Angiv et navn til rangeringsmodellen, **Færdigheder**.</span><span class="sxs-lookup"><span data-stu-id="00447-134">**Rating**: Enter a name for the rating model, such as **Skills**.</span></span>
+   - <span data-ttu-id="00447-135">**Beskrivelse**: Angiv en beskrivelse af rangeringsmodellen, f.eks. **Færdighedsrangering**.</span><span class="sxs-lookup"><span data-stu-id="00447-135">**Description**: Enter a description for the rating model, such as **Skill ratings**.</span></span>
+
+5. <span data-ttu-id="00447-136">Vælg **Ny** i sektionen **Niveauer**.</span><span class="sxs-lookup"><span data-stu-id="00447-136">In the **Levels** section, select **New**.</span></span> <span data-ttu-id="00447-137">For hvert niveau, du vil tilføje, skal du udfylde følgende felter:</span><span class="sxs-lookup"><span data-stu-id="00447-137">For each level you want to add, complete the following fields:</span></span>
+
+   - <span data-ttu-id="00447-138">**Niveau**: Angiv et navn til niveauet.</span><span class="sxs-lookup"><span data-stu-id="00447-138">**Level**: Enter a name for the level.</span></span>
+   - <span data-ttu-id="00447-139">**Beskrivelse**: Angiv en beskrivelse af niveauet.</span><span class="sxs-lookup"><span data-stu-id="00447-139">**Description**: Enter a description for the level.</span></span>
+   - <span data-ttu-id="00447-140">**Faktor**: Angiv en faktorværdi fra 0-9.</span><span class="sxs-lookup"><span data-stu-id="00447-140">**Factor**: Enter a factor value from 0-9.</span></span> <span data-ttu-id="00447-141">Faktorer hjælper med at normalisere resultaterne af færdigheder, der bruger forskellige rangeringsmodeller.</span><span class="sxs-lookup"><span data-stu-id="00447-141">Factors help normalize the scores of skills that use different rating models.</span></span> <span data-ttu-id="00447-142">Hvert niveau skal have en entydig faktor.</span><span class="sxs-lookup"><span data-stu-id="00447-142">Each level must have a unique factor.</span></span> <span data-ttu-id="00447-143">Niveauer med højere faktorværdier vægter mere i rangeringsmodellen.</span><span class="sxs-lookup"><span data-stu-id="00447-143">Levels with higher factor values carry more weight in a rating model.</span></span>
+
+   <span data-ttu-id="00447-144">Fortsæt med at tilføje niveauer efter behov.</span><span class="sxs-lookup"><span data-stu-id="00447-144">Continue adding levels as necessary.</span></span> <span data-ttu-id="00447-145">Du kan angive op til ti niveauer for hver rangeringsmodel.</span><span class="sxs-lookup"><span data-stu-id="00447-145">You can enter up to 10 levels for each rating model.</span></span>
+
+6. <span data-ttu-id="00447-146">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="00447-146">Select **Save**.</span></span>
+
+## <a name="create-a-skill"></a><span data-ttu-id="00447-147">Oprette en færdighed</span><span class="sxs-lookup"><span data-stu-id="00447-147">Create a skill</span></span>
+
+<span data-ttu-id="00447-148">Før du kan tildele en færdighed eller oprette en færdighedssøgning eller en færdighedsprofil, skal du angive oplysninger om færdighederne på siden **Færdigheder**.</span><span class="sxs-lookup"><span data-stu-id="00447-148">Before you can assign a skill, or create a skill-mapping search or skill profile, you must enter information about the skills on the **Skills** page.</span></span> <span data-ttu-id="00447-149">Du kan vælge en færdighedstype og en rangeringsmodel for hver færdighed.</span><span class="sxs-lookup"><span data-stu-id="00447-149">For each skill, you can select a skill type and a rating model.</span></span>
+
+1. <span data-ttu-id="00447-150">I arbejdsområdet **Medarbejderudvikling** skal du vælge **Links**.</span><span class="sxs-lookup"><span data-stu-id="00447-150">In the **Employee development** workspace, select **Links**.</span></span>
+
+2. <span data-ttu-id="00447-151">Vælg **Færdigheder** under **Kompetenceopsætning**.</span><span class="sxs-lookup"><span data-stu-id="00447-151">Under **Competency setup**, select **Skills**.</span></span>
+
+3. <span data-ttu-id="00447-152">Vælg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="00447-152">Select **New**.</span></span>
+
+4. <span data-ttu-id="00447-153">Udfyld følgende felter:</span><span class="sxs-lookup"><span data-stu-id="00447-153">Complete the following fields:</span></span>
+
+   - <span data-ttu-id="00447-154">**Færdighed**: Angiv et navn til færdigheden.</span><span class="sxs-lookup"><span data-stu-id="00447-154">**Skill**: Enter a name for the skill.</span></span>
+   - <span data-ttu-id="00447-155">**Beskrivelse**: Angiv en beskrivelse af færdigheden.</span><span class="sxs-lookup"><span data-stu-id="00447-155">**Description**: Enter a description for the skill.</span></span>
+   - <span data-ttu-id="00447-156">**Rangering**: Vælg den rangeringsmodel, som du vil bruge til denne færdighed.</span><span class="sxs-lookup"><span data-stu-id="00447-156">**Rating**: Select the rating model you want to use for this skill.</span></span>
+   - <span data-ttu-id="00447-157">**Færdighedstype** : Vælg på listen over færdighedstyper.</span><span class="sxs-lookup"><span data-stu-id="00447-157">**Skill type**: Select from the list of skill types.</span></span>
+
+5. <span data-ttu-id="00447-158">Vælg **Gem**.</span><span class="sxs-lookup"><span data-stu-id="00447-158">Select **Save**.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="00447-159">Se også</span><span class="sxs-lookup"><span data-stu-id="00447-159">See also</span></span>
+
+[<span data-ttu-id="00447-160">Angive færdigheder</span><span class="sxs-lookup"><span data-stu-id="00447-160">Enter skills</span></span>](hr-develop-enter-skills.md)<br>
+[<span data-ttu-id="00447-161">Tilknytte færdigheder</span><span class="sxs-lookup"><span data-stu-id="00447-161">Map skills</span></span>](hr-develop-map-skills.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,42 +8,41 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0331f63444a1058df9f58908a6a228161b3dd80
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cef2de88827ccf33dafe2152238e4fe96dfda1ae
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803507"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056558"
 ---
-# <a name="enter-worker-information"></a><span data-ttu-id="136d6-103">Angive arbejderoplysninger</span><span class="sxs-lookup"><span data-stu-id="136d6-103">Enter worker information</span></span>
+# <a name="enter-worker-information"></a><span data-ttu-id="246dd-103">Angive arbejderoplysninger</span><span class="sxs-lookup"><span data-stu-id="246dd-103">Enter worker information</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="136d6-104">Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og genereret stillingerne, er næste trin at angive arbejderoplysninger for de personer, der ansættes.</span><span class="sxs-lookup"><span data-stu-id="136d6-104">After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired.</span></span> <span data-ttu-id="136d6-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="136d6-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="136d6-106">Demodataene indeholder et åbent masseansættelsesprojekt.</span><span class="sxs-lookup"><span data-stu-id="136d6-106">The demo data contains an open mass hire project.</span></span> <span data-ttu-id="136d6-107">Du begynder denne procedure ved at gå til Human Resources > Rekruttering > Masseansættelsesprojekter.</span><span class="sxs-lookup"><span data-stu-id="136d6-107">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span>
+<span data-ttu-id="246dd-104">Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og genereret stillingerne, er næste trin at angive arbejderoplysninger for de personer, der ansættes.</span><span class="sxs-lookup"><span data-stu-id="246dd-104">After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired.</span></span> <span data-ttu-id="246dd-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="246dd-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="246dd-106">Demodataene indeholder et åbent masseansættelsesprojekt.</span><span class="sxs-lookup"><span data-stu-id="246dd-106">The demo data contains an open mass hire project.</span></span> <span data-ttu-id="246dd-107">Du begynder denne procedure ved at gå til Human Resources > Rekruttering > Masseansættelsesprojekter.</span><span class="sxs-lookup"><span data-stu-id="246dd-107">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span>
 
-1. <span data-ttu-id="136d6-108">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="136d6-108">In the list, mark the selected row.</span></span>
-2. <span data-ttu-id="136d6-109">Klik på Detaljer for stilling.</span><span class="sxs-lookup"><span data-stu-id="136d6-109">Click Position details.</span></span>
-    * <span data-ttu-id="136d6-110">Rediger startdatoen for arbejderen.</span><span class="sxs-lookup"><span data-stu-id="136d6-110">Edit the start date for the worker.</span></span>  
-    * <span data-ttu-id="136d6-111">Rediger slutdatoen for arbejderen.</span><span class="sxs-lookup"><span data-stu-id="136d6-111">Edit the end date for the worker.</span></span>  
-    * <span data-ttu-id="136d6-112">Ændr arbejdertypen for arbejderen, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="136d6-112">Change the worker type for the worker, if needed.</span></span>  
-3. <span data-ttu-id="136d6-113">Skriv en værdi i feltet Fornavn.</span><span class="sxs-lookup"><span data-stu-id="136d6-113">In the First name field, type a value.</span></span>
-4. <span data-ttu-id="136d6-114">Skriv en værdi i feltet Mellemnavn.</span><span class="sxs-lookup"><span data-stu-id="136d6-114">In the Middle name field, type a value.</span></span>
-5. <span data-ttu-id="136d6-115">Indtast en værdi i feltet Efternavn.</span><span class="sxs-lookup"><span data-stu-id="136d6-115">In the Last name field, type a value.</span></span>
-    * <span data-ttu-id="136d6-116">Ændr jobbet for arbejderen, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="136d6-116">Change the job for the worker, if needed.</span></span>  
-    * <span data-ttu-id="136d6-117">Ændr afdelingen for arbejderen, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="136d6-117">Change the department for the worker, if needed.</span></span>  
-    * <span data-ttu-id="136d6-118">Ændr status for fuldtidsansat for arbejderen, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="136d6-118">Change the full-time equivalent status for the worker, if needed.</span></span>  
-6. <span data-ttu-id="136d6-119">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="136d6-119">Click OK.</span></span>
-7. <span data-ttu-id="136d6-120">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="136d6-120">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="136d6-121">Fjern markeringen af den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="136d6-121">In the list, unmark the selected row.</span></span>
-    * <span data-ttu-id="136d6-122">Vælg det næste ansættelsesprojekt, og fortsæt med at indtaste arbejderoplysninger for hver person, du ansætter.</span><span class="sxs-lookup"><span data-stu-id="136d6-122">Select the next project position and continue entering the worker information for each person that you're hiring.</span></span>  
+1. <span data-ttu-id="246dd-108">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="246dd-108">In the list, mark the selected row.</span></span>
+2. <span data-ttu-id="246dd-109">Klik på Detaljer for stilling.</span><span class="sxs-lookup"><span data-stu-id="246dd-109">Click Position details.</span></span>
+    * <span data-ttu-id="246dd-110">Rediger startdatoen for arbejderen.</span><span class="sxs-lookup"><span data-stu-id="246dd-110">Edit the start date for the worker.</span></span>  
+    * <span data-ttu-id="246dd-111">Rediger slutdatoen for arbejderen.</span><span class="sxs-lookup"><span data-stu-id="246dd-111">Edit the end date for the worker.</span></span>  
+    * <span data-ttu-id="246dd-112">Ændr arbejdertypen for arbejderen, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="246dd-112">Change the worker type for the worker, if needed.</span></span>  
+3. <span data-ttu-id="246dd-113">Skriv en værdi i feltet Fornavn.</span><span class="sxs-lookup"><span data-stu-id="246dd-113">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="246dd-114">Skriv en værdi i feltet Mellemnavn.</span><span class="sxs-lookup"><span data-stu-id="246dd-114">In the Middle name field, type a value.</span></span>
+5. <span data-ttu-id="246dd-115">Indtast en værdi i feltet Efternavn.</span><span class="sxs-lookup"><span data-stu-id="246dd-115">In the Last name field, type a value.</span></span>
+    * <span data-ttu-id="246dd-116">Ændr jobbet for arbejderen, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="246dd-116">Change the job for the worker, if needed.</span></span>  
+    * <span data-ttu-id="246dd-117">Ændr afdelingen for arbejderen, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="246dd-117">Change the department for the worker, if needed.</span></span>  
+    * <span data-ttu-id="246dd-118">Ændr status for fuldtidsansat for arbejderen, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="246dd-118">Change the full-time equivalent status for the worker, if needed.</span></span>  
+6. <span data-ttu-id="246dd-119">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="246dd-119">Click OK.</span></span>
+7. <span data-ttu-id="246dd-120">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="246dd-120">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="246dd-121">Fjern markeringen af den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="246dd-121">In the list, unmark the selected row.</span></span>
+    * <span data-ttu-id="246dd-122">Vælg det næste ansættelsesprojekt, og fortsæt med at indtaste arbejderoplysninger for hver person, du ansætter.</span><span class="sxs-lookup"><span data-stu-id="246dd-122">Select the next project position and continue entering the worker information for each person that you're hiring.</span></span>  
 
 
 
