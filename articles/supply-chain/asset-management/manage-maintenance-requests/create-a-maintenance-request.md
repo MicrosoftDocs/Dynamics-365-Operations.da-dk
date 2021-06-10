@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af67d320f14fc6c3d28eec47de402ba645eea06d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836776"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102968"
 ---
 # <a name="create-maintenance-requests"></a>Oprette vedligeholdelsesanmodninger
 
@@ -30,7 +30,7 @@ ms.locfileid: "5836776"
 
 Vedligeholdelsesanmodninger kan bruges, hvis vedligeholdelsesarbejdere eller produktionsmedarbejdere opdager, at udstyr kræver reparation, men reparationsjobbet ikke kan udføres med det samme.
 
-**Eksempel:** Mens en vedligeholdelsesarbejder foretager en reparation, opdager hun, at et andet aktiv på samme sted skal serviceres. Vedligeholdelsesarbejderen har dog ikke tid eller de nødvendige reservedele til at udføre reparationsjobbet. Derfor opretter hun en vedligeholdelsesanmodning på aktivet og indtaster en kort beskrivelse af problemet.
+**Eksempel:** Mens en vedligeholdelsesarbejder foretager en reparation, opdager vedkommende, at et andet aktiv på samme sted skal serviceres. Vedligeholdelsesarbejderen har dog ikke tid eller de nødvendige reservedele til at udføre reparationsjobbet. Derfor opretter arbejderen en vedligeholdelsesanmodning på aktivet og indtaster en kort beskrivelse af problemet.
 
 Afsnittet **Aktive vedligeholdelsesanmodninger** i ruden **Relaterede oplysninger** i højre side af siden **Alle aktiver** eller **Aktive aktiver** (**Styring af aktiver** \> **Fælles** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**) viser de aktive vedligeholdelsesanmodninger, der er knyttet til det valgte aktiv.
 

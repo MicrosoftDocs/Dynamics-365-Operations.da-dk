@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908994"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102681"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruge debitorportalen
 
@@ -82,7 +82,7 @@ Her er standardtrinnene for afsendelse af en ordre fra debitorportalen.
 1. Vælg **Næste** på siden **Varer**, når du er færdig med at tilføje varer.
 1. Siden **Ordreoplysninger** viser en oversigt over ordren. Gennemse ordreindholdet og leveringsoplysningerne. Hvis alt ser korrekt ud, skal du vælge **Send** for at sende ordren.
 
-    ![Siden Ordreoplysninger](media/customer-portal-order-submit.png "Siden Ordreoplysninger")
+    ![Siden Fuldførte ordreoplysninger](media/customer-portal-order-submit.png "Siden Fuldførte ordreoplysninger")
 
 ### <a name="standard-data-setup"></a>Opsætning af standarddata
 

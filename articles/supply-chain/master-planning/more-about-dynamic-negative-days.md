@@ -1,27 +1,21 @@
 ---
 title: Negative dage og dynamiske negative dage
 description: Dette emne giver oplysninger om negative dage og dynamiske negative dage, og hvordan du kan bruge dem til at hjælpe din virksomhed.
-author: t-benebo
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7440a6a0b9093664a0d717b3bfa011ee3100639f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907735"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097228"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative dage og dynamiske negative dage
 
@@ -45,7 +39,7 @@ Du kan få behov enten relativt tidligt i leveringstiden for varen, eller umidde
 - DemoProduct-varen har en indkøbsleveringstid på seks.
 - På dag nul (1. januar) er lagerbeholdningsniveauet for DemoProduct-varen 0 (nul).
 - På dag nul (1. januar) får du en salgsordre på 10 stk. af DemoProduct-varen.
-- På dag syv (7. januar) findes der en eksisterende indkøbsordre på 10 stk. af DemoProduct-varen.
+- På dag syv (8. januar) findes der en eksisterende indkøbsordre på 10 stk. af DemoProduct-varen.
 
 I følgende illustration vises en grafisk visning af dette scenarie.
 
@@ -112,7 +106,7 @@ Der kan opstå et behov på et tidspunkt i løbet af varens leveringstid. Her er
 
 I følgende illustration vises en grafisk visning af dette scenarie.
 
-![Grafisk visning af scenarie 1](./media/negative-days-8.png)
+![Grafisk visning af scenarie 2](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Eksempel A: Negative dage er mindre end varens leveringstid
 
@@ -157,7 +151,7 @@ Du får måske behov efter varens leveringstid. Her er et eksempel på dette sce
 - DemoProduct-varen har en indkøbsleveringstid på seks.
 - På dag nul (1. januar) er lagerbeholdningen for DemoProduct-varen 0 (nul).
 - På dag syv (8. januar), der ligger uden for varens leveringstid, får du en salgsordre på 10 stk. af DemoProduct-varen.
-- På dag 10 (11. januar) findes der en indkøbsordre på 10 stk. af DemoProduct-varen.
+- På dag ti (11. januar) findes der en indkøbsordre på 10 stk. af DemoProduct-varen.
 
 I følgende illustration vises en grafisk visning af dette scenarie.
 
@@ -219,8 +213,8 @@ Du kan angive de negative dage som en lang tidshorisont og derefter arbejde med 
 - DemoProduct-varen har en indkøbsleveringstid på seks.
 - På dag nul (1. januar) er lagerbeholdningen for DemoProduct-varen 0 (nul).
 - På dag nul (1. januar) får du en salgsordre på 10 stk. af DemoProduct-varen.
-- På dag 10 (10. januar) får du en salgsordre på 10 stk. af DemoProduct-varen.
-- På dag 12 (12. januar) findes der en indkøbsordre på 10 stk. af DemoProduct-varen.
+- På dag ni (10. januar) får du en salgsordre på 10 stk. af DemoProduct-varen.
+- På dag elleve (12. januar) findes der en indkøbsordre på 10 stk. af DemoProduct-varen.
 - Negative dage angives til **20**, hvilket er langt mere end varens leveringstid.
 
 I følgende illustration vises en grafisk visning af, hvad der sker.
@@ -229,7 +223,7 @@ I følgende illustration vises en grafisk visning af, hvad der sker.
 
 MRP producerer følgende resultater.
 
-![Resultater](./media/negative-days-20.png)
+![Eksempel på resultater 1](./media/negative-days-20.png)
 
 På det foregående skærmbillede er behovsdatoen for salgsordren den 9. januar i stedet for den 10. januar. Da det pågældende skærmbillede blev taget i 2015, hvor 10. januar var en søndag, flytter skal behovsdatoen for ordren være den forudgående arbejdsdag, som var fredag d. 9. januar.
 
@@ -239,7 +233,7 @@ Resultaterne er ikke forkerte, men kørselstiden for MRP kan være længere, da 
 
 Hvis du reducerer de negative dage til et tal, der ligger tættere på varens leveringstid, og du bruger dynamiske negative dage, producerer MRP følgende resultater.
 
-![Resultater](./media/negative-days-21.png)
+![Eksempel på resultater 2](./media/negative-days-21.png)
 
 MRP opretter et ordreforslag, der er knyttet til den første salgsordre. Det forventes, at den anden salgsordre udlignes derefter mod den eksisterende indkøbsordre, baseret på indstillingen for negative dage. Dette planlægningsresultat er også korrekt, og kørselstiden for MRP kan være kortere. I dette tilfælde er det ikke vigtigt, at du forstår og ved, hvordan du skal arbejde med handlingsmeddelelser.
 

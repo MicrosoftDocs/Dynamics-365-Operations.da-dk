@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 58cdfcf67ab774bbc119f2507920f1fb1d7a562c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824768"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102800"
 ---
 # <a name="trade-allowance-management"></a>Administration af handelstilladelse
 
@@ -171,7 +171,7 @@ For at godkende merchandisinghændelsen af typen **Engangsbeløb** skal du vælg
 
 ## <a name="settle-the-deduction-that-is-due-and-the-customer-short-pay-by-using-the-deduction-workbench"></a>Udligne det fradrag, der skal betales, og kundedelbetalingen ved hjælp af fradragspanelet
 
-Ofte vælge kunderne delbetalinger af valgte fakturaer i forventning om tilbagefaktureringer. For at forhindre problemer med afstemningen af betalinger i fremtiden registrerer medarbejderen i Debitor disse delbetalinger som fradrag, når han eller hun registrerer de faktiske debitorbetalinger. Derefter kan disse debitorfradrag nemt udlignes i fradragspanelet mod de kravbeløb, som er forfaldne fra firmaet.
+Ofte vælge kunderne delbetalinger af valgte fakturaer i forventning om tilbagefaktureringer. For at forhindre problemer med afstemningen af betalinger i fremtiden registrerer medarbejderen i Debitor disse delbetalinger som fradrag, når medarbejderen registrerer de faktiske debitorbetalinger. Derefter kan disse debitorfradrag nemt udlignes i fradragspanelet mod de kravbeløb, som er forfaldne fra firmaet.
 
 Hvis du vil registrere en kundes delbetaling i betalingskladden, skal du vælge **Debitor** \> **Betalinger** \> **Betalingskladde** og oprette en ny betalingskladde. Derefter skal du i handlingsruden vælge **Fradrag**. På siden **Fradrag** kan du oprette og spore det beløb, der blev betalt som delbetaling.
 

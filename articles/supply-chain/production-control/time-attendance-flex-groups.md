@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: afffdfba965806d18b148c77774a31bbb3c0c46c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7628f2fc3d3a7e5bb1175edf59f856bc40f9b987
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831764"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102824"
 ---
 # <a name="flex-groups"></a>Fleksgrupper
 
@@ -103,7 +103,7 @@ Arbejderen er tilknyttet en fleksgruppe med følgende konfiguration:
 - **Minimum for lønart:** 1302
 - **Faktor for lønart:** -1,0
 
-Som forskellen mellem arbejderens flekskonto og hendes tilladte fleksmaksimum angiver, har arbejderen overskredet sit tilladte fleksmaksimum med 4,0 timer.
+Som forskellen mellem arbejderens flekskonto og den tilladte fleksmaksimum angiver, har arbejderen overskredet sit tilladte fleksmaksimum med 4,0 timer.
 
 Når lønadministratoren overfører arbejderens løndata ved at køre jobbet **Overfør til løn** eller **Fleksregulering**, foretages følgende justeringer:
 

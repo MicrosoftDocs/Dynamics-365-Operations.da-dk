@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48830c975f1bdfd953f57e7c0b6601a78e3a521b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3ff153d9c16b219158c12f4bb49eb0a0c5d401ac
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910033"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102896"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversigt over tilbudsanmodninger
 
@@ -83,7 +83,7 @@ På siden **Indkøbs- og forsyningsparametre** kan du vælge, hvilken skabelon d
 - %Udløbsdato og klokkeslæt%
 - %Date%
 
-De angivne tokens %Årsag til returnering af bud% og %Årsag til ændring% erstattes af tekst, der indkøberen kan skrive, når han eller hun afslutter ændringen i guiden **Ændring**. Værdierne for tokenerne %Ændring udarbejdet af% og %Company% hentes automatisk fra tilbudsanmodningen. Tokenet %Date% erstattes af dags dato.
+De angivne tokens %Årsag til returnering af bud% og %Årsag til ændring% erstattes af tekst, som indkøberen kan skrive, når vedkommende afslutter ændringen i guiden **Ændring**. Værdierne for tokenerne %Ændring udarbejdet af% og %Company% hentes automatisk fra tilbudsanmodningen. Tokenet %Date% erstattes af dags dato.
 
 Hvis du vil annullere en tilbudsanmodning, efter den er blevet sendt, kan du gøre dette fra tilbudsanmodningssagen. Til annulleringen kræves det, at der sendes en e-mail-skabelon for at sende besked om annulleringen til kreditorens kontaktpersoner. Skabelonen skal være markeret på siden **Indkøbs- og forsyningsparametre**. Når skabelonen er oprettet, kan den indeholde følgende erstatningstokens:
 

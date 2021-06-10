@@ -2,7 +2,7 @@
 title: Oprette og arbejde med brugerdefinerede felter
 description: I dette emne vises, hvordan du kan oprette brugerdefinerede felter gennem brugergrænsefladen for at skræddersy programmet, så det passer til din virksomhed.
 author: jasongre
-ms.date: 03/09/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: a07c1a81f0436664acdfd23975a99c6670c6fb1c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1acbcbc49be6b764481e151d0fb3f12bf3cf5554
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754746"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092342"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Oprette og arbejde med brugerdefinerede felter
 
@@ -26,7 +26,7 @@ ms.locfileid: "5754746"
 
 Selvom der findes et omfattende sæt af felter klar til brug til administration af en lang række forretningsprocesser, er der nogle gange et behov for, at et firma kan spore flere oplysninger i systemet. Mens programmører kan bruges til at tilføje disse felter som filtypenavne i udviklingsværktøjerne, kan felter tilføjes direkte fra brugergrænsefladen i funktionen til brugerdefinerede felter, hvilket giver dig mulighed for at skræddersy programmet, så det passer til din virksomhed ved hjælp af din webbrowser.
 
-Muligheden for at tilføje brugerdefinerede felter findes i platformsopdatering 13 og nyere. Kun brugere med specielle tilladelser har adgang til denne funktion.
+*Kun brugere med specielle tilladelser har adgang til denne funktion.*
 
 Denne video viser, hvor let det er at føje et brugerdefineret felt til en side: [Tilføje brugerdefinerede felter](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -46,8 +46,9 @@ Følgende trin beskriver processen til oprettelse af et brugerdefineret felt og 
     Hvis du ikke kan se knappen **Opret nyt felt**, har du ikke de nødvendige tilladelser til at bruge denne funktion.
 
 7. I dialogboksen **Opret nyt felt** skal du angive følgende oplysninger.
-
+   
     1. Vælg den databasetabel, hvor feltet skal tilføjes. Bemærk, at kun de tabeller, der understøtter brugerdefinerede felter, vises på rullelisten. Se afsnittet nedenfor, for at få tekniske oplysninger om understøttede tabeller.
+
     2. Vælg datatypen for det nye felt. De tilgængelige datatyper er afkrydsningsfelt, dato, dato/klokkeslæt, decimal, tal, valgliste og tekst.
 
         - Hvis du vælger datatypen tekst, kan du også angive den maksimale længde for den tekst, der kan angives i dette felt.
@@ -60,11 +61,15 @@ Følgende trin beskriver processen til oprettelse af et brugerdefineret felt og 
 10. Klik på **Indsæt** for at indsætte de markerede felter i det valgte område i formularen.
 11. **Valgfrit:** Aktivér tilstanden **Flyt** fra værktøjslinjen til personlige indstillinger for at flytte de nye felter til den ønskede placering i det valgte område. Se [Tilpasse brugeroplevelsen](personalize-user-experience.md) for at få yderligere oplysninger om, hvordan du bruger de forskellige funktioner for tilpasning til at optimere en formular til din personlige brug.
 
+> [!WARNING]
+> Muligheden for at angive værdier i et brugerdefineret felt, der er føjet til en side, afhænger af, om den tabel, der er knyttet til det brugerdefinerede felt, kan redigeres eller er skrivebeskyttet. Når den tilknyttede tabel er skrivebeskyttet, vil alle felter, der er sammenkædet med den pågældende tabel, herunder eventuelle brugerdefinerede felter, også være skrivebeskyttede.
+
+
 ## <a name="sharing-custom-fields-with-other-users"></a>Dele brugerdefinerede felter med andre brugere
 
-Når du har oprettet et brugerdefineret felt og vist det i en formular, ønsker du muligvis at give denne opdaterede sidevisning, der indeholder det nye felt, til andre brugere i systemet. Dette kan gøres på to forskellige måder ved hjælp af funktionerne til brugertilpasning af produktet:
+Når du har oprettet et brugerdefineret felt og vist det på en side, ønsker du muligvis at give denne opdaterede sidevisning, der indeholder det nye felt, til andre brugere i systemet. Dette kan gøres på to forskellige måder ved hjælp af funktionerne til brugertilpasning af produktet:
 
-- Den anbefalede rute er via systemadministratoren, der kan overføre en tilpasning til alle brugere eller en undergruppe af brugere. Du kan finde flere oplysninger i [Tilpasse brugeroplevelsen](personalize-user-experience.md).
+- Den anbefalede metode er at **udgive en [gemt visning](saved-views.md)**, hvor det brugerdefinerede felt er føjet til siden for det relevante sæt brugere. Hvis funktionen for gemte visninger ikke er aktiveret, kan systemadministratoren anvende tilpasningen på de ønskede brugere fra formularen Brugertilpasning. Du kan finde flere oplysninger i [Tilpasse brugeroplevelsen](personalize-user-experience.md).
 - Du kan også eksportere dine ændringer (kaldet *tilpasninger*), og du sende dem til en eller flere brugere og få hver af disse brugere til at importere dine ændringer. Indstillingen **Administrer** på værktøjslinjen for personlige indstillinger giver dig mulighed for at eksportere og importere tilpasninger.
 
 ## <a name="managing-custom-fields"></a>Administration af brugerdefinerede felter
@@ -134,6 +139,10 @@ I sjældne tilfælde kan du beslutte, at et brugerdefineret felt ikke længere e
 > Denne handling kan ikke fortrydes, og det vil resultere i, at de data, der er knyttet til feltet, slettes permanent fra databasen.
 
 ## <a name="appendix"></a>Appendiks
+
+### <a name="why-cant-i-enter-a-value-in-my-custom-field"></a>Hvorfor kan jeg ikke angive en værdi i mit brugerdefinerede felt? 
+
+Hvis du ikke kan skrive en værdi i det brugerdefinerede felt, når siden er i redigeringstilstand, kan det skyldes, at den tabel, som feltet er føjet til, i øjeblikket er skrivebeskyttet. Alle felter i en tabel bliver skrivebeskyttede, hvis den understøttende tabel i øjeblikket er konfigureret som skrivebeskyttet på siden.   
 
 ### <a name="who-can-create-custom-fields"></a>Hvem kan oprette brugerdefinerede felter?
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2c69ab02ea9e6a5a5699a204258243d6204413b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e89e8b4860bbafe4bd47d62d2feb7d197f233d24
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825296"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102776"
 ---
 # <a name="purchasing-policies-overview"></a>Oversigt over indkøbspolitikker
 
@@ -132,7 +132,7 @@ Reglen for oprettelse af indkøbsordre og efterspørgselskonsolidering definerer
 -   På fanen **Pristolerance** kan du definere regler for at dirigere godkendte indkøbsrekvisitioner tilbage gennem evalueringsprocessen, når prisen på en indkøbskatalogvare stiger. Angiv det maksimale beløb som nettobeløbet på et linjeelement i en indkøbsrekvisition kan stige mellem det tidspunkt, hvor indkøbsrekvisitionen godkendes, og det tidspunkt, hvor indkøbsrekvisitionen oprettes. Nettobeløbet beregnes ved hjælp af følgende formel: (\[Mængde × (enhedspris – rabat) ÷ prisenhed\] + indkøbstillæg) × (100 – rabatprocent) ÷ 100 indkøbsrekvisitionslinjer, der overstiger den pristolerance, som du har angivet er tilbageholdt for manuel behandling. De regler, som du konfigurerer under fanen **Fejlbehandling**, bestemmer, hvordan indkøbsrekvisitionslinjerne behandles.
 -   På fanen **Fejlbehandling** kan du konfigurere den behandlingsregel, der gælder for en indkøbsrekvisition, hvis den ikke godkendes under oprettelsen af indkøbsordren pga. en kreditorfejl eller en pristolerancefejl. Vælg en af følgende indstillinger:
     -   **Ingen handling** – Indkøbsrekvisitionslinjer forbliver på siden **Frigiv godkendte indkøbsrekvisitioner**. Statussen for indkøbsrekvisitionslinjerne forbliver **Godkendt**. Fejlene skal dog afklares, før der kan genereres en indkøbsordre for indkøbsrekvisitionslinjerne.
-    -   **Annuller indkøbsrekvisitionslinjen** – Indkøbsrekvisitionslinjerne annulleres. Anmoderen kan oprette en ny indkøbsrekvisition for de annullerede linjer, hvis vedkommende stadig ønsker at anmode om linjeelementerne.
+    -   **Annuller indkøbsrekvisitionslinjen** – Indkøbsrekvisitionslinjerne annulleres. Anmoderen kan oprette en ny indkøbsrekvisition for de annullerede linjer, hvis vedkommende stadig ønsker at anmode om linjevarerne.
     -   **Opret en ny indkøbsrekvisitionslinje** – Indkøbsrekvisitionslinjerne annulleres. Der genereres derefter nye indkøbsrekvisitioner, der kun indeholder de indkøbsrekvisitionslinjer, der ikke blev godkendt. De nye indkøbsrekvisitioner, der genereres, har statussen **Kladde**. Disse indkøbsrekvisitioner kan sendes til evaluering igen, når valideringsfejlene er afklaret. Klargøreren af indkøbsrekvisitionslinjerne underrettes om, at linjerne blev annulleret, og at der er genereret nye indkøbsrekvisitioner for de mislykkede indkøbsrekvisitionslinjer.
 -   På fanen **Manuel oprettelse af indkøbsordre** kan du definere de parametre, der bestemmer om en indkøbsrekvisition skal behandles manuelt, eller om den automatisk kan konverteres til en indkøbsordre. Parametrene kan gælde for interne katalogvarer, eksterne katalogvarer eller varer uden for katalog. Vælg en af følgende indstillinger:
     -   **Opret indkøbsordrer manuelt** – Opret manuelt indkøbsordrer for alle indkøbsrekvisitioner.

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908946"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049310"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Lokationsstyring
 
@@ -92,7 +92,7 @@ For at aktivere mobilappen Lokationsstyring til at kommunikere med en bestemt Su
 
 1. Den nye appregistrering åbnes. Notér værdien i feltet **Applikations-id (klient)**, da du skal bruge den senere. Dette id henvises til senere i dette emne som *klient-id'et*.
 
-    ![Program-id (klient)](media/app-connect-azure-app-id.png "Program-id (klient)")
+    ![Program-id (klient)](media/app-connect-azure-app-id.png "Applikations-id (klient)")
 
 1. Gå til listen **Administrer**, og vælg **Certifikat og hemmeligheder**. Vælg derefter en af følgende knapper, afhængigt af hvordan du vil konfigurere appen til godkendelse. (Få flere oplysninger i afsnittet [Godkende ved at bruge et certifikat eller klienthemmelighed](#authenticate) senere i dette emne.)
 
@@ -295,5 +295,9 @@ Hvis en enhed er mistet eller beskadiget, skal du fjerne adgangen til Supply Cha
 1. Vælg **Slet** på værktøjslinjen.
 1. Vælg **Ja** i den bekræftelsesmeddelelsesboks, der vises.
 
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+- [Indstillinger for mobilenhedsbruger](mobile-device-user-settings.md)
+- [Tildele trinikoner og titler til mobilappen Warehouse Management](step-icons-titles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

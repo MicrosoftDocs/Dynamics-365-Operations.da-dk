@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0a3245febe31857181d17bba42e12b65f4ebb40f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3673642729aa41fa3c00a09fe8fe205edd0624c7
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832964"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088459"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Understøttelse af to momsvalutaer
 [!include [banner](../includes/banner.md)]
@@ -42,8 +42,9 @@ Yderligere oplysninger om to valutaer finder du under [To valutaer](dual-currenc
 Som følge af support i forbindelse med dobbelte valutaer er der stillet to nye funktioner i funktionsstyring til rådighed: 
 
 - Momskonvertering (ny i version 10.0.13)
+- Angive økonomiske dimensioner i driftskontiene for realiseret valutaregulering til momsafregning (nyt i version 10.0.17)
 
-Understøttelse af to momsvalutaer sikrer, at momsen beregnes nøjagtigt i momsvalutaen, og at momsafregningssaldoen beregnes nøjagtigt i både regnskabsvalutaen og rapporteringsvalutaen. 
+Understøttelse af to momsvalutaer sikrer, at momsen beregnes nøjagtigt i momsvalutaen, og at momsafregningssaldoen beregnes nøjagtigt i både regnskabsvalutaen og rapporteringsvalutaen.
 
 ## <a name="sales-tax-conversion"></a>Omregning af moms
 
@@ -88,6 +89,10 @@ Denne funktion gælder kun for nye transaktioner. For så vidt angår momstransa
 
 Hvis du vil undgå ovenstående, anbefales det, at du ændrer denne parameterværdi i en ny (ren) momsafregningsperiode, der ikke indeholder nogen ikke-udlignede momstransaktioner. Hvis du vil ændre denne værdi midt i en momsafregningsperiode, skal du køre programmet "Udligning og bogføring af moms" for den aktuelle momsafregningsperiode, før du ændrer denne parameterværdi.
 
+Denne funktion tilføjer regnskabsposter, der tydeliggør gevinster og tab fra valutakurser. Posterne indføres i driftskontiene for realiseret valutaregulering, når værdireguleringen foretages under momsafregning. Du kan finde flere oplysninger i afsnittet [Automatisk saldo for momsafregning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senere i dette emne.
+
+> [!NOTE]
+> Under afregningen hentes der oplysninger om økonomiske dimensioner fra momskonti, som er statuskonti, og de angives i driftskontiene for valutaregulering, som er driftsopgørelseskonti. Da begrænsninger for værdien af økonomiske dimensioner varierer mellem statuskonti og driftsopgørelseskonti, kan der opstå en fejl under processen Afregn og bogfør moms. Hvis du vil undgå at skulle ændre kontostrukturer, kan du aktivere funktionen "Udfyld økonomiske dimensioner i driftskontiene for realiseret valutaregulering til momsafregning". Denne funktion tvinger afledning af økonomiske dimensioner til driftskontiene for valutaregulering. 
 
 ## <a name="track-reporting-currency-tax-amount"></a>Spor momsbeløbet i rapporteringsvaluta
 
@@ -114,7 +119,7 @@ Hvis du bruger eksemplet ovenfor til at demonstrere denne funktion, skal du gå 
 | Regnskabsvaluta             | 100                        | 111                       | 83                       | **83.25**          |
 | Rapporteringsvaluta              | 100                        | 111                       | 83                       | **83**             |
 
-Når du kører momsafregningsprogrammet ved månedsafslutning, vil regnskabsbogføringen være følgende:.
+Når du kører momsafregningsprogrammet ved månedsafslutning, vil regnskabsbogføringen være følgende.
 #### <a name="scenario-sales-tax-conversion--accounting-currency"></a>Scenarie: omberegning af momsbeløb = "Regnskabsvaluta"
 
 | Hovedkonto           | Transaktionsvaluta (GBP) | Regnskabsvaluta (USD) | Rapporteringsvaluta (GBP) |

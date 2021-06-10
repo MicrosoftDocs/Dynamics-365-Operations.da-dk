@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c511558735e89db32e88f6efdd2d0cc88a04b61c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 39786323e1ea11a960332e6e0a01f6ef8de1838d
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814820"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102992"
 ---
 # <a name="pay-based-on-registrations"></a>Løn på basis af registreringer
 
@@ -39,7 +39,7 @@ Dette emne forklarer detaljeret, hvordan løn beregnes baseret på arbejderregis
 
 ## <a name="the-use-of-flex-time"></a>Brugen af flekstid
 
-Perioder af flekstid angives i de tidsprofiler, der bruges i Tid og fremmøde. Der er to fleksprofiltyper: **Fleks+** og **Fleks-**. Når en arbejder registrerer tid i en periode med Fleks+, forøges arbejderens flekssaldo med de timer, der blev arbejdet. Arbejderen modtage ikke nogen kompensation for de timer, der blev arbejdet i perioden med Fleks+. Men arbejderen kan tage fri i perioder med Flex- og få kompensation med timerne, fra hans eller hendes flekssaldo. Derfor betragtes fritid i fleksperioderne som fravær af systemet.
+Perioder af flekstid angives i de tidsprofiler, der bruges i Tid og fremmøde. Der er to fleksprofiltyper: **Fleks+** og **Fleks-**. Når en arbejder registrerer tid i en periode med Fleks+, forøges arbejderens flekssaldo med de timer, der blev arbejdet. Arbejderen modtage ikke nogen kompensation for de timer, der blev arbejdet i perioden med Fleks+. Men arbejderen kan tage fri i perioder med Fleks- og få kompensation for timerne fra sin flekssaldo. Derfor betragtes fritid i fleksperioderne som fravær af systemet.
 
 ## <a name="scenarios-based-on-flex-periods"></a>Scenarier, der er baseret på fleksperioder
 
@@ -77,7 +77,7 @@ For at forstå dette scenario, skal du se følgende felter.
 
 #### <a name="calculation-of-flex"></a>Beregning af Fleks+
 
-I henhold til fleksprofilen er tiden mellem 06:00 og 07:00 en periode med Fleks+. Hvis arbejderen derfor stempler ind 06:30, optjener han 0,5 time. Denne tid føjes til arbejderens flekskonto.
+I henhold til fleksprofilen er tiden mellem 06:00 og 07:00 en periode med Fleks+. Hvis arbejderen derfor stempler ind 06:30, optjenes der 0,5 time. Denne tid føjes til arbejderens flekskonto.
 
 #### <a name="calculation-of-flex-"></a>Beregning af Fleks-
 
@@ -89,7 +89,7 @@ Tid beregnes som tiden mellem indstemplings- og udstemplingstid, det vil sige fr
 
 #### <a name="calculation-of-pay-time"></a>Beregning af løntid
 
-Løntid er den tid, som en arbejder tildeles betaling for. I dette scenario er arbejderen på arbejde i 8,25 timer (**Tid**). Men **løntid** beregnes som 8,50 timer, fordi arbejderen gives løn i perioden med Flex-, efter at han stemplede ud. Løntiden svarer til de planlagte arbejdstimer, fordi tid i perioden med Fleks+ er føjet til arbejderens flekskonto og ikke til løntiden. Fraværstiden i perioden med Flex- opvejes af løntiden og trækkes fra arbejderens flekskonto.
+Løntid er den tid, som en arbejder tildeles betaling for. I dette scenario er arbejderen på arbejde i 8,25 timer (**Tid**). Men **løntid** beregnes som 8,50 timer, fordi arbejderen gives løn i perioden med Fleks-, efter at der er stemplet ud. Løntiden svarer til de planlagte arbejdstimer, fordi tid i perioden med Fleks+ er føjet til arbejderens flekskonto og ikke til løntiden. Fraværstiden i perioden med Flex- opvejes af løntiden og trækkes fra arbejderens flekskonto.
 
 | Tidspunkt              | Registreringstype | Løntid (timer)      |
 |-------------------|-------------------|-----------------------|
@@ -116,11 +116,11 @@ Når du har beregnet kladderegistreringer på siden **Godkend**, kan du se resul
 
 #### <a name="calculation-of-flex"></a>Beregning af Fleks+
 
-I henhold til fleksprofilen er tiden mellem 06:00 og 07:00 en periode med Fleks+. Hvis arbejderen derfor stempler ind 06:30, optjener hun 0,5 times tid i Fleks+ på sin flekssaldo.
+I henhold til fleksprofilen er tiden mellem 06:00 og 07:00 en periode med Fleks+. Hvis arbejderen derfor stempler ind 06:30, optjenes der 0,5 times tid i Fleks+ på flekssaldoen.
 
 #### <a name="calculation-of-flex-"></a>Beregning af Fleks-
 
-Da arbejderen arbejder i perioden med Flex-, beregnes Fleks- ikke. Fleks- beregnes kun, hvis arbejderen er fraværende i perioden med Fleks-. Hvis arbejderen arbejder i perioden med Flex-, får hun fra et betalingsperspektiv den lønsats, der er defineret for normaltid. Hvis arbejderen er fraværende i perioden med Flex-, trækkes de 45 minutter fra hendes flekskonto.
+Da arbejderen arbejder i perioden med Flex-, beregnes Fleks- ikke. Fleks- beregnes kun, hvis arbejderen er fraværende i perioden med Fleks-. Hvis arbejderen arbejder i perioden med Flex-, opnås der fra et betalingsperspektiv den lønsats, der er defineret for normaltid. Hvis arbejderen er fraværende i perioden med Flex-, trækkes de 45 minutter fra flekskontoen.
 
 #### <a name="calculation-of-time"></a>Beregning af tid
 
@@ -168,9 +168,9 @@ Hvis du vil konfigurere systemet til at skelne klart mellem normaltid og overtid
 
 På siden **Beregningsparametre** skal du vælge **Overtid** som profilspecifikationstypen og angive indstillingen **Løntid** til **Nej**, som vist her.
 
-| Reg.specifikation | Profilspecifikationstype | Kalkulation   |     | Løngivende         |     |
+| Reg.specifikation | Profilspecifikationstype | Udregning   | Indstilling | Løngivende         | Indstilling |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Arbejdstid       | Overtid                   | Normaltid | Ja | Løntid     | Nr.  |
+| Arbejdstid       | Overtid                   | Normaltid | Ja | Løntid     | Ingen  |
 |                    |                            | Løntid      | Ja | Lønovertid | Ja |
 
 Når du justerer beregningsparametrene, genereres følgende lønposter.
@@ -466,11 +466,11 @@ Scenarierne nedenfor viser de lønenheder og poster til godkendelse, der generer
 
 ### <a name="scenario-1-the-worker-clocks-in-later-than-planned"></a>Scenarie 1: Arbejderen stempler ind senere end planlagt
 
-Arbejderen stempler ind kl. 08:30. Da hans planlagte komme-tid er 07:00, kommer han 1,50 time for sent på arbejde. Da de 1,50 time betragtes som fraværstid, bliver arbejderen bedt om at vælge en fraværskode. Arbejderen forlader arbejdet kl. 15:30 , som er det planlagte gå-tidspunkt. Når arbejderens registreringer beregnes og godkendes, vises fraværsregistreringen sammen med den fraværskode, som arbejderen har valgt ved komme-registreringen, for tidsintervallet mellem 07:00 og 08:30.
+Arbejderen stempler ind kl. 08:30. Da den planlagte komme-tid er 07:00, kommer arbejderen 1,50 time for sent på arbejde. Da de 1,50 time betragtes som fraværstid, bliver arbejderen bedt om at vælge en fraværskode. Arbejderen forlader arbejdet kl. 15:30 , som er det planlagte gå-tidspunkt. Når arbejderens registreringer beregnes og godkendes, vises fraværsregistreringen sammen med den fraværskode, som arbejderen har valgt ved komme-registreringen, for tidsintervallet mellem 07:00 og 08:30.
 
-I tidsprofilen kan du konfigurere registreringstypen **Komme**, så der er en tolerance, når arbejdere kommer for sent på arbejde. Hvis du f.eks. opretter en tolerance på 5, bliver arbejderen kun bedt om at angive en fraværskode, hvis han kommer senere end 07:05.
+I tidsprofilen kan du konfigurere registreringstypen **Komme**, så der er en tolerance, når arbejdere kommer for sent på arbejde. Hvis du f.eks. opretter en tolerance på 5, bliver arbejderen kun bedt om at angive en fraværskode, hvis arbejderen kommer senere end 07:05.
 
-Fordi arbejderen i dette tilfælde ikke har en god grund til at komme for sent på arbejde, vælger han en fraværskode, der er defineret for ulovligt fravær. En fraværskode anses for egnet til ulovligt fravær, hvis indstillingen for overtidsfradrag er aktiveret for den fraværsgruppe, som fraværskoden hører til. Hvis du vil angive indstillingen, skal du vælge **Tid og fremmøde** &gt; **Konfiguration** &gt; **Grupper** &gt; **Fraværsgrupper** og derefter vælge afkrydsningsfeltet **Modregn overtid**.
+Fordi arbejderen i dette tilfælde ikke har en god grund til at komme for sent på arbejde, vælges der en fraværskode, der er defineret for ulovligt fravær. En fraværskode anses for egnet til ulovligt fravær, hvis indstillingen for overtidsfradrag er aktiveret for den fraværsgruppe, som fraværskoden hører til. Hvis du vil angive indstillingen, skal du vælge **Tid og fremmøde** &gt; **Konfiguration** &gt; **Grupper** &gt; **Fraværsgrupper** og derefter vælge afkrydsningsfeltet **Modregn overtid**.
 
 Sådan ser arbejderens registreringer for dagen ud på siden **Godkend** efter beregningen.
 
@@ -526,7 +526,7 @@ Her er den resulterende lønpost, når registreringerne er overført.
 
 ### <a name="scenario-4-the-worker-clocks-in-late-and-clocks-out-after-the-planned-clock-out-time-during-an-overtime-period"></a>Scenarie 4: Arbejderen stempler for sent ind og stempler ud efter den planlagte gå-tid i en overtidsperiode
 
-Arbejderen stempler ind for sent kl. 09:30, og for at kompensere for sit sene fremmøde arbejder han derefter over og stempler ud kl. 17:00. Fordi arbejderen kom for sent og kompenserede ved at arbejde længere, vil firmaet ikke tildele arbejderen overtidsbetaling for de timer, han har arbejdet mellem det planlagte gå-tidspunkt kl. 15:30 PM og det faktiske gå-tidspunkt kl. 17:00, selvom denne periode er defineret som overtid i arbejdstidsprofilen.
+Arbejderen stempler ind for sent kl. 09:30, og for at kompensere for sit sene fremmøde arbejder arbejderen over og stempler ud kl. 17:00. Fordi arbejderen kom for sent og kompenserede ved at arbejde længere, vil firmaet ikke tildele arbejderen overtidsbetaling for de timer, arbejderen har arbejdet mellem det planlagte gå-tidspunkt kl. 15:30 PM og det faktiske gå-tidspunkt kl. 17:00, selvom denne periode er defineret som overtid i arbejdstidsprofilen.
 
 For at håndtere dette scenarie skal fraværskoden konfigureres til at reducere overtidstimer med eventuelle timer fra ulovligt fravær, som arbejderen har samme dag. Vælg **Tid og fremmøde** &gt; **Konfiguration** &gt; **Grupper** &gt; **Fraværsgrupper** og derefter vælge afkrydsningsfeltet **Modregn overtid** for at modregne overtid i timer for ulovligt fravær.
 
@@ -548,7 +548,7 @@ Hvis afkrydsningsfeltet **Modregn overtid** er markeret for den valgte fraværsk
 
 Her modregnes de 1,5 times ulovligt fravær fra 07:00 til 09:30 i de 2,0 timers overarbejde fra 15:30 til 17:30. Resultatet af registreringen er 1,5 times normaltid og 0,5 times overarbejde.
 
-Hvis afkrydsningsfeltet **Modregn overtid** derimod ikke er markeret for den valgte fraværskode, tildeles arbejderen overtidsbetaling, selvom han kom for sent og havde et ugyldigt fravær. I dette tilfælde genereres følgende lønposter, når registreringerne er overført.
+Hvis afkrydsningsfeltet **Modregn overtid** derimod ikke er markeret for den valgte fraværskode, tildeles arbejderen overtidsbetaling, selvom vedkommende kom for sent og havde et ugyldigt fravær. I dette tilfælde genereres følgende lønposter, når registreringerne er overført.
 
 | Løntype     | Lønart | Lønenheder | Kurs |
 |---------------|----------|-----------|------|
@@ -559,7 +559,7 @@ Hvis afkrydsningsfeltet **Modregn overtid** derimod ikke er markeret for den val
 
 Følgende eksempel viser, hvordan en arbejders flekskonto kan reduceres ved at konvertere fraværsperioden til en periode i Fleks-.
 
-Arbejderen stempler ind kl. 7.00 og stempler ud på kl. 13.00. Hun har fået en aftale med sin overordnede om, at hun kan gå hjem til weekenden, hvis hun fratrækker disse timer fra sin flekskonto. Når arbejderen stempler ud kl. 13:00, bliver hun bedt om at vælge en fraværskode, fordi perioden med fravær i den resterende del af den arbejdsdag, der er påvirket, ikke er i en planlagt periode med Fleks-. For at konvertere den resterende del af en arbejdsdag til en periode med Fleks-, kan arbejderen vælge en fraværskode, der er konfigureret til at reducere hendes flekskonto.
+Arbejderen stempler ind kl. 7.00 og stempler ud på kl. 13.00. Arbejderen har en aftale om, at det er tilladt at tage hjem i weekenden, hvis disse timer trækkes fra flekskontoen. Når arbejderen stempler ud kl. 13:00, bliver vedkommende bedt om at vælge en fraværskode, fordi perioden med fravær i den resterende del af den arbejdsdag, der er påvirket, ikke er i en planlagt periode med Fleks-. For at konvertere den resterende del af en arbejdsdag til en periode med Fleks-, kan arbejderen vælge en fraværskode, der er konfigureret til at reducere flekskontoen.
 
 For at reducere saldoen for flekstimer for arbejdere, der registrerer fravær på en arbejdsdag, skal du vælge **Tid og fremmøde** &gt; **Konfiguration** &gt; **Grupper** &gt; **Fraværsgrupper** og markere afkrydsningsfeltet **Reducer fleks**.
 
@@ -577,7 +577,7 @@ Hvis medarbejderen vælger en fraværskode for ulovligt fravær, vil den resulte
 |---------------|----------|-----------|------|
 | Normaltid | 1201     | 6,00      | 10   |
 
-Hvis medarbejderen vælger en fraværskode for gyldigt fravær, og fraværskoden er konfigureret til at reducere hendes flekskonto, ser de resulterende lønenheder sådan ud, når registreringerne er overført.
+Hvis arbejderen vælger en fraværskode for gyldigt fravær, og fraværskoden er konfigureret til at reducere flekskontoen, ser de resulterende lønenheder sådan ud, når registreringerne er overført.
 
 | Løntype     | Lønart | Lønenheder | Kurs |
 |---------------|----------|-----------|------|

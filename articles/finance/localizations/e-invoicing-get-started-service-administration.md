@@ -2,7 +2,7 @@
 title: Start her med serviceadministration i elektronisk fakturering
 description: Dette emne beskriver, hvordan du kommer i gang med elektronisk fakturering.
 author: gionoder
-ms.date: 05/04/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 7c4d69edd4a8f7c7acc2ac1bc22c1ba6eaba25ae
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980969"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092400"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Start her med serviceadministration i elektronisk fakturering
 
@@ -44,18 +44,14 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Installere tilføjelsesprogrammet til mikroservices i Lifecycle Services
 
-1. Log på din LCS-konto.
-2. Vælg feltet **Prøveversion af funktionsstyring**.
-3. I afsnittet **Funktioner til offentlig visning** skal du vælge **Elektronisk fakturering**.
-4. Kontroller, at indstillingen **Prøveversion af funktion aktiveret** er indstillet til **Ja**.
-5. Vælg et LCS-projekt på LCS-projektdashboardet.
-6. I LCS-projektet skal du vælge dit LCS-implementeringsprojekt på LCS-miljødashboardet. LCS-implementeringsprojektet skal køre.
-7. Under fanen **Power Platform Integration** i feltgruppen **Tilføjelsesprogrammer for miljø** skal du vælge **Installer et nyt tilføjelsesprogram**.
-8. Vælg **Elektronisk fakturering**.
-9. Angiv i feltet **AAD-program-id** **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Denne værdi er en fast værdi.
-10. Angiv lejer-id for din Azure-abonnementskonto i feltet **AAD-lejer-id**.
-11. Gennemse vilkår og betingelser, og marker afkrydsningsfeltet.
-12. Vælg **Installer**.
+1. Log på din LCS-konto, og vælg et LCS-projekt på dashboardet for LCS-projekter.
+2. I projektet skal du vælge dit LCS-implementeringsprojekt på miljødashboardet. Det projekt, du vælger, skal køre.
+3. Under fanen **Power Platform Integration** i feltgruppen **Tilføjelsesprogrammer for miljø** skal du vælge **Installer et nyt tilføjelsesprogram**.
+4. Vælg **Elektronisk fakturering**.
+5. Angiv i feltet **AAD-program-id** **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Denne værdi er en fast værdi.
+6. Angiv lejer-id for din Azure-abonnementskonto i feltet **AAD-lejer-id**.
+7. Gennemse vilkår og betingelser, og marker afkrydsningsfeltet.
+8. Vælg **Installer**.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Konfigurere parametre for RCS-integration med elektronisk fakturering

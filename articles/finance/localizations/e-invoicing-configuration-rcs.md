@@ -2,7 +2,7 @@
 title: Konfigurere Elektronisk fakturering i RCS (Regulatory Configuration Services)
 description: Dette emne forklarer, hvordan du konfigurerer elektronisk fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 6c1d309744c4c8dd0d17f5259551d31c257ede61
+ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897714"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6075137"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurere Elektronisk fakturering i RCS (Regulatory Configuration Services)
 
@@ -194,6 +194,8 @@ På følgende lister vises de ER-formatkonfigurationer, der er tilgængelige for
 
 - Salgsfaktura (ES)
 - Projektfaktura (ES)
+
+Ud over de konfigurationer af ER-formater, der som standard er tilgængelige i det format, der skal bruges sammen med tjenesten Elektronisk fakturering, kan du også oprette dine egne konfigurationer af ER-formater. De formatkonfigurationer, der oprettes til brug sammen med funktionerne i Elektronisk fakturering, understøtter dog ikke direkte reference til tabellerne Økonomi eller Supply Chain Management eller nogen af de tilsvarende metadata. Kun referencer til ER-modeltilknytningen understøttes.
 
 ### <a name="actions"></a>Handlinger
 
