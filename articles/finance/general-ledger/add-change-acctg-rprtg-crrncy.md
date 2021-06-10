@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017049"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085468"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Ændre regnskabs- eller rapporteringsvalutaen
 
@@ -31,12 +31,12 @@ I dette emne beskrives, hvordan du kan ændre regnskabs- eller rapporteringsvalu
 Du vil ændre regnskabs- eller rapporteringsvalutaen eller føje en rapporteringsvaluta til finansopsætningen. Det sker typisk i følgende scenarier:
 
 - Den forkerte regnskabs- eller rapporteringsvaluta blev angivet, da en juridisk enhed blev konfigureret. Du vil nu ændre valutaen.
-- Ingen rapporteringsvaluta blev angivet, da en juridisk enhed blev konfigureret. (En rapporteringsvaluta er valgfri). Nu vil du tilføje en rapporteringsvaluta.
+- Der blev angivet en rapporteringsvaluta, da en juridisk enhed blev konfigureret, men organisationen vil nu fjerne rapporteringsvalutaen.
+- Organisationen opgraderer eller overflytter til Microsoft Dynamics 365 Finance og vil ændre regnskabs- eller rapporteringsvalutaen.
 
 En organisation, der ikke tidligere brugte den dobbelte valutafunktion, vil nu begynde at bruge den. Denne fejl opstår typisk i følgende scenarier.
 
-- Der blev angivet en rapporteringsvaluta, da en juridisk enhed blev konfigureret, men organisationen vil nu fjerne rapporteringsvalutaen.
-- Organisationen opgraderer eller overflytter til Microsoft Dynamics 365 Finance og vil ændre regnskabs- eller rapporteringsvalutaen.
+- Ingen rapporteringsvaluta blev angivet, da en juridisk enhed blev konfigureret. (En rapporteringsvaluta er valgfri). Nu vil du tilføje en rapporteringsvaluta.
 
 ## <a name="resolution"></a>Løsning
 

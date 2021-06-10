@@ -14,7 +14,9 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Platformsopdateringer til 10.0.19 (juli 2021)
+                - name: Platformsopdateringer til version 10.0.20 (juli 2021)
+                  href: get-started/whats-new-platform-updates-10-0-20.md
+                - name: Platformsopdateringer til 10.0.19 (juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Platformsopdateringer til 10.0.18 (maj 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
@@ -940,8 +942,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Nyheder eller ændringer i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Fjernede eller udfasede funktioner i Lifecycle Services (LCS)
-                  href: lifecycle-services/removed-deprecated-features.md
             - name: Brugervejledning til Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Projektonboarding
@@ -1064,6 +1064,10 @@
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Applikationscyklusstyring
                       href: data-entities/dual-write/app-lifecycle-management.md
+                    - name: Brugerdefineret teamejer
+                      href: data-entities/dual-write/user-specified-team-owner.md
+                    - name: Fjerne sammenkædning af og sammenkæde dobbeltskrivningsmiljøer igen
+                      href: data-entities/dual-write/relink-environments.md
                 - name: Tilknytning af begreber mellem apps
                   items:
                     - name: Integreret kundemaster
@@ -1166,6 +1170,8 @@
               items:
                 - name: Oversigt over tilføjelser
                   href: power-platform/add-ins-overview.md
+            - name: Politikker og kommunikation
+              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobilplatform
           items:
             - name: Ressourcer til mobilplatform
@@ -1844,7 +1850,7 @@
                   href: user-interface/image-preview-subpattern.md
                 - name: Undermønster for listepanel
                   href: user-interface/list-panel-subpattern.md
-                - name: Indlejret mønster for simpel liste og detaljer
+                - name: Indlejret undermønster for simpel liste og detaljer
                   href: user-interface/nested-simple-list-details-subpattern.md
                 - name: Formularmønster for sektionsdiagram
                   href: user-interface/section-chart-form-pattern.md

@@ -94,7 +94,9 @@
                   items:
                     - name: Nyheder eller ændringer på Commerce-startsiden
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.19 (juli 2021)
+                    - name: Commerce 10.0.20 (juli 2021)
+                      href: get-started/whats-new-commerce-10-0-20.md
+                    - name: Commerce 10.0.19 (juni 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (maj 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
@@ -556,6 +558,8 @@
                   href: dev-itpro/manage-bing-maps.md
                 - name: Oprette og opdatere tidsrubrikker for kundeafhentning
                   href: dev-itpro/pickup-timeslots.md
+                - name: 'Konfigurere produktdimensionsværdier, der skal vises som farvekort'
+                  href: dev-itpro/dimensions-swatch.md
         - name: Markedsføre dine produkter og tjenester
           items:
             - name: 'Kategorier, produkter og udvalg'
@@ -932,6 +936,8 @@
                   href: web-activity-opt-out.md
                 - name: Anvende måleenhedsindstillinger
                   href: unit-of-measure.md
+                - name: Anvende visningsindstillinger for produktdimensioner
+                  href: dimension-settings.md
             - name: Administrere dit webstedsindhold
               items:
                 - name: Metoder til at tilføje indhold
@@ -1946,7 +1952,7 @@
                   items:
                     - name: Spore genererede rapportresultater og sammenligne dem med basisværdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: Forbedringer i sporingsresultaterne fra genererede ER-rapporter og sammenligninger med basisværdier
+                    - name: Forbedre sporingsresultaterne fra genererede ER-rapporter til sammenligning med basisværdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
                     - name: Automatisere test med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2268,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: Appindstillinger
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Konfigurere globale konfigurationsindstillinger for webstedsbygger baseret på aktiverede funktioner
+                      href: e-commerce-extensibility/config-settings-for-features.md
                     - name: Fil med indstillinger for platform
                       href: e-commerce-extensibility/platform-settings.md
                     - name: Udvide en moduldefinition
@@ -2366,6 +2374,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Udviklings- og ALM-ændringer fra version 10.0.10 til 10.0.13
                   href: dev-itpro/dev-changes-10-13.md
+                - name: Konfigurer en build-pipeline til det uafhængige emballage-SDK
+                  href: dev-itpro/build-pipeline.md
                 - name: Flette build-systemer for Commerce og Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Overflytte Retail SDK data fra Visual Studio 2015 til Visual Studio 2017
@@ -2386,7 +2396,9 @@
               items:
                 - name: POS-skærmlayout
                   href: pos-screen-layouts.md
-                - name: Åbn URL-adresse i POS
+                - name: Store Commerce-app i Microsoft Dynamics 365 Commerce
+                  href: dev-itpro/store-commerce.md
+                - name: Åbne URL-adresse i POS
                   href: Open-URL-in-POS.md
                 - name: Installere layoutdesigneren til POS
                   href: install-pos-layout-designer.md

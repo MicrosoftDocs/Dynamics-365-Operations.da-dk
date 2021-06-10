@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 20. maj 2021
+          href: hr-whats-new-2021-05-20.md
         - name: 3. maj 2021
           href: hr-whats-new-2021-05-03.md
         - name: 19. april 2021
@@ -785,9 +787,15 @@
           items:
             - name: Oversigt over performancestyring
               href: hr-develop-performance-management-overview.md
-            - name: Justere arbejdsstyrkens færdigheder
-              href: hr-develop-skills.md
-            - name: Tilføje til din performancekladde
+            - name: Færdigheder
+              items:
+                - name: Konfigurere færdigheder
+                  href: hr-develop-skills.md
+                - name: Angive færdigheder
+                  href: hr-develop-enter-skills.md
+                - name: Tilknytte færdigheder
+                  href: hr-develop-map-skills.md
+            - name: Føje til din performancekladde
               href: hr-develop-add-performance-journal.md
             - name: Oprette et mål
               href: hr-develop-create-goal.md
