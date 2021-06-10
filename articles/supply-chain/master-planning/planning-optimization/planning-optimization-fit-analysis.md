@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 871ac40ea73c8a72e20ff495b9b7e6fe5a12159e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 60f63a49222b3d0f13850b0f39764c6c848aba15
+ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812973"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049430"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -89,13 +89,13 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Produktion | Planer, som inkluderer rækkefølge: _\#_ | Denne funktion afventer. I øjeblikket ignoreres rækkefølge, når planlægningsoptimering er aktiveret, uanset denne indstilling. | Oktober 2021 – april 2022 |
 | Produktion | Frigivne produktionsordrer, der ikke er startet, hvor den planlagte start er tidligere end i dag: _\#_ | Denne funktion afventer. Hvis en produktionsordre er forsinket, antager varedisponeringen i øjeblikket, at den fuldføres i dag. Dette er relevant for frigivne produktionsordrer, hvor en leveringsdato er passeret, men ikke er fuldført endnu. | Oktober 2021 – april 2022 |
 | Produktion | Ressourcer, der er planlagt med kapacitetsbegrænsning: _\#_ | Denne funktion afventer. I øjeblikket ignoreres ressourcer, der er planlagt med kapacitetsbegrænsning, når planlægningsoptimering er aktiveret. Planlægningen udføres på basis af standardleveringstiden fra produktet. | Ubegrænset: juni 2021, begrænset: oktober 2021 |
-| Produktion | Ruter, der bruges i planlægning: _\#_ | Denne funktion afventer. I øjeblikket ignoreres ruter, når planlægningsoptimering er aktiveret. Standardleveringstiden for produktet bruges. | 2021. juni |
+| Produktion | Ruter, der bruges i planlægning: _\#_ | Denne funktion afventer. I øjeblikket ignoreres ruter, når planlægningsoptimering er aktiveret. Standardleveringstiden for produktet bruges. | Juli 2021 |
 | Produktion | Reservation af salgslinje ved hjælp af udfoldning: _\#_ | Salgslinjereservation, der bruger udfoldning, understøttes ikke, når planlægningsoptimering er aktiveret. | 2021. oktober |
 | Produktion | Planlægning med udfoldning af produktionsordrer: _\#_ | Planlægning, der bruger udfoldning af produktionsordrer, understøttes ikke, når planlægningsoptimering er aktiveret. Produktionsordrer kan planlægges individuelt. | 2021. oktober |
 | Tilbudsanmodning | Behovsplaner med tilbudsanmodninger aktiveret: _\#_ | Denne funktion afventer. På nuværende tidspunkt betragtes tilbudsanmodninger ikke som efterspørgsel, når planlægningsoptimering aktiveres. De ignoreres, uanset hvilken indstilling der er angivet. | Oktober 2021 – april 2022 |
 | Rekvisitioner | Behovsplaner med rekvisitioner aktiveret: _\#_ | Denne funktion understøttes nu. Du kan finde flere oplysninger under [Indkøbsrekvisitioner](purchase-requisitions.md) | Understøttet |
-| Sikkerhedsmargener | Disponeringsgrupper med sikkerhedsmargen: _\#_ | Denne funktion understøttes nu delvist. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) | Modtagelsesmargen: Understøttet. Restordremargen og afgangsmargen: April 2021 |
-| Sikkerhedsmargener | Behovsplaner med sikkerhedsmargen: _\#_ | Denne funktion understøttes nu delvist. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) | Modtagelsesmargen: Understøttet. Restordremargen og afgangsmargen: April 2021 |
+| Sikkerhedsmargener | Disponeringsgrupper med sikkerhedsmargen: _\#_ | Denne funktion understøttes nu delvist. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) | Modtagelsesmargen: Understøttet. Restordremargen og afgangsmargen: April-oktober 2021 |
+| Sikkerhedsmargener | Behovsplaner med sikkerhedsmargen: _\#_ | Denne funktion understøttes nu delvist. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) | Modtagelsesmargen: Understøttet. Restordremargen og afgangsmargen: April-oktober 2021 |
 | Opfyldning af sikkerhedslager | Varedisponeringsposter med en anden "Opfyld minimum" end fra "Dags dato + fremskaffelsestid": _\#_ | Planlægningsoptimering bruger altid *Dags dato + fremskaffelsestid*. Denne ændring er foretaget for at forberede en forenklet planlægningsopsætning i fremtiden og for at give et resultat, der kan handles ud fra. Hvis indkøbstiden ikke indgår i sikkerhedslageret, vil ordreforslag, der oprettes for den aktuelle begrænsede disponible lagerbeholdning, altid blive forsinket grundet leveringstiden. Denne funktionsmåde kan forårsage betydelige problemer og uønskede ordreforslag. Den bedste praksis er at ændre indstillingen, så *Dags dato + fremskaffelsestid* bruges. Opdater masterdata for at undgå advarsler. | I/T |
 | Salgstilbud | Behovsplaner med salgstilbud aktiveret: _\#_ | Denne funktion afventer. I øjeblikket ignoreres tilbud, når planlægningsoptimering er aktiveret. De ignoreres, uanset hvilken indstilling der er angivet. | Oktober 2021 – april 2022 |
 | Hyldelevetid | Behovsplaner med hyldelevetid aktiveret: _\#_ | Denne funktion afventer. I øjeblikket ignoreres hyldelevetid, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2021. oktober |

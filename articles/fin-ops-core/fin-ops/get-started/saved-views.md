@@ -2,7 +2,7 @@
 title: Gemte visninger
 description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 25b59400cdd62f8728f03683d51c86c671edd9de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8a5daee72f4f339fbebffb5c1d64814959775340
+ms.sourcegitcommit: 13fa6385d8f3bb18df5a52fd2b0f4ad3484ad0ba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744609"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6050550"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -126,17 +126,26 @@ Følg disse trin for at publicere en visning:
 5. **Opdatering 10.0.17 eller senere:** Hvis funktionen **(Forhåndsversion) Understøttelse af oversættelse for organisationsvisninger** er aktiveret, kan du føje oversættelser for dit visningsnavn på så mange sprog, som organisationen har brug for, ved at vælge knappen **Oversættelser** ud for feltet **Navn**. Visningsnavnet vises derefter til brugerne på deres aktuelle sprog. Du kan også angive standardsproget for at angive den oversættelse, der skal vises til brugere, som kører sprog, der ikke er defineret oversættelse for.
 5. Valgfrit: Angiv en beskrivelse af visningen, så brugere, der modtager denne visning, bedre kan forstå formålet med visningen. 
 6. Afgør, om visningen skal publiceres som standardvisning for de valgte brugere. Når du gør en visning til standarden, vil brugerne se denne visning, næste gang de åbner destinationssiden. Den ene, globale standardvisning for alle målbrugere vil blive ændret. Brugerne kan dog stadig ændre deres standardvisning, når der er foretaget publicering.
-7. Tilføj sikkerhedsroller, der svarer til de brugere, der skal have adgang til denne visning. 
-8. Afgør, om du vil publicere visningen til de underordnede roller for de enkelte sikkerhedsroller, der er valgt. Hvis du gør det, skal du markere afkrydsningsfeltet **Medtag underordnede roller** i rækken for de relevante sikkerhedsroller. Bemærk, at dette afkrydsningsfelt ikke er tilgængeligt for roller, der ikke har underordnede roller.
-9. Tilføj de juridiske enheder, som denne visning skal være tilgængelig for. 
-10. Vælg **Publicer**.
+
+    > [!NOTE]
+    > Vær opmærksom på følgende, når du udgiver en visning som standardvisning: 
+    > -  Hvis du publicerer en visning som standardvisning til nogle eller alle juridiske enheder, ændrer du den ene, **globale** standardvisning for alle målbrugere. 
+    > -  Hvis en bruger har roller, hvor flere visninger er publiceret som standardvisning, vil den sidst publicerede visning blive brugt som brugerens standardvisning. 
+
+8. Tilføj sikkerhedsroller, der svarer til de brugere, der skal have adgang til denne visning. 
+9. Afgør, om du vil publicere visningen til de underordnede roller for de enkelte sikkerhedsroller, der er valgt. Hvis du gør det, skal du markere afkrydsningsfeltet **Medtag underordnede roller** i rækken for de relevante sikkerhedsroller. Bemærk, at dette afkrydsningsfelt ikke er tilgængeligt for roller, der ikke har underordnede roller.
+10. Tilføj de juridiske enheder, som denne visning skal være tilgængelig for. 
+
+    > [!NOTE]
+    > Vær opmærksom på følgende forventninger, når du udgiver en visning til en juridisk enhed.
+    > 
+    > Hvis du publicerer en visning til en juridisk enhed, men ikke publicerer den som standardvisning, vil brugerne først se visningen i visningsvælgeren for de angivne juridiske enheder. Når visningen først er indlæst, er den dog altid i brugerens visningsvælger til den pågældende side, uanset den juridiske enhed.
+
+11. Vælg **Publicer**.
 
 Bemærk, at det kan tage et stykke tid (op til en time) i nogle miljøer, før brugerne kan se den publicerede visning.
 
-> [!NOTE]
-> Vær opmærksom på følgende forventninger, når du publicerer en visning i en juridisk enhed, eller når du publicerer en visning som standardvisning.
-> - Hvis du publicerer en visning som standardvisning til alle eller nogle juridiske enheder, ændrer du den ene, globale standardvisning for alle målbrugere. Hvis en bruger har roller, hvor flere visninger er publiceret som standardvisning, vil den sidst publicerede visning blive brugt som brugerens standardvisning. 
-> - Hvis du publicerer en visning til en juridisk enhed, men ikke publicerer den som standardvisning, vil brugerne først se visningen i visningsvælgeren for de angivne juridiske enheder. Når visningen først er indlæst, er den dog altid i brugerens visningsvælger til den pågældende side, uanset den juridiske enhed. 
+ 
 
 ## <a name="modifying-a-published-view"></a>Redigere en publiceret visning
 
