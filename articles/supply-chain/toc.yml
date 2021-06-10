@@ -72,7 +72,9 @@
                   items:
                     - name: Nyheder eller ændringer i Supply Chain Management-startside
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.19 (juli 2021)
+                    - name: Supply Chain Management 10.0.20 (juli 2021)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Supply Chain Management 10.0.19 (juni 2021)
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (maj 2021)
                       href: get-started/whats-new-scm-10-0-18.md
@@ -387,7 +389,7 @@
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
             - name: Opsætning af arbejdsordrer
               items:
-                - name: 'Kategorier af vedligeholdelsesjobtyper og vedligeholdelsesjobtyper, varianter af vedligeholdelsesjobtyper, vedligeholdelsesjobhandler og vedligeholdelsestjeklister'
+                - name: 'Vedligeholdelsesjobtyper, kategorier, varianter, handler og tjeklister'
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: Livscyklustilstande for arbejdsordre
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1373,7 @@
                   items:
                     - name: Spore genererede rapportresultater og sammenligne dem med basisværdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Forbedringer i sporingsresultaterne fra genererede ER-rapporter og sammenligninger med basisværdier
+                    - name: Forbedre sporingsresultaterne fra genererede ER-rapporter til sammenligning med basisværdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Automatisere test med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,6 +2227,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Tekniske versioner og tekniske produktkategorier
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Administrere ændringer i formler og deres ingredienser
+              href: engineering-change-management/manage-formula-changes.md
             - name: Aktivér administration af ændringer på eksisterende produkter
               href: engineering-change-management/change-management-existing-products.md
             - name: Produktlivscyklustilstand og transaktioner
@@ -2247,6 +2251,8 @@
               href: production-control/manage-subcontract-work-production.md
             - name: Samlet nummerserie for job-id'er
               href: production-control/unified-job-ids.md
+            - name: Aktivere procesautomatiseringsflow for at oprette kvalitetsordrer
+              href: production-control/process-automation-quality-orders.md
             - name: Separat fremstilling
               items:
                 - name: Vedligeholde masterdata for produktion
@@ -2335,13 +2341,13 @@
                           href: production-control/production-floor-execution-tabs.md
                         - name: Konfigurere en enhed til at bruge grænsefladen til produktionsudførelse
                           href: production-control/production-floor-execution-setup.md
-                        - name: Sådan anvendes grænsefladen til kørsel af produktion
+                        - name: Sådan anvender arbejdere grænsefladen til kørsel af produktion
                           href: production-control/production-floor-execution-use.md
-                        - name: Brugergrænsefladestyringstypografier for produktionsudførelse
+                        - name: Designe grænsefladen til produktionsudførelse
                           href: production-control/production-floor-execution-styles.md
                     - name: Konfigurer jobkort for enheder
                       href: production-control/config-job-card-device.md
-                    - name: Færdigrapportere fra jobkortenheden
+                    - name: Færdigmelde fra jobkortenheden
                       href: production-control/report-finished-job-device.md
                     - name: Angiv Mixed Reality-manualer for arbejdere i produktion
                       href: production-control/instruction-guides-in-production-overview.md
@@ -3139,13 +3145,13 @@
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Konfigurere forsendelseskonsolideringspolitikker
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: 'Eksempel 1 - Konsolidere forsendelser, når de frigives til lagerstedet ved hjælp af Frigiv salgsordrer automatisk'
+                    - name: 'Eksempel 1 – Konsolidere forsendelser, der er frigivet til lagerstedet ved hjælp af automatisk frigivelse af salgsordrer'
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: 'Eksempel 2 - Konsolidere forsendelser, når forsendelseskonsolideringspolitikken tilsidesættes fra siden Frigiv til lager'
+                    - name: 'Eksempel 2 – Konsolidere forsendelser, når forsendelseskonsolideringpolitikken er tilsidesat'
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                    - name: Eksempel 3 - Konsolidere forsendelser ved at bruge Frigiv til lager fra lastplanlægningspanelet
+                    - name: Eksempel 3 – Konsolidere forsendelser ved at frigive til lagersted fra lastplanlægnings-workbench
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
-                    - name: Eksempel 4 - Konsolidere forsendelser ved hjælp af forsendelseskonsolideringpanelet
+                    - name: Eksempel 4 – Konsolidere forsendelser ved hjælp af forsendelseskonsolideringpanelet
                       href: warehousing/consolidate-shipments-manual-workbench.md
                     - name: Eksempel 5 – Konsolidere forsendelser manuelt ved hjælp af siden Konsolider forsendelser
                       href: warehousing/consolidate-shipments-manual-form.md
@@ -3287,23 +3293,25 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Fejlfinde konfiguration af lagersted
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Installere og konfigurere mobilapp til lagerstedsadministration
+                - name: Installere og konfigurere Warehouse Management-mobilappen
                   items:
-                    - name: Installere og tilslutte mobilapp til lagerstedsadministration
+                    - name: Installere og tilslutte Warehouse Managementmobilappen
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Indstillinger for mobilenhedsbruger
                       href: warehousing/mobile-device-user-settings.md
                     - name: Installere og tilslutte lagerstedsapp
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Scanne stregkoder med et kamera i mobilappen til lagerstedsadministration
+                    - name: Scanne stregkoder med et kamera i Warehouse Management-mobilappen
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Konfigurere felter til mobilappen til lagerstedsadministration
+                    - name: Konfigurere felter til Warehouse Management-mobilappen
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurere mobilenheder til lagerstedsarbejde
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Tildele trinikoner og titler
+                      href: warehousing/step-icons-titles.md
                     - name: Hændelsesbehandling af lagerstedsapp
                       href: warehousing/warehouse-app-events.md
-                    - name: Modtage id med mobilappen til lagerstedsadministration
+                    - name: Modtage id med Warehouse Management-mobilappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3321,7 +3329,7 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Procesvejledningsstruktur
                       href: warehousing/process-guide-framework.md
-                    - name: Fejlfinde problemer med forbindelse til mobilappen til lagerstedsadministration
+                    - name: Fejlfinde problemer med forbindelse til Warehouse Management-mobilappen
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Opgradering og overflytning
                   items:
@@ -3345,7 +3353,7 @@
               items:
                 - name: Manglende feltindstillinger ved kopiering af varemodelgrupper til en anden juridisk enhed
                   href: troubleshooting/costing/copying-item-model-groups.md
-                - name: Rapporten "Indirekte omkostninger i proces" indeholder slettede produktionsordrer
+                - name: Rapporten Indirekte omkostninger i proces indeholder slettede produktionsordrer
                   href: troubleshooting/costing/indirect-costs-in-pr.md
                 - name: Indkøbsperiodisering er bogført med beløb nul for produktkvittering med nul værdi
                   href: troubleshooting/costing/posting-to-purchase.md
@@ -3359,29 +3367,33 @@
                   href: troubleshooting/inventory/multiple-inventory-t.md
                 - name: 'Når en rapport er tilbageført, oprettes der en uventet åben transaktion'
                   href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: 'Det var ikke muligt at få vist nye notater, der er vedhæftet en kladde i pluklisterapporten'
+                - name: 'Pluklisterapporten viser ikke nye notater, der er vedhæftet en kladde'
                   href: troubleshooting/inventory/unable-to-print-the.md
                 - name: 'Antallet i en igangsat karantæneordre opdateres ikke, når ordren opdeles'
                   href: troubleshooting/inventory/quantity-on-a-start.md
-                - name: 'Feltet "Sidst testede dato" opdateres ikke, når der oprettes flere kvalitetsordrer'
+                - name: 'Sidst testede dato opdateres ikke, når flere kvalitetsordrer oprettes'
                   href: troubleshooting/inventory/the-field-last-test.md
-                - name: Ved opdeling af et fangstvægtantal anvendes minimum i stedet for nominelt antal
+                - name: 'Når et fangstvægtantal opdeles, anvendes minimum antal i stedet for nominelt antal'
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Varedisponering
               items:
                 - name: Direkte afledte autoriserede ordrer behandles af en arbejdsgang til gennemsyn
                   href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Du kan ikke filtrere varedisponeringsvarer efter deres relaterede disponeringsgruppeværdier
+                  href: troubleshooting/planning/master-planning-batc.md
                 - name: Ved behovsplanlægningen oprettes der ordreforslag til fantomprodukter
                   href: troubleshooting/planning/planned-orders-are-g.md
                 - name: 'Der oprettes indkøbsordreforslag, når et indkøb findes inden for negative dage'
                   href: troubleshooting/planning/planning-optimisatio.md
-                - name: Det var ikke muligt at uploade kostprisen i poster med behovsprognoser
+                - name: 'Du kan ikke opdatere de budgetterede enhedsomkostninger, når du importerer behovsprognoseposter'
                   href: troubleshooting/planning/unable-to-upload-the.md
                 - name: Du kan ikke fjerne behovsprognosedimensionen for lagersted fra budgetlinjer
                   href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: 'Du bliver bedt om at gemme indstillinger for varedisponering, selvom du ikke har foretaget nogen ændringer'
+                  href: troubleshooting/planning/when-importing-to-th.md
             - name: Indkøb
               items:
-                - name: 'Du kan ikke fakturere en salgsordre, der kan faktureres for en kunde, i firmaet VEL'
+                - name: Du kan ikke fakturere en kundehenvendt salgsordre
                   href: troubleshooting/procurement/not-able-to-invoice-.md
                 - name: 'Du kan ikke føje en linje til en indkøbsrekvisition, når du har anmodet om en ændring'
                   href: troubleshooting/procurement/purchase-requisition.md
@@ -3403,7 +3415,7 @@
                   href: troubleshooting/production/late-selection-is-no.md
                 - name: 'Brugere kan fjerne plukkede materialelinjer for produkter, der er blevet rapporteret som afsluttet'
                   href: troubleshooting/production/raw-material-lines-a.md
-                - name: Fejl ved bogføring af en færdigmeldingskladde
+                - name: 'Fejl, når færdigmeldingskladden bogføres'
                   href: troubleshooting/production/posting-report-as-.md
                 - name: Lagerstedet i pluklistekladden opdateres ikke på en styklistelinje
                   href: troubleshooting/production/the-warehouse-in-pic.md
