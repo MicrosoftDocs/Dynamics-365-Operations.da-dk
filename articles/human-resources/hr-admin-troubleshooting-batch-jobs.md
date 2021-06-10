@@ -7,7 +7,6 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -15,56 +14,56 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 92dd281ed718be5c7ebd843d015c108ee121f30a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5aeaeb7311d87a154882b7058b6da430900bd56
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794919"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053461"
 ---
-# <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a><span data-ttu-id="94314-103">Optimere performance ved at planlægge batchjobs efter arbejdstid</span><span class="sxs-lookup"><span data-stu-id="94314-103">Optimize performance by scheduling batch jobs after hours</span></span>
+# <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a><span data-ttu-id="cee64-103">Optimere performance ved at planlægge batchjobs efter arbejdstid</span><span class="sxs-lookup"><span data-stu-id="cee64-103">Optimize performance by scheduling batch jobs after hours</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-## <a name="issue"></a><span data-ttu-id="94314-104">Udsted</span><span class="sxs-lookup"><span data-stu-id="94314-104">Issue</span></span>
+## <a name="issue"></a><span data-ttu-id="cee64-104">Udsted</span><span class="sxs-lookup"><span data-stu-id="cee64-104">Issue</span></span>
 
-<span data-ttu-id="94314-105">Microsoft Dynamics 365 Human Resources kan opleve problemer med ydeevnen, hvis batchjob, der kører i lang tid, køres i almindelig åbningstid.</span><span class="sxs-lookup"><span data-stu-id="94314-105">Microsoft Dynamics 365 Human Resources can experience performance issues if long-running batch jobs run during typical business hours.</span></span>
+<span data-ttu-id="cee64-105">Microsoft Dynamics 365 Human Resources kan opleve problemer med ydeevnen, hvis batchjob, der kører i lang tid, køres i almindelig åbningstid.</span><span class="sxs-lookup"><span data-stu-id="cee64-105">Microsoft Dynamics 365 Human Resources can experience performance issues if long-running batch jobs run during typical business hours.</span></span>
 
-## <a name="resolution"></a><span data-ttu-id="94314-106">Løsning</span><span class="sxs-lookup"><span data-stu-id="94314-106">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="cee64-106">Løsning</span><span class="sxs-lookup"><span data-stu-id="cee64-106">Resolution</span></span>
 
-<span data-ttu-id="94314-107">Planlæg følgende batchjob til at blive kørt uden for arbejdstid.</span><span class="sxs-lookup"><span data-stu-id="94314-107">Schedule the following batch jobs during off hours.</span></span> <span data-ttu-id="94314-108">Det anbefales også, at du gennemgår hyppigheden af batchjob, der køres ofte.</span><span class="sxs-lookup"><span data-stu-id="94314-108">We also recommend reviewing the frequency of batch jobs that run frequently.</span></span> <span data-ttu-id="94314-109">Hvis det er muligt, skal du reducere gentagelsen af batchjobbet.</span><span class="sxs-lookup"><span data-stu-id="94314-109">If possible, reduce the recurrence of the batch job.</span></span> <span data-ttu-id="94314-110">I mange tilfælde er standardhyppigheden tilstrækkelig.</span><span class="sxs-lookup"><span data-stu-id="94314-110">In many cases, the default frequency is sufficient.</span></span>
+<span data-ttu-id="cee64-107">Planlæg følgende batchjob til at blive kørt uden for arbejdstid.</span><span class="sxs-lookup"><span data-stu-id="cee64-107">Schedule the following batch jobs during off hours.</span></span> <span data-ttu-id="cee64-108">Det anbefales også, at du gennemgår hyppigheden af batchjob, der køres ofte.</span><span class="sxs-lookup"><span data-stu-id="cee64-108">We also recommend reviewing the frequency of batch jobs that run frequently.</span></span> <span data-ttu-id="cee64-109">Hvis det er muligt, skal du reducere gentagelsen af batchjobbet.</span><span class="sxs-lookup"><span data-stu-id="cee64-109">If possible, reduce the recurrence of the batch job.</span></span> <span data-ttu-id="cee64-110">I mange tilfælde er standardhyppigheden tilstrækkelig.</span><span class="sxs-lookup"><span data-stu-id="cee64-110">In many cases, the default frequency is sufficient.</span></span>
 
-<span data-ttu-id="94314-111">Følgende batchjob skal køre om natten eller efter arbejdstid.</span><span class="sxs-lookup"><span data-stu-id="94314-111">The following batch jobs should run at night or after hours.</span></span> <span data-ttu-id="94314-112">Sørg for at kontrollere tidszonen for disse tilbagevendende batchjob.</span><span class="sxs-lookup"><span data-stu-id="94314-112">Be sure to check the time zone for these recurring batch jobs.</span></span> <span data-ttu-id="94314-113">Nogle batchjob bruger muligvis Pacific Standard Time (PST).</span><span class="sxs-lookup"><span data-stu-id="94314-113">Some batch jobs might use Pacific Standard Time (PST).</span></span>
+<span data-ttu-id="cee64-111">Følgende batchjob skal køre om natten eller efter arbejdstid.</span><span class="sxs-lookup"><span data-stu-id="cee64-111">The following batch jobs should run at night or after hours.</span></span> <span data-ttu-id="cee64-112">Sørg for at kontrollere tidszonen for disse tilbagevendende batchjob.</span><span class="sxs-lookup"><span data-stu-id="cee64-112">Be sure to check the time zone for these recurring batch jobs.</span></span> <span data-ttu-id="cee64-113">Nogle batchjob bruger muligvis Pacific Standard Time (PST).</span><span class="sxs-lookup"><span data-stu-id="cee64-113">Some batch jobs might use Pacific Standard Time (PST).</span></span>
 
-| <span data-ttu-id="94314-114">Batchjob</span><span class="sxs-lookup"><span data-stu-id="94314-114">Batch job</span></span> | <span data-ttu-id="94314-115">Standardforekomst</span><span class="sxs-lookup"><span data-stu-id="94314-115">Default occurrence</span></span> |
+| <span data-ttu-id="cee64-114">Batchjob</span><span class="sxs-lookup"><span data-stu-id="cee64-114">Batch job</span></span> | <span data-ttu-id="cee64-115">Standardforekomst</span><span class="sxs-lookup"><span data-stu-id="cee64-115">Default occurrence</span></span> |
 | --- | --- |
-| <span data-ttu-id="94314-116">Oprydning i batchjobhistorik</span><span class="sxs-lookup"><span data-stu-id="94314-116">Batch job history cleanup</span></span> | <span data-ttu-id="94314-117">1 gang om måneden</span><span class="sxs-lookup"><span data-stu-id="94314-117">1 time per month</span></span> |
-| <span data-ttu-id="94314-118">Oprydning i midlertidig placering for eksport</span><span class="sxs-lookup"><span data-stu-id="94314-118">Export staging cleanup</span></span> | <span data-ttu-id="94314-119">1 gang om dagen</span><span class="sxs-lookup"><span data-stu-id="94314-119">1 time per day</span></span> |
-| <span data-ttu-id="94314-120">Manglende anmodning om synkronisering af Common Data Service-integration</span><span class="sxs-lookup"><span data-stu-id="94314-120">Common Data Service integration missed request sync</span></span> | <span data-ttu-id="94314-121">1 gang om dagen</span><span class="sxs-lookup"><span data-stu-id="94314-121">1 time per day</span></span> |
-| <span data-ttu-id="94314-122">Systemjob til databasekomprimering, der skal køre regelmæssigt uden for arbejdstid</span><span class="sxs-lookup"><span data-stu-id="94314-122">Database compression system job that needs to run regularly during off hours</span></span> | <span data-ttu-id="94314-123">1 gang om dagen</span><span class="sxs-lookup"><span data-stu-id="94314-123">1 time per day</span></span> |
-| <span data-ttu-id="94314-124">Systemjob til genopbygning af indeks, der skal køre regelmæssigt uden for arbejdstid</span><span class="sxs-lookup"><span data-stu-id="94314-124">Database index rebuild system job that needs to run regularly during off hours</span></span> | <span data-ttu-id="94314-125">1 gang om dagen</span><span class="sxs-lookup"><span data-stu-id="94314-125">1 time per day</span></span> |
+| <span data-ttu-id="cee64-116">Oprydning i batchjobhistorik</span><span class="sxs-lookup"><span data-stu-id="cee64-116">Batch job history cleanup</span></span> | <span data-ttu-id="cee64-117">1 gang om måneden</span><span class="sxs-lookup"><span data-stu-id="cee64-117">1 time per month</span></span> |
+| <span data-ttu-id="cee64-118">Oprydning i midlertidig placering for eksport</span><span class="sxs-lookup"><span data-stu-id="cee64-118">Export staging cleanup</span></span> | <span data-ttu-id="cee64-119">1 gang om dagen</span><span class="sxs-lookup"><span data-stu-id="cee64-119">1 time per day</span></span> |
+| <span data-ttu-id="cee64-120">Manglende anmodning om synkronisering af Common Data Service-integration</span><span class="sxs-lookup"><span data-stu-id="cee64-120">Common Data Service integration missed request sync</span></span> | <span data-ttu-id="cee64-121">1 gang om dagen</span><span class="sxs-lookup"><span data-stu-id="cee64-121">1 time per day</span></span> |
+| <span data-ttu-id="cee64-122">Systemjob til databasekomprimering, der skal køre regelmæssigt uden for arbejdstid</span><span class="sxs-lookup"><span data-stu-id="cee64-122">Database compression system job that needs to run regularly during off hours</span></span> | <span data-ttu-id="cee64-123">1 gang om dagen</span><span class="sxs-lookup"><span data-stu-id="cee64-123">1 time per day</span></span> |
+| <span data-ttu-id="cee64-124">Systemjob til genopbygning af indeks, der skal køre regelmæssigt uden for arbejdstid</span><span class="sxs-lookup"><span data-stu-id="cee64-124">Database index rebuild system job that needs to run regularly during off hours</span></span> | <span data-ttu-id="cee64-125">1 gang om dagen</span><span class="sxs-lookup"><span data-stu-id="cee64-125">1 time per day</span></span> |
 
-1. <span data-ttu-id="94314-126">I Human Resources skal du vælge **Systemadministration**.</span><span class="sxs-lookup"><span data-stu-id="94314-126">In Human Resources, select **System administration**.</span></span>
+1. <span data-ttu-id="cee64-126">I Human Resources skal du vælge **Systemadministration**.</span><span class="sxs-lookup"><span data-stu-id="cee64-126">In Human Resources, select **System administration**.</span></span>
 
-2. <span data-ttu-id="94314-127">I panelet **Søg** skal du søge efter en af de ovennævnte kørsler.</span><span class="sxs-lookup"><span data-stu-id="94314-127">In the **Search** bar, search for one of the above batch jobs.</span></span>
+2. <span data-ttu-id="cee64-127">I panelet **Søg** skal du søge efter en af de ovennævnte kørsler.</span><span class="sxs-lookup"><span data-stu-id="cee64-127">In the **Search** bar, search for one of the above batch jobs.</span></span>
 
-3. <span data-ttu-id="94314-128">Vælg **Kør i baggrunden**, og vælg derefter **Gentagelse**.</span><span class="sxs-lookup"><span data-stu-id="94314-128">Select **Run in the background**, and then select **Recurrence**.</span></span>
+3. <span data-ttu-id="cee64-128">Vælg **Kør i baggrunden**, og vælg derefter **Gentagelse**.</span><span class="sxs-lookup"><span data-stu-id="cee64-128">Select **Run in the background**, and then select **Recurrence**.</span></span>
 
    ![Angiv gentagelse](media/talent-batch-history-cleanup-recurrence.png)
 
-4. <span data-ttu-id="94314-130">Under **Definer gentagelse** skal du angive **Startdato** og **Starttidspunkt**, der skal være uden for arbejdstiden eller i weekenden.</span><span class="sxs-lookup"><span data-stu-id="94314-130">Under **Define recurrence**, set the **Start date** and **Start time** to occur during off hours or the weekend.</span></span> <span data-ttu-id="94314-131">Vælg **Ingen slutdato**.</span><span class="sxs-lookup"><span data-stu-id="94314-131">Select **No end date**.</span></span> 
+4. <span data-ttu-id="cee64-130">Under **Definer gentagelse** skal du angive **Startdato** og **Starttidspunkt**, der skal være uden for arbejdstiden eller i weekenden.</span><span class="sxs-lookup"><span data-stu-id="cee64-130">Under **Define recurrence**, set the **Start date** and **Start time** to occur during off hours or the weekend.</span></span> <span data-ttu-id="cee64-131">Vælg **Ingen slutdato**.</span><span class="sxs-lookup"><span data-stu-id="cee64-131">Select **No end date**.</span></span> 
 
    ![Definer startdato og -tidspunkt for gentagelse](media/talent-batch-history-cleanup-define-recurrence.png)
 
-5. <span data-ttu-id="94314-133">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="94314-133">Select **OK**.</span></span>
+5. <span data-ttu-id="cee64-133">Vælg **OK**.</span><span class="sxs-lookup"><span data-stu-id="cee64-133">Select **OK**.</span></span>
 
-6. <span data-ttu-id="94314-134">Rediger andre parametre under **Kør i baggrunden** efter behov, og vælg derefter **OK**.</span><span class="sxs-lookup"><span data-stu-id="94314-134">If needed, change any other parameters under **Run in the background**, and then select **OK**.</span></span>
+6. <span data-ttu-id="cee64-134">Rediger andre parametre under **Kør i baggrunden** efter behov, og vælg derefter **OK**.</span><span class="sxs-lookup"><span data-stu-id="cee64-134">If needed, change any other parameters under **Run in the background**, and then select **OK**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="94314-135">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="94314-135">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="cee64-135">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="cee64-135">Additional resources</span></span>
 
-[<span data-ttu-id="94314-136">Optimere ydeevnen med automatiske oprydningsopgaver</span><span class="sxs-lookup"><span data-stu-id="94314-136">Optimize performance with auto cleanup tasks</span></span>](hr-admin-troubleshooting-batch-history.md)
+[<span data-ttu-id="cee64-136">Optimere ydeevnen med automatiske oprydningsopgaver</span><span class="sxs-lookup"><span data-stu-id="cee64-136">Optimize performance with auto cleanup tasks</span></span>](hr-admin-troubleshooting-batch-history.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

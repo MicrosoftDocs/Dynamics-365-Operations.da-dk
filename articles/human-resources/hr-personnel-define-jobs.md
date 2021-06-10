@@ -8,68 +8,67 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 539f465f148229c48200feaf795ec775c3b76874
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ff331ace04602075cd7d61aa04439cae52cf4bab
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793483"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6058842"
 ---
-# <a name="define-new-jobs"></a><span data-ttu-id="eedc2-103">Definere nye job</span><span class="sxs-lookup"><span data-stu-id="eedc2-103">Define new jobs</span></span>
+# <a name="define-new-jobs"></a><span data-ttu-id="6c3be-103">Definere nye job</span><span class="sxs-lookup"><span data-stu-id="6c3be-103">Define new jobs</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="eedc2-104">Opgaven fokuserer på oprettelsen af et nyt job.</span><span class="sxs-lookup"><span data-stu-id="eedc2-104">This task focuses on the creation of a new job.</span></span> <span data-ttu-id="eedc2-105">Den vil blive fuldført ved hjælp af manuel indtastning og kopier fra skabelon-funktionalitet.</span><span class="sxs-lookup"><span data-stu-id="eedc2-105">It will be completed using manual entry and copy from template functionality.</span></span> <span data-ttu-id="eedc2-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="eedc2-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="eedc2-107">Denne opgave er beregnet til personalespecialisten.</span><span class="sxs-lookup"><span data-stu-id="eedc2-107">This task is intended for the human resources specialist.</span></span>
+<span data-ttu-id="6c3be-104">Opgaven fokuserer på oprettelsen af et nyt job.</span><span class="sxs-lookup"><span data-stu-id="6c3be-104">This task focuses on the creation of a new job.</span></span> <span data-ttu-id="6c3be-105">Den vil blive fuldført ved hjælp af manuel indtastning og kopier fra skabelon-funktionalitet.</span><span class="sxs-lookup"><span data-stu-id="6c3be-105">It will be completed using manual entry and copy from template functionality.</span></span> <span data-ttu-id="6c3be-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="6c3be-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="6c3be-107">Denne opgave er beregnet til personalespecialisten.</span><span class="sxs-lookup"><span data-stu-id="6c3be-107">This task is intended for the human resources specialist.</span></span>
 
-1. <span data-ttu-id="eedc2-108">Gå til Human Resources > Job > Job.</span><span class="sxs-lookup"><span data-stu-id="eedc2-108">Go to Human resources > Jobs > Jobs.</span></span>
-2. <span data-ttu-id="eedc2-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="eedc2-109">Click New.</span></span>
-3. <span data-ttu-id="eedc2-110">Skriv en værdi i feltet Job.</span><span class="sxs-lookup"><span data-stu-id="eedc2-110">In the Job field, type a value.</span></span>
-4. <span data-ttu-id="eedc2-111">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="eedc2-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="eedc2-112">Vælg en standardtitel, der skal bruges til jobbet.</span><span class="sxs-lookup"><span data-stu-id="eedc2-112">Select a standard title that will be used for the job.</span></span> 
-    * <span data-ttu-id="eedc2-113">Den titel, der er angivet, skal bruges som standard for nye stillinger, der er tildelt jobbet.</span><span class="sxs-lookup"><span data-stu-id="eedc2-113">The title entered will be used as a default for new positions assigned to the job.</span></span>  
-6. <span data-ttu-id="eedc2-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-114">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="eedc2-115">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-115">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="eedc2-116">Vælg "Maksimumantal stillinger" i gruppen Maksimalt antal stillinger</span><span class="sxs-lookup"><span data-stu-id="eedc2-116">In the Maximum number of positions group, select 'Maximum positions'</span></span>
-9. <span data-ttu-id="eedc2-117">Angiv antallet af stillinger.</span><span class="sxs-lookup"><span data-stu-id="eedc2-117">Enter the maximum number of positions.</span></span> 
-    * <span data-ttu-id="eedc2-118">Tildelinger af stilling tillades ikke over den maksimale værdi, der er angivet her.</span><span class="sxs-lookup"><span data-stu-id="eedc2-118">Position assignments will not be allowed above the maximum value entered here.</span></span>  
-10. <span data-ttu-id="eedc2-119">Slå udvidelsen af sektionen Beskrivelse til/fra.</span><span class="sxs-lookup"><span data-stu-id="eedc2-119">Toggle the expansion of the Description section.</span></span>
-11. <span data-ttu-id="eedc2-120">Angiv en standardbeskrivelse for jobbet i feltet Note.</span><span class="sxs-lookup"><span data-stu-id="eedc2-120">In the Note field, enter 'Enter a standard description for the Job.</span></span>
-    * <span data-ttu-id="eedc2-121">Beskrivelsen gælder for alle stillinger, der er tildelt til det job, der er defineret her.</span><span class="sxs-lookup"><span data-stu-id="eedc2-121">The description applies to all positions assigned to the job defined here.</span></span>  
-12. <span data-ttu-id="eedc2-122">Slå udvidelsen af sektionen Jobklassificering til/fra.</span><span class="sxs-lookup"><span data-stu-id="eedc2-122">Toggle the expansion of the Job classification section.</span></span>
-13. <span data-ttu-id="eedc2-123">Vælg en jobfunktion, der skal bruges i standardrapportering i Human Resources.</span><span class="sxs-lookup"><span data-stu-id="eedc2-123">Select a job function that will be used in standard reporting within Human resources.</span></span>
-14. <span data-ttu-id="eedc2-124">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-124">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="eedc2-125">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-125">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="eedc2-126">Vælg en jobtype for at klassificerer job yderligere i organisationen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-126">Select a Job type to further classify jobs within your organization.</span></span> 
-    * <span data-ttu-id="eedc2-127">Jobtyper kan bruges i rapportering i hele Human Resources.</span><span class="sxs-lookup"><span data-stu-id="eedc2-127">Job types can be used in reporting throughout Human resources.</span></span>  
-17. <span data-ttu-id="eedc2-128">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-128">In the list, find and select the desired record.</span></span>
-18. <span data-ttu-id="eedc2-129">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-129">In the list, click the link in the selected row.</span></span>
-19. <span data-ttu-id="eedc2-130">Slå udvidelsen af sektionen Kompensation til/fra.</span><span class="sxs-lookup"><span data-stu-id="eedc2-130">Toggle the expansion of the Compensation section.</span></span>
-20. <span data-ttu-id="eedc2-131">Vælg et kompensationsniveau.</span><span class="sxs-lookup"><span data-stu-id="eedc2-131">Select a compensation level.</span></span>
-    * <span data-ttu-id="eedc2-132">Kompensationsniveauet definerer den minimum- og maksimumkompensation, en medarbejder kan få for jobbet.</span><span class="sxs-lookup"><span data-stu-id="eedc2-132">The compensation level will define the Minimum and Maximum compensation an employee may have for the job.</span></span> <span data-ttu-id="eedc2-133">Kompensationsregler bestemmer, om medarbejderes kompensation kan være uden for rammen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-133">Compensation rules will determine if employees' compensation can be outside the range.</span></span>  
-21. <span data-ttu-id="eedc2-134">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-134">In the list, find and select the desired record.</span></span>
-22. <span data-ttu-id="eedc2-135">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-135">In the list, click the link in the selected row.</span></span>
-23. <span data-ttu-id="eedc2-136">Slå udvidelsen af sektionen Færdigheder til/fra.</span><span class="sxs-lookup"><span data-stu-id="eedc2-136">Toggle the expansion of the Skills section.</span></span>
-    * <span data-ttu-id="eedc2-137">Bemærk, at felterne i oversigtspanelerne Færdigheder, Uddannelse og Certifikater er tomme.</span><span class="sxs-lookup"><span data-stu-id="eedc2-137">Note that the fields in the Skills, Education and Certificates FastTabs are blank.</span></span> <span data-ttu-id="eedc2-138">Når du har kopieret oplysninger fra en jobskabelon, angives oplysningerne i disse felter i et enkelt trin.</span><span class="sxs-lookup"><span data-stu-id="eedc2-138">After copying information from a job template, information in these fields will be entered in a single step.</span></span>   
-24. <span data-ttu-id="eedc2-139">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="eedc2-139">Click Save.</span></span>
-25. <span data-ttu-id="eedc2-140">Klik på Kopiér fra.</span><span class="sxs-lookup"><span data-stu-id="eedc2-140">Click Copy from.</span></span>
-26. <span data-ttu-id="eedc2-141">Klik på Kopiér fra skabelon.</span><span class="sxs-lookup"><span data-stu-id="eedc2-141">Click Copy from template.</span></span>
-27. <span data-ttu-id="eedc2-142">Klik på rullelisten i feltet Jobskabelon for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="eedc2-142">In the Job template field, click the drop-down button to open the lookup.</span></span>
-28. <span data-ttu-id="eedc2-143">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-143">In the list, find and select the desired record.</span></span>
-29. <span data-ttu-id="eedc2-144">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="eedc2-144">In the list, click the link in the selected row.</span></span>
-30. <span data-ttu-id="eedc2-145">Klik på indstillingen Note.</span><span class="sxs-lookup"><span data-stu-id="eedc2-145">Click the Note option.</span></span>
-    * <span data-ttu-id="eedc2-146">Kun de elementer, du vælger, kopieres til det valgte job.</span><span class="sxs-lookup"><span data-stu-id="eedc2-146">Only those items you select will be copied to the selected job.</span></span>    
-31. <span data-ttu-id="eedc2-147">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="eedc2-147">Click OK.</span></span>
-32. <span data-ttu-id="eedc2-148">Slå udvidelsen af sektionen Certifikater til/fra.</span><span class="sxs-lookup"><span data-stu-id="eedc2-148">Toggle the expansion of the Certificates section.</span></span>
-33. <span data-ttu-id="eedc2-149">Slå udvidelsen af sektionen Uddannelse til/fra.</span><span class="sxs-lookup"><span data-stu-id="eedc2-149">Toggle the expansion of the Education section.</span></span>
-34. <span data-ttu-id="eedc2-150">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="eedc2-150">Click Save.</span></span>
+1. <span data-ttu-id="6c3be-108">Gå til Human Resources > Job > Job.</span><span class="sxs-lookup"><span data-stu-id="6c3be-108">Go to Human resources > Jobs > Jobs.</span></span>
+2. <span data-ttu-id="6c3be-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6c3be-109">Click New.</span></span>
+3. <span data-ttu-id="6c3be-110">Skriv en værdi i feltet Job.</span><span class="sxs-lookup"><span data-stu-id="6c3be-110">In the Job field, type a value.</span></span>
+4. <span data-ttu-id="6c3be-111">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="6c3be-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="6c3be-112">Vælg en standardtitel, der skal bruges til jobbet.</span><span class="sxs-lookup"><span data-stu-id="6c3be-112">Select a standard title that will be used for the job.</span></span> 
+    * <span data-ttu-id="6c3be-113">Den titel, der er angivet, skal bruges som standard for nye stillinger, der er tildelt jobbet.</span><span class="sxs-lookup"><span data-stu-id="6c3be-113">The title entered will be used as a default for new positions assigned to the job.</span></span>  
+6. <span data-ttu-id="6c3be-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-114">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="6c3be-115">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-115">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="6c3be-116">Vælg "Maksimumantal stillinger" i gruppen Maksimalt antal stillinger</span><span class="sxs-lookup"><span data-stu-id="6c3be-116">In the Maximum number of positions group, select 'Maximum positions'</span></span>
+9. <span data-ttu-id="6c3be-117">Angiv antallet af stillinger.</span><span class="sxs-lookup"><span data-stu-id="6c3be-117">Enter the maximum number of positions.</span></span> 
+    * <span data-ttu-id="6c3be-118">Tildelinger af stilling tillades ikke over den maksimale værdi, der er angivet her.</span><span class="sxs-lookup"><span data-stu-id="6c3be-118">Position assignments will not be allowed above the maximum value entered here.</span></span>  
+10. <span data-ttu-id="6c3be-119">Slå udvidelsen af sektionen Beskrivelse til/fra.</span><span class="sxs-lookup"><span data-stu-id="6c3be-119">Toggle the expansion of the Description section.</span></span>
+11. <span data-ttu-id="6c3be-120">Angiv en standardbeskrivelse for jobbet i feltet Note.</span><span class="sxs-lookup"><span data-stu-id="6c3be-120">In the Note field, enter 'Enter a standard description for the Job.</span></span>
+    * <span data-ttu-id="6c3be-121">Beskrivelsen gælder for alle stillinger, der er tildelt til det job, der er defineret her.</span><span class="sxs-lookup"><span data-stu-id="6c3be-121">The description applies to all positions assigned to the job defined here.</span></span>  
+12. <span data-ttu-id="6c3be-122">Slå udvidelsen af sektionen Jobklassificering til/fra.</span><span class="sxs-lookup"><span data-stu-id="6c3be-122">Toggle the expansion of the Job classification section.</span></span>
+13. <span data-ttu-id="6c3be-123">Vælg en jobfunktion, der skal bruges i standardrapportering i Human Resources.</span><span class="sxs-lookup"><span data-stu-id="6c3be-123">Select a job function that will be used in standard reporting within Human resources.</span></span>
+14. <span data-ttu-id="6c3be-124">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-124">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="6c3be-125">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-125">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="6c3be-126">Vælg en jobtype for at klassificerer job yderligere i organisationen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-126">Select a Job type to further classify jobs within your organization.</span></span> 
+    * <span data-ttu-id="6c3be-127">Jobtyper kan bruges i rapportering i hele Human Resources.</span><span class="sxs-lookup"><span data-stu-id="6c3be-127">Job types can be used in reporting throughout Human resources.</span></span>  
+17. <span data-ttu-id="6c3be-128">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-128">In the list, find and select the desired record.</span></span>
+18. <span data-ttu-id="6c3be-129">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-129">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="6c3be-130">Slå udvidelsen af sektionen Kompensation til/fra.</span><span class="sxs-lookup"><span data-stu-id="6c3be-130">Toggle the expansion of the Compensation section.</span></span>
+20. <span data-ttu-id="6c3be-131">Vælg et kompensationsniveau.</span><span class="sxs-lookup"><span data-stu-id="6c3be-131">Select a compensation level.</span></span>
+    * <span data-ttu-id="6c3be-132">Kompensationsniveauet definerer den minimum- og maksimumkompensation, en medarbejder kan få for jobbet.</span><span class="sxs-lookup"><span data-stu-id="6c3be-132">The compensation level will define the Minimum and Maximum compensation an employee may have for the job.</span></span> <span data-ttu-id="6c3be-133">Kompensationsregler bestemmer, om medarbejderes kompensation kan være uden for rammen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-133">Compensation rules will determine if employees' compensation can be outside the range.</span></span>  
+21. <span data-ttu-id="6c3be-134">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-134">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="6c3be-135">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-135">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="6c3be-136">Slå udvidelsen af sektionen Færdigheder til/fra.</span><span class="sxs-lookup"><span data-stu-id="6c3be-136">Toggle the expansion of the Skills section.</span></span>
+    * <span data-ttu-id="6c3be-137">Bemærk, at felterne i oversigtspanelerne Færdigheder, Uddannelse og Certifikater er tomme.</span><span class="sxs-lookup"><span data-stu-id="6c3be-137">Note that the fields in the Skills, Education and Certificates FastTabs are blank.</span></span> <span data-ttu-id="6c3be-138">Når du har kopieret oplysninger fra en jobskabelon, angives oplysningerne i disse felter i et enkelt trin.</span><span class="sxs-lookup"><span data-stu-id="6c3be-138">After copying information from a job template, information in these fields will be entered in a single step.</span></span>   
+24. <span data-ttu-id="6c3be-139">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6c3be-139">Click Save.</span></span>
+25. <span data-ttu-id="6c3be-140">Klik på Kopiér fra.</span><span class="sxs-lookup"><span data-stu-id="6c3be-140">Click Copy from.</span></span>
+26. <span data-ttu-id="6c3be-141">Klik på Kopiér fra skabelon.</span><span class="sxs-lookup"><span data-stu-id="6c3be-141">Click Copy from template.</span></span>
+27. <span data-ttu-id="6c3be-142">Klik på rullelisten i feltet Jobskabelon for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="6c3be-142">In the Job template field, click the drop-down button to open the lookup.</span></span>
+28. <span data-ttu-id="6c3be-143">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-143">In the list, find and select the desired record.</span></span>
+29. <span data-ttu-id="6c3be-144">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="6c3be-144">In the list, click the link in the selected row.</span></span>
+30. <span data-ttu-id="6c3be-145">Klik på indstillingen Note.</span><span class="sxs-lookup"><span data-stu-id="6c3be-145">Click the Note option.</span></span>
+    * <span data-ttu-id="6c3be-146">Kun de elementer, du vælger, kopieres til det valgte job.</span><span class="sxs-lookup"><span data-stu-id="6c3be-146">Only those items you select will be copied to the selected job.</span></span>    
+31. <span data-ttu-id="6c3be-147">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="6c3be-147">Click OK.</span></span>
+32. <span data-ttu-id="6c3be-148">Slå udvidelsen af sektionen Certifikater til/fra.</span><span class="sxs-lookup"><span data-stu-id="6c3be-148">Toggle the expansion of the Certificates section.</span></span>
+33. <span data-ttu-id="6c3be-149">Slå udvidelsen af sektionen Uddannelse til/fra.</span><span class="sxs-lookup"><span data-stu-id="6c3be-149">Toggle the expansion of the Education section.</span></span>
+34. <span data-ttu-id="6c3be-150">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="6c3be-150">Click Save.</span></span>
 
 
 
