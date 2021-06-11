@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: d9430fe02abe58f37d2bfd1431b4da61527d0834
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947514"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115043"
 ---
 # <a name="engineering-change-management-overview"></a>Oversigt over teknisk ændringsstyring
 
@@ -50,16 +50,21 @@ Du skal først aktivere disse funktioner ved at følge disse trin.
 
 1. Gå til arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Søg efter opdateringer.
-1. Aktivér den funktion, der hedder **Teknisk ændringsstyring**.
-1. Hvis du vil bruge den, skal du også aktivere funktionen med navnet **Produktdimensionsversion**.
+1. Aktivér den funktion, der hedder *Teknisk ændringsstyring*.
+1. Hvis du vil bruge den, skal du også aktivere funktionen med navnet *Produktdimensionsversion*.
 
 Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin.
 
 1. Sæt systemet i vedligeholdelsestilstand som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**.
 1. Udvid noden **Handel**.
-1. Aktiver konfigurationsnøglen for hovedfunktionen ved at markere afkrydsningsfeltet **Styring af tekniske ændringer**. (Det er ikke nødvendigt at udvide noden, medmindre du også vil deaktivere en eller begge af dens underfunktioner.)
-1. Hvis du også vil bruge versionsdimensionen, skal du markere afkrydsningsfeltet **Produktdimension - Version**. (Dette afkrydsningsfelt er placeret længere nede på listen og er ikke indlejret under noden **Styring af tekniske ændringer**.)
+1. Aktivér konfigurationsnøglen for hovedfunktionen ved at markere afkrydsningsfeltet **Styring af tekniske ændringer**.
+1. Udvid noden **Styring af tekniske ændringer**, og markér eller fjern markeringen i følgende afkrydsningsfelter efter behov (afhængigt af de funktioner du vil bruge):
+
+    - **Attributsøgning** – Markér dette afkrydsningsfelt for at aktivere [funktionen til attributsøgning](engineering-attributes-and-search.md). Vi anbefaler, at du aktiverer denne funktion, men du kan fjerne markeringen i dette afkrydsningsfelt, hvis du ikke vil bruge den.
+    - **Ændringsstyring for procesproduktion** – Markér dette afkrydsningsfelt, hvis du vil bruge funktioner til styring af tekniske ændringer til at administrere ændringer i formler til procesproduktion. Hvis du ikke skal administrere formler, kan du fjerne markeringen i dette afkrydsningsfelt. Du kan finde flere oplysninger under [Administrere ændringer i formler og deres stoffer](manage-formula-changes.md).
+
+1. Hvis du også vil bruge versionsdimensionen, skal du markere afkrydsningsfeltet **Produktdimension – Version**. (Dette afkrydsningsfelt er placeret længere nede på listen og er ikke indlejret under noden **Styring af tekniske ændringer**).
 1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 > [!IMPORTANT]

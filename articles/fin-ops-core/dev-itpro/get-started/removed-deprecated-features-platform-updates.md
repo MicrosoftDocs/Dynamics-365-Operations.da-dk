@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af Finance and Operations-apps.
 author: sericks007
-ms.date: 02/16/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 435f7f0090ca16a9e8cfee2d1ceb65bec8457d09
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923532"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111718"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -31,6 +31,19 @@ Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
 Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+
+## <a name="feature-deprecation-notice-effective-may-2021"></a>Meddelelse om udfasning af funktioner, der træder i kraft i maj 2021
+
+### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Globaliseringsportal i Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi udfaser globaliseringsportalen i LCS, da denne funktion er blevet erstattet af andre LCS-baserede tjenester. |
+| **Erstattet af en anden funktion?**   | Ja, denne funktion erstattes af LCS [Problemsøgning](../lifecycle-services/issue-search-lcs.md) og [Dynamics-tjenesten til indsendelse af lovmæssige beskeder](../lcs-solutions/submit-localization-alerts.md). |
+| **Produktområder, der er berørt**         | Globaliseringsportal i LCS|
+| **Installationsindstilling**              | Skyinstallation |
+| **Status**                         | Udfases: Planlagt dato for fjernelse i maj 2022. |
+
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funktionen er fjernet med ikrafttrædelsesdatoen 28. januar 2021
 
@@ -56,7 +69,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Visual Studio 2017 erstatter Visual Studio 2015 som den installerede og påkrævede version. |
 | **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Forældet. Ved opdatering fjernes de forrige X++-værktøjer fra Visual Studio 2015, og de opdaterede værktøjer installeres ikke i Visual Studio 2015. Det påvirker ikke hostede builds. I forbindelse med build-virtuelle maskiner skal build-pipelinen (build-definitionen) opdateres manuelt for at ændre afhængigheden fra MSBuild 14.0 (Visual Studio 2015) til MSBuild 15.0 (Visual Studio 2017) som beskrevet i [Opdatere en ældre pipeline i Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+| **Status**                         | Udfases: Efter opdatering fjernes de forrige X++-værktøjer fra Visual Studio 2015, og de opdaterede værktøjer installeres ikke i Visual Studio 2015. Det påvirker ikke hostede builds. I forbindelse med build-virtuelle maskiner skal build-pipelinen (build-definitionen) opdateres manuelt for at ændre afhængigheden fra MSBuild 14.0 (Visual Studio 2015) til MSBuild 15.0 (Visual Studio 2017) som beskrevet i [Opdatere en ældre pipeline i Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
 ### <a name="user-avatar"></a>Brugeravatar 
 
@@ -76,7 +89,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Ingen |
 | **Produktområder, der er berørt**         | Webklient |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Forældet. Alle EP-koder er planlagt til at blive fjernet i oktober 2021-versionen. |
+| **Status**                         | Udfases: Alle EP-koder er planlagt til at blive fjernet i oktober 2021-versionen. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.15 af Finance and Operations-apps
 
@@ -88,7 +101,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Vi anbefaler, at kunderne overgår til Microsoft Edge.|
 | **Produktområder, der er berørt**         | Alle Dynamics 365-produkter |
 | **Installationsindstilling**              | Alt|
-| **Status**                         | Forældet. Internet Explorer 11 understøttes ikke efter august 2021.|
+| **Status**                         | Udfases: Internet Explorer 11 understøttes ikke efter august 2021.|
 
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio-tilføjelsesprogram til anvendelse af hotfixes til metadata
@@ -181,7 +194,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Du kan finde flere oplysninger i [Konfiguration af betinget adgang til Azure Active Directory](/appcenter/general/configuring-aad-conditional-access).|
 | **Produktområder, der er berørt**         | Sikkerhed |
 | **Installationsindstilling**              | Sky |
-| **Status**                         | **Udfaset:** Denne funktion er helt udfaset for installationer med selvbetjening. |
+| **Status**                         | Udfaset: Denne funktion er helt udfaset for installationer med selvbetjening. |
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
@@ -201,7 +214,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Denne compilerfejl erstatter permanent compileradvarslen.  |
 | **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | **Udfases:** Compileradvarslen er en compilerfejl i platformsopdateringer til version 10.0.11 af Finance and Operations-apps. |
+| **Status**                         | Udfases: Compileradvarslen er en compilerfejl i platformsopdateringer til version 10.0.11 af Finance and Operations-apps. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>ISV-licenser, der er oprettet ved hjælp af SHA1-hashing-algoritmen
 
@@ -211,7 +224,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Ja. Brug Windows PowerShell til at oprette licenser. |
 | **Produktområder, der er berørt**         | Visual Studio-udviklingsværktøjer |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | <strong>Udfases:</strong> ISV-licenser, der er oprettet ved hjælp af SHA1-hashing-algoritmen. Denne algoritme er afhænger af certifikater, der er oprettet med hjælpeprogrammet MakeCert, og dette værktøj er udfaset.<p><strong>Udfases:</strong> Brugen af SHA1 til sikkerheds- eller hashing-formål. SHA1 vil ophøre med at fungere i starten af 2021. Derfor bør den ikke længere bruges.<p><strong>Fjernet:</strong> Understøttelse af TLS (Transport Layer Security) 1.0 og TLS 1.1 indgående eller udgående anmodninger. |
+| **Status**                         | Udfases: ISV-licenser, der er oprettet ved hjælp af SHA1-hashing-algoritmen. Denne algoritme er afhænger af certifikater, der er oprettet med hjælpeprogrammet MakeCert, og dette værktøj er udfaset.<br><br>Udfases: Brugen af SHA1 til sikkerheds- eller hashing-formål. SHA1 vil ophøre med at fungere i starten af 2021. Derfor bør den ikke længere bruges.<br><br>Fjernet: Understøttelse af TLS (Transport Layer Security) 1.0 og TLS 1.1 indgående eller udgående anmodninger. |
 
 ## <a name="platform-update-32"></a>Platform update 32
 

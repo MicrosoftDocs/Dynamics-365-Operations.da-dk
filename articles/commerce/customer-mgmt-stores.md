@@ -2,7 +2,7 @@
 title: Kundestyring i butikker
 description: Dette emne forklarer, hvordan detailforretninger kan aktivere kundestyringsegenskaber på POS i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/05/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e43f8f5b91f729dc93eccb9e9e4ee21b5a5d1596
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dd17593d84a8bf262712a84b11829f8ec6c49049
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019981"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097202"
 ---
 # <a name="customer-management-in-stores"></a>Kundestyring i butikker
 
@@ -35,7 +35,10 @@ Salgsmedarbejdere kan også hente sekundære e-mailadresser og telefonnumre. Der
 
 ## <a name="default-customer-properties"></a>Standardegenskaberne for debitorer
 
-Detailhandlende kan bruge siden **Alle butikker i Commerce headquarters** (**Retail og Commerce \> Kanaler \> Butikker**) til at knytte en standardkunde til hver butik. Derefter kopieres de egenskaber, der er defineret for standardkunden, til alle nye kundeposter, der oprettes. I dialogboksen vises f.eks. **Opret debitor** egenskaber, der er nedarvet fra den standardkunde, der er tilknyttet butikken. Disse egenskaber omfatter debitortype, debitorgruppe, modtagelses præference, valuta og sprog. Alle tilknytninger (kundegrupper) nedarves også fra standardkunden. Økonomiske dimensioner nedarves dog fra den debitorgruppe, der er tilknyttet standarddebitoren, ikke fra selve standarddebitoren.
+Detailhandlende kan bruge siden **Alle butikker i Commerce headquarters** (**Retail og Commerce \> Kanaler \> Butikker**) til at knytte en standardkunde til hver butik. Derefter kopieres de egenskaber, der er defineret for standardkunden, til alle nye kundeposter, der oprettes. I dialogboksen vises f.eks. **Opret debitor** egenskaber, der er nedarvet fra den standardkunde, der er tilknyttet butikken. Disse egenskaber omfatter **debitortype**, **debitorgruppe**, **kvitteringsindstilling**, **kvitteringsmail**, **valuta** og **sprog**. Alle **tilknytninger** (kundegrupper) nedarves også fra standardkunden. **Økonomiske dimensioner** nedarves dog fra den debitorgruppe, der er tilknyttet standarddebitoren, ikke fra selve standarddebitoren.
+
+> [!NOTE]
+> Værdien for **kvitteringsmailen** kopieres kun fra standardkunden, hvis kvitteringsmail-id'et ikke er angivet for de nyoprettede kunder. Det betyder, at hvis kvitteringsmail-id'et findes for standardkunden, får alle de kunder, der oprettes fra e-handelswebstedet, det samme kvitteringsmail-id, da der ikke er nogen brugergrænseflade, hvor kvitteringsmail-id'et kan hentes fra kunden. Vi anbefaler, at du lader feltet for **kvitteringsmail** være tomt for butikkens standardkunde og kun bruger det, hvis du har en forretningsproces, der afhænger af, at der findes en kvitteringsmailadresse. 
 
 Salgsmedarbejdere kan hente flere adresser for en kunde. Kundens navn og telefonnummer nedarves fra de kontaktoplysninger, der er tilknyttet hver enkelt adresse. Oversigtspanelet **Adresser** for en kundepost indeholder et **Formål**-felt, som salgsmedarbejdere kan redigere. Hvis debitortypen er **Person**, er standardværdien **Startside**. Hvis debitortypen er **Organisation**, er standardværdien **Virksomhed**. Af andre værdier, der understøttes i dette felt kan nævnes **Startside**, **Kontor** og **Bogfør boks**. Værdien i feltet **Land** for en adresse nedarves fra den primære adresse, der er angivet på siden **Driftsenhed** i Commerce Headquarters hos **Organisationsadministration \> Organisationer \> Driftsenheder**.
 

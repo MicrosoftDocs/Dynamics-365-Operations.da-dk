@@ -2,7 +2,7 @@
 title: Destinationer for elektronisk rapportering (ER)
 description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering, de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893598"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085494"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -199,6 +199,34 @@ Hvis du opretter en ER-konfiguration i Excel-format og vil konvertere den til PD
 > Den valgte sideretning anvendes på alle de ER-konfigurationer, der genereres i Excel-format og konverteres derefter til PDF-format.
 >
 > Hvis en ER-konfiguration i Word-format konverteres til PDF-format, hentes sideretningen i PDF-dokumentet fra Word-dokument.
+
+## <a name="output-unfolding"></a>Fjernelse af output fra mappe
+
+Når du konfigurerer en destination for komponenten **Mappe** i ER-formatet, kan du angive, hvordan outputtet for den pågældende komponent skal leveres til den konfigurerede destination.
+
+### <a name="make-output-unfolding-available"></a>Gør fjernelse af output fra mappe tilgængelig
+
+Hvis du vil gøre indstillingen for fjernelse af output fra mappe tilgængelig i den aktuelle finansforekomst, skal du åbne arbejdsområdet **Funktionsstyring** og aktivere funktionen **Tillad konfiguration af ER-destinationer til at sende mappeindhold som separate filer**.
+
+### <a name="applicability"></a>Anvendelighed
+
+Indstillingen for fjernelse af output fra mappe kan kun konfigureres for formatkomponenterne af typen **Mappe**. Når du begynder at konfigurere en **mappe** komponent, bliver oversigtspanelet **Generelt** tilgængeligt på siden **Destination for elektronisk rapportering**. 
+
+### <a name="use-the-output-unfolding-option"></a>Bruge indstillingen til fjernelse af output fra mappe
+
+Vælg en af følgende værdier i feltet **Send mappe som** i oversigtspanelet **Generelt**:
+
+- **ZIP-arkiv** – Levér en genereret fil som en zip-fil.
+- **Separate filer** – Levér alle filer i en genereret zip-fil som en individuel fil.
+
+    > [!NOTE]
+    > Når du vælger **Separate filer**, indsamles det genererede output i hukommelsen i en zip-komprimeret tilstand. Derfor anvendes den maksimale [filstørrelsesgrænse](er-compress-outbound-files.md) for zip-komprimeret output, når den reelle filstørrelse måske vil overskride denne grænse. Vi anbefaler, at du vælger denne værdi, når du forventer, at størrelsen på det genererede output også er ret stor.
+
+[![Konfigurere en destination for en mappeformatkomponent](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>Begrænsninger
+
+Hvis du angiver feltet **Send mappe som** til **Separate filer** for en **mappe** komponent, der indeholder andre indlejrede **mappe** komponenter, anvendes indstillingen ikke rekursivt på de indlejrede **mappe** komponenter.
 
 ## <a name="security-considerations"></a>Sikkerhedsovervejelser
 

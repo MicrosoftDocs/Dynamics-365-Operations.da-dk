@@ -2,7 +2,7 @@
 title: Modul til søgeresultater
 description: Dette emne omhandler søgeresultater-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3409e9e99329def55b173eb78cf03db4a6764c92
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794109"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117127"
 ---
 # <a name="search-results-module"></a>Modul til søgeresultater
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler søgeresultater-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -51,9 +52,12 @@ Følgende tabel indeholder egenskaberne for søgeresultatmoduler sammen med dere
 | Skjul visning af kategorihierarki | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, vil visningen af kategorihierarkiet på siden være skjult. Denne egenskab skal angives til **Sand**, hvis du bruger [modulet brødkrumme](add-breadcrumb.md) til at få vist kategorihierarkiet.|
 | Inkluder produktattributter i søgeresultater | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, returneres attributter for produkterne i søgeresultaterne. Selvom disse attributter kan vises på et handelswebsted, skal der angives en filtype.|
 | Vis tilknytningspriser | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, vises tilknytningspriserne for produkter i søgeresultaterne, når en bruger, der er logget på, gennemser siden. |
+| Opdatere afgrænsningspanel | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, opdateres afgrænsningspanelet, når afgrænsninger vælges. I denne tilstand opfører nogle afgrænsere med flere markeringer sig som afgrænsere med ét valg, når afgrænserpanelet opdateres. |
 
 > [!IMPORTANT]
-> I versionen Dynamics 365 Commerce 10.0.16 og senere kan konfigurationen **Vis tilknytningspriser** bruges til at vise tilknytningspriser på siden.
+> I Commerce version 10.0.16 og senere kan konfigurationen **Vis tilknytningspriser** bruges til at vise tilknytningspriser på siden.
+>
+> I Commerce version 10.0.20 og nyere versioner kan konfigurationen **Opdater afgrænsningspanel** bruges til at opdatere afgrænsningspanelet under valg af afgrænser.
 
 ## <a name="supported-modules"></a>Understøttede moduler
 

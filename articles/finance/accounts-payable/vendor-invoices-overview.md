@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf3b842f018b4386d5ab4769143d4f7f0907873e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bd30e7128c688a0880727380e601069a95a28dcd
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841255"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111688"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Dette emne indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om modtaget betaling for produkter og tjenester. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
 
@@ -71,7 +73,9 @@ Du kan bruge følgende forskellige metoder til at forhindre, at der sendes en fa
 
 - **Fakturaen indeholder ikke-allokerede gebyrer.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at fakturaen har ikke-allokerede gebyrer, så fakturaen kan rettes, før den sendes til arbejdsgangen. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når der er ikke-allokerede gebyrer på en kreditorfaktura** på siden **Funktionsstyring** er slået til.
 
-- **Faktura indeholder samme fakturanummer som en anden bogført faktura.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at der findes en faktura med et duplikeret fakturanummer, så den kan rettes, før den sendes til arbejdsgangen. Denne påmindelse vises, når kreditorparameteren med navnet **Tjek det anvendte fakturanummer** er indstillet til **Afvis dublet**. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturanummeret allerede findes på en bogført faktura, og dit system ikke er konfigureret til at acceptere for identiske fakturanumre** på siden **Funktionsstyring** er slået til.  
+- **Faktura indeholder samme fakturanummer som en anden bogført faktura.** Den person, der har sendt fakturaen, modtager en meddelelse om, at der blev fundet en faktura med et dubletnummer. Dubletnummeret kan rettes, før fakturaen sendes til arbejdsgangen igen. Denne påmindelse vises, når kreditorparameteren med navnet **Tjek det anvendte fakturanummer** er indstillet til **Afvis dublet**. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturanummeret allerede findes på en bogført faktura, og dit system ikke er konfigureret til at acceptere for identiske fakturanumre** på siden **Funktionsstyring** er slået til.
+
+- **Fakturaen indeholder en linje, hvor fakturaantallet er mindre end det afstemte antal på produktkvitteringen.** Den person, der sender fakturaen eller forsøger at bogføre, modtager en meddelelse om, at antallet ikke er ens. Denne meddelelse giver mulighed for at rette værdierne, inden fakturaen sendes til arbejdsgangen igen. Denne funktion er tilgængelig, hvis parameteren **Bloker bogføring og afsendelse af kreditorfakturaer til arbejdsgang** på siden **Funktionsstyring** er aktiveret, og parameteren **Bloker bogføring og afsendelse til arbejdsgang** på siden **Kreditorparametre** er aktiveret.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Sammenholde kreditorfakturaer med produktkvitteringer
 

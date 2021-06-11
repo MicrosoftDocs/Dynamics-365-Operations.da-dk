@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a4f882f1abc9f758aca77b137b28aa973f925ea9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019488"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103622"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -77,6 +77,7 @@ Hvis du vil autorisere ordreforslag manuelt, kan du finde og vælge de ordrefors
 
     - **Grupper efter leverandør** – Angiv denne indstilling til *Ja*, hvis du vil gruppere indkøbsordreforslag og oprette én indkøbsordre pr. leverandør under autorisationen. Du kan også oprette én indkøbsordre, der har én linje for hvert ordreforslag.
     - **Gruppér efter købergruppe** – Angiv denne indstilling til *Ja*, hvis du vil gruppere indkøbsordreforslag og oprette én indkøbsordre, som kombinerer leverandør- og købergruppen. Hvis du vil bruge denne indstilling, skal du også angive indstillingen **Gruppér efter leverandør** til *Ja*.
+    - **Gruppér efter købsaftale** – Angiv denne indstilling til *Ja* for at gruppere indkøbsordreforslag, der har samme leverandør som eksisterende købsaftaler og oprette én indkøbsordre pr. købsaftale. Denne indstilling aktiveres automatisk, når **Gruppér efter leverandør** aktiveres. Hvis du vil bruge **Gruppér efter købsaftale**, skal **Søg efter købsaftaler** angives til *Ja* på siden **Varedisponeringsparametre**.
     - **Gruppér efter periode** (i sektionen **Indkøbsordrer**) – Vælg den periode, som indkøbsordreforslag skal grupperes efter. Hvis du vil bruge denne indstilling, skal du også vælge indstillingen **Gruppér efter leverandør**.
     - **Gruppér efter periode** (i sektionen **Overførsler**) – Vælg den periode, som overførselsordreforslag skal grupperes efter. Ordrerne grupperes ud fra værdierne for **Fra lagersted** og **Til lagersted**.
 

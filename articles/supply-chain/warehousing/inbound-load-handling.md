@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910009"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103162"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerekspedition af indgående laster for indkøbsordrer
 
@@ -127,7 +127,7 @@ I følgende tabel beskrives de indstillinger, der er tilgængelige for feltet **
 | Værdi | Beskrivende tekst |
 |---|---|
 | Tillad | Arbejdere kan registrere modtagelsen af antal, der overstiger det resterende ikke-registrerede antal for en valgt last, men kun hvis det samlede registrerede antal ikke overstiger antallet på den indkøbsordrelinje, der er knyttet til lasten (efter justering for overleveringsprocenten). |
-| Blokér | <p>Arbejdere kan registrere modtagelsen af antal, der overstiger det resterende ikke-registrerede antal for en valgt last (efter regulering for overleveringsprocenten). En arbejder, der forsøger at foretage registreringen af modtagelserne, får en fejl og kan ikke fortsætte, før han eller hun registrerer et antal, der er lig med eller mindre end det resterende ikke-registrerede lastantal.</p><p>Værdien af overleveringsprocenten på en lastlinje kopieres som standard fra den tilknyttede indkøbsordrelinje. Når feltet <b>Overmodtagelse af last</b> er angivet til <i>Bloker</i>, bruger systemet værdien af overleveringsprocenten til at beregne det samlede antal, der kan registreres for en lastlinje. Denne værdi kan dog overskrives til individuelle laster efter behov. Denne funktionsmåde bliver relevant under modtagelsesflows, hvor dele eller alt det ekstra antal, der repræsenterer ordrelinjens overleveringsprocent, fordeles forholdsmæssigt over flere laster. Her er et eksempelscenarie:</p><ul><li>Der er flere laster for én indkøbsordrelinje.</li><li>Indkøbsordrelinjen har en overleveringsprocent, der er større end 0 (nul).</li><li>Der er allerede registreret antal i forhold til en eller flere laster, uden at overleveringsprocenten tages i betragtning.</li><li>Overleveringsantallet ankommer til den sidste last.</li></ul><p>I dette scenarie kan en mobil enhed bruges til kun at registrere overskydende antal for den sidste last, hvis lagerchefen øger overleveringsprocenten for den relevante lastlinje fra standardværdien til en værdi, der er stor nok til, at hele overleveringen kan registreres med den endelige last.</p> |
+| Blokér | <p>Arbejdere kan registrere modtagelsen af antal, der overstiger det resterende ikke-registrerede antal for en valgt last (efter regulering for overleveringsprocenten). En arbejder, der forsøger at foretage registreringen af modtagelserne, får en fejl og kan ikke fortsætte, før vedkommende registrerer et antal, der er lig med eller mindre end det resterende ikke-registrerede lastantal.</p><p>Værdien af overleveringsprocenten på en lastlinje kopieres som standard fra den tilknyttede indkøbsordrelinje. Når feltet <b>Overmodtagelse af last</b> er angivet til <i>Bloker</i>, bruger systemet værdien af overleveringsprocenten til at beregne det samlede antal, der kan registreres for en lastlinje. Denne værdi kan dog overskrives til individuelle laster efter behov. Denne funktionsmåde bliver relevant under modtagelsesflows, hvor dele eller alt det ekstra antal, der repræsenterer ordrelinjens overleveringsprocent, fordeles forholdsmæssigt over flere laster. Her er et eksempelscenarie:</p><ul><li>Der er flere laster for én indkøbsordrelinje.</li><li>Indkøbsordrelinjen har en overleveringsprocent, der er større end 0 (nul).</li><li>Der er allerede registreret antal i forhold til en eller flere laster, uden at overleveringsprocenten tages i betragtning.</li><li>Overleveringsantallet ankommer til den sidste last.</li></ul><p>I dette scenarie kan en mobil enhed bruges til kun at registrere overskydende antal for den sidste last, hvis lagerchefen øger overleveringsprocenten for den relevante lastlinje fra standardværdien til en værdi, der er stor nok til, at hele overleveringen kan registreres med den endelige last.</p> |
 | Blokér kun for lukkede laster | Arbejdere kan modtage for meget lastlinjeantal til åbne laster, men ikke for laster, der har status som _Modtaget_. |
 
 > [!NOTE]
@@ -216,7 +216,7 @@ Til produktkvitteringsbogføringer, som yderligere registrerede lastantal i forh
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Bogfør registrerede antal fra siden Indkøbsordre
 
-Til produktkvitteringsbogføringer af registrerede antal på siden **Indkøbsordre**, fuldfører brugeren følgende opgaver, før han eller hun vælger handlingen **Produktkvittering**:
+Til produktkvitteringsbogføringer af registrerede antal på siden **Indkøbsordre** fuldfører brugeren følgende opgaver, før brugeren vælger handlingen **Produktkvittering**:
 
 - Indstil feltet **Antal** i sektionen **Parametre** under fanen **Indstillinger** til _Registreret antal_.
 - I feltet **Produktkvittering** skal du angive numrene på de indkøbsordrer, der er medtaget i bogføringen.

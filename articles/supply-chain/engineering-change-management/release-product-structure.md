@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e9cd90d74b92754d4a5432485d5dd59c31e34c61
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45763d5e602946fc3328cc3b565777fb7e549c61
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841979"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115091"
 ---
 # <a name="release-product-structures"></a>Frigive produktstrukturer
 
@@ -103,6 +103,7 @@ Angiv følgende felter i oversigtspanelet **Generelt** på et produkts frigivels
 | Felt | Beskrivelse |
 |---|---|
 | Produkttype | Vælg, om politikken gælder for produkter af typen *Vare* eller *Service*. Du kan ikke ændre denne indstilling, når du har gemt posten. |
+| Produktionstype | Dette felt vises kun, når du har aktiveret [administration af formelændringer](manage-formula-changes.md) i systemet. Vælg den produktionstype, som denne frigivelsespolitik gælder for:<ul><li>**Samprodukt** – Brug denne udgivelsespolitik til at administrere samprodukter. Samprodukter produceres under procesproduktion og er ikke versionsnummererede eller tekniske produkter. Frigivelsespolitikker for samprodukter kan være med til at sikre, at vigtige indstillinger, f.eks. **Lagringsdimensionsgruppe** og **Sporingsdimensionsgruppe**, er konfigureret ved hjælp af en skabelon til frigivet produkt, før de frigives til en virksomhed.</li><li>**Biprodukt** – Brug denne udgivelsespolitik til at administrere biprodukter. Biprodukter produceres under procesproduktion og er ikke versionsnummererede eller tekniske produkter. Frigivelsespolitikker for biprodukter kan være med til at sikre, at vigtige indstillinger, f.eks. **Lagringsdimensionsgruppe** og **Sporingsdimensionsgruppe**, er konfigureret ved hjælp af en skabelon til frigivet produkt, før de frigives til en virksomhed.</li><li>**Ingen** – Brug denne politik til at administrere standardprodukter, der ikke er versionsnummererede eller tekniske produkter, samprodukter eller biprodukter.</li><li>**Planlægningsvare** – Brug denne frigivelsespolitik til at administrere planlægningsvarer, der produceres ved hjælp af procesproduktion. Planlægningsvarer bruger formler. De ligner formelvarer, men de bruges kun til at producere samprodukter og biprodukter, ikke færdige produkter.</li><li>**Stykliste** – Brug denne frigivelsespolitik til at administrere tekniske produkter, som ikke bruger formler og typisk (men ikke nødvendigvis) indeholder styklister.</li><li>**Formel** – Brug denne frigivelsespolitik til at administrere færdige varer, der produceres ved hjælp af procesproduktion. Disse varer har en formel, men ikke en stykliste.</li></ul> |
 | Anvend skabeloner | Vælg en af følgende indstillinger for at angive, om og hvordan produktfrigivelsesskabeloner skal anvendes, når politikken bruges:<ul><li>**Altid** – Et skabelonfrigivet produkt skal altid bruges til frigivelser. Hvis du vælger denne indstilling, skal du bruge oversigtspanelet **Alle produkter** til at angive den skabelon, der skal bruges til hvert af de firmaer, du frigiver til. Hvis du ikke angiver en skabelon for hvert af de firmaer, der vises i oversigtspanelet **Alle produkter**, vil du modtage en fejl, når du forsøger at gemme politikken.</li><li>**Valgfri** – Hvis der er angivet et skabelonfrigivet produkt for et firma, der er angivet i oversigtspanelet **Alle produkter**, vil den pågældende skabelon blive brugt, når du frigiver til det pågældende firma. Ellers vil der ikke blive anvendt en skabelon. Hvis du vælger denne indstilling, kan du gemme politikken uden at tildele skabeloner til alle firmaer. (Der vises ingen advarsel).</li><li>**Aldrig** – Der bruges intet skabelonfrigivet produkt for noget firma, du frigiver til, selvom en skabelon er angivet for firmaer i oversigtspanelet **Alle produkter**. Skabelonkolonnerne vil ikke være tilgængelige.</li></ul> |
 | Aktive | Brug denne indstilling som en hjælp til at vedligeholde dine frigivelsespolitikker. Angiv *Ja* for alle de frigivelsespolitikker, du bruger. Angiv den til *Nej* for at markere en frigivelsespolitik som inaktiv, når den ikke bruges. Bemærk, at du ikke kan inaktivere en frigivelsespolitik, der er tildelt en teknisk produktkategori, og du kan kun slette inaktive frigivelsespolitikker. |
 

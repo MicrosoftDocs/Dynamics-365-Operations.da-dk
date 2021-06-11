@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 36eb939d2539653fdcde78a6044cf1a87e8e3280
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811381"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123384"
 ---
 # <a name="cash-position-preview"></a>Likviditet (prøveversion)
 
@@ -31,7 +31,7 @@ Likviditeten er den projektion af likviditeten, der er prognose for den nærmest
 
 Når systemet forudsiger debitorbetalinger, bruger det betalingsforudsigelserne fra funktionen til forudsigelse af debitorbetaling. Uden betalingsforudsigelser bruges den gennemsnitlige tid, der kræves for at konvertere en debitorfaktura til en betaling for hver debitor, til beregning af en betalingsdato. Ved åbne kundeordrer beregner systemet fakturadatoen ved hjælp af det gennemsnitlige antal dage til ordrelinjerne pr. kunde, der skal faktureres. Derefter bruger programmet fakturadatoen som et input til funktionen til betalingsforudsigelse. Funktionaliteten til forudsigelse af debitorbetaling beregner en betalingsdato for hver ordrelinje. 
 
-<*Du skal bruge tekst fra Jarek eller Dave angående, hvordan betalingsforudsigelser konverteres til en dato*> Betalingsdatoen for udestående fakturaer er cirka [*estimeret*] fra betalingsforudsigelser ved at vælge en dato, der svarer til halvtredsindtyvende percentil for den kumulative fordelingsfunktion, der er opnået fra det forudsagte filsæts sandsynligheder.
+Betalingsdatoen for udestående fakturaer er estimeret fra betalingsforudsigelser ved at vælge en dato, der svarer til halvtredsindtyvende percentil for den kumulative fordelingsfunktion, der er opnået fra det forudsagte filsæts sandsynligheder.
 
 En lignende fremgangsmåde bruges til at forudsige betalinger til kreditorer. For hver leverandør beregner systemet den gennemsnitlige tid, der kræves for at konvertere en kreditorfaktura til en betaling. Dette antal dage anvendes derefter til at beregne betalingsdatoen. I forbindelse med åbne kreditorordrer beregner systemet fakturadatoen ved at overveje det gennemsnitlige antal dage, der kræves for at konvertere ordrelinjer til en faktura for hver kreditor. Systemet beregner derefter betalingsdatoen ved at anvende den gennemsnitlige tid, der kræves for at konvertere en kreditorfaktura til en betaling for hver kreditor.
 

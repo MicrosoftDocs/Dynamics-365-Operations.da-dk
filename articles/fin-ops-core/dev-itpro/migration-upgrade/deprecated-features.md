@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921417"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112615"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -104,6 +104,39 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfaset: Fra den 1. oktober 2020 planlægger vi ikke længere at understøtte metoden **Indenlandsk momsrapport – Funktionsreference IT-00003**. |
 
+## <a name="october-2019-deprecation-announcement"></a>Meddelelse om udfasning oktober 2019
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Rutediagrammer i Forretningsmodeldesigner
+
+<table>
+<tbody>
+<tr>
+<td><strong>Årsagen til forældelsen/fjernelsen</strong></td>
+<td>Vi fraråder komponenten rutediagram i forretningsmodeldesigneren (BPM), fordi det forældre design forårsagede lavt forbrug.</td>
+</tr>
+<tr>
+<td><strong>Erstattet af en anden funktion?</strong></td>
+<td>Nej</td>
+</tr>
+<tr>
+<td><strong>Påvirkede områder</strong></td>
+<td>Forretningsmodeldesigner</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Udfaset: Komponenten rutediagram i BPM forventes fjernet i 2020. Følgende funktion vil ikke være tilgængelig:
+<ul>
+<li>Alle rutediagrammer er skrivebeskyttede og kan ikke redigeres. De figuregenskaber, der er knyttet til rutediagramaktiviteter, vil også være tilgængelige. Disse rutediagrammer omfatter både standardrutediagrammer, der genereres automatisk, og tilpassede rutediagrammer, der er ændret på grundlag af disse standardrutediagrammer.</li>
+<li>Procestrin er skrivebeskyttede og kan ikke redigeres.</li>     
+<li>Funktionen legacy fit/Gab-analyse vil ikke være tilgængelig. Derfor vil der ikke automatisk blive oprettet en gab-liste, og den kan heller ikke eksporteres.
+<p><strong>Bemærk:</strong> Denne funktion er tidligere blevet udfaset og erstattet af Microsoft Azure DevOps-integrationer.</p>
+</li>
+<li>Versionsoversigten for rutediagrammet vil ikke være tilgængelig.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 med platformsopdatering 29
 

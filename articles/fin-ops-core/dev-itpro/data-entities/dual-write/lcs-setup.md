@@ -2,26 +2,20 @@
 title: Konfiguration af dobbeltskrivning fra Lifecycle Services
 description: Dette emne beskriver, hvordan du konfigurerer en forbindelse med dobbeltskrivning fra Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e51b4ef1e309e5f89dc82a3776b88c505dc6593d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748535"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103563"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfiguration af dobbeltskrivning fra Lifecycle Services
 
@@ -29,64 +23,48 @@ ms.locfileid: "5748535"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-I dette emne beskrives, hvordan du kan oprette en forbindelse med to skrivninger mellem et nyt Finance and Operations-miljø og et nyt Dataverse-miljø fra Microsoft Dynamics Lifecycle Services (LCS).
+Dette emne beskriver, hvordan du aktiverer dobbeltskrivning fra Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Du skal være administrator for at kunne konfigurere en forbindelse med to skrivninger.
+Du skal fuldføre Power Platform-integrationen som beskrevet i følgende emner:
 
-+ Du skal have adgang lejeren.
-+ Du skal være administrator i Finance and Operations-miljøer og Dataverse-miljøer.
++ [Power Platform-integration – Aktiveres under installation af miljøet](../../power-platform/overview.md#enable-during-environment-deployment)
++ [Power Platform-integration – Konfigureres efter installation af miljøet](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a>Oprette en forbindelse med to skrivninger
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Konfigurere dobbeltskrivning for nye Dataverse-miljøer
 
-Følg disse trin for at oprette forbindelsen med to skrivninger.
+Følg disse trin for at konfigurere dobbeltskrivning fra LCS-siden **Miljøoplysninger**:
 
-1. Gå til dit projekt i LCS.
-2. Vælg **Konfigurer** for at installere et nyt miljø.
-3. Vælg versionen. 
-4. Vælg topologien. Hvis der kun er én tilgængelig topologi, vælges den automatisk.
-5. Afslut de første trin i guiden **Installationsindstillinger**.
-6. Udfør ét af følgende trin på fanen **Dataverse**:
+1. Udvid sektionen **Power Platform-integration** på siden **Miljøoplysninger**.
 
-    - Hvis der allerede er klargjort et Dataverse-miljø til din lejer, kan du vælge det.
+2. Vælg knappen **Dobbeltskrivningsapplikation**.
 
-        1. Angiv indstillingen **Konfigurer Dataverse** til **Ja**.
-        2. Vælg det miljø, der skal integreres med dine Finance and Operations-data, i kolonnen **Tilgængelige miljøer**. Listen omfatter alle de miljøer, hvor du har administratorrettigheder.
-        3. Markér afkrydsningsfeltet **Acceptér** for at angive, at du accepterer vilkårene og betingelserne.
+    ![Power Platform-integration](media/powerplat_integration_step2.png)
 
-        ![Dataverse-fanen, når et Dataverse-miljø allerede er klargjort til din lejer](../dual-write/media/lcs_setup_1.png)
+3. Gennemse vilkår og betingelser, og markér afkrydsningsfeltet **Konfigurer**.
 
-    - Hvis din lejer ikke allerede har et Dataverse-miljø, vil der blive klargjort et nyt miljø.
+4. Vælg **OK** for at fortsætte.
 
-        1. Angiv indstillingen **Konfigurer Dataverse** til **Ja**.
-        2. Angiv et navn for Dataverse-miljøet.
-        3. Vælg det område, som miljøet skal installeres i.
-        4. Vælg standardsprog og valuta for miljøet.
+5. Du kan overvåge status ved at opdatere siden med miljøoplysninger med jævne mellemrum. Konfigurationen tager typisk 30 minutter eller mindre.  
 
-            > [!NOTE]
-            > Du kan ikke ændre sproget og valutaen senere.
+6. Når installationen er fuldført, vises der en meddelelse, som fortæller, om processen lykkedes, eller om der opstod en fejl. Hvis installationen mislykkedes, vises der en relateret fejlmeddelelse. Du skal rette eventuelle fejl, før du går videre til næste trin.
 
-        5. Markér afkrydsningsfeltet **Acceptér** for at angive, at du accepterer vilkårene og betingelserne.
+7. Vælg **Link til Power Platform-miljø** for at oprette en kæde mellem Dataverse og databaserne i det aktuelle miljø. Det tager typisk mindre end 5 minutter.
 
-        ![Dataverse-fanen, når din lejer ikke allerede har et Dataverse-miljø](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link til Power Platform-miljø":::
 
-7. Afslut de resterende trin i guiden **Installationsindstillinger**.
-8. Når miljøet har status **Installeret**, skal du åbne siden med miljødetaljer. Afsnittet med **Power Platform Integration** viser navnene på Finance and Operations-miljøet og det sammenkædede Dataverse-miljø.
+8. Når sammenkædningen er fuldført, vises der et link. Brug linket til at logge på administrationsområdet med dobbeltskrivning i Finance and Operations-miljøet. Herfra kan du oprette objekttilknytninger.
 
-    ![Afsnittet Power Platform Integration](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Konfigurere dobbeltskrivning for et eksisterende Dataverse-miljø
 
-9. En administrator af Finance and Operations-miljøet skal logge på LCS og vælge **Link til CDS for Apps** for at fuldføre sammenkædningen. På siden med miljødetaljer vises administratorens kontaktoplysninger.
+Hvis du vil konfigurere dobbeltskrivning for et eksisterende Dataverse-miljø, skal du oprette en Microsoft-[supportanmodning](../../lifecycle-services/lcs-support.md). Anmodningen skal indeholde:
 
-    Når sammenkædningen er fuldført, opdateres status til **Miljøsammenkædning er fuldført**.
-
-10. Hvis du vil åbne arbejdsområdet **Dataintegration** i Finance and Operations-miljøet og styre, hvilke skabeloner der findes, skal du vælge **Link til CDS For Apps**.
-
-    ![Knappen Link til CDS for Apps i afsnittet Power Platform Integration](../dual-write/media/lcs_setup_4.png)
++ Dit Finance and Operations-miljø-id.
++ Dit miljønavn fra Lifecycle Services.
++ Dataverse-organisations-id'et eller Power Platform-miljø-id'et fra Power Platform Administration. I din anmodning skal du anmode om, at id'et skal være den forekomst, der bruges til Power Platform-integration.
 
 > [!NOTE]
 > Du kan ikke fjerne sammenkædningen mellem miljøer ved hjælp af LCS. Hvis du vil fjerne sammenkædningen mellem et miljø, skal du åbne arbejdsområdet **Dataintegration** i Finance and Operations-miljøet og derefter vælge **Fjern sammenkædning**.
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
