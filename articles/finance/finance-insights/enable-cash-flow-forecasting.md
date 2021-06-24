@@ -2,7 +2,7 @@
 title: Aktivere likviditetsbudget (prøveversion)
 description: Dette emne forklarer, hvordan du aktiverer funktionen likviditetsbudgetforslag i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: f7c06eaeb79c1a2aa319cfa3d2ad8255bf716cd0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8acb2191291e2abed5cabf234c19fe09e6c8ff
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818722"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222552"
 ---
 # <a name="enable-cash-flow-forecasting-preview"></a>Aktivere likviditetsbudget (prøveversion)
 
@@ -37,7 +37,7 @@ Dette emne forklarer, hvordan du aktiverer funktionen likviditetsbudgetforslag i
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
 
     > [!NOTE]
-    > Hvis din installation af Microsoft Dynamics 365 Finance er en Service Fabric-installation, kan du springe dette trin over. Finance Insights-team burde allerede have aktiveret funktionen til dig. Hvis du ikke kan se funktionerne i arbejdsområdet **Funktionsstyring**, eller hvis der opstår problemer, når du forsøger at aktivere dem, skal du kontakte <fiap@microsoft.com>.
+    > Spring dette trin over, hvis du bruger version 10.0.20 eller senere, eller hvis du bruger en installation af Service Fabric. Finance Insights-team burde allerede have aktiveret funktionen til dig. Hvis du ikke kan se funktionen i arbejdsområdet **Funktionsstyring**, eller hvis der opstår problemer, når du forsøger at aktivere den, skal du kontakte <fiap@microsoft.com>.
   
 2. Åbn arbejdsområdet **Funktionsstyring**, og udfør følgende trin:
 
@@ -60,10 +60,5 @@ Dette emne forklarer, hvordan du aktiverer funktionen likviditetsbudgetforslag i
     2. Vælg **Opret forudsigelsesmodel**.
 
 Du kan finde flere oplysninger om, hvordan du konfigurerer funktionen likviditetsbudgettering i [Likviditetsbudget](cash-flow-forecast-intro.md).
-
-## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-
-Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

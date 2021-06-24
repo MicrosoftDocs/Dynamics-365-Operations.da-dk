@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103622"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193875"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -102,7 +102,7 @@ Ved automatisk autorisation kan du autorisere ordreforslag som del af varedispon
 
 Både Planlægningsoptimering og det indgbyggede planlægningsprogram kan bruges til automatisk autorisation af ordreforslag. Der er dog nogle vigtige forskelle. I Planlægningsoptimering bruges ordredatoen (dvs. startdatoen) til at bestemme, hvilke ordreforslag der skal autoriseres, mens det indbyggede planlægningsprogram bruger behovsdatoen (dvs. slutdatoen). I følgende tabel vises en oversigt over forskellene.
 
-| | Planlægningsoptimering | Indbygget planlægningsprogram |
+| Funktion | Planlægningsoptimering | Indbygget planlægningsprogram |
 |---|---|---|
 | **Datobasis** | Automatisk autorisation er baseret på ordredatoen (startdato). | Automatisk autorisation er baseret på behovsdatoen (slutdatoen). |
 | **Leveringstid** | Da ordredatoen (startdato) udløser en autorisation, behøver du ikke at overveje leveringstiden som en del af autorisations tidshorisonten. | For at sikre, at ordrer autoriseres rettidigt, skal tidsgrænsen for autorisation være længere end leveringstiden. |

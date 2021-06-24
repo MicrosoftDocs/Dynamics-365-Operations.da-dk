@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792141"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193276"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduler til vurderinger og anmeldelser
 
@@ -54,7 +54,11 @@ I følgende illustration vises, hvordan dialogboksen **Tilføj modul** viser vur
 
 Modulet til skrivning af anmeldelser omfatter knappen **Skriv en anmeldelse**, der giver brugere mulighed for at logge på, tildele en vurdering og skrive en anmeldelse af et produkt. I dette modul kan brugerne også redigere en vurdering eller en anmeldelse, som de tidligere har sendt. Dette modul vises typisk over modulerne med vurderings- og anmeldelseslister på en produktoplysningsside.
 I følgende illustration vises dialogboksen **Skriv en anmeldelse**, der vises, når en kunde vælger **Skriv en anmeldelse**. Kunden kan bruge denne dialogboks til at sende en vurdering og en anmeldelse.
-![Dialogboksen Skriv en anmeldelse](media/rnr-eCommerce-write-review-module.png) Følgende tabel viser den egenskab for modulet til skrivning af anmeldelser, der skal konfigureres i oprettelsesværktøjet.
+
+![Dialogboksen Skriv en anmeldelse](media/rnr-eCommerce-write-review-module.png)
+
+Følgende tabel viser den egenskab for modulet til skrivning af anmeldelser, der skal konfigureres i oprettelsesværktøjet.
+
 | Egenskabsbetegnelse | Værdi        | Beskrivelse af egenskab                 |
 |---------------|--------------|--------------------------------------|
 | Navn          | Skriv anmeldelse | Navnet på modulet til skrivning af anmeldelse. |

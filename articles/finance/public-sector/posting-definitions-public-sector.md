@@ -15,12 +15,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3902789fecd52fc1a31a2682402f7bbd2be71b92
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 01cf27f32d2f8752205aba533d184bdc2177bd76
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814897"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188361"
 ---
 # <a name="posting-definitions-in-the-public-sector"></a>Bogføringsdefinitioner i den offentlige sektor
 
@@ -605,8 +605,7 @@ I dette eksempel defineres midler med betegnelsen 601 som klassen **Privat** på
 
 Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst kontodel af udgiftskontostrukturen. Når 601-66100-130- evalueres, bruges der derfor samme finanskonto, beløbet tilbageføres for at afslutte kontoen, og den genererede reguleringspost i finans oprettes.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Kreditorer](../accounts-payable/accounts-payable.md)
 

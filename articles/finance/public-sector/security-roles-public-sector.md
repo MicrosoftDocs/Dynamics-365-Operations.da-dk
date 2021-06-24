@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff40f915c329187e3fa3f4cba5f1f7f06c2f3e14
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 778255e7fd1108b87be56d04cda8996cf11966f1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890761"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190246"
 ---
 # <a name="security-roles-in-the-public-sector"></a>Sikkerhedsroller i den offentlige sektor
 
@@ -93,8 +93,7 @@ Sikkerhedsrollen **Indkøbsagent - den offentlige sektor** understøtter de offe
 ## <a name="what-do-i-do-next"></a>Hvad skal jeg gøre nu?
 Når brugerne er oprettet, skal du tildele dem roller på siden **Tildel brugere roller**.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Rollebaseret sikkerhed](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md)
 

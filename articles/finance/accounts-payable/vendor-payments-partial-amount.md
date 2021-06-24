@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a46ebb841b4abe6aa5bd8b06966f4197b27aeaee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ee17aeb75e2bdc3b9c36d50914c24aa9d6218b7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841207"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189511"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Kreditorbetalinger af et delvist beløb
 
@@ -28,8 +28,7 @@ ms.locfileid: "5841207"
 
 Du kan somme tider skulle foretage en betaling, der er mindre end fakturabeløbet, til en kreditor. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation. De tilgængelige indstillinger afhænger af forretningsbehovene og konfigurationen. 
 
-<a name="cash-discount-amounts"></a>Kasserabatbeløb
----------------------
+## <a name="cash-discount-amounts"></a>Kasserabatbeløb
 
 En kreditor kan tilbyde dig en kasserabat, hvis du betaler en faktura før forfaldsdatoen. Du kan f.eks. en oprette en faktura på 100,00, der specificerer en kasserabat på 2 %, hvis fakturaen betales inden for 10 dage. Forfaldsdatoen er 30 dage. Hvis et betalingsforslag bruger kasserabatten som et kriterium for at vælge en faktura, og hvis forslaget køres på eller før datoen for kasserabat, udvælges fakturaen til betaling, og der oprettes betalingen af 98,00. En kasserabat kan også tages fra en engangsbetaling, der er oprettet manuelt.
 

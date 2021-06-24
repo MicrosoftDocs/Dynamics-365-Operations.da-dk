@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054013"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190226"
 ---
 # <a name="set-up-training-courses"></a>Konfigurere uddannelseskurser
 
@@ -28,8 +28,7 @@ ms.locfileid: "6054013"
 
 Human Resourcesadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.
 
- <a name="set-up-prerequisites"></a> Angiv forudsætninger
----------------------
+##  <a name="set-up-prerequisites"></a> Angiv forudsætninger
 
 Følgende oplysninger er påkrævet og skal konfigureres, før du opretter kurser.
 -   **Kursustyper**
@@ -127,8 +126,7 @@ I følgende tabel vises de mulige statusser for kurser og de handlinger, du kan 
 ## <a name="course-participants"></a>Kursusdeltagere
 Kursusdeltagere er arbejdere, der deltager i et kursus eller anden undervisning. Du kan kun melde deltagere til åbne kurser. Det laveste og højeste antal deltagere, du kan tilmelde et kursus, er angivet i oversigtspanelet **Generelt** på siden **Kurser**.
 
-<a name="workflow"></a>Arbejdsgang
---------
+## <a name="workflow"></a>Arbejdsgang
 
 Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**, kan få deres tilmelding dirigeret gennem godkendelsesarbejdsgangen. Du kan tildele en arbejdsgang et kursus i oversigtspanelet **Generelt** på siden **Kurser**.
 

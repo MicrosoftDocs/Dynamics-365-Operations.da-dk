@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 562cf07348e77d9c2f169e31a852843bea10fcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 780d1e1307b69ec9a31d032039970de454160d6f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816502"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189686"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere et statistisk budgetgrundlag
 
@@ -67,8 +67,7 @@ Hvis prognosen ikke er oprettet for en lang række varer, men for eksempel for �
 > [!NOTE]
 > En potentielt fladt udseende prognose kan skyldes de historiske data, der skal være i en længere tidsramme (minimum tre tidsperioder for at kunne plukke mønstre, f.eks. 3 år med månedlig prognose). Hvis du vil opnå et bedre resultat, kan du prøve at ændre granulariteten af tidsintervallet eller øge tidsintervallet.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Konfigurere behovsprognoser](demand-forecasting-setup.md)
 

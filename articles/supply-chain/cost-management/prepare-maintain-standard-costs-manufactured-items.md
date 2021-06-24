@@ -16,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6944782ac236a3f414b1cadfb12b0f0d8c1115b9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2a82b0a205ac6b7a86b9aca0771303469c6666c1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821507"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187740"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Forberede at vedligeholde standardomkostninger for producerede varer
 
@@ -63,8 +63,7 @@ Regler, der er knyttet til producerede varer, kan påvirke omkostningsberegninge
 
 Hvis du vil bruge ruteoplysninger i forbindelse med efterkalkulation, er der brug for flere trin i forberedelsen. Omkostningskategorier, der er knyttet til ruteoperationer, skal f.eks. være korrekte og fuldførte.
 
-<a name="related-topics"></a>Relaterede emner
---------
+## <a name="related-topics"></a>Relaterede emner
 
 [Amortisere konstante omkostninger for en produceret vare](amortize-constant-costs-manufactured-item.md)
 

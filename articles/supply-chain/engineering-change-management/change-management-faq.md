@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018679"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187265"
 ---
 # <a name="engineering-change-management-faq"></a>Ofte stillede spørgsmål om styring af tekniske ændringer
 
@@ -40,13 +40,13 @@ Selvom denne indstilling kræver mere administration, anbefales den, hvis du har
 
 ### <a name="if-you-dont-track-the-version-in-transactions"></a>Hvis du ikke sporer versionen i transaktioner
 
-I forbindelse med tekniske kategorier, hvor du har valgt en dimensionsgruppe, hvor versionen **ikke** er en aktiv dimension, kan du **ikke** spore versioner i transaktioner for produkter i den pågældende kategori. Hvis du ikke bruger en anden dimension i dette tilfælde, vil det tekniske produkt være et særskilt produkt. Produktet bliver stadig versioneret, og du kan administrere oplysninger om bestemte versioner (f.eks. stykliste og rute), men du vil ikke kunne spore, hvilken specifik version der er brugt i de enkelte transaktioner. Start- og slutdatoerne angiver gyldigheden af hver version.
+I forbindelse med tekniske kategorier, hvor du har valgt en dimensionsgruppe, hvor versionen **ikke** er en aktiv dimension, kan du **ikke** spore versioner i transaktioner for produkter i den pågældende kategori. Hvis du ikke bruger en anden dimension i dette tilfælde, vil det tekniske produkt være et særskilt produkt. Produktet bliver stadig versioneret, og du kan administrere oplysninger om bestemte versioner (f.eks. stykliste \[BOM] og rute), men du vil ikke kunne spore, hvilken specifik version der er brugt i de enkelte transaktioner. Start- og slutdatoerne angiver gyldigheden af hver version.
 
 Denne indstilling er meget nemmere at administrere, for hvis du vil skifte fra én version til en anden, skal du blot foretage de nødvendige ændringer i en ændringsrækkefølge og derefter opdatere start- og slutdatoerne i den tekniske version. Produktionsprocesserne henter derefter den nødvendige stykliste og rute for produktet (og dets specifikke version).
 
 De fleste organisationer vælger denne indstilling, fordi den indeholder versions- og ændringsstyring, men ikke giver de ekstra faste omkostninger til sporing af versionen i de enkelte transaktioner, på lageret og under varedisponeringen.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Hvilke felter kopieres til den frigivne vareskabelon?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Hvilke felter kopieres fra den frigivne vareskabelon?
 
 Når en teknisk virksomhed opretter et teknisk produkt, oprettes dette produkt som et frigivet produkt i den tekniske virksomhed. Det frigivne produkt, der oprettes, er baseret på den valgte *skabelon for frigivne varer*. (Skabelonen til frigivne varer er i sig selv et frigivet produkt). Skabelonen for frigivne varer bruges også, når produktet frigives til en driftsvirksomhed. I alle tilfælde definerer skabelonen for frigivne varer de fleste feltværdier for det frigivne produkt, og disse værdier hentes fra den tilknyttede side **Oplysninger om frigivne produkter**.
 

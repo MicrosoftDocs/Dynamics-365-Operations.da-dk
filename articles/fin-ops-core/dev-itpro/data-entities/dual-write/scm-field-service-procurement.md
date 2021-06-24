@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941103"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219781"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrere indkøb mellem Supply Chain Management og Field Service
 
@@ -196,23 +196,10 @@ Følgende skabeloner er tilgængelige for integrationen af indkøbsrelaterede do
 
 | Supply Chain Management | Field Service | Betegnelse |
 |---|---|---|
-| Indkøbsordrehoved V2 | msdyn\_Purchaseorders | Denne tabel indeholder de kolonner, der repræsenterer indkøbsordrehovedet. |
-| Enhed for indkøbsordrelinje | msdyn\_PurchaseOrderProducts | Denne tabel indeholder de rækker, der repræsenterer linjer på en indkøbsordre. Produktnummeret bruges til synkronisering. Dette identificerer produktet som en lagerenhed (SKU), herunder produktdimensioner. Du kan finde flere oplysninger om produktintegration med Dataverse i [Samlet produktoplevelse](product-mapping.md). |
-| Hoved til produktkvittering | msdyn\_purchaseorderreceipts | Denne tabel indeholder de produktkvitteringshoveder, der oprettes, når en produktkvittering bogføres i Supply Chain Management. |
-| Produktkvitteringslinje | msdyn\_purchaseorderreceiptproducts | Denne tabel indeholder de produktkvitteringslinjer, der oprettes, når en produktkvittering bogføres i Supply Chain Management. |
-| Ikke-permanent sletgtet enhed for indkøbsordrelinje | msdyn\_purchaseorderproducts | Denne tabel indeholder oplysninger om ikke-permanent slettede indkøbsordrelinjer. En indkøbsordrelinje i Supply Chain Management kan kun slettes ikke-permanent, når indkøbsordren er bekræftet eller godkendt, hvis ændringsstyring er slået til. Rækken findes i Supply Chain Management-databasen og er markeret som **IsDeleted**. Da begrebet for ikke-permanent sletning ikke findes i Dataverse, er det vigtigt, at disse oplysninger synkroniseres til Dataverse. På den måde kan linjer med ikke-permanent sletning i Supply Chain Management automatisk slettes fra Dataverse. I dette tilfælde findes logikken til sletning af en linje i Dataverse i Supply Chain Management Extended. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Indkøbsordrehoved V2](mapping-reference.md#183) | msdyn\_Purchaseorders | Denne tabel indeholder de kolonner, der repræsenterer indkøbsordrehovedet. |
+| [Enhed for indkøbsordrelinje](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Denne tabel indeholder de rækker, der repræsenterer linjer på en indkøbsordre. Produktnummeret bruges til synkronisering. Dette identificerer produktet som en lagerenhed (SKU), herunder produktdimensioner. Du kan finde flere oplysninger om produktintegration med Dataverse i [Samlet produktoplevelse](product-mapping.md). |
+| [Hoved til produktkvittering](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Denne tabel indeholder de produktkvitteringshoveder, der oprettes, når en produktkvittering bogføres i Supply Chain Management. |
+| [Produktkvitteringslinje](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Denne tabel indeholder de produktkvitteringslinjer, der oprettes, når en produktkvittering bogføres i Supply Chain Management. |
+| [Ikke-permanent sletgtet enhed for indkøbsordrelinje](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Denne tabel indeholder oplysninger om ikke-permanent slettede indkøbsordrelinjer. En indkøbsordrelinje i Supply Chain Management kan kun slettes ikke-permanent, når indkøbsordren er bekræftet eller godkendt, hvis ændringsstyring er slået til. Rækken findes i Supply Chain Management-databasen og er markeret som **IsDeleted**. Da begrebet for ikke-permanent sletning ikke findes i Dataverse, er det vigtigt, at disse oplysninger synkroniseres til Dataverse. På den måde kan linjer med ikke-permanent sletning i Supply Chain Management automatisk slettes fra Dataverse. I dette tilfælde findes logikken til sletning af en linje i Dataverse i Supply Chain Management Extended. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

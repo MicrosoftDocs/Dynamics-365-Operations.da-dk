@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1297f405e57c2de4f42f05f78ef52b2d763f0f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f57c3405e03651798b7e0aaf1fab84d25f33f7cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821979"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187862"
 ---
 # <a name="audit-policy-rules"></a>Overvåge politikregler
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821979"
 
 Du kan bruge overvågningspolitikker til at sikre, at udgiftsrapporter, kreditorfakturaer og indkøbsordrer overholder de politikregler, du opretter. Alle de regler, der er knyttet til en overvågningspolitik, køres i batchtilstand i henhold til en tidsplan, du angiver.  Hver politikregel er en forekomst af en politikregeltype. Kun én politikregel ad gangen kan være aktiv for hver politikregeltype. 
 
-<a name="queries-and-query-types"></a>Forespørgsler og forespørgselstyper
------------------------
+## <a name="queries-and-query-types"></a>Forespørgsler og forespørgselstyper
 
 Når du opretter en overvågningspolitikregel, skal du først vælge en politikregeltype. Politikregeltypen angiver den AOT-forespørgsel (Application Object Tree), der skal bruges som udgangspunkt for oprettelse af politikreglen. Den angiver også den forespørgselstype, der skal bruges til politikreglen. Forespørgslen definerer det kildedokument, som politikreglen evaluerer. Den angiver også de felter i kildedokumentet, der identificerer både den juridiske enhed og det felt, der identificerer den dato, der skal bruges ved valg af dokumenter til overvågning. Forespørgselstypen styrer standardfelterne på forespørgselssiden og på siden Regel for overvågning. Følgende tabel viser de forespørgselstyper, der er tilgængelige for overvågningspolitikregler.
 
@@ -91,8 +90,7 @@ Alle politikreglerne for en bestemt overvågningspolitik deler samme batchparame
 
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Overtrædelser af overvågningspolitik og sager](audit-policy-violations-cases.md)
 [Definere revisionspolitikker for kildedokumenter](tasks/define-audit-policies-source-documents.md)

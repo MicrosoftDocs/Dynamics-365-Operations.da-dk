@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0373f4914182ebbd5183be9f8b18a75c153cd4e5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 282e2005e9327b747dfa1c015e29b22af6fff907
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809901"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189617"
 ---
 # <a name="billing-classifications-and-billing-codes-in-the-public-sector"></a>Faktureringsklassifikationer og faktureringskoder i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5809901"
 
 Offentlige organisationer kan bruge faktureringsklassificeringer og faktureringskoder til at administrere fritekstfakturaer. 
 
-<a name="billing-classifications"></a>Faktureringsklassifikationer
------------------------
+## <a name="billing-classifications"></a>Faktureringsklassifikationer
 
 Faktureringsklassifikationer bruges til at gruppere ensartede fritekstfakturaer til behandling og visning. Eksempelvis kan et forsendelsesbureau leje plads i hver forsendelsesstation til små cafeer og andre forhandlere. Ved at oprette en faktureringsklassifikation til udlejninger kan bureauet automatisk anvende de samme betalingsbetingelser og bruge den samme rækkefølge af rykkere for alle udlejninger. Bureauet kan også få vist fakturaer for alle udlejninger sammen, selvom udlejningerne ikke deler de samme økonomiske dimensioner. Faktureringsklassifikationer omfatter følgende oplysninger:
 

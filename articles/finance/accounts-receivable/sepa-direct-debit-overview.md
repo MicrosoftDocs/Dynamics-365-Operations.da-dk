@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf3872a47a92509af5857c0c1aec0d4da4095d19
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5b1ec24c84d2b1a3dc88bf96ae6f52441b58a694
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835262"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188680"
 ---
 # <a name="sepa-direct-debit-overview"></a>Oversigt over direkte debitering (SEPA)
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835262"
 
 Det Fælles eurobetalingsområde (SEPA) er nedsat af Europa-Kommissionen og bestemmer, at alle elektroniske betalinger behandles som indenlandske, uanset det land/område, hvor personen, virksomheden eller organisationen og banken er placeret. Der er ingen forskel imellem nationale betalinger og betalinger, der involverer udlandet. SEPA omfatter de 28 EU-medlemsstater, foruden Island, Liechtenstein, Norge, Schweiz, Monaco og San Marino. SEPA er med til at danne et enkelt marked for betalingstransaktioner inden for Det Europæiske Økonomiske Samarbejdsområde (EEA). I sidste ende forventes SEPA at reducere antallet af betalingsformater, som banker, virksomheder og enkeltpersoner skal arbejde med.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Hvad er målet for direkte SEPA-debiteringer?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Hvad er målet for direkte SEPA-debiteringer?
 
 En direkte SEPA-debitering gør det muligt for en kreditor at indsamle midler fra en debitors bankkonto, forudsat at der er tildelt en signeret bemyndigelse af kunden til kreditor. Kunden signerer en bemyndigelse, som autoriserer kreditoren til at opkræve en betaling og beder kundens bank om at betale opkrævningen. 
 

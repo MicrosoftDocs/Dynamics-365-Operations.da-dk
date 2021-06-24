@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 2dddc22128621dc148a253cd568430587f294544
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822897"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187991"
 ---
 # <a name="overhead-calculation"></a>Beregning af fast omkostning
 
@@ -29,8 +29,7 @@ ms.locfileid: "5822897"
 
 I dette emne beskrives de typiske processer til beregning og tildeling af faste omkostninger.
 
-<a name="term-definition"></a>Definition af begrebet
----------------
+## <a name="term-definition"></a>Definition af begrebet
 
 Faste omkostninger er de omkostninger, der er forbundet med at drive et firma, men som ikke direkte kan henføres til nogen specifikke aktiviteter, produkter eller tjenester. Faste omkostninger giver vigtig understøttelse til generering af aktiviteter, der kan skabe fortjeneste. Følgende er eksempler på faste omkostninger:
 

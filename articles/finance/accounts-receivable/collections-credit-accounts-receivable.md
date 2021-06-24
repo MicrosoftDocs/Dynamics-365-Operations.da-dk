@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dc4dc556cbb8bd461e904ef569016acd4276f7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c394219bbb58bea187d352c8817ed4c3e2eb883c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814242"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189439"
 ---
 # <a name="collections-in-accounts-receivable"></a>Rykkere i Debitor
 
@@ -99,8 +99,7 @@ Afskrivningsposteringen oprettes i posteringsvalutaen.
 
 Yderligere oplysninger finder du under [Oprette en afskrivningskladde for en debitor](tasks/create-write-off-journal-customer.md).
 
-<a name="process-not-sufficient-funds-nsf-payments"></a>Behandle NSF-betalinger (Non-sufficient Funds – USA)  
---------------------------------------------
+## <a name="process-not-sufficient-funds-nsf-payments"></a>Behandle NSF-betalinger (Non-sufficient Funds – USA)  
 
 Du kan behandle NSF-betalinger ved at klikke på NFS-betaling på siden Rykkere. Når du klikker på denne knap, annulleres betalingen. Hvis der gælder et NSF-gebyr for debitoren, oprettes der en gebyrpostering i en betalingskladde. Gebyrbeløbet baseres på indstillingerne for automatiske gebyrer. De automatiske gebyrer, der gælder for NSF-betalinger, specificeres med udgangspunkt i den gebyrgruppe, der er valgt på siden Bankkonti for den pågældende bankkonto.
 

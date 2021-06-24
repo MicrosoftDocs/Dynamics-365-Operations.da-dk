@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fb7d2623451313475a6c234e820c7c6295be40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e4b38fd137e6479493da79d4b62d0111b502a632
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835478"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189487"
 ---
 # <a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835478"
 
 Kreditorbogføringsprofiler styrer bogføringen af kreditortransaktioner til Finans.
 
-<a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
------------------------
+## <a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
 
 Kreditorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle kreditorer, en gruppe kreditorer eller en enkelt kreditor. Disse indstillinger bruges, når du opretter indkøbsordrer, kreditorfakturaer og kontantbetalinger. For nogle transaktioner kan du vælge en posteringsprofil, der er anderledes end, og som prioriteres højere end de posteringsprofiler, der er oprettet for transaktioner på denne side. Standardposteringsprofilen defineres i oversigtspanelet **Finans og Moms** på siden **Kreditorparametre**. Standardposteringsprofilen medtages derefter automatisk i hovedet i nye dokumenter, hvor du kan ændre den til en anden posteringsprofil, hvis det er nødvendigt.
 

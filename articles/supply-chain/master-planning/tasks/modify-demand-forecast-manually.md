@@ -1,5 +1,5 @@
 ---
-title: Ændre en behovsprognose manuelt
+title: 'Vejledning: Ændre en behovsprognose manuelt'
 description: Dette emne viser, hvordan du redigerer prognosen for en vare
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
-ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
+ms.openlocfilehash: 1e12ccf90b9971379e8931bd48d6243a855bb795
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889018"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224004"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Ændre en behovsprognose manuelt
+# <a name="guide-modify-a-demand-forecast-manually"></a>Vejledning: Ændre en behovsprognose manuelt
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåde viser, hvordan du redigerer prognosen for en vare. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til produktionsplanlæggeren.
+Denne fremgangsmåde viser, hvordan du redigerer prognosen for en vare. Denne procedure er beregnet til produktionsplanlæggeren.
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>Redigere prognosen for en valgt vare
 
@@ -36,9 +36,9 @@ Sådan redigerer du prognosen for en valgt vare:
 1. Udfyld de andre felter efter behov.
 1. Vælg **Gem** i handlingsruden.
 
-## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Redigere prognosen for en eller flere varer i Microsoft Excel
+## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Redigere prognosen for en eller flere varer med Microsoft Excel
 
-sådan redigerer du prognosen for en eller flere varer i Microsoft Excel:
+Sådan redigerer du prognosen for en eller flere varer med Microsoft Excel:
 
 1. Benyt en af følgende fremgangsmåder:
     - Åbn siden **Behovsprognose** for en vilkårlig vare som beskrevet i forrige afsnit.

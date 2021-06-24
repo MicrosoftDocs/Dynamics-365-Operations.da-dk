@@ -2,7 +2,7 @@
 title: Startside for Finance Insights (prøveversion)
 description: Med Finance Insights kan du konfigurere og udvide modeller, så du præcist og intelligent kan forudsige virksomhedens pengestrøm, forudsige, hvornår du vil modtage betaling for udestående tilgodehavender, og generere et budgetforslag, der kan gøre budgetteringsprocessen hurtigere. Alle disse funktioner er baseret på intelligente Machine Learning-modeller.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086983"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222504"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (prøveversion)
 
@@ -68,7 +68,9 @@ Det er en god ide at oprette og administrere ressourcer i Azure, Microsoft Datav
 
 ## <a name="configure-finance-insights"></a>Konfigurere Finance Insights
 
-Du skal fuldføre nogle konfigurationstrin, før du kan bruge Finance Insights. Du kan finde flere oplysninger om, hvordan du konfigurerer Finance Insights, i [Konfiguration af Finance Insights](configure-for-fin-insites.md).
+Du skal fuldføre nogle konfigurationstrin, før du kan bruge Finance Insights. Du kan finde flere oplysninger om, hvordan du kan konfigurere Finance Insights, i:
+  - For versioner op til 10.0.19: [Konfiguration for Finance insights - versioner op til 10.0.19](configure-for-fin-insites.md).
+  - For version 10.0.20 og senere: [Konfiguration for Finance Insights (forhåndsversion) - version 10.0.20 og senere](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Oprette et dataintegratorprojekt
 
@@ -84,10 +86,7 @@ Hvis du bruger demodata til at teste kundens betalingsforudsigelser, kan det væ
 Hvis du vil aktivere funktionen til debitorbetalinger, skal du udføre et sæt trin for at opbygge en model til maskinel indlæring, der bruger organisationens data til organisationens data for at generere forudsigelser om, hvornår kunderne sandsynligvis vil betale udestående fakturaer, og hvornår der sandsynligvis vil blive betalt bestemte fakturaer. Yderligere oplysninger og trin, der skal udføres, finder du i afsnittet [Aktivere debitorbetalingsforudsigelser](enable-cust-paymnt-prediction.md). 
 
 ### <a name="enable-cash-flow-forecasting"></a>Aktivere likviditetsbudget
-Hvis du vil aktivere likviditetsbudgettering, skal du udføre et sæt trin for at bygge en model til maskinel indlæring, der bruger de organisationsdata, som organisationens data skal oprette likviditetsbudgetter til. Yderligere oplysninger og trin, der skal udføres, finder du i afsnittet [Aktivere likviditetsbudget](enable-cash-flow-forecasting.md). 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>Oprette og bruge likviditetsbudgettering
-Du kan finde oplysninger om, hvordan du konfigurerer og bruger likviditetsbudgettering, i [Aktivere likviditetsbudget](enable-cash-flow-forecasting.md). Du kan finde flere oplysninger om, hvordan du bruger denne funktion i [Likviditetsbudget](cash-flow-forecast-intro.md).
+Hvis du vil aktivere likviditetsbudgettering, skal du udføre et sæt trin for at bygge en model til maskinel indlæring, der bruger din organisations data til at oprette likviditetsbudgetter. Yderligere oplysninger og trin, der skal udføres, finder du i afsnittet [Aktivere likviditetsbudget](enable-cash-flow-forecasting.md).
 
 ### <a name="enable-budget-proposals"></a>Aktivere likviditetsforslag
 
@@ -111,14 +110,12 @@ Likviditetsbudgettet kan hjælpe dig med mere nøjagtigt at vurdere din likvide 
 
 - Få mere at vide om de nye muligheder i likviditetsbudgetter under [Likviditetsbudget](cash-flow-forecast-intro.md).
 - Du kan finde oplysninger om, hvordan du importerer eksterne data, så de medtages i disponeringsprognosen, i [Brug eksterne data i likviditetsbudgetter](external-data-in-cash-flow.md). 
-- Du kan finde flere oplysninger om, hvordan du bruger en AI-model til en langsigtet likviditetsflow under [Oversigt for likviditetsbudgetter](cash-position.md).
+- Du kan finde flere oplysninger om, hvordan du bruger en AI-model til kortsigtet likviditet, under [Likviditet](cash-position.md).
 - Du kan finde flere oplysninger om at gemme likviditetspositioner og likviditetsbudgetter som snapshots og til at sammenligne et snapshot med faktiske oplysninger i [Snapshots-oversigten](payment-snapshots.md).
 
 ### <a name="using-budget-proposal"></a>Bruge budgetforslag
 
 Oplysninger om, hvordan du kan fremskynde oprettelsen af et budget, finder du i [Budgetforslag](budget-proposals.md). 
-
-Demodata til budgetforslag:
 
 ## <a name="feedback-and-support"></a>Feedback og support
 

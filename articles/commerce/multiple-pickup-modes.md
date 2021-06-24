@@ -2,7 +2,7 @@
 title: Aktivere flere leveringsmåder for afhentning af kundeordrer
 description: I dette emne forklares den funktionalitet i Microsoft Dynamics 365 Commerce, der giver dig mulighed for at oprette kundeordrer til afhentning i en butik.
 author: hhainesms
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020645"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216761"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktivere flere leveringsmåder for afhentning af kundeordrer
 
@@ -38,7 +38,7 @@ Når du har slået funktionen **Understøttelse af flere leveringsmåder for afh
 
 Felterne **Leveringsmåde ved afhentning** og **Elektronisk leveringsmåde**, og indstillingen **Vis kun fragtmandstilstande for indstillingen forsendelsesordrer** er flyttet til dette oversigtspanel.
 
-Før du kan konfigurere flere leveringsmåder for afhentning, skal du definere leveringsmåderne. På siden **Leveringsmåder** i Commerce Headquarters kan du tilføje de leveringsmåder, der skal betragtes som afhentningsmåder. Sørg for, at al konfiguration er fuldført. Kontroller f.eks., at leveringsmåden er knyttet til de relevante kanaler og varer. Når du er færdig, kan du køre jobbet **Behandling af leveringsmåder** for at oprette relationerne mellem leveringsmåde, kanaler og varer. Når kørslen af jobbet er afsluttet, kan du åbne siden **Distributionsplan** i Commerce Headquarters og køre distributionsjobbet **1120** for at sikre, at de relevante Commerce-kanaldatabaser opdateres med den nye konfiguration af leveringsmåden.
+Før du kan konfigurere flere leveringsmåder for afhentning, skal du definere leveringsmåderne. På siden **Leveringsmåder** i Commerce Headquarters kan du tilføje de leveringsmåder, der skal betragtes som afhentningsmåder. Sørg for, at al konfiguration er fuldført. Hvis du f.eks. tilbyder afhentning ved fortovskant som leveringsmulighed for dine onlinekunder i bestemte butikker, skal du oprette en ny leveringsmåde til dette formål. Du kan oprette denne leveringsmåde ved hjælp af "afhentning ved fortovskant" som beskrevet. Du vil derefter sikre, at leveringsmåden "afhentning ved fortovskant" knyttes til alle de handelskanaler, der kan tilbyde den, herunder onlinebutikker, der kan tilbyde denne mulighed, og de individuelle butikskanaler, der vil tilbyde denne opfyldelsesmetode. Leveringsmåder skal også knyttes til produkterne. Hvis der i dette eksempel er bestemte produkter, der ikke kan opfyldes ved hjælp af "afhentning ved fortovskant", skal du sikre dig, at disse varer udelades. Når du er færdig med at tilføje nye leveringsmåder, kan du køre jobbet **Behandling af leveringsmåder** for at oprette relationerne mellem leveringsmåde, kanaler og varer. Når jobbet er fuldført, kan du åbne siden **Distributionsplan** i Commerce Headquarters og køre distributionsjobbet **1120** for at sikre, at de relevante Commerce-kanaldatabaser opdateres med den nye konfiguration af leveringsmåden.
 
 ![Eksempel på en leveringskonfiguration for afhentning ved fortovskanten](media/pickupmodes.png)
 
