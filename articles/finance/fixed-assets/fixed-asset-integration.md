@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e6be2aeb263c339f4e733b98ea4e01194973a9f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826828"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189778"
 ---
 # <a name="fixed-assets-integration"></a>Integration af anlægsaktiver
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826828"
 
 Anlægsaktiver kan integreres med Finans, Lagerstyring, Debitor, Kreditor og Debitor. Du kan også oprette anlægsaktiver, der kan integreres med indkøbsordrer.
 
-<a name="general-ledger"></a>Finans
---------------
+## <a name="general-ledger"></a>Finans
 
 I Finans opsummeres værdien af alle anlægsaktiver normalt på flere hovedkonti, der skal bruges ved regnskabsaflæggelse. Du kan imidlertid oprette mange poster til anlægsaktivet på siden **Anlægsaktiver**. Disse poster kan indeholde oplysninger, f.eks. anskaffelsespris, afskrivning og værdiansættelse. Hver gang du bogfører en posteringer for et anlægsaktiv, opdateres de relevante hovedkonti. Anlægsaktivernes hovedkonti viser altid den opdaterede værdi af anlægsaktiverne.
 

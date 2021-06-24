@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bca6a02e07a88bf2910f37c82602e9d105c6f9f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3869ec88951732a7f12a6c4ac37371de54bb20ec
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809913"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189620"
 ---
 # <a name="accounts-payable-in-the-public-sector-overview"></a>Oversigt over Kreditor i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5809913"
 
 I denne artikel introduceres du til den offentlige sektors funktioner for Kreditor, som er integreret i Dynamics 365 Finance. Disse funktioner omfatter IO-koder, bogføringsdefinitioner, engangskreditorfakturering, 1099-skatteformularer, kasserabatter, kreditorcertificeringstyper, aktivitetsoversigt for Projektregnskab, elektroniske betalinger, forsider og signatursider til rapporter, IO-linjebeløb og kladdesider i kreditorfakturaer. 
 
-<a name="what-are-the-prerequisites-for-setting-up-accounts-payable-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Kreditor i den offentlige sektor?
---------------------------------------------------------------------------------
+## <a name="what-are-the-prerequisites-for-setting-up-accounts-payable-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Kreditor i den offentlige sektor?
 
 Før du begynder at justere indstillingerne og angive dine data, skal du udføre følgende opgaver:
 

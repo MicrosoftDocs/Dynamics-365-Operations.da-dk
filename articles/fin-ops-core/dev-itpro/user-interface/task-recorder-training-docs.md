@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744157"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188069"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
 
@@ -31,8 +31,7 @@ Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du o
 > [!IMPORTANT]
 > Du kan registrere dine egne opgaveguider til Dynamics 365 Human Resources, men du kan ikke gemme dem til et Forretningsmodeldesigner-bibliotek (BPM) eller åbne dem fra Hjælp-ruden på nuværende tidspunkt. Du kan gemme dem lokalt eller på en netværksplacering og derefter åbne og afspille dem igen ved hjælp af Arbejdsrutineoptager. 
 
-<a name="learn-about-task-recorder"></a>Få mere at vide om Arbejdsrutineoptager
--------------------------
+## <a name="learn-about-task-recorder"></a>Få mere at vide om Arbejdsrutineoptager
 
 Arbejdsrutineoptager er et værktøj, du kan bruge til at registrere de handlinger, du udfører i produktets brugergrænseflade. Når du bruger Arbejdsrutineoptager, registreres alle de hændelser, du udfører på brugergrænsefladen, på serveren – herunder tilføjelse af værdier, ændring af indstillinger og fjernelse af data. De trin, du optager, bliver samlet kaldes en *opgaveregistrering*. Opgaveregistreringer kan bruges på mange måder:
 
@@ -111,8 +110,7 @@ Du kan hente og redigere Microsofts opgaveregistreringer for at bruge dem til di
 
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Hjælp-system](../../fin-ops/get-started/help-overview.md)
 

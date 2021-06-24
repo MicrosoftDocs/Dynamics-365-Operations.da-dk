@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 154c3d70b61869795edc25514e98a28389eeb244
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052235"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193425"
 ---
 # <a name="benefits-management-workspace"></a>Arbejdsområde for personalegodeadministration
 
@@ -31,7 +31,7 @@ ms.locfileid: "6052235"
 Dette emne beskriver arbejdsområdet **Frynsegodeadministration** i Dynamics 365 Human Resources.
 
 > [!NOTE]
-> Hvis du vil have vist arbejdsområdet **Frynsegodeadministration**, skal du først aktivere funktionen **(Forhåndsversion) arbejdsområdet Frynsegodeadministration** i funktionsstyring. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](../hr-admin-manage-features.md).<br><br>![Aktivere arbejdsområdet Frynsegodeadministration](./media/hr-benefits-management-workspace-enable.png)
+> Hvis du vil have vist arbejdsområdet **Frynsegodeadministration**, skal du først aktivere funktionen **(Forhåndsversion) arbejdsområdet Frynsegodeadministration** i funktionsstyring. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br><br>![Aktivere arbejdsområdet Frynsegodeadministration](./media/hr-benefits-management-workspace-enable.png)
 
 Arbejdsområdet **Frynsegodeadministration** giver dig et hurtigt overblik over elementer til frynsegoder, der kræver din opmærksomhed. På denne side kan du se:
 

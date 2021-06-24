@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e47e3001205bd51f42b3c2270a56d71df9c4dd88
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 34d61f21b7db2dcc0a44e141e789a4a316fc2771
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816831"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188331"
 ---
 # <a name="settlement-priority-in-the-public-sector"></a>Udligningsprioritet i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5816831"
 
 I Dynamics 365 Finance kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning.
 
-<a name="how-to-set-the-general-ledger-parameters-and-accounts-receivable-parameters-for-settlement-priority"></a>Sådan indstilles parametrene Finans og Debitor for udligningsprioritet
----------------------------------------------------------------------------------------------------
+## <a name="how-to-set-the-general-ledger-parameters-and-accounts-receivable-parameters-for-settlement-priority"></a>Sådan indstilles parametrene Finans og Debitor for udligningsprioritet
 
 Hvis du vil bruge faktureringsklassifikationer til at kontrollere udligningsprioriteter, skal du angive både parameteren moms i appen Finans og udligningsparametre i appen Debitor. 
 

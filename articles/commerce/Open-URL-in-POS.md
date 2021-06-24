@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 252b24919e4c22233ee8fe7e94c9bc6bbf60dacd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 43f28d9b7acb05a83544b04f6786dfe91f2d9f18
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796456"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193197"
 ---
-# <a name="open-url-in-pos"></a>Åbn URL-adresse i POS
+# <a name="open-url-in-pos"></a>Åbne URL-adresse i POS
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan konfigurere en knap i Retail POS til at åbne en URL-adresse. Denne funktion kræver ikke tilpasning af kode og kan konfigureres af en person, der ikke har rollen som udvikler. 
+I dette emne beskrives, hvordan du kan konfigurere en knap i Dynamics 365 Commerce POS til at åbne en URL-adresse. Denne funktion kræver ikke tilpasning af kode og kan konfigureres af en person, der ikke har rollen som udvikler. 
 
 Denne funktion gør det muligt ved hjælp af knapmatrixdesigneren at konfigurere en knap i POS til at åbne en URL-adresse. Dette understøttes i øjeblikket i følgende konfigurationer:
 
@@ -46,15 +46,15 @@ Denne konfiguration definerer, om URL-adressen skal åbnes i et nyt vindue eller
 
 Med denne funktion kan du også indstille ikke-web-URL-adresser til at åbne en oprindelig app. Du kan for eksempel angive URL-protokoller som MailTo, SIP, IM eller MSTEAMS, som derefter kan håndteres af de respektive oprindelige apps på værtsenheden. Du kan aktivere denne ved at konfigurere URL-adressen med indstillingen **Åbn i nyt vindue** valgt.
 
-- For Windows-computere kan du i [Eksportere eller importere standardprogramtilknytninger](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) finde oplysninger om, hvordan du indstiller standardprotokoltilknytninger, hvis du konfigurerer computeren ved hjælp af DISM (Deployment Image Servicing and Management).
-- Hvis du bruger MDM, f.eks. Intune, til at administrere Windows-computere, skal du se [Politik CSP - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults).
-- Hvis du er udvikler og bygger et brugerdefineret websted, skal du se [Start standardappen for en URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app).
+- For Windows-computere kan du i [Eksportere eller importere standardprogramtilknytninger](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) finde oplysninger om, hvordan du indstiller standardprotokoltilknytninger, hvis du konfigurerer computeren ved hjælp af DISM (Deployment Image Servicing and Management).
+- Hvis du bruger MDM, f.eks. Intune, til at administrere Windows-computere, skal du se [Politik CSP - ApplicationDefaults](/windows/client-management/mdm/policy-csp-applicationdefaults).
+- Hvis du er udvikler og bygger et brugerdefineret websted, skal du se [Start standardappen for en URI](/windows/uwp/launch-resume/launch-default-app).
 
 ## <a name="open-a-native-app-seamlessly"></a>Åbne en oprindelig app problemfrit
 
 I Windows, iOS og Android er det også muligt at åbne apps mere problemfrit ved hjælp af app-protokoltilknytning. Hvis din app ikke allerede er konfigureret til at håndtere åbning fra en webbrowser, skal du muligvis bede en udvikler om at konfigurere dette.
 
-- For Windows, se [Aktivere apps til websteder ved hjælp af app-URI-handlere](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
+- For Windows, se [Aktivere apps til websteder ved hjælp af app-URI-handlere](/windows/uwp/launch-resume/web-to-app-linking).
 - For IOS, se [Universal Links til udviklere](https://developer.apple.com/ios/universal-links/).
 - For Android, se [Håndtering af Android App Links](https://developer.android.com/training/app-links/).
 

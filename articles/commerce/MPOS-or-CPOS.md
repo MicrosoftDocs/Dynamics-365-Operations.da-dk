@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 84ee7c82fa6aaa819798f4bc052b12b06a51c025
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f19506d66aef22099dae9396fd345c293bf559b7
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796504"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193065"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Vælge mellem Modern POS (MPOS) og Cloud POS
 
@@ -57,7 +57,7 @@ Selvom MPOS og CPOS stort set er ens, er der nogle vigtige forskelle, som du ska
 MPOS på en Windows-, iOS- eller Android-enhed er et program, der pakkes, installeres og serviceres på enheden.
 
 - **Windows** – MPOS for Windows-programmet indeholder al programkode og det integrerede Commerce Runtime (CRT). 
-- **iOS/Android** – På disse platforme fungerer programmet som vært for CPOS-programkoden. Med andre ord kommer programkoden fra CPOS-serveren på Microsoft Azure eller Commerce Scale Unit. Du kan finde flere oplysninger i [Oversigt over Commerce Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – På disse platforme fungerer programmet som vært for CPOS-programkoden. Med andre ord kommer programkoden fra CPOS-serveren på Microsoft Azure eller Commerce Scale Unit. Du kan finde flere oplysninger i [Oversigt over Commerce Scale Unit](dev-itpro/retail-store-system-begin.md).
 
 #### <a name="cpos"></a>CPOS
 
@@ -79,11 +79,11 @@ Commerce Scale Unit er en komponent, der er vært for CRT. CRT indeholder al for
 
 #### <a name="offline-mode"></a>Offlinetilstand
 
-MPOS til Windows understøtter offlinetilstand. I offlinetilstand kan POS fortsætte med at behandle salg, selvom forbindelsen til Commerce Scale Unit bliver afbrudt. Det kan derefter synkroniseres med kanaldatabasen, når forbindelsen er genoprettet. MPOS bruger sin egen integrerede forekomst af CRT og bruger midlertidigt sin egen lokale datakilde (offline SQL Server-database). Du kan finde flere oplysninger om offlinefunktionalitet under [POS-offlinefunktionalitet](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
+MPOS til Windows understøtter offlinetilstand. I offlinetilstand kan POS fortsætte med at behandle salg, selvom forbindelsen til Commerce Scale Unit bliver afbrudt. Det kan derefter synkroniseres med kanaldatabasen, når forbindelsen er genoprettet. MPOS bruger sin egen integrerede forekomst af CRT og bruger midlertidigt sin egen lokale datakilde (offline SQL Server-database). Du kan finde flere oplysninger om offlinefunktionalitet under [POS-offlinefunktionalitet](pos-offline-functionality.md).
 
 ### <a name="pos-peripheralhardware-considerations"></a>Overvejelser i forbindelse med eksterne POS-enheder/POS-hardware
 
-Detailhandlere skal også overveje, hvordan POS kan få adgang til enheder og eksterne enheder som printere, pengeskuffer og betalingsterminaler. Kun MPOS for Windows understøtter direkte kommunikation med disse enheder. MPOS for Windows Phone, iOS eller Android og Cloud POS kræver en hardwarestation for at få adgang til disse enheder. Hardwarestationer kan dedikeres til et POS-kasseapparat eller deles af kasseapparaterne i butikken. Du kan finde flere oplysninger om hardwarestationener i [Konfigurere og installere hardwarestation til detail](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
+Detailhandlere skal også overveje, hvordan POS kan få adgang til enheder og eksterne enheder som printere, pengeskuffer og betalingsterminaler. Kun MPOS for Windows understøtter direkte kommunikation med disse enheder. MPOS for Windows Phone, iOS eller Android og Cloud POS kræver en hardwarestation for at få adgang til disse enheder. Hardwarestationer kan dedikeres til et POS-kasseapparat eller deles af kasseapparaterne i butikken. Du kan finde flere oplysninger om hardwarestationener i [Konfigurere og installere hardwarestation til detail](retail-hardware-station-configuration-installation.md).
 
 ## <a name="implementation-considerations"></a>Overvejelser i forbindelse med implementering
 
@@ -100,7 +100,7 @@ Når du planlægger POS-implementeringen i dine butikker, skal du overveje følg
     Disse to indstillinger udelukker ikke gensidigt hinanden. Den mest pålidelige topologi detailhandlere kan implementere en lokal RSSU for at mindske afhængigheden af forbindelse til internettet eller Azure tilgængelighed og de kan også installere POS-kasseapparater, hvor offline-tilstand er aktiveret, hvis der er et problem med den lokale server eller et netværk.
 
 - **Hardwareenheder/eksterne enheder/** – Et vigtigt aspekt ved et Retail POS-system er dets evne til at bruge eksterne POS-enheder som printere, pengeskuffer og betalingsterminaler. Selvom alle de tilgængelige POS-muligheder kan bruge eksterne enheder, er det kun MPOS for Windows der understøtter dem direkte. Alle andre programmer kræver en eller flere hardwarestationer. Selvom denne metode giver fleksibilitet, skal yderligere komponenter installeres, konfigureres og serviceres.
-- **Systemkrav** – Systemkravene til POS-programmet varierer. Sørg for at se de seneste oplysninger, før du foretager dit valg. For eksempel kører CPOS i en browser og understøtter derfor flere operativsystemer. Du kan finde flere oplysninger om systemkrav i [Systemkrav til skyinstallationer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
+- **Systemkrav** – Systemkravene til POS-programmet varierer. Sørg for at se de seneste oplysninger, før du foretager dit valg. For eksempel kører CPOS i en browser og understøtter derfor flere operativsystemer. Du kan finde flere oplysninger om systemkrav i [Systemkrav til skyinstallationer](../fin-ops-core/fin-ops/get-started/system-requirements.md).
 - **Installation og vedligeholdelse** – Kompleksiteten i installations- og vedligeholdelseskrav kan variere, afhængigt af program- og installationsvalg. En skybaseret CPOS-installation kræver f.eks. ikke, at du installerer og opdaterer på hver enhed. Denne metode reducerer derfor kompleksitet og omkostninger meget. Men hvis du installerer MPOS på hvert kasseapparat og aktiverer offlinetilstand og også installerer delte hardwarestationer, øger du antallet af slutpunkter, der skal administreres, meget.
 
 

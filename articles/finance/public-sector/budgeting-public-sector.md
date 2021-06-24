@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2e4d955877b92f598468543e76bb0c0bedb31be
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: be4ef09ef54ff211576887ef72f99d4e23e9edcb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821752"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189165"
 ---
 # <a name="budgeting-in-the-public-sector-overview"></a>Oversigt over budgettering i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5821752"
 
 Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor. Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner.
 
-<a name="what-are-the-prerequisites-to-setting-up-budgeting-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Budgetlægning i den offentlige sektor?
-------------------------------------------------------------------------
+## <a name="what-are-the-prerequisites-to-setting-up-budgeting-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Budgetlægning i den offentlige sektor?
 
 For at kunne bruge budgetstyring skal du konfigurere den grundlæggende budgettering. Med konfigurationen til offentlige institutioner konfigurerer du dette samtidig med, at du konfigurerer grundlæggende budgettering. Du skal også gøre følgende:
 
@@ -49,8 +48,7 @@ Du skal evt. angive følgende budgetteringsfunktioner:
 
 **Bemærk!** Dette gælder også for Finans, Kreditor og Debitor.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Budgettering](../budgeting/budgeting-overview.md)
 

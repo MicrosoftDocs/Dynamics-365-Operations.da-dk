@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2235545760899c0d945f08b5419154dfdbe4dffc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1137ee7938b378e5212e355580d005cd49b31dbb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815758"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189039"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
@@ -149,8 +149,7 @@ Regler for omkostningsfordeling kan konfigureres på følgende måde.
 | CC001                                | Samlet         | **HR-tjenester**        |
 | CC002                                | Samlet         | **Finansielle tjenester** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan omkostninger flyder mellem bærere 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan omkostninger flyder mellem bærere 
 
 Hvis du vil vide, hvordan omkostninger flyder mellem bærerne i organisationen, kan du oprette omkostningselementer af typen **Sekundær** for hver bærer. Disse omkostningselementer kan derefter bruges til at overføre saldi mellem bærerne under beregningen af faste omkostninger.
 

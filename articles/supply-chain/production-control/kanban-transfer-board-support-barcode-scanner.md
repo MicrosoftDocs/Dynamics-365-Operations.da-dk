@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7073fb5d77e2d11569e86b92433864371f0e1d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c48c4737c260004ea44109cfb2a0478a3e8653cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825861"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190058"
 ---
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-området for overførsel understøtter stregkodescannere
 
@@ -29,8 +29,7 @@ ms.locfileid: "5825861"
 
 Kanban-områdetet understøtter scannerinput fra en widget stregkodescanner til at vælge, starte, udfylde og tømme et kanban-job.
 
-<a name="registration-modes"></a>Registreringstilstande
-------------------
+## <a name="registration-modes"></a>Registreringstilstande
 
 På oversigtspanelet **Scanner registrering** kan du vælge den registreringstilstand, der styrer handlingen, når du scanner et kanban-kortnummer eller manuelt skriver tallet i feltet med kanban-kortet.
 
@@ -42,8 +41,7 @@ På oversigtspanelet **Scanner registrering** kan du vælge den registreringstil
 | Vælg                | Registrerer et kanban-kortnummer og vælger automatisk det job, der refereres til på kanban-listen. |
 
  
-<a name="registration-mode-select"></a>Valg af registreringstilstand
-------------------------
+## <a name="registration-mode-select"></a>Valg af registreringstilstand
 
 Når du bruger en stregkodelæser til at vælge et job, ændres visningstilstanden for kanban-området. I denne tilstand gælder følgende betingelser:
 

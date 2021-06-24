@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d09b6f693f3396da181a0f47051b7c961aa55e03
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909150"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188239"
 ---
 # <a name="create-purchase-orders"></a>Opret indkøbsordrer
 
@@ -80,8 +80,7 @@ IO'er kan konfigureres til at kræve, at budgetmidler fordeles på ordren, før 
 
 Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du kræve yderligere oplysninger om produkter eller ydelser, eller du skal muligvis have tilladelse til forbruget. Der er flere måder at holde en ordre tilbage. For eksempel kan du vente med at bekræfte ordren. Hvis en arbejdsgang til ændringsstyring anvendes, skal du ikke sende ordren til godkendelse. Hvis du må blokere alle ordrer for en bestemt kreditor, kan du også markere kreditoren som **På hold**, for at der kan udføres behandling på kreditormasteren. Der findes også tilfælde, der kan forhindre, at ordren behandles. Behandling kan for eksempel være forhindret, hvis kreditmaksimum er overskredet, eller hvis de krævede budgetmidler ikke er tilgængelige.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over indkøbsordrer](purchase-order-overview.md)
 

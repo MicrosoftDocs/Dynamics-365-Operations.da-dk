@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9a4897f34d016da8dd03d3108069e8aaa1369f7
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 98331fa4dcafb87789e7ea80f28a16463d7f2e3e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959963"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188039"
 ---
 # <a name="budget-control-overview"></a>Budgetstyringsoversigt
 
@@ -28,8 +28,7 @@ ms.locfileid: "5959963"
 
 Denne artikel introducerer budgetstyring og oplysninger for at hjælpe dig med at konfigurere budgetstyring, så du kan administrere finansielle midler.
 
-<a name="overview"></a>Overblik
---------
+## <a name="overview"></a>Overblik
 
 Budgetstyring understøtter administration af en organisations økonomiske ressourcer via kontoplanen, arbejdsgange, brugergrupper, kildedokumenter og kladder, konfigurerbar beregning af budgetmidler, budgetcyklusser og tærskler. Med kontrol på plads kan en organisation planlægge, måle, styre og forudse sine finansielle ressourcer i hele regnskabsåret. 
 

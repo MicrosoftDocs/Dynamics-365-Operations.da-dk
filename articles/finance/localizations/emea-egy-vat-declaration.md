@@ -2,7 +2,7 @@
 title: Momsopgørelse for Egypten
 description: Dette emne forklarer, hvordan du konfigurerer og genererer momsindberetningsformular til Egypten.
 author: sndray
-ms.date: 03/10/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: bd48ee96a26c59183981fae879e3659711e70ce3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021950"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186608"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Momsopgørelse for Egypten (EG-00002)
 
@@ -85,6 +85,7 @@ Følgende opslagskonfigurationer bruges til at klassificere transaktionerne i ra
 - **VATRateTypeLookup** > Kolonne B: Momstype
 - **VATRateTypeLookup** > Kolonne C: Tabelvaretype
 - **PurchaseOperationTypeLookup** > Kolonne A: dokumenttype
+- **CustomerTypeLookup** > Kolonne A: dokumenttype
 - **SalesOperationTypeLookup** > Kolonne N: Operationstype
 - **SalesItemTypeLookup** > Kolonne O: Varetype
 
@@ -98,6 +99,8 @@ Gennemfør følgende trin for at konfigurere de forskellige opslag, der bruges t
 6. Gentag trin 3-5 for alle tilgængelige opslag.
 7. Vælg **Tilføj** for at medtage den sidste postlinje, og vælg **Ikke relevant** i kolonnen **Opslagsresultat**. 
 8. Vælg **Ikke tom** i resten af kolonnerne. 
+9. I feltet **Tilstand** skal du vælge **Fuldført**.
+10. Vælg **Gem**, og luk derefter siden **Programspecifikke parametre**.
 
 > [!NOTE]
 > Når du tilføjer den sidste post, **Ikke relevant**, definerer du følgende regel: Når momsgruppen, varemomsgruppe, momskode og navn, der er overskredet som et krav, ikke opfylder nogen af de tidligere regler, indgår transaktionerne ikke i momsbogen. Selvom denne regel ikke bruges, når rapporten genereres, hjælper reglen med at undgå fejl ved generering af rapporter, når der mangler en regelkonfiguration.
@@ -138,7 +141,7 @@ Følgende tabeller repræsenterer et eksempel på en foreslået konfiguration ti
 | Ydelser       | 7    | VAT_SERV                | *Ikke tom* | SaleExempt            |
 | Ydelser       | 8    | VAT_SERV                | *Ikke tom* | SalesExemptCreditNote |
 | Reguleringer    | 9    | *Tom*                 | VAT_ADJ     | Sales                 |
-| Reguleringer    | 10   | *Tom*                 | VAT_ADJ     | Indkøb              |
+| Reguleringer    | 10   | *Tom*                 | VAT_ADJ     | SalesCreditNote       |
 | Ikke anvendelig | 11   | *Ikke tom*             | *Ikke tom* | *Ikke tom*           |
 
 **PurchaseItemTypeLookup**
@@ -148,16 +151,14 @@ Følgende tabeller repræsenterer et eksempel på en foreslået konfiguration ti
 | Varer                  | 1    | VAT_GOODS               | *Ikke tom* | Indkøb                 |
 | Varer                  | 2    | VAT_GOODS               | *Ikke tom* | PurchaseCreditNote       |
 | Ydelser               | 3    | VAT_SERV                | *Ikke tom* | Indkøb                 |
-| Ydelser               | 4    | VAT_SERV                | *Ikke tom*  | PurchaseCreditNote       |
+| Ydelser               | 4    | VAT_SERV                | *Ikke tom* | PurchaseCreditNote       |
 | Maskine og udstyr  | 5    | VAT_M og E                 | *Ikke tom* | Indkøb                 |
 | Maskine og udstyr  | 6    | VAT_M og E                 | *Ikke tom* | PurchaseCreditNote       |
 | Maskine til dele         | 7    | VAT_PARTS               | *Ikke tom* | Indkøb                 |
 | Maskine til dele         | 8    | VAT_PARTS               | *Ikke tom* | PurchaseCreditNote       |
 | Fritagelser             | 9    | VAT_EXE                 | *Ikke bank*  | PurchaseExempt           |
 | Fritagelser             | 10   | VAT_EXE                 | *Ikke tom* | PurchaseExemptCreditNote |
-| Ikke anvendelig         | 11   | *Tom*                 | VAT_ADJ     | *Ikke tom*              |
-| Ikke anvendelig         | 12   | *Ikke tom*             | *Ikke tom* | *Ikke tom*              |
-| Ikke anvendelig         | 13   | *Tom*                 | *Ikke tom* | *Ikke tom*              |
+| Ikke anvendelig         | 11   | *Ikke tom*             | *Ikke tom* | *Ikke tom*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -174,6 +175,17 @@ Følgende tabeller repræsenterer et eksempel på en foreslået konfiguration ti
 | Reguleringer    | 9    | *Tom*          | VAT_ADJ     | PurchaseCreditNote       |
 | Reguleringer    | 10   | *Tom*          | VAT_ADJ     | Indkøb                 |
 | Ikke anvendelig | 11   | *Ikke tom*      | *Ikke tom* | *Ikke tom*              |
+
+**CustomerTypeLookup**
+
+|    Opslagsresultat    | Type | Momsgruppe |
+|---------------------|------|-----------------|
+| Organisation        |  1   | Lokal moms       |
+| Organisation        |  2   | VAT_EXPORT      |
+| Organisation        |  3   | VAT_EXE         |
+| Slutbruger      |  4   | VAT_FINALC      |
+| Offentlig organisation |  5   | VAT_PUBLIO      |
+| Ikke relevant      |  6   | *Ikke tom*     |
 
 **VATRateTypeLookup**
 

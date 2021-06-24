@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80190419176848f10d9a3908350d57ddaadfd8c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d4e901871267d4f11d9afefc873708663dbabd6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822173"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190279"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanlægningsskabeloner til Excel
 
@@ -66,8 +66,7 @@ Peg med markøren på den ønskede placering i Excel-filen. Klik på **Tilføj e
 
 ## <a name="select-add-valuemediabpt7png"></a>[![Vælg Tilføj Værdi](./media/bpt7.png)](./media/bpt7.png)
 
-<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Tilføje en beregnet kolonne i skabelontabel til budgetplandokument
---------------------------------------------------------------
+## <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Tilføje en beregnet kolonne i skabelontabel til budgetplandokument
 
 Derefter føjes beregnede kolonner til den genererede dokumentskabelon til budgetplanen. En **Anmodet i alt**-kolonne, som opsummerer kolonner med anmodningen Første kvartal til anmodningen Fjerde kvartal, og en **Regulering**-kolonne, der genberegner **Anmodet i alt**-kolonnen med en foruddefineret faktor.
 

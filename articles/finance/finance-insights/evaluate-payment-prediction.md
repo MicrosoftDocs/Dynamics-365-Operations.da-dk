@@ -2,7 +2,7 @@
 title: Evaluer den indledende forudsigelsesmodel for debitorbetalinger (prøveversion)
 description: I dette emne beskrives de trin, du kan tage for at forstå forudsigelsesmodellen for debitorbetaling og evaluerer effektiviteten.
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897906"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186732"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluer den indledende forudsigelsesmodel for debitorbetalinger (prøveversion)
 
@@ -95,9 +95,5 @@ Når du har forstået resultatet af din første model bedre, kan det være en go
 ## <a name="for-more-information"></a>Hvis du vil have flere oplysninger
 
 Du kan finde flere oplysninger om, hvordan du evaluerer forudsigelsesmodeller, [Resultater af maskinel indlæringsmodeller](/confusion-matrix.md)
-
-#### <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

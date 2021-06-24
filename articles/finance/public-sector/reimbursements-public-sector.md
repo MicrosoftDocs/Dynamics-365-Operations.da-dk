@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d825d944eaed98e916566954d96333f3c90a1c93
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b78106097fe803bccac6bccab6ef9ec35a66dbd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816837"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188334"
 ---
 # <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5816837"
 
 I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor. 
 
-<a name="what-happens-if-i-create-a-separate-reimbursement-transaction-for-each-billing-classification"></a>Hvad sker der, hvis jeg opretter en separat refusionspostering for hver faktureringsklassifikation?
-----------------------------------------------------------------------------------------------
+## <a name="what-happens-if-i-create-a-separate-reimbursement-transaction-for-each-billing-classification"></a>Hvad sker der, hvis jeg opretter en separat refusionspostering for hver faktureringsklassifikation?
 
 Når du opretter en separat refusionspostering for hver faktureringsklassifikation, samles kreditnotaposteringer, der er fordelt til den samme finanskonto, og som har samme faktureringsklassifikation til en enkelt refusionspostering. Der oprettes separate refusionsposteringer for kreditnotaposteringer, der er fordelt til den samme finanskonto, og som har forskellige faktureringsklassifikationer. Lad os f.eks. antage, du behandler refusioner til tre kreditnotaer. Alle tre kreditnotaer er $1000.
 

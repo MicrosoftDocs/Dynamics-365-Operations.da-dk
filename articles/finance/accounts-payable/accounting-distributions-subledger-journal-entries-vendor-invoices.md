@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820978"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189087"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Regnskabsfordelinger og kladdepostering for kreditorfakturaer
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820978"
 
 Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan udgifter, skat eller afgifter redegøres for på en kreditorfaktura. Alle beløb, der skal tages i betragtning, når kreditorfakturaen journaliseres, har en eller flere regnskabsfordelinger. 
 
-<a name="accounting-distributions"></a>Regnskabsfordelinger 
--------------------------
+## <a name="accounting-distributions"></a>Regnskabsfordelinger 
 
 Du kan bruge følgende knapper på siden Kreditorfaktura til at få vist og eventuelt ændre regnskabsfordelingerne for hvert beløb på kreditorfakturaen.
 -   **Distribuer beløb** – vis og ret de regnskabsmæssige fordelinger for en enkelt linje og evt. underordnede linjer, f.eks. skatter eller afgifter. Du kan også få vist og redigere regnskabsfordelinger for den underordnede linje direkte fra siden Momstransaktioner eller siden Gebyrposter.
@@ -227,8 +226,7 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 </table>
 
 
-<a name="distributing-taxes"></a>Fordeling af skatter
-------------------
+## <a name="distributing-taxes"></a>Fordeling af skatter
 
 Regnskabsfordelinger for skat kan ikke oprettes, før der er beregnet skat. Hvis du vil beregne moms, skal du fuldføre en af følgende opgaver på siden Kreditorfaktura:
 -   Få vist fakturatotalen.

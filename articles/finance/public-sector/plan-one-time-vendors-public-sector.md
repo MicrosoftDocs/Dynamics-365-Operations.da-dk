@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 046b6194c105f9d8c91b02c06dcc40e2fc2d8f87
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b71544672fec13872455fd561cef303db2a41af3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823558"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188574"
 ---
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 
@@ -96,8 +96,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 ## <a name="what-do-i-do-next"></a>Hvad skal jeg gøre nu?
 Når du har konfigureret de forudsætninger, skal du læse [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md).
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md)
 

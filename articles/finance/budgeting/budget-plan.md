@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6223cce4a960d3fa3db1f3a17b324201085ea04
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822221"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188015"
 ---
 # <a name="budget-planning"></a>Budgetplanlægning
 
@@ -34,8 +34,7 @@ Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dyn
 - Bruge tildelinger til at justere data i budgetplandokument
 - Redigere data i budgetplandokument i Excel 
 
-<a name="prerequisites"></a>Forudsætninger 
-------------------
+## <a name="prerequisites"></a>Forudsætninger 
 
 I dette selvstudium skal du have adgang til Microsoft Dynamics 365 Finance-miljøet med demodata til Contoso og være klargjort som administrator på forekomsten. Brug ikke privat browsertilstand til denne øvelse – log ud fra en anden konto i browseren, hvis det er nødvendigt, og log på med legitimationsoplysninger for administratoren. Når du logger på, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på". Derved oprettes en vedvarende cookie, som Excel-appen aktuelt skal bruge. Hvis du logger på programmet ved hjælp af en anden webbrowser end IE, bliver du derefter bedt om at logge på i Excel-appen. Når du klikker på "Log på" i Excel-appen, åbnes der et pop op-vindue i IE, og når du logger på, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på". Hvis der ikke ser ud til at ske noget, når du klikker på "Log på" i Excel-appen, skal du rydde cachen med IE-cookies.
 

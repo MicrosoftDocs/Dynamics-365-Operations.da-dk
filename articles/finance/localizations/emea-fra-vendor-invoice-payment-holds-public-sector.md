@@ -15,12 +15,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7586551ea3c2d5887db193c95e03ee2c54ac2fce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9fb4f74a578ae44536c0a460dfb9c5940abb0474
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823644"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188364"
 ---
 # <a name="vendor-invoice-payment-holds-in-the-public-sector-in-france"></a>Betalingsspærring af kreditorfakturaer i den offentlige sektor i Frankrig
 
@@ -28,8 +28,7 @@ ms.locfileid: "5823644"
 
 De almindelige processer, der vedrører betalingsspærring af kreditorfakturaer i Dynamics 365 Finance, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig.
 
-<a name="set-up-rules-for-vendor-invoice-payment-holds"></a>Konfigurere regler for betalingsspærring af kreditorfakturaer
----------------------------------------------
+## <a name="set-up-rules-for-vendor-invoice-payment-holds"></a>Konfigurere regler for betalingsspærring af kreditorfakturaer
 
 Regler for betalingsspærring af kreditorfakturaer er angivet i oversigtspanelet **På hold** på siden **Betalingsbetingelser**. Hver regel har tre dele:
 

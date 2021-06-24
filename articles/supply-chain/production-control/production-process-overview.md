@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814578"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188143"
 ---
 # <a name="production-process-overview"></a>Oversigt over produktionsproces
 
@@ -74,8 +74,7 @@ De følgende trin i produktionens livscyklus kan opstå for alle typer af produk
 12. **Periodens afslutning** – Nogle principper for omkostningsregnskaber, f.eks. periodiske gennemsnit, efterkalkulation ved baglæns træk, FIFO eller LIFO, kræver periodiske aktiviteter for at lukke lageret eller regnskabsperioden. Systemet forsøger normalt at rapportere alt materiale og ressourceforbrug samt korrektioner af lager og spild, før perioderne lukkes. Denne rapportering sker typisk ved hjælp af lagerbevægelseskladder eller reguleringskladder. Målet er at vurdere den økonomiske præstation pr. driftsenhed pr. periode. I nogle tilfælde, når der bruges langvarige produktionsordrer, der spænder over finansielle rapporteringsperioder, bruges produktionskladder bruges til at rapportere produktionens fremskridt og ressourceforbrug i slutningen af perioden.
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Produktionstilbagemelding](production-feedback.md)
 

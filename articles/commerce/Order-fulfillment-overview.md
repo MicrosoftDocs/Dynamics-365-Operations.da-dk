@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 962edb3fd0478a8f0281054abc00c35b732620f6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 88665c70b05d9ecf8ec2641862d870d87604092f
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796408"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193149"
 ---
 # <a name="store-order-fulfillment"></a>Butiksordreopfyldning
 
@@ -33,7 +33,7 @@ Ordreopfyldningsoperationen på POS'et indeholder et enkelt arbejdsområde på P
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Adgang til samlet ordreopfyldning på POS'et
 
-Ordreopfyldning, [Handlings-id 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) kan bruges til at få adgang til arbejdsområdet Butiksordreopfyldning på POS'et.
+Ordreopfyldning, [Handlings-id 928](pos-operations.md) kan bruges til at få adgang til arbejdsområdet Butiksordreopfyldning på POS'et.
 
 Ordreopfyldningsoperationen ikke har sin egen standardrettighed, men i fremtiden kan brugerne bruge rettigheden **Tillad hentning af ordre** til at aktivere operationen fra POS'et.
 
@@ -93,7 +93,7 @@ Når en ordre er blevet accepteret, kan linjer vælges og markeret som **Pluk**.
 
 Pluklister kan udskrives på POS'et, så det er nemmere for arbejdere at udføre plukprocessen. En udskrevet plukliste kan overføres til den arbejder, der udfører plukket, og efterhånden som produkterne plukkes, skal arbejderen manuelt markere dem som plukket på pluklisten.
 
-Pluklisteformat konfigureres i Commerce og føjes til kvitteringsprofilen. Du kan finde flere oplysninger om opsætning af kvitteringsprofiler i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Pluklisteformat konfigureres i Commerce og føjes til kvitteringsprofilen. Du kan finde flere oplysninger om opsætning af kvitteringsprofiler i [Kvitteringsskabeloner og udskrivning](receipt-templates-printing.md).
 
 Hvis der er valgt linjer, og der udskrives en plukliste for disse linjer, opdateres de automatisk med status **Pluk**.
 
@@ -119,7 +119,7 @@ Ordrelinjer kan pakkes på et hvilket som helst tidspunkt, efter at ordrelinjen 
 - **Resultatstatus:** Pakket eller delvist pakket
 - **Resultatstatus for administration:** Leveret eller delvist leveret
 
-Denne handling markerer linjer som pakkede eller delvist pakkede og udskriver en følgeseddel. Du kan udskrive en følgeseddel for at validere de produkter, der er pakket sammen. Følgeseddelformatet konfigureres i Commerce og føjes til kvitteringsprofilen. Du kan finde flere oplysninger om opsætning af kvitteringsprofiler i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Denne handling markerer linjer som pakkede eller delvist pakkede og udskriver en følgeseddel. Du kan udskrive en følgeseddel for at validere de produkter, der er pakket sammen. Følgeseddelformatet konfigureres i Commerce og føjes til kvitteringsprofilen. Du kan finde flere oplysninger om opsætning af kvitteringsprofiler i [Kvitteringsskabeloner og udskrivning](receipt-templates-printing.md).
 
 **Handling: Markér som pakket**
 

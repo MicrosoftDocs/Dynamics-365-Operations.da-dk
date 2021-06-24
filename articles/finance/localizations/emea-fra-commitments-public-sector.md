@@ -15,12 +15,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28276ace4c75ef796f216b0e80a61ed3e39ebf98
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dc5e8a854c8735ac9b5fbb42513c9616fbc71d62
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826086"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188372"
 ---
 # <a name="commitments-in-the-public-sector-in-france"></a>Forpligtelser i den offentlige sektor i Frankrig
 
@@ -70,8 +70,7 @@ Forpligtelser skal lukkes manuelt.
 
 **Vigtigt**! Når du vælger de forpligtelser, som du vil lukke, er det vigtigt, at du ikke vælger de forpligtelser, som du allerede har oprettet for det nye regnskabsår. Lukning af en forpligtelseslinje kan ikke fortrydes. Hvis du lukker en forpligtelseslinje ved en fejltagelse, skal du oprette en ny forpligtelse for at gendanne budgetreservationen. Hvis du vil vide mere om årsafslutningsprocessen, skal du se under [Årsafslutningen i den offentlige sektor](../public-sector/year-end-processing-public-sector.md).
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Regnskab i den offentlige sektor i Frankrig](emea-fra-public-sector-accounting.md)
 

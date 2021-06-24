@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112615"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193560"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -92,7 +92,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Nr. |
 | **Produktområder, der er berørt**         | Italiensk lokalisering |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Udfaset: Fra den 1. oktober 2020 planlægger vi ikke længere at understøtte metoden **Sortlistningsrapport (IT) – Funktionsreference IT-00001**. |
+| **Status**                         | Udfaset: Fra den 1. oktober 2020 har vi planlagt ikke længere at understøtte denne rapport. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Indenlandsk momsrapport – Funktionsreference IT-00003
 
@@ -365,6 +365,16 @@ Funktion til oprettelse af skabeloner for nye registre over skat af overskud. De
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Fjernes fra og med Finance and Operations 8.1 med platformsopdatering 20. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Løn og Human Resources for Rusland
+Det russiske lande-/områdespecifikke modul for medarbejdernes administration, oplysninger om timesedler for medarbejdere, lønregnskab og oprettelse af lønopgørelser. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Løn er ikke medtaget i det globale strategiske fokus i Dynamics 365-porteføljen. Partnere og softwareleverandører har bedst mulighed for at levere lønfunktioner, der overholder angivne standarder i lokale regler og momsopdateringer.|
+| **Erstattet af en anden funktion?**   | Ingen|
+| **Produktområder, der er berørt**         | Administration af russisk Løn og Human Resources |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfaset: Måltidsrammen for funktioner, der skal fjernes, er en fremtidig opdatering af version 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med platformsopdatering 15
 Funktioner, der ikke er blevet fjernet eller forældet i denne version. Platform update 15 er kumulativ og indeholder nye eller ændrede funktioner fra Platform update 13, Platform update 14 og Platform update 15.

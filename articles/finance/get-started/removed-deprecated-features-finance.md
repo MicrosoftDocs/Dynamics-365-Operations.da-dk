@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: e6a391b10ddaef79e68f47afae7d77135a1c333a
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980891"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184119"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -65,7 +65,7 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Erstattet af en anden funktion?**   | Ja |
 | **Produktområder, der er berørt**         | Dynamics 365 Finance, Supply Chain Management og Project Operations-produkter|
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Udfaset: Den 1. april 2022 planlægger vi ikke længere at understøtte Microsoft Dynamics Lifecycle Services-lageret (LCS) som en lagringsindstilling for elektronisk rapportering (ER-konfigurationer). Nye Microsoft ER-konfigurationer udgives udelukkende til download fra Global-lager. Der er adgang til det globale lager fra Dynamics 365-produkterne og RCS. Du kan finde flere oplysninger under [Import af ER-konfigurationer fra RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
+| **Status**                         | Udfaset: Den 1. april 2022 planlægger vi ikke længere at understøtte Microsoft Dynamics Lifecycle Services-lageret (LCS) som en lagringsindstilling for elektronisk rapportering (ER-konfigurationer). Nye Microsoft ER-konfigurationer udgives udelukkende til download fra Global-lager. Der er adgang til det globale lager fra Dynamics 365-produkterne og RCS. Du kan finde flere oplysninger i [Importere ER-konfigurationer fra RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) og [Regulatory Configuration Service – Lifecycle Services-lagerudfasning](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.16 udgaven
 

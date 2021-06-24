@@ -1,6 +1,6 @@
 ---
 title: Fortælling om budgetplan
-description: Dette emne forklarer, hvordan en beskrivelse og/eller en omsætningsoversigt medtages i en budgetplan.
+description: Dette emne forklarer, hvordan en beskrivelse og en omsætningsoversigt medtages i en budgetplan.
 author: v-kiarnd
 ms.date: 05/07/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3503ed832022f64d6e0830eaea54d4c46a420dc9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 810f251670e98b45a610719ed677489e53707a63
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020719"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216700"
 ---
 # <a name="budget-plan-narrative"></a>Fortælling om budgetplan
 
@@ -33,8 +33,9 @@ Det indhold, der føjes til disse to sektioner, kan udskrives separat i en dokum
 ## <a name="setting-up-the-budget-plan-narrative"></a>Konfigurere dokumentationen for budgetplanen
 Gennemfør følgende trin for at aktivere dokumentationsområdet for budgetplanen, og brug den nyeste HTML-editor, der er tilgængelig i produktet.
 1.  Aktivér **Dokumentation for budgetplan** under funktionsstyring. Du kan også aktivere det **Nye HTML-editorkontrolelement** i arbejdsområdet til **funktionsstyring**, så der bruges en mere aktuel editor.
-2.  Vælg en budgetplan i **modulet Budgetplanlægning**, og angiv de nødvendige oplysninger til budgetplanhovedet.
-3.  Udvid sektionen **Dokumentation for budgetplan**, og tilføj beskrivelser eller omsætningsoplysninger, der skal medtages i budgetplanen.
+2.  Vælg en budgetplan i **modulet Budgetplanlægning**. 
+3.  Vælg **Overskrift** for at udvide **Overskriftsvisning** og aktivere adgang til **Fortælling om budgetplan**. Dette er normalt ikke synligt fra **Linjevisning**.
+4.  Udvid sektionen **Dokumentation for budgetplan**, og tilføj beskrivelser eller omsætningsoplysninger, der skal medtages i budgetplanen.
  
-Rettigheden til at ændre budgetplansdokumentationen er den samme som ved redigering af budgetlinjer. Denne tilladelse angives ved hjælp af siden **Budgetplansproces** (**Budget > Opsætning > Budgetplanlægning > Budgetplansproces**). 
+Der kræves ingen yderligere tilladelser for at ændre fortællingen for budgetplanen. 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b03d176791ee476ccddbf519471becafd086b0b7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 07acb7ef5565fa4a63607f6828e46c1fcf8110cc
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826365"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193612"
 ---
 # <a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826365"
 
 Debitorer, der bogfører profiler, styrer, hvordan debitortransaktioner bogføres til Finans.
 
-<a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
--------------------------
+## <a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
 
 Debitorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle debitorer, en gruppe debitorer eller en enkelt debitor. Disse indstillinger bruges, når du opretter salgsordrer, fritekstfakturaer, kontantbetalinger, rykkere og rentenotaer. For nogle transaktioner kan du vælge en posteringsprofil, der er anderledes end, og som prioriteres højere end de posteringsprofiler, der er oprettet for transaktioner på denne side. 
 
@@ -118,7 +117,6 @@ Hvis alle debitorposteringer skal have samme posteringsprofil, skal du kun defin
 </tbody>
 </table>
 
-### 
 
 ### <a name="table-restrictions"></a>**Tabelbegrænsninger**
 

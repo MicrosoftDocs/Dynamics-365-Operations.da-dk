@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceffa7028f4490a88027a2affdc898877cc2db43
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 2fa295c71fb82b4168123970fee6ba71d293e3c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910059"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189662"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbejde med kreditorer ved hjælp af leverandørportalen
 
@@ -92,8 +92,7 @@ I følgende tabel vises et eksempel på ændringerne i status og version, som en
 |                           Du kan sende den nye version af indkøbsordren til kreditorportalen.                            |                                                                                                                                                                    Den nye version registreres på kreditorportalen, og status ændres til <strong>Til eksternt gennemsyn</strong>.                                                                                                                                                                     |
 |                                Kreditoren godkender den nye version af IO'en.                                 |                                                                                                                                                     Statussen ændres til <strong>Bekræftet</strong>. Det sker enten automatisk, eller når du modtager svar fra kreditoren og derefter bekræfter indkøbsordren.                                                                                                                                                     |
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Brugersikkerhed på leverandørportal](configure-security-vendor-portal-users.md)
 

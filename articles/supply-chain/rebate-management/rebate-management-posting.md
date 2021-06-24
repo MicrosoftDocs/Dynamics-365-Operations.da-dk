@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b52a1720077c055d416f04cbbe9ec46cbcf319bc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020405"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216737"
 ---
 # <a name="rebate-management-posting-setup"></a>Opsætning af bogføring af rabatstyring
 
@@ -43,7 +43,7 @@ I følgende tabel beskrives de indstillinger, der er tilgængelige i hovedsektio
 | Betegnelse | Indtast en beskrivelse af profilen. |
 | Modul | Vælg den type rabatter og royalties, som profilen er tilknyttet (*Kunde* eller *Leverandør*). |
 | Type | Vælg profiltypen (*Rabat* eller *Royalty*). |
-| Betalingstype | <p>Dette felt bestemmer formatet for det bogførte rabatoutput.<p><p>Når feltet **Type** er angivet til *Rabat*, er følgende værdier tilgængelige:</p><ul><li>*Ingen* – Der findes ingen standardbogføringstype. Du skal derfor definere typen, når du behandler den.</li><li>*Betal ved hjælp af kreditor* – Når du bogfører rabatten, oprettes der en kreditorfaktura for den remitteringsleverandør, der er konfigureret for rabatkunden.</li><li>*Debitorfradrag* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li><li>*Debitorfradrag på momsfaktura* – Når du bogfører rabatten, oprettes der en fritekstfaktura for rabatkunden.</li><li>*Samhandelsforbrug* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li><li>*Rapportering* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li></ul><p>Når feltet **Type** er angivet til *Royalty*, er følgende værdier tilgængelige:</p><ul><li>*Ingen* – Der findes ingen standardbogføringstype. Du skal derfor definere typen, når du behandler den.</li><li>*Betal ved hjælp af kreditor* – Når du bogfører rabatten, oprettes der en kreditorfaktura for den rabatkreditorkonto, der er oprettet.</li><li>*Rapportering* – Når du bogfører rabatten, oprettes der en kreditorfaktura for den rabatkreditorkonto, der er oprettet.</li></ul><p>Du kan finde flere oplysninger i afsnittet [Betalingstyper](#payment-types) nedenfor. |
+| Betalingstype | <p>Dette felt bestemmer formatet for det bogførte rabatoutput.<p><p>Når feltet **Type** er angivet til *Rabat*, er følgende værdier tilgængelige:</p><ul><li>*Betal ved hjælp af kreditor* – Når du bogfører en debitorrabat, oprettes der en kreditorfaktura for den remitteringsleverandør, der er konfigureret for rabatkunden. Når du bogfører en kreditorrabat, oprettes der en kreditorfaktura for den rabatkreditorkonto.</li><li>*Debitorfradrag* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li><li>*Debitorfradrag på momsfaktura* – Når du bogfører rabatten, oprettes der en fritekstfaktura for rabatkunden.</li><li>*Samhandelsforbrug* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li><li>*Rapportering* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li></ul><p>Når feltet **Type** er angivet til *Royalty*, er følgende værdier tilgængelige:</p><ul><li>*Betal ved hjælp af kreditor* – Når du bogfører rabatten, oprettes der en kreditorfaktura for den rabatkreditorkonto, der er oprettet.</li><li>*Rapportering* – Når du bogfører rabatten, oprettes der en kreditorfaktura for den rabatkreditorkonto, der er oprettet.</li></ul><p>Du kan finde flere oplysninger i afsnittet [Betalingstyper](#payment-types) nedenfor. |
 | Firma | Vælg det firma (juridisk enhed), som hensættelser skal periodiseres til, og hvilke krav der skal betales af det. |
 
 ### <a name="payment-types"></a>Betalingstyper

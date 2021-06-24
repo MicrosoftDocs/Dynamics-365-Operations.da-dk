@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5e08832d39f0428590780d47fd6b686048889cd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ce37a85477d65b9592a32dcbe430d09f9dde62b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835214"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189463"
 ---
 # <a name="set-up-collections"></a>Konfigurere rykkere
 
@@ -40,8 +40,7 @@ I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen Du s
 
 Disse punkter gennemgås mere detaljeret i resten af dette emne. 
 
-<a name="set-up-aging-period-definitions"></a>Konfigurer definitioner af forældelsesperioder
--------------------------------
+## <a name="set-up-aging-period-definitions"></a>Konfigurer definitioner af forældelsesperioder
 
 Konfigurer en definition af forældelsesperioder. En definition af forældelsesperioder definerer de kolonner, der vises på listesiderne **Aldersfordelte saldi**, **Rykkeraktiviteter** og **Rykkersager**. Den definerer også de perioder, der vises på siden **Rykkere**. Hvis der er oprettet en kundepulje, bruges definitionen på forældelsesperioder derfra. Hvis der ikke er oprettet nogen kundepuljer, bruges den standarddefinition af forældelsesperiode, der er angivet på siden **Debitorparametre**. Hvis der ikke er angivet en standarddefinition af forældelsesperiode, bruges den første definition af forældelsesperiode på siden **Definitioner af forældelsesperioder**.
 

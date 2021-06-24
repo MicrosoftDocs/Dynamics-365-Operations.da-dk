@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a18cb26b075a4ed96a15c3e6b49effb4178a7783
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7ab96ce9177d0aa43c2470a2f487945448ea91e0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823555"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189360"
 ---
 # <a name="plan-for-public-sector-functionality"></a>Planlægge funktioner til den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5823555"
 
 I dette emne foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
 
-<a name="what-should-i-do-first"></a>Hvad skal jeg først gøre?
------------------------
+## <a name="what-should-i-do-first"></a>Hvad skal jeg først gøre?
 
 Før du konfigurerer den offentlige sektor og begynder at tilføje dine data, bør du overveje, hvordan du vil bruge denne funktion. Din overvejelse skal identificere de moduler, der skal være indstillet til at bruge funktioner i den offentlige sektor. Den offentlige sektor integreres med følgende: 
 
@@ -66,8 +65,7 @@ Certificeringstype Bekræfter IO-koder Beløb på indkøbsordrelinjer
 
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Startside for offentlig sektor](public-sector-functionality.md)
 

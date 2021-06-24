@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0df9177b63619787dba057e9aa532255e68bde
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86fbc81de8ba59f0782bd9af5b50bfcf45d5621a
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811864"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193039"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fordele tid til job i et jobbundt
 
@@ -80,7 +80,7 @@ Følgende tabel illustrerer formlen til beregning af tildelt tid. Her er formlen
 ## <a name="net-time-allocation-key"></a>Nøgle til nettotidsfordeling
 Følgende tabel illustrerer formlen til beregning af tildelt tid. Her er formlen: Beregnet tid pr. rapportering = Bundttid ÷ Antal job
 
-|                              | 09:00-10:00 (1 time) | 10:00-11:00 (1 time) | 11:00-13:00 (2 timer) | 13:00-15:00 (2 timer) | Tildelt tid |
+| Eksempel                       | 09:00-10:00 (1 time) | 10:00-11:00 (1 time) | 11:00-13:00 (2 timer) | 13:00-15:00 (2 timer) | Tildelt tid |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | Antal job i bundtet | 1                    | 3                    | 2                     | 1                     | Ikke tilgængelig |
 | Job 1                        | 1 ÷ 1 = 1 time       | 1 ÷ 3 = 0,33 time    | Ikke tilgængelig        | Ikke tilgængelig        | 1,33 timer     |

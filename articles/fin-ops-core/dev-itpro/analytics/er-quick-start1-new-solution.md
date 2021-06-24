@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891787"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224028"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Designe en ny ER-løsning til udskrivning af en brugerdefineret rapport
 
@@ -285,7 +285,7 @@ Hvis du vil fortsætte, skal du springe over den næste procedure [Oprette en ny
 
 Status for version 1 af denne konfiguration ændres fra **Kladde** til **Fuldført**. Version 1 kan ikke længere ændres. Denne version indeholder den konfigurerede datamodel og kan bruges som grundlag for andre ER-konfigurationer. Version 2 af denne konfiguration er oprettet og har statussen **Kladde**. Du kan redigere denne version for at justere datamodellen **Spørgeskema**.
 
-![Versioner af den redigerbare ER-konfiguration på siden Konfigurationer](./media/er-quick-start1-model-configuration.png)
+![Versioner af den redigerbare konfiguration på siden Konfigurationer](./media/er-quick-start1-model-configuration.png)
 
 Yderligere oplysninger om versionering for ER-konfigurationer finder du i [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -799,7 +799,7 @@ I følgende illustration vises en oprettet rapport i Excel-format, hvor spørgsm
 
 Status for version 1.1 af denne konfiguration ændres fra **Kladde** til **Fuldført**. Version 1.1 kan ikke længere ændres. Denne version indeholder det konfigurerede format og kan bruges til at udskrive den brugerdefinerede rapport. Version 1.2 af denne konfiguration er oprettet og har statussen **Kladde**. Du kan redigere denne version for at justere formatet for rapporten for **Spørgeskema**.
 
-![Versioner af den redigerbare ER-konfiguration på siden Konfigurationer](./media/er-quick-start1-format-configuration.png)
+![Redigerbar ER-konfiguration på siden Konfigurationer](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Det konfigurerede format er designet af rapporten for **Spørgeskema** og indeholder ingen relationer til de Finance-specifikke artefakter.

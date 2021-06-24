@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980943"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184016"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
 
@@ -289,14 +289,15 @@ I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer o
 | Skift arbejdspulje på arbejde                           | Ja | Ja                          |
 | Annuller arbejde                                        | Ja | Ja                          |
 
-
 ### <a name="production"></a>Produktion
 
-Produktionsscenarier for lokationsstyring understøttes ikke i øjeblikket i arbejdsbelastninger på skalaenheder, som angivet i følgende tabel.
+I følgende tabel vises en oversigt over produktionsscenarier for lokationsstyring, der (ikke) understøttes i øjeblikket i arbejdsbelastninger på skalaenheder.
 
 | Behandling | Hub | WES-arbejdsbyrde på en skalaenhed |
 |---------|-----|------------------------------|
-| <p>Alle de lokationsstyringsprocesser, der er relateret til produktion. Her er nogle eksempler:</p><li>Frigiv til lagersted</li><li>Produktionsbølgebehandling</li><li>Råvarepluk</li><li>Færdigmeldte og færdige varer, læg på lager</li><li>Samprodukt og biprodukt, læg på lager</li><li>Kanban-læg på lager</li><li>Kanban-pluk</li><li>Start produktionsordre</li><li>Produktionsspild</li><li>Sidste produktionspalle</li><li>Registrer materialeforbrug</li><li>Tøm kanban</li></ul> | Ja | Ingen |
+| Færdigmelde og lægge færdigvarer på lager | Ja | Ja |
+| Samprodukt og biprodukt, læg på lager | Ja | Ja |
+| <p>Alle andre lokationsstyringsprocesser, der er relateret til produktion, omfatter:</p><li>Frigiv til lagersted</li><li>Produktionsbølgebehandling</li><li>Råvarepluk</li><li>Kanban-læg på lager</li><li>Kanban-pluk</li><li>Start produktionsordre</li><li>Produktionsspild</li><li>Sidste produktionspalle</li><li>Registrer materialeforbrug</li><li>Tøm kanban</li></ul> | Ja | Ingen |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Bevare skalaenheder for WES
 

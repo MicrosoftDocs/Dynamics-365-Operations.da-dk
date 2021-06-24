@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937880"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216606"
 ---
 # <a name="party-and-global-address-book"></a>Part og globalt adressekartotek
 
@@ -143,16 +143,22 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
 
 ## <a name="setup"></a>Konfiguration
 
-1. Installer den seneste version af (2.2.2.60 eller senere) af [Orkestreringsløsning til dobbeltskrivningsapplikation](https://aka.ms/dual-write-app).
+1. Åbn Customer Engagement-appmiljøet.
 
-2. Installer [Løsninger til dobbeltskrivningspart og globalt adressekartotek](https://aka.ms/dual-write-gab).
+2. Installer den seneste version af (2.2.2.60 eller senere) af [Orkestreringsløsning til dobbeltskrivningsapplikation](https://aka.ms/dual-write-app).
 
-3. Stop følgende tilknytninger, da de ikke kræves længere. Kør i stedet `Contacts V2 (msdyn_contactforparties)`-tilknytningen.
+3. Installer [Løsninger til dobbeltskrivningspart og globalt adressekartotek](https://aka.ms/dual-write-gab).
+
+4. Åbn Finance and Operations-appen. Gå til modulet Dataadministration, og vælg fanen Dobbeltskrivning. Siden med administration af dobbeltskrivning åbnes.
+
+5. Anvend begge løsninger, der er installeret i trin 2 og 3, ved hjælp af funktionen [Anvend løsning](link-your-environment.md).
+
+6. Stop følgende tilknytninger, da de ikke kræves længere. Kør i stedet `Contacts V2 (msdyn_contactforparties)`-tilknytningen.
 
     + CDS Kontakter V2 og kontakter (refererer til kundekontakter)
     + CDS Kontakter V2 og kontakter (refererer til leverandørkontakter)
 
-4. Følgende enhedstilknytninger opdateres for partfunktioner, så den seneste version skal anvendes på disse tilknytninger.
+7. Følgende enhedstilknytninger opdateres for partfunktioner, så den seneste version skal anvendes på disse tilknytninger.
 
     Map | Opdater til denne version | Ændringer
     ---|---|---
@@ -176,7 +182,7 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
 
-5. Før du kører ovenstående tilknytninger, skal du opdatere integrationsnøglerne manuelt som beskrevet i følgende trin. Vælg derefter **Gem**.
+8. Før du kører ovenstående tilknytninger, skal du opdatere integrationsnøglerne manuelt som beskrevet i følgende trin. Vælg derefter **Gem**.
 
     | Map | Nøgler |
     |-----|------|
@@ -185,7 +191,7 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
     | Kontakt for debitor/kreditor | msdyn_contactforpartynumber [Kontakt for partnummer]<br>msdyn_associatedcompanyid.cdm_companycode [Tilknyttet virksomhed (Virksomhedskode)] |
     | Leverandør | msdyn_vendoraccountnumber [Kreditors kontonummer]<br>msdyn_company.cdm_companycode [Virksomhed (Virksomhedskode)]|
 
-6. I Dataverse er tegngrænsen i reglerne for detektion af dubletter øget fra 450 til 700 tegn. Med denne grænse kan du føje en eller flere nøgler til reglerne for detektion af dubletter. Udvid reglen for detektion af dubletter for tabellen **Konti** ved at angive følgende felter.
+9. I Dataverse er tegngrænsen i reglerne for detektion af dubletter øget fra 450 til 700 tegn. Med denne grænse kan du føje en eller flere nøgler til reglerne for detektion af dubletter. Udvid reglen for detektion af dubletter for tabellen **Konti** ved at angive følgende felter.
 
     | Felt | Værdi |
     |-------|-------|
@@ -201,7 +207,7 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
 
     ![Dubletregel for konti](media/duplicate-rule-1.PNG)
 
-7. Udvid reglen for detektion af dubletter for tabellen **Kontakter** ved at angive følgende felter.
+10. Udvid reglen for detektion af dubletter for tabellen **Kontakter** ved at angive følgende felter.
 
     | Felt | Værdi |
     |-------|-------|
@@ -217,9 +223,9 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
 
     ![Dubletregel for kontakter](media/duplicate-rule-2.PNG)
 
-8. Hvis du er en eksisterende bruger af dobbeltskrivning, skal du følge instruktionerne i [Opgrader til model for part og globalt adressekartotek](upgrade-party-gab.md) og opgradere dine data.
+11. Hvis du er en eksisterende bruger af dobbeltskrivning, skal du følge instruktionerne i [Opgrader til model for part og globalt adressekartotek](upgrade-party-gab.md) og opgradere dine data.
 
-9. Kør tilknytninger i følgende rækkefølge. Hvis du får vist en fejl, der viser"Projektvalidering mislykkedes. Manglende destinationsfelt...", skal du åbne tilknytningen og vælge **Opdater tabeller**. Kør derefter tilknytningen.
+12. Kør tilknytninger i følgende rækkefølge. Hvis du får vist en fejl, der viser"Projektvalidering mislykkedes. Manglende destinationsfelt...", skal du åbne tilknytningen og vælge **Opdater tabeller**. Kør derefter tilknytningen.
 
     Finance and Operations-app | Customer Engagement-app  
     ----------------------------|------------------------

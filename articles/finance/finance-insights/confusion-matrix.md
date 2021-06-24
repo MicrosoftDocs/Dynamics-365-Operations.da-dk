@@ -2,7 +2,7 @@
 title: Resultater fra Machine Learning Models (prøveversion)
 description: I dette emne beskrives forvekslingsmatrixer, klassificeringsproblemer og nøjagtighed inden for maskinel indlæringsmodeller (ML). Formålet er at forbedre din forståelse for nøjagtighed i ML-forudsigelsesresultater.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028197"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193534"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultater fra Machine Learning Models (prøveversion)
 
@@ -129,16 +129,12 @@ For at forenkle beregningerne blev eksempelmatricer bygget til at matche de fakt
 
 Yderligere oplysninger om, hvordan denne beregning fungerer illustreres her i en sklearn.metrics-klassifikationsrapport for model 1. De tre tilstande, "Til tiden", "Sent" og "Meget sent" repræsenteres af de rækker, der kaldes henholdsvis 1, 2 og 3. Makrogennemsnittet er blot gennemsnittet af kolonnen "F1-score".
 
-|           | præcision | tilbagekald   | f1-score |
+| &nbsp;    | præcision | tilbagekald   | f1-score |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Som disse resultater viser, har de to modeller næsten identiske præcisionsresultater for makroen F1. I dette og mange andre tilfælde viser F1 præcision en bedre indikator for en models kapacitet. Af hensyn til nøjagtigheden kræver fortolkningen af resultaterne, at du forstår, hvad der er vigtigst at overveje i modellen.
-
-#### <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

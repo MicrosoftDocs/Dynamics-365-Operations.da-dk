@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b773b12b7eb3a8a59627d011f2469a98c5dde58a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d683b0b140592e4c93a68f7f58c7d13475b4c2a5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058914"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189595"
 ---
 # <a name="compensation-plans"></a>Kompensationsplaner
 
@@ -121,8 +121,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 ## <a name="process-events"></a>Proceshændelser
 En proceshændelse beregner lønoplysninger for en bestemt periode for alle medarbejdere, der er tilmeldt en eller flere strukturer for fast eller variabel løn. Du kan køre en proceshændelse gentagne gange for at teste eller opdatere beregnede lønresultater.
 
-<a name="compensation-events"></a>Kompensationshændelser
--------------------
+## <a name="compensation-events"></a>Kompensationshændelser
 
 Hver gang en proceshændelse afvikles, oprettes der en kompensationshændelse.  Kompensationshændelser indeholder resultaterne af kompensationsprocessen for hver medarbejder, der er inkluderet i denne proceshændelse.  Når disse beregninger er korrekte, kan du indlæse kompensationshændelsen for at opdatere lønposterne for de medarbejdere, der er berørt af proceshændelsen.
 

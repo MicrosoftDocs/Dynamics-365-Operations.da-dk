@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920103"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188836"
 ---
 # <a name="transportation-management-engines"></a>Transportstyringsprogrammer
 
@@ -43,8 +43,7 @@ Følgende tabel viser de transportstyringsprogrammer, der er tilgængelige.
 | **Fragtbrevstype**            | Standardiserer fragtfaktura- og fragtbrevslinjerne og bruges til automatisk sammenholdelse af fragtbreve.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Hvilket program skal være konfigureret for at vurdere en forsendelse?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Hvilket program skal være konfigureret for at vurdere en forsendelse?
 
 For at bedømme en forsendelse ved hjælp af et bestemt fragtfirma skal du konfigurere flere transportstyringsprogrammer. **Satsprogram** er påkrævet, men andre transportstyringsprogrammer kan være nødvendige for at understøtte **Satsprogram**. For eksempel kan **Satsprogram** bruges til at hente data fra **Program til kørte kilometer** for at beregne satsen baseret på afstanden mellem kilden og destinationen.
 
@@ -62,8 +61,7 @@ I de fleste tilfælde kan du klikke på knappen **Parametre** i konfigurationsfo
 |  <em>MileageEngineCode</em>  |                       Kørselsprogramkode, der identificerer kørselsprogramposten i databasen.                        |
 | <em>ApportionmentEngine</em> |                        Generisk programkode, der identificerer fordelingsprogrammet i databasen.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan bruges metadata i transportstyringsprogrammer?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan bruges metadata i transportstyringsprogrammer?
 
 Transportstyringsprogrammer, der er baseret på data, som er defineret i Supply Chain Management, kan bruge forskellige dataskemaer. Transportstyringssystemet gør det muligt for forskellige transportstyringsprogrammer at bruge de samme generiske, fysiske databasetabeller. For at sikre korrekt kørselsfortolkning af programdata kan du definere metadata for tabellerne i databasen. Dette reducerer omkostningerne ved at bygge nye transportstyringsprogrammer, fordi der ikke kræves yderligere tabel- og formularstrukturer i Operations.
 

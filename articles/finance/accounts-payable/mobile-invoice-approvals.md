@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 78ab17952801a1d77f321e212bb61e9b45d93216
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897690"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189196"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilfakturagodkendelser
 
@@ -27,8 +27,7 @@ ms.locfileid: "5897690"
 
 Virksomhedsbrugere kan designe mobiloplevelser med mobilfunktioner. I avancerede scenarier kan udviklere også udvide funktionerne, som de ønsker. Den mest effektive måde at lære nogle af de nye begreber til mobilenheder på er ved at gennemgå processen med at designe et par scenarier. Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder. Dette emne kan hjælpe dig med at designe andre variationer af scenarier og kan også anvendes til andre scenarier, der ikke er relateret til kreditorfakturaer.
 
-<a name="prerequisites"></a>Forudsætninger
--------------
+## <a name="prerequisites"></a>Forudsætninger
 
 | Forudsætning                                                                                            | Betegnelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

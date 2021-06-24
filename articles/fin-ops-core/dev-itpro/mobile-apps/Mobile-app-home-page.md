@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 9707a1f8a90a615dbc8f34f4bb1f05d34d8fe7f3
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 469b03151f3113f44d932a2d6f4bf3fcfa059133
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908226"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188404"
 ---
 # <a name="mobile-app-home-page"></a>Mobilapp-startside
 
@@ -27,8 +27,7 @@ ms.locfileid: "5908226"
 
 I dette emne beskrives **Finance and Operations-mobilappen (Dynamics 365)**. Emnet indeholder links til ressourcer, der kan hjælpe dig med implementere appen i din organisation.
 
-<a name="overview"></a>Overblik
---------
+## <a name="overview"></a>Overblik
 
 Med mobilappen kan organisationen gøre sine forretningsprocesser tilgængelige på mobilenheder. Når din IT-administrator har aktiveret arbejdsområdet til mobilenheder for din organisation, kan brugerne logge på appen og straks begynde at køre forretningsprocesser fra deres mobilenheder. Mobilappen indeholder følgende funktioner, der kan hjælpe med at øge produktiviteten:
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2015405f3c7f89ba36f811ca125f3a73bc13c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753258"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223980"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelsprog i elektronisk rapportering
 
@@ -38,13 +38,13 @@ ER udtryk kan indeholde én eller flere af følgende elementer:
 - [Stier](#Paths)
 - [Funktioner](#Functions)
 
-## <a name=""></a><a name="Constants">Konstanter</a>
+## <a name="constants"></a><a name="Constants"></a>Konstanter
 
 Når du designer udtryk, kan du bruge tekst og numeriske konstanter (værdier, der ikke beregnes). Den numeriske konstant `VALUE ("100") + 20` anvender den numeriske konstant **20** og strengkonstanten **"100"** samt returnerer den numeriske værdi **120**.
 
 Elektronisk rapportering (ER) understøtter escape-sekvenser. Derfor kan du angive en udtryksstreng, der skal håndteres anderledes. For eksempel returnerer udtrykket `"Leo Tolstoy ""War and Peace"" Volume 1"` tekststrengen **Leo Tolstoy "Krig og Fred", bind 1**.
 
-## <a name=""></a><a name="Operators">Operatorer</a>
+## <a name="operators"></a><a name="Operators"></a>Operatorer
 
 Følgende tabel viser de aritmetiske operatorer, du kan bruge til at udføre grundlæggende matematiske funktioner som addition, subtraktion, multiplikation og division.
 
@@ -88,9 +88,9 @@ Den rækkefølge, som delene af et sammensat udtryk evalueres i, er vigtig. For 
 
 Hvis et udtryk indeholder flere på hinanden følgende operatorer, der har samme prioritet, evalueres disse operationer fra venstre mod højre. For eksempel vil udtrykket `1 + 6 / 2 \* 3 > 5` returnere **sandt**. Vi anbefaler, at du bruger parenteser til at angive den ønskede rækkefølge af operationer i udtryk, så det bliver nemmere at læse og vedligeholde udtrykkene eksplicit.
 
-## <a name=""></a><a name="References">Referencer</a>
+## <a name="references"></a><a name="References"></a>Referencer
 
-Alle datakilder for den aktuelle ER-komponent, der er tilgængelige under designet af et udtryk, kan bruges som navngivne referencer. Den aktuelle ER-komponent kan enten være en modeltilknytning eller et format. For eksempel indeholder den aktuelle ER-modeltilknytning datakilden **ReportingDate**, der returnerer værdien af datatypen *DateTime*. Denne værdi i det genererende dokument skal formateres korrekt ved at referere til datakilden i udtrykket på følgende måde: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+Alle datakilder for den aktuelle ER-komponent, der er tilgængelige under designet af et udtryk, kan bruges som navngivne referencer. Den aktuelle ER-komponent kan enten være en modeltilknytning eller et format. For eksempel indeholder den aktuelle ER-modeltilknytning datakilden **ReportingDate**, der returnerer værdien af datatypen [*DateTime*](er-formula-supported-data-types-primitive.md#datetime). Denne værdi i det genererende dokument skal formateres korrekt ved at referere til datakilden i udtrykket på følgende måde: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 Alle tegn i navnet på en datakilde, der refereres til, som ikke repræsenterer et bogstav i alfabetet, skal indledes med et enkelt anførselstegn ('). Hvis navnet på en refererende datakilde indeholder mindst ét symbol, der ikke repræsenterer et bogstav i alfabetet, skal navnet stå i anførselstegn. F.eks. kan disse ikke-alfabetiske symboler være tegnsætningstegn eller andre skriftlige symboler. Her er nogle eksempler:
 
@@ -99,7 +99,7 @@ Alle tegn i navnet på en datakilde, der refereres til, som ikke repræsenterer 
 
 Hvis metoderne i datakilder har parametre, bruges følgende syntaks til at kalde disse metoder:
 
-- Hvis metoden **isLanguageRTL** i datakilden **System** har et **EN-US**-parameter af datatypen *Streng* skal denne metode refereres til i et ER-udtryk som `System.isLanguageRTL("EN-US")`.
+- Hvis metoden **isLanguageRTL** i datakilden **System** har en **EN-US**-parameter af datatypen [*Streng*](er-formula-supported-data-types-primitive.md#string) skal denne metode refereres til i et ER-udtryk som `System.isLanguageRTL("EN-US")`.
 - Anførselstegn er ikke påkrævede, når et metodenavn kun indeholder alfanumeriske symboler. Men de er obligatoriske til en metode for en tabel, hvis navnet indeholder kantede parenteser.
 
 Når datakilden **System** føjes til en ER-tilknytning, der henviser til programklassen **Global**, returnerer udtrykket `System.isLanguageRTL("EN-US ")` den *Booleske* værdi **FALSK**. Det ændrede udtryk `System.isLanguageRTL("AR")` returnerer den *Booleske* værdi **SANDT**.
@@ -107,9 +107,9 @@ Når datakilden **System** føjes til en ER-tilknytning, der henviser til progra
 Du kan begrænse den måde, værdier sendes til parametrene på for denne type metode:
 
 - Kun konstanter kan overføres til metoder af denne type. Værdierne af konstanter, der er defineret i designfasen.
-- Kun primitive datatyper (basis) understøttes til parametrene for denne type. De primitive datatyper omfatter *Heltal*, *Reelt tal*, *Boolesk* og *Streng*.
+- Kun [primitive](er-formula-supported-data-types-primitive.md) datatyper (basis) understøttes til parametrene for denne type. De primitive datatyper omfatter *Heltal*, *Reelt tal*, *Boolesk* og *Streng*.
 
-## <a name=""></a><a name="Paths">Stier</a>
+## <a name="paths"></a><a name="Paths"></a>Stier
 
 Når et udtryk refererer til en struktureret datakilde, kan du bruge definitionen af stien til at vælge et bestemt primitivt element i datakilden. Tegnet en prik (.) bruges til at adskille de enkelte elementer i en struktureret datakilde. For eksempel indeholder den aktuelle ER-modeltilknytning datakilden **InvoiceTransactions**, og denne datakilde returnerer en liste med poster. Poststrukturen **InvoiceTransactions** indeholder felterne **AmountDebit** og **AmountCredit**, og begge disse felter returnerer numeriske værdier. Du kan derfor designe følgende udtryk til beregning af det fakturerede beløb: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. Konstruktionen `InvoiceTransactions.AmountDebit` i dette udtryk er den sti, der bruges til at få adgang til feltet **AmountDebit** i datakilden **InvoiceTransactions** for typen *Postliste*.
 
@@ -129,7 +129,7 @@ Den resterende del af den absolutte sti vises også i [ET-formeleditoren](genera
 
 Du kan finde flere oplysninger under [Bruge en relativ sti i databindinger for ER-modeller og -formater](relative-path-data-bindings-er-models-format.md).
 
-## <a name=""></a><a name="Functions">Funktioner</a>
+## <a name="functions"></a><a name="Functions"></a>Funktioner
 
 Indbyggede ER-funktioner kan bruges i ER-udtryk. Alle datakilder i udtrykskonteksten (såsom ER-modeltilknytning eller ER-format) samt konstanter kan bruges som parametre til opkaldsfunktioner i henhold til listen over argumenter for opkaldsfunktioner. Konstanter kan også bruges som parametre til kald af funktioner. For eksempel indeholder den aktuelle ER-modeltilknytning datakilden **InvoiceTransactions**, og denne datakilde returnerer en liste med poster. Poststrukturen **InvoiceTransactions** indeholder felterne **AmountDebit** og **AmountCredit**, og begge disse felter returnerer numeriske værdier. Et udtryk til at beregne det fakturerede beløb kan derfor være udformet således ved at bruge den indbyggede ER-afrundingsfunktion: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 
@@ -173,5 +173,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [Udvide listen over elektroniske rapporteringsfunktioner](general-electronic-reporting-formulas-list-extension.md)
 
+[Understøttede basisdatatyper](er-formula-supported-data-types-primitive.md)
+
+[Understøttede sammensatte datatyper](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

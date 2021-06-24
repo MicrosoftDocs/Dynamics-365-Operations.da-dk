@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899089"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6183990"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder
 
@@ -72,6 +72,7 @@ Følgende opgaver for produktionsudførelse kan i øjeblikket køres på arbejds
 - Rapportér spild
 - Indirekte aktivitet
 - Pause
+- Færdigmeld og læg på lager (kræver, at du også kører arbejdsbyrden for lagerstedsudførelse på skalaenheden. Se også [Færdigmelde og lægge på lager på en skalaenhed](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbejde med arbejdsbelastninger i produktionsudførelse på hubben
 
@@ -108,6 +109,26 @@ Hvis du vil gennemgå historikken for de produktionsjob, der er behandlet på en
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Jobbet Meddelelsesprocessor for produktionshub til skalaenhed
 
 Jobbet _Meddelelsesprocessor for produktionshub til skalaenhed_ behandler data fra hubben til skalaenheden. Dette job startes automatisk, når arbejdsbyrden for produktionsudførelse udrulles. Du kan dog køre den manuelt på et hvilket som helst tidspunkt ved at gå til **Produktionsstyring \> Periodiske opgaver \> BackOffice-styring af arbejdsbyrder \> Meddelelsesprocessor for produktionshub til skalaenhed**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Færdigmelde og lægge på lager på en skalaenhed
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+I den aktuelle version understøttes færdigmeldings- og lagringsoperationer (for færdigvarer, samprodukter og biprodukter) af [arbejdsbyrden for lagerstedsudførelse](cloud-edge-workload-warehousing.md) (ikke arbejdsbyrden for produktionsudførelse). Hvis du vil bruge denne funktion, når den er knyttet til en skalaenhed, skal du derfor gøre følgende:
+
+- Installer både arbejdsbyrden for udførelse af lagersteder og arbejdsbyrden for produktionsudførelse på din skalaenhed.
+- Du kan bruge mobilappen Warehouse Management til at færdigmelde og behandle læg på lager-arbejdet. Grænsefladen til produktionsudførelse understøtter i øjeblikket ikke disse processer.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

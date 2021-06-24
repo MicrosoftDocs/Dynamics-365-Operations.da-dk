@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2053898f13897a72e81e49d359d6562e66a59b5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45ba301b83e16abd73e26540e04ef0643ea40935
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820465"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187956"
 ---
 # <a name="free-text-invoices-in-the-public-sector"></a>Fritekstfakturaer i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5820465"
 
 I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
 
-<a name="do-i-have-to-select-a-billing-classification-for-every-free-text-invoice"></a>Skal jeg vælge en faktureringsklassifikation for hver fritekstfaktura?
--------------------------------------------------------------------------
+## <a name="do-i-have-to-select-a-billing-classification-for-every-free-text-invoice"></a>Skal jeg vælge en faktureringsklassifikation for hver fritekstfaktura?
 
 Ja, når faktureringsklassifikationer er aktiveret, er det nødvendigt at angive en faktureringsklassifikation for hver fritekstfaktura. Faktureringsklassifikationen styrer, hvilke faktureringskoder der kan angives på fakturaen. Den styrer også betalingsvilkår og -betingelser, nummerserier og behandlingen af fakturaen. Du kan få flere oplysninger om faktureringsklassifikationer i [Faktureringsklassifikationer og faktureringskoder i den offentlige sektor](billing-classifications-billing-codes-public-sector.md).
 

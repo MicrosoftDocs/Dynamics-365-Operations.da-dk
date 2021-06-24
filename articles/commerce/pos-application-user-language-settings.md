@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c5087ee04030a76aef774871b88b7970391723c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bdd03dff359e7c2799eff53b0e999580ce8b1c06
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804375"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193097"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Indstillinger for POS-program og brugersprog
 
@@ -57,7 +57,7 @@ POS-brugerens sprogindstilling bestemmer de oversættelser, der bruges i program
 
 POS-brugerens sprogindstilling er angivet under **Alle arbejdere** på siden **Arbejder** under **Retail og Commerce &gt; Sprog**. Den er ikke indstillet under Profil-hovedfanen. Denne indstilling bruges ikke af POS. Hvis brugerens sprog ikke er angivet, eller det er indstillet til et sprog, hvor oversættelser er ikke tilgængelige, vender POS tilbage til butikkens sprog.
 
-|             | Sprog i brugergrænseflade                | Datasprog (produkter, kvitteringsformater, linjevisning osv.) |
+| &nbsp;      | Sprog i brugergrænseflade                | Datasprog (produkter, kvitteringsformater, linjevisning osv.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Regnskab** | Standard                    | Standard                                                       |
 | **Butik**   | Tilsidesætter firma          | Tilsidesætter firma                                             |

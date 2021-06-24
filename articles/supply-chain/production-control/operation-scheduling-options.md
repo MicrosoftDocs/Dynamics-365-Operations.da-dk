@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a16cc42f4850d87f917a290a8d991d39214dec0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5bb94ad0b9a286a4245e8ffdab27f109c7459dff
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817911"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189814"
 ---
 # <a name="operations-scheduling-options"></a>Indstillinger for grovplanlægning
 
@@ -124,8 +124,7 @@ Du kan gemme de aktuelle værdier som standardværdier. Der er to valgmuligheder
 -   Angiv som standard for alle
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Grovplanlægning](operations-scheduling.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df06df63c28ca99bb9cb95e99b3498f70c54d97f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053653"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193718"
 ---
 # <a name="provision-human-resources"></a>Klargør Human Resources
 
@@ -56,7 +56,7 @@ Når du vil bruge LCS til at administrere dine Human Resources-miljøer, skal du
 1. Log på [LCS](https://lcs.dynamics.com/Logon/Index) ved hjælp af den konto, som du brugte til dit abonnement på Human Resources.
 
    > [!NOTE]
-   > For at sikre en vellykket klargøring skal den konto, du bruger til klargøring af Human Resources-miljøet, enten tildeles rollen **Systemadministrator** eller **Systemtilpasser** i det Power Apps-miljø, der er tilknyttet Human Resources-miljøet. Se [Konfigurere brugersikkerhed for ressourcer](https://docs.microsoft.com/power-platform/admin/database-security) for at få flere oplysninger om tildeling af sikkerhedsroller til brugere i Power Platform.
+   > For at sikre en vellykket klargøring skal den konto, du bruger til klargøring af Human Resources-miljøet, enten tildeles rollen **Systemadministrator** eller **Systemtilpasser** i det Power Apps-miljø, der er tilknyttet Human Resources-miljøet. Se [Konfigurere brugersikkerhed for ressourcer](/power-platform/admin/database-security) for at få flere oplysninger om tildeling af sikkerhedsroller til brugere i Power Platform.
 
 2. Markér plustegnet (**+**) for at oprette et projekt.
 

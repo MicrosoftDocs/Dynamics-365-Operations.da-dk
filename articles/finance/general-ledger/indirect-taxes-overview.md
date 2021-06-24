@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8dcb5c9860cb617612dade03b55b8bd4a0983b6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41c64607f5dfbe00bd8a2e7cc80fb4771f11a6d1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826612"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188434"
 ---
 # <a name="sales-tax-overview"></a>Momsoversigt
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826612"
 
 Dette emne indeholder en oversigt over momssystemet. Det forklarer elementerne i moms, og hvordan de fungerer sammen.
 
-<a name="overview"></a>Overblik
---------
+## <a name="overview"></a>Overblik
 
 Momsstrukturen understøtter mange typer af indirekte skatter, som f.eks. moms, moms af varer og ydelser (GST), stykbaseret gebyrer og indeholdt skat. Disse skatter beregnes og dokumenteres under indkøbs- og salgstransaktioner. Med jævne mellemrum skal de rapporteres og betales til skattemyndighederne. 
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48c37e4355bc3448930a7cfa73ce08ac8e439b97
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7b258e111139f52f5ccf3ea3f385a1367576eacd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839409"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188530"
 ---
 # <a name="cost-entries"></a>Omkostningsposter
 
@@ -62,8 +62,7 @@ Siden **Omkostningsposter** gør det muligt at filtrere efter dokument-id og dok
 > [!NOTE]
 > Omkostningsposter er kun tilgængelige for [omkostningsobjekter](cost-object.md) eller frigivne produkter.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Omkostningsobjekter](cost-object.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4c7b9426cc98f62cd7a62b841c0f90c7c57889d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82d94be7a0ce915b0a2b86fb3894435afdd6f37a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821955"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187838"
 ---
 # <a name="audit-policy-violations-and-cases"></a>Overtrædelser af overvågningspolitik og sager
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821955"
 
 I artiklen beskrives det, hvordan revisionssager genereres ud fra overtrædelser af overvågningspolitikregler. Den indeholder også oplysninger om de forskellige metoder for overvågningspolitikkernes brug af datointerval for dokumentvalg.
 
-<a name="how-audit-cases-are-generated"></a>Sådan genereres revisionssager
------------------------------
+## <a name="how-audit-cases-are-generated"></a>Sådan genereres revisionssager
 
 Overvågningspolitikker bruges til at identificere udgiftsrapporter, indkøbsordrer og kreditorfakturaer, der ikke overholder de forretningsregler, som du definerer og konfigurerer som regler for overvågningspolitik. 
 

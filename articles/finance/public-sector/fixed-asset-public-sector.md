@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c73ae3a98bbe66a21a4745c8f5e9cd66a518a10f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14423c3eeb83a88698879a0db4852dc503f33d36
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820474"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189162"
 ---
 # <a name="fixed-assets-in-the-public-sector"></a>Anlægsaktiver i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5820474"
 
 I denne artikel beskrives de funktioner til anlægsaktiver, der er tilgængelige for den offentlige sektor. 
 
-<a name="what-do-i-need-to-know-about-disposing-of-fixed-assets"></a>Værd at vide om salg af anlægsaktiver
--------------------------------------------------------
+## <a name="what-do-i-need-to-know-about-disposing-of-fixed-assets"></a>Værd at vide om salg af anlægsaktiver
 
 Offentlige organisationer kan bruge spild og salgsforslag til at råde over mere end et enkelt anlægsaktiv ad gangen.
 

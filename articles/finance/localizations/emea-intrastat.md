@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db97d05d79a100ebdcfb5b4931b37243b77bd352
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bafbb908531e003d2184409bf5d09ed5848fc474
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814989"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216782"
 ---
 # <a name="intrastat-overview"></a>Intrastat-oversigt
 
@@ -73,7 +73,7 @@ Tabellen nedenfor viser kravene til Intrastat-rapportering.
 </tr>
 <tr class="odd">
 <td>Produktkategorihierarki (salgshierarki, indkøbshierarki)</td>
-<td>Tildel Intrastat-varekoder til kategorinoder på fanen <strong>Varekoder</strong> på siden <strong>Kategorihierarki</strong>. Når du tildeler en varekode til en overordnet kategorinode, er den pågældende kode gældende for alle underordnede kategorinoder. De valgte varekoder bliver tilgængelig i visningen <strong>Valgte</strong>, når du vælger en varekode i de frigivne produktdetaljer og på linjer for salgsordre, indkøbsordre og overførselsordre.</td>
+<td>Tildel Intrastat-varekoder til kategorinoder på fanen <strong>Varekoder</strong> på siden <strong>Kategorihierarki</strong>. Når du tildeler en varekode til en overordnet kategorinode, er den pågældende kode gældende for alle underordnede kategorinoder. De valgte varekoder bliver tilgængelig i visningen <strong>Valgte</strong>, når du vælger en varekode i produktdetaljer og på linjer for salgsordre, indkøbsordre og overførselsordre.</td>
 </tr>
 <tr class="even">
 <td>Frigivne produktdetaljer</td>
@@ -84,6 +84,7 @@ Tabellen nedenfor viser kravene til Intrastat-rapportering.
 <li><strong>Oprindelsesland/-område</strong> – Vælg det standardland/-område, hvor varerne blev helt fremstillet eller produceret.</li>
 <li><strong>Område for oprindelse/destination</strong> – Vælg standardområdet for destinationen for modtagelser og stat/provins for afsendelser.</li>
 <li><strong>Nettovægt i kg</strong></li>
+<li><strong>Udelad</strong> - Aktivér denne parameter for ikke at overføre transaktioner med dette produkt til Intrastat</li>
 </ul></td>
 </tr>
 <tr class="odd">

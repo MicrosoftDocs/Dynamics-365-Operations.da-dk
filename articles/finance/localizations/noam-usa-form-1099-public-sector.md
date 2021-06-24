@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f185b09f42145c8ae019479d6226533505d3d448
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62130d2a0dea113ff54a7bb6d68a445b0fe32d97
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813955"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188972"
 ---
 # <a name="form-1099-in-the-public-sector"></a>1099-blanket i den offentlige sektor
 
@@ -49,8 +49,7 @@ Du kan også bruge siden **Kreditorudligning for 1099** til at angive eller opda
 -   Hvis et enkelt beløb på en side er større end minimumbeløbet, kan det amerikanske skattevæsen kræve, at alle beløb rapporteres, selvom alle andre beløb er mindre end minimumbeløbet.
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over kreditor i den offentlige sektor](../public-sector/accounts-payable-public-sector.md)
 

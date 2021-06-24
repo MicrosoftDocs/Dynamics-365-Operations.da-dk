@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1ad407f1908da4da4981cd23700a848d7470b02
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af5e6eaabaada0a93f63fcc369d67b023f939648
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809904"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189764"
 ---
 # <a name="advanced-ledger-entries-in-the-public-sector"></a>Avancerede finansposter i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5809904"
 
 Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter. For eksempel kan avancerede finansposter bruges til at ompostere udgifter, hvis fakturaer fejlagtigt er blevet bogført til den forkerte konto eller det forkerte projekt.
 
-<a name="how-do-i-set-up-advanced-ledger-entries"></a>Hvordan konfigurerer jeg avancerede finansposter?
-----------------------------------------
+## <a name="how-do-i-set-up-advanced-ledger-entries"></a>Hvordan konfigurerer jeg avancerede finansposter?
 
 Kontroller, at nøglen **Licenskonfiguration** for **Avanceret finanspost** er valgt på siden **Licenskonfiguration**. Avancerede finansposter kræver bogføringsdefinitioner til Finans. Disse bogføringsdefinitioner kan indstilles til at generere flere, afstemte finansposter baseret på finanskontoen, der er angivet på siden **Avancerede finansposter**. Du kan finde flere oplysninger om bogføringsdefinitioner for avancerede finansposter under [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md).
 

@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 190e2b9cc3bb8a3a2b562181c968b4f280800015
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 215d9765b12664b314124a408f2c98eeac441c77
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809898"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193217"
 ---
 # <a name="budget-analysis-in-the-public-sector"></a>Budgetanalyse i den offentlig sektor
 
@@ -65,9 +65,8 @@ Siden **Budgetstyringsdimension** er værktøjet, der skal bruges, når du vil a
 
 Følgende tabel beskriver forskellene mellem disse sider.
 
-|                                                                                                                         |                                                                                             |
-|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Siden Statistik for budgetstyring**                                                                                      | **Siden Budgetanalyse**                                                                    |
+| Siden Statistik for budgetstyring | Budgetanalyse                        |
+|---|---|
 | Viser budgetsaldiene for en budgetcyklus og en budgetmodel for én enkelt økonomisk dimensionsværdi eller budgetgruppe. | Viser de samlede budgetbeløb for flere økonomiske dimensionsværdier på samme tid. |
 | Medtager data fra både bekræftede og ubekræftede behæftelser.                                                         | Medtager kun data fra bekræftede behæftelser.                                             |
 | Medtager kun data fra udgiftskonti.                                                                               | Medtager data fra både indtægts- og udgiftskonti.                                       |

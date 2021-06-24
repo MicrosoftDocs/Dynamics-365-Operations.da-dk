@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672bb37a4d191c4b4f72b234ba98766ffd223f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d1df15462a39c17710c9300425561bba8b69fc7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826123"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188378"
 ---
 # <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
 
@@ -27,8 +27,7 @@ ms.locfileid: "5826123"
 
 Denne artikel indeholder oplysninger om rapportering til EU-listesystemet.
 
-<a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
------------------------
+## <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
 
 En leverandør, der inden for fællesskabet leverer varer eller tjenesteydelser til virksomheder, der er etableret inden for den Europæiske Union (EU), skal indsende en erklæring om fællesskabsleveringer (EU-listesystemet eller ESL). Generelt skal ESL sendes til skattemyndigheder senest den sidste dag i måneden efter den kalenderperiode, der dækker ESL. Leverandøren skal angive sit momsidentifikationsnummer på ESL'en og skal også angive, efter debitor, følgende oplysninger:
 

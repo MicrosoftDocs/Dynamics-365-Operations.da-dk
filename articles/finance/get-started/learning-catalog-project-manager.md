@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fee455fe1e51ac99fe6f38a63b48c7b92d32ac7a
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 01d6d79c482871c9f39898298292b21367c9a48e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897058"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193325"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Undervisningskatalog for projektlederens implementeringsarbejde med Dynamics 365 Finance
 
@@ -88,10 +88,10 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="exams"></a>Eksamener<a name="exams"></a>
 
-| Indhold  | Beskrivende tekst  | Formater   |
-|-------------|-----------------|-------------|
-| [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: bruge almindelige funktioner og implementeringsværktøjer, konfigurere sikkerhed, processer og indstillinger, udføre dataoverførsel og validere og understøtte løsningen. | Eksamen, hvor omkostning varierer alt efter region | |
-| [Eksamen MB-310: Microsoft Dynamics 365 for Finance and Operations, Finans](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: oprette og konfigurere økonomistyring, administrere og anvende almindelige processer, implementere og styre kreditor og debitor samt administrere budgettering og anlægsaktiver. | Eksamen, hvor omkostning varierer alt efter region | |
+| Indhold | Beskrivende tekst | Formater |
+|---|---|---|
+| [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: bruge almindelige funktioner og implementeringsværktøjer, konfigurere sikkerhed, processer og indstillinger, udføre dataoverførsel og validere og understøtte løsningen. | Eksamen, hvor omkostning varierer alt efter region |
+| [Eksamen MB-310: Microsoft Dynamics 365 for Finance and Operations, Finans](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: oprette og konfigurere økonomistyring, administrere og anvende almindelige processer, implementere og styre kreditor og debitor samt administrere budgettering og anlægsaktiver. | Eksamen, hvor omkostning varierer alt efter region |
 | [Microsoft-certificeret: Dynamics 365 for Finance and Operations, tilknyttet funktionel økonomisk konsulent](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft-certificeret: Dynamics 365 for Finance and Operations, funktionelle økonomiske konsulenter samler globale regnskaber og operationer og automatiserer opgaver og arbejdsgange, strømliner af kundeordrer, salg, fakturering og rapportering. | Certificering, hvor omkostning varierer alt efter region |
 
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a88ca9cc8fc8cde6d738dbc4fcf474f1e27e05dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fd69d82536047c06e94ba4a7e860ef54680619a4
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796384"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193125"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Ændring af leveringsmetode i POS
 
@@ -31,7 +31,7 @@ I Dynamics 365 Commerce version 10.0.10 og nyere kan handlingen **Ændring af le
 
 Funktionen Ændring af leveringsmetode giver dig mulighed for at ændre leveringsmåden for en eller flere konfigurerede forsendelsessalgslinjer på POS-transaktionen. I tidligere versioner af Commerce skulle du gå gennem de fulde konfigurationsstrømme **Send alle** eller **Send valgte**, hvis du vil ændre leveringsmåden på en eksisterende linje, der er konfigureret til forsendelse. Denne proces var tidskrævende og kan resultere i utilsigtede ændringer af leveringsoprindelsen eller leveringsdatoerne for linjen. Den nye funktionalitet er en alternativ metode til effektiv opdatering af leveringsmåden på disse salgslinjer.
 
-Du kan finde flere oplysninger om, hvordan du føjer en handling til en knap på din POS-knapmatrix, i [Skærmlayout for POS](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts).
+Du kan finde flere oplysninger om, hvordan du føjer en handling til en knap på din POS-knapmatrix, i [Skærmlayout for POS](pos-screen-layouts.md).
 
 Når denne funktion er konfigureret i POS, og du vælger **Skift leveringsmåde**, vises en listeside, hvor du kan vælge de linjer i transaktionen, som du vil ændre leveringsmåden for. Du kan vælge nogle eller alle linjer eller afslutte uden at foretage nogen ændringer. De salgslinjer, der tidligere er konfigureret til forsendelse, er de eneste linjer på listen, som du kan ændre. Hvis du vil ændre en linje, der er angivet til afhentning eller til aflevering, skal du bruge handlingerne **Send alle** eller **Send valgte**. Hvis du derimod vil ændre en linje, der er angivet som en forsendelse til en afhentning eller afsendelse, skal du bruge handlingerne **Afhent alle**, **Afhent valgte**, **Udfør alle** eller **Udfør valgte**.
 

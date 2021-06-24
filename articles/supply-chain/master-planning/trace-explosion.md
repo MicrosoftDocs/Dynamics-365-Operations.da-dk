@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f2a50c5e30155c11d653601187c36cb385aa4a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 75d994db80071c4ef9e23caf24cb4cadbc1473ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839191"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189886"
 ---
 # <a name="use-tracing-for-explosion"></a>Brug af sporing for udfoldning
 
@@ -38,8 +38,7 @@ Ved at aktivere sporing kan du få vist oplysninger om de faktorer, der bidrog t
 
 Du kan få vist detaljer om terminer og handlinger til en valgt ordre. På siden **Udfoldning** er sporingsoplysninger tilgængelige under fanen **Udfoldning** i den øverste rude. Sporing forekommer, når du udfolder en ordre. Start sporing for ordren ved at klikke på **Opdater**, og markér derefter afkrydsningsfeltet **Aktivér spor**. Du kan bruge feltet **Søg efter tekst** til at søge i logfilen efter specifikke oplysninger. Søgeresultater fremhæves i træet.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over behovsplaner](master-plans.md)
 

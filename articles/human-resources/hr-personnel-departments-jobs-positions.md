@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1279cd1eb0d495107515dd40f7d2e0f9dfd5e080
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058818"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189744"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger
 
@@ -42,8 +42,7 @@ Følgende eksempel bruges til at illustrere de begreber, der er beskrevet i denn
 |**Human Resources**|Human Resourceschef (centralt)|Human Resourceschef|
 
 
- <a name="departments"></a>Afdelinger
-------------
+##  <a name="departments"></a>Afdelinger
 
 En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation, der er ansvarlig for et bestemt område af organisationen, f.eks. salg eller regnskab. En afdeling bruges til at rapportere om funktionsområder og kan have driftsansvar. En afdeling kan også omfatte en gruppe af bærere. Salgs-, regnskabs- og personaleressourcer er nogle eksempler på afdelinger i en organisation.
 
@@ -96,8 +95,7 @@ Du kan bruge jobtyper til at klassificere lignende job i kategorier. Jobtyper ka
 
 Brug ansvarsområder til at angive arbejdsroller, processer, og produkter, som en arbejder i en stilling for det pågældende job ville være ansvarlig for. Et eksempel på et ansvarsområde for et job med titlen "Bogholder" kunne være "Finansiel rapportering for vare A".
 
-<a name="positions"></a>Stillinger
-----------
+## <a name="positions"></a>Stillinger
 
 Stillinger er et vigtigt element i et organisationshierarkis lavere niveau. En stilling er en individuel forekomst af et job. For eksempel er stillingen "Salgschef (øst)" blot én af de stillinger, der er tilknyttet jobbet "Salgschef". Stillinger findes i en afdeling og tildeles til arbejdere.
 ### <a name="position-creation-and-maintenance"></a>Oprette og vedligeholde stillinger

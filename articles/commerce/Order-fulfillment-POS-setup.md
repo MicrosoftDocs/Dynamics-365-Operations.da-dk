@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5cdf7b2655f62b693a8f2bc137c690fbc43b16a7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 246a79f6f1578e81510d4a57ee12f0e0497bff84
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796432"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193173"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Konfigurere ordreopfyldning for butikker
 
@@ -33,9 +33,9 @@ Ordreopfyldningsoperationen på POS'et indeholder et enkelt arbejdsområde på P
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Konfigurere ordreopfyldningsoperationen
 
-Ordreopfyldning, [Handlings-id 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) kan bruges til at få adgang til arbejdsområdet Butiksordreopfyldning på POS'et.
+Ordreopfyldning, [Handlings-id 928](pos-operations.md) kan bruges til at få adgang til arbejdsområdet Butiksordreopfyldning på POS'et.
 
-Følg trinnene i [Føje operationen til en knapmatrix](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) for at angive, hvilken parameter der skal bruges til aktivering af ordreopfyldning på POS. Når du har angivet ordreopfyldningsoperationerne, er **Alle ordrer** som standard markeret. Når operationen er konfigureret med denne parameter, viser den alle ordrelinjer til opfyldning i den aktuelle butik. **Ordrer, der skal afsendes**, som kan tildeles til en knap og udnyttes, når brugeren kun vil se ordrer, der skal afsendes fra butikken, er også tilgængelig. Endelig er der **Ordrer, der skal afhentes**. Når dette aktiveres på salgsstedet (POS), vises kun ordrer, der skal afhentes i butikken. De forskellige parametre kan tildeles til forskellige knapper for at give brugeren flere forskellige måder at få vist ordreopfyldningen på.
+Følg trinnene i [Føje operationen til en knapmatrix](pos-screen-layouts.md) for at angive, hvilken parameter der skal bruges til aktivering af ordreopfyldning på POS. Når du har angivet ordreopfyldningsoperationerne, er **Alle ordrer** som standard markeret. Når operationen er konfigureret med denne parameter, viser den alle ordrelinjer til opfyldning i den aktuelle butik. **Ordrer, der skal afsendes**, som kan tildeles til en knap og udnyttes, når brugeren kun vil se ordrer, der skal afsendes fra butikken, er også tilgængelig. Endelig er der **Ordrer, der skal afhentes**. Når dette aktiveres på salgsstedet (POS), vises kun ordrer, der skal afhentes i butikken. De forskellige parametre kan tildeles til forskellige knapper for at give brugeren flere forskellige måder at få vist ordreopfyldningen på.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Gøre det muligt for brugere at få adgang til ordreopfyldning på POS
 
@@ -104,9 +104,9 @@ Som standard har ordrer status **Accepteret**. Ordrestatus kan ses som en kolonn
 
 - **Rediger** – Hvis en ordrestatus er ventende, den kan redigeres på POS'et. Ordrer, der er allerede er delvist plukket, pakket eller faktureret, kan ikke redigeres fra ordreopfyldningsvisningen.
 - **Acceptér** – Hvis **Manuel godkendelse** er konfigureret på kanalniveau, skal linjer først godkendes, før de kan flyttes gennem ordreopfyldningsprocessen.
-- **Pluk** – Indstillingen Pluk understøtter flere handlinger. Første opdaterer **Pluk** for ordrelinjen, så andre i butikken ikke forsøger at plukke den samme linje. Derefter udskriver **Udskrivning af plukliste** en plukliste for den eller de valgte linjer og opdaterer også deres status til **Pluk**. Pluklisteformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Endelig **Markér som plukket** angiver, at linjen er blevet plukket. **Markér som plukket** starter tilsvarende lagertransaktioner i administrationen. Plukhandlinger kan udføres på samme tid for flere ordrelinjer på tværs af ordrer og for alle leveringsmåder.
+- **Pluk** – Indstillingen Pluk understøtter flere handlinger. Første opdaterer **Pluk** for ordrelinjen, så andre i butikken ikke forsøger at plukke den samme linje. Derefter udskriver **Udskrivning af plukliste** en plukliste for den eller de valgte linjer og opdaterer også deres status til **Pluk**. Pluklisteformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](receipt-templates-printing.md). Endelig **Markér som plukket** angiver, at linjen er blevet plukket. **Markér som plukket** starter tilsvarende lagertransaktioner i administrationen. Plukhandlinger kan udføres på samme tid for flere ordrelinjer på tværs af ordrer og for alle leveringsmåder.
 - **Afvis** – Linjer eller delvise linjer kan afvises. Dette gør muligt at omfordele dem fra administrationen til en anden butik eller lagersted. Linjer kan kun afvises, hvis de endnu ikke er plukket eller pakket. Hvis du vil afvise en linje, der allerede er plukket eller pakket, skal plukningen eller pakningen af linjen fjernes af administrationen.
-- **Pakke** – Pakkeindstillingen understøtter to handlinger: **Udskrivning af følgeseddel** udskriver en følgeseddel for de valgte linjer og **Markér som pakket** markerer linjerne som pakkede og markerer linjerne som leveret i administrationen. Kun ordrelinjer, der tilhører samme ordre og har samme leveringsmåde kan pakkes på samme tid. Følgeseddelformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+- **Pakke** – Pakkeindstillingen understøtter to handlinger: **Udskrivning af følgeseddel** udskriver en følgeseddel for de valgte linjer og **Markér som pakket** markerer linjerne som pakkede og markerer linjerne som leveret i administrationen. Kun ordrelinjer, der tilhører samme ordre og har samme leveringsmåde kan pakkes på samme tid. Følgeseddelformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](receipt-templates-printing.md).
 - **Send** – Afsendelseshandlingen markerer valgte linjer som **Leveret** i administrationen. Når en linje er fuldt ud leveret, vises den ikke længere i ordreopfyldningsvisningen.
 - **Afhentning** – Handlingen Afhentning føjer linjerne til transaktionsvisningen for afhentning. Hvis der er andre linjer i ordren, der ikke i øjeblikket er afhentet, føjes de til transaktionsvisningen med et antal på nul. Når en linje er helt afhentet, vises den ikke længere i ordreopfyldningsvisningen.
 

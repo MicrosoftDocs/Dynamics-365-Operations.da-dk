@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816526"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189710"
 ---
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
@@ -88,8 +88,7 @@ Under fanen **Fordelingsnøgler** kan du angive **Parametre til prognosealgoritm
 - **Sæsonbetonet tip**: Til sæsonbetonede data skal du angive et tip til prognosemodellen for at øge prognosens nøjagtighed. Format: Heltal, der repræsenterer antallet af grupper, hvor et behovsmønster gentages. Angiv f.eks. 6 for data, der gentages hver 6. måned.
 - **Testsætstørrelse i procent**: Procent af historiske data, der skal bruges som testsæt til beregning af prognosenøjagtighed. 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over behovsprognoser](introduction-demand-forecasting.md)
 

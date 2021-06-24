@@ -15,12 +15,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d45dbf714988c72ee3a8e2dff75cc637f89d543
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b92826bf48c98691e6f320abfb75a9967ccfc21a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826070"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188367"
 ---
 # <a name="procurement-and-sourcing-in-the-public-sector-in-france"></a>Indkøb og forsyning i den offentlige sektor i Frankrig
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826070"
 
 I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor. Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics. 
 
-<a name="set-spending-thresholds-by-procurement-category"></a>Angive forbrugsgrænser efter indkøbskategori
------------------------------------------------
+## <a name="set-spending-thresholds-by-procurement-category"></a>Angive forbrugsgrænser efter indkøbskategori
 
 Hvis du vil angive forbrugsgrænser for køb i de indkøbskategorier, som er defineret af Clé de Contrôle Marché, skal du bruge indkøbspolitikreglen **Forbrugsgrænser efter kategori**. Når du implementerer denne indkøbspolitikregel til styring af forbrugsgrænser efter kategori, kan du bruge attributter for ikrafttrædelsesdato, estimerede udgiftsbeløb og tærskelbeløb til at understøtte din indkøbspraksis og til at sikre effektiv brug af offentlige midler.
 

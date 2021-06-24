@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62868c30d3ff60e51d99c71b743ab0bbb3c87451
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc986ea752d1482f618401058f7a0b18f13efd5f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835190"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188704"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Angive rentesatser for en rentekode
 
@@ -90,7 +90,6 @@ Du angiver intervaloplysninger på følgende måde.
 
 
 ## <a name="example-2-interest-by-range--days"></a>Eksempel 2: Renter efter interval = dage
---------------------------------------------------
 
 Du har oprettet en rentekode, der opkræver rente én gang for hver 15 dage, hvor fakturabetalingen overskrider posteringens forfaldsdato. Du vil basere beregningen på en beløbsmæssig renteværdi i henhold til de trinvise dagsintervaller. Renteværdien vil være 10,00 pr. 15 dage i de første 60 dage, 15,00 pr. 15 dag i dagene 61-90 og 20,00 pr. 15 dage fra dag 91 og efter. Indstil rentekodeværdierne på følgende måde.
 
@@ -111,7 +110,6 @@ Du angiver intervaloplysninger på følgende måde.
 
 
 ## <a name="example-3-interest-by-range--months"></a>Eksempel 3: Renter efter interval = måneder
-----------------------------------------------------
 
 Du har oprettet en rentekode, der opkræver rente én gang for hver måned, hvor fakturabetalingen overskrider posteringens forfaldsdato. Du vil basere beregningen på en procentvis renteværdi i henhold til de trinvise månedsintervaller. Renteværdien vil være 1,5 procent pr. måned for de første tre måneder, 2,0 procent pr. måned for de næste tre måneder og 2,5 procent pr. måned for hver måned ud over de første seks måneder. Indstil rentekodeværdierne på følgende måde.
 

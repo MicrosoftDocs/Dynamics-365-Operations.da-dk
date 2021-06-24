@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dea003e658a8f96f4904ffff752a7f9fb1567205
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c94480faf1c1fabaf9851d7023dd5a2754caa78
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809907"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189767"
 ---
 # <a name="accounts-receivable-in-the-public-sector-overview"></a>Oversigt over Debitor i den offentlige sektor
 
@@ -29,8 +29,7 @@ ms.locfileid: "5809907"
 
 I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor.
 
-<a name="how-do-i-set-accounts-receivable-parameters-for-the-public-sector"></a>Hvordan indstiller jeg Debitorparametre for den offentlige sektor?
-------------------------------------------------------------------
+## <a name="how-do-i-set-accounts-receivable-parameters-for-the-public-sector"></a>Hvordan indstiller jeg Debitorparametre for den offentlige sektor?
 
 De fleste Debitorparametre angives på samme måde, uanset om du er i den offentlige sektor eller private sektor. De parametre, der kræves til faktureringsklassifikationer og faktureringskoder, bruges imidlertid kun af den offentlige sektor. Du kan få flere oplysninger i [Faktureringsklassifikationer og faktureringskoder i den offentlige sektor](billing-classifications-billing-codes-public-sector.md).
 
@@ -56,8 +55,7 @@ Du kan bevare de økonomiske standarddimensioner for debitorgruppen. Bare gå ti
 ## <a name="what-can-i-use-accounts-receivable-posting-definitions-for"></a>Hvad kan jeg bruge bogføringsdefinitioner for debitor til?
 Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til kildetransaktioner, der opfylder de valgte kriterier – f.eks. til at generere flere, afstemte finansposter baseret på attributter, som f.eks. transaktionstyper og konti. Hvis du vil vide mere om bogføringsdefinitioner, skal du se [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md).
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Debitorer](../accounts-receivable/accounts-receivable.md)
 

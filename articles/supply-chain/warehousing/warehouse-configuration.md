@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734246cde20f5ce76e34dae772ed0ba6b0e361a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1dc6c99a986bad767691f7cac7e0135c54e1d0b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837363"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189545"
 ---
 # <a name="warehouse-configuration-overview"></a>Oversigt over konfiguration af lagersted
 
@@ -109,8 +109,7 @@ Som navnet antyder, bruges lokalitetsvejledninger til at dirigere arbejdstransak
 
 For at gøre det nemmere og hurtigere at definere de handlinger, der er tilknyttet hver enkelt linje for lokalitetsvejledning, skal du bruge en af de foruddefinerede strategier. Du kan f.eks. bruge strategien **Tom lokation uden indgående arbejde** til at søge efter ledige lokaliteter på et lagersted, eller du kan bruge strategien **FEFO-batchreservation** for udgående salgspluk.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Konfigurere lokationer på et WMS-aktiveret lagersted](tasks/configure-locations-wms-enabled-warehouse.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 87ab65469ec4a8154267b88fe45481b65ade5e7a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027788"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189172"
 ---
 # <a name="three-way-matching-policies"></a>Trevejs-sammenholdelsespolitikker
 
@@ -28,8 +28,7 @@ ms.locfileid: "6027788"
 
 Dette emne indeholder eksempler på trevejs-sammenholdelse.
 
-<a name="example-three-way-matching-for-items"></a>Eksempel: trevejs-sammenholdelsespolitik
--------------------------------------
+## <a name="example-three-way-matching-for-items"></a>Eksempel: trevejs-sammenholdelsespolitik
 
 **Oversigt:** Ken er controller i virksomhedens hovedkvarter i en juridisk enhed med navnet Fabrikam. Mads beslutter, at alle kreditorfakturaer, der er baseret på indkøbsordrer, skal sammenholdes med indkøbsordrelinjer (tovejs-sammenholdelse). For køb af varer, der skal bruges som anlægsaktiver, skal fakturaer sammenholdes med både indkøbsordrelinjer og produktkvitteringslinjerne (trevejs-sammenholdelse).
 

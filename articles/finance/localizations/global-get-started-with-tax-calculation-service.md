@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3f8aa791cee1926afe6be347331d47902a3b7304
-ms.sourcegitcommit: f4dc09601bceb5cdc88ee184ce7c8f369e3e6e86
+ms.openlocfilehash: e72b81d4a109db2dd8b4c6ca2ca0b030220e25f3
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6060557"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216713"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Start her med momsberegning (forhåndsversion)
 
@@ -58,7 +58,7 @@ Før du kan fuldføre trinnene i dette emne, skal du kontrollere, at følgende f
 Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal kun gennemføre denne procedure én gang, så du kan fuldføre den i enhver juridisk enhed i RCS.
 
 1. Log på [RCS](https://marketing.configure.global.dynamics.com/).
-2. I Finance-arbejdsområdet **Elektronisk rapportering** skal du tilføje en ny konfigurationsudbyder. Brug dit firmanavn som navnet på udbyderen. Få flere oplysninger i [Oprette konfigurationsudbydere og markere dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. I arbejdsområdet **Elektronisk rapportering** skal du tilføje en ny konfigurationsudbyder. Brug dit firmanavn som navnet på udbyderen. Få flere oplysninger i [Oprette konfigurationsudbydere og markere dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Vælg den konfigurationsudbyder, du lige har oprettet, og vælg derefter **Angiv som aktiv**.
 4. Vælg **Microsoft**-konfigurationsudbyderen, og vælg derefter **Lagre**.
 5. I feltet **Type** skal du vælge **Global**.
