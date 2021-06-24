@@ -15,122 +15,120 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054013"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190226"
 ---
-# <a name="set-up-training-courses"></a><span data-ttu-id="28d8f-103">Konfigurere uddannelseskurser</span><span class="sxs-lookup"><span data-stu-id="28d8f-103">Set up training courses</span></span>
+# <a name="set-up-training-courses"></a><span data-ttu-id="8eb85-103">Konfigurere uddannelseskurser</span><span class="sxs-lookup"><span data-stu-id="8eb85-103">Set up training courses</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="28d8f-104">Human Resourcesadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.</span><span class="sxs-lookup"><span data-stu-id="28d8f-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
+<span data-ttu-id="8eb85-104">Human Resourcesadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.</span><span class="sxs-lookup"><span data-stu-id="8eb85-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
 
- <a name="set-up-prerequisites"></a><span data-ttu-id="28d8f-105"> Angiv forudsætninger</span><span class="sxs-lookup"><span data-stu-id="28d8f-105">Set up prerequisites</span></span>
----------------------
+##  <a name="set-up-prerequisites"></a><span data-ttu-id="8eb85-105"> Angiv forudsætninger</span><span class="sxs-lookup"><span data-stu-id="8eb85-105">Set up prerequisites</span></span>
 
-<span data-ttu-id="28d8f-106">Følgende oplysninger er påkrævet og skal konfigureres, før du opretter kurser.</span><span class="sxs-lookup"><span data-stu-id="28d8f-106">The following information is required and must be set up before you create courses.</span></span>
--   <span data-ttu-id="28d8f-107">**Kursustyper**</span><span class="sxs-lookup"><span data-stu-id="28d8f-107">**Course types**</span></span>
+<span data-ttu-id="8eb85-106">Følgende oplysninger er påkrævet og skal konfigureres, før du opretter kurser.</span><span class="sxs-lookup"><span data-stu-id="8eb85-106">The following information is required and must be set up before you create courses.</span></span>
+-   <span data-ttu-id="8eb85-107">**Kursustyper**</span><span class="sxs-lookup"><span data-stu-id="8eb85-107">**Course types**</span></span>
 
-<span data-ttu-id="28d8f-108">Følgende oplysninger er valgfrie oplysninger, du kan angive for kurser.</span><span class="sxs-lookup"><span data-stu-id="28d8f-108">The following information is optional information that you can specify for courses.</span></span> <span data-ttu-id="28d8f-109">Hvis du ved, at du kommer til at angive disse oplysninger for kurser, skal du konfigurere oplysningerne, før du opretter kursusposter.</span><span class="sxs-lookup"><span data-stu-id="28d8f-109">If you know that you will be entering this information for courses, you should set up this information before you create course records.</span></span>
--   <span data-ttu-id="28d8f-110">**Kursuslokalegrupper**</span><span class="sxs-lookup"><span data-stu-id="28d8f-110">**Classroom groups**</span></span>
--   <span data-ttu-id="28d8f-111">**Kursusgrupper**</span><span class="sxs-lookup"><span data-stu-id="28d8f-111">**Course groups**</span></span>
--   <span data-ttu-id="28d8f-112">**Kursussteder**</span><span class="sxs-lookup"><span data-stu-id="28d8f-112">**Course locations**</span></span>
--   <span data-ttu-id="28d8f-113">**Kursuslokaler**</span><span class="sxs-lookup"><span data-stu-id="28d8f-113">**Classrooms**</span></span>
--   <span data-ttu-id="28d8f-114">**Instruktører**</span><span class="sxs-lookup"><span data-stu-id="28d8f-114">**Instructors**</span></span>
+<span data-ttu-id="8eb85-108">Følgende oplysninger er valgfrie oplysninger, du kan angive for kurser.</span><span class="sxs-lookup"><span data-stu-id="8eb85-108">The following information is optional information that you can specify for courses.</span></span> <span data-ttu-id="8eb85-109">Hvis du ved, at du kommer til at angive disse oplysninger for kurser, skal du konfigurere oplysningerne, før du opretter kursusposter.</span><span class="sxs-lookup"><span data-stu-id="8eb85-109">If you know that you will be entering this information for courses, you should set up this information before you create course records.</span></span>
+-   <span data-ttu-id="8eb85-110">**Kursuslokalegrupper**</span><span class="sxs-lookup"><span data-stu-id="8eb85-110">**Classroom groups**</span></span>
+-   <span data-ttu-id="8eb85-111">**Kursusgrupper**</span><span class="sxs-lookup"><span data-stu-id="8eb85-111">**Course groups**</span></span>
+-   <span data-ttu-id="8eb85-112">**Kursussteder**</span><span class="sxs-lookup"><span data-stu-id="8eb85-112">**Course locations**</span></span>
+-   <span data-ttu-id="8eb85-113">**Kursuslokaler**</span><span class="sxs-lookup"><span data-stu-id="8eb85-113">**Classrooms**</span></span>
+-   <span data-ttu-id="8eb85-114">**Instruktører**</span><span class="sxs-lookup"><span data-stu-id="8eb85-114">**Instructors**</span></span>
 
-## <a name="course-types"></a><span data-ttu-id="28d8f-115">Kursustyper</span><span class="sxs-lookup"><span data-stu-id="28d8f-115">Course types</span></span>
-<span data-ttu-id="28d8f-116">Du kan bruge kursustyper til at kategorisere kurser efter kursets struktur eller indhold.</span><span class="sxs-lookup"><span data-stu-id="28d8f-116">You can use course types to categorize courses according to the structure or content of the course.</span></span> <span data-ttu-id="28d8f-117">Du kan oprette kursustyper på siden **Kursustyper**.</span><span class="sxs-lookup"><span data-stu-id="28d8f-117">You can create course types on the **Course types** page.</span></span> <span data-ttu-id="28d8f-118">Du skal vælge en kursustype, når du opretter en kursuspost.</span><span class="sxs-lookup"><span data-stu-id="28d8f-118">You must select a course type when you create a course record.</span></span>
+## <a name="course-types"></a><span data-ttu-id="8eb85-115">Kursustyper</span><span class="sxs-lookup"><span data-stu-id="8eb85-115">Course types</span></span>
+<span data-ttu-id="8eb85-116">Du kan bruge kursustyper til at kategorisere kurser efter kursets struktur eller indhold.</span><span class="sxs-lookup"><span data-stu-id="8eb85-116">You can use course types to categorize courses according to the structure or content of the course.</span></span> <span data-ttu-id="8eb85-117">Du kan oprette kursustyper på siden **Kursustyper**.</span><span class="sxs-lookup"><span data-stu-id="8eb85-117">You can create course types on the **Course types** page.</span></span> <span data-ttu-id="8eb85-118">Du skal vælge en kursustype, når du opretter en kursuspost.</span><span class="sxs-lookup"><span data-stu-id="8eb85-118">You must select a course type when you create a course record.</span></span>
 
-## <a name="course-setup-type"></a><span data-ttu-id="28d8f-119">Opsætningstype for kursus</span><span class="sxs-lookup"><span data-stu-id="28d8f-119">Course setup type</span></span>
-<span data-ttu-id="28d8f-120">Følgende tabel viser de tre opsætningstyper for kurser.</span><span class="sxs-lookup"><span data-stu-id="28d8f-120">The following table lists the three setup types for courses.</span></span> <span data-ttu-id="28d8f-121">Opsætningstyper bestemmer kursets struktur.</span><span class="sxs-lookup"><span data-stu-id="28d8f-121">Setup types determine the structure of the course.</span></span>
+## <a name="course-setup-type"></a><span data-ttu-id="8eb85-119">Opsætningstype for kursus</span><span class="sxs-lookup"><span data-stu-id="8eb85-119">Course setup type</span></span>
+<span data-ttu-id="8eb85-120">Følgende tabel viser de tre opsætningstyper for kurser.</span><span class="sxs-lookup"><span data-stu-id="8eb85-120">The following table lists the three setup types for courses.</span></span> <span data-ttu-id="8eb85-121">Opsætningstyper bestemmer kursets struktur.</span><span class="sxs-lookup"><span data-stu-id="8eb85-121">Setup types determine the structure of the course.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="28d8f-122">Opsætningstype</span><span class="sxs-lookup"><span data-stu-id="28d8f-122">Setup type</span></span></th>
-<th><span data-ttu-id="28d8f-123">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="28d8f-123">Description</span></span></th>
+<th><span data-ttu-id="8eb85-122">Opsætningstype</span><span class="sxs-lookup"><span data-stu-id="8eb85-122">Setup type</span></span></th>
+<th><span data-ttu-id="8eb85-123">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="8eb85-123">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="28d8f-124"><strong>Standard</strong></span><span class="sxs-lookup"><span data-stu-id="28d8f-124"><strong>Standard</strong></span></span></td>
-<td><span data-ttu-id="28d8f-125">Vælg denne type for kurser, der ikke har en daglig agenda.</span><span class="sxs-lookup"><span data-stu-id="28d8f-125">Select this type for courses that will not have a daily agenda.</span></span> <span data-ttu-id="28d8f-126">Dette er standardopsætningstypen, når du opretter et nyt kursus.</span><span class="sxs-lookup"><span data-stu-id="28d8f-126">This is the default setup type when you create a new course.</span></span></td>
+<td><span data-ttu-id="8eb85-124"><strong>Standard</strong></span><span class="sxs-lookup"><span data-stu-id="8eb85-124"><strong>Standard</strong></span></span></td>
+<td><span data-ttu-id="8eb85-125">Vælg denne type for kurser, der ikke har en daglig agenda.</span><span class="sxs-lookup"><span data-stu-id="8eb85-125">Select this type for courses that will not have a daily agenda.</span></span> <span data-ttu-id="8eb85-126">Dette er standardopsætningstypen, når du opretter et nyt kursus.</span><span class="sxs-lookup"><span data-stu-id="8eb85-126">This is the default setup type when you create a new course.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="28d8f-127"><strong>Agenda</strong></span><span class="sxs-lookup"><span data-stu-id="28d8f-127"><strong>Agenda</strong></span></span></td>
-<td><span data-ttu-id="28d8f-128">Vælg denne type for at planlægge detaljerne for hver dag i et kursus, der finder sted over flere dage.</span><span class="sxs-lookup"><span data-stu-id="28d8f-128">Select this type to plan the details of each day of a course that takes place over multiple days.</span></span></td>
+<td><span data-ttu-id="8eb85-127"><strong>Agenda</strong></span><span class="sxs-lookup"><span data-stu-id="8eb85-127"><strong>Agenda</strong></span></span></td>
+<td><span data-ttu-id="8eb85-128">Vælg denne type for at planlægge detaljerne for hver dag i et kursus, der finder sted over flere dage.</span><span class="sxs-lookup"><span data-stu-id="8eb85-128">Select this type to plan the details of each day of a course that takes place over multiple days.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="28d8f-129"><strong>Agenda + session</strong></span><span class="sxs-lookup"><span data-stu-id="28d8f-129"><strong>Agenda + session</strong></span></span></td>
-<td><span data-ttu-id="28d8f-130">Vælg denne type for mere komplekse kurser.</span><span class="sxs-lookup"><span data-stu-id="28d8f-130">Select this type for the more complex courses.</span></span> <span data-ttu-id="28d8f-131">For eksempel kan du opdele agendaen for kurset i spor og sessioner.</span><span class="sxs-lookup"><span data-stu-id="28d8f-131">For example, you can divide the agenda for the course into tracks and sessions.</span></span>
+<td><span data-ttu-id="8eb85-129"><strong>Agenda + session</strong></span><span class="sxs-lookup"><span data-stu-id="8eb85-129"><strong>Agenda + session</strong></span></span></td>
+<td><span data-ttu-id="8eb85-130">Vælg denne type for mere komplekse kurser.</span><span class="sxs-lookup"><span data-stu-id="8eb85-130">Select this type for the more complex courses.</span></span> <span data-ttu-id="8eb85-131">For eksempel kan du opdele agendaen for kurset i spor og sessioner.</span><span class="sxs-lookup"><span data-stu-id="8eb85-131">For example, you can divide the agenda for the course into tracks and sessions.</span></span>
 <ul>
-<li><span data-ttu-id="28d8f-132"><strong>Spor</strong> – Spor er specifikke emneområder for et kursus.</span><span class="sxs-lookup"><span data-stu-id="28d8f-132"><strong>Track</strong> – Tracks are specific subject areas for a course.</span></span></li>
-<li><span data-ttu-id="28d8f-133"><strong>Sessioner</strong> – Sessioner underopdeler spor og hjælper med at identificere specifikke processer eller teknikker, der er relevante for sporet.</span><span class="sxs-lookup"><span data-stu-id="28d8f-133"><strong>Sessions</strong> – Sessions divide up tracks and help identify specific processes or techniques that are relevant to the track.</span></span></li>
+<li><span data-ttu-id="8eb85-132"><strong>Spor</strong> – Spor er specifikke emneområder for et kursus.</span><span class="sxs-lookup"><span data-stu-id="8eb85-132"><strong>Track</strong> – Tracks are specific subject areas for a course.</span></span></li>
+<li><span data-ttu-id="8eb85-133"><strong>Sessioner</strong> – Sessioner underopdeler spor og hjælper med at identificere specifikke processer eller teknikker, der er relevante for sporet.</span><span class="sxs-lookup"><span data-stu-id="8eb85-133"><strong>Sessions</strong> – Sessions divide up tracks and help identify specific processes or techniques that are relevant to the track.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="course-tasks"></a><span data-ttu-id="28d8f-134">Kursusopgaver</span><span class="sxs-lookup"><span data-stu-id="28d8f-134">Course tasks</span></span>
-<span data-ttu-id="28d8f-135">For hvert kursus kan udføre følgende opgaver.</span><span class="sxs-lookup"><span data-stu-id="28d8f-135">For each course, you can complete the following tasks.</span></span>
-- <span data-ttu-id="28d8f-136">Registrere deltagere</span><span class="sxs-lookup"><span data-stu-id="28d8f-136">Register participants</span></span>
-- <span data-ttu-id="28d8f-137">Angive en tilmeldingsfrist</span><span class="sxs-lookup"><span data-stu-id="28d8f-137">Specify a registration deadline</span></span>
-- <span data-ttu-id="28d8f-138">Angive det mindste og største antal deltagere</span><span class="sxs-lookup"><span data-stu-id="28d8f-138">Define the minimum and maximum number of participants</span></span>
-- <span data-ttu-id="28d8f-139">Tildel et kursussted og et lokale</span><span class="sxs-lookup"><span data-stu-id="28d8f-139">Assign a course location and classroom</span></span>
-- <span data-ttu-id="28d8f-140">Anbefal hoteller til kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="28d8f-140">Recommend hotels to course participants</span></span>
-- <span data-ttu-id="28d8f-141">Oprette en kursusbeskrivelse, som derefter kan offentliggøres på Medarbejderselvbetjening</span><span class="sxs-lookup"><span data-stu-id="28d8f-141">Create a course description, which you can then advertise on Employee self service</span></span>
+## <a name="course-tasks"></a><span data-ttu-id="8eb85-134">Kursusopgaver</span><span class="sxs-lookup"><span data-stu-id="8eb85-134">Course tasks</span></span>
+<span data-ttu-id="8eb85-135">For hvert kursus kan udføre følgende opgaver.</span><span class="sxs-lookup"><span data-stu-id="8eb85-135">For each course, you can complete the following tasks.</span></span>
+- <span data-ttu-id="8eb85-136">Registrere deltagere</span><span class="sxs-lookup"><span data-stu-id="8eb85-136">Register participants</span></span>
+- <span data-ttu-id="8eb85-137">Angive en tilmeldingsfrist</span><span class="sxs-lookup"><span data-stu-id="8eb85-137">Specify a registration deadline</span></span>
+- <span data-ttu-id="8eb85-138">Angive det mindste og største antal deltagere</span><span class="sxs-lookup"><span data-stu-id="8eb85-138">Define the minimum and maximum number of participants</span></span>
+- <span data-ttu-id="8eb85-139">Tildel et kursussted og et lokale</span><span class="sxs-lookup"><span data-stu-id="8eb85-139">Assign a course location and classroom</span></span>
+- <span data-ttu-id="8eb85-140">Anbefal hoteller til kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="8eb85-140">Recommend hotels to course participants</span></span>
+- <span data-ttu-id="8eb85-141">Oprette en kursusbeskrivelse, som derefter kan offentliggøres på Medarbejderselvbetjening</span><span class="sxs-lookup"><span data-stu-id="8eb85-141">Create a course description, which you can then advertise on Employee self service</span></span>
 
-  ><span data-ttu-id="28d8f-142">**Bemærk!** Du kan kun slette et kursus, hvis ingen har tilmeldt sig kurset.</span><span class="sxs-lookup"><span data-stu-id="28d8f-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
+  ><span data-ttu-id="8eb85-142">**Bemærk!** Du kan kun slette et kursus, hvis ingen har tilmeldt sig kurset.</span><span class="sxs-lookup"><span data-stu-id="8eb85-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
 
-## <a name="course-statuses"></a><span data-ttu-id="28d8f-143">Kursusstatusser</span><span class="sxs-lookup"><span data-stu-id="28d8f-143">Course statuses</span></span>
-<span data-ttu-id="28d8f-144">I følgende tabel vises de mulige statusser for kurser og de handlinger, du kan udføre, når kurset har en bestemt status.</span><span class="sxs-lookup"><span data-stu-id="28d8f-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
+## <a name="course-statuses"></a><span data-ttu-id="8eb85-143">Kursusstatusser</span><span class="sxs-lookup"><span data-stu-id="8eb85-143">Course statuses</span></span>
+<span data-ttu-id="8eb85-144">I følgende tabel vises de mulige statusser for kurser og de handlinger, du kan udføre, når kurset har en bestemt status.</span><span class="sxs-lookup"><span data-stu-id="8eb85-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="28d8f-145">Status</span><span class="sxs-lookup"><span data-stu-id="28d8f-145">Status</span></span></th>
-<th><span data-ttu-id="28d8f-146">Aktioner</span><span class="sxs-lookup"><span data-stu-id="28d8f-146">Actions</span></span></th>
+<th><span data-ttu-id="8eb85-145">Status</span><span class="sxs-lookup"><span data-stu-id="8eb85-145">Status</span></span></th>
+<th><span data-ttu-id="8eb85-146">Aktioner</span><span class="sxs-lookup"><span data-stu-id="8eb85-146">Actions</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="28d8f-147"><strong>Oprettet</strong></span><span class="sxs-lookup"><span data-stu-id="28d8f-147"><strong>Created</strong></span></span></td>
+<td><span data-ttu-id="8eb85-147"><strong>Oprettet</strong></span><span class="sxs-lookup"><span data-stu-id="8eb85-147"><strong>Created</strong></span></span></td>
 <td><ul>
-<li><span data-ttu-id="28d8f-148">Angiv og rediger kursusoplysninger.</span><span class="sxs-lookup"><span data-stu-id="28d8f-148">Enter and modify course information.</span></span></li>
-<li><span data-ttu-id="28d8f-149">Rediger status for kurset til <strong>Åbn</strong>, så medarbejderne kan tilmelde sig kurset.</span><span class="sxs-lookup"><span data-stu-id="28d8f-149">Change the course status to <strong>Open</strong> so that workers can register for the course.</span></span></li>
+<li><span data-ttu-id="8eb85-148">Angiv og rediger kursusoplysninger.</span><span class="sxs-lookup"><span data-stu-id="8eb85-148">Enter and modify course information.</span></span></li>
+<li><span data-ttu-id="8eb85-149">Rediger status for kurset til <strong>Åbn</strong>, så medarbejderne kan tilmelde sig kurset.</span><span class="sxs-lookup"><span data-stu-id="8eb85-149">Change the course status to <strong>Open</strong> so that workers can register for the course.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="28d8f-150"><strong>Åben</strong></span><span class="sxs-lookup"><span data-stu-id="28d8f-150"><strong>Open</strong></span></span></td>
+<td><span data-ttu-id="8eb85-150"><strong>Åben</strong></span><span class="sxs-lookup"><span data-stu-id="8eb85-150"><strong>Open</strong></span></span></td>
 <td><ul>
-<li><span data-ttu-id="28d8f-151">Meld deltagerne til kurset.</span><span class="sxs-lookup"><span data-stu-id="28d8f-151">Register participants for the course.</span></span></li>
-<li><span data-ttu-id="28d8f-152">Fjern deltagere fra kurset.</span><span class="sxs-lookup"><span data-stu-id="28d8f-152">Remove participants from the course.</span></span></li>
-<li><span data-ttu-id="28d8f-153">Bekræfte deltageres tilmelding til kurset.</span><span class="sxs-lookup"><span data-stu-id="28d8f-153">Confirm participants for the course.</span></span></li>
-<li><span data-ttu-id="28d8f-154">Rediger status for kurset til<strong> Lukket</strong> eller <strong>Annulleret</strong>.</span><span class="sxs-lookup"><span data-stu-id="28d8f-154">Change the course status to <strong>Closed</strong> or <strong>Canceled</strong>.</span></span></li>
-<li><span data-ttu-id="28d8f-155">Planlæg spørgeskemaer for deltagere, som har status <strong>Bekræftet</strong>.</span><span class="sxs-lookup"><span data-stu-id="28d8f-155">Plan questionnaires for participants whose status is <strong>Confirmed</strong>.</span></span></li>
+<li><span data-ttu-id="8eb85-151">Meld deltagerne til kurset.</span><span class="sxs-lookup"><span data-stu-id="8eb85-151">Register participants for the course.</span></span></li>
+<li><span data-ttu-id="8eb85-152">Fjern deltagere fra kurset.</span><span class="sxs-lookup"><span data-stu-id="8eb85-152">Remove participants from the course.</span></span></li>
+<li><span data-ttu-id="8eb85-153">Bekræfte deltageres tilmelding til kurset.</span><span class="sxs-lookup"><span data-stu-id="8eb85-153">Confirm participants for the course.</span></span></li>
+<li><span data-ttu-id="8eb85-154">Rediger status for kurset til<strong> Lukket</strong> eller <strong>Annulleret</strong>.</span><span class="sxs-lookup"><span data-stu-id="8eb85-154">Change the course status to <strong>Closed</strong> or <strong>Canceled</strong>.</span></span></li>
+<li><span data-ttu-id="8eb85-155">Planlæg spørgeskemaer for deltagere, som har status <strong>Bekræftet</strong>.</span><span class="sxs-lookup"><span data-stu-id="8eb85-155">Plan questionnaires for participants whose status is <strong>Confirmed</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="28d8f-156"><strong>Lukket</strong></span><span class="sxs-lookup"><span data-stu-id="28d8f-156"><strong>Closed</strong></span></span></td>
-<td><span data-ttu-id="28d8f-157">Du kan genåbne kurset.</span><span class="sxs-lookup"><span data-stu-id="28d8f-157">You can reopen the course.</span></span></td>
+<td><span data-ttu-id="8eb85-156"><strong>Lukket</strong></span><span class="sxs-lookup"><span data-stu-id="8eb85-156"><strong>Closed</strong></span></span></td>
+<td><span data-ttu-id="8eb85-157">Du kan genåbne kurset.</span><span class="sxs-lookup"><span data-stu-id="8eb85-157">You can reopen the course.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="28d8f-158"><strong>Annulleret</strong></span><span class="sxs-lookup"><span data-stu-id="28d8f-158"><strong>Canceled</strong></span></span></td>
-<td><span data-ttu-id="28d8f-159">Du kan genåbne kurset.</span><span class="sxs-lookup"><span data-stu-id="28d8f-159">You can reopen the course.</span></span></td>
+<td><span data-ttu-id="8eb85-158"><strong>Annulleret</strong></span><span class="sxs-lookup"><span data-stu-id="8eb85-158"><strong>Canceled</strong></span></span></td>
+<td><span data-ttu-id="8eb85-159">Du kan genåbne kurset.</span><span class="sxs-lookup"><span data-stu-id="8eb85-159">You can reopen the course.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="course-participants"></a><span data-ttu-id="28d8f-160">Kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="28d8f-160">Course participants</span></span>
-<span data-ttu-id="28d8f-161">Kursusdeltagere er arbejdere, der deltager i et kursus eller anden undervisning.</span><span class="sxs-lookup"><span data-stu-id="28d8f-161">Course participants are workers who participate in a training course or event.</span></span> <span data-ttu-id="28d8f-162">Du kan kun melde deltagere til åbne kurser.</span><span class="sxs-lookup"><span data-stu-id="28d8f-162">You can only register participants for open courses.</span></span> <span data-ttu-id="28d8f-163">Det laveste og højeste antal deltagere, du kan tilmelde et kursus, er angivet i oversigtspanelet **Generelt** på siden **Kurser**.</span><span class="sxs-lookup"><span data-stu-id="28d8f-163">The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.</span></span>
+## <a name="course-participants"></a><span data-ttu-id="8eb85-160">Kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="8eb85-160">Course participants</span></span>
+<span data-ttu-id="8eb85-161">Kursusdeltagere er arbejdere, der deltager i et kursus eller anden undervisning.</span><span class="sxs-lookup"><span data-stu-id="8eb85-161">Course participants are workers who participate in a training course or event.</span></span> <span data-ttu-id="8eb85-162">Du kan kun melde deltagere til åbne kurser.</span><span class="sxs-lookup"><span data-stu-id="8eb85-162">You can only register participants for open courses.</span></span> <span data-ttu-id="8eb85-163">Det laveste og højeste antal deltagere, du kan tilmelde et kursus, er angivet i oversigtspanelet **Generelt** på siden **Kurser**.</span><span class="sxs-lookup"><span data-stu-id="8eb85-163">The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.</span></span>
 
-<a name="workflow"></a><span data-ttu-id="28d8f-164">Arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="28d8f-164">Workflow</span></span>
---------
+## <a name="workflow"></a><span data-ttu-id="8eb85-164">Arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="8eb85-164">Workflow</span></span>
 
-<span data-ttu-id="28d8f-165">Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**, kan få deres tilmelding dirigeret gennem godkendelsesarbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="28d8f-165">Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.</span></span> <span data-ttu-id="28d8f-166">Du kan tildele en arbejdsgang et kursus i oversigtspanelet **Generelt** på siden **Kurser**.</span><span class="sxs-lookup"><span data-stu-id="28d8f-166">You can assign a workflow to a course on the **General** FastTab on the **Courses** page.</span></span>
+<span data-ttu-id="8eb85-165">Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**, kan få deres tilmelding dirigeret gennem godkendelsesarbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="8eb85-165">Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.</span></span> <span data-ttu-id="8eb85-166">Du kan tildele en arbejdsgang et kursus i oversigtspanelet **Generelt** på siden **Kurser**.</span><span class="sxs-lookup"><span data-stu-id="8eb85-166">You can assign a workflow to a course on the **General** FastTab on the **Courses** page.</span></span>
 
 
 
