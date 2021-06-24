@@ -16,60 +16,58 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a18cb26b075a4ed96a15c3e6b49effb4178a7783
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7ab96ce9177d0aa43c2470a2f487945448ea91e0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823555"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189360"
 ---
-# <a name="plan-for-public-sector-functionality"></a><span data-ttu-id="fba92-103">Planlægge funktioner til den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="fba92-103">Plan for public sector functionality</span></span>
+# <a name="plan-for-public-sector-functionality"></a><span data-ttu-id="a0ad5-103">Planlægge funktioner til den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="a0ad5-103">Plan for public sector functionality</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="fba92-104">I dette emne foreslås de første trin i opsætningen af funktioner til den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="fba92-104">This topic suggests the first steps to setting up Public sector functionality.</span></span>
+<span data-ttu-id="a0ad5-104">I dette emne foreslås de første trin i opsætningen af funktioner til den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="a0ad5-104">This topic suggests the first steps to setting up Public sector functionality.</span></span>
 
-<a name="what-should-i-do-first"></a><span data-ttu-id="fba92-105">Hvad skal jeg først gøre?</span><span class="sxs-lookup"><span data-stu-id="fba92-105">What should I do first?</span></span>
------------------------
+## <a name="what-should-i-do-first"></a><span data-ttu-id="a0ad5-105">Hvad skal jeg først gøre?</span><span class="sxs-lookup"><span data-stu-id="a0ad5-105">What should I do first?</span></span>
 
-<span data-ttu-id="fba92-106">Før du konfigurerer den offentlige sektor og begynder at tilføje dine data, bør du overveje, hvordan du vil bruge denne funktion.</span><span class="sxs-lookup"><span data-stu-id="fba92-106">Before you set up Public sector and begin adding your data, consider how you'll use this capability.</span></span> <span data-ttu-id="fba92-107">Din overvejelse skal identificere de moduler, der skal være indstillet til at bruge funktioner i den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="fba92-107">Your consideration should identify the modules that must be set up to use Public sector functionality.</span></span> <span data-ttu-id="fba92-108">Den offentlige sektor integreres med følgende:</span><span class="sxs-lookup"><span data-stu-id="fba92-108">Public sector integrates with the following:</span></span> 
+<span data-ttu-id="a0ad5-106">Før du konfigurerer den offentlige sektor og begynder at tilføje dine data, bør du overveje, hvordan du vil bruge denne funktion.</span><span class="sxs-lookup"><span data-stu-id="a0ad5-106">Before you set up Public sector and begin adding your data, consider how you'll use this capability.</span></span> <span data-ttu-id="a0ad5-107">Din overvejelse skal identificere de moduler, der skal være indstillet til at bruge funktioner i den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="a0ad5-107">Your consideration should identify the modules that must be set up to use Public sector functionality.</span></span> <span data-ttu-id="a0ad5-108">Den offentlige sektor integreres med følgende:</span><span class="sxs-lookup"><span data-stu-id="a0ad5-108">Public sector integrates with the following:</span></span> 
 
-### <a name="accounts-payable"></a><span data-ttu-id="fba92-109">Kreditor</span><span class="sxs-lookup"><span data-stu-id="fba92-109">Accounts payable</span></span>
+### <a name="accounts-payable"></a><span data-ttu-id="a0ad5-109">Kreditor</span><span class="sxs-lookup"><span data-stu-id="a0ad5-109">Accounts payable</span></span>
 
-<span data-ttu-id="fba92-110">Forside til betalingsrapporten Indkøbsordrelinjebeløb</span><span class="sxs-lookup"><span data-stu-id="fba92-110">Cover page for payments report Purchase order line amounts</span></span>
+<span data-ttu-id="a0ad5-110">Forside til betalingsrapporten Indkøbsordrelinjebeløb</span><span class="sxs-lookup"><span data-stu-id="a0ad5-110">Cover page for payments report Purchase order line amounts</span></span>
 
-### <a name="accounts-receivable"></a><span data-ttu-id="fba92-111">Debitor</span><span class="sxs-lookup"><span data-stu-id="fba92-111">Accounts receivable</span></span>
+### <a name="accounts-receivable"></a><span data-ttu-id="a0ad5-111">Debitor</span><span class="sxs-lookup"><span data-stu-id="a0ad5-111">Accounts receivable</span></span>
 
-<span data-ttu-id="fba92-112">Faktureringsklassifikationer Brugerdefinerede felter til faktureringskoder Faktureringskoder Brugerdefinerede felter til fritekstfakturalinje Rentelinjer Samhandelspartnerkoder</span><span class="sxs-lookup"><span data-stu-id="fba92-112">Billing classifications Billing code custom fields Billing codes Free text invoice line custom fields Interest lines Trading partner codes</span></span>
+<span data-ttu-id="a0ad5-112">Faktureringsklassifikationer Brugerdefinerede felter til faktureringskoder Faktureringskoder Brugerdefinerede felter til fritekstfakturalinje Rentelinjer Samhandelspartnerkoder</span><span class="sxs-lookup"><span data-stu-id="a0ad5-112">Billing classifications Billing code custom fields Billing codes Free text invoice line custom fields Interest lines Trading partner codes</span></span>
 
-### <a name="budgeting"></a><span data-ttu-id="fba92-113">Budgetlægning</span><span class="sxs-lookup"><span data-stu-id="fba92-113">Budgeting</span></span>
+### <a name="budgeting"></a><span data-ttu-id="a0ad5-113">Budgetlægning</span><span class="sxs-lookup"><span data-stu-id="a0ad5-113">Budgeting</span></span>
 
-<span data-ttu-id="fba92-114">Budgetanalyse Budgetanalyse for reviderede budgetter Budgetanalyse for faktiske udgifter Budgetanalyse for behæftelser Budgetanalyse for budgetreservationer</span><span class="sxs-lookup"><span data-stu-id="fba92-114">Budget analysis Budget analysis for revised budgets Budget analysis for actual expenditures Budget analysis for encumbrances Budget analysis for pre-encumbrances</span></span>
+<span data-ttu-id="a0ad5-114">Budgetanalyse Budgetanalyse for reviderede budgetter Budgetanalyse for faktiske udgifter Budgetanalyse for behæftelser Budgetanalyse for budgetreservationer</span><span class="sxs-lookup"><span data-stu-id="a0ad5-114">Budget analysis Budget analysis for revised budgets Budget analysis for actual expenditures Budget analysis for encumbrances Budget analysis for pre-encumbrances</span></span>
 
-### <a name="french-regulatory-options"></a><span data-ttu-id="fba92-115">Indstillinger for franske myndighedskrav</span><span class="sxs-lookup"><span data-stu-id="fba92-115">French regulatory options</span></span>
+### <a name="french-regulatory-options"></a><span data-ttu-id="a0ad5-115">Indstillinger for franske myndighedskrav</span><span class="sxs-lookup"><span data-stu-id="a0ad5-115">French regulatory options</span></span>
 
-<span data-ttu-id="fba92-116">**Bemærk!** Du kan finde oplysninger om indstillinger for franske myndighedskrav i [Kontering for den offentlige sektor i Frankrig](../localizations/emea-fra-public-sector-accounting.md).</span><span class="sxs-lookup"><span data-stu-id="fba92-116">**Note** For information about French regulatory options, see [Public sector accounting in France](../localizations/emea-fra-public-sector-accounting.md).</span></span> <span data-ttu-id="fba92-117">Følgende sider er kun tilgængelige, hvis følgende betingelser er opfyldt:</span><span class="sxs-lookup"><span data-stu-id="fba92-117">The following pages are available only if the following conditions are met:</span></span>
+<span data-ttu-id="a0ad5-116">**Bemærk!** Du kan finde oplysninger om indstillinger for franske myndighedskrav i [Kontering for den offentlige sektor i Frankrig](../localizations/emea-fra-public-sector-accounting.md).</span><span class="sxs-lookup"><span data-stu-id="a0ad5-116">**Note** For information about French regulatory options, see [Public sector accounting in France](../localizations/emea-fra-public-sector-accounting.md).</span></span> <span data-ttu-id="a0ad5-117">Følgende sider er kun tilgængelige, hvis følgende betingelser er opfyldt:</span><span class="sxs-lookup"><span data-stu-id="a0ad5-117">The following pages are available only if the following conditions are met:</span></span>
 
--   <span data-ttu-id="fba92-118">Konfigurationsnøglen **Offentlig sektor** er valgt.</span><span class="sxs-lookup"><span data-stu-id="fba92-118">The **Public sector** configuration key is selected.</span></span>
--   <span data-ttu-id="fba92-119">Konfigurationsundernøglen **Franske myndighedskrav** er valgt.</span><span class="sxs-lookup"><span data-stu-id="fba92-119">The **French regulatory** configuration subkey is selected.</span></span>
--   <span data-ttu-id="fba92-120">Indstillingen **Brug konteringsreglerne for den franske offentlige sektor** er valgt på siden **Budgetparametre**.</span><span class="sxs-lookup"><span data-stu-id="fba92-120">The **Use French Public sector accounting rules** option is selected on the **Budget parameters** page.</span></span>
+-   <span data-ttu-id="a0ad5-118">Konfigurationsnøglen **Offentlig sektor** er valgt.</span><span class="sxs-lookup"><span data-stu-id="a0ad5-118">The **Public sector** configuration key is selected.</span></span>
+-   <span data-ttu-id="a0ad5-119">Konfigurationsundernøglen **Franske myndighedskrav** er valgt.</span><span class="sxs-lookup"><span data-stu-id="a0ad5-119">The **French regulatory** configuration subkey is selected.</span></span>
+-   <span data-ttu-id="a0ad5-120">Indstillingen **Brug konteringsreglerne for den franske offentlige sektor** er valgt på siden **Budgetparametre**.</span><span class="sxs-lookup"><span data-stu-id="a0ad5-120">The **Use French Public sector accounting rules** option is selected on the **Budget parameters** page.</span></span>
 
-<span data-ttu-id="fba92-121">Saldooversigt Tilsagn lukket Vedligehold mandats de paiement Vedligehold titres de recette Købsaftale, afdelingsadgang Købsaftaletræ Forbrugsgrænser efter kategori Hold-historik for kreditorfakturabetaling</span><span class="sxs-lookup"><span data-stu-id="fba92-121">Balance summary Commitment close Maintain mandats de paiement Maintain titres de recette Purchase agreement department access Purchase agreement tree Spending thresholds by category Vendor invoice payment hold history</span></span>
+<span data-ttu-id="a0ad5-121">Saldooversigt Tilsagn lukket Vedligehold mandats de paiement Vedligehold titres de recette Købsaftale, afdelingsadgang Købsaftaletræ Forbrugsgrænser efter kategori Hold-historik for kreditorfakturabetaling</span><span class="sxs-lookup"><span data-stu-id="a0ad5-121">Balance summary Commitment close Maintain mandats de paiement Maintain titres de recette Purchase agreement department access Purchase agreement tree Spending thresholds by category Vendor invoice payment hold history</span></span>
 
-### <a name="general-ledger"></a><span data-ttu-id="fba92-122">Finans</span><span class="sxs-lookup"><span data-stu-id="fba92-122">General ledger</span></span>
+### <a name="general-ledger"></a><span data-ttu-id="a0ad5-122">Finans</span><span class="sxs-lookup"><span data-stu-id="a0ad5-122">General ledger</span></span>
 
-<span data-ttu-id="fba92-123">Avancerede finansposter Tilknyt afledte økonomiske hierarkier Afledte økonomiske hierarkier Filterresultater Finansieringskildetyper Midler Gennemse ultimofinanstransaktioner</span><span class="sxs-lookup"><span data-stu-id="fba92-123">Advanced ledger entries Associate derived financial hierarchies Derived financial hierarchies Filter results Fund types Funds Preview year end general ledger transactions</span></span>
+<span data-ttu-id="a0ad5-123">Avancerede finansposter Tilknyt afledte økonomiske hierarkier Afledte økonomiske hierarkier Filterresultater Finansieringskildetyper Midler Gennemse ultimofinanstransaktioner</span><span class="sxs-lookup"><span data-stu-id="a0ad5-123">Advanced ledger entries Associate derived financial hierarchies Derived financial hierarchies Filter results Fund types Funds Preview year end general ledger transactions</span></span>
 
-### <a name="procurement-and-sourcing"></a><span data-ttu-id="fba92-124">Indkøb og forsyning</span><span class="sxs-lookup"><span data-stu-id="fba92-124">Procurement and sourcing</span></span>
+### <a name="procurement-and-sourcing"></a><span data-ttu-id="a0ad5-124">Indkøb og forsyning</span><span class="sxs-lookup"><span data-stu-id="a0ad5-124">Procurement and sourcing</span></span>
 
-<span data-ttu-id="fba92-125">Certificeringstype Bekræfter IO-koder Beløb på indkøbsordrelinjer</span><span class="sxs-lookup"><span data-stu-id="fba92-125">Certification type Confirming PO codes Purchase order line amounts</span></span>
-
+<span data-ttu-id="a0ad5-125">Certificeringstype Bekræfter IO-koder Beløb på indkøbsordrelinjer</span><span class="sxs-lookup"><span data-stu-id="a0ad5-125">Certification type Confirming PO codes Purchase order line amounts</span></span>
 
 
-<a name="additional-resources"></a><span data-ttu-id="fba92-126">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="fba92-126">Additional resources</span></span>
---------
 
-[<span data-ttu-id="fba92-127">Startside for offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="fba92-127">Public sector home page</span></span>](public-sector-functionality.md)
+## <a name="additional-resources"></a><span data-ttu-id="a0ad5-126">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="a0ad5-126">Additional resources</span></span>
+
+[<span data-ttu-id="a0ad5-127">Startside for offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="a0ad5-127">Public sector home page</span></span>](public-sector-functionality.md)
 
 
 

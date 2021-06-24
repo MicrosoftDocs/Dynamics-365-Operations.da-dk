@@ -15,85 +15,85 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 154c3d70b61869795edc25514e98a28389eeb244
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052235"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193425"
 ---
-# <a name="benefits-management-workspace"></a><span data-ttu-id="ef52d-103">Arbejdsområde for personalegodeadministration</span><span class="sxs-lookup"><span data-stu-id="ef52d-103">Benefits management workspace</span></span>
+# <a name="benefits-management-workspace"></a><span data-ttu-id="42b6f-103">Arbejdsområde for personalegodeadministration</span><span class="sxs-lookup"><span data-stu-id="42b6f-103">Benefits management workspace</span></span>
 
 [!include [applies to](../includes/applies-to-hr.md)]
 
 [!include [preview feature](./includes/preview-feature.md)]
 
-<span data-ttu-id="ef52d-104">Dette emne beskriver arbejdsområdet **Frynsegodeadministration** i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="ef52d-104">This topic describes the **Benefits management** workspace in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="42b6f-104">Dette emne beskriver arbejdsområdet **Frynsegodeadministration** i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="42b6f-104">This topic describes the **Benefits management** workspace in Dynamics 365 Human Resources.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ef52d-105">Hvis du vil have vist arbejdsområdet **Frynsegodeadministration**, skal du først aktivere funktionen **(Forhåndsversion) arbejdsområdet Frynsegodeadministration** i funktionsstyring.</span><span class="sxs-lookup"><span data-stu-id="ef52d-105">To view the **Benefits management** workspace, you must first enable the **(Preview) Benefits management workspace** feature in Feature management.</span></span> <span data-ttu-id="ef52d-106">Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](../hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="ef52d-106">For more information about enabling preview features, see [Manage features](../hr-admin-manage-features.md).</span></span><br><br><span data-ttu-id="ef52d-107">![Aktivere arbejdsområdet Frynsegodeadministration](./media/hr-benefits-management-workspace-enable.png)</span><span class="sxs-lookup"><span data-stu-id="ef52d-107">![Enable Benefits management workspace](./media/hr-benefits-management-workspace-enable.png)</span></span>
+> <span data-ttu-id="42b6f-105">Hvis du vil have vist arbejdsområdet **Frynsegodeadministration**, skal du først aktivere funktionen **(Forhåndsversion) arbejdsområdet Frynsegodeadministration** i funktionsstyring.</span><span class="sxs-lookup"><span data-stu-id="42b6f-105">To view the **Benefits management** workspace, you must first enable the **(Preview) Benefits management workspace** feature in Feature management.</span></span> <span data-ttu-id="42b6f-106">Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="42b6f-106">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span><br><br><span data-ttu-id="42b6f-107">![Aktivere arbejdsområdet Frynsegodeadministration](./media/hr-benefits-management-workspace-enable.png)</span><span class="sxs-lookup"><span data-stu-id="42b6f-107">![Enable Benefits management workspace](./media/hr-benefits-management-workspace-enable.png)</span></span>
 
-<span data-ttu-id="ef52d-108">Arbejdsområdet **Frynsegodeadministration** giver dig et hurtigt overblik over elementer til frynsegoder, der kræver din opmærksomhed.</span><span class="sxs-lookup"><span data-stu-id="ef52d-108">The **Benefits management** workspace gives you a quick view of benefits items that require your attention.</span></span> <span data-ttu-id="ef52d-109">På denne side kan du se:</span><span class="sxs-lookup"><span data-stu-id="ef52d-109">On this page, you can see:</span></span>
+<span data-ttu-id="42b6f-108">Arbejdsområdet **Frynsegodeadministration** giver dig et hurtigt overblik over elementer til frynsegoder, der kræver din opmærksomhed.</span><span class="sxs-lookup"><span data-stu-id="42b6f-108">The **Benefits management** workspace gives you a quick view of benefits items that require your attention.</span></span> <span data-ttu-id="42b6f-109">På denne side kan du se:</span><span class="sxs-lookup"><span data-stu-id="42b6f-109">On this page, you can see:</span></span>
 
-- <span data-ttu-id="ef52d-110">Totaler for elementer, der afventer handling</span><span class="sxs-lookup"><span data-stu-id="ef52d-110">Totals for items awaiting action</span></span>
-- <span data-ttu-id="ef52d-111">Arbejdere med ikke-bekræftede valg</span><span class="sxs-lookup"><span data-stu-id="ef52d-111">Workers with unconfirmed selections</span></span>
-- <span data-ttu-id="ef52d-112">Arbejdere, der for nylig har tilmeldt sig frynsegoder</span><span class="sxs-lookup"><span data-stu-id="ef52d-112">Workers who recently enrolled in benefits</span></span>
-- <span data-ttu-id="ef52d-113">Arbejdere med fremtidige livshændelser</span><span class="sxs-lookup"><span data-stu-id="ef52d-113">Workers with future life events</span></span>
-- <span data-ttu-id="ef52d-114">Nyansatte, der ikke er tilmeldt</span><span class="sxs-lookup"><span data-stu-id="ef52d-114">New hires who aren't enrolled</span></span>
-- <span data-ttu-id="ef52d-115">Arbejdere med aktive livshændelser</span><span class="sxs-lookup"><span data-stu-id="ef52d-115">Workers with active life events</span></span>
-- <span data-ttu-id="ef52d-116">Arbejdere med åbne tilmeldinger, som ikke har valgt nogen planer</span><span class="sxs-lookup"><span data-stu-id="ef52d-116">Workers with open enrollments who haven't opted for any plans</span></span>
+- <span data-ttu-id="42b6f-110">Totaler for elementer, der afventer handling</span><span class="sxs-lookup"><span data-stu-id="42b6f-110">Totals for items awaiting action</span></span>
+- <span data-ttu-id="42b6f-111">Arbejdere med ikke-bekræftede valg</span><span class="sxs-lookup"><span data-stu-id="42b6f-111">Workers with unconfirmed selections</span></span>
+- <span data-ttu-id="42b6f-112">Arbejdere, der for nylig har tilmeldt sig frynsegoder</span><span class="sxs-lookup"><span data-stu-id="42b6f-112">Workers who recently enrolled in benefits</span></span>
+- <span data-ttu-id="42b6f-113">Arbejdere med fremtidige livshændelser</span><span class="sxs-lookup"><span data-stu-id="42b6f-113">Workers with future life events</span></span>
+- <span data-ttu-id="42b6f-114">Nyansatte, der ikke er tilmeldt</span><span class="sxs-lookup"><span data-stu-id="42b6f-114">New hires who aren't enrolled</span></span>
+- <span data-ttu-id="42b6f-115">Arbejdere med aktive livshændelser</span><span class="sxs-lookup"><span data-stu-id="42b6f-115">Workers with active life events</span></span>
+- <span data-ttu-id="42b6f-116">Arbejdere med åbne tilmeldinger, som ikke har valgt nogen planer</span><span class="sxs-lookup"><span data-stu-id="42b6f-116">Workers with open enrollments who haven't opted for any plans</span></span>
 
 ![Arbejdsområde for personalegodeadministration](./media/hr-benefits-management-workspace.png)
 
-## <a name="view-action-items"></a><span data-ttu-id="ef52d-118">Se handlingselementer</span><span class="sxs-lookup"><span data-stu-id="ef52d-118">View action items</span></span>
+## <a name="view-action-items"></a><span data-ttu-id="42b6f-118">Se handlingselementer</span><span class="sxs-lookup"><span data-stu-id="42b6f-118">View action items</span></span>
 
-<span data-ttu-id="ef52d-119">Du kan få vist dine handlingselementer ved enten at vælge et felt eller en fane. Hvis du vælger en fane, kan du se og vælge arbejdere direkte på arbejdsområdesiden.</span><span class="sxs-lookup"><span data-stu-id="ef52d-119">You can view your action items by either selecting a tile or a tab. If you select a tab, you can view and select workers right on the workspace page.</span></span>
+<span data-ttu-id="42b6f-119">Du kan få vist dine handlingselementer ved enten at vælge et felt eller en fane. Hvis du vælger en fane, kan du se og vælge arbejdere direkte på arbejdsområdesiden.</span><span class="sxs-lookup"><span data-stu-id="42b6f-119">You can view your action items by either selecting a tile or a tab. If you select a tab, you can view and select workers right on the workspace page.</span></span>
 
 ![Handlingselementer](./media/hr-benefits-management-workspace-action-items.png)
 
-<span data-ttu-id="ef52d-121">Hvis du vælger et felt, går du til siden for det pågældende område.</span><span class="sxs-lookup"><span data-stu-id="ef52d-121">If you select a tile, you go to the page for that area.</span></span> <span data-ttu-id="ef52d-122">Hvis du f.eks. vælger et af disse felter, vises siden **Frynsegodeplaner for medarbejdere** filtreret efter medarbejdere, du skal udføre handling på:</span><span class="sxs-lookup"><span data-stu-id="ef52d-122">For example, selecting any of these tiles displays the **Worker benefits plans** page, filtered for employees you need to take action on:</span></span>
+<span data-ttu-id="42b6f-121">Hvis du vælger et felt, går du til siden for det pågældende område.</span><span class="sxs-lookup"><span data-stu-id="42b6f-121">If you select a tile, you go to the page for that area.</span></span> <span data-ttu-id="42b6f-122">Hvis du f.eks. vælger et af disse felter, vises siden **Frynsegodeplaner for medarbejdere** filtreret efter medarbejdere, du skal udføre handling på:</span><span class="sxs-lookup"><span data-stu-id="42b6f-122">For example, selecting any of these tiles displays the **Worker benefits plans** page, filtered for employees you need to take action on:</span></span>
 
-- <span data-ttu-id="ef52d-123">**Ikke-bekræftede valg**</span><span class="sxs-lookup"><span data-stu-id="ef52d-123">**Unconfirmed selections**</span></span>
-- <span data-ttu-id="ef52d-124">**Åbn tilmeldinger med ingen udtjekkede planer**</span><span class="sxs-lookup"><span data-stu-id="ef52d-124">**Open enrollments with no checked out plans**</span></span>
-- <span data-ttu-id="ef52d-125">**Tilmeldt i personalegoder**</span><span class="sxs-lookup"><span data-stu-id="ef52d-125">**Enrolled in benefits**</span></span>
-- <span data-ttu-id="ef52d-126">**Nyansat, der ikke er tilmeldt**</span><span class="sxs-lookup"><span data-stu-id="ef52d-126">**New hire not enrolled**</span></span>
+- <span data-ttu-id="42b6f-123">**Ikke-bekræftede valg**</span><span class="sxs-lookup"><span data-stu-id="42b6f-123">**Unconfirmed selections**</span></span>
+- <span data-ttu-id="42b6f-124">**Åbn tilmeldinger med ingen udtjekkede planer**</span><span class="sxs-lookup"><span data-stu-id="42b6f-124">**Open enrollments with no checked out plans**</span></span>
+- <span data-ttu-id="42b6f-125">**Tilmeldt i personalegoder**</span><span class="sxs-lookup"><span data-stu-id="42b6f-125">**Enrolled in benefits**</span></span>
+- <span data-ttu-id="42b6f-126">**Nyansat, der ikke er tilmeldt**</span><span class="sxs-lookup"><span data-stu-id="42b6f-126">**New hire not enrolled**</span></span>
 
 ![Personalegodeplaner for arbejder](./media/hr-benefits-management-workspace-plans.png)
 
-<span data-ttu-id="ef52d-128">Når du vælger feltet **Aktive livshændelser** eller **Fremtidige livshændelser**, får du en liste over aktive eller fremtidige livshændelser.</span><span class="sxs-lookup"><span data-stu-id="ef52d-128">Selecting the **Active life events** or **Future life events** tiles takes you to a list of active or future life events.</span></span>
+<span data-ttu-id="42b6f-128">Når du vælger feltet **Aktive livshændelser** eller **Fremtidige livshændelser**, får du en liste over aktive eller fremtidige livshændelser.</span><span class="sxs-lookup"><span data-stu-id="42b6f-128">Selecting the **Active life events** or **Future life events** tiles takes you to a list of active or future life events.</span></span>
 
 ![Livshændelser](./media/hr-benefits-management-workspace-life-events.png)
 
-## <a name="processing"></a><span data-ttu-id="ef52d-130">Afvikling</span><span class="sxs-lookup"><span data-stu-id="ef52d-130">Processing</span></span>
+## <a name="processing"></a><span data-ttu-id="42b6f-130">Afvikling</span><span class="sxs-lookup"><span data-stu-id="42b6f-130">Processing</span></span>
 
-<span data-ttu-id="ef52d-131">Hvis du vil behandle tilmeldingsberettigelse, livshændelser eller ændringer af frynsegodesatsen, skal du vælge det relevante element på navigationslinjen.</span><span class="sxs-lookup"><span data-stu-id="ef52d-131">To process enrollment eligibility, life events, or rate change updates, select the appropriate item on the navigation bar.</span></span>
+<span data-ttu-id="42b6f-131">Hvis du vil behandle tilmeldingsberettigelse, livshændelser eller ændringer af frynsegodesatsen, skal du vælge det relevante element på navigationslinjen.</span><span class="sxs-lookup"><span data-stu-id="42b6f-131">To process enrollment eligibility, life events, or rate change updates, select the appropriate item on the navigation bar.</span></span>
 
 ![Afvikling](./media/hr-benefits-management-workspace-processing.png)
 
-<span data-ttu-id="ef52d-133">For at få vist resultaterne af processen skal du vælge **Procesresultater** på siden.</span><span class="sxs-lookup"><span data-stu-id="ef52d-133">To view process results, select **Process results** on the page.</span></span>
+<span data-ttu-id="42b6f-133">For at få vist resultaterne af processen skal du vælge **Procesresultater** på siden.</span><span class="sxs-lookup"><span data-stu-id="42b6f-133">To view process results, select **Process results** on the page.</span></span>
 
 ![Procesresultater](./media/hr-benefits-management-workspace-process-results.png)
 
-<span data-ttu-id="ef52d-135">Du kan finde flere oplysninger om behandling af frynsegoder under:</span><span class="sxs-lookup"><span data-stu-id="ef52d-135">For more information about benefits processing, see:</span></span>
+<span data-ttu-id="42b6f-135">Du kan finde flere oplysninger om behandling af frynsegoder under:</span><span class="sxs-lookup"><span data-stu-id="42b6f-135">For more information about benefits processing, see:</span></span>
 
-- [<span data-ttu-id="ef52d-136">Behandle berettigelse til tilmelding</span><span class="sxs-lookup"><span data-stu-id="ef52d-136">Process enrollment eligibility</span></span>](hr-benefits-process-enrollment-eligibility.md)
-- [<span data-ttu-id="ef52d-137">Behandle ændringer af livsbegivenheder</span><span class="sxs-lookup"><span data-stu-id="ef52d-137">Process life event changes</span></span>](hr-benefits-process-life-event-changes.md)
-- [<span data-ttu-id="ef52d-138">Behandle berettigelse til livsbegivenheder</span><span class="sxs-lookup"><span data-stu-id="ef52d-138">Process life event eligibility</span></span>](hr-benefits-process-life-event-eligibility.md)
-- [<span data-ttu-id="ef52d-139">Behandle livsbegivenheder</span><span class="sxs-lookup"><span data-stu-id="ef52d-139">Process life events</span></span>](hr-benefits-process-life-events.md)
-- [<span data-ttu-id="ef52d-140">Behandle satsændringer</span><span class="sxs-lookup"><span data-stu-id="ef52d-140">Process rate changes</span></span>](hr-benefits-process-rate-changes.md)
+- [<span data-ttu-id="42b6f-136">Behandle berettigelse til tilmelding</span><span class="sxs-lookup"><span data-stu-id="42b6f-136">Process enrollment eligibility</span></span>](hr-benefits-process-enrollment-eligibility.md)
+- [<span data-ttu-id="42b6f-137">Behandle ændringer af livsbegivenheder</span><span class="sxs-lookup"><span data-stu-id="42b6f-137">Process life event changes</span></span>](hr-benefits-process-life-event-changes.md)
+- [<span data-ttu-id="42b6f-138">Behandle berettigelse til livsbegivenheder</span><span class="sxs-lookup"><span data-stu-id="42b6f-138">Process life event eligibility</span></span>](hr-benefits-process-life-event-eligibility.md)
+- [<span data-ttu-id="42b6f-139">Behandle livsbegivenheder</span><span class="sxs-lookup"><span data-stu-id="42b6f-139">Process life events</span></span>](hr-benefits-process-life-events.md)
+- [<span data-ttu-id="42b6f-140">Behandle satsændringer</span><span class="sxs-lookup"><span data-stu-id="42b6f-140">Process rate changes</span></span>](hr-benefits-process-rate-changes.md)
 
-## <a name="change-period"></a><span data-ttu-id="ef52d-141">Ændre periode</span><span class="sxs-lookup"><span data-stu-id="ef52d-141">Change period</span></span>
+## <a name="change-period"></a><span data-ttu-id="42b6f-141">Ændre periode</span><span class="sxs-lookup"><span data-stu-id="42b6f-141">Change period</span></span>
 
-<span data-ttu-id="ef52d-142">Hvis du vil have vist en anden frynsegodeperiode, skal du vælge den på rullelisten **Periode**.</span><span class="sxs-lookup"><span data-stu-id="ef52d-142">To view a different benefits period, select it from the **Period** dropdown.</span></span>
+<span data-ttu-id="42b6f-142">Hvis du vil have vist en anden frynsegodeperiode, skal du vælge den på rullelisten **Periode**.</span><span class="sxs-lookup"><span data-stu-id="42b6f-142">To view a different benefits period, select it from the **Period** dropdown.</span></span>
 
 ![Ændre periode](./media/hr-benefits-management-workspace-period.png)
 
-## <a name="view-more-options"></a><span data-ttu-id="ef52d-144">Se flere indstillinger</span><span class="sxs-lookup"><span data-stu-id="ef52d-144">View more options</span></span>
+## <a name="view-more-options"></a><span data-ttu-id="42b6f-144">Se flere indstillinger</span><span class="sxs-lookup"><span data-stu-id="42b6f-144">View more options</span></span>
 
-<span data-ttu-id="ef52d-145">Vælg **Links**, hvis du vil have vist flere oplysninger og handlinger, du kan udføre.</span><span class="sxs-lookup"><span data-stu-id="ef52d-145">To view more information and actions you can take, select **Links**.</span></span>
+<span data-ttu-id="42b6f-145">Vælg **Links**, hvis du vil have vist flere oplysninger og handlinger, du kan udføre.</span><span class="sxs-lookup"><span data-stu-id="42b6f-145">To view more information and actions you can take, select **Links**.</span></span>
 
 ![Link](./media/hr-benefits-management-workspace-links.png)
 
-## <a name="see-also"></a><span data-ttu-id="ef52d-147">Se også</span><span class="sxs-lookup"><span data-stu-id="ef52d-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="42b6f-147">Se også</span><span class="sxs-lookup"><span data-stu-id="42b6f-147">See also</span></span>
 
-[<span data-ttu-id="ef52d-148">Oversigt over administration af frynsegoder</span><span class="sxs-lookup"><span data-stu-id="ef52d-148">Benefits management overview</span></span>](hr-benefits-management-overview.md)
+[<span data-ttu-id="42b6f-148">Oversigt over administration af frynsegoder</span><span class="sxs-lookup"><span data-stu-id="42b6f-148">Benefits management overview</span></span>](hr-benefits-management-overview.md)
