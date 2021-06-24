@@ -72,7 +72,7 @@
                   items:
                     - name: Nyheder eller ændringer i Supply Chain Management-startside
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.20 (juli 2021)
+                    - name: Supply Chain Management 10.0.20 (august 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (juni 2021)
                       href: get-started/whats-new-scm-10-0-19.md
@@ -222,6 +222,8 @@
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oprette ER-konfigurationer i Regulatory Configuration Service og overføre dem til det globale lager
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service – afskrivning af Lifecycle Services-lagring
+                      href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronisk fakturering
                   items:
                     - name: Oversigt over elektronisk fakturering
@@ -234,6 +236,8 @@
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oprette en Azure-lagerkonto og en Key Vault
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Dashboard til brugsstyring
+                      href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Start her
                       items:
                         - name: Start her med serviceadministration i elektronisk fakturering
@@ -1383,8 +1387,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Oprette formularer med fritekstfakturaer (FTI), der kan udskrives'
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Spore kørsel af ER-formater til fejlfinding af problemer med ydeevnen
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Designe effektive ER-løsninger
+                  items:
+                    - name: Spore kørsel af ER-formater til fejlfinding af problemer med ydeevnen
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Foretage fejlfinding af problemer med ydeevnen i ER-konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Styring af forretningsdokumenter (BDM)
                   items:
                     - name: BDM (fordelt ordrestyring)-oversigt
@@ -1675,30 +1683,38 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Samarbejde med intern forsyningskædes kunder
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: Behovsprognoser
+            - name: Budgettering
               items:
-                - name: Oversigt over behovsprognoser
-                  href: master-planning/introduction-demand-forecasting.md
-                - name: Konfigurere behovsprognoser
-                  href: master-planning/demand-forecasting-setup.md
-                - name: Importere historiske data til behovsprognoser
-                  href: master-planning/import-historical-data.md
-                - name: Generere et statistisk budgetgrundlag
-                  href: master-planning/generate-statistical-baseline-forecast.md
-                - name: Foretag manuel regulering af budgetgrundlaget
-                  href: master-planning/manual-adjustments-baseline-forecast.md
-                - name: Autorisere en justeret prognose
-                  href: master-planning/authorize-adjusted-forecast.md
-                - name: Overvåge prognosenøjagtighed
-                  href: master-planning/monitor-forecast-accuracy.md
-                - name: 'Fjerne afvigende fra historiktransaktionsdata, når du beregner en efterspørgselsprognose'
-                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-                - name: Reduktionsnøgler
-                  href: master-planning/reduction-keys.md
-                - name: Oprette et prognosegrundlag
-                  href: master-planning/tasks/create-baseline-forecast.md
-                - name: Ændre en behovsprognose manuelt
-                  href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Behovs- og forsyningsprognoser
+                  items:
+                    - name: Lagerbudgetter
+                      href: master-planning/inventory-forecast.md
+                    - name: 'Vejledning: Ændre en behovsprognose manuelt'
+                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Behovsprognoser
+                  items:
+                    - name: Oversigt over behovsprognoser
+                      href: master-planning/introduction-demand-forecasting.md
+                    - name: Konfigurere behovsprognoser
+                      href: master-planning/demand-forecasting-setup.md
+                    - name: Generere et statistisk budgetgrundlag
+                      href: master-planning/generate-statistical-baseline-forecast.md
+                    - name: Foretage manuel regulering af budgetgrundlaget
+                      href: master-planning/manual-adjustments-baseline-forecast.md
+                    - name: Godkende en justeret prognose
+                      href: master-planning/authorize-adjusted-forecast.md
+                    - name: Importere historiske data til behovsprognoser
+                      href: master-planning/import-historical-data.md
+                    - name: 'Fjerne afvigelser fra historiktransaktionsdata, når du beregner en behovsprognose'
+                      href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                    - name: Overvåge prognosenøjagtighed
+                      href: master-planning/monitor-forecast-accuracy.md
+                    - name: 'Vejledning: Oprette et prognosegrundlag'
+                      href: master-planning/tasks/create-baseline-forecast.md
+                - name: Varedisponering med prognose
+                  items:
+                    - name: Prognosereduktionsnøgler
+                      href: master-planning/reduction-keys.md
             - name: Fejlfinde varedisponering
               href: master-planning/troubleshoot-masterplanning.md
         - name: Mobilapp
@@ -3425,6 +3441,8 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Salg og marketing
               items:
+                - name: 'Antallet kan ikke reduceres, når salgsordren annulleres'
+                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
                 - name: 'Systemadministratorer kan ikke rydde tilbageholdte ordrer, fordi de ikke er godkendt'
                   href: troubleshooting/sales/system-administrator.md
             - name: Transportstyring
