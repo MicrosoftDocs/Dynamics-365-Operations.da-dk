@@ -14,7 +14,7 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Platformsopdateringer til version 10.0.20 (juli 2021)
+                - name: Platformsopdateringer til version 10.0.20 (august 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platformsopdateringer til 10.0.19 (juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
@@ -850,12 +850,10 @@
               items:
                 - name: Udføre sporinger ved hjælp af sporingsparser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Enkeltbrugertest med Arbejdsrutineoptager og Performance SDK
+                - name: Enkeltbrugertest ved brug af Performance SDK og Arbejdsrutineoptager
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Flerbrugertest med Performance SDK og en lokal testcontroller
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: Flerbrugertest med Performance SDK og Azure DevOps
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: Flerbrugertest ved brug af Performance SDK
+                  href: perf-test/perfsdk-multi-user-testing.md
                 - name: Vejledning i fejlfinding af test af Performance SDK
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Performance SDK og flerbrugertest i lokale miljøer
@@ -1538,6 +1536,8 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Oprette batchjob
                   href: sysadmin/tasks/create-batch-job.md
+                - name: Aktivere automatiske gentagelser på batchjob
+                  href: sysadmin/retryable-batch.md
                 - name: Kopiere et batchjob
                   href: sysadmin/copy-batch-job.md
                 - name: Aktive batchperioder
@@ -1588,12 +1588,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: Opgradering til AX 2012 – Kontrolliste før opgradering af data
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012-opgradering – Dataopgradering i sandkassemiljøer vha. DACPAC-proces
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Opgradere fra AX 2012 – SQL-transaktionsreplikering
                   href: database/replication-setup.md
-                - name: Opgradering til AX 2012 – Dataopgradering i sandkassemiljøer
-                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: Opgradere fra AX 2012 – Dataopgradering i selvbetjeningsmiljøer
+                  href: migration-upgrade/data-upgrade-self-service.md
                 - name: Opgradering til AX 2012 – Lokale miljøer
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: Opgradering til AX 2012 – Efterkalkulationstest
