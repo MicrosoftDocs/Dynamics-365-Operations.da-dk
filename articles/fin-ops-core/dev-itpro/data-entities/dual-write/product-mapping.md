@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941190"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306383"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
@@ -124,7 +124,7 @@ Produktdimensioner er egenskaber, der identificerer en produktvariant. De fire p
 
 Når et produkt har forskellige produktdimensioner (en produktmaster har f.eks. størrelse og farve som produktdimensioner), defineres hvert specifikt produkt (dvs. de enkelte produktvarianter) som en kombination af disse produktdimensioner. Produktnummer B0001 er f.eks. en ekstra lille sort T-shirt, og produktnummer B0002 er en lille sort T-shirt. I dette tilfælde defineres de eksisterende kombinationer af produktdimensioner. F.eks. kan T-shirten fra det foregående eksempel være ekstra lille og sort, lille og sort, mellem og sort eller stor og sort, men den kan ikke være ekstrastor og sort. Det vil sige, at de produktdimensioner, en produktmaster kan antage, angives, og varianter kan frigives ud fra disse værdier.
 
-For at holde styr på de produktdimensioner, en produktmaster kan antage, oprettes og tilknyttes følgende tabeller i Dataverse for hver produktdimension. Yderligere oplysninger finder du i [Oversigt over produktoplysninger](.. /.. /.. /supply-chain/pim/product-information.md).
+For at holde styr på de produktdimensioner, en produktmaster kan antage, oprettes og tilknyttes følgende tabeller i Dataverse for hver produktdimension. Du kan finde flere oplysninger under [Oversigt over produktoplysninger](../../../../supply-chain/pim/product-information.md). 
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 

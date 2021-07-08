@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 2164c07d1a179a0aa15611b742084d872f41bbfc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923301"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270807"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -160,8 +160,8 @@ Politikken er, at alle nye funktioner vil være tilvalg i en periode på 12 mån
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Hvorfor er der ikke en specifik 'obligatorisk aktiveringsdato'? 
 Timing af opdateringsfrigivelse er variabel, timing af miljøopdateringer er variabel, og kunder kan vælge at springe visse opdateringer over. Derfor er det vanskeligt at fastlægge bestemte datoer. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Hvor er dokumentationen til de funktioner, der gøres obligatoriske? 
-Denne dokumentation kommer fra programteams. Disse vil ofte være nævnt i [Fjernede eller udfasede funktioner](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Hvor er dokumentationen til de funktioner, der er obligatoriske? 
+Denne dokumentation kommer fra de enkelte Dynamics 365-programteams. Disse funktioner nævnes ofte i [Opdateringer til klientfunktiontilstande](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) eller [Fjernede eller udfasede funktioner](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Er der en besked i produktet eller et signal om, at en funktion skal være obligatorisk? 
 I dag findes der ikke en beskedmekanisme, der vedrører, at funktionen er obligatorisk.

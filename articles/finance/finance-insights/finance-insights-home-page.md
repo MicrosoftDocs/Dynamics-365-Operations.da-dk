@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
+ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222504"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261904"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (prøveversion)
 
@@ -32,6 +32,9 @@ Med Finance Insights kan du konfigurere og udvide modeller, så du præcist og i
 Financial Insights prøveversion er tilgængelig for prøveimplementeringer i USA, Europa og Storbritannien. Microsoft tilføjer trinvist understøttelse af flere regioner.
 
 Prøveversionsfunktioner kan og bør kun aktiveres i sandkasse miljøer i niveau 2. Opsætnings- og kunstige AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+
+> [!NOTE]
+> Denne funktionalitet tilbydes som en række prøveversionsfunktioner. Under kørsel af en prøveversionsfunktion bør du ikke bruge de oprettede modeller til maskinel indlæring til at danne grundlag for eller påvirke virksomhedens beslutninger eller budgetteringsforslag. Din brug af funktionen styres af [supplerende vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 ## <a name="prerequisites"></a>Forudsætninger
 

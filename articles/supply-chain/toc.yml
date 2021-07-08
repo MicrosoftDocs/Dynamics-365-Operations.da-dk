@@ -78,8 +78,6 @@
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (maj 2021)
                       href: get-started/whats-new-scm-10-0-18.md
-                    - name: Supply Chain Management 10.0.17 (april 2021)
-                      href: get-started/whats-new-scm-10-0-17.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner på startsiden
@@ -601,8 +599,22 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Bruge indholdspakke til Microsoft Power BI-rapportering
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Bruge arbejdsområde for omkostningsstyring i mobilansøgningen til Finance and Operations
+            - name: Bruge arbejdsområde for omkostningsstyring i Finance and Operations-mobilapplikationen
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globalt lagerregnskab
+          items:
+            - name: Startside for globalt lagerregnskab
+              href: global-inventory-accounting/global-inventory-accounting-home.md
+            - name: Kom i gang med globalt lagerregnskab
+              href: global-inventory-accounting/get-started-with-gia.md
+            - name: 'Forretningsdokumenter, der understøttes af globalt lagerregnskab'
+              href: global-inventory-accounting/business-documents-supported.md
+            - name: Aktivere Power BI til globalt lagerregnskab
+              href: global-inventory-accounting/enable-power-bi-for-gia.md
+            - name: Konventioner
+              href: global-inventory-accounting/conventions.md
+            - name: Global lagerregnskabsbog
+              href: global-inventory-accounting/global-inventory-accounting-ledger.md
         - name: Omkostningsstyring
           items:
             - name: Startside for omkostningsstyring
@@ -873,6 +885,12 @@
               items:
                 - name: Formelsprog
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Understøttede datatyper til ER-formler
+                  items:
+                    - name: Basisdatatyper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sammensatte datatyper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funktioner
                   items:
                     - name: Container
@@ -1395,7 +1413,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Styring af forretningsdokumenter (BDM)
                   items:
-                    - name: BDM (fordelt ordrestyring)-oversigt
+                    - name: BDM-oversigt
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Brugergrænseflade for nyt dokument i BDM
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/supply-chain/toc.json
@@ -1417,12 +1435,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Applikationsopdatering 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Applikationsopdatering 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
                   items:
                     - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Delegere oprettelsen af en ER-destination til en brugerdefineret destinationsfabrik
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Implementere en brugerdefineret destination for oprettede dokumenter
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Starte datakildeværdier for USER INPUT PARAMETER-typen fra kildekoden
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Lagerstyring
@@ -1593,6 +1615,8 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Sikkerhedsmargener
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Forsinkelsestolerance (negative dage)
+                  href: master-planning/planning-optimization/delay-tolerance.md
                 - name: Indkøbsrekvisitioner
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanlægning
@@ -1603,6 +1627,8 @@
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Udelukke produkter med visse produktlivscyklustilstande
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Genopfyldningsmetoder og ændring af antal
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Disponeringstidshorisonter
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Godkende ordreforslag
@@ -3047,6 +3073,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Registrere varer for en vare med aktiveret grundlæggende lagerstyring ved hjælp af en varemodtagelseskladde
                   href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Importere indgående ASN'er via V2-dataenheden
+                  href: warehousing/import-asn-v2-data-entity.md
                 - name: Levere produkter direkte fra modtagende lagersteder til butikker
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
@@ -3215,6 +3243,8 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Definere delvis cyklusoptællingsproces for lokation
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Eksempelscenarier for cyklusoptælling
+                      href: warehousing/cycle-counting-scenarios.md
                     - name: Oprydningsjob for disponible poster for lagerstedsstyring
                       href: warehousing/onhand-cleanup.md
                     - name: Lagerkladder
@@ -3241,6 +3271,52 @@
                       href: warehousing/mhax.md
                     - name: Fejlfinde lagerstedsarbejde
                       href: warehousing/troubleshoot-warehouse-work.md
+            - name: Lagersteds-appen
+              items:
+                - name: 'Installere, konfigurere og bruge mobilenheder'
+                  items:
+                    - name: Nyheder eller ændringer i Warehouse Management-mobilappen
+                      href: warehousing/whats-new-wma.md
+                    - name: Installere og tilslutte Warehouse Management-mobilappen
+                      href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Installere og tilslutte lagerstedsapp
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Scanne stregkoder med et kamera i Warehouse Management-mobilappen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Fejlfinde problemer med forbindelse til Warehouse Management-mobilappen
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
+                - name: Konfigurere felter og menuer til mobilenheder
+                  items:
+                    - name: Konfigurere felter til Warehouse Management-mobilappen
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Konfigurere mobilenheder til lagerstedsarbejde
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Modtage id med Warehouse Management-mobilappen
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Konfigurere et menupunkt til en mobil enhed for at oprette en pluklinjeoversigt
+                      href: warehousing/pick-line-overview.md
+                    - name: Oprette et menupunkt for mobilenhedens id-konsolidering
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Modtagelse af blandede id'er på en mobilenhed
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Konfigurere visning af ældre batches på lagerstedet på en mobilenhed
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Plukke den ældste batch på en mobilenhed
+                      href: warehousing/pick-oldest-batch.md
+                - name: Indstillinger for mobilenhedsbruger
+                  href: warehousing/mobile-device-user-settings.md
+                - name: Hændelsesbehandling af lagerstedsapp
+                  href: warehousing/warehouse-app-events.md
+                - name: Tilpasse lagerstedsappen
+                  items:
+                    - name: Procesvejledningsstruktur
+                      href: warehousing/process-guide-framework.md
+                    - name: Tildele trinikoner og titler
+                      href: warehousing/step-icons-titles.md
             - name: Konfigurere lagersted
               items:
                 - name: Konfigurere lagersted
@@ -3277,8 +3353,12 @@
                           href: warehousing/wave-execution-notifications.md
                         - name: Bølgeetiketudskrivning
                           href: warehousing/configure-wave-label-printing.md
+                        - name: Planlægge bølgeetiketudskrivning under bølgen
+                          href: warehousing/configure-task-based-wave-label-printing.md
                         - name: Containerisering
                           href: warehousing/wave-containerization.md
+                        - name: Containerpakningsstrategier
+                          href: warehousing/container-packing-strategy-overview.md
                     - name: Opdatere forsendelser automatisk
                       href: warehousing/auto-update-shipment.md
                     - name: Oprette en lokationsprofil
@@ -3309,44 +3389,6 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Fejlfinde konfiguration af lagersted
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Installere og konfigurere Warehouse Management-mobilappen
-                  items:
-                    - name: Installere og tilslutte Warehouse Managementmobilappen
-                      href: warehousing/install-configure-warehouse-management-app.md
-                    - name: Indstillinger for mobilenhedsbruger
-                      href: warehousing/mobile-device-user-settings.md
-                    - name: Installere og tilslutte lagerstedsapp
-                      href: warehousing/install-configure-warehousing-app.md
-                    - name: Scanne stregkoder med et kamera i Warehouse Management-mobilappen
-                      href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Konfigurere felter til Warehouse Management-mobilappen
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: Konfigurere mobilenheder til lagerstedsarbejde
-                      href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Tildele trinikoner og titler
-                      href: warehousing/step-icons-titles.md
-                    - name: Hændelsesbehandling af lagerstedsapp
-                      href: warehousing/warehouse-app-events.md
-                    - name: Modtage id med Warehouse Management-mobilappen
-                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
-                      href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer
-                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Konfigurere et menupunkt til en mobil enhed for at oprette en pluklinjeoversigt
-                      href: warehousing/pick-line-overview.md
-                    - name: Oprette et menupunkt for mobilenhedens id-konsolidering
-                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                    - name: Modtagelse af blandede id'er på en mobilenhed
-                      href: warehousing/mixed-license-plate-receiving.md
-                    - name: Konfigurere visning af ældre batches på lagerstedet på en mobilenhed
-                      href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Plukke den ældste batch på en mobilenhed
-                      href: warehousing/pick-oldest-batch.md
-                    - name: Procesvejledningsstruktur
-                      href: warehousing/process-guide-framework.md
-                    - name: Fejlfinde problemer med forbindelse til Warehouse Management-mobilappen
-                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Opgradering og overflytning
                   items:
                     - name: Opgradere lagerstedsstyringsprocesser fra Microsoft Dynamics AX 2012 til Finance and Operations
@@ -3393,6 +3435,22 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Varedisponering
               items:
+                - name: 'Du får vist en fejl, når du kører det indbyggede program til behovsplanlægning'
+                  href: troubleshooting/planning/deprecated-master-planning-error.md
+                - name: En vare kan ikke have en stykliste eller formel
+                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
+                - name: Parametre for behovsplan findes ikke
+                  href: troubleshooting/planning/no-parameters-for-master-plan.md
+                - name: 'Produktionsordreforslaget skal planlægges, inden den kan autoriseres'
+                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
+                - name: Produktet er på hold for transaktioner
+                  href: troubleshooting/planning/product-is-on-hold.md
+                - name: Det valgte formelnummer er ikke godkendt for en batchordre.
+                  href: troubleshooting/planning/selected-formula-not-approved.md
+                - name: Kreditorkode er ikke godkendt til et bestemt produkt og en bestemt dato
+                  href: troubleshooting/planning/vendor-code-not-authorized.md
+                - name: Kreditor angives ikke ved autorisation af ordreforslag
+                  href: troubleshooting/planning/vendor-not-specified.md
                 - name: Direkte afledte autoriserede ordrer behandles af en arbejdsgang til gennemsyn
                   href: troubleshooting/planning/firmed-directly-deri.md
                 - name: Du kan ikke filtrere varedisponeringsvarer efter deres relaterede disponeringsgruppeværdier
@@ -3441,7 +3499,7 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Salg og marketing
               items:
-                - name: 'Antallet kan ikke reduceres, når salgsordren annulleres'
+                - name: 'Antallet kan ikke reduceres, når salgsordre annulleres'
                   href: troubleshooting/sales/quantity-cannot-be-reduced.md
                 - name: 'Systemadministratorer kan ikke rydde tilbageholdte ordrer, fordi de ikke er godkendt'
                   href: troubleshooting/sales/system-administrator.md
@@ -3451,6 +3509,20 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerstedsstyring
               items:
+                - name: Annullerede produktkvitteringer opdaterer ikke transaktionsstatus til registreret
+                  href: troubleshooting/warehousing/canceled-product-receipts.md
+                - name: Decimal afrunding af det fysiske opdateringsantal er ikke korrekt
+                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+                - name: Fysisk rest i enheden skal være forskellig fra nul
+                  href: troubleshooting/warehousing/physical-remaining-q.md
+                - name: Plukket antal er ikke tilstrækkeligt ved generering af følgesedler
+                  href: troubleshooting/warehousing/picked-quantity-is-n.md
+                - name: Antallet overskrider overleveringsprocenten ved generering af følgesedler
+                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+                - name: 'Antal, som du forsøger at opdatere, overskrider det antal, der er modtaget/leveret'
+                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+                - name: Antallet overskrider underleveringsprocenten ved generering af følgesedler
+                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
                 - name: 'Der opstår en fejl, når adressen vælges under registrering af pluklisten'
                   href: troubleshooting/warehousing/error-cannot-update.md
                 - name: Pakkestation viser ikke produktnoter

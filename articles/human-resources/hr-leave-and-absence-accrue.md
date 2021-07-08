@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86ca63b1703faa6f57ed2e5591c89a5e84363481
-ms.sourcegitcommit: 318e406b84d43381d450272eb83c5eea9c5cf1c0
+ms.openlocfilehash: ddd4c55f6ebfbe91fb949a92cb379f51d826c465
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059467"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303458"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodiser orlovs- og fraværsplaner
 
@@ -104,11 +104,9 @@ Slet periodiseringsposter for en specifik plan og et bestemt datointerval. Perio
 
 2. Under **Administrer orlov** skal du vælge **Slet revision af orlovsperiodisering**.
 
-## <a name="preview-leave-accrual-transaction-auditing"></a>(Forhåndsversion) Revision af transaktion til orlovsperiodisering
+## <a name="leave-accrual-transaction-auditing"></a>Revision af transaktion til orlovsperiodisering
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Denne prøveversionsfunktion hjælper orlovs- og fraværsadministratorer med at forstå posteringer til periodisering af orlov og fravær, der er relateret til en medarbejders fritidssaldi for en bestemt orlovstype.
+Denne funktion hjælper orlovs- og fraværsadministratorer med at forstå posteringer til periodisering af orlov og fravær, der er relateret til en medarbejders fritidssaldi for en bestemt orlovstype.
 
 Sådan får du vist transaktionsdetaljer:
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 2867a4f9418e9435e2980fc24314914595ec44d0
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103587"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301668"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom i gang med planlægningsoptimering
 
@@ -109,6 +109,8 @@ Indstillingen af indstillingen **Brug Planlægningsoptimering** bestemmer, hvilk
 
 - **Ja** – Planlægningsoptimering bruges til varedisponering.
 - **Nej** – Det indbyggede planlægningsprogram for Supply Chain Management bruges til varedisponering.
+
+Denne indstilling gælder for alle juridiske enheder (firmaer). Det er ikke muligt at bruge planlægningsoptimering i visse juridiske enheder og den indbyggede varedisponering i andre juridiske enheder.
 
 > [!NOTE]
 > Hvis de eksisterende planlægningsbatchjob, der blev oprettet til det indbyggede planlægningsprogram for Supply Chain Management, udløses mens indstillingen **Brug Planlægningsoptimering** er angivet til **Ja**, vil disse job ikke blive udført.

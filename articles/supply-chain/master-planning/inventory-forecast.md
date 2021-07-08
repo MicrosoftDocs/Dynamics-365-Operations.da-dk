@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7ed310ebdef130b0fb09c5db19397398dc5042
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216836"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306409"
 ---
 # <a name="inventory-forecasts"></a>Lagerbudgetter
 
@@ -353,20 +353,46 @@ Du kan bruge denne procedure til at behandle eksisterende budgetposteringslinjer
 1. Brug sektionen **Økonomiske dimensioner** til at opdatere de økonomiske dimensioner for budgetlinjerne. Vælg de økonomiske dimensioner, du vil ændre, og angiv derefter en værdi, der skal gælde for de valgte dimensioner.
 1. Vælg **OK** for at anvende ændringerne.
 
-## <a name="run-forecast-planning"></a>Køre hovedplanlægning
+## <a name="use-forecasts-with-master-planning"></a>Brug prognoser med varedisponering
 
-Når du har angivet din behovsprognose og/eller forsyningsprognose, kan du udføre hovedplanlægning for at beregne bruttobehov for materialer og kapacitet og for at oprette ordreforslag.
+Når du har indtastet efterspørgselsprognosen og/eller forsyningsprognosen, kan du medtage prognoserne under behovsplanlægningen for at tage højde for den forventede efterspørgsel og/eller forsyning i behovsplanlægningen. Når prognoser medtages i behovsplanlægningen, beregnes der bruttobehov for materialer og kapacitet, og der genereres ordreforslag.
 
-1. Gå til **Varedisponering \> Budgettering \> Hovedplanlægning**.
-1. Vælg en hovedplan i feltet **Hovedplan**.
-1. Aktivér **Spor behandlingstid** for at registrere behandlingstiden for hver planlægningsopgave.
-1. Indtast en værdi i feltet **Antal tråde**. (Du kan finde flere oplysninger i [Forbedre ydeevne af varedisponering](master-planning-performance.md)).
-1. Indtast tekst for at registrere eventuelle supplerende oplysninger, der kræves, i feltet **Kommentar**.
-1. Gå til oversigtspanelet **Poster, der skal indgå**, og vælg **Filter** for at begrænse varevalget.
-1. Angiv parametrene for batchen i oversigtspanelet **Kør i baggrunden**.
+### <a name="set-up-a-master-plan-to-include-an-inventory-forecast"></a>Oprette en behovsplan, der omfatter et lagerbudget
+
+Hvis du vil konfigurere en behovsplan, så den omfatter et lagerbudget, skal du følge disse trin.
+
+1. Gå til **Varedisponering \> Opsætning \> Planer \> Behovsplaner**.
+1. Vælg en eksisterende plan, eller opret en ny plan.
+1. I oversigtspanelet **Generelt** skal du indstille følgende felter:
+
+    - **Prognosemodel** – Vælg den prognosemodel, der skal anvendes. Denne model tages i betragtning, når der genereres et forsyningsforslag for den aktuelle behovsplan.
+    - **Medtag forsyningsprognose** – Angiv denne indstilling til *Ja* for at medtage forsyningsprognosen i den aktuelle behovsplan. Hvis du angiver den til *Nej*, medtages der ikke forsyningsprognosetransaktioner i behovsplanen.
+    - **Medtag behovsprognose** – Angiv denne indstilling til *Ja* for at medtage behovsprognosen i den aktuelle behovsplan. Hvis du angiver den til *Nej*, medtages der ikke behovsprognosetransaktioner i behovsplanen.
+    - **Metode, der bruges til at reducere prognosekrav** – Vælg den metode, der skal bruges til at reducere prognosekravet. Du kan finde flere oplysninger under [Prognosereduktionsnøgler](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. I oversigtspanelet **Tidshorisonter i dage** kan du angive følgende felter for at angive den periode, som prognosen er inkluderet under:
+
+    - **Hovedplan** – Angiv denne indstilling til *Ja* for at tilsidesætte den hovedplanstidshorisont, der stammer fra de enkelte disponeringsgrupper. Angiv værdien til *Nej* for at bruge værdierne fra de enkelte disponeringsgrupper for den aktuelle behovsplan.
+    - **Prognoseperiode** – Hvis du angiver indstillingen **Hovedplan** til *Ja*, skal du angive det antal dage (fra dags dato), som behovsprognosen skal gælde for.
+
+    > [!IMPORTANT]
+    > Indstillingen **Hovedplan** understøttes ikke med Planlægningsoptimering.
+
+### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Køre en behovsplan, der omfatter et lagerbudget
+
+Hvis du vil køre en behovsplan, der omfatter et lagerbudget, skal du følge disse trin.
+
+1. Gå til **Varedisponering \> Arbejdsområder \> Varedisponering**.
+1. Angiv eller vælg den behovsplan, du konfigurerede i foregående procedure, i feltet **Behovsplan**.
+1. Vælg **Kør** i feltet **Varedisponering**.
+1. Angiv indstillingen **Registrer procestiden** i dialogboksen **Varedisponering** til *Ja*.
+1. Indtast et antal i feltet **Antal tråde**.
+1. I oversigtspanelet **Medtagne poster** skal du vælge **Filtrer**.
+1. Der vises en standarddialogboks med forespørgselseditoren. Under fanen **Område** skal du vælge den række, hvor feltet **Felt** er angivet til *Varenummer*.
+1. Vælg det varenummer, der skal medtages i planen, i feltet **Afgrænsning**.
 1. Vælg **OK**.
 
-Åbn siden **Bruttobehov** for at få vist de beregnede behov. På siden **Frigivne produkter** under fanen **Plan** i sektionen **Behov** kan du f.eks. vælge **Bruttobehov**.
+Åbn siden **Bruttobehov** for at få vist de beregnede behov. I handlingsruden på siden **Frigivne produkter** under fanen **Plan** i gruppen **Behov** kan du f.eks. vælge **Bruttobehov**.
 
 Hvis du vil have vist de oprettede ordreforslag, skal du gå til **Varedisponering \> Fælles \> Ordreforslag** og vælge den relevante hovedplan.
 
@@ -376,5 +402,6 @@ Hvis du vil have vist de oprettede ordreforslag, skal du gå til **Varedisponeri
 - [Konfigurere behovsprognoser](demand-forecasting-setup.md)
 - [Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)
 - [Foretage manuelle justeringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
+- [Varedisponering med behovsprognoser](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c9e1cadae97bd8f0dea270deaa1a8e09bb28eb4b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ee5a195b3d2881ff70fb1f0d4063ed681e874648
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020477"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271071"
 ---
 # <a name="rebate-management-groups"></a>Rabatstyringsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-Rabat- og fradragsberegninger kan være baseret på grupper. Der kan oprettes rabatstyringsgrupper for debitorer, kreditorer og varer. De kan knyttes til en masterpost.
+Beregninger af rabatstyring kan være baseret på grupper. Der kan oprettes rabatstyringsgrupper for debitorer, kreditorer og varer. De kan knyttes til en masterpost.
 
 ## <a name="rebate-management-customer-groups"></a>Debitorgrupper for rabatstyring
 
@@ -49,10 +49,9 @@ Hvis du vil se, tilføje eller fjerne debitorer for en valgt gruppe, skal du fø
 1. Gå til **Rabatstyring \> Konfiguration af rabatstyringsgrupper \> Debitorgrupper**.
 1. Vælg den gruppe, der skal administreres.
 1. Vælg **Debitorer** i handlingsruden. Siden **Rabatstyringsgrupper** vises med en liste over debitorer, der allerede er medlem af den valgte gruppe.
-1. Gå til handlingsruden, og vælg **Ny** for at føje en ny debitor til gruppen for at tilføje en række i gitteret. Angiv følgende felter til den nye række:
+1. Gå til handlingsruden, og vælg **Ny** for at føje en ny debitor til gruppen for at tilføje en række i gitteret. Angiv derefter følgende felt til den nye række:
 
     - **Debitorkonto** – Vælg debitorkonto-id.
-    - **Navn** – Angiv et navn og/eller en beskrivelse af debitoren.
 
 1. Hvis du vil fjerne en debitor fra gruppen, skal du markere debitoren og derefter vælge **Slet** i handlingsruden.
 
@@ -61,10 +60,9 @@ Hvis du vil se, tilføje eller fjerne gruppetildelinger for en valgt debitor, sk
 1. Gå til **Debitorer \> Kunder \> Alle kunder**.
 1. Vælg den debitor, du vil arbejde med.
 1. Vælg **Rabatstyringsgrupper** i gruppen **Rabatstyring** i handlingsruden under fanen **Debitor**. Siden **Rabatstyringsgrupper** vises med en liste over grupper, som den valgte debitor allerede er medlem af.
-1. Gå til handlingsruden, og vælg **Ny** for at føje debitoren til en ny gruppe for at tilføje en række i gitteret. Angiv følgende felter til den nye række:
+1. Gå til handlingsruden, og vælg **Ny** for at føje debitoren til en ny gruppe for at tilføje en række i gitteret. Angiv derefter følgende felt til den nye række:
 
     - **Rabatstyringsgruppe** – Vælg den gruppe, hvor debitoren skal tilføjes.
-    - **Beskrivelse** – Angiv en beskrivelse af gruppen (f.eks. for at forklare, hvorfor debitoren er medlem af den).
 
 1. Hvis du vil fjerne en debitor fra en gruppe, skal du vælge gruppen og derefter vælge **Slet** i handlingsruden.
 
@@ -88,10 +86,9 @@ Hvis du vil se, tilføje eller fjerne kreditorer for en valgt gruppe, skal du f�
 1. Gå til **Rabatstyring \> Konfiguration af rabatstyringsgrupper \> Kreditorgrupper**.
 1. Vælg den gruppe, der skal administreres.
 1. Vælg **Kreditorer** i handlingsruden. Siden **Rabatstyringsgrupper** vises med en liste over kreditorer, der allerede er medlem af den valgte gruppe.
-1. Gå til handlingsruden, og vælg **Ny** for at føje en ny kreditor til gruppen ved at tilføje en række i gitteret. Angiv følgende felter til den nye række:
+1. Gå til handlingsruden, og vælg **Ny** for at føje en ny kreditor til gruppen ved at tilføje en række i gitteret. Angiv derefter følgende felt til den nye række:
 
     - **Kreditorkonto** – Vælg kreditorkonto-id.
-    - **Navn** – Angiv et navn og/eller en beskrivelse af kreditoren.
 
 1. Hvis du vil fjerne en kreditor fra gruppen, skal du markere kreditoren og derefter vælge **Slet** i handlingsruden.
 
@@ -100,10 +97,9 @@ Hvis du vil se, tilføje eller fjerne gruppetildelinger for en valgt kreditor, s
 1. Gå til **Kreditor \> Kreditorer \> Alle kreditorer**.
 1. Vælg den kreditor, du vil arbejde med.
 1. Vælg **Rabatstyringsgrupper** i gruppen **Rabatstyring** i handlingsruden under fanen **Kreditor**. Siden **Rabatstyringsgrupper** vises med en liste over grupper, som den valgte kreditor allerede er medlem af.
-1. Gå til handlingsruden, og vælg **Ny** for at føje kreditoren til en ny gruppe ved at tilføje en række i gitteret. Angiv følgende felter til den nye række:
+1. Gå til handlingsruden, og vælg **Ny** for at føje kreditoren til en ny gruppe ved at tilføje en række i gitteret. Angiv derefter følgende felt til den nye række:
 
     - **Rabatstyringsgruppe** – Vælg den gruppe, hvor kreditoren skal tilføjes.
-    - **Beskrivelse** – Angiv en beskrivelse af gruppen (f.eks. for at forklare, hvorfor kreditoren er medlem af den).
 
 1. Hvis du vil fjerne en kreditor fra en gruppe, skal du vælge gruppen og derefter vælge **Slet** i handlingsruden.
 
@@ -127,10 +123,9 @@ Hvis du vil se, tilføje eller fjerne varer for en valgt gruppe, skal du følge 
 1. Gå til **Rabatstyring \> Konfiguration af rabatstyringsgrupper \> Varegrupper**.
 1. Vælg den gruppe, der skal administreres.
 1. Vælg **Varer** i handlingsruden. Siden **Rabatstyringsgrupper** vises med en liste over varer, der allerede er medlem af den valgte gruppe.
-1. Gå til handlingsruden, og vælg **Ny** for at føje en ny vare til gruppen ved at tilføje en række i gitteret. Angiv følgende felter til den nye række:
+1. Gå til handlingsruden, og vælg **Ny** for at føje en ny vare til gruppen ved at tilføje en række i gitteret. Angiv derefter følgende felt til den nye række:
 
     - **Varekonto** – Vælg varekonto-id.
-    - **Produktnavn** – Angiv et navn og/eller en beskrivelse af varen.
 
 1. Hvis du vil fjerne en vare fra gruppen, skal du markere varen og derefter vælge **Slet** i handlingsruden.
 
@@ -139,10 +134,9 @@ Hvis du vil se, tilføje eller fjerne gruppetildelinger for en valgt vare, skal 
 1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
 1. Vælg den vare, du vil arbejde med.
 1. Vælg **Rabatstyringsgrupper** i gruppen **Rabatstyring** i handlingsruden under fanen **Produkt**. Siden **Rabatstyringsgrupper** vises med en liste over grupper, som den valgte vare allerede er medlem af.
-1. Gå til handlingsruden, og vælg **Ny** for at føje varen til en ny gruppe ved at tilføje en række i gitteret. Angiv følgende felter til den nye række:
+1. Gå til handlingsruden, og vælg **Ny** for at føje varen til en ny gruppe ved at tilføje en række i gitteret. Angiv derefter følgende felt til den nye række:
 
     - **Rabatstyringsgruppe** – Vælg den gruppe, hvor varen skal tilføjes.
-    - **Beskrivelse** – Angiv en beskrivelse af gruppen (f.eks. for at forklare, hvorfor varen er medlem af den).
 
 1. Hvis du vil fjerne en vare fra en gruppe, skal du markere gruppen og derefter vælge **Slet** i handlingsruden.
 

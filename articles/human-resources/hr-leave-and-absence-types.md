@@ -2,7 +2,7 @@
 title: Konfigurere orlovs- og fraværstyper
 description: Konfigurer de orlovstyper, medarbejderne kan tage i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 098f614da80a1e7e3e31b30cea707ecfbd5b0a70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056606"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271121"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere orlovs- og fraværstyper
 
@@ -71,14 +71,15 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
    
  3. Angiv **Overført orlovstype** for orlovstypen. Når du vælger denne indstilling, overføres eventuelle overførte saldi til den angivne orlovstype. Type overført orlov skal også medtages i orlovs- og fraværsplanen. 
  
- 4. Definer **Udløbsregler** for orlovstypen. Når du konfigurerer denne indstilling, kan du vælge enheden dage eller måneder og angive varigheden for udløbet. Du kan også angive ikrafttrædelsesdatoen for udløbsreglen. Ikrafttrædelsesdatoen bruges til at bestemme, hvornår du skal begynde at køre det batchjob, der behandler udløbet af orlov, eller den dato, hvor reglen træder i kraft. Selve udløbet finder altid sted på startdatoen for orlovsplanen, når batchjobbet er indstillet til at blive behandlet. Planens startdato kan f.eks. være den 1. januar 2020, men reglen blev først oprettet den 1. juni 2020. Hvis ikrafttrædelsesdatoen angives til 1. juni 2020, behandles reglen ved den næste årsgrænse, dvs. 1. januar 2021. De orlovssaldi, der findes på tidspunktet for udløbet, trækkes fra orlovstypen og afspejles i orloven. 
+4. Definer **Udløbsregler** for orlovstypen. Når du konfigurerer denne indstilling, kan du vælge enheden dage eller måneder og angive varigheden for udløbet. Ikrafttrædelsesdatoen for udløbsreglen bruges til at bestemme, hvornår du skal begynde at køre det batchjob, der behandler udløbet af orlov, eller den dato, hvor reglen træder i kraft. Selve udløbet finder altid sted på startdatoen for periodiseringsperioden. Hvis startdatoen for periodiseringsperioden f.eks. er 3. august 2021, og udløbsreglen er angivet til 6 måneder, behandles reglen på baggrund af udløbsforskydningen fra startdatoen for periodiseringsperioden, så den udføres den 3. februar 2022. De orlovssaldi, der findes på tidspunktet for udløbet, trækkes fra orlovstypen og afspejles i orloven.
  
 ## <a name="see-also"></a>Se også
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Oprette en plan for orlov og fravær](hr-leave-and-absence-plans.md)
 - [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md)
-- [Stoppe orlov midlertidigt](hr-leave-and-absence-suspend-leave.md)
+- [Stop orlov midlertidigt](hr-leave-and-absence-suspend-leave.md)
+- [Oprette en arbejdsproces for køb og salg af orlov](hr-leave-and-absence-buy-sell-workflow.md)
 
 
 

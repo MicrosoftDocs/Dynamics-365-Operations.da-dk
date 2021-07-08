@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5188fa271cd9eb24140a9edcf507a3da72b61074
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 82b8a4e6ba7ebea7df9f5dad5abc3dfc3ce2687d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020525"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270755"
 ---
 # <a name="process-review-and-post-rebates"></a>Behandle, gennemgå og bogføre rabatter
 
@@ -55,9 +55,9 @@ Når du behandler en aftale, beregner systemet alle relevante rabatter og royalt
 1. Vælg rækken for hver aftale, du vil behandle (eller åbn den aftale, du vil behandle).
 1. Vælg en af følgende kommandoer i gruppen **Generer** under fanen **Rabatstyringsaftaler** i handlingsruden:
 
-    - **Proces \> Hensættelse** – Hensættelse af et sæt periodiseringer for hver relevant rabataftale, men bogfør ikke.
+    - **Proces \> Hensættelse** – Hensættelse af et sæt periodiseringer for hver relevant rabataftale, men bogfør ikke. Dette menupunkt er ikke tilgængeligt for aftaler, hvor feltet **Rabatoutput** er angivet til *Vare*.
     - **Proces \> Rabatstyring** – Behandle en række posteringer, der angiver værdien af rabatten for hver enkelt aftale.
-    - **Proces \> Afskrivning** – Tilbagefør tidligere bogførte posteringer for at afskrive dem, så nye rabataftaletransaktioner kan beregnes.
+    - **Proces \> Afskrivning** – For hver kildepostering for rabataftalen og den angivne periode skal du behandle afvigelsen mellem de beløb, der blev bogført for en hensættelse og for rabatstyring. Dette menupunkt er ikke tilgængeligt for aftaler, hvor feltet **Rabatoutput** er angivet til *Vare*.
 
 1. Angiv felterne **Fra dato** og **Til dato** i den dialogboks, der vises, for at definere datointervallet for beregningen.
 1. Vælg **OK** for at køre beregningen.
@@ -70,9 +70,9 @@ Når du behandler en aftale, beregner systemet alle relevante rabatter og royalt
 1. Vælg rækken for hver aftalelinje, du vil behandle, i oversigtspanelet **Rabatstyring**.
 1. Vælg en af følgende kommandoer på værktøjslinjen i oversigtspanelet **Rabatstyring**. (Disse kommandoer er kun tilgængelige for aftaler, hvor **Afstem efter**-feltet er angivet til *Linje*).
 
-    - **Proces \> Hensættelse** – Hensættelse af et sæt periodiseringer for hver relevant aftalelinje, men bogfør ikke.
+    - **Proces \> Hensættelse** – Hensættelse af et sæt periodiseringer for hver relevant aftalelinje, men bogfør ikke. Dette menupunkt er ikke tilgængeligt for aftaler, hvor feltet **Rabatoutput** er angivet til *Vare*.
     - **Proces \> Rabatstyring** – Behandle en række posteringer, der angiver værdien af rabatten for hver enkelt aftalelinje.
-    - **Proces \> Afskrivning** – Tilbagefør tidligere bogførte posteringer for at afskrive dem, så nye rabataftaletransaktioner kan beregnes.
+    - **Proces \> Afskrivning** – For hver kildepostering for rabataftalen og den angivne periode skal du behandle afvigelsen mellem de beløb, der blev bogført for en hensættelse og for rabatstyring. Dette menupunkt er ikke tilgængeligt for aftaler, hvor feltet **Rabatoutput** er angivet til *Vare*. 
 
 1. Angiv felterne **Fra dato** og **Til dato** i den dialogboks, der vises, for at definere datointervallet for beregningen.
 1. Vælg **OK** for at køre beregningen.
@@ -115,26 +115,26 @@ Når du behandler en eller flere aftaler, opretter systemet posteringer, som du 
         - **Angiv ikke indkasserede \> Alle** – Markér alle transaktioner som ikke indkasserede.
         - **Angiv ikke indkasserede \> Udvalgte** – Markér de valgte transaktioner som ikke indkasserede.
 
-    - Hvis du vil bogføre kravet på en eller flere linjer, skal du vælge de relevante linjer og derefter vælge **Bogfør** i handlingsruden. (Knappen **Bogfør** er kun tilgængelig for rabatposteringer. Den er ikke tilgængelig for hensættelses- og afskrivningsposteringer). I dialogboksen **Bogfør** angives felterne **Fra dato** og **Til dato** automatisk. Angiv feltet **Bogføringsdato**, og vælg derefter **OK**.
+    - Vælg **Bogfør** i handlingsruden for at bogføre kravet for alle relevante linjer. Hvis du bruger en kravproces (når indstillingen **Brug kravproces** er aktiveret på siden **Parametre for rabatstyring**), er det kun de linjer, der er markeret som **Indkasseret**, som bogføres. Ellers bogføres alle kildeposteringer for den valgte rabatpostering. Knappen **Bogfør** er kun tilgængelig for rabatposteringer. Den er ikke tilgængelig for hensættelses- og afskrivningsposteringer. I dialogboksen **Bogfør** angives felterne **Fra dato** og **Til dato** automatisk. Angiv feltet **Bogføringsdato**, og vælg derefter **OK**.
     - Hvis du vil regulere det beløb, der vises for en hvilken som helst åben eller ikke-bogført transaktion, skal du vælge transaktionen og derefter benytte følgende fremgangsmåde:
 
         - Rediger værdien i feltet **Rettet beløb**.
         - I handlingsruden skal du vælge **Angiv rettelse**. Angiv derefter en værdi i feltet **Rettet beløb** på rullelisten i dialogboksen, der vises.
 
 > [!NOTE]
-> Når du behandler den næste periode, indeholder posteringslisten eventuelle ikke indkasserede posteringer fra den forrige bogføring samt eventuelle nye posteringer for den valgte periode.
+> Hvis du bruger en kravproses, når du behandler den næste periode, indeholder posteringslisten eventuelle ikke-indkasserede posteringer fra den forrige bogføring samt eventuelle nye posteringer for den valgte periode.
 
 ## <a name="post-rebates-transactions"></a>Bogføre rabattransaktioner
 
-Hvis du vil bogføre værdien af rabatter og fradrag, skal du køre bogføringsprocessen, medmindre du har konfigureret systemet til at bogføre dem automatisk.
+Hvis du vil bogføre værdien af en behandlet hensættelse, et rabatstyringsbeløb og en afskrivning, skal du køre bogføringsprocessen. Bogføringsprocessen markerer hensættelses-, rabatstyrings- eller afskrivningsposteringer som bogført og opretter målposteringen. Hvis du ikke behøver at gennemse målposteringen, kan disse posteringer konfigureres, så de bogføres automatisk.
 
-### <a name="set-up-the-system-to-post-all-transactions-automatically"></a>Konfigurere systemet til at bogføre alle transaktioner automatisk
+### <a name="set-up-the-system-to-post-all-target-transactions-automatically"></a>Konfigurere systemet til at bogføre alle måltransaktioner automatisk
 
-Du kan konfigurere systemet til at bogføre alle posteringer, så snart de er genereret, ved at aktivere indstillingen **Bogfør automatisk kladder** og/eller **Bogfør automatisk fritekstfakturaer** på siden **Parametre for rabatstyring**. Yderligere oplysninger finder du i [Parametre til rabatstyring](rebate-management-parameters.md).
+Du kan konfigurere systemet til at bogføre alle målposteringer, så snart de er genereret af en hensættelse, et rabatstyringsbeløb og en afskrivning, ved at aktivere indstillingen **Bogfør automatisk kladder** og/eller **Bogfør automatisk fritekstfakturaer** på siden **Parametre for rabatstyring**. Yderligere oplysninger finder du i [Parametre til rabatstyring](rebate-management-parameters.md).
 
 ### <a name="post-transactions-for-all-lines-for-one-or-more-deals"></a>Bogføre transaktioner for alle linjer til en eller flere aftaler
 
-Hvis du ikke bruger automatisk bogføring, når du har behandlet de relevante aftaler, skal du følge disse trin for at gennemse og bogføre de genererede posteringer for alle linjer for en eller flere aftaler.
+Når du har behandlet de relevante aftaler, skal du følge disse trin for at gennemse og bogføre de genererede posteringer for alle linjer for en eller flere aftaler.
 
 1. Åbn [listesiden med relevante rabataftaler](rebate-management-deals.md) for den type rabat, du vil arbejde med.
 1. Vælg rækken for hver aftale, du vil bogføre (eller åbn den aftale, du vil bogføre).
@@ -149,7 +149,7 @@ Hvis du ikke bruger automatisk bogføring, når du har behandlet de relevante af
 
 ### <a name="post-transactions-for-one-or-more-specific-deal-lines-for-a-selected-deal"></a>Bogføre transaktioner for en eller flere specifikke aftalelinjer i en valgt aftale
 
-Hvis du ikke bruger automatisk bogføring, når du har behandlet de relevante aftaler, skal du følge disse trin for at gennemse og bogføre de genererede posteringer for en eller flere specifikke aftalelinjer for en valgt aftale.
+Når du har behandlet de relevante aftaler, skal du følge disse trin for at gennemse og bogføre de genererede posteringer for en eller flere specifikke aftalelinjer for en valgt aftale. Denne procedure gælder kun for aftaler, hvor feltet **Afstem efter** er angivet til *Linje*.
 
 1. Åbn [listesiden med relevante rabataftaler](rebate-management-deals.md) for den type rabat, du vil arbejde med.
 1. Åbn den aftale, der indeholder en linje, du vil bogføre transaktioner for.
@@ -174,7 +174,7 @@ I stedet for at bogføre posteringer for bestemte aftaler eller aftalelinjer kan
     - Gå til **Rabatstyring \> Periodiske opgaver \> Bogfør \> Rabatstyring** for at bogføre de tilgængelige rabatposteringer, du har oprettet.
     - Gå til **Rabatstyring \> Periodiske opgaver \> Bogfør \> Afskrivning** for at bogføre de tilgængelige afskrivningsposteringer, du har oprettet.
 
-1. Angiv **Bogføringsdato**-feltet i sektionen **Periode** i oversigtspanelet **Parametre** i den dialogboks, der vises. Angiv derefter felterne **Fra dato** og **Til dato** for at definere datointervallet for transaktioner, der skal bogføres. 
+1. Angiv **Bogføringsdato**-feltet i sektionen **Periode** i oversigtspanelet **Parametre** i den dialogboks, der vises. Angiv derefter felterne **Fra dato** og **Til dato** for at definere datointervallet for transaktioner, der skal bogføres.
 1. Angiv felterne **Fra dato** og **Til dato** i sektionen **Garantiperiode** for at definere datointervallet for de garantier, der skal bogføres.
 1. I oversigtspanelet **Poster, der skal medtages**, kan du konfigurere filtre for at begrænse det sæt aftaler, som batchjobbet skal behandle. Disse indstillinger fungerer på samme måde, som de fungerer for andre typer batchjob.
 1. I oversigtspanelet **Kør i baggrunden** kan du konfigurere batchbehandling og planlægningsindstillinger efter behov. Disse indstillinger fungerer på samme måde, som de fungerer for andre typer batchjob.
@@ -182,17 +182,17 @@ I stedet for at bogføre posteringer for bestemte aftaler eller aftalelinjer kan
 
 ## <a name="review-rebate-management-journals"></a>Gennemse rabatstyringskladder
 
-Når posteringerne er bogført, kan du gennemse de kladder, dokumenter eller elementer, der er resultatet. Målposterne for rabatter og royalties er baseret på den betalingstype, der er angivet i posteringsprofilen og rabattens outputtype. Hvis rabatoutputtet f.eks. er angivet til *Vare*, oprettes der en salgsordre, som kan ses via målposteringerne. Hvis betalingen er konfigureret til at bruge Kreditor, oprettes der også en kreditorfaktura for den kreditor, der er konfigureret for debitoren, for debitorrabatter.
+Når posteringerne er bogført, kan du gennemse de kladder, dokumenter eller elementer, der er resultatet. Målposterne for rabatter og royalties er baseret på den betalingstype, der er angivet i posteringsprofilen og rabattens outputtype. Hvis rabatoutputtet f.eks. er angivet til *Vare*, oprettes der en salgsordre for en debitorrabat, og der oprettes en indkøbsordre for en kreditorrabat. Disse ordrer kan ses via målposteringerne. Hvis betalingen er konfigureret til at bruge Kreditor, oprettes der også en kreditorfaktura for den kreditor, der er konfigureret for debitoren, for debitorrabatter.
 
 Hvis du vil gennemse de kladdeposteringer, der er knyttet til en rabatstyringsaftale, skal du følge disse trin.
 
 1. Åbn [listesiden med relevante rabataftaler](rebate-management-deals.md) for den type rabat, du vil arbejde med.
 1. Vælg den aftale, der skal kontrolleres kladdeposteringer for.
-1. I handlingsruden under fanen **Rabatstyringsaftaler** skal du i gruppen **Transaktioner** vælge enten **Transaktioner** eller **Rabattransaktioner**, afhængigt af den type transaktioner du vil se.
+1. I handlingsruden under fanen **Rabatstyringsaftaler** skal du i gruppen **Transaktioner** vælge enten **Transaktioner** eller **Garantitransaktioner**, afhængigt af den type transaktioner du vil se.
 1. Kontrollér, at feltet **Vis** er angivet til *Alle* eller *Bogført*.
 1. Find og vælg den posteringssamling, du vil kontrollere, og vælg derefter en af følgende knapper i handlingsruden. (Disse knapper er kun tilgængelige, når der findes relevante posteringer for den valgte posteringssamling).
 
     - **Målposteringer** – Gennemse relevante kladder og andre typer dokumenter, der er genereret af den valgte aftale.
-    - **Varer** – Gennemse relevante varer, der er genereret af den valgte aftale.
+    - **Varer** – Gennemse de relevante salgsordrer eller indkøbsordrer, der er genereret af den valgte aftale.
 
 1. Der vises en liste over relevante kladder, dokumenter eller varer. Hvis du vil have vist flere oplysninger om en kladde, et dokument eller en vare, skal du vælge rækken og derefter vælge **Vis detaljer** i handlingsruden.

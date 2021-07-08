@@ -1,8 +1,8 @@
 ---
-title: Klargør Human Resources
-description: Denne artikel fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources.
+title: Klargøring af Human Resources
+description: Dette emne fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2632616834e405d31facdcf3853baaf96066e9aa
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193718"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248815"
 ---
-# <a name="provision-human-resources"></a>Klargør Human Resources
+# <a name="provision-human-resources"></a>Klargøring af Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Denne artikel fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources. Det antages i artiklen, at du har købt Human Resources via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Human Resources-serviceplanen, og du ikke kan udføre trinnene i denne artikel, kan du kontakte Support.
+Dette emne fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources. Det antages i emnet, at du har købt Human Resources via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Human Resources-serviceplanen, og du ikke kan udføre trinnene i denne artikel, kan du kontakte Support.
 
 For at komme i gang skal den globale administrator logge på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) og oprette et nyt Human Resources-projekt. Medmindre et problem med licensering forhindrer klargøring af Human Resources, skulle der ikke være brug for hjælp fra Support- eller DSE-medarbejdere (Dynamics Service Engineering).
+
+## <a name="provision-a-human-resources-trial-environment"></a>Klargøre et Human Resources-testmiljø
+
+Før du klargør dit første sandkasse- eller produktionsmiljø, kan det være en god ide at klargøre et [Human Resources-testmiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) for at validere funktionen Human Resources. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Human Resources. 
+
+Testmiljøer er ikke beregnet til brug som produktionsmiljøer. De er begrænset til en 60-dages prøveperiode. Når prøveperioden udløber, slettes miljøet og alle data i det, og de kan ikke gendannes. Miljøet kan ikke konverteres til et sandkasse- eller produktionsmiljø. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
 
 ## <a name="plan-human-resources-environments"></a>Planlægge miljøer i Human Resources
 
@@ -94,8 +100,6 @@ Når du har oprettet et LCS-projekt, kan du klargøre Human Resources i et milj�
 
     > [!NOTE]
     > Hvis du endnu ikke har godkendt de endelige krav, kan du installere en testforekomst af Human Resources i projektet. Du kan derefter bruge denne forekomst til at teste din løsning, indtil du kan godkende den. Hvis du bruger det nye miljø til test, skal du gentage denne procedure for at oprette et produktionsmiljø.
-
-    > Du kan overveje at udnytte et gratis [Human Resources-prøvemiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) i 60 dage. Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Human Resources. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når et forsøgsmiljø udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
 
 ## <a name="select-a-power-apps-environment"></a>Vælg et Power Apps-miljø
 

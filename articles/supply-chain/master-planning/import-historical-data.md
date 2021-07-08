@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0b04ee246d4c28e934407ccb92d792692cc4347d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908874"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301644"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Importér historiske data til behovsprognoser
 
@@ -39,26 +39,6 @@ For at kunne bruge dataenheden skal du have en Microsoft Excel-fil eller kommase
 
 Yderligere oplysninger om, hvordan du importerer data, herunder hvordan du rydder data efter en import, finder du i [Oversigt over dataimport- og -eksportjob](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) og relaterede emner.
 
-## <a name="example"></a>Eksempel
-
-Du kan bruge følgende fil som et eksempel. Hent [HistoricalDemandData](/dynamics/s-e/). Denne fil indeholder de historiske behovsdata for vare D0001. Den indeholder kun følgende obligatoriske felter: websted, antal og behovsdatoen.
-
-1. Vælg det firma, du vil importere de historiske behovsdata til.
-2. Åbn arbejdsområdet **Datastyring**.
-3. Vælg feltet **Import**.
-4. Angiv et navn til importprojektet, f.eks. **Importér historiske behov for vare D0001**.
-5. I feltet **Kildedataformat** skal du vælge formatet på den fil, du importerer. Hvis du vil importere filen HistoricalDemandData i dette eksempel, skal du vælge **CSV**.
-6. I feltet **Enhedsnavn** skal du vælge **Historisk eksternt behov**.
-7. Gem filen på computeren, og overfør den derefter.
-8. Vælg **Importér**.
-9. Siden **Udførelsesoversigt** åbnes automatisk. Kontrollér de importerede data på siden.
-
-Når du har importeret de historiske behovsdata, kan du generere en behovsprognose.
-
-## <a name="additional-resources"></a>Yderligere ressourcer
-
-[Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)  
-[Oversigt over dataimport- og -eksportjob](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
-
+Se også [Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

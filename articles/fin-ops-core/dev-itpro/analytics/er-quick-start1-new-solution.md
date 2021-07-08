@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224028"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304387"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Designe en ny ER-løsning til udskrivning af en brugerdefineret rapport
 
@@ -185,7 +185,7 @@ Når du udfører fremgangsmåden i afsnittet [Importere en ny datamodelkonfigura
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Importere en ny datamodelkonfiguration
 
-1. Hent filen [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og gem den på din lokale computer.
+1. Hent filen [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml), og gem den på din lokale computer.
 2. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 3. I arbejdsområdet **Elektronisk rapportering** skal du vælge **Rapporteringskonfigurationer**.
 4. Vælg **Exchange** \> **Indlæs fra XML-fil** i handlingsruden.
@@ -300,7 +300,7 @@ Når du udfører fremgangsmåden i det efterfølgende afsnit [Importere en ny ko
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Importere en ny konfiguration af modeltilknytning
 
-1. Hent filen [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og gem den på din lokale computer.
+1. Hent filen [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml), og gem den på din lokale computer.
 2. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 3. I arbejdsområdet **Elektronisk rapportering** skal du vælge **Rapporteringskonfigurationer**.
 4. Vælg **Exchange** \> **Indlæs fra XML-fil** i handlingsruden.
@@ -366,7 +366,7 @@ Du skal konfigurere datakilder for at få adgang til de programtabeller, der ind
     2. Vælg **Tilføj**.
     3. I dialogboksen skal du angive **\$Resultatgruppe** i feltet **Navn**.
     4. Vælg **Rediger formel**.
-    5. I [ER-formeleditoren](general-electronic-reporting-formula-designer.md) i feltet **Formel** skal du skrive **FIRSTORNULL (\@.'\<Relations'.KMQuestionResultGroup)** for at bruge [stien](er-formula-language.md#paths) til en-til-mange-relationen mellem KMCollection- og KMQuestionResultGroup-tabellerne.
+    5. I [ER-formeleditoren](general-electronic-reporting-formula-designer.md) i feltet **Formel** skal du skrive **FIRSTORNULL (\@.'\<Relations'.KMQuestionResultGroup)** for at bruge [stien](er-formula-language.md#Paths) til en-til-mange-relationen mellem KMCollection- og KMQuestionResultGroup-tabellerne.
     6. Vælg **Gem**, og luk formeleditoren.
     7. Vælg **OK** for at tilføje det nye beregnede felt.
 
@@ -547,7 +547,7 @@ Status for version 1.1 af denne konfiguration ændres fra **Kladde** til **Fuldf
 
 ER-strukturen bruger foruddefinerede skabeloner til at oprette rapporter i Microsoft Office-formater (Excel-projektmapper eller Word-dokumenter). Mens den påkrævede rapport oprettes, udfyldes en skabelon med de krævede data i henhold til det konfigurerede dataflow. Derfor skal du først designe en skabelon til den brugerdefinerede rapport. Denne skabelon skal være designet som en Excel-projektmappe, og strukturen repræsenterer layoutet for en brugerdefineret rapport. Du skal navngive alle Excel-elementer, som du vil udfylde med de krævede data.
 
-1. Hent filen [Questionnaires report template.xslxl](https://go.microsoft.com/fwlink/?linkid=851448), og gem den på din lokale computer.
+1. Hent filen [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx), og gem den på din lokale computer.
 2. Åbn filen i Excel, og gennemse projektmappens struktur.
 
 Som følgende illustration viser, er den hentede skabelon designet til at udskrive bestemte spørgeskemaer, der viser et spørgeskemas spørgsmål sammen med relevante svar.
@@ -572,7 +572,7 @@ Når du udfører fremgangsmåden i afsnittet [Importere en designet formatkonfig
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Importere en designet formatkonfiguration
 
-1. Hent filen [Questionnairesformat.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og gem den på din lokale computer.
+1. Hent filen [Questionnairesformat.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml), og gem den på din lokale computer.
 2. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 3. I arbejdsområdet **Elektronisk rapportering** skal du vælge **Rapporteringskonfigurationer**.
 4. Vælg **Exchange** \> **Indlæs fra XML-fil** i handlingsruden.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: e77022bde6e612392c80cf5fe2b4c1e75ec5775d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216737"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270999"
 ---
 # <a name="rebate-management-posting-setup"></a>Opsætning af bogføring af rabatstyring
 
@@ -41,7 +41,7 @@ I følgende tabel beskrives de indstillinger, der er tilgængelige i hovedsektio
 |---|---|
 | Posteringsprofil | Angiv et entydigt navn til profilen. |
 | Betegnelse | Indtast en beskrivelse af profilen. |
-| Modul | Vælg den type rabatter og royalties, som profilen er tilknyttet (*Kunde* eller *Leverandør*). |
+| Modul | Vælg det modul, som rabatter og royalties for profilen er tilknyttet (*Kunde* eller *Leverandør*). |
 | Type | Vælg profiltypen (*Rabat* eller *Royalty*). |
 | Betalingstype | <p>Dette felt bestemmer formatet for det bogførte rabatoutput.<p><p>Når feltet **Type** er angivet til *Rabat*, er følgende værdier tilgængelige:</p><ul><li>*Betal ved hjælp af kreditor* – Når du bogfører en debitorrabat, oprettes der en kreditorfaktura for den remitteringsleverandør, der er konfigureret for rabatkunden. Når du bogfører en kreditorrabat, oprettes der en kreditorfaktura for den rabatkreditorkonto.</li><li>*Debitorfradrag* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li><li>*Debitorfradrag på momsfaktura* – Når du bogfører rabatten, oprettes der en fritekstfaktura for rabatkunden.</li><li>*Samhandelsforbrug* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li><li>*Rapportering* – Når du bogfører rabatten, oprettes der en debitorfradragskladde for rabatkunden.</li></ul><p>Når feltet **Type** er angivet til *Royalty*, er følgende værdier tilgængelige:</p><ul><li>*Betal ved hjælp af kreditor* – Når du bogfører rabatten, oprettes der en kreditorfaktura for den rabatkreditorkonto, der er oprettet.</li><li>*Rapportering* – Når du bogfører rabatten, oprettes der en kreditorfaktura for den rabatkreditorkonto, der er oprettet.</li></ul><p>Du kan finde flere oplysninger i afsnittet [Betalingstyper](#payment-types) nedenfor. |
 | Firma | Vælg det firma (juridisk enhed), som hensættelser skal periodiseres til, og hvilke krav der skal betales af det. |
@@ -66,7 +66,7 @@ I følgende tabel opsummeres, hvordan de forskellige indstillinger i feltet **Be
 > Overvej følgende punkter, når du konfigurerer [rabatstyringsaftaler](rebate-management-deals.md):
 >
 > - Til aftaler, hvor feltet **Afstem efter** er angivet til *Aftale*, kan du ikke bruge den dynamiske aftalekonto ved bogføring. Du skal bruge en angivet debitor- eller kreditorkonto.
-> - Til aftaler, hvor feltet **Afstem efter** er angivet til *Linje*, kan du bruge en posteringsprofil, der udligner mod en dynamisk aftalekonto på aftalelinjen, fordi debitoren angives pr. aftalelinje.
+> - Til aftaler, hvor feltet **Afstem efter** er angivet til *Linje*, kan du bruge en posteringsprofil, der udligner mod en dynamisk aftalekonto på aftalelinjen, fordi debitoren eller kreditoren angives pr. aftalelinje.
 
 ## <a name="posting-fasttab"></a>Oversigtspanelet Bogføring
 
@@ -74,15 +74,15 @@ I følgende tabel beskrives de indstillinger, der er tilgængelige i oversigtspa
 
 | Felt | Betegnelse |
 |---|---|
-| Kredittype | Vælg, om du vil kreditere en finanskonto eller en debitor eller kreditor. |
-| Kreditkonto | Den konto, som kreditbeløb bogføres på, når der foretages rabathensættelser. Denne konto bruges også som debetkonto, når rabatten bogføres for at kreditere debitoren. |
+| Kredittype | Vælg, om du vil kreditere en finanskonto eller en debitor. Hvis feltet **Betalingstype** i overskriften er angivet til *Debitorfradrag på momsfaktura*, angives dette felt til *Finanskonto*. Dette felt angives til *Finanskonto* for kreditorrabatter. |
+| Kreditkonto | Vælg den konto, som kreditbeløb bogføres på, når der foretages rabathensættelser. Denne konto bruges også som modkonto, når rabatten bogføres for at kreditere debitoren eller debitere kreditoren. |
 | Kladdenavn<br>(I sektionen **Hensættelse**) | Vælg navnet på den kladde, der skal bruges til registrering af den bogførte hensættelse. |
 | Type | Vælg, om du vil bogføre rabatten til en finanskonto eller en debitor eller kreditor. Hvis feltet **Betalingstype** i hovedet er angivet til *Debitorfradrag på momsfaktura*, angives dette felt til *Debitor/Kreditor*. |
-| Brug kontokilde | <p>Vælg en af følgende værdier:</p><ul><li>*Ingen* – Hvis du vælger denne værdi, skal du angive en konto i feltet **Rabatkonto**.</li><li>*Aftalekonto* – Brug den debitor- eller kreditorkonto, der er angivet på rabatlinjen. Du kan kun vælge denne værdi for aftaler, hvor feltet **Afstem efter** er angivet til *Linje*, og tilbudslinjer, hvor feltet **Kontokode** er angivet til *Tabel*. Den gælder ikke for posteringsprofiler til kunderoyalty.</li></ul> |
+| Brug kontokilde | <p>Vælg en af følgende værdier:</p><ul><li>*Fast konto* – Hvis du vælger denne værdi, skal du angive en konto i feltet **Rabatkonto**.</li><li>*Aftalelinjekonto* – Brug den debitor- eller kreditorkonto, der er angivet på rabatlinjen. Du kan kun vælge denne værdi for aftaler, hvor feltet **Afstem efter** er angivet til *Linje*, og tilbudslinjer, hvor feltet **Kontokode** er angivet til *Tabel*. Den gælder ikke for posteringsprofiler til kunderoyalty eller kreditorrabatter, der er baseret på salgsordrer.</li></ul> |
 | Rabatkonto | Den konto, som de faktiske rabatudgifter bogføres på. |
-| Kladdenavn<br>(I sektionen **Rabatstyring**) | Vælg navnet på den kladde, der skal bruges til at bogføre en kreditnota for rabatbeløbet på debitoren. Dette felt er ikke tilgængeligt, når feltet **Betalingstype** i hovedet er angivet til *Debitorfradrag på momsfaktura*. |
+| Kladdenavn<br>(I feltgruppen **Rabatstyring**) | Vælg navnet på den kladde, der skal bruges til at bogføre en kreditnota for rabatbeløbet for debitoren eller kreditoren. Dette felt er ikke tilgængeligt, når feltet **Betalingstype** i hovedet er angivet til *Debitorfradrag på momsfaktura*. For debitorrabatter vil kladdenavne af kladdetypen *Daglig* være tilgængelige. For debitorroyalties og kreditorrabatter er kladdenavnene for kladdetypen *Kreditorfaktura, registrering* tilgængelige. |
 | Varemomsgruppe | Angiv, om rabatten er momspligtig. |
-| Kladdenavn<br>(I sektionen **Afskrivning**) | Hvis den rabat, der bogføres, ikke er lig med hensættelsen, kan differencen afskrives. Vælg navnet på den kladde, der skal bruges til registrering af den bogførte afskrivning. |
+| Kladdenavn<br>(I feltgruppen **Afskrivning**) | Hvis den rabat, der bogføres, ikke er lig med hensættelsen, kan differencen afskrives. Vælg navnet på den kladde, der skal bruges til registrering af den bogførte afskrivning. |
 
 ## <a name="posting-by-company-fasttab"></a>Oversigtspanelet Bogføring efter firma
 
@@ -92,6 +92,6 @@ Brug knapperne på værktøjslinjen til at tilføje firmaer i gitteret eller fje
 
 Vælg rækken for hvert firma, og angiv derefter følgende oplysninger ved at bruge felterne under gitteret:
 
-- **Debettype** – Vælg, om du vil debitere en finanskonto eller en debitor eller kreditor.
+- **Debettype** – Vælg, om du vil debitere en finanskonto eller en kreditor. Dette felt angives til *Finanskonto* for debitorrabatter og royalties.
 - **Debetkonto** – Angiv den konto, som debetbeløbet bogføres på, når der foretages rabathensættelser.
 - **Hovedkonto** – Vælg hovedkontoen til afskrivninger.

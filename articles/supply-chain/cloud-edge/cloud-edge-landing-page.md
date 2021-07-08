@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f231b9ae85d136b0e963757d9561a7abda4edc
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938294"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261740"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Sky- og edge-skaleringsenheder for arbejdsbelastninger i forbindelse med produktion og lagerstedsstyring
 
@@ -24,7 +24,7 @@ ms.locfileid: "5938294"
 > [!IMPORTANT]
 > Skalaenhedsfunktionaliteten for Microsoft Dynamics 365 Supply Chain Management gøres tilgængelig for dig i henhold til de vilkår, der gælder for brugen af tjenesten. Yderligere oplysninger finder du i [Juridiske oplysninger om Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Ved at aktivere sky- og kantskalaenheder bekræfter du, at du forstår, at nogle af de data, der er relateret til konfigurationen og behandlingen af sky- og kantskalaenheder, kan blive gemt i et datacenter, der ligger i USA. Du kan få mere at vide om databehandling af sky- og kantskalaenheder i afsnittet [Databehandling under administration af skalaenheder](#data-processing-management) senere i dette emne.
+> Når du aktiverer sky- og grænseskalaenheder, bliver du bedt om at bekræfte, at du forstår, at nogle af de data, der er relateret til konfigurationen og behandlingen af sky- og grænseskalaenheder, kan blive gemt i et datacenter, der ligger i USA. Du kan få mere at vide om databehandling af sky- og kantskalaenheder i afsnittet [Databehandling under administration af skalaenheder](#data-processing-management) senere i dette emne.
 
 ## <a name="core-value-proposition-for-scale-units"></a>Forslag til kerneværdi for skalaenheder
 

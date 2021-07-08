@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79115f26047c64ddb528a73e01e76891fd9b5044
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6d32abacc1539cb930ad6f1ebcfe6fa9af4befcf
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052067"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271473"
 ---
 # <a name="buy-and-sell-leave"></a>Køb og sælg orlov
 
@@ -47,6 +47,12 @@ Dine saldi opdateres enten automatisk eller gennem en godkendelsesproces, inden 
 3. Vælg **Send**, når du er klar til at sende din anmodning.
 
 Dine saldi opdateres enten automatisk eller gennem en godkendelsesproces, inden de opdateres. Dette afhænger af, hvordan købspolitikken er konfigureret.
+
+
+## <a name="troubleshooting"></a>Fejlfinding 
+
+Hvis en arbejdsgang for anmodning om køb eller salg af orlov mislykkes, kan brugere med rettigheden **EssLeaveBuySellRequestApprover** gennemse meddelelsesloggen for alle anmodninger om køb og salg af orlov. Hvis du vil gøre det, skal du gå til **Orlov og fravær > Link > Anmodninger om køb og salg af orlov > Meddelelseslog** (øverst til venstre). **Meddelelsesloggen** viser brugerne, hvordan transaktionerne blev behandlet, og den tilknyttede arbejdsgangshistorik.
+
 
 ## <a name="see-also"></a>Se også
 

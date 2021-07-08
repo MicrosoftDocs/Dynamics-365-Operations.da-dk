@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c62e2d1b361e0ed1ab1ced42997add157b30c828
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 88e38989e3d3e46d0c43779659bc6ea2e29f08e2
+ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019045"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6292731"
 ---
 # <a name="containerization"></a>Containerisering
 
@@ -108,6 +108,8 @@ Følg disse trin for at definere en containerbuildskabelon:
 
       - **Pak i alle åbne containere** – Systemet evaluerer, om fordelingslinjen passer ind i en container, der blev oprettet under containeriseringscyklussen.
       - **Pak kun i aktuel container** – Systemet evaluerer kun, om fordelingslinjen passer ind i den senest oprettede container.
+
+    Du kan finde flere oplysninger og eksempler, der viser, hvordan du kan arbejde med pakningsstrategier for containere, i [Pakningsstrategier for containere](container-packing-strategy-overview.md).
 
 1. Hvis du vil konfigurere regler for fordelingslinjer for pakning i containere, skal du vælge **Pauser i blandingsregler**. Du kan f.eks. oprette en regel, der tillader arbejdere at pakke fordelingslinjer for to forskellige varer i den samme container. Følg disse trin for at definere en blandingsregel:
 

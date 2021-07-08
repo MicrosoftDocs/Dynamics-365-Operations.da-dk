@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193875"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271202"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -123,8 +123,6 @@ Tidsgrænsen for automatisk autorisation defineres af det antal dage, du angiver
 Hvis du angiver alle de tidligere nævnte tidsgrænser til *0* (nul), deaktiveres automatisk autorisation helt for de relevante disponerede varer.
 
 ## <a name="firm-planned-orders-by-using-a-query"></a>Autorisere ordreforslag ved hjælp af en forespørgsel
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Med forespørgselsbaseret autorisation kan du planlægge autorisation ud fra kriterier, der er defineret på forhånd. I modsætning til automatisk autorisation giver forespørgselsbaseret autorisation mulighed for automatisk autorering af forskellige undersæt af ordrer på forskellige tidspunkter. Du kan desuden bruge manuelle eller automatiske operationer til at autorisere forskellige typer ordreforslag. Du kan også få vist, hvilke autoriserede ordrer der er valgt ud fra dine indstillinger. Du kan derfor bekræfte, at valget opfylder dine forventninger.
 
