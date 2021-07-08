@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: cf009e32f8c137e235793d80bf8448a5f55988bd
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dc41df33d01c3c8523afb6d8f16bfec88e0c42b8
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020429"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271023"
 ---
 # <a name="rebate-management-parameters"></a>Parametre til rabatstyring
 
@@ -27,7 +27,7 @@ ms.locfileid: "6020429"
 
 Siden **Parametre for rabatstyring** bruges til at definere de indstillinger, der gælder for hele modulet **Rabatstyring**. Disse indstillinger påvirker bogføring, statusopdateringer, nummerserier og anden funktionalitet. Opsætningen på denne side deles på tværs af juridiske enheder og kan redigeres af brugere, der har de relevante sikkerhedsrettigheder.
 
-Du kan åbne siden **Parametre for rabatstyring** ved at gå til **Rabatter og fradrag \> Konfiguration \> Parametre til rabatstyring**. Derefter skal du angive felterne som beskrevet i følgende underafsnit.
+Du kan åbne siden **Parametre for rabatstyring** ved at gå til **Rabatstyring \> Konfiguration \> Parametre til rabatstyring**. Derefter skal du angive felterne som beskrevet i følgende underafsnit.
 
 ## <a name="rebate-management-tab"></a>Fanen Rabatstyring
 
@@ -36,12 +36,12 @@ I følgende tabel beskrives de felter, der er tilgængelige under fanen **Rabats
 | Felt | Betegnelse |
 |---|---|
 | Standardstatus | Vælg standardstatus for alle nye aftaler. Brug siden [**Rabatstatusser**](rebate-statuses.md) til at definere sættet med statusværdier, der kan vælges. |
-| Proces efter dimension | Vælg, om hensættelses-, rabat- og afskrivningstransaktioner skal behandles efter økonomisk dimension. Når denne indstilling er aktiveret, bruger systemet økonomiske dimensioner til kildetransaktionerne. |
+| Proces efter dimension | Vælg, om hensættelses-, rabat- og afskrivningstransaktioner skal behandles efter økonomisk dimension. Når denne indstilling er aktiveret, bruger systemet økonomiske dimensioner fra kildetransaktionerne i måltransaktionerne. |
 | Kontrollér, om tidligere bogført | <p>Vælg systemfunktionsmåden, hvis ikke-bogførte rabattransaktioner skal behandles mere end én gang for samme periode:</p><ul><li>**Advarsel** – Systemet giver brugerne mulighed for at tilsidesætte de oprindelige transaktionslinjer, men der vises en advarsel.</li><li>**Fejl** – Systemet forhindrer brugere i at tilsidesætte de oprindelige transaktionslinjer, og der vises en fejlmeddelelse. |
 | Bogfør kladder automatisk | Vælg, om systemet automatisk skal bogføre foreslåede kladder. Disse kladder omfatter daglige kladder, der bruges til hensættelser og kundefradrag, samt kreditormomsfakturakladder. |
 | Bogføre fritekstfakturaer automatisk | Vælg, om systemet automatisk skal bogføre fritekstfakturaer. Denne indstilling gælder kun for fritekstfakturaer, hvor betalingstypen er angivet til *Debitorfradrag på momsfaktura*. |
-| Reference til rabatvareordre | Vælg den rabatreference, der skal bruges i salgs- og indkøbsordrer, som genereres af rabatprocessen (*Ingen*, *Rabat- og fradragsaftale*, *Rabat- og fradragsnummer*, *Rabattransaktionsnummer* eller *Dokumentnoter*). |
-| Brug kravsproces | <p>Angiv denne indstilling til *Ja*, hvis du vil bruge en kravsproces. På denne måde kan du markere de transaktioner, som Rabatstyring opretter som enten indkasserede eller ikke indkasserede, og derefter kun bogføre de indkasserede transaktioner.</p><p>Du beregner f.eks. rabatter for en måneds transaktioner, men kunden har ikke indkasseret to dage. I dette tilfælde oprettes de ikke-indkasserede transaktioner igen, næste gang du kører funktionen *Proces* for samme periode.</p><p>Hvis du angiver denne indstilling til *Nej*, bogføres alle kravtransaktioner.</p> |
+| Reference til rabatvareordre | Vælg den rabatreference, der skal bruges i salgsordrer og indkøbsordrer, som genereres af rabatprocessen (*Ingen*, *Rabatstyringshandel*, *Rabatstyringsnummer*, *Rabattransaktionsnummer* eller *Dokumentnoter*). |
+| Brug kravsproces | <p>Angiv denne indstilling til *Ja*, hvis du vil bruge en kravsproces. På denne måde kan du markere de transaktioner, som Rabatstyring opretter som enten indkasserede eller ikke indkasserede, og derefter kun bogføre de indkasserede transaktioner.</p><p>Du beregner f.eks. rabatter for en måneds transaktioner, men kunden har ikke indkasseret to dage. I dette tilfælde oprettes de ikke-indkasserede transaktioner igen, næste gang du kører funktionen *Proces* for næste periode.</p><p>Hvis du angiver denne indstilling til *Nej*, bogføres alle kravtransaktioner.</p> |
 | Medtag ordretypekladde | I forbindelse med aftaler eller aftalelinjer, hvor transaktionstypen er angivet til *Ordre*, styrer denne indstilling, om en salgsordre af typen *Kladde* skal inkluderes. Den giver fleksibilitet, hvis disse ordretyper bruges i scenarier, hvor en rabat endnu ikke skal anvendes. |
 
 ## <a name="number-sequences-tab"></a>Fanen Nummerserier
@@ -50,8 +50,8 @@ Brug fanen **Nummerserier** på siden **Parametre for rabatstyring** til at tild
 
 | Reference | Betegnelse |
 |---|---|
-| Rabat- og fradragsaftale | Nummerserien tildeler en entydig nøgleværdi til hver rabataftale. Denne nøgle bruges, når der oprettes aftaler. |
-| Rabat- og fradragsnummer | Nummerserien tildeler en entydig nøgleværdi til hver rabat. Denne nøgle bruges til at identificere rabatrelationer. |
+| Rabatstyringshandel | Nummerserien tildeler en entydig nøgleværdi til hver rabataftale. Denne nøgle bruges, når der oprettes aftaler. |
+| Rabatstyringsnummer | Nummerserien tildeler en entydig nøgleværdi til hver rabat. Denne nøgle bruges til at identificere rabatrelationer. |
 | Rabattransaktionsnummer | Nummerserien tildeler en entydig nøgleværdi til hver rabattransaktion. Denne nøgle bruges til at identificere rabattransaktioner. |
 | Momsfaktura | Nummerserien tildeler en entydig nøgleværdi til hver rabatfaktura. Denne nøgle bruges, når rabatkladder bogføres automatisk. |
 

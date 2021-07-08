@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814796"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270781"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Tilsidesætte standardreservationsprincippet for materialer i produktion
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Funktionen *Tilsidesæt standardreservation for produktion* gør det muligt angive et standardreservationsprincip for hver varemodelgruppe. Derfor kan der automatisk anvendes forskellige reservationsprincipper for hver vare, der indgår i en stykliste (BOM) eller batchordreformel. Du kan vælge, om hver varemodelgruppe skal tilsidesætte det standardreservationsprincip, der er angivet for en ordre, og hvilket reservationsprincip der skal bruges i stedet (*manuel*, *forkalkulation*, *planlægning*, *frigivelse* eller *start*).
 
@@ -37,7 +36,7 @@ Hvis der f.eks. er råmaterialer eller ingredienser, der kræver plukarbejde, st
 Før du kan bruge funktionen, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Produktionsstyring*
-- **Funktionsnavn:** *(forhåndsversion) Tilsidesæt standardreservation for produktion*
+- **Funktionsnavn:** *Tilsidesæt standardreservation for produktion*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Knytte en politik for produktionsreservation til en varemodelgruppe
 

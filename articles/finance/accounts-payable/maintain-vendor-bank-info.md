@@ -16,17 +16,16 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2011-01-14
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 1221b8da59d16746f4ba5cccb900e34c8a25f358
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b81f5bf5f2bb89902eb0e5424ad0db6075010c67
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018247"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271170"
 ---
 # <a name="maintain-vendor-bank-account-information"></a>Vedligeholde kreditors bankkontooplysninger
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Kreditorer kan bruge funktionen Leverandørsamarbejde til at vedligeholde deres bankkontooplysninger. Dette emne forklarer, hvordan du tilføjer og vedligeholder bankoplysninger for kreditorer, som du samarbejder med.
 

@@ -2,7 +2,7 @@
 title: Konfigurere satser
 description: Satser i Microsoft Dynamics 365 Human Resources definerer, hvor meget arbejdsgivere og medarbejdere bidrager med til et frynsegode.
 author: andreabichsel
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d6018decbc429a5e6fbb658369d56a34439f6c7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054974"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266651"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
@@ -46,7 +46,7 @@ Brug satser til at bestemme, hvor meget medarbejdere og arbejdsgiver betaler for
    | **Udløb** | Satsens slutdato. 31-12-2154 (som repræsenterer aldrig) er standardværdien. |
    | **Brug lag** | Det niveau, der skal bruges til beregningen af frynsegodesatsen. Et enkelt niveau for én frynsegodesats eller dobbeltniveau for en frynsegodesats på to niveauer. Et eksempel på et dobbeltniveau er et niveau, der er baseret på køn og alder. |
    | **Betalingshyppighed** | Den betalingsfrekvens, der bestemmer, hvor ofte frynsegodepræmiesatsen skal betales til frynsegodeudbyderen. Hvis betalingsfrekvensen f.eks. er månedlig, repræsenterer frynsegodesatsen det månedlige betalingsbeløb. |
-   | **Afrunding af lønfrekvenssats** | Metoden til afrunding af satsen: standard eller afkortet. |
+   | **Afrunding af lønfrekvenssats** | Der findes følgende metoder til afrunding af satser: Standard, Afkortet, Normal, Nedad og Oprunding. </br></br><ul><li>**Standard** – Rund altid op. 10,611 afrundes for eksempel til 10,62. -10,231 afrundes til -10,23. </li><li>**Afkortet** – Rund altid ned. 10,619 afrundes for eksempel til 10,61. -10,231 afrundes til -10,24. </li><li>**Normal** – Decimalværdier, der slutter på eller er større end 5, afrundes fra nul. Decimalværdier, der slutter på eller er mindre end 4, afrundes mod nul. 10,615 afrundes for eksempel til 10,62. -10,235 afrundes til -10,24. 10,614 afrundes til 10,61. -10,234 afrundes til -10,23. </li><li>**Nedad** – Afrund mod nul. 10,619 afrundes for eksempel til 10,61. -10,231 afrundes til -10,23. </li><li>**Oprunding** – Afrund væk fra nul. 10,619 afrundes for eksempel til 10,62. -10,231 afrundes til -10,24. |
    | **Medarbejderbeløb for ikke-ryger** | Det beløb, som frynsegodeudbyderen fakturerer for en medarbejder, der ikke ryger. Det er det beløb, som arbejdsgiveren betaler til frynsegodeudbyderen og bør baseres på betalingsfrekvensen for satsopsætningen. |
    | **Arbejdsgiverbeløb for ikke-ryger** | Det beløb, som frynsegodeudbyderen fakturerer for en medarbejder, der ikke ryger. Det er det beløb, som arbejdsgiveren betaler til frynsegodeudbyderen, og det bør baseres på betalingsfrekvensen for satsopsætningen. |
    | **Medarbejderbeløb for ryger** | Det beløb, som frynsegodeudbyderen fakturerer for en medarbejder, der ryger. Det er det beløb, som arbejdsgiveren betaler til frynsegodeudbyderen og bør baseres på betalingsfrekvensen for satsopsætningen. |
