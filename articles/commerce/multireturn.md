@@ -15,43 +15,27 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4a64794a0e04516441fab628d441640e4d154b8d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c36fe4c8376ad0364516c0268965c798e20436c6
+ms.sourcegitcommit: 3a9599e9b9458434c0e44d295eabd2304c5650be
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796881"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "6334419"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Returnere varer på tværs af flere kundeordrer og fakturaer
 
 [!include [banner](includes/banner.md)]
 
 
-I denne artikel beskrives to funktioner, der optimerer kundeordrereturneringer over flere fakturaer. 
+Returneringer kan foretages på tværs af flere kundeordrer og fakturaer. 
 
-## <a name="enable-refunds-over-multiple-captures"></a>Aktivér refusioner via flere opsamlinger
+## <a name="configure-commerce-to-support-returns-across-multiple-customer-order-and-invoices"></a>Konfigurere Commerce til at understøtte returneringer på tværs af flere kundeordre og fakturaer
 
-Denne funktion giver mulighed for flere sammenkædede refusioner i forhold til den samme kundeordre. 
-
-1. Gå til arbejdsområdet **Funktionsstyring**, og søg efter **Aktivér refusioner via flere opsamlinger**.
-2. Vælg **Aktivér refusioner via flere opsamlinger**, og klik derefter på **Aktivér**. 
-
-## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktivér beregning af passende moms for returneringer med delvist antal
-
-Denne funktion sikrer, at momsen i sidste ende er lig med det oprindeligt opkrævede momsbeløb, når en ordre returneres ved hjælp af flere fakturaer. 
-
-1. Gå til arbejdsområdet **Funktionsstyring**, og søg efter **Aktivér beregning af passende moms for returneringer med delvist antal**.
-2. Vælg **Aktivér beregning af passende moms for returneringer med delvist antal**, og klik derefter på **Aktivér**. 
-
+1. Gå til **Commerce-parametre \> Kundeordrer**.
+1. Aktivér parameteren **Aktivér returneringer af flere ordrer**. 
 
 ## <a name="process-returns"></a>Behandl returneringerne
 
-Når disse funktioner er aktiveret, og ændringerne synkroniseres til butikkerne, kan kassereren i butikken kan vælge flere salgsordrer til en kunde til deres returnering.
+Når parameteren er aktiveret, og ændringerne synkroniseres til butikkerne, kan kassereren i butikken kan vælge flere salgsordrer til en kunde til deres returnering.
 
 Når ordrerne markeres, vises en liste over alle produkter, der kan returneres, på tværs af alle fakturaer for ordrerne. Kassereren kan derefter vælge de produkter, der skal returneres. Der oprettes en enkelt returordre for alle de valgte produkter.
-
-Hvis ordren returneres fuldt ud, er det beløb, der returneres til kunden, lig med det momsbeløb, der oprindeligt blev opkrævet.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

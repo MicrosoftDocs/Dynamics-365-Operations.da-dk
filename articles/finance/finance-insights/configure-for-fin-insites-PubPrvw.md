@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222606"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309659"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguration til Finance Insights til offentlig forhåndsversion (forhåndsversion) - version 10.0.20 og senere
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222606"
 Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sammen med Dataverse, Azure og AI Builder for at levere effektive prognoseværktøjer til din organisation. I dette emne beskrives konfiguration af Dynamics 365 Finance version 10.0.20, så dit system kan bruge de egenskaber, der er tilgængelige i Finance Insights for offentlig forhåndsversion.
 
 > [!NOTE]
-> De konfigurationstrin, der er beskrevet i dette emne, gælder kun for Finans version 10.0.20 og senere. Hvis du vil konfigurere Finance Insights på version 10.0.19 og tidligere, skal du se [Konfiguration for Finance insights - versioner op til 10.0.18](configure-for-fin-insites.md).
+> De konfigurationstrin, der er beskrevet i dette emne, gælder kun for Finans version 10.0.20 og senere. Hvis du vil konfigurere Finance Insights på version 10.0.19 og tidligere, skal du se [Konfiguration for Finance insights - versioner op til 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Udrulle Finance
 
@@ -748,6 +748,8 @@ Følg disse trin for at installere tilføjelsesprogrammet Finance Insights.
 2. Vælg **Installér et nyt tilføjelsesprogram** i afsnittet **Tilføjelsesprogrammer for miljø**.
 3. Vælg tilføjelsesprogrammet **Finance Insights**.
 4. Acceptér betingelserne, og vælg **Installer**.
+
+Tilføjelsesprogrammet kan være flere minutter om at blive installeret.
 
 ## <a name="feedback-and-support"></a>Feedback og support
 

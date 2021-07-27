@@ -2,7 +2,7 @@
 title: Ofte stillede spørgsmål om personalehandlinger
 description: Denne artikel indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Human Resourceshandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale.
 author: andreabichsel
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a458800788d8e0df6c1f937a639eff31dcbb2c06
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 05365eabe6f3c283f5828e468c9323c3fa897fb8
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054542"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333013"
 ---
 # <a name="personnel-actions-faq"></a>Ofte stillede spørgsmål om personalehandlinger
 
@@ -51,7 +51,7 @@ Human Resourceshandlinger kan have følgende statusser:
 - **Afvist** – Handlingsanmodningen blev afvist af godkenderen.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Kan jeg slette en personalehandling?
-Ja, kan du slette personalehandlinger, der har status **Kladde**, **Fejl**, **Lykkedes ikke** eller **Annulleret**.
+Ja, kan du slette personalehandlinger, der har status **Kladde**, **Fejl**, **Lykkedes ikke** eller **Annulleret**. Du kan kun slette personalehandlinger, der har statussen **Fuldført**, hvis du har angivet indstillingen **Tillad sletning af fuldførte arbejderhandlinger** til **Ja** på siden **Delte Human Resources-parametre**.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Hvordan kan jeg hurtigst se status for en anmodning om personalehandling?
 Åbn en listeside for personalehandlinger, og vælg en personalehandling.
@@ -66,7 +66,7 @@ Hvis en anmodning om personalehandling mislykkes, skal du følge disse trin for 
 > 3. Ret fejlen, og klik derefter på **Fuldfør** eller **Send**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Hvad sker der med en personalehandling, der bruger en arbejdsgang, når den endelige godkendelse er fuldført?
-Hvis der ikke er fejl, bliver personalehandlingen skrivebeskyttet. (Du kan få vist historikken for listesiden **Alle arbejderhandlinger**, men du kan ikke ændre personalehandlingen). Når status for en personalehandling er **Afsluttede**, er placering eller arbejderposten allerede blevet opdateret. Hvis du vil have vist de ændringer, der er udført, kan du åbne listesiden **Stillinger** eller **Arbejdere**.
+Hvis der ikke er fejl, bliver personalehandlingen skrivebeskyttet. (Du kan få vist historikken for listesiden **Alle arbejderhandlinger**, men du kan ikke ændre personalehandlingen). Når status for en personalehandling er **Fuldført**, er placerings- eller arbejderposten allerede blevet opdateret. Hvis du vil have vist de ændringer, der er udført, kan du åbne listesiden **Stillinger** eller **Arbejdere**.
 
 ## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Hvorfor får jeg vist følgende fejl, når jeg indtaster en værdi, der er forskellig fra nul, i feltet med lønsats? "Værdien ligger uden for det gyldige interval – den skal være mellem 0,00 og 0,00"
 Du modtager denne meddelelse, fordi feltet Niveau i formularen Job er tomt for det job, der er knyttet til den valgte stilling.

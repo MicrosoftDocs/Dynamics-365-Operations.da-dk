@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: 7521
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 42c3735b14d506ce6a8cd3318ed32eb93bce87ae
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 8595bbbce9ab39893b67ee142bcb71996ccd6994
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057328"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338048"
 ---
 # <a name="overview"></a>Overblik
 
@@ -107,7 +107,7 @@ Brugervejledningen til Dynamics 365 Human Resources indeholder oplysninger om op
 
 [Oversigt over performancestyring](hr-develop-performance-management-overview.md)</br>
 [Justere arbejdsstyrkens færdigheder](hr-develop-skills.md)</br>
-[Tilføje til din performancekladde](hr-develop-add-performance-journal.md)</br>
+[Føje til din performancekladde](hr-develop-add-performance-journal.md)</br>
 [Oprette et mål](hr-develop-create-goal.md)</br>
 [Oprette en performancegennemgang](hr-develop-create-performance-review.md)</br>
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
-ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
+ms.openlocfilehash: f0d709ef81fd43c009bf36aba2d4be949b1a737c
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261904"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338223"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (prøveversion)
 
@@ -29,9 +31,8 @@ ms.locfileid: "6261904"
 
 Med Finance Insights kan du konfigurere og udvide modeller, så du præcist og intelligent kan forudsige virksomhedens pengestrøm, forudsige, hvornår du vil modtage betaling for udestående tilgodehavender, og generere et budgetforslag, der kan gøre budgetteringsprocessen hurtigere. Alle disse funktioner er baseret på intelligente Machine Learning-modeller. Når disse nye muligheder kombineres med automatisering i kreditorbetalinger og -rykkere, indeholder de et omfattende og intelligent økonomisystem, der styrer beslutningstagningen og hjælper dig med at reagere effektivt på eksisterende og forventede forretningsudfordringer.
 
-Financial Insights prøveversion er tilgængelig for prøveimplementeringer i USA, Europa og Storbritannien. Microsoft tilføjer trinvist understøttelse af flere regioner.
-
-Prøveversionsfunktioner kan og bør kun aktiveres i sandkasse miljøer i niveau 2. Opsætnings- og kunstige AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+> [!NOTE]
+> Financial Insights, offentlig prøveversion er tilgængelig for implementering i USA, Canada, Storbritannien, Europa, Asien og Stillehavsområdet, Australien og New Zealand. Microsoft tilføjer trinvist understøttelse af flere regioner. Hvis du vil aktivere Økonomiindsigt i produktionsmiljøer, skal egenskaberne [Eksporter til Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) først aktiveres i produktionsmiljøet.
 
 > [!NOTE]
 > Denne funktionalitet tilbydes som en række prøveversionsfunktioner. Under kørsel af en prøveversionsfunktion bør du ikke bruge de oprettede modeller til maskinel indlæring til at danne grundlag for eller påvirke virksomhedens beslutninger eller budgetteringsforslag. Din brug af funktionen styres af [supplerende vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).
@@ -46,7 +47,7 @@ Hvis du vil anvende til prøveversionsprogrammet, skal du udfylde den [Finance I
 
 ### <a name="system-requirements"></a>Systemkrav
 
-Der kræves et niveau 2-sandkassemiljø (flere bokse) for at få vist Finance Insights. Du kan finde flere baggrundsoplysninger om miljøer under [Miljøplanlægning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+Der kræves et niveau 2-miljø (flere bokse) for at få vist Finance Insights. Du kan finde flere baggrundsoplysninger om miljøer under [Miljøplanlægning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Versionskrav
 
@@ -55,8 +56,6 @@ Dette dokument gælder for version 10.0.11 af Finance and Operations-apps (platf
 ### <a name="historical-data-requirements"></a>Historiske datakrav
 
 Mindst et års antal kundefakturaer er påkrævet for at træne den maskinelle indlæringsmodel, der bruges til funktionen debitorbetalingsforudsigelser, korrekt.
-
-Der findes eksempeldata til demosystemer, hvor Contoso-demodata er angivet.
 
 ### <a name="role-and-permission-requirements"></a>Rolle- og tilladelseskrav
 
@@ -72,7 +71,7 @@ Det er en god ide at oprette og administrere ressourcer i Azure, Microsoft Datav
 ## <a name="configure-finance-insights"></a>Konfigurere Finance Insights
 
 Du skal fuldføre nogle konfigurationstrin, før du kan bruge Finance Insights. Du kan finde flere oplysninger om, hvordan du kan konfigurere Finance Insights, i:
-  - For versioner op til 10.0.19: [Konfiguration for Finance insights - versioner op til 10.0.19](configure-for-fin-insites.md).
+  - For versioner op til 10.0.19: [Konfiguration for Finance insights (forhåndsversion) - versioner op til 10.0.19](configure-for-fin-insites.md).
   - For version 10.0.20 og senere: [Konfiguration for Finance Insights (forhåndsversion) - version 10.0.20 og senere](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Oprette et dataintegratorprojekt

@@ -355,6 +355,8 @@
           items:
             - name: Introduktion
               href: hr-admin-integration-ats-api-introduction.md
+            - name: Server til server-godkendelse til ATS-integration
+              href: hr-admin-integration-ats-api-s2s-auth.md
             - name: Rekrutteringsanmodning og relaterede enheder
               items:
                 - name: Rekrutteringsanmodning
@@ -443,16 +445,40 @@
               href: hr-admin-integration-payroll-api-introduction.md
             - name: Generere og gennemse lønenheder
               href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: Medarbejders løn
-              href: hr-admin-integration-payroll-api-payroll-employee.md
-            - name: Lønarbejderadresse
-              href: hr-admin-integration-payroll-api-payroll-worker-address.md
-            - name: Plan for fast løn
-              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-            - name: Lønstillingsjob
-              href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: Lønstilling
-              href: hr-admin-integration-payroll-api-payroll-position.md
+            - name: Parametre for lønintegration
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: Lønenheder
+              items:
+                - name: Medarbejders løn
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Lønarbejderadresse
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Plan for fast løn
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Plan for variabel kompensationsløn
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: Lønstilling
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Lønstillingsjob
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Orlovs- og fraværsrelaterede enheder
+              items:
+                - name: Orlovssaldo
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: Orlovstype
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: Anmodning om orlov
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Grupperede indstillinger
+              items:
+                - name: Køn
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: Nej-Ja
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: Bonustype
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: Procestype
+                  href: hr-admin-integration-payroll-api-process-type.md
     - name: Brugervejledning
       items:
         - name: Oversigt
@@ -559,7 +585,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Tilknytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
+                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
                 - name: Rapport om arbejdsgangstyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
@@ -599,14 +625,18 @@
           items:
             - name: Organisere dine medarbejdere
               href: hr-personnel-departments-jobs-positions.md
+            - name: Arbejdsområde for personaleadministration
+              href: hr-personnel-personnel-management-workspace.md
             - name: Konfigurere komponenterne i et job
               href: hr-personnel-jobs.md
             - name: Definere afdelinger
               href: hr-personnel-define-departments.md
-            - name: Tilføje en afdeling til et hierarki
+            - name: Føje en afdeling til et hierarki
               href: hr-personnel-add-department-hierarchy.md
             - name: Definere job
               href: hr-personnel-define-jobs.md
+            - name: Stillinger
+              href: hr-personnel-positions.md
             - name: Oprette en arbejdstidskalender
               href: hr-personnel-create-working-time-calendar.md
             - name: Rekruttere jobkandidater
@@ -833,7 +863,73 @@
               href: hr-employee-manager-self-service-custom-links.md
             - name: Ændre navn på arbejdsområdet Medarbejderselvbetjening
               href: hr-employee-self-service-workspace-name.md
-            - name: Redigere personlige oplysninger
+            - name: Rediger personlige oplysninger
               href: hr-employee-manager-self-service-edit-personal-information.md
             - name: Begrænse redigering af personlige oplysninger
               href: hr-employee-self-service-restrict-editing.md
+        - name: Bruge arbejdsgangssystemet
+          items:
+            - name: Oversigt over arbejdsgangssystem
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arkitektur for arbejdsgangssystem
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbejdsgangselementer
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Handlinger i arbejdsgange
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Oprette arbejdsgange
+              items:
+                - name: Oversigt over oprettelse af arbejdsgange
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere egenskaber for arbejdsgange
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere manuelle opgaver
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere automatiserede opgaver
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere godkendelsesprocesser
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere godkendelsestrin
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere udgiftsvalidatorer
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere manuelle beslutninger
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere betingede beslutninger
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere parallelle aktiviteter
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere parallelle grene
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere arbejdsgange for linjeelementer
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere batchjob for behandling af arbejdsgangsmeddelelser som vigtige
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: Uddelegere arbejdselementer i en arbejdsgang
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vise arbejdsgangs historik
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere systemet til at sende mail angående arbejdsgangen til brugere
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbejdsgangstyper
+              items:
+                - name: Oprettelse af en arbejdsgangstype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kontrolliste til arbejdsgangstype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette en arbejdsgangskategori
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette en forespørgsel for en arbejdsgangstype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette en ny arbejdsgangstype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette en arbejdsgangsdokumentklasse
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Oprette en SubmitToWorkflow-klasse
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: Rapport om arbejdsgangstyper
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ofte stillede spørgsmål om arbejdsgang
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
