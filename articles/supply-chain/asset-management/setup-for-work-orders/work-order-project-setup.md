@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 071c73f9295ad7911037cbd10a48b46b044eebda
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 19cdc33fcc9d1293b235facbaffd1ccf62875217
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808226"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360047"
 ---
 # <a name="work-order-project-setup"></a>Opsætning af arbejdsordreprojekt
 
@@ -69,7 +69,7 @@ Opsætningen giver fuldstændig integration med modulet **Projektstyring og regn
 
     Startdatoen er som standard den dato, hvor du føjer arbejdsordreprojektet til siden. Den styres af feltet **Gyldig fra**, der som standard er skjult. Hvis du vil have vist feltet **Gyldig fra**, skal du vælge **Vis** \> **Alle**. Du kan derefter bruge feltet **Gyldig fra** sammen med feltet **Slutdato** til at angive en begrænset gyldighedsperiode for arbejdsordreprojektet.
 
-    ![Siden Opsætning af arbejdsordreprojekt](media/17-setup-for-work-orders.png)
+    ![Siden Opsætning af arbejdsordreprojekt.](media/17-setup-for-work-orders.png)
 
 6. Vælg **Tilføj** under fanen **Projektgruppe**.
 7. I feltet **Arbejdsordretype** skal du vælge en arbejdsordretype.
@@ -77,7 +77,7 @@ Opsætningen giver fuldstændig integration med modulet **Projektstyring og regn
 9. Vælg den projektgruppe, der skal knyttes til arbejdsordretypen, i feltet **Projektgruppe**. En arbejdsordretype med navnet **Forebyggende vedligeholdelse** kan f.eks. knyttes til en projektgruppe med navnet **Foreb. vedl.** eller **Intern**. Alternativt kan der knyttes en **Investering**-arbejdsordretype, der bruges til arbejdsordrer, som er relateret til investeringer og anlægsaktiver, til en projektgruppe med navnet **Invester** eller **Investering**.
 10. Vælg **Gem**.
 
-![Siden Opsætning af arbejdsordreprojekt, Tilføj arbejdsordre](media/18-setup-for-work-orders.png)
+![Siden Opsætning af arbejdsordreprojekt, Tilføj arbejdsordre.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Hver gang der oprettes en linje i en arbejdsordre, søger Styring af aktiver efter en projektgruppe, der skal relateres til arbejdsordrejobprojektet. Søgningen er baseret på den opsætning, der er beskrevet i dette emne. Hver projektgruppe har en relateret projekttype. Projektgrupper, der har projekttypen **Tid og materiale** eller **Fastpris**, er kun gyldige for aktiver, der er relateret til en debitorkonto.

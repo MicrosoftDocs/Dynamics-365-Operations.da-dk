@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: dda276b7d634317aae26728f7d9f51af9ccfb896
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b74a1ab6d0f17367fc16f795e1b28ff5d0c5508e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023116"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358236"
 ---
 # <a name="set-the-tds-parameters"></a>Angive parametre for kildeskat
 
@@ -34,13 +34,13 @@ Dette emne beskriver, hvordan du angiver parametre for at aktivere funktionen ti
 3. Angiv indstillingen **Faktura** til **Ja** for at aktivere de felter, der bruges til at beregne og fratrække kildeskat på fakturaniveau.
 4. Angiv indstillingen **Betaling** til **Ja** for at aktivere de felter, der bruges til at beregne og fratrække kildeskat på betalingsniveau.
 
-    [![Fanen Direkte skatter](./media/apac-ind-TDS-1.png)](./media/apac-ind-TDS-1.png)
+    [![Fanen Direkte skatter.](./media/apac-ind-TDS-1.png)](./media/apac-ind-TDS-1.png)
 
 5. Under fanen **Nummerserier** skal du finde den serie, hvor feltet **Reference** er angivet til **Betaling af A-skat**. I feltet **Nummerseriekode** for serien skal du vælge nummerseriekoden. Nummerseriekoden bruges til at generere bilagsnumre til den periodiske skatteudligningsproces.
 
     > [!NOTE]
     > Du kan køre den periodiske skatteudligningsproces ved at gå til **Skat \> Angivelser \> A-skat \> Betaling af A-skat**.
 
-    [![Fanen Nummerserier](./media/apac-ind-TDS-2.png)](./media/apac-ind-TDS-2.png)
+    [![Fanen Nummerserier.](./media/apac-ind-TDS-2.png)](./media/apac-ind-TDS-2.png)
 
 6. Luk siden.

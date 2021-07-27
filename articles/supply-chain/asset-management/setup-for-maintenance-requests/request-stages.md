@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c95704b944f86a1cfc0654f0ebf5bc7c79bbeec9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b54b58a29dc23e19f5065363c331351f24267ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808682"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360940"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Levetidstilstande for vedligeholdelsesanmodninger
 
@@ -48,7 +48,7 @@ Livscyklustilstande for vedligeholdelsesanmodninger definerer de stadier, som en
 
 Følgende illustration viser et eksempel på listesiden **Vedligeholdelsesanmodningers livscyklustilstande**.
 
-![Siden Livscyklustilstande for vedligeholdelsesanmodning](media/02-setup-for-requests.png)
+![Siden Livscyklustilstande for vedligeholdelsesanmodning.](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Livscyklustilstande for vedligeholdelsesanmodninger, livscyklustilstandsgrupper og -typer er relateret til og bruges på samme måde som arbejdsordres livscyklustilstande, livscyklustilstandsgrupper og -typer. 
@@ -66,9 +66,9 @@ Når du har oprettet de livscyklustilstande, der kræves til dine vedligeholdels
 
 5. I oversigts panelet **Livscyklustilstande** skal du vælge de livscyklustilstande, der bør inkluderes i livscyklusmodellen:
 
-    - Hvis du vil inkludere en livscyklustilstand i livscyklusmodellen, skal du vælge den i sektionen **Resterende livscyklustilstande** og derefter vælge knappen med højre pil ![Højre pil](media/03-setup-for-requests.png) for at flytte den til sektionen med **Valgte livscyklustilstande**.
-    - Hvis du vil inkludere alle de tilgængelige livscyklustilstande i livscyklusmodellen, skal du vælge knappen **Vælg alle tilgængelige tilstande** ![Vælg alle tilgængelige tilstande](media/04-setup-for-requests.png). Alle livscyklustilstande flyttes til sektionen **Valgte livscyklustilstande**.
-    - Hvis du vil fjerne en livscyklustilstand fra livscyklusmodellen, skal du vælge den i sektionen **Valgte livscyklustilstande** og derefter vælge knappen med venstre pil ![Venstre pil](media/05-setup-for-requests.png) for at flytte den til sektionen med **Resterende livscyklustilstande**.
+    - Hvis du vil inkludere en livscyklustilstand i livscyklusmodellen, skal du vælge den i sektionen **Resterende livscyklustilstande** og derefter vælge knappen med højre pil ![Højre pil.](media/03-setup-for-requests.png) for at flytte den til sektionen **Valgte livscyklustilstande**.
+    - Hvis du vil inkludere alle de tilgængelige livscyklustilstande i livscyklusmodellen, skal du vælge knappen **Vælg alle tilgængelige tilstande** ![Vælg alle tilgængelige tilstande.](media/04-setup-for-requests.png). Alle livscyklustilstande flyttes til sektionen **Valgte livscyklustilstande**.
+    - Hvis du vil fjerne en livscyklustilstand fra livscyklusmodellen, skal du vælge den i sektionen **Valgte livscyklustilstande** og derefter vælge knappen med venstre pil ![Venstre pil.](media/05-setup-for-requests.png) for at flytte den til sektionen **Resterende livscyklustilstande**.
 
 6. I oversigtspanelet **Generelt** er felterne i sektionen **Opdateringer** relevante, hvis du bruger reparation af depot.
 
@@ -77,7 +77,7 @@ Når du har oprettet de livscyklustilstande, der kræves til dine vedligeholdels
 
 Følgende illustration viser et eksempel på listesiden **Vedligeholdelsesanmodningers livscyklusmodeller**.
 
-![Siden Livscyklusmodeller for vedligeholdelsesanmodning](media/06-setup-for-requests.png)
+![Siden Livscyklusmodeller for vedligeholdelsesanmodning.](media/06-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

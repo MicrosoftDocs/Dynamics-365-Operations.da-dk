@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bef79df8d9806771f87a6f77a0c9094887050646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 112d3d37d1f70218265f264cda7ecefcb76f1f67
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822197"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343856"
 ---
 # <a name="budget-planning-data-allocation"></a>Datafordeling til budgetplanlægning
 
@@ -36,28 +36,28 @@ Tre fordelingsmetoder (Fordel hen over perioder, Fordel på dimensioner og Brug 
 > [!NOTE] 
 > Et entydigt scenarie skal bruges til sammenlægning, der adskiller sig fra det scenarie, som blev brugt til distribution, eller andre ændringer, som tidligere er udført i den overordnede plan.  
 
-[![Fordel på tværs af metode for periodefordeling](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+[![Fordel på tværs af metode for periodefordeling.](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Fordel på tværs af perioder** – En periodefordelingskategori bruges til at fordele budgetplanlinjerne fra Kildebudgetplanscenariet på tværs af perioder i destinationsscenariet. Beløbet i kildedokumentet er tildelt flere linjer i destinationsscenariet, baseret på den procentdel og dato, der er defineret i periodefordelingskategorien.         
 
-[![Fordel til metode for dimensionsfordeling](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
+[![Fordel til metode for dimensionsfordeling.](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Fordel på dimensioner** – Budgetplanlinjerne fordeles fra kildebudgetplanlægningsscenariet til en eller flere linjer i destinationsscenariet, baseret på procentsatserne og de økonomiske dimensioner, der er defineret i den valgte budgetfordelingsbetingelse.           
 
-![Aggreger diagram](./media/aggregatechart-300x230.png)
+![Aggreger diagram.](./media/aggregatechart-300x230.png)
 **Aggreger** – Budgetplanlinjerne aggregeres fra kildebudgetplanscenariet i de tilknyttede (underordnede) budgetplaner til destinationsscenariet i den overordnede budgetplan. Denne metode gør det muligt at konsolidere budgetbeløb, der er oprettet på et lavere niveau i organisationen, på et højere niveau.          
 
-[![Fordel diagram](./media/distributechart-300x230.png)](./media/distributechart.png)
+[![Fordel diagram.](./media/distributechart-300x230.png)](./media/distributechart.png)
 **Fordel** – Budgetplanlinjerne fordeles fra kilden budgetplanlægningsscenariet i den overordnede budgetplan til destinationsscenariet i de tilknyttede (underordnede) budgetplaner, baseret på de økonomiske dimensioner for organisationsenheder i de tilknyttede planer. Denne metode gør det muligt at sprede budgetbeløb, der er oprettet på et højere niveau i organisationen, ud for en mere lokaliseret gennemgang.           
 
-[![Regler for finansfordeling](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
+[![Regler for finansfordeling.](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
 **Brug finansfordelingsregler** – Budgetplanlinjerne fordeles fra kildebudgetplanlægningscenariet til destinationscenariet på basis af den valgte finansfordelingsregel. 
 
-[![Kopier fra budgetplan](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
+[![Kopier fra budgetplan.](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
 **Kopier fra budgetplanen** – Som i fordelingsmetoden oprettes budgetplanlinjer i destinationen på basis af linjerne i en relateret budgetplan. Men for denne metode behøver kildebudgetplanen ikke være overordnet men kan være på et højere niveau i hierarkiet for budgetplanen. Denne fordelingsmetode er nyttig, hvis konsoliderede beløb oprindeligt er budgetteret på et meget højere niveau og skal overføres til et lavere niveau i organisationen for detaljeret gennemgang og regulering, før de kan modtage godkendelse på øverste niveau.          
 
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>Ved hjælp af fordelingsmetoder i en budgetplan
 Hvis du vil udføre fordelinger, skal du vælge de linjer, der skal tildeles, og derefter klikke på **Fordel budget**.
 
-[![Knappen Fordel budget](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![Knappen Fordel budget.](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Vælg derefter en fordelingsmetode. De resterende felter angives derefter baseret på den metode, du har valgt. Disse felter indeholder kilden og destinationen for budgetplansdataene og en indstilling, der gør det muligt at multiplicere kilden med en bestemt faktor, når destinationsbeløbene er oprettet, for at forenkle masseregulering. Du kan også angive indstillingen **Vedhæft til plan**. Vælg **Nej** for at erstatte de eksisterende budgetplanlinjer, eller Vælg **Ja** for at bevare de eksisterende budgetplanlinjer og tilføje nye linjer for de fordelte beløb.
 
@@ -70,7 +70,7 @@ Derefter skal du oprette en trinvis fordeling på siden **Konfiguration af budge
 
 Til sidst skal du tilføje en automatiseret opgave til fordeling på det ønskede arbejdsprocesstadium i budgetplanlægningen. I følgende eksempel er der indsat to fase budgetplanlægningsfordelinger (vises med rødt) i arbejdsprocessen.
 
-[![Trinfordelinger for budgetplanlægning](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![Trinfordelinger for budgetplanlægning.](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

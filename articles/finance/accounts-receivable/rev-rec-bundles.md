@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: bce824267f435d9de0acd43ca145e0d148dfe67c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9afc7786de16cb1cada982f43beb956e062777a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816262"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347776"
 ---
 # <a name="revenue-recognition-bundles"></a>Indtægtsføring i bundter
 
@@ -57,17 +57,17 @@ Der er defineret følgende basissalgspriser for komponentvarer:
 - **S0021:** $150,00
 - **Support:** $500,00
 
-Der er angivet en salgsordre for debitor US-004, Cave Wholesales. Den eneste linje, der angives, er for bundtelementet Bærbar computer. Standardenhedsprisen for den overordnede linje kan tages fra flere steder, f.eks. samhandelsaftalen eller basissalgsprisen. I dette eksempel var $2.300 manuelt angivet som enhedspris.
+Der er angivet en salgsordre for debitor US-004, Cave Wholesales. Den eneste linje, der angives, er for bundtelementet Bærbar computer. Standardenhedsprisen for den overordnede linje kan tages fra flere steder, f.eks. samhandelsaftalen eller basissalgsprisen. I dette eksempel var DKK 2.300 manuelt angivet som enhedspris.
 
-[![Bundtelement til bærbar computer på en salgsordre](./media/bundle-01.png)](./media/bundle-01.png)
+[![Bundtvare til bærbar computer på en salgsordre.](./media/bundle-01.png)](./media/bundle-01.png)
 
 Da salgsordren indeholder et bundt, skal det bekræftes. Bekræftelsesdialogboksen viser bundtets komponenter.
 
-[![Dialogboksen Bekræft salgsordre, der viser komponentvarerne](./media/bundle-02.png)](./media/bundle-02.png)
+[![Dialogboksen Bekræft salgsordre, der viser komponentvarerne.](./media/bundle-02.png)](./media/bundle-02.png)
 
 Den udskrevne bekræftelsesrapport viser dog kun den overordnede vare i bundtet, da den pågældende rapport er det eksterne dokument for kunden.
 
-[![Bekræftelsesrapport, der kun viser den overordnede vare](./media/bundle-03.png)](./media/bundle-03.png)
+[![Bekræftelsesrapport, der kun viser den overordnede vare.](./media/bundle-03.png)](./media/bundle-03.png)
 
 Når salgsordren er bekræftet, vises den overordnede vare stadig på salgsordren, men dens status er ændret til **Annulleret**. Derudover spores nettobeløbet i feltet **Bundtede nettobeløb**. Dette beløb skal bruges til at udskrive fakturaen, fordi fakturaen viser den overordnede vare og ikke komponentvarerne.
 
@@ -85,7 +85,7 @@ Summen af komponenterne skal være lig $2.300, og det betyder (1.713,73 kr. + $4
 
 Hvis ændringer er nødvendige for alle komponentvarer, kan den overordnede vare fjernes. I dette tilfælde fjernes komponentvarerne også. Derefter kan den overordnede vare tilføjes igen, og de nødvendige ændringer kan fuldføres, før salgsordren bekræftes.
 
-[![Bundtvare, der inkluderer ændringer af komponentvarer](./media/bundle-04.png)](./media/bundle-04.png)
+[![Bundtvare, der inkluderer ændringer af komponentvarer.](./media/bundle-04.png)](./media/bundle-04.png)
 
 Når salgsordren plukkes og pakkes, indeholder dokumenterne kun komponenterne i bundtet. Følgesedlen og fakturaen skal omfatte et komplet bundt. Ellers kan de ikke bogføres. I dialogboksen vises f.eks. tre komponentvarer. Hvis du prøver at slette en af dem, modtager du en fejlmeddelelse, der viser, at alle produkter i bundtet skal afsendes, før de kan faktureres.
 
@@ -95,19 +95,19 @@ En delmængde kan kun afsendes og faktureres, hvis antallet reduceres for alle k
 
 Det sidste trin er at fakturere salgsordren. Under faktureringen vises komponentvarerne i fakturadialogboksen.
 
-[![Dialogboksen Faktura, der viser komponentvarerne](./media/bundle-06.png)](./media/bundle-06.png)
+[![Dialogboksen Faktura, der viser komponentvarerne.](./media/bundle-06.png)](./media/bundle-06.png)
 
 Den udskrevne faktura viser dog kun den overordnede vare.
  
-[![Den udskrevne faktura, der kun viser den overordnede vare](./media/bundle-07.png)](./media/bundle-07.png)
+[![Den udskrevne faktura, der kun viser den overordnede vare.](./media/bundle-07.png)](./media/bundle-07.png)
 
-Den fakturakladde, der oprettes, efter bogføringen er indtraf, omfatter ikke det overordnede element fra bundtet, da det pågældende element har status af **Annulleret**.
+Den fakturakladde, der oprettes, efter bogføringen er indtraf, omfatter ikke den overordnede vare fra bundtet, da den pågældende vare har status af **Annulleret**.
 
-[![Fakturakladde, der ikke inkluderer det overordnede element](./media/bundle-08.png)](./media/bundle-08.png)
+[![Fakturakladde, der ikke inkluderer den overordnede vare.](./media/bundle-08.png)](./media/bundle-08.png)
 
 Det er vigtigt, at fakturakladden ikke medtager den overordnede vare fra bundtet, da alle processer, der udføres, efter at fakturaen er bogført, er baseret på denne fakturajournal. Hvis du f.eks. opretter en kreditnota fra fanen **Sælg** i handlingsruden, omfatter den kreditnota, der oprettes, de indgående varer, men ikke den overordnede vare.
 
-[![Kreditnota, der viser komponentvarerne, men ikke den overordnede vare](./media/bundle-09.png)](./media/bundle-09.png)
+[![Kreditnota, der viser komponentvarerne, men ikke den overordnede vare.](./media/bundle-09.png)](./media/bundle-09.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

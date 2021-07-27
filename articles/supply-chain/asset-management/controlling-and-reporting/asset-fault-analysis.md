@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a26ee80eb52e40b60ace9b1494b3512d85f04cfe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 913e5cf8d39dfe36efea0526d84808e7d736b030
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837867"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361141"
 ---
 # <a name="asset-fault-analysis"></a>Analyse af aktivfejl
 
@@ -60,7 +60,7 @@ I skærmbilledet herunder er det kun knappen **Symptom**, der er valgt.
 - Der er foretaget fejlregistrering af tre fejlsymptomer: "Air leak", "Blown fuse" og "Equipment jammed".  
 - I kolonnen **Sandsynlighed %** giver alle procenter en sum af 100 %. Sandsynlighed er baseret på alle **Symptom**-registreringer i denne fejlanalyse.
 
-![Figur 1](media/06-controlling-and-reporting.png)
+![Figur 1.](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Sammenlæg pr. symptomer og tidsperiode
 
@@ -69,7 +69,7 @@ I skærmbilledet nedenfor tilføjes **År** og **Måned** for at vise, hvordan d
 - Fejlsymptomerne vises nu som registreringer pr. år/måned.  
 - Hvis du tilføjer alle procentsatser for hver måned i kolonnen **Sandsynlighed %**, bliver de sammenlagt 100 %. Sandsynlighed er baseret på **Symptom**-registreringerne i denne fejlanalyse. Hvis du har et stort antal linjer på et aktiv, men en stor procentdel ligger på en enkelt linje, vil det være en indikation på et fejlsymptom, der skal undersøges mere nøjagtigt for at finde en metode til at begrænse antallet af registreringer for dette fejlsymptom.
 
-![Figur 2](media/07-controlling-and-reporting.png)
+![Figur 2.](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Sammenlæg pr. flere symptomer og aktiver
 
@@ -84,7 +84,7 @@ I skærmbilledet nedenfor blev **Aktiv** og **Aktivtype** tilføjet for at give 
 - Fejlsymptomerne er nu opdelt i kombinationerne **Aktiv** / **Aktivtype** / **Symptom**.  
 - Hvis du tilføjer alle procentsatser i kolonnen **Sandsynlighed %** for henholdsvis kombinationen **Aktiv** / **Aktivtype** / **Symptom**, bliver de hver især sammenlagt 100 %. Sandsynlighed er baseret på **Symptom**-registreringer i denne fejlanalyse. Hvis du har et stort antal linjer på et aktiv, men en stor procentdel ligger på en enkelt linje, vil det være en indikation på et fejlsymptom, der skal undersøges mere nøjagtigt for at finde en metode til at begrænse antallet af registreringer for dette fejlsymptom.
 
-![Figur 3](media/08-controlling-and-reporting.png)
+![Figur 3.](media/08-controlling-and-reporting.png)
 
 **Sammenlæg pr. to symptomer, aktiv og aktivtype**
 
@@ -92,7 +92,7 @@ I skærmbilledet nedenfor er **Område** lagt til **Symptom**, **Aktiv** og **Ak
 
 - Hvis du tilføjer alle procentsatser i kolonnen **Sandsynlighed %** for kombinationen af **Aktiv** / **Aktivtype** / **Symptom** på et aktiv, bliver de hver især sammenlagt 100 %. Sandsynlighed er baseret på kombinationen af **Symptom** og **Område** i denne fejlanalyse. Hvis du har et stort antal linjer på et aktiv, men en stor procentdel ligger på en enkelt linje, vil det være en indikation på et fejlområde, der skal undersøges mere nøjagtigt for at finde en metode til at begrænse antallet af registreringer for dette fejlområde.  
 
-![Figur 4](media/09-controlling-and-reporting.png)
+![Figur 4.](media/09-controlling-and-reporting.png)
 
 **Sammenlæg pr.tre symptomer, aktiv og aktivtype**
 
@@ -100,7 +100,7 @@ I skærmbilledet nedenfor er **Type** tilføjet, og den mest detaljerede beregni
  
 - Hvis du tilføjer alle procentsatser i kolonnen **Sandsynlighed %** for kombinationen af **Aktiv** / **Aktivtype** / **Symptom** på et aktiv, bliver de hver især sammenlagt 100 %. Sandsynlighed er baseret på kombinationen af **Symptom**, **Område** og **Type** i denne fejlanalyse. Hvis du har et stort antal linjer på et aktiv, men en stor procentdel ligger på en enkelt linje, vil det være en indikation på en fejltype, der skal undersøges mere nøjagtigt for at finde en metode til at begrænse antallet af registreringer for denne fejltype.
 
-![Figur 5](media/10-controlling-and-reporting.png)
+![Figur 5.](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]

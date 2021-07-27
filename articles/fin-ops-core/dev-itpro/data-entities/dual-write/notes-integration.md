@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 3ff40011ac60c47f6ed667adfcf01bc727334f13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186780"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358973"
 ---
 # <a name="note-integration"></a>Notaintegration
 
@@ -51,7 +51,7 @@ Hvis du vil oprette et notat i en kunde aftale-app og derefter synkronisere den 
 1. Åbn kontoposten for en kunde i kundetilfredsheds-appen.
 2. Vælg i ruden **Tidslinje** plustegnet (**+**), og vælg derefter **Notat** for at oprette et notat.
 
-    ![Oprette et notat i en kunde aftale-app](media/notes-ce-1.png)
+    ![Oprette et notat i en kundeaftale-app.](media/notes-ce-1.png)
 
 3. Vælg **Tilføj note**, og angiv derefter titel og en beskrivelse.
 
@@ -59,15 +59,15 @@ Hvis du vil oprette et notat i en kunde aftale-app og derefter synkronisere den 
 
     Det nye notat føjes til debitortidslinjen.
 
-    ![Nyt notat på debitortidslinjen](media/notes-ce-3.png)
+    ![Nyt notat på debitortidslinjen.](media/notes-ce-3.png)
 
 4. Logge på appen Finance and Operations, og åbn den samme kundepost. Bemærk, at knappen **Vedhæftede filer** (papirklipssymbolet) øverst til højre angiver, at posten er vedhæftet.
 
-    ![Besked om en vedhæftet fil](media/notes-ce-4.png)
+    ![Besked om en vedhæftet fil.](media/notes-ce-4.png)
 
 5. Vælg knappen **Vedhæftede filer** for at åbne siden **Vedhæftede filer**. Du skal finde det notat, du har oprettet i kundens aftale-app.
 
-    ![Notat fra customer aftale-appen](media/notes-ce-5.png)
+    ![Notat fra kundeaftale-appen.](media/notes-ce-5.png)
 
 Eventuelle opdateringer af notatet synkroniseres frem og tilbage mellem Finance and Operations-appen og kundens aftale-app.
 
@@ -79,7 +79,7 @@ Hvis du vil oprette et notat i en Finance and Operations-app og derefter synkron
 
 1. I appen Finance and Operations på siden **Vedhæftede filer** skal du vælge **Ny** \> **Note**.
 
-    ![Oprette et notat i en Finance and Operations-app](media/notes-fo-1.png)
+    ![Oprette et notat i en Finance and Operations-app.](media/notes-fo-1.png)
 
 2. Angiv en titel og et kort sæt instruktioner, og vælg derefter **Gem**.
 
@@ -87,13 +87,13 @@ Hvis du vil oprette et notat i en Finance and Operations-app og derefter synkron
 
 3. Opdater posten i kundeengagementsappen. Du skal finde det nye notat på tidslinjen.
 
-    ![Nyt notat på tidslinjen i customer aftale-appen](media/notes-fo-3.png)
+    ![Nyt notat på tidslinjen i kundeaftale-appen.](media/notes-fo-3.png)
 
 Du kan klassificere en note som enten intern eller ekstern.
 
 - I Finance and Operations-appen på siden **Vedhæftede filer** skal du åbne noten og derefter i feltet **Begrænsning** vælge **Intern** eller **Ekstern**.
 
-    ![Begrænsningsfelt](media/notes-fo-4.png)
+    ![Begrænsningsfelt.](media/notes-fo-4.png)
 
 Du kan også oprette en URL-adresse.
 
@@ -101,13 +101,13 @@ Du kan også oprette en URL-adresse.
 2. Angiv en titel og en URL-adresse.
 3. I feltet **Begrænsning** vælges **Intern** eller **Ekstern**.
 
-    ![Opret en URL-adresse i Finance and Operations-app'en](media/notes-fo-5.png)
+    ![Opret en URL-adresse i Finance and Operations-appen.](media/notes-fo-5.png)
 
 4. Vælg **Gem**.
 
     Da apps til kundeengagement ikke har en URL-type, er URL-adressen integreret med skriv som et notat.
 
-    ![URL-adressen vises som et notat i en kundeaftale-app](media/notes-ce-6.png)
+    ![URL-adressen vises som et notat i en kundeaftale-app.](media/notes-ce-6.png)
 
 > [!NOTE]
 > Filer, der er vedhæftede filer, understøttes ikke.

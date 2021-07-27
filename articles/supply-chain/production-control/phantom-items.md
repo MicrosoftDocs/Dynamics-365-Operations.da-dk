@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1118d7334602e450e5d503632895f73ba19066a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cb04502721740c48004b62bc96ff13ca063e06db
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814772"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360892"
 ---
 # <a name="phantom-items"></a>Fantomvarer
 
@@ -27,12 +27,12 @@ ms.locfileid: "5814772"
 
 Dette emne beskriver, i detaljer, hvordan fantomlinjetypen kan bruges til linjerne i en stykliste og en formel. I følgende illustration er (a) styklisten for produktet H og delene F og G, og (b) er rutearket for produkt H og del F.
 
-![Produkt H og del F](media/product-H-part-F.png)
+![Produkt H og del F.](media/product-H-part-F.png)
 
 
 Følgende illustration vises et eksempel på en styklistestruktur i to niveauer. Færdigvaren H repræsenterer et produkt til en maskinmontage. Maskinmontagen består af to dele, en elektrisk enhed (F), der har to materialer (A og B), og en gruppe af emballage (G), som også har to materialer (C og D). Et andet materiale (E) bruges under den generelle montage af maskinen.
 
-![Produkt H og del F](media/product-H-part-B.png)
+![Produkt H og del F.](media/product-H-part-B.png)
 
 Foregående illustration repræsenterer styklisten Engineering for produkt H. Denne struktur giver et godt overblik over delene og komponenterne til den overordnede maskinmontage. Men selvom produktudviklere måske foretrækker at få vist styklisten på denne måde, viser denne struktur måske ikke korrekt den måde, som maskinen opbygges på på fabrikken. 
 
@@ -53,23 +53,23 @@ Overgangen mellem Engineering-styklisten og Produktions-styklisten aktiveres via
 ## <a name="multilevel-phantom-bom-structures"></a>Flere strukturniveauer af fantomstykliste
 Fantomlinjetypen kan bruges i flere niveauer styklisteniveauer, som vist i følgende illustration. I denne illustration er (a) styklisten for produkt G, og (b) er rutearket for del E og F og produkt G. 
 
-![Produkt G og del F med ruteark](media/product-G-route-sheet-G.png)
+![Produkt G og del F med ruteark.](media/product-G-route-sheet-G.png)
 
 
 I følgende illustration vises styklisten Manufacturing og rutearket, hvis styklistelinjerne for del E og F er konfigureret, så linjetypen er Fantom. I denne illustration er (a) styklisten for produkt G, og (b) er rutearket for produkt G.
 
-![Produkt G](media/product-G.png)
+![Produkt G.](media/product-G.png)
 
 
 ## <a name="phantom-and-route-network"></a>Fantom- og rutenetværk
 Fantomstyklister kan også bruges til en stykliste, der har et rutenetværk. I et rutenetværk køres en eller flere driftsoperationer parallelt. I følgende illustration vises et eksempel på et rutenetværk, der bruges i en stykliste med flere niveauer. I denne illustration er (a) styklisten for produkt G og del F, og (b) er rutearket for produkt G og del F, som har et rutenetværk.
 
-![Produkt G og del F](media/product-G-part-F.png)
+![Produkt G og del F.](media/product-G-part-F.png)
 
 
 I følgende illustration er (a) styklisten for produkt G og del F, og (b) er rutearket for produkt G og del F.
 
-![Produkt G og del F med ruteark](media/product-G-part-F-with-route-sheet.png)
+![Produkt G og del F med ruteark.](media/product-G-part-F-with-route-sheet.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

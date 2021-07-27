@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f083115f5dc0cfe0e9ba4786bf79ec4083ab7e78
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cd179483458dd3da3b69afaa464c21a11c3df8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792189"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352006"
 ---
 # <a name="home-page-overview"></a>Oversigt over startside
 
@@ -31,7 +32,7 @@ Startsiden er den standardside, som kunderne går til, når de besøger et e-han
 
 I følgende illustration vises et eksempel på en startside, der er oprettet ved hjælp af modulbiblioteket og temaet "Fabrikam".
 
-![Eksempel på en startside](./media/Homepage2.PNG)
+![Eksempel på en startside.](./media/Homepage2.PNG)
 
 Den øverste del af en startside har et sidehoved, der viser alle produktkategorierne og andre sider, som forhandleren ønsker, at kunderne skal gennemse. Nederst på startsiden er der en sidefod, der indeholder hurtige links til forskellige emner, som kan have interesse for kunderne.
 
@@ -41,13 +42,13 @@ Hovedsektionen på startsiden kan fremhæve produkter, kategorier eller kampagne
 
     I følgende illustration vises et eksempel på en startside, hvor det første element i hovedsektionen er et hero-layout af et indholdsblokmodul, der hedder "New Arrival".
 
-    ![Eksempel på et hero-modul](./media/Hero.PNG)
+    ![Eksempel på et hero-modul.](./media/Hero.PNG)
 
 - **Funktion** – Et funktionslayout af et indholdsblokmodul bruges til markedsføring af produkter eller kampagner ved hjælp af en kombination af billeder og tekst. Funktionslayout kan bruges uafhængigt, eller de kan være placeret i et karruselmodul.
 
     Følgende illustration viser et eksempel på et funktionslayout af et indholdsblokmodul på en startside.
 
-    ![Eksempler på funktionsmoduler](./media/Feature.PNG)
+    ![Eksempler på funktionsmoduler.](./media/Feature.PNG)
 
 - **Felt** – Et feltlayout af et indholdsblokmodul bruges til at fremvise flere produkter eller produktkategorier ved hjælp af en kombination af billeder og tekst i et layout med flere kolonner. På illustrationen af en startside, der vises tidligere i dette emne, bruges et feltlayout til gengivelsen af tre kolonner med varetyperne **Shop Women**, **Shop Men** og **Shop Accessories**.
 - **Videoafspiller** – Et videoafspillermodul kan bruges til at vise videoindhold på startsiden. Illustrationen af en hjemmeside, der vises tidligere i dette emne, indeholder et videoafspillermodul.
@@ -56,7 +57,7 @@ Hovedsektionen på startsiden kan fremhæve produkter, kategorier eller kampagne
 
     Følgende illustration viser et eksempel på produktanbefalingsmoduler på en startside.
 
-    ![Eksempler på produktanbefalingsmoduler](./media/Recommendations.PNG)
+    ![Eksempler på produktanbefalingsmoduler.](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Alle moduler på listen her kan bruges på alle webstedssider. Deres placering på startsiden er dog vigtig, fordi denne side er det første sted, hvor kunderne interagerer med dit websted.

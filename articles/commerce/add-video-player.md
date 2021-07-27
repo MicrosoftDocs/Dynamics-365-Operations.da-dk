@@ -2,7 +2,7 @@
 title: Videoafspillermodul
 description: Dette emne omhandler videoafspillermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: aa1efa6ce959439c49983553edfaf247c8e8dcd5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 48d7a047a739420fa4aaa3f520c774854f254ef9
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797401"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479274"
 ---
 # <a name="video-player-module"></a>Videoafspillermodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler videoafspillermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -43,12 +44,16 @@ Videoafspillermodulet understøtter også sekundære lydspor. I forbindelse med 
 
 Det følgende billede viser et eksempel på et videoafspillermodul på en startside.
 
-![Eksempel på et videoafspillermodul](./media/ecommerce-videoplayer.PNG)
+![Eksempel på et videoafspillermodul.](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Egenskaber for videoafspillermodul
 
-| Egenskabsbetegnelse         | Værdi                               | Beskrivende tekst |
+| Egenskabsbetegnelse         | Værdi                               | Betegnelse |
 |-----------------------|-------------------------------------|-------------|
+| Overskrift               | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Som standard bruges **H2** overskriften, men koden kan ændres efter behov for at opfylde tilgængelighedskravene. |
+| RTF             | Afsnitstekst | Modulet understøtter afsnitstekst i RTF-format. Nogle grundlæggende RTF-funktioner understøttes, f. eks. hyperlinks og fed, understreget og kursiv tekst. Nogle af disse funktioner kan tilsidesættes af det sidetema, der anvendes på modulet. |
+| Binding                  | Linktekst, URL-adresse for link, ARIA-mærkat (Accessible Rich Internet Applications) og **Åbn link under ny fane** | Modulet understøtter et eller flere links til "handlingsplaner". Hvis der tilføjes et link, er linktekst, en URL-adresse og en ARIA-mærkat påkrævet. ARIA-mærkater skal være beskrivende for at imødekomme tilgængelighedskravene. Links kan konfigureres, så de åbnes under en ny fane. |
+| Undertekst              | Overskrift, tekst eller link | Der kan tilføjes yderligere sammenhæng for videoafspillermodulet, f.eks. en forfatter eller et designernavn, eller links til personlige blogs. |
 | Automatisk afspilning             | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, afspilles videoen automatisk. |
 | Slå mikrofon fra                  | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, deaktiveres lyden. Standardværdien for denne afspiller er **Falsk**. I Google Chrome-browseren er automatisk afspilning af videoer som standard slået fra, og lyden afspilles kun, hvis brugeren afspiller videoen manuelt. |
 | Løkke                  | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, afspilles videoen gentagne gange i en løkke. |
@@ -58,6 +63,9 @@ Det følgende billede viser et eksempel på et videoafspillermodul på en starts
 | Knapper til videoafspiller | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, vises alle videoafspillerens kontrolelementer. Disse kontrolelementer omfatter knapper til afspilning og pause, en statusindikator og valg af undertekster. |
 | Skjul plakatbillede     | **Sand** eller **Falsk**               | En video kan have en plakatramme. Når værdien for denne egenskab er angivet til **Sand**, er plakatrammen skjult. |
 | Maskeringsniveau            | Et tal mellem **0** og **100** | Den maske, der anvendes på videoen til stylingen. |
+
+> [!IMPORTANT]
+> Egenskaberne **Overskrift**, **Tekst**, **Link** og **Undertekst** er tilgængelige pr. Dynamics 365 Commerce version 10.0.20.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Føje et videoafspillermodul til en side
 

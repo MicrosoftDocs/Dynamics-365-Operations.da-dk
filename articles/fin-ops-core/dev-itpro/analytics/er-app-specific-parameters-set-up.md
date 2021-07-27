@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9276a633d560bc95c868b9c12438b4f625ed169a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751148"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351884"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Konfigurer parametrene for et ER-format for hver juridisk enhed
 
@@ -49,7 +49,7 @@ For at fuldføre eksemplerne i dette emne, skal du have adgang til Microsoft Dyn
     
     I følgende illustration vises de konfigurationer, du skal have, når du er færdig.
 
-    ![Siden ER-konfigurationer](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![Siden ER-konfigurationer.](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## <a name="set-up-parameters-for-the-demf-company"></a>Angiv parametrene for DEMF-firmaet
 
@@ -59,7 +59,7 @@ Du kan bruge ER-strukturen til at konfigurere programspecifikke parametre for et
 2.  I konfigurationstræet skal du vælge elementet **Format for at lære, hvordan man slår LE-data op**.
 3.  I handlingsruden på fanen **Konfigurationer** skal du i gruppen **Programspecifikke parametre** vælge **Opsætning**.
 
-    ![Siden med ER-programspecifikke parametre](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![Siden med ER-programspecifikke parametre.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     På siden **Programspecifikke parametre** kan du konfigurere reglerne for datakilden **Vælger** for formatet **Format til at lære, hvordan man leder efter LE-data**.
     
@@ -75,14 +75,14 @@ Du kan bruge ER-strukturen til at konfigurere programspecifikke parametre for et
 
     Opslaget viser listen over de momskoder, der kan vælges. Denne liste returneres af datakilden **Model.Data.Moms**, der er konfigureret i basis-ER-formatet. Da denne datakilde indeholder feltet **Navn**, vises navnet på hver momskode i opslaget.
 
-    ![Siden med ER-programspecifikke parametre](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Siden med ER-programspecifikke parametre.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Vælg momskoden **MOMS19**.
 8.  I feltet **Opslagsresultat** for den nye post skal du vælge rullelistens pil for at åbne opslaget. Opslaget viser listen over værdier for fasttekstformatet Beskatningsniveau, som du kan markere.
 
     Bemærk, at hvis tysk er valgt som det foretrukne sprog for den bruger, du er logget på som, vil etiketterne for værdierne i opslaget være på tysk, hvis de er blevet oversat i basis-ER-formatet. Hvis etiketten for en opslagsdatakilde er oversat, vil denne etiket endvidere blive vist på brugerens foretrukne sprog under fanen **Opslag**.
 
-    ![Siden med ER-programspecifikke parametre](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Siden med ER-programspecifikke parametre.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Vælg værdien for **Almindelig moms**.
 
@@ -120,7 +120,7 @@ Du kan bruge ER-strukturen til at konfigurere programspecifikke parametre for et
     
     Når du tilføjer denne sidste post, skal du definere følgende regel: Når den momskode, der er videregivet som argument, ikke opfylder nogle af de tidligere regler, vil opslagsdatakilden returnere **Andet** som det ønskede beskatningsniveau.
 
-    ![Siden med ER-programspecifikke parametre](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Siden med ER-programspecifikke parametre.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. I feltet **Tilstand** skal du vælge **Fuldført**.
 
@@ -144,7 +144,7 @@ Du kan bruge ER-strukturen til at konfigurere programspecifikke parametre for et
 6.  Vælg momskoden **InMOMS7**.
 7.  I handlingspanelet skal du på fanen **Momskode** i gruppen **Forespørgsler** vælge **Bogført moms** for at få vist oplysninger om momsværdien og den anvendte momssats per momskode.
 
-    ![Siden Bogført moms](./media/GER-AppSpecParms-Statement.PNG)
+    ![Siden Bogført moms.](./media/GER-AppSpecParms-Statement.PNG)
 
 8.  Luk siden Bogført moms.
 
@@ -160,7 +160,7 @@ Du kan bruge ER-strukturen til at konfigurere programspecifikke parametre for et
 
     Opslaget indeholder nu listen over momskoder for den **USMF**-virksomhedsmoms, der skal vælges.
 
-    ![Siden med ER-programspecifikke parametre](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Siden med ER-programspecifikke parametre.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Vælg momskoden **UNDTAGET**.
 9.  I feltet **Opslagsresultat** for den nye post skal du vælge værdien **Ingen beskatning**.
@@ -170,7 +170,7 @@ Du kan bruge ER-strukturen til at konfigurere programspecifikke parametre for et
 13. I feltet **Tilstand** skal du vælge **Fuldført**.
 14. Vælg **Gem**.
 
-    ![Siden med ER-programspecifikke parametre](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![Siden med ER-programspecifikke parametre.](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15. Luk siden med **Programspecifikke parametre**.
 
@@ -225,13 +225,13 @@ I det foregående eksempel fik du adgang til programspecifikke parametre for et 
 
 1.  Du kan enten genbrug en eksisterende **ERSolutionAppSpecificParametersDesigner**-menu eller implementere dit eget **ERSolutionAppSpecificParametersDesigner**-menuelement.
 
-    ![Siden Visual studio](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Siden Visual studio.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Udfør ét af følgende trin:
 
     1.  Opret en ny menuknap, og sammenkæd den med den tilsvarende post fra tabellen **ERSolutionTable** ved at angive dens egenskab **Datakilde** til **ERSolutionTable**.
     
-        ![Siden Visual studio](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Siden Visual studio.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Opret en enkel knap, og overskriv metoden **Klikket på**, som vist i følgende eksempel.
     

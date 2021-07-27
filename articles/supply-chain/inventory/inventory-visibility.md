@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017000"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358092"
 ---
 # <a name="inventory-visibility-add-in"></a>Tilføjelsesprogrammet Lagersynlighed
 
@@ -143,7 +143,7 @@ Når du har forudsætningerne på plads, skal du benytte følgende fremgangsmåd
 
             Du kan finde flere oplysninger om denne variabel under [Konfigurere integration af lagersynlighed](#setup-inventory-visibility-integration) senere i dette emne.
 
-        ![Konfigurationsudløser](media/configuration-trigger.png "Konfigurationsudløser")
+        ![Konfigurationsudløser.](media/configuration-trigger.png "Konfigurationsudløser")
 
     1. Vælg **Slå til**.
 
@@ -157,7 +157,7 @@ For at installere tilføjelsesprogrammet Lagersynlighed skal du gøre følgende:
 1. Rul ned på miljøsiden, indtil du ser afsnittet **Miljøtilføjelsesprogrammer** i sektionen **Power Platform-integration**, hvor du kan finde Dataverse-miljønavnet.
 1. Vælg **Installér et nyt tilføjelsesprogram** i afsnittet **Tilføjelsesprogrammer for miljø**.
 
-    ![Miljøsiden i LCS](media/inventory-visibility-environment.png "Miljøsiden i LCS")
+    ![Miljøsiden i LCS.](media/inventory-visibility-environment.png "Miljøsiden i LCS")
 
 1. Vælg linket **Installer et nyt tilføjelsesprogram**. Der åbnes en liste over tilgængelige tilføjelsesprogrammer.
 1. Vælg **Lagersynlighed** på listen.
@@ -166,7 +166,7 @@ For at installere tilføjelsesprogrammet Lagersynlighed skal du gøre følgende:
     - **AAD-program-id (klient)**
     - **AAD-lejer-id**
 
-    ![Konfigurationsside for tilføjelsesprogram](media/inventory-visibility-setup.png "Konfigurationsside for tilføjelsesprogram")
+    ![Konfigurationsside for tilføjelsesprogram.](media/inventory-visibility-setup.png "Konfigurationsside for tilføjelsesprogram")
 
 1. Acceptér vilkårene og betingelsen ved at markere afkrydsningsfeltet **Vilkår og betingelser**.
 1. Vælg **Installer**. Status for tilføjelsesprogrammet vil blive vist som **installerer**. Når det er gjort, skal du opdatere siden for at se statusændringen til **Installeret**.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
-ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
+ms.openlocfilehash: d68587a88b52e95d1e11c64b9a2d51dbc8b70561
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5963233"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357408"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Oprette en Azure Storage-konto og Key Vault
 
@@ -49,7 +49,7 @@ I dette emne skal du fuldføre to hovedtrin:
 5. Vælg **Tilføj politik** for at tilføje en lagret adgangspolitik.
 6. Angiv felterne **Identifikator** og **Rettigheder** efter behov. Vælg alle rettigheder i feltet **Rettigheder**.
 
-    ![Tildele tilladelse til Blob-lager](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
+    ![Tildele tilladelse til Blob-lager.](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. Angiv start- og udløbsdatoerne. Udløbsdatoen skal være i fremtiden.
 8. Vælg **OK** for at gemme politikken, og gem derefter ændringerne i containeren.
@@ -57,7 +57,7 @@ I dette emne skal du fuldføre to hovedtrin:
 10. Højreklik på containeren, og vælg derefter **Hent delt adgangssignatur**.
 11. I dialogboksen **Delt adgangssignatur** skal du kopiere og gemme værdien i feltet **URI**. Denne værdi vil blive brugt i den næste procedure og vil blive henvist til som *URI for delt adgangssignatur*.
 
-    ![Vælge og kopiere URI-værdien](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+    ![Vælge og kopiere URI-værdien.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Konfigurere Key Vault'en til opbevaring af URI'en for lagerkontoen
 
@@ -69,11 +69,11 @@ I dette emne skal du fuldføre to hovedtrin:
 6. Konfigurer adgangspolitikken for at tildele elektronisk fakturering det korrekte niveau for sikker adgang til den hemmelighed, du har oprettet. Gå til **Indstillinger \> Adgangspolitik**, og vælg **Tilføj adgangspolitik**.
 7. Angiv de hemmelige tilladelser til handlingerne **Get** og **List**.
 
-    ![Tildele tjenesteadgang](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
+    ![Tildele tjenesteadgang.](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
 8. Angiv certifikattilladelserne til handlingerne **Get** og **List**.
 
-    ![Tildele certifikattilladelse](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
+    ![Tildele certifikattilladelse.](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. Vælg **Ingen valgt** i feltet **Vælg sikkerhedskonto**.
 10. I dialogboksen **Sikkerhedskonto** skal du vælge sikkerhedskontoen ved at tilføje **e-faktureringstjeneste**.

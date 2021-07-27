@@ -2,7 +2,7 @@
 title: Cookie-overholdelse
 description: Dette emne beskriver overvejelser om cookie-overholdelse og de standardpolitikker, der er inkluderet i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088381"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333063"
 ---
 # <a name="cookie-compliance"></a>Cookieoverholdelse
 
@@ -33,26 +33,27 @@ Hvis du vil vide mere om de grundlæggende principper, som Microsoft gør brug a
 
 I følgende tabel vises den aktuelle referenceliste over cookies, der er placeret efter Dynamics 365 Commerce-websteder.
 
-| Cookie-navn                               | Brug                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Gem Microsoft Azure Active Directory-godkendelsescookies (Azure AD) for enkeltlogon (SSO). Gemmer krypterede hovedoplysninger om bruger (navn, efternavn, mail). |
-| &#95;msdyn365___cart&#95;                           | Gem indkøbsvogn-id, der bruges til at hente en liste over produkter, der er føjet til forekomsten af indkøbskurv. |
-| &#95;msdyn365___ucc&#95;                            | Samtykkesporing af cookie-overholdelse af angivne standarder.                          |
-| ai_session                                  | Registrerer, hvor mange sessioner af brugeraktivitet der har omfattet visse sider og funktioner i appen. |
-| ai_user                                     | Registrerer, hvor mange personer der har brugt appen og dens funktioner. Brugerne tælles ved hjælp af anonyme id'er. |
-| b2cru                                       | Gemmer URL-adresser til omdirigering dynamisk.                              |
-| JSESSIONID                                  | Bruges af betalings-connector Adyen til at lagre brugersession.       |
-| OpenIdConnect.nonce.&#42;                       | Godkendelse                                               |
-| x-ms-cpim-cache:.&#42;                          | Bruges til at vedligeholde anmodningstilstanden.                      |
-| x-ms-cpim-csrf                              | CRSF-token (forfalskning af anmodning på tværs af websteder), der bruges til beskyttelse fra CRSF.     |
-| x-ms-cpim-dc                                | Bruges til at dirigere anmodninger til den relevante forekomst af produktionens godkendelsesserver. |
-| x-ms-cpim-rc.&#42;                              | Bruges til at dirigere anmodninger til den relevante forekomst af produktionens godkendelsesserver. |
-| x-ms-cpim-slice                             | Bruges til at dirigere anmodninger til den relevante forekomst af produktionens godkendelsesserver. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Bruges til vedligeholdelse af SSO-sessionen.                        |
-| x-ms-cpim-trans                             | Bruges til sporing af posteringer (antallet af åbne faner, der godkender mod et B2C-websted (Business-to-Consumer)), herunder den aktuelle postering. |
-| \_msdyn365___muid_                            | Bruges, hvis Eksperimenteren er aktiveret for miljøet. Anvendes som et bruger-id til eksperimentformål. |
-| \_msdyn365___exp_                             | Bruges, hvis Eksperimenteren er aktiveret for miljøet. Bruges til at måle belastningsjustering for ydeevne.         |
-| d365mkt                                       | Bruges, hvis placeringsbaseret registrering til sporing af en brugers IP-adresse til forslag til butiksplacering er aktiveret i Commerce-webstedsgeneratoren på **Webstedsindstillinger > Generelt > Aktivér placeringsbaseret butiksregistrering**.      |
+| Cookie-navn                               | Anvendelse                                                        | Levetid |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Gem Microsoft Azure Active Directory-godkendelsescookies (Azure AD) for enkeltlogon (SSO). Gemmer krypterede hovedoplysninger om bruger (navn, efternavn, mail). | Session |
+| \_msdyn365___cart_                           | Gem indkøbsvogn-id, der bruges til at hente en liste over produkter, der er føjet til forekomsten af indkøbskurv. | Session |
+| \_msdyn365___checkout_cart_                           | Gem indkøbsvogn-id til betaling, der bruges til at hente en liste over produkter, der er føjet til betalingen af indkøbskurv. | Session |
+| \_msdyn365___ucc_                            | Samtykkesporing af cookie-overholdelse af angivne standarder.                          | 1 år |
+| ai_session                                  | Registrerer, hvor mange sessioner af brugeraktivitet der har omfattet visse sider og funktioner i appen. | 30 minutter |
+| ai_user                                     | Registrerer, hvor mange personer der har brugt appen og dens funktioner. Brugerne tælles ved hjælp af anonyme id'er. | 1 år |
+| b2cru                                       | Gemmer URL-adresser til omdirigering dynamisk.                              | Session |
+| JSESSIONID                                  | Bruges af betalings-connector Adyen til at lagre brugersession.       | Session |
+| OpenIdConnect.nonce.&#42;                       | Godkendelse                                               | 11 minutter |
+| x-ms-cpim-cache:.&#42;                          | Bruges til at vedligeholde anmodningstilstanden.                      | Session |
+| x-ms-cpim-csrf                              | CRSF-token (forfalskning af anmodning på tværs af websteder), der bruges til beskyttelse fra CRSF.     | Session |
+| x-ms-cpim-dc                                | Bruges til at dirigere anmodninger til den relevante forekomst af produktionens godkendelsesserver. | Session |
+| x-ms-cpim-rc.&#42;                              | Bruges til at dirigere anmodninger til den relevante forekomst af produktionens godkendelsesserver. | Session |
+| x-ms-cpim-slice                             | Bruges til at dirigere anmodninger til den relevante forekomst af produktionens godkendelsesserver. | Session |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Bruges til vedligeholdelse af SSO-sessionen.                        | Session |
+| x-ms-cpim-trans                             | Bruges til sporing af posteringer (antallet af åbne faner, der godkender mod et B2C-websted (Business-to-Consumer)), herunder den aktuelle postering. | Session |
+| \_msdyn365___muid_                            | Bruges, hvis eksperimenteren er aktiveret for miljøet. Anvendes som et bruger-id til eksperimentformål. | 1 år |
+| \_msdyn365___exp_                             | Bruges, hvis eksperimenteren er aktiveret for miljøet. Bruges til at måle belastningsjustering for ydeevne.         | 1 time |
+| d365mkt                                       | Bruges, hvis placeringsbaseret registrering til sporing af en brugers IP-adresse til forslag til butiksplacering er aktiveret i Commerce **Webstedindstillinger \> Generelt \> Aktiver placeringsbaseret butiksregistrering**.      | 1 time |
 
 Hvis en bruger vælger sociale medielinks på et websted, spores cookies i nedenstående tabel også i deres browser.
 

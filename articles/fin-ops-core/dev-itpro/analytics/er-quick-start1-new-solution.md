@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 35db2eb3e0da91207f08d16b8fb1bfa6a6bb8607
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304387"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345954"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Designe en ny ER-løsning til udskrivning af en brugerdefineret rapport
 
@@ -123,15 +125,15 @@ I dette eksempel skal du oprette en ny ER-løsning til modulet [Spørgeskema](..
 
 1. Hvis du vil køre den eksisterende rapport skal du gå til **Spørgeskema** \> **Design** \> **Rapport for spørgeskemaer**.
 
-    ![Valg af menupunktet Rapport for spørgeskemaer i modulet Spørgeskema for at køre den eksisterende SSRS-rapport](./media/er-quick-start1-application-menu-origin.png)
+    ![Valg af menupunktet Rapport for spørgeskemaer i modulet Spørgeskema for at køre den eksisterende SSRS-rapport.](./media/er-quick-start1-application-menu-origin.png)
 
 2. Angiv valgkriterier i dialogboksen **Rapport for spørgeskemaer**. Anvend et filter, så rapporten kun indeholder spørgeskemaet **SBCCrsExam**.
 
-    ![Angivelse af valgkriterier i dialogboksen Rapport for spørgeskemaer](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![Angivelse af valgkriterier i dialogboksen Rapport for spørgeskemaer.](./media/er-quick-start1-ssrs-report-dialog.png)
 
 I følgende illustration vises den genererede version af SSRS-rapporten for spørgeskemaet **SBCCrsExam**.
 
-![Genereret SSRS-rapport](./media/er-quick-start1-ssrs-report.png)
+![Genereret SSRS-rapport.](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a>Konfigurere ER-strukturen
 
@@ -271,7 +273,7 @@ Hvis du vil fortsætte, skal du springe over den næste procedure [Oprette en ny
 
     I følgende illustration vises den fuldførte redigerbare datamodel på siden **Datamodeldesigner**.
 
-    ![Konfigureret datamodel i ER-datamodeldesigneren](./media/er-quick-start1-model2.png)
+    ![Konfigureret datamodel i ER-datamodeldesigneren.](./media/er-quick-start1-model2.png)
 
 7. Gem ændringerne.
 8. Luk siden **Datamodeldesigner**.
@@ -285,7 +287,7 @@ Hvis du vil fortsætte, skal du springe over den næste procedure [Oprette en ny
 
 Status for version 1 af denne konfiguration ændres fra **Kladde** til **Fuldført**. Version 1 kan ikke længere ændres. Denne version indeholder den konfigurerede datamodel og kan bruges som grundlag for andre ER-konfigurationer. Version 2 af denne konfiguration er oprettet og har statussen **Kladde**. Du kan redigere denne version for at justere datamodellen **Spørgeskema**.
 
-![Versioner af den redigerbare konfiguration på siden Konfigurationer](./media/er-quick-start1-model-configuration.png)
+![Versioner af den redigerbare konfiguration på siden Konfigurationer.](./media/er-quick-start1-model-configuration.png)
 
 Yderligere oplysninger om versionering for ER-konfigurationer finder du i [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -439,7 +441,7 @@ Du kan tilføje ER-etiketter for at konfigurere nogle af dine datakilder til at 
 5. Luk dialogboksen **Tekstoversættelse**.
 6. Vælg **Annuller**.
 
-![Tilføje ER-etiketter til den redigerbare modeltilknytning](./media/er-quick-start1-adding-labels.png)
+![Tilføje ER-etiketter til den redigerbare modeltilknytning.](./media/er-quick-start1-adding-labels.png)
 
 Du har kun indtastet ER-etiketter for standardsproget. Oplysninger om, hvordan ER-etiketter kan oversættes til andre sprog, finder du i afsnittet [Designe flersprogede rapporter](er-design-multilingual-reports.md).
 
@@ -473,7 +475,7 @@ Da du skal transformere resultaterne af sammenligningen mellem optællingsværdi
     8. Vælg **Gem**, og luk formeleditoren.
     9. Vælg **OK** for at tilføje den nye datakilde.
 
-![Konfigureret modeltilknytning i ER-modeltilknytningsdesigneren](./media/er-quick-start1-added-data-sources.png)
+![Konfigureret modeltilknytning i ER-modeltilknytningsdesigneren.](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>Binde datakilder til datamodelfelter
 
@@ -524,7 +526,7 @@ Du skal binde de konfigurerede datakilder til felterne i datamodellen for at ang
 
     I følgende illustration vises den endelige tilstand for den konfigurerede modeltilknytning på siden **Modeltilknytningsdesigner**.
 
-    ![Fuldt konfigureret modeltilknytning i ER-modeltilknytningsdesigneren](./media/er-quick-start1-mapping2.png)
+    ![Fuldt konfigureret modeltilknytning i ER-modeltilknytningsdesigneren.](./media/er-quick-start1-mapping2.png)
 
 7. Gem ændringerne.
 8. Luk siden **Modeltilknytningsdesigner**.
@@ -538,7 +540,7 @@ Du skal binde de konfigurerede datakilder til felterne i datamodellen for at ang
 
 Status for version 1.1 af denne konfiguration ændres fra **Kladde** til **Fuldført**. Version 1.1 kan ikke længere ændres. Denne version indeholder den konfigurerede modeltilknytning og kan bruges som grundlag for andre ER-konfigurationer. Version 1.2 af denne konfiguration er oprettet og har statussen **Kladde**. Du kan redigere denne version for at justere konfigurationen **Tilknytning af spørgeskema**.
 
-![Versioner af den redigerbare ER-konfiguration på siden Konfigurationer](./media/er-quick-start1-mapping-configuration.png)
+![Versioner af den redigerbare ER-konfiguration på siden Konfigurationer.](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > Den konfigurerede modeltilknytning er den Finance-specifikke implementering af den abstrakte datamodel, der repræsenterer forretningsdomænet **Spørgeskema**.
@@ -552,17 +554,17 @@ ER-strukturen bruger foruddefinerede skabeloner til at oprette rapporter i Micro
 
 Som følgende illustration viser, er den hentede skabelon designet til at udskrive bestemte spørgeskemaer, der viser et spørgeskemas spørgsmål sammen med relevante svar.
 
-![Excel-skabelon til udskrivning af angivne spørgeskemaer](./media/er-quick-start1-template-layout.png)
+![Excel-skabelon til udskrivning af angivne spørgeskemaer.](./media/er-quick-start1-template-layout.png)
 
 Der er føjet Excel-navne til denne skabelon for udfylde spørgeskemaoplysninger. Du kan bruge Navnestyring til at gennemse Excel-navnene.
 
-![Bruge Navnestyring til at gennemse Excel-navne i den viste Excel-skabelon](./media/er-quick-start1-template-names.png)
+![Bruge Navnestyring til at gennemse Excel-navne i den viste Excel-skabelon.](./media/er-quick-start1-template-names.png)
 
 Rapportetiketter er tilføjet som fasttekst på engelsk. Du kan erstatte rapportetiketterne med nye Excel-navne, der udfylder etiketterne med sprogafhængig tekst, ved at bruge [etiketter](#AddMmLabels) for ER-format, som du gjorde for sprogafhængige udtryk i den konfigurerede modeltilknytning. I dette tilfælde skal der tilføjes-navne i det redigerbare ER-format.
 
 I følgende illustration vises det brugerdefinerede rapporthoved, der gør det muligt at foretage sideinddeling i Excel.
 
-![Brugerdefineret rapporthoved i den tilgængelige Excel-skabelon](./media/er-quick-start1-template-header.png)
+![Brugerdefineret rapporthoved i den tilgængelige Excel-skabelon.](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Design et format
 
@@ -612,11 +614,11 @@ Hvis du vil fortsætte, skal du springe over den næste procedure [Oprette en ny
     2. Find og vælg den lokalt gemte filen **Questionnaires report template.xslx**, og vælg derefter **Åbn**.
     3. Vælg **OK** for at importere skabelonen.
 
-    ![Import af en rapportskabelon](./media/er-quick-start1-template-import.png)
+    ![Import af en rapportskabelon.](./media/er-quick-start1-template-import.png)
 
 Formatelementet **Excel\\Fil** føjes automatisk til det redigerbare format som et rodelement. Derudover tilføjes formatelementet **Excel\\Område** eller **Excel\\Celle** automatisk for hvert genkendeligt Excel-navn i den importerede skabelon. Formatet **Excel\\Overskrift**, der indeholder det indlejrede element **Streng**, tilføjes automatisk for at afspejle overskriftsindstillingerne for den importerede skabelon.
 
-![Formatstruktur, der omfatter automatisk tilføjede elementer i ER-operationsdesigneren](./media/er-quick-start1-template-import2.png)
+![Formatstruktur, der omfatter automatisk tilføjede elementer i ER-operationsdesigneren.](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>Konfigurere et format
 
@@ -627,12 +629,12 @@ Formatelementet **Excel\\Fil** føjes automatisk til det redigerbare format som 
 
     Du kan finde oplysninger om, hvordan du angiver sprog- og kulturkontekster for en ER-proces, under [Designe flersprogede rapporter](er-design-multilingual-reports.md).
 
-    ![Konfigurere indstillinger for sprog og kultur for den designede rapport i ER-operationsdesigneren](./media/er-quick-start1-template-format-structure1.png)
+    ![Konfigurere indstillinger for sprog og kultur for den designede rapport i ER-operationsdesigneren.](./media/er-quick-start1-template-format-structure1.png)
 
 5. Udvid rodnoden i formattræet, og vælg derefter **Resultatgruppe**.
 6. Under fanen **Format** i feltet **Replikeringsretning** skal du vælge **Ingen replikering**, da du ikke forventer flere resultatgrupper for et enkelt spørgeskema.
 
-    ![Definere replikeringsretningen for formatelementer af typen Område i ER-operationsdesigneren](./media/er-quick-start1-template-format-structure2.png)
+    ![Definere replikeringsretningen for formatelementer af typen Område i ER-operationsdesigneren.](./media/er-quick-start1-template-format-structure2.png)
 
 7. Vælg **Gem**.
 
@@ -652,7 +654,7 @@ Du skal angive en databinding for et formatelement, der bruges til at udfylde ti
 
 5. Luk formeleditoren.
 
-    ![Konfiguration af bindingen for at udfylde titlen på en genereret rapport](./media/er-quick-start1-add-report-title-label.png)
+    ![Konfiguration af bindingen for at udfylde titlen på en genereret rapport.](./media/er-quick-start1-add-report-title-label.png)
 
 Du kan bruge denne teknik til at gøre alle andre etiketter for den aktuelle skabelon sprogafhængige. Oplysninger om, hvordan de tilføjede etiketter til en enkelt ER-konfiguration kan oversættes til alle understøttede sprog, finder du i [Designe flersprogede rapporter](er-design-multilingual-reports.md).
 
@@ -662,7 +664,7 @@ Du kan bruge denne teknik til at gøre alle andre etiketter for den aktuelle ska
 2. Vælg **Rediger**.
 3. Gennemse oplysningerne i dialogboksen **Egenskaber for datakilde**. Denne datakilde repræsenterer version 1 af datamodelkomponenten **Spørge skemaer**, der findes i ER-konfiguraitonen for **Spørgeskemamodel**.
 
-![Egenskaber for modeldatakilden i ER-operationsdesigneren](./media/er-quick-start1-model-data-source.png)
+![Egenskaber for modeldatakilden i ER-operationsdesigneren.](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>Binde formatelementer til datakildefelter
 
@@ -678,11 +680,11 @@ Hvis du vil angive, hvordan en skabelon skal udfyldes på kørselstidspunktet, s
 
     Formatelementet for området for **Spørgeskema** konfigureres som lodret replikeret. Når den er bundet til en datakilde af typen **Postliste**, gentages det relevante område for **Spørgeskema** for Excel-skabelonen for hver post i den bundne datakilde.
  
-    ![Binding af formatelementet for spørgeskemaområdet til de relevante postlistedatakilder i ER-operationsdesigneren](./media/er-quick-start1-bindings1.png)
+    ![Binding af formatelementet for spørgeskemaområdet til de relevante postlistedatakilder i ER-operationsdesigneren.](./media/er-quick-start1-bindings1.png)
 
     Da området **Spørgeskema** for Excel-skabelonen er defineret fra række 5 til 14, gentages disse rækker for hvert rapporteret spørgeskema.
 
-    ![Rækker i Excel-skabelonen, der vil blive gentaget i en genereret rapport for hver post på postlistens datakilder](./media/er-quick-start1-template-questionnaire-range.png)
+    ![Rækker i Excel-skabelonen, der vil blive gentaget i en genereret rapport for hver post på postlistens datakilder.](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. Konfigurer lignende bindinger for de resterende formatelementer som beskrevet i følgende tabel.
 
@@ -718,7 +720,7 @@ Hvis du vil angive, hvordan en skabelon skal udfyldes på kørselstidspunktet, s
 
 I følgende illustration vises den endelige tilstand for de konfigurerede databindinger på siden **Formatdesigner**.
 
-![Konfigurerede databindinger i ER-operationsdesigneren](./media/er-quick-start1-bindings2.png)
+![Konfigurerede databindinger i ER-operationsdesigneren.](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > Hele samlingen af angivne datakilder og bindinger repræsenterer en komponent til formattilknytning i det konfigurerede format. Denne formattilknytning kaldes, når du kører det konfigurerede format for oprettelse af rapporter.
@@ -738,9 +740,9 @@ Du kan nu køre et designet format til testformål fra siden **Konfigurationer**
 
 Som [standard](electronic-reporting-destinations.md#default-behavior) leveres en oprettet rapport som en Excel-fil, som du kan hente. I følgende illustrationer vises to sider med den oprettede rapport i Excel-format.
 
-![Eksempel på en oprettet rapport i Excel-format, side 1](./media/er-quick-start1-report1a.png)
+![Eksempel på en oprettet rapport i Excel-format, side 1.](./media/er-quick-start1-report1a.png)
 
-![Eksempel på en oprettet rapport i Excel-format, side 2](./media/er-quick-start1-report1b.png)
+![Eksempel på en oprettet rapport i Excel-format, side 2.](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>Finjustere et designet format
 
@@ -761,7 +763,7 @@ Spørgsmålene er ikke placeret i korrekt rækkefølge i en oprettet rapport. Du
 1. Vælg rodelementet **Rapport** på siden **Formatdesigner**.
 2. Under fanen **Tilknytning** i formattræet skal du udvide **Rapport\\Spørgeskema\\Spørgsmål**.
 
-    ![Spørgsmålsformatelement for intervaltypen i ER-operationsdesigneren](./media/er-quick-start1-bindings3.png)
+    ![Spørgsmålsformatelement for intervaltypen i ER-operationsdesigneren.](./media/er-quick-start1-bindings3.png)
 
 3. Vælg **model.Questionnaire** under fanen **Tilknytning**.
 4. Vælg **Tilføj** \> **Funktioner\\Beregnet felt** og angiv derefter **OrderedQuestions** i feltet **Navn**.
@@ -774,7 +776,7 @@ Spørgsmålene er ikke placeret i korrekt rækkefølge i en oprettet rapport. Du
 11. Vælg **Bind**, og bekræft derefter, at den aktuelle sti for **model.Questionnaire.Questions** erstattes af den nye sti for **model.Questionnaire.OrderedQuestions** i alle bindinger af indlejrede elementer.
 12. Vælg **Gem**.
 
-![Binding af formatelementet Spørgsmål til den konfigurerede datakilde for OrderedQuestions i ER-operationsdesigneren](./media/er-quick-start1-bindings4.png)
+![Binding af formatelementet Spørgsmål til den konfigurerede datakilde for OrderedQuestions i ER-operationsdesigneren.](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>Køre et ændret format fra ER
 
@@ -788,7 +790,7 @@ Du kan nu køre et ændret format til testformål fra ER-strukturen.
 
 I følgende illustration vises en oprettet rapport i Excel-format, hvor spørgsmålene er placeret i korrekt rækkefølge.
 
-![Oprettet rapport i Excel-format, der har placeret spørgsmålene i korrekt rækkefølge](./media/er-quick-start1-report2.png)
+![Oprettet rapport i Excel-format, der har placeret spørgsmålene i korrekt rækkefølge.](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>Fuldføre formatdesignet
 
@@ -799,7 +801,7 @@ I følgende illustration vises en oprettet rapport i Excel-format, hvor spørgsm
 
 Status for version 1.1 af denne konfiguration ændres fra **Kladde** til **Fuldført**. Version 1.1 kan ikke længere ændres. Denne version indeholder det konfigurerede format og kan bruges til at udskrive den brugerdefinerede rapport. Version 1.2 af denne konfiguration er oprettet og har statussen **Kladde**. Du kan redigere denne version for at justere formatet for rapporten for **Spørgeskema**.
 
-![Redigerbar ER-konfiguration på siden Konfigurationer](./media/er-quick-start1-format-configuration.png)
+![Redigerbar ER-konfiguration på siden Konfigurationer.](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Det konfigurerede format er designet af rapporten for **Spørgeskema** og indeholder ingen relationer til de Finance-specifikke artefakter.
@@ -1049,7 +1051,7 @@ Opbyg dit projekt for at gøre et nyt menupunkt tilgængeligt for brugerne.
 
 1. Gå til **Spørgeskema** \> **Design** \> **Rapport for spørgeskemaer (leveret af ER)**.
 
-    ![Valg af menupunktet Rapport for spørgeskemaer (leveret af ER) i modulet Spørgeskema for at køre det konfigurerede ER-format](./media/er-quick-start1-application-menu-modified.png)
+    ![Valg af menupunktet Rapport for spørgeskemaer (leveret af ER) i modulet Spørgeskema for at køre det konfigurerede ER-format.](./media/er-quick-start1-application-menu-modified.png)
 
 2. Vælg **Rapport for spørgeskemaer** i feltet **Formattilknytning** i dialogboksen.
 3. Vælg **OK**.
@@ -1057,7 +1059,7 @@ Opbyg dit projekt for at gøre et nyt menupunkt tilgængeligt for brugerne.
 5. Vælg **OK** for at bekræfte filtreringsindstillingen.
 6. Vælg **OK** for at køre rapporten.
 
-    ![Angivelse af valgkriterierne i dialogboksen Elektronisk rapportering](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Angivelse af valgkriterierne i dialogboksen Elektronisk rapportering.](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Gennemse den oprettede rapport.
 
@@ -1082,7 +1084,7 @@ Du kan redigere den konfigurerede ER-løsning, så den bruger den dataproviderkl
 
 Den tilføjede datakilde indeholder oplysninger om post-id'et for den aktuelle ER-formattilknytning.
 
-![Tilføjet datakilde i ER-modeltilknytningsdesigneren](./media/er-quick-start1-mapping3.png)
+![Tilføjet datakilde i ER-modeltilknytningsdesigneren.](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>Føje en datakilde for at få adgang til poster for ER-formattilknytning
 
@@ -1117,7 +1119,7 @@ Fortsæt med at redigere den valgte modeltilknytning, så navnet på det aktuell
 
 Da du har brugt feltet **Formatnavn**, viser den konfigurerede modeltilknytning nu navnet på et ER-format, der kalder denne modeltilknytning under udførelsen.
 
-![Binding af datamodelfeltet til metoden for den tilføjede datakilde i ER-modeltilknytningsdesigneren](./media/er-quick-start1-mapping4.png)
+![Binding af datamodelfeltet til metoden for den tilføjede datakilde i ER-modeltilknytningsdesigneren.](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>Fuldføre designet af modeltilknytningen
 
@@ -1154,7 +1156,7 @@ Du kan redigere det konfigurerede ER-format, så navnet vises i sidefoden i en r
 
 Det konfigurerede format er nu ændret, så navnet indsættes i sidefoden i en genereret rapport ved hjælp af elementet for **Sidefod\\Streng**.
 
-![Tilføjelse af formatelementet Sidefod til det konfigurerede format i ER-operationsdesigneren](./media/er-quick-start1-template-format-structure3.png)
+![Tilføjelse af formatelementet Sidefod til det konfigurerede format i ER-operationsdesigneren.](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>Fuldføre formatdesignet
 
@@ -1176,7 +1178,7 @@ Status for version 1.2 af denne konfiguration ændres fra **Kladde** til **Fuldf
 
 Bemærk, at sidefoden i den oprettede rapport indeholder navnet på det ER-format, der blev brugt til at oprette den.
 
-![Genereret rapport i Excel-format](./media/er-quick-start1-report4.png)
+![Genereret rapport i Excel-format.](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Køre et format fra ER
 
@@ -1197,7 +1199,7 @@ Bemærk, at sidefoden i den oprettede rapport ikke indeholder navnet på det ER-
 3. Konfigurer [destinationen](er-destination-type-screen.md) for **Skærm** for den formatkomponent for **Rapport**, der er [tilføjet](#AddFormatRootElement) som rodelementet for det konfigurerede ER-format for **Spørgeskemarapport**, i oversigtspanelet **Fildestination**.
 4. I oversigtspanelet **PDF-konverteringsindstillinger** kan du konfigurere destinationen til at konvertere en rapport til [PDF-format](electronic-reporting-destinations.md#OutputConversionToPDF), som bruger **Liggende** sideretning.
 
-![Konfiguration af den brugerdefinerede skærmdestination til ER-formatet på siden Destination for elektronisk rapportering](./media/er-quick-start1-destination.png)
+![Konfiguration af den brugerdefinerede skærmdestination til ER-formatet på siden Destination for elektronisk rapportering.](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>Køre et format fra applikationen for at vise det som et PDF-dokument
 
@@ -1209,7 +1211,7 @@ Bemærk, at sidefoden i den oprettede rapport ikke indeholder navnet på det ER-
 
     Bemærk, at feltet **Output** i oversigtspanelet **Destinationer** er indstillet til **Skærm**. Hvis du vil ændre den konfigurerede destination, skal du vælge **Skift**.
 
-    ![Dialogboks for ER-rapportens kørsel, hvor du kan ændre den konfigurerede destination](./media/er-quick-start1-run-settings.png)
+    ![Dialogboks for ER-rapportens kørsel, hvor du kan ændre den konfigurerede destination.](./media/er-quick-start1-run-settings.png)
 
 6. Vælg **OK** for at køre rapporten.
 7. Gennemse den oprettede rapport i PDF-format.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1ab19358857440e46d3df2323fbcea19a476903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837747"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360964"
 ---
 # <a name="functional-location-lifecycle-states"></a>Livscyklustilstande for arbejdssted
 
@@ -56,9 +56,9 @@ Når du har oprettet de livscyklustilstande, der kræves til dine arbejdssteder,
 1. Vælg **Styring af aktiver** > **Opsætning** > **Arbejdssteder** > **Livscyklusmodeller**.
 2. Vælg **Ny** for at oprette en ny livscyklusmodel.
 3. Indsæt livscyklusmodel-id'et i feltet **Livscyklusmodel** og et navn til livscyklusmodellen i feltet **Navn**. I felterne **Arbejdsstedstyper** og **Livscyklusstilstande** kan du se antallet af arbejdsstedstyper, der bruger livscyklusmodellen, og det antal tilstande, som er valgt i livscyklusmodellen.
-4. I oversigtspanelet **Livscyklustilstande** skal du vælge de tilstande, der skal inkluderes i modellen. Dette gøres ved at klikke på en tilstand i sektionen **Resterende livscyklustilstande** og klikke på knappen ![fremadrettet pil](media/02-setup-for-functional-locations.png).
-5. Hvis du vil vælge alle tilgængelige tilstande for en model, skal du klikke på knappen ![Vælg alle tilgængelige faser](media/03-setup-for-functional-locations.png). Alle tilstande overføres til sektionen **Valgte livscyklustilstande**.
-6. Hvis du vil fjerne en valgt tilstand fra modellen, skal du vælge tilstanden i afsnittet **Valgte livscyklustilstande** og derefter vælge knappen ![tilbage-pil](media/04-setup-for-functional-locations.png).
+4. I oversigtspanelet **Livscyklustilstande** skal du vælge de tilstande, der skal inkluderes i modellen. Dette gøres ved at klikke på en tilstand i sektionen **Resterende livscyklustilstande** og klikke på knappen ![fremadrettet pil.](media/02-setup-for-functional-locations.png) knappen.
+5. Hvis du vil vælge alle tilgængelige tilstande for en model, skal du klikke på knappen ![Vælg alle tilgængelige faser.](media/03-setup-for-functional-locations.png) knappen. Alle tilstande overføres til sektionen **Valgte livscyklustilstande**.
+6. Hvis du vil fjerne en valgt tilstand fra modellen, skal du vælge tilstanden i afsnittet **Valgte livscyklustilstande** og derefter vælge knappen ![tilbage-pil.](media/04-setup-for-functional-locations.png) knappen.
 7. Vælg **Opdateringer til livscyklustilstande** for at definere de livscyklustilstande, der kan følge en valgt tilstand.
 
 

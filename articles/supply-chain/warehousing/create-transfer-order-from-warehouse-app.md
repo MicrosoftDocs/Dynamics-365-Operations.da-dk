@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
-ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
+ms.openlocfilehash: fe5983d40033c0cd15674815067eaa969e97d38b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "6164840"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343619"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Oprette flytteordrer fra lagerstedsappen
 
@@ -95,7 +95,7 @@ Ud over at definere oprettelse af en flytteordre i menupunkter på mobilenheden 
 
 Du er en detailhandler og har flere nummerplader, der hver indeholder en blanding af varer, der er placeret på en bestemt lokation på et af lagerstederne (*Lagersted 51*). Du vil aktivere den proces, der giver arbejdere mulighed for at oprette en flytteordre til et andet lagersted (*Lagersted 61*) for en samling af scannede nummerplader. Du sender automatisk en opdatering af flytteordren, så snart den sidste nummerplade for ordren er identificeret.
 
-![Eksempel på automatisk proces til flytteordre](media/create-transfer-order-from-app-example.png "Eksempel på automatisk proces til flytteordre")
+![Eksempel på automatisk proces til flytteordre.](media/create-transfer-order-from-app-example.png "Eksempel på automatisk proces til flytteordre")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Oprette et menupunkt for mobilenheden til oprettelse af flytteordrer
 

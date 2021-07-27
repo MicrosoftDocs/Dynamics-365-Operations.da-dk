@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ec8e89ed82bcdffdc21e62d24ad8c8a7d939cdf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76d4bea9ad25494015a7bfeb324cb0e84dd024b7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797857"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346846"
 ---
 # <a name="cart-module"></a>Indkøbskurvsmodul
 
@@ -35,11 +35,11 @@ I indkøbsvognmodulet gengives data baseret på indkøbsvogn-id'et, som er en br
 
 Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabrikam-webstedet.
 
-![Eksempel på et indkøbsvognmodul på Fabrikam-webstedet](./media/cart2.PNG)
+![Eksempel på et indkøbsvognmodul på Fabrikam-webstedet.](./media/cart2.PNG)
 
 Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabrikam-webstedet. I dette eksempel er der et ekspeditionsgebyr for et linjeelement.
 
-![Eksempel på et indkøbsvognmodul med et ekspeditionsgebyr for et linjeelement](./media/ecommerce-handling-fee.png)
+![Eksempel på et indkøbsvognmodul med et ekspeditionsgebyr for et linjeelement.](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Egenskaber og pladser i indkøbsvognmodulet
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 659211f3a74c38389f991cd2385366d175b0c7c0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ba6dadf7f96510ae55c41a74d53e3ca89f663ef8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020253"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344068"
 ---
 # <a name="map-module"></a>Kortmodul
 
@@ -38,11 +38,11 @@ Et kortmodul fungerer sammen med modulet for butiksvælger for at bestemme de ge
 
 Det følgende billede viser et eksempel på et kortmodul, der bruges på en side med butiksadresser.
 
-![Eksempel på et butiksvælgermodul](./media/ecommerce-Storelocator.PNG)
+![Eksempel på et butiksvælgermodul.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaber
 
-| Egenskabsbetegnelse             | Værdi                 | Beskrivende tekst |
+| Egenskabsbetegnelse             | Værdi                 | Betegnelse |
 |---------------------------|-----------------------|-------------|
 | Overskrift | Tekst | Overskrift for modulet. |
 | Indstillinger for opslagsnål: standardikon | Billede | Det symbolbillede for opslagsnål, der bruges til butikker, som vises på et kort. |

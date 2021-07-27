@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 913b20d73b87f03b4b1f80efdcf6e60bd07ce270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909373"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359479"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installere og tilslutte lagerstedsapp
 
@@ -64,28 +64,28 @@ For at aktivere lagerstedsappen til at kommunikere med en bestemt Supply Chain M
 1. Angiv brugernavnet og adgangskoden for den bruger, der har adgang til Azure-abonnementet.
 1. Vælg **Azure Active Directory** i venstre navigationsrude på Azure-portalen.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Kontrollér, at du arbejder med den forekomst af Azure AD, der bruges af Supply Chain Management.
 1. Vælg **Appregistreringer** på listen **Administrer**.
 
-    ![Appregistreringer](media/app-connect-azure-register.png "Appregistreringer")
+    ![Appregistreringer.](media/app-connect-azure-register.png "Appregistreringer")
 
 1. På værktøjslinjen skal du vælge **Ny registrering** for at åbne guiden **Registrer et program**.
 1. Angiv et navn til applikationen, og vælg indstillingen **Kun konti i denne organisations bibliotek**, og vælg derefter **Registrer**.
 
-    ![Registrer en applikationsguide](media/app-connect-azure-register-wizard.png "Registrere en applikationsguide.").
+    ![Registrer en applikationsguide.](media/app-connect-azure-register-wizard.png "Registrere en applikationsguide.").
 
 1. Den nye appregistrering åbnes. Notér værdien i feltet **Applikations-id (klient)**, da du skal bruge den senere. Dette id henvises til senere i dette emne som *klient-id'et*.
 
-    ![Program-id (klient)](media/app-connect-azure-app-id.png "Program-id (klient)")
+    ![Program-id (klient).](media/app-connect-azure-app-id.png "Program-id (klient)")
 
 1. Gå til listen **Administrer**, og vælg **Certifikat og hemmeligheder**. Vælg derefter en af følgende knapper, afhængigt af hvordan du vil konfigurere appen til godkendelse. (Få flere oplysninger i afsnittet [Godkende ved at bruge et certifikat eller klienthemmelighed](#authenticate) senere i dette emne.)
 
     - **Upload certifikat** – upload et certifikat, der skal bruges som en hemmelighed. Vi anbefaler denne fremgangsmåde, fordi den er mere sikker og også kan automatiseres mere fuldstændigt. Hvis du kører lagerstedsappen på Windows-enheder, skal du notere dig, hvilken **aftryksværdi** der vises, når du har uploadet certifikatet. Du skal bruge denne værdi, når du konfigurerer certifikatet på Windows-enheder.
     - **Ny klienthemmelighed** – opret en nøgle ved at angive en nøglebeskrivelse og en varighed i sektionen **Adgangskoder**, og vælg derefter **Tilføj**. Tag en kopi af nøglen, og opbevar den sikkert.
 
-    ![Certifikat og hemmeligheder](media/app-connect-azure-authentication.png "Certifikat og hemmeligheder")
+    ![Certifikat og hemmeligheder.](media/app-connect-azure-authentication.png "Certifikat og hemmeligheder")
 
 Få flere oplysninger om, hvordan du konfigurerer webtjenesteapplikationer i Azure AD, i følgende ressourcer:
 
@@ -105,7 +105,7 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
     1. Opret en bruger.
     1. Tildele brugeren af lagerstedsmobilenheden.
 
-    ![Tildele brugeren af lagerstedsmobilenheden](media/app-connect-app-users.png "Tildele brugeren af lagerstedsmobilenheden")
+    ![Tildele brugeren af lagerstedsmobilenheden.](media/app-connect-app-users.png "Tildele brugeren af lagerstedsmobilenheden")
 
 1. Knyt din Azure AD-applikation til brugeren af lagerstedsappen:
 
@@ -113,7 +113,7 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
     1. Oprette en linje.
     1. Angiv det klient-id, du har noteret i forrige afsnit, giv det et navn, og vælg den bruger, du netop har oprettet. Det anbefales, at du mærker alle dine enheder. Hvis de derefter går tabt, kan du så nemt fjerne deres adgang til Supply Chain Management fra denne side.
 
-    ![Azure Active Directory-applikationer](media/app-connect-aad-apps.png "Azure Active Directory-applikationer")
+    ![Azure Active Directory-applikationer.](media/app-connect-aad-apps.png "Azure Active Directory-applikationer")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Godkende ved hjælp af et certifikat eller en klienthemmelighed
 
@@ -201,26 +201,26 @@ Benyt følgende fremgangsmåde til at importere forbindelsesindstillinger fra en
 1. Gå til **Forbindelsesindstillinger**.
 1. Angiv indstillingen **Brug demotilstand** til _Nej_.
 
-    ![Brug af indstillingen for demotilstand](media/app-connect-app-demo-mode.png "Brug af indstillingen for demotilstand")
+    ![Brug af indstillingen for demotilstand.](media/app-connect-app-demo-mode.png "Brug af indstillingen for demotilstand")
 
 1. Vælg **Vælg fil** eller **Scan QR-kode**, afhængigt af hvordan du vil importere indstillingerne:
 
     - Hvis du importerer forbindelsesindstillingerne fra en fil, har appen muligvis allerede fundet filen, hvis standardnavnet og standardplaceringen blev brugt, da den blev gemt. Ellers skal du vælge **Vælg fil**, gå til filen på den lokale enhed og vælge den. Hvis du vælger en brugerdefineret placering, gemmer appen den og bruger den automatisk næste gang.
     - Hvis du vil importere forbindelsesindstillingerne ved at scanne en QR-kode, skal du vælge **Scan QR-kode**. Appen beder dig om tilladelse til at bruge enhedens kamera. Når du har givet dig tilladelse, startes kameraet, så du kan bruge det til scanning. Afhængigt af kvaliteten af enhedens kamera og QR-kodens kompleksitet, kan det være vanskeligt at få en korrekt scanning. Hvis det er tilfældet, skal du forsøge at reducere QR-kodens kompleksitet ved kun at oprette én forbindelse pr. QR-kode. (I øjeblikket kan du kun bruge enhedens kamera til at scanne QR-koden).
 
-    ![Importere forbindelsesindstillinger](media/app-connect-app-select-file.png "Importere forbindelsesindstillinger")
+    ![Importere forbindelsesindstillinger.](media/app-connect-app-select-file.png "Importere forbindelsesindstillinger")
 
 1. Når forbindelsesindstillingerne er indlæst, skal du vælge knappen **Tilbage** (venstre pil) i øverste venstre hjørne af siden.
 
-    ![Forbindelsesindstillinger er indlæst](media/app-connect-app-settings-loaded.png "Forbindelsesindstillinger er indlæst")
+    ![Forbindelsesindstillinger er indlæst.](media/app-connect-app-settings-loaded.png "Forbindelsesindstillinger er indlæst")
 
 1. Hvis du bruger en Android-enhed og bruger et certifikat til godkendelse, beder enheden dig om at vælge certifikatet.
 
-    ![Vælg certifikatbeskeden på Android-enhed](media/app-connect-app-choose-cert.png "Vælge certifikatbeskeden på Android-enhed")
+    ![Vælg certifikatbeskeden på Android-enhed.](media/app-connect-app-choose-cert.png "Vælge certifikatbeskeden på Android-enhed")
 
 1. Appen opretter forbindelse til din Supply Chain Management-server og viser logonsiden.
 
-    ![Logonside](media/app-connect-sign-in.png "Logonside")
+    ![Logonside.](media/app-connect-sign-in.png "Logonside")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Konfigurere applikationen manuelt
 
@@ -230,11 +230,11 @@ Du kan konfigurere manuelt på enheden, så den opretter forbindelse til Supply 
 1. Gå til **Forbindelsesindstillinger**.
 1. Angiv indstillingen **Brug demotilstand** til _Nej_.
 
-    ![Demotilstand er slået fra](media/app-connect-app-select-file.png "Demotilstand er slået fra")
+    ![Demotilstand er slået fra.](media/app-connect-app-select-file.png "Demotilstand er slået fra")
 
 1. Tryk i feltet **Vælg forbindelse** for at udvide de indstillinger, der kræves for at angive forbindelsesoplysningerne manuelt.
 
-    ![Manuelle forbindelsesfelter](media/app-connect-manual-connect.png "Manuelle forbindelsesfelter")
+    ![Manuelle forbindelsesfelter.](media/app-connect-manual-connect.png "Manuelle forbindelsesfelter")
 
 1. Angiv følgende oplysninger:
 

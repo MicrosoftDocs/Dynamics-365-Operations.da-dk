@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ed66bb2b2fce659e1e1f029fd60f74149b6526b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 81b65d1aeeff6c4459fe0b2637013009958cfd55
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055118"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360634"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurere integration med Finance
 
@@ -30,7 +30,7 @@ ms.locfileid: "6055118"
 
 Hvis du vil integrere Dynamics 365 Human Resources med Dynamics 365 Finance, kan du bruge skabelonen Human Resources til Finance i [Dataintegrator](/powerapps/administrator/data-integrator). Skabelonen Human Resources til Finance aktiverer dataflow for job, stillinger og arbejdere. Skabelonen gør det muligt at overføre data fra Human Resources til Finance, men tillader ikke, at data overføres fra Finance til Human Resources.
 
-![Integrationsflow fra Human Resources til Finance](./media/hr-admin-integration-finance-flow.png)
+![Integrationsflow fra Human Resources til Finance.](./media/hr-admin-integration-finance-flow.png)
 
 Human Resources til Finance-løsningen giver følgende typer datasynkronisering:
 
@@ -253,6 +253,6 @@ Det lokations-id, der bruges til en arbejderadresse, er ikke del af en nummerser
 
 Følgende illustration viser et eksempel på en skabelontilknytning i Dataintegrator. 
 
-![Tilknytning af skabelon](./media/IntegrationMapping.png)
+![Tilknytning af skabelon.](./media/IntegrationMapping.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

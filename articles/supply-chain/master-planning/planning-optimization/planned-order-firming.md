@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271202"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360370"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -81,7 +81,7 @@ Hvis du vil autorisere ordreforslag manuelt, kan du finde og vælge de ordrefors
     - **Gruppér efter periode** (i sektionen **Indkøbsordrer**) – Vælg den periode, som indkøbsordreforslag skal grupperes efter. Hvis du vil bruge denne indstilling, skal du også vælge indstillingen **Gruppér efter leverandør**.
     - **Gruppér efter periode** (i sektionen **Overførsler**) – Vælg den periode, som overførselsordreforslag skal grupperes efter. Ordrerne grupperes ud fra værdierne for **Fra lagersted** og **Til lagersted**.
 
-    ![Oversigtpanelet Parametre i dialogboksen Autorisation](./media/manual-firming.png "Oversigtpanelet Parametre i dialogboksen Autorisation")
+    ![Oversigtpanelet Parametre i dialogboksen Autorisation.](./media/manual-firming.png "Oversigtpanelet Parametre i dialogboksen Autorisation")
 
 1. På oversigtspanelet **Kør i baggrunden** skal du konfigurere jobbet, så det kører i batchtilstand. Det giver dog ikke mening at konfigurere en tilbagevendende plan, når du udfører manuel autorisation. Felterne fungerer på samme måde som for andre typer af [baggrundsjob](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management. Ved manuel autorisation behandler batchjobbet dog kun de aktuelt valgte ordreforslag. De ordrer, som opfylder filtrene, men anvendes på siden i øjeblikket, behandles ikke.
 1. Vælg **OK** for at anvende dine indstillinger og generere de autoriserede ordrer.
@@ -140,15 +140,15 @@ Hvis du vil autorisere et ordreforslag ved hjælp af den forespørgselsbaserede 
     - **Dage fremad for autorisations tidsgrænse** – Vælg, hvor lang tid fremad de forskellige krav og andre forhold skal beregnes i varedisponeringen.
     - **Dage bagud for autorisations tidsgrænse** – Vælg, hvor langt tilbage de forskellige krav og andre forhold skal beregnes i varedisponeringen.
 
-    ![Oversigtpanelet Parametre i dialogboksen Autorisation af ordreforslag](./media/planned-order-firming-main-1.png "Oversigtpanelet Parametre i dialogboksen Autorisation af ordreforslag")
+    ![Oversigtpanelet Parametre i dialogboksen Autorisation af ordreforslag.](./media/planned-order-firming-main-1.png "Oversigtpanelet Parametre i dialogboksen Autorisation af ordreforslag")
 
 1. Hvis du vil angive, hvilke poster der skal medtages i ordren, skal du vælge knappen **Filter** i oversigtspanelet **Poster, der skal indgå**. Der vises en standarddialogboks for forespørgsler, hvor du kan definere udvælgelseskriterier, sorteringskriterier og joinforbindelser. Felterne fungerer på samme måde som for andre typer af forespørgsler i Supply Chain Management. Felterne her er skrivebeskyttede og viser værdier, der er relateret til forespørgslen.
 
-    ![Oversigtpanelet Poster, der skal indgå i dialogboksen Autorisation af ordreforslag](./media/planned-order-firming-main-2.png "Oversigtpanelet Poster, der skal indgå i dialogboksen Autorisation af ordreforslag")
+    ![Oversigtpanelet Poster, der skal indgå i dialogboksen Autorisation af ordreforslag.](./media/planned-order-firming-main-2.png "Oversigtpanelet Poster, der skal indgå i dialogboksen Autorisation af ordreforslag")
 
 1. Vælg **Forhåndsvisning** for at få vist indholdet af den autoriserede ordre, baseret på dine nuværende indstillinger. Listen over ordreforslag, som vil blive autoriseret, vises som en meddelelse. Du kan derefter justere indstillingerne efter behov, indtil forhåndsvisningen viser den ønskede autoriserede ordre.
 
-    ![Eksempel på forhåndsvisning af autoriseret ordre](./media/planned-order-firming-preview.png "Eksempel på forhåndsvisning af autoriseret ordre")
+    ![Eksempel på forhåndsvisning af autoriseret ordre.](./media/planned-order-firming-preview.png "Eksempel på forhåndsvisning af autoriseret ordre")
 
     > [!WARNING]
     > Denne funktion autoriserer alle ordreforslag, der opfylder filterkriterierne. Ukritisk autorisation af ordreforslag kan det medføre, at der oprettes uønskede indkøbs-, flytte- og produktionsordrer. Før du fortsætter, skal du altid bruge knappen **Forhåndsvisning** til at validere de poster, der vil blive medtaget.

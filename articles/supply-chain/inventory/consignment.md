@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 742c6d1b713b8669dcc3544cf84eb340e3e9293b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015847"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360394"
 ---
 # <a name="set-up-consignment"></a>Konfigurere konsignation
 
@@ -61,7 +61,7 @@ En genopfyldningsordre for konsignation er et dokument, der bruges til at anmode
 
 Dimensionen **Ejer** bruges til at adskille oplysninger om, hvilket lager der ejes af leverandøren, og som ejes af den modtagende juridiske enhed. Genopfyldningens ordrelinjer til konsignation har en **Åben ordre**-status, så længe det fulde antal på linjerne ikke er modtaget eller annulleret. Når det fulde antal er modtaget eller annulleret, ændres status til **Fuldført**. Den fysisk disponible lagerbeholdning, der er tilknyttet en genopfyldningsordre til konsignation, kan registreres ved hjælp af en registreringsproces samt en opdateringsproces for produktkvittering. Registrering kan foretages som en del af varemodtagelsesprocessen eller ved manuelt at opdatere ordrelinjerne. Når opdateringsprocessen for produktkvittering bruges, oprettes der en post i produktkvitteringskladden, som kan bruges til at bekræfte modtagelsen af varerne for leverandørerne.
 
-[![Genopfyldningsordrer til konsignation](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Genopfyldningsordrer til konsignation.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Ændringskladde for beholdningsejerskab
 
@@ -74,7 +74,7 @@ Det er kun lagertransaktioner, der vedrører en bogført kladde, der oprettes. N
 
 Det er ikke muligt at opdatere antal på indkøbsordrelinjer til konsignation, når ordren er blevet oprettet.
 
-[![Ændringskladde for beholdningsejerskab](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![inventory ownership change journal.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverandørsamarbejde i konsignationsprocesser
 
@@ -90,13 +90,13 @@ Yderligere oplysninger om opsætning af leverandører til at anvende leverandør
 
 For at registrere fysisk indgående konsignationslager skal du definere en leverandørejer. Dette gøres på siden **Lagerejer**. Når du vælger en **kreditorkonto**, oprettes standardværdier for felterne **Navn** og **Ejer**. Værdien i feltet **Ejer** vil være synlig for leverandøren, så kan du ændre den, hvis dine kontonavne for kreditorer ikke er let for eksterne personer at genkende. Det er muligt at redigere feltet **Ejer**, men kun indtil tidspunktet, når du gemmer posten **Lagerejer**. Feltet **Navn** udfyldes med navnet på den part, der er tilknyttet kreditorkontoen, og dette kan ikke ændres.
 
-[![Lagerejere](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Lagerejere.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Sporingsdimensionsgruppe
 
 Varer, der skal bruges i konsignationsprocesser, skal være tilknyttet en **sporingsdimensionsgruppe**, hvor dimensionen **Ejer** er sat til **Aktiv**. Ejerdimensionen har altid **Fysisk lager** og **Økonomisk lager** som valgte indstillinger. **Disponer pr. dimension** er aldrig markeret.
 
-[![Sporingsdimensionsgruppe](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Sporingsdimensionsgruppe.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

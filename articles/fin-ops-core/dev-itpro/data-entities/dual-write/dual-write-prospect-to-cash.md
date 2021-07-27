@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 33ed1c7f69fa92bbd123042a139dd8fd0ee3e73a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754082"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361377"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemner til kontanter og to skrivninger
 
@@ -33,7 +33,7 @@ Et vigtigt mål i de fleste virksomheder er at konvertere kundeemner til kunder 
 
 I-app-grænsefladerne kan du få adgang til behandlingsstatus og fakturaoplysninger i realtid. Du kan derfor nemmere administrere funktioner som produktlager, lagerekspedition og -udførelse i styring af Supply Chain Management, uden at skulle oprette tilbud og ordrer igen.
 
-![Dataflow med to skrivninger til kundeemner til kontanter](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Dataflow med to skrivninger til kundeemner til kontanter.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Du kan finde oplysninger om integration af kunder og kontakter i [Integreret kundemaster](customer-mapping.md). Du kan finde oplysninger om produktintegration i [Samlet produktoplevelse](product-mapping.md).
 
@@ -48,7 +48,7 @@ Før du kan synkronisere salgstilbud, skal du opdatere følgende indstillinger.
 
 Gå til **Indstillinger \> Administration \> Systemindstillinger \> Salg** i Sales, og sørg for, at der bruges til følgende indstillinger:
 
-- Systemindstillingen **Brug systemets prisberegningssystem** er angivet til **Ja**.
+- Indstillingen **Brug systemets prisberegningssystem** er angivet til **Ja**.
 - Kolonnen **Rabatberegningsmetode** er angivet til **Linjeelement**.
 
 ### <a name="sites-and-warehouses"></a>Websteder og lagersteder

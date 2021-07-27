@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a2bcd7a1ce68dfd6c4c93d10561d58a42d30f611
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: efa85c4a3371bb5096df1a56d818527156654279
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303238"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357209"
 ---
 # <a name="manage-leave-and-absence-requests"></a>Administrere anmodninger om orlov og fravær
 
@@ -41,7 +41,7 @@ Denne funktion indeholder følgende forbedringer:
 - Du kan markere flere orlovsanmodninger og udføre den samme handling for dem alle.
 - Båndet øverst og en ny knap i arbejdsgangen på siden viser de handlinger, du kan udføre for orlovsanmodninger.
 
-![Lederoplevelse](media/hr-leave-and-absence-manager-experience.png)
+![Lederoplevelse.](media/hr-leave-and-absence-manager-experience.png)
 
 ## <a name="see-also"></a>Se også
 
