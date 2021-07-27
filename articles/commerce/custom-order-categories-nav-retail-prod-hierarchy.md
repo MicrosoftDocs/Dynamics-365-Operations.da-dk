@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: de8840b92307ba63d6d0c2cfa90536bd00696ec3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937056"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349668"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ændre sorteringsrækkefølgen for merchandisingenheder
 
@@ -51,9 +51,9 @@ Før du kan udføre denne procedure, skal demodata være installeret i dit milj�
 
 Visningsrækkefølgen for hierarkiet til kanalnavigation vil blive afspejlet i hovedkontoret for handelsprodukthierarkiet og frigivne produkter efter kategori.
 
-![Produkhierarki sorteret med negative værdier](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Produkhierarki sorteret med negative værdier.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Frigivne produkter efter kategori sorteret på basis af produkthierarkiet](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Frigivne produkter efter kategori sorteret på basis af produkthierarkiet.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Konfigurere visningsrækkefølgen for kategorier i navigationshierarki for kanal
 
@@ -77,11 +77,11 @@ Før du kan udføre denne procedure, skal demodata være installeret i dit milj�
 
 Visningsrækkefølgen i navigationshierarkiet for kanal afspejles i hovedkontoret, kataloget og kanaler.
 
-![Brugersorteret navigationshierarki for kanal](./media/ChannelNavCustomSorted.png)
+![Brugersorteret navigationshierarki for kanal.](./media/ChannelNavCustomSorted.png)
 
-![Brugersorteret navigationshierarki for kanal baseret på kanalnavigationshierarkiet](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Brugersorteret navigationshierarki for kanal baseret på kanalnavigationshierarkiet.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![POS med brugerdefinerede sorterede kategorier](./media/POSChannelCategoriesCustomSorted.png)
+![POS med brugerdefinerede sorterede kategorier.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > Funktionen for brugerdefineret sorteringsrækkefølge er som standard slået fra. Du kan få mere at vide om, hvordan du aktiverer denne og andre funktioner, under [Administration af funktioner](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

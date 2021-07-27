@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224083"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355316"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Understøttede basisdatatyper til elektroniske rapporteringsformler
 
@@ -112,13 +112,13 @@ Et programs *fasttekst* kan bruges i udtryk med alle ER-modeltilknytninger og ER
 
 I følgende illustration vises, hvordan du kan føje **CustVendCorrectiveReasonCode**-modelfastteksten til den redigerbare ER-datamodel.
 
-[![Konfigurere en modelfasttekst i ER-datamodeldesigneren](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![Konfigurere en modelfasttekst i ER-datamodeldesigneren.](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 En models *fasttekst* kan bruges i udtryk med alle ER-modeltilknytnings- og ER-formater, der blev oprettet under en datamodel, hvor *fasttekst* blev indført.
 
 I følgende illustration vises, hvordan du kan føje en **Liste over Natura-underkategorier med modtagerbetaling** til det redigerbare ER-format.
 
-[![Konfigurere en formatfasttekst i ER-formatdesigneren](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![Konfigurere en formatfasttekst i ER-formatdesigneren.](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 En format *fasttekst* kan kun bruges i udtryk i ER-format, hvor *fasttekst* blev indført.
 
@@ -126,15 +126,15 @@ Du skal bruge den relevante type ER-datakilde for at få en bestemt fasttekst ti
 
 - Der er adgang til programfasttekster ved hjælp af datakilderne for **Dynamics 365 for Operations \ Fasttekst** og **Generelt \ Brugerinputparametre**. I følgende illustration vises, hvordan du kan føje datakilderne **appenumNoYes** og **uipNoYes** til det redigerbare ER-format, der refererer til programfastteksten **NoYes**.
 
-    [![Tilføje datakilder for programfasttekster i ER-formatdesigneren](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![Tilføje datakilder for programfasttekster i ER-formatdesigneren.](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - Der er adgang til datamodelfasttekster ved hjælp af datakilderne for **Datamodel \ Fasttekst** og **Datamodel \ Brugerinputparametre til fasttekst**. I følgende illustration vises, hvordan du kan føje datakilden **CustVendCorrectiveReasonCode**, der refererer til datamodelfastteksten **CustVendCorrectiveReasonCode**, til det redigerbare ER-format.
 
-    [![Tilføje datakilder for modelfasttekst i ER-formatdesigneren](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![Tilføje datakilder for modelfasttekst i ER-formatdesigneren.](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - Der er adgang til formatfasttekster ved hjælp af datakilderne for **Format \ Fasttekst** og **Format \ Brugerinputparametre til fasttekst**. I følgende illustration vises, hvordan du kan føje datakilden **NaturaReverseCharge**, der refererer til formatfastteksten **Natura-underkategorier med modtagerbetaling**, til det redigerbare ER-format.
 
-    [![Tilføje datakilder for formatfasttekst i ER-formatdesigneren](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![Tilføje datakilder for formatfasttekst i ER-formatdesigneren.](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 En *fasttekst*-værdi har ingen implicitte konverteringer. Du kan dog bruge funktionen [TEXT](er-functions-text-text.md) til at konvertere en *fasttekst* til en tekststreng. Denne konvertering er ikke sprogafhængig. Du kan få mere at vide om, hvordan du knytter en *fasttekst*-værdi til de relevante sprogspecifikke navne i eksemplerne på brug af funktionerne [LISTOFFIELDS](er-functions-list-listoffields.md) og [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md).
 

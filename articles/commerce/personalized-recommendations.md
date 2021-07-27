@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0fbff437bfa948d70a03479561542106805bdb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b6d68d62636b5750cdcdca3f8ccbe155dc249b72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804423"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352294"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivere tilpassede anbefalinger
 
@@ -50,7 +50,7 @@ Udfør følgende trin for at aktivere personlig tilpasning.
 1. Vælg funktionen **Tilpassede produktanbefalinger**.
 1. Vælg **Aktivér nu** i ruden med egenskaber for **Tilpassede produktanbefalinger**.
 
-![Aktivere tilpasning](./media/FeatureManagement_Personalized.PNG)
+![Aktivere tilpasning.](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Når du aktiverer personlig tilpasning, startes processen til generering af lister over tilpassede produktanbefalinger. Der kan gå op til en dag, før disse lister er tilgængelige og synlige online og på POS.
@@ -73,7 +73,7 @@ Før listen "Udvalgt til dig" kan vises på en e-handelsside, skal følgende bru
 
 I følgende illustration vises et eksempel på en liste over "Udvalgt til dig" på en onlinebutiksside.
 
-![Online Udvalgt til dig-liste](./media/picksforyou.png)
+![Udvalgt til dig-onlineliste.](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>Listerne "Anbefalet til kunde" på POS
 
@@ -81,7 +81,7 @@ For at forbedre deres kundeaktiviteter kan detailhandlere personligt tilpasse ek
 
 I følgende illustration vises et eksempel på en liste over "Anbefalet til kunde" på en POS-klient.
 
-![Listen Anbefalet til kunde på POS](./media/picksonpos.png)
+![Listen Anbefalet til kunde på POS.](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Anvende personlige tilpasninger på eksisterende anbefalingslister
 
@@ -89,7 +89,7 @@ Detailhandlere kan anvende personlige tilpasninger på eksisterende anbefalingsl
 
 En bruger, der er logget på, har f.eks. allerede købt det sorte ur og de brune arbejdsstøvler, der vises på listen "Trending - default" på følgende illustration. Brugeren får derfor vist nye produkter i stedet for disse produkter, som vist på listen "Trending - personalized".
 
-![Anvende personlig tilpasning](./media/applypersonalization.png)
+![Anvende personlig tilpasning.](./media/applypersonalization.png)
 
 Hvis du vil anvende tilpasning på en eksisterende anbefalingsliste i Commerce-webstedsgeneratoren, skal du følge disse trin.
 
@@ -99,7 +99,7 @@ Hvis du vil anvende tilpasning på en eksisterende anbefalingsliste i Commerce-w
 1. Vælg listetypen under **Type** i dialogboksen **Vælg produktlistekonfiguration**.
 1. Markér afkrydsningsfeltet **Anvend personlig tilpasning**, og vælg derefter **OK**.
 
-    ![Anvende personlig tilpasning på en tendensliste](./media/ApplyPersonalizationToTrending.PNG)
+    ![Anvende personlig tilpasning på en tendensliste.](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Gem siden, afslut redigeringen af den, og publicer den. Når siden er publiceret, vil de brugere, der er logget på, se en personligt tilpasset tendensliste.
 

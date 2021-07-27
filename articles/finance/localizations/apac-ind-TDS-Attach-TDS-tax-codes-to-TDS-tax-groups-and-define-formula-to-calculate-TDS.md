@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ec0d683153bd5ab731035159d32881fbdb352d70
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f681018c27afbef8d34c88a518941d45aa9d72df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023127"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358476"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Knytte kildeskattekoder til kildeskattegrupper og definere formlen til beregning af kildeskat
 
@@ -33,7 +33,7 @@ Benyt følgende fremgangsmåde for at konfigurere en kildeskattegruppe, knytte k
 
 1. Gå til **Skat \> Indirekte skatter \> A-skat \> Grupper for A-skat**.
 
-    [![Siden Grupper for A-skat](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
+    [![Siden Grupper for A-skat.](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
 
 2. Vælg **Ny** i handlingsruden for at oprette en gruppe for A-skat til kildeskat, og angiv de nødvendige oplysninger.
 3. I feltet **Skattetype** skal du vælge **KIldeskat**.
@@ -43,7 +43,7 @@ Benyt følgende fremgangsmåde for at konfigurere en kildeskattegruppe, knytte k
 7. Hvis du vil forhindre, at skattegruppen indgår i beregninger for transaktioner, skal du markere afkrydsningsfeltet **Fritaget**.
 8. I handlingsruden skal du vælge **Designer** for at åbne formeldesigneren, så du kan definere formlen til beregning af kildeskat for kildeskattegruppen. På siden **Designer** viser fanen **Skatter** de kildeskattekoder, der er valgt for kildeskattegruppen.
 
-    [![Siden Designer](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
+    [![Siden Designer.](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
 
 9. Vælg **Alt+N** under fanen **Beregning** for at oprette en linje. Feltet **Id** viser det automatisk genererede prioritets-id for skatteberegningen.
 10. Vælg den kildeskattekode, du vil definere formlen for, i feltet **Skattekode**. Alle de kildeskattekoder, der er valgt for kildeskattegruppen, kan vælges i dette felt.

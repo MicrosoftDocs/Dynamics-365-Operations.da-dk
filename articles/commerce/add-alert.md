@@ -2,7 +2,7 @@
 title: Kampagnebannermodul
 description: Dette emne omhandler kampagnebannermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: be3cc9729b58fce9ebc9885d8cb20b63114362a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3158916f96522bec6e7511f2d9daf61d36ffe8c6
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796240"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479346"
 ---
 # <a name="promo-banner-module"></a>Kampagnebannermodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler kampagnebannermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -46,11 +47,11 @@ Kampagnebannere kan bruges i webstedets overskift til at vise kampagner eller me
 
 Det følgende billede viser et eksempel på et reklamebanner.
 
-![Eksempel på et reklamebannermodul](./media/ecommerce-Promobanner.PNG)
+![Eksempel på et reklamebannermodul.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Egenskaber for kampagnebannermodul
 
-| Egenskabsbetegnelse             | Værdi                              | Beskrivende tekst |
+| Egenskabsbetegnelse             | Værdi                              | Betegnelse |
 |---------------------------|------------------------------------|-------------|
 | Bannermeddelelser           | Tekst og link                     | En matrix af tekst og link. |
 | Automatisk afspilning                  | **Sand** eller **Falsk**              | En værdi, der angiver, om meddelelser automatisk gennemløbes, hvis der er konfigureret flere meddelelser. |
@@ -58,7 +59,11 @@ Det følgende billede viser et eksempel på et reklamebanner.
 | Tillad afvis             | **Sand** eller **Falsk**              | Hvis værdien er angivet til **Sand**, kan kunderne afvise påmindelsen. |
 | Vis karruselslipper     | **Sand** eller **Falsk**              | En værdi, der angiver, om karruselslippere skal vises, så kunder kan gå gennem flere bannerelementer manuelt. |
 | Tekstjustering            | **Højre**, **Venstre** eller **Centreret** | Tekstjusteringen i kampangebannermodulet. |
-| Binding                      | En URL-adresse                              | URL-adressen for et valgfrit link. |
+| Sammenkæd                      | En URL-adresse                              | URL-adressen for et valgfrit link. |
+|Tekstjustering             | **Højre**, **Venstre** eller **Centreret** | Denne egenskab er tilgængelig som lokalnummer under emnet Adventure Works. Det giver en bruger mulighed for at angive tekstjusteringen i banneret. |
+
+> [!IMPORTANT]
+> Emnet Adventure Works er tilgængelige pr. Dynamics 365 Commerce version 10.0.20.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Føj et kampangebannermodul til en ny side 
 
@@ -78,7 +83,6 @@ Hvis du vil føje et kampangebannermodul til en ny side og angive de påkrævede
 
 > [!NOTE]
 > Et kampagnebanner bruges typisk i sidehovedpladsen eller en underoverskriftplads.
-
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

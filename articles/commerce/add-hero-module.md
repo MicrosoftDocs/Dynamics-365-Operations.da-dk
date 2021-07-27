@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0a3fd442f20fd40cdf8b845d353ae5d61ce51e29
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 026a549bfb856abc56eeaab21c681a8271ce4f44
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797641"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347500"
 ---
 # <a name="content-block-module"></a>Indholdsblokmodul
 
@@ -46,15 +46,15 @@ Desuden kan temaet vise forskellige egenskaber for hvert layout. En temaudvikler
 
 Følgende billede viser et eksempel på et indholdsblokmodul med et Helte-layout.
 
-![Eksempel på et hero-modul](./media/Hero.PNG)
+![Eksempel på et hero-modul.](./media/Hero.PNG)
 
 Følgende billede viser et eksempel på et indholdsblokmodul med et funktionslayout.
 
-![Eksempler på funktionsmoduler](./media/Feature.PNG)
+![Eksempler på funktionsmoduler.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Egenskaber for indholdblokmodul
 
-| Egenskabsnavn  | Værdier | Beskrivelse |
+| Egenskabsbetegnelse  | Værdier | Betegnelse |
 |----------------|--------|-------------|
 | Billede          | Billedfil | Der kan bruges et billede til at vise et produkt eller en kampagne. Der kan overføres et billede til billedgalleriet, eller der kan bruges et eksisterende billede. |
 | Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Alle hero-moduler kan have en overskrift. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |

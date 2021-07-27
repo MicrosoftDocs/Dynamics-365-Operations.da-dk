@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6d8c1d4e7edc4b83e2489ac6a0bad18ab55c042b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792923"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348236"
 ---
 # <a name="create-and-update-store-hours"></a>Oprette og opdatere åbningstider
 
@@ -49,14 +49,14 @@ Når du vil konfigurere åbningstider, skal du følge disse trin.
     > [!NOTE]
     > Du kan oprette flere skabeloner med overlappende start- og slutdatoer. Du kan derfor f.eks. definere åbningstider for butikker i forskellige tidszoner.
 
-    ![Dialogboksen Tilføj et interval](../dev-itpro/media/Storehours1.png "Dialogboksen Tilføj et interval")
+    ![Dialogboksen Tilføj et interval.](../dev-itpro/media/Storehours1.png "Dialogboksen Tilføj et interval")
 
 4. Knyt åbningstidsskabelonen til de butikker, hvor den vil blive brugt. Vælg de butikker, områder og organisationer, skabelonen skal knyttes til, i dialogboksen **Vælg organisationsnoder**.
 
     - Der kan kun knyttes én åbningstidsskabelon til hver butik.
     - Brug pileknapperne til at vælge butikker, områder eller organisationer. Kalenderen vil være tilgængelig for butikkerne eller butiksgrupperne, og den vil være synlig på POS som reference.
 
-    ![Dialogboksen Vælg organisationsnoder](../dev-itpro/media/Storehours2.png "Dialogboksen Vælg organisationsnoder")
+    ![Dialogboksen Vælg organisationsnoder.](../dev-itpro/media/Storehours2.png "Dialogboksen Vælg organisationsnoder")
 
 5. På siden **Distributionsplan** skal du køre jobbene **1070** og **1090** for at gøre åbningstiderne tilgængelige for POS.
 
@@ -75,7 +75,7 @@ Benyt følgende fremgangsmåde for at føje åbningstider til de udskrevne POS-k
 
 POS-kvitteringer viser nu åbningstiderne. Hvis der er helligdage i skabelonen, vises de på kvitteringen.
 
-![Kvitteringseksempel](../dev-itpro/media/Storehours3.png "Kvitteringseksempel")
+![Kvitteringseksempel.](../dev-itpro/media/Storehours3.png "Kvitteringseksempel")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

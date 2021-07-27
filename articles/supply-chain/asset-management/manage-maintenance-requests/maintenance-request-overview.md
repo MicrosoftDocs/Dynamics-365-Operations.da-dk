@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c72a16b8f3865129ad737c511e50eb34c9f2e91
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 536f512abc2b7ce74ebc35dfdaf48e812a85cc2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015871"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344238"
 ---
 # <a name="maintenance-requests"></a>Vedligeholdelsesanmodninger
 
@@ -40,7 +40,7 @@ Der kan oprettes vedligeholdelsesanmodninger for alle aktiver i Styring af aktiv
 
 Hvis du have vist vedligeholdelsesanmodninger, skal vælge **Styring af aktiver** \> **Almindelig** \> **Vedligeholdelsesanmodninger** \> **Alle vedligeholdelsesanmodninger**, **Aktive vedligeholdelsesanmodninger** eller **Vedligeholdelsesanmodninger for mine arbejdssteder**. Hver listeside viser nogle af de oplysninger, der er relateret til en vedligeholdelsesanmodning.
 
-![Vis vedligeholdelsesanmodninger](media/01-manage-maintenance-requests.png)
+![Vis vedligeholdelsesanmodninger.](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Brug listesiden **Vedligeholdelsesanmodninger for mine arbejdssteder** for at få vist en liste over vedligeholdelsesanmodninger, der indeholder enten arbejdssteder, som du er relateret til som arbejder, eller aktiver, der er installeret på de arbejdssteder, som du er relateret til som arbejder. (Du finder oplysninger om, hvordan du konfigurerer arbejdssteder for vedligeholdelsesarbejdere, i [Vedligeholdelsesarbejdere og arbejdergrupper](../setup-for-objects/workers-and-worker-groups.md).)
@@ -49,7 +49,7 @@ Hvis du have vist vedligeholdelsesanmodninger, skal vælge **Styring af aktiver*
 
 For at åbne detaljevisning for en post skal du i gittervisningen på listesiden **Alle vedligeholdelsesanmodninger** vælge et link i kolonnen **Vedligeholdelsesanmodning**.
 
-![Se detaljer om vedligeholdelsesanmodning](media/02-manage-maintenance-requests.png)
+![Se detaljer om vedligeholdelsesanmodning.](media/02-manage-maintenance-requests.png)
 
 Knapperne i Handlingsruden er organiseret på faner. Følgende tabel beskriver kort de knapper, der er relateret til Aktiv styring.
 

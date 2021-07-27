@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c0c584ed53dc4ec8a761065838127dc67cbc41e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09c20020e5e0b957785a88ad511cedfec50a5f29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813719"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344610"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Vedligeholdelsesnedetid for arbejdsordrer
 
@@ -45,7 +45,7 @@ Du kan oprette registreringer af vedligeholdelsesnedetid for det aktiv, der er v
 
 I følgende illustration vises et eksempel på siden **Årsagskoder til vedligeholdelsesnedetid**.
 
-![Figur 1](media/15-work-orders.png)
+![Figur 1.](media/15-work-orders.png)
 
 Når du har oprettet de årsagskoder til vedligeholdelsesnedetid, du vil bruge, kan du oprette registreringer af vedligeholdelsesnedetid for arbejdsordrer og aktiver.
 
@@ -71,15 +71,15 @@ Når du har oprettet de årsagskoder til vedligeholdelsesnedetid, du vil bruge, 
 
 Følgende illustration viser et eksempel på en registrering af vedligeholdelsesnedetid.
 
-![Figur 2](media/16-work-orders.png)
+![Figur 2.](media/16-work-orders.png)
 
 Den kalender, der bruges til beregning af registreret vedligeholdelsesnedetid, afhænger af dit valg i opsætningen af aktiver og parametre. Hvis en ressource er valgt på et aktiv i feltet **Ressource** i oversigtspanelet **Anlægsaktiv** på siden **Alle aktiver**, bruges den kalender, der er konfigureret for den tilknyttede ressourcegruppe, som vist i følgende illustration.
 
-![Figur 3](media/17-work-orders.png)
+![Figur 3.](media/17-work-orders.png)
 
 Hvis der ikke er valgt en ressource på aktivet, bruges den standardkalender, der er valgt på siden **Parametre til aktivstyring**, som vist i følgende illustration.
 
-![Figur 4](media/18-work-orders.png)
+![Figur 4.](media/18-work-orders.png)
 
 Klik på **Styring af aktiver** > **Forespørgsler** > **Vedligeholdelsesnedetid** for at se en oversigt over alle registreringer af vedligeholdelsesnedetid.
 

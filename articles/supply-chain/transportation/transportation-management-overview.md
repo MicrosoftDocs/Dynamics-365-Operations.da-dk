@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 30251
+ms.custom:
+- "30251"
+- intro-internal
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8afb7d28d9dd6487e00a2bf7e813069aac386c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2e438df0b01b864b3ef96eb41819087cbbbef4d9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359503"
 ---
 # <a name="transportation-management-overview"></a>Oversigt over transportstyring
 
@@ -67,17 +69,17 @@ Med Transportstyring kan du bruge virksomhedens transport og også identificere 
 ## <a name="planning-transportation-in-supply-chain-management"></a>Planlægning af transport i Supply Chain Management
 I transportstyring kan transportplanlægning baseres på ordrer eller på de forsendelser, der oprettes på grundlag af disse ordrer. Forsendelserne findes altid på et eller andet tidspunkt, men er ikke påkrævet for transportplanlægning. Flytteordrer er en del af det udgående scenario og kan planlægges sammen med salgsordrer. 
 
-![Indlæs tegning](./media/Load-drawing1-1024x477.jpg)
+![Indlæs tegning.](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Indgående transport
 Når du bestiller varer fra en leverandør, og varerne skal leveres til dit lagersted, kan du selv arrangere transport af varerne, hvis du ønsker det. Du kan bruge Supply Chain Management til at planlægge transport og modtagelse af den indgående last. Følgende illustration viser forretningsprocessen for planlægning af transport for en indgående belastning. 
 
-![Forretningsprocesflow for transport af indgående laster](./media/Businessprocessflowforinboundloadtransportation.jpg)
+![Forretningsprocesflow for transport af indgående laster.](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Udgående transport
 Du kan planlægge og behandle en udgående belastning for at levere bestemte varer fra et firmas lager til en kunde. Du kan bruge Supply Chain Management til at planlægge transport og forsendelse af en udgående last. Følgende illustration viser forretningsprocessen for planlægning og behandling af udgående belastninger for levering. 
 
-![Planlægning og behandling af udgående laster](./media/Planningandprocessingoutboundloads.jpg)
+![Planlægning og behandling af udgående laster.](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Lastopbygning
 Supply Chain Management indeholder en lastopbygningsstrategi, der hedder Volumenbaseret lastopbygningsstrategi. Denne strategi gør det muligt for dig at bruge de maksimumværdier, der er angivet for højde og vægt i lastskabelonen, eller du kan tilsidesætte indstillingerne ved at angive nye værdier. Hvis du vil bruge denne strategi, skal du vælge den i feltet **Lastopbygningsstrategi** i oversigtspanelet **Opsætning** på siden **Lastopbygningspanel**. Du kan desuden tilføje dine egne lastopbygningsstrategier ved at oprette en ny klasse i AOT (Application Object Tree).

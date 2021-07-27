@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5b044e4616555559be51b0846327b1d55bfe47b3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 851cf6df576db303d9fefdcd0e732a92a019189a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822533"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354102"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Opsæt foretrukne vedligeholdelsesarbejdere
 
@@ -59,7 +59,7 @@ Jo flere valg du foretager for den samme post, jo mere specifik bliver din opsæ
 
     [!NOTE] Når der vælges en foretrukken vedligeholdelsesarbejder under planlægningen af arbejdsordrer, gennemgår Styring af aktiver alle poster med **Foretrukne vedligeholdelsesarbejdere** for at søge efter et muligt match og kontrollere altid den mest specifikke kombination først. Hvis der ikke findes et match, bruges posten "standard" med et valg i enten feltet **Foretrukken vedligeholdelsesarbejdergruppe** eller feltet **Foretrukken vedligeholdelsesarbejder**.
 
-![Figur 1](media/02-work-order-scheduling.png)
+![Figur 1.](media/02-work-order-scheduling.png)
 
 Du kan også konfigurere *ansvarlige* vedligeholdelsesarbejdere, der kan vælges, når der oprettes en vedligeholdelsesanmodning eller en arbejdsordre. I **Alle arbejdsordrer** og **Alle vedligeholdelsesanmodninger** kan du redigere valget, hvis det er nødvendigt. Se [Ansvarlige vedligeholdelsesarbejdere](../setup-for-maintenance-requests/responsible-workers.md) for at få yderligere oplysninger.
 

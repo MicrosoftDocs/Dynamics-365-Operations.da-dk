@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796360"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345154"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
@@ -36,7 +36,7 @@ Som standard udføres produktsøgninger i butikkens udvalg. Denne type søgning 
 
 På siden **Skift katalog** kan medarbejdere nemt vælge alle butikker, eller de kan søge efter produkter på tværs af alle butikker.
 
-![Ændring af kataloget](./media/Changecatalog.png "Ændring af kataloget")
+![Ændring af kataloget.](./media/Changecatalog.png "Ændring af kataloget")
 
 En lokal produktsøgning søger i følgende produktegenskaber:
 
@@ -59,7 +59,7 @@ En lokal produktsøgning søger i følgende produktegenskaber:
 - Detailhandlere kan konfigurere produktsøgning til at vise søgeforslag, mens brugerne skriver produktnavne. En ny indstilling for denne funktion findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Indstillingen hedder **Vis søgeforslag, mens du skriver**. Denne funktion kan hjælpe medarbejderne med hurtigt at finde det produkt, de søger efter, da de ikke behøver at skrive hele navnet manuelt.
 - Produktsøgningsalgoritmen søger nu også efter de søgte udtryk i egenskaben **Søgenavn** for produktet.
 
-![Produktforslag](./media/Productsuggestions.png "Produktforslag")
+![Produktforslag.](./media/Productsuggestions.png "Produktforslag")
 
 ## <a name="customer-search"></a>Kundesøgning
 
@@ -83,7 +83,7 @@ For at søge globalt kan medarbejderne vælge knappen **Filtrer resultater** i b
 
 Kunde-id vises ikke for debitorer fra de andre juridiske enheder, da der ikke er oprettet noget kunde-id for disse parter i det aktuelle regnskab. Men hvis en medarbejder åbner siden med oplysninger for kunden, opretter systemet automatisk et kunde-id for parten og knytter også butikkens kundeadressekartoteker til kunden. Kunden vil derfor være synlig i lokale butikssøgninger, der udføres senere.
 
-![Global kundesøgning](./media/Globalcustomersearch.png "Global kundesøgning")
+![Global kundesøgning.](./media/Globalcustomersearch.png "Global kundesøgning")
 
 ### <a name="additional-local-customer-search-capabilities"></a>Yderligere egenskaber for lokal kundesøgning
 
@@ -94,11 +94,11 @@ Når en bruger søger efter et telefonnr., ignorerer systemet specialtegn (f.eks
 
 Den traditionelle kundesøgning kan være tidskrævende, da den søger på tværs af flere felter. I stedet kan kasserere søge i en enkelt kundeegenskab, f.eks. navn, mailadresse eller telefonnummer. De egenskaber, som kundesøgningsalgoritmen bruger, kaldes samlet *kundesøgningskriteriet*. Systemadministratoren kan nemt konfigurere et eller flere kriterier som genveje, der skal vises i POS. Da søgningen er begrænset til et enkelt kriterium, vises kun de relevante søgeresultater, og ydeevnen er meget bedre end ydeevnen ved en standardkundesøgning. I følgende illustration vises kundesøgningsgenvejene i POS.
 
-![Genveje til kundesøgning](./media/SearchShortcutsPOS.png "Genveje til kundesøgning")
+![Genveje til kundesøgning.](./media/SearchShortcutsPOS.png "Genveje til kundesøgning")
 
 For at angive søgekriterier som genveje skal administratoren åbne siden **Commerce-parametre** i Commerce og derefter under fanen **POS-søgekriterier** vælge alle de kriterier, der skal vises som genveje.
 
-![Konfigurere søgegenveje](./media/ConfigureShortcutsAX.png "Konfigurere søgegenveje")
+![Konfigurere søgegenveje.](./media/ConfigureShortcutsAX.png "Konfigurere søgegenveje")
 
 > [!NOTE]
 > Hvis du tilføjer for mange genveje, vil rullemenuen på søgelinjen på POS blive overfyldt, og medarbejderens søgeoplevelse kan blive påvirket. Det anbefales, at du kun tilføje så mange genveje, som du har brug for.

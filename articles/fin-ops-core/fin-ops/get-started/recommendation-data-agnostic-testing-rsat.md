@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 120a88790b7cdb6a8cfcf97cbafeced4685384f2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4795d11ac370003e48dc845c86ec8a5ba22aa86
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744657"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348649"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Test af dataagnostik ved hjælp af Regression Suite Automation Tool
 
@@ -30,7 +30,7 @@ Selvom den funktionelle validering af et ERP-program ikke kan være fuldstændig
 - ATL-struktur
 - Regression Suite Automation Tool (RSAT)
 
-[![Testklassifikationspyramide](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Testklassifikationspyramide.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Overblik
 -   **SysTest-struktur** – SysTest-strukturen er pålidelig til skrivning af enhedstest. Da enhedstest generelt tester en metode eller funktion, bør de altid være dataagnostik og kun afhænge af de inputdata, der leveres som en del af testen.
@@ -42,7 +42,7 @@ Selvom den funktionelle validering af et ERP-program ikke kan være fuldstændig
     - o Angiv de entydige identifikatorer, f.eks. fakturanumre, via nummerserien eller ved at bruge Microsoft Excel-funktioner som =TEKST(NU(),"ååååmmddttmm"). Denne funktion angiver et entydigt tal hvert minut, hvilket giver dig mulighed for at spore, hvornår handlingen fandt sted. Dette kan bruges til variabler som produktkvitteringsnumre og kreditorfakturanumre. Disse test fortsætter med at arbejde på samme database igen og igen uden at kræve nogen gendannelse.
     - Indstil altid miljøets **redigeringstilstand** til **Læs** eller **Rediger** som første test, fordi standardindstillingen er **Automatisk**. **Automatisk**-indstillinger bruger altid den tidligere indstilling og kan forårsage upålidelige test. 
  
-    [![Siden Indstillinger, fanen Ydeevne](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Siden Indstillinger, fanen Ydeevne.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Valider kun, når du har filtreret på en bestemt transaktion i stedet for generisk validering. Hvis det f.eks. er antallet af poster, skal du filtrere efter transaktionsnummeret eller transaktionsdatoen, så valideringen udelukker alle andre transaktioner. 
     - Hvis du kontrollerer en debitorsaldo eller budgetkontrol, skal du gemme værdien først og derefter tilføje din transaktionsværdi for at validere det forventede resultat i stedet for at validere en fast forventet værdi. 

@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b5182df9d45a3b5d2572a5b6b391c924ef23bf9a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b7e8a37e31201845b94547850b8979a103f0729e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800415"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352658"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversigt over skybaseret søgning
 
@@ -41,7 +41,7 @@ Søgerelevansen og ydeevnen er nøglefaktorer i omnikanaloplevelsen, da produktr
 
 I følgende illustration vises et eksempel på typiske gennemsyns- og søgefunktioner.
 
-![Landingsside for søgninger](./media/SearchLanding.png)
+![Landingsside for søgninger.](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Filterbaseret navigation og oversigt over valg 
 
@@ -51,7 +51,7 @@ Ved at bruge filterbaseret navigation kan du konfigurere forskellige afgrænsere
 
 I følgende illustration vises et eksempel, hvor der bruges filterbaseret navigation i en søgning.
 
-![Oversigt over valgmuligheder](./media/ChoiceSummary.png)
+![Oversigt over valgmuligheder.](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Avancerede automatiske forslag
 
@@ -61,7 +61,7 @@ Dynamics 365 Commerce understøtter også funktioner for nøgleordsforekomster i
 
 I følgende illustration vises et eksempel, hvor der bruges avancerede automatiske forslag.
 
-![avancerede automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
+![avancerede automatiske forslag.](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Sortér
 
@@ -69,7 +69,7 @@ Med forbedret sortering i Dynamics 365 Commerce kan kunderne sortere, søge efte
 
 >[!NOTE]
 >Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontroller, at der er en post for "ProductSearch.UseAzureSearch, der er indstillet til 'sand' under **Commerce-parametre > Konfigurationsparametre**. 
-![Konfigurationsparametre for cloud-baseret søgning](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparametre for cloud-baseret søgning.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

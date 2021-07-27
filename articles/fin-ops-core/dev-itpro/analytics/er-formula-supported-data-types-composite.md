@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224082"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355340"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Understøttede sammensatte datatyper til elektroniske rapporteringsformler
 
@@ -43,11 +43,11 @@ Standardværdien for en *klasse* er **null**.
 
 I følgende illustration vises, hvordan **systemoplysninger (xInfo)**-datakilden for **klasse**-typen tilføjes for at få forekomsten af **xInfo**-programklassen og kalde dens **productName()**-metode for modtagelse af navnet på det aktuelle program. Navnet på det aktuelle program hentes ved kørsel af den `xInfo.productName`-binding, der blev konfigureret for feltet **Softwarenavn(SoftwareName)** i ER-datamodellen. Denne binding kalder metoden `productName()` for **XInfo**-programklassen, der repræsenteres i den aktuelle modeltilknytning som **Systemoplysninger (xInfo)** datakilde.
 
-[![Konfigurere en klassedatakilde i ER-modeltilknytningsdesigner](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![Konfigurere en klassedatakilde i ER-modeltilknytningsdesigner.](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 I følgende illustration vises, hvordan ER-formatet er konfigureret til at placere det angivne programnavn i genererede dokumenter. Feltet **Softwarenavn(SoftwareName)** for den anvendte datamodel var bundet til den **Streng**-komponent, der er indlejret under **softwareUsed** XML-elementet i ER-formatet. Navnet på det aktuelle program placeres således ved kørsel af **softwareUsed** XML-elementet i et genereret dokument i XML-format.
 
-[![Konfigurere strukturen for et elektronisk udgående dokument i ER-formatdesigneren](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![Konfigurere strukturen for et elektronisk udgående dokument i ER-formatdesigneren.](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
 ## <a name="container"></a><a name="container"></a>Container
 
@@ -60,7 +60,7 @@ Standardværdien for en *container* er **null**.
 
 I følgende illustration vises, hvordan feltet **Bitmap(Image)** af *container*-typen er bundet til feltet med datamodellens **Logo** i **container**-typen i modeltilknytningen **Salgsfaktura**. Denne binding gør firmaets logo tilgængeligt for alle ER-formater, der er designet til roddefinitionen af **SalesInvoice**, og som bruger denne modeltilknytning under kørslen.
 
-[![Binding af et felt af typen Container i ER-modeltilknytningsdesigner](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![Binding af et felt af typen Container i ER-modeltilknytningsdesigner.](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>Optag
 
@@ -109,7 +109,7 @@ Standardværdien for et *objekt* er **null**.
 
 I følgende illustration vises, hvordan datakilden **ReportDataContract** for *objekt*-typen tilføjes for at overføre oplysninger om en genereret faktura fra kildekoden til modeltilknytningen af **Projektfaktura**. Teksten i fakturaforekomsten sendes f.eks. som en del af udførelseskonteksten. Denne tekst tages fra kildekoden under kørslen ved udførelse af den `ReportDataContract.parmInvoiceInstanceText`-binding, der blev konfigureret for feltet **Note** i ER-datamodellen. Denne binding kalder metoden `parmInvoiceInstanceText()` for **PSAProjInvoiceContract**-programklassen, der repræsenteres i den aktuelle modeltilknytning som **ReportDataContract** datakilde.
 
-[![Konfigurere en objektdatakilde i ER-modeltilknytningsdesigner](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![Konfigurere en objektdatakilde i ER-modeltilknytningsdesigner.](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 Du kan få mere at vide om, hvordan du overfører detaljer i udførelseskonteksten fra kildekode til den kørende ER-løsning, i [Udvikle programartefakter for at kalde den designede rapport](er-quick-start1-new-solution.md#DevelopCustomCode).
 

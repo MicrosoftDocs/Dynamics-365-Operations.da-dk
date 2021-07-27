@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6c5081f71a18dfac83b7aea950395436b42f50e
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: e8a3782e5beb7d16accc0a56447d5db1f1376dd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881030"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350178"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Microsoft Office-brugergrænsefladestil for nyt dokument i styring af forretningsdokumenter
 
@@ -51,18 +51,18 @@ Udfør følgende trin for at aktivere denne funktion for alle juridiske enheder.
 
 1. I arbejdsområdet **Styring af forretningsdokumenter** skal du vælge **Nyt dokument**.
 
-    ![Arbejdsområdet til Styring af forretningsdokumenter](./media/BDM_overview_new_template1.png)
+    ![Arbejdsområdet til Styring af forretningsdokumenter.](./media/BDM_overview_new_template1.png)
 
 2. Vælg det dokument, der skal bruges som skabelon, under fanen **Vælg**, og vælg derefter **Opret dokument**.
 
-    ![Dialogboksen Forretningsdokumenter](./media/BDM_overview_new_template2.png)
+    ![Dialogboksen Forretningsdokumenter.](./media/BDM_overview_new_template2.png)
 
 3. I den nye dialogboks skal du i feltet **Titel** ændre titlen efter behov. Titelteksten bruges til at navngive den nye ER-formatkonfiguration, der oprettes automatisk. Kladdeversionen af denne konfiguration (**FTI-debitorrapport (GER) Kopi**) vil indeholde den redigerede skabelon og vil blive brugt til at køre dette ER-format for den aktuelle bruger. Den oprindelige skabelon fra ER-basisformatkonfigurationen vil blive brugt til at køre dette ER-format for enhver anden bruger.
 4. I feltet **Navn** skal du ændre navnet på den første revision af den redigerbare skabelon, der oprettes automatisk.
 5. I feltet **Kommentar** skal du opdatere bemærkningerne til revisionen af den redigerbare skabelon, der oprettes automatisk.
 6. Vælg **OK** for at bekræfte starten af redigeringsprocessen.
 
-    ![Dialogboksen Dokumentoprettelse](./media/BDM_overview_new_template3.png)
+    ![Dialogboksen Dokumentoprettelse.](./media/BDM_overview_new_template3.png)
 
 Knappen **Nyt dokument** bruges til at oprette og redigere en skabelon i en ER-formatkonfiguration, der er leveret af en anden udbyder. I dette eksempel er udbyderen Microsoft. Når du vælger **Nyt dokument**, kan du se alle de skabeloner, der ejes af den aktuelle udbyder og andre udbydere. Når du har valgt skabelonen, vil den blive åbnet til redigering. Den redigerede skabelon gemmes derefter i en ny ER-formatkonfiguration, der genereres automatisk.
 
@@ -71,16 +71,16 @@ Følg disse trin for at angive påkrævede oplysninger, før du uploader en skab
 
 1. I arbejdsområdet **Styring af forretningsdokumenter** skal du vælge **Nyt dokument**.
 
-    ![Arbejdsområdet til Styring af forretningsdokumenter](./media/BDM_overview_new_template1.png)
+    ![Arbejdsområdet til Styring af forretningsdokumenter.](./media/BDM_overview_new_template1.png)
     
 2. På siden **Opret en ny skabelon** under fanen **Upload** under fanen **Skabelon** skal du vælge **Gennemse** for at finde og vælge den Excel-fil, du vil bruge som skabelon. I afsnittet **Skabelon** udfyldes felterne **Titel** og **Beskrivelse** automatisk. De angiver navnet på og beskrivelsen af den nye ER-formatkonfiguration, der oprettes automatisk. Hvis det er nødvendigt, kan du redigere felterne.
 3. Angiv typen af forretningsdokument i feltet **Navn** i sektionen **Dokumenttype**. Denne værdi bruges til at søge i den korrekte datakilde (det vil sige konfigurationen af ER-modellen).
 
-    ![Fanen Skabelon](./media/BDM_overview_new_UI_import_21.jpg)
+    ![Fanen Skabelon.](./media/BDM_overview_new_UI_import_21.jpg)
 
 4. Vælg **Anvend filter** i oversigtspanelet **Filter** under fanen **Datakilde**. I sektionen **Datakilde** udfyldes feltet **Navn** automatisk, eller du kan vælge en værdi manuelt. Du kan bruge filteret til at søge efter det relevante datakildenavn ved hjælp af navn, beskrivelse, lande-/områdekode og forretningsdokumenttype.
 
-    ![Fanen Datakilde](./media/BDM_overview_new_UI_import_31.jpg)
+    ![Fanen Datakilde.](./media/BDM_overview_new_UI_import_31.jpg)
     
     > [!NOTE]
     > Oversigtspanelet **Filter** bruges til at søge i den korrekte datakilde (det vil sige konfigurationen af ER-modellen). Du kan redigere alle filterfelter for at finde den datakilde, der passer bedst til det dokument, du uploader.
@@ -89,7 +89,7 @@ Følg disse trin for at angive påkrævede oplysninger, før du uploader en skab
     
 5. Vælg **Registrer automatisk** under fanen **Tilknytning**. Feltet **Roddefinition** udfyldes automatisk, eller du kan vælge en værdi manuelt. Denne fane viser sluttilknytningen for elementerne fra skabelonen og modellen.
 
-    ![Fanen Tilknytning](./media/BDM_overview_new_UI_import_41.jpg)
+    ![Fanen Tilknytning.](./media/BDM_overview_new_UI_import_41.jpg)
     
    > [!NOTE]
    > Tilknytningen i sektionen **Skabelonstruktur** bruger det fulde match af navne eller beskrivelser i datakilden på brugerens sprog og i cellenavnet i skabelonen.
@@ -102,11 +102,11 @@ Hvis der ikke er en udbyder i Elektronisk rapportering, kan du oprette en. Hvis 
 
 - Hvis du vil oprette en udbyder, skal du ændre navnet på udbyderen i feltet **Navn**, opdatere den nye udbyders internetadresse i feltet **Internetadresse** og vælge **OK** for at bekræfte.
 
-    ![Oprette en ny udbyder i BDM](./media/bdm_create_provider.png)
+    ![Oprette en ny udbyder i BDM.](./media/bdm_create_provider.png)
     
 - Hvis du vil aktivere en eksisterende udbyder, skal du vælge navnet på udbyderen i feltet **Konfigurationsudbyder** og vælge **OK** for at indstille udbyderen til aktiv.
 
-    ![Aktivere udbyder i BDM](./media/bdm_choose_provider.png)
+    ![Aktivere udbyder i BDM.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Hver BDM-skabelon refererer til udbyderen som konfigurations forfatter. Derfor kræves der en aktiv udbyder for skabelonen.

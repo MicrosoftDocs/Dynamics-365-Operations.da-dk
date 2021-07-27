@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: baba699a1b8efc986b4b274b8faf143d24d69e96
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355775"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillad brugere at konfigurerer en ER-formatreference, der forespørger om et format fra den globale lagermappe
 
@@ -34,27 +34,27 @@ Når du f.eks. konfigurerer [udenrigshandelsparametre](../../../finance/localiza
 
 Hvis den aktuelle Finance-forekomst ikke indeholder nogen Intrastat-forretningsprocesrelaterede ER-formater, er dette opslagsfelt tomt.
 
-[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Siden Udenrigshandelsparametre.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Hvis den aktuelle Finance-forekomst indeholder Intrastat-forretningsprocesrelaterede ER-formater, tilbydes ER-formater i dette opslagsfelt.
 
-[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Siden Udenrigshandelsparametre.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 Dette opslag indeholder kun de ER-formater, der allerede er importeret til den aktuelle Finance-forekomst. Hvis du vil [importere](./tasks/er-import-configuration-lifecycle-services.md) ER-løsninger til den aktuelle Finance-forekomst, skal du have rettigheder til at køre den relevante funktion i den ER-struktur, der understøtter [livscyklussen](general-electronic-reporting-manage-configuration-lifecycle.md) for ER-løsninger, der indeholder ER-formater.
 
 Fra og med Finance version 10.0.9 (april 2020 release) er brugergrænsefladen i det ER-formatopslag, der implementeres ved hjælp af API til ER-struktur, udvidet. Du kan stadig vælge de eksisterende ER-formater, som findes i oversigtspanelet **Vælg formatkonfiguration**. Derudover tilbyder det udvidede opslag den nye indstilling til søgning i den globale lagermappe (GR) for at finde bestemte ER-formater. Alle ER-formaterne for GR vises i oversigtspanelet **Indlæs fra den globale lagermappe**.
 
-[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Siden Udenrigshandelsparametre.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 Med sin lighed med oversigtspanelet **Vælg formatkonfiguration** viser oversigtspanelet **Indlæs fra den globale lagermappe** kun de ER-formater, der gælder for den forretningsproces, som et ER-format er valgt for i dette opslagsfelt. I dette eksempel er det genereringen af Intrastat-opgørelsen. Er-formatet gælder for det firma, som brugeren aktuelt er logget på, afhængigt af firmaets landekontekst.
 
 Når du vælger et ER-format i oversigtspanelet **Indlæs fra den globale lagermappe**, importeres det valgte ER-format [konfiguration](general-electronic-reporting.md#Configuration) fra GR til den aktuelle forekomst af Finance.
 
-[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Siden Udenrigshandelsparametre.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Hvis importen fuldføres korrekt, gemmes referencen til det importerede ER-format i dette opslagsfelt. Når du åbner GR første gang, skal du følge linket for at tilmelde dig den [Regulatory Configuration Service](https://aka.ms/rcs) (RCS), der bruges til at administrere adgangen til GR-lageret.
 
-[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![Siden Udenrigshandelsparametre.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Som standard viser oversigtspanelet **Indlæs fra den globale lagermappe** listen over ER-formater fra det midlertidige lager, der automatisk oprettes ud fra GR-indholdet for at forbedre ydeevnen. Dette sker, når oversigtspanelet **Indlæs fra den globale lagermappe** åbnes for første gang, hvilket kan tage et par sekunder.
 
@@ -64,7 +64,7 @@ Hvis du ikke kan se det krævede ER-format i oversigtspanelet **Indlæs fra den 
 
 Tilgængeligheden af denne funktionalitet styres af funktionen **Udvidet opslag for ER-formatkonfigurationer med mulighed for at forespørge på den globale lagermappe** i **Funktionsstyring**. Denne funktion er som standard aktiveret.
 
-[![Siden Funktionsstyring](./media/ER-ExtLookup-FeatureMngt.png)](./media/ER-ExtLookup-FeatureMngt.png)
+[![Siden Funktionsstyring.](./media/ER-ExtLookup-FeatureMngt.png)](./media/ER-ExtLookup-FeatureMngt.png)
 
 ## <a name="security-considerations"></a>Sikkerhedsovervejelser
 
@@ -72,7 +72,7 @@ Rettigheden **Vedligehold konfigurationslagre** (**ERMaintainSolutionRepositorie
 
 Følgende skærmbillede viser, hvordan denne rettighed kan tildeles til brugere, der er tildelt rollen **Bogholder**. Denne rolle gør det muligt for brugere at konfigurere udenrigshandelsparametre og oprette referencer til ER-formaterne i felterne **Filformattilknytning** og **Rapportformattilknytning** på siden **Udenrigshandelsparametre**.
 
-[![Siden Sikkerhedskonfiguration](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
+[![Siden Sikkerhedskonfiguration.](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
 
 ## <a name="limitations"></a>Begrænsninger
 

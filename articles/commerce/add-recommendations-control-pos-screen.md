@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38099909f169391c17760ac381af07f0848fc384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 219b82809087e3f5f185bc92836ca300d064fc71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797473"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348338"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Føje anbefalinger til transaktionsskærmen
 
@@ -43,7 +43,7 @@ Du kan få vist produktanbefalinger på POS-enheden, når du bruger Commerce. Fo
 6. Når du logger på, vises en side, der ligner den nedenfor. Layoutet er forskelligt, afhængigt af de tilpasninger, der er foretaget for din butik.
 
 
-    [![Layoutdesigner](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Layoutdesigner.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Vælg en visningsindstilling
 
@@ -58,11 +58,11 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 1. Reducer højden af området med detaljer for transaktionslinjer, så det har samme højde som kundepanelet til venstre.
 
 
-    [![Højden på området med transaktionslinjedetaljer er reduceret](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Højden på området med transaktionslinjedetaljer er reduceret.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. I menuen til venstre skal du trække og slippe kontrolelementet med anbefalinger til mellem området med transaktionslinjedetaljer og knapmatricen nederst i midten af transaktionsskærmbilledet. Rediger størrelsen på kontrolelementet, så det passer i det pågældende område.
 
-    [![Kontrolelement til anbefalinger er føjet til layoutet](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Kontrolelement til anbefalinger er føjet til layoutet.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Klik på **X** for at lukke og afslutte layoutdesigneren.
@@ -77,13 +77,13 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 
 2. Klik på **Tilpas**.
 
-    [![Dialogboksen Tilpasning - fanekontrolelement](./media/pic-5.png)](./media/pic-5.png)
+    [![Dialogboksen Tilpasning - fanekontrolelement.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Klik på fanen **Ny**.
 4. Find den nye fane, du lige har tilføjet. Du skal muligvis rulle ned.
 5. I rullemenuen **Indhold** skal du vælge **Anbefalede produkter**.
 
-    [![Vælge Anbefalede produkter i feltet Indhold](./media/pic-6.png)](./media/pic-6.png)
+    [![Vælge Anbefalede produkter i feltet Indhold.](./media/pic-6.png)](./media/pic-6.png)
 
 6. I feltet **Etiket** skal du angive et navn til fanen Anbefalinger. Skriv f.eks. 'Anbefalede produkter'.
 7. Vælg det billede, der skal vises på fanen, i feltet **Billede**.

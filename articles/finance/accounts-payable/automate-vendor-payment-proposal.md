@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820805"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350640"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisere kreditorbetalingsforslag
 
@@ -97,11 +97,11 @@ Det anbefales, at du vurderer, om automatiseringen vil være en fordel for din o
 
 Når automatiseringsserien for kreditorbetalingsforslag er oprettet, vises hændelserne for hver betaling i en ugentlig visning af automatiseringsprocesserne. I forbindelse med kreditorbetalinger er den ugentlige visning af procesautomatiseringer føjet til arbejdsområdet for **kreditorbetalinger** og siden **Procesautomatisering**.
 
-[![Ugentlig visning af procesautomatiseringer i arbejdsområdet kreditorbetalinger](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Ugentlig visning af procesautomatiseringer i arbejdsområdet kreditorbetalinger.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 Den ugentlige visning af procesautomatiseringer i arbejdsområdet **Kreditorbetalinger** viser kun automatisering af kreditorbetalingsforslag. Den viser alle forekomster af betalinger for den aktuelle uge for alle juridiske enheder, som den bruger, der er logget på, har sikkerhedsrettigheder til. Hvis f.eks. medarbejderen for kreditorbetalinger er ansvarlig for betalinger i USMF- og USSI-virksomhederne, vil de se forekomsterne af automatisering af kreditorbetalingsforslag for disse to virksomheder, men ikke for andre virksomheder.
 
-[![Ugentlig visning af procesautomatiseringer i USMF- og USSI-virksomheder](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Ugentlig visning af procesautomatiseringer i USMF- og USSI-virksomheder.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Hver forekomst viser den virksomhed, som betalingskladden blev eller vil blive oprettet i. Hvis betalinger oprettes ved hjælp af centraliserede betalinger, vil den virksomhed, der vises, være den virksomhed, som der oprettes betalinger i. Denne forekomst viser ikke nødvendigvis, hvilke virksomheders fakturaer der vil blive betalt.
 

@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 81cbabb2499fc0fdf3c043c9b15e4429b036e3c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027933"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352030"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversigt over sider til indkøbsvogn og betaling ved kassen
 
@@ -37,7 +38,7 @@ Indkøbsvognens side fungerer som indkøbspose og indeholder alle de varer, der 
 
 I følgende illustration vises et eksempel på en indkøbsvognside, der er oprettet ved hjælp af modulbiblioteket og temaet "Fabrikam".
 
-![Eksempel på en indkøbsvognside](./media/cart2.PNG)
+![Eksempel på en indkøbsvognside.](./media/cart2.PNG)
 
 Hovedindholdet af indkøbsvognens side viser alle de varer, som kunden har lagt i indkøbsvognen. Alle relevante rabatter fremvises. Disse rabatter omfatter komplekse rabatter. Eksemplerne omfatter "Køb 3 varer, og få 10 % rabat" eller "Køb en flaske og en rygsæk, så du får 10 % rabat". Modulet Ordreoversigt viser det beløb, der skal betales efter fradrag af rabat, forsendelse, moms og andet, der er anvendt. Der findes også et kampagnekodemodul, hvor kunden kan anvende eller fjerne kampagnekoder.
 
@@ -53,7 +54,7 @@ Siden med betaling ved kassen er det sted, hvor kunderne angiver de oplysninger,
 
 I følgende illustration vises et eksempel på en betalingsside, der er oprettet ved hjælp af modulbiblioteket.
 
-![Eksempel på en betalingsside](./media/Checkout.PNG)
+![Eksempel på en betalingsside.](./media/Checkout.PNG)
 
 Hovedindholdet af betalingssiden er det sted, hvor alle ordreoplysningerne indsamles. Disse oplysninger omfatter leveringsadresse, leveringsindstillinger og betalingsoplysninger. Betalingen er en trinvis proces, da oplysningerne skal angives i en bestemt rækkefølge for at blive behandlet. Leveringsadressen skal f.eks. angives, før der kan beregnes forsendelsesomkostninger, og betalingen kan godkendes.
 

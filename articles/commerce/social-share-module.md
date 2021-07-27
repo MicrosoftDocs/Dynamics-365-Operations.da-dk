@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: c34410a8c817de9fed350bf2cd2dd918a37c230f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0cd19f218e9fa05cd23c52fdf9bbdac6ad82a23b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795351"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357708"
 ---
 # <a name="social-share-module"></a>Modul til deling på sociale medier
 
@@ -36,11 +36,11 @@ De enkelte sociale medieplatforme kan registrere cookies, så dette modul kræve
 
 I følgende illustration fremhæves et eksempel på et modul til social deling, der bruges på en side med produktdetaljer.
 
-![Eksempel på et modul til social deling](./media/ecommerce-socialshare.png)
+![Eksempel på et modul til social deling.](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Egenskaber for modul til social deling
 
-| Egenskabsbetegnelse             | Værdi                 | Beskrivelse |
+| Egenskabsbetegnelse             | Værdi                 | Betegnelse |
 |---------------------------|-----------------------|-------------|
 | Overskrift                  | Tekst | Denne egenskab angiver en titel til modulet. |
 | Retning | **Lodret** eller **Vandret**  | Denne egenskab definerer layoutretningen for sociale mediers elementer. |

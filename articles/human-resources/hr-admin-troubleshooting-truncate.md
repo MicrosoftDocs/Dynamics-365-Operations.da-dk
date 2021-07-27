@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a03c8f340e8ebb2fb0440518c154ed3bdd0197f6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 7f735726a7e126174bc9c6a4002e421df3f21298
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053245"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360610"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Undgå afkortning af teksten i stillingshierarkiet og eksportere til Visio
 
@@ -29,7 +29,7 @@ ms.locfileid: "6053245"
 
 Når en kunde får vist stillingshierarkiet i Microsoft Dynamics 365 Human Resources, afkortes navnene på personer og stillinger. Derfor kan det være svært at tage et skærmbillede eller udskrive og distribuere hierarkiet.
 
-![Stillingshierarki](media/position-h.png)
+![Stillingshierarki.](media/position-h.png)
 
 **Årsag**
 
@@ -47,48 +47,48 @@ Følg disse trin for at eksportere til Visio.
 
 2. I handlingsruden skal du vælge knappen **Åbn i Microsoft Office**, og derefter skal du under **Eksportér til Excel** vælge **Stillinger**. Du kan også trykke på Ctrl + T.
 
-    ![Eksportere listesiden Stillinger til Excel](media/org-admin.png)
+    ![Eksportere listesiden Stillinger til Excel.](media/org-admin.png)
 
 3. Gem Excel-filen, der eksporteres.
 
-    ![Dialogboksen Eksportér til Excel](media/export-excel.png)
+    ![Dialogboksen Eksportér til Excel.](media/export-excel.png)
 
 4. I Visio skal du vælge **Visio - Opret ny** og vælge skabelonkategorien **Forretning**.
 
-    ![Nyt diagram](media/new.png)
+    ![Nyt diagram.](media/new.png)
 
 5. Vælg **Guiden Organisationsdiagram**, og vælg derefter **Opret**.
 
-    ![Dialogboksen Guiden Organisationsdiagram](media/orgchart-wizard.png)
+    ![Dialogboksen Guiden Organisationsdiagram.](media/orgchart-wizard.png)
 
 6. Vælg **Oplysninger, der allerede er gemt i en fil eller database**, og vælg derefter **Næste**.
 
-    ![Guiden Organisationsdiagram 1](media/orgchart-wizard7.png)
+    ![Guiden Organisationsdiagram 1.](media/orgchart-wizard7.png)
 
 7. Vælg **En tekstfil, Org Plus (\*.txt) eller en Excel-fil**, og vælg derefter **Næste**.
 
-    ![Guiden Organisationsdiagram 2](media/orgchart-wizard3.png)
+    ![Guiden Organisationsdiagram 2.](media/orgchart-wizard3.png)
 
 8. Gennemse for at vælge den eksporterede Excel-fil, der indeholder stillingshierarkiet, og vælg derefter **Næste**.
 
-    ![Guiden Organisationsdiagram 3](media/orgchart-wizard2.png)
+    ![Guiden Organisationsdiagram 3.](media/orgchart-wizard2.png)
 
 9. Indstil feltet **Navn** til **Stilling**, indstil feltet **Rapportér til** til **Rapporterer til stilling**, og vælg derefter **Næste**.
 
-    ![Guiden Organisationsdiagram 4](media/orgchart-wizard1.png)
+    ![Guiden Organisationsdiagram 4.](media/orgchart-wizard1.png)
 
 10. Vælg de felter, der skal vises på hver node, og vælg derefter **Næste**.
 
-    ![Guiden Organisationsdiagram 5](media/orgchart-wizard5.png)
+    ![Guiden Organisationsdiagram 5.](media/orgchart-wizard5.png)
 
 11. Føj kolonnen **Stilling** til listen **Figurdatafelter**, og vælg derefter **Næste**.
 
-    ![Guiden Organisationsdiagram 6](media/orgchart-wizard6.png)
+    ![Guiden Organisationsdiagram 6.](media/orgchart-wizard6.png)
 
 12. Der er ingen tilgængelige billeder i øjeblikket. Vælg derfor **Næste** på den næste side.
 13. Vælg **Guiden skal automatisk opdele organisationsdiagrammet på tværs af sider**.
 
-    ![Guiden Organisationsdiagram 7](media/orgchart-wizard4.png)
+    ![Guiden Organisationsdiagram 7.](media/orgchart-wizard4.png)
 
 14. Vælg **Udfør**.
 
@@ -98,7 +98,7 @@ Det diagram, der er oprettet i Visio, viser hver enkelt leder i et separat regne
 
 Baseret på de felter, du har valgt at medtage i diagrammet, viser hver node de relevante oplysninger, når Visio-filen genereres.
 
-![Hierarkidiagram](media/hierarchy.png)
+![Hierarkidiagram.](media/hierarchy.png)
 
 **Flere indstillinger**
 

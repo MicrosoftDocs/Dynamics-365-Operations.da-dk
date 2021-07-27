@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41313dd1fde51cb84bc971bb7bb98841222259b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce10817d677f7e48194272b5ebb91b95d657441f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754820"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360275"
 ---
 # <a name="action-search"></a>Handlingssøgning
 
@@ -31,7 +31,7 @@ I denne artikel beskrives handlingssøgningsfunktionen. Med handlingssøgning ka
 
 Sider viser primært kommandoer i handlingsruder, både standardhandlingsruden, som vises øverst på en side, og værktøjslinjerne, der vises i forskellige afsnit på siden. I tidligere versioner kan du med en nøgletipfunktion hurtigt få adgang til en knap i en handlingsrude ved at trykke på Alt-tasten og derefter en række bogstaver.
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6.](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 De vigtigste tip er ikke længere tilgængelige, men er blevet erstattet af handlingssøgefunktionen. Med denne nye funktion kan du hurtigt søge efter og køre en knap fra alle synlige handlingsruder.
 
@@ -45,7 +45,7 @@ Hvis du vil bruge handlingssøgefunktionen, skal du følge disse trin.
 
 Når knappen er kørt, returneres fokus til din sidste position på siden, så du kan fortsætte med at arbejde.
 
-[![action-search-field](./media/action-search-field.png)](./media/action-search-field.png)
+[![action-search-field.](./media/action-search-field.png)](./media/action-search-field.png)
 
 Du kan også starte handlingssøgning ved at trykke på Ctrl+/ eller Alt+Q. Tryk på tastaturgenvejen igen for at returnere fokus til din sidste position på siden.
 
@@ -61,11 +61,11 @@ Ofte skal du kende både placeringen af en knap og dens sammenhæng for fuldt ud
 
 Du har for eksempel indtastet **tot** i feltet **handlingssøgning** og er nu at undersøge listen over resultater. Den første post for en knap, der hedder **Totaler**, er fremhævet. Også knapstien **Salgsordre** &gt; **Vis** vises. **Salgsordredelen** af stien svarer til fanen **Salgsordre** fane i handlingsruden, og **visningsdelen** af stien svarer til gruppen **Visning** under denne fane. På samme måde fortæller stien til knappen **Slutrabat** (**Sælg** &gt; **Beregn**) dig, at denne knap er placeret i gruppen **Beregn** under fanen **Sælg** i handlingsruden. Derfor hjælper disse oplysninger dig til at forstå, nøjagtigt hvilken knap der udløses af handlingssøgningen (hvis du vælger denne knap på resultatlisten).
 
-[![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![action-search-field-with-data.](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 I det forrige eksempel viste handlingssøgning resultater fra standardhandlingsruden øverst på en side. Handlingssøgning viser også resultaterne fra synlige værktøjslinjer, der er placeret andre steder på siden. For eksempel søger du efter knappen **Disponibel lagerbeholdning**, der er placeret i oversigtspanelet **Salgsordrelinjer**. I dette tilfælde fortæller knapstien i resultatlisten (**Salgsordrelinjer** &gt; **Lager** &gt; **Vis**) dig, at knappen er placeret under overskriften **Vis** på menuknappen **Lager** i oversigtspanelet **Salgsordrelinjer**.
 
-[![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![on-hand-inventory.](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > Der er nogle knapper, der ikke vises i søgningen Handling. Disse omfatter knapper til at slette dialogbokse og knapper fra underformularer. 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8b147c27b9309b1b3597f1194c415fbb2e2b7ad2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750806"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355292"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarki i Dataverse
 
@@ -37,7 +37,7 @@ Selvom Dataverse ikke har konceptet med et organisationshierarki, har det et par
 
 Et virksomhedsøkosystem, der består af Finance and Operations-apps og Dataverse, vil fortsat have et organisationshierarki. Dette organisationshierarki er baseret på Finance and Operations-apps, men det vises i Dataverse til informations- og udvidelsesformål. I følgende illustration vises de oplysninger om organisationshierarkiet, der vises i Dataverse som envejs dataflow fra Finance and Operations-apps til Dataverse.
 
-![Billede af arkitektur](media/dual-write-data-flow.png)
+![Billede af arkitektur.](media/dual-write-data-flow.png)
 
 Organisationshierarkiets tabeltilknytninger er tilgængelige for envejssynkronisering af data fra Finance and Operations-apps til Dataverse.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 90622bb8fb6452e4b4002fa5aab491112e98d923
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193744"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345806"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -60,7 +60,7 @@ For at kunne vises på regnskaberne og få at kunne inkluderes i forskellige and
 ## <a name="entity-store"></a>Enhedslager
 Dataene til **Økonomisk analyse** trækkes fra enhedslageret (**Systemadministration** \> **Konfiguration** \> **Enhedslager**). Hvis du åbner arbejdsområdet **Regnskabsdirektørens oversigt** eller **Økonomisk analyse**, og følgende advarsel vises i de visuelle elementer, skal du opdatere enhederne.
 
-![Advarsel!](./media/Cantdisplay.png)
+![Advarsel.](./media/Cantdisplay.png)
 
 Du skal opdatere følgende enheder for at se data i arbejdsområdet **Økonomisk analyse**:
 
@@ -124,7 +124,7 @@ Brugere kan filtrere rapporten ved hjælp af ruden **Filter** til venstre. Denne
 - **Filtre på visuelt niveau** – Disse filtre anvendes kun på det valgte visuelle element. Disse filtre anvendes oven på filtrene på sideniveau.
 - **Detaljeadgangsfilter** – Dette filter filtrerer fra et visuelt "kilde"-element, som er tilknyttet det aktuelle visuelle element, når du foretager detaljeadgang fra det visuelle kildeelement til det aktuelle visuelle element.
 
-![Filtreringsindstillinger](./media/filter.png)
+![Filtreringsindstillinger.](./media/filter.png)
 
 Vælg viskelædersymbolet ud for den for at fjerne en bestemt værdi. Fjern ikke et filter ved at vælge X. Hvis du vælger X, fjernes det felt, du filtrerer på, som en filtreringsindstilling. Hvis du ved et uheld fjerner et felt fra filteret, skal du lukke arbejdsområdet, og derefter åbne det igen. Standardindstillingerne for filter anvendes igen.
 
@@ -169,25 +169,25 @@ Forskellige niveauer af detailudledning er tilgængelig via Power BI. Hvert nive
 
 I følgende illustration er regnskabet **Råbalance** skjult i det højeste niveau i rækkehierarkiet, hovedkontotypen.
 
-![Råbalanceregnskab](./media/trial-balance.png)
+![Råbalanceregnskab.](./media/trial-balance.png)
 
 For at få vist næste niveau i hierarkiet, hovedkontokategorierne, kan du angive feltet **Detailudledning** til **Rækker** og derefter vælge knappen **Udvid** knap (den tredje knap efter feltet Detailudledning). Du kan nu se alle hovedkontokategorierne udvidet. I øjeblikket giver Power BI dig ikke mulighed for kun at udvide én række eller kolonne, men stadig se alle de andre rækker eller kolonner.
 
-![Råbalance i detaljer på rækker](./media/trial-balance2.png)
+![Råbalance i detaljer på rækker.](./media/trial-balance2.png)
 
 For at udvide til hovedkontiene for alle rækker, kan du igen bruge knappen **Udvid**. Men hvis du vil foretage detailudledning til hovedkontiene for kun én række, skal du først markere knappen **Detailudledning** (den enkelte nedadgående pil i højre side af vinduet), og derefter vælge rækken, der skal foretages detailudledning for. I følgende illustration vises resultatet, når rækken **Salg** er markeret, efter at knappen **Detailudledning** er valgt.
 
-![Knappen til udvidelse af råbalance](./media/trial-balance3.png)
+![Knappen til udvidelse af råbalance.](./media/trial-balance3.png)
 
 Når du ruller ned på en enkelt række, kræves flere klik for at vende tilbage til den fulde råbalance. Knappen **Rul op** (den første knap efter **Detailudledning** på feltet) ruller kun op i forbindelse med kategorien **Salg**, som vist i følgende illustration.
 
-![Knappen til oprulning af råbalance](./media/trial-balance4.png)
+![Knappen til oprulning af råbalance.](./media/trial-balance4.png)
 
 Du kan fortsat bruge knappen **Rul op** for at vende tilbage til det højeste niveau af opsummering for rækkerne.
 
 Power BI har også en knap, hvor du kan gå til næste niveau i hierarkiet (den anden knap efter feltet **Detailudledning**). Virkningen af denne knap adskiller sig fra resultatet af knappen **Udvid** (den tredje knap efter feltet **Detailudledning**), som bruges til at udvide hierarkiet. Når du udvider hierarkiet, bevares hierarkiet i rapporten. Som det for eksempel blev vist tidligere, hvis du udvider på hovedkontotypen, kan du stadig se hovedkontotypen på rapporten. Men når du går videre til næste niveau i hierarkiet, viser rapporten ikke længere det overordnede element i hierarkiet, som vist i følgende illustration.
 
-![Knappen til tilbagerulning af råbalance](./media/trial-balance5.png)
+![Knappen til tilbagerulning af råbalance.](./media/trial-balance5.png)
 
 For at få vist posteringsoplysningerne bag de opsummerede saldi, kan du vælge nogle beløb, der skal rulle tilbage i Financial and Operations.
 
@@ -226,7 +226,7 @@ I øjeblikket understøtter regnskabet ikke organisationshierarkier, så du kan 
 ## <a name="data-limitations"></a>Databegrænsninger
 Visuelle elementer til regnskab har en begrænsning på antallet af rækker, der kan vises. I øjeblikket er grænsen angivet til 30.000. Hvis du overskrider denne grænse, får de visuelle elementer et advarselssymbol, for at fortælle dig om denne situation.
 
-![Databegrænsninger](./media/data-limit.png)
+![Databegrænsninger.](./media/data-limit.png)
 
 Hvis det maksimale antal overskrides, vil totaler, der vises på regnskabet, være forkerte, fordi ikke alle rækker blev indlæst i det visuelle element.
 

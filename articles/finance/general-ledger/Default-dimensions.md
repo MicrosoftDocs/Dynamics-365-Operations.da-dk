@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3b042374179de7aa5bbff73719cbe8546920132e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897302"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360682"
 ---
 # <a name="financial-dimensions-and-posting"></a>Økonomiske dimensioner og bogføring 
 
@@ -71,29 +71,29 @@ Brugere har ofte spørgsmål om den rækkefølge, de forskellige komponenter kø
 
 I følgende illustration vises den faste standarddimension, der er angivet for hovedkontoen 401100.
 
-[![Økonomiske standarddimensioner](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Økonomiske standarddimensioner.](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 I dette meget grundlæggende eksempel vil vi angive en finanskladde, hvor afdelingsdimensionen er indstillet til at bruge standardværdien **023** (Operations). Vi vil angive og bogføre en finanskonto. I følgende illustration vises den økonomiske standarddimension i finansbogholderihovedet.
 
-[![Finanskladder](./media/general-journal.png)](./media/general-journal.png)
+[![Finanskladder.](./media/general-journal.png)](./media/general-journal.png)
 
 Standarddimensionen i kladdehovedet medfører, at afdeling 023 skal anvendes som standard i salgskontolinjen. I følgende illustration vises den finanskladdelinje, hvor standarddimensionsværdien **023** fra hovedet anvendes.
 
-[![Kladdebilag](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Kladdebilag.](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Når linjen bogføres, anvendes den faste dimension dog, og linjen bogføres til afdeling 022. I følgende illustration vises det bogførte bilag, hvor den faste dimension anvendes for salgskontoen.
 
-[![Bilagstransaktioner med fast dimension anvendt](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Bilagstransaktioner med fast dimension anvendt.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
 I dette eksempel bruges samme opsætning som i det første eksempel. Vi vil dog tilføje endnu en komponent og bruge afdelingsdimensionen som en udligningsdimension. I følgende illustration er **Afdeling** angivet som den økonomiske udligningsdimension for USMF-finans.
 
-[![Illustration, der viser afdeling som økonomisk udligningsdimension](./media/ledger.png)](./media/ledger.png)
+[![Illustration, der viser afdeling som økonomisk udligningsdimension.](./media/ledger.png)](./media/ledger.png)
 
 Når der bruges samme kladdehovedopsætning, og den samme postering bogføres, anvendes den faste dimension først. Derefter anvendes udligningslogikken for at hjælpe med at sikre, at hver afdeling har en udlignet post. I følgende illustration vises bilagsposteringer, der omfatter modposten, når den faste dimension anvendes.
 
-[![Bilagstransaktioner efter anvendelse af udligningsposten](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Bilagstransaktioner efter anvendelse af udligningsposten.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Eksempel 3
 
@@ -101,11 +101,11 @@ I dette eksempel vil vi tilføje en avanceret regel. Den avancerede regel angive
 
 Dette eksempel er vigtigt på grund af rækkefølgen. Kontostrukturen bestemmes, når hovedkontoen er angivet. Hvis du refererer til kontostrukturopsætningen, kan systemet bestemme, at hovedkontoen, afdelingen og bæreren er relevante. På dette tidspunkt er den avancerede regel ikke blevet udløst, fordi faste dimensioner ikke anvendes, før der er anvendt standarddimensioner for kladdebilaget under bogføringen. I følgende illustration er debitorsegmentet ikke angivet, fordi kriterierne for den avancerede regel ikke er opfyldt.
 
-[![Finanskonto](./media/drop-down.png)](./media/drop-down.png)
+[![Finanskonto.](./media/drop-down.png)](./media/drop-down.png)
 
 Bogføringen kan ikke udføres, fordi den faste dimension blev anvendt sidst i processen. Validering af dimension bestemmer, at debitorsegmentet kræves, hvis hovedkontoen er 401100 og afdelingen er 022. Bogføring kan ikke udføres på grund af valideringsfejlen. I følgende illustration kan du se den meddelelse, der vises, når dimensionsvalideringen bestemmer, at debitoren er et påkrævet segment.
 
-[![Meddelelsesdetaljer](./media/message.png)](./media/message.png)
+[![Meddelelsesdetaljer.](./media/message.png)](./media/message.png)
 
 I dette eksempel skal du overskrive standardværdien, så den avancerede regel udløses, og du kan angive debitorsegmentet. Men denne løsning er ikke altid mulig, og nogle brugere er desuden ikke opmærksomme på reglerne for bogføring. Det er derfor vigtigt, at du forstår den rækkefølge standarddimensioner anvendes i, når du konfigurerer din kontoplan.
 

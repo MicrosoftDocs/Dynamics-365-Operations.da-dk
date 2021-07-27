@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188928"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350492"
 ---
 # <a name="routes-and-operations"></a>Ruter og operationer
 
@@ -45,7 +45,7 @@ En rute beskriver rækkefølgen af operationer, der bruges for at producere et p
 
 En simpel rute er sekventiel, og der er kun et udgangspunkt for ruten.  
 
-[![Simpel rute](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Simpel rute.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Hvis du kun aktiverer simple ruter i produktionsstyringsparametrene, genererer Supply Chain Management automatisk operationsnumrene (10, 20, 30 og så videre), når du definerer ruten.
 
@@ -53,7 +53,7 @@ Hvis du kun aktiverer simple ruter i produktionsstyringsparametrene, genererer S
 
 Hvis du aktiverer de mere komplekse rutenetværk i produktionsstyringsparametrene, kan du definere ruter, der har flere startpunkter og operationer, der kan køres parallelt.  
 
-[![Rutenetværk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Rutenetværk.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Hver operation kan kun have en efterfølgende operation, og hele ruten skal afsluttes med en fælles operation.
@@ -64,7 +64,7 @@ Hvis du aktiverer de mere komplekse rutenetværk i produktionsstyringsparametren
 
 Nogle gange kræves en kombination af flere operationsressourcer, der har forskellige egenskaber, for at udføre en operation. For eksempel kan en samleoperation kræve en maskine, et værktøj og en arbejder for hver to maskiner til at overvåge driften. I dette eksempel kan dannes ved hjælp af parallelle operationer, hvor en operation er angivet som den primære operation, og de andre er sekundære.  
 
-[![Rute, der har primære og sekundære operationer](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Rute, der har primære og sekundære operationer.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Den primære operation repræsenterer typisk flaskehalsressourcen og bestemmer operationstiden for de sekundære operationer. Men under planlægning, der involverer kapacitetsbegrænsning, skal de ressourcer, der er planlagt for både den primære operation og de sekundære operationer, være tilgængelige og have ledig kapacitet på samme tid.  
 

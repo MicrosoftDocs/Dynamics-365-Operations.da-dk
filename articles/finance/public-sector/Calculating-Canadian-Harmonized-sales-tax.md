@@ -17,12 +17,12 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2020-4-01
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 30d13091279e4a7be06c494eb393793166acd2ee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e8ed193b68255bc459d5e32c5a538309feb278f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809910"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357375"
 ---
 # <a name="calculating-canadian-harmonized-sales-tax"></a>Beregning af canadisk harmoniseret moms
 
@@ -72,7 +72,7 @@ Når du har defineret dimensionerne for HST, skal du konfigurere de finansdimens
 
 Den rækkefølge, som reglerne anvendes i, er noget kompleks. Følgende grafik viser princippet:
 
-> [![Definere HST-regler](./media/define-hst-rules.png)](./media/define-hst-rules.png)
+> [![Definere HST-regler.](./media/define-hst-rules.png)](./media/define-hst-rules.png)
 
 De momskoder, der er valgt for dimensionslinjen, er som følger, hvis posteringen bruger en momsgruppe og varemomsgruppe med alle de momskoder, der er medtaget.
 

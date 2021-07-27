@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9428eda880d534c700646b52310c6b8befdebaf2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804399"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353798"
 ---
 # <a name="pickup-information-module"></a>Modul til afhentningsoplysninger
 
@@ -40,7 +40,7 @@ Hvis der er valgt flere varer til afhentning på tværs af flere butikker, vil b
 
 I følgende illustration vises et eksempel på valg af tidsinterval via modulet med afhentningsoplysninger på en betalingsside.
 
-![Eksempel på et afhentningsoplysningsmodul på en betalingsside](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Eksempel på et afhentningsoplysningsmodul på en betalingsside.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaber
 
@@ -56,11 +56,11 @@ Du kan få flere oplysninger om, hvordan du føjer et afhentningsoplysningsmodul
 
 I følgende illustration vises et eksempel på en e-handelsbetalingside, der indeholder tidsintervaller for afhentningslinjevarer.
 
-![Eksempel på en e-handelsbetalingsside, der indeholder tidsintervaller for afhentningslinjevarer](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Eksempel på en e-handelsbetalingsside, der indeholder tidsintervaller for linjevarer til afhentning.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oprette og opdatere tidsintervaller for kundeafhentning](dev-itpro/pickup-timeslots.md)
+[Oprette og opdatere tidsrubrikker for kundeafhentning](dev-itpro/pickup-timeslots.md)
 
 [Betalingsmodul](add-checkout-module.md)
 

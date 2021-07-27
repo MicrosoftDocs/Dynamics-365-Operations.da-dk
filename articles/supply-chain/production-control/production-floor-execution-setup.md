@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3ee7f0af9f390e1dceac9dc49ae2b7f5fa7fbea8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a5911e81547134d3034d1a47ef94c553ccbb331
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814700"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353958"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurere en enhed til at køre grænsefladen på produktionsudstyr
 
@@ -70,7 +70,7 @@ Ofte vil du køre grænsefladen til kørsel af produktionsudstyr på en enhed, d
 
 Den øverste del af nedenstående illustration viser, hvordan grænsefladen ser ud som standard. Den nederste del viser, hvordan den ser ud i fuldskærmstilstand, når navigationsruden er skjult.
 
-![Standardgrænseflade i forhold til fuldskærmsgrænseflade](media/pfei-full-screen.png "Standardgrænseflade i forhold til fuldskærmsgrænseflade")
+![Standardgrænseflade i forhold til fuldskærmsgrænseflade.](media/pfei-full-screen.png "Standardgrænseflade i forhold til fuldskærmsgrænseflade")
 
 ## <a name="extend-the-session-past-12-hours"></a>Udvide sessionen ud over de seneste 12 timer
 

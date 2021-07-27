@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936774"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349644"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfigurere brugerdefinerede sider til brugerlogon
 
@@ -40,7 +40,7 @@ De brugerdefinerede Commerce-sider kan opbygges ved hjælp af modulet til logon,
 
 Når du har konfigureret din Azure AD B2C-lejer og har knyttet den til Commerce-miljøet, skal du gå siden **Azure AD B2C** i Azure-portalen og derefter vælge **Brugerstrømme (politikker)** i menuen under **Politikker**.
 
-![Kommandoen Brugerstrømme (politikker) i menuen](./media/B2C_CustomPage_PoliciesMenu.png)
+![Kommandoen Brugerstrømme (politikker) i menuen.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 Du kan nu konfigurere brugerlogonstrømmene "Tilmelding og logon", "Profilredigering" og "Nulstilling af adgangskode".
 
@@ -54,13 +54,13 @@ For at konfigurere politikken "Tilmelding og logon" skal du udføre følgende tr
 1. I kolonnen **Indsaml attribut** skal du markere afkrydsningsfelterne for **E-mailadresse**, **Tildelt navn** og **Efternavn**.
 1. I kolonnen **Returkrav** skal du markere afkrydsningsfelterne **E-mailadresser**, **Tildelt navn**, **Identitetsudbyder**, **Efternavn** og **Brugerens objekt-id**.
 
-    ![Valgte attributter og krav](./media/B2C_SignInSignUp_Attributes.png)
+    ![Valgte attributter og krav.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Vælg **OK** for at oprette politikken.
 1. Dobbeltklik på navnet på den nye politik, og vælg derefter **Egenskaber** i navigationsruden.
 1. Vælg **Til** i indstillingen **Aktivér JavaScript-valg af sidelayout (eksempel)**.
 
-    ![Siden Egenskaber for den nye politik](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Siden Egenskaber for den nye politik.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > Der bliver refereret til hele politiknavnet i Commerce-miljøet. (**B2C\_1\_**-præfikset bliver medtaget i referencen). Politikker kan ikke omdøbes, når de først er oprettet. Hvis du erstatter en eksisterende politik for Commerce-miljøet, kan du slette den oprindelige politik og oprette en ny politik med samme navn. Hvis miljøet allerede er blevet klargjort, kan du også sende det nye politiknavn via en serviceanmodning.
@@ -150,7 +150,7 @@ Følg disse trin for at opdatere politikken "Tilmelding og logon" med oplysninge
     1. Vælg **Nej** i kolonnen **Valgfri** for attributterne **Mailadresse**, **Fornavn** og **Efternavn**.
 1. Vælg **Gem**.
 
-    ![Konfiguration af politikken for tilmeldingssiden til en lokal konto](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![Konfiguration af politikken for tilmeldingssiden til en lokal konto.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>Opdatere politikken "Profilredigering" med oplysninger om brugerdefinerede sider
 
@@ -188,11 +188,11 @@ I modulbiblioteket er logonmoduler udfyldt på forhånd med standardtekststrenge
 
 Standardteksten for linket til den glemte adgangskode er f.eks. **Har du glemt adgangskoden?**. I det følgende vises denne standardtekst på logonsiden.
 
-![Standardtekst for linket til glemt adgangskode på logonsiden](./media/B2C_SignUp_ModuleFace.png)
+![Standardtekst for linket til glemt adgangskode på logonsiden.](./media/B2C_SignUp_ModuleFace.png)
 
 Du kan dog redigere teksten til **Har du glemt adgangskoden?** i filen global.json til modulbibliotekets logonmodul, som vist i følgende illustration.
 
-![Linkteksten opdateret i logonmodulets global.json-fil](./media/B2C_CustomizingStringsForModule.png)
+![Linkteksten opdateret i logonmodulets global.json-fil.](./media/B2C_CustomizingStringsForModule.png)
 
 Når du har opdateret global.json-filen og publiceret dine ændringer, vises den nye linktekst i logonmodulet i både Commerce og på den direkte logonside.
 

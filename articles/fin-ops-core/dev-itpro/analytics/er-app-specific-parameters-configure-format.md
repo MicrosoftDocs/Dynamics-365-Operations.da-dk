@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0af3e1d589fd99cc722d8aedeb9596388a9e2e8c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 629662d274d88d59c9b73a9d6b0d5c178331fe73
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018280"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351908"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurer ER-formater for at bruge de parametre, der er angivet for den enkelte juridiske enhed
 
@@ -78,17 +78,17 @@ I dette eksempel skal du oprette en konfiguration til eksempelfirmaet Litware, I
 
     ER-formatet **Format til at lære parametriserede opkald** er designet, så der oprettes en momsangivelse i XML-format, der indeholder flere momsniveauer (almindelig, reduceret og ingen). Hvert niveau har et forskelligt antal detaljer.
 
-    ![Flere niveauer i ER-format. Format til at lære parameteriserede kald](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Flere niveauer i ER-format. Format til at lære parameteriserede kald.](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  På fanen **Tilknytning** skal du udvide objekterne **Model**, **Data** og **Opsummering**.
 
     Datakilden **Model.Data.Opsummering** returnerer listen over momstransaktioner. Disse transaktioner opsummeres efter momskode. For denne datakilde er det beregnede felt **Model.Data.Opsummering.Niveau** konfigureret til at returnere koden for momsniveauet for hver opsummeret post. For alle momskoder, der kan hentes fra datakilden **Model.Data.Opsummering.Niveau** på kørselstidspunktet, returneres koden for momsniveau (**Almindelig**, **Reduceret**, **Ingen** eller **Andre**) som en tekstværdi. Det beregnede felt **Model.Data.Opsummering** bruges til at filtrere poster for datakilden **Model. Data.Opsummering** og angiver de filtrerede data i hvert XML-element, der repræsenterer et beskatningsniveau, ved hjælp af felterne **Model.Data2.Niveau1**, **Model.Data2.Niveau2** og **Model.Data2.Niveau3**.
 
-    ![Datakilden Model.Data.Opsummering med liste over momstransaktioner](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Datakilden Model.Data.Opsummering med liste over momstransaktioner.](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     Det beregnede felt **Model.Data.Opsummering** er konfigureret, så det indeholder et ET-udtryk. Momskoderne (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** og **InVAT0**) er hardcoded ind i denne konfiguration. Derfor er dette ER-format afhængigt af den juridiske enhed, hvor disse momskoder er blevet konfigureret.
 
-    ![Det beregnede felt Model.Data.Opsummering.Niveau med hardcodede momskoder](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Det beregnede felt Model.Data.Opsummering.Niveau med hardcodede momskoder.](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Hvis du vil understøtte forskellige sæt momskoder for hver juridisk enhed, skal du følge disse trin:
 
@@ -128,7 +128,7 @@ Derefter skal du tilføje et nyt ER-fasttekstformat. Værdierne i dette fastteks
 12. Vælg **Tilføj** igen.
 13. I feltet **Navn** skal du skrive **Andet**.
 
-    ![Ny post på siden Formatfasttekster](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Ny post på siden Formatfasttekster.](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Da erhvervsbrugere kan bruge forskellige sprog til at angive juridisk enheds-afhængige sæt momskoder, anbefales det, at du oversætter værdierne i denne optælling til de sprog, der er konfigureret som de foretrukne sprog for disse brugere i Finance.
 
@@ -141,7 +141,7 @@ Derefter skal du tilføje et nyt ER-fasttekstformat. Værdierne i dette fastteks
 20. I feltet **Oversat tekst** skal du indtaste **keine Besteuerung**.
 21. Vælg **Oversæt**.
 
-    ![Tekstoversættelses-slide-out](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Tekstoversættelses-slide-out.](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. Vælg **Gem**.
 23. Luk siden **Fasttekstformat**.
@@ -168,13 +168,13 @@ Derefter skal du tilføje en ny datakilde for at angive, hvordan erhvervsbrugere
 10. Vælg elementet varen **Model.Data.Moms.Code**.
 11. Klik på knappen **Tilføj** (pilen til højre).
 
-    ![Kolonner-slide-out](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Kolonner-slide-out.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Du har netop angivet, at for hver regel, der er angivet i denne datakilde for genkendelse af beskatningsniveau, skal en erhvervsbruger vælge en af momskoderne som en betingelse. Den liste over momskoder, som erhvervsbrugeren kan vælge, vil blive returneret af datakilden **Model.Data.Moms**. Da denne datakilde indeholder feltet **Navn**, vises navnet på momskoden for hver momskodeværdi i det opslag, der vises for erhvervsbrugeren.
     
 12. Vælg **OK**.
 
-    ![Opslagsdesignerside](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Opslagsdesignerside.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Erhvervsbrugere kan tilføje flere regler som poster i denne datakilde. Hver post nummereres af en stregkode. Reglerne evalueres i rækkefølge efter stigende linjenummer.
 
@@ -188,13 +188,13 @@ Derefter skal du tilføje en ny datakilde for at angive, hvordan erhvervsbrugere
 
     Bemærk, at du har tilføjet en ny datakilde, der returnerer beskatningsniveauet, som værdi i fasttekstformatet **Liste over beskatningsniveauværdier**, som videregives til datakilden som argument for parametret **Kode** i datatypen **Streng**.
     
-    ![Formatdesignerside med ny datakilde](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Formatdesignerside med ny datakilde.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     Evalueringen af konfigurerede regler afhænger af datatypen for de felter, der er valgt til at skulle definere betingelserne for disse regler. Når du vælger et felt, der er konfigureret som et felt af datatypen **Numerisk** eller **data**, vil kriterierne være forskellige fra de kriterier, der blev beskrevet tidligere for datatypen **Streng**. I felterne **Numerisk** og **Dato** skal reglen angives som et værdiinterval. Reglens betingelse betragtes derefter som opfyldt, når en værdi, der overføres til datakilden, ligger inden for det konfigurerede interval.
     
     I følgende illustration vises et eksempel på denne type opsætning. Ud over feltet **Model.Data.Moms.Kode** af datatypen **Streng** er det feltet **Model.Moms.Opsummering.Grundlag** for datatypen **Reel**, der bruges til at angive betingelser for en opslagsdatakilde.
     
-    ![Opslagsdesignerside med flere kolonner](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Opslagsdesignerside med flere kolonner.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Da felterne **Model.Data.Moms.Kode** og **Model.Moms.Opsummering.Grundlag** er markeret for denne opslagsdatakilde, konfigureres hver enkelt regel i denne datakilde på følgende måde:
     
@@ -223,7 +223,7 @@ Da erhvervsbrugere kan bruge forskellige sprog til at angive juridisk enheds-afh
 9.  Vælg **Oversæt**.
 10. Vælg **OK**.
 
-    ![Datakildeegenskaber-slide-out](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Datakildeegenskaber-slide-out.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Tilføje et nyt felt som skal bruge det konfigurerede opslag
 
@@ -236,12 +236,12 @@ Da erhvervsbrugere kan bruge forskellige sprog til at angive juridisk enheds-afh
 7.  I **Formelfeltet** skal du angive **Model.Vælger (Model.Data.Opsummering.Kode)**.
 8.  Vælg **Gem**.
 
-    ![Tilføjelse af Model.Vælger(Model.Data.Opsummering.Kode) til formeldesignersiden](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Tilføjelse af Model.Vælger(Model.Data.Opsummering.Kode) til formeldesignersiden.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Luk siden **Formeleditor**.
 10. Vælg **OK**.
 
-    ![Formatdesignerside med ny formel tilføjet](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Formatdesignerside med ny formel tilføjet.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Bemærk, at det beregnede felt **NiveauViaOpslag**, som du har tilføjet, returnerer beskatningsniveauet som værdien fasttekstformatet **Liste over beskatningsniveauer** for hver enkelt opsummeret momstransaktionspost. Postens momskode overføres til opslagsdatakilden **Model.Vælger**, og regelsættet for denne datakilde vil blive brugt til at vælge det korrekte beskatningsniveau.
 
@@ -269,7 +269,7 @@ Derefter skal du redigere det eksisterende beregnede felt, så det bruger den ko
 
 4.  I feltet **Formel** skal du skrive **SAG(@.NiveauViaOpslag, Beskatningsniveau.'Almindelig beskatning', "Almindelig", Beskatningsniveau.'Reduceret beskatning', "Reduceret", Beskatningsniveau.'Ingen beskatning', "Ingen", "Andet")**.
 
-    ![Side med ER-operationsdesigner](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
+    ![Side med ER-operationsdesigner.](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
     Bemærk, at udtrykket i feltet **Model.Data.Opsummering.Niveau** returnerer nu beskatningsniveauet baseret på momskoden for den aktuelle post og det sæt regler, som en erhvervsbruger konfigurerer i opslagsdatakilden **Model.Data.Vælger**.
     

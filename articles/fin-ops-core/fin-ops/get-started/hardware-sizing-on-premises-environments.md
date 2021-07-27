@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
-ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
+ms.openlocfilehash: 460297651f2766f96c34b258edbe94a7114ee090
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6168723"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343952"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til tilpasning af hardware til lokale miljøer
 
@@ -36,7 +36,7 @@ Når du har gennemgået dokumentationen, kan du begynde at vurdere dit antal af 
 
 Alle faktorer, der er vist i følgende illustration, skal tages i betragtning, når du vurderer hardwarens størrelse eller kapacitet. Jo mere detaljerede oplysninger, der indsamles, desto mere præcist kan du bestemme størrelsen. Hvis du vurderer hardwarestørrelsen uden understøttende data, bliver resultatet næppe nøjagtigt. Det absolutte minimumkrav for de nødvendige data er spidsbelastningen pr. transaktionslinje pr. time.
 
-[![Tilpasning af hardware til lokale miljøer](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Tilpasning af hardware til lokale miljøer.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Set fra venstre mod højre er den første og vigtigste faktor, der er nødvendig for at anslå den korrekte størrelse, er en transaktionsprofil eller transaktionsbeskrivelse. Det er vigtigt altid at finde spidsbelastningen for transaktionsvolumen pr. time. Hvis der er flere perioder med spidsbelastning, skal disse perioder defineres korrekt.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: a2bc5aa1080709931b3aa71c548a7bf2fb9b1192
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188069"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354287"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
 
@@ -62,21 +62,21 @@ Husk følgende oplysninger på, uanset om du skal oprette en ny opgave eller bas
 
 Dette er redigeringsruden, som du ser, når du tilføjer en anmærkning, mens du opretter din registrering. Angiv en titelanmærkning i feltet **Titel**. 
 
-[![Redigeringsrude med titelanmærkning](./media/screen1.png)](./media/screen1.png) 
+[![Redigeringsrude med titelanmærkning.](./media/screen1.png)](./media/screen1.png) 
 
 Sådan ser titelanmærkningen ud i "boble"-opgaveguiden. 
 
-[![Visning af titelanmærkning i opgaveguide](./media/screen2.png)](./media/screen2.png)
+[![Visning af titelanmærkning i opgaveguide.](./media/screen2.png)](./media/screen2.png)
 
 -   **Bemærk!** Der vises en anmærkning til noter efter den trintekst, som opgaveregistreringen genererer automatisk. I opgavevejledningen er den kun synlig, hvis brugeren klikker på linket **Vis flere** i opgaveguidens boble. Brug denne anmærkning til at beskrive noget, som en bruger skal kende for at fuldføre trinnet.
 
 Dette er redigeringsruden, som du ser, når du tilføjer en anmærkning, mens du opretter din registrering. Angiv en notatanmærkning i feltet **Notater**. 
 
-[![Redigeringsrude med anmærkning i noteboks](./media/screen3.png)](./media/screen3.png) 
+[![Redigeringsrude med anmærkning i feltet Noter.](./media/screen3.png)](./media/screen3.png) 
 
 Sådan ser noteanmærkningen ud i "boblen" i opgaveguiden.
 
-[![Visning af noteanmærkning i opgaveguide](./media/screen4.png)](./media/screen4.png)
+[![Visning af noteanmærkning i opgaveguide.](./media/screen4.png)](./media/screen4.png)
 
 -   **Infotrin**: Disse anmærkninger oprettes ved at højreklikke på et kontrolelement eller et vilkårligt sted i en formular &lt; **Arbejdsrutineoptager** &lt; **Tilføj infotrin**. Infotrin vises som et nummereret trin på sted, hvor du indsætter det, selvom intet blev registreret i brugergrænsefladen. Du kan tilføje et infotrin på formularniveau eller et infotrin, der er knyttet til et kontrolelement. Når et infotrin er knyttet til en formular, vises opgaveguidens "boble" et sted i formularen uden markør, når opgaveguiden afspilles. Når et infotrin er knyttet til et kontrolelement, peger opgaveguidens "boble" på kontrolelementet, når opgaveguiden afspilles. I Hjælp-ruden vises en infotrinanmærkning som et nummereret trin med den tekst, du har angivet. Brug infotrin til at forberede brugeren til de næste trin, til at beskrive de skridt, der skal udføres uden for programmet, eller at henvise til andre optagelser (selvom du ikke kan oprette links i anmærkningerne).
 

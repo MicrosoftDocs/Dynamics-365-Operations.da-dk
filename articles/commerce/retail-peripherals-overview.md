@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.custom: 268444
+ms.custom:
+- "268444"
+- intro-internal
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 833eb271b15dd6d32501049ce9154022a388f1d4
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: df7cb4810b83d74725df3d59b7b08da1e8cf4a53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189569"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345026"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -119,7 +121,7 @@ OLE til POS-branchestandarden er den primære platform for eksterne enheder, der
 -   **Kontrolobjekt** – Kontrolobjektet for en enhedsklasse (f.eks. linjevisninger) indeholder grænsefladen til programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) indeholder et standardiseret sæt af OPOS-kontrolobjekter, der er kendt som de fælles kontrolobjekter (CCO'er). CCO'er bruges til at teste POS-komponenten i Commerce. Derfor er afprøvningen med til at garantere, at hvis Commerce understøtter en enhedsklasse gennem OPOS, kan mange enhedstyper understøttes, forudsat at producenten leverer et serviceobjekt, der er bygget til OPOS. Du behøver ikke udtrykkeligt at teste hver enhedstype.
 -   **Serviceobjekt** – Serviceobjektet kan bruges til kommunikation mellem kontrolobjektet (CCO) og enheden. Typisk leveres serviceobjektet til en enhed af enhedsproducenten. I nogle tilfælde kan det dog være nødvendigt at hente serviceobjektet fra producentens websted. Et nyere serviceobjekt kan f.eks. være tilgængeligt. Se dokumentationen til hardwaren for at finde adressen på producentens websted.
 
-[![Kontrolobjekt og serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen. 
+[![Kontrolobjekt og serviceobjekt.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen. 
 
 > [!NOTE]
 > OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Commerce skal først understøtte den pågældende enhedstype eller klasse via OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.

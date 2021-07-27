@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 217c5d6d6df88eccf377fbf604eb0a1eb0ba7c9c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841231"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344800"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering for scannede dokumenter
 
@@ -34,7 +34,7 @@ Løsningen til fakturaautomatisering er en standardgrænseflade, der kan accepte
 
 I følgende illustration vises et eksempel på integrationsscenarie, hvor Contoso er gået sammen med en OCR-tjenesteudbyder til behandling af kreditorfakturaer. Contosos kreditorer sender fakturaer til tjenesteudbyderen via mail. Udbyderen genererer via OCR-behandling fakturametadata (hoved og/eller linjer) og et scannet billede af fakturaen. Et integrationslag transformerer derefter disse artefakter, så de kan forbruges.
 
-![Eksempel på integrationsscenarie](media/vendor_invoice_automation_01.png)
+![Eksempel på integrationsscenarie.](media/vendor_invoice_automation_01.png)
 
 Flere variationer af det foregående scenarie er mulige, hvis fakturaintegration er påkrævet. Overførsel af data er en anden metode, hvor denne grænseflade kan bruges til at oprette fakturaer og vedhæftede filer.
 
@@ -92,7 +92,7 @@ I scenarier, hvor kommer kreditorfakturaer kommer ind i Finance and Operations v
 
 Den nye listeside for fakturaundtagelser findes under **Kreditor** > **Fakturaer** > **Importfejl** > **Kreditorfakturaer, der blev ikke importeret**. Denne side viser alle kreditorfakturahoveders poster fra den midlertidige tabel i dataenheden Kreditorfakturahoved. Bemærk, at du kan få vist de samme poster fra arbejdsområdet **Datastyring**. Du kan også udføre de samme handlinger, der findes i funktionen for undtagelseshåndtering, fra **Datastyring**-arbejdsområdet. Funktionen til håndtering af undtagelser er optimeret for en funktionel bruger, hvilket gør det nemmere at bruge den.
 
-![Listesiden Undtagelser](media/vendor_invoice_automation_02.png)
+![Listesiden Undtagelser.](media/vendor_invoice_automation_02.png)
 
 Denne listeside indeholder følgende felter, der leveres via feedet:
 
@@ -136,7 +136,7 @@ Listesiden med undtagelser understøtter standardsikkerhedskonstruktioner, som *
 + Pr. bruger
 + af juridisk enhed
 
-![Importjob, der er sikret af brugerrolle og juridisk enhed](media/vendor_invoice_automation_04.png)
+![Importjob, der er sikret af brugerrolle og juridisk enhed.](media/vendor_invoice_automation_04.png)
 
 Hvis sikkerhed er konfigureret for importjobbet til fakturaer, bruger listesiden med undtagelser disse indstillinger. Brugere vil kun kunne se fakturaundtagelsesposter, som denne konfiguration giver mulighed for at se.
 

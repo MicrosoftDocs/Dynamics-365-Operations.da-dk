@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795709"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352416"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Oprette et nyt produkt i Commerce
 
@@ -49,13 +49,13 @@ Et produkt defineres primært af produktnummer, navn og beskrivelse. Andre data 
 
 Følgende billede viser et eksempel på tilføjelse af produkt.
 
-![Oprette et produkt](media/create-new-product.png)
+![Oprette et produkt.](media/create-new-product.png)
 
 Når et produkt er tilføjet, kan der angives yderligere data for det, f.eks. **Produktbeskrivelse**, **Variantgrupper**, **Dimensionsgrupper**, **Produktattributter** og **Relaterede produkter**.
 
 Følgende billede viser flere oplysninger om et produkt.
 
-![Produktdetaljer](media/create-new-product-2.png)
+![Produktdetaljer.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Opret produktvarianter
 
@@ -74,23 +74,23 @@ Hvis du vil sælge et produkt, skal det først frigives til en juridisk enhed.
 
 1. Vælg **Frigiv produkter** på produktsiden.
 
-    ![Frigive produkt](media/create-new-product-3.png)
+    ![Frigiv produkt.](media/create-new-product-3.png)
 
 1. Vælg det produkt, der skal frigives, og vælg derefter **Næste**.
 
-    ![Vælge produkt til frigivelse](media/create-new-product-4.png)
+    ![Vælge produkt til frigivelse.](media/create-new-product-4.png)
 
 1. Vælg den række produktvarianter, der skal frigives, og vælg derefter **Næste**.
 
-    ![Vælge varianter til frigivelse](media/create-new-product-5.png)
+    ![Vælge varianter til frigivelse.](media/create-new-product-5.png)
 
 1. Vælg den juridiske enhed, og vælg derefter **Næste**.
 
-    ![Vælg juridisk enhed](media/create-new-product-6.png)
+    ![Vælg juridisk enhed.](media/create-new-product-6.png)
 
 1. Vælg **Udfør**.
 
-    ![Udføre produktfrigivelse](media/create-new-product-7.png)
+    ![Udføre produktfrigivelse.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Konfigurere et frigivet produkt
 
@@ -105,11 +105,11 @@ Når et produkt er frigivet, kræver det en yderligere konfiguration, der omfatt
 
 Følgende billede viser et eksempel på konfiguration af et frigivet produkt.
 
-![Konfigurere frigivet produkt](media/create-new-product-8.png)
+![Konfigurere frigivet produkt.](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oprette juridiske enheder](channels-legal-entities.md)
+[Opret juridiske enheder](channels-legal-entities.md)
 
 [Oprette en variantgruppe](create-variant-group.md) 
 
