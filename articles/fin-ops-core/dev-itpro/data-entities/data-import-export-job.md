@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 12de6d70243bdcda5fc7887f24eecb462de23683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937324"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351013"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -106,7 +107,7 @@ Der er to visninger af tilknytningen: **Visualisering af tilknytning**, som er s
 
 Du kan oprette en tilknytning på siden ved at vælge **Generér kildetilknytning**. En genereret tilknytning fungerer som en automatisk tilknytning. Du skal derfor manuelt tilknytte eventuelle ikke-tilknyttede felter.
 
-![Tilknytning af data](./media/dixf-map.png)
+![Tilknytning af data.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Kontroller sikkerheden i dit import- eller eksportjob
 Adgangen til arbejdsområdet **Datastyring** kan begrænses, så brugere, der ikke er administratorer, kun har adgang til bestemte datajob. Adgang til et datajob indebærer fuld adgang til udførelseshistorikken for jobbet og adgang til de midlertidige tabeller. Du skal derfor sikre dig, at relevante adgangskontroller er på plads, når du opretter et datajob.
@@ -132,7 +133,7 @@ Du kan køre et job én gang ved at vælge knappen **Import** eller **Eksport**,
 ## <a name="validate-that-the-job-ran-as-expected"></a>Kontroller, at jobbet kørte som forventet
 Jobhistorikken er tilgængelig i forbindelse med fejlfinding og undersøgelse på både import- og eksportjob. Kørsler af historiske job er organiseret efter tidsintervaller.
 
-![Jobhistorikintervaller](./media/dixf-job-history.md.png)
+![Jobhistorikintervaller.](./media/dixf-job-history.md.png)
 
 Hver jobkørsel indeholder følgende oplysninger:
 

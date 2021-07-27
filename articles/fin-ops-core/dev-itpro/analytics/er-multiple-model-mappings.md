@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a774a0edf00a17be674b7a1bb07f6494e90554c3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 595de6292b81ca78bf08a66f61850c3b5a537396
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743673"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354385"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Administrere flere afledte tilknytninger for en enkelt modelrod
 
@@ -55,7 +55,7 @@ Hvis du vil føje ER-standardkonfigurationerne til din aktuelle forekomst af Fin
 2. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Rapporteringskonfigurationer** i sektionen **Konfigurationer**.
 3. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Fakturamodel**.
 
-    ![Gennemgang af de importerede konfigurationer på siden Konfigurationer](./media/er-multiple-model-mappings-image1.png)
+    ![Gennemgang af de importerede konfigurationer på siden Konfigurationer.](./media/er-multiple-model-mappings-image1.png)
 
 4. Gennemgå formatet **Fritekstfaktura (Excel)**:
 
@@ -66,7 +66,7 @@ Hvis du vil føje ER-standardkonfigurationerne til din aktuelle forekomst af Fin
     
        Det aktuelle ER-format er konfigureret til at bruge roddefinitionen **InvoiceCustomer** af **Fakturamodel**. Når dette format køres, og datakilden **Model** kaldes, bruges den modeltilknytning, der er konfigureret for roddefinitionen af **InvoiceCustomer**, til at få adgang til programdata og udfylde datamodellen.
 
-        ![Gennemgang af modeldatakilden på siden Formatdesigner](./media/er-multiple-model-mappings-image2.png)
+        ![Gennemgang af modeldatakilden på siden Formatdesigner.](./media/er-multiple-model-mappings-image2.png)
 
     6. Luk siden **Formatdesigner**.
 
@@ -79,7 +79,7 @@ Hvis du vil føje ER-standardkonfigurationerne til din aktuelle forekomst af Fin
         + Modeltilknytningen **Kundefaktura** er konfigureret for roddefinitionen **InvoiceCustomer** af **Fakturamodel**. Når ER-formatet **Fritekstfaktura (Excel)** køres, kan du derfor vælge **Kundefaktura**-modeltilknytningen af denne ER-konfiguration for at få adgang til programdata og udfylde datamodellen.
         + Modeltilknytningen **Projektfaktura** er konfigureret for roddefinitionen **InvoiceProject** af **Fakturamodel**. Når ER-formatet **Projektfaktura (Excel)** køres, kan du derfor vælge **Projektfaktura**-modeltilknytningen af denne ER-konfiguration for at få adgang til programdata og udfylde datamodellen.
 
-        ![Tilknytning af fakturamodel på siden Tilknytning af model til datakilde](./media/er-multiple-model-mappings-image3.png)
+        ![Tilknytning af fakturamodel på siden Tilknytning af model til datakilde.](./media/er-multiple-model-mappings-image3.png)
 
     4. Luk siden **Tilknytning af model til datakilde**.
     5. Vælg **Slet** i oversigtspanelet **Versioner** for at slette alle versioner af denne ER-konfiguration, som er senere end 240.175.
@@ -90,7 +90,7 @@ Hvis du vil føje ER-standardkonfigurationerne til din aktuelle forekomst af Fin
     2. Vælg **Designer** i handlingsruden.
     3. Bemærk på siden **Model til tilknytning af datakilder**, at den aktuelle ER-modeltilknytningskonfiguration indeholder modeltilknytningen **InvoiceProject**, og at denne modeltilknytning er konfigureret for roddefinitionen **InvoiceProject** af **Fakturamodel**. Når ER-formatet **Projektfaktura (Excel)** køres, skal du vælge **InvoiceProject**-modeltilknytningen af denne ER-konfiguration for at få adgang til programdata og udfylde datamodellen.
 
-        ![Modeltilknytning af projektfaktura på siden Tilknytning af model til datakilde](./media/er-multiple-model-mappings-image4.png)
+        ![Modeltilknytning af projektfaktura på siden Tilknytning af model til datakilde.](./media/er-multiple-model-mappings-image4.png)
 
     4. Luk siden **Tilknytning af model til datakilde**.
     5. Vælg **Slet** i oversigtspanelet **Versioner** for at slette alle versioner af denne ER-konfiguration, som er senere end 226.35.
@@ -115,7 +115,7 @@ I dette afsnit beskrives det, hvordan du kan [tilpasse](er-quick-start3-customiz
 
 7. I handlingsruden skal du vælge **Designer** for at gennemgå modeltilknytninger af denne konfiguration.
 
-    ![Gennemgang af fakturamodeltilknytninger på siden Tilknytning af model til datakilde](./media/er-multiple-model-mappings-image5.png)
+    ![Gennemgang af fakturamodeltilknytninger på siden Tilknytning af model til datakilde.](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > Du kan nu åbne enhver komponent for ER-modeltilknytning i denne ER-konfiguration i designeren for at konfigurere din brugerdefinerede logik. Du kan finde flere oplysninger under [Tilpasse konfigurationen af modeltilknytning](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -126,7 +126,7 @@ Du har nu konfigurationer af **Fakturamodeltilknytning** og **Tilknytning af fak
  
 > Der findes mere end én modeltilknytning for datamodellen '\<model name\> (\<root descriptor\>)' i konfigurationerne \<configuration names separated by commas\>. Angiv en af konfigurationerne som standard.
 
-![Åbning af formatet til redigering på siden Konfigurationer](./media/er-multiple-model-mappings-image6.gif)
+![Åbning af formatet til redigering på siden Konfigurationer.](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>Tilpasse konfigurationen af Modeltilknytning af projektfaktura (RDP)
 
@@ -138,7 +138,7 @@ Du har nu konfigurationer af **Fakturamodeltilknytning** og **Tilknytning af fak
 6. Angiv indstillingen **Kør kladde** til **Ja** for den konfiguration af **Modeltilknytning af projektfaktura Litware**, som aktuelt er valgt i konfigurationstræet.
 7. I handlingsruden skal du vælge **Designer** for at gennemgå modeltilknytninger af denne konfiguration.
 
-    ![Gennemgå den tilpassede modeltilknytning af projektfaktura på siden Tilknytning af model til datakilde](./media/er-multiple-model-mappings-image7.png)
+    ![Gennemgå den tilpassede modeltilknytning af projektfaktura på siden Tilknytning af model til datakilde.](./media/er-multiple-model-mappings-image7.png)
 
 8. Luk siden **Tilknytning af model til datakilde**.
 
@@ -149,7 +149,7 @@ Du har nu konfigurationerne **Tilknytning af fakturamodel**, **Modeltilknytning 
 1. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude vælge **Tilknytning af fakturamodel Litware**.
 2. Vælg **Ja** i indstillingen **Standard for modeltilknytning**.
 
-    ![Angivelse af modeltilknytning som standardmodeltilknytning på siden Konfigurationer](./media/er-multiple-model-mappings-image8.png)
+    ![Angivelse af modeltilknytning som standardmodeltilknytning på siden Konfigurationer.](./media/er-multiple-model-mappings-image8.png)
 
     På grund af denne indstilling bruges modeltilknytningen **Kundefakturakopi**, når du kører **Fritekstfaktura (Excel)** eller redigerer eller validerer den. Modeltilknytningen **Kundefaktura** fra konfigurationen **Tilknytning af fakturamodel** ignoreres.
 
@@ -167,7 +167,7 @@ Du har nu konfigurationerne **Tilknytning af fakturamodel**, **Modeltilknytning 
 5. Vælg **Rediger** på siden **Model til tilknytning af datakilder** for at redigere siden efter behov.
 6. Vælg modeltilknytningen **Kopi af projektfaktura**, og markér derefter afkrydsningsfeltet **Er slettet** for den.
 
-    ![Angivelse af modeltilknytning som virtuelt slettet på siden Tilknytning af model til datakilde](./media/er-multiple-model-mappings-image9.png)
+    ![Angivelse af modeltilknytning som virtuelt slettet på siden Tilknytning af model til datakilde.](./media/er-multiple-model-mappings-image9.png)
 
     På grund af denne indstilling behandles konfigurationen **Tilknytning af fakturamodel Litware**, som om der ikke er nogen modeltilknytning for roddefinitionen **InvoiceProject**. Modeltilknytningen **Kopi af InvoiceProject** er udstedt som standard. Konfigurationen **Modeltilknytning af projektfaktura Litware**, der indeholder denne modeltilknytning, er markeret som standardkonfiguration. Da den er markeret som standard, har den en højere prioritet end modeltilknytningen **InvoiceProject** fra konfigurationen **Modeltilknytning af projektfaktura (RDP)**.
 

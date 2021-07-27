@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 96a600279b7a90d6626d23ee8868de13e9dd0f14
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2b6f9663ed08ab431ffc6ffe3154854250c1b092
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270879"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350468"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregne lagertilgængelighed for detailkanaler
 
@@ -105,7 +105,7 @@ I Commerce version 10.0.9 og tidligere har handlingen **Lagersøgning** i POS br
 
 Når beregningen på kanalsiden er korrekt konfigureret og administreret, kan det give et mere pålideligt estimat over det aktuelle butikslager, fordi det bruger de transaktionsdata, som findes i Commerce-kanaldatabasen, men hovedkvarteret måske endnu ikke har oplysninger om. Hvis du f.eks. bruger det eksisterende servicekald i realtid til at foretage lagersøgninger i POS, har hovedkvarteret sandsynligvis ingen oplysninger om et cash-and-carry-salg af et produkt, som netop er foretaget. Derfor vil værdien af den disponible lagerbeholdning, som hovedkvarteret returnerer for det pågældende produkt, formentlig overstige butikkens faktiske disponible lager med én enhed. Men hvis du bruger kanalsideberegningen, kan cash-and-carry-salg medtages i beregningen og trækkes fra den disponible værdi, der vises. Selvom de værdier, som både kanalsideberegninger og realtids servicekald tilvejebringer, blot er estimater af det disponible lager, er det meget mere sandsynligt, at den værdi, som kanalsideberegningen giver, er et nøjagtigt billede af den aktuelle butik.
 
-Hvis du vil konfigurere **Lageropslag** for POS i hovedkontoret for at bruge beregningslogikken på kanalsiden og deaktivere serviceopkald i realtid, skal du benytte følgende fremgangsmåde.
+Hvis du vil konfigurere POS-handlingen **Lagersøgning** i Commerce Headquarters for at bruge beregningslogikken for kanalsiden og deaktivere realtidstjenesteopkald, skal du først aktivere funktionen **Beregning af optimeret produkttilgængelighed** via arbejdsområdet **Funktionsstyring** i Commerce Headquarters.
 
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**.
 1. Vælg en funktionalitetsprofil.

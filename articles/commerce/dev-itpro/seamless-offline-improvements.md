@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8f5c8f104d8304cf9a54efcdf6e22efbc3b356b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019951"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348262"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Problemfrit offline skift til gavekort- og kreditnotahandlinger
 
@@ -36,7 +36,7 @@ Hvis kasseapparatet imidlertid mister forbindelsen, når et gavekort er blevet f
 
 Hvis du vil aktivere funktionaliteten til at indgå gavekorttransaktioner efter skift til offlinetilstand, skal du gå til fanen **Bogføring** på siden **Commerce-parametre**. Under denne fane skal du finde oversigtspanelet **Gavekort** og indstille **Tillad afslutning af gavekorttransaktioner i offlinetilstand** til **Ja**.
 
-![Indstillinger for et offline gavekort](../media/gift.png)
+![Indstillinger for et offline gavekort.](../media/gift.png)
 
 Commerce-parametrene lagres typisk i cachen. Når indstillingen af denne parameter opdateres, og distributionsplanen er startet for at synkronisere ændringen til kanalen, kan ændringen derfor tage op til 24 timer for at træde i kraft. Hvis ændringen skal træde i kraft øjeblikkeligt, skal du nulstille Microsoft Internet Information Services (IIS).
 
@@ -46,7 +46,7 @@ Ligesom interne gavekort vedligeholdes kreditnotaer centralt i Commerce Headquar
 
 Hvis du vil aktivere funktionaliteten til at indgå kreditnotatransaktioner efter skift til offlinetilstand, skal du gå til fanen **Bogføring** på siden **Commerce-parametre**. Under denne fane skal du finde oversigtspanelet **Kreditnota** og indstille **Tillad afslutning af kreditnotatransaktioner i offlinetilstand** til **Ja**.
 
-![Indstilling af offline kreditnota](../media/creditmemo.png)
+![Indstilling for offline kreditnota.](../media/creditmemo.png)
 
 Commerce-parametrene lagres typisk i cachen. Når indstillingen af denne parameter opdateres, og distributionsplanen er startet for at synkronisere ændringen til kanalen, kan ændringen derfor tage op til 24 timer for at træde i kraft. Nulstil IIS, hvis ændringen skal træde i kraft øjeblikkeligt.
 

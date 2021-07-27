@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e18439fc0e91619cade33b83b87be0d5c4d1040
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d9470e4d517c5fb0b49ae2e26eb14220ea17aa3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799005"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349394"
 ---
 # <a name="enrich-a-category-landing-page"></a>Forbedre en kategorilandingsside
 
@@ -31,7 +31,7 @@ Commerce angiver en landingsside for den standardkategori, der bruges, når der 
 
 Men i stedet for at bruge standardkategorisiden kan du bruge en "forbedret" kategorilandingsside, der har mere indhold og mere specifikke elementer. En typisk forbedring kan omfatte tilføjelse af kategorispecifikt marketingindhold på kategorisiden. Dette indhold kan omfatte produktplacering på tværs af kategorier med henblik på tillægssalg, redaktionelle lister, billeder, videoer og anden tekst. Du kan enten redigere standardkategorisiden eller definere en anden kategoriside for en bestemt kategori.
 
-![Forbedre en kategorilandingsside](./media/CategoryLandingPages.png)
+![Forbedre en kategorilandingsside.](./media/CategoryLandingPages.png)
 
 I Commerce-webstedsgeneratoren indeholder siden **Produkter** en liste over kategorier fra den kanal, der er tildelt webstedet. Hvis status **Forbedret** er valgt for en kategoriside, er den pågældende kategoriside blevet forbedret. Ellers bruges standardkategorisiden og standardindholdet til kategorien. Du kan gennemse både de forbedrede og de ikke-forbedrede kategorisider for en kategori ved at vælge kategorinavnet.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143aa5c3ba4d6064cde63f8e7ebeac0977b1325c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 97fc3c6bd096854b5aa72980dd2bd6f3a8a1ef9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908700"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353414"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Gantt-diagram til finplanlægning
 
@@ -45,10 +45,10 @@ Gantt-diagrammet kan åbnes i to forskellige visninger, **Ordrevisning** og **Re
 
 ## <a name="order-view"></a>Ordrevisning
 
-[![Ordrevisning](./media/orderview.png)](./media/orderview.png)
+[![Ordrevisning.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Ressourcevisning
-[![Ressourcevisning](./media/resview.png)](./media/resview.png)
+[![Ressourcevisning.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Aktiviteter
 Aktiviteterne vises som søjler og er organiseret på en skala i tidsgitteret med planlagt start- og sluttidspunkt, så længden af søjlerne er proportional med den tid, der er nødvendig for at fuldføre aktiviteten. Aktiviteterne vises i henhold til en tidsskala. Du kan justere tidsskalaen i menuen, hvor du kan vælge en startdato og slutdato og en tidsenhed, f.eks., timer eller dage. Du kan angive fokus på et tidsinterval, hvor du vil administrere aktiviteter, ved at justere tidsskalaen. 
@@ -102,25 +102,25 @@ Det er ikke muligt at planlægge et job uden for det angivne tidsinterval i Gant
 
 I et netværk af aktiviteter som f.eks. job, der tilhører samme produktionsordre, kan du bruge funktionen **Planlæg foregående job** til at planlægge de foregående job i forhold til et valgt job i netværket. I eksemplet nedenfor er den fremhævede aktivitet det valgte job. Diagrammet viser, før det foregående job er planlagt, og efter det foregående job er planlagt. 
 
-[![Planlæg foregående job](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Planlæg foregående job.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Planlæg efterfølgende job
 
 Du kan bruge funktionen **Planlæg efterfølgende job** til at planlægge de næste job i forhold til et valgt job i et netværk af aktiviteter. I eksemplet nedenfor er den fremhævede aktivitet det valgte job. Diagrammet viser, før det næste job er planlagt, og efter det næste job er planlagt. 
 
-[![Planlæg næste job](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Planlæg næste job.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Planlæg omkring job
 
 Du kan bruge funktionen **Planlæg omkring job** til at planlægge det næste job og det foregående job i forhold til et valgt job i et netværk af aktiviteter. I eksemplet nedenfor er den fremhævede aktivitet det valgte job. Diagrammet viser, før et job er planlagt, og efter jobbet er planlagt. 
 
-[![Planlæg omkring job](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Planlæg omkring job.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Arranger job
 
 Du kan bruge funktionen **Arranger** til at arrangere de valgte aktiviteter på samme ressource. Disse aktiviteter kan være i det samme netværk af aktiviteter, men de kan også tilhøre forskellige netværk. Når du bruger funktionen Arranger, vil tidsrum mellem de valgte aktiviteter blive elimineret. Du kan bruge denne funktion til at optimere kapacitetsudnyttelsen af ressourcerne. Diagrammet viser, før et job er planlagt, og efter jobbet er planlagt. 
 
-[![Arranger job](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Arranger job.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Gentildele aktiviteter fra én ressource til en anden
 

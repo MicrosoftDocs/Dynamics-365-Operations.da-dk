@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b7050f954116213f700e4a2b3326547f4d070674
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022466"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353006"
 ---
 # <a name="e-commerce-site-overview"></a>Oversigt over e-handelswebsted
 
@@ -47,27 +47,27 @@ Under initialiseringen af et e-handelswebsted bliver du bedt om at angive et dom
 
 Når du starter Commerce-webstedsgeneratoren fra LCS, vises siden **Websteder**. Denne side indeholder to forudkonfigurerede websteder, **standard** og **fabrikam**, som vist i eksemplet i følgende illustration.
 
-![Siden Websteder i Commerce-webstedsgeneratoren](media/e-commerce-site-01.png)
+![Siden Websteder i Commerce-webstedsgeneratoren.](media/e-commerce-site-01.png)
 
 Når du vælger et af disse websteder, bliver du bedt om at vælge et domænenavn, en standard-onlinebutikskanal, et understøttet sprog for den valgte kanal og en sti. Hvis der kun bruges én kanal, kan du lade den pågældende sti være tom. Flere onlinebutikskanaler eller -sprog kan konfigureres senere i Commerce-webstedsgeneratoren. Der kræves en entydig sti til hver ekstra kanal eller sprog. Du har f.eks. to onlinekanaler, der er knyttet til et enkelt websted, og domænenavnet for webstedet er `www.fabrikam.com`. I dette tilfælde kan stien for en kanal være standardværdien, der ikke har en sti (`https://www.fabrikam.com`), og den anden kanal kan være indstillet til en ny sti, f.eks. **site2**, som vil have URL-adressen `https://www.fabrikam.com/site2`. I følgende illustration vises et eksempel på en dialogboks til initialisering af webstedet i Commerce-webstedsgeneratoren.
 
-![Dialogboks til initialisering af websted i Commerce-webstedsgenerator](media/e-commerce-site-02.png)
+![Dialogboks til initialisering af websted i Commerce-webstedsgenerator.](media/e-commerce-site-02.png)
 
 Siden **Websteder** indeholder også knappen **Nyt websted**. Den dialogboks, der vises, når du vælger denne knap, minder om dialogboksen til webstedsinitialisering, men den bruges til at oprette et nyt websted. Nye websteder er tomme. De indeholder ikke de samme standardskabeloner, fragmenter, sider og billeder, der leveres på **standard**- og **fabrikam**-webstederne. Men du kan åbne en supportanmodning for at anmode om, at der føjes en kopi af standardindholdet til et nyt tomt websted, hvis du har brug for det. Du kan finde flere oplysninger under [Oprette et websted for e-handel](create-ecommerce-site.md).
 
 Når et nyt websted er initialiseret, vises **Startside** for Commerce-webstedsgeneratoren. Denne side indeholder links til almindelige handlinger og vejledninger, som vist i eksemplet i følgende illustration.
 
-![Links på startsiden i Commerce-webstedsgenerator](media/e-commerce-site-03.png)
+![Links på startsiden i Commerce-webstedsgenerator.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Redigere onlinebutikskanaler eller føje onlinebutikskanaler til et e-handelswebsted
 
 Når der er oprettet et e-handelswebsted, kan du ændre den kanal, som stedet er knyttet til, ved at følge trinnene i [Tilknytte et websted til e-handel med en onlinekanal](associate-site-online-store.md). I eksemplet i følgende illustration vises, hvordan et kanalhandlingsnummer (OUN) kan ændres på siden **Kanaler** (**Indstillinger for websted \> Kanaler**). Når du har foretaget en ændring, skal du huske at vælge **Gem og udgiv**. På denne måde sikrer du, at ændringen publiceres.
 
-![Siden Kanaler i Commerce-webstedsgeneratoren](media/e-commerce-site-04.png)
+![Siden Kanaler i Commerce-webstedsgeneratoren.](media/e-commerce-site-04.png)
 
 Du kan tilføje nye kanaler ved at vælge **Tilføj en kanal**. Hvis du vil føje nye sprog til en kanal, skal du vælge kanalen og derefter vælge **Tilføj en landestandard** i den kanaldialogboks, der vises. Før landestandarder kan vises i dialogboksen, skal de forudkonfigureres til online butikskanalen i Commerce Headquarters.
 
-![Dialogboksen Kanal i Commerce-webstedsgenerator](media/e-commerce-site-05.png)
+![Dialogboksen Kanal i Commerce-webstedsgenerator.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Konfigurere en Azure B2C-lejer
 

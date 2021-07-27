@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027957"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352054"
 ---
 # <a name="account-management-pages-overview"></a>Oversigt over sider til kontostyring
 
@@ -35,7 +36,7 @@ Når en kunde logger på og vælger **Min konto**, åbnes landingssiden til kont
 
 I følgende illustration vises et eksempel på landingssiden til kontostyring.
 
-![Eksempel på en landingsside til kontostyring](./media/Account-Management.PNG)
+![Eksempel på en landingsside til kontostyring.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Siden Min profil
 
@@ -43,7 +44,7 @@ På siden **Min profil** vises kundens kontooplysninger, f.eks. vedkommende pers
 
 I følgende illustration vises et eksempel på en **Min profil**-side, der er oprettet ved hjælp af modulbiblioteket.
 
-![Eksempel på siden Min profil](./media/Account-Management-MyProfile.PNG)
+![Eksempel på siden Min profil.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Siden Adresser
 
@@ -51,7 +52,7 @@ På siden **Adresser** kan kunden føje adresser til sin konto. Den viser også 
 
 I følgende illustration vises et eksempel på siden **Adresser**.
 
-![Eksempel på en adresseside](./media/Account-Management-Address.png)
+![Eksempel på en adresseside.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Siderne Ordrehistorik og Ordredetaljer
 
@@ -59,11 +60,11 @@ På siden **Ordrehistorik** vises en oversigt over alle ordrer, som kunden har a
 
 I følgende illustration vises et eksempel på siden **Ordrehistorik**.
 
-![Eksempel på en side med ordrehistorik](./media/Account-Management-OrderHistory.PNG)
+![Eksempel på en side med ordrehistorik.](./media/Account-Management-OrderHistory.PNG)
 
 I følgende illustration vises et eksempel på siden **Ordredetaljer**.
 
-![Eksempel på en side med ordredetaljer](./media/Account-Management-OrderDetails.PNG)
+![Eksempel på en side med ordredetaljer.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Siden Fordelskundeprogram
 
@@ -71,7 +72,7 @@ På siden **Fordelskundeprogram** kan kunden blive medlem af et fordelskundeprog
 
 Følgende illustration viser et eksempel på siden **Fordelskundeprogram**.
 
-![Eksempel på en side med fordelskundeprogram](./media/Account-Management-Loyalty.PNG)
+![Eksempel på en side med fordelskundeprogram.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Siden Ønskeliste
 
@@ -79,7 +80,7 @@ Siden **Ønskeliste** viser en liste over de varer, som kunden har føjet til si
 
 Følgende illustration viser et eksempel på siden **Ønskeliste**.
 
-![Eksempel på siden Ønskeliste](./media/Account-Management-Wishlist.PNG)
+![Eksempel på siden Ønskeliste.](./media/Account-Management-Wishlist.PNG)
 
 Yderligere oplysninger om kontostyringsmoduler, og hvordan de oprettes, finder du under [Kontostyring](account-management.md).
 

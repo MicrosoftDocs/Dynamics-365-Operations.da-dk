@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025442"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353774"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lagersøgningshandling i POS
 
@@ -45,7 +45,10 @@ For enkeltprodukter giver lagersøgningshandlingen en lagersøgningslistevisning
 
 Listevisningen over lokationer omfatter alle butikker og lagersteder, der er konfigureret i de opfyldningsgrupper, som den aktuelle butik er tilknyttet, som vist i følgende eksempelbillede.
 
-![Lagersøgningshandling i listevisning](media/inventory-lookup-list-view.png)
+![Lagersøgehandling i listevisning.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Sørg for, at den aktuelle butik er inkluderet i de tilknyttede opfyldningsgrupper.
 
 De følgende handlinger er tilgængelige på POS-applinjen:
 
@@ -65,7 +68,7 @@ De følgende handlinger er tilgængelige på POS-applinjen:
 - **Føj til transaktion** – Denne handling føjer produktet til indkøbsvognen og omdirigerer brugeren til transaktionsskærmbilledet.
 
 > [!NOTE]
-> Ved lokationsbaseret sortering bestemmes afstanden mellem en lokation og den aktuelle butik på grundlag af de koordinater (breddegrad og længdegrad), der er defineret i Commerce Headquarters. For en butik defineres lokalitetsoplysningerne i den primære adresse for den driftsenhed, der er tilknyttet butikken. Hvis det drejer sig om et ikke-butikslagersted, defineres lokalitetsoplysningerne i lagerstedsadressen. Hvis den aktuelle butik ikke har korrekt definerede koordinater, viser den lokationsbaserede sorteringsindstilling den aktuelle butik øverst på listen, og derefter sorteres andre lokationer efter navn.
+> Ved lokationsbaseret sortering bestemmes afstanden mellem en lokation og den aktuelle butik på grundlag af de koordinater (breddegrad og længdegrad), der er defineret i Commerce Headquarters. For en butik defineres lokalitetsoplysningerne i den primære adresse for den driftsenhed, der er tilknyttet butikken. Hvis det drejer sig om et ikke-butikslagersted, defineres lokalitetsoplysningerne i lagerstedsadressen. Hvis den aktuelle butik ikke har definerede koordinater, viser den lokationsbaserede sorteringsindstilling den aktuelle butik øverst på listen, og derefter sorteres andre lokationer efter navn.
 
 > [!NOTE]
 > Handlingerne **Vis butikkens tilgængelighed**, **Vis butiksplacering**, **Afhent i butik** og **Afsend produkt** er ikke tilgængelige for lokationer, som ikke er butiksplaceringer.
@@ -76,7 +79,7 @@ For et masterprodukt med varianter giver lagersøgningshandlingen også en dimen
 
 På følgende eksempelbillede ses visningen af lageropslagsmatrixen i POS.
 
-![Lagersøgningshandling i matrixvisning](media/inventory-lookup-matrix-view.png)
+![Lagersøgehandling i matrixvisning.](media/inventory-lookup-matrix-view.png)
 
 I matrixvisningen repræsenterer hver celle en individuel variant og viser en værdi for den disponible lagerbeholdning (fysisk tilgængelige) i nederste højre hjørne, og de **reserverede** (fysisk reserverede) og **bestilte** værdier (bestilt i alt) vises i øverste venstre hjørne. Følgende tabel forklarer betydningen af de forskellige disponible værdier.
 
@@ -103,7 +106,7 @@ POS-brugere har adgang til lageropslagshandlingen fra andre sider i POS.
 
 På følgende eksempelbillede ses lageropslagsresultater fra en PDP i POS.
 
-![Lageropslag fra siden med produktdetaljer](media/inventory-lookup-from-product-details-page.png)
+![Lageropslag fra siden med produktdetaljer.](media/inventory-lookup-from-product-details-page.png)
 
 I PDP for et masterprodukt kan du bruge handlingen **Vis alle varianter** på applinjen til at starte den lageropslagsmatrixvisning, der viser oplysninger om lagertilgængelighed for den aktuelle butik for alle varianter af et produkt. For et enkelt produkt viser PDP værdien for den disponible lagerbeholdning (fysisk tilgængelig) af det pågældende produkt for den aktuelle butik. Du kan også vælge linket **Andre butikslagre** for at starte lagersøgningshandlingen og kontrollere, om et produkt er til rådighed på tværs af andre butikker eller lagersteder.
 

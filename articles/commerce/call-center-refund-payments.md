@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e3837ccebca0e6644ac5ded98344a5135cfb5d7a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 130f570646d73e37a790ab90ae9a1d6a48b0f8b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799583"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351363"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Refusionsbetalingsmetoder i callcentre
 
@@ -37,7 +37,7 @@ Callcenter bruger betalingsmåden for den oprindelige ordre til at bestemme den 
 
     I følgende illustration vises konfigurationen for et scenario, hvor en kunde returnerer produkter fra en salgsordre, der er knyttet til valutaen USD, og som oprindeligt blev betalt ved hjælp af den normale betalingstype eller checkbetalingstypen. I dette scenario vil der blive udstedt en refusion til kunden via en systemgenereret refusionskontrol. **REF-CHK** AR-betalingsmåden er konfigureret som en betalingstype til refunderingskontrol.
 
-    ![Konfiguration af refunderingsmetoder for callcenter for normale betalinger og kontrol af oprindelige betalinger](media/callcenterrefundmethods.png)
+    ![Konfiguration af refunderingsmetoder for callcenter for normale betalinger og kontrol af oprindelige betalinger.](media/callcenterrefundmethods.png)
 
 - **Kreditkort** – Når en returordre, der oprettes, refererer til en oprindelig ordre, der blev betalt med kreditkort, anvender callcenter-logikken for refunderingsbetalinger samme oprindelige kreditkort på returordren.
 - **Fordelskundekort** – Når en returordre, der oprettes, refererer til en oprindelig ordre, der blev betalt med fordelskundekort, anvender callcenter-logikken for refunderingsbetalinger til samme fordelskundekort på returordren.
@@ -91,7 +91,7 @@ Indstillingen **Ja** til indstillingen **Anvend kredit** gælder kun, når retur
 
 Selvom det systematisk er callcenter-logikken, der bestemmer refunderingsmetoden på den måde, der er beskrevet tidligere i dette emne, vil brugerne måske nogle gange ønske at tilsidesætte disse betalinger. En bruger kan f.eks. redigere eller fjerne eksisterende betalingslinjer til refundering og anvende nye betalingslinjer. Systemberegnerede refusionsbetalinger kan kun ændres af brugere, som har de korrekte tilladelser til ændring. Disse tilladelser kan konfigureres på siden **Tilsidesæt tilladelser** i Retail og Commerce. Hvis du vil udføre en tilsidesættelse af refusionsbetaling, skal brugeren være knyttet til en sikkerhedsrolle, hvor indstillingen **Tillad alternativ betaling** er angivet til **Ja** på siden **Tilsidesæt tilladelser**.
 
-![Tillad alternativ betalingsmåde på siden Tilsidesæt tilladelser](media/overridepermissions.png)
+![Tillad alternativ betalingsmåde på siden Tilsidesæt tilladelser.](media/overridepermissions.png)
 
 Alternativt kan en organisation angive indstillingen **Tillad betalingsændring** til **Ja** under fanen **RMA/Retur** på siden **Callcenter-parametre**. I dette tilfælde skal der vælges en kode til tilsidesættelse af sikkerhed i feltet **Kode til tilsidesættelse af sikkerhed**. Koden for sikkerhedsændring er en alfanumerisk kode, der skal administreres eksternt, da brugerne ikke kan se den i Commerce Headquarters, når den er angivet. Koden til sikkerhedsændring bør kun kendes af nogle få nøgler og betroede personer i en organisation. Når indstillingen **Tillad betalingstilsidesættelse** er angivet til **Ja**, hvis brugere, der ikke har de korrekte rolletilladelser, forsøger at ændre betalingsmåden for en returordre, har de mulighed for at angive sikkerhedsændringskoden. Hvis de ikke ved det, eller hvis en leder eller tilsynsførende ikke kan angive det på siden for dem, kan de ikke tilsidesætte betalingsmåden for returnering.
 

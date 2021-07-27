@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6e43b9127b247fa618558b725837d12bf290662f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6c9b4ba6b55bbe26637f612390354d43a71b3eab
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052019"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357161"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Begrænse redigering af personlige oplysninger
 
@@ -30,25 +30,25 @@ ms.locfileid: "6052019"
 Dette emne beskriver, hvordan du begrænser medarbejdernes mulighed for at redigere kontaktoplysninger i Dynamics 365 Human Resources. Du kan f.eks. forhindre medarbejdere i at redigere bestemte kontaktoplysninger, f.eks. deres firmaadresse eller mailadresse.
 
 > [!NOTE]
-> Hvis du vil bruge denne funktion, skal du først aktivere **(Forhåndsversion) Begrænse medarbejdere i at tilføje eller redigere adresse- og kontaktoplysninger til udvalgte formål** i Funktionsstyring. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br><br>![Aktivér visningsfunktion](./media/hr-employee-self-service-restrict-enable.png)
+> Hvis du vil bruge denne funktion, skal du først aktivere **(Forhåndsversion) Begrænse medarbejdere i at tilføje eller redigere adresse- og kontaktoplysninger til udvalgte formål** i Funktionsstyring. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br><br>![Aktivere visningsfunktion.](./media/hr-employee-self-service-restrict-enable.png)
 
 ## <a name="choose-the-information-an-employee-can-add-or-edit"></a>Vælge de oplysninger, som en medarbejder kan tilføje eller redigere
 
 1. I Human Resources skal du vælge **Personalestyring**, vælge **Links** og derefter vælge **Human Resources-parametre**.
 
-   ![Gå til Personaleparametre](./media/hr-employee-self-service-human-resources-parameters.png)
+   ![Gå til Human Resources-parametre.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 2. Vælg fanen **Medarbejderselvbetjening** på siden **Personaleparametre**.
 
-   ![Medarbejderselvbetjening](./media/hr-employee-self-service-tab.png)
+   ![Vælg Medarbejderselvbetjening.](./media/hr-employee-self-service-tab.png)
 
 3. Under fanen **Medarbejderselvbetjening** skal du fjerne markeringen af alle oplysninger i afsnittet **Adresse- og kontaktoplysninger**, som du ikke ønsker, at medarbejdere skal tilføje eller redigere. I dette eksempel har vi ikke markeret **Forretningskontaktoplysninger**.
 
-   ![Begrænse redigeringen af forretningskontaktoplysninger](./media/hr-employee-self-service-restrict-business.png)
+   ![Begrænse redigeringen af forretningskontaktoplysninger.](./media/hr-employee-self-service-restrict-business.png)
 
 4. Vælg **Gem**.
 
-   ![Gem ændringer](./media/hr-employee-self-service-restrict-save.png)
+   ![Gem ændringer.](./media/hr-employee-self-service-restrict-save.png)
 
 ## <a name="employee-experience"></a>Medarbejdererfaring
 
@@ -56,23 +56,23 @@ Når du har begrænset medarbejdernes adgang til at tilføje eller redigere kont
 
 I dette eksempel, hvor medarbejdere ikke kan redigere **forretningskontaktoplysninger**, kan de stadig se oplysningerne i Medarbejderselvbetjening:
 
-![Se forretningskontaktoplysninger](./media/hr-employee-self-service-restrict-view.png)
+![Se forretningskontaktoplysninger.](./media/hr-employee-self-service-restrict-view.png)
 
 Men når de vælger forretningskontaktoplysninger, vises ruden **Rediger adresse** som skrivebeskyttet, og de kan ikke ændre nogen af felterne.
 
-![Forretningskontaktoplysninger vises som skrivebeskyttede](./media/hr-employee-self-service-restrict-read-only.png)
+![Forretningskontaktoplysninger vises som skrivebeskyttede.](./media/hr-employee-self-service-restrict-read-only.png)
 
 Hvis de vælger **Tilføj** for at tilføje en ny adresse, kan de heller ikke vælge **Forretning** på rullelisten **Formål**.
 
-![Medarbejderen kan ikke tilføje en forretningsadresse](./media/hr-employee-self-service-restrict-add.png)
+![Medarbejderen kan ikke tilføje en forretningsadresse.](./media/hr-employee-self-service-restrict-add.png)
 
 Medarbejdere får samme erfaring, når de vælger **Kontaktoplysninger** på siden **Personlige oplysninger** og tilføjer en ny adresse. På rullelisten **Formål** vises kun de typer oplysninger, de kan tilføje. 
 
-![Medarbejderen kan ikke vælge Forretning på rullelisten Formål](./media/hr-employee-self-service-restrict-purpose.png)
+![Medarbejderen kan ikke vælge Forretning på rullelisten Formål.](./media/hr-employee-self-service-restrict-purpose.png)
 
 **Kontaktoplysninger** viser nu **Formål** i gitteret.
 
-![Formål vises i gitteret Kontaktoplysninger](./media/hr-employee-self-service-restrict-purpose-grid.png)
+![Formål vises i gitteret Kontaktoplysninger.](./media/hr-employee-self-service-restrict-purpose-grid.png)
 
 ## <a name="see-also"></a>Se også
 

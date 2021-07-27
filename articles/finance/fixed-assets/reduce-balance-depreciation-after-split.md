@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 056808b7d4d490bc4d60aa058108d159c1d4867c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b3a8fe37ae97cf3b14f5121274603cd30de3304b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826245"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356769"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Reducere saldoafskrivning efter en opdeling
 
@@ -37,7 +37,7 @@ Følgende betingelser gælder f. eks.:
 - Afskrivningen af det første regnskabsår er lig med $18.000, den månedlige afskrivning er lig med $150, og aktivet afskrives derefter indtil november 2019 med $738.75.
 - I november 2019 opdeles 80 procent af aktivet på et andet anlægsaktiv.
 
-[![Reducere saldoafskrivning efter en opdeling](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Reducere saldoafskrivning efter en opdeling.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Det beløb, der skal afskrives for det oprindelige anlæg, er $1.822,25. Dette beløb er lig med NBV, før den opdelte transaktion bogføres ($9.111,25), plus den anskaffelsesregulering, der genereres under bogføring af den opdelte transaktion (-$8.000), plus den afskrivningsregulering, der genereres under den opdelte transaktion ($711). Derfor er afskrivningen for det andet år (1.822,25 × 18 procent) ÷ 12 = $27,33.
 

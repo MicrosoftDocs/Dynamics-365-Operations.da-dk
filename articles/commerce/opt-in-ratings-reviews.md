@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9e3f2a17e182c0e3efc8b90380eff74f350c3278
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cce8cb6ef9e0cc74abf90f16ed0ee481b8274a03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804643"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352982"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Tilvælge brug af vurderinger og anmeldelser
 
@@ -43,7 +43,7 @@ Du kan tilvælge at bruge vurderinger og anmeldelser på dit websted ved at føl
 1. Vælg **Ja** i indstillingen **Aktivér vurderinger og anmeldelser**.
 1. I den **AAD-sikkerhedsgruppen for redaktør af vurderinger og anmeldelser (sikkerhedsgruppens objekt-id)** skal du angive id'et for den Microsoft Azure Active Directory-sikkerhedsgruppe (Azure AD), der omfatter vurderings- og anmeldelsesredaktørerne.
 
-    ![Tilvælge brug af vurderinger og anmeldelser](media/LCS_RnR_Preference.png)
+    ![Tilvælge brug af vurderinger og anmeldelser.](media/LCS_RnR_Preference.png)
 
 1. Fuldfør processen til e-handelsinitialisering.
 

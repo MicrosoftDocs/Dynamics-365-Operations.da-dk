@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0c08cee1fc772dbd06aeca3a96fdc40c1ca62413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907759"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353884"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Oprette og administrere brugere af kundeportalen
 
@@ -38,7 +38,7 @@ Videoen [Inviter kunder til at registrere og bruge din tilpassede portal](https:
 
 Kontakter i Power Apps-portaler gemmes som poster i tabellen **Kontakter** i Microsoft Dataverse. Dobbeltskrivning synkroniserer derefter disse poster med Microsoft Dynamics 365 Supply Chain Management som påkrævet.
 
-![Systemdiagram for kundeportal-kontaktpersoner](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")
+![Systemdiagram for kundeportal-kontaktpersoner.](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")
 
 Før du begynder at invitere nye kunder, skal du sikre dig, at du har aktiveret tabeltilknytningen **Kontakt** i dobbeltskrivning.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dcede0818630329a5608c2d294c9c9f4f749f13
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3cbd4a034b89308c33651c5a923b67bc0eabf413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750126"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345756"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -58,11 +58,11 @@ ER-formeldesigneren kan bruges til at definere et udtryk, der transformerer data
 
 I følgende illustration vises et udtryk af denne type design. I dette eksempel afrunder udtrykket værdien af feltet **Intrastat.AmountMST** i Intrastat-tabellen til to decimaler og returnerer den afrundede værdi.
 
-[![Udtrykket databinding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Udtrykket databinding.](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 I følgende illustration vises, hvordan et udtryk af denne type kan bruges. I dette eksempel er resultatet af det designede udtryk angivet i **Transaction.InvoicedAmount**-komponenten af **momsrapporteringsmodellen**.
 
-[![Udtrykket databinding anvendes](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Udtrykket databinding anvendes.](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 På kørselstidspunktet afrunder den designede formel `ROUND (Intrastat.AmountMST, 2)` værdien af feltet **AmountMST** for hver post i Intrastattabellen til to decimaler. Den indsætter derefter den afrundede værdi i komponenten **Transaction.InvoicedAmount** i datamodellen **Momsrapportering**.
 
@@ -72,17 +72,17 @@ ER-formeldesigneren kan bruges til at definere et udtryk, der formaterer data, d
 
 I følgende illustration vises designet af en transformation af denne type. Dette eksempel på **TrimmedString**-transformation afkorter indgående data i af datatypen *Streng* ved at fjerne foranstillede og efterstillede mellemrum. Derefter returneres den afkortede strengværdi.
 
-[![Transformation](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![Transformation.](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 I følgende illustration vises, hvordan en transformation af denne type kan bruges. I dette eksempel sender flere komponenter tekst som output til det generere elektroniske dokument på kørselstidspunktet. Alle disse formatkomponenter refererer til transformationen **TrimmedString** efter navn.
 
-[![Transformation, der bruges](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![Transformation, der bruges.](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 Når formatkomponenter refererer til **TrimmedString-**-transformation (for eksempel **partyName**-komponenten i den foregående illustration), sendes tekst som output for at generere det elektroniske dokument. Denne tekst indeholder ikke foranstillede eller efterstillede mellemrum.
 
 Hvis du har en formatering, der skal anvendes individuelt, kan den indføres som et individuelt udtryk for binding af en bestemt formatkomponent. I følgende illustration vises et udtryk af denne type. I dette eksempel er **partyType**-formatkomponenten bundet til datakilden via et udtryk, der konverterer indgående data fra feltet **Model.Company.RegistrationType** i datakilden til stor bogstavtekst. Udtrykket sender derefter teksten som output til det elektroniske dokument.
 
-[![Anvende formatering på en enkelt komponent](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![Anvende formatering på en enkelt komponent.](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="process-flow-control"></a><a name="Validation"></a>Kontrol af procesforløb
 
@@ -98,7 +98,7 @@ Hver regel i kontrol af procesforløb udformet som en enkelt validering. I følg
 - Hvis listen over transaktioner er tom, stopper valideringen kørselsprocessen og returnerer **FALSE**.
 - Valideringen returnerer en fejlmeddelelse, der indeholder teksten til etiketten for SYS70894 på brugerens foretrukne sprog.
 
-[![Validering](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![Validering.](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 ER-formeldesigneren bruges også til at generere et filnavn til et genererende elektronisk dokument og til at styre processen til oprettelse af en fil. I følgende illustration vises designet af en kontrol af procesforløb af denne type. Her er en forklaring af konfigurationen i dette eksempel:
 
@@ -107,7 +107,7 @@ ER-formeldesigneren bruges også til at generere et filnavn til et genererende e
 - Et udtryk returnerer et filnavn til generering af elektroniske dokumenter ved at sammenkæde filnavnet og filtypenavnet. For den anden batch og alle efterfølgende batches indeholder filnavnet batch-ID som et suffiks.
 - Et udtryk aktiverer (returnerer **TRUE**) processen med en filoprettelse for de eneste batches, der indeholder mindst én post.
 
-[![Kontrol af procesforløb](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Kontrol af procesforløb.](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="document-content-control"></a><a name="Enabled"></a>Kontrol af dokumentindhold
 
@@ -121,18 +121,18 @@ I følgende illustration vises udtryk af denne type. (Version 11.12.11 af format
 - **PaymentNotes**-komponenten bruges til at generere tekst på betalingsnoter.
 - **DelimitedSequence**-komponenten genererer kommaseparerede fakturanumre, der bruges til at afstemme den aktuelle kreditoverførsel.
 
-[![Komponenterne PaymentNotes and DelimitedSequence](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![Komponenterne PaymentNotes and DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > Komponenterne **PaymentNotes** og **DelimitedSequence** er markeret med et spørgsmålstegn. Et spørgsmålstegn angiver, at brugen af en komponent er betinget. I dette tilfælde er brugen af komponenterne baseret på følgende kriterier:
 >
 > - Udtrykket `@.PaymentsNotes <> ""` er defineret for komponeneten **PaymentNote** og gør det muligt at udfylde XML-elementet (ved at returnere **SANDT**) **Ustrd** med teksten for betalingsnoter, hvis teksten til den aktuelle kreditoverførsel ikke er tom.
 >
->    [![Udtryk for komponenten PaymentNotes](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![Udtryk for komponenten PaymentNotes.](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - Udtrykket `@.PaymentsNotes = ""`, som er defineret for komponenten **DelimitedSequence**, gør det muligt at udfylde XML-elementet (ved at returnere **SANDT**) **Ustrd** med en kommasepareret liste med fakturanumre, der bruges til at afstemme den aktuelle kreditoverførsel, såfremt teksten på betalingsnoter til denne kreditoverførsel er tom.
 >
->    [![Udtryk for komponenten DelimitedSequence](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![Udtryk for komponenten DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > Baseret på denne indstilling vil den genererede meddelelse for hver debitorbetaling, XML-elementet **Ustrd**, indeholde enten tekst med betalingsnoter eller, når denne tekst er tom, kommasepareret liste med fakturanumre, som bruges til at afstemme denne betaling.
 
@@ -140,7 +140,7 @@ I følgende illustration vises udtryk af denne type. (Version 11.12.11 af format
 
 På siden **Formeldesigner** skal du vælge **Test** for at validere, hvordan den konfigurerede formel fungerer.
 
-[![Valg af test til validering af en formel](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Valg af test til validering af en formel.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 Når værdierne for formelargumenter er påkrævede, kan du åbne dialogboksen **Testudtryk** fra siden **Formeldesigner**. I de fleste tilfælde skal disse argumenter defineres manuelt, fordi de konfigurerede bindinger ikke køres på designtidspunktet. Fanen **Testresultat** på siden **Formeldesigner** viser resultatet fra kørslen af den konfigurerede formel.
 
@@ -148,15 +148,15 @@ Følgende eksempel viser, hvordan du kan teste den formel, der er konfigureret f
 
 Når du tester denne formel, kan du bruge dialogboksen **Testudtryk** til at angive værdien af Intrastat-varekoden til test.
 
-[![Angiv Intrastat-varekoden til test](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![Angiv Intrastat-varekoden til test.](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 Når du har angivet Intrastat-varekoden og valgt **OK**, viser fanen **Testresultater** på siden **Formeldesigner** resultatet af kørslen af den konfigurerede formel. Du kan derefter vurdere, om resultatet er acceptabelt. Hvis resultatet ikke er acceptabelt, kan du opdatere formlen og teste den igen.
 
-[![Testresultat](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![Testresultat.](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Nogle formler kan ikke testes på designtidspunktet. For eksempel kan en formel returnere et resultat af en datatype, der ikke kan vises under fanen **Testresultater**. I dette tilfælde får du vist en fejlmeddelelse, der anfører, at formlen ikke kan testes.
 
-[![Fejlmeddelelse](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Fejlmeddelelse.](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

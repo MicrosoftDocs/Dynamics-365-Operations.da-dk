@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799173"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349596"
 ---
 # <a name="create-a-default-customer"></a>Oprette en standarddebitor
 
@@ -47,7 +47,7 @@ Du kan oprette en kundegruppe ved at følge disse trin.
 
 Følgende billede viser flere konfigurerede kundegrupper.
 
-![Debitorgrupper](media/customer-groups.png)
+![Debitorgrupper.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Opret et kundeadressekartotek
 
@@ -63,7 +63,7 @@ Du kan oprette et kundeadressekartotek ved at følge disse trin.
 
 Følgende billede viser et eksempel på et adressekartotek.
 
-![Adressebog](media/address-book.png)
+![Adressebog.](media/address-book.png)
 
 ## <a name="create-a-default-customer&quot;></a>Oprette en standarddebitor
 
@@ -86,11 +86,11 @@ Du kan oprette en standarddebitor ved at følge disse trin.
 
 Følgende billede viser et eksempel på kundeoprettelse.
 
-![Standardkundeoprettelse](media/default-customer-creation.png)
+![Standardkundeoprettelse.](media/default-customer-creation.png)
 
 Følgende billede viser en standardkonfiguration af kunde.
 
-![Eksempelkonfiguration af kunde](media/default-customer-configuration1.png)
+![Eksempelkonfiguration af kunde.](media/default-customer-configuration1.png)
 
 Du kan beholde de fleste af standardværdierne i skærmen kundedetaljer, men to værdier skal ændres.
 
@@ -100,7 +100,7 @@ Du kan beholde de fleste af standardværdierne i skærmen kundedetaljer, men to 
 
 Følgende billede viser et eksempel på konfiguration af kunde.
 
-![Eksempel på konfiguration af kunde](media/default-customer-configuration2.png)
+![Eksempel på konfiguration af kunde.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

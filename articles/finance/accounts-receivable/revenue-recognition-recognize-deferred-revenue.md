@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 8d9b5e1248497ec74e1c7125b2395c0ed4c825c2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cafe28e0aa71d623a728829ff1bf71bef5a132b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820515"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347194"
 ---
 # <a name="recognize-deferred-revenue"></a>Registrere udskudt indtægt
 
@@ -36,7 +36,7 @@ Du kan få adgang til oplysningerne om tidsplanen for indtægtsføring på to m�
 - Du kan åbne tidsplanen for indtægtsføring direkte fra en faktureret salgsordre. I dette tilfælde filtreres oplysningerne i indtægtstidsplanen, så der kun vises oplysninger for den valgte salgsordre. Denne fremgangsmåde er nyttig, når du validerer tidsplanoplysningerne for en salgsordre.
 - Du kan åbne tidsplanen for indtægtsføring fra siden **Indtægtsføring \> Periodiske opgaver**. Denne fremgangsmåde bruges ofte, når der registreres indtægt ved slutningen af en periode. Når siden åbnes første gang, vises der ingen oplysninger. Brug filtrene over gitteret til at definere kriterier for de tidsplanoplysninger, der skal vises. Du kan filtrere på fakturadatoerne ved at angive et datointerval, en salgsordre, en kunde, et projekt-id eller en tilstand.
 
-[![Illustration af siden Omsætningsplaner](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
+[![Illustration af siden Omsætningsplaner.](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 I oversigtspanelet **Økonomisk dimension** under gitteret vises salgsordrelinjens økonomiske dimensioner. Disse dimensioner blev taget i betragtning under bogføringen til udskudt indtægt. De tages også i betragtning, når indtægten registreres. Hvilke dimensionsværdier der bruges, afhænger af den kontostruktur, der er tildelt til hovedkontiene for indtægt og udskudt indtægt.
 
@@ -46,7 +46,7 @@ Du registrerer indtægten ved at køre processen **Opret kladde** fra siden **Re
 
 Hvis du vil definere kriterierne for valg og bogføring af indtægt, skal du vælge **Opret kladde** for at åbne dialogboksen **Opret kladde**.
 
-[![Opret indstillinger for kladdeparametre](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
+[![Opret indstillinger for kladdeparametre.](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
 
 Brug indstillingerne i feltgruppen **Behandlingsdato** i dialogboksen til at angive den bogføringsdato, der skal bruges, når indtægterne registreres. Hvis du vælger **Valgt dato**, kan du angive en bogføringsdato i feltet **Transaktionsdato**. Hvis du vælger **Dato for indtægtstidsplan**, anvendes transaktionsdatoen ikke. I stedet bruges værdien i feltet **Recognize date** (Registrer dato) på de enkelte linjer i tidsplanen som bogføringsdato.
 
@@ -56,11 +56,11 @@ Når du er færdig med at angive datoerne, skal du vælge **OK** i dialogboksen 
 
 Når processen er kørt, markeres de linjer i tidsplanen, der blev overført til kladden, som **Behandlet**. Flaget **Behandlet** angiver, at linjerne er blevet overført til kladden, men de kan være bogført eller ikke-bogført. Når indtægtsføringskladden er bogført, fjernes flaget **Behandlet** ikke. Hvis indtægtsføringskladden slettes, eller hvis en linje slettes, fjernes flaget **Behandlet**. På denne måde kan linjen registreres, når processen **Opret kladde** køres igen.
 
-[![Siden Tidsplaner for indtægtsføring](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
+[![Siden Tidsplaner for indtægtsføring.](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
 
 På siden **Indtægtsføringskladde** (**Indtægtsføring \> Kladdeposteringer \> Indtægtsføringskladde**) skal du åbne **Linjer** for at få vist oplysningerne om, hvad der registreres. Der oprettes altid en separat transaktion for hver linje i den tidsplan, der registreres, selvom alle linjerne bogføres på den samme dato ved hjælp af de samme finanskonti.
 
-[![Siden Kladdebilag](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
+[![Siden Kladdebilag.](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
 
 Kolonnen **Konto** viser finanskontoen for udskudt indtægt. Denne finanskonto kan ikke redigeres. Denne begrænsning er en hjælp til at sikre, at den korrekte finanskonto for udskudt indtægt eftergives. Denne finanskonto er ikke valideret i forhold til kontostrukturen, da den kan være ændret, siden den seneste bogføring til finanskontoen for udskudt indtægt.
 
@@ -82,7 +82,7 @@ Visse redigeringer er tilladt på linjerne i tidsplanen. Følgende felter kan æ
 
 - **På hold** – dette flag kan angives eller fjernes, før linjen behandles. Hvis du vil fjerne flaget, skal du markere rækken og derefter vælge **Fjern på hold**. Indtægt kan ikke registreres på linjer, der er på hold. Linjer kan automatisk sættes på hold, hvis indtægtstidsplanen er konfigureret til automatisk at være på hold.
 
-    [![Indtægtstidsplaner - rediger tidsplanlinjer](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+    [![Indtægtstidsplaner – rediger tidsplanlinjer.](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
 
 - **Registrer dato** – registreringsdatoen kan ændres, før linjen behandles. Når processen til oprettelse af indtægtsføringskladden køres, angives der en dato i feltet **Registrer indtægt pr. dato**. Denne dato sammenlignes med datoen i feltet **Registrer dato** for at bestemme, hvilke linjer der skal registreres.
 - **Beløb, der skal frigives** – det beløb, der vil blive frigivet, kan ændres, før linjen behandles. Du kan reducere det indtægtsbeløb, der registreres, men du kan ikke øge det. Dette felt giver en organisation mulighed for at registrere en del af indtægten på registreringsdatoen. Hvis beløbet ændres, viser beløbet i feltet **Restbeløb**, hvor meget indtægt der stadig skal registreres.
@@ -94,18 +94,18 @@ Oplysningerne om indtægtstidsplanen oprettes på baggrund af den indtægtstidsp
 
 Hvis du vil ændre tidsplanen, skal du vælge en planlægningslinje for den vare, du er ved at ændre. I følgende illustration er linjen valgt for vare S0008, der blev bogført ved hjælp af en 12-måneders indtægtstidsplan. Når du vælger **Opdater kontraktvilkår**, vises der en dialogboks med kontraktens start- og slutdato samt indtægtstidsplanen.
 
-[![Start- og slutdato for kontrakt](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)
+[![Start- og slutdato for kontrakt.](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)
 
 Rediger kontraktens start- og slutdato, så de afspejler det korrekte datointerval. Når du ændrer datointervallet, skal værdien i feltet **Antal forekomster** svare til en indtægtstidsplan, der er defineret i systemet. I dette eksempel skal der oprettes en indtægtstidsplan på 24 måneder, da kontrakten blev ændret til en 24-måneders kontrakt. Da indtægtstidsplanen på 24 måneder findes, angives den som standard, og kontrakten kan ændres. Hvis der ikke findes en indtægtstidsplan med et tilsvarende antal forekomster, kan kontrakten ikke ændres. Når du er færdig med at opdatere kontraktvilkårene og indtægtstidsplanen, skal du vælge **OK** i dialogboksen for at gemme ændringerne.
 
-[![Datointerval for kontrakt blev opdateret](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
+[![Datointerval for kontrakt blev opdateret.](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
 
 Kontraktændringerne har følgende indvirkninger på oplysningerne i indtægtstidsplanen:
 
 - Hvis der ikke er registreret nogen indtægt for produktet, fjernes de tidligere tidsplanoplysninger, og de erstattes med oplysninger om den nye indtægtstidsplan. Vare S0008 havde f.eks. oprindelig 12 linjer i tidsplanoplysningerne. Disse 12 linjer fjernes og erstattes med 24 linjer baseret på den nye indtægtstidsplan.
 - Hvis der er registreret indtægt for produktet, blev en del af indtægten fejlagtigt registreret, fordi registreringen blev baseret på den forkerte indtægtstidsplan. Disse linjer skal tilbageføres og registreres igen på baggrund af den nye tidsplan. I dette scenarie oprettes der nye indtægtstidsplanlinjer med negative beløb på den oprindelige registreringsdato. Der oprettes derefter nye linjer for at registrere beløbene ud fra den nye indtægtstidsplan. D. 8. august 2019 registrerede du f.eks. indtægt på 10,53 USD. Den 8. september 2019 registrerede du indtægt på 13,16 USD. Derfor oprettes der to nye linjer på samme dato. Én linje er for 10,53 USD, og den anden linje er for 13,16 USD. Der oprettes derefter fireogtyve nye linjer, og den samlede udskudte indtægt på 160,61 USD tildeles på tværs af dem. Du kan bogføre tilbageførselslinjerne ved at køre processen **Opret kladde**.
 
-[![Tidsplan for indtægtsføring](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+[![Tidsplan for indtægtsføring.](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

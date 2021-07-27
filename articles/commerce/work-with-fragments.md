@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1fa55ab83562983273768895db61032ec7199fa6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 017cdc76368ae4f80131471a289aa03ab06c99bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793939"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350202"
 ---
 # <a name="work-with-fragments"></a>Arbejde med fragmenter 
 
@@ -45,7 +45,7 @@ Alle de steder, hvor fragmentet tilføjes, er referencer til det centrale hero-f
 
 I følgende illustration vises, hvordan fragmenter kan bruges til at centralisere oprettelse af delte modulkonfigurationer på tværs af et e-handels-websted.
 
-![En illustration, der viser, hvordan fragmenter kan bruges til at centralisere oprettelse af delte modulkonfigurationer på tværs af et e-handels-websted](./media/fragment-figure1.png)
+![En illustration, der viser, hvordan fragmenter kan bruges til at centralisere oprettelse af delte modulkonfigurationer på tværs af et e-handelswebsted.](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>Oprette et fragment
 
@@ -62,7 +62,7 @@ Hvis du vil konvertere et tidligere konfigureret modul til et fragment, der kan 
 1. I dialogboksen **Gem som fragment** skal du angive et navn til fragmentet.
 1. Vælg **OK** for at gemme modulkonfigurationen som et fragment, der kan føjes til andre sider.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Opret et nyt fragment
 
@@ -73,7 +73,7 @@ Udfør følgende trin for at oprette et nyt fragment i Commerce-webstedsgenerato
 1. Vælg en modultype til dit fragment.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Hvis du vælger en generisk containermodultype, får du størst fleksibilitet, når du skal opdatere og konfigurere dit fragment senere.
 
@@ -88,14 +88,14 @@ Udfør følgende trin for at tilføje et fragment på en side i Commerce-websted
 1. Vælg en container eller en plads, som underordnede moduler kan føjes til, i dispositionsruden til venstre eller direkte i den visuelle sidegenerator.
 1. Vælg ellipsen (**...**) ud for navnet på containeren eller pladsen.  Hvis du bruger den visuelle sidegenerator, skal du vælge plussymbolet (**+**).  
 1. Vælg **Tilføj fragment**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Hvis containeren eller pladsen ikke understøtter nye underordnede moduler, er indstillingen **Tilføj fragment** ikke tilgængelig.
     
 1. Søg efter og vælg et fragment, der skal tilføjes, i dialogboksen **Vælg fragment**. Hvis der ikke vises nogen tilgængelige fragmenter, skal du muligvis først oprette et fragment ud fra en modultype, som den valgte container eller plads understøtter.
 1. Vælg det ønskede fragment for at føje det til containeren eller pladsen på siden.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > De moduler, der er tilladt i en container eller plads, defineres af sidens skabelon eller modulernes egne definitioner.

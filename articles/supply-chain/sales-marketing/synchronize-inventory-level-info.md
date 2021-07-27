@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 15466699b94c284208330d50b840c874534b879c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ce5ddf863988475550584384f4cf26f1302768aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910271"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355895"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synkronisere oplysninger på lagerniveau fra Supply Chain Management til Field Service 
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910271"
 
 I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere oplysninger på lagerniveau fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 Følgende skabelon og underliggende opgaver bruges til at synkronisere niveauer af disponibel lagerbeholdning fra Supply Chain Management til Field Service.
@@ -89,7 +89,7 @@ Du kan anvende filtre i Avanceret forespørgsel og filtrering, så kun bestemte 
 
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktlager (Supply Chain Management til Field Service): Produktlager
 
-[![Skabelontilknytning i dataintegration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+[![Skabelontilknytning i dataintegration.](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

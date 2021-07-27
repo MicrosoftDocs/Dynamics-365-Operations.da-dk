@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7b97eca8c2d4fe9f71c3cd8f1e40a3bbb7ee4879
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021363"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348410"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Understøttelse af momsfunktion til flytteordrer
 
@@ -40,7 +40,7 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
 
 1. Vælg kladdefunktionsversionen under fanen **Versioner** på siden **Momsfunktioner**, og vælg derefter **Rediger**.
 
-    ![Vælge Rediger](../media/tax-feature-support-01.png)
+    ![Vælge Rediger.](../media/tax-feature-support-01.png)
 
 2. Vælg **Tilføj** under fanen **Momskoder** på siden **Konfiguration af momsfunktioner** for at oprette nye momskoder. I dette eksempel er der oprettet tre momskoder: **NL-Exempt**, **BE-RC-21** og **BE-RC+21**.
 
@@ -53,7 +53,7 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         4. Vælg **Tilføj** i tabellen **Sats**.
         5. Skift **Er momsfri** til **Ja** i afsnittet **Generelt**.
 
-        ![NL-Exempt momskode](../media/tax-feature-support-02.png)
+        ![NL-Exempt momskode.](../media/tax-feature-support-02.png)
 
     - Når en flytteordre modtages på et lagersted i Belgien, anvendes modtagermomsmekanismen med momskoderne **BE-RC-21** og **BE-RC+21**.
         
@@ -66,7 +66,7 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         6. Skift **Er modtagermoms** til **Ja** i afsnittet **Generelt**.
         7. Vælg **Gem**.
 
-        ![BE-RC-21-momskode for modtagermoms](../media/tax-feature-support-03.png)
+        ![BE-RC-21-momskode for modtagermoms.](../media/tax-feature-support-03.png)
         
         Opret momskoden **BE-RC+21**.
         1. Vælg **Tilføj**, og angiv **BE-RC-21** i feltet **Momskode**.
@@ -76,7 +76,7 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         5. Angiv **21** i feltet **Momssats**.
         6. Vælg **Gem**.
 
-        ![BE-RC+21-momskode for modtagermoms](../media/tax-feature-support-04.png)
+        ![BE-RC+21-momskode for modtagermoms.](../media/tax-feature-support-04.png)
 
 3. Definer anvendeligheden af momskoderne.
 
@@ -105,11 +105,11 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         6. Vælg **BE-RC+21** og **BE-RC-21** i feltet **Momskoder**.
         7. Angiv den relaterede momsgruppe og varemomsgruppe, der er defineret i dit Finance-system, i feltet **Momsgruppe** og **Varemomsgruppe**.
 
-        ![Anvendelighedsregler](../media/image5.png)
+        ![Anvendelighedsregler.](../media/image5.png)
 
 4. Fuldfør og publicer den nye momsfunktionsversion.
 
-    [![Ændre status for den nye version](../media/image6.png)](../media/image6.png)
+    [![Ændre status for den nye version.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Konfigurere Finance til moms- og flytteordretransaktioner
 
@@ -121,7 +121,7 @@ Hvis du vil aktivere og konfigurere moms til flytteordrer, skal du følge disse 
     > [!IMPORTANT]
     > Funktionen **Moms i flytteordre** er fuldstændig afhængig af momstjenesten. Du kan derfor kun aktivere den, når du har installeret momstjenesten.
 
-    ![Funktionen Moms i flytteordre](../media/image7.png)
+    ![Funktionen Moms i flytteordre.](../media/image7.png)
 
 3. Aktivér momstjenesten, og vælg forretningsprocessen **Lager**.
 
@@ -131,11 +131,11 @@ Hvis du vil aktivere og konfigurere moms til flytteordrer, skal du følge disse 
     1. Gå til **Moms** \> **Konfiguration** \> **Momskonfiguration** \> **Konfiguration af momstjeneste**.
     2. Vælg **Lager** i feltet **Forretningsproces**.
 
-    ![Angive feltet Forretningsproces](../media/image8.png)
+    ![Angive feltet Forretningsproces.](../media/image8.png)
 
 4. Kontrollér, at modtagermomsmekanisme er konfigureret. Gå til **Finans** \> **Konfiguration** \> **Parametre**, og sørg for, at fanen **Modtagermoms** har indstillingen **Aktivér modtagermoms** angivet til **Ja**.
 
-    ![Aktivere indstilling for modtagermoms](../media/image9.png)
+    ![Aktivere indstilling for modtagermoms.](../media/image9.png)
 
 5. Kontrollér, at de relaterede momskoder, momsgrupper, varemomsgrupper og momsregistreringsnumre er konfigureret i Finance i overensstemmelse med vejledningerne for momstjenesten.
 6. Konfigurere en konto til foreløbig transit. Dette trin er kun påkrævet, når den moms, der anvendes på en flytteordre, ikke gælder for en momsfritagelses eller modtagermomsmekanisme.
@@ -143,7 +143,7 @@ Hvis du vil aktivere og konfigurere moms til flytteordrer, skal du følge disse 
     1. Gå til **Moms** \> **Konfiguration** \> **Moms** \> **Finanskonteringsgrupper**.
     2. Vælg en finanskonto i feltet **Foreløbig transit**.
 
-    ![Vælge en konto til foreløbig transit](../media/image10.png)
+    ![Vælge en konto til foreløbig transit.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Konfigurere basislager flytteordretransaktioner
 
@@ -158,7 +158,7 @@ Benyt følgende fremgangsmåde for at konfigurere basislager for at aktivere fly
     > [!NOTE]
     > Et af de steder, du opretter, skal kaldes **Transit**. I senere trin af denne procedure skal du tildele dette sted til transitlagerstedet, så momsrelaterede lagerbilag kan bogføres i "afsendelses"- og "modtagelses"-transaktioner for flytteordrer. Adressen på transitstedet er irrelevant for momsberegningen. Du kan derfor lade feltet være tomt.
 
-    ![Konfigurere steder](../media/image11.png)
+    ![Konfigurere steder.](../media/image11.png)
 
 2. Opret afsend fra-, transit- og afsend til-lagersteder. Alle adresseoplysninger, der vedligeholdes på et lagersted, tilsidesætter stedadressen under momsberegningen.
 
@@ -166,24 +166,24 @@ Benyt følgende fremgangsmåde for at konfigurere basislager for at aktivere fly
     2. Vælg **Ny** for at oprette et lagersted og tildele det tilhørende sted.
     3. Gentag trin 2 for at oprette et lagersted for hvert sted efter behov.
 
-    ![Konfigurere lagersteder](../media/image12.png)
+    ![Konfigurere lagersteder.](../media/image12.png)
 
     > [!NOTE]
     > I forbindelse med et afsendelse fra-lagersted skal der vælges et transitlagersted i feltet **Transitlagersted** for flytteordretransaktioner.
     >
-    > ![Vælge et transitlagersted](../media/image13.png)
+    > ![Vælge et transitlagersted.](../media/image13.png)
 
 3. Sørg for, at lagerbogføringen er konfigureret for flytteordretransaktioner.
 
     1. Gå til **Lagerstyring** \> **Konfiguration** \> **Bogføring** \> **Bogføring**.
     2. Kontrollér, at der er konfigureret en finanskonto til både **Lagerafgang** og **Lagertilgang** under fanen **Lager**.
 
-        ![Konfigurere bogføring af lagertilgang og lagerafgang](../media/image14.png)
+        ![Konfigurere bogføring af lagertilgang og lagerafgang.](../media/image14.png)
 
     3. Kontrollér, at der er konfigureret en finanskonto til bogføring af **Intern kreditor**.
 
-        ![Konfigurere bogføring af intern kreditor](../media/image15.png)
+        ![Konfigurere bogføring af intern kreditor.](../media/image15.png)
 
     4. Kontrollér, at der er konfigureret en finanskonto til bogføring af **Intern debitor**.
 
-        ![Konfigurere bogføring af intern debitor](../media/image16.png)
+        ![Konfigurere bogføring af intern debitor.](../media/image16.png)

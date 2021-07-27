@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e9c6423a7fb604005d4fb7f1eca05a1ef7d210e5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce0879565babfbf526e1aa6864482e60cbabd377
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817215"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345590"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Indtægtsføring på salgsordrer
 
@@ -36,7 +36,7 @@ I dette emne beskrives de grundlæggende funktioner til registrering af indtægt
 
 Den følgende salgsordre angives og indeholder tre varer, der er konfigureret til indtægtsføring.
 
-[![Angiv en salgsordre](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
+[![Angiv en salgsordre.](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
 
 Der er to koncepter for indtægtsføring:
 
@@ -47,7 +47,7 @@ Der er to koncepter for indtægtsføring:
 
     Den anden vare, S0008, er en servicevare, der er konfigureret som en PCS-vare (Support efter kontrakt). De vedvarende tekniske tjenester leveres til kunden i løbet af en periode på 12 måneder. Derfor tildeles som standard en indtægtstidsplan på **12M** til produktet. Da denne vare er en PCS-vare, skal der defineres start- og slutdato for kontrakten. Kontraktens start-og slutdato findes som standard i vinduet Vareoplysninger – fanen Opsætning. I indtægtsplanen er opsætningen af **12M** defineret, så kontraktbetingelserne automatisk udfyldes som vist i følgende illustration.
 
-    [![Indtægtstidsplaner](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
+    [![Indtægtstidsplaner.](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
 
     Den tredje vare, S0012, er hardware, og der tildeles ikke en indtægtsplan som standard. Indtægten for hardwaren registreres, så snart varen faktureres.
 
@@ -55,7 +55,7 @@ Der er to koncepter for indtægtsføring:
 
 Hvis du vil have vist flere oplysninger om indtægtsprisen og indtægtstidsplanen, skal du bruge knapperne i gruppen **Indtægtsføring** på fanen **Administrer** i salgsordrens handlingsrude. Da salgsordren ikke er bekræftet på dette tidspunkt, er knapperne, der bruges til indtægtsføring, ikke tilgængelige. Disse knapper bliver tilgængelige eller utilgængelige, når salgsordren gennemgår de stadier, der fører til opfyldelse.
 
-[![Salgsordreoverskrift](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
+[![Salgsordreoverskrift.](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
 
 De første tre knapper giver oplysninger om indtægtsprisen for varerne i salgsordreopsætningen for indtægtsføring.
 
@@ -68,13 +68,13 @@ De sidste to knapper gjver oplysninger om indtægtsplanen for de varer på salgs
 - **Tidsplan for registrering af forventet indtægt** – Denne knap bliver tilgængelig, når salgsordren er bekræftet, men den bliver ikke tilgængelig, når salgsordren er faktureret. Den åbner en side, der viser den forventede indtægtstidsplan. Den endelige tidsplan kan ændres, fordi den forventede tidsplan anvender den ønskede afsendelsesdato, mens den endelige tidsplan bruger den faktiske afsendelsesdato.
 - **Tidsplan for indtægtsføring** – Denne knap bliver tilgængelig, når salgsordren faktureres. Den endelige tidsplan for indtægtsføring oprettes ikke, når en bekræftelse finder sted, eller der oprettes en følgeseddel. Den oprettes kun, når salgsordren faktureres.
 
-I følgende eksempel forekom der en fordeling af indtægtspris, da salgsordren blev bekræftet. Bemærk, at selvom indtægtspriserne tildeles forskelligt, skal det samlede beløb i feltet **Indtægt, der skal registreres** stadig være lig med summen af de salgsordrelinjer, der faktureres til kunden. Summen af salgsordrelinjerne er 1499 USD eksklusive moms. Derfor skal summen af værdierne for **Indtægt, der skal registreres** også være 1499 USD.
+I følgende eksempel forekom der en fordeling af indtægtspris, da salgsordren blev bekræftet. Bemærk, at selvom indtægtspriserne tildeles forskelligt, skal det samlede beløb i feltet **Indtægt, der skal registreres** stadig være lig med summen af de salgsordrelinjer, der faktureres til kunden. Summen af salgsordrelinjerne er 1499 USD eksklusive moms. Derfor skal summen af værdierne for **Indtægt, der skal registreres** også være DKK 1.499.
 
-[![Fordeling af indtægtspris](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
+[![Fordeling af indtægtspris.](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
 
-Den forventede tidsplan for indtægtsføring oprettes også. I indtægtsplanen bruges værdien **Indtægt, der skal registreres** som det beløb, der skal udskydes. Vare S0001 udskyder 321,21 USD i stedet for 300 USD og vare S0008 udskyder 160,61 USD i stedet for 100 USD. Vare S0012 vises ikke i den forventede tidsplan, fordi indtægten ikke er udskudt. Når bogføringen foretages, bogfører vare S0012 1017,18 USD direkte på finanskontoen for indtægt.
+Den forventede tidsplan for indtægtsføring oprettes også. I indtægtsplanen bruges værdien **Indtægt, der skal registreres** som det beløb, der skal udskydes. Vare S0001 udskyder 321,21 USD i stedet for 300 USD og vare S0008 udskyder 160,61 USD i stedet for 100 USD. Vare S0012 vises ikke i den forventede tidsplan, fordi indtægten ikke er udskudt. Når bogføringen foretages, bogfører vare S0012 DKK 1017,18 direkte på finanskontoen for indtægt.
 
-[![Tidsplan for forventet indtægtsføring](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
+[![Tidsplan for forventet indtægtsføring.](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
 
 ## <a name="create-the-packing-slip"></a>Opret følgeseddel
 
@@ -82,19 +82,19 @@ Derefter kan følgesedlen oprettes til salgsordren. Der registreres ingen indtæ
 
 ## <a name="create-the-invoice"></a>Opret fakturaen
 
-Det sidste trin er at fakturere salgsordren. Hvis du kigger på fakturaens bilag, vil du bemærke, at indtægten for vare S0001 og S0008 blev udskudt (321,21 + 160,61 = 481,82 USD), og restbeløbet for vare S0012 blev bogført i indtægt (1017,18 USD). Disse værdier føjes til 1.499 USD, hvilket svarer til summen af salgsordrelinjerne.
+Det sidste trin er at fakturere salgsordren. Hvis du kigger på fakturaens bilag, vil du bemærke, at indtægten for vare S0001 og S0008 blev udskudt (321,21 + 160,61 = 481,82 USD), og restbeløbet for vare S0012 blev bogført i indtægt (1017,18 USD). Disse værdier føjes til DKK 1.499, hvilket svarer til summen af salgsordrelinjerne.
 
-[![Posteringer på bilag](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
+[![Posteringer på bilag.](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
 
-Når fakturaen er oprettet, bliver knapperne for indtægtsføring **Fordeling af indtægtspris**, **Omfordel pris med nye ordrelinjger** og **Tidsplan for indtægtsføring** tilgænglige, men knapperne **Opdater fordeling af indtægtspris** og **Tidsplan for forventet indtægtsføring** bliver utilgængelige.
+Når fakturaen er oprettet, bliver knapperne for indtægtsføring **Fordeling af indtægtspris**, **Omfordel pris med nye ordrelinjger** og **Tidsplan for indtægtsføring** tilgængelige, men knapperne **Opdater fordeling af indtægtspris** og **Tidsplan for forventet indtægtsføring** bliver utilgængelige.
 
-[![Tilgængelighed af knappen Tilgængelig indtægtsføring](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
+[![Tilgængelighed af knappen Tilgængelig indtægtsføring.](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
 
 Knappen **Fordeling af indtægtspris** er stadig tilgængelig, så du kan se beregningen af indtægtsprisen. Hvis der ikke foretages ændringer på salgsordren, efter at den er bekræftet, ændres bogføringen af fakturaen i feltet **Indtægt, der skal registreres** ikke.
 
 Den forventede tidsplan for indtægtsføring fjernes og erstattes af den endelige tidsplan for indtægtsføring. Oplysningerne om indtægtstidsplanen vedligeholdes for hver salgsordrelinje og bruges til at frigive den udskudte indtægt til faktisk indtægt, efterhånden som de kontraktmæssige forpligtelser opfyldes.
 
-[![Tidsplan for endelig indtægtsføring](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+[![Tidsplan for endelig indtægtsføring.](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

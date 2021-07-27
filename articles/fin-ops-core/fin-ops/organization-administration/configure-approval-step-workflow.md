@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86e8787320721a58f449abcfba21c2c4c6b4caf9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 988340d9e5fc12c9329a587c7401fe039c8e5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751770"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350688"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurere godkendelsestrin i en arbejdsgang
 
@@ -156,7 +156,7 @@ Udfør følgende trin for at angive, hvem godkendelsestrinnet skal tildeles.
 
     - **Enkelt godkender** – den handling, der udføres på dokumentet, bestemmes af den første person, der reagerer. Antag f.eks. at Søren har sendt en udgiftsrapport på kr. 15.000. Dokumentet er aktuelt tildelt Mette, Karina og Bjarne. Hvis Mette er den første person, der reagerer på dokumentet, vil den handling, hun udfører, blive anvendt på dokumentet. Hvis Mette afviser dokumentet, afvises det og sendes tilbage til Søren. Hvis Mette godkender dokumentet, sendes det til Dorthe til godkendelse.
 
-        ![Arbejdsgang, der har en godkendelsesproces](./media/workflow_multipleusersinstep.gif)
+        ![Arbejdsgang, der har en godkendelsesproces.](./media/workflow_multipleusersinstep.gif)
 
     - **Flertal af godkendere** – den handling, der skal anvendes på dokumentet, bliver bestemt, når de fleste af godkenderne har reageret. Antag f.eks. at Søren har sendt en udgiftsrapport på kr. 15.000. Dokumentet er aktuelt tildelt Mette, Karina og Bjarne. Hvis Mette og Karina er de første personer, der reagerer på dokumentet, vil den handling, de udfører, blive anvendt på dokumentet.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: a8722adfe410f15bc379f9b550f0618c881f067d
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: a861710e29962e1222d95bfa8c4ef7407bd3401d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920823"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343978"
 ---
 # <a name="process-automation"></a>Procesautomatisering
 
@@ -36,7 +36,7 @@ Processer, der er deaktiveret i funktionsstyringen, vises ikke, når funktionen 
 
 En af de vigtigste fordele ved procesautomatisering er muligheden for at se det planlagte arbejde i en simpel kalendervisning.  Du kan bruge denne visning til at få vist arbejde for en uge ad gangen. Du kan se denne visning i højre side af siden **Procesautomatisering**. Den vil blive udfyldt med det planlagte arbejde for den valgte serie. 
 
-[![Kalender for procesautomatisering](./media/CalendarView2.png)](./media/CalendarView2.png)
+[![Kalender for procesautomatisering.](./media/CalendarView2.png)](./media/CalendarView2.png)
 
 ## <a name="occurrence-changes"></a>Forekomster ændres
 

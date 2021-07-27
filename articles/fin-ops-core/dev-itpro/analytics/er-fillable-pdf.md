@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63994a4583e27b0197b9fc42c622f6c0e42c84ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753282"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355412"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Designe konfigurationer til elektronisk rapportering for at udfylde PDF-skabeloner
 
@@ -115,11 +115,11 @@ I det ER-format, du har oprettet, kan du nu designe det ER-format, der opretter 
 
 Følgende illustration viser PDF-skabelonen til den første side i rapporten.
 
-![Skabelon 1](media/rcs-ger-filloutpdf-template1.png)
+![Skabelon 1.](media/rcs-ger-filloutpdf-template1.png)
 
 Følgende illustration viser PDF-skabelonen til de øvrige sider i rapporten.
 
-![Skabelon 2](media/rcs-ger-filloutpdf-template2.png)
+![Skabelon 2.](media/rcs-ger-filloutpdf-template2.png)
 
 1. På siden **Konfigurationer** skal du vælge **Designer**.
 2. Vælg **Tilføj rod**.
@@ -146,7 +146,7 @@ Følgende illustration viser PDF-skabelonen til de øvrige sider i rapporten.
 
 12. Vælg **OK**.
 
-    ![Dialogboksen Importér fra PDF](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Dialogboksen Importér fra PDF.](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. Udvid **Output** i træet.
 
@@ -176,7 +176,7 @@ Følgende illustration viser PDF-skabelonen til de øvrige sider i rapporten.
 
     Bemærk, at det importerede PDF-dokument vedhæftes til det redigerede ER-format.
 
-    ![Visning af vedhæftet PDF-fil](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![Visning af vedhæftet PDF-fil.](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Fortsæt med at designe dette format ved at importere den anden PDF-skabelon, idet du føjer nødvendige bindinger til datakilder osv.
 20. Vælg **Gem**.
@@ -215,7 +215,7 @@ Derefter skal du importere det ER-eksempelformat, som du tidligere har hentet, f
 1. Vælg fanen **Tilknytning** på siden **Formatdesigner**.
 2. Udvid **Sideopdeling \> Sider** i træet.
 
-    ![Formeldesignerside, hvor modeltræet er udvidet](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Formeldesignerside, hvor modeltræet er udvidet.](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Bemærk følgende oplysninger:
 
@@ -238,7 +238,7 @@ Derefter skal du importere det ER-eksempelformat, som du tidligere har hentet, f
 
     Bemærk, at **Navn** attributten for dette formatelement er defineret som **Rettelse 1**. Bemærk også, at **Navn** udtrykket for formatelementet er defineret som **Paging.FldName("Correction",\@.Number)**.
 
-![Formatdesigner, hvor der er valgt en tilknytning](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Formatdesigner, hvor der er valgt en tilknytning.](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Bemærk, at **Felt**-formatelementet bruges til at udfylde et individuelt felt i et PDF-dokument, der kan udfyldes, som er defineret som en skabelon for det overordnede **PDF-fil**-formatelement. Bindingen af **PDF-fil**-formatelementet eller de indlejrede elementer, hvis det har indlejrede elementer, angiver den værdi, der er angivet i tilsvarende PDF-felter. Der kan bruges forskellige egenskaber for **Felt**-formatelementet til at angive, hvilket PDF-felt der skal udfyldes af et individuelt formatelement:
 
@@ -275,7 +275,7 @@ Derefter skal du indlæse ER-eksempelformatet **Intrastat (import fra Excel)**. 
 
     Når indstillingen **Standard for modeltilknytning** er sat til **Ja**, tildeles det importerede **Intrastat (import fra** Excel) ER-format som standarddatakilde til **Intrastat-rapport (PDF)**-formatkonfigurationen. Når konfiguration af formatet **Intrastat-rapport (PDF)** køres, simulerer indholdet af den Excel-projektmappe, der fortolkes af **Intrastat (import fra Excel)** ER-formatet, de udenlandske handelstransaktioner, der skal rapporteres. Følgende illustration viser et eksempel på en Excel-projektmappe.
 
-    ![Excel-projektmappe, der indeholder eksempeldata](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Excel-projektmappe, der indeholder eksempeldata.](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>Køre formatkonfigurationen
 
@@ -289,11 +289,11 @@ Derefter skal du indlæse ER-eksempelformatet **Intrastat (import fra Excel)**. 
 
 I følgende illustration vises et eksempel på den første side i den rapport, der genereres.
 
-![Første side i den genererede rapport](media/rcs-ger-filloutpdf-generatedreport.png)
+![Første side i den genererede rapport.](media/rcs-ger-filloutpdf-generatedreport.png)
 
 I følgende illustration vises et eksempel på en anden side i den rapport, der genereres.
 
-![Anden side i den genererede rapport](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Anden side i den genererede rapport.](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

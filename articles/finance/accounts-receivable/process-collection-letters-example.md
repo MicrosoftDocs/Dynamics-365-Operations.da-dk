@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: fb2651644efd2cadfccb91e48c34dfddc8383e1f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e813b4f0c6408a8046fa8203007a0a356ca2c794
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021410"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347802"
 ---
 # <a name="process-collection-letters-example"></a>Behandle eksempel på rykkere
 
@@ -40,7 +40,7 @@ Når du er færdig, skal du følge disse trin.
 
 I følgende illustration vises de oplysninger, der vises i tabellen, som de vises på siden **Rykkere**. 
 
-[![Konfigurere et rykkerforløb](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Konfigurere et rykkerforløb.](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  Du skal nu angive de to parametre, der skal bruges til dette eksempel.
 
@@ -49,7 +49,7 @@ I følgende illustration vises de oplysninger, der vises i tabellen, som de vise
     1. På fanen **Rykkere** skal du indstille **Ignorer betalinger og kreditnotaer ved beregning af indstillingen for rykkerkode** til **Ja**.
     2. Kontroller, at feltet **Opret rykker** pr. felt er angivet til **Debitor**.
 
-    [![Angive debitorparametre for kreditrykkere](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![Angive debitorparametre for kreditrykkere.](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Gå til **Debitor \> Fakturaer \> Alle fritekstfakturaer**, vælg **Ny**, og følg derefter disse trin:
 
@@ -74,7 +74,7 @@ I følgende illustration vises de oplysninger, der vises i tabellen, som de vise
 5. Gentag trin 4, men skriv **-200,00** i feltet **Enhedspris**.
 6. Gå til **Debitor \> Debitorer \> Alle debitorer**, og vælg debitor **US-045**. Vælg derefter i handlingsruden **Transaktioner \> Transaktioner** for at gennemse de debitorposteringer, du har bogført tidligere.
 
-    [![Gennemgå de bogførte debitorposteringer](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![Gennemgå de bogførte debitorposteringer.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     Du skal nu oprette rykkere til debitor US-045.
 
@@ -93,7 +93,7 @@ I følgende illustration vises de oplysninger, der vises i tabellen, som de vise
 
     1. Bemærk, at rykkerkoden både på hoved- og posteringslinjerne er **Rykker 1**, da denne rykker er den første rykker i sekvensen. (Hvis du vil have vist posteringslinjerne, kan du være nødt til at vælge oversigtspanelet **Posteringer**.)
 
-   [![Kontrollere, at den samme rykkerkode vises i hovedet og linjerne](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![Kontrollere, at den samme rykkerkode vises i sidehovedet og på linjerne.](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. Vælg **Bogfør** i handlingsruden.
     3. I feltet **Bogføringsdato** angives **1/19/2021**.
@@ -115,7 +115,7 @@ I følgende illustration vises de oplysninger, der vises i tabellen, som de vise
 
     1. Bemærk, at rykkerkoden i hovedet er **Rykker 1**. Koden på posteringslinjerne er **Rykker 2**.
 
-   [![Kontrollere, at forskellige rykkerkoder vises i hovedet og linjerne](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![Kontrollere, at forskellige rykkerkoder vises i sidehovedet og på linjerne.](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   Koden er anderledes, fordi **Ignorer betalinger og kreditnotaer ved beregning af indstillingen for rykkerkode** er angivet til **Ja**.
 
@@ -123,7 +123,7 @@ I følgende illustration vises de oplysninger, der vises i tabellen, som de vise
 
 11. Gå til **Kredit og rykkere \> Opsætning \> Parametre for debitorer**, og på fanen **Rykkere** skal du angive indstillingen **Ignorer betalinger og kreditnotaer ved beregning af indstillingen for rykkerkode** til **Nej**.
 
-    [![Konfigurere Ignorer betalinger og kreditnotaer ved beregning af indstillingen for rykkerkode](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![Angive Ignorer betalinger og kreditnotaer ved beregning af indstillingen for rykkerkode til Nej.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     Du skal nu oprette rykkere igen til debitor US-045.
 
@@ -140,6 +140,6 @@ I følgende illustration vises de oplysninger, der vises i tabellen, som de vise
 
 13. Gå til **Kredit og rykkere \> Rykker \> Gennemse og behandle rykkere**, og bemærk at rykkerkoden på både hovedet og i transaktionslinjerne er **Rykker 2**.
 
-    [![Vise igen, at den samme rykkerkode vises i hovedet og linjerne](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![Vise igen, at den samme rykkerkode vises i sidehovedet og på linjerne](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     Den samme kode vises begge steder, fordi **Ignorer betalinger og kreditnotaer ved beregning af indstillingen for rykkerkode** nu er angivet til **Nej**.

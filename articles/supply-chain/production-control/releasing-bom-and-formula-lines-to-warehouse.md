@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5917d3f6acf6db6b5e3ceee1b399839542ce1f6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 99047bd30b04ccaaa24edbb2e28d5288ed2872f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811672"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350540"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigive stykliste- og formellinjer til lagerstedet
 
@@ -61,7 +61,7 @@ I forespørgslen for batchjobbet **Automatisk frigivelse af stykliste og formell
 
 I følgende illustration vises en produktionsordre, der har to job, 10 og 20, der dækker samling og emballage for produktionsordren. Hvert job er konfigureret til at bruge en mængde materiale. I denne illustration er tidshorisonten for frigivelsen, som er angivet af den grønne pil under tidslinjen, lig med antallet af dage, der er angivet i kriteriet **(LessThanDate())**. F.eks. angiver **(LessThanDate(2))**, at jobbet skal søge efter ikke-frigivne mængder inden for en tidshorisont på to dage.
 
-![Eksempel på en produktionsordre, der har to batchjob](media/bach-job-setup.PNG)
+![Eksempel på en produktionsordre, der har to batchjob.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Frigive materiale pr. operationsnummer eller i forhold til antallet af færdigvarer
 
@@ -78,7 +78,7 @@ Hvis du vil styre de operationer, som materialet skal frigives til, skal du brug
 
 I følgende illustration vises en produktionsordre, der har to operationer, 10 og 20. Hvis du i dette eksempel begrænser frigivelsen til operation 10, frigives kun materiale M9203.
 
-![Eksempel på frigivelse af materiale pr. operationsnummer](media/two-operations.PNG)
+![Eksempel på frigivelse af materiale pr. operationsnummer.](media/two-operations.PNG)
 
 For en hurtig demonstration af, hvordan du frigiver materiale i forhold til mængden af færdige varer, kan du se denne korte YouTube-video om [forbedringer af frigivelsesprocessen for produktionsordrer](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 

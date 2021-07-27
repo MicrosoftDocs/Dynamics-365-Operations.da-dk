@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187991"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355029"
 ---
 # <a name="overhead-calculation"></a>Beregning af fast omkostning
 
@@ -48,7 +48,7 @@ Beregning af faste omkostninger kører politikker for omkostningsregnskab i den 
 
 Beregning af faste omkostninger køres uafhængigt af versionen. Derfor kan du beregne Budget-versionen før den faktiske version. Beregning af faste omkostninger består af fire trin, som vist i følgende illustration. I hvert trin oprettes der et kladdehoved med poster. Dette kladdehoved indeholder inddataene for hvert trin i beregningen. Politikker og regler anvendes på hver kladdelinje, og der oprettes omkostningsposter som output. Derfor kan dataene altid spores. 
 
-[![Beregning af fast omkostning](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Beregning af faste omkostninger.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beregne og fordele den faste omkostning for elektricitet
 I et finansregnskab registreres nogle omkostninger, f.eks. elektricitet, som et engangsbeløb. Derfor er der ikke angivet detaljeret ledelsesmæssig indsigt for omkostningsregnskab. I omkostningsregnskabet skal omkostningerne gennemløbe de organisatoriske enheder for at give korrekte ledelsesmæssig viden på tværs af alle afdelinger og niveauer. Denne proces skal være baseret på enten en præcis registrering af forbruget eller en rimelig vurdering. En omkostning for elektricitet kan bogføres i finans som vist i følgende tabel.
@@ -618,7 +618,7 @@ Du kan få flere oplysninger under [Udfør beregning af fast omkostning](cost-ro
 
 Fordeling bruges til at fordele saldoen for et omkostningsobjekt til andre omkostningsobjekter ved at anvende et fordelingsgrundlag. Finance understøtter den gensidige fordelingsmetode. I den gensidig fordelingsmetode anerkendes de gensidige tjenester, som ekstra omkostningsobjekter udveksler, fuldt ud. Systemet bestemmer automatisk den rigtige rækkefølge, som tildelingerne skal udføre i. Saldoen for et omkostningsobjekt tildeles af et enkelt fordelingsgrundlag. Tildelinger på tværs af omkostningsobjektdimensioner og deres respektive medlemmer understøttes. Fordelingsrækkefølgen styres af omkostningskontrolenheden. 
 
-[![Reciprok metode](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Reciprok metode.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Definere omkostningstildelingen
 

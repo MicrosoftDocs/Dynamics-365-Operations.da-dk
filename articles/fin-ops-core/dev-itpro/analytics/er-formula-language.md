@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355388"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelsprog i elektronisk rapportering
 
@@ -117,15 +117,15 @@ Når et udtryk refererer til en struktureret datakilde, kan du bruge definitione
 
 Hvis stien til en struktureret datakilde starter med et "at"-tegn (@), er det en relativ sti. Tegnet "at" vises i stedet for den resterende del af den absolutte sti i den hierarkiske træstruktur, der bruges. Følgende illustration viser et eksempel. Her angiver den absolutte sti, `Ledger.'accountingCurrency()'`, at regnskabsvalutaværdien fra datakilden **Finans** angives i feltet **Regnskabsvaluta** i datamodellen.
 
-![Eksempel på en absolut sti på siden ER-modeltilknytningsdesigner](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Eksempel på en absolut sti på siden ER-modeltilknytningsdesigner.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 Eksemplet i følgende illustration viser, hvordan en relativ kurve bruges. Den relative sti, `@.AccountNum`, angiver, at feltet **AccountNum** i datakilden **Intrastat** (som vises ét niveau over feltet **AccountNum** i datamodellens hierarkiske træ) bruges til at angive kundens eller leverandørens kontonummeret i datamodellens felt **AccountNum**.
 
-![Eksempel på en relativ sti på siden ER-modeltilknytningsdesigner](./media/ER-FormulaLanguage-RelativePath1.png)
+![Eksempel på en relativ sti på siden ER-modeltilknytningsdesigner.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Den resterende del af den absolutte sti vises også i [ET-formeleditoren](general-electronic-reporting-formula-designer.md).
 
-![Resterende del af den absolutte sti på siden ER-formeldesigner](./media/ER-FormulaLanguage-RelativePath2.png)
+![Resterende del af den absolutte sti på siden ER-formeldesigner.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 Du kan finde flere oplysninger under [Bruge en relativ sti i databindinger for ER-modeller og -formater](relative-path-data-bindings-er-models-format.md).
 

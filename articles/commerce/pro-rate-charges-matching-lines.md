@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cca35be696c8dd9956176e54e77a60f0252e0760
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018600"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352174"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
 
@@ -56,9 +56,9 @@ Dette scenario beskriver funktionsmåden, når indstillingen **Beregn forholdsm�
 
 I dette scenario har organisationen defineret gebyrer på hovedniveau for leveringsmåderelation **99** og leveringsmåderelation **11**. Ingen automatiske gebyrer er konfigureret for leveringsmåde **21**.
 
-![Automatiske gebyrer for leveringsmåde 99, når forholdsmæssig beregning for linjematchning er slået fra](media/99_disabled.png)
+![Automatiske gebyrer for leveringsmåde 99, når forholdsmæssig beregning for linjematchning er slået fra.](media/99_disabled.png)
 
-![Automatiske gebyrer for leveringsmåde 11, når forholdsmæssig beregning for linjematchning er slået fra](media/11_disabled.png)
+![Automatiske gebyrer for leveringsmåde 11, når forholdsmæssig beregning for linjematchning er slået fra.](media/11_disabled.png)
 
 Der oprettes en salgsordre i callcenteret, og leveringsmåden indstilles til **99**. Denne ordre indeholder fem varer. To ordrelinjer er konfigureret til at bruge leveringsmåde **99**, to linjer er konfigureret til at bruge leveringsmåde **11**, og én linje er konfigureret til at bruge leveringsmåde **21**, som vist i følgende tabel.
 
@@ -78,9 +78,9 @@ I dette scenario, hvis en kunde returnerer nogle af varerne i ordren, og hvis [g
 
 I dette scenario defineres gebyrer på hovedniveau for leveringsmåderelation **99** og leveringsmåderelation **11**. Men indstillingen **Beregn forholdsmæssigt på matchende salgslinjer** er angivet til **Ja** for disse tabeller over automatiske gebyrer.
 
-![Automatiske gebyrer for leveringsmåde 99, når forholdsmæssig beregning for linjematchning er slået til](media/99_enabled.png)
+![Automatiske gebyrer for leveringsmåde 99, når forholdsmæssig beregning for linjematchning er slået til.](media/99_enabled.png)
 
-![Automatiske gebyrer for leveringsmåde 11, når forholdsmæssig beregning for linjematchning er slået til](media/11_enabled.png)
+![Automatiske gebyrer for leveringsmåde 11, når forholdsmæssig beregning for linjematchning er slået til.](media/11_enabled.png)
 
 I dette scenario bruges den samme salgsordre, der indeholder fem linjer. Leveringsmåden i ordrehovedet er indstillet til **99**, men leveringsmåden for de enkelte varer på salgsordren er konfigureret som vist i følgende tabel.
 
@@ -130,9 +130,9 @@ Da konfigurationen af automatiske gebyrer er indstillet til at bliver beregnet f
     - Samlet produktværdi = $15
     - **Gebyrværdi = $0** (ingen automatiske gebyrer er konfigureret for denne kombination af en kunde og en leveringsmåde).
 
-    ![Gebyrer for leveringsmåde 11 falder inden for det markerede niveau](media/step2mode11.png)
+    ![Gebyrer for leveringsmåde 11 falder inden for det markerede niveau.](media/step2mode11.png)
 
-    ![Gebyrer for leveringsmåde 99 falder inden for det markerede niveau](media/step2mode99.png)
+    ![Gebyrer for leveringsmåde 99 falder inden for det markerede niveau.](media/step2mode99.png)
 
 3. Systemet beregner den gebyrværdi, der skal anvendes på hver linje baseret på forholdsmæssig beregningslogik, der vurderer den proportionale værdi for linjen i forhold til gruppens samlede produktværdi.
 
@@ -163,7 +163,7 @@ Da konfigurationen af automatiske gebyrer er indstillet til at bliver beregnet f
 
 Derfor tildeles vare 81334 et fragtgebyr på $5,62 i dette eksempel. Du kan få vist disse gebyrer på siden **Vedligehold gebyrer** for salgslinjen. I følgende illustration vises, hvordan denne side ser ud for vare 81334.
 
-![Forholdsmæssigt beregnede gebyrer på salgslinje for vare 81334](media/proratedlinecharge.png)
+![Forholdsmæssigt beregnede gebyrer på salgslinje for vare 81334.](media/proratedlinecharge.png)
 
 Når denne beregningsmetode bruges til en delvis returnering, og hvis gebyrkoden kan refunderes, er det kun en del af det gebyr, som er allokeret til den pågældende linje, der refunderes, når varen er returneret.
 

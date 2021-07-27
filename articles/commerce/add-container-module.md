@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8e1d2d600a00ab71348fbef2bc2f30cc53bc5314
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59887b058346d55341e68d553ec5dfbc6eb365d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797785"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347560"
 ---
 # <a name="container-module"></a>Container-modul
 
@@ -42,11 +42,11 @@ Der understøttes tre containermoduler: container, container med 2 pladser og co
 
 Det følgende billede viser et eksempel på et containermodul, der indeholder et karruselmodul i Commerce-webstedsgeneratoren. I dette eksempel angives egenskaben **Bredde** for containermodulet til **Udfyld skærm**.
 
-![Eksempel på et containermodul](./media/ecommerce-container.PNG)
+![Eksempel på et containermodul.](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Egenskaber for containermodul
 
-| Egenskabsbetegnelse     | Værdier | Beskrivende tekst |
+| Egenskabsbetegnelse     | Værdier | Betegnelse |
 |-------------------|--------|-------------|
 | Overskrift           | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Der kan angives en valgfri overskrift til containeren. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |
 | Bredde             | **Tilpas til container** eller **Udfyld skærm** | Hvis værdien er angivet til **Tilpas til container** (standardværdien), begrænses modulerne i containeren til containerens bredde. Hvis værdien er angivet til **Udfyld skærm**, begrænses modulerne ikke til containeren, men kan udfylde skærmen. |

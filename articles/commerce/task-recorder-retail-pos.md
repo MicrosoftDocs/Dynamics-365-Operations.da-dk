@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7b5f8303ea23f4f38bf27d35de0fa91ab82f4b5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028101"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354463"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Arbejdsrutineoptager og Hjælp til Retail Modern POS (MPOS) og Cloud POS
 
@@ -55,14 +55,14 @@ Følg disse trin for at oprette en ny registrering ved hjælp af Arbejdsrutineop
 1. Start Retail Modern POS eller Cloud POS, og log på.
 2. På siden **Indstillinger** i afsnittet **Arbejdsrutineoptager** skal du klikke på **Åbn Arbejdsrutineoptager**. Ruden **Arbejdsrutineoptager** vises. Du kan klikke på knappen **Luk** (**X**) i øverste højre hjørne for at lukke ruden **Arbejdsrutineoptager**, før du starter en ny registrering. Gentag trin 2 for at åbne ruden igen.
 
-    [![Ruden Arbejdsrutineoptager](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Ruden Arbejdsrutineoptager.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Angiv et navn og en beskrivelse for registreringen, og klik derefter på **Start**. Registreringssessionen starter, så snart du klikker på **Start**.
 
     > [!NOTE]
     > Hvis du klikker på knappen **Luk** (**X**) i øverste højre hjørne, mens registreringen er i gang, lukkes ruden **Arbejdsrutineoptager**, men registreringssessionen afsluttes ikke. Klik på **Hjælp** (spørgsmålstegn) øverst på skærmen for at åbne ruden Arbejdsrutineoptager igen.
     >
-    > [![Spørgsmålstegn](./media/help.jpg)](./media/help.jpg)
+    > [![Spørgsmålstegn.](./media/help.jpg)](./media/help.jpg)
 
 4. Når du klikker på **Start**, går Arbejdsrutineoptager i registreringstilstand. Ruden **Arbejdsrutineoptager** viser oplysninger og kontrolelementer, der vedrører registreringsprocessen.
 5. Udfør de handlinger, du vil udføre i Retail Modern POS- eller Cloud POS-brugergrænsefladen (UI).
@@ -72,7 +72,7 @@ Følg disse trin for at oprette en ny registrering ved hjælp af Arbejdsrutineop
 
 Når du har afsluttet registreringssessionen, vises flere indstillinger, så du kan hente din registrering.
 
-[![Downloadindstillinger](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Downloadindstillinger.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Gem til denne pc
 
@@ -88,7 +88,7 @@ Den rå registreringsfil er nyttig i udviklerscenarier, f.eks. oprettelse af tes
 
 ## <a name="recording-controls"></a>Registreringskontrolelementer
 
-[![Registreringskontrolelementer](./media/controls.jpg)](./media/controls.jpg)
+[![Registreringskontrolelementer.](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>Stop
 
@@ -117,13 +117,13 @@ Du kan angive begyndelsen og slutningen af et sæt grupperede trin ved hjælp af
 
 En anmærkning er ekstra tekst, du føjer til et trin i en registrering. Du kan f.eks. bruge anmærkninger til at give brugeren mere kontekst eller flere instruktioner. Du kan tilføje anmærkninger før eller efter et trin. Du kan tilføje en anmærkning til ethvert trin ved at klikke på knappen **Rediger** (blyantssymbol) til højre for trinnet.
 
-[![Knappen Rediger til et trin](./media/annotate.jpg)](./media/annotate.jpg)
+[![Knappen Rediger til et trin.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Tekst og notater
 
 Du kan bruge felterne **Tekster** og **Noter** til at tilføje tekst, der skal knyttes til et trin i en opgaveguide.
 
-[![Felterne Tekster og Noter](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Felterne Tekster og Noter.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Tekst
 
@@ -137,7 +137,7 @@ Tekst, du har angivet i feltet **Notater**, vises *under* teksten til trinnet i 
 
 For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp i Retail Modern POS og Cloud POS så de kan afspilles som opgaveguider eller vises som tekst, skal du gemme opgaveregistreringerne i dit eget BPM-bibliotek og derefter opdatere dine systemparametre til Hjælp til at pege på BPM-biblioteket. Vil du have mere hjælp, kan du se [Forbindelse til hjælpesystemet.](../fin-ops-core/fin-ops/get-started/help-connect.md) Retail Modern POS Hjælp og Cloud POS Hjælp gennemsøger i LCS i realtid. Den søger på tværs af alle BPM-biblioteker, der er valgt i Commerce Hjælp-systemparametrene, og viser de relevante resultater. For at få adgang til menuen **Hjælp** skal du klikke på knappen **Hjælp** (spørgsmålstegn) øverst på skærmen, og derefter skal du skrive navnet på din proces i søgefeltet og trykke på søgeknappen.
 
-[![Knappen Hjælp](./media/help.jpg)](./media/help.jpg)
+[![Knappen Hjælp.](./media/help.jpg)](./media/help.jpg)
 
 Når du klikker på en opgaveguide i søgeresultaterne, kan du enten få vist trinnene som et emne i Hjælp eller eksportere trinnene til et Word-dokument.
 

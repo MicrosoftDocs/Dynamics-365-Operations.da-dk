@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9c19f999a94e6ad8451c208cf204d0b59306b77d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a447dee71e57df07d1e7709bc8e4d075fcc803b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837795"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343670"
 ---
 # <a name="schedule-maintenance-plans"></a>Planlæg vedligeholdelsesplaner
 
@@ -52,14 +52,14 @@ Forebyggende vedligeholdelsesplanlægning opretter kalenderposter for aktiver, b
 
 5. Klik på **OK** for at starte genereringen af poster i vedligeholdelsesplanen for aktiver. De genererede poster bliver vist på listesiden **Alle vedligeholdelsestidsplaner**. I følgende illustration vises et eksempel på dialogboksen **Planlæg vedligeholdelsesplaner**.
 
-![Figur 1](media/09-preventive-maintenance.png)
+![Figur 1.](media/09-preventive-maintenance.png)
 
 - I dialogboksen **Planlæg vedligeholdelsesplaner** kan du definere batchjob, der skal køres i oversigtspanelet **Kør i baggrunden**, så der automatisk genereres kalenderposter med jævne mellemrum.  
 - Når du planlægger en forebyggende vedligeholdelse, oprettes der ikke vedligeholdelsestidsplanslinjer med forventet startdato og -klokkeslæt før systemdatoen og -klokkeslættet.  
 
 I figuren nedenfor vises en grafisk illustration af en tidsbaseret beregning af vedligeholdelsesplanen.  
 
-![Figur 2](media/10-preventive-maintenance.jpg)
+![Figur 2.](media/10-preventive-maintenance.jpg)
 
 Vedrørende tællerbaserede vedligeholdelsesplaner: I nedenstående figurer vises to forskellige cyklusser for tællerregistrering. De er baseret på en vedligeholdelsesplan, der er konfigureret for aktivet "V0001", og det forventes, at aktivet (en bil) kører ca. 2.000 km hver måned.
 
@@ -69,9 +69,9 @@ I den næste figur registreres 2.000 km eller mere hver måned. Derfor oprettes 
 
 De eksempler, der beskrives her, viser, at alle de tællerregistreringer, der udføres på et aktiv, viser en tendens, der beskriver slitagen på aktivet. Denne tendens bruges som beregningsgrundlag på tidspunktet for planlægningen af vedligeholdelsesplanen.
 
-![Figur 3](media/11-preventive-maintenance.png)
+![Figur 3.](media/11-preventive-maintenance.png)
 
-![Figur 4](media/12-preventive-maintenance.png)
+![Figur 4.](media/12-preventive-maintenance.png)
 
 
 
