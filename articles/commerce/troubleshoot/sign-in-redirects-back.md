@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a1d0ae4e487c391020947c607d5d7cb5d1ba6af4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e83b381e73d28dce0a438a37d5f8ed23b4957adf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020597"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350372"
 ---
 # <a name="sign-in-link-redirects-back-to-an-e-commerce-site"></a>Log på link igen til et e-handelswebsted
 
@@ -43,7 +43,7 @@ Bekræft, at svarets URS-adresse er konfigureret korrekt i Azure AD B2C-programm
 1. Vælg det program, du oprettede i Azure AD B2C-opsætningen.
 1. Under **Svar URL-adresse** skal du sørge for, at listen indeholder poster for både URL-adressen for webstedets domæne og den URL-adresse, der genereres af e-handel, som vist i eksemplet i følgende illustration.
 
-    ![Azure AD B2C Svar til URL-adresseindgange](media/aad-b2c-reply-url.jpg)
+    ![Azure AD B2C Svar til URL-adresseindgange.](media/aad-b2c-reply-url.jpg)
 
 > [!NOTE]
 > Både URL-adressen til webstedet og den url-adresse, der genereres ved e-handel, skal være i et gyldigt URL-format, der ikke inkluderer foranstillede eller efterfølgende skråstreger.

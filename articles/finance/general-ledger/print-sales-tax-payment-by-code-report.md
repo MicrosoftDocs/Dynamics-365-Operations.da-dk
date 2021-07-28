@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: eb3ee4a12d2d29c2769f1ae22e11dc05608b47c1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dad1cad6dcda1c7768f9be8bd7bd4426be7fbcbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815446"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358851"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>Udskriv rapporten Momsbetaling efter kode 
 
@@ -40,11 +40,11 @@ I arbejdsområdet **Funktionsstyring** skal du aktivere følgende funktion: **Ge
     - **Regnskabsvaluta** – Udskriv rapport beløbene i regnskabsvalutaen.
     - **Momskodevaluta** – Udskriv rapport beløbene i valutaerne for momskoder.
 
-    ![Dialogboksen Momsafregning pr. kode](media/Sales-tax-payment-by-code.png)
+    ![Dialogboksen Momsbetaling efter kode.](media/Sales-tax-payment-by-code.png)
 
 I følgende illustration vises et eksempel på den rapport, der genereres. Rapporten viser, at rapporteringskode **101** har valutaen **EUR**, hvis feltet **Momsvaluta** er angivet til **EUR** for den momskode, som rapporteringskoden er tildelt.
 
-![Eksempel på rapporten Momsbetaling efter kode](media/Sales-tax-payment-by-code-2.png)
+![Eksempel på rapporten Momsbetaling efter kode.](media/Sales-tax-payment-by-code-2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

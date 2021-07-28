@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 73d20958d0efadefc709db524fe16ed85d1ea33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ceb95198332d6a9da057d657771fe6fcca5c5b9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824888"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359599"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Oversigt over integration med Microsoft Dynamics 365 Field Service
 
@@ -34,7 +34,7 @@ Standardskabeloner kan anvendes til at oprette brugerdefinerede integrationsproj
 
 Field Service-integrationen bygger på den eksisterende kundeemne til kontant-funktionalitet.
 
-![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service](./media/field-service-integration.png)
+![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/field-service-integration.png)
 
 Den første fase af integrationen mellem Field Service og Supply Chain Management fokuserer på at gøre det muligt at fakturere arbejdsordrer og aftaler fra Field Service i Supply Chain Management. Den understøttede arbejdsgang begynder i Field Service, hvor oplysninger fra arbejdsordrer synkroniseres til Supply Chain Management som salgsordrer. I Supply Chain Management faktureres salgsordrerne, så fakturadokumenterne kan genereres. Endvidere synkroniseres aftalefakturaer i Field Service til Supply Chain Management. Microsoft Dynamics 365-dataintegratoren synkroniserer data ved hjælp af projekter, der kan tilpasses. Standardskabeloner kan anvendes til at oprette brugerdefinerede integrationsprojekter, hvor flere standardkolonner og brugerdefinerede kolonner, foruden tabeller, kan tilknyttes for at justere integrationen og opfylde bestemte krav.
 
@@ -58,7 +58,7 @@ Den ekstra funktionalitet i denne anden fase fokuserer på at give serviceteknik
 - Supply Chain Management-projekter, der er forbundet med Dynamics 365 Field Service-arbejdsordrer
 - Dynamics 365 Field Service-arbejdsordrer med tilknytning til Supply Chain Management-projekter anvender dette projektnummer på salgsordren, så der kan faktureres fra projektet. 
 
-![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service](./media/FSv2overview.png)
+![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Den anden fase i integrationen mellem Field Service og Supply Chain Management muliggør synkronisering med følgende skabeloner:
 - Lagersteder (Supply Chain Management til Field Service) - Lagersteder fra Supply Chain Management til Field Service [Avanceret forespørgsel] 

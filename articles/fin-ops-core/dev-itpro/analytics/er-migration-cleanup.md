@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 97dbb625fc312548fb266b2ef6643a2b8e2b0f81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b6e81e47cd781bbe856676b1cecb50b8ee1adfc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750880"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351043"
 ---
 # <a name="er-migration-cleanup"></a>ER-overflytningsoprydning 
 
@@ -30,11 +30,11 @@ Når du administrerer dine Finance-forekomster, kan du vælge at flytte din aktu
 
 Hvis du forsøger at køre et ER-format, der bruger en skabelon til at generere forretningsdokumenter, indtræffer der en undtagelse, og du får besked om den manglende skabelon. Du bliver også guidet til at bruge indstillingen til ER-overflytningoprydning til at slette og derefter importere den ER-formatkonfiguration, der indeholder skabelonen, igen.
 
-[![Køre et ER-format](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![Køre et ER-format.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 Du modtager en lignende fejl, hvis du navigerer til siden **Konfigurationer** (**Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**) og forsøger at slette en ER- formatkonfiguration, der bruger en skabelon, i konfigurationstræet.
 
-[![Slette et ER-format](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![Slette et ER-format.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Gennemfør følgende trin for at løse problemer med ER-skabeloner, som du ikke kan få adgang til.
 
@@ -50,7 +50,7 @@ Gennemfør følgende trin for at løse problemer med ER-skabeloner, som du ikke 
 >
 > Hvis du bruger indstillingen **Overflytningsoprydning** til at slette en ER-formatkonfiguration, når skabelonen, der refereres til, er tilgængelig i blob-lageret, sletter du kun relaterede konfigurationsartefakter i programdatabasen. Den fysiske fil i skabelonen i blob-lageret slettes ikke. Filoverskrivning i blob-lageret er ikke længere tilladt. Du kan finde flere oplysninger i [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Derudover kan du ikke længere genimportere de konfigurationer, der er slettet, ved hjælp af overflytningsoprydningen i dette miljø. Du kan dette problem ved at finde den tilsvarende fil i blob-lageret og slette den manuelt.
 
-[![Importere et ER-format](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![Importere et ER-format.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 Der kan opstå et lignende problem, hvis du overflytter din programforekomst til en anden placering, der er brugt som overflytningsdestination mere end én gang, og hvor blob-lageret allerede indeholder ER-skabelonfiler.
 

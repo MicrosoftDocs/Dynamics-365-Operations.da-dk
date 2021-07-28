@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186636"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355670"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Gøre forudsigelsesmodellen bedre (prøveversion)
 
@@ -33,7 +33,7 @@ I dette emne beskrives funktioner, som du kan bruge til at forbedre ydeevnen i f
 
 Du skal først vælge en eller flere af de tre mulige udfald for fakturaer: **Til tiden**, **Sent** og **Meget sent**. Du skal vælge alle tre resultater. Hvis du fjerner markeringen af udfaldet, filtreres fakturaer ud af uddannelsesprocessen, og nøjagtigheden af prognosen reduceres.
 
-[![Bekræfte udfald](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Bekræfte udfald.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Hvis din organisation kun kræver to udfald, skal du ændre tærsklen **Sent** og **Meget sent** til 0 (nul) dage. På denne måde kan du effektivt skjule forudsigelsen til en binær tilstand for **Til tiden** eller **Sent**.
 
@@ -51,7 +51,7 @@ Følgende afsnit viser de felter, der er tilgængelige for faktura- og kundeenhe
 
 Følgende illustration viser de felter, der er tilgængelige til fakturatabellen.
 
-[![Tilgængelige felter til fakturatabellen](./media/available-fields.png)](./media/available-fields.png)
+[![Tilgængelige felter til fakturatabellen.](./media/available-fields.png)](./media/available-fields.png)
 
 Følgende felter skal ikke vælges til oplæring:
 
@@ -66,7 +66,7 @@ Følgende felter skal ikke vælges til oplæring:
 
 Følgende illustration viser de felter, der er tilgængelige til kundetabellen.
 
-[![Tilgængelige felter til kundetabellen](./media/related-entities.png)](./media/related-entities.png)
+[![Tilgængelige felter til kundetabellen.](./media/related-entities.png)](./media/related-entities.png)
 
 Følgende felt skal ikke vælges til oplæring:
 
@@ -74,8 +74,8 @@ Følgende felt skal ikke vælges til oplæring:
 
 ## <a name="filters"></a>Filtre
 
-Filtrene understøtter i øjeblikket ikke scenariet med debitorbetalingsprognoser. Du kan derfor vælge **Spring dette trin over**, og fortsæt til oversigtssiden.
+Du kan filtrere de fakturaer, der bruges til kurser, ved at angive filtreringskriterier for felter på fakturaen eller i kundetabellerne. Du kan for eksempel angive en grænseværdi, så den kun medtager fakturaer, hvor totalen er lig med eller overstiger et bestemt beløb. Du kan også udelukke fakturaer, der er knyttet til kunder i en bestemt kundegruppe.
 
-[![Fokusmodel med filtre](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Du kan finde flere oplysninger om filtrering af dataene under [Oprette en forudsigelsesmodel](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

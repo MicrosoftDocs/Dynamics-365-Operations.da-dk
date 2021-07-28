@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097253"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356506"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Administrere fraværsanmodninger i Teams
 
@@ -61,7 +61,7 @@ Du kan bede bot om at:
 
 - Starte en anmodning om en orlov for dig. Send f.eks. en meddelelse med teksten "Tag fri" eller "Jeg ønsker holde ferie næste torsdag og fredag" for at være mere specifik, når du anmoder om orlov for ferietypen. 
 
-  ![Starte en anmodning om orlov i Teams-chat](./media/hr-teams-leave-app-initiate.png)
+  ![Starte en anmodning om orlov i Teams-chat.](./media/hr-teams-leave-app-initiate.png)
 
 - Chatrobotten udfylder en orlovsanmodning for dig. Vælg **Anmod om fri**, og rediger detaljerne om anmodningen.
 
@@ -69,11 +69,11 @@ Du kan bede bot om at:
 
    Hvis du vælger en halv dags orlov, og orlovsanmodningsenheden er i dage, kan du angive, om du vil anmode om fri første halvdel af dagen eller anden halvdel af dagen, ved at vælge indstillingen **Halvdagsdefinition** i menuen **Flere indstillinger**.
    
-   ![Halvdagsdefintioner](./media/HalfDayDefinitions.png)
+   ![Halvdagsdefintioner.](./media/HalfDayDefinitions.png)
 
 - Når du er færdig med at redigere oplysningerne om din anmodning om orlov, skal du vælge **Send** for at sende den til godkendelse.
 
-  ![Sende orlovsanmodning](./media/hr-teams-leave-app-submit.png)
+  ![Sende orlovsanmodning.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Administrere din orlov i Teams
 
@@ -93,7 +93,7 @@ Fanen **Fri** gør det muligt at vise:
 
 2. Angiv den eller de dage, du vil have en fridag, og vælg derefter **Tilføj**.
 
-   ![Tilføj fridag i orlovsappen i Human Resources i Teams](./media/TimeOffHours.png)
+   ![Tilføj fridag i orlovsappen i Human Resources i Teams.](./media/TimeOffHours.png)
 
 3. Angiv en årsagskode, hvis det er relevant. Skriv også eventuelle kommentarer, og tilføj evt. vedhæftede filer.
 
@@ -123,7 +123,7 @@ Når du har installeret Human Resources-appen for Teams, kan du nemt sende oplys
 
 1. I et team eller en chat i Teams skal du vælge knappen Human Resources under chatvinduet.
 
-   ![Knappen Human Resources under chatvinduet](./media/hr-teams-leave-app-chat-button.png)
+   ![Knappen Human Resources under chatvinduet.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Vælg den orlovsanmodning, du vil dele. Hvis du vil dele en kladde af orlovsanmodningen, skal du vælge **Kladder** først.
 
@@ -173,11 +173,11 @@ Hvis oversættelser ikke vises som forventet, skal du sørge for, at det sprog, 
 
 I Teams skal du se på **App-sprog** i **Indstillinger**.
 
-![Teams-indstillinger](./media/hr-teams-leave-app-settings.png)
+![Teams-indstillinger.](./media/hr-teams-leave-app-settings.png)
 
 Vælg **Indstillinger** i Human Resources, og vælg derefter **Brugerindstillinger**. Kontrollér, at feltet **Sprog** svarer til feltet **App-sprog** i Teams.
 
-![Brugerindstillinger i Human Resources](./media/hr-teams-leave-app-user-options.png)
+![Brugerindstillinger i Human Resources.](./media/hr-teams-leave-app-user-options.png)
 
 Hvis du stadig oplever oversættelsesproblemer, kan du give os besked. Du kan finde oplysninger i [Få support til Finance and Operations-apps eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 

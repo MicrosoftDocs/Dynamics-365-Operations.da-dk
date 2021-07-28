@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: cbb1d9a53a7a09ab525532f08553898c4e40223a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7faa9a3cf6a29d8ed126cfcb0e2902b2016d03ff
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822775"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358140"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Service (RCS) – globaliseringsfunktioner
 
@@ -53,7 +53,7 @@ I din Finance and Operations-appforekomst skal du følge disse trin:
 1. I RCS-forekomsten skal du vælge feltet **Funktionsstyring**.
 2. I området **Funktionsstyring** skal du vælge **Globaliseringsfunktioner** på listen og derefter **Aktivér nu**.
 
-    ![Globaliseringsfunktioner i funktionsstyring](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
+    ![Globaliseringsfunktioner i funktionsstyring.](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
 ## <a name="globalization-features"></a>Globaliseringsfunktioner
 
@@ -67,11 +67,11 @@ Hvis du vil bruge en globaliseringsfunktion, skal du importere den fra det globa
 1. Sørg for, at funktionen **Globaliseringsfunktioner** er aktiveret i funktionsstyring, som beskrevet tidligere i dette emne.
 2. Åbn det nye arbejdsområde **Globaliseringsfunktioner**, og under **Funktioner** skal du vælge feltet **e-fakturering**.
 
-    ![Arbejdsområde til globale funktioner](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+    ![Arbejdsområde til globale funktioner.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
     Siden **e-faktureringsfunktioner** åbnes.
 
-    ![Side med e-faktureringsfunktioner](./media/RCS_GlobalF_3%20Feature%20form.JPG)
+    ![Side med e-faktureringsfunktioner.](./media/RCS_GlobalF_3%20Feature%20form.JPG)
 
 ## <a name="add-a-derived-globalization-feature"></a>Tilføje en afledt globaliseringsfunktion
 
@@ -79,27 +79,27 @@ Du kan tilføje en ny globaliseringsfunktion ved at aflede den fra en eksisteren
 
 1. Vælg **Importér** for at åbne siden **Importér funktion fra globalt lager**.
 
-    ![Siden Importér funktion fra globalt lager](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
+    ![Siden Importér funktion fra globalt lager.](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
 
 2. Vælg **Synkroniser** for at hente de nyeste funktioner.
 
     Den synkroniserede liste indeholder funktioner, som enten er tilgængelige, fordi de blev publiceret af Microsoft, eller fordi de blev delt med dig af en anden konfigurationsudbyder.
 
-    ![Synkroniseret liste over funktioner](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
+    ![Synkroniseret liste over funktioner.](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
 
 3. Vælg de funktioner, der skal importeres, på listen, og vælg derefter **Importér**. Du modtager en meddelelse, når de valgte funktioner er blevet importeret.
 
-    ![Meddelelse om vellykket import](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
+    ![Meddelelse om vellykket import.](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
 
 4. Vælg **Tilføj**, og derefter skal du i rulledialogboksen vælge indstillingen **Baseret på eksisterende version**.
 5. Angiv et navn til og en beskrivelse af funktionen.
 6. Vælg funktionens basisversion på listen over tilgængelige funktioner og derefter **Opret funktion**.
 
-    ![Tilføje en afledt funktion](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
+    ![Tilføje en afledt funktion.](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
 
     Den funktion, du har tilføjet, er oprettet og har statussen **Kladde**.
 
-    ![Afledt funktion med kladdestatus](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
+    ![Afledt funktion med kladdestatus.](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
 
 7. Gennemse funktionskomponenterne for at finde ud af, om der kræves opdateringer:
 
@@ -120,7 +120,7 @@ Du kan tilføje en ny globaliserings funktion ved at oprette den fra bunden.
 2. Angiv et navn til og en beskrivelse af funktionen.
 3. Vælg **Opret funktion**.
 
-    ![Tilføje en ny funktion](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
+    ![Tilføje en ny funktion.](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
 
 4. På fanen **Versioner** skal du vælge en **Ikrafttrædelsesdato** og derefter **Skift status** for at fuldføre funktionen. Fuldførte funktioner kan gøres tilgængelige for et bestemt miljø, så de kan bruges i globaliseringstjenester, eller de kan publiceres til det globale lager.
 
@@ -176,7 +176,7 @@ Følgende handlinger er tilgængelige for funkionsopsætninger:
     - Anvendelighedsregler
     - Variabler
 
-![Siden Opsætning af funktionsversion](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
+![Siden Opsætning af funktionsversion.](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
 
 ### <a name="environments"></a>Miljøer
 
@@ -193,7 +193,7 @@ Udfør følgende trin for at dele en globaliseringsfunktion med en ekstern organ
 2. På fanen **Organisationer** skal du vælge **Del med** og derefter i rulledialogboksen angive organisationens domænenavn.
 3. Vælg **Del**.
 
-    ![Deling af en funktion med en organisation](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
+    ![Deling af en funktion med en organisation.](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
 
 Funktionen deles med den valgte organisation og er tilgængelig for denne organisation i det globale lager. Derfra kan funktionen importeres til organisationens forekomst af RCS eller Dynamics 365 Finance, så den kan bruges.
 
@@ -201,7 +201,7 @@ Funktionen deles med den valgte organisation og er tilgængelig for denne organi
 
 Du kan rebasere en afledt globaliseringsfunktion til den nye eller opdaterede basisfunktionsversion. På denne måde kan ændringer, der er foretaget i basisversionen, opdateres automatisk. Den opdaterede basisfunktionsversion oprettes af den oprindelige konfigurationsudbyder, og den publiceres eller deles derefter.
 
-![Opdateret basisfunktionsversion](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
+![Opdateret version af basisfunktion.](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
 
 Hvis du f eks. vil rebasere den afledte version af en funktion, du har oprettet, skal du først hente den seneste version af funktionen ved at importere den fra det globale lager.
 
@@ -209,23 +209,23 @@ Hvis du f eks. vil rebasere den afledte version af en funktion, du har oprettet,
 2. Vælg **Synkroniser** for at hente de nyeste funktioner.
 3. På listen over funktioner skal du vælge de funktioner, der skal importeres, og derefter **Importér**.
 
-    ![Import af den seneste version af en funktion](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
+    ![Import af den seneste version af en funktion.](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
 
 4. Vælg den funktion, der skal rebaseres, på listen over funktioner.
 5. På fanen **Version** skal du vælge **Ny** for at oprette en kladdeversion.
 
-    ![Ny kladdeversion oprettet](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
+    ![Ny kladdeversion oprettet.](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
 
 6. Vælg **Rebaśer**.
 7. I dialogboksen **Rebasér** skal du vælge den seneste version af funktionen, der skal rebaseres til.
 
-    ![Dialogboksen Rebasér](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
+    ![Dialogboksen Rebasér.](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
 
 8. Vælg **OK**.
 9. Gennemgå funktionskomponenterne, og foretag eventuelle nødvendige ændringer.
 10. Vælg **Skift status** for at fuldføre den rebaserede funktion. Når rebaseringen er fuldført, kan du udføre yderligere handlinger. Du kan f.eks. publicere funktionen og gøre den tilgængelig for brug i globaliseringstjenester.
 
-    ![Funktionsstatus er opdateret til Fuldført](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
+    ![Funktionsstatus er opdateret til Fuldført.](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
 
 ## <a name="configure-environments-for-globalization-features"></a><a name="configureenvironment"></a>Konfigurere miljøer til globaliseringsfunktioner
 
@@ -233,13 +233,13 @@ Brugere af globaliseringstjenester kan administrere miljøet for at konfigurere 
 
 1. I arbejdsområdet **Globaliseringsfunktioner** under **Miljøer** skal du vælge feltet **e-fakturering**.
 
-    ![Arbejdsområdet for globale funktioner](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
+    ![Arbejdsområdet for globale funktioner.](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
 
 2. Vælg **Parametre for Key Vault** og derefter **Ny** for at oprette en Azure Key Vault-hemmelighed.
 3. Angiv et navn til og en beskrivelse af Key Vault, og angiv derefter i feltet **Key Vault URI** den URL-adresse, der identificerer Key Vault-ressourcen i Azure.
 4. I oversigtspanelet **Certifikater** skal du vælge **Tilføj** for at tilføje certifikatet og angive et navn til og en beskrivelse af hvert certifikat.
 
-    ![Certifikat tilføjet](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
+    ![Certifikat tilføjet.](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
 
 5. Vælg **Ny** for at oprette et nyt miljø.
 6. Angiv et navn, en beskrivelse og det hemmelige token for signaturer til delt adgang, der er nødvendigt til lagring.
@@ -248,7 +248,7 @@ Brugere af globaliseringstjenester kan administrere miljøet for at konfigurere 
 9. Gentag trin 7 og 8 for at tilføje flere brugere.
 10. Vælg **Publicer** for at publicere miljøet.
 
-    ![Publiceret miljø](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+    ![Publiceret miljø.](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

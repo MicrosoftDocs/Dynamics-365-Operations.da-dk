@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4e73438170294863b7aa092cf1fc027787f57c70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 87e9779dc47494583ad4a299206bada4b85c6a15
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054374"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360466"
 ---
 # <a name="authentication"></a>Godkendelse
 
@@ -87,7 +87,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
 6. Vælg **Registrer**.
 
-   [![Registrering af en ny app i Azure-portalen](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Registrering af en ny app i Azure-portalen.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Azure AD tildeler et entydigt program-id (klient-id) til din app og fører dig til siden **Oversigt** for din app. Hvis du vil føje flere egenskaber til din app, kan du vælge andre konfigurationsindstillinger, f.eks. indstillinger for mærkning og for certifikater og hemmeligheder.
 

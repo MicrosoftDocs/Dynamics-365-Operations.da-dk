@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8a6b36314d9d98f971cd1619dd3604f20a3770b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193971"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360514"
 ---
 # <a name="enter-skills"></a>Angive færdigheder
 
@@ -45,17 +45,17 @@ Hvis du vil angive færdigheder uden at kræve godkendelse, skal du oprette en a
 
 4. Vælg **Medarbejderfærdigheder** i ruden **Opret arbejdsproces**.
 
-   [![Vælg arbejdsprocessen Medarbejderfærdigheder](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![Vælg arbejdsprocessen Medarbejderfærdigheder.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. Vælg **Åbn** i dialogboksen **Åbn denne fil?** Indtast dine legitimationsoplysninger, når du bliver bedt om det.
 
 6. Vælg arbejdsgangselementet **Godkend færdigheder** i arbejdsproceseditoren, og træk det til lærredet.
 
-   [![Vælg arbejdsgangselementet Godkend færdigheder](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![Vælg arbejdsgangselementet Godkend færdigheder.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Knyt elementet **Start** til elementet **Godkend færdigheder 1**, og knyt derefter elementet **Godkend færdigheder 1** til elementet **Slut**. Du skal muligvis rulle ned for at se elementet **Slut**. Du kan trække det tættere på de andre elementer.
 
-   [![Tilknyt arbejdsgangselementer](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Tilknyt arbejdsgangselementer.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. Dobbeltklik på arbejdsgangselementet **Godkend færdigheder 1**, og højreklik derefter på elementet **Trin 1**. Højreklik på elementet **Trin 1**, og vælg derefter **Egenskaber**.
 
@@ -65,7 +65,7 @@ Hvis du vil angive færdigheder uden at kræve godkendelse, skal du oprette en a
 
 11. Vælg **Tilføj betingelse**. Vælg **Medarbejders selvbetjeningsfærdigheder** efter **Hvor**, og vælg derefter **Medarbejders selvbetjeningsfærdigheder.Person**. Efter **er** skal du vælge **felt** og derefter vælge **Relation mellem bruger og person.Person**.
 
-    [![Angiv betingelse](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![Angiv betingelse.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. Vælg **Tildeling** på navigationslinjen til venstre.
 
@@ -73,7 +73,7 @@ Hvis du vil angive færdigheder uden at kræve godkendelse, skal du oprette en a
 
 14. Vælg **Ledelseshierarki** i feltet **Hierarkitype:** under fanen **Valg af hierarki**.
 
-    [![Angiv ledelseshierarki](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![Angiv ledelseshierarki.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Vælg **Luk**, vælg **Arbejdsproces** i brødkrummen på lærredet, og vælg derefter **Gem og luk**.
 

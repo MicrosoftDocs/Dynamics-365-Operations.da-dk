@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 32dfcc65d8b76f7314dcc348299c29d4ccff8d91
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826732"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355574"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Flette værdimodel for anlægsaktiver og afskrivningsmodel
 
@@ -27,7 +27,7 @@ ms.locfileid: "5826732"
 
 I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I udgivelsen Microsoft Dynamics 365 for Operations (1611) er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt bogkoncept.
 
-Den nye modelfunktionalitet er baseret på tidligere værdimodelfunktionalitet, men indeholder også alle de funktioner, der tidligere blev angivet i afskrivningsmodeller. [![Model som sammenfletning af værdimodellens og afskrivningsmodellens funktionalitet](./media/fixed-assets.png)](./media/fixed-assets.png) På grund af denne fletning kan du nu bruge et enkelt sæt af sider, forespørgsler og rapporter for alle anlægsaktivprocesser. Tabellerne i dette emne beskriver de tidligere funktioner for afskrivningsmodeller og værdimodeller sammen med den nye funktionalitet til modeller.
+Den nye modelfunktionalitet er baseret på tidligere værdimodelfunktionalitet, men indeholder også alle de funktioner, der tidligere blev angivet i afskrivningsmodeller. [![Model som sammenfletning af værdimodellens og afskrivningsmodellens funktionalitet.](./media/fixed-assets.png)](./media/fixed-assets.png) På grund af denne fletning kan du nu bruge et enkelt sæt af sider, forespørgsler og rapporter for alle anlægsaktivprocesser. Tabellerne i dette emne beskriver de tidligere funktioner for afskrivningsmodeller og værdimodeller sammen med den nye funktionalitet til modeller.
 
 ## <a name="setup"></a>Konfiguration
 Som standard bogfører modellerne til både Finans og reskontro for anlægsaktiv. Modeller har en ny **Bogfør i finans**-indstilling, så du kan deaktivere bogføring til Finans og nøjes med at bogføre til reskontro for anlægsaktiv. Denne funktion minder om den tidligere funktionsmåde for bogføring i afskrivningsmodeller. Opsætningen af kladdenavne har et nyt posteringslag, der hedder Ingen. Dette posteringslag blev tilføjet specifikt for anlægsaktivposteringer. Hvis du vil bogføre posteringer for modeller, der ikke bogføres til Finans, skal du bruge et kladdenavn, hvis posteringslag er angivet til **Ingen**.

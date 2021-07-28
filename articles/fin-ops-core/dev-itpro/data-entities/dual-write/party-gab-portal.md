@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: a2ea914344341ee26138e853727c551bdd5d733e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833084"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358611"
 ---
 # <a name="using-power-portal-with-the-party-data-model"></a>Brug af Power Portal sammen med datamodellen for part
 
@@ -28,11 +28,11 @@ Kort sagt er den måde, som tabellerne fungerer sammen på, ændret, men tabelti
 
 Dette diagram viser tabelrelationen **uden** datamodellen for parten og det globale adressekartotek:
 
-   ![uden partmodel](media/without-party-model.PNG)
+   ![uden partmodel.](media/without-party-model.PNG)
 
 Dette diagram viser tabelrelationen **med** datamodellen for parten og det globale adressekartotek:
 
-   ![med partmodel](media/with-party-model.png)
+   ![med partmodel.](media/with-party-model.png)
 
 ## <a name="create-a-new-table-permission"></a>Oprette en ny tabeltilladelse
 

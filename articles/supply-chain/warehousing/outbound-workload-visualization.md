@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810480"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351411"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering af udgående arbejdsbyrde
 
@@ -60,7 +60,7 @@ Benyt følgende fremgangsmåde for at konfigurere en visualisering af udgående 
     - **Dage, der skal medtages** – Angiv det antal dage i fortiden, som diagrammet skal genereres for.
     - **Arbejdsordretype** – Vælg de udgående arbejdsordretyper, der skal filtreres efter.
 
-    ![Siden Konfigurer filtre](media/work-viz-filters-1.png "Siden Konfigurer filtre")
+    ![Siden Konfigurer filtre.](media/work-viz-filters-1.png "Siden Konfigurer filtre")
 
 1. Luk siden **Konfigurer filtre** for at vende tilbage til siden **Visualiseringer af udgående arbejdsbyrder**.
 
@@ -70,11 +70,11 @@ Benyt følgende fremgangsmåde for at konfigurere en visualisering af udgående 
     - **Sidst opdateret** – iI dette felt vises den dato og det tidspunkt, hvor oplysningerne i diagrammet sidst blev opdateret.
     - **Estimeret/faktisk tid** – Hvis der er konfigureret arbejdsstandarder i systemet, skal du angive denne indstilling til *Ja* for at få vist de samlede estimerede pluktider øverst i hver kolonne i diagrammet. Hvis du ikke bruger arbejdsstandarder, er denne indstilling ikke tilgængelig.
 
-    ![Eksempel på visualisering](media/work-viz-chart.png "Eksempel på visualisering")
+    ![Eksempel på visualisering.](media/work-viz-chart.png "Eksempel på visualisering")
 
 1. Vælg en vilkårlig søjle i diagrammet for at få vist oplysningerne i den tilknyttede arbejdslinje.
 
-    ![Arbejdslinjedetaljer](media/work-viz-work-details.png "Arbejdslinjedetaljer")
+    ![Arbejdslinjedetaljer.](media/work-viz-work-details.png "Arbejdslinjedetaljer")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Eksempel: Visualisering af udgående arbejdsbyrde for zoner
 
@@ -92,7 +92,7 @@ I dette eksempel skal du oprette en visualisering, der viser arbejdslinjer for h
 
 I følgende illustration vises et eksempel på resultatdiagrammet.
 
-![Visualisering af zone vs. arbejdsstatus](media/work-viz-chart.png "Visualisering af zone vs. arbejdsstatus")
+![Visualisering af zone vs. arbejdsstatus.](media/work-viz-chart.png "Visualisering af zone vs. arbejdsstatus")
 
 Dette diagram indeholder to zoner, der hedder **PRODUKTION** og **BULK**, plus en zone med navnet **Blank**. Zonen **Blank** repræsenterer alle de arbejdslinjer, der ikke er medlemmer af nogen zoner. Diagrammet viser altid alle ikke-relaterede filtrerede data som **Blank**, så det giver så høj synlighed som muligt. I området **PRODUKTION** vises tre lukkede linjer og fire åbne linjer i diagrammet. I området **BULK** vises fire lukkede linjer og én åben linje og 24 annullerede linjer i diagrammet. Endelig viser diagrammet otte lukkede linjer, der ikke indgår i en zone og derfor er angivet som **Blank**.
 

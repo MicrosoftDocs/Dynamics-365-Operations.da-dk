@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 067d7035cdb9c8f4bcb2bdac9cf0a33cd4e01079
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2fa602d01cadecbf24c2433360f7b2a8ebb0854a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811431"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355149"
 ---
 # <a name="cost-element-dimensions"></a>Dimensioner for omkostningselement
 
@@ -63,7 +63,7 @@ Der findes to typer omkostningselementer: primære omkostningselementer og sekun
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Omkostningselementdimensioner og omkostningselementers dimensionsmedlemmer
 Omkostningselementer omtales som *omkostningselementdimensioner*. De enkelte dimensionsværdier kaldes *omkostningselementers dimensionsmedlemmer*. For eksempel kan du have en dansk struktur for kontoplanen, der er grundlaget for lovpligtig rapportering. Kontoplanen anvendes som omkostningselementdimension. De konti, som er primære omkostningselementer, repræsenteres som omkostningselementets dimensionsmedlemmer i omkostningsregnskabet. Følgende skærmbillede vises et eksempel på hovedkonti som omkostningselementdimension med dets faktiske hovedkonti som dimensionsmedlemmer af omkostningselementet. 
 
-[![Skærmbillede af Hovedkonti som dimension for omkostningselement](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Skærmbillede af Hovedkonti som dimension for omkostningselement.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Importere omkostningselementers dimensionsmedlemmer gennem dataforbindelser
 For at forenkle opsætningen af omkostningselementets dimensionsmedlemmer i omkostningsregnskabet kan du bruge dataforbindelser, der enten er færdigbyggede eller tilpassede til at hente de primære omkostningselementer fra et eller flere kildesystemer.

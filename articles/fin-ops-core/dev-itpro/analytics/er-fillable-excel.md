@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893902"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359023"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -39,7 +39,7 @@ Når du tilføjer en ny ER-formatkonfiguration for at generere et udgående doku
 
 Hvis du vil konfigurere ER-formatkomponenten af konfigurationen, skal du vælge **Designer** i handlingsruden og åbne ER-formatkomponenten for redigering i ER-operationsdesigner.
 
-![Siden Konfigurationer](./media/er-excel-format-add-format.png)
+![Siden Konfigurationer.](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Excel-filkomponent
 
@@ -47,14 +47,14 @@ Hvis du vil konfigurere ER-formatkomponenten af konfigurationen, skal du vælge 
 
 Du skal føje en **Excel \\Fil**-komponent til det konfigurerede ER-format, hvis du vil generere et udgående dokument i Excel-format.
 
-![Excel-filkomponent](./media/er-excel-format-add-file-component.png)
+![Excel-filkomponent.](./media/er-excel-format-add-file-component.png)
 
 Hvis du vil angive layoutet for det udgående dokument, skal du vedhæfte en Excel-projektmappe med filtypenavnet .xlsx til **Excel-\\fil**-komponenten som skabelon til udgående dokumenter.
 
 > [!NOTE]
 > Når du manuelt tilknytter en skabelon, skal du bruge en [dokumenttype](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types), der er konfigureret til dette formål i [ER-parametrene](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
-![Føje en tilknytning til Excel\Fil-komponenten](./media/er-excel-format-add-file-component2.png)
+![Føje en tilknytning til Excel\Fil-komponenten.](./media/er-excel-format-add-file-component2.png)
 
 Hvis du vil angive, hvordan den tilknyttede skabelon skal udfyldes, når du kører det konfigurerede ER-format, skal du føje indlejrede komponenter **Ark**, **Område** og **Celle** til komponenten **Excel\\Fil**. Alle indlejrede komponenter skal knyttes til et navngivet element i Excel.
 
@@ -62,7 +62,7 @@ Hvis du vil angive, hvordan den tilknyttede skabelon skal udfyldes, når du kør
 
 Du kan vælge **Importér fra Excel** under fanen **Importer** i handlingsruden for at importere en ny skabelon til et tomt ER-format. I dette eksempel oprettes der automatisk en **Excel\\Fil**-komponent, og den importerede skabelon knyttes til den. Alle nødvendige ER-komponenter oprettes automatisk, baseret på listen over de Excel-navngivne elementer, der registreres.
 
-![Vælge Importér fra Excel](./media/er-excel-format-import-template.png)
+![Vælge Importér fra Excel.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > Hvis du vil oprette det valgfrie **Ark**-element i det redigerbare ER-format, skal du angive indstillingen **Opret Excel-arkformatelement** til **Ja**.
@@ -79,7 +79,7 @@ Under fanen **Tilknytning** i ER-operationsdesigneren kan du konfigurere egenska
 - Hvis et udtryk af egenskaben **Aktiveret** er konfigureret til at returnere **Sand** på kørselstidspunktet, eller, hvis der slet ikke er konfigureret et udtryk, vil det relevante regneark blive taget med i det genererede dokument.
 - Hvis et udtryk af egenskaben **Aktiveret** er konfigureret til at returnere **Falsk** på kørselstidspunktet, indeholder det genererede dokument ikke et regneark.
 
-![Eksempel på en arkkomponent](./media/er-excel-format-sheet-component.png)
+![Eksempel på en arkkomponent.](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>Områdekomponent
 
@@ -182,7 +182,7 @@ Du kan vælge **Opdater fra Excel** under fanen **Importer** i handlingsruden fo
 >
 > Hvis det redigerbare ER-format oprindeligt indeholdte **Ark**-elementer, anbefales det, at du angiver indstillingen **Opret Excel-arkformatelement** til **Ja**, når du importerer en opdateret skabelon. Ellers oprettes alle indlejrede elementer i det oprindelige **Ark**-element fra bunden. Derfor går alle bindinger af de genoprettede formatelementer tabt i det opdaterede ER-format.
 
-![Indstillingen Opret Excel-arkformatelement i dialogboksen Opdater fra Excel](./media/er-excel-format-update-template.png)
+![Indstillingen Opret Excel-arkformatelement i dialogboksen Opdater fra Excel.](./media/er-excel-format-update-template.png)
 
 Hvis du vil vide mere om denne funktion, skal du udføre trinnene i [Redigere elektronisk rapporteringsformat ved at genanvende Excel-skabeloner](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -190,7 +190,7 @@ Hvis du vil vide mere om denne funktion, skal du udføre trinnene i [Redigere el
 
 Når du validerer et ER-format, der kan redigeres, sker der en konsistenskontrol for at sikre, at Excel-navnet findes i den Excel-skabelon, der aktuelt bruges. Du får besked om eventuelle uoverensstemmelser. Ved visse inkonsistenser tilbydes muligheden for at rette problemer automatisk.
 
-![Validering og fejlmeddelelse](./media/er-excel-format-validate.png)
+![Validering og fejlmeddelelse.](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Styre beregningen af Excel-formler
 
@@ -209,7 +209,7 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
 1. Brug de angivne ER-konfigurationer til at [generere](er-generate-printable-fti-forms.md) et FTI-dokument (fritekstfaktura, der kan udskrives).
 2. Gennemse sidefoden i det genererede dokument. Bemærk, at den indeholder oplysninger om det aktuelle sidenummer og det samlede antal sider i dokumentet.
 
-    ![Gennemse sidefoden i et genereret dokument i Excel-format](./media/er-fillable-excel-footer-1.gif)
+    ![Gennemse sidefoden i et genereret dokument i Excel-format.](./media/er-fillable-excel-footer-1.gif)
 
 3. I ER-formatdesigneren skal du [åbne](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format)-eksempelformatet ER til gennemsyn
 
@@ -222,7 +222,7 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
 
     - Den anden **streng**-komponent udfylder den tekst, der indeholder det aktuelle sidenummer, og det samlede antal sider i det aktuelle dokument.
 
-    ![Gennemse ER-formatkomponenten på siden Formatdesigner for sidefod](./media/er-fillable-excel-footer-2.png)
+    ![Gennemse ER-formatkomponenten på siden Formatdesigner for sidefod.](./media/er-fillable-excel-footer-2.png)
 
 4. Tilpas eksempel-ER-formatet for at redigere den aktuelle sidefod:
 
@@ -237,14 +237,14 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
         1. Tilføj en **Streng**-komponent, der justerer behandlingen af data til højre og viser det med skrifttypen 8 "Segoe UI Regular" (**"&R&"Segoe UI,Regular"&8"**).
         2. Tilføj en **Streng**-komponent, der udfylder behandlingsdatoen i et brugerdefineret format (**"&nbsp;"&DATEFORMAT (SESSIONTODAY(), "yyy-MM-dd")**).
 
-        ![Gennemse ER-formatkomponenten på siden Formatdesigner for sidefod](./media/er-fillable-excel-footer-3.png)
+        ![Gennemse ER-formatkomponenten på siden Formatdesigner for sidefod.](./media/er-fillable-excel-footer-3.png)
 
     4. [Fuldfør](er-quick-start2-customize-report.md#CompleteDerivedFormat) kladdeversionen af det afledte **Fritekstfaktura (Excel) brugerdefineret** ER-format .
 
 5. [Konfigurer](er-generate-printable-fti-forms.md#configure-print-management) udskriftsstyring til at bruge det afledte **Fritekstfaktura (Excel) brugerdefineret** ER-format i stedet for prøve ER-format.
 6. Generer et FTI-dokument, der kan udskrives, og gennemse sidefoden i det oprettede dokument.
 
-    ![Gennemse sidefoden i et genereret dokument i Excel-format](./media/er-fillable-excel-footer-4.gif)
+    ![Gennemse sidefoden i et genereret dokument i Excel-format.](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

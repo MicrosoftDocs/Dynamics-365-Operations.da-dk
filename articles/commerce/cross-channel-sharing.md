@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799511"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349716"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruge deling på tværs af kanaler
 
@@ -48,15 +48,15 @@ Udfør følgende trin for at aktivere deling af på tværs af kanaler i Commerce
 1. Gå til **Webstedsindstillinger \> Funktioner**.
 1. Angiv indstillingen for funktionen **På tværs af kanal** til **Aktiveret**.
 
-    ![Indstillingen på tværs af kanaler er indstillet til aktiveret i Commerce -webstedsgenerator](./media/enabling-cross-channel-sharing.png)
+    ![Indstillingen på tværs af kanaler er indstillet til aktiveret i Commerce-webstedsgenerator.](./media/enabling-cross-channel-sharing.png)
 
 Når du har aktiveret deling på tværs af kanaler, vises oplysninger om tværkanal i afsnittet **Kanaler** i **Webstedsindstillinger \> Funktioner** som eksemplet i følgende illustration viser.
 
-![Kanaloplysninger, der er synlige, efter at deling på tværs af kanaler er aktiveret](./media/channels-cross-channel.png)
+![Kanaloplysninger, der er synlige, efter at deling på tværs af kanaler er aktiveret.](./media/channels-cross-channel.png)
 
 Når du har aktiveret deling via flere kanaler, vil feltet **Kanal** i øverste højre hjørne af Commerce-webstedsgenerator medtage en **Onlinebutik på tværs af kanaler**, som du kan bruge til at administrere krydskanalindhold som vist i følgende illustration.
 
-![Indstillingen Onlinebutik på tværs af kanaler i feltet Kanaler, efter at deling på tværs af kanaler er aktiveret](./media/cross-channel-dropdown.png)
+![Indstillingen Onlinebutik på tværs af kanaler i feltet Kanaler, efter at deling på tværs af kanaler er aktiveret.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Oprette og bruge indhold på tværs af kanaler
 

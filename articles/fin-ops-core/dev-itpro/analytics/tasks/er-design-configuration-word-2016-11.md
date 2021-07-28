@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944286"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359405"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Genbruge ER-konfigurationer med Excel-skabeloner til generering af rapporter i Word-format
 
@@ -54,14 +54,14 @@ Disse procedurer er til en funktion, der er tilføjet i Dynamics 365 for Operati
 5. Vælg **Designer**.
 6. Bemærk, at titlen på rodformatelementet på siden **Formatdesigner** angiver, at der aktuelt bruges en Excel-skabelon.
 
-![Vælge den eksisterende konfiguration](../media/er-design-configuration-word-2016-11-image01.gif)
+![Vælge den eksisterende konfiguration.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>Gennemgå den downloadede Word-skabelon
 
 1. Åbn skabelonfilen **SampleVendPaymDocReport.docx**, som du downloadede tidligere, i Word-skrivebordsprogrammet.
 2. Sørg for, at skabelonen kun indeholder layoutet af det dokument, du vil generere som ER-output.
 
-![Word-skabelonlayoutet i skrivebordsprogrammet](../media/er-design-configuration-word-2016-11-image02.png)
+![Word-skabelonlayoutet i skrivebordsprogrammet.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Erstatte Excel-skabelonen med Word-skabelonen og tilføje en brugerdefineret XML-del
 
@@ -84,7 +84,7 @@ Aktuelt bruges Excel-dokumentet som en skabelon til at generere outputtet i OPEN
 
 9. Bemærk, at titlen på rodformatelementet angiver, at der aktuelt bruges en Word-skabelon.
 
-    ![Erstatning af Excel-skabelonen med Word-skabelonen og tilføjelse af en brugerdefineret XML-del](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Erstatning af Excel-skabelonen med Word-skabelonen og tilføjelse af en brugerdefineret XML-del.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. Vælg **Vedhæftede filer** under fanen **Formater**.
 
@@ -110,7 +110,7 @@ Hvis du har kendskab til design af Word-dokumenter som formularer, der indeholde
 1. Åbn skabelonfilen **SampleVendPaymDocReportBounded.docx** i Word-skrivebordsprogrammet.
 2. Sørg for, at skabelonen indeholder layoutet af det dokument, du vil generere som ER-output. De indholdskontrolelementer, der bruges som pladsholdere for data, som ER indtaster i denne skabelon under kørslen, er baseret på de tilknytninger, der er konfigureret mellem elementer i den brugerdefinerede XML-del **Rapport** og indholdets kontrolelementer i Word-dokumentet.
 
-![Word-skabeloneksempel i skrivebordsprogrammet](../media/er-design-configuration-word-2016-11-image04.png)
+![Word-skabeloneksempel i skrivebordsprogrammet.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>Uploade Word-skabelonen, hvor den brugerdefinerede XML-del er knyttet til indholdskontrolelementer
 
@@ -144,7 +144,7 @@ Hvis du vil køre kladdeversionen af det format, der kan redigeres, skal du gør
 3. Markér alle rækker i gitteret på siden **Kreditorbetalinger**.
 4. Vælg **Betalingsstatus** \> **Ingen**.
 
-    ![Betalinger til behandling på siden Kreditorbetalinger](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Betalinger til behandling på siden Kreditorbetalinger.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. Vælg **Opret betalinger** i handlingsruden.
 6. Følg disse trin i den viste dialogboks:
@@ -156,7 +156,7 @@ Hvis du vil køre kladdeversionen af det format, der kan redigeres, skal du gør
 7. Vælg **OK** i dialogboksen **Elektroniske rapporteringsparametre**.
 8. Det oprettede output vises i Word-format og indeholder oplysninger om de behandlede betalinger. Analysér det genererede output.
 
-    ![Genereret output i Word-format](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Genereret output i Word-format.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

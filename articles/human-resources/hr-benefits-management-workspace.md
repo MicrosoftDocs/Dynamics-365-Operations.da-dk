@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 45f776238fbb8e028e8d5b2f342b7d27009c686d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193425"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353608"
 ---
 # <a name="benefits-management-workspace"></a>Arbejdsområde for personalegodeadministration
 
@@ -31,7 +31,7 @@ ms.locfileid: "6193425"
 Dette emne beskriver arbejdsområdet **Frynsegodeadministration** i Dynamics 365 Human Resources.
 
 > [!NOTE]
-> Hvis du vil have vist arbejdsområdet **Frynsegodeadministration**, skal du først aktivere funktionen **(Forhåndsversion) arbejdsområdet Frynsegodeadministration** i funktionsstyring. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br><br>![Aktivere arbejdsområdet Frynsegodeadministration](./media/hr-benefits-management-workspace-enable.png)
+> Hvis du vil have vist arbejdsområdet **Frynsegodeadministration**, skal du først aktivere funktionen **(Forhåndsversion) arbejdsområdet Frynsegodeadministration** i funktionsstyring. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br><br>![Aktivere arbejdsområdet Frynsegodeadministration.](./media/hr-benefits-management-workspace-enable.png)
 
 Arbejdsområdet **Frynsegodeadministration** giver dig et hurtigt overblik over elementer til frynsegoder, der kræver din opmærksomhed. På denne side kan du se:
 
@@ -43,13 +43,13 @@ Arbejdsområdet **Frynsegodeadministration** giver dig et hurtigt overblik over 
 - Arbejdere med aktive livshændelser
 - Arbejdere med åbne tilmeldinger, som ikke har valgt nogen planer
 
-![Arbejdsområde for personalegodeadministration](./media/hr-benefits-management-workspace.png)
+![Arbejdsområdet Frynsegodeadministration.](./media/hr-benefits-management-workspace.png)
 
 ## <a name="view-action-items"></a>Se handlingselementer
 
 Du kan få vist dine handlingselementer ved enten at vælge et felt eller en fane. Hvis du vælger en fane, kan du se og vælge arbejdere direkte på arbejdsområdesiden.
 
-![Handlingselementer](./media/hr-benefits-management-workspace-action-items.png)
+![Handlingselementer.](./media/hr-benefits-management-workspace-action-items.png)
 
 Hvis du vælger et felt, går du til siden for det pågældende område. Hvis du f.eks. vælger et af disse felter, vises siden **Frynsegodeplaner for medarbejdere** filtreret efter medarbejdere, du skal udføre handling på:
 
@@ -58,21 +58,21 @@ Hvis du vælger et felt, går du til siden for det pågældende område. Hvis du
 - **Tilmeldt i personalegoder**
 - **Nyansat, der ikke er tilmeldt**
 
-![Personalegodeplaner for arbejder](./media/hr-benefits-management-workspace-plans.png)
+![Frynsegodeplaner for arbejder.](./media/hr-benefits-management-workspace-plans.png)
 
 Når du vælger feltet **Aktive livshændelser** eller **Fremtidige livshændelser**, får du en liste over aktive eller fremtidige livshændelser.
 
-![Livshændelser](./media/hr-benefits-management-workspace-life-events.png)
+![Livshændelser.](./media/hr-benefits-management-workspace-life-events.png)
 
-## <a name="processing"></a>Afvikling
+## <a name="processing"></a>Behandler
 
 Hvis du vil behandle tilmeldingsberettigelse, livshændelser eller ændringer af frynsegodesatsen, skal du vælge det relevante element på navigationslinjen.
 
-![Afvikling](./media/hr-benefits-management-workspace-processing.png)
+![Afvikling.](./media/hr-benefits-management-workspace-processing.png)
 
 For at få vist resultaterne af processen skal du vælge **Procesresultater** på siden.
 
-![Procesresultater](./media/hr-benefits-management-workspace-process-results.png)
+![Procesresultater.](./media/hr-benefits-management-workspace-process-results.png)
 
 Du kan finde flere oplysninger om behandling af frynsegoder under:
 
@@ -86,13 +86,13 @@ Du kan finde flere oplysninger om behandling af frynsegoder under:
 
 Hvis du vil have vist en anden frynsegodeperiode, skal du vælge den på rullelisten **Periode**.
 
-![Ændre periode](./media/hr-benefits-management-workspace-period.png)
+![Ændre periode.](./media/hr-benefits-management-workspace-period.png)
 
 ## <a name="view-more-options"></a>Se flere indstillinger
 
 Vælg **Links**, hvis du vil have vist flere oplysninger og handlinger, du kan udføre.
 
-![Link](./media/hr-benefits-management-workspace-links.png)
+![Links.](./media/hr-benefits-management-workspace-links.png)
 
 ## <a name="see-also"></a>Se også
 

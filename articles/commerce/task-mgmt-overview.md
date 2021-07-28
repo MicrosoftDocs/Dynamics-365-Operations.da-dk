@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: bc33a8b21c75a308aea738f0db1f3786695f0633
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ffe85a028f7bfda971157b376e82ea86b81fe11b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791720"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354511"
 ---
 # <a name="task-management-overview"></a>Oversigt over opgavestyring
 
@@ -37,7 +38,7 @@ Butikschefer kan bruge opgavestyring til at tildele opgaver til individuelle arb
 
 I følgende illustration vises den grundlæggende arkitektur af opgavestyring i Commerce.
 
-![Grundlæggende arkitektur for opgavestyring](media/Tasks-management-conceptual-architecture.png)
+![Grundlæggende arkitektur for opgavestyring.](media/Tasks-management-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831379"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359757"
 ---
 # <a name="location-license-plate-positioning"></a>Placering af lokations-id
 
@@ -88,7 +88,7 @@ Funktionen skal være aktiveret i lokationsprofilen for hver lokation, hvor den 
 1. Mens **Nummerplade** stadig er valgt, skal du vælge **Tilføj tabeljoin**.
 1. På listen over tabeller, der vises, skal du i kolonnen **Relation** vælge **Placering af nummerplade på lokation (nummerplade)**. Vælg derefter **Vælg** for at føje **Placering af nummerplads på lokation** til tabeljoinet **Lagerdimensioner**.
 
-    ![Tabeljoinforbindelser](media/LpTableJoin.png "Tabeljoinforbindelser")
+    ![Tabeljoinforbindelser.](media/LpTableJoin.png "Tabeljoinforbindelser")
 
 1. Vælg **OK** for at bekræfte de opdaterede joinforbundne tabeller og lukke forespørgselseditoren.
 1. I oversigtspanelet **Handlinger i lokationsvejledning** skal du vælge **Rediger forespørgsel** igen for at åbne forespørgselseditoren.
@@ -100,7 +100,7 @@ Funktionen skal være aktiveret i lokationsprofilen for hver lokation, hvor den 
     - **Felt:** *NP-position*
     - **Afgrænsning:** *1*
 
-    ![Nyt område](media/LpPositionCriteria.png "Nyt område")
+    ![Nyt område.](media/LpPositionCriteria.png "Nyt område")
 
 1. Vælg **OK** for at bekræfte dine ændringer og lukke forespørgselseditoren.
 
@@ -275,7 +275,7 @@ Nu, hvor funktionen *Placering af nummerplade på lokation* er oprettet, og lage
 1. Vælg feltet **Id** på siden **Scan et arbejds-id/nummerplade-id**, og angiv derefter arbejds-id'et fra salgslinjen.
 1. Bemærk, at plukarbejdet dirigerer dig til at plukke vare *A0002* fra lokation *01A01R1S2B*. Du modtager denne instruktion, fordi vare *A0002* er på en licensnummerplade i position *1* på den pågældende lokation.
 
-    ![Placering 1-lokation](media/LocationLicensePlatePositioning.png "Placering 1-lokation")
+    ![Placering 1-lokation.](media/LocationLicensePlatePositioning.png "Placering 1-lokation")
 
 1. Angiv det nummerplade-id, du har oprettet for lokationen, og følg derefter vejledningen for at plukke salgsordren.
 

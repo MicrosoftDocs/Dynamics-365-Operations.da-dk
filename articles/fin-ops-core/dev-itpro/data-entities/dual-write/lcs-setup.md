@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103563"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359357"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfiguration af dobbeltskrivning fra Lifecycle Services
 
@@ -40,7 +40,7 @@ Følg disse trin for at konfigurere dobbeltskrivning fra LCS-siden **Miljøoplys
 
 2. Vælg knappen **Dobbeltskrivningsapplikation**.
 
-    ![Power Platform-integration](media/powerplat_integration_step2.png)
+    ![Power Platform-integration.](media/powerplat_integration_step2.png)
 
 3. Gennemse vilkår og betingelser, og markér afkrydsningsfeltet **Konfigurer**.
 
@@ -52,7 +52,7 @@ Følg disse trin for at konfigurere dobbeltskrivning fra LCS-siden **Miljøoplys
 
 7. Vælg **Link til Power Platform-miljø** for at oprette en kæde mellem Dataverse og databaserne i det aktuelle miljø. Det tager typisk mindre end 5 minutter.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link til Power Platform-miljø":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link til Power Platform-miljø.":::
 
 8. Når sammenkædningen er fuldført, vises der et link. Brug linket til at logge på administrationsområdet med dobbeltskrivning i Finance and Operations-miljøet. Herfra kan du oprette objekttilknytninger.
 

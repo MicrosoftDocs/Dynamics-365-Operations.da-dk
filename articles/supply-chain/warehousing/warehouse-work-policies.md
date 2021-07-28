@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838124"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353366"
 ---
 # <a name="work-policies"></a>Arbejdspolitikker
 
@@ -200,7 +200,7 @@ Indkøbsordren er nu modtaget, men der er ikke knyttet noget arbejde til den. De
 
 I følgende eksempel er der to produktionsordrer, *PRD-001* og *PRD-002*. Produktionsordre *PRD-001* er en handling, der hedder *Samling*, hvor produktet *SC1* færdigmeldes på lokation *001*. Produktionsordre *PRD-002* er en handling, der hedder *Maling* og forbruger produkt *SC1* fra lokation *001*. Produktionsordren *PRD-002* forbruger også råvare *RM1* fra lokation *001*. Råvare *RM1* opbevares på lagerlokation *BULK-001* og vil blive plukket til lokation *001* af lagerstedets arbejde til råvareplukning. Plukkearbejdet genereres, når produktionen *PRD-002* frigives.
 
-[![Politikker for lagerstedsarbejde](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Politikker for lagerstedsarbejde.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Når du skal konfigurere lagerstedets arbejdspolitik for dette scenario, skal du overveje følgende oplysninger:
 

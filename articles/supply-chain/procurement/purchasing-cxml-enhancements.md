@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f3bc63fd4b1017a5c96116ff6c9bbcc387869927
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b579ebff28e01caa727a22b01ae636ff713a27aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825272"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359951"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Forbedringer af indkøbs-cXML
 
@@ -38,7 +38,7 @@ Når du har aktiveret funktionen, skal du konfigurere indstillingerne på følge
 
 Denne konfiguration er opsummeret i følgende illustration.
 
-![Områder til konfiguration af cXML-funktioner](media/cxml-settings-areas.png "Områder til konfiguration af cXML-funktioner")
+![Områder til konfiguration af cXML-funktioner.](media/cxml-settings-areas.png "Områder til konfiguration af cXML-funktioner")
 
 Derudover skal du konfigurere [batchjobbet for indkøbsordreanmodningen](#po-batch). Dette batchjob bruges til at sende de bekræftede indkøbsordrer.
 
@@ -46,7 +46,7 @@ Derudover skal du konfigurere [batchjobbet for indkøbsordreanmodningen](#po-bat
 
 Brug siden **cXML-parametre** til at foretage enkelte globale indstillinger, der gælder for funktionaliteten i forbindelse med afsendelse af indkøbsordrer.
 
-![Siden cXML-parametre](media/cxml-parameters.png "Siden cXML-parametre")
+![Siden cXML-parametre.](media/cxml-parameters.png "Siden cXML-parametre")
 
 Gå til **Indkøb og forsyning \> Opsætning \> cXML-administration \> cXML-parametre**, og angiv følgende parametre:
 
@@ -67,7 +67,7 @@ Hver gang du bekræfter en indkøbsordre, hvor indstillingen **Send indkøbsordr
 - Hvis du vil konfigurere en kreditor, så der automatisk bruger cXML til alle nye indkøbsordrer, der er oprettet fra en rekvisition, skal du gå til **Indkøb og forsyning \> Kreditorer \> Alle kreditorer** og vælge eller oprette en kreditor for at åbne siden med detaljer. Derefter skal du i oversigtspanelet **Standardindstillinger for indkøbsordrer** angive indstillingen **Send indkøbsordre via cXML** til _Ja_. Hvis cXML også automatisk skal bruges til nye indkøbsordrer, der **ikke** oprettes ud fra en rekvisition, skal du også angive ordreegenskaben **ENABLEMANUALPO** til _Sand_ for det relaterede eksterne katalog, som det er beskrevet i sektionen [Angive ordreegenskaberne](#set-order-properties) senere i dette emne.
 - For individuelle indkøbsordrer skal du gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer** og vælge eller oprette en indkøbsordre for at åbne siden med detaljer i den. Skift til visningen **Overskrift**, og angiv derefter indstillingen **Send indkøbsordre via cXML** efter behov i oversigtspanelet **Opsætning**.
 
-![Standardindstillinger for indkøbsordrer for kreditorer](media/cxml-order-defaults.png "Standardindstillinger for indkøbsordrer for kreditorer")
+![Standardindstillinger for indkøbsordrer for kreditorer.](media/cxml-order-defaults.png "Standardindstillinger for indkøbsordrer for kreditorer")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Konfigurere et eksternt katalog til at bruge cXML
 
@@ -76,7 +76,7 @@ På siden **Eksterne kataloger** kan du for hver af dine kataloger konfigurere P
 > [!NOTE]
 > Når du bekræfter en indkøbsordre, der kan sendes via cXML, søger systemet efter den kreditor, der er knyttet til indkøbsordren, og finder derefter det første aktive eksterne katalog, der er knyttet til den pågældende kreditor. Systemet bruger derefter indstillingerne fra det eksterne katalog til at sende indkøbsordren. Hvis der er oprettet flere eksterne kataloger, bruger systemet kun det første eksterne katalog, som det finder, baseret på kreditoren på indkøbsordren. Det anbefales derfor, at du kun opretter ét eksternt katalog for hver kreditor.
 
-![Indstillinger for eksternt katalog](media/cxml-supplier-catalog.png "Indstillinger for eksternt katalog")
+![Indstillinger for eksternt katalog.](media/cxml-supplier-catalog.png "Indstillinger for eksternt katalog")
 
 ### <a name="set-the-punchout-protocol-type"></a>Angive PunchOut-protokoltypen
 
@@ -143,11 +143,11 @@ Som beskrevet i sektionen [Angive ordreegenskaber](#set-order-properties) – hv
 
 Du kan angive de notattyper, som systemet skal søge efter, ved at gå til **Indkøb og forsyning \> Opsætning \> Formularer \> Fra opsætning**. På fanen **Indkøbsordre** skal du derefter angive feltet **Medtag dokumenter af typen** den notattype, som skal medtages. Det er kun tekstnoter, der medtages, ikke vedhæftede dokumenter.
 
-![Siden Formularopsætning](media/cxml-form-setup.png "Siden Formularopsætning")
+![Siden Formularopsætning.](media/cxml-form-setup.png "Siden Formularopsætning")
 
 Vedhæftede filer vil kun blive medtaget i en indkøbsordre, hvis deres felt **Type** er angivet til den værdi, du vælger i feltet **Medtag dokumenter af typen**, og hvis deres felt **Begrænsning** er angivet til _Ekstern_. Hvis du vil oprette, få vist eller redigere de vedhæftede filer for en indkøbsordre, skal du gå til **Indkøb og forsyning \> Alle indkøbsordrer**, vælge eller oprette en indkøbsordre og derefter vælge knappen **Vedhæftede filer** (symbolet med papirklip) i øverste højre hjørne.
 
-![Vedhæftet note, der er konfigureret til at blive sendt til en kreditor](media/cxml-note-to-vendor.png "Vedhæftet note, der er konfigureret til at blive sendt til en kreditor")
+![Vedhæftet note, der er konfigureret til at blive sendt til en kreditor.](media/cxml-note-to-vendor.png "Vedhæftet note, der er konfigureret til at blive sendt til en kreditor")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>Få vist meddelelsesloggen for cXML-indkøbsvogn for eksternt katalog, PunchOut
 
@@ -155,7 +155,7 @@ Når du angiver feltet **PunchOut-protokoltype** til _cXML_ for et eksternt kata
 
 Hvis du vil åbne loggen for et eksternt katalog, skal du vælge det relevante katalog og derefter vælge **Meddelelseslog for cXML-indkøbsvogn**. På siden **Meddelelseslog for cXML-indkøbsvogn** vises en liste over de indkøbsvogne, der er returneret, den XML, der er knyttet til disse indkøbsvogne, og de linjer, der blev oprettet på den relaterede indkøbsrekvisition.
 
-![Siden Meddelelseslog for cXML-indkøbsvogn](media/cxml-cart-message-log.png "Siden Meddelelseslog for cXML-indkøbsvogn")
+![Siden Meddelelseslog for cXML-indkøbsvogn.](media/cxml-cart-message-log.png "Siden Meddelelseslog for cXML-indkøbsvogn")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>Angive ydre elementer for eksternt katalog, PunchOut
 
@@ -178,21 +178,21 @@ Du kan føje ydre elementer til et eksternt katalog ved at følge nedenstående 
         - **Efternavn** – Brug efternavnet på den kontaktperson, der er knyttet til den bruger, der skal have adgang til det eksterne katalog.
         - **Telefonnummer** – Brug det primære telefonnummer på den kontaktperson, der er knyttet til den bruger, der skal have adgang til det eksterne katalog.
 
-![Indstillinger for ydre element](media/cxml-extrinsics.png "Indstillinger for ydre element")
+![Indstillinger for ydre element.](media/cxml-extrinsics.png "Indstillinger for ydre element")
 
 Brugeren eller administratoren kan ikke se de ydre elementer, fordi de ikke tilføjes, før brugeren foretager en PunchOut. De indsættes automatisk mellem elementerne **BuyerCookie** og **BrowserFromPost** i cXML-meddelelsen om opsætningsanmodning. Derfor behøver du ikke at angive dem manuelt i XML, når du konfigurerer det eksterne katalog.
 
-![Ydre elementer føjet til XML](media/cxml-extrinsics-xml.png "Ydre elementer føjet til XML")
+![Ydre elementer føjet til XML.](media/cxml-extrinsics-xml.png "Ydre elementer føjet til XML")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Oprette og behandle en indkøbsordre
 
 Når du opretter en indkøbsordre for en kreditor, vil den nedarve indstillingen fra indstillingen **Send indkøbsordre via cXML** fra denne kreditor. Indstillingen forbliver dog tilgængelig i oversigtspanelet **Opsætning** i **overskriftsvisningen** for indkøbsordren, så du kan ændre den senere efter behov.
 
-![Indkøbsordre angivet til at bruge cXML](media/cxml-purchase-order.png "Indkøbsordre angivet til at bruge cXML")
+![Indkøbsordre angivet til at bruge cXML.](media/cxml-purchase-order.png "Indkøbsordre angivet til at bruge cXML")
 
 Når du opretter en indkøbsordre fra en indkøbsrekvisition, der stammer fra et PunchOut-flow, udfyldes alle de nødvendige linjedetaljer. Derefter kan du manuelt tilføje indkøbsordrelinjer eller kopiere dem fra andre indkøbsordrer. Sørg for at angive alle obligatoriske felter. De obligatoriske felter omfatter det eksterne referencenummer, som er det kreditornummer, der skal bruges i cXML-meddelelsen.
 
-![Eksempel på et eksternt referencenummer](media/cxml-line-details.png "Eksempel på et eksternt referencenummer")
+![Eksempel på et eksternt referencenummer.](media/cxml-line-details.png "Eksempel på et eksternt referencenummer")
 
 Når du er færdig med at udfylde alle detaljer for indkøbsordren, skal du huske at bekræfte den. Der sendes ingen meddelelse, medmindre indkøbsordren er bekræftet. Du kan bekræfte en indkøbsordre ved at gå til handlingsruden på fanen **Indkøb** og vælge **Bekræft** i gruppen **Handlinger**. 
 
@@ -200,17 +200,17 @@ Når indkøbsordren er bekræftet, kan du få vist statussen for bekræftelsen v
 
 Alle indkøbsordrer kan have mange bekræftelser. Hver bekræftelse er markeret med et trinvist tal. I følgende illustration er indkøbsordren *00000275*, og bekræftelsen er *00000275-1*. Denne nummerering afspejler Supply Chain Management-standardfunktionen, hvor ændringer i en indkøbsordre, og derfor den type cXML-meddelelse, der skal sendes til kreditoren, identificeres på grundlag af bekræftelsen. Som illustrationen viser, indeholder siden **Bekræftelser på indkøbsordrer** også felterne **Status på ordreafsendelse** og **Status på ordreanmodning for kreditor**. Du kan finde flere oplysninger om de forskellige statusværdier, du kan se på denne side, i sektionen [Overvåge indkøbsordreanmodninger](#monitor-po-requests) senere i dette emne.
 
-![Siden Bekræftelser på indkøbsordrer](media/cxml-po-confirmations.png "Siden Bekræftelser på indkøbsordrer")
+![Siden Bekræftelser på indkøbsordrer.](media/cxml-po-confirmations.png "Siden Bekræftelser på indkøbsordrer")
 
 Hvis du vil have vist flere oplysninger om dokumentet, skal du vælge **Indkøbsordreanmodning** over gitteret.
 
 Siden **Indkøbsordreanmodning** indeholder to gitre. Gitteret på den øverste del af siden har én post for hver indkøbsordre, der er markeret til afsendelse. Gitteret på fanen **Historik for indkøbsordreanmodning** på den nederste del af siden kan have flere poster for den valgte indkøbsordre for at angive status for hver bekræftelse. I følgende illustration vises indkøbsordre 00000275 i det øverste gitter og dokument 00000275-1 i gitteret på fanen **Historik for indkøbsordreanmodning**.
 
-![Siden Indkøbsordreanmodning](media/cxml-po-request.png "Siden Indkøbsordreanmodning")
+![Siden Indkøbsordreanmodning.](media/cxml-po-request.png "Siden Indkøbsordreanmodning")
 
 Hvis batchjobbet er konfigureret og kører, vil dokumentet blive sendt. Du kan få vist statusændringen, efter at dokumentet er afsendt. I følgende illustration er feltet **Status på ordreafsendelse** angivet til _Sent_. Feltet **Status på ordreanmodning for kreditor** er angivet til _Bekræftet_ for at angive, at kreditoren har modtaget dokumentet, og at denne var i stand til at læse og gemme det i sit system. Gitteret på fanen **Historik for indkøbsordreanmodning** viser det tidspunkt, hvor dokumentet blev sendt. Du kan finde flere oplysninger om de forskellige statusværdier, du kan se på denne side, i sektionen [Overvåge indkøbsordreanmodninger](#monitor-po-requests).
 
-![Statusmeddelelser på siden Indkøbsordreanmodning](media/cxml-po-request-2.png "Statusmeddelelser på siden Indkøbsordreanmodning")
+![Statusmeddelelser på siden Indkøbsordreanmodning.](media/cxml-po-request-2.png "Statusmeddelelser på siden Indkøbsordreanmodning")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planlægge batchjob for Indkøbsordreanmodning
 
@@ -226,7 +226,7 @@ Processen vil søge efter indkøbsordredokumenter, der har statussen *Afventer*.
 
 Når ordrer, der kan sendes via cXML, bekræftes, går de i statussen _Afventer_. Som det er beskrevet i [Oprette og behandle en indkøbsordre](#create-po), kan du få vist statussen for indkøbsordren på siden **Indkøbsordreanmodning**. Hver indkøbsordreanmodning kan have én af flere statusser, afhængigt af parametrene og dataene. I denne sektion beskrives de forskellige statustyper og de værdier, de kan have. Disse oplysninger kan hjælpe dig med at administrere problemer og forstå statussen for indkøbsordrer.
 
-![Status for indkøbsordrer på siden Indkøbsordreanmodning](media/cxml-monitor-po-request.png "Status for indkøbsordrer på siden Indkøbsordreanmodning")
+![Status for indkøbsordrer på siden Indkøbsordreanmodning.](media/cxml-monitor-po-request.png "Status for indkøbsordrer på siden Indkøbsordreanmodning")
 
 I gitteret i den øverste del af siden **Indkøbsordreanmodning** kan du få vist følgende statusværdier:
 
@@ -262,13 +262,13 @@ Gitteret på fanen **Historik for indkøbsordreanmodning** på den nederste del 
 
 Hvis du vil have vist XML for meddelelsen om indkøbsordreanmodningen, skal du vælge **Anmod om XML-tekst** nederst på siden **Indkøbsordreanmodning**. Oplysningerne på denne fane kan være nyttige ved test eller fejlvalidering. Du kan gøre oplysningerne lettere at læse ved at få vist dem som en formateret meddelelse. Kopiér indholdet fra fanen til en tekstfil, og få det vist i en XML-editor.
 
-![Fanen Anmod om XML-tekst](media/cxml-request-xml-text.png "Fanen Anmod om XML-tekst")
+![Fanen Anmod om XML-tekst.](media/cxml-request-xml-text.png "Fanen Anmod om XML-tekst")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>Få vist detaljerne for kreditorens svar
 
 Hvis du vil have vist indholdet af en kreditors bekræftelse eller fejlsvar, skal du vælge fanen **Svar-XML** nederst på siden **Indkøbsordreanmodning**.
 
-![Fanen Svar-XML](media/cxml-response-xml.png "Fanen Svar-XML")
+![Fanen Svar-XML.](media/cxml-response-xml.png "Fanen Svar-XML")
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b112bb453e0840120c63038bf8d6897fbf5ff288
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 637d8d211f59711aafe9357dcd48d48f861f722d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798747"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353102"
 ---
 # <a name="navigation-menu-module"></a>Navigationsmenumodul
 
@@ -33,11 +33,11 @@ Det primære formål med navigationsmenumoduler er at give brugerne af webstedet
 Modulet til genvejsmenuen kan føjes til sidens sidehovedmodul. I Fabrikam-temaet viser navigationsmenuen som standard to niveauer. I Starter-temaet viser navigationsmenuen som standard tre niveauer. Hvis du vil ændre antallet af niveauer, skal du bruge en visningsudvidelse på temaet.
 
 I følgende illustration vises et eksempel på en navigationsmenu for Fabrikam-webstedet med to niveauer af kategorihierarki og nogle statiske menupunkter.
-![Eksempel på et navigationsmenumodul](./media/ecommerce-header.png)
+![Eksempel på et navigationsmenumodul.](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>Egenskaber for navigationsmenumodul
 
-| Egenskabsbetegnelse             | Værdi                 | Beskrivelse |
+| Egenskabsbetegnelse             | Værdi                 | Betegnelse |
 |---------------------------|-----------------------|-------------|
 | Kildetekst                  | **Detail**, **Manuel oprettelse**, **Detail og manuel oprettelse** | **Detail**-værdien giver mulighed for at få vist kanalnavigationshierarkiet fra Commerce Headquarters i navigationsmenuen. Værdien af **Manuel oprettelse** tillader, at statiske menupunkter overvåges. Værdien af **Detail og manuel oprettelse** tillader en blanding af begge dele. |
 | Vise kategoribilleder | **Sand** eller **Falsk**    | Når denne egenskab er aktiveret, viser kategoribilleder i den navigationsmenu, som er defineret i Commerce Headquarters for hver kategori. Tilføjet i Commerce version 10.0.14. |
@@ -50,7 +50,7 @@ I følgende illustration vises et eksempel på en navigationsmenu for Fabrikam-w
 | Rodmenu | streng | Denne egenskab kan bruges til at definere tekst for en brugerdefineret rod, hvis egenskaben **Vis rodmenu** er indstillet til **Sand**. |
 
 I følgende illustration vises et eksempel på et kategoribillede, der vises i navigationsmenuen for Fabrikam-webstedet.
-![Eksempel på et navigationsmenumodul med kategoribilleder](./media/ecommerce-categoryimages.PNG)
+![Eksempel på et navigationsmenumodul med kategoribilleder.](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>Tilføje et navigationsmenumodul i et sidehovedmodul
 

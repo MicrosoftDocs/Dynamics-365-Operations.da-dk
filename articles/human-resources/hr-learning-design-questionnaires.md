@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2427e866a1cff91ff0ceca6a71e8052b880c7e5c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e4a1cd6460ed93ce46e561071aedee314bf4f088
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056870"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357113"
 ---
 # <a name="create-questionnaires"></a>Oprette spørgeskemaer
 
@@ -92,7 +92,7 @@ Du bør definere alle parametre, før du begynder at oprette dataene. Du kan til
 ## <a name="questionnaire-components"></a>Spørgeskemakomponenter
 Spørgeskemaer omfatter tre hovedelementer: svarsamlinger, der indeholder svar på spørgsmål med flere svarmuligheder, spørgsmål og selve spørgeskemaet. Du kan eventuelt også gruppere spørgsmål i et spørgeskema i resultatgrupper. Med resultatgrupper kan du kategorisere spørgsmål og få yderligere analyse af spørgeskemaet. 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![QuestionnaireComponents.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Svarsamlinger og svar
 

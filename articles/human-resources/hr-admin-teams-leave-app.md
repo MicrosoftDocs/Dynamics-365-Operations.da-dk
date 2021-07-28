@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053557"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357355"
 ---
 # <a name="human-resources-app-in-teams"></a>Appen Human Resources i Teams
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053557"
 
 Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan medarbejdere hurtigt anmode om at få fri og se deres flekskontooplysninger i Microsoft Teams. Medarbejderne kan interagere med en bot for at anmode om oplysninger. Fanen **Fridage** giver mere detaljerede oplysninger. De kan også sende oplysninger om kommende fridage i teams og chatte uden for Human Resource-appen.
 
-![Orlov via appbot i Human Resources i Teams](./media/hr-teams-leave-app-bot.png)
+![Orlov via appbot i Human Resources i Teams.](./media/hr-teams-leave-app-bot.png)
 
-![Fanen Fri i orlovsappen i Human Resources i Teams](./media/hr-teams-leave-app-timeoff-tab.png)
+![Fanen Fri i orlovsappen i Human Resources i Teams.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Human Resources-orlovsanmodningskort](./media/hr-teams-leave-app-chat-card.png)
+![Human Resources-orlovsanmodningskort.](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Installere og konfigurere
 
@@ -57,11 +57,11 @@ Hvis du ønsker, at brugere skal kunne modtage beskeder om orlov i appen Teams, 
 
 4. Under fanen **Generelt** skal du angive **Aktivér beskeder for Teams-app** til **Ja**.
 
-   ![Aktivere beskeder for appen Teams i systemparametre](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![Aktivere beskeder for appen Teams i systemparametre.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. Hvis du vil aktivere Teams-beskeder for alle brugere, skal du vælge **Ja** ved prompten.
 
-   ![Aktivere Teams-beskeder for alle brugere](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Aktivere Teams-beskeder for alle brugere.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Slå Teams-beskeder til eller fra for de enkelte brugere
 
@@ -77,7 +77,7 @@ Når du har aktiveret beskeder for Teams-appen Dynamics 365 Human Resources, kan
 
 5. Indstil **Aktivér beskeder for Teams-app** til **Ja** for at aktivere beskeder for brugeren eller **Nej** for at deaktivere beskeder for brugeren.
 
-   ![Aktivér beskeder for Teams-app i Brugerindstillinger under fanen Arbejdsgang](./media/hr-admin-teams-leave-app-notifications.png)
+   ![Aktivér beskeder for Teams-app i Brugerindstillinger under fanen Arbejdsgang.](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. Vælg **Gem**.
 

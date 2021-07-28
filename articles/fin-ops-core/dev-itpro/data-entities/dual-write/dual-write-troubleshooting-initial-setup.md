@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753984"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350830"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Foretage fejlfinding af problemer under den indledende opsætning
 
@@ -42,7 +42,7 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 Fejl på siden **Opsætning af sammenkædning til Dataverse** er normalt forårsaget af ufuldstændige opsætnings- eller rettighedsproblemer. Kontroller, at hele tilstandskontrollen bliver gennemført tilfredsstillende på siden **Opsætning af sammenkædning til Dataverse**, som vist i følgende illustration. Du kan ikke sammenkæde med Dobbeltskrivning, medmindre hele tilstandskontrollen gennemføres tilfredsstillende.
 
-![Vellykket tilstandskontrol](media/health_check.png)
+![Vellykket tilstandskontrol.](media/health_check.png)
 
 Du skal have rettigheder som Azure AD-lejeradministrator for at kunne sammenkæde Finance and Operations- og Dataverse-miljøer. Når du har kædet miljøerne sammen, kan brugerne logge på ved hjælp af deres legitimationsoplysninger til deres konto og opdatere en eksisterende tabeltilknytning.
 
@@ -77,7 +77,7 @@ For at sikre, at dobbeltskrivningen fungerer korrekt, oprettes de firmaer, du v�
 4. Vælg det regnskab, der blev sammenkædet, da du konfigurerede dobbelt skrivning.
 5. Kontroller, at der er en værdi i kolonnen **Standardejerteam**. I følgende illustration er kolonnen **Standardejerteam** indstillet til **USMF-dobbeltskrivning**.
 
-    ![Kontrollere standardejerteamet](media/default_owning_team.png)
+    ![Kontrollere standardejerteamet.](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Finde grænsen for antallet af juridiske tabeller eller firmaer, der kan sammenkædes ved dobbeltskrivning
 

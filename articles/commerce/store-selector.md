@@ -2,7 +2,8 @@
 title: Modulet Butiksvælger
 description: Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/02/2021
+manager: annbe
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +16,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 341312758e0a6da2e918406e09df618e2475811f
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021458"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479370"
 ---
 # <a name="store-selector-module"></a>Butiksvælgermodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -50,12 +52,12 @@ Følg disse trin for at angive længde- og breddegrad for butiksadressen i Comme
 1. Vælg lagerstedslokation i venstre rude.
 1. Vælg **Avanceret** i oversigtspanelet **Adresser**.
 
-    ![Eksempel på butiksoplysninger i hovedkvarter](./media/Store-address.png)
+    ![Eksempel på butiksoplysninger i hovedkvarter.](./media/Store-address.png)
 
 1. Vælg **Rediger** i handlingsruden.
 1. Angiv værdier for **Længdegrad** og **Breddegrad** i oversigtspanelet **Generelt**.
 
-    ![Eksempel på konfiguration af breddegrad og længdegrad for en butik i hovedkontoret](./media/Store-latitude-longitude.png)
+    ![Eksempel på konfiguration af breddegrad og længdegrad for en butik i hovedkontoret.](./media/Store-latitude-longitude.png)
 
 1. Vælg **Gem** i handlingsruden. 
 
@@ -70,7 +72,6 @@ For Autosuggest-REST-API'en skal du sikre, at følgende URL-adresser er tilladte
 - Til direktivet **script-src** skal du **tilføje &#42;.bing.com, &#42;.virtualearth.net**.
 - Til direktivet **script style-src** skal du tilføje **&#42;.bing.com**.
 
- 
 ## <a name="pickup-in-store-mode"></a>Afhent i butik-tilstand
 
 Butiksvælgermodulet understøtter en **Afhent i butik**-tilstand, der viser en liste over butikker, hvor produktet er tilgængeligt for afhentning. Den viser også butiksåbningstider og produktlager for hver butik på listen. Butiksvælgermodulet kræver et produkts kontekst for at gengive produkttilgængeligheden og give brugeren mulighed for at føje produktet til indkøbsvognen, hvis produktets leveringsmåde er sat til **afhentning** i den valgte butik. Du finder flere oplysninger under [Lagerindstillinger](inventory-settings.md). 
@@ -81,7 +82,7 @@ Hvis dette scenarie skal fungere, skal produkterne konfigureres med leveringstil
 
 Følgende billede viser et eksempel på et butiksvælgermodul, der bruges på en produktoplysningsside (PDP).
 
-![Eksempel på et butiksvælgermodul, der bruges på en PDP](./media/BOPIS.PNG)
+![Eksempel på et butiksvælgermodul, der bruges på en PDP.](./media/BOPIS.PNG)
 
 > [!NOTE]
 > I version 10.0.16 og nyere versioner kan der aktiveres en ny funktion, som giver en organisation mulighed for at definere flere afhentningsmåder i leveringsindstillinger for debitorer.  Hvis denne funktion er aktiveret, vil butiksvælgeren og andre e-handelsmoduler blive forbedret, så brugeren potentielt kan vælge mellem flere muligheder for at afhente leveringer, hvis de er konfigureret.  Yderligere oplysninger om denne funktion finder du i [denne dokumentation](./multiple-pickup-modes.md). 
@@ -92,7 +93,7 @@ Butiksvælgermodulet understøtter også tilstanden **Find butikker**. Denne til
 
 I følgende illustration vises et eksempel på et butiksvælgermodul, der bruges sammen med et kortmodul på en butiksadresseside.
 
-![Eksempel på et butiksvælgermodul og et kortmodul på en side med butiksadresser](./media/ecommerce-Storelocator.PNG)
+![Eksempel på et butiksvælgermodul og et kortmodul på en side med butiksadresser.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Gengive et kort
 
@@ -110,6 +111,10 @@ Butiksvælgermodulet kan bruges sammen med kortmodulet til at vise butiksadresse
 | Indstillinger for Autosuggest: maks. resultater | Tal | Denne egenskab definerer det maksimale antal automatiske forslagsresultater, der kan vises via Bing Autosuggest-API. |
 | Søgeradius | Tal | Denne egenskab definerer søgeradius for butikker, i miles. Hvis der ikke er angivet en værdi, bruges standardradiussen på 50 miles. |
 | Vilkår for brug | URL |  Denne egenskab specificerer de servicebetingelser for URL-adressen, der kræves for at kunne bruge tjenesten Bing Kort. |
+
+## <a name="site-settings"></a>Indstillinger for websted
+
+Modulet til butiksvælger overholder [indstillingerne for Tilføjelse af produkt til indkøbsvogn](add-cart-settings.md). Når en vare er føjet til indkøbsvognen fra modulet til butiksvælger, kan webstedsbrugerne se de relevante konfigurerede arbejdsgange.
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Føje et butiksvælgermodul til en side
 

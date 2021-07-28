@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 861899e4cd7565309ba513408346912642b7fa9a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102968"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354899"
 ---
 # <a name="create-maintenance-requests"></a>Oprette vedligeholdelsesanmodninger
 
@@ -52,7 +52,7 @@ Afsnittet **Aktive vedligeholdelsesanmodninger** i ruden **Relaterede oplysninge
 11. Udfyld eventuelt feltet **Noter** med yderligere bemærkninger.
 12. Vælg **OK**.
 
-![Opret vedligeholdelsesanmodning](media/03-manage-maintenance-requests.png)
+![Opret vedligeholdelsesanmodning.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Efterfølgende behandling af vedligeholdelsesanmodninger
 
@@ -67,7 +67,7 @@ I detaljevisningen kan du opdatere forskellige oplysninger. Her er nogle eksempl
 - Vælg en vedligeholdelsesjobtype og, hvis disse oplysninger er relevante, en relateret vedligeholdelsesjobvariant og en jobhandel.
 - Angiv geografiske koordinater i felterne **Breddegrad** og **Længdegrad**. Alle koordinater, der føjes til en vedligeholdelsesanmodning, overføres automatisk til en relateret arbejdsordre. 
 
-![Opdatere vedligeholdelsesanmodning](media/04-manage-maintenance-requests.png)
+![Opdatere vedligeholdelsesanmodning.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Hvis du vælger et aktiv, når du opretter en vedligeholdelsesanmodning, kan du føje én fejl til aktivet. Når vedligeholdelsesanmodningen er blevet oprettet, kan du tilføje flere fejl efter behov. Hvis du vil tilføje fejl, skal du vælge **Aktivfejl** på siden **Alle vedligeholdelsesanmodninger**.

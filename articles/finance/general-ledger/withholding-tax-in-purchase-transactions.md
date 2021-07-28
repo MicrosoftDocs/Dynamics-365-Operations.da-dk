@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: faeaf0746532875d3517a208c9c338c112bf2c77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d605ac0b6e4190f0c0f576d402c9b101d754b347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816877"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356670"
 ---
 # <a name="withholding-tax-in-purchase-transactions"></a>A-skat i indkøbstransaktioner
 
@@ -64,15 +64,15 @@ Standardgruppen for A-skattegruppe og A-skattegruppen for varer overføres til l
 
 Det midlertidige beløb for A-skat er tilgængeligt i feltet **Reguleret A-skat** på fanen **Totaler** på siden **Indkøbsordre**.
 
-![A-skat medtages på indkøbsordren](media/withholding-tax-adjusted.png)
+![A-skat medtages på indkøbsordren.](media/withholding-tax-adjusted.png)
 
 A-skat beregnes på **leverandørbetalingskladde**. Du kan manuelt justere de relevante koder for A-skat og de faktiske beløb for A-skat under fanen **A-skat** på siden **Afregn posteringer**.
 
-![A-skat kan reguleres manuelt på siden Udlign posteringer](media/withholding-tax-vendor-payment-tab.png)
+![A-skat kan reguleres manuelt på siden Udlign posteringer.](media/withholding-tax-vendor-payment-tab.png)
 
 Beløbet for den afledte A-skat trækkes fra kreditorbetalingen og bogføres på kontoen for **A-skattekonto** i et relateret bilag.
 
-![A-skattekonto, der viser et relateret bilag](media/withholding-tax-adjusted.png)
+![A-skattekonto, der viser et relateret bilag.](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

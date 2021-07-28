@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 435e4c0b7aac8a8dc179ee8e74b985a4c434b7ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839601"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361108"
 ---
 # <a name="maintenance-plans"></a>Vedligeholdelsesplaner
 
@@ -145,23 +145,23 @@ Nedenfor finder du eksempler på opsætningen af tidsbaserede og tællerbaserede
 
 **Eksempel 1 - tidsbaseret vedligeholdelsesplanlinje:** Et smøreapparatjob kan konfigureres med et fast interval, der forekommer én gang om ugen. Til dette formål skal du vælge "gentaget fra plandato" i feltet **Intervaltype**. Se et eksempel i følgende illustration.
 
-![Et servicejob, der er konfigureret i et fast interval og forekommer én gang om ugen](media/02-preventive-maintenance.png "Et servicejob, der er konfigureret i et fast interval og forekommer én gang om ugen")
+![Et servicejob, der er konfigureret i et fast interval og forekommer én gang om ugen.](media/02-preventive-maintenance.png "Et servicejob, der er konfigureret i et fast interval og forekommer én gang om ugen")
 
 **Eksempel 2 - tidsbaseret vedligeholdelsesplanlinje** Der kan oprettes et inspektionsjob, som skal udføres ca. en gang om ugen. Til dette formål skal du vælge "gentaget fra sidste arbejdsordre" i feltet **Intervaltype**. Se et eksempel i følgende illustration.
 
-![Et inspektionsjob, der er konfigureret til at blive udført ca. én gang om ugen](media/03-preventive-maintenance.png "Et inspektionsjob, der er konfigureret til at blive udført ca. én gang om ugen")
+![Et inspektionsjob, der er konfigureret til at blive udført ca. én gang om ugen.](media/03-preventive-maintenance.png "Et inspektionsjob, der er konfigureret til at blive udført ca. én gang om ugen")
 
 **Eksempel 3 - tællerbaseret vedligeholdelsesplanlinje:** Følgende grafik illustrerer en timetæller, for hvilken der oprettes en ny vedligeholdelsestidsplanslinje, hver gang der er gået 250 timer. Intervaltypen for denne tællerbaserede linje er "gentaget fra startdato". Startdatoen er startdatoen for de tilknyttede aktiver i detaljevisningen **Alle aktiver** \> oversigtspanelet **Vedligeholdelsesplaner for aktiver** \> feltet **Startdato** eller i detaljevisningen **Arbejdssted** \> oversigtspanelet **Vedligeholdelsesplaner** \> feltet **Startdato**. Dette er et eksempel på en *forebyggende* vedligeholdelsesplan, fordi vedligeholdelsestidsplanslinjen automatisk oprettes, hver gang tærsklen (+ 250) nås.
 
-![En timetæller, der opretter vedligeholdelsesplanlinjer periodisk](media/04-preventive-maintenance.png "En timetæller, der opretter vedligeholdelsesplanlinjer periodisk")
+![En timetæller, der opretter linjer for vedligeholdelsestidsplan periodisk.](media/04-preventive-maintenance.png "En timetæller, der opretter vedligeholdelsesplanlinjer periodisk")
 
 **Eksempel 4 - tællerbaseret vedligeholdelsesplanlinje:** Følgende grafik illustrerer et fald i tællerværdi ved måling af slitage på bremseklods. Der oprettes en vedligeholdelsestidsplanslinje, når der oprettes en tællerregistrering på under 20 mm på bremseklodsen. Intervaltypen for denne tællerbaserede linje er "når nået under" eller "én gang fra den sidste startdato". Dette er et eksempel på en *reaktiv* vedligeholdelsesplan, fordi vedligeholdelsestidsplanslinjen ikke automatisk oprettes, før der er registreret en måling på under 20 mm.
 
-![Et fald i tællerværdien ved måling af slitage på bremseklods](media/05-preventive-maintenance.png "Et fald i tællerværdien ved måling af slitage på bremseklods")
+![Et fald i tællerværdien ved måling af slitage på bremseklods.](media/05-preventive-maintenance.png "Et fald i tællerværdien ved måling af slitage på bremseklods")
 
 **Eksempel 5 - tællerbaseret vedligeholdelsesplanlinje:** Følgende grafik illustrerer en tæller med en tærskel på -18 ° Celsius. Der oprettes en vedligeholdelsestidsplanslinje, når der foretages en tællerregistrering over -18 ° Celsius. Intervaltypen for denne tællerbaserede linje er "Når nået over". Dette er et eksempel på en *reaktiv* vedligeholdelsesplan, fordi vedligeholdelsestidsplanslinjen ikke automatisk oprettes, før der er registreret en måling på over -18 ° Celsius.
 
-![En tæller med en grænse på -18 °Celsius](media/06-preventive-maintenance.png "En tæller med en grænse på -18 °Celsius")
+![En tæller med en grænse på -18 °Celsius.](media/06-preventive-maintenance.png "En tæller med en grænse på -18 °Celsius")
 
 - Når du opretter et nyt aktiv, og det pågældende aktiv bruger en aktivtype, der er knyttet til en vedligeholdelsesplan, indsættes vedligeholdelsesplanen automatisk i oversigtspanelet **Alle objekter \> Vedligeholdelsesplaner** for aktiver. I **Standarder for aktivtype** i oversigtspanelet **Vedligeholdelsesplaner** bliver de relaterede vedligeholdelsesplaner også indsat automatisk.
 - Hvis du tilføjer eller fjerner aktivtyper eller arbejdsstedtyper i **Vedligeholdelsesplaner**, vil ændringen kun afspejles på nye aktiver, der er oprettet, efter at du har foretaget ændringen.
@@ -169,7 +169,7 @@ Nedenfor finder du eksempler på opsætningen af tidsbaserede og tællerbaserede
 
 I følgende illustration vises et eksempel på en vedligeholdelsesplan for "lastbilservice" på siden **Vedligeholdelsesplaner**.
 
-![Et eksempel på vedligeholdelsesplan for truckservice](media/07-preventive-maintenance.png "Et eksempel på vedligeholdelsesplan for truckservice")
+![Et eksempel på vedligeholdelsesplan for truckservice.](media/07-preventive-maintenance.png "Et eksempel på vedligeholdelsesplan for truckservice")
 
 ## <a name="add-a-maintenance-plan-to-an-asset"></a>Føje en vedligeholdelsesplan til et aktiv
 
@@ -187,11 +187,11 @@ I følgende illustration vises et eksempel på en vedligeholdelsesplan for "last
 
 I følgende illustration vises et eksempel på vedligeholdelsesplaner på et aktiv på siden **Alle aktiver**.
 
-![Et eksempel på vedligeholdelsesplaner, der er konfigureret for et aktiv](media/08-preventive-maintenance.png "Et eksempel på vedligeholdelsesplaner, der er konfigureret for et aktiv")
+![Et eksempel på vedligeholdelsesplaner, der er konfigureret for et aktiv.](media/08-preventive-maintenance.png "Et eksempel på vedligeholdelsesplaner, der er konfigureret for et aktiv")
 
 <a id="counter-based-maintenance"></a>
 
-## <a name="counter-based-maintenance-enhancements"></a>Forbedringer af tællerbaseret vedligeholdelse
+## <a name="counter-based-maintenance-enhancements"></a>Tællerbaserede forbedringer af vedligeholdelse
 
 Funktionen *Forbedringer af tællerbaseret vedligeholdelse* introducerer følgende funktionalitet:
 

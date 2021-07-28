@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f7ad4f53917bb607afe84a2c457518c3f8f7a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a9507cd7f2a1612ab4063d6307b72d8522619ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799100"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349418"
 ---
 # <a name="recall-order-operation-in-pos"></a>Handling for tilbagekald af ordre i POS
 
@@ -29,7 +29,7 @@ Hvis du vil aktivere denne funktion, skal du deaktivere **Forbedret handling for
 
 Konfigurationen af handlingsknappen **Tilbagekald ordre** giver organisationer mulighed for at implementere handlingen med en foruddefineret skærm.
 
-![Konfiguration af knapmatrix](media/recallorderbuttongrid.png)
+![Konfiguration af knapmatrix.](media/recallorderbuttongrid.png)
 
 Der findes følgende skærmindstillinger.
 - **Ingen** – Denne indstilling installerer handlingen uden en bestemt visning. Når en bruger åbner handlingen med denne konfiguration, vil de blive bedt om at søge efter og finde ordrer eller vælge fra et foruddefineret ordrefilter.
@@ -42,11 +42,11 @@ Når du starter handlingen **Tilbagekald ordre** fra POS, hvis visningen er konf
 - Vælg ikonet **Søg efter ordrer** eller **Søg og filtrer** på applinjen for at bruge filtreringsmekanismen til at finde ordrer, der opfylder filterkriterierne.
 - Vælg mellem et foruddefineret filter fra rullemenuen **Vis ordrer** (ordrer, der skal opfyldes, ordrer, der skal afhentes, eller ordrer, der skal leveres).
 
-![RecallOrderMainMenu](media/recallordermain.png)
+![RecallOrderMainMenu.](media/recallordermain.png)
 
 Når søgekriterierne er anvendt, vises der en liste over tilsvarende salgsordrer i programmet. Det er vigtigt at bemærke, at når du bruger søge-/filterindstillingerne, behøver de hentede ordrer ikke at være ordrer, der er knyttet til brugerens aktuelle butik. Denne søgeproces henter og viser alle kundeordre, der svarer til søgekriterierne, også selvom ordren blev oprettet eller angivet til at blive opfyldt af en anden butik/kanal eller lagerstedslokation.
 
-![RecallOrderDetail](media/orderrecalldetail.png)
+![RecallOrderDetail.](media/orderrecalldetail.png)
 
 En bruger kan vælge en ordre på listen for at få vist flere detaljer. I panelet med oplysninger i højre side af skærmen vises der oplysninger om den valgte ordre, herunder ordrelinjedetaljer, leveringsdetaljer og oplysninger om opfyldning.
 
