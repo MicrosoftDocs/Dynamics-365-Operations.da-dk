@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f00ca2748c3c8f7ec839069f21a5846377b6be04
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802039"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349546"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Tilslutte ydre enheder til POS
 
@@ -78,7 +78,7 @@ Selvom selve hardwarestationen angives på kanalniveau, og angivelsen indeholder
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS med forbundne eksterne enheder
 
-[![Traditionelt, fast POS](./media/traditional-300x279.png)](./media/traditional.png)
+[![Traditionelt, fast POS.](./media/traditional-300x279.png)](./media/traditional.png)
 
 For at forbinde MPOS til POS-enheder i et traditionelt, fast POS-scenario skal du først navigere til selve kasseapparatet og tildele en hardwareprofil til det. Du kan finde POS-kasseapparater i **Retail og Commerce** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. 
 
@@ -97,7 +97,7 @@ Brug til sidst i MPOS handlingen **Vælg hardwarestation** for at vælge hardwar
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS med en enkeltstående hardwarestation
 
-[![Delte eksterne enheder](./media/shared-300x254.png)](./media/shared.png)
+[![Delte eksterne enheder.](./media/shared-300x254.png)](./media/shared.png)
 
 I dette scenario deles en enkeltstående hardwarestation af MPOS- og Cloud POS-klienter. Dette scenario kræver, at du opretter en hardwarestationprofil for at angive den overførselspakke, port og hardwareprofil, der bruger hardwarestationen. Du kan finde hardwarestationsprofilen på **Retail og Commerce** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwarestations profiler**. 
 

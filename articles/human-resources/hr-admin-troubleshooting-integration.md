@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 946d0433df41ce7067b8b0673db680abb42b7792
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053370"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357283"
 ---
 # <a name="integration-with-finance-faq"></a>Ofte stillede spørgsmål til integration with Finance
 
@@ -37,7 +37,7 @@ Nej. Hvis du redigerer Human Resources-applikationsbrugeren, vil integrationen m
 | --- | --- | --- | --- |
 | Dynamics 365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Standardindstillinger for Talent-programbruger](media/DynamicsApplicationUser.png)
+![Standardindstillinger for Talent-programbruger.](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Synkroniseres alle data eller bare nogle dataenheder?
 
@@ -57,7 +57,7 @@ Skabeloner bruges som udgangspunkt. Du kan oprette din egen skabelon, men der sk
 
 For data i Finance and Operations, som ikke findes i Human Resources, kan du sammenkæde de to systemer ved hjælp af **Konfigurer links** i Human Resources.
 
-![Tilknyt økonomiske dimensioner](media/MapFinancialDimensions.png)
+![Tilknyt økonomiske dimensioner.](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Når jeg importerer medarbejdere, bliver de sommetider placeret blandt inaktive arbejdere i Finance. Hvorfor?
 
@@ -71,14 +71,14 @@ Synkronisering af data følger tidsplanen for udførelse. Integrationen henter e
 
 Ved hjælp af "Avanceret forespørgsel" kan du filtrere og omforme kildedata, før du overfører dem til destinationen.
 
-![Avanceret forespørgsel for aktive arbejdere](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Avanceret forespørgsel for aktive arbejdere.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Kan jeg angive, hvilke felter der skal sendes til Finance for en bestemt enhed?
 
 Felter kan tilføjes eller fjernes fra integrationsopgaven. Ikke alle datafelter, der findes i Dataverse-tabellen, udfyldes fra Human Resources.
 Yderligere data kan udfyldes via Power Apps.
 
-![Tilføje eller fjerne felter i en integrationsopgave](media/SpecifyFieldsIncludedInIntegration.png)
+![Tilføje eller fjerne felter i en integrationsopgave.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jeg konfigurerede integration som et batchjob, men så mistede Human Resources forbindelsen til destinationssystemet. Hvordan kan jeg sende det samme sæt ændringer til destinationssystemet?
 
@@ -126,21 +126,21 @@ Spor tiden fra historikken for Dataintegrator-udførelse, og se efter indeks -1-
 
 1. Hent opgaveindekset fra Dataintegrator (i dette eksempel er det "9").
 
-    ![Hent opgaveindeks fra Dataintegrator](media/CaptureTaskIndex.png)
+    ![Hent opgaveindeks fra Dataintegrator.](media/CaptureTaskIndex.png)
 
 2. Spor projektets kørselstidspunkt.
 
-    ![Spor projektets kørselstidspunkt](media/CaptureTimeOfExecution.png)
+    ![Spor projektets kørselstidspunkt.](media/CaptureTimeOfExecution.png)
 
 3. I Finance skal du identificere indeks - 1. I dette eksempel matcher projektet med suffikset "8" og kørselstidspunkt for indeks "0" udførelsestidspunktet i trin 2.
 
-    ![Identifikation af indeks](media/IdentifyIndex.png)
+    ![Identifikation af indeks.](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-human-resources-and-finance-i-dont-see-my-human-resources-data-in-finance-what-do-i-do"></a>Når jeg integrerer Human Resources og Finance, kan jeg ikke se mine Human Resources-data i Finance. Hvad skal jeg gøre?
 
 Integrationen i Finance er en totrinsproces. Kontroller først, at Human Resources-dataene er opdaterede og tilgængelige i Dataverse. Dette er en synkronisering i nær-realtid, som du kan kontrollere i Power Apps ved at se på dataene i datatabellerne.
 
-![Data i Dataverse](media/DataInCDS.png)
+![Data i Dataverse.](media/DataInCDS.png)
 
 Hvis dataene ikke vises som forventet i Dataverse, skal du kontrollere, om enheden understøttes i integrationen. For at medtage flere data i Dataverse kræver det en ændring fra Microsofts side.
 
@@ -165,7 +165,7 @@ Kontroller også, at det er de korrekte juridiske enheder for det tilknyttede fo
 
 Opdater dataenhederne i Finance ved at gå til **Datastyring \> Rammeparametre \> Indstillinger for enhed \> Opdater liste over enheder.** Dette tager et par minutter, og derefter bør du kunne se disse tilknytninger. Dette problem opstår, når der oprettes nye projekter.
 
-![Manglende felttilknytning](media/MissingFieldMapping.png)
+![Manglende felttilknytning.](media/MissingFieldMapping.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f380f3f56727d927d7cd328fef3c9d999afa2873
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9fffb5b4f51c86076d62ac2a44bdc779490c7bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794343"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351267"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Oversigt over standardlandingsside for kategori og side for søgeresultater
 
@@ -31,7 +31,7 @@ Dette emne indeholder en oversigt over standardlandingssiden for kategorier og s
 
 Standardlandingssiden for kategorier er den side, som brugerne af et websted typisk får vist, når de vælger en kategori i navigationshierarkiet. Du kan gennemse kategorisiden, og du kan også sortere og finpudse de kategoriserede produkter.
 
-![Standardlandingsside for kategorier](./media/SimpleCategoryLandingDressCategory.png)
+![Standardlandingsside for kategorier.](./media/SimpleCategoryLandingDressCategory.png)
 
 Øverst på siden findes et sidehoved, der viser alle produktkategorierne og andre sider, som produktchefen har kategoriseret. Konfigurationen udføres som en del af konfigurationen af kanalnavigationshierarkiet. Nederst på startsiden findes en sidefod med hurtige links til forskellige emner, som kan have interesse for kunderne.
 
@@ -55,7 +55,7 @@ Følgende komponenter er vigtige for en kategori:
 
 Hvis du ønsker, at en landingsside for en kategori skal have en mere skræddersyet oplevelse for en bestemt kategori, kan du "forbedre" kategorilandingssiden for den pågældende kategori. Du kan f.eks. tilføje en marketingvideo og fortælle om kategorien for at få kundernes opmærksomhed. Du kan finde flere oplysninger under [Forbedre en kategorilandingsside](enrich-category-page.md).
 
-![Forbedre en kategorilandingsside](./media/CategoryLandingPages.png)
+![Forbedre en kategorilandingsside.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Sider med automatiske forslag og søgeresultater
 
@@ -69,11 +69,11 @@ Her er nogle af de typer forslag, der kan vises:
 - **Produkter** giver direkte links til siden med produktdetaljer.
 - **Søgeforslag for kategoriområde** viser forskellige kategorier og lader brugere søge efter nøgleordet i en bestemt kategori.
 
-![Avancerede automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
+![Avancerede automatiske forslag.](./media/ImmersiveAutoSuggestUX.png)
 
 Når brugerne vælger et af søgeforslagene for nøgleord eller områdekategori, eller når der ikke er nogen forslag til det søgeord, de angiver, omdirigeres de til en side med søgeresultater. Brugerne kan derefter gennemse, sortere og finjustere listen over søgeresultater for at finde det ønskede produkt.
 
-![Landingsside for søgeresultater](./media/SearchLanding.png)
+![Landingsside for søgeresultater.](./media/SearchLanding.png)
 
 Følgende komponenter er vigtige for en søgeresultatside:
 
@@ -94,7 +94,7 @@ Følgende komponenter er vigtige for en søgeresultatside:
 
 >[!NOTE]
 >Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontroller, at der er en post for "ProductSearch.UseAzureSearch, der er indstillet til 'sand' under **Commerce-parametre > Konfigurationsparametre**. 
-![Konfigurationsparametre for cloud-baseret søgning](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparametre for cloud-baseret søgning.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

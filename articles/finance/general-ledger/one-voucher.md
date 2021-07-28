@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897762"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356697"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -33,18 +33,18 @@ Den eksisterende funktion til økonomikladder (finanskladde, anlægsaktivkladde,
 
 - Angiv kladdenavnet (**Finans** \> **Kladdeopsætning** \> **Kladdenavne**), så feltet **Nyt bilag** indstilles til **Kun ét bilagsnummer**. Hver linje, du føjer til kladden, inkluderes nu på det samme bilag. Derfor kan bilaget angives som et bilag med flere linjer, som en konto/modkonto på samme linje eller som en kombination.
 
-    [![Enkelt linje](./media/same-line.png)](./media/same-line.png)
+    [![Enkelt linje.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Definitionen af Ét bilag omfatter **ikke** tilfælde, hvor kladdenavne er angivet som **Kun ét bilagsnummer**, og hvor brugeren derefter angiver et bilag, som kun omfatter finanskontotyper. I dette emne betyder Ét bilag, at der er er et enkelt bilag, der indeholder mere end én kreditor, debitor, bank, ét anlægsaktiv eller projekt.
 
 - Angiv et bilag med flere linjer, hvor der ikke er nogen modkonto.
 
-    [![Bilag med flere linjer](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Bilag med flere linjer.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Angiv et bilag, hvor både på kontoen og modkontoen indeholder en reskontrokontotype, som f.eks. **Kreditor**/**Kreditor**, **Debitor**/**Debitor**, **Kreditor**/**Debitor** eller **Bank**/**Bank**.
 
-    [![Reskontrobilag](./media/subledger.png)](./media/subledger.png)
+    [![Reskontrobilag.](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Problemer med ét bilag
 
@@ -52,11 +52,11 @@ Funktionen ét bilag forårsager problemer under udligning, momsberegning, tilba
 
 Du bogfører f.eks. følgende bilag med flere linjer.
 
-[![Eksempel på et samkøbsbilag](./media/example.png)](./media/example.png)
+[![Eksempel på et samkøbsbilag.](./media/example.png)](./media/example.png)
 
 Du genererer derefter rapporten **Udgifter efter kreditor** i arbejdsområdet **Økonomisk indsigt**. I denne rapport er udgiftskontosaldi grupperet under kreditorgruppe og derefter kreditor. Når rapporten genereres, kan systemet ikke bestemme, hvilke kreditorgrupper/kreditorer der medførte udgiften på 250,00. Da der mangler transaktionsdetaljer, antager systemet, at hele udgiften på 250,00 vedrører den første kreditor, der findes i bilaget. Derfor vises udgiften på 250,00, der er inkluderet i saldoen for hovedkontoen 600120, under den pågældende kreditorgruppe/kreditor. Det er dog meget sandsynligt, at den første kreditor i bilaget ikke er den korrekte kreditor. Derfor er rapporten sandsynligvis forkert.
 
-[![rapport over udgifter efter kreditor](./media/expenses.png)](./media/expenses.png)
+[![Rapport over udgifter efter kreditor.](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Fremtiden for ét bilag
 

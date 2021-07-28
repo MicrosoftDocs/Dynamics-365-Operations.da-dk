@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e89c63c90aa8d46fd23900897a54165e14fb635d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 34fa845c72f23485a2573d6bb4cf38b66c7adb7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800657"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351194"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurere en callcenter-kanal
 
@@ -54,11 +54,11 @@ Følg disse trin for at oprette en ny callcenter-kanal.
 
 Følgende billede viser oprettelsen af en ny callcenter-kanal.
 
-![Ny callcenter-kanal](media/channel-setup-callcenter-1.png)
+![Ny callcenter-kanal.](media/channel-setup-callcenter-1.png)
 
 Følgende billede viser et eksempel på en callcenter-kanal.
 
-![Eksempel på call center-kanal](media/channel-setup-callcenter-2.png)
+![Eksempel på call center-kanal.](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Yderligere kanalopsætning
 
@@ -66,7 +66,7 @@ Yderligere opgaver, der kræves til konfiguration af callcenter-kanalen, omfatte
 
 I følgende billede vises konfigurationsindstillinger til **Leveringsmetoder** og **Betalingsmetoder** under fanen **Opsætning**.
 
-![Yderligere handlinger til konfiguration af callcenter-kanal](media/channel-setup-callcenter-3.png)
+![Yderligere handlinger til konfiguration af callcenter-kanal.](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Oprette betalingsmåder
 
@@ -81,7 +81,7 @@ Hvis du vil oprette betalingsmetoder, skal du følge disse trin for hver af de b
 
 Følgende billede viser et eksempel på en metode til kontantbetaling.
 
-![Eksempel på betalingsmetoder](media/channel-setup-callcenter-payments.png)
+![Eksempel på betalingsmetoder.](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Konfigurer leveringsmåder
 
@@ -97,7 +97,7 @@ Hvis du vil ændre eller tilføje en leveringsmåde, der skal knyttes til call c
 
 Følgende billede viser et eksempel på en leveringsmetode.
 
-![Konfigurer leveringsmåder](media/channel-setup-retail-7.png)
+![Konfigurer leveringsmåder.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Konfigurer kanalbrugere
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261740"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354803"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Sky- og edge-skaleringsenheder for arbejdsbelastninger i forbindelse med produktion og lagerstedsstyring
 
@@ -41,7 +41,7 @@ Egenskaber til arbejdsbyrde frigives løbende via trinvise forbedringer.
 
 Skalaenheder udvider dit centrale Supply Chain Management-hubmiljø ved at tilføje dedikeret behandlingskapacitet. Skalaenheder kan køre i skyen. Alternativt kan de køre på kanten, i dit lokale miljø eller din lokale facilitet.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalaenheder":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalaenheder.":::
 
 Skalaenheder giver modstandsdygtighed, pålidelighed og skalering for de tildelte arbejdsbyrder. Kantskalaenheder kan midlertidigt afbrydes fra skyens hubmiljø, og arbejderne fortsætter med at arbejde i den tildelte arbejdsbyrde i kanten.
 
@@ -157,7 +157,7 @@ Skalaenheder tilbydes i flere lagerenheder (SKU'er) og prisfastsættelsesindstil
 
 Startniveau-SKU'en kaldes *Grundlæggende*, og den mere ydende SKU kaldes *Standard*. Hver SKU er forudindlæst med et bestemt antal månedlige transaktioner. Du kan dog øge det månedlige transaktionsbudget ved at tilføje tilføjelsesprogrammer til overforbrug for hver SKU.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Tilføjelsesprogrammer til skyskalaenheder":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Tilføjelsesprogrammer til skyskalaenheder.":::
 
 > [!TIP]
 > Hvis du vil identificere den størrelse, der passer bedst til dine behov, skal du samarbejde med din partner og Microsoft om at forstå den månedlige transaktionsstørrelse, som du har brug for.
@@ -181,11 +181,11 @@ Hvis den lejer, du søger efter, ikke findes på denne liste, skal du gå til [L
 
 For hver lejer vises onboardingstatus på listen.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Liste over lejere under fanen Dynamics 365-lejere":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Liste over lejere under fanen Dynamics 365-lejere.":::
 
 Vælg **Klik her for at komme i gang** for at anmode om onboarding for LCS-lejeren. Du skal acceptere betingelserne. Du skal også angive en forretningsmailadresse, hvor Microsoft kan sende kommunikation, der er relateret til onboardingprocessen.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Indsende tilmelding for en lejer":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Indsende tilmelding for en lejer.":::
 
 Microsoft vil gennemgå din anmodning og give dig besked om de næste trin ved at sende en mail til den adresse, du har angivet i tilmeldingsformularen. Microsoft vil arbejde tæt sammen med dig om at aktivere skalaenheder i hybridtopologien for dit forretningsscenarie.
 
@@ -195,13 +195,13 @@ Når onboarding er fuldført, kan du bruge porten til at konfigurere skalaenhede
 
 Gå til [portalen til styring af skalaenhed](https://aka.ms/SCMSUM), og log på ved hjælp af din lejerkonto. På siden **Konfigurer skalaenheder** kan du tilføje et hubmiljø, hvis det ikke allerede står på listen. Derefter kan du vælge den hub, du vil konfigurere med skalaenheder og arbejdsbelastninger.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skalaenhed og arbejdsbyrdestyring":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skalaenhed og arbejdsbyrdestyring.":::
 
 Hvis du vil tilføje en eller flere skalaenheder, der er tilgængelige i dine abonnementer, skal du vælge **Tilføj skalaenheder**.
 
 Under fanen **Definerede arbejdsbyrder** skal du bruge knappen **Opret arbejdsbyrde** til at føje en arbejdsbyrde for lokationsstyring i en af skalaenhederne. For hver arbejdsbyrde skal du angive konteksten for de processer, der skal ejes af arbejdsbyrden. For arbejdsbyrder til lokationsstyring er konteksten et specifikt lagersted på en bestemt lokation og juridisk enhed.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Oprettelse af arbejdsbyrde":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Oprettelse af arbejdsbyrde.":::
 
 > [!TIP]
 > Med tiden føjes der trinvise forbedringer til erfaringen med styring af skalaenhed, så det bliver nemmere at udføre styring af livscyklussen. De specifikke egenskaber for den aktuelle version er dokumenteret i en vejledning til onboarding, som er tilgængelig for kunder, der er i gang med onboarding til den distribuerede hybridtopologi for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

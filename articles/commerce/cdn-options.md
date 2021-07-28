@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6e8fb2baf85be0eaecfffcc7ec6cbb457c3bb04
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021884"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351243"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Indstillinger for implementering af netværk for indholdslevering
 
@@ -40,7 +40,7 @@ Alle tre indstillinger for implementeringen af CDN leverer kun dynamisk HTML-ind
 
 I følgende illustration vises en oversigt over Commerce-arkitekturen.
 
-![Oversigt over Commerce-arkitekturen](media/Commerce_CDN-Option_ComparisonModels.png)
+![Oversigt over Commerce-arkitekturen.](media/Commerce_CDN-Option_ComparisonModels.png)
 
 Yderligere oplysninger om, hvordan du konfigurerer en forekomst af Azure Front Door til dit handelswebsted, finder du under [Add CDN Support](add-cdn-support.md).
 
@@ -54,7 +54,7 @@ Følgende tabel indeholder de professionelle og medarbejdere ved at bruge den fo
 
 I følgende illustration vises arkitekturen for den Azure Front Door-forekomst, der leveres af Commerce.
 
-![Commerce-leverede forekomst af Azure Front Door](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+![Commerce-leverede forekomst af Azure Front Door.](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## <a name="use-a-customer-owned-azure-front-door-instance"></a>Bruge en Azure Front Door-forekomst, der ejes af kunden
 
@@ -78,7 +78,7 @@ Følgende tabel indeholder fordele og ulemper ved at bruge en ekstern CDN-tjenes
 
 I følgende illustration vises en handelsinfrastruktur, der omfatter en ekstern CDN-tjeneste.
 
-![Commerce-infrastruktur, der omfatter en ekstern CDN-tjeneste](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+![Commerce-infrastruktur, der omfatter en ekstern CDN-tjeneste.](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

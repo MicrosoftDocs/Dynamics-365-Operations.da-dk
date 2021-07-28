@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dc76c3c8c3da11202ebb29f4c5c0df72892c094a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936938"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351170"
 ---
 # <a name="set-up-an-online-channel"></a>Konfigurere en onlinekanal
 
@@ -55,11 +55,11 @@ Følg disse trin for at oprette en ny onlinekanal.
 
 Følgende billede viser oprettelsen af en ny onlinekanal.
 
-![Ny onlinekanal](media/channel-setup-online-1.png)
+![Ny onlinekanal.](media/channel-setup-online-1.png)
 
 Følgende billede viser et eksempel på en onlinekanal.
 
-![Eksempel på onlinekanal](media/channel-setup-online-2.png)
+![Eksempel på onlinekanal.](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Konfigurer sprog
 
@@ -75,7 +75,7 @@ Yderligere opgaver, der kræves til konfiguration af onlinekanalen, omfatter kon
 
 Følgende billede viser opsætningsindstillinger til **Leveringsmetoder**, **Betalingsmetoder** og **Gruppetildeling for opfyldelse** under fanen **Opsætning** .
 
-![Yderligere handlinger til konfiguration af onlinekanal](media/channel-setup-online-3.png)
+![Yderligere handlinger til konfiguration af onlinekanal.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Oprette betalingsmåder
 
@@ -90,7 +90,7 @@ Hvis du vil oprette betalingsmetoder, skal du udføre disse trin for hver af de 
 
 Følgende billede viser et eksempel på en metode til kontantbetaling.
 
-![Eksempel på betalingsmetoder](media/channel-setup-retail-5.png)
+![Eksempel på betalingsmetoder.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Konfigurer leveringsmåder
 
@@ -104,7 +104,7 @@ Udfør følgende trin for at ændre eller tilføje en leveringsmetode.
 
 Følgende billede viser et eksempel på en leveringsmetode.
 
-![Konfigurer leveringsmåder](media/channel-setup-retail-7.png)
+![Konfigurer leveringsmåder.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Konfigurer en gruppetildeling for opfyldelse
 
@@ -118,7 +118,7 @@ Gør følgende for at konfigurere en gruppetildeling for opfyldelse.
 
 Følgende billede viser et eksempel på en opsætning af en gruppetildeling for opfyldelse.
 
-![Konfigurer Gruppetildeling for opfyldelse](media/channel-setup-retail-9.png)
+![Konfigurer Gruppetildeling for opfyldelse.](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

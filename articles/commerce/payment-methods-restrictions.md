@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: dd07c9c95639c8e69e1013fd7da283cf51b60ed0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4d4f2ee97db52c055136912b237412b1148c26bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804521"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352342"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begrænse betalingsmetoder for returneringer uden kvittering
 
@@ -38,7 +38,7 @@ Når du vil konfigurere betalingsmetoder, skal følgende opgaver være fuldført
 3. Konfigurer betalingsmetoder for butikken. Tilknyt betalingsmetoder til de enkelte butikker, og angiv derefter butiksspecifikke indstillinger for de enkelte betalingsmetoder.
 4. Konfigurer betalingsmetoder for butikker. For alle kortbetalingsmetoder, som butikken accepterer, skal du udføre kortopsætningen.
 
-![Butiksopsætning](media/NoReceiptReturns1.png "Konfiguration af Retail Store") 
+![Butiksopsætning.](media/NoReceiptReturns1.png "Konfiguration af Retail Store") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begrænse betalingsmetoder for returneringer uden kvittering
@@ -49,12 +49,12 @@ Standardværdien for ja/nej-knappen er **Nej**, hvilket sikrer, at betalingsmeto
 
 Når **Begræns for returneringer uden kvittering** er indstillet til **Ja**, er den valgte betalingsmetode ikke tilladt for refusioner. 
 
-![Gemme betalingsmetode](media/NoReceiptReturns3.png "Betalingsmetode for Retail Store") 
+![Gemme betalingsmetode.](media/NoReceiptReturns3.png "Betalingsmetode for Retail Store") 
 
 > [!NOTE]
 > Når en kasserer vælger en betalingsmåde, hvor der er begrænsede refusionsmuligheder uden kvittering, vises en meddelelse til kontrol af godkendte betalingsmetoder.
 
-![Acceptable betalingsmetoder](media/NoReceiptReturns4.png "Acceptable betalingsmetoder") 
+![Acceptable betalingsmetoder.](media/NoReceiptReturns4.png "Acceptable betalingsmetoder") 
 
 Hvis en transaktion har både en returnering med kvittering og en returnering uden kvittering, gennemtvinges begrænsningsbetingelserne ikke, fordi transaktionen bliver en returneringsarbejdsgang med en kvittering. 
 

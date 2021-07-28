@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: feb6d5751bc22c05dbd2f01f47d5a0f99fca07a0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 71767e733dd6ac9d11e8757abf0b12dcf2a7a441
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348599"
 ---
 # <a name="user-interface-elements"></a>Brugergrænsefladeelementer
 
@@ -75,7 +75,7 @@ Følgende billede viser eksempler på disse typer beskeder.
 
 - **Meddelelsesboks** - Boksen vises oven over grænsefladen, og du skal interagere med den, før du kan fortsætte med at bruge produktet.  
 
-![Følgende billede viser et eksempel på en meddelelsesboks.](media/user-interface-07.png)
+![Følgende billede viser et eksempel på et meddelelsesfelt.](media/user-interface-07.png)
 
 ## <a name="toolbars-grids-and-lists"></a>Værktøjslinjer, gitre og lister
 

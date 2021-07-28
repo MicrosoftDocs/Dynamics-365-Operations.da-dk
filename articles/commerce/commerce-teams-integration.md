@@ -9,16 +9,17 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c22af9bf76818dd682b4147c3677cd1715e4cbf8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6d82c1cafe35db5523c58870f4dcb2a7f63134a1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352632"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>Oversigt over Dynamics 365 Commerce- og Microsoft Teams-integration
 
@@ -50,7 +51,7 @@ Følgende forudsætninger skal være tilstede, før du kan begynde at bruge Micr
 
 I følgende illustration vises den grundlæggende arkitektur for integration af Dynamics 365 Commerce og Microsoft Teams med en San Francisco-butik som eksempel. Både Teams og Commerce POS-programmet bruger Microsoft Planner som lager, så opgaver, der udgives fra Teams, vises i POS-programmet, og ad hoc-opgaver, der er oprettet af butikschefer i POS-programmet, vises i Teams, hvilket medfører en problemfri opgavestyring mellem programmerne.    
 
-![Arkitektur for integration af Commerce og Teams](media/d365-commerce-teams-integration-conceptual-architecture.png)
+![Arkitektur for integration af Commerce og Teams.](media/d365-commerce-teams-integration-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

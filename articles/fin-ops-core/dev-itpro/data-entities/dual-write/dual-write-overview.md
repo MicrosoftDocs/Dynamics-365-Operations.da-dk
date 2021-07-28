@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 76c2f07ac5c25eea576cbb69256e76fbef4d86ca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6fb4e91f00163f5280d2c767843afd5c7a33712d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754106"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350879"
 ---
 # <a name="dual-write-overview"></a>Oversigt over dobbeltskrivning
 
@@ -37,7 +37,7 @@ Dobbeltskrivning er en brugsklar infrastruktur, der giver næsten realtidsintera
 
 Dobbeltskrivning giver en tæt kombineret, tovejsintegration mellem Finance and Operations-apps og Dataverse. Alle dataændringer i Finance and Operations-apps forårsager ændringer i Dataverse, og alle dataændringer i Dataverse medfører ændringer i Finance and Operations-apps. Dette automatiserede dataflow giver en integreret brugeroplevelse på tværs af apps.
 
-![Datarelation mellem apps](media/dual-write-overview.jpg)
+![Datarelation mellem apps.](media/dual-write-overview.jpg)
 
 Dobbeltskrivning har to aspekter: et *infrastruktur*-aspekt og et *program*-aspekt.
 

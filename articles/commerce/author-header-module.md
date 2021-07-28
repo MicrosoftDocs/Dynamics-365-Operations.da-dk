@@ -2,7 +2,7 @@
 title: Sidehovedmodul
 description: Dette emne omhandler sidehovedmoduler og beskriver, hvordan du kan oprette sidehoveder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b14178431b281daa827749781dd16481f8bfb74
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 21bf454e57c62a2542ed055bb0913c48ab70e235
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799899"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479250"
 ---
 # <a name="header-module"></a>Overskriftsmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler sidehovedmoduler og beskriver, hvordan du kan oprette sidehoveder i Microsoft Dynamics 365 Commerce.
 
@@ -33,7 +34,7 @@ Sidehovedmodulet indeholder et websteds logo, links til navigationshierarkiet, l
 
 Det følgende billede viser et eksempel på et sidehovedmodul på en startside.
 
-![Eksempel på et sidehovedmodul](./media/ecommerce-header.png)
+![Eksempel på et sidehovedmodul.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Egenskaber for et sidehovedmodul
 
@@ -58,9 +59,16 @@ Følgende moduler kan bruges i et sidehovedmodul:
 - **Butiksvælger** - Butiksvælgermodulet kan medtages på et overskriftmoduls butiksvælgerplads. Det giver brugere mulighed for at søge efter og finde butikker i nærheden. Brugerne kan også angive en foretrukken butik. Butikken vil derefter blive vist i overskriften. Når butiksvælgermodulet er inkluderet i overskriftsmodulet, skal egenskaben **Tilstand** være angivet til **Find butikker**. Du kan få flere oplysninger under [Butiksvælgermodul](store-selector.md).
 
 > [!NOTE]
-> - Understøttelse af indkøbsvognikonets modul i overskriftsmoduler er tilgængelig i Dynamics 365 Commerce version 10.0.11.
-> - Understøttelse af webstedsvælgermodulet i overskriftsmoduler er tilgængelig i Dynamics 365 Commerce version 10.0.14.
-> - Understøttelse af butiksvælgermodulet i overskriftsmoduler er tilgængelig i Dynamics 365 Commerce version 10.0.15.
+> - Understøttelse af indkøbsvognikonets modul i overskriftsmoduler er tilgængelig pr. Dynamics 365 Commerce version 10.0.11.
+> - Understøttelse af brug af webstedets vælgermodul i overskriftsmoduler er tilgængelig pr. Dynamics 365 Commerce version 10.0.14.
+> - Understøttelse af brug af butikkens vælgermodul i overskriftsmoduler er tilgængelig pr. Dynamics 365 Commerce version 10.0.15.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Overskriftsmodul i emnet Adventure Works
+
+I emnet Adventure Works understøtter overskriftsmodulet egenskaben **Mobillogo**. Denne egenskab gør det muligt at angive et logo for mobile viewports. Egenskaben **Mobillogo** er tilgængelig som en moduldefinitionsudvidelse.
+
+> [!IMPORTANT]
+> Emnet Adventure Works er tilgængelige pr. Dynamics 365 Commerce version 10.0.20.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Oprette et sidehovedfragment for en side
 

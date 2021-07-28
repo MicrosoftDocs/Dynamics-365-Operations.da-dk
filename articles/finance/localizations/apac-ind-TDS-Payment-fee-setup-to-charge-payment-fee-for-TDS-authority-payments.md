@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9213827ea1ad342beb7ac2fe586606651cfdcfa1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023133"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358428"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>Angive betalingsgebyrer til skattemyndighedsbetalinger
 
@@ -31,7 +31,7 @@ Dette emne forklarer, hvordan du kan angive de betalingsgebyrer, der opkræves a
 
 1. Gå til **Kreditor \> Betalingsopsætning \> Betalingsgebyr**.
 
-    [![Siden Betalingsgebyr](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Siden Betalingsgebyr.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Vælg **Ny** for at oprette et betalingsgebyr, og angive de krævede oplysninger.
 3. Vælg typen af betalignsgebyr i feltet **Gebyrtype**:
@@ -46,7 +46,7 @@ Dette emne forklarer, hvordan du kan angive de betalingsgebyrer, der opkræves a
 5. Angiv de øvrige krævede oplysninger.
 6. Vælg **Opsætning af betalingsgebyr** i handlingsruden for at åbne siden **Opsætning af betalingsgebyr**, hvor du kan definere betalingsgebyrer for forskellige kombinationer af banker, betalingsmåder, betalingsspecifikationer, valutaer og datointervaller.
 
-    [![Siden Opsætning af betalingsgebyr](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Siden Opsætning af betalingsgebyr.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. Under fanen **Oversigt** i feltet **Grupperinger** kan du angive, hvilke banker du angiver betalingsgebyret for:
 
@@ -64,7 +64,7 @@ Dette emne forklarer, hvordan du kan angive de betalingsgebyrer, der opkræves a
 15. Angiv valutakoden for gebyret i feltet **Valuta for gebyr**.
 16. Vælg fanen **Generelt** for at få vist eller redigere oplysningerne om den valgte bankkonto.
 
-    [![Fanen Generelt](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![Fanen Generelt.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. Angiv det minimale transaktionsbeløb, der aktiverer gebyret, i feltet **Minimum**.
 17. Angiv det maksimale transaktionsbeløb, der aktiverer gebyret, i feltet **Maksimum**.
@@ -74,7 +74,7 @@ Dette emne forklarer, hvordan du kan angive de betalingsgebyrer, der opkræves a
 21. Vælg den varemomsgruppe, der skal bruges til at beregne varemoms for gebyrbeløbet, i feltet **Varemomsgruppe**.
 22. Vælg fanen **Interval**. 
 
-    [![Fanen Interval](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Fanen Interval.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. Angiv antallet af dage mellem bogføringsdatoen (diskonteringsdatoen) for betalingen og forfaldsdatoen for egenvekslen i feltet **Dage**.
 24. I feltet **Procent/beløb** skal du vælge, om specifikationen er en procent eller et angivet beløb.

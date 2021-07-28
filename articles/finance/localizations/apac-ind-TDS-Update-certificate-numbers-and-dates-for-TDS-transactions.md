@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 248de8e12703a84482b67d0899857a6efb33531c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a698a8ccc781167060400068dc4011d318b5fe53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023114"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360200"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Opdatere certifikatnumre og -datoer for TDS-posteringer
 
@@ -33,7 +33,7 @@ Følg disse trin for at opdatere certifikatnumre og -datoer for TDS-posteringer.
 
 1. Gå til **Moms \> Opgørelser \> A-skat \> Opdater certifikat**.
 
-    [![Siden Opdater certifikat](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Siden Opdater certifikat.](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
 2. Vælg **TDS** i feltet **Skattetype** i sektionen **Vælg** på siden **Opdater certifikat**.
 3. Vælg debitors eller kreditors TDS-certifikatnummer i feltet **Certifikatnummer**.
@@ -60,4 +60,4 @@ Følg disse trin for at opdatere certifikatnumre og -datoer for TDS-posteringer.
 8. Vælg **Opdater** for at opdatere felterne **Certifikatnummer** og **Certifikatdato** for TDS-posteringer i nederste gitter.
 10. Gå til **Moms \> Indirekte skatter \> A-skat \> Refusionscertifikat**, og vælg **Forespørgsel** for at få vist de opdaterede posteringslinjer, der har de nye certifikatnumre, på siden **Certifikatposteringer**.
 
-    [![Siden Certifikatposteringer](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Siden Certifikatposteringer.](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)

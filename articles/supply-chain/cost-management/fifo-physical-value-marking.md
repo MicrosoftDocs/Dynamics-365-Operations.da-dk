@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 393239571de8a8d845107a8a8a151748c6b963c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821603"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355991"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk værdi og afmærkning
 
@@ -51,7 +51,7 @@ I dette eksempel er det ikke angivet, at varemodelgruppen skal medtage fysisk v�
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer. Følgende illustrationer viser effekten af FIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** ikke bruges. 
 
-![FIFO uden Medtag fysisk værdi](./media/fifowithoutincludephysicalvalue.gif) 
+![FIFO uden Medtag fysisk værdi.](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -83,7 +83,7 @@ Hvis afkrydsningsfeltet **Medtag fysisk værdi** er markeret for en vare på sid
 
 Postering 5b udlignes mod tilgangspostering 1b. Der foretages en regulering på USD -11,25 på afgangsposteringen. Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 27,50. Følgende illustration viser effekten af FIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** bruges. 
 
-![FIFO med Medtag fysisk værdi](./media/fifowithincludephysicalvalue.gif) 
+![FIFO med Medtag fysisk værdi.](./media/fifowithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -115,7 +115,7 @@ Afmærkning er en proces, som giver dig mulighed for at tilknytte – eller afm�
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 27,50. I følgende illustration vises effekterne af FIFO-lagermodellen på denne række af posteringer, når afmærkning mellem afgange og tilgange anvendes. 
 
-![FIFO med afmærkning](./media/fifowithmarking.gif) 
+![FIFO med afmærkning.](./media/fifowithmarking.gif) 
 
 **Forklaring til diagram**
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944527"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348673"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -85,7 +85,7 @@ Nogle af de mest almindelige og vigtigste ændringer, der kan udføres på en si
 
 De mest grundlæggende typer brugertilpasninger er desuden tilgængelige, hvis du højreklikker på et element og derefter vælger **Tilpas**. (Bemærk, at ikke alle elementer på din side kan tilpasses). Når du bruger denne metode for tilpasning, vises elementets *egenskabsvindue*.
 
-![Tilpasning af et elements egenskaber](./media/cli-element-property-window.png)
+![Tilpasning af et elements egenskaber.](./media/cli-element-property-window.png)
 
 Du kan bruge egenskabsvinduet til at tilpasse et element på følgende måder:
 
@@ -107,7 +107,7 @@ Hvis du vil foretage flere ændringer på en side eller ændringer, der ikke er 
 - Vælg **Tilpas denne side** i gruppen **Personaliser** under fanen **Indstillinger** i handlingsruden på en side.
 - Vælg knappen **Indstillinger** (tandhjulssymbolet) på navigationslinjen, og vælg derefter **Personaliser**.
 
-[![Værktøjslinjen Tilpasning](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Værktøjslinjen Tilpasning.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigering på siden
 
@@ -147,7 +147,7 @@ For nogle sider, der indeholder lister, er tilpasningsfunktionen **Føj til arbe
 > [!NOTE]
 > Hvis funktionen [Gemte visninger](saved-views.md) er aktiveret, er det indhold, du skubber til et arbejdsområde, direkte knyttet til en visning. Forespørgslen i visningen bruges til at hente data i arbejdsområdet, og det tilhørende felt eller link i arbejdsområdet åbner siden i denne visning, så visningens forespørgsel og tilpasninger anvendes på den. Hvis visningen opdateres, justeres de tilsvarende arbejdsområdeelementer efter den nye visningsdefinition.
 
-[![Føj til arbejdsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Føj til arbejdsområde.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Hvis du vil føje en liste til et arbejdsområde, skal du først sortere eller filtrere listen på siden, så den viser oplysningerne, som de skal vises i arbejdsområdet. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Liste** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan vælge de kolonner, der skal vises på listen i arbejdsområdet. Du kan også angive, hvilken label der bruges til listen i arbejdsområdet.
 - Hvis du vil føje et felt til et arbejdsområde, skal du først filtrere listen på siden, så den viser de data, du vil opsummere eller ønsker hurtig adgang til. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Felt** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til feltet i arbejdsområdet. Du kan også angive, om feltet skal vise en optælling. Når feltet er føjet til arbejdsområdet, kan du vælge det for at åbne den aktuelle side fra arbejdsområdet. Du kan derefter få vist den filtrerede liste, der er knyttet til feltet.

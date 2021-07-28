@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937300"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358827"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Beregning af moms på finanskladdelinjer
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ Ellers bruges momsretningen Indgående moms.
 
 I følgende diagram vises reglen grafisk.
 
-![Muligheder for momsretning for projektkonti](media/Sales-Tax-Direction-Vendor.jpg)
+![Muligheder for momsretning for projektkonti.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Kontotype er Kreditor
 
@@ -73,7 +73,7 @@ Ellers bruges momsretningen Indgående moms.
 
 I følgende diagram vises reglen grafisk.
 
-![Muligheder for momsretning for kreditorkonti](media/Sales-Tax-Direction-Vendor.jpg)
+![Muligheder for momsretning for kreditorkonti.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Kontotype er Debitor
 
@@ -89,7 +89,7 @@ Ellers bruges momsretningen Udgående moms.
 
 I følgende diagram vises reglen grafisk.
 
-![Muligheder for momsretning for debitorkonti](media/Sales-Tax-Direction-Customer.jpg)
+![Muligheder for momsretning for debitorkonti.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Kontotype er Finans
 
@@ -103,7 +103,7 @@ Ellers bruges momsretningen Indgående moms, hvis kladdebeløbet er debet (posit
 
 I følgende diagram vises reglen grafisk.
 
-![Muligheder for momsretning for finanskonti](media/Sales-Tax-Direction-Ledger.jpg)
+![Muligheder for momsretning for finanskonti.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Tilsidesætte momsretningen
 
@@ -115,7 +115,7 @@ Gå til **Finans \> Kontoplan \> Konti \> Hovedkonti**, og vælg oversigtspanele
 
 I dette afsnit beskrives, hvordan momsbeløbs fortegn beregnes.
 
-![Siden Momstransaktioner](media/sales-tax-amount-sign.jpg)
+![Siden Momstransaktioner.](media/sales-tax-amount-sign.jpg)
 
 Følgende tabel indeholder den generelle regel til bestemmelse af momsretningen og fortegnet for momsbeløb i den midlertidige momstabel.
 

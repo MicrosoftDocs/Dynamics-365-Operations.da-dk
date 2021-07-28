@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2bada42073e46c69101e6d31f3328a2eeb95f880
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2921cb22bedf04db1c8d11a382b979b3c63e6683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023111"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349970"
 ---
 # <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>Få vist bogførte TDS-betalinger og -transaktioner for en TDS-afregningsperiode
 
@@ -31,7 +31,7 @@ Dette emne forklarer, hvordan du kan få vist de betalinger og posteringer af af
 
 1. Gå til **Moms \> Indirekte skatter \> A-skat \> Afregningsperioder for A-skat**.
 
-    [![Siden Afregningsperioder for A-skat](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
+    [![Siden Afregningsperioder for A-skat.](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
 
 2. På siden **Afregningsperioder for A-skat** skal du vælge **A-skattebetalinger** for at åbne siden **A-skattebetalinger**, hvor du kan få vist TDS-afregninger, der er foretaget for en bestemt TDS-afregningsperiode.
 

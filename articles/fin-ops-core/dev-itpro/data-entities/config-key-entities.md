@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: bdb90f8d629a026a84f8c65e7e95b589169a3e4d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a9e5204c2bb9c0a58b2e4e223a4a3d2d09d53659
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752330"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356257"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsnøgler og dataenheder
 
@@ -52,24 +52,24 @@ Tabellen nedenfor viser, hvordan konfigurationsnøgleværdier i de forskellige g
 ### <a name="entity-list-refresh"></a>Opdater liste over enheder
 Når enhedslisten opdateres, opbygger datastyringen metadataene for konfigurationsnøgle metadataene til brug på kørselstidspunktet. Disse metadata er bygget ved hjælp af den logik, der er beskrevet ovenfor. Vi anbefaler, at du venter på, at opdateringen af enhedslisten er gennemført, før job og enheder i datastyringen anvendes. Hvis du ikke venter, er metadataene for konfigurationsnøglen måske ikke opdaterede, og det kan medføre uventede resultater. Når objektlisten opdateres, vises følgende meddelelse på enhedens listeside.
 
-![Opdater liste over enheder](./media/Entity_refresh_list.png)
+![Opdater liste over enheder.](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Listeside for dataenhed
 Dataenhedens listeside i arbejdsområdet Datastyring viser indstillingerne for konfigurationsnøglen for enhederne. Start fra denne side for at forstå virkningen fra konfigurationsnøgler på dataenheden.
 
 Disse oplysninger vises ved hjælp af de metadata, der er opbygget under opdateringen af enheden. Kolonne Konfigurationsnøgle viser navnet på den konfigurationsnøgle, der er tilknyttet dataenheden. Hvis denne kolonne er tom, betyder det, at der ikke er nogen konfigurationsnøgle knyttet til dataenheden. Kolonnen Status for konfigurationsnøgle viser tilstanden for konfigurationsnøglen. Hvis den er markeret, betyder det, at nøglen er aktiveret. Hvis feltet er tomt, betyder det enten, at nøglen er deaktiveret, eller at der ikke er tilknyttet nogen nøgle.
 
-![Listeside for enhed](./media/Data_entity_list_page.png)
+![Listeside for enhed.](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Målfelter
 Det næste trin er at dykke ned i dataenheden for at få vist virkningen af konfigurationsnøgler i tabeller og felter. Formularen Målfelter for en dataenhed viser konfigurationsnøglen og statusoplysninger for nøglen for de relaterede tabeller og felter i dataenheden. Hvis selve dataenheden har konfigurationsnøglen deaktiveret, vises en advarsel om, at tabellerne og felterne i formularen Målfelter for denne enhed ikke er tilgængelige, uanset status for deres konfigurationsnøgle.
 
-![Målfelter](./media/Target_fields_1.png)
+![Målfelter.](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Underordnede enheder 
 Visse enheder har andre enheder som datakilder eller er sammensat dataenheder: vigtige konfigurationsoplysninger for disse enheder vises i formularen Underordnede enheder. Du kan bruge denne formular på lignende måde til listesiden over enheder, som beskrevet ovenfor. Formularen Målfelter for den underordnede enhed fungerer også, som det er beskrevet ovenfor.
 
-![Målfelter](./media/Target_fields_2.png)
+![Målfelter.](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Brug af dataenheder
 Når du forstår den fulde virkning, hvis der er nogen, af konfigurationsnøgler på dataenheder, du vil bruge, kan du nu fortsætte med at bruge dataenhederne ved at føje dem til dataprojekter. 
@@ -91,7 +91,7 @@ Ved hjælp af metadataene for konfigurationsnøglen, der er opbygget under opdat
 ### <a name="managing-configuration-key-changes"></a>Administration af ændringer i konfigurationsnøgle
 Når du opdaterer konfigurationsnøgler på enheds-, tabel-eller feltniveau, skal enhedslisten i datastyringen opdateres. Denne proces sikrer, at systemet henter de nyeste konfigurationsnøgleindstillinger. Indtil enhedslisten opdateres, vises følgende advarsel på enhedens listeside. De opdaterede konfigurationsnøgleændringer træder i kraft, umiddelbart efter, at enhedslisten opdateres. Det anbefales, at du validerer eksisterende dataprojekter og job for at sikre, at de fungerer som forventet, når ændringerne i konfigurationsnøglerne sættes i kraft.
 
-![Målfelter](./media/Target_fields_3.png)
+![Målfelter.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

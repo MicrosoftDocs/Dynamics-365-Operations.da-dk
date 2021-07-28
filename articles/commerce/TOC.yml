@@ -932,6 +932,8 @@
                   href: manage-ecommerce-users-roles.md
                 - name: Anvend lagerindstillinger
                   href: inventory-settings.md
+                - name: Anvende indstillinger til at tilføje produkt i indkøbsvogn
+                  href: add-cart-settings.md
                 - name: Overvejelser om optimering af søgeprogram (SEO) for webstedet
                   href: search-engine-optimization-considerations.md
                 - name: Administrere sikkerhedspolitik for indhold (CSP)
@@ -1016,6 +1018,10 @@
                       href: customize-site-navigation.md
                     - name: Oprette en side-URL-adresse
                       href: create-page-URL.md
+                - name: Adventure Works-tema
+                  items:
+                    - name: Oversigt over Adventure Works-tema
+                      href: adventure-works-theme.md
             - name: Administrere digitale aktiver
               items:
                 - name: Oversigt over styring af digitale aktiver
@@ -1070,6 +1076,16 @@
                       href: add-hero-module.md
                     - name: Videoafspillermodul
                       href: add-video-player.md
+                    - name: Aktivt billedmodul
+                      href: active-image-module.md
+                    - name: Modul til billedliste
+                      href: image-list-module.md
+                    - name: Interaktiv funktionsmodul
+                      href: interactive-feature-module.md
+                    - name: Abonnementsmodul
+                      href: subscribe-module.md
+                    - name: Modul til feltliste
+                      href: tile-list-module.md
                 - name: Overskrifts- og sidefodsmoduler
                   items:
                     - name: Overskriftsmodul
@@ -1314,6 +1330,10 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Retningslinjer for installation af kasseapparater
                   href: localizations/emea-nor-loc-deployment-guidelines.md
+            - name: Rusland
+              items:
+                - name: Commerce-lokalisering for Rusland
+                  href: localizations/rus-commerce-localization.md
             - name: Sverige
               items:
                 - name: Kasseapparatfunktionalitet
@@ -2146,6 +2166,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere godkendelsestrin
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurere udgiftsvalidatorer
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere manuelle beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere betingede beslutninger
@@ -2180,7 +2202,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Tilknytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
+                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
                 - name: Rapport om arbejdsgangstyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
@@ -2558,6 +2580,8 @@
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Udvidelser til kanaldatabase
                   href: dev-itpro/channel-db-extensions.md
+                - name: Fjerne udvidelser til enheder i skyen
+                  href: dev-itpro/retail-sdk/remove-csu-package.md
                 - name: Aktivere brugerdefineret CDX-synkronisering via filtypenavn
                   href: dev-itpro/cdx-extensibility.md
                 - name: Definere og angive attributter for ordre

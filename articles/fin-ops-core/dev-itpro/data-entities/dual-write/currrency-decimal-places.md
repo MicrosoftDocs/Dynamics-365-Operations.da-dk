@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: c4f663ae36f7d4ea3db9888e618f2fe3bf8c3256
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 073f89b5ae44e20d1d2e854341afaa176f9b6280
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748941"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350929"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering af valutadatatype til dobbeltskrivning
 
@@ -82,13 +82,13 @@ Der er nogle begrænsninger:
 
 Når migreringen er fuldført, kan administratorer angive valutapræcisionen. Gå til **Indstillinger \> Administration**, og vælg **Systemindstillinger**. Under fanen **Generelt** skal du ændre værdien af kolonnen **Vælg den valutapræcision, der bruges til prissætning i hele systemet**, som vist i følgende illustration.
 
-![Systemindstillinger for valuta](media/currency-system-settings.png)
+![Systemindstillinger for valuta.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Forretningsstyring: valutaer
 
 Hvis du kræver, at valutapræcisionen for en bestemt valuta er forskellig fra den valutapræcision, der bruges til prisfastsættelsen, kan du ændre den. Gå til **Indstillinger \> Forretningsstyring**, vælg **Valutaer**, og vælg den valuta, der skal ændres. Angiv derefter kolonnen **Valutapræcision** til det antal decimaler, du ønsker, som vist i følgende illustration.
 
-![Valutaindstillinger for en bestemt landestandard](media/specific-currency.png)
+![Valutaindstillinger for en bestemt landestandard.](media/specific-currency.png)
 
 ### <a name="tables-currency-column"></a>tabeller: valutakolonne
 

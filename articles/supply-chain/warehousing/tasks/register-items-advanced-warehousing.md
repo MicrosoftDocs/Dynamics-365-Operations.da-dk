@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830828"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357996"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
 
@@ -53,14 +53,14 @@ I følgende scenario vises, hvordan du kan oprette en overskrift til varemodtage
 1. Angiv **Kontonummer** til *1001*.
 1. Angiv **Nummer** til nummeret på den indkøbsordre, du har identificeret til denne øvelse.
 
-    ![Varemodtagelseskladde](../media/item-arrival-journal-header.png "Varemodtagelseskladde")
+    ![Varemodtagelseskladde.](../media/item-arrival-journal-header.png "Varemodtagelseskladde")
 
 1. Vælg **OK** for at oprette kladdehovedet.
 1. Vælg **Tilføj linje** i sektionen **Kladdelinjer**, og angiv følgende data:
     - **Varenummer** – Angiv til *M9200*. **Lokation**, **Lagersted** og **Antal** angives på basis af lagertransaktionsdataene for de 10 paller (1000 hver).
     - **Lokation** – Angiv til *001*. Denne specifikke lokation sporer ikke nummerplader.
 
-    ![Varemodtagelseskladdelinje](../media/item-arrival-journal-line.png "Varemodtagelseskladdelinje")
+    ![Linje på varemodtagelseskladde.](../media/item-arrival-journal-line.png "Varemodtagelseskladdelinje")
 
     > [!NOTE]
     > Feltet **Dato** angiver den dato, hvor det disponible antal af denne vare registreres på lageret.  

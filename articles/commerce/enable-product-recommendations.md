@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 873266405638cd277eb748ad7e966ba8a4976b13
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0a94a74f4eb00c24142f0390bcf352db0594ca0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019853"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349466"
 ---
 # <a name="enable-product-recommendations"></a>Aktivér produktanbefalinger
 
@@ -68,7 +68,7 @@ Benyt følgende fremgangsmåde for at aktivere produktanbefalinger.
 1. Vælg funktionen **Produktanbefalinger**.
 1. Vælg **Aktivér nu** i ruden med egenskaber for **Produktanbefalinger**.
 
-![Slå anbefalinger til](./media/FeatureManagement_Recommendations.PNG)
+![Slå anbefalinger til.](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Denne procedure starter processen til oprettelse af produktanbefalingslister. Der kan tage op til flere timer, før listerne er tilgængelige og bliver vist på POS eller i Dynamics 365 Commerce.

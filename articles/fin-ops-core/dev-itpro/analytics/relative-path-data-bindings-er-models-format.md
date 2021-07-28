@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 141d58c2183c386584b0b974f4997e7a81ef3109
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b9d072914b5effdd733ec2c18e4ada877f932ba8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350154"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Brug en relativ sti i databindinger for ER-modeller og -formater
 
@@ -31,20 +31,20 @@ ER-værktøjet (Electronic Reporting) giver brugerne mulighed for at definere el
 
 Hvis du vil forbedre anvendeligheden af ER-tilknytningsdesignere, er funktionen [relativ sti](er-formula-language.md#relative-path) blevet udgivet. Indstillingen for gengivelsen af den relative sti er som standard slået til for alle nye forekomster af programmet, hvor ER-designoplevelsen er aktiveret (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Vi har implementeret den relative sti, så brugerne kan fortsætte med at bruge den fulde sti, når arbejdet med denne præsentation med ER-bindinger.
 
-[![Brugerparametre](./media/relative-path-01.png)](./media/relative-path-01.png)
+[![Brugerparametre.](./media/relative-path-01.png)](./media/relative-path-01.png)
 
  
 Når parameteren for brug af den relative sti er slået til, erstatter et enkelt @-tegn stien til det overordnede element i bindingen for det aktuelle modelelement. Hele bindingsstien bliver kortere, hvilket gør hele tilknytningen mere tydelig og nemmere at forstå. I de fleste tilfælde er det ikke nødvendigt at rulle yderligere i ER-designeren for at få vist alle bindingerne i datamodellen.
 
-[![Modeltilknytningsdesigner](./media/relative-path-02.png)](./media/relative-path-02.png)
+[![Modeltilknytningsdesigner.](./media/relative-path-02.png)](./media/relative-path-02.png)
  
 Når du går i gang med at designe et nyt ER-udtryk, skal du kun angive ét tegn for at definere en binding til et felt af i overordnede element.
 
-[![Formeldesigner](./media/relative-path-03.png)](./media/relative-path-03.png)
+[![Formeldesigner.](./media/relative-path-03.png)](./media/relative-path-03.png)
  
 Når du vælger at ændre datakilden for det overordnede modelelement med den absolutte sti, skal du manuelt binde dette modelelement samt alle indlejrede elementer til en ny datakilde. Når en relativ sti er aktiveret, og du vælger en ny datakilde, der skal bindes til et overordnet element, får du mulighed for automatisk at binde alle indlejrede elementer i dette overordnede element sammen med et enkelt klik.
 
-[![Erstat eksisterende stimeddelelse](./media/relative-path-04.png)](./media/relative-path-04.png)
+[![Meddelelsen Erstat eksisterende sti.](./media/relative-path-04.png)](./media/relative-path-04.png)
  
 Hvis du bekræfter genbinding af af indlejrede elementer, placeres det nye overordnede element på stien for alle de indlejrede elementer, der indeholder det eksisterende overordnede element.
 Denne funktion bryder ikke bagud-kompatibiliteten for ER-strukturen. Alle tidligere designede ER-konfigurationer vil fungere med denne nye funktion, og der kræves ingen opgraderinger eller konverteringer.

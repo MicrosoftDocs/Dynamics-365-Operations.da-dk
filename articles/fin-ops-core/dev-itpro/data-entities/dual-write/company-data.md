@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: ab063c66712b43818f58eee1493ec168771ae97a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941023"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350953"
 ---
 # <a name="company-concept-in-dataverse"></a>Firmakoncept i Dataverse
 
@@ -43,7 +43,7 @@ Da virksomhedsenhed og firma ikke er tilsvarende koncepter, er det ikke muligt a
 
 I følgende illustration vises et eksempel på denne dataopsætning i Dataverse.
 
-![Dataopsætning i Dataverse](media/dual-write-company-1.png)
+![Dataopsætning i Dataverse.](media/dual-write-company-1.png)
 
 På grund af denne konfiguration ejes alle rækker, der er relateret til USMF-firmaet, af et team, der er knyttet til USMF-virksomhedsenheden i Dataverse. Derfor kan alle brugere, der har adgang til den pågældende virksomhedsenhed via en sikkerhedsrolle, der er angivet til synlighed på virksomhedsenhedsniveau, nu se disse rækker. Følgende eksempel viser, hvordan teams kan bruges til at give den korrekte adgang til disse rækker.
 
@@ -52,21 +52,21 @@ På grund af denne konfiguration ejes alle rækker, der er relateret til USMF-fi
 + Teamet "USMF Sales" er knyttet til den USMF-virksomhedsenhed, der er nævnt tidligere.
 + Derfor kan medlemmer af teamet "USMF Sales" se enhver konto, der ejes af brugeren "USMF DW", som ville være kommet fra USMF-firmatabellen i Finance and Operations.
 
-![Sådan kan teams bruges](media/dual-write-company-2.png)
+![Sådan kan teams bruges.](media/dual-write-company-2.png)
 
 Som den foregående illustration viser, er denne 1:1-tilknytning mellem virksomhedsenhed, firma og team blot et udgangspunkt. I dette eksempel oprettes der manuelt en ny "Europe"-virksomhedsenhed i Dataverse som overordnet til både DEMF og ESMF. Denne nye rodvirksomhedsenhed er ikke relateret til dobbeltskrivning. Den kan dog bruges til at give medlemmerne af "EUR Sales"-teamet adgang til kontodata i både DEMF og ESMF ved at indstille datasynlighed til **Parent/Child BU** i den tilknyttede sikkerhedsrolle.
 
 Et sidste emne, der skal omtales, er, hvordan dobbeltskrivning afgør, hvilket ejerteam det skal tildeles rækker. Denne funktionsmåde styres af kolonnen **Standardejerteam** på cdm\_Company-rækken. Når en cdm\_Company-række er aktiveret til dobbeltskrivning, opretter en plug-in automatisk den tilknyttede virksomhedsenhed og ejerteamet (hvis den ikke allerede findes) og indstiller kolonnen **Standardejerteam**. Administratoren kan ændre denne kolonne til en anden værdi. Men administratoren kan ikke rydde kolonnen, så længe tabellen er aktiveret til dobbeltskrivning.
 
 > [!div class="mx-imgBorder"]
-![Kolonnen Standardejerteam](media/dual-write-default-owning-team.jpg)
+![Kolonnen Standardejerteam.](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Firma-striping og bootstrapping
 
 Dataverse-integration giver firmaparitet ved at bruge en firmaidentifikator til at stripe data. Som det fremgår af følgende illustration, udvides alle firmaspecifikke tabeller, så de har en mange-til-en-relation (N:1) med tabellen cdm\_Company.
 
 > [!div class="mx-imgBorder"]
-![N:1-relation mellem en firmaspecifik tabel og tabellen cdm_Company](media/dual-write-bootstrapping.png)
+![N:1-relation mellem en firmaspecifik tabel og tabellen cdm_Company.](media/dual-write-bootstrapping.png)
 
 + Når et firma er tilføjet og gemt i rækker, bliver værdien skrivebeskyttet. Derfor skal brugerne sørge for, at de vælger det rigtige firma.
 + Kun rækker, der har firmadata, er kvalificerede til dobbeltskrivning mellem programmet og Dataverse.
@@ -98,7 +98,7 @@ Du kan automatisk udfylde firmanavnet i kundeengagementapps på flere måder.
 
 Hvis du vil anvende filtrering baseret på firmakonteksten i de brugerdefinerede formularer eller på brugerdefinerede opslagskolonner, der er føjet til standardformularer, skal du åbne formularen og bruge sektionen **Filtrering af relaterede poster** til at anvende firmafilteret. Du skal angive dette for hver opslagskolonne, der kræver filtrering, på baggrund af det underliggende firma på en bestemt række. Indstillingen vises for **Konto** i følgende illustration.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Anvende firmakontekst":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Anvende firmakontekst.":::
 
 
 

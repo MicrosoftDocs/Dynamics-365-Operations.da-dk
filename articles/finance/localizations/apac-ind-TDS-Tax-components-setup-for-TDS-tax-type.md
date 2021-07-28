@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023113"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358164"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Konfigurere skattekomponenter for skattetypen Kildeskat
 
@@ -33,7 +33,7 @@ Følg disse trin for at konfigurere skattekomponenter.
 
 1. Gå til **Skat \> Opsætning \> A-skat \> Komponenter for A-skat**.
 
-    [![Siden Komponenter for A-skat](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Siden Komponenter for A-skat.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. Vælg **Kildeskat** i feltet **Skattetype** for at konfigurere komponenter for A-skat for skattetypen Kildeskat.
 3. Vælg **Ny** i handlingsruden for at oprette en linje.
@@ -50,7 +50,7 @@ Følg disse trin for at konfigurere skattekomponenter.
 
     Hvis grænsebeløbet for fritagelse f.eks. er 5.000, beregnes kildeskatten på en specifik fakturalinje, hvis beløbet på fakturalinjen overstiger 5.000 (er 5.001 eller mere).
 
-    [![Siden Tærskel](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Siden Tærskel.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > Grænseværdien for fritagelse skal være mindre end eller lig med grænsebeløbet.
@@ -66,6 +66,6 @@ Følg disse trin for at konfigurere skattekomponenter.
 
 14. Vælg **OK** for at kopiere og oprette skattekomponenter for den anden komponentgruppe for kildeskat på siden **Komponenter for A-skat**.
 
-    [![Dialogboksen Kopier komponenter for A-skat](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Dialogboksen Kopier komponenter for A-skat.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Luk siden.

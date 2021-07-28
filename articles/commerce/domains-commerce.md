@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fb010f5cb70668913b937b73ba05144f0b99549a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022830"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356824"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
@@ -38,7 +38,7 @@ Når der klargøres et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services 
 
 I følgende illustration vises LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet. 
 
-![LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Du kan oprette en serviceanmodning for at føje flere domæner til et miljø, hvis der allerede er foretaget klargøring. Hvis du vil oprette en serviceanmodning i LCS, skal du i dit miljø gå til **Support \> Supportproblemer** og vælge **Send en hændelse**.
 
@@ -56,7 +56,7 @@ Første gang du konfigurerer et websted i webstedsgeneratoren, vises dialogbokse
 
 I følgende illustration vises dialogboksen **Konfigurer dit websted** for et websted med navnet "standard", når du får adgang til webstedet for første gang i webstedsgeneratoren.
 
-![Dialogboksen **Konfigurer dit websted**](./media/Domains_SetupyoursiteScreen.png)
+![Dialogboksen **Konfigurer dit websted**.](./media/Domains_SetupyoursiteScreen.png)
 
 I feltet **Vælg et domæne** kan du knytte et af de understøttede værtsnavne, der er leveret til dit websted i LCS, til dit websted i webstedsgeneratoren.
 
@@ -79,11 +79,11 @@ Når webstedet er konfigureret med en sti, bygger alle URL-adresser, der er knyt
 
 Følgende illustration viser dialogboksen **Ny URL-adresse** i webstedsgenerator med eksempel på en URL-sti fremhævet. 
 
-![Dialogboksen **Ny URL-adresse** i webstedsgenerator](./media/Domains_PageSetup2a.png)
+![Dialogboksen **Ny URL-adresse** i webstedsgenerator.](./media/Domains_PageSetup2a.png)
 
 Følgende illustration viser siden **URL-adresser** i webstedsgenerator med eksempel på en URL-adresse fremhævet på listen.
 
-![Kør indstillingen brugerstrøm i politikstrøm](./media/Domains_URLsInSiteBuilder2a.png)
+![Kør indstillingen for brugerflow i politikflow.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domæner i webstedsgenerator
 

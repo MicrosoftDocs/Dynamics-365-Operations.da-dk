@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892427"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360730"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gang med aktivleasing
 
@@ -35,7 +37,7 @@ Du kan få flere oplysninger om regnskabsstandarder i standarddokumentationen ti
 ## <a name="asset-leasing-elements"></a>Aktivleasingelementer
 I følgende diagram vises de vigtigste elementer i forretningsprocessen for leasinger.
 
-[![Aktivleasingelementer](./media/overview-01.png)](./media/overview-01.png)
+[![Aktivleasingelementer.](./media/overview-01.png)](./media/overview-01.png)
 
 Et leaset aktiv indeholder følgende hovedkomponenter:
 
@@ -54,7 +56,7 @@ Aktivleasing tilknytter leasingoplysninger, betalingsplaner, start- og slutdatoe
 
 I følgende diagram vises leasingbogen, leasingen, beregnet betalingsplan, klassifikationstest for leasinger og leasingbøger samt de tilsvarende regnskabstransaktioner.
 
-[![Leasing, leasingbog og betalingsplan](./media/overview-02.png)](./media/overview-02.png)
+[![Leasing, leasingbog og betalingsplan.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Leasingbog** - Leasingbogen omfatter alle oplysninger om leasingkontrakten, f.eks. leasingperiode, handelsværdi og leasingbetalinger. Den omfatter også den regnskabsstandard, som du følger, den leasingtype og de tærskler, der tages i betragtning ved test af leasingklassifikation. Leasingbogen indeholder også de leasingtransaktioner, der er bogført i finans. 
   
@@ -117,7 +119,7 @@ Den første periode starter med periode nul, hvis annuitetstypen er forfalden an
 
 Klassifikationstest omfatter overdragelse af ejendomsretten, købsoption, leasingperiode, nettonutidsværdi og entydigt aktiv. Følgende diagram viser klassifikationstest af leasinger.
 
-[![Test af leasingklassifikation](./media/overview-03.png)](./media/overview-03.png)
+[![Test af leasingklassifikation.](./media/overview-03.png)](./media/overview-03.png)
 
 Hver leasingtype håndterer regnskabet forskelligt for forskellige leasingtransaktioner. Transaktionerne omfatter indledende anerkendelse, renteudgift, forfalden leasingbetaling og leasingafskrivning, og de er baseret på de regnskabsstandarder, du følger (IFRS 16 eller ASC 842). Finanskonti defineres under leasingposteringsprofilen for hver transaktionstype og regnskabsstruktur.
 
@@ -232,7 +234,7 @@ Udfør følgende trin for at oprette en ny leasing.
 
    Siden **Betalingsplan** viser fremtidige betalingsplaner for et leasing-id. Vælg **Bekræft tidsplan** for at kunne bogføre **Første anerkendelse**-transaktioner. 
 
-[![Funktionen til første anerkendelse](./media/overview-13.png)](./media/overview-13.png)
+[![Funktionen til første anerkendelse.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Vælg **Første anerkendelse** for at oprette en indledende anerkendelseskladde. 
 
@@ -246,7 +248,7 @@ Udfør følgende trin for at oprette en ny leasing.
 
    På siden **afskrivningsplan for aktiver** vises afskrivningstransaktionerne for det valgte leasing-id. 
 
-   [![Side for ROU-aktivtransaktioner](./media/overview-20.png)](./media/overview-20.png)
+   [![Side for ROU-aktivtransaktioner.](./media/overview-20.png)](./media/overview-20.png)
 
    På siden **ROU-aktivtransaktioner** vises den første anerkendelse, akkumuleret afskrivning og aktivets saldo. 
 

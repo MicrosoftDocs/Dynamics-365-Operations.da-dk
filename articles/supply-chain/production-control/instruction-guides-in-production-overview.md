@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 61943
+ms.custom:
+- "61943"
+- intro-internal
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 15595c46f9d6ff91f6fd618859e9f059ae88bd78
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d172e3dfcb9ca70e1047a174040e7940bdd25296
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910083"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354006"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Levere Mixed-Reality-vejledninger til arbejdere i produktion
 
@@ -57,7 +59,7 @@ Følgende underafsnit beskriver et par udvalgte scenarier, hvor firmaer på tvæ
 
 ### <a name="assembly"></a>Assembly
 
-![Bruge guider i assembly-opgaver](media/instruction-guides-hero-assembly.png "Bruge guider i serviceopgaver")
+![Bruge guider i assembly-opgaver.](media/instruction-guides-hero-assembly.png "Bruge guider i serviceopgaver")
 
 Instruktionerne i assembly-drift viser arbejdere de værktøjer og dele, de har brug for, og hvordan de bruges i reelle arbejdssituationer.
 
@@ -65,7 +67,7 @@ Produktionschefer kan oprette og tildele guider, f.eks. til [produktionsruter](r
 
 ### <a name="service"></a>Ydelse
 
-![Bruge guider i serviceopgaver](media/instruction-guides-hero-service.png "Bruge guider i serviceopgaver")
+![Bruge guider i serviceopgaver.](media/instruction-guides-hero-service.png "Bruge guider i serviceopgaver")
 
 Udstyr teknikere med instruktioner på arbejdspladsen, hvilket eliminerer behovet for at planlægge yderligere besøg.
 
@@ -73,7 +75,7 @@ Servicechefer kan f.eks. tildele guider til bestemte [produkter](../../commerce/
 
 ### <a name="quality"></a>Kvalitet
 
-![Bruge guider i kvalitetssikringsopgaver](media/instruction-guides-hero-quality.png "Bruge guider i kvalitetssikringsopgaver")
+![Bruge guider i kvalitetssikringsopgaver.](media/instruction-guides-hero-quality.png "Bruge guider i kvalitetssikringsopgaver")
 
 Udrul nye processer for at sikre øget konsistens ved at omdanne medarbejdernes viden til et rutineværktøj.
 
@@ -81,13 +83,13 @@ Kvalitetssikringschefer kan f.eks. tildele guider til [produkter](../../commerce
 
 ### <a name="certifications"></a>Certificeringer
 
-![Bruge guider til certificeringsrelaterede opgaver](media/instruction-guides-hero-certification.png "Bruge guider til certificeringsrelaterede opgaver")
+![Bruge guider til certificeringsrelaterede opgaver.](media/instruction-guides-hero-certification.png "Bruge guider til certificeringsrelaterede opgaver")
 
 Sørg for, at hver medarbejder overholder høje standarder, ved hurtigt at identificere, hvem der har brug for hjælp og hvor.
 
 ### <a name="safety"></a>Sikkerhed
 
-![Bruge guider til instruktionerne for arbejdssikkerhed](media/instruction-guides-hero-safety.png "Bruge guider til instruktionerne for arbejdssikkerhed")
+![Bruge guider til instruktionerne for arbejdssikkerhed.](media/instruction-guides-hero-safety.png "Bruge guider til instruktionerne for arbejdssikkerhed")
 
 Udlevér vejledninger, der gennemgår de farlige procedurer virtuelt inden forsøg på at udføre dem i det fysiske miljø. Med en Mixed Reality-tilgang kan arbejderne opleve farlige procedurer virtuelt.
 
@@ -119,7 +121,7 @@ Hvis du vil gøre funktionen tilgængelig på systemet, skal du aktivere dens ko
 
 Hvis du vil konfigurere, hvordan guider vises i produktionen, skal du gå til **Mixed Reality \> Dynamics 365 Guides \> Konfigurer guideintegration**.
 
-![Konfigurere guideintegration i produktion](media/instruction-guides-configure-integration.png "Konfigurere guideintegration i produktion")
+![Konfigurere guideintegration i produktion.](media/instruction-guides-configure-integration.png "Konfigurere guideintegration i produktion")
 
 Angiv følgende felter:
 
@@ -136,7 +138,7 @@ Angiv følgende felter:
 
 Du kan bruge siden **Alle guider** til at få vist listen over alle tilgængelige guider i organisationen og alle tildelinger til dine produktionsprocesser og ressourcer. Hvis du vil åbne den, skal du gå til **Mixed Reality \> Guider \> Alle guider**. Oversigten øverst viser alle tilgængelige guider, og du kan bruge feltet her til at filtrere listen. På listen nederst vises alle guidetildelinger, og der findes en værktøjslinje til styring af dem.
 
-![Administrere guider](media/instruction-guides-allguides.png "Administrere guider")
+![Administrere guider.](media/instruction-guides-allguides.png "Administrere guider")
 
 I følgende afsnit beskrives de objekttyper, du kan tildele guider. Hver enkelt tildelte guide indeholder instruktioner, der automatisk knyttes til de enkelte produktionsjob og vil være tilgængelige i produktionen.
 
@@ -157,7 +159,7 @@ Sådan føjer du en guide til en ressource:
 1. Udvid oversigtspanelet **Tilknyttede guider**.
 1. Vælg **Tilføj** på værktøjslinjen **Tilknyttede guider**. Der føjes en ny linje til gitteret.
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele. Hvis du har et stort antal guider, kan du filtrere listen for at finde den, du søger efter.
-    ![Administrere guider](media/instruction-guides-allguides.png "Administrere guider")
+    ![Administrere guider.](media/instruction-guides-allguides.png "Administrere guider")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Knytte en guide til en ressourcegruppe
 
@@ -178,7 +180,7 @@ Sådan føjer du en guide til en ressourcegruppe:
 1. Udvid oversigtspanelet **Tilknyttede guider**.
 1. Vælg **Tilføj** på værktøjslinjen **Tilknyttede guider**. Der føjes en ny linje til gitteret.
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele. Hvis du har et stort antal guider, kan du filtrere listen for at finde den, du søger efter.
-    ![Føje en guide til en ressourcegruppe](media/instruction-guides-resourcegroup.png "Føje en guide til en ressourcegruppe")
+    ![Føje en guide til en ressourcegruppe.](media/instruction-guides-resourcegroup.png "Føje en guide til en ressourcegruppe")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Knytte en guide til et frigivet produkt
 
@@ -198,7 +200,7 @@ Sådan føjer du en guide til et frigivet produkt:
 1. Siden **Tilknyttede guider** åbnes for det valgte produkt.
 1. Vælg **Tilføj** i handlingsruden for at føje en ny linje til gitteret. 
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele.
-    ![Føje en guide til et frigivet produkt](media/instruction-guides-ReleasedProduct-AddGuides.png "Føje en guide til et frigivet produkt")
+    ![Føje en guide til et frigivet produkt.](media/instruction-guides-ReleasedProduct-AddGuides.png "Føje en guide til et frigivet produkt")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Knytte en guide til en formel
 
@@ -223,7 +225,7 @@ Sådan føjer du en guide til en formel:
 1. Udvid oversigtspanelet **Tilknyttede guider**.
 1. Vælg **Tilføj** på værktøjslinjen **Tilknyttede guider**. Der føjes en ny linje til gitteret.
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele.
-    ![Føje en guide til en formel](media/instruction-guides-Formula.png "Føje en guide til en formel")
+    ![Føje en guide til en formel.](media/instruction-guides-Formula.png "Føje en guide til en formel")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Knytte en guide til en formelversion
 
@@ -248,11 +250,11 @@ Sådan føjer du en guide til en formelversion:
 1. Åbn fanen **Overskrift** over det øverste oversigtspanel.
 1. Vælg den version, du vil tildele en guide, i oversigtspanelet **Formelversioner**.
 1. Vælg **Tilknyttede guider** på værktøjslinjen **Formelversioner**.
-    ![Åbn de guider, der er tilknyttet en valgt formelversion](media/instruction-guides-FormulaVersion.png "Åbne de guider, der er tilknyttet en valgt formelversion")
+    ![Åbne de guider, der er tilknyttet en valgt formelversion.](media/instruction-guides-FormulaVersion.png "Åbne de guider, der er tilknyttet en valgt formelversion")
 1. Siden **Tilknyttede guider** åbnes for din formelversion.
 1. Vælg **Tilføj** i handlingsruden for at føje en ny linje til gitteret. 
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele.
-    ![Føje en guide til en formelversion](media/instruction-guides-FormulaVersionAddGuide.png "Føje en guide til en formelversion")
+    ![Føje en guide til en formelversion.](media/instruction-guides-FormulaVersionAddGuide.png "Føje en guide til en formelversion")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Knytte en guide til en stykliste
 
@@ -275,7 +277,7 @@ Sådan føjer du en guide til en stykliste:
 1. Udvid oversigtspanelet **Tilknyttede guider**.
 1. Vælg **Tilføj** på værktøjslinjen **Tilknyttede guider**. Der føjes en ny linje til gitteret.
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele.
-    ![Føje en guide til en stykliste](media/instruction-guides-BOM.png "Føje en guide til en stykliste")
+    ![Føje en guide til en stykliste.](media/instruction-guides-BOM.png "Føje en guide til en stykliste")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Knytte en guide til en styklisteversion
 
@@ -297,11 +299,11 @@ Sådan føjer du en guide til en styklisteversion:
 1. Åbn fanen **Overskrift** over det øverste oversigtspanel.
 1. Vælg den version, du vil tildele en guide, i oversigtspanelet **Styklisteversioner**.
 1. Vælg **Tilknyttede guider** på værktøjslinjen **Styklisteversioner**.
-    ![Åbn de guider, der er tilknyttet en valgt styklisteversion](media/instruction-guides-BOMVersion.png "Åbne de guider, der er tilknyttet en valgt styklisteversion")
+    ![Åbn de guider, der er tilknyttet en valgt styklisteversion.](media/instruction-guides-BOMVersion.png "Åbne de guider, der er tilknyttet en valgt styklisteversion")
 1. Siden **Tilknyttede guider** åbnes for din styklisteversion.
 1. Vælg **Tilføj** i handlingsruden for at føje en ny linje til gitteret.
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele.
-    ![Føje en guide til en styklisteversion](media/instruction-guides-BOMVersionAddGuide.png "Føje en guide til en styklisteversion")
+    ![Føje en guide til en styklisteversion.](media/instruction-guides-BOMVersionAddGuide.png "Føje en guide til en styklisteversion")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Knytte en guide til en rute
 
@@ -322,7 +324,7 @@ Sådan føjer du en guide til en rute:
 1. Udvid oversigtspanelet **Tilknyttede guider**.
 1. Vælg **Tilføj** på værktøjslinjen **Tilknyttede guider**. Der føjes en ny linje til gitteret.
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele.
-    ![Føje en guide til en rute](media/instruction-guides-Route.png "Føje en guide til en rute")
+    ![Føje en guide til en rute.](media/instruction-guides-Route.png "Føje en guide til en rute")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Knytte en guide til en ruteversion
 
@@ -340,11 +342,11 @@ Sådan føjer du en guide til en ruteversion:
 1. Åbn den rute, du vil tildele en guide.
 1. Vælg den version, du vil tildele en guide, i oversigtspanelet **Versioner**.
 1. Vælg **Tilknyttede guider** på værktøjslinjen **Versioner**.
-    ![Åbn de guider, der er tilknyttet en valgt ruteversion](media/instruction-guides-RouteVersion.png "Åbne de guider, der er tilknyttet en valgt ruteversion")
+    ![Åbne de guider, der er tilknyttet en valgt ruteversion.](media/instruction-guides-RouteVersion.png "Åbne de guider, der er tilknyttet en valgt ruteversion")
 1. Siden **Tilknyttede guider** åbnes for din styklisteversion.
 1. Vælg **Tilføj** i handlingsruden for at føje en ny linje til gitteret.
 1. For den nye linje skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele.
-    ![Føje en guide til en ruteversion](media/instruction-guides-RouteVersionAddGuide.png "Føje en guide til en ruteversion")
+    ![Føje en guide til en ruteversion.](media/instruction-guides-RouteVersionAddGuide.png "Føje en guide til en ruteversion")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Knytte en guide til en ruteoperationsrelation
 
@@ -367,8 +369,8 @@ Sådan føjer du en guide til en ruteoperationsrelation:
 1. Siden **Rutedetaljer** åbnes for den valgte rute.
 1. Vælg den handling, du vil give vejledning til, i det øverste gitter.
 1. Vælg en specifik relation (eller den generiske **All**-relation) i nederste gitter.
-    ![Vælge en operation og derefter en relation](media/instruction-guides-RouteOperationRelation.png "Vælge en operation og derefter en relation")
-1. Åbn fanen **Tilknyttede guider** oven over det nederste gitter. ![Fanen Tilknyttede guider](media/instruction-guides-RouteOperationRelation-AddGuide.png "Fanen Tilknyttede guider")
+    ![Vælge en operation og derefter en relation.](media/instruction-guides-RouteOperationRelation.png "Vælge en operation og derefter en relation")
+1. Åbn fanen **Tilknyttede guider** oven over det nederste gitter. ![Fanen Tilknyttede guider.](media/instruction-guides-RouteOperationRelation-AddGuide.png "Fanen Tilknyttede guider")
 1. Vælg **Tilføj** på værktøjslinjen øverst i det nederste gitter for at føje en ny linje til gitteret.
 1. For den nye række skal du bruge rullelisten i kolonnen **Navn** til at vælge den guide, du vil tildele. I resten af rækken skal du markere afkrydsningsfeltet for hver kontekst, hvor den valgte guide skal være tilgængelig.
 
@@ -379,11 +381,11 @@ Sådan føjer du en guide til en ruteoperationsrelation:
 
 Når en arbejder åbner en jobliste i produktionens udførelsesgrænseflade finder Supply Chain Management de relevante guider for de viste job. Du kan bruge knappen **Guider** til at få vist de relevante guider.
 
-![Knappen Guider i produktionens udførelsesgrænseflade](media/instruction-guides-Shopfloor1.png "Knappen Guider i produktionens udførelsesgrænseflade")
+![Knappen Guider i produktionens udførelsesgrænseflade.](media/instruction-guides-Shopfloor1.png "Knappen Guider i produktionens udførelsesgrænseflade")
 
 Tag derefter en HoloLens på, og få adgang til den tilhørende guide ved at studere QR-koden og aktivere den respektive guide.
 
-![QR-kode for adgang til guider ved hjælp af en HoloLens](media/instruction-guides-Shopfloor2.png "QR-kode for adgang til guider ved hjælp af en HoloLens")
+![QR-kode for adgang til guider ved hjælp af en HoloLens.](media/instruction-guides-Shopfloor2.png "QR-kode for adgang til guider ved hjælp af en HoloLens")
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>Fortolkning af logikken for valg af guider
 
@@ -406,7 +408,7 @@ Når Supply Chain Management genererer jobbene til produktionen, vil det indsaml
 - Hvis du knytter en ruteversion til en produktionsordre, vises alle de guider, der er tilknyttet denne version, samt de guider, der er knyttet til den overordnede rute af denne version, i jobbet.
 - Hvis du definerer flere ruteoperationsrelationer, der omfatter *Alle*-relationen, og tildeler dem guider, vises kun guiderne fra den mest specifikke relation for jobbet.  
 
-![Diagram til fortolkning af relevante guider](media/instruction-guides-Resolve.png "Diagram til fortolkning af relevante guider")
+![Diagram til fortolkning af relevante guider.](media/instruction-guides-Resolve.png "Diagram til fortolkning af relevante guider")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

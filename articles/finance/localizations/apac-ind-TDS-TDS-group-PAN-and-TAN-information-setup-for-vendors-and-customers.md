@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023119"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358260"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Konfiguration af kildeskattegruppe, permanent kontonummer og skattekontonummer for kreditorer og kunder
 
@@ -31,7 +31,7 @@ Dette emne beskriver, hvordan du angiver oplysninger om kildeskattegruppen (TDS 
 
 1. Gå til **Kreditor \> Kreditorer \> Alle kreditorer** eller **Debitor \> Kunder \> Alle kunder**.
 
-    [![Siden Alle kreditorer](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![Siden Alle kreditorer.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. Vælg **Ny** i handlingsruden for at oprette en kreditor eller debitor, og angiv de krævede oplysninger. Du kan også vælge en eksisterende kreditor eller debitor.
 3. I sektionen **A-skat** i oversigtspanelet **Faktura og levering** skal du angive indstillingen **Beregn A-skat** til **Ja** for at beregne A-skat, kildeskat (TDS - Tax Deducted at Source) eller skat, der opkræves ved kilden (TCS – Tax Collected at Source) for kreditoren eller debitoren.
@@ -60,7 +60,7 @@ Dette emne beskriver, hvordan du angiver oplysninger om kildeskattegruppen (TDS 
     - Lokal myndighed
     - Andre
 
-    [![Oversigtspanelet Skatteoplysninger](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Oversigtspanelet Skatteoplysninger.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. I handlingsruden i gruppen **Registrering** under fanen **Kreditor** skal du vælge **Registrerings-id'er** for at åbne siden **Admistrer adresser**.
 10. Vælg **Tilføj** eller **Rediger** på siden **Administrer adresser** i oversigtspanelet **Skatteoplysninger** for at åbne siden **Administrer skatteoplysninger**, hvor du kan opbevare skatteregistreringen.

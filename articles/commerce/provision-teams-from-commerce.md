@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 39dabeb8bacc4ebc3376f53f15c7fb292c8d301c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022440"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352102"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Klargøre Microsoft Teams fra Dynamics 365 Commerce
 
@@ -49,7 +49,7 @@ Du kan klargøre Teams i Commerce-hovedkontoret ved at følge disse trin.
 > [!TIP]
 > Hvis ingen af dine lokale ledere, butikschefer og butiksmedarbejdere er blevet tilknyttet en Teams-licens, kan du få vist følgende fejlmeddelelse: "Det lykkedes ikke at hente brugbare SKU-kategorier for brugeren". Hvis du vil løse problemet, skal du vælge **Synkroniser teams og medlemmer** i handlingsruden.
 
-<!-- ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
+<!-- ![Dynamics 365 Commerce - Teams integration configuration.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
 
 ## <a name="validate-teams-provisioning-in-the-teams-admin-center"></a>Validere klargøring af Teams i Teams Administration
 
@@ -63,7 +63,7 @@ Hvis du vil validere Microsoft Teams-klargøring i Microsoft Teams Administratio
 
 I følgende illustration vises et eksempel på siden **Administrer teams** i Teams Administration.
 
-![Eksempel på siden Administrer teams i Teams Administration](media/Teams-FLW-Admin-Teams.png)
+![Eksempel på siden Administrer teams i Teams Administration.](media/Teams-FLW-Admin-Teams.png)
 
 ## <a name="upload-a-commerce-organizational-hierarchy-to-teams"></a>Uploade et Commerce-organisationshierarki til Teams
     
@@ -86,7 +86,7 @@ Du kan kontrollere, at organisationshierarkiet er blevet uploadet til Microsoft 
 1. Opret en ny liste med en dummy-opgave under fanen **Publicerede lister**.
 1. Vælg **Publicer**. Organisationshierarkiet skal vises i dialogboksen **Vælg, hvem der skal publiceres til**, som vist i eksemplet på følgende illustration.
 
-![Eksempel på et organisationshierarki i dialogboksen Vælg, hvem der skal publiceres til](media/Microsoft-teams-verify-org-hierarchy.png)
+![Eksempel på et organisationshierarki i dialogboksen Vælg, hvem der skal publiceres til.](media/Microsoft-teams-verify-org-hierarchy.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

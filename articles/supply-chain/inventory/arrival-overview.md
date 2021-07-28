@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 274363
+ms.custom:
+- "274363"
+- intro-internal
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 734fbdd6f62c192580029a24844fff78fda8b919
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fdd2995da04aa4752868a84499c81c2c01d80c16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809584"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360442"
 ---
 # <a name="arrival-overview"></a>Modtagelsesoversigt
 
@@ -34,7 +36,7 @@ Siden **Modtagelsesoversigt** indeholder en oversigt over alle forventede indgå
 ## <a name="business-scenario"></a>Forretningsscenario
 Overvej følgende scenario i de indgående processer.
 
-[![Forretningsscenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
+[![Forretningsscenario.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Claus, en medarbejder i modtagelsen, vil gerne vide, hvad der skal modtages på den aktuelle dag. På siden **Modtagelsesoversigt** kan Claus få et overblik over aktuelle opgaver og et overslag over antal, omfang, vægt, forskellige ordretyper og osv. Senere ankommer en levering i et af modtagelsesområderne, og Claus modtager en liste over leveringen. Claus kan udføre følgende opgaver på siden **Modtagelsesoversigt**:
 
@@ -66,7 +68,7 @@ Hvis du automatisk vil oprette modtagelseskladder fra siden **Modtagelsesoversig
 
 -   Du skal angive et kladdenavn for at oprette en kladde.
 
-[![Angivelse af et kladdenavn](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+[![Angivelse af et kladdenavn.](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
 -   Hvis du angiver værdier i felterne **Lagersted** og **Placering**, anvendes disse værdier på kladdelinjerne. Hvis du ikke angiver værdier, bruges værdierne fra den dimension, der er angivet af lagertransaktionerne.
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-18
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eaf6264f060d33575740ad38e7a65158baba296b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f0806a5b36b04e77a5a6d10f3c2eb3d7ba680e75
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829612"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356410"
 ---
 # <a name="product-configuration-model-calculations"></a>Beregninger af produktkonfigurationsmodel
 
@@ -70,7 +70,7 @@ I dette eksempel bruges tekstattributten `textFixedList` som målattribut. Denne
 
 Følgende skærmbillede viser, hvordan indstillingerne for denne attribut kan se ud i systemet.
 
-![Indstillinger af attributtype, f.eks. 2](media/model-calculations-example2.png "Indstillinger af attributtype, f.eks. 2")
+![Indstillinger af attributtype, f.eks. 2.](media/model-calculations-example2.png "Indstillinger af attributtype, f.eks. 2")
 
 Attributten bruges i følgende betingede sætning:
 
@@ -92,7 +92,7 @@ I dette eksempel bruges målattributten `textFixedList` fra det forrige eksempel
 
 Følgende skærmbillede viser, hvordan indstillingerne for denne attribut kan se ud i systemet.
 
-![Indstillinger af attributtype, f.eks. 3](media/model-calculations-example3.png "Indstillinger af attributtype, f.eks. 3")
+![Indstillinger af attributtype, f.eks. 3.](media/model-calculations-example3.png "Indstillinger af attributtype, f.eks. 3")
 
 Værdien af `textFixedList`-attributten beregnes ved hjælp af følgende betingede sætning:
 

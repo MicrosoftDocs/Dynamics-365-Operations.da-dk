@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4a963bcfe5932f5642b43751ccd96c472fec0d9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: ba4f0eca471cf9734230bb2a23d53ff2e233ba2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054998"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361213"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Opret en app til tilbagevendende dataeksport
 
@@ -63,13 +63,13 @@ I slutningen af denne øvelse har du en logikapp, der har forbindelse til dit Hu
 
 Den fuldførte logikapp ligner den i følgende illustration.
 
-![Oversigt over logikapp](media/integration-logic-app-overview.png)
+![Oversigt over logikapp.](media/integration-logic-app-overview.png)
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Trin 1: Opret et dataeksportprojekt i Human Resources
 
 Opret i Human Resources et dataeksportprojekt, der eksporterer arbejdere. Navngiv projektet **Eksport af medarbejdere**, og sørg for, at indstillingen **Generér datapakke** er angivet til **Ja**. Føj en enkelt enhed (**Arbejder**) til projektet, og vælg det format, der skal eksporteres i. (Microsoft Excel-formatet bruges i dette selvstudium).
 
-![Dataprojektet Eksport af medarbejdere](media/integration-logic-app-export-workers-project.png)
+![Dataprojektet Eksport af medarbejdere.](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
 > Husk navnet på dataeksportprojektet. Du skal bruge det, når du opretter logikappen i næste trin.
@@ -80,12 +80,12 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
 
 1. Opret en logikapp i Azure-portalen.
 
-    ![Side til oprettelse af logikapp](media/integration-logic-app-creation-1.png)
+    ![Side til oprettelse af logikapp.](media/integration-logic-app-creation-1.png)
 
 2. Start med en tom logikapp i Logic Apps Designer.
 3. Tilføj en [udløser for gentagelsesplan](/azure/connectors/connectors-native-recurrence) for at køre logikappen hver 24. time (eller i henhold til en tidsplan efter eget valg).
 
-    ![Dialogboksen Gentagelse](media/integration-logic-app-recurrence-step.png)
+    ![Dialogboksen Gentagelse.](media/integration-logic-app-recurrence-step.png)
 
 4. Kald [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST-API for at planlægge eksport af din datapakke.
 
@@ -97,7 +97,7 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
         > [!NOTE]
         > Human Resources-tjenesten har endnu ikke en connector, der viser alle de API'er, der udgør REST API for DMF-pakken, f.eks. **ExportToPackage**. Du skal i stedet kalde API'erne ved at bruge rå HTTPS-anmodninger via HTTP med Azure AD-connector. Denne connector bruger Azure Active Directory (Azure AD) til godkendelse og autorisation til Human Resources.
 
-        ![HTTP med Azure AD-connector](media/integration-logic-app-http-aad-connector-step.png)
+        ![HTTP med Azure AD-connector.](media/integration-logic-app-http-aad-connector-step.png)
 
     2. Log på Human Resources-miljøet via HTTP med Azure AD-connector.
     3. Konfigurer en HTTP **POST**-anmodning for at kalde **ExportToPackage** DMF REST-API'en.
@@ -116,21 +116,21 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
             }
             ```
 
-        ![Aktivere en HTTP-anmodningshandling](media/integration-logic-app-export-to-package-step.png)
+        ![Aktivere en HTTP-anmodningshandling.](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > Det kan være en god ide at omdøbe hvert trin, så det er mere sigende end standardnavnet **Kald en HTTP-anmodning**. Du kan f.eks. omdøbe dette trin **ExportToPackage**.
 
 5. [Initialiser en variabel](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) for at gemme udførelsesstatus for anmodningen **ExportToPackage**.
 
-    ![Handlingen Initialiser variabel](media/integration-logic-app-initialize-variable-step.png)
+    ![Handlingen Initialiser variabel.](media/integration-logic-app-initialize-variable-step.png)
 
 6. Vent, indtil udførelsesstatus for dataeksport er **Fuldført**.
 
     1. Tilføj en [Indtil loop](/azure/logic-apps/logic-apps-control-flow-loops#until-loop), der gentages, indtil værdien af variablen **ExecutionStatus** er **Fuldført**.
     2. Tilføj en **Forsinkelse**-handling, der venter fem sekunder, før der sendes en forespørgsel om den aktuelle udførelsesstatus for eksporten.
 
-        ![Indtil løkke-container](media/integration-logic-app-until-loop-step.png)
+        ![Indtil løkke-container.](media/integration-logic-app-until-loop-step.png)
 
         > [!NOTE]
         > Angiv grænseantallet til **15** for at vente maksimalt 75 sekunder (15 gentagelser × 5 sekunder), til eksporten er fuldført. Hvis eksporten tager længere tid, skal du justere grænsen for antal efter behov.        
@@ -146,9 +146,9 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
             > [!NOTE]
             > Du skal muligvis angive værdien for **Indhold i anmodningen** i kodevisning eller i funktionseditoren i designeren.
 
-        ![Handlingen Aktiver en HTTP-anmodning 2](media/integration-logic-app-get-execution-status-step.png)
+        ![Handlingen Aktivér en HTTP-anmodning 2.](media/integration-logic-app-get-execution-status-step.png)
 
-        ![Handlingen Angiv variabel](media/integration-logic-app-set-variable-step.png)
+        ![Handlingen Angiv variabel.](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
         > Værdien for handlingen **Angiv variabel** (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) adskiller sig fra værdien for **Aktiver en HTTP-anmodning 2**-indholdsværdi, også selv om designeren viser værdierne på samme måde.
@@ -161,7 +161,7 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
         - **URL-adresse for anmodning:** https://\<hostname\>/navneområder/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Indhold i anmodningen:** {"executionId": body('GetExportedPackageURL')?['value']}
 
-        ![GetExportedPackageURL-handling](media/integration-logic-app-get-exported-package-step.png)
+        ![GetExportedPackageURL-handling.](media/integration-logic-app-get-exported-package-step.png)
 
 8. Hent den eksporterede pakke.
 
@@ -173,7 +173,7 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
             > [!NOTE]
             > Du skal muligvis angive værdien for **URI-adresse** i kodevisning eller i funktionseditoren i designeren.
 
-        ![HTTP GET-handling](media/integration-logic-app-download-file-step.png)
+        ![HTTP GET-handling.](media/integration-logic-app-download-file-step.png)
 
         > [!NOTE]
         > Denne anmodning kræver ingen yderligere godkendelse, fordi den URL-adresse, som **GetExportedPackageUrl**-API'en returnerer, inkluderer et token for signaturer til delt adgang, der giver adgang til at hente filen.
@@ -187,7 +187,7 @@ Hovedparten af opgaven omfatter oprettelse af logikappen.
         - **Filnavn:** worker\_package.zip
         - **Filindhold:** Indholdet fra det forrige trin (dynamisk indhold)
 
-        ![Oprette filhandling](media/integration-logic-app-create-file-step.png)
+        ![Oprette filhandling.](media/integration-logic-app-create-file-step.png)
 
 ### <a name="step-3-test-the-logic-app"></a>Trin 3: Test logikappen
 
@@ -197,9 +197,9 @@ Hvis der rapporteres om en fejl for et af trinnene, skal du vælge det trin, der
 
 I følgende illustration vises det, hvordan Logic Apps Designer ser ud, når alle trin i logikappen kører korrekt.
 
-![Gennemført kørsel af logikapp](media/integration-logic-app-successful-run.png)
+![Gennemført kørsel af logikapp.](media/integration-logic-app-successful-run.png)
 
-## <a name="summary"></a>Resume
+## <a name="summary"></a>Resumé
 
 I dette selvstudium lærte du, hvordan du kan bruge en logikapp til at eksportere data fra Human Resources og gemme de eksporterede i en OneDrive for Business-mappe. Du kan ændre trinene i dette selvstudium efter behov, så det passer til dine forretningsbehov.
 
