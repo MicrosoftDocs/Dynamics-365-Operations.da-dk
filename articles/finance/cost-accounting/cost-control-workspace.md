@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c5528545e0215b3a3f92b7bd5b492f82274d35a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6fd2a8548d4929a7a3b3b6d20adbc230c5edf6ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833036"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355221"
 ---
 # <a name="cost-control-workspace"></a>Arbejdsområde for omkostningsstyring 
 
@@ -116,7 +116,7 @@ Arbejdsområdet **Omkostningsstyring** er designet som en webrapport. Derfor kan
 
 Listen over rapporter, der er tilgængelige for brugere, som f.eks. ledere, styres af indstillingen **Udgivet** på siden **Konfigurationer af arbejdsområde for omkostningsstyring**.
 
-![En rapport, som brugere kan se i arbejdsområdet Omkostningsstyring](./media/report-cost-control.png)
+![En rapport, som brugere kan se i arbejdsområdet Omkostningsstyring.](./media/report-cost-control.png)
 
 En leder kan vælge den regnskabskalenderperiode, der skal vises. Sessionsdatoen bruges til at angive den aktuelle periode, der skal bruges som standard.
 
@@ -140,7 +140,7 @@ To diagrammer viser en oversigt over faktisk vs. budget og budgetafvigelse pr. p
 
 Brugerne kan klikke på **Omkostningsposter** for at dykke ned i postens oplysninger som nødvendigt.
 
-![Omkostningsposter](./media/cost-entries.png)
+![Omkostningsposter.](./media/cost-entries.png)
 
 Leje er f.eks. en udgift, som fordeles til bærere. En bruger, der ønsker at forstå den lejeomkostning, som bæreren skal dække, kan undersøge, hvordan lejen er blevet beregnet.
 
@@ -148,7 +148,7 @@ Hvis brugerne klikker på **Fordelingsgrundlag** på siden **Omkostningsposter**
 
 I følgende eksempel er fordelingsgrundlaget af typen **Fordelingsbasis for formel**, og formlen vises. De faktorer, der definerer formlen, vises. Desuden viser et gitter den beregning, der udføres pr. omkostningsobjekt.
 
-![Beregninger pr. omkostningsobjekt](./media/cost-entries-allocation-base.png)
+![Beregninger pr. omkostningsobjekt.](./media/cost-entries-allocation-base.png)
 
 Yderligere ressourcer 
 

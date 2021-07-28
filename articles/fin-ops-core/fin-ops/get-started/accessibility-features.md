@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5e9d1f33102ed08d9e5c486d4d1490d4b278a28e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744117"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360285"
 ---
 # <a name="accessibility-features"></a>Funktioner til øget tilgængelighed
 
@@ -52,13 +52,13 @@ Der er adgang til alle handlinger, der kan udføres på en side, fra et tastatur
 
 Du vil udføre handlingen **Log for e-mail-besked**, der vises i gruppen **E-mail-besked** under fanen **Salgsordre** i handlingsruden.
 
-![Loghandling for e-mailbesked i handlingsruden](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'Loghandling for e-mailbesked' i Handlingsruden")
+![Loghandling for e-mailbesked i handlingsruden.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'Loghandling for e-mailbesked' i Handlingsruden")
 
 Én mulighed er at bruge tastaturet. Tryk på Ctrl + F6 for at flytte fokus til handlingsruden, og tryk derefter på Tab flere gange for at flytte gennem alle faner og handlinger, indtil handlingen **Log for e-mail-besked** er i fokus.
 
 Men du kan også køre handlingen mere direkte. Fra et vilkårligt sted på siden skal du trykke på Ctrl + apostrof (') for at få vist søgefeltet for handlinger.
 
-![Søgefelt for handlinger](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søgefelt for handlinger")
+![Søgefelt for handlinger.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søgefelt for handlinger")
 
 Skriv ord, der beskriver handlingen, i søgefeltet. Handlingen gøres tilgængelig for dig, og du kan køre den direkte. For eksempel ved at skrive **e-mail**, **besk** (et delvist ord) eller **log** kan du "springe" til Log for e-mail-besked-funktionen.
 

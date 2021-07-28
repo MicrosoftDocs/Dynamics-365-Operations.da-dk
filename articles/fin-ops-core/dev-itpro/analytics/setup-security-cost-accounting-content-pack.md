@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 32093f4e47fe3d9ca691b70e15adfc3199e65beb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e51c6914aab7261862a7ce180376b67d01711e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754258"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359453"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurere sikkerhed for Power BI-indhold til analyse af omkostningsregnskab
 
@@ -42,11 +42,11 @@ Hvis du vil overføre sikkerhed på adgangsniveau til Power BI, skal ejeren af P
 3. Find datasættet til **omkostningsregnskabsanalysen** af Power BI-indhold.
 4. Åbn sikkerhedssiden.
 
-    ![Åbning af sikkerhedssiden](./media/CA-picture-1.png)
+    ![Åbning af sikkerhedssiden.](./media/CA-picture-1.png)
 
 5. Rollen **Controller til omkostningsobjekt** er allerede oprettet. Tilføj andre medlemmer, der er en del af organisationshierarkiet for adgangsniveau for omkostningsregnskabet.
 
-    ![Tilføjelse af medlemmer](./media/CA-picture-2.png)
+    ![Tilføjelse af medlemmer.](./media/CA-picture-2.png)
 
 Brugere, der føjes til rollen **Controller til omkostningsobjekt** ser kun de data, de har tilladelse til at se ifølge definitionen i organisationshierarkiet for adgangsniveau for omkostningsregnskabet.
 

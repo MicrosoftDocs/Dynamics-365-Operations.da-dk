@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fe387631a1716c6612f9d475faff56d0aef3fdc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791673"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354607"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkroniser produktvurderinger i Dynamics 365 Commerce
 
@@ -59,7 +59,7 @@ Udfør følgende trin for at kontrollere, om **RetailProductRating**-underjobbet
 
 I følgende illustration vises et eksempel på siden detaljer om underjob i Commerce.
 
-![Detaljer om RetailProductRating-underjobbet](media/rnr-hq-ratings-sub-job.png)
+![Detaljer om RetailProductRating-underjobbet.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Hvis du ikke kan finde **RetailProductRating**-underjobbet, har du måske allerede kørt jobbet **Synkroniser produktvurderinger** og **1040 CDX**-jobbet, før du initialiserede Commerce-planlæggeren. I dette tilfælde skal du følge disse trin for at køre jobbet **Fuld datasynkronisering**.
@@ -83,7 +83,7 @@ Udfør følgende trin for at importere produktvurderinger til Commerce fra vurde
 
 I følgende illustration vises et eksempel på konfiguration af batchjob i Commerce.
 
-![Konfiguration af batchjobbet Synkroniser produktvurderinger](media/rnr-hq-batchjob-recurrence.png)
+![Konfiguration af batchjobbet Synkroniser produktvurderinger.](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Kontrollere, at batchjobbet til synkronisering af produktvurderinger er fuldført
 
@@ -95,7 +95,7 @@ Benyt følgende fremgangsmåde for at kontrollere, at batchjobbet **Synkroniser 
 
 I følgende illustration vises et eksempel på oplysningerne om batchjobbet i Commerce, når batchjobbet er planlagt til at køre med to timers intervaller.
 
-![Detaljer om batchjobbet Synkroniser produktvurdering](media/rnr-hq-batchjob-status-checking.png)
+![Detaljer om batchjobbet Synkroniser produktvurdering.](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Gøre produktvurderinger tilgængelige ved POS
 
@@ -113,15 +113,15 @@ Hvis du vil aktivere produktvurderinger ved POS, skal du følge disse trin.
 
 I følgende illustration vises et eksempel på konfigurationen af Commerce-parametrene for at aktivere produktvurderinger ved POS.
 
-![Konfiguration af Commerce-parametre for produktvurderinger ved POS](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfiguration af Commerce-parametre for produktvurderinger ved POS.](media/rnr-hq-enable-ratings-in-pos.png)
 
 I følgende illustration vises et eksempel på produktvurderinger ved POS.
 
-![Produktvurderinger ved POS](media/rnr-pos-catalog-ratings.png)
+![Produktvurderinger ved POS.](media/rnr-pos-catalog-ratings.png)
 
 I følgende illustration vises et eksempel på produktvurderinger i callcenter-kanaler.
 
-![Produktvurderinger i en callcenter-kanal](media/rnr-call-center-ratings.png)
+![Produktvurderinger i en callcenter-kanal.](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

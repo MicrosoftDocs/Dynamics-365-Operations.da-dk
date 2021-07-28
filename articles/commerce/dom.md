@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f50bc2828df19062a6bdced6faaa7b4d66c38bed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 52d8b1055517bc544eea6a8e405a8b6d5c0eee0a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792769"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356848"
 ---
 # <a name="distributed-order-management-dom"></a>Fordelt ordrestyring (DOM)
 
@@ -34,7 +34,7 @@ DOM optimerer ordreopfyldning på tværs af komplekse netværk af systemer og pr
 
 Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
 
-![Salgsordrelivscyklus i DOM](./media/flow.png "Salgsordrelivscyklus i DOM (fordelt ordrestyring)")
+![Salgsordrelivscyklus i DOM-sammenhæng.](./media/flow.png "Salgsordrelivscyklus i DOM (fordelt ordrestyring)")
 
 ## <a name="set-up-dom"></a>Konfigurer DOM
 
@@ -200,7 +200,7 @@ På behandlingstidspunktet medtager DOM ordren og ordrelinjerne som beskrevet he
 
 Efter anvendelse af regler, lagerbegrænsninger og optimering vælger DOM (fordelt ordrestyring) den placering, der er tættest på kundens leveringsadresse.
 
-![Salgsordrekriterier](./media/ordercriteria.png "Salgsordrekriterier")
+![Salgsordrekriterier.](./media/ordercriteria.png "Salgsordrekriterier")
 
 ## <a name="results-of-dom-runs"></a>Resultater af DOM-kørsler
 

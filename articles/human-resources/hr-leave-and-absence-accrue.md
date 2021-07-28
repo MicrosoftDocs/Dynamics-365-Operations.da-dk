@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ddd4c55f6ebfbe91fb949a92cb379f51d826c465
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: f15deae8a2b457548606616dd540f71a505f727a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303458"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357089"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodiser orlovs- og fraværsplaner
 
@@ -123,7 +123,7 @@ Hvis du vil have vist posteringsoplysningerne for et bestemt periodiseringsbelø
 - Oplysninger om periodiseringsperioden og satser
 - Eventuelle ændringer af konfigurationen af orlovsplan
 
-![Få vist revision af transaktion til orlovsperiodisering](media/hr-leave-and-absence-accrue-audit.png)
+![Få vist revision af transaktion til orlovsperiodisering.](media/hr-leave-and-absence-accrue-audit.png)
 
 ## <a name="see-also"></a>Se også
 

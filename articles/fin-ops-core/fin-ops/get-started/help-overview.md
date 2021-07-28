@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 16381
+ms.custom:
+- "16381"
+- intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: c6f4c9ad36eb2f1abfc9225f1e62e635cebacd47
+ms.sourcegitcommit: 42a93a96565c56c9c64642ed6e6e302b3fbfcd85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923440"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "6373361"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -35,7 +37,7 @@ Brugere af følgende apps kan få adgang til kontekstafhængig hjælp og andet i
 
 I alle disse apps kan du få adgang til produktspecifik hjælp fra ruden **Hjælp**.
 
-![Hjælp-rude](./media/help-pane-ops-help.png)
+![Hjælp-rude.](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjælp til docs.microsoft.com
 
@@ -46,12 +48,23 @@ Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) 
 
 Du kan finde indhold på docs.microsoft.com ved hjælp af en søgemaskine. For at få de bedste resultater anbefaler vi, at du bruger en webstedssøgning som f.eks. **site:docs.microsoft.com dynamics 365 "søgeord"**.
 
-## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få besked om ændringer via et RSS-feed
+<!--## Get notified about changes through an RSS feed
 
-Hvis du vil abonnere på et RSS-feed (Really Simple Syndication) af alle opdateringer, der er til indholdet på docs.microsoft.com, skal du bruge følgende link:
+To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
 
-[RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
+[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
+> [!NOTE]
+> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+
+Alternatively, you can subscribe to an RSS feed by app:
+
+- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
+- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
+- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
+- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
 ### <a name="leave-us-feedback"></a>Give os feedback
 
 Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til os i bunden af siden.
@@ -60,7 +73,7 @@ Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til
 
 2. Begynd at skrive dine kommentarer, og vælg derefter **Send feedback**.
 
-    ![Send kommentar](./media/feedback.png)
+    ![Send kommentar.](./media/feedback.png)
 
 > [!NOTE]
 > Hvis du vil sende feedback om dokumentation, skal du logge på ved hjælp af en GitHub-konto. Få flere oplysninger i [Indstille og administrere din GitHub-profil](https://help.github.com/github/setting-up-and-managing-your-github-profile).
@@ -84,11 +97,11 @@ En opgaveguide er en kontrolleret, automatiseret, interaktiv oplevelse, der før
 
 Microsoft udgav opgaveguidebiblioteker til til produktversioner via december 2017-udgaven af Dynamics 365 for Finance and Operations. Afsnittet [Adgang til opgaveguider fra ruden Hjælp](#accessing-task-guides-from-the-help-pane) i dette emne forklarer, hvordan du finder de rigtige opgaveguider til dit produkt.
 
-![Opgaveguidens læsevisning](./media/task-guide-ops.png)
+![Opgaveguidens læsevisning.](./media/task-guide-ops.png)
 
 For at starte den automatiserede, interaktive oplevelse skal du vælge på **Start opgaveguiden** nederst i ruden **Hjælp**. En sort markør viser, hvor du skal gå hen først. Følg instruktionerne, der vises i brugergrænsefladen (UI), og indtast data som anvist.
 
-![Opgaveguidens trinvise instruktion](./media/task-guide-step-1-ops.png)
+![Opgaveguidens trinvise instruktion.](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > Vigtigt: De data, du indtaster, når du afspiller en opgaveguide, er faktiske. Hvis du er i et produktionsmiljø, indsættes dataene i det firma, du aktuelt bruger.
@@ -101,7 +114,7 @@ Nogle felter indeholder feltbeskrivelser, der kan hjælpe brugerne med at få fj
 
 Hvis du vil have adgang til hjælp-indhold, skal du vælge knappen **Hjælp** (**?**) og derefter vælge **Hjælp**. Du kan også trykke på **Ctrl+Skift+?**. I begge tilfælde åbnes ruden **Hjælp**. I ruden **Hjælp** kan du få adgang til konceptuelle emner eller opgaveguider, der er relevante for det område af produktet, som du aktuelt arbejder i.
 
-![Hjælp-rude](./media/help-pane-ops-help.png)
+![Hjælp-rude.](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Adgang til emner i Hjælp fra ruden Hjælp
 
@@ -118,13 +131,13 @@ Før du kan få adgang til opgaveguider fra ruden **Hjælp**, skal en systemadmi
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -132,7 +145,7 @@ On the **System parameters** page, follow these steps:
 
 Når en systemadministrator har fuldført disse trin, kan du åbne ruden **Hjælp** og vælge fanen **Opgaveguider**. Nu kan du se opgaveguiderne, der gælder for den aktuelle side. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen. Når du vælger en opgaveguide i ruden **Hjælp**, viser ruden **Hjælp** de trinvise instruktioner, og du kan afspille opgaveguiden.
 
-![Opgaveguidens læsevisning](./media/task-guide-ops.png)
+![Opgaveguidens læsevisning.](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Hvor er de oversatte opgaveguider til Microsoft-biblioteker?
 

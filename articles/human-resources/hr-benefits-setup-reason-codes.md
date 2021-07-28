@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6fc641233a1bd217de5b9eb6e06560b989f91c7b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 176ce59547456a14b494caa4dc3c2d8251920fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056342"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360538"
 ---
 # <a name="set-up-reason-codes"></a>Definer årsagskoder
 
@@ -56,15 +56,15 @@ Du får vist et banner på siden **Links** i arbejdsområdet til **Frynsegodeadm
 
 1. Vælg **Årsagskoder** for oplysninger om overførselsstatus.
 
-   [![Årsagskoder](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+   [![Årsagskoder.](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
 
 2. Vælg en årsagskode, der ikke kunne overføres.
 
-   [![Status for overførsel af årsagskode](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+   [![Status for overførsel af årsagskode.](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
 
 3. Vælg **Overfør årsagskode**.
 
-   [![Overfør årsagskode](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+   [![Overfør årsagskode.](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
 
 4. I ruden **Overflytning af frynsegodeadministration** har du to muligheder for tilknytning til en årsagskode for personalestyring:
 
@@ -73,10 +73,10 @@ Du får vist et banner på siden **Links** i arbejdsområdet til **Frynsegodeadm
      > Du kan kun bruge en eksisterende årsagskode i Personalestyring, hvis en anden årsagskode for goder ikke allerede er overflyttet til den.
    - Hvis du vil oprette en ny årsagskode i Personalestyring, skal du angive en ny i **Ny årsagskode** og derefter angive en beskrivelse i **Ny beskrivelse**.
 
-   [![Tilknytte en årsagskode for personalestyring](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+   [![Tilknytte en årsagskode for personalestyring.](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
 
 Når årsagskoder er overført til Personalestyring, angives indstillingen for brug af dem i Styring af goder automatisk til **Ja**.
 
-[![Bruge årsagskoder i administration af frynsegoder](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+[![Bruge årsagskoder i administration af frynsegoder.](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: b285cefc35654695ee631cc73baa0ccc2c1b5ac9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102681"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359879"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruge debitorportalen
 
@@ -27,7 +27,7 @@ I dette emne beskrives de forskellige sider, der er tilgængelige i debitorporta
 
 Debitorportalen indeholder nogle websider og handlinger lige fra starten. Følgende webstedkort giver et overblik over disse websider og handlinger samt de roller, der kan udføre handlingerne.
 
-![Oversigt over kundeportalwebsted](media/customer-portal-site-map.png "Oversigt over kundeportalwebsted")
+![Oversigt over kundeportalwebsted.](media/customer-portal-site-map.png "Oversigt over kundeportalwebsted")
 
 ## <a name="typical-customizations"></a>Typiske tilpasninger
 
@@ -61,12 +61,12 @@ Her er standardtrinnene for afsendelse af en ordre fra debitorportalen.
     - **Rekvisitionsnummer** – Angiv ordrens rekvisitionsnummer. Dette felt er valgfrit.
     - **Levér til land/område** – Angiv det land eller det område, som varerne skal leveres til. Dette felt udfyldes automatisk for brugere, der ikke er administratorer.
 
-    ![Siden Ordreoplysninger](media/customer-portal-order-information.png "Siden Ordreoplysninger")
+    ![Siden Ordreoplysninger.](media/customer-portal-order-information.png "Siden Ordreoplysninger")
 
 1. Vælg **Næste**.
 1. På siden **Varer** skal du vælge **Tilføj vare**.
 
-    ![Siden varer](media/customer-portal-items.png "Siden varer")
+    ![Siden varer.](media/customer-portal-items.png "Siden varer")
 
 1. I dialogboksen **Vareoplysninger** indstilles følgende felter:
 
@@ -75,14 +75,14 @@ Her er standardtrinnene for afsendelse af en ordre fra debitorportalen.
     - **Enhed** – Angiv måleenheden (f.eks **ea**, **kg** eller **kasse**).
     - **Forkalkuleret nettobeløb** – Værdien beregnes som den forkalkulerede pris for varen × antallet for den valgte enhed.
 
-    ![Dialogboksen Vareoplysninger](media/customer-portal-item-information.png "Dialogboksen Vareoplysninger")
+    ![Dialogboksen Vareoplysninger.](media/customer-portal-item-information.png "Dialogboksen Vareoplysninger")
 
 1. Vælg **Send** for at føje varen til ordren.
 1. Gentag trin 4 til 6, indtil du har tilføjet alle de varer, du vil bestille.
 1. Vælg **Næste** på siden **Varer**, når du er færdig med at tilføje varer.
 1. Siden **Ordreoplysninger** viser en oversigt over ordren. Gennemse ordreindholdet og leveringsoplysningerne. Hvis alt ser korrekt ud, skal du vælge **Send** for at sende ordren.
 
-    ![Siden Fuldførte ordreoplysninger](media/customer-portal-order-submit.png "Siden Fuldførte ordreoplysninger")
+    ![Siden Fuldførte ordreoplysninger.](media/customer-portal-order-submit.png "Siden Fuldførte ordreoplysninger")
 
 ### <a name="standard-data-setup"></a>Opsætning af standarddata
 
@@ -147,19 +147,19 @@ Alle kontrolelementer i debitorportalen er indbyggede kontrolelementer i Power A
 
 Det eneste brugerdefinerede kontrolelement, der er medtaget i debitorportalskabelonen, bruges til at oprette felterne på startsiden.
 
-![Felter på startsiden](media/customer-portal-home-page-tiles.png "Felter på startsiden")
+![Felter på startsiden.](media/customer-portal-home-page-tiles.png "Felter på startsiden")
 
 Følg disse trin for at ændre felterne.
 
 1. Åbn [Portal Management-appen](/powerapps/maker/portals/configure/configure-portal).
 1. Vælg **Sideskabeloner** i navigationsruden til venstre.
 
-    ![Navigationsruden Portalstyring](media/customer-portal-nav.png "Navigationsruden Portalstyring")
+    ![Navigationsruden Portalstyring.](media/customer-portal-nav.png "Navigationsruden Portalstyring")
 
 1. Vælg den sideskabelon, der hedder **Start**.
 1. I feltet **Webskabelon** skal du vælge linket **Start** for at åbne kildekoden for denne side.
 
-    ![Feltet Webskabelon](media/customer-portal-web-template.png "Feltet Webskabelon")
+    ![Feltet Webskabelon.](media/customer-portal-web-template.png "Feltet Webskabelon")
 
 1. Du kan nu se hele kildekoden for startsiden og ændre den efter behov.
 

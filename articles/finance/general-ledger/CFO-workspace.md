@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e44e0ff5c36190d0f66afb6a59389fee826d8214
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823830"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360706"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør
 
@@ -45,14 +45,14 @@ I dette emne forklares, hvordan du kan føje økonomiske dimensioner til arbejds
 11. Vælg værdien **Single** (Enkelt) for **Cross filter direction** (Tværgående filterretning).
 12. Vælg både **Aktivér denne relation** og **Antag referentiel integritet**, vælg **OK**, og vælg derefter **Luk**.
 
-    [![Oprette en relation](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Oprette en relation.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. I listen **Fields** (Felter) skal du nu kunne se tabellen og de tilgængelige økonomiske dimensioner. Træk de økonomiske dimensioner, du ønsker, til rapportniveaufilterne.
 14. Gem ændringerne.
 15. I applikationsobjekttræet (AOT) skal du højreklikke på projektet og derefter vælge **Synchronize** (Synkroniser).
 16. Opbyg projektet, og åbn derefter programmet for at se resultaterne.
 
-    [![Fuldført arbejdsområde](./media/workspace.png)](./media/workspace.png)
+    [![Fuldført arbejdsområde.](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

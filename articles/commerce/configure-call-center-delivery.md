@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796142"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352608"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere callcenterets leveringsmåder og -gebyrer
 
@@ -65,11 +65,11 @@ I sektionen **Linjer** kan du definere en eller flere gebyrer efter valuta, som 
 
 Firmaer konfigurerer ofte lagdelte gebyrer. I så fald er det beløb, som kunderne betaler for levering, baseret på ordreværdien. Du kan konfigurere lagdelte gebyrer ved at angive værdier i felterne **Fra beløb** og **Til beløb** ud over at definere selve gebyret i feltet **Gebyrværdi**. Ved ordrer, der har en værdi på mindre end $50, trækker en forhandler f.eks. $5,95 ved levering med vognmand. Ved ordrer med en værdi, der er lig med eller større end $50, men mindre end $100, opkræver detailhandleren $7,95 i gebyr. Ved ordrer med en værdi, der er lig med eller større end $100, leverer detailhandleren uden at opkræve gebyr. I følgende illustration vises konfigurationen af disse gebyrer.
 
-![Eksempel på faste lagdelte gebyrer](media/fixedtieredcharges.png)
+![Eksempel på faste lagdelte gebyrer.](media/fixedtieredcharges.png)
 
 Du kan bruge en blanding af kategorier for gebyrer, afhængigt af virksomhedens behov. Ved alle ordrer, der har en værdi på f.eks. mindre end $100, trækkes et fast gebyr på $9,95 for levering. Ved ordrer, der har en værdi, der er lig med eller større end $100, beregnes leveringsgebyrer på 5 procent af ordreværdien. I følgende illustration vises konfigurationen af disse gebyrer.
 
-![Eksempel på blandede lagdelte gebyrer](media/mixedtieredcharges.png)
+![Eksempel på blandede lagdelte gebyrer.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Anvende leveringsmåder under ordreindtastning i et callcenter
 

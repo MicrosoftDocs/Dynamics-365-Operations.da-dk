@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936724"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349620"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer i POS
 
@@ -44,7 +46,7 @@ Før du forsøger at bruge kundeordrefunktionaliteten i POS, skal du sørge for 
 
 Hvis du vil bruge kundeordrer, skal du konfigurere leveringsmåder, som butikskanalen kan bruge. Du skal definere mindst én leveringsmåde, der kan bruges, når der sendes ordrelinjer til en kunde fra en butik. Du skal også definere mindst én levering gennem afhentning, der kan bruges, når der afhentes ordrelinjer fra butikken. Leveringsmåder defineres på siden **Leveringsmåder** i Commerce Headquarters. Du kan finde flere oplysninger om, hvordan du kan konfigurere leveringsmåden for Commerce-kanaler, under [Definere leveringsmåder](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Siden Leveringsmåder](media/customer-order-modes-of-delivery.png)
+![Siden Leveringsmåder.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Konfigurere opfyldelsesgrupper
@@ -53,7 +55,7 @@ Nogle butikker eller lagersteder kan muligvis ikke opfylde kundeordrer. Ved at k
 
 I Commerce version 10.0.12 og nyere kan organisationer definere, om lagerstedet eller de kombinationer af lagersted og butik, der er defineret i opfyldelsesgrupper, kan bruges til forsendelse, til afhentning eller til både forsendelse og afhentning. Dette giver ekstra fleksibilitet til at virksomheden kan bestemme, hvilke lagersteder der kan vælges, når der oprettes en kundeordre for varer, der skal afsendes, vs. hvilke butikker der kan vælges, når der oprettes en kundeordre for varer, der skal afhentes. Hvis du vil bruge disse konfigurationsindstillinger, skal du aktivere funktionen **Mulighed for at angive steder som "Forsendelse" eller "Afhentning" er aktiveret i opfyldelsesgruppe**. Hvis et lagersted, der er knyttet til en opfyldelsesgruppe, ikke er en butik, kan det kun konfigureres som et afsendelsessted. Det kan ikke bruges, når der er konfigureret ordrer til afhentning i POS.
 
-![Sidan Opfyldelsesgrupper](media/customer-order-fulfillment-group.png)
+![Sidan Opfyldelsesgrupper.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Konfigurere kanalindstillinger
 
@@ -65,7 +67,7 @@ Når du arbejder med kundeordrer i POS, skal du overveje nogle af indstillingern
 - **Brug destinationsbaseret moms** – Denne indstilling angiver, om forsendelsesadressen bruges til at bestemme, hvilken momsgruppe der anvendes på de ordrelinjer, der leveres til kundens adresse.
 - **Brug kundebaseret moms** – Denne indstilling angiver, om den momsgruppe, der er defineret for kundens leveringsadresse, skal bruges til af lægge moms til kundeordrer, der oprettes i POS ved forsendelse til kundens hjem.
 
-![Konfiguration af butikskanal på siden Butikker](media/customer-order-all-stores.png)
+![Konfiguration af butikskanal på siden Butikker.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Konfigurere kundeordreparametre
 
@@ -80,7 +82,7 @@ Før du forsøger at oprette kundeordrer i POS, skal du konfigurere de relevante
 - **Forsendelsesgebyrkode** – Hvis indstillingen **Brug avancerede automatiske gebyr** er angivet til **Ja**, har denne parameter ingen virkning. Hvis denne indstilling er angivet til **Nej**, vil brugerne blive bedt om manuelt at angive et forsendelsesgebyr, når de opretter kundeordrer i POS. Brug denne parameter til at tilknytte en debitorgebyrkode, der skal anvendes på ordrer, når brugerne angiver et forsendelsesgebyr. Gebyrkoden definerer den økonomiske bogføringslogik for forsendelsesgebyret.
 - **Brug avancerede automatiske gebyrer** – Angiv denne indstilling til **Ja** for at bruge systemberegnede automatiske gebyrer, når der oprettes kundeordrer i POS. Disse automatiske gebyrer kan bruges til at beregne forsendelsesgebyrer eller andre ordre- eller varespecifikke gebyrer. Du kan få flere oplysninger om, hvordan du konfigurerer og bruger avancerede automatiske gebyrer, i [Avancerede automatiske gebyrer for omni-kanal](./omni-auto-charges.md).
 
-![Fanen Kundeordrer på siden Commerce-parametre](media/customer-order-parameters.png)
+![Fanen Kundeordrer på siden Commerce-parametre.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Opdatere transaktionsskærmlayout i POS
 
@@ -95,7 +97,7 @@ Sørg for, at POS-[skærmlayoutet](./pos-screen-layouts.md) er konfigureret til 
 - **Skift leveringsmåde** – Denne handling kan bruges til hurtigt at ændre leveringsmåden for linjer, der allerede er konfigureret til forsendelse, uden at kræve, at brugerne går gennem flowet "Send alle produkter" eller "Send valgte produkter" igen.
 - **Tilsidesæt depositum** – Denne operation kan bruges til at ændre det depositumbeløb, som kunden vil betale for den valgte kundeordre.
 
-![Operationer på POS-transaktionsskærmen](media/customer-order-screen-layout.png)
+![Operationer på POS-transaktionsskærmen.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Arbejde med kundeordrer i POS
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20f320e84d5faaf964585f30581d24996131031c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e895c2d337139aa9a2b1f21b60675f956da9c7f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747145"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348547"
 ---
 # <a name="workflow-elements"></a>Arbejdsgangselementer
 
@@ -60,7 +60,7 @@ En *godkendelsesproces* er en proces, der består af separate trin. På hvert en
 
 En arbejdsgang kan oprettes for at behandle enten dokumenter eller linjeelementerne i et dokument. Du har f.eks. oprettet en godkendelsesarbejdsgang for timesedler. (Vi vil henvise til denne arbejdsproces som *dokumentarbejdsgangen*). Du kan tilføje en *arbejdsgang for linjeelement* til denne dokumentarbejdsgang. Når elementet i linjeelementet køres, sendes hvert linjeelement i dokumentet til behandling. Det kan være, at du vil have alle linjeelementer behandlet af samme arbejdsgang for linjeelement, eller at du vil måske have hvert enkelt linjeelement behandlet af en særskilt arbejdsgang for linjeelement. Antag, at en medarbejder har sendt en timeseddel, der ligner nedenstående figur.
 
-![Arbejdsgang med linjeelementer](./media/workflow_lineitemworkflow.gif)
+![Arbejdsgang med linjeelementer.](./media/workflow_lineitemworkflow.gif)
 
 I dette scenario kan du muligvis oprette følgende arbejdsgange for linjeelementer:
 

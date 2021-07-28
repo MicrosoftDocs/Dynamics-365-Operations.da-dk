@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890825"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348480"
 ---
 # <a name="set-up-electronic-invoicing"></a>Konfigurere elektronisk fakturering
 
@@ -37,7 +37,7 @@ Mulighederne for konfiguration er afhængig af det elektroniske rapporteringsfor
 
 I følgende illustration vises hovedkomponenterne af en funktion for elektronisk fakturering.
 
-![Oversigt over funktionen til elektronisk fakturering](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Oversigt over funktionen til elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 På grund af variationer i fakturaformater og handlingsflow kan funktionsopsætningen variere afhængigt af land eller område eller efter forretningsbehov.
 
@@ -50,7 +50,7 @@ Konfigurationsprocessen skal fuldføres i dit RCS-miljø. Følg nedenstående tr
 3. På siden med **Funktioner til elektronisk fakturering** skal du vælge **Importér** for at importere ER-datamodelkonfigurationen fra det globale lager.
 4. Vælg **Tilføj** for at oprette en funktion til elektronisk fakturering. Du kan enten oprette funktionen fra bunden eller have den afledt fra en eksisterende funktion til elektronisk fakturering.
 
-    ![Tilføje en funktion til elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Tilføje en funktion til elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > Når du opretter en ny funktion til elektronisk fakturering, har den et versionsnummer, og standardstatussen er angivet til **Kladde**.
@@ -63,21 +63,21 @@ Følg nedenstående trin for at føje ER-formater til funktionen for elektronisk
 
 1. På siden med **Funktioner til elektronisk fakturering** skal du på fanen **Konfigurationer** vælge **Tilføj** for at føje ER-filformatkonfigurationer til funktionen til elektronisk fakturering.
 
-    ![Tilføje konfigurationer af funktionen til elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Tilføje konfigurationer af funktionen til elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Når du opretter en funktion til elektronisk fakturering fra bunden, skal du manuelt tilføje alle ER-filformatkonfigurationerne. Når du har afledt en funktion til elektronisk fakturering fra en eksisterende funktion, oprettes ER-filformatkonfigurationerne automatisk, fordi de nedarves fra den oprindelige funktion til elektronisk fakturering.
 
 2. Vælg **Rediger** for at åbne siden **Formatdesigner**, hvor du kan redigere ER-filformatkonfigurationer.
 
-    ![Redigere konfigurationer af funktionen til elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Redigere konfigurationer af funktionen til elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Når du redigerer formatet, angives statussen for konfigurationsversionen til **Kladde**.
 
 3. Du kan bruge siden **Formatdesigner** til at ændre filformatkonfigurationen. Du kan finde flere oplysninger i [Oprette konfigurationer for elektroniske dokumenter](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Siden Formatdesigner](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Siden Formatdesigner.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>Funktionsopsætninger
 
@@ -87,18 +87,18 @@ Følg nedenstående trin for at føje funktionsopsætninger til funktionen for e
 
 1. På siden med **Funktioner til elektronisk fakturering** skal du på fanen **Konfigurationer** vælge **Tilføj** for at føje funktionsopsætninger til funktionen for elektronisk fakturering.
 
-    ![Tilføje funktionsopsætninger for elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Tilføje funktionsopsætninger for elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Når du opretter en funktion til elektronisk fakturering fra bunden, skal du manuelt tilføje alle de nødvendige funktionsopsætninger. Når du har afledt en funktion til elektronisk fakturering fra en eksisterende funktion, oprettes alle funktionsopsætninger automatisk, fordi de nedarves fra den oprindelige funktion til elektronisk fakturering.
 
 2. Vælg **Rediger** for at redigere opsætningen af funktionsversionen.
 
-    ![Redigere funktionsopsætninger for elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Redigere funktionsopsætninger for elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Du kan bruge siden **Opsætning af funktionsversion** til at konfigurere handlinger, anvendelighedsregler og variabler.
 
-    ![Handlinger, anvendelighedsregler og variabler](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Handlinger, anvendelighedsregler og variabler.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>Handlinger
 
@@ -113,7 +113,7 @@ På siden **Opsætning af funktionsversion** skal du på fanen **Handlinger** i 
 - Vælg **Ny** eller **Slet** for at tilføje nye handlinger eller slette eksisterende handlinger.
 - Vælg **Op** eller **Ned** for at flytte markerede handlinger op eller ned i gitteret og derfor ændre den rækkefølge, de køres i. Handlinger køres i den rækkefølge, hvormed de vises i gitteret, fra top til bund.
 
-![Administrere handlinger](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Administrere handlinger.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Handlinger**.
 
@@ -129,7 +129,7 @@ I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet *
 
 I oversigtspanelet **Parametre** vises parametrene for den handling, der er valgt i oversigtspanelet **Handlinger**.
 
-![Oversigtspanelet Parametre](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Oversigtspanelet Parametre.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Parametre**.
 
@@ -259,20 +259,20 @@ Anvendelighedsregler giver dig mulighed for at oprette logiske regler, der beste
 
 1. På siden **Opsætning af funktionsversion** skal du på fanen **Anvendelighedsregler** vælge **Ny** for at tilføje en anvendelighedsregel.
 
-    ![Administrere anvendelighedsregler](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Administrere anvendelighedsregler.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. Vælg de delsætninger, der skal grupperes, i gitteret.
 3. Vælg **Gruppér delsætning**.
 
-    ![Gruppere delsætninger](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Gruppere delsætninger.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     Når delsætningerne er grupperet, føjes der en ny kolonne til gitteret. Denne kolonne angiver den logiske operator for de grupperede delsætninger.
 
-    ![Logisk operator for grupperede delsætninger](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![Logisk operator for grupperede delsætninger.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 Hvis du vil opdele grupperede delsætninger, skal du vælge de grupperede delsætninger, der skal opdeles, og derefter vælge **Opdel grupperet delsætning**.
 
-![Opdele grupperede delsætninger](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Opdele grupperede delsætninger.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > Når du opdeler en grupperet delsætning, skal du altid starte fra det inderste grupperingsniveau.
@@ -294,7 +294,7 @@ Du kan oprette variabler og derefter bruge dem som inputværdi for en parameter 
 
 - På siden **Opsætning af funktionsversion** skal du på fanen **Variabler** vælge **Ny** eller **Slet** for at administrere variabler.
 
-    ![Administrere variabler](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Administrere variabler.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet **Variabler**.
 
@@ -310,7 +310,7 @@ I følgende tabel forklares de felter, der er tilgængelige i oversigtspanelet *
 
 - På siden **Opsætning af funktionsversion** skal du i handlingsruden vælge **Valider** for at validere opsætningen af funktionsversionen.
 
-   ![Vælge knappen Valider](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Vælge knappen Valider.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 Valideringen kontrollerer konsistensen af hele konfigurationen. Hvis en bestemt parameter til en handling f.eks. er obligatorisk, men værdien stadig er tom, registrerer valideringen denne inkonsistens, og du modtager en advarsel.
 
@@ -323,7 +323,7 @@ Følg nedenstående trin for at aktivere et miljø til elektronisk fakturering f
 1. På siden **Funktioner til elektronisk fakturering** skal du på fanen **Miljøer** vælge **Aktivér** for at tilføje et miljø til elektronisk fakturering.
 2. I feltet **Gyldig fra** skal du angive den dato, hvor det nye miljø skal være gyldigt.
 
-![Aktivere et miljø til elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Aktivere et miljø til elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organisationer
 

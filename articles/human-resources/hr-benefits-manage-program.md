@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c31564fdc40cb0cba82b9ab8fbfdfee7adf4f4ee
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 579f2946bceceaacc3e4f1d664a5211ce40f705e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053003"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353680"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definere og administrere et frynsegodeprogram
 
@@ -32,9 +32,9 @@ Human Resources indeholder en række værktøjer, der kan bruges til at konfigur
 
 Før arbejdere kan tilmeldes frynsegoder, skal du oprette elementer for hvert frynsegode. Disse elementer kombinerer lignende frynsegodeplaner og definerer standardindstillinger, som satser for fradrag og regnskabsmæssige oplysninger. Mange af disse indstillinger kan justeres, når arbejdere senere er tilmeldt frynsegodet. En organisation kan tilbyde flere tilmeldingsmuligheder til hver frynsegodeplan, eller en arbejder kan melde sig ud af planen. 
 
-[![Procesforløb for frynsegoder](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![Procesforløb for frynsegoder.](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
-## <a name="benefit-elements"></a>Frynsegodeelementer
+## <a name="benefit-elements"></a>Personalegodeelementer
 
 Før du begynder at oprette fordele og tilmelde arbejdere til dem, skal du definere de elementer, der udgør et frynsegode: type, plan og muligheder.
 
@@ -44,7 +44,7 @@ Før du begynder at oprette fordele og tilmelde arbejdere til dem, skal du defin
 
 For hver type ydelse, f.eks. briller eller tandlæge, kan en organisation tilbyde en eller flere planer til sine ansatte. Organisationen kan tilbyde forskellige muligheder for hver enkelt plan. Arbejdere kan for eksempel købe ekstra livsforsikringsdækning på én, to eller tre gange deres årlige løn. Hver kombination af en plan og muligheder bliver et frynsegode, som medarbejdere kan tilmeldes. 
 
-[![billede af frynsegode](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![billede af frynsegode.](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Berettigelse
 Medarbejderens berettigelse til forskellige former for frynsegoder, som en arbejdsgiver tilbyder, afhænger af mange faktorer. Når du opretter et frynsegode i Dynamics 365 Human Resources, kan du angive typen af berettigelse, der gælder for dette frynsegode. 

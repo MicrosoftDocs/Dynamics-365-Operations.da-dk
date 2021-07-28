@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 03150ccdaeaf48754f04a4329cb1bc14ea2b6895
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9215672f4ace591bf7d964c8fbd3ad483bacca5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840407"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360418"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere politikker for forsendelseskonsolidering
 
@@ -179,7 +179,7 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 1. Lad indstillingen **Konsolider med åbne forsendelser** være angivet til *Nej*.
 1. Vælg **Gem** i handlingsruden.
 1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
-1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
+1. Klik på knappen **Tilføj** ![Pil til højre.](media/forward-button.png) For at flytte feltet til listen over **valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
 1. Gå til dialogboksen for forespørgselseditor på fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Debitorkonto* i gitteret, indstil feltet **Kriterier** for den pågældende række til *US-001*.
 1. Vælg **Tilføj** for at føje en række, der har følgende indstillinger, til gitteret:
@@ -214,7 +214,7 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 1. Angiv indstillingen **Konsolider med åbne forsendelser** til *Ja*.
 1. Vælg **Gem** i handlingsruden.
 1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
-1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
+1. Klik på knappen **Tilføj** ![Pil til højre.](media/forward-button.png) For at flytte feltet til listen over **valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
 1. I dialogboksen for forespørgselseditor skal du gå til fanen **Joins** og udvide og vælge **Tabeller \> Lastdetaljer** i træet.
 1. Vælg **Tilføj tabeljoin**.
@@ -251,9 +251,9 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 1. Angiv indstillingen **Konsolider med åbne forsendelser** til *Ja*.
 1. Vælg **Gem** i handlingsruden.
 1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Debitorrekvisition*.
-1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
+1. Klik på knappen **Tilføj** ![Pil til højre.](media/forward-button.png) For at flytte feltet til listen over **valgte felter**.
 1. På listen **Resterende felter** skal du vælge den række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
-1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
+1. Klik på knappen **Tilføj** ![Pil til højre.](media/forward-button.png) For at flytte feltet til listen over **valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
 1. Gå til dialogboksen for forespørgselseditor på fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Debitorkonto*, indstil feltet **Kriterier** for den pågældende række til *US-001*.
 1. Vælg **OK** for at lukke dialogboksen.
@@ -283,7 +283,7 @@ Benyt følgende fremgangsmåde for at oprette politikken til forsendelseskonsoli
 1. Lad indstillingen **Konsolider med åbne forsendelser** være angivet til *Nej*.
 1. Vælg **Gem** i handlingsruden.
 1. Gå til oversigtspanelet **Konsolideringsfelter** på listen **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
-1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
+1. Klik på knappen **Tilføj** ![Pil til højre.](media/forward-button.png) For at flytte feltet til listen over **valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
 1. Gå til dialogboksen for forespørgselseditor, og vælg **Tilføj** på fanen **Område** for at tilføje en række, der har følgende indstillinger, til gitteret:
 
@@ -317,7 +317,7 @@ Dette forretningseksempel kan typisk håndteres ved hjælp af de standardpolitik
 1. Lad indstillingen **Konsolider med åbne forsendelser** være angivet til *Nej*.
 1. Vælg **Gem** i handlingsruden.
 1. Gå til oversigtspanelet **Konsolideringsfelter** i feltet **Resterende felter**, vælg række, hvor feltet **Feltnavn** er indstillet til *Leveringsmåde*.
-1. Vælg knappen **Tilføj** ![Højre pil](media/forward-button.png) for at flytte feltet til listen **Valgte felter**.
+1. Klik på knappen **Tilføj** ![Pil til højre.](media/forward-button.png) For at flytte feltet til listen over **valgte felter**.
 1. Vælg **Rediger forespørgsel** i handlingsruden.
 1. Gå til dialogboksen for forespørgselseditor på fanen **Område**, og find den række, hvor feltet **Felt** er indstillet til *Lagersted*, og indstil feltet **Kriterier** for den pågældende række til *61, 63*.
 1. Vælg **OK** for at lukke dialogboksen.

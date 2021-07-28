@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 4bf47b15b668a37f12edb3dbb842d19655fac97a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 76b11eaec0f22393e877c2837e2533a176018f2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019021"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355476"
 ---
 # <a name="wave-creation-and-processing"></a>Bølgeoprettelse og -behandling
 
@@ -42,7 +42,7 @@ Du kan angive, hvilke af disse produktionsordreindstillinger der som standard sk
 
 Følgende diagram viser flowet for, hvordan forsendelsesbølger oprettes, behandles og frigives. Tallene svarer til oplysningerne senere i denne sektion.
 
-![Proces for oprettelse af en bølge](media/wave-processing-diagram.png "Proces for oprettelse af en bølge")
+![Proces for oprettelse af en bølge.](media/wave-processing-diagram.png "Proces for oprettelse af en bølge")
 
 ### <a name="prerequisites"></a>Forudsætninger
 
@@ -158,7 +158,7 @@ Når funktionen *Planlæg oprettelse af arbejde* er aktiveret, opretter bølgebe
 
 Følgende rutediagram viser, hvordan planlagt arbejde oprettes under bølgebehandling.
 
-![Planlæg arbejdsoprettelse](media/schedule-work-creation-process.png)
+![Planlæg arbejdsoprettelse.](media/schedule-work-creation-process.png)
 
 ### <a name="planned-work"></a>Planlagt arbejde
 
