@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e82c9a5ff4b6d7db1a808e5a94206628cdf0930
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14c8c36b90caa3a9378a739932d734b94985b46c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754592"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354439"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
 
@@ -54,11 +54,11 @@ Følg disse trin for at tilføje en .pbix-fil som en Visual Studio-projektgensta
 3. I dialogboksen **Tilføj nyt element** under **Operationsgenstande** skal du vælge skabelonen **Ressource**.
 4. Angiv et navn, der skal bruges til at referere til rapporten i X ++-metadata, og klik derefter på **Tilføj**.
 
-    ![Dialogboksen Tilføj nyt element](media/analytical-workspace-add.png)
+    ![Dialogboksen Tilføj nyt element.](media/analytical-workspace-add.png)
 
 5. Find .pbix filen med definitionen af analyserapporten, og klik derefter på **Åbn**.
 
-    ![Dialogboksen Vælg en ressourcefil](media/analytical-workspace-select-resource.png)
+    ![Dialogboksen Vælg en ressourcefil.](media/analytical-workspace-select-resource.png)
 
 Nu, hvor du har tilføjet .pbix filen som en ressource i Dynamics 365, kan du integrere rapporterne i arbejdsområder og tilføje direkte hyperlinks ved hjælp af menupunkter.
 
@@ -67,7 +67,7 @@ I dette eksempel skal vi udvide arbejdsområdet **Reservationsstyring** i Flåde
 
 Følgende illustration viser, hvordan formularen **FMClerkWorkspace** ser ud i designeren i Microsoft Visual Studio.
 
-![FMClerkWorkspace-formular før ændringer](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace-formular før ændringer.](media/analytical-workspace-definition-before.png)
 
 Følg disse trin for at udvide formulardefinitionen for arbejdsområdet **Reservationsstyring**.
 
@@ -92,7 +92,7 @@ Følg disse trin for at udvide formulardefinitionen for arbejdsområdet **Reserv
 
 I følgende illustration vises designet, når disse ændringer er anvendt.
 
-![FMClerkWorkspace efter ændringer](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace efter ændringer.](media/analytical-workspace-definition-after.png)
 
 Nu, hvor du har tilføjet de kontrolelementer til formularen, der skal bruges til at integrere arbejdsområderapporten, skal du definere størrelsen på det overordnede kontrolelement, så det kan rumme layoutet. Som standard er både siden **Filterrude** og siden **Fane** synlige i rapporten. Du kan dog ændre synligheden af disse kontrolelementer alt efter rapportens målforbruger.
 
@@ -142,7 +142,7 @@ Følg disse trin for at tilføje forretningslogik, der initialiserer det kontrol
 
 Du har nu fuldført tilføjelsen af forretningslogik for at initialisere det integrerede rapportfremviserkontrolelement. I følgende illustration vises arbejdsområdet, når disse ændringer er anvendt.
 
-![Rapport, der er integreret i arbejdsområdet](media/analytical-workspace-final.png)
+![Rapport, der er integreret i arbejdsområdet.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Du kan åbne den eksisterende operationsvisning ved hjælp af fanerne i arbejdsområde under sidetitlen.

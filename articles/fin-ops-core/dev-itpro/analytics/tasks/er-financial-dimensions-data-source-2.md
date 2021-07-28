@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e6f5ffbebdfcd9f945e6237904d80e8734b0220
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 15f564ec0b4639ba7a27c6f3f989304c71695ee4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752430"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356337"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)
 
@@ -56,14 +56,14 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 21. Vælg Ja i feltet Spørg efter hovedkonto.
     * Angiv 'Spørg efter hovedkonto' til Ja for at tillade brugere at vælge hovedkontoen som en del af listen over dimensioner.   Hvis indstillingen er angivet til Nej, inkluderes den primære konto ikke på listen over dimensioner, og indstillingen 'Er hovedkonto obligatorisk' er aktiveret. Hvis "Er hovedkonto obligatorisk" er angivet til Ja, skal du inkludere hovedkontoen på listen over dimensioner, uanset brugerens valg.  
 22. Klik på OK.
-![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Side for ER-modeltilknytningsdesigner.](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.
 24. Klik på Tilføj rod.
 25. Skriv "LedgerJournal" i feltet Navn.
 26. Vælg Ja i feltet Spørg efter forespørgsel.
 27. Skriv "LedgerJournalTable" i feltet Tabel.
 28. Klik på OK.
-![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Side for ER-modeltilknytningsdesigner.](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Tilknyt datamodelelementer til tilføjede datakilder
 1. Udvid 'Kladde' i træet.
@@ -94,7 +94,7 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 25. Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner' i træet.
 26. Vælg 'Kladde\Transaktion\Dimensionsdata' i træet.
 27. Klik på Bind.
-![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping3.png)
+![Side for ER-modeltilknytningsdesigner.](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)' i træet.
 29. Vælg 'Journal\Transaction\Debit' i træet.
 30. Klik på Bind.
@@ -133,7 +133,7 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 63. I feltet expressionAsStringText skal du skrive 'Company.'find()'.'name()''.
     * Company.'find()'.'name()'  
 64. Klik på Gem.
-![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping4.png)
+![Side for ER-modeltilknytningsdesigner.](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Luk siden.
 66. Klik på Gem.
 67. Luk siden.
@@ -144,7 +144,7 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 3. Klik på Skift status.
 4. Klik på Fuldført.
 5. Klik på OK.
-![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping5.png)
+![Side for ER-modeltilknytningsdesigner.](../media/er-financial-dimensions-guides-model-mapping5.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

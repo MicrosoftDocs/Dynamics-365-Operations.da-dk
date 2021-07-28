@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f543adc8bab5ca224bdb672d6b3c282c2d8531d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 97fce25ea8c556f001c84f6836a0a270a9f3524f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023106"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358380"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>Registrere certifikatnumre for skattekoncession
 
@@ -33,7 +33,7 @@ Dette emne forklarer, hvordan du registrerer koncessionscertifikatnumre for kild
 2. Vælg **Kildeskat** i feltet **Skattetype** for at registrere koncessionscertifikater for skattetypen Kildeskat.
 3. Vælg **Alt+N** under fanen **Oversigt** for at oprette en linje.
 
-    [![Overskriften på den nye linje](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
+    [![Overskriften på den nye linje.](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
 
 4. Vælg den kildeskattekode, som kreditorens koncessionscertifikater udstedes for, i feltet **Kode for A-skat**. Feltet **Kodenavn for A-skat** viser navnet på kildeskattekoden.
 5. I felterne **Fra dato** og **Til dato** skal du definere gyldighedsperioden for koncessionscertifikater, der bruger kildeskattekoden til at beregne kildeskat for kreditoren på koncessionelt grundlag.
@@ -50,6 +50,6 @@ Dette emne forklarer, hvordan du registrerer koncessionscertifikatnumre for kild
 
 11. Angiv skattekoncessionens certifikatnummer i feltet **Certifikat**.
 
-    [![Oversigtspanelet Certifikat](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
+    [![Oversigtspanelet Certifikat.](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
 
 12. Luk siden.

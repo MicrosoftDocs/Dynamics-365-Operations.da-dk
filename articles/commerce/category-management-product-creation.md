@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 678561856fbb5514ff954363a767091edac6dee2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 89237c830109e8cb304b2547230484f15b90d875
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794367"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351291"
 ---
 # <a name="manage-product-categories-and-products"></a>Administrere produktkategorier og -produkter
 
@@ -35,17 +35,17 @@ Bemærk, at den forbedrede struktur på siden **Commerce-produkthierarki** vises
 
 I den forbedrede struktur for produktkategorier er produktegenskaber logisk adskilte ud fra deres anvendelighed i en gruppe, så de afspejler strukturen for formularstrukturen for de frigivne produktegenskaber.
 
-![Felterne grupperes ud fra egenskabernes anvendelighed](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+![Felterne grupperes ud fra egenskabernes anvendelighed.](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
 Du kan skifte mellem at administrere egenskaber, der er specifikke for juridiske enheder på tværs af alle juridiske enheder og administrere dem for en bestemt juridisk enhed.
 
 For at administrere egenskaber på tværs af alle juridiske enheder skal du vælge **Vis for alle juridiske enheder** (eller **Rediger for alle juridiske enheder**).
 
-![Få vist eller redigere for alle juridiske enheder](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+![Få vist eller redigere for alle juridiske enheder.](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
 For at administrere egenskaberne for en bestemt juridisk enhed, skal du vælge **Vis for en bestemt juridisk enhed** (eller **Rediger for en bestemt juridisk enhed**).
 
-![Få vist og redigere for en bestemt juridisk enhed](media/ToggleToEditForAllLegalEntities.PNG)
+![Få vist og redigere for en bestemt juridisk enhed.](media/ToggleToEditForAllLegalEntities.PNG)
 
 Derudover kan en markedsføringschef i den forbedrede struktur for produktkategorier nu også definere standardværdier for et ekstra sæt produktegenskaber for det enkelte kategoriniveau. Når der derefter oprettes produkter, bliver de tildelt standardværdierne for deres produktegenskaber ud fra tilknytningen af disse egenskaber til en bestemt kategori i produkthierarkiet. Disse nedarvede produktegenskaber kan også ændres for hvert produkt for at opfylde individuelle virksomhedsbehov.
 
@@ -53,7 +53,7 @@ Derudover kan en markedsføringschef i den forbedrede struktur for produktkatego
 
 Du kan bruge den nye forbedrede struktur for produktegenskaber til at vælge, hvilke opdaterede produktegenskaber der skal anvendes til de tilknyttede produkter. På siden **Commerce-produkthierarki** i handlingsruden skal du vælge **Kategori**. Vælg derefter **Opdater produkter** for at åbne dialogboksen **Opdater produkter**.
 
-![Dialogboksen Opdater produkter](media/NewUpdateProductsEnhancedView.PNG)
+![Dialogboksen Opdater produkter.](media/NewUpdateProductsEnhancedView.PNG)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

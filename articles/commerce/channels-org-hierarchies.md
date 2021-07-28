@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4238d1aa277bf2f1df30825ef20dbf3095d13ebc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f6e791ffd15128d2076340515a08b5ea6be70dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800561"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346002"
 ---
 # <a name="set-up-organization-hierarchies"></a>Konfigurere organisationshierarkier
 
@@ -54,7 +54,7 @@ Benyt følgende fremgangsmåde for at oprette et organisationshierarki for en ka
 
 Følgende billede viser et eksempel på et organisationshierarki, der er oprettet for række af fiktive "Adventure Works"-butikker.
 
-![Eksempel på organisationshierarki](media/organizational-hierarchies.png)
+![Eksempel på organisationshierarki.](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Føje organisationer til et hierarki
 
@@ -67,7 +67,7 @@ Følg disse trin for at føje organisationer til et hierarki.
 
 Følgende billede viser en juridisk enhed, der er føjet til hierarkiroden, med fire bærere, som er tilføjet for kanalerne "Mall", "Udgang", "Online" og "Callcenter". Der kan føjes forskellige detailvarer, callcentre og onlinekanaler til hver enkelt.
 
-![Eksempel på hierarkidesigner](media/hierarchy-designer.png)
+![Eksempel på hierarkidesigner.](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

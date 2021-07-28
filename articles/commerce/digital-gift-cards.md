@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6c4cf4e94e6271843d55b4ca7a0fb3ffaffc9542
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019927"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344389"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitale e-handelsgavekort
 
@@ -34,7 +34,7 @@ Købet af digitale gavekort understøttes i Dynamics 365 Commerce version 10.0.1
 
 I følgende illustration vises et eksempel på siden med produktdetaljer (PDP) til et digitalt gavekort på Fabrikams e-handelswebsted.
 
-![Eksempel på digital gavekort-PDP på Fabrikams e-handelswebsted](./media/GiftcardPDP.PNG)
+![Eksempel på digital gavekort-PDP på Fabrikams e-handelswebsted.](./media/GiftcardPDP.PNG)
 
 ## <a name="turn-on-the-digital-gift-card-feature-in-commerce-headquarters"></a>Aktivere funktionen for digitale gavekort i Commerce Headquarters
 
@@ -49,16 +49,16 @@ Digitale gavekortprodukter skal konfigureres i Commerce Headquarters. Fremgangsm
 - Når du konfigurerer digitale gavekortprodukter i dialogboksen **Nyt produkt**, skal du angive feltet **Produkttype** til **Service**. (Hvis du vil åbne dialogboksen, skal du gå til **Detail og handel \> Produkter og kategorier \> Produkter efter kategori** og vælg **Ny**.) Produkter af typen **Service** kontrolleres ikke for disponible lagerbeholdninger, før der afgives en ordre. Du kan finde flere oplysninger i [Oprette et nyt produkt](create-new-product-commerce.md#create-a-new-product).
 - På siden **Commerce-parametre** under fanen **Bogføring** skal feltet **Gavekortprodukt** angives til **Digitalt gavekort** som vist i følgende illustration. Hvis produktet er et eksternt gavekort, kan du finde flere oplysninger i [Understøttelse af eksterne gavekort](./dev-itpro/gift-card.md).
 
-    ![Feltet Gavekortprodukt i Commerce Headquarters](./media/PostGiftcard.png)
+    ![Feltet Gavekortprodukt i Commerce Headquarters.](./media/PostGiftcard.png)
 
 - Hvis et gavekort skal understøtte flere foruddefinerede beløb (f.eks. $25, $50 og $100), skal dimensionen **Størrelse** bruges til at konfigurere de foruddefinerede beløb. Hvert foruddefineret beløb er en variant. Du kan finde flere oplysninger under [Produktdimensioner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Hvis kunder skal kunne angive et brugerdefineret beløb for et gavekort, skal du først oprette en variant, der tillader et brugerdefineret beløb. Åbn derefter produktet fra siden **Frigivne produkter i kategori**, og angiv i oversigtspanelet **Commerce** i feltet **Indtast prise** til **Ny pris skal indtastes**, som vist i følgende illustration. Denne indstilling sikrer, at kunder kan indtaste en pris, når de gennemser produktet på en PDP.
 
-    ![Indtast prisfelt i Commerce Headquarters](./media/KeyInPrice.png)
+    ![Indtast prisfelt i Commerce Headquarters.](./media/KeyInPrice.png)
 
 - Leveringsmåden for et digitalt gavekort skal angives til **Elektronisk**. På siden **Leveringsmåder** (**Detail og handel \> Konfiguration af kanal \> Leveringsmåder**) skal du vælge tilstanden leveringsmåde **Elektronisk** i listeruden og derefter tilføje det digitale gavekortprodukt i gitteret i oversigtspanelet **Produkter**, som vist i følgende illustration. Du kan finde flere oplysninger i [Konfigurer leveringsmåder](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-    ![Digitale gavekortprodukter på siden Leveringsmåde i Commerce Headquarters](./media/ElectronicMode.PNG)
+    ![Digitale gavekortprodukter på siden Leveringsmåde i Commerce Headquarters.](./media/ElectronicMode.PNG)
 
 - Kontroller, at der er oprettet en onlinefunktionsprofil, som er tilknyttet din onlinebutik i Commerce Headquarters. I funktionalitetsprofilen skal du angive indstillingen **Aggreger produkter** til **Ja**. Denne indstilling sikrer, at alle varer undtagen gavekort aggregeres. Du kan finde flere oplysninger under [Oprette en onlinefunktionsprofil](online-functionality-profile.md).
 - Hvis du vil sikre, at kunder modtager en e-mail, når et gavekort er faktureret, skal du oprette en ny mailbeskedtype på siden **Mailbeskedprofiler** og angive, at feltet **Mailbeskedtype** skal udstede **gavekort**. Du kan finde flere oplysninger i [Konfigurere en mailbeskedprofil](email-notification-profiles.md).

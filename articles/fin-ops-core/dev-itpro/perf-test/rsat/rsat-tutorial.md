@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: a194e14c76827650e6752f331081ebe0c2130a13
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d932a0c10df72dbadcc65d7ef78eb8ad05645bd5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866150"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357512"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Selvstudium til Regression Suite Automation Tool
 
@@ -67,11 +67,11 @@ RSAT giver dig mulighed for at bruge den samme opgaveregistrering i flere test c
 
 Denne funktion kan bruges til at validere, om der opstod en handling. Når der f.eks. oprettes, estimeres og derefter startes en produktionsordre, viser appen meddelelsen "Produktion – start" for at give dig besked om, at produktionsordren er startet.
 
-![Beskeden Produktion – start](./media/use_rsa_tool_05.png)
+![Beskeden Produktion – start.](./media/use_rsa_tool_05.png)
 
 Du kan validere denne meddelelse via RSAT ved at angive meddelelsesteksten under fanen **Meddelelsesvalidering** i Excel-parameterfilen for den relevante registrering.
 
-![Fanen Meddelelsesvalidering](./media/use_rsa_tool_06.png)
+![Fanen Meddelelsesvalidering.](./media/use_rsa_tool_06.png)
 
 Når testsagen er kørt, sammenlignes meddelelsen i Excel-parameterfilen med den viste meddelelse. Hvis meddelelserne ikke stemmer overens, vil testsagen mislykkes.
 
@@ -104,11 +104,11 @@ Når du kører test casen, vil RSAT generere snapshots (billeder) af trinnene i 
 
 I følgende illustration vises flowet i dette scenarie.
 
-![Flow for demoscenariet](./media/use_rsa_tool_14.png)
+![Flow for demoscenariet.](./media/use_rsa_tool_14.png)
 
 I følgende illustration vises hierarkiet af forretningsprocesserne for dette scenario i LCS Forretningsmodeldesigner.
 
-![Forretningsprocesser til demoscenariet](./media/use_rsa_tool_15.png)
+![Forretningsprocesser til demoscenariet.](./media/use_rsa_tool_15.png)
 
 ## <a name="strategy--key-learning"></a>Strategi – vigtig læring
 

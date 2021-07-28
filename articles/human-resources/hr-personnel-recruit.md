@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051803"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359670"
 ---
 # <a name="recruit-job-candidates"></a>Rekruttere jobkandidater
 
@@ -61,13 +61,13 @@ Hvis organisationen har flere lokationer, kan du tilføje dem, så anmodere kan 
 
 3. Angiv navnet på lokationen i feltet **Lokation for rekrutteringsanmodning**.
 
-   ![Tilføje en lokation for en rekrutteringsanmodning](./media/hr-recruit-0a-add-location.png)
+   ![Tilføj en lokation for en rekrutteringsanmodning.](./media/hr-recruit-0a-add-location.png)
 
 4. Indtast en beskrivelse af lokationen i feltet **Beskrivelse**.
 
 5. Vælg **Tilføj** under **Lokation**. Hvis vinduet **Ny adresse** vises, skal du angive adressen på lokationen.
 
-   ![Indtast adresse](./media/hr-recruit-0b-address.png)
+   ![Indtast adresse.](./media/hr-recruit-0b-address.png)
 
 6. Angiv oplysningerne om kontaktpersonen på lokationen under **Kontaktoplysninger**.
 
@@ -83,11 +83,11 @@ Ledere kan sende rekrutteringsanmodninger i Human Resources. Hvis du bruger et s
 
 3. Vælg **Anmodning om rekruttering**.
 
-   ![Start en rekrutteringsanmodning](./media/hr-recruit-1-request-to-recruit.png)
+   ![Start en rekrutteringsanmodning.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Udfyld felterne **Beskrivelse**, **Job** og **Anslået startdato**.
 
-   ![Fuldfør rekrutteringsanmodningen](./media/hr-recruit-2-request-to-recruit.png)
+   ![Fuldfør rekrutteringsanmodningen.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Vælg **Fortsæt**. Rekrutteringsanmodningen for stillingen vises.
 
@@ -95,7 +95,7 @@ Ledere kan sende rekrutteringsanmodninger i Human Resources. Hvis du bruger et s
 
 7. Rediger oplysninger efter behov under **Job**, og vælg derefter **Opret detaljer fra job**.
 
-   ![Opret detaljer fra job](./media/hr-recruit-3-create-details-from-job.png)
+   ![Opret detaljer fra job.](./media/hr-recruit-3-create-details-from-job.png)
 
    Resten af rekrutteringsanmodningen vil blive udfyldt med standardoplysninger for det job, du har angivet.
 
@@ -103,13 +103,13 @@ Ledere kan sende rekrutteringsanmodninger i Human Resources. Hvis du bruger et s
 
 9. Under **Stillinger** skal du vælge **Tilføj** og derefter vælge en stilling for denne rekrutteringsanmodning.
 
-   ![Tilføj en stilling](./media/hr-recruit-4-select-position.png)
+   ![Tilføj en stilling.](./media/hr-recruit-4-select-position.png)
 
 10. Vælg **Tilføj** under **Færdigheder**, og vælg derefter en færdighed.
 
 11. Vælg **Tilføj** under **Uddannelseskrav**, og vælg derefter værdier på rullelisten **Uddannelse** og **Uddannelsesniveau**.
 
-   ![Tilføj krav til uddannelse](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Tilføj krav til uddannelse.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. Tilføj evt. kommentarer under **Kommentar**.
 
@@ -117,7 +117,7 @@ Ledere kan sende rekrutteringsanmodninger i Human Resources. Hvis du bruger et s
 
 14. Når din rekrutteringsanmodning er fuldført, og du er klar til at starte rekrutteringsprocessen, skal du vælge **Aktivér** på menulinjen.
 
-   ![Aktiver rekrutteringsanmodning](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Aktivér rekrutteringsanmodning.](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Vælg **Gem**.
 
@@ -131,7 +131,7 @@ Hvis du er leder og ønsker at se dine egne anmodninger:
 
 3. Under **Mine teamoplysninger** skal du vælge fanen **Rekrutteringsanmodninger**.
 
-   ![Vælg fanen rekrutteringsanmodninger](./media/hr-recruit-7-recruiting-requests.png)
+   ![Vælg fanen rekrutteringsanmodninger.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. Hvis du vil have vist eller redigere en rekrutteringsanmodning, skal du vælge den i gitteret.
 
@@ -141,7 +141,7 @@ Hvis du er personalemedarbejder og vil have vist alle rekrutteringsanmodninger:
 
 2. Vælg **Rekrutteringsanmodninger**.
 
-   ![Få vist rekrutteringsanmodninger i Personalestyring](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![Få vist rekrutteringsanmodninger i Personalestyring.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. Hvis du vil have vist eller redigere en rekrutteringsanmodning, skal du vælge den i gitteret.
 
@@ -155,7 +155,7 @@ Hvis organisationen er integreret med et andet program for at administrere rekru
 
 3. Vælg **Kandidater** under **Rekruttering**.
 
-   ![Få vist kandidater](./media/hr-recruit-9-candidates.png)
+   ![Få vist kandidater.](./media/hr-recruit-9-candidates.png)
 
 4. Vælg **Ny** for at tilføje en kandidat. Hvis du vil redigere en eksisterende kandidat, skal du vælge kandidat på listen og derefter vælge **Rediger**. Kandidatprofilen vises.
 
@@ -163,7 +163,7 @@ Hvis organisationen er integreret med et andet program for at administrere rekru
 
 6. Under **Rekrutteringsanmodning** skal du vælge en rekrutteringsanmodning, som kandidaten skal knyttes til. Udfyld derefter felterne **Anslået startdato**, **Ansættelseschef**, **Stilling** og **Beskrivelse** efter behov.
 
-   ![Tilknyt til rekrutteringsanmodning](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Tilknytte til rekrutteringsanmodning.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Udfyld alle oplysningerne i følgende områder, som du vil medtage i kandidatens post:
    - **Bemærkninger**
@@ -182,11 +182,11 @@ Når du er klar til at ansætte en kandidat, skal du følge denne procedure for 
 
 1. Vælg **Ansæt** i kandidatformularen.
 
-   ![Ansætte en kandidat](./media/hr-recruit-11-hire.png)
+   ![Ansætte en kandidat.](./media/hr-recruit-11-hire.png)
 
 2. Udfyld alle felter i formularen **Ansæt ny arbejder** under **Detaljer**.
 
-   ![Angive oplysninger om ny ansættelse](./media/hr-recruit-12-hire-new-worker.png)
+   ![Angive oplysninger om ny ansættelse.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. Bekræft og rediger oplysninger efter behov under **Detaljer for stilling**.
 
@@ -203,7 +203,7 @@ Hvis du beslutter dig for ikke at ansætte en kandidat, skal du følge denne pro
 
 1. Vælg **Ansæt ikke** i kandidatformularen.
 
-   ![Ansæt ikke kandidat](./media/hr-recruit-13-do-not-hire.png)
+   ![Ikke ansætte kandidat.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Vælg en **Årsagskode**, og medtag eventuelle kommentarer.
 
@@ -215,7 +215,7 @@ Hvis det er nødvendigt, kan du afvise en kandidat efter at have ansat vedkommen
 
 - Vælg **Afvis kandidat** i kandidatformularen.
 
-  ![Afvis kandidat](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Afvise kandidat.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>Se også
 

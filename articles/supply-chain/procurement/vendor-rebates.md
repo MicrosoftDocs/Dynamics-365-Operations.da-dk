@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822461"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344214"
 ---
 # <a name="vendor-rebates"></a>Kreditorrabatter
 
@@ -53,7 +53,7 @@ En leverandørrabataftale registreres i en kontrakt med en leverandør, der angi
 
 Du åbner siden **Kreditorrabataftaler** ved at vælge **Indkøb og forsyning** &gt; **Kreditorrabatter** &gt; **Rabataftaler**.
 
-![Købsaftale](media/purchase-agreement.PNG)
+![Købsaftale.](media/purchase-agreement.PNG)
 
 På siden **Kreditorrabataftaler** kan du få vist detaljer om de betingelser, der er aftalt i en leverandøraftale.
 
@@ -129,7 +129,7 @@ Når krav er blevet godkendt, kan de behandles af Kreditor (A/P). Der genereres 
 
     En rabatperiodiseringskladde bogføres for kravsbeløbet. Denne bogføring debiterer kontoen Periodiserede kreditorrabattilgodehavender med den forventede kreditorkredit og krediterer mellemkontoen Periodiserede modtagne kreditorrabatter med den forventede gevinst.
 
-    ![Melding](media/message.png)
+    ![Meddelelse.](media/message.png)
 
 5. Markér linjen på rabatlisten, og vælg derefter **Rabatposter** i handlingsruden for at få vist og navigere til kladdebatchnummeret for denne bogføring med rabatperiodisering.
 

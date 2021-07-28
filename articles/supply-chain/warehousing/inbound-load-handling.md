@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103162"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359781"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerekspedition af indgående laster for indkøbsordrer
 
@@ -30,7 +30,7 @@ For hver indgående last skal systemet allerede indeholde en relateret salgsordr
 
 I følgende illustration vises det typiske flow for håndtering af indgående laster, der har indkøbsordreantal, når de ankommer til lagerstedet.
 
-![Processen til håndtering af indgående last](media/inbound-process.png "Processen til håndtering af indgående last")
+![Processen til håndtering af indgående last.](media/inbound-process.png "Processen til håndtering af indgående last")
 
 1. **Leverandøren bekræfter indkøbsordren.**
 
@@ -293,7 +293,7 @@ I dette afsnit skal du oprette et menupunkt på den mobil enhed og føje det til
 
     Du kan bruge standardværdierne til de andre indstillinger.
 
-    ![Indstillinger for Menupunkt på mobilenhed](media/inbound-mobile-menu-items.png "Indstillinger for Menupunkt på mobilenhed")
+    ![Indstillinger for Menupunkt på mobilenhed.](media/inbound-mobile-menu-items.png "Indstillinger for Menupunkt på mobilenhed")
 
     Du kan få flere oplysninger om, hvordan du konfigurerer menupunkter på mobilenheder, i [Konfigurere mobilenheder til lagerstedsarbejde](configure-mobile-devices-warehouse.md).
 
@@ -328,7 +328,7 @@ I denne procedure skal du oprette en indkøbsordre manuelt og en tilhørende las
     - Feltet I **Laststatus** i oversigtspanelet **Last** er angivet til _Åben_.
     - I afsnittet **Lastlinjer** er der en enkelt linje, hvor feltet **Antal** er indstillet til _10_, og feltet **Arbejdsoprettet antal** er indstillet til _0_ (nul).
 
-    ![Lastdetaljer](media/inbound-load-details.png "Lastdetaljer")
+    ![Lastdetaljer.](media/inbound-load-details.png "Lastdetaljer")
 
 1. På fanen **Lever og modtag** i handlingsruden skal du vælge **Bekræft \> Indkommende forsendelse**. Bemærk, at **Laststatus** er ændret til _Leveret_.
 1. Noter værdien i **Last-id-**, så du kan bruge den i den næste procedure.

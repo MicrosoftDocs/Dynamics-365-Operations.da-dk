@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d780c7a52570e8e8dbd0c42c6d1aa8e41d2d4819
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 164926714717addc486a69f4ae913dcef2bc4c41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809872"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361132"
 ---
 # <a name="asset-management-overview"></a>Oversigt over Styring af aktiver
 
@@ -32,7 +32,7 @@ Styring af aktiver er et avanceret modul til administration af aktiver og vedlig
 
 Billedet nedenfor er en illustration af grænsefladerne til andre moduler i Finance and Operations.
 
-![Oversigt over, hvordan Styring af aktiver integreres](media/overview-integrate2.jpg)
+![Oversigt over, hvordan aktivstyring integreres.](media/overview-integrate2.jpg)
 
 Styring af aktiver giver dig mulighed for effektivt at administrere og udføre opgaver i forbindelse med styring og servicering af mange typer udstyr i din virksomhed, f.eks. maskiner, produktionsudstyr og køretøjer. Styring af aktiver understøtter løsninger på tværs af adskillige brancher.
 

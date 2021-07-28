@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 0015ca2ccbb0098a5a96bf56ff355fb2f9f8f626
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5af584eb0bdb65942921847219b46b8f93dae79d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748917"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350905"
 ---
 # <a name="integrated-customer-master"></a>Integreret kundemaster
 
@@ -36,7 +36,7 @@ Debitordata kan styres i mere end ét Dynamics 365-program. En debitorrække kan
 
 *Debitor* er et veldefineret begreb i programmer. Derfor involverer integrationen af debitordata blot en harmonisering af debitorkonceptet mellem de to programmer. Følgende illustration viser debitordataflowet.
 
-![Debitordataflow](media/dual-write-customer-data-flow.png)
+![Debitordataflow.](media/dual-write-customer-data-flow.png)
 
 Debitorer kan groft inddeles i to typer: kommercielle/organisatoriske debitorer og forbrugere/slutbrugere. Disse to typer af debitorer lagres og håndteres forskelligt i Finance and Operations og Dataverse.
 

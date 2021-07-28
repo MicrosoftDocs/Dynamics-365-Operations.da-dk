@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936824"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346822"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tilføje understøttelse af et netværk, der leverer indhold (CDN)
 
@@ -74,11 +74,11 @@ Benyt følgende fremgangsmåde for at konfigurere en back-end-pulje i Azure Fron
 
 I følgende illustration vises dialogboksen **Tilføj en back-end-pulje** i Azure Front Door Service med back-end-værtsnavnet indtastet.
 
-![Dialogboksen Tilføj en back-end-pulje](./media/CDN_BackendPool.png)
+![Dialogboksen Tilføj en back-end-pulje.](./media/CDN_BackendPool.png)
 
 I følgende illustration vises dialogboksen **Tilføj en back-end-pulje** i Azure Front Door Service med standardværdier for justering af belastning.
 
-![Dialogboksen Tilføj en back-end-pulje fortsat](./media/CDN_BackendPool_2.png)
+![Dialogboksen Tilføj en back-end-pulje fortsat.](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Sørg for at deaktivere **Tilstandsundersøgelser**, når du konfigurerer din egen Azure Front Door Service til Commerce.
@@ -107,13 +107,13 @@ Hvis dit domæne er nyt og ikke er et eksisterende Live-domæne, kan du føje di
 
 I følgende illustration vises dialogboksen **CNAME-konfiguration** i Azure Front Door Service.
 
-![Dialogboksen CNAME-konfiguration](./media/CNAME_Configuration.png)
+![Dialogboksen CNAME-konfiguration.](./media/CNAME_Configuration.png)
 
 Du kan bruge Azure Front Door Service til at administrere certifikatet, eller du kan bruge dit eget certifikat til det brugerdefinerede domæne.
 
 I følgende illustration vises dialogboksen **HTTPS for brugerdefineret domæne** i Azure Front Door Service.
 
-![Dialogboksen HTTPS for brugerdefineret domæne](./media/Custom_Domain_HTTPS.png)
+![Dialogboksen HTTPS for brugerdefineret domæne.](./media/Custom_Domain_HTTPS.png)
 
 Detaljerede oplysninger om, hvordan du føjer et brugerdefineret domæne Azure Front Door, finder du under [Føje et brugerdefineret domæne til Front Door](/azure/frontdoor/front-door-custom-domain).
 

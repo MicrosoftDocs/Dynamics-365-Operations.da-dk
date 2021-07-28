@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 798e38d7fea53a13d713734dd0521552974176ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897326"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347828"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Referencer til oprindelige fakturaer på kreditnotaer
 
@@ -51,7 +51,7 @@ Benyt følgende fremgangsmåde for at angive den parameter, der styrer, om refer
 1. Gå til **Debitor** \> **Konfiguration** \> **Debitorparametre**.
 2. Under fanen **Opdateringer** i oversigtspanelet **Faktura** skal du angive indstillingen **Anvend layoutet for fakturakreditering i rapporter for salgs- og projektfakturaer** til **Ja**.
 
-![Konfigurere debitorparametre](media/original-invoice-number-in-credit-note.jpg)
+![Konfigurere debitorparametre.](media/original-invoice-number-in-credit-note.jpg)
 
 ## <a name="define-references-to-original-invoices"></a>Definere referencer til oprindelige fakturaer
 
@@ -65,7 +65,7 @@ Benyt følgende procedurer til at definere referencer til oprindelige fakturaer 
 4. Vælg **Kreditfaktura** i gruppen **Funktioner** under fanen **Faktura** i handlingsruden.
 5. Angiv referencen til den oprindelige faktura, og vælg årsagen til rettelsen.
 
-![Definere referencen til en fritekstfaktura](media/reference-original-invoice-FTI.jpg)
+![Definere referencen til en fritekstfaktura.](media/reference-original-invoice-FTI.jpg)
 
 ### <a name="customer-credit-note"></a>Kreditnota til kunden
 
@@ -74,7 +74,7 @@ Benyt følgende procedurer til at definere referencer til oprindelige fakturaer 
 3. Klik på **Kreditnota** i gruppen **Kreditnota** under fanen **Sælg** i handlingsruden.
 4. Angiv årsagen til rettelsen. Referencen til den oprindelige faktura oprettes automatisk.
 
-![Definere referencen til en salgsordre](media/reference-original-invoice-SO.jpg)
+![Definere referencen til en salgsordre.](media/reference-original-invoice-SO.jpg)
 
 ### <a name="project-credit-note"></a>Projektkreditnota
 
@@ -84,13 +84,13 @@ Benyt følgende procedurer til at definere referencer til oprindelige fakturaer 
 4. Vælg **Kreditfaktura**.
 5. Angiv årsagen til rettelsen. Referencen til den oprindelige faktura oprettes automatisk.
 
-![Definere referencen til en projektfaktura](media/reference-original-invoice-project.jpg)
+![Definere referencen til en projektfaktura.](media/reference-original-invoice-project.jpg)
 
 ## <a name="printing-credit-notes"></a>Udskrive kreditnotaer
 
 Når du udskriver fritekst-, debitor- og projektkreditnotaer, omfatter de referencen til den oprindelige faktura og årsagen til rettelsen.
 
-![Udskrevet kreditnota](media/credit-note-FTI.jpg)
+![Udskrevet kreditnota.](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > Kontroller, at dokumenternes formater, der kan udskrives, er konfigureret korrekt, efter at det antages, at referencer til oprindelige fakturaer vil blive udskrevet.

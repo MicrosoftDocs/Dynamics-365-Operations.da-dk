@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358663"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsafhængige ER-destinationer
 
@@ -69,11 +69,11 @@ Du kan f.eks. bruge ER-formatet **Fritekstfaktura (Excel)** til at udskrive en [
 
 I følgende illustration vises, hvordan du kan opnå dette ved at konfigurere ER-destinationer som et sæt individuelle destinationsposter, når hver post er konfigureret til en individuel brugerhandling:
 
-![Destinationsside for elektronisk rapportering, der har handlingsafhængige destinationsindstillinger for et ER-format, når alle destinationspost er konfigureret til en enkelt brugerhandling](./media/er-destination-action-dependent-01.png)
+![Destinationsside for elektronisk rapportering, der har handlingsafhængige destinationsindstillinger for et ER-format, når alle destinationspost er konfigureret til en enkelt brugerhandling.](./media/er-destination-action-dependent-01.png)
 
 I følgende illustration vises, hvordan du også kan opnå dette ved at konfigurere ER-destinationer som et sæt individuelle destinationsposter, når hver post er konfigureret til en individuel destination:
 
-![Destinationsside for elektronisk rapportering, der har handlingsafhængige destinationsindstillinger for et ER-format, når alle destinationspost er konfigureret til en enkelt destination](./media/er-destination-action-dependent-01a.png)
+![Destinationsside for elektronisk rapportering, der har handlingsafhængige destinationsindstillinger for et ER-format, når alle destinationspost er konfigureret til en enkelt destination.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Hvis der er angivet en handlingskode for det kørende ER-format, men der ikke er konfigureret nogen destinationer for denne handlingskode, anvendes [standarden](electronic-reporting-destinations.md#default-behavior) for funktionsmåden til destinationen.
@@ -84,7 +84,7 @@ Når der køres et ER-format, og der er leveret brugerhandlinger for de brugere,
 
 I følgende illustration vises et eksempel på dialogboksen **Destinationer for elektronisk rapporteringsformat**, der vises, når en fritekstfaktura [bogføres](../../../finance/accounts-receivable/create-free-text-invoice-new.md), og ER-formatet **Fritekstfaktura (Excel)** køres for at generere dette dokument, hvis handlingen **Printer** er klargjort, og der er konfigureret ER-destinationer for dette format, som vist tidligere i dette emne.
 
-![Dialogboks, der giver mulighed for at ændre de oprindeligt konfigurerede ER-destinationer for det kørende ER-format](./media/er-destination-action-dependent-02.gif)
+![Dialogboks, der giver mulighed for at ændre de oprindeligt konfigurerede ER-destinationer for det kørende ER-format.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Hvis du har konfigureret ER-destinationer for flere komponenter i det kørende ER-format, tilbydes der en indstilling separat for hver konfigureret komponent i ER-formatet.
@@ -103,7 +103,7 @@ Følg disse trin for at kontrollere den brugerhandlingskode, der er leveret.
 6. På siden **Fejlfindingslogs for konfigurationer** skal du filtrere ER-kørselslogfiler for at finde logfilen til din ER-formatkørsel.
 7. Gennemse de logposter, der skal indeholde den post, der viser den angivne brugerhandlingskode, hvis der er angivet en handling for kørsel af ER-format.
 
-    ![Siden Kørselslog for elektronisk rapportering har oplysninger om den brugerhandlingskode, der er angivet for den filtrerede kørsel af et ER-format](./media/er-destination-action-dependent-03.png)
+    ![Siden Kørselslog for elektronisk rapportering har oplysninger om den brugerhandlingskode, der er angivet for den filtrerede kørsel af et ER-format.](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">Liste over forretningsdokumenter (bølge 1)</a>
 

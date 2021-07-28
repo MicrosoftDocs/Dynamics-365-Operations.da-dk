@@ -2,7 +2,7 @@
 title: Konfigurere personaleparametre
 description: Dette emne forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4c93e3d2644a380e3d5d2247961a8b6fb34568
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24d30aa06805b530cc069be0517279a11dff9ed4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052403"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356530"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurere personaleparametre
 
@@ -30,7 +30,7 @@ Indstillingerne for nogle personaleparametre deles på tværs af firmaer, mens i
 
 To sider bruges til at angive personaleparametre. For parametre, der deles på tværs af firmaer, skal du bruge siden **Delte parametre for personale**. For parametre, der er specifikke for virksomheden (med andre ord gælder indstillingerne for en enkelt virksomhed), skal du bruge siden **Human Resourcesparametre**.
 
-![Gå til Personaleparametre](./media/hr-employee-self-service-human-resources-parameters.png)
+![Gå til Human Resources-parametre.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 På siden **Human Resourcesparametre** er indstillingerne fordelt på seks faner:
 
@@ -51,14 +51,15 @@ Hver fane indeholder oplysninger, der vedrører en enkelt virksomhed.
 
 Indstillingerne på fanen **Generelt** definerer visningen af oplysninger om fravær, skader og sygdom og nye ansættelser. Indstillingerne på denne fane kan også definere nogle standardposter, der vises, mens du arbejder. Denne fane giver dig mulighed for at:
 
-- Vælge den farve, der skal anvendes på åbne fraværsposter
-- Angive det typografiark, der skal bruges til rapporter
-- Aktivere integration mellem kurser og fraværsregistrering
+- Vælge den farve, der skal anvendes på åbne fraværsposter.
+- Angive det typografiark, der skal bruges til rapporter.
+- Aktivere integration mellem kurser og fraværsregistrering.
 - Vælg den fraværskode, der bruges til at styre denne integration.
 - Angiv, hvor længe hændelser med skades- og sygdomstilfælde skal opbevares.
 - Angiv det standard-id, der vises, når der ansættes en ny arbejder.
+- Angiv den dato, der bruges til at beregne års tjeneste. 
 
-![Fanen Generelt](./media/hr-setup-parameters-general.png)
+![Fanen Generelt.](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>Rekruttering
 
@@ -76,7 +77,7 @@ I Human Resources kan du bruge fanen **Kompensation** til at vælge at begrænse
 
 Du kan finde flere oplysninger om kompensation under [Oversigt over lønstrukturer](hr-compensation-overview.md).
 
-![Fanen Kompensation](./media/hr-setup-parameters-compensation.png)
+![Fanen Kompensation.](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>Nummerserier
 
@@ -96,13 +97,13 @@ Du kan finde flere oplysninger under [Oversigt over nummerserier](../fin-ops-cor
 > [!NOTE]
 > Antallet af timer, der er arbejdet, må ikke overstige 1.250, og længden af beskæftigelsen må ikke overstige 12 måneder. Disse maksimale værdier er i overensstemmelse med gældende lovgivning i USA.
 
-![Fanen Nummerserier](./media/hr-setup-parameters-number-sequences.png)
+![Fanen Nummerserier.](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>FMLA
 
 Du kan angive FMLA-berettigelseskrav og FMLA-berettigelsestimer under fanen FMLA. Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværsparametre](hr-leave-and-absence-parameters.md).
 
-![Fanen FMLA](./media/hr-setup-parameters-fmla.png)
+![Fanen FMLA.](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>Medarbejderselvbetjening
 
@@ -115,7 +116,7 @@ Indstillingerne under fanen **Medarbejderselvbetjening** har indflydelse på, hv
 
 Du kan finde flere oplysninger om opsætning af medarbejderselvbetjening i [Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md).
 
-![Fanen Medarbejderselvbetjening](./media/hr-setup-parameters-employee-self-service.png)
+![Fanen Medarbejderselvbetjening.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Selvbetjening for leder
 
@@ -129,13 +130,13 @@ Indstillingerne under fanen **Selvbetjening for leder** har indflydelse på, hva
 
 Du kan finde flere oplysninger om opsætning af lederselvbetjening i [Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md).
 
-![Fanen Selvbetjening for leder](./media/hr-setup-parameters-manager-self-service.png)
+![Fanen Selvbetjening for leder.](./media/hr-setup-parameters-manager-self-service.png)
 
-## <a name="benefits-management"></a>Frynsegodeadministration
+## <a name="benefits-management"></a>Personalegodeadministration
 
 Under fanen Frynsegodeadministration kan du konfigurere mailindstillinger for Frynsegodeadministration. Du kan finde flere oplysninger om konfiguration og brug af Frynsegodeadministration i [Oversigt over Administration af frynsegoder](hr-benefits-management-overview.md).
 
-![Fanen Frynsegodeadministration](./media/hr-setup-parameters-benefits-management.png)
+![Fanen Frynsegodeadministration.](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>Orlov og fravær
 
@@ -145,7 +146,7 @@ Du kan finde flere oplysninger om opsætning og brug af orlov og fravær under [
 
 Under fanen **Betalingsmetoder** kan du vælge de betalingsmetoder, der understøttes af din organisation. Du kan finde flere oplysninger om konfiguration af kompensation under [Oversigt over lønstrukturer](hr-compensation-overview.md).
 
-![Fanen Betalingsmetoder](./media/hr-setup-parameters-payment-methods.png)
+![Fanen Betalingsmetoder.](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

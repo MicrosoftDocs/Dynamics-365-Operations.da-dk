@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054902"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346268"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimere forespørgsler til Dataverse-virtuelle tabeller
 
@@ -50,11 +50,11 @@ Et eksempel, hvor du kan se denne indvirkning, er forespørgsler på enheden Arb
 - **Timeout for forespørgsel**: Forespørgslen får muligvis timeout og returnerer følgende fejl: "Der blev anskaffet et token til kald af Finance and Operations, men Finance and Operations returnerede en fejl af typen InternalServerError".
 - **Uventet fejl** : Forespørgslen kan returnere en fejltype 400 med følgende meddelelse: "Der opstod en uventet fejl".
 
-  ![Fejltype 400 på HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![Fejltype 400 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Begrænsning**: Forespørgslen kan overforbruge serverressourcer og blive udsat for begrænsning. I dette tilfælde returnerer forespørgslen følgende fejl: "Der blev anskaffet et token til kald af Finance and Operations, men Finance and Operations returnerede en fejl af typen 429". Yderligere oplysninger om begrænsning af Human Resources finder du i [Ofte stillede spørgsmål om begrænsning](./hr-admin-integration-throttling-faq.md).
 
-  ![Fejltype 429 på HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![Fejltype 429 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
 ## <a name="resolution"></a>Løsning
 
@@ -96,7 +96,7 @@ Hvis du oplever en eller flere af de ovennævnte tegn på, at ydeevnen er langso
 2. I vinduet **Hent data** skal du angive **Common Data Service** i søgefeltet, vælge connectoren **Common Data Service** og vælge **Opret forbindelse**.
 3. Angiv organisationens URI for dit Dataverse-miljø i feltet **URL-adresse til serveren** i Common Data Service-vinduet, og vælg **OK**.
   
-   ![Angiv URI for dit Dataverse-miljø](./media/PowerBIDataverseURLSetup.png)
+   ![Angiv URI'en for dit Dataverse-miljø.](./media/PowerBIDataverseURLSetup.png)
   
 4. Udvid **Enheder**-noden i vinduet Navigator.
 5. I søgefeltet skal du angive **mshr_hcmworkerbaseentity** og vælge enheden.
@@ -113,7 +113,7 @@ Hvis du oplever en eller flere af de ovennævnte tegn på, at ydeevnen er langso
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Opdatere forespørgslen i Avanceret editor til Power Query-editor](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Opdatere forespørgslen i Avanceret editor til Power Query-editor.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Vælg **Udført**.
 
@@ -138,7 +138,7 @@ Hvis f.eks. et af de datafelter, der er medtaget på en side i appen, refererer 
 
 Du kan bruge [Power Apps-overvågning](/powerapps/maker/monitor-overview) til at sikre, at det kun er de kolonner, du skal bruge, der medtages i forespørgslen for at hente dataene til Power App. Du kan få vist den URL-adresse, der er konstrueret til operationen getRows, for at sikre, at de kolonner, du har valgt til din app, er optimale, når du henter dataene.
 
-![Bruge Power Apps-overvågning til at analysere getData-operationen](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![Bruge Power Apps-overvågning til at analysere getData-handlingen.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### <a name="filtering-the-data-query"></a>Filtrering af dataforespørgslen
 

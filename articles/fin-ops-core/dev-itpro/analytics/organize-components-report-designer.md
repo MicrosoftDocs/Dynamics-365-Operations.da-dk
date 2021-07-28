@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb3e09ad849b250ed3f1d7aec910b44d591cb88e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e1672ee1777150a7f78c03d07dc79df118a3632f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751626"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347870"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisere rapportkomponenter i Report Designer
 
@@ -47,7 +47,7 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 ### <a name="create-a-report-group"></a>Oprette en rapportgruppe
 
 1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
-2. I menuen **Filer** skal du klikke på **Ny** &gt; **Rapportgruppedefinition** for at åbne en ny rapportgruppe i fremviservinduet. Du kan også klikke på knappen **Rapportgruppe** ![Rapportgruppe](media/report-group.gif "Rapportgruppe") på værktøjslinjen.
+2. I menuen **Filer** skal du klikke på **Ny** &gt; **Rapportgruppedefinition** for at åbne en ny rapportgruppe i fremviservinduet. Du kan også klikke på knappen **Rapportgruppe** ![Rapportgruppe.](media/report-group.gif "Rapportgruppe") på værktøjslinjen.
 3. Klik på fanen **Rapportgruppe**. Hvis du vil tilsidesætte oplysningerne om de enkelte rapportdefinitioner til generering af denne rapport, skal du markere afkrydsningsfeltet **Tilsidesæt regnskab, detaljer og datoindstillinger fra individuelle rapportdefinitioner**. Firmanavnet, detaljeringsniveauet, foreløbig-indstillingen og datooplysninger angives automatisk, men du kan stadig foretage opdateringer.
 4. Hvis du vil have genereret flere rapporter, der viser rapporteringsvalutaerne, skal du markere afkrydsningsfeltet **Medtag alle rapporteringsvalutaer**. Derefter kan du åbne flere visninger ved at klikke på knappen **Valuta** i webfremviseren, når du får vist rapporten.
 5. I feltet **Rapporter i gruppe** skal du klikke på **Tilføj** for at vælge de rapporter, der skal medtages i rapportgruppen. Hvis du vil vælge flere rapporter i dialogboksen **Tilføj**, skal du holde tasten Ctrl nede, mens du markerer rapporter. Når du er færdig med at vælge rapporter, skal du klikke på **OK**.
@@ -58,7 +58,7 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
 2. Dobbeltklik på den rapportgruppe, der skal redigeres.
 3. Under fanen **Rapportgruppe** kan du foretage de ønskede ændringer.
-4. I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem](media/save.gif "Gem") på værktøjslinjen.
+4. I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem.](media/save.gif "Gem") på værktøjslinjen.
 
 > Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
 
@@ -66,7 +66,7 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 
 1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
 2. Åbn den rapportgruppe, der skal genereres.
-3. Klik på knappen **Opret rapport** ![Opret rapport](media/generate-report.gif "Generér rapport") for at oprette rapporter.
+3. Klik på knappen **Opret rapport** ![Opret rapport.](media/generate-report.gif "Generér rapport") for at oprette rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 

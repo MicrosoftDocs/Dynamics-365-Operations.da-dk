@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 225fd6a07fee29414ac30a4602b4dfccdc4d742b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 698c556b8839ae1d657ef02796fe08ab9cd3621e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800608"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346028"
 ---
 # <a name="create-legal-entities"></a>Opret juridiske enheder
 
@@ -44,7 +44,7 @@ Gør følgende for at oprette en ny juridisk enhed i Dynamics 365 Commerce.
 1. Indtast eller vælg en værdi i feltet **Land/område**.
 1. Vælg **OK**. 
 
-   ![Oprettelse af en juridisk enhed](media/legal-entities.png)
+   ![Oprettelse af en juridisk enhed.](media/legal-entities.png)
 
 1. Angiv følgende generelle oplysninger om den juridiske enhed i sektionen **Generelt**: 
    1. Angiv et søgenavn, hvis et søgenavn er påkrævet. Et søgenavn er et alternativt navn, der kan bruges til at søge efter den pågældende juridiske enhed. 
@@ -67,7 +67,7 @@ Gør følgende for at oprette en ny juridisk enhed i Dynamics 365 Commerce.
 
 Følgende billede viser et eksempel på en juridisk enhed.
 
-![Sektion for generel juridisk enhed](media/legal-entities-general.png)
+![Sektion for generel juridisk enhed.](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

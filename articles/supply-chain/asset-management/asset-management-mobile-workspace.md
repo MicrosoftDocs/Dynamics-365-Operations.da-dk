@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4e2843ecb30b75d2a8d97ceff5b5825e0bd704
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837939"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360119"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Bruge arbejdsområdet til aktivstyring på mobilenhed
 
@@ -60,7 +60,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
-    ![Vælg et arbejdsområde](media/am-mobile-01.png "Vælg et arbejdsområde")
+    ![Vælg et arbejdsområde.](media/am-mobile-01.png "Vælg et arbejdsområde")
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>Få vist tildelte arbejdsordrejob i en kalendervisning
 
@@ -72,7 +72,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Vælg et arbejdsordrejob på listen for at se joboplysninger: oplysninger om aktiv og arbejdssted samt andre navigationslinks for at få vist **vedhæftede filer**, **kontrollister**, **værktøjer**, **aktivtællere**, **notater**, **kladder**.
 
-    ![Få vist tildelte arbejdsordrejob i en kalendervisning](media/am-mobile-02.png "Få vist tildelte arbejdsordrejob i en kalendervisning")
+    ![Få vist tildelte arbejdsordrejob i en kalendervisning.](media/am-mobile-02.png "Få vist tildelte arbejdsordrejob i en kalendervisning")
 
 ## <a name="create-a-work-order-job"></a>Opret et arbejdsordrejob
 
@@ -90,7 +90,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Vælg **Udført**.
 
-    ![Skærmbilledet Tilføj linje](media/am-mobile-03.png "Skærmbilledet Tilføj linje")
+    ![Skærmbilledet Tilføj linje.](media/am-mobile-03.png "Skærmbilledet Tilføj linje")
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>Føj en vedhæftet fil til et arbejdsordrejob
@@ -112,7 +112,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Vælg **Udført**.
 
-    ![Se og tilføje tilknytninger til et arbejdsordrejob](media/am-mobile-04.png "Se og tilføje tilknytninger til et arbejdsordrejob")
+    ![Se og tilføje tilknytninger til et arbejdsordrejob.](media/am-mobile-04.png "Se og tilføje tilknytninger til et arbejdsordrejob")
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>Få vist vedligeholdelsestjeklisten for et arbejdsordrejob
 
@@ -129,7 +129,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Vælg knappen Tilbage (**<**) for at vende tilbage til den forrige side.
 
-    ![Vedligeholdelsestjekliste og linjedetaljer](media/am-mobile-05.png "Vedligeholdelsestjekliste og linjedetaljer")
+    ![Vedligeholdelsestjekliste og linjedetaljer.](media/am-mobile-05.png "Vedligeholdelsestjekliste og linjedetaljer")
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>Få vist og opdatere aktivtællere på et arbejdsordrejob
 
@@ -146,7 +146,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Angiv en ny tællerværdi, og vælg **Udført**.
 
-    ![Se og opdatere aktivtællere](media/am-mobile-06.png "Se og opdatere aktivtællere")
+    ![Se og opdatere aktivtællere.](media/am-mobile-06.png "Se og opdatere aktivtællere")
 
 ## <a name="register-consumption-on-a-work-order-job"></a>Registrer forbrug på et arbejdsordrejob
 
@@ -178,7 +178,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
     1. Angiv **Kostpris** for udgiftsregistreringen.
     1. Vælg **Udført**.
 
-    ![Opdatere en arbejdsordrekladde](media/am-mobile-07.png "Opdatere en arbejdsordrekladde")
+    ![Opdatere en arbejdsordrekladde.](media/am-mobile-07.png "Opdatere en arbejdsordrekladde")
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>Opdater livscyklustilstand på en arbejdsordre
 
@@ -194,7 +194,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Vælg **Udført**.
 
-    ![Opdater livscyklustilstand på en arbejdsordre](media/am-mobile-08.png "Opdater livscyklustilstand på en arbejdsordre")
+    ![Opdater livscyklustilstand på en arbejdsordre.](media/am-mobile-08.png "Opdater livscyklustilstand på en arbejdsordre")
 
 ## <a name="create-a-maintenance-request"></a>Oprette en vedligeholdelsesanmodning
 
@@ -216,7 +216,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Vælg **Udført**.
 
-    ![Oprette en vedligeholdelsesanmodning](media/am-mobile-09.png "Oprette en vedligeholdelsesanmodning")
+    ![Oprette en vedligeholdelsesanmodning.](media/am-mobile-09.png "Oprette en vedligeholdelsesanmodning")
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>Føj en vedhæftet fil til en vedligeholdelsesanmodning
 
@@ -236,7 +236,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1. Vælg **Udført**.
 
-    ![Føj en vedhæftet fil til en vedligeholdelsesanmodning](media/am-mobile-10.png "Føj en vedhæftet fil til en vedligeholdelsesanmodning")
+    ![Føj en vedhæftet fil til en vedligeholdelsesanmodning.](media/am-mobile-10.png "Føj en vedhæftet fil til en vedligeholdelsesanmodning")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

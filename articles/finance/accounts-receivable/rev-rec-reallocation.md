@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2d961cb4eedda6265b4acd8dbd6f82e8026373fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37c3da576b79d3ae9f6983b5046343a7c8120de6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820563"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356119"
 ---
 # <a name="revenue-recognition-reallocation"></a>Omplacering af indtægtsføring
 
@@ -48,7 +48,7 @@ Da der kan foretages omplacering på en salgsordre, som er delvist eller fuldt f
 
 Alle organisationer skal beslutte, om rettelsen kun skal opdatere Finans, eller om den også skal opdatere Debitor. Den beslutning, der nås, bestemmer den relevante indstilling i **Bogfør fakturakorrektioner til debitor**-indstillingen under fanen **Indtægtsføring** på siden **Finansparametre** (**Indtægtsføring \> Opsætning \> Finansparametre**). Den relevante indstilling afhænger af det specifikke scenario. Du kan få flere oplysninger om mulige scenarier ved at bruge linkene i afsnittet [Scenarier til genplacering](#scenarios-for-reallocation) i dette emne.
 
-[![Fanen Indtægtsføring på siden Finansparametre](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![Fanen Indtægtsføring på siden Finansparametre.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 Hvis indstillingen **Bogfør fakturakorrektioner i Debitor** er angivet til **Ja**, giver genplaceringsprocessen følgende resultat:
 
@@ -76,7 +76,7 @@ Som det er blevet nævnt, kan du kun opdatere Finans, eller du kan opdatere båd
 
 Hvis du vil starte omfordelingsprocessen, skal du vælge **Omfordel pris med nye ordrelinjer** i en salgsordre, du skal allokere. Du kan også gå til **Indtægtsføring \> Periodiske opgaver \> omfordel pris med nye ordrelinjer** og derefter angive de relevante filtre, f.eks. debitorkontoen.
 
-[![Genalloker pris med siden med nye ordrelinjer](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
+[![Genalloker pris med siden med nye ordrelinjer.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
 Det øverste gitter på siden **Alloker pris med nye ordrelinjer** kaldes **Salg**. Den viser en oversigt over salgsordrerne for kunden. Vælg de salgsordrer, der skal ændres. Du kan ikke vælge projektsalgsordrer, da projektsalgsordrer ikke kan omfordeles. Du kan også ikke vælge salgsordrer, der allerede har et lokations-id, da salgsordrer uden for projektet kun kan omfordeles én gang. Hvis en salgsordre har et genplacerings-id, er den allerede blevet markeret til genplacering af en anden bruger.
 
@@ -86,13 +86,13 @@ Når du er færdig med at vælge de nødvendige salgsordrelinjer, kan du bruge k
 
 - **Opdater genplacering** - Beregn de nye omsætningsprisbeløb for de valgte salgsordrelinjer. Hvis en linje er blevet fjernet eller annulleret, udføres genplaceringen kun for de eksisterende linjer, du har valgt. I følgende illustration vises et eksempel på salgsordrelinjer, inden genplaceringen opdateres.
 
-    [![Salgsordrelinjer, før genplaceringen opdateres](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
+    [![Salgsordrelinjer, før genplaceringen opdateres.](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
     De nye omsætningsprisbeløb vises i kolonnen **Omallokeret beløb** i **Linjer**-gitteret. På dette tidspunkt er omplaceringen behandlet, men den er endnu ikke beregnet. I følgende illustration vises et eksempel på salgsordrelinjer, når genplaceringen er opdateret.
 
-    [![Salgsordrelinjer efter genplaceringen opdateres](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
+    [![Salgsordrelinjer efter genplaceringen opdateres.](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
-- **Proces** - Bearbejd eller bogfør de genallokerede omsætningspriser. Når du har valgt denne knap, kan du ikke tilbageføre omplaceringen. Hvis du ikke har valgt **Opdater genplacering**, før du vælger **Proces**, køres omplaceringen automatisk.
+- **Proces** – Bearbejd eller bogfør de genallokerede omsætningspriser. Når du har valgt denne knap, kan du ikke tilbageføre omplaceringen. Hvis du ikke har valgt **Opdater genplacering**, før du vælger **Proces**, køres omplaceringen automatisk.
 
     - Hvis der ikke er faktureret en salgsordrelinje, opdateres omsætningsprisbeløbene på eventuelle salgsordrer, der er valgt til genplacering.
     - Hvis en eller flere salgsordrelinjer er faktureret, vil regnskabsposterne blive rettet, og eventuelle detaljer i omsætningsplanen, der er oprettet for den fakturerede salgsordrelinje, bliver rettet.
@@ -100,7 +100,7 @@ Når du er færdig med at vælge de nødvendige salgsordrelinjer, kan du bruge k
 - **Forventet bilag** - Se en prøveversoin af de regnskabsposter, der er oprettet for eventuelle salgsordrelinjer, der er faktureret. Hvis der ikke er faktureret linjer, vises intet. Hvis du ikke har valgt **Opdater genplacering**, før du vælger **Forventet bilag**, køres omplaceringen automatisk.
 - **Omplacering af omsætning** - Åbn en side, der viser fordeling af omsætningspris for alle de valgte linjer. Du kan ikke ændre oplysningerne på siden. Den viser de linjebeløb, der blev brugt til omplaceringen.
 
-    [![Linjebeløb, der blev brugt til omplacering](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+    [![Linjebeløb, der blev brugt til omplacering.](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Nulstil data for den valgte debitor** – Hvis omplaceringsprocessen er startet, men ikke er fuldført, skal du kun rydde dataene i tabellen med genplaceringer for den valgte debitor. Du kan f.eks. markere flere salgsordrelinjer til omplacering, lade siden være åben uden at vælge **Proces**, og derefter får siden timeout. I dette tilfælde forbliver salgsordrelinjerne markeret og vil ikke være tilgængelige for en anden bruger til at fuldføre genplaceringsprocessen. Siden kan også være tom, når den åbnes. I denne situation kan knappen **Nulstil data for den valgte debitor** bruges til at rydde ubehandlede salgsordrer, så en anden bruger kan fuldføre genplaceringsprocessen.
 

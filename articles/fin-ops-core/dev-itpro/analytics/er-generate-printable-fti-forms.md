@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9e64899e0bbdb5a9d8899e865de9ee32aae59382
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f5556195a1a787420061fbcaef5d97ac47823221
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751650"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358999"
 ---
 # <a name="generate-printable-fti-forms"></a>Generere FTI-formularer, der kan udskrives
 
@@ -77,7 +77,7 @@ Hvis du vil generere FTI-formularer ved hjælp af ER-strukturen, kan du tildele 
 3. Vælg dokumentniveauet for at angive omfanget af fakturaer til behandling.
 4. Vælg ER-formatet for det angivne dokumentniveau.
 
-![Opsætning af udskriftsstyring](media/FTIbyGER-PMSetting.png)
+![Opsætning af udskriftsstyring.](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
 > Kun ER-formater, der bruger rodbeskrivelsen **FreeTextInvoice** fra datamodellen **CustomersInvoicing** vises i feltet **Opslag af rapportformat** for det valgte format.
@@ -87,9 +87,9 @@ FTI-formularer genereres inden for ER-strukturen på samme måde, som SSRS-rappo
 
 Du kan vælge fakturaer for at generere FTI-formularer, efter område eller efter markering. 
 
-![Fakturavalg](media/FTIbyGER-InvoiceSelection.png)
+![Fakturavalg.](media/FTIbyGER-InvoiceSelection.png)
 
-![Forhåndsvisning af faktura](media/FTIbyGER-InvoiceExcelPreview.png)
+![Forhåndsvisning af faktura.](media/FTIbyGER-InvoiceExcelPreview.png)
 
 Når du bruger ER-formater til at udskrive FTI-formularer på denne måde, bruges standarddestinationerne for ER-filen. Du kan ikke ændre denne destination. Du kan finde oplysninger om konfiguration af ER-destinationer til ER-formater i [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md).
 
@@ -101,9 +101,9 @@ Du kan også generere FTI-formularer, når du bogfører en FTI, ved at aktivere 
 > - **Navn:** ERFormatDestinationRuntimeMaintain
 > - **Label:** Vedligehold destination for elektronisk rapportformat under kørsel
 
-![Destination for elektronisk rapportering](media/FTIbyGER-ERFileDestinationSetting.png)
+![Destination for elektronisk rapportering.](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Destination for elektronisk rapportformat](media/FTIbyGER-ERFileDestinationUsage.png)
+![Destination for elektronisk rapportformat.](media/FTIbyGER-ERFileDestinationUsage.png)
 
 ER-strukturen understøtter i øjeblikket følgende destinationer for oprettede dokumenter:
 
@@ -128,7 +128,7 @@ Du kan hente ER-eksempelkonfigurationer, der kan bruges som skabelon for FTI-lø
 ### <a name="features-that-are-implemented-in-the-sample-er-format"></a>Funktioner, der er implementeret i ER-eksempelformatet
 I konfigurationen til ER-eksempelformatet bruges en Excel-fil som en skabelon til at generere FTI-formularer.
 
-![Formatdesigner](media/FTIbyGER-ERFormat.png)
+![Formatdesigner.](media/FTIbyGER-ERFormat.png)
 
 I øjeblikket understøtter dette ER-eksempelformat følgende funktioner til at generere FTI-formularer:
 
@@ -179,7 +179,7 @@ Ud over den genererede fakturaformular kan giroindbetalingskort genereres på f�
 - For den juridiske enhed, der bruger land/område-konteksten for Finland, og som har mindst én bankkonto, der er markeret som **Girokonto** og **Bankstregkode**. 
 - For en faktura, der er markeret som krævet til det tilknyttede **Finske** betalingsbilag.
 
-![Girokort](media/FTIbyGER-GiroSlip.PNG)
+![Girokort.](media/FTIbyGER-GiroSlip.PNG)
 
 > [!NOTE]
 > ER-eksempelformatet er konfigureret til valgfrit at generere giroindbetalingskortet i det separate regneark.
@@ -194,7 +194,7 @@ Brug følgende elementer af ER-eksempelformatet til at konfigurere maildestinati
 - Du kan få adgang til emneteksten til mail via følgende ER-udtryk: **Emailing.TxtToUse.Subject**.
 - Du kan få adgang til brødteksten til mail via følgende ER-udtryk: **Emailing.TxtToUse.Body**.
 
-![Indstillinger for destination](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+![Indstillinger for destination.](media/FTIbyGER-ERFileDestinationSettingEmail.png)
 
 Standardteksten for mailens emne- og brødtekst er defineret i ER-eksempelformatet. Sproget afhænger af formatets etiketter. Denne standardtekst bruges til mails, hvis der ikke er tilføjet en brugerdefineret organisationsmailskabelon, der har det foruddefinerede id **ERFTITMP**.
 
@@ -203,9 +203,9 @@ Standardteksten for mailens emne- og brødtekst er defineret i ER-eksempelformat
 
 Hvis den organisationsmailskabelon, der har det foruddefinerede id **ERFTITMP**, er blevet føjet til den juridiske enhed, som du behandler fakturaen for, bruges skabelonen til mailemnet og -brødteksten til at generere mailen. 
 
-![Skabelon til organisationsmail](media/FTIbyGER-EmailTemplate.png)
+![Skabelon til organisationsmail.](media/FTIbyGER-EmailTemplate.png)
 
-![Overfør mailskabelon](media/FTIbyGER-EmailTemplateBody.png)
+![Overfør mailskabelon.](media/FTIbyGER-EmailTemplateBody.png)
 
 ER-udtrykket **Emailing.TxtToUse.Subject** i ER-eksempelformatet er konfigureret til at erstatte alle forekomster af pladsholderen %1 i det behandlede faktura-id.
 
@@ -218,7 +218,7 @@ Udtrykket **Emailing.TxtToUse.Body** i eksempelformatet er konfigureret til de f
 - "%5" erstattes med stillingsbetegnelse for firmaets kontaktperson.
 - "%6" erstattes med mailadressen på firmaets kontaktperson.
 
-![E-mail](media/FTIbyGER-Email.PNG)
+![Email.](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)

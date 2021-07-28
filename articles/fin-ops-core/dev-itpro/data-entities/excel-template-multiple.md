@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 001795914c683a6182b885b79be7e225ad80e5cd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1fcf9f45eb7f3ef111d66c2c30ec529269b0685b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750558"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352906"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Dataskabeloner med flere regneark
 
@@ -32,13 +32,13 @@ Lad os tage et eksempel, hvor der er én Excel-fil med regnearkene **Lokationer*
 
 Hvis du tilføjer den anden enhed, **Lagersteder**, uden at forlade formularen **Tilføj fil**, gør regnearksopslaget det muligt for dig at vælge regnearket **Lagersteder** uden at skulle overføre filen igen. Den eneste grund til at overføre en ny fil er, hvis **Lagersteder**-dataene er i en anden fil.
 
-![Flere regneark](./media/AddFileMultipleWorkSheets.png)
+![Flere regneark.](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Rette regneark til enhedstilknytning
 
 Tilknytningen af regnearket til en dataenhed i importjobbet kan rettes i gitteret. Kolonnen **Regneark** i gitteret viser de regneark fra den fil, der blev tilknyttet. Du kan vælge et andet regneark i rullemenuen. Hvis det valgte regneark allerede er knyttet til en enhed i dataprojektet, beder systemet dig om at bekræfte ændringen. Det anbefales, at du retter alle tilknytninger i gitteret.
 
-![Opdatere tilknytning af regneark](./media/UpdateMappings.png)
+![Opdatere tilknytning af regneark.](./media/UpdateMappings.png)
 
 ## <a name="re-map-to-a-new-file"></a>Tilknytte igen til en ny fil
 

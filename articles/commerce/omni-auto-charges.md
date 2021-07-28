@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022701"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353054"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerede automatiske gebyrer for omni-kanal
 
@@ -43,7 +43,7 @@ Med den avancerede automatiske gebyrfunktion kan POS-brugere få systematiske be
 
 På siden **Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Commerce-parametre** skal du gå til fanen **Kundeordrer**. I oversigtspanelet **Gebyrer** skal du indstille **Brug avancerede automatiske gebyrer** til **Ja**.
 
-![Parametre for avancerede automatiske gebyrer](media/advancedchargesparameter.png)
+![Parametre for avancerede automatiske gebyrer.](media/advancedchargesparameter.png)
 
 Når avancerede autogebyrer er aktiveret, bliver brugerne ikke længere bedt om manuelt at indtaste et forsendelsesgebyr i POS-klienten, når de opretter en kundeordre af typen send alle eller send valgte. POS-gebyrer beregnes systematisk og føjes til POS-transaktionen (hvis der findes en tilsvarende tabel for automatiske gebyrer, der svarer til kriteriet for den ordre, der oprettes). Brugere kan også tilføje eller vedligeholde gebyrer på hoved- eller linjeniveau manuelt via nye, tilføjede POS-handlinger, der kan føjes til POS-skærmlayoutet.
 
@@ -86,7 +86,7 @@ Konfigurer to forskellige automatiske gebyrer på overskriftsniveau. Konfigurer 
 
 For Fragt-leveringsgebyrerne skal du i området Linjer på siden **Automatiske gebyrer** definere et gebyr, der gælder for ordrer mellem 0,01 USD og 100 USD som 10,00 USD. Opret en anden gebyrlinje for at angive, at ordrer over 100,01 USD er gebyrfri.
 
-![Eksempel på to tabeller med automatiske gebyr](media/headerchargesexample.png)
+![Eksempel på to tabeller med automatiske gebyr.](media/headerchargesexample.png)
 
 For Luft-leveringsgebyrerne skal du i området Linjer i formularen Automatiske gebyrer definere et gebyr på 20,00 USD, der skal anvendes på alle ordrer (mellem en værdi på 0,01 og 9.999.999 USD).
 
@@ -116,7 +116,7 @@ Gå til **Debitor \> Konfiguration af gebyrer \> Automatiske gebyrer**.
 
 Indstil **Niveau** rullemenuen til **Linje**, og opret en ny post til automatiske gebyrer for alle kunder og for det specifikke produkt eller produktgruppe, hvor opsætningsgebyrerne bliver opkrævet.
 
-![Eksempel på et tabel med automatiske tillæg på linjeniveau](media/linechargesexample.png)
+![Eksempel på en tabel med automatiske tillæg på linjeniveau.](media/linechargesexample.png)
 
 Send gebyrerne til Commerce Scale Unit/Kanaldatabase, så POS kan udnytte dem, ved at køre jobbet **Distributionsplan 1040**.
 
@@ -136,7 +136,7 @@ En forhandler gør en undtagelse fra typiske processer ved at tilbyde at levere 
 
 Sørg for, at den gebyrkode, der skal bruges i dette scenario, er konfigureret korrekt, ved at gå til **Debitor \> Konfiguration af gebyrer \> Tillæg** for at definere en tillægskode, der er relevant for scenariet.
 
-![Eksempel på gebyrer](media/chargesexample.png)
+![Eksempel på gebyrer.](media/chargesexample.png)
 
 Hvis gebyret skal betragtes som et gebyr, der er relateret til "forsendelse" med henblik på forsendelsesrelaterede rabatter eller kampagnetilbud, skal du indstille **Forsendelsesgebyr** i gebyrkoden til **Ja**. Hvis dette gebyr også må refunderes systematisk under behandlingen af en returtransaktion i POS-programmet, kan du indstille **Kan refunderes** til **Ja**. Flaget **Kan refunderes** kan kun anvendes, når **Brug avancerede automatiske gebyrer** parameter er indstillet til **Ja**.
 

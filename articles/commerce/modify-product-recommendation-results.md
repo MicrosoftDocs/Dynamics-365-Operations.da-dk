@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfe04881e71558ed326025d8f2545c3c611df3aa
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a319007b32a8a52bd4a0c0af337ed8fd4062cfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796964"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346662"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Juster resultater for AI-ML-baserede produktanbefalinger
 
@@ -51,7 +51,7 @@ Afhængigt af din virksomhed kan listen over mest solgte produkter give et andet
 
 Listen over de mest solgte produkter har én parameter, der kan ændres:
 
-![Eksempel på standardparameter for liste over bedst sælgende](./media/examplebestsellingparameters.PNG)
+![Eksempel på standardparameter for liste over mest solgte produkter.](./media/examplebestsellingparameters.PNG)
 
 1. **Medtag salg fra de seneste X dage** - Salgstransaktioner, der er foretaget inden for det angivne antal dage før den aktuelle dato, kan bruges til at vælge produkterne. Standardværdien ovenfor antyder, at alle køb, der er foretaget af et produkt inden for de seneste 30 dage, bruges til at bestemme produktets placering på listen over bedst sælgende produkter. 
 
@@ -65,13 +65,13 @@ Listen over de mest solgte produkter har én parameter, der kan ændres:
 1.  Hvis du vil føje produkter til tabellen, skal du vælge **Tilføj linje**. 
 1.  Søg efter et produkts **Navn** eller **Produktnummer** i produktkolonnen.
 
-    ![Eksempel på søgning efter et produkt på listen Nyt produkt](./media/examplenewlistconfiguration1.png)
+    ![Eksempel på søgning efter et produkt på listen Nyt produkt.](./media/examplenewlistconfiguration1.png)
 
 1.  I kolonnen Linjetype skal du vælge en af to indstillinger:
     -   **Medtag** – tvinger et produkt op forrest på listen
     -   **Udeluk** – fjerner et produkt, så det ikke bliver vist på listen
     
-    ![Eksempel på, hvordan et produkt medtages eller udelukkes fra listen Nyt produkt](./media/examplenewlistconfiguration2.png)
+    ![Eksempel på, hvordan et produkt medtages eller udelukkes fra listen Nyt produkt.](./media/examplenewlistconfiguration2.png)
 
 1.  Hvis du ændrer **Visningsrækkefølge**, ændres den rækkefølge, som de produkter, der er markeret **medtag**, vises i på listen.
     - Hvis to produkter har samme værdi for **visningsrækkefølge**, kan den endelige rækkefølge af disse to resultater afvige fra administrationens.
@@ -87,11 +87,11 @@ Et *oprindelsesprodukt* er det produkt, du vil generere resultater for. I forbin
 Udfør følgende trin for manuelt at tilføje eller fjerne resultater for et oprindelsesprodukt:
 1.  Vælg **Oprindelsesprodukt**. 
 1.  Søg i kolonnen **Produkt** efter et produkt ud fra **Navn** eller **Produktnummer**.
-![Eksempel på søgning efter et produkt på listen Ofte købt sammen](./media/exampleFBTlistconfiguration1.png)
+![Eksempel på søgning efter et produkt på listen Ofte købt sammen.](./media/exampleFBTlistconfiguration1.png)
 1. I kolonnen **Linjetype** skal du vælge en af to indstillinger:
     - **Medtag** – tvinger et produkt op forrest på listen
     - **Udeluk** – fjerner et produkt, så det ikke bliver vist på listen     
-![Eksempel på at medtage eller udelukke et produkt fra listen Ofte købte sammen](./media/exampleFBTlistconfiguration2.png)
+![Eksempel på at medtage eller udelukke et produkt fra listen Ofte købte sammen.](./media/exampleFBTlistconfiguration2.png)
 1.  Hvis du vil fjerne produkter fra tabellen, skal du markere den linje, du vil fjerne, og vælge Fjern.
 
 

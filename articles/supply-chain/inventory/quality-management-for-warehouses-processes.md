@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 42280c811e1f4ed5d33c66f5a8634417a61be905
-ms.sourcegitcommit: f9b145ef4a81cec81f420871b4130b05db4f4500
+ms.openlocfilehash: 79eb7d750869ef365ad117ecc024afc8db2edbf7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301323"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348823"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerstedsprocesser.
 
@@ -43,7 +43,7 @@ Funktionen _Kvalitetsstyring for lagerstedsprocesser_ genererer automatisk arbej
 
 Når funktionen _Kvalitetsstyring for lagerstedsprocesser_ er slået til, ændres opsætningen af enheder for nøglelokationsstyring og kvalitetsstyring. I følgende illustration vises en oversigt over de enheder, der muliggør kvalitetsordrer for lagerstedsprocesser. Tekst i parentes angiver anbefalede handlinger, når kvalitetsstyringen blev anvendt, før funktionen _Kvalitetsstyring for lokationsstyringsprocesser_ blev aktiveret.
 
-![Enheder for kvalitetsstyring](media/quality-management-entity-diagram.png "Enheder for kvalitetsstyring")
+![Enheder for kvalitetsstyring.](media/quality-management-entity-diagram.png "Enheder for kvalitetsstyring")
 
 ## <a name="enablers-the-quality-item-sampling-and-quality-order-work-order-types"></a>Aktiveringer: Arbejdsordretyperne Kvalitetsvareprøve og Kvalitetsordre
 

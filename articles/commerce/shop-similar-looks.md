@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 06b5721c423330b8840bb546bdb144c3189c25bb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c350e6d6bfd4e699c55a4c0a57695b1b718b7167
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795375"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357756"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Aktivér anbefalinger af "Køb tilsvarende"
 
@@ -68,7 +68,7 @@ Hvis du vil aktivere anbefalingsfunktionen "Køb tilsvarende" i Commerce Headqua
 
 I følgende illustration vises funktionen **Køb tilsvarende** på siden **Funktionsstyring** i Commerce Headquarters.
 
-![Funktionen Køb tilsvarende på siden Funktionsstyring i Commerce Headquarters](./media/enableshopsimilarlooks.png)
+![Funktionen Køb tilsvarende på siden Funktionsstyring i Commerce Headquarters.](./media/enableshopsimilarlooks.png)
 
 Når de foregående opgaver er udført, forbedres POS-klienter automatisk med et kontekstafhængigt panel for **Køb tilsvarende produkter**. Hvis du vælger **Vis flere**, kan brugere af POS-terminalen føres til en dedikeret side af typen "Køb tilsvarende", der kan filtreres yderligere.
 
@@ -88,7 +88,7 @@ Hvis du vil tilføje knappen **Køb tilsvarende** til en PDP ved hjælp af Comme
 
 I følgende illustration vises afkrydsningsfeltet **Aktiver link til Køb tilsvarende** og knappen **Køb tilsvarende** i et PDP-eksempel i webstedsgeneratoren.
 
-![I følgende illustration vises afkrydsningsfeltet Aktiver link til Køb tilsvarende og knappen Køb tilsvarende på en PDP i webstedsgeneratoren.](./media/SSLecomtooling.png)
+![I følgende illustration vises afkrydsningsfeltet Aktivér link til Køb tilsvarende og knappen Køb tilsvarende på en PDP i webstedsgeneratoren.](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

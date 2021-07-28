@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c9dfad3615cfe4f9937f0dc30c4684cd14f420c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894142"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348134"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Angive brugerdefinerede lagersteder til oprettede dokumenter
 
@@ -41,7 +41,7 @@ Alle opgaverne i dette emne kan fuldføres i **USMF**-firmaet.
 
 Hvis du vil generere de dokumenter, som du planlægger at tilføje en brugerdefineret lagerplacering for, skal du [importere](er-download-configurations-global-repo.md) konfigurationen af ER-formatet **Rul anlægsaktiver fremad** til den aktuelle topologi.
 
-![Siden Konfigurationslager](./media/er-custom-storage-generated-files-import-format.png)
+![Siden Konfigurationslager.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Køre rapporten Rul anlægsaktiver fremad
 
@@ -52,7 +52,7 @@ Hvis du vil generere de dokumenter, som du planlægger at tilføje en brugerdefi
 5. Gå til feltet **Formattilknytning**, og vælg **Rul anlægsaktiver fremad**.
 6. Vælg **OK**.
 
-![Kørselsdialogboks for rapporten Rul anlægsaktiver fremad](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Kørselsdialogboks for rapporten Rul anlægsaktiver fremad.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 I Microsoft Excel skal du gennemse det udgående dokument, der er oprettet, og som kan hentes. Denne funktionsmåde er [standardfunktionsmåden](electronic-reporting-destinations.md#default-behavior) for et ER-format, der ikke er konfigureret [destinationer](electronic-reporting-destinations.md) for, og som kører i interaktiv tilstand.
 

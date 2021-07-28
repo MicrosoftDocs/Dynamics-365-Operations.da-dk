@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 598145bccadbeb44d33adb96388f6af5a8a45f5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937006"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352682"
 ---
 # <a name="clienteling-overview"></a>Kundeaktiviteter, oversigt
 
@@ -68,7 +70,7 @@ Hvis du vil aktivere funktionen kundeaktiviteter i dit miljø, skal du følge di
 
 1. I arbejdsområdet **Administration af funktioner** skal du filtrere funktionerne ved hjælp af modulet **Detail og handel**.
 
-    ![Kundeaktiviteter på listen over funktioner i Commerce-modulet](./media/Enable_clienteling.png "Kundeaktiviteter på listen over funktioner i modulet Detail og handel")
+    ![Kundeaktiviteter på listen over funktioner i Commerce-modulet.](./media/Enable_clienteling.png "Kundeaktiviteter på listen over funktioner i modulet Detail og handel")
 
 2. Aktiver funktionen **Kundeaktiviteter** ved at vælge **Aktivér nu**.
 3. På siden **Commerce-parametre** under fanen **Nummerserie** skal du vælge rækken **Identifikator for klientbog**. Dernæst skal du i feltet **Nummerseriekode** vælge en nummerserie. Systemet bruger denne nummerserie til at tildele et ID til klientbøger.
@@ -83,7 +85,7 @@ Hvis du vil aktivere funktionen kundeaktiviteter i dit miljø, skal du følge di
 
 6. På siden **Commerce-parametre** under fanen **Kundeaktiviteter** skal du i feltet **Attributgruppe for klientbog** vælge den attributgruppe, som du netop har oprettet.
 
-    ![Valgt attributgruppe for klientbog](./media/Client%20book%20attributes.png "Valgt attributgruppe for klientbog")
+    ![Valgt attributgruppe for klientbog.](./media/Client%20book%20attributes.png "Valgt attributgruppe for klientbog")
 
 7. Hvis du vil registrere aktiviteter, der finder sted på POS, skal du definere aktivitetstyperne på siden **Aktivitetstyper** (**Retail og Commerce \> Kunder \> Aktivitetstyper**).
 
@@ -95,7 +97,7 @@ Hvis du vil aktivere funktionen kundeaktiviteter i dit miljø, skal du følge di
 
 Når du har fuldført denne procedure, kan salgsmedarbejderne åbne siden med kundedetaljer på POS og tilføje kunder til deres klientbog, få vist og registrere aktiviteter og noter for kunder og målrette kunder ved at bruge attributterne kunder og klientbog til at filtrere klientbogen. Følgende illustration viser et eksempel på en klientbog.
 
-![Eksempel på en klientbog](./media/client_book.png "Eksempel på en klientbog")
+![Eksempel på en klientbog.](./media/client_book.png "Eksempel på en klientbog")
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>Aktiver integration af Customer Insights med Commerce
 

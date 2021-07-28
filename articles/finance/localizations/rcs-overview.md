@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RCS, Regulatory Configuration Services, Localization
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216556"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358116"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -41,7 +43,7 @@ RCS har følgende egenskaber:
 
 Du kan tilmelde dig eller logge på RCS fra siden [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
 
-![RCS-tilmelding og logon](media/202103_RCS%20Marketing%20page_updated_1.jpg)
+![RCS-tilmelding og logon.](media/202103_RCS%20Marketing%20page_updated_1.jpg)
 
 På siden **Regulatory Configuration Service** skal du gennemgå og acceptere de supplerende vilkår og betingelser for brug af tjenesten og derefter vælge en af følgende knapper:
 
@@ -91,7 +93,7 @@ Du kan finde flere oplysninger om relaterede komponenter i følgende emner:
 
 Når du tilmelder dig RCS fra tjenestesiden, kan der opstå et problem, der er relateret til Azure Active Directory (Azure AD). Den fejlmeddelelse, du modtager, angiver, at tilmelding til RCS i øjeblikket er slået fra og skal være slået til, før du kan fuldføre tilmeldingsprocessen.
 
-![Fejlmeddelelse om RCS-tilmelding](media/01_RCSSignUpError.jpg)
+![Fejlmeddelelse om RCS-tilmelding.](media/01_RCSSignUpError.jpg)
 
 Problemet opstår, fordi du er spærret for tilmelding til ad hoc-abonnementer, og egenskaben `AllowAdHocSubscriptions` skal aktiveres i din lejer. 
 

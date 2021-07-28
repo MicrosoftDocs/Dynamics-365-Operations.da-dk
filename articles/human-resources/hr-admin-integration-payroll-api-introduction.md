@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058554"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360562"
 ---
 # <a name="payroll-integration-api-introduction"></a>Introduktion til lønintegrations-API
 
@@ -26,7 +26,7 @@ ms.locfileid: "6058554"
 
 Dette dokument beskriver API til Dynamics 365 Human Resources-lønintegration. API muliggør strømlinet totalintegration mellem Human Resources og partnerlønsystemer. Den integrerede erfaring begynder i Human Resources med medarbejderprofil, løn og fradrag og oplysninger om bidrag. Når du ansætter en medarbejder og angiver de nødvendige profil- og lønoplysninger i Human Resources, trækkes disse oplysninger ind i lønsystemet, som skal bruges ved behandling af løn. Opdateringer, der er foretaget for medarbejderen eller lønoplysninger, trækkes også ind til brug i senere lønkørsler.
 
-![Lønintegrationsflow](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![Lønintegrationsflow.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 Human Resources har følgende komponenter for at aktivere integrationen:
 
@@ -60,7 +60,7 @@ Oplysninger om generering af virtuelle tabeller til API finder du i [Konfigurere
 
 I følgende diagram vises forholdene i API grafisk. Flere typer har fremmede nøgler til andre allerede eksisterende enheder i Human Resources, som ikke illustreres her. Dette dokument indeholder oplysninger om enheder, der er specifikke for scenarier til lønintegration. Men der er mange andre enheder i Dataverse Web-API til Human Resources, som også kan være relevante for din integration. Nogle af disse enheder refereres til i relationer med fremmede nøgler eller navigationsegenskaber.
 
-![Lønintegration, API-datamodel](media/hr-admin-payroll-api-data-model.png)
+[![Lønintegration, API-datamodel.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## <a name="payroll-employee-and-related-entities"></a>Lønmedarbejder og relaterede enheder
 
@@ -68,7 +68,8 @@ Enheder:
 
 - [Medarbejders løn](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Lønarbejderadresse](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Plan for fast løn](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Plan for fast løn](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Plan for variabel løn](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Lønstillingsjob](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Lønstilling](hr-admin-integration-payroll-api-payroll-position.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50ace9a2f8f5fa39dc927e11f0acd707167ef126
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837891"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346220"
 ---
 # <a name="register-consumption"></a>Registrere forbrug
 
@@ -54,7 +54,7 @@ Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre i visse
 
 Skærmbilledet nedenfor viser et eksempel på time- og vareregistreringer på en arbejdsordre i **Arbejdsordrekladder**.
 
-![Figur 1](media/01-consumption.png)
+![Figur 1.](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Opdele timer i arbejdsordrer med flere arbejdsordrejob
@@ -73,13 +73,13 @@ Hvis en arbejdsordre indeholder flere arbejdsordrejob, kan du registrere arbejds
 
 6. Indsæt det antal arbejdstimer, der skal opdeles, i feltet **Timer**.
 
-    ![Figur 2](media/02-consumption.png)
+    ![Figur 2.](media/02-consumption.png)
 
 7. Klik på **OK**.
 
 *Eksempel:* I skærmbilledet nedenfor vises kladdelinjer for en arbejdsordre, der indeholder tre arbejdsordrejob. Den første linje, der indeholder tre arbejdstimer, er opdelt, og der er registreret én arbejdstime for hvert job i en arbejdsordre. Når registreringslinjerne på tre timer er oprettet, bestemmer du, hvad du vil gøre med den oprindelige timeregistreringslinje (den første linje i eksemplet). Du kan beholde den, som den er, eller slette den. 
 
-![Figur 3](media/03-consumption.png)
+![Figur 3.](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Økonomiske dimensioner for registrering af forbrug
 

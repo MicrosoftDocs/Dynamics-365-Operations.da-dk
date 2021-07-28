@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016126"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354947"
 ---
 # <a name="cost-and-date-control"></a>Dato- og omkostningsstyring
 
@@ -58,7 +58,7 @@ De beregninger, der foretages for aktiver, arbejdssteder og arbejdsordrer, er n�
 
     I figuren herunder vises et eksempel på dialogboksen **Omkostningsstyring for aktiv**.
 
-    ![Dialogboksen Omkostningsstyring for aktiv](media/01-controlling-and-reporting.png)
+    ![Dialogboksen Omkostningsstyring for aktiv.](media/01-controlling-and-reporting.png)
 
 10. Klik på **Sammenlæg pr.**-knapperne på siden **Omkostningsstyring for aktiv** for at få vist det nødvendige detaljeringsniveau i beregningen. De valgte **Sammenlæg pr.**-knapper er fremhævet. Klik på en knap for at aktivere eller deaktivere den.
 
@@ -71,7 +71,7 @@ I skærmbilledet herunder vises et eksempel på beregningsresultater i **Omkostn
 - Feltet **Åben bindende omkostning** viser forpligtelser til at betale for varer, timer og tjenester, du har bestilt eller modtaget, men endnu ikke betalt for. 
 - Når alle forbrugsregistreringer er bogført, vises de tilknyttede omkostninger i feltet **Faktiske omkostninger**.
 
-![Eksempel på beregningsresultater i Omkostningsstyring for aktiv](media/02-controlling-and-reporting.png)
+![Eksempel på beregningsresultater i Omkostningsstyring for aktiv.](media/02-controlling-and-reporting.png)
 
 Du kan også foretage en omkostningsberegning ved at vælge flere aktiver i **Alle aktiver** eller **Aktive aktiver**. Derefter skal du klikke på knappen **Omkostningsstyring** under fanen **Generelt**. I dialogboksen **Omkostningsstyring for aktiv** indsættes de valgte aktiver automatisk i feltet **Aktiv** i oversigtspanelet **Poster, der skal indgå**. Klik på **OK**, så der vises en omkostningsberegning for de valgte aktiver. Den samme procedure kan udføres for arbejdssteder i **Alle arbejdssteder** eller **Aktive arbejdssteder** og for arbejdsordrer i **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
@@ -99,7 +99,7 @@ I skærmbilledet herunder vises et eksempel på beregningsresultater i **Datosty
 - Feltet **Gns. slutforsinkelse** viser forskellen i dage mellem den planlagte slutdato for en arbejdsordre sammenlignet med den faktiske slutdato. Hvis den faktiske slutdato f.eks. er tre dage efter den planlagte slutdato, vises "3" i dette felt.  
 - Felterne **Forekomster** viser antallet af gange, som afvigelser forekommer vedrørende planlagt og faktisk startdato samt planlagt og faktisk slutdato for arbejdsordren.
 
-![Eksempel på beregningsresultater i Datostyring af arbejdsordre](media/03-controlling-and-reporting.png)
+![Eksempel på beregningsresultater i Datostyring af arbejdsordre.](media/03-controlling-and-reporting.png)
 
 
 

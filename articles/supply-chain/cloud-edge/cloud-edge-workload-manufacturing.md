@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270529"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352730"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder
 
@@ -44,7 +44,7 @@ Dette emne beskriver, hvordan produktionsarbejdsbyrder virker sammen med sky- og
 
 Når følgende illustration vises, er produktions livscyklussen opdelt i tre faser: *Planlæg*, *Udfør* og *Færdiggør*.
 
-[![Produktionsudførelsesfaser, når der bruges et enkelt miljø](media/mes-phases.png "Produktionsudførelsesfaser, når der bruges et enkelt miljø")](media/mes-phases-large.png)
+[! [Produktionsudførelsesfaser, når der bruges et enkelt miljø](media/mes-phases.png "Produktionsudførelsesfaser, når der bruges et enkelt miljø."](media/mes-phases-large.png)
 
 Fasen _Planlæg_ omfatter produktdefinition, planlægning, oprettelse og planlægning af ordrer og frigivelse. Frigivelsestrinnet angiver overgangen fra fasen _Planlæg_ til fasen _Udfør_. Når en produktionsordre frigives, vil produktionsordrejobbene være synlige i produktionen og være klar til udførelse.
 
@@ -54,7 +54,7 @@ Når et produktionsjob er markeret som fuldført, flyttes det fra fasen _Udfør_
 
 Som følgende illustration viser er fasen _Udfør_ opdelt som en separat belastning, når der bruges skalaenheder.
 
-[![Produktionsudførelsesfaser ved brug af skalaenheder](media/mes-phases-workloads.png "Produktionsudførelsesfaser ved brug af skalaenheder")](media/mes-phases-workloads-large.png)
+[![Produktionsudførelsesfaser, når der bruges vægtenheder](media/mes-phases-workloads.png "Produktionsudførelsesfaser, når der bruges vægtenheder."](media/mes-phases-workloads-large.png)
 
 Modellen går nu fra en installation med én forekomst til en model, der er baseret på hubben og skalaenhederne. Faserne _Planlæg_ og _Færdiggør_ kører som baggrundshandlinger på hubben, og arbejdsbyrden for produktionsudførelse kører på skalaenhederne. Data overføres asynkront mellem hubben og skalaenhederne.
 
@@ -87,7 +87,7 @@ Selvom jobbet normalt køres automatisk, kan du køre det manuelt på et hvilket
 
 Hvis du vil gennemgå registreringsbehandlingsloggen, skal du logge på hubben og gå til **Produktionsstyring \> Periodiske opgaver \> BackOffice-styring af arbejdsbyrder \> Behandlingslog for rå registrering**. På siden **Behandlingslog for rå registrering** vises en liste over behandlede rå registreringer og status for hver registrering.
 
-![Siden Behandlingslog for rå registrering](media/mes-processing-log.png "Siden Behandlingslog for rå registrering")
+![Siden Behandlingslog for rå registrering.](media/mes-processing-log.png "Siden Behandlingslog for rå registrering")
 
 Du kan arbejde på enhver registrering på listen ved at markere den og derefter vælge en af følgende knapper i handlingsruden:
 

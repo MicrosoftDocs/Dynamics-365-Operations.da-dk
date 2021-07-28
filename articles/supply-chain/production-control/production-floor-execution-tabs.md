@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 4e2b3746e690623e347e0319ab1b55f2645a5e23
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5bf8ce93d2c804325305672d79b633210a790cf0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814674"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347656"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designe grænsefladen til kørsel af produktion
 
@@ -32,7 +32,7 @@ På siden **Konfigurer kørsel af produktion** kan du oprette og konfigurere fan
 
 Hver fane er inddelt i fire sektioner, som vist i følgende illustration.
 
-![Fanelayout](media/pfe-tab-layout.png "Fanelayout")
+![Fanelayout.](media/pfe-tab-layout.png "Fanelayout")
 
 Følgende elementer vises i illustrationen:
 
@@ -47,7 +47,7 @@ Følg disse trin for at oprette og konfigurere en ny fane:
 
 1. Vælg **Design faner** i handlingsruden for at åbne siden **Design faner**.
 
-    ![Siden Design faner](media/pfe-design-tabs.png "Siden Design faner")
+    ![Siden Design faner.](media/pfe-design-tabs.png "Siden Design faner")
 
 1. Vælg **Ny** i handlingsrude.
 
@@ -67,7 +67,7 @@ Når du har designet alle de faner, du har brug for, kan du knytte dem til en ko
 
 1. Gå til **Produktionsstyring \> Opsætning \> Produktionsudførelse \> Konfigurer kørsel af produktionsudstyr**.
 
-    ![Konfiguration af udførelse af produktionsgulv](media/pfe-config-prod-floor-execution.png "Konfiguration af udførelse af produktionsgulv")
+    ![Konfiguration af udførelse af produktionsgulv.](media/pfe-config-prod-floor-execution.png "Konfiguration af udførelse af produktionsgulv")
 
 1. Vælg **Tilføj** i oversigtspanelet **Valg af fane**.
 

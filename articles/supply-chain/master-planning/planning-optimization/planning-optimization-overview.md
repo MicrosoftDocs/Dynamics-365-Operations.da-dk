@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 5ecfa8ac4db050ee1e38f3b420d81beba19b9409
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9b55a48847e9c6201e7a93a2fb5d6622b581d785
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812949"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354707"
 ---
 # <a name="planning-optimization-overview"></a>Oversigt over Planlægningsoptimering
 
@@ -33,7 +33,7 @@ Hvis du vil bruge Planlægningsoptimering, skal du installere tilføjelsesprogra
 
 I følgende illustration vises fordelen ved at køre Planlægningsoptimering inden for kontorets åbningstider.
 
-![Fordelen ved at køre Planlægningsoptimering inden for kontorets åbningstider](media/PlanningOptimization1.png)
+![Fordelen ved at køre Planlægningsoptimering inden for kontorets åbningstider.](media/PlanningOptimization1.png)
 
 ## <a name="improved-performance"></a>Forbedret ydeevne
 
@@ -62,11 +62,11 @@ Hvis tilføjelsesprogrammet Planlægningsoptimering afinstalleres, fjernes alle 
 
 Følgende illustration viser dataflowet.
 
-![Dataflowet for kørsler af regenerering](media/PlanningOptimization2.png)
+![Dataflowet for kørsler af regenerering.](media/PlanningOptimization2.png)
 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 
-[Introduktion til Planlægningsoptimering](get-started.md)
+[Start her med planlægningsoptimering](get-started.md)
 
 [Analyse af om Planlægningsoptimering passer til](planning-optimization-fit-analysis.md)
 
