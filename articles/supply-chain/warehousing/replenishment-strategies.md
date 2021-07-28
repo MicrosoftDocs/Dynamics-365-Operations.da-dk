@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8ddc7022a1e9a7db14aaa67efcd442025b0f9d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814506"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344466"
 ---
 # <a name="replenishment-strategies"></a>Genopfyldningsstrategier
 
@@ -45,7 +45,7 @@ Før du kan bruge denne funktion, skal den være slået til i dit system. Admini
 
 Få adgang til skabelonerne ved at gå til **Lokationsstyring \> Konfiguration \> Genopfyldning \> Genopfyldningsskabeloner**. I afsnittet **Oversigt** skal du vælge eller oprette en opfyldningsskabelon for bølgeefterspørgsel, hvor feltet **Genopfyldningstype** er angivet til *Bølgebehov*. Opret derefter genopfyldningsskabelonlinjerne i sektionen **Detaljer om genopfyldningsskabelon**. For hver linje i feltet **Genopfyldningsstrategi** skal du vælge den genopfyldningsstrategi, du vil bruge.
 
-![Siden Genopfyldningsskabeloner](media/ReplenTempWaveDmdMaxLocCap.png "Siden Genopfyldningsskabeloner")
+![Siden Genopfyldningsskabeloner.](media/ReplenTempWaveDmdMaxLocCap.png "Siden Genopfyldningsskabeloner")
 
 Hvis kolonnen **Genopfyldningsstrategi** ikke vises i gitteret i sektionen **Detaljer om genopfyldningsskabelon**, skal du kontrollere, at funktionen er slået til, og at den valgte genopfyldningsskabelon har genopfyldningstypen *Bølgebehov*.
 
@@ -85,7 +85,7 @@ Hvis genopfyldningsstrategien indstilles til *Maksimal lokationskapacitet*, får
 - **Genopfyldningsarbejde 1:** Pluk 4 kasser fra bulkvarelokation, og placer dem i lokationspluk-001.
 - **Genopfyldningsarbejde 2:** Pluk 5 kasser fra bulkvarelokation, og placer dem i lokationspluk-002.
 
-[![Eksempel 1](media/ReplenTemp_example_1.png "Eksempel 1")](media/ReplenTemp_example_1_large.png)
+[![Eksempel 1.](media/ReplenTemp_example_1.png "Eksempel 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
@@ -109,7 +109,7 @@ Afhængigt af indstillingen af **Tillad opdeling** i lokationsvejledningen for g
 
 Resultaterne er forskellige på grund af de oplysninger, der er tilgængelige, når du opretter arbejdet. Når **Tillad opdeling** er angivet til *Ja* i lokationsvejledningerne for genopfyldningspluk, er du sikker på, at du kan finde 160 stk. Derfor kan du oprette arbejde for det pågældende antal. Men når indstillingen **Tillad opdeling** er angivet til *Nej*, ved du ikke, at der findes 160 stk. Da det ekstra antal, du har besluttet at genopfylde, var 3 kasser, dropper du det ekstra antal og afprøver det oprindelige antal igen.
 
-[![Eksempel 2](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
+[![Eksempel 2.](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
 
 Hvis du vil hente maksimumantallet til genopfyldningslokationer, skal du derfor angive indstillingen **Tillad opdeling** til *Ja* i lokationsvejledningerne for genopfyldningspluk.
 

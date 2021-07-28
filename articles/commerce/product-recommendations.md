@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 044a5c21e4ebf1bf83edc74335e655b9388bc1d4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fc7d47897d1a332ba1af7305525f9e75bca12afd
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795591"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337497"
 ---
 # <a name="product-recommendations-overview"></a>Oversigt over produktanbefalinger
 
@@ -32,6 +32,9 @@ Microsoft Dynamics 365 Commerce kan bruges til at få vist produktanbefalinger p
 Produktanbefalinger gør det nemt og hurtigt for kunderne at finde produkter, som de ønsker, mens de har en god oplevelse. Krydssalg og mersalg kan også bruges til at hjælpe kunder med at finde flere produkter, end de oprindeligt havde tænkt sig at købe. Når anbefalingerne bruges til at forbedre produktregistrering, kan de skabe flere konverteringsmuligheder, bidrage til at øge salgsindtægterne og endda forbedre kundetilfredshed og -fastholdelse.
 
 I e-handel er produktanbefalingerne baseret på Microsofts anbefalinger fra teknologier for maskinel indlæring i stor målestok.
+
+Denne tjeneste er et tilføjelsesprogrammet til Dynamics 365 Commerce. Du kan finde flere oplysninger ved at hente den seneste [licensvejledning til Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 
 ## <a name="recommendation-service"></a>Anbefalingstjeneste
 
@@ -47,7 +50,7 @@ Produktanbefalinger er tilgængelige for følgende scenarier:
 - **På en butiksside til gennemsyn eller landingsside i e-handel**: Hvis kunder eller butiksansatte besøger en butiks side, kan anbefalingsprogrammet foreslå produkter på de nye lister **Nyt**, **Mest solgte** og **Mest populære**.
 - **På siden Produktdetaljer:** Hvis kunder eller butiksansatte besøger siden **Produktdetaljer**, foreslår anbefalingsprogrammet yderligere varer, der formentlig også er interessante at købe. Disse varer vises på listen **Personer synes også om**.
 - **På siden Transaktion eller ved kassen:** Anbefalingsprogrammet foreslår varer på basis af hele listen med varer i kurven. Disse varer vises på listen **Ofte købt sammen**.
-- **Personlige anbefalinger:** Forhandlere kan give logon-kunder en personligt **udvalgt** liste samt nye funktioner, der gør det muligt at tilpasse eksisterende listescenarier efter den pågældende kunde. Du kan få mere at vide i [Aktivere tilpassede anbefalinger.](personalized-recommendations.md).
+- **Personlige anbefalinger:** Forhandlere kan give kunder, der er logget på, en personligt **udvalgt** liste samt nye funktioner, der gør det muligt at tilpasse eksisterende listescenarier efter den pågældende kunde. Du kan få mere at vide i [Aktivere tilpassede anbefalinger.](personalized-recommendations.md).
 
 ### <a name="types-of-product-recommendations"></a>Typer af produktanbefalinger
 

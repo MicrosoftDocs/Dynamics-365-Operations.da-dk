@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 04ffa8e56b72727c079db07f38bfae675ae2abb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117127"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344950"
 ---
 # <a name="search-results-module"></a>Modul til søgeresultater
 
@@ -38,7 +38,7 @@ Yderligere oplysninger om arts- og søgeresultatsider finder du i [oversigtsover
 
 I følgende illustration vises et eksempel på et søge resultater-side for kategori på Fabrikam-webstedet.
 
-![Eksempel på en søgeresultatside på Fabrikam-webstedet](./media/SimpleCategoryLandingDressCategory.png)
+![Eksempel på en søgeresultatside på Fabrikam-webstedet.](./media/SimpleCategoryLandingDressCategory.png)
 
 ## <a name="search-results-module-properties"></a>Modulegenskaber til søgeresultater
 

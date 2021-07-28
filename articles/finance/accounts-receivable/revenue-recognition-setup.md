@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 294ad788c97850880b479d3c3c44cc19d55e9a6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0646f8b6371ffbb5d203f8fd062999fb22613240
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837147"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345620"
 ---
 # <a name="revenue-recognition-setup"></a>Opsætning af Indtægtsføring
 [!include [banner](../includes/banner.md)]
@@ -72,7 +72,7 @@ Indstillingerne for indtægtsføring konfigureres på fanen **Indtægtsføring**
     - Angiv indstillingen til **Nej** for at begrænse bogføringen af den korrigerende transaktion til Finans. Når denne indstilling er angivet til **Nej**, oprettes der ikke yderligere dokumenter under Debitor for den interne regnskabsrettelse. Når fakturaen betales, bruger udligningsprocessen den gamle regnskabspost til at bogføre eventuelle kasserabatter, realiserede gevinster eller tab.
     - Angiv denne indstilling til **Ja** for automatisk at oprette et tilbageført dokument og en ny faktura for den korrigerende transaktion i Debitor. Da denne rettelse er en intern regnskabsrettelse, sendes eller kommunikeres de nye dokumenter ikke til kunden. Det tilbageførte dokument udlignes med den oprindelige faktura, og den nye rettede faktura betales af kunden. Bemærk, at alle tre dokumenter vises i rapporter, f.eks. kundeopgørelsen.
 
-[![Oplysninger om opsætning](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Oplysninger om opsætning.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Indtægtstidsplaner
 
@@ -82,7 +82,7 @@ Hvis du registrerer indtægt efter milepæl, anbefales det, at du opretter en in
 
 Indtægtstidsplaner oprettes på siden **Indtægtstidsplaner** (**Indtægtsføring \> Opsætning \> Indtægtstidsplaner**).
 
-[![Indtægtstidsplaner](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Indtægtstidsplaner.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Angiv beskrivende værdier i felterne **Indtægtstidsplan** og **Beskrivelse**. Følgende yderligere indstillinger bruges til at oprette indtægtstidsplanen, når fakturaen bogføres.
 
@@ -104,7 +104,7 @@ Angiv beskrivende værdier i felterne **Indtægtstidsplan** og **Beskrivelse**. 
 
 Vælg knappen **Oplysninger om indtægtstidsplan** for at få vist de generelle perioder og de procentdele, der registreres i hver periode. Værdien for **Registrer procent** opdeles som standard ligeligt over antallet af perioder. Hvis registreringsgrundlaget er angivet til enten **Månedligt** eller **Forekomster**, kan registreringsprocenten blive ændret. Når du ændrer registreringsprocenten, får du besked om, at totalen ikke er lig med 100 procent. Hvis du modtager meddelelsen, kan du fortsætte med at redigere linjer. Den samlede procentdel skal dog være lig med 100, før du lukker siden.
 
-[![Oplysninger om indtægtstidsplan](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+[![Oplysninger om indtægtstidsplan.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Opsætning af lager
 
@@ -120,7 +120,7 @@ Indtægten på salgsordrelinjen udskydes, hvis der er defineret en indtægtstids
 
 I feltet **Indtægtstidsplan** skal du vælge den indtægtstidsplan, der repræsenterer den periode, hvor indtægten skal udskydes. Indtægtstidsplanen angives automatisk på salgsordrelinjen, og oplysningerne for tidsplanen oprettes, når fakturaen bogføres.
 
-### <a name="define-the-revenue-price"></a>Angiv indtægtsprisen
+### <a name="define-the-revenue-price"></a>Definer indtægtsprisen
 
 Der kan oprettes varegrupper og frigivne produkter ved hjælp af enten medianpris-metoden eller rabatfordelings-metoden. Begge metoder kræver forskellige indstillinger på siden **Frigivne produkter**:
 
@@ -137,9 +137,9 @@ Der kan oprettes varegrupper og frigivne produkter ved hjælp af enten medianpri
     - **Maksimumtolerance** – Angiv den tilladte procentdel over medianprisen.
     - **Minimumtolerance** – Angiv den tilladte procentdel under medianprisen.
 
-Når du er færdig med at konfigurere indstillingerne for det frigivne produkt, skal du angive indtægtsprisen manuelt ved at angive prisen for den rimelige værdi eller medianprisen (hvis du anvender median-metoden) på siden **Indtægtspriser** (gå til **Indtægtsføring \> Opsætning \> Lageropsætning \> Frigivne produkter**, og derefter skal du i handlingsruden på fanen **Sælg** i gruppen **Indtægtsføring** vælge **Indtægtspriser**).
+Når du er færdig med at konfigurere indstillingerne for det frigivne produkt, skal du definere indtægtsprisen manuelt ved at angive prisen for handelsværdien eller medianprisen (hvis du anvender median-metoden) på siden **Indtægtspriser** (gå til **Indtægtsføring \> Opsætning \> Lageropsætning \> Frigivne produkter**, og derefter skal du i handlingsruden på fanen **Sælg** i gruppen **Indtægtsføring** vælge **Indtægtspriser**).
 
-[![Indtægtspriser](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Indtægtspriser.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Den indtægtspris, der er defineret manuelt på denne side, bruges til at bestemme fordelingen af indtægtsprisen for de enkelte salgsordrer baseret på de definerede kriterier. Hvert kriterie sammenholdes med salgsordrelinjen for at bestemme den indtægtspris, der skal bruges i fordelingsprocessen.
 
@@ -179,9 +179,9 @@ Når du opretter en bundtvare, skal du opsætte to felter på siden **Frigivne p
 - På oversigtspanelet **Opret** i feltet **Produktionstype** skal varen oprettes som en styklistevare.
 - På oversigtspanelet **Generelt** i feltet **Bundt** skal varen markeres som en bundtvare.
 
-Komponenterne skal derefter tildeles til den overordnede bundt/styklistevare på siden **Styklisteversioner** (gå til **Indtægtsføring \> Opsætning \> Lager- og produktopsætning \> Frigivne produkter**, og i handlingsruden på fanen **Opret** i gruppen **Stykliste** skal du vælge **Styklisteversioner**). Du kan finde flere oplysninger i dokumentationen for opsætning af styklistevarer.
+Komponenterne skal derefter tildeles til den overordnede bundt/styklistevare på siden **Styklisteversioner** (gå til **Indtægtsføring \> Opsætning \> Lager- og produktopsætning \> Frigivne produkter**, og i handlingsruden på fanen **Opret** i gruppen **Stykliste** skal du vælge **Styklisteversioner**). Du kan finde flere oplysninger i dokumentationen for opsætning af styklister.
 
-[![Frigivne produkter, styklistetidsplaner](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Frigivne produkter, styklistetidsplaner.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Hvis den overordnede bundtvare og bundtkomponenterne er indstillet til fordeling, fordeles bundt-indtægtsprisen til komponenterne ud fra deres procentdele af indtægtsbidrag.
 

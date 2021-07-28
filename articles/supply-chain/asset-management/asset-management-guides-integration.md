@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908561"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344264"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Styring af aktiver) med Dynamics 365 Guides
 
@@ -56,38 +56,38 @@ Du kan knytte en hjælpelinje til en vedligeholdelsestjekliste ved at følge dis
     1. På oversigtspanelet **Vedligeholdelsestjeklistelinjer** skal du vælge den linje, du vil knytte hjælpelinjen til.
     1. Vælg **Tilføj hjælpelinje** på oversigtspanelet **Tilknyttede hjælpelinjer**.
 
-        ![Knytte en hjælpelinje til en vedligeholdelsestjeklistelinje](media/am-guides-integration-add-guide.png "Knytte en hjælpelinje til en vedligeholdelsestjeklistelinje")
+        ![Knytte en hjælpelinje til en vedligeholdelsestjeklistelinje.](media/am-guides-integration-add-guide.png "Knytte en hjælpelinje til en vedligeholdelsestjeklistelinje")
 
     1. Vælg en hjælpelinje i feltet **Navn**, og vælg derefter **Gem**.
 
-        ![Vælge en hjælpelinje i feltet Navn](media/am-guides-integration-select-guide.png "Vælge en hjælpelinje i feltet Navn")
+        ![Vælge en hjælpelinje i feltet Navn.](media/am-guides-integration-select-guide.png "Vælge en hjælpelinje i feltet Navn")
 
 1. Knyt vedligeholdelsestjeklisteskabelonen til en jobtype:
 
     1. [Opret en vedligeholdelsesjobtype](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type), eller vælg en eksisterende vedligeholdelsesjobtype.
     1. Vælg **Standarder for vedligeholdelsesjobtype** i handlingsruden.
 
-        ![Knappen Standarder for vedligeholdelsesjobtype](media/am-guides-integration-job-defaults.png "Knappen Standarder for vedligeholdelsesjobtype")
+        ![Knappen Standarder for vedligeholdelsesjobtype.](media/am-guides-integration-job-defaults.png "Knappen Standarder for vedligeholdelsesjobtype")
 
     1. Opret en linje, og vælg derefter **Gem**.
 
-        ![Oprette en linje](media/am-guides-integration-add-line.png "Oprette en linje")
+        ![Oprette en linje.](media/am-guides-integration-add-line.png "Oprette en linje")
 
     1. Vælg **Vedligeholdelsestjekliste** i handlingsruden.
 
-        ![Knappen Vedligeholdelsestjekliste](media/am-guides-integration-maintenance-checklist.png "Knappen Vedligeholdelsestjekliste")
+        ![Knappen Vedligeholdelsestjekliste.](media/am-guides-integration-maintenance-checklist.png "Knappen Vedligeholdelsestjekliste")
 
     1. På oversigtspanelet **Vedligeholdelsestjeklistelinjer** skal du tilføje en linje og derefter ændre værdien i feltet **Type** til **Skabelon**.
 
-        ![Ændre værdien Type](media/am-guides-integration-checklist-lines.png "Ændre værdien Type")
+        ![Ændre værdien Type.](media/am-guides-integration-checklist-lines.png "Ændre værdien Type")
 
     1. Vælg den skabelon, du har knyttet til hjælpelinjen, i feltet **Skabelon** på oversigtspanelet **Linjedetaljer**, og vælg derefter **Gem**.
 
-        ![Vælge skabelonen](media/am-guides-integration-checklist-line-details.png "Vælge skabelonen")
+        ![Vælge skabelonen.](media/am-guides-integration-checklist-line-details.png "Vælge skabelonen")
 
 1. [Opret en arbejdsordre](work-orders/manually-created-workorders.md#create-work-order), og vælg derefter den vedligeholdelsesjobtype, der bruger den vedligeholdelsestjeklisteskabelon, du har tilknyttet hjælpelinjen med. Hjælpelinjen knyttes automatisk til arbejdsordren.
 
-    ![Vælge en vedligeholdelsesjobtype](media/am-guides-integration-create-work-order.png "Vælge en vedligeholdelsesjobtype")
+    ![Vælge en vedligeholdelsesjobtype.](media/am-guides-integration-create-work-order.png "Vælge en vedligeholdelsesjobtype")
 
 1. Få vist den hjælpelinje, der er tilknyttet arbejdsordren og arbejderne:
 
@@ -95,11 +95,11 @@ Du kan knytte en hjælpelinje til en vedligeholdelsestjekliste ved at følge dis
     1. [Åbn vedligeholdelsestjeklisten](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) for arbejdsordren.
     1. Vælg en tjeklistelinje for at få vist den tilknyttede hjælpelinje.
 
-        ![Hjælpelinje knyttet til en tjeklistelinje](media/am-guides-integration-show-guide.png "Hjælpelinje knyttet til en tjeklistelinje")
+        ![Hjælpelinje knyttet til en tjeklistelinje.](media/am-guides-integration-show-guide.png "Hjælpelinje knyttet til en tjeklistelinje")
 
     1. Åbn hjælpelinjen i HoloLens.
 
-        ![Åbne hjælpelinjen i HoloLens](media/am-guides-integration-hololens-select.png "Åbne hjælpelinjen i HoloLens")
+        ![Åbne hjælpelinjen i HoloLens.](media/am-guides-integration-hololens-select.png "Åbne hjælpelinjen i HoloLens")
 
 > [!NOTE]
 > Du kan også knytte en hjælpelinje direkte til vedligeholdelsestjeklisten for en arbejdsordre eller en jobtype.

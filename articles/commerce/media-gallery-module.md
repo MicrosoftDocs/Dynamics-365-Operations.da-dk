@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9af56a8a82938fa7d23e8096db2c59ed5fcb517
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271274"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346710"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
@@ -41,11 +41,11 @@ Her er nogle eksempel eksempler til mediegallerimoduler:
 
 I eksemplet i følgende illustration er der et købsfelt på en PDP-vært for produktbilleder ved hjælp af et mediegallerimodul.
 
-![Eksempel på en købsfelt på en side med produktdetaljer, der er vært for produktbilleder ved hjælp af et mediegallerimodul](./media/ecommerce-pdp-buybox.PNG)
+![Eksempel på en købsfelt på en side med produktdetaljer, der er vært for produktbilleder ved hjælp af et mediegallerimodul.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Egenskaber for mediegalleri
 
-| Egenskabsbetegnelse | Værdier | Beskrivende tekst |
+| Egenskabsbetegnelse | Værdier | Betegnelse |
 |---------------|--------|-------------|
 | Billedkilde | **Sidekontekst** eller **Produkt-id** | Standardværdien er **Sidekontekst**. Hvis der er valgt **Sidekontekst**, forventer modulet, at siden indeholder oplysninger om produkt-id. Hvis **Produkt-id** er valgt, skal produkt-id'et for et billede angives som værdien af egenskaben **Produkt-id**. Denne funktion er tilgængelig i Commerce version 10.0.12. |
 | Produkt-id | Et produkt-id | Denne egenskab kan kun anvendes, hvis værdien af egenskaben **Billedkilde** er **Produkt-id**. |
@@ -59,11 +59,11 @@ I eksemplet i følgende illustration er der et købsfelt på en PDP-vært for pr
 
 I følgende illustration vises et eksempel på et mediegallerimodul, hvor indstillingerne af fuld skærm og zoom er tilgængelige.
 
-![Eksempel på et mediegallerimodul, hvor indstillingerne af fuld skærm og zoom er tilgængelige](./media/ecommerce-media-zoom.png)
+![Eksempel på et mediegallerimodul, hvor indstillingerne af fuld skærm og zoom er tilgængelige.](./media/ecommerce-media-zoom.png)
 
 Følgende illustration viser et eksempel på et mediegallerimodul, der indeholder organiserede billeder (dvs. de angivne billeder ikke er afhængige af produkt-id'et eller sidekonteksten).
 
-![Eksempel på et mediegallerimodul med organiserede billeder](./media/ecommerce-media-curated.PNG)
+![Eksempel på et mediegallerimodul med organiserede billeder.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
 

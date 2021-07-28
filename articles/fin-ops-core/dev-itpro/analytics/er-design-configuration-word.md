@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 7bc02a97005f84f7ac01f9fd9371f2a0a29314c4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894070"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346638"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Designe en ny ER-konfigurationer til generering af rapporter i Word-format
 
@@ -26,37 +26,37 @@ ms.locfileid: "5894070"
 
 Hvis du vil oprette rapporter som Microsoft Word-dokumenter, skal du designe en skabelon til rapporterne ved f.eks. at bruge Word-skrivebordsprogrammet. I følgende illustration vises eksempelskabelonen til kontrolrapporten, der kan genereres for at vise oplysninger om behandlede kreditorbetalinger.
 
-![Eksempelskabelon til kontrolrapporten i Word-skrivebordsapplikationen](./media/er-design-configuration-word-image1.png)
+![Eksempelskabelon til kontrolrapporten i Word-skrivebordsapplikationen.](./media/er-design-configuration-word-image1.png)
 
 Hvis du vil bruge et Word-dokument som skabelon til rapporter i Word-format, kan du konfigurere en ny [Elektronisk rapportering (ER)](general-electronic-reporting.md) som [løsning](er-quick-start1-new-solution.md). Denne løsning skal omfatte en ER-[konfiguration](general-electronic-reporting.md#Configuration), der indeholder en ER-[formatkomponent](general-electronic-reporting.md#FormatComponentOutbound).
 
 > [!NOTE]
 > Når du opretter en konfiguration af et nyt ER-format til generering af rapporter i Word-format, skal du enten vælge **Word** som formattype på rullelisten **Opret konfiguration** eller lade feltet **Formattype** være tomt.
 
-![Oprettelse af en formatkonfiguration på siden Konfigurationer](./media/er-design-configuration-word-image2.gif)
+![Oprettelse af en formatkonfiguration på siden Konfigurationer.](./media/er-design-configuration-word-image2.gif)
 
 Løsningens ER-formatkomponent skal indeholde formatelementet **Excel\\Fil**, og det pågældende formatelement skal knyttes til Word-dokumentet, der skal bruges som skabelon for genererede rapporter under kørslen. Hvis du vil konfigurere ER-formatkomponenten, skal du åbne [kladde](general-electronic-reporting.md#component-versioning)-versionen af den oprettede ER-konfiguration i ER-formatdesigneren. Tilføj derefter elementet **Excel\\Fil**, knyt Word-skabelonen til det ER-format, der kan redigeres, og knyt skabelonen til det **Excel\\File**-element, du har tilføjet.
 
 > [!NOTE]
 > Når du manuelt tilknytter en skabelon, skal du bruge en [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), der er [konfigureret](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) i ER-parametrene til lagring af skabeloner i ER-formater.
 
-![Tilknytte en skabelon på siden Formatdesigner](./media/er-design-configuration-word-image3.gif)
+![Tilknytte en skabelon på siden Formatdesigner.](./media/er-design-configuration-word-image3.gif)
 
 Du kan tilføje indlejrede elementer **Excel\\Område** og **Excel\\Celle** elementet **Excel\\Fil** for at angive strukturen for data, der skal indtastes i genererede rapporter under kørslen. Du skal derefter knytte disse elementer til datakilder i det redigerbare ER-format for at angive de faktiske data, der skal indtastes i genererede rapporter under kørslen.
 
-![Tilføjelse af indlejrede element på siden Formatdesigner](./media/er-design-configuration-word-image4.gif)
+![Tilføjelse af indlejrede element på siden Formatdesigner.](./media/er-design-configuration-word-image4.gif)
 
 Når du gemmer ændringerne i ER-formatet på designtidspunktet, gemmes den hierarkiske formatstruktur i den tilknyttede Word-skabelon som en [brugerdefineret XML-del](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med navnet **Rapport**. Du skal åbne den ændrede skabelon, hente den fra Finans, gemme den lokalt og åbne den i Word-skrivebordsapplikationen. I følgende illustration vises den lokalt gemte eksempelskabelon til kontrolrapporten, der indeholder den brugerdefinerede XML-del **Rapport**.
 
-![Visning af eksempelrapportskabelon i Word-skrivebordsapplikationen](./media/er-design-configuration-word-image5.gif)
+![Visning af eksempelrapportskabelon i Word-skrivebordsapplikationen.](./media/er-design-configuration-word-image5.gif)
 
 Når bindinger af formatelementerne **Excel\\Område** og **Excel\\Celle** køres, kommer de data, som hver binding leverer, ind i det genererede Word-dokument som et individuelt felt i den brugerdefinerede XML-del **Rapport**. Hvis du vil angive værdierne fra felterne i den brugerdefinerede XML-del i et genereret dokument, skal du føje de relevante Word-[indholdskontrolelementer](/office/client-developer/word/content-controls-in-word) til Word-skabelonen, så de fungerer som pladsholdere for data, der udfyldes under kørslen. Hvis du vil angive, hvordan indholdskontrolelementer skal udfyldes, skal du knytte alle indholdskontroller til det relevante felt i den brugerdefinerede XML-del **Rapport**.
 
-![Tilføjelse og tilknytning af indholdskontrolelementer i Word-skrivebordsapplikationen](./media/er-design-configuration-word-image6.gif)
+![Tilføjelse og tilknytning af indholdskontrolelementer i Word-skrivebordsapplikationen.](./media/er-design-configuration-word-image6.gif)
 
 Du skal derefter erstatte den oprindelige Word-skabelon i det redigerbare ER-format med den redigerede skabelon, der nu indeholder Word-indholdskontrolelementer, som er knyttet til felterne i den brugerdefinerede XML-del **Rapport**.
 
-![Erstatning af skabelonen på siden Formatdesigner](./media/er-design-configuration-word-image7.gif)
+![Erstatning af skabelonen på siden Formatdesigner.](./media/er-design-configuration-word-image7.gif)
 
 Når du kører det konfigurerede ER-format, bruges den vedhæftede Word-skabelon til at generere en ny rapport. De faktiske data gemmes i Word-rapporten som en brugerdefineret XML-del, der kaldes **Rapport**. Når den genererede rapport åbnes, udfyldes Word-indholdet med data fra den brugerdefinerede XML-del **Rapport**.
 

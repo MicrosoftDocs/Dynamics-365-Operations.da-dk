@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 3673705ba4a8d69c32848881d6a280a09047d1e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188015"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343880"
 ---
 # <a name="budget-planning"></a>Budgetplanlægning
 
@@ -47,11 +47,11 @@ Lene arbejder som økonomichef i Contoso Entertainment Systems i Tyskland (DEMF)
 
 Konfigurationsskema til budgetplanlægning for scenariet ser ud som følger:
 
-![Konfigurationsskema til budgetplanlægning](./media/screenshot1-300x152.png)
+![Konfigurationsskema til budgetplanlægning.](./media/screenshot1-300x152.png)
 
 Julia bruger følgende Excel-skabelon til at udarbejde budgettet:
 
-[![Excel-skabelon](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
+[![Excel-skabelon.](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
 ## <a name="exercise-1-configuration"></a>Øvelse 1: Konfiguration
 
@@ -60,27 +60,27 @@ Ad hele budgetteringsprocessen sker i økonomiafdelingen, skal Lene oprette et m
 
 1.1. Naviger til organisationshierarkier (Organisationsadministration &gt; Organisationer &gt; Organisationshierarkier), og klik på knappen Ny.
 
-![Organisationshierarkier](./media/screenshot3.png) 
+![Organisationshierarkier.](./media/screenshot3.png) 
 
 1.2. Skriv navnet for organisationshierarkiet i kassen Navn, og klik på knappen Tildel formål.
 
 1.3. Vælg formålet for budgetplanlægning, klik på knappen Tilføj, og tildel nyoprettet organisationshierarki. 
 
-[![Tildel formål](./media/screenshot5.png)](./media/screenshot5.png)
+[![Tildel formål.](./media/screenshot5.png)](./media/screenshot5.png)
 
 1.4. Gentag trinnene ovenfor af hensyn til organisationens sikkerhed. Luk formen, når det er gjort.
 
 1.5. Klik på knappen Vis i formularen Organisationshierarkier. Klik på Rediger i Hierarkidesigneren, og opret et hierarki ved at klikke på Indsæt.
 
-[![Indsæt](./media/screenshot7.png)](./media/screenshot7.png) 
+[![Indsæt.](./media/screenshot7.png)](./media/screenshot7.png) 
 
 1.6. Vælg Økonomiafdeling for budgetteringshierarkiet. 
 
-[![Finans](./media/screenshot8.png)](./media/screenshot8.png)
+[![Finans.](./media/screenshot8.png)](./media/screenshot8.png)
 
 1.7. Når du er færdig, skal du klikke på Publicer og Luk. Vælg 1-1/2015 som ikrafttrædelsesdatoen for publicering af hierarkiet.
 
-[![Ikrafttrædelsesdato](./media/screenshot9.png)](./media/screenshot9.png)
+[![Ikrafttrædelsesdato.](./media/screenshot9.png)](./media/screenshot9.png)
 
 ### <a name="task-2-configure-user-security"></a>Opgave 2: Konfigurer brugersikkerhed
 Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgang til budgetplandata. Lene skal give sig selv adgang til økonomiske budgetplaner. 
@@ -90,15 +90,15 @@ Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgan
 
 2.2. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Indstiller værdien for sikkerhedsmodel til Baseret på sikkerhedsorganisationer under fanen Parametre. 
 
-[![Parametre](./media/screenshot11.png)](./media/screenshot11.png) 
+[![Parametre.](./media/screenshot11.png)](./media/screenshot11.png) 
 
 2.3. Naviger til Systemadministration &gt; Brugere &gt; Brugere. Give brugeradministrator (Lene Jeppesen) rollen som budgetchef. 
 
-[![Budgetchef](./media/screenshot12.png)](./media/screenshot12.png) 
+[![Budgetchef.](./media/screenshot12.png)](./media/screenshot12.png) 
 
 2.4. Vælg brugerrolle, og klik på Tildel organisationer. 
 
-[![Tildel organisationer](./media/screenshot13.png)](./media/screenshot13.png)
+[![Tildel organisationer.](./media/screenshot13.png)](./media/screenshot13.png)
 
 2.5. Vælg "Giv adgang til bestemte organisationer enkeltvist". Vælg organisationshierarkiet, der er oprettet i første trin. Vælg noden Økonomi, og klik på knappen Tildel med underordnede. 
 
@@ -109,7 +109,7 @@ Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgan
 
 *Bemærk! Du kan oprette nye scenarier for denne opgave, hvis du ønsker det, og bruge dem i stedet.* 
 
-[![Nye scenarier](./media/screenshot15.png)](./media/screenshot15.png) 
+[![Nye scenarier.](./media/screenshot15.png)](./media/screenshot15.png) 
 
 *Da Lene ikke bruger formel godkendelsesproces til udarbejdelsen af budgettet, springer vi opsætning af arbejdsgange, stadier og stadier i arbejdsgange over i denne øvelse og vil bruge en eksisterende konfiguration til automatisk – Godkend arbejdsgang. Se tillæg til konfiguration af denne arbejdsgang.*
 
@@ -118,17 +118,17 @@ Budgetplankolonner er enten monetære eller antalsbaserede kolonner, der kan bru
 
 4.1. Åbn siden Kolonner i Budgettering&gt;Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Klik på Office-knappen i øverste højre hjørne af formularen, og vælg Kolonner (ufiltreret). 
 
-[![Kolonner ufiltreret](./media/screenshot16.png)](./media/screenshot16.png) 
+[![Kolonner ufiltreret.](./media/screenshot16.png)](./media/screenshot16.png) 
 
 4.2. Systemet åbner en Excel-projektmappe, der skal bruges til at udfylde værdierne. Hvis du bliver spurgt, skal du klikke på Aktivér redigering og Hav tillid til denne app. 
 
 4.3. Vi skal bruge flere kolonner til at angive værdierne i. Klik på Design i den højre siderude for at føje kolonner til gitteret. 
 
-[![Design](./media/screenshot19.png)](./media/screenshot19.png) 
+[![Design.](./media/screenshot19.png)](./media/screenshot19.png) 
 
 4.4. Klik på blyantsknappen ved siden af PlanColumns for at få vist tilgængelige kolonner, der skal føjes til gitteret. 
 
-[![Rediger](./media/screenshot20.png)](./media/screenshot20.png) 
+[![Rediger.](./media/screenshot20.png)](./media/screenshot20.png) 
 
 4.5. Dobbeltklik på hvert tilgængeligt felt for at føje dem til de markerede felter, og klik på Opdater. 
 
@@ -136,7 +136,7 @@ Budgetplankolonner er enten monetære eller antalsbaserede kolonner, der kan bru
 
 4.7. Gå tilbage til programmet, og opdater siden. Publicerede værdier vises. 
 
-[![Opdatér](./media/screenshot23.png)](./media/screenshot23.png)
+[![Opdatér.](./media/screenshot23.png)](./media/screenshot23.png)
 
 ### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Opgave 5: Opret dokumentlayouter og skabeloner til budgetplan
 Layout definerer, hvordan budgetplanens dokumentlinjegitter skal se ud, når brugeren åbner budgetplansdokumentet. Det er også muligt at skifte layout for budgetplandokumentet for at få vist samme data med forskellige vinkler. Da Lene nu har fået defineret kolonner, der skal bruges sammen med vores budgetplansdokumentet, skal hun oprette et dokumentlayout for budgetplanen, der skal ligne Excel-tabellen, som hun bruger til at oprette budgetdata (se afsnittet Oversigt over scenarie i denne øvelse) 
@@ -147,14 +147,14 @@ Layout definerer, hvordan budgetplanens dokumentlinjegitter skal se ud, når bru
 -   Vis alle kolonner med budgetplaner, der er oprettet i det forrige trin, i sektionen Elementer. Gør alle redigerbare undtagen Faktiske omkostninger for forrige år.
 -   Klik på knappen Beskrivelser for at vælge, hvilke økonomiske dimensioner der skal vise beskrivelser i gitteret.
 
-[![Beskrivelser](./media/screenshot24.png)](./media/screenshot24.png) 
+[![Beskrivelser.](./media/screenshot24.png)](./media/screenshot24.png) 
 
 Baseret på definitionen af budgetplanens layout kan vi oprette en Excel-skabelon, der skal bruges som en alternativ måde at redigere budgetdata på. Da Excel-skabelonen skal matche layoutdefinitionen af budgetplanen, kan du ikke redigere budgetplanens layout efter oprettelse af Excel-skabelonen, derfor skal denne opgave udføres, når alle layoutkomponenter er defineret. 
 
 5.2. For det layout, der blev oprettet i trin 5.1., skal du klikke på knappen Skabelon &gt; Generer. Bekræft advarselsmeddelelsen. Hvis du vil have vist skabelonen, skal du klikke på Skabelon &gt; Vis. 
 
 *Bemærk! Sørg for at vælge "Gem som" og vælge det sted, hvor skabelonen skal gemmes for at redigere den. Hvis brugeren vælger "Åbn" i dialogboksen uden at gemme, bevares de ændringer, der er udført på filen, ikke, når filen lukkes.* 
-[![Skabelonvisning](./media/screenshot25.png)](./media/screenshot25.png) 
+[![Skabelonvisning.](./media/screenshot25.png)](./media/screenshot25.png) 
 
 5.3. &lt; Valgfrit trin&gt; Rediger Excel-skabelonen for at gøre den mere brugervenlig – tilføj samlede formler, overskriftsfelter, formatering osv. Gem ændringerne, og overfør filen til budgetplanslayoutet ved at klikke på Layout &gt; Overfør. 
 
@@ -174,11 +174,11 @@ Lene skal oprette og aktivere en ny budgetplanlægningsproces, der kombinerer he
 
 *Bemærk! Du kan oprette flere dokumentlayout og tildele dem, så de er tilgængelige i budgetplanlægningen arbejdsgangsstadie ved at klikke på knappen Alternative layouts.* 
 
-[![Alternative layouts](./media/screenshot27.png)](./media/screenshot27.png) 
+[![Alternative layouts.](./media/screenshot27.png)](./media/screenshot27.png) 
 
 6.2. Vælg Handlinger &gt; Aktiver for at aktivere denne budgetplanlægningsarbejdsgang. 
 
-[![Aktivér](./media/screenshot28.png)](./media/screenshot28.png)
+[![Aktivér.](./media/screenshot28.png)](./media/screenshot28.png)
 
 ## <a name="exercise-2-process-simulation"></a>Øvelse 2: Processimulering
 
@@ -187,26 +187,26 @@ Lene skal oprette og aktivere en ny budgetplanlægningsproces, der kombinerer he
 
 7.2. Naviger til Budgettering &gt; Budgetplaner for at finde en budgetplan, der er oprettet af processen Generér. 
 
-[![Budgetplan](./media/screenshot30.png)](./media/screenshot30.png) 
+[![Budgetplan.](./media/screenshot30.png)](./media/screenshot30.png) 
 
 7.3. Åbn oplysninger om dokumentet ved at klikke på dokumentnummerlinket. Budgetplanen vises som defineret i det layout, der er oprettet under denne øvelse. 
 
-[![Budgetplansvisning](./media/screenshot31.png)](./media/screenshot31.png)
+[![Budgetplansvisning.](./media/screenshot31.png)](./media/screenshot31.png)
 
 ### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Opgave 8: Opret budget for indeværende år baseret på faktiske oplysninger i forrige år
 Fordelingsmetoderne kan bruges i budgetplanen til nemt at kopiere oplysninger til budgetplaner fra ét scenarie til et andet/sprede dem på tværs af perioder/allokere til andre dimensioner. Vi skal bruge fordelinger til at oprette budget for indeværende år fra forrige års faktiske oplysninger. 
 
 8.1. Vælg alle linjer i budgetplanens dokumentgitter og klik på Fordel budget. 
 
-[![Alle linjer](./media/screenshot32.png)](./media/screenshot32.png) 
+[![Alle linjer.](./media/screenshot32.png)](./media/screenshot32.png) 
 
 8.2. Vælg fordelingsmetode, Periodenøgle, Kilde- og destinationsscenarier, og klik på Fordel. 
 
-[![Alloker](./media/screenshot33.png)](./media/screenshot33.png)
+[![Alloker.](./media/screenshot33.png)](./media/screenshot33.png)
 
 De faktiske beløb for tidligere år vil blive kopieret til budgettet for indeværende år og fordelt på tværs af perioder med periodenøglen Salgskurve. 
 
-[![Salgskurve](./media/screenshot34.png)](./media/screenshot34.png)
+[![Salgskurve.](./media/screenshot34.png)](./media/screenshot34.png)
 
 ### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Opgave 9: Juster budgetplansdokumentet ved hjælp af Excel, og færdiggør dokumentet
 9.1. Klik på knappen Regneark for at åbne dokumentindholdet i Excel.
@@ -215,9 +215,9 @@ De faktiske beløb for tidligere år vil blive kopieret til budgettet for indev�
 
 9.3. Gå tilbage til budgetplansdokumentet. Klik på Arbejdsgang &gt; Send for automatisk at godkende dokumentet.
 
-[![Automatisk godkendt](./media/screenshot37.png)](./media/screenshot37.png) 
+[![Automatisk godkendt.](./media/screenshot37.png)](./media/screenshot37.png) 
 
-Når arbejdsprocessen er fuldført, ændres dokumentstadiets budgetplan til Godkendt. [![Godkendt](./media/screenshot38.png)](./media/screenshot38.png)
+Når arbejdsprocessen er fuldført, ændres dokumentstadiets budgetplan til Godkendt. [![Godkendt.](./media/screenshot38.png)](./media/screenshot38.png)
 
 ## <a name="appendix"></a>Appendiks
 
@@ -225,21 +225,21 @@ Når arbejdsprocessen er fuldført, ændres dokumentstadiets budgetplan til Godk
 
 A. Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Arbejdsgange for budgettering. Opret en ny arbejdsgang ved hjælp af arbejdsgange i skabelonen Budgetplanlægning:
 
-[![Opret en ny arbejdsgang](./media/screenshot39.png)](./media/screenshot39.png)
+[![Opret en ny arbejdsgang.](./media/screenshot39.png)](./media/screenshot39.png)
 
 Denne arbejdsgang indeholder kun én opgave – Stadieoverførsel for budgetplan. 
 
-[![Stadieoverførsel for budgetplan](./media/screenshot40.png)](./media/screenshot40.png) 
+[![Stadieoverførsel for budgetplan.](./media/screenshot40.png)](./media/screenshot40.png) 
 
 Gem og aktiver arbejdsgangen. 
 
 B. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Opret de 2 stadier under fanen Stadier – Start og Sendt. 
 
-[![Start og Sendt](./media/screenshot41.png)](./media/screenshot41.png)
+[![Start og Sendt.](./media/screenshot41.png)](./media/screenshot41.png)
 
 C. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Tilknyt under fanen Arbejdsprocesstadier den arbejdsgang, der er automatisk godkendt i trin A med stadierne Start og Sendt.
 
-[![Budgettering og budgetplanlægning](./media/screenshot42.png)](./media/screenshot42.png)  
+[![Budgettering og budgetplanlægning.](./media/screenshot42.png)](./media/screenshot42.png)  
 
 
 

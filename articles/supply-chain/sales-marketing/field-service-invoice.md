@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 21a77a0289055285f47323803a484c012e662e3a
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 69399a0e086225bc95c42b01863296a3259162a8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102728"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345446"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synkroniser aftalefakturaer i Field Service til fritekstfakturaer i Supply Chain Management
 
@@ -100,11 +100,11 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Aftalefakturaer (Field Service til Supply Chain Management): Fakturaoverskrifter
 
-[![Tilknytning af skabelon i Dataintegration for fakturahoveder](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Tilknytning af skabelon i Dataintegration for fakturahoveder.](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Aftalefakturaer (Field Service til Supply Chain Management): Fakturalinjer
 
-[![Tilknytning af skabelon i Dataintegration for fakturalinjer](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![Tilknytning af skabelon i Dataintegration for fakturalinjer.](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

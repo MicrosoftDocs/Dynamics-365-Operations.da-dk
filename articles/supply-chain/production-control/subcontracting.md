@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37a82a2bf9fc73b81e5a61b120e7bed73b8c4521
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825176"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346124"
 ---
 # <a name="subcontracting"></a>Underleverandørarbejde
 
@@ -39,7 +39,7 @@ Højttalere af høj kvalitet produceres i den juridiske enhed HQUS. Under fremst
 
 I følgende illustration vises de tre operationer og de materialer, de forbruger.
 
-![Operationerne Formontering, Belægning og Finish og de materialer, de forbruger](./media/subcontract01_operations-materials.png)
+![Operationerne Formontering, Belægning og Finish og de materialer, de forbruger.](./media/subcontract01_operations-materials.png)
 
 ## <a name="setup"></a>Konfiguration
 
@@ -52,41 +52,41 @@ Denne procedure der fører dig gennem opsætningen af det frigivne produkt D8100
 1. Vælg **Administration af produktoplysninger \> Produkter \> Frigivne produkter** for at åbne siden **Frigivne produktdetaljer**.
 2. Angiv **D8100** i Quick filter-feltet for at finde det eksisterende frigivne produkt.
 
-    ![Filtrering for frigivet produkt D8100 på siden Frigivne produktdetaljer](./media/subcontract02_filtering-released-products.png)
+    ![Filtrering for frigivet produkt D8100 på siden Frigivne produktdetaljer.](./media/subcontract02_filtering-released-products.png)
 
 3. I handlingsruden skal du under fanen **Opret** vælge **Rute** for at åbne siden **Rute**.
 
     På siden **Rute** vises de otte ruteversioner for det frigivne produkt D8100. De otte ruteversioner er opdelt i fire ruter på sted 1 og sted 5. Rute 000400 anvendes til efterkalkulation, rute 00041 bruges, når operationen Belægning er en intern handling, og rute 00042 bruges, når operationen Belægning er en ekstern operation.
 
-    ![Otte ruteversioner på siden Rute](./media/subcontract03_route-page.png)
+    ![Otte ruteversioner på siden Rute.](./media/subcontract03_route-page.png)
 
 4. I den øverste rude i **Versioner**-gitteret skal du vælge ruteversion **00042** for sted **5**.
 5. I den nederste rude under fanen **Oversigt** skal du vælge operationen **20** (**Cbnt CtSc**) i gitteret.
 
-    ![Operation 20 for ruteversion 00042 for sted 5 er valgt](./media/subcontract04_route-version-operation.png)
+    ![Operation 20 for ruteversion 00042 for sted 5 er valgt.](./media/subcontract04_route-version-operation.png)
 
 6. Vælg fanen **Generelt**.
 
     Bemærk, at feltet **Rutetype** er angivet til **Leverandør**. Denne værdi angiver, at operation 20 (Cbnt CtSc) er en operation, der er udført af underleverandør.
 
-    ![Feltet Rutetype angivet til Leverandør under fanen Generelt](./media/subcontract05_general-tab.png)
+    ![Feltet Rutetype angivet til Leverandør under fanen Generelt.](./media/subcontract05_general-tab.png)
 
 7. Vælg fanen **Ressourcebehov**.
 
     Egenskaber skal bruges til at finde en passende ressource i produktionsplanlægningen. For operation 20 (Cbnt CtSc) skal du bemærke, at en ressource, der har to egenskaber, **Belægning** og **Belagte kabinetter**, er påkrævet.
 
-    ![Belægning og Belagte kabinetter som egenskaber under fanen Ressourcebehov](./media/subcontract06_resource-requirements-tab.png)
+    ![Belægning og Belagte kabinetter som egenskaber under fanen Ressourcebehov.](./media/subcontract06_resource-requirements-tab.png)
 
 8. Vælg **Disponible ressourcer** for at åbne **Disponible ressourcer**-dialogboksen.
 
     Der findes tre ressourcer, der opfylder ressourcebehovet til operationen. Bemærk, at ressourcerne 8851 og 8852 er af typen **Leverandør**.
 
-    ![Tre disponible ressourcer i dialogboksen Disponible ressourcer](./media/subcontract07_applicable-resources-dialog.png)
+    ![Tre disponible ressourcer i dialogboksen Disponible ressourcer.](./media/subcontract07_applicable-resources-dialog.png)
 
 9. Vælg **OK** at lukke **Disponible ressourcer**-dialogboksen, og vend tilbage til siden **Rute**.
 10. Luk siden **Rute** for at vende tilbage til siden **Frigivne produktdetaljer**.
 
-    ![Siden Frigivne produktdetaljer](./media/subcontract08_released-product-details-page.png)
+    ![Siden Frigivne produktdetaljer.](./media/subcontract08_released-product-details-page.png)
 
 11. I handlingsruden skal du under fanen **Opret** vælge **Styklisteversioner** for at åbne siden **Styklisteversioner**.
 
@@ -94,7 +94,7 @@ Denne procedure der fører dig gennem opsætningen af det frigivne produkt D8100
 
     Bemærk, at vare S8050 er et produkt af **Service**-varetypen. Varen repræsenterer det arbejde, der udføres af underleverandør.
 
-    ![Fire styklisteversioner på siden Styklisteversioner](./media/subcontract09_bom-versions-page.png)
+    ![Fire styklisteversioner på siden Styklisteversioner.](./media/subcontract09_bom-versions-page.png)
 
 12. Brug oversigtspanelet **Styklistelinjer** til at vælge **Rediger** for at åbne **Rediger styklistelinje**-dialogboksen.
 
@@ -102,7 +102,7 @@ Denne procedure der fører dig gennem opsætningen af det frigivne produkt D8100
 
     Bemærk, at styklistelinjen er tilknyttet operationen Belægning via operationsnummeret (i dette tilfælde 20).
 
-    ![Dialogboksen Rediger styklistelinje](./media/subcontract10_edit-bom-line-dialog.png)
+    ![Dialogboksen Rediger styklistelinje.](./media/subcontract10_edit-bom-line-dialog.png)
 
 ### <a name="create-a-password-for-warehouse-workers"></a>Opret en adgangskode til lagermedarbejdere
 
@@ -111,7 +111,7 @@ Du skal definere en adgangskode for de lagermedarbejdere, der bruger en håndhol
 1. Vælg **Lagerstedsstyring \> Konfiguration \> Arbejder** for at åbne siden **Arbejdsbrugere**.
 2. I oversigtspanelet **Brugere** skal du vælge rækken for bruger **51**.
 
-    ![Siden Arbejdsbrugere](./media/subcontract11_work-users-page.png)
+    ![Siden Arbejdsbrugere.](./media/subcontract11_work-users-page.png)
 
 3. Vælg **Nulstil adgangskode**.
 4. I felterne **Adgangskode** og **Bekræft adgangskode** skal du angive **1**.
@@ -126,14 +126,14 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
 1. Vælg **Produktionsstyring \> Produktionsordrer \> Alle produktionsordrer** for at åbne siden **Alle produktionsordrer**.
 2. I handlingsruden skal du vælge **Ny produktionsordre** for at åbne dialogboksen **Oprettelse af produktionsordre**.
 
-    ![Dialogboksen Oprettelse af produktionsordre](./media/subcontract12_create-production-order-dialog.png)
+    ![Dialogboksen Opret produktionsordre.](./media/subcontract12_create-production-order-dialog.png)
 
 3. Vælg **D8100** i feltet **Varenummer**.
 4. Når du har valgt varenummeret, vises felter for lagerdimensioner. Vælg **Krom** i feltet **Farve**.
 
     Der vises en meddelelse, hvor du bliver spurgt, om de aktive versioner for styklisten og ruten skal indsættes.
 
-    ![Meddelelsesboks](./media/subcontract13_message-box.png)
+    ![Meddelelsesfelt.](./media/subcontract13_message-box.png)
 
 5. Vælg **Ja**. 
 
@@ -149,15 +149,15 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
     > [!NOTE]
     > Version 000042 bruges til at give i underentreprise belægningen af kabinettet til leverandør US-801 for både styklisten og ruten.
 
-    ![Værdier i dialogboksen Opret produktionsordre](./media/subcontract14_create-production-order-dialog-set.png)
+    ![Værdier i dialogboksen Opret produktionsordre.](./media/subcontract14_create-production-order-dialog-set.png)
 
 9. Vælg **Opret** for at oprette produktionsordren og vende tilbage til siden **Alle produktionsordrer**.
 
-    ![Ny produktionsordre på siden Alle produktionsordrer](./media/subcontract15_new-production-order.png)
+    ![Ny produktionsordre på siden Alle produktionsordrer.](./media/subcontract15_new-production-order.png)
 
 10. I handlingsruden skal du under fanen **Produktionsordre** vælge **Estimat** for at åbne **Estimat**-dialogboksen.
 
-    ![Dialogboksen Estimat](./media/subcontract16_estimate-dialog.png)
+    ![Dialogboksen Estimat.](./media/subcontract16_estimate-dialog.png)
 
 11. Vælg **OK** for at bekræfte estimatet og vende tilbage til siden **Alle produktionsordrer**.
 
@@ -168,7 +168,7 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
 
     For servicevare S8050 skal du bemærke, at der er en reference til den indkøbsordre, der blev genereret, da produktionsordren blev estimeret.
 
-    ![Produktionsordrens styklistelinjer på siden Stykliste](./media/subcontract17_production-order-bom-lines.png)
+    ![Produktionsordrens styklistelinjer på siden Stykliste.](./media/subcontract17_production-order-bom-lines.png)
 
 13. Luk siden **Stykliste** for at vende tilbage til siden **Alle produktionsordrer**.
 14. I handlingsruden skal du under fanen **Tidsplan** vælge **Finplanlægge** for at åbne **Finplanlægning**-dialogboksen.
@@ -177,24 +177,24 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
     - Vælg **Fremad fra i morgen** i feltet **Planlægningsvej**.
     - Angiv **Kapacitetsbegrænsning** til **Ja**.
 
-    ![Dialogboksen Finplanlægning](./media/subcontract18_job-scheduling-dialog.png)
+    ![Dialogboksen Finplanlægning.](./media/subcontract18_job-scheduling-dialog.png)
 
 16. Vælg **OK** for at lukke **Finplanlægning**-dialogboksen og vende tilbage til siden **Alle produktionsordrer**.
 17. I handlingsruden skal du under fanen **Tidsplan** vælge **Gantt** for at åbne siden **Gantt-diagram - ressourcevisning**.
 
     Gantt-diagrammet indeholder en visuel oversigt over, hvordan produktionsjob planlægges på ressourcer. Bemærk, at den eksterne belægningsoperation består af tre job: et procesjob, et transportjob og et køtidsjob.
 
-    ![Gantt-diagram på Gantt-diagram - siden Ressourcevisning](./media/subcontract19_gantt-chart.png)
+    ![Gantt-diagram på Gantt-diagram – siden Ressourcevisning.](./media/subcontract19_gantt-chart.png)
 
 18. Luk siden **Gantt-diagram - ressourcevisning** for at vende tilbage til siden **Alle produktionsordrer**.
 19. I handlingsruden skal du under fanen **Produktionsordre** vælge **Frigivelse** for at åbne **Frigivelse**-dialogboksen.
 
-    ![Dialogboksen Frigivelse](./media/subcontract20_release-dialog.png)
+    ![Dialogboksen Frigivelse.](./media/subcontract20_release-dialog.png)
 
 20. Vælg **OK** for at lukke dialogboksen **Frigivelse**.
 21. Vælg **Produktionsstyring \> Periodiske opgaver \> Frigiv til lagersted \> Automatisk frigivelse af stykliste- og formellinjer** for at åbne dialogboksen **Automatisk frigivelse af stykliste- og formellinjer**.
 
-    ![Dialogboksen Automatisk frigivelse af stykliste- og formellinjer](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
+    ![Dialogboksen Automatisk frigivelse af stykliste- og formellinjer.](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
 
 22. Vælg **OK** for at køre automatisk frigivelse af stykliste- og formellinjejob.
 
@@ -206,7 +206,7 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
 
     Bemærk, at siden viser to sæt af arbejde til pluk af råmateriale. Det første arbejde er for materialerne M8100 og M8101. Disse materialer forbruges af operation 10. Det andet arbejde er for materialerne M8202 og M8250. Materialerne forbruges af operation 20, som er operationen hos underleverandøren.
 
-    ![To sæt af arbejde til pluk af råmateriale på siden Arbejde](./media/subcontract22_work-page.png)
+    ![To sæt af arbejde til pluk af råmateriale på siden Arbejde.](./media/subcontract22_work-page.png)
 
 26. Start mobilappen Lokationsstyring for at behandle lagerstedets arbejde for operation 10.
 
@@ -220,7 +220,7 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
     - I feltet **Fra opr.nr.** skal du vælge **10**.
     - I feltet **Til opr.nr.** skal du vælge **10**.
 
-    ![Værdier, der er angivet under fanen Generelt 1](./media/subcontract23_start-dialog.png)
+    ![Værdier, der er angivet under fanen Generelt 1.](./media/subcontract23_start-dialog.png)
 
 31. Vælg **OK** for at lukke **Start**-dialogboksen og vende tilbage til siden **Alle produktionsordrer**.
 
@@ -238,7 +238,7 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
     - Angiv **10** i feltet **Antal**.
     - Vælg **Nej** i feltet **Bogfør plukliste nu**.
 
-    ![Værdier, der er angivet under fanen Generelt 2](./media/subcontract24_general-tab.png)
+    ![Værdier, der er angivet under fanen Generelt 2.](./media/subcontract24_general-tab.png)
 
 35. Vælg **OK** for at lukke **Start**-dialogboksen og vende tilbage til siden **Alle produktionsordrer**.
 
@@ -247,57 +247,57 @@ Der oprettes en produktionsordre på 10 styk for produkt D8100, "Belagt kabinet"
 36. I handlingsruden skal du under fanen **Vis** vælge **Plukliste** for at åbne siden **Plukliste**.
 37. Vælg pluklisten, der ikke er bogført, og vælg derefter kladdenummeret for at få vist kladdelinjerne.
 
-    ![Kladdelinjer på siden Plukliste](./media/subcontract25_picking-list.png)
+    ![Kladdelinjer på siden Plukliste.](./media/subcontract25_picking-list.png)
 
 38. I handlingsruden skal du vælge **Udskriv** \> **Plukliste (rapport)** for at åbne dialogboksen **Plukliste (rapport)**.
 39. Angiv indstillingen **Brug følgeseddellayout** til **Ja**.
 
-    ![Dialogboksen Plukliste (rapport)](./media/subcontract26_picking-list-report-dialog.png)
+    ![Dialogboksen Plukliste (rapport).](./media/subcontract26_picking-list-report-dialog.png)
 
 40. Vælg **OK** for at generere en **Plukliste**-rapport.
 
     I dette tilfælde udskrives en leverandørfølgeseddel fra pluklistekladden for produktionen. Følgeseddelen angiver de materialer, der leveres til den leverandør, der udfører belægningsoperationen.
 
-    ![Plukliste (rapport)](./media/subcontract27_picking-list-report.png)
+    ![Plukliste (rapport).](./media/subcontract27_picking-list-report.png)
 
 41. Luk **Plukliste**-rapporten for at vende tilbage til siden **Plukliste**.
 42. I handlingsruden skal du vælge **Bogfør** for at åbne **Bogfør kladde**-dialogboksen.
 
-    ![Dialogboksen Bogfør kladde](./media/subcontract28_post-journal-dialog.png)
+    ![Dialogboksen Bogfør kladde.](./media/subcontract28_post-journal-dialog.png)
 
 43. Vælg **OK** for at lukke dialogboksen **Bogfør kladde**.
 44. Åbn indkøbsordren
 
-    ![Siden Indkøbsordre](./media/subcontract29_purchase-order-page.png)
+    ![Siden Indkøbsordre.](./media/subcontract29_purchase-order-page.png)
 
 45. I handlingsruden under fanen **Indkøb** skal du vælge **Bekræft**.
 46. Vælg **Bogfør** for at åbne dialogboksen **Bogfør kladde**.
 47. Vælg **OK** for at lukke **Bogfør kladde**-dialogboksen og vende tilbage til siden **Indkøbsordre**.
 48. Skift enhedspris fra **33** til **40**.
 
-    ![Enhedspris, der er ændret på siden Indkøbsordre](./media/subcontract30_unit-price.png)
+    ![Enhedspris, der er ændret på siden Indkøbsordre.](./media/subcontract30_unit-price.png)
 
 49. Bekræft indkøbsordren igen.
 50. Produktkvittering.
 
-    ![Dialogboksen Konterer produktkvittering](./media/subcontract31_posting-product-receipt-dialog.png)
+    ![Dialogboksen Konterer produktkvittering.](./media/subcontract31_posting-product-receipt-dialog.png)
 
 51. Indkøbsfaktura.
 52. Opdater status for sammenholdelse.
 
-    ![Siden Kreditorfaktura](./media/subcontract32_vendor-invoice-page.png)
+    ![Siden Kreditorfaktura.](./media/subcontract32_vendor-invoice-page.png)
 
 53. Færdigmelding.
 
-    ![Dialogboksen Færdigmelding](./media/subcontract33_report-as-finished-dialog.png)
+    ![Dialogboksen Færdigmelding.](./media/subcontract33_report-as-finished-dialog.png)
 
 54. Slut.
 
-    ![Dialogboksen Slut](./media/subcontract34_end-dialog.png)
+    ![Dialogboksen Slut.](./media/subcontract34_end-dialog.png)
 
 55. Omkostningssammenligning.
 
-    ![Sammenligningsdiagrammer for omkostning](./media/subcontract35_cost-comparison-charts.png)
+    ![Sammenligningsdiagrammer for omkostning.](./media/subcontract35_cost-comparison-charts.png)
 
 Manglende opsætning i data.
 

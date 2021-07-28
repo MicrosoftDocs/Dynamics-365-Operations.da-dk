@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184016"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345494"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
 
@@ -73,7 +73,7 @@ Hubben ejer følgende data:
 
 Skalaenhederne ejer den faktiske bølgebehandling (f.eks. arbejdsfordeling, genopfyldningsarbejde og oprettelse af behovsarbejde) efter frigivelsen af bølgen. Lagermedarbejderne kan derfor behandle udgående arbejde ved hjælp af mobilappen Lokationsstyring, der er tilknyttet skalaenheden.
 
-![Bølgebehandlingsflow](./media/wes-wave-processing-ga.png "Bølgebehandlingsflow")
+![Bølgebehandlingsflow.](./media/wes-wave-processing-ga.png "Bølgebehandlingsflow")
 
 ### <a name="process-work-and-ship"></a>Behandle arbejde og forsende
 
@@ -81,7 +81,7 @@ Så snart den endelige arbejdsproces placerer lagerbeholdningen på en endelig f
 
 Så snart hubben har opdateret transaktionerne til *Plukket*, kan den behandle den udgående forsendelsesbekræftelse og den tilknyttede salgsfølgeseddel eller overføre ordreforsendelse til belastningen.
 
-![Udgående behandlingsflow](./media/WES-outbound-processing-19.png "Udgående behandlingsflow")
+![Udgående behandlingsflow.](./media/WES-outbound-processing-19.png "Udgående behandlingsflow")
 
 ## <a name="inbound-process-flow"></a>Indgående procesflow
 
@@ -107,11 +107,11 @@ Arbejderne kan køre modtagelsen ved hjælp af mobilappen Lokationsstyring, der 
 
 Hvis du ikke bruger processen *frigivelse til lagersted*, og du derfor ikke bruger *lagerordrer*, kan hubben behandle lagermodtagelse og arbejde uafhængigt af skalaenheder.
 
-![Indgående procesflow](./media/wes-inbound-ga.png "Indgående procesflow")
+![Indgående procesflow.](./media/wes-inbound-ga.png "Indgående procesflow")
 
 Når der udføres indgående registrering via en lagerstedsapps modtagelsesproces i forhold til skaleringsenhedens lagerstedsordre, signalerer skaleringsenhedens arbejdsbelastning til hubben om at opdatere de relaterede transaktioner for indkøbsordrelinjen til *Registreret*. Når dette er gjort, kan du køre en indkøbsordreproduktkvittering på hubben.
 
-![Indgående behandlingsflow](./media/WES-inbound-processing-19.png "Indgående behandlingsflow")
+![Indgående behandlingsflow.](./media/WES-inbound-processing-19.png "Indgående behandlingsflow")
 
 ## <a name="supported-processes-and-roles"></a>Understøttede processer og roller
 

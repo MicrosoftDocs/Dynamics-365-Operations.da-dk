@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893195"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345732"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)
 
@@ -80,7 +80,7 @@ Af følgende ER-relaterede årsager anbefales du at designe ER-konfigurationer i
 
 ER-konfigurationer, der designet i udviklingsmiljøet, kan [uploades](#data-persistence-consideration) til testmiljøet til konfigurationen af evaluering (korrekt procesintegration, rigtigheden af resultater og ydeevne) og kvalitetssikring som f.eks. rigtigheden af rollebaserede adgangsrettigheder og opdeling af opgaver. De funktioner, der aktiverer ER-konfigurationsudvekslingen, kan bruges til dette formål. Afprøvede ER-konfigurationer kan uploades til LCS, hvor de kan deles med serviceabonnenter, eller de kan [importeres](#data-persistence-consideration) til intern brug i produktionsmiljøet.
 
-![Livscyklus for ER-konfiguration](./media/ger-configuration-lifecycle.png)
+![Livscyklus for ER-konfiguration.](./media/ger-configuration-lifecycle.png)
 
 ## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Overvejelse af datafastholdelse
 

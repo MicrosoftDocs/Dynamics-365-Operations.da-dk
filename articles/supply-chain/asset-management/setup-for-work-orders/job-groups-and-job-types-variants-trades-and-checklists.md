@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2a2bcff302814903959f78d6435abd540b46ef5
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 252829ac2d070833023f1b49aef615cc376f37b6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117077"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344634"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Typer, kategorier, varianter, handler og kontrollister for vedligeholdelsesjob
 
@@ -54,7 +54,7 @@ Du skal først konfigurere de påkrævede kategorier af vedligeholdelsesjobtyper
 
     Når du har relateret kategorier af vedligeholdelsesjobtyper til vedligeholdelsesjobtyper, viser feltet **Jobtyper** antallet af vedligeholdelses jobtyper, der er relateret til denne kategori af vedligeholdelsesjobtype.
 
-![Siden Kategorier af vedligeholdelsesjobtype](media/01-setup-for-work-orders.png)
+![Siden Kategorier af vedligeholdelsesjobtype.](media/01-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type-variant"></a>Oprette en variant af en vedligeholdelsesjobtype
 
@@ -68,7 +68,7 @@ Du skal først konfigurere de påkrævede kategorier af vedligeholdelsesjobtyper
 
     I oversigtspanelet **Detaljer** viser feltet **Jobtyper** antallet af vedligeholdelsesjobtyper, der er føjet til denne variant af vedligeholdelsesjobtypen.
 
-![Siden Varianter af vedligeholdelsesjobtype](media/02-setup-for-work-orders.png)
+![Siden Varianter af vedligeholdelsesjobtype.](media/02-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-trade"></a>Oprette et vedligeholdelsesjobfag
 
@@ -89,7 +89,7 @@ Du skal først konfigurere de påkrævede kategorier af vedligeholdelsesjobtyper
 
     I oversigtspanelet **Detaljer** viser feltet **Certifikater** antallet af certifikater, der er føjet til dette vedligeholdelsesjobfag.
 
-![Siden Vedligeholdelsesjobfag](media/03-setup-for-work-orders.png)
+![Siden Vedligeholdelsesjobfag.](media/03-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-variable"></a>Oprette en variabel til vedligeholdelsestjekliste
 
@@ -110,7 +110,7 @@ Når du opretter linjer til vedligeholdelsestjeklisten i standarden for vedligeh
 6. Indtast en beskrivelse i feltet **Værdi**.
 7. Vælg et resultat for linjen i feltet **Resultat**.
 
-![Siden Variabler til vedligeholdelsestjeklister](media/04-setup-for-work-orders.png)
+![Siden Variabler til vedligeholdelsestjeklister.](media/04-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-template"></a>Oprette en skabelon for en vedligeholdelsestjekliste
 
@@ -139,7 +139,7 @@ Skabeloner til vedligeholdelsestjeklister kan bruges som et almindeligt sæt opg
 
     I oversigtspanelet **Detaljer** indeholder feltet **Tjek** det samlede antal tjeklistelinjer i skabelonen. Dette antal omfatter de indlejrede linjer i enhver eksisterende skabelon, som du har refereret til i din skabelon.
 
-![Siden Skabeloner til vedligeholdelsestjekliste](media/05-setup-for-work-orders.png)
+![Siden Skabeloner til vedligeholdelsestjekliste.](media/05-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type"></a>Oprette et vedligeholdelsesjobtype
 
@@ -162,7 +162,7 @@ Skabeloner til vedligeholdelsestjeklister kan bruges som et almindeligt sæt opg
 
 11. I oversigtspanelet **Aktivtyper** kan du føje aktivtyper til vedligeholdelsesjobtypen.
 
-![Siden Vedligeholdelsesjobtyper](media/06-setup-for-work-orders.png)
+![Siden Vedligeholdelsesjobtyper.](media/06-setup-for-work-orders.png)
 
 ## <a name="create-maintenance-job-type-default-lines-and-related-forecasts-maintenance-checklists-tools-description-and-attachments"></a>Oprette standardlinjer for vedligeholdelsesjobtyper og relaterede budgetter, vedligeholdelsestjeklister, værktøjer, beskrivelse og tilknytninger
 
@@ -231,7 +231,7 @@ Skabeloner til vedligeholdelsestjeklister kan bruges som et almindeligt sæt opg
 31. Hvis du vil kopiere en vedligeholdelsesjobtypestandard til en anden vedligeholdelsesjobtypestandard, skal du vælge standardlinjen for vedligeholdelsesjobtypen for at kopiere en anden opsætning, vælge **Kopiér opsætning** og derefter vælge den vedligeholdelsesjobtypestandard, der skal kopieres.
 32. Hvis du vil se en liste over aktiver, vedligeholdelsesplaner eller vedligeholdelsesrunder, der aktuelt bruger en standardlinje for en vedligeholdelsesjobtype, skal du vælge linjen og derefter vælge **Bruges af**.
 
-![Siden Standarder for vedligeholdelsesjobtype](media/07-setup-for-work-orders.png)
+![Siden Standarder for vedligeholdelsesjobtype.](media/07-setup-for-work-orders.png)
 
 Når systemet vælger den tilgængelige vedligeholdelsesjobtypestandard, der skal bruges på en arbejdsordrelinje, baseres valget på aktivet og den relaterede aktivtypeopsætning. Styring af aktiver gennemgår alle standardposter for vedligeholdelsesjobtypen, der er relateret til den vedligeholdelsesjobtype, der er relateret til aktivtypen, for at kontrollere, om der findes et muligt match. Den kontrollerer altid den mest specifikke kombination først. Med andre ord kontrolleres det først, for at finde den mest specifikke kombination, om der findes et muligt match til feltet **Fag**. Hvis der ikke findes et match, kontrolleres det, om der er et match for feltet **Vedligeholdelsesjobtypevariant**. Hvis der ikke findes et match, kontrolleres der for et match med feltet **Vedligeholdelsesjobtype** osv. (**Fag**, derefter **Variant af vedligeholdelsesjobtype**, derefter **Vedligeholdelsesjobtype**, derefter **Aktiv**, derefter **Model**, derefter **Producent** og derefter **Aktivtype**). Hvis der ikke findes et match, bruges standardposten, hvor der kun er valgt en vedligeholdelsesjobtype.
 
@@ -252,7 +252,7 @@ Når du har oprettet de nødvendige standardkombinationer af vedligeholdelsesjob
 4. Vælg en kombination af vedligeholdelsesjobtyper for at se den relaterede opsætning af vedligeholdelsestjeklister, budgetter og værktøjer. Afsnittet **Detaljer** i oversigtspanelet **Standarder for vedligeholdelsesjobtype** viser antallet af relaterede vedligeholdelsestjeklister, budgetterede timer, varer osv., der er relateret til den valgte kombination af vedligeholdelsesjobtype.
 5. Vælg **Vedligeholdelsesjobtyper** for at få vist oplysninger om den valgte vedligeholdelsesjobtype.
 
-![Siden Vedligeholdelsesjobtyper for aktiv](media/08-setup-for-work-orders.png)
+![Siden Vedligeholdelsesjobtyper for aktiv.](media/08-setup-for-work-orders.png)
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatisk opdatering af budgetter for vedligeholdelsesjobtyper
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 379bb8a1f969a74618db0e57c84c2038db1b631c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ceacdbe36cc946b64d13b3faff2b3b1ca59afbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822825"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345470"
 ---
 # <a name="year-end-activities-faq"></a>Ofte spurgte spørgsmål i forbindelse med ultimoaktiviteter 
 
@@ -29,7 +29,7 @@ Dette emne er kompileret for at hjælpe med ultimoaktiviteter. Oplysningerne i d
 ## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Finans: Hvordan ved jeg, at vi kører ultimoafslutning og ikke kan fortryde ultimoafslutning?
 Vi har set organisationer forsøge at køre ultimoafslutninger, men i stedet fortrød ultimoafslutningen. Hvis ultimoafslutning lukkes meget hurtigt, eller ultimoafslutning ikke giver startsaldi, skal du validere indstillingen **Fortryd forrige lukning** i **Ultimoafslutning** (**Finans > Periodelukning > Ultimoafslutning > Kør regnskabsafslutning**). 
 
-[![Kør ultimoafslutning i forhold til fortryd ultimoafslutning](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
+[![Kør ultimoafslutning i forhold til fortryd ultimoafslutning.](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
 Hvis **Fortryd forrige afslutning** er angivet til **Ja**, tilbageføres den forrige ultimoafslutning. Når du kører en fortrydelse, slettes alle ultimosaldoposter og startsaldoposter, som om ultimoafslutningen aldrig var blevet kørt. Bilagene slettes. Årsafslutningen køres ikke automatisk igen. Du skal starte processen igen, og denne gang skal du ændre **Fortryd forrige lukning** til **Nej**. 
 
@@ -37,15 +37,15 @@ Hvis **Fortryd forrige afslutning** er angivet til **Ja**, tilbageføres den for
 > Ultimosaldoposten oprettes efter eget valg i det år, der afsluttes. Dette sker kun, hvis parameteren Finans **Opret ultimoposteringer ved overførsel** er angivet til **Ja**. Startsaldoposten oprettes altid, da dette er startsaldoen for det næste år.  
  
 ## <a name="general-ledger-what-is-the-difference-between-undo-and-delete-gl-parameter-for-year-end-close"></a>Finans: Hvad er forskellen mellem Fortryd og Slet Finansparameteren for årsslutning?
-Der kan være forvirring over forskellen mellem parameteren **Fortryd forrige lukning**, der findes i dialogboksen til **Årsafslutning**, og posteringerne for parameteren **Slette årsafslutningsposter ved overførsel** i Finans (**Finans > Periodens afslutning > Årsslutslutning > Kør regnskabsafslutning**).  
+Der kan være forvirring over forskellen mellem parameteren **Fortryd forrige lukning**, der findes i dialogboksen til **Årsafslutning**, og posteringerne for parameteren **Slette årsafslutningstransaktioner ved overførsel** i Finans (**Finans > Periodens afslutning > Årsslutslutning > Kør regnskabsafslutning**).  
 
-[![Forskellen mellem Fortryd og Slet Finansparameteren for årsslutning](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
+[![Forskellen mellem Fortryd og Slet Finansparameteren for årsslutning.](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 Vælg **Fortryd forrige afslutning** i rullemenuen, når du kører årsafslutningen for at slette alle ultimosaldo- og startsaldoposter, som om årsafslutningen aldrig var blevet kørt. Bilagene slettes. Årsafslutningen køres ikke automatisk igen. Hvis du vil køre årsafslutningen, skal du starte denne proces igen, og denne gang skal du ændre **Fortryd forrige afslutning** til **Nej** (**Finans > Opsætning af Finans > Finansparametre**). 
 
-[![Konfiguration af Finansparametre](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
+[![Konfiguration af Finansparametre.](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
 
-Parameteret **Slette årsafslutningsposter ved overførsel** i Finans bruges kun, når der køres (ikke fortrydes) årsslutslutning årsafslutning (**Fortryd forrige afslutning** er angivet til **Nej**). Hvis den parameter er angivet til **Ja**, slettes alle ultimosaldoposter og startsaldoposter, og årsafslutningen køres igen. Denne proces bruges, når organisationen ønsker, at alle posteringer, herunder reguleringer siden sidste årsafslutning, skal bogføres i en enkelt regnskabspost for ultimosaldo- og startsaldoposter. 
+Parameteret **Slette årsafslutningstransaktioner ved overførsel** i Finans bruges kun, når der køres (ikke fortrydes) årsslutslutning årsafslutning (**Fortryd forrige afslutning** er angivet til **Nej**). Hvis den parameter er angivet til **Ja**, slettes alle ultimosaldoposter og startsaldoposter, og årsafslutningen køres igen. Denne proces bruges, når organisationen ønsker, at alle posteringer, herunder reguleringer siden sidste årsafslutning, skal bogføres i en enkelt regnskabspost for ultimosaldo- og startsaldoposter. 
 
 Hvis denne indstilling er angivet til **Nej**, bevares alle ultimosaldo- og startsaldoposter. De slettes ikke. Der oprettes i stedet en ny ultimosaldo- og startsaldopost for de delta- eller nye posteringer, der er bogført siden sidste årsafslutning af regnskabsåret.  
 
@@ -60,7 +60,7 @@ Når du kører årsafslutning, oprettes de enkelte saldi igen, hvilket har direk
 
 De unødvendige dimensionsopsætninger har også indflydelse på batchjobbet **BudgetDimensionFocusInitializeBalance** (**Finans > Kontoplan > Dimensioner > Økonomiske dimensionsopsætninger**).
 
-[![Økonomiske dimensionsopsætninger](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
+[![Økonomiske dimensionsopsætninger.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfiguration af skabelon til årsafslutning
 I skabelonen til årsafslutning kan organisationer vælge det økonomiske dimensionsniveau, der skal vedligeholdes ved overførsel af driftssaldi til overført overskud. Indstillingerne giver en organisation mulighed for at vedligeholde de detaljerede økonomiske dimensioner (**Luk alle**) ved flytning af saldi til overført resultat eller vælger at opsummere beløbene til en enkelt dimensionsværdi (**Luk enkelt**). Dette kan defineres for hver økonomisk dimension. Yderligere oplysninger om disse indstillinger finder du i emnet [Årsafslutning](year-end-close.md).
@@ -72,14 +72,14 @@ Hvis du har opdateret til version 10.0.13 eller senere, siden sidste gang organi
  
 ## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Finans – Hvad betyder Periodelukning – Årsafslutning?
  
-[![Periodelukning, årsafslutning](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
+[![Periodelukning, årsafslutning.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
 ### <a name="performance-improvements-for-rebuilding-financial-dimension-sets-new-feature"></a>Forbedringer af ydeevne til gendannelse af økonomiske dimensionsopsætninger (ny funktion)
 En ny funktion, der er tilføjet i version 10.0.16, forbedrer ydeevnen årsafslutnings- og konsolideringsprocesserne. Funktionen er navngivet, Forbedringer af ydeevne til gendannelse af økonomiske dimensionsopsætninger. Med denne funktion ændres den måde, dimensionsopsætninger opbygges på, så de kun opbygges i en relevant tidsramme. I tidligere versioner blev dimensionssæt genopført for alle datoer. Hvis du f.eks. lukker år 2020, gendanner systemet kun saldi for posteringer i regnskabsåret 2020. Hvis du kører konsolidering for et datointerval fra 1. november 2020 til 30. november 2020, gendanner systemet kun saldi for dette datointerval.
 
 Da denne funktion opfattes som en ændring, der giver beskadigelse, skal du aktivere den ved hjælp af arbejdsområdet **Funktionsstyring**.
  
-[![Årsafslutning](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+[![Årsafslutning.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2020"></a>Kreditor: Hvilke ændringer er der foretaget for at understøtte 1099-årsafslutningsrapportering for 2020?
 
@@ -114,15 +114,15 @@ Nr. Opdateringsrutinen 1099 udføres i forhold til en enkelt leverandør ad gang
 ## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-vs-update-all-in-the-update-1099-utility"></a>Kreditor: 1099 – "Genberegn eksisterende 1099-beløb" vs. "Opdater alle" i Opdatering 1099-værktøjet.
 **Genberegn eksisterende 1099-beløb**-afkrydsningsfeltet nulstiller 1099-beløbet til det samlede betalte beløb, når det bruges sammen med afkrydsningsfeltet **Opdater alle**. 
 
-[![Moms 1099-transaktioner: Før opdateringsrutinen køres](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
+[![Moms 1099-transaktioner: Før opdateringsrutinen køres.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
 Afkrydsningsfeltet **Genberegn eksisterende 1099-beløb** træder først i kraft, når der er 1099-delværdier på fakturaen, eller hvis det er ændret i formularen Moms 1099. Antag f.eks., at en faktura har værditilvæksten i $1000,00, men brugeren skriver manuelt et 1099-beløb på $500,00.
 
-[![Moms 1099-transaktioner: Afmærkning af både Opdater alle og Genberegn eksisterende 1099-beløb](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+[![Moms 1099-transaktioner: Afmærkning af både Opdater alle og Genberegn eksisterende 1099-beløb.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
-Når denne betaling er betalt, er de $500.00 det 1099-beløb, der er betalt. Hvis du udfører efterberegningsrutinen, vil systemet ændre 1099-beløbet til $1000,00, hvilket er den samlede betaling.
+Når denne betaling er betalt, er de DKK 500,00 det 1099-beløb, der er betalt. Hvis du udfører efterberegningsrutinen, vil systemet ændre 1099-beløbet til DKK 1000,00, hvilket er den samlede betaling.
 
-[![Moms 1099-transaktioner: Efter kørsel af 1099-rutinen](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
+[![Moms 1099-transaktioner: Efter kørsel af 1099-rutinen.](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
 ## <a name="accounts-payable-1099--manually-create-1099-transactions"></a>Kreditor: 1099 – Opret 1099-posteringer manuelt
 Det kan være nødvendigt for en organisation at oprette 1099-transaktioner manuelt, der ikke har tilknyttet en faktura. Du kan tilføje manuelle 1099-posteringer til **Kreditor > Periodiske opgaver > Moms 1099 > Kreditorudligning for 1099**. Vælg knappen **Manuelle 1099-transaktioner**. 

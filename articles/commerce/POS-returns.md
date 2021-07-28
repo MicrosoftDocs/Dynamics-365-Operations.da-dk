@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: c7be9e2d32384df23a4609d82216804fc945061a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129800"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345178"
 ---
 # <a name="create-returns-in-pos"></a>Oprette returneringer i POS
 
@@ -48,7 +48,7 @@ Hvis der findes en transaktion eller en ordre, der svarer til søgekriterierne, 
 
 For hver ordrelinje på listen over returvarer viser POS oplysninger om det oprindelige købsantal og antallet fra eventuelle returneringer, der tidligere er behandlet. Det returantal, som en bruger angiver for en ordrelinje, skal være mindre end eller lig med værdien i feltet **Tilgængelig til returnering**.
 
-![Siden Returvarer](media/returnslist.png)
+![Siden Returvarer.](media/returnslist.png)
 
 Under returneringen, hvis en bruger har det fysiske produkt, og det pågældende produkt har en stregkode, kan brugeren scanne stregkoden for at registrere returneringen. Hver scanning af stregkoden øger returantallet med én vare. Men hvis stregkodelabelen har et indlejret antal, vil dette antal blive angivet i feltet **Returnering nu**.
 
@@ -97,6 +97,13 @@ Hvis oplysningerne på kanalsiden af en eller anden grund ikke er opdateret, og 
 
 > [!NOTE]
 > Når funktionen **Samlet behandling af returneringer i POS** er aktiveret, bliver nye valgfrie funktioner, der understøtter valideringen af serialiserede produktreturneringer, tilgængelige. Du kan finde flere oplysninger under [Returnere serienummerstyrede produkter i POS](POS-serial-returns.md).
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktivér beregning af passende moms for returneringer med delvist antal
+
+Denne funktion sikrer, at momsen i sidste ende er lig med det oprindeligt opkrævede momsbeløb, når en ordre returneres ved hjælp af flere fakturaer.
+1.  Gå til arbejdsområdet **Funktionsstyring**, og søg efter **Aktivér beregning af passende moms for returneringer med delvist antal**.
+2.  Vælg **Aktivér beregning af passende moms for returneringer med delvist antal**, og klik derefter på **Aktivér**.
+
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

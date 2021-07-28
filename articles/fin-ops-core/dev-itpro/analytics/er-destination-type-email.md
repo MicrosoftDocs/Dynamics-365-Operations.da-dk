@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a575c04a5042e4db08f387bc7bce46225c109844
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753498"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347990"
 ---
 # <a name="email-er-destination-type"></a>ER-destinationstype for e-mail
 
@@ -48,13 +48,13 @@ Hvis du vil sende en outputfil eller flere outputfiler via mail, skal du gå til
 
 Du kan konfigurere e-mailadresser for ER på to måder. Konfigurationen kan fuldføres på samme måde, som funktionen Udskriftsstyring fuldfører den, eller du kan fortolke en mailadresse ved at bruge en direkte reference til ER-konfigurationen via en formel.
 
-[![Angive indstillingen Aktiveret til Ja for en maildestination](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+[![Angive indstillingen Aktiveret til Ja for en maildestination.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
 ## <a name="email-address-types"></a>E-mailadressetyper
 
 Hvis du vælger **Rediger** ud for feltet **Til** eller **Cc** i dialogboksen **Indstillinger for destination**, åbnes dialogboksen **Mail til**. Vælg **Tilføj**, og vælg derefter typen af mailadresse, du vil bruge. I øjeblikket understøttes to typer: **Udskriftsstyringsmail** og **Konfigurationsmail**.
 
-[![Vælg typen af mailadresse](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Vælg typen af mailadresse.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Mail for udskriftsstyring
 
@@ -84,7 +84,7 @@ Når du har valgt den ønskede rolle, skal du vælge knappen **Bind** (kædesymb
 
 I feltet **Formel** på siden **Formeldesigner** skal du angive en dokumentspecifik reference til en understøttet rolle. I stedet for at skrive referencen i ruden **Datakilde** skal du finde og vælge den datakildenode, der repræsenterer en konto i den konfigurerede rolle, og derefter vælge **Tilføj datakilde** for at opdatere formlen. Hvis du f.eks. konfigurerer maildestinationen for konfigurationen af **ISO 20022 Kreditoverførsel**, der bruges til at behandle kreditorbetalinger, er den node, der repræsenterer en kreditorkonto, `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
-![Konfigurere mailens kildekonto](./media/er_destinations-emaildefineaddresssource.gif)
+![Konfigurere mailens kildekonto.](./media/er_destinations-emaildefineaddresssource.gif)
 
 Hvis kontonumrene for den konfigurerede rolle er entydige for hele forekomsten af Microsoft Dynamics 365 Finance, kan feltet **Firma for mailkilde** i dialogboksen **Mail to** være tomt.
 
@@ -108,7 +108,7 @@ Hvis du vil angive, hvilken type mailadresser der skal bruges på kørselstidspu
 
 Vælg **Konfigurationsmail** som mailadressetype, hvis den konfiguration, du bruger, har en node i datakilderne, der returnerer enten en enkelt mailadresse eller flere mailadresser, der er adskilt af semikolon (;). Du kan bruge [datakilder](general-electronic-reporting.md#FormatComponentOutbound) og [funktioner](er-formula-language.md#functions) i formeldesigneren til at få en korrekt formateret mailadresse eller korrekt formaterede mailadresser, der er adskilt af semikolon. Hvis du f.eks. bruger konfigurationen **ISO 20022 Kreditoverførsel**, er den node, der repræsenterer den primære mailadresse for en kreditor fra leverandørens kontaktoplysninger, som følgeskrivelsen skal sendes til, `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
-[![Konfigurere en mailadressekilde](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![Konfigurere en mailadressekilde.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>Gruppere formatkomponenter
 
@@ -126,11 +126,11 @@ Hvis du vil fjerne grupperingen af formatkomponenter, skal du gå til oversigtsp
 
 I følgende illustration vises strukturen af et ER-format, der er konfigureret til at frembringe en komprimeret udgående fil, der indeholder en rykker og de relevante debitorfakturaer i PDF-format.
 
-[![Struktur af et ER-format, der genererer udgående dokumenter](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Struktur af et ER-format, der genererer udgående dokumenter.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 I følgende illustration vises processen, som beskrevet i dette emne, til gruppering af de enkelte komponenter og aktivering af **mail** destinationen for den nye gruppe, så der sendes en rykker sammen med de relevante debitorfakturaer som vedhæftede filer i mails.
 
-[![Gruppere de enkelte komponenter og aktivere maildestinationen](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Gruppere de enkelte komponenter og aktivere maildestinationen.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

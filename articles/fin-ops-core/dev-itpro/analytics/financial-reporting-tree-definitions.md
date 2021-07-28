@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 97ecd7996ed2d8fb12c1038aa296450d3481e6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866296"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345780"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
@@ -170,23 +170,23 @@ Her er strukturen for rapporteringsenhederne i følgende rapporteringstræ:
 - Rapporteringsenhederne på det laveste niveau (Hjemmesalg, Autosalg, Kundeservice og Operationer) repræsenterer afdelinger i de økonomiske data. Disse rapporteringsenheder er i det nedtonede område i diagrammet.
 - Oversigtsenhederne på de højere niveauer opsummerer oplysninger fra detaljeenhederne.
 
-[![Contoso-oversigtsrapportstruktur – eksempel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso-oversigtsrapportstruktur – eksempel 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Rapporteringsenhedstruktur – eksempel 2
 
 I følgende diagram har rapporteringstræet en organisationsstruktur, der er opdelt efter forretningsfunktion.
 
-[![Contoso-oversigtsrapportstruktur – eksempel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso-oversigtsrapportstruktur – eksempel 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Eksempel på dialogboksen Indsæt rapporteringsenheder fra Dimensioner
 
 Følgende illustration viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra Dimensioner**. I dette eksempel returnerer resultaterne kombinationen af virksomhedsenheder, bærere og afdelinger.
 
-[![Indsætte rapporteringsenheder](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Indsætte rapporteringsenheder.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Den resulterende rapporteringstrædefinition er sorteret efter virksomhedsenhed og derefter efter bærer og derefter efter afdeling. Dimensionen for den femte rapporteringsenhed er **Virksomhedsenhed = \[001\] Bærer =\[\], Afdeling = \[022\]**, og den identificerer en rapporteringsenhed for konti, der er specifikke for virksomhedsenhed 001 og afdeling 022.
 
-[![Illustration af rapporteringstræet](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustration af rapporteringstræet.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Eksempler på dataakkumulering
 
@@ -194,11 +194,11 @@ Følgende eksempler viser mulige oplysninger, der bruges i en definition af et r
 
 #### <a name="example-1"></a>Eksempel 1
 
-[![Total af flere firmaer](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Total af flere firmaer.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Eksempel 2
 
-[![Total på tværs af firmaafdeling](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Total på tværs af firmaafdeling.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

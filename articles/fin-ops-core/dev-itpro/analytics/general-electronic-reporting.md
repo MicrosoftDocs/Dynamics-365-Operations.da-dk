@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
+ms.custom:
+- "58941"
+- intro-internal
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944359"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345684"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -101,7 +103,7 @@ En formatkomponent gør det muligt at vedhæfte bestemte filer, der kan bruges i
 
 I følgende illustration vises, hvordan dataene flyder for disse formater.
 
-[![Dataflow for udgående formatkomponenter](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![Dataflow for udgående formatkomponenter.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 For at køre en enkelt ER-formatkonfiguration og generere et udgående elektronisk dokument skal du identificere tilknytningen af formatkonfigurationen.
 
@@ -115,7 +117,7 @@ En formatkomponent er skemaet for det indgående dokument, der importeres på k�
 
 I følgende illustration vises, hvordan dataene flyder for disse formater.
 
-[![Dataflow for indgående formatkomponenter](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Dataflow for indgående formatkomponenter.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Hvis du vil køre en enkelt ER-formatkonfigurationen for at importere data fra et indgående elektronisk dokument, skal du identificere den ønskede tilknytning af en formatkonfiguration samt integrationspunktet for en modeltilknytning. Du kan bruge den samme modeltilknytning og de samme destinationer sammen med forskellige formater for forskellige typer indgående dokumenter.
 
@@ -290,7 +292,7 @@ Med ER kan du automatisk implementere ændringer af den nyeste version af basisk
 
 Listen over ER-konfigurationer for Finans opdateres konstant. Åbn det [globale lager](er-download-configurations-global-repo.md) for at gennemgå listen over ER-konfigurationer, der understøttes i øjeblikket. I oversigtspanelet **Oplysninger om ophør** kan du gennemse oplysninger om konfigurationer, der er ophørt, eller som ikke længere vedligeholdes. 
 
-![Indhold af globalt lager på siden Konfigurationslager](./media/er-overview-03.gif)
+![Indhold af globalt lager på siden Konfigurationslager.](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

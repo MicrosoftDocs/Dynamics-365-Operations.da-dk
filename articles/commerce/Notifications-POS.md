@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796480"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345202"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vis ordrebeskeder på POS
 
@@ -72,14 +72,14 @@ POS-knapper kan nu vise en optælling, så arbejderne nemmere kan bestemme, hvil
 
 I følgende illustration vises indstillingerne for dynamisk indhold i knapgitterdesigneren.
 
-![Indstillinger for dynamisk indhold i knapgitterdesigneren](./media/ButtonGridDesigner.png "Indstillinger for dynamisk indhold i knapgitterdesigneren")
+![Indstillinger for dynamisk indhold i knapgitterdesigneren.](./media/ButtonGridDesigner.png "Indstillinger for dynamisk indhold i knapgitterdesigneren")
 
 Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at det korrekte skærmlayout opdateres. Hvis du vil fastlægge, hvilket skærmlayout der bruges af POS, skal du vælge ikonet **Indstillinger** i øverste højre hjørne og notere **Skærmlayout-id** og **Layoutopløsning**. Brug nu Microsoft Edge-browseren, og gå til siden **Skærmlayout**, find det **Skærmlayout-id** og den **Layoutopløsning**, der blev identificeret ovenfor, og markér afkrydsningsfeltet **Aktivér dynamisk indhold**. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**, og kør jobbet 1090 (Kasseapparater) for at synkronisere ændringer af layoutet.
 
-![Finde det skærmlayout, der bruges af POS](./media/Choose_screen_layout.png "Finde skærmlayoutet")
+![Finde det skærmlayout, der bruges af POS.](./media/Choose_screen_layout.png "Finde skærmlayoutet")
 
 I følgende illustration viser effekten af at vælge **Øverst til højre** og **Centreret** i feltet **Justering af indhold** for knapper i forskellige størrelser.
 
-![Dynamisk indhold på POS-knapper](./media/ButtonsWithLiveContent.png "Dynamisk indhold på POS-knapper")
+![Dynamisk indhold på POS-knapper.](./media/ButtonsWithLiveContent.png "Dynamisk indhold på POS-knapper")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

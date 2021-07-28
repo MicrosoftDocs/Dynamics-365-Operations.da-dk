@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: 5aa67673fe05394f498d0844b8e58ba6f0ec1d85
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049310"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346076"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Lokationsstyring
 
@@ -78,28 +78,28 @@ For at aktivere mobilappen Lokationsstyring til at kommunikere med en bestemt Su
 1. Angiv brugernavnet og adgangskoden for den bruger, der har adgang til Azure-abonnementet.
 1. Vælg **Azure Active Directory** i venstre navigationsrude på Azure-portalen.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Kontrollér, at du arbejder med den forekomst af Azure AD, der bruges af Supply Chain Management.
 1. Vælg **Appregistreringer** på listen **Administrer**.
 
-    ![Appregistreringer](media/app-connect-azure-register.png "Appregistreringer")
+    ![Appregistreringer.](media/app-connect-azure-register.png "Appregistreringer")
 
 1. På værktøjslinjen skal du vælge **Ny registrering** for at åbne guiden **Registrer et program**.
 1. Angiv et navn til applikationen, og vælg indstillingen **Kun konti i denne organisations bibliotek**, og vælg derefter **Registrer**.
 
-    ![Registrer en applikationsguide](media/app-connect-azure-register-wizard.png "Registrere en applikationsguide.").
+    ![Registrer en applikationsguide.](media/app-connect-azure-register-wizard.png "Registrere en applikationsguide.").
 
 1. Den nye appregistrering åbnes. Notér værdien i feltet **Applikations-id (klient)**, da du skal bruge den senere. Dette id henvises til senere i dette emne som *klient-id'et*.
 
-    ![Program-id (klient)](media/app-connect-azure-app-id.png "Applikations-id (klient)")
+    ![Program-id (klient).](media/app-connect-azure-app-id.png "Applikations-id (klient)")
 
 1. Gå til listen **Administrer**, og vælg **Certifikat og hemmeligheder**. Vælg derefter en af følgende knapper, afhængigt af hvordan du vil konfigurere appen til godkendelse. (Få flere oplysninger i afsnittet [Godkende ved at bruge et certifikat eller klienthemmelighed](#authenticate) senere i dette emne.)
 
     - **Upload certifikat** – upload et certifikat, der skal bruges som en hemmelighed. Vi anbefaler denne fremgangsmåde, fordi den er mere sikker og også kan automatiseres mere fuldstændigt. Hvis du kører mobilappen Lokationsstyring på Windows-enheder, skal du notere dig, hvilken **aftryksværdi** der vises, når du har uploadet certifikatet. Du skal bruge denne værdi, når du konfigurerer certifikatet på Windows-enheder.
     - **Ny klienthemmelighed** – opret en nøgle ved at angive en nøglebeskrivelse og en varighed i sektionen **Adgangskoder**, og vælg derefter **Tilføj**. Tag en kopi af nøglen, og opbevar den sikkert.
 
-    ![Certifikat og hemmeligheder](media/app-connect-azure-authentication.png "Certifikat og hemmeligheder")
+    ![Certifikat og hemmeligheder.](media/app-connect-azure-authentication.png "Certifikat og hemmeligheder")
 
 Få flere oplysninger om, hvordan du konfigurerer webtjenesteapplikationer i Azure AD, i følgende ressourcer:
 
@@ -119,7 +119,7 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
     1. Opret en bruger.
     1. Tildele brugeren af lagerstedsmobilenheden.
 
-    ![Tildele brugeren af lagerstedsmobilenheden](media/app-connect-app-users.png "Tildele brugeren af lagerstedsmobilenheden")
+    ![Tildele brugeren af lagerstedsmobilenheden.](media/app-connect-app-users.png "Tildele brugeren af lagerstedsmobilenheden")
 
 1. Knyt din Azure AD-applikation til brugeren af mobilappen Lokationsstyring:
 
@@ -127,7 +127,7 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
     1. Oprette en linje.
     1. Angiv det klient-id, du har noteret i forrige afsnit, giv det et navn, og vælg den bruger, du netop har oprettet. Det anbefales, at du mærker alle dine enheder. Hvis en enhed derefter går tabt, kan du så nemt fjerne adgangen til Supply Chain Management fra denne side.
 
-    ![Azure Active Directory-applikationer](media/app-connect-aad-apps.png "Azure Active Directory-applikationer")
+    ![Azure Active Directory-applikationer.](media/app-connect-aad-apps.png "Azure Active Directory-applikationer")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Godkende ved hjælp af et certifikat eller en klienthemmelighed
 
@@ -213,30 +213,30 @@ Benyt følgende fremgangsmåde til at importere forbindelsesindstillinger fra en
 
 1. Start mobilappen Lokationsstyring på din mobilenhed. Første gang du starter appen, vises en velkomstmeddelelse. Vælg **Vælg en forbindelse**.
 
-    ![Velkomstmeddelelse](media/app-configure-welcome-screen.png "Velkomstmeddelelse")
+    ![Velkomstmeddelelse.](media/app-configure-welcome-screen.png "Velkomstmeddelelse")
 
 1. Hvis du importerer forbindelsesindstillingerne fra en fil, og standardnavnet og -placeringen blev brugt, da filen blev gemt, har appen muligvis allerede fundet filen. I dette tilfælde skal du gå videre til trin 4. Ellers skal du vælge **Konfigurer forbindelse** og derefter fortsætte til trin 3.
 
-    ![Konfigurer forbindelse](media/app-configure-set-up-connection.png "Konfigurer forbindelse")
+    ![Konfigurer forbindelse.](media/app-configure-set-up-connection.png "Konfigurer forbindelse")
 
 1. I dialogboksen **Opsætning af forbindelse** skal du vælge **Tilføj fra fil** eller **Tilføj fra QR-kode**, afhængigt af hvordan du vil importere indstillingerne:
 
     - Hvis du importerer forbindelsesindstillingerne fra en fil, skal du vælge **Tilføj fra fil**, gennemse den lokale enhed for filen og vælge den. Hvis du vælger en brugerdefineret placering, gemmer appen den og bruger den automatisk næste gang.
     - Hvis du vil importere forbindelsesindstillingerne ved at scanne en QR-kode, skal du vælge **Tilføj fra QR-kode**. Appen beder dig om tilladelse til at bruge enhedens kamera. Når du har givet dig tilladelse, startes kameraet, så du kan bruge det til scanning. Afhængigt af kvaliteten af enhedens kamera og QR-kodens kompleksitet, kan det være vanskeligt at få en korrekt scanning. Hvis det er tilfældet, skal du forsøge at reducere QR-kodens kompleksitet ved kun at oprette én forbindelse pr. QR-kode. (I øjeblikket kan du kun bruge enhedens kamera til at scanne QR-koden).
 
-    ![Menuen Forbindelsesopsætning](media/app-configure-connection-setup-flyout.png "Menuen Forbindelsesopsætning")
+    ![Menuen Forbindelsesopsætning.](media/app-configure-connection-setup-flyout.png "Menuen Forbindelsesopsætning")
 
 1. Når forbindelsesindstillingerne er indlæst, vises den valgte forbindelse.
 
-    ![Forbindelsesindstillinger er indlæst](media/app-configure-select-connection.png "Forbindelsesindstillinger er indlæst")
+    ![Forbindelsesindstillinger er indlæst.](media/app-configure-select-connection.png "Forbindelsesindstillinger er indlæst")
 
 1. Hvis du bruger en Android-enhed og bruger et certifikat til godkendelse, beder enheden dig om at vælge certifikatet.
 
-    ![Vælg certifikatbeskeden på en Android-enhed](media/app-configure-select-certificate.png "Vælg certifikatbeskeden på en Android-enhed")
+    ![Vælg certifikatbeskeden på en Android-enhed.](media/app-configure-select-certificate.png "Vælg certifikatbeskeden på en Android-enhed")
 
 1. Appen opretter forbindelse til din Supply Chain Management-server og viser logonsiden.
 
-    ![Logonside](media/app-configure-sign-in-page.png "Logonside")
+    ![Logonside.](media/app-configure-sign-in-page.png "Logonside")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Konfigurere applikationen manuelt
 
@@ -246,15 +246,15 @@ Hvis du ikke har en fil eller QR-kode, kan du konfigurere manuelt på enheden, s
 1. Hvis appen startes i **Demotilstand**, skal du vælge **Forbindelsesindstillinger**. Hvis siden **Log på** vises, når appen startes, skal du vælge **Skift forbindelse**.
 1. Vælg **Konfigurer forbindelse**.
 
-    ![Konfigurer forbindelse](media/app-configure-set-up-connection.png "Konfigurer forbindelse")
+    ![Konfigurer forbindelse.](media/app-configure-set-up-connection.png "Konfigurer forbindelse")
 
 1. Vælg **Input manuelt**.
 
-    ![Menuen Forbindelsesopsætning](media/app-configure-connection-setup-flyout.png "Menuen Forbindelsesopsætning")
+    ![Menuen Forbindelsesopsætning.](media/app-configure-connection-setup-flyout.png "Menuen Forbindelsesopsætning")
 
     Siden **Ny forbindelse** vises med de indstillinger, der kræves for at angive forbindelsesoplysningerne manuelt.
 
-    ![Manuelle forbindelsesfelter](media/app-configure-input-manually.png "Manuelle forbindelsesfelter")
+    ![Manuelle forbindelsesfelter.](media/app-configure-input-manually.png "Manuelle forbindelsesfelter")
 
 1. Angiv følgende oplysninger:
 

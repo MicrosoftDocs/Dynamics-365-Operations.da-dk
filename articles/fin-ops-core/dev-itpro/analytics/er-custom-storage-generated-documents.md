@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894118"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348158"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angive en brugerdefineret placering, hvor oprettede dokumenter kan gemmes
 
@@ -39,7 +39,7 @@ Du skal også have adgang til udviklingsmiljøet for denne topologi.
 
 I den aktuelle topologi skal du [oprette et nyt ER-format](tasks/er-format-configuration-2016-11.md) for at oprette dokumenter, du vil tilføje en brugerdefineret lagerplacering for. Du kan også [importere et eksisterende ER-format til denne topologi](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Siden Formatdesigner](media/er-extend-file-storages-format.png)
+![Siden Formatdesigner.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Det ER-format, som du opretter eller importerer, skal indeholde mindst ét af følgende formatelementer:
@@ -58,7 +58,7 @@ Hvis du vil angive, hvordan dokumenter, der genereres af et ER-format, skal send
 3. I feltet **Klasse** skal du angive **Vedhæft fil**.
 4. I feltet **Gruppe** skal du angive **Fil**.
 
-![Siden Dokumenttyper](media/er-extend-file-storages-document-type.png)
+![Siden Dokumenttyper.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Dokumenttyper er firmaspecifikke. Du kan bruge et ER-format med en destination, der er konfigureret, i flere firmaer, hvis du konfigurerer en separat dokumenttype i hvert firma.
@@ -113,14 +113,14 @@ Hændelsen **AttachingFile()** udføres, når de følgende ER-destinationer beha
 - **Arkiv** – Når denne destination anvendes, oprettes en ny post for ER-formatet, der køres i tabellen ERFormatMappingRunJobTable. Feltet **Arkiveret** i denne post er indstillet til **Falsk**. Hvis ER-formatet er kørt korrekt, er det genererede dokument tilknyttet denne post, og **AttachingFile()** hændelsen udføres. Den dokumenttype, der er valgt i denne ER-destination, bestemmer lagerplaceringen for den vedhæftede fil (Microsoft Azure Storage eller en Microsoft SharePoint-mappe).
 - **Jobarkiv** – Når denne destination anvendes, oprettes en ny post for ER-formularen, der køres i tabellen ERFormatMappingRunJobTable. Feltet **Arkiveret** i denne post er indstillet til **Sand**. Hvis ER-formatet er kørt korrekt, er det genererede dokument tilknyttet denne post, og **AttachingFile()** hændelsen udføres. Den dokumenttype, der er konfigureret i ER-parametrene, bestemmer lagerplaceringen for den vedhæftede fil (Azure Storage eller en SharePoint-mappe).
 
-![Siden Parametre til elektronisk rapportering](media/er-extend-file-storages-parameters.png)
+![Siden Parametre til elektronisk rapportering.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurere en ER-destination
 
 1. Konfigurer den arkiverede destination for et af de tidligere nævnte elementer (fil, mappe, fletning eller vedhæftet fil) for det ER-format, du har oprettet eller importeret. Du kan finde en vejledning i [Konfigurere ER-destinationer](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Brug den dokumenttype, du har tilføjet tidligere for den konfigurerede destination. (I dette emne f.eks. er dokumenttypen **FileX**).
 
-![Dialogboksen Indstillinger for destination](media/er-extend-file-storages-destination.png)
+![Dialogboksen Indstillinger for destination.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Ændre kildekode
 

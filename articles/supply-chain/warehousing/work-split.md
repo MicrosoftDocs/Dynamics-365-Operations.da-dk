@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830756"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344140"
 ---
 # <a name="work-split"></a>Arbejdsopdeling
 
@@ -51,7 +51,7 @@ Funktionen *Arbejdsopdeling* føjer følgende to knapper til fanen **Arbejde** i
 - **Opdel arbejde** – Opdel det aktuelle arbejds-id i flere mindre arbejds-id'er, der kan behandles af særskilte arbejdere.
 - **Annuller arbejdsopdelt session** – Annuller den arbejdsopdelte session, og gør arbejdet tilgængeligt for behandling.
 
-![Knapperne Opdel arbejde og Annuller arbejdsopdelt session](media/Work_split_buttons.png "Knapperne Opdel arbejde og Annuller arbejdsopdelt session")
+![Knapperne Opdel arbejde og Annuller arbejdsopdelt session.](media/Work_split_buttons.png "Knapperne Opdel arbejde og Annuller arbejdsopdelt session")
 
 > [!IMPORTANT]
 > Knappen **Opdel arbejde** er ikke tilgængelig, hvis en eller flere af følgende betingelser er opfyldt:
@@ -94,7 +94,7 @@ Hvis du vil opdele arbejdet, skal du følge disse trin.
 
     Feltet **Årsag til blokering af arbejde** for det aktuelle arbejde vil blive indstillet til *Opdelt arbejde*, og arbejdet vil blive blokeret.
 
-    ![Blokeringsårsag](media/Blocking_reason.png "Blokeringsårsag")
+    ![Blokeringsårsag.](media/Blocking_reason.png "Blokeringsårsag")
 
 1. Vælg de linjer, der skal fjernes fra det aktuelle arbejds-id, og føj dem til et nyt arbejds-id. Følgende hændelser forekommer:
 

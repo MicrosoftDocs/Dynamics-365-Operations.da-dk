@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c3827c5cff009453c820e70f00bfa4f36d78973f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3bf1c8081eea86fd14600174d843447b727d0226
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755246"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347942"
 ---
 # <a name="modify-row-definition-cells"></a>Redigere rækkedefinitionsceller
 
@@ -174,7 +174,7 @@ I kolonnen **Formatkode** i en rækkedefinition, anvender formatkoderne **DES**,
 
 I følgende eksempel ønsker en bruger at forhindre, at overskriften og understregningstegn i rækken **Total kontant** i sin rapport udskrives, fordi der ikke var aktivitet i nogen af kassekontiene. Derfor angiver brugeren i række 220 (der, som formatkoden **---** angiver, er en formateringsrække) i cellen **Relaterede formler/rækker/enheder** **250**, som er rækkekoden for den beløbsrække, brugeren ønsker at undertrykke.
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Marker den række, der er basis for beregning af en kolonne
 I relationel rapportering tildeler du en eller flere basisrækker i rækkedefinitionen ved hjælp af formatkoden **CBR** (rediger basisrække). En beregning i kolonnedefinitionen refererer derefter til en basisrække. Her er nogle typiske eksempler på CBR-beregninger:
@@ -399,7 +399,7 @@ Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske 
 2. Dobbeltklik på en celle i kolonnen **Link til økonomiske dimensioner**.
 3. Dobbeltklik på en celle under dimensionsnavnet i dialogboksen **Dimensioner**.
 4. Vælg **Person eller interval** i dialogboksen for dimensionen.
-5. I feltet **Fra** skal du angive den første dimension eller klikke på ![Gennemse](media/browse.gif "Gennemse") for at søge efter tilgængelige dimensioner. Du kan angive en række dimensioner ved at angive den sidste dimension i feltet **Til**.
+5. Angiv startdimensionen i feltet **Fra**, eller klik på ![Gennemse.](media/browse.gif "Gennemse") for at søge efter tilgængelige dimensioner. Du kan angive en række dimensioner ved at angive den sidste dimension i feltet **Til**.
 6. Klik på **OK** for at lukke dialogboksen for dimensionen. Dialogboksen **Dimensioner** viser den opdaterede dimension eller det opdaterede interval.
 7. Klik på **OK** for at lukke dialogboksen **Dimensioner**.
 
@@ -476,7 +476,7 @@ I følgende tabel beskrives felterne i dialogboksen **Dimensioner**.
 
 | Vare                | Beskrivelse |
 |---------------------|-------------|
-| Enkelt dimension eller interval | I feltet **Fra** skal du angive navnet på en konto eller klikke på knappen **Gennemse** ![Gennemse](media/browse.gif "Gennemse") for at søge efter kontoen. Hvis du vil vælge et interval, skal du søge efter en værdi i feltet **Til**. |
+| Enkelt dimension eller interval | I feltet **Fra** skal du angive navnet på en konto eller klikke på knappen **Gennemse** ![Gennemse.](media/browse.gif "Gennemse") for at søge efter kontoen. Hvis du vil vælge et interval, skal du søge efter en værdi i feltet **Til**. |
 | Dimensionsværdisæt | Angiv navnet på dimensionsværdisættet i feltet **Navn**. Hvis du vil oprette, redigere, kopiere eller slette e sæt, skal du klikke på **Administrer dimensionsværdisæt**. Feltet **Formel** udfyldes med formlen fra cellen **Link til økonomiske dimensioner** for dette dimensionsværdisæt i rækkedefinitionen. |
 | Samlekonti   | I feltet **Navn** skal du indtaste eller søge efter en dimension af samlekonti. Feltet **Formel** udfyldes med formlen i cellen **Link til økonomiske dimensioner** for denne samlekonto i rapportdefinitionen. |
 

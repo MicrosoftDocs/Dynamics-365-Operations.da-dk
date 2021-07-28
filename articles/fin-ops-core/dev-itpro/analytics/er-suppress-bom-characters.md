@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893270"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345882"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Designe ER-konfigurationer til at udelade tegn for byterækkefølgemærke i genererede filer
 
@@ -29,14 +29,14 @@ Du kan designe [elektronisk rapportering (ER)](general-electronic-reporting.md) 
 > [!NOTE]
 > Hvis formatet indeholder et forkert kodningsnavn, vises der en fejl, når du gemmer ændringerne i indstillingerne af formatet.
 
-![Tilføje et rodelement på siden Formatdesigner](./media/er-suppress-bom-characters-image1.gif)
+![Tilføje et rodelement på siden Formatdesigner.](./media/er-suppress-bom-characters-image1.gif)
 
 Hvis du angiver **UTF-8**, **UTF-16** eller **UTF-32** som kodning, bliver indstillingen **Undertryk BOM-tegn** tilgængelig. Angiv denne indstilling til **Ja** for at udelade [byterækkefølgemærketegn (BOM)](/globalization/encoding/byte-order-mark) i udgående filer, der genereres under kørslen, når det redigerbare ER-format køres.
 
 > [!NOTE]
 > Hvis du ikke udfylder feltet **Kodning**, bruges standardkodningen **UTF-8**.
 
-![Angive indstillingen Undertryk BOM-tegn på siden Formatdesigner](./media/er-suppress-bom-characters-image2.gif)
+![Angive indstillingen Undertryk BOM-tegn på siden Formatdesigner.](./media/er-suppress-bom-characters-image2.gif)
 
 Hvis du vil gennemse funktionaliteten under kørslen, skal du gennemføre den relevante procedure. Udfør f.eks. trinnene i emnet [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md). Når du har fuldført trinnene i sektionen [Rediger formatet, så beregningen er baseret på genereret output](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) i dette emne, skal du følge disse ekstra trin.
 
@@ -59,7 +59,7 @@ Hvis du vil gennemse funktionaliteten under kørslen, skal du gennemføre den re
 
     Den første forskel, du bemærker, er i filhovedet. Filen SampleXmlReport.xml indeholder et BOM-tegn, mens filen SampleXmlReport (1).xml ikke gør.
 
-    ![Sammenligning af genererede filer med et filsammenligningsværktøj](./media/er-suppress-bom-characters-image3.png)
+    ![Sammenligning af genererede filer med et filsammenligningsværktøj.](./media/er-suppress-bom-characters-image3.png)
 
 ## <a name="see-also"></a>Se også
 

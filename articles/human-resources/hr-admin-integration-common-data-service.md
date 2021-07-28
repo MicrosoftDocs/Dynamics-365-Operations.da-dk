@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 721799c9a6fafe0a809f447189ce6814b30ca863
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1a1ee5345e2d6b3736d45e233a59ac4009a9f1c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052451"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344682"
 ---
 # <a name="configure-dataverse-integration"></a>Konfigurere Dataverse-integration
 
@@ -48,15 +48,15 @@ Du kan eventuelt deaktivere integration i følgende situationer:
 
 1. I den Human Resources-forekomst, hvor du vil se eller konfigurere indstillinger for integrationen med Dataverse, skal du vælge feltet **Systemadministration**.
 
-    [![Feltet Systemadministration](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Feltet Systemadministration.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Vælg fanen **Links**.
 
-    [![Fanen Links](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Fanen Links.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
 3. Under **Integrationer** skal du vælge **Dataverse-konfiguration**.
 
-    [![Dataverse-konfigurationslink](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Dataverse-konfigurationslink.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Slå dataintegration mellem Human Resources og Dataverse til eller fra
 
@@ -67,7 +67,7 @@ Du kan eventuelt deaktivere integration i følgende situationer:
 
 - Hvis du vil deaktivere integration, skal du angive indstillingen til **Nej**.
 
-[![Slå Dataverse-integration til eller fra](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Slå Dataverse-integration til eller fra.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
 > Det anbefales kraftigt, at du deaktiverer Dataverse-integration, mens du udfører dataoverførselsopgaver. Store dataoverførsler kan påvirke ydeevnen betydeligt. Overførsel af 2000 arbejdere kan f.eks. tage flere timer, når integration er aktiveret, og mindre end en time, når den deaktiveres. De tal, der er i dette eksempel, er udelukkende til demonstrationsformål. Det nøjagtige tidsforbrug med at importere poster kan variere meget afhængigt af mange faktorer.
@@ -98,7 +98,7 @@ Hvis du får problemer under datasynkronisering mellem Human Resources og Datave
 
 - Hvis du vil fjerne tilknytningen af en post mellem Human Resources og en Dataverse-række, skal du vælge tabellen i feltet **Dataverse-tabel** og derefter vælge **Ryd sporingsoplysninger**.
 
-[![Rydning af sporingsoplysninger](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Rydning af sporingsoplysninger.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 Se den næste procedure, hvis du vil køre en fuld synkronisering af tabellen, når du har ryddet sporingen.
 
@@ -116,13 +116,13 @@ Sådan kører du en fuld synkronisering af en tabel mellem Human Resources og Da
 
 2. Vælg **Synkroniser nu**.
 
-[![Køre en fuld synkronisering](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![Køre en fuld synkronisering.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## <a name="see-also"></a>Se også
 
 [Dataverse-tabeller](hr-developer-entities.md)<br>
 [Konfigurere virtuelle Dataverse-tabeller](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Ofte stillede spørgsmål om Virtuelle tabeller i Human Resources](hr-admin-virtual-entity-faq.md)<br>
+[Ofte stillede spørgsmål om Human Resources virtuelle tabeller](hr-admin-virtual-entity-faq.md)<br>
 [Hvad er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminologiopdateringer](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 

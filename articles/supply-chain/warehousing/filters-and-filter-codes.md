@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: c3648a2d9df300ecd0c26a12db8093babb3db48f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c5574efeb1dee372a8ecf8ddb1d1710f63b73a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838244"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345228"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurere produktfiltre til lagerstedstransaktioner
 
@@ -46,11 +46,11 @@ Produktfiltre indeholder op til 10 egenskaber for **filtertitlen**, som er fastt
 1. Vælg en værdi i feltet **Filtertitel**.
 1. Angiv en værdi i feltet **Filterkode**.
 
-    ![Konfigurere et produktfilter](media/Product_Filters10.png "Konfigurere et produktfilter")
+    ![Konfigurere et produktfilter.](media/Product_Filters10.png "Konfigurere et produktfilter")
 
 1. Angiv et navn til koden i feltet **Beskrivelse**. *Kode 2* kan f.eks. repræsentere leverandører. Du kan derefter oprette et produktfilter for en bestemt leverandør eller gruppe af leverandører. Du kan finde flere oplysninger i afsnittet [Konfigurere leverandørfilterkoder](#vendor-product-filters) nedenfor i dette emne.
 
-    ![Konfigurere produktfiltre](media/Product_Filters.png "Konfigurere produktfiltre")
+    ![Konfigurere produktfiltre.](media/Product_Filters.png "Konfigurere produktfiltre")
 
 ## <a name="set-up-product-filter-groups"></a>Konfigurere produktfiltergrupper
 
@@ -69,7 +69,7 @@ Følg disse trin for at konfigurere filtergrupper.
 1. Vælg den varegruppe, som produktfilteret skal gælde for, i feltet **Varegruppe**.
 1. Vælg de filterkoder, der skal medtages i gruppen, i felterne **Kode 1** til og med **Kode 10**.
 
-    ![Varegruppe](media/ProdFilterGroup.png "Varegruppe")
+    ![Varegruppe.](media/ProdFilterGroup.png "Varegruppe")
 
 > [!NOTE]
 > Hvis du modtager en fejlmeddelelse, når du lukker siden, mangler der muligvis en kodeopsætning. På siden **Varegrupper** kan du gøre koderne obligatoriske for en varegruppe ved at markere afkrydsningsfelterne **Tildel filterkode 1 til varegruppe**, **Tildel filterkode 2 til varegruppe** osv.
@@ -88,7 +88,7 @@ Hvis du vil konfigurere filterkoder på varegrupper, skal du følge disse trin.
 
     Hvis du vil opdatere et frigivet produkt, skal du åbne siden **Oplysninger om frigivne produkter** og derefter vælge **Rediger** i handlingsruden. De filtre, der er knyttet til koder, bliver derefter tilgængelige i oversigtspanelet **Lagersted**.
 
-    ![Varegrupper](media/ItemGroup10.png "Varegrupper")
+    ![Varegrupper.](media/ItemGroup10.png "Varegrupper")
 
 1. Markér afkrydsningsfelterne for de filtre, der skal matche for den filtergruppe, der skal være standardfiltergruppe for en vare, i sektionen **Varegruppefilter**.
 

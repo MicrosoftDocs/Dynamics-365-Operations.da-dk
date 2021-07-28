@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5bc2227e08dbbf5f76a37180114e5affff131658
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 69f6b0c6dab5dd5a9e15e2b7ec2a6301d13ab810
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797881"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346870"
 ---
 # <a name="carousel-module"></a>Karruselmodul
 
@@ -40,11 +40,11 @@ Du kan tilføje indholdsblokmoduler inde i et karruselmodul. Egenskaberne for ka
 
 Det følgende billede viser et eksempel på et karruselmodul, der bruges på en startside. Dette karruselmodul indeholder flere blokelementer med indhold.
 
-![Eksempel på et karruselmodul](./media/Hero.PNG)
+![Eksempel på et karruselmodul.](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>Egenskaber for karruselmodul
 
-| Egenskabsbetegnelse             | Værdi                 | Beskrivende tekst |
+| Egenskabsbetegnelse             | Værdi                 | Betegnelse |
 |---------------------------|-----------------------|-------------|
 | Automatisk afspilning                  | **Sand** eller **Falsk** | Hvis værdien er angivet til **Sand**, sker overgangen mellem varerne inde i karrusellen automatisk. Hvis værdien er angivet til **Falsk**, sker der ingen overgang, medmindre kunden bruger tastaturet eller musen til at flytte fra en vare til den næste. |
 | Interval for glidende interval | En værdi i sekunder    | Intervallet for overgange mellem varerne. |
