@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 1c8a6b4152215bc912d99f2f4c250defa75278c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189938"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356921"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Genopfyldning med udbetalingskanbans
 
@@ -35,7 +35,7 @@ Udbetalingskanban kan bruges til at flytte en kanban for en enkelt vare mellem l
 
 I følgende scenario vises et pull-baseret genopfyldningssystem, hvor et pull-signal udløser oprettelse af en kanban til genopfyldning af materialet for en produktionsproces. 
 
-[![Pull-signal udløser oprettelsen af en kanban til genopfyldning af materialet for en proces](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Pull-signal udløser oprettelsen af en kanban til genopfyldning af materialet for en proces.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Udbetalingskanban
 2.  Kanban "fra"-lokation og placeringslokation for lagerstedsarbejde
@@ -72,7 +72,7 @@ Hvis afstanden mellem lokationer på lagerstedet og produktionsindlagringslokati
 
 I følgende eksempel er overførselsaktiviteten for udbetalingskanban'en konfigureret til overførsel mellem to steder på samme lagersted. Overførselsaktivitet for udbetalings-kanbanen er konfigureret, så den fuldføres automatisk. 
 
-[![Overførselsaktiviteten fuldføres automatisk ved behandling af kanban-plukarbejde](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Overførselsaktiviteten fuldføres automatisk ved behandling af kanban-plukarbejde.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Delt lagersted for råmaterialer og produktion
 2.  Lagerstedslokationer for råmaterialer

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5f5cfdcb5e930d2dc5830ad7cd9c85c88b3d40f7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7fa0b6f315008e6af774470c775bd34106201b16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813743"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347110"
 ---
 # <a name="schedule-work-orders"></a>Planlæg arbejdsordrer
 
@@ -56,7 +56,7 @@ Det er kun arbejdsordrer med en livscyklustilstand, der kan planlægges. Tillad 
 
 *Eksempel:* I nedenstående figur genererer den formel, der er indsat i feltet **Forventet start**, arbejdsordreplanlægning for alle arbejdsordrer med en forventet startdato en uge fra det aktuelle tidspunkt og senere. Denne formel kan være nyttig, når du kører ordreplanlægning løbende, men vil sikre dig, at de arbejdsordrer, der er planlagt for de næste 5-6 dage, ikke omplanlægges.
 
-![Figur 1](media/03-work-order-scheduling.png)
+![Figur 1.](media/03-work-order-scheduling.png)
 
 Den arbejdsordretype, der er knyttet til arbejdsordrer, kan f.eks. oprette planlægning for én vedligeholdelsesarbejder (**Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Arbejdsordretyper** > **Én vedligeholdelsesarbejder**-til/fra-knappen indstillet til "Ja"). Det betyder, at hvis arbejdsordretypen bruges på en arbejdsordre, er til/fra-knappen **Én vedligeholdelsesarbejder** automatisk indstillet til "Ja" på detaljesiden **Alle arbejdsordrer** > visningen **Hoved** > oversigtspanelet **Tidsplan**. Under planlægningen af arbejdsordrer planlægges alle arbejdsordrejob, der er oprettet på arbejdsordren, efterfølgende for den samme vedligeholdelsesarbejder. Hvis det er nødvendigt, kan du redigere valget på til/fra-knappen **Én vedligeholdelsesarbejder** i **Alle arbejdsordrer**, så der er mulighed for at planlægge flere arbejdere eller én arbejder på arbejdsordrejob.
 

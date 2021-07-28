@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188119"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359855"
 ---
 # <a name="sales-and-marketing-overview"></a>Oversigt over salg og marketing
 
@@ -29,18 +31,18 @@ Du kan bruge Salg og marketing til at finde, gemme og bruge forskellige typer da
 
 ## <a name="marketing"></a>Marketing
 
-Du bruger marketingkampagner og -aktiviteter til at finde og opbygge relationer med potentielle kunder, så indledende interaktioner kan udvikle til salgsrelationer. I følgende procesflow vises forretningsprocesserne for marketing. [![Forretningsproces for marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
+Du bruger marketingkampagner og -aktiviteter til at finde og opbygge relationer med potentielle kunder, så indledende interaktioner kan udvikle til salgsrelationer. I følgende procesflow vises forretningsprocesserne for marketing. [![Forretningsproces for marketing.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Relationer
 
-I modulet Salg og marketing kan de første interaktioner, du har med potentielle kunder, forekomme i forskellige situationer. Du kan for eksempel finde en potentiel kunde, mens du deltager i en messe, eller du har måske et kundeemner, efter at din virksomhed har kørt en masseforsendelseskampagne. Det er meget vigtigt, at du forstår forløbet af en parts enhed, før denne part bliver kunde. Følgende grafik viser flowet af enhedsrelationer, når en potentiel kunde bliver en faktisk kunde. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+I modulet Salg og marketing kan de første interaktioner, du har med potentielle kunder, forekomme i forskellige situationer. Du kan for eksempel finde en potentiel kunde, mens du deltager i en messe, eller du har måske et kundeemner, efter at din virksomhed har kørt en masseforsendelseskampagne. Det er meget vigtigt, at du forstår forløbet af en parts enhed, før denne part bliver kunde. Følgende grafik viser flowet af enhedsrelationer, når en potentiel kunde bliver en faktisk kunde. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampagner
 
 En kampagne henvender sig til kontaktpersoner for kundeemner, potentielle kunder, salgsmuligheder og kunder, der er blevet valgt til at deltage i kampagnen. I Supply Chain Management kan du oprette flere typer kampagner som f.eks. telemarketing-, post- og mailkampagner, for at maksimere dit kundepotentiale. Efterhånden som din kampagnen skrider frem, og du får positive tilbagemeldinger, kan du begynde salgsprocessen med de modtagere, der har reageret positivt på kampagnen.
 
 ## <a name="sales"></a>Salg
-Du kan bruge salgsfunktionen til at oprette tilbud og foretage mersalg og krydssalg til nye og eksisterende kunder, oprette salgsordrer og oprette salgsfakturaer til kunder. I følgende procesflow vises forretningsprocesserne for salg. [![Forretningsproces for salg](./media/sales01.jpg)](./media/sales01.jpg)
+Du kan bruge salgsfunktionen til at oprette tilbud og foretage mersalg og krydssalg til nye og eksisterende kunder, oprette salgsordrer og oprette salgsfakturaer til kunder. I følgende procesflow vises forretningsprocesserne for salg. [![Forretningsproces for salg.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Salgstilbud
 

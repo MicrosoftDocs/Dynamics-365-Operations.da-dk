@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839974"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344752"
 ---
 # <a name="electronic-invoicing-overview"></a>Oversigt over elektronisk fakturering
 
@@ -98,7 +100,7 @@ Når Elektronisk fakturering er installeret fra LCS, og den nødvendige konfigur
 
 I følgende illustration vises dataflowet til og fra Elektronisk fakturering.
 
-![Dataflow for elektronisk fakturering](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Dataflow for elektronisk fakturering.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 Aktivering og brug af elektronisk fakturering kan kræve, at der sendes begrænsede data, herunder organisationens momsregistrerings-id. Dette vil blive overført til tredjepartsorganer, der er godkendt af skattemyndighederne, med det formål at sende elektroniske fakturaer i de foruddefinerede formater, der kræves til integration med myndighedernes webtjenester. De data, der importeres fra disse eksterne systemer til denne Dynamics 365-onlinetjeneste, er underlagt vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=512132). Yderligere oplysninger finder du i sektionerne med Erklæring om beskyttelse af personlige oplysninger i dokumentationen for den lande- eller områdespecifikke funktion.

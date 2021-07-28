@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c38717ca9c57913ea22f2dd7712b49f39d2e556e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799900"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349692"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Aktivere og konfigurere automatiske gebyrer efter kanal
 
@@ -66,7 +66,7 @@ Hvis du vil tildele et standardhierarki til et formål med organisationshierarki
 1. Vælg **Kør nu** i handlingsruden.
 1. Gentag de forrige to trin for at køre jobbene **1070** (**Kanalkonfiguration**) og **1110** (**Global konfiguration**).
 
-![Konfiguration af formålet med organisationshierarkiet til automatisk debitering af detailvarer](media/Auto-charges-org-hierarchy-purpose.png)
+![Konfiguration af formålet med organisationshierarkiet til automatisk debitering af detailvarer.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Definer automatiske gebyrer efter kanal
 
@@ -86,7 +86,7 @@ Hvis du vil definere automatiske gebyrer efter kanal i Commerce, skal du følge 
 1. Vælg **Kør nu** i handlingsruden.
 1. Gentag de forrige to trin for at køre jobbene **1070** (**Kanalkonfiguration**) og **1110** (**Global konfiguration**).
     
-![Automatiske gebyrer defineret efter kanal](media/Auto-charges-line-charge-by-channel.png)
+![Automatiske gebyrer defineret efter kanal.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
@@ -94,7 +94,7 @@ I følgende eksempel beskrives de trin, der skal udføres for at konfigurere et 
 
 Organisationen definerer en gebyrkode, der kaldes **GENBRUG**, som vist i følgende illustration.
 
-![GENBRUG-gebyrkode](media/Auto-charges-charge-code.png)
+![GENBRUG-gebyrkode.](media/Auto-charges-charge-code.png)
 
 Der oprettes et automatisk gebyr på linjeniveau. Den har følgende konfiguration:
 
@@ -112,13 +112,13 @@ Der oprettes en automatisk gebyrlinje. Den har følgende konfiguration:
 - Feltet **Kategori** er angivet til **Fast**.
 - Feltet **Gebyrer** er angivet til **$6,25**.
 
-![Konfiguration af automatisk gebyrer for linjeniveau og den automatiske gebyrlinje](media/Auto-charges-recyclingfee-line-fee.png)
+![Konfiguration af automatisk gebyrer for linjeniveau og den automatiske gebyrlinje.](media/Auto-charges-recyclingfee-line-fee.png)
 
 I kasseprogrammet oprettes der en salgsordre i lagerkanalen **San Francisco**. Linjen **Gebyrer** viser genbrugsgebyret på **$6,25**.
 
 Når du vælger **Transaktionsindstillinger \> Gebyrer \> Administrer gebyrer** i kasseprogrammet, kan du få vist gebyrkoden og beskrivelsen for genbrugsgebyret.
 
-![Genbrugsgebyr i kasseprogrammet](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Genbrugsgebyr i kasseprogrammet.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 8b61e65d3a641a1e3d73192853c832d57ed17401
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 23da08f982639c9ba0ef847990979f73b96cac22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021262"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345518"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivere lagertransaktioner
 
@@ -64,7 +64,7 @@ Benyt følgende trin for at arkivere lagertransaktioner.
 
     Siden **Arkivér lagertransaktioner** vises med en liste over arkiverede procesposter.
 
-    ![Siden Arkivér lagertransaktioner](media/archive-inventory-empty.png "Siden Arkivér lagertransaktioner")
+    ![Siden Arkivér lagertransaktioner.](media/archive-inventory-empty.png "Siden Arkivér lagertransaktioner")
 
 1. Vælg **Arkivér lagertransaktioner** i handlingsruden for at oprette et lagerposteringsarkiv.
 1. Angiv følgende felter i oversigtspanelet **Parametre** i dialogboksen **Arkivér lagertransaktioner**:
@@ -72,7 +72,7 @@ Benyt følgende trin for at arkivere lagertransaktioner.
     - **Fra dato i lukket finansperiode** – Vælg den tidligste transaktionsdato, der skal medtages i arkivet.
     - **Til dato i lukket finansperiode** – Vælg den seneste transaktionsdato, der skal medtages i arkivet.
 
-    ![Dialogboksen Arkivér lagertransaktioner](media/archive-inventory-dates.png "Dialogboksen Arkivér lagertransaktioner")
+    ![Dialogboksen Arkivér lagertransaktioner.](media/archive-inventory-dates.png "Dialogboksen Arkivér lagertransaktioner")
 
     > [!NOTE]
     > Det er kun perioder, der opfylder [forudsætningerne](#prerequisites), som kan vælges.
@@ -87,7 +87,7 @@ Benyt følgende trin for at arkivere lagertransaktioner.
 
 Siden **Arkivér lagertransaktioner** viser hele din arkiveringshistorik. Hver række i gitteret indeholder oplysninger som f.eks. den dato, hvor arkivet blev oprettet, den bruger, der oprettede det, og statussen.
 
-![Arkiveringshistorik på siden Arkivér lagertransaktioner](media/archive-inventory-full.png "Arkiveringshistorik på siden Arkivér lagertransaktioner")
+![Arkiveringshistorik på siden Arkivér lagertransaktioner.](media/archive-inventory-full.png "Arkiveringshistorik på siden Arkivér lagertransaktioner")
 
 Vælg en af følgende værdier på rullelisten øverst på siden for at filtrere de arkiver, der vises i gitteret:
 
@@ -109,7 +109,7 @@ Værktøjslinjen over gitteret indeholder følgende knapper, du kan bruge til at
 
 - **Arkiverede transaktioner** – Få vist alle detaljer i det valgte arkiv. Siden **Arkiverede transaktioner** viser alle transaktionerne i arkivet.
 
-    ![Siden Arkiverede transaktioner](media/archive-inventory-transactions.png "Siden Arkiverede transaktioner")
+    ![Siden Arkiverede transaktioner.](media/archive-inventory-transactions.png "Siden Arkiverede transaktioner")
 
     Hvis du vil have vist flere oplysninger om en bestemt transaktion på siden **Arkiverede transaktioner**, skal du vælge den i gitteret og derefter vælge **Arkiverede transaktionsdetaljer** i handlingsruden. Siden **Arkiverede transaktionsdetaljer** viser oplysninger som f.eks. finanspostering, referencer til relateret reskontro og økonomiske dimensioner.
 

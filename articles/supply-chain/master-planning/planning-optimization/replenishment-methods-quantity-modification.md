@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261690"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347752"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Genopfyldningsmetoder og ændring af antal
 
@@ -34,11 +34,11 @@ Følgende disponeringskoder kan bruges i Planlægningsoptimering:
 
 - **Periode** – Genopfyldningsmetoden kombinerer alle behov for en periode til én ordre for produktet. Ordren planlægges for den første dag i perioden, og dens antal vil opfylde nettobehovet i den oprettede periode. Perioden starter med det første behov for produktet og dækker den definerede varighed i tiden. Den næste periode vil starte med de næste behov for produktet. Disponeringskoden for *periode* bruges ofte til ikke-forudsigelige lagertræk, sæsonafhængige produkter eller produkter med høje omkostninger. Følgende illustration viser et eksempel.
 
-    ![Eksempel på brug af periodedisponeringskode](./media/coverage-code-period.png "Eksempel på brug af periodedisponeringskode")
+    ![Eksempel på brug af periodedisponeringskode.](./media/coverage-code-period.png "Eksempel på brug af periodedisponeringskode")
 
 - **Behov** – I genopfyldningsmetoden til opretter systemet en planlagt indkøbs-, overførsels- eller produktionsordre pr. behov for produktet. Denne metode bruges til dyre produkter, hvor efterspørgslen er periodisk. Disponeringskoden for *behov* bruges ofte til konfigurerbare produkter eller scenarier for fremstilling efter ordre. Følgende illustration viser et eksempel.
 
-    ![Eksempel på brug af behovsdisponeringskode](./media/coverage-code-requirement.png "Eksempel på brug af behovsdisponeringskode")
+    ![Eksempel på brug af behovsdisponeringskode.](./media/coverage-code-requirement.png "Eksempel på brug af behovsdisponeringskode")
 
 - **Min./Maks.** – Genopfyldningsmetoden er baseret på lagerniveauet. Den definerer genopfyldning af lageret op til et bestemt niveau, når den forventede beholdning er under en bestemt grænseværdi. Genopfyldningsantallet vil være forskellen mellem maksimumniveauet og det forventede disponible lagerniveau. Disponeringskoden for *Min./Maks.* bruges ofte til forudsigelige lagertræk, mest solgte produkter eller billigste produkter. Følgende illustration viser et eksempel.
 

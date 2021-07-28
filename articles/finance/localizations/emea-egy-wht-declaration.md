@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8c9aaa3868167806ce3189d724621991ec7e53eb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: afb9f95458089e854335399ea3d14ba229c02bbd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022805"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349867"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>A-skatopgørelse for Egypten (EG-00005)
 
@@ -103,7 +103,7 @@ Hvis du vil generere momsindberetningsformularrapporten i Microsoft Excel-format
 2. Under fanen **A-skat** skal du i feltet **Formattilknytning af WHT-opgørelse** vælge **WHT-opgørelse i Excel (EG)**. Hvis du lader feltet stå tomt, genereres standardrapporten for moms i SSRS-format.
 
 
-![Rapport formular](media/egypt-wht-declaration-setup1.png)
+![Rapport formular.](media/egypt-wht-declaration-setup1.png)
 
 ## <a name="generate-the-withholding-declaration-forms"></a>Generere A-opgørelsesformularer
 Processen til forberedelse og afsendelse af en form for A-opgørelse for en bestemt periode er baseret på de posteringer for A-skat, der er bogført under afregnings- og postering af betalingsskatjobbet. Du kan finde flere oplysninger om global A-skat i [Global A-skat](../general-ledger/global-withholding-tax-overview.md).

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186558"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355615"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Bruge forudsigelser om debitorbetalinger (prøveversion)
 
@@ -38,13 +38,13 @@ Arbejdsområdet **Administrer kundekredit og rykkere** indeholder to nye felter,
 - Feltet **Betalingsforudsigelse pr. postering** viser antallet af åbne debitorposteringer, der har en betalingssandsynlighed på mindre end 50 procent i området **Til tiden**. Du kan vælge dette felt for at åbne listesiden **Betalingsforudsigelser pr. transaktion**.
 - I feltet **Ddebitorer med forventede høj saldi** vises det antal debitorer, som mere end halvdelen (50 procent) af den samlede saldo skal betales for forsinket og/eller meget forsinket. Du kan vælge dette felt for at åbne listesiden **Betalingsforudsigelser pr. transaktion**.
 
-[![Arbejdsområde til at administrere debitors kredit og rykkere](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![Arbejdsområde til at administrere debitors kredit og rykkere.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### <a name="payment-predictions-per-transaction-list-page"></a>Listeside for betalingsforudsigelser pr. transaktion
 
 På listesiden **Betalingsfuldførelse pr. transaktion** kan du få vist betalingssandsynligheden for åbne posteringer i områderne **Til tiden**, **Forsinket** og **Meget forsinket**. For hver postering i gitteret vises kolonnen **Til tiden-sandsynlighed** den sandsynlighed, at fakturaen betales på eller før forfaldsdatoen. Hvis sandsynligheden for en betaling til tiden er mindre end 50 procent, vises der en rød cirkel ud for procenttallet i kolonnen **Til tiden-sandsynlighed** for at angive risikoen for forsinket betaling.
 
-[![Betalingsforudsigelse pr. transaktionsside](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Betalingsforudsigelse pr. transaktionsside.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 Ruden **Relaterede oplysninger** i højre del af siden vises flere oplysninger om forudsigelser:
 
@@ -54,13 +54,13 @@ Ruden **Relaterede oplysninger** i højre del af siden vises flere oplysninger o
 
 Dataene i sektionen **Topfaktorer** og i oversigtspanelerne **Customer Insights** og **Kundehistorik** hjælper med at forklare betalingsforudsigelser. Det kan være med til at øge din tillid til forudsigelsers effektivitet.
 
-[![Grafiske indikatorer for betalingsforudsigelser i ruden Relaterede oplysninger](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![Grafiske indikatorer for betalingsforudsigelser i ruden Relaterede oplysninger.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="payment-prediction-per-customer-list-page"></a>Listeside for forudbetaling pr. debitor
 
 Listesiden **Betalingsforudsigelse pr. debitor** viser den samlede åbne saldo og det forventede beløb, der skal betales i områderne **Til tiden**, **Forsinket** og **Meget forsinket**.
 
-[![Betalingsforudsigelser pr. kundeside](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Betalingsforudsigelser pr. kundeside.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 Betalingsbeløbet i hvert sæt beregnes som summen af det vejede gennemsnit af transaktionssaldoen. Dette beløb beregnes ud fra betalingssandsynlighederne i hvert sæt.
 
@@ -92,11 +92,11 @@ Dataene i sektionen **Topfaktorer** og i oversigtspanelerne **Customer Insights*
 
 Du kan få vist nøjagtigheden af kontantforudsigelser ved at gå til **Kredit- og rykkere \> Opsætning \> Finance Insights \> Finance Insights-parametre**. Under fanen **Indsigt i debitorbetaling** viser afsnittet **Forudsigelsesmodel** præcisionen af forudsigelsesmodellen som en procentdel.
 
-[![Nøjagtighed af betalingsforudsigelser](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![Nøjagtighed af betalingsforudsigelser.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 Hvis du ikke er tilfreds med nøjagtigheden, skal du vælge linket **Forbedring af modellens nøjagtighed** for at åbne AI Builder-udvidelsesoplevelsen. I udvidelse af AI Builder kan du vælge eller annullere markeringen af felter, indtil du har valgt de felter, du mener er de vigtigste for præcist at forudsige betalingssandsynligheder. Når du er færdig, kan du nemt genregistrere prognosemodellen og udgive dine ændringer. Den nyoplærte forudsigelsesmodel vælges automatisk til forudsigelser i Dynamics 365 Finance.
 
-[![AI Builder-udvidelsesoplevelse](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder-udvidelsesoplevelse.](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## <a name="release-details"></a>Frigiv detaljer
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937528"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346052"
 ---
 # <a name="set-up-a-retail-channel"></a>Konfigurere en detailkanal
 
@@ -50,11 +50,11 @@ Før du opretter en detailkanal, skal du sikre dig, at du følger [kanalens foru
 
 Følgende billede viser oprettelsen af en ny detailkanal.
 
-![Ny detailkanal](media/channel-setup-retail-1.png)
+![Ny detailkanal.](media/channel-setup-retail-1.png)
 
 Følgende billede viser et eksempel på en detailkanal.
 
-![Eksempel på detailkanal](media/channel-setup-retail-2.png)
+![Eksempel på detailkanal.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Andre indstillinger
 
@@ -64,7 +64,7 @@ Du kan også se [Skærmlayout til POS](pos-screen-layouts.md) for at få oplysni
 
 Følgende billede viser et eksempel på konfiguration af en detailkanal.
 
-![Eksempel på detailkanalkonfiguration](media/channel-setup-retail-3.png)
+![Eksempel på detailkanalkonfiguration.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Yderligere kanalopsætning
 
@@ -74,7 +74,7 @@ Yderligere opgaver, der kræves til konfiguration af onlinekanalen, omfatter kon
 
 I følgende billede vises de yderligere indstillinger for opsætning af detailkanal under fanen **Opsætning**.
 
-![Konfigurer kanal](media/channel-setup-retail-4.png)
+![Konfigurer kanal.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Oprette betalingsmåder
 
@@ -89,7 +89,7 @@ Hvis du vil oprette betalingsmetoder, skal du udføre disse trin for hver af de 
 
 Følgende billede viser et eksempel på en metode til kontantbetaling.
 
-![Eksempel på betalingsmetoder](media/channel-setup-retail-5.png)
+![Eksempel på betalingsmetoder.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Opsætning af kontantopgørelse
 
@@ -98,7 +98,7 @@ Følgende billede viser et eksempel på en metode til kontantbetaling.
 
 Følgende billede viser et eksempel på en kontantopgørelse.
 
-![Opsætning af kontantopgørelser](media/channel-setup-retail-6.png)
+![Opsætning af kontantopgørelser.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Konfigurer leveringsmåder
 
@@ -112,7 +112,7 @@ Udfør følgende trin for at ændre eller tilføje en leveringsmetode.
 
 Følgende billede viser et eksempel på en leveringsmetode.
 
-![Konfigurer leveringsmåder](media/channel-setup-retail-7.png)
+![Konfigurer leveringsmåder.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Konfigurer indtægts/udgiftskonto
 
@@ -129,7 +129,7 @@ Gør følgende for at konfigurere en indtægts/udgiftskonto.
 
 Følgende billede viser et eksempel på en indtægts/udgiftskonto.
 
-![Konfigurer indtægts/udgiftskonti](media/channel-setup-retail-8.png)
+![Konfigurer indtægts/udgiftskonti.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Konfigurere sektioner
 
@@ -155,7 +155,7 @@ Gør følgende for at konfigurere en gruppetildeling for opfyldelse.
 
 Følgende billede viser et eksempel på en opsætning af en gruppetildeling for opfyldelse.
 
-![Konfigurer gruppetildelinger for opfyldelse](media/channel-setup-retail-9.png)
+![Konfigurer gruppetildelinger for opfyldelse.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Konfigurer pengeskabe
 

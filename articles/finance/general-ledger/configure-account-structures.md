@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22123eb7a46910a2bc68a85b57271cfa2f3eb41e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8d4d3ebed7cf3f006672454e086fc0f918f2418d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193800"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360658"
 ---
 # <a name="configure-account-structures"></a>Konfigurer kontostrukturer
 
@@ -65,7 +65,7 @@ Sektionen **Segmenter** og **Oplysninger om tilladt værdier** giver en gitterli
 
 Sektionen **Oplysninger om tilladt værdi** fører dig gennem oprettelsen af kriterier ved hjælp af **Operatorer** som begynder med, er mellem, omfatter og mange andre.
 
-[![Tillad værdier](./media/account.png)](./media/account.png) 
+[![Tillad værdier.](./media/account.png)](./media/account.png) 
 
 Tilladte værdier sættes som standard til en postside for en kladde eller en regnskabsfordeling, når der ikke er andre mulige værdier, der kan vælges i henhold til opsætningen af kontostrukturen.
 

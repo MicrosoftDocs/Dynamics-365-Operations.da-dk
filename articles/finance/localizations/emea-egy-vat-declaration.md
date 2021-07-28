@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: f9953d1a996f6f68600a7fd04719e9b112494175
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186608"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349891"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Momsopgørelse for Egypten (EG-00002)
 
@@ -77,7 +77,7 @@ De applikationsspecifikke parametre giver dig mulighed for at fastlægge kriteri
 
 Rapporter for salgs- og indkøbskartotek for indkøbsordrer indeholder et sæt kolonner, der svarer til bestemte transaktionsklassifikationer som operationstyper, produkter og dokumenter, der er specifikke for inddelingen. I stedet for at medtage disse nye klassifikationer som nye postdata, når posteringerne bogføres, vil klassifikationerne blive fastlagt på basis af forskellige opslag, der er indført i **Konfigurationer** > **Konfigurer programspecifikke parametre** > **Konfiguration** for at opfylde kravene i momsrapporter for Egypten. 
 
-![Side med ansøgningsspecifikke parametre](media/egypt-vat-declaration-setup1.png)
+![Side med ansøgningsspecifikke parametre.](media/egypt-vat-declaration-setup1.png)
 
 Følgende opslagskonfigurationer bruges til at klassificere transaktionerne i rapporter over indkøbs- og salgsmomsbøger:
 
@@ -206,7 +206,7 @@ Hvis du vil generere momsindberetningsformularrapporten i Microsoft Excel-format
 2. På fanen **Salgsmoms** i sektionen **Momsindstillinger** i feltet **Tilknytningsformat for momsindberetning** skal du vælge **VAT Declaration Excel (EG)**. Hvis du lader feltet stå tomt, genereres standardrapporten for moms i SSRS-format.
 3. Vælg **Kategorihierarki**. Denne kategori gør det muligt for varekoden i posteringer under fanen Udenrigshandel at give brugerne mulighed for at vælge og klassificere varer og tjenester. Denne klassifikation beskrives i salgs- og indkøbsposteringsrapporter. Denne konfiguration er valgfri.
 
-![Rapport formular](media/egypt-vat-declaration-setup2.png)
+![Rapport formular.](media/egypt-vat-declaration-setup2.png)
 
 
 ## <a name="generate-a-vat-return-report"></a>Generér en momsindberetningsrapport

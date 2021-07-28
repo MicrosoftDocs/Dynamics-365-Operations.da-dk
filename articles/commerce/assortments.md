@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 74df8ac27c2028582b8909db0a7260b9b0ed38f5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a81a779dd484d30397c89076d081413a72560f0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797275"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348701"
 ---
 # <a name="assortment-management"></a>Sortimentsstyring
 
@@ -35,27 +35,27 @@ Den overordnede blanding af produkter på en kanal afhænger af de publicerede s
 
 I følgende eksempel er der konfigureret et entydigt sortiment for hver butik. I eksemplet er kun produkt 1 tilgængeligt på lager 1, og kun produkt 2 er tilgængeligt i butik 2.
 
-![Hvert produkt er tilgængeligt i én butik](./media/Managing-assortments-figure1.png)
+![Hvert produkt er tilgængeligt i én butik.](./media/Managing-assortments-figure1.png)
 
 Hvis du vil gøre produkt 2 tilgængeligt i butik 1, kan du føje produktet til sortiment 1.
 
-![Produkt 2 blev føjet til sortiment 1](./media/Managing-assortments-figure2.png)
+![Produkt 2 blev føjet til sortiment 1.](./media/Managing-assortments-figure2.png)
 
 Du kan også føje butik 1 til sortiment 2.
 
-![Butik 1 blev føjet til sortiment 2](./media/Managing-assortments-figure3.png)
+![Butik 1 blev føjet til sortiment 2.](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisationshierarkier
 
 I situationer, hvor flere kanaler deler de samme produktsortimenter, kan du konfigurere sortimenterne ved hjælp af sortimentsorganisationshierarkiet i Commerce. Når der tilføjes noder fra dette hierarki, medtages alle kanaler i den pågældende node og dens underordnede noder.
 
-![Organisationshierarki](./media/Managing-assortments-figure4.png)
+![Organisationshierarki.](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Produktkategorier
 
 På samme måde kan du på produktsiden medtage grupper af produkter ved hjælp af produktkategorihierarkier. Du kan konfigurere sortimenter ved at medtage en eller flere kategorihierarkinoder. I dette tilfælde omfatter sortimentet alle produkter i kategorinoden og dens underordnede noder.
 
-![Produktkategorier](./media/Managing-assortments-figure5.png)
+![Produktkategorier.](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Udeladte produkter eller kategorier
 
@@ -64,7 +64,7 @@ Ud over at medtage produkter og kategorier i sortimenter kan du bruge indstillin
 > [!NOTE]
 > Hvis et produkt er både medtaget og udeladt i et eller flere sortimenter pr. definition, bliver produktet altid betragtet som udeladt.
 
-![Udeladt produkt](./media/Managing-assortments-figure6.png)
+![Udeladt produkt.](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globale og frigivne produkter
 

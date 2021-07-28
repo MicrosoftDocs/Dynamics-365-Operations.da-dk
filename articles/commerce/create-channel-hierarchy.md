@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: e43c4c00545dfecb2f9a2192f81cd25300e3d6e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951902"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352464"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Oprette et navigationshierarki for kanal
 
@@ -49,7 +49,7 @@ Benyt følgende fremgangsmåde for at oprette et navigationshierarki for en kana
 
 Følgende billede viser et eksempel på en rodnode.
 
-![Eksempel på rodnode](media/create-channel-hierarchy-1.png)
+![Eksempel på rodnode.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Oprette navigationskategorinoder
 
@@ -65,7 +65,7 @@ Følge disse trin for at oprette yderligere navigationskategorinoder, der repræ
 
 Følgende billede viser et eksempel på et fuldført navigationshierarki for kanal.
 
-![Eksempel på kanalhierarki](media/create-channel-hierarchy-2.png)
+![Eksempel på kanalhierarki.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Føje produkter til kategorinoder
 
@@ -81,7 +81,7 @@ Følg disse trin for at føje produkter til kategorinoder.
 
 Følgende billede viser en eksempelnode med tilføjede produkter.
 
-![Produkter føjet til en kategorinode](media/create-channel-hierarchy-3.png)
+![Produkter føjet til en kategorinode.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Føje produktattributgrupper til kategorinoder
 
@@ -97,7 +97,7 @@ Følg disse trin for at føje en produktattributgruppe til en kategorinode.
 
 Følgende billede viser en eksempelnode med tilføjede produktattributgrupper.
 
-![Produktattributgrupper på en node](media/create-channel-hierarchy-4.png)
+![Produktattributgrupper på en node.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

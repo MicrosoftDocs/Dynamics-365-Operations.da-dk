@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351651"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere berettigelsesregler og -indstillinger
 
@@ -137,20 +137,20 @@ Du kan definere regler, der har flere kriterier. Når du definerer flere kriteri
 
 Reglen **Aktive medarbejdere** består for eksempel af følgende kriterier. For at medarbejderen kan være berettiget på baggrund af reglen om **Aktive medarbejdere**, skal medarbejderen være ansat i den juridiske enhed USMF *og* have en stilling på fuld tid.  
 
-![Kriterier i en berettigelsesregel](media/CriteriaWithinAnEligibilityRule.png) 
+![Kriterier i en berettigelsesregel.](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>Flere betingelser i kriterier
 
 Regler kan udvides yderligere til at bruge flere betingelser i et enkelt kriterie. Medarbejderen skal opfylde mindst én betingelse for at være berettiget. For at bygge videre på ovenstående eksempel kan reglen for **Aktive medarbejdere** udvides yderligere til at omfatte medarbejdere, der også er deltidsansatte. Som følge heraf skal medarbejderen nu være ansat i USMF *og* enten være fuldtidsansat eller deltidsansat.  
 
-![Flere betingelser i kriterier](media/MultipleConditionsWithinCriteria.png) 
+![Flere betingelser i kriterier.](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Betingelser for berettigelse i et kriterie for brugerdefinerede felter 
 I lighed med ovenstående kan brugerdefinerede felter bruges, når du opretter berettigelsesregler og arbejde på samme måde. Du kan for eksempel tilbyde internetrefusion til medarbejdere i Fargo og København, der arbejder hjemmefra, da internetomkostningerne er højere disse steder. Det kan du gøre ved at oprette to brugerdefinerede felter: **Kontorets placering** (valgliste) og **Arbejde hjemmefra** (afkrydsningsfelt). Opret derefter en regel med navnet **WFH-medarbejdere**. Kriteriet for reglen er der, hvor **Kontorets placering = Fargo** eller **København**, *og* hvor **Arbejde hjemmefra = Ja**.
 
 De brugerdefinerede regler for berettigelse skal konfigureres som angivet på følgende billede. 
 
-![Betingelser for berettigelse i et kriterie for brugerdefinerede felter](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Betingelser for berettigelse i et kriterie for brugerdefinerede felter.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>Konfigurere bundter
 

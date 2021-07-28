@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 9a6be5f4e08a92171892549c017c15c66b1bde2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941049"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350806"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Foretage fejlfinding af problemer under den første synkronisering
 
@@ -38,7 +38,7 @@ Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivni
 
 Når du har aktiveret tilknytningsskabelonerne, skal status for tilknytningerne være **Kører**. Hvis status er **Kører ikke**, er der opstået fejl under den første synkronisering. Hvis du vil have vist fejlene, skal du vælge fanen **Oplysninger om første synkronisering** på siden **Dobbeltskrivning**.
 
-![Fejl under fanen Oplysninger om første synkronisering](media/initial_sync_status.png)
+![Fejl under fanen Oplysninger om første synkronisering.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Du kan ikke fuldføre den første synkronisering: 400 ugyldig anmodning
 
@@ -85,7 +85,7 @@ Følg disse trin for at løse dette problem.
 1. Log på Finance and Operations-appen.
 2. Slet **DtAppID**-klienten på siden **Azure Active Directory-programmer**, og tilføj den derefter igen.
 
-![DtAppID-klient på listen over Azure AD-programmer](media/aad_applications.png)
+![DtAppID-klient på listen over Azure AD-programmer.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Selvreference- eller cirkulær referencefejl under første synkronisering
 
@@ -115,11 +115,11 @@ Hvis der er rækker i kreditortabellen med værdier i kolonnerne **PrimaryContac
     2. Søg efter **primarycontactperson** for at finde kildekolonnen **PrimaryContactPersonId**.
     3. Vælg **Handlinger**, og vælg derefter **Slet**.
 
-        ![Sletning af kolonnen PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Sletning af kolonnen PrimaryContactPersonId.](media/vend_selfref3.png)
 
     4. Gentag disse trin for at slette kolonnen **InvoiceVendorAccountNumber**.
 
-        ![Sletning af kolonnen InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Sletning af kolonnen InvoiceVendorAccountNumber.](media/vend-selfref4.png)
 
     5. Gem ændringerne i tilknytningen.
 
@@ -129,11 +129,11 @@ Hvis der er rækker i kreditortabellen med værdier i kolonnerne **PrimaryContac
     2. Vælg tabellen **Kreditorer V2**.
     3. I handlingsruden skal du vælge **Indstillinger** og derefter vælge **Ændringssporing**.
 
-        ![Valg af indstillingen Ændringssporing](media/selfref_options.png)
+        ![Valg af indstillingen Ændringssporing.](media/selfref_options.png)
 
     4. Vælg **Deaktiver ændringssporing**.
 
-        ![Valg af Deaktiver ændringssporing](media/selfref_tracking.png)
+        ![Valg af Deaktiver ændringssporing.](media/selfref_tracking.png)
 
 3. Kør den første synkronisering for tilknytningen **Kreditorer V2 (msdyn\_vendors)**. Den første synkronisering skal køres uden fejl.
 4. Kør den første synkronisering for tilknytningen **CDS kontakter V2 (kontakter)**. Du skal synkronisere denne tilknytning, hvis du vil synkronisere kolonnen med den primære kontakt i kreditortabellen, fordi den første synkronisering også skal udføres for kontaktrækkerne.
@@ -162,11 +162,11 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
     2. Søg efter **contactperson** for at finde kildekolonnen **ContactPersonID**.
     3. Vælg **Handlinger**, og vælg derefter **Slet**.
 
-        ![Sletning af kolonnen ContactPersonID](media/cust_selfref3.png)
+        ![Sletning af kolonnen ContactPersonID.](media/cust_selfref3.png)
 
     4. Gentag disse trin for at slette kolonnen **InvoiceAccount**.
 
-        ![Sletning af kolonnen InvoiceAccount](media/cust_selfref4.png)
+        ![Sletning af kolonnen InvoiceAccount.](media/cust_selfref4.png)
 
     5. Gem ændringerne i tilknytningen.
 
@@ -176,11 +176,11 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
     2. Vælg tabellen **Debitorer V3**.
     3. I handlingsruden skal du vælge **Indstillinger** og derefter vælge **Ændringssporing**.
 
-        ![Valg af indstillingen Ændringssporing](media/selfref_options.png)
+        ![Valg af indstillingen Ændringssporing.](media/selfref_options.png)
 
     4. Vælg **Deaktiver ændringssporing**.
 
-        ![Valg af Deaktiver ændringssporing](media/selfref_tracking.png)
+        ![Valg af Deaktiver ændringssporing.](media/selfref_tracking.png)
 
 3. Kør den første synkronisering for tilknytningen **Debitorer V3 (konti)**. Den første synkronisering skal køres uden fejl.
 4. Kør den første synkronisering for tilknytningen **CDS kontakter V2 (kontakter)**.
@@ -196,7 +196,7 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
 
         Følgende illustration viser et projekt, der opdaterer **CustomerAccount** og **ContactPersonId**.
 
-        ![Dataintegrationsprojektet, der skal opdatere CustomerAccount og ContactPersonId](media/cust_selfref6.png)
+        ![Dataintegrationsprojektet, der skal opdatere CustomerAccount og ContactPersonId.](media/cust_selfref6.png)
 
     2. Tilføj firmakriterierne i filteret på Dataverse-siden, så kun de rækker, der opfylder filterkriterierne, opdateres i Finance and Operations-appen. Hvis du vil tilføje et filter, skal du vælge filterknappen. I dialogboksen **Rediger forespørgsel** kan du tilføje en filterforespørgsel som **\_msdyn\_company\_value eq '\<guid\>'**. 
 
@@ -204,7 +204,7 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
 
         Hvis du ikke indtaster en filterforespørgsel for **\_msdyn\_company\_value**, synkroniseres alle rækker.
 
-        ![Tilføjelse af en filterforespørgsel](media/cust_selfref7.png)
+        ![Tilføjelse af en filterforespørgsel.](media/cust_selfref7.png)
 
     Den første synkronisering af rækkerne er nu fuldført.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049358"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344486"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Tildele trinikoner og titler til mobilappen Warehouse Management
 
@@ -25,7 +25,7 @@ I dette emne beskrives, hvordan du tildeler trinikoner og trintitler til nye ell
 
 Følgende illustrationer viser, hvordan trinikoner og titler vises i mobilappen Warehouse Management.
 
-![Eksempel på et trinikon og en trintitel i mobilappen Warehouse Management](media/step-icon-example.png "Eksempel på et trinikon og en trintitel i mobilappen Warehouse Management")
+![Eksempel på et trinikon og en trintitel i mobilappen Warehouse Management.](media/step-icon-example.png "Eksempel på et trinikon og en trintitel i mobilappen Warehouse Management")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>Aktivere denne funktion i systemet
 
@@ -350,13 +350,13 @@ I dette eksempel forklares det, hvordan du konfigurerer trinikoner og titler for
 
 Følgende illustration viser dette opgaveflow.
 
-![Diagram over opgaveflow](media/step-icons-example-task-flow.png "Diagram over opgaveflow")
+![Diagram over opgaveflow.](media/step-icons-example-task-flow.png "Diagram over opgaveflow")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>Oprette en trinklasse til inputsiden for objektbeholderen
 
 På inputsiden for objektbeholderen kan arbejderen scanne eller angive et objektbeholder-id.
 
-![Inputsiden for objektbeholder](media/step-icons-example-container-input.png "Inputsiden for objektbeholder")
+![Inputsiden for objektbeholder.](media/step-icons-example-container-input.png "Inputsiden for objektbeholder")
 
 På inputsiden for objektbeholderen er kontrolelementnavnet på inputfeltetet `ContainerId`. Da dette kontrolelementnavn ikke findes på [listen over trin-id'er](#step-ids-classes), finder du ikke et eksisterende trin, der er baseret på det. Derfor skal du oprette en trinklasse, der repræsenterer trinnet. Her er et eksempel.
 
@@ -382,7 +382,7 @@ Hvis du vil tildele et trinikon, skal du angive `defaultStepIcon` til et af de i
 
 På siden med vægtinput kan arbejderen angive en vægt.
 
-![Siden Vægtinput](media/step-icons-example-weight-input.png "Siden Vægtinput")
+![Siden Vægtinput.](media/step-icons-example-weight-input.png "Siden Vægtinput")
 
 På siden til vægtinput er kontrolelementnavnet på inputfeltet `Weight`, som findes på [listen over trin-id'er](#step-ids-classes). Hvis det trinikon og den titel, der er defineret i `WHSMobileAppStepWeight`-klassen, derfor kan accepteres af dig, behøver du ikke at ændre noget for dette trin.
 

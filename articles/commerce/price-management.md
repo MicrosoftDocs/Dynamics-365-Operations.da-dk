@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85f6188bff4d3535369e4af145f8f55a3263c4a3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794157"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352222"
 ---
 # <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
 
@@ -46,7 +46,7 @@ I sig selv er en prisgruppe blot et navn, en beskrivelse og eventuelt en priorit
 
 I følgende illustration vises, hvordan prisgrupperne bruges. I denne illustration skal du bemærke, at "Prisgruppe" bogstaveligt talt er placeret midt i administrationen af prissætning og rabat. De Commerce-enheder, du kan bruge til at administrere differentierede priser og rabatter, er placeret til venstre, og de faktiske pris- og rabatposter er placeret til højre.
 
-![Prisgrupper](./media/PriceGroups.png "Prisgrupper")
+![Prisgrupper.](./media/PriceGroups.png "Prisgrupper")
 
 Når du opretter prisgrupper, bør du ikke bruge samme prisgruppe til flere typer Commerce-enheder. I modsat fald kan det være vanskeligt at afgøre, hvorfor en bestemt pris eller rabat anvendes til en transaktion.
 

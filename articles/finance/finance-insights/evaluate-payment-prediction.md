@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 872f4cfd968b70cb8a2087822870dcc76e83e92b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186732"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349004"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluer den indledende forudsigelsesmodel for debitorbetalinger (prøveversion)
 
@@ -33,32 +33,32 @@ Dette emne forklarer, hvordan du evaluerer en forudsigelsesmodel, når du har ak
 
 På siden **Finance Insights-parametre** i Microsoft Dynamics 365 Finance vises der et link **Forbedring af modellens nøjagtighed** ud for præcisionsscoren.
 
-[![Forbedring af modellens nøjagtighed](./media/prediction-model.png)](./media/prediction-model.png)
+[![Forbedring af modellens nøjagtighed.](./media/prediction-model.png)](./media/prediction-model.png)
 
 Dette link fører dig til AI Builder, hvor du kan lære mere om den aktuelle model og gennemgå forholdsregler for at forbedre den. I følgende illustration vises den side, der er åbnet.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Den side, der er åbnet, viser følgende oplysninger:
 
 - I afsnittet **Ydeevne** giver modellens ydeevne et overslag over modellens kvalitet. Du kan finde flere oplysninger om denne klasse i [Forudsigelsesmodel-ydeevne](/ai-builder/prediction-performance) i dokumentationen til AI Builder.
 - Afsnittet **Data med mest indflydelse** viser, hvordan vigtige andre inputtyper for data var for din model. Du kan evaluere denne liste og de tilsvarende procenter for at afgøre, om oplysningerne er i overensstemmelse med det, du kender til din virksomhed og dit marked.
 
-    [![Ydeevne og de dataafsnit med mest indflydelse til forudsigelsesmodellen](./media/models.png)](./media/models.png)
+    [![Ydeevne og de dataafsnit med mest indflydelse til forudsigelsesmodellen.](./media/models.png)](./media/models.png)
 
 - I afsnittet **Ydeevne** skal du vælge **Se detaljer** for at få mere at vide om karakteren og andre overvejelser. Følgende illustration viser detaljerne, at modellen bruger færre oplysninger, end der anbefales. Systemet har derfor oprettet en advarselsmeddelelse.
 
-    [![Advarsler om modellens ydeevne](./media/details.png)](./media/details.png)
+    [![Advarsler om modellens ydeevne.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Graver dybere
 
 Selvom nøjagtigheden er et godt udgangspunkt for evaluering af en model, og performance-klassen indeholder perspektiv, giver AI Builder mere detaljerede målepunkter, som du kan bruge til evalueringen. Hvis du vil hente oplysningerne, skal du vælge ellipseknappen (**....**) ved siden af knappen **Brug model** i afsnittet **Ydeevne** og derefter vælge **Hent detaljerede målepunkter**.
 
-[![Kommandoen Hent detaljerede måleoplysninger](./media/performance.png)](./media/performance.png)
+[![Kommandoen Hent detaljerede måleoplysninger.](./media/performance.png)](./media/performance.png)
 
 Følgende illustration viser det format, du kan hente dataene i.
 
-[![Format for hentede data](./media/data-format.png)](./media/data-format.png)
+[![Format for hentede data.](./media/data-format.png)](./media/data-format.png)
 
 For at opnå en dybere analyse af resultaterne er det et godt udgangspunkt at gennemgå måleværdien "Forvekslingsmatrix". Her er f. eks. de data, der vises for denne måleværdi i den foregående illustration.
 

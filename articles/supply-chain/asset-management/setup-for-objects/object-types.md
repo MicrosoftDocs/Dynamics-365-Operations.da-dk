@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b493c6993ebd466c153e999fa2592105b78d0f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8151e6f6b53f53e8ab54821d86a371b3341775
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825704"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347158"
 ---
 # <a name="asset-types"></a>Aktivtyper
 
@@ -45,9 +45,9 @@ Først skal du oprette de påkrævede aktivtyper. Derefter opretter du de aktivm
 7. Vælg **Gem**.
 8. I oversigtspanelet **Vedligeholdelsesjobtyper** skal du vælge de vedligeholdelsesjobtyper, der skal relateres til aktivtypen:
 
-    - Hvis du vil vælge en vedligeholdelsesjobtype, skal du vælge den i feltet **Resterende vedligeholdelsesjobtyper** og derefter vælge højre pileknap ![Højre pileknap](media/29-setup-for-objects.png) for at flytte den til sektionen **Valgte vedligeholdelsesjobtyper**.
-    - Hvis du vil vælge alle tilgængelige vedligeholdelsesjobtyper, skal du vælge pileknappen ![Fremsend alle](media/30-setup-for-objects.png). Alle vedligeholdelsesjobtyper overføres fra feltet **Resterende vedligeholdelsesjobtyper** til feltet **Valgte vedligeholdelsesjobtyper**.
-    - Hvis du vil annullere den valgte vedligeholdelsesjobtype, skal du vælge den i feltet **Valgte vedligeholdelsesjobtyper** og derefter vælge venstre pileknap ![Venstre pileknap](media/31-setup-for-objects.png) for at flytte den til feltet **Resterende vedligeholdelsesjobtyper**.
+    - Hvis du vil vælge en vedligeholdelsesjobtype, skal du vælge den i feltet **Resterende vedligeholdelsesjobtyper** og derefter vælge højre pileknap ![Højre pileknap.](media/29-setup-for-objects.png) for at flytte den til sektionen **Valgte vedligeholdelsesjobtyper**.
+    - Hvis du vil vælge alle tilgængelige vedligeholdelsesjobtyper, skal du vælge ![Fremsend alle.](media/30-setup-for-objects.png)- knappen. Alle vedligeholdelsesjobtyper overføres fra feltet **Resterende vedligeholdelsesjobtyper** til feltet **Valgte vedligeholdelsesjobtyper**.
+    - Hvis du vil annullere markeringen af en vedligeholdelsesjobtype, skal du vælge den i feltet **Valgte vedligeholdelsesjobtyper** og derefter vælge venstre pileknap ![Venstre pileknap.](media/31-setup-for-objects.png) for at flytte den til feltet **Resterende vedligeholdelsesjobtyper**.
 
 9. Du kan også vælge de tællere, som skal relateres til aktivtypen. Foretag dine valg i oversigtspanelet **Tællere** ved hjælp af de metoder, der er beskrevet for vedligeholdelsesjobtyper i trin 8. Du kan finde flere oplysninger om, hvordan du konfigurerer tællere, i [Tællere](counters.md).
 10. Du kan også vælge de attributtyper, som skal relateres til aktivtyperne. Foretag dine valg i oversigtspanelet **Attributtyper** ved hjælp af de metoder, der er beskrevet for vedligeholdelsesjobtyper i trin 8. Hvis du derefter vil oprette den foretrukne rækkefølge af attributtyper, skal du i feltet **Valgte attributtyper** vælge en attributtype og bruge knapperne pil op og pil ned til at flytte det. Rækkefølgen af attributtyper vises på aktiver, der bruger denne aktivtype. Du finder flere oplysninger om aktivattributter under [Vedligeholdelsesattributtyper](../setup-for-functional-locations/specification-types.md).

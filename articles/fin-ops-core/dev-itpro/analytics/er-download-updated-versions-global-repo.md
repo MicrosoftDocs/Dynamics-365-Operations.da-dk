@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5f7ae0888656dd452af17e33d600f7894b801b1d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893950"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351716"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importere opdaterede versioner af ER-konfigurationer
 
@@ -41,11 +41,11 @@ Dette emne forklarer, hvordan du kan importere ER-fra det globale lager til Konf
 2. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 3. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Importer opdateringer af konfigurationsversioner** i sektionen **Relaterede links**.
 
-    ![Siden Lokaliseringskonfigurationer](./media/er-download-updated-versions-global-repo1.png)
+    ![Siden Lokaliseringskonfigurationer.](./media/er-download-updated-versions-global-repo1.png)
 
 4. Gå til dialogboksen **Importer opdateringer af versioner af konfigurationer af elektronisk rapportering** og vælg **Vis kun tilgængelige opdateringer** i feltet **Kørselstilstand**. Vælg derefter **OK**. 
 
-    ![Feltet Kørselstilstand er angivet til kun at vise tilgængelige opdateringer](./media/er-download-updated-versions-global-repo2.png)
+    ![Feltet Kørselstilstand er angivet til kun at vise tilgængelige opdateringer.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Gennemse de meddelelser, du modtager. Disse meddelelser indeholder følgende oplysninger om de ER-konfigurationer i den aktuelle forekomst af Finance, og hvordan de sammenligner indholdet af det globale lager:
 
@@ -72,14 +72,14 @@ Dette emne forklarer, hvordan du kan importere ER-fra det globale lager til Konf
 4. Gå til dialogboksen **Importer opdateringer af versioner af konfigurationer af elektronisk rapportering** i feltet **Kørselstilstand**, vælg **Importer seneste opdateringer** for at importere de seneste versioner af ER-konfigurationer fra det globale lager i den aktuelle forekomst af Finance.
 5. Hvis du vil planlægge et batchjob til importen, skal du i oversigtspanelet **Kør i baggrunden** angive indstillingen **Batchbehandling** til **Ja**. Hvis du vil gentage importen med jævne mellemrum, skal du konfigurere den nødvendige gentagelse.
 
-    ![Feltet Kørselstilstand er angivet til Import seneste opdateringer](./media/er-download-updated-versions-global-repo5.png)
+    ![Feltet Kørselstilstand er angivet til Import seneste opdateringer.](./media/er-download-updated-versions-global-repo5.png)
 
 6. Vælg **OK**.
 7. Du kan finde ud af, hvilke konfigurationsversioner der er importeret, ved at følge et af disse trin:
 
     - Hvis du kører import interaktivt i stedet for at bruge et batchjob, skal du gennemse de meddelelser, du modtager.
 
-        ![Meddelelser, der modtages under en interaktiv importkørsel](./media/er-download-updated-versions-global-repo6.png)
+        ![Meddelelser, der modtages under en interaktiv importkørsel.](./media/er-download-updated-versions-global-repo6.png)
 
     - Hvis du kører importen i batchtilstand, skal du følge disse trin:
 
@@ -87,7 +87,7 @@ Dette emne forklarer, hvordan du kan importere ER-fra det globale lager til Konf
         2. Find og vælg jobbet **Importer opdateringer af versioner af konfigurationer af elektronisk rapportering**, og klik derefter på **Batchjob** i handlingsruden, og vælg **Batchjobhistorik** for at få vist jobhistorikken.
         3. Gå til siden **Batchjobhistorik**, og vælg **Logfil**. Vælg derefter linket **Meddelelsesdetaljer** i den meddelelse, du modtager, for at få vist jobbets logfil.
 
-        ![Joblogfil](./media/er-download-updated-versions-global-repo7.png)
+        ![Joblogfil.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > Vi anbefaler ikke, at du planlægger et tilbagevendende batchjob for at importere opdaterede versioner af ER-konfigurationer direkte fra det globale lager til et produktionsmiljø, da de importerede versioner med det samme vil være tilgængelige til anvendelse. Brug i stedet denne fremgangsmåde til at implementere versioner af ER-konfigurationer til et sandkassemiljø. De kan derefter evalueres i sandkassemiljøet, før de installeres i et produktionsmiljø.

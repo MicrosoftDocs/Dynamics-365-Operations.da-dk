@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1bddb76d17b65e3485680675b77750fca714407d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838855"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350066"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Nummerering af dokumenter og bilag kronologisk
 
@@ -69,7 +69,7 @@ Du kan definere nummerserier ved at gå til **Organisationsadministration** > **
 
 Angiv et firma for hver nummerserie. Segmenter i nummerserierne skal defineres, så de giver kronologisk rækkefølge for perioder. Segmentnavnene kan f.eks. indeholde et særligt præfiks, der identificerer en bestemt periode.
 
-![Konfiguration af nummerserie](media/chrono-num-sequence.jpg)
+![Konfiguration af nummerserie.](media/chrono-num-sequence.jpg)
 
 ### <a name="configure-number-sequence-groups"></a>Konfigurere nummerseriegrupper
 
@@ -77,7 +77,7 @@ Hvis du vil konfigurere nummerseriegrupper, skal du gå til **Debitor** > **Konf
 
 For hver gruppe skal du vælge en af de understøttede dokumentreferencer i afsnittet **Reference**, og i feltet **Nummerseriekode** skal du referere til en nummerserie, der tidligere er oprettet for den relaterede periode.
 
-![Konfiguration af nummerseriegruppe](media/chrono-num-sequence-group.jpg)
+![Konfiguration af nummerseriegruppe.](media/chrono-num-sequence-group.jpg)
 
 Konfigurer også nummerseriegrupper i modulerne **Kreditor** og **Projektstyring og regnskab**.
 
@@ -85,7 +85,7 @@ Konfigurer også nummerseriegrupper i modulerne **Kreditor** og **Projektstyring
 
 Hvis du vil konfigurere nummerseriegruppers kronologi, skal du gå til **Organisationsadministration** > **Nummerserier** > **Kronologisk nummerseriegrupper**. Definer anvendelighedsbetingelserne for nummerseriegrupper.
 
-![Kronologisk nummeropsætning](media/chrono-num-sequence-group-period.jpg)
+![Kronologisk nummeropsætning.](media/chrono-num-sequence-group-period.jpg)
 
 | Felt            | Betegnelse                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -98,7 +98,7 @@ Hvis du vil konfigurere nummerseriegruppers kronologi, skal du gå til **Organis
 ## <a name="document-posting"></a>Bogføringsdokument
 Når du bogfører et dokument, tildeles dokumentet den relevante nummerseriegruppe på grundlag af dokumentets bogføringsdato og bruges derefter til at generere et dokumentnummer baseret på den registrerede nummerserie. Systemet indeholder en meddelelse om tildeling af nummerseriegrupper.
 
-![Dokumentnummer](media/chrono-num-sequence-fti.jpg)
+![Dokumentnummer.](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
 > I nogle lande er der allerede implementeret en bestemt logik til dokumentnummerering. I dette tilfælde tilsidesætter landespecifik logikfunktionen **Kronologisk nummerering**.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753594"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348038"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Skjule Word-indhold i genererede rapporter
 
@@ -63,7 +63,7 @@ Du skal downloade og gemme følgende skabelon lokalt for eksempelrapporten:
     > [!NOTE]
     > Den gentagende indholdskontrol mærkes med nøglen til **SummaryLines**, der svarer til feltet i den brugerdefinerede XML-del, som den er tilknyttet.
 
-    ![Word-skabelon eller layout](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Word-skabelon eller layout.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>Vælg den eksisterende ER-rapportkonfiguration
 
@@ -98,7 +98,7 @@ Aktuelt bruges filen SampleVendPaymDocReportBounded.docx som en skabelon til at 
 7. Vælg **OK**.
 8. Vælg **OK** i dialogboksen **Elektroniske rapportparametre**, og analyser det genererede output.
 
-    ![Betalinger til behandling på siden Kreditorbetalinger](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Betalinger til behandling på siden Kreditorbetalinger.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     Outputtet vises i Word-format og indeholder oversigtsafsnittet.
 
@@ -149,7 +149,7 @@ Hvis du vil udelade oversigtssektionen i et genereret dokument på baggrund af a
 
 9. Vælg **Gem** for at gemme ændringer til det redigerbare format.
 
-    ![Genereret output i Word-format](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![Genereret output i Word-format.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>Kør tilpasset format for at oprette Word-output
 
@@ -163,7 +163,7 @@ Hvis du vil udelade oversigtssektionen i et genereret dokument på baggrund af a
 8. I dialogboksen **Parametre for elektronisk rapport** skal du vælge **Ja** i feltet **Ignorer oversigt**.
 9. Vælg **OK**, og analyser det genererede output.
 
-    ![Genereret output i Word-format](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Genereret output i Word-format.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Bemærk, at outputtet ikke indeholder samlesektionen, fordi det er blevet undertrykt.
 

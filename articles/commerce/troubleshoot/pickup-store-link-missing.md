@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f692d73bf1755422e9bfc8314c1156e043ccf761
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3dd4eb576f234e4d75c08b0b5e2fe967500c8c93
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020799"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347290"
 ---
 # <a name="pick-this-up-option-doesnt-appear-on-cart-or-product-details-pages"></a>"Afhentningsindstillingen" vises ikke på sider med oplysninger om indkøbsvogn eller produkt
 
@@ -34,7 +34,7 @@ Knappen **Afhent** vises ikke på sider med oplysninger om indkøbsvogn eller pr
 
 I følgende illustration vises et eksempel på en side, der indeholder knappen **Afhent**.
 
-![Knappen Afhent](media/pickup-button-missing.jpg)
+![Knappen Afhent.](media/pickup-button-missing.jpg)
 
 ## <a name="resolution"></a>Løsning
 

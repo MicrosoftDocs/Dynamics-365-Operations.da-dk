@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 3774a6258fcefb361c5c2ed709dd7700b1dc071d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085494"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351146"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -62,7 +62,7 @@ Hvis du angiver **Batchbehandling** til **Ja**, køres et ER-format i [batch](..
 > [!NOTE]
 > Jobbeskrivelsen informerer dig om kørslen af en ER-formattilknytning. Den indeholder også navnet på den kørte ER-komponent.
 
-[![Køre et ER-format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+[![Køre et ER-format.](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
 Du kan finde oplysninger om dette job på flere steder:
 
@@ -74,17 +74,17 @@ Du kan finde oplysninger om dette job på flere steder:
 
 - På siden **Elektroniske rapporteringsjob** skal du vælge **Vis filer** for at få vist listen over de fejl og advarsler, der blev genereret under jobudførelsen.
 
-    [![Gennemse ER-joblisten](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+    [![Gennemse ER-joblisten.](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
 
 ### <a name="user-configured-behavior"></a>Brugerkonfigureret funktionsmåde
 
 På siden **Destination for elektronisk rapportering** kan du tilsidesætte standardfunktionsmåden for en konfiguration. Importerede konfigurationer vises ikke på denne side, før du vælger **Ny** og derefter i feltet **Reference** vælger en konfiguration at oprette destinationsindstillinger for.
 
-[![Vælge en konfiguration i feltet Reference](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+[![Vælge en konfiguration i feltet Reference.](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
 Når du har oprettet en reference, kan du oprette en fildestination for hver outputkomponent for **Mappe** eller **Fil** i det ER-format, der refereres til.
 
-[![Oprettelse af en fildestination](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+[![Oprettelse af en fildestination.](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
 Derefter kan du i dialogboksen **Indstillinger for destination** aktivere og deaktivere individuelle destinationer for fildestinationen. Knappen **Indstillinger** bruges til at styre alle destinationer for en valgt fildestination. I dialogboksen **Indstillinger for destination** kan du styre hver destination separat ved at vælge indstillingen **Aktiveret** for destinationen.
 
@@ -92,7 +92,7 @@ I versioner af Finans **før version 10.0.9** kan du oprette **én fildestinatio
 
 Du kan f.eks. bruge denne egenskab til at konfigurere fildestinationer for en filkomponent, der bruges til at generere et udgående dokument i Excel-format. En destination ([Arkiv](er-destination-type-archive.md)) kan konfigureres til at gemme den oprindelige Excel-fil i et ER-jobarkiv, og en anden destination ([E-mail](er-destination-type-email.md)) kan konfigureres til samtidigt at [konvertere](#OutputConversionToPDF) Excel-filen til PDF-format og sende PDF-filen med e-mail.
 
-[![Konfigurere flere destinationer for et enkelt formatelement](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+[![Konfigurere flere destinationer for et enkelt formatelement.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
 Når du kører et ER-format, køres altid alle de destinationer, der er konfigureret for komponenter i formatet. Derudover er funktionaliteten af ER-destinationer blevet forbedret i Finans **version 10.0.17 og senere**, og den giver dig mulighed for at konfigurere forskellige destinationssæt til et enkelt ER-format. Denne konfiguration markerer hvert sæt som konfigureret til en bestemt brugerhandling. ER-API'en er [udvidet](er-apis-app10-0-17.md), så der kan leveres en handling, som brugeren udfører ved at køre et ER-format. Den handlingskode, der leveres, overføres til ER-destinationer. Du kan køre forskellige destinationer i et ER-format, afhængigt af den leverede handlingskode. Yderligere oplysninger finder du i [Konfigurere handlingsafhængige ER-destinationer](er-action-dependent-destinations.md).
 
@@ -116,11 +116,11 @@ Du kan konfigurere destinationer kun for ER-konfigurationer, der er importeret, 
 
 Når du konfigurerer fildestinationer for et valgt format, skal du konfigurere dem for hele formatet.
 
-[![Konfigurationslink](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
+[![Konfigurationslink.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
 Samtidig kan du have flere [versioner](general-electronic-reporting.md#component-versioning) af det format, der er importeret til den aktuelle forekomst af Finans. Du kan få vist dem, hvis du vælger linket **Konfiguration**, der tilbydes, når du vælger feltet **Reference**.
 
-[![Konfigurationsversioner](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+[![Konfigurationsversioner.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
 Som standard anvendes konfigurerede destinationer kun, når du kører en ER-formatversion, der har status som enten **Fuldført** eller **Delt**. Du skal dog sommetider bruge konfigurerede destinationer, når kladdeversionen af et ER-format køres. Det kan f.eks. være, at du redigerer en kladdeversion af dit format, og du vil bruge konfigurerede destinationer til at teste, hvordan det genererede output leveres. Benyt følgende fremgangsmåde til at anvende destinationer for et ER-format, når kladdeversionen køres.
 
@@ -128,7 +128,7 @@ Som standard anvendes konfigurerede destinationer kun, når du kører en ER-form
 2. På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
 3. Angiv indstillingen **Anvend destinationer for kladdetilstand** til **Ja**.
 
-[![Indstillingen Anvend destinationer for kladdetilstand](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+[![Indstillingen Anvend destinationer for kladdetilstand.](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
 Hvis du vil bruge kladdeversionen af et ER-format, skal du markere ER-formatet i overensstemmelse hermed.
 
@@ -136,11 +136,11 @@ Hvis du vil bruge kladdeversionen af et ER-format, skal du markere ER-formatet i
 2. På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
 3. Angiv indstillingen **Indstillingen Kør** til **Ja**.
 
-[![Indstillingen Kør](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+[![Indstillingen Kør.](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
 Når du har fuldført denne konfiguration, bliver indstillingen **Kør kladde** tilgængelig for ER-formater, som du redigerer. Angiv denne indstilling til **Ja** for at begynde at bruge kladdeversionen af formatet, når formatet køres.
 
-[![Indstillingen Kør kladde](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+[![Indstillingen Kør kladde.](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Håndtering af destinationsfejl
 
@@ -148,7 +148,7 @@ Normalt køres et ER-format inden for området for en bestemt forretningsproces.
 
 Du kan f.eks. konfigurere behandling af kreditorbetalinger, så ER-formatet **ISO20022-kreditoverførsel** køres for at generere betalingsfilen og de supplerende dokumenter (f.eks. følgeskrivelse og kontrolrapport). Hvis en betaling kun skal anses for at være behandlet korrekt, hvis følgeskrivelsen er leveret korrekt via mail, skal du markere afkrydsningsfeltet **Stop behandling ved fejl** for komponenten **CoveringLetter** i den rette destinationsfil som vist i følgende illustration. I dette tilfælde ændres status for den betaling, der er valgt til behandling, kun fra **Ingen** til **Sendt**, når det følgebrev, der er oprettet, accepteres til levering af en e-mailudbyder, der er konfigureret i Finans-forekomsten.
 
-[![Konfigurere proceshåndtering for fildestinationsfejl](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+[![Konfigurere proceshåndtering for fildestinationsfejl.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
 Hvis du fjerner markeringen af afkrydsningsfeltet **Stop behandling ved fejl** for komponenten **CoveringLetter** på destinationen, anses en betaling for at være behandlet korrekt, også selv om følgebrevet ikke er leveret korrekt via mail. Status for betalingen ændres fra **Ingen** til **Sendt**, selvom følgebrevet ikke kan sendes, f.eks. fordi modtagerens eller afsenderens e-mailadresse mangler eller er forkert.
 
@@ -160,7 +160,7 @@ Du kan bruge PDF-konverteringsindstillingen til at konvertere output i Microsoft
 
 Hvis du vil stille PDF-konverteringsindstillingen til rådighed i den aktuelle Finans-forekomst, skal du åbne arbejdsområdet **Funktionsstyring** og aktivere funktionen **Konverter udgående dokumenter til elektroniske rapportering fra Microsoft Office-formater til PDF**.
 
-[![Aktivere PDF-konvertering af funktionen udgående dokumenter i Funktionsstyring](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+[![Aktivere PDF-konvertering af funktionen udgående dokumenter i Funktionsstyring.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
 ### <a name="applicability"></a>Anvendelighed
 
@@ -185,13 +185,13 @@ Det er kun de almindelige systemskrifttyper i Windows-operativsystemet, der brug
 
 Hvis du vil aktivere PDF-konvertering for en fildestination, skal du markere afkrydsningsfeltet **Konverter til PDF**.
 
-[![Aktivere PDF-konvertering for en fildestination](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+[![Aktivere PDF-konvertering for en fildestination.](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Vælge en sideretning til PDF-konvertering</a>
 
 Hvis du opretter en ER-konfiguration i Excel-format og vil konvertere den til PDF-format, kan du angive sideretningen i PDF-dokumentet. Når du markerer afkrydsningsfeltet **Konverter til PDF** for at aktivere PDF-konvertering for en fildestination, der opretter en outputfil i Excel-format, bliver feltet **Sideretning** tilgængeligt i oversigtspanelet **Indstillinger for PDF-konvertering**. Vælg den foretrukne retning i feltet **Sideretning**.
 
-[![Vælge en sideretning til PDF-konvertering](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![Vælge en sideretning til PDF-konvertering.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
 > Hvis du vil have mulighed for at vælge PDF-sideretningen, skal du installere Finans version 10.0.10 eller nyere.
@@ -222,7 +222,7 @@ Vælg en af følgende værdier i feltet **Send mappe som** i oversigtspanelet **
     > [!NOTE]
     > Når du vælger **Separate filer**, indsamles det genererede output i hukommelsen i en zip-komprimeret tilstand. Derfor anvendes den maksimale [filstørrelsesgrænse](er-compress-outbound-files.md) for zip-komprimeret output, når den reelle filstørrelse måske vil overskride denne grænse. Vi anbefaler, at du vælger denne værdi, når du forventer, at størrelsen på det genererede output også er ret stor.
 
-[![Konfigurere en destination for en mappeformatkomponent](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+[![Konfigurere en destination for en mappeformatkomponent.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### <a name="limitations"></a>Begrænsninger
 

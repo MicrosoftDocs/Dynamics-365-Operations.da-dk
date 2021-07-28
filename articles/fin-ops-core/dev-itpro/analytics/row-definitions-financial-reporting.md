@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5204fb80dcf3dc2342e9d37f18b9d4f587de1808
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e84f882f69fbc7fceae8a6e0332716a82830dfdc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754288"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344042"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Rækkedefinitioner i Designer til økonomirapporter
 
@@ -158,7 +158,7 @@ Den formatering, der er angivet i rækkedefinitionen, tilsidesætter den formate
 
 1. Åbn den rækkedefinition, der skal redigeres, i Rapportdesigner.
 2. Marker de celler, der skal formateres. Du kan markere flere celler ved at holde Ctrl-tasten nede, mens du markerer cellen.
-3. Klik på værktøjslinjeknappen for det format, du vil anvende. Hvis du for eksempel vil indrykke en række, skal du markere rækken og derefter klikke på **Forøg indrykning** ![Forøg indrykning](media/indent.gif "Forøg indrykning") på værktøjslinjen.
+3. Klik på værktøjslinjeknappen for det format, du vil anvende. Hvis du for eksempel vil indrykke en række, skal du markere rækken og derefter klikke på **Forøg indrykning** ![Forøg indrykning.](media/indent.gif "Forøg indrykning") på værktøjslinjen.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Justere kolonner, mens du designer rapporter
 

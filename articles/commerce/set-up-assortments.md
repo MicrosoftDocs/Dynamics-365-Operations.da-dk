@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bbe7749e6c8293ded933611d6f1084b89223302c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 447c5f580e5d925efbfeaabc3890e2d67f9688f5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790976"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344341"
 ---
 # <a name="set-up-assortments"></a>Konfigurere udvalg
 
@@ -31,7 +31,7 @@ I denne artikel beskrives det, hvad et sortiment er, og det forklares, hvordan d
 
 Et sortiment er en samling af relaterede produkter, som du tildeler til en handelskanal, f.eks. en fysisk butik eller en onlinebutik. Du kan bruge udvalgt til at identificere de produkter, der er tilgængelige i hver butik. Et udvalg kan omfatte varekategorier. Alle de produkter, der er tildelt en bestemt kategori, er derfor inkluderet i sortimentet. Et udvalg kan også omfatte specifikke produkter og bestemte varianter af produkter. Ved at oprette et udvalg kan du tildele tusindvis af produkter til dine kanaler på det samme tidspunkt i enhver kombination, som din butikker kræver. Du kan oprette så mange produktudvalg, som du har brug for. Hvert produkt kan medtages i et eller flere udvalg, og hvert udvalg kan tildeles til en eller flere kanaler. Du kan f.eks. definere et sortiment der omfatter et grundlæggende sæt af produkter. Alle butikker modtager dette sortiment. Du kan derefter definere et andet sortiment, der kun indeholder stort sportsudstyr. Kun dine større butikker modtager dette sortiment. Følgende diagram viser, hvordan produkter kan tildeles sortimenter, og hvordan disse sortimenter kan tildeles kanaler.
 
-![Produktsortimentrelationer](./media/assortments_relationship.gif)
+![Produktsortimentrelationer.](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Forudsætninger
 

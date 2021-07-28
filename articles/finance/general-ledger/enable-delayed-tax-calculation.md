@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: acf5ead6ed90d4dbb41de08520cde8085a7f3935
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c58a5bfbc140eb770415a96d1d9c5748e3e2d132
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823710"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350018"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivere forsinket momsberegning på kladder
 [!include [banner](../includes/banner.md)]
@@ -45,14 +45,14 @@ Systemet giver prioriteten til indstillingen for kladdehovedet. Denne indstillin
 1. Gå til **Finans \> Opsætning Finans \> Finansparametre**.
 2. Under fanen **Moms** i oversigtspanelet **Generelt** skal du vælge **Ja** i indstillingen **Forsinket momsberegning**.
 
-![Billede af finansparametre](media/delayed-tax-calculation-gl.png)
+![Billede af finansparametre.](media/delayed-tax-calculation-gl.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Aktivere forsinket momsberegning på kladdenavnsniveau
 
 1. Gå til **Finans \> Kladdeopsætning \> Kladdenavne**.
 2. I sektionen **Moms** i oversigtspanelet **Generelt** skal du vælge **Ja** i indstillingen **Forsinket momsberegning**.
 
-![Billede af kladdenavne](media/delayed-tax-calculation-journal-name.png)
+![Billede af kladdenavne.](media/delayed-tax-calculation-journal-name.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Aktivere forsinket momsberegning på kladdehovedniveau
 
@@ -61,7 +61,7 @@ Systemet giver prioriteten til indstillingen for kladdehovedet. Denne indstillin
 3. Vælg et kladdenavn.
 4. Under fanen **Opsætning** skal du angive indstillingen **Forsinket momsberegning** til **Ja**.
 
-![Billede af siden Finanskladde](media/delayed-tax-calculation-journal-header.png)
+![Billede af siden Finanskladde.](media/delayed-tax-calculation-journal-header.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

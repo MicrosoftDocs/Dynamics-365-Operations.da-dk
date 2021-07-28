@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a1f85c100f1d062517c14d31a19838cc4af18f10
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750708"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346564"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Konfigurere tilknytning af kolonnerne for salgsordrestatus
 
@@ -100,7 +100,7 @@ Hvis du vil aktivere attributten **IsSOPIntegrationEnabled**, skal du følge dis
 1. Åbn en browser, og gå til `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Erstat **\<test-name\>** med dit firmas link til Salg.
 2. På den side, der åbnes, skal du søge efter **organizationid** og notere dig værdien.
 
-    ![Finde organizationid](media/sales-map-orgid.png)
+    ![Finde organizationid.](media/sales-map-orgid.png)
 
 3. Åbn browserkonsollen i Salg, og kør følgende script. Brug værdien af **organizationid** fra trin 2.
 
@@ -119,33 +119,33 @@ Hvis du vil aktivere attributten **IsSOPIntegrationEnabled**, skal du følge dis
     );
     ```
 
-    ![JavaScript-kode i browserkonsollen](media/sales-map-script.png)
+    ![JavaScript-kode i browserkonsollen.](media/sales-map-script.png)
 
 4. Kontrollér, at **IsSOPIntegrationEnabled** er angivet til **true**. Brug URL-adressen fra trin 1 til at kontrollere værdien.
 
-    ![IsSOPIntegrationEnabled er angivet til true](media/sales-map-integration-enabled.png)
+    ![IsSOPIntegrationEnabled er angivet til true.](media/sales-map-integration-enabled.png)
 
 Hvis du vil aktivere attributten **isIntegrationUser**, skal du følge disse trin.
 
 1. Gå i Salg til **Indstilling \> Tilpasning \> Tilpas systemet**, vælg **Brugertabel**, og åbn derefter **Formular \> Bruger**.
 
-    ![Åbne brugerformularen](media/sales-map-user.png)
+    ![Åbne brugerformularen.](media/sales-map-user.png)
 
 2. I Feltoversigt skal du finde **Integrationsbrugertilstand** og dobbeltklikke på den for at føje den til formularen. Gem ændringerne.
 
-    ![Tilføje kolonnen Integrationsbrugertilstand i formularen](media/sales-map-field-explorer.png)
+    ![Tilføje kolonnen Integrationsbrugertilstand i formularen.](media/sales-map-field-explorer.png)
 
 3. Gå i Salg til **Indstilling \> Sikkerhed \> Brugere**, og skift visningen fra **Aktiverede brugere** til **Programbrugere**.
 
-    ![Ændre visningen fra Aktiverede brugere til Programbrugere](media/sales-map-enabled-users.png)
+    ![Ændre visningen fra Aktiverede brugere til Programbrugere.](media/sales-map-enabled-users.png)
 
 4. Vælg de to poster for **DualWrite IntegrationUser**.
 
-    ![Liste over programbrugere](media/sales-map-user-mode.png)
+    ![Liste over programbrugere.](media/sales-map-user-mode.png)
 
 5. Ret værdien i kolonnen **Integrationsbrugertilstand** til **Ja**.
 
-    ![Ændre værdien i kolonnen Integrationsbrugertilstand](media/sales-map-user-mode-yes.png)
+    ![Ændre værdien i kolonnen Integrationsbrugertilstand.](media/sales-map-user-mode-yes.png)
 
 Dine salgsordrer er nu tilknyttet.
 

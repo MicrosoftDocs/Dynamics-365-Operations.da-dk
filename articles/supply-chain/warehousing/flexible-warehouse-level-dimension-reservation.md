@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: eca0b61e1fa6760bfed1a9f9979deddccf6fb1a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103040"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343768"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel reservationspolitik for dimension på lagerstedsniveau
 
@@ -58,7 +58,7 @@ Selvom reservationshierarkiet *Batch under\[lokation\]* fungerer godt for firmae
 
 For at give plads til den ønskede fleksibilitet i batchreservationens funktionsmåde for varer, der er knyttet til et lagerreservationshierarki af typen *Batch under\[lokation\]*, skal lagerstyringen markere afkrydsningsfeltet **Tillad reservation i behovsordre** for niveauet **Batchnummer** på siden **Lagerreservationshierarkier**.
 
-![Angivelse af fleksibelt lagerreservationshierarki](media/Flexible-inventory-reservation-hierarchy.png)
+![Angivelse af fleksibelt lagerreservationshierarki.](media/Flexible-inventory-reservation-hierarchy.png)
 
 Når niveauet **Batchnummer** i hierarkiet vælges, vil alle dimensioner over dette niveau og op gennem niveauet **Lokation** automatisk blive valgt. (Som standard er alle dimensioner over niveauet **Lokation** niveauet forudvalgt). Denne funktionsmåde afspejler den logik, hvor alle dimensioner i intervallet mellem batchnummeret og lokationen også reserveres automatisk, når du reserverer et bestemt batchnummer på ordrelinjen.
 
@@ -145,7 +145,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 
 6. På siden **Batchreservation** skal du vælge linjen for batch **B11** og derefter vælge **Reserver linje**. Der er ingen foruddefineret logik ved tildeling af lokationer og id'er under automatisk reservation. Du kan angive antallet manuelt i feltet **Reservation**. Bemærk, at oversigtspanelet **Batchnumre bundet til kildelinje**, batch **B11** er vist som **Bindende**.
 
-    ![Tilknytning af et bestemt batchnummer til en salgsordrelinje på siden Batchreservation](media/Batch-reservation-form-with-order-committed-reservation.png)
+    ![Tilknytning af et bestemt batchnummer til en salgsordrelinje på siden Batchreservation.](media/Batch-reservation-form-with-order-committed-reservation.png)
 
     > [!NOTE]
     > Reservation af antallet i en salgsordrelinje kan udføres på tværs af flere batches. På samme måde kan reservation af samme batch udføres mod flere lokationer og id'er (hvis der er aktiveret id'er for lokationerne).
@@ -154,7 +154,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 
 7. Gå til **Administration af produktoplysninger** \> **Produkter** \> **Frigivne produkter**. Vælg din vare, og vælg derefter **Styr lager** \> **Vis** \> **Transaktioner**.
 
-    ![Ordrebekræftet reservation som en lagertransaktionstype](media/Inventory-transactions-for-order-committed-reservation.png)
+    ![Ordrebekræftet reservation som en lagertransaktionstype.](media/Inventory-transactions-for-order-committed-reservation.png)
 
 8. Gennemse varens lagertransaktioner, der er relateret til reservationen af salgsordrelinjen.
 
@@ -172,7 +172,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
     - For at kunne oprette arbejde bruger systemet arbejdsskabeloner, men ikke lokationsvejledninger. Alle de standardindstillinger, der er defineret for arbejdsskabeloner, f.eks. det maksimale antal pluklinjer eller en bestemt måleenhed, vil blive anvendt til at bestemme, hvornår der skal oprettes nyt arbejde. De regler, der er knyttet til lokationsvejledninger til identifikation af pluklokationer, tages dog ikke i betragtning, fordi den ordrebekræftede reservation allerede angiver alle lagerdimensionerne. Disse lagerdimensioner omfatter dimensionerne på lagerstedets lagerniveau. Derfor arver arbejdet disse dimensioner, uden at lokationsvejledninger skal benyttes.
     - Batchnummeret vises ikke på pluklinjen (som det er tilfældet for den arbejdslinje, der er oprettet for en vare, der har et tilknyttet reservationshierarki for *Batch over\[lokation\]*). I stedet vises batchnummeret "fra" og alle andre lagringsdimensioner i arbejdslinjens lagertransaktion, der refereres til fra de tilknyttede lagertransaktioner.
 
-        ![Lagersteds lagertransaktion for arbejde, der stammer fra ordrebekræftet reservation](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        ![Lagersteds lagertransaktion for arbejde, der stammer fra ordrebekræftet reservation.](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
     - Når arbejdet er oprettet, fjernes varens lagertransaktion, hvor feltet **Reference** er angivet til **Ordrebekræftet reservation**. Lagertransaktionen, hvor feltet **Reference** er angivet til **Arbejde**, indeholder nu den fysiske reservation af lagerdimensionerne for alle antal.
 
@@ -207,7 +207,7 @@ Før du kan bruge fleksibel reservation af id, skal to funktioner være aktivere
 
 Hvis du vil aktivere reservation af id på en ordre, skal du markere afkrydsningsfeltet **Tillad reservation på behovsordre** for niveauet **Id** på siden **Lagerreservationshierarkier** for det hierarki, der er knyttet til den relevante vare.
 
-![Siden med lagerreservationshierarkier for et fleksibelt id-reservationshierarki](media/Flexible-LP-reservation-hierarchy.png)
+![Siden med lagerreservationshierarkier for et fleksibelt id-reservationshierarki.](media/Flexible-LP-reservation-hierarchy.png)
 
 Du kan aktivere id-reservation på ordren på et hvilket som helst tidspunkt i din installation. Denne ændring påvirker ikke reservationer eller åbent lagerstedsarbejde, der er oprettet, før ændringen blev foretaget. Det er dog ikke muligt at fjerne markeringen af afkrydsningsfeltet **Tillad reservation i behovsordre**, hvis der findes åbne udgående lagertransaktioner med afgangsstatus *I bestilling*, *Reserveret bestilt* eller *Reserveret fysisk* for en eller flere varer, der er tilknyttet det pågældende reservationshierarki.
 
@@ -227,7 +227,7 @@ Når den salgsordrelinje, der bruger en ordrebekræftet reservation af id, behan
 
 Hvis et lagersteds arbejdselement består af linjer, der svarer til en hel palle og har id-bekræftede antal, kan du optimere plukprocessen ved hjælp af et menupunkt i en mobilenhed, hvor indstillingen **Håndter efter id** er angivet til *Ja*. En lagermedarbejder kan derefter scanne et id for at fuldføre et pluk i stedet for at skulle scanne varerne fra arbejdet én efter én.
 
-![Menupunktet i mobilenheden, hvor indstillingen Håndter efter id er angivet til Ja](media/Handle-by-LP-menu-item.png)
+![Menupunktet i mobilenheden, hvor indstillingen Håndter efter id er angivet til Ja.](media/Handle-by-LP-menu-item.png)
 
 Da funktionen **Håndter efter id** ikke understøtter arbejde, der dækker flere paller, er det bedre at have et separat arbejdselement til forskellige id'er. Hvis du vil bruge denne fremgangsmåde, skal du tilføje feltet **Ordre bekræftet id** som en arbejdshovedpause på siden **Arbejdsskabelon**.
 
@@ -249,7 +249,7 @@ Dette scenario indeholder referencer til værdier og poster, der er inkluderet i
 1. Angiv en værdi i feltet **Navn** (f.eks. *FleksibeltID*).
 1. Indtast en beskrivelse i feltet **Beskrivelse** (f.eks. *Fleksibel id-reservation*).
 1. Vælg **Batchnummer**, **Serienummer** og **Ejer** på listen **Valgte**.
-1. Vælg knappen **Fjern** ![bagudrettet pil](media/backward-button.png) for at flytte de valgte poster til listen **Tilgængelige**.
+1. Vælg knappen **Fjern** ![pil tilbage.](media/backward-button.png) For at flytte valgte felter til listen **Tilgængelige**.
 1. Vælg **OK**.
 1. I rækken med dimensionsniveau for **Id** skal du markere afkrydsningsfeltet **Tillad reservation i behovsordre**. Niveauet **Lokation** vælges automatisk, og du kan ikke fjerne markeringerne i afkrydsningsfeltet for det.
 1. Vælg **Gem**.

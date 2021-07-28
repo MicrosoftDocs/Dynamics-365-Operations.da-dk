@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 131d14f1f1aa329bd71b1f8a4015192736bd8e44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 682910350832e441ed13c716c0c18200a3b7865d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022569"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351067"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurere opslagsdatakilder til at bruge ER-programspecifikke parametre 
 
@@ -44,38 +44,38 @@ Du kan konfigurere følgende typer **Opslag**-datakilder afhængigt af den type 
 
 I følgende illustration vises, hvordan en formatfasttekst kan konfigureres i ER-eksempelformat.
 
-   ![Visning af en formatfasttekst som grundlag for den konfigurerede opslagsdatakilde](./media/er-lookup-data-sources-img1.gif)
+   ![Visning af en formatfasttekst som grundlag for den konfigurerede opslagsdatakilde.](./media/er-lookup-data-sources-img1.gif)
 
 I følgende illustration vises de formatkomponenter, der er konfigureret til at rapportere forskellige typer moms i en anden sektion af en genereret rapport.
 
-   ![Viser formatsektionerne for at rapportere forskellige typer moms separat](./media/er-lookup-data-sources-img2.png)
+   ![Viser formatsektionerne for at rapportere forskellige typer moms separat.](./media/er-lookup-data-sources-img2.png)
 
 I følgende illustration vises, hvordan ER-operationsdesigneren tillader tilføjelse af en datakilde af typen **Formatfasttekst\Opslag**.  Den tilføjede datakilde er konfigureret som en returnering af en værdi af `List of taxation levels`-formatfasttekst.
 
-   ![Tilføjelse af en ER-datakilde af typen Formatfasttekst\Opslag](./media/er-lookup-data-sources-img3.gif)
+   ![Tilføjelse af en ER-datakilde af typen Formatfasttekst\Opslag.](./media/er-lookup-data-sources-img3.gif)
 
 I følgende illustration vises, hvordan den tilføjede datakilde er konfigureret til at bruge feltet **Kode** i **Model.Data.Tax**-postlisten for **Model**-datakilden som en parameter, der skal angives for hver konfigureret regel.
 
-![Konfigurere parametre for den tilføjede datakilde for typen Formatfasttekst\Opslag](./media/er-lookup-data-sources-img4.gif)
+![Konfigurere parametre for den tilføjede datakilde for typen Formatfasttekst\Opslag.](./media/er-lookup-data-sources-img4.gif)
 
 Den tilføjede `Model.Data.Tax`-datakilde er konfigureret til at angive en momskode for hver konfigureret regel ved at åbne poster i **TaxTable**-programtabellen.
 
-   ![Gennemgang af enkeltfirmas opslagsdatakilde for typen Formatfasttekst\Opslag](./media/er-lookup-data-sources-img5.gif)
+   ![Gennemgang af enkeltfirmas opslagsdatakilde for typen Formatfasttekst\Opslag.](./media/er-lookup-data-sources-img5.gif)
 
 Du kan oprette opslagsregler for det valgte ER-format i brugergrænsefladen, der automatisk justeres efter strukturen i den konfigurerede datakilde. I øjeblikket kræver denne brugergrænseflade, at du for hver regel både angiver den returnerede værdi som `List of taxation levels`-formatfasttekstværdi og momskoden som en parameter.
 
-   ![Konfigurere regler for den konfigurerede datakilde](./media/er-lookup-data-sources-img6.gif)
+   ![Konfigurere regler for den konfigurerede datakilde.](./media/er-lookup-data-sources-img6.gif)
 
 I følgende illustration vises, hvordan `Model.Data.Summary.LevelByLookup`-datakilden for typen **Beregnet felt** kan konfigureres til at kalde den konfigurerede **Opslag**-datakilde, der leverer de påkrævede parametre. For at behandle dette kald under kørslen gennemgår ER listen over konfigurerede regler i den definerede rækkefølge for at finde den første regel, der opfylder de leverede betingelser. I dette eksempel er det reglen, der indeholder den momskode, der svarer til den angivne momskode. Som følge heraf findes den mest relevante regel, og den fasttekstværdi, der er konfigureret for den fundne regel, returneres af denne datakilde.
 
 > [!NOTE]
 > En undtagelse opstår, når der ikke findes nogen gældende regel. Du kan forhindre disse undtagelser ved at konfigurere flere regler i slutningen af regellisten, så du kan håndtere sager, når der ikke er angivet en konfigureret værdi. Brug indstillingerne **\*Ikke tom\*** og **\*Tom\*** i overensstemmelse hermed.  
 >
-> ![Tilføje en datakilde for at kalde den konfigurerede opslagsdatakilde](./media/er-lookup-data-sources-img7.png)
+> ![Tilføje en datakilde for at kalde den konfigurerede opslagsdatakilde.](./media/er-lookup-data-sources-img7.png)
 
 Når du angiver indstillingen **På tværs af firma** til **Ja** for den opslagsdatakilde, der kan redigeres, føjer du en ny påkrævet **Firma**-parameter til parametersættet for denne datakilde. Værdien af parameteren **Firma** skal angives ved kørsel, når opslagsdatakilden kaldes. Når firmakoden angives under kørslen, bruges de regler, der er konfigureret for dette firma, til at finde den regel, der passer bedst, og den tilsvarende værdi returneres. I følgende illustration vises, hvordan du kan gøre dette, og hvordan parametersættet for den redigerbare datakilde ændres.
 
-   ![Gennemgang af flere firmaers opslagsdatakilde for typen Formatfasttekst\Opslag](./media/er-lookup-data-sources-img8.gif)
+   ![Gennemgang af flere firmaers opslagsdatakilde for typen Formatfasttekst\Opslag.](./media/er-lookup-data-sources-img8.gif)
 
 > [!NOTE]
 > Vælg hvert firma separat for at konfigurere regelsættet for denne opslagsdatakilde i det redigerbare ER-format. En undtagelse opstår under kørslen, når opslag på tværs af firmaer kaldes med koden for det firma, som opslagsindstillingen ikke er fuldført for.
@@ -84,7 +84,7 @@ Når du angiver indstillingen **På tværs af firma** til **Ja** for den opslags
 
 Fra og med version 10.0.19 er de udvidede funktioner i **Opslag**-datakilderne tilgængelige. Når du angiver indstillingen **Udvidet** til **Ja** for den opslagsdatakilde, der kan redigeres, konverteres den konfigurerede opslagsdatakilde til den strukturerede datakilde, der indeholder de ekstra egenskaber, så det konfigurerede sæt regler analyseres. Følgende illustration viser denne transformation.
 
-   ![Gennemgang af struktureret opslagsdatakilde for typen Formatfasttekst\Opslag](./media/er-lookup-data-sources-img9.gif)
+   ![Gennemgang af struktureret opslagsdatakilde for typen Formatfasttekst\Opslag.](./media/er-lookup-data-sources-img9.gif)
 
 - Underelementet **Opslag** er designet som en funktion til at finde den mest relevante regel fra sættet af konfigurerbare regler baseret på de angivne parametre.
 - Underelementet **IsLookupResultSet** er designet som en funktion til at acceptere den angivne værdi af den grundlæggende fasttekstdatakilde og returnere den *Booleske* værdi af **Sand**, når regelsættet indeholder mindst én regel, som den angivne fasttekstværdi er konfigureret som en returværdi for. Denne funktion returnerer den *Booleske* værdi af **Falsk**, når der ikke er konfigureret regler for returnering af den angivne fasttekstværdi.

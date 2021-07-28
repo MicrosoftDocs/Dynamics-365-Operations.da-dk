@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 567f102cfe78a92e2e6f1243fb531dd3366c9bf2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 699c285ba0f92df4ccc05790b813ff423c01b62a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792457"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353822"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Oprette og konfigurere udvidede garantier
 
@@ -81,7 +81,7 @@ Hvis du vil oprette en garantivare i Commerce, skal du følge disse trin.
 
     Hvis der f.eks. er en garanti på to år, skal du angive feltet **Tidsenhed** til **År** og feltet **Tidsrum** til **2**. Du kan også vælge at angive feltet **Tidsenhed** til **Måned(er)** og feltet **Tidsrum** længde til **24**, som vist i følgende illustration.
 
-    ![Siden Produktdetaljer for en garantivare](./media/ew-time-properties.png)
+    ![Siden Produktdetaljer for en garantivare.](./media/ew-time-properties.png)
 
 1. Vælg **Gem** for at gemme garantivaren.
 1. Frigiv garantiproduktet til firmaet, så det kan sælges. Du kan finde flere oplysninger under [Konfigurere detailprodukter](set-up-retail-products.md).
@@ -94,7 +94,7 @@ Hvis du vil oprette en garantivare i Commerce, skal du følge disse trin.
 
     I følgende illustration vises feltet **Prisinterval** angivet til **Basispris**, feltet **Nedre grænse** er angivet til $500, og feltet **Øvre grænse** er angivet til $1000.
     
-    ![Siden Frigivne produktdetaljer for en garantivare](./media/ew-release-product-details.png)
+    ![Siden Frigivne produktdetaljer for en garantivare.](./media/ew-release-product-details.png)
 
 1. Send garantivaren til den kanal, hvor den sælges. Du kan finde flere oplysninger under [Konfigurere udvalg](set-up-assortments.md).
 
@@ -161,11 +161,11 @@ Med to POS-operationer kan salgsmedarbejdere sælge garantivarer under arbejdsga
 
 I følgende illustration vises et eksempel på en side i en POS-klient med en prompt om at tilføje en garantivare for det aktuelle køb af en berettiget vare.
 
-![Eksempel på en prompt om at tilføje en garantivare for det aktuelle indkøb](./media/ew-sell-warranty.png)
+![Eksempel på en prompt om at tilføje en garantivare for det aktuelle indkøb.](./media/ew-sell-warranty.png)
 
 I følgende illustration vises et eksempel på funktionen til tilføjelse af en garantivare for en berettiget vare, der tidligere er blevet solgt.
 
-![Eksempel på funktionen til tilføjelse af en garantivare for en tidligere solgt berettiget vare](./media/ew-add-warranty-existing.png)
+![Eksempel på funktionen til tilføjelse af en garantivare for en tidligere solgt berettiget vare.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Behandl garantitransaktioner
 

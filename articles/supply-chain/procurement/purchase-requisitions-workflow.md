@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188167"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353462"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbejdsgang for indkøbsrekvisitioner
 
@@ -51,7 +51,7 @@ Følgende illustration viser, hvordan en indkøbsrekvisition kan bevæge sig gen
 -   **Indkøbsassistent** – Den bruger, der udfører en indkøbsevaluering, og som kan godkende dokumentet.
 -   **Anmoderens chef** – Den bruger, der udfører en evaluering på lederniveau, og som kan godkende dokumentet.
 
-![Gennemsynsproces for indkøbsrekvisitioner](./media/purchreqworkflowoverview_submission.gif)  
+![Gennemsynsproces for indkøbsrekvisitioner.](./media/purchreqworkflowoverview_submission.gif)  
 I dette eksempel omfatter arbejdsgangsprocessen for indkøbsrekvisitionen følgende trin:
 
 1.  Klargøreren sender en indkøbsrekvisition til evaluering.
@@ -74,7 +74,7 @@ Følgende roller er medtaget i arbejdsprocessen for dette eksempel:
 -   **Afdelingschef** – Den bruger, der udfører en udgiftskontrol, og som kan godkende dokumentet.
 -   **Gruppeleder** – Den bruger, der udfører en kontrol af udskriftsmyndigheden, og som kan godkende dokumentet.
 
-![Gennemsynsproces for indkøbsrekvisitionslinjer](./media/purchreqlineworkflowoverview.gif)  
+![Gennemsynsproces for indkøbsrekvisitionslinjer.](./media/purchreqlineworkflowoverview.gif)  
 I dette eksempel omfatter arbejdsgangsprocessen for indkøbsrekvisitionslinjer følgende trin:
 
 1.  Klargøreren sender en indkøbsrekvisition til evaluering. Hver linje sendes til den validator, som er konfigureret til at modtage dem i arbejdsgangsprocessen.

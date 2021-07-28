@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dcac72a60eac6abb29a017eb4ce02a71dca572d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809728"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344538"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk værdi og afmærkning
 
@@ -53,7 +53,7 @@ I dette eksempel er det ikke angivet, at varemodelgruppen skal medtage fysisk v�
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer, kr. 15,00. Følgende illustration viser effekten af LIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** ikke bruges. 
 
-![LIFO uden Medtag fysisk værdi](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO uden Medtag fysisk værdi.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -89,7 +89,7 @@ Posteringen i 6a reguleres i forhold til tilgangspostering i 4b. Systemet udlign
 
 Følgende illustration viser effekten af LIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** bruges. 
 
-![LIFO med Medtag fysisk værdi](./media/lifowithincludephysicalvalue.gif) 
+![LIFO med Medtag fysisk værdi.](./media/lifowithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -133,7 +133,7 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og
 
 I følgende illustration vises effekterne af LIFO-lagermodellen på denne række af posteringer, når afmærkning mellem afgange og tilgange anvendes. 
 
-![LIFO med afmærkning](./media/lifowithmarking.gif) 
+![LIFO med afmærkning.](./media/lifowithmarking.gif) 
 
 **Forklaring til diagram**
 

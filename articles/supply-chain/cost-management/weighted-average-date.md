@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9990df3e57d65c77a75913efaf30675528d411b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343694"
 ---
 # <a name="weighted-average-date"></a>Gennemsnitskostdato
 
@@ -39,7 +39,7 @@ Vægtet gennemsnit = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 +
 
 Under lagerlukning udføres beregningen dagligt gennem lukningsperioden, som vist i nedenstående illustration. 
 
-![Daglig beregningsmodel med vægtet gennemsnit ud fra dato](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Daglig beregningsmodel med vægtet gennemsnit ud fra dato.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Lagerposteringer, der forlader lageret, f.eks. salgsordrer, lagerkladder og produktionsordrer, vil blive udført til en forkalkuleret kostpris på bogføringsdatoen. Den forkalkulerede kostpris kaldes også den løbende gennemsnitskostpris. På lagerlukningsdatoen analyserer systemet lagertransaktionerne for tidligere perioder, tidligere dage og den aktuelle dag. Denne analyse bruges til at bestemme, hvilket af følgende lukningsprincipper der skal bruges:
 
@@ -72,7 +72,7 @@ Følgende illustration viser disse posteringer:
 -   2b. Økonomisk lagerafgang er opdateret for et antal på 2 til en kostpris af kr. 10,00 pr. stk.
 -   3. Lagerlukningen er udført ved brug af den direkte udligningsmetode for at udligne den økonomiske lagertilgang med den økonomiske lagerafgang.
 
-![Direkte udligning for gennemsnitskostdato uden indstillingen Medtag fysisk værdi](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Direkte udligning for gennemsnitskostdato uden indstillingen Medtag fysisk værdi.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøgle til illustrationen:**
 
@@ -126,7 +126,7 @@ Systemet genererer og bogfører den summerede lageroverførselspostering. System
 
 I følgende illustration viser denne række posteringer, og effekterne ved at vælge lagermodellen for vægtet gennemsnit og princippet for opsummeret udligning, men uden brug af indstillingen **Medtag fysisk værdi**. 
 
-![Opsummeret udligning for gennemsnitskostdato uden indstillingen Medtag fysisk værdi](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Opsummeret udligning for gennemsnitskostdato uden indstillingen Medtag fysisk værdi.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøgle til illustrationen**
 
@@ -175,7 +175,7 @@ Du kan afmærke en afgangspostering til en tilgang, før posteringen bogføres. 
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede posteringer på kr. 27,50. I følgende illustration vises denne serie af posteringer, og virkningerne af at vælge lagermodellen for vægtet gennemsnitsdato og afmærkning.
 
-![Gennemsnitskostdato med afmærkning](./media/weightedaveragedatewithmarking.gif) 
+![Gennemsnitskostdato med afmærkning.](./media/weightedaveragedatewithmarking.gif) 
 
 **Nøgle til illustrationen:**
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: b07747752dd09f39c3a7a9a647cc3d10cc4b5cc7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f97a003ab35192d164741ef2e6b6597d3df46b6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829540"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358779"
 ---
 # <a name="country-of-origin"></a>Oprindelsesland
 
@@ -86,7 +86,7 @@ Når du genererer en styklisterapport, kan du medtage oprindelseslandet for hver
 
 En rapport, der viser oplysninger om de enkelte deles oprindelsesland, genereres og vises. Her er et eksempel på rapporten.
 
-![Rapport om oprindelsesland](media/country-of-origin-report.png "Rapport om oprindelsesland")
+![Rapport om oprindelsesland.](media/country-of-origin-report.png "Rapport om oprindelsesland")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
