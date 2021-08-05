@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platformsopdateringer til 10.0.19 (juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Platformsopdateringer til 10.0.18 (maj 2021)
-                  href: get-started/whats-new-platform-updates-10-0-18.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -366,6 +364,8 @@
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Ofte stillede spørgsmål om planlagt vedligeholdelse i selvbetjeningsmiljøer
                       href: deployment/plannedmaintenance-selfservice.md
+                    - name: Forretningskontinuitet og it-katastrofeberedskab
+                      href: sysadmin/business-continuity-disaster-recovery.md
                 - name: Komplet onboarding af Azure Resource Manager
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute og Finance and Operations
@@ -376,6 +376,8 @@
                   href: deployment/apply-deployable-package-system.md
                 - name: Anvende opdateringer og udvidelser i Commerce Scale Unit (sky)
                   href: deployment/Update-retail-channel.md
+                - name: Automatisk opdatering af Commerce Scale Unit (sky)
+                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
                 - name: Initialisere Commerce Scale Unit (sky)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Overflytte kanaler til en anden Commerce Scale Unit
@@ -392,6 +394,8 @@
                       href: deployment/on-premises-overview.md
                     - name: Planlægge og forberede lokale installationer
                       href: deployment/plan-onprem-deployment.md
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises)-understøttet software
+                      href: deployment/onprem-compatibility.md
                     - name: Krav til tilpasning af hardware
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Godkendelse i Dynamics 365 Finance + Operations (on-premises)
@@ -502,8 +506,6 @@
                   href: dev-tools/access-instances.md
                 - name: Installere udviklingsmiljøer med én boks
                   href: dev-tools/configure-developer-vm.md
-                - name: Oprette nye brugere på computere til udvikling
-                  href: dev-tools/enable-development-machine.md
                 - name: 'Ofte stillede spørgsmål om udviklings- og build-VM''er, der ikke tillader administratoradgang'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Omdøbe lokale miljøer for at få adgang til Azure DevOps
@@ -1116,7 +1118,7 @@
                       href: data-entities/dual-write/integrated-hr.md
                     - name: Part- og globalt adressekartotek
                       href: data-entities/dual-write/party-gab.md
-                    - name: Brug af Power Portal sammen med datamodellen for part
+                    - name: Brug af Microsoft Power Apps-portaler sammen med datamodellen for part
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Opgradere til modellen med part- og globalt adressekartotek
                       href: data-entities/dual-write/upgrade-party-gab.md
@@ -1598,12 +1600,14 @@
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: Opgradering til AX 2012 – Opgaver efter opgradering
                   href: migration-upgrade/app-validation-process.md
-                - name: Opgradering til AX 2012 – Beståelser af funktionstest
+                - name: Opgradering til AX 2012 – Funktionstest bestået
                   href: migration-upgrade/upgrade-functional-validation.md
                 - name: Opgradering til AX 2012 – Forberedelse af udgivelse
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: Opgradering til AX 2012 – Udgivelse
                   href: migration-upgrade/2012-upgrade-cutover.md
+                - name: Opgradering fra AX 2012 – Ofte stillede spørgsmål om dataopgradering
+                  href: migration-upgrade/upgrade-faq.md
                 - name: 'Ændringer, der påvirker opgradering fra AX 2012'
                   items:
                     - name: Gøre afgrænsningstegn for kontoplaner entydigt

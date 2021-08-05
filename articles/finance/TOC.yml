@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (juni 2021)
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: Finance 10.0.18 (maj 2021)
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -1566,6 +1564,8 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: 'Tjenesterapport, der involverer udlandet'
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: Indkøbsafgifter
+                  href: localizations/emea-aut-purchase-duties.md
             - name: Bahrain
               items:
                 - name: Oversigt for Bahrain
@@ -1992,6 +1992,10 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: Generere en EU Intrastat-opgørelse
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: Fransk Intrastat
+                      href: localizations/emea-fra-intrastat.md
+                    - name: Italiensk Intrastat
+                      href: localizations/emea-ita-intrastat.md
                 - name: Lagerkladderapporter
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Deadlines for fakturaudstedelse
@@ -2968,6 +2972,12 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
                 - name: 'Momsopgørelse med registre (JPK_V7M, VDEK)'
                   href: localizations/emea-pol-vdek.md
+                - name: Forberede til JPK-V7M-rapportering
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: JPK-V7M-rapportering
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: Detaljer om specifikke forretningsscenarier i JPK-V7M-rapporten
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: Qatar
               items:
                 - name: Oversigt for Qatar
@@ -3204,6 +3214,8 @@
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: Hensættelse til tab på debitorer i Debitorer
                       href: localizations/rus-bad-debts.md
+                    - name: Beregning af registre over momsaktiv og skattetilsvar
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: Saudi-Arabien
               items:
                 - name: Oversigt for Saudi-Arabien
@@ -3997,6 +4009,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: 'Generere rapporter i Office-formater, der har integrerede billeder'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: Design et ER-format til generering af en rapport i Excel med integrerede billeder i sidehoveder eller sidefødder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Ignorere styklistetegn i genererede filer

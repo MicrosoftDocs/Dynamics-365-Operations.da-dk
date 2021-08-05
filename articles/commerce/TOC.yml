@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (juni 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
-                    - name: Commerce 10.0.18 (maj 2021)
-                      href: get-started/whats-new-commerce-10-0-18.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner på startsiden
@@ -900,6 +898,8 @@
                   href: set-up-B2C-tenant.md
                 - name: Konfigurere brugerdefinerede sider til brugerlogon
                   href: custom-pages-user-logins.md
+                - name: Aktivere automatisk sammenkædning af identitetsposter til debitorkonti
+                  href: identity-record-linking.md
                 - name: Konfigurere flere B2C-lejere i et Commerce-miljø
                   href: configure-multi-B2C-tenants.md
                 - name: Domæner i Dynamics 365 Commerce
@@ -1022,6 +1022,8 @@
                   items:
                     - name: Oversigt over Adventure Works-tema
                       href: adventure-works-theme.md
+                    - name: Installere Adventure Works-temaet
+                      href: install-adventure-works.md
             - name: Administrere digitale aktiver
               items:
                 - name: Oversigt over styring af digitale aktiver

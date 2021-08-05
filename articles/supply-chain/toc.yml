@@ -76,8 +76,6 @@
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (juni 2021)
                       href: get-started/whats-new-scm-10-0-19.md
-                    - name: Supply Chain Management 10.0.18 (maj 2021)
-                      href: get-started/whats-new-scm-10-0-18.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner på startsiden
@@ -2001,9 +1999,7 @@
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Oprette en indkøbsordre til en engangsleverandør
                   href: procurement/tasks/create-purchase-order-one-time-supplier.md
-                - name: Oprette en købsaftræksordre ved oprettelse af indkøbsordren
-                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-                - name: Oprette en købsaftræksordre ud fra en købsaftale
+                - name: 'Anvende en købsaftale, når der oprettes en indkøbsordre'
                   href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
                 - name: Oprette en købsreturordre
                   href: procurement/tasks/create-purchase-return-order.md

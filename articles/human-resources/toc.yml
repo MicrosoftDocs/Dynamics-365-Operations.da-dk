@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 12. juli 2021
+          href: hr-whats-new-2021-07-12.md
         - name: 22. juni 2021
           href: hr-whats-new-2021-06-22.md
         - name: 20. maj 2021
@@ -255,6 +257,8 @@
           href: hr-admin-go-live-prepare.md
         - name: Ofte stillede spørgsmål om udgivelse
           href: hr-admin-go-live-faq.md
+        - name: Ofte stillede spørgsmål om fletning af Human Resources-infrastruktur
+          href: hr-infrastructure-merge-faq.md
         - name: Dokumentationsressourcer
           items:
             - name: Hjælp-system
@@ -691,6 +695,8 @@
               href: hr-compensation-define-process.md
             - name: Behandle kompensationsplaner
               href: hr-compensation-process.md
+            - name: Markere en medarbejder som klar til betaling
+              href: hr-compensation-payroll.md
         - name: Administrere frynsegoder
           items:
             - name: Frynsegodeadministration
@@ -715,7 +721,7 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: Konfigurere livsbegivenhedstyper
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Oprette plantyper
+                    - name: Oversigt over plantype
                       href: hr-benefits-setup-plan-types.md
                     - name: Konfigurere årsagskoder
                       href: hr-benefits-setup-reason-codes.md
@@ -807,6 +813,8 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Vise team- og firmakalendere
               href: hr-employee-self-service-calendar.md
+            - name: Konfigurere fraværschefrolle
+              href: hr-configure-absence-manager.md
             - name: Administrere politikker for køb og salg af orlov
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Oprette arbejdsgange for køb og salg af orlov
