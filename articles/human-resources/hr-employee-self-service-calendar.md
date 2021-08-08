@@ -2,7 +2,7 @@
 title: Oprette en teamkalender
 description: Få vist og opret teamkalendere i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cedff4031c6455b446af9c56a770a00f3b2efc80
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 52ae36f499871087cc086bcaf8c345af41d06943
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052091"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639384"
 ---
 # <a name="view-team-and-company-calendars"></a>Vis team- og firmakalendere
 
@@ -30,7 +30,7 @@ Du kan få vist team- og firmakalendere i Dynamics 365 Human Resources. Teamkale
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Få vist din teamkalender som medarbejder
 
-1. Vælg **Teamfraværskalender** under **Oversigt** i arbejdsområdet **Medarbejderselvbetjening**.
+- Vælg **Teamfraværskalender** under **Oversigt** i arbejdsområdet **Medarbejderselvbetjening**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Få vist din teamkalender som leder
 
@@ -39,6 +39,21 @@ Du kan få vist team- og firmakalendere i Dynamics 365 Human Resources. Teamkale
 2. Vælg **Orlov og fravær**, og vælg derefter **Vis cheffraværskalender**.
 
 Ledere kan også få adgang til teamkalenderen fra **Afventer anmodninger om fridage for mit team**, **Godkendt fritid** og **Anmodninger om fridage**. 
+
+## <a name="view-your-absence-manager-calendar-as-the-absence-manager"></a>Få vist kalender for fraværsadministrator som fraværsadministrator
+
+> [!NOTE]
+> Hvis du vil se kalenderen for fraværsadministrator, skal du først aktivere funktionen **(Forhåndsversion) Fraværsadministrator, der administrerer orlov** i Funktionsstyring. Du kan få flere oplysninger om aktivering af prøveversionsfunktioner under [Administrere funktioner](hr-admin-manage-features.md).
+
+Brugere i rollen Fraværsadministrator kan få vist anmodninger om fridage i kalenderen. Følg disse trin for at få adgang til orlovskalenderen.
+
+1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Fraværsadministrator** og derefter **Kalender for fraværsadministratorer**.
+
+2. Angiv de ønskede datoer i feltet **Dato**.
+
+3. Opdater visningsindstillingerne efter behov.
+
+Kalenderen for fraværsadministratorer viser alle poster for de medarbejdere, der rapporterer til fraværsadministratoren i orlovshierarkiet.
 
 ## <a name="view-a-company-calendar"></a>Få vist en firmakalender
 
@@ -64,13 +79,11 @@ Kalenderkonfiguration i orlovs- og fraværsparametre bestemmer tilgængelige vis
 
 Du kan også filtrere kalendere efter leder eller afdeling. Den primære stillingstildeling bestemmer, hvilke medarbejdere der vises, når disse filtre angives. 
 
->[!IMPORTANT]
->Visning af orlov og fravær på tværs af firmaer er i øjeblikket i prøveversion. Du skal aktivere den i dit **Sandkasse**-miljø. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br><br>
->Derefter skal du aktivere funktionen i **Delte parametre for personale** for at få vist filteret for juridiske enheder i kalendere. Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværsparametre](hr-leave-and-absence-parameters.md).<br><br>
->Du kan filtrere kalenderen efter juridisk enhed. Hvis du vil se alle medarbejdere uanset juridisk enhed, skal du fjerne markeringen i filtreringsfeltet og vælge Angiv. 
+> [!IMPORTANT]
+> Du kan aktivere funktionen **Orlovsvisning på tværs af virksomheder** i Funktionsstyring. Derefter skal du aktivere funktionen på siden **Delte parametre for personale** for at vise filteret for juridiske enheder i kalendere. Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværsparametre](hr-leave-and-absence-parameters.md).
+> 
+> Du kan filtrere kalenderen efter juridisk enhed. Hvis du vil se alle medarbejdere uanset juridisk enhed, skal du fjerne markeringen i filtreringsfeltet og derefter vælge **Angiv**. 
 
 Du kan få flere oplysninger om kalenderindstillinger i [Konfigurere kalenderparametre](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

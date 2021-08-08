@@ -4,24 +4,16 @@ description: I dette emne beskrives integrationen af finansdata mellem Finance a
 author: robinarh
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: rhaertle
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5fedcbcd8db2692214ea66b2fbab9f7381e0a622
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9e6e65b2b8ec8241bc2082b30ae641692c31afdd
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748511"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542655"
 ---
 # <a name="integrated-ledger"></a>Integreret finans
 
@@ -29,63 +21,26 @@ ms.locfileid: "5748511"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 I et forretningsprogram definerer finansdata den kerneopsætning, der er angivet for en virksomheds drift. Finansdataene beskriver f.eks. hvilket regnskabsår, firmaet følger, de valutaer, det anvender, og de konti, der bruges. I dette emne beskrives integrationen af disse økonomiske kernedata.
 
 ## <a name="templates"></a>Skabeloner
 
 Finansdata omfatter en samling af centrale finansielle tabeltilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
 
-Finance and Operations-apps      | Modelstyret app i Dynamics 365 | Beskrivende tekst
+Finance and Operations-apps | Kundeengagementapps     | Betegnelse
 ---------------------------------|----------------------------------|------------
-Valutaer                       | handelsvaluta            |
-Regnskabskalender                   | msdyn\_regnskabskalendere        |
-Regnskabskalenderår               | msdyn\_regnskabskalenderår        |
-ExchRateType                     | msdyn\_vekseltyper        |
-ValutaparForValutakurser         | msdyn\_valutaomvekslingspar        |
-RegnskabsperiodeEnhed               | msdyn\_regnskabskalenderperioder        |
-KategoriForHovedkonto              | msdyn\_KategoriForHovedkonto        |
-Hovedkonto                      | msdyn\_hovedkonti        |
-Finans                           | msdyn\_finans        |
-Vekselkurser                    | msdyn\_valutaomvekslingskurser        |
-FinansielKalenderperiode          | msdyn\_regnskabskalenderperioder        |
-DimensionAttributEnhed         | msdyn\_dimensionattributes        |
-DimensionIntegrationFormatEnhed | msdyn\_financialdimensionformats        |
-Finanskontoplan            | msdyn\_chartofaccounts        |
-
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/Currencies-transactioncurrencies.md)]
-
-[!include [Fiscal calendar](includes/FiscalCalendar-msdyn-fiscalcalendars.md)]
-
-[!include [Fiscal calendar year](includes/FiscalCalendarYear-msdyn-fiscalcalendaryears.md)]
-
-[!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
-
-[!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
-
-[!include [Main account](includes/MainAccount-msdyn-mainaccounts.md)]
-
-[!include [Ledger](includes/Ledger-msdyn-ledgers.md)]
-
-[!include [Exchange rates](includes/ExchangeRates-msdyn-currencyexchangerates.md)]
-
-[!include [Financial Calendar Period](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
-
-[!include [Dimension attribute](includes/DimensionAttributeEntity-msdyn-dimensionattributes.md)]
-
-[!include [Dimension integration format](includes/DimensionIntegrationFormatEntity-msdyn-financialdimensionformats.md)]
-
-[!include [Chart Of Account](includes/LedgerChartOfAccounts-msdyn-chartofaccounts.md)]
-
-
-
-
-
+[CDS-valutakurser](mapping-reference.md#123) | msdyn_currencyexchangerates |
+[Kontoplan](mapping-reference.md#121) | msdyn_chartofaccountses |
+[Valutaer](mapping-reference.md#218) | handelsvaluta |
+[Valutapar for valutakurser](mapping-reference.md#122) | msdyn_currencyexchangeratepairs |
+[Valutakurstype](mapping-reference.md#129) | msdyn_exchangeratetypes |
+[Format af økonomisk dimension](mapping-reference.md#130) | msdyn_financialdimensionformats |
+[Økonomiske dimensioner](mapping-reference.md#128) | msdyn_dimensionattributes |
+[Enhed for regnskabskalenderintegration](mapping-reference.md#132) | msdyn_fiscalcalendars |
+[Regnskabskalenderperiode](mapping-reference.md#131) | msdyn_fiscalcalendarperiods |
+[Enhed for regnskabskalenderårsintegration](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
+[Ledger](mapping-reference.md#148) | msdyn_ledgers |
+[Hovedkonto](mapping-reference.md#152) | msdyn_mainaccounts |
+[Hovedkontokategorier](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a1e94067e2dcca59f03e01520f16a09da1bd4f52
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360562"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559984"
 ---
 # <a name="payroll-integration-api-introduction"></a>Introduktion til lønintegrations-API
 
@@ -30,8 +30,8 @@ Dette dokument beskriver API til Dynamics 365 Human Resources-lønintegration. A
 
 Human Resources har følgende komponenter for at aktivere integrationen:
 
-- Funktioner, der markerer en medarbejder som klar til løn
-- En API til integration, der åbner op for de nye funktioner for integration af applikationer
+- [Funktioner, der markerer en medarbejder som klar til løn.](hr-compensation-payroll.md)
+- En API til integration, der åbner de nye funktioner for integration af applikationer.
 
 ## <a name="microsoft-dataverse"></a>Microsoft Dataverse
 

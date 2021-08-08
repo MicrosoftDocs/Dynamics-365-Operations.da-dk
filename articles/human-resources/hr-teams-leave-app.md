@@ -2,7 +2,7 @@
 title: Administrere anmodninger i Teams
 description: I dette emne kan du se, hvordan du anmoder om fri i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2a74b895052d017ccbe397bfb9a45609646b2f93
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356506"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639432"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Administrere fraværsanmodninger i Teams
 
@@ -166,6 +166,10 @@ Hvis du har problemer med at logge på eller bruge Dynamics 365 Human Resources-
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Der kan ikke logge på appen Human Resources i Teams
 
 Hvis du ikke kan logge på appen, er det muligt, at den konto, du bruger til at logge på Microsoft Teams, ikke er knyttet til en medarbejderpost i Dynamics 365 Human Resources. Kontakt systemadministratoren for at sikre, at din medarbejderpost er tilknyttet korrekt.
+
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Miljøet for Dynamics 365 Human Resources blev ikke fundet i Indstillinger
+
+Hvis du ikke kan vælge det korrekte Dynamics 365-miljø, er brugerposten muligvis ikke synkroniseret korrekt. Kontakt systemadministratoren for at oprette brugerposten igen og knytte den til brugerlegitimationsoplysningerne. Prøv derefter at logge på Human Resources-appen for Microsoft Teams efter nogle få minutter.
 
 ### <a name="translations-dont-display-correctly"></a>Oversættelser vises ikke korrekt
 

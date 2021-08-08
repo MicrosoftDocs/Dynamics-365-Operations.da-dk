@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a0a14c87af7f0d2372d752233f21d9accbca58a8
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350782"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542509"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Fejlfinding i forbindelse med problemer med direkte synkronisering
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Dataverse. Specifikt indeholder emnet oplysninger, der kan hjælpe dig med at løse problemer med direkte synkronisering.
 
@@ -81,7 +79,7 @@ For at løse problemet skal du tildele den korrekte sikkerhedsrolle til teamet f
 
     ![Organisationstilknytning.](media/mapped_business_unit.png)
 
-2. Log på miljøet i den modelbaserede app i Dynamics 365, naviger til **Indstilling \> Sikkerhed**, og find teamet for den tilknyttede virksomhedsenhed.
+2. Log på miljøet i Customer Engagement-appen i Dynamics 365, naviger til **Indstilling \> Sikkerhed**, og find teamet for den tilknyttede virksomhedsenhed.
 
     ![Team for den tilknyttede virksomhedsenhed.](media/setting_security_page.png)
 
@@ -99,7 +97,7 @@ Du kan få vist følgende fejlmeddelelse, når du opretter data i en Finance and
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Der kunne ikke oprettes nyttedata for enheden CustCustomerV3Entity**", "logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Der opstod en fejl under oprettelse af nyttedata med følgende fejlmeddelelse om ugyldig URI: URI'en er tom".}\],"isErrorCountUpdated":true}*
 
-Sådan ser fejlen ud i den modelbaserede app i Dynamics 365:
+Her kan du se, hvordan fejlen ser ud i Customer Engagement-appen:
 
 *Der opstod en uventet fejl i ISV-koden. (ErrorType = ClientError) Uventet undtagelse fra plug-in (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: enhedskontoen kunne ikke behandles - (et forbindelsesforsøg mislykkedes, fordi den tilsluttede part ikke svarede korrekt efter en tidsperiode, eller den oprettede forbindelse mislykkedes, fordi den vært, der er oprettet forbindelse til, ikke svarede*
 
@@ -125,6 +123,5 @@ Følg disse trin for at løse dette problem.
 
 3. Kontroller, at kolonnen **externalenvironmentURL** har den korrekte Dataverse eller URL-adresse til appen. Slet eventuelle identiske rækker, der peger på den forkerte Dataverse-URL-adresse. Slet de tilsvarende rækker i tabellerne DUALWRITEPROJECTFIELDCONFIGURATION og DUALWRITEPROJECTCONFIGURATION.
 4. Stop tabeltilknytningen, og start den derefter igen
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

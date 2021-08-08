@@ -2,7 +2,7 @@
 title: Oversigt over Adventure Works-tema
 description: Dette emne giver et overblik over emnet Adventure Works og beskriver, hvordan det anvendes på webstedssider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,36 +14,48 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7557a36a948de5ae877d74bbbdea78821099b82
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c8183d09e15f83606d84fddd02cb2dfb9b2fb528
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479425"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655626"
 ---
 # <a name="adventure-works-theme-overview"></a>Oversigt over Adventure Works-tema
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emne giver et overblik over emnet Adventure Works og beskriver, hvordan det anvendes på webstedssider i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce har et internettema for e-handel med navnet Adventure Works. Med emnet Adventure Works er du med til at tage godt fra de forskellige produkter, der er under udvikling, og som er optimeret til en god og bedre kostoplevelse. Den giver et moderne udseende, nye layout og effekterne ved animation for at give e-handelskunderne engagerende onlineindkøbsoplevelse.
 
-Med emnet Adventure Works findes følgende nye arbejdsgange:
+## <a name="trial-environments-in-commerce"></a>Prøvemiljøer i Commerce
 
-- Modulet videoafspiller understøtter nu overskrift, afsnit og links, så der kan tilføjes flere tilknytninger.
-- Handlingen Tilføj til indkøbsvogn aktiverer rullevognen i stedet for at give en besked.
+Hvis du vil se, hvordan Adventure Works-temaet ser ud, når det implementeres for B2C-websteder (business-to-consumer) og B2B- websteder (business-to-business), skal du besøge følgende prøvewebsteder:
+
+- [Adventure Works B2C-websted](https://www.adventure-works.com/)
+- [Adventure Works B2B-websted](https://www.adventure-works.com/business)
+
+## <a name="theme-capabilities"></a>Temaegenskaber
+
+Adventure Works-temaet indeholder følgende nye egenskaber:
+
+- Videoafspillermodulet understøtter nu funktionaliteter til overskrift, afsnit og link, så der kan tilføjes flere historier.
+- Overførslen af indhold er forbedret gennem animation.
+- Handlingen "Tilføj til indkøbsvogn" aktiverer indkøbsvognen i stedet for at give en besked.
 - Modulet Hurtig visning er en rude, der dias i både skrivebords- og mobilvisningsporte.
-- Nu kan en tom indkøbsvogn forfremmelser.
+- Webstedsiderne har fået nye layout. 
+- Marketingindhold kan konfigureres for indkøbsvognen og mini-indkøbsvognen, når de er tomme.
+- Mini-indkøbsvognen kan vise reklamemeddelelser som f.eks. "Gratis forsendelse på ordrer over $50".
+- Beskrivelseskort vises på sider for søgning og kategorier.
 
-Emnet Adventure Works indeholder følgende modulmoduler i modulet Commerce:
+Adventure Works-temaet indeholder nu følgende historiemoduler i modulbiblioteket Commerce:
 
-- Modulet feltliste
-- Interaktivt funktionsmodul
-- Modulet Abonnement
-- Modulet Aktivt billede
-- Modulet billedliste
+- [Modul til feltliste](tile-list-module.md)
+- [Interaktiv funktionsmodul](interactive-feature-module.md)
+- [Aktivt billedmodul](active-image-module.md)
+- [Abonnementsmodul](subscribe-module.md)
+- [Modul til billedliste](image-list-module.md)
 
 Adventure Works-emnet er fuldstændigt gennemført og giver en optimeret erfaring med visning af skrivebords-, mobil- og tabletvisningsporte.
 
@@ -78,11 +90,15 @@ På samme måde omfatter andre moduler moduldefinitionsudvidelser. [Modulet med 
 
 Du kan finde flere oplysninger om themeudvidelser i [Theme-udvidelser](e-commerce-extensibility/theme-module-extensions.md).
 
+## <a name="install-the-adventure-works-theme"></a>Installere Adventure Works-temaet
+
+Du kan finde oplysninger om, hvordan du installerer Adventure Works-temaet under [Installere Adventure Works-temaet](install-adventure-works.md).
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Modulbibliotek, oversigt](starter-kit-overview.md)
 
-[Modulet feltliste](tile-list-module.md)
+[Modul til feltliste](tile-list-module.md)
 
 [Interaktivt funktionsmodul](interactive-feature-module.md)
 

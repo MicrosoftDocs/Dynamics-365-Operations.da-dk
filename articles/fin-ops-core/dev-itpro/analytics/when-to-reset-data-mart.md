@@ -2,7 +2,7 @@
 title: Ofte stillede spørgsmål om nulstilling af datacenter
 description: Dette emne indeholder svar på nogle af de ofte stillede spørgsmål om nulstilling af datacenter.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266603"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638261"
 ---
 # <a name="data-mart-resets-faq"></a>Ofte stillede spørgsmål om nulstilling af datacenter
 
@@ -37,6 +37,9 @@ Hvis en eller flere af følgende forhold gælder for din situation, kan din orga
 
 - Programdatabasen er gendannet.
 - Du har åbnet en supportanmodning, og en supporttekniker har givet dig besked på at nulstille datacenteret som en del af et fejlfindingstrin.
+ 
+> [!NOTE]
+> Processen til nulstilling af et datacenter påvirkes af antallet af finans- og budgetposteringer i databasen. Afhængigt af antallet af posteringer i systemet kan en datanulstilling fuldføres på helt ned til 15 minutter, eller det kan tage op til fire timer. Hvis nulstillingen tager mere end fire timer, anbefales det dog, at du kontakter Support.
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>Hvornår skal et datacenter ikke nulstilles?
 

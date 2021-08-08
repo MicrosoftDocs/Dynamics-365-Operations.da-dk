@@ -2,7 +2,7 @@
 title: Anmode om fridag
 description: Anmod om fridag i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/21/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86a0c659c8b586912ee848aa5f233f2e16f05fd4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: da04e3f93f381fbe25c7e1ed117b7ce10e8b04e9
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357185"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639552"
 ---
 # <a name="request-time-off"></a>Anmode om fridag
 
@@ -41,6 +41,8 @@ Du kan sende anmodninger om fridage, få vist din ferie- og orlovssaldi og få v
 5. Angiv eventuelle oplysninger i **Kommentar**.
 
 6. Vælg **Send**, når du er klar til at sende din anmodning. Ellers skal du vælge **Gem kladde**.
+
+Medarbejdere, der indsender en ny orlovsanmodning, kan vælge forskellige orlovstyper for at oprette deres orlovsanmodning. Alle orlovstyper, der vælges som del af en enkelt orlovsanmodning, skal dog have samme orlovsenhed. Medarbejdere kan få vist orlovsenheden for hver orlovstype i formularen **Anmodning om fridag**.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Føje en vedhæftet fil til en eksisterende anmodning
 

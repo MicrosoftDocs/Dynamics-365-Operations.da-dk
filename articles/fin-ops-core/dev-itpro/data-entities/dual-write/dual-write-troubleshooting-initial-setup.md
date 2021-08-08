@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350830"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542409"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Foretage fejlfinding af problemer under den indledende opsætning
 
@@ -71,7 +71,7 @@ Du kan give appsamtykke ved at følge disse trin.
 
 For at sikre, at dobbeltskrivningen fungerer korrekt, oprettes de firmaer, du vælger under konfigurationen, i Dataverse-miljøet. Disse firmaer er som standard skrivebeskyttede, og egenskaben **IsDualWriteEnable** er indstillet til **True**. Derudover oprettes standardejer-virksomhedsenheden og -teamet og inkluderer firmanavnet. Før du aktiverer tilknytningerne, skal du kontrollere, at standardteamejeren er angivet. Udfør følgende trin for at finde tabellen **Firmaer (CDM\_Firma)**.
 
-1. I den modelbaserede app i Dynamics 365 skal du vælge filteret i øverste højre hjørne.
+1. Vælg filteret øverst til højre i Customer Engagement-appen.
 2. Vælg **Firma** på rullelisten.
 3. Vælg **Kør** for at få vist resultaterne.
 4. Vælg det regnskab, der blev sammenkædet, da du konfigurerede dobbelt skrivning.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e00748fc9629d7ecfa91701002d3d2d7dda0a86f
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056318"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639408"
 ---
 # <a name="request-a-leave-of-absence"></a>Anmode om orlov
 
@@ -49,9 +49,13 @@ Du kan sende en anmodning om orlov og se status for dine orlovsanmodninger i Dyn
 
 2. Hvis du vil se dine orlovsanmodninger, skal du vælge **Vis orlovsanmodning**.
 
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Importere orlovsanmodninger fra andre systemer eller ældre systemer
+
+Hvis du vil importere orlovsanmodninger fra et andet system, skal du gennemgå den almindelige arbejdsgang for at oprette de relevante orlovstransaktioner. Du kan også importere orlovsbanktransaktionerne og orlovsanmodningerne i afsluttet tilstand. Bemærk, at orlovsbanktransaktionerne ikke oprettes automatisk, hvis du kun importerer orlovsanmodningerne.
+
 ## <a name="see-also"></a>Se også
 
-[Stoppe orlov midlertidigt](hr-leave-and-absence-suspend-leave.md)
+[Stop orlov midlertidigt](hr-leave-and-absence-suspend-leave.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

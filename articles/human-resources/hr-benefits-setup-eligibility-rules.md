@@ -2,7 +2,7 @@
 title: Konfigurere berettigelsesregler og -indstillinger
 description: Angiv berettigelsesregler og -indstillinger i Frynsegodeadministration i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,31 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25593bc4d136e403c7ba87e044c95f4fae1e7db9
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351651"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558363"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Konfigurere berettigelsesregler og -indstillinger
+# <a name="configure-eligibility-rules-and-options"></a>Konfigurere berettigelsesregler og -indstillinger 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Når du har konfigureret de nødvendige parametre for Frynsegodeadministration i Microsoft Dynamics 365 Human Resources, kan du oprette berettigelsesregler, bundter, perioder og programmer, som du vil knytte til dine frynsegodeplaner.
+Når du har konfigureret de krævede parametre for Frynsegodeadministration , kan du oprette de berettigelsesregler, bundter, perioder og programmer, som du vil knytte til dine frynsegodeplaner.
+
+Berettigelsesregler bruges til at bestemme, om medarbejdere er berettiget til en plan. Medarbejdere skal overholde betingelsen i mindst én regel for at være berettiget til frynsegodet. Du har f.eks. to regler for en plan. Den første regel (linje 1) viser, at medarbejdertypen skal være **Medarbejder**. Den anden regel (linje 2) viser, at medarbejderen skal være fuldtidsansat. Medarbejdere, der lever op til regel 1, er derfor berettigede, selvom de kun er ansat på deltid.
+
+Du kan dog konfigurere en enkelt regel, der har flere betingelser. I dette tilfælde skal medarbejdere opfylde alle betingelser for reglen for at være berettiget til frynsegodet. Du har f.eks. en regel med navnet **Medarbejder på fuld tid**. Denne regel viser, at medarbejdertypen skal være **Medarbejder**, *og* at medarbejderen skal være ansat på fuld tid. Medarbejderne skal derfor opfylde begge betingelser i reglen for at være berettigede.
+
+> [!IMPORTANT]
+> Der skal knyttes mindst én berettigelsesregel til hver frynsegodeplan. Du kan knytte flere regler til et frynsegode.
 
 ## <a name="create-an-eligibility-rule"></a>Oprette en berettigelsesregel
 
 Berettigelsesregler definerer, hvilke medarbejdere der kan tilmelde sig de enkelte frynsegodeplaner. Når du har defineret berettigelsesregler, kan du tildele dem til frynsegodeplaner. Derefter kan du behandle tilmeldingsberettigelse for at se, hvilke medarbejdere der er berettiget til de enkelte planer. 
 
-Under åben tilmelding kan medarbejdere vælge frynsegodeplaner. Hvis de bliver ikke-berettiget til en frynsegodeplan på baggrund af berettigelsesregler, efter at de allerede er tilmeldt, afmeldes de ikke automatisk. Når der opstår en livshændelse, der påvirker berettigelse til en plan, startes der typisk en tilmeldingsperiode, hvor medarbejderen kan vælge planer, som de er berettiget til. 
+Under åben tilmelding kan medarbejdere vælge frynsegodeplaner. Hvis de mister berettigelsen til en frynsegodeplan på baggrund af berettigelsesregler, efter at de allerede er tilmeldt, afmeldes de ikke automatisk. Når der opstår en livshændelse, der påvirker berettigelse til en plan, startes der typisk en tilmeldingsperiode, hvor medarbejderen kan vælge planer, som de er berettiget til. 
 
 1. Vælg **Berettigelsesregler og -indstillinger** under **Konfiguration** i arbejdsområdet **Frynsegodeadministration**.
 
@@ -46,7 +53,7 @@ Under åben tilmelding kan medarbejdere vælge frynsegodeplaner. Hvis de bliver 
    | **Beskrivelse** | En beskrivelse af berettigelsesreglen. |
    | **Dato og tidspunkt for Gyldig fra** | Startdatoen for berettigelsesreglen. | 
    | **Dato og tidspunkt for Gyldig til** | Slutdatoen for berettigelsesreglen. |
-   | **Brugermedarbejdertype** | Angiver, om medarbejderens medarbejdertype skal bruges i reglen for frynsegodeberettigelse. |
+   | **Brugermedarbejdertype** | Angiver, om medarbejderens medarbejdertype skal bruges i reglen for frynsegodeberettigelsen. |
    | **Arbejdertype** | Arbejdertypen, hvis **Brug medarbejdertype** er angivet til **Ja**. |
    | **Brug medarbejderstatus** | Angiver, om medarbejderens ansættelsesstatus skal bruges i reglen for frynsegodeberettigelse. |
    | **Status** | Medarbejderstatus, hvis **Brug medarbejderstatus** er angivet til **Ja**. Hvis **Brug medarbejderstatus** er angivet til **Nej**, bruges feltet ikke. |
@@ -72,7 +79,7 @@ Under åben tilmelding kan medarbejdere vælge frynsegodeplaner. Hvis de bliver 
    | **Berettiget stillingstype** | Angiver den eller de stillingstyper, der opfylder berettigelsesreglen. F.eks. fuld tid. |
    | **Berettiget delstat** | Angiver de stater eller provinser, der opfylder berettigelsesreglen. Det kan f.eks. være North Dakota USA eller British Columbia, Canada. |
    | **Berettigede vilkår for ansættelse** | Angiver de ansættelsesvilkår, der opfylder berettigelsesreglen. F.eks. efter ønske eller via gruppekontrakt. |
-   | **Berettiget fagforening** | Angiver det medlemskab af en fagforening, der opfylder berettigelsesreglen. Det kan f.eks. være Forklift Drivers of America. </br></br>Når der bruges en fagforeningsbaseret berettigelsesregel, skal slutdatoen være angivet i arbejderens fagforeningspost. Du må ikke lade feltet være tomt. |
+   | **Berettiget fagforening** | Angiver det medlemskab af en fagforening, der opfylder berettigelsesreglen. Det kan f.eks. være Forklift Drivers of America.</br></br>Når der bruges en fagforeningsbaseret berettigelsesregel, skal slutdatoen være angivet i arbejderens fagforeningspost. Du må ikke lade feltet være tomt. |
    | **Berettiget postnummer** | Angiver de postnumre, der opfylder berettigelsesreglen. For eksempel 58104. |
 
 5. Du kan få vist følgende yderligere detaljer under **Flere oplysninger**.
@@ -131,11 +138,11 @@ Når der er tildelt flere berettigelsesregler til en frynsegodeplan, skal en med
 ![Medarbejderen skal enten opfylde kravene i reglen for Jobtype eller reglen for Aktive medarbejdere.](media/RulesAssignedToAPlan.png)
  
 ### <a name="criteria-within-an-eligibility-rule"></a>Kriterier i en berettigelsesregel 
-I en regel definerer du de kriterier, der udgør reglen. I ovenstående eksempel er kriterierne for reglen **Jobtype** det sted, hvor Jobtype = Direktører. Derfor skal medarbejderen være direktør for at være berettiget. Dette er en regel, hvor der kun er ét kriterie i reglen.
+I en regel definerer du de kriterier, der udgør reglen. I ovenstående eksempel er kriteriet for reglen **Jobtype** det sted, hvor Jobtype = Direktører. Derfor skal medarbejderen være direktør for at være berettiget. Dette er en regel, hvor der kun er ét kriterie i reglen.
 
 Du kan definere regler, der har flere kriterier. Når du definerer flere kriterier i en berettigelsesregel, skal en medarbejder opfylde alle kriterier i reglen for at være berettiget til frynsegodeplanen. 
 
-Reglen **Aktive medarbejdere** består for eksempel af følgende kriterier. For at medarbejderen kan være berettiget på baggrund af reglen om **Aktive medarbejdere**, skal medarbejderen være ansat i den juridiske enhed USMF *og* have en stilling på fuld tid.  
+Reglen **Aktive medarbejdere** består f.eks. af følgende kriterier. For at medarbejderen kan være berettiget på baggrund af reglen om **Aktive medarbejdere**, skal medarbejderen være ansat i den juridiske enhed USMF *og* have en stilling på fuld tid.  
 
 ![Kriterier i en berettigelsesregel.](media/CriteriaWithinAnEligibilityRule.png) 
  
@@ -170,7 +177,7 @@ Bundter er et sæt relaterede frynsegodeplaner. Du kan bruge frynsegodebundter t
    | --- | --- |
    | **Bundt** | Et entydigt id for bundtet. |
    | **Beskrivelse** | En beskrivelse af bundtet. |
-   | **Hoved** | Angiver, om en af planerne i bundtet skal markeres som behovsplan. Behovsplanen skal vælges under åben tilmelding som en del af bundtet, før frynsegodeadministratoren kan bekræfte medarbejderens valg af frynsegoder. |
+   | **Hoved** | Angiver, om en af planerne i bundtet skal markeres som behovsplanen. Behovsplanen skal vælges under åben tilmelding som en del af bundtet, før frynsegodeadministratoren kan bekræfte medarbejderens valg af frynsegoder. |
    | **Dato og tidspunkt for Gyldig fra** | Den dato og det klokkeslæt, hvor bundet bliver aktivt. |
    | **Gyldig til** | Den dato, hvor bundtet udløber. Standarden er 31-12-2154, som repræsenterer aldrig. |
 
@@ -213,7 +220,7 @@ Du kan bruge flekskreditprogrammer til at tilmelde medarbejdere til frynsegoder 
    | Personalegodekredit-id | Det entydige id for flekskreditprogrammet. |
    | Beskrivelse | En beskrivelse af flekskreditprogrammet. | 
    | Fra-dato | Den dato og det klokkeslæt, hvor flekskreditprogrammet bliver aktivt. |
-   | Til-dato | Slutdatoen for flekskreditprogrammet. Du kan beholde standardværdien (31/12/2154) for at angive, at der ikke er et planlagt udløb for flekskreditprogrammet. |
+   | Til-dato | Slutdatoen for flekskreditprogrammet. Du kan beholde standardværdien (12/31/2154) for at angive, at der ikke er et planlagt udløb for flekskreditprogrammet. |
    | Kreditværdi i alt | Det antal kreditter, hver medarbejder skal bruge til deres frynsegoder. |
    | Regel for forholdsmæssig beregning | Den regel, der skal bruges til forholdsmæssig beregning af flekskreditter, når der ansættes en medarbejder midt i flekskreditperioden. </br></br><ul><li>**Ingen** – medarbejderen får ingen flekskreditter, hvis de er ansat efter starten på perioden for flekskreditprogrammet.</li><li>**Fuld kredit** – medarbejderen modtager det fulde beløb af flekskreditter, uanset hvornår de er ansat.</li><li>**Beregn forholdsmæssigt** – medarbejderen modtager et forholdsmæssigt beløb af flekskreditter baseret på deres startdato.</li></ul> |
    | Formel for forholdsmæssig beregning af flekskredit | Den regel, der skal bruges til forholdsmæssig beregning af flekskreditter for medarbejdere, som ansættes midt i en frynsegodeperiode for flekskreditprogrammet. Forholdsberegningen er baseret på ansættelsens startdato. Dette felt bruges kun, hvis du vælger **Beregn forholdsmæssigt** i feltet **Regel for forholdsmæssig beregning**. </br></br><ul><li>**Dagligt** – laver en forholdsmæssig beregning af det antal flekskreditter, en medarbejder modtager til dagsniveauet. Det samlede antal flekskreditter divideres med antallet af dage i perioden. Hvis din frynsegodeperiode f.eks. er 400 dage, vil systemet dividere det samlede antal flekskreditter med 400 for at beregne antallet af flekskreditter, som medarbejderne får pr. dag.</li><li>**Aktuel måned** – laver en forholdsmæssig beregning af flekskreditter, som en medarbejder modtager til månedsniveauet, afrundet til den aktuelle måned. Det samlede antal flekskreditter divideres med antallet af måneder i perioden. Hvis din frynsegodeperiode f.eks. er 15 måneder, vil systemet dividere det samlede antal flekskreditter med 15 for at beregne antallet af flekskreditter, som medarbejderne får pr. måned.</li><li>**Følgende måned** – laver en forholdsmæssig beregning af flekskreditter, som en medarbejder modtager til månedsniveauet, afrundet til den næste måned. Det samlede antal flekskreditter divideres med antallet af måneder i perioden. Hvis din frynsegodeperiode f.eks. er 15 måneder, dividerer systemet det samlede antal flekskreditter med 15 for at beregne antallet af flekskreditter, som medarbejderne får pr. måned.</li></ul> |

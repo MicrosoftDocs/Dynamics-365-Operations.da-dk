@@ -2,7 +2,7 @@
 title: Administrere medarbejderorlov
 description: Administrere medarbejderorlov i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c161e324a1ebe5b30c95d6d3e0468da671a7c2de
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055622"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639456"
 ---
 # <a name="manage-employee-leave"></a>Administrere medarbejderorlov
 
@@ -44,12 +44,11 @@ Du kan administrere en medarbejders orlov efter orlovstype. Dette omfatter regis
 
 Du kan medtage en årsagskode og en kommentar, når du regulerer en medarbejders orlovssaldo. 
 
->[!IMPORTANT]
->Visning af yderligere oplysninger om orlovssaldi er i prøveversion. Du skal aktivere den i dit **Sandkasse**-miljø. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).<br>
->Når du peger på en orlovssaldo, får du nu vist:<br>
->- **Tilgængelig**: I alt i år - Afviklet i år
->- **I alt i år**: Alle periodiseringer, reguleringer og overførsler for året
->- **Afviklet i år**: Al godkendt fritid
+Når du holder markøren på en orlovssaldo, får du vist følgende oplysninger:
+
+- **Tilgængelig** – Værdien for **Indeværende år i alt** minus værdien **Taget i år**.
+- **Indeværende år i alt** – Alle periodiseringer, reguleringer og overførsler for året.
+- **Taget i år** – Al godkendt fritid.
 
 ## <a name="see-also"></a>Se også
 

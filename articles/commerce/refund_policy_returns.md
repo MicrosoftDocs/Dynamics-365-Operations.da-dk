@@ -2,7 +2,7 @@
 title: Oprette og opdatere en politik for returneringer og refusioner for en kanal
 description: Dette emne forklarer, hvordan du opretter en politik for returneringer og refusioner for en kanal.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345102"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558291"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Oprette og opdatere en politik for returneringer og refusion for en kanal
 
@@ -36,12 +36,21 @@ Politikkens omfang er i øjeblikket begrænset til at angive de betalingsmidler,
 
 ## <a name="enable-return-policy"></a>Aktivere returneringspolitik
 
-Benyt følgende fremgangsmåde for at aktivere funktionaliteten af kanalreturneringspolitik:
+Hvis du vil aktivere funktionen for kanalreturneringspolitik i Commerce Headquarters, skal du udføre disse trin.
 
 1. Gå til arbejdsområdet **Administration af funktioner** i Dynamics 365 Commerce.
 1. Søg efter funktionen **Aktivér kanalreturneringspolitikker** på listen over funktionsnavne.
 1. Vælg **Aktiver nu**.
-1. På siden **Distributionsplan** skal du køre jobbet **1110** (global konfiguration) for at distribuere funktionsændringen. 
+1. På siden **Distributionsplan** skal du køre jobbet **1110** (global konfiguration) for at distribuere funktionsændringen.
+
+## <a name="initialize-the-commerce-scheduler"></a>Initialisere Commerce-planlæggeren
+
+Når du har aktiveret funktionen **Aktivér politikker for kanalreturnering**, skal du initialisere Commerce planlæggeren for at sikre, at nye funktionsdatabaseændringer bliver tilføjet via Commerce Data Exchange (CDX)-synkronisering. 
+
+Følg disse trin for at initialisere Commerce-planlæggeren i Commerce Headquarters.
+
+- Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \> Initialiser Commerce-planlægger**. Du kan også søge efter "Initialiser Commerce-planlægger".
+- I dialogboksen **Initialiser Commerce-planlægger** skal du sikre, at indstillingen **Slet eksisterende konfiguration** er angivet til **Nej**, og derefter vælge **OK**.
 
 ## <a name="configure-return-policy"></a>Konfigurere returneringspolitik
 

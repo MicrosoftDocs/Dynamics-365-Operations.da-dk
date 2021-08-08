@@ -2,7 +2,7 @@
 title: Oversigt over orlov og fravær
 description: I Dynamics 365 Human Resources er arbejdsområdet Orlov og fravær en fleksibel struktur til oprettelse af nye orlovsplaner. Det giver også arbejdsgange mulighed for at administrere anmodninger og en intuitiv selvbetjeningsside, hvor medarbejdere kan anmode om fritid.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b41838b447dcbffc656ab759fcc4746abb620661
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 7a3c305910f41ebd775292dee91a6044c2cdb244
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339709"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639480"
 ---
 # <a name="leave-and-absence-overview"></a>Oversigt over orlov og fravær
 
@@ -34,7 +34,8 @@ Før du opretter orlovsplaner for dine medarbejdere, skal du udføre et par ops�
 
 - [Konfigurere parametre for orlov og fravær](hr-leave-and-absence-parameters.md)
 - [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md)
-- [Oprette en arbejdsgang for orlovsanmodninger](hr-leave-and-absence-workflow.md)
+- [Oprette en arbejdsgang for orlovsanmodning](hr-leave-and-absence-workflow.md)
+- [Konfigurere rollen Fraværsadministrator](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Oprette og administrere orlovsplaner
 
@@ -50,8 +51,9 @@ Før du opretter orlovsplaner for medarbejderne, skal du oprette orlovs- og frav
 
 Dine medarbejdere kan sende anmodninger om fritid, og du kan administrere dem i arbejdsområdet **Medarbejderselvbetjening**.
 
-[Anmode om fravær](hr-employee-self-service-request-time-off.md)
-[Administrere anmodninger om orlov og fravær](hr-employee-self-service-manage-requests.md)
+- [Anmod om fravær](hr-employee-self-service-request-time-off.md)
+- [Administrere anmodninger om orlov og fravær](hr-employee-self-service-manage-requests.md)
+- [Konfigurere rollen Fraværsadministrator](hr-configure-absence-manager.md)
 
 
 

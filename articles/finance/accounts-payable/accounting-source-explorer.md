@@ -1,7 +1,7 @@
 ---
 title: Sporing af regnskabskilde
 description: Denne artikel indeholder oplysninger om Sporing af regnskabskilde, som du kan bruge til detaljeret analyse af kildeoplysninger bag regnskabsposter i finansmodulet.
-author: ShylaThompson
+author: rcarlson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4624a740538493c247b6c3a0f051ed6208c52504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f1ab7cb7f8f9a42d5f311f8760ff2463055dc178
+ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820925"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661031"
 ---
 # <a name="accounting-source-explorer"></a>Sporing af regnskabskilde
 
@@ -46,8 +46,10 @@ Til kildedokumenter, der anvender begrebet reference-id'er til kildedokumenter, 
 
 For disse dokumenter kan du også navigere til det faktiske kildedokument fra Sporing af regnskabskilde.
 
-
-
-
+> [!NOTE]
+> Fra og med version 10.0.20 har knappen **Opdater** to ekstra områder til begrænsning af den første forespørgsel, der køres for at angive data på siden. Disse ekstra områder er også tilgængelige i version 10.0.19 som en serviceopdatering. Følgende felter er tilføjet:
+>
+> - Fra bilag, Til bilag
+> - Fra hovedkonto, Til hovedkonto
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

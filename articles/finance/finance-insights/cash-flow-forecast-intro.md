@@ -2,7 +2,7 @@
 title: Likviditetsbudget (prøveversion)
 description: Dette emne beskriver likviditetsbudgetteringsfunktionen.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3f16c8471123969443af52ff9bed7fc017b8e9c2
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f4b48122ea54c201888d71afb5fb731ebcab230d
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339209"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638770"
 ---
 # <a name="cash-flow-forecast-preview"></a>Likviditetsbudget (prøveversion)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Pengestrømmen er kritisk for alle virksomheder. Selv rentable virksomheder kan udgøre en pålydende insolvens, hvis de ikke bevarer pengestrømmen, så de opfylder de umiddelbare behov. Muligheden for likviditetsbudgettering i økonomiske indsigter kan hjælpe virksomheder med at overvåge og styre deres kassesaldi effektivt. Denne funktion bruger Machine Learning til at hjælpe virksomheder med at forudsige pengestrømme mere præcist, end de tidligere har haft. Den kan også hjælpe ledere med at træffe beslutninger om at optimere mulighederne i forbindelse med deres aktuelle kasseposition. 
 

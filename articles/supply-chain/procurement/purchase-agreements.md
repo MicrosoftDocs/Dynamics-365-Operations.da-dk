@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90bfd55bd865b27aec831957209ce8716cb253c8
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: a125e894aa52083fccca2f10873305db8cc4528e
+ms.sourcegitcommit: 787c94b35f343f4c38fc8efaaa0cfaf20a846368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188263"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "6647224"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
@@ -104,9 +104,8 @@ Du kan kopiere økonomiske dimensioner til dokumentoverskrifter eller til enkelt
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oprette en købsaftale](tasks/create-purchase-agreement.md)
-
-[Oprette en købsaftræksordre ud fra en købsaftale](tasks/create-purchase-release-order-purchase-agreement.md)
+- [Oprette en købsaftale](tasks/create-purchase-agreement.md)
+- [Anvende en købsaftale ved oprettelse af en indkøbsordre](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

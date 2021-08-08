@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f9cd8846688e6b70f3ac2034caa1a9e3015355e
+ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815710"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6645366"
 ---
 # <a name="fixed-asset-transaction-options"></a>Posteringsindstillinger for anlægsaktiv
 
@@ -46,7 +46,7 @@ Når en indkøbsordre eller Lager til anlægsaktivkladde bruges til at anskaffe 
 ## <a name="general-ledger"></a>Finans
 Alle posteringstyper for anlægsaktiver kan bogføres på siden Finanskladde. Du kan også bruge kladder i Anlægsaktiver til at bogføre anlægsaktivposteringer.
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>Indstillinger for angivelse af typer af anlægsaktivposteringer
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>Indstillinger for angivelse af typer af anlægsaktivposteringer
 
 
 | Transaktionstype                    | Modul                   | Indstilling                                   |
@@ -61,10 +61,20 @@ Alle posteringstyper for anlægsaktiver kan bogføres på siden Finanskladde. Du
 | ** **                               | Finans           | Finanskladde                           |
 | ** **                               | Debitor      | Fritekstfaktura                         |
 
-
 Afskrivningsperiodernes restværdi for anlægsaktivet opdateres ikke, når en afskrivningstransaktionstypes kladdelinje oprettes manuelt eller importeres via en dataenhed. Denne værdi opdateres, når afskrivningsforslagsprocessen bruges til at oprette kladdelinjen.
 
 Du kan finde flere oplysninger under [Integration af anlægsaktiver](fixed-asset-integration.md).
 
+### <a name="transactions-that-require-different-voucher-numbers"></a>Transaktioner, der kræver forskellige bilagsnumre
+
+Følgende anlægsaktivtransaktioner vil bruge forskellige bilagsnumre:
+
+- Der foretages en yderligere anskaffelse til et aktiv, og "catch-up"-afskrivning beregnes.
+- Et aktiv opdeles.
+- En parameter til at beregne afskrivning på kassation aktiveres, og derefter kasseres anlægsaktivet.
+- Et aktivs servicedato ligger før anskaffelsesdatoen. Derfor bogføres en afskrivningsregulering.
+
+> [!NOTE]
+> Når du indtaster transaktioner, skal du kontrollere, at alle transaktioner gælder for det samme anlægsaktiv. Et bilag bogføres ikke, hvis det indeholder mere end ét anlægsaktiv, selvom feltet **Nyt bilag** kun er angivet som **Ét bilagsnummer** på siden **Kladdenavne** i Finans. Hvis du medtager mere end ét anlægsaktiv i bilaget, modtager du meddelelsen "Der kan kun være én anlægsaktivpostering pr. bilag", og du kan ikke bogføre bilaget.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Indstillinger for implementering af netværk for indholdslevering
 description: I dette emne gennemgås de forskellige indstillinger for CDN-implementering (Content Delivery Network), der kan bruges i Microsoft Dynamics 365 Commerce-miljøer. Disse indstillinger inkluderer oprindelige forekomster af Azure Front Door fra Commerce og forekomster, der ejes af kunden, på Azure Front Door.
 author: BrianShook
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e6425d7e473d1d1c263624599d54c6b040d90cb
+ms.sourcegitcommit: a52ad281071b3a49c461e5853e82f302dd33095a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351243"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6657113"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Indstillinger for implementering af netværk for indholdslevering
 
@@ -74,7 +74,7 @@ Følgende tabel indeholder fordele og ulemper ved at bruge en ekstern CDN-tjenes
 
 | Fordele | Ulemper |
 |------|------|
-| <ul><li>Denne indstilling er nyttig, når det eksisterende domæne allerede er tilknyttet et eksternt CDN.</li><li>Konkurrent-CDN'er (f.eks. Akami) kan have flere WAF-egenskaber.</li></ul> | <ul><li>Der kræves en separat kontrakt og yderligere omkostninger.</li><li>SSL kan medføre yderligere omkostninger.</li><li>Da tjenesten er adskilt fra Azure-skystrukturen, skal den ekstra infrastruktur administreres.</li><li>Tjenesten kan kræve længere tids investeringer i slutpunkt og sikkerhedsopsætning.</li><li>Tjenesten er selvadministreret.</li><li>Tjenesten er selvovervåget.</li></ul> |
+| <ul><li>Denne indstilling er nyttig, når det eksisterende domæne allerede er tilknyttet et eksternt CDN.</li><li>WAF: Afhænger af ekstern udbyder.</li></ul> | <ul><li>Der kræves en separat kontrakt og yderligere omkostninger.</li><li>SSL kan medføre yderligere omkostninger.</li><li>Da tjenesten er adskilt fra Azure-skystrukturen, skal den ekstra infrastruktur administreres.</li><li>Tjenesten kan kræve længere tids investeringer i slutpunkt og sikkerhedsopsætning.</li><li>Tjenesten er selvadministreret.</li><li>Tjenesten er selvovervåget.</li></ul> |
 
 I følgende illustration vises en handelsinfrastruktur, der omfatter en ekstern CDN-tjeneste.
 

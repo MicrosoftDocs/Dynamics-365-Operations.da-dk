@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c53d28192c5bf673baccd76e4cfb6e0453fe29d
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: e155263daf2f33531abefdc45c5046a5ab5bca11
+ms.sourcegitcommit: 787c94b35f343f4c38fc8efaaa0cfaf20a846368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337923"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "6647200"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startside for indkøb og forsyning
 
@@ -76,11 +76,10 @@ Indkøb og forsyning dækker alle trin fra identifikationen af et behov for prod
 -   [Oprette en gentagen indkøbsordre](tasks/create-repeat-purchase-order.md)
 -   [Oprette en indkøbsordre fra en salgsordre](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Opret en indkøbsordre for en engangsleverandør](tasks/create-purchase-order-one-time-supplier.md)
--   [Opret en indkøbsordre med en leveranceplan](tasks/create-purchase-order-delivery-schedule.md)
--   [Opret en indkøbsreturordre](tasks/create-purchase-return-order.md)
--   [Oprette en købsaftræksordre ud fra en købsaftale](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Oprette en købsaftræksordre ved oprettelse af indkøbsordren](tasks/create-purchase-release-order-creating-purchase-order.md)
--   [Opret en genopfyldningsordre til konsignation](../inventory/tasks/create-consignment-replenishment-order.md)
+-   [Oprette en indkøbsordre med en leveranceplan](tasks/create-purchase-order-delivery-schedule.md)
+-   [Oprette en købsreturordre](tasks/create-purchase-return-order.md)
+-   [Anvende en købsaftale ved oprettelse af en indkøbsordre](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Oprette en genopfyldningsordre til konsignation](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Priser og rabatter
 -   [Købsaftaler](purchase-agreements.md)

@@ -1,6 +1,6 @@
 ---
-title: Brug af Power Portal sammen med datamodellen for part
-description: I dette emne beskrives ændringerne af Power Portal-webrollerne på grund af datamodellen for part i dobbeltskrivning.
+title: Brug af Microsoft Power Apps-portaler sammen med datamodellen for part
+description: I dette emne beskrives ændringerne af webrollerne for Microsoft Power Apps-portaler på grund af datamodellen for part i dobbeltskrivning.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358611"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542557"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>Brug af Power Portal sammen med datamodellen for part
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Brug af Microsoft Power Apps-portaler sammen med datamodellen for part
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ Benyt følgende fremgangsmåde for at oprette disse nye tabeltilladelser:
 
     Du skal oprette tre nye tilladelser:
 
-    + Kontakt til part-forbindelse
-    + Part til konto-forbindelse
-    + Konto til ordre-forbindelse
+    + Forbindelse mellem tabellen **Kontakt** og **Part**
+    + Forbindelse mellem tabellen **Part** og **Konto**
+    + Forbindelse mellem tabellen **Konto** og **Ordre**
 
 4. Opret og gem en ny tilladelse for forbindelsen Kontakt til part ved at angive følgende parametre:
 
-    + **Navn**: Part til konto-forbindelse (eller dit valg)
+    + **Navn**: Forbindelse mellem tabellen **Part** og **Konto** (eller dit valg)
     + **Tabelnavn**: msdyn_contactforparty
     + **Websted**: Kundeportal
     + **Område**: Kontakt

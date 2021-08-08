@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
+title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.20.
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,30 +10,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301740"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641050"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management-prøveversionen af version 10.0.20. Denne version har et build-nummer på 10.0.886 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.20. Denne version har et build-nummer på 10.0.886 og er tilgængelig som følger:
 
 - **Forhåndsversion:** maj 2021
 - **Generel tilgængelighed af version (selvopdatering):** juli 2021
 - **Generel tilgængelighed af version (automatisk opdatering):** August 2021
 
-
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
 Følgende tabel anfører de funktioner, der er inkluderet i denne version. Kolonnen *Funktion* indeholder links til [frigivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), hvor du kan se de officielle frigivelsesdatoer for hver funktion. Kolonnen *Flere oplysninger* indeholder flere oplysninger og/eller links til relateret dokumentation.
 
-De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem. Nogle af de viste funktioner findes stadig i prøveversionen, mens andre muligvis allerede er generelt tilgængelige.
+De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 | Funktionsområde | Funktion | Flere oplysninger |
 |---|---|---|
@@ -49,7 +47,7 @@ Følgende tabel indeholder de funktionsforbedringer, der er inkluderet i denne v
 
 | Funktionsområde | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
 |---|---|---|
-| Varedisponering | Negative dage til planlægningsoptimering | Med denne prøveversionsfunktion kan planlægningsoptimering overveje forsinkelsestolerance baseret på parameteren **Negative dage**, der er defineret i disponeringsgrupper. |
+| Varedisponering | Negative dage til planlægningsoptimering | Med denne funktion kan planlægningsoptimering overveje forsinkelsestolerance baseret på parameteren **Negative dage**, der er defineret i disponeringsgrupper. |
 | Varedisponering | Parallel godkendelse til justeret behovsprognose | Denne funktion muliggør parallel godkendelse af justeret efterspørgselsprognose fra siden **Justeret efterspørgselsprognose**. Formålet med denne funktion er at øge ydeevnen, når et stort antal budgetter godkendes. Under godkendelse kan brugeren angive **Antal tråde** i dialogboksen til godkendelse. |
 | Varedisponering | (Forhåndsversion) Godkendelse og konsolidering, der kan køre i batch, for planlagte bulk- og pakkebatchordrer | Med denne funktion kan du bruge batchjob til at bekræfte og konsolidere planlagte bulk- og pakkeordrer. |
 | Produktionsstyring | Kopiér generiske ruter | Denne funktion forbedrer kopieringsrutefunktionen, så brugerne kan kopiere ruter, der ikke er varespecifikke. Det giver systemet mulighed for at opdatere alle relevante oplysninger (f.eks. lokation, rutegruppe, ressourcebehov og forskellige tider), når kopieringsrutefunktionen er blevet brugt til at overskrive en rute, der endnu ikke er tildelt en vare. |
@@ -75,7 +73,7 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. D
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformopdateringer til Finance and Operations-apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 indeholder platformopdateringer. Du kan få mere vide i [Platformopdateringer til version 10.0.20 af Finance and Operations-apps (juli 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 indeholder platformopdateringer. Du kan få mere vide i [Platformopdateringer til version 10.0.20 af Finance and Operations-apps (juli 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 

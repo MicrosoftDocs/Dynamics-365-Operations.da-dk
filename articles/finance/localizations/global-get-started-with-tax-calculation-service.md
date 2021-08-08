@@ -2,7 +2,7 @@
 title: Start her med momsberegning
 description: Dette emne beskriver, hvordan du konfigurerer momsberegning.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 454608c2c3a86b71cf181129c762c837c5165902
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b76184b3f1a97941fea7539aa3fac2c11b1f59b1
+ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336650"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6644968"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Start her med momsberegning (forhåndsversion)
 
@@ -58,15 +58,16 @@ Før du kan fuldføre trinnene i dette emne, skal du kontrollere, at følgende f
 Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal kun gennemføre denne procedure én gang, så du kan fuldføre den i enhver juridisk enhed i RCS.
 
 1. Log på [RCS](https://marketing.configure.global.dynamics.com/).
-2. I arbejdsområdet **Elektronisk rapportering** skal du tilføje en ny konfigurationsudbyder. Brug dit firmanavn som navnet på udbyderen. Få flere oplysninger i [Oprette konfigurationsudbydere og markere dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Vælg den konfigurationsudbyder, du lige har oprettet, og vælg derefter **Angiv som aktiv**.
-4. Vælg **Microsoft**-konfigurationsudbyderen, og vælg derefter **Lagre**.
-5. I feltet **Type** skal du vælge **Global**.
-6. Vælg **Åbn**.
-7. Gå til **Datamodel for moms**, udvid filtræet, og vælg derefter **Momskonfiguration**.
-8. Vælg den seneste version, og vælg derefter **Import**.
-9. Vend tilbage til arbejdsområdet **Globaliseringsfunktioner (forhåndsversion)**, vælg **Funktioner**, vælg **Momsberegning**-feltet, og vælg derefter **Tilføj**.
-10. Vælg en af følgende funktionstyper:
+2. Vælg og aktivér funktionen **Globaliseringsfunktioner** i arbejdsområdet **Funktionsstyring**.
+3. I arbejdsområdet **Elektronisk rapportering** skal du tilføje en ny konfigurationsudbyder. Brug dit firmanavn som navnet på udbyderen. Få flere oplysninger i [Oprette konfigurationsudbydere og markere dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+4. Vælg den konfigurationsudbyder, du lige har oprettet, og vælg derefter **Angiv som aktiv**.
+5. Vælg **Microsoft**-konfigurationsudbyderen, og vælg derefter **Lagre**.
+6. I feltet **Type** skal du vælge **Global**.
+7. Vælg **Åbn**.
+8. Gå til **Datamodel for moms**, udvid filtræet, og vælg derefter **Momskonfiguration**.
+9. Vælg den seneste version, og vælg derefter **Import**.
+10. Vend tilbage til arbejdsområdet **Globaliseringsfunktioner**, vælg **Funktioner**, vælg **Momsberegning**-feltet, og vælg derefter **Tilføj**.
+11. Vælg en af følgende funktionstyper:
 
     - **Ny funktion** – Opret en funktionsopsætning, der har tomt indhold.
     - **Baseret på eksisterende funktion** – Opret en funktion ud fra en eksisterende funktion, og kopiér indholdet fra den eksisterende funktionsopsætning.

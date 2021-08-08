@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae444b4d208804364333bd3d6e4704500da85470
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: c2f362e71832d6f7b17e06ad98142019ced4df14
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303556"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6560068"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources, 22. juni 2021
 
@@ -44,7 +44,7 @@ Følgende funktioner er generelt tilgængelige med denne udgivelse.
 | --- | --- | --- |
 | Funktionen Informer brugere af arbejdere uden ansættelse – Når den avancerede adgang er slået til, og funktionen **Vis alle arbejdere uden ansættelse** er deaktiveret i funktionsstyring, vises der et banner for arbejderne uden ansættelsesformular. Banneret vil bede brugeren om at aktivere funktionen **Vis alle arbejdere uden ansættelse**. | Ikke anvendelig| [Arbejdere uden ansættelse](/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | Understøttelse af brugerdefineret felt for berettigelsesregler for administration af frynsegoder | [Understøttelse af brugerdefineret felt for behandling af berettigelse](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Konfiguration af regler for berettigelse](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
-| Revision af transaktion til orlovsperiodisering | Ikke anvendelig | [Revision af transaktion til orlovsperiodisering](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Revision af transaktion til orlovsperiodisering | Ikke anvendelig | [Revision af transaktion til orlovsperiodisering](hr-leave-and-absence-accrue.md)|
 | Forbedringer af arbejdsgang for orlov og fravær | [Forbedringer af arbejdsgang for orlov og fravær](https://go.microsoft.com/fwlink/?linkid=2147528) | [Anmod om fravær](hr-employee-self-service-request-time-off.md)|
 
 ### <a name="bug-fixes"></a>Fejlrettelser

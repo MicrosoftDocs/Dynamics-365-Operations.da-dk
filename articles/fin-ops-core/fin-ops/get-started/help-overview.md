@@ -2,7 +2,7 @@
 title: Hjælp-system
 description: Dette emne indeholder en oversigt over Hjælp-systemet for Finance and Operations-apps.
 author: edupont04
-ms.date: 04/14/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f4c9ad36eb2f1abfc9225f1e62e635cebacd47
-ms.sourcegitcommit: 42a93a96565c56c9c64642ed6e6e302b3fbfcd85
+ms.openlocfilehash: e0ba083c64c840e17bf2fba982b2686c8a47e097
+ms.sourcegitcommit: 5c9a5bfef507ed36f0f849ab56fa0aa8abb78d54
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "6373361"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6646507"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -30,7 +30,7 @@ ms.locfileid: "6373361"
 
 Brugere af følgende apps kan få adgang til kontekstafhængig hjælp og andet indhold, der er baseret på det samme hjælpesystem:
 
-- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
@@ -48,23 +48,23 @@ Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) 
 
 Du kan finde indhold på docs.microsoft.com ved hjælp af en søgemaskine. For at få de bedste resultater anbefaler vi, at du bruger en webstedssøgning som f.eks. **site:docs.microsoft.com dynamics 365 "søgeord"**.
 
-<!--## Get notified about changes through an RSS feed
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få besked om ændringer via et RSS-feed
 
-To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
+Hvis du vil abonnere på et RSS-feed af alle opdateringer, der er foretaget til indholdet på docs.microsoft.com på tværs af Finance and Operations-apps, skal du bruge følgende link:
 
-[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
+[RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
 > [!NOTE]
-> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+> RSS-feed'et returnerer en liste over de 100 emner, der er opdateret sidst. Listen sorteres ikke efter dato.  
 
-Alternatively, you can subscribe to an RSS feed by app:
+Du kan også abonnere på et RSS-feed via app:
 
 - [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
 - [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
 - [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
-- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Forsyningskæde](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
 - [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
-COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
+
 ### <a name="leave-us-feedback"></a>Give os feedback
 
 Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til os i bunden af siden.
