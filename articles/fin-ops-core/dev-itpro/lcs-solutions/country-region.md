@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3e7ba3405b6113bf612c685c4cccd9cf50f1187
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747509"
 ---
 # <a name="globalization-resources"></a>Globaliseringsressourcer
 
 ## <a name="local-and-regional-deployments"></a>Lokale og regionale installationer
 Hvis de regler, der er påbudt af myndighederne, kræver, at data lagres eller serviceres på anden måde end det, der kræves for andre lande/områder, kan der være krav, som er knyttet til land/område, som du skal overveje under installationen. Overvej følgende ressourcer, der kan være relevante for dig:
 
-[Finance and Operations-apps styret af 21Vianet i Kina](../deployment/china-local-deployment.md)
+[Finance and Operations-apps drevet af 21Vianet i Kina](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisering og lovpligtige funktioner
 

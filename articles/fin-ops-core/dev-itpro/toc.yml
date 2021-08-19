@@ -14,6 +14,8 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til version 10.0.21 (oktober 2021)
+                  href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Platformsopdateringer til version 10.0.20 (august 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platformsopdateringer til 10.0.19 (juni 2021)
@@ -444,8 +446,10 @@
                   items:
                     - name: AD FS Microsoft 365-kompatibilitet
                       href: deployment/onprem-adfscompatibility.md
-                    - name: Scripts til forudinstallation og efterinstallation af lokale agenter
+                    - name: Scripts til præ-installation og efterinstallation af lokale agenter
                       href: lifecycle-services/pre-post-scripts.md
+                    - name: Implementeringskonfigurationer for den lokale agent
+                      href: deployment/onprem-localagent-options.md
                     - name: Opdatere den lokale agent
                       href: lifecycle-services/update-local-agent.md
                 - name: Fejlfinding
