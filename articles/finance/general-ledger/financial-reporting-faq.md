@@ -2,7 +2,7 @@
 title: Ofte stillede spørgsmål vedrørende Økonomirapportering
 description: Dette emne indeholder svar på nogle ofte stillede spørgsmål om Økonomirapportering.
 author: jiwo
-ms.date: 01/13/2021
+ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e1b67f86446403933005008a9a1e2cc6739dc516
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733605"
 ---
 # <a name="financial-reporting-faq"></a>Ofte stillede spørgsmål vedrørende Økonomirapportering
 
@@ -77,5 +77,29 @@ Meddelelsen angiver, at der opstod et problem, da systemet forsøgte at hente ø
 
 - Gennemse dataintegrationsstatus ved at gå til **Værktøjer \> Integrationsstatus** i Report Designer. Hvis integrationen ikke er fuldført, skal du vente, indtil den er fuldført. Derefter skal du prøve at gentage det, du var i gang med, da du modtog meddelelsen.
 - Kontakt Support for at identificere og arbejde dig gennem problemet. Der kan være uoverensstemmende data i systemet. Supportteknikere kan hjælpe dig med at identificere dette problem på serveren og finde de specifikke data, der muligvis skal opdateres.
+
+## <a name="how-does-the-selection-of-historical-rate-translation-affect-report-performance"></a>Hvordan påvirker valget af historisk satsoversættelse rapportens ydeevne?
+
+Den historiske kurs bruges typisk med overført overskud, ejendom, udstyr og egenkapital. Den historiske kurs kan være påkrævet på baggrund af retningslinjerne fra FASB (Financial Accounting Standards Board) eller almindeligt anerkendte regnskabsprincipper (GAAP). Du kan finde flere oplysninger under [Valutaegenskaber i regnskabsaflæggelse](financial-reporting-currency-capability.md).
+
+## <a name="how-many-types-of-currency-rate-are-there"></a>Hvor mange valutakurstyper findes der?
+
+Der findes tre typer:
+
+- **Aktuel kurs** – Denne type bruges typisk ved statuskonti. Det kaldes normalt *valutakursen på stedet* og kan være kursen den sidste dag i måneden eller en anden foruddefineret dato.
+- **Gennemsnitskurs** – Denne type bruges typisk til resultatopgørelseskonti (driftskonti). Du kan konfigurere gennemsnitssatsen til enten at angive et simpelt gennemsnit eller et vægtet gennemsnit.
+- **Historisk kurs** - Denne type bruges typisk med overført overskud, ejendom, udstyr og egenkapital. Disse konti kan være obligatoriske i henhold til retningslinjer fra FASB eller GAAP.
+
+## <a name="how-does-historical-currency-translation-work"></a>Hvordan fungerer omregning af historisk valuta?
+
+Satserne er specifikke for posteringsdatoen. Derfor oversættes hver enkelt postering individuelt baseret på den nærmeste valutakurs.
+
+Ved historisk valutaomregning kan de foruddefinerede periodesaldi bruges i stedet for individuelle posteringsoplysninger. Denne funktionsmåde er forskellig fra funktionaliteten for aktuel satsoversættelse.
+
+## <a name="how-does-historical-currency-translation-affect-performance"></a>Hvordan påvirker historisk valutaoversættelse ydeevnen?
+
+Når de data, der vises i rapporterne, opdateres, kan der ske en forsinkelse, fordi beløb skal genberegnes ved at kontrollere posteringsoplysningerne. Denne forsinkelse udløses, hver gang satserne opdateres eller flere posteringer bogføres. Hvis der f.eks. konfigureres tusindvis af konti til historikoversættelse flere gange om dagen, kan der komme en forsinkelse på op til en time, før dataene i rapporten opdateres. Hvis der derimod er et mindre antal specifikke konti, kan procestiden for opdateringer af rapportdata reduceres til minutter eller mindre.
+
+Når der genereres rapporter ved hjælp af valutaomregning for konti af typen Historisk type, vil der ligeledes blive foretaget en ekstra beregning pr. postering. Afhængigt af antallet af konti kan den tid, der oprettes for rapporter, være mere end dobbelt så mange.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
