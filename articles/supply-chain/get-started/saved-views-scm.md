@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270653"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728621"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gemte standardvisninger for Supply Chain Management
 
@@ -77,6 +77,18 @@ I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet
 | Indkøbsordredetaljer | Økonomistyring | Denne forenklede visning er optimeret til at udføre finansrelaterede aktiviteter, som f.eks. fakturering og kontrol af priser, totaler og gebyrer. | Gemte visninger af indkøbsordrer |
 | Indkøbsordredetaljer | Ordregodkendelse | Denne forenklede visning er optimeret til godkendelse af indkøbsordrer. | Gemte visninger af indkøbsordrer |
 
+## <a name="saved-views-for-the-product-information-management-module"></a>Gemte visninger for modulet Administration af produktoplysninger
+
+I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet Administration af produktoplysninger.
+
+| Side | Visningsnavn | Få vist beskrivelsen | Funktionsnavn |
+|---|---|---|---|
+| Listen Frigivne produkter | Produktoprettelse | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved oprettelse af produkter. | Gemte visninger af frigivne produkter |
+| Frigivne produktdetaljer | Produktoprettelse | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved oprettelse af produkter. | Gemte visninger af frigivne produkter |
+| Frigivne produktdetaljer | Administration af logistikoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af logistikoplysninger for produkter. | Gemte visninger af frigivne produkter |
+| Frigivne produktdetaljer | Administration af købsoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af indkøbsoplysninger for produkter. | Gemte visninger af frigivne produkter |
+| Frigivne produktdetaljer | Administration af salgsoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af salgsrelaterede oplysninger for produkter. | Gemte visninger af frigivne produkter |
+
 ## <a name="saved-views-for-the-production-control-module"></a>Gemte visninger for modulet Produktionsstyring
 
 I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet Produktionsstyring.
@@ -110,7 +122,7 @@ I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet
 | Alle forsendelser | Indgående behandling | Denne forenklede visning indeholder kun de felter, der oftest bruges til at behandle indgående forsendelser. | Gemte visninger til forsendelsesbehandling |
 | Alle forsendelser | Udgående behandling | Denne forenklede visning indeholder kun de felter, der oftest bruges til at behandle udgående forsendelser. | Gemte visninger til forsendelsesbehandling |
 | Alle bølger | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemt visning til bølgebehandling |
-| Panelet Lastplanlægning | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemt visning for arbejdsplanlægningspanelet |
+| Panelet Lastplanlægning | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemt visning for lastplanlægningspanelet |
 | Arbejdsdetaljer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemt visning af siden med arbejdsdetaljer |
 
 
