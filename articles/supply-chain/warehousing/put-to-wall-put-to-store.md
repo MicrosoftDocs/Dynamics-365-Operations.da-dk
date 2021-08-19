@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8c88b742c1dccb169e47fe96a5c9d9aac35e605be685cc1a0f010826c959db5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823281"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712856"
 ---
 # <a name="put-to-wall---put-to-store"></a>Sæt til væg – læg til butik
 
@@ -44,7 +44,7 @@ Funktionen *Udgående sortering* kan bruges sammen med funktionen *Bølgetrinsko
 
 ## <a name="setup"></a>Konfiguration
 
-I denne demonstration bruges standard-Contoso-data og lagerstedet *62*. Nogle tilføjelser, der registreres senere, bruges også.
+I denne demonstration bruges Contoso-standarddata og lagerstedet *62*. Nogle tilføjelser, der registreres senere, bruges også.
 
 ### <a name="location-type"></a>Lokationstype
 
@@ -355,7 +355,7 @@ Du skal oprette lokationsdirektiver for at styre det arbejde, der oprettes, efte
 
 Dette scenarie simulerer en situation, hvor lagerstedet opbevarer små varer på lokationer og skal pakke dem i kasser, før de leveres, og hvor pakkestationens funktionalitet ikke er korrekt. Medarbejdere plukker ordrer for flere kunder og forskellige adresser samtidigt for at øge plukhastigheden. Når plukningen er fuldført, ankommer arbejderne til sorteringspositionen, hvor de plukkede varer kan sorteres til den rigtige kasse baseret på de krævede kriterier. I dette eksempel bruges forsendelses-id'et til at bestemme det rette felt, da hver forsendelse har en særskilt adresse. Når alle varer fra lasten er pakket og sorteret efter forsendelse, flyttes boksene til det midlertidige lagringsområde og bliver derefter læsset på en lastbil.
 
-Før du starter scenariet, skal du sikre dig, at alle standardlagerfunktioner er konfigureret korrekt for lagerstedet. Standard-Contoso-lagersted *62* bruges til dette formål. Standardkonfigurationer er ikke blevet ændret, ud over hvad der er beskrevet i opsætningen.
+Før du starter scenariet, skal du sikre dig, at alle standardlagerfunktioner er konfigureret korrekt for lagerstedet. Contoso-standardlagersted *62* bruges til dette formål. Standardkonfigurationer er ikke blevet ændret, ud over hvad der er beskrevet i opsætningen.
 
 ### <a name="create-demand"></a>Oprette efterspørgsel
 

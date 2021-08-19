@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7ba42df021eddccbae389321b38828c7a92e50c8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 5b8a1beae80ad63f26cd1b532d1d6026a5b38a8701c9c1d0aadfee5da8965477
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020501"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716486"
 ---
 # <a name="rebate-management-deals"></a>Rabatstyringsaftaler
 
@@ -102,6 +102,7 @@ Når du har oprettet en aftale som beskrevet i forrige afsnit, kan du åbne den 
         - *Alle* – Aftalelinjen anvendes til alle varer.
 
     - **Varerelation** – Hvis du har valgt *Tabel* i feltet **Varekode**, skal du vælge den vare, som aftalelinjen gælder for. Hvis du har valgt *Gruppe*, skal du vælge varegruppen. Hvis du vælger *Alle*, er dette felt ikke tilgængeligt.
+    - **Enhedstype** – Vælg den enhedstype, der gælder for aftalelinjen (*Lagerenhed* eller *Fastvægtenhed*). Bemærk, at dette felt kan være tomt for ældre poster. I dette tilfælde antages *Lagerenhed*-værdien.
     - **(Lagerstyringsparametre)** – I de resterende felter på aftalelinjen skal du angive værdier for de lagerstyringsparametre, der skal bruges til at definere de varer, der er medtaget i aftalen (f.eks. varestørrelse, farve, stil, lokation og lagersted). Hvis du vil tilføje eller fjerne dimensionerne, skal du vælge **Vis dimensioner** i handlingsruden.
 
 1. Vælg **Gem** i handlingsruden.
