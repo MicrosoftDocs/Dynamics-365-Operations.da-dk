@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 577d48e207c8ce5911d104e657101a8557100064
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 136e528093e6e73ffe090cea0c02a4cdbf787c5efc3d9c0664869c995a682daa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339988"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720246"
 ---
 # <a name="rebate-management-module-overview"></a>Oversigt over modulet Rabatstyring
 
@@ -91,10 +91,9 @@ Brugerne behøver ikke længere at håndtere aftaler eller hensættelser i to tr
 
 Når der beregnes rabatter, oprettes der transaktioner, som kan gennemgås, før bogføringen finder sted. Rabatadministrationstransaktioner bogføres i en separat proces. Der kan derefter oprettes en kladde, kreditnota eller debetpostering under bogføringen af foreslåede posteringer. Rapporteringsopgørelser og transaktionslister kan anskaffes for at sikre overholdelse af angivne standarder, effektivitet og gennemsigtighed.
 
-
 ## <a name="guaranteed-royalty-payments"></a>Garanterede betalinger af royalty
 
-Ved hjælp af automatisk betalingsgenerering i Rabatstyring kan royalties håndteres hurtigt og nemt, også selvom der gælder minimumgarantier. 
+Ved hjælp af automatisk betalingsgenerering i Rabatstyring kan royalties håndteres hurtigt og nemt, også selvom der gælder minimumgarantier.
 
 ## <a name="maximizing-spend-versus-rebates"></a>Maksimere forbrug i forhold til rabatter
 
