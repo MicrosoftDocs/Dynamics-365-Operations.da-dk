@@ -72,6 +72,8 @@
                   items:
                     - name: Nyheder eller ændringer i Supply Chain Management-startside
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.21 (oktober 2021)
+                      href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (august 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (juni 2021)
@@ -1601,6 +1603,8 @@
                   href: master-planning/planning-optimization/planning-optimization-overview.md
                 - name: Start her med planlægningsoptimering
                   href: master-planning/planning-optimization/get-started.md
+                - name: Frigivelsesproces og frigivelseshistorik for planlægningsoptimering
+                  href: master-planning/planning-optimization/release-process.md
                 - name: Analyse af tilpasning af planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: 'Parametre, der ikke bruges af planlægningsoptimering'
@@ -1631,6 +1635,8 @@
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Disponeringstidshorisonter
                   href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: Oplysninger om nettobehov og udligning med planlægningsoptimering
+                  href: master-planning/planning-optimization/net-requirements.md
                 - name: Godkende ordreforslag
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Autoriser ordreforslag
@@ -1709,6 +1715,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Samarbejde med intern forsyningskædes kunder
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+                - name: Oplysninger om nettobehov og udligning med indbygger varedisponering
+                  href: master-planning/net-requirements-built-in-master-planning.md
             - name: Budgettering
               items:
                 - name: Behovs- og forsyningsprognoser
@@ -1967,6 +1975,8 @@
                   href: procurement/request-quotations.md
                 - name: Oprette en tilbudsanmodning
                   href: procurement/tasks/create-request-quotation.md
+                - name: Forseglet bud på tilbudsanmodninger
+                  href: procurement/sealed-bidding.md
                 - name: 'Oprette en rekvisition, der bruger en tilbudsanmodning'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Oprette en scoremetode for tilbudsanmodninger
@@ -2281,6 +2291,8 @@
               href: engineering-change-management/product-readiness.md
             - name: Strukturen for frigivne produkter
               href: engineering-change-management/release-product-structure.md
+            - name: Generere varianter for tekniske produkter
+              href: engineering-change-management/engineering-variants.md
             - name: Ofte stillede spørgsmål om styring af tekniske ændringer
               href: engineering-change-management/change-management-faq.md
         - name: Produktionsstyring
@@ -2603,6 +2615,8 @@
               href: rebate-management/rebate-management-overview.md
             - name: Opsætte og konfigurere modulet Rabatstyring
               items:
+                - name: Aktivere modulet Rabatstyring for systemet
+                  href: rebate-management/rebate-management-enable.md
                 - name: Parametre til Rabatstyring
                   href: rebate-management/rebate-management-parameters.md
                 - name: Arbejdsgange for rabatstyringshandel
@@ -2619,6 +2633,8 @@
               href: rebate-management/rebate-management-deals.md
             - name: 'Behandle, gennemse og bogføre rabatter'
               href: rebate-management/process-review-post.md
+            - name: Administrere fradrag ved hjælp af fradragspanelet
+              href: rebate-management/deduction-workbench.md
         - name: Salg og marketing
           items:
             - name: Oversigt over salg og marketing
@@ -3057,6 +3073,8 @@
               href: landed-cost/in-transit-processing.md
             - name: Behandle over-/underposteringer
               href: landed-cost/over-under-transactions.md
+            - name: Opdateringssporing for læg på lager
+              href: landed-cost/update-tracking-putaway.md
             - name: Forespørgsler om landingsomkostninger
               href: landed-cost/landed-cost-inquiries.md
             - name: Rapporter over landingsomkostninger
@@ -3117,6 +3135,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Systembaseret klyngepluk
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Overpluk af salgsordrer og flytteordrer
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
                     - name: Angive forskellige dimensioner for pakning og opbevaring
                       href: warehousing/packing-vs-storage-dimensions.md
                     - name: Bekræftelse af batch og nummerplade
@@ -3509,6 +3529,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerstedsstyring
               items:
+                - name: 'Du kan ikke bekræfte en forsendelse, fordi kunden er på hold'
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: 'Du kan ikke bekræfte en forsendelse, fordi lastlinjer har antallet nul'
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: 'En lastlinje kan ikke opdateres, fordi det frigivne antal vil være negativt'
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
                 - name: Annullerede produktkvitteringer opdaterer ikke transaktionsstatus til registreret
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: Decimal afrunding af det fysiske opdateringsantal er ikke korrekt
