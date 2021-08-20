@@ -1,7 +1,7 @@
 - name: Dynamics 365 for Talent
   href: ./index.md
   items:
-    - name: Introduktion
+    - name: Start her
       items:
         - name: Kom i gang med Talent
           href: talent-get-started.md

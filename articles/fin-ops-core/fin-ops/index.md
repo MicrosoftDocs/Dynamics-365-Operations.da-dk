@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc81c7eed4724f9f68b592b23818781e1b047ebf
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 0746b420d770896ee6010c0e5f5fe17d2e6e52bf0b5d10bf831df7901060c983
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6340295"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739425"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentation til Finance and Operations-ansøgning
 
@@ -98,7 +98,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <p><a href="../../supply-chain/production-control/production-process-overview.md">Produktionsstyring</a></p>
 <p><a href="../../supply-chain/sales-marketing/overview-sales-marketing.md">Salg og marketing</a></p>
 <p><a href="../../supply-chain/transportation/transportation-management-overview.md">Transportstyring</a></p>
-<p><a href="../../supply-chain/warehousing/warehouse-configuration.md">Lagerstedsstyring</a></p>
+<p><a href="../../supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></p>
 
 
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
