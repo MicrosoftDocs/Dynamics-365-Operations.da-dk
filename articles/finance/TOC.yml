@@ -72,6 +72,8 @@
                   items:
                     - name: Nyheder eller ændringer på Finance-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.21 (oktober 2021)
+                      href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (august 2021)
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (juni 2021)
@@ -1168,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Åbne økonomikladdeskabeloner i Office
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Hvorfor kan jeg ikke tilbageføre denne postering?
+                  href: general-ledger/cant-reverse-transctns.md
         - name: Økonomirapportering
           items:
             - name: Start her med Financial Reporting
@@ -1498,12 +1502,16 @@
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: Start her med elektronisk fakturering
                           href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Oprette en ny funktion til elektronisk fakturering
+                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: Start her med elektronisk fakturering for Brasilien
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Start her med elektronisk fakturering for Egypten
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Start her med elektronisk fakturering for Mexico
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Konfigurere elektronisk fakturering
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Ofte stillede spørgsmål om elektronisk fakturering
@@ -1514,8 +1522,12 @@
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Start her med momsberegning
                       href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                    - name: Logik for anvendelse af moms og momsgrupper
+                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
                     - name: Understøttelse af momsfunktion til flytteordrer
                       href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Beregne moms oven på prisen, når Priser er aktiveret inklusive moms'
+                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
                     - name: Føje datafelter til momskonfigurationer
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
@@ -1528,6 +1540,10 @@
                       items:
                         - name: Rapportering for flere momsregistreringer
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Økonomisk rapportering
+                          items:
+                            - name: Momsopgørelse
+                          href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Rapportering i Nederlandene
                           items:
                             - name: Momsopgørelse
@@ -1536,7 +1552,7 @@
                               href: localizations/emea-nl-eu-sales-list.md
                         - name: Rapportering i Storbritannien
                           items:
-                            - name: Forberede integration med MTD til moms
+                            - name: Forberede integration med momsdigitalisering (MTD) til moms
                               href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Lovmæssige opdateringer
               href: localizations/regulatory-updates.md
@@ -1544,6 +1560,8 @@
               items:
                 - name: Oversigt for Australien
                   href: localizations/australia.md
+                - name: Bankfilformater for australske banker
+                  href: localizations/apac-aus-bank-file-formats.md
                 - name: Business Activity Statement (BAS)
                   href: localizations/apac-aus-business-activity-statement.md
                 - name: Tilføje rapportfelter og generere BAS
@@ -1552,6 +1570,8 @@
                   href: localizations/apac-aus-low-value-pool-depreciation.md
                 - name: Konfigurere årsagskoder for BAS
                   href: localizations/tasks/set-up-reason-codes-australia-bas.md
+                - name: Rapporteringsskema for betalingstider
+                  href: localizations/apac-aus-payment-times-report.md
             - name: Østrig
               items:
                 - name: Oversigt for Østrig
@@ -1698,7 +1718,7 @@
                   href: localizations/latam-bra-sped-ecd.md
                 - name: SPED-Reinf
                   items:
-                    - name: SPED-Reinf Overblik
+                    - name: SPED-Reinf Oversigt
                       href: localizations/latam-bra-sped-reinf-overview.md
                     - name: Konfigurere elektronisk meddelelse
                       href: localizations/latam-bra-sped-reinf-electronic-messages.md
@@ -1802,6 +1822,8 @@
                   href: localizations/china.md
                 - name: Finance and Operations drevet af 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+                - name: Valg af kontogrupper for kinesiske bilagstyper
+                  href: localizations/apac-chn-account-groups-selection.md
                 - name: Sammenligning af styklister
                   href: localizations/apac-chn-bom-comparison.md
                 - name: Kinesisk hierarki for kontoplan
@@ -1870,6 +1892,10 @@
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: Momsopgørelse (Den Tjekkiske Republik)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Banksymboler for bankkonti
+                  href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+                - name: Fællesskabsmoms
+                  href: localizations/emea-cze-intra-community-VAT.md
                 - name: Årsafslutning
                   href: localizations/emea-cze-hun-year-end.md
             - name: Danmark
@@ -1992,10 +2018,6 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: Generere en EU Intrastat-opgørelse
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-                    - name: Fransk Intrastat
-                      href: localizations/emea-fra-intrastat.md
-                    - name: Italiensk Intrastat
-                      href: localizations/emea-ita-intrastat.md
                 - name: Lagerkladderapporter
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Deadlines for fakturaudstedelse
@@ -2120,6 +2142,8 @@
                   href: localizations/emea-fra-derogatory-depreciation.md
                 - name: Franske veksler og egenveksler
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+                - name: Fransk Intrastat
+                  href: localizations/emea-fra-intrastat.md
                 - name: NAF-koder og siret-numre
                   href: localizations/emea-fra-naf-codes-siret-numbers.md
                 - name: Konfigurere NAF-koder og Siret-numre
@@ -2138,6 +2162,8 @@
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: Opdatere betalingsmetode for debitor
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: Momsopgørelse
+                  href: localizations/emea-fra-VAT-declaration-preview-France.md
                 - name: DAS-2-rapport
                   href: localizations/emea-fra-das2-report.md
             - name: Tyskland
@@ -2162,6 +2188,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektronisk overførsel for momsangivelse (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Tysk Intrastat
+                  href: localizations/emea-deu-intrastat.md
                 - name: Momsangivelse for Tyskland
                   href: localizations/emea-de-vat-declaration.md
                 - name: Rapport om elektroniske fakturaer til kunder
@@ -2170,6 +2198,8 @@
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Konfigurere elektroniske momsangivelser
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+                - name: 'Udskrive en separat label til kreditnotaer, der kommer fra salg'
+                  href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
             - name: Ungarn
               items:
                 - name: Oversigt for Ungarn
@@ -2616,6 +2646,8 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Forbedring af bankdataanvendelighed
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
+                - name: Italiensk Intrastat
+                  href: localizations/emea-ita-intrastat.md
                 - name: Forskellige gebyrer pr. kg i en Intrastat-opgørelse
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Hensigtserklæringer – fakturere almindelige eksportører
@@ -2836,6 +2868,8 @@
                   href: localizations/emea-ltu-isaf.md
                 - name: Standardrevisionsfil for moms (SAF-T) for Litauen
                   href: localizations/emea-ltu-saf-t.md
+                - name: Konfigurere overførselsdokumenter for varebevægelser inden for et firma
+                  href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
             - name: Malaysia
               items:
                 - name: Oversigt for Malaysia
@@ -2970,14 +3004,18 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Delt kreditor/debitor-kursdifference
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: Oprette og bruge PKWiU-koder for Polen
+                  href: localizations/emea-pol-pkwiu-code.md
                 - name: 'Momsopgørelse med registre (JPK_V7M, VDEK)'
-                  href: localizations/emea-pol-vdek.md
-                - name: Forberede til JPK-V7M-rapportering
-                  href: localizations/emea-pol-vdek-setup.md
-                - name: JPK-V7M-rapportering
-                  href: localizations/emea-pol-vdek-reporting.md
-                - name: Detaljer om specifikke forretningsscenarier i JPK-V7M-rapporten
-                  href: localizations/emea-pol-vdek-scenarios.md
+                  items:
+                    - name: 'Momsopgørelse med registre (JPK_V7M, VDEK), oversigt'
+                      href: localizations/emea-pol-vdek.md
+                    - name: Forberede til JPK-V7M-rapportering
+                      href: localizations/emea-pol-vdek-setup.md
+                    - name: JPK-V7M-rapportering
+                      href: localizations/emea-pol-vdek-reporting.md
+                    - name: Detaljer om specifikke forretningsscenarier i JPK-V7M-rapporten
+                      href: localizations/emea-pol-vdek-scenarios.md
             - name: Qatar
               items:
                 - name: Oversigt for Qatar
@@ -3200,6 +3238,8 @@
                       href: localizations/rus-reporting-deferrals.md
                 - name: Momsregnskab
                   items:
+                    - name: Oprette momsregistreringer og momsregistreringskladden
+                      href: localizations/rus-profit-tax-registers.md
                     - name: Udgifts- og indtægtskoder
                       href: localizations/rus-expense-and-income-codes.md
                     - name: Momsregistre for aktiver
@@ -3216,6 +3256,10 @@
                       href: localizations/rus-bad-debts.md
                     - name: Beregning af registre over momsaktiv og skattetilsvar
                       href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+                    - name: Momsregistrering af varer
+                      href: localizations/rus-goods-movement-tax-registers.md
+                    - name: Andre momsregistre
+                      href: localizations/rus-other-tax-registers.md
             - name: Saudi-Arabien
               items:
                 - name: Oversigt for Saudi-Arabien
@@ -3304,11 +3348,9 @@
                   href: localizations/apac-tha-tax-branch-dimensions.md
                 - name: Rapport om udgående moms
                   href: localizations/apac-tha-sales-vat-report.md
-                - name: Gennemsnitsmoms for indkøbstransaktioner
-                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: A-skat
                   href: localizations/apac-tha-withholding-tax.md
-            - name: Forenede Arabiske Emirater (UAE)
+            - name: De Forenede Arabiske Emirater (UAE)
               items:
                 - name: Konfigurere og rapportere moms
                   href: localizations/uae-vat-setup-reporting.md

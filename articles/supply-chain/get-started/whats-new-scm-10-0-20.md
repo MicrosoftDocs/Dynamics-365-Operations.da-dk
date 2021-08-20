@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641050"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773507"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
 
@@ -47,7 +47,6 @@ Følgende tabel indeholder de funktionsforbedringer, der er inkluderet i denne v
 
 | Funktionsområde | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
 |---|---|---|
-| Varedisponering | Negative dage til planlægningsoptimering | Med denne funktion kan planlægningsoptimering overveje forsinkelsestolerance baseret på parameteren **Negative dage**, der er defineret i disponeringsgrupper. |
 | Varedisponering | Parallel godkendelse til justeret behovsprognose | Denne funktion muliggør parallel godkendelse af justeret efterspørgselsprognose fra siden **Justeret efterspørgselsprognose**. Formålet med denne funktion er at øge ydeevnen, når et stort antal budgetter godkendes. Under godkendelse kan brugeren angive **Antal tråde** i dialogboksen til godkendelse. |
 | Varedisponering | (Forhåndsversion) Godkendelse og konsolidering, der kan køre i batch, for planlagte bulk- og pakkebatchordrer | Med denne funktion kan du bruge batchjob til at bekræfte og konsolidere planlagte bulk- og pakkeordrer. |
 | Produktionsstyring | Kopiér generiske ruter | Denne funktion forbedrer kopieringsrutefunktionen, så brugerne kan kopiere ruter, der ikke er varespecifikke. Det giver systemet mulighed for at opdatere alle relevante oplysninger (f.eks. lokation, rutegruppe, ressourcebehov og forskellige tider), når kopieringsrutefunktionen er blevet brugt til at overskrive en rute, der endnu ikke er tildelt en vare. |
