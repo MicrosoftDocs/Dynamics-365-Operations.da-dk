@@ -2,7 +2,7 @@
 title: Planlægning med negative disponible lagerantal
 description: I dette emne beskrives, hvordan negative lagerbeholdninger håndteres, når du bruger planlægningsoptimering.
 author: ChristianRytt
-ms.date: 02/18/2020
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1c403e23309dda36dd1c99e22bbae0aa2d6d76a4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 97688e09aae9706dd85e7965aa08c7ea873a44d81391c39406e2e6367660e0d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813093"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758538"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planlægning med negative disponible lagerantal
 
@@ -73,17 +73,29 @@ I dette tilfælde antager planlægningsprogrammet, at den disponible beholdning 
 
 Resultatet er en planlagt ordre på 25 stk. (= 25 stk. &minus; 0 stk.) til påfyldning af lagersted 13 fra 0 stk. til 25 stk.
 
+## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Planlægge, når der er en reservation i forhold til negativ lagerbeholdning
+
+Hvis du justerer lageret, mens der findes fysiske reservationer, kan du forårsage en situation, hvor en ordre fysisk reserveres mod negativt lager. Da der findes en fysisk reservation, antager Planlægningsoptimering i dette tilfælde, at den understøttes af en lagerbeholdning, selvom tilgangen af en lagerbeholdning endnu ikke er registreret i systemet. Det antages derfor, at der ikke kræves genopfyldning, og der ikke oprettes et ordreforslag til genopfyldning af ordreantallet.
+
+Følgende eksempelscenarie illustrerer dette.
+
+### <a name="example"></a>Eksempel
+
+Systemet konfigureres på følgende måde:
+
+- Produkt *FG* findes og har *10* stk. i disponibel lagerbeholdning.
+- Produktkonfigurationen tillader fysisk negativt lager.
+- Der findes en salgsordre på et antal af *10* stk. af produkt *FG*.
+- Salgsordreantallet reserveres fysisk i forhold til den eksisterende disponible lagerbeholdning.
+
+Du skal derefter justere antallet af produkt *FG*, så den disponible lagerbeholdning bliver 0 (nul). Da den disponible produktbeholdning er nul, reserveres salgsordreantallet nu til negativt lager. Men hvis du kører varedisponering nu, oprettes der ikke et ordreforslag til forsyning af salgsordren, da Planlægningsoptimering antager, at den påkrævede lagerbeholdning findes til forsyning af den fysiske reservation.
+
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 
-[Oversigt over planlægningsoptimering](planning-optimization-overview.md)
-
-[Kom i gang med planlægningsoptimering](get-started.md)
-
-[Analyse af om Planlægningsoptimering passer til](planning-optimization-fit-analysis.md)
-
-[Få vist planhistorik og planlægningslogs](plan-history-logs.md)
-
-[Annullere et planlægningsjob](cancel-planning-job.md)
-
+- [Oversigt over planlægningsoptimering](planning-optimization-overview.md)
+- [Start her med planlægningsoptimering](get-started.md)
+- [Analyse af om Planlægningsoptimering passer til](planning-optimization-fit-analysis.md)
+- [Få vist planhistorik og planlægningslogs](plan-history-logs.md)
+- [Annullere et planlægningsjob](cancel-planning-job.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
