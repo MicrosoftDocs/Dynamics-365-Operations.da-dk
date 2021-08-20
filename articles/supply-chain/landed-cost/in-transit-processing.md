@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ecf8caa7f31c560af2cbc929a37f3ca02bd0da44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744792"
 ---
 # <a name="goods-in-transit-processing"></a>Behandle varer undervejs
 
@@ -104,6 +104,7 @@ Du kan også modtage varer ved at oprette en modtagelseskladde. Du kan oprette e
 1. Åbn fragten, containeren eller folioen.
 1. I handlingsruden under fanen **Administrer** i gruppen **Funktioner** skal du vælge **Opret modtagelseskladde**.
 1. Angiv følgende værdier i dialogboksen **Opret modtagelseskladde**:
+
     - **Initialiser antal** – Angiv denne indstilling til *Ja* for at angive antallet fra antallet undervejs. Hvis denne indstilling er angivet til *Nej*, angives der ikke et standardantal fra linjerne til varer undervejs.
     - **Opret fra varer undervejs** – Angiv denne indstilling til *Ja*, hvis du vil tage antal fra de valgte linjer undervejs for den valgte fragt, container eller folio.
     - **Opret fra ordrelinjer** – Angiv denne indstilling til *Ja* for at angive standardantallet i modtagelseskladden fra indkøbsordrelinjerne. Standardantallet i modtagelseskladden kan kun angives på denne måde, hvis antallet på indkøbsordrelinjen svarer til antallet i ordren for varer undervejs.
@@ -140,4 +141,21 @@ Landingsomkostninger tilføjer en ny arbejdsordretype med navnet *Varer undervej
 
 ### <a name="work-templates"></a>Arbejdsskabeloner
 
+I dette afsnit beskrives funktioner, som modulet **Landingsomkostninger** føjer til arbejdsskabeloner.
+
+#### <a name="goods-in-transit-work-order-type"></a>Arbejdsordretype for varer i transit
+
 Landingsomkostninger tilføjer en ny arbejdsordretype med navnet *Varer undervejs* på siden **Arbejdsskabeloner**. Denne arbejdsordretype skal konfigureres på samme måde som [arbejdsskabeloner for indkøbsordrer](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### <a name="work-header-breaks"></a>Opgaveoverskriften skifter
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Arbejdsskabeloner med arbejdsordretypen *Varer i transit* kan konfigureres til at opdele arbejdshoveder. På siden **Arbejdsskabeloner** skal du følge et af disse trin:
+
+- Angiv et maksimum for arbejdshovedet under fanen **Generelt** for skabelonen. Disse maksimumtyper fungerer på samme måde som i arbejdsskabeloner for indkøbsordrer. (Du kan finde flere oplysninger under [Arbejdsskabeloner for indkøbsordrer](/dynamicsax-2012/appuser-itpro/create-a-work-template)).
+- Brug knappen **Opgaveoverskriften skifter** til at definere, hvornår systemet skal oprette nye arbejdshoveder på basis af sorteringsfelter. Hvis du f.eks. vil oprette et arbejdshoved for hvert container-id, skal du vælge **Rediger forespørgsel** i handlingsruden og derefter føje feltet **Container-id** til fanen **Sortering** i forespørgselseditoren. Felter, der føjes til fanen **Sortering**, kan vælges som *grupperingsfelter*. Hvis du vil konfigurere grupperingsfelterne, skal du vælge **Opgaveoverskriften skifter** i handlingsruden og derefter markere afkrydsningsfeltet i kolonnen **Gruppér efter dette felt** for hvert af de felter, du vil bruge som grupperingsfelt.
+
+Landingsomkostninger [opretter en overtransaktion](over-under-transactions.md), hvis det registrerede antal overstiger det oprindelige ordreantal. Når et arbejdshoved er fuldført, opdaterer systemet status for lagertransaktionerne for hovedordreantallet. Dog opdateres først det antal, der er knyttet til overtransaktionen, når hovedmængden er fuldt købt.
+
+Hvis du annullerer et arbejdshoved for en overtransaktion, der allerede er registreret, reduceres overtransaktionen først med det annullerede antal. Når overtransaktionen reduceres til et antal på 0 (nul), fjernes posten, og eventuelle yderligere antal fjernes fra hovedordreantallet.
