@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 5d20f732f02140204d67e5602acaf42f9d9df424
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c9e36bef0b4cf87fa3fbad5d191731b48221a41e9d92241733e1bc3edb2ca838
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747005"
 ---
 # <a name="delivery-information-setup"></a>Opsætning af leveringsoplysninger
 
@@ -55,7 +55,7 @@ Følgende tabel viser de felter, der er tilgængelige for alle tre oprettelsesty
 | Kildetabel, kildefelt | Disse felter identificerer en kildetabel og et felt i databasen. Reglen indlæser værdien i feltet og bruger den derefter på den måde, der er defineret af andre indstillinger for reglen. |
 | Måltabel, målfelt | Disse felter identificerer en destinationstabel og et felt i databasen. Reglen indlæser værdien i feltet og bruger den derefter (eller overskriver den) på den måde, der er defineret af andre indstillinger for reglen. |
 | Aktivitet | Dette felt identificerer den type aktivitet, der skal anvendes for en forsendelsescontainer, der er matchet af en regel. |
-| Matchkriterie | Dette felt bestemmer, hvordan systemet identificerer et match for en regel. I de enkelte forekomster gennemser systemet dataene i kilde- og destinationstabellerne for at finde ud af, om og hvornår et felt skal opdateres i måltabellen.<p>Kildetabellen er f.eks. *Fragter*, og måltabellen er *Indkøbshoved* eller *Indkøbslinjer*. Tabellen *Fragter* har værdien **Fra havn** som *Hongkong*, og tabellen *Indkøbshoved* har **Fra havn**-værdien *Shanghai*. Der oprettes derefter en regel, der har *Hongkong* som "fra"-havn. I dette tilfælde fungerer værdierne i feltet **Matchkriterier** på følgende måde:</p><ul><li>**Begge** – Målfeltet opdateres ikke, da én af de to havne ikke matcher.</li><li>**Kilde** – Målfeltet opdateres, da kildetabellens "fra"-havn er *Hongkong*.</li><li>**Mål** – Målfeltet opdateres ikke, da destinationstabellens "fra"-havn er *Shanghai* (ikke *Hongkong*).</li></ul> |
+| Matchkriterie | Dette felt bestemmer, hvordan systemet identificerer et match for en regel. I de enkelte forekomster gennemser systemet dataene i kilde- og destinationstabellerne for at finde ud af, om og hvornår et felt skal opdateres i måltabellen.<p>Kildetabellen er f.eks. *Fragter*, og måltabellen er *Indkøbshoved* eller *Indkøbslinjer*. Tabellen *Fragter* har værdien **Fra havn** som *SAR Hongkong*, og tabellen *Indkøbshoved* har **Fra havn**-værdien *Shanghai*. Der oprettes derefter en regel, der har *SAR Hongkong* som "fra"-havn. I dette tilfælde fungerer værdierne i feltet **Matchkriterier** på følgende måde:</p><ul><li>**Begge** – Målfeltet opdateres ikke, da én af de to havne ikke matcher.</li><li>**Kilde** – Målfeltet opdateres, da kildetabellens "fra"-havn er *SAR Hongkong*.</li><li>**Mål** – Målfeltet opdateres ikke, da destinationstabellens "fra"-havn er *Shanghai* (ikke *SAR Hongkong*).</li></ul> |
 | Kopiér handling | De tilgængelige værdier er *Kopi* og *Standard*. Vælg *Kopi* for at kopiere værdien i kildefeltet til destinationsfeltet. Vælg *Standard* for at angive en statisk værdi for destinationsfeltet. |
 | Standard | Når feltet **Kopier handling** er angivet til *Standard*, definerer feltet **Standard** standardværdien for destinationsfeltet. Hvis handlingen f.eks. er knyttet til en havneopdatering, og feltet **Kopiér handling** er angivet til *Standard*, identificerer feltet **Standard** en havn. |
 | Etape | Dette felt identificerer den etape af rejsen, hvor den angivne handling finder sted, f.eks. pålæsning eller told. |
