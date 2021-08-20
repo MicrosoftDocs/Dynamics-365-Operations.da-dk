@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354803"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780668"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Sky- og edge-skaleringsenheder for arbejdsbelastninger i forbindelse med produktion og lagerstedsstyring
 
@@ -102,7 +102,7 @@ Dit aktuelle produktionsmiljø skal være mærket med typen **Selvbetjening** i 
 > [!IMPORTANT]
 > Miljøtyper, der kører som infrastruktur som en tjeneste (IaaS), understøttes ikke. Disse miljøer mærkes typisk med typen **Microsoft-administreret** i LCS. Hvis du har miljøer af denne type, kan du samarbejde med din Microsoft-kontakt for at forstå migreringstidslinjen for typen **Selvbetjening**.
 
-Microsoft er ved at skifte alle skymiljøer i Supply Chain Management fra en IaaS-model til en topologi, der har Service Fabric som vært. Denne flytning giver bedre skalerbarhed og gør servicestyring lettere. Derfor er implementerings- og vedligeholdelsesoperationerne hurtigere. På samme måde overføres tjenestekomponenter til begrebet mikroservice, og værtsmodellen for tjenesten [skifter](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) fra en virtuel maskine-model (VM) til en letvægtscontaineriseret arkitektur.
+Microsoft er ved at skifte alle skymiljøer i Supply Chain Management fra en IaaS-model til en topologi, der har Service Fabric som vært. Denne flytning giver bedre skalerbarhed og gør servicestyring lettere. Derfor er implementerings- og vedligeholdelsesoperationerne hurtigere. På samme måde overføres tjenestekomponenter til begrebet mikroservice, og værtsmodellen for tjenesten [skifter](/virtualization/windowscontainers/about/containers-vs-vm) fra en virtuel maskine-model (VM) til en letvægtscontaineriseret arkitektur.
 
 I sidste ende vil den samme Service Fabric-baserede containeriserede serviceinfrastruktur styrke både sky- og kantforekomster af tjenesten, uanset om en forekomst er en hub i skyen eller en skalaenhed i skyen eller på kantet.
 

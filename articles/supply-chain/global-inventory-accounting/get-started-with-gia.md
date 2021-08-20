@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 07d3222680d9d9bff639f34eca5fea64d753ffd1
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336973"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773285"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gang med Global Inventory Accounting
 
@@ -42,7 +42,7 @@ Global Inventory Accounting understøtter i øjeblikket ikke alle funktioner til
 > [!IMPORTANT]
 > Hvis du vil bruge Global Inventory Accounting, skal du have et LCS-aktiveret miljø med høj tilgængelighed (ikke et OneBox-miljø). Derudover skal du køre Supply Chain Management version 10.0.19 eller nyere.
 
-Hvis du vil tilmelde dig en offentlig forhåndsversion af Global Inventory Accounting, skal du sende dit LCS-miljø-id via e-mail til [Global Inventory Accounting-teamet](mailto:GlobalInventoryAccounting@service.microsoft.com). Når du er godkendt til programmet, sender teamet dig en opfølgningsmail, der indeholder nøglen til betaversionen af Global Inventory Accounting og dine tjenesteslutpunkter. Når du har modtaget nøglen til betaversionen, kan du [installere tilføjelsesprogrammet](#install).
+Hvis du vil tilmelde dig en offentlig forhåndsversion af Global Inventory Accounting, skal du sende dit LCS-miljø-id via e-mail til [Global Inventory Accounting-teamet](mailto:GlobalInvAccount@microsoft.com). Når du er godkendt til programmet, sender teamet dig en opfølgningsmail, der indeholder nøglen til betaversionen af Global Inventory Accounting og dine tjenesteslutpunkter. Når du har modtaget nøglen til betaversionen, kan du [installere tilføjelsesprogrammet](#install).
 
 ## <a name="licensing"></a>Licensering
 
