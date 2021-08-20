@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 26. juli 2021
+          href: hr-whats-new-2021-07-26.md
         - name: 12. juli 2021
           href: hr-whats-new-2021-07-12.md
         - name: 22. juni 2021
@@ -27,38 +29,38 @@
           href: hr-whats-new-2021-01-28.md
         - name: 21. januar 2021
           href: hr-whats-new-2021-01-21.md
-        - name: 2. december 2020
-          href: hr-whats-new-2020-12-02.md
-        - name: 22. oktober 2020
-          href: hr-whats-new-2020-10-22.md
-        - name: 6. oktober 2020
-          href: hr-whats-new-2020-10-06.md
-        - name: 26. september 2020
-          href: hr-whats-new-2020-09-26.md
-        - name: 16. september 2020
-          href: hr-whats-new-2020-09-16.md
-        - name: 3. september 2020
-          href: hr-whats-new-2020-09-03.md
-        - name: 20. august 2020
-          href: hr-whats-new-2020-08-20.md
-        - name: 6. august 2020
-          href: hr-whats-new-2020-08-06.md
-        - name: 23. juli 2020
-          href: hr-whats-new-2020-07-23.md
-        - name: 8. juli 2020
-          href: hr-whats-new-2020-07-08.md
-        - name: 25. juni 2020
-          href: hr-whats-new-2020-06-23.md
-        - name: 11. juni 2020
-          href: hr-whats-new-2020-06-11.md
-        - name: 28. maj 2020
-          href: hr-whats-new-2020-05-28.md
-        - name: 14. maj 2020
-          href: hr-whats-new-2020-05-14.md
-        - name: 1. maj 2020
-          href: hr-whats-new-2020-05-01.md
         - name: Arkiver med nyheder 2020
           items:
+            - name: 2. december 2020
+              href: hr-whats-new-2020-12-02.md
+            - name: 22. oktober 2020
+              href: hr-whats-new-2020-10-22.md
+            - name: 6. oktober 2020
+              href: hr-whats-new-2020-10-06.md
+            - name: 26. september 2020
+              href: hr-whats-new-2020-09-26.md
+            - name: 16. september 2020
+              href: hr-whats-new-2020-09-16.md
+            - name: 3. september 2020
+              href: hr-whats-new-2020-09-03.md
+            - name: 20. august 2020
+              href: hr-whats-new-2020-08-20.md
+            - name: 6. august 2020
+              href: hr-whats-new-2020-08-06.md
+            - name: 23. juli 2020
+              href: hr-whats-new-2020-07-23.md
+            - name: 8. juli 2020
+              href: hr-whats-new-2020-07-08.md
+            - name: 25. juni 2020
+              href: hr-whats-new-2020-06-23.md
+            - name: 11. juni 2020
+              href: hr-whats-new-2020-06-11.md
+            - name: 28. maj 2020
+              href: hr-whats-new-2020-05-28.md
+            - name: 14. maj 2020
+              href: hr-whats-new-2020-05-14.md
+            - name: 1. maj 2020
+              href: hr-whats-new-2020-05-01.md
             - name: 13. april 2020
               href: hr-whats-new-2020-04-13.md
             - name: 3. april 2020
@@ -357,7 +359,7 @@
                       href: hr-developer-api-myleaverequests-submit.md
         - name: ATS-integration API
           items:
-            - name: Introduktion
+            - name: Start her
               href: hr-admin-integration-ats-api-introduction.md
             - name: Server til server-godkendelse til ATS-integration
               href: hr-admin-integration-ats-api-s2s-auth.md
@@ -445,7 +447,7 @@
                   href: hr-admin-integration-ats-api-skill-level-type.md
         - name: Lønintegration API
           items:
-            - name: Introduktion
+            - name: Start her
               href: hr-admin-integration-payroll-api-introduction.md
             - name: Generere og gennemse lønenheder
               href: hr-admin-integration-payroll-api-generate-review-entities.md
@@ -471,8 +473,12 @@
                   href: hr-admin-integration-payroll-api-leave-balance.md
                 - name: Orlovstype
                   href: hr-admin-integration-payroll-api-leave-type.md
-                - name: Anmodning om orlov
+                - name: Orlovsanmodning
                   href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Enheder med relation til frynsegoder
+              items:
+                - name: Lønplan med frynsegoder for medarbejder
+                  href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
             - name: Grupperede indstillinger
               items:
                 - name: Køn
@@ -483,6 +489,10 @@
                   href: hr-admin-integration-payroll-api-award-type.md
                 - name: Procestype
                   href: hr-admin-integration-payroll-api-process-type.md
+                - name: Dækning af type af frynsegodeplan
+                  href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+                - name: Status for medarbejderplan for frynsegode
+                  href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
     - name: Brugervejledning
       items:
         - name: Oversigt
