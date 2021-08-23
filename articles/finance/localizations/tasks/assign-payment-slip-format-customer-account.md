@@ -13,12 +13,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dac89bebfdcbb17c61393af8963fa27a2db56635
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc4f312ee715a9f7ebcb74a0ca00c4bc9b7e5f6e6ad74371df539f97b13b8d5c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780801"
 ---
 # <a name="assign-a-payment-slip-format-to-a-customer-account"></a>Tildele et indbetalingskortformat til en debitorkonto
 

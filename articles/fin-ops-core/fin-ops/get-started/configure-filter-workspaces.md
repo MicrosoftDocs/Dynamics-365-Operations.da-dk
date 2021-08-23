@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29b9e920744296d458e74ff3990191bde72b9e58
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8e62ef719652ca0e75333c239b741b723190fde34dd6348c1d8a5e8541cb6c8c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765760"
 ---
 # <a name="configure-and-filter-workspaces"></a>Konfigurere og filtrere arbejdsområder
 
@@ -54,9 +54,9 @@ Når du klikker for at åbne filteret, vises der forskellige indstillinger.
 
 Vælg en indstilling for at filtrere arbejdsområdet baseret på denne indstilling.
 
-### <a name="workspace-section-filters&quot;></a>Filtre i arbejdsområdets sektion
+### <a name="workspace-section-filters"></a>Filtre i arbejdsområdets sektion
 
-Hvis enkelte dele af arbejdsområdet har filtre, kan du filtrere hver sektion separat. På følgende illustration er filteret (feltet med teksten &quot;Filter") et eksempel på et filter med fritekst.
+Hvis enkelte dele af arbejdsområdet har filtre, kan du filtrere hver sektion separat. På følgende illustration er filteret (feltet med teksten "Filter") et eksempel på et filter med fritekst.
 
 [![workspace-section-filters.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 

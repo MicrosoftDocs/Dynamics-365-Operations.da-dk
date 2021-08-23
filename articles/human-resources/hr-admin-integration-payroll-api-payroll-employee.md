@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
-ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
+ms.openlocfilehash: 20e74e97f98d0bc0fd454d54cbf969d4f1b46c7c98b2949b0ed8cfe671312dd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6538848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768185"
 ---
 # <a name="payroll-employee"></a>Medarbejders løn
 
@@ -33,27 +33,25 @@ Fysisk navn: mshr_payrollemployeeentity.
 Dette objekt indeholder oplysninger om medarbejderen. Du skal angive [parametrene for lønintegration](hr-admin-integration-payroll-api-parameters.md), før du bruger dette objekt.
 
 >[!IMPORTANT] 
->Felterne **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** og **NameValidTo** er ikke længere tilgængelige på denne enhed. Dette sikrer, at der kun findes én ikrafttrædelsesdato for den datakilde, der understøtter denne enhed, som er **HcmEmployment** med felterne **EmploymentStartDate** og **EmploymentEndDate**.
-
->Disse felter vil være tilgængelige på **DirPersonNameHistoricalEntity**, som blev udgivet i Platform-opdatering 43. Der er en OData-relation fra **PayrollEmployeeEntity** til **DirPersonNameHistoricalEntity** i feltet **Person**. Enheden **DirPersonNameHistoricalEntity** kan også forespørges direkte via OData med det offentlige navn **PersonHistoricalNames**.
-
+>Felterne **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** og **NameValidTo** er ikke længere tilgængelige på denne enhed. Dette sikrer, at der kun findes én gyldighedsdato for datakilden, som understøtter denne enhed.
+>Disse felter vil være tilgængelige på **DirPersonNameHistoricalEntity**, som blev udgivet i Platform-opdatering 43. Der er en OData-relation fra **PayrollEmployeeEntity** til **DirPersonNameHistoricalEntity** i feltet **Person**. 
 
 ## <a name="properties"></a>Egenskaber
 
 | Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
 | --- | --- | --- |
-| **Personalenummer**<br>mshr_personnelnumber<br>*Streng* | Skrivebeskyttet<br>Påkrævet | Medarbejderens entydige personalenummer. |
-| **Primært felt**<br>mshr_primaryfield<br>*Streng* | Påkrævet<br>Systemgenereret |  |
-| **Id for juridisk enhed**<br>mshr_legalentityID<br>*Streng* | Skrivebeskyttet<br>Påkrævet | Angiver den juridiske enhed (regnskabet). |
-| **Køn**<br>mshr_gender<br>[mshr_hcmpersongender indstilling](hr-admin-integration-payroll-api-gender.md) | Skrivebeskyttet<br>Påkrævet | Medarbejderens køn. |
+| **Personalenummer**<br>mshr_personnelnumber<br>*Streng* | Skrivebeskyttet | Medarbejderens entydige personalenummer. |
+| **Primært felt**<br>mshr_primaryfield<br>*Streng* | Skrivebeskyttet<br>Systemgenereret |  |
+| **Id for juridisk enhed**<br>mshr_legalentityID<br>*Streng* | Skrivebeskyttet | Angiver den juridiske enhed (regnskabet). |
+| **Køn**<br>mshr_gender<br>[mshr_hcmpersongender indstilling](hr-admin-integration-payroll-api-gender.md) | Skrivebeskyttet | Medarbejderens køn. |
 | **Lønmedarbejders enheds-id**<br>mshr_payrollemployeeentityid<br>*GUID* | Påkrævet<br>Systemgenereret | Systemgenereret GUID-værdi, der entydigt identificerer medarbejderen. |
-| **Startdato for ansættelse**<br>mshr_employmentstartdate<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet<br>Påkrævet | Startdatoen for medarbejderens ansættelse. |
-| **Identifikationstype-id**<br>mshr_identificationtypeid<br>*Streng* |Skrivebeskyttet<br>Påkrævet | Den identifikationstype, der er defineret for medarbejderen. |
-| **Slutdato for ansættelse**<br>mshr_employmentenddate<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet<br>Påkrævet |Slutdatoen for medarbejderens ansættelse.  |
-| **Dataområde-id**<br>mshr_dataareaid_id<br>*GUID* | Påkrævet <br>Systemgenereret | Systemgenereret GUID-værdi, der identificerer den juridiske enhed (virksomheden). |
-| **Gyldig til**<br>mshr_namevalidto<br>*Dato- og klokkeslætsforskydning* |  Skrivebeskyttet<br>Påkrævet | Dato, hvortil medarbejderoplysningerne er gyldige. |
-| **Fødselsdato**<br>mshr_birthdate<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet <br>Påkrævet | Medarbejderens fødselsdato |
-| **Identifikationsnummer til**<br>mshr_identificationnumber<br>*Streng* | Skrivebeskyttet <br>Påkrævet |Det identifikationsnummer, der er defineret for medarbejderen.  |
+| **Startdato for ansættelse**<br>mshr_employmentstartdate<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet | Startdatoen for medarbejderens ansættelse. |
+| **Identifikationstype-id**<br>mshr_identificationtypeid<br>*Streng* |Skrivebeskyttet | Den identifikationstype, der er defineret for medarbejderen. |
+| **Slutdato for ansættelse**<br>mshr_employmentenddate<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet |Slutdatoen for medarbejderens ansættelse.  |
+| **Dataområde-id**<br>mshr_dataareaid_id<br>*GUID* | Skrivebeskyttet <br>Systemgenereret | Systemgenereret GUID-værdi, der identificerer den juridiske enhed (virksomheden). |
+| **Gyldig til**<br>mshr_namevalidto<br>*Dato- og klokkeslætsforskydning* |  Skrivebeskyttet | Dato, hvortil medarbejderoplysningerne er gyldige. |
+| **Fødselsdato**<br>mshr_birthdate<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet | Medarbejderens fødselsdato |
+| **Identifikationsnummer til**<br>mshr_identificationnumber<br>*Streng* | Skrivebeskyttet |Det identifikationsnummer, der er defineret for medarbejderen.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Eksempelforespørgsel for lønmedarbejder
 

@@ -2,7 +2,7 @@
 title: Kundeordrer i POS
 description: Dette emne indeholder oplysninger om kundeordrer i POS. Kundeordrer kaldes også specialordrer. Emnet indeholder en beskrivelse af relaterede parametre og transaktionsflow.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755077"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer i POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om, hvordan du kan oprette og styre kundeordrer i POS. Kundeordrer kan bruges til at registrere salg, hvor kunder ønsker at afhente produkter på en senere dato, afhente produkter fra en anden adresse eller få varer leveret til dem. 
+Dette emne indeholder oplysninger om, hvordan du kan oprette og styre kundeordrer i appen POS. Kundeordrer kan bruges til at registrere salg, hvor kunder ønsker at afhente produkter på en senere dato, afhente produkter fra en anden adresse eller få varer leveret til dem. 
 
 Med et hav af tilgængelige kanaler i handelsverdenen giver mange detailhandlere mulighed for kundeordrer eller specialordrer for at opfylde forskellige produkt- og opfyldelseskrav. Her er nogle typiske scenarier:
 
@@ -132,6 +132,10 @@ Detailordrer, der er oprettet i enten online- eller butikskanalen, kan tilbageka
 > [!IMPORTANT]
 > Ikke alle detailordrer kan redigeres via kasseprogrammet. Ordrer, der oprettes i en callcenter-kanal, kan ikke redigeres via POS, hvis indstillingen [Aktivér ordrefuldførelse](./set-up-order-processing-options.md#enable-order-completion) er slået til for callcenter-kanalen. For at sikre korrekt betalingsbehandling skal ordrer, der kommer fra en callcenter-kanal, og som bruger funktionen Aktivér ordrefuldførelse, skal redigeres via callcenter-programmet i Commerce Headquarters.
 
+> [!NOTE]
+> Det anbefales, at du ikke redigerer ordrer og tilbud i POS, som er oprettet af en bruger, som ikke er på callcenter, i Commerce Headquarters. Disse ordrer og tilbud bruger ikke Commerce-prissætningsprogrammet, så hvis de redigeres i POS, vil Commerce-prissætningsprogrammet ændre deres pris.
+
+
 I version 10.0.17 og senere kan brugere redigere berettigede ordrer via kasseansøgningen, selvom ordren er delvist opfyldt. Ordrer, der er fuldt faktureret, kan dog ikke redigeres via POS. Hvis du vil aktivere denne funktion og give yderligere feedback, skal du aktivere funktionen **Rediger delvist opfyldte ordrer i POS** i arbejdsområdet **Funktionsstyring**. Hvis denne funktion ikke er aktiveret, eller hvis du bruger version 10.0.16 eller tidligere, kan brugerne kun redigere kundeordrer i POS, hvis ordren er helt åben. Hvis funktionen er aktiveret, kan du desuden begrænse de butikker, der kan redigere delvist opfyldte ordrer. Indstillingen for deaktivering af denne egenskab for bestemte butikker kan konfigureres via **funktionalitetsprofilen** i oversigtspanelet **Generelt**.
 
 
@@ -142,7 +146,23 @@ I version 10.0.17 og senere kan brugere redigere berettigede ordrer via kasseans
 5. Fuldfør redigeringsprocessen ved at vælge en betalingshandling.
 6. Hvis du vil afslutte redigeringsprocessen uden at gemme ændringer, kan du bruge handlingen **Afvis transaktion**.
 
+#### <a name="pricing-impact-when-orders-are-edited"></a>Prissætningsvirkning, når ordrer redigeres
 
+Når ordrer afgives i POS eller på et Commerce-e-handelswebsted, forpligter kunder sig til et beløb. Dette beløb omfatter en pris, og det kan også omfatte en rabat. En kunde, der afgiver en ordre og derefter kontakter callcenteret for at ændre ordren (f.eks. for at tilføje en vare), har særlige forventninger til anvendelsen af rabatter. Selvom kampagnerne på de eksisterende ordrelinjer er udløbet, forventer kunden, at de rabatter, der oprindeligt blev anvendt på disse linjer, forbliver gældende. Men hvis ingen rabat var gældende, da ordren oprindeligt blev afgivet, men en rabat siden da er trådt i kraft, forventer kunden, at den nye rabat anvendes på den ændrede ordre. Ellers kan kunden blot annullere den eksisterende ordre og derefter oprette en ny ordre, hvor den nye rabat anvendes. Som det fremgår af dette scenario, skal de priser og rabatter, som kunder har forpligtiget sig til, bevares. Brugerne af POS og callcenter skal samtidig have fleksibiliteten til at genberegne priser og rabatter for salgsordrelinjer efter behov.
+
+Når ordrer tilbagekaldes og redigeres i POS, betragtes priserne og rabatterne på de eksisterende ordrelinjer som "låst". Det betyder, at de ikke ændres, selvom nogle af ordrelinjerne annulleres eller ændres, eller der tilføjes nye ordrelinjer. For at ændre priserne og rabatterne for eksisterende salgslinjer skal POS-brugeren vælge **Genberegn**. Prislåsen fjernes derefter fra de eksisterende ordrelinjer. Men før Commerce version 10.0.21 blev frigivet, var denne egenskab ikke tilgængelig i callcenteret. Hvis ordrelinjerne ændredes, blev priser og rabatter i stedet genberegnet.
+
+I Commerce version 10.0.21 findes der en ny funktion med navnet **Undgå utilsigtet prisberegning for handelsordrer** i arbejdsområdet til **Funktionsstyring**. Denne funktion er som standard slået til. Når den er slået til, er der en ny **Pris låst** tilgængelig for alle e-handelsordrer. Når ordreregistreringen er fuldført for ordrer, der er afgivet fra en kanal, aktiveres denne egenskab automatisk (så afkrydsningsfeltet er markeret) for alle ordrelinjerne. Commerce-prissætningsprogrammet udelukker derefter disse ordrelinjer fra alle pris- og rabatberegninger. Hvis ordren redigeres, vil ordrelinjerne derfor som standard blive udeladt fra pris- og rabatberegningen. Callcenter-brugere kan dog deaktivere egenskaben (fjerne markeringen i afkrydsningsfeltet) for enhver ordrelinje og derefter vælge **Genberegn** for at medtage de eksisterende ordrelinjer i prisberegningerne.
+
+Selvom de anvender en manuel rabat på en eksisterende salgslinje, skal callcenter-brugere deaktivere egenskaben **Pris låst** for salgslinjen, før de anvender den manuelle rabat.
+
+Callcenter-brugere kan også deaktivere egenskaben **Pris låst** for ordrelinjer samlet ved at vælge **Fjern prislås** i gruppen **Beregn** under fanen **Sælg** i handlingsruden på **Salgsordre**-siden. I dette tilfælde fjernes prislåsen fra alle ordrelinjer med undtagelse af linjer, der ikke kan redigeres (med andre ord linjer, der har status som **Delvist faktureret** eller **Faktureret**). Når ændringerne af ordren er fuldført og afsendt, anvendes prislåsen derefter på alle ordrelinjerne igen.
+
+> [!IMPORTANT]
+> Når funktionen **Undgå utilsigtet prisberegning for handelsordrer** er slået til, ignoreres opsætningen af evaluering af samhandelsaftale i prissætningsarbejdsgangene. Med andre ord vises sektionen **Prisrelateret** ikke i dialogboksene til evaluering af samhandelsaftale. Denne funktionsmåde forekommer, fordi både konfigurationen af evalueringsfunktionen for samhandelsaftale og funktionen til prislås har et lignende formål: at forhindre utilsigtede prisændringer. Brugeroplevelsen til evaluering af samhandelsaftale er dog ikke velegnet til store ordrer, hvor brugerne skal vælge en eller flere ordrelinjer til ny prissætning.
+
+> [!NOTE]
+> **Pris låst**-egenskaben kan kun deaktiveres for en eller flere valgte linjer, når modulet **Callcenter** bruges. POS-funktionsmåden forbliver uændret. Det vil sige, at POS-brugeren ikke kan låse priser op for udvalgte ordrelinjer. De kan dog vælge **Genberegn** for at fjerne prislåsen fra alle eksisterende ordrelinjer.
 
 ### <a name="cancel-a-customer-order"></a>Annullere en kundeordre
 

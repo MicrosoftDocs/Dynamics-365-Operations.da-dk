@@ -14,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47905398d1b9e2fba6048ee18044382b92420e58
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 73775be827ad685c9d29577e88151a0885a1b57289b8f95b24dc34bb33dacd37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766909"
 ---
 # <a name="create-cover-and-signature-pages-for-a-payments-report-for-the-public-sector"></a>Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor
 
