@@ -1,8 +1,8 @@
 ---
 title: Konfiguration af dobbeltskrivning fra Lifecycle Services
 description: Dette emne beskriver, hvordan du konfigurerer en forbindelse med dobbeltskrivning fra Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729037"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfiguration af dobbeltskrivning fra Lifecycle Services
 
@@ -66,5 +66,18 @@ Hvis du vil konfigurere dobbeltskrivning for et eksisterende Dataverse-miljø, s
 
 > [!NOTE]
 > Du kan ikke fjerne sammenkædningen mellem miljøer ved hjælp af LCS. Hvis du vil fjerne sammenkædningen mellem et miljø, skal du åbne arbejdsområdet **Dataintegration** i Finance and Operations-miljøet og derefter vælge **Fjern sammenkædning**.
+
+## <a name="linking-mismatch"></a>Uoverensstemmende sammenkædning
+
+Det er muligt, at LCS-miljøet er kædet sammen med én Dataverse-forekomst, mens dit dobbeltskrivningsmiljø er knyttet til en anden Dataverse-forekomst. Denne uoverensstemmende sammenkædning kan medføre uventede funktionsmåder, og det kan ende med, at der sendes data til det forkerte miljø. Det anbefalede miljø, der skal bruges til dobbeltskrivning, er det, der oprettes som en del af Power Platform-integrationen, som på sigt vil være den eneste forbindelse mellem miljøer.
+
+Hvis dit miljø her uoverensstemmende sammenkædning, viser LCS en advarsel på siden med dine miljøoplysninger i stil med "Microsoft har registreret, at dit miljø er kædet sammen via dobbeltskrivning til en anden destination end den, der er angivet i Power Platform Integration, hvilket ikke anbefales":
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform-uoverensstemmelse mellem integrationslink.":::
+
+Hvis denne fejl opstår, er der to muligheder alt efter dine behov:
+
++ [Fjern og genopret linket til dobbeltskrivningsmiljøer (Nulstil eller rediger sammenkædning)](relink-environments.md#scenario-reset-or-change-linking), som det er angivet på siden med dine LCS-miljødetaljer. Dette er den ideelle løsning, da du kan køre den uden Microsoft support.  
++ Hvis du vil beholde dit link i dobbeltskrivning, kan du bede Microsoft Support om hjælp til at ændre Power Platform-integrationen, så den bruger dit eksisterende Dataverse-miljø som dokumenteret i forrige afsnit.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

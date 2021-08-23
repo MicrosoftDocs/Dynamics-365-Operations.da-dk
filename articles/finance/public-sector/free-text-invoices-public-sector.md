@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45ba301b83e16abd73e26540e04ef0643ea40935
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 3cc81622ba748804ac97920ee2e5954d64b998b8d48f8cc00d46c06c70656f9e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767570"
 ---
 # <a name="free-text-invoices-in-the-public-sector"></a>Fritekstfakturaer i den offentlige sektor
 

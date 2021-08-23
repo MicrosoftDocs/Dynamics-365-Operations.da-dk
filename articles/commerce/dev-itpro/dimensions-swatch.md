@@ -2,7 +2,7 @@
 title: Konfigurere produktdimensionsværdier, der skal vises som prøver
 description: I dette emne beskrives, hvordan du konfigurerer produktdimensionsværdier som prøver i Microsoft Dynamics 365 Commerce Headquarters.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764608"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurere produktdimensionsværdier, der skal vises som prøver
 
@@ -46,7 +46,7 @@ I følgende illustration vises et eksempel, hvor farver vises som prøver på en
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Aktivere funktionen til visning af dimensionerne som prøver i Commerce Headquarters
 
-Hvis du vil aktivere funktionen til visning af dimensionerne som prøver i Commerce Headquarters, skal du gå til **Arbejdsområder \> Funktionsstyring** og aktivere funktionen **Aktivér billedunderstøttelse for produktdimensionsværdier**. Når dette funktionsflag er aktiveret, tilføjes der tre nye felter for hver dimension i de relevante tabeller i Commerce Headquarters: **Hexcode**, **URL** (til billeder) og **RefinerGroup**.
+Hvis du vil aktivere funktionen til visning af dimensionerne som prøver i Commerce Headquarters, skal du gå til **Arbejdsområder \> Funktionsstyring** og aktivere funktionen **Aktivér en mekanisme til at repræsentere dimensioner som farvekort**. Når dette funktionsflag er aktiveret, tilføjes der tre nye felter for hver dimension i de relevante tabeller i Commerce Headquarters: **Hexcode**, **URL** (til billeder) og **RefinerGroup**.
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Konfigurere dimensionsværdier i Commerce Headquarters
 
@@ -125,9 +125,22 @@ Før prøver kan vises på webstedssider til e-handel, der kræver valg af dimen
 
 Derudover skal du aktivere egenskaben **Medtag produktattributter i søgeresultater** for søgeresultatmoduler. Hvis webstedet bruger brugerdefinerede kategorisider, skal du opdatere de søgeresultatmoduler, der bruges på disse sider, så egenskaben **Medtag produktattributter i søgeresultater** aktiveres. Du kan få flere oplysninger under [Modul til søgeresultater](../search-result-module.md).
 
+## <a name="inventory-awareness-on-swatches"></a>Lagerbaserede farvekort
+
+Farvekort har en valgfri egenskab, der vises tilgængeligheden af lagerbeholdningen for en produktvariantfarve eller dimension. Et produkt sælges f.eks. i flere størrelser, men nogle størrelser er ikke på lager. I dette tilfælde gengives farvekortene anderledes for varer, der ikke er på lager, for at angive, at de ikke er tilgængelige. Denne egenskab er med til at reducere antallet af kundeklik, der kræves for at bestemme produkttilgængelighed.
+
+Farvekortets funktion for lagertilgængelighed kan konfigureres til brug på både produktoplysningssider og søge- eller kategorilistesider, hvor der vises farvekort. Hvis du vil aktivere den, skal du angive egenskaben **Opdater medie for dimensionsvalg** til **Sand** i [mediegallerimodulet](../media-gallery-module.md). Med denne indstilling kan mediegalleribilleder opdateres, når der vælges dimensioner. 
+
+> [!IMPORTANT]
+> Farvekortets funktion for lagertilgængelighed er tilgængelig fra og med Commerce version 10.0.21. Det kræver, at Commerce-modulets bibliotekspakkeversion 9.31 er installeret.
+
+I følgende illustration vises et eksempel på lagerbaseret farvekortstørrelse på en på en produktoplysningsside.
+
+![Eksempel på lagerbaseret farvekortstørrelse på en på en produktoplysningsside](../dev-itpro/media/swatch_inventory.png)
+
 ## <a name="display-swatches-in-pos-and-other-channels"></a>Få vist prøver i POS og andre kanaler
 
-Commerce har i øjeblikket ikke en out-of-box-implementering, der understøtter visning af prøver i POS (Point of Sale) og andre kanaler. Du kan dog implementere visningsfunktionaliteten for prøver som en udvidelse, der får kanal-API'er til at returnere de hexkoder og URL-adresser til billeder, der kræves for at gengive prøver.
+Commerce har i øjeblikket ikke en standardimplementering, der understøtter visning af farvekort i POS og andre kanaler. Du kan dog implementere visningsfunktionaliteten for farvekort som en udvidelse, da kanal-API'er returnerer de hexkoder og URL-adresser til billeder, der kræves for at gengive farveprøver.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
