@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8a8250b36d2774ac308637253b780592df316cd
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732339"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurere rollen Fraværsadministrator
 
@@ -89,16 +89,21 @@ Rollen Fraværsadministrator skal tildeles medarbejdere, for at de kan godkende 
 
 ## <a name="absence-manager-workspace"></a>Arbejdsområde for fraværsadministrator
 
-I arbejdsområdet **Medarbejderselvbetjening** viser fanen **Fraværsadministrator** fraværsoplysninger om de medarbejdere, der er tildelt fraværsadministratoren i orlovshierarkiet.
+I arbejdsområdet **Medarbejderselvbetjening** viser fanen **Orlovsstyring** fraværsoplysninger om de medarbejdere, der er tildelt fraværsadministratoren i orlovshierarkiet. Der er nogle få indstillinger tilgængelige for fraværschefen: 
+ - Gennemgå anmodninger om fravær.</br>
+ - Send en anmodning om fravær på vegne af en medarbejder.</br>
+ - Se alle medarbejdere, der er knyttet til dem, som del af orlovshierarkiet.</br>
+ - Se fraværschefens kalender.</br>
 
-Under fanen **Orlov og fravær** er følgende indstillinger tilgængelige for hver medarbejder:
-
-- **Fridage** – Få vist saldi, godkendt fritid, fritidsanmodninger for den valgte medarbejder.
-- **Orlovssaldi** – Få vist en liste over saldi for de forskellige orlovsplaner for den valgte medarbejder.
+Der er to faner i arbejdsområdet **Orlovsstyring**:
+ - **Anmodninger om fravær**: Under denne fane vises alle de anmodninger om fravær, som fraværschefen kan godkende. Fraværschefen kan vælge flere poster og handle på dem samtidig. Hvis orlovsvisningen på tværs af virksomheden er aktiveret, viser denne liste ventende anmodninger om fravær på tværs af alle de juridiske enheder, de har adgang til. Ellers vises de ventende anmodninger om fravær for den juridiske enhed, der aktuelt er valgt. </br>
+ - **Alle medarbejdere**: Under denne fane vises alle de medarbejdere, der er knyttet til fraværschefen i orlovshierarkiet. Der er et par tilgængelige valgmuligheder for hver medarbejder:
+    - **Anmod om fravær** – Send en ny fraværsanmodning for den valgte medarbejder.</br>
+    - **Fridage** – Få vist saldi, godkendt fritid, fritidsanmodninger for den valgte medarbejder.</br>
 
 ## <a name="approve-time-off-requests"></a>Godkende anmodninger om fridage
 
-Fraværsadministratorer kan godkende eller afvise anmodninger om fridage for medarbejdere. De kan også oprette anmodninger på vegne af medarbejdere efter behov.
+Fraværsadministratorer kan godkende eller afvise anmodninger om fridage for medarbejdere. 
 
 > [!IMPORTANT]
 > Før fraværsadministratorer kan godkende eller afvise anmodninger om fridage, skal arbejdsgangen for orlovsanmodninger være konfigureret til at tildele dem arbejdselementer for orlovsanmodninger med henblik på gennemsyn.
@@ -109,15 +114,13 @@ Fraværsadministratorer kan godkende eller afvise anmodninger om fridage for med
 >
 > Du kan finde flere oplysninger om oprettelse af arbejdsgangen for orlovsanmodninger i [Oprette en arbejdsgang for orlovsanmodning](hr-leave-and-absence-workflow.md).
 
-1. Vælg fanen **Fraværsadministrator** i arbejdsområdet **Medarbejderselvbetjening**.
+1. Vælg fanen **Orlovsstyring** i arbejdsområdet **Medarbejderselvbetjening**.
 
-2. Vælg den ønskede medarbejder under fanen **Fraværsadministrator**.
+2. Under fanen **Anmodninger om fravær** skal du vælge de anmodninger om fravær, som du vil gøre noget ved. Du kan vælge flere poster i denne listevisning.
 
-3. Vælg **Detaljer** og derefter **Fridage**.
+3. Brug handlingsknapperne øverst i gitteret til at godkende, afvise eller uddelegere anmodningen om fravær. 
 
-4. Find anmodningen om fridage, og vælg indstillingen **Godkendelse**. Du kan derefter vælge en indstilling for at godkende eller annullere anmodningen om fridage.
-
-Statussen **Annuller** angiver, at anmodningen er blevet afvist. Statussen **Fuldført** angiver, at anmodningen er blevet godkendt.
+Alternativt kan brugeren også bruge feltet **Anmodninger om fravær** til venstre til at navigere til listen over alle arbejdselementer for anmodninger om fravær. 
 
 ## <a name="view-time-off-in-the-calendar"></a>Få vist fridage i kalenderen
 
@@ -126,7 +129,7 @@ Brugere i rollen Fraværsadministrator kan få vist anmodninger om fridage i kal
 > [!IMPORTANT]
 > En systemadministrator skal konfigurere visningsindstillingerne i kalenderen for fraværsadministratorer. På siden **Parametre for orlov og fravær** under fanen **Kalender** findes der indstillinger til at skjule eller vise fødselsdage, fravær uden detaljer, fraværsanmodninger og ventende orlovsanmodninger. Der er også en indstilling til filtrering af kalendervisningen efter arbejdertype.
 
-1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Fraværsadministrator** og derefter **Kalender for fraværsadministratorer**.
+1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Orlovsstyring** og derefter **Kalender for fraværsadministratorer**.
 
 2. Angiv de ønskede datoer i feltet **Dato**.
 

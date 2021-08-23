@@ -2,7 +2,7 @@
 title: Mediegallerimodul
 description: Dette emne omhandler mediegallerimoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733191"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
@@ -56,6 +56,10 @@ I eksemplet i følgende illustration er der et købsfelt på en PDP-vært for pr
 | Billeder | Billeder, der er valgt fra mediebiblioteket til webstedsgenerator | Ud over at blive gengivet fra et produkt kan billeder organiseres for et mediegallerimodul. Disse billeder vil blive føjet til alle de produktbilleder, der er tilgængelige. Denne funktion er tilgængelig i Commerce version 10.0.12. |
 | Miniatureretning | **Lodret** eller **Vandret** | Denne egenskab specificerer, om miniaturebilleder skal vises i en lodret stribe eller i en vandret stribe. |
 | Skjule masterproduktbilleder for variant | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, når der vælges en variant, skjules billeder af masterproduktet, medmindre varianten ikke har nogen billeder. Denne egenskab påvirker ikke produkter, der ikke har varianter. |
+| Opdatere medier ved valg af dimension | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, opdateres billeder i mediebiblioteket, når der vælges en dimension (f.eks. farve, typografi eller størrelse), og hvis et billede er tilgængeligt. Denne egenskab hjælper med at forenkle gennemsøgningsoplevelsen, da ikke alle produktvariantdimensioner skal vælges, for at det tilsvarende billede kan opdateres. Denne egenskab er tilgængelig under fanen **Avanceret**. |
+
+> [!IMPORTANT]
+> Egenskaben **Opdater medier ved dimensionsvalg** er tilgængelig fra og med version 10.0.21. Det kræver, at Commerce-modulets bibliotekspakkeversion 9.31 er installeret.
 
 I følgende illustration vises et eksempel på et mediegallerimodul, hvor indstillingerne af fuld skærm og zoom er tilgængelige.
 

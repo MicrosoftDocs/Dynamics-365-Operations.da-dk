@@ -2,7 +2,7 @@
 title: Konfigurere Elektronisk fakturering i RCS (Regulatory Configuration Services)
 description: Dette emne forklarer, hvordan du konfigurerer elektronisk fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 05/19/2021
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6c1d309744c4c8dd0d17f5259551d31c257ede61
-ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
+ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6075137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757968"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurere Elektronisk fakturering i RCS (Regulatory Configuration Services)
 
@@ -46,21 +46,13 @@ Funktionerne understøtter også scenarier, hvor overholdelse af filformatspecif
 
 Endelig understøtter funktionerne udveksling af meddelelser med eksterne webtjenester, der er tilknyttet enten skattemyndighederne eller af en eller flere godkendte parter, samt anmodninger om godkendelse eller et godkendelsesstempel på den elektroniske faktura.
 
-### <a name="availability-of-electronic-invoicing-features"></a>Tilgængelighed af funktioner til elektronisk fakturering
+## <a name="availability-of-electronic-invoicing-features"></a>Tilgængelighed af funktioner til elektronisk fakturering
 
 Tilgængeligheden af funktionerne til elektronisk fakturering afhænger af landet eller området. Selvom nogle funktioner generelt er tilgængelige, er andre en del af forhåndsvisningen.
 
-#### <a name="generally-available-features"></a>Generelt tilgængelige funktioner
+### <a name="generally-available-features"></a>Generelt tilgængelige funktioner
 
 Følgende tabel viser de funktioner for elektronisk fakturering, der er generelt tilgængelige.
-
-| Land/område | Funktionsnavn                         | Forretningsdokument |
-|----------------|--------------------------------------|-------------------|
-| Egypten          | Egyptisk elektronisk faktura (EG) | Salgsfakturaer og projektfakturaer |
-
-#### <a name="preview-features"></a>Prøveversioner
-
-Følgende tabel viser de funktioner for elektronisk fakturering, der er en forhåndsvisning i øjeblikket.
 
 | Land/område | Funktionsnavn                         | Forretningsdokument |
 |----------------|--------------------------------------|-------------------|
@@ -68,29 +60,39 @@ Følgende tabel viser de funktioner for elektronisk fakturering, der er en forh�
 | Belgien        | Belgisk elektronisk faktura (BE)      | Salgsfakturaer og projektfakturaer |
 | Brasilien         | Brasiliansk NF-e (BR)                  | Regnskabsdokumentmodel 55, korrektionsbreve, annulleringer og annulleringer |
 | Brasilien         | Brasiliansk NFS-e ABRASF Curitiba (BR) | Service regnskabsdokumenter |
+| Brasilien         | Brasiliansk NF-e import fra mail (BR) | Regnskabsdokumentmodel 55 |
 | Danmark        | Dansk elektronisk faktura (DK)       | Salgsfakturaer og projektfakturaer |
+| Egypten          | Egyptisk elektronisk faktura (EG)     | Salgsfakturaer og projektfakturaer |
 | Estland        | Estisk elektronisk faktura (EE)     | Salgsfakturaer og projektfakturaer |
 | Finland        | Finsk elektronisk faktura (FI)      | Salgsfakturaer og projektfakturaer |
 | Frankrig         | Fransk elektronisk faktura (FR)       | Salgsfakturaer og projektfakturaer |
 | Tyskland        | Tysk elektronisk faktura (DE)       | Salgsfakturaer og projektfakturaer |
 | Italien          | FatturaPA (IT)                       | Salgsfakturaer og projektfakturaer |
-| Mexico         | Mexicansk CFDI (MX)                    | Salgsfakturaer, følgesedler, lageroverførsler, betalingstillæg og annulleringer |
 | Nederlandene    | Hollandsk elektronisk faktura (NL)        | Salgsfakturaer og projektfakturaer |
 | Norge         | Norsk elektronisk faktura (NO)    | Salgsfakturaer og projektfakturaer |
 | Spanien          | Spansk elektronisk faktura (ES)      | Salgsfakturaer og projektfakturaer |
 | Europa         | PEPPOL Elektronisk faktura            | PEPPOL salgsfakturaer og projektfakturaer |
+| Europa         | PEPPOL-kreditorfaktura                | PEPPOL-import af kreditorfakturaer |
+
+### <a name="preview-features"></a>Prøveversioner
+
+Følgende tabel viser de funktioner for elektronisk fakturering, der er en forhåndsvisning i øjeblikket.
+
+| Land/område | Funktionsnavn                         | Forretningsdokument |
+|----------------|--------------------------------------|-------------------|
+| Mexico         | Mexicansk CFDI (MX)                    | Salgsfakturaer, følgesedler, lageroverførsler, betalingstillæg og annulleringer |
 
 ### <a name="configurable-components-of-electronic-invoicing-features"></a>Konfigurerbare komponenter for funktioner til elektronisk fakturering
 
 Funktionerne til elektronisk fakturering består af følgende grupper konfigurerbare komponenter:
 
-- **Formater** – Formater giver dig mulighed for at konfigurere, hvad Elektronisk fakturering skal generere, når et elektronisk dokument bliver en elektronisk faktura. Formater omfatter formatkonfigurationen for den elektroniske faktura og for filer og meddelelser, der bruges til at sende anmodninger og modtage svar, når kommunikation med en ekstern webtjeneste er påkrævet.
-- **Handlinger** – Handlinger giver dig mulighed for at konfigurere, hvordan Elektronisk fakturering genererer transformationen af et elektronisk dokument, som Finance og Supply Chain Management har sendt til en elektronisk faktura.
-- **Anvendelsesregler** – Anvendelsesregler giver dig mulighed for at konfigurere den kontekst, som Elektronisk fakturering skal overveje for at behandle en funktion til elektronisk fakturering.
-- **Variabler** – Variabler giver dig mulighed for at konfigurere understøttelse af konstruktionen af konfigurationslogikken. Variabler kan bruges som input af værdier til at udføre en bestemt handling. Alternativt kan de arbejde som en udveksling af værdier mellem Finance og Supply Chain Management og Elektronisk fakturering.
-- **Tilknytning af elektronisk dokumentmodel** – Ved hjælp af den elektroniske dokumentmodeltilknytning kan du konfigurere ER-modeltilknytningen. Modeltilknytning definerer datatilknytningen for den abstrakte faktura, der er integreret i Elektronisk fakturering, når der sendes elektroniske dokumenter.
-- **Kontekstmodel for faktura** – Med modellen til fakturakontekst kan du konfigurere ER-fakturakontekstmodellen og definere rammerne for en funktion til elektronisk fakturering.
-- **Svartyper** – Svartyper giver dig mulighed for at konfigurere, hvad Elektronisk fakturering skal opdatere i Finance og Supply Chain Management som et resultat af den elektroniske fakturabehandling.
+- **Formater**: Formater giver dig mulighed for at konfigurere, hvad Elektronisk fakturering skal generere, når et elektronisk dokument bliver en elektronisk faktura. Formater omfatter formatkonfigurationen for den elektroniske faktura og for filer og meddelelser, der bruges til at sende anmodninger og modtage svar, når kommunikation med en ekstern webtjeneste er påkrævet.
+- **Handlinger**: Handlinger giver dig mulighed for at konfigurere, hvordan Elektronisk fakturering genererer transformationen af et elektronisk dokument, som Finance og Supply Chain Management har sendt til en elektronisk faktura.
+- **Anvendelsesregler**: Anvendelsesregler giver dig mulighed for at konfigurere den kontekst, som Elektronisk fakturering skal overveje for at behandle en funktion til elektronisk fakturering.
+- **Variabler**: Variabler giver dig mulighed for at konfigurere understøttelse af konstruktionen af konfigurationslogikken. Variabler kan bruges som input af værdier til at udføre en bestemt handling. Alternativt kan de arbejde som en udveksling af værdier mellem Finance og Supply Chain Management og Elektronisk fakturering.
+- **Tilknytning af elektronisk dokumentmodel**: Ved hjælp af den elektroniske dokumentmodeltilknytning kan du konfigurere ER-modeltilknytningen. Modeltilknytning definerer datatilknytningen for den abstrakte faktura, der er integreret i Elektronisk fakturering, når der sendes elektroniske dokumenter.
+- **Kontekstmodel for faktura**: Med modellen til fakturakontekst kan du konfigurere ER-fakturakontekstmodellen og definere rammerne for en funktion til elektronisk fakturering.
+- **Svartyper**: Svartyper giver dig mulighed for at konfigurere, hvad Elektronisk fakturering skal opdatere i Finance og Supply Chain Management som et resultat af den elektroniske fakturabehandling.
 
 ### <a name="formats"></a>Formater
 
@@ -204,10 +206,10 @@ Følgende tabel indeholder de tilgængelige handlinger, og om de aktuelt er tilg
 | Handling                                        | Betegnelse                                                                  | Tilgængelighed         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Transformere document                            | Kør format for elektronisk rapportering for at transformere dokumentet.                   | Generelt tilgængelig  |
-| Underskriv xml dokument                             | Signer xml-dokumenter med digital signatur.                                   | Som eksempel           |
-| Signer json-dokument for de egyptiske skattemyndigheder | Signer json-dokumenter med digital signatur for egyptiske skattemyndigheder.       | Generelt tilgængelig  |
+| Underskriv xml dokument                             | Signer xml-dokumenter med digital signatur.                                   | Generelt tilgængelig  |
+| Signer JSON-dokument til de egyptiske momsmyndigheder | Signer json-dokumenter med digital signatur for egyptiske skattemyndigheder.       | Generelt tilgængelig  |
 | Integrer med egyptisk ETA-tjeneste           | Kommuniker med egyptiske skattemyndigheder.                                     | Generelt tilgængelig  |
-| Kald brasiliansk SEFAZ-tjeneste                  | Integrer med brasiliansk SeFAZ-tjeneste til indsendelse af regnskabsdokumenter.       | Som eksempel           |
+| Kald brasiliansk SEFAZ-tjeneste                  | Integrer med brasiliansk SeFAZ-tjeneste til indsendelse af regnskabsdokumenter.       | Generelt tilgængelig  |
 | Kald mexicansk PAC-tjeneste                      | Integrer med mexicansk PAC-tjeneste til CFDI-overførsel.                      | Som eksempel           |
 | Behandle svar                              | Analyser svaret, der er modtaget fra webtjenesteopkaldet.                     | Generelt tilgængelig  |
 | Brug MS Power Automate                         | Integrer med det indbyggede flow i Microsoft Power Automate.                       | Som eksempel           |

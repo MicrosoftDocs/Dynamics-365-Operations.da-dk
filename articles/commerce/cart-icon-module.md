@@ -2,7 +2,7 @@
 title: Modulet Indkøbskurvikon
 description: I dette emne dækkes modulet for indkøbskurvikonet, og det beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9e3850d98e716d1bbea2017f6e8c9d75f19adc9
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6637995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735672"
 ---
 # <a name="cart-icon-module"></a>Ikonmodul for indkøbskurv
 
@@ -35,9 +35,14 @@ Følgende billede viser et eksempel på et indkøbskurvikonmodul, der viser en m
 
 ## <a name="module-properties"></a>Modulegenskaber
 
-- **Vis minivogn** – Hvis sand, aktiverer denne egenskab en indkøbsvognoversigt (minivogn), som vises, når man peger på indkøbsvognens ikon. Denne funktionalitet understøttes kun ved visning på skrivebordet.
+- **Vis minivogn** – Hvis denne egenskab er **Sand**, vises en indkøbsvognoversigt (minivogn), når brugere peger på indkøbsvognens ikon. Denne funktionalitet understøttes kun ved visning på skrivebordet.
+- **Tillad anonym betaling** – Når denne egenskab er angivet til **Sand**, giver minvognen brugere, som ikke er logget på, tilladelse til at betale ved kassen som gæst. Denne egenskab er tilgængelig i Commerce version 10.0.21 som en del af Commerce-modulets bibliotekspakke.
+- **Varerækkefølge** – Denne egenskab styrer den rækkefølge, som varerne vises i i indkøbsvognen. Når du vælger indstillingen **Nye varer tilføjet øverst på listen**, vises nye varer, der føjes til indkøbsvognen, øverst på listen over varer i indkøbsvognen. Når du vælger standardindstillingen **Nye varer tilføjet nederst på listen**, vises nye varer, der føjes til indkøbsvognen, nederst på listen over varer i indkøbsvognen. Denne egenskab er tilgængelig fra og med Commerce version 10.0.21 som en del af Commerce-modulets bibliotekspakke.
 
-## <a name="module-properties-in-the-adventure-works-theme"></a>Modulegenskaber i emnet Adventure Works
+> [!IMPORTANT]
+> Egenskaberne **Tillad anonym betaling** og **Varerækkefølge** er tilgængelige fra og med Commerce version 10.0.21. De kræver, at Commerce-modulets bibliotekspakkeversion 9.31 er installeret.
+
+## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Modulegenskaber og pladser i emnet Adventure Works
 
 I emnet Adventure Works indeholder ikonet for indkøbsvognen to ekstra oplysninger om rullevognen. Disse filtyper inkluderes som en moduldefinitionsudvidelse.
 

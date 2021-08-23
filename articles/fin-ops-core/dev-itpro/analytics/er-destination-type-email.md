@@ -2,7 +2,7 @@
 title: ER-destinationstype for e-mail
 description: Dette emne indeholder oplysninger om, hvordan du konfigurerer en maildestination for de enkelte MAPPE- eller FIL-komponenter i et ER-format (elektronisk rapportering).
 author: NickSelin
-ms.date: 12/03/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769313"
 ---
 # <a name="email-er-destination-type"></a>ER-destinationstype for e-mail
 
@@ -42,23 +42,43 @@ Du kan også [gruppere](#grouping) flere **mappe**- eller **fil** komponenter sa
 
 Der kan konfigureres flere grupper af komponenter for en enkelt ER-formatkonfiguration. På denne måde kan du konfigurere en maildestination for hver gruppe af komponenter og en maildestination for hver enkelt komponent.
 
-## <a name="configure-an-email-destination"></a>Konfigurere en maildestination
+## <a name="enable-an-email-destination"></a>Aktivere en maildestination
 
-Hvis du vil sende en outputfil eller flere outputfiler via mail, skal du gå til siden **Destination for elektronisk rapportering**, gå til oversigtspanelet **Fildestination**, vælge en komponent eller en gruppe af komponenter i gitteret og derefter vælge **Indstillinger**. I dialogboksen **Indstillinger for destination**, der vises, skal du angive indstillingen **Aktiveret** til **Ja** under fanen **Mail**. Du kan derefter angive mailmodtagere og redigere mailens emne og brødtekst. Du kan enten konfigurere konstanttekst til mailens emne og brødtekst, eller du kan bruge ER-[formler](er-formula-language.md) til dynamisk at oprette mailtekster.
+Hvis du vil sende en eller flere outputfiler via mail, skal du følge disse trin.
 
-Du kan konfigurere e-mailadresser for ER på to måder. Konfigurationen kan fuldføres på samme måde, som funktionen Udskriftsstyring fuldfører den, eller du kan fortolke en mailadresse ved at bruge en direkte reference til ER-konfigurationen via en formel.
+1. På til siden **Destination for elektronisk rapportering** skal du i oversigtspanelet **Fildestination** vælge en komponent eller gruppe ag komponenter i gitteret.
+2. Vælg **Indstillinger**, og i dialogboksen **Indstillinger for destination**, der vises, skal du angive indstillingen **Aktiveret** til **Ja** under fanen **Mail**.
 
 [![Angive indstillingen Aktiveret til Ja for en maildestination.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
+## <a name="configure-an-email-destination"></a>Konfigurere en maildestination
+
+Du kan angive mailafsenderen og mailmodtagere og redigere mailens emne og indhold. Du kan konfigurere konstanttekst til mailens emne og indhold, eller du kan bruge ER-[formler](er-formula-language.md) til dynamisk at oprette mailtekster.
+
+Der sendes som standard en mail på vegne af den aktuelle bruger. Hvis du vil angive en anden mailafsender, skal du konfigurere feltet **Fra**.
+
+> [!NOTE]
+> Når der konfigureres en maildestination, er feltet **Fra** kun synligt for brugere, der har `ERFormatDestinationSenderEmailConfigure`-sikkerhedsrettigheden **Konfigurer afsendermailadressen til ER-formatdestinationer**.
+>
+> Når en maildestination vises til redigering ved [kørsel](electronic-reporting-destinations.md#security-considerations), er feltet **Fra** kun synligt for brugere, der har `ERFormatDestinationSenderEmailMaintain`-sikkerhedsrettigheden **Vedligehold afsendermailadressen til ER-formatdestinationer**.
+>
+> Når feltet **Fra** er konfigureret til at bruge en anden mailadresse end den aktuelle brugers, skal enten tilladelsen **Send som** eller **Send på vegne af** være [angivet](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) korrekt i forvejen. Ellers gælder følgende undtagelse ved kørsel: "Ikke i stand til at sende mail som \<from email account\> fra kontoen \<current user account\>. Kontrollér tilladelserne 'Send som' på \<from email account\>."
+
+Du kan konfigurere feltet **Fra** til at returnere mere end én mailadresse. I dette tilfælde bruges den første adresse på listen som mailafsenderadresse.
+
+Hvis du vil angive mailmodtagere, skal du konfigurere felterne **Til** og **Cc** (valgfrit).
+
+Du kan konfigurere e-mailadresser for ER på to måder. Konfigurationen kan fuldføres på samme måde som funktionen Udskriftsstyring, eller du kan fortolke en mailadresse ved at bruge en direkte reference til ER-konfigurationen via en formel.
+
 ## <a name="email-address-types"></a>E-mailadressetyper
 
-Hvis du vælger **Rediger** ud for feltet **Til** eller **Cc** i dialogboksen **Indstillinger for destination**, åbnes dialogboksen **Mail til**. Vælg **Tilføj**, og vælg derefter typen af mailadresse, du vil bruge. I øjeblikket understøttes to typer: **Udskriftsstyringsmail** og **Konfigurationsmail**.
+Hvis du vælger **Rediger** ud for feltet **Fra**, **Til** eller **Cc** i dialogboksen **Indstillinger for destination**, åbnes dialogboksen **Mail fra**, **Mail til** eller **Mail cc**. Her kan du konfigurere mailafsenderen og mailmodtagere. Vælg **Tilføj**, og vælg derefter typen af mailadresse, du vil bruge. I øjeblikket understøttes to typer: **Udskriftsstyringsmail** og **Konfigurationsmail**.
 
 [![Vælg typen af mailadresse.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Mail for udskriftsstyring
 
-Hvis du vælger **Udskriftsstyringsmail** som mailadressetype, kan du angive faste mailadresser i dialogboksen **Mail til** ved at angive følgende felter:
+Hvis du vælger **Udskriftsstyringsmail** som mailadressetype, kan du angive faste mailadresser i dialogboksen **Mail fra**, **Mail til** eller **Mail cc** ved at angive følgende felter:
 
 - Vælg **Ingen** i feltet **Mailkilde**.
 - Angiv de faste mailadresser i feltet **Yderligere mailadresser, adskilt af ";"**.
@@ -74,6 +94,7 @@ Du kan også hente mailadresser fra kontaktoplysningerne for den part, du oprett
 - Ansøger
 - Mulig kreditor
 - Ikke-godkendt kreditor
+- Juridisk enhed
 
 Hvis du f.eks. vil konfigurere en maildestination for et ER-format, der bruges til at behandle kreditorbetalinger, skal du vælge rollen **Kreditor**.
 
@@ -106,7 +127,7 @@ Hvis du vil angive, hvilken type mailadresser der skal bruges på kørselstidspu
 
 ### <a name="configuration-email"></a>Konfigurationsmail
 
-Vælg **Konfigurationsmail** som mailadressetype, hvis den konfiguration, du bruger, har en node i datakilderne, der returnerer enten en enkelt mailadresse eller flere mailadresser, der er adskilt af semikolon (;). Du kan bruge [datakilder](general-electronic-reporting.md#FormatComponentOutbound) og [funktioner](er-formula-language.md#functions) i formeldesigneren til at få en korrekt formateret mailadresse eller korrekt formaterede mailadresser, der er adskilt af semikolon. Hvis du f.eks. bruger konfigurationen **ISO 20022 Kreditoverførsel**, er den node, der repræsenterer den primære mailadresse for en kreditor fra leverandørens kontaktoplysninger, som følgeskrivelsen skal sendes til, `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Vælg **Konfigurationsmail** som mailadressetype, hvis den konfiguration, du bruger, har en node i datakilderne, der returnerer enten en enkelt mailadresse eller flere mailadresser, der er adskilt af semikolon (;). Du kan bruge [datakilder](general-electronic-reporting.md#FormatComponentOutbound) og [funktioner](er-formula-language.md#Functions) i formeldesigneren til at få en korrekt formateret mailadresse eller korrekt formaterede mailadresser, der er adskilt af semikolon. Hvis du f.eks. bruger konfigurationen **ISO 20022 Kreditoverførsel**, er den node, der repræsenterer den primære mailadresse for en kreditor fra leverandørens kontaktoplysninger, som følgeskrivelsen skal sendes til, `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![Konfigurere en mailadressekilde.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 

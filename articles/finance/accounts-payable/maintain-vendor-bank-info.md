@@ -2,7 +2,7 @@
 title: Vedligeholde kreditors bankkontooplysninger
 description: Kreditorer kan bruge funktionen Leverandørsamarbejde til at vedligeholde deres bankkontooplysninger. Dette emne forklarer, hvordan du tilføjer og vedligeholder bankoplysninger for kreditorer, som du samarbejder med.
 author: v-kiarnd
-ms.date: 01/14/2021
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2011-01-14
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b81f5bf5f2bb89902eb0e5424ad0db6075010c67
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 3fbcba98ecc4cf2f177c39bdca0c47cd7d86540d9e7c117a891448816f8b1f83
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737369"
 ---
 # <a name="maintain-vendor-bank-account-information"></a>Vedligeholde kreditors bankkontooplysninger
 
@@ -48,6 +48,13 @@ Hvis der er dokumenter med relation til den specifikke certificering, kan du til
 Bankoplysninger, som kreditorer indtaster på siden, viser **Kreditor** som kilden. Du kan også angive bankkontooplysninger på en kreditors vegne. Disse oplysninger vises her, og **Debitor** vises som kilde. Du kan finde flere oplysninger i [Oprette en kreditors bankkonto](../../supply-chain/procurement/tasks/create-vendor-bank-account.md).
 
 Når en konto er blevet tilføjet, kan kreditorer redigere deres banks ikrafttrædelses- og udløbsdatoer efter behov.
+
+## <a name="turn-on-the-vendor-bank-account-information-feature"></a>Aktivere funktionen til oplysninger om kreditorbankkonto
+
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere den, hvis det er nødvendigt. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul** - *Kreditor*
+- **Funktionsnavn** - *Vedligehold oplysninger om kreditorbank ved hjælp af arbejdsområdet til kreditorsamarbejde*
 
 ## <a name="vendor-collaboration-generated-bank-changes-page"></a>Side for bankændringer, der genereres af kreditorsamarbejde
 

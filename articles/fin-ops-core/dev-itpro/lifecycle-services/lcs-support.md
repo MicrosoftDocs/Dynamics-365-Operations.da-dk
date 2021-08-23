@@ -2,7 +2,7 @@
 title: Få support til Finance and Operations-apps eller Lifecycle Services (LCS)
 description: I dette emne beskrives, hvordan du kan få hjælp til Finance and Operations-apps eller Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
-ms.date: 09/16/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b32ae88f9c4439b83ae60e6a0b5f0e16280fcf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713328"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support til Finance and Operations-apps eller Lifecycle Services (LCS)
 
@@ -48,7 +48,7 @@ I dette emne beskrives, hvordan du kan få hjælp til Finance and Operations-app
 <td>I <a href="https://lcs.dynamics.com/">LCS</a> kan du bruge værktøjet <strong>Problemsøgning</strong> til hurtigt at søge efter Microsoft Knowledge Base-artikler (KB), hotfixes og løsninger på rapporterede fejl. Du kan se, hvilke rapporterede problemer der er ved at blive rettet for et bestemt funktionsområde, og hvilke problemer der allerede er løst. Yderligere oplysninger finder du i <a href="issue-search-lcs.md">Problemsøgning (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Få support via app.</td>
+<td>Få support i din Finance and Operations-app.</td>
 <td>Vælg knappen <strong>Hjælp</strong> (<strong>?</strong>) i øverste højre hjørne af appen, og vælg derefter <strong>Support</strong>. Problemer rapporteres på fanen <strong>Aktuelle problemer</strong> i LCS. Her kan administratorer afgøre, om de skal tilbyde intern support eller sende problemerne til Microsoft.</td>
 </tr>
 <tr>

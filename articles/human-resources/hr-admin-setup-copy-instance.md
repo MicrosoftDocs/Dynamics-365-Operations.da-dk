@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740833"
 ---
 # <a name="copy-an-instance"></a>Kopiér en forekomst
 
@@ -52,9 +52,9 @@ Følgende hændelser indtræffer, når du kopierer en Human Resources-database:
 
 - Dokumenter i Microsoft Azure Blob-lager kopieres ikke fra ét miljø til et andet. Eventuelle dokumenter og skabeloner, der er vedhæftet, kopieres derfor ikke men forbliver i kildemiljøet.
 
-- Alle brugere undtagen administratorbrugere og andre interne tjenestebrugerkonti er derfor ikke tilgængelige. Administratorbrugeren kan derfor slette eller sløre data, før andre brugere får adgang til systemet igen.
+- Alle brugere med undtagelse af dem, der har sikkerhedsrollen "Systemadministrator" og andre interne tjenestebrugerkonti, vil ikke være tilgængelige. Administratorbrugeren kan derfor slette eller sløre data, før andre brugere får adgang til systemet igen.
 
-- Administratorbrugeren skal foretage påkrævede konfigurationsændringer, f.eks. genoprette forbindelse mellem integrationsslutpunkter og bestemte tjenester eller URL-adresser.
+- Enhver bruger med sikkerhedsrollen "Systemadministrator" skal foretage påkrævede konfigurationsændringer, f.eks. genoprette forbindelse mellem integrationsslutpunkter og bestemte tjenester eller URL-adresser.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiere Human Resources-databasen
 
@@ -111,7 +111,7 @@ Nogle af disse elementer kopieres ikke, fordi de er miljøspecifikke. Eksempler 
 
 Følgende statusser ændres også, når du kopierer en forekomst:
 
-- Alle brugere undtagen administrator angives til **Deaktiveret**.
+- Alle brugere med undtagelse af dem, der har sikkerhedsrollen "Systemadministrator", er angivet til **Deaktiveret**.
 
 - Alle batchjob, bortset fra visse systemjob, angives til **Tilbagehold.**
 
