@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 52ae36f499871087cc086bcaf8c345af41d06943
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: ccbf12d4dcc75e22fc62c356653a91b9a8a8d1761ccefb18c93e65f343250830
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639384"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744220"
 ---
 # <a name="view-team-and-company-calendars"></a>Vis team- og firmakalendere
 
@@ -47,7 +47,7 @@ Ledere kan også få adgang til teamkalenderen fra **Afventer anmodninger om fri
 
 Brugere i rollen Fraværsadministrator kan få vist anmodninger om fridage i kalenderen. Følg disse trin for at få adgang til orlovskalenderen.
 
-1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Fraværsadministrator** og derefter **Kalender for fraværsadministratorer**.
+1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Orlovsstyring** og derefter **Kalender for fraværsadministratorer**.
 
 2. Angiv de ønskede datoer i feltet **Dato**.
 

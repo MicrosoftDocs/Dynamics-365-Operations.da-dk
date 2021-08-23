@@ -2,7 +2,7 @@
 title: Definere afhængigheden af ER-konfigurationer for andre komponenter
 description: I dette emne beskrives, hvordan du designer en ER-konfiguration (elektronisk rapportering), og angiver dens afhængighed af andre softwarekomponenter.
 author: NickSelin
-ms.date: 06/23/2017
+ms.date: 07/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4aef052a77428bb783a3a098754ca4dcc1b4296
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717588"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere afhængigheden af ER-konfigurationer for andre komponenter
 
@@ -138,5 +138,8 @@ Vi sletter de oprettede konfigurationer fra systemet og henter dem igen fra LCS-
     * Bemærk, at tilknytningskonfigurationen 'Eksempeltilknytning' for modellen hentes sammen med konfiguration for den valgte datamodel. De to filer hentes sammen, fordi 'Eksempeltilknytning' er konfigureret til at implementere den valgte datamodel, og fordi det er relevant for programmet. Konfigurationen 'Eksempeltilknytning (alternativ)' er ikke hentet, fordi betingelsen for den nødvendige programversion ikke er opfyldt.   
     * Hvis du logger på Finance and Operations, registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  
 
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.industry: public sector
 ms.author: kamaybac
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7abad07feefe2e929b8b7957b7ae817cd241742f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3562b11a89ff516695acb53967c54d81023a591f90c5653efbfdd8f815d4df72
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764121"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 

@@ -13,12 +13,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 141f77af82ffe61fd9d48ab0a949b96a9c9933e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8a4de5f24b736ac6a38efa2a89a29bc86b37a6f14e9ed400b829f1696f279762
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820493"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766918"
 ---
 # <a name="post-a-sales-invoice-with-a-payment-slip"></a>Bogføre en salgsfaktura med et indbetalingskort
 

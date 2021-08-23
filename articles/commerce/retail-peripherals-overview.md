@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: df7cb4810b83d74725df3d59b7b08da1e8cf4a53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715328"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -126,12 +126,12 @@ OLE til POS-branchestandarden er den primære platform for eksterne enheder, der
 > [!NOTE]
 > OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Commerce skal først understøtte den pågældende enhedstype eller klasse via OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.
 
-### <a name="windows&quot;></a>Windows
+### <a name="windows"></a>Windows
 
 Udskrivning af kvitteringer i POS-enheden er optimeret til OPOS. OPOS har en tendens til at være meget hurtigere end udskrivning via Windows. Det er derfor en god ide at bruge OPOS, især i miljøer, hvor der udskrives kvitteringer med 40 kolonner, og transaktionshastigheden skal være hurtig. Til de fleste enheder bruger du OPOS-kontrolelementer. Men nogle OPOS-bonprintere understøtter også Windows-drivere. Ved hjælp af en Windows-driver kan du få adgang til de nyeste skrifttyper og via netværk forbinde én printer til flere kasseapparater. Der er dog ulemper ved at bruge Windows-drivere. Her er nogle eksempler på disse ulemper:
 
 -   Når der bruges Windows-drivere, gengives billeder, før udskrivningen sker. Derfor har udskrivningen en tendens til at være langsommere end på printere, der bruger OPOS-kontrolelementer.
--   Enheder, der er tilsluttet via printeren (&quot;sammenkoblet"), fungerer muligvis ikke korrekt, når der bruges Windows-drivere. F.eks. åbner pengeskuffen muligvis ikke, eller bilagsprinteren fungerer muligvis ikke som forventet.
+-   Enheder, der er tilsluttet via printeren ("sammenkoblet"), fungerer muligvis ikke korrekt, når der bruges Windows-drivere. F.eks. åbner pengeskuffen muligvis ikke, eller bilagsprinteren fungerer muligvis ikke som forventet.
 -   OPOS understøtter også et mere omfattende sæt af variabler, der er specifikke for bonprintere i handlen, f.eks. papirafskæring eller bilagsudskrivning.
 -   Windows-printere understøttes ikke via IIS-hardwarestationen. 
 

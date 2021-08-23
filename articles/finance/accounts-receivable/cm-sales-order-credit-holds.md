@@ -1,8 +1,8 @@
 ---
 title: Kredit på hold for salgsordrer
 description: Dette emne beskriver konfigurationen af regler, der bruges til at sætte salgsordrer på kredithold.
-author: mikefalkner
-ms.date: 01/25/2019
+author: JodiChristiansen
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d94b19061838f9bb2552c3c91c6b3591040ccf52
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14cafa69e75d7e8a0f08fb385a8c364c0162da1ec609a4e0b3cad6178ec3f716
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723961"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kredit på hold for salgsordrer
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne beskriver konfigurationen af regler, der bruges til at sætte salgsordrer på kredithold. Blokeringsreglerne for kreditstyring kan gælde for en individuel kunde eller en kundegruppe. Blokeringsregler definerer svar i følgende tilfælde:
 
@@ -41,6 +42,11 @@ Derudover er der to parametre, der styrer andre scenarier, som blokerer for en s
 
 Når en kunde starter en salgstransaktion, gennemgås oplysningerne i salgsordren i forhold til en række blokeringsregler , der er med til at adgøre, om der skal gives kredit til kunden, og om salget kan gå videre. Du kan også definere udelukkelser, der tilsidesætter blokeringsreglerne, så en salgsordre kan behandles. Du kan konfigure blokerings- og udelukkelsesregler på siden **Kreditstyring > Konfiguration > Konfiguration af kreditstyring > Blokeringsregler**.
 
+Fra og med version 10.0.21 er blokeringsreglerne i Kreditstyring omstruktureret på følgende måder for at give større fleksibilitet:
+
+- Anmodninger om udvidelsesmuligheder er aktiveret, så du kan oprette dine egne blokeringsregler.
+- Afkrydsningsfeltet **Frigiv salgsordre** er nu tilgængeligt for alle blokeringsregler. Tidligere var det kun tilgængeligt for blokeringsreglen for salgsordrer. Når dette afkrydsningsfelt er markeret, frigiver reglen om udelukkelse salgsordren uden at tage hensyn til andre regler, der kan blokere salgsordrer. Dette afkrydsningsfelt er kun tilgængeligt for regeltypen **Udelukkelse**.
+
 ### <a name="days-overdue"></a>Dages forfald
 
 Åbn fanen **Antal dage over forfaldsdato**, hvis blokeringsreglen gælder for en kunde med én eller flere fakturaer, der har været forfaldne i et bestemt antal dage.
@@ -57,7 +63,7 @@ Når en kunde starter en salgstransaktion, gennemgås oplysningerne i salgsordre
 5. Vælg en **Værditype**. Standardværdien er et fast antal dage. Hvis du opretter en udelukkelse, kan du angive et fast antal dage eller et beløb i stedet. 
 6. Angiv antallet af dage for **Forfalden**, der tillades for den valgte blokeringsregel, før en ordre sætte på kreditstyringshold til gennemsyn. Antallet af dage over forfaldsdato udgør et ekstra antal respitdage, der føjes til antallet af dage ud over betalingens forfaldsdato, som fakturaen kan have, før den betragtes som forfalden. Hvis du har angivet **Værditype** som et beløb for en udelukkelse, skal du angive et beløb og en valuta for det pågældende beløb.
 
-### <a name="accounts-status"></a>Status på konti
+### <a name="account-status"></a>Kontostatus
 
 Åbn fanen **Kontostatus**, hvis blokeringsreglen gælder for en kunde med den valgte kontostatus.
 1. Vælg den regeltype, du konfigurerer.  **Blokering** opretter en regel, der blokerer en ordre. **Udelukkelse** opretter en regel, der udelukker en regel fra at blokere en ordre. 
@@ -102,7 +108,7 @@ Vælg **Betalingsbetingelser**, hvis blokeringsreglen gælder for den valgte bet
    - Vælg **Blokering** for at oprette en regel, der blokerer en ordre. 
    - Vælg **Udelukkelse** for at oprette en regel, der udelukker en anden regel fra at blokere en ordre. 
 5. Angiv **Forfaldent beløb** for den valgte blokeringsregel, før en ordre sættes på kreditstyringshold til gennemsyn. 
-6. Vælg den **Værditype**, der definerer den værditype, der skal bruges til også at teste, hvor meget af kreditmaks. der er brugt. Blokeringsregler kræver en procent, men en udelukkelse kan have et fast beløb eller en procentdel. Grænseværdien er relateret til kreditmaks.
+6. Vælg den **Værditype**, der definerer den værditype, der skal bruges til også at teste, hvor meget af kreditmaks. der er brugt. Blokeringsregler og udelukkelsesregler tillader kun en procent for **Forfaldent beløb**. Grænseværdien er relateret til kreditmaks.
 7. Angiv **Grænseværdi for kreditmaks.** for den valgte regel, før en kunde sættes på kreditstyringshold. Dette kan være et beløb eller en procentdel, der er baseret på den valgte værditype i værditypen.
 8. Reglen kontrollerer, at **Forfaldent beløb** er overskredet, og at **Grænseværdi for kreditmaks.** er overskredet. 
 
@@ -122,8 +128,6 @@ Vælg **Salgsordre**, hvis blokeringsreglen gælder for værdien af salgsordren.
    - Vælg **Blokering** for at oprette en regel, der blokerer en ordre. 
    - Vælg **Udelukkelse** for at oprette en regel, der udelukker en anden regel fra at blokere en ordre. 
 5. Angiv **Salgsordrebeløb** for den valgte blokeringsregel, før en ordre sættes på kreditstyringshold. 
-
-Reglen for salgsordren indeholder en ekstra indstilling, der tilsidesætter alle andre regler. Hvis du vil oprette en udelukkelse, der frigiver salgsordren uden at tage højde for andre regler, skal du markere afkrydsningsfeltet **Frigiv salgsordre** på udelukkelseslinjen.
 
 ### <a name="credit-limit-used"></a>Brugt kreditgrænse
 
