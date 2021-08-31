@@ -222,6 +222,26 @@
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service – afskrivning af Lifecycle Services-lagring
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Downloade ER-konfigurationer til Supply Chain Management
+                      items:
+                        - name: Downloade konfigurationer fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importere konfigurationer fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Globalt lager (GR)
+                      items:
+                        - name: Importere konfigurationer fra GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importere opdaterede versioner af ER-konfigurationer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Udvidet filtrering til søgning efter konfigurationer i GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Overføre konfigurationer til GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Dele konfigurationer i GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Afbryde konfigurationer i RCS Global-lageret
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronisk fakturering
                   items:
                     - name: Oversigt over elektronisk fakturering
@@ -1237,30 +1257,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Importere konfigurationer (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Globaliseringsfunktioner i RCS
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Downloade ER-konfigurationer til Supply Chain Management
-                      items:
-                        - name: Downloade konfigurationer fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Importere konfigurationer fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Globalt lager (GR)
-                      items:
-                        - name: Importere konfigurationer fra GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Importere opdaterede versioner af ER-konfigurationer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Udvidet filtrering til søgning efter konfigurationer i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Overføre konfigurationer til GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: Dele konfigurationer i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Afbryde konfigurationer i RCS Global-lageret
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Hurtige introduktioner
               items:
                 - name: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
@@ -1574,7 +1570,19 @@
             - name: Arkivere lagertransaktioner
               href: inventory/archive-inventory-transactions.md
             - name: Tilføjelsesprogram for indsigt i lagerbeholdning
-              href: inventory/inventory-visibility.md
+              items:
+                - name: Oversigt over tilføjelsesprogram for lagersynlighed
+                  href: inventory/inventory-visibility.md
+                - name: Konfigurere lagersynlighed
+                  href: inventory/inventory-visibility-setup.md
+                - name: Konfigurere lagersynlighed
+                  href: inventory/inventory-visibility-configuration.md
+                - name: Reservationer af lagersynlighed
+                  href: inventory/inventory-visibility-reservations.md
+                - name: Power App til lagersynlighed
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: Offentlige API'er til lagersynlighed
+                  href: inventory/inventory-visibility-api.md
         - name: IoT-intelligens
           items:
             - name: Startside for IoT-intelligens
@@ -1603,10 +1611,12 @@
                   href: master-planning/planning-optimization/planning-optimization-overview.md
                 - name: Start her med planlægningsoptimering
                   href: master-planning/planning-optimization/get-started.md
-                - name: Frigivelsesproces og frigivelseshistorik for planlægningsoptimering
+                - name: Udgivelsesproces og udgivelseshistorik for planlægningsoptimering
                   href: master-planning/planning-optimization/release-process.md
                 - name: Analyse af tilpasning af planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Forskelle mellem indbygget behovsplanlægning og planlægningsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 'Parametre, der ikke bruges af planlægningsoptimering'
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Anvende filtre på en plan
@@ -1795,7 +1805,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Oprette Åbn i Excel-oplevelser
+            - name: Åbne i Excel-oplevelser – Ofte stillede spørgsmål
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Føje skabeloner til menuen Åbn linjer i Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1975,8 +1985,6 @@
                   href: procurement/request-quotations.md
                 - name: Oprette en tilbudsanmodning
                   href: procurement/tasks/create-request-quotation.md
-                - name: Forseglet bud på tilbudsanmodninger
-                  href: procurement/sealed-bidding.md
                 - name: 'Oprette en rekvisition, der bruger en tilbudsanmodning'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Oprette en scoremetode for tilbudsanmodninger
@@ -3301,6 +3309,8 @@
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Installere og tilslutte lagerstedsapp
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Understøttelse af mobilstregkode
+                      href: warehousing/mobile-barcode-support.md
                     - name: Scanne stregkoder med et kamera i Warehouse Management-mobilappen
                       href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Fejlfinde problemer med forbindelse til Warehouse Management-mobilappen
@@ -3311,7 +3321,9 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurere mobilenheder til lagerstedsarbejde
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Modtage id med Warehouse Management-mobilappen
+                    - name: Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen
+                      href: warehousing/mobile-app-titles-instructions.md
+                    - name: Modtage id via Warehouse Management-mobilappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3331,7 +3343,7 @@
                   href: warehousing/mobile-device-user-settings.md
                 - name: Hændelsesbehandling af lagerstedsapp
                   href: warehousing/warehouse-app-events.md
-                - name: Tilpasse lagerstedsappen
+                - name: Udvide mobile processer for lagersted
                   items:
                     - name: Procesvejledningsstruktur
                       href: warehousing/process-guide-framework.md
@@ -3403,8 +3415,8 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Dokumentruteplanlægning for layout til id-etiketter
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Understøttelse af mobilstregkode
-                      href: warehousing/mobile-barcode-support.md
+                    - name: GS1-stregkoder og QR-koder
+                      href: warehousing/gs1-barcodes.md
                     - name: Oprette lagersted for flytteordrer
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Fejlfinde konfiguration af lagersted

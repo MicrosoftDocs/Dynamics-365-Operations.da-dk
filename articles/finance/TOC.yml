@@ -1170,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Åbne økonomikladdeskabeloner i Office
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Kladdebogføringsfejl på grund af ubalance
+                  href: general-ledger/posting-fail-imbalance.md
                 - name: Hvorfor kan jeg ikke tilbageføre denne postering?
                   href: general-ledger/cant-reverse-transctns.md
         - name: Økonomirapportering
@@ -1482,6 +1484,26 @@
                       href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – afskrivning af Lifecycle Services-lagring
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
+                    - name: Downloade ER-konfigurationer til Finance
+                      items:
+                        - name: Downloade konfigurationer fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Importere konfigurationer fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Globalt lager (GR)
+                      items:
+                        - name: Importere konfigurationer fra GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Importere opdaterede versioner af ER-konfigurationer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Udvidet filtrering til søgning efter konfigurationer i GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Overføre konfigurationer til GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Dele konfigurationer i GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Afbryde konfigurationer i RCS Global-lageret
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronisk fakturering
                   items:
                     - name: Oversigt over elektronisk fakturering
@@ -1520,40 +1542,56 @@
                   items:
                     - name: Oversigt over momsberegning
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Start her med momsberegning
-                      href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                    - name: Logik for anvendelse af moms og momsgrupper
-                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-                    - name: Understøttelse af momsfunktion til flytteordrer
-                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Beregne moms oven på prisen, når Priser er aktiveret inklusive moms'
-                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
-                    - name: Føje datafelter til momskonfigurationer
-                      href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
-                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere et miljø til opslag efter masterdata
-                      href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-                    - name: Flere momsregistreringsnumre
-                      href: localizations/emea-multiple-vat-registration-numbers.md
-                    - name: Rapportering for flere momsregistreringer
+                    - name: Konfiguration
                       items:
+                        - name: Start her med momsberegning
+                          href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurere et miljø til opslag efter masterdata
+                          href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Bestemmelse
+                      items:
+                        - name: Logik for anvendelse af moms og momsgrupper
+                          href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                    - name: Beregning
+                      items:
+                        - name: 'Beregne moms på prisen, når Priser er aktiveret inklusive moms'
+                          href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+                        - name: Regler for afrunding af momsberegning
+                          href: localizations/tax-calculation-rounding-rules.md
+                    - name: Flere momsregistreringer
+                      items:
+                        - name: Flere momsregistreringsnumre
+                          href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Rapportering for flere momsregistreringer
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
                         - name: Økonomisk rapportering
                           items:
                             - name: Momsopgørelse
-                          href: localizations/emea-fra-VAT-declaration-preview-France.md
+                              href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Rapportering i Nederlandene
                           items:
                             - name: Momsopgørelse
                               href: localizations/emea-nl-vat-declaration-netherlands.md
-                            - name: EU-listesystemet
+                            - name: EU-listesystem
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Rapportering i Schweiz
+                          items:
+                            - name: Momsopgørelse
+                              href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: Rapportering i Storbritannien
                           items:
                             - name: Forberede integration med momsdigitalisering (MTD) til moms
                               href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: Aktivere momsberegning for flytteordre
+                      items:
+                        - name: Understøttelse af momsfunktion til flytteordrer
+                          href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: Forlængelse
+                      items:
+                        - name: Føje datafelter til momskonfigurationer
+                          href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
+                          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
             - name: Lovmæssige opdateringer
               href: localizations/regulatory-updates.md
             - name: Australien
@@ -1710,6 +1748,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Konfigurere NF-e-parametre for et skattekontor
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2020.005 – Layout og valideringsopdateringer i det elektroniske regnskabsdokument (NF-e)
+                      href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Mellemled i salgsdigitalplatform for NF-e
                       href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: NT2019.001 – Moms af frynsegoder og fritagelsesregler for NF-e/NFC-e
@@ -2334,8 +2374,6 @@
                               href: localizations/apac-ind-gst-reference-groups.md
                         - name: Momstransaktioner
                           items:
-                            - name: GST TDS ved betaling af varer og tjenester
-                              href: localizations/ind-gst-tds-payment-goods-services.md
                             - name: Indkøbstransaktioner
                               items:
                                 - name: Køb fra ikke-registrerede leverandører
@@ -2370,6 +2408,10 @@
                                   href: localizations/apac-ind-GST-purchase-return-order.md
                                 - name: 'Kreditorforudbetalinger, hvor der er tilbageførte gebyrer'
                                   href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                                - name: GST TDS ved betaling af varer og services
+                                  href: localizations/ind-gst-tds-payment-goods-services.md
+                                - name: GST TCS ved betaling af varer og services
+                                  href: localizations/ind-gst-tcs-payment.md
                             - name: Salgstransaktioner
                               items:
                                 - name: Salg af momspligtige varer til forbrugere
@@ -2954,7 +2996,7 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: Momsangivelse (Nederlandene)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: EU-listesystemet
+                - name: EU-listesystem
                   href: localizations/emea-nl-EU-sales-list.md
             - name: Norge
               items:
@@ -3132,14 +3174,16 @@
                           href: localizations/rus-post-budget-fixed-asset-acquisition.md
                         - name: Overføre anlægsaktiver
                           href: localizations/rus-fixed-asset-transfer.md
+                        - name: Formularer til samlet udskrivning af anlægsaktiver
+                          href: localizations/printing-forms-fixed-assets.md
+                        - name: Forespørgsler og rapporter
+                          href: localizations/rus-fa-inquiries-reports.md
                     - name: Ikke-værdifulde anlægsaktiver og arbejdstøj
                       items:
                         - name: Ikke-værdifulde anlægsaktiver (Rusland)
                           href: localizations/rus-not-valuable-assets.md
                         - name: Regnskab for arbejdstøj/specielrigning (Rusland)
                           href: localizations/rus-working-clothes-instruments-accounting.md
-                        - name: Formularer til samlet udskrivning af anlægsaktiver
-                          href: localizations/printing-forms-fixed-assets.md
                 - name: Kreditor og debitor
                   items:
                     - name: Kreditnota som rettelse (Rusland)
@@ -3330,11 +3374,13 @@
                   href: localizations/emea-che-esr-customer-payments-import.md
                 - name: Schweizisk QR-regninger
                   href: localizations/emea-che-swiss-qr-bills.md
+                - name: Momsopgørelse
+                  href: localizations/emea-che-VAT-declaration-Switzerland.md
             - name: Thailand
               items:
                 - name: Oversigt for Thailand
                   href: localizations/thailand.md
-                - name: 'Lagerbeholdningskort, rapporter'
+                - name: Rapporter over lagerbeholdningskort
                   href: localizations/apac-tha-stock-card-reports.md
                 - name: Momsfakturaer
                   href: localizations/apac-tha-tax-invoices.md
@@ -4101,30 +4147,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
                     - name: Importere konfigurationer (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Globaliseringsfunktioner i RCS
-                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
-                    - name: Downloade ER-konfigurationer til Finance
-                      items:
-                        - name: Downloade konfigurationer fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                        - name: Importere konfigurationer fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Globalt lager (GR)
-                      items:
-                        - name: Importere konfigurationer fra GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Importere opdaterede versioner af ER-konfigurationer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Udvidet filtrering til søgning efter konfigurationer i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Overføre konfigurationer til GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-                        - name: Dele konfigurationer i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: Afbryde konfigurationer i RCS Global-lageret
-                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Hurtige introduktioner
               items:
                 - name: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
@@ -4355,7 +4377,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-            - name: Oprette Åbn i Excel-oplevelser
+            - name: Åbne i Excel-oplevelser – Ofte stillede spørgsmål
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
             - name: Føje skabeloner til menuen Åbn linjer i Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json

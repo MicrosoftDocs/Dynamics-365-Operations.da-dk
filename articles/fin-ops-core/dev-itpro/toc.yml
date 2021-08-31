@@ -332,8 +332,6 @@
                       href: database/api/v1/reference-create-export.md
                     - name: Hente operationsaktivitetsstatus
                       href: database/api/v1/reference-get-status.md
-                    - name: Start og stop miljøer
-                      href: database/api/v1/reference-start-stop-environments.md
         - name: Demodata
           items:
             - name: Oversigt over demodata
@@ -368,8 +366,10 @@
                       href: deployment/plannedmaintenance-selfservice.md
                     - name: Forretningskontinuitet og it-katastrofeberedskab
                       href: sysadmin/business-continuity-disaster-recovery.md
-                - name: Komplet onboarding af Azure Resource Manager
+                - name: Afslutte onboardingsprocessen for Azure Resource Manager
                   href: deployment/arm-onboarding.md
+                - name: Afslutte onboardingsprocessen for Azure Resource Manager for den amerikanske regerings LCS-projekter
+                  href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute og Finance and Operations
                   href: deployment/expressroute.md
                 - name: Finance and Operations-arkitektur
@@ -944,6 +944,16 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS for partnere
                   href: lifecycle-services/getting-started-lcs.md
+                - name: RESTful API'er
+                  items:
+                    - name: Starte og stoppe miljøer
+                      href: lifecycle-services/api/v1/reference-start-stop-environments.md
+                    - name: Hente miljømetadata
+                      href: lifecycle-services/api/v1/reference-environment-metadata.md
+                    - name: Hente miljøhistorik
+                      href: lifecycle-services/api/v1/reference-environment-history.md
+                    - name: Hente zip-fil med miljø-RSAT-certifikat
+                      href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Nyheder eller ændringer i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
             - name: Brugervejledning til Lifecycle Services
@@ -1138,22 +1148,24 @@
                       href: data-entities/dual-write/migrate-prospect-to-cash.md
                     - name: Fejlfinding
                       items:
-                        - name: Kontroller dobbeltskrivning er konfigureret i Finance and Operations-apps og Dataverse
-                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                        - name: Foretage fejlfinding af problemer under den indledende opsætning
-                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                        - name: Foretage fejlfinding af problemer under den indledende synkronisering
-                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: Fejlfinding af problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
-                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                        - name: Foretage fejlfinding af problemer med aktiv synkronisering
-                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Foretage fejlfinding af problemer med i forbindelse med løsningsforståelse
-                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Fejlfinding af problemer fra opgraderinger af Finance and Operations-apps
-                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                         - name: Generel fejlfinding
                           href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Fejlfinde problemer under den indledende opsætning
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                        - name: Fejlfinde problemer under den indledende synkronisering
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                        - name: Fejlfinde problemer med aktiv synkronisering
+                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Fejlfinde problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Fejlfinde problemer med parts- og globalt adressekartotek
+                          href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
+                        - name: Fejlfinde problemer med i forbindelse med løsningsforståelse
+                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                        - name: Fejlfinde problemer fra opgraderinger af Finance and Operations-apps
+                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                        - name: Kontrollere dobbeltskrivning er konfigureret i Finance and Operations-apps og Dataverse
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                 - name: Ofte stillede spørgsmål om dobbeltskrivning
                   href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuelle enheder
