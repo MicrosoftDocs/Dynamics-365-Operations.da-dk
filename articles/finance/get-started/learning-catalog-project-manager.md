@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f9dfa54f0a2b849a38c71a041f6d72dd84c762edba3482575b0b7867b1e11a53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5055d18e57d36bc8218bb0423721056e33fc3018
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716615"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402170"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Undervisningskatalog for projektlederens implementeringsarbejde med Dynamics 365 Finance
 
@@ -61,7 +61,6 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | [Sådan opgraderer du til 7.2 (juli 2017) fra 7.0 (RTW)/7.1 (version 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | I denne session forklarer vi, hvordan du opgraderer fra Dynamics 365 Finance and Operations-applikation v7.0 (RTW) og v7.1 (1611) til v7.2 (juli 2017). Vi gør en tydelig differentiering mellem Live kunder og igangværende projekter (ikke Live endnu). | Teknisk samtale (optaget webinar) | 58 minutter |
 | [Finance and Operations: Opgradering fra 7.x til 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Deltag i vores næste tekniske samtale, hvor vi vil dække 7.X til 8.X-opgraderingsprocessen. Der beskrives forskellige scenarier og trin til udførelse af kodeopgradering og dataopgradering. Vi vil også omtale scenarier med udvidelsesanmodninger, og hvordan de skal indsendes, hvor det er relevant. Del 1 af 2. | Teknisk samtale (optaget webinar) | 61 minutter |
 | [AX2012 til Dynamics 365 for Operations-opgradering (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Denne tekniske samtale giver en oversigt over, hvordan kode og data opgraderes fra Dynamics AX 2012 til Dynamics 365 for Operations. | Teknisk samtale (optaget webinar) | 45 minutter |
-| [Rapporteringsindstillinger i Dynamics 365 for Operations (VIR810PAL) ](https://community.dynamics.com/365/b/techtalks/posts/reporting-options-in-dynamics-365-for-operations-february-23-2017) | I denne session gennemgås de forskellige udskrivningsscenarier i D365 for Operations, herunder tip og trick til dokumentets ruteplanlægningsagent. | Teknisk samtale (optaget webinar) | 60 minutter |
 | [Analyser og rapporteringsmuligheder, udskrivning og dokumentets ruteplanlægningsagent](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Vær med i denne tekniske samtale om to relaterede emner. Vi skal først diskutere analyse- og rapporteringsløsningens mønstre og værktøjer til Dynamics 365 for Finance and Operations Enterprise Edition. Derefter diskuterer vi udskrivningsscenarier og dokumentets ruteplanlægningsagent. | Teknisk samtale (optaget webinar) | 45 minutter |
 | [Kursus MB-300T01-A: Fælles kernefunktioner i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | I dette kursus diskuteres de fælles kernefunktioner i Microsoft Dynamics 365 for Finance and Operations. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag |
 | [Kursus MB-300T02-A: Kernekonfiguration i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | I dette kursus diskuteres kernekonfigurationsopgaver for Microsoft Dynamics 365 for Finance and Operations. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag |
@@ -93,6 +92,5 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: bruge almindelige funktioner og implementeringsværktøjer, konfigurere sikkerhed, processer og indstillinger, udføre dataoverførsel og validere og understøtte løsningen. | Eksamen, hvor omkostning varierer alt efter region |
 | [Eksamen MB-310: Microsoft Dynamics 365 for Finance and Operations, Finans](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: oprette og konfigurere økonomistyring, administrere og anvende almindelige processer, implementere og styre kreditor og debitor samt administrere budgettering og anlægsaktiver. | Eksamen, hvor omkostning varierer alt efter region |
 | [Microsoft-certificeret: Dynamics 365 for Finance and Operations, tilknyttet funktionel økonomisk konsulent](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft-certificeret: Dynamics 365 for Finance and Operations, funktionelle økonomiske konsulenter samler globale regnskaber og operationer og automatiserer opgaver og arbejdsgange, strømliner af kundeordrer, salg, fakturering og rapportering. | Certificering, hvor omkostning varierer alt efter region |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

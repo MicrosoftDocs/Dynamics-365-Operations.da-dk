@@ -4,24 +4,17 @@ description: Dette emne indeholder fejlfindingsoplysninger, der kan hjælpe dig 
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736368"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416975"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Foretage fejlfinding af problemer under den første synkronisering
 
@@ -46,7 +39,7 @@ Når du har aktiveret tilknytningsskabelonerne, skal status for tilknytningerne 
 
 Du kan få vist følgende fejlmeddelelse, når du forsøger at køre tilknytningen og den første synkronisering:
 
-*(\[Ugyldig anmodning\], Fjernserveren returnerede en fejl: (400) Ugyldig anmodning). AX-eksport registrerede en fejl*
+*(\[Ugyldig anmodning\], Fjernserveren returnerede en fejl: (400) Ugyldig anmodning). AX-eksport registrerede en fejl.*
 
 Her er et eksempel på den fulde fejlmeddelelse.
 
@@ -198,7 +191,7 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
 
         ![Dataintegrationsprojektet, der skal opdatere CustomerAccount og ContactPersonId.](media/cust_selfref6.png)
 
-    2. Tilføj firmakriterierne i filteret på Dataverse-siden, så kun de rækker, der opfylder filterkriterierne, opdateres i Finance and Operations-appen. Hvis du vil tilføje et filter, skal du vælge filterknappen. I dialogboksen **Rediger forespørgsel** kan du tilføje en filterforespørgsel som **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Tilføj firmakriterierne i filteret på Dataverse-siden, så kun de rækker, der opfylder filterkriterierne, opdateres i Finance and Operations-appen. Hvis du vil tilføje et filter, skal du vælge filterknappen. I dialogboksen **Rediger forespørgsel** kan du tilføje en filterforespørgsel som **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [BEMÆRK] Hvis filterknappen ikke er til stede, skal du oprette en supportanmodning for at bede dataintegrationsteamet om at aktivere filtreringsfunktionen på din lejer.
 
@@ -210,5 +203,36 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
 
 8. Aktivér ændringssporing igen i Finance and Operations-appen for tabellen **Debitorer V3**.
 
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Første synkroniseringsfejl på oversigter med mere end 10 opslagsfelter
+
+Du kan få vist følgende fejlmeddelelse, når du forsøger at køre en første synkroniseringsfejl i **Debitor V3 – Konti**, tilknytninger af **Salgsordrer** eller en oversigt med mere end 10 opslagsfelter:
+
+*CRMExport: Pakkeudførelse fuldført. Fejlbeskrivelse: 5 forsøg på at hente data fra https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc failed.*
+
+På grund af opslagsbegrænsningen i forespørgslen mislykkes den første synkronisering, når enhedstilknytningen indeholder mere end 10 opslag. Yderligere oplysninger finder du i [Hente relaterede tabelposter med en forespørgsel](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+Følg disse trin for at løse dette problem:
+
+1. Fjern valgfrie opslagsfelter fra enhedsoversigten for dobbeltskrivning, så antallet af opslag er 10 eller færre.
+2. Gem oversigten, og udfør den første synkronisering.
+3. Når den første synkronisering af det første trin lykkes, skal du tilføje de resterende opslagsfelter og fjerne de opslagsfelter, du har synkroniseret i første trin. Sørg for, at antallet af opslagsfelter er 10 eller færre. Gem oversigten, og kør den første synkronisering.
+4. Gentag disse trin, indtil alle opslagsfelter er synkroniseret.
+5. Føj alle opslagsfelterne tilbage til oversigten, gem oversigten, og kør oversigten den **Spring første synkronisering over**.
+
+Denne proces aktiverer oversigten for live-synkroniseringstilstand.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Kendt problem under første synkronisering af parts postadresser og elektroniske adresser
+
+Du kan få vist følgende fejlmeddelelse, når du prøver at køre den første synkronisering af parts postadresser og elektroniske adresser:
+
+*Partnummer blev ikke fundet i Dataverse.*
+
+Der er angivet et interval på **DirPartyCDSEntity** i Finance and Operations-apps, der filtrerer parter af typen **Person** og **Organisation**. Som følge heraf vil en første synkronisering af tilknytningen **CDS-parter – msdyn_parties** ikke synkronisere parter af andre typer, herunder **Juridisk enhed** og **Driftsenhed**. Når den første synkronisering køres for **CDS-parts postadresser (msdyn_partypostaladdresses)** eller **Partkontakter V3 (msdyn_partyelectronicaddresses)**, kan du få modtage fejlmeddelelsen.
+
+Vi arbejder på en rettelse for at fjerne parttypeintervallet på Finance and Operations-enheden, så parter af alle typer kan synkroniseres med Dataverse uden problemer.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Er der problemer med ydeevnen under den første synkronisering af debitor- eller kontaktdata?
+
+Hvis du har kørt den første synkronisering af data for **Debitor** og har aktive tilknytninger af typen **Debitor**, og du derefter kører den første synkronisering af data for **Kontakter**, kan der være problemer med ydeevnen under indsættelser og opdateringer til tabellerne **LogisticsPostalAddress** og **LogisticsElectronicAddress** for adresser for **Kontakter**. Samme globale postadresse og elektroniske adressetabeller spores for **CustCustomerV3Entity** og **VendVendorV2Entity**, og dobbeltskrivning forsøger at oprette flere forespørgsler for at skrive data til en anden side. Hvis du allerede har kørt den første synkronisering for **Debitor**, skal du stoppe den tilsvarende oversigt, mens du kører den første synkronisering af data for **Kontakter**. Gør det samme med data for **Kreditor**. Når den første synkronisering er fuldført, kan du køre alle oversigterne ved at springe over den første synkronisering.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

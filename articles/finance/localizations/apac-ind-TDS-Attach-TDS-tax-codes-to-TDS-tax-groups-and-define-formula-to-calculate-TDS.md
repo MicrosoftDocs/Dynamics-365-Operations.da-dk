@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 81aac53cca91a75cde811c314bd6f7039852d32505fe6540921e17f3d1bbc7ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345222"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Knytte kildeskattekoder til kildeskattegrupper og definere formlen til beregning af kildeskat
 
@@ -55,7 +55,7 @@ Benyt følgende fremgangsmåde for at konfigurere en kildeskattegruppe, knytte k
     > [!NOTE]
     > Feltet **Skattegrundlag** kan ikke angives til **Uden bruttobeløb** for kildeskattekoden med et prioritets-id på **1**.
 
-12. Skatteberegningen er baseret på den formel, der er defineret i feltet **Beregningsudtryk** for hver skattekode, der knyttes til kildeskattegruppen. Vælg knappen plustegn (**+**), minustegn (**-**), multiplikationstegn (**\**_) eller divisionstegn (_*/**) for at angive beregningsudtrykket for den valgte kildeskattekode i feltet **Beregningsudtryk**.
+12. Skatteberegningen er baseret på den formel, der er defineret i feltet **Beregningsudtryk** for hver skattekode, der knyttes til kildeskattegruppen. Vælg knappen plustegn (+), minustegn (-), multiplikationstegn (\*) eller divisionstegn (/) for at angive beregningsudtrykket for den valgte kildeskattekode i feltet **Beregningsudtryk**.
 
     > [!NOTE]
     > Der kan ikke defineres et beregningsudtryk for kildeskattekoden med et prioritets-id på **1**.

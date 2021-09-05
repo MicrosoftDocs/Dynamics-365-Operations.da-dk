@@ -1,6 +1,6 @@
 ---
-title: Installere og tilslutte mobilappen Lokationsstyring
-description: Dette emne forklarer, hvordan du installerer mobilappen Lokationsstyring og konfigurerer den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø.
+title: Installere og tilslutte mobilappen Warehouse Management
+description: Dette emne forklarer, hvordan du installerer mobilappen Warehouse Management og konfigurerer den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø.
 author: MarkusFogelberg
 ms.date: 02/03/2021
 ms.topic: article
@@ -16,25 +16,25 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 338c3129d81fa0428f3470808bc13fc76483ff3aaf19b06708a986aec64b4030
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782341"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384605"
 ---
-# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Lokationsstyring
+# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Dette emne beskriver, hvordan du konfigurerer den nye mobilapp Lokationsstyring. Hvis du søger efter oplysninger om, hvordan du konfigurerer den gamle lagerstedsapp (nu frarådet), skal du se [Installere og tilslutte lagerstedsappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Dette emne beskriver, hvordan du konfigurerer den nye mobilapp Warehouse Management. Hvis du søger efter oplysninger om, hvordan du konfigurerer den gamle lagerstedsapp (nu frarådet), skal du se [Installere og tilslutte lagerstedsappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Dette emne forklarer, hvordan du downloader og installerer mobilappen Lokationsstyring på dine mobilenheder og konfigurerer den til at oprette forbindelse til dit Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
+Dette emne forklarer, hvordan du downloader og installerer mobilappen Warehouse Management på dine mobilenheder og konfigurerer den til at oprette forbindelse til dit Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
 
 ## <a name="system-requirements"></a>Systemkrav
 
-mobilappen Lokationsstyring er tilgængelig på både Windows- og Google Android-operativsystemer. Når du vil bruge appen, skal du have et af følgende understøttede operativsystemer installeret på dine mobilenheder:
+mobilappen Warehouse Management er tilgængelig på både Windows- og Google Android-operativsystemer. Når du vil bruge appen, skal du have et af følgende understøttede operativsystemer installeret på dine mobilenheder:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 Update 1809 (build 10.0.17763) eller senere
 - Android 4.4 eller senere
@@ -43,10 +43,10 @@ mobilappen Lokationsstyring er tilgængelig på både Windows- og Google Android
 
 Før du kan bruge appen, skal en relateret funktion være slået til i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
 
-- **Modul:** *Lokationsstyring*
+- **Modul:** *Warehouse Management*
 - **Funktionsnavn:** *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp*
 
-## <a name="get-the-warehouse-management-mobile-app"></a>Hent mobilappen Lokationsstyring
+## <a name="get-the-warehouse-management-mobile-app"></a>Hent mobilappen Warehouse Management
 
 Ved mindre udrulninger vil du måske installere appen fra den relevante store på hver enkelt enhed og derefter konfigurere forbindelsen til de miljøer, du bruger, manuelt.
 
@@ -56,23 +56,23 @@ Til større udrulning kan du automatisere udrulning og/eller konfiguration af ap
 
 Det er lettest at installere appen på en enkelt enhed ved at installere den fra en appbutik, som altid har den nyeste og mest tilgængelige version. Microsoft Intune kan også hente apps fra appbutikkerne. Brug et af følgende links til at installere appen fra en appbutik:
 
-- **Windows (UWP):** [Lokationsstyring på Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
+- **Windows (UWP):** [Warehouse Management på Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-- **Android:** [Lokationsstyring på Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+- **Android:** [Warehouse Management på Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
 
 ### <a name="download-the-app-from-microsoft-app-center"></a>Downloade appen fra Microsoft App Center
 
-Som et alternativ til at installere fra en appbutik kan du i stedet hente appen fra Microsoft App Center. App Center indeholder installerbare pakker, som du kan indlæse. Ud over den aktuelle version giver App Center dig også mulighed for at hente tidligere versioner og eventuelt forhåndsversioner med kommende funktioner, som du kan prøve af. Hvis du vil hente aktuelle, tidligere eller forhåndsversioner af mobilappen Lokationsstyring fra Microsoft App Center, skal du bruge følgende links:
+Som et alternativ til at installere fra en appbutik kan du i stedet hente appen fra Microsoft App Center. App Center indeholder installerbare pakker, som du kan indlæse. Ud over den aktuelle version giver App Center dig også mulighed for at hente tidligere versioner og eventuelt forhåndsversioner med kommende funktioner, som du kan prøve af. Hvis du vil hente aktuelle, tidligere eller forhåndsversioner af mobilappen Warehouse Management fra Microsoft App Center, skal du bruge følgende links:
 
-- **Windows (UWP):** [Lokationsstyring (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+- **Windows (UWP):** [Warehouse Management (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
     Du kan finde oplysninger om, hvordan du installerer en hentet pakke på en Windows-enhed og derefter konfigurerer de nødvendige certifikater, under [Installere en build fra App Center](/appcenter/distribution/installation).
 
-- **Android:** [Lokationsstyring (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+- **Android:** [Warehouse Management (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
     Hvis du henter en forhåndsversion, skal du følge nogle få ekstra trin for at installere den. Yderligere oplysninger finder du i [Teste Android-apps](/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Oprette en webtjenesteapplikation i Azure Active Directory
 
-For at aktivere mobilappen Lokationsstyring til at kommunikere med en bestemt Supply Chain Management-server skal du registrere en webtjenesteapplikation til Supply Chain Management-lejeren i Azure Active Directory (Azure AD). Følgende procedurer viser en måde at fuldføre denne opgave på. Få detaljerede oplysninger og alternativer ved at se linkene, når proceduren er udført.
+For at aktivere mobilappen Warehouse Management til at kommunikere med en bestemt Supply Chain Management-server skal du registrere en webtjenesteapplikation til Supply Chain Management-lejeren i Azure Active Directory (Azure AD). Følgende procedurer viser en måde at fuldføre denne opgave på. Få detaljerede oplysninger og alternativer ved at se linkene, når proceduren er udført.
 
 1. Åbn en webbrowser, og gå til [https://portal.azure.com](https://portal.azure.com/).
 1. Angiv brugernavnet og adgangskoden for den bruger, der har adgang til Azure-abonnementet.
@@ -96,7 +96,7 @@ For at aktivere mobilappen Lokationsstyring til at kommunikere med en bestemt Su
 
 1. Gå til listen **Administrer**, og vælg **Certifikat og hemmeligheder**. Vælg derefter en af følgende knapper, afhængigt af hvordan du vil konfigurere appen til godkendelse. (Få flere oplysninger i afsnittet [Godkende ved at bruge et certifikat eller klienthemmelighed](#authenticate) senere i dette emne.)
 
-    - **Upload certifikat** – upload et certifikat, der skal bruges som en hemmelighed. Vi anbefaler denne fremgangsmåde, fordi den er mere sikker og også kan automatiseres mere fuldstændigt. Hvis du kører mobilappen Lokationsstyring på Windows-enheder, skal du notere dig, hvilken **aftryksværdi** der vises, når du har uploadet certifikatet. Du skal bruge denne værdi, når du konfigurerer certifikatet på Windows-enheder.
+    - **Upload certifikat** – upload et certifikat, der skal bruges som en hemmelighed. Vi anbefaler denne fremgangsmåde, fordi den er mere sikker og også kan automatiseres mere fuldstændigt. Hvis du kører mobilappen Warehouse Management på Windows-enheder, skal du notere dig, hvilken **aftryksværdi** der vises, når du har uploadet certifikatet. Du skal bruge denne værdi, når du konfigurerer certifikatet på Windows-enheder.
     - **Ny klienthemmelighed** – opret en nøgle ved at angive en nøglebeskrivelse og en varighed i sektionen **Adgangskoder**, og vælg derefter **Tilføj**. Tag en kopi af nøglen, og opbevar den sikkert.
 
     ![Certifikat og hemmeligheder.](media/app-connect-azure-authentication.png "Certifikat og hemmeligheder")
@@ -113,7 +113,7 @@ Få flere oplysninger om, hvordan du konfigurerer webtjenesteapplikationer i Azu
 
 Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain Management kan bruge din Azure AD-applikation.
 
-1. Opret en bruger, der svarer til brugerlegitimationsoplysningerne til mobilappen Lokationsstyring:
+1. Opret en bruger, der svarer til brugerlegitimationsoplysningerne til mobilappen Warehouse Management:
 
     1. I Supply Chain Management skal du gå til **Systemadministration \> Brugere \> Brugere**.
     1. Opret en bruger.
@@ -121,7 +121,7 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
 
     ![Tildele brugeren af lagerstedsmobilenheden.](media/app-connect-app-users.png "Tildele brugeren af lagerstedsmobilenheden")
 
-1. Knyt din Azure AD-applikation til brugeren af mobilappen Lokationsstyring:
+1. Knyt din Azure AD-applikation til brugeren af mobilappen Warehouse Management:
 
     1. Gå til **SSystemadministration \> Opsætning \> Azure Active Directory-applikationer**.
     1. Oprette en linje.
@@ -133,9 +133,9 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
 
 Godkendelse med Azure AD giver en sikker metode til at forbinde en mobilenhed med Supply Chain Management. Du kan godkende enten ved at bruge en klienthemmelighed eller et certifikat. Hvis du vil importere forbindelsesindstillinger, anbefales det, at du bruger et certifikat i stedet for en klienthemmelighed. Da klienthemmeligheden altid skal lagres på en sikker måde, kan du ikke importere den fra en fil med forbindelsesindstillinger eller en QR-kode, som beskrevet senere i dette emne.
 
-Certifikater kan bruges som hemmeligheder for at bevise applikationens identitet, når der anmodes om et token. Den offentlige del af certifikatet overføres til appregistreringen på Azure-portalen, hvorimod hele certifikatet skal installeres på hver enkelt enhed, hvor mobilappen Lokationsstyring er installeret. Din organisation er ansvarlig for at administrere certifikatet i form af rotation osv. Du kan bruge selvsignerede certifikater, men du bør altid bruge certifikater, der ikke kan eksporteres.
+Certifikater kan bruges som hemmeligheder for at bevise applikationens identitet, når der anmodes om et token. Den offentlige del af certifikatet overføres til appregistreringen på Azure-portalen, hvorimod hele certifikatet skal installeres på hver enkelt enhed, hvor mobilappen Warehouse Management er installeret. Din organisation er ansvarlig for at administrere certifikatet i form af rotation osv. Du kan bruge selvsignerede certifikater, men du bør altid bruge certifikater, der ikke kan eksporteres.
 
-Du skal gøre certifikatet lokalt tilgængeligt på hver enhed, hvor du kører mobilappen Lokationsstyring. Du kan finde oplysninger om, hvordan du administrerer certifikater til Intune-styrede enheder, hvis du bruger Intune, under [Bruge certifikater til godkendelse i Microsoft Intune](/mem/intune/protect/certificates-configure).
+Du skal gøre certifikatet lokalt tilgængeligt på hver enhed, hvor du kører mobilappen Warehouse Management. Du kan finde oplysninger om, hvordan du administrerer certifikater til Intune-styrede enheder, hvis du bruger Intune, under [Bruge certifikater til godkendelse i Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurere applikationen ved at importere forbindelsesindstillinger
 
@@ -150,8 +150,8 @@ Du kan importere forbindelsesindstillinger fra enten en fil eller en QR-kode. Ve
 | ConnectionName | Angiv navnet på forbindelsesindstillingen. Beskrivelsen må højst være på 20 tegn. Da denne værdi er et entydigt id for en forbindelsesindstilling, skal du sørge for, at den er entydig på listen. Hvis der allerede findes en forbindelse med samme navn på enheden, vil den blive tilsidesat af indstillingerne fra den importerede fil. |
 | ActiveDirectoryClientAppId | Angiv det klient-id, du har noteret, mens du var i opsætningen af Azure AD i afsnittet [Oprette en webtjenesteapplikation i Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Angiv rod-URL-adressen for Supply Chain Management. |
-| ActiveDirectoryTenant | Angiv den Azure AD-lejer, som du bruger sammen med Supply Chain Management-serveren. Denne værdi har formatet `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
-| Regnskab | Angiv den juridiske enhed i Supply Chain Management, som applikationen skal oprette forbindelse til. |
+| ActiveDirectoryTenant | Angiv det Azure AD-domænenavn, som du bruger til Supply Chain Management-serveren. Denne værdi har formatet `https://login.windows.net/<your-Azure-AD-domain-name>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Du kan finde flere oplysninger om, hvordan du finder dit Azure AD- domænenavn, under [Find vigtige id'er for en bruger](/partner-center/find-ids-and-domain-names). |
+| Virksomhed | Angiv den juridiske enhed i Supply Chain Management, som applikationen skal oprette forbindelse til. |
 | ConnectionType | (Valgfri) Angiv, om forbindelsesindstillingen skal bruge et certifikat eller en klienthemmelighed til at oprette forbindelse til et miljø. De gyldige værdier er *"certificate"* og *"clientsecret"*. Standardværdien er *"certificate"*.<p>**Bemærk!** Klienthemmeligheder kan ikke importeres.</p> |
 | IsEditable | (Valgfrit) Angiv, om appen skal kunne redigere forbindelsesindstillingen. Gyldige værdier er *"true"* og *"false"*. Standardværdien er *"true"*. |
 | IsDefault | (Valgfrit) Angiv, om forbindelsen er standardforbindelsen. En forbindelse, der er angivet som standardforbindelse, vælges automatisk på forhånd, når appen åbnes. Kun én forbindelse kan angives som standardforbindelsen. Gyldige værdier er *"true"* og *"false"*. Standardværdien er *"false"*. |
@@ -191,7 +191,7 @@ Du kan enten gemme oplysningerne som en JSON-fil eller generere en QR-kode med d
 
 ### <a name="save-the-connection-settings-file-on-each-device"></a>Gem filen med forbindelsesindstillinger på hver enkelt enhed
 
-Du vil typisk bruge et værktøj til enhedshåndtering eller script til at distribuere filerne med forbindelsesindstillinger til hver af de enheder, du administrerer. Hvis du bruger standardnavnet og -placeringen, når du gemmer filen med forbindelsesindstillinger på hver enkelt enhed, importerer mobilappen Lokationsstyring den automatisk, selv når den køres første gang, efter at appen er installeret. Hvis du bruger et brugerdefineret navn eller en brugerdefineret placering til filen, skal app-brugeren angive værdierne under den første kørsel. Appen vil dog fortsat bruge det angivne navn og den specificerede placering bagefter.
+Du vil typisk bruge et værktøj til enhedshåndtering eller script til at distribuere filerne med forbindelsesindstillinger til hver af de enheder, du administrerer. Hvis du bruger standardnavnet og -placeringen, når du gemmer filen med forbindelsesindstillinger på hver enkelt enhed, importerer mobilappen Warehouse Management den automatisk, selv når den køres første gang, efter at appen er installeret. Hvis du bruger et brugerdefineret navn eller en brugerdefineret placering til filen, skal app-brugeren angive værdierne under den første kørsel. Appen vil dog fortsat bruge det angivne navn og den specificerede placering bagefter.
 
 Hver gang appen startes, genindlæser den forbindelsesindstillingerne fra den tidligere placering for at finde ud af, om der er foretaget ændringer. Appen opdaterer kun forbindelser, der har samme navn som forbindelserne i filen med forbindelsesindstillinger. Brugeroprettede forbindelser, der bruger andre navne, opdateres ikke.
 
@@ -211,7 +211,7 @@ Stierne oprettes som regel automatisk efter den første kørsel af appen. Du kan
 
 Benyt følgende fremgangsmåde til at importere forbindelsesindstillinger fra en fil eller en QR-kode.
 
-1. Start mobilappen Lokationsstyring på din mobilenhed. Første gang du starter appen, vises en velkomstmeddelelse. Vælg **Vælg en forbindelse**.
+1. Start mobilappen Warehouse Management på din mobilenhed. Første gang du starter appen, vises en velkomstmeddelelse. Vælg **Vælg en forbindelse**.
 
     ![Velkomstmeddelelse.](media/app-configure-welcome-screen.png "Velkomstmeddelelse")
 
@@ -242,7 +242,7 @@ Benyt følgende fremgangsmåde til at importere forbindelsesindstillinger fra en
 
 Hvis du ikke har en fil eller QR-kode, kan du konfigurere manuelt på enheden, så den opretter forbindelse til Supply Chain Management-serveren via Azure AD-applikationen.
 
-1. Start mobilappen Lokationsstyring på din mobilenhed.
+1. Start mobilappen Warehouse Management på din mobilenhed.
 1. Hvis appen startes i **Demotilstand**, skal du vælge **Forbindelsesindstillinger**. Hvis siden **Log på** vises, når appen startes, skal du vælge **Skift forbindelse**.
 1. Vælg **Konfigurer forbindelse**.
 
@@ -268,7 +268,7 @@ Hvis du ikke har en fil eller QR-kode, kan du konfigurere manuelt på enheden, s
         > [!IMPORTANT]
         > Undlad at afslutte denne værdi med en skråstreg (/).
 
-    - **Active Directory-lejer** – angiv den Azure AD-lejer, du bruger til Supply Chain Management-serveren. Denne værdi har formatet `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active Directory-lejer** – Angiv det Azure AD-domænenavn, du bruger til Supply Chain Management-serveren. Denne værdi har formatet `https://login.windows.net/<your-Azure-AD-domain-name>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Du kan finde flere oplysninger om, hvordan du finder dit Azure AD- domænenavn, under [Find vigtige id'er for en bruger](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Undlad at afslutte denne værdi med en skråstreg (/).

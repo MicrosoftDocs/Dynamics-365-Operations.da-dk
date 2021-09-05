@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 52048ea6cced6f670faf13ef07f1288183e6d9b67a016608030f9e192a98faa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751092"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344972"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -51,6 +51,9 @@ Hvis du vil have vist analyseresultatet for tilpasning af planlægningsoptimerin
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Oversigt over mulige resultater fra tilpasningsanalysen
 
 Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasningsanalyse. Nummertegn (_\#_) erstattes med et tal, der angiver antallet af poster, der har den viste fejl. Understøttede funktioner eller funktioner i forhåndsversion er tilgængelige med version 10.0.9 eller senere (medmindre der er vist et højere versionsnummer i kolonnen "Forventet tilgængelighed").
+
+> [!NOTE]
+> Visse uoverensstemmelser kan ikke identificeres af tilpasningsanalysen for Planlægningsoptimering. Du kan finde flere oplysninger i [Forskelle mellem klassisk behovsplanlægning og planlægningsoptimering](planning-optimization-differences-with-built-in.md).
 
 | Funktion | Vist problem | Forklaring | Forventet tilgængelighed |
 | --- | --- | --- | --- |
@@ -106,7 +109,11 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 
 [Start her med planlægningsoptimering](get-started.md)
 
-[Få vist planhistorik og planlægningslogs](plan-history-logs.md)
+[Forskelle mellem klassisk behovsplanlægning og planlægningsoptimering](planning-optimization-differences-with-built-in.md)
+
+[Parametre, der ikke bruges af planlægningsoptimering](not-used-parameters.md)
+
+[Få vist planhistorik og planlægningslogfiler](plan-history-logs.md)
 
 [Anvend filtre på en plan](plan-filters.md)
 

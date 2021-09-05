@@ -1,8 +1,8 @@
 ---
 title: Oversigt over plantype
-description: En plantype i Microsoft Dynamics 365 Human Resources er en overordnet gruppering af bestemte typer frynsegoder. Hver plantype har en plantypekode, der bestemmer reglerne for plantypen.
-author: andreabichsel
-ms.date: 06/25/2021
+description: En plantype i Microsoft Dynamics 365 Human Resources er en overordnet gruppering af bestemte typer frynsegoder.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8966b0aa01795ff00832e480a186c05fa129e7c728112f81cf4f78b6b0915463
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732723"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423338"
 ---
 # <a name="plan-type-overview"></a>Oversigt over plantype
 
@@ -32,10 +32,10 @@ Hver enkelt plantype angiver, om en medarbejder kan tilmelde sig en eller flere 
 
 Hvis en plantype omfatter kontakter, angiver plantypen, om kontaktpersoner er modtagere eller afhængige. Plantypen Basisliv kan f.eks. have modtagere, mens plantypen Basis medicinsk ville have afhængige. I nogle tilfælde kan en plan ikke have personlige kontaktpersoner. Det kan f.eks. være en Fleksibel forbrugskonto eller Parkeringsgodtgørelse.
 
-En plantype kan definere disponeringsindstillinger. Disponeringsindstillingerne defineres i formularen Disponeringsindstilling. En disponeringsindstilling kan angive beløbet for frynsegodet eller de kontakter, der er berettigede til plantypen. Hvis kontakttypen f.eks. er modtager, skal disponeringsindstillingen definere de betingelser, som modtageren er berettiget til at modtage, når frynsegodet bruges. Hvis kontakttypen er Afhængig, skal disponeringsindstillingen definere forholdet mellem den afhængige og medarbejderen. 
+En plantype kan definere dækningsindstillinger. Dækningsindstillingerne defineres på siden **Dækningsindstilling**. En dækningsindstilling kan angive beløbet for frynsegodet eller de kontakter, der er berettigede til plantypen. Hvis kontakttypen f.eks. er modtager, skal dækningsindstillingen definere de betingelser, som modtageren er berettiget til at modtage, når frynsegodet bruges. Hvis kontakttypen er Afhængig, skal dækningsindstillingen definere forholdet mellem den afhængige og medarbejderen. 
 
 > [!IMPORTANT]
-> Formularen indeholder nøgledata, der påvirker de tilgængelige muligheder ved oprettelse af en ny frynsegodeplan:
+> Siden indeholder nøgledata, der påvirker de tilgængelige indstillinger ved oprettelse af en ny frynsegodeplan:
 >
 > - **Plantypekode** – Dette felt påvirker, hvad der vises under fanen **Konfiguration**, når den faktiske frynsegode konfigureres.  
 > - **Samtidig tilmelding** – Dette felt bestemmer, om der tillades flere tilmeldinger. (For en sundhedsplan angives dette felt typisk til **Én tilmelding**).
@@ -56,7 +56,7 @@ En plantype kan definere disponeringsindstillinger. Disponeringsindstillingerne 
    | **Beskrivelse** | En beskrivelse af plantypen. |
    | **Kode for plantype** | Vælg en plantypekode på rullelisten over værdier. Listen over plantypekoder viser alle de plantyper, der understøttes i den aktuelle version. |
    | **Samtidig tilmelding** | Angiver, om en medarbejder kan tilmelde sig flere frynsegodeplaner af samme plantype eller kun én frynsegodeplan pr. plantype. |
-   | **Kontakttype** | Angiver rollen for den personlige kontakt. Værdierne er tom, Afhængig og Modtager. Du kan lade feltet **Kontakttype** være tomt, hvis deres plantype ikke kræver en afhængig eller modtager baseret på disponeringsindstillingen. |
+   | **Kontakttype** | Angiver rollen for den personlige kontakt. Værdierne er tom, Afhængig og Modtager. Du kan lade feltet **Kontakttype** være tomt, hvis deres plantype ikke kræver en afhængig eller modtager baseret på dækningsindstillingen. |
 
 4. Hvis du vil konfigurere indstillinger for livshændelser, skal du vælge **Handlinger** og derefter vælge **Indstillinger for livshændelser**. Angiv værdier for følgende felter:
 
@@ -65,7 +65,7 @@ En plantype kan definere disponeringsindstillinger. Disponeringsindstillingerne 
    | **Plantype** | Den plantype, der skal konfigureres indstillinger for livshændelser for. |
    | **Livshændelsestype-id** | Id'et for livshændelsestypen. |
    | **Tillad annullering** | Angiver, om en medarbejder kan annullere en frynsegodeplan under livshændelsen. |
-   | **Skift dækningsindstilling** | Angiver, om en medarbejder kan ændre disponeringsindstillinger under livshændelsen. |
+   | **Skift dækningsindstilling** | Angiver, om en medarbejder kan ændre dækningsindstillinger under livshændelsen. |
    | **Skift til en ny plan** | Angiver, om en medarbejder kan ændre planer under livshændelsen. |
    | **Annuller plan automatisk** | Angiver, om planen automatisk skal annulleres under livshændelsen. |
    | **Åbn automatisk kontrol af berettigelse** | Angiver, om kontrollen for berettigelse til frynsegoder ved tilmelding skal genåbnes automatisk under livshændelsen. |

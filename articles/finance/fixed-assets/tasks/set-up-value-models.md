@@ -1,8 +1,8 @@
 ---
 title: Opret værdimodeller
 description: Denne procedure viser, hvordan du opretter et nyt anlægskartotek og knytter det til en anlægsaktivgruppe.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741530"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344652"
 ---
 # <a name="set-up-value-models"></a>Opret værdimodeller
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 Denne procedure viser, hvordan du opretter et nyt anlægskartotek og knytter det til en anlægsaktivgruppe. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
-
 
 ## <a name="create-a-book"></a>Opret en bog
 1. Gå til Anlægsaktiver > Opsætning > Bøger.
@@ -48,9 +49,10 @@ Denne procedure viser, hvordan du opretter et nyt anlægskartotek og knytter det
 1. Klik på Anlægsaktivgrupper.
 2. Skriv eller vælg en værdi i feltet Anlægsaktivgruppe.
 3. Angiv et tal i feltet Levetid.
-    * Bemærk, at Afskrivningsperioder beregnes efter angivelse af levetid.  
-    * Du kan angive afskrivningsprincippet som påkrævet af skattemæssige årsager.  
 
+  - Afskrivningsperioder beregnes, efter levetiden for aktivet er angivet.  
+  - Afskrivningsprincippet kan indstilles som påkrævet af skattemæssige årsager.
+  - For anlægsaktiver, der er tilknyttet leasinger, tilsidesættes værdien i feltet **Levetid** af den korteste af enten leasingperioden i anlægsaktivkartoteket eller aktivets brugstid. Hvis feltet **Overførsel af ejerskab** er angivet til **Ja** for leasingbogen, vil værdien i feltet **Levetid** altid være aktivets brugstid.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

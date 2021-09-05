@@ -1,12 +1,12 @@
 ---
-title: Momsberegning (prøveversion)
+title: Oversigt over momsberegning
 description: Dette emne forklarer det overordnede område og funktionerne for til momsberegning.
 author: wangchen
-ms.date: 06/03/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4e01247cddad4201760fd56e00e05a8373a1ca6ef7c26ae5e1f5cca63bd8a456
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775088"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394580"
 ---
-# <a name="tax-calculation-preview"></a>Momsberegning (prøveversion)
+# <a name="tax-calculation-overview"></a>Oversigt over momsberegning
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,44 +33,59 @@ Momsberegning er en særdeles skalerbar flerdimensional tjeneste, som gør det m
 Beregning af moms kan integreres med Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Senere vil det også blive integreret i , Dynamics 365 Project Operations, Dynamics 365 Commerce og andre programmer fra første part og tredjepart.
 
 > [!IMPORTANT]
-> Når du aktiverer tjenesten Momsberegning, kan der udføres visse handlinger på relaterede data i et andet datacenter end det datacenter, der vedligeholder dine tjenestedata. Gennemse [Vilkår og betingelser](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md), før du aktiverer tjenesten Momsberegning. Det er vigtigt for os at beskytte dine personlige oplysninger. Du kan få mere at vide ved at læse vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=521839).
+> Når du aktiverer Momsberegning, kan der udføres visse handlinger på relaterede data i et andet datacenter end det datacenter, der vedligeholder dine tjenestedata. Gennemse [Vilkår og betingelser](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md), før du aktiverer Momsberegning. Det er vigtigt for os at beskytte dine personlige oplysninger. Du kan få mere at vide ved at læse vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-Momsberegning er et mikroservicebaseret momsprogram, der tilbyder eksponentiel skalerbarhed. Du kan få hjælp til at udføre følgende opgaver:
+Momsberegning er et mikrotjenestebaseret momdprogram, der tilbyder eksponentiel skalerbarhed og letter opgaverne på følgende måder:
 
-- Konfigurer momsberegning via Regulatory Configuration Service (RCS). RCS er en udvidet version af ER-designeren (Elektronisk rapportering) og er tilgængelig som en enkeltstående tjeneste.
-- Konfigurer momsmatrixen til automatisk at bestemme momskoder og -satser.
-- Konfigurer momsmatrixen til automatisk at bestemme momsregistreringsnummer.
-- Konfigurer momsberegningsdesigneren for at definere formler og betingelser.
-- Del momsfastsættelses- og -beregningsløsningen på tværs af juridiske enheder.
+- Automatisk fastlæggelse af den korrekte momsgruppe, varemomsgruppe og momskoder ved hjælp af en forbedret funktion.
+- Understøttelse af flere momsregistreringsnumre for samme juridiske enhed, og automatisk fastlæggelse af det korrekte momsregistreringsnummer og momspligtige transaktioner.
+- Understøttelse af fastlæggelse, beregning, bogføring og udligning af moms for flytteordrer.
+- Definition af momsberegningsformler og -betingelser, der kan konfigureres, i overensstemmelse med dine specifikke forretningsbehov.
+- Deling af momsfastsættelses- og -beregningsløsningen på tværs af juridiske enheder for at spare vedligeholdelsesarbejde og undgå fejl.
+- Understøttelse af fastlæggelse af debitor- og kreditormomsregistreringsnumre.
+- Fastlæggelse af supportlistekoder.
+- Understøttelse af parametre for momsberegning inden for det overordnede skattemyndighedsområde.
 
-Hvis du vil bruge tjenesten til momsberegning, skal du installere tilføjelsesprogrammet Momsberegningstjeneste fra dit projekt i Microsoft Dynamics Lifecycle Services (LCS). Fuldfør derefter opsætningen i RCS, og aktivér tjenesten til momsberegning i Finance og Supply Chain Management. Du kan finde flere oplysninger i [Start her med momstjeneste](./global-get-started-with-tax-calculation-service.md).
+Hvis du vil bruge Momsberegning, skal du installere tilføjelsesprogrammet Momsberegning fra dit projekt i Microsoft Dynamics Lifecycle Services. Fuldfør derefter opsætningen i [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/), og aktivér momsberegning i Finance og Supply Chain Management. Du kan finde flere oplysninger i [Start her med momstjeneste](global-get-started-with-tax-calculation-service.md).
 
 ## <a name="availability"></a>Tilgængelighed
 
-Momsberegning er kun tilgængelig i sandkassemiljøer og for udvalgte kunder via et offentligt forhåndsversionsprogram. Senere vil den blive generelt tilgængelig for alle kunder og i produktionsmiljøer.
+Momsberegning er generelt tilgængelig i produktionsmiljøer for alle kunder fra version 10.0.21.
 
-Der leveres fortsat nye funktioner, så du skal derfor sørge for ofte at læse den sidste nye dokumentation for at få mere at vide om dækning og området af understøttede funktioner.
+Der vil fortsat blive leveret nye funktioner. Kontrollér ofte den opdaterede udgivelsesplan for at få mere at vide om dækningen og omfanget af de understøttede funktioner.
 
-Momsberegning implementeres i følgende Azure-geografiske områder. Den vil også blive implementeret i flere Azure-geografiske områder baseret på kundernes behov:
+Momsberegning implementeres i følgende Azure-geografiske områder. Der vil blive tilføjet flere Azure-geografier baseret på kundernes behov.
 
-- United States
+- Stillehavsområdet
+- Australien
+- Canada
 - Europa
+- Japan
+- Storbritannien
+- United States
 
 > [!NOTE]
-> Momsberegning understøtter ikke implementering i det lokale miljø af Dynamics 365. Den understøtter heller ikke tidligere versioner, f.eks. Dynamics AX 2012.
+> Momsberegning understøtter ikke tidligere version af Dynamics 365, f.eks. Dynamics AX 2012 eller installationer af Dynamics 365 i lokale miljøer.
 
-## <a name="feature-highlights"></a>Fremhævning af funktioner
+## <a name="data-flow"></a>Dataflow
 
-- En konfigurerbar momsmatrix til automatisk at bestemme og beregne moms
-- Understøttelse af flere momsregistreringsnumre
-- Understøttelse af flytteordre til fastlæggelse og beregning af moms
-- Understøttelse af flytteordre til fastlæggelse af flere momsregistreringsnumre
+Her er en oversigt over dataflowprocessen til tTax-beregning. 
+
+1. I RCS kan du få vist og importere momspligtige dokumentmodelkonfigurationer og konfigurationer af modeltilknytning. Hvis du skal udvide konfigurationer til et avanceret scenario, skal du se [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
+2. Opret eller vedligehold momsfunktioner i RCS. Du kan bruge momsfunktioner til at vedligeholde momssatser og regler for momspligtighed.
+3. Når opsætningen af momsfunktionen er fuldført, kan du udgive momskonfigurationerne og momsfunktionerne fra RCS til det globale lager.
+4. I Finance skal du vælge, hvilken version af momsfunktionens opsætning der skal bruges til en bestemt juridisk enhed.
+5. I Finance og Supply Chain Management fungerer transaktioner som sædvanligt. Når Momsberegning er påkrævet, indsamler klienten oplysninger fra transaktionen, f.eks. salgsordren eller indkøbsordren, og pakker oplysningerne som nyttedata. Der sendes derefter en anmodning om beregning af momsen.
+6. Momsberegningsanmodningen modtages fra klienten, og beregningen fuldføres. Momsresultatet returneres derefter til klienten.
+7. Dynamics 365-klienten modtager momsresultatet og viser resultatet af momsberegningen på en momsside.
 
 ## <a name="supported-transactions"></a>Understøttede transaktioner
 
-Momsberegning kan aktiveres via juridisk enhed og transaktion. Følgende transaktioner understøttes:
+Momsberegning kan aktiveres via transaktioner. 
 
-- Salgsproces
+Følgende transaktioner understøttes i version 10.0.21: 
+
+- Sales
 
     - Salgstilbud
     - Salgsordre
@@ -83,7 +98,7 @@ Momsberegning kan aktiveres via juridisk enhed og transaktion. Følgende transak
     - Overskrift til diverse gebyrer
     - Linje til diverse gebyrer
 
-- Indkøbsproces
+- Indkøb
 
     - Indkøbsordre
     - Bekræftelse
@@ -100,10 +115,36 @@ Momsberegning kan aktiveres via juridisk enhed og transaktion. Følgende transak
     - Diverse gebyrer i overskrift til tilbudsanmodning
     - Diverse gebyrer i linje til tilbudsanmodning
 
-- Lagerproces
+- Lagerbeholdning
 
     - Flytteordre – send
     - Flytteordre – modtag
+
+## <a name="supported-countriesregions"></a>Understøttede lande/områder
+
+Momsberegning kan aktiveres efter juridisk enhed. 
+
+Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.21:
+
+- Østrig
+- Belgien
+- Danmark
+- Estland
+- Finland
+- Frankrig
+- Tyskland
+- Ungarn
+- Island
+- Italien
+- Letland
+- Litauen
+- Nederlandene
+- Norge
+- Polen
+- Sverige
+- Schweiz
+- Storbritannien
+- United States
 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 

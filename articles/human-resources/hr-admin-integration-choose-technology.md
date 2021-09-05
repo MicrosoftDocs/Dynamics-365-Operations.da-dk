@@ -1,8 +1,8 @@
 ---
 title: Vælg en dataintegrationsteknologi
-description: Denne artikel indeholder oplysninger om integration med data, der administreres Human Resources. Den beskriver forskellige integrationsteknologier, der kan hjælpe dig med at afgøre, hvilke teknologier der bedst opfylder dine behov.
-author: andreabichsel
-ms.date: 02/28/2020
+description: Dette emne indeholder oplysninger om integration med data, der administreres af Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720462"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414708"
 ---
 # <a name="choose-a-data-integration-technology"></a>Vælg en dataintegrationsteknologi
 
@@ -28,14 +28,13 @@ ms.locfileid: "6720462"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Denne artikel indeholder oplysninger om integration med data, der administreres af Dynamics 365 Human Resources. Den beskriver forskellige integrationsteknologier, der kan hjælpe dig med at afgøre, hvilke teknologier der bedst opfylder dine behov.
+Dette emne indeholder oplysninger om integration med data, der administreres af Dynamics 365 Human Resources. Den beskriver forskellige integrationsteknologier, der kan hjælpe dig med at afgøre, hvilke teknologier der bedst opfylder dine behov.
 
 ## <a name="data-integration-background"></a>Baggrund for dataintegration
 
 Forretningsdata er et vigtigt aktiv, der gør dit firma unikt. Din virksomhedens data er yderst værdifulde. Du kan bruge relationerne mellem data, der indsamles i hele virksomheden, for at forbedre forretningsprocesser og Business Intelligence i hele organisationen. Vi bestræber os på at give dig nem, sikker og stabil adgang til dine forretningsdata, uanset hvilket system de kommer fra.
 
-Historisk set har integration af data mellem flere systemer altid været vanskelig.
-Microsoft er i færd med at gøre dataintegration nemmere og et stort skridt i forhold til dette mål realiseres via [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
+Historisk set har integration af data mellem flere systemer altid været vanskelig. Microsoft er i færd med at gøre dataintegration nemmere og et stort skridt i forhold til dette mål realiseres via [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
 
 Human Resources gør Dataverse til den foretrukne offentlige brugergrænseflade for Human Resources-data. Med tiden forventer vi, at alle de vigtigste data, der administreres af Human Resources, vil blive vist i Dataverse. Vi anbefaler at vælge Dataverse som teknologi til de fleste former for integrering af programmer.
 
@@ -47,7 +46,7 @@ I følgende afsnit beskrives de forskellige teknologier til dataintegration, der
 
 ### <a name="dataverse-tables"></a>Dataverse-tabeller
 
-Dataverse er den foretrukne offentlige datagrænseflade til Human Resources. Det skyldes Dynamics 365 XRM-platformen, som bruges af [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps)-løsninger.
+Dataverse er den foretrukne offentlige datagrænseflade til Human Resources. Den er en videreudvikling af Dynamics 365 XRM-platformen, som bruges af [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps)-løsninger.
 
 Dataverse leverer en platform og en API til datatabeller. Når du implementerer Human Resources, opretter programmet forbindelse til en Dataverse-forekomst. Enhederne for Human Resources-data implementeres i den pågældende Dataverse-forekomst. Tabellerne og deres data er tilgængelige for alle applikationer, der kan oprette forbindelse til Dataverse-forekomsten. Human Resources synkroniserer data til og fra Dataverse-tabellerne.
 

@@ -2,7 +2,7 @@
 title: Lagersøgningshandling i POS
 description: Dette emne beskriver, hvordan du kan bruge lagersøgningshandlingen i Dynamics 365 Commerce POS til at få vist den disponible lagerbeholdning af produkter på tværs af butikker og lagersteder.
 author: boycezhu
-ms.date: 05/11/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: b697583f2ebf9950ad805d4f415dafb2c891de8052d4a47563b048059475030f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745326"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343830"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lagersøgningshandling i POS
 
@@ -38,7 +38,7 @@ Når lagersøgningshandlingen startes fra POS-programmet, bruger POS-kassereren 
 
 For enkeltprodukter giver lagersøgningshandlingen en lagersøgningslistevisning, der viser følgende produktoplysninger for en liste over lokationer:
 
-- **Lager** – Refererer til det "fysiske disponible" antal af et produkt.
+- **Lager** – Refererer til det "fysisk disponible" antal af et produkt.
 - **Reserveret** – Refererer til det "fysisk reserverede" antal, der hentes fra hovedkontoret.
 - **Bestilt** – Refererer til det antal, der er "bestilt i alt" fra hovedkontoret.
 - **Enhed** – Refererer til den lagermåleenhed, der er konfigureret i hovedkontoret.
@@ -52,25 +52,26 @@ Listevisningen over lokationer omfatter alle butikker og lagersteder, der er kon
 
 De følgende handlinger er tilgængelige på POS-applinjen:
 
-- **Sortér** – Denne handling giver kassebrugeren mulighed for at sortere dataene i listevisningen ud fra forskellige kriterier. Lokationsbaseret sortering er standardindstillingen for sortering. 
-  - **Geografisk placering** (fra den nærmeste lokalitet til den lokalitet, der ligger længst væk fra den aktuelle butik)
-  - **Navn** (i stigende eller faldende rækkefølge)
-  - **Butiksnummer** (i stigende eller faldende rækkefølge)
-  - **Lager** (i faldende rækkefølge)
-  - **Reserveret** (i faldende rækkefølge)
-  - **Bestilt** (i faldende rækkefølge)
-- **Filter** – Denne handling giver kassebrugeren mulighed for at få vist filtrerede data for en bestemt lokation.
-- **Vis butikkens tilgængelighed** – Denne handling giver kassebrugeren mulighed for at se DTT-antal (disponibel til tilsagn) for et produkt i den valgte butik.
+- **Sortér** – Denne handling giver POS-brugeren mulighed for at sortere dataene i listevisningen ud fra forskellige kriterier. Lokationsbaseret sortering er standardindstillingen for sortering.
+
+    - **Geografisk placering** (fra den nærmeste placering til den placering, der ligger længst væk baseret på afstanden til den aktuelle butik)
+    - **Navn** (i stigende eller faldende rækkefølge)
+    - **Butiksnummer** (i stigende eller faldende rækkefølge)
+    - **Lager** (i faldende rækkefølge)
+    - **Reserveret** (i faldende rækkefølge)
+    - **Bestilt** (i faldende rækkefølge)
+
+- **Filter** – Denne handling giver POS-brugeren mulighed for at få vist filtrerede data for en bestemt placering.
+- **Vis butikkens tilgængelighed** – Denne handling giver POS-brugeren mulighed for at se DTT-antallet (disponibel for tilsagn) for et produkt i den valgte butik.
 - **Vis butiksplacering** – Denne handling åbner en separat side med kortvisning, adresse og butikstimer for den valgte butik.
-- **Afhent i butik** – Denne handling opretter en debitorordre for det produkt, som vil blive plukket fra den valgte butik, og omdiriger brugeren til skærmbilledet for transaktionen.
-- **Afsend produkt** – Denne handling opretter en debitorordre for det produkt, som vil blive afsendt fra den valgte butik, og omdiriger brugeren til skærmbilledet for transaktionen.
+- **Afhent i butik** – Denne handling opretter en debitorordre for det produkt, som vil blive plukket fra den valgte butik, og omdiriger brugeren til transaktionsskærmen.
+- **Afsend produkt** – Denne handling opretter en debitorordre for det produkt, som vil blive afsendt fra den valgte butik, og omdiriger brugeren til transaktionskærmen.
 - **Vis alle varianter** – For et produkt med varianter skifter denne handling fra en listevisning til en matrixvisning, der viser lageroplysninger for alle varianter af produktet.
-- **Føj til transaktion** – Denne handling føjer produktet til indkøbsvognen og omdirigerer brugeren til transaktionsskærmbilledet.
+- **Føj til transaktion** – Denne handling føjer produktet til indkøbsvognen og omdirigerer brugeren til transaktionsskærmen.
 
 > [!NOTE]
-> Ved lokationsbaseret sortering bestemmes afstanden mellem en lokation og den aktuelle butik på grundlag af de koordinater (breddegrad og længdegrad), der er defineret i Commerce Headquarters. For en butik defineres lokalitetsoplysningerne i den primære adresse for den driftsenhed, der er tilknyttet butikken. Hvis det drejer sig om et ikke-butikslagersted, defineres lokalitetsoplysningerne i lagerstedsadressen. Hvis den aktuelle butik ikke har definerede koordinater, viser den lokationsbaserede sorteringsindstilling den aktuelle butik øverst på listen, og derefter sorteres andre lokationer efter navn.
-
-> [!NOTE]
+> Den placeringsbaserede sortering, der blev introduceret i Commerce version 10.0.17, viser den aktuelle butik øverst. Ved andre placeringer bestemmes afstanden mellem placeringen og den aktuelle butik ud fra de koordinater (breddegrad og længdegrad), der er defineret i Commerce Headquarters. For en butik defineres placeringsoplysningerne i den primære adresse for den driftsenhed, der er knyttet til butikken. Hvis det drejer sig om et ikke-butikslagersted, defineres lokalitetsoplysningerne i lagerstedsadressen. Før version 10.0.17 viser listevisningen altid den aktuelle butik øverst og sorterer andre placeringer alfabetisk.
+>
 > Handlingerne **Vis butikkens tilgængelighed**, **Vis butiksplacering**, **Afhent i butik** og **Afsend produkt** er ikke tilgængelige for lokationer, som ikke er butiksplaceringer.
 
 ## <a name="inventory-lookup-matrix-view-for-variants"></a>Lagersøgningsmatrixvisning for varianter
@@ -93,11 +94,11 @@ Visningsrækkefølgen for dimensionsværdierne i matrixvisningen er baseret på 
 
 Følgende handlinger er tilgængelige i matrixvisningscellen:
 
-- **Sælg nu** – Denne handling føjer den valgte variant til indkøbsvognen og omdirigerer brugeren til transaktionsskærmbilledet.
-- **Afhent i butik** – Denne handling opretter en debitorordre for den valgte variant, som vil blive plukket fra den valgte butik, og omdiriger brugeren til skærmbilledet for transaktionen.
-- **Afsend produkt** – Denne handling opretter en debitorordre for den valgte variant, som vil blive afsendt fra den valgte butik, og omdiriger brugeren til skærmbilledet for transaktionen.
-- **Tilgængelighed** – Denne handling fører brugeren til en separat side, der viser DTT-antal for den valgte variant i den valgte butik.
-- **Vis alle lokationer** – Denne handling skifter til listevisningen af standardlagertilgængeligheden, der viser lageroplysningerne for den valgte variant.
+- **Sælg nu** – Denne handling føjer den valgte variant til indkøbsvognen og omdirigerer brugeren til transaktionsskærmen.
+- **Afhent i butik** – Denne handling opretter en debitorordre for den valgte variant, som vil blive plukket fra den valgte butik, og omdiriger brugeren til transaktionsskærmen.
+- **Afsend produkt** – Denne handling opretter en debitorordre for den valgte variant, som vil blive afsendt fra den valgte butik, og omdiriger brugeren til transaktionsskærmen.
+- **Tilgængelighed** – Denne handling fører brugeren til en separat side, der viser DTT-antallet for den valgte variant i den valgte butik.
+- **Vis alle placeringer** – Denne handling skifter til listevisningen af standardlagerets tilgængelighed med lageroplysninger for den valgte variant.
 - **Få vist produktoplysninger** – Denne handling omdirigerer brugeren til siden med produktdetaljer (PDP) for den valgte variant.
 
 ## <a name="access-inventory-lookup-from-other-pages-in-pos"></a>Adgang til lageropslag fra andre sider i POS
@@ -124,7 +125,5 @@ I Commerce version 10.0.9 og tidligere versioner hentes den **fysisk tilgængeli
 [Visuelle konfigurationer af POS-brugergrænseflade](pos-screen-layouts.md)
 
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

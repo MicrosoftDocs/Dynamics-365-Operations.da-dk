@@ -10,15 +10,15 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5aed9b07d852918967cbf80034a538445f4a38b24b1fabfb95f9d468279b66b2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713154"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403942"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Momsopgørelse for Egypten (EG-00002)
 
@@ -203,7 +203,7 @@ Følgende tabeller repræsenterer et eksempel på en foreslået konfiguration ti
 Hvis du vil generere momsindberetningsformularrapporten i Microsoft Excel-format, skal du definere et ER-format på siden **Økonomiparametre**.
 
 1. Gå til **Moms** > **Opsætning** > **Finansparametre**.
-2. På fanen **Salgsmoms** i sektionen **Momsindstillinger** i feltet **Tilknytningsformat for momsindberetning** skal du vælge **VAT Declaration Excel (EG)**. Hvis du lader feltet stå tomt, genereres standardrapporten for moms i SSRS-format.
+2. På fanen **Moms** i sektionen **Momsindstillinger** i feltet **Tilknytningsformat for momsindberetning** skal du vælge **VAT Declaration Excel (EG)**. Hvis du lader feltet stå tomt, genereres standardrapporten for moms i SSRS-format.
 3. Vælg **Kategorihierarki**. Denne kategori gør det muligt for varekoden i posteringer under fanen Udenrigshandel at give brugerne mulighed for at vælge og klassificere varer og tjenester. Denne klassifikation beskrives i salgs- og indkøbsposteringsrapporter. Denne konfiguration er valgfri.
 
 ![Rapport formular.](media/egypt-vat-declaration-setup2.png)
@@ -221,7 +221,7 @@ Fuldfør følgende trin, hvis du vil generere den elektroniske momsopgørelse:
 6. Angiv kreditbeløbet fra den forrige periode, hvis det er relevant, eller lad beløbet være nul.
 7. Vælg én af følgende tilgængelige indstillinger i feltet **Rapportdetaljer**. 
    - **Momsbog for indkøb** Opret rapporten med oplysninger om købsmomsposteringer.
-   - **Momsbog for salg**: Opret rapporten med oplysninger om salgsmomsposteringer.
+   - **Salgsmomsbog**: Opret rapporten med oplysninger om momsposteringer.
    - **Momsopgørelse**: Generer kun formularen til momsopgørelse.
 8. Angiv navnet på den person, der er registreret til tildeling af formularen.
 9. Vælg sprog. Alle rapporter oversættes i **en-us** og **ar-eg**.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: cfe473f39ee729957924fd7c161aed01138cd507eea56766af35177891676f65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fde81efed6b8a72e2149056f0196e4f9d60e59f2
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778887"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345513"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Beregne kildeskat for fakturaer ved hjælp af kladder
 
@@ -65,6 +65,6 @@ Begynd med at åbne siden **Finanskladder** (**Finans > Kladdeposter > Finanskla
 
 8. Angiv de øvrige krævede oplysninger. Valider og bogfør kladden. Det skattebeløb, der er beregnet for indkøbsfakturaer, bogføres på kreditorkontoen. Det skattebeløb, der er beregnet for salgsfakturaer, bogføres på den debitorkonto, der er defineret for hver kildeskattekode i kildeskattegruppen. Kreditorkonti eller debitorkonti for kildeskattekoder er defineret på siden **Koder for A-skat**.
 
-9. Vælg **Bogført A-skat** for at åbne siden **Midlertidige** **transaktioner for** **A-skat**. I feltet **Værdi** vises den samlede procentdel, der anvendes til at beregne kildeskat for transaktionen.
+9. Vælg **Bogført A-skat** for at åbne siden **Midlertidige transaktioner for A-skat**. I feltet **Værdi** vises den samlede procentdel, der anvendes til at beregne kildeskat for transaktionen.
 
    Felterne under fanen **Oversigt**, **Generelt** og **Beløb** på siden Midlertidige transaktioner for A-skat viser det beregnede skattebeløb og oplysninger om det regulerede skattebeløb for hver kildeskattekode, der er tilknyttet kildeskattegruppen.

@@ -1,8 +1,8 @@
 ---
 title: Ofte stillede spørgsmål til integration with Finance
-description: I denne artikel beskrives et, hvilke data der synkroniseres i en integration af Human Resources og Finance.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dette emne beskriver, hvilke data der synkroniseres i en integration af Human Resources og Finance.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f6a3141f1c7f4e488af0318569118be10da106a035f29e1752f0a0da5a1637f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782138"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413362"
 ---
 # <a name="integration-with-finance-faq"></a>Ofte stillede spørgsmål til integration with Finance
 
@@ -158,8 +158,7 @@ Sørg for, når du opretter forbindelser, at vælge Dynamics 365 Finance og Data
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Når jeg synkroniserer ansættelser, vises fejlmeddelelserne "CompanyInfo_FK findes ikke", eller "Værdien '31/12/2154 23:59:59' i feltet 'Slutdato for ansættelse' bliver ikke fundet i den relaterede tabel 'Ansættelse'". Hvad skal jeg gøre?
 
-Kontroller, at det er de korrekte juridiske enheder, du opretter tilknytning til. Synkroniseringen af en juridisk enhed er ikke en del af standardskabelonen, så det forventes, at de enkelte juridiske enheder, der findes i Human Resources og Dataverse, også findes i Finance.
-Kontroller også, at det er de korrekte juridiske enheder for det tilknyttede forbindelsessæt, du vælger.
+Kontroller, at det er de korrekte juridiske enheder, du opretter tilknytning til. Synkroniseringen af en juridisk enhed er ikke en del af standardskabelonen, så det forventes, at de enkelte juridiske enheder, der findes i Human Resources og Dataverse, også findes i Finance. Kontroller også, at det er de korrekte juridiske enheder for det tilknyttede forbindelsessæt, du vælger.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Når jeg har oprettet projektet, ser felttilknytningen for Finance ud til at være tom. Hvad skal jeg gøre?
 

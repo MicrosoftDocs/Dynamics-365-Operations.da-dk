@@ -2,7 +2,7 @@
 title: Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 description: I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87933c57ee5f626b224b1edc92da13906e3edc2613f61c5b4a917d8cc5d1dcd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742434"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416473"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 
@@ -52,7 +52,7 @@ Hvis du vil knytte en arbejder til din identitet, skal du følge disse trin i Co
 1. Find og vælg følgende post i listen: **000713 - Andrew Collette**.
 1. Klik på **Commerce** i handlingsruden.
 1. Vælg **Tilknyt eksisterende identitet**.
-1. Skriv din mailadresse i feltet **E-mail** til højre for **Søg ved hjælp af e-mail**.
+1. Skriv din emailadresse i feltet **Email** til højre for **Søg ved hjælp af email**.
 1. Vælg **Søg**.
 1. Vælg posten med dit navn.
 1. Vælg **OK**.
@@ -94,7 +94,7 @@ Følg disse trin for at aktivere job i Commerce.
 
     De resterende trin i denne procedure skal fuldføres for hvert af følgende job:
 
-    * Behandling af e-mail-besked om detailordre
+    * Behandling af email-besked om detailordre
     * Produkttilgængelighed
     * P-0001
     * Synkroniser ordrejob
@@ -108,7 +108,7 @@ Følg disse trin for at aktivere job i Commerce.
 
 Du kan også vælge at angive gentagelsesintervallet til et (1) minut for følgende job:
 
-* Behandling af job med e-mailbesked om detailordre
+* Behandling af job med emailbesked om detailordre
 * P-0001-job
 * Synkroniser ordrejob
 
@@ -128,7 +128,7 @@ Følg disse trin for at køre fuld datasynkronisering i Commerce-hovedkontor.
 Du kan bruge følgende disse testkreditkortoplysninger til at udføre testtransaktioner på webstedet:
 
 - **Kortnummer:** 4111-1111-1111-1111
-- **Udløbsdato** 10/20
+- **Udløbsdato** 10/30
 - **Kontrolcifrene på kreditkortet (CVV):** 737
 
 > [!IMPORTANT]
@@ -139,6 +139,9 @@ Du kan bruge følgende disse testkreditkortoplysninger til at udføre testtransa
 Når klargørings- og konfigurationstrinnene er fuldførte, kan du begynde at bruge dit evalueringsmiljø. Brug Site Builder-URL-adressen for Commerce-webstedet til at gå til oprettelsesoplevelsen. Brug URL-adressen for Commerce-webstedet for at gå til detailkundewebstedet.
 
 Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, se [Konfigurere valgfrie funktioner til et Commerce-evalueringsmiljø](cpe-optional-features.md).
+
+> [!NOTE]
+> Commerce-evalueringsmiljøer har en forudindlæst Azure Active Directory (Azure AD) business-to-consumer-lejer (B2C) til demonstrationsformål. Det er ikke nødvendigt at konfigurere din egen Azure AD B2C-lejer for evalueringsmiljøer. Hvis du konfigurere evalueringsmiljøet for at bruge din egen Azure AD B2C-lejer, skal du tilføje ``https://login.commerce.dynamics.com/_msdyn365/authresp`` som URL-svaradresse i Azure AD B2C-programmet via Azure Portal.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -159,6 +162,8 @@ Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Konfigurere en B2C-lejer i Commerce](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Konfigurer integration med Dayforce
-description: Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Konfigurere integration med Dayforce
+description: Dette emne beskriver de krævede konfigurationstrin for integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 961d3bd61e85549f4124391389682bb24aceae3e16e52dc8111a44c365a8c081
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782725"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414578"
 ---
-# <a name="configure-integration-with-dayforce"></a>Konfigurer integration med Dayforce
+# <a name="configure-integration-with-dayforce"></a>Konfigurere integration med Dayforce
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
+Integration mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
 
 Når du bruger en tjeneste, f.eks. Dayforce, til at fuldføre lønkørsler, skal du aktivere integrationen i Human Resources. Integrationen kræver bestemte data fra Human Resources. Du skal derfor kontrollere, at data, der er knyttet til Dayforce, er konfigureret i Human Resources på en måde, der understøtter integrationen. Integrationen bruger følgende brede kategorier af data.
 
@@ -35,7 +35,7 @@ Når du bruger en tjeneste, f.eks. Dayforce, til at fuldføre lønkørsler, skal
 - Lønoplysninger, f.eks. løncyklusser, betalingsperioder og lønkoder
 - Arbejderdata
 
-Denne artikel beskriver de trin, du skal udføre for at aktivere integrationen. Det forklarer også typerne af data og oplysninger om konfigurationen, der kræves til integrationen.
+Dette emne beskriver den fremgangsmåde, du skal følge for at aktivere integrationen, og hvilke datatyper og konfigurationsdetaljer der kræves til integrationen.
 
 ## <a name="enable-the-integration"></a>Aktivere integrationen.
 
@@ -50,7 +50,7 @@ Følg disse trin for at aktivere integrationen i Human Resources.
 
 Når integrationen er aktiveret, oprettes dataeksportpakken og -filerne, og hyppigheden angives. Du kan ændre denne frekvens efter behov.
 
-Yderligere oplysninger om Azure-lagerkonti og Azure-lagerforbindelsesstrenge finder du i følgende Azure-artikler:
+Yderligere oplysninger om Azure-lagerkonti og Azure-lagerforbindelsesstrenge finder du i følgende Azure-emner:
 
 - [Om Azure-lagerkonti](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Konfigurere forbindelsesstrenge for Azure-datalager](/azure/storage/common/storage-configure-connection-string)
@@ -122,10 +122,10 @@ Dayforce opretter følgende fradrag, der er baseret på den løneffekt, der er d
 | Kun bidrag          | Der oprettes et arbejdsgiverfradrag.             |
 | Fradrag og bidrag | Der oprettes medarbejder- og arbejdsgiverfradrag. |
 
-Du kan finde flere oplysninger om, hvordan du definerer og administrerer et frynsegodeprogram i følgende artikler:
+Du kan finde flere oplysninger om, hvordan du definerer og administrerer et frynsegodeprogram under følgende emner:
 
 - [Levere et frynsegodeprogram for medarbejdere](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Opret et nyt frynsegode](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Oprette et nyt frynsegode](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
 - [Definere regler og politikker for frynsegodeberettigelse](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
 - [Tilmelde og fjerne frynsegoder fra arbejdere](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
@@ -135,9 +135,9 @@ Kompensationsstyring bruges til at styre fordelingen af grundløn og bonusser. E
 
 Dayforce anvendes kompensationsoplysninger til at beregne en medarbejders timesats eller årlige sats. Konverteringer af planer for fast løn og lønsats er påkrævet. Medarbejderne skal være knyttet til en plan for fast løn.
 
-Du kan finde flere oplysninger om kompensationsplaner i følgende artikler:
+Du kan finde flere oplysninger om kompensationsplaner under følgende emner:
 
-- [Oprette planer for fast løn](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Oprette faste kompensationsordninger](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
 - [Oprette planer for variabel kompensation](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
 - [Udarbejde løn-/kompensationsstruktur og -planer](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
 - [Proceskompensation](/dynamics365/unified-operations/talent/process-compensation)
@@ -147,7 +147,7 @@ Du kan finde flere oplysninger om kompensationsplaner i følgende artikler:
 
 #### <a name="jobs"></a>Job 
 
-Et job er en samling af de opgaver og ansvarsområder, der kræves af en person, der udfører et job. Du kan finde flere oplysninger i følgende artikler:
+Et job er en samling af de opgaver og ansvarsområder, der kræves af en person, der udfører et job. Du kan finde flere oplysninger under følgende emner:
 
 - [Konfiguration af komponenter i et job](/dynamics365/unified-operations/talent/create-job)
 - [Definere nye job](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
@@ -172,7 +172,7 @@ Hav følgende data og konfiguration i tankerne, når du konfigurerer stillinger:
 
 Hvis flere stillinger i den samme afdeling er knyttet til samme job, konsolideres de til en enkelt stilling i Dayforce.
 
-Du kan finde flere oplysninger i følgende artikler:
+Du kan finde flere oplysninger under følgende emner:
 
 - [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
 - [Konfigurere stillinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
@@ -181,7 +181,7 @@ Du kan finde flere oplysninger i følgende artikler:
 
 En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation. En afdeling er ansvarlig for et bestemt område i organisationen, såsom salg, regnskab eller personale. Du kan bruge afdelinger til at rapportere om funktionsområder. Afdelinger kan have ansvar for driftsregnskabet.
 
-Du kan finde flere oplysninger i følgende artikler:
+Du kan finde flere oplysninger under følgende emner:
 
 - [Oprette en afdeling og knytte den til afdelingshierarkiet](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
 - [Definere nye afdelinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)

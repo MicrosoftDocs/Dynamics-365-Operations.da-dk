@@ -2,7 +2,7 @@
 title: Konfigurere hjælp-oplevelsen for Finance and Operations-apps
 description: Dette emne giver oplysninger om komponenterne i Hjælp-system til nogle Microsoft Dynamics 365-apps.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8481a2ba54b88f0911436f352b901cde55924e2ccc15a381b8742abe85d972
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714517"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343806"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjælp-oplevelsen for Finance and Operations-apps
 
@@ -54,7 +54,7 @@ Hvis du vil konfigurere opgaveguides til en løsning, skal du følge disse trin 
 > [!IMPORTANT]
 > Første gang du åbner fanen **Hjælp**, skal du oprette forbindelse til Lifecycle Services. Du skal vælge linket i midten af formularen, vente på forbindelsen, lukke dialogboksen og derefter vælge **OK** for at få adgang til siden **Systemparametre**.
 >
-> [![Oprette forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Oprette forbindelse til LCS."](./media/connect-to-lcs-crop.png)
+> [![Opret forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Opret forbindelse til LCS.")](./media/connect-to-lcs-crop.png)
 
 1. Vælg det Lifecycle Services-projekt, der skal oprettes forbindelse til.
 2. Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
@@ -86,7 +86,7 @@ Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og
 
 Finance and Operations-apps bruges sjældent i den form, de leveres i fra starten. Løsningen bliver i stedet tilpasset og udvidet, så den passer til organisationens behov. Du kan også tilpasse og udvide Hjælp-funktionerne. Du kan f.eks. føje brugerdefineret Hjælp til ruden **Hjælp** i produktet.
 
-Microsoft har stiller en værktøjskasse til rådighed, der hjælper dig med at implementere og forbinde brugerdefineret hjælp til ruden **Hjælp**. Få flere oplysninger om, hvordan du kan konfigurere en brugerdefineret Hjælp-løsning, der er forbundet til ruden **Hjælp**, i  [Oversigt over brugerdefineret hjælp](../../dev-itpro/help/custom-help-overview.md).
+Microsoft har stiller en værktøjskasse til rådighed, der hjælper dig med at implementere og forbinde brugerdefineret hjælp til ruden **Hjælp**. Få flere oplysninger om, hvordan du kan konfigurere en brugerdefineret Hjælp-løsning, der er forbundet til ruden **Hjælp**, i [Oversigt over brugerdefineret hjælp](../../dev-itpro/help/custom-help-overview.md).
 
 Hvis du vil samarbejde med Microsoft om værktøjer og processer til tilpasning af hjælp, skal du udfylde formularen på [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).
 

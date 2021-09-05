@@ -2,7 +2,7 @@
 title: Oprette visuelle profiler for POS
 description: Denne procedure gennemgår oprettelse af en ny visuel profil for POS.
 author: jashanno
-ms.date: 12/05/2015
+ms.date: 08/24/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09dd2b88c3c27f5908d98139ab07308268f93f6a5c9ac5fe658bb288d2b1822e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce4164c93bfaf68345e638ef598b87f3f236ef1
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716827"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416224"
 ---
 # <a name="create-point-of-sale-pos-visual-profiles"></a>Oprette visuelle profiler for POS
 
@@ -26,24 +26,24 @@ ms.locfileid: "6716827"
 
 Denne procedure gennemgår oprettelse af en ny visuel profil for POS. En visuel profil indeholder grundlæggende oplysninger, der bestemmer udseendet af POS-kasseapparater. Du kan oprette adskillige visuelle profiler og tildele bestemte profiler, der skal køre på bestemte kasseapparater. Proceduren bruger USRT-demodatafirmaet.
 
-1. Gå til Retail og Commerce > Konfiguration af kanal > POS-opsætning > POS-profiler > Visuelle profiler.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Profilnummer.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Klik på rullelisten i feltet Programtype for at åbne opslaget.
+1. Gå til **Retail og Commerce > Konfiguration af kanal > POS-opsætning > POS-profiler > Visuelle profiler**.
+2. Klik på **Ny**.
+3. Skriv en værdi i feltet **Profilnummer**.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Klik på rullelisten i feltet **Programtype** for at åbne opslaget.
 6. Klik op linket i den valgte række på listen.
-7. Klik på rullelisten i feltet Tema for at åbne opslaget.
+7. Klik på rullelisten i feltet **Tema** for at åbne opslaget.
 8. Klik op linket i den valgte række på listen.
-9. Klik på rullelisten i feltet Markeringsfarve for at åbne opslaget.
+9. Klik på rullelisten i feltet **Markeringsfarve** for at åbne opslaget.
 10. Find og vælg den ønskede post på listen.
 11. Klik op linket i den valgte række på listen.
-12. Slå udvidelse af sektionen Log ind i baggrunden til eller fra.
-13. Vælg eller angiv et billede-id i feltet Id for liggende billede.
-14. Vælg eller angiv et billede-id i feltet Stående billed-id.
-15. Slå udvidelsen af sektionen Baggrund til/fra.
+12. Slå udvidelsen til sektionen **Logonbaggrund** til eller fra.
+13. Vælg eller angiv et billede-id i feltet **Liggende billed-id**.
+14. Vælg eller angiv et billede-id i feltet **Stående billed-id**.
+15. Slå udvidelsen til sektionen **Baggrund** til/fra.
 16. RequestPopup-billed-id.
 17. Klik op linket i den valgte række på listen.
-18. Klik på Gem.
+18. Klik på **Gem**.
 
 
 

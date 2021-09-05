@@ -1,8 +1,8 @@
 ---
 title: Konfigurere medarbejderselvbetjening
 description: I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigation på øverste niveau i medarbejderselvbetjening.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cafd89d30ca3876953df099e2e7b7cc9c3e1fdc0f69bb039310434f8d770f6f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721577"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423298"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurere medarbejderselvbetjening
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigation på øverste niveau i medarbejderselvbetjening. Frynsegodeplansfelter sender brugere videre til frynsegodeplaner, som de er berettiget til.
+I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigation på øverste niveau i **Medarbejderselvbetjening**. Frynsegodeplansfelter sender brugere videre til frynsegodeplaner, som de er berettiget til.
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Konfigurere et felt til frynsegodeplaner
 
@@ -39,9 +39,9 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
    | Felt | Beskrivelse |
    | --- | --- |
    | **Felt-id** | Entydigt id for feltet. |
-   | **Feltlabeltekst** | Den tekst, der vises for feltet på selvbetjening. |
+   | **Feltlabeltekst** | Den tekst, der vises for feltet i **Medarbejderselvbetjening**. |
    | **Beskrivelse** | En beskrivelse af feltet. |
-   | **Internetadresse** | Angiv URL-adressen på siden med medarbejderselvbetjening. |
+   | **Internetadresse** | Angiv URL-adressen på siden **Medarbejderselvbetjening**. |
    | **Feltstørrelse** | Feltets størrelse: lille, mellem eller stor. |
    | **Destination** | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
    | **Feltbaggrundsbillede** | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |
@@ -61,9 +61,9 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
    | Felt | Beskrivelse |
    | --- | --- |
    | **Felt-id** | Entydigt id for feltet. |
-   | **Feltlabeltekst** | Den tekst, der vises for feltet Selvbetjening. |
+   | **Feltlabeltekst** | Den tekst, der vises for feltet i **Medarbejderselvbetjening**. |
    | **Beskrivelse** | En beskrivelse af feltet. |
-   | **Internetadresse** | Angiv URL-adressen på siden med medarbejderselvbetjening. |
+   | **Internetadresse** | Angiv URL-adressen på siden **Medarbejderselvbetjening**. |
    | **Feltstørrelse** | Feltets størrelse: lille, mellem eller stor. |
    | **Destination** | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
    | **Feltbaggrundsbillede** | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |

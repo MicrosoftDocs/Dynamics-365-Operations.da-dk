@@ -1,8 +1,8 @@
 ---
 title: Generere Affordable Care Act-rapporter i Frynsegodeadministration
-description: I dette emner beskrives, hvordan Frynsegodeadministration hjælper dig med at spore de oplysninger, der er rapporteret på blanket 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate.
-author: andreabichsel
-ms.date: 12/28/2020
+description: Dette emne beskriver, hvordan Frynsegodeadministration sporer de oplysninger, der er rapporteret på formular 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d681514f53dbaf4aafce33722d0c1837c3d270407c19d629c3383ff1a2472d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99ac67795cd3f587e54a84361dd4744b79b4dbbd
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727059"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416248"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generere ACA-rapporter i Frynsegodeadministration
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Frynsegodeadministration hjælper dig med at spore de oplysninger, der er rapporteret på blanket 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate. Ligesom ACA-rapporteringsfunktionen i det gamle arbejdsområde **Frynsegoder** gælder denne funktion kun for juridiske enheder i USA.
+Frynsegodeadministration sporer de oplysninger, der er rapporteret på formular 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate. Ligesom ACA-rapporteringsfunktionen i det gamle arbejdsområde **Frynsegoder** gælder denne funktion kun for juridiske enheder i USA.
 
 Hvis du vil bruge denne funktion, skal du først aktivere **avanceret administration af frynsegoder**. Yderligere oplysninger, herunder vigtige oplysninger om styring af goder, finder du i [Aktiver eller deaktiver administration af frynsegoder](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -145,7 +145,7 @@ Du kan også generere ACA 1095-B- og 1095-C-blanketter og derefter distribuere d
 2. Rediger parametrene efter behov, og vælg derefter **OK**.
 
     > [!NOTE]
-    > Hvis du udskriver 1095-C-blanketter for mere end 500 medarbejdere, modtager du mere end én PDF-fil. Det anbefales, at du øger værdien i feltet **Maksimal filstørrelse i megabyte** på siden **Dokumentadministrationsparametre** til **150**. (Hvis du hurtigt vil åbne siden, kan du bruge søgefeltet på navigationslinjen).
+    > Hvis du udskriver 1095-C-blanketter for mere end 500 medarbejdere, modtager du mere end én PDF-fil. Det anbefales, at du øger værdien i feltet **Maksimal filstørrelse i megabyte** på siden **Dokumentadministrationsparametre** til **150**. (Hvis du åbne siden hurtigt, skal du bruge søgefeltet på navigationslinjen).
     >
     > ![Ændre den maksimale filstørrelse.](./media/hr-benefits-management-aca-maximum-file-size.png)
 

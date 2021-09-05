@@ -2,7 +2,7 @@
 title: Konfigurere regnskabsintegration for Commerce-kanaler
 description: Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler.
 author: josaw
-ms.date: 02/01/2019
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,28 +14,26 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fb48eb93d8cf4f26174441de65c0b105c5e8774c2030e844ec7bd1352bff64b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38ad2cc3dc7e511ac6e2ac9484d10ebd2d1d425d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719890"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343307"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurere regnskabsintegration for Commerce-kanaler
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Introduktion
-
 Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler. Du kan finde flere oplysninger om regnskabsintegrationen i [Oversigt over regnskabsintegration for Commerce-kanaler](fiscal-integration-for-retail-channel.md).
 
 Regnskabsintegrationsprocessen består af følgende opgaver:
 
-1. Konfigurer regnskabsconnectorer, som repræsenterer regnskabsenheder eller -tjenester, der bruges til regnskabsmæssige registreringsformål, f.eks. bonprintere.
-2. Konfigurer udbydere af dokumenter, der opretter regnskabsdokumenter, som bliver registreret i regnskabsenheder eller -tjenester ved hjælp af regnskabsconnectorer.
-3. Konfigurer regnskabsregistreringsprocessen, der definerer en række trin i regnskabsregistreringen og regnskabsconnectorer og regnskabsdokumentudbydere, der bruges til hvert trin.
-4. Tildel regnskabsregistreringsprocesser til POS-funktionalitetsprofiler.
-5. Tildel tekniske connectorprofiler til hardwareprofiler.
+- Konfigurer regnskabsconnectorer, som repræsenterer regnskabsenheder eller -tjenester, der bruges til regnskabsmæssige registreringsformål, f.eks. bonprintere.
+- Konfigurer udbydere af dokumenter, der opretter regnskabsdokumenter, som bliver registreret i regnskabsenheder eller -tjenester ved hjælp af regnskabsconnectorer.
+- Konfigurer regnskabsregistreringsprocessen, der definerer en række trin i regnskabsregistreringen og regnskabsconnectorer og regnskabsdokumentudbydere, der bruges til hvert trin.
+- Tildel regnskabsregistreringsprocesser til POS-funktionalitetsprofiler.
+- Tildel tekniske connectorprofiler til hardwareprofiler.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Konfigurer en regnskabsregistreringsproces
 
@@ -49,12 +47,12 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
         - Regnskabsconnectorgruppenummer
         - Registreringsprocesnummer
 
-    2. Definer nummerserien for regnskabsfunktionens profilnummer på siden **Commerce-parametre**.
+    1. Definer nummerserien for regnskabsfunktionens profilnummer på siden **Commerce-parametre**.
 
     > [!NOTE]
     > Nummerserier er valgfrie. Der kan genereres numre til alle regnskabsintegrationsenheder fra nummerserier eller manuelt.
 
-2. Overfør konfigurationer for regnskabsforbindelser og regnskabsdokumentudbydere.
+1. Overfør konfigurationer for regnskabsforbindelser og regnskabsdokumentudbydere.
 
     En regnskabsdokumentudbyder er ansvarlig for at generere regnskabsdokumenter, der repræsenterer transaktioner og -hændelser, der er registreret på POS i et format, der også bruges til interaktion med en regnskabsenhed eller -tjeneste. F.eks. kan en udbyder af regnskabsdokumenter generere en repræsentation af en regnskabskvittering i et XML-format.
 
@@ -65,22 +63,22 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
         > [!TIP]
         > Vælg **Vis** for at få vist alle funktionelle og tekniske profiler, der er relateret til den aktuelle regnskabsconnector.
 
-    2. På siden **Udbydere af regnskabsdokumenter** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Udbydere af regnskabsdokumenter**) skal du overføre en XML-konfiguration for hver enhed eller tjeneste, du planlægger at bruge.
+    1. På siden **Udbydere af regnskabsdokumenter** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Udbydere af regnskabsdokumenter**) skal du overføre en XML-konfiguration for hver enhed eller tjeneste, du planlægger at bruge.
 
         > [!TIP]
         > Vælg **Vis** for at få vist alle funktionelle profiler, der er relateret til den aktuelle udbyder af regnskabsdokumenter.
 
-    Du kan finde eksempler på konfigurationer af regnskabsconnectorer og regnskabsdokumentudbydere i [Eksempler på regnskabsintegration i Retail SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).
+    Du kan finde eksempler på konfigurationer af regnskabsconnectorer og regnskabsdokumentudbydere i [Eksempler på regnskabsintegration i Commerce SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-commerce-sdk).
 
     > [!NOTE]
     > Datatilknytning betragtes som en del af en regnskabsdokumentudbyder. Hvis du vil oprette andre datatilknytninger for samme connector (som f.eks. specifik lovgivning), skal du oprette forskellige regnskabsdokumentudbydere.
 
-3. Opret funktionelle connectorprofiler og tekniske connectorprofiler.
+1. Opret funktionelle connectorprofiler og tekniske connectorprofiler.
 
     1. På siden **Funktionelle profiler for connector** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Funktionelle profiler for connector**) skal du oprette en funktionel connectorprofil for hver kombination af en regnskabsconnector og en regnskabsdokumentudbyder, der er relateret til denne regnskabsconnector.
 
         1. Vælg et connectornavn.
-        2. Vælg en dokumentudbyder.
+        1. Vælg en dokumentudbyder.
 
         Du kan ændre parametrene for datatilknytning i en funktionel connectorprofil. Hvis du vil gendanne de standardparametre, der er defineret i konfigurationen af regnskabsdokumentudbyderen, skal du vælge **Opdater**.
 
@@ -95,39 +93,39 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
         > [!NOTE]
         > Funktionelle connectorprofiler er firmaspecifikke. Hvis du planlægger at bruge den samme kombination af regnskabsconnector og regnskabsdokumentudbyder i forskellige firmaer, skal du oprette en funktionel connectorprofil for hvert firma.
 
-    2. På siden **Tekniske profiler for connector** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Tekniske profiler for connector**) skal du oprette en teknisk connectorprofil for hver regnskabsconnector.
+    1. På siden **Tekniske profiler for connector** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Tekniske profiler for connector**) skal du oprette en teknisk connectorprofil for hver regnskabsconnector.
 
         1. Vælg et connectornavn.
-        2. Vælg en connectortype. For enheder, der er forbundet med en hardwarestation, skal du vælge **Lokal**.
+        1. Vælg en connectortype. For enheder, der er forbundet med en hardwarestation, skal du vælge **Lokal**.
 
             > [!NOTE]
             > Kun lokale connectorer understøttes i øjeblikket.
 
         Parametrene under fanerne **Enhed** og **Indstillinger** i en teknisk connectorprofil kan ændres. Hvis du vil gendanne de standardparametre, der er defineret i konfigurationen af regnskabsconnectoren, skal du vælge **Opdater**. Mens der indlæses en ny version af en XML-konfigurationsfil, modtager du en meddelelse om, at den aktuelle regnskabsconnector eller regnskabsdokumentudbyder allerede bruges. Denne procedure tilsidesætter ikke manuelle ændringer, der tidligere er foretaget i funktionelle connectorprofiler og tekniske connectorprofiler. Hvis du vil anvende standardsættet af parametre fra en ny konfiguration, skal du vælge **Opdater** på siden **Funktionelle profiler for connector** eller siden **Tekniske profiler for connector**.
 
-4. Opret regnskabsconnectorgrupper.
+1. Opret regnskabsconnectorgrupper.
 
     En regnskabsconnectorgruppe kombinerer funktionelle profiler for regnskabsconncetorer, der udfører samme funktioner og bruges på samme trin i en regnskabsregistreringsproces. Hvis der eksempelvis kan bruges forskellige bonprintermodeller i en butik, kan regnskabsconnectorer for disse bonprintere kombineres i en regnskabsconnectorgruppe.
 
     1. På siden **Regnskabsconnectorgruppe** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsconnectorgrupper**) skal du oprette en ny regnskabsconnectorgruppe.
-    2. Tilføj funktionelle profiler til connectorgruppen. Vælg **Tilføj** under fanen **Funktionsprofiler**, og vælg et profilnummer. I en connectorgruppe kan hver regnskabsconnector kun have én funktionel profil.
-    3. Hvis du vil afbryde brugen af den funktionelle profil, kan du indstille **Deaktiver** til **Ja**. Denne ændring påvirker kun den aktuelle connectorgruppe. Du kan fortsætte med at bruge den samme funktionelle profil i andre connectorgrupper.
+    1. Tilføj funktionelle profiler til connectorgruppen. Vælg **Tilføj** under fanen **Funktionsprofiler**, og vælg et profilnummer. I en connectorgruppe kan hver regnskabsconnector kun have én funktionel profil.
+    1. Hvis du vil afbryde brugen af den funktionelle profil, kan du indstille **Deaktiver** til **Ja**. Denne ændring påvirker kun den aktuelle connectorgruppe. Du kan fortsætte med at bruge den samme funktionelle profil i andre connectorgrupper.
 
-5. Opret en regnskabsregistreringsproces.
+1. Opret en regnskabsregistreringsproces.
 
     En regnskabsregistreringsproces defineres af rækkefølgen af trinnene i registreringen og den connectorgruppe, der bruges i hvert trin.
 
     1. På siden **Proces for regnskabsregistrering** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**) skal du oprette en ny post for hver entydige regnskabsregistreringsproces.
-    2. Føj registreringstrin til processen:
+    1. Føj registreringstrin til processen:
 
         1. Vælg **Tilføj**.
-        2. Vælg en regnskabsconnectortype.
-        3. I feltet **Gruppenummer** skal du vælge en passende regnskabsconnectorgruppe.
+        1. Vælg en regnskabsconnectortype.
+        1. I feltet **Gruppenummer** skal du vælge en passende regnskabsconnectorgruppe.
 
-6. Tildel enheder i regnskabsregistreringsprocessen til POS-profiler.
+1. Tildel enheder i regnskabsregistreringsprocessen til POS-profiler.
 
     1. På siden **POS-funktionalitetsprofiler** (**Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**) skal du tildele regnskabsregistreringsprocessen til en POS-funktionalitetsprofil. Vælg **Rediger**, og vælg en proces under fanen **Proces for regnskabsregistrering** i feltet **Procesnummer**.
-    2. På siden **POS-hardwareprofil** (**Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Hardwareprofiler**) skal du tildele tekniske connectorprofiler til en hardwareprofil. Vælg **Rediger**, tilføj en linje under fanen **Eksterne regnskabsenheder**, og vælg derefter i feltet **Profilnummer** en teknisk connectorprofil.
+    1. På siden **POS-hardwareprofil** (**Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Hardwareprofiler**) skal du tildele tekniske connectorprofiler til en hardwareprofil. Vælg **Rediger**, tilføj en linje under fanen **Eksterne regnskabsenheder**, og vælg derefter i feltet **Profilnummer** en teknisk connectorprofil.
 
     > [!NOTE]
     > Du kan føje flere tekniske profiler til en den samme hardwareprofil. Men en hardwareprofil eller POS-funktionalitetsprofil skal kun have ét skæringspunkt med en regnskabsconnectorgruppe.
@@ -139,7 +137,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
     - Udbyderen af regnskabsdokumenter bruger indstillingerne for datatilknytning fra konfigurationen af regnskabsdokumentudbyderen til at konvertere transaktions-/hændelsesdata som f.eks. moms og betalinger, mens der oprettes et regnskabsdokument.
     - Når regnskabsdokumentudbyderen genererer et regnskabsdokument, kan regnskabsconnectoren enten sende det til regnskabsenheden, som det er, eller opdele det og omdanne det til en sekvens af kommandoer for enhedens API (application programming interface), afhængigt af den kommunikation, der håndteres.
 
-7. På siden **Proces for regnskabsregistrering** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**) skal du vælge **Kontroller** for at validere regnskabsregistreringsprocessen.
+1. På siden **Proces for regnskabsregistrering** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**) skal du vælge **Kontroller** for at validere regnskabsregistreringsprocessen.
 
     Det anbefales, at du kører denne type validering i følgende tilfælde:
 
@@ -147,7 +145,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
     - Når du har ændret en regnskabsregistreringsproces, og ændringerne kan medføre, at en anden regnskabsconnector bliver valgt på kørselstidspunktet (f.eks. hvis du ændrer connectorgruppen for et trin i regnskabsregistreringsprocessen, aktiverer en funktionel connectorprofil i en connectorgruppe eller føjer en ny funktionel connectorprofil til en connectorgruppe).
     - Når du har foretaget ændringer i tildelingen af tekniske connectorprofiler til hardwareprofiler.
 
-8. På siden **Distributionstidsplan** skal du køre jobbene **1070** og **1090** for at overføre data til kanaldatabasen.
+1. På siden **Distributionstidsplan** skal du køre jobbene **1070** og **1090** for at overføre data til kanaldatabasen.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Oprette regnskabstekster for rabatter
 
@@ -156,11 +154,11 @@ Der skal i nogle tilfælde udskrives en særlig tekst på en regnskabskvittering
 - For manuelle rabatter, der anvendes på POS, kan du konfigurere en regnskabstekst for den årsagskode eller årsagskodegruppe, der er angivet som **Produktrabat**-årsagskoden i POS-funktionalitetsprofilen.
 
     1. På siden **Regnskabsconnectorgruppe** skal du vælge **Tekst til regnskabskvittering**.
-    2. Under fanen **Årsagskoder** skal du vælge **Tilføj** og vælg en årsagskode eller årsagskodegruppe.
-    3. I **Nummer på årsagskode** skal du vælge en værdi.
-    4. I feltet **Underkodenummer** skal du vælge en værdi, hvis der kræves en underkode for den valgte årsagskode.
-    5. I feltet **Tekst til regnskabskvittering** skal du angive en regnskabstekst, der skal udskrives på en regnskabskvittering.
-    6. Vælg **Ja** i **Udskriv brugerinput på regnskabskvitteringen** for at tilsidesætte teksten på en regnskabskvittering og erstatte den med oplysninger, som en bruger angiver manuelt ved POS. Denne indstilling gælder kun for årsagskoder med inputtypen **Tekst**.
+    1. Under fanen **Årsagskoder** skal du vælge **Tilføj** og vælg en årsagskode eller årsagskodegruppe.
+    1. I feltet **Nummer på årsagskode** skal du vælge en værdi.
+    1. I feltet **Underkodenummer** skal du vælge en værdi, hvis der kræves en underkode for den valgte årsagskode.
+    1. I feltet **Tekst til regnskabskvittering** skal du angive en regnskabstekst, der skal udskrives på en regnskabskvittering.
+    1. Vælg **Ja** i **Udskriv brugerinput på regnskabskvitteringen** for at tilsidesætte teksten på en regnskabskvittering og erstatte den med oplysninger, som en bruger angiver manuelt ved POS. Denne indstilling gælder kun for årsagskoder med inputtypen **Tekst**.
 
     > [!NOTE]
     > Du kan angive en regnskabstekst til flere årsagskoder for at understøtte scenarier, hvor årsagskodegrupper, tilknyttede årsagskoder og udløste årsagskoder bruges. I disse tilfælde indeholder regnskabskvitteringen regnskabstekster fra alle årsagskoder, der er knyttet til den posteringslinje, hvor rabatten blev anvendt.
@@ -168,8 +166,8 @@ Der skal i nogle tilfælde udskrives en særlig tekst på en regnskabskvittering
 - For kanalspecifikke rabatter skal du definere en regnskabstekst for rabat-id'et.
 
     1. På siden **Regnskabsconnectorgruppe** skal du vælge **Tekst til regnskabskvittering**.
-    2. Under fanen **Rabatter** skal du vælge **Tilføj** og vælg et rabat-id.
-    3. I feltet **Tekst til regnskabskvittering** skal du angive en regnskabstekst, der skal udskrives på en regnskabskvittering.
+    1. Under fanen **Rabatter** skal du vælge **Tilføj** og vælg et rabat-id.
+    1. I feltet **Tekst til regnskabskvittering** skal du angive en regnskabstekst, der skal udskrives på en regnskabskvittering.
 
     > [!NOTE]
     > Hvis du anvender flere rabatter på den samme posteringslinje, indeholder regnskabskvitteringen regnskabstekster fra alle rabatter, der er knyttet til denne posteringslinje.
@@ -187,8 +185,8 @@ De fejlhåndteringsindstillinger, der er tilgængelige i regnskabsintegrationen,
     > [!NOTE]
     > Såfremt parametret **Fortsæt ved fejl** er slået til, deaktiveres parametrene **Tillad overspring** og **Tillad at markere som registreret** automatisk.
 
-2. Indstillingerne **Spring over** og **Marker som registreret** i dialogboksen til fejlhåndtering kræver rettigheden **Tillad, at registrering springes over, eller marker som registreret**. Derfor skal du på siden **Rettighedsgrupper** (**Retail og Commerce \> Medarbejdere \> Rettighedsgrupper**) aktivere rettigheden **Tillad, at registrering springes over, eller marker som registreret**.
-3. Med indstillingerne **Spring over** og **Markér som registreret** kan operatører angive yderligere oplysninger, hvis regnskabsregistreringen mislykkes. For at gøre denne funktionalitet tilgængelig skal du angive årsagskoderne **Spring over** og **Markér som registreret** i en regnskabsconnectorgruppe. De oplysninger, som operatører angiver, gemmes derefter som en årsagskodetransaktion, der er knyttet til regnskabstransaktionen. Du kan finde flere oplysninger om årsagskoder i [Årsagskoder og årsagskodegrupper](../info-codes-retail.md).
+1. Indstillingerne **Spring over** og **Marker som registreret** i dialogboksen til fejlhåndtering kræver rettigheden **Tillad, at registrering springes over, eller marker som registreret**. Derfor skal du på siden **Rettighedsgrupper** (**Retail og Commerce \> Medarbejdere \> Rettighedsgrupper**) aktivere rettigheden **Tillad, at registrering springes over, eller marker som registreret**.
+1. Med indstillingerne **Spring over** og **Markér som registreret** kan operatører angive yderligere oplysninger, hvis regnskabsregistreringen mislykkes. For at gøre denne funktionalitet tilgængelig skal du angive årsagskoderne **Spring over** og **Markér som registreret** i en regnskabsconnectorgruppe. De oplysninger, som operatører angiver, gemmes derefter som en årsagskodetransaktion, der er knyttet til regnskabstransaktionen. Du kan finde flere oplysninger om årsagskoder i [Årsagskoder og årsagskodegrupper](../info-codes-retail.md).
 
     > [!NOTE]
     > **Produkt**-udløserfunktionen understøttes ikke for årsagskoder, der bruges til **Spring over** og **Markér som registreret** i regnskabsconnectorgrupper.
@@ -201,7 +199,7 @@ De fejlhåndteringsindstillinger, der er tilgængelige i regnskabsintegrationen,
     > - **Regnskabsdokument** – Et obligatorisk dokument, der skal registreres korrekt (f.eks. en regnskabskvittering).
     > - **Ikke-regnskabsdokument** – Et supplerende dokument for posteringen eller hændelsen (f.eks. et gavekort).
 
-4. Hvis operatøren skal kunne fortsætte med at behandle den aktuelle operation (f.eks. oprettelse elle afslutning af en transaktion) efter, at der er opstået en sundhedskontrolfejl, skal du aktivere rettigheden **Tillad, at sundhedskontrolfejl springes over** på siden for **Rettighedsgrupper** (**Retail og Commerce \> Medarbejdere \> Rettighedsgrupper**). Du kan finde flere oplysninger om proceduren for sundhedskontrol under [Sundhedskontrol af regnskabsregistreringen](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+1. Hvis operatøren skal kunne fortsætte med at behandle den aktuelle operation (f.eks. oprettelse elle afslutning af en transaktion) efter, at der er opstået en sundhedskontrolfejl, skal du aktivere rettigheden **Tillad, at sundhedskontrolfejl springes over** på siden for **Rettighedsgrupper** (**Retail og Commerce \> Medarbejdere \> Rettighedsgrupper**). Du kan finde flere oplysninger om proceduren for sundhedskontrol under [Sundhedskontrol af regnskabsregistreringen](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Oprette X/Z-regnskabsrapporter fra POS
 
@@ -210,9 +208,9 @@ Hvis du vil køre X/Z-regnskabsrapporter fra POS, skal du føje nye knapper til 
 - På siden **Knapmatricer** skal du følge vejledningen i [Tilføj POS-operationer til POS-layout ved at anvende Knapmatricedesigneren](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for at installere designeren og opdatere et POS-layout.
 
     1. Vælg det layout, der skal opdateres. 
-    2. Tilføj en ny knap, og indstil **Udskriv regnskab X**-knapegenskaben.
-    3. Tilføj en ny knap, og indstil **Udskriv regnskab Z**-knapegenskaben.
-    4. På siden **Distributionsplan** skal du køre jobbet **1090** for at overføre ændringer til kanaldatabasen.
+    1. Tilføj en ny knap, og indstil **Udskriv regnskab X**-knapegenskaben.
+    1. Tilføj en ny knap, og indstil **Udskriv regnskab Z**-knapegenskaben.
+    1. På siden **Distributionsplan** skal du køre jobbet **1090** for at overføre ændringer til kanaldatabasen.
 
 ## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktiver manuel udførelse af udsatte regnskabsregistreringer
 
@@ -221,8 +219,8 @@ For at aktivere manuel udførelse af en udsat regnskabsregistreringer skal du ti
 - På siden **Knapmatricer** skal du følge vejledningen i [Tilføj POS-operationer til POS-layout ved at anvende Knapmatricedesigneren](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for at installere designeren og opdatere et POS-layout.
 
     1. Vælg det layout, der skal opdateres.
-    2. Tilføj en ny knap, og indstil knappens egenskaber for **Fuldfør regnskabsregistreringsprocessen**.
-    3. På siden **Distributionstidsplan** skal du køre jobbet **1090** for at overføre dine ændringer til kanaldatabasen.
+    1. Tilføj en ny knap, og indstil knappens egenskaber for **Fuldfør regnskabsregistreringsprocessen**.
+    1. På siden **Distributionstidsplan** skal du køre jobbet **1090** for at overføre dine ændringer til kanaldatabasen.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

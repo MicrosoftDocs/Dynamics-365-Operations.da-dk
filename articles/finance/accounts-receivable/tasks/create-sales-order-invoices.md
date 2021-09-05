@@ -1,6 +1,6 @@
 ---
 title: Oprette salgsordrefakturaer
-description: Denne opgaveguide beskriver fakturering af en salgsordre, herunder fletning af fakturaer og batchbehandling.
+description: Dette emne beskriver, hvordan du kan fakturere en salgsordre, herunder fletning af fakturaer og batchbehandling.
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,29 +13,29 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a6556838a2843f961e1538947a6eda090b94894ed4df8476ea60abeda8056b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771818"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394604"
 ---
 # <a name="create-sales-order-invoices"></a>Oprette salgsordrefakturaer
 
 [!include [banner](../../includes/banner.md)]
 
-Denne opgaveguide beskriver fakturering af en salgsordre, herunder fletning af fakturaer og batchbehandling. Denne procedure bruger demofirmaet USMF.
+Dette emne beskriver, hvordan du kan fakturere en salgsordre, herunder fletning af fakturaer og batchbehandling. Denne procedure bruger demofirmaet USMF.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Opret en faktura fra en salgsordre.
 1. Gå til **Navigationsrude > Moduler > Debitor > Ordrer > Salgsordrer, der er afsendt men ikke faktureret**.
 2. Vælg en salgsordre på listen. 
-3. Klik på **Faktura > Generér > Faktura** i **handlingsruden**. Bemærk, at denne salgsordre har flere tilknyttede følgesedler. Den viser kun ordet <multiple> i stedet for nummeret på følgesedlen.  
+3. Klik på **Faktura > Generér > Faktura** i **handlingsruden**. Bemærk, at denne salgsordre har flere tilknyttede følgesedler. Den viser kun ordet *flere* i stedet for nummeret på følgesedlen.  
 4. Udvid sektionen **Parametre**.
     - Bogføring skal være angivet til Ja for at bogføre fakturaen. Du kan også deaktivere bogføring og bare udskrive fakturaen. Du kan dog opnå det samme resultat ved at oprette en proformafaktura i stedet for en faktura.  
     - Denne indstilling anvendes til batchjob. Forespørgslen køres, når batchjobbet køres.
 5. Vælg "Efter" i feltet **Udskriv**.
-6. Vælg **Ja** for **Udskriv faktura**. Udskriftsstyring kan udskrive flere kopier af fakturaen og også sende fakturaen via mail som en PDF-fil.  
+6. Vælg **Ja** for **Udskriv faktura**. Udskriftsstyring kan udskrive flere kopier af fakturaen og også sende fakturaen via email som en PDF-fil.  
 7. Vælg "Opsummer" i feltet **Udskriv gebyrer**.
 8. Vælg "Saldo" i feltet **Kontrollér kreditmaks**.
 9. Klik på **Annuller**.

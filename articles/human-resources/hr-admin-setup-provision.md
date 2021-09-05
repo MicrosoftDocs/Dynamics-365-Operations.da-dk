@@ -1,8 +1,8 @@
 ---
 title: Klargøring af Human Resources
-description: Dette emne fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/14/2021
+description: Dette emne forklarer processen for klargøring af et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58ffce072c8b73f4907b18c6c60b022f9a3b55f26cb785238367254021afdc28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756142"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393517"
 ---
 # <a name="provision-human-resources"></a>Klargøring af Human Resources
 
@@ -28,9 +28,15 @@ ms.locfileid: "6756142"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dette emne fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources. Det antages i emnet, at du har købt Human Resources via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Human Resources-serviceplanen, og du ikke kan udføre trinnene i denne artikel, kan du kontakte Support.
+Dette emne forklarer processen for klargøring af et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources. 
 
-For at komme i gang skal den globale administrator logge på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) og oprette et nyt Human Resources-projekt. Medmindre et problem med licensering forhindrer klargøring af Human Resources, skulle der ikke være brug for hjælp fra Support- eller DSE-medarbejdere (Dynamics Service Engineering).
+## <a name="prerequisites"></a>Forudsætninger
+
+Inden klargøringen af et nyt produktionsmiljø, skal følgende forudsætninger være opfyldt:
+
+- Du har købt Human Resources via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Human Resources-serviceplanen, og du ikke kan udføre trinnene i dette emne, kan du kontakte Support.
+
+- Den globale administrator er logget på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) og har oprettet et nyt Human Resources-projekt. 
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Klargøre et Human Resources-testmiljø
 
@@ -42,7 +48,7 @@ Testmiljøer er ikke beregnet til brug som produktionsmiljøer. De er begrænset
 
 Før du opretter dit første miljø med Human Resources, skal du planlægge miljøets behov nøje for dit projekt. Et basisabonnement på Human Resources omfatter to miljøer: et produktionsmiljø og et sandkassemiljø. Afhængigt af, hvor kompleks projektet er, kan det være nødvendigt at købe flere sandkassemiljøer for at understøtte projektaktiviteter. 
 
-Overvejelser i forbindelse med yderligere miljøer omfatter, men det er ikke begrænset til, følgende:
+Overvejelser i forbindelse med yderligere miljøer:
 
 - **Overflytning af data**: Du skal muligvis overveje et ekstra miljø, når der skal bruges dataoverførselsaktiviteter, så dit sandkassemiljø kan bruges til testformål i hele projektet. Et ekstra miljø gør det muligt at fortsætte dataoverflytningsaktiviteter, mens test- og konfigurationsaktiviteter finder sted samtidigt i et andet miljø.
 - **Integration**: Du skal muligvis overveje et yderligere miljø for at konfigurere og teste integration. Dette kan omfatte oprindelige integrationer, f.eks. Ceridian Dayforce LinkedIn Talent Hub-integrationer, eller brugerdefinerede integrationer, som f.eks. integration med løn, sporingssystemer for ansøgere eller benefit-systemer og -leverandører.
@@ -50,10 +56,11 @@ Overvejelser i forbindelse med yderligere miljøer omfatter, men det er ikke beg
 - **Projekt i flere faser**: Du kan have brug for et yderligere miljø for at understøtte konfiguration, overflytning af data, test eller andre aktiviteter i en projektfase, der er planlagt efter projektets første start.
 
  > [!IMPORTANT]
- > Det anbefales, at du bruger produktionsmiljøet i hele projektet som GOLD-konfigurationsmiljø. Det er vigtigt, fordi du ikke kan kopiere et sandkassemiljø til et produktionsmiljø. Når du går i gang, vil dit GOLD-miljø derfor være dit produktionsmiljø, og du vil udføre de komplette aktiviteter i dette miljø.</br></br>
- > Det anbefales, at du bruger din sandkasse eller et andet miljø til at udføre en overgang, før du går i gang. Det kan du gøre ved at opdatere produktionsmiljøet med din GOLD-konfiguration i dit sandkassemiljø.</br></br>
- > Det anbefales, at du opbevarer en detaljeret checkliste til overgang, som indeholder hver af de datapakker, der skal bruges til at overflytte de endelige data til produktionsmiljøet i forbindelse med den faktiske overgang.</br></br>
- > Det anbefales også, at du bruger sandkassemiljøet i hele projektet som TEST-miljø. Hvis du har brug for flere miljøer, kan organisationen købe dem for yderligere omkostninger.</br></br>
+ > Når du overvejer dit miljø, anbefales følgende:
+ > - Brug produktionsmiljøet gennem hele projektet som GOLD-konfigurationsmiljø. Det er vigtigt, fordi du ikke kan kopiere et sandkassemiljø til et produktionsmiljø. Når du går i gang, vil dit GOLD-miljø derfor være dit produktionsmiljø, og du vil udføre de komplette aktiviteter i dette miljø.</br></br>
+ > - Brug sandkassen eller et andet miljø til at køre en model af overgangen, før du udgiver. Det kan du gøre ved at opdatere produktionsmiljøet med din GOLD-konfiguration i dit sandkassemiljø.</br></br>
+ > - Opbevar en detaljeret tjeckliste for overgangen, som omfatter de enkelte datapakker, der skal bruges til at overflytte de endelige data til produktionsmiljøet i løbet af overgangen til udgivelsen.</br></br>
+ > - Brug sandkassemiljøet gennem hele projektet som TEST-miljø. Hvis du har brug for flere miljøer, kan organisationen købe dem for yderligere omkostninger.</br></br>
 
 ## <a name="create-an-lcs-project"></a>Oprette et LCS-projekt
 
@@ -86,7 +93,7 @@ Når du har oprettet et LCS-projekt, kan du klargøre Human Resources i et milj�
     > Human Resources-forekomsttypen kan ikke ændres, når den først er angivet. Kontrollér, at den korrekte forekomsttype er valgt, før du fortsætter.</br></br>
     > Human Resources-forekomsttypen er adskilt fra den forekomsttype for Microsoft Power Apps-miljøet, som du angiver i Power Apps Administration.
     
-3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af Testdrev til Human Resources-oplevelsen. Demodata er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer. Du skal vælge denne indstilling ved første installation. Du kan ikke opdatere en eksisterende installation senere.
+3. Vælg indstillingen **Inkluder demodata**, hvis du ønsker, at dit miljø skal medtage det demodatasæt, der bruges af prøvemiljøet for Human Resources. Demodata er en fordel for langsigtede demo- eller uddannelsesmiljøer og skal aldrig bruges til produktionsmiljøer. Du skal vælge denne indstilling ved første installation. Du kan ikke opdatere en eksisterende installation senere.
 
 4. Human Resources klargøres altid i et Microsoft Power Apps-miljø for at aktivere Power Apps-integration og -udvidelse. Læs afsnittet "Valg af et Power Apps-miljø" i denne artikel, før du fortsætter. Hvis du ikke allerede har et Power Apps-miljø, skal du vælge "Administrer miljøer i LCS" eller navigere til Power Apps Administration. Følg derefter trinnene for at [Oprette et Power Apps-miljø](/powerapps/administrator/create-environment).
 
@@ -115,7 +122,7 @@ Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø so
 
 4. Dataintegration og teststrategier, såsom Sandkasse, UAT eller Produktion, bør tages i betragtning. Overvej nøje de forskellige konsekvenser af din installation, da det ikke er let at ændre tilknytningen af Human Resources-miljøer til et Power Apps-miljø.
 
-5. Du kan ikke bruge følgende Power Apps-miljøer til Human Resources. De filtreres fra valglisten i LCS:
+5. Følgende Power Apps-miljøer kan ikke anvendes til Human Resources. De filtreres fra valglisten i LCS:
  
     - **Standardmiljøer i Power Apps** – Mens hver enkelt lejer automatisk er klargjort med et Power Apps-standardmiljø, anbefales det, at du ikke bruger dem sammen med Human Resources. Alle lejerbrugere kan få adgang til Power Apps-miljøet og utilsigtet beskadige produktionsdata, når de tester og udforsker dem med Power Apps- eller Power Automate-integrationer.
    
@@ -147,7 +154,7 @@ Dataene til Human Resources-miljøet vil altid være indeholdt i den Azure-geogr
 
 ## <a name="grant-access-to-the-environment"></a>Give adgang til miljøet
 
-Som standard har den globale administrator, der oprettede miljøet, adgang til det. Du skal eksplicit tildele andre programbrugere adgang. Du skal tilføje brugere og tildele dem de relevante roller i Human Resources-miljøet. Den globale administrator, der installerede Human Resources, skal også starte både Attract og Onboard for at fuldføre initialiseringen og aktivere adgang for andre lejerbrugere. Før dette er gjort, kan andre brugere ikke få adgang til Attract og Onboard, men får adgangsfejl. Du kan finde flere oplysninger under [Opret nye brugere](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tildel sikkerhedsroller til brugere](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Som standard har den globale administrator, der oprettede miljøet, adgang til det. Du skal eksplicit tildele andre programbrugere adgang. Du skal tilføje brugere og tildele dem de relevante roller i Human Resources-miljøet. Du kan finde flere oplysninger under [Opret nye brugere](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tildel sikkerhedsroller til brugere](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,20 +10,19 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 51f0ab8f76fe3bce91d6e4ed56bdfa8529c1aacbd326a8b4b3d80615f872f8c6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729545"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403885"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>A-skatopgørelse for Egypten (EG-00005)
 
 [!include[banner](../includes/banner.md)]
-
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Overblik
@@ -113,7 +112,7 @@ Fuldfør følgende trin, hvis du vil generere den elektroniske momsopgørelse:
 1. Gå til **Moms** > **Opgørelse** > **A-skat** > **Betaling af A-skat*.
 2. Vælg afregningsperioden, og vælg fra-datoen til rapporten. 
 3. Angiv transaktionsdatoen, og vælg derefter **OK**.
-4. I den dialogboks, der åbnes, skal du vælge en eller flere formtyper **Formularnr. 41**, **Formular nr. 11** eller **Ingen**. Hvis du vælger **Ingen**, genereres standardrapporten. 
+4. I den dialogboks, der åbnes, skal du vælge en eller flere formulartyper **Formularnr. 41**, **Formular nr. 11** eller **Ingen**. Hvis du vælger **Ingen**, genereres standardrapporten. 
 5. Vælg sprog. Alle rapporter oversættes i **en-us** og **ar-eg**.
 6. Angiv afdelingen og navnet på den bank, hvor skattebetalingen skal betales.
 7. Vælg forretningstype, og angiv derefter check- og dokumentnumrene. 

@@ -1,6 +1,6 @@
 ---
 title: Oversigt over kreditorbetalinger
-description: Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at oprette kreditorbetalinger, herunder hvordan du bruger et betalingsforslag eller manuelt angiver en engangsbetaling.
+description: Denne procedure gennemgår forskellige metoder, der bruges til at oprette kreditorbetalinger, herunder hvordan du bruger et betalingsforslag eller manuelt angiver en engangsbetaling.
 author: kweekley
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 997d505cc89eaa39b2bac273a5ae381c1c892a9537cbaa9b45156ecbb6fd237c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721821"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394432"
 ---
 # <a name="vendor-payment-overview"></a>Oversigt over kreditorbetalinger
 
 [!include [banner](../../includes/banner.md)]
 
-Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at oprette kreditorbetalinger, herunder hvordan du bruger et betalingsforslag eller manuelt angiver en engangsbetaling. Denne procedure bruger demofirmaet USMF.
+Denne procedure gennemgår forskellige metoder, der bruges til at oprette kreditorbetalinger, herunder hvordan du bruger et betalingsforslag eller manuelt angiver en engangsbetaling. Denne procedure bruger demofirmaet USMF.
 
 1. Gå til **Navigationsrude > Moduler > Kreditor > Betalinger > Betalingskladde**.
 2. Klik på **Ny**.

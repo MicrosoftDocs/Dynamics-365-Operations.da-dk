@@ -2,7 +2,7 @@
 title: Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 description: Dette emne indeholder oplysninger om frigivelsesprocessen og frigivelseshistorikken for Planlægningsoptimering.
 author: crytt
-ms.date: 7/28/2021
+ms.date: 8/17/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 64c8cd3ed6ff522a9ef90831ae502c5d50fbc05816aaa764d2a8e122934fc2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcd18341629afcf3092a457ae711e27b0bbfeb2a
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722385"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394408"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 
@@ -33,7 +33,8 @@ Da der ikke vises beskeder, når Planlægningsoptimering opdateres i dit miljø,
 
 | Ændringer | Detaljer om funktionsstyring | Udstedelsesdato |
 |---|---|---|
-| <p>Krav til ressourcetype for planlægning af uendelig kapacitet</p><p>Ressourceeffektivitet og kalendereffektivitet for planlægning af uendelig kapacitet</p><p>Yderligere oplysninger finder du under [Planlægning med ubegrænset kapacitet](infinite-capacity-planning.md). | <p>Tilgængelig i funktionsstyring fra og med version 10.0.20.</p><p>Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering*</p> | 6. juli 2021 |
-| Generelle forbedringer af kvalitet | Der kræves ingen funktionsstyring. | 6. juli 2021 |
+| <p>Har tilføjet feltet **Leveringstid** til ordreforslag.</p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet.</p> | Der kræves ingen funktionsstyring. | 16. august 2021 |
+| <p>Tilføjet ressourcetypekrav for planlægning med ubegrænset kapacitet.</p><p>Forbedret ressourceeffektivitet og kalendereffektivitet for planlægning med ubegrænset kapacitet.</p><p>Yderligere oplysninger finder du under [Planlægning med ubegrænset kapacitet](infinite-capacity-planning.md). | <p>Tilgængelig i funktionsstyring fra og med version 10.0.20.</p><p>Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering*</p> | 6. juli 2021 |
+| Generelle forbedringer af kvalitet. | Der kræves ingen funktionsstyring. | 6. juli 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

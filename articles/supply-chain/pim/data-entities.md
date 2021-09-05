@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2019-12-1
-ms.openlocfilehash: f40b4157520a399f1c2971a425e47b904b3b2f5eb30b87e54f8b810647bcdaeb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf23284729cd10569ceb320d5fd30f8429974c3d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344752"
 ---
 # <a name="product-data-entities"></a>Produktdataenheder
 
@@ -41,7 +41,7 @@ For at importere og eksportere produktdata skal du anvende dataenheder. Følgend
 | Salgbare frigivne produkter | `EcoResSellableReleasedProductEntity` | Denne enhed bruges kun til at eksportere salgbare produkter. Salgbare produkter er produkter med de oplysninger, der er påkrævet for at kunne bruges på en salgsordre. De samme regler gælder, når et produkt valideres ved brug af funktionen **Valider** på siden **Frigivet produkter**. |
 | Frigivne specifikke produkter V2 | `EcoResDistinctProductV2Entity` | Denne enhed bruges kun til at eksportere specifikke produkter. De pågældende specifikke produkter kan være produkter, undertypeprodukter og produktvarianter. |
 | Frigivne produktmastere V2 | `EcoResProductMasterV2Entity` | Denne enhed bruges til at importere og eksportere produktmastere. Den er ikke aktiveret til datastyring. |
-| Vare - stregkode | `EcoResProductBarcodeEntityV3` | Denne enhed bruges kun til at eksportere produkter og stregkoder. Denne enhed tillader ikke registrering af ændringer, opdateringer eller sletninger. Hvis du vil bruge registrering af ændringer, opdateringer eller sletninger på stregkoder, skal du bruge enheden **Vare - tilknytning af stregkode**. |
+| Vare - stregkode | `EcoResProductBarcodeEntityV3` | Denne enhed bruges kun til at eksportere produkter og stregkoder. Denne enhed tillader ikke registrering af ændringer, opdateringer eller sletninger. Hvis du vil bruge registrering af ændringer, opdateringer eller sletninger til stregkoder, skal du bruge enheden **Vare - tilknytning af stregkode**. |
 | Vare-stregkodetilknytning | `EcoResProductBarcodeAssociationEntity` | Denne enhed bruges kun til at eksportere produkter og stregkoder. Den tillader registrering af ændringer, opdateringer og sletninger. Hvis du vil bruge enheden, skal *Vare - forbedringer af stregkode* aktiveres i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Dens enhedsnøgle er `AssociationID`, hvilket opretter tilknytningen mellem stregkoden og produktet. Hvis du vil tilføje understøttelse af denne nøgle, udfyldes tabellen `InventitemBarcodeAssociation` med eksisterende stregkodedata, når du aktiverer funktionen. Tabellen udfyldes ved hjælp af et batchjob, og hvis stregkodetabellen har et stort antal poster, kan det tage længere tid at køre batchjobbet. Det anbefales derfor, at du planlægger at aktivere funktionen (og dermed køre batchjobbet) på et tidspunkt, der passer til din forretningsplan. |
 | Tilstande for produktlivscyklus | `EcoResProductLifecycleSateEntity` | Denne enhed bruges til at importere og eksportere de forskellige produktlivscyklustilstande, der kan tildeles et produkt. |
 

@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 5c32156aea5f43d41b51f34b45b5b6dfedb5cad0f948924ecea9b3d89e6bb402
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
+ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763686"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7388927"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Oprette og opdatere en politik for returneringer og refusion for en kanal
 
@@ -42,15 +42,6 @@ Hvis du vil aktivere funktionen for kanalreturneringspolitik i Commerce Headquar
 1. Søg efter funktionen **Aktivér kanalreturneringspolitikker** på listen over funktionsnavne.
 1. Vælg **Aktiver nu**.
 1. På siden **Distributionsplan** skal du køre jobbet **1110** (global konfiguration) for at distribuere funktionsændringen.
-
-## <a name="initialize-the-commerce-scheduler"></a>Initialisere Commerce-planlæggeren
-
-Når du har aktiveret funktionen **Aktivér politikker for kanalreturnering**, skal du initialisere Commerce planlæggeren for at sikre, at nye funktionsdatabaseændringer bliver tilføjet via Commerce Data Exchange (CDX)-synkronisering. 
-
-Følg disse trin for at initialisere Commerce-planlæggeren i Commerce Headquarters.
-
-- Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \> Initialiser Commerce-planlægger**. Du kan også søge efter "Initialiser Commerce-planlægger".
-- I dialogboksen **Initialiser Commerce-planlægger** skal du sikre, at indstillingen **Slet eksisterende konfiguration** er angivet til **Nej**, og derefter vælge **OK**.
 
 ## <a name="configure-return-policy"></a>Konfigurere returneringspolitik
 

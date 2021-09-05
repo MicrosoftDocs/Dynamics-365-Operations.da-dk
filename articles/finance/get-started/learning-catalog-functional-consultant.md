@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a0ea3efc08ac9305887727c57a3821c694d6b25d3355edb6a60a6348967842c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b2efa7021c302e771f36179be690fc1c8653a07
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763088"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402367"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-functional-consultants"></a>Undervisningskatalog til funktionelle konsulenter for Dynamics 365 Finance
 
@@ -34,13 +34,15 @@ I forbindelse med funktionelle konsulenter har vores analyse af arbejdsopgaver v
 | [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed. | Gratis onlinelæringssti i dit eget tempo | 7 timer |
 | [Grundlæggende funktioner i Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo | 5.5 timer |
 | [Kom i gang med Finance and Operations-apps](/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan Finance and Operations-apps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations-apps skal du være bekendt med deres funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
+| [Kom i gang med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunder administrere orkestrering af ordrer til opfyldelse. Disse egenskaber giver organisationer mulighed for at orkestrere ordreflow på tværs af forskellige platforme og apps. | Gratis onlinelæringsmodul i dit eget tempo | 30 minutter |
 | [Før du køber](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Se den trinvise vejledning, som du kan bruge, uanset om du stadig evaluerer Finance and Operations eller er klar til at købe. | Dokument | |
 | [Frigivelsesplan](/dynamics365/release-plans/) | Få mere at vide om de nyeste funktioner og forbedringer i Dynamics 365 | Dokument | |
 
 ## <a name="core-platform-knowledge"></a>Viden om kerneplatformen<a name="core-platform-knowledge"></a>
 
-| Indhold  | Beskrivende tekst | Formater  | Længde    |
+| Indhold  | Betegnelse | Formater  | Længde    |
 |----------|-------------|---------|-----------|
+| [Bruge Success by Design for Dynamics 365-løsninger](/learn/paths/use-success-design/) | FastTrack for Dynamics 365 er udviklet til at hjælpe kunder og partnere med at få en vellykket implementering af Dynamics 365-løsninger. For at kunne levere denne service skal løsningsarkitekterne bruge Success by Design. Dette læringsforløb beskriver Success by Design-begreber. | Gratis onlinelæringsmodul i dit eget tempo | 12 timer |
 | [Bruge Lifecycle Services (LCS) til at designe og planlægge implementering af Finance and Operations-apps](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) er et samarbejdsområde, som kunder og deres partnere bruger til at styre projekter i Finance and Operations-apps fra førsalg til implementeringsfasen og til sidst til produktionsmiljøet. Det indeholder kontrollister og værktøjer, der kan hjælpe dig med at administrere projektet, herunder forhåndsoprettede metoder, der hjælper med implementering og regelmæssigt opdaterede tjenester. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
 | [Konfigurere din organisation i Finance and Operations-apps](/learn/paths/configure-your-organization-finance-ops/) | Som en funktionel konsulent, der arbejder med Finance and Operations-apps, skal du vide, hvordan du opretter en organisation til kunden. Denne undervisningssti viser dig, blandt andre opgaver, hvordan du konfigurerer juridiske enheder, implementerer sikkerhedsindstillinger, tilpasser brugergrænsefladen efter brugere, designer og bygger mobilapps og implementerer fælles integrationer. | Gratis onlinelæringssti i dit eget tempo | 12 timer |
 | [Overføre data og skifte til live med Finance and Operations-apps](/learn/paths/migrate-data-go-live-finance-operations/) | Som funktionel konsulent skal du vide, hvordan du skal forberede kundens data til migrering, arbejde med datastyring og udføre test af brugeraccept for at gå online med Finance and Operations-apps. | Gratis onlinelæringssti i dit eget tempo | 4 timer |
@@ -102,6 +104,5 @@ I forbindelse med funktionelle konsulenter har vores analyse af arbejdsopgaver v
 | [Microsoft-certificeret: Dynamics 365 for Finance and Operations, tilknyttet funktionel økonomisk konsulent](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft-certificeret: Dynamics 365 for Finance and Operations, funktionelle økonomiske konsulenter samler globale regnskaber og operationer og automatiserer opgaver og arbejdsgange, strømliner af kundeordrer, salg, fakturering og rapportering. | Certificering, hvor omkostning varierer alt efter region |
 | [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: bruge almindelige funktioner og implementeringsværktøjer, konfigurere sikkerhed, processer og indstillinger, udføre dataoverførsel og validere og understøtte løsningen. | Eksamen, hvor omkostning varierer alt efter region |
 | [Eksamen MB-310: Microsoft Dynamics 365 for Finance and Operations, Finans](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: oprette og konfigurere økonomistyring, administrere og anvende almindelige processer, implementere og styre kreditor og debitor samt administrere budgettering og anlægsaktiver. | Eksamen, hvor omkostning varierer alt efter region |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

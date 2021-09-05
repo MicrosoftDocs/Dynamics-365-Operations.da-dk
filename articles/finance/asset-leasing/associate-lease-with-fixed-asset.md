@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4811c65a32e27668d1247086d962366eb8369d5e9fe28a105e1d6a020bca325d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd55d433b0961b8b210b9c28d7340ff880635a85
+ms.sourcegitcommit: 3af457fc216bd0020843291ca57fd379acb53c96
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737743"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7392468"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Tilknytte anlægsaktiv med en leasingaftale
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 I emnet forklares, hvordan et eksisterende anlægsaktiv knyttes til en ny leasingaftale. Når du knytter et anlægsaktiv til en rettighed, vil aktivets aktivværdi (ROU) ved første anerkendelse blive anskaffelsesomkostningen for anlægsaktivet.
 
@@ -49,8 +50,18 @@ Når du har bogført den første genkendelseskladdepost, vises transaktionen som
 
 Anlægsaktivet kan nu afskrives med standardafskrivningsfunktionen i anlægsaktiver. Du kan finde flere oplysninger om afskrivning under [Afskrivningsmetoder og -principper](../fixed-assets/depreciation-methods-conventions.md).
 
+Når en leasing er tilknyttet et anlægsaktiv, opdateres feltet **Levetid** i anlægskartoteket, så det tilpasses den mindste værdi ud fra følgende kriterier: 
+
+ - Aktivets brugstid
+ - Leasingperioden fra den tilknyttede leasingbog
+
+Hvis feltet **Overførsel af ejerskab** er angivet til **Ja** for leasingbogen, vil værdien i feltet **Levetid** altid være aktivets brugstid. 
+ 
+Levetiden opdateres, hver gang leasingaftalen justeres for at sikre, at brugsretaktivet afskrives i løbet af leasingperioden, som om det blev afskrevet som et leaset anlægsaktiv.
+
 > [!NOTE]
 > Hvis du knytter et anlægsaktiv til en leasingaftale, deaktiveres knapperne til **Afskrivning af aktiv** og **Værdiforringelse af leasingaftale**. Du kan se anlægsaktivafskrivninger og leasingaftalens værdiforringelsestransaktioner fra anlægsaktiver. Knappen **Aaktivtransaktioner**, der åbner en forespørgselsform, deaktiveres også. Du kan også åbne formularen **Aktivtransaktioner** i anlægsaktiver.  
 
+På siderne **Anlægsaktiver** og **Anlægskartoteket** vises det leasing-id, der er knyttet til et anlægsaktiv. Hvis et anlægsaktiv er tilknyttet en leasingaftale, vises leasing-id'et og beskrivelsen af leasingen i oversigtspanelet **Leasingoplysninger** på siden **Anlægsaktiver**. I forbindelse med anlægskartoteker, der er knyttet til leasingbøger, vil felterne **Leasing-id**, **Leasingbeskrivelse** og **Bogtype** vise oplysninger om den valgte anlægskartotek i oversigtspanelet **Leasingoplysninger** for at angive, at det er knyttet til en leasingbog.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

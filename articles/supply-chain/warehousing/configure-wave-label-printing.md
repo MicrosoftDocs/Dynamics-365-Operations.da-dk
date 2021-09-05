@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 3040406af731e2e35fff456804f893108e7eb896bfa0132082986c09ad128952
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777665"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344168"
 ---
 # <a name="wave-label-printing"></a>Bølgeetiketudskrivning
 
@@ -55,7 +55,7 @@ Disse forbedringer gør det mere effektivt at mærke kartoner før palletisering
 
 Før du kan bruge funktionen *Udskrivning af bølgeetiketter*, skal den være aktiveret i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
 
-- **Modul:** *Lokationsstyring*
+- **Modul:** *Warehouse Management*
 - **Funktionsnavn:** *Udskrivning af bølgeetiketter*
 
 ## <a name="scenario-1-wave-label-printing-where-a-single-wave-label-is-generated"></a>Scenarie 1: Udskrivning af bølgeetiketter, hvor der genereres en enkelt bølgeetiket
@@ -72,14 +72,14 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 
 Du skal muligvis oprette bølgeprocesmetoderne igen for at gøre metoden til bølgeetiketudskrivning tilgængelig.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
 1. Kontroller, at **bølgeEtiketUdskrivning** findes på listen. Hvis den ikke gør det, skal du vælge **Genopret metoder** i handlingsruden for at tilføje den.
 
 ### <a name="configure-a-wave-template"></a>Konfigurere en bølgeskabelon
 
 Med bølgeskabeloner kan du knytte bestemte forekomster af bølgemetoder til en tilsvarende bølgeetiketskabelon.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeskabeloner**.
 1. Vælg en skabelon som f.eks. **62 Forsendelsesstandard**.
 1. I oversigtspanelet **Metoder** skal du flytte metoden **Udskrivning af bølgeetiketter** til kolonnen **Valgte metoder**.
 1. I kolonnen **Valgte metoder** skal du vælge metoden **Udskrivning af bølgeetiketter** og angive feltet **Bølgetrinskode** til *UdskrivEtiket*. Du kan få flere oplysninger om bølgetrinkoder under [Bølgetrinkoder](wave-step-codes.md).
@@ -88,7 +88,7 @@ Med bølgeskabeloner kan du knytte bestemte forekomster af bølgemetoder til en 
 
 Etiketlayoutet bestemmer, hvilke oplysninger der udskrives på etiketten, og hvordan de er opstillet. Her skal du angive den ZPL-kode, der sendes til printeren.
 
-1. Gå til **Lokationsstyring \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketlayout**.
+1. Gå til **Warehouse Management \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketlayout**.
 1. Opret en post, der har følgende indstillinger:
 
     - **Etiketlayout-id:** *karton*
@@ -205,7 +205,7 @@ Din etiket er nu klar til brug.
 
 Bølgeetikettyper bruges til at knytte bølgeetiketskabeloner til en enhed på enhedsseriegruppelinjer.
 
-1. Gå til **Lokationsstyring \> Opsætning \> Dokumentruteplanlægning \> Bølgeetikettyper**.
+1. Gå til **Warehouse Management \> Opsætning \> Dokumentruteplanlægning \> Bølgeetikettyper**.
 1. Tilføj en bølgetype, der har følgende indstillinger:
 
     - **Etikettype:** *Karton*
@@ -215,7 +215,7 @@ Bølgeetikettyper bruges til at knytte bølgeetiketskabeloner til en enhed på e
 
 Konfigurer derefter enhedsseriegruppen for bølgeetikettypen.
 
-1. Gå til **Lokationsstyring \> Opsætning \> Lagersted \> Enhedsseriegrupper**.
+1. Gå til **Warehouse Management \> Opsætning \> Lagersted \> Enhedsseriegrupper**.
 1. Vælg gruppen **Hver boks PL**.
 1. For linjen **Boks** skal du indstille feltet **Bølgeniveautype** til *Karton*.
 
@@ -223,7 +223,7 @@ Konfigurer derefter enhedsseriegruppen for bølgeetikettypen.
 
 Opret derefter en bølgeetiketskabelon til bølgeetikettypen.
 
-1. Gå til **Lokationsstyring \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketskabeloner**.
+1. Gå til **Warehouse Management \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketskabeloner**.
 1. Føj en bølgeniveauskabelon, og angiv følgende værdier i sidehovedet:
 
     - **Navn på etiketskabelon:** *Kartonetiketter*
@@ -231,7 +231,7 @@ Opret derefter en bølgeetiketskabelon til bølgeetikettypen.
     - **Kode for bølgetrin:** *UdskrivEtiket*
     - **Lagersted:** *62*
 
-1. Gå til oversigtspanelet **Generelt**, og indstil feltet **Bølgeetikettype**  til *Karton*.
+1. Gå til oversigtspanelet **Generelt**, og indstil feltet **Bølgeetikettype** til *Karton*.
 1. I oversigtspanelet **Detaljer om bølgeetiketskabeloner** skal du tilføje en ny række, der har følgende indstillinger:
 
     - **Etiketlayout-id:** *karton*
@@ -333,21 +333,21 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 
 Du skal muligvis oprette bølgeprocesmetoderne igen for at gøre metoden til bølgeetiketudskrivning tilgængelig.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
 1. Kontroller, at **bølgeEtiketUdskrivning** findes på listen. Hvis den ikke gør det, skal du vælge **Genopret metoder** i handlingsruden for at tilføje den.
 
 ### <a name="set-up-a-wave-template"></a>Konfigurere en bølgeskabelon
 
 Med bølgeskabeloner kan du knytte bestemte forekomster af bølgemetoder til en tilsvarende bølgeetiketskabelon.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeskabeloner**.
 1. Vælg en skabelon som f.eks. **63 Containerisering**.
 1. I oversigtspanelet **Metoder** skal du flytte metoden **Udskrivning af bølgeetiketter** til kolonnen **Valgte metoder**.
 1. I kolonnen **Valgte metoder** skal du vælge metoden **Udskrivning af bølgeetiketter** og angive feltet **Bølgetrinskode** til *UdskrivEtiket*. Du kan få flere oplysninger om bølgetrinkoder under [Bølgetrinkoder](wave-step-codes.md).
 
 ### <a name="create-a-wave-label-layout"></a>Oprette et bølgeetiketlayout
 
-1. Gå til **Lokationsstyring \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketlayout**.
+1. Gå til **Warehouse Management \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketlayout**.
 1. Opret en post, der har følgende indstillinger:
 
     - **Etiketlayout-id:** *karton*
@@ -426,7 +426,7 @@ Din etiket er nu klar til brug.
 
 ### <a name="create-a-wave-label-template"></a>Oprette et bølgeetiketskabelon
 
-1. Gå til **Lokationsstyring \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketskabeloner**.
+1. Gå til **Warehouse Management \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketskabeloner**.
 1. Føj en bølgeniveauskabelon, og angiv følgende værdier i sidehovedet:
 
     - **Navn på etiketskabelon:** *Containeretiketter*
@@ -502,11 +502,11 @@ Nummerserieudvidelser styrer GS1-overholdelse af specifikke nummerserier. Denne 
     - Systemet behandler den oprettede forsendelse ved hjælp af den skabelon, der indeholder trinnet til udskrivning af etiketter. Etiketlayoutet bruges til at definere etikettens format, og slutresultatet vil være en etiket, der har fem linjer, og som udskrives på den printer, der er valgt i etiketskabelonen.
     - Der genereres et nyt fragtseddel-id for forsendelserne. Hvis du har konfigureret nummerserieudvidelserne, følger bølgeetiket-id'erne **SSCC-18**-nummerformatet. 
 
-Du kan udskrive disse bølgeetiketter igen ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Historik over bølgeetiketter**.
+Du kan udskrive disse bølgeetiketter igen ved at gå til **Warehouse Management \> Forespørgsler og rapporter \> Historik over bølgeetiketter**.
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>Scenarie 3: Udskrivning af bølgeetiketter til etiketter med flere niveauer
 
-Dette scenarie viser, hvordan du kan bruge funktionen til udskrivning af bølgeetiketter, når lagerprocesserne kræver flere niveauer af forsendelsesetiketter. Der kan f eks. være adskilte etiketter for kartoner og paller, og det kan være nødvendigt at udskrive en brudetiket for hele forsendelsen. Brudetiketter er en separat type etiket, der kan bruges som delelinje mellem ruller og containere, f eks. etiketter til forsendelses-id'et og en stregkode, så etiketterne nemt kan sorteres, når de er udskrevet.
+Dette scenarie viser, hvordan du kan bruge funktionen til udskrivning af bølgeetiketter, når lagerprocesserne kræver flere niveauer af forsendelsesetiketter. Der kan f eks. være adskilte etiketter for kartoner og paller, og det kan være nødvendigt at udskrive en brudetiket for hele forsendelsen. Brudetiketter er en separat type etiket, der kan bruges som delelinje mellem ruller og containere, f.eks. etiketter til forsendelses-id'et og en stregkode, så etiketterne nemt kan sorteres, når de er udskrevet.
 
 Den væsentligste forskel mellem konfigurationen af dette scenarie og konfigurationen af scenarie 1, ud over det faktum, at etiketter er aktiveret, er, at der skal knyttes flere bølgeetikettyper til linjerne i enhedsseriegrupperne. Hvis du vil udføre denne konfiguration, skal du konfigurere følgende elementer for dette scenarie:
 
@@ -522,13 +522,13 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 
 ### <a name="set-up-a-wave-process-method"></a>Konfigurere en bølgebehandlingsmetode
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
 1. Kontroller, at **bølgeEtiketUdskrivning** findes på listen. Hvis den ikke gør det, skal du vælge **Genopret metoder** i handlingsruden for at tilføje den.
 1. Når det gælder metoden **bølgeEtiketUdskrivning** skal du markere afkrydsningsfeltet **Gør metode reperterbar**.
 
 ### <a name="set-up-a-wave-template"></a>Konfigurere en bølgeskabelon
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeskabeloner**.
 2. Vælg en skabelon som f.eks. **62 Forsendelsesstandard**.
 3. I oversigtspanelet **Metoder** skal du flytte metoden **Udskrivning af bølgeetiketter** til kolonnen **Valgte metoder**.
 4. I kolonnen **Valgte metoder** skal du tildele en værdi for **Bølgetrinkode** som f.eks. *Karton* til metoden **Udskrivning af bølgeetiketter**. Du kan få flere oplysninger om bølgetrinkoder under [Bølgetrinkoder](wave-step-codes.md).
@@ -537,7 +537,7 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 
 ### <a name="create-three-wave-label-layouts"></a>Oprette tre bølgeetiketlayout
 
-1. Gå til **Lokationsstyring \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketlayout**.
+1. Gå til **Warehouse Management \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketlayout**.
 1. Opret en post, der har følgende indstillinger:
 
     - **Etiketlayout-id:** *karton*
@@ -752,7 +752,7 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 
 ### <a name="create-two-wave-label-types"></a>Oprette to bølgeetikettyper
 
-1. Gå til **Lokationsstyring \> Opsætning \> Dokumentruteplanlægning \> Bølgeetikettyper**.
+1. Gå til **Warehouse Management \> Opsætning \> Dokumentruteplanlægning \> Bølgeetikettyper**.
 1. Opret en post, der har følgende indstillinger:
 
     - **Etikettype:** *Karton*
@@ -765,14 +765,14 @@ Hvis du vil følge dette scenarie skal du have installeret demodata, og du skal 
 
 ### <a name="set-up-unit-sequence-groups"></a>Konfigurer enhedsseriegrupper
 
-1. Gå til **Lokationsstyring \> Opsætning \> Lagersted \> Enhedsseriegrupper**.
+1. Gå til **Warehouse Management \> Opsætning \> Lagersted \> Enhedsseriegrupper**.
 1. Vælg eller opret en **Hver boks PL**-gruppe.
 1. For linjen **Boks** skal du indstille feltet **Bølgeniveautype** til *Karton*.
 1. For linjen **PL** skal du indstille feltet **Bølgeniveautype** til *Palle*.
 
 ### <a name="create-wave-label-templates"></a>Oprette bølgeetiketskabeloner
 
-1. Gå til **Lokationsstyring \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketskabeloner**.
+1. Gå til **Warehouse Management \> Opsætning \> Dokumentruteplanlægning \> Bølgeetiketskabeloner**.
 1. Opret en etiketskabelon, der har følgende indstillinger:
 
     - **Navn på etiketskabelon:** *Kartonetiketter*

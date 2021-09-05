@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9da14c22b0ab62a8384fbe76918cc19da0205cdbbf2f4fd2ef8e7aec57b264ee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bead8a80110df174c094d0729fbde3d96b230cbf
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343991"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobkort for enheder
 
@@ -65,7 +65,7 @@ I oversigtspanelet **Generelt** kan du konfigurere hver af de forskellige indsti
 
 - **Afmelding ved gå** – Her angives **Ja** for at bede arbejdere om at rapportere tilbagemeldinger om igangværende job, når der stemples ud. Når denne indstilling angives til **Nej**, bliver arbejderne ikke bedt om at gøre dette.
 - **Lås medarbejder** – Når denne indstilling er angivet til **Nej**, logges arbejderen af, umiddelbart efter at der er foretaget en registrering (f.eks. et nyt job), og derefter vender enheden tilbage til logonsiden. Når denne indstilling er angivet til **Ja**, logges arbejderen på jobkortenheden. Arbejderen vil dog stadig kunne logge af manuelt, så en anden arbejder kan logge på, mens jobkortenheden stadig kører under den samme systembrugerkonto. Du kan finde flere oplysninger om disse typer konti under [Tildelte brugere](#assigned-users).
-- **Stregkodescanner** – Angiv dette til **Ja** for at give arbejderne mulighed for på jobkortenheden at registrere start på et nyt job ved at scanne en stregkode.
+- **Stregkodescanner** – Angiv dette felt til **Ja** for at give arbejderne mulighed for på jobkortenheden at registrere start på et nyt job ved at scanne en stregkode.
 - **Brug det faktiske registreringstidspunkt** – Angiv **Ja** for at indstille det tidspunkt for hver ny registrering, der skal være lig med det nøjagtige tidspunkt, da registreringen blev sendt af en arbejder. Angiv **Nej** for at bruge logontidspunktet i stedet for. Du skal normalt angive dette til **Ja**, hvis du har aktiveret **Lås medarbejder** og/eller **Enkelt arbejder**, i de tilfælde hvor arbejderne ofte er logget ind i længere perioder.
 - **Enkelt arbejder** – Angiv denne indstilling til **Ja**, hvis kun én arbejder bruger en jobkortenhed, hvor denne konfiguration er aktiv. Når denne indstilling er valgt, angives indstillingen **Lås medarbejder** automatisk til **Ja**. Derudover fjerner denne indstilling kravet (og muligheden) for, at arbejderen logger på ved hjælp af et kort-ID (eller lignende). I stedet logger medarbejderen på Supply Chain Management ved hjælp af en systembrugerkonto, der er knyttet til en *tidsregistreret arbejder* (fra tabellen *arbejdere*), og som bliver logget på jobkortenheden som den pågældende arbejder på samme tid.  Du kan finde flere oplysninger om disse typer konti under [Tildelte brugere](#assigned-users).
 - **Tillad, at arbejdere angiver personlige filtre** – Angiv denne indstilling til **Ja** for at give arbejderne mulighed for at filtrere de job, der vises for dem, på enheden. Arbejderen kan redigere værdierne for et af de tre filterkriterier: **Produktionsenhed**, **Ressourcegruppe** og **Ressource**. Det er kun job, der er planlagt til ressourcer, som svarer til de valgte filterkriterier, der vises på enheden. Du kan også tildele standardværdier for et eller flere af disse kriterier, og de vil gælde, selvom denne indstilling ikke er valgt.

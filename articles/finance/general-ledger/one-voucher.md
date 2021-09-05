@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720520"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344052"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Hvad er Ét bilag?
@@ -81,7 +82,7 @@ Baseret på samtaler med kunderne, har Microsoft samlet følgende liste over de 
 
 Følgende scenarier kan kun udføres ved hjælp af funktionen ét bilag. Hvis din organisation har et af disse scenarier, skal du aktivere flere transaktioner, der skal angives i et bilag, ved at ændre indstillingen af parameteren **Tillad flere transaktioner i ét bilag** på siden **Finansparametre**. Disse funktionsmæssige huller udfyldes via andre funktioner i senere versioner.
 
-> [!Note]
+> [!NOTE]
 > [For hver af følgende situationer skal **Tillad flere posteringer inden for ét bilagsfelt** være angivet til Ja i oversigtspanelet **Generelt** på siden **Finansparametre**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bogføre kreditor- eller debitorbetalinger i oversigtsform til en bankkonto
@@ -115,15 +116,7 @@ I dette scenario er debitorerne i det enkelte bilag den samme debitor, fordi tra
 Hvis den periodiske refusionsopgave køres fra debitormodulet, oprettes der en postering for at flytte saldoen fra en debitor til en kreditor. I dette scenario skal Ét bilag bruges til at refundere kunden.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Vedligeholdelse af anlægsaktiver: Catch-up-afskrivning, opdelt aktiv, beregne afskrivning ved salg
-De følgende anlægsaktivposteringer kan også oprette flere transaktioner i et enkelt bilag:
-
-- Der foretages en yderligere anskaffelse til et aktiv, og "catch-up"-afskrivning beregnes.
-- Et aktiv opdeles.
-- En parameter til at beregne afskrivning på kassation aktiveres, og derefter kasseres anlægsaktivet.
-- Et aktivs servicedato ligger før anskaffelsesdatoen. Derfor bogføres en afskrivningsregulering.
-
-> [!Note]
-> Når du indtaster transaktioner, skal du kontrollere, at alle transaktioner gælder for det samme anlægsaktiv. Bilaget bogføres ikke, hvis det indeholder mere end ét anlægsaktiv, selvom feltet **Nyt bilag** kun er angivet som ét bilagsnummer på siden **Kladdenavne** i Finans. Hvis du medtager mere end ét anlægsaktiv i bilaget, vises meddelelsen **Der kan kun være én anlægsaktivpostering pr. bilag**, og du kan ikke bogføre bilaget.  
+Med version 10.0.21 og senere oprettes der anlægsaktivposteringer til catch-up-afskrivning, opdeling af et aktiv og beregning af afskrivning ved bortskaffelse af et aktiv ved hjælp af forskellige bilagsnumre.
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a>Veksler og egenveksler
 Veksler og egenveksler kræver, at Ét bilag bruges, fordi posteringerne flytter debitor- eller kreditorsaldoen fra én debitor/konti- finanskonto til en anden, baseret på status for betalingen.

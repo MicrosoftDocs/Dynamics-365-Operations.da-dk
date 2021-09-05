@@ -2,7 +2,7 @@
 title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f71a94a6a5780f8a59590008f6370cb6897fa644e7fd826bacd0fb6206d159c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719295"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344368"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -169,7 +169,7 @@ Dashboardet er ofte den første side, du ser, når du åbner appen. Den kan tilp
 En entydig tilpasningsfunktion, der er tilgængelig på dashboardet, er muligheden for at tilføje felter. 
 
 - Hvis funktionen **Helsides apps** er deaktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj et arbejdsområde**. Der oprettes et nyt felt i arbejdsområdet i bunden af dashboardet. Du kan omdøbe dette nye arbejdsområdefelt, som du vil. Du kan også føje lister, felter og links til arbejdsområdet som beskrevet i sektionen [Tilføje felter, lister og links i et arbejdsområde](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) i dette emne.
-- Hvis funktionen **Helsides apps** er aktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj en app**. Vælg i dialogboksen, om du vil tilføje et felt i et nyt arbejdsområde eller i et felt med indhold fra Power Apps eller et websted. Følg derefter trinnene for at konfigurere den valgte indstilling. Der oprettes et nyt felt i bunden af dashboardet. 
+- Hvis funktionen **Helsides apps** er aktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj en app**. Vælg i dialogboksen, om du vil tilføje et felt i et nyt arbejdsområde eller i et felt med indhold fra Power Apps eller et websted. Følg derefter trinnene for at konfigurere den valgte indstilling. Der oprettes et nyt felt i bunden af dashboardet. Du kan finde flere oplysninger om, hvordan du kan tilføje, redigere, slette og dele disse integrerede apps, i [Integrere lærredapps fra og Power Apps](embed-power-apps.md) og [Integrere tredjepartsapps](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Deling af tilpasninger
 

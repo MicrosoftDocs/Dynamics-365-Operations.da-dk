@@ -1,8 +1,8 @@
 ---
 title: Oprette en frynsegodeplan
-description: Konfigurer frynsegodeplaner i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 03/24/2021
+description: Dette emne viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4219c59141a0664e776f1ab099288a7b2db9139d83e1e5bfab7f7b2fbca128a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf5f2443b1fc070d2b3030000f2980e92ef3004c
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731337"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417459"
 ---
 # <a name="create-a-benefit-plan"></a>Oprette en frynsegodeplan
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Denne artikel viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Human Resources.
+Dette emne viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Human Resources.
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 
@@ -38,7 +38,7 @@ Denne artikel viser, hvordan du kan oprette frynsegodeplaner i Dynamics 365 Huma
    | --- | --- |
    | **Plan** | Et entydigt id for planen. |
    | **Beskrivelse** | En beskrivelse af planen. |
-   | **Plantype** | Når du opretter en ny plan, skal du angive plantypen. En plantype er en overordnet gruppering af bestemte typer frynsegoder. Hver enkelt plantype angiver, om en medarbejder kan tilmelde sig flere planer af den pågældende type, og angiver, om kontaktpersoner er modtagere eller afhængige, og definerer disponeringsindstillinger. Du kan oprette nye brugerdefinerede plantyper for at imødekomme behovet for dine tilbudte frynsegoder. De vigtigste typer af frynsegodeplaner er: <ul><li>401K</li><li>ADD</li><li>Tandlægearbejde</li><li>Fitness</li><li>FSA</li><li>Liv</li><li>LTD</li><li>Medicinsk</li><li>PTO</li><li>STD</li><li>Vision</li></ul> |
+   | **Plantype** | Når du opretter en ny plan, skal du angive plantypen. En plantype er en overordnet gruppering af bestemte typer frynsegoder. Hver enkelt plantype angiver, om en medarbejder kan tilmelde sig flere planer af den pågældende type, og angiver, om kontaktpersoner er modtagere eller afhængige, og definerer dækningsindstillinger. Du kan oprette nye brugerdefinerede plantyper for at imødekomme behovet for dine tilbudte frynsegoder. De vigtigste typer af frynsegodeplaner er: <ul><li>401K</li><li>ADD</li><li>Tandlægearbejde</li><li>Fitness</li><li>FSA</li><li>Liv</li><li>LTD</li><li>Medicinsk</li><li>PTO</li><li>STD</li><li>Vision</li></ul> |
    | **Kode for plantype** | Kodetypekoden for plantypen. |
    | **Program** | Angiver et program, som planen eventuelt kan tildeles til. |
    | **Bundt** | Angiver et bundt, som planen eventuelt kan tildeles til. |
@@ -122,7 +122,7 @@ Du kan se de arbejdere, der er tilmeldt til en valgt frynsegodeplan.
 
 ## <a name="attach-coverage-options"></a>Tilknyt dækningsindstillinger
 
-Du kan tilføje dækningsindstillinger for den valgte frynsegodeplan. Hvis du tilknytter disponeringsindstillinger, samles sats- og fradragsopsætningen til en disponeringsindstilling.  Eksempel: For en medicinsk plan kan brugeren vælge en familiedækningsindstilling.  Det ville så være nødvendigt at vælge familiesatsen for den tilknyttede plan (angivet i satsopsætning) og fradrag for den tilknyttede plan (angivet i satsopsætning). Dette giver arbejdsgiverens og medarbejderens kostpris for en valgt dækning. Derefter skal du gentage processen for en medarbejder + 1 dækning eller medarbejderdækning.
+Du kan tilføje dækningsindstillinger for den valgte frynsegodeplan. Hvis du tilknytter dækningsindstillinger, samles sats- og fradragsopsætningen til en dækningsindstilling.  Eksempel: For en medicinsk plan kan brugeren vælge en familiedækningsindstilling.  Det ville så være nødvendigt at vælge familiesatsen for den tilknyttede plan (angivet i satsopsætning) og fradrag for den tilknyttede plan (angivet i satsopsætning). Dette giver arbejdsgiverens og medarbejderens kostpris for en valgt dækning. Derefter skal du gentage processen for en medarbejder + 1 dækning eller medarbejderdækning.
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Frynsegodeplaner** under **Planer**.
 

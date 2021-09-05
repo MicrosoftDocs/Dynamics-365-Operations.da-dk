@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 328791cc321eeaf8f032a1eecedbe50cf9498eccd442c718d2e44e246915bc9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2f4aeefe5fe7698d9dfaf80619102f2b753e52b
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726181"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423441"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
@@ -81,9 +81,9 @@ Da produktet er repræsenteret som en SKU, kan koncepterne for specifikke produk
 
 ![Datamodel for produkter.](media/dual-write-product.png)
 
-Når dobbeltskrivningsfunktionaliteten er aktiveret, vil produkterne fra Finance and Operations vil blive synkroniseret i andre Dynamics 365-produkter i tilstanden **Kladde**. De føjes til den første prisliste med samme valuta. De føjes med andre ord til den første prisliste i en Dynamics 365-app, der har samme valuta som din juridiske tabel, hvor produktet frigives i en Finance and Operations-app. Hvis der ikke findes en prisliste for den angivne valuta, oprettes der automatisk en prisliste, og produktet vil blive tildelt til den.
+Når dobbeltskrivningsfunktionaliteten er aktiveret, vil produkterne fra Finance and Operations vil blive synkroniseret i andre Dynamics 365-produkter i tilstanden **Kladde**. De føjes til den første prisliste med den samme valuta, som bruges i Customer Engagement-appen og ved hjælp af alfabetisk sortering på prislistenavnet. De føjes med andre ord til den første prisliste i en Dynamics 365-app, der har samme valuta som din juridiske tabel, hvor produktet frigives i en Finance and Operations-app. Hvis der ikke findes en prisliste for den angivne valuta, oprettes der automatisk en prisliste, og produktet vil blive tildelt til den.
 
-Den aktuelle implementering af de script-plugins, der knytter standardprislisten til enheden, viser den valuta, der er tilknyttet Finance and Operations-appen, og finder den første prisliste i kundekonteringsappen ved hjælp af alfabetisk sortering på prislistenavnet. Hvis du vil angive en standardprisliste for en bestemt valuta, når du har flere prislister for den pågældende valuta, skal du opdatere prislistenavnet til et navn, der er tidligere i alfabetisk rækkefølge end andre prislister for den samme valuta.
+Den aktuelle implementering af de script-plugins, der knytter standardprislisten til enheden, viser den valuta, der er tilknyttet Finance and Operations-appen, og finder den første prisliste i kundekonteringsappen ved hjælp af alfabetisk sortering på prislistenavnet. Hvis du vil angive en standardprisliste for en bestemt valuta, når du har flere prislister for den pågældende valuta, skal du opdatere prislistenavnet til et navn, der er tidligere i alfabetisk rækkefølge end andre prislister for den samme valuta. Hvis der ikke findes en prisliste for den angivne valuta, oprettes der en ny.
 
 Som standard synkroniseres produkter fra Finance and Operations-apps til andre Dynamics 365-apps i tilstanden **Kladde**. Hvis du vil synkronisere produktet med tilstanden **Aktiv**, så du f.eks. kan bruge det direkte i salgsordretilbud, skal følgende indstilling vælges: under fanen **System> Administration > Systemadministration > Systemindstillinger > Sales** skal du vælge **Opret produkter i aktiv tilstand = ja**.
 

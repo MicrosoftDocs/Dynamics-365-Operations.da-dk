@@ -1,8 +1,8 @@
 ---
-title: Behandle tilmeldingsberettigelse
-description: I denne artikel beskrives, hvordan du kan køre processen til berettigelse af tilmelding.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Behandle berettigelse til tilmelding
+description: Dette emne forklarer, hvordan du kan køre processen for berettigelse af tilmelding.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 989b493af6e8386f9517737c582150470a4e226d161e63c3f7a6088dbd3df903
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c83753c17721487ba6adbf822c994a71ae0a0e6
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782066"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417478"
 ---
-# <a name="process-enrollment-eligibility"></a>Behandle tilmeldingsberettigelse
+# <a name="process-enrollment-eligibility"></a>Behandle berettigelse til tilmelding
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I denne artikel beskrives, hvordan du kan køre processen til berettigelse af tilmelding.
+Dette emne forklarer, hvordan du kan køre processen for berettigelse af tilmelding.
 
 1. Vælg **Behandling af berettigelse til tilmelding** under **Behandling** i arbejdsområdet **Frynsegodeadministration**.
 
@@ -53,13 +53,13 @@ I denne artikel beskrives, hvordan du kan køre processen til berettigelse af ti
 
 ## <a name="view-process-results"></a>Vis procesresultater
 
-I denne artikel beskrives, hvordan du få vist resultater af berettigelsesprocessen.
+Dette emne beskriver, hvordan du få vist resultater af berettigelsesprocessen.
 
 1.  Vælg **Procesresultater** under **Behandling** i arbejdsområdet **Administration af frynsegoder**.
 
-2.  Følgende felter er angivet i formularen **Procesresultater**:
+2.  Følgende felter er angivet på siden **Procesresultater**:
 
-   | Felt | Beskrivende tekst |
+   | Felt | Betegnelse |
    | --- | --- |
    | **Proces-id** | Det entydige id for kombinationen af Arbejder, Juridisk enhed og Proceskørsel. |
    | **Procestype** | Det identificerer den proces, der blev kørt. Eksempel: Tilmelding. |

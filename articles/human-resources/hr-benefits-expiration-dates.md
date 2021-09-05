@@ -1,8 +1,8 @@
 ---
 title: Administrere frynsegoders udløbsdatoer
-description: Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet eller forlænget og administrere tilmeldingsdatoerne for arbejdere, der er tilmeldt frynsegodet.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Denne procedure viser, hvordan frynsegoder kan udløbe eller blive forlænget, og hvordan du administrerer tilmeldingsdatoerne for arbejdere.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,21 @@ ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationRe
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: ccd3126ba45cf90b6fa55f0a3853531fd0e43ed48a9e715bb1692726482fb432
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa3f5b1c1ada243b351fc8c809eee6cea37e5955
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727106"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416399"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Administrere frynsegoders udløbsdatoer
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet eller forlænget og administrere tilmeldingsdatoerne for arbejdere, der er tilmeldt frynsegodet. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+Denne procedure viser, hvordan frynsegoder kan udløbe eller blive forlænget, og hvordan du administrerer tilmeldingsdatoerne for arbejdere. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
 ## <a name="benefit-expiration-dates"></a>Frynsegodeudløbsdatoer
 
@@ -43,7 +43,7 @@ Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet ell
 13. Klik for at følge linket i feltet Personalenummer.
 14. Udvid sektionen Personlige oplysninger.
 15. Klik på Frynsegoder.
-16. Find frynsegodet og vælg posten på listen. Bemærk den nye disponeringsslutdato.
+16. Find frynsegodet og vælg posten på listen. Bemærk den nye dækningsslutdato.
 
 
 

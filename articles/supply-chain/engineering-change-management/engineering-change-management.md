@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 55952a9b1c25b806ee4a21ef1982c5b15a41adeb9c9bfdf2fccb8c9da242ffdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714324"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384579"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Administrere ændringer af tekniske produkter
 
@@ -113,16 +113,16 @@ Hvis du vil gennemse berørte transaktioner, blokere valgte transaktioner og sen
     - **Vis transaktion** – Åbn den valgte transaktionspost.
     - **Bloker ordre** – Denne knap er kun tilgængelig under fanen **Salgsordrer**. Markér den for at blokere den valgte salgsordre.
     - **Bloker linje** – Denne knap er kun tilgængelig under fanen **Købsordrer**. Markér den for at blokere den valgte købsordrelinje.
-    - **Giv den ansvarlige besked** – Denne knap er kun tilgængelig under fanen **Salgsordrer**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ansvarlig for den valgte salgsordre.
-    - **Giv ordregiver besked** – Denne knap er kun tilgængelig under fanen **Købsordrer**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ordregiver for den valgte købsordre.
-    - **Giv produktion besked** – Denne knap er kun tilgængelig under fanen **Produktionsordrer**. I modsætning til salgsordrer og indkøbsordrer har produktionsordrer ikke en enkelt bruger, der er angivet som ansvarlig for dem fra start til slut. I stedet overtager forskellige tilsynsførende eller planlæggere normalt ejerskab for en bestemt lokation eller for en bestemt del af produktionen (for eksempel for bestemte ressourcer eller ressourcegrupper). Når du vælger denne knap, modtager alle brugere, der er ansvarlige for en ressource, der er relateret til den valgte produktionsordre, derfor en ændringsbesked.
-    - **Giv klargører besked** – Denne knap er kun tilgængelig under fanen **Indkøbsrekvisition**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som klargører for den valgte indkøbsrekvisition.
-    - **Giv den salgsansvarlige besked** – Denne knap er kun tilgængelig under fanen **Tilbud**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ansvarlig for det valgte tilbud.
+    - **Giv den ansvarlige besked** – Denne knap er kun tilgængelig under fanen **Salgsordrer**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ansvarlig for den valgte salgsordre. Du kan finde flere oplysninger om, hvem der kan se beskeder, og hvordan du kan se [Gennemse og behandle ændringsbeskeder for transaktioner](#review-notifications).
+    - **Giv ordregiver besked** – Denne knap er kun tilgængelig under fanen **Købsordrer**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ordregiver for den valgte købsordre. Du kan finde flere oplysninger om, hvem der kan se beskeder, og hvordan du kan se [Gennemse og behandle ændringsbeskeder for transaktioner](#review-notifications).
+    - **Giv produktion besked** – Denne knap er kun tilgængelig under fanen **Produktionsordrer**. I modsætning til salgsordrer og indkøbsordrer har produktionsordrer ikke en enkelt bruger, der er angivet som ansvarlig for dem fra start til slut. I stedet overtager forskellige tilsynsførende eller planlæggere normalt ejerskab for en bestemt lokation eller for en bestemt del af produktionen (for eksempel for bestemte ressourcer eller ressourcegrupper). Når du vælger denne knap, modtager alle brugere, der er ansvarlige for en ressource, der er relateret til den valgte produktionsordre, derfor en ændringsbesked. Du kan finde flere oplysninger om, hvem der kan se beskeder, og hvordan du kan se [Gennemse og behandle ændringsbeskeder for transaktioner](#review-notifications).
+    - **Giv klargører besked** – Denne knap er kun tilgængelig under fanen **Indkøbsrekvisition**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som klargører for den valgte indkøbsrekvisition. Du kan finde flere oplysninger om, hvem der kan se beskeder, og hvordan du kan se [Gennemse og behandle ændringsbeskeder for transaktioner](#review-notifications).
+    - **Giv den salgsansvarlige besked** – Denne knap er kun tilgængelig under fanen **Tilbud**. Markér den for at sende en ændringsbesked til den bruger, der er angivet som ansvarlig for det valgte tilbud. Du kan finde flere oplysninger om, hvem der kan se beskeder, og hvordan du kan se [Gennemse og behandle ændringsbeskeder for transaktioner](#review-notifications).
     - **Kassér** – Denne knap er kun tilgængelig under fanen **Lager**. Markér den for at angive kassere det valgte lager.
     - **Vis historik** – Åbn en historik over handlinger, der er udført på den valgte transaktion, ved at bruge dialogboksen **Forretningskonsekvenser for åbne transaktioner**. Historikken viser for eksempel, om der er sendt beskeder, eller om transaktioner er blevet blokeret. 
     - **Vis alle transaktioner** – Åbn den fulde liste over alle transaktioner, ikke kun de åbne transaktioner.
 
-#### <a name="review-and-process-change-notifications-for-transactions"></a>Gennemse og behandle ændringsbeskeder for transaktioner
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Gennemse og behandle ændringsbeskeder for transaktioner
 
 Du kan læse og behandle de ændringsbeskeder, du modtager, på følgende måder:
 

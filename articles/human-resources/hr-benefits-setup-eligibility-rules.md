@@ -1,8 +1,8 @@
 ---
 title: Konfigurere berettigelsesregler og -indstillinger
-description: Angiv berettigelsesregler og -indstillinger i Frynsegodeadministration i Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/25/2021
+description: Dette emne beskriver, hvordan du angiver berettigelsesregler og -indstillinger i Frynsegodeadministration i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3aae50b8f7fac6991f187ced44f7d122eb7ed40824bd2d53265fa06bfa87dd6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756118"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423465"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere berettigelsesregler og -indstillinger 
 
@@ -155,7 +155,7 @@ Regler kan udvides yderligere til at bruge flere betingelser i et enkelt kriteri
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Betingelser for berettigelse i et kriterie for brugerdefinerede felter 
 I lighed med ovenstående kan brugerdefinerede felter bruges, når du opretter berettigelsesregler og arbejde på samme måde. Du kan for eksempel tilbyde internetrefusion til medarbejdere i Fargo og København, der arbejder hjemmefra, da internetomkostningerne er højere disse steder. Det kan du gøre ved at oprette to brugerdefinerede felter: **Kontorets placering** (valgliste) og **Arbejde hjemmefra** (afkrydsningsfelt). Opret derefter en regel med navnet **WFH-medarbejdere**. Kriteriet for reglen er der, hvor **Kontorets placering = Fargo** eller **København**, *og* hvor **Arbejde hjemmefra = Ja**.
 
-De brugerdefinerede regler for berettigelse skal konfigureres som angivet på følgende billede. 
+De brugerdefinerede regler for berettigelse skal konfigureres som angivet i følgende billede. 
 
 ![Betingelser for berettigelse i et kriterie for brugerdefinerede felter.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
@@ -185,7 +185,7 @@ Bundter er et sæt relaterede frynsegodeplaner. Du kan bruge frynsegodebundter t
 
 ## <a name="configure-periods"></a>Konfigurere perioder
 
-Perioder definerer, hvornår frynsegoder er gældende, og hvornår medarbejdere har tilladelse til at tilmelde sig. Du kan oprette lige så mange perioder, som du ønsker, for at opretholde åben tilmelding til frynsegoder og disponeringsperioder for frynsegoder. Årene for frynsegodeplaner følger eller følger måske ikke kalenderåret. 
+Perioder definerer, hvornår frynsegoder er gældende, og hvornår medarbejdere har tilladelse til at tilmelde sig. Du kan oprette lige så mange perioder, som du ønsker, for at opretholde åben tilmelding til frynsegoder og dækningsperioder for frynsegoder. Årene for frynsegodeplaner følger eller følger måske ikke kalenderåret. 
 
 1. Vælg **Berettigelsesregler og -indstillinger** under **Konfiguration** i arbejdsområdet **Frynsegodeadministration**.
 
@@ -201,7 +201,7 @@ Perioder definerer, hvornår frynsegoder er gældende, og hvornår medarbejdere 
    | **Tilmeldingsstart** | Startdatoen for åben tilmelding. Åben tilmelding er, når en medarbejder kan vælge frynsegoder i forbindelse med selvbetjeningsfrynsegoder. |
    | **Afslutning af tilmelding** | Slutdatoen for åben tilmelding. |
    | **Åbne** | Angiver, om perioden er åben baseret på systemdatoen og datoer og klokkeslæt for gyldig fra og gyldig til. | 
-   | **Forrige periode** | Angiver frynsegodeperioden, der går forud for den valgte frynsegodeperiode. Disse oplysninger bruges under tilmelding til frynsegodeberettigelse til at tildele planer, disponeringsindstillinger og udpegede fra et tidligere år. |
+   | **Forrige periode** | Angiver frynsegodeperioden, der går forud for den valgte frynsegodeperiode. Disse oplysninger bruges under tilmelding til frynsegodeberettigelse til at tildele planer, dækningsindstillinger og udpegede fra et tidligere år. |
  
 4. Vælg **Gem**.
 
@@ -217,13 +217,13 @@ Du kan bruge flekskreditprogrammer til at tilmelde medarbejdere til frynsegoder 
 
    | Felt | Betegnelse |
    | --- | --- |
-   | Personalegodekredit-id | Det entydige id for flekskreditprogrammet. |
-   | Beskrivelse | En beskrivelse af flekskreditprogrammet. | 
-   | Fra-dato | Den dato og det klokkeslæt, hvor flekskreditprogrammet bliver aktivt. |
-   | Til-dato | Slutdatoen for flekskreditprogrammet. Du kan beholde standardværdien (12/31/2154) for at angive, at der ikke er et planlagt udløb for flekskreditprogrammet. |
-   | Kreditværdi i alt | Det antal kreditter, hver medarbejder skal bruge til deres frynsegoder. |
-   | Regel for forholdsmæssig beregning | Den regel, der skal bruges til forholdsmæssig beregning af flekskreditter, når der ansættes en medarbejder midt i flekskreditperioden. </br></br><ul><li>**Ingen** – medarbejderen får ingen flekskreditter, hvis de er ansat efter starten på perioden for flekskreditprogrammet.</li><li>**Fuld kredit** – medarbejderen modtager det fulde beløb af flekskreditter, uanset hvornår de er ansat.</li><li>**Beregn forholdsmæssigt** – medarbejderen modtager et forholdsmæssigt beløb af flekskreditter baseret på deres startdato.</li></ul> |
-   | Formel for forholdsmæssig beregning af flekskredit | Den regel, der skal bruges til forholdsmæssig beregning af flekskreditter for medarbejdere, som ansættes midt i en frynsegodeperiode for flekskreditprogrammet. Forholdsberegningen er baseret på ansættelsens startdato. Dette felt bruges kun, hvis du vælger **Beregn forholdsmæssigt** i feltet **Regel for forholdsmæssig beregning**. </br></br><ul><li>**Dagligt** – laver en forholdsmæssig beregning af det antal flekskreditter, en medarbejder modtager til dagsniveauet. Det samlede antal flekskreditter divideres med antallet af dage i perioden. Hvis din frynsegodeperiode f.eks. er 400 dage, vil systemet dividere det samlede antal flekskreditter med 400 for at beregne antallet af flekskreditter, som medarbejderne får pr. dag.</li><li>**Aktuel måned** – laver en forholdsmæssig beregning af flekskreditter, som en medarbejder modtager til månedsniveauet, afrundet til den aktuelle måned. Det samlede antal flekskreditter divideres med antallet af måneder i perioden. Hvis din frynsegodeperiode f.eks. er 15 måneder, vil systemet dividere det samlede antal flekskreditter med 15 for at beregne antallet af flekskreditter, som medarbejderne får pr. måned.</li><li>**Følgende måned** – laver en forholdsmæssig beregning af flekskreditter, som en medarbejder modtager til månedsniveauet, afrundet til den næste måned. Det samlede antal flekskreditter divideres med antallet af måneder i perioden. Hvis din frynsegodeperiode f.eks. er 15 måneder, dividerer systemet det samlede antal flekskreditter med 15 for at beregne antallet af flekskreditter, som medarbejderne får pr. måned.</li></ul> |
+   | **Personalegodekredit-id** | Det entydige id for flekskreditprogrammet. |
+   | **Beskrivelse** | En beskrivelse af flekskreditprogrammet. | 
+   | **Fra-dato** | Den dato og det klokkeslæt, hvor flekskreditprogrammet bliver aktivt. |
+   | **Til-dato** | Slutdatoen for flekskreditprogrammet. Du kan beholde standardværdien (12/31/2154) for at angive, at der ikke er et planlagt udløb for flekskreditprogrammet. |
+   | **Kreditværdi i alt** | Det antal kreditter, hver medarbejder skal bruge til deres frynsegoder. |
+   | **Regel for forholdsmæssig beregning** | Den regel, der skal bruges til forholdsmæssig beregning af flekskreditter, når der ansættes en medarbejder midt i flekskreditperioden. </br></br><ul><li>**Ingen** – medarbejderen får ingen flekskreditter, hvis de er ansat efter starten på perioden for flekskreditprogrammet.</li><li>**Fuld kredit** – medarbejderen modtager det fulde beløb af flekskreditter, uanset hvornår de er ansat.</li><li>**Beregn forholdsmæssigt** – medarbejderen modtager et forholdsmæssigt beløb af flekskreditter baseret på deres startdato.</li></ul> |
+   | **Formel for forholdsmæssig beregning af flekskredit** | Den regel, der skal bruges til forholdsmæssig beregning af flekskreditter for medarbejdere, som ansættes midt i en frynsegodeperiode for flekskreditprogrammet. Forholdsberegningen er baseret på ansættelsens startdato. Dette felt bruges kun, hvis du vælger **Beregn forholdsmæssigt** i feltet **Regel for forholdsmæssig beregning**. </br></br><ul><li>**Dagligt** – laver en forholdsmæssig beregning af det antal flekskreditter, en medarbejder modtager til dagsniveauet. Det samlede antal flekskreditter divideres med antallet af dage i perioden. Hvis din frynsegodeperiode f.eks. er 400 dage, vil systemet dividere det samlede antal flekskreditter med 400 for at beregne antallet af flekskreditter, som medarbejderne får pr. dag.</li><li>**Aktuel måned** – laver en forholdsmæssig beregning af flekskreditter, som en medarbejder modtager til månedsniveauet, afrundet til den aktuelle måned. Det samlede antal flekskreditter divideres med antallet af måneder i perioden. Hvis din frynsegodeperiode f.eks. er 15 måneder, vil systemet dividere det samlede antal flekskreditter med 15 for at beregne antallet af flekskreditter, som medarbejderne får pr. måned.</li><li>**Følgende måned** – laver en forholdsmæssig beregning af flekskreditter, som en medarbejder modtager til månedsniveauet, afrundet til den næste måned. Det samlede antal flekskreditter divideres med antallet af måneder i perioden. Hvis din frynsegodeperiode f.eks. er 15 måneder, dividerer systemet det samlede antal flekskreditter med 15 for at beregne antallet af flekskreditter, som medarbejderne får pr. måned.</li></ul> |
    
    Sørg for, at de enkelte frynsegodeplaner kun er tilmeldt i ét flekskreditprogram pr. frynsegodeperiode. Ellers ved systemet ikke, hvilket flekskreditprogram der skal bruges til at tildele flekskreditter, og der vil opstå problemer. 
 

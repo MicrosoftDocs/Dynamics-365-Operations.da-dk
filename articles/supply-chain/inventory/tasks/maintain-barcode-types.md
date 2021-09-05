@@ -1,5 +1,5 @@
 ---
-title: Vedligehold stregkodetyper
+title: Vedligeholde stregkodetyper
 description: Denne procedure viser, hvordan du opretter en ny stregkodedefinition, som derefter kan bruges som en del af pluklisterapporten.
 author: perlynne
 ms.date: 08/29/2018
@@ -14,34 +14,34 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 60fa8051ebe71c2606a5d6d3d1e22ec852023dd47301a008c98e9f4d7deaad29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 052311e15aeb20b927cbed217a2bda600dad60a5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755342"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345644"
 ---
-# <a name="maintain-barcode-types"></a>Vedligehold stregkodetyper
+# <a name="maintain-bar-code-types"></a>Vedligeholde stregkodetyper
 
 [!include [banner](../../includes/banner.md)]
 
 Denne procedure viser, hvordan du opretter en ny stregkodedefinition, som derefter kan bruges som en del af pluklisterapporten. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data. Hvis du bruger USMF, kan du bruge eksempelværdier, der vises. Disse opgaver udføres normalt af en lagerchef.
 
-1. Gå til Stregkoder.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Stregkodeopsætning.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Vælg en indstilling i feltet Stregkodetype.
+1. Gå til **Stregkoder**.
+1. Vælg **Ny**.
+1. Skriv en værdi i feltet **Stregkodeopsætning**.
+1. Indtast en værdi i feltet **Beskrivelse**.
+1. Vælg en indstilling i feltet **Stregkodetype**.
     * Hvis du bruger USMF, kan du vælge "Kode 39".  
-6. Angiv et tal i feltet Størrelse.
-7. Angiv et tal i feltet Maksimumlængde.
-8. Klik på Gem.
-9. Luk siden.
-10. Gå til Parametre til lager- og lokationsstyring.
-11. Indtast eller vælg en værdi i feltet Stregkodeopsætning.
+1. Angiv et tal i feltet **Størrelse**.
+1. Angiv et tal i feltet **Maksimumlængde**.
+1. Vælg **Gem**.
+1. Luk siden.
+1. Gå til **Parametre til lager- og lagerstedsstyring**.
+1. Indtast eller vælg en værdi i feltet **Stregkodeopsætning**.
     * Vælg den stregkodeopsætning, som du oprettede før, men vær opmærksom på, at stregkodeformatet skal svare til formatet for det entydige id for den posttype, der bruges i processen. For eksempel bør stregkodeformatet til plukruter være samme format som til plukrutereferencen, der typisk er en nummerserie.  
-12. Klik på Gem.
-13. Luk siden.
+1. Vælg **Gem**.
+1. Luk siden.
 
 
 

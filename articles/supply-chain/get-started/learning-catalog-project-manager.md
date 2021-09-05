@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 76e7c0be047decb40019be207a735be27f79d78b4cde9321e8c3728bdbd45e35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b337e80db6d47354dc187477832add370a164172
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760532"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402195"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-supply-chain-management"></a>Undervisningskatalog for projektlederens implementeringsarbejde med Dynamics 365 Supply Chain Management
 
@@ -27,8 +27,8 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="get-started"></a>Introduktion<a name="get-started"></a>
 
-| Indhold | Beskrivende tekst  | Formater  | Længde    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
+| Indhold | Beskrivende tekst | Formater | Længde |
+|---------|-------------|--------|--------|
 | [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed. | Gratis onlinelæringssti i dit eget tempo | 7 timer |
 | [Grundlæggende funktioner i Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo | 5.5 timer |
 | [Kom i gang med Finance and Operations-apps](/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan Finance and Operations-apps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations-apps skal du være bekendt med deres funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
@@ -38,8 +38,8 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="core-platform-knowledge"></a>Viden om kerneplatformen<a name="core-platform-knowledge"></a>
 
-| Indhold  | Beskrivende tekst  | Formater   | Længde    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Indhold | Beskrivende tekst | Formater | Længde |
+|---------|-------------|--------|--------|
 | [Bruge Lifecycle Services (LCS) til at designe og planlægge implementering af Finance and Operations-apps](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) er et samarbejdsområde, som kunder og deres partnere bruger til at styre projekter i Finance and Operations-apps fra førsalg til implementeringsfasen og til sidst til produktionsmiljøet. Det indeholder kontrollister og værktøjer, der kan hjælpe dig med at administrere projektet, herunder forhåndsoprettede metoder, der hjælper med implementering og regelmæssigt opdaterede tjenester. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
 | [Konfigurere din organisation i Finance and Operations-apps](/learn/paths/configure-your-organization-finance-ops/) | Som en funktionel konsulent, der arbejder med Finance and Operations-apps, skal du vide, hvordan du opretter en organisation til kunden. Denne undervisningssti viser dig, blandt andre opgaver, hvordan du konfigurerer juridiske enheder, implementerer sikkerhedsindstillinger, tilpasser brugergrænsefladen efter brugere, designer og bygger mobilapps og implementerer fælles integrationer. | Gratis onlinelæringssti i dit eget tempo | 12 timer |
 | [Overføre data og skifte til live med Finance and Operations-apps](/learn/paths/migrate-data-go-live-finance-operations/) | Som funktionel konsulent skal du vide, hvordan du skal forberede kundens data til migrering, arbejde med datastyring og udføre test af brugeraccept for at gå online med Finance and Operations-apps. | Gratis onlinelæringssti i dit eget tempo | 4 timer |
@@ -69,8 +69,8 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="supply-chain-management"></a>Administration af leveringskæde<a name="supply-chain-management"></a>
 
-| Indhold  | Beskrivende tekst  | Formater | Længde    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Indhold | Beskrivende tekst | Formater | Længde |
+|---------|-------------|--------|--------|
 | [Konfigurere og administrere produkter og lager i Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Produktoplysninger er rygraden for supply chain- og detailprogrammer på tværs af alle brancher. I de forskellige moduler i en virksomhedsløsning kræves der produktspecifikke oplysninger og konfigurationer for at administrere de forretningsprocesser, der er relateret til bestemte produkter, produktfamilier, styklister eller produktkategorier. Lagerrapporter viser, hvor stor lagerbeholdning der er på forskellige måder, og vil være en god beskrivelse af, hvordan du kan blive mere effektiv i dine lagerinvesteringer. | Gratis onlinelæringssti i dit eget tempo | 6 timer |
 | [Konfigurere og administrere indkøb og leverandører i Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Processen med at finde og samarbejde med leverandører, indkøbe produkter og sikre kvaliteten af varer og tjenester er alle vigtige faktorer, der har indflydelse på et firmas omdømme og succes. | Gratis onlinelæringssti i dit eget tempo | 6 timer |
 | [Konfigurere og arbejde med lokationsstyring i Dynamics 365 for Finance and Operations](/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Lokationsstyring i Dynamics 365 for Finance and Operations gør det lettere at optimere og strømline lagerprocesser i henhold til individuelle behov og giver indblik i dit lager og de værktøjer, der er med til at øge kundetilfredsheden og reducere omkostningerne. | Gratis onlinelæringssti i dit eget tempo | 5 timer |
@@ -86,8 +86,8 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="manufacturing"></a>Produktion<a name="manufacturing"></a>
 
-| Indhold  | Beskrivende tekst  | Formater    | Længde    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Indhold | Beskrivende tekst | Formater | Længde |
+|---------|-------------|--------|--------|
 | [Konfigurere og bruge diskret produktion i Dynamics 365 Supply Chain Management](/learn/paths/configure-use-discrete-manufacturing-dyn365-supply-chain-mgmt/) | Hvis et firma kun producerer simple produkter, kan produktionen planlægges manuelt med de korrekte styklister, der ankommer til produktionsfabrikken på det korrekte tidspunkt og ved den rigtige ressource. Som en funktionel konsulent for produktion har du brug for at vide, hvordan du skal konfigurere Dynamics 365 for Finance and Operations til diskret produktion, så kunden kan udføre og styre produktionens livscyklus. | Gratis onlinelæringssti i dit eget tempo | 9 timer |
 | [Konfigurere og bruge lean manufacturing i Dynamics 365 Supply Chain Management](/learn/paths/configure-use-lean-manufacturing-dyn365-supply-chain-mgmt/) | Lean manufacturing er et forløb med løbende forbedringer. Målet er at fremlægge præcist, hvad kunden ønsker, hvornår kunden ønsker det, og at gøre det økonomisk. Du kan bruge lean manufacturing i et samlet produktionsmiljø (blandet tilstand), der kombinerer forskellige strategier for levering, produktion og forsyning. Disse strategier omfatter produktionsordrer, batch-ordrer til forarbejdningsindustrier, købsordrer og overflytningsordrer. Lean manufacturing-arkitektur i Dynamics 365 for Finance and Operations består af produktionsflow, aktiviteter og kanban-regler. | Gratis onlinelæringssti i dit eget tempo | 6.5 timer |
 | [Konfigurere og bruge procesfremstilling i Dynamics 365 Supply Chain Management](/learn/paths/configure-use-process-manufacturing-dyn365-supply-chain-mgmt/) | Procesfremstilling er knyttet til formler og produktionsopskrifter, i modsætning til diskret produktion, som bruger diskrete enheder og styklister. Procesfremstilling bruges i produktionsmiljøer, hvor produktionen fuldføres i batchprocesser eller halvkontinuerlige processer. | Gratis onlinelæringssti i dit eget tempo | 6 timer |
@@ -98,13 +98,12 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="exams"></a>Eksamener<a name="exams"></a>
 
-| Indhold  | Beskrivende tekst  | Formater   |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|---------------------------------------------------------------------------|
+| Indhold | Beskrivende tekst | Formater |
+|---------|-------------|--------|
 | [Microsoft-certificeret: Dynamics 365 for Finance and Operations, tilknyttet funktionel konsulent i Supply Chain Management](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft-certificeret: Dynamics 365 for Finance and Operations, funktionelle konsulenter i Supply Chain Management strømliner omkostningsregnskab, lagerstyring, varedisponering og lokationsstyring for kunderne. | Certificering, hvor omkostning varierer alt efter region |
 | [Microsoft-certificeret: Dynamics 365 for Finance and Operations, tilknyttet funktionel produktionskonsulent](https://www.microsoft.com/learning/d365-functional-consultant-manufacturing.aspx) | Microsoft-certificeret Dynamics 365 for Finance and Operations, funktionelle produktionskonsulenter integrerer digitale og fysiske systemer, forbedrer synlighed, produktionens effektivitet og fleksibilitet og reducerer omkostningerne for deres klienter. | Certificering, hvor omkostning varierer alt efter region |
 | [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: bruge almindelige funktioner og implementeringsværktøjer, konfigurere sikkerhed, processer og indstillinger, udføre dataoverførsel og validere og understøtte løsningen. | Eksamen, hvor omkostning varierer alt efter region |
 | [Eksamen MB-320: Microsoft Dynamics 365 for Finance and Operations, produktion](/learn/certifications/exams/mb-320?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: oprette og konfigurere produktion, oprette og administrere produktion og lean-ordrer samt oprette, behandle og styre produktionsbatchordrer. | Eksamen, hvor omkostning varierer alt efter region |
 | [Eksamen MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: implementere administration af produktoplysninger, implementere lagerstyring, implementere og styre forsyningskædeprocesser samt implementere lokationsstyring og transportstyring og udføre forretningsprocesser. | Eksamen, hvor omkostning varierer alt efter region |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

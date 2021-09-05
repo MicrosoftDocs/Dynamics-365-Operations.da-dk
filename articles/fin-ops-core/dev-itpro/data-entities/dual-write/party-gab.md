@@ -2,19 +2,19 @@
 title: Part og globalt adressekartotek
 description: I dette emne beskrives funktionen til part og globalt adressekartotek for dobbeltskrivning.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 3cb4cdaefe7bd82dec612a11d75aeedb77bce152a00ff90fb0095f75b23a4bbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729770"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386679"
 ---
 # <a name="party-and-global-address-book"></a>Part og globalt adressekartotek
 
@@ -139,7 +139,10 @@ Gitteret indeholder følgende kolonner:
 
 Du kan bruge knappen **Ny elektronisk adresse** over gitteret til at oprette så mange adresser, du vil.
 
-Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versioner fjernes alle felter med postadresser og elektroniske adresser fra andre faner (f.eks. fanerne **Oversigt** og **Detaljer**).
+Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versioner fjernes alle felter med postadresser og elektroniske adresser fra andre faner, f.eks. fanerne **Oversigt** og **Detaljer**. De kontaktoplysninger, der vises under fanen **Detaljer**, er skrivebeskyttede kopier af den primære elektroniske adresse, f.eks. primær telefon, primær email, primær telefon, primær fax og primært Twitter-id. Under kvalificeringsprocessen for potentielle kunder kan du både angive et firmatelefonnummer og et mobiltelefonnummer. Firmatelefonnummeret betragtes som den primære telefon, hvis **IsNøgle=No**, og mobiltelefonnummeret betragtes som den sekundære telefon, hvis **IsMobile=Yes**.
+
+> [!TIP]
+> Brug fanerne **Adresser** og **Elektroniske adresser** i formularerne **Konto** og **Kontakt** til at administrere postadresser og elektroniske adresser. Derved sikres det, at adressedata synkroniseres med Finance and Operations-apps.
 
 ## <a name="setup"></a>Konfiguration
 
@@ -249,13 +252,11 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
     [CDS-salgsordrehoveder](mapping-reference.md#217) | salesorders
     [Salgsfakturahoveder V2](mapping-reference.md#118) | fakturaer
 
-> [!Note]
+> [!NOTE]
 > Tilknytningen `CDS Contacts V2 (contacts)` er den tilknytning, du standsede i trin 1. Når du forsøger at køre andre tilknytninger, vises disse to tilknytninger muligvis på listen over afhængige. Du skal ikke køre disse tilknytninger.
-
-> [!Note]
+>
 > Hvis løsningen for part og globalt adressekartotek er installeret, skal du deaktivere plug-in med navnet `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Hvis du fjerner løsningen for part og globalt adressekartotek, skal du genaktivere plug-in.
-
-> [!Note]
+>
 > Feltet `msdyn_*partynumber` (et enkelt linjetekstfelt), der er inkluderet i tabellerne **Konto**, **Kontakt** og **Leverandør**, bør ikke bruges fremover. Etiketnavnet har præfikset **(Frarådet)** for at specificere det. Brug i stedet feltet **msdyn_partyid**. Feltet er et opslag i tabellen **msdyn_party**.
 
 > Tabelnavn | Gammelt felt | Nyt felt
@@ -296,7 +297,6 @@ Du kan finde flere oplysninger i [referencen til tilknytning af dobbeltskrivning
 
 + Når du opretter en kunde sammen med adressen og gemmer den, synkroniseres adressen muligvis ikke med tabellen **Adresse** i Finance and Operations. Det skyldes et problem med rækkefølge på platformen for dobbeltskrivning. En løsning er først at oprette kunden og derefter gemme. Tilføj derefter adressen.
 + Når en kundepost har en primær adresse i et apps, og du opretter en ny kontakt for den pågældende kunde, arver kontaktposten en primær adresse fra den tilknyttede kundepost i Finance and Operations. Det sker også for leverandørkontakten. Dataverse understøtter ikke denne funktionsmåde i øjeblikket. Hvis dobbeltskrivning er aktiveret, synkroniseres en kundes kontakter, der er nedarvet med en primær adresse fra appen Finance and Operations, med Dataverse sammen med adressen.
-+ Elektroniske adresser fra tabellen `msdyn_partyelectronicaddress` føres ikke til de elektroniske adressefelter i tabellerne **Konto** og **Kontakt**. Vi planlægger at løse dette problem trinvist i næste versioner. De eksisterende data i de elektroniske adressefelter i tabellerne **Konto** og **Kontakt** overskrives ikke.
 + Elektroniske adresser, der er angivet under fanen for elektroniske adresser i formularerne **Konto**, **Kontakt** og **Leverandør** kommer fra tabellen `msdyn_partyelectronicaddress`. Disse oplysninger føres ikke til tilknyttede transaktioner som f.eks. salgsordre, tilbud og indkøbsordre. Vi planlægger at løse dette problem trinvist i næste versioner. De eksisterende data i de elektroniske adressefelter på kontoen og kontaktposterne vil fortsat fungere for transaktioner som f.eks. salgsordre, tilbud og indkøbsordre.
 + I Finance and Operations-apps kan du oprette en kontaktpost fra formularen **Tilføj kontakt**. Når du forsøger at oprette en ny kontakt fra formularen **Vis kontakt**, mislykkes handlingen. Dette er et kendt problem.
 

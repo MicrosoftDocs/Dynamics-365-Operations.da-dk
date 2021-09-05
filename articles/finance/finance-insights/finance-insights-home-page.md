@@ -1,5 +1,5 @@
 ---
-title: Startside for Finance Insights (prøveversion)
+title: Startside for Finance insights
 description: Med Finance Insights kan du konfigurere og udvide modeller, så du præcist og intelligent kan forudsige virksomhedens pengestrøm, forudsige, hvornår du vil modtage betaling for udestående tilgodehavender, og generere et budgetforslag, der kan gøre budgetteringsprocessen hurtigere. Alle disse funktioner er baseret på intelligente Machine Learning-modeller.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8c9d5b9857e978eb5e591f4d854d687f33b438025e81fe2c827ab7ecdb2be4e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b77b7872ed163a94ab57e4efea8fe0fbca22156
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768813"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386380"
 ---
-# <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (prøveversion)
+# <a name="finance-insights-home-page"></a>Startside for Finance insights
 
 [!include [banner](../includes/banner.md)]
 
@@ -110,7 +110,7 @@ Du kan finde flere oplysninger om resultaterne af AI-forudsigelsesmodeller i [Re
 Likviditetsbudgettet kan hjælpe dig med mere nøjagtigt at vurdere din likvide situation. 
 
 - Få mere at vide om de nye muligheder i likviditetsbudgetter under [Likviditetsbudget](cash-flow-forecast-intro.md).
-- Du kan finde oplysninger om, hvordan du importerer eksterne data, så de medtages i disponeringsprognosen, i [Brug eksterne data i likviditetsbudgetter](external-data-in-cash-flow.md). 
+- Du kan finde oplysninger om, hvordan du importerer eksterne data, så de medtages i dækningsprognosen, i [Brug eksterne data i likviditetsbudgetter](external-data-in-cash-flow.md). 
 - Du kan finde flere oplysninger om, hvordan du bruger en AI-model til kortsigtet likviditet, under [Likviditet](cash-position.md).
 - Du kan finde flere oplysninger om at gemme likviditetspositioner og likviditetsbudgetter som snapshots og til at sammenligne et snapshot med faktiske oplysninger i [Snapshots-oversigten](payment-snapshots.md).
 
@@ -120,6 +120,6 @@ Oplysninger om, hvordan du kan fremskynde oprettelsen af et budget, finder du i 
 
 ## <a name="feedback-and-support"></a>Feedback og support
 
-Send en e-mail til [Indsigt i debitorbetaling (prøveversion)](mailto:fiap@microsoft.com), hvis du er interesseret i at give feedback eller har brug for support.
+Send en email til [Indsigt i debitorbetaling (prøveversion)](mailto:fiap@microsoft.com), hvis du er interesseret i at give feedback eller har brug for support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

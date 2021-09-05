@@ -1,8 +1,8 @@
 ---
 title: Oversigt over administration af frynsegoder
-description: Oversigt over funktionen Administration af frynsegoder i Dynamics 365 Human Resources. Tilbyd dine medarbejdere mulighed for ekstra frynsegoder via en brugervenlig onlineoplevelse.
-author: andreabichsel
-ms.date: 07/13/2021
+description: Dette emne indeholder en oversigt over funktionen Frynsegodeadministration i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719137"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417386"
 ---
 # <a name="benefits-management-overview"></a>Oversigt over administration af frynsegoder
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Hvis du vil forblive konkurrencedygtig, skal du tilbyde en lang række frynsegoder for at tiltrække og holde på dine bedste medarbejdere. Ud over standardfrynsekoder som sundhedsforsikring og tandlægedækning kan det også være en god idé at tilbyde udvidede tjenester som hjælp til adoption, rekreative ordninger og beklædningsgodtgørelse. Administration af frynsegoder i Microsoft Dynamics 365 Human Resources giver dig en fleksibel løsning, som understøtter en lang række frynsegodemuligheder. Human Resources inkluderer også en brugervenlig medarbejderoplevelse, der viser det, du tilbyder.
+Hvis du vil forblive konkurrencedygtig, skal du tilbyde en lang række frynsegoder for at tiltrække og holde på dine bedste medarbejdere. Ud over standardfrynsekoder som sundhedsforsikring og tandlægedækning kan det også være en god idé at tilbyde udvidede tjenester som hjælp til adoption, rekreative ordninger og beklædningsgodtgørelse. Frynsegodeadministration i Microsoft Dynamics 365 Human Resources er en fleksibel løsning, som understøtter en lang række frynsegodeindstillinger. Human Resources inkluderer også en brugervenlig medarbejderoplevelse, der viser det, du tilbyder.
 
 - Forbedrede frynsegodeplaner giver dig mulighed for at oprette og administrere unikke frynsegodeplaner og understøtte komplekse satstabeller for frynsegoder og indlejrede niveauer. Du kan nemt oprette frynsegodeprogrammer, pakker og regler for automatisk registrering, der gør det nemmere for medarbejderne.
 - Med flekskreditprogrammer kan du gøre det muligt at understøtte pension og andre levetidshændelser.
@@ -37,13 +37,13 @@ Hvis du vil forblive konkurrencedygtig, skal du tilbyde en lang række frynsegod
 Hvis du vil have adgang til demodataene, skal du geninstallere dit sandkassemiljø.
 
 > [!NOTE]
-> Du kan nu tilpasse formularer til administration af frynsegoder. Du kan nu føje brugerdefinerede felter, der vedrører disponeringsgrader, til formularen **Disponeringsindstilling** for frynsegodeplaner. Du kan finde flere oplysninger om arbejde med brugerdefinerede felter i [Brugerdefinerede felter](hr-developer-custom-fields.md).
+> Du kan nu tilpasse siderne for Frynsegodeadministration. Brugerdefinerede felter, der vedrører dækningssatser, kan føjes til siden **Dækningsindstilling** for frynsegodeplaner. Du kan finde flere oplysninger om arbejde med brugerdefinerede felter i [Brugerdefinerede felter](hr-developer-custom-fields.md).
 >
 > ![Brugerdefinerede felter for administration af frynsegoder](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Aktivere Administration af frynsegoder
 
-I dette emne beskrives, hvordan du slår funktioner til i Human Resources. Den angiver også, hvilke eksisterende funktioner i Human Resources erstattes af Frynsegodeadministration, eller hvilke funktioner der deaktiveres, når du aktiverer Frynsegodeadministration.
+I dette emne beskrives, hvordan du slår funktioner til i Human Resources. Det forklarer også, hvilke eksisterende funktioner i Human Resources der erstattes af Frynsegodeadministration, og hvilke funktioner der deaktiveres, når du aktiverer Frynsegodeadministration.
 
 > [!IMPORTANT]
 > Når du aktiverer Administration af frynsegoder i et **produktionsmiljø**, kan du ikke deaktivere det. Vi anbefaler, at du aktiverer og tester Administration af frynsegoder i et **sandkassemiljø**, før du aktiverer det i et **produktionsmiljø**. Der er betydelige forskelle mellem den gamle frynsegodefunktionalitet og de nye funktioner til administration af frynsegoder, der kræver yderligere opsætning, og som skal testes, før de bringes i produktion.
@@ -135,9 +135,9 @@ I løbet af medarbejderens livscyklus kan de enkelte medarbejdere opleve forskel
 
 Før du kan behandle livshændelser, skal du allerede have kørt åben tilmelding mindst én gang i en ansættelsesperiode. I USA foregår åbne tilmeldinger typisk én gang om året. Uden for USA kan åben tilmelding forekomme på ansættelsestidspunktet. Behandling af livshændelser kræver ikke, at arbejderne vælger en frynsegodeplan. Arbejderne skal imidlertid være medtaget i åben tilmeldingsbehandling. Du kan finde flere oplysninger under følgende emner:
 
-- [Behandle livsbegivenheder](hr-benefits-process-life-events.md)
-- [Behandle ændringer af livsbegivenheder](hr-benefits-process-life-event-changes.md)
-- [Behandle berettigelse til livsbegivenheder](hr-benefits-process-life-event-eligibility.md)
+- [Behandle livshændelser](hr-benefits-process-life-events.md)
+- [Behandle ændringer af livshændelser](hr-benefits-process-life-event-changes.md)
+- [Behandle berettigelse til livshændelser](hr-benefits-process-life-event-eligibility.md)
 
 ## <a name="rate-updates-optional"></a>Satsopdateringer (valgfrit)
 

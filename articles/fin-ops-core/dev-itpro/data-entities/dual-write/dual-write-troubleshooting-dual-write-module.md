@@ -2,26 +2,19 @@
 title: Foretage fejlfinding af problemer med dobbeltskrivning i Finance and Operations-apps
 description: Dette emne indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med dobbeltskrivningsmodulet i Finance and Operations-apps.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6689fae215937f58c93cce72df3fa0a1b5aecd3a5ac9913981b253344a1ba13f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90ff55540c153ef4f3ac07bf5316a3abb4755f2c
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720730"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380134"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Foretage fejlfinding af problemer med dobbeltskrivning i Finance and Operations-apps
 
@@ -44,8 +37,7 @@ Hvis du ikke kan åbne **Dobbeltskrivning**-siden ved at vælge titlen **Dobbelt
 
 Du kan få vist følgende fejlmeddelelse, når du forsøger at konfigurere en ny tabel til dobbeltskrivning. Den eneste bruger, der kan oprette en tilknytning, er den bruger, der har konfigureret dobbeltskrivningsforbindelsen.
 
-*Svarstatuskoden tyder ikke på, at handlingen lykkedes: 401 (uautoriseret)*
-
+*Svarstatuskoden tyder ikke på, at handlingen lykkedes: 401 (uautoriseret).*
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Fejl, når du åbner brugergrænsefladen til dobbeltskrivning
 
@@ -61,7 +53,11 @@ Du kan løse problemet ved at logge på ved hjælp af et InPrivate-vindue i Micr
 
 Der kan opstå følgende fejl under sammenkædning eller oprettelse af tilknytninger:
 
-*Svarstatuskoden tyder ikke på, at handlingen lykkedes: 403 (tokenexchange).<br> Sessions-id: \<your session id\><br> Rodaktivitets-id: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 Denne fejl kan forekomme, hvis du ikke har de nødvendige rettigheder til at sammenkæde dobbeltskrivning eller oprette tilknytninger. Denne fejl kan også opstå, hvis Dataverse-miljøet blev nulstillet uden at fjerne tilknytningen til dobbeltskrivning. Enhver bruger med rollen Systemadministrator i både Finance and Operations-apps og Dataverse kan sammenkæde miljøerne. Kun den bruger, der har konfigureret dobbeltskrivningsforbindelsen, kan tilføje nye tabeltilknytninger. Efter installationen kan enhver bruger med rollen Systemadministrator overvåge status og redigere tilknytningerne.
 
@@ -75,16 +71,29 @@ Denne fejl opstår, når det sammenkædede Dataverse-miljø ikke er tilgængelig
 
 Du kan løse problemet ved at oprette en supportanmodning til dataintegrationsteamet. Tilknyt netværkssporingen, så dataintegrationsteamet kan markere tilknytningerne som **Kører ikke** i backend.
 
-## <a name="error-while-trying-to-start-a-table-mapping"></a>Der opstod en fejl under forsøg på at starte en tabeltilknytning
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>Der opstod fejl under forsøg på at starte en tabeltilknytning
 
-Du kan få vist en fejl som følgende, når du forsøger at angive denne tilstand for en tilknytning til **Kører**:
+### <a name="unable-to-complete-initial-data-sync"></a>Den første datasynkronisering kunne ikke fuldføres
+
+Du kan få vist en fejlmeddelelse som den følgende, når du forsøger at køre den første synkronisering:
 
 *Den indledende datasynkronisering kan ikke fuldføres. Fejl: dobbeltskrivningsfejl - plugin-registrering mislykkedes: Der kan ikke oprettes metadata til dobbeltskrivningsopslag. Objektreference er ikke indstillet til en forekomst af et objekt.*
 
-Rettelsen til denne fejl afhænger af årsagen til fejlen:
+Når du forsøger at angive denne tilstand for en tilknytning til **Kører**, kan du modtage denne fejlmeddelelse: Rettelsen afhænger af årsagen til fejlen:
 
 + Hvis tilknytningen har afhængige tilknytninger, skal du sørge for at aktivere de afhængige tilknytninger for denne tabeltilknytning.
 + Tilknytningen mangler muligvis kilde- eller destinationskolonner. Hvis der mangler en kolonne i Finance and Operations-appen, skal du følge trinnene i afsnittet [Problemer med manglende tabelkolonner i tilknytninger](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Hvis der mangler en kolonne i Dataverse, skal du klikke på knappen **Opdater tabeller** på tilknytningen, så kolonnerne automatisk udfyldes i tilknytningen.
 
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Fejl pga. uoverensstemmelse mellem versioner og opgradering af dobbeltskrivningsløsninger
+
+Du kan få vist følgende fejlmeddelelser, når du forsøger at køre tabeltilknytningerne:
+
++ *Debitorgrupper (msdyn_customergroups): Fejl under dobbeltskrivning - Dynamics 365 for Sales-løsningen 'Dynamics365Company har uoverensstemmelse mellem versioner. Version: '2.0.2.10' Påkrævet version: '2.0.133'*
++ *Dynamics 365 for Sales-løsningen 'Dynamics365FinanceExtended' har uoverensstemmelse mellem versioner. Version: '1.0.0.0' Påkrævet version: '2.0.227'*
++ *Dynamics 365 for Sales-løsningen 'Dynamics365FinanceAndOperationsCommon' har uoverensstemmelse mellem versioner. Version: '1.0.0.0' Påkrævet version: '2.0.133'*
++ *Dynamics 365 for Sales-løsningen 'CurrencyExchangeRates' har uoverensstemmelse mellem versioner. Version: '1.0.0.0' Påkrævet version: '2.0.133'*
++ *Dynamics 365 for Sales-løsningen 'Dynamics365SupplyChainExtended' har uoverensstemmelse mellem versioner. Version: '1.0.0.0' Påkrævet version: '2.0.227'*
+
+Du kan løse problemerne ved at opdatere løsningerne til dobbeltskrivning i Dataverse. Sørg for at opgradere til den seneste løsning, som svarer til den ønskede løsningsversion.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

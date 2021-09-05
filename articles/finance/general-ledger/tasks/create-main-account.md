@@ -1,6 +1,6 @@
 ---
 title: Oprette en hovedkonto
-description: Denne opgaveguide gennemgår tilføjelse af en hovedkonto til en eksisterende kontoplan.
+description: Disse procedurer gennemgår, hvordan du føjer en hovedkonto til en eksisterende kontoplan.
 author: aprilolson
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66e248d029063d4a465ad789e5eb193706b8a2351bf659306050c7ac7d1c950d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbc93e2d2aec1ffcfa755c46553022931bc24c5b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729624"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394629"
 ---
 # <a name="create-a-main-account"></a>Oprette en hovedkonto
 
 [!include [banner](../../includes/banner.md)]
 
-Denne opgaveguide gennemgår tilføjelse af en hovedkonto til en eksisterende kontoplan. Denne registrering anvender demofirmaet USMF.  
+Disse procedurer gennemgår, hvordan du føjer en hovedkonto til en eksisterende kontoplan. Denne registrering anvender demofirmaet USMF.  
 
 1. Gå til **Navigationsrude > Moduler > Finans > Kontoplan > Konti > Hovedkonti**.
 2. Klik på **Ny**.

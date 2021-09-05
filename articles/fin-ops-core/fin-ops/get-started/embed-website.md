@@ -2,7 +2,7 @@
 title: Integrere tredjepartsapps
 description: Dette emne beskriver, hvordan du kan integrere tredjepartsapps for at forbedre produktets funktioner.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f47fb6a2fdb586fbc9f25938c3b9c1cfc16ddc1af432b91621421bd829b23925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737793"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345404"
 ---
 # <a name="embed-third-party-apps"></a>Integrere tredjepartsapps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Mange kunder bruger en række programmer til at køre deres virksomhed. Nogle af disse applikationer er webapps fra en tredjepart, som fungerer sammen med Finance and Operations-apps. For at give en mere problemfri brugeroplevelse kan du bruge funktionen **(Forhåndsvisning) Fuld side-apps** til at integrere disse tredjepartsapps direkte i dine Finance and Operations-apps (forudsat at disse tredjepartsapps tillader, at de bliver integreret). På denne måde kan brugere få adgang til de websteder og apps, de kræver, uden at skulle skifte faner eller vinduer.
+Mange kunder bruger en række programmer til at køre deres virksomhed. Nogle af disse applikationer er webapps fra en tredjepart, som fungerer sammen med Finance and Operations-apps. For at opnå en mere problemfri brugeroplevelse kan du bruge funktionen **Fuld side-apps** til at integrere disse tredjepartsapps direkte i dine Finance and Operations-apps (forudsat at disse tredjepartsapps tillader, at de bliver integreret). På denne måde kan brugere få adgang til de websteder og apps, de kræver, uden at skulle skifte faner eller vinduer.
 
-Før du kan integrere tredjepartsapps i produktet, skal du aktivere funktionen **(Forhåndsvisning) Fuld side-apps** i Funktionsstyring. Du kan derefter bruge en af følgende metoder til at integrere en tredjepartsapp eller et websted. Disse metoder svarer til de metoder, der bruges til at integrere lærredapps fra Microsoft Power Apps i Finance and Operations-apps.
+Før du kan integrere tredjepartsapps i produktet, skal du aktivere funktionen **Fuld side-apps** i Funktionsstyring. Du kan derefter bruge en af følgende metoder til at integrere en tredjepartsapp eller et websted. Disse metoder svarer til de metoder, der bruges til at integrere lærredapps fra Microsoft Power Apps i Finance and Operations-apps.
 
 - Integrer appen eller webstedet på en eksisterende side som en ny fane (pivot-fane, oversigtspanel, blad eller arbejdsområdesektionen).
 - Opret en ny fuld side-oplevelse for appen eller webstedet fra dashboardet.
@@ -64,7 +64,7 @@ Brug denne procedure, hvis du vil supplere en eksisterende side i systemet med e
 Brug denne procedure, hvis den app, du vil integrere, ikke er tilknyttet en eksisterende side, eller hvis du blot vil have en fuld side-oplevelse for appen i Finance and Operations-appen.
 
 1. Åbn dashboardet.
-2. Vælg og hold (eller højreklik) på siden, vælg **Tilpas**, og vælg derefter **Tilføj en side**.
+2. Vælg og hold (eller højreklik på) dashboardet, vælg **Tilpas**, og vælg derefter **Tilføj en side**.
 3. I ruden **Tilføj en side** skal du vælge **Websted**.
 4. Konfigurere den integrerede app:
 
@@ -76,15 +76,15 @@ Brug denne procedure, hvis den app, du vil integrere, ikke er tilknyttet en eksi
     > - Appen eller webstedet skal være konfigureret til at kunne blive integreret.
 
 5. Vælg **Gem** for at føje appen til dashboardet som et nyt felt.
-6. Vælg det nye felt på dashboardet, og bekræft, at appen vises som forventet. Hvis appen ikke er gengivet, skal du se afsnittet [Fejlfinding](#troubleshooting) senere i dette emne.
+6. Vælg det nye felt på dashboardet, og bekræft, at appen vises som forventet. Hvis appen ikke bliver gengivet, skal du se afsnittet [Fejlfinding](#troubleshooting) senere i dette emne.
 
 ## <a name="sharing-embedded-apps"></a>Deling af integrerede apps
 
 Når du har integreret en app ved hjælp af en af de metoder, der er beskrevet i de forrige afsnit, kan du dele visningen med andre brugere i systemet. Hvis du vil dele en integreret app, skal du benytte en af følgende metoder:
 
-- **Publicer visningen (Anbefalet):** Hvis den integrerede app er gemt i en visning, er den anbefalede og foretrukne metode at dele den ved at publicere visningen til brugere med de relevante sikkerhedsroller. Derefter vil alle brugere med de sikkerhedsroller, der er målet for den publicerede visning, kunne se appen i Finance and Operations-apps. Du kan finde flere oplysninger om, hvordan du publicerer en visning i [Publicering af visninger](saved-views.md#publishing-views).
+- **Publicer visningen (Anbefalet):** Hvis den integrerede app er gemt i en visning, er den anbefalede og foretrukne metode at dele den ved at publicere visningen til brugere med de relevante sikkerhedsroller i de tilsigtede juridiske enheder. I så fald er det kun de ønskede brugere, der kan se den integrerede app på den pågældende side. Du kan finde flere oplysninger om, hvordan du publicerer en visning i [Publicering af visninger](saved-views.md#publishing-views).
 
-    Du kan også publicere en app, der er integreret som en fuld side-oplevelse fra dashboardet. Vælg og hold (eller højreklik på) det felt på dashboardet, som er knyttet til appen, vælg **Tilpas**, og vælg derefter **Publicer side**. I øjeblikket kan du kun publicere til sikkerhedsroller. Funktionen til publicering til juridiske enheder vil dog blive tilføjet, før funktionen bliver generelt tilgængelig.
+    Du kan også publicere en app, der er integreret som en fuld side-oplevelse fra dashboardet. Vælg og hold (eller højreklik på) det felt på dashboardet, som er knyttet til appen, vælg **Tilpas**, og vælg derefter **Publicer side**. Visningen svarer til *Publicering af visninger*, og du kan vælge de sikkerhedsroller, der skal udgives til. I opdatering 10.0.21 eller senere, hvis funktionen **Forbedret understøttelse af juridiske enheder for gemte visninger** er slået til, kan du også publicere appen til de ønskede juridiske enheder.
 
 - **Kopier tilpasningen:** For sider, der ikke understøtter visninger (f.eks. dialogbokse eller arbejdsområder) eller for fuld side-appoplevelsen, kan du kopiere tilpasningen til de relevante brugere. Yderligere oplysninger finder du i [Deling af tilpasninger](personalize-user-experience.md#sharing-personalizations).
 

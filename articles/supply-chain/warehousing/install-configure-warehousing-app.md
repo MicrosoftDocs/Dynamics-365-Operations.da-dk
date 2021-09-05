@@ -16,19 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8386adc3f0e9c9a782e6cd5d4ba770f9650583b8ff3f32c3ac23478475d085ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 094d7f0f5642653c6e059952783041b1430e98d6
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753789"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384629"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installere og tilslutte lagerstedsapp
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Dette emne beskriver, hvordan du konfigurerer den gamle lagerstedsapp (som nu er frarådet). Hvis du leder efter oplysninger om, hvordan du konfigurerer den nye mobilapp Lokationsstyring, skal du se [Installere og forbinde mobilappen Lokationsstyring](install-configure-warehouse-management-app.md).
+> Dette emne beskriver, hvordan du konfigurerer den gamle lagerstedsapp (som nu er frarådet). Hvis du leder efter oplysninger om, hvordan du konfigurerer den nye mobilapp Warehouse Management, skal du se [Installere og forbinde mobilappen Warehouse Management](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > Dette emne beskriver, hvordan du konfigurerer lagerstedsappen for skyinstallationer. Hvis du søger efter oplysninger om, hvordan du konfigurerer lagerstedsappen for installationer i det lokale miljø, skal du se [Lagersted for installationer i det lokale miljø](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
@@ -136,8 +136,8 @@ Du kan importere forbindelsesindstillinger fra enten en fil eller en QR-kode. Ve
 | ConnectionName | Angiv navnet på forbindelsesindstillingen. Beskrivelsen må højst være på 20 tegn. Da denne værdi er et entydigt id for en forbindelsesindstilling, skal du sørge for, at den er entydig på listen. Hvis der allerede findes en forbindelse med samme navn på enheden, vil den blive tilsidesat af indstillingerne fra den importerede fil. |
 | ActiveDirectoryClientAppId | Angiv det klient-id, du har noteret, mens du var i opsætningen af Azure AD i afsnittet [Oprette en webtjenesteapplikation i Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Angiv rod-URL-adressen for Supply Chain Management. |
-| ActiveDirectoryTenant | Angiv den Azure AD-lejer, som du bruger sammen med Supply Chain Management-serveren. Denne værdi har formatet `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
-| Regnskab | Angiv den juridiske enhed i Supply Chain Management, som applikationen skal oprette forbindelse til. |
+| ActiveDirectoryTenant | Angiv det Azure AD-domænenavn, som du bruger til Supply Chain Management-serveren. Denne værdi har formatet `https://login.windows.net/<your-Azure-AD-domain-name>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Du kan finde flere oplysninger om, hvordan du finder dit Azure AD- domænenavn, under [Find vigtige id'er for en bruger](/partner-center/find-ids-and-domain-names). |
+| Virksomhed | Angiv den juridiske enhed i Supply Chain Management, som applikationen skal oprette forbindelse til. |
 | ConnectionType | (Valgfri) Angiv, om forbindelsesindstillingen skal bruge et certifikat eller en klienthemmelighed til at oprette forbindelse til et miljø. De gyldige værdier er *"certificate"* og *"clientsecret"*. Standardværdien er *"certificate"*.<p>**Bemærk!** Klienthemmeligheder kan ikke importeres.</p> |
 | IsEditable | (Valgfrit) Angiv, om appen skal kunne redigere forbindelsesindstillingen. Gyldige værdier er *"true"* og *"false"*. Standardværdien er *"true"*. |
 | IsDefault | (Valgfrit) Angiv, om forbindelsen er standardforbindelsen. En forbindelse, der er angivet som standardforbindelse, vælges automatisk på forhånd, når appen åbnes. Kun én forbindelse kan angives som standardforbindelsen. Gyldige værdier er *"true"* og *"false"*. Standardværdien er *"false"*. |
@@ -248,7 +248,7 @@ Du kan konfigurere manuelt på enheden, så den opretter forbindelse til Supply 
         > [!NOTE]
         > Undlad at afslutte denne værdi med en skråstreg (/).
 
-    - **Active Directory-lejer** – angiv den Azure AD-lejer, du bruger til Supply Chain Management-serveren. Denne værdi har formatet `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active Directory-lejer** – Angiv det Azure AD-domænenavn, du bruger til Supply Chain Management-serveren. Denne værdi har formatet `https://login.windows.net/<your-Azure-AD-domain-name>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Du kan finde flere oplysninger om, hvordan du finder dit Azure AD- domænenavn, under [Find vigtige id'er for en bruger](/partner-center/find-ids-and-domain-names).
 
         > [!NOTE]
         > Undlad at afslutte denne værdi med en skråstreg (/).

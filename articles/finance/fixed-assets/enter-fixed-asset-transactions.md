@@ -1,8 +1,8 @@
 ---
 title: Posteringsindstillinger for anlægsaktiv
 description: I dette emne beskrives de forskellige tilgængelige metoder til oprettelse af anlægsaktivtransaktioner.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1857d68a0dfaa25386f19344e4cb3ddc9ffd39b8a75860a1642773d6bd59cce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764257"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344684"
 ---
 # <a name="fixed-asset-transaction-options"></a>Posteringsindstillinger for anlægsaktiv
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 I dette emne beskrives de forskellige tilgængelige metoder til oprettelse af anlægsaktivtransaktioner.
 
@@ -58,14 +59,16 @@ Alle posteringstyper for anlægsaktiver kan bogføres på siden Finanskladde. Du
 | Afskrivning                        | Anlægsaktiver             | Anlægsaktiver                              |
 |                                     | Finans           | Finanskladde                           |
 | Kassation                            | Anlægsaktiver             | Anlægsaktiver                              |
-| ** **                               | Finans           | Finanskladde                           |
-| ** **                               | Debitor      | Fritekstfaktura                         |
+|                                     | Finans           | Finanskladde                           |
+|                                     | Debitor      | Fritekstfaktura                         |
 
-Afskrivningsperiodernes restværdi for anlægsaktivet opdateres ikke, når en afskrivningstransaktionstypes kladdelinje oprettes manuelt eller importeres via en dataenhed. Denne værdi opdateres, når afskrivningsforslagsprocessen bruges til at oprette kladdelinjen.
+Restværdien opdateres ikke for en anlægsaktivs afskrivningsperioder, når afskrivningstransaktionstypes kladdelinje oprettes manuelt eller importeres via en dataenhed. Restværdien opdateres, når afskrivningsforslagsprocessen bruges til at oprette kladdelinjen.
 
 Du kan finde flere oplysninger under [Integration af anlægsaktiver](fixed-asset-integration.md).
 
-### <a name="transactions-that-require-different-voucher-numbers"></a>Transaktioner, der kræver forskellige bilagsnumre
+Systemet forhindrer, at afskrivningen bogføres for samme periode to gange. Hvis to brugere f.eks. begge opretter afskrivningsforslag for januar, bogføres afskrivningen fra den første bruger i den første kladde. Når den anden bruger bogfører afskrivningem i den anden kladde, kontrollerer systemet den dato, hvor afskrivningen sidst blev kørt, og bogfører ikke afskrivningen for samme periode én gang til.
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>Transaktioner, der kræver et andet bilagsnummer
 
 Følgende anlægsaktivtransaktioner vil bruge forskellige bilagsnumre:
 

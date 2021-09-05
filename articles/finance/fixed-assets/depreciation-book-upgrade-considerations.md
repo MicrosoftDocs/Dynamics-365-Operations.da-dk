@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 757c8b9f2b57374e4b6d35c9be95b9e1dfe7f249c9ea903009cc26e16711bead
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344708"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Oversigt over opgradering af afskrivningsmodel
 
@@ -42,19 +42,19 @@ Mulighed 1: **Systemdefineret nummerserie** - Dette er standardindstillingen for
     -   Konstante navn: **NumberSequenceDefaultParameterPrefix**
     -   Standardværdi: "FADBUpgr"
 -   **Alfanumerisk længde** – Længden af alfanumerisk segment af nummerserien.
-    -   Konstante navn: **NumberSequenceDefaultParameterAlpanumericLength**
+    -   Konstantnavn: **NumberSequenceDefaultParameterAlpanumericLength**
     -   Standardværdi: 9
 -   **Startnummer** - Det første nummer i nummerserien.
-    -   Konstante navn: **NumberSequenceDefaultParameterStartNumber**
+    -   Konstantnavn: **NumberSequenceDefaultParameterStartNumber**
     -   Standardværdi: 1
 
 Mulighed 2: **Eksisterende brugerdefineret nummerserie** - Denne indstilling giver dig mulighed at definere den nummerserie, der skal bruges til opgraderingen. Overvej at bruge denne indstilling, hvis du har brug for konfiguration af avanceret nummerserie. Hvis du vil bruge en nummerserie, skal du ændre opgradering klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans med følgende oplysninger:
 
 -   **Nummerseriekode** – Koden for nummerserien.
-    -   Konstante navn: **NumberSequenceExistingCode **
+    -   Konstantnavn: **NumberSequenceExistingCode**
     -   Standardværdi: ingen standard. Den skal være opdateret til nummerseriekoden.
 -   **Delt nummerserie** – En boolesk værdi til at identificere omfanget af nummerserien. Brug "true" for delte nummerserier på tværs af alle virksomheder og "false" for en virksomhedens omfang. Når du bruger "false", skal nummerserien med det angivne navn findes i alle virksomheder, som indeholder afskrivningstransaktioner. Der findes delte nummerserier i hver partition, som indeholder afskrivningstransaktioner.
-    -   Konstante navn: **NumberSequenceExistingIsShared **
+    -   Konstantnavn: **NumberSequenceExistingIsShared**
     -   Standardværdi: true
 
 Parametrene er placeret i begyndelsen af klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 

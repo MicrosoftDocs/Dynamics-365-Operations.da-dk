@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 40af957582f9cdf4e1caf3ab03ead41f2823b42d59d427c7e7623cd8688e1827
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778356"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345364"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Registrere afskrivning af brugsretsaktiver (prøveversion)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 For rettigheder, der anerkendes i en organisationsbalance, amortiseres ROU-aktivet på månedsbasis. Dette emne forklarer, hvordan du opretter kladdeposteringen til amortiseringen. Amortisering debiterer udgiftsfinanskontoen og krediterer finanskontoen for den akkumulerede afskrivning ud fra opsætningen af posteringsprofilen og leasingaftaletypen. Disse poster kan oprettes for hver leasingaftale, eller de kan oprettes til flere leasingaftaler ved hjælp af batchkladdefunktionen.
 
@@ -36,6 +38,9 @@ For rettigheder, der anerkendes i en organisationsbalance, amortiseres ROU-aktiv
 
 2. Vælg afskrivningsperioden, og vælg derefter **Opret kladde**. Du får vist en meddelelse, hvor det angives, at den kladde, der skal bruges til registrering af afskrivningen, blev oprettet.
 3. Vælg **Kladder \> Aktivleasingkladder** for at åbne siden **Aktivleasingkladde**, hvor du kan få vist den kladdepost for afskrivning, der er oprettet.
+
+   Systemet låser visse økonomifelter mod at blive redigeret for at forhindre afvigelser mellem transaktionerne og planerne. Nogle af felterne, der er låst, omfatter: **Konto**, **Beløb**, **Økonomiske dimensioner**, **Valuta** og **Posteringstype**. Derudover kan du ikke tilføje eller slette kladdeposteringslinjer i nogen kladdeposteringer for aktivleasing, da dette kan medføre afvigelser mellem tidsplanerne og transaktionerne.
+
 4. Vælg kladdeposteringen, og vælg derefter **Bogfør** for at registrere afskrivningsposten i Finans.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>Beregning af ROU-aktiver for driftsleasingaftaler

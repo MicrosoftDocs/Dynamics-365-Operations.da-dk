@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773531"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384653"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
 
@@ -41,7 +41,7 @@ De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](..
 | Lager og logistik | [Opslagsfunktion for felterne Dokumentintroduktion og Dokumentkonklusion på siden Salgstilbud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Denne funktion tilføjer opslagsfunktion for felterne **Dokumentintroduktion** og **Dokumentkonklusion** på siden **Salgstilbud**.<br><br>Denne funktion er som standard aktiveret. |
 | Lager og logistik | [Kørsel af lagersted med kantskalaenheder på din brugerdefinerede hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Implementering af kantskalaenheder på brugerdefineret hardware ved hjælp af LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Produktion | [Kørsel af produktion med kantskalaenheder på din brugerdefinerede hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Planlægning | [Uendelig kapacitetsplanlægning til planlægningsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | Denne funktion muliggør kapacitetsplanlægning med uendelig kapacitet for planlægningsoptimering. Uden denne funktion får produktionsordreforslag deres leveringstid fra lagertid for frigivne produkter, uanset tidshorisonten for planlægning. |
+| Planlægning | [Uendelig kapacitetsplanlægning til planlægningsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Planlægning med ubegrænset kapacitet](../master-planning/planning-optimization/infinite-capacity-planning.md) |
 | Planlægning | Forespørgselsbaseret autorisation af ordreforslag | [Autoriser ordreforslag](../master-planning/planning-optimization/planned-order-firming.md) |
 | Administration af produktoplysninger | [Forbedringer af siden Variantforslag](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Oprette foruddefinerede produktvarianter](../pim/tasks/create-predefined-product-variants.md) |
 

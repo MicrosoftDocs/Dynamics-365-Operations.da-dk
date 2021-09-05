@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 14d8ac93241d05245ad989bcb3cb35aaf8969164d6cfc6010a8e9d426987a1ca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716294"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402145"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurere Azure Active Directory-godkendelse for POS-login
 
@@ -55,7 +54,7 @@ Hvis du vil knytte Azure AD-konti til POS-brugere i Commerce-hovedkvarteret, ska
     
 1. Gå til **Retail og Commerce > Medarbejdere > Arbejdere**, og åbn en arbejderpost.
 1. Vælg fanen **Commerce** i handlingsruden, og vælg derefter **Tilknyt eksisterende identitet** under **Ekstern identitet**. 
-1. Vælg **Søg ved hjælp af mail** i dialogboksen **Brug eksisterende ekstern identitet**, indtast en Azure AD-mailadresse, og vælg derefter **Søg**.
+1. Vælg **Søg ved hjælp af email** i dialogboksen **Brug eksisterende ekstern identitet**, indtast en Azure AD-emailadresse, og vælg derefter **Søg**.
 1. Vælg den Azure AD-konto, der returneres, og vælg derefter **OK**.
 
 Efter konfigurationsmetoden ovenfor, skal du udfylde felterne **Alias**, **UPN** og **Eksternt under-id** under fanen **Commerce** på siden med detaljer om arbejderen.

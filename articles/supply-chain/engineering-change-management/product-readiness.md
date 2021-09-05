@@ -1,6 +1,6 @@
 ---
 title: Produktparathed
-description: I følgende emner forklares det, hvordan du kan bruge parathedskontroller til at sikre, at de nødvendige masterdata er fuldført for et produkt, før det bruges i transaktioner.
+description: I følgende emne forklares det, hvordan du kan bruge parathedskontroller til at sikre, at de nødvendige masterdata er fuldført for et produkt, før det bruges i transaktioner.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8cbeba336438d5ad6365e26500ca8c53edd9fb829a30c075c34674b49cdf1946
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
+ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723545"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7415315"
 ---
 # <a name="product-readiness"></a>Produktparathed
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge parathedskontroller til at sikre, at alle de nødvendige masterdata er angivet for et produkt, før det bruges i transaktioner. Når der bruges parathedskontrol, bliver en bruger eller et team ansvarlig for at validere specifikke foruddefinerede produktrelaterede data. Hvis der er en åben parathedskontrol af et produkt, kan produktet ikke frigives eller bruges i transaktioner.
+Du kan bruge parathedskontroller til at sikre, at alle de nødvendige masterdata er angivet for et produkt, før det bruges i transaktioner. Når der bruges parathedskontrol, bliver en bruger eller et team ansvarlig for at validere specifikke foruddefinerede produktrelaterede data. Hvis der er en åben parathedskontrol af et produkt, kan produktet ikke bruges i transaktioner.
 
-Afkrydsningsfelt **Aktiv** for et teknisk produkt, en variant eller en version er kun tilgængeligt, når alle nødvendige data er angivet og kontrolleret, og når alle parathedskontroller er blevet behandlet. På dette tidspunkt kan produktet, versionen eller varianten frigives til andre firmaer og bruges i transaktioner. Du kan oprette parathedskontroller for nye produkter, nye varianter og nye tekniske versioner.
+Afkrydsningsfelt **Aktiv** for et teknisk produkt, en variant eller en version er kun tilgængeligt, når alle nødvendige data er angivet og kontrolleret, og når alle parathedskontroller er blevet behandlet. På dette tidspunkt kan produktet, versionen eller varianten bruges i transaktioner. Du kan oprette parathedskontroller for nye produkter, nye varianter og nye tekniske versioner.
 
 Du kan også anvende parathedskontroller på standardprodukter (ikke-tekniske). Du kan finde flere oplysninger i afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i dette emne.
 

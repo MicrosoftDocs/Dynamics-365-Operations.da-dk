@@ -1,8 +1,8 @@
 ---
-title: Oprette frynsegodeplaner for arbejdere
-description: Du kan oprette frynsegodeplaner for arbejdere i Microsoft Dynamics 365 Human Resources for at vælge frynsegodeplaner for medarbejdere og for at bekræfte valg til frynsegodeplanen.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Oprette frynsegodeplaner for medarbejder
+description: Dette emne beskriver, hvordan du opretter, vælger og bekræfter arbejderens frynsegodeplaner i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ccd16d2c9a986da602bb9f346fb175a92e15c9ba4265ac0e951e57eda03308
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782090"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417398"
 ---
-# <a name="create-worker-benefit-plans"></a>Oprette frynsegodeplaner for arbejdere
+# <a name="create-worker-benefit-plans"></a>Oprette frynsegodeplaner for medarbejder
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

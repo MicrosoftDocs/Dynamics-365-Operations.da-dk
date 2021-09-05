@@ -2,7 +2,7 @@
 title: Økonomisk analyse
 description: Økonomisk analyse bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber.
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4937235dddaf5c1c8d6d504542f161fa232c86213eb6ac4274349e02d18fb8b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767821"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416299"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -36,9 +36,9 @@ ms.locfileid: "6767821"
 > - **Side** – En fane i en enkelt .pbix-fil. Hver side kan indeholde et eller flere visuelle elementer.
 > - **Visuelt element** – en enkelt datakilde, f.eks. et kort, KPI, diagram, grafik, matrix eller regnskab. En side med et regnskab som et visuelt element kan ikke have andre visuelle elementer på grund af størrelsen af de data, der rapporteres om.
 
-I øjeblikket bruges **økonomisk analyse** til at få vist data for enten den aktive juridiske enhed eller alle juridiske enheder. I fremtidige versioner kan arbejdsområdet kan udvikle sig til det sted, hvor du kan bruge Power BI til redigering og oprettelse af visuelle elementer.
+Arbejdsområdet **Økonomisk analyse** fokuserer på, at du kan få vist og filtrere dataene om eksisterende rapporter. Du kan tilføje nye visuelle elementer til arbejdsområdet **Økonomisk analyse**. Arbejdsområdet **Økonomiske analyse** er tilgængeligt for det aktuelle firma og alle firmaer, hvor de kan se data for alle juridiske enheder, uanset hvilke juridiske enheder rollen har adgang til.
 
-Arbejdsområdet **Regnskabsdirektørens oversigt** viser de samme visuelle elementer som **økonomisk analyse**, men fokuserer på, at du kan få vist og filtrere dataene i eksisterende rapporter. I fremtidige versioner vil du kunne tilføje nye visuelle elementer arbejdsområdet **Økonomisk analyse**. De nye visuelle elementer vil muligvis også være tilgængelige i arbejdsområder, der er fokuseret på andre roller, f.eks. projektledere eller kreditorchefer. Arbejdsområdet **Regnskabsdirektørens oversigt** fortsætter med at vise data for alle juridiske enheder, uanset hvilke juridiske enheder, som rollen har adgang til.
+- [Tilføje eller redigere Power BI-visualiseringer på dashboardet](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Opsætning af Dynamics 365 Finance
 **Finans**

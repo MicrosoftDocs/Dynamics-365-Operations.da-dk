@@ -4,24 +4,17 @@ description: Dette emne indeholder generelle fejlfindingsoplysninger for integra
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 779cc80d4cb510e79885919f1c705824ab6ad58b3e2fe1bab7bbec0511d08951
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4adc2d83667a05d14a26ace23e5bd8026df4b5f
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380206"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
@@ -29,31 +22,10 @@ ms.locfileid: "6736296"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 Dette emne indeholder generelle fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Dataverse.
 
 > [!IMPORTANT]
 > Nogle af de problemer, som dette emne vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
-
-## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Når du forsøger at installere dobbeltskrivningspakken ved hjælp af værktøjet Package Deployer, vises der ingen tilgængelige løsninger
-
-Nogle versioner af Package Deployer-værktøjet er inkompatible med pakken til dobbeltskrivningsløsninger. For at installere pakken korrekt skal du sørge for at bruge [version 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) eller nyere af Package Deployer-værktøjet.
-
-Når du har installeret Package Deployer-værktøjet, skal du installere løsningspakken ved at følge disse trin.
-
-1. Hent den seneste fil med løsningspakken fra Yammer.com. Når zip-filen med pakken er hentet, skal du højreklikke på den og vælge **Egenskaber**. Markér afkrydsningsfeltet **Ophæv blokering**, og vælg derefter **Anvend**. Hvis du ikke kan se afkrydsningsfeltet **Ophæv blokering**, er blokeringen af zip-filen allerede fjernet, og du kan springe dette trin over.
-
-    ![Dialogboksen Egenskaber.](media/unblock_option.png)
-
-2. Udpak zip-filen med pakken, og kopier alle filerne i mappen **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438**.
-
-    ![Indhold af mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438.](media/extract_package.png)
-
-3. Indsæt alle de kopierede filer i mappen **Tools** i Package Deployer-værktøjet. 
-4. Kør **PackageDeployer.exe** for at vælge Dataverse-miljøet og installere løsningerne.
-
-    ![Indhold af mappen Tools.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivere og åbne plug-in-sporingslogge i Dataverse for at få vist oplysninger om fejl
 
@@ -74,18 +46,17 @@ Udfør følgende trin for at få vist sporingsloggen.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i Finance and Operations-apps
 
-**Påkrævet rolle for at få vist fejl**: Dobbeltskrivningsfejl i systemadministrationen, der stammer fra Dataverse, kan vises i appen Finance and Operations. I nogle tilfælde er den fulde tekst i fejlmeddelelsen ikke tilgængelig, fordi meddelelsen er for lang eller indeholder personligt identificerbare oplysninger (PII). Du kan aktivere detaljeret logføring for fejl ved at følge disse trin.
+**Påkrævet rolle for at få vist fejl** : Systemadministrator
 
-1. Alle projektkonfigurationer i Finance and Operations-apps har egenskaben **IsDebugMode** i tabellen **DualWriteProjectConfiguration**. Åbn tabellen **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel.
+Dobbeltskrivningsfejl, der stammer fra Dataverse, kan forekomme i Finance and Operations-appen. Hvis du vil aktivere detaljeret logføring for fejlene, skal du følge disse trin.
 
-    > [!TIP]
-    > Du kan nemt åbne tabellen ved at slå **Design**-tilstand til i Excel-tilføjelsesprogrammet og derefter tilføje **DualWriteProjectConfigurationEntity** i regnearket. Du kan finde flere oplysninger under [Åbne tabeldata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel](../../office-integration/use-excel-add-in.md).
-
-2. Indstil egenskaben **IsDebugMode** til **Ja** for projektet.
-3. Kør det scenario, der genererer fejl.
-4. De detaljerede logfiler er tilgængelige i tabellen DualWriteErrorLog. Hvis du vil slå data op i tabelbrowseren, skal du bruge følgende URL-adresse (Erstat **XXX** efter behov):
-
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
+1. For alle projektkonfigurationer i Finance and Operations-appen er flaget **IsDebugMode** angivet i tabellen **DualWriteProjectConfiguration**.
+2. Åbn **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel. Hvis du vil bruge tilføjelsesprogrammet, skal du aktivere designtilstand i Finance and Operations Excel-tilføjelsesprogrammet og føje **DualWriteProjectConfiguration** til arket. Du kan finde flere oplysninger i [Få vist og opdatere enhedsdata med Excel](../../office-integration/use-excel-add-in.md).
+3. Angiv **IsDebugMode** til **Ja** på projektet.
+4. Kør det scenario, der genererer fejl.
+5. De detaljerede logfiler lagres i tabellen **DualWriteErrorLog**.
+6. Hvis du vil slå data op i en tabels browser, skal du bruge følgende link: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, hvor du erstatter `999` efter behov.
+7. Opdater igen efter [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), som er tilgængelig for platformopdateringer 37 og senere. Hvis du har denne rettelse installeret, vil fejlfindingstilstanden registrere flere logfiler.  
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollere synkroniseringsfejl på den virtuelle maskine for Finance and Operations-appen
 
@@ -116,10 +87,28 @@ Nu kan du sammenkæde et nyt miljø.
 Når du opretter en salgsordre i Dynamics 365 Sales, kan klik på **+ Tilføj produkter** omdirigere dig til ordrelinjeformen i Dynamics 365 Project Operations. Du kan ikke få vist formularen for salgsordrelinjens **Oplysninger** på denne måde. Indstillingen for **Oplysninger** vises ikke på rullelisten under **Ny ordrelinje**. Dette sker, fordi Project Operations er installeret i dit miljø.
 
 Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge disse trin:
+
 1. Naviger til tabellen **Ordrelinje**.
-2. Find formularen **Oplysninger** under formularernoden. 
-3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**. 
+2. Find formularen **Oplysninger** under formularernoden.
+3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**.
 4. Ret sikkerhedsindstillingen til **Vis for alle**.
 
+## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Sådan aktiveres og gemmes netværksspor, så der kan tilknyttes sporing til supportbilletter
+
+Supportteamet skal muligvis gennemse netværksspor for at udføre fejlfinding af visse problemer. Hvis du vil oprette et netværksspor, skal du følge disse trin:
+
+### <a name="chrome"></a>Chrome
+
+1. Tryk på **F12** under den åbne fane, eller vælg **Udviklingsværktøjer** for at åbne udviklingsværktøjerne.
+2. Åbn fanen **Netværk**, og skriv **integ** i filtertekstfeltet.
+3. Kør scenariet, og vær opmærksom på de anmodninger, der logføres.
+4. Højreklik på indtastningerne, og vælg **Gem alle som en HAR med indhold**.
+
+### <a name="microsoft-edge"></a>Microsoft Edge
+
+1. Tryk på **F12** under den åbne fane, eller vælg **Udviklingsværktøjer** for at åbne udviklingsværktøjerne.
+2. Åbn fanen **Netværk**.
+3. Kør scenariet.
+4. Vælg **Gem** for at eksportere resultaterne som HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

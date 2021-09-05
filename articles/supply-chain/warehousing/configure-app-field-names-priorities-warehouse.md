@@ -1,6 +1,6 @@
 ---
-title: Konfigurere felter til mobilappen Lokationsstyring
-description: I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i mobilappen Lokationsstyring.
+title: Konfigurere felter til mobilappen Warehouse Management
+description: I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i mobilappen Warehouse Management.
 author: MarkusFogelberg
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31b1d9e26a5c21a6be5fd89992316e1d6e657c183a71d5155d8d76e83362c845
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9f9504ec87fd58bbf685519108477a48055da93
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721145"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344144"
 ---
-# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurere felter til mobilappen Lokationsstyring
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurere felter til mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i mobilappen Lokationsstyring.
+I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i mobilappen Warehouse Management.
 
 > [!NOTE]
-> Dette emne vedrører funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Mobilappen Lokationsstyring er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i mobilappen Lokationsstyring, og hvordan de bruges.
+> Dette emne vedrører funktioner i Warehouse Management. Det gælder ikke for funktioner i Lagerstyring. Mobilappen Warehouse Management er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i mobilappen Warehouse Management, og hvordan de bruges.
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurere feltnavne for lagerstedsapp
 

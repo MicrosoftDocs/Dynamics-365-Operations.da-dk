@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 223ad9b5a297a5bcdbb0314d406f64d5de2b239431c6df21299ddebd9e47b8a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a37e3463273d1ffd35b267b36dfbd6fd92bb255
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738263"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343471"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre planlægningsprogrammets ydeevne
 
@@ -70,7 +70,7 @@ Overvej f.eks. en rute, der vises i følgende tabel og billede, som ser relativt
 
 Når du sender dette til programmet, opdeles det i otte job som vist i følgende illustration (vælg billedet for at forstørre det).
 
-[![Planlægning af programjob](media/scheduling-engine-jobs.png "Planlægning af programjob."](media/scheduling-engine-jobs-large.png)
+[![Planlægning af programjob](media/scheduling-engine-jobs.png "Planlægning af programjob.")](media/scheduling-engine-jobs-large.png)
 
 Standardforbindelsen mellem to job er `FinishStart`, hvilket betyder, at sluttidspunktet for ét job skal ligge før starttidspunktet for et andet job. Da opsætningen skal udføres af den samme ressource, der senere udfører processen, vil der være `OnSameResource`-begrænsninger mellem dem. Mellem jobbene for primær og sekundær operation for 10 er der `StartStart`- og `FinishFinish`-links, hvilket betyder, at jobbene både skal starte og slutte på samme tid, og der er `NotOnSameResource`-begrænsninger, som vil forhindre den samme ressource til primær og sekundær.
 

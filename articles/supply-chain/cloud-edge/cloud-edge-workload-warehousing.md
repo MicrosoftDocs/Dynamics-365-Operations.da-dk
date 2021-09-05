@@ -1,6 +1,6 @@
 ---
-title: Sky- og kantskalaenheder til arbejdsbyrder i lokationsstyring
-description: Dette emne indeholder oplysninger om funktionen, der gør det muligt for skalaenheder at køre udvalgte processer fra din arbejdsbyrde i lokationsstyring.
+title: Sky- og kantskaleringsenheder til arbejdsbyrder i lokationsstyring
+description: Dette emne indeholder oplysninger om funktionen, der gør det muligt for skaleringsenheder at køre udvalgte processer fra din arbejdsbyrde i lokationsstyring.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -16,37 +16,37 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 725b6dea98805baaf3f4d60b3922543067a205bc7196a05f33af21a6cd680a37
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7541688e8428dbc17a3c53d696913365580c3db8
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740689"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343758"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Ikke alle forretningsfunktioner i lokationsstyring understøttes fuldt ud på lagersteder, der kører en arbejdsbyrde på en skalaenhed. Sørg for kun at bruge de processer, som dette emne direkte beskriver som understøttede.
+> Ikke alle forretningsfunktioner i lokationsstyring understøttes fuldt ud på lagersteder, der kører en arbejdsbyrde på en skaleringsenhed. Sørg for kun at bruge de processer, som dette emne direkte beskriver som understøttede.
 
-## <a name="warehouse-execution-on-scale-units"></a>Lagerudførelse på skalaenheder
+## <a name="warehouse-execution-on-scale-units"></a>Lagerudførelse på skaleringsenheder
 
-Med denne funktion kan skalaenheder køre udvalgte processer fra funktionerne til lokationsstyring.
+Med denne funktion kan skaleringsenheder køre udvalgte processer fra funktionerne til lokationsstyring.
 
-I dette emne kaldes udførelse af lokationsstyring på et lagersted, der er defineret som en skalaenhed, for et *Lagerudførelsessystem* (*WES*).
+I dette emne kaldes udførelse af lokationsstyring på et lagersted, der er defineret som en skaleringsenhed, for et *Lagerudførelsessystem* (*WES*).
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Du skal have en Dynamics 365 Supply Chain Management-hub og en skalaenhed, der er implementeret med arbejdsbyrden for lokationsstyring. Du kan finde flere oplysninger om arkitektur og udrulningsprocesser under [Bruge skalaenheder til at øge modstandsdygtigheden i arbejdsbyrder for styring af forsyningskæder](cloud-edge-landing-page.md).
+Du skal have en Dynamics 365 Supply Chain Management-hub og en skaleringsenhed, der er implementeret med arbejdsbyrden for lokationsstyring. Du kan finde flere oplysninger om arkitektur og udrulningsprocesser under [Bruge skaleringsenheder til at øge modstandsdygtigheden i arbejdsbyrder for styring af forsyningskæder](cloud-edge-landing-page.md).
 
-## <a name="how-the-wes-workload-works-on-scale-units"></a>Sådan fungerer WES-arbejdsbyrde på skalaenheder
+## <a name="how-the-wes-workload-works-on-scale-units"></a>Sådan fungerer WES-arbejdsbyrde på skaleringsenheder
 
-I forbindelse med processerne i arbejdsbyrden for lokationsstyring synkroniseres dataene mellem hubben og skalaenhederne.
+I forbindelse med processerne i arbejdsbyrden for lokationsstyring synkroniseres dataene mellem hubben og skaleringsenhederne.
 
-En skalaenhed kan kun vedligeholde de data, som den ejer. Dataejerskabsbegrebet for skalaenheder medvirker til at forhindre multimasterkonflikter. Det er derfor vigtigt, at du forstår, hvilke processer der ejes af hubben, og hvilke som ejes af skalaenhederne.
+En skaleringsenhed kan kun vedligeholde de data, som den ejer. Dataejerskabsbegrebet for skaleringsenheder medvirker til at forhindre multimasterkonflikter. Det er derfor vigtigt, at du forstår, hvilke processer der ejes af hubben, og hvilke som ejes af skaleringsenhederne.
 
-Skalaenhederne ejer følgende data:
+Skaleringsenhederne ejer følgende data:
 
 - **Behandlingsdata for forsendelsesbølge** – Udvalgte bølgebehandlingsmetoder håndteres som en del af skaleringsenhedens bølgebehandling.
 - **Behandlingsdata for arbejde** – Lagerstedsarbejde, der oprettes på en skaleringsenhed, vil være ejet af denne specifikke skaleringsenhed. Følgende typer behandling af arbejdsordrer understøttes:
@@ -58,7 +58,7 @@ Skalaenhederne ejer følgende data:
   - **Flytteordrer** (kun udgående med simpel pluk- og lastarbejde)
 
 - **Kvitteringsdata for lagerstedsordre** – Disse data bruges kun til indkøbsordrer, der er frigivet manuelt til et lagersted.
-- **Id-data** – Id'er kan oprettes både på hubben og på skalaenheder. Der leveres dedikeret konflikthåndtering. 
+- **Id-data** – Id'er kan oprettes både på hubben og på skaleringsenheder. Der leveres dedikeret konflikthåndtering. 
 
     > [!IMPORTANT]
     > Bemærk, at disse id-data ikke er lagerstedsspecifikke. Hvis det samme id-nummer oprettes på både hub og en vægtenhed under samme synkroniseringscyklus, mislykkes den næste synkronisering. Hvis det sker, skal du gå til **Systemadministration > Forespørgsler > Arbejdsbyrdeforespørgelser > Dublerede poster**, hvor du kan få vist og flette dataene.
@@ -71,7 +71,7 @@ Hubben ejer følgende data:
 - Ordrefordeling og behandling af udgående last
 - Processerne frigiv til lagersted, forsendelsesoprettelse, bølgeoprettelse og bølgefærdiggørelse
 
-Skalaenhederne ejer den faktiske bølgebehandling (f.eks. arbejdsfordeling, genopfyldningsarbejde og oprettelse af behovsarbejde) efter frigivelsen af bølgen. Lagermedarbejderne kan derfor behandle udgående arbejde ved hjælp af mobilappen Lokationsstyring, der er tilknyttet skalaenheden.
+Skaleringsenhederne ejer den faktiske bølgebehandling (f.eks. arbejdsfordeling, genopfyldningsarbejde og oprettelse af behovsarbejde) efter frigivelsen af bølgen. Lagermedarbejderne kan derfor behandle udgående arbejde ved hjælp af mobilappen Warehouse Management, der er tilknyttet skaleringsenheden.
 
 ![Bølgebehandlingsflow.](./media/wes-wave-processing-ga.png "Bølgebehandlingsflow")
 
@@ -92,20 +92,20 @@ Hubben ejer følgende data:
 - Alle opdateringer af omkostning og økonomi
 
 > [!NOTE]
-> Det indgående indkøbsordreflow er grundlæggende forskelligt fra det udgående flow. Du kan operere det samme lagersted på enten skalaenheden eller hubben, afhængigt af om indkøbsordren er frigivet til lagerstedet eller ej. Når du har frigivet en ordre til lagerstedet, kan du kun arbejde med den pågældende ordre, når du er logget på skalaenheden.
+> Det indgående indkøbsordreflow er grundlæggende forskelligt fra det udgående flow. Du kan operere det samme lagersted på enten skaleringsenheden eller hubben, afhængigt af om indkøbsordren er frigivet til lagerstedet eller ej. Når du har frigivet en ordre til lagerstedet, kan du kun arbejde med den pågældende ordre, når du er logget på skaleringsenheden.
 >
-> Hvis du bruger *Frigiv til lagersted* som proces, oprettes der [*lagerstedsordrer*](cloud-edge-warehouse-order.md), og ejerskabet af det tilknyttede modtagelsesflow tildeles til skalaenheden. Hubben kan ikke registrere indgående modtagelse.
+> Hvis du bruger *Frigiv til lagersted* som proces, oprettes der [*lagerstedsordrer*](cloud-edge-warehouse-order.md), og ejerskabet af det tilknyttede modtagelsesflow tildeles til skaleringsenheden. Hubben kan ikke registrere indgående modtagelse.
 
 Du skal logge på hubben for at bruge *Frigiv til lagersted*-processen. Gå til en af følgende sider for at køre eller planlægge det:
 
 - **Indkøb og forsyning > Indkøbsordrer > Alle indkøbsordrer > Lagersted > Handlinger > Frigiv til lagersted**.
-- **Lagerstedsstyring > Frigiv til lagersted > Automatisk frigivelse af indkøbsordrer**
+- **Warehouse Management > Frigiv til lagersted > Automatisk frigivelse af indkøbsordrer**
 
 Når du bruger **Automatisk frigivelse af indkøbsordrer**, kan du vælge bestemte indkøbsordrelinjer ud fra en forespørgsel. Det vil typisk være at konfigurere et tilbagevendende batchjob, der frigiver alle de bekræftede indkøbsordrelinjer, der forventes at ankomme næste dag.
 
-Arbejderne kan køre modtagelsen ved hjælp af mobilappen Lokationsstyring, der er tilknyttet skalaenheden. Dataene registreres derefter af skalaenheden og rapporteres i forhold til den indgående lagerordre. Oprettelsen og afviklingen af det efterfølgende læg på lager-arbejde vil også blive håndteret af skalaenheden.
+Arbejderne kan køre modtagelsen ved hjælp af mobilappen Warehouse Management, der er tilknyttet skaleringsenheden. Dataene registreres derefter af skaleringsenheden og rapporteres i forhold til den indgående lagerordre. Oprettelsen og afviklingen af det efterfølgende læg på lager-arbejde vil også blive håndteret af skaleringsenheden.
 
-Hvis du ikke bruger processen *frigivelse til lagersted*, og du derfor ikke bruger *lagerordrer*, kan hubben behandle lagermodtagelse og arbejde uafhængigt af skalaenheder.
+Hvis du ikke bruger processen *frigivelse til lagersted*, og du derfor ikke bruger *lagerordrer*, kan hubben behandle lagermodtagelse og arbejde uafhængigt af skaleringsenheder.
 
 ![Indgående procesflow.](./media/wes-inbound-ga.png "Indgående procesflow")
 
@@ -115,19 +115,19 @@ Når der udføres indgående registrering via en lagerstedsapps modtagelsesproce
 
 ## <a name="supported-processes-and-roles"></a>Understøttede processer og roller
 
-Ikke alle processer til lokationsstyring understøttes i en WES-arbejdsbyrde på en skalaenhed. Det anbefales derfor, at du tildeler roller, der stemmer overens med de funktioner, der er tilgængelige for de enkelte brugere.
+Ikke alle processer til lokationsstyring understøttes i en WES-arbejdsbyrde på en skaleringsenhed. Det anbefales derfor, at du tildeler roller, der stemmer overens med de funktioner, der er tilgængelige for de enkelte brugere.
 
-For at lette denne proces inkluderes en eksempelrolle med navnet *Lagerchef på arbejdsbyrde* i demodataene i **Systemadministration \> Sikkerhed \> Sikkerhedskonfiguration**. Formålet med denne rolle er at gøre det muligt for lagercheferne at få adgang til WES på skalaenheden. Rollen giver adgang til de sider, der er relevante i forbindelse med en arbejdsbyrde, der har en skalaenhed som vært.
+For at lette denne proces inkluderes en eksempelrolle med navnet *Lagerchef på arbejdsbyrde* i demodataene i **Systemadministration \> Sikkerhed \> Sikkerhedskonfiguration**. Formålet med denne rolle er at gøre det muligt for lagercheferne at få adgang til WES på skaleringsenheden. Rollen giver adgang til de sider, der er relevante i forbindelse med en arbejdsbyrde, der har en skaleringsenhed som vært.
 
-Brugerroller på en skalaenhed tildeles som en del af den første datasynkronisering fra hubben til skalaenheden.
+Brugerroller på en skaleringsenhed tildeles som en del af den første datasynkronisering fra hubben til skaleringsenheden.
 
-Hvis du vil redigere de roller, der er tildelt til en bruger, skal du gå til **Systemadministration \> Sikkerhed \> Tildele brugere til roller**. Brugere, der kun fungerer som lagerchefer på skalaenheder, bør kun tildeles rollen *Lagerchef på arbejdsbyrde*. Denne fremgangsmåde sikrer, at de pågældende brugere kun har adgang til de understøttede funktioner. Fjern eventuelle andre roller, der er tildelt til disse brugere.
+Hvis du vil redigere de roller, der er tildelt til en bruger, skal du gå til **Systemadministration \> Sikkerhed \> Tildele brugere til roller**. Brugere, der kun fungerer som lagerchefer på skaleringsenheder, bør kun tildeles rollen *Lagerchef på arbejdsbyrde*. Denne fremgangsmåde sikrer, at de pågældende brugere kun har adgang til de understøttede funktioner. Fjern eventuelle andre roller, der er tildelt til disse brugere.
 
-Brugere, der kun fungerer som lagerchefer på både hubben og skalaenheder, bør tildeles den eksisterende rolle *Lagerarbejder*. Bemærk, at denne rolle giver lagerarbejderne adgang til funktioner (f.eks. modtagelsesbehandling af flytteordre), der vises i brugergrænsefladen, men ikke understøttes i øjeblikket på skalaenheder.
+Brugere, der kun fungerer som lagerchefer på både hubben og skaleringsenheder, bør tildeles den eksisterende rolle *Lagerarbejder*. Bemærk, at denne rolle giver lagerarbejderne adgang til funktioner (f.eks. modtagelsesbehandling af flytteordre), der vises i brugergrænsefladen, men ikke understøttes i øjeblikket på skaleringsenheder.
 
 ## <a name="supported-wes-processes"></a>Understøttede WES-processer
 
-Følgende processer til lagerudførelse kan aktiveres for en WES-arbejdsbyrde på en skalaenhed:
+Følgende processer til lagerudførelse kan aktiveres for en WES-arbejdsbyrde på en skaleringsenhed:
 
 - Udvalgte metoder til salgs- og flytteordrer (fordeling, efterspørgselsopfyldning, containerisering, oprettelse af arbejde og udskrivning af label til bølge)
 
@@ -138,7 +138,7 @@ Følgende processer til lagerudførelse kan aktiveres for en WES-arbejdsbyrde p�
 - Foretage lagerreguleringer ved hjælp af lagerstedsappen
 - Registrere indkøbsordrer og udføre læg på lager-arbejde med lagerstedsappen
 
-Følgende arbejdsordretyper understøttes i øjeblikket for WES-arbejdsbyrder på implementeringer af skalaenheder:
+Følgende arbejdsordretyper understøttes i øjeblikket for WES-arbejdsbyrder på implementeringer af skaleringsenheder:
 
 - Salgsordre
 - Flytteafgang
@@ -147,22 +147,22 @@ Følgende arbejdsordretyper understøttes i øjeblikket for WES-arbejdsbyrder p�
 - Cyklusoptælling
 - Indkøbsordrer (knyttet til lagerstedsordrer)
 
-Ingen anden behandling af kildedokumenter eller lagerstedsarbejde understøttes i øjeblikket på skalaenheder. I forbindelse med en WES-arbejdsbelastningen på en skaleringsenhed kan du f.eks. ikke udføre en modtagelsesproces for overførselsordrer (overførselskvittering). Den skal i stedet behandles af hubforekomsten.
+Ingen anden behandling af kildedokumenter eller lagerstedsarbejde understøttes i øjeblikket på skaleringsenheder. I forbindelse med en WES-arbejdsbelastningen på en skaleringsenhed kan du f.eks. ikke udføre en modtagelsesproces for overførselsordrer (overførselskvittering). Den skal i stedet behandles af hubforekomsten.
 
 > [!NOTE]
-> Menupunkter og knapper til mobilenheder til funktioner, der ikke understøttes, vises ikke i _mobilappen Lokationsstyring_, når den er knyttet til en implementering af skalaenhed.
+> Menupunkter og knapper til mobilenheder til funktioner, der ikke understøttes, vises ikke i _mobilappen Warehouse Management_, når den er knyttet til en implementering af skaleringsenhed.
 
 > [!WARNING]
-> Når du kører en arbejdsbyrde i en skalaenhed, kan du ikke køre processer, der ikke understøttes, for det specifikke lagersted på hubben. Tabellerne senere i dette emne dokumenterer de understøttede egenskaber.
+> Når du kører en arbejdsbyrde i en skaleringsenhed, kan du ikke køre processer, der ikke understøttes, for det specifikke lagersted på hubben. Tabellerne senere i dette emne dokumenterer de understøttede egenskaber.
 >
-> Valgte arbejdstyper for lagersteder kan oprettes både på hubben og skalaenheder, men kan kun vedligeholdes af ejerhubben eller -skalaenheden (den installation, der har oprettet dataene).
+> Valgte arbejdstyper for lagersteder kan oprettes både på hubben og skaleringsenheder, men kan kun vedligeholdes af ejerhubben eller -skaleringsenheden (den installation, der har oprettet dataene).
 >
-> Selv når en bestemt proces understøttes i skalaenheden, skal du være opmærksom på, at alle nødvendige data muligvis ikke bliver synkroniseret fra hubben til skalaenheden eller fra skalaenheden til hubben, hvilket udgør en risiko for uventet systembehandling. Eksempler som disse:
+> Selv når en bestemt proces understøttes i skaleringsenheden, skal du være opmærksom på, at alle nødvendige data muligvis ikke bliver synkroniseret fra hubben til skaleringsenheden eller fra skaleringsenheden til hubben, hvilket udgør en risiko for uventet systembehandling. Eksempler som disse:
 > 
 > - Hvis du bruger en forespørgsel om lokationsvejledning, der tilknytter en datatabelpost, som kun findes i hubimplementeringen.
 > - Hvis du bruger lokationsstatus og/eller lokationsmængder som lastfunktioner. Disse data synkroniseres ikke mellem implementeringerne og vil derfor kun fungere, når lokationslagerbeholdningen opdateres for en af installationerne.
 
-Følgende lokationsstyringsfunktioner understøttes ikke i øjeblikket i arbejdsbelastninger på skalaenheder:
+Følgende lokationsstyringsfunktioner understøttes ikke i øjeblikket i arbejdsbelastninger på skaleringsenheder:
 
 - Indgående behandling af indkøbsordrelinjer, der er tilknyttet en last
 - Indgående behandling af indkøbsordrer for et projekt
@@ -180,31 +180,31 @@ Følgende lokationsstyringsfunktioner understøttes ikke i øjeblikket i arbejds
 - Behandling af lagerstedsarbejde med brugerdefinerede arbejdstyper
 - Behandling af lagerstedsarbejde med forsendelsesnotaer
 - Behandling af lagerstedsarbejde med materialehåndtering/automatisk lagersted
-- Brug af billede af produktmasterdata (f.eks. på mobilappen Lokationsstyring)
+- Brug af billede af produktmasterdata (f.eks. på mobilappen Warehouse Management)
 
 > [!WARNING]
-> Nogle af lagerstedsfunktionerne er ikke tilgængelige for lagersteder, der kører arbejdsbyrderne for lokationsstyring på en skalaenhed, og de understøttes heller ikke i hubben eller i arbejdsbyrden for skalaenheden.
+> Nogle af lagerstedsfunktionerne er ikke tilgængelige for lagersteder, der kører arbejdsbyrderne for lokationsstyring på en skaleringsenhed, og de understøttes heller ikke i hubben eller i arbejdsbyrden for skaleringsenheden.
 > 
-> Andre egenskaber kan behandles på begge, men vil kræve nøje brug i visse scenarier, f.eks. når lagerbeholdning opdateres for det samme lagersted på både hubben og skalaenheden på grund af den asynkrone dataopdateringsproces.
+> Andre egenskaber kan behandles på begge, men vil kræve nøje brug i visse scenarier, f.eks. når lagerbeholdning opdateres for det samme lagersted på både hubben og skaleringsenheden på grund af den asynkrone dataopdateringsproces.
 > 
-> Specifikke funktioner (som f.eks. *blokringsarbejde*), der understøttes på både hubben og skalaenheder, vil kun blive understøttet for ejeren af dataene.
+> Specifikke funktioner (som f.eks. *blokringsarbejde*), der understøttes på både hubben og skaleringsenheder, vil kun blive understøttet for ejeren af dataene.
 
 ### <a name="outbound-supported-only-for-sales-and-transfer-orders"></a>Udgående (kun understøttet for salgsordrer og flytteordrer)
 
-I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor de understøttes, når arbejdsbelastningen for lokationsstyring bruges i sky- og kantskalaenheder.
+I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor de understøttes, når arbejdsbelastningen for lokationsstyring bruges i sky- og kantskaleringsenheder.
 
-| Behandling                                                      | Hub | WES-arbejdsbyrde på en skalaenhed |
+| Behandling                                                      | Hub | WES-arbejdsbyrde på en skaleringsenhed |
 |--------------------------------------------------------------|-----|------------------------------|
 | Behandling af kildedokument                                   | Ja | Nej |
 | Last- og transportstyringsbehandling                | Ja | Ingen |
 | Frigiv til lagersted                                         | Ja | Ingen |
 | Planlagt direkte levering                                        | Ingen  | Ingen |
 | Konsolidering af forsendelse                                       | Ja | Ingen |
-| Behandling af forsendelsesbølge                                     | Ja, men kun initialisering og færdiggørelse af bølgen håndteres i hubben. Det betyder, at behandling af udgående flytte- og salgsordrer kun kan håndteres af skalaenheden.|<p>Nej, initialisering og færdiggørelse håndteres af hubben, og **Lastopbygning og -sortering** understøttes ikke<p><b>Bemærk:</b> Der kræves adgang til denne hub for at færdiggøre bølgestatussen som en del af bølgebehandlingen.</p> |
+| Behandling af forsendelsesbølge                                     | Ja, men kun initialisering og færdiggørelse af bølgen håndteres i hubben. Det betyder, at behandling af udgående flytte- og salgsordrer kun kan håndteres af skaleringsenheden.|<p>Nej, initialisering og færdiggørelse håndteres af hubben, og **Lastopbygning og -sortering** understøttes ikke<p><b>Bemærk:</b> Der kræves adgang til denne hub for at færdiggøre bølgestatussen som en del af bølgebehandlingen.</p> |
 | Vedligeholde forsendelser for bølge                                  | Ja | Ingen |
 | Lagerstedsbehandling (inkl. udskrivning af nummerplade)        | Ingen  | <p>Ja, men kun for ovennævnte understøttede egenskaber. |
 | Klyngepluk                                              | Ingen  | Ja|
-| Manuel behandling af emballage, herunder arbejdet "Plukning af pakket container" | Ingen <P>En del af behandlingen kan udføres efter den første plukproces, der håndteres af en skalaenhed, men det frarådes på grund af følgende blokerede operationer.</p>  | Ingen |
+| Manuel behandling af emballage, herunder arbejdet "Plukning af pakket container" | Ingen <P>En del af behandlingen kan udføres efter den første plukproces, der håndteres af en skaleringsenhed, men det frarådes på grund af følgende blokerede operationer.</p>  | Ingen |
 | Fjern container fra gruppe                                  | Ingen  | Ingen |
 | Behandling af udgående sortering                                  | Ingen  | Ingen |
 | Udskrivning af lastrelaterede dokumenter                           | Ja | Ingen |
@@ -226,9 +226,9 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 
 ### <a name="inbound"></a>Indgående
 
-I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor de understøttes, når arbejdsbelastningen for lokationsstyring bruges i sky- og kantskalaenheder.
+I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor de understøttes, når arbejdsbelastningen for lokationsstyring bruges i sky- og kantskaleringsenheder.
 
-| Behandling                                                          | Hub | WES-arbejdsbyrde på en skalaenhed<BR>*(Varer, der er markeret "Ja", gælder kun for lagerstedsordrer)*</p> |
+| Behandling                                                          | Hub | WES-arbejdsbyrde på en skaleringsenhed<BR>*(Varer, der er markeret "Ja", gælder kun for lagerstedsordrer)*</p> |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Behandling&nbsp;af&nbsp;kildedokument                             | Ja | Ingen |
 | Last- og transportstyringsbehandling                    | Ja | Ingen |
@@ -258,9 +258,9 @@ I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lagerstedsoperationer og håndtering af undtagelser
 
-I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer og undtagelser der understøttes, og hvor de understøttes, når arbejdsbelastningen for lokationsstyring bruges i sky- og kantskalaenheder.
+I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer og undtagelser der understøttes, og hvor de understøttes, når arbejdsbelastningen for lokationsstyring bruges i sky- og kantskaleringsenheder.
 
-| Behandling                                            | Hub | WES-arbejdsbyrde på en skalaenhed |
+| Behandling                                            | Hub | WES-arbejdsbyrde på en skaleringsenhed |
 |----------------------------------------------------|-----|------------------------------|
 | Forespørge på nummerplade                              | Ja | Ja                          |
 | Vareforespørgsel                                       | Ja | Ja                          |
@@ -283,7 +283,7 @@ I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer o
 | Vis oversigt over åbne opgaver                             | Ja | Ja                          |
 | Konsolider id'er                         | Ja | Ingen                           |
 | Behandling af min./maks. og zonetærskelopfyldning| Ja <p>Anbefalingen er ikke at medtage de samme lokationer som en del af forespørgslerne</p>| Ja                          |
-| Behandle allokeringsgenopfyldning                  | Ja  | Ja<p>Bemærk, at opsætningen skal udføres på skalaenheden</p>                           |
+| Behandle allokeringsgenopfyldning                  | Ja  | Ja<p>Bemærk, at opsætningen skal udføres på skaleringsenheden</p>                           |
 | Blokere og fjerne blokering af arbejde                             | Ja | Ja                          |
 | Skift bruger                                        | Ja | Ja                          |
 | Skift arbejdspulje på arbejde                           | Ja | Ja                          |
@@ -291,29 +291,29 @@ I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer o
 
 ### <a name="production"></a>Produktion
 
-I følgende tabel vises en oversigt over produktionsscenarier for lokationsstyring, der (ikke) understøttes i øjeblikket i arbejdsbelastninger på skalaenheder.
+I følgende tabel vises en oversigt over produktionsscenarier for lokationsstyring, der (ikke) understøttes i øjeblikket i arbejdsbelastninger på skaleringsenheder.
 
-| Behandling | Hub | WES-arbejdsbyrde på en skalaenhed |
+| Behandling | Hub | WES-arbejdsbyrde på en skaleringsenhed |
 |---------|-----|------------------------------|
 | Færdigmelde og lægge færdigvarer på lager | Ja | Ja |
 | Samprodukt og biprodukt, læg på lager | Ja | Ja |
 | <p>Alle andre lokationsstyringsprocesser, der er relateret til produktion, omfatter:</p><li>Frigiv til lagersted</li><li>Produktionsbølgebehandling</li><li>Råvarepluk</li><li>Kanban-læg på lager</li><li>Kanban-pluk</li><li>Start produktionsordre</li><li>Produktionsspild</li><li>Sidste produktionspalle</li><li>Registrer materialeforbrug</li><li>Tøm kanban</li></ul> | Ja | Ingen |
 | Genopfyldning af råvarer | Ingen | Ingen |
 
-## <a name="maintaining-scale-units-for-wes"></a>Bevare skalaenheder for WES
+## <a name="maintaining-scale-units-for-wes"></a>Bevare skaleringsenheder for WES
 
-Flere batchjob kører på både hubben og skalaenheder.
+Flere batchjob kører på både hubben og skaleringsenheder.
 
-Under installationen af hub kan du vedligeholde batchjobbene manuelt. Du kan administrere følgende batchjob i **Lokationsstyring \> Periodiske opgaver \> Backoffice-styring af arbejdsbyrder**:
+Under installationen af hub kan du vedligeholde batchjobbene manuelt. Du kan administrere følgende batchjob i **Warehouse Management \> Periodiske opgaver \> Backoffice-styring af arbejdsbyrder**:
 
-- Skalaenhed til meddelelsesprocessors hub
+- Skaleringsenhed til meddelelsesprocessors hub
 - Registrer kvitteringer på kildeordre
 - Fuldfør lagerstedsordrer
 
-På arbejdsbyrden i skalaenheder kan du administrere følgende batchjob i **Lokationsstyring \> Periodiske opgaver \> Styring af arbejdsbyrder**:
+På arbejdsbyrden i skaleringsenheder kan du administrere følgende batchjob i **Warehouse Management \> Periodiske opgaver \> Styring af arbejdsbyrder**:
 
 - Behandle bølgetabelposter
-- Meddelelsesprocessor for lagerstedshub til skalaenhed
+- Meddelelsesprocessor for lagerstedshub til skaleringsenhed
 - Foretag behandling af anmodninger om opdatering af antal for lagerstedsordrelinjer
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]

@@ -2,7 +2,7 @@
 title: Konfigurere opslagsdatakilder til at bruge ER-programspecifikke parametre
 description: I dette emne forklares det, hvordan du kan konfigurere opslagsdatakilder i elektroniske rapporteringsformater (ER) til at bruge ER-programspecifikke parametre.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2849df85c37c4ed00754be91b9a9708db1bb16b7d0eb49d3a61d169037687196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c028b01aa2889a517bee69de46411ada12d6fe25
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723183"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343423"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurere opslagsdatakilder til at bruge ER-programspecifikke parametre 
 
@@ -69,7 +69,7 @@ Du kan oprette opslagsregler for det valgte ER-format i brugergrænsefladen, der
 I følgende illustration vises, hvordan `Model.Data.Summary.LevelByLookup`-datakilden for typen **Beregnet felt** kan konfigureres til at kalde den konfigurerede **Opslag**-datakilde, der leverer de påkrævede parametre. For at behandle dette kald under kørslen gennemgår ER listen over konfigurerede regler i den definerede rækkefølge for at finde den første regel, der opfylder de leverede betingelser. I dette eksempel er det reglen, der indeholder den momskode, der svarer til den angivne momskode. Som følge heraf findes den mest relevante regel, og den fasttekstværdi, der er konfigureret for den fundne regel, returneres af denne datakilde.
 
 > [!NOTE]
-> En undtagelse opstår, når der ikke findes nogen gældende regel. Du kan forhindre disse undtagelser ved at konfigurere flere regler i slutningen af regellisten, så du kan håndtere sager, når der ikke er angivet en konfigureret værdi. Brug indstillingerne **\*Ikke tom\*** og **\*Tom\*** i overensstemmelse hermed.  
+> En undtagelse opstår, når der ikke findes nogen gældende regel. Du kan forhindre disse undtagelser ved at konfigurere flere regler i slutningen af regellisten, så du kan håndtere sager, når der ikke er angivet en konfigureret værdi. Brug indstillingerne **\*Ikke tom**\* og **\*Tom**\* i overensstemmelse hermed.  
 >
 > ![Tilføje en datakilde for at kalde den konfigurerede opslagsdatakilde.](./media/er-lookup-data-sources-img7.png)
 

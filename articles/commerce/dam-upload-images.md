@@ -2,7 +2,7 @@
 title: Overføre billeder
 description: I dette emne beskrives, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757392"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423249"
 ---
 # <a name="upload-images"></a>Overføre billeder
 
@@ -52,10 +52,17 @@ Standardnavngivningskonventionen varierer, afhængigt af kategorien:
 - Kategoribilleder skal navngives "**/Categories/\{CategoryName\}.png**"
 - Kundebilleder skal navngives "**/Customers/\{CustomerNumber\}.jpg**"
 - Medarbejderbilleder skal navngives "**/Workers/\{WorkerNumber\}.jpg**"
-- Produktbilleder skal navngives "**/Products/\{ProductNumber\}_000_001.png**"
+- Produktbilleder skal navngives "**/Produkter/\{Produktnummer\}\_000_001.png**"
     - 001 er rækkefølgen af billedet, og det kan være 001, 002, 003, 004 eller 005
 - Produktvariantbilleder skal navngives "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
-    - For eksempel: 93039 \^ \^ 2 \^ Black \^_000_001.png
+    - For eksempel: 93039 \^ &nbsp;\^ 2 \^ Sort \^\_000_001.png
+- Produktvariantbilleder med konfigurationsdimension skal navngives "**/Produkter/\{Produktnummer\} \^ \{Konfiguration\}\_000_001.png**"
+    - For eksempel: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> Hvis dimensionsværdien er tom for produktvariantbilleder, skal der være to blanktegn mellem cirkumflekserne i filnavnet.
+
+I eksemplerne ovenfor bruges standardkonfigurationen. Separatortegnet og dimensionerne kan konfigureres, og det nøjagtige navn, der skal bruges, kan variere mellem installationer. En metode til at identificere den nøjagtige navngivningskonvention er at bruge udviklerkonsollen i browseren til at kontrollere anmodninger om produktvariantbilleder, mens produktdimensionerne ændres på butikkens produktdetaljeside (PDP).
 
 ## <a name="upload-an-image"></a>Upload et billede
 

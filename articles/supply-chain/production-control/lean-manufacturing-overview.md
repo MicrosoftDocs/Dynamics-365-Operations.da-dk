@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da812bcc7d31db25abc0ed7e6c1a7f9e5433f80bfdfc5421e4e18d6b8af68884
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1374a451c65b4bafdc6efeb10949d1f6eceb4758
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738909"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343912"
 ---
 # <a name="lean-manufacturing-overview"></a>Oversigt over lean manufacturing
 
@@ -66,7 +66,7 @@ Lean manufacturing viser den aktuelle status for produktion og logistik, der er 
 Følgende liste beskriver specielle kanban-kort:
 -   Tidsplanlægning af kanban-job – indeholder en oversigt over kanban-job. Tavlen viser kanban-job og deres status for en eller flere arbejdsceller. Jobsene er angivet efter de planlægningsperioder (dage eller uger), der er defineret i produktionsflowmodellen. Tavlen viser også kapacitetsforbruget for hver planlægningsperioden, så du kan overvåge den planlagte belastning. Du kan ændre status for kanban-job, omlægge kanban-job til andre perioder og udføre andre opgaver.
 -   Kanban-område for overførsel af sager – Denne tavle giver et overblik over de aktuelle overførselsjob. Du kan opdatere og registrere pluklister, starte og fuldføre overførselsjob og udføre andre opgaver.
--   Kanban-området til procesjob – denne tavle er udviklet til at understøtte det normale produktionsflow og giver et overblik over den aktuelle situation i en eller flere arbejdsceller. Fra denne tavle kan Kanbans prioriteres, plukkes eller fremstilles. Tavlen er også udviklet til at understøtte stregkodescanning for indberetning af Kanbans.
+-   Kanban-området til procesjob – denne tavle er udviklet til at understøtte det normale produktionsflow og giver et overblik over den aktuelle situation i en eller flere arbejdsceller. Fra denne tavle kan Kanbans prioriteres, plukkes eller fremstilles. Tavlen er også udviklet til at understøtte stregkodescanning for rapportering af kanbans.
 
 ## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-job og -integration med Supply Chain Management-processer
 Kanban-job er fuldt integreret med de aktuelle processer for lagertransaktioner i Supply Chain Management.
