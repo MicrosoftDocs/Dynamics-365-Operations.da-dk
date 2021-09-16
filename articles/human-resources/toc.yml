@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 23. august 2021
+          href: hr-whats-new-2021-08-23.md
         - name: 09. august 2021
           href: hr-whats-new-2021-08-09.md
         - name: 26. juli 2021
@@ -361,7 +363,7 @@
                       href: hr-developer-api-myleaverequests-submit.md
         - name: ATS-integration API
           items:
-            - name: Start her
+            - name: Introduktion
               href: hr-admin-integration-ats-api-introduction.md
             - name: Server til server-godkendelse til ATS-integration
               href: hr-admin-integration-ats-api-s2s-auth.md
@@ -449,7 +451,7 @@
                   href: hr-admin-integration-ats-api-skill-level-type.md
         - name: Lønintegration API
           items:
-            - name: Start her
+            - name: Introduktion
               href: hr-admin-integration-payroll-api-introduction.md
             - name: Generere og gennemse lønenheder
               href: hr-admin-integration-payroll-api-generate-review-entities.md
@@ -543,6 +545,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere adressekartoteker
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Administrere lokationsejere
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
             - name: Arbejdsgangssystem
               items:
                 - name: Oversigt over arbejdsgangssystem

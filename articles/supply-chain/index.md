@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0fc784c3d0a1df7984761c95b5f6955cc1b441e7a51ac75eecd971a42a47a317
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ac5a8005851dc2894a0fbed74f47be6e1e14b58
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743596"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416545"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -48,7 +48,7 @@ Vælg et funktionsområde, du vil vide mere om.
 - [Salg og marketing](sales-marketing/overview-sales-marketing.md)
 - [Servicestyring](service-management/service-management-home-page.md)
 - [Transportstyring](transportation/transportation-management-overview.md)
-- [Warehouse management](warehousing/warehouse-configuration.md)
+- [Lagerstedsstyring](warehousing/warehouse-configuration.md)
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
@@ -60,13 +60,13 @@ Denne korte video opsummerer de nye funktioner til supply chain management, der 
 
 - [Synkronisering af en arbejdsordre mellem Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Disse korte videoer opsummerer de nye funktioner til styring af forsyningskæder, der er føjet til Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3 (december 2017).
+Disse korte videoer opsummerer de nye funktioner til supply chain management, der er føjet til Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3 (december 2017).
 
 - [Kundeemne til kontant-integration](https://youtu.be/AVV9x5x-XCg) 
 - [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Bruge lagerstedsskabelon til at kopiere konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Disse korte videoer opsummerer de nye funktioner til styring af forsyningskæder, der er føjet til Microsoft Dynamics 365 for Finance and Operations Enterprise edition (juli 2017).
+Disse korte videoer opsummerer de nye funktioner til supply chain management, der er føjet til Microsoft Dynamics 365 for Finance and Operations Enterprise edition (juli 2017).
 
 - [Start her til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
 - [Mobilarbejdsområde for omkostningsstyring](https://youtu.be/imsuTg8rUVk)
@@ -74,17 +74,17 @@ Disse korte videoer opsummerer de nye funktioner til styring af forsyningskæder
 - [Godkende indkøbsordrer på en mobilenhed](https://youtu.be/gZ-gOlJe7H8)
 - [Visuel planlægning med Gantt-diagram til produktions- og batchordrer](https://youtu.be/BtbuShkGj4I)
 
-Følgende optagelser af tekniske konferencer gennemgår funktionerne til styring af forsyningskæder fra tidligere versioner af Finance and Operations. Denne funktionalitet er nu en del af Dynamics 365 Supply Chain Management. De samme begreber gælder stadig, og procedurerne er de samme i den aktuelle version.
+Følgende optagelser af tekniske konferencer gennemgår funktionerne til supply chain management fra tidligere versioner af Finance and Operations. Denne funktionalitet er nu en del af Dynamics 365 Supply Chain Management. De samme begreber gælder stadig, og procedurerne er de samme i den aktuelle version.
 
 - **Omkostningsstyring:**
   - [Oversigt over omkostningsstyring](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
 - **Varedisponering:**
   - [Udvide behovsprognosefunktionen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Varedisponering – tip og trick til forbedring af ydeevnen](https://youtu.be/7v8BPmEs9Dg)
-  - [Hjælp! MRP er langsom!](https://youtu.be/RLXybx20B5o)
+  - [Justering af MRP-ydeevne](https://youtu.be/RLXybx20B5o)
 - **Administration af produktoplysninger:**
   - [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
-- **Warehouse management:**
+- **Lagerstedsstyring:**
   - [Få mest muligt ud af dit lagerstedsstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
   - [Dynamics AX 2012 R3: Avanceret lagerstedsstyring - en almindelig dag med procesproduktion](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Videoer af produktionsstyring:**
@@ -94,7 +94,7 @@ Følgende optagelser af tekniske konferencer gennemgår funktionerne til styring
 
 ## <a name="blogs"></a>Blogs
 
-Der er mange emner om styring af produktionen og forsyningskæden i [Dynamics AX Manufacturing R&D-teamets blog](/archive/blogs/axmfg/) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste at disse er skrevet til den tidligere version, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.
+Der er mange emner om styring af produktionen og supply chain management i [Dynamics AX Manufacturing R&D-teamets blog](/archive/blogs/axmfg/) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste at disse er skrevet til den tidligere version, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.
 
 ## <a name="white-papers"></a>Whitepapers
 
