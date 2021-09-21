@@ -1,8 +1,8 @@
 ---
 title: Definer årsagskoder
 description: Dynamics 365 Human Resources bruger årsagskoder til at forklare, hvorfor en medarbejders frynsegoder ændres.
-author: andreabichsel
-ms.date: 01/25/2021
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd7c5a35a6d4b40eb376eee2580af681f7bfd7f8f93aab8aad67f238fc40470b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f89d6158f351e30376fc3f80c793f29734cdcbb
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732675"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431336"
 ---
 # <a name="set-up-reason-codes"></a>Definer årsagskoder
 
@@ -29,11 +29,11 @@ ms.locfileid: "6732675"
 Dynamics 365 Human Resources bruger årsagskoder til at forklare, hvorfor en medarbejders frynsegoder ændres.
 
 > [!NOTE]
-> Pr. januar 2021 overføres årsagskoder til arbejdsområdet **Personalestyring** i stedet for arbejdsområdet **Frynsegodeadministration**. Der er flere oplysninger i [Manuel overførsel af årsagskoder til Personalestyring](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
+> Pr. januar 2021 overførtes årsagskoder til arbejdsområdet **Personalestyring** i stedet for arbejdsområdet **Frynsegodeadministration**. Der er flere oplysninger i [Manuel overførsel af årsagskoder til Personalestyring](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
 
 ## <a name="create-reason-codes"></a>Oprette årsagskoder
 
-1. I arbejdsområdet **Personalestyring** (eller arbejdsområdet **Frynsegodeadministration**, hvis dine årsagskoder endnu ikke er overflyttet), skal du vælge **Links** og derefter vælge **Årsagskoder**.
+1. I arbejdsområdet **Personalestyring** (eller arbejdsområdet **Frynsegodeadministration**, hvis dine årsagskoder ikke er overflyttet), skal du vælge **Links** og derefter vælge **Årsagskoder**.
 
 2. Vælg **Ny**.
 
@@ -44,13 +44,13 @@ Dynamics 365 Human Resources bruger årsagskoder til at forklare, hvorfor en med
    | **Årsagskode** | Et entydigt navn, der identificerer årsagen til, at en medarbejder vil ændre tilmeldingen til en frynsegodeplan. |
    | **Beskrivelse** | En beskrivelse af årsagskoden. |
 
-4. Indstil **Frynsegodeadministration** under **Anvendelige scenarier** til **Ja**. (Kan ikke anvendes, hvis årsagskoderne endnu ikke er overflyttet til arbejdsområdet **Personalestyring**.)
+4. Indstil **Frynsegodeadministration** under **Anvendelige scenarier** til **Ja**. (Kan ikke anvendes, hvis årsagskoderne ikke er overflyttet til arbejdsområdet **Personalestyring**.)
 
 5. Vælg **Gem**.
 
 ## <a name="manually-migrate-reason-codes-to-personnel-management"></a>Manuelt overføre årsagskoder til Personalestyring
 
-I januar 2021 overføres årsagskoder til arbejdsområdet **Personalestyring** i stedet for arbejdsområdet **Frynsegodeadministration**. De fleste årsagskodedata overføres automatisk i dit miljø. Nogle årsagskodedata kan ikke overføres. Årsagskoder har f.eks. nu et maksimum på 15 tegn, så enhver årsagskode, der er længere end 15 tegn, overføres ikke automatisk.
+Pr. januar 2021 overførtes årsagskoder til arbejdsområdet **Personalestyring** i stedet for arbejdsområdet **Frynsegodeadministration**. De fleste årsagskodedata overføres automatisk i dit miljø. Nogle årsagskodedata kan ikke overføres. Årsagskoder har f.eks. nu et maksimum på 15 tegn, så enhver årsagskode, der er længere end 15 tegn, overføres ikke automatisk.
 
 Du får vist et banner på siden **Links** i arbejdsområdet til **Frynsegodeadministration**, der oplyser dig om overflytningen, og om årsagskoder ikke er blevet overflyttet.
 

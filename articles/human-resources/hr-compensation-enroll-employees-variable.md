@@ -1,8 +1,8 @@
 ---
 title: Melde en medarbejder til en variabel lønstruktur
 description: Chefen for kompensation og frynsegoder kan tilmelde medarbejdere til planer for variabel kompensation for at beregne bonusser i naturalier eller kontanter for medarbejdere.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,35 +10,35 @@ ms.search.form: HRMCompVarEnrollEmpl, HcmCompensationWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2de7393e67fb01842cdd45c2ef8a041a1e694fabd5e62bcf9894941e7272bd03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67b3cd95276b9e59e794583fa51ddbcec4c43b1e
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732531"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431308"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Melde en medarbejder til en variabel lønstruktur
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Chefen for kompensation og frynsegoder kan tilmelde medarbejdere til planer for variabel kompensation for at beregne bonusser i naturalier eller kontanter for medarbejdere. Denne procedure forudsætter, at en variabel kompensationsstruktur er blevet oprettet med feltet Aktiver tilmelding angivet til Ja, og at berettigelsesregler er oprettet for den variable kompensationsstruktur. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du begynder denne procedure ved at gå til Human Resources > Arbejdere > Medarbejdere > Kompensation > Tilmelding til variabel plan
+Chefen for kompensation og frynsegoder kan tilmelde medarbejdere til planer for variabel kompensation for at beregne bonusser i naturalier eller kontanter for medarbejdere. Denne procedure forudsætter, at en variabel kompensationsstruktur er blevet oprettet med feltet **Aktiver tilmelding** angivet til Ja, og at berettigelsesregler er oprettet for den variable kompensationsstruktur. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du begynder denne procedure ved at gå til **Personale** > **Arbejdere** > **Medarbejdere** > **Kompensation** > **Tilmelding til variabel plan**.
 
-1. Klik på Ny.
-2. Klik på rullelisten i feltet Plan for at åbne opslaget.
+1. Klik på **Ny**.
+2. Klik på rullelisten i feltet **Plan** for at åbne opslaget.
     * Opslaget Plan filtreres til kun at vise de planer for variabel kompensation, som medarbejderen er berettiget til, baseret på Berettigelsesregler.  
 3. Klik op linket i den valgte række på listen.
 4. Slå udvidelsen af sektionen Generelt til/fra.
-5. Angiv en dato i feltet Ikrafttrædelsesdato.
-6. Klik på Gem.
-7. Slå udvidelsen af sektionen Tilsidesættelser til/fra.
+5. Angiv en dato i feltet **Ikrafttrædelsesdato**.
+6. Klik på **Gem**.
+7. Slå udvidelsen af sektionen **Tilsidesættelser** til/fra.
     * Eventuelt kan en dato for ansættelsesregel indstilles til at tilsidesætte medarbejderens ansættelsesdato, hvis ansættelsesreglen, der er angivet for den valgte variable struktur, er i Procent.  
     * Hvis den variable struktur er en procentdel af den grundlæggende struktur, kan bonusprocenten tilsidesættes for medarbejderen. Hvis den variable kompensationsstruktur er et antal enheder på plan, kan antallet af enheder tilsidesættes for medarbejderen.  
     * Hvis medarbejderen skal modtage et fladt beløb som bonus, kan du angive beløbet her.  
-8. Slå udvidelse af sektionen Organisationsmæssige overstyringer til eller fra.
-    * Hvis medarbejderens præstation skal tages i betragtning, præstationen i forskellige afdelinger eller en anden afdeling end den, der er tildelt på medarbejderens stilling, kan afdelingen tilsidesættes. Kolonnen Procent bør i alt være 100.  
+8. Slå udvidelse af sektionen **Organisationsmæssige tilsidesættelser** til eller fra.
+    * Hvis medarbejderens præstation skal tages i betragtning, præstationen i forskellige afdelinger eller en anden afdeling end den, der er tildelt på medarbejderens stilling, kan afdelingen tilsidesættes. Kolonnen **Procent** bør i alt være 100.  
 
 
 

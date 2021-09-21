@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a367b95a65c45b1e7ac46e9ac96baa2417bf3e48e3d5bfeca21c82cc8c427c24
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5cb4c2b9b4a3c54e71f73369096d00b436079c1c
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714348"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475006"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Tekniske attributter og søgning efter tekniske attributter
 
@@ -26,15 +26,13 @@ ms.locfileid: "6714348"
 
 Du bør bruge tekniske attributter til at angive alle ikke-standardegenskaber for at sikre, at alle produktmasterdata kan registreres i systemet. Det kan derefter bruge teknisk attributsøgning til nemt at finde produkter baseret på de registrerede egenskaber.
 
-## <a name="engineering-attributes"></a>Tekniske attributter
+## <a name="create-engineering-attributes-and-attribute-types"></a>Oprette tekniske attributter og attributtyper
 
 Tekniske produkter har typisk mange kendetegn og egenskaber, du skal registrere. Selvom du kan registrere nogle af egenskaberne ved hjælp af standardproduktfelterne, kan du også oprette nye tekniske egenskaber efter behov. Du kan definere dine egne *tekniske attributter* og gøre dem en del af produktdefinitionen.
 
-### <a name="create-engineering-attributes-and-attribute-types"></a>Oprette tekniske attributter og attributtyper
-
 Hver tekniske attribut skal tilhøre en *attributtype*. Dette krav findes, fordi hver enkelt tekniske attribut skal have en *datatype*, der definerer de typer af værdier, som den kan indeholde. En teknisk attributtype kan være en standardtype (f.eks. fri tekst, heltal eller decimaltal) eller en brugerdefineret type (f.eks. tekst, der har et bestemt sæt værdier at vælge mellem). Du kan genbruge hver enkelt attributtype med et hvilket som helst antal tekniske attributter.
 
-#### <a name="set-up-engineering-attribute-types"></a>Konfigurere tekniske attributtyper
+### <a name="set-up-engineering-attribute-types"></a>Konfigurere tekniske attributtyper
 
 Udfør følgende trin for at se, oprette eller redigere en teknisk attributtype.
 
@@ -48,7 +46,7 @@ Udfør følgende trin for at se, oprette eller redigere en teknisk attributtype.
     - **Værdiinterval** – Denne indstilling er kun tilgængelig, hvis du angiver feltet **Type** til *Heltal*, *Decimal* eller *Valuta*. Angiv *Ja* for at oprette de minimum- og maksimumværdier, der vil blive accepteret for attributter af denne type. Du kan bruge oversigtspanelet **Interval** til at fastlægge minimum- og maksimumværdierne og (for valuta) den valuta, der gælder for de angivne grænser. Angiv denne indstilling til *Nej* for at acceptere enhver værdi. 
     - **Måleenhed** – Dette felt er kun tilgængeligt, hvis du angiver feltet **Type** til *Heltal* eller *Decimal*. Vælg den måleenhed, der gælder for denne attributtype. Hvis der ikke kræves en enhed, skal dette felt være tomt.
 
-#### <a name="set-up-engineering-attributes"></a>Konfigurere tekniske attributter
+### <a name="set-up-engineering-attributes"></a>Konfigurere tekniske attributter
 
 Udfør følgende trin for at se, oprette eller redigere en teknisk attribut.
 
@@ -70,17 +68,43 @@ Udfør følgende trin for at se, oprette eller redigere en teknisk attribut.
     - **Minimum** – Angiv den anbefalede eller tilladte minimumværdi.
     - **Maksimum** – Angiv den anbefalede eller tilladte maksimumværdi.
 
-### <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Knytte tekniske attributter til en teknisk produktkategori
+### <a name="engineering-attribute-inheritance"></a>Teknikerattributarv
+
+I forbindelse med produktstrukturer, f.eks. styklister eller formler, kan de markerede attributter overføres fra de overordnede varer til de overordnede varer. Du kan tænke på denne proces som "tilbageføre nedarvning."
+
+#### <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funktion i dit system
+
+Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Produktionsordreforslag til planlægningsoptimering*.
+
+#### <a name="attribute-inheritance-example"></a>Eksempel på attributnedarvning
+
+For et fødevareprodukt, som f.eks. et fødevareprodukt, der fungerer som omkostning, skal systemet registrere hver af de elementer, som produktet indeholder. Det kan modelleres som et teknikerprodukt, der indeholder en formel. Denne formel indeholder ingredienserne i den nye formel, som f.eks. mel, mælk, nødder og nødder. I dette eksempel har firmaet to modeller, der kan identificeres, én med forskellige modeller, og én, der ikke gør.
+
+Den kage, der indeholder laktose, har følgende attributter på ingrediensniveau:
+
+- Ingrediens "mel" attribut "varer" = ja
+- Ingrediens "mælk"-attribut " måltid" = ja
+- Ingrediens "nødder" attribut "nødder" = ja
+
+Den kage, der ikke indeholder laktose, indeholder laktosefri mælk og har følgende attributter på ingrediensniveau:
+
+- Ingrediens "mel" attribut "varer" = ja
+- Ingrediens "mælk": attribut "laktose" = nej
+- Ingrediens "nødder" attribut "nødder" = ja
+
+Da disse produkter oftest ligner hinanden, kan det være en god ide at overføre disse attributter fra de børn (de to variationer) til det overordnede produkt (den grundlæggende produktvariant). Hvis du vil implementere denne "omvendt nedarvning", kan du bruge funktionen *Attribut-nedarvning*. Denne funktionalitet er defineret for hver [teknikerversion](engineering-versions-product-category.md).
+
+## <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Knytte tekniske attributter til en teknisk produktkategori
 
 Visse tekniske attributter gælder for alle produkter, mens andre er specifikke for de enkelte produkter eller produktkategorier. Elektriske attributter er f.eks. ikke nødvendige for mekaniske produkter. Du kan derfor konfigurere *tekniske produktkategorier*. En teknisk produktkategori opretter en samling af tekniske attributter, der skal være en del af definitionen for produkter, der tilhører den pågældende kategori. Du kan også angive, hvilke tekniske attributter der skal være obligatoriske, og om der er en standardværdi.
 
 Du kan finde flere oplysninger om, hvordan du arbejder med tekniske produktkategorier, herunder oplysninger om, hvordan du knytter attributter til kategorier, i [Tekniske versioner og tekniske produktkategorier](engineering-versions-product-category.md).
 
-### <a name="set-values-for-engineering-attributes"></a>Angive værdier for tekniske attributter
+## <a name="set-attribute-values-for-engineering-attributes"></a>Angive attributværdier for tekniske attributter
 
 De tekniske attributter, der er tilknyttet en teknisk produktkategori, vises, når du opretter et nyt teknisk produkt, der er baseret på den pågældende kategori. På det tidspunkt kan du angive værdier for attributterne. Senere kan disse værdier ændres på siden **Teknisk version** eller som en del af en teknisk ændringsstyring i en teknisk ændringsordre. Yderligere oplysninger finder du i [Administrere ændringer af tekniske produkter](engineering-change-management.md).
 
-### <a name="create-an-engineering-product"></a>Oprette et teknisk produkt
+## <a name="create-an-engineering-product"></a>Oprette et teknisk produkt
 
 Hvis du vil oprette et teknisk produkt, skal du åbne siden **Frigivne produkter**. Vælg derefter **Teknisk produkt** i gruppen **Nyt** under fanen **Produkt** i handlingsruden.
 

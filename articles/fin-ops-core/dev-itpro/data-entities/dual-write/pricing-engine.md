@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c9f94ec35ebed5a14252377fb543de09cb994ffd
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
+ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416174"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7481309"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synkronisere med Supply Chain Management-prissætningsprogrammet efter behov
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 Supply Chain Management indeholder et prissætningsprogra
     + Moms i alt
     + Samlet beløb
     
-5. For at sikre, at der tages hensyn til handels-og salgsaftaler i beregning af prisen:
+5. For at sikre, at der tages hensyn til handelsaftaler i beregning af prisen:
     1. Naviger til dit Supply Chain Management-miljø.
     2. Naviger til **Debitor \> Opsætning \> Debitorparametre**.
     3. Vælg fanen **Priser** på sidens navigationslinje.
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 Supply Chain Management indeholder et prissætningsprogra
 
 Når du vælger **Prisordre** i Sales, kaldes funktionen **Totaler** under **Salgsordre \> fanen Visning** i Supply Chain Management for den tilknyttede salgsordre. Værdierne i ordretotalen bruges i Sales til at udfylde de tilsvarende kolonner i Supply Chain Management.
 
-Når salgsordretotalen beregnes i Supply Chain Management, evaluerer beregningen de eksisterende samhandelsaftaler og salgsaftaler for kunden og de produkter, der er angivet i salgsordren. Oplysningerne bruges til at beregne totalerne. Når du har valgt **Prisordre**, afspejler Sales automatisk alle de opsætninger, der er udført i Supply Chain Management.
+Når salgsordretotalen beregnes i Supply Chain Management, evaluerer beregningen de eksisterende samhandelsaftaler for kunden og de produkter, der er angivet i salgsordren. Oplysningerne bruges til at beregne totalerne. Når du har valgt **Prisordre**, afspejler Sales automatisk alle de opsætninger, der er udført i Supply Chain Management.
 
 ## <a name="limitations"></a>Begrænsninger
 

@@ -2,7 +2,7 @@
 title: Start her med elektronisk fakturering
 description: Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3a62f68718a9bd46cdf15146bbb6a4e5166bfcc7abcf99b24d3fbc7e3e6c94ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732975"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463828"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Start her med elektronisk fakturering
 
@@ -43,7 +43,7 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 2. I arbejdsområdet **Globaliseringsfunktioner** i sektionen **Funktioner** skal du vælge feltet **Elektronisk fakturering**.
 3. Vælg **Import**, og vælg derefter **Synkroniser**.
 4. Filtrer kolonnen **Konfigurationsudbyder** efter termen **Microsoft**.
-5. Vælg navnet på en funktion til elektronisk fakturering i tabellen i starten af dette emne, og vælg derefter **Import**.
+5. Vælg navnet på en funktion til elektronisk fakturering i tabellen, og vælg derefter **Import**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Opret en funktion til tilføjelsesprogrammet til elektronisk fakturering for din organisationsudbyder.
 
@@ -113,7 +113,7 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Debitorfakturajournal</p><p>Projektfaktura</p> |
     | PEPPOL Elektronisk faktura            | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Debitorfakturajournal</p><p>Projektfaktura</p> |
 
-7. Vælg og angiv en kontekstværdi for hvert tabelnavn, du opretter, i henhold til følgende tabel.
+6. Vælg og angiv en kontekstværdi for hvert tabelnavn, du opretter, i henhold til følgende tabel.
 
     | Funktionsnavn                         | Forretningsdokument | Kontekst |
     |--------------------------------------|-------------------|---------|
@@ -134,7 +134,7 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Kontekstmodel for debitorfaktura – debitorfakturakontekst</p><p>Kontekstmodel for debitorfaktura – projektfakturakontekst</p> |
     | PEPPOL Elektronisk faktura            | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Kontekstmodel for debitorfaktura – debitorfakturakontekst</p><p>Kontekstmodel for debitorfaktura – projektfakturakontekst</p> |
 
-8. For hvert tabelnavn og hver kontekst skal du vælge og angive en værdi for Tilknytning af forretningsdokument i henhold til følgende tabel.
+7. For hvert tabelnavn og hver kontekst skal du vælge og angive en værdi for Tilknytning af forretningsdokument i henhold til følgende tabel.
 
     | Funktionsnavn                         | Forretningsdokument | Tilknytning af forretningsdokument |
     |--------------------------------------|-------------------|---------------------------|
@@ -177,11 +177,11 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
 ## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Implementere funktionen Elektronisk fakturering i tilknyttet program
 
 1. Vælg den version af funktionen Elektronisk fakturering, du vil implementere, under fanen **Versioner**.
-4. Vælg **Implementer**.
-5. Angiv indstillingen **Implementer til tilknyttet applikation** til **Ja**.
-6. Vælg den forbindelse, der er knyttet til din forekomst af Finance eller Supply Chain Management, i feltet **Tilknyt applikation**.
-7. Angiv indstillingen **Implementer til servicemiljø** til **Nej**.
-10. Vælg **OK**.
+2. Vælg **Implementer**.
+3. Angiv indstillingen **Implementer til tilknyttet applikation** til **Ja**.
+4. Vælg den forbindelse, der er knyttet til din forekomst af Finance eller Supply Chain Management, i feltet **Tilknyt applikation**.
+5. Angiv indstillingen **Implementer til servicemiljø** til **Nej**.
+6. Vælg **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Aktivere funktionen til elektronisk fakturering i Finance eller Supply Chain Management
 
@@ -213,7 +213,7 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
 ## <a name="issue-electronic-invoices"></a>Udstede elektroniske fakturaer
 
 1. Gå til **Organisationsadministration** \> **Periodisk** \> **Elektroniske dokumenter** \> **Send elektroniske dokumenter**.
-2. I oversigtspanelet **Medtaget post** skal du vælge **Filtrer**.
+2. I oversigtspanelet **Medtagne poster** skal du vælge **Filtrer**.
 3. Vælg **Tilføj** for at føje et tabelnavn til forespørgselsfiltret.
 4. Vælg den tabel, der indeholder fakturaer.
 

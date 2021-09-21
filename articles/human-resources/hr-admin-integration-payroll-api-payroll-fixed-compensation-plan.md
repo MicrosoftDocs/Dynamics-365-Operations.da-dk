@@ -2,7 +2,7 @@
 title: Plan for fast løn
 description: Dette emne indeholder detaljer og en eksempelforespørgsel til enheden Plan for fast løn i Dynamics 365 Human Resources.
 author: jcart
-ms.date: 04/07/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f1e5345d9f27106bdf3a3a60cb0480a9b072e340c01236e4d48c5e2ae592ddbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738385"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429215"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Plan for fast løn
 
@@ -34,18 +34,27 @@ Fysisk navn: mshr_payrollfixedcompensationplanentity.
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab</br>**Fysisk navn**</br>**_Type_** | Anvendelse | Betegnelse |
 | --- | --- | --- |
-| **Medarbejder-id**<br>mshr_fk_employee_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmednøgle: mshr_Employee_id for mshr_payrollemployeeentity enhed  | Medarbejder-id |
-| **Lønsats**<br>mshr_payrate<br>*Decimal* | Skrivebeskyttet<br>Påkrævet | Lønsats, der er defineret i Plan for fast løn. |
-| **Plan-id**<br>mshr_planid<br>*Streng* | Skrivebeskyttet<br>Påkrævet |Angiver lønplanen.  |
-| **Gyldig fra**<br>mshr_validfrom<br>*Dato- og klokkeslætsforskydning* |  Skrivebeskyttet<br>Påkrævet |Dato, hvorfra medarbejderens faste løn er gyldig.  |
-| **Enheden Plan for fast løn**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Påkrævet<br>Systemgenereret | Systemgenereret GUID-værdi, der entydigt identificerer lønplanen. |
-| **Lønfrekvens**<br>mshr_payfrequency<br>*Streng* | Skrivebeskyttet<br>Påkrævet |Hvor ofte medarbejderen bliver betalt.  |
-| **Gyldig til**<br>mshr_validto<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet <br>Påkrævet | Dato, hvortil medarbejderens faste løn er gyldig. |
-| **Stillings-id**<br>mshr_positionid<br>*Streng* | Skrivebeskyttet <br>Påkrævet | Stillings-id, der er tilknyttet medarbejderen og tilmelding til Plan for fast løn. |
-| **Valuta**<br>mshr_currency<br>*Streng* | Skrivebeskyttet <br>Påkrævet |Den valuta, der er defineret for Plan for fast løn   |
-| **Personalenummer**<br>mshr_personnelnumber<br>*Streng* | Skrivebeskyttet<br>Påkrævet |Medarbejderens entydige personalenummer.  |
+| **Plan-id**</br>mshr_planid</br>*Streng* | Skrivebeskyttet | Angiver lønplanen.  |
+| **Personalenummer**</br>mshr_personnelnumber</br>*Streng* | Skrivebeskyttet | Medarbejderens entydige personalenummer. |
+| **Lønsats**</br>mshr_payrate</br>*Decimal* | Skrivebeskyttet | Lønsats, der er defineret i Plan for fast løn. |
+| **Stillings-id**</br>mshr_positionid</br>*Streng* | Skrivebeskyttet | Stillings-id, der er tilknyttet medarbejderen og tilmelding til Plan for fast løn. |
+| **Gyldig fra**</br>mshr_validfrom</br>*Dato- og klokkeslætsforskydning* |  Skrivebeskyttet | Dato, hvorfra medarbejderens faste løn er gyldig.  |
+| **Gyldig til**</br>mshr_validto</br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet | Dato, hvortil medarbejderens faste løn er gyldig. |
+| **Lønfrekvens**</br>mshr_payfrequency</br>*Streng* | Skrivebeskyttet | Hvor ofte medarbejderen bliver betalt.  |
+| **Valuta**</br>mshr_currency</br>*Streng* | Skrivebeskyttet | Den valuta, der er defineret for Plan for fast løn. |
+| **Enheden Plan for fast løn**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Systemgenereret | Systemgenereret GUID-værdi, der entydigt identificerer lønplanen. |
+
+## <a name="relations"></a>Relationer
+
+|Værdi af egenskab | Relateret enhed | Navigationsegenskab | Samlingstype |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
+| _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
+| _mshr_fk_payrollposition_id_value | [mshr_payrollpositionentity](hr-admin-integration-payroll-api-payroll-position.md) | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
+| _mshr_fk_plan_id_value | mshr_hcmcompfixedplantableentity | mshr_FK_Plan_id | - |
+| _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
 
 ## <a name="example-query"></a>Eksempelforespørgsel
 

@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 052311e15aeb20b927cbed217a2bda600dad60a5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4102f8036c0aede7c8a2adcaa9b8799a71ac7ada
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345644"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441283"
 ---
 # <a name="maintain-bar-code-types"></a>Vedligeholde stregkodetyper
 
@@ -32,7 +32,8 @@ Denne procedure viser, hvordan du opretter en ny stregkodedefinition, som dereft
 1. Skriv en værdi i feltet **Stregkodeopsætning**.
 1. Indtast en værdi i feltet **Beskrivelse**.
 1. Vælg en indstilling i feltet **Stregkodetype**.
-    * Hvis du bruger USMF, kan du vælge "Kode 39".  
+    * Hvis du bruger USMF, kan du vælge "Kode 39".
+1. Angiv i feltet **Maske-id** id for stregkodemasken. Stregkodemasker bruges til at oprette stregkoder og til hurtigt at identificere stregkoder, der er scannet ind i POS-systemet. Yderligere oplysninger finder du under [Opsætning af stregkodemasker](../../../commerce/set-up-bar-code-masks.md).
 1. Angiv et tal i feltet **Størrelse**.
 1. Angiv et tal i feltet **Maksimumlængde**.
 1. Vælg **Gem**.

@@ -1,5 +1,5 @@
 ---
-title: Sky- og kantskalaenheder til styring af arbejdsbyrder i produktion og lagersted
+title: Skaler enheder i en distribueret hybridtopologi
 description: Dette emne indeholder oplysninger om sky- og kantskalaenheder til styring af arbejdsbyrder i produktion og lagersted.
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780668"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471734"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Sky- og edge-skaleringsenheder for arbejdsbelastninger i forbindelse med produktion og lagerstedsstyring
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaler enheder i en distribueret hybridtopologi
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780668"
 >
 > Når du aktiverer sky- og grænseskalaenheder, bliver du bedt om at bekræfte, at du forstår, at nogle af de data, der er relateret til konfigurationen og behandlingen af sky- og grænseskalaenheder, kan blive gemt i et datacenter, der ligger i USA. Du kan få mere at vide om databehandling af sky- og kantskalaenheder i afsnittet [Databehandling under administration af skalaenheder](#data-processing-management) senere i dette emne.
 
-## <a name="core-value-proposition-for-scale-units"></a>Forslag til kerneværdi for skalaenheder
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Forslag til kerneværdi for en distribueret hybridtopologi
 
-Firmaer, der arbejder med produktion og distribution, skal kunne køre vigtige forretningsprocesser døgnet rundt uden afbrydelse og med skalering. Sky- og kantskalaenheder gør det muligt for virksomheder at køre centrale, kritiske produktions- og lagerprocesser uden afbrydelse, selv når der er lejlighedsvise problemer med netværksforbindelse eller ventetid.
+Firmaer, der arbejder med produktion og distribution, skal kunne køre vigtige forretningsprocesser døgnet rundt uden afbrydelse og med skalering. Distribueret hybridtopologi gør det muligt for virksomheder at køre centrale, kritiske produktions- og lagerprocesser uden afbrydelse, selv når der er lejlighedsvise problemer med netværksforbindelse eller ventetid.
 
-Sky- og kantskalaenheder gør det muligt at fordele arbejdsbyrder i produktion og lagersted mellem forskellige miljøer. Denne funktionalitet kan hjælpe med at forbedre ydeevnen, forhindre afbrydelse af tjenester og maksimere oppetid. Der findes skalaenheder via følgende tilføjelsesprogrammer til dit Supply Chain Management-abonnement:
+En distribueret hybridtopologi introducerer begrebet *skaleringsenheder*, der giver mulighed for distribution af arbejdsbyrder ved kørsel af shop floor og lagersted mellem forskellige miljøer. Denne funktionalitet kan hjælpe med at forbedre ydeevnen, forhindre afbrydelse af tjenester og maksimere oppetid. Der findes skalaenheder via følgende tilføjelsesprogrammer til dit Supply Chain Management-abonnement:
 
 - Tilføjelsesprogrammet Cloud Scale Unit for Dynamics 365 Supply Chain Management (*tilgængeligt i april 2021*)
 - Tilføjelsesprogrammet Edge Scale Unit for Dynamics 365 Supply Chain Management (*tilgængeligt snart*)
@@ -45,23 +45,23 @@ Skalaenheder udvider dit centrale Supply Chain Management-hubmiljø ved at tilf�
 
 Skalaenheder giver modstandsdygtighed, pålidelighed og skalering for de tildelte arbejdsbyrder. Kantskalaenheder kan midlertidigt afbrydes fra skyens hubmiljø, og arbejderne fortsætter med at arbejde i den tildelte arbejdsbyrde i kanten.
 
-En *arbejdsbyrde* er et defineret sæt forretningsfunktioner, der kan udtages og uddelegeres til en skalaenhed. Selvom arbejdsbyrden for lokationsstyring er frigivet, er arbejdsbyrden for produktionsudførelsen stadig en forhåndsversion.
+En *arbejdsbyrde* er et defineret sæt forretningsfunktioner, der kan udtages og uddelegeres til en skalaenhed. Selvom arbejdsbyrden for Warehouse Management er frigivet, er arbejdsbyrden for produktionsudførelsen stadig en forhåndsversion.
 
 Du kan konfigurere dit hubmiljø og skyskalaenheder for udvalgte arbejdsbyrder ved hjælp af [portalen til styring af skalaenhed](https://sum.dynamics.com). Du kan også tildele flere arbejdsbyrder pr. skalaenhed. Du kan finde oplysninger om forudsætningerne og begrænsningerne for skalaenheder i skyen i den aktuelle version i afsnittet [Forudsætninger og begrænsninger for enheder i skyen](#cloud-scale-unit-prerequisites) senere i dette emne.
 
-### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerede arbejdsbyrdefaciliteter for lokationsstyring i en skalaenhed
+### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerede arbejdsbyrdefaciliteter for Warehouse Management i en skalaenhed
 
-Arbejdsbyrden for lokationsstyring er den første distribuerede arbejdsbyrde for skalaenheder, der er frigivet til generel tilgængelighed.
+Arbejdsbyrden for Warehouse Management er den første distribuerede arbejdsbyrde for skalaenheder, der er frigivet til generel tilgængelighed.
 
-Skalaenheder giver følgende egenskaber til lokationsstyring:
+Skalaenheder giver følgende egenskaber til warehouse management:
 
 - Systemet kan behandle udvalgte bølgemetoder for salgsordrer og behovsgenopfyldning.
-- Lagermedarbejdere kan køre salgs-og behovsgenopfyldning som lagerarbejde ved hjælp af mobilappen Lokationsstyring.
-- Lagermedarbejdere kan forespørge på disponibel lagerbeholdning ved hjælp af mobilappen Lokationsstyring.
-- Lagermedarbejdere kan oprette og køre lagerbevægelser ved hjælp af mobilappen Lokationsstyring.
-- Lagermedarbejdere kan registrere indkøbsordrer og udføre læg på lager med mobilappen Lokationsstyring.
+- Lagermedarbejdere kan køre salgs-og behovsgenopfyldning som lagerarbejde ved hjælp af mobilappen Warehouse Management.
+- Lagermedarbejdere kan forespørge på disponibel lagerbeholdning ved hjælp af mobilappen Warehouse Management.
+- Lagermedarbejdere kan oprette og køre lagerbevægelser ved hjælp af mobilappen Warehouse Management.
+- Lagermedarbejdere kan registrere indkøbsordrer og udføre læg på lager med mobilappen Warehouse Management.
 
-Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder](cloud-edge-workload-warehousing.md).
+Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedikerede arbejdsbyrdefaciliteter for produktionskørsel i en skalaenhed
 
@@ -199,7 +199,7 @@ Gå til [portalen til styring af skalaenhed](https://aka.ms/SCMSUM), og log på 
 
 Hvis du vil tilføje en eller flere skalaenheder, der er tilgængelige i dine abonnementer, skal du vælge **Tilføj skalaenheder**.
 
-Under fanen **Definerede arbejdsbyrder** skal du bruge knappen **Opret arbejdsbyrde** til at føje en arbejdsbyrde for lokationsstyring i en af skalaenhederne. For hver arbejdsbyrde skal du angive konteksten for de processer, der skal ejes af arbejdsbyrden. For arbejdsbyrder til lokationsstyring er konteksten et specifikt lagersted på en bestemt lokation og juridisk enhed.
+Under fanen **Definerede arbejdsbyrder** skal du bruge knappen **Opret arbejdsbyrde** til at føje en arbejdsbyrde for Warehouse Management i en af skalaenhederne. For hver arbejdsbyrde skal du angive konteksten for de processer, der skal ejes af arbejdsbyrden. For arbejdsbyrder til Warehouse Management er konteksten et specifikt lagersted på en bestemt lokation og juridisk enhed.
 
 :::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Oprettelse af arbejdsbyrde.":::
 

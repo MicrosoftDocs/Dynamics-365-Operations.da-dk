@@ -1,8 +1,8 @@
 ---
 title: Oprette en teamkalender
 description: Få vist og opret teamkalendere i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccbf12d4dcc75e22fc62c356653a91b9a8a8d1761ccefb18c93e65f343250830
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eacf2dc460367ebefb7e9f4d9e301ec719cd2317
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744220"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431480"
 ---
 # <a name="view-team-and-company-calendars"></a>Vis team- og firmakalendere
 
@@ -75,7 +75,7 @@ Kalenderne indeholder nu yderligere filtre og indstillinger. Alle kalendere inde
 - Anmodninger om fri 
 - Orlovsanmodninger
 
-Kalenderkonfiguration i orlovs- og fraværsparametre bestemmer tilgængelige visningsindstillinger.
+Kalenderkonfiguration i **orlovs- og fraværsparametre** bestemmer tilgængelige visningsindstillinger.
 
 Du kan også filtrere kalendere efter leder eller afdeling. Den primære stillingstildeling bestemmer, hvilke medarbejdere der vises, når disse filtre angives. 
 

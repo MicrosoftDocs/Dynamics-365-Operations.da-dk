@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4a77b157e9dd5ee1f551cbb59abbc89aaa28d325cc74a77e6624f25902c5b19e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731883"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471686"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerstedsordrer til sky- og kantskalaenheder
 
@@ -27,23 +27,25 @@ ms.locfileid: "6731883"
 
 ## <a name="what-are-warehouse-orders"></a>Hvad er lagerstedsordrer?
 
-*Lagerstedsordrer* er en ordretype, der er oprettet for at understøtte implementering af lagersteders hub og skalaenhed. De giver dig mulighed for at modtage lager, når du kører en lagerstedsbelastning på en skalaenhed. De bruges i øjeblikket kun i forbindelse med indkøbsordrer.
+*Lagerstedsordrer* er en ordretype, der er brugt til at understøtte implementering af lagersteders hub og skalaenhed. De giver dig mulighed for at modtage og sende lager, når du kører en lagerstedsbelastning på en skalaenhed.
 
-Lagerstedsordrer bruges som en del af behandlingen af lokationsstyring, f.eks. når mobilappen Lokationsstyring bruges til at registrere fysisk lagerbeholdning under behandlingen af en indgående indkøbsordre. Lagerstedsordrer oprettes som en del af processen *Frigiv til lagersted*, der er tilgængelig for indkøbsordrer, som angiver et skalaenhedslagersted og varer, der er aktiveret til at bruge lokationsstyringsprocesser.
+Lagerstedsordrer bruges som del af både indgående og udgående behandling af warehouse management. De oprettes som en del af processen *Frigiv til lagersted*, som initialiseres i hub'et.
+For den indgående behandling bruges warehouse mobile App til at registrere fysisk disponible lagerbeholdning under behandlingen af indgående ordrer, denne er tilgængelig for indkøbs- og produktionsordrer, der angiver et lagersted for vægtenheder og varer, der er aktiveret til at bruge processer for warehouse management.
+De udgående lagerordrer bruges som en del af forsendelsesekspederingsprocessen til flytteordrer og salgsordrer.
 
 > [!IMPORTANT]
-> Lagerstedsordrer er kun tilgængelige i installationer, hvor der bruges [sky- og kantskalaenheder til arbejdsbyrder i lokationsstyring](cloud-edge-workload-warehousing.md).
+> Lagerstedsordrer er kun tilgængelige i installationer, hvor der bruges [sky- og kantskalaenheder til arbejdsbyrder i warehouse management](cloud-edge-workload-warehousing.md).
 
-## <a name="create-a-warehouse-order"></a>Oprette en lagerstedsordre
+## <a name="create-an-inbound-warehouse-order"></a>Opret en indgående lagerstedsordre
 
-Følg disse trin for at oprette en lagerstedsordre.
+Hvis du vil oprette en indgående lagerstedsordre for en indkøbsordreproces, skal du følge disse trin.
 
 1. Log på forekomsten af Microsoft Dynamics 365 Supply Chain Management, der kører på hubben. (Du skal starte *Frigiv til lagersted*-processen, mens du er logget på hubben).
 1. Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**.
 1. Vælg **Frigiv til lagersted** i gruppen **Handlinger** under fanen **Lagersted** i handlingsruden.
-1. Hvis du vil se de tilknyttede ordrelinjer for lagerstedet, skal du åbne den relevante indkøbsordre, vælge en linje i sektionen **Indkøbsordrelinjer** og derefter vælge **Lagersted \> Ordrelinjer for lagersted**. Du kan få vist alle linjerne ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**.
+1. Hvis du vil se de tilknyttede ordrelinjer for lagerstedet, skal du åbne den relevante indkøbsordre, vælge en linje i sektionen **Indkøbsordrelinjer** og derefter vælge **Lagersted \> Ordrelinjer for lagersted**. Du kan få vist alle linjerne ved at gå til **Warehouse Management \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**.
 
-Du kan også udløse processen *Frigiv til lagersted* fra et batchjob ved at gå til **Lokationsstyring > Frigiv til lagersted > Automatisk frigivelse af indkøbsordrer**. Når du konfigurerer batchjobbet, kan du vælge bestemte indkøbsordrelinjer baseret på en forespørgsel. Det vil typisk være at konfigurere et tilbagevendende batchjob, der frigiver alle de bekræftede indkøbsordrelinjer, der forventes at ankomme næste dag.
+Du kan også udløse processen *Frigiv til lagersted* fra et batchjob ved at gå til **Warehouse Management > Frigiv til lagersted > Automatisk frigivelse af indkøbsordrer**. Når du konfigurerer batchjobbet, kan du vælge bestemte indkøbsordrelinjer baseret på en forespørgsel. Det vil typisk være at konfigurere et tilbagevendende batchjob, der frigiver alle de bekræftede indkøbsordrelinjer, der forventes at ankomme næste dag.
 
 ## <a name="cancel-a-warehouse-order"></a>Annullere en lagerstedsordre
 
@@ -52,7 +54,7 @@ Som en del af processen *Frigiv til lagersted* er lagertransaktioner for indkøb
 Følg disse trin for at annullere en lagerstedsordrelinjer.
 
 1. Log på den forekomst af Supply Chain Management, der kører på hubben.
-1. Gå til **Lokationsstyring \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**.
+1. Gå til **Warehouse Management \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**.
 1. Vælg den relevante linje.
 1. Vælg **Annuller lagerstedsordrelinjer** i handlingsruden.
 
@@ -61,9 +63,9 @@ Følg disse trin for at annullere en lagerstedsordrelinjer.
 
 ## <a name="monitor-a-warehouse-order"></a>Overvåge en lagerstedsordre
 
-I visningen **Lagerstedsordrelinjer** kan du overvåge status for indgående modtagelse ved at gennemse værdierne i kolonnen **Resterende antal til modtagelse**. Hvis du vil have vist detaljer, der er relateret til arbejde, der udføres ved hjælp af mobilappen Lokationsstyring, skal du følge et af disse trin.
+I visningen **Lagerstedsordrelinjer** kan du overvåge status for indgående modtagelse ved at gennemse værdierne i kolonnen **Resterende antal til modtagelse**. Hvis du vil have vist detaljer, der er relateret til arbejde, der udføres ved hjælp af mobilappen Warehouse Management, skal du følge et af disse trin.
 
-- Gå til **Lokationsstyring \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**, og brug filteret til at finde det, du leder efter.
+- Gå til **Warehouse Management \> Forespørgsler og rapporter \> Ordrelinjer for lagersted**, og brug filteret til at finde det, du leder efter.
 - Gå til **Indkøb og forsyning \> Indkøbsordrer \> Alle indkøbsordrer**, og åbn den relevante indkøbsordre. Vælg en eller flere linjer i sektionen **Indkøbsordrelinjer**, og vælg derefter **Lagersted \> Lagerstedstilgangsposter**.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]

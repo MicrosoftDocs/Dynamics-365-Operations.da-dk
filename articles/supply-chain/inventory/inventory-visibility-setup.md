@@ -1,5 +1,5 @@
 ---
-title: Konfigurere Lagersynlighed
+title: Installere tilføjelsesprogrammet Lagersynlighed
 description: Dette emne beskriver, hvordan du installerer og konfigurerer tilføjelsesprogrammet Lagersynlighed for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8573fe01abb1c6092012baf85e8b7df40b74a31f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343578"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474814"
 ---
-# <a name="set-up-inventory-visibility"></a>Konfigurere Lagersynlighed
+# <a name="install-and-set-up-inventory-visibility"></a>Installere og konfigurere lagersynlighed
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -41,7 +41,7 @@ Før du installerer Lagersynlighed, skal du fuldføre følgende opgaver:
     - `Inventory Visibility Integration.zip` (hvis den version af Supply Chain Management, du kører, er tidligere end version 10.0.18)
 
 > [!NOTE]
-> De lande og områder, der i øjeblikket understøttes, omfatter Canada (CCA, ECA), USA (WUS, EUS), Den Europæiske Union (NEU, WEU), Storbritannien (SUK, WUK) og Australien (EAU, SEAU).
+> De lande og områder, der i øjeblikket understøttes, omfatter Canada (CCA, ECA), USA (WUS, EUS), Den Europæiske Union (NEU, WEU), Storbritannien (SUK, WUK) og Australien (EAU, SEAU), Japan (EJP, WJP) og Brasilien (SBR, SCUS).
 
 Hvis du har spørgsmål om disse forudsætninger, skal du kontakte produktteamet for Lagersynlighed.
 
@@ -119,6 +119,9 @@ Når du har registreret et program og føjet en klienthemmelighed til Azure AD, 
 1. Acceptér vilkårene og betingelserne ved at markere afkrydsningsfeltet **Vilkår og betingelser**.
 1. Vælg **Installer**. Status for tilføjelsesprogrammet vises som **Installerer**. Når installationen er fuldført, skal du opdatere siden. Status bør ændre sig til **Installeret**.
 
+> [!IMPORTANT]
+> Hvis du har mere end ét LCS-miljø, skal du oprette et andet Azure AD-program til hvert miljø. Hvis du bruger samme program-id og lejer-id til at installere tilføjelsesprogrammet Lagersynlighed i forskellige miljøer, vil der forekomme et tokenproblem for ældre miljøer. Det er kun den sidste, der er installeret, der er gældende.
+
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Fjerne installationen af tilføjelsesprogrammet Lagersynlighed
 
 Hvis du vil fjerne installationen af tilføjelsesprogrammet Lagersynlighed, skal du vælge **Afinstaller** på LCS-siden. Afinstallationsprocessen afslutter tilføjelsesprogrammet Lagersynlighed, fjerner registreringen af tilføjelsesprogrammet fra LCS og sletter eventuelle midlertidige data, der er gemt i datacachen for tilføjelsesprogrammet Lagersynlighed. De primære lagerdata, der er lagret i Dataverse-abonnementet, slettes dog ikke.
@@ -133,7 +136,7 @@ Hvis du vil afinstallere lagerdata, der er gemt i Dataverse-abonnementet, skal d
 
 Når du har slettet disse løsninger, slettes også de data, der er gemt i tabeller.
 
-## <a name="set-up-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Konfigurere Supply Chain Management
+## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Oprette lagersynlighed i Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Implementere integrationspakken Lagersynlighed
 
@@ -153,8 +156,23 @@ Sørg for, at følgende funktioner er aktiveret i dit Supply Chain Management-mi
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Konfigurer integration af lagersynlighed
 
-1. I Supply Chain Management skal du åbne arbejdsområdet **[Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** og aktivere funktionen *Integration af lagersynlighed*.
-1. Gå til **Lagerstyring \> Konfiguration \> Parametre for integration af lagersynlighed**, og angiv URL-adressen for det miljø, hvor du kører lagersynlighed. Du kan finde flere oplysninger i [Finde tjenestens slutpunkt](inventory-visibility-power-platform.md#get-service-endpoint).
+Når du har installeret tilføjelsesprogrammet, kan du forberede Supply Chain Management-systemet til at arbejde med det ved at gøre følgende trin.
+
+1. I Supply Chain Management skal du åbne arbejdsområdet **[Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** og aktivere følgende funktioner.
+    - *Integration af lagersynlighed* – påkrævet.
+    - *Integration af lagersynlighed med reservationsmodkonto* – Anbefales, men valgfri. Kræver version 10.0.22 eller nyere. Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md).
+
+1. Gå til **Lagerstyring \> Opsætning \> Parametre for integration af lagersynlighed**.
+1. Åbn fanen **Generelt**, og foretag følgende indstillinger:
+    - **Slutpunkt for lagersynlighed** – Angiv URL-adressen for det miljø, hvor du kører lagersynlighed. Du kan finde flere oplysninger i [Finde tjenestens slutpunkt](inventory-visibility-configuration.md#get-service-endpoint).
+    - **Maksimalt antal poster i en enkelt anmodning** – Angiv det maksimale antal poster, der skal medtages i en enkelt anmodning. Du skal angive et positivt heltal, der er mindre end eller lig med 1000. Standardværdien er 512. Det anbefales på det kraftigste, at du beholder standardværdien, medmindre du har modtaget et råd fra Microsoft Support, eller hvis du på anden måde er sikker på, at du skal ændre den.
+
+1. Hvis du har aktiveret den valgfrie funktion til *lagersynlighedsintegration med reservationsmodkonto*, skal du åbne fanen **Reservationsmodkonto** og foretage følgende indstillinger:
+    - **Aktiver reservationsmodkonto** – Angiv til *Ja* for at aktivere denne funktion.
+    - **Modifikator for reservation** – Vælg den lagertransaktionsstatus, der skal modpostere reservationer, der foretages ved lagersynlighed. Denne indstilling bestemmer det ordrebehandlingstrin, der udløser modregninger. Stadiet spores af ordrens lagerposteringsstatus. Vælg en af følgende muligheder:
+        - *I bestilling* – For statussen *I transaktion* sender en ordre en anmodning om modkontering, når den oprettes. Modantallet er antallet for den oprettede ordre.
+        - *Reserver* – For statussen *Reservér bestilt transaktion* sender en ordre en anmodning om modkontering, når den reserveres, plukkes, følgesedlen bogføres eller faktureres. Anmodningen udløses kun én gang for det første trin, når den nævnte proces finder sted. Modantallet er det antal, hvor lagertransaktionens status ændres fra *I bestilling* til *Reserveret bestilt* (eller senere status) på den tilsvarende ordrelinje.
+
 1. Gå til **Lagerstyring \> Periodisk \> Integration af lagersynlighed**, og aktivér jobbet. Alle hændelser med lagerændringer fra Supply Chain Management vil nu blive bogført i Lagersynlighed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

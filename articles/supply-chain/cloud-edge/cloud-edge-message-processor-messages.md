@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 76a3cc316da322c7997072c00780f2fc133bfd2a02274b1e53f5cd06cfb1277e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748853"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471638"
 ---
 # <a name="message-processor-messages"></a>Meddelelser om meddelelsesprocessor
 
@@ -44,7 +44,7 @@ Du kan bruge felterne øverst på siden **Meddelelser for meddelelsesprocessor**
   - *Kø* – Meddelelsen er klar til at blive behandlet af meddelelsesprocessoren.
   - *Behandlet* – Meddelelsen er blevet behandlet af meddelelsesprocessoren.
   - *Annulleret* – Meddelelsen blev behandlet, men behandlingen mislykkedes.
-- **Meddelelses indhold** – Dette filter udfører en fuldtekstsøgning af meddelelsens indhold. (Meddelelses indhold vises ikke i gitteret.) Filteret behandler de fleste specialsymboler (som f.eks. "-") som mellemrum, og alle mellemrum behandles som booleske OR-operatorer. T=Hvis du søger efter en bestemt værdi for en bestemt `journalid`-værdi svarende til "USMF-123456", vil systemet finde alle meddelelser, der indeholder "USMF" eller "123456", hvilket sandsynligvis vil give en lang liste. Det vil derfor være bedre kun at angive "123456", fordi det vil returnere mere specifikke resultater.
+- **Meddelelses indhold** – Dette filter udfører en fuldtekstsøgning af meddelelsens indhold. (Meddelelses indhold vises ikke i gitteret.) Filteret behandler de fleste specialsymboler (som f.eks. "-") som mellemrum, og alle mellemrum behandles som booleske OR-operatorer. Hvis du søger efter en bestemt værdi for en bestemt `journalid`-værdi svarende til "USMF-123456", vil systemet finde alle meddelelser, der indeholder "USMF" eller "123456", hvilket sandsynligvis vil give en lang liste. Det vil derfor være bedre kun at angive "123456", fordi det vil returnere mere specifikke resultater.
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Eksempel på meddelelsestype: Anmode om økonomisk opdatering af lagerregulering
 
@@ -65,7 +65,7 @@ Værktøjslinjen under fanen **Log** indeholder følgende knapper:
 
 ## <a name="message-processor-batch-job"></a>Batchjob for meddelelsesprocessor
 
-Når du kører en cloud- og kantinstallation, startes batchjobbet *Meddelelsesprocessor* automatisk, når der oprettes en ny meddelelse til behandling, så du ikke behøver at planlægge dette job manuelt.
+Når du kører en distribueret hybrid topologi med skalaenheder, startes batchjobbet *Meddelelsesprocessor* automatisk, når der oprettes en ny meddelelse til behandling, så du ikke behøver at planlægge dette job manuelt.
 
 Hvis det er nødvendigt, kan du få adgang til batchjobbet ved at gå til **Systemadministration > Meddelelsesprocessor > Meddelelsesprocessor**.
 

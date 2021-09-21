@@ -2,7 +2,7 @@
 title: Oversigt over teknisk ændringsstyring
 description: Dette emne giver en oversigt over teknisk ændringsstyring, som hjælper dig med at planlægge og administrere produktversioner og administrere produktlivscyklusser og tekniske ændringer.
 author: t-benebo
-ms.date: 11/11/2020
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8f2d577d9e48ced9d4c516a66e4f53671417875cbfb51bd6bdc2cb0938d83c01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Release 10.0.21
+ms.openlocfilehash: b4fe2d62bc8084cf8c0d10b7bcb94f08cc618900
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714950"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467392"
 ---
 # <a name="engineering-change-management-overview"></a>Oversigt over teknisk ændringsstyring
 
@@ -43,9 +43,11 @@ Teknisk ændringsstyring hjælper dig med at planlægge og administrere produktv
 
 Den foregående video ([Styring af ændringer i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
-## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Aktivere funktionerne til styring af tekniske ændringer og versionsdimension for systemet
+## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Aktivere styringen af tekniske funktionsændringer for systemet
 
-Før du kan bruge styring af tekniske ændringer, skal du aktivere både funktionen *Styring af tekniske ændringer* og dens konfigurationsnøgle. Hvis du også vil spore versionsdimensionen for produkter i transaktioner (valgfrit), skal du også aktivere funktionen *Produktversionsdimension* og dens konfigurationsnøgle.
+Før du kan bruge styring af tekniske ændringer, skal du aktivere både funktionen *Styring af tekniske ændringer* og dens konfigurationsnøgle. Hvis du også vil spore versionsdimensionen for produkter i transaktioner (valgfrit), skal du også aktivere funktionen *Produktversionsdimension* og dens konfigurationsnøgle. Når disse forudsætninger er konfigureret som påkrævet, kan du aktivere yderligere valgfrie funktioner til ændringsstyring for teknikere.
+
+### <a name="turn-on-the-basic-engineering-change-management-features"></a>Aktivere styringen af tekniske basisfunktionsændringer for systemet
 
 Du skal først aktivere disse funktioner ved at følge disse trin.
 
@@ -53,6 +55,8 @@ Du skal først aktivere disse funktioner ved at følge disse trin.
 1. Søg efter opdateringer.
 1. Aktivér den funktion, der hedder *Teknisk ændringsstyring*.
 1. Hvis du vil bruge den, skal du også aktivere funktionen med navnet *Produktdimensionsversion*.
+
+### <a name="turn-on-the-required-configuration-keys"></a>Aktivere de nødvendige konfigurationsnøgler
 
 Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin.
 
@@ -70,5 +74,18 @@ Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin.
 
 > [!IMPORTANT]
 > Fra april 2022 vil licensnøglerne til både **Styring af tekniske ændringer** og **Produktdimension – Version** som standard være aktiveret for alle nye installationer, men du vil stadig kunne deaktivere dem, hvis det er nødvendigt.
+
+### <a name="turn-on-additional-engineering-change-management-features"></a>Aktivere styringen af tekniske yderligere funktionsændringer for systemet
+
+Når du har aktiveret de grundlæggende funktioner til ændringsstyring for teknikerarbejde og aktiverer konfigurationsnøglerne, føjes flere ekstra og valgfri funktioner til ændringsstyring for teknikerarbejde til funktionsstyring. Hver af disse funktioner er angivet i modulet **Teknisk ændringsstyring**. I følgende tabel beskrives de enkelte valgfrie funktioner, og der er hyperlinks, som du kan finde flere oplysninger i.
+
+| Funktionsnavn i funktionsstyring | Betegnelse |
+|---|---|
+| Aktivér administration af ændringer på eksisterende produkter | <p>Med denne funktion kan du konvertere eksisterende produkter til teknikere produkter, så du kan begynde at administrere dem ved hjælp af styring af engineering-ændringer.</p><p>Yderligere oplysninger finder du i [Aktivere administration af ændringer på eksisterende produkter](change-management-existing-products.md).</p> |
+| Tekniske beskeder til produktion | <p>Når et produkt ændres inden for teknikerarbejde, kan det være vigtigt at give produktionen besked om disse ændringer. På den måde kan produktionsmedarbejdere træffe de relevante handlinger, f.eks. komponentsubstitution, styklisteerstatning eller ruteerstatning. Denne funktion giver dig mulighed for at give produktion besked om ændringer af produkter, der produceres.</p><p>Yderligere oplysninger finder du i [Administrere ændringer af tekniske produkter](engineering-change-management.md).</p> |
+| Forbedret attributnedarvning for Administration af tekniske ændringer | <p>Denne funktion forenkler administrationen af attributter for færdigvarer eller mellemvarer. Når denne funktion er aktiveret, er det lettere at identificere alle de attributter, der hører til en vare, og du kan vælge de attributter, der skal overføres fra den pågældende vare til den overordnede vare. Denne funktion er nyttig, når én komponent i en færdig gode f.eks. er sårbar, giftig eller antændelig, da du nemt kan identificere den sårbar, giftige eller antændelige attribut og overføre den ud til den færdige vare.</p><p>Yderligere oplysninger finder du i [Tekniske attributter og søgning efter tekniske attributter](engineering-attributes-and-search.md).</p> |
+| Kontroller af produktparathed | <p>Denne funktion giver også mulighed for at angive politikker for parathedskontroller for standardprodukter (ikke-tekniske). Brug parathedskontrol af produkter til at sikre, at hvert produkt er fuldt defineret, og at alle de nødvendige politikker er konfigureret, før produktet bliver tilgængeligt og bruges i transaktioner. Hvis du deaktiverer denne funktion, efter at du har brugt den et stykke tid, slettes alle eksisterende parathedskontroller for standardprodukter.</p><p>Du kan finde flere oplysninger under [Produktparathed](product-readiness.md).</p> |
+| Administrer ændringer af formler og deres ingredienser | <p>Denne funktion giver dig mulighed for at spore ændringer af formelingredienser, ko-produkter og biprodukter.</p><p>Du kan finde flere oplysninger under [Administrere ændringer i formler og deres stoffer](manage-formula-changes.md).</p> |
+| Variantgenerering af tekniske produkter | <p>Med denne funktion kan du generere varianter til teknikere produkter baseret på tilgængelige dimensionsværdier.</p><p>Du kan finde flere oplysninger i [Generere varianter for teknikprodukter](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

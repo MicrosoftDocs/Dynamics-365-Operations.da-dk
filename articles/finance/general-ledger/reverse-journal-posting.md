@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae4e25874488890f0eeb601038e308fdc7e89485b5f6a8cf5d5fab713107dfcf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a4fd7c242fc2d857cb35f8ef8c08567c758b768
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753474"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463583"
 ---
 # <a name="reverse-journal-posting"></a>Tilbageføre kladdebogføring
 
@@ -28,13 +28,17 @@ ms.locfileid: "6753474"
 
 Dette emne indeholder en beskrivelser af Microsoft Dynamics 365 Finance-funktioner, der giver dig mulighed for at tilbageføre en hel kladde eller tilbageføre et eller flere bilag fra listen med bilagstransaktioner, uanset deres oprindelse. 
 
+Før du kan bruge en af de funktioner, der er beskrevet i dette emne, skal du aktivere dem i systemet. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+ - Modul: Finans
+ - Funktionsnavn: **Massetilbageførsler for flere dokumenter**
+
 ## <a name="reversing-journals"></a>Tilbageføre kladder
 
 Du kan tilbageføre kladdelinjer enkeltvist. Med tilbageførsel af kladdebogføring kan du også tilbageføre en hel økonomikladde. Sådan tilbagefører du en kladde: 
 
-- Åbn økonomikladden, og filtrer på bogførte kladder.
+- Filtrer på de bogførte kladder, og åbn **linjevisningen** i kladden.
 - Vælg menuen **Tilbagefør** øverst på siden.
-- Du kan se det samlede antal bilag og bilagslinjer samt det samlede beløb for de linjer, der tilbageføres
+- Du kan se det samlede antal bilag og bilagslinjer samt det samlede beløb for de linjer, der tilbageføres.
 - Vælg **Ja** for at bruge de eksisterende transaktionsdatoer eller **Nej** for at angive en ny. I nogle tilfælde kan perioden for den oprindelige transaktion være lukket, så du skal angive en ny transaktionsdato for tilbageførslen.
 - Hvis du har valgt **Nej**, skal du angive en transaktionsdato for tilbageførslen. 
 - Indtast en kommentar, der skal føjes til den tilbageførte transaktion.
@@ -52,7 +56,7 @@ Du kan også tilbageføre bilag fra **bilagstransaktionslisten** på tværs af a
 
 Sådan tilbagefører du et eller flere bilag: 
 
-- Vælg menuen **Tilbagefør** øverst på siden.
+- Vælg menuen **Tilbagefør hele kladderullelisten** øverst på siden.
 - Du kan se det samlede antal bilag og bilagslinjer samt det samlede beløb for de linjer, der tilbageføres.
 - Vælg **Ja** for at bruge de eksisterende transaktionsdatoer eller **Nej** for at angive en ny. I nogle tilfælde kan perioden for den oprindelige transaktion være lukket, så du skal angive en ny transaktionsdato for tilbageførslen.
 - Hvis du har valgt **Nej**, skal du angive en transaktionsdato for tilbageførslen. 

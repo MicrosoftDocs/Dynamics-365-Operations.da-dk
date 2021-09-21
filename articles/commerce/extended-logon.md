@@ -1,8 +1,8 @@
 ---
 title: Konfigurere udvidede logonfunktioner for MPOS og Cloud POS
 description: Dette emne dækker dine muligheder for at konfigurere udvidet logon til Cloud POS og Retail Modern POS (MPOS).
-author: rubencdelgado
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45284ddb3ec082e3bac8a95ed3ba7901cbce2bf303a8523b9c0a7af56938d560
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748540"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478665"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Konfigurere udvidet logonfunktionalitet for MPOS og Cloud POS
 
@@ -58,6 +58,8 @@ Som standard er det kun chefer, der kan tildele udvidet logon til medarbejdere. 
 Hvis du vil slette det udvidede logon, der er tildelt til en medarbejder, søger du efter medarbejderen ved hjælp af handlingen **Udvidet logon**. Vælg medarbejderen, og klik derefter på **Fjern tildeling**. Alle udvidede logonoplysninger, som er knyttet til medarbejderen, er fjernet.
 
 ## <a name="extending-extended-logon"></a>Udvide udvidet logon
+
+Ved udvidet logon kan fem vigtige tegn være det entydige id uden for feltet. Hvis du f.eks. konfigurerer to kort med id'erne "1234567" og "1234578", anses de begge for at være "12345". Du kan bygge en filtype, der understøtter flere tegn. Detaljerede instruktioner finder du ved at kontrollere, hvordan du [udvider den udvidede logonfunktionalitet til MPOS og Sky POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
 Logontjenesten kan udvides til at understøtte yderligere enheder med udvidet logon, f.eks. håndfladescannere. Yderligere oplysninger finder du i dokumentationen om POS-udvidelsesmuligheder.
 

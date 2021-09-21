@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5809d4a29c4209d8fb42bdfd441a3a4fb201ca6c6318abc0315a02ead7c551de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759155"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463610"
 ---
 # <a name="address-books-faq"></a>Ofte stillede spørgsmål om adressekartoteker
 
@@ -66,10 +66,12 @@ I det globale adressekartotek eller på den relevante enhedsside kan du angive p
 
 Du kan konfigurere oversættelser af adresseoplysninger, så oplysningerne vises på dit eget sprog (systemsprog) i dit program, men på et andet sprog i dokumenter, f.eks salgsordrer. Du kan angive oversættelser af land/område-navne, adresseformål og navnerækkefølge. Dit systemsprog er f.eks. dansk, og du opretter en salgsordre for en kunde i Frankrig. I dette tilfælde kan du se kundeposten på dansk i programmet, men få vist adresseoplysningerne på fransk i den udskrevne salgsordre. Når du konfigurerer oversættelser, skal du indtaste en oversættelse for hver vare på listen. De varer, du ikke angiver en oversættelse for, vises på systemsproget. Dit systemsprog er f.eks. dansk, og du sender et dokument til en kunde i Spanien. Hvis du ikke har angivet spanske (ESP) oversættelser af adresseoplysningerne, vises disse oplysninger på dansk både i dit program og på det udskrevne materiale.
 
-## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Når jeg har importeret adresser, og jeg får adgang til posterne, hvorfor kan jeg ikke redigere importerede adresser?
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Når jeg har importeret adresser, hvorfor kan jeg ikke redigere posterne?
 
-Ved import af adresser er der et felt med navnet **IsLocationOwner**, som angiver, om den part, der er knyttet til lokaliteten (adressen), er ejer af adressen. Hvis parten er ejeren af adressen, kan adressen redigeres, når der åbnes adgang til den part, der er adgang til, i det globale adressekartotek eller fra formen med masterposten (f.eks. debitor, kreditor eller arbejder). Hvis parten ikke er ejer af adressen, kan posten ikke redigeres i de tidligere viste forms. Ved import af adresser skal **IsLocationOwner** angives til **Yes**, hvis adressen skal kunne redigeres ved hjælp af den tilknyttede part. Af og til importeres dette felt dog forkert. For at løse dette problem kan ejeren af lokaliteten opdateres i det globale adressekartotek fra partposten eller fra siden **Bekræft lokalitetsejere**. Hvis du vil opdatere en enkelt partpost, skal du gå til **Globalt adressekartotek > Adresse**. Vælg **Rediger** for at åbne siden **Rediger adresse** for at ændre ejeren af lokaliteten. Vælg **Skift ejer af lokalitet** for at se den tidligere lokalitetsejer, hvor den aktuelt valgte part er den nye ejer af lokaliteten. Hvis den tidligere lokalitetsejer er tom, betyder det, at ejeren af en lokalitet ikke er oprettet. Når indstillingen **Avanceret** vælges, åbnes siden **Administrer** adresser, hvor ejeren af lokaliteten også kan angives. Vælg den placering, der skal opdateres, og vælg derefter **Angiv lokalitetsejer** i menuen. Hvis du vil opdatere lokalitetsejeren til flere poster, skal du gå til **Globalt adressekartotek > Lokationer > Bekræft lokalitetsejere**. Listen indeholder placeringer, der er knyttet til en enkelt part, men denne part er ikke ejeren. Hvis du vælger **Bekræftet ejer**, angives **Foreslået ejer-id** til ejeren af den tilknyttede adresse. Når parten er angivet som ejer, kan den tilknyttede adresse redigeres fra partposten. Hvis du vil ændre ejeren af lokaliteten, skal du have tildelt rettigheden **Angiv lokalitetsejer** på siden **Sikkerhedskonfiguration**.  Systemadministratoren tildeles som standard denne rettighed.
+Når du importerer adresser, findes der et felt med navnet **IsLocationOwner**. I dette felt angives, om den part, der er tilknyttet lokaliteten (adressen), er ejeren af adressen. Hvis parten er ejeren af adressen, kan adressen redigeres, når der åbnes adgang til den part, der er adgang til, i det globale adressekartotek eller fra siden med masterposten (f.eks. debitor, kreditor eller arbejder). Hvis parten ikke er ejeren af adressen, kan posten ikke redigeres. 
 
+Ved import af adresser skal **IsLocationOwner** angives til **Ja**, hvis adressen skal kunne redigeres ved hjælp af den tilknyttede part. Hvis dette felt er importeret forkert, kan ejeren af lokaliteten opdateres i det globale adressekartotek.
+
+Du kan finde flere oplysninger om, hvordan du ændrer lokalitetsejeren for en importeret adresse, i [Administrere lokalitetsejere](./global-address-book-location-owner.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

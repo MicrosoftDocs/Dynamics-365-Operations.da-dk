@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 32beabd40aa62cce832505edd56d92a8a8f12192b821f075e9b1f058d52bf8d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733438"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474934"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel reservationspolitik for dimension på lagerstedsniveau
 
@@ -97,7 +97,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 
 ### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a><a name="Example-batch-allocation"></a>Opret et lagerreservationshierarki for at tillade batchspecifik reservation
 
-1. Gå til **Lokationsstyring** \> **Opsætning** \> **Lager \> Reservationshierarki**.
+1. Gå til **Warehouse Management** \> **Opsætning** \> **Lager \> Reservationshierarki**.
 2. Vælg **Ny**.
 3. Angiv et navn i feltet **Navn** (f.eks. **Batchfleks**).
 4. Indtast en beskrivelse i feltet **Beskrivelse** (f.eks. **Batch under fleksibel**).
@@ -134,7 +134,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
     > [!NOTE]
     > Hvis du vil reservere et bestemt batch til en salgsordre, skal du bruge siden **Batchreservation**.
     >
-    > Hvis du angiver batchnummeret direkte på salgsordrelinjen, fungerer systemet, som om du har angivet en bestemt batchværdi for en vare, der er underlagt reservationspolitikken *Batch under\[lokation\]*. Når du gemmer linjen, vil du modtage en advarselsmeddelelse. Hvis du bekræfter, at batchnummeret skal angives direkte på ordrelinjen, håndteres linjen ikke af den almindelige lokationsstyringslogik.
+    > Hvis du angiver batchnummeret direkte på salgsordrelinjen, fungerer systemet, som om du har angivet en bestemt batchværdi for en vare, der er underlagt reservationspolitikken *Batch under\[lokation\]*. Når du gemmer linjen, vil du modtage en advarselsmeddelelse. Hvis du bekræfter, at batchnummeret skal angives direkte på ordrelinjen, håndteres linjen ikke af den almindelige warehouse management-logik.
     >
     > Hvis du reserverer antallet fra siden **Reservation**, reserveres der ikke noget bestemt batch, og udførelsen af lagerdrift for linjen følger de regler, der gælder i henhold til reservationspolitikken *Batch under\[lokation\]*.
 
@@ -191,7 +191,7 @@ I dette eksempel skal du have installeret demodata, og du skal bruge demodatafir
 
 ### <a name="business-scenario"></a>Forretningsscenarie
 
-I dette scenario bruger en virksomhed lokationsstyring og arbejdsbehandling og håndterer lastplanlægning på niveauet for individuelle paller/containere uden for Supply Chain Management, før arbejdet oprettes. Disse containere repræsenteres ved id'er i lagerdimensionerne. For denne fremgangsmåde skal bestemte id'er derfor forhåndstildeles salgsordrelinjer, før der udføres plukarbejde. Virksomheden søger efter fleksibilitet i den måde, hvorpå reglerne for id-reservation håndteres, så følgende funktionsmåder finder sted:
+I dette scenario bruger en virksomhed Warehouse Management og arbejdsbehandling og håndterer lastplanlægning på niveauet for individuelle paller/containere uden for Supply Chain Management, før arbejdet oprettes. Disse containere repræsenteres ved id'er i lagerdimensionerne. For denne fremgangsmåde skal bestemte id'er derfor forhåndstildeles salgsordrelinjer, før der udføres plukarbejde. Virksomheden søger efter fleksibilitet i den måde, hvorpå reglerne for id-reservation håndteres, så følgende funktionsmåder finder sted:
 
 - Et id kan registreres og reserveres, når ordren udtages af salgsbehandleren, og det kan ikke ændres af andre behov. Denne funktionsmåde er en hjælp til at sikre, at det id, der blev planlagt, sendes til kunden.
 - Hvis id'et ikke allerede er tilknyttet en salgsordrelinje, kan lagermedarbejderne vælge et id under plukarbejdet, når salgsordreregistrering og -reservation er fuldført.
@@ -244,7 +244,7 @@ Dette scenario indeholder referencer til værdier og poster, der er inkluderet i
 
 ### <a name="create-an-inventory-reservation-hierarchy-that-allows-for-license-plate-reservation"></a>Oprette et hierarki for lagerreservationer, der giver mulighed for reservation af id
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Lager \> Reservationshierarki**.
+1. Gå til **Warehouse Management \> Konfiguration \> Lager \> Reservationshierarki**.
 1. Vælg **Ny**.
 1. Angiv en værdi i feltet **Navn** (f.eks. *FleksibeltID*).
 1. Indtast en beskrivelse i feltet **Beskrivelse** (f.eks. *Fleksibel id-reservation*).
@@ -370,7 +370,7 @@ Følgende nøgleregel anvendes til alle disse handlinger af typen undtagelseshå
 
 Et eksempel på dette scenario er en situation, hvor tidligere udført arbejde ikke kan plukkes ved hjælp af funktionen **Reducer det antal, der er plukket**. I dette eksempel antages det, at du allerede har udført de trin, der er beskrevet i [Eksempel på scenario: batchnummertildeling](#Example-batch-allocation). Det er en fortsættelse af dette eksempel.
 
-1. Gå til **Lokationsstyring** \> **Laster** \> **Aktive laster**.
+1. Gå til **Warehouse Management** \> **Laster** \> **Aktive laster**.
 2. Vælg den last, der blev oprettet i forbindelse med forsendelsen af salgsordren.
 3. Vælg **Reducer det antal, der er plukket** i oversigtspanelet **Indlæs ordrelinjer**.
 4. Vælg **FL-001** i feltet **Flyt til lokation** på siden **Reducer det antal, der er plukket**.
@@ -407,7 +407,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på mobilappen Lokationsstyring, når du starter pluk af arbejde.</li>
+<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på mobilappen Warehouse Management, når du starter pluk af arbejde.</li>
 <li>Vælg <strong>Foreslå</strong>.</li>
 <li>Bekræft den nye lokation, der foreslås, på basis af tilgængeligheden af batchantal.</li>
 </ol>
@@ -424,7 +424,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på mobilappen Lokationsstyring, når du starter pluk af arbejde.</li>
+<li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på mobilappen Warehouse Management, når du starter pluk af arbejde.</li>
 <li>Angiv en lokation manuelt.</li>
 </ol>
 </td>
@@ -452,7 +452,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ikke anvendelig</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Fuld</strong> på mobilappen Lokationsstyring, når du behandler plukarbejde.</li>
+<li>Vælg menupunktet <strong>Fuld</strong> på mobilappen Warehouse Management, når du behandler plukarbejde.</li>
 <li>I feltet <strong>Plukantal</strong> skal du angive en del af antallet af det krævede pluk for at angive den fulde kapacitet.</li>
 </ol>
 </td>
@@ -527,7 +527,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Start en flytning på mobilappen Lokationsstyring.</li>
+<li>Start en flytning på mobilappen Warehouse Management.</li>
 <li>Angiv "fra"- og "til"-lokationer.</li>
 </ol></td>
 <td>
@@ -643,7 +643,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Warehouse Management, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du angive <strong>Ingen omfordeling</strong>.</li>
 </ol>
@@ -672,7 +672,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Warehouse Management, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du angive <strong>Ingen omfordeling</strong>.</li>
 </ol>
@@ -696,7 +696,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ja</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Warehouse Management, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 <li>Vælg lokationen/id'et på listen.</li>
@@ -722,7 +722,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Warehouse Management, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 </ol>
@@ -735,7 +735,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ingen</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Warehouse Management, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med manuel omfordeling</strong>.</li>
 <li>Vælg lokationen/id'et på listen.</li>
@@ -759,7 +759,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ikke anvendelig</td>
 <td>
 <ol>
-<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Lokationsstyring, når du kører plukarbejde.</li>
+<li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Warehouse Management, når du kører plukarbejde.</li>
 <li>Angiv <strong>0</strong> i feltet <strong>Kort pluk antal</strong> (nul).</li>
 <li>I feltet <strong>Årsag</strong> skal du vælge <strong>Kort pluk med automatisk omfordeling</strong>.</li>
 </ol>
@@ -854,11 +854,9 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 
 ## <a name="see-also"></a>Se også
 
-- [Batchnumre i Lokationsstyring](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Batchnumre i Warehouse Management](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
 - [Reservere samme batch for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Plukke den ældste batch på en mobilenhed](pick-oldest-batch.md)
 - [Bekræftelse af batch og nummerplade](batch-and-license-plate-confirmation.md)
-- [Fejlfinde reservationer i lagerstedsstyring](troubleshoot-warehouse-reservations.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

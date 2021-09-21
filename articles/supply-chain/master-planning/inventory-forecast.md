@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0919706ddcc70fecd15df6bf1cbdd58fe9a8e337b2d45cd61a4fb9d821e4114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: b9c82f28dcc7ebd223b2483ca257ba934024d755
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757800"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475078"
 ---
 # <a name="inventory-forecasts"></a>Lagerbudgetter
 
@@ -94,7 +94,7 @@ I følgende tabel beskrives de kommandoer, der er tilgængelige på værktøjsli
 
 | Kommando | Betegnelse |
 |---|---|
-| Fordel prognose | Hvis du bruger en fordelingsmetode, skal du generere de enkelte planlægningslinjer til budgetposteringen. Linjens antal fordeles så efter dato (i overensstemmelse med de valgte tidsintervaller), antal og beløb for hele tidshorisonten. |
+| Fordel prognose | Hvis du bruger en fordelingsmetode, skal du generere de enkelte planlægningslinjer til budgetposteringen. Linjens antal fordeles så efter dato (i overensstemmelse med de valgte tidsintervaller), antal og beløb for hele tidshorisonten. (Se afsnittet [Tildele budget](#allocate-forecast) senere i dette emne.) |
 | Masseopdatering | Åbn siden **Rediger budgetposter**. (Se sektionen [Masseopdatere budgetposter](#bulk-update) senere i dette emne). |
 | Lagerbudget | Åbn en visning af siden **Lagerbudget**, der er filtreret for den valgte kombination af vare/model. (Se afsnittet [Lagerbudget](#inventory-forecast) senere i dette emne). |
 | Opret varebehov | Åbn en dialogboks, hvor du kan oprette varekrav, salgsordrer eller varekladdelinjer for projektrelaterede budgetposter. Selvom denne kommando kan bruges til både forsyningsprognoselinjer og behovsprognoselinjer, kan den ikke bruges på siden **Forsyningsprognose**. |
@@ -201,7 +201,7 @@ I følgende tabel beskrives de kommandoer, der er tilgængelige på værktøjsli
 
 | Kommando | Betegnelse |
 |---|---|
-| Fordel prognose | Hvis du bruger en fordelingsmetode, skal du generere de enkelte planlægningslinjer til budgetposteringen. Linjens antal fordeles så efter dato (i overensstemmelse med de valgte tidsintervaller), antal og beløb for hele tidshorisonten. |
+| Fordel prognose | Hvis du bruger en fordelingsmetode, skal du generere de enkelte planlægningslinjer til budgetposteringen. Linjens antal fordeles så efter dato (i overensstemmelse med de valgte tidsintervaller), antal og beløb for hele tidshorisonten. (Se afsnittet [Tildele budget](#allocate-forecast) senere i dette emne.)|
 | Masseopdatering | Åbn siden **Rediger budgetposter**. (Se sektionen [Masseopdatere budgetposter](#bulk-update) senere i dette emne). |
 | Lagerbudget | Åbn en visning af siden **Lagerbudget**, der er filtreret for den valgte kombination af vare/model. (Se afsnittet [Lagerbudget](#inventory-forecast) senere i dette emne). |
 | Opret varebehov | Åbn en dialogboks, hvor du kan oprette varekrav, salgsordrer eller varekladdelinjer for projektrelaterede budgetposter. |
@@ -296,7 +296,7 @@ Fanen **Lagerdimensioner** viser alle de lagerdimensionsværdier for den linje, 
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Gitteret Fordeling på siden Behovsprognose
 
-Hvis du bruger en varefordelingsnøgle, eller hvis du har angivet et varebudget for en eller flere fremtidige perioder, kan du fordele budgettet ved at vælge **Fordel budget** på værktøjslinjen under fanen **Oversigt**. Antallet fordeles derefter på den måde, der er angivet af linjerne i **Fordeling**-gitteret.
+Hvis du bruger en varefordelingsnøgle, eller hvis du har angivet et varebudget for en eller flere fremtidige perioder, kan du fordele budgettet ved at vælge **Fordel budget** på værktøjslinjen under fanen **Oversigt**. Antallet fordeles derefter på den måde, der er angivet af linjerne i **Fordeling**-gitteret. (Se afsnittet [Tildele budget](#allocate-forecast) senere i dette emne.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Lagerbudget
 
@@ -328,6 +328,25 @@ I følgende tabel beskrives felterne i gitteret på siden **Lagerbudget**.
 | **Understykliste** | Styklistenummeret på en bestemt understykliste. |
 | **Underrute** | Rutenummeret på en bestemt underrute. |
 | (Andre dimensioner) | Yderligere dimensioner kan vises som kolonner i gitteret. Vælg **Lager \> Vis dimensioner** i handlingsruden for at vælge de ekstra dimensioner, der vises. |
+
+## <a name="allocate-forecast"></a><a name="allocate-forecast"></a>Fordel prognose
+
+Du kan bruge denne procedure til at behandle eksisterende budgetposteringslinjer. Når du fordeler et budget, fordeles antallet derefter som angivet af linjerne i **fordelingsgitteret**.
+
+1. Afhængigt af, hvilken type enhed du vil oprette en prognose for, og den type prognose, du vil oprette, skal du åbne en side med udbud, efterspørgsel eller lagerbudget som beskrevet i [Vis og manuelt angive prognoselinjer](#manual-entry).
+1. Vælg en prognoselinje på siden forsyning eller efterspørgselsprognoselinjer, og vælg derefter **Fordel budget** på værktøjslinjen under fanen **Oversigt**.
+1. I dialogboksen **Til fordeling af budget** skal du angive de felter, der er beskrevet i følgende tabel. (Den værdi, du vælger i **Metodefelt** bestemmer, at de andre felter er tilgængelige.)
+
+    | Felt | Betegnelse |
+    |---|---|
+    | metode | <p>Vælg den metode, der skal bruges til fordeling af budgetposteringen:</p><ul><li>**Ingen** – Der sker ingen fordeling.</li><li>**Periode** – Budgettér det samme antal for hver periode. Hvis du vælger denne værdi, skal du angive et antal i feltet **Pr.** og en tidsenhed i feltet **Enhed**.</li><li>**Nøgle** – Alloker budgettet i henhold til den periodefordelingsnøgle, du angiver i feltet **Periodenøgle**. Du kan bruge denne metode, hvis du vil tage hensyn til sæsonudsving.</li><ul>|
+    | Pr. | <p>Angiv det antal tidsintervaller, som budgettet rækker ud i fremtiden. Feltet er kun tilgængeligt, hvis du vælger *Periode* i feltet **Metode**.</p><p>Du kan f.eks. vælge *Periode* i feltet **Metode**, angive *1* i feltet **Pr.** og vælge *Måneder* i feltet **Enhed**. Angiv derefter en slutdato i feltet **Slut**, der rækker et år ud i fremtiden. Der oprettes én budgetlinje for hver måned i det kommende år baseret på den vare og det antal, der er angivet i hovedlinjen. |
+    | Enhed | Vælg enheden for tidsintervallet: *Dage*, *Måneder* eller *År*. Fordelingen svarer til det antal dage, måneder eller år, du angiver i feltet **Pr**.|
+    | Periodenøgle | Angiv den periodefordelingsnøgle, der bruges til fordeling af budgettet. Du kan finde flere oplysninger under [Datafordeling til budgetplanlægning](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | Afslut | Angiv den slutdato, der gælder for dine indstillinger i felterne **Pr.** og **Enhed**. |
+
+1. Vælg **OK** for at bekræfte indstillinger.
+1. Du kan gennemse resultaterne under fanen **Fordeling** for samme linje.
 
 ## <a name="bulk-update-forecast-transactions"></a><a name="bulk-update"></a>Masseopdatere budgetposter
 

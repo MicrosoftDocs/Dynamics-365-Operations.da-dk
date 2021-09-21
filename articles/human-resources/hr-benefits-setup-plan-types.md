@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 2eb8ecdd849aa2f583202ac2ec7c3e1bb06698a1
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423338"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431386"
 ---
 # <a name="plan-type-overview"></a>Oversigt over plantype
 
@@ -28,14 +28,15 @@ ms.locfileid: "7423338"
 
 En plantype er en overordnet gruppering af bestemte typer frynsegoder. Hver plantype har en plantypekode, der bestemmer reglerne for plantypen. Plantypen **Basisliv** har f.eks. plantypekoden **Liv**, fordi den er en slags livsforsikringsplan og skal overholde de regler, der er fastsat for plantypekoden **Liv**. En anden plantype kan være **Supplerende liv**. Denne plantype vil også have plantypekoden **Liv**.
 
-Hver enkelt plantype angiver, om en medarbejder kan tilmelde sig en eller flere af planerne af denne typen. En medarbejder kan f.eks. sandsynligvis tilmelde sig politikkerne for både Basisliv og Øvrige liv for plantypen Liv. En medarbejder må højst sandsynligt kun tilmeldes sig én politik af typen Medicinsk.
+Hver enkelt plantype angiver, om en medarbejder kan tilmelde sig en eller flere af planerne af denne typen. En medarbejder kan f.eks. sandsynligvis tilmelde sig politikkerne for både **Basisliv** og **Øvrige liv** for plantypen Liv. En medarbejder må højst sandsynligt kun tilmeldes sig én politik af typen Medicinsk.
 
-Hvis en plantype omfatter kontakter, angiver plantypen, om kontaktpersoner er modtagere eller afhængige. Plantypen Basisliv kan f.eks. have modtagere, mens plantypen Basis medicinsk ville have afhængige. I nogle tilfælde kan en plan ikke have personlige kontaktpersoner. Det kan f.eks. være en Fleksibel forbrugskonto eller Parkeringsgodtgørelse.
+Hvis en plantype omfatter kontakter, angiver plantypen, om kontaktpersoner er modtagere eller afhængige. Plantypen **Basisliv** kan f.eks. have modtagere, mens plantypen Basis medicinsk ville have afhængige. I nogle tilfælde kan en plan ikke have personlige kontaktpersoner. Det kan f.eks. være en Fleksibel forbrugskonto eller Parkeringsgodtgørelse.
 
-En plantype kan definere dækningsindstillinger. Dækningsindstillingerne defineres på siden **Dækningsindstilling**. En dækningsindstilling kan angive beløbet for frynsegodet eller de kontakter, der er berettigede til plantypen. Hvis kontakttypen f.eks. er modtager, skal dækningsindstillingen definere de betingelser, som modtageren er berettiget til at modtage, når frynsegodet bruges. Hvis kontakttypen er Afhængig, skal dækningsindstillingen definere forholdet mellem den afhængige og medarbejderen. 
+
+En plantype kan definere dækningsindstillinger. Dækningsindstillingerne defineres på siden **Dækningsindstillinger**. En dækningsindstilling kan angive beløbet for frynsegodet eller de kontakter, der er berettigede til plantypen. Hvis kontakttypen f.eks. er modtager, skal dækningsindstillingen definere de betingelser, som modtageren er berettiget til at modtage, når **frynsegodet** bruges. Hvis kontakttypen er **Afhængig**, skal dækningsindstillingen definere forholdet mellem den afhængige og medarbejderen. 
 
 > [!IMPORTANT]
-> Siden indeholder nøgledata, der påvirker de tilgængelige indstillinger ved oprettelse af en ny frynsegodeplan:
+> Siden **Plantyper** indeholder nøgledata, der påvirker de tilgængelige indstillinger ved oprettelse af en ny frynsegodeplan:
 >
 > - **Plantypekode** – Dette felt påvirker, hvad der vises under fanen **Konfiguration**, når den faktiske frynsegode konfigureres.  
 > - **Samtidig tilmelding** – Dette felt bestemmer, om der tillades flere tilmeldinger. (For en sundhedsplan angives dette felt typisk til **Én tilmelding**).

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 2fe94ea1afb74520ee97268f62d42832bad5c3df
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384579"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467416"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Administrere ændringer af tekniske produkter
 
@@ -122,6 +122,9 @@ Hvis du vil gennemse berørte transaktioner, blokere valgte transaktioner og sen
     - **Vis historik** – Åbn en historik over handlinger, der er udført på den valgte transaktion, ved at bruge dialogboksen **Forretningskonsekvenser for åbne transaktioner**. Historikken viser for eksempel, om der er sendt beskeder, eller om transaktioner er blevet blokeret. 
     - **Vis alle transaktioner** – Åbn den fulde liste over alle transaktioner, ikke kun de åbne transaktioner.
 
+> [!IMPORTANT]
+> Knappen **Giv kun besked om produktion** er tilgængelig, hvis *tekniske beskeder for produktionsfunktionen* er aktiveret i systemet. Yderligere oplysninger finder du i [Oversigt over teknisk ændringsstyring](product-engineering-overview.md).
+
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Gennemse og behandle ændringsbeskeder for transaktioner
 
 Du kan læse og behandle de ændringsbeskeder, du modtager, på følgende måder:
@@ -131,6 +134,9 @@ Du kan læse og behandle de ændringsbeskeder, du modtager, på følgende måder
 - I forbindelse med produktionsordrer kan du vælge kun at gennemse de ændringsbeskeder, der gælder for de produktionsressourcer, du administrerer. I arbejdsområdet **Administration af produktion** i handlingsruden skal du vælge **Konfigurer mit arbejdsområde** for at filtrere siden, så der kun vises oplysninger om de produktionsenheder, grupper og/eller ressourcer, du administrerer. I sektionen **Oversigt** viser et felt med navnet **Produktionsordrer med ændrede produkter** en optælling over beskeder, der opfylder dine filterindstillinger. Vælg dette felt for at åbne siden **Tekniske beskeder**, som viser den fulde liste over transaktioner, der opfylder kriterierne for dit filter.
 
 Når du gennemser beskeder om produktionsordrer på siden **Tekniske beskeder**, kan du følge links til relaterede ændringsordrer eller produktionsordrer ved at vælge kolonneværdier eller bruge de relaterede kommandoer i handlingsruden. Når du er færdig med at evaluere en ændring, og når du har annulleret eller ændret produktionsordrer efter behov, kan du markere en besked som løst. Vælg beskeden, og vælg derefter **Løs** i handlingsruden. Beskeden fjernes fra alle brugeres visninger.
+
+> [!IMPORTANT]
+> Muligheden for at sende beskeder om produktionsordrer kræver, at *tekniske beskeder til produktionsfunktionen* er aktiveret i systemet. Yderligere oplysninger finder du i [Oversigt over teknisk ændringsstyring](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Oprette en ændringsordre ud fra en ændringsanmodning
 

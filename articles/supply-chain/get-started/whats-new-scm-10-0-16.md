@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 58a69907bdd1b03ea2e025b736dbbf84eed73c76d54bd5c93386ba8a627f095f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712043"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474910"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 
@@ -54,36 +54,12 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. D
 - [Attributbaserede salgspriser for begrænsningsbaseret produktkonfiguration](../pim/attribute-based-product-configurator.md)
 - [Automatisk fordeling af gebyrer](../procurement/automatic-charges-allocation.md)
 - [Oversigt for farligt materiale](../pim/hazmat-overview.md) (og relaterede emner)
-- [Migrering til Planlægningsoptimering for varedisponering](../master-planning/new-master-planning-engine.md)
+- [Migrering til planlægningsoptimering for varedisponering](../master-planning/new-master-planning-engine.md)
 - [Forbedringer af indkøbs-cXML](../procurement/purchasing-cxml-enhancements.md)
-- [Foretage fejlfinding af omkostningsstyring](../cost-management/troubleshoot-costmanagement.md)
-- [Foretage fejlfinding af indgående lagerstedsoperationer](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Foretage fejlfinding af lastopbygning og forsendelser](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Foretage fejlfinding af varedisponering](../master-planning/troubleshoot-masterplanning.md)
-- [Foretage fejlfinding af udgående lagerstedsoperationer](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Foretage fejlfinding af delvise frigivelser og delvise forsendelser](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [Foretage fejlfinding af variantstyring](../pim/troubleshooting-productconfigurator.md)
-- [Foretage fejlfinding af produktoplysninger](../pim/troubleshooting-productinformation.md)
-- [Fejlfinde arbejdsgange for indkøb og forsyning](../procurement/troubleshoot-procurementworkflows.md)
-- [Fejlfinde indkøbsordrer](../procurement/troubleshoot-purchaseorders.md)
-- [Fejlfinde priser, nedsættelser, aftaler og rabatter](../procurement/troubleshooting-pricediscountagreements.md)
-- [Fejlfinde produktkvitteringer og fakturering](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Foretage fejlfinding af diskret produktion](../production-control/troubleshoot-discretemanufacturing.md)
-- [Foretage fejlfinding af pluk og pakning](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Foretage fejlfinding i procesproduktion](../production-control/troubleshoot-processmanufacturing.md)
-- [Foretage fejlfinding af reservationer i lokationsstyring](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Fejlfinde salgsordrer](../sales-marketing/troubleshooting-sales.md)
-- [Fejlfinde salgstilbud](../sales-marketing/troubleshooting-salesquotation.md)
-- [Fejlfinde opgradering og migrering til avanceret lagerstedsstyring](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Foretage fejlfinding af problemer med forbindelsen til mobilappen Lokationsstyring](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Foretage fejlfinding af konfiguration af lagersted](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Foretage fejlfinding i forbindelse med genopfyldning af lagersted](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Foretage fejlfinding af lagerstedskonfiguration](../warehousing/troubleshoot-warehouse-setup.md)
-- [Foretage fejlfinding af lagerstedsarbejde](../warehousing/troubleshoot-warehouse-work.md)
-- [Læg-på-lager-klynger](../warehousing/putaway-clusters.md)
+- [Læg på lager-klynger](../warehousing/putaway-clusters.md)
 - [Genopfyldningsstrategier](../warehousing/replenishment-strategies.md)
 - [Arbejdsopdeling](../warehousing/work-split.md)
-- [Arbejde med lokationsvejledninger](../warehousing/create-location-directive.md)
+- [Arbejde med lokationsdirektiver](../warehousing/create-location-directive.md)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

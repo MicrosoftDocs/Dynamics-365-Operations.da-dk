@@ -1,8 +1,8 @@
 ---
-title: Oprette brugerdefinerede links i selvbetjeningstjenesten for ledere
+title: Oprette brugerdefinerede links i styring af selvbetjening
 description: I dette emne beskrives, hvordan du kan oprette brugerdefinerede links i selvbetjeningstjenesten for ledere i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 11/30/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,23 +12,23 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bca6d5f079a0b356e9ec2a3c40a34ace5b49be5f268b846ff596489a95275f47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713048"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431178"
 ---
-# <a name="create-custom-links-in-manager-self-service"></a>Oprette brugerdefinerede links i selvbetjeningstjenesten for ledere
+# <a name="create-custom-links-in-manager-self-service"></a>Oprette brugerdefinerede links i styring af selvbetjening
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Du kan tilføje brugerdefinerede links under fanen **Mit team** i selvbetjeningstjenesten. Denne funktion giver dig mulighed for hurtigt at få adgang til vigtige oplysninger. Det svarer til at tilføje brugerdefinerede links under fanen **Mine oplysninger** i medarbejderselvbetjening.
+Du kan tilføje brugerdefinerede links under fanen **Mit team** i **selvbetjeningstjenesten**. Denne funktion giver dig mulighed for hurtigt at få adgang til vigtige oplysninger. Det svarer til at tilføje brugerdefinerede links under fanen **Mine oplysninger** i **medarbejderselvbetjening**.
 
-## <a name="enable-the--feature"></a>Aktivere funktionen
+## <a name="enable-the-feature"></a>Aktivere funktionen
 
 Hvis du vil bruge denne funktion, skal du aktivere **Brugerdefinerede links i selvbetjeningstjenesten for ledere** i arbejdsområdet **Funktionsstyring**. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).
 
@@ -46,7 +46,7 @@ Hvis du vil bruge denne funktion, skal du aktivere **Brugerdefinerede links i se
 
 ## <a name="see-also"></a>Se også
 
-[Oversigt over medarbejderes og lederes selvbetjening](hr-employee-manager-self-service-overview.md)
+[Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

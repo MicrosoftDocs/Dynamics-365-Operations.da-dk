@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c87018cbfbe22fbbc441a1a23aee0ac44af9ddc
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345143"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475030"
 ---
 # <a name="inventory-visibility-reservations"></a>Reservationer for lagersynlighed
 
@@ -32,19 +32,20 @@ Du kan vælge at oprette Microsoft Dynamics 365 Supply Chain Management (og andr
 
 Når du aktiverer reservationsfunktionen, bliver Supply Chain Management automatisk klar til at modpostere reservationer, der foretages ved hjælp af Lagersynlighed.
 
-> [!NOTE]
-> Modkonteringsfunktionen kræver Supply Chain Management version 10.0.22 eller senere. Hvis du vil bruge reservationer for Lagersynlighed, anbefales det, at du venter, indtil du har opgraderet Supply Chain Management til version 10.0.22 eller senere.
-
-## <a name="turn-on-the-reservation-feature"></a>Aktivere reservationsfunktionen
+## <a name="turn-on-and-set-up-the-reservation-feature"></a><a name="turn-on"></a>Aktivere og konfigurere reservationsfunktionen
 
 Hvis du vil aktivere reservationsfunktionen, skal du følge disse trin.
 
-1. I Power Apps skal du åbne **Lagersynlighed**.
+1. Logge på Power Apps og åbne **Lagersynlighed**.
 1. Åbn siden **Konfiguration**.
 1. Aktivér funktionen **OnHandReservation** under fanen *Funktionsstyring*.
 1. Log på Supply Chain Management.
-1. Gå til **Lagerstyring \> Opsætning \> Parametre for integration af lagersynlighed**.
-1. Angiv indstillingen **Aktivér reservationsmodkonto** til **Ja** under *Reservationsmodkonto*.
+1. Gå til arbejdsområdet til **[funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)**, og aktiver *integration med synlighed for lager med funktionen til reservationsmodkonto* (kræver version 10.0.22 eller senere).
+1. Gå til parametre for **lagerstyring \> Opsætning\> lagersynlighedsintegration**, åbn fanen **Reservationsmodkonto**, og foretag følgende indstillinger:
+    - **Aktiver reservationsmodkonto** – Angiv til *Ja* for at aktivere denne funktion.
+    - **Modifikator for reservation** – Vælg den lagertransaktionsstatus, der skal modpostere reservationer, der foretages ved lagersynlighed. Denne indstilling bestemmer det ordrebehandlingstrin, der udløser modregninger. Stadiet spores af ordrens lagerposteringsstatus. Vælg en af følgende muligheder:
+        - *I bestilling* – For statussen *I transaktion* sender en ordre en anmodning om modkontering, når den oprettes. Modantallet er antallet for den oprettede ordre.
+        - *Reserver* – For statussen *Reservér bestilt transaktion* sender en ordre en anmodning om modkontering, når den reserveres, plukkes, følgesedlen bogføres eller faktureres. Anmodningen udløses kun én gang for det første trin, når den nævnte proces finder sted. Modantallet er det antal, hvor lagertransaktionens status ændres fra *I bestilling* til *Reserveret bestilt* (eller senere status) på den tilsvarende ordrelinje.
 
 ## <a name="use-the-reservation-feature-in-inventory-visibility"></a>Brug reservationsfunktionen i Lagersynlighed
 
@@ -56,13 +57,21 @@ Reservationshierarkiet beskriver den dimensionsrækkefølge, der skal angives, n
 
 Reservationshierarkiet kan afvige fra indekshierarkiet. Dette afhængighedsforhold gør det muligt at implementere kategoristyring, hvor brugerne kan opdele dimensionerne for at angive detaljerede krav og kunne foretage mere præcise reservationer.
 
-Hvis du vil konfigurere et foreløbigt reservationshierarki i Power Apps, skal du åbne siden **Konfiguration** og derefter konfigurere reservationshierarkiet under fanen **Tilknytning af foreløbig reservation** ved at tilføje og/eller redigere dimensioner og deres hierarkiniveauer.
+Hvis du vil konfigurere et foreløbigt reservationshierarki i Power Apps, skal du åbne siden **Konfiguration** og derefter konfigurere reservationshierarkiet under fanen **Foreløbig reservationshierarki** ved at tilføje og/eller redigere dimensioner og deres hierarkiniveauer.
+
+Det forhåndsreservationshierarki skal indeholde `SiteId` og `LocationId` som komponenter, da de opbygger partitionskonfigurationen.
+
+Få flere oplysninger om, hvordan du kan konfigurere reservationer i [Konfigurere reservationer](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="call-the-reservation-api"></a>Kalde reservations-API'en
 
 Reservationer foretages i tjenesten Lagersynlighed ved at sende en POST-anmodning til tjenestens URL-adresse, f.eks. `/api/environment/{environment-ID}/onhand/reserve`.
 
 I forbindelse med en reservation skal anmodningsteksten indeholde et organisations-id, et produkt-id, reserverede antal og dimensioner. Anmodningen genererer et entydigt reservations-id for hver reservationspost. Reservationsposten indeholder den entydige kombination af produkt-id'et og dimensionerne.
+
+Når du kalder reservations-API'en, kan du styre valideringen af reservationen ved at angive parameteren Boolesk `ifCheckAvailForReserv` i brødteksten. Værdien `True` betyder, at valideringen er påkrævet, mens værdien `False` betyder, at valideringen ikke er nødvendig. Standardværdien er `True`.
+
+Hvis du vil annullere en reservation eller ikke-reservere angivne lagerantal, skal du angive antallet til en negativ værdi og angive parameteren `ifCheckAvailForReserv` til `False` for at springe valideringen over.
 
 Her er et eksempel på anmodningsteksten til orientering.
 
@@ -108,18 +117,9 @@ For lagertransaktionsstatusser, der omfatter en angivet modkontomodifikator for 
 
 Det modkonterede antal følger det lagerantal, der er angivet i lagerposteringerne. Modkonteringen træder ikke i kraft, hvis der ikke er et reserveret antal tilbage i tjenesten Lagersynlighed.
 
-> [!NOTE]
-> Modkontofunktionen er tilgængelig fra og med version 10.0.22
+### <a name="set-up-the-reservation-offset-modifier"></a>Konfigurere modkontomodifikatoren for reservationer
 
-### <a name="set-up-the-reserve-offset-modifier"></a>Konfigurere modkontomodifikatoren for reservationer
-
-Modkontomodifikatoren for reservationer bestemmer det stadiet for ordrebehandlingen, der udløser modkonteringer. Stadiet spores af ordrens lagerposteringsstatus. Hvis du vil konfigurere modkontomodifikatoren for reservationer, skal du følge disse trin.
-
-1. Gå til **Lagerstyring \> Opsætning \> Parametre for integration af lagersynlighed \> Reservationsmodkonto**.
-1. Angiv feltet **Modkontomodifikator for reservationer** til en af følgende værdier:
-
-    - *I bestilling* – For statussen *I transaktion* sender en ordre en anmodning om modkontering, når den oprettes.
-    - *Reserver* – For statussen *Reservér bestilt transaktion* sender en ordre en anmodning om modkontering, når den reserveres, plukkes, følgesedlen bogføres eller faktureres. Anmodningen udløses kun én gang for det første trin, når den nævnte proces finder sted.
+Hvis du ikke allerede har gjort det, skal du konfigurere reservationsmodifikatoren som beskrevet i [Aktivere og konkfigurere reservationsfunktionen](#turn-on).
 
 ### <a name="set-up-reservation-ids"></a>Konfigurere reservations-id'er
 

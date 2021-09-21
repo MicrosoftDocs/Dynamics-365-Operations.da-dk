@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 0aca5838ff6d7c9c4d881698be1e2da2e0e1c02e
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343626"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474646"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API'er for Lagersynlighed
 
@@ -46,6 +46,9 @@ I følgende tabel vises de API'er, der er tilgængelige i øjeblikket:
 
 Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
+> [!NOTE]
+> {environmentId}-delen af stien er miljø-id'et i Microsoft Dynamics Lifecycle Services (LCS).
+
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Find slutpunktet i overensstemmelse med Lifecycle Services-miljøet
 
 Mikrotjenesten for Lagersynlighed installeres på Microsoft Azure Service Fabric i flere geografier og flere områder. Der er i øjeblikket ikke et centralt slutpunkt, der automatisk kan omdirigere din anmodning til den tilsvarende geografi eller det tilsvarende område. Du skal derfor skrive oplysningerne i en URL-adresse efter følgende mønster:
@@ -54,22 +57,26 @@ Mikrotjenesten for Lagersynlighed installeres på Microsoft Azure Service Fabric
 
 Områdets korte navn findes i Microsoft Dynamics Lifecycle Services-miljøet (LCS). I følgende tabel vises de områder, der er tilgængelige i øjeblikket.
 
-| Azure-region | Områdets korte navn |
-|---|---|
-| Det østlige Australien | eau |
-| Det sydøstlige Australien | seau |
-| Det centrale Canada | cca |
-| Det østlige Canada | eca |
-| Nordeuropa | neu |
-| Vesteuropa | weu |
-| Det østlige USA | eus |
-| Det vestlige USA | wus |
-| Det sydlige Storbritannien | suk |
-| Det vestlige Storbritannien | wuk |
+| Azure-region        | Områdets korte navn |
+| ------------------- | ----------------- |
+| Det østlige Australien      | eau               |
+| Det sydøstlige Australien | seau              |
+| Det centrale Canada      | cca               |
+| Det østlige Canada         | eca               |
+| Nordeuropa        | neu               |
+| Vesteuropa         | weu               |
+| Det østlige USA             | eus               |
+| Det vestlige USA             | wus               |
+| Det sydlige Storbritannien            | suk               |
+| Det vestlige Storbritannien             | wuk               |
+| Østjapan          | øjp               |
+| Vestjapan          | vjp               |
+| Sydbrasilien        | sbr               |
+| Den sydlige del af det centrale USA    | scus              |
 
 Ø-nummeret er det sted, hvor LCS-miljøet installeres på Service Fabric. Du kan i øjeblikket ikke hente disse oplysninger fra brugersiden.
 
-Microsoft har bygget en brugergrænseflade (UI) i Power Apps, så du kan hele hele slutpunktet for mikrotjenesten. Du kan finde flere oplysninger i [Finde tjenestens slutpunkt](inventory-visibility-power-platform.md#get-service-endpoint).
+Microsoft har bygget en brugergrænseflade (UI) i Power Apps, så du kan hele hele slutpunktet for mikrotjenesten. Du kan finde flere oplysninger i [Finde tjenestens slutpunkt](inventory-visibility-configuration.md#get-service-endpoint).
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Godkendelse
 
@@ -80,66 +87,66 @@ Hvis du vil hente et token for sikkerhedstjenesten, skal du følge disse trin.
 1. Log på Azure-portalen, og brug den til at finde værdierne `clientId` og `clientSecret` for Dynamics 365 Supply Chain Management-appen.
 1. Hent et Azure AD-token (`aadToken`) ved at sende en HTTP-anmodning, der har følgende egenskaber:
 
-    - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
-    - **Metode:** `GET`
-    - **Brødtekst (formulardata):**
+   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **Metode:** `GET`
+   - **Brødtekst (formulardata):**
 
-        | Nøgle | Værdi |
-        |---|---|
-        | client_id | ${aadAppId} |
-        | client_secret | ${aadAppSecret} |
-        | grant_type | client_credentials |
-        | ressource | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Nøgle           | Værdi                                |
+     | ------------- | ------------------------------------ |
+     | client_id     | ${aadAppId}                          |
+     | client_secret | ${aadAppSecret}                      |
+     | grant_type    | client_credentials                   |
+     | ressource      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
 
-    Du skal modtage et Azure AD-token (`aadToken`) som svar. Den skulle ligne følgende eksempel:
+   Du skal modtage et Azure AD-token (`aadToken`) som svar. Den skulle ligne følgende eksempel:
 
-    ```json
-    {
-        "token_type": "Bearer",
-        "expires_in": "3599",
-        "ext_expires_in": "3599",
-        "expires_on": "1610466645",
-        "not_before": "1610462745",
-        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-        "access_token": "eyJ0eX...8WQ"
-    }
-    ```
+   ```json
+   {
+       "token_type": "Bearer",
+       "expires_in": "3599",
+       "ext_expires_in": "3599",
+       "expires_on": "1610466645",
+       "not_before": "1610462745",
+       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+       "access_token": "eyJ0eX...8WQ"
+   }
+   ```
 
 1. Formuler en JSON-anmodning (JavaScript Object Notation), der ligner følgende eksempel.
 
-    ```json
-    {
-        "grant_type": "client_credentials",
-        "client_assertion_type": "aad_app",
-        "client_assertion": "{Your_AADToken}",
-        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
-        "context_type": "finops-env"
-    }
-    ```
+   ```json
+   {
+       "grant_type": "client_credentials",
+       "client_assertion_type": "aad_app",
+       "client_assertion": "{Your_AADToken}",
+       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context_type": "finops-env"
+   }
+   ```
 
-    Vær opmærksom på følgende punkter:
+   Vær opmærksom på følgende punkter:
 
-    - Værdien `client_assertion` skal være det Azure AD-token (`aadToken`), som du har modtaget i det forrige trin.
-    - Værdien `context` skal være det miljø-id, hvor du vil implementere tilføjelsesprogrammet.
-    - Angiv alle de andre værdier som vist i eksemplet.
+   - Værdien `client_assertion` skal være det Azure AD-token (`aadToken`), som du har modtaget i det forrige trin.
+   - Værdien `context` skal være det LCD-miljø-id, hvor du vil implementere tilføjelsesprogrammet.
+   - Angiv alle de andre værdier som vist i eksemplet.
 
 1. Send en HTTP-anmodning, der har følgende egenskaber:
 
-    - **URL:** `https://securityservice.operations365.dynamics.com/token`
-    - **Metode:** `POST`
-    - **HTTP-overskrift:** Medtag API-versionen. (Nøglen er `Api-Version`, og værdien er `1.0`).
-    - **Brødtekst:** Medtag den JSON-anmodning, du oprettede i det forrige trin.
+   - **URL:** `https://securityservice.operations365.dynamics.com/token`
+   - **Metode:** `POST`
+   - **HTTP-overskrift:** Medtag API-versionen. (Nøglen er `Api-Version`, og værdien er `1.0`).
+   - **Brødtekst:** Medtag den JSON-anmodning, du oprettede i det forrige trin.
 
-    Du skal modtage et adgangstoken (`access_token`) som svar. Du skal bruge dette token som ihændehavertoken for at kalde API'et for Lagersynlighed. Her er et eksempel.
+   Du skal modtage et adgangstoken (`access_token`) som svar. Du skal bruge dette token som ihændehavertoken for at kalde API'et for Lagersynlighed. Her er et eksempel.
 
-    ```json
-    {
-        "access_token": "{Returned_Token}",
-        "token_type": "bearer",
-        "expires_in": 3600
-    }
-    ```
+   ```json
+   {
+       "access_token": "{Returned_Token}",
+       "token_type": "bearer",
+       "expires_in": 3600
+   }
+   ```
 
 I senere afsnit skal du bruge til `$access_token` til at repræsentere det token, der blev hentet i sidste trin.
 
@@ -160,6 +167,9 @@ I følgende tabel opsummeres betydningen af hvert felt i JSON-brødteksten.
 | `quantities` | Det antal, som det disponible antal skal ændres med. Hvis der f.eks. føjes 10 nye bøger til en hylde, vil denne værdi være `quantities:{ shelf:{ received: 10 }}`. Hvis der fjernes tre bøger fra hylden eller de sælges, er denne værdi `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | Datakilden for de dimensioner, der bruges i bogføringens ændringshændelse og forespørgslen. Hvis du angiver datakilden, kan du bruge de brugerdefinerede dimensioner fra den angivne datakilde. Lagersynlighed kan bruge dimensionskonfigurationen til at knytte de brugerdefinerede dimensioner til de generelle standarddimensioner. Hvis der ingen værdi for `dimensionDataSource` er angivet, kan du kun bruge de generelle [basisdimensioner](inventory-visibility-configuration.md#data-source-configuration-dimension) i forespørgslerne. |
 | `dimensions` | Et dynamisk nøgle/værdi-par. Værdierne knyttes til nogle af dimensionerne i Supply Chain Management. Du kan dog også tilføje brugerdefinerede dimensioner (f.eks. _Kilde_) for at angive, om hændelsen kommer fra Supply Chain Management eller et eksternt system. |
+
+> [!NOTE]
+> Parametrene `SiteId` og `LocationId` opbygger [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration). Du skal derfor angive dem i dimensioner, når du opretter hændelser med disponible ændringer, angiver eller tilsidesætter disponible antal eller opretter reservationshændelser.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Oprette en ændringshændelse for disponibelt antal
 
@@ -201,6 +211,9 @@ Følgende er et eksempel på brødtekst. I dette eksempel kan du bogføre en æn
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
+        "SiteId": "1",
+        "LocationId": "11",
+        "PosMachineId": "0001",
         "ColorId&quot;: &quot;Red"
     },
     "quantities": {
@@ -211,7 +224,7 @@ Følgende er et eksempel på brødtekst. I dette eksempel kan du bogføre en æn
 }
 ```
 
-Følgende er et eksempel på brødtekst uden `dimensionDataSource`.
+Følgende er et eksempel på brødtekst uden `dimensionDataSource`. I dette tilfælde vil `dimensions` være [basisdimensionerne](inventory-visibility-configuration.md#data-source-configuration-dimension). Hvis `dimensionDataSource` er angivet, kan `dimensions` enten være datakildedimensionerne eller basisdimensionerne.
 
 ```json
 {
@@ -219,9 +232,9 @@ Følgende er et eksempel på brødtekst uden `dimensionDataSource`.
     "organizationId": "usmf",
     "productId": "T-shirt",
     "dimensions": {
-        "ColorId": "Red",
         "SiteId": "1",
-        "LocationId&quot;: &quot;11"
+        "LocationId": "11",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -275,6 +288,8 @@ Følgende er et eksempel på brødtekst.
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
+            "PosSiteId": "1",
+            "PosLocationId": "11",
             "PosMachineId&quot;: &quot;0001"
         },
         "quantities": {
@@ -284,10 +299,11 @@ Følgende er et eksempel på brødtekst.
     {
         "id": "654321",
         "organizationId": "usmf",
-        "productId": "@PRODUCT1",
-        "dimensionDataSource": "pos",
+        "productId": "Pants",
         "dimensions": {
-            "PosMachineId&quot;: &quot;0001"
+            "SiteId": "1",
+            "LocationId": "11",
+            "ColorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -341,6 +357,8 @@ Følgende er et eksempel på brødtekst. Funktionsmåden for denne API er forske
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
+             "PosSiteId": "1",
+            "PosLocationId": "11",
             "PosMachineId": "0001"
         },
         "quantities": {
@@ -359,6 +377,12 @@ Følgende er et eksempel på brødtekst. Funktionsmåden for denne API er forske
 Hvis du vil bruge API'en for *Reservér*, skal du åbne reservationsfunktionen og fuldføre reservationskonfigurationen. Du kan finde flere oplysninger i [Konfiguration af reservationer (valgfri)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Oprette én reservationshændelse
+
+Der kan foretages en reservation i forhold til de forskellige datakildeindstillinger. Hvis du vil konfigurere denne reservationstype, skal du først angive datakilden i `dimensionDataSource`-parameteren. Angiv derefter dimensionerne i forhold til dimensionsindstillingerne i måldatakilden i parameteren `dimensions`.
+
+Når du kalder reservations-API'en, kan du styre valideringen af reservationen ved at angive parameteren Boolesk `ifCheckAvailForReserv` i brødteksten. Værdien `True` betyder, at valideringen er påkrævet, mens værdien `False` betyder, at valideringen ikke er nødvendig. Standardværdien er `True`.
+
+Hvis du vil annullere en reservation eller ikke-reservere angivne lagerantal, skal du angive antallet til en negativ værdi og angive parameteren `ifCheckAvailForReserv` til `False` for at springe valideringen over.
 
 ```txt
 Path:
@@ -467,14 +491,28 @@ ContentType:
     application/json
 Body:
     {
-        organizationId: string,
+        dimensionDataSource: string, # Optional
         filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
             [dimensionKey:string]: string[],
         },
         groupByValues: string[],
         returnNegative: boolean,
     }
 ```
+
+I brødteksten i denne anmodning er `dimensionDataSource` stadig en valgfri parameter. Hvis den ikke er angivet, behandles `filters` som *basisdimensioner*. Der er fire obligatoriske felter til `filters`: `organizationId`, `productId`, `siteId` og `locationId`.
+
+- `organizationId` skal kun indeholde én værdi, men det er stadig en matrix.
+- `productId` kan indeholde en eller flere værdier. Hvis det er en tom matrix, returneres alle produkter.
+- `siteId` og `locationId` bruges i Lagersynlighed til partitionering.
+
+Parameteren `groupByValues` skal følge din konfiguration til indeksering. Du kan få flere oplysninger i [Konfiguration af produktindekshierarki](./inventory-visibility-configuration.md#index-configuration).
+
+Parameteren `returnNegative` bestemmer, om resultaterne indeholder negative poster.
 
 Følgende er et eksempel på brødtekst.
 
@@ -484,7 +522,24 @@ Følgende er et eksempel på brødtekst.
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "LocationId": ["11"],
         "ColorId": ["Red"]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true
+}
+```
+
+I følgende eksempler vises, hvordan du forespørger på alle produkter på en bestemt lokation og lokation.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": [],
+        "siteId": ["1"],
+        "LocationId": ["11"],
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true
@@ -512,7 +567,7 @@ Query(Url Parameters):
 Her er et eksempel på en URL-adresse for hentningsmetoden. Denne anmodning er nøjagtigt den samme som det opslagseksempel, som blev angivet tidligere.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

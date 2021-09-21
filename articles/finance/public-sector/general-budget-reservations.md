@@ -1,8 +1,8 @@
 ---
 title: Generelle budgetreservationer
 description: Dette emne indeholder oplysninger om generelle budgetreservationer i den offentlige sektor.
-author: AlexRenney
-ms.date: 04/25/2019
+author: TaylorVH
+ms.date: 08/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,18 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5eda93048aa1c818115f3ba862a70851c76a1a853ccdfc9c763de9abdc61fa22
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fad1bb06063ac8fa04b93fb36e2f157f0d1d30a7
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741470"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473392"
 ---
 # <a name="general-budget-reservations"></a>Generelle budgetreservationer
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 En *generel budgetreservation* er et dokument, der undertiden også kaldes en *forpligtelse*. Offentlige myndigheder bruger ofte dette dokument til at afsætte eller øremærke budgetterede midler, så de ikke er tilgængelige til andre formål. Disse reservationer foretages typisk før, eventuelle leverandører er valgt til indkøbet. Ved hjælp af generelle budgetreservationer kan en organisation udtrykkeligt spore planlagte udgifter til administrations- og rapporteringsformål. Hver enkelt indkøbsrekvisition, indkøbsordre eller kreditorfaktura, der er genereret, kan knyttes til mindst én generel budgetreservation.
 
@@ -41,6 +43,13 @@ Enheder i den private sektor bruger udtrykket *budgetreservation* til at tale om
 Du kan oprette forskellige typer generelle budgetreservationer for at angive forskellige egenskaber og krav baseret på dine indkøbsbehov. Specifikationerne omfatter den arbejdsgang, der bruges til reservationen, og standardværdier. Du opretter f.eks. tre reservationstyper. Du bruger én type til indkøbsrekvisitioner, en anden type til indkøbsordrer og endnu en type til kreditorfakturaer.
 
 I den generelle budgetreservation kan du også få vist regnskabsfordelinger og kladdelinjerne for reskontro for posteringen.
+
+> [!NOTE]
+> Finanskonti, der bruges i generelle budgetreservationer, skal medtages i budgetstyring. Hvis disse konti ikke er inkluderet i budgetstyring, sker følgende. 
+>- Generel budgetreservation og deres forbrugende dokumenter behæftes ikke eller behæftes på forhånd. 
+>- Med overførsler oprettes der ikke budgetregisterposter. 
+>- Annullering og færdiggørelse af generelle budgetreservationer reducerer ikke det oversendte budget.
+>- Finanskonti medtages ikke i forespørgslerne til budgetanalyser og budgetstyring.
 
 Hvis du bruger projektregnskab, kan du aktivere sporing af bindende omkostninger for generelle budgetreservationer.
 

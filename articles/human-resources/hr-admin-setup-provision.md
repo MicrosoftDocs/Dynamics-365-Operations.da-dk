@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393517"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441159"
 ---
 # <a name="provision-human-resources"></a>Klargøring af Human Resources
 
@@ -43,6 +43,11 @@ Inden klargøringen af et nyt produktionsmiljø, skal følgende forudsætninger 
 Før du klargør dit første sandkasse- eller produktionsmiljø, kan det være en god ide at klargøre et [Human Resources-testmiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) for at validere funktionen Human Resources. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Human Resources. 
 
 Testmiljøer er ikke beregnet til brug som produktionsmiljøer. De er begrænset til en 60-dages prøveperiode. Når prøveperioden udløber, slettes miljøet og alle data i det, og de kan ikke gendannes. Miljøet kan ikke konverteres til et sandkasse- eller produktionsmiljø. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
+
+Når du opretter et testmiljø i Personale, oprettes der også et Power Apps-forsøgsmiljø i lejeren, som er knyttet til Personale-miljøet. Miljøet, Power Apps, der kaldes "TestDrive", har samme forsøgsperiode som personalemiljøet.
+
+> [!NOTE]
+> Klargøring af et testmiljø i Personale mislykkes, hvis den godkendte bruger ikke har rettigheder til at oprette Power Apps-forsøgsmiljøer. Brugeren skal være medtaget i den brugergruppe, der kan oprette testmiljøer i Power Platform-administrationen. Du kan finde flere oplysninger under [Styre, hvem der kan oprette og administrere miljøer i Power Platform-administrationen](//power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planlægge miljøer i Human Resources
 

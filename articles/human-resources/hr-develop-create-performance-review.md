@@ -1,8 +1,8 @@
 ---
 title: Oprette performancegennemgange
 description: Dette emne viser, hvordan du opretter en performanceevaluering, og beskriver formålet med hvert afsnit i evalueringen.
-author: andreabichsel
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscu
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a4a9f83c2b6cb30888ed5a797fb72b9f382187cb8f119d15a5fa437ed5aba1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1340653c1e9a21d41743b8e3c0b81a4285245d5a
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732243"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431154"
 ---
 # <a name="create-performance-reviews"></a>Oprette performancegennemgange
 
@@ -65,13 +65,13 @@ Dette emne viser, hvordan du opretter en performanceevaluering, og beskriver for
 30. Vælg fanen **Vurderinger**.  
 
     - På oversigtspanelet **Bedømmelsesoplysninger** kan medarbejdere bedømme sig selv, og lederen kan bedømme medarbejderen. Hvis der anvendes vægtninger, beregnes den vægtede værdi af resultaterne automatisk.  
-    - Hvis du vil se denne sektion, skal du aktivere parameterindstillingerne for visning af medarbejderbedømmelser.  
+    - Hvis du vil have vist dette afsnit, skal du aktivere parameterindstillingerne for visning af medarbejdervurderinger på siden **Delte parametre for personale**.  
 
-31. Vælg fanen **Afslutninger**. Hvis evalueringen bruger arbejdsproces, vises afslutninger kun, når arbejdsprocessen er fuldført. Hvis der ikke bruges arbejdsprocesser, vises både medarbejderen og lederen her. Det påkrævede afkrydsningsfelt er markeret baseret på indstillingerne for evalueringstypen.  
+31. Vælg fanen **Afslutninger**. Hvis evalueringen bruger arbejdsproces, vises afslutninger kun, når arbejdsprocessen er fuldført. Hvis der ikke bruges arbejdsprocesser, vises både medarbejderen og lederen her. Det **påkrævede** afkrydsningsfelt for **Godkendelser** er markeret baseret på indstillingerne for evalueringstypen.  
 32. Vælg fanen **Generelt**.
 
     - Performanceperioden opretter standard start- og slutdatoer. Du kan ændre disse datoer.  
-    - Statusserne styrer adgangen til evalueringen. Statussen **Ikke startet** giver alle tilladelse til at redigere evalueringen. Statussen **I gang** tillader kun, at medarbejderen ser og redigerer evalueringen. **Klar til evaluering** tillader kun, at lederen får vist og redigerer evalueringen. **Den endelige evalueringsstatus** giver både medarbejder og leder mulighed for at få vist evalueringen og at redigere den, hvis det er angivet i evalueringstypen. I statusserne **Afsluttet** og **Annulleret** er evalueringen skrivebeskyttet. Hvis en gennemgang er **Afvist** og sendes tilbage til medarbejderen, kan både medarbejderen og lederen foretage de nødvendige ændringer, så medarbejderen kan sende den igen.
+    - Statusserne styrer adgangen til evalueringen. Statussen **Ikke startet** giver alle tilladelse til at redigere evalueringen. Statussen **I gang** tillader kun, at medarbejderen ser og redigerer evalueringen. **Klar til evaluering** tillader kun, at lederen får vist og redigerer evalueringen. Med statussen **Endelig gennemsyn** kan både medarbejderen og chefen se og redigere gennemsynet, hvis indstillingen **Tillad redigering i endelig gennemsyn** er valgt i gennemsynstypen. I statusserne **Afsluttet** og **Annulleret** er evalueringen skrivebeskyttet. Hvis en gennemgang er **Afvist** og sendes tilbage til medarbejderen, kan både medarbejderen og lederen foretage de nødvendige ændringer, så medarbejderen kan sende den igen.
 
 33. Skriv en værdi i feltet **Oversigt**.
 34. Vælg fanen **Evaluer**. Når evalueringen bevæger sig gennem statusserne, kan medarbejderen og lederen tilføje kommentarer for de enkelte mål eller kompetencer.  

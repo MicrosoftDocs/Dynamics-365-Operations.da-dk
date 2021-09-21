@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1ddbb22d4f7c6108ca93b415276c53794b5450dd
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394503"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465071"
 ---
 # <a name="get-started-with-tax-calculation"></a>Start her med momsberegning
 
@@ -49,13 +49,9 @@ For et produktionsmiljø skal følgende forudsætninger være opfyldt:
 - Du skal oprette et RCS-miljø for din organisation, og du skal have adgang til din konto. Du kan finde flere oplysninger om, hvordan du opretter et RCS-miljø, i [Oversigt over Regulatory Configuration Service](rcs-overview.md).
 - Følgende funktioner skal være aktiveret i arbejdsområdet **Funktionsstyring** i det installerede Supply Chain Management-miljø baseret på virksomhedens forretningsbehov:
 
-    - Momsberegning
+    - Momsberegningstjeneste
     - Understøt flere momsregistreringsnumre
     - Moms i flytteordre
-    - EU-salgslisteoverførsel baseret kun på momstransaktioner
-    - Intrastat-rapportering for flere moms-id'er
-    - Rapportering til EU-listesystem efter id for flere moms-id'er
-    - Momsopgørelse for flere moms-id'er
 
 - Følgende funktioner skal være aktiveret i arbejdsområdet **Funktionsstyring** i dit installerede RCS-miljø.
 
@@ -65,18 +61,14 @@ For et produktionsmiljø skal følgende forudsætninger være opfyldt:
 
 For et testmiljø skal følgende forudsætninger være opfyldt:
 
-- Du skal have adgang til din LCS-konto, og du skal have et aktivt LCS-projekt med et niveau 2-miljø eller derover, som kører Dynamics 365 version 10.0.18 med KB4616360 eller en senere version.
+- Du skal have adgang til din LCS-konto, og du skal have et aktivt LCS-projekt med et niveau 2-miljø eller derover, som kører Dynamics 365 version 10.0.21 eller senere version.
 - Du skal oprette et RCS-miljø for din organisation, og du skal have adgang til din konto. Du kan finde flere oplysninger om, hvordan du opretter et RCS-miljø, i [Oversigt over Regulatory Configuration Service](rcs-overview.md).
 - Du skal kontakte Microsoft ved at sende en email til <taxcalc@microsoft.com> for at aktivere flighting i dit installerede Finance- eller Supply Chain Management-miljø.
 - Følgende funktioner skal være aktiveret i arbejdsområdet **Funktionsstyring** i det installerede Supply Chain Management-miljø baseret på virksomhedens forretningsbehov:
 
-    - Momsberegning
+    - Momsberegningstjeneste
     - Understøt flere momsregistreringsnumre
     - Moms i flytteordre
-    - EU-salgslisteoverførsel baseret kun på momstransaktioner
-    - Intrastat-rapportering for flere moms-id'er
-    - Rapportering til EU-listesystem efter id for flere moms-id'er
-    - Momsopgørelse for flere moms-id'er
 
 - Følgende funktioner skal være aktiveret i arbejdsområdet **Funktionsstyring** i dit installerede RCS-miljø.
 
@@ -103,12 +95,12 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
 7. Gå til **Datamodel for moms**, udvid filtræet, og vælg derefter **Momskonfiguration**.
 8. Vælg den korrekte momskonfigurationsversion på baggrund af din Finance-version, og vælg derefter **Importér**.
 
-    | Release-version | Momskonfiguration                       | Modeltilknytning                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Momskonfiguration – Europe 30.12.82     |                                 |
-    | 10.0.19         | Konfiguration af momsberegning 36.38.193 |                                 |
-    | 10.0.20         | Konfiguration af momsberegning 40.43.208 |                                 |
-    | 10.0.21         | Konfiguration af momsberegning 40.46.212 | Tilknytning af Dataverse-model 40.46.9 |
+    | Release-version | Momskonfiguration                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Momskonfiguration – Europe 30.12.82     |
+    | 10.0.19         | Konfiguration af momsberegning 36.38.193 |
+    | 10.0.20         | Konfiguration af momsberegning 40.43.208 |
+    | 10.0.21         | Konfiguration af momsberegning 40.46.212 |
 
 9. I arbejdsområdet **Globaliseringsfunktioner** skal du vælge **Funktioner**, markere feltet **Momsberegning** og derefter vælge **Tilføj**.
 10. Vælg en af følgende funktionstyper:

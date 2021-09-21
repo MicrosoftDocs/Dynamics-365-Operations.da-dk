@@ -2,7 +2,7 @@
 title: Elektroniske meddelelser
 description: Dette emne indeholder en oversigt og oplysninger om opsætning for elektroniske meddelelser i Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16b0e0fa74109f1c63ed47606bebe2fefc604fc5
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768333"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478717"
 ---
 # <a name="electronic-messaging"></a>Elektroniske meddelelser
 
@@ -57,6 +57,16 @@ EM-funktionaliteten understøtter følgende scenarier:
 - Lagring og gennemgang de rapporter, der genereres.
 - Lagring og gennemgang af alle logoplysninger, der er knyttet til handlinger, der køres for en meddelelse eller et meddelelseselement.
 - Styring af behandlingen via forskellige meddelelsesstatusser og meddelelseselementstatusser.
+
+## <a name="security-privileges"></a>Sikkerhedsrettigheder
+
+Følgende sikkerhedsrettigheder er tilgængelige for elektroniske meddelelser.
+
+| Sikkerhedsrettighed           | Adgangsniveau | Tilknytning |
+|------------------------------|--------------|-------------|
+| Vedligehold elektroniske meddelelser | Denne rettighed giver fuld adgang til EM-funktionaliteten. Hvis du har denne rettighed, kan du konfigurere elektroniske meddelelser og køre al behandling. | Denne rettighed er inkluderet i sikkerhedsafgiften **Vedligehold momstransaktioner**. Denne opgave er til gengæld en del af sikkerhedsrollen **Bogholder**. |
+| Vis elektroniske meddelelser     | Denne rettighed giver skrivebeskyttet adgang til EM-funktionaliteten. Hvis du har denne rettighed, kan du se de elektroniske meddelelsesindstillinger og meddelelser. Du kan dog ikke konfigurere eller køre noget. | Denne rettighed er inkluderet i sikkerhedsafgiften **Anmod om status for momstransaktioner**. Denne opgave er til gengæld en del af følgende sikkerhedsroller:<ul><li>Opkrævningschef</li><li>Debitorassistent</li><li>Debitorchef</li><li>Momsbogholder</li><li>Bogholder</li><li>Regnskabschef</li><li>Regnskabsansvarlig</li><li>Salgsdirektør</li><li>Kreditorassistent</li></ul> |
+| Udfør handling på elektroniske meddelelser  | Denne rettighed giver kun adgang til siderne **Elektroniske meddelelser** og **Elektronisk meddelelseselementer**. Hvis du har denne rettighed, kan du køre alle de behandlinger, der kaldes fra disse sider. | Denne rettighed er inkluderet i sikkerhedsafgiften **Udfør elektroniske meddelelser**. Denne opgave er til gengæld en del af sikkerhedsrollen **Elektronisk meddelelsesoperatør**. |
 
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Landespecifikke lovmæssige funktioner, der understøttes af EM-funktionaliteten
 

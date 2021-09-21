@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 71e651afc83e0c2ea147a4657c0f2ce1865ec50efcd932127b4918266d3d7cd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778670"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474838"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Varedisponering med behovsprognoser
 
@@ -137,32 +137,85 @@ Hvis du i dette tilfælde kører prognoseplanlægningen den 1. januar, forbruges
 
 #### <a name="transactions--reduction-key"></a>Transaktioner – reduktionsnøgle
 
-Hvis du vælger **Transaktioner - reduktionsnøgle** reduceres prognosekravene af de transaktioner, som finder sted i løbet af de perioder, der er defineret af reduktionsnøglen.
+Hvis du angiver den **metode, der bruges til at reducere feltet budgetbehov** til *Transaktioner – reduktionsnøgle*, reduceres prognosebehovet med de kvalificerede efterspørgselsposteringer, der forekommer i de perioder, der er defineret i reduktionsnøglen.
+
+Den kvalificerede efterspørgsel defineres af feltet **Reducer prognose efter** på siden **Disponeringsgrupper**. Hvis du angiver feltet **Reducer budget pr. felt** til *Ordrer*, betragtes kun salgsordreposteringer som værende kvalificeret efterspørgsel. Hvis du angiver den til *Alle transaktioner*, betragtes eventuelle lagerposteringer for ikke-interne afgange som kvalificerede behov. Hvis der skal inkluderes interne ordrer, når prognosen reduceres, skal indstillingen **Medtag interne ordrer** angives til *Ja*.
+
+Prognosereduktion starter med den første (tidligste) efterspørgselsprognosepost i reduktionsnøgleperioden. Hvis antallet af kvalificerede lagerposteringer er større end antallet af linjer i efterspørgselsprognosen i samme reduktionsnøgleperiode, bruges saldoen for antallet for lagerposteringer til at reducere antallet i efterspørgselsprognosen i den forrige periode (hvis der ikke er brugt en prognose).
+
+Hvis der ikke findes et ikke-forbrugt budget i den forrige reduktionsnøgleperiode, bruges saldoen for antallet for lagertransaktioner til at reducere budgetantallet i den næste måned (hvis der ikke er et budget, der ikke er brugt).
+
+Værdien i feltet **Procent** på reduktionsnøglelinjerne bruges ikke, når den **metode, der bruges til at reducere budgetbehovsfeltet**, er angivet til *Transaktioner - reduktionsnøgle*. Det er kun datoerne, der bruges til at definere reduktionsnøgleperioden.
+
+> [!NOTE]
+> Alle budgetter, der bogføres på eller før dags dato, ignoreres og bruges ikke til at oprette ordreforslag. Hvis f.eks. efterspørgselsprognosen for måneden genereres den 1. januar, og du kører behovsplanlægning, der omfatter efterspørgselsprognosen den 2. januar, ignoreres den efterspørgselsprognoselinje, der er dateret 1. januar.
 
 ##### <a name="example-transactions--reduction-key"></a>Eksempel: transaktioner – reduktionsnøgle
 
 Dette eksempel viser, hvordan de faktiske ordrer, der forekommer i de perioder, der er defineret i reduktionsnøglen, reducerer efterspørgselsprognosebehovet.
 
-I dette eksempels skal du vælge **Transaktioner - reduktionsnøgle** i feltet **Metode, der anvendes til at reducere prognosekrav** på siden **Masterplaner**.
+[![Faktiske ordrer og budgettering, før der køres behovsplanlægning.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Der findes følgende salgsordrer pr. 1. januar.
+I dette eksempels skal du vælge *Transaktioner - reduktionsnøgle* i feltet **Metode, der anvendes til at reducere prognosekrav** på siden **Masterplaner**.
 
-| Måned    | Antal bestilte enheder |
-|----------|--------------------------|
-| Januar  | 956                      |
-| Februar | 1.176                    |
-| Marts    | 451                      |
-| April    | 119                      |
+Der findes følgende linjer i efterspørgselsprognosen den 1. april.
 
-Såfremt du anvender den samme behovsprognose på 1.000 enheder pr. måned, som blev benyttet i det forrige eksempel, overføres følgende krævede antal til masterplanen.
+| Dato     | Antal budgetterede enheder |
+|----------|-----------------------------|
+| 5. april  | 100                         |
+| 12. april | 100                         |
+| 19. april | 100                         |
+| 26. april | 100                         |
+| Maj 3    | 100                         |
+| Maj 10   | 100                         |
+| Maj 17   | 100                         |
 
-| Måned                | Antal krævede enheder |
-|----------------------|---------------------------|
-| Januar              | 44                        |
-| Februar             | 0                         |
-| Marts                | 549                       |
-| April                | 881                       |
-| Maj-december | 1.000                     |
+Der findes følgende salgsordrelinjer i april.
+
+| Dato     | Antal anmodede enheder |
+|----------|----------------------------|
+| 27. april | 240                        |
+
+[![Planlagt forsyning genereret på basis af aprilordrer.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Følgende behovsantal overføres til behovsplanen, når der køres behovsplanlægning den 1. april. Som du kan se, blev budgetposterne i april reduceret med behovet på 240 i en rækkefølge med udgangspunkt i den første af disse posteringer.
+
+| Dato     | Antal krævede enheder |
+|----------|---------------------------|
+| 5. april  | 0                         |
+| 12. april | 0                         |
+| 19. april | 60                        |
+| 26. april | 100                       |
+| 27. april | 240                       |
+| Maj 3    | 100                       |
+| Maj 10   | 100                       |
+| Maj 17   | 100                       |
+
+Antag nu, at der er importeret nye ordrer for perioden maj.
+
+Der findes følgende salgsordrelinjer i maj.
+
+| Dato   | Antal anmodede enheder |
+|--------|----------------------------|
+| Maj 4  | 80                         |
+| Maj 11 | 130                        |
+
+[![Planlagt forsyning genereret på basis af april- og majordrer.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Følgende behovsantal overføres til behovsplanen, når der køres behovsplanlægning den 1. april. Som du kan se, blev budgetposterne i april reduceret med behovet på 240 i en rækkefølge med udgangspunkt i den første af disse posteringer. Prognoseposteringerne for maj blev dog reduceret med i alt 210 med udgangspunkt i den første postering i efterspørgselsprognosen i maj. Totalerne pr. periode bevares dog (400 i april og 300 i maj).
+
+| Dato     | Antal krævede enheder |
+|----------|---------------------------|
+| 5. april  | 0                         |
+| 12. april | 0                         |
+| 19. april | 60                        |
+| 26. april | 100                       |
+| 27. april | 240                       |
+| Maj 3    | 0                         |
+| Maj 4    | 80                        |
+| Maj 10   | 0                         |
+| Maj 11   | 130                       |
+| Maj 17   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transaktioner – dynamisk periode
 

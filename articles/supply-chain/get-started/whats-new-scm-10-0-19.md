@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384653"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474886"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
 
@@ -66,8 +66,7 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. D
 | Indkøb og forsyning | [Kategorianmodninger fra kreditorer](../procurement/category-requests-from-vendors.md) |
 | Administration af produktoplysninger | [Administrere måleenhed](../pim/tasks/manage-unit-measure.md)<br><br>[Beregninger af produktkonfigurationsmodel](../pim/config-model-calculations.md) |
 | Produktionsstyring | [Samlet nummerserie for job-id'er](../production-control/unified-job-ids.md) |
-| Transportstyring | [LTL-klasser](../transportation/ltl-class.md)<br><br>[NMFC-koder (Global Trade Identification Number-koder)](../transportation/nmfc-codes.md) |
-| Lagerstedsstyring | [Fejlfinde batch- og seriereservationshierarkier for lagersteder](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) |
+| Transportstyring | [LTL-klasser](../transportation/ltl-class.md)<br><br>[NMFC-koder](../transportation/nmfc-codes.md) |
 | Lagerstedsstyring, oprettelse og behandling af bølger | [Bølgeoprettelse og -behandling](../warehousing/wave-processing.md)<br><br>[Lagerstedsparametre til behandling af bølger](../warehousing/wave-warehouse-parameters.md)<br><br>[Bølgeskabeloner](../warehousing/wave-templates.md)<br><br>[Bølgefordeling](../warehousing/wave-allocation-method.md)<br><br>[Planlægge oprettelse af arbejde under bølgen](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerisering](../warehousing/wave-containerization.md)<br><br>[Beskeder om udførelse af bølge](../warehousing/wave-execution-notifications.md) |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
