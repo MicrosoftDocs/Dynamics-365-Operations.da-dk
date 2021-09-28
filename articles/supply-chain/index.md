@@ -2,7 +2,7 @@
 title: Startside for Supply Chain Management
 description: Denne side indeholder en liste over emnerne i Hjælp og andre ressourcer til Supply Chain Management-funktioner.
 author: kamaybac
-ms.date: 01/08/2021
+ms.date: 09/15/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ac5a8005851dc2894a0fbed74f47be6e1e14b58
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416545"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487857"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -62,7 +62,6 @@ Denne korte video opsummerer de nye funktioner til supply chain management, der 
 
 Disse korte videoer opsummerer de nye funktioner til supply chain management, der er føjet til Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3 (december 2017).
 
-- [Kundeemne til kontant-integration](https://youtu.be/AVV9x5x-XCg) 
 - [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Bruge lagerstedsskabelon til at kopiere konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
