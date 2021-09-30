@@ -1,8 +1,8 @@
 ---
 title: Konfigurere kompensationsgitre
 description: Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9592c993cb1d1d392c5cd349663325d326d821521ca7042ba593d74e8f3b5d2f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732459"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483808"
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurere kompensationsgitre
 
@@ -28,68 +28,67 @@ Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for f
 
 
 ## <a name="set-up-information-about-the-compensation-grid"></a>Konfigurer oplysninger om kompensationsgitteret
-1. Gå til Human Resources > Kompensation > Fast løn > Kompensationsgitre.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Gitter.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Vælg en indstilling i feltet Type.
-6. Indtast eller vælg en værdi i feltet Opsætning af reference.
-7. Indtast eller vælg en værdi i feltet Valuta.
-8. Skriv en værdi i feltet Valuta.
-9. Angiv en dato i feltet Ikrafttrædelsesdato.
+1. Gå til **Human Resources** > **Kompensation** > **Fast løn** > **Kompensationsgitre**.
+2. Klik på **Ny**.
+3. Skriv en værdi i feltet **Gitter**.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Vælg en indstilling i feltet **Type**.
+6. Indtast eller vælg en værdi i feltet **Opsætning af reference**.
+7. Indtast eller vælg en værdi i feltet **Valuta**.
+8. Angiv en dato i feltet **Ikrafttrædelsesdato**.
 
 ## <a name="add-levels-to-the-compensation-structure"></a>Føje niveauer til kompensationsstrukturen
-1. Klik på Kompensationsstruktur.
+1. Klik på **Kompensationsstruktur**.
 2. Markér den valgte række på listen.
-3. Indtast eller vælg en værdi i feltet Niveau.
-4. Klik på Ny.
+3. Indtast eller vælg en værdi i feltet **Niveau**.
+4. Klik på **Ny**.
 5. Markér den valgte række på listen.
-6. Indtast eller vælg en værdi i feltet Niveau.
-7. Klik på Ny.
+6. Indtast eller vælg en værdi i feltet **Niveau**.
+7. Klik på **Ny**.
 8. Markér den valgte række på listen.
-9. Indtast eller vælg en værdi i feltet Niveau.
-10. Klik på Ny.
+9. Indtast eller vælg en værdi i feltet **Niveau**.
+10. Klik på **Ny**.
 11. Markér den valgte række på listen.
-12. Indtast eller vælg en værdi i feltet Niveau.
-13. Klik på Ny.
+12. Indtast eller vælg en værdi i feltet **Niveau**.
+13. Klik på **Ny**.
 14. Markér den valgte række på listen.
-15. Indtast eller vælg en værdi i feltet Niveau.
+15. Indtast eller vælg en værdi i feltet **Niveau**.
 
 ## <a name="fill-in-the-compensation-structure-with-values"></a>Udfyld kompensationsstrukturen med værdier
 1. Markér den valgte række på listen.
     * På dette tidspunkt kan kompensationsværdier manuelt indtastes i hvert felt i tabellen, eller masseændringsfunktionen kan bruges til nemt at udfylde flere felter og udføre grundlæggende beregninger.  
-2. Klik på Masseændring.
+2. Klik på **Masseændring**.
     * For dette gitter vil vi først anvende værdien af midtpunktet på første niveau på alle felter i tabellen. Dette er grundlaget for kompensationsmatrixen.  
-3. Vælg en indstilling i feltet Reguleringstype.
-4. Indtast et tal i feltet Justeringsbeløb.
+3. Vælg en indstilling i feltet **Reguleringstype**.
+4. Indtast et tal i feltet **Justeringsbeløb**.
 5. Markér eller fjern markeringen af alle rækker på listen.
-6. Klik på Anvend på gitter.
+6. Klik på **Anvend på gitter**.
     * Nu bruger vi masseændringsfunktionen til at forøge beløbene i hvert efterfølgende niveau med en bestemt procentdel eller et beløb. I dette eksempel har hver lønklasse et 12,5% opslag mellem sine midtpunkter.  
-7. Vælg en indstilling i feltet Reguleringstype.
-8. Indtast et tal i feltet Justeringsbeløb.
+7. Vælg en indstilling i feltet **Reguleringstype**.
+8. Indtast et tal i feltet **Justeringsbeløb**.
 9. Find og vælg den ønskede post på listen.
 10. Find og vælg den ønskede post på listen.
 11. Find og vælg den ønskede post på listen.
 12. Find og vælg den ønskede post på listen.
-13. Klik på Anvend på gitter.
+13. Klik på **Anvend på gitter**.
 14. Find og vælg den ønskede post på listen.
 15. Find og vælg den ønskede post på listen.
 16. Find og vælg den ønskede post på listen.
-17. Klik på Anvend på gitter.
+17. Klik på **Anvend på gitter**.
 18. Find og vælg den ønskede post på listen.
 19. Find og vælg den ønskede post på listen.
-20. Klik på Anvend på gitter.
+20. Klik på **Anvend på gitter**.
 21. Find og vælg den ønskede post på listen.
 22. Klik på Anvend på gitter.
     * Nu skal vi bruge masseændringsfunktionen til at justere minimum og maksimumreferencepunkter for hvert niveau. I dette eksempel bruger vi et opslag med 50%, så minimumreferencepunktet reguleres -20% og maksimumopslaget bliver reguleret +20%.  
-23. Indtast et tal i feltet Justeringsbeløb.
-24. Indtast eller vælg en værdi i feltet Referencepunkt.
+23. Indtast et tal i feltet **Justeringsbeløb**.
+24. Indtast eller vælg en værdi i feltet **Referencepunkt**.
 25. Markér eller fjern markeringen af alle rækker på listen.
-26. Klik på Anvend på gitter.
-27. Indtast et tal i feltet Justeringsbeløb.
-28. Indtast eller vælg en værdi i feltet Referencepunkt.
+26. Klik på **Anvend på gitter**.
+27. Indtast et tal i feltet **Justeringsbeløb**.
+28. Indtast eller vælg en værdi i feltet **Referencepunkt**.
 29. Markér eller fjern markeringen af alle rækker på listen.
-30. Klik på Anvend på gitter.
+30. Klik på **Anvend på gitter**.
 
 
 

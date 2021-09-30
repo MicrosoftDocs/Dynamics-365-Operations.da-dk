@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715328"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500297"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -562,7 +562,7 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwares
 > Hvis enheder ofte bruger forskellige hardwarestationer, anbefaler vi, at du konfigurerer Modern POS til at bede kassereren om at vælge en hardwarestation, når de begynder betalingsprocessen. Klik på **Retail og Commerce** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. Vælg kasseapparatet, og angiv derefter indstillingen **Vælg ved betaling** til **Ja**. Brug distributionsplanen **1090** til at synkronisere ændringerne til kanaldatabasen.
 
 ## <a name="extensibility"></a>Udvidelsesmuligheder
-Du kan finde oplysninger om scenarier med udvidelsesmuligheder for hardwarestationen i [Udvidelsesmuligheder for hardwarestation](dev-itpro/hardware-station-extensibility.md).
+Oplysninger om udvidelsesmuligheder for hardwarestationen finder du i [Integrere POS med en ny hardwareenhed og generere installationsprogrammet til udvidelse](dev-itpro/hardware-device-extension.md).
 
 ## <a name="security"></a>Sikkerhed
 Ifølge de aktuelle sikkerhedsstandarder skal der bruges følgende indstillinger i et produktionsmiljø: 

@@ -2,7 +2,7 @@
 title: Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 description: Dette emne indeholder oplysninger om frigivelsesprocessen og frigivelseshistorikken for Planlægningsoptimering.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 1bf08fc75aa2c05b2f2974ee46ec16609505f696
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474694"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506777"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 
@@ -33,6 +33,7 @@ Da der ikke vises beskeder, når Planlægningsoptimering opdateres i dit miljø,
 
 | Ændringer | Detaljer om funktionsstyring | Udstedelsesdatoer |
 |---|---|---|
+| <p>Tilføjet understøttelse af behovsplaner, hvor **Planlægningsmetode** er indstillet til *Grovplanlægning*.</p><p>På siden **Rutegrupper** skal du markere indstillingerne af afkrydsningsfelterne **Aktivering**, **Arbejdstid** og **Kapacitet** for rækker med **Rute-/jobtype** som *Opsætning* eller *Proces*. </p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | <p>Grovplanlægning er tilgængelig i funktionsstyring fra og med version 10.0.20.</p><p>Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering*</p>  | 9. - 17. september 2021 |
 | Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Der kræves ingen funktionsstyring. | 25 - 30 august 2021 |
 | <p>Har tilføjet feltet **Leveringstid** til ordreforslag.</p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet.</p> | Der kræves ingen funktionsstyring. | 12 - 17 august 2021 |
 | <p>Tilføjet ressourcetypekrav for planlægning med ubegrænset kapacitet.</p><p>Forbedret ressourceeffektivitet og kalendereffektivitet for planlægning med ubegrænset kapacitet.</p><p>Yderligere oplysninger finder du under [Planlægning med ubegrænset kapacitet](infinite-capacity-planning.md). | <p>Tilgængelig i funktionsstyring fra og med version 10.0.20.</p><p>Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering*</p> | 6 - 12 juli 2021 |

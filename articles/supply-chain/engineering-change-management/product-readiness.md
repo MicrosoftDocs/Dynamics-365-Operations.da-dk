@@ -12,22 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415315"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500577"
 ---
 # <a name="product-readiness"></a>Produktparathed
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge parathedskontroller til at sikre, at alle de nødvendige masterdata er angivet for et produkt, før det bruges i transaktioner. Når der bruges parathedskontrol, bliver en bruger eller et team ansvarlig for at validere specifikke foruddefinerede produktrelaterede data. Hvis der er en åben parathedskontrol af et produkt, kan produktet ikke bruges i transaktioner.
+Du kan bruge parathedskontroller som hjælp til at sikre, at alle de nødvendige masterdata er angivet for et produkt, før det bruges i transaktioner. Når der bruges parathedskontrol, bliver en bruger eller et team ansvarlig for at validere specifikke foruddefinerede produktrelaterede data.
 
-Afkrydsningsfelt **Aktiv** for et teknisk produkt, en variant eller en version er kun tilgængeligt, når alle nødvendige data er angivet og kontrolleret, og når alle parathedskontroller er blevet behandlet. På dette tidspunkt kan produktet, versionen eller varianten bruges i transaktioner. Du kan oprette parathedskontroller for nye produkter, nye varianter og nye tekniske versioner.
+Du kan markere afkrydsningsfeltet **Aktiv** for et teknisk produkt, en variant eller en version, når alle nødvendige data er angivet og kontrolleret, og når alle parathedskontroller er blevet behandlet. Hvis en eller flere kontroller ikke er behandlet for produktet, versionen eller varianten, vil du få vist en advarsel om, at ikke alle kontroller er udført, når du prøver at markere afkrydsningsfeltet **Aktiv**.
 
-Du kan også anvende parathedskontroller på standardprodukter (ikke-tekniske). Du kan finde flere oplysninger i afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i dette emne.
+Du kan oprette parathedskontroller for nye tekniske produkter, varianter og versioner. Du kan også anvende parathedskontroller til standardprodukter (ikke-tekniske) (se også [Parathedskontrol af standardprodukter](#standard-products)). 
+
+Du kan bruge standardprodukter i transaktioner, selvom ikke alle parathedskontroller er fuldført. Hvis du skal spærre for, at et produkt kan bruges i transaktioner, skal du bruge dets livscyklustilstand. Du kan tildele en livscyklustilstand, der forhindrer, at et produkt bruges i transaktioner, og derefter tildele en ny livscyklustilstand, der tillader de påkrævede transaktioner, når alle parathedskontroller er fuldført.
 
 ## <a name="types-of-readiness-checks"></a>Typer af parathedskontrol
 

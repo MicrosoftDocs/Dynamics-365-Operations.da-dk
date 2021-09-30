@@ -2,7 +2,7 @@
 title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret for at få adgang til disse egenskaber.
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775236"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483848"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -30,7 +30,7 @@ Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner,
 -  Beregner totaler
 -  Skrive forud i forhold til systemet
 -  Evaluere matematiske udtryk 
--  Gruppere data i tabelformat (aktiveres separat ved hjælp af funktionen **(Prøveversion) Gruppering i gitre**)
+-  Gruppere data i tabelformat (aktiveres separat ved hjælp af funktionen **Gruppering i gitre**)
 -  Fryse kolonner
 
 ## <a name="calculating-totals"></a>Beregner totaler
@@ -93,7 +93,7 @@ Som en produktivitetsbooster kan brugerne indtaste matematiske formler i numeris
 Hvis du vil have systemet til at genkende en værdi som et udtryk, skal du starte værdien med et lighedstegn (**=**). Du kan få flere oplysninger om de understøttede operatorer og den understøttede syntaks i [Understøttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppere data i tabelformat
-Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **Gruppering i gitre**, der er offentligt tilgængelig i version 10.0.16/platformsopdatering 40 og afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i Finance and Operations-apps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
+Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **Gruppering i gitre**, der er afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i Finance and Operations-apps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
 
 Hvis du vil bruge denne funktion, skal du højreklikke på den kolonne, du vil gruppere efter, og vælge **Gruppér efter denne kolonne**. Denne handling sorterer dataene efter den valgte kolonne, føjer en ny **Gruppér efter**-kolonne til starten af gitteret og indsætter "overskriftsrækker" i starten af hver gruppe. Disse kolonneoverskrifter indeholder følgende oplysninger om hver enkelt gruppe: 
 -  Dataværdi for gruppen 
@@ -108,9 +108,6 @@ Når du har grupperet data efter en enkelt kolonne, kan du gruppere dataene efte
 
 Du kan altid fjerne grupperingen efter en hvilken som helst kolonne ved at højreklikke på den pågældende kolonne og vælge **Opdel gruppe**. Du kan også fjerne grupperingen fra alle kolonner ved at vælge **Gitterindstillinger** og derefter **Opdele alle**.   
 
-Bemærk, at før version 10.0.16/platformsopdatering 40 understøttes der kun ét grupperingsniveau. Hvis dataene grupperes i disse versioner, og du vælger **Gruppér efter denne kolonne** for en anden kolonne, erstattes den oprindelige gruppe.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Udvide og skjule grupper
 Den oprindelige gruppering af data vil få alle grupper udvidet. Du kan oprette opsummerede visninger af dataene ved at skjule de enkelte grupper, eller du kan bruge gruppeudvidelse og skjulning som hjælp til at navigere gennem dataene. Hvis du vil udvide eller skjule en gruppe, skal du vælge knappen vinkeltegn (>) i den tilsvarende gruppeoverskriftsrække. Bemærk, at de enkelte gruppers udvidede/skjulte tilstand **ikke** gemmes i personlig tilpasning.
 
@@ -118,10 +115,10 @@ Den oprindelige gruppering af data vil få alle grupper udvidet. Du kan oprette 
 På samme måde som du kan markere (eller fjerne markeringen af) alle rækker i gitteret ved at markere afkrydsningsfeltet øverst i den første kolonne af gitteret, kan du også hurtigt markere (eller fjerne markeringen af) alle rækkerne i en gruppe ved at markere afkrydsningsfeltet i den tilsvarende gruppehovedrække. Afkrydsningsfeltet i gruppehovedrækken afspejler altid den aktuelle valgtilstand for rækker i den pågældende gruppe, uanset om alle eller ingen rækker er markeret, eller kun bestemte rækker er markeret.
 
 ### <a name="hiding-column-names"></a>Skjule kolonnenavne
-Ved gruppering af data viser standardfunktionsmåden kolonnenavnet i gruppehovedrækken. Fra og med version 10.0.14/Platform update 38 kan du vælge at udelade kolonnenavnet i gruppehovedrækker ved at vælge **Gitterindstillinger** > **Skjul gruppekolonnenavn**.
+Ved gruppering af data viser standardfunktionsmåden kolonnenavnet i gruppehovedrækken. Du kan vælge at udelade kolonnenavnet i gruppehovedrækker ved at vælge **Gitterindstillinger** > **Skjul gruppekolonnenavn**.
 
 ## <a name="freezing-columns"></a>Fryse kolonner
-Visse kolonner i et gitter kan være så vigtige for sammenhængen, at de ikke skal rulle ud af visningen. Du vil i stedet have, at værdierne i disse kolonner altid er synlige. I version 10.0.17 giver funktionen **Frys kolonner i gitteret** denne fleksibilitet for brugerne. 
+Visse kolonner i et gitter kan være så vigtige for sammenhængen, at de ikke skal rulle ud af visningen. Du vil i stedet have, at værdierne i disse kolonner altid er synlige. Funktionen **Frys kolonner i gitteret** giver denne fleksibilitet for brugerne. 
 
 Hvis du vil fryse en kolonne, skal du højreklikke på kolonnens overskrift og derefter vælge **Frys kolonne**. Første gang du fuldfører dette trin, bliver den valgte kolonne den første kolonne, og den rulles ikke længere ud af visningen. En efterfølgende kolonne, som du fryser, vil blive tilføjet til højre for den sidste frosne kolonne. Du kan bruge standardfunktionen Flyt til at sortere frosne kolonner efter behov. Frosne kolonner kan dog ikke flyttes, så de vises mellem sættet af ikke-frosne kolonner. Frosne kolonner kan heller ikke flyttes, så de vises mellem sættet af frosne kolonner.
 
@@ -132,32 +129,16 @@ Bemærk, at rækkevalget og rækkestatuskolonnerne i det nye gitter altid fryses
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg det nye gitterkontrolelement i mit miljø? 
 
-**10.0.9 / Platform update 33 og senere**
+Funktionen **Nyt gitterkontrolelement** er tilgængelig direkte i funktionsstyring i ethvert miljø. Når funktionen er aktiveret i Funktionsstyring, vil alle efterfølgende brugersessioner bruge det nye gitterkontrolelement. 
 
-Funktionen **Nyt gitterkontrolelement** er tilgængelig direkte i funktionsstyring i ethvert miljø. Ligesom andre funktioner i offentlige prøveversioner er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](public-preview-terms.md).  
-
-**10.0.8 / Platform update 32 og 10.0.7 / Platform update 31**
-
-Funktionen **Nyt gitterkontrolelement** kan aktiveres i miljøer på niveau 1 (udvikling/test) og niveau 2 (sandkasse), hvis du vil foretage yderligere test- og designændringer ved at følge trinnene nedenfor.
-
-1.  **Aktivér flyvningen**: Udfør følgende SQL-sætning: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Nulstil IIS** for at rydde den statiske flighting-cache. 
-
-3.  **Find funktionen**: Gå til arbejdsområdet **Funktionsstyring**. Hvis **Nyt gitterkontrolelement** ikke vises på listen over alle funktioner, skal du vælge **Søg efter opdateringer**.   
-
-4.  **Aktivér funktionen**: Find funktionen **Nyt gitterkontrolelement** på listen over funktioner, og vælg **Aktivér nu** i detaljeruden. Bemærk, at browseren skal opdateres. 
-
-Alle efterfølgende brugersessioner vil starte med det nye kontrolelement aktiveret.
+Denne funktion aktiveres som standard med start i version 10.0.21 og er planlagt til at blive obligatorisk i version 10.0.25. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde enkelte sider brug af det nye gitter 
-Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API fra og med version 10.0.13/Platform update 37, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i `run()`-metoden for formularen.
+Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i `run()`-metoden for formularen.
 
  ```this.forceLegacyGrid();```
 
-Denne API anvendes, indtil oktober 2021-frigivelsen, når det nye gitterkontrolelement bliver obligatorisk. Hvis der er problemer, der kræver, at denne API bruges, skal du rapportere dem til Microsoft.
+Denne API vil blive opfyldt, indtil det nye gitterkontrolelement bliver obligatorisk, hvilket efter planen sker i april 2022. Hvis der er problemer, der kræver, at denne API bruges, skal du rapportere dem til Microsoft.
 
 ### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinge en side til at bruge det nye gitter, når gitteret tidligere er fravalgt
 Hvis du har valgt en enkelt side fra til brug af det nye gitter, kan du senere aktivere det nye gitter igen, når de underliggende problemer er løst. Hvis du vil gøre dette, skal du blot fjerne kaldet til `forceLegacyGrid()`. Ændringen træder først i kraft, når en af følgende ting er sker:

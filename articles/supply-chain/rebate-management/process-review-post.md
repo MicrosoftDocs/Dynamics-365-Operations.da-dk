@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729402"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500469"
 ---
 # <a name="process-review-and-post-rebates"></a>Behandle, gennemgå og bogføre rabatter
 
@@ -43,8 +43,6 @@ Den periodiske opgave **Beregn FIFO-købspris** skal køres for at beregne rabat
 Gå til **Rabatstyring \> Periodiske opgaver \> Beregn FIFO-købspris**. Vælg **OK** for at køre beregningen i den dialogboks, der vises.
 
 ## <a name="create-source-transactions"></a>Oprette kildetransaktioner
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Du kan oprette de salgsordrer eller indkøbsordrer, der har kildetransaktioner, enten før eller efter du har oprettet en relevant rabatstyringsaftale.
 
@@ -158,8 +156,6 @@ I stedet for at behandle bestemte aftaler eller aftalelinjer kan du køre et bat
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Behandle aftaler ved at bruge rabatpanelet
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 I stedet for at behandle bestemte aftaler eller aftalelinjer kan du bruge *rabatpanelet* til at behandle flere aftaler på én gang. Du kan vælge at anvende postfiltre og/eller konfigurere en gentagelsesplan. Du behøver ikke markere rækker. Systemet behandler alle linjer, der opfylder de dato- og filterkrav, du konfigurerer.
 
 Hvis du vil behandle aftaler ved hjælp af rabatpanelet, skal du benytte følgende fremgangsmåde.
@@ -213,8 +209,6 @@ Følg disse trin for at se og redigere transaktioner for rabatstyring ved hjælp
 > Hvis du bruger en kravproses, når du behandler den næste periode, indeholder posteringslisten eventuelle ikke-indkasserede posteringer fra den forrige bogføring samt eventuelle nye posteringer for den valgte periode.
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Se og redigere transaktioner for rabatstyring ved hjælp af rabatpanelet
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Følg disse trin for at se og redigere transaktioner for rabatstyring ved hjælp af rabatpanelet.
 
@@ -295,8 +289,6 @@ I stedet for at bogføre posteringer for bestemte aftaler eller aftalelinjer kan
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>Bogføre transaktioner ved at bruge rabatpanelet
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Når du har behandlet hensættelses-, rabat- eller afskrivningsposteringer, skal du følge disse trin for at bruge rabatpanelet til at gennemse og bogføre de genererede posteringer for en eller flere specifikke posteringslinjer for alle aftaler.
 
 1. Gå til **Rabatstyring \> Rabatstyringsaftaler \> Rabatpanel**.
@@ -332,8 +324,6 @@ Hvis du vil gennemse de kladdeposteringer, der er knyttet til en rabatstyringsaf
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>Gennemgå kladder ved at bruge rabatpanelet
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Hvis du vil gennemgå kladder ved hjælp af rabatpanelet, skal du benytte følgende fremgangsmåde.
 
 1. Gå til **Rabatstyring \> Rabatstyringsaftaler \> Rabatpanel**.
@@ -342,8 +332,6 @@ Hvis du vil gennemgå kladder ved hjælp af rabatpanelet, skal du benytte følge
 1. Der vises en liste over relevante kladder, dokumenter eller varer. Hvis du vil have vist flere oplysninger om en kladde, et dokument eller en vare, skal du vælge rækken og derefter vælge **Vis detaljer** i handlingsruden.
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Posteringer for rabatstyring i fradragspanelet
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Når du bogfører en postering i Rabatstyring, der har en af følgende værdier af **Betalingstype**, opretter systemet en debitorfradragskladde eller en fritekstfaktura for den relevante debitorkonto:
 
@@ -358,8 +346,6 @@ Du kan finde flere oplysninger under [Administrere fradrag ved hjælp af fradrag
 
 ## <a name="purge-unposted-transactions"></a>Fjerne ikke-bogførte transaktioner
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Når du har behandlet hensættelses-, rabat- eller afskrivningsposteringer, skal du benytte følgende fremgangsmåde for at fjerne valgte ikke-bogførte posteringer.
 
 1. Gå til **Rabatstyring \> Rabatstyringsaftaler \> Rabatpanel**.
@@ -368,8 +354,6 @@ Når du har behandlet hensættelses-, rabat- eller afskrivningsposteringer, skal
 4. Vælg **OK** for at slette de ikke-bogførte transaktioner.
 
 ## <a name="cancel-a-posted-provision"></a>Annullere en bogført hensættelse
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Når du har behandlet og bogført en hensættelse, skal du følge disse trin for at annullere de bogførte hensættelsestransaktioner.
 

@@ -2,7 +2,7 @@
 title: Konfigurere og designe kvitteringsformater
 description: I denne artikel beskrives det, hvordan du kan oprette og ændre formularlayout for at styre, hvordan kvitteringer, fakturaer og andre dokumenter udskrives. Dynamics 365 Commerce indeholder en formularlayoutdesigner, som du kan bruge til nemt at oprette og redigere forskellige typer formularlayout.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7f70918e6fd274ac8e3476d6c309eac40744b0dd24a8b79f531d8627bb4a68e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2107670cb5dbac3b8f28c4e3caa357102932291
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715352"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500163"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Konfigurere og designe kvitteringsformater
 
@@ -46,7 +46,12 @@ I denne artikel beskrives det, hvordan du kan oprette og ændre formularlayout f
 
 ## <a name="print-images"></a>Udskrive billeder
 
-Kvitteringsdesigneren indeholder en **Logo**-variabel, der kan bruges til at angive billeder, der skal udskrives på kvitteringen. Billeder, der medtages i kvitteringer ved hjælp af variablen **Logo**, skal være monochrome bitmap (.bmp)-filtyper. Hvis der er angivet et .bmp-billede i kvitteringsdesigneren, men det udskrives ikke, når det sendes til printeren, kan filstørrelsen være for stor, eller pixeldimensionerne på billedet er ikke kompatible med printeren. Hvis det sker, skal du prøve at reducere billedopløsningen.   
+Kvitteringsdesigneren indeholder en **Logo**-variabel. Du kan bruge denne variabel til at angive et billede, der skal udskrives på kvitteringer. Billeder, der udskrives på kvitteringer ved hjælp af variablen **Logo**, skal være monokrom bitmap-filtyper (.bmp). Hvis der er angivet et bitmap-billede i kvitteringsdesigneren, men det ikke udskrives, når kvitteringen sendes til printeren, kan det skyldes et af følgende problemer:
+
+- Filen er for stor, eller pixeldimensionerne af billedet er ikke kompatible med printeren. I dette tilfælde skal du prøve at reducere opløsningen eller dimensionerne i billedfilen.
+- Nogle OPOS-printerdrivere (Object Linking and Embedding for Point of Sale) implementerer ikke den metode til **PrintMemoryBitmap**, som hardwareobjektet bruger til at udskrive logobilleder. Hvis det er tilfældet, skal du prøve at føje følgende flag i filen **HardwareStation.Extension.config** til din dedikerede eller delte hardwarestation:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Designe et kvitteringsformat
 

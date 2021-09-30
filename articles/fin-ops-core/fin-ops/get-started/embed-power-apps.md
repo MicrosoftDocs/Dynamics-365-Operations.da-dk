@@ -2,7 +2,7 @@
 title: Integrere lærredapps fra Power Apps
 description: Dette emne beskriver, hvordan du kan integrere lærredapps fra Microsoft Power Apps i klienten for at øge produktets funktioner.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344523"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488048"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Integrere lærredapps fra Power Apps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps er en tjeneste, der giver udviklere og ikke-tekniske brugere mulighed for at oprette brugerdefinerede forretningsapps til mobilenheder, tablets og internettet uden at skrive kode. Finance and Operations-apps understøtter integration med Power Apps. Lærredapps, som du, din organisation eller det bredere økosystem udvikler, kan integreres i Finance and Operations-apps for at øge produktets funktionalitet. Du kan f.eks. opbygge en lærredapp fra Power Apps, der supplerer en Finance and Operations-app med oplysninger, der er hentet fra et andet system.
 

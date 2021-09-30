@@ -1,8 +1,8 @@
 ---
 title: Udarbejde en kompensationsstruktur
-description: Denne artikel fører dig gennem processen med at oprette en kompensationsplan og melde medarbejdere til planen via berettigelsesregler.
-author: andreabichsel
-ms.date: 02/10/2020
+description: Dette emne forklarer, hvordan du kan oprette en fast kompensationsplan og tilmelde medarbejdere i planen via berettigelsesregler.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,21 @@ ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPar
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2649a392b5c8bb2482622eba22b0b2f458058314dce25a8b9032eb2ef518240c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec30d6259b755bf7c304e8796b32d373027ce7ff
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732363"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483946"
 ---
 # <a name="develop-a-compensation-structure"></a>Udarbejde en kompensationsstruktur
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Denne artikel fører dig gennem processen med at oprette en kompensationsplan og melde medarbejdere til planen via berettigelsesregler. Denne artikel bruger USMF-demodata og gælder for styring af kompensation og frynsegoder.
+Dette emne forklarer, hvordan du kan oprette en fast kompensationsplan og tilmelde medarbejdere i planen via berettigelsesregler. Dette emne bruger USMF-demodata og gælder for styring af kompensation og frynsegoder.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Oprette en fast løn-struktur
 
@@ -42,7 +42,7 @@ Denne artikel fører dig gennem processen med at oprette en kompensationsplan og
 
 7. I feltet **Type** skal du vælge, om den faste lønstruktur er en plan af typen **Omfang**, **Klasse** eller **Trin**.
 
-8. Afkrydsningsfeltet **Anbefaling tilladt** fungerer som standardværdi for alle handlinger, der er føjet til denne plan i en proceshændelse. Ved at tillade anbefalinger kan du tilsidesætte det beregnede aftalebeløb ved behandling af kompensation.
+8. Afkrydsningsfeltet **Anbefaling tilladt** er standardværdien for alle handlinger, der er føjet til denne plan i en proceshændelse. Ved at tillade anbefalinger kan du tilsidesætte det beregnede aftalebeløb ved behandling af kompensation.
 
 9. I feltet **Tolerance uden for afgrænsningerne** kan du angive, hvordan du vil håndtere kompensationsbeløb, der falder uden for den angivne lønstrukturramme på det givne niveau. Hvis du angiver feltet **Tolerance uden for afgrænsningerne** til **Ingen**, kan du bruge et hvilket som helst kompensationsbeløb. **Tolerancen Blød** advarer brugerne, hvis kompensationsbeløbet er mindre end minimum- eller større end maksimumbeløbet for referencepunktet for det pågældende niveau. Brugerne kan ignorere advarslen og fortsætte. **Tolerancen Hård** genererer en fejl, hvis en medarbejders løn er angivet uden for minimale og maksimale referencepunkter for niveauet og justerer automatisk medarbejderens løn, så den ligger inden for rammen.
 

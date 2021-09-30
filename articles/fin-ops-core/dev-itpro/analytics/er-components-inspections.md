@@ -2,7 +2,7 @@
 title: Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 description: Dette emne forklarer, hvordan du inspicerer de konfigurerede ER-komponenter (elektronisk rapportering) for at forhindre kørselsproblemer, der kan opstå.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718617"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488108"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 
@@ -229,6 +229,12 @@ I nedenstående tabel vises en oversigt over de inspektioner, ER tilbyder. Du ka
 <p>Sidehoveder/sidefødder (&lt;komponenttype: sidehoved eller sidefod&gt;) er uoverensstemmende</p>
 <p><b>Kørsel:</b> Den sidste konfigurerede komponent bruges under kørsel, hvis kladdeversionen af det konfigurerede ER-format udføres.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Uoverensstemmende indstilling af sidekomponent</a></td>
+<td>Dataintegritet</td>
+<td>Fejl</td>
+<td>Der er mere end to områdekomponenter uden replikering. Fjern unødvendige komponenter.</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Rediger det konfigurerede format ved at slette en af de uoverensstemmende kompon
 #### <a name="option-2"></a>Indstilling 2
 
 Rediger værdien for egenskaben for udseendet af **sidehovedet eller sidefoden** for en af de uoverensstemmende komponenter i **Excel\\sidehoved** eller **Excel\\sidefod**.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Uoverensstemmende indstilling af sidekomponent
+
+Når du [konfigurerer](er-fillable-excel.md) en ER-formatkomponent til at bruge en Excel-skabelon til at generere et udgående dokument, kan du tilføje **Excel\\-side** komponenten for at sideopdele et genereret dokument ved at bruge ER-formler. For hver **Excel\\-side**-komponent, du tilføjer, kan du tilføje mange indlejrede [område](er-fillable-excel.md#range-component)-komponenter og stadig være kompatibel med følgende [struktur](er-fillable-excel.md#page-component-structure):
+
+- Den første indlejrede **Område**-komponent kan konfigureres, så egenskaben **Replikeringsretning** angives til **Ingen replikering**. Dette område bruges til at oprette sidehoveder i genererede dokumenter.
+- Du kan tilføje mange andre indlejrede **område**-komponenter, hvor egenskaben **Replikeringsretning** er angivet som **Lodret**. Disse områder bruges til at udfylde genererede dokumenter.
+- Den sidste indlejrede **Område**-komponent kan konfigureres, så egenskaben **Replikeringsretning** angives til **Ingen replikering**. Dette område bruges til at oprette sidefodsfødder i genererede dokumenter og til at tilføje de nødvendige sideskift.
+
+Hvis du ikke følger denne struktur for et ER-format i ER-formatdesigneren på designtidspunktet, opstår der en valideringsfejl, og du modtager følgende fejlmeddelelse: "Der er mere end to områdekomponenter uden replikering. Fjern unødvendige komponenter."
+
+### <a name="automatic-resolution"></a>Automatisk løsning
+
+Det er ikke muligt at løse dette problem automatisk.
+
+### <a name="manual-resolution"></a>Manuel løsning
+
+#### <a name="option-1"></a>Indstilling 1
+
+Rediger det konfigurerede format ved at ændre egenskaben **Replikeringsretning** for alle uoverensstemmende **Excel\\-område**-komponenter.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

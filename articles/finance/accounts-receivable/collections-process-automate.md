@@ -1,7 +1,7 @@
 ---
 title: Automatiseret rykkerproces
 description: I dette emne beskrives processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet eller et rykkerbrev, der sendes til kunden.
-author: panolte
+author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0afc56ecea72e281d689930cc91cf6048426d3127ab10c8c284b2eea0f3933d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723889"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486863"
 ---
 # <a name="collections-process-automation"></a>Automatisering af opkrævningsproces
 
@@ -26,7 +26,7 @@ ms.locfileid: "6723889"
 
 I dette emne beskrives processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet (f.eks. et telefonopkald) eller et rykkerbrev, der sendes til kunden. 
 
-Organisationer bruger en betydelig del af tiden på at søge efter aldersfordelte saldorapporter, debitorkonti og åbne fakturaer for at lære, hvilke kunder der bør kontaktes om en åben faktura eller kontosaldo. Denne eftersøgning stjæler tid fra en inkassators tidsforbrug på kommunikation med kunderne for at opkræve forfaldne saldi eller løse fakturatvister. Med en automatiseret rykkerproces kan du oprette en strategibaseret tilgang til din rykkerproces. Dette hjælper dig med at anvende rykkeraktiviteter på en ensartet måde ved at bruge tilpassede mailpåmindelser eller en programproces til at udsende rykkere. 
+Organisationer bruger ofte en betydelig del af tiden på at søge efter aldersfordelte saldorapporter, debitorkonti og åbne fakturaer for at lære, hvilke kunder der bør kontaktes om en åben faktura eller kontosaldo. Denne eftersøgning stjæler tid fra en inkassators tidsforbrug på kommunikation med kunderne for at opkræve forfaldne saldi eller løse fakturatvister. Med en automatiseret rykkerproces kan du oprette en strategibaseret tilgang til din rykkerproces. Dette hjælper dig med at anvende rykkeraktiviteter på en ensartet måde ved at bruge tilpassede mailpåmindelser eller en programproces til at udsende rykkere. 
 
 ## <a name="collections-process-setup"></a>Opsætning af rykkerproces
 Du kan bruge siden **Opsætning af rykkerproces** (**Kredit og rykkere > Opsætning > Opsætning af rykkerproces**) til at oprette en automatiseret rykkerproces, der planlægger aktiviteter, sender mailmeddelelser og opretter og bogfører debitorrykkerbreve. Procestrinnene er baseret på den indledende eller ældste åbne faktura. Hvert trin bruger denne faktura til at bestemme, hvilken kommunikation eller aktivitet der skal ske med en bestemt kunde.  
@@ -34,96 +34,34 @@ Du kan bruge siden **Opsætning af rykkerproces** (**Kredit og rykkere > Opsætn
 Rykkerteam sender typisk en tidlig besked vedrørende hver udestående faktura, sådan at en kunde får besked, når fakturaen er forfalden. Valget **Varsel om rykker** kan angives, så der kan reageres på ét trin i hvert proceshierarki for hver faktura, efterhånden som tidspunktet for fakturaen når dette trin.
 
 ### <a name="process-hierarchy"></a>Proceshierarki
-Hver kundepulje kan kun tildeles ét proceshierarki. Hierarkirangen af dette trin identificerer, hvilken proces der har forrang, hvis en kunde er inkluderet i mere end én pulje, hvor der er tildelt et proceshierarki. Pulje-id'et bestemmer, hvilke kunder der vil blive tildelt processen. 
+Hver kundepulje kan kun tildeles ét proceshierarki. Hierarkirangen af dette trin identificerer, hvilken proces der har forrang, hvis en kunde er inkluderet i mere end én pulje, hvor der er tildelt et proceshierarki. Pulje-id'et bestemmer, hvilke kunder der vil blive tildelt processen. Hvert konfigurerede hierarki kan kun tildeles til én procesautomatisering.
 
-Stilledage bruges til at sikre, at en kunde ikke bliver kontaktet for ofte af den automatiserede proces.  Hvis stilledage f.eks. er angivet til to, vil en kunde ikke blive kontaktet af den automatiserede proces i mindst to dage, selvom den oprindelige indledende faktura er betalt fuldt ud. 
+Stilledage bruges til at sikre, at en kunde ikke bliver kontaktet for ofte af den automatiserede proces. Hvis stilledage f.eks. er angivet til to, vil en kunde ikke blive kontaktet af den automatiserede proces i mindst to dage, selvom den oprindelige indledende faktura er betalt fuldt ud. 
 
-Hvis du vil udelukke kunder fra procesautomatiseringen, hvis kontosaldoen eller fakturasaldoen er mindre end en defineret værdi, skal du angive feltet **Udeluk fra proces** til **Ja** og angive beløbsværdien.
+Du kan udelukke kunder fra procesautomatisering, hvis kundens aldersfordelte saldo eller fakturabeløb er mindre end en defineret værdi, ved at vælge **Kundens aldersfordelte saldo er mindre end** eller **Fakturabeløb er mindre end** i feltet **Udeluk fra proces** og angive beløbsværdien.
 
-## <a name="process-details"></a>Procesdetaljer
-**Beskrivelse** bruges til at identificere formålet med eller navnet på trinnet i hierarkiet.
-
-**Handlingstypen** definerer, om trinnet vil oprette en aktivitet, sende en mail eller oprette en rykker.
-
-**Forretningsdokument** definerer den skabelon, der bruges til at oprette handlingstypen.  Det kan være en aktivitetsskabelon, en mailskabelon eller en rykker pr. kunde. 
-
-Handlingstyperne kan oprettes enten før eller efter datoen for fakturaens forfaldsdato, baseret på den indstilling, der vises i kolonnen **Dage i relation til fakturaens forfaldsdato**.
-
-Når du vælger en mailhandlingstype, bruges modtageren til at definere, om det er en kunde-, salgsgruppe- eller inkassatorkontakt. Værdien i feltet **Kontakt til forretningsformål** bestemmer derefter, hvilken kontakt fra kundens konto der skal modtage kommunikationen.
-
-## <a name="business-document-details"></a>Detaljer om forretningsdokument
-Oplysningerne om forretningsdokumenter varierer, afhængigt af den handlingstype, der er valgt i procesoplysningerne.  Når handlingstypen er en aktivitet, vises oplysningerne om aktivitetsskabelonen.  Disse oplysninger omfatter navnet på aktivitetsskabelonen, den aktivitetstype, der oprettes, formålet med aktiviteten, det antal dage, der er planlagt til at fuldføre aktiviteten, og detaljer om aktiviteten.  Denne aktivitet vil derefter oprette en kæde til den indledende faktura, der fortæller modtageren, hvilken handling der skal bruges til at fuldføre aktiviteten.
-
-Hvis handlingstypen er en mail i procesoplysningerne, vil dette afsnit indeholde to oversigtspaneler.  Det første bruges til at definere skabelon-id, mailbeskrivelse, standardsprog, det brugernavn, der vil blive tildelt de mails, som automatisk udsendes, og mailadressen på den tilknyttede afsenders mailadresse. Det andet vil tillade, at brødteksten i mailen oprettes, efter at værdierne i felterne **Sprog** og **Emne** gemmes ved at vælge **Rediger**.  Derved åbnes et vindue, hvor det er muligt at overføre HTML-indhold. Du kan også skrive den meddelelse, der skal oprettes, manuelt i nederste venstre felt i vinduet.  
-
-> [!Note]
-> En Outlook-mail kan gemmes med den ønskede meddelelsestekst i HTML-format. Denne kan derefter overføres til implementering af skabelonen. <br> <br> Hvis handlingstypen rykker er valgt, vil der ikke være et detaljeafsnit til forretningsdokument i opsætningsformularen.
-
-
-## <a name="fasttab-reference"></a>Oversigtspanelet Reference
-Følgende tabeller viser de sider og felter, som de angivne oversigtspaneler kan åbnes fra, sammen med en beskrivelse af oplysningerne under den pågældende fane. 
-
-### <a name="process-hierarchy"></a>Proceshierarki
-
-|     Side                                                  |     Felt                         |     Beskrivelse                           |
-| --------------------------------------------------------  |-------------------------------    |---------------------------------------    |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |                                   |     Opret og administrer rykkerprocesser baseret på tildelinger af kundepulje.                                                                                                                             |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |     Hierarki                     |     Definerer prioriteten af procesautomatisering, der skal tildeles en kunde, hvis kunden tilhører flere puljer.                                                                                                   |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |     Pulje-id                       |     Forespørgsler, der definerer en gruppe af kundeposter.                                                                                                                                                        |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |     Stilledage                    |     Begræns, hvor ofte et procestrin kan fuldføres. Hvis der f.eks. er angivet to stilledage, vil næste procestrin ikke forekomme i mindst to dage, hvis den indledende faktura ændres.     |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |     Udeluk fra proces        |     Hvis du enten vælger **Kundens aldersfordelte saldo er mindre end** eller **Fakturabeløb er mindre end**, udelukkes en kunde fra procesautomatiseringen, hvis værdikriterierne ikke opfyldes.                                   |
+Markér **Brug forudsigelse** for at oprette rykkeraktiviteter ved hjælp af kundebetalingsforudsigelser. De aktiviteter, der oprettes, vil bruge aktivitetsskabelonen fra **Betalingsforudsigelser** på siden **Debitorparametre**, fanen **Automatisering af rykkerproces**. 
 
 ### <a name="process-details"></a>Procesdetaljer
-|     Side                                                  |     Felt                                         |      Beskrivelse                  |
-|--------------------------------------------------------   |-----------------------------------------------    |----------------------------   |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |                                                   |     Definer de trin, der udføres, på baggrund af den indledende faktura.                                                                                                |
-|                                                           |     Beskrivelse                                   |     Et fritekstfelt, der bruges til at angive et navn og/eller en beskrivelse af trinnet.                                                                           |
-|                                                           |     Handlingstype                                   |     Aktivitet, mail eller rykker, der oprettes af procestrinnet.                                                                     |
-|                                                           |     Forretningsdokument                           |     Definerer den aktivitet eller mailskabelon, der bruges under procestrinnet.                                                                        |
-|                                                           |     Når                                          |     Angiver, om procestrinnet skal foregå før eller efter den indledende fakturas forfaldsdato, sammen med feltet **Dage i relation til fakturaens forfaldsdato**.        |
-|                                                           |     Dage i relation til fakturaens forfaldsdato        |     Sammen med feltet **Hvornår** identificerer det timingen af procestrinnet.                                                                          |
-|                                                           |     Varsel om rykker                                   |     Med dette valg kan du angive ét trin pr. proceshierarki og køre dem i forhold til hver faktura, når tidsmålingskriterierne er nået.                                                |
-|                                                           |     Modtager                                     |     Angiver, om der skal sendes en mail til en kontakt hos en kunde, salgsgruppe eller inkassator.                                                   |
-|                                                           |     Kontakt til forretningsformål                    |     Bestemmer, hvilken modtagers mailadresse der bruges i mailkommunikation.                                                                                 |
+Klik på **Ny** for at føje en ny procesdetalje til hierarkiet. **Beskrivelse** bruges til at identificere formålet med eller navnet på trinnet i hierarkiet. Vælg **Handlingstypen** for at definere trinnet, der skal oprette en aktivitet, sende en mail eller oprette en rykker. 
 
-### <a name="business-process-activity-template-details"></a>Oplysninger om forretningsprocessens aktivitetsskabelon 
-|     Side                                                  |     Felt                     |      Beskrivelse                  |
-|--------------------------------------------------------   |----------------------------   |-------------------------  |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |                               |     Den del af opsætningsprocessen, der identificerer detaljerne i aktivitetsskabelonen.                                                                      |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |     Aktivitetsskabelon       |     Identificerer typen, formålet, antallet af dage til fuldførelse og indeholder oplysninger om den aktivitet, der oprettes i løbet af et aktivitetsprocestrin.       |
+- **Forretningsdokument** definerer den skabelon, der bruges til at oprette handlingstypen. Dette dokument kan være en aktivitetsskabelon, en mailskabelon eller en rykker til hver kunde. I rykkerprocessens automatisering oprettes kun rykkere pr. kunde, uanset hvordan andre rykkerparametre er angivet.
+- **Når** definerer det procestrin, der skal finde sted før eller efter forfaldsdatoen for den indledende (ældste) faktura, og det bruges sammen med det antal, der vises i kolonnen **Dage i forhold til fakturaens forfaldsdato**. 
+- Markér indstillingen **Varsel om rykker** for at oprette en handling for hver faktura i ét trin i et proceshierarki. Varsel om rykker er typisk en tidlig besked vedrørende udestående fakturaer, så en kunde får besked, når fakturaen snart bliver forfalden. Varsel om rykker kan kun markeres for én aktivitet pr. hierarki. Når du vælger en mailhandlingstype, bruges modtageren til at definere, om mailmeddelelsen skal sendes til en kunde, salgsgruppe eller inkassatorkontakt. 
+- Værdien i feltet **Kontakt til forretningsformål** bestemmer derefter, hvilken kontakt fra kundens konto der skal modtage kommunikationen.
 
-### <a name="business-document-email-template-details"></a>Oplysninger om e-mailskabelon til forretningsdokument 
-|     Side                                                  |     Felt     |      Beskrivelse                  |
-|--------------------------------------------------------   |-------------- |-----------------------------  |
-|     Opsætning af rykkerproces <br> Procesautomatisering       |               |     Identificerer mailbeskrivelsen, standardsproget, afsendernavnet og mailadressen, der oprettes under et mailprocestrin.        |
+### <a name="business-document-details"></a>Detaljer om forretningsdokument
+Oplysningerne om forretningsdokumenter varierer, afhængigt af den handlingstype, der er valgt i procesoplysningerne. Når handlingstypen er en aktivitet, vises oplysningerne om aktivitetsskabelonen. Disse oplysninger omfatter navnet på aktivitetsskabelonen, den aktivitetstype, der oprettes, formålet med aktiviteten, det antal dage, der er planlagt til at fuldføre aktiviteten, og detaljer om aktiviteten. Denne aktivitet vil derefter oprette en kæde til den indledende faktura, der fortæller modtageren, hvilken handling der skal bruges til at fuldføre aktiviteten.
 
+Hvis handlingstypen er en mail i procesoplysningerne, vil dette afsnit indeholde to oversigtspaneler. Det første bruges til at definere skabelon-id, mailbeskrivelse, standardsprog, det brugernavn, der vil blive tildelt de mails, som automatisk udsendes, og mailadressen på den tilknyttede afsenders mailadresse. Det andet vil tillade, at brødteksten i mailen oprettes, efter at værdierne i felterne **Sprog** og **Emne** gemmes ved at vælge **Rediger**. Derved åbnes et vindue, hvor det er muligt at overføre HTML-indhold. 
 
-### <a name="collections-history"></a>Rykkerhistorik 
-|     Side                              |     Felt     |      Beskrivelse                                                          |
-|------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Opsætning af rykkerproces       |               |     Se den seneste historik for det valgte proceshierarki.       |
+> [!Note]
+> Du kan gemme en Outlook-mail, der indeholder brødteksten til kommunikationen i HTML-format. Du kan derefter uploade meddelelsesindholdet for at implementere skabelonen. <br> <br> Hvis handlingstypen rykker er valgt, vil der ikke være et detaljeafsnit til forretningsdokument på opsætningssiden.
 
-### <a name="collection-process-assignment"></a>Tildeling af rykkerproces
-|     Side                              |     Felt     |      Beskrivelse                                                  |
-|------------------------------------   |-------------- |-----------------------------------------------------------    |
-|     Opsætning af rykkerproces       |               |     Vise kunder, der er tildelt en rykkerproces.  
-|     Manuel tildeling               |               |     Få vist kunder, der er blevet tildelt en proces manuelt, eller vælg kunder, der skal tildeles en proces. |
-|     Prøveversion af procestildeling      |               |     Få vist de kunder, der skal tildeles en strategi, når den køres.   |
-|     Prøveversion af kundetildeling     |               |     Få vist den strategi, som en bestemt kunde er tildelt.    |
- 
- ### <a name="process-simulation"></a>Processimulering
-|     Side                              |     Felt     |      Betegnelse                                                  |
-|------------------------------------   |-------------- |-----------------------------------------------------------    |
-|    Processimulering                 |               |     Få vist de handlinger, der vil blive oprettet, hvis den valgte proces-automatisering køres på dette tidspunkt. |
+Brug knappen **Rykkerproceshistorik** til at få vist den seneste historik for det valgte proceshierarki. 
 
-### <a name="parameters"></a>Parametre
-|     Side                                                                  |     Felt                                             |      Betegnelse                              |
-|-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
-|     Debitorparametre > Automatiseret rykkerproces     |     Procentdel af kunder pr. batchopgave          |     Indstilling til at bestemme antallet af batchopgaver pr. automatiseringsproces.                                          |
-|     Debitorparametre > Automatiseret rykkerproces     |     Bogfør rykkerbreve automatisk           |     Rykkerhandlingstyperne vil bogføre brevet under automatiseringen.                                      |
-|     Debitorparametre > Automatiseret rykkerproces     |     Oprette aktiviteter automatisk                |     Opret og luk aktiviteter for handlingstyper uden aktivitet for at få vist alle de automatiserede trin, der udføres på en konto.        |
-|     Debitorparametre > Automatiseret rykkerproces     |     Opbevaringsdage for automatiseret rykkerproces     |     Definerer, hvor mange dage rykkerhistorikken gemmes.                                                       |
-|     Debitorparametre > Automatiseret rykkerproces     |     Udeluk faktura efter aktivering af sidste procestrin    |     En faktura, der når til det sidste trin i rykkerprocessen, bruges ikke til at oprette aktionstyper for fremtidig proces-automatisering. Det næste ældste fakturatrin vil være bestemmende for næste trin i proces-automatiseringen for at sikre, at automatiseringshandlingerne for rykkerprocessen fortsætter.                                                        |
+Klik på handlingen **Tildeling af rykkerproces** for at få vist kunder, der er tilknyttet en rykkerproces. Du kan bruge **Prøveversion af kundetildeling** til at få vist det hierarki, som en bestemt kunde er tildelt. Du kan bruge **Prøveversion af procestildeling** til at få vist de kunder, der tildeles til et hierarki, når det køres. Klik på **Manuel tildeling** for at se kunder, der er blevet tildelt en proces manuelt, eller vælg kunder, der skal tildeles en proces.
 
+Klik på handlingen **Processimulering** for at se de handlinger, der vil blive oprettet, hvis den valgte proces-automatisering køres på dette tidspunkt. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

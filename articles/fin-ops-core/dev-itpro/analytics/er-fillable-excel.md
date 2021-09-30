@@ -2,7 +2,7 @@
 title: Designe en konfiguration til at generere dokumenter i Excel-format
 description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
-ms.date: 03/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d737c3a58bf94079b8b674238ed7dd651e238752a2bd992f57c9be4b95aedae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748466"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488132"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -138,6 +138,55 @@ Du kan få mere at vide om, hvordan du integrerer billeder og figurer, under [In
 
 Komponenten **Sideskift** tvinger Excel til at starte en ny side. Denne komponent er ikke påkrævet, når du vil bruge Excels standardsideinddeling, men du bør bruge den, når du vil have, at Excel skal følge dit ER-format til opbygning af sideinddeling.
 
+## <a name="page-component"></a><a name="page-component"></a>Sidekomponent
+
+### <a name="overview"></a>Overblik
+
+Du kan bruge komponenten **Side**, når Excel skal følge dit ER-format og strukturere sideinddeling i et genereret udgående dokument. Når et ER-format kører komponenter under **Side**-komponenten, tilføjes de påkrævede sideskift automatisk. Under denne proces tages der hensyn til størrelsen på det genererede indhold, sideopsætningen af Excel-skabelonen og den papirstørrelse, der er valgt i Excel-skabelonen.
+
+Hvis du skal opdele et genereret dokument i forskellige sektioner, hvor hver af dem har forskellige sideinddelinger, kan du konfigurere flere **Side**-komponenter i hver [Ark](er-fillable-excel.md#sheet-component)-komponent.
+
+### <a name="structure"></a><a name="page-component-structure"></a>Opbygning
+
+Hvis den første komponent under **Side**-komponenten er en [Område](er-fillable-excel.md#range-component)-komponent, hvor egenskaben **Replikeringsretning** er angivet til **Ingen replikering**, betragtes dette område som sidehovedet til sideinddeling, der er baseret på indstillingerne for den aktuelle **Side**-komponent. Det Excel-område, der er tilknyttet denne formatkomponent, gentages øverst på alle sider, der genereres ved hjælp af indstillingerne for den aktuelle **Side**-komponent.
+
+> [!NOTE]
+> Hvis de [Rækker, der skal gentages i øverste](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409) område, konfigureres i Excel-skabelonen, skal adressen for dette Excel-område være lig med adressen på det Excel-område, der er tilknyttet den tidligere beskrevne **Område**-komponent.
+
+Hvis den sidste komponent under **Side**-komponenten er en **Område**-komponent, hvor egenskaben **Replikeringsretning** er angivet til **Ingen replikering**, betragtes dette område som sidefoden til sideinddeling, der er baseret på indstillingerne for den aktuelle **Side**-komponent. Det Excel-område, der er tilknyttet denne formatkomponent, gentages nederst på alle sider, der genereres ved hjælp af indstillingerne for den aktuelle **Side**-komponent.
+
+> [!NOTE]
+> For at få korrekt sideinddeling bør de Excel-områder, der er tilknyttet **Område**-komponenterne, ikke få ændret størrelse under kørslen. Vi fraråder, at du formaterer celler i dette område ved at bruge **Ombryd tekst i en celle** og **Tilpas automatisk rækkehøjde** som [indstillinger](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84) i Excel.
+
+Du kan tilføje flere andre **Område**-komponenter mellem de valgfrie **Område**-komponenter for at angive, hvordan et genereret dokument er udfyldt.
+
+Hvis sættet af indlejrede **Område**-komponenter under **Side**-komponenten ikke overholder den tidligere beskrevne struktur, opstår der en [valideringsfejl](er-components-inspections.md#i17) på designtidspunktet i ER-formatdesigneren. Fejlmeddelelsen fortæller dig, at problemet kan forårsage problemer under kørslen.
+
+> [!NOTE]
+> Hvis du vil generere korrekt output, skal du ikke angive en binding for nogen **Område**-komponent under **Side**-komponenten, hvis egenskaben **Replikeringsretning** for den pågældende **Område**-komponent er angivet til **Ingen replikering**, og området er konfigureret til at generere sidehoveder eller sidefødder.
+
+Hvis du vil bruge sideinddelingsrelateret summering og optælling til at beregne løbende totaler og totaler pr. side, anbefales det, at du konfigurerer de påkrævede datakilder for [indsamling af data](er-data-collection-data-sources.md). Du kan få mere at vide om, hvordan du bruger **Side**-komponenten til at sideopdele et genereret Excel-dokument, ved at gennemføre procedurerne i [Designe et ER-format for at sideopdele et genereret dokument i Excel-format](er-paginate-excel-reports.md).
+
+### <a name="limitations"></a><a name="page-component-limitations"></a>Begrænsninger
+
+Når du bruger **Side**-komponenten til Excel-sideinddeling, kender du ikke det endelige antal sider i et genereret dokument, før sideinddelingen er fuldført. Du kan derfor ikke beregne det samlede antal sider ved hjælp af ER-formler og udskrive det korrekte antal sider i et genereret dokument på en side før den sidste side.
+
+> [!TIP]
+> Du kan opnå dette resultat i Excel-sidehoved eller -sidefod ved hjælp af den særlige Excel-[formatering](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) af sidehoveder og sidefødder.
+
+Konfigurerede **Side**-komponenter tages ikke i betragtning, når du opdaterer en Excel-skabelon i det format, der kan redigeres, i Dynamics 365 Finance version 10.0.22. Denne funktionalitet tages i betragtning i yderligere versioner af Finance.
+
+Hvis du konfigurerer Excel-skabelonen til at bruge [betinget formatering](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), vil det muligvis ikke fungere som forventet i nogle tilfælde.
+
+### <a name="applicability"></a>Anvendelighed
+
+**Side**-komponenten virker kun til [Excel-filens](er-fillable-excel.md#excel-file-component) formatkomponent, når den pågældende komponent er konfigureret til at bruge en skabelon i Excel. Hvis du [erstatter](tasks/er-design-configuration-word-2016-11.md) Excel-skabelonen med en Word-skabelon og derefter kører det redigerbare ER-format, ignoreres **Side**-komponenten.
+
+**Side**-komponenten fungerer kun, når funktionen **Aktivér brug af EPPlus-bibliotek i Elektronisk rapporteringsstruktur** er aktiveret. En undtagelse opstår under kørslen, hvis ER prøver at behandle **Side**-komponenten, mens denne funktion er deaktiveret.
+
+> [!NOTE]
+> En undtagelse opstår under kørslen, hvis et ER-format behandler **Side**-komponenten til en Excel-skabelon, der indeholder mindst én formel, der henviser til en celle, som ikke er gyldig. Du kan hjælpe med at forhindre kørselsfejl ved at rette Excel-skabelonen som beskrevet i [Sådan retter du fejlen #REF!](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+
 ## <a name="footer-component"></a>Sidefodskomponent
 
 Komponenten **Sidefod** bruges til at udfylde sidefødder nederst i et genereret regneark i en Excel-projektmappe.
@@ -197,9 +246,12 @@ Når du validerer et ER-format, der kan redigeres, sker der en konsistenskontrol
 Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan visse celler i dette dokument indeholde Excel-formler. Når funktionen **Aktivér brug af EPPlus-bibliotek i den elektroniske rapporteringsstruktur** er aktiveret, kan du styre, hvornår formlerne beregnes, ved at ændre værdien i [parameteren](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) **Beregningsindstillinger** i den Excel-skabelon, der bruges:
 
 - Vælg **Automatisk** for at genberegne alle afhængige formler, hver gang et genereret dokument føjes til nye områder, celler osv.
+
     >[!NOTE]
     > Dette kan forårsage et problem med ydeevnen for Excel-skabeloner, der indeholder flere relaterede formler.
+
 - Vælg **Manuel** for at undgå genberegning af formler, når der genereres et dokument.
+
     >[!NOTE]
     > Genberegning af formler gennemtvinges manuelt, når et genereret dokument åbnes med henblik på visning i Excel.
     > Brug ikke denne indstilling, hvis du konfigurerer en ER-destination, der forudsætter brug af et genereret dokument uden visning i Excel (PDF-konvertering, afsendelse af mail osv.), da det genererede dokument muligvis ikke indeholder værdier i celler, der indeholder formler.

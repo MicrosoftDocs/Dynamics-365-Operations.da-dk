@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345260"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500584"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Årsagskoder for lageroptælling
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Med årsagskoder kan du analysere resultaterne af en optællingsproces og eventuelle uoverensstemmelser, der opstår under denne proces. Du kan angive årsagen til optællingen, f.eks. en ødelagt palle eller en regulering af lageret, der er baseret på lagerprøver. Du kan samtidig bruge reguleringsfunktionen til at bogføre værdien af reguleringer af lagerbeholdningen på den relevante modkonto på baggrund af årsagen til hver enkelt lagerregulering.
 
@@ -42,8 +41,6 @@ Før du konfigurerer systemet, anbefales det, at du definerer en strategi for at
 - Skal årsagskoderne skabe økonomisk modkontobogføring?
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Aktivere årsagskodefunktioner i systemet
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Hvis du ikke kan se alle de funktioner, der er beskrevet i dette emne, i dit system, er du sandsynligvis nødt til at aktivere funktionen *Bogfør reguleringer af disponible mængder ved hjælp af konfigurerbare årsagskoder, der er tilknyttet modkonti*. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 

@@ -2,7 +2,7 @@
 title: Integrere tredjepartsapps
 description: Dette emne beskriver, hvordan du kan integrere tredjepartsapps for at forbedre produktets funktioner.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345404"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488228"
 ---
 # <a name="embed-third-party-apps"></a>Integrere tredjepartsapps
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Mange kunder bruger en række programmer til at køre deres virksomhed. Nogle af disse applikationer er webapps fra en tredjepart, som fungerer sammen med Finance and Operations-apps. For at opnå en mere problemfri brugeroplevelse kan du bruge funktionen **Fuld side-apps** til at integrere disse tredjepartsapps direkte i dine Finance and Operations-apps (forudsat at disse tredjepartsapps tillader, at de bliver integreret). På denne måde kan brugere få adgang til de websteder og apps, de kræver, uden at skulle skifte faner eller vinduer.
 

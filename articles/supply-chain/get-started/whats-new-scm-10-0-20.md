@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99e95a7fbdce3d040ab7bf01474921ae1f616468
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773507"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506825"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
 
@@ -38,7 +38,8 @@ De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](..
 | Lager&nbsp;og&nbsp;logistik | [Forbedringer af ydeevne for salgsordredetaljer](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Denne funktion gør brugergrænsefladen mere responsiv, når der åbnes salgsordrer, især ordrer, der indeholder mange linjer. |
 | Produktion | [Aktivere procesautomatiseringsflow for at oprette kvalitetsordrer](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/invoke-process-automation-flows-create-quality-orders) | [Aktivere procesautomatiseringsflow for at oprette kvalitetsordrer](../production-control/process-automation-quality-orders.md ) |
 | Produktion | [Forbedret brugergrænseflade til produktionsudførelse for fremstilling](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) | [Konfigurere grænsefladen til produktionsudførelse](../production-control/production-floor-execution-configure.md) |
-| Administration af produktoplysninger | [Administrere ændringer i formler og deres stoffer](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Administrere ændringer i formler og deres stoffer](../engineering-change-management/manage-formula-changes.md) |
+| Planlægning | [Uendelig kapacitetsplanlægning til planlægningsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Planlægning med ubegrænset kapacitet](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Administration af produktoplysninger | [Administrere ændringer i formler og deres ingredienser](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Administrere ændringer i formler og deres stoffer](../engineering-change-management/manage-formula-changes.md) |
 | Administration af produktoplysninger | [Kontroller af produktparathed](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | [Produktparathed](../engineering-change-management/product-readiness.md) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsforbedringer, der er inkluderet i denne version

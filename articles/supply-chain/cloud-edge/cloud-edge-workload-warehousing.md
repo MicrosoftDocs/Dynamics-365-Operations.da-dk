@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471710"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500421"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder
 
@@ -157,6 +157,7 @@ Følgende warehouse management-funktioner understøttes ikke i øjeblikket i arb
 
 - Indgående behandling af indkøbsordrelinjer, der er tilknyttet en last.
 - Indgående behandling af indkøbsordrer for et projekt.
+- Administration af landingsomkostninger, der bruger rejser, og sporing af varer undervejs.
 - Indgående og udgående behandling af varer, der har aktive sporingsdimensioner **Ejer** og/eller **Serienummer**.
 - Behandling af lager, der har en blokeringsstatusværdi.
 - Ændring af lagerstatus under en hvilken som helst arbejdsbevægelsesproces.
@@ -187,6 +188,7 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 |--------------------------------------------------------------|-----|------------------------------|
 | Behandling af kildedokument                                   | Ja | Ingen |
 | Last- og transportstyringsbehandling                | Ja, men kun processerne til belastningsplanlægning. Behandlingen af transportstyring understøttes ikke  | Ingen |
+| Modtagelse af varer undervejs og landingsomkostninger                                         | Ja | Ingen |
 | Frigiv til lagersted                                         | Ja | Ingen |
 | Planlagt direkte levering                                        | Ingen  | Ingen |
 | Konsolidering af forsendelse                                       | Ja, når du bruger belastningsplanlægning | Ja |

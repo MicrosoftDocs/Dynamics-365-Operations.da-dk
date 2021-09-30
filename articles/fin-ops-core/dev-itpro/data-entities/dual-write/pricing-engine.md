@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
-ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
+ms.openlocfilehash: 4467d313aa2518b23434ec05989eb3e87cd35dfa
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7481309"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485728"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synkronisere med Supply Chain Management-prissætningsprogrammet efter behov
 
@@ -60,6 +60,7 @@ Når kolonnerne i Sales er udfyldt, gælder følgende begrænsninger:
 + Opsætningen af gebyrer og gebyrtildelinger i Supply Chain Management replikeres ikke i Sales.
 + Prissætningen tager ikke hensyn til den særlige detailpris, der er angivet i kolonnen **Detailkanal** på siden med salgsordrelinjer i Supply Chain Management.
 + Rabatter, der er defineret i sektionen **Administration af handelstilladelse** i Supply Chain Management, tages ikke i betragtning.
++ Prisfastsættelse tager ikke højde for salgsaftaler.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d2e1e4596a6052ea80d6e578dccf2564269d97444cd5b302acb5968cca2c884f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d8e2a42d8e12a5a9cf18e876b6f9e45ecb877881
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782581"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500017"
 ---
 # <a name="update-tracking-for-put-away"></a>Opdateringssporing for læg på lager
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Den periodiske opgave *Opdateringssporing for læg på lager* er beregnet til at blive kørt som et tilbagevendende batchjob om natten. Den identificerer, hvilke fragter der har modtaget alle lagertransaktioner, og hvilke fragter der ikke har en værdi for den faktiske slutdato. Derefter angives den faktiske slutdato til dags dato efter behov.
 

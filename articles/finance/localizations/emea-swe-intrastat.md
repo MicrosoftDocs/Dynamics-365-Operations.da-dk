@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417076"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486940"
 ---
 # <a name="swedish-intrastat"></a>Svensk Intrastat
 
@@ -48,7 +48,7 @@ Du kan finde flere oplysninger under [Downloade ER-konfigurationer fra det globa
 3. Vælg **Intrastat-rapport** i feltet **Rapportformattilknytning**.
 4. Vælg **Intrastat** i feltet **Kategorihierarki** i oversigtspanelet **Varekodehierarki**.
 5. I feltet **Transaktionskode** skal du vælge transaktionskoden for egenskabsoverførsler. Denne kode bruges til transaktioner, der opretter faktiske eller planlagte overførsler af egenskab mod kompensation (økonomisk eller på anden vis). Du kan også bruge den til rettelser. Virksomheder i Sverige bruger etcifrede transaktionskoder.
-6. I feltet **Kreditnota** skal du vælge transaktionskoden for returnering af varer. Denne kode bruges til returnering af varer efter den oprindeligt registrerede transaktion under transaktionskoden. Virksomheder i Sverige bruger etcifrede transaktionskoder.
+6. I feltet **Kreditnota** skal du vælge transaktionskoden for returnering af varer.
 7. Under fanen **Lande-/områdeegenskaber** indeholder feltet **Land/område** alle de lande eller områder, som dit firma handler med. For hvert land/område, der indgår i EU, skal du vælge **EU** i feltet **Lande-/områdetype**, så landet/området vises i Intrastat-rapporten.
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>Angive produktparametre for Intrastat-opgørelsen

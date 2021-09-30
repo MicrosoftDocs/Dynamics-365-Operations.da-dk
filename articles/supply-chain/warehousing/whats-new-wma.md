@@ -1,27 +1,39 @@
 ---
 title: Nyheder eller ændringer i Warehouse Management-mobilappen
 description: Dette emne viser de nye og ændrede funktioner for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
-author: ivanv-microsoft
-ms.date: 07/30/2021
+author: MarkusFogelberg
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: ivanv
+ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
-ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
+ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386093"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485616"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20100"></a>Version 2.0.10.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+
+- Tilføjet animation, når du stryger gennem lister og sider.
+- Teksten ombrydes nu korrekt på forbindelsens fejlside.
+- Kombinationsfelter uden standardværdier vises nu korrekt.
+- Oplysninger i underhovedet vises nu kun på siden med fulde detaljer.
+- Tomme inputfelter vises ikke længere på detaljekortet.
+- Bekræftelsesværdier dubleres ikke længere på detaljekortet.
+- Har løst forskellige problemer, der forårsagede, at systemet ikke længere svarede.
 
 ## <a name="version-2090"></a>Version 2.0.9.0
 

@@ -2,7 +2,7 @@
 title: Videoer
 description: Denne side viser Microsoft-oprettede "Sådan gør du"-videoer og tekniske videoer vedrørende Finance and Operations-apps, som er tilgængelige på YouTube og andre websteder.
 author: sericks007
-ms.date: 04/12/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 1fa07f8a021bb5b4138b833ce8a7ff68c6f06d2f9eae560f776b220195213658
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777332"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487985"
 ---
 # <a name="videos"></a>Videoer 
 
@@ -34,7 +34,6 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 ### <a name="data-integration"></a>Dataintegration
 
-- [Kundeemne til kontant-integration](https://youtu.be/AVV9x5x-XCg)
 - [Synkronisere en arbejdsordre mellem Dynamics 365 for Field Service og Finance and Operations-apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Datastyring

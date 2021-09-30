@@ -2,7 +2,7 @@
 title: Klar til at betale
 description: I dette emne vises det, hvordan du markerer en medarbejder som klar til betaling i Dynamics 365 Human Resources.
 author: marcelbf
-ms.date: 07/13/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70b3f31db459fe021caf08fe09b2e44a597294d1992ee16a69efd8745941a4bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732411"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483776"
 ---
 # <a name="ready-to-pay"></a>Klar til at betale
 
@@ -39,7 +39,7 @@ Indsamling og validering af medarbejderoplysninger kan være tidskrævende og fe
 
 Sådan markeres en medarbejder som klar til betaling:
 
-1. Åbn **Kompensationsstyring**. Der er to felter i arbejdsområdet 
+1. Åbn **Kompensationsstyring**. Der er to felter i arbejdsområdet: 
     - **Medarbejdere, der er klar til at betale**
     - **Medarbejdere, der ikke er klar til betaling**
     ![Arbejdsområdet for kompensationsstyring.](./media/hr-ready-to-pay-1-workspace.png)
@@ -53,22 +53,20 @@ Sådan markeres en medarbejder som klar til betaling:
 
 ## <a name="validation"></a>Validering
 
-Før en medarbejder markeres som klar til betaling, foretages der en grundlæggende validering af, om profilen er komplet.
+Før en medarbejder markeres som klar til betaling, foretages der en validering af, om medarbejderprofilen er komplet.
 
 ![Valider resultaterne.](./media/hr-ready-to-pay-3-results.png)
 
-Følgende tabel indeholder flere oplysninger om de enkelte valideringer, der er udført. 
-
 | Validering | Detaljer |
 | --- | --- |
-| Parameter for adresseformål | Validerer, om parameteren **Brug formål med lønadresser** er aktiveret. |
-| Lønadresse | Validerer, om arbejderprofilen har mindst én adresse med formålet "Bopælsplacering for løn" eller "Arbejdsplacering for løn", og der kun er én adresse pr. formål. |
-| Ansættelse | Kontrollér, om arbejderen har mindst én ansættelse (nuværende, tidligere eller fremtidig). |
-| Identifikationsnummer | Validerer, om parameteren "Brug identifikationstyper i lønbehandling" er angivet til Ja, og hvis den identifikationstype, der er angivet i parameteren, er angivet i arbejderprofilen. |
-| For- og efternavn | Kontrollerer, om arbejderprofilen er gyldig, og kontrollerer, om felterne **Navn** og **Efternavn** er udfyldt.|
-| Position | Kontrollér, om arbejderen har en tildelt stilling. |
-| Fødselsdato | Kontrollerer, om arbejderprofilen er gyldig, og om feltet **Fødselsdag** er udfyldt. |
-| Kompensation | Kontrollér, om arbejderen er tilmeldt en fast kompensationsplan. |
+| **Parameter for adresseformål** | Bekræfter, at parameteren **Brug formål med lønadresser** er valgt. |
+| **Lønadresse** | Bekræfter, at arbejderprofilen har mindst én adresse med formålet **Bopælsplacering for løn** eller **Arbejdsplacering for løn**, og der kun er én adresse pr. formål. |
+| **Ansættelse** | Bekræfter, at arbejderen har mindst én ansættelse (nuværende, tidligere eller fremtidig). |
+| **Identifikationsnummer** | Bekræfter, at feltet **Brug identifikationstyper i lønbehandling** er angivet til **Ja** på siden **Human Resources-parametre**, og om den identifikationstype, der er angivet i parameteren, er udfyldt i arbejderprofilen. |
+| **For- og efternavn** | Bekræfter, at felterne **Navn** og **Efternavn** er udfyldt.|
+| **Stilling** | Bekræfter, at en stilling er tildelt arbejderen. |
+| **Fødselsdato** | Bekræfter, at feltet **Fødselsdag** er udfyldt. |
+| **Kompensation** | Bekræfter, at arbejderen er tilmeldt en fast kompensationsplan. |
 
 Hvis en af disse valideringer mislykkes, kan du ikke markere medarbejderen som klar til betaling.
 
@@ -77,7 +75,7 @@ Hvis feltet **Klar til betaling** er angivet til **Nej**, betyder det, at du ska
 ## <a name="known-issues"></a>Kendte problemer
 
 - Du skal deaktivere funktionen **Strømlinet medarbejderangivelse** i funktionsstyring. Felterne i arbejdsområdet for kompensationsstyring fungerer ikke korrekt, hvis du bruger denne funktion.
-- I arbejderformularen er fanen **Løn**, **Klar til betaling** tilgængelig for alle brugerroller. 
+- Under fanen **Løn** på siden **Arbejder** er gruppen **Klar til betaling** tilgængelig for alle brugerroller. 
 
 ## <a name="see-also"></a>Se også
 

@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
+title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
-ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
+ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7391202"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500549"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management-prøveversionen af version 10.0.21. Denne version har et build-nummer på 10.0.960 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.21. Denne version har et build-nummer på 10.0.960 og er tilgængelig som følger:
 
 - **Forhåndsversion:** august 2021
 - **Generel tilgængelighed af version (selv-opdatering):** september 2021
@@ -46,13 +45,14 @@ Installationen vil fungere uanset advarslen. Følgende kendte fejl kan dog forek
 
 Følgende tabel anfører de funktioner, der er inkluderet i denne version. Kolonnen *Funktion* indeholder links til [frigivelsesplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), hvor du kan se de officielle frigivelsesdatoer for hver funktion. Kolonnen *Flere oplysninger* indeholder flere oplysninger og/eller links til relateret dokumentation.
 
-De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem. Nogle af de viste funktioner findes stadig i prøveversionen, mens andre muligvis allerede er generelt tilgængelige.
+De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
 | Funktionsområde | Funktion | Flere oplysninger |
 |---|---|---|
-| Lager&nbsp;og&nbsp;logistik | [Globalt lagerregnskab-tilføjelsesprogram til Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Startside for globalt lagerregnskab](../global-inventory-accounting/global-inventory-accounting-home.md) |
+| Lager&nbsp;og&nbsp;logistik | [Globalt lagerregnskab-tilføjelsesprogram til Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Startside for globalt lagerregnskab](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Lager&nbsp;og&nbsp;logistik | [Bogføre reguleringer af lagerbeholdning ved hjælp af koder, der er tilknyttet modkonti](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Lageroptællingsårsagskoder](../warehousing/reason-codes-for-counting-journals.md) |
 | Lager&nbsp;og&nbsp;logistik | [Eksportpolitik for refererede salgstilbud](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Vælg, om ændringer af data, der refereres til i tilbud, vil medføre, at disse tilbud (eller linjer) medtages i næste trinvise eksport. Den trinvise eksport køres hurtigere, hvis du ikke medtager tilbud eller linjer.<br><br>Denne funktion tilføjer en indstilling kaldet **Spring salgstilbudsreferencedata over under ændringssporing** til siden **Debitorparametre**. |
+| Lager&nbsp;og&nbsp;logistik | Forseglet tilbudsafgivelse <!-- KFM: Add RP link when available --> | [Forseglet bud på tilbudsanmodninger](../procurement/sealed-bidding.md) |
 | Lager&nbsp;og&nbsp;logistik | [Scanne stregkoder på lagerstedet ved hjælp af GS1-formatstandarder](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-stregkoder og QR-koder](../warehousing/gs1-barcodes.md) |
 | Lager&nbsp;og&nbsp;logistik | [Foreløbig reservation af tilføjelsesprogrammet Lagersynlighed](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Reservationer i Lagersynlighed](../inventory/inventory-visibility-reservations.md) |
 | Lager&nbsp;og&nbsp;logistik | [Fradrag og fastvægtforbedringer for Rabatstyring](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Administrere fradrag i fradragspanelet](../rebate-management/deduction-workbench.md )<br><br>[Behandle, gennemse og bogføre rabatter](../rebate-management/process-review-post.md)<br><br>[Rabatstyringshandler](../rebate-management/rebate-management-deals.md) |

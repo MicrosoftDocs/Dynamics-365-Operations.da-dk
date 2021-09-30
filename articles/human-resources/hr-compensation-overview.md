@@ -1,8 +1,8 @@
 ---
 title: Kompensationsplaner
-description: Ledere for kompensation og frynsegoder kan bruge kompensationsstyring til at vedligeholde og behandle faste og variable lønstrukturer for organisationens medarbejdere.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Dette emne beskriver, hvordan kompensationsstyring bruges til at administrere og behandle kompensationsplaner.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dafba542ec1421a6ef3437d9c2f22e0c363e557d7f5b6410af36fc7cb8d4be7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64169ebc5bbd2f0a9b4be3d4ec076c8814e6eb97
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732435"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483799"
 ---
 # <a name="compensation-plans"></a>Kompensationsplaner
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ledere for kompensation og frynsegoder kan bruge kompensationsstyring til at vedligeholde og behandle faste og variable lønstrukturer for organisationens medarbejdere.
+Ledere for kompensation og frynsegoder kan bruge **Kompensationsstyring** til at vedligeholde og behandle faste og variable kompensationsplaner for organisationens medarbejdere.
 
 ### <a name="introduction"></a>Introduktion
 
@@ -43,7 +43,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 <thead>
 <tr class="header">
 <th>Komponent</th>
-<th>Flere oplysninger...</th>
+<th>Flere oplysninger</th>
 </tr>
 </thead>
 <tbody>
@@ -89,7 +89,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 </tr>
 <tr class="even">
 <td>Referencepunkt</td>
-<td>Referencepunktet definerer, hvad du mener er den ideelle lønsats for alle medarbejdere på et kompensationsniveau. For planstrukturer for trin er referencepunkterne typisk rammens midtpunkt. Tværgående strukturer bruger sjældent kontrolpunkter. Du kan angive kontrolpunktet til en fast lønstruktur i formularen Faste lønstrukturer.</td>
+<td>Referencepunktet definerer, hvad du mener er den ideelle lønsats for alle medarbejdere på et kompensationsniveau. For planstrukturer for trin er referencepunkterne typisk rammens midtpunkt. Tværgående strukturer bruger sjældent kontrolpunkter. Du kan angive kontrolpunktet til en fast lønstruktur på siden **Fast løn-strukturer**.</td>
 </tr>
 <tr class="odd">
 <td>Jobfunktioner</td>

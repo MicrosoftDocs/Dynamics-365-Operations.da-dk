@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af Finance and Operations-apps.
 author: sericks007
-ms.date: 08/27/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463611"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500103"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -38,7 +38,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Vi udfaser nogle SQL-rapporter i LCS. Du behøver ikke længere at overvåge rapporterne, da denne funktion er blevet erstattet af andre tjenester. |
+| **Årsagen til forældelsen/fjernelsen** |   Alle aktiviteter og overvågning udføres internt af platformen via automatisering. Dette kræver ingen manuel handling.|
 | **Erstattet af en anden funktion?**   | Ingen |
 | **Produktområder, der er berørt**         | SQL-rapporter: Aktuelle DTU, Aktuelle DTU-detaljer, Hent lås-oplysninger, Oversigt over vejledning i aktuel plan, Hent liste over forespørgsels-id'er, Hent SQL-forespørgselsplan for bestemt plan-id, Hent forespørgselsplaner og udførelsesstatus, Hent begrænsningskonfiguration, Hent ventestatistik, Vis mest dyre forespørgsler |
 | **Installationsindstilling**              | Skyinstallation: Påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
@@ -181,7 +181,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Det [nye gitterkontrolelement](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Produktområder, der er berørt**         | Webklient |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | I version 10.0.13 er det nye gitterkontrolelement generelt tilgængeligt, og kunderne kan vælge at aktivere denne funktion. Den nye gitterkontrol bliver obligatorisk i oktober 2021-frigivelsen. Når det nye gitterkontrolelement bliver obligatorisk, vil **forceLegacyGrid()**-API ikke længere fungere. |
+| **Status**                         | I version 10.0.13 er det nye gitterkontrolelement generelt tilgængeligt, og kunderne kan vælge at aktivere denne funktion. Det nye gitter vil være i brug som standard med frigivelsen i oktober 2021 og er forventes aktuelt at være obligatorisk i april 2022. Når det nye gitterkontrolelement bliver obligatorisk, vil **forceLegacyGrid()**-API ikke længere fungere. |
 
 ### <a name="personalization-without-saved-views"></a>Personlig tilpasning uden gemte visninger 
 

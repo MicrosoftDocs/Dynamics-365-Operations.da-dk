@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2fd3d2e4f4c3e53913bd811728b0950c63b38bc5afe6fe5282b4cfb05f414619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744172"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488196"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktivér administration af ændringer på eksisterende produkter
 
@@ -47,7 +47,9 @@ Hvis du har et specifikt produkt, kan du derfor kun ændre det til et teknisk pr
 
 Der skal tildeles en *kategori af teknisk produkt* til alle tekniske produkter. Du skal udføre denne tildeling, når du kører guiden **Konvertér til teknisk produkt**. Der skal findes tekniske produktkategorier for alle relevante standardprodukter, *før* du kan konvertere disse produkter.
 
-Den tekniske produktkategori udgør grundlaget for oprettelsen af et teknisk produkt, og den fastlægger et sæt standardværdier og -politikker. Den tekniske produktkategori skal matche det produkt, som du tildeler den. Produkttypen og dimensionsgruppen skal f.eks. svare til både produktet og dets tekniske produktkategori. Du kan finde flere oplysninger under [Tekniske versioner og tekniske produktkategorier](engineering-versions-product-category.md).
+Den tekniske produktkategori udgør grundlaget for oprettelsen af et teknisk produkt, og den fastlægger et sæt standardværdier og -politikker. Tekniske attributter og deres standardværdier (som defineret for den tekniske kategori) anvendes også på det resulterende tekniske produkt. Du kan redigere attributværdierne og/eller føje flere tekniske attributter til det resulterende produkt efter behov.
+
+Den tekniske produktkategori skal matche det produkt, som du tildeler den. Produkttypen og dimensionsgruppen skal f.eks. svare til både produktet og dets tekniske produktkategori. Du kan finde flere oplysninger under [Tekniske versioner og tekniske produktkategorier](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Guiden **Konvertér til teknisk produkt** kan kun konvertere produktet til tekniske produkter, hvor versionen ikke spores i transaktioner. Derfor skal indstillingen **Spor version i transaktioner** indstilles til *Nej* for tekniske produktkategorier, som du opretter for at konvertere eksisterende produkter.
