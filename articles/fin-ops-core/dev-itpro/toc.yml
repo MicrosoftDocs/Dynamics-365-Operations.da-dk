@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Platformsopdateringer til version 10.0.20 (august 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Platformsopdateringer til 10.0.19 (juni 2021)
-                  href: get-started/whats-new-platform-updates-10-0-19.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -1080,6 +1078,8 @@
                   items:
                     - name: Tilpasse enheds- og felttilknytninger
                       href: data-entities/dual-write/customizing-mappings.md
+                    - name: Vejledning i tilpasning af dobbeltskrivning
+                      href: data-entities/dual-write/custom-best-practices.md
                     - name: Håndtere flere enhedstilknytninger
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: Redigere en juridisk enhed efter konfiguration af dobbeltskrivning

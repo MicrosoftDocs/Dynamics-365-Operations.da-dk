@@ -1398,12 +1398,16 @@
               items:
                 - name: Commerce-lokalisering for Rusland
                   href: localizations/rus-commerce-localization.md
-                - name: Forenklet adresseformat for debitorer i Commerce POS for Rusland
-                  href: localizations/rus-simplified-address.md
                 - name: Konfigurere Commerce-lokalisering for Rusland
                   href: localizations/rus-commerce-setup.md
                 - name: Forudbetalinger i Commerce for Rusland
                   href: localizations/rus-commerce-prepayments.md
+                - name: Forenklet adresseformat for debitorer i Commerce POS for Rusland
+                  href: localizations/rus-simplified-address.md
+                - name: Eksempel på integration af bonprinter i Rusland
+                  href: localizations/rus-fpi-sample.md
+                - name: Administration af kundeoplysninger i Rusland
+                  href: localizations/rus-customer-information.md
             - name: Sverige
               items:
                 - name: Kasseapparatfunktionalitet
@@ -2220,6 +2224,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere det globale adressekartotek
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Adresseopsætning
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Ofte stillede spørgsmål om adressekartoteker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere adressekartoteker
@@ -2329,7 +2335,11 @@
         - name: Udvidelsesmuligheder
           items:
             - name: Commerce-udvikling og -udvidelse
-              href: dev-itpro/dev-retail-home-page.md
+              items:
+                - name: Commerce til it-medarbejdere og -udviklere
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: Konfigurere et lokalt udviklingsmiljø
+                  href: dev-itpro/setup-local-dev-env.md
             - name: Udvidelsesmuligheder for onlinekanal
               items:
                 - name: Oversigt over udvidelsesmuligheder for onlinekanal

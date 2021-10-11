@@ -284,6 +284,8 @@
               href: accounts-payable/broker-contract.md
             - name: Royaltykontraktstyring
               href: accounts-payable/royalty-contract.md
+            - name: Reference til oprindelige fakturaer i kreditnotaer (kreditorfakturaer)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: Betalinger og udligninger
               items:
                 - name: Centraliserede kreditorbetalinger
@@ -1230,7 +1232,7 @@
               href: general-ledger/financial-reporting-faq.md
         - name: Finance Insights
           items:
-            - name: Startside for Finance insights
+            - name: Startside for Finance Insights
               href: finance-insights/finance-insights-home-page.md
             - name: Opsætning og administration
               items:
@@ -1256,7 +1258,7 @@
                       href: finance-insights/improve-model.md
                     - name: Livscyklus af modeladministration
                       href: finance-insights/model-manage-lifecycle.md
-            - name: Bruge Finance insights
+            - name: Bruge Finance Insights
               items:
                 - name: Budgetforslag
                   href: finance-insights/budget-proposals.md
@@ -1272,6 +1274,8 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Oversigt over øjebliksbilleder
                   href: finance-insights/payment-snapshots.md
+            - name: 'Fejlfinding af Finance Insights, Ofte stillede spørgsmål'
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: Projektstyring og regnskab
           items:
             - name: Oversigt over projektstyring og regnskab
@@ -1574,6 +1578,10 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Rapportering for flere momsregistreringer
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Rapportering i Østrig
+                          items:
+                            - name: Momsopgørelse
+                              href: localizations/emea-aut-vat-declaration-austria.md
                         - name: Økonomisk rapportering
                           items:
                             - name: Momsopgørelse
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: 'Tjenesterapport, der involverer udlandet'
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: Intrastat-rapport
+                - name: Østrigsk Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Indkøbsafgifter
                   href: localizations/emea-aut-purchase-duties.md
+                - name: Momsopgørelse
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: Bahrain
               items:
                 - name: Oversigt for Bahrain
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Kvartalsvis momsrapport
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: Sortlistningsrapport
-                  href: localizations/emea-ita-black-list-report.md
                 - name: Kompetencedato og regnskabskladde
                   href: localizations/emea-ita-competence-date.md
                 - name: Afskrivning af anlægsaktiver
@@ -3590,7 +3598,7 @@
                   href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
                 - name: Proces for frynsegodeberettigelse
                   href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
-                - name: Definere regler og politikker for frynsegodeberettigelse
+                - name: Definere regler og politikker for berettigelse til frynsegoder
                   href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
                 - name: Levere et frynsegodeprogram for medarbejdere
                   href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
@@ -3801,6 +3809,8 @@
           items:
             - name: Oversigt over elektronisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Elektroniske rapporteringskomponenter
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurationer
               items:
                 - name: Oprette konfigurationer
@@ -4509,6 +4519,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere det globale adressekartotek
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                - name: Adresseopsætning
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
                 - name: Ofte stillede spørgsmål om adressekartoteker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere adressekartoteker

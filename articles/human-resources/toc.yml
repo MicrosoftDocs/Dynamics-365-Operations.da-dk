@@ -5,6 +5,8 @@
       items:
         - name: Nyheder eller ændringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 20. september 2021
+          href: hr-whats-new-2021-09-20.md
         - name: 6. september 2021
           href: hr-whats-new-2021-09-06.md
         - name: 23. august 2021
@@ -291,6 +293,8 @@
               href: hr-admin-troubleshooting-batch-history.md
             - name: Nulstille fastsiddende batchjob
               href: hr-admin-troubleshooting-batch-execution.md
+            - name: Nulstille Dataverse-synkronisering
+              href: hr-admin-troubleshooting-dataverse-sync.md
             - name: Analytiske rapporter opdateres ikke
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Kan ikke oprette et miljø i Power Apps Administration
@@ -485,6 +489,12 @@
               items:
                 - name: Lønplan med frynsegoder for medarbejder
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: Andre enheder
+              items:
+                - name: Historik for personnavn
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: Konverteringsfrekvens
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
             - name: Grupperede indstillinger
               items:
                 - name: Køn
@@ -543,6 +553,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere det globale adressekartotek
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Adresseopsætning
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
                 - name: Ofte stillede spørgsmål om adressekartoteker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere adressekartoteker
@@ -781,13 +793,15 @@
                       href: hr-benefits-process-rate-changes.md
                 - name: ACA-rapportering
                   href: hr-benefits-management-aca-reports.md
+                - name: Frynsegodeopgørelse
+                  href: hr-benefits-statement.md
             - name: Definere og administrere et frynsegodeprogram
               href: hr-benefits-manage-program.md
             - name: Politikker for berettigelse til frynsegoder
               href: hr-benefits-eligibility-policies.md
             - name: Proces for frynsegodeberettigelse
               href: hr-benefits-eligibility-process.md
-            - name: Definere regler og politikker for frynsegodeberettigelse
+            - name: Definere regler og politikker for berettigelse til frynsegoder
               href: hr-benefits-define-eligibility-rules.md
             - name: Levere et frynsegodeprogram for medarbejdere
               href: hr-benefits-deliver-employee-benefits-program.md

@@ -1651,6 +1651,8 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 'Parametre, der ikke bruges af planlægningsoptimering'
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Forsyningsplan
+                  href: master-planning/supply-schedule.md
                 - name: Anvende filtre på en plan
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Varedisponering med behovsprognose
@@ -1759,8 +1761,6 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Vise udgående planlagt intern efterspørgsel
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Samarbejde med intern forsyningskædes kunder
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: Oplysninger om nettobehov og udligning med indbygger varedisponering
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Budgettering
@@ -2037,8 +2037,12 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Arbejdsområde for mobilenheder til godkendelse af indkøbsordrer
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Oprette og fakturere en intern indkøbsordre til internt brug
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Kontroller uoverensstemmelser i pris i interne ordrer
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Registrere modtagelsen af varer for indkøbsordren
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
             - name: Oprettelse af indkøbsordre
               items:
                 - name: Oprette indkøbsordrer manuelt
@@ -2729,7 +2733,63 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Oprette og redigere salgstilbud
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-            - name: Returneringer
+            - name: Intern handel
+              items:
+                - name: Konfigurere intern handel
+                  items:
+                    - name: Konfigurere intern handel
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Interne parametre
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Oprette kreditorer, debitorer og varer for intern handel'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Oprette gebyrer på interne ordrer
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Definere parametre for bogføring af en intern ordre
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Synkronisere interne oplysninger
+                  items:
+                    - name: Synkronisere interne priser og rabatter
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Synkronisere interne gebyrer
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Synkronisere interne debitoroplysninger
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Synkronisere interne dispositionskoder
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Interne salgsordrer og fakturaer
+                  items:
+                    - name: Oprette interne indkøbs- og salgsordrer i flere virksomheder
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Interne ordrer og returordrer
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Oprette en intern salgsordre til internt brug
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Oprette og fakturere en intern salgsordre til en ekstern kunde
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Interne reservationer
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Ændre eller slette en oprindelig intern salgsordre
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Ændre interne ordrer
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Interne batch- og serienumre
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Interne følgesedler
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: Registrere betalinger for interne salgsordrefakturaer automatisk
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Interne indkøbsordrer
+                  items:
+                    - name: Oprette og fakturere en intern indkøbsordre til internt brug
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Kontroller uoverensstemmelser i pris i interne ordrer
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Interne valutaomregninger
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Intern behovsplanlægning
+                  href: sales-marketing/intercompany-master-scheduling.md
+            - name: Returvarer
               items:
                 - name: Salgsreturneringer
                   href: warehousing/sales-returns.md
@@ -3067,6 +3127,8 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Opsætte og konfigurere modulet landingsomkostninger
               items:
+                - name: Slå modulet Landingsomkostninger til i systemet
+                  href: landed-cost/landed-cost-enable.md
                 - name: Parametre for landingsomkostninger
                   href: landed-cost/landed-cost-parameters.md
                 - name: Indkøbs- og forsyningsparametre for landingsomkostninger
@@ -3183,8 +3245,10 @@
                       href: warehousing/pick-line-grouping.md
                     - name: Lagerstedsallokering
                       href: warehousing/warehouse-slotting.md
-                    - name: Aldersfordeling i lokalitetsvejledning til lagerpluk
+                    - name: Lokalitetsvejledning til aldersfordelt lagerpluk
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Forankring
+                      href: warehousing/anchoring.md
                     - name: Udgående sortering
                       href: warehousing/outbound-sorting.md
                     - name: Sæt til væg – læg i butik
@@ -3341,6 +3405,8 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: Plukke den ældste batch på en mobilenhed
                       href: warehousing/pick-oldest-batch.md
+                - name: Globale parametre for mobilenhed
+                  href: warehousing/mobile-device-parameters.md
                 - name: Indstillinger for mobilenhedsbruger
                   href: warehousing/mobile-device-user-settings.md
                 - name: Hændelsesbehandling af lagerstedsapp
