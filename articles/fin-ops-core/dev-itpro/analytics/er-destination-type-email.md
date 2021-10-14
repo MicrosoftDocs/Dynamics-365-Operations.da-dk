@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343854"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595197"
 ---
 # <a name="email-er-destination-type"></a>ER-destinationstype for email
 
@@ -75,7 +75,7 @@ Du kan angive emailens afsender og modtagere. Som standard sendes email på vegn
 >
 > Når en emaildestination vises til redigering ved [kørsel](electronic-reporting-destinations.md#security-considerations), er feltet **Fra** kun synligt for brugere, der har `ERFormatDestinationSenderEmailMaintain`-sikkerhedsrettigheden **Vedligehold afsendermailadressen til ER-formatdestinationer**.
 >
-> Når feltet **Fra** er konfigureret til at bruge en anden emailadresse end den aktuelle brugers, skal enten tilladelsen **Send som** eller **Send på vegne af** være [angivet](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) korrekt i forvejen. Ellers gælder følgende undtagelse ved kørsel: "Ikke i stand til at sende email som \<from email account\> fra kontoen \<current user account\>. Kontrollér tilladelserne 'Send som' på \<from email account\>."
+> Når feltet **Fra** er konfigureret til at bruge en anden emailadresse end den aktuelle brugers, skal enten tilladelsen **Send som** eller **Send på vegne af** være [angivet](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) korrekt i forvejen. Ellers gælder følgende undtagelse ved kørsel: "Ikke i stand til at sende email som \<from email account\> fra kontoen \<current user account\>. Kontrollér tilladelserne 'Send som' på \<from email account\>."
 
 Du kan konfigurere feltet **Fra** til at returnere mere end én emailadresse. I dette tilfælde bruges den første adresse på listen som emailafsenderadresse.
 

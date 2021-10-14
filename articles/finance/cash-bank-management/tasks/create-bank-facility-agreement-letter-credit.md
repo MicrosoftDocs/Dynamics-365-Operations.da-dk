@@ -1,7 +1,7 @@
 ---
 title: Oprette en bankfacilitetsaftale for en remburs
-description: Denne opgave fører dig gennem oprettelse af en bankfacilitetsaftale til behandling af en remburs.
-author: ShylaThompson
+description: Denne opgave fører dig gennem trinnene til oprettelse af en bankfacilitetsaftale til behandling af en remburs.
+author: panolte
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f978c02e269ca67f50af1d1588d765a9a986f66d7d76164d36f6aaece0e4b018
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 607d9688aebb6288735cc04f6b4d8e7b8f7362b9
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754899"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595007"
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Oprette en bankfacilitetsaftale for en remburs
 
 [!include [banner](../../includes/banner.md)]
 
-Denne opgave fører dig gennem oprettelse af en bankfacilitetsaftale til behandling af en remburs. Du vil konfigurere bankfaciliteter og posteringsprofiler før denne opgave.  Denne opgave bruger demofirmaet "USMF".  
+Denne opgave fører dig gennem trinnene til oprettelse af en bankfacilitetsaftale til behandling af en remburs. Du vil konfigurere bankfaciliteter og posteringsprofiler før denne opgave.  Denne opgave bruger demofirmaet "USMF".  
 
 
 ## <a name="create-bank-facility-agreement"></a>Oprette bankfacilitetsaftale

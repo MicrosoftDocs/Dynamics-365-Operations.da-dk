@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af Finance and Operations-apps.
 author: sericks007
-ms.date: 09/17/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500103"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595139"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -32,14 +32,26 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
 
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.21 af Finance and Operations-apps
+
+### <a name="skype-for-business-online-support"></a>Skype for Business Online-understøttelse
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Skype for Business Online er udgået. Du kan finde flere oplysninger under [Skype for Business Online-tjenesten, der er udgået](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601). |
+| **Erstattet af en anden funktion?**   | Ikke aktuelt, selvom vi måske overvejer at tilføje tilstedeværelse fra Teams i fremtiden.|
+| **Produktområder, der er berørt**         | Webklient |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet. Indstillingen, der er **Skype aktiveret** er deaktiveret fra og med frigivelse 10.0.21. Fjernelsen af denne indstilling er med henblik på at blive fjernet i april 2022. Funktionen vil dog ophøre med at fungere, når teamet med et team afspærring lukker tjenesten. |
+ 
 ## <a name="feature-deprecation-effective-august-2021"></a>Udfasning af funktioner, der træder i kraft i august 2021
 
 ### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-rapporter i Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** |   Alle aktiviteter og overvågning udføres internt af platformen via automatisering. Dette kræver ingen manuel handling.|
-| **Erstattet af en anden funktion?**   | Ingen |
+| **Årsagen til forældelsen/fjernelsen** | Alle aktiviteter og overvågning udføres internt af platformen via automatisering. Dette kræver ingen manuel handling.|
+| **Erstattet af en anden funktion?**   | Ja, der findes nu et automatisk system, som gør disse egenskaber forældede. |
 | **Produktområder, der er berørt**         | SQL-rapporter: Aktuelle DTU, Aktuelle DTU-detaljer, Hent lås-oplysninger, Oversigt over vejledning i aktuel plan, Hent liste over forespørgsels-id'er, Hent SQL-forespørgselsplan for bestemt plan-id, Hent forespørgselsplaner og udførelsesstatus, Hent begrænsningskonfiguration, Hent ventestatistik, Vis mest dyre forespørgsler |
 | **Installationsindstilling**              | Skyinstallation: Påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
 | **Status**                         | Udfaset: Planlagt dato for fjernelse i oktober 2021. |
@@ -48,8 +60,8 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Vi udfaser nogle SQL-handlinger i LCS.  |
-| **Erstattet af en anden funktion?**   | Ingen |
+| **Årsagen til forældelsen/fjernelsen** | Vi udfaser nogle SQL-handlinger i LCS. Alle aktiviteter og overvågning udføres internt af platformen via automatisering. Dette kræver ingen manuel handling. |
+| **Erstattet af en anden funktion?**   | Ja, der findes nu et automatisk system, som gør disse egenskaber forældede. |
 | **Produktområder, der er berørt**         | SQL-aktioner: Oprette en planvejledning for at gennemtvinge plan-id, oprette en planvejledning for at tilføje tabeltip, fjerne planvejledning, deaktivere/aktivere sidelåse og låse eskalering, opdatere statistik for en tabel, gendanne indeks, oprette indeks |
 | **Installationsindstilling**              | Skyinstallation: Påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
 | **Status**                         | Udfaset: Planlagt dato for fjernelse i oktober 2021. |
@@ -158,7 +170,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Generelt har brugerdefineret kode begrænsede fordele, men kræver væsentlige ressourcer og beregninger for at være understøttet. Brugerdefineret kode bruges primært af rapportforfattere til at kalde offentlige metoder fra en brugerdefineret kodeassembly. Den skybaserede tjeneste understøtter dog ikke referencer til brugerdefinerede assemblyer for SSRS-rapporter. |
-| **Erstattet af en anden funktion?**   | Rapportforfattere kan vælge at fortsætte med at referere til offentlige .NET-API'er til handlinger for Matematik, Konvertering og Format fra et tekstfeltudtryk. Du kan finde flere oplysninger under [Føje kode til en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Erstattet af en anden funktion?**   | Rapportforfattere kan vælge at fortsætte med at referere til offentlige .NET-API'er til handlinger for Matematik, Konvertering og Format fra et tekstfeltudtryk. Du kan finde flere oplysninger under [Føje kode til en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Produktområder, der er berørt**         | Undersæt af programrapportdesign, der er defineret i RDL, som indeholder brugerdefineret kode. |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Med version 10.0.13 begynder kompileren at udstede en advarsel for forekomster, hvor der registreres en brugerdefineret kode i en SSRS-rapportdefinition. Du kan løse problemet ved at åbne definitionen af rapportdesignet og fjerne alle brugerdefinerede kodeartefakter. Denne advarsel erstattes af en compilerfejl i en fremtidig opdatering.   |
