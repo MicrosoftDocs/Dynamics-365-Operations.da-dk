@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343806"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594851"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjælp-oplevelsen for Finance and Operations-apps
 
@@ -30,7 +30,7 @@ I dette emne kan du finde en oversigt over komponenterne i Hjælp-systemet til F
 
 ## <a name="help-architecture"></a>Hjælp-arkitektur
 
-Finance and Operations-apps omfatter konceptbaserede oversigter og andre emner, der er udgivet på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webstedet. Du kan derefter få adgang til dette indhold fra ruden **Hjælp** i produktet. I følgende illustration vises delene i Hjælp-systemet.
+Finance and Operations-apps omfatter konceptbaserede oversigter og andre emner, der er udgivet på [Microsoft Dynamics 365-dokumentation documentation](/dynamics365/)-webstedet. Du kan derefter få adgang til dette indhold fra ruden **Hjælp** i produktet. I følgende illustration vises delene i Hjælp-systemet.
 
 [![Hjælp-arkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -39,7 +39,7 @@ Hjælp-systemet i produktet henter artikler fra docs.microsoft.com og andre tilk
 ## <a name="adding-task-guides"></a>Tilføje opgaveguider
 
 > [!NOTE]
-> Fanen **Opgaveguider** er i øjeblikket ikke tilgængelig i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Opgaveguiderne i oplevelsen Introduktion i Personale forbliver imidlertid tilgængelige og dækker de grundlæggende funktioner. For både Human Resources og Commerce gælder det, at hjælp til procedurer er tilgængelig på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webstedet.
+> Fanen **Opgaveguider** er i øjeblikket ikke tilgængelig i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Opgaveguiderne i oplevelsen Introduktion i Personale forbliver imidlertid tilgængelige og dækker de grundlæggende funktioner. For både Human Resources og Commerce gælder det, at hjælp til procedurer er tilgængelig på [Microsoft Dynamics 365-dokumentation](/dynamics365/)-webstedet.
 
 På siden **Systemparametre** kan systemadministratorer konfigurere adgang til de relevante biblioteker for opgaveguider til implementering af en installation.
 

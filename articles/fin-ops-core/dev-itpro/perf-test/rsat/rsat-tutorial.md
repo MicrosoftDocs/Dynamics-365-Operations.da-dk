@@ -1,24 +1,21 @@
 ---
 title: Selvstudium til Regression Suite Automation Tool
 description: I dette emne vises, hvordan du kan bruge værktøjet RSAT (Regression Suite Automation Tool). Det beskriver forskellige funktioner og indeholder eksempler, der bruger avanceret scripting.
-author: robinarh
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 21761
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d70b2e7cf497fbf165a452f7977a14a98b9e1956e5a964d42c7bf8a6c3abe0bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f1d818944ed2779cdad15d84673369e31243285f
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714543"
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556759"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Selvstudium til Regression Suite Automation Tool
 
@@ -82,17 +79,23 @@ Når testsagen er kørt, sammenlignes meddelelsen i Excel-parameterfilen med den
 
 Denne funktion bruger skærmbilleder af de trin, der blev udført under opgaveregistreringen. Det er nyttigt i forbindelse med overvågning eller fejlfinding.
 
-- Hvis du vil bruge denne funktion, skal du åbne filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installationsmappen (f.eks. **C:\\Program Files (x86)\\Regression Suite Automation Tool**) og ændre værdien af det følgende element fra **falsk** til **sand**.
+- Hvis du vil bruge denne funktion, mens RSAT kører med brugergrænsefladen, skal du åbne filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installationsmappen (f.eks. **C:\\Program Files (x86)\\Regression Suite Automation Tool**), og ændre værdien for det følgende element fra **falsk** til **sand**.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Når du kører test casen, vil RSAT generere snapshots (billeder) af trinnene i afspilningsmappen i test cases i arbejdsbiblioteket. Hvis du bruger en ældre version af RSAT, gemmes billederne i **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, og der oprettes en separat mappe for hver testsag, der køres.
+- Hvis du vil bruge denne funktion, mens RSAT kører med CLI (f.eks. Azure DevOps), skal du åbne filen **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config** under RSAT-installationsmappen (f.eks. **C:\\Programfiler (x86)\\Regression Suite Automation Tool**), og ændre værdien for det følgende element fra **falsk** til **sand**.
+
+    ```xml
+    <add key="VerboseSnapshotsEnabled" value="false" />
+    ```
+
+Når du kører test-cases, genererer RSAT snapshots (billeder) af trinnene og gemmer dem i afspilningsmappen i test cases i arbejdsbiblioteket. I mappen ved navn **StepSnapshots** oprettes en separat undermappe. Denne mappe indeholder øjebliksbilleder for de testsager, der køres.
 
 ## <a name="assignment"></a>Tilknytning
 
-### <a name="scenario"></a>Scenario
+### <a name="scenario"></a>Scenarie
 
 1. Produktdesigneren opretter et nyt, frigivet produkt.
 2. Produktionschefen starter en produktionsordre for at bringe lagerniveauet op til to styk.
@@ -521,7 +524,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 I følgende eksempel bruges et OData-kald (Open data Protocol) til at finde ordrestatussen for en indkøbsordre. Hvis status ikke er **faktureret**, kan du f.eks. kalde en RSAT-testsag, der bogfører fakturaen.
 
-```xpp
+```powershell
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

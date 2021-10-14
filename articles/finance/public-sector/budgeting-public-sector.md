@@ -1,7 +1,7 @@
 ---
 title: Oversigt over budgettering i den offentlige sektor
 description: Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor. Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner.
-author: ShylaThompson
+author: panolte
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91401f98409c00198a3fb520f1d40addc1fedefdc09a3f5de18c38c76d2c8a8c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db94980896f8137f2f6d21e8aafb27a886b230d7
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766915"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595449"
 ---
 # <a name="budgeting-in-the-public-sector-overview"></a>Oversigt over budgettering i den offentlige sektor
 

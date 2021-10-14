@@ -1,23 +1,23 @@
 ---
 title: Automatisk fordeling af gebyrer
 description: Funktionen Gebyr i Microsoft Dynamics 365 Supply Chain Management hjælper dig med automatisk at fordele gebyrer til indkøbsordrer eller salgsordrer.
-author: dasani-madipalli
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 04e17947073fca63ab68f0b5d0d72eb8366a1600117f61851179e8b0ed2c8184
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753933"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592534"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk fordeling af gebyrer
 
@@ -26,6 +26,16 @@ ms.locfileid: "6753933"
 På baggrund af den kunde, du arbejder med, eller den vare, du sælger, kan du anvende specifikke ekstragebyrer. Funktionen *Gebyr* i Microsoft Dynamics 365 Supply Chain Management hjælper dig med automatisk at fordele gebyrer til indkøbsordrer eller salgsordrer.
 
 Automatiske gebyrer, eller automatiske tillæg, anvendes automatisk, når du opretter en salgsordre eller indkøbsordre. Du kan definere automatiske tillæg for bestemte leverandører, kunder grupper af leverandører eller varer. Du kan også definere automatiske tillæg, der gælder for alle leverandører, kunder eller varer.
+
+## <a name="set-up-parameters"></a>Konfigurer parametre
+
+Siden **Indkøbs- og forsyningsparametre** indeholder nogle få indstillinger, der især er relevante, når du vil tildele gebyrer automatisk. Gør følgende for at fuldføre konfigurationen.
+
+1. Gå til **Indkøb og forsyning \> Opsætning \> Indkøbs- og forsyningsparametre**.
+1. Åbn fanen **Priser**.
+1. Foretag følgende indstillinger i oversigtspanelet **Priser**:
+    - **Find automatiske gebyrer til overskrift** – Angiver, om der automatisk skal tildeles tillæg for indkøbsordreoverskrifter. Angiv dette til *Ja*, hvis du vil bruge automatisk fordeling af gebyrer.
+    - **Find automatiske gebyrer til linje** – Angiver, om der automatisk skal tildeles tillæg for indkøbsordrelinjer. Angiv dette til *Ja*, hvis du vil bruge automatisk fordeling af gebyrer.
 
 ## <a name="set-up-charges-codes"></a>Oprette gebyrkoder
 

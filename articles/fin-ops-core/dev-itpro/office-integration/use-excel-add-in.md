@@ -2,7 +2,7 @@
 title: Få vist og opdatere enhedsdata med Excel
 description: Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics-tilføjelsesprogrammet til Excel.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefebe094a0429f22a1a7038a55ab2190e41da6348447850148b8b98e082e743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761348"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592659"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Få vist og opdatere enhedsdata med Excel 
 
@@ -60,7 +60,7 @@ Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har val
 
 6. Vælg **OK**, og vælg derefter **Ja** for at bekræfte ændringen. Excel-tilføjelsesprogrammet genstarter og indlæser metadata.
 
-    Knappen **Design** er nu tilgængelig. Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan finde yderligere oplysninger i "Knappen Indlæs applets vises" i afsnittet [Fejlfinding](../office-integration/use-excel-add-in.md#troubleshooting) i dette emne.
+    Knappen **Design** er nu tilgængelig. Hvis Excel-tilføjelsesprogrammet har linket **Indlæs applets**, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan finde flere oplysninger om, hvordan du kan løse dette problem, i [indlæsning af applets](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane)-fejlfindingspost.
 
 7. Vælg **Design**. Excel-tilføjelsesprogrammet henter enhedsmetadata.
 8. Vælg **Tilføj tabel**. Der vises en liste over enheder. Enhederne er angivet i formatet "Navn – label".
@@ -136,7 +136,7 @@ De data, der indlæses i projektmappen fra ét miljø kan kopieres til et andet 
 ## <a name="troubleshooting"></a>Fejlfinding
 Der er nogle få problemer, der kan løses gennem nogle nemme trin.
 
-- **Knappen Indlæs applets vises** – Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, når du er logget på, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan løse dette problem ved at kontrollere, at det rigtige brugernavn vises i øverste højre hjørne af Excel-tilføjelsesprogrammet. Hvis der vises et forkert brugernavn, skal du vælge det, logge af og derefter logge på igen.
+- **Linket "Indlæs applets" vises** – Du kan finde flere oplysninger om, hvordan du kan løse dette problem, i [indlæsning af applets](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) -fejlfindingspost. 
 - **Du får vist meddelelsen "Forbudt"** – Hvis du får vist meddelelsen "Forbudt", mens Excel-tilføjelsesprogrammet indlæser metadata, har den konto, der er logget på Excel-tilføjelsesprogrammet ikke tilladelse til at bruge den målsatte tjeneste, forekomst eller database. Du kan løse dette problem ved at kontrollere, at det rigtige brugernavn vises i øverste højre hjørne af Excel-tilføjelsesprogrammet. Hvis der vises et forkert brugernavn, skal du vælge det, logge af og derefter logge på igen.
 - **En tom webside vises i Excel** – Hvis der åbnes en tom webside under logonprocessen, kræver kontoen AD FS, men den version af Excel, der kører tilføjelsesprogrammet, er ikke ny nok til at indlæse logondialogboksen. Du kan løse dette problem ved at opdatere den version af Excel, du bruger. For at opdatere versionen af Excel, når du er i en virksomhed, der er på den udskudte kanal, kan du bruge [Office Udrulningsværktøj](/deployoffice/overview-office-deployment-tool) til [at flytte fra den udskudte kanal til den aktuelle kanal](/deployoffice/overview-update-channels).
 - **Du får en timeout, når du publicerer dataændringer** – Hvis du får timeoutmeddelelser, når du forsøger at publicere dataændringer til en enhed, skal du overveje at reducere publiceringsbatchstørrelsen for den berørte projektmappe. Enheder, der udløser større logiske ændringer i postændringer, kræver måske, at der sendes opdateringer i mindre batches for at hjælpe med at forhindre timeout.

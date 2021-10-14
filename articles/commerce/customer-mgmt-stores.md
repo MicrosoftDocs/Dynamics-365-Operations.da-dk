@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 09caa7fa8f10d1afc44bb9343550bc633b8ec99a
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 4fd6039843be09ec706e45746d5724faa99a95e6
+ms.sourcegitcommit: 3f59b15ba7b4c3050f95f2b32f5ae6d7b96e1392
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472219"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7563055"
 ---
 # <a name="customer-management-in-stores"></a>Kundestyring i butikker
 
@@ -45,7 +45,8 @@ Salgsmedarbejdere kan hente flere adresser for en kunde. Kundens navn og telefon
 
 ## <a name="sync-customers-and-async-customers"></a>Synkronisere kunder og Async-kunder
 
-> [VIGTIGT] Hvis POS skifter til offline, mens oprettelsestilstanden Async-debitor deaktiveres, skifter systemet automatisk til oprettelsestilstanden Async-debitor. Uanset, hvad du har valgt mellem oprettelse af Synkronisering og Async-kunde, skal Administratorer af Commerce headquarters derfor oprette og planlægge et batchjob, der gentages for **P-jobbet**, **synkroniser kunder og forretningspartnere fra jobbet async** (tidligere kaldet **Synkroniser kunder og forretningspartnere fra jobbet async mode)** og jobbet **1010**, så alle Async-kunder konverteres til Synkroniser kunder i Commerce Headquarters.
+> [!IMPORTANT]
+> Hvis POS skifter til offline, mens oprettelsestilstanden Async-debitor deaktiveres, skifter systemet automatisk til oprettelsestilstanden Async-debitor. Uanset, hvad du har valgt mellem oprettelse af Synkronisering og Async-kunde, skal Administratorer af Commerce headquarters derfor oprette og planlægge et batchjob, der gentages for **P-jobbet**, **synkroniser kunder og forretningspartnere fra jobbet async** (tidligere kaldet **Synkroniser kunder og forretningspartnere fra jobbet async mode)** og jobbet **1010**, så alle Async-kunder konverteres til Synkroniser kunder i Commerce Headquarters.
 
 Inden for handel findes der to kundeoprettelsesmåder: Synkron (eller Sync) og asynkron (eller Async). Kunder oprettes som standard synkront. Det vil sige, at de oprettes i Commerce Headquarters i realtid. Det er en fordel at synkronisere kundeoprettelsestilstanden, fordi nye kunder med det samme kan søges på tværs af kanaler. Det har dog også noget at gøre. Da den genererer [Commerce Data Exchange: Realtidsserviceopkald](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) til Commerce Headquarters, kan ydeevnen påvirkes, hvis der foretages mange samtidige opkald til oprettelse af kunder.
 

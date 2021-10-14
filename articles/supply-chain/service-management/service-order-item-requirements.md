@@ -1,7 +1,7 @@
 ---
 title: Varebehov på serviceordre
-description: Hvis du vil reservere bestemte varer til en serviceordre, kan du oprette lager lagervarebehov for den.
-author: ShylaThompson
+description: Dette emne beskriver varebehov for tjenesteordrer.
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a57dc7f41e283d097daef1b92b6b22c093655ff48c7a3778f7ab541ebb24964
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ae211cb24e3ed0e9e54643448ee378a20658ad89
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746082"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573195"
 ---
-# <a name="service-order-item-requirements"></a>Varebehov på serviceordre   
+# <a name="service-order-item-requirements"></a>Varebehov på serviceordre
 
 [!include [banner](../includes/banner.md)]
-
 
 Du kan oprette en serviceordre for at spore og administrere ydelser, du leverer til dine debitorer. Hvis du vil reservere bestemte varer til en serviceordre, kan du oprette lager lagervarebehov for den. Et varebehov kan forbruges straks fra lageret, eller det kan starte en produktionsordre for varen.
 
@@ -37,31 +36,24 @@ I samme øjeblik et varebehov oprettes til en serviceordre, kan du få det vist 
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Få vist et varebehov fra en serviceordre
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
-
-2.  Klik på **Ekspedition**, og klik derefter på **Varebehov** for at åbne formularen **Varebehov**.
-
-3.  Klik på fanen **Projekt**, og marker feltet **Serviceordre** for at se serviceordrerne for varebehovet.
+1. Gå til **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1. Vælg **Ekspedition**, og vælg derefter **Varebehov** for at åbne formularen **Varebehov**.
+1. Vælg fanen **Projekt**, og marker feltet **Serviceordre** for at se serviceordrerne for varebehovet.
 
 ## <a name="delete-service-orders-with-item-requirements"></a>Slette serviceordrer med varebehov
 
 Hvis der oprettes et varebehov på en serviceordre, kan du ikke slette serviceordren. Du skal slette varebehovet, før du kan slette serviceordren.
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1. Gå til **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1. Vælg **Ekspedition**, og vælg derefter **Varebehov** for at åbne formularen **Varebehov**. I denne form vises de varebehov, der er oprettet på serviceordren.
+1. Vælg det varebehov, der skal slettes, og vælg derefter **Slet**.
 
-2.  Klik på **Ekspedition**, og klik derefter på **Varebehov** for at åbne formularen **Varebehov**. I denne form vises de varebehov, der er oprettet på serviceordren.
+eller
 
-3.  Vælg det varebehov, der skal slettes, og klik derefter på **Slet**.
-
-–eller–
-
-1.  Klik på **Projektstyring og regnskab** \> **Generelt** \> **Projekter** \> **Alle projekter**.
-
-2.  Åbn det projekt, der har den serviceordre, hvor der er oprettet et varebehov.
-
-3.  Klik på **Varebehov** i højre rude i formularen **Projekter**. Formularen **Varebehov** viser en oversigt over de varebehov, der er knyttet til det valgte projekt.
-
-4.  Vælg det varebehov, der skal slettes, og klik derefter på **Slet**.
+1. Gå til **Projektstyring og regnskab** \> **Fælles** \> **Projekter** \> **Alle projekter**.
+1. Åbn det projekt, der har den serviceordre, hvor der er oprettet et varebehov.
+1. Vælg **Varebehov** i højre rude i formularen **Projekter**. Formularen **Varebehov** viser en oversigt over de varebehov, der er knyttet til det valgte projekt.
+1. Vælg det varebehov, der skal slettes, og vælg derefter **Slet**.
 
 ## <a name="see-also"></a>Se også
 

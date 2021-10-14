@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec060412fefa38d5c28e7830ff34b6fe44c97fd04a5e8b75ddbdd62f1320f030
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc95092c0756515692db7573cb15dca6e8da7c6f
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739289"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594923"
 ---
 # <a name="procurement-and-sourcing-in-the-public-sector"></a>Indkøb og forsyning i den offentlige sektor
 
@@ -86,7 +86,7 @@ Ja. Du kan få vist linjeantal for en indkøbsordre, herunder det aktuelle ordre
 
 Lad os sige, at du får vist en indkøbsordrelinje med indkøb, der er bogført på to finanskonti. Den ene finanskonto er beregnet til kontormøbler, der er bestilt hos en leverandør. Den anden finanskonto er beregnet til kontorartikler. Ordreantallet er lig med summen af fakturerede antal, antallet på ventende fakturaer og antal, der ikke er faktureret endnu. Det modtagne antal er den del af ordreantallet, der er modtaget fra kreditor.
 
-<table style="width:100%;">
+<table>
 
 <col width="16%" />
 <col width="16%" />

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 83b2d3c35e3e68aaad22bc03a46b17abc1526073895057717fd055dacdfbee5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718471"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594903"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Angive brugerdefinerede lagersteder til oprettede dokumenter
 
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Rediger den eksisterende `AssetRollForwardService`-klasse, og skriv kode for at oprette en brugerdefineret destinationsfabrik for rapportkørslen. Bemærk, at når der er oprettet en brugerdefineret destinationsfabrik, overføres den applikationsbaserede parameter, der angiver en destinationsmappe. På denne måde bruges denne destinationsmappe til lagring af genererede filer.
 
     > [!NOTE] 
-    > Kontroller, at den angivne mappe (**c:\\0** i dette eksempel) findes i det lokale filsystem på den server, der kører AOS-tjenesten. Ellers udløses der en [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-undtagelse ved kørsel.
+    > Kontroller, at den angivne mappe (**c:\\0** i dette eksempel) findes i det lokale filsystem på den server, der kører AOS-tjenesten. Ellers udløses der en [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception)-undtagelse ved kørsel.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

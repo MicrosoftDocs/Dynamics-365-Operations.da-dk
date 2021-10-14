@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e349df6b7e2a627562c65b961385625b0ad95b5423fa25b9139af3a8a227321b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733318"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577810"
 ---
 # <a name="system-directed-work-sequencing"></a>Systembaseret arbejdsrækkefølge
 
@@ -140,7 +140,7 @@ Hvis du vil arbejde gennem scenariet ved hjælp af de værdier, der vises i dett
 
 ### <a name="location-directives"></a>Lokationsvejledninger
 
-Hvis du bruger standarddata fra Contoso, kræver forespørgslen til handling i lokationsvejledning ikke ændringer. Hvis du vil være sikker på, at lokationsvejledninger registrerer varerne på salgsordrerne, når du anvender funktionen i et miljø, der ikke er Contoso, skal du oprette en ny lokationsvejledning. Udfør følgende trin for at kontrollere indstillingerne i demomiljøet.
+Hvis du bruger standarddata fra Contoso, kræver forespørgslen til handling i lokationsvejledning ikke ændringer. Hvis du vil være sikker på, at lokationsvejledninger registrerer varerne på salgsordrerne, når du anvender funktionen i et miljø, der ikke er Contoso, skal du oprette en ny lokalitetsvejledning. Udfør følgende trin for at kontrollere indstillingerne i demomiljøet.
 
 1. Gå til **Lagerstedsstyring** \> **Opsætning** \> **Lokationsvejledninger**.
 1. I feltet **Arbejdsordretype** skal du vælge *Salgsordrer*.

@@ -1,22 +1,22 @@
 ---
 title: Forseglet bud på tilbudsanmodninger
 description: I dette emne beskrives, hvordan du kan konfigurere forseglede bud, der kan holde leverandørers budsvar hemmelige, indtil indkøbsmedarbejdere bryder forseglingen.
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500628"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578074"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Forseglet bud på tilbudsanmodninger
 
@@ -53,7 +53,11 @@ Før du begynder at konfigurere eller bruge denne funktion, skal du sørge for, 
 Supply Chain Management bruger krypteringsnøgler til at beskytte alle forseglede bud og hemmeligholde dem indtil det rigtige tidspunkt. Det gør brug af funktionerne i Key Vault til at generere og administrere de nødvendige nøgler. Du skal derfor konfigurere en forbindelse fra Supply Chain Management til en Key Vault for at aktivere systemet.
 
 > [!IMPORTANT]
-> Key Vault skal oprettes i et Azure-abonnement, der ejes af din organisation (ikke det abonnement, hvor du kører Supply Chain Management).
+> De nøglebokse, du bruger til lukkede lukninger, skal opfylde følgende krav:
+>
+> - Hvis du bruger en sandboks til udvikling og test, skal du have en dedikeret nøgle til sandboksen og en separat til produktion.
+> - Hver Key Vault skal oprettes i et Azure-abonnement, der ejes af din organisation (ikke det abonnement, hvor du kører Supply Chain Management).
+> - Hver key vault skal udelukkende bruges til lukkede enheder. Du må ikke bruge de lukkede key vaults til andre formål.
 
 Hvert bud henter sin egen hemmelige nøgle. Denne nøgle bruges, hver gang en bruger skal se, opdatere eller bryde forseglingen af buddet.
 

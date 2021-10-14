@@ -1,7 +1,7 @@
 ---
 title: Synkroniser arbejdsordrer i Field Service til salgsordrer i Supply Chain Management
 description: Dette emne beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer i Field Service til salgsordrer i Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7d7688e757a3ab9746ae0307a7c15f0624c1d8aceeb0dc935b0da32d3ab2994b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c54f5eaec1ae453ba9e55ef54d47c8591276ec89
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752676"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568369"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkroniser arbejdsordrer i Field Service til salgsordrer i Supply Chain Management
 
@@ -245,31 +245,31 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 
 Filter: (msdyn_systemstatus ne 690970005) og (msdyn_systemstatus ne 690970000) og (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Skabelontilknytning i dataintegration.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) og (msdynce_headersystemstatus ne 690970004)
 
-[![Skabelontilknytning i dataintegration.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
 
-[![Skabelontilknytning i dataintegration.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) og (msdynce_headersystemstatus ne 690970004) og (msdyn_allocated eq true)
 
-[![Skabelontilknytning i dataintegration.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
-[![Skabelontilknytning i dataintegration.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

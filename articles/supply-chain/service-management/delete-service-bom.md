@@ -1,7 +1,7 @@
 ---
 title: Slette en servicestykliste
-description: En serviceordre repræsenterer en serviceteknikers besøg hos en kunde på en bestemt dato.
-author: ShylaThompson
+description: Dette emne indeholder en procedure, der viser, hvordan servicestykliste slettes.
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,29 +15,25 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77b4b26e74979a1d603b8e6537603203a2e1f03ec45818aada4f78eb1b4136d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f0b1ea4bd8c035db39763b3c1da9ccfc14030c24
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764710"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569065"
 ---
-# <a name="delete-a-service-bom"></a>Slette en servicestykliste 
+# <a name="delete-a-service-bom"></a>Slette en servicestykliste
 
 [!include [banner](../includes/banner.md)]
 
-
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**. Vælg den serviceaftale, du vil slette en styklistetjeneste fra.
-
-2.  Klik på **Serviceobjekter** i **handlingsruden**.
-
-3.  I formularen **Serviceobjekter** skal du vælge det serviceobjekt, som du vil slette styklistetjenesten fra. Klik på **Funktioner**, og vælg derefter **Slet servicestykliste**.
-
-4.  Klik på **Ja**.
+1. Gå til **Servicestyring** \> **Fælles** \> **Serviceaftaler** \> **Serviceaftaler**. Vælg den serviceaftale, du vil slette en styklistetjeneste fra.
+1. Vælg **Serviceobjekter** i **handlingsruden**.
+1. I formularen **Serviceobjekter** skal du vælge det serviceobjekt, som du vil slette styklistetjenesten fra. Vælg **Funktioner**, og vælg derefter **Slet servicestykliste**.
+1. Vælg **Ja**.
 
 
 > [!NOTE]
-> <P>Hvis du ikke har anvendt en styklisteskabelon, kan styklistetjenesten slettes fra formularen <STRONG>Styklisteskabeloner</STRONG>. Hvis du har anvendt styklisteskabelonen, kan styklistetjenesten ikke slettes på denne måde.</P>
+> Hvis du ikke har anvendt en styklisteskabelon, kan styklistetjenesten slettes fra siden **Styklisteskabeloner**. Hvis du har anvendt styklisteskabelonen, kan styklistetjenesten ikke slettes på denne måde.
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Oversigt over integration med Microsoft Dynamics 365 Field Service
 description: Dette emne indeholder en oversigt over integrationen med Microsoft Dynamics 365 Field Service.
-author: ChristianRytt
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ecfd19cf79b9547c67b5bb90cef451d4aeab8f5ee775e50578161783e370462f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23661bca91ccd7b7a04c763e60cfca9a99d62bfa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761752"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566449"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Oversigt over integration med Microsoft Dynamics 365 Field Service
 
@@ -58,7 +58,7 @@ Den ekstra funktionalitet i denne anden fase fokuserer på at give serviceteknik
 - Supply Chain Management-projekter, der er forbundet med Dynamics 365 Field Service-arbejdsordrer
 - Dynamics 365 Field Service-arbejdsordrer med tilknytning til Supply Chain Management-projekter anvender dette projektnummer på salgsordren, så der kan faktureres fra projektet. 
 
-![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/FSv2overview.png)
+![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service, herunder lager- og projektoplysninger.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Den anden fase i integrationen mellem Field Service og Supply Chain Management muliggør synkronisering med følgende skabeloner:
 - Lagersteder (Supply Chain Management til Field Service) - Lagersteder fra Supply Chain Management til Field Service [Avanceret forespørgsel] 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
-ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
+ms.openlocfilehash: a3cc431307d840d393a454e91f202c07c38d2512
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7429215"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559333"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Plan for fast løn
 
@@ -42,7 +42,7 @@ Fysisk navn: mshr_payrollfixedcompensationplanentity.
 | **Stillings-id**</br>mshr_positionid</br>*Streng* | Skrivebeskyttet | Stillings-id, der er tilknyttet medarbejderen og tilmelding til Plan for fast løn. |
 | **Gyldig fra**</br>mshr_validfrom</br>*Dato- og klokkeslætsforskydning* |  Skrivebeskyttet | Dato, hvorfra medarbejderens faste løn er gyldig.  |
 | **Gyldig til**</br>mshr_validto</br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet | Dato, hvortil medarbejderens faste løn er gyldig. |
-| **Lønfrekvens**</br>mshr_payfrequency</br>*Streng* | Skrivebeskyttet | Hvor ofte medarbejderen bliver betalt.  |
+| **Lønfrekvens**</br>mshr_payfrequency</br>*Streng* | Skrivebeskyttet | Id'et for [kompensationslønfrekvensen](hr-admin-integration-payroll-api-compensation-pay-frequency.md) for den givne lønsats. |
 | **Valuta**</br>mshr_currency</br>*Streng* | Skrivebeskyttet | Den valuta, der er defineret for Plan for fast løn. |
 | **Enheden Plan for fast løn**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Systemgenereret | Systemgenereret GUID-værdi, der entydigt identificerer lønplanen. |
 
