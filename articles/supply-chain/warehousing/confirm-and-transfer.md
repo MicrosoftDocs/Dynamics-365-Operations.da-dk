@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767945"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592622"
 ---
 # <a name="confirm-and-transfer"></a>Bekræft og flyt
 
@@ -45,8 +45,8 @@ Du kan kun opdele laster, der opfylder alle følgende kriterier:
 
 - En eller flere lastlinjer har plukkede antal.
 - Laststatussen er mindre end lastet.
-- Der er ingen lastlinjedata. (Disse data oprettes ved konsolidering af nummerplader på den midlertidige placering, og funktionen *Bekræft og overfør* understøtter ikke nummerpladekonsolidering).
-- Der er ingen lager, der i øjeblikket afventer pakning på en pakkelokation. (Funktionen *Bekræft og overfør* understøtter ikke den lagerbeholdning, der er plukket til pakkestationen, men endnu ikke er pakket.)
+- Der er ingen lastlinjedata. (Disse data oprettes ved konsolidering af nummerplader på den midlertidige placering, og funktionen Bekræft og overfør understøtter ikke nummerpladekonsolidering).
+- Der er ingen lager, der i øjeblikket afventer pakning på en pakkelokation. (*Bekræft og overfør* funktionen understøtter ikke lagerbeholdning, der er plukket til pakkestationen, men som endnu ikke er pakket, medmindre containere, som er pakket, er placeret på midlertidige lokationer, hvor der ikke er oprettet indlæsningsarbejde).
 
 > [!NOTE]
 > Denne funktionalitet adskiller sig fra funktionaliteten for transportlasten, som skal bruges på lagersteder, der aldrig kan planlægge og oprette laster før plukning, men som i stedet læsser den tilgængelige transportplads, når plukningen er fuldført.

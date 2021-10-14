@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83e75eee54516539be939e9547a8b637bbf2ab107ae96c07c4bbefaad75f1022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4d4eb4fd4ea32db5aa19e9d2b1300818b3aaf6fc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768435"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594978"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Genbruge ER-konfigurationer med Excel-skabeloner til generering af rapporter i Word-format
 
@@ -90,7 +90,7 @@ Aktuelt bruges Excel-dokumentet som en skabelon til at generere outputtet i OPEN
 
 Du kan nu knytte elementerne i den brugerdefinerede XML-del **Rapport** til indholdskontrolelementerne i Word-dokumentet.
 
-Hvis du har kendskab til design af Word-dokumenter som formularer, der indeholder [indholdskontrolelementer](/office/client-developer/word/content-controls-in-word), der er knyttet til elementer i [brugerdefinerede XML-dele](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), skal du fuldføre alle trin i den næste procedure for at oprette dokumentet. Du kan finde flere oplysninger under [Oprette formularer, som brugere udfylder eller udskriver i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Ellers skal du springe næste procedure over.
+Hvis du har kendskab til design af Word-dokumenter som formularer, der indeholder [indholdskontrolelementer](/office/client-developer/word/content-controls-in-word), der er knyttet til elementer i [brugerdefinerede XML-dele](/visualstudio/vsto/custom-xml-parts-overview), skal du fuldføre alle trin i den næste procedure for at oprette dokumentet. Du kan finde flere oplysninger under [Oprette formularer, som brugere udfylder eller udskriver i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Ellers skal du springe næste procedure over.
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>Hente et Word-dokument, der har en brugerdefineret XML-del, og udføre datatilknytning
 
