@@ -1,7 +1,7 @@
 ---
 title: Synkronisere lageroverførsler og reguleringer fra Field Service til Supply Chain Management
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere lagerreguleringer og overførsler fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f1fc4b65fefcc050591f721cf5271fdd79f1b648d992be988af7ac02e220850c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83ab46904815b177640c87fef58ce208d00d800a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717885"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566377"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Synkronisere lageroverførsler og reguleringer fra Field Service til Supply Chain Management
 
@@ -72,12 +72,12 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 
 ### <a name="inventory-adjustment-field-service-to-supply-chain-management-inventory-adjustment"></a>Lagerregulering (Field Service til Supply Chain Management): Lagerregulering
 
-[![Skabelontilknytning i dataintegration.](./media/FSAdj1.png)](./media/FSAdj1.png)
+[![Skabelontilknytning i Dataintegration, Lagerregulering (Field Service til Supply Chain Management): Lagerregulering.](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Lageroverførsel (Field Service til Supply Chain Management): Lageroverførsel
 
-[![Skabelontilknytning i dataintegration.](./media/FSTrans1.png)](./media/FSTrans1.png)
+[![Skabelontilknytning i Dataintegration, Lagerflytning (Field Service til Supply Chain Management): Lagerflytning.](./media/FSTrans1.png)](./media/FSTrans1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

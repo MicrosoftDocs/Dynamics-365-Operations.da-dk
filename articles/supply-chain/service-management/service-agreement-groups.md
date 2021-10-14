@@ -1,7 +1,7 @@
 ---
 title: Oversigt over serviceaftaler
-description: Serviceaftalegrupper er nyttige ved sortering og filtrering af serviceaftaler.
-author: ShylaThompson
+description: Dette emne giver et overblik over, hvordan du kan arbejde med serviceaftaler.
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3baaccf490af8231ca4389fa409b71f6286ff8d37bdcde78d8af95916d55cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82cb77dbeb03a2d43ec5a6f797d11984a33b6698
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734085"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578698"
 ---
 # <a name="service-agreements-overview"></a>Oversigt over serviceaftaler
 
@@ -32,9 +32,9 @@ I feltet **Serviceaftalegruppe** på siden **Parametre for servicestyring** kan 
 
 ## <a name="example"></a>Eksempel:
 
--  Du kan gruppere serviceaftalerne efter det serviceniveau, der tilbydes. 
--  De tre aftalegrupper, du har oprettet i firmaet er Guld, Sølv og Bronze.
--  En ny servicechef har været ansat i firmaet. Servicechefen er ansvarlig for alle kunder i aftalegruppen Guld. Du kan filtrere aftaleposter for aftalegruppen Guld for at finde alle de aftaler, hvor du skal angive den nye servicechef som den ansvarlige.
+- Du kan gruppere serviceaftalerne efter det serviceniveau, der tilbydes.
+- De tre aftalegrupper, du har oprettet i firmaet er Guld, Sølv og Bronze.
+- En ny servicechef har været ansat i firmaet. Servicechefen er ansvarlig for alle kunder i aftalegruppen Guld. Du kan filtrere aftaleposter for aftalegruppen Guld for at finde alle de aftaler, hvor du skal angive den nye servicechef som den ansvarlige.
 
 ## <a name="related-topics"></a>Relaterede emner
 

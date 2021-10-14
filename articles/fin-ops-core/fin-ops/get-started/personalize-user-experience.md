@@ -2,7 +2,7 @@
 title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344368"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581059"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -119,7 +119,8 @@ Følgende værktøjer er tilgængelige på værktøjslinjen **Brugertilpasning**
 
 - Brug værktøjet **Vælg** til at vælge og ændre et elements egenskaber. Hvis du vil bruge dette værktøj, skal du vælge knappen **Vælg** på værktøjslinjen og derefter vælge det ønskede element. Elementets egenskabsvindue åbnes, hvor du kan redigere egenskaberne for dette element. Du kan gentage processen for andre elementer, der kan tilpasses på siden. Bemærk, at nogle egenskaber for brugertilpasning muligvis ikke er tilgængelige i visse scenarier. Du kan f.eks. ikke låse et felt, der er obligatorisk.
 - Brug værktøjet **Skjul** til at skjule et element på siden. Hvis du vil bruge dette værktøj, skal du vælge knappen **Skjul** på værktøjslinjen og derefter vælge det element, du vil skjule. Når du bruger værktøjet **Skjul**, gøres alle elementer, der i øjeblikket er skjult, synlige, men de vises i en nedtonet container. Du kan derefter gøre et element synligt ved at markere det. Hvis du vil se, hvordan siden vil se ud, når der skjules elementer, skal du skifte til et andet tilpasningsværktøj eller lukker værktøjslinjen for brugertilpasning.
-- Brug værktøjet **Tilføj felter** for at tilføje felter på din side. Når du bruger dette værktøj, kan du kun tilføje felter, der er del af sidedefinitionen. Du kan finde oplysninger om, hvordan du opretter nye felter, der ikke er en del af den aktuelle sidedefinition, under [Opret og arbejd med brugerdefinerede felter](user-defined-fields.md). Når du har valgt knappen **Tilføj felter** på værktøjslinjen, skal du først markere det gitter eller den sektion, hvor du vil tilføje et felt. Der åbnes en dialogboks med listen over felter, der er relateret til det gitter eller den sektion, der er valgt. Vælg ét eller flere felter, som du vil tilføje, i dialogboksen, og vælg derefter **Opdater**. Gentag processen for at fjerne et felt, du tidligere har tilføjet, men fjern markeringen af feltet i dialogboksen.
+- Brug værktøjet **Tilføj felter** for at tilføje felter på din side. Når du bruger dette værktøj, kan du kun tilføje felter, der er del af sidedefinitionen. Du kan finde oplysninger om, hvordan du opretter nye felter, der ikke er en del af den aktuelle sidedefinition, under [Opret og arbejd med brugerdefinerede felter](user-defined-fields.md). Når du har valgt knappen **Tilføj felter** på værktøjslinjen, skal du først markere det gitter eller den sektion, hvor du vil tilføje et felt. Der åbnes en dialogboks med listen over felter, der er relateret til det gitter eller den sektion, der er valgt. Vælg et eller flere felter på listen **Anbefalede** eller **Alle felter** i dialogboksen. Når du har valgt de ønskede felter, skal du vælge **Opdater**. Gentag processen for at fjerne et felt, du tidligere har tilføjet, men fjern markeringen af feltet i dialogboksen.
+    - Listen **Anbefalede felter** viser felter, der tidligere er tilføjet af andre brugere i organisationen. Denne liste over felter opdateres baseret på gentagelsesfrekvensen for **Anbefaling-batchjob**. En lignende erfaring findes, når du tilføjer nye filterfelter ved hjælp af ruden Filter på en side.
 - Brug værktøjet **Flyt** til at flytte et element til et andet sted inden i den aktuelle gruppe af elementer. Bemærk, at du ikke kan flytte et element uden for dets overordnede gruppe. Hvis du vil bruge dette værktøj, skal du vælge knappen **Flyt** på værktøjslinjen og derefter vælge det element, du vil flytte. Når du vælger et element, fastlægger appen de steder, hvor elementet kan flyttes hen. Disse steder kaldes *slipzoner*. Når du trækker elementet omkring i den aktuelle gruppe, vises hver slipzone som en farvet, fed linje ud for det område, hvor elementet kan slippes.
 - Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger knappen **Spring over** på værktøjslinjen, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan interaktivt fjerne eller tilføje felter i tabulatorsekvensen.
 - Brug værktøjet **Vis i overskrift**, når du vil have vist et felt i oversigtspanelets oversigtssektion. Når du vælger knappen **Vis i overskrift** på værktøjslinjen, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra oversigten ved at markere felterne.

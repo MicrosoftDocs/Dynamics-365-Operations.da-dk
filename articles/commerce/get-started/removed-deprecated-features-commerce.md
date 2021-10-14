@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Commerce.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386735"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559553"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 
@@ -36,6 +36,18 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.21-frigivelsen
 
 [!include [banner](../includes/preview-banner.md)]
+
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Indstillinger for håndtering af overlappende rabatter i parametre for handel
+
+Indstillingen for **håndtering af overlappende rabatter** på siden **Handelsparametre** frarådes i versionen af Commerce version 10.0.21. Fremad vil programmet til handelsprissætning bruge en enkelt algoritme til at bestemme den optimale kombination af overlappende rabatter.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | <p>Indstillingen for **håndtering af overlappende rabatter** i parametre for handel styrer, hvordan programmet til handelsprissætning søger i og bestemmer den optimale kombination af overlappende rabatter. Det indeholder i øjeblikket tre muligheder:<p><ul><li> **Bedste performance** – Denne indstilling bruger en avanceret heuridisk algoritme og en [metode til rangering af beregningsværdi](../optimal-combination-overlapping-discounts.md) til at prioritere, evaluere og fastlægge den bedste rabatkombination i rette tid.</li><li>**Afbalanceret beregning** – I det aktuelle kodegrundlag fungerer denne indstilling på samme måde som indstillingen **Bedste performance**. Derfor er det egentlig en dubletindstilling.</li><li>**Udtømmende beregning** – Denne indstilling bruger en gammel algoritme, der gennemgår alle de mulige rabatkombinationer under prisberegningen. I forbindelse med ordrer, der har store linjer og mængder, kan denne indstilling forårsage problemer med ydeevnen.</li></ul><p>For at forenkle konfigurationen, forbedre ydeevnen og reducere antallet af hændelser, der forårsages af den gamle algoritme, vil vi helt fjerne indstillingen for håndtering af **overlappende rabatter** og opdatere den interne logik i programmet Handelsprissætning, så programmet nu kun bruger den avancerede algoritme (det vil sige algoritmen bag indstillingen **Bedste performance**).</p> |
+| **Erstattet af en anden funktion?**   | Nr. Det anbefales, at organisationer, der bruger indstillingen **Afbalanceret beregning** eller **Udtømmende beregning**, skifter til indstillingen **Bedste performance**, før denne funktion fjernes. |
+| **Produktområder, der er berørt**         | Priser og rabatter |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Pr. version 10.0.21 fjernes indstillingen for **håndtering af overlappende rabatter** fra commerce-parametrene i oktober 2022. |
 
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Retail SDK distribueret via Lifecycle Services
 

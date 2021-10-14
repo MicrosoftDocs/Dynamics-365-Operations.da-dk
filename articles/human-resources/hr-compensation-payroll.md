@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483776"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559601"
 ---
 # <a name="ready-to-pay"></a>Klar til at betale
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Hvis du vil markere en medarbejder som klar til betaling, skal du først aktivere funktionen **(Forhåndsversion) lønintegration** i funktionsstyring. Du kan finde flere oplysninger om aktivering af prøveversionsfunktioner i [Administrere funktioner](hr-admin-manage-features.md).
@@ -72,10 +70,9 @@ Hvis en af disse valideringer mislykkes, kan du ikke markere medarbejderen som k
 
 Hvis feltet **Klar til betaling** er angivet til **Nej**, betyder det, at du skal udføre en handling for at sikre, at arbejderprofilen er komplet. Dette stopper ikke de data, der vises i en dataenhed. 
 
-## <a name="known-issues"></a>Kendte problemer
+## <a name="process-automation"></a>Procesautomatisering
 
-- Du skal deaktivere funktionen **Strømlinet medarbejderangivelse** i funktionsstyring. Felterne i arbejdsområdet for kompensationsstyring fungerer ikke korrekt, hvis du bruger denne funktion.
-- Under fanen **Løn** på siden **Arbejder** er gruppen **Klar til betaling** tilgængelig for alle brugerroller. 
+Du kan automatisere valideringen af alle medarbejdere ved hjælp af [Process Automation](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation). I arbejdsområdet **Kompensationsstyring** gå til **Links** \> **Parametre** \> **Procesautomation**.
 
 ## <a name="see-also"></a>Se også
 

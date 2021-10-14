@@ -1,8 +1,8 @@
 ---
 title: Likviditetsbudget
 description: Dette emne indeholder en oversigt over likviditetsbudgetteringsprocessen. I emnet beskrives også, hvordan likviditetsbudgettering er integreret med andre moduler i systemet.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779440"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547949"
 ---
 # <a name="cash-flow-forecasting"></a>Likviditetsbudget
 
@@ -83,7 +83,10 @@ Du kan tilsidesætte standardindstillingen for feltet **Likviditetskonto** for s
 
 ### <a name="budgeting"></a>Budgettering
 
-Budgetter, der er oprettet ud fra budgetmodeller, kan medtages i likviditetsbudgetter. Under fanen **Budgettering** på siden **Opsætning af likviditetsbudget** skal du vælge de budgetmodeller, der skal medtages i budgettet. Nye poster i budgetregisteret medtages som standard i budgetter, når budgetmodellen er aktiveret til likviditetsbudgettering. Inkludering i likviditetsbudgettering kan overskrives på individuelle poster i budgetregisteret.
+Budgetter, der er oprettet ud fra budgetmodeller, kan medtages i likviditetsbudgetter. Under fanen **Budgettering** på siden **Opsætning af likviditetsbudget** skal du vælge de budgetmodeller, der skal medtages i budgettet. Nye poster i budgetregisteret medtages som standard i budgetter, når budgetmodellen er aktiveret til likviditetsbudgettering.
+
+Budgetregisterposter kan medtages i likviditetsbudgettet individuelt via tilpasning. Når du føjer kolonnen "Medtag i likviditetsbudgetter" til siden **Budgetregisterpost**, overskriver systemet indstillingerne på **opsætningssiden for likviditetsbudgetter**, så der medtages en individuel budgetregisterpost i budgettet.
+
 
 ### <a name="inventory-management"></a>Lagerstyring
 
@@ -144,7 +147,7 @@ Arbejdsområdet **Oversigt over kontanter – alle firmaer** viser likviditetsbu
 
 Arbejdsområdet **Oversigt over kontanter - aktuelt firma** viser likviditetsbudgetteringsanalyser i firmaets definerede regnskabsvaluta. Den regnskabsvaluta, der bruges til analyser, defineres på siden **Finans**. Dette arbejdsområde viser en oversigt over likviditetsbudgettering og bankkontosaldi for det aktuelle firma. Et diagram over indgående og udgående pengestrømme giver et overblik over de fremtidige kontantbevægelser og -saldi i regnskabsvalutaen sammen med detaljerede oplysninger om de budgetterede posteringer. Du kan også se saldi for budgetteret valuta.
 
-Du kan finde flere oplysninger om likviditetsbudgetteringsanalyser i emnet [Power BI-indhold for oversigt over kontanter](./cash-overview-power-bi-content.md).
+Du kan finde flere oplysninger om likviditetsbudgetteringsanalyser i [Power BI-indhold for oversigt over kontanter](Cash-Overview-Power-BI-content.md).
 
 Desuden kan du få vist likviditetsbudgetteringsdata for bestemte konti, ordrer og varer på de følgende sider:
 

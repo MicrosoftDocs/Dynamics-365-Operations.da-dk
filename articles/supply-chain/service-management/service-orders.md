@@ -1,7 +1,7 @@
 ---
 title: Serviceordrer
-description: En serviceordre repræsenterer en serviceteknikers besøg hos en kunde på en bestemt dato.
-author: ShylaThompson
+description: Dette emne giver et overblik over, hvordan du kan arbejde med serviceordrer.
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89ff650b0813318573fa273533ba31b57e35696a551105cca7e1a247099b218f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8dc88d445e1331e1532cb3b7385cda39c4f22e80
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739700"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566113"
 ---
-# <a name="service-orders"></a>Serviceordrer   
+# <a name="service-orders"></a>Serviceordrer
 
 [!include [banner](../includes/banner.md)]
-
 
 En serviceordre repræsenterer en serviceteknikers besøg hos en kunde på en bestemt dato. Hver serviceordre består af en eller flere serviceordrelinjer. Serviceordrelinjer repræsenterer de arbejdstimer, der skal udføres af serviceteknikeren, og de relaterede varer, omkostninger og gebyrer.
 
@@ -39,19 +38,19 @@ Du kan også oprette serviceordrer individuelt, uden at knytte dem til en aftale
 
 
 > [!NOTE]
-> <P>Hvis du vil oprette serviceordrer, der ikke der er tilknyttet en serviceaftale, skal du markere afkrydsningsfeltet <STRONG>Tillad uden serviceaftale</STRONG> i formularen <STRONG>Parametre for servicestyring</STRONG>.</P>
+> Hvis du vil oprette serviceordrer, der ikke der er tilknyttet en serviceaftale, skal du markere afkrydsningsfeltet **Tillad uden serviceaftale** på siden **Parametre for servicestyring**.
 
-**Scenario**
+### <a name="scenario"></a>Scenarie
 
 I følgende scenario beskrives en anden situation, hvor det er praktisk at oprette en serviceordre, der ikke er knyttet til en serviceaftale.
 
-Firmadispatcheren modtager et opkald om hasteservice for en elevator. Der er ikke tid til at oprette en serviceaftale og et projekt for servicen. Derfor opretter afsenderen en serviceordre direkte i formularen **Serviceordrer**, vedhæfter serviceordren til et eksisterende projekt og opretter serviceordrelinjerne. Afsenderen opretter også en opgave- eller objektrelation for en eksisterende serviceordre for at registrere arbejde, der ikke er relateret til serviceaftalen. Du kan finde flere oplysninger under [Oprette serviceordrer manuelt](create-service-orders-manually.md) og [Oprette serviceopgaverelationer](create-service-task-relations.md).
+Firmadispatcheren modtager et opkald om hasteservice for en elevator. Der er ikke tid til at oprette en serviceaftale og et projekt for servicen. Derfor opretter afsenderen en serviceordre direkte på siden **Serviceordrer**, vedhæfter serviceordren til et eksisterende projekt og opretter serviceordrelinjerne. Afsenderen opretter også en opgave- eller objektrelation for en eksisterende serviceordre for at registrere arbejde, der ikke er relateret til serviceaftalen. Du kan finde flere oplysninger under [Oprette serviceordrer manuelt](create-service-orders-manually.md) og [Oprette serviceopgaverelationer](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Overvåge status for serviceordrer
 
 Hvis du vil overvåge status for en salgsordre via gennem de forskellige teams og arbejdsprocesser, kan du opretteet system over trin og årsagskoder for serviceordrer. Du kan angive de handlinger, der er tilladt for hvert trin. Du kan finde flere oplysninger under [Oprette årsagskoder](create-reason-codes.md).
 
-**Eksempel**
+### <a name="example"></a>Eksempel
 
 En serviceordre godkendes af afsenderen. Afsenderen opdaterer serviceordretrinnet og angiver en årsagskode, som angiver, at serviceordren er blevet frigivet til serviceteknikeren. Serviceteknikeren besøger kunden og udfører servicen.
 
@@ -59,7 +58,7 @@ En serviceordre godkendes af afsenderen. Afsenderen opdaterer serviceordretrinne
 
 Du kan angive de lagervarer, der er nødvendige til serviceordrer. Serviceordren skal dog være tilknyttet et projekt. Varebehov til serviceordrer behandles løbende igennem et projekt. 
 
-**Eksempel**
+### <a name="example"></a>Eksempel
 
 De serviceordrer, der oprettes ud fra serviceaftalen, behandles derefter af afsenderen. På den første serviceordre kan afsenderen se, at serviceteknikeren skal bruge en vigtig reservedel, der ikke findes på lageret. Afsenderen opretter derfor et varebehov for reservedelen direkte ud fra serviceordren.
 
@@ -73,7 +72,7 @@ En af de andre serviceordrer, der blev oprettet for januar måned, bliver foræl
 
 ## <a name="post-from-projects"></a>Bogføre fra projekter
 
-I slutningen af ugen ønsker afsenderen at bogføre alle serviceordrer, der er knyttet til et bestemt projekt. Afsenderen finder derfor det relevante projekt i formularen **Projekter** og bogfører de fuldførte serviceordrer. Du kan finde flere oplysninger under [Bogføre serviceordrer (klasseformular)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+I slutningen af ugen ønsker afsenderen at bogføre alle serviceordrer, der er knyttet til et bestemt projekt. Afsenderen finder derfor det relevante projekt på siden **Projekter** og bogfører de fuldførte serviceordrer. Du kan finde flere oplysninger under [Bogføre serviceordrer (klasseformular)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Slet serviceordrer
 

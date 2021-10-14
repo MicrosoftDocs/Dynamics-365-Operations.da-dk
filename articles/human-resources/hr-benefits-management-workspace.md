@@ -1,8 +1,8 @@
 ---
 title: Arbejdsområde for personalegodeadministration
 description: Dette emne beskriver arbejdsområdet Frynsegodeadministration i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/24/2021
+author: twheeloc
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 49393ab65c2f0020af5b246f7c18a152d613725f5b31be89cb57f244b28003f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719086"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512467"
 ---
 # <a name="benefits-management-workspace"></a>Arbejdsområde for personalegodeadministration
 
@@ -55,7 +55,7 @@ Hvis du vælger et felt, går du til siden for det pågældende område. Hvis du
 
 - **Ikke-bekræftede valg**
 - **Åbn tilmeldinger med ingen udtjekkede planer**
-- **Tilmeldt i personalegoder**
+- **Tilmeldt i frynsegoder**
 - **Nyansat, der ikke er tilmeldt**
 
 ![Frynsegodeplaner for arbejder.](./media/hr-benefits-management-workspace-plans.png)
@@ -87,6 +87,39 @@ Du kan finde flere oplysninger om behandling af frynsegoder under:
 Hvis du vil have vist en anden frynsegodeperiode, skal du vælge den på rullelisten **Periode**.
 
 ![Ændre periode.](./media/hr-benefits-management-workspace-period.png)
+
+
+## <a name="open-enrollment-tab"></a>Åben fanen Tilmelding
+
+Du kan få vist dine handlingselementer ved enten at vælge et felt eller en fane. Hvis du vælger en fane, kan du se og vælge arbejdere direkte på arbejdsområdesiden.
+Fanen **Åben tilmelding** indeholder nøgleværdier for processen til åben tilmelding. 
+
+Oplysninger om åbne tilmeldinger vises 30 dage før **startdatoen for tilmelding**. Dette er defineret i opsætningen af **Perioder** i **Frynsegodestyring** > **Link** > **Perioder** i feltet **Startdato for tilmelding**.  Du kan ændre denne indstilling ved at gå til **Styring af delte personaleparametre** > **Frynsegodeadministration** > **åbne indstillinger for tilmelding** og opdatere feltet **Antal**.  
+
+Følgende oplysninger er tilgængelige under fanen **Åben tilmelding**:
+ - Medarbejdere, der ikke har startet den åbne tilmeldingsproces
+ - Medarbejdere, som har medarbejdere i arbejde
+ - Medarbejdere, som har fuldført valgprocessen
+ - Ikke-bekræftede valg
+
+**Oversigt over felter**
+
+- **Ikke startet** – Feltet **Ikke startet** viser en optælling af medarbejdere, der ikke har startet tilmeldingsprocessen. Feltet **Ikke startet** er en filtreret liste, som kun viser de medarbejdere, der ikke har valgt, frafaldet eller checket ud for den åbne tilmeldingsplanperiode. Obligatoriske planer ignoreres og medtages ikke, da de er valgt som standard for medarbejderen.  Du kan foretage en detailudgang på denne side for at få vist en liste over medarbejdere, der ikke har startet den åbne tilmeldingsproces på siden **Medarbejderfrynsegoder**.
+
+  > [!NOTE]
+  > Hvis du ikke vil spore status for åben tilmelding for en **plantype**, kan du udelade den ved at gå til **Frynsegodsstyring** > **Links** > **Medarbejder-selvbetjeningsparametre** > **Konfigurer felt til frynsegodeplaner** og opdatere feltet **Spor status for åben tilmelding**.  Der kan f.eks. være oprettet planer, hvor **plantype** = **Andet**. Disse planer kan være valgfrie planer, som du ikke ønsker at spore status for tilmeldinger for. Hvis du ikke vælger denne plantype, ignoreres planerne af disse typer, når status for tilmelding spores eller fuldføres under fanen **Åben tilmelding**. Denne indstilling gælder for den plantype, der er valgt for alle perioder og juridiske enheder.
+
+- **I gang** – Feltet **I gang** giver en optælling af medarbejdere, der er igangværende. Feltet **I gang** er en filtreret liste, der kun viser medarbejdere, der har mindst én plan, som er frafaldet eller valgt. Obligatoriske planer ignoreres og medtages ikke, da de er valgt som standard for medarbejderen. Du kan foretage en detailud detailudførelse fra dette felt for at få vist de valgte og fravalgte planer på siden Masseopdatering af **Masseopdatering af medarbejderes frynsegoder**.
+
+- **Tilmeldte frynsegoder** – Feltet **Tilmeldte frynsegoder** indeholder en tælling af medarbejdere, der er fuldt tilmeldt frynsegoder. Feltet **Tilmeldte frynsegoder** er en filtreret liste, der viser medarbejdere, som har valgt eller frafaldet alle planer. Forespørgslen vil udelukke planer, der ikke spores for åben tilmelding på siden **Parametre for medarbejderselvbetjening**. Du kan foretage en tilbagerulning fra dette felt for at få vist en liste over medarbejdere på siden **Frynsegodeplaner for medarbejder**.
+
+- **Ikke-bekræftede valg** – Feltet til **ikke-bekræftede valg** viser et antal medarbejdere, der har valgte eller fravalgte planer, som skal bekræftes. Du kan foretage en tilbagerulning fra dette felt for at få vist siden **Masseopdatering af medarbejderes frynsegoder**.
+
+**Aktivitet**
+
+- **Ikke startet** – Feltet **Ikke startet** viser en optælling af medarbejdere, der ikke har startet tilmeldingsprocessen. Feltet **Ikke startet** er en filtreret liste, som kun viser de medarbejdere, der ikke har valgt, frafaldet eller checket ud for den åbne tilmeldingsplanperiode. Obligatoriske planer ignoreres og medtages ikke, da de er valgt som standard for medarbejderen. Du kan foretage en tilbagerulning for arbejderen for at få vist siden **Detaljeret frynsegodeplan for lønmedarbejder**.
+
+- **Optælling i gang** – Feltet **Optællinger i gang** giver en optælling af medarbejdere, der er igangværende. Feltet **Optællinger i gang** er en filtreret liste, der kun viser medarbejdere, der har mindst én plan, som er frafaldet eller valgt. Obligatoriske planer ignoreres og medtages ikke, da de er valgt som standard for medarbejderen. Du kan foretage en tilbagerulning for arbejderen for at få vist siden **Detaljeret frynsegodeplan for lønmedarbejder**.
 
 ## <a name="view-more-options"></a>Se flere indstillinger
 

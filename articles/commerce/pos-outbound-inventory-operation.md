@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e29a5295cd3c334aef88dc7a2a36b2eb8a6f636b159c0f69874fc51298a1ab7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772272"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581131"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Udgående lagerhandling i POS
 
@@ -116,7 +116,7 @@ I visningen **Fuld ordreliste** kan du manuelt vælge en linje på listen og der
 
 ### <a name="over-delivery-shipping-validations"></a>Leveringsvalideringer for overlevering
 
-Valideringer sker under modtagelsesprocessen for dokumentlinjerne. De indeholder valideringer for overlevering. Hvis en bruger forsøger at modtage mere lager, end der blev bestilt på en indkøbsordre, men overlevering ikke er konfigureret, eller det modtagne antal overskrider den tolerance for overlevering, der er konfigureret for indkøbsordrelinjen, modtager brugeren en fejl og det er ikke tilladt at modtage for stort et antal.
+Valideringer sker under opfyldelsesprocessen for dokumentlinjerne. De indeholder valideringer for overlevering. Hvis en bruger forsøger at sende mere lager, end der blev bestilt på en flytteordre, men overlevering ikke er konfigureret, eller det afsendte antal overskrider den tolerance for overlevering, der er konfigureret for flytteordrelinjen, modtager brugeren en fejl og det er ikke tilladt at afsende for stort et antal.
 
 ### <a name="underdelivery-close-lines"></a>Lukkelinjer ved underlevering
 

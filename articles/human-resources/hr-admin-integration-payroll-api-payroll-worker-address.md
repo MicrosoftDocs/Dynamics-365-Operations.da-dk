@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 898ca7b33e39ec33990fecc4c3a7229620fbfddd5ce8ad14423af38047187e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3fc5f333333b9a832ecb9c185473e476ac231d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761968"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559503"
 ---
 # <a name="payroll-worker-address"></a>Lønarbejderadresse
 
@@ -34,22 +34,28 @@ Denne enhed angiver bopælsplaceringen for løn og arbejdsplaceringen for løn f
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab</br>**Fysisk navn**</br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab</br>**Fysisk navn**</br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
-| **By**</br>mshr_city</br>*Streng* | Skrivebeskyttet</br>Påkrævet | Byen, der er defineret for adressen.   |
-| **Personalenummer**</br>mshr_personnelnumber</br>*Streng* | Skrivebeskyttet</br>Påkrævet | Medarbejderens entydige personalenummer.  |
-| **Land og område**</br>mshr_countryregionid</br>*Streng* | Skrivebeskyttet</br>Påkrævet | Det land og område, der er defineret til adressen.  |
-| **Gyldig fra**</br>mshr_postaladdressvalidfrom</br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet </br>Påkrævet | Den dato, som adressen gælder fra. |
-| **Arbejdsadresse** </br> mshr_isworkedinaddressbr </br>*[Grupperet indstilling for mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Skrivebeskyttet</br>Påkrævet | Angiver, om adressen er der, hvor medarbejderen arbejder. |
-| **Region**</br>mshr_county</br>*Streng* | Skrivebeskyttet</br>Påkrævet | Regionen, der er defineret for adressen.  |
-| **Lønarbejderadresse-id**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Påkrævet</br>Systemgenereret | Systemgenereret GUID-værdi, der entydigt identificerer adressen.  |
-| **Primært felt**</br>mshr_primaryfield</br>*Streng* | Skrivebeskyttet</br>Påkrævet |  |
-| **Gade**</br>mshr_street</br>*Streng* | Skrivebeskyttet</br>Påkrævet | Gaden, der er defineret for adressen. |
-| **Gyldig til**</br>mshr_postaladdressvalidto</br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet </br>Påkrævet | Den dato, som adressen gælder til.  |
-| **Lokations-id**</br>mshr_locationidbr>*Streng* | Skrivebeskyttet <br>Påkrævet | Adressens id.  |
-| **Postnummer**</br>mshr_zipcode<br>*Streng* | Skrivebeskyttet <br>Påkrævet |Det identifikationsnummer, der er defineret for medarbejderen.  |
-| **Bopælsadresse**</br>mshr_islivedinaddressbr </br> *[Grupperet indstilling for mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Skrivebeskyttet</br>Påkrævet | Angiver, om adressen er der, hvor medarbejderen bor. |
-| **Stat**</br>mshr_state</br>*Streng* | Skrivebeskyttet</br>Påkrævet | Delstaten, der er defineret for adressen.  |
+| **Personalenummer**</br>mshr_personnelnumber</br>*Streng* | Skrivebeskyttet | Medarbejderens entydige personalenummer. |
+| **Lokations-id**</br>mshr_locationidbr>*Streng* | Skrivebeskyttet | Adressens id. |
+| **Bopælsadresse**</br>mshr_islivedinaddressbr </br> *[Grupperet indstilling for mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Skrivebeskyttet | En værdi, der angiver, om adressen er der, hvor medarbejderen bor. |
+| **Arbejdsadresse** </br> mshr_isworkedinaddressbr </br>*[Grupperet indstilling for mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Skrivebeskyttet | En værdi, der angiver, om adressen er der, hvor medarbejderen arbejder. |
+| **Land og område**</br>mshr_countryregionid</br>*Streng* | Skrivebeskyttet</br>Påkrævet | Det land eller område, der er defineret til adressen. |
+| **Postnummer**</br>mshr_zipcode<br>*Streng* | Skrivebeskyttet | Det identifikationsnummer, der er defineret for medarbejderen. |
+| **Gade**</br>mshr_street</br>*Streng* | Skrivebeskyttet | Gaden, der er defineret for adressen. |
+| **By**</br>mshr_city</br>*Streng* | Skrivebeskyttet | Byen, der er defineret for adressen. |
+| **Delstat**</br>mshr_state</br>*Streng* | Skrivebeskyttet | Det land eller område, der er defineret til adressen. |
+| **Region**</br>mshr_county</br>*Streng* | Skrivebeskyttet | Landet, der er defineret for adressen. |
+| **Gyldig fra**</br>mshr_postaladdressvalidfrom</br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet | Den dato, som adressen gælder fra. |
+| **Gyldig til**</br>mshr_postaladdressvalidto</br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet | Den dato, som adressen gælder til. |
+| **Primært felt**</br>mshr_primaryfield</br>*Streng* | Skrivebeskyttet | Primært felt. |
+| **Lønarbejderadresse-id**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Systemgenereret | En systemgenereret GUID-værdi (Global Unique Identifier), der identificerer adressen entydigt. |
+
+## <a name="relations"></a>Relationer
+
+| Værdi af egenskab | Relateret enhed | Navigationsegenskab | Samlingstype |
+| --- | --- | --- | --- |
+| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
 ## <a name="example-query"></a>Eksempelforespørgsel
 

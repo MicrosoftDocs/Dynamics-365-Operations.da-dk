@@ -1,7 +1,7 @@
 ---
 title: Oprette serviceopgaverelationer
 description: Du kan knytte serviceopgaver til serviceaftaler eller serviceordrer for at beskrive den serviceopgave, der skal udføres for aftalen eller ordren.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9e0e869f22fc6f294c2dfc35b883cafe0e4205c6269e1b1fec7b223c1a9ea6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b13309816af6984e77f828e827ecffe6266b3ede
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751787"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576538"
 ---
 # <a name="create-service-task-relations"></a>Oprette serviceopgaverelationer    
 

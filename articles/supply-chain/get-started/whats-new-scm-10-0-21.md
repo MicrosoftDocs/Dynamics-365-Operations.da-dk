@@ -4,18 +4,18 @@ description: I dette emne beskrives funktioner, der enten er nye eller ændrede 
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500549"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579730"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -26,20 +26,6 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 - **Forhåndsversion:** august 2021
 - **Generel tilgængelighed af version (selv-opdatering):** september 2021
 - **Generel tilgængelighed af version (automatisk opdatering):** oktober 2021
-
-## <a name="known-deployment-issue"></a>Kendt udrulningsproblem
-
-Når version 10.0.21 udrulles på IaaS, kan du få vist følgende advarsel om udrulning:
-
-**Advarselskode:** 95017
-
-**Advarselsmeddelelse:** Udførelse af scriptet \[SetupDiagnostics\] mislykkedes i forhold til VM
-
-Installationen vil fungere uanset advarslen. Følgende kendte fejl kan dog forekomme i Lifecycle Services (LCS):
-
-- På siden **Miljøovervågning** vises linket **Vis detaljerede versionsoplysninger** ikke, så du kan ikke se bestemte versioner af de moduler, der installeres i dit miljø. Uden disse data kan efterfølgende hotfixes mislykkes, fordi den proces, der anvender hotfixes, bruger disse data til at kontrollere, at forudsætningerne for modulversionen er opfyldt. Da det ikke er muligt at bruge PEAP-/forhåndsversion-build i produktionen eller at anvende hotfixes, skulle virkningen være minimal.
-- Fanerne **Performancemetrikværdier** og **Indeksanalyse** på siden **Miljøovervågning** under SQL-indsigt viser ingen data. Alle andre funktioner i **Miljøovervågning** fungerer efter hensigten.
-- Siden **Fuld systemdiagnosticering** vil ikke være tilgængelig. De tilknyttede data om statussen for natlige indsamlingskørsler og problemer, der registreres af reglerne, vises heller ikke.
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 

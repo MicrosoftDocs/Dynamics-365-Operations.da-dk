@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d5f84a1a6ff794cdc8b4b81e8518983789a0b33f1708719906f6ad094d9c4285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0b70411e6535b22d698545438dcb0b16935e731
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722625"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559577"
 ---
 # <a name="payroll-position-job"></a>Lønstillingsjob
 
@@ -34,16 +34,22 @@ Fysisk navn: mshr_payrollpositionjobentity.
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Betegnelse |
+| Egenskab</br>**Fysisk navn**</br>**_Type_** | Anvendelse | Beskrivelse |
 | --- | --- | --- |
-| **Job ID**<br>mshr_jobid<br>*Streng* | Skrivebeskyttet<br>Påkrævet |Jobbets id. |
-| **Gyldig fra**<br>mshr_validto<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet <br>Påkrævet | Den dato, som stilling og jobrelationen er gyldig fra. |
-| **Gyldig til**<br>mshr_validto<br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet <br>Påkrævet | Den dato, som stillingen og jobrelationen er gyldig til.  |
-| **Stillings-id**<br>mshr_positionid<br>*Streng* | Skrivebeskyttet<br>Påkrævet | Stillingens id. |
-| **Primært felt**<br>mshr_primaryfield<br>*Streng* | Påkrævet<br>Systemgenereret |  |
-| **Stillingsjob-id-værdi**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_PayrollPositionJobEntity for mshr_payrollpositionjobentity |Id for det job, der er tilknyttet stillingen.|
-| **Id-værdi til plan for fast løn**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_FixedCompPlan_id for mshr_payrollfixedcompensationplanentity  | Id for planen for fast løn, der er tilknyttet stillingen. |
-| **Lønstillingsjobbets enheds-id**<br>mshr_payrollpositionjobentityid<br>*Guid* | Påkrævet<br>Systemgenereret. | Systemgenereret GUID-værdi, der entydigt identificerer jobbet.  |
+| **Stillings-id**</br>mshr_positionid</br>*Streng* | Skrivebeskyttet | Stillingens id. |
+| **Gyldig fra**</br>mshr_validto</br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet | Den dato, som stilling og jobrelationen er gyldig fra. |
+| **Gyldig til**</br>mshr_validto</br>*Dato- og klokkeslætsforskydning* | Skrivebeskyttet | Den dato, som stillingen og jobrelationen er gyldig til. |
+| **Job ID**</br>mshr_jobid</br>*Streng* | Skrivebeskyttet | Jobbets id. |
+| **Primært felt**</br>mshr_primaryfield</br>*Streng* | Systemgenereret | Primært felt. |
+| **Lønstillingsjobbets enheds-id**</br>mshr_payrollpositionjobentityid</br>*Guid* | Systemgenereret. | En systemgenereret GUID-værdi (Global Unique Identifier), der identificerer jobbet entydigt. |
+
+## <a name="relations"></a>Relationer
+
+| Værdi af egenskab | Relateret enhed | Navigationsegenskab | Samlingstype |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | Ikke tilgængelig |
+| _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## <a name="example-query"></a>Eksempelforespørgsel
 

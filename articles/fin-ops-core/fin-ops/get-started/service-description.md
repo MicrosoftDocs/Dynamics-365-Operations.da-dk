@@ -2,19 +2,19 @@
 title: Servicebeskrivelse af Finance and Operations-apps
 description: Dette emne indeholder servicebeskrivelsen til Finance and Operations-apps.
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472499"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581810"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeskrivelse af Finance and Operations-apps
 
@@ -28,7 +28,7 @@ Finance and Operations-apps er ERP-software (Enterprise Resource Planning)-softw
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Sammen med [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastruktur](https://azure.microsoft.com/global-infrastructure/), [beregn](/azure/service-fabric/service-fabric-overview) og [databasetjenester](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) giver disse apps organisationer mulighed for at køre branchespecifikke og driftsmæssige forretningsprocesser. Kunder, der understøttes af deres implementeringspartner, bestemmer konfigurationen af den forretningsprogramlogik, der passer bedst sammen med deres entydige forretningsprocesser. Funktionalitet og forretningsprocesser kan udvides eller udvides via en eller en kombination af følgende løsninger:
+Sammen med [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastruktur](https://azure.microsoft.com/global-infrastructure/), [beregn](/azure/service-fabric/service-fabric-overview) og [databasetjenester](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) giver disse apps organisationer mulighed for at køre branchespecifikke og driftsmæssige forretningsprocesser. Kunder, der understøttes af deres implementeringspartner, bestemmer konfigurationen af den forretningsprogramlogik, der passer bedst sammen med deres entydige forretningsprocesser. Funktionalitet og forretningsprocesser kan udvides eller udvides via en eller en kombination af følgende løsninger:
 
 - Indbygget [tilpasningserfaring](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)-værktøjer
@@ -197,17 +197,17 @@ I følgende tabel beskrives nogle af de typiske scenarier og aktiviteter for tje
 | Klargøre alle produktionsforekomster og ikke-produktionsforekomster. | X | |
 | Validere installerede produktionsforekomster og ikke-produktionsforekomster. | | X |
 | **Tjenesteopdateringer** | |
-| Microsoft anvender serviceopdateringer til angivne forekomster uden for produktion og produktion. | X | X |
-| Hent opdateringen fra LCS, definer, udvikl og test opdateringen, og tilbage med kodeopdateringspakken til LCS. | | X |
-| Anmod om, at der skal anvendes forlængelsesopdateringer på produktionsforekomsten. | | X |
+| Anvend serviceopdateringer til angivne forekomster uden for produktion og produktion. | X | |
+| Anvend manuelle serviceopdateringer fra LCS på sandboksforekomster. Definer, udvikle, teste opdateringen og levere kodeopdateringspakken tilbage til LCS. | | X |
+| Anmod om, og planlæg, at der skal anvendes forlængelsesopdateringer på produktionsforekomsten. | | X |
 | Opret en kode og sikkerhedskopiering af data til produktionsforekomsten, før der anvendes opdateringer. | X | |
 | Hvis der opstår fejl, skal du tilbagerulle produktionsforekomsten til koden og datasikkerhedskopien. | X | |
 | **Datastyring (sikkerhedskopier, gendan og opdater)** | | |
 | Sikkerhedskopier databasen. | X | |
 | Fastlæg, at der er høj tilgængelighed og en plan for genoprettelse efter planen for udlæg. | X | |
-| Overvåge ydeevnen for databasen med produktionsforekomster. | X | X |
-| Indstil ydeevnen for databasen med produktionsforekomster. | X | X |
-| Start kopieringen af databasen med produktionsforekomster til en forekomst, der ikke er en produktionsforekomst. | | X |
+| Overvåge ydeevnen for databasen med produktionsforekomster. | X | |
+| Indstil ydeevnen for databasen med produktionsforekomster. | X | |
+| Udfør tidsopdatering af en database med produktionsforekomster til en forekomst, som ikke er en produktionsforekomst. | | X |
 | **Opdatere infrastrukturen** | | |
 | Planlæg regelmæssige opdateringer af infrastrukturen. | X | |
 | **Op- og nedskalering (brugere, lagring og forekomster)** | | |
@@ -215,7 +215,7 @@ I følgende tabel beskrives nogle af de typiske scenarier og aktiviteter for tje
 | Opdater brugsændringerne i værktøjet til estimator for LCS-abonnement. | | X |
 | Rapportér eventuelle væsentlige problemer med ydeevnen, der påvirker brugen af tjenesten. | | X |
 | Administrer proaktivt de ressourcer, der kræves til den relevante service. | X | |
-| Undersøg og fejlfinde hændelser. | X | X |
+| Undersøg og fejlfinde hændelser. | X | |
 | **Sikkerhed (brugeradgang)** | | |
 | Giv brugeren adgang til tjenesten. | | X |
 | Giver LCS-projektadgang til administration og operation af forekomster, der blev implementeret via LCS. | | X |
@@ -427,7 +427,7 @@ Serviceniveauaftalen (SLA) gælder for Microsofts onlinetjenester. Du kan finde 
 
 ### <a name="service-update"></a>Tjenesteopdatering
 
-Microsofts Finance and Operations-tjenestemiljøer på ensartet basis via serviceopdateringer. Kunder opretter deres egen serviceopdateringskalender ud fra deres forretningsbehov. Du kan finde flere oplysninger under [One Version-tjenesteopdateringer](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+Microsoft Finance and Operations-tjenestemiljøer på ensartet basis via serviceopdateringer. Kunder opretter deres egen serviceopdateringskalender ud fra deres forretningsbehov. Du kan finde flere oplysninger under [One Version-tjenesteopdateringer](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### <a name="user"></a>Bruger
 

@@ -10,17 +10,19 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSSh
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: ab7c23ac7cf70de08425783df231bc95a3252b332efa38d9b95fe8dd7f9508b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 11ee4beefed02425d4650de3e896e608d3d00ef5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776722"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577954"
 ---
 # <a name="shipment-consolidation-policies"></a>Forsendelseskonsolideringspolitikker
+
+[!include [banner](../includes/banner.md)]
 
 Processen til forsendelseskonsolidering, der bruger politikker for forsendelseskonsolidering, giver mulighed for automatiseret forsendelseskonsolidering og manuel frigivelse til lageret. Den automatiserede konsolidering, der var tilgængelig, før denne funktion blev introduceret, havde faste felter og var baseret på feltet **Konsolider forsendelse ved udlevering til lagersted**, der var angivet for et lagersted.
 

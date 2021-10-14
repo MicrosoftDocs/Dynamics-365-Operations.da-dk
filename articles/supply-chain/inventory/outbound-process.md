@@ -1,7 +1,7 @@
 ---
 title: Oversigt over udgående proces
 description: Dette emne indeholder en oversigt over den udgående proces i Lagerstyring.
-author: perlynne
+author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: fa80610f35bd46ed130a99abd4448ab51ac6ccfd3fb77f55dbbab0cd1734446d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27043828b44cf532d0d8d5091324ba30f3f90cf8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780620"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578506"
 ---
 # <a name="outbound-process-overview"></a>Oversigt over udgående proces
 
@@ -35,7 +35,7 @@ Dette emne indeholder en oversigt over den udgående proces i Lagerstyring.
 
 Udlagringsordrer bruges til at sammenkæde salgsordrelinjer og flytteordrelinjer med udgående plukprocesser, der bruger pluklister.
 
-Når pluklister genereres fra enten salgsordrer eller flytteordrer, oprettes udlagringsordrer og forsendelser automatisk. En plukliste har en en til en-relation med en forsendelse. Flytteordreforsendelsen eller salgsordrefølgesedlen kan behandles fra forsendelsen. 
+Når pluklister genereres fra enten salgsordrer eller flytteordrer, oprettes outputordrer og forsendelser automatisk. En plukliste har en en til en-relation med en forsendelse. Flytteordreforsendelsen eller salgsordrefølgesedlen kan behandles fra forsendelsen. 
 
 Følgende diagram viser en oversigt over processen for udgående ordrer. 
 
@@ -61,11 +61,11 @@ Gå til **Lagerstyring** \> **Konfiguration** \> **Parametre til lager- og lokat
 
 [![Indstillingen Afslut udgående lagerordre.](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-Når lagermedarbejderen reducerer pluklisteantallene, fjernes de tilsvarende lagerordreantal fra forsendelsen. Når pluklisten opdateres på et tidspunkt, rapporteres den resterende mængde tilbage til ordren, hvis indstillingen **Afslut udgående lagerordre** er angivet til **Ja**. Hvis den **Afslut udgående lagerordre** er angivet til **Nej**, bevares de resterende mængder som et åbent udlagringsordreantal og skal føjes til en ny plukliste som en del af funktionen **Åbne udlagringsordrer**. 
+Når lagermedarbejderen reducerer pluklisteantallene, fjernes de tilsvarende lagerordreantal fra forsendelsen. Når pluklisten opdateres på et tidspunkt, rapporteres den resterende mængde tilbage til ordren, hvis indstillingen **Afslut udgående lagerordre** er angivet til **Ja**. Hvis den **Afslut udgående lagerordre** er angivet til **Nej**, bevares de resterende mængder som et åbent outputordreantal og skal føjes til en ny plukliste som en del af funktionen **Åbne udlagringsordrer**. 
 
-[![Kommandoen Åbn udlagringsordrer i menuen Funktioner.](./media/open-output-order.png)](./media/open-output-order.png)
+[![Kommandoen Åbn outputordrer i menuen Funktioner.](./media/open-output-order.png)](./media/open-output-order.png)
 
-[![Menuen Funktioner på siden Åbne udlagringsordrer.](./media/open-output-order-function.png)](./media/open-output-order-function.png)
+[![Menuen Funktioner på siden Åbne outputordrer.](./media/open-output-order-function.png)](./media/open-output-order-function.png)
 
 ## <a name="reduce-quantity"></a>Reducer antal
 

@@ -1,7 +1,7 @@
 ---
 title: Periodisering af abonnementer
 description: Med serviceabonnementer periodiserer du omsætning manuelt i de perioder, der kommer efter den dato, hvor du har faktureret en gebyrtransaktion.
-author: ShylaThompson
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d51bcdcc268cf0662ef3d82e6cc8581fd4894bba4b2f1f905b9dfd324cce98
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d17737c415f6204359dae3ea4b2a0cb4ebb5d65
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719569"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580474"
 ---
 # <a name="accruing-subscriptions"></a>Periodisering af abonnementer 
 
@@ -65,7 +65,7 @@ Hvis omsætning for abonnementer skal kunne periodiseres, skal afkrydsningsfelte
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Aktivere omsætningsperiodisering for en abonnementsgruppe
 
-1.  Klik på **Servicestyring** \> **Opsætning** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
+Klik på **Servicestyring** \> **Opsætning** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
 
 ## <a name="periods"></a>Perioder
 
@@ -75,8 +75,8 @@ I oversigten nedenfor kan du se, hvilke periodiseringsperioder du kan oprette ti
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
