@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733605"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605273"
 ---
 # <a name="financial-reporting-faq"></a>Ofte stillede spørgsmål vedrørende Økonomirapportering
 
@@ -101,5 +101,28 @@ Ved historisk valutaomregning kan de foruddefinerede periodesaldi bruges i stede
 Når de data, der vises i rapporterne, opdateres, kan der ske en forsinkelse, fordi beløb skal genberegnes ved at kontrollere posteringsoplysningerne. Denne forsinkelse udløses, hver gang satserne opdateres eller flere posteringer bogføres. Hvis der f.eks. konfigureres tusindvis af konti til historikoversættelse flere gange om dagen, kan der komme en forsinkelse på op til en time, før dataene i rapporten opdateres. Hvis der derimod er et mindre antal specifikke konti, kan procestiden for opdateringer af rapportdata reduceres til minutter eller mindre.
 
 Når der genereres rapporter ved hjælp af valutaomregning for konti af typen Historisk type, vil der ligeledes blive foretaget en ekstra beregning pr. postering. Afhængigt af antallet af konti kan den tid, der oprettes for rapporter, være mere end dobbelt så mange.
+
+## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Hvad er de forkalkuleret datacenterintegrationsintervaller?
+
+Financial Reporter bruger 16 opgaver til at kopiere data fra Dynamics 365 Finance til Financial Reporter-databasen. Følgende tabel indeholder disse 16 opgaver og viser det interval, der angiver, hvor ofte hver opgave køres. Intervallerne kan ikke ændres.
+
+| Navn                                                       | Interval | Tidsmåling for interval |
+|------------------------------------------------------------|----------|-----------------|
+| AX 2012 Kontokategorier til kontokategori            | 41       | Minutter         |
+| AX 2012 Konti til konto                                | 7        | Minutter         |
+| AX 2012 Virksomheder til virksomhed                               | 300      | Sekunder         |
+| AX 2012 Virksomheder til organisation                          | 23       | Minutter         |
+| AX 2012 Dimensionskombinationer til dimensionskombination    | 1        | Minutter         |
+| AX 2012 Dimensionsværdier til dimensionsværdi                | 11       | Minutter         |
+| AX 2012 Dimensioner til dimension                            | 31       | Minutter         |
+| AX 2012 Valutakurser til valutakurs                    | 17       | Minutter         |
+| AX 2012 Regnskabsår til regnskabsår                        | 13       | Minutter         |
+| AX 2012 Finanstransaktioner til fakta                | 1        | Minutter         |
+| AX 2012 Organisationshierarkier til træ                   | 3,600    | Sekunder         |
+| AX 2012 Scenarier til scenarie                              | 29       | Minutter         |
+| AX 2012 Transaktionstypekvalifikatorer til faktatypekvalifikatorer | 19       | Minutter         |
+| Vedligeholdelsesopgave                                           | 1        | Minutter         |
+| MR-rapportdefinitioner til AX7 økonomiske rapporter             | 45       | Sekunder         |
+| MR-rapportversioner til AX Regnskabsrapportversioner         | 45       | Sekunder         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
