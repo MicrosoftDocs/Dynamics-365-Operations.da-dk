@@ -1,8 +1,8 @@
 ---
 title: Oversigt over økonomiske konsolideringer og valutaomregning
 description: I dette emne beskrives økonomisk konsolideringer og valutaomregning i Finans.
-author: aprilolson
-ms.date: 07/25/2019
+author: jiwo
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0df16db842c159b4db469139a0b5463a82e3fe07b4e23f8f7cf0272caaf23602
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
+ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748974"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7615929"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversigt over økonomiske konsolideringer og valutaomregning
 
@@ -182,5 +182,17 @@ Her er nogle af de konsolideringsscenarier, som Økonomirapportering understøtt
 ## <a name="generating-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 Oplysninger om scenarier, hvor du kan generere konsoliderede regnskaber, finder du i [Generere konsoliderede regnskaber](./generating-consolidated-financial-statements.md).
 
+## <a name="performance-enhancement-for-large-consolidations"></a>Ydeevneforbedring for store konsolideringer
+
+Miljøer med mange finanstransaktioner kan køre langsommere end det optimale. For at løse dette problem kan du konfigurere parallel behandling af batches, der bruger et brugerdefineret antal datoer. For at sikre, at løsningen fungerer efter hensigten, skal du føje et filtypepunkt til konsolideringen for at returnere en objektbeholder med datointervaller. Basisimplementeringen skal indeholde ét datointerval for start- og slutdatoen for konsolideringen. Datointervaller i basisimplementeringen valideres for at sikre, at de ikke indeholder huller eller overlap. Datointervaller bruges til at oprette parallelle batchbundter for hvert enkelt regnskab.
+
+Du kan tilpasse antallet af datointervaller for at opfylde organisationens behov. Når du tilpasser antallet af datointervaller, kan du forenkle testen og minimere effekten på eksisterende kode, da der ikke findes nogen fordelingslogik. De eneste nye test, der kræves, validerer oprettelsen af batchbundter, validerer datointervaller og tester en delmængde af datointervaller for at kontrollere, at batchene kan samles til den endelige batchopgave. 
+
+Denne funktion forbedrer konsolideringsprocessen i Finans, når processen køres i et batch. Forbedringerne øger ydeevnen af processen til konsolidering af finansmodulet ved at opdele konsolideringen i flere opgaver, der kan behandles parallelt. I standardmetoden til kørsel af en konsolidering behandler hver opgave otte dage med brug af finansaktiviteten. Der er dog tilføjet et udvidelsespunkt, hvor du kan tilpasse de nummeropgaver, der oprettes.
+
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+
+- **Modul:** Finans
+- **Funktionsnavn:** Ydeevneforbedring for store konsolideringer
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Bogføre en fritekstfaktura med et indbetalingskort
-description: Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
+description: Dette emne forklarer, hvordan du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8f3d164d1bcb29dce9ea1d5cfd1ac2dfe91156f378c099c289d23474fe83186
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5dd288583eab2bfe2d95c957685baabea5b68d92
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715883"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601484"
 ---
 # <a name="post-a-free-text-invoice-with-a-payment-slip"></a>Bogføre en fritekstfaktura med et indbetalingskort
 

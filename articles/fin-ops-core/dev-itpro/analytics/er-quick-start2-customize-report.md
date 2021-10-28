@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770014"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605224"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
 
@@ -160,7 +160,7 @@ Hvis du vil føje standard-ER-konfigurationerne til din aktuelle forekomst af Mi
     - **Tilknytning af betalingsmodel 1611** – denne konfiguration indeholder den [modeltilknytning](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-komponent, der beskriver, hvordan datamodellen udfyldes med applikationsdata under kørsel.
     - **BACS (Storbritannien)** – denne konfiguration indeholder [format](general-electronic-reporting.md#FormatComponentOutbound) og formattilknytnings-ER-komponenter. Formatkomponenten angiver rapportlayoutet. Komponenten til formattilknytning indeholder modeldatakilden og angiver, hvordan rapportlayoutet angives ved hjælp af denne datakilde på kørselstidspunktet.
 
-![Siden Konfigurationer.](./media/er-quick-start2-imported-solution1.png)
+![Siden Konfigurationer med de angivne ER-konfigurationer, der er tilgængelige i træet.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Klargøre en kreditorbetaling til behandling
 
@@ -222,7 +222,7 @@ Du skal konfigurere den elektroniske betalingsmåde, så den bruger den importer
 4. I oversigtspanelet **Filformater** til at angive indstillingen **Generelt elektronisk eksportformat** til **Ja**.
 5. I feltet **Eksportér formatkonfiguration** skal du vælge formatkonfigurationen **BACS (Storbritannien)**.
 
-    ![Betalingsmåder – kreditorside.](./media/er-quick-start2-method-of-payment1.png)
+    ![Betalingsmåder – kreditorer til opsætning af elektronisk betalingsmåde til behandling af kreditorbetalinger i et standardformat.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Vælg **Gem**.
 
@@ -273,7 +273,7 @@ I dette tilfælde skal du som repræsentant for Litware, Inc. oprette (aflede) e
 
 Version 1.1.1 af **BACS (UK – brugerdefineret)** ER-formatkonfiguration er oprettet. Denne version har [statussen](general-electronic-reporting.md#component-versioning) **Kladde** og kan redigeres. Det aktuelle indhold af det brugerdefinerede ER-format svarer til indholdet af det format, der er leveret af Microsoft.
 
-![Siden Konfigurationer.](./media/er-quick-start2-derived-format-configuration1.png)
+![Konfigurationsside med Version 1.1.1 af BACS (UK – brugerdefineret) ER-formatkonfiguration.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Redigere et brugerdefineret format
 
@@ -349,7 +349,7 @@ Du skal konfigurere den elektroniske betalingsmåde, så det brugerdefinerede ER
 4. I oversigtspanelet **Filformat** til at angive indstillingen **Generelt elektronisk eksportformat** til **Ja**.
 5. I feltet **Eksportér formatkonfiguration** skal du vælge formatkonfigurationen **BACS (UK brugerdefineret)**.
 
-    ![Betalingsmåder – kreditorside.](./media/er-quick-start2-method-of-payment2.png)
+    ![Betalingsmåder – kreditorer til opsætning af elektronisk betalingsmåde til behandling af kreditorbetalinger i et brugerdefineret format.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Vælg **Gem**.
 
@@ -378,7 +378,7 @@ Du skal konfigurere den elektroniske betalingsmåde, så det brugerdefinerede ER
 
         Bemærk, at betalingslinjen i den genererede fil nu [starter](#PositionSWIFTCode) med den SWIFT-kode, der blev [angivet](#DefineSWIFTCode) for bankkontoen for den kreditor, hvor betalingen er behandlet, i overensstemmelse med strukturen i det brugerdefinerede ER-format.
 
-        ![Betalingsfil i TXT-format.](./media/er-quick-start2-payment-file2.png)
+        ![Den betalingsfil i TXT-format, der bruges til behandling af kreditorbetalingen.](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Importere nye version af standardkonfigurationer af ER-format
 
@@ -395,7 +395,7 @@ Hvis du vil tilføje nye versioner af ER-konfigurationerne til den aktuelle Fina
 5. I oversigtspanelet **Versioner** skal du vælge version **3.3** for den valgte ER-formatkonfiguration.
 6. Vælg **Importér** for at hente den valgte version fra Global-lageret til den aktuelle Finans-forekomst.
 
-![Siden Konfigurationslager.](./media/er-quick-start2-import-solution2.png)
+![Siden Konfigurationslager, oversigtspanelet Versioner, knappen Import.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Hvis du har problemer med at få adgang til det [globale lager](er-download-configurations-global-repo.md), kan du i stedet [hente konfigurationer](download-electronic-reporting-configuration-lcs.md) fra LCS i stedet.
@@ -507,7 +507,7 @@ Hvis du vil begynde at bruge den nye funktionalitet i version 3.3 af formatet **
 
         Bemærk, at betalingslinjen i den genererede fil starter med den SWIFT-kode, der blev angivet for bankkontoen for den kreditor, hvor betalingen er behandlet.
 
-        ![Betalingsfil i TXT-format.](./media/er-quick-start2-payment-file3.png)
+        ![Den betalingsfil i TXT-format, der bruges til behandling af kreditorbetalingen ved hjælp af ER-format i ny base.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Yderligere ressourcer
 

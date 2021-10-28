@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
+ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488077"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7644521"
 ---
 # <a name="provision-human-resources"></a>Klargøring af Human Resources
 
@@ -49,7 +49,7 @@ Testmiljøer er ikke beregnet til brug som produktionsmiljøer. De er begrænset
 Når du opretter et testmiljø i Personale, oprettes der også et Power Apps-forsøgsmiljø i lejeren, som er knyttet til Personale-miljøet. Miljøet, Power Apps, der kaldes "TestDrive", har samme forsøgsperiode som personalemiljøet.
 
 > [!NOTE]
-> Klargøring af et testmiljø i Personale mislykkes, hvis den godkendte bruger ikke har rettigheder til at oprette Power Apps-forsøgsmiljøer. Brugeren skal være medtaget i den brugergruppe, der kan oprette testmiljøer i Power Platform-administrationen. Du kan finde flere oplysninger under [Styre, hvem der kan oprette og administrere miljøer i Power Platform-administrationen](//power-platform/admin/control-environment-creation).
+> Klargøring af et testmiljø i Personale mislykkes, hvis den godkendte bruger ikke har rettigheder til at oprette Power Apps-forsøgsmiljøer. Brugeren skal være medtaget i den brugergruppe, der kan oprette testmiljøer i Power Platform-administrationen. Du kan finde flere oplysninger under [Styre, hvem der kan oprette og administrere miljøer i Power Platform-administrationen](/power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planlægge miljøer i Human Resources
 

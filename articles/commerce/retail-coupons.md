@@ -1,8 +1,8 @@
 ---
 title: Konfigurere kuponer for detailsalg
-description: Dette emne indeholder en oversigt over kuponer og en beskrivelse af, hvordan de konfigureres.
-author: scott-tucker
-ms.date: 06/04/2020
+description: Dette emne indeholder en oversigt over kuponer og en beskrivelse af, hvordan de konfigureres i Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bc79970528e23397b756fa15a715fba834edcc06e4522c6c35b64aede4976300
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745302"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603117"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurere kuponer for detailsalg
 
@@ -40,6 +40,8 @@ Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Der
 > Når en kupon er knyttet til en rabat, bliver flere af felterne på rabatsiden i Commerce skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.
 > 
 > Når du bruger kuponen i callcenter-kanalen, skal du vælge knappen **Genberegn** **(fanen Sælg > Beregn > Genberegn)** for at få rabatten tilknyttet kuponen, der skal anvendes. Dette ekstra trin vil blive fjernet i en fremtidig version.
+
+Hvis du vil anvende en kupon på en salgstransaktion i POS, kan du bruge **Kuponkode** eller **Kuponstregkode**. Hvis du vil bruge **kuponkode**, skal handlingen **Tilføj kuponkode** konfigureres i POS **Transaktion** [skærmlayoutet](pos-screen-layouts.md). Vælg **Tilføj kuponkode**, og angiv kuponkoden. Du kan også scanne stregkoden eller indtaste stregkoden ved hjælp af det numeriske tastatur på **Transaktionsskærmbilledet**, hvis du vil bruge **Kuponstregkoden**.
 
 ### <a name="limited-use-coupons"></a>Kuponer med begrænset anvendelse
 

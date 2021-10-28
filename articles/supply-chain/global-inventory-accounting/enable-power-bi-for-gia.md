@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 562b56a85ad2f40cb673f8f2101bf92c39853d1f1a087d0498b6f7d19d1cca01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b00de29a4f12719e469c063861b52e0fc20c5f1
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773339"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641105"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Aktivere Power BI til Global Inventory Accounting
 
@@ -49,7 +49,10 @@ Følg disse trin for at konfigurere Power BI-integrationen.
 1. Konfigurer Power BI-rapporten for **Global Inventory Accounting** ved at følge disse trin:
 
     1. Gå til **Mit arbejdsområde**, find datasættet til Global Inventory Accounting, og vælg derefter **Indstillinger** i menuen **Indstillinger**.
-    1. Udvid **Parametre** i **Indstillinger for Global Inventory Accounting**, og opdater alle parametre efter behov.
+    1. Udvid **Parametre** i **Indstillinger for globalt lagerregnskab**, og opdater alle parametre efter behov. Du skal især kontrollere følgende indstillinger:
+        1. Overskriv standardværdierne for **Dataverse Url**-adressen og **miljø-id** ved hjælp af de værdier, der findes på siden **Miljødetaljer** i LCS (i **Power Platform-integrationssektionen**).
+        1. Vælg linket **Rediger legitimationsoplysninger** ud for **cd-etiketten** i afsnittet om **legitimationsoplysninger for datakilden**. Log derefter på din Dataverse-konto ved hjælp af **OAuth2**-godkendelsesmetoden.
+    1. Kontroller, at de Power BI-rapporter, der findes i **Mit arbejdsområde \> Rapporter \> Globalt lagerregnskab**, nu fungerer korrekt og viser indhold fra systemet.
 
 1. Registrer programmet som beskrevet i [Konfigurere PowerBI.com-integration](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).
 1. Integrer Power BI-rapporten for **Global Inventory Accounting** i Dynamics 365 Supply Chain Management ved at følge disse trin:

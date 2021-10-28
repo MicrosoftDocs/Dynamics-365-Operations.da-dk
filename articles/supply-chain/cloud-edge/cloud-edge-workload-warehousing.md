@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500421"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641154"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder
 
@@ -171,7 +171,8 @@ Følgende warehouse management-funktioner understøttes ikke i øjeblikket i arb
 - Behandling med negativ disponibel lagerbeholdning.
 - Behandling af lagerstedsarbejde med forsendelsesnotaer.
 - Behandling af lagerstedsarbejde med materialehåndtering/warehouse automation.
-- Brug af billede af produktmasterdata (f.eks. på mobilappen Warehouse Management).
+- Billeder af produktmasterdata (f.eks. på mobilappen Warehouse Management).
+- Datadeling af produkter på tværs af firma.
 
 > [!WARNING]
 > Nogle af lagerstedsfunktionerne er ikke tilgængelige for lagersteder, der kører arbejdsbyrderne for Warehouse Management på en skaleringsenhed, og de understøttes heller ikke i hubben eller i arbejdsbyrden for skaleringsenheden.
@@ -188,7 +189,6 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 |--------------------------------------------------------------|-----|------------------------------|
 | Behandling af kildedokument                                   | Ja | Ingen |
 | Last- og transportstyringsbehandling                | Ja, men kun processerne til belastningsplanlægning. Behandlingen af transportstyring understøttes ikke  | Ingen |
-| Modtagelse af varer undervejs og landingsomkostninger                                         | Ja | Ingen |
 | Frigiv til lagersted                                         | Ja | Ingen |
 | Planlagt direkte levering                                        | Ingen  | Ingen |
 | Konsolidering af forsendelse                                       | Ja, når du bruger belastningsplanlægning | Ja |
@@ -222,9 +222,10 @@ I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor
 
 | Behandling                                                          | Hub | Udførelse af lagerstedsarbejdsbyrde på skaleringsenheder<BR>*(Varer, der er markeret "Ja", gælder kun for lagerstedsordrer)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Behandling&nbsp;af&nbsp;kildedokument                             | Ja | Ingen |
-| Last- og transportstyringsbehandling                    | Ja | Ingen |
-| Bekræftelse af indgående forsendelse                                    | Ja | Ingen |
+| Behandling&nbsp;af&nbsp;kildedokument                             | Ja | Nr. |
+| Last- og transportstyringsbehandling                    | Ja | Nr. |
+| Modtagelse af varer undervejs og landingsomkostninger                       | Ja | Nr. |
+| Bekræftelse af indgående forsendelse                                    | Ja | Nr. |
 | Frigivelse af indkøbsordre til lagersted (behandling af lagerstedsordre) | Ja | Ingen |
 | Annullering af ordrelinjer på lagersted<p>Bemærk, at dette kun understøttes, når der ikke er sket nogen registrering for linjen</p> | Ja | Ingen |
 | Indkøbsordrevare til modtagelse og læg på lager                       | <p>Ja,&nbsp;når&nbsp;der&nbsp;ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, når en indkøbsordre ikke er del af en <i>last</i></p> |

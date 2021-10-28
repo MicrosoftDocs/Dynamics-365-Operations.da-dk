@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0b324891b38f851f8cce9210e3d09a26d567a291
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b1a40db34d42c3f25e910309a9e5ef7b0e7e0361
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386581"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599369"
 ---
 # <a name="enable-customer-payment-predictions"></a>Aktivere forudsigelser om debitorbetalinger
 
@@ -41,7 +41,7 @@ Dette emne forklarer, hvordan du aktiverer og konfigurere funktionen Forudsigels
 2. Slå funktionen til Indsigt i debitorbetalinger til:
 
     1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
-    2. Find den funktion, der kaldes **Indsigt i debitorbetaling (prøveversoin)**.
+    2. Find den funktion, der kaldes **(Forhåndsversion) Indsigt i debitorbetaling**.
     3. Vælg **Aktiver nu**.
 
     Funktionen Indsigter i debitorbetaling er nu aktiveret og klar til at blive konfigureret.

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere overførselsdokumenter for varebevægelser inden for et firma
-description: Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer i en virksomhed.
+description: Denne fremgangsmåde viser, hvordan du konfigurerer dokumenter til flytning af varer i en virksomhed.
 author: v-oloski
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4cd61ea5052c817e585252134dee717a376ad0371782d7382978d1742c2bbf2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80805bf30b4be753d7543ed4c6de30401d36e981
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729506"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601444"
 ---
 # <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a>Konfigurere overførselsdokumenter for varebevægelser inden for et firma
 
