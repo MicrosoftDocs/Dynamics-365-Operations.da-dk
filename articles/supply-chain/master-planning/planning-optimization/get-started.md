@@ -98,10 +98,10 @@ Forbindelsesstatussen angiver den aktuelle status for forbindelsen mellem Supply
 | Forbindelsesstatus | Beskrivelse | Kan Planlægningsoptimering anvendes? |
 |---|---|---|
 | Tilsluttet | Der er oprettet en forbindelse mellem Planlægningsoptimeringstjenesten og Supply Chain Management. | Ja |
-| Forbindelse aktiveres | En anmodning om at aktivere forbindelsen til Planlægningsoptimeringstjenesten er i øjeblikket i gang. | Nr. |
-| Forbindelse afbrudt | Der er ingen forbindelse til Planlægningsoptimeringstjenesten. Forbindelsen kan slås til fra LCS, som beskrevet tidligere i dette emne. | Nr. |
-| Forbindelse deaktiveres | En anmodning om at deaktivere forbindelsen til Planlægningsoptimeringstjenesten er i øjeblikket i gang. | Nr. |
-| Henter status | Systemet venter på statusoplysninger fra Planlægningsoptimeringstjenesten. | Nr. |
+| Forbindelse aktiveres | En anmodning om at aktivere forbindelsen til Planlægningsoptimeringstjenesten er i øjeblikket i gang. | Nej |
+| Forbindelse afbrudt | Der er ingen forbindelse til Planlægningsoptimeringstjenesten. Forbindelsen kan slås til fra LCS, som beskrevet tidligere i dette emne. | Nej |
+| Forbindelse deaktiveres | En anmodning om at deaktivere forbindelsen til Planlægningsoptimeringstjenesten er i øjeblikket i gang. | Nej |
+| Henter status | Systemet venter på statusoplysninger fra Planlægningsoptimeringstjenesten. | Nej |
 
 ### <a name="the-use-planning-optimization-option"></a>Indstillingen Brug Planlægningsoptimering
 

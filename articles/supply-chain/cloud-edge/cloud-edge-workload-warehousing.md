@@ -187,34 +187,34 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 
 | Behandling                                                      | Hub | Udførelse af lagerstedsarbejdsbyrde på skaleringsenheder |
 |--------------------------------------------------------------|-----|------------------------------|
-| Behandling af kildedokument                                   | Ja | Ingen |
-| Last- og transportstyringsbehandling                | Ja, men kun processerne til belastningsplanlægning. Behandlingen af transportstyring understøttes ikke  | Ingen |
-| Frigiv til lagersted                                         | Ja | Ingen |
-| Planlagt direkte levering                                        | Ingen  | Ingen |
+| Behandling af kildedokument                                   | Ja | Nej |
+| Last- og transportstyringsbehandling                | Ja, men kun processerne til belastningsplanlægning. Behandlingen af transportstyring understøttes ikke  | Nej |
+| Frigiv til lagersted                                         | Ja | Nej |
+| Planlagt direkte levering                                        | Nej  | Nej |
 | Konsolidering af forsendelse                                       | Ja, når du bruger belastningsplanlægning | Ja |
-| Behandling af forsendelsesbølge                                     | Ingen  |Ja, undtagen **Indlæs bygning og sortering** |
-| Vedligeholde forsendelser for bølge                                  | Ingen  | Ja|
-| Lagerstedsbehandling (inkl. udskrivning af nummerplade)        | Ingen  | Ja, men kun for ovennævnte understøttede egenskaber |
-| Klyngepluk                                              | Ingen  | Ja|
-| Manuel behandling af emballage, herunder arbejdet "Plukning af pakket container" | Ingen <P>En del af behandlingen kan udføres efter den første plukproces, der håndteres af en skaleringsenhed, men det frarådes på grund af følgende blokerede operationer.</p>  | Ingen |
-| Fjern container fra gruppe                                  | Ingen  | Ingen |
-| Behandling af udgående sortering                                  | Ingen  | Ingen |
+| Behandling af forsendelsesbølge                                     | Nej  |Ja, undtagen **Indlæs bygning og sortering** |
+| Vedligeholde forsendelser for bølge                                  | Nej  | Ja|
+| Lagerstedsbehandling (inkl. udskrivning af nummerplade)        | Nej  | Ja, men kun for ovennævnte understøttede egenskaber |
+| Klyngepluk                                              | Nej  | Ja|
+| Manuel behandling af emballage, herunder arbejdet "Plukning af pakket container" | Nej <P>En del af behandlingen kan udføres efter den første plukproces, der håndteres af en skaleringsenhed, men det frarådes på grund af følgende blokerede operationer.</p>  | Nej |
+| Fjern container fra gruppe                                  | Nej  | Nej |
+| Behandling af udgående sortering                                  | Nej  | Nej |
 | Udskrivning af lastrelaterede dokumenter                           | Ja | Ja|
-| Fragtseddel og ASN-generering                            | Ingen  | Ja|
-| Forsendelsesbekræftelse                                             | Ingen  | Ja|
-| Forsendelsesbekræftelse med "Bekræft og flyt"            | Ingen  | Ingen |
-| Behandling af følgesedler og fakturering                        | Ja | Ingen |
-| Kort pluk (salgs- og flytteordrer)                    | Ingen  | Ja, uden at fjerne reservationer for kildedokumenter|
-| Overpluk (salgs- og flytteordrer)                     | Ingen  | Ja|
-| Ændring af arbejdssteder (salgs- og flytteordrer)         | Ingen  | Ja|
-| Fuldføre arbejde (salgs- og flytteordrer)                    | Ingen  | Ja|
+| Fragtseddel og ASN-generering                            | Nej  | Ja|
+| Forsendelsesbekræftelse                                             | Nej  | Ja|
+| Forsendelsesbekræftelse med "Bekræft og flyt"            | Nej  | Nej |
+| Behandling af følgesedler og fakturering                        | Ja | Nej |
+| Kort pluk (salgs- og flytteordrer)                    | Nej  | Ja, uden at fjerne reservationer for kildedokumenter|
+| Overpluk (salgs- og flytteordrer)                     | Nej  | Ja|
+| Ændring af arbejdssteder (salgs- og flytteordrer)         | Nej  | Ja|
+| Fuldføre arbejde (salgs- og flytteordrer)                    | Nej  | Ja|
 | Udskrive arbejdsordrerapport                                            | Ja | Ja|
-| Bølgelabel                                                   | Ingen  | Ja|
-| Arbejdsopdeling                                                   | Ingen  | Ja|
-| Arbejdsbehandling – Styres af "Lastning af transport"            | Ingen  | Ingen |
-| Reducer det antal, der er plukket                                       | Ingen  | Ingen |
-| Tilbagefør arbejde                                                 | Ingen  | Ingen |
-| Tilbagefør forsendelsesbekræftelse                                | Ingen  | Ja|
+| Bølgelabel                                                   | Nej  | Ja|
+| Arbejdsopdeling                                                   | Nej  | Ja|
+| Arbejdsbehandling – Styres af "Lastning af transport"            | Nej  | Nej |
+| Reducer det antal, der er plukket                                       | Nej  | Nej |
+| Tilbagefør arbejde                                                 | Nej  | Nej |
+| Tilbagefør forsendelsesbekræftelse                                | Nej  | Ja|
 
 ### <a name="inbound"></a>Indgående
 
@@ -222,31 +222,31 @@ I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor
 
 | Behandling                                                          | Hub | Udførelse af lagerstedsarbejdsbyrde på skaleringsenheder<BR>*(Varer, der er markeret "Ja", gælder kun for lagerstedsordrer)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Behandling&nbsp;af&nbsp;kildedokument                             | Ja | Nr. |
-| Last- og transportstyringsbehandling                    | Ja | Nr. |
-| Modtagelse af varer undervejs og landingsomkostninger                       | Ja | Nr. |
-| Bekræftelse af indgående forsendelse                                    | Ja | Nr. |
-| Frigivelse af indkøbsordre til lagersted (behandling af lagerstedsordre) | Ja | Ingen |
-| Annullering af ordrelinjer på lagersted<p>Bemærk, at dette kun understøttes, når der ikke er sket nogen registrering for linjen</p> | Ja | Ingen |
+| Behandling&nbsp;af&nbsp;kildedokument                             | Ja | Nej |
+| Last- og transportstyringsbehandling                    | Ja | Nej |
+| Modtagelse af varer undervejs og landingsomkostninger                       | Ja | Nej |
+| Bekræftelse af indgående forsendelse                                    | Ja | Nej |
+| Frigivelse af indkøbsordre til lagersted (behandling af lagerstedsordre) | Ja | Nej |
+| Annullering af ordrelinjer på lagersted<p>Bemærk, at dette kun understøttes, når der ikke er sket nogen registrering for linjen</p> | Ja | Nej |
 | Indkøbsordrevare til modtagelse og læg på lager                       | <p>Ja,&nbsp;når&nbsp;der&nbsp;ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, når en indkøbsordre ikke er del af en <i>last</i></p> |
 | Indkøbsordrelinje til modtagelse og læg på lager                       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, når en indkøbsordre ikke er del af en <i>last</i></p></p> |
-| Modtagelse af returordre og placering på lager                              | Ja | Ingen |
+| Modtagelse af returordre og placering på lager                              | Ja | Nej |
 | Modtagelse af blandede id'er og placering på lager                       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja |
 | Modtagelse af varelast                                              | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
 | Modtagelse af nummerplade og placering på lager                             | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
-| Modtagelse af vare i flytteordre og placering på lager                       | Ja | Ingen |
-| Flytteordrelinje til modtagelse og placering på lager                       | Ja | Ingen |
+| Modtagelse af vare i flytteordre og placering på lager                       | Ja | Nej |
+| Flytteordrelinje til modtagelse og placering på lager                       | Ja | Nej |
 | Annuller arbejde (indgående)                                            | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, men kun når indstillingen <b>Fjern registrering af modtagelse, når du annullerer arbejde</b> (på siden <b>Parametre til warehouse management</b>) er ryddet</p> |
-| Behandle indkøbsordre - produktkvittering                        | Ja | Ingen |
+| Behandle indkøbsordre - produktkvittering                        | Ja | Nej |
 | Indkøbsordre, der modtages med underlevering                      | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja, men kun ved at foretage en annulleringsanmodning fra hubben |
 | Indkøbsordre, der modtages med overlevering                       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja  |
-| Modtagelse med oprettelse af *Cross-docking*-arbejde                 | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ingen |
-| Modtagelse med oprettelse af *Kvalitetsordre*-arbejde                  | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ingen |
-| Modtagelse med oprettelse af *Kvalitetsvareprøve*-arbejde          | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ingen |
-| Modtagelse med oprettelse af *Kvalitet i kvalitetskontrol*-arbejde       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ingen |
-| Modtagelse med oprettelse af kvalitetsordre                            | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ingen |
-| Arbejdsbehandling – Styres af *Læg på lager-klynge*                 | Ja | Ingen |
-| Arbejdsbehandling med *Kort pluk*                               | Ja | Ingen |
+| Modtagelse med oprettelse af *Cross-docking*-arbejde                 | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
+| Modtagelse med oprettelse af *Kvalitetsordre*-arbejde                  | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
+| Modtagelse med oprettelse af *Kvalitetsvareprøve*-arbejde          | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
+| Modtagelse med oprettelse af *Kvalitet i kvalitetskontrol*-arbejde       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
+| Modtagelse med oprettelse af kvalitetsordre                            | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
+| Arbejdsbehandling – Styres af *Læg på lager-klynge*                 | Ja | Nej |
+| Arbejdsbehandling med *Kort pluk*                               | Ja | Nej |
 | Indlæsning af nummerplade                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lagerstedsoperationer og håndtering af undtagelser
@@ -261,20 +261,20 @@ I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer o
 | Skift lagersted                                   | Ja | Ja                          |
 | Bevægelse                                           | Ja | Ja                          |
 | Bevægelse efter skabelon                               | Ja | Ja                          |
-| Overførsel af lagersted                                 | Ja | Ingen                           |
-| Oprette flytteordre fra lagerstedsappen           | Ja | Ingen                           |
+| Overførsel af lagersted                                 | Ja | Nej                           |
+| Oprette flytteordre fra lagerstedsappen           | Ja | Nej                           |
 | Regulering (ind/ud)                                | Ja | Ja, men ikke for det udreguleringsscenarie, hvor lagerreservationen skal fjernes ved hjælp af indstillingen **Fjern reservationer** for lagerreguleringstyperne</p>                           |
-| Ændring af lagerstatus                            | Ja | Ingen                           |
+| Ændring af lagerstatus                            | Ja | Nej                           |
 | Behandling af cyklusoptælling og optællingsafvigelser | Ja | Ja                           |
 | Genudskrive etiket (udskrive nummerplade)             | Ja | Ja                          |
-| Id-build                                | Ja | Ingen                           |
-| Id-pause                                | Ja | Ingen                           |
-| Pak til indlejrede id'er                                | Ja | Ingen                           |
-| Chaufførens check-in                                    | Ja | Ingen                           |
-| Chaufførens check-ud                                   | Ja | Ingen                           |
+| Id-build                                | Ja | Nej                           |
+| Id-pause                                | Ja | Nej                           |
+| Pak til indlejrede id'er                                | Ja | Nej                           |
+| Chaufførens check-in                                    | Ja | Nej                           |
+| Chaufførens check-ud                                   | Ja | Nej                           |
 | Skifte batchdispositionskode                      | Ja | Ja                          |
 | Vis oversigt over åbne opgaver                             | Ja | Ja                          |
-| Konsolider id'er                         | Ja | Ingen                           |
+| Konsolider id'er                         | Ja | Nej                           |
 | Behandling af min./maks. og zonetærskelopfyldning| Ja <p>Anbefalingen er ikke at medtage de samme lokationer som en del af forespørgslerne</p>| Ja                          |
 | Behandle allokeringsgenopfyldning                  | Ja  | Ja<p>Bemærk, at opsætningen skal udføres på skaleringsenheden</p>                           |
 | Blokere og fjerne blokering af arbejde                             | Ja | Ja                          |
@@ -290,8 +290,8 @@ I følgende tabel vises en oversigt over produktionsscenarier for warehouse mana
 |---------|-----|------------------------------|
 | Færdigmelde og lægge færdigvarer på lager | Ja | Ja |
 | Samprodukt og biprodukt, læg på lager | Ja | Ja |
-| <p>Alle andre warehouse management-processer, der er relateret til produktion, omfatter:</p><li>Frigiv til lagersted</li><li>Produktionsbølgebehandling</li><li>Råvarepluk</li><li>Kanban-læg på lager</li><li>Kanban-pluk</li><li>Start produktionsordre</li><li>Produktionsspild</li><li>Sidste produktionspalle</li><li>Registrer materialeforbrug</li><li>Tøm kanban</li></ul> | Ja | Ingen |
-| Genopfyldning af råvarer | Ingen | Ingen |
+| <p>Alle andre warehouse management-processer, der er relateret til produktion, omfatter:</p><li>Frigiv til lagersted</li><li>Produktionsbølgebehandling</li><li>Råvarepluk</li><li>Kanban-læg på lager</li><li>Kanban-pluk</li><li>Start produktionsordre</li><li>Produktionsspild</li><li>Sidste produktionspalle</li><li>Registrer materialeforbrug</li><li>Tøm kanban</li></ul> | Ja | Nej |
+| Genopfyldning af råvarer | Nej | Nej |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Vedligeholde skaleringsenheder til lagerstedsudførelse
 

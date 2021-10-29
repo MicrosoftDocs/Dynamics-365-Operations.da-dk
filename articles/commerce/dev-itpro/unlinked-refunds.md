@@ -77,11 +77,11 @@ Ikke alle betalingsmetodevarianter understøtter refusioner, der ikke er sammenk
 | visahipotecario       | Ja           | Ja             |
 | visasaraivacard       | Ja           | Ja             |
 | vpay                  | Ja           | Ja             |
-| givex                 | **Nr.**        | Ja             |
-| svs                   | **Nr.**        | Ja             |
+| givex                 | **Nej**        | Ja             |
+| svs                   | **Nej**        | Ja             |
 | cup                   | Ja           | Ja             |
 | diners                | Ja           | Ja             |
-| interac               | **Nr.**        | Ja             |
+| interac               | **Nej**        | Ja             |
 | jcb                   | Ja           | Ja             |
 | jcb_applepay          | Ja           | Ja             |
 | unionpay              | Ja           | Ja             |
