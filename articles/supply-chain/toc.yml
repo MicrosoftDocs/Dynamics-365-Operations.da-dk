@@ -74,12 +74,12 @@
                   items:
                     - name: Nyheder eller ændringer i Supply Chain Management-startside
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.23
+                      href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (november 2021)
                       href: get-started/whats-new-scm-10-0-22.md
                     - name: Supply Chain Management 10.0.21 (oktober 2021)
                       href: get-started/whats-new-scm-10-0-21.md
-                    - name: Supply Chain Management 10.0.20 (august 2021)
-                      href: get-started/whats-new-scm-10-0-20.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner på startsiden
@@ -1535,7 +1535,7 @@
               items:
                 - name: Lagerkladder
                   href: inventory/inventory-journals.md
-                - name: Arbejdsgange for godkendelse af lagerkladde
+                - name: Arbejdsprocesser for godkendelse af lagerkladde
                   href: inventory/inventory-journal-workflow.md
                 - name: Lagerlokationer
                   href: inventory/inventory-locations.md
@@ -1659,6 +1659,8 @@
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Varedisponering med samhandelsaftaler vedrørende indkøb
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: 'Dato- og tidsparametre, der ikke bruges af Planlægningsoptimering'
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Sikkerhedsmargener
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Forsinkelsestolerance (negative dage)
@@ -1799,9 +1801,9 @@
           items:
             - name: Mobilapp-startside
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Arbejdsområder til mobile enheder
+            - name: Arbejdsområder til mobilenheder
               items:
-                - name: Tilgængelige arbejdsområder til mobile enheder
+                - name: Tilgængelige arbejdsområder til mobilenheder
                   href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Aktivadministration
                   href: asset-management/asset-management-mobile-workspace.md
@@ -1829,7 +1831,7 @@
                   href: sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Kreditorsamarbejde
                   href: procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Publicere arbejdsområder til mobile enheder
+            - name: Publicere arbejdsområder til mobilenheder
               href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Office-integration
           items:
@@ -1885,25 +1887,27 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere det globale adressekartotek
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Adresseopsætning
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ofte stillede spørgsmål om adressekartoteker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere adressekartoteker
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Arbejdsgangssystem
+            - name: Arbejdsprocessystem
               items:
-                - name: Oversigt over arbejdsgangssystem
+                - name: Oversigt over arbejdsprocessystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Arkitektur for arbejdsgangssystem
+                - name: Arkitektur for arbejdsprocessystem
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Arbejdsgangselementer
+                - name: Arbejdsproceselementer
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Handlinger i arbejdsgange
+                - name: Handlinger i arbejdsprocesser
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Oprette arbejdsgange
+                - name: Oprette arbejdsprocesser
                   items:
-                    - name: Oversigt over oprettelse af arbejdsgange
+                    - name: Oversigt over oprettelse af arbejdsprocesser
                       href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurere egenskaber for arbejdsgange
+                    - name: Konfigurere egenskaber for arbejdsprocesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere manuelle opgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
@@ -1923,37 +1927,37 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurere arbejdsgange for linjeelementer
+                    - name: Konfigurere arbejdsprocesser for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere batchjob for behandling af arbejdsgangsmeddelelser som vigtige
+                - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Uddelegere arbejdselementer i en arbejdsgang
+                - name: Uddelegere arbejdselementer i en arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Vise arbejdsgangs historik
+                - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsgangen til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsprocessen til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Arbejdsgangstyper
+                - name: Arbejdsprocestyper
                   items:
-                    - name: Oprettelse af en arbejdsgangstype
+                    - name: Oprettelse af en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Kontrolliste til arbejdsgangstype
+                    - name: Kontrolliste til arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Oprette en arbejdsgangskategori
+                    - name: Oprette en arbejdsproceskategori
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Oprette en forespørgsel for en arbejdsgangstype
+                    - name: Oprette en forespørgsel for en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Oprette en ny arbejdsgangstype
+                    - name: Oprette en ny arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Oprette en arbejdsgangsdokumentklasse
+                    - name: Oprette en arbejdsprocesdokumentklasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
+                    - name: Knytte en arbejdsprocesdokumentklasse til en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Rapport om arbejdsgangstyper
+                - name: Rapport om arbejdsprocestyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ofte stillede spørgsmål om arbejdsgang
+                - name: Ofte stillede spørgsmål om arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json
             - name: Påmindelser
               items:
@@ -1995,7 +1999,7 @@
           items:
             - name: Oversigt over indkøb og forsyning
               href: procurement/procurement-sourcing-overview.md
-            - name: Indkøbs- og forsyningsarbejdsgang
+            - name: Indkøbs- og forsyningsarbejdsproces
               href: procurement/procurement-sourcing-workflows.md
             - name: Indkøbskataloger
               items:
@@ -2009,7 +2013,7 @@
               items:
                 - name: Oversigt over indkøbsrekvisitioner
                   href: procurement/purchase-requisitions-overview.md
-                - name: Arbejdsgang for indkøbsrekvisitioner
+                - name: Arbejdsproces for indkøbsrekvisitioner
                   href: procurement/purchase-requisitions-workflow.md
             - name: Tilbudsanmodninger
               items:
@@ -2425,20 +2429,8 @@
                           href: production-control/tasks/end-production-order.md
                     - name: Frigive produktionsordrer
                       href: production-control/release-production-orders.md
-                    - name: Færdigrapportere produktionsordrer
+                    - name: Færdigmelde produktionsordrer
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Konfigurere og bruge grænsefladen til produktionsudførelse
-                      items:
-                        - name: Konfigurere grænsefladen til produktionsudførelse
-                          href: production-control/production-floor-execution-configure.md
-                        - name: Designe grænsefladen til produktionsudførelse
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: Konfigurere en enhed til at bruge grænsefladen til produktionsudførelse
-                          href: production-control/production-floor-execution-setup.md
-                        - name: Sådan anvender arbejdere grænsefladen til kørsel af produktion
-                          href: production-control/production-floor-execution-use.md
-                        - name: Designe grænsefladen til produktionsudførelse
-                          href: production-control/production-floor-execution-styles.md
                     - name: Konfigurer jobkort for enheder
                       href: production-control/config-job-card-device.md
                     - name: Færdigmelde fra jobkortenheden
@@ -2645,6 +2637,18 @@
                       href: production-control/consumption.md
                     - name: Produktionsbogføring
                       href: cost-management/production-posting.md
+            - name: Konfigurere og bruge grænsefladen til produktionsudførelse
+              items:
+                - name: Konfigurere grænsefladen til produktionsudførelse
+                  href: production-control/production-floor-execution-configure.md
+                - name: Designe grænsefladen til produktionsudførelse
+                  href: production-control/production-floor-execution-tabs.md
+                - name: Konfigurere en enhed til at bruge grænsefladen til produktionsudførelse
+                  href: production-control/production-floor-execution-setup.md
+                - name: Sådan anvender arbejdere grænsefladen til produktionsudførelse
+                  href: production-control/production-floor-execution-use.md
+                - name: Designe grænsefladen til produktionsudførelse
+                  href: production-control/production-floor-execution-styles.md
         - name: Rabatstyring
           items:
             - name: Oversigt over modulet Rabatstyring
@@ -2655,7 +2659,7 @@
                   href: rebate-management/rebate-management-enable.md
                 - name: Parametre til Rabatstyring
                   href: rebate-management/rebate-management-parameters.md
-                - name: Arbejdsgange for rabatstyringshandel
+                - name: Arbejdsprocesser for rabatstyringshandel
                   href: rebate-management/rebate-management-workflows.md
                 - name: Rabatreduktionsprincipper
                   href: rebate-management/rebate-reduction-principle.md
@@ -2993,7 +2997,7 @@
                           href: service-management/create-item-requirements-service-orders.md
                         - name: Varebehov på serviceordre
                           href: service-management/service-order-item-requirements.md
-                        - name: Oversigt over arbejdsgang til abonnement
+                        - name: Oversigt over arbejdsproces til abonnement
                           href: service-management/subscription-workflow-overview.md
                         - name: Kombinere serviceordrer
                           href: service-management/combine-service-orders.md
@@ -3391,6 +3395,10 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen
                       href: warehousing/mobile-app-titles-instructions.md
+                    - name: 'Konfigurere felter, der er promoveret for trin i mobilenheden'
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: Konfigurere omveje til trin i menupunkter med mobilenheder
+                      href: warehousing/warehouse-app-detours.md
                     - name: Modtage id via Warehouse Management-mobilappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
@@ -3409,9 +3417,11 @@
                       href: warehousing/pick-oldest-batch.md
                 - name: Globale parametre for mobilenhed
                   href: warehousing/mobile-device-parameters.md
+                - name: Konti for mobilenhedsbruger
+                  href: warehousing/mobile-device-work-users.md
                 - name: Indstillinger for mobilenhedsbruger
                   href: warehousing/mobile-device-user-settings.md
-                - name: Hændelsesbehandling af lagerstedsapp
+                - name: Hændelsesbehandling i lagerstedsapp
                   href: warehousing/warehouse-app-events.md
                 - name: Udvide mobile processer for lagersted
                   items:
@@ -3525,15 +3535,15 @@
                   href: troubleshooting/costing/there-is-no-from-dat.md
             - name: Lagerstyring
               items:
-                - name: Du kan ikke finde dialogboksen til rullelisten "Arbejdsgang" for lagerkladder
+                - name: Du kan ikke finde dialogboksen til rullelisten "Arbejdsproces" for lagerkladder
                   href: troubleshooting/inventory/cant-find-workflow-dropdown.md
-                - name: 'Arbejdsgang for lagerkladder fuldføres aldrig, og kladden kan ikke behandles'
+                - name: 'Arbejdsproces for lagerkladder fuldføres aldrig, og kladden kan ikke behandles'
                   href: troubleshooting/inventory/cant-post-inventory-journal.md
-                - name: 'Lagerkladden er låst, og arbejdsgangens batchjob fungerer ikke'
+                - name: 'Lagerkladden er låst, og arbejdsprocessens batchjob fungerer ikke'
                   href: troubleshooting/inventory/inventory-journal-locked-workflow.md
                 - name: Enheden og enhedsantallet fungerer ikke korrekt i lagerkladden
                   href: troubleshooting/inventory/journal-unit-quantity-incorrect.md
-                - name: 'Der gælder arbejdsgangsbetingelser for lagerkladder på kladdeniveau, ikke på linjeniveau'
+                - name: 'Der gælder arbejdsprocesbetingelser for lagerkladder på kladdeniveau, ikke på linjeniveau'
                   href: troubleshooting/inventory/journal-workflow-conditions.md
                 - name: Filterruden på listesiden Ruder virker ikke som forventet
                   href: troubleshooting/inventory/on-hand-filter-unexpected.md
@@ -3583,7 +3593,7 @@
                   href: troubleshooting/planning/vendor-code-not-authorized.md
                 - name: Kreditor angives ikke ved autorisation af ordreforslag
                   href: troubleshooting/planning/vendor-not-specified.md
-                - name: Direkte afledte autoriserede ordrer behandles af en arbejdsgang til gennemsyn
+                - name: Direkte afledte autoriserede ordrer behandles af en arbejdsproces til gennemsyn
                   href: troubleshooting/planning/firmed-directly-deri.md
                 - name: Du kan ikke filtrere varedisponeringsvarer efter deres relaterede disponeringsgruppeværdier
                   href: troubleshooting/planning/master-planning-batc.md
@@ -3637,7 +3647,7 @@
                   href: troubleshooting/procurement/po-unit-prices-not-calculated.md
                 - name: Indstillingen Vil du bogføre på omkostningskontoen i finans er ikke aktiveret
                   href: troubleshooting/procurement/post-setting-turned-off.md
-                - name: Fejl ved gensendelse af en indkøbsordre til en arbejdsgang efter en ændring
+                - name: Fejl ved gensendelse af en indkøbsordre til en arbejdsproces efter en ændring
                   href: troubleshooting/procurement/resubmit-po-after-change.md
                 - name: Valutaomregningsproblemer i samhandelsaftale
                   href: troubleshooting/procurement/trade-agreement-currencies.md
@@ -3737,6 +3747,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerstedsstyring
               items:
+                - name: Warehouse Mobile App
+                  items:
+                    - name: Tillidsanker til certificeringsstien blev ikke fundet ved oprettelse af appforbindelse
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: Tillidsanker til certificeringsstien blev ikke fundet ved opdatering og overflytning til WMS
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: Prompten til automatisk reservation af batchnummer vises også selv med tilgængelig lagerbeholdning
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Plukarbejde kan ikke spærres på grund af ikke-færdigmeldt genopfyldningsarbejde
@@ -3745,13 +3761,11 @@
                   href: troubleshooting/warehousing/cancel-posted-packing-slip.md
                 - name: 'Id''en kan ikke flyttes, hvis serienummeret har Blank afgang og Blank kvittering tilladt'
                   href: troubleshooting/warehousing/cant-move-license-plate.md
-                - name: 'Kan ikke flytte lager til en lokation, der er id-kontrolleret'
+                - name: 'Kan ikke flytte lager til en adresse, der er id-kontrolleret'
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Tillidsanker til certificeringsstien blev ikke fundet ved oprettelse af appforbindelse
-                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
-                - name: Cluster-profilen blev ikke fundet
+                - name: Klyngeprofilen blev ikke fundet
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
-                - name: Rettelse af leveringsnote kan ikke behandles
+                - name: Rettelse af følgeseddel kan ikke behandles
                   href: troubleshooting/warehousing/delivery-note-correction.md
                 - name: Fejl ved bekræftelse af forsendelse efter oprettelse af en flytteordre for en serievare
                   href: troubleshooting/warehousing/dimension-location-left-blank.md
@@ -3819,8 +3833,6 @@
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
                 - name: Ikke-reservere lager på en salgsordrelinje
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: Tillidsanker til certificeringsstien blev ikke fundet ved opdatering og overflytning til WMS
-                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: 'Du kan ikke bekræfte en forsendelse, fordi kunden er på hold'
                   href: troubleshooting/warehousing/customer-is-on-hold.md
                 - name: 'Du kan ikke bekræfte en forsendelse, fordi lastlinjer har antallet nul'
