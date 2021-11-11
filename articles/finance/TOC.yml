@@ -74,12 +74,12 @@
                   items:
                     - name: Nyheder eller ændringer på Finance-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.23
+                      href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (november 2021)
                       href: get-started/whats-new-changed-10-0-22.md
                     - name: Finance 10.0.21 (oktober 2021)
                       href: get-started/whats-new-changed-10-0-21.md
-                    - name: Finance 10.0.20 (august 2021)
-                      href: get-started/whats-new-changed-10-0-20.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -240,7 +240,11 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: Opsætningsindstillinger for automatisering af kreditorfaktura
                   href: accounts-payable/vnd-invoice-set-up-options.md
-                - name: Sende fakturaer til arbejdsgangsystemet og sammenholde produktkvitteringslinjer
+                - name: Oversigt over automatisk anvendte forudbetalinger på kreditorfakturaer
+                  href: accounts-payable/apply-prepymnts-overview.md
+                - name: 'Oprette fakturalinjer, når du importerer kreditorfakturaer'
+                  href: accounts-payable/auto-create-invc-lines-at-import.md
+                - name: Sende fakturaer til arbejdsprocessystemet og sammenholde produktkvitteringslinjer
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Se resultater af automatisering af kreditorfaktura
                   href: accounts-payable/view-automated-vendor-invoice.md
@@ -262,7 +266,7 @@
               href: accounts-payable/set-up-generate-positive-pay-files.md
             - name: Standardmodkonti for kreditorfakturakladder og fakturagodkendelseskladder
               href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
-            - name: Leverandørarbejdsgang
+            - name: Leverandørarbejdsproces
               href: accounts-payable/vendor-workflow.md
             - name: Løse afvigelser under sammenholdelse af fakturatotaler
               items:
@@ -272,6 +276,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Kreditorposteringsprofil
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Datoer for kreditorfaktura
+              href: accounts-payable/vendor-invoice-dates.md
             - name: Værdiregulering af udenlandsk valuta for kreditor og debitor
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobilfakturagodkendelser
@@ -346,7 +352,7 @@
               href: accounts-receivable/customer-posting-profiles.md
             - name: Kopiere debitorer ved hjælp af delte nummerserier
               href: accounts-receivable/copy-customer.md
-            - name: Arbejdsgang for kunde
+            - name: Arbejdsproces for kunde
               href: accounts-receivable/customer-workflow.md
             - name: Oprette og behandle tilbagevendende fakturaer
               href: accounts-receivable/set-up-process-recurring-invoices.md
@@ -714,9 +720,9 @@
               href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
             - name: Arbejdsområde til udgiftsstyring på mobilenhed
               href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Konfigurere arbejdsgange for udgiftsstyring
+            - name: Konfigurere arbejdsprocesser for udgiftsstyring
               href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: Arbejdsgang for udgiftsstyring
+            - name: Arbejdsproces for udgiftsstyring
               href: /dynamics365/project-operations/prod-exp/expense-workflow
             - name: Administrere udgiftsdelegering
               href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
@@ -922,9 +928,9 @@
                   href: asset-leasing/lease-posting-types.md
                 - name: Dobbelt rapportering
                   href: asset-leasing/dual-reporting.md
-                - name: Konfigurere en arbejdsgang for leasing
+                - name: Konfigurere en arbejdsproces for leasing
                   href: asset-leasing/set-up-lease-wrkflw.md
-                - name: Bruge arbejdsgange for leasinggodkendelse
+                - name: Bruge arbejdsprocesser for leasinggodkendelse
                   href: asset-leasing/use-create-lease-wrkflw.md
                 - name: Administrere leasinger via struktur for leasingimport
                   href: asset-leasing/manage-leases-thru-imprt-framewrk.md
@@ -990,6 +996,8 @@
                   href: general-ledger/tasks/create-main-account.md
                 - name: Planlægge din kontoplan
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Planlægge din lokale kontoplan
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Udligne posteringer mellem finanskonti
                   href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
                 - name: Konfigurere et finanskontoalias
@@ -1100,10 +1108,12 @@
                   href: general-ledger/sales-tax-calculation-on-general-journal.md
                 - name: Beregne og justere moms på en kreditorfaktura
                   href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: Aktivere forsinket momsberegning på kladde
+                - name: Aktivere forsinket momsberegning af kladde
                   href: general-ledger/enable-delayed-tax-calculation.md
                 - name: Oprette en momsbetaling
                   href: general-ledger/tasks/create-sales-tax-payment.md
+                - name: Momsafrunding baseret på tilpassede valutadecimaler
+                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
                 - name: Oprette momstransaktioner på dokumenter
                   href: general-ledger/tasks/create-sales-tax-transactions-documents.md
                 - name: Oprette finanskonteringsgrupper til moms
@@ -1438,7 +1448,7 @@
                   href: public-sector/rules-reservation-types.md
                 - name: Vedligehold generelle budgetreservationer
                   href: public-sector/general-budget-reservation-tasks.md
-                - name: Konfigurere generelle budgetreservationer og sende dem til en arbejdsgang
+                - name: Konfigurere generelle budgetreservationer og sende dem til en arbejdsproces
                   href: public-sector/workflow-general-budget-reservations.md
                 - name: Projektregnskab med generelle budgetreservationer
                   href: public-sector/general-budget-reservations-project-accounting.md
@@ -1546,6 +1556,8 @@
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Start her med elektronisk fakturering for Mexico
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Start her med elektronisk fakturering for Saudi-Arabien
+                          href: localizations/e-invoicing-sa-get-started.md
                         - name: Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Konfigurere elektronisk fakturering
@@ -1568,6 +1580,8 @@
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: Logik for anvendelse af moms og momsgrupper
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                        - name: Bruge parametre for momsjurisdiktion til opsætning af kasserabatberegning
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Beregning
                       items:
                         - name: 'Beregne moms på prisen, når Priser er aktiveret inklusive moms'
@@ -1592,8 +1606,12 @@
                           items:
                             - name: Momsopgørelse
                               href: localizations/emea-nl-vat-declaration-netherlands.md
-                            - name: EU-listesystem
+                            - name: EU-listesystemet
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Rapportering i Spanien
+                          items:
+                            - name: 'Direkte levering af momsoplysninger (Suministro Inmediato de Información del IVA, SII)'
+                              href: localizations/emea-esp-sii-spain.md
                         - name: Rapportering i Sverige
                           items:
                             - name: Momsopgørelse
@@ -1604,18 +1622,24 @@
                               href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: Rapportering i Storbritannien
                           items:
-                            - name: Forberede integration med momsdigitalisering (MTD) til moms
-                              href: localizations/emea-gbr-mtd-vat-integration.md
+                            - name: Momsopgørelse
+                              href: localizations/emea-gbr-vat-declaration.md
                     - name: Aktivere momsberegning for flytteordre
                       items:
                         - name: Understøttelse af momsfunktion til flytteordrer
                           href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                        - name: Udskrive momsoplysninger på flytteordredokumenter
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Forlængelse
                       items:
                         - name: Føje datafelter til momskonfigurationer
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                        - name: Tilpasse momskonfigurationer til masterdataopslag
+                          href: localizations/customize-tax-configurations-master-data-lookup.md
+                    - name: Ofte stillede spørgsmål om momsberegning
+                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Lovmæssige opdateringer
               href: localizations/regulatory-updates.md
             - name: Australien
@@ -1684,6 +1708,8 @@
                   href: localizations/emea-bel-prodcom-report.md
                 - name: Årlig momsoversigt for indenlandsk salg
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+                - name: Intrastat for Belgien
+                  href: localizations/emea-bel-intrastat.md
             - name: Brasilien
               items:
                 - name: Oversigt for Brasilien
@@ -2312,6 +2338,8 @@
                   href: localizations/apac-ind-scope.md
                 - name: Nyheder eller ændringer i forbindelse med lokalisering for Indien
                   items:
+                    - name: Nyheder eller ændringer i 10.0.20 – 10.0.22
+                      href: localizations/ind-news-letter-10-0-20-22.md
                     - name: Nyheder eller ændringer i 10.0.15 – 10.0.19
                       href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Nyheder eller ændringer i 10.0.14
@@ -2680,6 +2708,12 @@
                           href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
                         - name: Opdatere certifikatnumre og -datoer for TDS-transaktioner
                           href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+            - name: Indonesien
+              items:
+                - name: Oversigt for Indonesien
+                  href: localizations/indonesia.md
+                - name: Momsopgørelse for Indonesien
+                  href: localizations/apac-idn-ppn-declaration.md
             - name: Italien
               items:
                 - name: Oversigt for Italien
@@ -3024,11 +3058,13 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: Momsangivelse (Nederlandene)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: EU-listesystem
+                - name: Hollandsk Intrastat
+                  href: localizations/emea-nl-intrastat.md
+                - name: EU-listesystemet
                   href: localizations/emea-nl-EU-sales-list.md
             - name: New Zealand
               items:
-                - name: GST-opgørelsesformen GST101A for New Zealand (NZ-00003)
+                - name: GST-opgørelsesformular GST101A for New Zealand (NZ-00003)
                   href: localizations/apac-nzl-gst-declaration.md
             - name: Norge
               items:
@@ -3352,11 +3388,13 @@
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Tildele gebyrer for bankdokumenter til en forsendelse
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+                - name: Elektroniske fakturaer til kunder i Saudi-Arabien
+                  href: localizations/emea-sau-e-invoices.md
             - name: Singapore
               items:
                 - name: Oversigt for Singapore
                   href: localizations/singapore.md
-                - name: Oprette GST-05-rapporten
+                - name: Generér GST-05-rapport
                   href: localizations/apac-sgp-generate-gst-05-report.md
             - name: Spanien
               items:
@@ -3378,6 +3416,8 @@
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
                 - name: Fællesskabsmoms
                   href: localizations/emea-esp-intra-community-vat.md
+                - name: Spansk Intrastat
+                  href: localizations/emea-esp-intrastat.md
                 - name: Engangskunder
                   href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
                 - name: Checkudskrivning med spansk layout
@@ -3462,28 +3502,26 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Konfigurere momsgrupper til modtagermoms
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Rapportering i Storbritannien
+                - name: Gøre moms digital (MTD) til moms
                   items:
-                    - name: Gøre moms digital (MTD) til moms
-                      items:
-                        - name: Overførsel af MTD-momsindlevering i Storbritannien
-                          href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: Forberede dit miljø til at arbejde sammen med HMRC's MTD-momswebtjeneste
-                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Checkliste til opsætning af elektroniske meddelelser til MTD-moms
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Teste indbyrdes med MTD-momssandboksen
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: Godkende dit Finance-miljø til at arbejde sammen med HMRC's MTD-webtjeneste
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: Sende en momsangivelse til HMRC's MTD-webtjeneste
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: Hent oplysninger om momsbetalinger og passiver fra HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-                        - name: Momsopsætningsoplysninger for momsopgørelser i Storbritannien
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                        - name: Generere en momsopgørelse i papirformat (moms 100-rapport)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                    - name: Overførsel af MTD-momsindlevering i Storbritannien
+                      href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: Forberede dit miljø til at arbejde sammen med HMRC's MTD-momswebtjeneste
+                      href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                    - name: Checkliste til opsætning af elektroniske meddelelser til MTD-moms
+                      href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                    - name: Teste indbyrdes med MTD-momssandboksen
+                      href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                    - name: Godkende dit Finance-miljø til at arbejde sammen med HMRC's MTD-webtjeneste
+                      href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                    - name: Sende en momsangivelse til HMRC's MTD-webtjeneste
+                      href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                    - name: Hent oplysninger om momsbetalinger og passiver fra HMRC
+                      href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                    - name: Momsopsætningsoplysninger for momsopgørelser i Storbritannien
+                      href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                    - name: Generere en momsopgørelse i papirformat (moms 100-rapport)
+                      href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Rapport over statistik for betalingspraksis
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
@@ -3506,7 +3544,7 @@
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere delte Human Resources-parametre
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere arbejdsgange for Human Resources
+                - name: Konfigurere arbejdsprocesser for Human Resources
                   href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: Forstå dato- og tidsfelter
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
@@ -3526,7 +3564,7 @@
                   href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
                 - name: Ofte stillede spørgsmål om personalehandlinger
                   href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-                - name: Bruge arbejdsgange til at administrere medarbejderoplysninger
+                - name: Bruge arbejdsprocesser til at administrere medarbejderoplysninger
                   href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
                 - name: Redigere rapporteringsrelationerne for en stilling
                   href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
@@ -3877,6 +3915,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
                         - name: DateTimeFormat
@@ -4021,6 +4061,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
                         - name: NumeralsToText
@@ -4421,6 +4463,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                     - name: Applikationsopdatering 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+                    - name: Applikationsopdatering 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
                   items:
                     - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
@@ -4433,13 +4477,15 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: 'Ændringskode, så brugere kan konfigurere og bruge navngivne ER-destinationer'
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                - name: Implementere en brugerdefineret ER-kilde til indgående dokumenter
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobilapp
           items:
             - name: Mobilapp-startside
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/finance/toc.json
-            - name: Arbejdsområder til mobile enheder
+            - name: Arbejdsområder til mobilenheder
               items:
-                - name: Tilgængelige arbejdsområder til mobile enheder
+                - name: Tilgængelige arbejdsområder til mobilenheder
                   href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/finance/toc.json
                 - name: Aktivadministration
                   href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
@@ -4467,7 +4513,7 @@
                   href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: Kreditorsamarbejde
                   href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/finance/toc.json
-            - name: Publicere arbejdsområder til mobile enheder
+            - name: Publicere arbejdsområder til mobilenheder
               href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/finance/toc.json
         - name: Office-integration
           items:
@@ -4527,21 +4573,21 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere adressekartoteker
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/finance/toc.json
-            - name: Arbejdsgangssystem
+            - name: Arbejdsprocessystem
               items:
-                - name: Oversigt over arbejdsgangssystem
+                - name: Oversigt over arbejdsprocessystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/finance/toc.json
-                - name: Arkitektur for arbejdsgangssystem
+                - name: Arkitektur for arbejdsprocessystem
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/finance/toc.json
-                - name: Arbejdsgangselementer
+                - name: Arbejdsproceselementer
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/finance/toc.json
-                - name: Handlinger i arbejdsgange
+                - name: Handlinger i arbejdsprocesser
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/finance/toc.json
-                - name: Oprette arbejdsgange
+                - name: Oprette arbejdsprocesser
                   items:
-                    - name: Oversigt over oprettelse af arbejdsgange
+                    - name: Oversigt over oprettelse af arbejdsprocesser
                       href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere egenskaber for arbejdsgange
+                    - name: Konfigurere egenskaber for arbejdsprocesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere manuelle opgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/finance/toc.json
@@ -4561,37 +4607,37 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere arbejdsgange for linjeelementer
+                    - name: Konfigurere arbejdsprocesser for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere batchjob for behandling af arbejdsgangsmeddelelser som vigtige
+                - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/finance/toc.json
-                - name: Uddelegere arbejdselementer i en arbejdsgang
+                - name: Uddelegere arbejdselementer i en arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/finance/toc.json
-                - name: Vise arbejdsgangs historik
+                - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsgangen til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsprocessen til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/finance/toc.json
-                - name: Arbejdsgangstyper
+                - name: Arbejdsprocestyper
                   items:
-                    - name: Oprettelse af en arbejdsgangstype
+                    - name: Oprettelse af en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/finance/toc.json
-                    - name: Kontrolliste til arbejdsgangstype
+                    - name: Kontrolliste til arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/finance/toc.json
-                    - name: Oprette en arbejdsgangskategori
+                    - name: Oprette en arbejdsproceskategori
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/finance/toc.json
-                    - name: Oprette en forespørgsel for en arbejdsgangstype
+                    - name: Oprette en forespørgsel for en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/finance/toc.json
-                    - name: Oprette en ny arbejdsgangstype
+                    - name: Oprette en ny arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/finance/toc.json
-                    - name: Oprette en arbejdsgangsdokumentklasse
+                    - name: Oprette en arbejdsprocesdokumentklasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/finance/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
+                    - name: Knytte en arbejdsprocesdokumentklasse til en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/finance/toc.json
-                - name: Rapport om arbejdsgangstyper
+                - name: Rapport om arbejdsprocestyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/finance/toc.json
-                - name: Ofte stillede spørgsmål om arbejdsgang
+                - name: Ofte stillede spørgsmål om arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/finance/toc.json
             - name: Påmindelser
               items:

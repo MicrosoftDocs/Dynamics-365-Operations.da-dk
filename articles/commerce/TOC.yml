@@ -96,12 +96,12 @@
                   items:
                     - name: Nyheder eller ændringer på Commerce-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.23
+                      href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (november 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
                     - name: Commerce 10.0.21 (oktober 2021)
                       href: get-started/whats-new-commerce-10-0-21.md
-                    - name: Commerce 10.0.20 (august 2021)
-                      href: get-started/whats-new-commerce-10-0-20.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner på startsiden
@@ -938,6 +938,8 @@
                   href: enable-store-detection.md
                 - name: Digitale e-handelsgavekort
                   href: digital-gift-cards.md
+                - name: 'Konfigurere et produkt, så det kan købes gratis'
+                  href: configure-free-product.md
                 - name: Krav til browser for Dynamics 365 Commerce-websteder
                   href: browser-requirements.md
             - name: Oversigt over eksempelwebsted
@@ -1518,6 +1520,8 @@
           items:
             - name: Oversigt over elektronisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
+            - name: Elektroniske rapporteringskomponenter
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurationer
               items:
                 - name: Oprette konfigurationer
@@ -1582,6 +1586,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/commerce/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/commerce/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/commerce/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/commerce/toc.json
                         - name: DateTimeFormat
@@ -1726,6 +1732,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/commerce/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/commerce/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/commerce/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
                         - name: NumeralsToText
@@ -1832,12 +1840,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
             - name: Designe ER-formater til generering af udgående dokumenter i forskellige formater
               items:
+                - name: Designe en konfiguration til generering af rapporter i OPENXML-format
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
                 - name: Designe konfigurationer til at generere udgående dokumenter i Excel-format
                   items:
                     - name: Designe en konfiguration til at generere dokumenter i Excel-format
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/commerce/toc.json
-                    - name: Eksempel på generering af rapporter i OPENXML-format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Redigere ER-formater ved at genanvende Excel-skabeloner
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
@@ -1846,6 +1854,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
                         - name: Køre formater til dynamisk tilføjelse af kolonner til Excel-rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
+                    - name: Designe et ER-format til sideopgradere genererede dokumenter i Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Designe konfigurationer til generering af rapporter i Word-format
                   items:
                     - name: Designe ny ER-konfiguration til generering af rapporter i Word-format
@@ -1868,6 +1878,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
                         - name: 'Generere rapporter i Office-formater, der har integrerede billeder'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
+                    - name: Design et ER-format til generering af en rapport i Excel med integrerede billeder i sidehoveder eller sidefødder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
                 - name: Ignorere styklistetegn i genererede filer
@@ -2004,8 +2016,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Fejlfinde datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruge STREGKODE til at generere stregkodebilleder
-                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere modeltilknytninger
                   items:
                     - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
@@ -2123,26 +2133,30 @@
                     - name: Applikationsopdatering 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
                     - name: Applikationsopdatering 10.0.21
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.jso
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
+                    - name: Applikationsopdatering 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
                   items:
                     - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: Delegere oprettelsen af en ER-destination til en brugerdefineret destinationsfabrik
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementere en brugerdefineret destination for oprettede dokumenter
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
+                    - name: Implementere en brugerdefineret destination for oprettede dokumenter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
                 - name: Starte datakildeværdier for USER INPUT PARAMETER-typen fra kildekoden
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Ændringskode, så brugere kan konfigurere og bruge navngivne ER-destinationer'
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementere en brugerdefineret ER-kilde til indgående dokumenter
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations (Dynamics 365)-mobilapp
           items:
             - name: Mobilapp-startside
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
-            - name: Arbejdsområder til mobile enheder
+            - name: Arbejdsområder til mobilenheder
               items:
-                - name: Tilgængelige arbejdsområder til mobile enheder
+                - name: Tilgængelige arbejdsområder til mobilenheder
                   href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/commerce/toc.json
                 - name: Aktivadministration
                   href: ../supply-chain/asset-management/asset-management-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
@@ -2170,7 +2184,7 @@
                   href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Kreditorsamarbejde
                   href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
-            - name: Publicere arbejdsområder til mobile enheder
+            - name: Publicere arbejdsområder til mobilenheder
               href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Office-integration
           items:
@@ -2232,21 +2246,21 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere adressekartoteker
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/commerce/toc.json
-            - name: Arbejdsgangssystem
+            - name: Arbejdsprocessystem
               items:
-                - name: Oversigt over arbejdsgangssystem
+                - name: Oversigt over arbejdsprocessystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/commerce/toc.json
-                - name: Arkitektur for arbejdsgangssystem
+                - name: Arkitektur for arbejdsprocessystem
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/commerce/toc.json
-                - name: Arbejdsgangselementer
+                - name: Arbejdsproceselementer
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/commerce/toc.json
-                - name: Handlinger i arbejdsgange
+                - name: Handlinger i arbejdsprocesser
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/commerce/toc.json
-                - name: Oprette arbejdsgange
+                - name: Oprette arbejdsprocesser
                   items:
-                    - name: Oversigt over oprettelse af arbejdsgange
+                    - name: Oversigt over oprettelse af arbejdsprocesser
                       href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere egenskaber for arbejdsgange
+                    - name: Konfigurere egenskaber for arbejdsprocesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere manuelle opgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/commerce/toc.json
@@ -2266,37 +2280,37 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere arbejdsgange for linjeelementer
+                    - name: Konfigurere arbejdsprocesser for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere batchjob for behandling af arbejdsgangsmeddelelser som vigtige
+                - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/commerce/toc.json
-                - name: Uddelegere arbejdselementer i en arbejdsgang
+                - name: Uddelegere arbejdselementer i en arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/commerce/toc.json
-                - name: Vise arbejdsgangs historik
+                - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsgangen til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsprocessen til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/commerce/toc.json
-                - name: Arbejdsgangstyper
+                - name: Arbejdsprocestyper
                   items:
-                    - name: Oprettelse af en arbejdsgangstype
+                    - name: Oprettelse af en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kontrolliste til arbejdsgangstype
+                    - name: Kontrolliste til arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oprette en arbejdsgangskategori
+                    - name: Oprette en arbejdsproceskategori
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oprette en forespørgsel for en arbejdsgangstype
+                    - name: Oprette en forespørgsel for en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oprette en ny arbejdsgangstype
+                    - name: Oprette en ny arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oprette en arbejdsgangsdokumentklasse
+                    - name: Oprette en arbejdsprocesdokumentklasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
+                    - name: Knytte en arbejdsprocesdokumentklasse til en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
-                - name: Rapport om arbejdsgangstyper
+                - name: Rapport om arbejdsprocestyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
-                - name: Ofte stillede spørgsmål om arbejdsgang
+                - name: Ofte stillede spørgsmål om arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/commerce/toc.json
             - name: Påmindelser
               items:

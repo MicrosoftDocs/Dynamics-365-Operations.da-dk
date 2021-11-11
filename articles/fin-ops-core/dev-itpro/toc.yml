@@ -14,12 +14,12 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til version 10.0.23
+                  href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: Platformsopdateringer til version 10.0.22 (november 2021)
                   href: get-started/whats-new-platform-updates-10-0-22.md
                 - name: Platformsopdateringer til version 10.0.21 (oktober 2021)
                   href: get-started/whats-new-platform-updates-10-0-21.md
-                - name: Platformsopdateringer til version 10.0.20 (august 2021)
-                  href: get-started/whats-new-platform-updates-10-0-20.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -32,42 +32,6 @@
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-        - name: Forretningshændelser
-          items:
-            - name: Oversigt over forretningshændelser
-              href: business-events/home-page.md
-            - name: Forretningshændelser i ansøgning
-              href: business-events/app-business-events.md
-            - name: Forretningshændelser i arbejdsgang
-              href: business-events/business-events-workflow.md
-            - name: Forretningshændelsesbatch
-              href: business-events/system-business-events.md
-            - name: Påmindelser som forretningshændelser
-              href: business-events/alerts-business-events.md
-            - name: Forretningshændelser i Microsoft Flow
-              href: business-events/business-events-flow.md
-            - name: Dokumentation til udviklere af forretningshændelser
-              href: business-events/business-events-dev-doc.md
-            - name: Foretage fejlfinding af forretningshændelser
-              href: business-events/troubleshooting.md
-            - name: Bruge sager til forretningshændelser
-              href: business-events/potential-use-cases.md
-            - name: Selvstudier
-              items:
-                - name: Forretningshændelser og Microsoft Flow
-                  href: business-events/how-to/how-to-flow.md
-                - name: Forretningshændelser og Azure Event Grid
-                  href: business-events/how-to/how-to-eventgrid.md
-                - name: Forretningshændelser og Azure-tjenestebus
-                  href: business-events/how-to/how-to-servicebus.md
-                - name: Forretningshændelser og arbejdsgangsgodkendelser
-                  href: business-events/how-to/how-to-workflow.md
-                - name: Forretningshændelser og Microsoft Forms Pro
-                  href: business-events/how-to/FormsPro.md
-                - name: Forretningshændelser og Azure Event Hubs
-                  href: business-events/how-to/event-hub.md
-                - name: Forretningshændelser i afslutning på regnskabsperiode
-                  href: business-events/how-to/period-close.md
         - name: Fortløbende levering
           items:
             - name: Startside for fortløbende levering
@@ -592,7 +556,7 @@
               items:
                 - name: X++-sprogsupport
                   items:
-                    - name: Visual Studio 2017-krav til X++
+                    - name: Visual Studio-krav til X++
                       href: dev-tools/developer-tools-vs2017.md
                     - name: Fejlfinde en X++-kode
                       href: dev-tools/debug-xpp.md
@@ -606,6 +570,8 @@
                       href: dev-tools/author-best-practice-rules.md
                     - name: Egenskaber for Application Explorer
                       href: dev-ref/application-explorer-aot-properties.md
+                    - name: Attributten SysSetupConfigAttribute
+                      href: dev-tools/syssetupconfigattribute.md
                 - name: X++-sprogreference
                   items:
                     - name: Oversigt over X++-sprogreference
@@ -1038,6 +1004,10 @@
           items:
             - name: Microsoft Power Platform-integration med Finance and Operations
               href: power-platform/overview.md
+            - name: Aktivere Power Platform-integrationen
+              href: power-platform/enable-power-platform-integration.md
+            - name: Godkendelse og autorisation
+              href: power-platform/authentication-and-authorization.md
             - name: Dobbeltskrivning
               items:
                 - name: Startside for dobbeltskrivning
@@ -1080,13 +1050,15 @@
                       href: data-entities/dual-write/customizing-mappings.md
                     - name: Vejledning i tilpasning af dobbeltskrivning
                       href: data-entities/dual-write/custom-best-practices.md
-                    - name: Håndtere flere enhedstilknytninger
+                    - name: Håndtere flere objekttilknytninger
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: Redigere en juridisk enhed efter konfiguration af dobbeltskrivning
                       href: data-entities/dual-write/edit-legal-entity.md
+                    - name: Afbryd dobbeltskrivning til vedligeholdelse midlertidigt
+                      href: data-entities/dual-write/pause-for-maintenance.md
                     - name: Fejladministration og beskeder om påmindelser
                       href: data-entities/dual-write/errors-and-alerts.md
-                    - name: Applikationscyklusstyring
+                    - name: Styring af applikationslivscyklus
                       href: data-entities/dual-write/app-lifecycle-management.md
                     - name: Brugerdefineret teamejer
                       href: data-entities/dual-write/user-specified-team-owner.md
@@ -1174,24 +1146,66 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Fejlfinde problemer fra opgraderinger af Finance and Operations-apps
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Kontrollere dobbeltskrivning er konfigureret i Finance and Operations-apps og Dataverse
+                        - name: Kontrollere dobbeltskrivningskonfigurationen i Finance and Operations-apps og Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Fejlkoder for tabeloversigtens sundhedskontrol
+                          href: data-entities/dual-write/table-map-health-check.md
                 - name: Ofte stillede spørgsmål om dobbeltskrivning
                   href: data-entities/dual-write/dual-write-faq.md
-            - name: Virtuelle enheder
+            - name: Virtuelle objekter
               items:
-                - name: Oversigt over virtuelle enheder
+                - name: Oversigt over virtuelle objekter
                   href: power-platform/virtual-entities-overview.md
-                - name: Enhedsmodellering
+                - name: Objektmodellering
                   href: power-platform/entity-modeling.md
-                - name: Applikationscyklusstyring
+                - name: Styring af applikationslivscyklus
                   href: power-platform/application-lifecycle-management.md
-                - name: Finance and Operations- og Dataverse-administratorreference
+                - name: Konfigurere virtuelle Dataverse-objekter
                   href: power-platform/admin-reference.md
+                - name: Aktivere virtuelle objekter i Dataverse
+                  href: power-platform/enable-virtual-entities.md
                 - name: Power Apps-portaler med Finance and Operations
                   href: power-platform/power-portal-reference.md
-                - name: Ofte stillede spørgsmål og virtuelle enheder i Finance and Operations
+                - name: Ofte stillede spørgsmål og virtuelle objekter i Finance and Operations
                   href: power-platform/faq.md
+            - name: Forretningshændelser
+              items:
+                - name: Oversigt over forretningshændelser
+                  href: business-events/home-page.md
+                - name: Forretningshændelser i applikation
+                  href: business-events/app-business-events.md
+                - name: Forretningshændelser i arbejdsproces
+                  href: business-events/business-events-workflow.md
+                - name: Forretningshændelsesbatch
+                  href: business-events/system-business-events.md
+                - name: Påmindelser som forretningshændelser
+                  href: business-events/alerts-business-events.md
+                - name: Datahændelser
+                  href: business-events/data-events.md
+                - name: Forretningshændelser i Power Automate
+                  href: business-events/business-events-flow.md
+                - name: Dokumentation til udviklere af forretningshændelser
+                  href: business-events/business-events-dev-doc.md
+                - name: Foretage fejlfinding af forretningshændelser
+                  href: business-events/troubleshooting.md
+                - name: Bruge sager til forretningshændelser
+                  href: business-events/potential-use-cases.md
+                - name: Selvstudier
+                  items:
+                    - name: Forretningshændelser og Power Automate
+                      href: business-events/how-to/how-to-flow.md
+                    - name: Forretningshændelser og Azure Event Grid
+                      href: business-events/how-to/how-to-eventgrid.md
+                    - name: Forretningshændelser og Azure-tjenestebus
+                      href: business-events/how-to/how-to-servicebus.md
+                    - name: Forretningshændelser og arbejdsprocesgodkendelser
+                      href: business-events/how-to/how-to-workflow.md
+                    - name: Forretningshændelser og Microsoft Forms Pro
+                      href: business-events/how-to/FormsPro.md
+                    - name: Forretningshændelser og Azure Event Hubs
+                      href: business-events/how-to/event-hub.md
+                    - name: Forretningshændelser i afslutning på regnskabsperiode
+                      href: business-events/how-to/period-close.md
             - name: Tilføjelsesprogrammer
               items:
                 - name: Oversigt over tilføjelser
@@ -1224,9 +1238,9 @@
                   href: mobile-apps/platform/scenarios/make-workspace-field-clickable.md
                 - name: Vise tællinger i felter
                   href: mobile-apps/platform/scenarios/display-count-workspace.md
-                - name: Hjælpe med at beskytte arbejdsområder til mobile enheder
+                - name: Hjælpe med at beskytte arbejdsområder til mobilenheder
                   href: mobile-apps/platform/scenarios/secure-mobile-workspace.md
-                - name: Finde arbejdsområder til mobile enheder
+                - name: Finde arbejdsområder til mobilenheder
                   href: mobile-apps/platform/scenarios/localize-workspaces-on-server.md
                 - name: Gøre felter obligatoriske ved hjælp af arbejdsområdeklasser
                   href: mobile-apps/platform/scenarios/make-field-mandatory.md
@@ -1578,10 +1592,12 @@
                   href: sysadmin/alerts.md
                 - name: Forbedrede batchformularer
                   href: sysadmin/enhanced-forms.md
-                - name: Rydde batchhistorik
+                - name: Rydde op i batchhistorikken
                   href: sysadmin/batch-history-cleanup.md
                 - name: Annullere et igangværende batchjob
                   href: sysadmin/batch-abort.md
+                - name: Batch OData API
+                  href: sysadmin/batch-odata-api.md
             - name: Optimeringsrådgiver
               items:
                 - name: Oversigt over optimeringsrådgiver
@@ -1642,7 +1658,7 @@
                       href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: Datamodel for projektressourceplanlægning
                       href: migration-upgrade/data-model-changes-resource-management.md
-                    - name: Ændringer af undersystem for arbejdsgang
+                    - name: Ændringer af undersystem for arbejdsproces
                       href: migration-upgrade/workflow-subsystem.md
                     - name: 'Aggregere modeller, der bruges i stedet for kuber til analyser'
                       href: migration-upgrade/in-memory-real-time-aggregate-models.md
