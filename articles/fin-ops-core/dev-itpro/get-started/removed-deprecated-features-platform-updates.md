@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af Finance and Operations-apps.
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
+ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595139"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7725043"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -31,6 +31,64 @@ Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
 Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+
+## <a name="feature-removal-effective-october-2021"></a>Fjernelse af funktion gældende fra oktober 2021
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-rapporter i Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Alle aktiviteter og overvågning udføres internt af platformen via automatisering. Dette kræver ingen manuel handling.|
+| **Erstattet af en anden funktion?**   | Ja, der findes nu et automatisk system, som gør disse egenskaber forældede. |
+| **Produktområder, der er berørt**         | SQL-rapporter: Aktuelle DTU, Aktuelle DTU-detaljer, Hent lås-oplysninger, Oversigt over vejledning i aktuel plan, Hent liste over forespørgsels-id'er, Hent SQL-forespørgselsplan for bestemt plan-id, Hent forespørgselsplaner og udførelsesstatus, Hent begrænsningskonfiguration, Hent ventestatistik, Vis mest dyre forespørgsler |
+| **Installationsindstilling**              | Skyinstallation: Påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
+| **Status**                         | Fjernet |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-handlinger i LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi udfaser nogle SQL-handlinger i LCS. Alle aktiviteter og overvågning udføres internt af platformen via automatisering. Dette kræver ingen manuel handling. |
+| **Erstattet af en anden funktion?**   | Ja, der findes nu et automatisk system, som gør disse egenskaber forældede. |
+| **Produktområder, der er berørt**         | SQL-aktioner: Oprette en planvejledning for at gennemtvinge plan-id, oprette en planvejledning for at tilføje tabeltip, fjerne planvejledning, deaktivere/aktivere sidelåse og låse eskalering, opdatere statistik for en tabel, gendanne indeks, oprette indeks |
+| **Installationsindstilling**              | Skyinstallation: Påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
+| **Status**                         | Fjernet |
+
+
+## <a name="feature-deprecation-effective-october-2021"></a>Udfasning af funktioner gældende fra oktober 2021
+
+### <a name="show-related-document-attachments-feature"></a>Funktionen "Vis relaterede vedhæftede dokumenter"
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Funktionen returnerede uventede resultater. |
+| **Erstattet af en anden funktion?**   | Nr. Der gives besked om eventuelle yderligere planer vedrørende denne funktionalitet via vores standardproces til offentliggørelse af udgivelsesbølger. |
+| **Produktområder, der er berørt**         | Webklient – Oplevelse med vedhæftede dokumenter |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet  |
+
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.23 af Finance and Operations-apps
+
+### <a name="ondbsynchronize-event"></a>Hændelsen OnDBSynchronize
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Der er ingen kontrol, der udfører denne hændelse. |
+| **Erstattet af en anden funktion?**   | Ja, flyt eksisterende metoder, der abonneres på af hændelsen **OnDBSynchronzie**, til en udvidet SysSetup-klasse. |
+| **Produktområder, der er berørt**         | Databasesynkronisering |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet. Planlagt dato for fjernelse er oktober 2022. |
+
+
+### <a name="systemnotificationsmanageraddnotification-api"></a>SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Microsoft kræver yderligere parametre, når der tilføjes beskeder. |
+| **Erstattet af en anden funktion?**   | Ja, **SystemNotificationsManager.AddSystemNotification()**-API'en. Denne API kræver, at du eksplicit angiver ExpirationDateTime og RuleID for genererede beskeder. |
+| **Produktområder, der er berørt**         | Webklient |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet. Planlagt dato for fjernelse er april 2023. |
 
 ## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Platformsopdateringer til version 10.0.21 af Finance and Operations-apps
 
@@ -54,7 +112,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Ja, der findes nu et automatisk system, som gør disse egenskaber forældede. |
 | **Produktområder, der er berørt**         | SQL-rapporter: Aktuelle DTU, Aktuelle DTU-detaljer, Hent lås-oplysninger, Oversigt over vejledning i aktuel plan, Hent liste over forespørgsels-id'er, Hent SQL-forespørgselsplan for bestemt plan-id, Hent forespørgselsplaner og udførelsesstatus, Hent begrænsningskonfiguration, Hent ventestatistik, Vis mest dyre forespørgsler |
 | **Installationsindstilling**              | Skyinstallation: Påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
-| **Status**                         | Udfaset: Planlagt dato for fjernelse i oktober 2021. |
+| **Status**                         | Udfases: Planlagt dato for fjernelse er oktober 2021. |
 
 ### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-handlinger i LCS
 
@@ -64,7 +122,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Ja, der findes nu et automatisk system, som gør disse egenskaber forældede. |
 | **Produktområder, der er berørt**         | SQL-aktioner: Oprette en planvejledning for at gennemtvinge plan-id, oprette en planvejledning for at tilføje tabeltip, fjerne planvejledning, deaktivere/aktivere sidelåse og låse eskalering, opdatere statistik for en tabel, gendanne indeks, oprette indeks |
 | **Installationsindstilling**              | Skyinstallation: Påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
-| **Status**                         | Udfaset: Planlagt dato for fjernelse i oktober 2021. |
+| **Status**                         | Udfases: Planlagt dato for fjernelse er oktober 2021. |
 
 ## <a name="feature-deprecation-effective-may-2021"></a>Udfasning af funktioner, der træder i kraft i maj 2021
 
@@ -76,7 +134,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Erstattet af en anden funktion?**   | Ja, denne funktion erstattes af LCS [Problemsøgning](../lifecycle-services/issue-search-lcs.md) og [Dynamics-tjenesten til indsendelse af lovmæssige beskeder](../lcs-solutions/submit-localization-alerts.md). |
 | **Produktområder, der er berørt**         | Globaliseringsportal i LCS|
 | **Installationsindstilling**              | Skyinstallation |
-| **Status**                         | Udfases: Planlagt dato for fjernelse i maj 2022. |
+| **Status**                         | Udfases: Planlagt dato for fjernelse er maj 2022. |
 
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funktionen er fjernet med ikrafttrædelsesdatoen 28. januar 2021

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463828"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700373"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Start her med elektronisk fakturering
 
@@ -84,6 +84,7 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
 | Norsk elektronisk faktura (NO)    | <p>Kontekstmodel for debitorfaktura</p><p>Fakturamodel</p> |
 | Spansk elektronisk faktura (ES)      | <p>Kontekstmodel for debitorfaktura</p><p>Fakturamodel</p> |
 | PEPPOL Elektronisk faktura            | <p>Kontekstmodel for debitorfaktura</p><p>Fakturamodel</p> |
+| Elektronisk faktura for Saudi-Arabien (SA)| <p>Kontekstmodel for debitorfaktura</p><p>Fakturamodel</p> |
 
 
 ## <a name="configure-the-application-setup"></a>Konfigurere opsætning af applikationen
@@ -112,6 +113,7 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
     | Norsk elektronisk faktura (NO)    | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Debitorfakturajournal</p><p>Projektfaktura</p> |
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Debitorfakturajournal</p><p>Projektfaktura</p> |
     | PEPPOL Elektronisk faktura            | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Debitorfakturajournal</p><p>Projektfaktura</p> |
+    | Elektronisk faktura for Saudi-Arabien (SA)| <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Debitorfakturajournal</p><p>Projektfaktura</p> |
 
 6. Vælg og angiv en kontekstværdi for hvert tabelnavn, du opretter, i henhold til følgende tabel.
 
@@ -133,6 +135,7 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
     | Norsk elektronisk faktura (NO)    | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Kontekstmodel for debitorfaktura – debitorfakturakontekst</p><p>Kontekstmodel for debitorfaktura – projektfakturakontekst</p> |
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Kontekstmodel for debitorfaktura – debitorfakturakontekst</p><p>Kontekstmodel for debitorfaktura – projektfakturakontekst</p> |
     | PEPPOL Elektronisk faktura            | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Kontekstmodel for debitorfaktura – debitorfakturakontekst</p><p>Kontekstmodel for debitorfaktura – projektfakturakontekst</p> |
+    | Elektronisk faktura for Saudi-Arabien (SA)| <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Kontekstmodel for debitorfaktura – debitorfakturakontekst</p><p>Kontekstmodel for debitorfaktura – projektfakturakontekst</p> |
 
 7. For hvert tabelnavn og hver kontekst skal du vælge og angive en værdi for Tilknytning af forretningsdokument i henhold til følgende tabel.
 
@@ -154,6 +157,7 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
     | Norsk elektronisk faktura (NO)    | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Tilknytning af fakturamodel – Debitorfaktura</p><p>Tilknytning af fakturamodel – projektfaktura</p> |
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Tilknytning af fakturamodel – Debitorfaktura</p><p>Tilknytning af fakturamodel – projektfaktura</p> |
     | PEPPOL Elektronisk faktura            | <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Tilknytning af fakturamodel – Debitorfaktura</p><p>Tilknytning af fakturamodel – projektfaktura</p> |
+    | Elektronisk faktura for Saudi-Arabien (SA)| <p>Salgsfaktura</p><p>Projektfaktura</p> | <p>Tilknytning af fakturamodel – Debitorfaktura</p><p>Tilknytning af fakturamodel – projektfaktura</p> |
 
 
 ## <a name="country-specific-configuration-of-application-setup"></a>Landespecifik konfiguration af programopsætning
@@ -207,6 +211,8 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
     | Norsk elektronisk faktura (NO)                     | Norge          |
     | PEPPOL Elektronisk faktura                             | Globalt          |
     | Spansk elektronisk faktura (ES)                       | Spanien           |
+    | Elektronisk faktura for Saudi-Arabien (SA)                 | Saudi-Arabien    |
+    
 
 4. Vælg **Gem**.
 
@@ -244,6 +250,7 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
 - [Start her med elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
 - [Start her med elektronisk fakturering for Italien](e-invoicing-ita-get-started.md)
 - [Elektroniske fakturaer til kunder i Egypten](emea-egy-e-invoices.md)
+- [Elektroniske kundefakturaer i Saudi-Arabien](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dfc1bc0d457d0b0b2632aa2e2e5ba6a3c2f3fae7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1ea1d8c1b0e8c996ead8461005960fa756ce6ca7
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575165"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678903"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Oversigt over tilføjelsesprogram for lagersynlighed
 
@@ -45,8 +45,6 @@ Du kan få vist lageret på to måder:
 - Vis den ubehandlede liste over disponibel lagerbehandling. Denne liste synkroniseres jævnligt fra en cachelagret forekomst og kan ses i Dataverse. Du kan finde flere oplysninger i [appen Lagersynlighed](inventory-visibility-power-platform.md).
 
 ## <a name="soft-reservations"></a>Foreløbige reservationer
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Foreløbige reservationer anvendes, når en virksomhed skal reservere en bestemt antal produkter f.eks. for at understøtte opfyldelsen af en salgsordre, der forebygger oversalg. Når en salgsordre oprettes og bekræftes i Supply Chain Management eller andre ordrestyringssystemer, sendes der en anmodning om reservering af antallet til Lagersynlighed. Med Lagersynlighed kan du reservere produkter, der har dimensionsdetaljer og specifikke lagertransaktionstyper. (Du kan finde flere oplysninger i [appen Lagersynlighed](inventory-visibility-power-platform.md)). Når antallet er reserveret korrekt, returneres et reservations-id. Du kan bruge dette reservations-id til at oprette forbindelse til den oprindelige ordre i Supply Chain Management eller andre ordrestyringssystemer.
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592482"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678781"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API'er for Lagersynlighed
 
@@ -374,8 +374,6 @@ Følgende er et eksempel på brødtekst. Funktionsmåden for denne API er forske
 ```
 
 ## <a name="create-reservation-events"></a>Oprette reservationshændelser
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Hvis du vil bruge API'en for *Reservér*, skal du åbne reservationsfunktionen og fuldføre reservationskonfigurationen. Du kan finde flere oplysninger i [Konfiguration af reservationer (valgfri)](inventory-visibility-configuration.md#reservation-configuration).
 

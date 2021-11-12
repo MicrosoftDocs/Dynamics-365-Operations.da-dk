@@ -2,7 +2,7 @@
 title: ER-funktionen JSONVALUE
 description: Dette emne indeholder oplysninger om, hvordan funktionen JSONVALUE til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-ms.date: 12/11/2019
+ms.date: 10/25/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b034755602a2f999892d2b976c80550b7a3d7f3cd179816dd7aa1edefe6a0270
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff33098e5be4dd9748d01d45b596360617305724
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733767"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700057"
 ---
 # <a name="jsonvalue-er-function"></a>ER-funktionen JSONVALUE
 
@@ -41,7 +41,7 @@ Den gyldige sti til en datakilde af typen *Streng*, som indeholder JSON-data.
 
 `path`: *Streng*
 
-Identifikatoren for en skalarværdi af JSON-data.
+Identifikatoren for en skalarværdi af JSON-data. Brug en skråstreg (/) til at adskille navnene på relaterede JSON-noder. Brug kantede parenteser (\[\]) til at angive indekset for en bestemt værdi i en JSON-matrix. Bemærk, at nulbaseret nummerering bruges til dette indeks.
 
 ## <a name="return-values"></a>Returnerede værdier
 
@@ -49,13 +49,37 @@ Identifikatoren for en skalarværdi af JSON-data.
 
 Den returnerede tekstværdi.
 
-## <a name="example"></a>Eksempel
+## <a name="example-1"></a>Eksempel 1
 
 Datakilden **$JsonField** indeholder følgende data i JSON-format: **{"BuildNumber":"7.3.1234.1", "KeyThumbprint":"7366E"}**. I dette tilfælde returnerer `JSONVALUE (JsonField, "BuildNumber")`-udtrykket følgende værdi af datatypen *Streng*: **"7.3.1234.1"**.
+
+## <a name="example-2"></a>Eksempel 2
+
+Datakilden **JsonField** af typen *Beregnet felt* indeholder dette udtryk: `"{""workers"": [ {""name"": ""Adam"", ""age"": 30, ""emails"": [""AdamS@Contoso.com"", ""AdamS@Hotmail.com"" ]}, { ""name"": ""John"", ""age"": 21, ""emails"": [""JohnS@Contoso.com"", ""JohnS@Aol.com""]}]}"`
+
+Dette udtryk er konfigureret til at returnere en [*Streng*](er-formula-supported-data-types-primitive.md#string)-værdi, der repræsenterer følgende data i JSON-format.
+
+```json
+{
+    "workers": [
+        {
+            "name": "Adam",
+            "age": 30,
+            "emails": [ "AdamS@Contoso.com", "AdamS@Hotmail.com" ]
+        },
+        {
+            "name": "John",
+            "age": 21,
+            "emails": [ "JohnS@Contoso.com", "JohnS@Aol.com" ]
+        }
+    ]
+}
+```
+
+I dette tilfælde returnerer udtrykket `JSONVALUE(json, "workers/[1]/emails/[0]")` følgende værdi af datatypen *Streng*: `JohnS@Contoso.com`.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tekstfunktioner](er-functions-category-text.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

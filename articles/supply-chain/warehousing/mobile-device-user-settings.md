@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e20367f4261d0112855f36c69c25cd732c78be7bb23d7c6333aea84db437d735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51c530fd0043a4ec5a82660af72c001be25b7e62
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769413"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647479"
 ---
 # <a name="mobile-device-user-settings"></a>Indstillinger for mobilenhedsbruger
 
@@ -54,7 +54,7 @@ Du kan også definere en indstillingsprofil for alle enhedsmærker, enhedsmodell
 
 Følg disse trin for at oprette og administrere brugerindstillinger for dine mobilenheder.
 
-1. Gå til **Lokationsstyring \> Mobilenhed \> Brugerindstillinger for mobilenhed**.
+1. Gå til **Lokationsstyring \> Konfiguration \> Mobilenhed \> Brugerindstillinger for mobilenhed**.
 1. Vælg en eksisterende brugerindstillingsprofil i listeruden for at åbne posten. Du kan også vælge **Ny** i handlingsruden for at oprette en ny profil.
 
     Hver profil i listeruden har navnet på det mærke, den model og/eller det bruger-id, profilen gælder for. Mere generelle profiler har værdien *Alle* for nogle af eller alle disse egenskaber.
@@ -83,7 +83,7 @@ Du kan bruge siden **Mærker til mobilenhed** til at se, oprette og administrere
 
 Følg disse trin for at oprette og administrere dine mobilenhedsmærker og -modeller.
 
-1. Gå til **Lokationsstyring \> Mobilenhed \> Mærker til mobilenhed**.
+1. Gå til **Lokationsstyring \> Konfiguration \> Mobilenhed \> Mærker til mobilenhed**.
 1. Vælg et mobilenhedsmærke i listeruden for at åbne dets post. Du kan også vælge **Ny** i handlingsruden for at oprette et nyt mærke.
 1. Angiv følgende felter i overskriftssektionen for den nye eller valgte post til enhedsmærke:
 

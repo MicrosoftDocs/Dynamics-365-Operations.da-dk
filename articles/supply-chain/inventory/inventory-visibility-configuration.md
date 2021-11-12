@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474670"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678465"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurere lagersynlighed
 
@@ -366,16 +366,12 @@ Med indekset kan du forespørge på den disponible lagerbeholdning på følgende
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfiguration af reservationer (valgfrit)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Konfiguration af reservationer er påkrævet, hvis du vil bruge funktionen til foreløbig reservation. Konfigurationen består af to grundlæggende dele:
 
 - Tilknytning af foreløbige reservationer
 - Hierarki for foreløbige reservationer
 
 ### <a name="soft-reservation-mapping"></a>Tilknytning af foreløbige reservationer
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Når du foretager en reservation, vil du måske gerne vide, om den disponible lagerbeholdning er tilgængelig for reservation. Valideringen er knyttet til en beregnet måling, der repræsenterer en beregningsformel for en kombination af fysiske målinger.
 
@@ -446,8 +442,6 @@ Hvis du forsøger at foretage reservationer for `iv.SoftReservOrdered`, og antal
 > Når du kalder reservations-API'en, kan du styre valideringen af reservationen ved at angive parameteren Boolesk `ifCheckAvailForReserv` i brødteksten. Værdien `True` betyder, at valideringen er påkrævet, mens værdien `False` betyder, at valideringen ikke er nødvendig. Standardværdien er `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Hierarki for foreløbige reservationer
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Reservationshierarkiet beskriver den dimensionsrækkefølge, der skal angives, når der foretages reservationer. Det fungerer på samme måde, som produktindekshierarkiet fungerer i forbindelse med forespørgsler om disponibel lagerbeholdning.
 
@@ -747,8 +741,6 @@ I følgende tabel vises standardkonfigurationen af indekser.
 I dette afsnit beskrives standardkonfigurationen af reservationer.
 
 #### <a name="reservation-mapping"></a>Reservationstilknytning
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 I følgende tabel vises standardtilknytningen for reservationer.
 

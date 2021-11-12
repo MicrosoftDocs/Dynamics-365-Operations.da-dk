@@ -2,7 +2,7 @@
 title: Navigationsmenumodul
 description: Dette emne omhandler navigationsmenumoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 486f20c26f97c236dfde2cbaedd8df434fe762947a6caa1c7cc03e4d244f4d47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5379aa4496c1c448d147bb260689ebe38aaf903f
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761580"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713846"
 ---
 # <a name="navigation-menu-module"></a>Navigationsmenumodul
 
@@ -41,8 +41,8 @@ I følgende illustration vises et eksempel på en navigationsmenu for Fabrikam-w
 |---------------------------|-----------------------|-------------|
 | Kildetekst                  | **Detail**, **Manuel oprettelse**, **Detail og manuel oprettelse** | **Detail**-værdien giver mulighed for at få vist kanalnavigationshierarkiet fra Commerce Headquarters i navigationsmenuen. Værdien af **Manuel oprettelse** tillader, at statiske menupunkter overvåges. Værdien af **Detail og manuel oprettelse** tillader en blanding af begge dele. |
 | Vise kategoribilleder | **Sand** eller **Falsk**    | Når denne egenskab er aktiveret, viser kategoribilleder i den navigationsmenu, som er defineret i Commerce Headquarters for hver kategori. Tilføjet i Commerce version 10.0.14. |
-| Vise kampagner | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan kampagner konfigureres ved hjælp af billeder, links og tekst. Denne egenskab blev tilføjet i Commerce version 10.0.17-udgaven. |
-| Tilføje Kampagner | Tekst, billede eller link | Når egenskaben **Vis kampagner** er aktiveret, kan du tilføje tekst, et billede eller et link som kampagneindhold i navigationsmenuen. |
+| Vis kampagnebilleder | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan kampagner konfigureres ved hjælp af billeder, links og tekst. Denne egenskab blev tilføjet i Commerce version 10.0.17-udgaven. |
+|Tilføje kategorikampagneindhold | Tekst, billede eller link | Når egenskaben **Vis kampagnebilleder** er aktiveret, kan du tilføje tekst, et billede eller et link som kampagneindhold i navigationsmenuen. |
 | Aktivere navigationsmenu på flere niveauer | **Sand** eller **Falsk** | Når denne egenskab er aktiveret, kan navigationsmenuen vise flere niveauer i navigationshierarkiet. Denne funktion er tilgængelig i Commerce version 10.0.15-udgaven. |
 | Antal niveauer | heltal | Denne egenskab definerer antallet af niveauer, der skal vises, hvis egenskaben **Aktiver navigationsmenu på flere niveauer** er indstillet til **Sand**. |
 | Statisk menupunkt| Matrix af værdier| Statiske menupunkter, der knytter et menupunkts navn til et link til en statisk webside. Du kan oprette menupunkter under andre menupunkter. Som standard vises statiske menuer på rodniveau, og de føjes til kanalnavigationshierarkiet, hvis det findes. |

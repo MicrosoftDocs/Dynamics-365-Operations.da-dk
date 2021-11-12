@@ -2,7 +2,7 @@
 title: Start her med momsberegning
 description: Dette emne beskriver, hvordan du konfigurerer momsberegning.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562120"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647428"
 ---
 # <a name="get-started-with-tax-calculation"></a>Start her med momsberegning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emne indeholder oplysninger om, hvordan du kommer i gang med momsberegning. Det fører dig gennem konfigurationstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) og Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Derefter gennemgås den almindelige proces for brug af momsberegning i Finance- og Supply Chain Management-transaktioner.
 
@@ -41,29 +39,10 @@ Opsætningen består af fire hovedtrin:
 
 Før du kan fuldføre procedurerne i dette emne, skal du kontrollere, at forudsætningerne for hver miljøtype er opfyldt.
 
-### <a name="for-a-production-environment"></a>For et produktionsmiljø
-
-For et produktionsmiljø skal følgende forudsætninger være opfyldt:
+Følgende forudsætninger skal være opfyldt:
 
 - Du skal have adgang til din LCS-konto, og du skal have et aktivt LCS-projekt med et niveau 2-miljø eller derover, som kører Dynamics 365 version 10.0.21 eller senere.
 - Du skal oprette et RCS-miljø for din organisation, og du skal have adgang til din konto. Du kan finde flere oplysninger om, hvordan du opretter et RCS-miljø, i [Oversigt over Regulatory Configuration Service](rcs-overview.md).
-- Følgende funktioner skal være aktiveret i arbejdsområdet **Funktionsstyring** i det installerede Supply Chain Management-miljø baseret på virksomhedens forretningsbehov:
-
-    - Momsberegningstjeneste
-    - Understøt flere momsregistreringsnumre
-    - Moms i flytteordre
-
-- Følgende funktioner skal være aktiveret i arbejdsområdet **Funktionsstyring** i dit installerede RCS-miljø.
-
-    - Globaliseringsfunktioner
-
-### <a name="for-a-test-environment-public-preview"></a>For et testmiljø (offentlig forhåndsversion)
-
-For et testmiljø skal følgende forudsætninger være opfyldt:
-
-- Du skal have adgang til din LCS-konto, og du skal have et aktivt LCS-projekt med et niveau 2-miljø eller derover, som kører Dynamics 365 version 10.0.21 eller senere version.
-- Du skal oprette et RCS-miljø for din organisation, og du skal have adgang til din konto. Du kan finde flere oplysninger om, hvordan du opretter et RCS-miljø, i [Oversigt over Regulatory Configuration Service](rcs-overview.md).
-- Du skal kontakte Microsoft ved at sende en email til <taxcalc@microsoft.com> for at aktivere flighting i dit installerede Finance- eller Supply Chain Management-miljø.
 - Følgende funktioner skal være aktiveret i arbejdsområdet **Funktionsstyring** i det installerede Supply Chain Management-miljø baseret på virksomhedens forretningsbehov:
 
     - Momsberegningstjeneste

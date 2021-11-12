@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: db1d9d2cddfab5ca5abb50cc3ecb9c841e06b8b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580978"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647308"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
 
@@ -46,7 +46,7 @@ De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](..
 
 Følgende tabel indeholder de funktionsforbedringer, der er inkluderet i denne version. Hver af disse giver en trinvis forbedring af en eksisterende funktion. Da det kun er forbedringer, er de ikke angivet i [udgivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Men for at sikre, at disse forbedringer ikke er i konflikt med dine eksisterende tilpasninger eller præferencer, er hver af dem som standard deaktiveret (medmindre andet er angivet). Hvis du vil bruge en af disse funktioner, skal du udtrykkeligt aktivere dem i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsområde | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
+| Modul | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
 |---|---|---|
 | Varedisponering | Parallel godkendelse til justeret behovsprognose | Denne funktion muliggør parallel godkendelse af justeret efterspørgselsprognose fra siden **Justeret efterspørgselsprognose**. Formålet med denne funktion er at øge ydeevnen, når et stort antal budgetter godkendes. Under godkendelse kan brugeren angive **Antal tråde** i dialogboksen til godkendelse. |
 | Varedisponering | (Forhåndsversion) Godkendelse og konsolidering, der kan køre i batch, for planlagte bulk- og pakkebatchordrer | Med denne funktion kan du bruge batchjob til at bekræfte og konsolidere planlagte bulk- og pakkeordrer. |

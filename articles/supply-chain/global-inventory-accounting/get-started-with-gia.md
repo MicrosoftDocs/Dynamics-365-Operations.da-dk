@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfba2b8320399cc2eb3f2231e8a172d902633f16
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773285"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678853"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gang med Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 Med Global Inventory Accounting kan du udføre flere lagerregnskaber i de Global Inventory Accounting-finansposter, som du har oprettet. Du skal knytte hver Global Inventory Accounting-finanspost til et *princip*. En konvention er en samling af følgende typer regnskabspolitikker:
 
@@ -60,9 +60,9 @@ Før du kan aktivere tilføjelsesprogrammets funktioner, skal du integrere det m
 1. I dialogboksen **Opsætning af Power Platform-miljø** skal du markere afkrydsningsfeltet og derefter vælge **Opsætning**. Det tager normalt mellem 60 og 90 minutter at udføre konfigurationen.
 1. Når opsætningen af Microsoft Power Platform-miljøet er fuldført, vises navnet på miljøet på siden. Sektionen **Power Platform-integration** viser desuden sætningen "Opsætning af Power Platform-miljøet er fuldført". Global Inventory Accounting kræver ikke et program til dobbeltskrivning.
 
-Du kan finde flere oplysninger i [Konfigurere efter installation af miljøet](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment).
+Du kan finde flere oplysninger i [Aktivere efter installation af miljøet](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Konfigurere Dataverse
+### <a name="set-up-dataverse"></a>Konfigurer Dataverse
 
 Før du konfigurerer Dataverse, skal du føje Global Inventory Accounting-serviceprincipperne til din lejer ved at følge disse trin.
 

@@ -2,7 +2,7 @@
 title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret for at få adgang til disse egenskaber.
 author: jasongre
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483848"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700131"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner, du kan bruge til at forbedre brugernes produktivitet, oprette mere interessante visninger af dine data og få meningsfuld indsigt i dine data. Denne artikel dækker følgende funktioner: 
@@ -32,6 +33,8 @@ Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner,
 -  Evaluere matematiske udtryk 
 -  Gruppere data i tabelformat (aktiveres separat ved hjælp af funktionen **Gruppering i gitre**)
 -  Fryse kolonner
+-  Tilpasse kolonnebredde automatisk
+-  Kolonner, der kan strækkes
 
 ## <a name="calculating-totals"></a>Beregner totaler
 I Finance and Operations-apps har brugerne mulighed for at få vist totaler nederst i numeriske kolonner i gitre. Disse totaler vises i en sektion med sidefod nederst i gitteret. 
@@ -43,7 +46,7 @@ Der er et sidefodsområde i bunden af alle tabelgitre i Finance and Operations-a
 - Samlede beløb nederst i konfigurerede og numeriske kolonner
 - Antallet af rækker i datasættet 
 
-Denne sidefod er som standard skjult, men du kan slå den til. Hvis du vil have vist sidefoden for et gitter, skal du højreklikke på kolonneoverskriften i gitteret og vælge indstillingen **Vis sidefod**. Når du har aktiveret sidefoden i et bestemt gitter, huskes denne indstilling, indtil brugeren vælger at skjule sidefoden. Hvis du vil skjule sidefoden, skal du højreklikke på kolonneoverskriften og vælge **Skjul sidefod**.  Placeringen af handlingen **Vis sidefod/Skjul sidefod** kan blive flyttet til en ny placering i en senere opdatering. 
+Denne sidefod er som standard skjult, men du kan slå den til. Hvis du vil have vist sidefoden for et gitter, skal du vælge knappen **Gitterindstillinger** i gitteroverskriften og vælge indstillingen **Vis sidefod**. Når du har aktiveret sidefoden i et bestemt gitter, huskes denne indstilling, indtil brugeren vælger at skjule sidefoden. Hvis du vil skjule sidefoden, skal du vælge **Skjul sidefod** i menuen **Gitterindstillinger**.  
 
 ### <a name="specifying-columns-with-totals"></a>Angive kolonner med totaler
 Aktuelt viser ingen kolonner som standard totaler. Dette betragtes i stedet for som en aktivitet til engangsopsætning, der svarer til at justere kolonnebredden i gitre. Når du har angivet, at du vil have vist totaler for en kolonne, vil denne indstilling blive husket, næste gang du besøger siden.  
@@ -82,7 +85,7 @@ For at understøtte denne nye funktionsmåde er der tilføjet en ny kolonne for 
 Når brugerne indtaster data før det sted, hvor serveren behandler data, kan de forvente en række degraderinger i dataindtastningsoplevelsen, f.eks. manglende opslag, validering på kontrolniveau og indtastning af standardværdier. Brugere, der har brug for en rulleliste til at finde en værdi, anbefales at vente på, at serveren når til den aktuelle række. Validering på kontrolniveau og angivelse af standardværdier vil også finde sted, når serveren behandler den pågældende række.   
 
 ### <a name="pasting-from-excel"></a>Indsætning fra Excel
-Brugerne har altid været i stand til at eksportere data fra gitre i Finance and Operations-apps til Excel ved hjælp af mekanismen **Eksportér til Excel**. Muligheden for at indtaste data forud i systemet gør det dog muligt for det nye gitter at understøtte kopiering af tabeller fra Excel og indsætning af dem direkte i gitre i Finance and Operations-apps. Den gittercelle, som indsætningen er initieret fra, bestemmer, hvor den kopierede tabel begynder at blive indsat. Indholdet af gitteret overskrives med indholdet af den kopierede tabel, undtagen i to tilfælde:
+Brugerne har altid været i stand til at eksportere data fra gitre i Finance and Operations-apps til Microsoft Excel ved hjælp af mekanismen **Eksportér til Excel**. Muligheden for at indtaste data forud i systemet gør det dog muligt for det nye gitter at understøtte kopiering af tabeller fra Excel og indsætning af dem direkte i gitre i Finance and Operations-apps. Den gittercelle, som indsætningen er initieret fra, bestemmer, hvor den kopierede tabel begynder at blive indsat. Indholdet af gitteret overskrives med indholdet af den kopierede tabel, undtagen i to tilfælde:
 
 - Hvis antallet af kolonner i den kopierede tabel overstiger antallet af kolonner, der er tilbage i gitteret, startende fra indsætningens sted, får brugeren besked om, at de ekstra kolonner er blevet ignoreret. 
 - Hvis antallet af rækker i den kopierede tabel overstiger antallet af rækker i gitteret med start fra indsætningens sted, overskrives de eksisterende celler af det indsatte indhold, og eventuelle ekstra rækker fra den kopierede tabel indsættes som nye rækker nederst i gitteret. 
@@ -125,6 +128,9 @@ Hvis du vil fryse en kolonne, skal du højreklikke på kolonnens overskrift og d
 Hvis du vil frigøre en kolonne, skal du højreklikke på den frosne kolonnes overskrift og derefter vælge **Frigør kolonne**. 
 
 Bemærk, at rækkevalget og rækkestatuskolonnerne i det nye gitter altid fryses som de første to kolonner. Når disse kolonner er medtaget i et gitter, er de derfor altid synlige for brugerne, uanset den vandrette rulleposition i gitteret. Disse to kolonner kan ikke omrokeres.
+
+## <a name="autofit-column-width"></a>Tilpasse kolonnebredde automatisk
+På samme måde som i Excel kan brugere automatisk tvinge en kolonne til at ændre størrelsen på baggrund af det indhold, der aktuelt vises i den pågældende kolonne. Det gør du ved at dobbeltklikke på størrelseshåndtagene i kolonnen eller ved at fokusere i kolonneoverskriften og trykke på **A** (for automatisk tilpasning). Denne funktion er tilgængelig fra og med version 10.0.23.  
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg det nye gitterkontrolelement i mit miljø? 

@@ -2,7 +2,7 @@
 title: Liste over ER-funktioner i kategorien Dato og klokkeslæt
 description: Dette emne indeholder oplysninger om funktionerne dato og klokkeslæt, der understøttes i elektronisk rapportering (ER).
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f0f421afcaf720366c76c2728721598540a37f0b627123b3386a3174c039a96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760044"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647257"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Liste over ER-funktioner i kategorien Dato og klokkeslæt
 
@@ -31,8 +31,9 @@ Funktionerne dato og klokkeslæt for elektronisk rapportering (ER) kan bruges ti
 
 | Funktion | Beskrivelse |
 |----------|-------------|
-| [AddDays](er-functions-datetime-adddays.md) | Denne funktion returnerer en værdi med *DatoKlokkeslæt*, der er det angivne antal dage før eller efter en angivet startdato. |
-| [DateFormat](er-functions-datetime-dateformat.md) | Denne funktion returnerer en værdi i form af en *Streng*, som præsenterer en given datoværdi som tekst i det angivne format og i en eventuelt angivet kultur. |
+| [AddDays](er-functions-datetime-adddays.md) | Denne funktion returnerer en *[Dato/klokkeslæt](er-formula-supported-data-types-primitive.md#datetime)*-værdi, der er det angivne antal dage før eller efter en angivet startdato. |
+| [ChangeTimeZone](er-functions-datetime-changetimezone.md) | Denne funktion returnerer en værdi i form af *Dato/klokkeslæt*, som konverteres fra en given dato-/klokkeslætsværdi i én tidszone til dato-/klokkeslætsværdi i en anden tidszone. |
+| [DateFormat](er-functions-datetime-dateformat.md) | Denne funktion returnerer en værdi i form af en *[Streng](er-formula-supported-data-types-primitive.md#string)*, som præsenterer en given datoværdi som tekst i det angivne format og i en eventuelt angivet kultur. |
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Denne funktion returnerer en værdi i form af en *Streng*, som præsenterer en given dato-/klokkeslætsværdi som tekst i det angivne format og i en eventuelt angivet kultur. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Denne funktion returnerer en værdi i form af *DatoKlokkeslæt*, som er konverteret fra en given tekst i det angivne format og i en eventuelt angivet kultur til en dato-/klokkeslætsværdi. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Denne funktion returnerer en værdi i form af *DatoKlokkeslæt*, som konverteres fra en given dato-/klokkeslætsværdi i UTC-tid (Coordinated Universal Time) (Greenwich Mean \[time\]GMT). |

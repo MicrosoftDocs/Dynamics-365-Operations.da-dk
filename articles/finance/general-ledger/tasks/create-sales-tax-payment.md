@@ -2,7 +2,7 @@
 title: Oprette en momsbetaling
 description: Jobbet Afregn og bogfør momsprocedurer afregner momssaldi i momskonti og udligner dem til momsafregningskontoen for en given periode.
 author: twheeloc
-ms.date: 08/29/2018
+ms.date: 10/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8c0b6c67a547e42ab4d7b7ba9f456a29c6b3d22e491e3a8ad0481a0144491087
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54132ca4775482b4a06ff7e73125e804aff40cb4
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763160"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700107"
 ---
 # <a name="create-a-sales-tax-payment"></a>Oprette en momsbetaling
 
@@ -30,10 +30,35 @@ Jobbet Afregn og bogfør momsprocedurer afregner momssaldi i momskonti og udlign
 2. Klik på rullelisten i feltet **Afregningsperiode** for at åbne opslaget.
 3. Klik op linket i den valgte række på listen.
 4. Indtast en dato i feltet **Fra dato**.
-    * Hvis indstillingen **Medtag korrektioner** ikke er markeret på siden **Finansparametre**, kan afregningen behandles for forskellige versioner. Oprindelig er den første afregning for et periodeinterval og kan kun behandles én gang for et periodeinterval. De seneste rettelser udligner momsposteringer, der er bogført efter den oprindelige version er blevet oprettet.   
+    - Hvis indstillingen **Medtag korrektioner** ikke er markeret på siden **Finansparametre**, kan afregningen behandles for forskellige versioner. Oprindelig er den første afregning for et periodeinterval og kan kun behandles én gang for et periodeinterval. De seneste rettelser udligner momsposteringer, der er bogført efter den oprindelige version er blevet oprettet.
 5. Angiv en dato i feltet **Transaktionsdato**.
 6. Klik på **OK**.
 
+## <a name="performance-consideration"></a>Overvejelser vedrørende ydeevne
 
+Momsbetalingsproceduren kan tage lang tid at fuldføre. De vigtigste faktorer, der har indflydelse på procedurens ydeevne, er antallet af fakturaer i afstemningsperioden og antallet af poster, der skal bogføres i momsafstemningsbilaget. Hvis du vil forbedre ydeevnen, kan du vælge at springe visse funktioner over, som ikke er nødvendige i processen.
+
+### <a name="enable-the-sales-tax-payment-performance-improvement-feature"></a>Aktivere funktionen til forbedring af ydeevne for momsbetaling
+
+Funktionen **Forbedring af ydeevne for momsbetaling** kan være med til at forbedre ydeevnen for momsbetalingsproceduren ved at samle beløbene i regnskabsvalutaen og rapporteringsvalutaen på én bilagslinjer til momsindbetaling, der har samme hovedkonto, finansdimension og valuta.
+
+1. Gå til **Systemadministration** \> **Arbejdsområder** \> **Funktionsstyring**.
+2. Søg efter og vælg **Forbedring af ydeevne for momsbetaling** under fanen **Alle**.
+3. Vælg **Aktivér**.
+
+### <a name="prevent-generation-of-offset-tax-transactions"></a>Undgå generering af modregning af momsposteringer
+
+Som standard bogfører momsbetalingsbilaget modregning af momsposteringer i forhold til hver momspostering, der udlignes i momsbetalingsproceduren. Disse modposteringer for moms medtages i rapporten **Afstemning moms/finans**. De viser den udestående saldo for momsposteringer, der ikke udlignes i perioden.
+
+Modposteringerne for moms kan dog øge byrden af momsbetalingsproceduren. En flighting med navnet **TaxReportGenOffsetTaxTransPerRecordSetFlighting** kan derfor aktiveres efter behov. Denne flighting kan hjælpe med at forbedre ydeevnen af modposteringsgenerering for lande og områder bortset fra Thailand, Polen, Ungarn, Litauen, Malaysia, Indien, Italien, Rusland, Den Tjekkiske Republik, Estland og Letland.
+
+> [!NOTE]
+> Hvis der er brugerdefinerede felter i momsposteringstabellen, kan flighting ikke aktiveres.
+
+Da rapporten **Afstemning moms/finans** generelt kun bruges til intern kontrol og ikke er påkrævet i mange momskategorier, kan du vælge ikke at generere modposteringer af moms på momsafregningsbilaget.
+
+1. Gå til **Moms** \> **Indirekte moms** \> **Moms** \> **Momsafregningsperioder**.
+2. Vælg en afregningsperiode.
+3. Angiv indstillingen **Undgå at generere modregning af momsposteringer** til **Ja** i oversigtspanelet **Generelt**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

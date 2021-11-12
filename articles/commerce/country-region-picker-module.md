@@ -15,17 +15,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 3134e10c096525ec2d82365a25eff16a3c5d5e11
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 35d78cdcc356d35776940147e9b0afee0f0be2a2
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472585"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674717"
 ---
 # <a name="countryregion-picker-module"></a>Modul til pluk af land/område
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler plukmoduler til land/område og forklarer, hvordan du kan konfigurere det i Microsoft Dynamics 365 Commerce.
 
@@ -35,13 +34,13 @@ En kunde i Canada anmoder f.eks. om en URL-adresse til webstedet, som ikke er kn
 
 ![Eksempel på en dialogboks til pluk af land/område på en startside.](./media/Geo_country-region-module-insitu.png)
 
-## <a name="countryregion-picker-module-properties&quot;></a>Modulegenskaber til pluk af land/område
+## <a name="countryregion-picker-module-properties"></a>Modulegenskaber til pluk af land/område
 
 | Egenskabsbetegnelse              | Værdi       | Betegnelse |
 | -------------------------- | ----------- | ----------- |
 | Overskrift                    | Tekst        | Den overskrift, der vises øverst i dialogboksen. |
 | Underoverskrift                 | Tekst        | Underoverskriften, der vises under overskriften. |
-| Land: Visningsstreng    | Tekst        | Det viste navn for en URL-indstilling (f.eks. &quot;Canada"). |
+| Land: Visningsstreng    | Tekst        | Det viste navn for en URL-indstilling (f.eks. "Canada"). |
 | Land: Visningsunderstreng | Tekst        | En valgfri visningsunderstreng til en URL-indstilling (f.eks. "Engelsk" eller "Fransk"). |
 | Land: Billede af land     | Medieaktiv | Et valgfrit billede, der er knyttet til en URL-indstilling (f.eks. et billede af det canadiske flag). |
 | Land: URL-adresse for land       | Tekst        | Den URL-adresse, der svarer til den kanal og landeindstilling, der er konfigureret for landet eller området på siden **Kanaler** i Commerce Site Builder (**Webstedsindstillinger \> Kanaler**). Denne URL-adresse skal være nøjagtig den samme som den URL-adresse, der er konfigureret på siden **Kanaler**. |

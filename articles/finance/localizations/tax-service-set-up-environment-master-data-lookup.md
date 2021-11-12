@@ -2,7 +2,7 @@
 title: Konfigurere et miljø til opslag efter masterdata
 description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere dit miljø til at bruge funktionen til opslag af masterdata for momsberegning.
 author: kai-cloud
-ms.date: 04/21/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c4435dbfdb808a75b41a77d3c15d1c9fd29b266f353b1fbe18955ff985ab38bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 901f8bcb0220355866952b68e92bc2dd906bb430
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718173"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700398"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>Konfigurere et miljø til opslag efter masterdata
 
@@ -28,57 +28,54 @@ ms.locfileid: "6718173"
 
 Dette emne indeholder en forklaring på, hvordan du kan konfigurere dit miljø til at bruge funktionen til opslag af masterdata for momsberegning.
 
-1. Konfigurer integration af Power Platform i Lifecycle Services (LCS). Du kan finde flere oplysninger under [Microsoft Power Platform integration - Oversigt over tilføjelsesprogrammer](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
-2. Konfigurer Dynamics 365 Finance og Microsoft Dataverse. Du kan finde flere oplysninger under [Hente løsningen](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) og [Godkendelse og autorisation](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Konfigurer følgende enheder. Du kan finde flere oplysninger i [Aktivering af virtuelle enheder](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
-      - CompanyInfoEntity
-      - CurrencyEntity
-      - CustCustomerV3Entity
-      - DeliveryTermsEntity
-      - EcoResProductCategoryEntity
-      - EcoResReleasedProductV2Entity
-      - LogisticsAddressCityEntity
-      - LogisticsAddressCountryRegionTranslationEntity
-      - LogisticsAddressStateEntity
-      - PurchProcurementChargeCDSEntity
-      - SalesChargeCDSEntity
-      - TaxGroupEntity
-      - TaxItemGroupHeadingEntity
-      - VendVendorV2Entity
-4. Konfigurere Dynamics 365 Regulatory Configuration Service (RCS). 
-5. Opret en serviceanmodning til Microsoft for at aktivere flighting for følgende funktioner:
+1. Konfigurer integration af Microsoft Power Platform i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger under [Microsoft Power Platform integration - Oversigt over tilføjelsesprogrammer](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Når du har fuldført trinnet, vises navnet på et Microsoft Power Platform-miljø i sektionen **Power Platform-integration**.
+2. Gå til [Microsoft Power Platform administration](https://admin.powerplatform.microsoft.com/environments), og vælg miljønavnet. URL-adressen til miljøet er angivet.
+3. Konfigurer Dynamics 365 Finance og Dataverse. Du kan finde flere oplysninger under [Hente løsningen for den virtuelle enhed](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution) og [Godkendelse og autorisation](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
+4. Konfigurer følgende enheder. Du kan finde flere oplysninger i [Aktivere virtuelle Microsoft Dataverse-enheder](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
-      - ERCdsFeature
-      - TaxServiceCDSFeature
+    - CompanyInfoEntity
+    - CurrencyEntity
+    - CustCustomerV3Entity
+    - DeliveryTermsEntity
+    - EcoResProductCategoryEntity
+    - EcoResReleasedProductV2Entity
+    - LogisticsAddressCityEntity
+    - LogisticsAddressCountryRegionTranslationEntity
+    - LogisticsAddressStateEntity
+    - PurchProcurementChargeCDSEntity
+    - SalesChargeCDSEntity
+    - TaxGroupEntity
+    - TaxItemGroupHeadingEntity
+    - VendVendorV2Entity
 
-6. Gå til arbejdsområdet **Funktionsstyring**, og aktivér følgende funktioner:
+5. Konfigurer Regulatory Configuration Service (RCS). Åbn arbejdsområdet **Funktionsstyring**, og aktivér følgende funktioner:
 
-      - (Forhåndsversion) Understøttelse af Dataverse-datakilder for elektronisk rapportering
-      - (Prøveversion) Understøttelse af Dataverse-datakilder i momstjenesten
-      - (Prøveversion) Globaliseringsfunktioner
+    - Understøttelse af Dataverse-datakilder for elektronisk rapportering
+    - Understøttelse af Dataverse-datakilder i momstjenesten
+    - Globaliseringsfunktioner
 
-5. Log på RCS ved hjælp af en administratorkonto for en lejer.
-6. Gå til **Elektronisk rapportering** > **Tilsluttede programmer**. 
-7. Vælg **Ny** for at tilføje en post, og angiv følgende feltoplysninger. 
+6. Log på RCS ved hjælp af en administratorkonto for en lejer.
+7. Gå til **Elektronisk rapportering** > **Tilsluttede programmer**. 
+8. Vælg **Ny** for at tilføje en post, og angiv følgende feltoplysninger. 
 
-   - Indtast et navn i feltet **Navn**.
-   - Vælg **Dataverse** i feltet **Type**.
-   - Angiv din Dataverse-URL-adresse i feltet **Program**.
-   - Angiv lejeren i feltet **Lejer**.
-   - I feltet **Brugerdefineret URL-adresse** skal du angive din Dataverse-URL-adresse og tilføje "/api/data/v9.1".
+    - Indtast et navn i feltet **Navn**.
+    - Vælg **Dataverse** i feltet **Type**.
+    - Angiv din Dataverse-URL-adresse i feltet **Program**.
+    - Angiv lejeren i feltet **Lejer**.
+    - I feltet **Brugerdefineret URL-adresse** skal du angive din Dataverse-URL-adresse og tilføje "/api/data/v9.1".
 
-8. Vælg **Kontrollér forbindelsen**, og afslut forbindelsesprocessen. 
+9. Vælg **Kontrollér forbindelsen**, og afslut forbindelsesprocessen. 
 
-   [![Knappen Kontrollér forbindelsen.](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
+    [![Knappen Kontrollér forbindelsen.](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
 
-9. Gå til **Elektronisk rapportering** > **Momskonfigurationer**, og importér momskonfigurationer fra [Momskonfigurationer](https://go.microsoft.com/fwlink/?linkid=2158352).
+10. Gå til **Elektronisk rapportering** > **Momskonfigurationer**, og importér momskonfigurationer fra [Momskonfigurationer](https://go.microsoft.com/fwlink/?linkid=2158352).
 
-   [![Siden Momskonfigurationer, træet med momsdatamodellen.](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
+    [![Siden Momskonfigurationer, træet med momsdatamodellen.](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
 
-10. Gå til **Tilknytning af den momspligtig dokumentmodel** eller **Dataverse-modeltilknytning**, hvis du bruger en Microsoft-konfiguration, og vælg den post, du oprettede i trin 7, i feltet **Tilknyttet program**.
-11. Vælg **Ja** i indstillingen **Standard for modeltilknytning**.
+11. Gå til **Tilknytning af den momspligtig dokumentmodel** eller **Dataverse-modeltilknytning**, hvis du bruger en Microsoft-konfiguration, og vælg den post, du oprettede i trin 7, i feltet **Tilknyttet program**.
+12. Vælg **Ja** i indstillingen **Standard for modeltilknytning**.
 
-   [![Siden Modeltilknytning.](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
+    [![Siden Modeltilknytning.](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

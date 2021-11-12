@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 942b144c78176e9a00cdc12101e2948e8aa4685e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579754"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678659"
 ---
 # <a name="manage-standard-cost-updates"></a>Administrere opdateringer af standardomkostninger
 
@@ -43,8 +43,6 @@ I det følgende eksempel illustreres, hvordan metoderne med én version og to ve
 I dette eksempel er brugt én ekstra efterkalkulationsversion til at administrere opdateringer i hele år 2020. Der kan bruges mere end én ekstra efterkalkulationsversion, f.eks. en separat version til hver opdateringsbatch. Når der bruges mere end én ekstra efterkalkulationsversion, skal reservedatakilden udtrykkes som de aktive omkostninger, da de aktive omkostninger spredes ud over flere efterkalkulationsversioner.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Økonomiske dimensioner for standardomkostningsregulering
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Aktivering af en ny standardpris vil typisk værdiregulere den disponible lagerbeholdning ud fra værdireguleringstransaktioner med standardomkostninger. Normalt bogføres varens økonomiske dimensioner på posteringerne. Men hvis du vil styre, om og hvordan de økonomiske dimensioner bogføres, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere funktionen *Indstillinger for økonomiske dimensioner, der benyttes som standard for værdiregulering af lagerbeholdning til standardomkostninger*. Når du har aktiveret denne funktion, skal du gå til **Omkostningsstyring > Konfiguration af regnskabspolitik for lager > Parametre** og angive den nye rulleliste **Grundlaget for økonomiske dimensioner** til en af følgende værdier:
 

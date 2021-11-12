@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0b39c3eee84a66082f1785f7f4d8a6d7dd96b63d
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7638464"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647209"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
 
@@ -48,7 +48,7 @@ De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](..
 
 Følgende tabel indeholder de funktionsforbedringer, der er inkluderet i denne version. Hver af disse giver en trinvis forbedring af en eksisterende funktion. Da det kun er forbedringer, er de ikke angivet i [udgivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Men for at sikre, at disse forbedringer ikke er i konflikt med dine eksisterende tilpasninger eller præferencer, er hver af dem som standard deaktiveret (medmindre andet er angivet). Hvis du vil bruge en af disse funktioner, skal du udtrykkeligt aktivere dem i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsområde | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
+| Modul | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
 |---|---|---|
 | Salg og marketing | Forbedringer af ydeevnen for oprydning i salgshistorikken | Oprydning i salgshistorikken kan tage lang tid, hvis den køres sjældent i miljøer med en stor mængde salgsopdateringer. For at reducere varigheden og forbedre pålideligheden opdeler denne funktion oprydning i batches, der kører i en begrænset periode. Hvor det er muligt, bruges databasefunktionerne til at minimere låsning og til at undgå at forbinde transaktionstabeller under oprydning. Flere oplysninger i [Forbedringer af ydeevnen for oprydning i salgshistorikken](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Salg og marketing | Opdater ønsket modtagelsesdato med bekræftet dato for interne ordrer | Med denne funktion kan du styre, hvad der skal ske med værdier i salgs- og købsdatofelt, når du bruger intern direkte levering. Du kan vælge, om systemet skal opdatere de ønskede datoer eller springe opdateringen over. Hvis du springer opdateringen over, repræsenterer de ønskede datoer det, kunden har anmodet om. Hvis du aktiverer opdatering, repræsenterer de ønskede datoer (ved brug af kontrol af leveringsdato) i første omgang kun det, som kunden har anmodet om. Når kontrollen af leveringsdato er forskellig fra *Ingen*, tilsidesættes det, der oprindeligt blev anmodet om. Du kan angive denne indstilling ved hjælp af den nye indstilling **Opdater anmodet kvitteringsdato med bekræftet dato** i de interne indstillinger for kreditor eller debitor.<br><br>Hvis funktionen er deaktiveret, overskriver systemet den ønskede modtagelsesdato på oprindelige salgsordrer baseret på reglen for kontrol af leveringsdato, men den ønskede afsendelsesdato forbliver, som den er. |

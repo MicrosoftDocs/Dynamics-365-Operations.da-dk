@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fac6a0232f7e51e859fcc5b23244be092ce8d76123ec42f586063a02abab603
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e846cde14fe078d6675ec31d1a3271f751dd6468
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722785"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647124"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
@@ -72,12 +72,9 @@ Din organisation bruger måske arbejdsgange til at administrere gennemsynsproces
 Du kan bruge følgende forskellige metoder til at forhindre, at der sendes en faktura til en arbejdsgang.
 
 - **Fakturatotalen og den registrerede total er forskellige.** Den person, der har sendt fakturaen, modtager en påmindelse om, at totalerne ikke er ens. Påmindelsen giver mulighed for at rette saldi, inden fakturaen sendes til arbejdsgangen igen. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturatotalen og den registrerede slutsaldo ikke er ens** på siden **Funktionsstyring** er slået til. 
-
 - **Fakturaen indeholder ikke-allokerede gebyrer.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at fakturaen har ikke-allokerede gebyrer, så fakturaen kan rettes, før den sendes til arbejdsgangen. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når der er ikke-allokerede gebyrer på en kreditorfaktura** på siden **Funktionsstyring** er slået til.
-
 - **Faktura indeholder samme fakturanummer som en anden bogført faktura.** Den person, der har sendt fakturaen, modtager en meddelelse om, at der blev fundet en faktura med et dubletnummer. Dubletnummeret kan rettes, før fakturaen sendes til arbejdsgangen igen. Denne påmindelse vises, når kreditorparameteren med navnet **Tjek det anvendte fakturanummer** er indstillet til **Afvis dublet**. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturanummeret allerede findes på en bogført faktura, og dit system ikke er konfigureret til at acceptere for identiske fakturanumre** på siden **Funktionsstyring** er slået til.
-
-- **Fakturaen indeholder en linje, hvor fakturaantallet er mindre end det afstemte antal på produktkvitteringen.** Den person, der sender fakturaen eller forsøger at bogføre, modtager en meddelelse om, at antallet ikke er ens. Denne meddelelse giver mulighed for at rette værdierne, inden fakturaen sendes til arbejdsgangen igen. Denne funktion er tilgængelig, hvis parameteren **Bloker bogføring og afsendelse af kreditorfakturaer til arbejdsgang** på siden **Funktionsstyring** er aktiveret, og parameteren **Bloker bogføring og afsendelse til arbejdsgang** på siden **Kreditorparametre** er aktiveret.  
+- **Fakturaen indeholder en linje, hvor fakturaantallet er mindre end det afstemte antal på produktkvitteringen.** Den person, der sender fakturaen eller forsøger at bogføre, modtager en meddelelse om, at antallet ikke er ens. Denne meddelelse giver mulighed for at rette værdierne, inden fakturaen sendes til arbejdsgangen igen. Denne funktion er tilgængelig, hvis parameteren **Bloker bogføring og afsendelse af kreditorfakturaer til arbejdsgang** på siden **Funktionsstyring** er aktiveret, og parameteren **Bloker bogføring og afsendelse til arbejdsgang** på siden **Kreditorparametre** er aktiveret.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Sammenholde kreditorfakturaer med produktkvitteringer
 
@@ -119,12 +116,35 @@ Du kan alene tilgå siden **Gendan kreditorfakturaer**, hvis du har fået tildel
 
 En arbejdsgangsforekomst, der er stoppet på grund af en uoprettelig fejl, har arbejdsgangsstatussen **Uoprettelig**. Når status for en arbejdsgang for en kreditorfaktura er **Uoprettelig**, kan du nulstille den til **Kladde** ved at vælge **Tilbagekald**. Du kan derefter redigere kreditorfakturaen. Denne funktion er tilgængelig, hvis parameteren **Nulstil kladdestatus for leverandørfakturaer fra uoprettelig til kladder** på siden **Administration af funktioner** er aktiveret.
 
-Du kan bruge siden **Arbejdsgangshistorik** for at nulstille arbejdsgangsstatussen til **Kladde**. Du kan åbne denne side fra **Kreditorfaktura**  eller fra navigationen **Almindelig > Forespørgsler > Arbejdsgang**. Hvis du vil nulstille arbejdsgangsstatussen til **Kladde**, skal du vælge **Tilbagekald**. Du kan også nulstille arbejdsgangsstatussen til kladde ved at vælge handlingen **Tilbagekald** på siden **Kreditorfaktura** eller **Afventende kreditorfakturaer**. Når arbejdsgangsstatus er nulstillet til **Kladde**, bliver den tilgængelig for redigering på siden **Kreditorfaktura**.
+Du kan bruge siden **Arbejdsgangshistorik** for at nulstille arbejdsgangsstatussen til **Kladde**. Du kan åbne denne side fra **Kreditorfaktura** eller fra navigationen **Almindelig > Forespørgsler > Arbejdsgang**. Hvis du vil nulstille arbejdsgangsstatussen til **Kladde**, skal du vælge **Tilbagekald**. Du kan også nulstille arbejdsgangsstatussen til kladde ved at vælge handlingen **Tilbagekald** på siden **Kreditorfaktura** eller **Afventende kreditorfakturaer**. Når arbejdsgangsstatus er nulstillet til **Kladde**, bliver den tilgængelig for redigering på siden **Kreditorfaktura**.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Se fakturatotalen på siden Ventende kreditorfakturaer.
+
 Du kan få vist fakturatotalen på siden **Ventende kreditorfakturaer** ved at aktivere parameteren **Vis fakturatotal på ventende kreditorfakturaer** på siden **kreditorparametre**. 
 
+## <a name="vendor-open-transactions-report"></a>Rapport over åbne kreditorposteringer
 
+Rapporten **Åbne kreditorposteringer** indeholder detaljerede oplysninger om de åbne posteringer for hver kreditor pr. den dato, du angiver. Denne rapport bruges ofte i forbindelse med overvågningsproceduren til kontrol af saldi mellem kreditorposteringer og finanskontoposteringer.
+
+I forbindelse med hver transaktion indeholder rapporten følgende oplysninger:
+
+- Fakturanummer
+- Transaktionsdato
+- Bilagsnummer
+- Transaktionsbeløb i transaktionsvalutaen og regnskabsvalutaen
+- Kreditsaldo i transaktionsvalutaen og regnskabsvalutaen
+- Debetsaldo i transaktionsvalutaen og regnskabsvalutaen
+- Subtotal i regnskabsvalutaen
+- Betalingens forfaldsdato
+
+### <a name="filter-the-data-on-the-report"></a>Filtrere dataene i rapporten
+
+Når du opretter rapporten **Åbne kreditorposteringer**, er følgende standardparametre tilgængelige. Du kan bruge dem til at filtrere de data, der medtages i rapporten.
+
+- **Udelad fremtidig udligning** – Markér dette afkrydsningsfelt for at udelade transaktioner, der er udlignet efter den dato, som er angivet i feltet **Åbne transaktioner pr.**
+- **Åbne transaktioner pr.** – Angiv en dato for at medtage transaktioner, der er åbne pr. denne dato. Hvis du ikke angiver en dato, angives feltet til maksimumdatoen. (Maksimumdatoen er den seneste dato, som systemet accepterer, 31. december 2154). Næste gang rapporten køres, angives dette felt som standard til den sidste dato, der blev angivet i det.
+
+Du kan bruge filtrene under feltet **Medtaget post** til yderligere at begrænse de transaktionsdata, der medtages i rapporten.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -2,7 +2,7 @@
 title: Tastaturgenveje
 description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finance and Operations-apps.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 749fc3655b1ad41fbe7dd4794fc4ca907f1c86b9ee4e92e2415e924058191ffa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743165"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647530"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data i Finance and Operations-apps.
 
@@ -148,14 +149,15 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Skifte fokus mellem den markerede række og rækken med kolonneoverskrifter                                                               | Alt+Skift+H                     |
 | Gør den aktuelle kolonne større/mindre (med fokus i kolonneoverskriftsrækken)                                                  | Højre pil eller venstre pil        |
 | Åbn gitterfiltrering for den aktuelle kolonne (med fokus i kolonneoverskriftsrækken)                                              | Enter                           |
+| Tilpasse størrelsen på den aktuelle kolonne, så den passer til indholdet (med fokus på overskriftsrækken)                                           | T                               |
 
 ## <a name="input-control-shortcuts"></a>Genveje for inputstyring
 
-| Hvis du vil gøre dette                                                                   | Tryk på                         |
+| Hvis du vil gøre dette                                                                   | Tryk på                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Åbn linket                                                           | Ctrl+Enter                    |
-| Angive sessionsdatoen i et datofelt                                       | N                         |
-| Indtaste den aktuelle dato i et datofelt                                       | T                         |
+| Angive sessionsdatoen i et datofelt                                       | N                             |
+| Indtaste den aktuelle dato i et datofelt                                       | T                             |
 | Åbne opslag, kombinationsboks, datovælger, dialogboks                         | Alt+pil ned                |
 | Lukke opslag, kombinationsboks, datovælger, dialogboks                        | Esc                           |
 | Flytte fokus til et opslag (når opslaget er allerede åbnet)                   | Alt+pil ned                |
@@ -202,8 +204,8 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Brug værktøjet Flyt (i tilpasningstilstand)                                                                       | M                                   |
 | Vælg det aktuelle kontrolelement som det, der skal flyttes (når du bruger værktøjet Flyt, og der endnu ikke er valgt noget kontrolelement, der skal flyttes)  | Mellemrum eller Enter                      |
 | Fjern markeringen af kontrolelementet, der skal flyttes (når du bruger værktøjet Flyt)                                                                   | Esc                                 |
-| Flyt til den næste position for det markerede kontrolelement (ved brug af værktøjet Flyt)                                          | Tab eller højre pil eller pil ned    |
-| Flyt til den forrige position for det markerede kontrolelement (ved brug af værktøjet Flyt)                                      | Skift+Tab eller venstre pil eller pil op |
+| Flytte det markerede kontrolelement til den næste position (ved brug af værktøjet Flyt)                                              | Tab eller højre pil eller pil ned    |
+| Flytte det markerede kontrolelement til den forrige position (ved brug af værktøjet Flyt)                                          | Skift+Tab eller venstre pil eller pil op |
 | Brug værktøjet Skjul (i tilpasningstilstand)                                                                       | H                                   |
 | Skift om det aktuelle kontrolelement er synligt eller skjult (når du bruger værktøjet Skjul)                                     | Mellemrum eller Enter                      |
 | Brug værktøjet Spring over (i tilpasningstilstand)                                                                       | K                                   |

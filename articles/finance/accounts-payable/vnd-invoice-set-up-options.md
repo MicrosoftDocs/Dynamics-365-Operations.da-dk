@@ -1,8 +1,8 @@
 ---
 title: Konfigurere indstillinger for automatisering af kreditorfaktura (prøveversion)
 description: I dette emne beskrives de indstillinger, der er tilgængelige for opsætning og konfiguration af automatisering af kreditorfakturaer.
-author: abruer
-ms.date: 10/16/2020
+author: sunfzam
+ms.date: 10/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32f105ffcf41f5e39ec34ec6500040e28673086d25196a32690975ee0234ab43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8e5aac8f108cf9a46c80c61891b057b8dc2b4672
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724273"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675463"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Opsætningsindstillinger for automatisering af kreditorfaktura
 
@@ -27,12 +27,18 @@ ms.locfileid: "6724273"
 
 I dette emne beskrives de indstillinger, der er tilgængelige for opsætning og konfiguration af automatisering af kreditorfakturaer. Funktioner til fakturaautomatisering bruger følgende typer opsætningsparametre:
 
+- Parametre til automatisk anvendelse af forudbetalinger i importerede fakturaer.
 - Parametre for afsendelse af importerede kreditorfakturaer til arbejdsprocessystemet og tilsvarende bogførte produktkvitteringslinjer til ventende kreditorfakturalinjer.
 - Parametre til behandling af automatiserede baggrundsopgaver. Strukturen for procesautomatisering bruges til at sende importerede kreditorfakturaer til arbejdsprocessystemet. Den bruges også til automatisk at matche bogførte produktkvitteringslinjer til ventende kreditorfakturalinjer og til at udføre fakturasammenholdelse for manuelle fakturaer, der automatisk er afstemt med produktkvitteringslinjer. Forskellige forretningsprocesser bruger denne struktur til at definere, hvor ofte den valgte proces skal køres. De tilgængelige frekvenser for baggrundsprocesserne **Afstem produktkvittering med fakturalinjer** og **Send kreditorfakturaer til arbejdsproces** omfatter **Time** og **Daglig**.
 
 Hvis du vil konfigurere eller se oplysninger om en baggrundsopgave, skal du gå til **Systemadministration \> Konfiguration \> Procesautomatiseringer** og vælge fanen **Baggrundsopgave**.
 
 Du skal konfigurere en arbejdsgang for kreditorfakturaer for at opnå en berøringsfri automatisering fra importprocessen via bogføring af kreditorfakturaer. Gå til **Kreditor > Opsætning > Kreditorarbejdsgange** for at konfigurere en arbejdsproces. Hvis du vil sikre, at fakturaen kan behandles fra start til slut uden manuel indgriben, skal du medtage en opgave til automatisk bogføring i konfigurationen af arbejdsprocessen.
+
+## <a name="parameters-for-automatically-applying-prepayments-in-imported-invoices"></a>Parametre til automatisk anvendelse af forudbetalinger i importerede fakturaer
+
+- **Anvend automatisk forudbetaling for importerede fakturaer** – Når denne indstilling er angivet til **Ja**, søges der automatisk i eksisterende forudbetalinger efter en tilsvarende indkøbsordre, når kreditorfakturaer importeres. Hvis der findes forudbetalinger, der kan anvendes, tilføjes der én ekstra linje for at anvende forudbetalingerne på de kreditorfakturaer, der importeres.
+- **Bloker den opfølgende automatiseringsproces i tilfælde af applikationsfejl ved forudbetaling** – Når denne indstilling er angivet til **Ja**, spærres fakturaer, hvis der ikke kan anvendes en forudbetaling. Som andre automatiske processer, for eksempel processen til sammenligning af kvitteringer og processen til afsendelse til en arbejdsproces, henter automatiseringsprocessen for fakturaer ikke blokerede fakturaer, før forudbetalingen er anvendt manuelt. 
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Parametre for afsendelse af importerede kreditorfakturaer til arbejdsprocessystemet
 

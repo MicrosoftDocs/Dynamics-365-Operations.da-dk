@@ -2,7 +2,7 @@
 title: Anvendelse af lagerindstillinger
 description: Dette emne dækker lagerindstillinger og beskriver, hvordan du anvender dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f57f1f941fe0c0c70394d1ecbf8d88a13c7a3682fdfa8b5439a4f3830f616876
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765260"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647578"
 ---
 # <a name="apply-inventory-settings"></a>Anvend lagerindstillinger
 
@@ -39,7 +39,7 @@ I Commerce Site Builder kan der defineres lagergrænseværdier og -intervaller f
 
 ## <a name="inventory-settings"></a>Lagerindstillinger
 
-I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Udvidelser \> Lagerstyring** i webstedsgeneratoren. Der er fem lagerindstillinger, hvoraf en er forældet (frarådet):
+I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Udvidelser \> Lagerstyring** i webstedsgeneratoren. Der er seks lagerindstillinger, hvoraf en er forældet (frarådet):
 
 - **Aktivér kontrol af lagerbeholdning i app** – Denne indstilling slår kontrol af et produktlager til. Modulerne købefelt, indkøbsvogn og afhentning i butik kontrollerer derefter produktlageret og tillader kun, at der føjes et produkt til indkøbsvognen, hvis lageret er tilgængeligt.
 - **Lagerniveau baseret på** – Denne indstilling definerer, hvordan lagerniveauer beregnes. De tilgængelige værdier er **I alt disponibelt**, **Fysisk disponibelt** og **Grænse for udsolgt**. I Commerce kan der defineres lagergrænseværdier og -intervaller for de enkelte produkter eller kategorier. Lager-API'erne returnerer produktlageroplysninger for både egenskaben **I alt disponibelt** og egenskaben **Fysisk disponibelt**. Forhandleren bestemmer, om værdien for **I alt disponibelt** eller **Fysisk disponibelt** skal bruges til at bestemme lageroptællingen og de tilsvarende intervaller for statusserne på lager og udsolgt.
@@ -48,8 +48,13 @@ I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Ud
 
 - **Lagerniveau for flere lagersteder** – Med denne indstilling kan lagerniveauet beregnes i forhold til standardlagerstedet eller flere lagersteder. Indstillingen **Baseret på individuelt lagersted** beregner lagerniveauerne ud fra standardlagerstedet. En e-handelslokation kan også pege på flere lagersteder for at lette opfyldningen. I dette tilfælde bruges indstillingen **Baseret på samling af lagersteder for forsendelse og afhentning** til at angive lagertilgængelighed. Når en kunde f.eks. køber en vare og vælger "forsendelse" som leveringsmåde, kan varen afsendes fra ethvert lagersted i den opfyldningsgruppe, der har en tilgængelig lagerbeholdning. Siden Produktdetaljer (PDP) viser en meddelelse "På lager" for forsendelse, hvis et tilgængeligt lagersted for forsendelse i opfyldningsgruppen har lager. 
 
-> [!IMPORTANT] 
-> Indstillingen **Lagerniveau for flere lagersteder** er tilgængelig fra frigivelsen af Commerce version 10.0.19. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+    > [!IMPORTANT] 
+    > Indstillingen **Lagerniveau for flere lagersteder** er tilgængelig fra frigivelsen af Commerce version 10.0.19. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Lagerindstillinger for produktlistesider** – Denne indstilling definerer, hvordan produkter, der ikke er på lager, vises på produktlister, der gengives via moduler for produktsamling og søgeresultater. De tilgængelige værdier er **Vis i bestilling med andre produkter**, **Skjul produkter, der ikke er på lager, på listen** og **Vis produkter, der ikke er på lager, sidst på listen**. Hvis du vil bruge denne indstilling, skal du først konfigurere visse forudgående indstillinger i Commerce-hovedkontoret. Du kan finde flere oplysninger i [Aktivere lagervågenhed for modulet til søgeresultater](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > Indstillingen **Lagerindstillinger for produktlistesider** er tilgængelig fra og med frigivelsen af Commerce version 10.0.20. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Lagerintervaller** – Denne indstilling definerer de lagerintervaller, som der vises meddelelser for i webstedsmoduler. Den kan kun anvendes, hvis enten værdien **I alt disponibelt** eller værdien **Fysisk disponibelt** er valgt for indstillingen **Lagerniveau baseret på**. De tilgængelige værdier er **Alle**, **Lav lagerbeholdning og udsolgt** og **Udsolgt**.
 

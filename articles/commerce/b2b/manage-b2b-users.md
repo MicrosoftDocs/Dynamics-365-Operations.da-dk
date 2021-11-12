@@ -2,7 +2,7 @@
 title: Administrere forretningspartnerbrugere på B2B-e-handelswebsteder
 description: Dette emne beskriver, hvordan administratorer kan tilføje, redigere og slette forretningspartnerbrugere på business-to-business (B2B)-e-handelswebsteder.
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734937"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713687"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Administrere forretningspartnerbrugere på B2B-e-handelswebsteder
 
@@ -68,6 +68,18 @@ Hvis du vil godkende og oprette en administratorbruger i Commerce Headquarters, 
 1. Gå til **Retail og Commerce IT \> Distributionsplan**, og kør jobbet **1010** (**Kunder**) for at flytte de nyoprettede debitor- og debitorhierarkiposter til kanaldatabasen.
 
 Når anmodningen er godkendt, og debitor- og debitorhierarkiposterne synkroniseres til kanaldatabasen, kan anmoderen logge på webstedet for B2B-e-commerce ved hjælp af den e-mail-adresse, de har angivet, da de sendte anmodningen. Brugere kan bruge tilmeldingsflowet til at definere adgangskoden til deres konto. Hvis du vil muliggøre, at id-udbyderen (Azure AD B2C-post) kan knyttes til B2B-kundeposten, der blev oprettet ved tilmelding eller logon, skal du følge instruktionerne i [Aktivere automatisk sammenkædning af identitetsposter til kundekonti](../identity-record-linking.md).
+
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>Give B2B-kundeemner besked, når de godkendes eller afvises
+
+Når du godkender eller afviser en anmodning om onboarding af et B2B-kundeemne, kan du automatisk sende en mailbesked til kundeemnet. 
+
+Hvis du vil konfigurere mailbeskeder i Commerce-hovedkontoret for hændelser af B2B-kundeemnet, der er godkendt, eller B2B-kundeemnet, der er afvist, skal du følge disse trin.
+
+1. Opret mailskabeloner til mails, der sendes til kundeemner, når B2B-kundeemnet er godkendt, eller B2B-kundeemnet er afvist udløses som beskedtype.
+
+    Du kan finde oplysninger om de pladsholdere, som beskedtyperne B2B-kundeemnet er godkendt, og B2B-kundeemnet er afvist understøtter, under [Beskedtyper](../email-templates-transactions.md#notification-types). Du kan finde oplysninger om, hvordan du opretter mailskabeloner, under [Oprette en mailskabelon](../email-templates-transactions.md#create-an-email-template). 
+
+1. Føj B2B-kundeemnet er godkendt og B2B-kundeemnet er afvist som beskedtyper til din mailbeskedprofil, og knyt dem til de mailskabeloner, du har oprettet. Du kan finde flere oplysninger om beskedprofiler i [Konfigurere en mailbeskedprofil](../email-notification-profiles.md). 
 
 ## <a name="onboard-additional-business-partner-users"></a>Få flere forretningspartnerbrugere med i gang
 

@@ -1,7 +1,7 @@
 ---
-title: Opgraderingsoversigt for afskrivningsmodel
-description: I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller.
-author: ShylaThompson
+title: Oversigt over opgradering af afskrivningsmodel
+description: Dette emne beskriver den aktuelle bogfunktionalitet i Anlægsaktiver. Denne funktionalitet er baseret på den værdimodelfunktionalitet, der fandtes i tidligere versioner, men indeholder også alle de funktioner, der tidligere kun blev angivet i afskrivningsmodeller.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,25 +13,25 @@ ms.custom:
 - intro-internal
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: c36e0ab53f8a10e81e1bed207417861066dd6917
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344708"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675146"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Oversigt over opgradering af afskrivningsmodel
 
 [!include [banner](../includes/banner.md)]
 
-I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations (1611) er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt bogkoncept. Dette emne indeholder nogle overvejelser for opgraderingen. 
+Dette emne beskriver den aktuelle bogfunktionalitet i Anlægsaktiver. Denne funktionalitet er baseret på den værdimodelfunktionalitet, der fandtes i tidligere versioner, men indeholder også alle de funktioner, der tidligere kun blev angivet i afskrivningsmodeller. Funktionaliteten af værdimodellen og afskrivningsmodellen er blevet flettet ind i et enkelt bogkoncept. Modelfunktionen giver dig mulighed for at bruge et enkelt sæt sider, forespørgsler og rapporter til alle organisationens anlægsaktivprocesser. Dette emne indeholder nogle af de ting, du skal overveje, før du opgraderer. 
 
-Opgraderingsprocessen flytter din eksisterende installation og alle eksisterende transaktioner til den nye modelstruktur. Værdimodeller forbliver, som de er i øjeblikket, som en model, der bogføres i finans. Afskrivningsmodeller flyttes til en model, der har **Bogfør i finans**-indstillingen angivet til **Ingen**. Navne på afskrivningskladder flyttes til et finanskladdenavn med posteringslag angivet til **Ingen**. Posteringer i afskrivningsmodellen skal flyttes til anlægsaktivposter. 
+Opgraderingsprocessen flytter din eksisterende installation og alle eksisterende transaktioner til den nye modelstruktur. Værdimodeller forbliver, som de er i øjeblikket, som en model, der bogføres i finans. Afskrivningsmodeller flyttes til en model, der har Bogfør i finans-indstillingen angivet til Ingen. Navne på afskrivningskladder flyttes til et finanskladdenavn med posteringslag angivet til Ingen. Posteringer i afskrivningsmodellen skal flyttes til anlægsaktivposter.
 
-Før du kører dataopgraderingen, bør du forstå de to indstillinger, der er tilgængelige for opgradering af afskrivningens kladdelinjer til transaktionsbilag og den nummerserie, der skal bruges for bilagsserien. 
+Før du kører dataopgraderingen, bør du forstå de to indstillinger, der er tilgængelige for opgradering af afskrivningens kladdelinjer til transaktionsbilag og den nummerserie, der skal bruges for bilagsserien.
 
 Mulighed 1: **Systemdefineret nummerserie** - Dette er standardindstillingen for at optimere opgraderingens ydeevne. Opgraderingen bruger ikke nummerseriens struktur, men tildeler i stedet bilag med en sætbaseret tilgang. Efter opgraderingen oprettes den nye nummerserie med **næste nummerserie** korrekt baseret på de opgraderede transaktioner. Som standard bliver nummerserien brugt i FADBUpgr\#\#\#\#\#\#\#\#\# format. Der er nogle parametre til at justere diagrammets format, når du bruger denne fremgangsmåde:
 

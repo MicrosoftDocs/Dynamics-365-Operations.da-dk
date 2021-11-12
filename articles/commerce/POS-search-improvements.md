@@ -2,7 +2,7 @@
 title: Produkt- og kundesøgning i POS
 description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 043a630408d6b03e528f0afd5443de73ad5f3802c968b9d9bd7a5c51bfe1fb03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716387"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700083"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
@@ -45,9 +45,9 @@ En lokal produktsøgning søger i følgende produktegenskaber:
 - Betegnelse
 - Dimensioner
 - Stregkode
-- Søg efter navn
+- Søgt navn
 
-### <a name="additional-local-product-search-capabilities"></a>Yderligere egenskaber for lokal produktsøgning
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Yderligere egenskaber for lokal produktsøgning (konventionel SQL-fuldtekstsøgning) 
 
 - Til søgninger med flere nøgleord (dvs. til søgninger, der bruger søgeord), kan detailforretninger konfigurere, om søgeresultaterne skal omfatte resultater, der opfylder *ethvert* søgeord, eller kun de resultater, der opfylder *alle* søgeord. Indstillingen for denne funktion findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Standardindstillingen er **Match et hvilket som helst søgeord**. Denne indstilling er også den anbefalede indstilling. Når indstillingen **Match et hvilket som helst søgeord** bruges, returneres alle produkter, der svarer helt eller delvist til et eller flere søgeord. Resultaterne sorteres automatisk i stigende rækkefølge, så de produkter, der har fleste forekomster af nøgleord (fuld eller delvis), placeres først.
 
@@ -55,6 +55,8 @@ En lokal produktsøgning søger i følgende produktegenskaber:
 
     - Søgningen foretages på de enkelte produktegenskaber. F.eks. returneres kun produkter, der har alle de søgte nøgleord i mindst én produktegenskab.
     - Der søges ikke i dimensioner.
+> [!NOTE]
+> Følgende konfigurationer af **Match et hvilket som helst søgeord**/**Match et hvilket som helst søgeord** i POS-funktionalitetsprofiler gælder kun for **lokale** produktsøgninger (konventionel SQL-fuldtekstsøgning). Denne konfiguration har ingen indvirkning på cloudbaserede søgeoplevelser. Det nye søgeprogram har sin egen avancerede algoritme, der styrer søgerelevans for resultater af produktsøgningen. 
 
 - Detailhandlere kan konfigurere produktsøgning til at vise søgeforslag, mens brugerne skriver produktnavne. En ny indstilling for denne funktion findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Indstillingen hedder **Vis søgeforslag, mens du skriver**. Denne funktion kan hjælpe medarbejderne med hurtigt at finde det produkt, de søger efter, da de ikke behøver at skrive hele navnet manuelt.
 - Produktsøgningsalgoritmen søger nu også efter de søgte udtryk i egenskaben **Søgenavn** for produktet.
@@ -147,7 +149,5 @@ Nedenstående liste viser, hvordan funktionaliteten til kundesøgning i skyen er
 > Kundesøgningsfunktionaliteten ved hjælp af azure Azure Azure-søgetjenesten er tilgængelig i begrænsede områder som forhåndsvisning. Debitorsøgningsfunktionaliteten er *ikke* tilgængelig i følgende områder:
 > - Brasilien
 > - Indien
-> - Canada
-> - Storbritannien
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

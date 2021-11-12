@@ -2,7 +2,7 @@
 title: Oversigt over momsberegning
 description: Dette emne forklarer det overordnede område og funktionerne for til momsberegning.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394580"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647051"
 ---
 # <a name="tax-calculation-overview"></a>Oversigt over momsberegning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Momsberegning er en særdeles skalerbar flerdimensional tjeneste, som gør det muligt for det globale momsprogram at automatisere og forenkle fastlæggelse og beregning af moms. Momsprogrammet kan konfigureres fuldt ud. De elementer, der kan konfigureres, omfatter, men er ikke begrænset til, den momspligtige datamodel, momskode, matrix for anvendelse af moms og momsberegningsformlen. Momsprogrammet kører på Microsoft Azure-kerneserviceplatformen og tilbyder moderne teknologi og eksponentiel skalerbarhed.
 
@@ -115,10 +113,14 @@ Følgende transaktioner understøttes i version 10.0.21:
     - Diverse gebyrer i overskrift til tilbudsanmodning
     - Diverse gebyrer i linje til tilbudsanmodning
 
-- Lagerbeholdning
+- Lager
 
     - Flytteordre – send
     - Flytteordre – modtag
+
+Følgende transaktioner understøttes i version 10.0.23: 
+
+- Fritekstfaktura
 
 ## <a name="supported-countriesregions"></a>Understøttede lande/områder
 
@@ -144,7 +146,29 @@ Følgende lande/områder til en juridisk enheds primære adresse understøttes i
 - Sverige
 - Schweiz
 - Storbritannien
-- United States
+- USA
+
+Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.22:
+
+- Australien
+- Bahrain
+- Canada
+- Egypten
+- Hong Kong SAR
+- Kuwait
+- New Zealand
+- Oman
+- Qatar
+- Saudi-Arabien
+- Sydafrika
+- Forenede Arabiske Emirater
+
+Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.23:
+
+- Thailand
+- Japan
+- Malaysia
+- Singapore
 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 

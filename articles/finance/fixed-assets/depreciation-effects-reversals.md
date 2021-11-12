@@ -1,7 +1,7 @@
 ---
 title: Virkninger af afskrivninger med tilbageførsler
 description: I denne artikel beskrives mulige konsekvenser af tilbageførsel af en anlægsaktivtransaktion.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37f0412166404e6903819840debcdd0ab0630115dcdb68297e0072723adacb53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a8e5b1b7d468dbc37b295087815937fb49ad44f
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760656"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674544"
 ---
 # <a name="depreciation-effects-with-reversals"></a>Virkninger af afskrivninger med tilbageførsler
 
@@ -30,14 +30,14 @@ I denne artikel beskrives mulige konsekvenser af tilbageførsel af en anlægsakt
 
 Du kan tilbageføre anlægsaktivposteringer og de transaktioner, der er knyttet til et anlægsaktiv. Du kan også annullere en tilbageført postering. 
 
-Du kan tilbageføre eller tilbagekalde en transaktion, der ikke er den seneste transaktion, som er bogført i modellen for aktivet. Du skal først afgøre, om der er blevet bogført nogen afskrivningsposteringer efter den postering, du vil tilbageføre. Det skyldes, at afskrivning ikke genberegnes, når du tilbagefører en postering. Afskrivningen vil derfor ofte blive overvurderet eller undervurderet efter tilbageførslen, som det fremgår af eksemplerne. 
+Du kan tilbageføre eller tilbagekalde en transaktion, der ikke er den seneste transaktion, som er bogført i modellen for aktivet. Du skal først afgøre, om der er blevet bogført nogen afskrivningsposteringer efter den postering, du vil tilbageføre. Dette trin er nødvendigt, fordi afskrivning ikke genberegnes, når du tilbagefører en postering. Afskrivningen vil derfor ofte blive overvurderet eller undervurderet efter tilbageførslen, som det fremgår af eksemplerne. 
 
 Hvis du vil sikre, at afskrivningen er korrekt, når du tilbagefører en postering, skal du ikke fortsætte med tilbageførslen, hvis du modtager en besked om, at afskrivningen ikke genberegnes. Du skal i stedet først tilbageføre den afskrivningspostering, der blev bogført efter den postering, du prøvede at tilbageføre, og derefter fortsætte med tilbageførslen. Du bliver ikke advaret om genberegning af afskrivningen, og du kan fortsætte med tilbageførslen. 
 
 I nedenstående eksempler vises de beregninger, der forekommer, hvis du fortsætter efter advarslen uden først at tilbageføre afskrivningsposteringerne.
 
 ## <a name="example-1-depreciation-is-overstated"></a>Eksempel 1: Afskrivningen overvurderes
-Der er konfigureret et aktiv med en levetid på 5 år og lineær afskrivning (60 afskrivningsperioder). I dette eksempel overvurderes afskrivningen.
+Der er konfigureret et aktiv med en brugstid på fem år og lineær afskrivning (60 afskrivningsperioder). I dette eksempel overvurderes afskrivningen.
 #### <a name="asset-transaction-history"></a>Posteringshistorik for aktiv
 
 | Dato       | Posttype                                                          | Beløb                                    |
@@ -61,7 +61,7 @@ Der er konfigureret et aktiv med en levetid på 5 år og lineær afskrivning (60
 Afskrivningen er overvurderet med 16,95 (1.000 - 983,05).
 
 ## <a name="example-2-depreciation-is-understated"></a>Eksempel 2: Afskrivningen undervurderes
-Der er konfigureret et aktiv med en levetid på 5 år og lineær afskrivning (60 afskrivningsperioder). I dette eksempel undervurderes afskrivningen.
+Der er konfigureret et aktiv med en brugstid på fem år og lineær afskrivning (60 afskrivningsperioder). I dette eksempel undervurderes afskrivningen.
 #### <a name="asset-transaction-history"></a>Posteringshistorik for aktiv
 
 | Dato       | Posteringstype                                                          | Beløb                                      |

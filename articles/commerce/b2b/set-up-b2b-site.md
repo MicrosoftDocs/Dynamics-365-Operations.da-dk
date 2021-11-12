@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d77e1f3b5f8d558643b078dbe8e829e62f85120e4931d60224116a33f171fab3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721001"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713742"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Oprette et B2B-e-handelswebsted
 
@@ -37,7 +37,7 @@ Business-to-business-e-handelswebsteder indeholder nogle af de vigtigste funktio
 
 Du kan få adgang til indstillinger på webstedsniveau i Site Builder på **Websted-indstillinger \> Udvidelser**. Følgende to indstillinger på lokationsniveau gælder for B2B-scenarier:
 
-- **Aktiver debitorkontobetalinger** – Denne egenskab giver brugerne mulighed for at betale for ordrer ved hjælp af debitorkonti. De tilgængelige værdier er **Aktiveret for B2B-kunder**, **Aktiveret for B2C-kunder**, **Aktiveret for alle debitorer** og **Deaktiveret for alle debitorer**. Hvis dit B2B-websted understøtter debitorkonti, skal du vælge **Aktiveret for B2C-kunder**.
+- **Aktiver debitorkontobetalinger** – Denne egenskab giver brugerne mulighed for at betale for ordrer ved hjælp af debitorkonti. De tilgængelige værdier er **Aktiveret for B2B-kunder**, **Aktiveret for B2C-kunder**, **Aktiveret for alle debitorer** og **Deaktiveret for alle debitorer**. Hvis dit B2B-websted understøtter debitorkonti, skal du vælge **Aktiveret for B2B-kunder**.
 - **Aktiver grænser for ordreantal** – Denne egenskab giver dig mulighed for at angive grænser for det antal varer, der kan bestilles for hvert produkt eller hver kategori. De tilgængelige værdier er **Aktiveret for B2B-kunder**, **Aktiveret for B2C-kunder**, **Aktiveret for alle debitorer** og **Deaktiveret for alle debitorer**.
 
 > [!NOTE]

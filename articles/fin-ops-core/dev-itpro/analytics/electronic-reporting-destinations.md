@@ -2,7 +2,7 @@
 title: Destinationer for elektronisk rapportering (ER)
 description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering, de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743305"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647087"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -164,12 +164,12 @@ Hvis du vil stille PDF-konverteringsindstillingen til rådighed i den aktuelle F
 
 ### <a name="applicability"></a>Anvendelighed
 
-PDF-konverteringsindstillingen kan kun aktiveres for de filkomponenter, der bruges til at oprette output i Office-format (Excel eller Word) (**Excel-fil**). Når denne indstilling er slået til, konverteres output, der genereres i Office-format, automatisk til PDF-format. I versioner af Finance **før version 10.0.18** kan du kun aktivere denne indstilling for komponenter af den **Excel\\Filtype**, der bruges til at generere output i eller [Excel](er-fillable-excel.md)- eller [Word](er-design-configuration-word.md)-format. Men i **version 10.0.18 og senere** kan du også aktivere denne indstilling for komponenter af typen **Common\\File**-type.
+I versioner af Finance **før version 10.0.18** kan du kun aktivere indstillingen af PDF-konvertering for komponenterne **Excel\\Fil**, der bruges til at generere output i Office-format (Excel eller Word). Når denne indstilling er slået til, konverteres output, der genereres i Office-format, automatisk til PDF-format. Men i **version 10.0.18 og senere** kan du også aktivere denne indstilling for komponenter af typen **Common\\File**-type.
 
 > [!NOTE]
 > Vær opmærksom på den advarsel, du modtager, når du aktiverer PDF-konverteringsindstillingen for en ER-komponent af typen **Fælles\\Fil**. Denne meddelelse fortæller dig, at der på designtidspunktet ikke kan garanteres, at den valgte filkomponent viser indholdet i PDF-format eller indholdet, der kan konverteres af PDF, under kørslen. Derfor skal du kun aktivere indstillingen, hvis du er sikker på, at den valgte filkomponent er konfigureret til at vise indholdet i PDF-format eller indholdet, der kan konverteres af PDF, under kørslen.
 > 
-> Hvis du aktiverer pdf-konverteringsindstillingen for en komponent af **Excel\\-filtypen**, hvis den komponent viser indhold i et andet format end PDF, og det indhold, der vises, ikke kan konverteres til PDF-format, indtræffer der en undtagelse under kørslen. I den meddelelse, du modtager, får du besked om, at det genererede indhold ikke kan konverteres til PDF-format.
+> Hvis du aktiverer PDF-konverteringsindstillingen for en formatkomponent, hvis den komponent viser indhold i et andet format end PDF, og det indhold, der vises, ikke kan konverteres til PDF-format, indtræffer der en undtagelse under kørslen. I den meddelelse, du modtager, får du besked om, at det genererede indhold ikke kan konverteres til PDF-format.
 
 ### <a name="limitations"></a>Begrænsninger
 
@@ -189,16 +189,26 @@ Hvis du vil aktivere PDF-konvertering for en fildestination, skal du markere afk
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Vælge en sideretning til PDF-konvertering</a>
 
-Hvis du opretter en ER-konfiguration i Excel-format og vil konvertere den til PDF-format, kan du angive sideretningen i PDF-dokumentet. Når du markerer afkrydsningsfeltet **Konverter til PDF** for at aktivere PDF-konvertering for en fildestination, der opretter en outputfil i Excel-format, bliver feltet **Sideretning** tilgængeligt i oversigtspanelet **Indstillinger for PDF-konvertering**. Vælg den foretrukne retning i feltet **Sideretning**.
+Hvis du opretter en ER-konfiguration i Excel-format og vil konvertere den til PDF-format, kan du eksplicit angive sideretningen i PDF-dokumentet. Når du markerer afkrydsningsfeltet **Konverter til PDF** for at aktivere PDF-konvertering for en fildestination, der opretter en outputfil i Excel-format, bliver feltet **Sideretning** tilgængeligt i oversigtspanelet **Indstillinger for PDF-konvertering**. Vælg den foretrukne retning i feltet **Sideretning**.
 
 [![Vælge en sideretning til PDF-konvertering.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> Hvis du vil have mulighed for at vælge PDF-sideretningen, skal du installere Finans version 10.0.10 eller nyere.
->
-> Den valgte sideretning anvendes på alle de ER-konfigurationer, der genereres i Excel-format og konverteres derefter til PDF-format.
->
-> Hvis en ER-konfiguration i Word-format konverteres til PDF-format, hentes sideretningen i PDF-dokumentet fra Word-dokument.
+Hvis du vil have mulighed for at vælge PDF-sideretningen, skal du installere Finans version 10.0.10 eller nyere. I versioner af Finance **før version 10.0.23** giver denne indstilling følgende sideretningsindstillinger:
+
+- Stående
+- Liggende
+
+Den valgte sideretning anvendes på alle sider i et udgående dokument, der genereres i Excel-format og konverteres derefter til PDF-format.
+
+I **version 10.0.23 og senere** er indstillingerne for sideretning dog udvidet på følgende måde:
+
+- Stående
+- Liggende
+- Regnearksspecifik
+
+Når du vælger indstillingen **Regnearksspecifik**, konverteres alle regneark i en genereret Excel-projektmappe til PDF ved hjælp af sideretning, der er konfigureret for dette regneark i den anvendte Excel-skabelon. Du kan således have et færdigt PDF-dokument, der indeholder stående og liggende sider. 
+
+Hvis en ER-konfiguration i Word-format konverteres til PDF-format, hentes sideretningen i PDF-dokumentet altid fra Word-dokumentet.
 
 ## <a name="output-unfolding"></a>Fjernelse af output fra mappe
 
@@ -250,7 +260,7 @@ Sørg for at vælge **Ny** og derefter vælge en konfiguration i feltet **Refere
 
 ### <a name="is-there-any-way-to-define-which-microsoft-azure-storage-account-and-azure-blob-storage-are-used"></a>Er der nogen måde at definere, hvilken Microsoft Azure Storage-konto og hvilket Azure Blob-lager der skal bruges?
 
-Nr. Standard Microsoft Azure Blob-lageret, der er defineret og anvendes til dokumentstyringssystemet, bruges.
+Nej. Standard Microsoft Azure Blob-lageret, der er defineret og anvendes til dokumentstyringssystemet, bruges.
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Hvad er formålet med fildestinationen i indstillingerne for destinationen? Hvad gør denne indstilling?
 

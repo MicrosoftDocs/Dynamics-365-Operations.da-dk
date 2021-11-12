@@ -2,7 +2,7 @@
 title: Understøttelse af momsfunktion til flytteordrer
 description: Dette emne forklarer den nye understøttelse af momsfunktionen til flytteordrer ved hjælp af tjenesten til beregning af moms.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2f68a3d7ed4384fe5a97f1e59903e3191df6b741
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500070"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647707"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Understøttelse af momsfunktion til flytteordrer
 
@@ -31,7 +31,7 @@ Dette emne indeholder oplysninger om momsberegning og bogføringsintegration i f
 Hvis du vil konfigurere og bruge denne funktion, skal du udføre tre hovedtrin:
 
 1. **RCS-konfiguration:** I Regulatory Configuration Service skal du konfigurere momsfunktionen, momskoder og momskoders anvendelighed for bestemmelse af momskode i flytteordrer.
-2. **Finance-opsætning:** I Microsoft Dynamics 365 Finance kan du aktivere funktionen **Moms i flytteordre**, konfigurere parametrene for momstjenesten til lageret og konfigurere kernemomsparametre.
+2. **Dynamics 365 Finance-opsætning**: I Finance kan du aktivere funktionen **Moms i flytteordre**, konfigurere parametrene for momsberegningstjenesten til lageret og konfigurere kernemomsparametre.
 3. **Lageropsætning:** Konfigurer lagerkonfigurationen for flytteordreposteringer.
 
 ## <a name="set-up-rcs-for-tax-and-transfer-order-transactions"></a>Konfigurere RCS til moms- og flytteordretransaktioner
@@ -39,8 +39,6 @@ Hvis du vil konfigurere og bruge denne funktion, skal du udføre tre hovedtrin:
 Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I det eksempel, der vises her, er flytteordren fra Nederlandene til Belgien.
 
 1. Vælg kladdefunktionsversionen under fanen **Versioner** på siden **Momsfunktioner**, og vælg derefter **Rediger**.
-
-    ![Vælge Rediger.](../media/tax-feature-support-01.png)
 
 2. Vælg **Tilføj** under fanen **Momskoder** på siden **Konfiguration af momsfunktioner** for at oprette nye momskoder. I dette eksempel er der oprettet tre momskoder: **NL-Exempt**, **BE-RC-21** og **BE-RC+21**.
 
@@ -51,9 +49,8 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         2. Vælg **Efter nettobeløb** i feltet **Momskomponent**.
         3. Vælg **Gem**.
         4. Vælg **Tilføj** i tabellen **Sats**.
-        5. Skift **Er momsfri** til **Ja** i afsnittet **Generelt**.
-
-           ![NL-Exempt momskode.](../media/tax-feature-support-02.png)
+        5. Angiv **Er momsfri** til **Ja** i sektionen **Generelt**.
+        6. Angiv **EC** i feltet **Fritagelseskode**.
 
     - Når en flytteordre modtages på et lagersted i Belgien, anvendes modtagermomsmekanismen med momskoderne **BE-RC-21** og **BE-RC+21**.
         
@@ -63,10 +60,8 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         3. Vælg **Gem**.
         4. Vælg **Tilføj** i tabellen **Sats**.
         5. Angiv **-21** i feltet **Momssats**.
-        6. Skift **Er modtagermoms** til **Ja** i afsnittet **Generelt**.
+        6. Angiv **Er modtagermoms** til **Ja** i sektionen **Generelt**.
         7. Vælg **Gem**.
-
-           ![BE-RC-21-momskode for modtagermoms.](../media/tax-feature-support-03.png)
         
         Opret momskoden **BE-RC+21**.
         1. Vælg **Tilføj**, og angiv **BE-RC-21** i feltet **Momskode**.
@@ -76,16 +71,26 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         5. Angiv **21** i feltet **Momssats**.
         6. Vælg **Gem**.
 
-           ![BE-RC+21-momskode for modtagermoms.](../media/tax-feature-support-04.png)
-
-3. Definer anvendeligheden af momskoderne.
+3. Definer momsgruppen.
+    1. Vælg **Administrer kolonner**, og vælg derefter linjefeltet **Momsgruppe**.
+    2. Vælg **->**, og vælg derefter **OK**.
+    3. Vælg **Tilføj** for at tilføje en momsgruppe.
+    4. Angiv **AR-EU** i kolonnen **Momsgruppe**, og vælg derefter momskoden **NL-Exempt**.
+    5. Vælg **Tilføj** for at tilføje en momsgruppe.
+    6. Angiv **RC-VAT** i kolonnen **Momsgruppe**, og vælg derefter momskoderne **BE-RC-21** og **BE-RC+21**.
+4. Definer varemomsgruppen.
+    1. Vælg **Administrer kolonner**, og vælg derefter linjefeltet **Varemomsgruppe**.
+    2. Vælg **->**, og vælg derefter **OK**.
+    3. Vælg **Tilføj** for at tilføje en varemomsgruppe.
+    4. Angiv **FULL** i kolonnen **Varemomsgruppe**. Vælg momskoderne **BE-RC-21**, **BE-RC+21** og **NL-Exempt**.
+5. Definer anvendeligheden af momsgruppen.
 
     1. Vælg **Administrer kolonner**, og vælg derefter kolonner, der skal bruges til at opbygge anvendelighedstabellen.
 
         > [!NOTE]
         > Sørg for at føje kolonnerne **Forretningsproces** og **Momsretninger** til tabellen. Begge kolonner er vigtige for momsfunktionen i flytteordrer.
 
-    2. Tilføj anvendelighedsregler. Lad ikke felterne **Momskoder**, **Momsgruppe** og **Varemomsgruppe** være tomme.
+    2. Tilføj anvendelighedsregler. Lad ikke feltet **Momsgruppe** være tomt.
         
         Tilføj en ny regel for forsendelse af flytteordre.
         1. Vælg **Tilføj** i tabellen **Anvendelighedsregler**.
@@ -93,8 +98,7 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         3. I feltet **Afsend fra land/område** skal du angive **NLD**.
         4. I feltet **Levér til land/område** skal du angive **BEL**.
         5. Vælg **Output** i feltet **Momsretning** for at gøre reglen gældende for forsendelse af flytteordre.
-        6. Vælg **NL-Exempt** i feltet **Momskoder**.
-        7. Angiv den relaterede momsgruppe og varemomsgruppe, der er defineret i dit Finance-system, i feltet **Momsgruppe** og **Varemomsgruppe**.
+        6. Vælg **AR-EU** i feltet **Momsgruppe**.
         
         Tilføj en ny regel for modtagelse af flytteordre.
         
@@ -103,14 +107,19 @@ Benyt følgende fremgangsmåde for at konfigurere momsen for en flytteordre. I d
         3. I feltet **Afsend fra land/område** skal du angive **NLD**.
         4. I feltet **Levér til land/område** skal du angive **BEL**.
         5. Vælg **Input** i feltet **Momsretning** for at gøre reglen gældende for modtagelse af flytteordre.
-        6. Vælg **BE-RC+21** og **BE-RC-21** i feltet **Momskoder**.
-        7. Angiv den relaterede momsgruppe og varemomsgruppe, der er defineret i dit Finance-system, i feltet **Momsgruppe** og **Varemomsgruppe**.
+        6. Vælg **RC-VAT** i feltet **Momsgruppe**.
 
-           ![Anvendelighedsregler.](../media/image5.png)
+6. Definer anvendeligheden af varemomsgruppen.
 
-4. Fuldfør og publicer den nye momsfunktionsversion.
+    1. Vælg **Administrer kolonner**, og vælg derefter kolonner, der skal bruges til at opbygge anvendelighedstabellen.
+    2. Tilføj anvendelighedsregler. Lad ikke feltet **Varemomsgruppe** være tomt.
+        
+        Tilføj en ny regel for forsendelse og modtagelse af flytteordre.
+        1. Vælg **Tilføj** på siden **Anvendelighedsregler**.
+        2. Vælg **Lager** i feltet **Forretningsproces** for at gøre reglen gældende for flytteordren.
+        3. Vælg **FULL** i feltet **Varemomsgruppe**.
+7. Fuldfør og publicer den nye momsfunktionsversion.
 
-    [![Ændre status for den nye version.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Konfigurere Finance til moms- og flytteordretransaktioner
 
@@ -120,28 +129,26 @@ Hvis du vil aktivere og konfigurere moms til flytteordrer, skal du følge disse 
 2. Find og vælg funktionen **Moms i flytteordre** på listen, og vælg derefter **Aktivér nu** for at aktivere den.
 
     > [!IMPORTANT]
-    > Funktionen **Moms i flytteordre** er fuldstændig afhængig af momstjenesten. Du kan derfor kun aktivere den, når du har installeret momstjenesten.
+    > Funktionen **Moms i flytteordre** er fuldstændig afhængig af momsberegningstjenesten. Du kan derfor kun aktivere den, når du har installeret momsberegningstjenesten.
 
     ![Funktionen Moms i flytteordre.](../media/image7.png)
 
-3. Aktivér momstjenesten, og vælg forretningsprocessen **Lager**.
+3. Aktivér momsberegningstjenesten, og vælg forretningsprocessen **Lager**.
 
     > [!IMPORTANT]
-    > Du skal udføre dette trin for hver juridiske enhed i Finance, hvor momstjenesten og funktionerne for moms i flytteordrer skal være tilgængelige.
+    > Du skal udføre dette trin for hver juridiske enhed i Finance, hvor momsberegningstjenesten og funktionerne for moms i flytteordrer skal være tilgængelige.
 
-    1. Gå til **Moms** > **Konfiguration** > **Momskonfiguration** > **Konfiguration af momstjeneste**.
+    1. Gå til **Moms** > **Konfiguration** > **Momskonfiguration** > **Parametre for momsberegning**.
     2. Vælg **Lager** i feltet **Forretningsproces**.
-
-      ![Angive feltet Forretningsproces.](../media/image8.png)
 
 4. Kontrollér, at modtagermomsmekanisme er konfigureret. Gå til **Finans** \> **Konfiguration** \> **Parametre**, og sørg for, at fanen **Modtagermoms** har indstillingen **Aktivér modtagermoms** angivet til **Ja**.
 
     ![Aktivere indstilling for modtagermoms.](../media/image9.png)
 
-5. Kontrollér, at de relaterede momskoder, momsgrupper, varemomsgrupper og momsregistreringsnumre er konfigureret i Finance i overensstemmelse med vejledningerne for momstjenesten.
+5. Kontrollér, at de relaterede momskoder, momsgrupper, varemomsgrupper og momsregistreringsnumre er konfigureret i Finance i overensstemmelse med vejledningerne for momsberegningstjenesten.
 6. Konfigurere en konto til foreløbig transit. Dette trin er kun påkrævet, når den moms, der anvendes på en flytteordre, ikke gælder for en momsfritagelses eller modtagermomsmekanisme.
 
-    1. Gå til **Moms** > **Opsætning** > **Moms** \ **Finanskonteringsgrupper**.
+    1. Gå til **Moms** > **Opsætning** > **Moms** > **Finanskonteringsgrupper**.
     2. Vælg en finanskonto i feltet **Foreløbig transit**.
 
        ![Vælge en konto til foreløbig transit.](../media/image10.png)

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 14f0e07913af708e9eb3491ab4bc99e85462e5dd
-ms.sourcegitcommit: fcb1aa39e933216dea9e586b552bce6057f416a6
+ms.openlocfilehash: e271ddd3331d7b5de78f00a02b60a0479879c172
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645800"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7699999"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Forskelle mellem indbygget behovsplanlægning og planlægningsoptimering
 
@@ -41,5 +41,6 @@ Resultater af planlægningsoptimering kan være forskellige fra resultaterne af 
 
 - [Analyse af tilpasning af planlægningsoptimering](planning-optimization-fit-analysis.md)
 - [Parametre, der ikke bruges af planlægningsoptimering](not-used-parameters.md)
+- [Dato- og klokkeslætsparametre, der bruges af planlægningsoptimering](date-time-used.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

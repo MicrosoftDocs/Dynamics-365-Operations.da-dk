@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384605"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647614"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Warehouse Management
 
@@ -109,7 +109,7 @@ Få flere oplysninger om, hvordan du konfigurerer webtjenesteapplikationer i Azu
     - [Hurtig start: Registrer et program med platformen Microsoft-identitet](/azure/active-directory/develop/quickstart-register-app)
     - [Sådan bruges portalen til at oprette en Azure AD-applikation og tjenesteportal, der kan få adgang til ressourcer](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Opret og konfigurer en brugerkonto i Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Opret og konfigurer en brugerkonto i Supply Chain Management
 
 Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain Management kan bruge din Azure AD-applikation.
 
@@ -117,17 +117,24 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
 
     1. I Supply Chain Management skal du gå til **Systemadministration \> Brugere \> Brugere**.
     1. Opret en bruger.
-    1. Tildele brugeren af lagerstedsmobilenheden.
+    1. Tildel rollen *Brugeren af lagerstedsmobilenhed* til brugeren.
 
     ![Tildele brugeren af lagerstedsmobilenheden.](media/app-connect-app-users.png "Tildele brugeren af lagerstedsmobilenheden")
 
 1. Knyt din Azure AD-applikation til brugeren af mobilappen Warehouse Management:
 
     1. Gå til **SSystemadministration \> Opsætning \> Azure Active Directory-applikationer**.
-    1. Oprette en linje.
-    1. Angiv det klient-id, du har noteret i forrige afsnit, giv det et navn, og vælg den bruger, du netop har oprettet. Det anbefales, at du mærker alle dine enheder. Hvis en enhed derefter går tabt, kan du så nemt fjerne adgangen til Supply Chain Management fra denne side.
+    1. Vælg **Ny** i handlingsruden for at oprette en linje.
+    1. Angiv det klient-id, du noterede i forrige afsnit, i feltet **Klient-id**.
+    1. Indtast et navn i feltet **Navn**.
+    1. Vælg det bruger-id, du lige har oprettet, i feltet **Bruger-id**.
 
     ![Azure Active Directory-applikationer.](media/app-connect-aad-apps.png "Azure Active Directory-applikationer")
+
+> [!TIP]
+> Du kan bruge disse indstillinger til at oprette et klient-id i Azure for hver af dine fysiske enheder og derefter føje hvert klient-id til siden **Azure Active Directory-programmer**. Hvis en enhed derefter bliver væk, kan du nemt fjerne dens adgang til Supply Chain Management ved at fjerne dens klient-id fra denne side. (Denne metode fungerer, fordi de legitimationsoplysninger til forbindelsen, der gemmes på de enkelte enheder, også angiver et klient-id som beskrevet senere i dette emne).
+>
+> Desuden fastlægges standardsprog, nummerformat og tidszoneindstillinger for hvert klient-id af de indstillinger, der er angivet for den værdi af **Bruger-id**, der tilknyttes her. Derfor kan du bruge disse indstillinger til at oprette standardindstillinger for hver enhed eller samling enheder baseret på klient-id'et. Disse standardindstillinger tilsidesættes dog, hvis de også er defineret for *brugerkontoen til lagerstedsappen*, som en arbejder bruger til at logge på enheden. (Yderligere oplysninger finder du i [Konfigurere brugerkonti til mobilenheder](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Godkende ved hjælp af et certifikat eller en klienthemmelighed
 

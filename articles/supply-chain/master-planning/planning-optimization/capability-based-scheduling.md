@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 1fcea155f330fa1eced8035f11f7cf204d3b2de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 382814eb3d4322ed52bd39fcb22740201335614e
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575697"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678999"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planlægning med ressourcevalg baseret på egenskab
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Ved at angive ressourcekrav til en operation i en produktionsrute definerer du, hvad der kræves for at udføre operationen. En operation kan f.eks. kræve en bestemt ressource eller en ressourcegruppe eller en kombination af færdigheder eller egenskaber. Dette emne beskriver ressourcevalg under planlægning af ubegrænset kapacitet, når du angiver egenskaber som ressourcekrav til en operation.
 

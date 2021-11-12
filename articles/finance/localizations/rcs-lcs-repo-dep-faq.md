@@ -2,7 +2,7 @@
 title: RCS (Regulatory Configuration Service) – Lifecycle Services (LCS)-lagerudfasning
 description: Dette emne indeholder oplysninger om den udfasning af Microsoft Dynamics Lifecycle Services-lager (LCS), der er planlagt som en del af udrulningen af det globale lager for Regulatory Configuration Service (RCS).
 author: JaneA07
-ms.date: 05/25/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 7a738af04da4425e76bd3b224400f91bc4eb8364d323da67ea457eaba9e65643
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
+ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782192"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7715224"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>RCS (Regulatory Configuration Service) – Lifecycle Services (LCS)-lagerudfasning
 
@@ -38,8 +38,9 @@ Udfasning af brugen af LCS som lager blev oplyst i [Fjernede eller udfasede funk
 
 ## <a name="key-features"></a>Hovedfunktioner
 
-- Du kan bruge RCS til at oprette og redigere konfigurationer. Derefter kan du flytte konfigurationerne direkte fra designeren til et tilknyttet program. Du kan derfor hurtigt ændre og teste konfigurationerne.
-- Global-lageret er det centraliserede lager for alle ER-konfigurationer.
+- Bruge RCS til at oprette og redigere ER-konfigurationer og globaliseringsfunktioner.
+- Push konfigurationer direkte fra RCS-designeren til et tilknyttet program, for eksempel et Dynamics 365 Finance-miljø, så du hurtigt kan foretage og teste ændringer i konfigurationerne.
+- Du kan lagre, dele og administrere livscyklussen centralt for både ER-konfigurationer og globaliseringsfunktioner via det globale lagers centraliserede lager.
 
 ## <a name="guidance-for-one-time-and-ongoing-actions"></a>Vejledning til engangshandlinger og løbende handlinger
 
@@ -53,11 +54,20 @@ Importér alle nødvendige konfigurationer fra LCS til RCS, og publicer dem dere
 2. I den klargjorte RCS-forekomst skal du registrere det relevante LCS-lager for alle LCS-projekter i aktivbiblioteket, som omfatter afledte ER-konfigurationer.
 3. Importér ER-konfigurationerne fra LCS-lageret til RCS. Du kan finde flere oplysninger under [Importere konfigurationer fra LCS](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
 4. Hvis det globale lager ikke leveres automatisk, skal du registrere det i RCS.
-5. Upload alle afledte konfigurationer fra den aktuelle RCS-forekomst til det globale lager. Brug funktionen **Konfigurationspakker, der giver brugeren mulighed for at uploade alle konfigurationer til GR i én handling** som en hjælp til upload. Yderligere oplysninger finder du i [Uploade et globalt RCS-lager](rcs-global-repo-upload.md).
+5. Upload alle afledte konfigurationer fra den aktuelle RCS-forekomst til det globale lager. Brug funktionen **Konfigurationspakker** for at få hjælp til at uploade. Yderligere oplysninger finder du i [Uploade et globalt RCS-lager](rcs-global-repo-upload.md).
 
 ### <a name="going-forward"></a>Næste trin
 
-Brug de visuelle designere i RCS til at oprette alle nye konfigurationer. Upload derefter konfigurationerne til opbevaring i det globale lager. Du kan finde flere oplysninger under [Oprette ER-konfiguration i RCS og uploade til globalt lager](rcs-global-repo-upload.md).
+Brug de visuelle designere i RCS til følgende formål:
+
+- Udvide de skabeloner, der er leveret af Microsoft.
+- Oprette nye konfigurationer, som organisationen kræver.
+- Tilpasse globaliseringsfunktionerne for elektronisk fakturering og tjenesten Momsberegning.
+
+Brug globaliseringslageret til følgende formål:
+
+- Få adgang til konfigurationer oprettet af Microsoft og globaliseringsfunktioner.
+- Overføre konfigurationer, som du har oprettet eller udvidet til det globale lager til opbevaring, og dele dem på tværs af organisationens Dynamics 365-programmiljøer eller med eksterne organisationer. Du kan finde flere oplysninger under [Oprette ER-konfiguration i RCS og uploade til globalt lager](rcs-global-repo-upload.md).
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -76,3 +86,22 @@ RCS bruger begrebet *tilsluttet applikation*. Et tilsluttet applikation danner e
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Er der nogen eksempler, der viser opsætningen og administrationen?
 
 Der er ingen eksempler, men du kan udføre trinnene tidligere i dette emne for at overflytte dine konfigurationer til det globale RCS-lager.
+
+### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Er RCS en forudsætning for at kunne konfigurere elektronisk rapportering?
+
+Ja. RCS indeholder egenskaber, der understøtter opsætningen af globaliseringsfunktioner, som bruges af globaliseringstjenester som for eksempel tjenesten Elektronisk fakturering og Momsberegning. Tjenesten har dog de samme funktioner til visuel design, som giver dig mulighed for at udvide eller oprette nye ER-konfigurationer. RCS leverer også livscyklusstyring til både ER-konfigurationer og globaliseringsfunktioner.
+
+### <a name="which-regions-can-rcs-be-deployed-in"></a>Hvilke områder kan RCS implementeres i?
+
+RCS er tilgængelig i følgende Azure-områder:
+
+- USA
+- Indien
+- Frankrig
+- Europa
+
+Du kan finde flere oplysninger om produktsupport i [oversigten Dynamics-globaliseringstjenester](globalization-services-overview.md). Du kan finde flere oplysninger om geografisk support i [Dynamics 365 og Power Platform : Tilgængelighed, dataplacering, sprog og lokalisering](https://aka.ms/rcs/D365Productavailabilityguide).
+
+### <a name="whats-the-cost-of-using-rcs"></a>Hvad er omkostningerne for at bruge RCS?
+
+RCS og globaliseringslageret leveres gratis som en del af eksisterende Finance and Operations-applicenser. Der er ikke særlige omkostninger for brugen af RCS-designtjenesten eller lagring af konfigurationer i det globale lager. Der er i øjeblikket ingen grænser for antallet af konfigurationer eller tilknyttede programmer.

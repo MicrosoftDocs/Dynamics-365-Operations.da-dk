@@ -10,17 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3e1dbb97ba56b5910dda368b9ec15e27a683dde5
-ms.sourcegitcommit: 5c0a0adeb859cc1ade6f067444f3bf08a895b35a
+ms.openlocfilehash: 954a3bcdf6ad163afd2596227ce2c8548fe37027
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7557386"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678489"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startside for Global Inventory Accounting
 
-[!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 Internationale organisationer er under stadig større pres fra myndighederne til at overholde lokale og globale regnskabsstandarder. Værdiansættelsen af lagervarer spiller en vigtig rolle i forbindelse med at sikre overholdelse af angivne standarder. Tilføjelsesprogrammet Global Inventory Accounting til Microsoft Dynamics 365 Supply Chain Management tilbyder en omfattende løsning, der gør det muligt for organisationer (især internationale organisationer) at bruge flere finansmoduler til lagerregnskaber. Derfor kan disse organisationer overholde flere regnskabsstandarder og interne ledelsesregnskabsprincipper samtidig.
 

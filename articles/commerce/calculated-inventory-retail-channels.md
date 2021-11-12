@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: d3cfd8c2f0b88a4e634cee0398283a51eddf60b2
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 1b1e0ea264dd74f6583d3b7fd3ecce551c73fbae
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472165"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674669"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregne lagertilgængelighed for detailkanaler
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 I dette emne beskrives det, hvordan et firma kan bruge Microsoft Dynamics 365 Commerce til at få vist den forkalkulerede disponible tilgængelighed for produkter i online- og butikskanalerne.
 

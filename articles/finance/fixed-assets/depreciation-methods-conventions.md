@@ -1,7 +1,7 @@
 ---
 title: Afskrivningsmetoder og -principper
 description: Denne artikel indeholder en oversigt over afskrivningsprincipper og afskrivningsmetoder, der understøttes af Microsoft Dynamics 365 Finance.
-author: ShylaThompson
+author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daa8f70e12a8c837a599ead5ef8b98aaf13e8cc827853de8b0332611ed2e257e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6abf98b4c1eee3657960a1912445171acc0686a
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713228"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674520"
 ---
 # <a name="depreciation-methods-and-conventions"></a>Afskrivningsmetoder og -principper
 
@@ -32,7 +32,7 @@ Du kan vælge mellem forskellige afskrivningsmetoder og -principper. Formålet m
 
 Hvis du bruger afskrivningsprincipper, og du ændrer den seneste startdato for afskrivning på et aktiv, så der springes nogle afskrivninger over, kan afskrivningen for det sidste år blive større eller mindre end forventet. Afskrivningen reguleres med det antal afskrivningsperioder, der påvirkes af ændringen af den seneste startdato for afskrivning.
 
-Hvis du f.eks. bruger afskrivningsprincippet Halvår over tre år, afskrives der normalt over 3½ år. Hvis du ændrer den seneste startdato for afskrivning i løbet af de 3½ år, flytter det sidste afskrivningsår uden for det antal perioder, der påvirkes. Hvis du flytter datoen tre måneder, er der ni måneder, hvor der kan afskrives i det sidste år, hvor det normalt ellers ville være seks måneder.
+Hvis du f.eks. bruger afskrivningsprincippet Halvår over tre år, afskrives der normalt over tre et halvt år. Hvis du ændrer den seneste startdato for afskrivning i løbet af tre og et halvt år, flytter det sidste afskrivningsår uden for det antal perioder, der påvirkes. Hvis du flytter datoen tre måneder, er der ni måneder, hvor der kan afskrives i det sidste år, hvor det normalt ellers ville være seks måneder.
 
 Du kan vælge mellem følgende afskrivningsprincipper.
 
@@ -77,7 +77,7 @@ Du kan vælge mellem følgende afskrivningsmetoder.
 
 [Lineær afskrivning for den resterende levetid](straight-line-life-remaining-depreciation.md)
 
-[125 % saldoafskrivning](125-percent-reducing-balance-depreciation.md)
+[125 procent saldoafskrivning](125-percent-reducing-balance-depreciation.md)
 
 [150 % saldoafskrivning](150-percent-reducing-balance-depreciation.md)
 

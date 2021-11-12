@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 72fe7f8a6b05bd7c6fa242ef599e506a1178d913
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569331"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678683"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -93,7 +93,6 @@ Fanen **Min maskine** indeholder følgende kolonner. Tallene svarer til tallene 
 1. **Registrér nedetid** – Vælg denne knap for at åbne en dialogboks, hvor du kan registrere maskinnedetid. Du kan vælge en årsagskode og angive en dato/tidsperiode for nedetiden. Registreringen af maskinnedetid bruges til at beregne effektiviteten af maskinaktivet.
 1. **Vis eller rediger** – Vælg denne knap for at åbne en dialogboks, hvor du kan redigere eller få vist eksisterende nedetidsposter.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Start og fuldførelse af produktionsjob
 
 Arbejderne starter et produktionsjob ved at vælge et job under fanen **Alle job** og derefter vælge **Start job** for at åbne dialogboksen **Start job**.
@@ -109,6 +108,32 @@ Arbejderne kan starte et job med en hvilken som helst status. Når en arbejder s
 Når en arbejder fuldfører eller delvist fuldfører et job, kan han eller hun rapportere antal gode, der er produceret, ved at vælge et job under fanen **Aktive job** og derefter vælge **Rapportér status**. Derefter angiver arbejderen antallet af gode ved at bruge det numeriske tastatur i dialogboksen **Rapportér status**. Antallet er som standard tomt. Når der er angivet et antal, kan arbejderen opdatere status for jobbet til *I gang*, *Stoppet* eller *Fuldført*.
 
 ![Dialogboksen Rapportér status.](media/pfei-report-progress-dialog.png "Dialogboksen Rapportér status")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Rapportering af antal gode på batchordrer, der har samprodukter og biprodukter
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
+
+Medarbejdere kan bruge grænsefladen til produktionsudførelse til at rapportere status for batchordrer. Denne rapportering inkluderer rapportering af samprodukter og biprodukter.
+
+Visse producenter, særligt i forarbejdningsindustrien, bruger batchordrer til at administrere deres produktionsprocesser. Batchordrer oprettes ud fra formler, og disse formler kan defineres, så de har samprodukter og biprodukter som output. Når der rapporteres feedback på disse batchordrer, skal outputbeløbet registreres på formelvarerne samt på samprodukterne og biprodukterne.
+
+Når en arbejder fuldfører eller delvist fuldfører arbejdet med en batchordre, kan der rapporteres antal gode eller kasserede varer for hvert produkt, der er defineret som output for ordren. Produkter, der er defineret som output for en batchordre, kan være af typen *Formel*, *Samprodukt* eller *Biprodukt*.
+
+Hvis en arbejder vil rapportere gode antal på produkterne, skal han eller hun vælge et job under fanen **Aktive job** og derefter vælge **Rapportér status**.
+
+I dialogboksen **Rapportér status** kan arbejderen derefter vælge mellem de produkter, der er defineret som output for den batchordre, der skal rapporteres om. Arbejderen kan vælge et eller flere produkter på listen og derefter vælge **Rapportér status**. Antallet for hvert produkt er som standard tomt, og arbejderen kan bruge det numeriske tastatur til at angive antallet. Arbejderen kan bruge knapperne **Forrige** og **Næste** til at flytte mellem de valgte produkter. Når antallet er angivet for hvert produkt, kan arbejderen opdatere status for jobbet til *I gang*, *Stoppet* eller *Fuldført*.
+
+![Rapportere samprodukter og biprodukter.](media/report-co-by-products.png "Rapportere samprodukter og biprodukter")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Rapportering af batchordrer til planlægningsvarer
+
+Når en arbejder fuldfører et job i en batchordre for en planlægningsvare, rapporterer de kun antal på samprodukter og biprodukter, da planlægningsvarer ikke indeholder en vare af typen *Formel*.
+
+### <a name="reporting-co-product-variation"></a>Rapportering af varianter af samprodukter
+
+Hvis der oprettes en batchordre ud fra en formelversion, hvor indstillingen **Variationer af samprodukter** angives til *Ja*, kan arbejderen rapportere om samprodukter, der ikke er en del af definitionen for batchordrerne. Denne funktionalitet bruges i scenarier, hvor der kan forekomme uventet produktoutput i produktionsprocessen.
+
+I dette tilfælde kan arbejderen angive det samprodukt og det antal, der skal rapporteres, ved at vælge **Variationer af samprodukter** i dialogboksen til rapportering af status. Arbejderen kan derefter vælge mellem alle de frigivne produkter, der er defineret som samprodukter.
 
 ## <a name="reporting-scrap"></a>Rapportering af spild
 
