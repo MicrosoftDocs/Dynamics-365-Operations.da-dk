@@ -118,7 +118,7 @@ Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan ko
 
 | Navn på dimensionshierarki | Dimension    | Navn på dimensionshierarkitype      | Adgangslistehierarki |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Bærere | Klassifikationshierarki for dimension | Nr.                    |
+| Organisation             | Bærere | Klassifikationshierarki for dimension | Nej                    |
 
 Dimensionshierarkiet til rapportering kan konfigureres som vist her.
 

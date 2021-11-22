@@ -43,7 +43,7 @@ Et typisk tv-produkt kan f.eks. have følgende attributter.
 |            | Sammensat inputs         | 0-10                        | 2             |
 |            | Komponent-inputs         | 0-10                        | 1             |
 | LCD        | 3D-klar                 | Ja eller Nej                   | Ja           |
-|            | 3D-aktiveret               | Ja eller Nej                   | Nr.            |
+|            | 3D-aktiveret               | Ja eller Nej                   | Nej            |
 | Plasma     | Driftstemperatur fra      | 32-110 grader              | 32            |
 |            | Driftstemperatur til        | 32-110 grader              | 100           |
 | Projection | Garanti på projektionsrør | 6, 12 eller 18 måneder         | 12            |

@@ -34,7 +34,7 @@ Denne fasttekst indeholder indstillinger, der er angivet for typiske booleske eg
 
 | Værdi | Mærkat | Beskrivelse |
 | --- | --- | --- |
-| 200000000 | Ingen | Nej |
+| 200000000 | Nej | Nej |
 | 200000001 | Ja | Ja. |
 
 ## <a name="see-also"></a>Se også

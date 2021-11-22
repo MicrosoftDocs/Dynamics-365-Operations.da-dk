@@ -75,14 +75,14 @@ Følgende tabel indeholder eksempler, der viser, hvordan forskellige indstilling
 
 | Frigivet produkt: Leverandør | Standardindstillinger for ordre: Leveringstid | Varedisponering: Tilsidesæt leverandør | Varedisponering: Tilsidesæt leveringstid | Handelsaftale: Leverandør | Handelsaftale: Leveringstid | Handelsaftale: Ignorer leveringstid | Resulterende leverandør | Resulterende leveringstid |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Ingen | Ingen | US003 | 3 | Ingen | _ *US001** | **1** |
-| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Ingen | _ *US002** | **2** |
-| *(Tom)* | 1 | Ingen | Ingen | ***US003** _ | _*_3_*_ | Ingen | _ *US003** | **3** |
-| *(Tom)* | ***1** _ | Ingen | Ingen | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | _ *US002** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | _ *US002** | **1** |
-| *(Tom)* | 1 | Ingen | Ja: 2 | ***US003** _ | _*_3_*_ | Ingen | _ *US003** | **3** |
-| *(Tom)* | 1 | Ingen | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nej | Nej | US003 | 3 | Nej | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nej | _ *US002** | **2** |
+| *(Tom)* | 1 | Nej | Nej | ***US003** _ | _*_3_*_ | Nej | _ *US003** | **3** |
+| *(Tom)* | ***1** _ | Nej | Nej | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nej | US003 | 3 | Nej | _ *US002** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nej | US003 | 3 | Nej | _ *US002** | **1** |
+| *(Tom)* | 1 | Nej | Ja: 2 | ***US003** _ | _*_3_*_ | Nej | _ *US003** | **3** |
+| *(Tom)* | 1 | Nej | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -201,7 +201,7 @@ Opsætningen i dette afsnit udføres efter juridisk enhed. Du skal konfigurere d
 3. Definer den forventede afrundingsregel for den juridiske enhed under fanen **Beregning**. Yderligere oplysninger om afrundingslogikken finder du i [Regler for afrunding i momsberegning](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. Definer den forventede metode til håndtering af fejl for den juridiske enhed under fanen **Fejlhåndtering**. Følgende tre indstillinger er tilgængelige:
 
-    - Ingen
+    - Nej
     - Advarsel
     - Fejl
 

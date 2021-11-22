@@ -48,9 +48,9 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 135 | Tilføj tilhørsforhold fra liste | Føj en tilknytning til en transaktion ved at vælge den på en liste. | Ja | Ja | Ja | Ja | Nej |
 | 137 | Føje tilknytning til en kunde | Tilføj en tilknytning til en kunde på siden **Kundeoplysninger**. | Nej | Nej | Nej | Ja | Nej |
 | 138 | Fjern tilknytning fra kunde | Fjern en tilknytning på siden **Kundeoplysninger**. | Nej | Nej | Nej | Ja | Nej |
-| 643 | Tilføj kuponkode | Tilføj en kupon ved at indtaste dens kode på POS. | Ja | Ja | Nr. | Ja | Nr. |
-| 141 | Tilføj gebyrer i hoved | Føj et tillæg til ordrehovedet. | Ja | Ja | Nr. | Nr.| Nr. |
-| 141 | Tilføj linjegebyrer | Føj et tillæg til en valgt salgslinje. | Ja | Ja | Nr. | Nr.| Nr. |
+| 643 | Tilføj kuponkode | Tilføj en kupon ved at indtaste dens kode på POS. | Ja | Ja | Nej | Ja | Nej |
+| 141 | Tilføj gebyrer i hoved | Føj et tillæg til ordrehovedet. | Ja | Ja | Nej | Nej| Nej |
+| 141 | Tilføj linjegebyrer | Føj et tillæg til en valgt salgslinje. | Ja | Ja | Nej | Nej| Nej |
 | 117 | Tilføj fordelskundekort | Bed brugeren om at indtaste et fordelskundekortnummer, der skal føjes til den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |
 | 136 | Tilføj serienummer | Med denne handling kan brugeren angive et serienummer for det aktuelt valgte produkt. | Ja | Ja | Nej | Ja | Nej |
 | 1214 | Tilføj leveringsadresse | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
@@ -62,17 +62,17 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 1053 | Luk skifte uden kontrol | Indstil det aktuelle skift til lukket uden kontrol, og log brugeren af. En skift lukket uden kontrol er lukket for yderligere transaktioner, men er stadig åben for handlinger med kasseskuffe, f.eks. fjernelse af betalingsmiddel og kasseoptælling. | Ja | Ja | Ja | Nej | Nej |
 | 310 | Beregn total | Når kontantrabatten forsinkes, vil denne handling starte beregningen for den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |
 | 642 | Udfør alle produkter | Angiv leveringsmåden for alle linjer til **Udfør**. | Ja | Ja | Nej | Ja\* | Nej |
-| 641 | Udfør alle valgte produkter | Angiv leveringsmåden for de valgte linjer til **Udfør**. | Ja | Ja | Nr. | Ja\* | Nr. |
-| 647 | Ændring af leveringsmetode | Skift leveringsmåde for forudkonfigurerede salgslinjer til forsendelse. | Ja | Ja | Nr. | Nr.| Nr. |
-| 1215 | Skift adgangskode | Med denne handling kan POS-brugeren ændre sin adgangskode. | Ja | Ja | Ja | Ingen | Ingen |
+| 641 | Udfør alle valgte produkter | Angiv leveringsmåden for de valgte linjer til **Udfør**. | Ja | Ja | Nej | Ja\* | Nej |
+| 647 | Ændring af leveringsmetode | Skift leveringsmåde for forudkonfigurerede salgslinjer til forsendelse. | Ja | Ja | Nej | Nej| Nej |
+| 1215 | Skift adgangskode | Med denne handling kan POS-brugeren ændre sin adgangskode. | Ja | Ja | Ja | Nej | Nej |
 | 123 | Skift måleenhed | Ændre måleenheden for det valgte linjeelement. | Ja | Ja | Nej | Ja | Nej |
 | 639 | Ryd standardsælgeren for transaktionen | Fjern provisionssalgsgruppen (sælger) fra transaktionen. | Ja | Ja | Nej | Ja | Nej |
 | 106 | Ryd antal | Nulstil antallet på den aktuelt valgte linje for **1**. | Ja | Ja | Nej | Ja | Nej |
 | 640 | Ryd sælger på linjen | Fjern provisionssalgsgruppen (sælger) fra den aktuelt valgte linje. | Ja | Ja | Nej | Ja | Nej |
 | 121 | Ryd sælger | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
-| 1055 | Luk skift | Luk det aktuelle skifte, udskriv en Z-rapport, og log brugeren af systemet. | Ja | Ja | Ja | Nr. | Nr. |
-| 139 | Afslut transaktion | Beder brugeren vælge betalingsmetode | Ja | Ja | Nr. | Ja | Nr. |
-| 620 | Opret kundeordre | Konvertér POS-transaktionen til en kundeordre. | Ja | Ja | Nr. | Ja\* | Nr. |
+| 1055 | Luk skift | Luk det aktuelle skifte, udskriv en Z-rapport, og log brugeren af systemet. | Ja | Ja | Ja | Nej | Nej |
+| 139 | Afslut transaktion | Beder brugeren vælge betalingsmetode | Ja | Ja | Nej | Ja | Nej |
+| 620 | Opret kundeordre | Konvertér POS-transaktionen til en kundeordre. | Ja | Ja | Nej | Ja\* | Nej |
 | 925 | Kopiér bankchecken | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ja |
 | 620 | Opret kundeordre | Konvertér POS-transaktionen til en kundeordre. | Ja | Ja | Nej | Ja\* | Nej |
 | 621 | Opret tilbud | Konvertér POS-transaktionen til et salgstilbud. | Ja | Ja | Nej | Ja\* | Nej |
@@ -95,12 +95,12 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 614 | Rediger kundeordre | Tilbagekald den valgte ordre, så den kan redigeres i POS. | Nej | Nej | Nej | Nej | Nej |
 | 615 | Rediger tilbud | Tilbagekald det valgte tilbud, så det kan redigeres i POS. | Nej | Nej | Nej | Nej | Nej |
 | 518 | Udgiftskonti | Registrer penge, der er fjernet fra pengeskuffen til lejlighedsvise udgifter. | Ja | Ja | Ja | Ja | Nej |
-| 919 | Udvidet logon | Tildele eller fjerne tilladelse til at logge på ved at scanne en stregkode eller føre et kort gennem en kortlæser. | Ja | Ja | Ja | Ja | Nr. |
+| 919 | Udvidet logon | Tildele eller fjerne tilladelse til at logge på ved at scanne en stregkode eller føre et kort gennem en kortlæser. | Ja | Ja | Ja | Ja | Nej |
 | 1201 | Kassebeholdning | Med denne handling kan brugeren føje flere penge til den aktuelle kasseskuffe eller det aktuelle skift. | Ja | Ja | Ja | Ja | Nej |
 | 1218 | Gennemtving oplåsning af ekstern enhed | Denne handling bruges internt af systemet til at låse op for eksterne POS-enheder. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
 | 520 | Gavekortsaldo | Vis saldoen for et gavekort. | Ja | Ja | Nej | Nej | Nej |
-| 708 | Deaktiver enhed | Deaktiver den aktuelle enhed, så den ikke kan bruges som et POS kasseapparat. | Nr. | Nr. | Nr. | Nr. | Nr. |
-| 804 | indgående handlinger | Få adgang til funktionerne i styring af indgående lagerbeholdning. | Ja | Nr. | Ja | Nr.| Nr. |
+| 708 | Deaktiver enhed | Deaktiver den aktuelle enhed, så den ikke kan bruges som et POS kasseapparat. | Nej | Nej | Nej | Nej | Nej |
+| 804 | indgående handlinger | Få adgang til funktionerne i styring af indgående lagerbeholdning. | Ja | Nej | Ja | Nej| Nej |
 | 517 | Indtægtskonti | Registrer penge, der lægges i pengeskuffen af andre årsager end salg. | Ja | Ja | Ja | Ja | Nej |
 | 801 | Lagersøgning | Få vist antal for tilgængelige, i bestilling og disponibel til tilsagn (DTT) for det aktuelle lager og andre tilgængelige lokationer. | Ja | Ja | Ja | Nej | Nej |
 | 122 | Fakturakommentar | Med denne handling kan brugeren angive en kommentar til den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |
@@ -111,13 +111,13 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 301 | Linjerabatprocent | Angiv en rabatprocent for en linjevare i transaktionen. Denne operation bruges kun til varer med rabat og kun inden for specifikke rabatgrænser. | Ja | Ja | Nej | Ja | Nej |
 | 703 | Lås kasseapparat | Lås det aktuelle kasseapparat, så det ikke kan bruges, men log ikke den aktuelle bruger af. | Nej | Nej | Nej | Ja | Nej |
 | 701 | Log af | Log den aktuelle bruger af kasseapparatet. | Ja | Ja | Ja | Ja | Nej |
-| 521 | Saldo for fordelskundepoint | Få vist saldoen for point for det angivne fordelskundekort. | Ja | Ja | Nr. | Nr. | Nr. |
-| 142 | Administrer gebyrer | Få vist og administrer tillæg, der er anvendt på transaktioner. | Ja | Ja | Nr. | Nr.| Nr. |
+| 521 | Saldo for fordelskundepoint | Få vist saldoen for point for det angivne fordelskundekort. | Ja | Ja | Nej | Nej | Nej |
+| 142 | Administrer gebyrer | Få vist og administrer tillæg, der er anvendt på transaktioner. | Ja | Ja | Nej | Nej| Nej |
 | 918 | Administrer skift | Få vist en oversigt over aktive eller afbrudte skift og skift, der er lukket uden kontrol. | Ja | Ja | Ja | Nej | Nej |
 | 914 | Minimere POS-vinduet | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
 | 1000 | Åbn kasseskuffe | Udfør en handling af typen "intet salg", og åbn den aktuelt valgte pengeskuffen. | Ja | Ja | Ja | Ja | Nej |
-| 928 | Ordreopfyldelse | Denne handling tillader brugerne at plukke, pakke, afsende eller tilbagekalde ordrer for afhentning i butik. | Ja | Ja | Ja | Nr. | Nr. |
-| 805 | Udgående handlinger | Få adgang til funktioner til styring af forsendelser af udgående flytteordrer. | Ja | Nr. | Ja | Nr.| Nr. |
+| 928 | Ordreopfyldelse | Denne handling tillader brugerne at plukke, pakke, afsende eller tilbagekalde ordrer for afhentning i butik. | Ja | Ja | Ja | Nej | Nej |
+| 805 | Udgående handlinger | Få adgang til funktioner til styring af forsendelser af udgående flytteordrer. | Ja | Nej | Ja | Nej| Nej |
 | 129 | Tilsidesæt linjeproduktmoms | Tilsidesæt momsen på det valgte linjeelement, og brug en anden angivet moms. | Ja | Ja | Nej | Ja | Nej |
 | 130 | Tilsidesæt linjeproduktmoms fra liste | Tilsidesæt momsen på det valgte linjeelement, og brug den moms, som brugeren vælger på en liste. | Ja | Ja | Nej | Ja | Nej |
 | 127 | Tilsidesæt transaktionsmoms | Tilsidesæt momsen på transaktionen, og brug en anden angivet moms. | Ja | Ja | Nej | Ja | Nej |
@@ -149,8 +149,8 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 100 | Produktsalg | Føj et angivet produkt til transaktionen. | Ja | Ja | Ja | Ja | Nej |
 | 108 | Produktsøgning | Med denne handling kan brugeren søge efter et produkt ved at gå til siden med produktsøgning i POS. | Ja | Ja | Ja | Ja | Nej |
 | 633 | Tilbudsudløbsdato | Med denne handling kan brugeren få vist eller ændre udløbsdatoen for et salgstilbud. | Ja | Ja | Nej | Ja\* | Nej |
-| 627 | Omberegn | Omberegn alle kundeordrelinjer og moms, der er baseret på den aktuelle konfiguration. | Ja | Ja | Nr. | Ja\* | Nr. |
-| 143 | Genberegn gebyrer | Genberegn de automatiske tillæg, der er anvendt på ordren. | Ja | Ja | Nr. | Nr.| Nr. |
+| 627 | Omberegn | Omberegn alle kundeordrelinjer og moms, der er baseret på den aktuelle konfiguration. | Ja | Ja | Nej | Ja\* | Nej |
+| 143 | Genberegn gebyrer | Genberegn de automatiske tillæg, der er anvendt på ordren. | Ja | Ja | Nej | Nej| Nej |
 | 515 | Tilbagekald ordre | Med denne handling kan brugeren søge efter og tilbagekalde kundeordrer og salgstilbud. | Ja | Ja | Ja | Nej | Nej |
 | 504 | Tilbagekald transaktion | Med denne handling kan brugeren tilbagekalde en tidligere udsat transaktion fra det aktuelle lager. | Ja | Ja | Nej | Ja‡ | Nej |
 | 305 | Indløs kundefordelspoint | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ja |
@@ -163,9 +163,9 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 114 | Returtransaktion | Tilbagekald en tidligere transaktion ved hjælp af den kvitteringsnummer for at returnere nogle af eller alle produkterne. | Ja | Ja | Ja | Ja§ | Nej |
 | 1211 | Deponering til pengeskab | Udfør en deponering til et pengeskab for at flytte penge fra kasseapparatet til et pengeskab. | Ja | Ja | Ja | Ja | Nej |
 | 516 | Salgsfaktura | Med denne handling kan kunden foretage betalinger for den valgte salgsfaktura. | Ja | Ja | Nej | Nej | Nej |
-| 502 | Sælger | Med denne handling kan brugeren angive værdien **Salgsregistrering** på en salgsordre for kundeordrer i POS. | Ja | Ja | Nr. | Ja\* | Nr. |
-| 2000 | Administration af tidsplaner | Denne handling understøttes endnu ikke. | Ja | Ja | Ja | Nr. | Nr. |
-| 2001 | Planlægning af anmodninger | Denne handling understøttes endnu ikke. | Ja | Ja | Ja | Nr. | Nr. |
+| 502 | Sælger | Med denne handling kan brugeren angive værdien **Salgsregistrering** på en salgsordre for kundeordrer i POS. | Ja | Ja | Nej | Ja\* | Nej |
+| 2000 | Administration af tidsplaner | Denne handling understøttes endnu ikke. | Ja | Ja | Ja | Nej | Nej |
+| 2001 | Planlægning af anmodninger | Denne handling understøttes endnu ikke. | Ja | Ja | Ja | Nej | Nej |
 | 622 | Søg i ordrer | Med denne handling kan brugere forudkonfigurere POS-knapperne for at udføre søgninger efter vare, kunde eller kategori. | Ja | Ja | Ja | Ja | Nej |
 | 1213 | Søg efter leveringsadresse | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
 | 709 | Vælg hardwarestation | Med denne handling kan brugeren vælge en hardwarestation på en liste over tilgængelige hardwarestationer. | Ja | Ja | Ja | Ja | Nej |
@@ -194,8 +194,8 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 500 | Afvis transaktion | Annuller den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |
 | 916 | Windows Workflow Foundation | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
 | 924 | X-rapport til bankkort | Denne handling understøttes ikke. | Ikke anvendelig | Ikke anvendelig | Ikke anvendelig | Ikke anvendelig | Ja |
-| 311 | Fjern systemrabatter fra transaktioner | Fjern alle de rabatter, der anvendes af systemet, inklusive kuponbaserede rabatter, fra transaktionen. Dette fjerner ikke manuelle rabatter. | Ja | Ja | Ja | Ja | Ingen |
-| 312 | Genanvend systemrabatter | Genanvend systemrabatter på transaktionen, hvis de blev fjernet ved hjælp af handlingen **Fjern systemrabatter fra transaktionen**. | Ja | Ja | Ja | Ja | Ingen |
+| 311 | Fjern systemrabatter fra transaktioner | Fjern alle de rabatter, der anvendes af systemet, inklusive kuponbaserede rabatter, fra transaktionen. Dette fjerner ikke manuelle rabatter. | Ja | Ja | Ja | Ja | Nej |
+| 312 | Genanvend systemrabatter | Genanvend systemrabatter på transaktionen, hvis de blev fjernet ved hjælp af handlingen **Fjern systemrabatter fra transaktionen**. | Ja | Ja | Ja | Ja | Nej |
 
 \* Handlingen er kun tilgængelig i offlinetilstand, når der oprettes en kundeordre eller et salgstilbud, og kun hvis offlineoprettelse af kundeordrer og salgstilbud er konfigureret i POS-funktionalitetsprofilen. Handlingen kan ikke udføres, når der oprettes ordrer ved hjælp af Real-time Service, eller når ordrer er tilbagekaldt eller redigeres.
 

@@ -92,8 +92,8 @@ Fanen **Generelt**
     | Transaktionsdato       | 1/1/2022 |
     | Resterende perioder      | 84       |
     | Bogfør                   | Ja      |
-    | Forhåndsvisning før bogføring | Ingen       |
-    | Luk bog             | Ingen       |
+    | Forhåndsvisning før bogføring | Nej       |
+    | Luk bog             | Nej       |
 
 6. Der er oprettet og bogført en kladdepostering for værdiforringelsen. Hvis du vil se den, skal du gå til aktivets leasingkladde i leasingkartoteket. Bemærk, at beløbet for forringelsen blev debiteret på bogføringskontoen for værdiforringelsen, og at bogføringskontoen for ROU er krediteret.
 7. Hvis du vil have vist nettoeffekten af værdiforringelsen, skal du gå til tabellerne for passiver og aktiver. Bemærk, at udgiften til værdiforringelsen har formindsket ROU-aktivet, men at der ikke er ændret et overførselsbeløb for leasingforpligtelsen.

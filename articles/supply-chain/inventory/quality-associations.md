@@ -344,7 +344,7 @@ Hvis du i forbindelse med produktion angiver feltet **Hændelsestype** til *Fær
 </tr>
 <tr>
 <td>Fast antal: 1</td>
-<td>Ingen</td>
+<td>Nej</td>
 <td>
 <p>Batchnummer: Nej</p>
 <p>Serienummer: Nej</p>
@@ -399,7 +399,7 @@ Hvis du i forbindelse med produktion angiver feltet **Hændelsestype** til *Fær
 </tr>
 <tr>
 <td>Fast antal: 2</td>
-<td>Ingen</td>
+<td>Nej</td>
 <td>
 <p>Batchnummer: Ja</p>
 <p>Serienummer: Ja</p>

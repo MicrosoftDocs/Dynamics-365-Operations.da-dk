@@ -38,9 +38,9 @@ I nedenstående tabel vises det, hvornår systemet bogfører lagerposteringer ve
 
 | Betingelse                                               | Systemet bruger den beregnede løbende gennemsnitskostpris | Systemet bruger den kostpris, der er defineret i varens stamdata |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Tælleren\* og nævneren\*\* er begge positive.  | Ja                                                      | Nr.                                                                |
-| Tælleren\*, nævneren\*\* eller begge er negative. | Nr.                                                       | Ja                                                               |
-| Nævneren\*\* er 0 (nul).                        | Nr.                                                       | Ja                                                               |
+| Tælleren\* og nævneren\*\* er begge positive.  | Ja                                                      | Nej                                                                |
+| Tælleren\*, nævneren\*\* eller begge er negative. | Nej                                                       | Ja                                                               |
+| Nævneren\*\* er 0 (nul).                        | Nej                                                       | Ja                                                               |
 
 \* Tæller = (fysisk beløb + økonomisk beløb) \*\* Nævner = (fysisk antal + økonomisk antal) 
 

@@ -42,7 +42,7 @@ Systemeksemplet indeholder følgende opsætning af lagringsdimensioner.
 | Navn      | Aktivt | Fysisk lager | Økonomisk lager |
 |-----------|--------|--------------------|---------------------|
 | Lokation      | Ja    | Ja                | Ja                 |
-| Lagersted | Ja    | Ja                | Ingen                  |
+| Lagersted | Ja    | Ja                | Nej                  |
 
 ### <a name="inventory-model"></a>Lagermodel
 

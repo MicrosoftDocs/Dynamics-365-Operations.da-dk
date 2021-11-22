@@ -34,7 +34,7 @@ Denne fasttekst indeholder indstillingen til ja/ingen egenskaber, der også till
 | --- | --- | --- |
 | 200000000 | Tom | Der er ikke valgt en værdi. |
 | 200000001 | Ja | Ja. |
-| 200000002 | Ingen | Nr. |
+| 200000002 | Nej | Nr. |
 
 ## <a name="see-also"></a>Se også
 

@@ -421,7 +421,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Ikke anvendelig</td>
 </tr>
 <tr>
-<td>Ingen</td>
+<td>Nej</td>
 <td>
 <ol>
 <li>Vælg menupunktet <strong>Tilsidesæt lokation</strong> på mobilappen Warehouse Management, når du starter pluk af arbejde.</li>
@@ -498,7 +498,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Antallet reserveres igen for samme batch. Systemet tildeler tilfældigt en lokation og et id (hvis lokationen er id-styret), hvor antallet er tilgængeligt.</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nej</td>
 <td>Se den forrige række.</td>
 <td>Se den forrige række.</td>
 <td>Antallet reserveres igen for samme batch og for samme lokation og id (hvis lokationen er id-styret), der blev angivet under annullering af pluk.</td>
@@ -539,7 +539,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Alle eksisterende reservationer, der påvirkes af antalsbevægelsen fra den angivne lokation, reserveres igen for samme batch. Systemet tildeler tilfældigt en lokation og et id (hvis lokationen er id-styret), hvor antallet er tilgængeligt.</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nej</td>
 <td>Se den forrige række.</td>
 <td>Se den forrige række.</td>
 <td>Alle eksisterende reservationer, der påvirkes af antalsbevægelsen fra den angivne lokation, reserveres igen for den samme batch og for den nye "til"-lokation og det nye id (hvis lokationen er id-styret).</td>
@@ -573,7 +573,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Antallet reserveres igen for samme batch. Systemet tildeler tilfældigt en lokation og et id (hvis lokationen er id-styret), hvor antallet er tilgængeligt.</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nej</td>
 <td>Se den forrige række.</td>
 <td>Se den forrige række.</td>
 <td>Antallet reserveres igen for den samme batch og for den lokation og det id, hvor antallet blev placeret ved tilbageførsel.</td>
@@ -595,7 +595,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Antallet reserveres igen for samme batch. Systemet tildeler tilfældigt en lokation og et id (hvis lokationen er id-styret), hvor antallet er tilgængeligt.</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nej</td>
 <td>Se den forrige række.</td>
 <td>Se den forrige række.</td>
 <td>Antallet reserveres igen for den samme batch og for den lokation og det id, som antallet blev tildelt ved tilbageførsel.</td>
@@ -657,7 +657,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Antallet reserveres igen for samme batch. Systemet tildeler tilfældigt en lokation og et id (hvis lokationen er id-styret), hvor antallet er tilgængeligt.</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nej</td>
 <td>Se den forrige række.</td>
 <td>
 <ul>
@@ -686,7 +686,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Alle eksisterende reservationer, der påvirkes af antalsreguleringen i den kort plukkede lokation, reserveres igen for samme batch. Systemet tildeler tilfældigt en lokation og et id (hvis lokationen er id-styret), hvor antallet er tilgængeligt.</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nej</td>
 <td>Se den forrige række.</td>
 <td>Se den forrige række.</td>
 <td>Alle eksisterende reservationer, der påvirkes af antalsreguleringen i den kort plukkede lokation, fjernes.</td>
@@ -719,7 +719,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 </tr>
 <tr>
 <td>En arbejdsundtagelse af typen <strong>Kort pluk</strong> er angivet, hvor <strong>Vareomfordeling</strong> = <strong>Manuel</strong>, <strong>Reguler lager</strong> = <strong>Ja</strong>, og <strong>Fjern reservationer</strong> = <strong>Nej</strong>. Derudover er indstillingen <strong>Tillad manuel vareomfordeling</strong> aktiveret for arbejderen.</td>
-<td>Ingen</td>
+<td>Nej</td>
 <td>
 <ol>
 <li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Warehouse Management, når du kører plukarbejde.</li>
@@ -732,7 +732,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 </tr>
 <tr>
 <td>En arbejdsundtagelse af typen <strong>Kort pluk</strong> er angivet, hvor <strong>Vareomfordeling</strong> = <strong>Manuel</strong>, <strong>Reguler lager</strong> = <strong>Ja</strong>, og <strong>Fjern reservationer</strong> = <strong>Ja</strong>. Derudover er indstillingen <strong>Tillad manuel vareomfordeling</strong> aktiveret for arbejderen.</td>
-<td>Ingen</td>
+<td>Nej</td>
 <td>
 <ol>
 <li>Vælg menupunktet <strong>Kort pluk</strong> på mobilappen Warehouse Management, når du kører plukarbejde.</li>
@@ -807,7 +807,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 </td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nej</td>
 <td>Se den forrige række.</td>
 <td>Ændringer i lagerstatus er ikke tilladt for antal, der er reserveret til arbejde.</td>
 <td>
@@ -833,7 +833,7 @@ Følgende tabeller indeholder en oversigt, der viser, hvordan systemet håndtere
 <td>Antallet reserveres igen for samme batch. Systemet tildeler tilfældigt en lokation og et id (hvis lokationen er id-styret), hvor antallet er tilgængeligt.</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nej</td>
 <td>Se den forrige række.</td>
 <td>Ændringer i lagerstatus er ikke tilladt for antal, der er reserveret til arbejde.</td>
 <td>Ændringer i lagerstatus er ikke tilladt.</td>

@@ -143,7 +143,7 @@ Med så mange forskellige integrationsteknologier, der er til rådighed, kan bes
 | BYOD                   | Ja, planlagt af administrator i Human Resources        | Asynkon, batch                                | Nej<sup>3</sup>                                    | Høj (hundredtusindvis af poster)                    | Understøtter alle DMF-enheder           |
 | OData-aktiverede enheder | Ja, ved hjælp af middleware                    | Synkroniser                                        | Ja, via Human Resources-datatjenesten (OData)  | Varierer efter brug (understøtter sideinddeling til interaktiv brug) | Høj                                |
 | Excel-tilføjelsesprogram           | Nej                                       | Synkroniser                                        | Nej                                        | Mellem (titusindvis af poster)                      | Understøtter alle OData-aktiverede enheder |
-| Dataintegrator        | Ja, planlagt i Dataintegrator        | Asynkon, batch                                | Ingen                                        | Varierer efter brug                                       | Understøtter alle Dataverse-tabeller           |
+| Dataintegrator        | Ja, planlagt i Dataintegrator        | Asynkon, batch                                | Nej                                        | Varierer efter brug                                       | Understøtter alle Dataverse-tabeller           |
 
 <sup>2</sup>Microsoft investerer meget for at øge datadækningen af Dataverse-tabeller. Vi anbefaler, at du bruger Dataverse, når dækningen er tilgængelig. I øjeblikket er Dataverse-datadækningen lav sammenlignet med DMF- og OData-aktiverede enheder.
 

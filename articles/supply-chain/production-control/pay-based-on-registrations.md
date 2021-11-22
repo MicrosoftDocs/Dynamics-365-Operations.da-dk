@@ -170,7 +170,7 @@ På siden **Beregningsparametre** skal du vælge **Overtid** som profilspecifika
 
 | Reg.specifikation | Profilspecifikationstype | Udregning   | Indstilling | Løngivende         | Indstilling |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Arbejdstid       | Overtid                   | Normaltid | Ja | Løntid     | Ingen  |
+| Arbejdstid       | Overtid                   | Normaltid | Ja | Løntid     | Nej  |
 |                    |                            | Løntid      | Ja | Lønovertid | Ja |
 
 Når du justerer beregningsparametrene, genereres følgende lønposter.

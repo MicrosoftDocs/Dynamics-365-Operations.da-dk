@@ -101,7 +101,7 @@ Udvikling af POS-udvidelse ved hjælp af ModernPos.sln, CloudPOs.sln, POS. Exten
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Fra og med denne version af formen **Parametre for Commerce-planlægger** i Dynamics 365 headquarters frarådes det **fulde interval for oprettelse af datasæt i dage**. Når du starter i denne version, fjernes feltet visuelt, så værdien ikke kan redigeres. Dette vil forblive værdien **0**. |
-| **Erstattet af en anden funktion?**   | Ingen |
+| **Erstattet af en anden funktion?**   | Nej |
 | **Produktområder, der er berørt**         | Dynamics 365 Commerce |
 | **Installationsindstilling**              | Alt|
 | **Status**                         | Forældet. Brug ikke dette felt, eller rediger værdien i det.|

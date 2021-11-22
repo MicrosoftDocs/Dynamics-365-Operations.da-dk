@@ -333,9 +333,9 @@ Microsoft tilbyder Finance and Operations-kunder tre supportplaner: Premier, Pro
 | Ubegrænset afsendelse af pause/ret hændelse | Ja | Ja | Ja |
 | 24/7 adgang via LCS | Ja | Ja | Ja |
 | Svartid for hændelse | Mindre end en time | Mindre end en time | Næste arbejdsdag |
-| Rådgivningstimer | Puljer anskaffes pr. aftale. | Ingen | Ingen |
-| Dedikeret supportkontoadministrator | Ja | Ingen | Ingen |
-| Dedikeret supporttekniker | Involveret i henhold til en separat aftale | Ingen | Ingen |
+| Rådgivningstimer | Puljer anskaffes pr. aftale. | Nej | Nej |
+| Dedikeret supportkontoadministrator | Ja | Nej | Nej |
+| Dedikeret supporttekniker | Involveret i henhold til en separat aftale | Nej | Nej |
 
 Du kan finde flere oplysninger under [Support-oversigt](/power-platform/admin/support-overview).
 

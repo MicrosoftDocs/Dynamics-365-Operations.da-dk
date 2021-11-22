@@ -178,7 +178,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Metadataartifakter, der er tilknyttet Dynamics AX 2012 Enterprise Portal (EP), er blevet frarådet, da EP aldrig blev understøttet i Finance and Operations-apps. |
-| **Erstattet af en anden funktion?**   | Ingen |
+| **Erstattet af en anden funktion?**   | Nej |
 | **Produktområder, der er berørt**         | Webklient |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfases: Alle EP-koder er planlagt til at blive fjernet i oktober 2021-versionen. |
@@ -335,7 +335,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Navigations URL-adresser, der er integreret i dokumenter, der er gengivet af tjenesten, kan indeholde følsomme virksomhedsdata. Vi fjerner understøttelse af link til integreret detaljeadgang i dokumenter som en sikkerhedsforanstaltning, der beskytter kundens data yderligere. Brugerne vil også få gavn af en forbedret ydeevne, når de opretter dokumenter interaktivt, som følge af denne ændring.  |
-| **Erstattet af en anden funktion?**   | Ingen |
+| **Erstattet af en anden funktion?**   | Nej |
 | **Produktområder, der er berørt**         | Rapportering |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Denne funktion fjernes aktivt fra tjenesten.<br><br>Den moderne klient tilbyder adskillige muligheder for at lave visninger, der omfatter automatisk genererede links, som kan hjælpe dig med at navigere i programmet. Sideinddelte dokumenter, der gengives af tjenesten, anbefales til ekstern kommunikation, der sendes via mail, arkiveres og udskrives for modtagere. Vi har forbedret oplevelsen af at få vist dokumenter direkte i browseren, som giver direkte adgang til lokale printere. Du kan finde flere oplysninger i [Vis PDF-dokumenter med en integreret fremviser](../analytics/preview-pdf-documents.md). |

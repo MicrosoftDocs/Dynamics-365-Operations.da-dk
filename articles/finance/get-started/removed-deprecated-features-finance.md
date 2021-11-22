@@ -40,7 +40,7 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Udelukket fra elektronisk behandling af meddelelse om kommunikationsproces med det ungarske online faktureringssystem |
-| **Erstattet af en anden funktion?**   | Ingen |
+| **Erstattet af en anden funktion?**   | Nej |
 | **Produktområder, der er berørt**         | Applikation |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Frarådes: Senest den 15. april 2022 har vi planer om ikke længere at understøtte formatkonfigurationen af "RTIR-forespørgsel på anmodning om fakturadata (HU)". |

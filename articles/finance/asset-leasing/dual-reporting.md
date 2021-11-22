@@ -47,7 +47,7 @@ IFRS 16-kartoteket er konfigureret, så det overholder IFRS 16-regnskabsstandard
 | Konfiguration af nutidsværdi/handelsværdi af aktiv | 0,00           |
 | Kortsigtet grænse                    | 12             |
 | Grænse for lav værdi                     | 5,000.00       |
-| Betal til kreditor                           | Ingen             |
+| Betal til kreditor                           | Nej             |
 
 **Lovpligtigt kartotek**
 
@@ -64,7 +64,7 @@ Det lovpligtige kartotek er en kassekladde, hvor firmaet kan redegøre for leasi
 | Konfiguration af nutidsværdi/handelsværdi af aktiv | 0,00        |
 | Kortsigtet grænse                    | 0           |
 | Grænse for lav værdi                     | 0           |
-| Betal til kreditor                           | Ingen          |
+| Betal til kreditor                           | Nej          |
 
 **Lovpligtigt tilbageført kartotek**
 
@@ -81,7 +81,7 @@ Det lovpligtige tilbageførte kartotek konfigureres på samme måde som det lovp
 | Konfiguration af nutidsværdi/handelsværdi af aktiv | 0,00                           |
 | Kortsigtet grænse                    | 0                              |
 | Grænse for lav værdi                     | 0                              |
-| Betal til kreditor                           | Ingen                             |
+| Betal til kreditor                           | Nej                             |
 
 I dette eksempel er der oprettet en leasingaftale, der indeholder følgende indstillinger under fanerne **Generelt** og **Betalingsplanlinje**.
 

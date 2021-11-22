@@ -40,12 +40,12 @@ Når ændringsstyring er aktiveret, går IO'er gennem seks godkendelsesstatusser
 
 | Godkendelsesstatus | Beskrivelse                                                                      | Anmod om ændring er aktiveret |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
-| Kladde           | Indkøbsordren er en kladde og endnu ikke sendt til godkendelse i arbejdsgangen for indkøbsordren.     | Nr.                        |
+| Kladde           | Indkøbsordren er en kladde og endnu ikke sendt til godkendelse i arbejdsgangen for indkøbsordren.     | Nej                        |
 | Til gennemsyn       | Indkøbsordren er sendt til godkendelse i arbejdsgangen for indkøbsordren. Der afventes godkendelse       | Nej                        |
 | Afvist        | Indkøbsordren blev afvist under godkendelsesprocessen.                                 | Nej                        |
 | Godkendt        | Indkøbsordren blev godkendt.                                                             | Ja                       |
 | Bekræftet       | Indkøbsordren blev bekræftet. En indkøbsordre kan ikke bekræftes, før den er godkendt.        | Ja                       |
-| Færdiggjort       | Indkøbsordren blev færdiggjort. Den er nu økonomisk lukket og kan ikke længere ændres. | Nr.                        |
+| Færdiggjort       | Indkøbsordren blev færdiggjort. Den er nu økonomisk lukket og kan ikke længere ændres. | Nej                        |
 
 ## <a name="confirming-purchase-orders"></a>Bekræftelse af indkøbsordrer
 IO'er, der har godkendelsesstatus **Godkendt**, kan gennemgå flere trin, før de bliver bekræftet. For eksempel skal du muligvis sende en forespørgsel om indkøb til leverandøren for at få oplysninger om priser, rabatter eller leveringsdatoer. Skal du det, kan du give indkøbsordren statussen **Til eksternt gennemsyn** ved hjælp af handlingen **Købsforespørgsel**.

@@ -34,7 +34,7 @@ Denne fasttekst indeholder den indstilling, der er angivet for de typiske booles
 
 | Værdi | Navn | Betegnelse |
 | --- | --- | --- |
-| 200000000 | Ingen | Nr. |
+| 200000000 | Nej | Nr. |
 | 200000001 | Ja | Ja. |
 
 ## <a name="see-also"></a>Se også

@@ -88,21 +88,21 @@ Følgende tabel indeholder en oversigt over de forskellige kombinationer for pro
 | Systemstatus <br>(Field Service) | Linjestatus <br>(Field Service) | Fordelt <br>(Field Service) |Synkroniseret værdi <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Åben - planlagt   | Forkalkuleret   | Ja       | Forkalkuleret                       |
-| Åben - planlagt   | Estimeret   | Nr.        | Brugt                            |
+| Åben - planlagt   | Estimeret   | Nej        | Brugt                            |
 | Åben - planlagt   | Brugt        | Ja       | Brugt                            |
-| Åben - planlagt   | Brugt        | Nr.        | Brugt                            |
+| Åben - planlagt   | Brugt        | Nej        | Brugt                            |
 | Åben - i gang | Estimeret   | Ja       | Estimeret                       |
-| Åben - i gang | Estimeret   | Nr.        | Brugt                            |
+| Åben - i gang | Estimeret   | Nej        | Brugt                            |
 | Åben - i gang | Brugt        | Ja       | Brugt                            |
-| Åben - i gang | Brugt        | Nr.        | Brugt                            |
+| Åben - i gang | Brugt        | Nej        | Brugt                            |
 | Åben - fuldført   | Estimeret   | Ja       | Estimeret                       |
-| Åben - fuldført   | Estimeret   | Nr.        | Brugt                            |
+| Åben - fuldført   | Estimeret   | Nej        | Brugt                            |
 | Åben - fuldført   | Brugt        | Ja       | Brugt                            |
-| Åben - fuldført   | Brugt        | Nr.        | Brugt                            |
+| Åben - fuldført   | Brugt        | Nej        | Brugt                            |
 | Lukket - bogført    | Estimeret   | Ja       | Brugt                            |
-| Lukket - bogført    | Estimeret   | Nr.        | Brugt                            |
+| Lukket - bogført    | Estimeret   | Nej        | Brugt                            |
 | Lukket - bogført    | Brugt        | Ja       | Brugt                            |
-| Lukket - bogført    | Brugt        | Nr.        | Brugt                            |
+| Lukket - bogført    | Brugt        | Nej        | Brugt                            |
 
 Følgende tabel indeholder en oversigt over de forskellige kombinationer for servicelinjer.
 

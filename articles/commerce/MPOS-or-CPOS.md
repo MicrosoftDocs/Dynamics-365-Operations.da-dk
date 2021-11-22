@@ -70,8 +70,8 @@ Ud over en platform og formfaktor skal detailhandlere også vælge en implemente
 | POS-program         | Commerce Scale Unit | Tilgængelig offline |
 |-------------------------|---------------|-------------------|
 | MPOS for Windows        | Cloud eller RSSU | Ja               |
-| MPOS for iOS eller Android | Cloud eller RSSU | Nr.                |
-| Cloud POS               | Cloud eller RSSU | Nr.                |
+| MPOS for iOS eller Android | Cloud eller RSSU | Nej                |
+| Cloud POS               | Cloud eller RSSU | Nej                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
 

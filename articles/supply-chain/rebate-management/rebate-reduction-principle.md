@@ -47,11 +47,11 @@ I følgende tabel vises nogle af de typiske eksempler på opsætninger af rabatf
 
 | Fradragsprincip for rabat | Betegnelse | Anvend fradrag | Fradragsgrundlag | Udelad fra fradrag |
 |---|---|---|---|---|
-| Udskudt | Reducer rabat | Ja | Begge | Ingen |
+| Udskudt | Reducer rabat | Ja | Begge | Nej |
 | Exclreb | Udelad rabat | Ja | Rabat | Ja |
 | Kvanti | Flere rabatter | Ja | Begge | Ja |
-| None | Kun hensættelse og rabat | Ingen | Begge | Ja |
-| Klargør | Kun hensættelse | Ja | Klargør | Ingen |
+| None | Kun hensættelse og rabat | Nej | Begge | Ja |
+| Klargør | Kun hensættelse | Ja | Klargør | Nej |
 | Rabat | Kun rabat | Ja | Rabat | Ja |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Eksempler på beregninger af rabatfradragsprincip

@@ -99,9 +99,9 @@ I følgende tabel beskrives de forskellige muligheder for jobopslag på LinkedIn
 |---|---|---|---|
 | **Beskrivelse** | Attract slår job op på LinkedIn som et XML-feed. | Firma har kontrakt med LinkedIn og leverer et XML-feed til jobopslag. | Kunden bruger API til at synkronisere oplysninger mellem Attract og LinkedIn Recruiter. |
 | **Hvilken type job kan jeg slå op?** | Limited Listing (gratis opslag) | Premium Job Slot eller Limited Listing | Limited Listing (gratis opslag) |
-| **Kan jeg promovere jobbet på LinkedIn?** | Nr. | Premium Job Slots: ja<br>Limited Listings: nej | Nr. |
+| **Kan jeg promovere jobbet på LinkedIn?** | Nej | Premium Job Slots: ja<br>Limited Listings: nej | Nej |
 | **Hvor ofte slår LinkedIn job op?** | En gang om dagen | En gang om dagen | Flere gange om dagen, som det er defineret af API'en |
-| **Anbefalet af LinkedIn?** | Nr. | Ja | Nr. |
+| **Anbefalet af LinkedIn?** | Nej | Ja | Nej |
 | **Hvad skal jeg bruge?** | Køb af Attract | En job wrapping-kontrakt med LinkedIn og køb af Premium Job Slots | En API-aftale med LinkedIn | 
 | **Hvor kan jeg finde yderligere oplysninger?** | [Konfigurer integration med LinkedIn til Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md) | [Job Wrapping via LinkedIn Recruiter - Oversigt](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect) |
 
@@ -117,6 +117,3 @@ I følgende tabel beskrives de forskellige muligheder for jobopslag på LinkedIn
 [Rekrutter kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
 [Fejlfinding af integration med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
