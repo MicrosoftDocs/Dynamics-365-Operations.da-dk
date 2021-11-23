@@ -2,7 +2,7 @@
 title: Startside for Finance
 description: Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til økonomistyring i Microsoft Dynamics 365 Finance.
 author: roschlom
-ms.date: 08/18/2021
+ms.date: 11/04/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c671dd48ff482caf1b24a3842d8db0064dc18
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 13a5e12c7ea45ff343a5c7ae14b8ed5a030aabf5
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394557"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753715"
 ---
 # <a name="finance-home-page"></a>Startside for Finance
 
@@ -38,15 +38,13 @@ Vælg et funktionsområde, du vil vide mere om.
         - [Aktivleasing](asset-leasing/asset-leasing-homepage.md)
         - [Budgetlægning](budgeting/budgeting-overview.md) 
         - [Kontant- og bankstyring](cash-bank-management/cash-bank-management.md)
-        - [Driftsregnskab](cost-accounting/cost-accounting-home-page.md)
+        - [Omkostningsregnskab](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Udgiftsstyring](/dynamics365/project-operations/prod-exp/expense-management)
         - [Økonomirapportering](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Anlægsaktiver](fixed-assets/fixed-assets.md)
         - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [Finans- og økonomirapportering](general-ledger/general-ledger.md) 
-        - [Projektstyring og regnskab](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Offentlig sektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -66,11 +64,19 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 
 ### <a name="countryregion-functionality"></a>Lande-/områdefunktionalitet
 
-Reguleringer i land/område påvirker momsopsætning og andre områder af økonomistyring. Se afsnittet [Lokalisering og lovpligtige funktioner](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) i vores Hjælp-indhold for at få mere at vide om lande/områdespecifikke funktioner.
+Reguleringer i land/område påvirker momsopsætning og andre områder af økonomistyring. Få mere at vide om lande/områdespecifikke funktioner i [Lokalisering og lovpligtige funktioner](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json).
 
 ### <a name="additional-content"></a>Yderligere indhold
 
-Funktionen til styring af forsyningskæden dækker dele af processen fra levering til betaling, der omfatter rekvisition, bestilling, modtagelse, fakturering og betaling af de varer og tjenester, som organisationen køber. Besøg [Supply Chain Management-startsiden](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) for at få oplysninger om funktionerne til administration af køb, lager og produktion.
+Funktioner i Supply Chain Management dækker dele af processen fra levering til betaling, der omfatter:
+
+   - Rekvisition
+   - Bestilling 
+   - Modtagelse
+   - Fakturering
+   - Betaling for de varer og tjenester, som organisationen køber 
+    
+Få oplysninger om funktionerne til administration af køb, lager og produktion på [Supply Chain Management-startsiden](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
 
 ## <a name="elearning-courses"></a>eLearning-kurser
 

@@ -713,11 +713,13 @@
                   href: cost-management/inventory-close.md
                 - name: Regulere omkostningsværdier for disponibel lagerbeholdning
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Lagerrapport over lagerværdi
+                - name: Lagerværdirapporter
                   href: cost-management/inventory-value-report-storage.md
-                - name: Lagerrapport over aldersfordelt lager
+                - name: Eksempler og logik af rapport om lagerværdi
+                  href: cost-management/inventory-value-report-examples.md
+                - name: Lagring af Rapporten Aldersfordelt lager
                   href: cost-management/inventory-aging-report-storage.md
-                - name: Eksempler på aldersfordelt lager og regel
+                - name: Eksempler på og logik om rapport om aldersfordelt lager
                   href: cost-management/inventory-aging-report.md
             - name: Produktionsregnskab
               items:
@@ -1673,6 +1675,8 @@
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Planlægning med ressourcevalg baseret på egenskab
                   href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: Prioriteret planlægning
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Lagermarkering med planlægningsoptimering
                   href: master-planning/planning-optimization/marking.md
                 - name: Intern planlægning
@@ -1715,10 +1719,12 @@
                   href: master-planning/tasks/constrained-plan.md
                 - name: Oprette en materialeplan for samprodukter
                   href: master-planning/tasks/create-material-plan-co-products.md
-                - name: Vedligeholde ordreforslag
+                - name: Vedligehold planlagte ordrer
                   href: master-planning/maintain-planned-orders.md
-                - name: Opfyldning af sikkerhedslager for varer
+                - name: Opfyldelse af sikkerhedslager for varer
                   href: master-planning/safety-stock-replenishment.md
+                - name: Bruge sikkerhedslagerkladde for at opdatere minimumdisponering af varer
+                  href: master-planning/safety-stock-journal.md
                 - name: Forsinkelser
                   href: master-planning/delays.md
                 - name: Annullere et varedisponeringsjob
@@ -2351,6 +2357,8 @@
               href: production-control/unified-job-ids.md
             - name: Aktivere procesautomatiseringsflow for at oprette kvalitetsordrer
               href: production-control/process-automation-quality-orders.md
+            - name: Integrer med produktionsudførelsessystemer fra tredjeparter
+              href: production-control/mes-integration.md
             - name: Separat fremstilling
               items:
                 - name: Vedligeholde masterdata for produktion
@@ -2649,6 +2657,8 @@
                   href: production-control/production-floor-execution-use.md
                 - name: Designe grænsefladen til produktionsudførelse
                   href: production-control/production-floor-execution-styles.md
+                - name: Tilpasse grænsefladen til produktionsudførelse
+                  href: production-control/production-floor-execution-customize.md
         - name: Rabatstyring
           items:
             - name: Oversigt over modulet Rabatstyring

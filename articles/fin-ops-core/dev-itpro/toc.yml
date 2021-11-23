@@ -1172,9 +1172,11 @@
               items:
                 - name: Oversigt over forretningshændelser
                   href: business-events/home-page.md
+                - name: Administrere slutpunkter for forretningshændelser
+                  href: business-events/managing-business-event-endpoints.md
                 - name: Forretningshændelser i applikation
                   href: business-events/app-business-events.md
-                - name: Forretningshændelser i arbejdsproces
+                - name: Forretningshændelser i arbejdsgang
                   href: business-events/business-events-workflow.md
                 - name: Forretningshændelsesbatch
                   href: business-events/system-business-events.md
@@ -1196,14 +1198,18 @@
                       href: business-events/how-to/how-to-flow.md
                     - name: Forretningshændelser og Azure Event Grid
                       href: business-events/how-to/how-to-eventgrid.md
-                    - name: Forretningshændelser og Azure-tjenestebus
+                    - name: Forretningshændelser og Azure Service Bus
                       href: business-events/how-to/how-to-servicebus.md
-                    - name: Forretningshændelser og arbejdsprocesgodkendelser
+                    - name: Forretningshændelser og Azure Service Bus-kø
+                      href: business-events/how-to/how-to-servicebus-queue.md
+                    - name: Forretningshændelser og arbejdsgangsgodkendelser
                       href: business-events/how-to/how-to-workflow.md
                     - name: Forretningshændelser og Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
                     - name: Forretningshændelser og Azure Event Hubs
                       href: business-events/how-to/event-hub.md
+                    - name: Abonner på hændelser i Dataverse
+                      href: business-events/how-to/how-to-dataverse-events.md
                     - name: Forretningshændelser i afslutning på regnskabsperiode
                       href: business-events/how-to/period-close.md
             - name: Tilføjelsesprogrammer
@@ -1444,7 +1450,7 @@
               href: perf-test/rsat/rsat-install-configure.md
             - name: Bruge Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
-            - name: Vedligehold testsager i værktøjet Regression Suite Automation Tool
+            - name: Vedligehold testsager i Regression Suite Automation Tool
               href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Validere forventede værdier
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1654,11 +1660,9 @@
                   items:
                     - name: Gøre afgrænsningstegn for kontoplaner entydigt
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: Opgradere enkeltbilagskladder og værdireguleringer af valuta
-                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: Datamodel for projektressourceplanlægning
                       href: migration-upgrade/data-model-changes-resource-management.md
-                    - name: Ændringer af undersystem for arbejdsproces
+                    - name: Ændringer af undersystem for arbejdsgang
                       href: migration-upgrade/workflow-subsystem.md
                     - name: 'Aggregere modeller, der bruges i stedet for kuber til analyser'
                       href: migration-upgrade/in-memory-real-time-aggregate-models.md
