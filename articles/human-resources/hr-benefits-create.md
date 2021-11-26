@@ -1,8 +1,8 @@
 ---
 title: Opret et nyt frynsegode
 description: Denne opgave viser, hvordan du kan oprette frynsegodeelementer, der skal bruges, når du opretter et nyt frynsegode.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBen
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 6296a7b3bfd802230ccf2fc8166c46be9e5227d93ae8dac77f75b09b15507e26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d180ecd9b2f199e8bd85fb5e1e88ce550458bc0
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764926"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771453"
 ---
 # <a name="create-a-new-benefit"></a>Opret et nyt frynsegode
 
@@ -28,30 +28,30 @@ Denne opgave viser, hvordan du kan oprette frynsegodeelementer, der skal bruges,
 
 
 ## <a name="create-benefit-elements"></a>Oprettet frynsegodeelementer
-1. Gå til Human Resources > Fordele > Konfiguration > Frynsegodeelementer.
-2. Klik på Ny.
-3. Skriv navnet på den type frynsegode, du opretter, i feltet Type.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Vælg en indstilling i feltet Samtidig tilmelding.
-    * Hvis du vil begrænse medarbejdernes mulighed for at tilmelde sig flere medicinske planer, skal du vælge En tilmelding pr. type.  
-6. Vælg en indstilling i feltet Lønart.
-7. Klik på fanen Planer.
-8. Klik på Ny.
-9. Skriv en værdi i feltet Plan.
-10. Skriv en værdi i feltet Beskrivelse.
-11. Indtast eller vælg en værdi i feltet Type.
-12. Vælg en indstilling i feltet Løneffekt.
-13. Klik på Gem.
 
-## <a name="create-a-benefit"></a>Oprette et frynsegode
-1. Luk siden.
-2. Gå til Human Resources > Frynsegoder > Frynsegoder.
-3. Klik på Ny for at åbne dialogboksen Fjern.
-4. Indtast eller vælg en værdi i feltet Plan.
-5. Indtast eller vælg en værdi i feltet Indstilling.
-6. Angiv en dato og et klokkeslæt i feltet Gyldig.
-7. Klik på Opret frynsegode.
+1. Gå til **Human Resources \> Personalegoder \> Konfiguration \> Personalegodeelementer**.
+2. Vælg **Ny**.
+3. Angiv navnet på den type frynsegode, du opretter, i feltet **Type**.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Vælg en indstilling i feltet **Samtidig tilmelding**.
 
+    Hvis du vil begrænse medarbejdernes mulighed for at tilmelde sig flere medicinske planer, skal du vælge **Én tilmelding pr. type**.
 
+6. Vælg en indstilling i feltet **Lønart**.
+7. Vælg **Ny** under fanen **Planer**.
+8. Angiv en værdi i feltet **Plan**.
+9. Indtast en værdi i feltet **Beskrivelse**.
+10. Indtast eller vælg en værdi i feltet **Type**.
+11. Vælg en indstilling i feltet **Løneffekt**.
+12. Vælg **Gem**.
+
+## <a name="create-a-benefit"></a>Oprette et personalegode
+
+1. Gå til **Human resources \> Personalegoder \> Personalegoder**.
+2. Vælg **Ny**.
+3. I feltet **Plan** i rulledialogboksen skal du angive eller vælge en værdi.
+4. Indtast eller vælg en værdi i feltet **Indstilling**.
+5. Angiv en dato og et klokkeslæt i feltet **Gyldig**.
+6. Vælg **Opret frynsegode**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

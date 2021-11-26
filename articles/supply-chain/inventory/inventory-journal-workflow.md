@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d1bd846dae767b47280310fc8d9ca5ee82337ad
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568849"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778299"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Arbejdsprocesser for godkendelse af lagerkladder
 
@@ -31,7 +31,7 @@ I dette emne beskrives det, hvordan du kan konfigurere og bruge arbejdsprocesser
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivere funktionen til arbejdsgange for godkendelse af lagerkladde
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
 
 - **Modul:** *Under Lager- og lokationsstyring*
 - **Funktionsnavn:** *Arbejdsgang til godkendelse af lagerkladder*

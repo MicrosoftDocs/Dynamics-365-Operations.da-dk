@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3a932e4443521d67edb5c08c2d8eb563c6feb555
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568273"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778275"
 ---
 # <a name="work-line-details"></a>Arbejdslinjedetaljer
 
@@ -28,9 +28,9 @@ Siden **Oplysninger om arbejdslinje** viser en omfattende, sorterbar og filtrerb
 
 ## <a name="turn-on-the-work-line-details-feature"></a>Aktivér funktionen Oplysninger om arbejdslinje
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
 
-- **Modul:** *Lokationsstyring*
+- **Modul:** *Warehouse Management*
 - **Funktionsnavn:** *Oplysninger om arbejdslinje*
 
 ## <a name="open-and-use-the-work-line-details-page"></a>Åbne og bruge siden Oplysninger om arbejdslinje

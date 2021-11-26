@@ -1,8 +1,8 @@
 ---
 title: Udarbejde en efterfølgerplan
 description: Efterhånden som organisationen vokser, skal du begynde at planlægge efter hinanden.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca1d9dda75038d937e2a3dad4582feefa617aac9f7f3f1a75ffd274c69c68ae9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed10813c30b9a49b84a7e8e333fbac3d1e26720a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768209"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731510"
 ---
 # <a name="develop-a-succession-plan"></a>Udarbejde en efterfølgerplan
 
@@ -35,8 +35,8 @@ Efterhånden som organisationen vokser, skal du begynde at planlægge efter hina
 7. Vælg **Person**.
 8. Skriv et navn i feltet **Person**, eller vælg på rullelisten.
 9. Vælg **OK**.
-10. Udvid oversigtspanelet til **Certifikater** for at se eller redigere de certifikater, der er inkluderet i kompetencesøgningen.
-11. Udvid oversigtspanel **Færdigheder** for at få vist eller redigere de færdigheder, der skal inkluderes.
+10. Udvid oversigtspanelet **Certifikater** for at se eller redigere de certifikater, der er inkluderet i kompetencesøgningen.
+11. Udvid oversigtspanelet **Færdigheder** for at se eller redigere de færdigheder, der skal inkluderes.
 12. Markér den første række på listen. Eksempel: Regnskab.
 13. Marker afkrydsningsfeltet **Valgfrit**.
 14. Vælg en indstilling i feltet **Vigtighed**. Når du markerer en færdighed som valgfri, skal du vælge niveauet af vigtighed for færdigheden.  
@@ -48,8 +48,8 @@ Efterhånden som organisationen vokser, skal du begynde at planlægge efter hina
 20. Vælg en indstilling i feltet **Vigtighed**.
 21. Markér række 4 på listen.
 22. Marker afkrydsningsfeltet **Valgfrit**.
-23. Vælg en indstilling i feltet Vigtighed.
-24. Udvid oversigtspanelet **Uddannelse** for at få vist eller redigere de uddannelseskompetencer, der skal medtages i kompetencesøgningen.
+23. Vælg en indstilling i feltet **Vigtighed**.
+24. Udvid oversigtspanelet **Uddannelse** for at se eller redigere de uddannelseskompetencer, der skal medtages i kompetencesøgningen.
 25. Vælg **Udfør**.
 26. Vælg **OK**.
 27. Vælg **Resultat**.

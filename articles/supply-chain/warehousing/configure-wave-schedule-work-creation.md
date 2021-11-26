@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 358f5a87cdb42f0ff646948da8d38475cf49e3f2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577906"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778371"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planlægge oprettelse af arbejde under bølge
 
@@ -33,7 +33,7 @@ Når funktionaliteten er aktiveret, oprettes der automatisk planlagt arbejde, so
 
 Hvis du vil bruge de funktioner, der er beskrevet i dette emne, skal de være aktiverede for systemet. I arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere følgende funktioner i følgende rækkefølge:
 
-1. **Arbejdsblokering for hele organisationen** – Kræves til både manuel og automatisk konfiguration af planlagt oprettelse af arbejde.
+1. **Arbejdsblokering for hele organisationen** – Kræves til både manuel og automatisk konfiguration af planlagt oprettelse af arbejde. (Fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen).
 1. **Planlæg oprettelse af arbejde** – Kræves til både manuel og automatisk konfiguration af planlagt oprettelse af arbejde.
 1. **Bølgemetoden "Planlæg oprettelse af arbejde" for hele organisationen** – Kræves til automatisk konfiguration af planlagt oprettelse af arbejde. Du har ikke brug for denne funktion, hvis du kun vil bruge manuel konfiguration.
 

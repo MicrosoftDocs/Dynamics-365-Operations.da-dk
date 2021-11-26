@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0df6aee6a5ec1ecc751713c19c659c5471cc4146
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576034"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777583"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Modtagelse af nummerplade via mobilappen Lokationsstyring
 
@@ -77,7 +77,7 @@ Når denne funktion er slået til, indeholder den mobile enhed menupunkter til m
 - **Få vist en detaljeret oversigt** – når du modtager nummerplader, vil arbejderne få vist en ekstra side, der viser fuldstændige ASN-oplysninger.
 - **Spring oversigt over** – Arbejdere kan ikke få vist de fuldstændige ASN-oplysninger. Lagermedarbejderne kan heller ikke angive en dispositionskode eller tilføje undtagelser under modtagelsesprocessen.
 
-Hvis du vil gøre denne funktionalitet tilgængelig på systemet, skal du slå funktionen *Kontrolelementet til at få vist en side med status for modtagelse på mobilenheder* i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil gøre denne funktionalitet tilgængelig på systemet, skal funktionen *Kontrolelementet til at få vist en side med status for modtagelse på mobilenheder* være slået til i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Undgå, at afsendte, ordreforsendte nummerplader bliver brugt i andre lagersteder end destinationslagerstedet
 

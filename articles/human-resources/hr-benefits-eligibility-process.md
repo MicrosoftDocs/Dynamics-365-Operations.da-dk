@@ -1,8 +1,8 @@
 ---
 title: Proces for frynsegodeberettigelse
 description: Denne procedure viser, hvordan frynsegodeberettigelsesprocessen fungerer.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, H
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: e93c5d57f5bc36e633a5f2147fe5d2f754a5e1cc30a3b8b64582f7229314a338
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db8dd3e9c3401129ea5474d47f5401c552cab72b
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756985"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771376"
 ---
 # <a name="benefit-eligibility-process"></a>Proces for frynsegodeberettigelse
 
@@ -26,33 +26,31 @@ ms.locfileid: "6756985"
 
 Denne procedure viser, hvordan frynsegodeberettigelsesprocessen fungerer. Når processen er fuldført, kan du se resultaterne. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
-1. Gå til Human Resources > Frynsegoder > Frynsegoder.
+1. Gå til **Human resources \> Personalegoder \> Personalegoder**.
 2. Find og vælg den ønskede post på listen.
-3. Klik op linket i den valgte række på listen.
-4. Klik på Rediger.
-5. Vælg Regelbaseret i feltet Berettigelse.
-6. Vælg den politikreglen for frynsegodet, du gerne vil anvende på frynsegodet, i feltet Regeltype.
-7. Klik på fanen Frynsegode i handlingsruden.
-8. Klik på Opret berettigelseshændelse for at åbne dialogboksen.
-9. Skriv en værdi i feltet Hændelse.
-10. Indtast en værdi i feltet Beskrivelse.
-11. Vælg en indstilling i feltet "Åbn tilmelding".
-12. Angiv en dato og et klokkeslæt i feltet Gyldigheds startdato.
-13. Angiv en dato og et klokkeslæt i feltet Startdato for tilmeldingsperiode.
-14. Angiv et tal i feltet Tilmeldingsdage.
-15. Klik på Opret hændelse.
-16. Klik på Tilføj i oversigtspanelet Arbejdere.
-17. Vælg Medarbejdere i feltet Vis efter type.
-18. Vælg "Aktuel juridisk enhed" i feltet Vis efter juridisk enhed.
+3. Vælg linket i den valgte række på listen.
+4. Vælg **Rediger**.
+5. Vælg **Regelbaseret** i feltet **Berettigelse**.
+6. Vælg den politikreglen, du gerne vil anvende på frynsegodet, i feltet **Regeltype**.
+7. Vælg **Frynsegode** i handlingsruden.
+8. Vælg **Opret en berettigelseshændelse**.
+9. Angiv en værdi i feltet **Hændelse** i rulledialogboksen.
+10. Indtast en værdi i feltet **Beskrivelse**.
+11. Vælg **Åbn tilmelding** i feltet **Hændelsestype**.
+12. Angiv en dato og et klokkeslæt i feltet **Gyldigheds startdato**.
+13. Angiv en dato og et klokkeslæt i feltet **Startdato for tilmeldingsperiode**.
+14. Angiv et tal i feltet **Tilmeldingsdage**.
+15. Vælg **Opret hændelse**.
+16. Vælg **Tilføj** i oversigtspanelet **Arbejdere**.
+17. Vælg **Medarbejdere** i feltet **Vis efter type**.
+18. Vælg **Aktuel juridisk enhed** i feltet **Vis efter juridisk enhed**.
 19. Markér eller fjern markeringen af alle rækker på listen.
-20. Klik på OK.
-21. Klik på Proces.
-22. Klik på OK.
+20. Vælg **OK**.
+21. Vælg **Behandling**.
+22. Vælg **OK**.
 23. Opdater siden.
-24. Klik på Vis resultater.
-25. Åbn kolonnefilteret Status.
-26. Sortér A til Z
-
-
+24. Vælg **Vis resultater**.
+25. Åbn kolonnefilteret **Status**.
+26. Sortér kolonnen fra A til Å.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

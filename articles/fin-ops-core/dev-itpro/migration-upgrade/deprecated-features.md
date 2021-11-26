@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745170"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753020"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -84,12 +84,12 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfaset: Fra den 1. oktober 2020 planlægger vi ikke længere at understøtte metoden **setUtcString()**. Udviklere skal bruge metoden **setUtcDateTime()** i stedet. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Sortlistningsrapport (IT) – Funktionsreference IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Blokeringslisterapport (IT) – Funktionsreference IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Ikke juridisk krævet. |
-| **Erstattet af en anden funktion?**   | Nr. |
+| **Erstattet af en anden funktion?**   | Nej |
 | **Produktområder, der er berørt**         | Italiensk lokalisering |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfaset: Fra den 1. oktober 2020 har vi planlagt ikke længere at understøtte denne rapport. |
@@ -99,7 +99,7 @@ Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Ikke juridisk krævet. |
-| **Erstattet af en anden funktion?**   | Nr. |
+| **Erstattet af en anden funktion?**   | Nej |
 | **Produktområder, der er berørt**         | Italiensk lokalisering |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfaset: Fra den 1. oktober 2020 planlægger vi ikke længere at understøtte metoden **Indenlandsk momsrapport – Funktionsreference IT-00003**. |
@@ -360,7 +360,7 @@ Funktion til oprettelse af skabeloner for nye registre over skat af overskud. De
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Funktionen er ikke kompatibel med Finance and Operations-udvidelsesmodellen. |
-| **Erstattet af en anden funktion?**   | Nr. |
+| **Erstattet af en anden funktion?**   | Nej |
 | **Produktområder, der er berørt**         | Skat |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Fjernes fra og med Finance and Operations 8.1 med platformsopdatering 20. |
@@ -371,7 +371,7 @@ Det russiske lande-/områdespecifikke modul for medarbejdernes administration, o
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Løn er ikke medtaget i det globale strategiske fokus i Dynamics 365-porteføljen. Partnere og softwareleverandører har bedst mulighed for at levere lønfunktioner, der overholder angivne standarder i lokale regler og momsopdateringer.|
-| **Erstattet af en anden funktion?**   | Ingen|
+| **Erstattet af en anden funktion?**   | Nej|
 | **Produktområder, der er berørt**         | Administration af russisk Løn og Human Resources |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfaset: Måltidsrammen for funktioner, der skal fjernes, er en fremtidig opdatering af version 10.0. |
@@ -905,7 +905,7 @@ Faktureringsscripts blev anvendt til at beregne faktureringssatser for faktureri
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Understøttelsen af de brugerdefinerede C Sharp- eller Visual Basic-scripts blev ikke tilføjet i Dynamics AX 7.0. |
-| **Erstattet af en anden funktion?**   | Nr.                                                                                      |
+| **Erstattet af en anden funktion?**   | Nej                                                                                      |
 | **Produktområder, der er berørt**         | Den offentlige sektor, debitor                                    |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0                                                          |
 

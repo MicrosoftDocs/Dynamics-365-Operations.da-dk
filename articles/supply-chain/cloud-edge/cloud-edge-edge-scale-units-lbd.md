@@ -1,5 +1,5 @@
 ---
-title: Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD (forhåndsversion)
+title: Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD
 description: Dette emne indeholder en forklaring på, hvordan der klargøres edge-skaleringsenheder i det lokale miljø ved hjælp af tilpasset hardware og installation, der er baseret på lokale forretningsdata (LBD).
 author: cabeln
 ms.date: 04/22/2021
@@ -9,24 +9,21 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ebbdaab9d6f040497d3158db2712e102b6e9aa8
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: f1ab0a2c289f48dd8bfb7529f0dcc694a97f18ea
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678975"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729069"
 ---
-# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD (forhåndsversion)
+# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 Edge-skaleringsenheder spiller en vigtig rolle i den distribuerede hybridtopologi for Supply Chain Management. I hybridtopologien kan du fordele arbejdsbyrder mellem din Supply Chain Management-sky-hub og yderligere skaleringsenheder i skyen eller på Edge.
 
 Edge-skaleringsenheder implementeres ved at oprette lokale forretningsdata (LBD) [det lokale miljø](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) og derefter konfigurere dem, så de fungerer som en skaleringsenhed i den distribuerede hybridtopologi for Supply Chain Management. Dette kan du opnå ved at knytte det lokale LBD-miljø til et Supply Chain Management-miljø i skyen, der er konfigureret til at fungere som hub.  
-
-Edge-skaleringsenheder er i øjeblikket en forhåndsversion. Derfor må du kun bruge et miljø af denne type i overensstemmelse med [vilkår for forhåndsversion](https://aka.ms/scmcnepreviewterms).
 
 I dette emne beskrives, hvordan du kan konfigurere et lokalt LBD-miljø som en edge-skaleringsenhed og derefter knytte det til en hub.
 
@@ -36,11 +33,9 @@ Her er en oversigt over installationstrinnene.
 
 1. **Aktivér en LBD-plads i dit LBD-projekt i Microsoft Dynamics Lifecycle Services (LCS).**
 
-    I forhåndsversionen er LBD-edge-skaleringsenheder rettet mod eksisterende LBD-kunder. Der vil kun være en ekstra 60-dages begrænset LBD-sandkasseplads i specifikke kundesituationer.
-
 1. **Konfigurer og implementer et LBD-miljø med en *tom* database.**
 
-    Brug LCS til at installere LBD-miljøet med den seneste topologi og en tom database. Du kan finde flere oplysninger i afsnittet [Konfigurere og implementere et LBD-miljø med tom database](#set-up-deploy) senere i dette emne. Du skal bruge Supply Chain Management version 10.0.19 med platform update 43 eller højere på tværs af hub- og skaleringsenhedsmiljøer.
+    Brug LCS til at installere LBD-miljøet med den seneste topologi og en tom database. Du kan finde flere oplysninger i afsnittet [Konfigurere og implementere et LBD-miljø med tom database](#set-up-deploy) senere i dette emne. Du skal bruge Supply Chain Management version 10.0.21 eller højere på tværs af hub- og skaleringsenhedsmiljøer.
 
 1. **Upload målpakker til LBD-projektaktiver i LCS.**
 
@@ -60,7 +55,7 @@ De resterende afsnit i dette emne indeholder flere oplysninger om, hvordan du fu
 
 Dette trin opretter et funktionelt LBD-miljø. Men miljøet har ikke nødvendigvis samme program- og platformsversioner som hub-miljøet. Desuden mangler den stadig tilpasninger, og den er endnu ikke aktiveret til at fungere som skaleringsenhed.
 
-1. Følg vejledningen i [Konfigurere og installere miljøer i det lokale miljø (Platform update 41 og senere)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Du skal bruge Supply Chain Management version 10.0.19 med platform update 43 eller højere på tværs af hub- og skaleringsenhedsmiljøer
+1. Følg vejledningen i [Konfigurere og installere miljøer i det lokale miljø (Platform update 41 og senere)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Du skal bruge Supply Chain Management version 10.0.21 eller højere på tværs af hub- og skaleringsenhedsmiljøer. Derudover skal du bruge version 2.12.0 eller en senere version af infrastrukturens scripts. 
 
     > [!IMPORTANT]
     > Læs resten af dette afsnit, **før** du fuldfører trinnene i det pågældende emne.
@@ -75,9 +70,50 @@ Dette trin opretter et funktionelt LBD-miljø. Men miljøet har ikke nødvendigv
     > Dette script fjerner alle konfigurationer, der ikke er nødvendige ved implementering af edge-skaleringsenheder.
 
 1. Konfigurer en database, der indeholder tomme data, som det er beskrevet i [Konfigurere databaser](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Brug den tomme data.bak-fil til dette trin.
-1. Konfigurer scriptet før installation. Du kan finde flere oplysninger under [Scripts til præ-installation og efterinstallation af lokale agenter](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+1. Når du har fuldført trinnet [Konfigurer databaser](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb), skal du køre følgende script for at konfigurere Scale Unit Alm Orchestrator-databasen.
 
-    1. Kopier indholdet fra mappen **ScaleUnit** i **Infrastrukturscripts** til mappen **Scripts** i det share for agentfillagring, der blev konfigureret i miljøet. En typisk sti er \\\\lbdiscsi01\\agent\\Scripts.
+    > [!NOTE]
+    > Konfigurer ikke Financial Reporting-databasen i trinnet [Konfigurer databaser](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb).
+
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EdgeScaleUnit
+    ```
+
+    Scriptet Initialize-Database.ps1 udfører følgende handlinger:
+
+    1. Opret en tom database med navnet **ScaleUnitAlmDb**.
+    2. Knyt brugerne til databaseroller baseret på følgende tabel.
+
+        | Bruger            | Type | Databaserolle |
+        |-----------------|------|---------------|
+        | svc-LocalAgent$ | gMSA | db\_ejer     |
+
+1. Følg vejledningen i [Konfigurere og installere miljøer i det lokale miljø (Platform update 41 og senere)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
+1. Når du har fuldført trinnet [Konfigurer AD FS](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb), skal du følge disse trin:
+
+    1. Opret et nyt AD FS-program (Active Directory Federation Services), som gør det muligt for Alm Orchestration-tjenesten at kommunikere med din AOS (Application Object Server).
+
+        ```powershell
+        # Host URL is your DNS record\host name for accessing the AOS
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        ```
+
+    1. Opret et nyt Azure Active Directory-program (Azure AD), der giver Alm Orchestration-tjenesten mulighed for at kommunikere med tjenesten Administration af skaleringsenhed.
+
+        ```powershell
+        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
+        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                       -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                       -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+        ```
+
+1. Følg vejledningen i [Konfigurere og installere miljøer i det lokale miljø (Platform update 41 og senere)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Når du skal angive konfigurationen for den lokale agent, skal du sørge for at aktivere funktionerne i Edge Scale Unit og angive alle påkrævede parametre.
+
+    ![Aktivering af Edge Scale Unit-funktioner.](media/EnableEdgeScaleUnitFeatures.png "Aktivering af Edge Scale Unit-funktioner.")
+
+1. Før du implementerer miljøet fra LCS, skal du konfigurere scriptet før installation. Du kan finde flere oplysninger under [Scripts til præ-installation og efterinstallation af lokale agenter](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+
+    1. Kopier scriptet Configure-CloudAndEdge.ps1 fra mappen **ScaleUnit** i **Infrastrukturscripts** til mappen **Scripts** i det share for agentfillagring, der blev konfigureret i miljøet. En typisk sti er \\\\lbdiscsi01\\agent\\Scripts.
     2. Opret scriptet **PreDeployment.ps1**, som vil kalde scriptene ved hjælp af de påkrævede parametre. Scriptet til før installation skal være lagt i **Scripts**-mappen i agentfillagerets share. Ellers kan det ikke køres. En typisk sti er \\\\lbdiscsi01\\agent\\Scripts\\PreDeployment.ps1.
 
         Indholdet af scriptet PreDeployment.ps1 vil ligne følgende eksempel.
@@ -86,7 +122,7 @@ Dette trin opretter et funktionelt LBD-miljø. Men miljøet har ikke nødvendigv
         $agentShare = '\\lbdiscsi01\agent'
         
         Write-Output "AgentShare is set to $agentShare" 
-        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        . $PSScriptRoot\Configure-CloudAndEdge.ps1 -AgentShare $agentShare -InstanceId '@A'
         ```
 
         > [!NOTE]
@@ -101,6 +137,75 @@ Dette trin opretter et funktionelt LBD-miljø. Men miljøet har ikke nødvendigv
         >   - @#
 
 1. Implementer miljøet ved hjælp af den seneste basistopologi, der findes.
+1. Følg disse trin, når dit miljø er installeret.
+
+    1. Kør følgende SQL-kommandoer i din virksomhedsdatabase (AXDB).
+
+        ```sql
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        delete from NumberSequenceTable
+        delete from NumberSequenceReference
+        delete from NumberSequenceScope
+        delete from FeatureManagementMetadata
+        delete from FeatureManagementState
+        delete from SysFeatureStateV0
+        ```
+
+    1. Forøg den maksimale batchsession til en værdi, der er mere end 4.
+
+        ```sql
+        Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
+        ```
+
+    1. Kontrollér, at sporing af ændringer er aktiveret i din virksomhedsdatabase (AXDB).
+
+        1. Åbn SQL Server Management Studio (SSMS).
+        1. Vælg og hold (eller højreklik på) din virksomhedsdatabase (AXDB), og vælg derefter **Egenskaber**.
+        1. Vælg **Ændringssporing** i det vindue, der åbnes, og angiv følgende værdier:
+
+            - **Ændringssporing:** *Sand*
+            - **Opbevaringsperiode:** *7*
+            - **Opbevaringsenheder:** *Dage*
+            - **Automatisk oprydning:** *Sand*
+
+    1. Tilføj det AD FS-program-id, du oprettede tidligere (ved hjælp af scriptet Create-ADFSServerApplicationForEdgeScaleUnits.ps1) til Azure AD-programtabellen i din skaleringsenhed. Dette trin kan fuldføres manuelt via brugergrænsefladen. Du kan også fuldføre det via databasen ved hjælp af følgende script.
+
+        ```sql
+        DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
+
+        IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
+        BEGIN
+            INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
+            VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
+        END
+        ```
+
+## <a name="set-up-an-azure-key-vault-and-an-azure-ad-application-to-enable-communication-between-scale-units"></a><a name="set-up-keyvault"></a>Oprette en Azure Key Vault og et Azure AD-program, der skal aktivere kommunikation mellem skalaenheder
+
+1. Når miljøet er implementeret, skal du oprette et andet Azure AD-program for at aktivere betroet kommunikation mellem din hub og skaleringsenhed.
+
+    ```powershell
+    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                          -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                          -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+    ```
+
+1. Når du har oprettet programmet, skal du oprette en klienthemmelighed og gemme oplysningerne i en Azure Key Vault. Du skal desuden give adgang til det Azure AD-program, der er oprettet, så det kan hente de hemmeligheder, der er gemt i Key Vault. Følgende script vil automatisk udføre alle de påkrævede handlinger for dig.
+
+    ```powershell
+    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                         -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                         -SubscriptionName '<Any subscription within your tenant>' `
+                                         -ResourceGroupName '<Any resource group within your subscription>' `
+                                         -KeyVaultName '<Any key vault within your resource group>' `
+                                         -Location '<Any Azure location where Azure Key Vault is available>' `
+                                         -LCSEnvironmentId '<The LCS environment ID of your deployed scale unit>' `
+    ```
+
+    > [!NOTE]
+    > Hvis der ikke findes en Key Vault, der har den angivne værdi for **KeyVaultName**, opretter scriptet automatisk en.
+
+1. Tilføj det Azure AD-program-id, du netop har oprettet (ved hjælp af scriptet Create-SpokeToHubAADApplication.ps1) i Azure AD-programtabellen i din hub. Dette trin kan fuldføres manuelt via brugergrænsefladen.
 
 ## <a name="upload-target-packages-into-lbd-project-assets-in-lcs"></a><a name="upload-packages"></a>Uploade målpakker til LBD-projektaktiver i LCS
 
@@ -116,122 +221,13 @@ Dette trin indretter programversionen, platformsversionen og tilpasninger i dit 
 1. Servicér LBD-miljøet med den kombinerede pakke med program/platform, som du uploadede i det foregående trin.
 1. Servicér LBD-miljøet med den tilpassede installerbare pakke, som du uploadede i det foregående trin.
 
-    ![Vælg Vedligehold > Anvend opdateringer i LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Valg af Vedligehold > Anvend opdateringer i LCS")
+    ![Anvende opdateringer i LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Anvende opdateringer i LCS")
 
     ![Valg af tilpasningspakken.](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "Valg af tilpasningspakken")
 
 ## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a>Tildele din LBD-edge-skaleringsenhed til en hub
 
-Mens edge-skaleringsenheder stadig er en forhåndsversion, skal du bruge de [skalaenhedsimplementerings- og konfigurationsværktøjer](https://github.com/microsoft/SCMScaleUnitDevTools), der er tilgængelige på GitHub, til at tildele din LBD-edge-skaleringsenhed til en hub. Processen giver mulighed for, at en LBD-konfiguration kan fungere som edge-skaleringsenhed og knytte den til hubben. Processen minder om konfiguration af et udviklingsmiljø med én kasse.
-
-1. Download den seneste version af [SCMScaleUnitDevTools](https://github.com/microsoft/SCMScaleUnitDevTools/releases), og udpak indholdet af filen.
-1. Opret en kopi af filen `UserConfig.sample.xml`, og navngiv den `UserConfig.xml`.
-1. Opret et Microsoft Azure Active Directory-program (Azure AD) i din Azure AD-lejer, som det er nævnt i [installationsvejledningen til skaleringsenhed og arbejdsbyrder](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations).
-    1. Når det er oprettet, skal du navigere til Azure AD-programformularen (SysAADClientTable) i din hub.
-    1. Opret en ny post, og angiv **Klient-id** til id'et for det program, du har oprettet. Angiv **Navn** til *ScaleUnits* og **Bruger-id** til *Admin*.
-
-1. Opret et AD FS-program (Active Directory Federation Service), som det er nævnt i [installationsvejledningen til skaleringsenhed og arbejdsbyrder](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations).
-    1. Når det er oprettet, skal du navigere til Azure AD-programformularen (SysAADClientTable) på din edge-skaleringsenhed.
-    1. Opret en ny post, og angiv **Klient-id** til id'et for det program, du har oprettet. Angiv **Bruger-id** til *Admin*.
-
-1. Rediger `UserConfig.xml`-filen.
-    1. Angiv oplysningerne fra det Azure AD-program, du tidligere har oprettet, under afsnittet `InterAOSAADConfiguration`.
-        - Angiv program-id'et for Azure-programmet i elementet `AppId`.
-        - Angiv programhemmeligheden for Azure-programmet i elementet `AppSecret`.
-        - Elementet `Authority` skal indeholde URL-adressen, der angiver sikkerhedsmyndigheden for din lejer.
-
-        ```xml
-        <InterAOSAADConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopty56TGUedDTVhtER-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </InterAOSAADConfiguration>
-        ```
-
-    1. Under afsnittet `ScaleUnitConfiguration` skal du for den første `ScaleUnitInstance` redigere afsnittet `AuthConfiguration`.
-        - Angiv program-id'et for Azure-programmet i elementet `AppId`.
-        - Angiv programhemmeligheden for Azure-programmet i elementet `AppSecret`.
-        - Elementet `Authority` skal indeholde URL-adressen, der angiver sikkerhedsmyndigheden for din lejer.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopdz.6d3DTVOtf9Lo-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Angiv også følgende værdier for den samme `ScaleUnitInstance`:
-        - Angiv URL-adressen for din hub i elementet `Domain`. For eksempel: `https://cloudhub.sandbox.operations.dynamics.com/`
-        - Kontrollér, at værdien `LCSHosted` er angivet i elementet `EnvironmentType`.
-
-    1. Under afsnittet `ScaleUnitConfiguration` skal du for den anden `ScaleUnitInstance` redigere afsnittet `AuthConfiguration`.
-        - Angiv program-id'et for AD FS-programmet i elementet `AppId`.
-        - Angiv programhemmeligheden for ADFS-programmet i elementet `AppSecret`.
-        - Elementet `Authority` skal indeholde URL-adressen til din AD FS-forekomst.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>26b16f25-21d8-4d36-987b-62df292895aa</AppId>
-            <AppSecret>iZFfObgI6lLtY9kEbBjEFV98NqI5_YZ0e5SBcWER</AppSecret>
-            <Authority>https://adfs.contoso.com/adfs</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Angiv også følgende værdier for den samme `ScaleUnitInstance`:
-        - Angiv URL-adressen for din edge-skaleringsenhed i elementet `Domain`. For eksempel: https://ax.contoso.com/
-        - Kontrollér, at værdien LDB er angivet i elementet `EnvironmentType`.
-        - I elementet `ScaleUnitId` skal du angive den samme værdi, som du angav for `InstanceId`, da du konfigurerede `Configure-CloudandEdge.ps1`-scriptet før installationen.
-
-        > [!NOTE]
-        > Hvis du ikke bruger standard-id'et (@A), skal du opdatere ScaleUnitId for hver ConfiguredWorkload under sektionen Arbejdsbyrder.
-
-1. Åbn PowerShell, og naviger til mappen, der indeholder filen `UserConfig.xml`.
-
-1. Kør værktøjet med denne kommando.
-
-    ```powershell
-    .\CLI.exe
-    ```
-
-    > [!NOTE]
-    > Efter hver handling skal du starte værktøjet igen.
-
-1. Vælg **2. Forbered miljøer til installation af arbejdsbyrde** i værktøjet. Kør derefter følgende trin:
-    1. Vælg **1. Forbered hubben**.
-    1. Vælg **2. Forbered skaleringsenheden**.
-
-    > [!NOTE]
-    > Hvis du ikke kører denne kommando fra en ren installation, og den mislykkes, skal du udføre følgende handlinger:
-    >
-    > - Fjern alle mapper fra mappen `aos-storage` (undtagen for `GACAssemblies`).
-    > - Kør følgende SQL-kommando i din virksomhedsdatabasen (AXDB):
-    >
-    > ```sql 
-    > delete from storagefoler
-    > ```
-
-1. Kør følgende SQL-kommandoer i din virksomhedsdatabasen (AXDB):
-
-    ```sql
-    delete from FEATUREMANAGEMENTMETADATA
-    delete from FEATUREMANAGEMENTSTATE
-    delete from NUMBERSEQUENCESCOPE
-    ```
-
-1. Kontrollér, at sporing af ændringer er aktiveret i din virksomhedsdatabase (AXDB)
-    1. Start SQL Server Management Studio (SSMS).
-    1. Højreklik på din virksomhedsdatabase (AXDB), og vælg egenskaber.
-    1. Vælg **Ændringssporing** i det vindue, der åbnes, og foretag følgende indstillinger:
-
-        - **Ændringssporing:** *Sand*
-        - **Opbevaringsperiode:** *7*
-        - **Opbevaringsenheder:** *Dage*
-        - **Automatisk oprydning:** *Sand*
-
-1. Vælg **3. Installer arbejdsbyrder** i værktøjet. Kør derefter følgende trin:
-    1. Vælg **1. Installer på hub**.
-    1. Vælg **2. Installer på skaleringsenhed**.
+Du kan konfigurere og administrere din edge-skaleringsenhed via portalen Administration af skaleringsenhed. Du kan få flere oplysninger i [Administrere skalaenheder og arbejdsbyrder ved hjælp af portalen til styring af skalaenhed](./cloud-edge-landing-page.md#scale-unit-manager-portal).
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

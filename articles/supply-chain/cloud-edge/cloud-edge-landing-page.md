@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471734"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733433"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaler enheder i en distribueret hybridtopologi
 
@@ -32,8 +32,8 @@ Firmaer, der arbejder med produktion og distribution, skal kunne køre vigtige f
 
 En distribueret hybridtopologi introducerer begrebet *skaleringsenheder*, der giver mulighed for distribution af arbejdsbyrder ved kørsel af shop floor og lagersted mellem forskellige miljøer. Denne funktionalitet kan hjælpe med at forbedre ydeevnen, forhindre afbrydelse af tjenester og maksimere oppetid. Der findes skalaenheder via følgende tilføjelsesprogrammer til dit Supply Chain Management-abonnement:
 
-- Tilføjelsesprogrammet Cloud Scale Unit for Dynamics 365 Supply Chain Management (*tilgængeligt i april 2021*)
-- Tilføjelsesprogrammet Edge Scale Unit for Dynamics 365 Supply Chain Management (*tilgængeligt snart*)
+- Tilføjelsesprogrammet Cloud Scale Unit til Dynamics 365 Supply Chain Management
+- Tilføjelsesprogrammet Edge Scale Unit til Dynamics 365 Supply Chain Management
 
 Egenskaber til arbejdsbyrde frigives løbende via trinvise forbedringer.
 
@@ -51,21 +51,12 @@ Du kan konfigurere dit hubmiljø og skyskalaenheder for udvalgte arbejdsbyrder v
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerede arbejdsbyrdefaciliteter for Warehouse Management i en skalaenhed
 
-Arbejdsbyrden for Warehouse Management er den første distribuerede arbejdsbyrde for skalaenheder, der er frigivet til generel tilgængelighed.
-
-Skalaenheder giver følgende egenskaber til warehouse management:
-
-- Systemet kan behandle udvalgte bølgemetoder for salgsordrer og behovsgenopfyldning.
-- Lagermedarbejdere kan køre salgs-og behovsgenopfyldning som lagerarbejde ved hjælp af mobilappen Warehouse Management.
-- Lagermedarbejdere kan forespørge på disponibel lagerbeholdning ved hjælp af mobilappen Warehouse Management.
-- Lagermedarbejdere kan oprette og køre lagerbevægelser ved hjælp af mobilappen Warehouse Management.
-- Lagermedarbejdere kan registrere indkøbsordrer og udføre læg på lager med mobilappen Warehouse Management.
-
+Arbejdsbyrden ved lokationsstyring giver dig mulighed for at køre processer i lokationsstyring på en isoleret installation.
 Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedikerede arbejdsbyrdefaciliteter for produktionskørsel i en skalaenhed
 
-Den første version af produktionsbelastningen er i øjeblikket i forhåndsversion og leverer følgende egenskaber:
+Arbejdsbyrden ved produktion giver følgende egenskaber:
 
 - Maskinoperatører og tilsynsførende kan få adgang til den operationelle produktionsplan.
 - Maskinoperatører kan holde planen opdateret ved at køre diskrete og procesproduktionsjob.
@@ -191,17 +182,33 @@ Microsoft vil gennemgå din anmodning og give dig besked om de næste trin ved a
 
 Når onboarding er fuldført, kan du bruge porten til at konfigurere skalaenheder og arbejdsbyrder.
 
-### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Administrere skyskalaenheder og arbejdsbyrder ved hjælp af portalen til styring af skalaenhed
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Administrere skalaenheder og arbejdsbyrder ved hjælp af portalen til styring af skalaenhed
 
 Gå til [portalen til styring af skalaenhed](https://aka.ms/SCMSUM), og log på ved hjælp af din lejerkonto. På siden **Konfigurer skalaenheder** kan du tilføje et hubmiljø, hvis det ikke allerede står på listen. Derefter kan du vælge den hub, du vil konfigurere med skalaenheder og arbejdsbelastninger.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skalaenhed og arbejdsbyrdestyring.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Portalen til styring af skalaenhed, siden Konfigurer skalaenheder.":::
 
 Hvis du vil tilføje en eller flere skalaenheder, der er tilgængelige i dine abonnementer, skal du vælge **Tilføj skalaenheder**.
 
 Under fanen **Definerede arbejdsbyrder** skal du bruge knappen **Opret arbejdsbyrde** til at føje en arbejdsbyrde for Warehouse Management i en af skalaenhederne. For hver arbejdsbyrde skal du angive konteksten for de processer, der skal ejes af arbejdsbyrden. For arbejdsbyrder til Warehouse Management er konteksten et specifikt lagersted på en bestemt lokation og juridisk enhed.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Oprettelse af arbejdsbyrde.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Dialogboksen Definer arbejdsbyrder.":::
+
+#### <a name="manage-workloads"></a>Administrere arbejdsbyrder
+
+Når en eller flere arbejdsbyrder er aktiveret, kan du bruge indstillingen **Administrer arbejdsbyrder** til at starte og administrere processer som dem, der er angivet i følgende tabel.
+
+| Behandling | Beskrivelse |
+|---|---|
+| Afbryd kommunikation med skalaenhed midlertidigt | Afbryd pipeline-meddelelser midlertidigt mellem hub og en skalaenhed. Denne proces stopper kommunikationen og dræner datapipelinen mellem hub og skalaenheder. Du skal køre denne proces, før du kører en Supply Chain Management-servicehandling på enten hub eller skalaenheden, men du kan også bruge denne i andre situationer. |
+| Fortsæt kommunikation med skalaenhed | Fortsæt pipeline-meddelelser mellem hub og en skalaenhed. Du skal f.eks. bruge denne proces, når du har kørt en serviceringshandling i Supply Chain Management på enten hub eller skalaenhed. |
+| Opgrader arbejdsbyrder | Synkroniser nye funktioner mellem arbejdsbyrder i hub og skalaenhed. Du skal f.eks. bruge denne proces, når servicering har bevirket, at forespørgslerne til dataudveksling er ændret, og/eller har føjet nye tabeller eller felter til arbejdsbyrden. |
+| Overfør arbejdsbyrder til en skalaenhed | Planlæg en arbejdsbyrde, der aktuelt kører i hub, og som skal flyttes til en skalaenhed. Når denne proces køres, flyder synkroniseringen af data, og både hub og skalaenhed indstilles til at skifte ejer af arbejdsbyrden. |
+| Overfør skalaenhed til hub | Planlæg en arbejdsbyrde, der aktuelt kører på en skalaenhed, så den flyttes til hub. Når denne proces køres, flyder synkroniseringen af data, og både hub og skalaenhed indstilles til at skifte ejer af arbejdsbyrden.
+| Nødoverførsel til hub | <p>Overfør straks en eksisterende arbejdsbyrde til hub. *Denne proces vil kun ændre ejerskabet af de data, der i øjeblikket er tilgængelige i hubben.*</p><p><strong>Advarsel:</strong> Denne proces kan medføre tab af data for ikke-synkroniserede data og fejl i forretningsprocessen. Den skal derfor kun bruges i nødstilfælde, hvor forretningsprocesser skal behandles i hubben, da skalaenheden har en afbrydelse, der ikke kan afhjælpes inden for en rimelig tid.</p> |
+| Nedluk distribueret topologi | Fjern en skaleringsenhedsinstallation, og kør kun i hubben uden behandling af arbejdsbyrder. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Skalaenhed og arbejdsbyrdestyring.":::
 
 > [!TIP]
 > Med tiden føjes der trinvise forbedringer til erfaringen med styring af skalaenhed, så det bliver nemmere at udføre styring af livscyklussen. De specifikke egenskaber for den aktuelle version er dokumenteret i en vejledning til onboarding, som er tilgængelig for kunder, der er i gang med onboarding til den distribuerede hybridtopologi for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

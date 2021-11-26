@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-oldolg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 28f902c589cd80f1c34dc2758232548309db9aca
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 937341e17688959e5721153c61af904a88608b17
+ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474622"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790932"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Opfyldning af sikkerhedslager for varer
 
@@ -189,5 +189,9 @@ Transaktionen til opfyldning af sikkerhedslagerbehovet nedprioriteres, hvis syst
 Sikkerhedslageropfyldning er ikke længere nedprioriteret i disponeringsfasen af varedisponeringen. Den disponible lagerbeholdning kan bruges før eventuelle andre efterspørgselsestyper. Under beregningen af forsinkelsen, vil blive føjet nye logik til at gennemgå de forsinkede salgslinjer, behov i styklistelinjer og alle andre behovstyper, for at bestemme, om de kan blive leveret til tiden, forudsat at sikkerhedslageret bruges. Hvis systemet identificerer, at det kan minimere forsinkelser ved hjælp af sikkerhedslageret, erstatter salgslinjerne eller styklistelinjerne deres første disponering med sikkerhedslageret, og systemet udløser genopfyldningen for sikkerhedslageret i stedet.
 
 Hvis planen eller varen ikke er konfigureret til forsinket beregning, har sikkerhedslagerets begrænsning samme prioritet som alle andre efterspørgselstyper. Det betyder, at der er en reserve af disponibel lagerbeholdning og andre disponible beholdninger før andre efterspørgselstyper.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+- [Bruge sikkerhedslagerkladde for at opdatere minimumdisponering af varer](safety-stock-journal.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

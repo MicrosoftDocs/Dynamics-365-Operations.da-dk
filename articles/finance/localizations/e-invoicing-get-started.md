@@ -2,7 +2,7 @@
 title: Start her med elektronisk fakturering
 description: Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700373"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779688"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Start her med elektronisk fakturering
 
@@ -57,7 +57,12 @@ Før du kan fuldføre trinene i dette emne, skal du kontrollere, at følgende fo
 
 Afhængigt af landet eller området kan funktionen til elektronisk fakturering kræve specifik konfiguration. 
 
-De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit land eller område.
+> [!NOTE]
+> Når du aktiverer funktionen Elektronisk fakturering for Finland, understøttes programspecifikke parametre ikke i opslag. Du kan løse dette problem ved at gennemse konfigurationerne for salgsfaktura- og projektfakturaformaterne i modulet **Elektronisk rapportering**. Konfigurer manuelt det beregnede felt for tilknytningen **$PaymentMethodSubstitution**, og bind derefter dette felt til feltet **EpiPaymentMeansCode** fra salgsfaktura- og projektfakturaformaterne.
+>
+> Når du aktiverer funktionen Elektronisk fakturering for Italien, understøttes programspecifikke parametre ikke i opslag. Du kan løse dette problem ved at konfigurere det beregnede felt manuelt i modulet **Elektronisk rapportering** for tilknytningen **$NaturaReverseCharge**.
+>
+> De specifikke trin for andre lokationer steder du i dokumentationen "Kom i gang", som findes til dit land eller område.
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importere modeltilknytningskonfigurationer fra elektronisk rapportering
 
@@ -241,6 +246,14 @@ De specifikke trin finder du i dokumentationen "Kom i gang", som findes i dit la
 
 3. Marker en faktura i gitteret, og vælg derefter **Forespørg** \> **Indsendelsesdetaljer**.
 
+## <a name="download-an-electronic-document-file"></a>Downloade en elektronisk dokumentfil
+
+1. Gå til **Organisationsadministration** \> **Periodisk** \> **Elektroniske dokumenter** \> **Indsendelseslog for elektroniske dokumenter**.
+2. Vælg den tabel, der indeholder fakturaerne, i feltet **Dokumenttype**.
+3. Vælg et dokument i gitteret, og vælg derefter **Elektronisk dokument** \> **Download fil**. Et arkiv, der indeholder den elektroniske dokumentfil, bliver foreslået til download.
+
+> [!NOTE]
+> Før du kan downloade filer, skal indstillingen **Eksportér resultat** være aktiveret for den relaterede handling i opsætningen af funktionen Elektronisk fakturering i RCS.
 
 ## <a name="related-topics"></a>Relaterede emner
 

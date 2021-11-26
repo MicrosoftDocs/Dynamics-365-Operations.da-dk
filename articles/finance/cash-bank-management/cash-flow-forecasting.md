@@ -2,7 +2,7 @@
 title: Likviditetsbudget
 description: Dette emne indeholder en oversigt over likviditetsbudgetteringsprocessen. I emnet beskrives også, hvordan likviditetsbudgettering er integreret med andre moduler i systemet.
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547949"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752898"
 ---
 # <a name="cash-flow-forecasting"></a>Likviditetsbudget
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruge funktionerne til budgettering af likviditet til at analysere kommende likviditets- og valutabehov, så du kan anslå virksomhedens fremtidige likviditetsbehov. Udfør følgende opgaver for at få en budgettering af likviditeten:
 
@@ -93,9 +94,12 @@ Budgetregisterposter kan medtages i likviditetsbudgettet individuelt via tilpasn
 Lagerforsynings- og behovsbudgetter kan medtages i likviditetsbudgetter. Under fanen **Lagerstyring** på siden **Opsætning af likviditetsbudget** skal du vælge den budgetmodel, der skal medtages i likviditetsbudgettet. Inkludering i likviditetsbudgettering kan overskrives på individuelle forsynings- og behovsbudgetlinjer.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Konfigurere dimensioner for likviditetsbudgettering
-En ny fane på siden **Konfiguration af likviditetsbudgettering** giver dig mulighed for at styre, hvilke økonomiske dimensioner der skal bruges til filtrering i arbejdsområdet **Likviditetsbudgettering**. Denne fane vises kun, når funktionen Likviditetsbudgetter er aktiveret. 
+En ny fane på siden **Konfiguration af likviditetsbudgettering** giver dig mulighed for at styre, hvilke økonomiske dimensioner der skal bruges til filtrering i arbejdsområdet **Likviditetsbudgettering**. Denne fane vises kun, når funktionen Likviditetsbudgetter er aktiveret i Finance Insights. 
 
 Under fanen **Dimensioner** skal du vælge på den liste over dimensioner, der skal bruges til filtrering, og bruge piletasterne til at flytte dem til højre kolonne. Der kan kun vælges to dimensioner til filtrering af data i likviditetsbudgettet. 
+
+### <a name="setting-up-external-source"></a>Konfigurere ekstern kilde
+Eksterne data kan indtastes eller importeres i likviditetsbudgetter. Før eksterne data angives eller importeres, skal der konfigureres eksterne kilder. Under fanen **Ekstern kilde** skal du konfigurere eksterne likviditetskategorier. En kategori kan enten være **Udgående** eller **Indgående**. **Likviditet** skal vælges som bogføringstype. I gitteret **Indstillinger for juridisk enhed** skal du vælge de juridiske enheder og de tilsvarende hovedkonti, som de eksterne likviditetskategorier gælder for.
 
 ### <a name="project-management-and-accounting"></a>Projektstyring og regnskab
 

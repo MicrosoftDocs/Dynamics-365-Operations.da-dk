@@ -1,20 +1,20 @@
 ---
 title: Integreret finans
 description: I dette emne beskrives integrationen af finansdata mellem Finance and Operations og andre Dynamics 365-programmer ved hjælp af Dataverse.
-author: robinarh
+author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e5bdef8ef440bd5ef84060b61b4cf1d0088f204c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: e41d600464d707d01a0e319dd3cd343b04aa26b7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416827"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782374"
 ---
 # <a name="integrated-ledger"></a>Integreret finans
 

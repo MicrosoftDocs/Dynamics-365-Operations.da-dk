@@ -2,7 +2,7 @@
 title: Likviditet
 description: Dette emne beskriver, hvordan funktionen likviditetsbudgettering forudsiger en organisations kontante stilling for bestemte tidspunkter. Den beskriver også de indstillinger, der er tilgængelige for visning af budgetter i forskellige perioder.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386308"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752874"
 ---
 # <a name="cash-position"></a>Likviditet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Likviditeten er den projektion af likviditeten, der er prognose for den nærmeste periode. Den er baseret på indregningen af indbetalinger fra debitorer, der skal betale udestående fakturaer og ordrer og også til de kontantbetalinger, der betales til kreditorer for indkøbsfakturaer og -ordrer.
 
@@ -44,8 +45,5 @@ Den nederste del af fanen **Likviditet** indeholder oplysninger om stilling, pen
 - **Bankkonto**-gitteret viser effekten af forventede kontantindstrømning og -udstrømering på banksaldoen.
 
 Hvis du vil gemme og redigere likviditeten, skal du oprette et snapshot. Du kan finde flere oplysninger om, hvordan du arbejder med snapshots, under [Snapshots, oversigt](payment-snapshots.md).
-
-#### <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678829"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778151"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management (10.0.22. november 2021)
 
@@ -41,7 +41,6 @@ Følgende tabel indeholder de funktionsforbedringer, der er inkluderet i denne v
 
 | Modul | Funktionsnavn i funktionsstyring | Flere oplysninger |
 |---|---|---|
-| Omkostningsstyring | Oprette relaterede bilag til værdireguleringer af standardomkostningsafrunding | <p>Når der foretages en økonomisk lagerbogføring (f.eks. en salgsordrefaktura eller lagertransaktion), bevirker denne funktion, at systemet opretter et separat bilag til eventuelle relaterede værdireguleringer af standardomkostninger og knytter det til bilaget for økonomisk bogføring som et relateret bilag.</p><p>Uden denne funktion registrerer systemet standardomkostningsafrundingsreguleringer på samme bilagsbogføring. Denne funktionsmåde kan nogle gange medføre oplysninger om modstridende dato, fordi værdireguleringerne bruger sessionen eller systemdatoen, mens økonomiske posteringer bruger bogføringsdatoen.</p> |
 | Distribueret hybridtopologi | *(Der kræves ingen funktionsstyring.)* | <p>I denne version udvides udgående planlægningsegenskaber for lokationsstyring for sky- og kantskalaenheder.</p><p>Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Styring af tekniske ændringer | Variantgenerering af tekniske produkter | <p>Med denne funktion kan du generere flere varianter for et teknikerprodukt ud fra dets farve-, størrelses-, typografi- eller konfigurationsdimensioner.</p><p>Du kan finde flere oplysninger i [Generere varianter for teknikprodukter](../engineering-change-management/engineering-variants.md).</p> |
 | Lager- og lokationsstyring | Integration af lagersynlighed med reservationsmodkonto | <p>Denne funktion kan kun aktiveres, når funktionen til integration med *lagersynlighed* er aktiveret. Det giver funktionalitet til at modpostere reservationer, der er foretaget med lagersynlighed.</p><p>Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](../inventory/inventory-visibility-reservations.md).</p> |

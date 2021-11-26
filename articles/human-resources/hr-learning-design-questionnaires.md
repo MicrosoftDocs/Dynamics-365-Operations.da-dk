@@ -1,8 +1,8 @@
 ---
 title: Oprette spørgeskemaer
-description: I denne artikel beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform.
-author: andreabichsel
-ms.date: 06/20/2017
+description: I dette emne beskrives fremgangsmåden til oprettelse af et spørgeskema.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c2a8c156aa75b02b69da3ee70a1ee60ea9d73a8aa67c70babdaaad88d6eb81f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08c8015e8729a4ca33f3fb3c48f654e489f32f3f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755556"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729045"
 ---
 # <a name="create-questionnaires"></a>Oprette spørgeskemaer
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I denne artikel beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform. 
+I dette emne beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform. 
 
 Et omhyggelig udformet spørgeskemaet kan være med til at øge kvaliteten af de oplysninger, du indsamler. Via et omhyggeligt design kan du vælge de relevante indstillinger på det relevante tidspunkt for et spørgeskema. Følgende punkter kan hjælpe dig med at planlægge et effektivt spørgeskema:
 
@@ -63,7 +63,7 @@ Visse forudsætninger skal være på plads, før du kan oprette spørgeskemaer, 
 
 ### <a name="questionnaire-types"></a>Spørgeskematyper
 
-Spørgeskematyper er obligatoriske og skal tildeles, når du opretter et spørgeskema. Spørgeskematyper gør det lettere at administrere og klassificere spørgeskemaer. Brug spørgeskematyper til at klassificere spørgeskemaer og skelne dem fra hinanden. Hvis du f.eks. har flere spørgeskemaer at vælge mellem, kan du filtrere dem for at gøre det nemmere at finde et bestemt spørgeskema. Følgende er eksempler på spørgeskematyper:
+**Spørgeskematyper** er obligatoriske og skal tildeles, når du opretter et spørgeskema. **Spørgeskematyper** gør det lettere at administrere og klassificere spørgeskemaer. Brug spørgeskematyper til at klassificere spørgeskemaer og skelne dem fra hinanden. Hvis du f.eks. har flere spørgeskemaer at vælge mellem, kan du filtrere dem for at gøre det nemmere at finde et bestemt spørgeskema. Følgende er eksempler på spørgeskematyper:
 
 -   Human Resourcesudvikling
 -   Kundemeningsmålinger
@@ -71,9 +71,9 @@ Spørgeskematyper er obligatoriske og skal tildeles, når du opretter et spørge
 
 ### <a name="question-types"></a>Spørgsmålstyper
 
-Spørgsmålstyper er obligatoriske og skal tildeles, når du opretter et spørgsmål. 
+**Spørgsmålstyper** er obligatoriske og skal tildeles, når du opretter et spørgsmål. 
 
-Brug spørgsmålstyper til at kategorisere spørgsmål i forbindelse med rapporter. Spørgsmålstyper gør det også nemmere at finde spørgsmål, fordi du kan bruge typer som filtre på siden **Spørgsmål**. Følgende er eksempler på spørgsmålstyper:
+Brug **Spørgsmålstyper** til at kategorisere spørgsmål i forbindelse med rapporter. **Spørgsmålstyper** gør det også nemmere at finde spørgsmål, fordi du kan bruge typer som filtre på siden **Spørgsmål**. Følgende er eksempler på spørgsmålstyper:
 
 -   Human Resources
 -   Forretningsadministration
@@ -105,7 +105,7 @@ For at angive en liste over mulige svar til lukkede spørgsmål kan du oprette s
 
 Svarsamlinger og svar er komponenter, der udgør hovedafsnittet med oplysninger, som spørgsmålene oprettes ud fra. Når du har oprettet en svarsamling, kan du knytte svarsamlingen til et spørgsmål i feltet **Svarsamling** på siden **Spørgsmål**. 
 
-En svarsamling kan bruges til mere end ét spørgsmål i det samme spørgeskema og kan også bruges i mere end ét spørgeskema. 
+En **Svarsamling** kan bruges til mere end ét spørgsmål i det samme spørgeskema og kan også bruges i mere end ét spørgeskema. 
 
 > [!NOTE]
 > Hvis du redigerer svartekst i svargrupper, der allerede er brugt i udfyldte spørgeskemaer, kan det blive vanskeligt at evaluere data, og resultaterne af spørgeskemaet er muligvis ikke længere gyldige. Hvis du skal ændre en svarsamling, kan du overveje at oprette en ny svargruppe i stedet for at ændre en eksisterende. Du kan ikke slette svargrupper, der er knyttet til et spørgsmål eller svar, eller som er besvaret.
@@ -171,7 +171,7 @@ Du kan ikke slette følgende typer spørgsmål i et spørgeskema:
 
 ### <a name="result-groups"></a>Resultatgrupper
 
-Resultatgrupper er valgfrie, når du føjer spørgsmål til et spørgeskema. 
+**Resultatgrupper** er valgfrie, når du føjer spørgsmål til et spørgeskema. 
 
 En resultatgruppe bruges til at beregne point og kategorisere resultaterne af et spørgeskema. Hvis du bruger resultatgrupper, kan du udføre følgende opgaver:
 

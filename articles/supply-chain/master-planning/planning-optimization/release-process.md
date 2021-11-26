@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec1683554e389948a64aee68e4d069be1e93cc1a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2e0145c28b40f4fbfb54ad7e7ed32fbc130c569
+ms.sourcegitcommit: 8afd0cdb39ec443fb7631c39401967cce0fac34e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567337"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7727426"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 
@@ -33,6 +33,9 @@ Da der ikke vises beskeder, når Planlægningsoptimering opdateres i dit miljø,
 
 | Ændringer | Detaljer om funktionsstyring | Udstedelsesdatoer |
 |---|---|---|
+| <p>Ekstra understøttelse af beregningsformler til procestid, produktionsrute med overlap og produktionsoperationsnummer på behovsposteringer.</p><p>Bedre fejlmeddelelser for produktionsplanlægning, der er knyttet til timeout, kapacitet blev ikke fundet og cyklisk rute.</p><p>Forbedret konsistens ved beregning af tilgangsdatoer og afgangsdatoer på både ordreforslag og autoriserede ordrer.</p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering* | 22.- 27. oktober 2021 |
+| <p>Ekstra understøttelse af overvejelser om spildprocent ved beregning af procestid.</p><p>Ekstra understøttelse af operationsnummer og materialeforbrug under planlægning. | Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering* | 5.- 7. oktober 2021 |
+| <p>Ekstra understøttelse af jobtyper til produktionsrute: **Kø før**, **Kø efter** og **Transporttid**.</p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering* | 25. - 30. september 2021 |
 | <p>Tilføjet understøttelse af behovsplaner, hvor **Planlægningsmetode** er indstillet til *Grovplanlægning*.</p><p>På siden **Rutegrupper** skal du markere indstillingerne af afkrydsningsfelterne **Aktivering**, **Arbejdstid** og **Kapacitet** for rækker med **Rute-/jobtype** som *Opsætning* eller *Proces*. </p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | <p>Grovplanlægning er tilgængelig i funktionsstyring fra og med version 10.0.20.</p><p>Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering*</p>  | 9. - 17. september 2021 |
 | Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Der kræves ingen funktionsstyring. | 25 - 30 august 2021 |
 | <p>Har tilføjet feltet **Leveringstid** til ordreforslag.</p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet.</p> | Der kræves ingen funktionsstyring. | 12 - 17 august 2021 |

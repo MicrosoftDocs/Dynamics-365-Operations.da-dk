@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c2fbaa6945cf46b7ef09232e6004f09b487ea7c822e72225dc00d3d28ecb008e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780192"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729021"
 ---
 # <a name="apply-filters-to-a-plan"></a>Anvend filtre på en plan
 
@@ -43,7 +43,7 @@ Der oprettes et planfilter, der omfatter varer A, B og C. Varedisponering kører
 - **Kørselsfilter, der omfatter alle varer (tomt filter):** Varerne A, B og C medtages i planlægningskørslen, og den forrige output for planlægning for vare A og B overskrives.
 
 > [!NOTE]
-> Du bør undgå at angive et planfilter på den plan, der er valgt som **Aktuel dynamisk behovsplan** på siden **Varedisponeringsparametre**. Ellers vil funktionaliteten for den dynamiske behovsplan begrænses til de filtrerede elementer. Hvis nettobehovet f.eks. opdateres for en vare, der ikke er en del af planfilteret, vil der ikke blive genereret et resultat.
+> Hvis du angiver et planfilter i den plan, der er valgt som **Aktuel dynamisk behovsplan** på siden **Varedisponeringsparametre**, vil den dynamiske behovsplanfunktionalitet være begrænset til de filtrerede varer. Hvis nettobehovet f.eks. opdateres for en vare, der ikke er en del af planfilteret, vil der ikke blive genereret et resultat.
 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 

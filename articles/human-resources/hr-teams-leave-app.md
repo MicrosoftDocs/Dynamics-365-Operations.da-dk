@@ -1,8 +1,8 @@
 ---
 title: Administrere anmodninger i Teams
 description: I dette emne kan du se, hvordan du anmoder om fri i Dynamics 365 Human Resources-appen i Microsoft Teams.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94fa4dca7ff8372d4cf1aeee225e821574f4104048db5ad8a816be2bce496de8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725860"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771525"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Administrere fraværsanmodninger i Teams
 
@@ -41,7 +41,7 @@ Du kan finde appen Dynamics 365 Human Resources i lageret til Teams.
 Hvis appen ikke automatisk logger dig på, skal du vælge fanen **Indstillinger** for at logge på.
 
 > [!NOTE]
-> Hvis du ikke kan se logondialogboksen, skal du kontrollere browserindstillingerne for at tillade pop op-vinduer. 
+> Hvis du ikke kan se logondialogboksen, skal du opdatere browserindstillingerne for at tillade pop op-vinduer. 
 
 Hvis du har adgang til mere end én forekomst af Human Resources, kan du vælge, hvilket miljø du vil oprette forbindelse til, under fanen **Indstillinger**.
 
@@ -53,7 +53,7 @@ Hvis du har adgang til mere end én forekomst af Human Resources, kan du vælge,
 Når appen er installeret, vises en velkomstmeddelelse, der giver dig besked om, hvilke typer handlinger botten kan udføre på dine vegne.
 
 > [!NOTE]
-> Når du interagerer med bot for første gang, skal du muligvis logge på. Hvis du ikke kan se logondialogboksen, skal du kontrollere browserindstillingerne for at tillade pop op-vinduer.
+> Når du interagerer med robotten for første gang, skal du muligvis logge på. Hvis du ikke kan se logondialogboksen, skal du opdatere browserindstillingerne for at tillade pop op-vinduer.
 
 Du kan bede bot om at:
 
@@ -83,7 +83,7 @@ Fanen **Fri** gør det muligt at vise:
 
 - Kommende orlovsanmodninger
 
-- Anmodninger om fri
+- Anmodninger om fravær
 
 - kladdeorlovsanmodninger
  
@@ -113,11 +113,11 @@ Fanen **Fri** gør det muligt at vise:
    
 ### <a name="respond-to-teams-notifications"></a>Besvare Teams-beskeder
 
-Når du eller en arbejder, du er godkender for, sender en anmodning om orlov, modtager du en besked i appen Human Resources i Teams. Du kan vælge beskeden for at få den vist. Beskeder vises også i **Chat**-området.
+Når du eller en arbejder, du er godkender for, sender en anmodning om orlov, modtager du en besked i appen Human Resources i Teams. Du kan vælge beskeden for at få vist orlovsanmodningen. Beskeder vises også i **Chat**-området.
 
 Hvis du er godkender, kan du vælge **Godkend** eller **Afvis** i beskeden. Du kan også angive en valgfri meddelelse.
 
-## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Sende kommende oplysninger om fridage til dine kolleger
+## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Sende oplysninger om kommende fridage til dine kolleger
 
 Når du har installeret Human Resources-appen for Teams, kan du nemt sende oplysninger om dine kommende fridage til dine kolleger i teams eller chatsamtaler.
 
@@ -167,7 +167,7 @@ Hvis du har problemer med at logge på eller bruge Dynamics 365 Human Resources-
 
 Hvis du ikke kan logge på appen, er det muligt, at den konto, du bruger til at logge på Microsoft Teams, ikke er knyttet til en medarbejderpost i Dynamics 365 Human Resources. Kontakt systemadministratoren for at sikre, at din medarbejderpost er tilknyttet korrekt.
 
-### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Miljøet for Dynamics 365 Human Resources blev ikke fundet i Indstillinger
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Miljøet for Dynamics 365 Human Resources blev ikke fundet i indstillinger
 
 Hvis du ikke kan vælge det korrekte Dynamics 365-miljø, er brugerposten muligvis ikke synkroniseret korrekt. Kontakt systemadministratoren for at oprette brugerposten igen og knytte den til brugerlegitimationsoplysningerne. Prøv derefter at logge på Human Resources-appen for Microsoft Teams efter nogle få minutter.
 
@@ -199,7 +199,7 @@ Hvis du modtager en fejl under forsøg på at godkende orlovsanmodninger i appen
 
 2. Sørg for, at brugere er logget under fanen **Chatbeskeder** med de samme legitimationsoplysninger, som de bruger til at godkende orlovsanmodninger. Brug meddelelserne for "Log af" og derefter "Log på" for at logge på med de rette legitimationsoplysninger.
 
-3. Hvis problemet fortsætter, skal du kontrollere statussen for systembatchjobbet Forretningshændelser som systemadministrator. Hvis det er i vente- eller udførelsesfasen, skal du tjekke ind igen om et par minutter. Hvis statussen forbliver uændret, skal du logge en supportbillet, så vores team kan hjælpe med at løse problemet.
+3. Hvis problemet fortsætter, skal du kontrollere statussen for systembatchjobbet **Forretningshændelser** som systemadministrator. Hvis det er i **Venter**- eller **Udfører**-fasen, skal du tjekke igen om et par minutter. Hvis statussen forbliver uændret, skal du logge en supportanmodning, så vores team kan hjælpe med at løse problemet.
 
 ## <a name="known-accessibility-issues"></a>Kendte problemer med tilgængelighed
 
@@ -208,7 +208,7 @@ Human Resources-appen i Teams har følgende tilgængelighedsproblemer, som vi ar
 | Udsted | Løsning eller forklaring |
 | --- | --- |
 | Hvis du zoomer til 400 % på skrivebordet, skjules nogle af handlingsknapperne i visningen. | Vi anbefaler, at du bruger et forstørrelsesglas i stedet, indtil vi kan understøtte dette zoomniveau. |
-| Under fanen **Fridage** annoncerer VoiceOver en knaphandling under læsning af overskriften til gitteret for fridage. | Overskriften og elementerne i gitteret grupperes efter år, og de kan skjules. VoiceOver fortolker dette som et element, der kræver en handling, men det er ikke. |
+| Under fanen **Fridage** annoncerer VoiceOver en knaphandling under læsning af overskriften til gitteret for fridage. | Overskriften og elementerne i gitteret grupperes efter år, og de kan skjules. VoiceOver fortolker denne præsentation som et element, der kan handles på, men det er ikke tilfældet. |
 | Under fanen **Fridage** er der en ekstra strygebevægelse, når du navigerer til **Årsagskode** i en ny anmodning. | Der er ikke noget skjult kontrolelement, som strygenavigationen forsøger at få adgang til. |
 | Hvis du lave en strygebevægelser under fanen **Fridage**, mens kalenderen er åben, havner du uden for kontrolelementet i stedet for øverst i en ny anmodning, eller når du redigerer en anmodning. | Når du når **Gå til i dag**, skal du betragte det som slutningen af kontrolelementet og stryge i modsatte retning for at gå tilbage til toppen. |
 | Under fanen **Chat** springer fokus tilbage til toppen, når du angiver en dato, mens du bruger hjælpeværktøjet eller tastaturnavigation. | Tabulér, indtil du når til inputområdet igen. |
@@ -217,19 +217,19 @@ Human Resources-appen i Teams har følgende tilgængelighedsproblemer, som vi ar
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
 
-Med Dynamics 365 Human Resources-botten i Microsoft Teams analyseres brugerens tekstinput for at forstå den underliggende forespørgsel/det pågældende formål. Brugerens input, f.eks. "Søg efter konto Contoso", sendes til en af Microsofts Cognitive Services kaldet LUIS (Language Understanding Intelligent Service). Læs mere om LUIS [her](https://www.luis.ai/). LUIS-tjenesten gør formålet utvetydeligt eller forstår hensigten med brugerinputtet (i dette tilfælde er hensigten at finde oplysninger) og destinationsenheden (i dette tilfælde er den ønskede enhed en konto med navnet Contoso). Disse oplysninger sendes derefter til Microsofts  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/), som interagerer med data fra Dynamics 365 Human Resources og henter de ønskede oplysninger til brugerforespørgslen. 
+Med Dynamics 365 Human Resources-robotten i Microsoft Teams analyseres brugerens tekstinput for at forstå den underliggende forespørgsel/hensigt. Brugerens input, f.eks. "Søg efter konto Contoso", sendes til en af Microsofts Cognitive Services kaldet LUIS (Language Understanding Intelligent Service). Læs mere om LUIS [her](https://www.luis.ai/). LUIS-tjenesten gør formålet utvetydeligt eller forstår formålet med brugerinputtet (i dette tilfælde er formålet at finde oplysninger) og destinationsenheden (i dette tilfælde er den ønskede enhed en konto med navnet Contoso). Disse oplysninger sendes derefter til Microsofts  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/), som interagerer med data fra Dynamics 365 Human Resources og henter de ønskede oplysninger til brugerforespørgslen. 
 
-Hvis du installerer og giver adgang til brugen af botten, accepterer du, at LUIS-tjenesten og Azure-botstrukturen kan behandle formålet bag inputtet, hvilket giver en forbedret brugeroplevelse. LUIS-tjenesten og Azure-botstrukturen kan have forskellige overensstemmelsesniveauer sammenlignet med Dynamics 365 Human Resources. Mens LUIS-tjenesten kun har adgang til brugerforespørgslerne og ikke er beregnet til at blive forbundet med brugerens Dynamics 365 Human Resources-data eller -konto, kan en bruger af Dynamics 365 Human Resources-bot frivilligt angive en forespørgsel, der indeholder kundedata, personlige oplysninger eller andre data, og sådan forespørgselsindhold kan sendes til Luis-tjenesten og Azure-botstrukturen. 
+Hvis du installerer og giver adgang til brugen af botten, accepterer du, at LUIS-tjenesten og Azure-botstrukturen kan behandle formålet bag inputtet, hvilket giver en forbedret brugeroplevelse. LUIS-tjenesten og Azure-botstrukturen kan have forskellige overensstemmelsesniveauer sammenlignet med Dynamics 365 Human Resources. Mens LUIS-tjenesten kun har adgang til brugerforespørgslerne og ikke er beregnet til at blive forbundet med brugerens Dynamics 365 Human Resources-data eller -konto, kan en bruger af Dynamics 365 Human Resources-bot frivilligt angive en forespørgsel, der indeholder kundedata, personlige oplysninger eller andre data, og sådan forespørgselsindhold kan sendes til Luis-tjenesten og Azure Bot Framework. 
 
-Indholdet af brugerforespørgsler og-meddelelser bevares i LUIS-systemet i maksimalt 30 dage, er krypteret i resten og bruges ikke til oplæring eller forbedring af tjenesten. Læs mere om Cognitive Services [her](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
+Indholdet af brugerforespørgsler og -meddelelser bevares i LUIS-systemet i maksimalt 30 dage, er krypteret i resten og bruges ikke til oplæring eller forbedring af tjenesten. Læs mere om Cognitive Services [her](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
 Hvis du vil styre administratorindstillinger for apps i Microsoft Teams, skal du gå til [Microsoft Teams Administration](https://admin.teams.microsoft.com/).
 
 ### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid og Azure Cosmos DB
 
-Når du bruger Dynamics 365 Human Resources-appen i Microsoft Teams, kan visse kundedata flyde uden for det geografiske område, hvor din lejers personaleservice er installeret.
+Når du bruger Dynamics 365 Human Resources-appen i Microsoft Teams, kan visse kundedata flyde uden for det geografiske område, hvor din lejers Human Resources-service er installeret.
 
-Dynamics 365 Human Resources overfører oplysninger om medarbejderens orlovsanmodning og arbejdsgangsopgave til Microsoft Azure Event Grid og Microsoft Teams. Disse data kan gemmes i Microsoft Azure Event Grid i op til 24 timer og behandles i USA, krypteres under overførslen og i lageret og bruges ikke af Microsoft eller underprocesser til træning eller forbedring af tjenester. Få indsigt i, hvor dine data opbevares i Teams, ved at se: [Placering af data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
+Dynamics 365 Human Resources overfører oplysninger om medarbejderens orlovsanmodning og arbejdsprocesopgave til Microsoft Azure Event Grid og Microsoft Teams. Disse data kan gemmes i Microsoft Azure Event Grid i op til 24 timer og behandles i USA, krypteres under overførslen og i lageret og bruges ikke af Microsoft eller underprocesser til træning eller forbedring af tjenester. Få indsigt i, hvor dine data opbevares i Teams, ved at se: [Placering af data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 
 Indholdet i samtalen med chatrobotten i Human Resources-appen kan gemmes i Azure Cosmos DB og overføres til Microsoft Teams. Disse data kan gemmes i Azure Cosmos DB i op til 24 timer og kan behandles uden for det geografiske område, hvor din lejers Human Resources-tjeneste er udrullet. Data, der er undervejs, og inaktive data krypteres og bruges ikke af Microsoft eller underprocesser til træning eller tjenesteforbedringer. Få indsigt i, hvor dine data opbevares i Teams, ved at se: [Placering af data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
  

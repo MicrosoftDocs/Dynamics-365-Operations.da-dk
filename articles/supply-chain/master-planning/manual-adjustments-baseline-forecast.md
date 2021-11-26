@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579634"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778027"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foretage manuelle justeringer af prognosegrundlaget
 
@@ -67,7 +67,7 @@ Siden **Detaljer om behovsprognose** side viser følgende oplysninger i grafisk 
 
 **Bemærkninger:**
 
--   Hvis du aktiverer **Oplysninger om valg af prognosemodel for behovsprognose** fra funktionsstyring, kan du vælge de prognosemodeller, der skal medtages for den historiske prognose, på siden **Oplysninger om behovsprognoser**.
+-   Hvis du aktiverer **Oplysninger om valg af prognosemodel for behovsprognose** fra funktionsstyring, kan du vælge de prognosemodeller, der skal medtages for den historiske prognose, på siden **Oplysninger om behovsprognoser**. (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
 -   De konfidensinterval, der vises i sektionen **Prognose** på siden, der repræsenterer forskellen mellem den øvre grænse for konfidensintervallet og den nedre grænse for konfidensintervallet. For at få vist værdierne for de øvre og nedre grænser skal du holde markøren over diagrammet i sektionen **Historisk efterspørgsel og prognose grafisk**.
 -   Hvis du bruger behovsprognose med Microsoft Azure Machine Learning, kan du angive det procentvise konfidensniveau, som den generede prognose skal have. Et konfidensinterval består af en række værdier, der fungerer som gode estimater for behovsprognosen. En konfidensinternval på 95 procent angiver, at der er 5 procent risiko for, at behovsprognosen falder uden for konfidensintervalområdet.
 

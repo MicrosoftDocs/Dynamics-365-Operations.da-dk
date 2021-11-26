@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 39f462ae325aa1104a25a8290daed70388e624ec
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 074be71d7b6ec1acab6307a79e397c2a2a045c39
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7475885"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778419"
 ---
 # <a name="the-unit-and-unit-quantity-arent-working-correctly-in-the-inventory-journal"></a>Enheden og enhedsantallet fungerer ikke korrekt i lagerkladden
 
@@ -31,7 +31,7 @@ Der kan opstå en eller begge af følgende fejl, når du arbejder med enheder og
 
 Følg disse trin for at løse dette problem.
 
-1. I arbejdsområdet **Funktionsstyring** skal du sørge for, at funktionen *Brug af måleenhed og enhedsantal i lagerkladder* er aktiveret. Denne funktion føjer felterne **Enhed** og **Enhedsantal** til kladden.
+1. I arbejdsområdet **Funktionsstyring** skal du sørge for, at funktionen *Brug af måleenhed og enhedsantal i lagerkladder* er aktiveret. Denne funktion føjer felterne **Enhed** og **Enhedsantal** til kladden. (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
 1. Når funktionen er aktiveret, skal du benytte felterne **Antal**, **Enhedsantal** og **Enhed** på følgende måde:
 
     - **Antal** – Angiv antallet ved hjælp af den standardenhed, der er defineret for det frigivne produkt. Selve standardenheden vises dog ikke her. Hvis der er konfigureret en konvertering mellem standardenheden og den valgte enhed i feltet **Enhed**, opdateres feltet **Antal** automatisk baseret på valgene i felterne **Enhedantal** og **Enhed**.

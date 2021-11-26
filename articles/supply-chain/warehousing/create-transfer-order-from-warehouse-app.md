@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 986abfaef81474571de7db179253c4d76f65d4bec180fa9f355f3218ddbb96ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746813"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777809"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Oprette flytteordrer fra lagerstedsappen
 
@@ -36,7 +36,7 @@ Før du kan bruge denne funktion, skal både den og dens forudsætninger være a
 1. Aktivér derefter funktionen *Opret flytteordrer fra lagerstedsappen*, der er angivet som:
     - **Modul** – Lokationsstyring
     - **Funktionsnavn** - Oprette og behandle flytteordrer fra lagerstedsappen
-1. Hvis du vil automatisere behandlingen af de udgående forsendelser, skal du også aktivere funktionen [Bekræft udgående forsendelser fra batchjob](confirm-outbound-shipments-from-batch-jobs.md). Funktionen er angivet som:
+1. Hvis du vil automatisere behandlingen af de udgående forsendelser, skal du også aktivere funktionen [Bekræft udgående forsendelser fra batchjob](confirm-outbound-shipments-from-batch-jobs.md). Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
     - **Modul** – Lokationsstyring
     - **Funktionsnavn** – Bekræft udgående forsendelser fra batchjob
 

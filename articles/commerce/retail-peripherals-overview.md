@@ -1,7 +1,7 @@
 ---
 title: Eksterne enheder
 description: I dette emne forklares begreberne i forbindelse med eksterne Commerce-enheder.
-author: rubencdelgado
+author: BrianShook
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: dbf78eec6c1b25056342f9709f3b047a8bb822ff
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500297"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779840"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -220,9 +220,9 @@ Følgende tabel viser de topologier og installationsscenarier, der understøttes
 | Klient      | IPC-hardwarestation | IIS-hardwarestation |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Cloud POS   | Nr.                   | Ja                  |
+| Cloud POS   | Nej                   | Ja                  |
 | Android     | Ja                  | Ja                  |
-| iOS         | Nr.                   | Ja                  |
+| iOS         | Nej                   | Ja                  |
 
 ### <a name="network-peripherals"></a>Eksterne netværksenheder
 
@@ -231,9 +231,9 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 | Klient      | IPC-hardwarestation | IIS-hardwarestation |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Cloud POS   | Nr.                   | Ja                  |
+| Cloud POS   | Nej                   | Ja                  |
 | Android     | Ja                  | Ja                  |
-| iOS         | Nr.                   | Ja                  |
+| iOS         | Nej                   | Ja                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Understøttede enhedstyper efter hardwarestationstype
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS til Windows med en IPC-hardwarestation (indbygget)

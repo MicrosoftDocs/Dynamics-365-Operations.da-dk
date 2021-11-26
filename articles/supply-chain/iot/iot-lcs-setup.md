@@ -1,25 +1,25 @@
 ---
 title: Installere tilføjelsesprogrammet IoT-viden i LCS
 description: I dette emne forklares, hvordan du kan installere tilføjelsesprogrammet IoT-viden i Microsoft Dynamics Lifecycle Services (LCS).
-author: robinarh
+author: tonyafehr
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c4727f4341104b77838c103fcf378a5971f8ba176f18c2d32d619ecd6614b1ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ebf11b55f1034b9a84dda9ada77c2f1b7f587a58
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736813"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781583"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Installere tilføjelsesprogrammet IoT-viden i LCS
 

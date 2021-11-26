@@ -1,8 +1,8 @@
 ---
 title: Oprette afdelinger og knytte dem til afdelingshierarkiet
-description: En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation. En afdeling er ansvarlig for et bestemt område i organisationen, såsom salg, regnskab eller personale. Du kan bruge afdelinger til at rapportere om funktionsområder. Afdelinger kan have ansvar for driftsregnskabet.
-author: andreabichsel
-ms.date: 06/20/2017
+description: En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation. En afdeling er ansvarlig for et bestemt område i organisationen, såsom salg, regnskab eller personale.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1fa6d2b18a1b92236a153e453560430cc0d4c1c6e2cde0431c1e1cc68128bd0f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2caa4f1e7be4be54766921a9e38c97d22b8200c7
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727011"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731606"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Oprette afdelinger og knytte dem til afdelingshierarkiet
 
@@ -32,15 +32,15 @@ En afdeling kan også omfatte en gruppe af bærere. Stillinger kan tildeles til 
 
 | Felt               | Beskrivelse                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Navn                | Angiv et navn for afdelingen.                                                                                                                                                                                  |
-| Afdelingsnummer   | Der kan automatisk genereres en standardværdi, hvis der er knyttet en nummerseriekode til referencen for **Organisationsnummer** på siden **Nummerserier**.                                                 |
-| Søgenavn         | Angiv et navn eller et akronym, der kan bruges til en hurtig søgning efter afdelingen.                                                                                                                                            |
-| Notat                | Angiv yderligere oplysninger her.                                                                                                                                                                            |
-| I hierarki        | Et markeret afkrydsningsfelt angiver, at en afdeling er medtaget i afdelingshierarkiet. Du kan finde oplysninger om, hvordan du føjer en afdeling til afdelingshierarkiet senere i denne artikel. |
-| DUNS-nummer         | DUNS står for Data Universal Number System. Dette er et 9-cifret tal, der er udstedt af Dun & Bradstreet.                                                                                                     |
-| Leder             | Angiv den karakter, der administrerer afdelingen.                                                                                                                                                                    |
-| Adresser           | Tilføj afdelingens adresseoplysninger. Tilføj f.eks. postadressen for den bygning, som afdelingen findes i.                                                                          |
-| Kontaktoplysninger | Tilføj kontaktoplysninger afdelingen. Du kan f.eks. føje et telefonnummer til afdelingens helpdesk.                                                                                           |
+| **Navn**                | Angiv et navn for afdelingen.                                                                                                                                                                                  |
+| **Afdelingsnummer**   | Der kan automatisk genereres en standardværdi, hvis der er knyttet en nummerseriekode til referencen for **Organisationsnummer** på siden **Nummerserier**.                                                 |
+| **Søgenavn**         | Angiv et navn eller et akronym, der kan bruges til en hurtig søgning efter afdelingen.                                                                                                                                            |
+| **Notat**                | Angiv yderligere oplysninger her.                                                                                                                                                                            |
+| **I hierarki**        | Et markeret afkrydsningsfelt angiver, at en afdeling er medtaget i afdelingshierarkiet. Du kan finde oplysninger om, hvordan du føjer en afdeling til afdelingshierarkiet senere i denne artikel. |
+| **DUNS-nummer**         | DUNS står for Data Universal Number System. Dette er et 9-cifret tal, der er udstedt af Dun & Bradstreet.                                                                                                     |
+| **Leder**             | Angiv den karakter, der administrerer afdelingen.                                                                                                                                                                    |
+| **Adresser**           | Tilføj afdelingens adresseoplysninger. Tilføj f.eks. postadressen for den bygning, som afdelingen findes i.                                                                          |
+| **Kontaktoplysninger** | Tilføj kontaktoplysninger afdelingen. Du kan f.eks. føje et telefonnummer til afdelingens helpdesk.                                                                                           |
 
 Følg disse trin for at føje en afdeling til afdelingshierarkiet.
 

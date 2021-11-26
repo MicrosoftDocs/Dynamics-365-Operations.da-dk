@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 503ba8ae95119f3ce9533f81cdd16c34cf3a9223
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574539"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752826"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurere en enhed til at køre grænsefladen på produktionsudstyr
 
@@ -28,9 +28,9 @@ Grænsefladen til kørsel af produktionsudstyr konfigureres for alle enheder i p
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Indstille konfiguration og filtre for en bestemt enhed
 
-Når du vil indstille konfigurations- og jobfiltre for en enhed, skal du logge på siden til **Kørsel af produktionsudstyr** ved hjælp af en konto med en sikkerhedsrolle, der omfatter pligten *Supervisor for vedligeholdelse af tid*. (Blandt de indbyggede sikkerhedsroller er det kun *Shop floor-supervisor*, der har denne pligt). Følg derefter disse trin.
+Når du vil indstille konfigurations- og jobfiltre for en enhed, skal du logge på siden til **Kørsel af produktionsudstyr** ved hjælp af en konto med en sikkerhedsrolle, der omfatter pligten *Vedligehold tidskontrol*. (Blandt de indbyggede sikkerhedsroller er det kun *Shop floor-supervisor*, der har denne pligt). Følg derefter disse trin.
 
-1. Gå til den enhed, du vil konfigurere, og log på Microsoft Dynamics 365 Supply Chain Management som shop floor-supervisor. (Brug en konto, der omfatter pligten *Supervisor for vedligeholdelse af tid*).
+1. Gå til den enhed, du vil konfigurere, og log på Microsoft Dynamics 365 Supply Chain Management som shop floor-supervisor. (Brug en konto, der omfatter pligten *Vedligehold tidskontrol*).
 1. Kontroller, at der er en konfiguration tilgængelig for den enhed, du konfigurerer. Hvis der ikke allerede findes en konfiguration, bliver der leveret en standardkonfiguration. Du kan finde flere oplysninger om, hvordan du kan konfigurere en konfiguration, under [Konfigurere grænsefladen til kørsel af produktionsudstyr](production-floor-execution-configure.md).
 1. Gå til **Produktionsstyring \> Produktionsudførelse \> Kørsel af produktionsudstyr**.
 

@@ -1,8 +1,8 @@
 ---
 title: Oprette og åbne jobansættelse
 description: Rekrutteringsprojekter hjælper dig med rekrutteringsprocessen.
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df60f6461c52e45849d3de89fde4ae53f915dbc3cce417a30790acf443c5fecc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778766"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731555"
 ---
 # <a name="create-and-open-job-requisition"></a>Oprette og åbne jobansættelse
 
@@ -39,7 +39,7 @@ Rekrutteringsprojekter hjælper dig med rekrutteringsprocessen. Når du har opre
 6. Find og vælg den ønskede post på listen.
 7. Vælg linket i den valgte række på listen.
 8. Vælg **Vælg**.
-9. Klik på rullelistens knap i feltet Afdeling for at åbne opslaget.
+9. Vælg rullemenuens knap i feltet **Afdeling** for at åbne opslaget.
 10. Vælg linket i den valgte række på listen.
 11. Klik på rullelistens knap i feltet **Job** for at åbne opslaget.
 12. Find og vælg den ønskede post på listen.
@@ -58,10 +58,10 @@ Rekrutteringsprojekter hjælper dig med rekrutteringsprocessen. Når du har opre
 25. Indtast en dato i feltet **Slutdato**.
 26. Vælg **Gem**.
 27. Luk siden.
-28. Vælg jobannoncer.
+28. Vælg **Jobannoncer**.
 29. Vælg **Gem**.
 30. Luk siden.
-31. Marker eller fjern markeringen af afkrydsningsfeltet **Vis på medarbejderselvbetjening**. Marker afkrydsningsfeltet **Vis på medarbejderselvbetjening**. Dette valg gør rekrutteringsprojektet synligt for medarbejderne på deres sider i Employee Self-Service.
+31. Markér eller fjern markeringen af afkrydsningsfeltet **Vis på medarbejderselvbetjening**. Markér afkrydsningsfeltet **Vis på medarbejderselvbetjening**. Dette valg gør rekrutteringsprojektet synligt for medarbejderne på deres side **Medarbejderselvbetjening**.
 32. Klik på **Status på rekrutteringsprojekt**..
 33. Vælg **Start**. Status **Påbegyndt** betyder, at projektet er klar til at modtage ansøgninger.  
 34. Vælg **OK**.

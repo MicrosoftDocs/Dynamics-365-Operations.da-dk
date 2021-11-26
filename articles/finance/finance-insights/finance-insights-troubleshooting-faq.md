@@ -2,7 +2,7 @@
 title: Fejlfinde problemer med opsætningen af Finance Insights
 description: Dette emne indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7ff42ffc334147c1a4c6b6349c86580df7f1955b
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512884"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752611"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Fejlfinde problemer med opsætningen af Finance Insights
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
 
@@ -53,6 +54,12 @@ Følg disse trin i [Power Platform Administration](https://admin.powerplatform.m
 
 1. Hvis du bruger en eksempelversion af Finance Insights, skal du fjerne det DI-projekt, der er knyttet til **Resultater af indsigt i kundebetaling (CDS til Fin and Ops)**-skabelonen.
 2. Følg trinnene i [Oprette et dataintegratorprojekt](create-data-integrate-project.md). Du kan bruge skabelonen **Resultater af indsigt i kundebetaling (CDS til Fin og Ops 10.0.17 og senere)**.
+
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Symptom: Når jeg forsøger at åbne AI Builder ved at bruge linkene på opsætningssiden Forudsigelser om debitorbetalinger, hvorfor får jeg vist følgende fejlmeddelelse: "Beklager, der har været en afbrydelse"?
+
+### <a name="resolution"></a>Løsning
+
+Dynamics 365 Finance-brugere skal have en Microsoft Power Apps-brugerkonto til miljøet, og den pågældende brugerkonto skal have rollen Systemtilpasser. Systemadministratoren for Microsoft Power Apps kan oprette brugerkontoen og tildele rollen. Du kan derefter gå til <https://make.preview.powerapps.com/>, logge på med denne brugerkonto og prøve linkene igen.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Symptom: Hvorfor vises der ingen data under fanen Likviditetsbudget i arbejdsområdet til likviditetsbudget?
 

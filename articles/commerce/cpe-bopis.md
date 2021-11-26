@@ -1,7 +1,7 @@
 ---
 title: Konfigurere BOPIS i et  Dynamics 365 Commerce-evalueringsmiljø
 description: Dette emne forklarer, hvordan du konfigurerer køb online, afhent i butikken (BOPIS) i et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
-author: rubendel
+author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1087e13da870a855c703cb87cc2327521acd19e4c205fbf75b343b9bbd8e81b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751595"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779788"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø
 

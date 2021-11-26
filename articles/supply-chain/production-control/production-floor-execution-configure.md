@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647183"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777955"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -39,7 +39,7 @@ Selve grænsefladen til kørsel af produktion, plus flere af de valgfrie indstil
 
 ### <a name="the-production-floor-execution-interface"></a>Grænsefladen til kørsel af produktion
 
-Dette er den primære funktion, der er beskrevet i dette emne. Den tilføjer grænsefladen til kørsel af produktion i dit system. I arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere følgende funktion:
+Dette er den primære funktion, der er beskrevet i dette emne. Fra og med Supply Chain Management version 10.0.21 er den som standard aktiveret. Den tilføjer grænsefladen til kørsel af produktion i dit system. I arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere følgende funktion:
 
 - Kørsel af produktion
 
@@ -47,19 +47,19 @@ Dette er den primære funktion, der er beskrevet i dette emne. Den tilføjer gr�
 
 Disse funktioner gør nummerpladefunktioner tilgængelig for grænsefladen til kørsel af produktion. Hvis du vil bruge dem, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge):
 
-1. Id for færdigmelding tilføjet i jobkortenheden
+1. Nummerplade til færdigmelding er føjet til jobkortenheden (fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret).
 1. Aktivér automatisk generering af id-nummer ved færdigmelding i jobkortenheden
 
 ### <a name="print-labels"></a>Udskriv labels
 
 Disse funktioner gør etiketudskrivning tilgængelig for grænsefladen til kørsel af produktion. Hvis du vil bruge dem, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge):
 
-1. Id for færdigmelding tilføjet i jobkortenheden
+1. Nummerplade til færdigmelding er føjet til jobkortenheden (fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret).
 1. Udskriv etiket fra jobkortenhed
 
 ### <a name="allow-locking-the-touch-screen"></a>Tillad låsning af berøringsskærmen
 
-Denne funktion føjer en knap til grænseflade for kørsel af produktion, der gør det muligt for arbejdere at rense berøringsskærmen. Hvis du vil bruge den, skal du i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivere følgende funktion:
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Den føjer en knap til grænseflade for kørsel af produktion, der gør det muligt for arbejdere at rense berøringsskærmen. Hvis du vil bruge denne funktion, skal du sørge for, at følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) er aktiveret:
 
 - Funktion til låsning af jobkortenhed og jobkortterminal, så de kan renses
 

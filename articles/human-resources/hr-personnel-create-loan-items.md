@@ -1,8 +1,8 @@
 ---
 title: Oprettelse af udlånsemner
 description: Udlånsemner er poster, der hjælper dig med at holde styr på fysiske emner, som f.eks. telefoner eller computere, som virksomheden udlåner til arbejdere.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, Hcm
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5fb303015c3616bd2d033517bc21fda0834e9135b92e16374df26a98188c75ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a812887f20a8ae5ae3b677ac452a498230c244a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718077"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731730"
 ---
 # <a name="create-loan-items"></a>Oprettelse af udlånsemner
 
@@ -30,32 +30,32 @@ Udlånsemner er poster, der hjælper dig med at holde styr på fysiske emner, so
 
 
 ## <a name="create-loan-types"></a>Opret udlånstyper
-1. Gå til Human Resources > Arbejdere > Udlånsemner > Udlånstyper.
-2. Klik på Ny.
-3. Indtast en værdi i feltet Udlånstype.
-4. Skriv en værdi i feltet Beskrivelse.
+1. Gå til **Human Resources** > **Arbejdere** > **Udlånsemner** > **Udlånstyper**.
+2. Klik på **Ny**.
+3. Indtast en værdi i feltet **Udlånstype**.
+4. Indtast en værdi i feltet **Beskrivelse**.
 5. Angiv det antal dage, som emner, der er knyttet til denne udlånstype, kan være overskredet med. 
-6. Klik på Gem.
+6. Klik på **Gem**.
 7. Luk siden.
 8. Opdater siden.
 
 ## <a name="create-loan-items"></a>Opret Udlånsemner
-1. Gå til Human Resources > Arbejdere > Udlånsemner > Udlånsemner.
-2. Klik på Opret udlånsemner.
-3. I feltet Antal. skal du angive et tal.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Klik på rullelisten i feltet Udlånstype for at åbne opslaget.
+1. Gå til **Human Resources** > **Arbejdere** > **Udlånsemner** > **Udlånsemner**.
+2. Klik på **Opret udlånsemner**.
+3. I feltet **Antal** skal du angive et tal.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Klik på rullemenuen i feltet **Udlånstype** for at åbne opslaget.
 6. Find og vælg den ønskede post på listen.
 7. Klik op linket i den valgte række på listen.
 8. Angiv antal dage, emnet kan lånes.
     * Standardværdien i feltet Planlagt retur på siden Lånt udstyr beregnes som den aktuelle dato plus dette tal.  
-9. Klik på rullelisten i feltet Ansvarlig for at åbne opslaget.
-10. Klik på Vælg.
-11. Indtast et tal i feltet Startværdi, der skal tilføjes.
-12. Angiv et tal i feltet Interval.
-13. Skriv en værdi i feltet Format.
-    * Hvis det højeste startnummer for et udlånt emne f.eks. er 10, skal du skrive to talsymboler i feltet Format.  
-14. Klik på OK.
+9. Klik på rullelisten i feltet **Ansvarlig** for at åbne opslaget.
+10. Klik på **Vælg**.
+11. Indtast et tal i feltet **Startværdi**.
+12. Angiv et tal i feltet **Interval**.
+13. Skriv en værdi i feltet **Format**.
+    * Hvis det startnummeret for et udlånsemne f.eks. er 10, skal du skrive to talsymboler i feltet **Format**.  
+14. Klik på **OK**.
 15. Opdater siden.
 
 

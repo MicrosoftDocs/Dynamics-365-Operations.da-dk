@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 78bea4ee2429323a6e087c6433a8e496b08f4cea
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576106"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778201"
 ---
 # <a name="replenishment-over-location-capacity"></a>Genopfyldning over lokationskapacitet
 
@@ -32,7 +32,7 @@ Funktionen gør det muligt at oprette mere genopfyldningsarbejde, end der er pla
 
 Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge):
 
-1. Blokering af arbejde i hele organisationen
+1. Blokering af arbejde i hele organisationen (fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen).
 1. Genopfyldning over lokationskapacitet
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Konfigurere funktionen til eksempelscenariet

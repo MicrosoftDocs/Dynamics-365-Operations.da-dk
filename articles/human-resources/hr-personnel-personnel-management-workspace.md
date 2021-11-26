@@ -1,43 +1,43 @@
 ---
 title: Arbejdsområde til personalestyring
 description: Dette emne indeholder en beskrivelse af de grundlæggende elementer i arbejdsområdet til personalestyring.
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923d4a980c3f8f9b3bf5be1f77d8910081123fa08b068f1fd8fa935312d3a101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4332be972ab3dc81e7e4f3cc297a91cd247e721e
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754807"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771332"
 ---
 # <a name="personnel-management-workspace"></a>Arbejdsområde til personalestyring
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Arbejdsområdet **Personalestyring** indholder en stor mængde indhold. Det indeholder personalebevægelser, det sporer medarbejderændringer, ledige stillinger, adresseændringer, udløbsposter og analyser, og det indeholder links til specifikke oplysninger. Dette emne indeholder detaljerede oplysninger om de enkelte dele i arbejdsområdet.
+Arbejdsområdet **Personalestyring** indholder en stor mængde indhold. Det indeholder personalebevægelser, sporer medarbejderændringer, ledige stillinger, adresseændringer, udløbsposter og analyser, og det indeholder links til specifikke oplysninger. Dette emne indeholder detaljerede oplysninger om de enkelte dele i arbejdsområdet.
 
 ## <a name="activity-tab"></a>Fanen Aktivitet
 
 Fanen **Aktivitet** indeholder sektioner, der grupperer arbejdere baseret på deres stadie i ansættelsesprocessen:
 
-- Kandidater, der skal ansættes
-- Starter snart
-- Seneste ansættelser
-- Afslutter
-- Afsluttede
+- **Kandidater, der skal ansættes**
+- **Starter snart**
+- **Seneste ansættelser**
+- **Afslutter**
+- **Afsluttede**
 
 Når en arbejder er i et af disse stadier, er specifikke handlinger tilgængelige som en knap på kortet eller i den menu, der vises, når du vælger ellipsen (**...**) i øverste højre hjørne. Følgende undersektioner beskriver sektionerne under fanen **Aktivitet** og viser de handlinger, der er tilgængelige.
 
@@ -51,9 +51,9 @@ Sektionen **Kandidater, der skal ansættes** i arbejdsområdet udfyldes fra fler
 
 Når kandidaterne vises i sektionen **Kandidater, der skal ansættes**, kan du udføre følgende handlinger ved at vælge ellipsen på kandidatkortet:
 
-- Afvis kandidat
-- Ansæt ikke
-- Ansæt
+- **Afvis kandidat**
+- **Ansæt ikke**
+- **Ansæt**
 
 > [!NOTE]
 > Hvis kandidatlisten udfyldes fra Microsoft Dataverse, vises de samme kandidater på tværs af alle juridiske enheder, fordi der ikke er knyttet en juridisk enhed til kandidaten.
@@ -65,7 +65,7 @@ I sektionen om **Starter snart** vises der en oversigt over arbejdere, der har e
 Hvis chefen ikke vises på kortet, er der ikke tildelt en stilling til arbejderen.
 
 > [!NOTE] 
-> Det anbefales, at du tildeler en stilling til en arbejder, før du anvender en tjekliste, da onboardingopgaver i nogle tilfælde tildeles til en nyansat medarbejders chef. Men hvis der ikke er tildelt en stilling, kan den nye medarbejders chef ikke afgøres. Hvis det er tilfældet, tildeles de onboardingopgaver, der er tiltænkt chefen, i stedet til ejeren af tjeklisten.
+> Det anbefales, at du tildeler en stilling til en arbejder, før du anvender en kontrolliste. Til tider tildeles en nyansat medarbejders chef opgaver i forbindelse med onboarding. Men hvis der ikke er tildelt en stilling, kan den nye medarbejders chef ikke afgøres. Hvis det er tilfældet, tildeles de onboardingopgaver, der er tiltænkt chefen, i stedet til ejeren af tjeklisten.
 
 Når arbejdere vises i sektionen **Starter snart**, er følgende handlinger tilgængelige for dem:
 
@@ -85,7 +85,7 @@ Sektionen **Nye ansættelser** indeholder en oversigt over arbejdere, der har en
 Listen viser som standard arbejdere, der er ansat inden for de seneste syv dage. Hvis du vil ændre denne indstilling, skal du definere en tidsramme for **Nye ansættelser** på siden **Human Resources-parametre** under fanen **Generelt**. Dataene i sektionen **Nye ansættelser** kan vises for et bestemt antal dage, måneder eller år. Hvis du for eksempel vil have vist listen over arbejdere, der er ansat inden for de seneste 14 dage, skal du angive feltet **Periode** til **14** og feltet **Enhed** til **Dage**.
 
 > [!NOTE]
-> Indstillingerne på siden **Human Resources-parametre** er firmaspecifikke. Derfor kan den tidsramme, du får vist nye ansættelser for, variere efter firma. I firmaet USMF vil du for eksempel have vist alle nye ansættelser fra de seneste syv dage. Men i firmaet USSI vil du have vist alle nye ansættelser fra de seneste 14 dage. I dette tilfælde skal du åbne siden **Human Resources-parametre** i hvert firma og angive parametrene efter behov.
+> Indstillingerne på siden **Human Resources-parametre** er firmaspecifikke. Derfor kan den tidsramme, du får vist nye ansættelser for, variere efter firma. I firmaet USMF vil du for eksempel have vist alle nye ansættelser fra de seneste syv dage. Men i firmaet USSI vil du måske se alle nyansættelser fra de seneste 14 dage. I dette tilfælde skal du åbne siden **Human Resources-parametre** i hvert firma og angive parametrene efter behov.
 
 Hvis chefen ikke vises på kortet, er der ikke tildelt en stilling til arbejderen.
 
@@ -132,13 +132,9 @@ Når arbejdere vises i sektionen **Fratrådt**, er følgende handlinger tilgæng
 
 Fanen **Medarbejderændringer** indeholder en liste over alle arbejderens personalehandlinger. Denne liste er som standard ikke tilgængelig. Hvis du vil aktivere funktionaliteten, skal du angive indstillingen **Aktivér arbejderhandlinger** til **Ja** under fanen **Personalehandlinger** på siden **Delte Human Resources-parametre**.
 
-Du kan finde flere oplysninger om personalehandlinger du på (siden Link til personalehandlinger).
-
 ## <a name="position-changes-tab"></a>Fanen Stillingsændringer
 
 Fanen **Stillingsændringer** indeholder en liste over alle personalehandlinger for stillinger. Denne liste er som standard ikke tilgængelig. Hvis du vil aktivere funktionaliteten, skal du angive indstillingen **Aktivér stillingshandlinger** til **Ja** under fanen **Personalehandlinger** på siden **Delte Human Resources-parametre**.
-
-Du kan finde flere oplysninger om personalehandlinger du på (siden Link til personalehandlinger).
 
 ## <a name="open-positions-tab"></a>Fanen Ledige stillinger
 
@@ -151,11 +147,11 @@ Fanen **Ledige stillinger** viser alle ledige stillinger. For at blive vist på 
 
 Fanen **Udløbende poster** indeholder alle elementer, der er udløbet, eller som vil udløbe for arbejderne i det firma, som brugeren er logget på. Følgende elementer vises på listen:
 
-- Certifikater
-- Identifikation
-- Prøvetid
-- Screeninger
-- Tests
+- **Certifikater**
+- **Identifikation**
+- **Prøvetid**
+- **Screeninger**
+- **Tests**
 
 Hvis du vil angive, om listen skal vise udløbne poster eller udløbende poster, skal du definere en tidsramme for enten **Udløbende poster** eller **Udløbne poster** på siden **Human Resources-parametre** under fanen **Generelt**. Dataene under fanen **Udløbende poster** kan vises i et bestemt antal dage. Hvis du for eksempel vil have vist listen over poster, der udløber inden for de næste 14 dage, skal du angive feltet **Antal dage** til **14**.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577834"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778053"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerekspedition af indgående laster for indkøbsordrer
 
@@ -205,7 +205,7 @@ I følgende tabel vises en oversigt over effekterne af indstillingen **Tillad fl
 | Tillad flere produktkvitteringer pr. last | Lastantal | Laststatus | Bemærk! |
 |---|---|---|---|
 | Når dette felt ikke er tilgængeligt (versioner før 10.0.10) | <p>Lastantallet angives, så det svarer til det registrerede antal.</p><p>Hvis lastantallet opdateres til 0 (nul), hvilket betyder, at der ikke er foretaget nogen registrering, slettes lastlinjen.</p><p>Hvis der ikke er nogen lastlinjer på lasten, slettes lasten.</p> | _Modtaget_ | Hvis der findes flere laster for ordrelinjens registrerede antal, er det kun den status for lasten, som modtagelsen blev bogført fra, der opdateres til _Modtaget_. |
-| Ingen | <p>Lastantallet angives, så det svarer til det registrerede antal, der er knyttet til last-id'et.</p><p>Hvis der ikke er registreret noget last-id for lagertransaktionen, svarer funktionsmåden til versioner før 10.0.10.</p> | _Modtaget_ | |
+| Nej | <p>Lastantallet angives, så det svarer til det registrerede antal, der er knyttet til last-id'et.</p><p>Hvis der ikke er registreret noget last-id for lagertransaktionen, svarer funktionsmåden til versioner før 10.0.10.</p> | _Modtaget_ | |
 | Ja | Ingen opdateringer | _Modtaget_, hvis det samlede registrerede lastantal er lig med eller større end lastantallet | |
 | Ja | Ingen opdateringer | _Afsendt_ eller _Under behandling_, hvis det samlede registrerede lastantal er mindre end lastantallet | |
 
@@ -267,7 +267,7 @@ Disse scenarier kræver funktionen _Flere produktkvitteringsbogføringer pr. las
 
 1. Åbn arbejdsområdet **Administration af funktioner**. (Du kan få flere oplysninger om, hvordan du finder og bruger dette arbejdsområde, i [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Slå funktionen _Knyt indkøbsordre lagertransaktioner med last_ til, som vises på følgende måde:
+1. Sørg for, at funktionen _Tilknyt lagertransaktioner med belastning for indkøbsordre_ er aktiveret. Fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen. I [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) vises funktionen dog stadig på følgende måde:
 
     - **Modul:** _Lokationsstyring_
     - **Funktionsnavn**_: Knyt indkøbsordre lagertransaktioner med last_

@@ -1,8 +1,8 @@
 ---
 title: Oprette et masseansættelsesprojekt
 description: Denne fremgangsmåde fører dig gennem processen med at oprette et masseansættelsesprojekt.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMMassHireProject,  HRMMassHireLineCreate, HcmJobLookup, HcmPer
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7412cd874d3dd5a816ff4681dcda7da37f90b8b8b55b545392d24e8ccce93c21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93de4f9736c58448f181c14bc5456ad72d6fc519
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774987"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731754"
 ---
 # <a name="create-a-mass-hire-project"></a>Oprette et masseansættelsesprojekt
 
@@ -26,26 +26,26 @@ ms.locfileid: "6774987"
 
 
 
-Denne fremgangsmåde fører dig gennem processen med at oprette et masseansættelsesprojekt. En rekrutteringsmedarbejder kan bruge masseansættelsesprojekter til nemt at oprette flere stillinger og ansætte et antal arbejdstagere til disse stillinger. Du begynder denne procedure ved at gå til Human Resources > Rekruttering > Masseansættelsesprojekter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+Denne fremgangsmåde fører dig gennem processen med at oprette et masseansættelsesprojekt. En rekrutteringsmedarbejder kan bruge masseansættelsesprojekter til nemt at oprette flere stillinger og ansætte et antal arbejdstagere til disse stillinger. Du begynder denne procedure ved at gå til **Human Resources** > **Rekruttering** > **Masseansættelsesprojekter**. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
-1. Klik på Ny.
-2. Skriv en værdi i feltet Masseansættelsesprojekt.
-3. Skriv en værdi i feltet Beskrivelse.
-4. Angiv en dato i feltet Projektets startdato.
-5. Angiv en dato i feltet Projektets slutdato.
-6. Klik på Åbn projekt.
-7. Klik på Ja.
-8. Klik på Opret stillinger.
-9. Angiv antallet af stillinger, du vil oprette, i feltet Mængde.
-    * Startdatoen bliver ansættelsesdatoen for nye medarbejdere.  
-    * Slutdatoen bliver fratrædelsesdatoen for nye medarbejdere.  
-    * Angiv, om de nye arbejdere er medarbejdere eller kontraktansatte.  
-10. Klik på rulleknappen for at vælge det job, der skal oprettes stillinger til, i feltet Job.
+1. Klik på **Ny**.
+2. Skriv en værdi i feltet **Masseansættelsesprojekt**.
+3. Indtast en værdi i feltet **Beskrivelse**.
+4. Angiv en dato i feltet **Projektets start**.
+5. Angiv en dato i feltet **Projektets slutdato**.
+6. Klik på **Åbn projekt**.
+7. Klik på **Ja**.
+8. Klik på **Opret stillinger**.
+9. Angiv antallet af stillinger, du vil oprette, i feltet **Antal**.
+    * Startdatoen bliver **Ansættelsesdato** for nye arbejdere.  
+    * Slutdatoen bliver **Fratrædelsesdato** for nye arbejdere.  
+    * Angiv, om de nye arbejdere er **Medarbejdere** eller **Kontraktansatte**.  
+10. Klik på rulleknappen for at vælge det job, der skal oprettes stillinger til, i feltet **Job**.
 11. Find og vælg den ønskede post på listen.
 12. Klik op linket i den valgte række på listen.
     * Standardfuldtidsværdien kommer fra det valgte job. Du kan ændre dette efter behov.  
     * Du kan eventuelt vælge afdeling for de nye stillinger.  
-13. Klik på OK.
+13. Klik på **OK**.
 
 
 

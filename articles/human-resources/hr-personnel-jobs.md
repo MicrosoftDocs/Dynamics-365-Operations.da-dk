@@ -1,26 +1,26 @@
 ---
 title: Konfigurere komponenterne i et job
-description: I denne artikel beskrives de grundlæggende elementer, som en sag kan indeholde, og der gives eksempler på, hvordan du kan bruge disse elementer i din organisation.
-author: andreabichsel
-ms.date: 06/24/2021
+description: I dette emne beskrives de grundlæggende elementer, som en sag kan indeholde, og der gives eksempler på, hvordan du kan bruge disse elementer i din organisation.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 55f3edb53236734045e94ddd71461c739d3b5a8e0a2ac07a804dc2dfafabda57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754770"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731534"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Konfigurere komponenterne i et job
 
@@ -60,7 +60,7 @@ Jobfunktioner beskriver overordnede funktionelle kategorier og relaterede overor
 Du kan vedligeholde jobfunktioner på siden **Jobfunktioner**. Angiv en identifikationskode og en kort beskrivelse af jobfunktionen på siden **Jobfunktioner**.
 
 ## <a name="compensation"></a>Kompensation
-Hvis du vil tildele en plan for fast løn til en medarbejder, der har en stilling i et job, skal du angive kompensationsniveauer for jobbet. Kompensationsniveauet bruges, når minimum-, mellem- og maksimumbeløb angives i en kompensationsstruktur (kompensationsgitter). Når der oprettes plan for fast løn, vælges kompensationsstrukturen. Kompensationsstrukturen inkluderer også kompensationsniveauet. Når du vælger en plan for fast løn for en medarbejder, afhænger de kompensationsniveauer, der kan vælges, af det job, som medarbejderens stilling er tilknyttet. Du kan finde flere oplysninger om, hvordan du konfigurerer kompensation, under [Kompensationsplaner](hr-compensation-overview.md).
+Hvis du vil tildele en plan for fast løn til en medarbejder, der har en stilling i et job, skal du angive kompensationsniveauer for jobbet. **Kompensationsniveau** bruges, når minimum-, mellem- og maksimumbeløb angives i en kompensationsstruktur (kompensationsgitter). Når der oprettes plan for fast løn, vælges kompensationsstrukturen. Kompensationsstrukturen inkluderer også kompensationsniveauet. Når du vælger en plan for fast løn for en medarbejder, afhænger de kompensationsniveauer, der kan vælges, af det job, som medarbejderens stilling er tilknyttet. Du kan finde flere oplysninger om, hvordan du konfigurerer kompensation, under [Kompensationsplaner](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Jobkompetencer
 Jobkompetencer beskriver de kompetencer, der kræves for at udføre et job. Der skal knyttes et kompetenceniveau til hver jobkompetence. Kompetenceniveauerne er brugerdefinerede. De angiver det videns- eller færdighedsniveau, der kræves til kompetencen. Firmaer kan for eksempel oprette numeriske niveauer, for eksempel 1-5, hvor **1** betyder nybegynder, og **5** betyder ekspert. Alternativt kan firmaer oprette niveauer med navnet **Nybegynder**, **Mellem** eller **Ekspert**. Når kompetenceniveauet er angivet, kan vigtigheden af kompetencen også angives. Hvis en bogholder for eksempel skal have stor viden om Microsoft Excel, kan der oprettes en færdighed ved navn **Excel-viden**. Kompetenceniveauet kan derefter angives til **Mellem**, og vigtigheden kan angives til **Mest**.

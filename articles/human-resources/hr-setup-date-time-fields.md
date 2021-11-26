@@ -1,8 +1,8 @@
 ---
-title: Forstå dato- og klokkeslætsfelter
-description: Forstå, hvad du kan forvente, når du bruger dato- og klokkeslætsfelter i Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Forstå dato- og tidsfelter
+description: I dette emne forklares, hvad du kan forvente, når du bruger dato- og klokkeslætsfelter i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb011ca7b5f4c036b2f49875a256885182564c391c6dd263a0bfa70bbd29f4a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06c783c1e4a2961f1445909ea03d557c0985064e
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733534"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728583"
 ---
 # <a name="understand-date-and-time-fields"></a>Forstå dato- og tidsfelter
 
@@ -28,37 +28,37 @@ ms.locfileid: "6733534"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**Dato- og klokkeslætsfelter** er et grundkoncept i Dynamics 365 Human Resources. Det er vigtigt at forstå, hvordan du kan arbejde med **Dato- og klokkeslætsdata** i -formularer, Dataverse og eksterne kilder.
+**Dato- og klokkeslætsfelter** er et grundkoncept i Microsoft Dynamics 365 Human Resources. Det er vigtigt at forstå, hvordan du kan arbejde med **Dato- og klokkeslætsdata** på sider i Dataverse og eksterne kilder.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Forstå forskellen mellem feltdatatyper for dato og dato og klokkeslæt
 
-**Dato og klokkeslæt**-felter indeholder oplysninger om tidszoner, mens **Dato**-felter ikke gør det. **Dato**-felter viser de samme oplysninger et hvilket som helst sted. Når du angiver en dato i et **Dato**-felt, skriver Human Resources den samme dato i databasen.
+**Dato og klokkeslæt**-felter indeholder oplysninger om tidszoner, mens **Dato**-felter ikke gør det. **Dato**-felter viser de samme oplysninger et hvilket som helst sted. Når du angiver en dato i et **Dato**-felt, skrives den samme dato i databasen.
 
-Når Human Resources viser data i et **Dato og klokkeslæt**-felt, justeres dato og klokkeslæt ud fra den tidszone, der er angivet i formen **Brugerindstillinger** (**Generelt > Opsætning > Brugerindstillinger**). De dato- og klokkeslætsoplysninger, du angiver i feltet, er muligvis ikke de samme som de oplysninger, der skrives til databasen.
+Når data vises i et **Dato og klokkeslæt**-felt, justeres dato og klokkeslæt ud fra brugerens tidszone, der er angivet på siden **Brugerindstillinger** (**Generelt \> Opsætning \> Brugerindstillinger**). De dato- og klokkeslætsoplysninger, du angiver i feltet, er muligvis ikke de samme som de oplysninger, der skrives til databasen.
 
-[![Formularen Brugerindstillinger.](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![Siden Brugerindstillinger.](./media/Useroptionsform.png)](./media/Useroptionsform.png)
 
-## <a name="understanding-date-and-time-fields-in-forms"></a>Forstå Dato og klokkeslæt-felter i forme 
+## <a name="understanding-date-and-time-fields-on-pages"></a>Forståelse af Dato og klokkeslæt-felter på sider 
 
 Når der indtastes data i et **Dato og klokkeslæt**-felt, er de data, der vises på skærmen, ikke de samme som de data, der gemmes i databasen, hvis brugerens tidszone ikke er indstillet til UTC-tid (Coordinated Universal Time). Data i **Dato og klokkeslæt**-felter gemmes altid som UTC.
 
-[![UTC for arbejderformular.](./media/worker-form.png)](./media/worker-form.png)
+[![Arbejdersides UTC.](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Forstå Dato og klokkeslæt-felter i databasen 
 
-Når Human Resources skriver en **Dato og klokkeslæt**-værdi i databasen, gemmes dataene i UTC-tid. Det giver brugerne mulighed for at se alle **Dato og klokkeslæt**-data i forhold til den tidszone, der er defineret i deres brugerindstillinger.
+Når en **Dato og klokkeslæt**-værdi skrives i databasen, gemmes dataene i UTC-tid. Det giver brugerne mulighed for at se alle **Dato og klokkeslæt**-data i forhold til den tidszone, der er defineret i deres brugerindstillinger.
  
 I det foregående eksempel er starttidspunktet et tidspunkt, ikke en bestemt dato. Ved at ændre tidszonen for den bruger, der er logget på, fra GMT + 12:00 til GMT UTC, viser den samme post, der netop er oprettet, 30-4-2019 12:00:00 i stedet for 1-5-2019 12:00:00.
-  
+
 I nedenstående eksempel bliver medarbejder 000724 aktiv på samme tidspunkt uanset tidszone. Medarbejderen vil blive aktiv 30-4-2019 i GMT-tidszonen, hvilket er det samme som 1-5-2019 i GMT + 12:00 tidszonen. De refererer begge til samme tidspunkt og ikke en bestemt dato. 
 
-[![GMT for arbejderformular.](./media/worker-form2.png)](./media/worker-form2.png)
+[![Arbejdersides GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Dato og klokkeslæt-data i Data Management Framework, Excel, Dataverse og Power BI 
 
-Data Management Framework, Excel-tilføjelsesprogrammet, Dataverse og Power BI-rapportering er alle designet til at interagere med data direkte på databaseniveau. Da der ikke er nogen klient, der kan justere **Dato og klokkeslæt**-data til brugerens tidszone, er alle **Dato og klokkeslæt**-værdier i UTC-tid, hvilket kan medføre ukorrekte antagelser ved indtastning eller visning af data.  
+Data Management Framework (DMF), Excel-tilføjelsesprogram, Dataverse og Power BI-rapportering er alle designet til at interagere med data direkte på databaseniveau. Da der ikke er nogen klient, der kan justere **Dato og klokkeslæt**-data til brugerens tidszone, er alle **Dato og klokkeslæt**-værdier i UTC-tid, hvilket kan medføre ukorrekte antagelser ved indtastning eller visning af data.
  
-**Dato og klokkeslæt**-data, der sendes via DMF, Excel eller Dataverse, antages af databasen at være i UTC-format. Dette kan forårsage forvirring, når sendte værdi for **Dato og klokkeslæt** ikke vises som forventet, fordi den bruger, der ser dataene, ikke har brugerens tidszone angivet til UTC. 
+Når **Dato og klokkeslæt**-data sendes via DMF, Excel eller Dataverse, antager databasen, at de er i UTC-format. Men hvis brugere, der får vist dataene, ikke har deres brugertidszone angivet til UTC, vises værdien for sendt **Dato og klokkeslæt** ikke som forventet, og brugerne kan blive forvirret. 
  
 Det samme kan ske ved tilbageførsel, når dataene eksporteres. **Dato og klokkeslæt**-dataene i den eksporterede DMF-enhed kan være forskellige fra, hvad der vises i Dynamics-klienten. 
  
@@ -68,11 +68,11 @@ Når der bruges eksterne kilder, f.eks. DMF, til at vise eller oprette data, er 
 
 **Human Resources med brugerens tidszone indstillet til UTC**
 
-[![Arbejderformular angivet til UTC.](./media/worker-form3.png)](./media/worker-form3.png)
+[![Arbejdersider angivet til UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources med brugerens tidszone indstillet til GMT +12:00** 
 
-[![Arbejderformular angivet til GMT.](./media/worker-form4.png)](./media/worker-form4.png)
+[![Arbejdersider angivet til GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel via OData**
 
@@ -84,7 +84,7 @@ Når der bruges eksterne kilder, f.eks. DMF, til at vise eller oprette data, er 
 
 **DMF-eksport**
 
-[![DMF-eksport.](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF-eksport.](./media/DMFExport.png)](./media/DMFExport.png)
 
 **Excel via Dataverse**
 

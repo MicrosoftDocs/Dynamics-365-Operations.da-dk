@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 943eee819c08704212ceb5e02921c36e7f1032dc
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728621"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777833"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gemte standardvisninger for Supply Chain Management
 
@@ -47,15 +47,15 @@ I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet
 
 | Side | Visningsnavn | Få vist beskrivelsen | Funktionsnavn |
 |---|---|---|---|
-| Beholdningsliste | Finans | Denne forenklede visning giver dig mulighed for at fokusere på økonomiske oplysninger, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger til lagerstyring |
-| Beholdningsliste | Kvalitetskontrol | Denne forenklede visning giver dig mulighed for at fokusere på kvalitetskontrol, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger til lagerstyring |
-| Beholdningsliste | Tilgang | Denne forenklede visning giver dig mulighed for at fokusere på tilgangsoperationer, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger til lagerstyring |
-| Beholdningsliste | Levering | Denne forenklede visning giver dig mulighed for at fokusere på forsendelsesoperationer, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger til lagerstyring |
-| Transaktioner | Forenklet | Denne forenklede visning giver dig mulighed for at gennemse lagerstatus, uden at blive villedt af økonomiske oplysninger og andre felter, der bruges mindre ofte. | Gemte visninger til lagerstyring |
-| Flytteordrer | Levering | Denne forenklede visning giver dig mulighed for at fokusere på forsendelsesoperationer, når du administrerer flytteordrer. | Gemte visninger til lagerstyring |
-| Flytteordrer | Tilgang | Denne forenklede visning giver dig mulighed for at fokusere på modtagelsesoperationer, når du administrerer flytteordrer. | Gemte visninger til lagerstyring |
-| Flytteordrer | Kvalitetskontrol | Denne forenklede visning giver dig mulighed for at fokusere på kvalitetskontrol, når du administrerer flytteordrer. | Gemte visninger til lagerstyring |
-| Flytteordrer | Finans | Denne forenklede visning giver dig mulighed for at fokusere på økonomiske oplysninger, når du administrerer flytteordrer. | Gemte visninger til lagerstyring |
+| Beholdningsliste | Finans | Denne forenklede visning giver dig mulighed for at fokusere på økonomiske oplysninger, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Beholdningsliste | Kvalitetskontrol | Denne forenklede visning giver dig mulighed for at fokusere på kvalitetskontrol, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Beholdningsliste | Modtagelse | Denne forenklede visning giver dig mulighed for at fokusere på tilgangsoperationer, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Beholdningsliste | Forsendelse | Denne forenklede visning giver dig mulighed for at fokusere på forsendelsesoperationer, når du administrerer den tilgængelige lagerbeholdning. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Transaktioner | Forenklet | Denne forenklede visning giver dig mulighed for at gennemse lagerstatus, uden at blive villedt af økonomiske oplysninger og andre felter, der bruges mindre ofte. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Flytteordrer | Forsendelse | Denne forenklede visning giver dig mulighed for at fokusere på forsendelsesoperationer, når du administrerer flytteordrer. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Flytteordrer | Modtagelse | Denne forenklede visning giver dig mulighed for at fokusere på modtagelsesoperationer, når du administrerer flytteordrer. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Flytteordrer | Kvalitetskontrol | Denne forenklede visning giver dig mulighed for at fokusere på kvalitetskontrol, når du administrerer flytteordrer. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Flytteordrer | Finans | Denne forenklede visning giver dig mulighed for at fokusere på økonomiske oplysninger, når du administrerer flytteordrer. | Gemte visninger for Lagerstyring (aktiveret som standard fra og med version 10.0.21.) |
 
 ## <a name="saved-views-for-the-master-planning-module"></a>Gemte visninger for modulet Varedisponering
 
@@ -83,11 +83,11 @@ I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet
 
 | Side | Visningsnavn | Få vist beskrivelsen | Funktionsnavn |
 |---|---|---|---|
-| Listen Frigivne produkter | Produktoprettelse | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved oprettelse af produkter. | Gemte visninger af frigivne produkter |
-| Frigivne produktdetaljer | Produktoprettelse | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved oprettelse af produkter. | Gemte visninger af frigivne produkter |
-| Frigivne produktdetaljer | Administration af logistikoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af logistikoplysninger for produkter. | Gemte visninger af frigivne produkter |
-| Frigivne produktdetaljer | Administration af købsoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af indkøbsoplysninger for produkter. | Gemte visninger af frigivne produkter |
-| Frigivne produktdetaljer | Administration af salgsoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af salgsrelaterede oplysninger for produkter. | Gemte visninger af frigivne produkter |
+| Listen Frigivne produkter | Produktoprettelse | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved oprettelse af produkter. | Gemte visninger for frigivne produkter (aktiveret som standard fra og med version 10.0.21.) |
+| Frigivne produktdetaljer | Produktoprettelse | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved oprettelse af produkter. | Gemte visninger for frigivne produkter (aktiveret som standard fra og med version 10.0.21.) |
+| Frigivne produktdetaljer | Administration af logistikoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af logistikoplysninger for produkter. | Gemte visninger for frigivne produkter (aktiveret som standard fra og med version 10.0.21.) |
+| Frigivne produktdetaljer | Administration af købsoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af indkøbsoplysninger for produkter. | Gemte visninger for frigivne produkter (aktiveret som standard fra og med version 10.0.21.) |
+| Frigivne produktdetaljer | Administration af salgsoplysninger | En forenklet sidevisning, der kun indeholder de felter, der oftest bruges ved administration af salgsrelaterede oplysninger for produkter. | Gemte visninger for frigivne produkter (aktiveret som standard fra og med version 10.0.21.) |
 
 ## <a name="saved-views-for-the-production-control-module"></a>Gemte visninger for modulet Produktionsstyring
 
@@ -95,10 +95,10 @@ I følgende tabel beskrives de gemte visninger, der er tilgængelige for modulet
 
 | Side | Visningsnavn | Få vist beskrivelsen | Funktionsnavn |
 |---|---|---|---|
-| Siden med produktionsordrens stykliste | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring |
-| Siden med detaljer om produktionsordrer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring |
-| Siden med produktionsordreplukliste | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring |
-| Listeside med produktionsordrer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring |
+| Siden med produktionsordrens stykliste | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Siden med detaljer om produktionsordrer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Siden med produktionsordreplukliste | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring (aktiveret som standard fra og med version 10.0.21.) |
+| Listeside med produktionsordrer | Forenklet | Denne forenklede visning indeholder kun de felter, der oftest anvendes. På denne måde giver den et hurtigere overblik og en strømlinet arbejdsproces. | Gemte visninger for produktionsstyring (aktiveret som standard fra og med version 10.0.21.) |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Gemte visninger for modulet Salg og marketing
 

@@ -1,8 +1,8 @@
 ---
 title: Bruge eksterne data i likviditetsbudgetter
-description: I dette emne beskrives de opsætningstrin, du skal udføre, så eksterne data kan angives eller importeres i likviditetsbudgetter.
+description: I dette emne beskrives de opsætningstrin, der skal udføres, så eksterne data kan angives eller importeres i likviditetsbudgetter.
 author: rcarlson
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,28 +15,33 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 855f428ae8ce79f2b7ce9a6f3347cd454bad9566
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: dbfa04228cf63c0874a7d69af4e2b932544c0d7f
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386456"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752996"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts"></a>Bruge eksterne data i likviditetsbudgetter
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Eksterne data kan indtastes eller importeres i likviditetsbudgetter. I dette emne beskrives de opsætningstrin, der er specifikke for brugen af eksterne data, og som gør det muligt at inkludere de eksterne data i et likviditetsbudget.
 
 ## <a name="external-data-setup"></a>Ekstern opsætning af data
 
-Brug fanen **Ekstern kilde** på siden **Opsætning af likviditetsbudget** (**Likviditets- og bankstyring \> Likviditetsbudget**) til at angive indstillinger, der understøtter brugen af eksterne data i likviditetsbudgetter.
+Brug fanen **Ekstern kilde** på siden **Opsætning af likviditetsbudget** (**Likviditets- og bankstyring \> Likviditetsbudget \> Opsætning af likviditetsbudget**) til at angive indstillinger, der understøtter brugen af eksterne data i likviditetsbudgetter.
 
-Du kan finde flere oplysninger om opsætningen finder du i [Likviditetsbudget](../cash-bank-management/cash-flow-forecasting.md).
+Eksterne data kan indtastes eller importeres i likviditetsbudgetter. Før eksterne data angives eller importeres, skal der konfigureres eksterne kilder. Under fanen **Ekstern kilde** skal du konfigurere eksterne likviditetskategorier. En kategori kan enten være **Udgående** eller **Indgående**. **Likviditet** skal vælges som bogføringstype. I gitteret **Indstillinger for juridisk enhed** skal du vælge de juridiske enheder og de tilsvarende hovedkonti, som de eksterne likviditetskategorier gælder for.
 
-Hvis du vil angive eksterne data til likviditetsbudgetter, kan du bruge funktionen Åbn i Excel til at indtaste og redigere eksterne data. Vælg knappen **Eksterne data**, og vælg derefter enten **Tilføj eksterne data** eller **Rediger eksisterende eksterne data**. Når Microsoft Excel-filen åbnes, kan du angive oplysninger i følgende felter:
+Du kan finde flere oplysninger om, hvordan du konfigurerer likviditetsbudgetter, i [Likviditetsbudget](../cash-bank-management/cash-flow-forecasting.md).
 
-- **Adgangskode**
+## <a name="enter-external-data"></a>Angive eksterne data
+
+Hvis du vil angive og redigere eksterne data til likviditetsbudgetter, kan du bruge funktionen **Åbn i Excel**. Vælg knappen **Eksterne data**, og vælg derefter enten **Tilføj eksterne data** eller **Rediger eksisterende eksterne data** på siden **Opsætning af likviditetsbudget**. Når Microsoft Excel-filen åbnes, kan du angive oplysninger i følgende felter:
+
+- **Post-id** (entydigt)
 - **Beskrivelse** (valgfri)
 - **Navn på ekstern kilde** – Vælg en af de værdier på listen, som du definerede, da du konfigurerede Finance Insights.
 - **Juridisk enhed**

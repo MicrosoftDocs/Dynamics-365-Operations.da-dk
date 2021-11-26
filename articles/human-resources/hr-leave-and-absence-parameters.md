@@ -1,8 +1,8 @@
 ---
 title: Konfigurere parametre for orlov og fravær
-description: Definer personaleparametre for orlov og fravær i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 11/02/2020
+description: Dette emne beskriver, hvordan du definerer personaleparametre for orlov og fravær i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777953"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728851"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurere parametre for orlov og fravær
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er det en god ide at kontrollere indstillingerne for alle relaterede personaleparametre, herunder:
+Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er det en god ide at kontrollere indstillingerne for alle relaterede **Personaleparametre**, herunder:
 
 - Nummerserie for orlovsanmodninger
 - FMLA-indstillinger (Family Medical and Leave Act)
@@ -74,7 +74,7 @@ Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er de
 
     - Vælg **Saldoberegning** for at få vist saldi pr. dags dato eller pr. periodiseringsperiode. Hvis du vælger **Saldo pr. dags dato**, viser saldoen totalen for alle periodiseringer, justeringer og anmodninger pr. i dag. Hvis du vælger **Saldo pr. periodiseringsperiode**, viser saldoen totalen for alle periodiseringer, reguleringer og anmodninger pr. den periodiseringsperiode, der er defineret af frekvensen i orlovsplanen. 
 
-    - Angiv starttidspunktet for at overføre udløb af batchjob.  
+    - Angiv **Starttidspunkt** for batchjobbet **Udløb af overførsel**.  
     
     - Vælg **Ja** for **Tillad medarbejderne at købe orlov** og **Tillad medarbejderne at sælge orlov**. Hvis du vælger **Ja** for disse indstillinger, kan du oprette politikker for køb og salg af orlov og give medarbejdere mulighed for at sende anmodninger om køb og salg af orlov.
 

@@ -1,8 +1,8 @@
 ---
-title: Aktivere likviditetsforslag
+title: Aktivere budgetforslag
 description: Dette emne forklarer, hvordan du aktiverer funktionen budgetforslag i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ab65d1b0e366bfe6bdb07688f89d440662165063
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 3ad610feccf88ac88475a463fd1f10f4336b9407
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386480"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752706"
 ---
-# <a name="enable-budget-proposals"></a>Aktivere likviditetsforslag
+# <a name="enable-budget-proposal"></a>Aktivere budgetforslag
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne forklarer, hvordan du aktiverer funktionen budgetforslag i Finance Insights.
 
-1. Brug oplysninger fra miljøsiden i Microsoft Dynamics Lifecycle Services (LCS) til at oprette forbindelse til den primære forekomst af Azure SQL for det pågældende miljø. Kør følgende Transact-SQL (T-SQL)-kommando for at aktivere funktioner til sandkassemiljøet. (Du skal muligvis aktivere adgang til din IP-adresse i LCS, før du kan oprette fjernforbindelse til applikationsobjektserveren \[AOS\] .)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
-
-    > [!NOTE]
-    > Spring dette trin over, hvis du bruger version 10.0.20 eller senere, eller hvis du bruger en installation af Service Fabric. Finance Insights-team burde allerede have aktiveret funktionen til dig. Hvis du ikke kan se funktionen i arbejdsområdet **Funktionsstyring**, eller hvis der opstår problemer, når du forsøger at aktivere den, skal du kontakte <fiap@microsoft.com>.
-
-2. Åbn arbejdsområdet **Funktionsstyring**, og udfør følgende trin:
+1. Åbn arbejdsområdet **Funktionsstyring**, og udfør følgende trin:
 
     1. Vælg **Søg efter opdateringer**.
-    2. Søg efter **Budgetforslag**, og aktiver funktionen.
+    2. Søg efter **Budgetforslag** under fanen **Alle**. Hvis du ikke kan finde denne funktion, skal du søge efter **(Forhåndsversion) Budgetforslag**. 
+    3. Slå funktionen til.
 
-3. Gå til **Budget \> Opsætning \> Grundlæggende budget \> Budgetforslag (prøveversion)**, og vælg **Aktiver funktion**.
+2. Gå til **Budget \> Opsætning \> Grundlæggende budgettering \> Budgetforslag**, og vælg **Aktivér funktion**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

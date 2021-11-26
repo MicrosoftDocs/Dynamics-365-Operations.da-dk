@@ -2,7 +2,7 @@
 title: Forudsigelser om debitorbetalinger
 description: I dette emne beskrives muligheden for forudsigelse af betalinger, der hjælper med at forbedre forståelsen af kunders typiske betalingsmetoder. Denne funktion kan også hjælpe dig med at identificere de omstændigheder, der berettiger start af indsamlingsprocesser tidligere end normalt.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 21a773b37020aeff969469e29be68e7f7ef44d93
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386655"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752730"
 ---
 # <a name="customer-payment-predictions"></a>Forudsigelser om debitorbetalinger
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 I dette emne beskrives muligheden for forudsigelse af betalinger, der hjælper med at forbedre forståelsen af kunders typiske betalingsmetoder. Denne funktion kan også hjælpe dig med at identificere de omstændigheder, der berettiger start af indsamlingsprocesser tidligere end normalt.
 
@@ -67,11 +68,5 @@ I mange virksomheder er rykkerprocessen blevet en reaktiv aktivitet. Med andre o
 ## <a name="methodology"></a>Metode
 
 Tidligere har det ofte været vanskeligt at udvikle og installere en kunstig intelligens (AI)-løsning. Processen har krævet et team, der omfatter dataforskere, eksperter på området (SME'er) og ingeniører, der arbejder i længere tid på at formulere, udvikle, implementere og vedligeholde en brugbar AI-løsning. Med kundens betalingsforudsigelser er det nemt at implementere og bruge en AI-løsning i Microsoft Dynamics 365 Finance. Microsoft pakker AI-løsninger på forhånd, der er bygget oven på Microsoft AI Builder. Brugerne kan derfor anvende AI-løsningen med et enkelt klik med musen for at udnytte fordelene ved intelligent forudsigelser. Hvis du ikke er tilfreds med nøjagtigheden af forudsigelserne, kan en superbruger (igen med blot et enkelt klik) angive erfaringen med udvidelsen AI Builder og derefter vælge eller fravælge de felter, der bruges til at oprette forudsigelser. Når du er færdig, kan du "træne" modellen og udgive ændringerne. Den nyoplærte model vil automatisk blive valgt til at generere forudsigelser i Dynamics 365 Finance.
-
-## <a name="release-details"></a>Frigiv detaljer
-
-Financial Insights, offentlig prøveversion er tilgængelig for prøveimplementeringer i USA, Europa og Storbritannien. Microsoft tilføjer trinvist understøttelse af yderligere områder.
-
-De offentlige prøveversionsfunktioner kan og bør kun aktiveres i sandkassemiljøer i niveau 2. Opsætnings- og AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 966a878a7e5b0a92d6d53e67bea19c50274087a4416980859175b12c6fdfbcdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764830"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778515"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -39,7 +39,7 @@ De fleste funktioner for ordreforslag er tilgængelige i alle standardinstallati
 
 Parallel autorisation gør det muligt at gennemføre autorisationsprocessen hurtigere ved at parallelisere den over flere tråde. Denne metode kan være nyttig, når mange ordreforslag skal autoriseres.
 
-Du kan gøre denne funktionalitet tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Parallel autorisation af ordreforslag*.
+Du kan gøre denne funktionalitet tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Parallel autorisation af ordreforslag*. (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Aktivere autorisation af ordreforslag med filtrering
 
@@ -51,7 +51,7 @@ Du kan gøre denne funktion tilgængelig i systemet ved at gå til [Funktionssty
 
 Med automatisk autorisation kan du autorisere ordreforslag som en del af varedisponeringsprocessen inden for tidsgrænsen for autorisation. Automatisk autorisation understøttes altid i det planlægningsprogram, der er indbygget Supply Chain Management. Hvis du også vil bruge Planlægningsoptimering, skal du aktivere funktionen.
 
-Du kan gøre denne funktion tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Automatisk autorisation for Planlægningsoptimering*.
+Du kan gøre denne funktion tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Automatisk autorisation for Planlægningsoptimering*. (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
 
 ## <a name="manually-firm-planned-orders"></a>Autorisere ordreforslag manuelt
 

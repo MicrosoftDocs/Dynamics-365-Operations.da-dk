@@ -2,7 +2,7 @@
 title: Oversigt over organisationer og organisationshierarkier
 description: Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af.
 author: sericks007
-ms.date: 07/25/2019
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74aa2736b4cfb11039ea1cee3f62e74cf4928a1b27cea16e7e0e86f66bdddd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
+ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715983"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7798340"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Oversigt over organisationer og organisationshierarkier
 
@@ -64,9 +64,19 @@ Et team er en organisation, hvis medlemmer deler et fælles ansvar, en fælles i
 
 Opret organisationshierarkier for at få vist og rapportere om forskellige perspektiver i virksomheden. Du kan f.eks. oprette et hierarki for juridiske enheder til skattemæssig, juridisk eller lovpligtig rapportering. Opret et hierarki, der er baseret på driftsenheder, for at rapportere økonomiske oplysninger, der ikke er juridisk påkrævet, men bruges til intern kontrol. Du kan f.eks. oprette et indkøbshierarki for at kontrollere indkøbspolitikker, regler og forretningsprocesser.
 
+> [!NOTE]
+> Når der er føjet en driftsenhed til et hierarki, kan driftsenheden ikke slettes. 
+
 Hvert hierarki er tildelt et formål. Formålet med et hierarki afgør, hvilke organisationstyper der kan medtages i hierarkiet. Formålet definerer også de anvendelsesscenarier, hierarkiet kan bruges i.
 
 Organisationer i et hierarki kan dele parametre, politikker og transaktioner. En organisation kan nedarve eller tilsidesætte parametrene for dens overordnede organisation. Delte masterdata, som f.eks. produkter og adressekartoteker, gælder for hele organisationen og kan ikke tilsidesættes for individuelle organisationer. Oprettelse af organisationer og hierarkier kræver omhyggelig planlægning. Du kan finde flere oplysninger under [Planlæg dit organisationshierarki](plan-organizational-hierarchy.md).
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+- [Planlægge dit organisationshierarki](plan-organizational-hierarchy.md)
+- [Oprette et organisationshierarki](tasks/create-organization-hierarchy.md)
+- [Oprette en juridisk enhed](tasks/create-legal-entity.md)
+- [Oprette en driftsenhed](tasks/create-operating-unit.md)
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386679"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781338"
 ---
 # <a name="party-and-global-address-book"></a>Part og globalt adressekartotek
 
@@ -30,14 +30,14 @@ En part er en person eller organisation, der er involveret i en virksomhed. Når
 
 + **Arbejder** – En medarbejder. Et eksempel er en medarbejder hos Contoso.
 + **Leverandør** – En leverandørorganisation eller en enkeltmandsvirksomhed, der leverer varer eller tjenester til en virksomhed. Hvis Fabrikam f.eks. sælger varer til Contoso, er Fabrikam leverandør til Contoso.
-+ **Kontakt** – En person, der kan kontaktes. Hvis Contoso f.eks. køber varer fra Fabrikam, vil medarbejdere hos Contoso henvende sig til kontakten hos Fabrikam.
++ **Kontakt** – En person, der kan kontaktes. Hvis Contoso f.eks. køber varer fra Fabrikam, kontakter medarbejdere hos Contoso kontakten hos Fabrikam.
 + **Kunde** – En kunde er en person eller virksomhed, der køber ting fra en anden virksomhed. Hvis Contoso f.eks. køber varer fra Fabrikam, er Contoso kunde hos Fabrikam.
 
 Partmodellen bruges ofte til at repræsentere mellemstore til komplekse relationer mellem organisationer og personer, især når en part spiller mere end én rolle. Her er nogle almindelige eksempler:
 
-+ En part kan både være kunde og leverandør. I Nordamerika sælger Fabrikam f.eks. strømledninger til Contoso og køber samlede højttalere hos Contoso. I Europa sælger Fabrikam reservedele til Contoso, men køber ikke noget hos Contoso.
++ En part kan både være kunde og leverandør. I Nordamerika sælger Fabrikam f.eks. elledninger til Contoso og køber samlede højttalere hos Contoso. I Europa sælger Fabrikam reservedele til Contoso, men køber ikke noget hos Contoso.
 + En part kan både være medarbejder og kunde. En medarbejder hos Contoso køber f.eks. elektronik fra Contoso til personlig brug.
-+ Der kan være en mange til mange-relation (N:N) mellem en person og en organisation. Fabrikam leverer f.eks. serviceteknikere og ansætter en placeringskoordinator. Placeringskoordinatoren svarer til serviceteknikere, der håndterer anmodninger fra flere af Fabrikams kunder. Contoso er en af Fabrikams kunder. Når Contoso skal bruge en servicespecialist, kontakter virskomheden placeringskoordinatoren, som derefter håndterer anmodningen. Da placeringskoordinatoren håndterer anmodninger for alle kunder, er der tale om et N:N-forhold.
++ Der kan være en mange til mange-relation (N:N) mellem en person og en organisation. Fabrikam leverer f.eks. serviceteknikere og ansætter en placeringskoordinator. Placeringskoordinatoren svarer til serviceteknikere, der håndterer anmodninger fra flere af Fabrikams kunder. Contoso er en af Fabrikams kunder. Når Contoso skal bruge en servicespecialist, kontakter virksomheden placeringskoordinatoren, som derefter håndterer anmodningen. Da placeringskoordinatoren håndterer anmodninger for alle kunder, er der tale om et N:N-forhold.
 
 Følgende illustration viser datamodellen for partsmodellen:
 

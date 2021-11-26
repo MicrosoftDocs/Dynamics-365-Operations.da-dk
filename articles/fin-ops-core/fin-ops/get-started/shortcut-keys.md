@@ -2,7 +2,7 @@
 title: Tastaturgenveje
 description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finance and Operations-apps.
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
+ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647530"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7800187"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
@@ -128,8 +128,10 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 ## <a name="grid-shortcuts"></a>Genvejstaster til gitteret
 
-| Hvis du vil gøre dette                                                                                                             | Tryk på                           |
+| Hvis du vil gøre dette                                                                                                             | Tryk på                            |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Lodret rulning                                                                                                     | Musehjulet                     |
+| Vandret rulning                                                                                                   | Skift + Musehjulet             |
 | Flytte til næste/forrige kolonne                                                                                       | Tabulator/Skift+tabulator                 |
 | Flytte til næste/forrige række                                                                                          | Pil op/pil ned           |
 | Flyt til den næste/forrige række uden at vælge<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote> | Ctrl+pil op/Ctrl+pil ned |
@@ -141,15 +143,15 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Flyt til den første post                                                                                               | Ctrl+Home                       |
 | Flyt til den sidste post                                                                                                | Ctrl+End                        |
 | Markér eller fjern alle rækker                                                                                               | Ctrl+Skift+M                    |
-| Flyt til den første markerede række                                                                                           | Alt+Shift+M, F                    |
-| Flyt til den næste markerede række                                                                                            | Alt+Shift+M, L                    |
-| Flyt til den forrige markerede række                                                                                        | Alt+Shift+M, P                    |
-| Flyttet til den sidst markerede række                                                                                           | Alt+Shift+M, N                    |
+| Flyt til den første markerede række                                                                                           | Alt+Shift+M, F                  |
+| Flyt til den næste markerede række                                                                                            | Alt+Shift+M, L                  |
+| Flyt til den forrige markerede række                                                                                        | Alt+Shift+M, P                  |
+| Flyttet til den sidst markerede række                                                                                           | Alt+Shift+M, N                  |
 | Udføre standardhandlingen i et gitter<blockquote>[!NOTE] Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links.</blockquote> | Enter                           |
 | Skifte fokus mellem den markerede række og rækken med kolonneoverskrifter                                                               | Alt+Skift+H                     |
 | Gør den aktuelle kolonne større/mindre (med fokus i kolonneoverskriftsrækken)                                                  | Højre pil eller venstre pil        |
 | Åbn gitterfiltrering for den aktuelle kolonne (med fokus i kolonneoverskriftsrækken)                                              | Enter                           |
-| Tilpasse størrelsen på den aktuelle kolonne, så den passer til indholdet (med fokus på overskriftsrækken)                                           | T                               |
+| Tilpasse størrelsen på den aktuelle kolonne, så den passer til indholdet (med fokus på overskriftsrækken)                                           | A (eller dobbeltklik på kolonnens størrelseshåndtag) |
 
 ## <a name="input-control-shortcuts"></a>Genveje for inputstyring
 

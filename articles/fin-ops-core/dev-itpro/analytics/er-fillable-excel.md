@@ -2,7 +2,7 @@
 title: Designe en konfiguration til at generere dokumenter i Excel-format
 description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488132"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731632"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -85,6 +85,8 @@ Under fanen **Tilknytning** i ER-operationsdesigneren kan du konfigurere egenska
 
 Komponenten **Område** angiver et Excel-område, der skal styres af denne ER-komponent. Navnet på området er defineret i **Excel-området** for denne komponent.
 
+### <a name="replication"></a>Replikering
+
 Egenskaben **Replikeringsretning** angiver, om og hvordan området skal gentages i et genereret dokument:
 
 - Hvis egenskaben **Replikeringsretning** er angivet til **Ingen replikering**, gentages det relevante Excel-område ikke i det genererede dokument.
@@ -92,6 +94,8 @@ Egenskaben **Replikeringsretning** angiver, om og hvordan området skal gentages
 - Hvis egenskaben **Replikeringsretning** er angivet til **Vandret**, gentages det relevante Excel-område i det genererede dokument. Alle replikerede områder placeres til højre for det oprindelige område i en Excel-skabelon. Antallet af gentagelser defineres af antallet af poster i en datakilde for den **Postlistetype**, der er bundet til denne ER-komponent.
 
 Hvis du vil vide mere om vandret replikering, skal du følge trinnene i [Brug vandrette, udvidelige områder til dynamisk at tilføje kolonner i Excel-rapporter](tasks/er-horizontal-1.md).
+
+### <a name="nested-components"></a>Indlejrede komponenter
 
 Komponenten **Område** kan have andre indlejrede ER-komponenter, der bruges til at angive værdier i de relevante navngivne Excel-områder.
 
@@ -105,11 +109,40 @@ Komponenten **Område** kan have andre indlejrede ER-komponenter, der bruges til
     > [!NOTE]
     > Brug dette mønster til at gøre Excel-programmet i stand til at formatere angivne værdier på basis af landestandarden på den lokale computer, der åbner det udgående dokument.
 
+### <a name="enabling"></a>Aktivering
+
 Under fanen **Tilknytning** i ER-operationsdesigneren kan du konfigurere egenskaben **Aktiveret** for en **Område**-komponent for at angive, om komponenten skal placeres i et genereret dokument:
 
 - Hvis et udtryk af egenskaben **Aktiveret** er konfigureret til at returnere **Sand** på kørselstidspunktet, eller, hvis der slet ikke er konfigureret et område, vil det relevante område blive udfyldt i det genererede dokument.
 - Hvis et udtryk af egenskaben **Aktiveret** er konfigureret til at returnere **Falsk** på kørselstidspunktet, og hvis dette område ikke repræsenterer rækker eller kolonner i deres helhed, vil det relevante område ikke blive udfyldt i det genererede dokument.
 - Hvis et udtryk af egenskaben **Aktiveret** er konfigureret til at returnere **Falsk** på kørselstidspunktet, og hvis dette område repræsenterer rækker eller kolonner i deres helhed, vil det generede dokument indeholde disse rækker og kolonner som skjulte rækker og kolonner.
+
+### <a name="resizing"></a>Tilpasning af størrelse
+
+Du kan konfigurere Excel-skabelonen til at bruge celler til at vise tekstdata. For at sikre, at hele teksten i en celle er synlig i et genereret dokument, kan du konfigurere den pågældende celle, så teksten automatisk ombrydes i den. Du kan også konfigurere den række, der indeholder den pågældende celle, til automatisk at justere dens højde, hvis den tekst, der ombrydes, ikke er helt synlig. Der er flere oplysninger i afsnittet "Ombryde tekst i en celle" i [Rette data, der afskæres i celler](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
+
+> [!NOTE]
+> På grund af en kendt [Excel-begrænsning](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), selvom du konfigurerer celler til at ombryde tekst, og du konfigurerer de rækker, der indeholder disse celler, til automatisk at justere deres højde, så de passer til den tekst, der ombrydes, kan du muligvis ikke bruge Excel-funktionerne **Autotilpas** og **Ombryd tekst** til flettede celler og rækker, der indeholder dem. 
+
+Fra og med Dynamics 365 Finance version 10.0.23 kan du tvinge ER til i et genereret dokument at beregne højden på hver række, der blev konfigureret, så den automatisk passer til indholdet af indlejrede celler, når den pågældende række indeholder mindst én flettet celle, der er konfigureret til at ombryde teksten i den. Den beregnede højde bruges derefter til at ændre størrelsen på rækken for at sikre, at alle celler i rækken er synlige i det genererede dokument. Benyt følgende fremgangsmåde, hvis du vil begynde at bruge denne funktion, når du kører ER-formater, der er konfigureret til at bruge Excel-skabeloner, til at generere udgående dokumenter.
+
+1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+2. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Parametre til elektronisk rapportering** i sektionen **Relaterede links**.
+3. På siden **Parametre til elektronisk rapportering** under fanen **Kørsel** skal du vælge **Ja** i indstillingen **Tilpas rækkehøjde automatisk** .
+
+Når du vil ændre denne regel for et enkelt ER-format, skal du opdatere kladdeversionen af det pågældende format ved at følge disse trin.
+
+1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+2. På siden **Lokaliseringskonfigurationer** skal du vælge **Rapporteringskonfigurationer** i sektionen **Konfigurationer**.
+3. På siden **Konfigurationer** i konfigurationstræet i venstre rude skal du vælge en ER-konfiguration, der er beregnet til at bruge en Excel-skabelon til at generere udgående dokumenter.
+4. I oversigtspanelet **Versioner** skal du vælge den konfigurationsversion, der har statussen **Kladde**.
+5. Vælg **Designer** i handlingsruden.
+6. Vælg den Excel-komponent, der er knyttet til en Excel-skabelon, i formattræet i venstre rude på siden **Formatdesigner**.
+7. Vælg en værdi i feltet **Juster rækkehøjde** under fanen **Format** for at angive, om ER skal tvinges under kørslen til at ændre højden på rækker i et udgående dokument, der genereres af det redigerede ER-format:
+
+    - **Standard** – Brug den generelle indstilling, der er konfigureret i feltet **Tilpas rækkehøjde automatisk** på siden **Parametre for elektronisk rapportering**.
+    - **Ja** – Tilsidesæt den generelle indstilling, og ret rækkehøjden ved kørsel.
+    - **Nej** – Tilsidesæt den generelle indstilling, og ret ikke rækkehøjden ved kørsel.
 
 ## <a name="cell-component"></a>Cellekomponent
 

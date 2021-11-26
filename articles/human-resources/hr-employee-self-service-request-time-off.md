@@ -1,8 +1,8 @@
 ---
 title: Anmode om fridag
 description: Anmod om fridag i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8fead1105412e5fe967a19632e1875058f4026c722140eaed056c5412c6558f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e12ac21e80c46f5cb5f231aadab7272fc279194
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756094"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771406"
 ---
 # <a name="request-time-off"></a>Anmode om fridag
 
@@ -42,7 +42,7 @@ Du kan sende anmodninger om fridage, få vist din ferie- og orlovssaldi og få v
 
 6. Vælg **Send**, når du er klar til at sende din anmodning. Ellers skal du vælge **Gem kladde**.
 
-Medarbejdere, der indsender en ny orlovsanmodning, kan vælge forskellige orlovstyper for at oprette deres orlovsanmodning. Alle orlovstyper, der vælges som del af en enkelt orlovsanmodning, skal dog have samme orlovsenhed. Medarbejdere kan få vist orlovsenheden for hver orlovstype i formularen **Anmodning om fridag**.
+Medarbejdere, der indsender en ny orlovsanmodning, kan vælge forskellige orlovstyper for at oprette deres orlovsanmodning. Alle orlovstyper, der vælges som del af en enkelt orlovsanmodning, skal dog have samme orlovsenhed. Medarbejdere kan få vist orlovsenheden for hver orlovstype på siden **Anmodning om fravær**.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Føje en vedhæftet fil til en eksisterende anmodning
 
@@ -58,13 +58,13 @@ Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæ
 
 1. I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere** (...) i feltet **Fritidssaldi**.
 
-2. Hvis du vil have vist dine godkendte anmodninger om fridage, skal du vælge **Godkendt fritid**. Hvis du vil have vist dine ventende anmodninger om fridage, skal du vælge **Anmodninger om fridage**.
+2. Hvis du vil have vist dine godkendte anmodninger om fravær, skal du vælge **Godkendt fravær**. Hvis du vil have vist dine ventende anmodninger om fravær, skal du vælge **Anmodninger om fravær**.
 
-## <a name="cancel-time-off-requests"></a>Annullere anmodninger om fridage
+## <a name="cancel-time-off-requests"></a>Annullere anmodninger om fravær
 
 1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Vis fridage** i feltet **Fritidssaldi**.
 
-2. I formularen **Fridage** skal du vælge en eller flere anmodninger om fridage, som skal annulleres.
+2. På siden **Fravær** skal du vælge en eller flere anmodninger om fravær, som skal annulleres.
 
 3. Vælg knappen **Annuller**.
 

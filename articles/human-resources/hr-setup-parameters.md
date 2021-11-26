@@ -1,8 +1,8 @@
 ---
 title: Konfigurere personaleparametre
 description: Dette emne forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739245"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771429"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurere personaleparametre
 
@@ -65,7 +65,7 @@ Indstillingerne på fanen **Generelt** definerer visningen af oplysninger om fra
 
 Indstillingerne under fanen **Rekruttering** definerer de dokumenttyper, der bruges til korrespondance, som automatisk sendes til ansøgere. Du kan også angive det rekrutteringsprojekt, der bruges til uopfordrede ansøgninger.
 
-Den periode, der er defineret for det aldersfordelte rekrutteringsprojekt bestemmer rekrutteringsprojekter, der er medtaget i feltet **Aldersfordelte projekter** i arbejdsområdet **Rekrutteringsstyring**. Den periode, der er defineret for advarsel om deadline for ansøgning bruges til at få vist rekrutteringsprojekter, der nærmer sig deres ansøgningsfrist i feltet den **Deadline for ansøgning nærmer sig** i arbejdsområdet **Rekruttering**.
+Den periode, der er defineret I **Aldersfordelt rekrutteringsprojekt** bestemmer, hvilke rekrutteringsprojekter der er medtaget i feltet **Aldersfordelte projekter** i arbejdsområdet **Rekrutteringsstyring**. Den periode, der er defineret for advarsel om deadline for ansøgning bruges til at vise rekrutteringsprojekter, der nærmer sig deres ansøgningsfrist i feltet den **Deadline for ansøgning nærmer sig** i arbejdsområdet **Rekruttering**.
 
 Du kan finde flere oplysninger om rekruttering under [Rekruttere jobkandidater](hr-personnel-recruit.md).
 
@@ -107,20 +107,20 @@ Du kan angive FMLA-berettigelseskrav og FMLA-berettigelsestimer under fanen FMLA
 
 ## <a name="employee-self-service"></a>Medarbejderselvbetjening
 
-Indstillingerne under fanen **Medarbejderselvbetjening** har indflydelse på, hvordan medarbejderens selvbetjening vises for medarbejderne. Under denne fane kan du:
+Indstillingerne under fanen **Medarbejderselvbetjening** har indflydelse på, hvordan **Medarbejderselvbetjening** vises for medarbejderne. Du kan udføre følgende opgaver under denne fane:
 
-- Angive et navn i arbejdsområdet Medarbejderselvbetjening
+- Angive et navn i arbejdsområdet **Medarbejderselvbetjening**
 - Vælge, hvilke oplysninger en leder kan angive for medarbejdere
 - Tilføje nyttige links for medarbejdere
 - Begrænse medarbejdere i at tilføje eller redigere forretningskontaktoplysninger. Du kan finde flere oplysninger i [Begrænse redigering af personlige oplysninger](hr-employee-self-service-restrict-editing.md).
 
-Du kan finde flere oplysninger om opsætning af medarbejderselvbetjening i [Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md).
+Du kan finde flere oplysninger om opsætning af **Medarbejderselvbetjening** i [Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md).
 
 ![Fanen Medarbejderselvbetjening.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Selvbetjening for leder
 
-Indstillingerne under fanen **Selvbetjening for leder** har indflydelse på, hvad lederne kan se i Selvbetjening for leder. Under denne fane kan du konfigurere følgende indstillinger:
+Indstillingerne under fanen **Selvbetjening for leder** har indflydelse på, hvad lederne kan se i **Selvbetjening for leder**. Under denne fane kan du konfigurere følgende indstillinger:
 
 - Intervallet for udløb af poster
 - Informationschefer kan se udløb af poster
@@ -128,13 +128,13 @@ Indstillingerne under fanen **Selvbetjening for leder** har indflydelse på, hva
 - Visninger af fratrædende arbejdere
 - Nyttige links for ledere
 
-Du kan finde flere oplysninger om opsætning af lederselvbetjening i [Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md).
+Du kan finde flere oplysninger om opsætning af **Lederselvbetjening** i [Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md).
 
 ![Fanen Selvbetjening for leder.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Personalegodeadministration
 
-Under fanen Frynsegodeadministration kan du konfigurere mailindstillinger for Frynsegodeadministration. Du kan finde flere oplysninger om konfiguration og brug af Frynsegodeadministration i [Oversigt over Administration af frynsegoder](hr-benefits-management-overview.md).
+Under fanen **Frynsegodeadministration** kan du konfigurere mailindstillinger for Frynsegodeadministration. Du kan finde flere oplysninger om konfiguration og brug af Frynsegodeadministration i [Oversigt over Administration af frynsegoder](hr-benefits-management-overview.md).
 
 ![Fanen Frynsegodeadministration.](./media/hr-setup-parameters-benefits-management.png)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 259ed49b9bdfb70ea357a7d20ea7ae8b141978cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576946"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777734"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobkort for enheder
 
@@ -34,19 +34,19 @@ Nogle få af de indstillinger, der er beskrevet i dette emne, skal være aktiver
 
 Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i rækkefølge):
 
-1. Id for færdigmelding tilføjet i jobkortenheden
+1. Nummerplade til færdigmelding er føjet til jobkortenheden (fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret).
 1. Aktivér automatisk generering af id-nummer ved færdigmelding i jobkortenheden
 
 ### <a name="print-label"></a>Udskriv label
 
 Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i rækkefølge):
 
-1. Id for færdigmelding tilføjet i jobkortenheden
+1. Nummerplade til færdigmelding er føjet til jobkortenheden (fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret).
 1. Udskriv etiket fra jobkortenhed
 
 ### <a name="allow-locking-of-touch-screen"></a>Tillad låsning af berøringsskærm
 
-Hvis du vil gøre denne funktion tilgængelig, skal du aktivere den følgende funktion i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Hvis du vil bruge denne funktion, skal du sørge for, at følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) er aktiveret:
 
 - Funktion til låsning af jobkortenhed og jobkortterminal, så de kan renses
 

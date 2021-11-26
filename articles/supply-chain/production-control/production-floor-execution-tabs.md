@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6752d79a71a673fedb0caff7b6ad1023093269c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
+ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570171"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790860"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designe grænsefladen til kørsel af produktion
 
@@ -53,13 +53,13 @@ Følg disse trin for at oprette og konfigurere en ny fane:
 
 1. Foretag følgende indstillinger i overskriften på siden:
 
-    - **Fanenavn** - Angiv et navn til fanen.
-    - **Hovedvisning** - Vælg mellem de to foruddefinerede joblister (*Aktive job*, *Alle job* eller *Min maskine*).
-    - **Detaljevisning** - Vælg mellem en tom værdi eller **Jobdetaljer**. Hvis du vælger den tomme værdi, vil der ikke være detaljeret visning under fanen. Hvis du vælger **Jobdetaljer**, indeholder detaljeret visning en detaljeret beskrivelse af det job, der er valgt på joblisten i hovedvisningen.
+    - **Fanenavn** – Angiv et navn til fanen.
+    - **Hovedvisning** – Vælg mellem de foruddefinerede joblister (*Aktive job*, *Alle job* og *Min maskine*).
+    - **Detaljevisning** – Vælg mellem en tom værdi eller **Jobdetaljer**. Hvis du vælger den tomme værdi, vil der ikke være detaljeret visning under fanen. Hvis du vælger **Jobdetaljer**, indeholder detaljeret visning en detaljeret beskrivelse af det job, der er valgt på joblisten i hovedvisningen.
 
 1. Vælg, hvilke knapper der skal være tilgængelige på den primære værktøjslinje, i sektionen **Primær værktøjslinje**. I kolonnen **Tilgængelige handlinger** vises en liste over alle de knapper, der kan tilføjes. I kolonnerne **Valgte handlinger** vises en liste over alle de knapper, der er medtaget i den aktuelle konfiguration. Brug knapperne mellem kolonnerne til at flytte markerede elementer mellem kolonnerne efter behov. Brug op- og ned-knapperne ud for kolonnen **Valgte handlinger** til at styre den rækkefølge, som knapperne vises i i brugergrænsefladen.
 
-1. Vælg, hvilke knapper der skal være tilgængelige på den sekundære værktøjslinje, i sektionen **Sekundær** **værktøjslinje**. I kolonnen **Tilgængelige handlinger** vises en liste over alle de knapper, der kan tilføjes. I kolonnerne **Valgte handlinger** vises en liste over alle de knapper, der er medtaget i den aktuelle konfiguration. Brug knapperne mellem kolonnerne til at flytte markerede elementer mellem kolonnerne efter behov. Brug op- og ned-knapperne ud for kolonnen **Valgte handlinger** til at styre den rækkefølge, som knapperne vises i i brugergrænsefladen.
+1. Vælg, hvilke knapper der skal være tilgængelige på den sekundære værktøjslinje, i sektionen **Sekundær værktøjslinje**. I kolonnen **Tilgængelige handlinger** vises en liste over alle de knapper, der kan tilføjes. I kolonnerne **Valgte handlinger** vises en liste over alle de knapper, der er medtaget i den aktuelle konfiguration. Brug knapperne mellem kolonnerne til at flytte markerede elementer mellem kolonnerne efter behov. Brug op- og ned-knapperne ud for kolonnen **Valgte handlinger** til at styre den rækkefølge, som knapperne vises i i brugergrænsefladen.
 
 ## <a name="associate-a-tab-with-a-configuration"></a>Knytte en fane til en konfiguration
 

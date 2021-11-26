@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715248"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777931"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -70,10 +70,10 @@ I følgende tabel vises de funktioner, der som standard er slået til i 10.0.21.
 | Annullering af overførselsordre | 01-09-2021 | 13-07-2020 | Til som standard | Lager- og lokationsstyring |
 | Lås lagerkladde op | 01-09-2021 | 17-08-2020 | Til som standard | Lager- og lokationsstyring |
 | Gemte visninger til lagerstyring | 01-09-2021 | 9/30/2020 | Til som standard | Lager- og lokationsstyring |
-| Navigering til styklisteversion fra styklistelinjer. | 01-09-2021 | 11-11-2019 | Til som standard | Lager- og lokationsstyring |
-| Brug af måleenhed og enhedsantal i lagerkladder. | 01-09-2021 | 11-11-2019 | Til som standard | Lager- og lokationsstyring |
+| Navigering til styklisteversion fra styklistelinjer | 01-09-2021 | 11-11-2019 | Til som standard | Lager- og lokationsstyring |
+| Brug af måleenhed og enhedsantal i lagerkladder | 01-09-2021 | 11-11-2019 | Til som standard | Lager- og lokationsstyring |
 | Tillad tomme batchattributværdier | 01-09-2021 | 11-11-2019 | Til som standard | Lager- og lokationsstyring |
-| Automatisk forøgelse af linjenumre for flytteordrelinjer for lager. | 01-09-2021 | 11-10-2019 | Til som standard | Lager- og lokationsstyring |
+| Automatisk forøgelse af linjenumre til flytteordrelinjer for lager | 01-09-2021 | 11-10-2019 | Til som standard | Lager- og lokationsstyring |
 | Arbejdsgang for godkendelse af lagerkladde | 01-09-2021 | 06-01-2020 | Til som standard | Lager- og lokationsstyring |
 | Aktivér advarselsfunktion for parametre for styring af lagerkvalitet | 01-09-2021 | 07-10-2019 | Til som standard | Lager- og lokationsstyring |
 | Opret flytteordre fra salgslinje. | 01-09-2021 | 31-08-2019 | Til som standard | Lager- og lokationsstyring |
@@ -93,12 +93,12 @@ I følgende tabel vises de funktioner, der som standard er slået til i 10.0.21.
 | Gemte visninger af frigivne produkter | 01-09-2021 | 9/30/2020 | Til som standard | Administration af produktoplysninger |
 | Forbedringer af dialogboksene Godkend og Overførselsjob | 01-09-2021 | 11-10-2019 | Til som standard | Produktionsstyring |
 | Id for færdigmelding tilføjet i jobkortenheden | 01-09-2021 | 31-08-2019 | Til som standard | Produktionsstyring |
-| Den nye knap Stop pause er tilføjet på siden Jobkortsterminal. | 01-09-2021 | 19-02-2020 | Til som standard | Produktionsstyring |
+| Den nye knap Stop pause er tilføjet på siden Jobkortsterminal | 01-09-2021 | 19-02-2020 | Til som standard | Produktionsstyring |
 | Aktivér delvis modtagelse af varer fra underleverandør, og løs et problem med beregning af spild for styklistelinjer af typen Leverandør. | 01-09-2021 | 11-11-2019 | Til som standard | Produktionsstyring |
 | Gemte visninger til produktionsstyring | 01-09-2021 | 17-08-2020 | Til som standard | Produktionsstyring |
 | Dynamics 365 Guides til produktion | 01-09-2021 | 13-07-2020 | Til som standard | Produktionsstyring |
 | Produktionsudførelse | 01-09-2021 | 9/30/2020 | Til som standard | Produktionsstyring |
-| Funktion til låsning af jobkortenhed og jobkortterminal, så de kan renses. | 01-09-2021 | 10-05-2020 | Til som standard | Produktionsstyring |
+| Funktion til låsning af jobkortenhed og jobkortterminal, så de kan renses | 01-09-2021 | 10-05-2020 | Til som standard | Produktionsstyring |
 | Gebyrfordeling på en salgsordre | 01-09-2021 | 9/30/2020 | Til som standard | Salg og marketing |
 | Begræns antallet af salgsordrer, der kan vælges til bogføring | 01-09-2021 | 01-09-2021 | Til som standard | Salg og marketing |
 | Ryd op i historik for salgsordreopdatering | 01-09-2021 | 01-09-2021 | Til som standard | Salg og marketing |
