@@ -54,7 +54,7 @@
                   href: cpe-optional-features.md
                 - name: Konfigurere Dynamics 365 Commerce-Ofte stillede spørgsmål
                   href: cpe-faq.md
-            - name: Overvejelser i forbindelse med installation
+            - name: Overvejelser i forbindelse med udrulning
               items:
                 - name: Installationsindstillinger
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/commerce/toc.json
@@ -74,10 +74,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchange-vejledning til implementering
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: Finance and Operations-apps drevet af 21Vianet i Kina
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations-apps i Frankrig
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Få support
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Opgradering og N-1 support
@@ -1272,8 +1268,10 @@
               href: store-performance-information.md
             - name: 'Konfigurere RFM-analyse (Recency, Frekvens og Monetær)'
               href: set-up-rfm-analysis.md
-            - name: Konfigurere Microsoft Clarity i Dynamics 36 Commerce
+            - name: Konfigurere Microsoft Clarity i Dynamics 365 Commerce
               href: set-up-clarity.md
+            - name: Commerce-analyser (prøveversion)
+              href: commerce-analytics.md
         - name: Globalisering
           items:
             - name: Oversigt over regnskabsintegration for Commerce-kanal
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Administration af kundeoplysninger i Rusland
                   href: localizations/rus-customer-information.md
+            - name: Saudi-Arabien
+              items:
+                - name: Generere QR-koder og udskrive dem på kvitteringer til Saudi-Arabien
+                  href: localizations/emea-sau-qr-code.md
             - name: Sverige
               items:
                 - name: Kasseapparatfunktionalitet
@@ -2536,6 +2538,8 @@
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Fejlfinde bedste praksis til Dynamics 365 Commerce-udvikling
                       href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: Teste sider på e-handelswebsteder for hukommelseslæk
+                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: Retail SDK
               items:
                 - name: Overføre til Commerce SDK

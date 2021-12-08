@@ -332,7 +332,7 @@
                       href: sysadmin/business-continuity-disaster-recovery.md
                 - name: Afslutte onboardingsprocessen for Azure Resource Manager
                   href: deployment/arm-onboarding.md
-                - name: Afslutte onboardingsprocessen for Azure Resource Manager for den amerikanske regerings LCS-projekter
+                - name: Afslutte onboardingsprocessen for Azure Resource Manager for de amerikanske offentlige myndigheders LCS-projekter
                   href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute og Finance and Operations
                   href: deployment/expressroute.md
@@ -458,6 +458,16 @@
                   href: help/language-locale.md
                 - name: 'Udvide, tilpasse og samarbejde med hjælp'
                   href: help/contributor-guide.md
+            - name: Overvejelser i forbindelse med udrulning
+              items:
+                - name: Indstillinger for selvstændig og lokal cloud-udrulning til Dynamics 365 Finance og Dynamics 365 Supply Chain Management
+                  href: deployment/deployment-options-geo.md
+                - name: Finance og Supply Chain Management i den amerikanske Government Community Cloud (GCC)
+                  href: deployment/us-gcc-deployment.md
+                - name: 'Finance og Supply Chain Management, som drives af 21Vianet i Kina'
+                  href: deployment/china-local-deployment.md
+                - name: Finance and Operations-apps i Frankrig
+                  href: deployment/france-local-deployment.md
         - name: Udvikle og tilpasse
           items:
             - name: Udvikle og tilpasse startside
@@ -1114,10 +1124,12 @@
                       href: data-entities/dual-write/integrated-hr.md
                     - name: Part- og globalt adressekartotek
                       href: data-entities/dual-write/party-gab.md
-                    - name: Brug af Microsoft Power Apps-portaler sammen med datamodellen for part
+                    - name: Bruge Microsoft Power Apps-portaler sammen med datamodellen for part
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Opgradere til modellen med part- og globalt adressekartotek
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Få vist partdata
+                      href: data-entities/dual-write/view-party.md
                     - name: Bemærk integration
                       href: data-entities/dual-write/notes-integration.md
                     - name: Tilknytningsreference
@@ -1584,7 +1596,7 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Oprette batchjob
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Aktivere automatiske gentagelser på batchjob
+                - name: Aktivere batchjob igen
                   href: sysadmin/retryable-batch.md
                 - name: Kopiere et batchjob
                   href: sysadmin/copy-batch-job.md
