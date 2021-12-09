@@ -1,7 +1,7 @@
 ---
 title: Planlægning af engangsleverandører i den offentlige sektor
-description: Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.
-author: ShylaThompson
+description: Dette emne beskriver, hvordan organisationer i den offentlige sektor kan forberede import og oprettelse af flere engangskreditorer og fakturaer.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,21 +13,21 @@ ms.custom: 27251
 ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8b0c480d4578b1f62259e4d4d45780a80401386463e85a8107ffc85f5fa308a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 799cc888d73662980706062ac54bcbb9ce1caa3b
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727932"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817692"
 ---
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer. 
+Dette emne beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer. 
 
 Hvis du planlægger at masseimportere leverandør- og importoplysninger, skal du typisk først oprette en datafil i regnearksformat og gemme den i CSV-format (kommaseparerede værdier).
 

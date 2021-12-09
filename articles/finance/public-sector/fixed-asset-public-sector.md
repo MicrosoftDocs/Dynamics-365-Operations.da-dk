@@ -1,7 +1,7 @@
 ---
 title: Anlægsaktiver i den offentlige sektor
-description: I denne artikel beskrives de funktioner til anlægsaktiver, der er tilgængelige for den offentlige sektor.
-author: ShylaThompson
+description: I dette emne beskrives de funktioner til anlægsaktiver, der er tilgængelige for enheder i den offentlige sektor.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,21 +13,21 @@ ms.custom: 20891
 ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcaaa566edaa50e70b443ae1b5275e29d64fcb1cc042a27ce6a897abbecd996d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e79e2092e6fc7b3ea63406800572946d6c3b3bcd
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764196"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817716"
 ---
 # <a name="fixed-assets-in-the-public-sector"></a>Anlægsaktiver i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives de funktioner til anlægsaktiver, der er tilgængelige for den offentlige sektor. 
+I dette emne beskrives de funktioner til anlægsaktiver, der er tilgængelige for enheder i den offentlige sektor. 
 
 ## <a name="what-do-i-need-to-know-about-disposing-of-fixed-assets"></a>Værd at vide om salg af anlægsaktiver
 

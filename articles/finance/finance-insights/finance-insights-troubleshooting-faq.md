@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752611"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827047"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Fejlfinde problemer med opsætningen af Finance Insights
 
@@ -70,3 +70,26 @@ Funktionen til likviditetsbudgettering i Likviditets- og bankstyring og funktion
 Opret og aktivér først likviditetsbudget- og likviditetskonti. Du kan finde flere oplysninger under [Likviditetsbudget](../cash-bank-management/cash-flow-forecasting.md). Hvis denne opsætning er fuldført, men du ikke kan se de forventede resultater, kan du finde flere oplysninger i [Fejlfinding af opsætning af likviditetsbudgettering](../cash-bank-management/cash-flow-forecasting-tsg.md).
 
 Bekræft derefter, at funktionen Likviditetsbudgetter i Finance Insights (**Likviditets- og bankstyringsopsætningen \> Konfiguration \> Finance Insights \> likviditetsbudgetter**) er aktiveret, og at uddannelse af AI-modellen er gennemført. Hvis kurset ikke er fuldført, skal du vælge **Budget nu** for at starte modelkurserne.
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Symptom: Hvorfor er installationen af en ny tilføjelse knap ikke synlig i Microsoft Dynamics Lifecycle Services?
+
+### <a name="resolution"></a>Løsning
+
+Først skal du kontrollere, at rollen **Miljøbestyrer** eller **Projektejer** er tildelt brugeren i feltet **Projektsikkerhedsrolle** i Microsoft Dynamics Lifecycle Services (LCS). Installation af nye tilføjelsesprogrammet kræver en af disse projektsikkerhedsroller.
+
+Hvis den korrekte projektsikkerhedsrolle er tildelt til dig, skal du måske opdatere browservinduet for at se knappen **Installer et nyt tilføjelsesprogram**.
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Symptom: Tilføjelsesprogrammet Finance Insights forekommer ikke at være installation. Hvorfor?
+
+### <a name="resolution"></a>Løsning
+
+Følgende trin bør være udført.
+
+- Kontroller, at du har adgang til **Systemadministrator** og **Systemtilpasser** i Power Portal Administration.
+- Kontroller, at der anvendes en Dynamics 365 Finance eller lignende licens til den bruger, der installerer tilføjelsesprogrammet.
+- Kontroller, at følgende Azure AD-app er registreret i Azure AD: 
+
+  | Applikation                  | App-id           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  

@@ -1,7 +1,7 @@
 ---
 title: Budgetanalyserapport
-description: Dette emne indeholder oplysninger om budgetanalyserapporten, som du bruger til at generere en opsummeret rapport, der sammenligner budgetterede beløb med faktiske udgifter og indtægtsaktiviteter i løbet af en periode, du angiver.
-author: velofog
+description: Dette emne beskriver budgetanalyserapporten, som anvendes til at generere en opsummeret rapport, der sammenligner budgetterede beløb med faktiske udgifter og indtægtsaktiviteter i løbet af en periode, du angiver.
+author: v-kiarnd
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e42accc64cb6243d2e3f206a75c9f71eeb5262b534a9b6baa19a104af2072e05
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a268eb0f7b0f321a37314386a57d7ea341b50335
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738405"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817684"
 ---
 # <a name="budget-analysis-report"></a>Budgetanalyserapport
 

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641154"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813717"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder
 
@@ -290,7 +290,8 @@ I følgende tabel vises en oversigt over produktionsscenarier for warehouse mana
 |---------|-----|------------------------------|
 | Færdigmelde og lægge færdigvarer på lager | Ja | Ja |
 | Samprodukt og biprodukt, læg på lager | Ja | Ja |
-| <p>Alle andre warehouse management-processer, der er relateret til produktion, omfatter:</p><li>Frigiv til lagersted</li><li>Produktionsbølgebehandling</li><li>Råvarepluk</li><li>Kanban-læg på lager</li><li>Kanban-pluk</li><li>Start produktionsordre</li><li>Produktionsspild</li><li>Sidste produktionspalle</li><li>Registrer materialeforbrug</li><li>Tøm kanban</li></ul> | Ja | Nej |
+| Start produktionsordre | Ja | Ja |
+| <p>Alle andre warehouse management-processer, der er relateret til produktion, omfatter:</p><li>Frigiv til lagersted</li><li>Produktionsbølgebehandling</li><li>Råvarepluk</li><li>Kanban-læg på lager</li><li>Kanban-pluk</li><li>Produktionsspild</li><li>Sidste produktionspalle</li><li>Registrer materialeforbrug</li><li>Tøm kanban</li></ul> | Ja | Nej |
 | Genopfyldning af råvarer | Nej | Nej |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Vedligeholde skaleringsenheder til lagerstedsudførelse

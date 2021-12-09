@@ -2,19 +2,19 @@
 title: Servicebeskrivelse af Finance and Operations-apps
 description: Dette emne indeholder servicebeskrivelsen til Finance and Operations-apps.
 author: tomhig
-ms.date: 09/29/2021
+ms.date: 11/17/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581810"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825394"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeskrivelse af Finance and Operations-apps
 
@@ -50,10 +50,10 @@ Driftsmodellen for Finance and Operations-apps definerer specifikke roller og an
 
 ### <a name="customer-activities"></a>Brugerdefinerede aktiviteter
 
-Kunderne arbejder sammen med deres partner og [Microsoft FastTrack](/dynamics365/fasttrack/) efter de [Success by Design](/dynamics365/fasttrack/success-by-design-overview) værktøjer og best practice-skabeloner, der findes i [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md), til implementering af deres løsning. Af almindelige aktiviteter kan nævnes:
+Kunder arbejder sammen med deres partner og [Microsoft FastTrack](/dynamics365/fasttrack/) efter [Dynamics 365-implementeringsvejledningen](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), [Success by Design](/dynamics365/fasttrack/success-by-design-overview)-skabeloner og de værktøjer og best practice-skabeloner, der findes i [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) til implementering af deres løsning. Af almindelige aktiviteter kan nævnes:
 
 - Brugeridentitet og sikkerhedsstyring
-- Definere, udvikle og operere forretningsprocesser
+- Definere, udvikle og betjene forretningsprocesser
 - Definere, udvikle, teste og operere udvidelser
 - Overvåge og administrere installationer uden for produktion
 - Administrere programopdateringer og validere udvidelser
@@ -66,7 +66,7 @@ Microsoft administrerer Finance and Operations-tjenesten ved at implementere, ov
 **Infrastrukturstyring**
 - Sikkerhed og isolation
 - Operativsystemer og virtualisering
-- Servere, lagring og netværk
+- Servere, lagre og netværke
 - Datacenterkraft, netværk, afkøling
 
 **Styring af applikationsplatform**

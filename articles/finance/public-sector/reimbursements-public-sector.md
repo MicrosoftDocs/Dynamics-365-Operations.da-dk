@@ -1,7 +1,7 @@
 ---
 title: Refusioner i den offentlige sektor
 description: I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor.
-author: ShylaThompson
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 27311
 ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ffc7d72d5933ee967e406de38decbbb7c9a5789a1f2f8b429b6981d4e240774
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1ed6f4925ed9045fe737210f8794c05de6dfec34
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763054"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817689"
 ---
 # <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
 

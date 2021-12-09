@@ -10,12 +10,12 @@ ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 69abd2b6d4026ef1b5b85d52c561bb060cf82123
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
+ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781458"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "7817355"
 ---
 # <a name="dual-write-overview"></a>Oversigt over dobbeltskrivning
 
@@ -68,11 +68,7 @@ Dobbeltskrivning opretter en tilknytning mellem koncepter i Finance and Operatio
 + Mulighed for at slå disponibel lagertilgængelighed op og få detaljer herom
 + Oplevelsen projekt til kontant
 + Mulighed for at håndtere flere adresser og roller via partskonceptet
-+ Enkel kildestyring til brugere
-+ Integrerede kanaler til detailhandel og marketing
-+ Synlighed i kampagner og rabatter
-+ Funktioner for anmodning om tjenester
-+ Integrerede tjenestehandlinger
+
 
 ## <a name="top-reasons-to-use-dual-write"></a>De vigtigste grunde til at bruge dobbeltskrivning
 

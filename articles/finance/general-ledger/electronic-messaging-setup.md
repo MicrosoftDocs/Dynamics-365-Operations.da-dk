@@ -2,7 +2,7 @@
 title: Konfigurere elektroniske meddelelser
 description: Dette emne indeholder en oversigt og oplysninger om opsætning for elektroniske meddelelser (EM).
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2b62efabfae26a6cc004604e687a49bce992d78a30f0d441aa74fa5cde70e063
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752169"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860552"
 ---
 # <a name="set-up-electronic-messages"></a>Konfigurere elektroniske meddelelser
 
@@ -34,6 +34,7 @@ Hvis du ikke importerer en dataenhedspakke, kan du manuelt konfigurere EM-funkti
 - [Ekstra felter](#additional)
 - [Indstillinger for eksekverbar klasse](#executable)
 - [Handlingerne Udfyld poster](#populate)
+- [Udfylde poster fra flere virksomheder](#multiple-companies-populate)
 - [Webapplikationer](#applications)
 - [Indstillinger for webtjeneste](#settings)
 - [Handlinger ved meddelelsesbehandling](#actions)
@@ -139,6 +140,38 @@ I oversigtspanelet **Opsætning af datakilder** skal du tilføje en linje for hv
 | Virksomhed                | Dette felt er tilgængeligt, når funktionen **Forespørgsler på tværs af virksomheder til udfyldning af handling af poster** er aktiveret i arbejdsområdet til **funktionsstyring**. Du kan bruge denne funktion til at konfigurere datakilder på tværs af regnskaber for aktionerne med popup-poster. Der kan hentes data fra flere regnskaber. |
 | Brugerforespørgsel             | <p>Hvis du opretter en forespørgsel ved at vælge **Rediger-forespørgsel** over gitteret, og du angiver de kriterier, der skal anvendes på den valgte mastertabel, som data er udfyldt fra, markeres dette afkrydsningsfelt automatisk. I modsat fald udfyldes alle posterne af den valgte hoveddatakilde.</p><p>Når **Forespørgsler på tværs af firmaer for funktionen til at udfylde poster** er aktiveret i arbejdsområdet til **funktionsstyring**, og poster skal indsamles fra flere firmaer, skal du tilføje en linje for hver ekstra juridisk enhed, der skal medtages i rapporteringen. For hver ny linje skal du vælge **Rediger forespørgsel** og angive et relateret kriterium, der er specifikt for den juridiske enhed, som er angivet i feltet **Firma** på linjen. Når du er færdig, indeholder **opsætningsgitteret for datakilder** linjer for alle de juridiske enheder, der skal inkluderes i rapporteringen.</p> |
 
+## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a>Udfylde poster fra flere virksomheder
+
+Hvis din virksomhed skal rapportere fra flere juridiske enheder i samme finansdatabase, skal du konfigurere [handlinger for popup-poster](#populate) for alle de juridiske enheder, som data skal medtages fra i rapportering.
+
+Følg disse trin for at aktivere denne funktion i Finans-miljøet. 
+
+1. Gå til **Arbejdsområder** \> **Funktionsstyring**.
+2. Find og vælg **forespørgsler på tværs af virksomheder for funktionen til handling af poster** på listen.
+3. Vælg **Aktiver nu**. 
+
+Hvis du vil konfigurere [handlinger med popup-poster](#populate) for flere firmaer, hvorfra der skal medtages data i rapportering, skal du følge disse trin.
+
+1. Gå til **Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Handlingerne Udfyld poster**.
+
+    Når **forespørgsler på tværs af virksomheder om funktionen til aktioner** er aktiveret, indeholder **opsætningsgitteret for datakilder** på handlingssiden **Udfyld poster** et felt i **Virksomhed**. For eksisterende poster, der blev oprettet under den generelle opsætning af [Handlingen Udfyld poster](#populate), vises id'et for den aktuelle juridiske enhed i dette felt.
+
+2. I gitteret til **opsætning af datakilder** skal du tilføje en linje for hvert datterselskabs juridiske enhed, der skal medtages i rapporteringen, og angive følgende felter.
+
+    | Feltnavn             | Værdi |
+    |------------------------|-------|
+    | Name                   | Angiv en tekstværdi, der kan hjælpe dig med at forstå, hvor denne post stammer fra. Angiv f.eks. **Datakildenavn - Datterselskab 1**. |
+    | Typen af meddelelseselement      | Vælg den meddelelsesvaretype, der skal bruges til behandling af EM. |
+    | Kontotype           | Angiv den kontotype, der skal bruges til behandling af EM. Hvis din EM-behandling ikke har nogen specifikke kontotyper, skal du vælge **Alle**. |
+    | Navn på overordnet tabel      | Angiv navnet på den mastertabel, der skal bruges til din EM-behandling. |
+    | Feltet dokumentnummer  | Angiv det felt, der indeholder dokumentnummeret i poster i din EM-behandling. |
+    | Feltet Dokumentdato    | Angiv det felt, der indeholder dokumentdatoen i poster i din EM-behandling. |
+    | Feltet Dokumentkonto | Angiv det felt, der indeholder dokumentkontoen i poster i din EM-behandling. |
+    | Virksomhed                | Vælg id'et for datterselskabets juridiske enhed. |
+    | Brugerforespørgsel             | Dette afkrydsningsfelt markeres automatisk, når du definerer kriterier ved at vælge **Rediger forespørgsel**. |
+
+3. For hver ny linje skal du vælge **Rediger forespørgsel** og angive et relateret kriterium, der er specifikt for den juridiske enhed, som er angivet i feltet **Firma** på linjen.
+
 ## <a name="web-applications"></a><a id="applications"></a>Webapplikationer
 
 Brug webprogramindstillingerne til at konfigurere et webprogram, således at det understøtter Open Authorization (OAuth) 2,0. OAuth er den åbne standard, som gør det muligt for brugerne at tildele "sikker delegeret adgang" til programmet på deres vegne uden at dele deres legitimationsoplysninger. Du kan også komme igennem godkendelsesprocessen ved at få en godkendelseskode og et adgangstoken. Du kan konfigurere indstillinger for webprogrammer ved at gå til **Moms** \> **Konfiguration** \> **Elektroniske meddelelser** \> **Webprogrammer**.
@@ -214,6 +247,7 @@ I følgende tabel beskrives felterne på siden **Handlinger ved meddelelsesbehan
 | Eksekverbar klasse                          | Vælg en eksisterende klasseindstilling, der kan udføres. Dette felt er kun tilgængeligt for handlinger af typen **Udførelsesniveau for meddelelseselement** og **Udførelsesniveau for meddelelseselement**. |
 | Handlingen Udfyld poster                   | Vælg en eksisterende handling med udfyld poster. Dette felt er kun tilgængeligt for handlinger af typen **Udfyld poster**. |
 | Webtjeneste                               | Vælg en eksisterende webtjeneste. Dette felt er kun tilgængeligt for handlinger af typen **Webtjeneste**. |
+| Filnavn, der skal sendes                         | Angiv navnet på den vedhæftede fil i en elektronisk meddelelse, der skal sendes via denne handling. Hvis flere vedhæftede filer har samme oprindelige filnavn, sendes den nyeste. Hvis der ikke findes en vedhæftet fil med det angivne oprindelige filnavn, sendes anmodningen uden indhold. Dette felt er kun tilgængeligt for handlinger af typen **Webtjeneste**. |
 | Filnavn                                 | Angiv navnet på den fil, som handlingen skal resultere i. Den pågældende fil kan være svaret fra webserveren eller den genererede rapport. Dette felt er kun tilgængeligt for handlinger af typen **Webtjenesten** og **Meddelelse om eksport af elektronisk rapportering**. |
 | Knyt filer til kildedokumenter          | Marker dette afkrydsningsfelt for at vedhæfte genererede filer til poster i en mastertabel, der refereres til, for EM-varer. Dette felt er kun tilgængeligt for handlinger af typen **Webtjeneste** og **Eksport af elektronisk rapportering**. |
 | Vedhæft filer fra outputarkiv til elementer | Marker dette afkrydsningsfelt for at udtrække separate XML-filer fra outputarkivfilen og vedhæfte dem til de tilsvarende elektronisk meddelelseselementer. Dette felt er kun tilgængeligt for handlinger af typen **Eksport af elektronisk rapportering**. |

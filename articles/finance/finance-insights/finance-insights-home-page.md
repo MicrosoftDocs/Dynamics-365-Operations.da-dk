@@ -2,7 +2,7 @@
 title: Startside for Finance insights
 description: Med Finance Insights kan du konfigurere og udvide modeller, så du præcist og intelligent kan forudsige virksomhedens pengestrøm, forudsige, hvornår du vil modtage betaling for udestående tilgodehavender, og generere et budgetforslag, der kan gøre budgetteringsprocessen hurtigere. Alle disse funktioner er baseret på intelligente Machine Learning-modeller.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752850"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813741"
 ---
-# <a name="finance-insights-home-page"></a>Startside for Finance insights
+# <a name="finance-insights-home-page"></a>Startside for Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Med Finance Insights kan du konfigurere og udvide modeller, så du på intelligent vis kan forudsige virksomhedens pengestrøm, forudsige, hvornår du vil modtage betaling for udestående tilgodehavender, og generere et budgetforslag, der kan gøre budgetteringsprocessen hurtigere. Alle disse funktioner er baseret på intelligente Machine Learning-modeller. Når disse nye muligheder kombineres med automatisering i kreditorbetalinger og -rykkere, indeholder de et omfattende og intelligent økonomisystem, der styrer beslutningstagningen og hjælper dig med at reagere effektivt på eksisterende og forventede forretningsudfordringer.
+Med Finance Insights kan du konfigurere og udvide løsninger, så du på intelligent vis kan forudsige virksomhedens pengestrøm, forudsige, hvornår du vil modtage betaling for udestående tilgodehavender, og generere et budgetforslag, der kan gøre budgetteringsprocessen hurtigere. Disse funktioner bruger intelligente maskinindberetningsskabeloner til at opbygge modeller ved hjælp af de data, du angiver (herunder data fra tredjepart, f.eks. forbrugerrapportoplysninger fra et bureau). Disse intelligente egenskaber er en hjælp, når du skal træffe beslutninger, og hjælper dig med at gøre en indsats for at reagere effektivt på eksisterende og forventede forretningsmuligheder. Du er ansvarlig for alle data, der bruges med eller output fra Finance Insights.
 
 > [!NOTE]
 > Finance Insights, offentlig prøveversion er tilgængelig for implementering i Amerikas Forenede Stater, Canada, Storbritannien, Europa, Asien og Stillehavsområdet, Japan, Australien og New Zealand. Microsoft tilføjer trinvist understøttelse af flere regioner.
