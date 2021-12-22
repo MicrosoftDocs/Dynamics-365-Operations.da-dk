@@ -70,7 +70,9 @@
                   items:
                     - name: Nyheder eller ændringer i Supply Chain Management-startside
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.23
+                    - name: Supply Chain Management 10.0.24 (februar 2022)
+                      href: get-started/whats-new-scm-10-0-24.md
+                    - name: Supply Chain Management 10.0.23 (januar 2022)
                       href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (november 2021)
                       href: get-started/whats-new-scm-10-0-22.md
@@ -559,7 +561,7 @@
               href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Oprette kontostrukturer
               href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Budgetplanlægningsoversigt
+            - name: Oversigt over budgetplanlægning
               href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
             - name: Oprette dimensioner og importere dimensionsmedlemmer
               href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
@@ -947,7 +949,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Liste
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: List
                       items:
                         - name: Listefunktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -959,19 +963,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/supply-chain/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Fasttekst
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Filtrér
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Første
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/supply-chain/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Indeks
+                        - name: Index
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/supply-chain/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Liste
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListDistinct
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/supply-chain/toc.json
@@ -983,7 +987,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/supply-chain/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Tilbagefør
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/supply-chain/toc.json
@@ -1041,7 +1045,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/supply-chain/toc.json
                         - name: NullContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Text
+                    - name: Tekst
                       items:
                         - name: Tekstfunktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/supply-chain/toc.json
@@ -3753,7 +3757,7 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerstedsstyring
               items:
-                - name: Warehouse Mobile App
+                - name: Warehouse mobile app
                   items:
                     - name: Tillidsanker til certificeringsstien blev ikke fundet ved oprettelse af appforbindelse
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md

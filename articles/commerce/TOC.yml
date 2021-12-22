@@ -92,7 +92,9 @@
                   items:
                     - name: Nyheder eller ændringer på Commerce-startsiden
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.23
+                    - name: Commerce 10.0.24 (februar 2022)
+                      href: get-started/whats-new-commerce-10-0-24.md
+                    - name: Commerce 10.0.23 (januar 2022)
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (november 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
@@ -542,9 +544,11 @@
                       href: payinvoice.md
                     - name: Forhindre duplikerede betalinger
                       href: duplicate-payment-protection.md
-                    - name: Oversigt over omni-kanalbetalinger
+                    - name: Oversigt over omnikanalbetalinger
                       href: omni-channel-payments.md
-                    - name: Omni-kanalers Commerce-ordrebetalinger
+                    - name: Flere tilgængelige betalingsmåder ved afhentning i butikken
+                      href: dev-itpro/multiple-payments-pickup.md
+                    - name: Omnikanalers Commerce-ordrebetalinger
                       href: dev-itpro/commerce-payments.md
                     - name: Arkiver kreditkorttransaktionsdata
                       href: dev-itpro/archive-cc-data.md
@@ -814,13 +818,17 @@
           items:
             - name: Kundestyring i butikker
               href: customer-mgmt-stores.md
+            - name: Asynkron oprettelsestilstand for debitor
+              href: async-customer-mode.md
+            - name: Konvertere asynkrone kunder til synkrone kunder
+              href: convert-async-to-sync.md
             - name: Kundeaktiviteter
               items:
                 - name: 'Kundeaktiviteter, oversigt'
                   href: clienteling-overview.md
-            - name: Fordelskunde
+            - name: Loyalitet
               items:
-                - name: Oversigt over fordelskunde
+                - name: Oversigt over loyalitet
                   href: set-up-customer-loyalty-program.md
                 - name: Definere fordelskundeprogrammer
                   href: tasks/define-loyalty-programs.md
@@ -1330,6 +1338,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Bogføre brasilianske skattemæssige dokumenter via detailopgørelser i Commerce-hovedkontoret
                   href: localizations/latam-bra-retail-statements.md
+                - name: Funktioner for CF-e-regnskabsdokumenter og integration med SAT i Commerce POS for Brasilien
+                  href: localizations/latam-bra-cf-e-sat.md
                 - name: Dynamics 365 Payment Connector til Adyen i Commerce POS for Brasilien
                   href: localizations/latam-bra-adyen.md
             - name: Østeuropa
@@ -1378,8 +1388,10 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: Understøttelse af opgradering og N-1 til Indien
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: Generere QR-koder og udskrive dem på kvitteringer
+                - name: Generere QR-koder og udskrive dem på kvitteringer til Indien
                   href: localizations/ind-generate-qr-code-print-receipt.md
+                - name: Integration af moms på varer og ydelser (GST) for e-handelswebsteder
+                  href: localizations/apac-ind-e-commerce.md
             - name: Italien
               items:
                 - name: Eksempel på integration af bonprinter for Italien
@@ -1616,7 +1628,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
-                    - name: Liste
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
+                    - name: List
                       items:
                         - name: Listefunktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json
@@ -1628,19 +1642,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/commerce/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/commerce/toc.json
-                        - name: Fasttekst
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/commerce/toc.json
-                        - name: Filtrér
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/commerce/toc.json
-                        - name: Første
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/commerce/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/commerce/toc.json
-                        - name: Indeks
+                        - name: Index
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/commerce/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/commerce/toc.json
-                        - name: Liste
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
                         - name: ListDistinct
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/commerce/toc.json
@@ -1652,7 +1666,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/commerce/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/commerce/toc.json
-                        - name: Tilbagefør
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/commerce/toc.json
                         - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
@@ -1710,7 +1724,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/commerce/toc.json
                         - name: NullContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/commerce/toc.json
-                    - name: Text
+                    - name: Tekst
                       items:
                         - name: Tekstfunktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/commerce/toc.json

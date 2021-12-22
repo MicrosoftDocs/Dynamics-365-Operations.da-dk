@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheder eller ændringer på Finance-startsiden
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.23
+                    - name: Finance 10.0.24 (februar)
+                      href: get-started/whats-new-changed-10-0-24.md
+                    - name: Finance 10.0.23 (januar)
                       href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (november 2021)
                       href: get-started/whats-new-changed-10-0-22.md
-                    - name: Finance 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-changed-10-0-21.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -516,8 +516,10 @@
               href: budgeting/budget-planning-overview-configuration.md
             - name: Oversigt over budgetstyring
               href: budgeting/budget-control-overview-configuration.md
-            - name: Budgetplanlægningsoversigt
+            - name: Oversigt over budgetplanlægning
               href: budgeting/basic-budgeting-overview-configuration.md
+            - name: Tilgængelige budgetmidler
+              href: budgeting/budget-funds-available.md
             - name: Budgetteret stilling
               href: budgeting/position-forecasting.md
             - name: Berettigelsesdokumenter for budgetplanlægning
@@ -638,7 +640,7 @@
               href: general-ledger/CFO-workspace.md
             - name: Oprette kontostrukturer
               href: general-ledger/tasks/create-account-structures.md
-            - name: Budgetplanlægningsoversigt
+            - name: Oversigt over budgetplanlægning
               href: budgeting/basic-budgeting-overview-configuration.md
             - name: Oprette dimensioner og importere dimensionsmedlemmer
               href: cost-accounting/cost-dimension.md
@@ -1434,6 +1436,8 @@
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Konfigurere elektronisk fakturering
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Power Platform-plug-in-reference til administrator
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Ofte stillede spørgsmål om elektronisk fakturering
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Momsberegning
@@ -1444,6 +1448,14 @@
                       items:
                         - name: Start her med momsberegning
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurere momskoder
+                          href: localizations/set-up-tax-codes.md
+                        - name: Konfigurer momsgrupper
+                          href: localizations/set-up-tax-groups.md
+                        - name: Konfigurer varemomsgrupper
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: Importere og eksportere momsberegninger
+                          href: localizations/tax-calculation-import-export-feature.md
                         - name: Konfigurere et miljø til opslag efter masterdata
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Bestemmelse
@@ -2594,6 +2606,8 @@
               items:
                 - name: Oversigt for Indonesien
                   href: localizations/indonesia.md
+                - name: Nummerering og fakturering af momsfaktura
+                  href: localizations/apac-idn-invoicing.md
                 - name: Momsopgørelse for Indonesien
                   href: localizations/apac-idn-ppn-declaration.md
             - name: Italien
@@ -2658,10 +2672,12 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Import af protest over veksler
                   href: localizations/emea-ita-exil-protest-boe.md
-                - name: Skatterelateret plafond
+                - name: Momsloft
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektroniske fakturaer til kunder
                   href: localizations/emea-ita-e-invoices.md
+                - name: Elektroniske kreditorfakturaer
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Årlig momsindberetning
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Sporing af betalinger
@@ -2964,6 +2980,20 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: Momsopgørelse
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: Momsopgørelse med direkte indsendelse til Altinn
+                  items:
+                    - name: Oversigt over momsopgørelse med direkte indsendelse til Altinn
+                      href: localizations/emea-nor-vat-return.md
+                    - name: Registrere et integrationspunkt i id-porten-webportalen
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: Forberede dit miljø til at arbejde sammen med ID-porten- og Altinn-webtjenester
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: Tjekliste til opsætning af elektroniske meddelelser til momsopgørelser
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: Godkende dit Finance-miljø til at arbejde sammen med ID-Porten- og Altinn-webtjenester
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: Indsende en momsopgørelse til Altinn-webtjenesten
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Standardrevisionsfil for moms (SAF-T) for Norge
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektroniske fakturaer til kunder i Norge
@@ -3831,7 +3861,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: Liste
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
+                    - name: List
                       items:
                         - name: Listefunktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -3843,19 +3875,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/finance/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
-                        - name: Fasttekst
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
-                        - name: Filtrér
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
-                        - name: Første
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/finance/toc.json
-                        - name: Indeks
+                        - name: Index
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/finance/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
-                        - name: Liste
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
                         - name: ListDistinct
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
@@ -3867,7 +3899,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/finance/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/finance/toc.json
-                        - name: Tilbagefør
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/finance/toc.json
                         - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
@@ -3925,7 +3957,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/finance/toc.json
                         - name: NullContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
-                    - name: Text
+                    - name: Tekst
                       items:
                         - name: Tekstfunktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/finance/toc.json

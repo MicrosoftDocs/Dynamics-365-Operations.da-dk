@@ -14,12 +14,12 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Platformsopdateringer til version 10.0.23
+                - name: Platformsopdateringer til version 10.0.24 (februar 2022)
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: Platformsopdateringer til version 10.0.23 (januar 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: Platformsopdateringer til version 10.0.22 (november 2021)
                   href: get-started/whats-new-platform-updates-10-0-22.md
-                - name: Platformsopdateringer til version 10.0.21 (oktober 2021)
-                  href: get-started/whats-new-platform-updates-10-0-21.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -232,9 +232,9 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Azure Data Lake-oversigt
-              href: data-entities/azure-data-lake-overview.md
-            - name: Konfigurere eksport til Azure Data Lake
+            - name: Oversigt over eksport til Azure Data Lake
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Installere tilføjelsesprogrammet Eksport til Azure Data Lake
               href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-apps i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
@@ -406,6 +406,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Genbruge den samme AD FS-forekomst til flere miljøer
                       href: deployment/onprem-reuseadfs.md
+                    - name: Opgradere forekomsten af SQL Server i Microsoft Dynamics 365 Finance + Operations (on-premises) miljøer
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
                     - name: AD FS Microsoft 365-kompatibilitet
@@ -1012,7 +1014,7 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integration
           items:
-            - name: Microsoft Power Platform-integration med Finance and Operations
+            - name: Oversigt
               href: power-platform/overview.md
             - name: Aktivere Power Platform-integrationen
               href: power-platform/enable-power-platform-integration.md

@@ -4,6 +4,8 @@
     - name: Nyheder
       items:
         - name: Nyheder eller ændringer i Human Resources
+          href: hr-whats-new-2021-11-29.md
+        - name: 29. november 2021
           href: hr-admin-whats-new.md
         - name: 5. oktober 2021
           href: hr-whats-new-2021-10-04.md
@@ -569,15 +571,15 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
                 - name: Arkitektur for arbejdsgangssystem
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
-                - name: Arbejdsgangselementer
+                - name: Arbejdsproceselementer
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
-                - name: Handlinger i arbejdsgange
+                - name: Handlinger i arbejdsprocesser
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
-                - name: Oprette arbejdsgange
+                - name: Oprette arbejdsprocesser
                   items:
-                    - name: Oversigt over oprettelse af arbejdsgange
+                    - name: Oversigt over oprettelse af arbejdsprocesser
                       href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere egenskaber for arbejdsgange
+                    - name: Konfigurere egenskaber for arbejdsprocesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurere manuelle opgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
@@ -595,37 +597,37 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere arbejdsgange for linjeelementer
+                    - name: Konfigurere arbejdsprocesser for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurere batchjob for behandling af arbejdsgangsmeddelelser som vigtige
+                - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
-                - name: Uddelegere arbejdselementer i en arbejdsgang
+                - name: Uddelegere arbejdselementer i en arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Vise arbejdsgangs historik
+                - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsgangen til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsprocessen til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
-                - name: Arbejdsgangstyper
+                - name: Arbejdsprocestyper
                   items:
-                    - name: Oprettelse af en arbejdsgangstype
+                    - name: Oprettelse af en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Kontrolliste til arbejdsgangstype
+                    - name: Kontrolliste til arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Oprette en arbejdsgangskategori
+                    - name: Oprette en arbejdsproceskategori
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Oprette en forespørgsel for en arbejdsgangstype
+                    - name: Oprette en forespørgsel for en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Oprette en ny arbejdsgangstype
+                    - name: Oprette en ny arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Oprette en arbejdsgangsdokumentklasse
+                    - name: Oprette en arbejdsprocesdokumentklasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
+                    - name: Knytte en arbejdsprocesdokumentklasse til en arbejdsprocestype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
-                - name: Rapport om arbejdsgangstyper
+                - name: Rapport om arbejdsprocestyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
-                - name: Ofte stillede spørgsmål om arbejdsgang
+                - name: Ofte stillede spørgsmål om arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
             - name: Påmindelser
               items:
@@ -785,14 +787,16 @@
                   items:
                     - name: Behandle berettigelse til tilmelding
                       href: hr-benefits-process-enrollment-eligibility.md
-                    - name: Behandle livsbegivenheder
+                    - name: Behandle livshændelser
                       href: hr-benefits-process-life-events.md
-                    - name: Behandle ændringer af livsbegivenheder
+                    - name: Behandle ændringer af livshændelser
                       href: hr-benefits-process-life-event-changes.md
-                    - name: Behandle berettigelse til livsbegivenheder
+                    - name: Behandle berettigelse til livshændelser
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Behandle satsændringer
                       href: hr-benefits-process-rate-changes.md
+                - name: Valg af medarbejderfrynsegode
+                  href: employee-select-benefits-ess.md
                 - name: ACA-rapportering
                   href: hr-benefits-management-aca-reports.md
                 - name: Frynsegodeopgørelse
@@ -915,15 +919,15 @@
               href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
             - name: Arkitektur for arbejdsgangssystem
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
-            - name: Arbejdsgangselementer
+            - name: Arbejdsproceselementer
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
-            - name: Handlinger i arbejdsgange
+            - name: Handlinger i arbejdsprocesser
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
-            - name: Oprette arbejdsgange
+            - name: Oprette arbejdsprocesser
               items:
-                - name: Oversigt over oprettelse af arbejdsgange
+                - name: Oversigt over oprettelse af arbejdsprocesser
                   href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurere egenskaber for arbejdsgange
+                - name: Konfigurere egenskaber for arbejdsprocesser
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere manuelle opgaver
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
@@ -943,29 +947,29 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere parallelle grene
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurere arbejdsgange for linjeelementer
+                - name: Konfigurere arbejdsprocesser for linjeelementer
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
-            - name: Konfigurere batchjob for behandling af arbejdsgangsmeddelelser som vigtige
+            - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
-            - name: Uddelegere arbejdselementer i en arbejdsgang
+            - name: Uddelegere arbejdselementer i en arbejdsproces
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
-            - name: Vise arbejdsgangs historik
+            - name: Vise arbejdsproces historik
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
-            - name: Konfigurere systemet til at sende mail angående arbejdsgangen til brugere
+            - name: Konfigurere systemet til at sende mail angående arbejdsprocessen til brugere
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
-            - name: Arbejdsgangstyper
+            - name: Arbejdsprocestyper
               items:
-                - name: Oprettelse af en arbejdsgangstype
+                - name: Oprettelse af en arbejdsprocestype
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
-                - name: Kontrolliste til arbejdsgangstype
+                - name: Kontrolliste til arbejdsprocestype
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
-                - name: Oprette en arbejdsgangskategori
+                - name: Oprette en arbejdsproceskategori
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
-                - name: Oprette en forespørgsel for en arbejdsgangstype
+                - name: Oprette en forespørgsel for en arbejdsprocestype
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
-                - name: Oprette en ny arbejdsgangstype
+                - name: Oprette en ny arbejdsprocestype
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
-                - name: Oprette en arbejdsgangsdokumentklasse
+                - name: Oprette en arbejdsprocesdokumentklasse
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
                 - name: Oprette en SubmitToWorkflow-klasse
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
