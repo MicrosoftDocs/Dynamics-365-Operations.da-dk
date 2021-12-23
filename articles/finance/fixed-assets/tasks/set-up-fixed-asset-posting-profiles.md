@@ -1,7 +1,7 @@
 ---
 title: Oprette posteringsprofiler for anlægsaktiver
-description: Denne opgaveguide konfigurerer posteringsprofiler for bogføring af anlægsaktiver.
-author: saraschi2
+description: Denne procedure viser, hvordan du definerer posteringsprofiler for anlægsaktiver.
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,21 +10,21 @@ ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2708997848352205cab2e425c9ae1fb531b8a566ba86a65ba2cbeb7e0b5c2b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767617"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883762"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Oprette posteringsprofiler for anlægsaktiver
 
 [!include [banner](../../includes/banner.md)]
 
-Denne opgaveguide konfigurerer posteringsprofiler for bogføring af anlægsaktiver.  Den bruger rollen Revisor og demodata for den juridiske enhed USMF.  Eksemplerne i opgaveguiden er for en grundlæggende posteringsprofil, men posteringsprofiler skal oprettes for din specifikke kontoplan og krav til finansiel rapportering.
+Denne procedure viser, hvordan du definerer posteringsprofiler for anlægsaktiver. Eksemplerne i emnet er for en grundlæggende posteringsprofil, men der skal oprettes posteringsprofiler for din specifikke kontoplan og på grund af krav til finansiel rapportering.
 
 1. I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Opsætning > Posteringsprofiler for anlægsaktiver**.
 2. Klik på **Ny**.

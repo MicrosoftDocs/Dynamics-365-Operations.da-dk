@@ -2,7 +2,7 @@
 title: Konfigurere medarbejderselvbetjening
 description: I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigation på øverste niveau i medarbejderselvbetjening.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 1e0c59eb8db5a97405e87922cc65f3eb74bee48e
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423298"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898434"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurere medarbejderselvbetjening
 
@@ -34,19 +34,16 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
 
 2. Vælg fanen **Konfigurer felt til frynsegodeplaner**, og vælg derefter **Ny**.
 
-3. Angiv værdier for følgende felter:
+3. Angiv værdier for følgende felter.
 
-   | Felt | Beskrivelse |
+   | Felt | Description |
    | --- | --- |
+   | **Kode for plantype** | Den plantype, der vises, når dette felt er valgt i **Selvbetjening for personalegoder**. |
    | **Felt-id** | Entydigt id for feltet. |
-   | **Feltlabeltekst** | Den tekst, der vises for feltet i **Medarbejderselvbetjening**. |
+   | **Feltlabeltekst** | Den tekst, der vises for feltet i **Selvbetjening for personalegoder**. |
    | **Beskrivelse** | En beskrivelse af feltet. |
-   | **Internetadresse** | Angiv URL-adressen på siden **Medarbejderselvbetjening**. |
-   | **Feltstørrelse** | Feltets størrelse: lille, mellem eller stor. |
-   | **Destination** | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
    | **Feltbaggrundsbillede** | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |
-   | **Igangsætning** | Startdato og -tidspunkt, hvor feltet vil blive tilgængeligt. |
-   | **End** | Slutdato og -tidspunkt, hvor feltet vil være tilgængeligt. |
+   | **Spor åben tilmelding** | Vælg denne indstilling, hvis du vil spore status for åben tilmelding til denne plantype. Der kan for eksempel være oprettet planer, hvor **Plantype = Andet**. Disse planer kan være valgfrie planer, som du ikke ønsker at spore status for tilmeldinger for. Hvis du ikke vælger denne plantype, ignoreres planer af denne type, når der spores status for tilmelding eller fuldførelse af tilmelding under fanen **Åben tilmelding**. Denne indstilling gælder for den plantype, der er valgt for alle perioder og juridiske enheder. |
 
 4. Vælg **Gem**.
 
@@ -56,19 +53,16 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
 
 2. Vælg fanen **Konfigurer felt til flekskreditplan**, og vælg derefter **Ny**.
 
-3. Angiv værdier for følgende felter:
+3. Angiv værdier for følgende felter.
 
-   | Felt | Beskrivelse |
+   | Felt | Description |
    | --- | --- |
+   | **Personalegodekredit-id** | De flekskreditprogramplaner, der vises, når dette felt er valgt i **Selvbetjening for personalegoder**. |
    | **Felt-id** | Entydigt id for feltet. |
-   | **Feltlabeltekst** | Den tekst, der vises for feltet i **Medarbejderselvbetjening**. |
+   | **Feltlabeltekst** | Den tekst, der vises for feltet i **Selvbetjening for personalegoder**. |
    | **Beskrivelse** | En beskrivelse af feltet. |
-   | **Internetadresse** | Angiv URL-adressen på siden **Medarbejderselvbetjening**. |
-   | **Feltstørrelse** | Feltets størrelse: lille, mellem eller stor. |
-   | **Destination** | Angiver, om siden skal åbnes i et nyt vindue eller i det aktuelle vindue. |
    | **Feltbaggrundsbillede** | URL-adressen for det billede, der skal bruges til feltet (valgfrit). |
-   | **Igangsætning** | Startdato og -tidspunkt, hvor feltet vil blive tilgængeligt. |
-   | **End** | Slutdato og -tidspunkt, hvor feltet vil være tilgængeligt. |
+   | **Spor åben tilmelding** | Vælg denne indstilling, hvis du vil spore status for åben tilmelding til denne plantype. Der kan for eksempel være oprettet planer, hvor **Plantype = Andet**. Disse planer kan være valgfrie planer, som du ikke ønsker at spore status for tilmeldinger for. Hvis du ikke vælger denne plantype, ignoreres planer af denne type, når der spores status for tilmelding eller fuldførelse af tilmelding under fanen **Åben tilmelding**. Denne indstilling gælder for den plantype, der er valgt for alle perioder og juridiske enheder. |
 
 4. Vælg **Gem**.
 

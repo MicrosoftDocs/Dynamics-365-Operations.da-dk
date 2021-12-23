@@ -2,7 +2,7 @@
 title: Nyheder eller ændringer i Human Resources
 description: Hver anden uge leverer vi en ny udgave til Microsoft Dynamics 365 Human Resources. Emnerne, som findes her, beskriver de ændringer, der er foretaget hver uge.
 author: twheeloc
-ms.date: 04/21/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e30267ca95bdcaa8b42cfb7e606a0a8eda8c1da4
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 15a46c73da664f9133ce45149f1e2dd5e7b94fbc
+ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641179"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902527"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheder eller ændringer i Human Resources
 
@@ -40,6 +40,7 @@ Du kan få yderligere oplysninger om kommende funktioner eller opdateringsproces
 
 Du kan få oplysninger om, hvad der er nyt eller ændret i hver anden uges frigivelse af Human Resources, i følgende emner:
 
+[29. november 2021](hr-whats-new-2021-11-29.md)<br>
 [5. oktober 2021](hr-whats-new-2021-10-04.md)</br>
 [20. september 2021](hr-whats-new-2021-09-20.md)</br>
 [6. september 2021](hr-whats-new-2021-09-06.md)</br>

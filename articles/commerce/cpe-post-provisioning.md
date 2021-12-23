@@ -2,7 +2,7 @@
 title: Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 description: I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416473"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913721"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 
@@ -39,6 +39,7 @@ Når dit Commerce-evalueringsmiljø er blevet klargjort fra ende til anden, skal
 1. Vælg dit miljø fra listen.
 1. Vælg **Log på miljø** i miljøoplysningerne til højre. Du bliver sendt til Commerce-hovedkontoret.
 1. Kontrollér, at den juridiske enhed **USRT** er valgt i øverste højre hjørne.
+2. Gå til **Commerce-parametre > Konfigurationsparametre**, og sørg for, at der er en post for **ProductSearch.UseAzureSearch**, der er angivet til **true**. Hvis denne post mangler, kan du tilføje denne post og køre **Kanaldatabase > Fuld synkronisering** for den Commerce Scale Unit, der er tilknyttet dit eCommerce-websted.
 
 Under klargøring af aktiviteter i Commerce-hovedkontoret skal du kontrollere, at den juridiske enhed **USRT** altid er markeret.
 
@@ -105,6 +106,12 @@ Følg disse trin for at aktivere job i Commerce.
     1. Vælg posten.
     1. Klik på **Batchjob** i handlingsruden, og vælg **Skift status**.
     1. Vælg **Annullering**, og vælg derefter **OK**.
+
+1. Hvis status for jobbet er **Tilbageholdt**, skal du gøre følgende:
+
+    1. Vælg posten.
+    1. Klik på **Batchjob** i handlingsruden, og vælg **Skift status**.
+    1. Vælg **Afventer**, og vælg derefter **OK**.
 
 Du kan også vælge at angive gentagelsesintervallet til et (1) minut for følgende job:
 

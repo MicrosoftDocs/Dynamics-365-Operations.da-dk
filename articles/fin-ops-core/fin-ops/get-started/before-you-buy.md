@@ -2,7 +2,7 @@
 title: Før du køber
 description: Trinvis vejledning, som du kan bruge, når du overvejer at købe Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce.
 author: ShellyBakke
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 0218dd93440c3cd76f16ac954dd7956998873931444fa1334e7382a177ff3fc9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757189"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874578"
 ---
 # <a name="before-you-buy"></a>Før du køber
 
@@ -42,7 +42,7 @@ Der skal tages følgende overvejelser, når du vælger lokalt som installationsm
 - [Systemkrav til lokale installationer](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> Lokale installationer understøttes ikke i nogen infrastruktur til den offentlige sky, herunder Microsoft Azure.
+> Lokale installationer understøttes ikke i nogen infrastruktur til den offentlige sky, herunder Microsoft Azure. De understøttes dog til at køre på [Microsoft Azure Stack-HCI](https://azure.microsoft.com/products/azure-stack/hci/) og [Microsoft Azure Stack-hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 Du kan finde flere oplysninger under [Installationsindstillinger](../../dev-itpro/deployment/choose-deployment-type.md).
 

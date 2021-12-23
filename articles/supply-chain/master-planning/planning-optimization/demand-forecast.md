@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474838"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867241"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Varedisponering med behovsprognoser
 
@@ -84,11 +84,11 @@ Denne sektion indeholder oplysninger om de forskellige metoder, der anvendes til
 
 Når du inkluderer en prognose i en masterplan, kan du vælge, hvordan prognosekravene skal reduceres, når den faktiske efterspørgsel inddrages. Bemærk, at varedisponering udelukker prognosebehovet fra fortiden, hvilket betyder alle prognosebehov før dags dato.
 
-For at inkludere en prognose i en masterplan og vælge den metode, der skal anvendes til at reducere prognosekravene, skal du gå til **Varedisponering \> Opsætning \> Planer \> Masterplaner**. Vælg en prognosemodel i feltet **Prognosemodel**. I feltet **Metode, der anvendes til at reducere prognosekrav** skal du vælge en metode. Der findes følgende indstillinger:
+For at inkludere en prognose i en masterplan og vælge den metode, der skal anvendes til at reducere prognosekravene, skal du gå til **Varedisponering \> Opsætning \> Planer \> Masterplaner**. Vælg en prognosemodel i feltet **Prognosemodel**. I feltet **Metode, der anvendes til at reducere prognosekrav** skal du vælge en metode. Følgende indstillinger er tilgængelige:
 
-- None
+- Ingen
 - Procent – reduktionsnøgle
-- Transaktioner – reduktionsnøgle (endnu ikke understøttet med Planlægningsoptimering)
+- Transaktioner – reduktionsnøgle
 - Transaktioner – dynamisk periode
 
 I de følgende afsnit finder du flere oplysninger om hver indstilling.

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813717"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891745"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder
 
@@ -50,6 +50,11 @@ Afhængigt af forretningsprocesserne kan samme datapost skifte ejer mellem hub o
 > Nogle data kan oprettes både på hub'en og på vægtenheden. Det kan f.eks. være **id'er** og **batchnumre**. Der findes til den givne konflikthåndteringer i tilfælde af et scenario, hvor den samme entydige post både oprettes på hub'en og en vægtenhed under samme synkroniseringscyklus. Når det sker, mislykkes den næste synkronisering, og du skal gå til **Systemadministration > Forespørgsler > Forespørgsler > Dubletter af poster**, hvor du kan få vist og flette dataene.
 
 ## <a name="outbound-process-flow"></a>Udgående procesflow
+
+Før du udruller en arbejdsbyrde for lokationsstyring på en sky- eller edge-skaleringsenhed, skal du sørge for, at funktionen *Skaler enhedssupport til frigivelse til lagersted af udgående ordrer* er aktiveret i din virksomhedshub. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul:** *Warehouse Management*
+- **Funktionsnavn:** *Skaler enhedssupport til frigivelse til lagersted af udgående ordrer*
 
 Den udgående dataejerproces afhænger af, om du bruger belastningsplanlægningsprocessen. I alle tilfælde ejer hub *kildedokumenterne*, f.eks. salgsordrer og flytteordrer, ordrefordelingsprocessen og de relaterede ordretransaktionsdata. Men når du bruger belastningsplanlægningsprocessen, oprettes belastningerne i hub og ejes derfor i begyndelsen af hub. Som en del af processen for *frigivelse til lagersted* overføres ejerskabet af belastningsdataene til den tildefinerede implementering af vægtenheden, som vil blive ejer af den efterfølgende *behandling af forsendelser* (f.eks. arbejdsfordeling, opfyldningsarbejde og oprettelse af efterspørgselsarbejde). Lagerarbejdere kan derfor kun behandle udgående salgs- og flytteordrearbejde ved hjælp af en mobilapp til Warehouse Management, der er knyttet til den installation, der kører den specifikke arbejdsbyrde for vægtenheden.
 
@@ -202,7 +207,7 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 | Udskrivning af lastrelaterede dokumenter                           | Ja | Ja|
 | Fragtseddel og ASN-generering                            | Nej  | Ja|
 | Forsendelsesbekræftelse                                             | Nej  | Ja|
-| Forsendelsesbekræftelse med "Bekræft og flyt"            | Nej  | Nej |
+| Forsendelsesbekræftelse med "Bekræft og flyt"            | Nej  | Ja|
 | Behandling af følgesedler og fakturering                        | Ja | Nej |
 | Kort pluk (salgs- og flytteordrer)                    | Nej  | Ja, uden at fjerne reservationer for kildedokumenter|
 | Overpluk (salgs- og flytteordrer)                     | Nej  | Ja|
@@ -212,8 +217,8 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 | Bølgelabel                                                   | Nej  | Ja|
 | Arbejdsopdeling                                                   | Nej  | Ja|
 | Arbejdsbehandling – Styres af "Lastning af transport"            | Nej  | Nej |
-| Reducer det antal, der er plukket                                       | Nej  | Nej |
-| Tilbagefør arbejde                                                 | Nej  | Nej |
+| Reducer det antal, der er plukket                                       | Nej  | Ja|
+| Tilbagefør arbejde                                                 | Nej  | Ja|
 | Tilbagefør forsendelsesbekræftelse                                | Nej  | Ja|
 
 ### <a name="inbound"></a>Indgående
@@ -227,7 +232,7 @@ I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor
 | Modtagelse af varer undervejs og landingsomkostninger                       | Ja | Nej |
 | Bekræftelse af indgående forsendelse                                    | Ja | Nej |
 | Frigivelse af indkøbsordre til lagersted (behandling af lagerstedsordre) | Ja | Nej |
-| Annullering af ordrelinjer på lagersted<p>Bemærk, at dette kun understøttes, når der ikke er sket nogen registrering for linjen</p> | Ja | Nej |
+| Annullering af ordrelinjer på lagersted<p>Bemærk, at dette kun understøttes, når der ikke er sket nogen registrering for linjen under behandling af handlingen *anmodning om at annullere*</p> | Ja | Nej |
 | Indkøbsordrevare til modtagelse og læg på lager                       | <p>Ja,&nbsp;når&nbsp;der&nbsp;ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, når en indkøbsordre ikke er del af en <i>last</i></p> |
 | Indkøbsordrelinje til modtagelse og læg på lager                       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, når en indkøbsordre ikke er del af en <i>last</i></p></p> |
 | Modtagelse af returordre og placering på lager                              | Ja | Nej |
@@ -246,7 +251,7 @@ I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor
 | Modtagelse med oprettelse af *Kvalitet i kvalitetskontrol*-arbejde       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
 | Modtagelse med oprettelse af kvalitetsordre                            | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
 | Arbejdsbehandling – Styres af *Læg på lager-klynge*                 | Ja | Nej |
-| Arbejdsbehandling med *Kort pluk*                               | Ja | Nej |
+| Arbejdsbehandling med *Kort pluk*                               | Ja | Ja |
 | Indlæsning af nummerplade                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lagerstedsoperationer og håndtering af undtagelser

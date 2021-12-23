@@ -2,7 +2,7 @@
 title: Årsafslutning
 description: Dette emne beskriver den krævede konfiguration og trinnene for at køre årsafslutningsprocessen i Finans.
 author: kweekley
-ms.date: 07/10/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5677ebeee6b8260280d4c9c7c8a7a0e18e7bd78f68a42d23967948a2e75120cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04eeb8886d74fa8c633d2ac4e9e47aa28a12ee30
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778260"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892471"
 ---
 # <a name="year-end-close"></a>Årsafslutning
 
@@ -44,7 +44,7 @@ På siden **Hovedkonto**:
 På siden **Finansparametre** under **Årsafslutning**:
 
 - Indstillingen **Slet eksisterende årsafslutningsposter ved afslutning af året** bruges til at angive, om den systemgenererede åbningspostering fra en tidligere årsafslutning skal slettes, når årsafslutningen køres igen. Hvis denne indstilling er angivet til **Ja**, slettes de tidligere primo- og valgfrie ultimoposteringer, og en ny primo- eller ultimopostering oprettes ud fra de aktuelle saldi. Hvis denne indstilling er angivet til **Nej**, bevares de tidligere primo- og valgfrie ultimoposteringer, og der oprettes en ekstra primo- eller ultimopostering for at flytte saldiene fra reguleringsposteringer, der er bogført efter den forrige årsafslutning.
-- Indstillingen **Opret ultimoposteringer ved overførsel** bruges til at oprette ultimoposteringer i det regnskabsår, der bliver afsluttet, for at angive saldiene på driftskontiene til 0 (nul). Hvis denne indstilling er angivet til **Ja**, oprettes både primoposteringen og ultimoposteringen. Hvis denne indstilling er angivet til **Nej**, oprettes primoposteringen i det næste regnskabsår for at overføre saldiene. Saldi på driftskonti forbliver i slutningen af regnskabsåret.
+- Indstillingen **Opret ultimoposteringer ved overførsel** bruges til at oprette ultimoposteringer i det regnskabsår, der bliver afsluttet, for at angive saldoen på alle hovedkonti til 0 (nul). Hvis denne indstilling er angivet til **Ja**, oprettes både primoposteringen og ultimoposteringen. Hvis denne indstilling er angivet til **Nej**, oprettes primoposteringen i det næste regnskabsår for at overføre saldiene. Saldi på hovedkonti forbliver i slutningen af regnskabsåret.
 - Indstillingen **Indstil status til permanent afsluttet for regnskabsåret** bruges til at angive regnskabsåret til en permanent lukket status. Brug denne indstilling med forsigtighed, da perioder med permanent afsluttet status, ikke kan åbnes igen. Derfor kan reguleringer ikke bogføres i regnskabsåret. Den bedste fremgangsmåde er at angive denne indstilling til **Nej**.
 - Indstillingen **Bilagsnummer skal være udfyldt**, hvis indstillingen er fjernet. Der kræves nu et bilag, når årsafslutningsprocessen køres. På det tidspunkt skal bilagsnummeret angives manuelt.
 

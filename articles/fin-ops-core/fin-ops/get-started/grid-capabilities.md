@@ -2,7 +2,7 @@
 title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret for at få adgang til disse egenskaber.
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700131"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890850"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -119,6 +119,9 @@ På samme måde som du kan markere (eller fjerne markeringen af) alle rækker i 
 
 ### <a name="hiding-column-names"></a>Skjule kolonnenavne
 Ved gruppering af data viser standardfunktionsmåden kolonnenavnet i gruppehovedrækken. Du kan vælge at udelade kolonnenavnet i gruppehovedrækker ved at vælge **Gitterindstillinger** > **Skjul gruppekolonnenavn**.
+
+### <a name="grouping-on-date-and-time-columns"></a>Gruppering af dato- og klokkeslætskolonner
+Fra og med version 10.0.24 er indstillingen føjet til grupper efter år, måned eller dag for dato- eller dato/klokkeslæt-felter . Gruppens "værdi" i den tilsvarende overskriftsrække vil svare til formatet i det pågældende felt. Derudover kan du i forbindelse med dato/klokkeslæts- og klokkeslætsfelter gruppere efter Time, Minut eller Sekund.    
 
 ## <a name="freezing-columns"></a>Fryse kolonner
 Visse kolonner i et gitter kan være så vigtige for sammenhængen, at de ikke skal rulle ud af visningen. Du vil i stedet have, at værdierne i disse kolonner altid er synlige. Funktionen **Frys kolonner i gitteret** giver denne fleksibilitet for brugerne. 

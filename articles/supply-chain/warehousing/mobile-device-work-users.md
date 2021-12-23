@@ -1,22 +1,22 @@
 ---
 title: Brugerkonti til mobilenhed
 description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere og administrere brugerkonti, der gør det muligt for arbejdere at logge på og bruge lagerstedsappen.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 09/15/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 9ff6752f303adab6c4c52f2f09eea1c0ae2e8e0a
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647796"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902091"
 ---
 # <a name="mobile-device-user-accounts"></a>Brugerkonti til mobilenhed
 

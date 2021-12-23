@@ -2,7 +2,7 @@
 title: Oversigt over budgetstyring
 description: Dette emne introducerer budgetstyringsfunktionen og indeholder oplysninger, der kan hjælpe dig med at konfigurere budgetstyring for at optimere administrationen af organisationens økonomiske ressourcer.
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772873"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890694"
 ---
 # <a name="budget-control-overview"></a>Oversigt over budgetstyring
 
@@ -78,9 +78,7 @@ Dernæst kan du under fanen **Rettigheder til budgetoverskridelse** angive bruge
 Dernæst kan du under fanen **Disponible budgetmidler** definere den formel, der bruges til at beregne de disponible budgetmidler. Alt efter, hvor konservativt en organisation administrerer sine finansielle midler eller under hensyntagen til forordninger eller branchemæssige krav, kan beregningen omfatte kladde- eller ikke-bogførte dokumenter. 
 
 > [!NOTE]
-> Hvis denne beregning ændres i løbet af en budgetcyklus, påvirker det ikke dokumenter, der tidligere er godkendt under budgetstyring og bogført eller udført. I programversionen 10.0.17 blev den nye funktion **Spor kun beløb i beregningen af disponible budgetmidler** tilgængelig for begrænsede kunder. Med denne funktion kan du ændre, hvilke data der spores i BudgetSourceTracking-tabellerne. Når denne funktion er aktiveret, gemmes kun beløb, hvis de er valgt til at blive anvendt i beregningen af disponible budgetmidler. Kontakt Support, hvis du vil anmode om, at funktionen **Spor kun beløb i beregningen af disponible budgetmidler** bliver aktiveret. 
-
-### <a name="documents-and-journals"></a>Dokumenter og journaler
+> Hvis denne beregning ændres i løbet af en budgetcyklus, påvirker det ikke dokumenter, der tidligere er godkendt under budgetstyring og blev bogført eller fuldført. En funktion med navnet **Spor kun beløb i beregningen af disponible budgetmidler** giver dig mulighed for at ændre, hvilke data der spores i tabellerne BudgetSourceTracking. Når denne funktion er aktiveret, gemmes kun beløb, hvis de er valgt til at blive anvendt i beregningen af disponible budgetmidler. Du kan finde flere oplysninger i [Tilgængelige budgetmidler](budget-funds-available.md).
 
 Dernæst kan du under fanen **Dokumenter og journaler** vælge, hvilke kildedokumenter og journaler der skal underkastes budgetstyringskontroller, og om kontrollen sker for en linjepost eller for hele dokumentet. 
 

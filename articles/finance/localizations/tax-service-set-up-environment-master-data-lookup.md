@@ -2,7 +2,7 @@
 title: Aktivere masterdataopslag til konfiguration af momsberegning
 description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere og aktivere funktionen til opslag af masterdata for momsberegning.
 author: kai-cloud
-ms.date: 11/03/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
-ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
+ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "7749504"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867346"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktivere masterdataopslag til konfiguration af momsberegning 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en forklaring på, hvordan du kan konfigurere og aktivere funktionen til opslag af masterdata for momsberegning. Der findes en rullemenu til valg af værdier i momsberegningskonfigurationen for felter som **Kreditorkonto**, **Varekode** og **Leveringsbetingelse**. Disse værdier kommer fra det tilsluttede Microsoft Dynamics 365 Finance-miljø via Microsoft Dataverse-datakilden.
+Dette emne indeholder en forklaring på, hvordan du kan konfigurere og aktivere funktionen til opslag af masterdata for momsberegning. Der findes en rullemenu til valg af værdier i momsberegningskonfigurationen for felter som **Juridisk enhed**, **Kreditorkonto**, **Varekode** og **Leveringsbetingelse**. Disse værdier kommer fra det tilsluttede Microsoft Dynamics 365 Finance-miljø via Microsoft Dataverse-datakilden.
+
+> [!NOTE] 
+> Funktionaliteten for opslag efter stamdata for momsberegning er valgfri. Du kan springe følgende trin over, hvis du deaktiverer funktionen **Understøttelse af Dataverse-datakilder i momstjenesten** i RCS (Regulatory Configuration Service). Men i dette tilfælde er rullelisten ikke tilgængelig i konfigurationen af momsberegningen.
 
 1. Konfigurer integration af Microsoft Power Platform i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger under [Microsoft Power Platform integration - Oversigt over tilføjelsesprogrammer](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Når du har fuldført trinnet, vises navnet på et Microsoft Power Platform-miljø i sektionen **Power Platform-integration**.
 2. Gå til [Microsoft Power Platform administration](https://admin.powerplatform.microsoft.com/environments), og vælg miljønavnet. URL-adressen til miljøet er angivet.

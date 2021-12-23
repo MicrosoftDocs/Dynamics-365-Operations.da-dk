@@ -2,7 +2,7 @@
 title: Overføre billeder
 description: I dette emne beskrives, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
-ms.date: 08/25/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423249"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891516"
 ---
 # <a name="upload-images"></a>Overføre billeder
 
@@ -41,7 +41,8 @@ Når du uploader et billede, kan du angive følgende oplysninger.
 - **Publicer aktiver efter upload**: Når dette afkrydsningsfelt er markeret, udgives billedet eller billederne straks efter upload.
 
 > [!NOTE]
-> Billedaktiver med en tildelt kategori mærkes også automatisk med kategorien som et nøgleord for at hjælpe med at søge efter aktiver af en bestemt kategori.
+> - Billedaktiver med en tildelt kategori mærkes også automatisk med kategorien som et nøgleord for at hjælpe med at søge efter aktiver af en bestemt kategori.
+> - På sider med produktdetaljer genereres **Alt-tekst** dynamisk ved hjælp af produktnavnet, så ændring af **Alt-tekst** til et produktbillede har ingen indflydelse på det gengivne billede.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Navngivningskonventioner for omni-kanalbilleder 
 

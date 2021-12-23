@@ -1,8 +1,8 @@
 ---
 title: Forbedringer til funktioner til bogføring af opgørelse
 description: I dette emne beskrives de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -10,19 +10,20 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49fc9003eae562a155fd8e30345ba4590d36e15b61f9f6a3f0b5896cb720f414
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772198"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891435"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
 [!include [banner](includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 I dette emne beskrives det første sæt af forbedringer, der er foretaget af funktionen til bogføring af opgørelsen. Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -116,9 +117,17 @@ En opgørelse, gennemgår forskellige handlinger (for eksempel Opret, Beregn, Fj
 
 ### <a name="aggregated-transactions"></a>Aggregerede transaktioner
 
-Under bogføringsprocessen aggregeres salgsposteringerne baseret på konfigurationen. Disse aggregerede transaktioner gemmes i systemet og bruges til at oprette salgsordrer. Hver aggregerede transaktion opretter én tilsvarende salgsordre i systemet. Du kan se de aggregerede tilstande ved hjælp af knappen **Aggregerede transaktioner** i gruppen **Detaljer om udførelse** i opgørelsen.
+Under bogføringsprocessen aggregeres cash-and-carry-transaktioner efter debitor og produkt. Derfor reduceres antallet af salgsordrer og oprettede linjer. De aggregerede transaktioner gemmes i systemet og bruges til at oprette salgsordrer. Hver aggregerede transaktion opretter én tilsvarende salgsordre i systemet. 
 
-Fanen **Oplysninger om salgsordre** i en aggregeret transaktion indeholder følgende oplysninger:
+Hvis en opgørelse ikke er bogført helt, kan du få vist de aggregerede transaktioner i opgørelsen. Vælg **Aggregerede transaktioner** i gruppen **Detaljer om udførelse** under fanen **Opgørelse** i handlingsruden.
+
+![Knappen Aggregerede transaktioner for en opgørelse, der ikke er bogført helt.](media/aggregated-transactions.png)
+
+Hvis en opgørelse er bogført, kan du få vist de aggregerede transaktioner på siden **Bogførte opgørelser**. Vælg **Forespørgsler** i handlingsruden, og vælg derefter **Aggregerede transaktioner**.
+
+![Kommandoen Aggregerede transaktioner for bogførte opgørelser.](media/aggregated-transactions-posted-statements.png)
+
+Oversigtspanalet **Oplysninger om salgsordre** i en aggregeret transaktion indeholder følgende oplysninger:
 
 - **Post-id** – Id'et for den aggregerede transaktion.
 - **Opgørelsesnummer** – Den opgørelse, som den aggregerede transaktion tilhører.
@@ -127,12 +136,28 @@ Fanen **Oplysninger om salgsordre** i en aggregeret transaktion indeholder følg
 - **Antal aggregerede linjer** – Det samlede antal linjer til den aggregerede transaktion og salgsordre.
 - **Status** – Den sidste status for den aggregerede transaktion.
 - **Faktura-id** – Når salgsordren for den aggregerede transaktion er faktureret, er dette salgsfaktura-id'et. Hvis dette felt er tomt, er fakturaen for salgsordren ikke blevet bogført.
+- **Fejlkode** – Dette felt er angivet, hvis aggregeringen er i fejltilstand.
+- **Fejlmeddelelse** – Dette felt er angivet, hvis aggregeringen er i fejltilstand. Det viser detaljer om, hvad der var årsag til, at processen mislykkedes. Du kan bruge oplysningerne i fejlkoden til at løse problemet og derefter genstarte processen manuelt. Afhængigt af løsningstypen skal aggregeret salg måske slettes og behandles på en ny opgørelse.
 
-Fanen **Transaktionsdetaljer** i en aggregeret transaktion viser alle transaktioner, der er trukket ind i den aggregerede transaktion. De aggregerede linjer i den aggregerede transaktion viser alle de poster, der er aggregeret fra transaktionerne. De aggregerede linjer viser også oplysninger om f.eks. vare, variant, antal, pris, nettobeløb, enhed og lagersted. Grundlæggende svarer hver aggregerede linje til én salgsordrelinje.
+![Felter i oversigtspanelet Salgsordredetaljer for en aggregeret transaktion.](media/aggregated-transactions-error-message-view.png)
 
-Fra siden **Aggregerede transaktioner** kan du hente XML-filen til en bestemt aggregeret transaktion ved hjælp af knappen **Eksportér salgsordre-XML**. Du kan bruge XML-filen til fejlfinding af problemer, der vedrører oprettelse af salgsordrer og bogføring. Hent XML-filen, overfør den til et testmiljø, og foretag fejlfinding af problemet i testmiljøet. Funktionen til hentning af XML-filen til aggregerede transaktioner er ikke tilgængelig for opgørelser, der er bogført.
+Oversigtspanelet **Transaktionsdetaljer** i en aggregeret transaktion viser alle transaktioner, der er trukket ind i den aggregerede transaktion. De aggregerede linjer i den aggregerede transaktion viser alle de poster, der er aggregeret fra transaktionerne. De aggregerede linjer viser også oplysninger om f.eks. vare, variant, antal, pris, nettobeløb, enhed og lagersted. Grundlæggende svarer hver aggregerede linje til én salgsordrelinje.
 
-Den aggregerede transaktionsvisning giver følgende fordele:
+![Oversigtspanelet Transaktionsoplysninger for en aggregeret transaktion.](media/aggregated-transactions-sales-details.png)
+
+I nogle situationer kan aggregerede transaktioner muligvis ikke bogføre deres konsoliderede salgsordre. I disse situationer knyttes der en fejlkode til opgørelsesstatussen. Hvis du kun vil have vist aggregerede transaktioner, der har fejl, kan du aktivere filteret **Vis kun fejl** i visningen af aggregerede transaktioner ved at markere afkrydsningsfeltet. Hvis du aktiverer dette filter, begrænser du resultaterne til aggregerede transaktioner, der har fejl, og som kræver en rettelse. Du kan finde oplysninger om, hvordan du løser disse fejl, i [Redigere og overvågere onlineordre- og asynkrone kundeordretransaktioner](edit-order-trans.md).
+
+![Afkrydsningsfelt for filteret Vis kun fejl i visningen af aggregerede transaktioner.](media/aggregated-transactions-failure-view.png)
+
+På siden **Aggregerede transaktioner** kan du hente XML-filen til en bestemt aggregeret transaktion ved at vælge **Eksportér aggregerede data**. Du kan gennemse XML-filen i en hvilken som helst XML-editor for at se de faktiske dataoplysninger, der involverer oprettelse og bogføring af salgsordrer. Funktionen til hentning af XML-filen til aggregerede transaktioner er ikke tilgængelig for opgørelser, der er bogført.
+
+![Knappen Eksportér aggregeringsdata på siden Aggregerede transaktioner.](media/aggregated-transactions-export.png)
+
+Hvis du ikke kan rette fejlen ved at rette data på salgsordren eller de data, der understøtter salgsordren, er knappen **Slet kundeordre** tilgængelig. Hvis du vil slette en ordre, skal du vælge den aggregerede transaktion, der har en fejl, og derefter vælge **Slet kundeordre**. Både den aggregerede transaktion og den tilsvarende salgsordre slettes. Du kan nu gennemse transaktionerne ved hjælp af redigerings- og overvågningsfunktionerne. Alternativt kan de behandles igen via en ny opgørelse. Når alle fejl er løst, kan du genoptage bogføring af opgørelsen ved at køre funktionen til bogføring af opgørelse for den relevante opgørelse.
+
+![Knappen Slet kundeordre i visningen af aggregerede transaktioner.](media/aggregated-transactions-delete-cust-order.png)
+
+Visningen af aggregerede transaktioner giver følgende fordele:
 
 - Brugeren har indsigt i de aggregerede transaktioner, der mislykkedes under oprettelse af salgsordren, og de salgsordrer, der mislykkedes under faktureringen.
 - Brugeren har indsigt i, hvordan transaktioner bliver aggregeret.

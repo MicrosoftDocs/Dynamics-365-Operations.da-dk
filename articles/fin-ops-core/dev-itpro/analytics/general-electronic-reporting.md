@@ -2,7 +2,7 @@
 title: Oversigt over elektronisk rapportering (ER)
 description: Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering. Det indeholder en beskrivelse af nøglebegreber, understøttede scenarier og formater, der er en del af løsningen.
 author: NickSelin
-ms.date: 09/20/2021
+ms.date: 11/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fd83c787be4d9de151d2727384d07bc209e33f
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 0b772acd4a8d0849803cefa8fc14ae3dd6e18831
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562170"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867274"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -30,11 +30,37 @@ ms.locfileid: "7562170"
 
 Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering (ER). Den indeholder oplysninger om centrale koncepter, de scenarier, som ER understøtter, samt en liste over formater, der er designet og udgivet som del af løsningen.
 
-ER er et værktøj, du kan bruge til at konfigurere formater for både indgående og udgående elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Med ER du administrere disse formater i løbet af deres livscyklus. For eksempel kan du overholde nye lovgivningsmæssige krav og oprette forretningsdokumenter i det krævede format for at udveksle oplysninger elektronisk med offentlige myndigheder, banker og andre parter.
+ER er et konfigurerbart værktøj, der hjælper dig med at oprette og vedligeholde lovpligtig elektronisk rapportering og betaling. Det er baseret på følgende tre begreber:
+
+- Konfiguration i stedet for kodning:
+
+    - Konfiguration kan udføres af en erhvervsbruger og kræver ikke en udvikler.
+    - Datamodellen defineres i forretningsbegreber.
+    - Visuelle editorer bruges til at oprette alle komponenter i ER-konfigurationen.
+    - Det sprog, der bruges til datatransformation, svarer til det sprog, der bruges i Microsoft Excel.
+
+- Én konfiguration til flere Dynamics 365 Finance-versioner:
+
+    - Administrer én domænespecifik datamodel, der er defineret i forretningsbegreber.
+    - Isoler oplysninger om programversioner i versionsafhængige datamodeltilknytninger.
+    - Vedligehold én formatkonfiguration til flere versioner af den aktuelle version, baseret på datamodellen.
+
+- Let eller automatisk opgradering:
+
+    - Versionsstyring af ER-konfigurationer understøttes.
+    - Microsoft Dynamics Lifecycle Services (LCS)-aktivbiblioteket kan bruges som lager for ER-konfigurationer til versionsudveksling.
+    - Der kan introduceres localiseringer, der er baseret på oprindelige ER-konfigurationer, som underordnede versioner.
+    - Et ER-konfigurationstræ leveres som et værktøj, der kan hjælpe med at styre afhængigheder for versioner.
+    - Forskelle i lokalisering eller deltakonfigurationen registreres for at aktivere automatisk opgradering til en ny version af den oprindelige ER-konfiguration.
+    - Det er let at løse konflikter, der opdages under automatisk opgradering af lokaliseringsversioner, manuelt.
+
+ER giver dig mulighed for at definere elektroniske formatstrukturer og beskriver derefter, hvordan strukturerne skal udfyldes ved hjælp af data og algoritmer. Du kan bruge et formelsprog, der ligner Excel-sproget til datatransformation. Der introduceres et midlertidigt datamodelbegreb, som gør tilknytningen fra database til format mere overskuelig, genbrugelig og uafhængig af formatændringer. Med dette begreb kan implementeringsoplysninger skjules fra formattilknytninger, og en enkelt datamodel kan genbruges til tilknytning af flere formater.
+
+Du kan bruge ER til at konfigurere formater for både indgående og udgående elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande og områder. Med ER du administrere disse formater i løbet af deres livscyklus. For eksempel kan du overholde nye lovkrav og oprette forretningsdokumenter i det krævede format for at udveksle oplysninger elektronisk med offentlige myndigheder, banker og andre parter.
 
 ER-programmet henvender sig til virksomhedsbrugere i stedet for udviklere. Da du konfigurerer formater frem for kode, udføres processer til oprettelse og tilpasning af formater for elektroniske dokumenter hurtigere og nemmere.
 
-ER understøtter i øjeblikket TEXT, XML, Microsoft Word-dokument og OPENXML-regnearksformater. Men der er mulighed for understøttelse af flere formater.
+ER understøtter i øjeblikket TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel og OPENXML-regnearksformater.
 
 ## <a name="capabilities"></a>Egenskaber
 
@@ -48,6 +74,10 @@ ER-programmet har følgende funktioner:
 
 ## <a name="key-concepts"></a>Nøglebegreber
 
+### <a name="main-data-flow"></a>Hoveddataflow
+
+[![ER-hoveddataflow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+
 ### <a name="components"></a>Komponenter
 
 Elektronisk rapportering (ER) understøtter følgende komponenttyper:
@@ -59,74 +89,6 @@ Elektronisk rapportering (ER) understøtter følgende komponenttyper:
 
 Du kan finde flere oplysninger under [Elektronisk rapporteringskomponenter](er-overview-components.md).
 
-#### <a name="data-model-and-model-mapping-components"></a>Komponenter til datamodel og modeltilknytning
-
-En datamodelkomponent er en abstrakt repræsentation af en datastruktur. Den bruges til at beskrive et bestemt forretningsdomæneområde, der er tilstrækkeligt detaljeret til at opfylde kravene til rapportering for det pågældende domæne. En data modelkomponent består af følgende dele:
-
-- <a name="DataModelComponent"></a>En datamodel som et sæt af domænespecifikke forretningsenheder samt en hierarkisk struktureret definition af relationerne mellem enhederne.
-- <a name="ModelMappingComponent"></a>En modeltilknytning, som sammenkæder valgte programdatakilder med enkelte elementer i en datamodel, der under kørsel angiver dataflow og regler for forretningsdatapopulation til en datamodelkomponent.
-
-En forretningsenhed af en datamodel er repræsenteret som en beholder (post). Egenskaber for forretningsenheden er repræsenteret som dataelementer (felter). Hvert dataelement har et entydigt navn, etiket, beskrivelse og værdi. Værdien af hvert dataelement kan være udformet, så den kan genkendes som en streng, heltal, reelt tal, dato, fasttekst, boolesk osv. Desuden kan det være en anden post eller postliste.
-
-En enkelt modelkomponent kan indeholde flere hierarkier af domænespecifikke forretningsobjekter. Den kan også indeholde modeltilknytninger, der understøtter et rapportspecifikt dataflow på kørselstidspunktet. Hierarkierne afpasses efter en enkelt post, der er valgt som en rod for modeltilknytningen. Datamodellen for betalingsdomæneområdet kan f.eks. understøtte følgende tilknytninger:
-
-- Virksomhed \> Kreditor \> Betalingstransaktioner for AP-domænet
-- Debitor \> Virksomhed \> Betalingstransaktioner for AR-domænet
-
-Bemærk forretningsenheder som f.eks firma- og betalingsposteringer angives én gang. Forskellige tilknytninger genbruger dem.
-
-En modeltilknytning, der understøtter udgående elektroniske dokumenter, har følgende muligheder:
-
-- Den kan bruge forskellige datatyper som datakilder til en datamodel. Den kan for eksempel bruge tabeller, dataenheder, metoder eller fasttekster.
-- Den understøtter brugerinputparametre, der kan defineres som datakilder for en datamodel, når data skal angives på kørselstidspunktet.
-- Den understøtter transformationen af data til de grupper, der kræves. Den gør det også muligt at filtrere, sortere og summere data og tilføje logisk beregnede felter, der er designet via formler, der ligner Microsoft Excel-formler. Du kan finde flere oplysninger under [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md).
-
-En modeltilknytning, der understøtter indgående elektroniske dokumenter, har følgende muligheder:
-
-- Det kan bruge forskellige opdaterbare dataelementer som mål. Disse dataelementer omfatter tabeller, dataenheder og visninger. Dataene kan opdateres ved hjælp af dataene fra de indgående elektroniske dokumenter. Der kan bruges flere destinationer i en enkelt modeltilknytning.
-- Den understøtter brugerinputparametre, der kan defineres som datakilder for en datamodel, når data skal angives på kørselstidspunktet.
-
-Der udvikles en datamodelkomponent til hvert forretningsdomæne, der skal bruges som en samlet datakilde til rapportering, der isolerer rapportering fra den fysiske implementering af datakilder. Den repræsenterer domænespecifikke forretningsbegreber og -funktioner i en formular, der gør et rapporteringsformats oprindelige design og yderligere vedligeholdelse mere effektivt.
-
-#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Formatkomponenter for udgående elektroniske dokumenter
-
-En formatkomponent er skemaet for rapporteringsoutput, der skal oprettes på kørselstidspunktet. Et skema består af følgende elementer:
-
-- Et format, der definerer strukturen og indholdet af det udgående elektroniske dokument, der oprettes på kørselstidspunktet.
-- Datakilder som et sæt brugerinputparametre og en domænespecifik datamodel, der bruger en valgt modeltilknytning.
-- En formattilknytning som et sæt bindinger af formatdatakilder, der har enkelte elementer af et format, der angiver dataflow og regler for formatoutputgenerering på kørselstidspunktet.
-- En formatvalidering som et sæt konfigurerbare regler, der styrer oprettelsen af rapporten på kørselstidspunktet afhængigt af kørselskonteksten. Eksempelvis kan der være en regel, der standser outputgenerering af en kreditors betalinger og medfører en undtagelse, når bestemte attributter for den valgte kreditor mangler, f.eks. bankkontonummeret.
-
-En formatkomponent understøtter følgende funktioner:
-
-- Oprettelse af rapporteringsoutput som separate filer i forskellige formater, f.eks. tekst, XML, Microsoft Word-dokument eller regneark.
-- Separat oprettelse af flere filer og indkapsling af disse filer i zip-filer.
-
-En formatkomponent gør det muligt at vedhæfte bestemte filer, der kan bruges i rapporteringsoutputtet:
-
-- Excel-projektmapper, der indeholder et regneark, der kan bruges som skabelon for output i regnearksformat OPENXML:
-- Word-filer, der indeholder et dokument, der kan bruges som skabelon for output i Microsoft Word-dokumentformatet
-- Andre filer kan indgå i formatets output som foruddefinerede filer.
-
-I følgende illustration vises, hvordan dataene flyder for disse formater.
-
-[![Dataflow for udgående formatkomponenter.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-For at køre en enkelt ER-formatkonfiguration og generere et udgående elektronisk dokument skal du identificere tilknytningen af formatkonfigurationen.
-
-#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Formatkomponenter for indgående elektroniske dokumenter
-
-En formatkomponent er skemaet for det indgående dokument, der importeres på kørselstidspunktet. Et skema består af følgende elementer:
-
-- Et format, der definerer strukturen og indholdet af det indgående elektroniske dokument, som indeholder data, der importeres på kørselstidspunktet. En formatkomponent bruges til at fortolke et indgående dokument i forskellige formater, f.eks. tekst og XML.
-- En formattilknytning, som binder individuelle formateringselementer til elementer i en domænespecifik datamodel. På kørselstidspunktet angiver elementerne i datamodellen dataflowet og reglerne for import af data fra et indgående dokument og gemmer derefter dataene i en datamodel.
-- En formatvalidering som et sæt konfigurerbare regler, der styrer import af data på kørselstidspunktet afhængigt af kørselskonteksten. Eksempelvis kan der være en regel, der standser import af data fra et bankkontoudtog, der har en kreditors betalinger og medfører en undtagelse, når en bestemt kreditors attributter mangler, f.eks. kreditor-id-koden.
-
-I følgende illustration vises, hvordan dataene flyder for disse formater.
-
-[![Dataflow for indgående formatkomponenter.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
-
-Hvis du vil køre en enkelt ER-formatkonfigurationen for at importere data fra et indgående elektronisk dokument, skal du identificere den ønskede tilknytning af en formatkonfiguration samt integrationspunktet for en modeltilknytning. Du kan bruge den samme modeltilknytning og de samme destinationer sammen med forskellige formater for forskellige typer indgående dokumenter.
 
 #### <a name="component-versioning"></a>Komponentversioner
 

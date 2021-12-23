@@ -2,7 +2,7 @@
 title: Konfigurere et B2B-e-handelswebsted
 description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere et business-to-business (B2B)-e-handelswebsted i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713742"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891379"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Oprette et B2B-e-handelswebsted
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Business-to-business-e-handelswebsteder indeholder nogle af de vigtigste funktioner, der optimerer arbejdsgangen for en B2B-bruger. Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere et business-to-business (B2B)-e-handelswebsted i Microsoft Dynamics 365 Commerce. Den gennemgår de moduler og lokationsindstillinger, der skal konfigureres for at aktivere B2B-specifikke scenarier.
 
@@ -306,6 +307,30 @@ Hvis du vil tilføje modulet Hurtig tilføjelse til en indkøbsvognsside i Comme
 
 > [!NOTE] 
 > Modulet Hurtig tilføjelse er tilgængeligt fra frigivelsen af Commerce version 10.0.17. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Føje et massekøbsmodul til en side med produktoplysninger
+
+Massekøbsmodulet på en side med produktoplysninger (PDP) giver en matrixbaseret oplevelse, hvor en køber hurtigt kan føje flere varianter af et produkt til indkøbsvognen. Når en webstedsbruger skal bestille flere varianter af samme produkt, fjerner denne oplevelse behovet for at vælge kombinationen af produktdimensioner, definere antallet, føje varianten til indkøbsvognen og derefter gentage processen for andre kombinationer af produktdimensioner.
+
+Udfør følgende trin for at føje et massekøbsmodul til en PDP i Commerce-webstedsgeneratoren.
+
+1. Gå til **Skabeloner**, og vælg PDP-skabelonen for webstedet.
+1. Vælg **Rediger**.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Massekøb** og derefter **OK**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
+1. Gå til **Sider**, og vælg webstedets PDP.
+1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. I egenskabsruden for modulet **Container** skal du vælge **Fyld container** under **Bredde**.
+1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Tilføj modul** skal du vælge modulet **Massekøb** og derefter **OK**.
+1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
+
+> [!NOTE] 
+> Modulet Massekøb er tilgængeligt efter Commerce-version 10.0.24-udgaven. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

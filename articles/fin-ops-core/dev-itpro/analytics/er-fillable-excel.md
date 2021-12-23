@@ -2,7 +2,7 @@
 title: Designe en konfiguration til at generere dokumenter i Excel-format
 description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731632"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890859"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
 [!include[banner](../includes/banner.md)]
 
-Du kan designe en formatkonfiguration [ER (Electronic reporting)](general-electronic-reporting.md), der har et ER-[formatkomponent](general-electronic-reporting.md#FormatComponentOutbound), som du kan konfigurere til at generere et udgående dokument i et Microsoft Excel-projektmappeformat. Specifikke ER-formatkomponenter skal bruges til dette formål.
+Du kan designe en formatkonfiguration af [Elektronisk rapportering (ER)](general-electronic-reporting.md), der har en ER-formatkomponent, som du kan konfigurere til at generere et udgående dokument i et Microsoft Excel-projektmappeformat. Specifikke ER-formatkomponenter skal bruges til dette formål.
 
 Hvis du vil vide mere om denne funktion, skal du følge trinnene i emnet, [Designe en konfiguration til generering af rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md).
 
@@ -330,6 +330,40 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
 6. Generer et FTI-dokument, der kan udskrives, og gennemse sidefoden i det oprettede dokument.
 
     ![Gennemse sidefoden i et genereret dokument i Excel-format.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Eksempel 2: Rettelse af EPPlus-problemet de sammenflettede celler
+
+Du kan køre et ER-format for at generere et udgående dokument i et Excel-projektmappeformat. Når funktionen **Aktivér brug af EPPlus-bibliotek i elektronisk rapporteringsstruktur** er aktiveret i arbejdsområdet **Funktionsstyring**, bruges [EPPlus-biblioteket](https://www.nuget.org/packages/epplus/4.5.2.1) til at oprette Excel-output. Men på grund af den kendte [Excel-funktionalitet](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) og begrænsningen for EPPlus-biblioteket kan du komme ud for følgende undtagelse: "Kan ikke slette/overskrive flettede celler. Et interval flettes delvist sammen med et andet flettet område." Du kan finde ud af, hvilken type Excel-skabeloner der kan forårsage denne undtagelse, og hvordan du kan løse problemet, ved at fuldføre følgende eksempel.
+
+1. I Excel-skrivebordsprogrammet skal du oprette en ny Excel-projektmappe.
+2. Tilføj navnet **ReportTitle** for celle **A2** i regnearket **Sheet1**.
+3. Flet celle **A1** og **A2**.
+
+    ![Gennemse resultaterne af fletning af celle A1 og A2 i den designede Excel-projektmappe i Excel-skrivebordsprogrammet.](./media/er-fillable-excel-example2-1.png)
+
+3. På siden **Konfigurationer** skal du [tilføjet et nyt ER-format](er-fillable-excel.md#add-a-new-er-format) for at generere et udgående dokument i et Excel-projektmappeformat.
+4. På siden **Formatdesigner** skal du [importere](er-fillable-excel.md#template-import) den designede Excel-projektmappe til det tilføjede ER-format som en ny skabelon til udgående dokumenter.
+5. På siden **Tilknytning** skal du konfigurere bindingen for **ReportTitle**-komponenten af [Celle](er-fillable-excel.md#cell-component)-typen.
+6. Kør det konfigurerede ER-format. Bemærk, at følgende undtagelse vises: "Kan ikke slette/overskrive sammenflettede celler. Et interval flettes delvist sammen med et andet flettet område."
+
+    ![Gennemse resultaterne af at køre det konfigurerede ER-format på formatdesignersiden.](./media/er-fillable-excel-example2-2.png)
+
+Du kan rette fejlen på en af følgende måder:
+
+- **Nemmere, men anbefales ikke**: I arbejdsområdet **Funktionsstyring** skal du deaktivere funktionen **Aktivér brug af EPPlus-bibliotek i Elektronisk rapporteringsstruktur**. Selvom denne metode er nemmere, kan du komme ud for andre problemer, hvis du bruger den, da nogle ER-funktioner kun understøttes, når funktionen **Aktivér brug af EPPlus-bibliotek i Elektronisk rapporteringsstruktur** er aktiveret.
+- **Anbefalet:** Følg disse trin:
+
+    1. I Excel-desktopprogrammet kan du redigere Excel-projektmappen på en af følgende måder:
+
+        - I regnearket **Sheet1** skal du fjerne fletning af celle **A1** og **A2**.
+        - Ret referencen for navnet **ReportTitle** fra **=Sheet1!$A$2** til **=Sheet1!$A$1**.
+
+        ![Gennemse resultaterne af ændret reference i den designede Excel-projektmappe i Excel-skrivebordsprogrammet.](./media/er-fillable-excel-example2-3.png)
+
+    2. På siden **Formatdesigner** skal du [importere](er-fillable-excel.md#template-import) den ændrede Excel-projektmappe til det ER-format, der kan redigeres, for at opdatere den eksisterende skabelon.
+    3. Kør det ændrede ER format.
+
+        ![Gennemse det genererede dokument i Excel-skrivebordsprogrammet.](./media/er-fillable-excel-example2-4.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

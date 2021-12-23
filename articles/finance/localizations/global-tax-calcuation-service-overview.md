@@ -2,7 +2,7 @@
 title: Oversigt over momsberegning
 description: Dette emne forklarer det overordnede område og funktionerne for til momsberegning.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647051"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892418"
 ---
 # <a name="tax-calculation-overview"></a>Oversigt over momsberegning
 
@@ -65,9 +65,23 @@ Momsberegning implementeres i følgende Azure-geografiske områder. Der vil bliv
 > [!NOTE]
 > Momsberegning understøtter ikke tidligere version af Dynamics 365, f.eks. Dynamics AX 2012 eller installationer af Dynamics 365 i lokale miljøer.
 
+## <a name="versions"></a>Versioner
+Det anbefales, at du importerer og indstiller konfigurationen af momsberegning med den version, der svarer til din version af Finance eller Supply Chain Management.
+
+| Version af Finance eller Supply Chain Management | Version af momskonfiguration               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Momskonfiguration – Europe 30.12.82     |
+| 10.0.19         | Konfiguration af momsberegning 36.38.193 |
+| 10.0.20         | Konfiguration af momsberegning 40.43.208 |
+| 10.0.21         | Konfiguration af momsberegning 40.48.215 |
+| 10.0.22         | Konfiguration af momsberegning 40.48.215 |
+| 10.0.23         | Konfiguration af momsberegning 40.50.221 |
+| 10.0.24         | Konfiguration af momsberegning 40.50.225 |
+
+
 ## <a name="data-flow"></a>Dataflow
 
-Her er en oversigt over dataflowprocessen til tTax-beregning. 
+Her er en oversigt over dataflowprocessen til momsberegning. 
 
 1. I RCS kan du få vist og importere momspligtige dokumentmodelkonfigurationer og konfigurationer af modeltilknytning. Hvis du skal udvide konfigurationer til et avanceret scenario, skal du se [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
 2. Opret eller vedligehold momsfunktioner i RCS. Du kan bruge momsfunktioner til at vedligeholde momssatser og regler for momspligtighed.
@@ -169,6 +183,10 @@ Følgende lande/områder til en juridisk enheds primære adresse understøttes i
 - Japan
 - Malaysia
 - Singapore
+
+Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.24:
+
+- Mexico
 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 

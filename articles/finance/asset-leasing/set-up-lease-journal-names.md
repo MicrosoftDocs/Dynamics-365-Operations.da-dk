@@ -2,7 +2,7 @@
 title: Oprette leasingkladdenavne
 description: Dette emne forklarer, hvordan du kan definere navne på leasingkladder. Navne på leasekladder angiver de kladder, som poster, der stammer fra aktivleasing, bogføres på.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1ea35ec40ddd459e1a9e7641557147e23fe45d3e
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b9d8136ae4f960a586b9526751fc8bf6e7675c8d
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343208"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890744"
 ---
 # <a name="set-up-lease-journal-names"></a>Oprette leasingkladdenavne
 
@@ -39,6 +39,7 @@ Benyt følgende fremgangsmåde for at konfigurere leasingkladdenavne.
 2. Under fanen **Generelt** i feltet **Første genkendelseskladdenavn** og vælg en kladde. Alle posteringer i den første genkendelseskladde bogføres på dette kladdenavn.
 3. Vælg en kladde i feltet **Fakturakladdenavn**. Hvis indstillingen **Betal til kreditor** er angivet til **Ja** for leasingkartoteket, vil leasing- og udgiftsbetalingsfakturaer blive bogført på dette kladdenavn.
 4. Vælg en kladde i feltet **Leasingkladdenavn**. Alle poster for afskrivning, renter og kortfristede omposteringer bogføres på dette kladdenavn. Hvis indstillingen **Betal til kreditor** er angivet til **Nej** for leasingkartoteket, vil leasing- og udgiftsbetalingsbetalinger også blive bogført på dette kladdenavn.
+5. Vælg en kladde i feltet **Kladdenavn på leasingændringer**. Posteringer for leasingreguleringer, afslutning og værdiforringelse bogføres på dette kladdenavn. Det kladdenavn, du vælger, må ikke have en tilknyttet arbejdsgang eller godkendelse. Hvis kladdenavnet for leasingændringen ikke er defineret, bogføres transaktionerne for leasingregulering, afslutning og værdiforringelse til det kladdenavn, der er valgt i feltet **Leasingkladdenavn**. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

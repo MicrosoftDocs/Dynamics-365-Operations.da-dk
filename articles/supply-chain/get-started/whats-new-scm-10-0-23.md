@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.23
+title: Prøveversion af Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 7950d225bd528c05c14df108f4d44cef3e348ebb
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777785"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891787"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.23
+# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Prøveversion af Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,6 +26,7 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 - **Prøveversion:** oktober 2021
 - **Generel tilgængelighed af version (selv-opdatering):** december 2021
+- **Generel tilgængelighed af version (automatisk opdatering):** januar 2022
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
@@ -53,7 +54,8 @@ Hvis du vil slå nogen af disse funktioner til og fra, skal du gøre det i [funk
 | Lager- og lokationsstyring | \[Rusland\] Bogfør transaktioner for økonomisk lager for Storno i henhold til korrektionsflaget i det økonomiske bilag for salgsordrer | Denne funktion har indflydelse på funktionen til korrektion af kreditnotaer for Rusland. Den gør det muligt at bogføre lagertransaktioner for salgsfakturaer i overensstemmelse med korrektionsindstillingen i Finans. Når denne funktion er aktiveret, er der ikke flere uoverensstemmelser mellem flaget **Rettelse** på det økonomiske bilag for lagertransaktionen og flaget **Storno** på lagertransaktioner. |
 | Lager- og lokationsstyring | (Rusland) Kør beregning af lagersaldoomsætningsrapport i batch | For russiske oversættelser af Supply Chain Management giver denne funktion mulighed for at køre rapporten *Omsætning for lagersaldo* i batch, lagre den og se de rapporter, der er genereret tidligere. |
 | Lager- og lokationsstyring | (Rusland) Brug oversættelser til lokalt sprog i lande- eller områdespecifikke primære formularer i Lagerstyring | For russiske oversættelser af Supply Chain Management gør denne funktion det muligt at bruge russiske oversættelser af produkt-/varenavne og måleenheder i følgende russiske specifikke lagerudskrifter: Optællingsliste (INV-3), Optællingsliste (INV-5) og Optællingsliste (INV-6). |
-| Indkøb og forsyning | Ryd op i historik for købsordreopdatering | Med denne funktion kan du rydde op i midlertidige historikposter, der er relateret til opdateringer af indkøbsordrer. Den tilføjer en ny knap med navnet **Ryd op i historik for købsordreopdatering** i handlingsruden på siden **Alle indkøbsordrer**. Denne funktion er som standard aktiveret. |
+| Varedisponering | Behovsprognose i Azure Machine Learning Service | Denne funktion gør det muligt for Azure Machine Learning Service at generere efterspørgselsbudgetter baseret på historikdata. Du kan finde flere oplysninger under [Konfigurere behovsprognoser](../master-planning/demand-forecasting-setup.md). |
+| Indkøb og forsyning | Ryd op i historik for indkøbsordreopdatering | Med denne funktion kan du rydde op i midlertidige historikposter, der er relateret til opdateringer af indkøbsordrer. Den tilføjer en ny knap med navnet **Ryd op i historik for købsordreopdatering** i handlingsruden på siden **Alle indkøbsordrer**. Denne funktion er som standard aktiveret. |
 | Produktionsstyring | (Forhåndsversion) Automatisk pluk af materialer, der er aktiveret til lagersted, til automatisk bogførte pluklister | Med denne funktion kan du automatisk plukke og løse lagerdimensioner for automatisk bogførte og afledte/varetrækspluklistekladder. |
 | Produktionsstyring | Valider udløb af råmaterialer i forhold til planlagt forbrugsdato | Denne funktion ændrer den måde, som batchudløbsdatoer valideres på, når der reserveres en råvarebatch, som skal bruges under produktionen. Når denne funktion er aktiveret, valideres batchudløbsdatoen i forhold til den planlagte forbrugsdato (råvaredatoen), som angivet på produktionsstyklistelinjen eller batchordreformellinjen. Når denne funktion er deaktiveret, valideres batchudløbsdatoen i forhold til den planlagte leveringsdato for produktionen eller batchordren (som tidligere). |
 | Salg og marketing | Ryd op i historik for salgsopdatering baseret på alder | Med denne funktion kan du angive den maksimale alder for poster, der skal beholdes, når du kører den periodiske opgave **Oprydning af salgsopdateringshistorikken**. Ældre poster slettes. Dette er nyttigt, når du angiver, at opgaven skal køres periodisk, da alderen altid beregnes i forhold til den dato, hvor opgaven køres. Uden denne funktion kan du kun angive en bestemt dato for de ældste poster, der skal beholdes. |

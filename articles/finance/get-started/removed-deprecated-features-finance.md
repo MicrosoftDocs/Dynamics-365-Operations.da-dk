@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede funktioner i Dynamics 365 Finance
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Finance.
 author: roschlom
-ms.date: 04/14/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7ce7353de5795fd82e53bb1b7919c95dae4fe0ab6b8f536361613a7bcae19101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781195"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890947"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -32,6 +32,58 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.24 udgaven
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Momsrapport for Sverige (design baseret på rapporteringskoder)
+
+[Momsrapport for Sverige](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af et nyt momsopgørelsesdesign, [momsopgørelse for Sverige](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfases: Den 1. december 2022 planlægger vi ikke længere at understøtte momsrapporten for Sverige (svensk rapportlayout). Der introduceres nye ER-formater (elektronisk rapportering) for **Momsopgørelse (SE**) og **Momsopgørelse Excel (SE)** under modellen **Momsopgørelse**. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Momsopgørelse for Østrig (design baseret på rapporteringskoder)
+
+[Momsopgørelsesoplysninger for Østrig](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af et nyt momsopgørelsesdesign, [momsopgørelse for Østrig](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfases: Den 1. december 2022 planlægger vi ikke længere at understøtte ER-formatet (elektronisk rapportering) **Momsopgørelse (AT)** under **Momsopgørelsesmodel**. Der introduceres nye formater for **Momsopgørelse (AT)** og **Momsopgørelse Excel (AT)** under modellen **Momsopgørelse**. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER-opgørelse for Tyskland (design baseret på rapporteringskoder)
+
+[Momsopgørelse](../localizations/emea-de-vat-declaration.md)</br>
+[Konfigurere elektronisk momsopgørelse for Tyskland](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[Elektronisk overførsel for momsangivelse (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af et nyt momsopgørelsesdesign, [momsopgørelse for Tyskland](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfases: Den 1. december 2022 planlægger vi ikke længere at understøtte ER-formaterne (elektronisk rapportering) **Elster (DE)** og **Elster-model**. Der introduceres nye formater for **Momsopgørelse (DE)** og **Momsopgørelse Excel (DE)** under modellen **Momsopgørelse**. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>OB-opgørelse for Nederlandene (design baseret på rapporteringskoder)
+
+[OB-opgørelse](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af et nyt momsopgørelsesdesign, [momsopgørelse for Nederlandene](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfases: Den 1. december 2022 planlægger vi ikke længere at understøtte ER-formatet (elektronisk rapportering) **OB-opgørelse (NL)** og **OB-opgørelsesmodel**. Der introduceres nye formater for **Momsopgørelse (NL)** og **Momsopgørelse Excel (NL)** under modellen **Momsopgørelse**. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.20 udgaven
 

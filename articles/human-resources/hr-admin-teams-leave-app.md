@@ -2,7 +2,7 @@
 title: Appen Human Resources i Teams
 description: I dette emne introduceres Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771500"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913483"
 ---
 # <a name="human-resources-app-in-teams"></a>Appen Human Resources i Teams
 
@@ -111,6 +111,9 @@ Følgende arbejdselementer oversættes i fremtidige versioner:
 ## <a name="troubleshooting"></a>Fejlfinding
 
 Hvis en bruger har problemer med at logge på eller bruge appen Human Resources Teams, kan brugeren prøve at følge disse fejlfindingsinstruktioner. Hvis du stadig har problemer efter fejlfinding, skal du kontakte Support. Du kan finde flere oplysninger under [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>Sørg for, at Human Resources-programmet i Teams er opdateret
+Hvis der opstår problemer med Teams-appen Human Resources, skal du kontrollere, at du kører den seneste version. Den version, der som minimum understøttes, er 1.1.5. Du kan finde oplysninger om, hvordan du opdaterer et Teams-program, i [dokumentationen til Teams](/MicrosoftTeams/apps-update-experience).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Der kan ikke logge på appen Human Resources i Teams
 

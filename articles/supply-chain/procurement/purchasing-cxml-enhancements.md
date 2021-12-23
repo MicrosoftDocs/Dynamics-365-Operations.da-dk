@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777761"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900699"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Forbedringer af indkøbs-cXML
 
@@ -141,7 +141,7 @@ Når du er færdig med at definere egenskaberne og konfigurere andre indstilling
 
 Som beskrevet i sektionen [Angive ordreegenskaber](#set-order-properties) – hvis den leverede cXML skal medtage tekst fra noter, der er vedhæftet de relevante indkøbsordrer og/eller kreditorposter, kan du angive egenskaben **POCOMMENTS** og/eller **VENDCOMMENTS** til _TRUE_ i opsætningen af det eksterne katalog. Denne sektion giver flere oplysninger om, hvordan systemet vælger og behandler disse vedhæftede filer, hvis du bruger dem.
 
-Du kan angive de notattyper, som systemet skal søge efter, ved at gå til **Indkøb og forsyning \> Opsætning \> Formularer \> Fra opsætning**. På fanen **Indkøbsordre** skal du derefter angive feltet **Medtag dokumenter af typen** den notattype, som skal medtages. Det er kun tekstnoter, der medtages, ikke vedhæftede dokumenter.
+Du kan angive de notetyper, som systemet skal søge efter, ved at gå til **Indkøb og forsyning \> Opsætning \> Formularer \> Formularopsætning**. På fanen **Indkøbsordre** skal du derefter angive feltet **Medtag dokumenter af typen** den notattype, som skal medtages. Det er kun tekstnoter, der medtages, ikke vedhæftede dokumenter.
 
 ![Siden Formularopsætning.](media/cxml-form-setup.png "Siden Formularopsætning")
 

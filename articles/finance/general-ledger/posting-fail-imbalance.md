@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc413f8230849653aef8c2951f1749823edded6e
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 0f1f49a7da2f015d90987587fc251a36cfe82d49
+ms.sourcegitcommit: cd7f1c63f48542a8ebcace7b3d512eb810d4b56e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605423"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903244"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Kladdebogføringsfejl på grund af ubalance
 
@@ -52,13 +52,13 @@ I et understøttet scenarie kan et bilag have mere end én transaktionsvaluta. I
 
 Hvis alle linjer på et bilag har samme transaktionsvaluta, og hvis beløbene i transaktionsvalutaen er afstemt, kontrollerer systemet, at beløbene i regnskabsvalutaen er afstemt. Hvis bilaget er angivet i en fremmed valuta, bruges valutakursen på bilagslinjerne til at omregne beløb i transaktionsvalutaen til regnskabsvalutaen. For det første oversættes hver linje i bilaget og afrundes til to decimaler. Derefter lægges linjerne sammen for at bestemme de samlede debiteringer og krediteringer. Da hver linje omregnes, vil de samlede debiteringer og krediteringer muligvis ikke blive afstemt. Hvis den absolutte værdi af differencen ligger inden for den værdi for **Maksimal øredifference**, der er defineret på siden **Finansparametre**, bogføres bilaget, og differencen bogføres automatisk på øredifferencekontoen.
 
-Hvis bilaget har mere end én transaktionsvaluta, omregnes hver linje på bilaget til regnskabsvalutaen, rundes op til to decimalpladser, og derefter summeres linjerne for at bestemme de samlede debiteringer og krediteringer. Hvis du vil se, at debet- og kreditbeløbene skal afrundes, enten som omregnet, eller når regnskabsvalutaen indgår i øreafrundingsdifferencen.
+Hvis bilaget har mere end én transaktionsvaluta, omregnes hver linje på bilaget til regnskabsvalutaen, rundes op til to decimalpladser, og derefter summeres linjerne for at bestemme de samlede debiteringer og krediteringer. Debiteringer og krediteriner skal afstemmes i regnskabsvalutaen, for at beløbet kan betragtes som afstemt.  Der føjes aldrig en øredifferencekonto til bilaget i regnskabsvalutaen for at afstemme debet- og kreditbeløbene. 
 
 ### <a name="reporting-currency"></a>Rapporteringsvaluta
 
 Hvis alle linjer på et bilag har samme transaktionsvaluta, og hvis beløbene i transaktionsvalutaen er afstemt, kontrollerer systemet, at beløbene i rapporteringsvalutaen er afstemt. Hvis bilaget er angivet i en fremmed valuta, bruges valutakursen på bilagslinjerne til at omregne beløb i transaktionsvalutaen til rapporteringsvalutaen. For det første oversættes hver linje i bilaget og afrundes til to decimaler. Derefter lægges linjerne sammen for at bestemme de samlede debiteringer og krediteringer. Da hver linje omregnes, vil de samlede debiteringer og krediteringer muligvis ikke blive afstemt. Hvis differencen ligger inden for den værdi for **Maksimal øreafrunding i rapporteringsvaluta**, der er defineret på siden **Finansparametre**, bogføres bilaget, og differencen bogføres automatisk på øredifferencekontoen.
 
-Hvis bilaget har mere end én transaktionsvaluta, omregnes hver linje på bilaget til rapporteringsvalutaen, rundes op til to decimalpladser, og derefter summeres linjerne for at bestemme de samlede debiteringer og krediteringer. Hvis du vil se, at debet- og kreditbeløbene skal afrundes, enten som omregnet, eller når rapporteringsvalutaen indgår i øreafrundingsdifferencen.
+Hvis bilaget har mere end én transaktionsvaluta, omregnes hver linje på bilaget til rapporteringsvalutaen, rundes op til to decimalpladser, og derefter summeres linjerne for at bestemme de samlede debiteringer og krediteringer. Debiteringer og krediteriner skal afstemmes i rapporteringsvalutaen, for at beløbet kan betragtes som afstemt.  Der føjes aldrig en øredifferencekonto til bilaget i rapporteringsvalutaen for at afstemme debet- og kreditbeløbene.
 
 ### <a name="example-for-an-accounting-currency-imbalance"></a>Eksempel på en ubalance i regnskabsvaluta
 

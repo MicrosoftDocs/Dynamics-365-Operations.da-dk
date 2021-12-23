@@ -2,7 +2,7 @@
 title: POS-handlinger, online og offline
 description: Dette emne indeholder oplysninger om POS-handlinger i Dynamics 365 Commerce. Det angiver, hvor i programmet handlingerne kan startes, og om de er tilgængelige i offlinetilstand.
 author: jblucher
-ms.date: 02/21/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc4835258c7a1968c51e4d1a3a4d0eb33aaf2cddf31efd965adff0ac80aa4ec1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88daca466e0e01bf3870b6eeee0628e0c159fea3
+ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745278"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7875471"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
 [!include [banner](includes/banner.md)]
 
-De fleste handlinger, som brugeren udfører på POS, betragtes som handlinger. Handlinger konfigureres og administreres i Dynamics 365 Commerce-administration. Mange handlinger kan føjes til knapper i POS-knapmatrixen. Brugere kan derefter vælge knapperne for at aktivere handlingerne og udføre deres funktion. Andre handlinger indgår i POS-hovedprogrammet og kaldes enten fra på knapper på skærmen eller som en del af andre arbejdsgange eller processer.
+De fleste aktiviteter, som brugere udfører på POS, betragtes som handlinger. Handlinger konfigureres og administreres i Dynamics 365 Commerce-administration. Mange handlinger kan føjes til knapper i POS-knapmatrixen. Brugere kan derefter vælge knapperne for at aktivere handlingerne og udføre deres funktion. Andre handlinger indgår i POS-hovedprogrammet og kaldes enten fra på knapper på skærmen eller som en del af andre arbejdsgange eller processer.
 
 Følgende tabel indeholder oplysninger om de handlinger, der er tilgængelige i Modern POS og Cloud POS. Tabellen angiver også, hvor i programmet handlingerne kan startes, og om de er tilgængelige, når POS er i offlinetilstand.
 
@@ -72,18 +72,17 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 121 | Ryd sælger | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
 | 1055 | Luk skift | Luk det aktuelle skifte, udskriv en Z-rapport, og log brugeren af systemet. | Ja | Ja | Ja | Nej | Nej |
 | 139 | Afslut transaktion | Beder brugeren vælge betalingsmetode | Ja | Ja | Nej | Ja | Nej |
-| 620 | Opret kundeordre | Konvertér POS-transaktionen til en kundeordre. | Ja | Ja | Nej | Ja\* | Nej |
 | 925 | Kopiér bankchecken | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ja |
 | 620 | Opret kundeordre | Konvertér POS-transaktionen til en kundeordre. | Ja | Ja | Nej | Ja\* | Nej |
 | 621 | Opret tilbud | Konvertér POS-transaktionen til et salgstilbud. | Ja | Ja | Nej | Ja\* | Nej |
-| 636 | Opret detailtransaktion | Med denne handling kan brugeren oprette en almindelig salgstransaktion, når POS-standardindstillingen er at oprette kundeordrer. | Ja | Ja | Nej | Ja | Nej |
+| 636 | Opret detailtransaktion | Opret en almindelig salgstransaktion, når POS-standardindstillingen er at oprette kundeordrer. | Ja | Ja | Nej | Ja | Nej |
 | 600 | Kunde | Tilføj den angivne kunde til transaktionen. | Nej | Nej | Nej | Ja | Nej |
 | 1100 | Indbetaling på kundekonto | Foretag en betaling til en kundekonto. | Ja | Ja | Ja | Ja | Ja |
-| 612 | Tilføj kunde | Med denne handling kan brugeren oprette en ny kundepost. | Ja | Ja | Ja | Ja† | Nej |
+| 612 | Tilføj kunde | Opret en ny debitorpost. | Ja | Ja | Ja | Ja† | Nej |
 | 603 | Ryd kunde | Fjern kunden fra den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |
-| 602 | Kundesøgning | Med denne handling kan brugeren søge efter en debitorpost ved at gå til siden med kundesøgning i POS. | Ja | Ja | Ja | Ja | Nej |
+| 602 | Kundesøgning | Søg efter en debitorpost ved at gå til siden med kundesøgning i POS. | Ja | Ja | Ja | Ja | Nej |
 | 609 | Debitorposter | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
-| 917 | Forbindelsesstatus for database | Med denne handling kan brugeren få vist de aktuelle forbindelsesindstillinger og skifte mellem online- og offlinetilstand. | Ja | Ja | Ja | Ja | Nej |
+| 917 | Tilslutningsstatus for database | Se de aktuelle forbindelsesindstillinger, og skift mellem online- og offlinetilstand. | Ja | Ja | Ja | Ja | Nej |
 | 1200 | Angiv startbeløb | Angiv det beløb, der er i pengeskuffen ved dagens begyndelse, eller når skiftet starter. | Ja | Ja | Ja | Ja | Nej |
 | 132 | Tilsidesæt depositum | Tilsidesætte standarddepositum for kundeordrer. | Ja | Ja | Nej | Ja\* | Nej |
 | 913 | Deaktiver designtilstand | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
@@ -96,14 +95,14 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 615 | Rediger tilbud | Tilbagekald det valgte tilbud, så det kan redigeres i POS. | Nej | Nej | Nej | Nej | Nej |
 | 518 | Udgiftskonti | Registrer penge, der er fjernet fra pengeskuffen til lejlighedsvise udgifter. | Ja | Ja | Ja | Ja | Nej |
 | 919 | Udvidet logon | Tildele eller fjerne tilladelse til at logge på ved at scanne en stregkode eller føre et kort gennem en kortlæser. | Ja | Ja | Ja | Ja | Nej |
-| 1201 | Kassebeholdning | Med denne handling kan brugeren føje flere penge til den aktuelle kasseskuffe eller det aktuelle skift. | Ja | Ja | Ja | Ja | Nej |
+| 1201 | Kassebeholdning | Indsæt flere penge på den aktuelle kasseskuffe eller det aktuelle skift. | Ja | Ja | Ja | Ja | Nej |
 | 1218 | Gennemtving oplåsning af ekstern enhed | Denne handling bruges internt af systemet til at låse op for eksterne POS-enheder. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
 | 520 | Gavekortsaldo | Vis saldoen for et gavekort. | Ja | Ja | Nej | Nej | Nej |
 | 708 | Deaktiver enhed | Deaktiver den aktuelle enhed, så den ikke kan bruges som et POS kasseapparat. | Nej | Nej | Nej | Nej | Nej |
 | 804 | indgående handlinger | Få adgang til funktionerne i styring af indgående lagerbeholdning. | Ja | Nej | Ja | Nej| Nej |
 | 517 | Indtægtskonti | Registrer penge, der lægges i pengeskuffen af andre årsager end salg. | Ja | Ja | Ja | Ja | Nej |
 | 801 | Lagersøgning | Få vist antal for tilgængelige, i bestilling og disponibel til tilsagn (DTT) for det aktuelle lager og andre tilgængelige lokationer. | Ja | Ja | Ja | Nej | Nej |
-| 122 | Fakturakommentar | Med denne handling kan brugeren angive en kommentar til den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |
+| 122 | Fakturakommentar | Angiv en kommentar til den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |
 | 511 | Udsted kreditnota | Udsted en kreditnota for at give et bilag i stedet for en refusion. | Ja | Ja | Nej | Nej | Nej |
 | 512 | Udsted gavekort | Udsted et nyt gavekort for det angivne beløb. | Ja | Ja | Nej | Nej | Nej |
 | 625 | Udsted fordelskundekort | Udsted et fordelskundekort til en kunde, så kunden kan deltage i butikkens kundefordelsprogram. | Ja | Ja | Ja | Nej | Nej |
@@ -147,42 +146,42 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 1056 | Udskriv X | Udskriv en X-rapport for det aktuelle skift. | Ja | Ja | Ja | Nej | Nej |
 | 103 | Produktkommentar | Tilføj en kommentar i det valgte linjeelement i transaktionen. | Ja | Ja | Nej | Ja | Nej |
 | 100 | Produktsalg | Føj et angivet produkt til transaktionen. | Ja | Ja | Ja | Ja | Nej |
-| 108 | Produktsøgning | Med denne handling kan brugeren søge efter et produkt ved at gå til siden med produktsøgning i POS. | Ja | Ja | Ja | Ja | Nej |
-| 633 | Tilbudsudløbsdato | Med denne handling kan brugeren få vist eller ændre udløbsdatoen for et salgstilbud. | Ja | Ja | Nej | Ja\* | Nej |
+| 108 | Produktsøgning | Søg efter et produkt ved at gå til siden med produktsøgning i POS. | Ja | Ja | Ja | Ja | Nej |
+| 633 | Tilbudsudløbsdato | Se eller skift udløbsdatoen for et salgstilbud. | Ja | Ja | Nej | Ja\* | Nej |
 | 627 | Omberegn | Omberegn alle kundeordrelinjer og moms, der er baseret på den aktuelle konfiguration. | Ja | Ja | Nej | Ja\* | Nej |
 | 143 | Genberegn gebyrer | Genberegn de automatiske tillæg, der er anvendt på ordren. | Ja | Ja | Nej | Nej| Nej |
-| 515 | Tilbagekald ordre | Med denne handling kan brugeren søge efter og tilbagekalde kundeordrer og salgstilbud. | Ja | Ja | Ja | Nej | Nej |
-| 504 | Tilbagekald transaktion | Med denne handling kan brugeren tilbagekalde en tidligere udsat transaktion fra det aktuelle lager. | Ja | Ja | Nej | Ja‡ | Nej |
+| 515 | Tilbagekald ordre | Søg efter og tilbagekald kundeordrer og salgstilbud. | Ja | Ja | Ja | Nej | Nej |
+| 504 | Tilbagekald transaktion | Tilbagekald en tidligere udsat transaktion fra det aktuelle lager. | Ja | Ja | Nej | Ja‡ | Nej |
 | 305 | Indløs kundefordelspoint | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ja |
-| 635 | Refunder forsendelsesgebyrer | Med denne handling kan brugeren-refundere forsendelsesgebyrer på en annulleret ordre. | Nej | Nej | Nej | Nej | Nej |
+| 635 | Refunder forsendelsesgebyrer | Refunder forsendelsesgebyrer på en annulleret ordre. | Nej | Nej | Nej | Nej | Nej |
 | 644 | Fjern kuponkode | Bed brugeren om at fjerne kuponer ved at vælge dem på en liste over kuponer, der aktuelt er knyttet til transaktionen. | Ja | Ja | Nej | Ja | Nej |
 | 1057 | Udskriv Z igen | Udskrive Z-rapporten for det tidligere skift eller et valgt skift. | Ja | Ja | Ja | Nej | Nej |
 | 1216 | Indtast en ny adgangskode | Med denne handling kan en bruger, som har tilladelse til at nulstille adgangskoder, nulstille adgangskoden for en anden medarbejder ved hjælp af en midlertidig adgangskode. | Ja | Ja | Ja | Nej | Nej |
-| 1219 | Åbne URL-adresse i POS | Med denne handling kan en bruger åbne en URL-adresse, der er konfigureret af en administratorer, i POS. | Ja | Ja | Ja | Ja | Nej. | 
+| 1219 | Åbne URL-adresse i POS | Åbn en URL-adresse, der er konfigureret af en administrator, i POS. | Ja | Ja | Ja | Ja | Nej |
 | 109 | Returprodukt | Returner individuelle produkter. Det næste scannede produkt vises som et returneret produkt, der har en negativ mængde og pris. | Ja | Ja | Nej | Ja | Nej |
 | 114 | Returtransaktion | Tilbagekald en tidligere transaktion ved hjælp af den kvitteringsnummer for at returnere nogle af eller alle produkterne. | Ja | Ja | Ja | Ja§ | Nej |
 | 1211 | Deponering til pengeskab | Udfør en deponering til et pengeskab for at flytte penge fra kasseapparatet til et pengeskab. | Ja | Ja | Ja | Ja | Nej |
 | 516 | Salgsfaktura | Med denne handling kan kunden foretage betalinger for den valgte salgsfaktura. | Ja | Ja | Nej | Nej | Nej |
-| 502 | Sælger | Med denne handling kan brugeren angive værdien **Salgsregistrering** på en salgsordre for kundeordrer i POS. | Ja | Ja | Nej | Ja\* | Nej |
+| 502 | Sælger | Angiv værdien **Salgsregistrering** på en salgsordre for kundeordrer i POS. | Ja | Ja | Nej | Ja\* | Nej |
 | 2000 | Administration af tidsplaner | Denne handling understøttes endnu ikke. | Ja | Ja | Ja | Nej | Nej |
 | 2001 | Planlægning af anmodninger | Denne handling understøttes endnu ikke. | Ja | Ja | Ja | Nej | Nej |
 | 622 | Søg i ordrer | Med denne handling kan brugere forudkonfigurere POS-knapperne for at udføre søgninger efter vare, kunde eller kategori. | Ja | Ja | Ja | Ja | Nej |
 | 1213 | Søg efter leveringsadresse | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nej |
-| 709 | Vælg hardwarestation | Med denne handling kan brugeren vælge en hardwarestation på en liste over tilgængelige hardwarestationer. | Ja | Ja | Ja | Ja | Nej |
-| 637 | Indstil standardsælgeren for transaktionen | Med denne handling kan brugeren vælge en af de berettigede provisionssalgsgrupper (sælgere) som standardsælgeren for linjer, der tilføjes senere. | Ja | Ja | Nej | Ja | Nej |
+| 709 | Vælg hardware station | Vælg en hardwarestation på en liste over tilgængelige hardwarestationer. | Ja | Ja | Ja | Ja | Nej |
+| 637 | Indstil standardsælgeren for transaktionen | Vælg en af de berettigede provisionssalgsgrupper (sælgere) som standardsælgeren for linjer, der tilføjes senere. | Ja | Ja | Nej | Ja | Nej |
 | 105 | Angiv antal | Rediger antallet af en linjevare i transaktionen. | Ja | Ja | Nej | Ja | Nej |
-| 638 | Angiv sælger på linjen | Med denne handling kan brugeren vælge en af de berettigede provisionssalgsgrupper (sælgere) til den aktuelt valgte linje. | Ja | Ja | Nej | Ja | Nej |
+| 638 | Angiv sælger på linjen | Vælg en af de berettigede provisionssalgsgrupper (sælgere) til den aktuelt valgte linje. | Ja | Ja | Nej | Ja | Nej |
 | 630 | Send alle produkter | Angiv leveringstilstanden til **Forsendelse** for alle linjeelementer. | Ja | Ja | Nej | Ja\* | Nej |
 | 629 | Send valgte produkter | Angiv leveringsmåden til **Forsendelse** for de valgte linjer. | Ja | Ja | Nej | Ja\* | Nej |
 | 115 | Vis kladde | Vis kladde for butikken. Du kan få vist transaktioner, udskrive kvitteringer og gavekvitteringer og tilbagekald ved returnering. | Ja | Ja | Ja | Ja\*\* | Nej |
-| 802 | Status | Med denne handling kan brugeren oprette eller ændre statusoptællingskladder for fysisk lager eller periodisk optælling. | Ja | Ja | Ja | Nej | Nej |
+| 802 | Lagerbeholdning | Opret eller skift statusoptællingskladder for fysisk lager eller periodisk optælling. | Ja | Ja | Ja | Nej | Nej |
 | 401 | Undermenu | Med denne handling føres brugeren til en anden sammenkædede knapmatrix. | Ja | Ja | Ja | Ja | Nej |
 | 1054 | Afbryd skifte | Afbryd det aktuelle skift midlertidigt, så et ny eller forskelligt skift kan aktiveres på det aktuelle kasseapparat. | Ja | Ja | Ja | Nej | Nej |
 | 503 | Udsæt transaktion | Afbryd den aktuelle salgstransaktion, så den kan tilbagekaldes senere i butikken. | Ja | Ja | Nej | Ja‡ | Nej |
 | 1004 | Arbejdsrutineoptager | Åbn Arbejdsrutineoptager for at registrere en trinvis fremgangsmåde på POS. | Nej | Nej | Nej | Ja | Nej |
-| 1052 | Kasseoptælling | Med denne handling kan brugeren angive pengebeløbet i kassen for hver optalt betalingsmetode. | Ja | Ja | Ja | Ja | Nej |
-| 1210 | Fjernelse af betalingsmiddel | Med denne handling kan brugeren fjerne penge fra den aktuelle kasseskuffe eller det aktuelle skift. | Ja | Ja | Ja | Ja | Nej |
-| 920 | Tidsur | Med denne handling kan brugerne stemple ind og ud af arbejdsskift og pauser. | Ja | Ja | Ja | Nej | Nej |
+| 1052 | Kasseoptælling | Angiv pengebeløbet i kassen for hver optalt betalingsmetode. | Ja | Ja | Ja | Ja | Nej |
+| 1210 | Fjernelse af betalingsmiddel | Fjern penge fra den aktuelle skuffe eller det aktuelle skift. | Ja | Ja | Ja | Ja | Nej |
+| 920 | Tidsur | Stempl ind og ud af arbejdsskift og pauser. | Ja | Ja | Ja | Nej | Nej |
 | 302 | Slutrabatbeløb | Indtast et rabatbeløb for transaktionen. Denne operation kan kun bruges til varer med rabat og kun inden for specifikke rabatgrænser. | Ja | Ja | Nej | Ja | Nej |
 | 303 | Slutrabatprocent | Indtast en rabatprocent for transaktionen. Denne operation kan kun bruges til varer med rabat og kun inden for specifikke rabatgrænser. | Ja | Ja | Nej | Ja | Nej |
 | 501 | Transaktionskommentar | Føj en kommentar til den aktuelle transaktion. | Ja | Ja | Nej | Ja | Nej |

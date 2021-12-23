@@ -2,7 +2,7 @@
 title: Oversigt over administration af frynsegoder
 description: Dette emne indeholder en oversigt over funktionen Frynsegodeadministration i Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417386"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892496"
 ---
 # <a name="benefits-management-overview"></a>Oversigt over administration af frynsegoder
 
@@ -109,21 +109,29 @@ Du kan bruge flekskreditprogrammer til at tilmelde medarbejdere til frynsegoder 
 
 ## <a name="configure-required-employee-information"></a>Konfigurere krævede medarbejderoplysninger
 
-Før du kan tilmelde medarbejdere til frynsegoder, skal du angive de nødvendige oplysninger om dem. Alle medarbejdere skal have en angivet stilling. Du skal tilmelde medarbejdere en fast kompensationsplan på deres respektive startdatoer, ellers skal de have et årligt lønbeløb for frynsegoder. I afsnittet **Detaljer om ansættelse** på siden **Arbejder** skal du desuden vælge en værdi i feltet **Betalingsfrekvens for frynsegoder**.
+Før du kan tilmelde medarbejdere til frynsegoder, skal du angive de nødvendige oplysninger om dem. 
 
-Hvis du har en medarbejder, der modtager supplerende kompensation såsom provision, kan du tilføje et beløb for **Årlig frynsegodeløn** fra medarbejderposten. Human Resources skal bruge beløbet for **Årlig frynsegodeløn** til bestemmelse af dækningsbeløb i stedet for det årlige beløb for fast løn. **Årlig løn for frynsegoder** skal være gyldig pr. medarbejderens startdato eller starten af frynsegodeperioden, afhængigt af hvad der er den seneste. Hvis der registreres både en fast løn og et årligt frynsegodebeløb for medarbejderen, vil de årlige frynsegoder blive brugt til at fastlægge dækningsbeløbene.
+Medarbejderen skal være tildelt en **stilling**. Du kan tildele en **stilling** til medarbejderen på siden **Arbejder** eller **Stilling** ved at opdatere **Medarbejdertildeling**. 
+
+Derefter skal medarbejdere tilmeldes en fast kompensationsplan på deres respektive startdatoer eller have et beløb for **Årlig frynsegodeløn**. Før der tildeles **Fast løn** til en medarbejder, skal der tildeles en **stilling**. 
+
+> [!NOTE] 
+> **Startdato for fast løn** kan ikke være før **Dato for stillingstildeling**.
+
+Eller hvis du har en medarbejder, der modtager supplerende kompensation såsom provision, kan du tilføje et beløb for **Årlig frynsegodeløn** fra medarbejderposten. Human Resources skal bruge beløbet for **Årlig frynsegodeløn** til bestemmelse af dækningsbeløb i stedet for beløbet for **Fast årsløn**. **Årlig løn for frynsegoder** skal være gyldig pr. medarbejderens startdato eller starten af frynsegodeperioden, afhængigt af hvad der er den seneste. Der kræves dog ikke en stilling for at tildele **Årlig løn som personalegoder**. Hvis du vil aktivere funktionen **Årlig løn som personalegoder**, skal du gå til siden **Delte HR-parametre** under fanen **Personalegodeadministration**. Denne funktion er som standard deaktiveret.
+
+> [!IMPORTANT]
+> Hvis der både er angivet et beløb for **Fast løn** og **Årlig løn som personalegoder** for en medarbejder, bruges **Årlig løn som personalegoder** til at fastlægge dækningsbeløbene. I afsnittet **Detaljer om ansættelse** på siden **Arbejder** skal du vælge en værdi i feltet **Betalingsfrekvens for frynsegoder**.
 
 ## <a name="configure-optional-employee-information"></a>Konfigurere valgfrie medarbejderoplysninger
-
 Når du opretter en frynsegodeplan, som bruger satser, der er baseret på køn eller alder, skal du angive medarbejderens fødselsdato og køn, som kan bruges til at beregne frynsegodeomkostningerne.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Behandle medarbejdere for at fastlægge berettigelse
+Før medarbejdere kan tilmeldes planer, køres berettigelsesbehandling for at bestemme, hvilke planer de er berettiget til. Du kan få vist resultaterne af berettigelsesprocessen i **resultatvisningen**. Du kan finde flere oplysninger under [Behandle tilmeldings berettigelse](hr-benefits-process-enrollment-eligibility.md).
 
-Før medarbejdere kan tilmeldes planer, køres berettigelsesbehandling for at bestemme, hvilke planer de er berettiget til. Du kan få vist resultaterne af berettigelsesprocessen i resultatvisningen. Du kan finde flere oplysninger under [Behandle tilmeldings berettigelse](hr-benefits-process-enrollment-eligibility.md).
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Medarbejderne vælger planer via **Medarbejderselvbetjening** (valgfrit)
 
-## <a name="employees-select-plans-via-employee-self-service-optional"></a>Medarbejdere vælger planer via medarbejderselvbetjening (valgfrit)
-
-Når der er en åben tilmelding, medarbejdere er nyansatte, eller der indtræffer en livshændelse, kan medarbejdere vælge eller opdatere deres fryensegoder via medarbejderselvbetjeningen. Du kan finde flere oplysninger under [Konfigurere medarbejderselvbetjening](hr-benefits-setup-employee-self-service.md).
+Når der er en åben tilmelding, medarbejdere er nyansatte, eller der indtræffer en livshændelse, kan medarbejdere vælge eller opdatere deres fryensegoder via **Medarbejderselvbetjening**. Du kan finde flere oplysninger under [Konfigurere medarbejderselvbetjening](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Bekræfte valg af medarbejderplan
 

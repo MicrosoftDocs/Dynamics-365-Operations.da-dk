@@ -2,19 +2,19 @@
 title: Servicebeskrivelse af Finance and Operations-apps
 description: Dette emne indeholder servicebeskrivelsen til Finance and Operations-apps.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825394"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898383"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeskrivelse af Finance and Operations-apps
 
@@ -314,7 +314,7 @@ Microsofts planer og procedurer for naturkatastrofer undersøges jævnligt via S
 | Microsoft hensættelser et sekundært miljø i det azure-parrede datacenter, når den primære produktionsforekomst implementeres. Yderligere oplysninger finder du i [Forretningskontinuitet og it-katastrofeberedskab (BCDR): Azure-parrede områder](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft aktiverer de oplysninger om Azure SQL og Azure Blob Storage, når den primære produktionsforekomst implementeres. | None |
 | Microsoft aktiverer automatisk sikkerhedskopiering af Azure SQL-databaserne. | None |
-| <p>Når der opstår svigt, bestemmer Microsoft, om der skal udføres en failover for kunden, og om der vil være tab af data. Tab af data kan tage op til fem sekunder. Du kan finde flere oplysninger [i Azure SQL Database Geo-Restore](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>I tilfælde af tab af data anmoder Microsoft kunden om at få en failover-mulighed.</p> | I tilfælde af tab af data kan kunden være nødt til at angive skriftlig afhændelse, for at det kan udløse en failover. |
+| <p>Når der opstår svigt, bestemmer Microsoft, om der skal udføres en failover for kunden, og om der vil være tab af data. Kunder kan opleve at miste data i op til 15 minutter, afhængigt af arten af og tidspunktet for afbrydelsen. | I tilfælde af tab af data kan kunden være nødt til at angive skriftlig afhændelse, for at det kan udløse en failover. |
 | Når der opstår en fejl, fungerer den gældende tjeneste i begrænset tilstand. Opdateringsvedligeholdelse kan ikke udløses i failover-tilstand. | Kunden kan ikke anmode om pakkeinstallationer eller andre almindelige anmodninger om vedligeholdelse i failover-tilstand. |
 | Når datacenter bliver driftsklart, vender Microsoft tilbage til produktionsforekomsten i det primære Azure-område. Normal genoptag operationer. | Kunden skal muligvis ikke logge af produktionsforekomsten i det primære Azure-område. |
 
