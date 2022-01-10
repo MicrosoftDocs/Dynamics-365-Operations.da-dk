@@ -1,81 +1,119 @@
 ---
-title: Konsistenskontrol af detailtransaktion
-description: Dette emne beskriver funktionen konsistenskontrol af transaktion i Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/07/2020
+title: Validere butikstransaktioner til beregning af opgørelse
+description: I dette emne beskrives funktionerne til validering af butikstransaktioner i Microsoft Dynamics 365 Commerce.
+author: analpert
+ms.date: 12/15/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
+ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c8ba0f99743984860119deb96c889f5d62e1728c8772b9e6786d371690b61489
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741726"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924765"
 ---
-# <a name="retail-transaction-consistency-checker"></a>Konsistenskontrol af detailtransaktion
+# <a name="validate-store-transactions-for-statement-calculation"></a>Validere butikstransaktioner til beregning af opgørelse
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver funktionen konsistenskontrol af transaktion i Microsoft Dynamics 365 Commerce. Konsistenskontrollen identificerer og isolerer inkonsistente transaktioner, før de hentes af processen til bogføring af opgørelsen.
+I dette emne beskrives funktionerne til validering af butikstransaktioner i Microsoft Dynamics 365 Commerce. Valideringsprocessen identificerer og markerer transaktioner, der kan medføre bogføringsfejl, inden de hentes af bogføringsprocessen for opgørelsen.
 
-Når en opgørelse er bogført, kan bogføringen mislykkes på grund af inkonsistente data i Commerce-transaktionstabellerne. Dataproblemet kan skyldes uforudsete problemer i POS-programmet, eller at transaktioner blev importeret forkert fra tredjeparts-POS-systemer. Eksempler på, hvordan denne inkonsistens kan vise sig, omfatter: 
+Når du forsøger at bogføre en opgørelse, kan valideringsprocessen mislykkes på grund af uoverensstemmende data i tabellerne til handelstransaktioner. Her er nogle eksempler på faktorer, der kan forårsage disse uoverensstemmelser:
 
 - Totalen for transaktionen i hovedtabellen stemmer ikke overens med transaktionstotalen på linjerne.
-- Linjeantallet i hovedtabellen stemmer ikke overens med antallet af linjer i transaktionstabellen.
-- Moms i hovedtabellen stemmer ikke overens med momsbeløb på linjerne. 
+- Antallet af varer, der er angivet i hovedtabellen, svarer ikke til antallet af varer i transaktionstabellen.
+- Momsen i hovedtabellen stemmer ikke overens med momsbeløb på linjerne. 
 
-Når inkonsistente transaktioner hentes af processen til bogføring af opgørelsen, oprettes der inkonsekvente salgsfakturaer og betalingskladder, og hele bogføringsprocessen for opgørelsen mislykkes derfor. Gendannelsen af opgørelserne fra en sådan tilstand omfatter komplekse rettelser af data på tværs af flere transaktionstabeller. Konsistenskontrollen af transaktioner forhindrer sådanne problemer.
+Hvis processen til bogføring af opgørelsen henter inkonsistente transaktioner, kan de salgsfakturaer og betalingskladder, der oprettes, medføre, at bogføring af opgørelsen mislykkes. Processen **Valider butikstransaktioner** forhindrer disse problemer ved at sikre, at kun de transaktioner, der overholder valideringsreglerne for transaktioner, overføres til beregningsprocessen for transaktionsopgørelsen.
 
-I følgende diagram illustreres bogføringsprocessen med konsistenskontrollen af transaktioner.
+I følgende illustration vises de gentagne processer i dagtimerne til overførsel af transaktioner, validering af transaktioner, beregning og bogføring af transaktionsopgørelser og processerne for afslutning af dagen i forhold til beregning og bogføring af regnskaber.
 
-![Processen til bogføring af opgørelse med konsistenskontrol af transaktioner.](./media/validchecker.png "Processen til bogføring af opgørelse med konsistenskontrol af detailtransaktioner")
+![Illustration vise de gentagne processer i dagtimerne til overførsel af transaktioner, validering af transaktioner, beregning og bogføring af transaktionsopgørelser og processerne for afslutning af dagen for beregning og bogføring af regnskaber.](./media/valid-checker-statement-posting-flow.png)
 
-Batchprocessen **Valider butiksposteringer** kontrollerer konsistensen af Commerce-transaktionstabellerne i følgende scenarier.
+## <a name="store-transaction-validation-rules"></a>Valideringsregler for butikstransaktioner
 
-- **Debitorkonto** – validerer, at debitorkontoen i transaktionstabellerne findes i debitormasteren i hovedkontoret.
-- **Linjetæller** – validerer, at antallet af linjer, som er angivet i transaktionshovedtabellen, svarer til antallet af linjer i salgstransaktionstabellerne.
-- **Pris inkl. moms** – validerer, at parameteren **prisen inkluderer moms** er konsistent på tværs af posteringslinjer, og prisen på salgslinjen er i overensstemmelse med prisen og omfatter konfiguration af moms og se-nummer.
-- **Betalingsbeløb** – validerer, at betalingsposterne svarer til betalingsbeløbet i overskriften, mens den faktor, der er konfigureret til at afrundes i finans, også indregnes.
-- **Bruttobeløb** – validerer, at bruttobeløbet i overskriften er summen af nettobeløbene på linjerne plus momsbeløbet, mens den faktor, der er konfigureret til øredifferencer i finans, også indregnes.
-- **Nettobeløb** – validerer, at nettobeløbet i overskriften er summen af nettobeløbene på linjerne, mens den faktor, der er konfigureret til øredifferencer i finans, også indregnes.
-- **Under-/overbetaling** – validerer, at differencen mellem bruttobeløbet i overskriften og betalingsbeløbet ikke overskrider konfigurationen af den maksimalt tilladte underbetaling/overbetaling, mens den faktor, der er konfigureret til øredifferencer i finans, også indregnes.
-- **Rabatbeløb** – validerer, at rabatbeløbet på rabattabellerne og rabatbeløbet i tabellerne for detailtransaktionslinjer er konsistente, og at rabatbeløbet i hovedet er summen af rabatbeløbene på linjerne, mens den faktor, der er konfigureret til øredifferencer i finans, også indregnes.
-- **Linjerabat** – validerer, at linjerabatten på transaktionslinjen er summen af alle linjer i rabattabellen, der svarer til transaktionslinjen.
-- **Gavekortvare** – Commerce understøtter ikke returnering af gavekortvarer. Saldoen på et gavekort kan dog udbetales kontant. Alle gavekortvarer, der behandles som en returlinje i stedet for en udbetalingslinje, mislykkes i bogføringsprocessen for opgørelsen. Valideringsprocessen for gavekortvarer er garanti for, at de eneste returneringslinjer for gavekortvarer i transaktionstabellerne er udbetalingslinjer for gavekort.
-- **Negativ pris** – validerer, at der ikke er nogen negative pristransaktionslinjer.
-- **Vare og variant** – validerer, at varer og varianter på transaktionslinjerne findes i masterfilen for vare og variant.
-- **Momsbeløb** - validerer, at momsposter svarer til momsbeløbene på linjerne.
-- **Serienummer** - validerer, at serienummeret findes i posteringslinjerne for varer, der styres af serienummer.
-- **Fortegn** - validerer, at fortegnet på antallet og nettobeløbet er det samme i alle posteringslinjerne.
-- **Forretningsdato** - validerer, at de økonomiske perioder for alle forretningsdatoerne for transaktionerne er åbne.
-- **Gebyrer** – validerer, at overskriften og linjegebyrbeløbet er i overensstemmelse med prisen, inklusive konfigurationen af moms og se-nummer.
-
-## <a name="set-up-the-consistency-checker"></a>Konfigurere konsistenskontrollen
-
-Konfigurere batchprocessen "Valider butiksposteringer" på **Retail og Commerce \> Retail og Commerce IT \> POS-bogføring** til periodiske kørsler. Batchjobbet kan planlægges ud fra butikkens organisationshierarki på samme måde som processerne "Beregn opgørelser i batch" og "Bogfør opgørelse i batch" er konfigureret. Det anbefales, at du konfigurerer denne batchproces til at køre flere gange i løbet af dagen og planlægger den, så den køres ved afslutningen af hver kørsel af P-job.
-
-## <a name="results-of-validation-process"></a>Resultater af valideringsprocessen
-
-Resultaterne af valideringskontrollen af batchprocessen markeres på den relevante transaktion. Feltet **Valideringsstatus** på transaktionsposten er enten angivet til **Fuldført** eller **Fejl**, og datoen for den seneste valideringskørsel vises i feltet **Sidste valideringstidspunkt**.
-
-For at få vist mere beskrivende fejltekst, der vedrører en valideringsfejl, skal du vælge den relevante butikstransaktionspost og klikke på knappen **Valideringsfejl**.
-
-Transaktioner, der ikke består valideringskontrollen, og transaktioner, der endnu ikke blevet valideret, trækkes ikke ind i opgørelser. Under processen "Beregn opgørelse" får brugere besked, hvis der findes posteringer, der kunne have været medtaget i opgørelsen, men ikke blev det.
-
-Hvis der findes en valideringsfejl, er den eneste måde at rette fejlen på, at kontakte Microsoft Support. I en senere version vil der blive tilføjet en funktion, så brugerne kan rette de poster, hvor der opstod fejl, via brugergrænsefladen. Logførings- og overvågningsfunktioner vil også blive tilgængelige, så historikken over ændringerne kan spores.
+Batchprocessen **Valider butiksposteringer** kontrollerer konsistensen af handelstransaktionstabellerne baseret på følgende valideringsregler.
 
 > [!NOTE]
-> Der tilføjes yderligere valideringsregler for at understøtte flere scenarier i en senere version.
+> Der vil fortsat blive tilføjet valideringsregler i de efterfølgende versioner.
 
+### <a name="transaction-header-validation-rules"></a>Valideringsregler for transaktionshoveder
+
+Følgende tabel indeholder de valideringsregler for transaktionshoveder, der kontrolleres i forhold til detailtransaktionshovedet, før disse transaktioner overføres til bogføring af opgørelser.
+
+| Titel | Beskrivelse |
+|-------|-------------|
+| Forretningsdato | Denne regel validerer, at forretningsdagen for transaktionen er knyttet til en åben regnskabsperiode i Finans. |
+| Valutaafrunding | Denne regel validerer, at transaktionsbeløbene afrundes i henhold til valutaafrundingsreglen. |
+| Debitorkonto | Denne regel validerer, at den debitor, der bruges i transaktionen, findes i databasen. |
+| Rabatbeløb | Denne regel validerer, at rabatbeløbet i hovedet er lig med summen af rabatbeløbene på linjerne. |
+| Bogføringsstatus for regnskabsdokument (Brasilien) | Denne regel validerer, at regnskabsdokumentet kan bogføres korrekt. |
+| Bruttobeløb | Denne regel validerer, at bruttobeløbet i transaktionshovedet matcher nettobeløbet, inklusive moms, af transaktionslinjerne plus gebyrer. |
+| Netto | Denne regel validerer, at nettobeløbet i transaktionshovedet matcher nettobeløbet, eksklusive moms, af transaktionslinjerne plus gebyrer. |
+| Netto + moms | Denne regel validerer, at bruttobeløbet i transaktionshovedet matcher nettobeløbet, eksklusive moms, af transaktionslinjerne plus alle momsangivelser og gebyrer. |
+| Antal varer | Denne regel validerer, at antallet af varer, der er angivet i transaktionshovedet, svarer til summen af antal på transaktionslinjerne. |
+| Betalingsbeløb | Denne regel validerer, at betalingsbeløbet i transaktionshovedet svarer til summen af alle betalingstransaktioner. |
+| Beregning af momsfritagelse | Denne regel kontrollerer, at summen af det beregnede beløb og det fritagne momsbeløb for gebyrlinjer er lig med det oprindelige beregnede beløb. |
+| Priser inklusive moms | Denne regel validerer, at flaget **Moms er inkluderet i priserne** er konsistent på tværs af transaktionshovedet og momstransaktionerne. |
+| Transaktion ikke tom | Denne regel kontrollerer, at transaktionen indeholder linjer, og at mindst én linje ikke er erklæret ugyldig. |
+| Under-/overbetaling | Denne regel validerer, at differencen mellem bruttobeløbet og betalingsbeløbet ikke er mere end konfigurationen af den maksimalt tilladte underbetaling/overbetaling. |
+
+### <a name="transaction-line-validation-rules"></a>Valideringsregler for transaktionslinjer
+
+Følgende tabel indeholder de valideringsregler for transaktionslinjer, der kontrolleres i forhold til linjedetaljerne for detailtransaktioner, før disse transaktioner overføres til bogføring af opgørelser.
+
+| Titel | Beskrivelse |
+|-------|-------------|
+| Stregkode | Denne regel validerer, at alle varens stregkoder, der bruges på transaktionslinjerne, findes i databasen. |
+| Gebyrlinjer | Denne regel kontrollerer, at summen af det beregnede beløb og det fritagne momsbeløb for gebyrlinjer er lig med det oprindelige beregnede beløb. |
+| Returnering af gavekort | Denne regel validerer, at der ikke er nogen returneringer af gavekort i transaktionen. |
+| Varevariant | Denne regel validerer, at alle varer og alle varianter, der bruges på transaktionslinjerne, findes i databasen. |
+| Linjerabat | Denne regel validerer, at rabatbeløbet på linjen er lig med summen af rabattransaktionerne. |
+| Linjemoms | Denne regel validerer, at momsbeløbet på linjen er lig med summen af momstransaktionerne. |
+| Negativ pris | Denne regel validerer, at der ikke bruges nogen negative priser på transaktionslinjerne. |
+| Styret af serienummer | Denne regel validerer, at serienummeret findes i transaktionslinjen for varer, der styres af serienummer. |
+| Serienummerdimension | Denne regel kontrollerer, at der ikke er angivet et serienummer, hvis varens serienummerdimension er inaktiv. |
+| Modstridende fortegn | Denne regel validerer, at antal og nettobeløb har samme fortegn i alle transaktionslinjerne. |
+| Momsfritagelse | Denne regel kontrollerer, at summen af linjevareprisen og det fritagne momsbeløb er lig med den oprindelige pris. |
+| Tildeling af momsgruppe | Denne regel validerer, at en kombination af momsgruppen og varemomsgruppen resulterer i et gyldigt momsskæringspunkt. |
+| Konverteringer af måleenhed | Denne regel validerer, at måleenheden for alle linjer har en gyldig konvertering til lagermåleenheden. |
+
+## <a name="enable-the-store-transaction-validation-process"></a>Aktivér valideringsprocessen for butikstransaktioner
+
+Konfigurer jobbet **Valider butikstransaktioner** for periodiske kørsler i Commerce-hovedkontoret (**Retail og Commerce \> Retail og Commerce IT \> POS-bogføring**). Batchjobbet planlægges ud fra butikkens organisationshierarki. Det anbefales, at du konfigurerer denne batchproces til at køre med samme frekvens som batchjobbene **P-job** og **Beregn transaktionsopgørelser.**
+
+## <a name="results-of-the-validation-process"></a>Resultater af valideringsprocessen
+
+Resultaterne af batchprocessen **Valider butikstransaktioner** kan ses på hver enkelt detailbutikstransaktion. Feltet **Valideringsstatus** i transaktionsposten er angivet til **Fuldført**, **Fejl** eller **Ingen**. Feltet **Sidste valideringstidspunkt** viser datoen for den sidste valideringskørsel.
+
+Følgende tabel beskriver de enkelte valideringsstatusser.
+
+| Valideringsstatus | Beskrivelse |
+|-------------------|-------------|
+| Fuldført | Alle aktiverede valideringsregler blev overholdt. |
+| Fejl | En aktiveret valideringsregel har identificeret en fejl. Du kan få vist flere detaljer om fejlen ved at vælge **Valideringsfejl** i handlingsruden. |
+| Ingen | Transaktionstypen kræver ikke, at der anvendes valideringsregler. |
+
+![Siden Butikstransaktioner, der viser feltet Valideringsstatus og knappen Valideringsfejl.](./media/valid-checker-validation-status-errors.png)
+
+Det er kun transaktioner, der har valideringsstatussen **Fuldført**, der hentes ind i transaktionsopgørelserne. Hvis du vil have vist transaktioner med statussen **Fejl**, skal du gennemgå feltet **Cash and carry-valideringsfejl** i arbejdsområdet **Butiksregnskab**.
+
+![Felter i arbejdsområdet Butiksregnskab.](./media/valid-checker-cash-carry-validation-failures.png)
+
+Du kan finde flere oplysninger om, hvordan du løser cash and carry-valideringsfejl, under [Redigere og overvåge cash and carry-transaktioner og kassestyringstransaktioner](edit-cash-trans.md).
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Redigere og overvåge cash and carry-transaktioner og kassestyringstransaktioner](edit-cash-trans.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
 description: I dette emne beskrives den sivende feedbaserede ordreoprettelse til butikstransaktioner i Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 09/04/2020
+author: analpert
+ms.date: 12/14/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,43 +15,49 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 900480c926df58cc1eaca052903384ceeadcccbdc3a0ede8a35f4b2a8ff87556
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a7fd8698d7123403cf9092a4a4bf810595d795b
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719435"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921239"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
 
 [!include [banner](includes/banner.md)]
 
-I Dynamics 365 Retail version 10.0.4 og tidligere er opgørelsesbogføring en handling ved afslutningen af dagen, og alle transaktioner bogføres i bøgerne sidst på dagen. Store transaktioner skal derefter behandles i et begrænset tidsvindue, og det kan nogle gange resultere i belastning og låsning og fejl ved bogføring af opgørelse. Detailhandlere kan heller ikke genkende indtægter og betalinger i deres bøger i løbet af dagen.
+I Microsoft Dynamics 365 Commerce version 10.0.5 og senere anbefales det, at du skifter alle bogføringsprocesser for opgørelser til de sivende feedbaserede bogføringsprocesser for opgørelser. Der knytter sig betydelige ydeevne- og forretningsmæssige fordele ved brug af funktionaliteten til sivende feed. Salgstransaktioner behandles i løbet af dagen. Transaktioner i forbindelse med betalingsmidler og kassestyring behandles i regnskabet ved dagens afslutning. Funktioner til sivende feed giver mulighed for fortløbende behandling af salgsordrer, fakturaer og betalinger. Derfor kan lager, omsætning og betalinger opdateres og registreres i realtid.
 
-Med den sivende feedbaseret ordreoprettelse der blev introduceret i Retail version 10.0.5, behandles transaktionerne i løbet af dagen, og det er kun den økonomiske afstemning af betalingsmidler og andre kassestyringstransaktioner, der behandles ved afslutningen af dagen. Denne funktion opdeler belastningen fra oprettelsen af salgsordrer, fakturaer og betalinger over hele dagen, hvilket giver en bedre formodet performance og muligheden for at genkende indtægter og betalinger i bøgerne i næsten realtid. 
+## <a name="use-trickle-feed-based-posting"></a>Sådan bruges sivende feedbaseret bogføring
 
+> [!IMPORTANT]
+> Før du aktiverer sivende feedbaseret bogføring, skal du sikre dig, at der ikke er nogen beregnede og ikke-bogførte opgørelser. Bogfør alle opgørelser, før du aktiverer funktionen. Du kan kontrollere, om der er åbne opgørelser, i arbejdsområdet **Butiksregnskab**.
 
-## <a name="how-to-use-trickle-feed-based-posting"></a>Sådan bruges sivende feedbaseret bogføring
-  
-1. Hvis du vil aktivere sivende feedbaseret bogføring af detailtransaktioner, skal du aktivere funktionen **Detailopgørelser – Sivende feed** ved hjælp af Funktionsstyring.
+Hvis du vil aktivere sivende feedbaseret bogføring af detailtransaktioner, skal du aktivere funktionen **Detailopgørelser – Sivende feed** i arbejdsområdet **Funktionsstyring**. Opgørelser opdeles i to forskellige typer: transaktionsopgørelser og regnskabsopgørelser.
 
-    > [!IMPORTANT]
-    > Før du aktiverer funktionen, skal du sikre dig, at der ikke er nogen opgørelser, der venter på at blive bogført.
+### <a name="transactional-statements"></a>Transaktionsopgørelser
 
-2. Det aktuelle opgørelsesdokument opdeles i to forskellige typer: transaktionsopgørelse og regnskabsopgørelse.
+Behandling af transaktionsopgørelser er beregnet til at blive kørt med en høj frekvens hele dagen, så dokumenter oprettes, når transaktionerne overføres til Commerce-hovedkontoret. Transaktioner indlæses fra butikkerne til Commerce-hovedkontoret, når du kører **P-job**. Du skal også køre jobbet **Valider butiksposteringer** for at validere transaktioner, så transaktionsopgørelsen henter dem.
 
-      - Transaktionsopgørelsen samler alle ikke-bogførte og validerede transaktioner og opretter salgsordrer, salgsfakturaer, betalings-og rabatkladder og indtægts-/udgiftstransaktioner med den hyppighed, der har konfigureret. Du skal konfigurere denne proces til at køre med en høj frekvens, så dokumenter oprettes, når transaktionerne overføres til Headquarters via P-jobbet. Da transaktionsopgørelsen allerede opretter salgsordrer og salgsfakturaer, er det egentlig ikke nødvendigt at konfigurere batchjobbet **Bogfør lager**. Du kan dog stadig bruge det til at imødekomme bestemte virksomhedskrav, som du måtte have.  
-      
-     - Regnskabet er beregnet til at blive udarbejdet ved dagens afslutning og understøtter kun afslutningsmetoden **Skift**. Denne opgørelse vil være begrænset til økonomisk afstemning og vil kun oprette kladder til differencebeløb mellem optalt beløb og posteringsbeløb for de forskellige betalingsmidler, samt kladder til andre kassestyringstransaktioner.   
+Planlæg, at følgende job skal køres med høj frekvens:
 
-3. Hvis du vil beregne transaktionsopgørelsen, skal du gå til **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn transaktionsopgørelser i batch**. Hvis du vil bogføre transaktionsopgørelserne i batch, skal du gå til **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør transaktionsopgørelser i batch**.
+- Hvis du vil beregne en transaktionsopgørelse, skal du køre jobbet **Beregn transaktionsopgørelser i batch** (**Retail og Commerce \> Retail og Commerce IT \> POS-bogføring \> Beregn transaktionsopgørelser i batch**). Dette job vil hente alle ikke-bogførte og validerede transaktioner og føje dem til en ny transaktionsopgørelse.
+- Hvis du vil bogføre transaktionsopgørelser i en batch, skal du køre jobbet **Bogfør transaktionsopgørelser i batch** (**Retail og Commerce \> Retail og Commerce IT \> POS-bogføring \> Bogfør transaktionsopgørelser i batch**). Dette job kører bogføringsprocessen og opretter salgsordrer, salgsfakturaer, betalingskladder, rabatkladder og indtægts-/udgiftstransaktioner for ikke-bogførte opgørelser, der ikke indeholder fejl. 
 
-4. Hvis du vil beregne regnskabet, skal du gå til **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn regnskaber i batch**. Hvis du vil bogføre regnskabet i batch, skal du gå til **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør regnskaber i batch**.
+### <a name="financial-statements"></a>Regnskaber
 
-> [!NOTE]
-> Menupunkterne **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Beregn opgørelser i batch** og **Retail og Commerce > Retail og Commerce IT > POS-bogføring > Bogfør opgørelser i batch** fjernes med den nye funktion.
+Regnskabsbehandlingen er beregnet til at være en proces, der køres ved dagens afslutning. Denne type behandling af opgørelser understøtter kun lukkemetoden **Skift** og henter kun lukkede skift. Opgørelser er begrænset til økonomisk afstemning. De opretter kun kladderne til differencebeløb mellem det optalte beløb og transaktionsbeløbet for betalingsmidler og kladder til andre kassestyringstransaktioner.
 
-Du kan også oprette forskellige typer af transaktions- og regnskabsopgørelser manuelt. Gå til **Retail og Commerce > Kanaler > Butikker**, og klik på **Opgørelser**. Klik på **Ny**, og vælg derefter den type opgørelse, du vil oprette. Felter på siden **Opgørelser** og handlinger under **Opgørelsesgruppe** på siden, viser relevante data og handlinger, der er baseret på den valgte opgørelsestype.
+Planlæg start- og sluttider for følgende regnskabsjob baseret på den forventede afslutning af dagen:
 
+- Hvis du vil beregne en regnskabsopgørelse, skal du køre jobbet **Beregn regnskaber i batch** (**Retail og Commerce \> Retail og Commerce IT \> POS-bogføring \> Beregn regnskaber i batch**). Jobbet indsamler alle ikke-bogførte økonomiske transaktioner og føjer dem til et nyt regnskab.
+- Hvis du vil bogføre regnskaber i en batch, skal du køre jobbet **Bogfør regnskaber i batch** (**Retail og Commerce \> Retail og Commerce IT \> POS-bogføring \> Bogfør regnskaber i batch**).
+
+### <a name="manually-create-statements"></a>Opret opgørelser manuelt
+
+Transaktions- og regnskabstyper kan også oprettes manuelt. 
+
+1. Gå til **Retail og Commerce \> Kanaler \> Butikker**, og vælg **Opgørelser**. 
+2. Vælg **Ny**, og vælg derefter den type opgørelse, du vil oprette. Felter på siden **Opgørelser** viser data, der er relevante for den valgte opgørelsestype, og handlinger under **Opgørelsesgruppe** viser relevante handlinger.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

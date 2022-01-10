@@ -2,7 +2,7 @@
 title: Konfigurere lagersynlighed
 description: Dette emne beskriver, hvordan du konfigurerer Lagersynlighed.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678465"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920292"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurere lagersynlighed
 
@@ -61,7 +61,7 @@ Når konfigurationen er fuldført, skal du vælge **Opdater konfiguration** i ap
 Datakilden repræsenterer det system, dataene kommer fra. F.eks. datakildenavner omfatter `fno` (hvilket betyder "Dynamics 365 Finance and Operations-apps") og `pos` (hvilket står for "point of sale" – salgssted). Supply Chain Management er som standard konfigureret som standarddatakilde (`fno`) i Lagersynlighed.
 
 > [!NOTE]
-> Datakilden `fno` er reserveret til Dynamics 365 Supply Chain Management.
+> Datakilden `fno` er reserveret til Supply Chain Management. Hvis tilføjelsesprogrammet Lagersynlighed er integreret med et Supply Chain Management-miljø, anbefales det, at du ikke sletter konfigurationer, der er relateret til `fno` i datakilden.
 
 Hvis du vil tilføje en datakilde, skal du følge disse trin.
 
@@ -143,7 +143,7 @@ Når en datakilde bogfører en lagerændring til Lagersynlighed, bogføres ændr
 
 Lagersynlighed indeholder en liste over fysiske standardmål, der er knyttet til Supply Chain Management (datakilden `fno`). Disse fysiske standardmålinger hentes fra lagertransaktionens statusser på siden **Liste over disponibel lagerbeholdning** i Supply Chain Management (**Lagerstyring \> Forespørgsler og rapport \> Liste over disponibel lagerbeholdning**). Følgende tabel indeholder et eksempel på fysiske målinger.
 
-| Navn på fysisk måling | Betegnelse |
+| Navn på fysisk måling | Beskrivelse |
 |---|---|
 | `NotSpecified` | Ikke angivet |
 | `Arrived` | Ankommet |
@@ -273,17 +273,17 @@ Outputtet `MyCustomAvailableforReservation`, der er baseret på beregningsindsti
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partitionskonfiguration
 
-Konfigurationen af partitionen består af en kombination af basisdimensioner. Det definerer datafordelingsmønsteret. Datahandlinger i samme partition understøtter høj ydeevne og prisen er fordelagtig. Gode partitionsmønstre kan derfor bidrage til betydelige fordele.
-
-Lagersynlighed omfatter følgende standardkonfiguration af partitioner.
+I øjeblikket består partitionskonfigurationen af to basisdimensioner (`SiteId` og `LocationId`), der angiver, hvordan dataene fordeles. Operationer under samme partition kan give en højere ydeevne og lavere omkostninger. I følgende tabel vises den standardkonfiguration af partition, som tilføjelsesprogrammet Lagersynlighed leverer.
 
 | Basisdimension | Hierarki |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> Standardkonfigurationen af partitioner er kun til reference. Du behøver ikke at definere den i Lagersynlighed. I øjeblikket understøttes opgraderingen af partitionskonfigurationen ikke.
+Løsningen inkluderer som standard denne partitionskonfiguration. Du *behøver derfor ikke definere den selv*.
+
+> [!IMPORTANT]
+> Lad være med at tilpasse standardkonfigurationen af partitioner. Hvis du sletter eller ændrer den, opstår der højst sandsynligt en uventet fejl.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Konfiguration af produktindekshierarki
 
@@ -291,7 +291,7 @@ Lagerbeholdningsforespørgslen vil det meste af tiden ikke kun være på det hø
 
 Lagersynlighed giver fleksibilitet ved at lade dig konfigurere _indekserne_. Disse indekser er baseret på en dimension eller en kombination af dimensioner. Et indeks består af et *sætnummer*, en *dimension* og et *hierarki* som defineret i følgende tabel.
 
-| Navn | Betegnelse |
+| Navn | Beskrivelse |
 |---|---|
 | Sætnummer | Dimensioner, der tilhører samme sæt (indeks), grupperes sammen, og det samme sætnummer tildeles dem. |
 | Dimension | Basisdimensioner, som resultatet af forespørgslen aggregeres på. |

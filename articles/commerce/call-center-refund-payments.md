@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 93eff7a54f9d3851c59b83a28d3aa61a8de7bc41f2a845be21c8bf4d1c6401d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731025"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944707"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Refusionsbetalingsmetoder i callcentre
 
@@ -33,11 +33,14 @@ Logikken i callcenter bestemmer betalingsmetoden for betalingslinjen for refusio
 
 Callcenter bruger betalingsmåden for den oprindelige ordre til at bestemme den betalingsmåde, der skal anvendes for en returordre. Nedenfor kan du se, hvordan denne proces fungerer for følgende oprindelige betalingsmetoder:
 
-- **Normal** (kontant) eller **Check** – Når en returordre, der oprettes, refererer til en oprindelig ordre, der er betalt med brug af den normale (kontante) eller checkbetalingstype, refererer programmet til opkaldscenter til konfigurationer på siden **Refunderingsmetoder for callcenter**. På denne side kan organisationer definere i ordrevalutaen, hvordan refusioner udstedes til kunder for ordrer, der oprindeligt blev betalt ved hjælp af den normale betalingstype eller checkbetalingstypen. På siden **Refunderingsmetoder for callcenter** kan organisationer også vælge, om der skal sendes en systemgenereret refusionscheck til kunden, eller om der skal oprettes en debitorkontokreditering i forhold til den interne debitorkontosaldo. I disse scenarier refererer callcenter-logikken til returordren og bruger derefter værdien for **Detail-betalingsmåden** for den pågældende valuta til at oprette en betalingslinje til refundering på retursalgsordren. Senere sammenkædes en debitorbetalingskladde, der bruger den tilknyttede AR-betalingsmåde, med valutaen.
+- **Normal** (kontant) eller **Check** – Når en returordre, der oprettes, refererer til en oprindelig ordre, der er betalt med brug af den normale (kontante) eller checkbetalingstype, refererer programmet til opkaldscenter til konfigurationer på siden **Refunderingsmetoder for callcenter**. På denne side kan organisationer definere i ordrevalutaen, hvordan refusioner udstedes til kunder for ordrer, der oprindeligt blev betalt ved hjælp af den normale betalingstype eller checkbetalingstypen. Siden **Call center-refusionsmetoder** giver også organisationer mulighed for at vælge, om der skal sendes en systemgenereret refusionscheck til kunden. I disse scenarier refererer callcenter-logikken til returordren og bruger derefter værdien for **Detail-betalingsmåden** for den pågældende valuta til at oprette en betalingslinje til refundering på retursalgsordren. Senere sammenkædes en debitorbetalingskladde, der bruger den tilknyttede AR-betalingsmåde, med valutaen.
 
     I følgende illustration vises konfigurationen for et scenario, hvor en kunde returnerer produkter fra en salgsordre, der er knyttet til valutaen USD, og som oprindeligt blev betalt ved hjælp af den normale betalingstype eller checkbetalingstypen. I dette scenario vil der blive udstedt en refusion til kunden via en systemgenereret refusionskontrol. **REF-CHK** AR-betalingsmåden er konfigureret som en betalingstype til refunderingskontrol.
 
     ![Konfiguration af refunderingsmetoder for callcenter for normale betalinger og kontrol af oprindelige betalinger.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Debitorkontoen understøttes ikke som refusionsmetode for kontant- eller checkbetalinger.
 
 - **Kreditkort** – Når en returordre, der oprettes, refererer til en oprindelig ordre, der blev betalt med kreditkort, anvender callcenter-logikken for refunderingsbetalinger samme oprindelige kreditkort på returordren.
 - **Fordelskundekort** – Når en returordre, der oprettes, refererer til en oprindelig ordre, der blev betalt med fordelskundekort, anvender callcenter-logikken for refunderingsbetalinger til samme fordelskundekort på returordren.

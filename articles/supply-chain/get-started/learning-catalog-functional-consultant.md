@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7271436bd155918dfdac792486c89966e7adb18c
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a028de4bd37b965d55783dad4b39378d6400bf4b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402636"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920742"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Undervisningskatalog til funktionelle konsulenter for Dynamics 365 Supply Chain Management
 
@@ -72,7 +72,7 @@ I forbindelse med funktionelle konsulenter har vores analyse af arbejdsopgaver v
 
 ## <a name="migration-and-upgrade"></a>Overførsel og opgradering<a name="migration"></a>
 
-| Indhold | Betegnelse | Formater | Længde |
+| Indhold | Beskrivelse | Formater | Længde |
 |---------|-------------|--------|--------|
 | [Opgradere Dynamics AX 2012 til Finance and Operations-apps](/learn/paths/upgrade-ax-2012-finance-operations/) | Lær de vigtigste elementer og bedste fremgangsmåder at kende for en vellykket opgradering af Dynamics AX 2012-løsningen til Finance and Operations-apps. Fra de første trin med at finde vigtige forskelle i arkitekturen, komme i gang med opgraderingsprocessen og værktøjer til kode og dataopgradering, til de bedste metoder til at ændre integrationer, analyser og rapportering baseret på de seneste egenskaber. | Gratis onlinelæringssti i dit eget tempo | 7 timer |
 | [Sådan opgraderer du til 7.2 (juli 2017) fra 7.0 (RTW)/7.1 (version 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | I denne session forklarer vi, hvordan du opgraderer fra Dynamics 365 Finance and Operations-applikation v7.0 (RTW) og v7.1 (1611) til v7.2 (juli 2017). Vi gør en tydelig differentiering mellem Live kunder og igangværende projekter (ikke Live endnu). | Teknisk samtale (optaget webinar) | 58 minutter |
@@ -81,7 +81,7 @@ I forbindelse med funktionelle konsulenter har vores analyse af arbejdsopgaver v
 
 ## <a name="manufacturing"></a>Produktion<a name="manufacturing"></a>
 
-| Indhold | Betegnelse | Formater | Længde |
+| Indhold | Beskrivelse | Formater | Længde |
 |---------|-------------|--------|--------|
 | [Konfigurere og bruge diskret produktion i Dynamics 365 Supply Chain Management](/learn/paths/configure-use-discrete-manufacturing-dyn365-supply-chain-mgmt/) | Hvis et firma kun producerer simple produkter, kan produktionen planlægges manuelt med de korrekte styklister, der ankommer til produktionsfabrikken på det korrekte tidspunkt og ved den rigtige ressource. Som en funktionel konsulent for produktion har du brug for at vide, hvordan du skal konfigurere Dynamics 365 Supply Chain Management til diskret produktion, så kunden kan udføre og styre produktionens livscyklus. | Gratis onlinelæringssti i dit eget tempo | 16.5 timer |
 | [Konfigurere og bruge lean manufacturing i Dynamics 365 Supply Chain Management](/learn/paths/configure-use-lean-manufacturing-dyn365-supply-chain-mgmt/) | Lean manufacturing er et forløb med løbende forbedringer. Målet er at fremlægge præcist, hvad kunden ønsker, hvornår kunden ønsker det, og at gøre det økonomisk. Du kan bruge lean manufacturing i et samlet produktionsmiljø (blandet tilstand), der kombinerer forskellige strategier for levering, produktion og forsyning. Disse strategier omfatter produktionsordrer, batch-ordrer til forarbejdningsindustrier, købsordrer og overflytningsordrer. Lean manufacturing-arkitektur i Dynamics 365 Supply Chain Management består af produktionsflow, aktiviteter og kanban-regler. | Gratis onlinelæringssti i dit eget tempo | 12.5 timer |

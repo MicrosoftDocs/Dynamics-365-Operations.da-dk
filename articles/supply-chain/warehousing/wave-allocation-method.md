@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fd874f3c6c1f4d25b3257d6465686dcb8e95b933
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576010"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920592"
 ---
 # <a name="wave-allocation"></a>Bølgefordeling
 
@@ -77,7 +77,7 @@ Parallel fordelingsbehandling kræver, at der køres bølgebehandling i batch. D
 
 Hvis det er nødvendigt, kan du fortryde hver af de indstillinger, der er foretaget som standard, når funktionen *Bølgeparallelisering af Tilde bølge-metode* automatisk aktiveres for din forekomst. Sådan gør du dette:
 
-- Gå til **Lokationsstyring \> Konfiguration \> Parametre til lokationsstyring**. Anvend dine foretrukne værdier for **Udfør behandling af bølger i batch** og **Vent på lås (ms)** under fanen **Bølgebehandling**.
+- Gå til **Warehouse Management \> Opsætning \> Parametre til lagerstedsstyring**. Anvend dine foretrukne værdier for **Udfør behandling af bølger i batch** og **Vent på lås (ms)** under fanen **Bølgebehandling**.
 - Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeprocesmetoder**. Vælg metoden `allocateWave`. Vælg **Opgavekonfiguration** i handlingsruden for at åbne en side med en oversigt over hvert lagersted, hvor metoden er indstillet til at køre parallelt. Rediger eller slet antallet af batchopgaver og den tildelte bølgegruppe for hvert af de viste lagersteder efter behov.
 
 ## <a name="troubleshooting"></a>Fejlfinding

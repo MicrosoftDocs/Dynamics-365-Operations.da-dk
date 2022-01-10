@@ -1,8 +1,8 @@
 ---
 title: Konfigurere og administrere databaselogning
 description: Du kan spore ændringer af tabeller og felter i Dynamics 365 Human Resources med databaselogning.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781651"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924814"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurere og administrere databaselogning
 
@@ -74,7 +74,7 @@ Du kan bruge guiden **Registrering af databaseændringer** til at konfigurere da
 4. På siden **Typer af ændringer** i guiden skal du vælge de datahandlinger, du vil spore ændringer for i hver af tabellerne og felterne, og vælge **Næste**. I tabellen nedenfor kan du se en beskrivelse af de datahandlinger, der er tilgængelige til logføring.
 5. Gennemse de ændringer, der vil blive foretaget, på siden **Udfør**, og vælg **Udfør**.
 
-| Operation | Betegnelse |
+| Operation | Beskrivelse |
 | -- | -- |
 | Spor nye transaktioner | Opret en log for nye poster, der er oprettet i tabellen. |
 | Opdater | Opret en log for opdateringer af tabelposter eller opdateringer af individuelt valgte felter i tabellen. Hvis du vælger at logføre opdateringer for tabellen, oprettes der en logpost, hver gang der foretages en opdatering af et felt i en vilkårlig post i tabellen. Hvis du vælger at logføre opdateringer for bestemte felter, oprettes der kun en logpost, når der foretages opdateringer af disse felter med tabelposter. |
@@ -93,14 +93,14 @@ Du kan slette alle eller en del af databaseloggene ved hjælp af følgende indst
 Benyt følgende fremgangsmåde for at konfigurere oprydning af databaselog: 
 
 1. Gå til **Systemadministration > Links > Database > Databaselog**. Vælg **Oprydning i log**.
-
-2. Vælg en metode til valg af logge, der skal slettes, ved at angive en af følgende indstillinger:
+2. Vælg **Filter** under overskriften **Poster, der skal indgå**.
+3. Vælg den metode, der skal bruges til at vælge de logge, der skal slettes. Angiv en af følgende indstillinger:
 
    - Tabel-ID
    - Logtype
    - Dato og klokkeslæt for oprettelse
 
-3. Brug fanen **Oprydning i databaselog** til at bestemme, hvornår du vil køre oprydningsopgaven for log. Databaselogge er som standard tilgængelige i 30 dage.
+4. Brug fanen **Oprydning i databaselog** til at bestemme, hvornår du vil køre oprydningsopgaven for log. Databaselogge er som standard tilgængelige i 30 dage.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

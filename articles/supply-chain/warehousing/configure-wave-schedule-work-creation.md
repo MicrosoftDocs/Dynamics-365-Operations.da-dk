@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 5b1e798ac0558e7c5b0bbe4b6a732cbdcf5729a1
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778371"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920107"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planlægge oprettelse af arbejde under bølge
 
@@ -54,7 +54,7 @@ De eksisterende konfigurationer til behandling af opgaver og bølger bevares ogs
 Hvis det er nødvendigt, kan du manuelt tilbagestille nogle af eller alle de indstillinger, der blev foretaget automatisk, da du aktiverede funktionen *Bølgemetoden Planlæg oprettelse af arbejde for hele organisationen*, ved at gøre følgende:
 
 - For bølgeskabeloner skal du gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**. Erstat metoden *Planlæg oprettelse af arbejde* med *Opret arbejde*.
-- For lagerstedsparametre skal du gå til **Lokationsstyring \> Konfiguration \> Parametre til lokationsstyring**. Anvend dine foretrukne værdier for **Udfør behandling af bølger i batch** og **Vent på lås (ms)** under fanen **Bølgebehandling**.
+- For lagerstedsparametre skal du gå til **Lokationsstyring \> Konfiguration \> Parametre til lokationsstyring**. Anvend dine foretrukne værdier for **Udfør behandling af bølger i batch** og **Vent på lås (ms)** under fanen **Bølgebehandling**.
 - For bølgemetoder skal du gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeprocesmetoder**. Vælg `WHSScheduleWorkCreationWaveStepMethod` i handlingsruden, og vælg **Opgavekonfiguration**. Rediger eller slet antallet af batchopgaver og den tildelte bølgegruppe for hvert af de viste lagersteder efter behov.
 
 ## <a name="manually-configure-scheduled-work-creation"></a>Konfigurere planlagt oprettelse af arbejde manuelt
@@ -65,7 +65,7 @@ Hvis du ikke aktiverede funktionen [*Bølgemetoden "Planlæg oprettelse af arbej
 
 Hvis du vil have fordel af en parallel asynkron metode til oprettelse af lagerstedsarbejde, skal din bølgeproces køres i batch. Sådan konfigurerer du dette:
 
-1. Gå til **Lokationsstyring \> Opsætning \> Parametre til lokationsstyring**.
+1. Gå til **Warehouse Management \> Opsætning \> Parametre til lagerstedsstyring**.
 1. Angiv **Udfør behandling af bølger i batch** til **Ja** under fanen *Generelt*. Du kan også vælge en dedikeret **Batchgruppe til behandling af bølger** for at forhindre, at batchkøbehandlingen køres på samme tid som andre processer.
 1. Indstil **Vent på lås (ms.)**, som gælder, når systemet behandler flere bølger samtidig. Ved de fleste større bølgeprocesser anbefales en værdi af *60000*.
 
@@ -73,8 +73,8 @@ Hvis du vil have fordel af en parallel asynkron metode til oprettelse af lagerst
 
 Start med at oprette den nye metode til bølgetrin, og aktivér den til parallel asynkron opgavebehandling.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
-1. Vælg  **Genopret metoder**, og bemærk, at *WSScheduleWorkCreationUroStepMethod* er føjet til listen over metoder til behandling af bølger, du kan bruge i dine forsendelsesbølgeskabeloner.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
+1. Vælg **Genopret metoder**, og bemærk, at *WHSScheduleWorkCreationWaveStepMethod* er føjet til listen over metoder til behandling af bølger, du kan bruge i dine forsendelsesbølgeskabeloner.
 1. Vælg posten med **Metodenavn** *WSScheduleWorkCreationHodStepMethod*, og vælg **Opgavekonfiguration**.
 1. Gå til handlingsruden, og vælg **Ny** for at føje en ny række til gitteret med følgende indstillinger:
 
@@ -84,7 +84,7 @@ Start med at oprette den nye metode til bølgetrin, og aktivér den til parallel
 
 Nu er du klar til at opdatere en eksisterende bølgeskabelon (eller oprette en ny) til at bruge metoden *Planlæg oprettelse af arbejde* til bølgebehandling.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeskabeloner**.
 1. Vælg **Rediger** i handlingsruden.
 1. I listeruden skal du vælge den bølgeskabelon, som du vil opdatere (hvis du tester med demodata, kan du bruge *24 Standard for forsendelse*).
 1. Udvid oversigtspanelet **Metoder**, og vælg rækken med **Navn** *Planlæg oprettelse af arbejde* i gitteret **Resterende metoder**.
