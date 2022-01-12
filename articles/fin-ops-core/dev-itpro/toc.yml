@@ -1012,6 +1012,8 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Filer til oversættelseshukommelse
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps-filtypenavn (offentlig forhåndsversion)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform-integration
           items:
             - name: Oversigt
@@ -1602,6 +1604,8 @@
                   href: sysadmin/retryable-batch.md
                 - name: Kopiere et batchjob
                   href: sysadmin/copy-batch-job.md
+                - name: Prioriteret batchplanlægning
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktive batchperioder
                   href: sysadmin/activeperiod.md
                 - name: Understøttelse af sommertid for aktive batchperioder

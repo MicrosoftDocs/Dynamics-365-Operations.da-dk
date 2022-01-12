@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
+ROBOTS: noindex,nofollow
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 58b23058582c949a757ec5c141e218b36833ec21e72c35db89762017dc26ae19
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752936"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927398"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguration til Finance Insights til offentlig forhåndsversion (forhåndsversion) - version 10.0.20 og senere
 
@@ -39,7 +40,7 @@ Følg disse trin for at udrulle miljøerne.
 
 1. I Microsoft Dynamics Lifecycle Services (LCS) skal du oprette eller opdatere et Finance-miljø. Miljøet kræver appversion 10.0.20 eller nyere af Finance and Operations-apps.
 2. Miljøet skal være et miljø med høj tilgængelighed (HA) i sandkassesystemet. (Denne type miljø kaldes også et Niveau-2-miljø). Du kan finde flere oplysninger i [Miljøplanlægning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Hvis du konfigurerer Finance Insights i et sandkassemiljø, skal du muligvis kopiere produktionsdata til dette miljø, så du kan få forudsigelser, der virker. En forudsigelsesmodel bruger flere års data til at opbygge forudsigelser. Contoso-demodataene indeholder ikke nok historikdata til at træne forudsigelsesmodellen korrekt. 
+3. Hvis du konfigurerer Finance Insights i et sandkassemiljø, skal du muligvis kopiere produktionsdata til dette miljø, så du kan få forudsigelser, der virker. En forudsigelsesmodel bruger flere års data til at opbygge forudsigelser. Contoso-demodataene indeholder ikke nok historikdata til at træne forudsigelsesmodellen tilstrækkeligt. 
 
 ## <a name="configure-dataverse"></a>Konfigurer Dataverse
 
@@ -723,7 +724,7 @@ Udfør følgende trin for at bruge LCS til at tilføje tilføjelsesprogrammet Ek
 3. Vælg **Eksporter til Data Lake**-tilføjelsesprogrammet.
 4. Angiv følgende værdier.
 
-    | Værdi                                                              | Betegnelse |
+    | Værdi                                                              | Beskrivelse |
     |--------------------------------------------------------------------|-------------|
     | Lejer-id på det Azure-abonnement, hvor Key Vault er placeret | Det lejer-id, hvor lagerkontoen, apps og Key Vault er placeret. Hvis du vil finde denne værdi, skal åbne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory** og kopiere værdien **Lejer-id**. |
     | Angiv DNS-navn for Key Vault                             | DNS-navnet på Key Vault, som f.eks. `https://customkeyvault.vault.azure.net/`. |

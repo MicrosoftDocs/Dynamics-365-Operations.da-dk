@@ -4,6 +4,34 @@
       items:
         - name: Startside for Dynamics 365 Supply Chain Management
           href: index.md
+        - name: Nyheder eller ændringer
+          items:
+            - name: Nyheder eller ændringer i Finance and Operations-apps
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nyheder eller ændringer i Supply Chain Management
+              items:
+                - name: Nyheder eller ændringer i Supply Chain Management-startside
+                  href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.24 (februar 2022)
+                  href: get-started/whats-new-scm-10-0-24.md
+                - name: Supply Chain Management 10.0.23 (januar 2022)
+                  href: get-started/whats-new-scm-10-0-23.md
+                - name: Supply Chain Management 10.0.22 (november 2021)
+                  href: get-started/whats-new-scm-10-0-22.md
+                - name: Supply Chain Management 10.0.21 (oktober 2021)
+                  href: get-started/whats-new-scm-10-0-21.md
+            - name: Fjernede eller udfasede funktioner
+              items:
+                - name: Fjernede eller udfasede funktioner på startsiden
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
+                  href: get-started/removed-deprecated-features-scm-updates.md
+                - name: Fjernede eller udfasede funktioner i tidligere versioner
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 'AX 2012-funktioner, der er udsat'
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
         - name: Start her
           items:
             - name: Tjenestebeskrivelse
@@ -62,34 +90,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere lagersted for udrulninger i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Nyheder eller ændringer
-              items:
-                - name: Nyheder eller ændringer i Finance and Operations-apps
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Nyheder eller ændringer i Supply Chain Management
-                  items:
-                    - name: Nyheder eller ændringer i Supply Chain Management-startside
-                      href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.24 (februar 2022)
-                      href: get-started/whats-new-scm-10-0-24.md
-                    - name: Supply Chain Management 10.0.23 (januar 2022)
-                      href: get-started/whats-new-scm-10-0-23.md
-                    - name: Supply Chain Management 10.0.22 (november 2021)
-                      href: get-started/whats-new-scm-10-0-22.md
-                    - name: Supply Chain Management 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-scm-10-0-21.md
-                - name: Fjernede eller udfasede funktioner
-                  items:
-                    - name: Fjernede eller udfasede funktioner på startsiden
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
-                      href: get-started/removed-deprecated-features-scm-updates.md
-                    - name: Fjernede eller udfasede funktioner i tidligere versioner
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'AX 2012-funktioner, der er udsat'
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentationsressourcer
               items:
                 - name: Hjælp-system
@@ -1617,6 +1617,8 @@
                   href: inventory/inventory-visibility-reservations.md
                 - name: Offentlige API'er til lagersynlighed
                   href: inventory/inventory-visibility-api.md
+                - name: Tip til lagersynlighed
+                  href: inventory/inventory-visibility-tips.md
         - name: IoT-intelligens
           items:
             - name: Startside for IoT-intelligens
@@ -2827,7 +2829,7 @@
               href: sales-marketing/trade-allowance.md
             - name: Oprette en ny samhandelsaftale
               href: sales-marketing/tasks/create-new-trade-agreement.md
-            - name: Forbedringer af ydeevnen for oprydning i salgshistorikken
+            - name: Forbedringer af ydeevnen for oprydning i salgshistorikken
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Servicestyring
           items:
@@ -3573,6 +3575,8 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Varedisponering
               items:
+                - name: 'Systemet kan ikke finde et ordreforslag, når der arbejdes på flere ordrer'
+                  href: troubleshooting/planning/planned-order-not-exist.md
                 - name: Udfoldning af styklister fungerer forskelligt for fastlagte og kalkulerede produktionsordrer
                   href: troubleshooting/planning/bom-explosion-works-differently.md
                 - name: 'Forsinkelsesværdien opdateres ikke, når du ændrer planlægning af et ordreforslag'

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 03ed2d52f44bd38910b01ffbd3767f750da2cbf8
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647209"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920567"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
 
@@ -50,7 +50,7 @@ Følgende tabel indeholder de funktionsforbedringer, der er inkluderet i denne v
 
 | Modul | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
 |---|---|---|
-| Salg og marketing | Forbedringer af ydeevnen for oprydning i salgshistorikken | Oprydning i salgshistorikken kan tage lang tid, hvis den køres sjældent i miljøer med en stor mængde salgsopdateringer. For at reducere varigheden og forbedre pålideligheden opdeler denne funktion oprydning i batches, der kører i en begrænset periode. Hvor det er muligt, bruges databasefunktionerne til at minimere låsning og til at undgå at forbinde transaktionstabeller under oprydning. Flere oplysninger i [Forbedringer af ydeevnen for oprydning i salgshistorikken](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
+| Salg og marketing | Forbedringer af ydeevnen for oprydning i salgshistorikken | Oprydning i salgshistorikken kan tage lang tid, hvis den køres sjældent i miljøer med en stor mængde salgsopdateringer. For at reducere varigheden og forbedre pålideligheden opdeler denne funktion oprydning i batches, der kører i en begrænset periode. Hvor det er muligt, bruges databasefunktionerne til at minimere låsning og til at undgå at forbinde transaktionstabeller under oprydning. Flere oplysninger i [Forbedringer af ydeevnen for oprydning i salgshistorikken](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Salg og marketing | Opdater ønsket modtagelsesdato med bekræftet dato for interne ordrer | Med denne funktion kan du styre, hvad der skal ske med værdier i salgs- og købsdatofelt, når du bruger intern direkte levering. Du kan vælge, om systemet skal opdatere de ønskede datoer eller springe opdateringen over. Hvis du springer opdateringen over, repræsenterer de ønskede datoer det, kunden har anmodet om. Hvis du aktiverer opdatering, repræsenterer de ønskede datoer (ved brug af kontrol af leveringsdato) i første omgang kun det, som kunden har anmodet om. Når kontrollen af leveringsdato er forskellig fra *Ingen*, tilsidesættes det, der oprindeligt blev anmodet om. Du kan angive denne indstilling ved hjælp af den nye indstilling **Opdater anmodet kvitteringsdato med bekræftet dato** i de interne indstillinger for kreditor eller debitor.<br><br>Hvis funktionen er deaktiveret, overskriver systemet den ønskede modtagelsesdato på oprindelige salgsordrer baseret på reglen for kontrol af leveringsdato, men den ønskede afsendelsesdato forbliver, som den er. |
 | Lagerstedsstyring | Afrund antal ned til nærmeste salgsenhed ved frigivelse til lagersted | Denne funktion tilføjer en indstilling, der kan begrænse ordreantal ved frigivelse til lagersted. Når indstillingen er aktiveret, rundes ordreantal ned til nærmeste hele salgsenhed, og ordrer, der indeholder antal for mindre end én salgsenhed, afvises til frigivelse. |
 | Lagerstedsstyring | Bølgemetoden "Planlæg arbejdsoprettelse" for hele organisationen | Når denne funktion aktiveres, konfigureres bølgemetoden *Planlæg arbejdsoprettelse* til at køre parallelt på tværs af alle juridiske enheder. Flere yderligere indstillinger påvirkes også. Du kan finde de komplette oplysninger i [Planlægge oprettelse af arbejde under bølge](../warehousing/configure-wave-schedule-work-creation.md). |

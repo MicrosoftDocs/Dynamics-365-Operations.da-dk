@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
-ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
+ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
+ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7893639"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7931975"
 ---
 # <a name="add-or-copy-leases-preview"></a>Tilføj eller Kopiér leasinger (prøveversion)
 
@@ -50,6 +50,9 @@ Når du er færdig med at angive oplysninger om en leasing, skal du udføre føl
     På siden **Kartotekoplysninger** kan du se, hvordan rettigheden redegøres for de kartoteker, der er tildelt til den. Herfra kan du få vist planlægninger af leasingen.
 
     Betalingsplanen indeholder input fra fanen **Betalingsplanlinjer** på siden **Tilføj leasing**. Du kan stadig ændre hvert betalingsbeløb og variabel betaling. Leasingforpligtelsen beregnes på baggrund af den ændrede betalingsplan.
+    
+> [!NOTE]
+> Startdatoen for leasingbetalingen skal være den samme som eller en senere dato end startdatoen for leasingen. Hvis startdatoen for leasingbetalingen er før startdatoen for leasingen, får du vist en fejlmeddelelse. 
 
 4. Når du er færdig med at gennemse betalingsplanen, skal du vælge **Bekræft plan**. Når planen er bekræftet, er rettigheden ikke længere tilgængelig til redigering.
 

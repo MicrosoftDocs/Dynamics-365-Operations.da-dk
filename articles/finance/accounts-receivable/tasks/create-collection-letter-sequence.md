@@ -1,8 +1,8 @@
 ---
 title: Oprette et rykkerforløb
 description: Brug denne procedure til at oprette et rykkerforløb.
-author: abruer
-ms.date: 07/22/2019
+author: JodiChristiansen
+ms.date: 12/07/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfc5bd0b1228ef28631da8746b2eb60e4cf488c1
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753580"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921193"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Oprette et rykkerforløb
 
@@ -31,10 +31,10 @@ Brug denne procedure til at oprette et rykkerforløb. Denne opgave bruger demofi
 3. Angiv et sekvens-id, der repræsenterer rækkefølgen, i feltet **Rykkerforløb**. Det vil blive brugt, når du opretter en posteringsprofil.
 4. Indtast en værdi i feltet **Beskrivelse**.  Betalingsbetingelserne er valgfrie. Hvis du indtaster en værdi her, vil rykkerens gebyrfaktura bruge disse betalingsbetingelser i stedet for betalingsbetingelserne, der er gemt sammen med kunden.  
 5. I feltet **Rykkerkode** skal du vælge koden for den første rykker, du vil sende. Den første rykker oprettes på grundlag af fakturaens forfaldsdato, den værdi, som du har angivet som frist i feltet Dage på denne linje, og andre oplysninger, som du angiver på denne linje.  
-6. Indtast en værdi i feltet **Beskrivelse**. Valutaen for gebyret er som standard debitorvalutaen. Valutakoden kan være forskellig fra fakturaens valuta.  
-7. Klik på **Tilføj** for at tilføje den næste rykker, der skal sendes i rækkefølgen. I mange tilfælde er den første rykker blot en advarsel. Hvis det er nødvendigt, kan du tilføje gebyrer.  
-8. I feltet til rykkerkoden skal du vælge den næste rykker, der skal sendes i rækkefølgen.
-9. Indtast en værdi i feltet **Beskrivelse**.
+6. Indtast en værdi i feltet **Beskrivelse**. 
+7. Standardvalutaen for gebyret er valutaen i den juridiske enhed. Valutakoden kan være forskellig fra fakturaens valuta.   
+8. Klik på **Tilføj** for at tilføje den næste rykker, der skal sendes i rækkefølgen. I mange tilfælde er den første rykker blot en advarsel. Hvis det er nødvendigt, kan du tilføje gebyrer.  
+9. I feltet **Rykkerkode** skal du vælge den næste rykker, der skal sendes i rækkefølgen.
 10. I feltet **Hovedkonto** skal du vælge den omsætningskonto, der skal bruges til gebyrer.
 11. Angiv det gebyr, der opkræves, når denne rykker bogføres.
 12. Klik på rullelisten i feltet **Varemomsgruppe** for at åbne opslaget. Vælg en varemomsgruppe, hvis der skal beregnes moms på gebyret.  

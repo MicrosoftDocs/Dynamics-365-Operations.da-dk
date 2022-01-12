@@ -14,17 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: dc4a01e520379a74ca3b21c1d588531412e762be
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: bae825ed7093494c48abac119c480be0dba4f951
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647506"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919468"
 ---
 # <a name="search-results-module"></a>Modul til søgeresultater
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Dette emne omhandler søgeresultater-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -44,7 +44,7 @@ I følgende illustration vises et eksempel på et søge resultater-side for kate
 
 Følgende tabel indeholder egenskaberne for søgeresultatmoduler sammen med deres værdier og beskrivelser.
 
-| Egenskab | Værdier | Betegnelse |
+| Egenskab | Værdier | Beskrivelse |
 |----------|--------|-------------|
 | Elementer pr. side | Heltal | Det antal elementer, der skal vises på hver side. |
 | Tillad at gå tilbage til PDP | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, når en bruger vælger et produkt på siden med søgeresultater, vil den navigation på produktdetaljerne (PDP), der åbnes, vise linket "Tilbage til resultater". |

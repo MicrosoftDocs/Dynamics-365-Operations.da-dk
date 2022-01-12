@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (november 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: Fjernede eller udfasede funktioner
                   items:
                     - name: Fjernede eller udfasede funktioner på startsiden
@@ -842,7 +840,7 @@
           items:
             - name: Oversigt over opgørelser
               href: retail-statements.md
-            - name: Konsistenskontrol af transaktion
+            - name: Validere butikstransaktioner til beregning af opgørelse
               href: valid-checker.md
             - name: Deaktivere regler i konsistenskontrol af detailtransaktion
               href: disable-consistency-check-rule.md
@@ -1286,6 +1284,8 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Konfigurere regnskabsintegration for Commerce-kanal
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Konfigurere build-pipeline til eksempel på regnskabsintegration
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Brugerdefinerede certifikatprofiler til detailbutikker
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1322,6 +1322,8 @@
               items:
                 - name: Eksempel på integration af regnskabsregistreringsservice i Østrig
                   href: localizations/emea-aut-fi-sample.md
+                - name: Retningslinjer for installation for eksempel på regnskabsintegration i Østrig (ældre)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
               items:
                 - name: Commerce-lokalisering for Brasilien
@@ -1358,12 +1360,16 @@
                   items:
                     - name: Eksempel på integration af regnskabsregistreringstjeneste i Tjekkiet
                       href: localizations/emea-cze-fi-sample.md
+                    - name: Retningslinjer for installation for eksempel på regnskabsintegration i Tjekkiet (ældre)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Polen
                   items:
                     - name: Eksempel på integration af bonprinter i Polen
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Administration af kundeoplysninger i Polen
                       href: localizations/emea-pol-customer-information.md
+                    - name: Retningslinjer for installation for eksempel på regnskabsintegration i Polen (ældre)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Frankrig
               items:
                 - name: Kasseapparatfunktionalitet
@@ -1380,6 +1386,8 @@
               items:
                 - name: Eksempel på integration af regnskabsregistreringsservice i Tyskland
                   href: localizations/emea-deu-fi-sample.md
+                - name: Retningslinjer for installation for eksempel på regnskabsintegration i Tyskland (ældre)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: Indien
               items:
                 - name: Integration af moms på varer og ydelser (GST) for kasseapparater
@@ -1398,6 +1406,8 @@
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Administration af kundeoplysninger for Italien
                   href: localizations/emea-ita-customer-information.md
+                - name: Retningslinjer for installation for eksempel på regnskabsintegration i Italien (ældre)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Mexico
               items:
                 - name: Globale CFDI-e-fakturaer til Mexico
@@ -1407,6 +1417,8 @@
                 - name: Kasseapparatfunktionalitet
                   href: localizations/emea-nor-cash-registers.md
                 - name: Retningslinjer for installation af kasseapparater
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: Retningslinjer for installation af kasseapparater (ældre)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Rusland
               items:
@@ -1432,6 +1444,8 @@
                   href: localizations/emea-swe-cash-registers.md
                 - name: Eksempel på integration med kontrolenhed for Sverige
                   href: localizations/emea-swe-fi-sample.md
+                - name: Retningslinjer for installation for eksempel på integration med kontrolenhed for Sverige (ældre)
+                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: Eksempel på Retail POS-integration med kontrolenheder (ældre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering og Power BI-integration
@@ -2466,6 +2480,8 @@
                       href: e-commerce-extensibility/set-up-key-vault.md
                     - name: Oprette en pipeline til anmodninger om tilbud
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: Billedkomponent
+                      href: e-commerce-extensibility/image-component.md
                 - name: Udvikle datahandlinger
                   items:
                     - name: Oversigt over datahandlinger
@@ -2574,6 +2590,8 @@
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Overføre eksempler og pakker fra GitHub og NuGet
                   href: dev-itpro/retail-sdk/sdk-github.md
+                - name: Opret en Visual Studio 2017-build-agent for at oprette Modern POS
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: Ofte stillede spørgsmål om Retail SDK
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: POS-udvidelse

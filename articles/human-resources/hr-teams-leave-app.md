@@ -2,7 +2,7 @@
 title: Administrere anmodninger i Teams
 description: I dette emne kan du se, hvordan du anmoder om fri i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771525"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924741"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Administrere fraværsanmodninger i Teams
 
@@ -35,6 +35,9 @@ Du kan finde appen Dynamics 365 Human Resources i lageret til Teams.
 1. Gå til listen over apps i Microsoft Teams.
  
 2. Søg efter Dynamics 365 Human Resources, og vælg derefter feltet **Human Resources**.
+
+> [!NOTE]
+> Fra og med 20. december 2021 vil de robottjenester for Human Resources-appen (version 1.1.4), der har Microsoft-lejeren som vært, blive taget ud af drift. Den seneste udvidelse (version af 1.1.5) er tilgængelig for installation. Du kan finde flere oplysninger i [Administrere fraværsanmodninger i Teams](hr-admin-teams-leave-app.md#update-app).
 
 3. Klik på knappen **Tilføj** for at installere appen.
 

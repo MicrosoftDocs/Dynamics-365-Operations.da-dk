@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ddfac7106eb0e8b934516ca10e3950891d10910a2ccdef1868faf25812243159
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e0475aab452daa9e1a6f012e17a59e611010da
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726555"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920467"
 ---
 # <a name="decimal-rounding-of-the-physical-updating-quantity-is-incorrect"></a>Decimalafrunding af det fysiske opdateringsantal er ikke korrekt
 
@@ -49,10 +49,10 @@ Brug følgende procedure til at gennemse lastlinjerne og foretage justeringer fo
 
 1. Gå til **Lokationsstyring \> Laster \> Alle laster**.
 1. Vælg den last, som følgesedlen ikke kan genereres for.
-1. Vælg  **Tilbagefør forsendelsesbekræftelse** i gruppen  **Tilbagefør** under fanen  **Levér og modtag** i handlingsruden.
-1. Vælg lastlinjen for den vare, der forårsager et problem, under fanen  **Lastlinjer**.
+1. Vælg **Tilbagefør forsendelsesbekræftelse** i gruppen **Tilbagefør** under fanen **Levér og modtag** i handlingsruden.
+1. Vælg lastlinjen for den vare, der forårsager et problem, under fanen **Lastlinjer**.
 1. Vælg **Reducer plukket antal** for at justere det plukkede antal.
-1. Vælg **Ordre** under fanen  **Linjedetaljer**.
+1. Vælg **Ordre** under fanen **Linjedetaljer**.
 1. Angiv feltet **Antal** til det plukkede antal (dvs. værdien for feltet **Antal oprettet under arbejde**), så du kan fortsætte med at generere følgesedlen.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Gennemse lastlinjerne, og foretag justeringer for at sikre, at enheden og antallet er tilpasset enhedens decimalpræcision

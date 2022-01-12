@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a11455c4e3f59ef52d9a1e3d2e6a10c57a070a79
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402219"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920417"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Undervisningskatalog til Dynamics 365 Supply Chain Management-administratorer
 
@@ -55,7 +55,7 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="migration-and-upgrade"></a>Overførsel og opgradering<a name="migration-and-upgrade"></a>
 
-| Indhold | Betegnelse  | Formater | Længde    |
+| Indhold | Beskrivelse  | Formater | Længde    |
 |---------|--------------|--------|-----------|
 | [Opgradere Dynamics AX 2012 til Finance and Operations-apps](/learn/paths/upgrade-ax-2012-finance-operations/) | Lær de vigtigste elementer og bedste fremgangsmåder at kende for en vellykket opgradering af Dynamics AX 2012-løsningen til Finance and Operations-apps. Fra de første trin med at finde vigtige forskelle i arkitekturen, komme i gang med opgraderingsprocessen og værktøjer til kode og dataopgradering, til de bedste metoder til at ændre integrationer, analyser og rapportering baseret på de seneste egenskaber. | Gratis onlinelæringssti i dit eget tempo | 7 timer |
 | [Finance and Operations: Opgradering fra 7.x til 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Deltag i vores næste tekniske samtale, hvor vi vil dække 7.X til 8.X-opgraderingsprocessen. Der beskrives forskellige scenarier og trin til udførelse af kodeopgradering og dataopgradering. Vi vil også omtale scenarier med udvidelsesanmodninger, og hvordan de skal indsendes, hvor det er relevant. | Gratis optagelse af en webkonference | 61 minutter |
@@ -66,13 +66,13 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="supply-chain-management"></a>Supply Chain Management<a name="scm"></a>
 
-| Indhold | Betegnelse | Formater | Længde |
+| Indhold | Beskrivelse | Formater | Length |
 |---------|-------------|--------|--------|
 | [Konfigurere styring af tekniske ændringer for Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Moderne producenter kræver omfattende administration af produktdata, versionsstyring og styring af tekniske ændringer for at opnå succes i en verden med konstant kortere produktlivscyklusser, højere kvalitets- og pålidelighedskrav og større fokus på produktsikkerhed. Lær, hvordan du konfigurerer styring af tekniske ændringer i dette læringsforløb. | Gratis onlinelæringssti i dit eget tempo | 4 timer |
 
 ## <a name="servicing"></a>Servicering<a name="servicing"></a>
 
-| Indhold  | Betegnelse   | Formater  | Længde    |
+| Indhold  | Beskrivelse   | Formater  | Længde    |
 |----------|---------------|---------|-----------|
 | [Finance and Operations: Funktionsstyring (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Teknisk samtale om funktionsstyringsoplevelsen. Den har et arbejdsområde, hvor du kan se, aktivere, deaktivere og planlægge funktioner, der er blevet leveret i hver version. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet til at aktivere dem og få vist dokumentationen til dem. Deltag i dette møde for at se, hvad der er leveret i 10.0.3, og vores planer for fremtidige versioner. | Gratis optagelse af en webkonference | 47 minutter |
 | [Finance and Operations: Servicering, support og vedligeholdelse af produktion (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tekniske oplysninger om, hvordan du effektivt understøtter, vedligeholder og servicerer Dynamics 365 for Finance and Operations-produktionsmiljøet. | Gratis optagelse af en webkonference | 53 minutter |

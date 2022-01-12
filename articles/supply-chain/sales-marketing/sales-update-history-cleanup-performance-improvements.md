@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2de9d6a7b1b7793b6bb753dd580d052d3c2841
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 610f0d4e0448dd21d10765400f25cd89e3c7a84b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891762"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920267"
 ---
-# <a name="saleshistorycleanupperformanceimprovements"></a>Forbedringer af ydeevnen for oprydning i salgshistorikken
+# <a name="sales-history-cleanup-performance-improvements"></a>Forbedringer af ydeevnen for oprydning i salgshistorikken
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -34,7 +34,7 @@ Funktionen forbedrer det eksisterende oprydningsjob på følgende måder:
 
 Når funktionen er aktiveret, køres **oprydningen af historikken for salgsopdatering** (**Salgs og marketing \> Periodiske opgaver \> Oprydning \> Oprydning af salgsopdateringhistorik**) som før, men med bedre ydeevne og højst 2 timer. Det betyder, at det kan være nødvendigt at køre flere gange for at rydde op i alle data for en bestemt tidsramme til tilbageholdelse.
 
-## <a name="turn-on-the-saleshistorycleanupperformanceimprovements-feature"></a>Aktivere funktionen til forbedring af ydeevnen i oprydningssalgshistorik
+## <a name="turn-on-the-sales-history-cleanup-performance-improvements-feature"></a>Aktivere funktionen til forbedring af ydeevnen for oprydning af salgshistorik
 
 Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 

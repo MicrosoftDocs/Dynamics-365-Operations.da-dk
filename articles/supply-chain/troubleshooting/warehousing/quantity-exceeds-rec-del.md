@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 25507a482b2db7c01f56679bf3e8454249de3a6b9965f9c359a2ebe2cc8445ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec5e0ac8dd097e5ebf016683fc5c17df7ecb2305
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711681"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920392"
 ---
 # <a name="quantity-that-youre-trying-to-update-exceeds-the-receiveddelivered-quantity"></a>Det antal, som du forsøger at opdatere, overskrider det antal, der er modtaget/leveret
 
@@ -62,8 +62,8 @@ Du kan bruge følgende procedure til at justere antallet for lastlinjen.
 
 1. Gå til **Lokationsstyring \> Laster \> Alle laster**.
 1. Vælg den last, som følgesedlen ikke kan genereres for.
-1. Vælg  **Tilbagefør forsendelsesbekræftelse** i gruppen  **Tilbagefør** under fanen  **Levér og modtag** i handlingsruden.
-1. Vælg lastlinjen for den vare, der forårsager et problem, under fanen  **Lastlinjer**.
+1. Vælg **Tilbagefør forsendelsesbekræftelse** i gruppen **Tilbagefør** under fanen **Levér og modtag** i handlingsruden.
+1. Vælg lastlinjen for den vare, der forårsager et problem, under fanen **Lastlinjer**.
 1. Vælg **Reducer plukket antal** for at justere det plukkede antal.
 1. Angiv feltet **Reducer lastlinje**, så det afspejler justeringer på lastlinjen.
 
@@ -75,5 +75,5 @@ Du kan bruge følgende procedure til at tilbageføre plukregistreringen.
 
 1. Gå til **Debitor \> Ordrer \> Alle ordrer**.
 1. Vælg den salgsordre, som du ikke kan bogføre en følgeseddel for lasten for.
-1. Vælg den salgsordrelinje, som plukregistrering er udført for, under fanen  **Salgsordrelinjer**.
+1. Vælg den salgsordrelinje, som plukregistrering er udført for, under fanen **Salgsordrelinjer**.
 1. Vælg **Opdater linje \> Pluk** for at fortryde pluk af varerne.

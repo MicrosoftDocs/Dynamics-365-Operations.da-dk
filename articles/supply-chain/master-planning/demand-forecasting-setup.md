@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3abe82bb888b7501b00af44b48bfb40fbe8e2ee3
-ms.sourcegitcommit: 6ef4906621fbb4e3afaf2b0d6697536288365bb1
+ms.openlocfilehash: 4f53171361b655ab4ae05894d098203df0af8d60
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7868631"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920767"
 ---
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
@@ -195,9 +195,6 @@ Du kan overskrive værdierne af disse parametre ved at gå til **Varedisponering
 ## <a name="set-up-the-azure-machine-learning-service"></a><a name="setup-amls"></a>Oprette forbindelse til Azure Machine Learning Service
 
 Supply Chain Management beregner behovsprognoser ved hjælp af Azure Machine Learning Service, som du skal oprette og køre på dit eget Azure-abonnement. I dette afsnit beskrives, hvordan du kan konfigurere Azure Machine Learning Service i Azure og derefter knytte den til dit Supply Chain Management-miljø.
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.23 GA -->
 
 ### <a name="enable-the-azure-machine-learning-service-in-feature-management"></a>Aktivere Azure Machine Learning Service i funktionsstyring
 

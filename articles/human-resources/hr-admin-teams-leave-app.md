@@ -2,7 +2,7 @@
 title: Appen Human Resources i Teams
 description: I dette emne introduceres Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 9274ab345616561deddd322ebad0d6e0b834d1d4
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913483"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924716"
 ---
 # <a name="human-resources-app-in-teams"></a>Appen Human Resources i Teams
 
@@ -41,6 +41,21 @@ Du kan finde appen Dynamics 365 Human Resources i lageret til Teams. Få flere o
 Få flere oplysninger om styring af app-tilladelser i Teams i [Styre app-tilladelsespolitikker i Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies).
 
 Hvis brugerne skal have vist orlovs- og fraværskalenderen i appen, skal du aktivere **Orlovs- og fraværskalenderen i Teams** i funktionsstyring. Du kan finde flere oplysninger om aktivering af funktioner i [Administrere funktioner](hr-admin-manage-features.md).
+
+## <a name="update-app"></a>Opdatere app
+>[!NOTE]
+> Fra og med 20. december 2021 vil de robottjenester for Human Resources-appen, der har Microsoft-lejeren som vært, blive taget ud af drift. Det påvirker ikke en opdateret udvidelse (version 1.1.5), der kan installeres. Den væsentligste effekt vil være på den forældede udvidelse (version 1.1.4). Chatrobotten i denne version holder op med at fungere. Fanen **Fridage** fortsætter med at fungere i begge udvidelser.
+
+I version 1.1.4 holder chatrobotten op med at svare på enhver meddelelse. For eksempel **Log på**, **Vis saldi** og **Se fridage**. Appen skal opdateres manuelt til den seneste version. Du kan finde flere oplysninger i [Opdatere apps i Microsoft Teams](/MicrosoftTeams/apps-update-experience).
+
+Udfør følgende trin for at opdatere til version 1.1.5:
+1. Gå i Microsoft Teams til **Apps**.
+2. Find appen **Human Resources**.
+3. Vælg **Opgrader**.
+
+Du kan kontrollere versionen af appen Human Resources ved enten at gå til fanen **Om** eller ved at gå til afsnittet **Personlig app**. 
+
+![Human Resources-fanen **Om**.](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Aktivere beskeder for appen Human Resources i Teams
 

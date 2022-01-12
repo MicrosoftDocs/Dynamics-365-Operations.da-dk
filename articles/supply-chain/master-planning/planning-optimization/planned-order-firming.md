@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778515"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920717"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -80,6 +80,9 @@ Hvis du vil autorisere ordreforslag manuelt, kan du finde og vælge de ordrefors
     - **Gruppér efter købsaftale** – Angiv denne indstilling til *Ja* for at gruppere indkøbsordreforslag, der har samme leverandør som eksisterende købsaftaler og oprette én indkøbsordre pr. købsaftale. Denne indstilling aktiveres automatisk, når **Gruppér efter leverandør** aktiveres. Hvis du vil bruge **Gruppér efter købsaftale**, skal **Søg efter købsaftaler** angives til *Ja* på siden **Varedisponeringsparametre**.
     - **Gruppér efter periode** (i sektionen **Indkøbsordrer**) – Vælg den periode, som indkøbsordreforslag skal grupperes efter. Hvis du vil bruge denne indstilling, skal du også vælge indstillingen **Gruppér efter leverandør**.
     - **Gruppér efter periode** (i sektionen **Overførsler**) – Vælg den periode, som overførselsordreforslag skal grupperes efter. Ordrerne grupperes ud fra værdierne for **Fra lagersted** og **Til lagersted**.
+
+    > [!NOTE]
+    > Hver af indstillingerne "Gruppér efter" bevirker, at systemet konverterer hvert ordreforslag til en linje i den enkelte indkøbsordre, der er resultatet af gruppering.
 
     ![Oversigtpanelet Parametre i dialogboksen Autorisation.](./media/manual-firming.png "Oversigtpanelet Parametre i dialogboksen Autorisation")
 

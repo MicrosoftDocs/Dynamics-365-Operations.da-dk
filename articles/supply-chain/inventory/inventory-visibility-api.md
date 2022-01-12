@@ -2,7 +2,7 @@
 title: Offentlige API'er for Lagersynlighed
 description: Dette emne beskriver de offentlige API'er, der leveres via Lagersynlighed.
 author: yufeihuang
-ms.date: 09/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678781"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920094"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API'er for Lagersynlighed
 
@@ -34,15 +34,15 @@ Den offentlige REST-API til tilføjelsesprogrammet Lagersynlighed viser flere sp
 
 I følgende tabel vises de API'er, der er tilgængelige i øjeblikket:
 
-| Sti | metode | Betegnelse |
+| Sti | metode | Beskrivelse |
 |---|---|---|
 | /api/environment/{environmentId}/onhand | Bogfør | [Oprette en ændringshændelse for disponibelt antal](#create-one-onhand-change-event) |
 | /api/environment/{environmentId}/onhand/bulk | Bogfør | [Oprette flere ændringshændelser](#create-multiple-onhand-change-events) |
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Bogfør | [Angive/tilsidesætte disponibelt antal](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Bogfør | [Oprette én reservationshændelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Bogfør | [Oprette flere reservationshændelser](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Hent | [Forespørgsel ved hjælp af opslagsmetoden](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Bogfør | [Forespørgsel ved hjælp af hentningsmetoden](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Bogfør | [Forespørgsel ved hjælp af opslagsmetoden](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Hent | [Forespørgsel ved hjælp af hentningsmetoden](#query-with-get-method) |
 
 Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
@@ -162,7 +162,7 @@ Der findes to API'er til oprettelse af ændringshændelser for disponibelt antal
 
 I følgende tabel opsummeres betydningen af hvert felt i JSON-brødteksten.
 
-| Felt-id | Betegnelse |
+| Felt-id | Beskrivelse |
 |---|---|
 | `id` | Et entydigt id for den specifikke ændringshændelse. Dette id bruges til at sikre, at hvis kommunikationen med tjenesten mislykkes under bogføringen, vil hændelsen ikke blive talt med to gange i systemet, hvis den sendes igen. |
 | `organizationId` | Identifikatoren for den organisation, der er knyttet til hændelsen. Denne værdi er tilknyttet et organisations-id eller et dataområde-id i Supply Chain Management. |
@@ -476,7 +476,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Forespørg om disponibelt antal
 
-API'en for _Forespørg om disponibelt antal_ bruges til at hente aktuelle data om disponibelt antal for dine produkter.
+Brug API'en _Forespørg om disponibelt antal_ til at hente aktuelle data om disponibelt antal for dine produkter. API'en understøtter i øjeblikket forespørgsler på op til 100 individuelle varer efter `ProductID`-værdi. Der kan også angives flere `SiteID`- og `LocationID`-værdier i hver forespørgsel. Maksimumgrænsen er defineret som `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Forespørgsel ved hjælp af opslagsmetoden
 
@@ -551,7 +551,7 @@ I følgende eksempler vises, hvordan du forespørger på alle produkter på en b
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -568,7 +568,7 @@ Query(Url Parameters):
 Her er et eksempel på en URL-adresse for hentningsmetoden. Denne anmodning er nøjagtigt den samme som det opslagseksempel, som blev angivet tidligere.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Likviditet
 description: Dette emne beskriver, hvordan funktionen likviditetsbudgettering forudsiger en organisations kontante stilling for bestemte tidspunkter. Den beskriver også de indstillinger, der er tilgængelige for visning af budgetter i forskellige perioder.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752874"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945783"
 ---
 # <a name="cash-position"></a>Likviditet
 
@@ -45,5 +45,17 @@ Den nederste del af fanen **Likviditet** indeholder oplysninger om stilling, pen
 - **Bankkonto**-gitteret viser effekten af forventede kontantindstrømning og -udstrømering på banksaldoen.
 
 Hvis du vil gemme og redigere likviditeten, skal du oprette et snapshot. Du kan finde flere oplysninger om, hvordan du arbejder med snapshots, under [Snapshots, oversigt](payment-snapshots.md).
+
+## <a name="details-of-the-cash-position-capability"></a>Oplysninger om muligheden for likviditet 
+
+Funktionen til likviditet indeholder følgende funktioner. 
+
+- Funktionen til likviditet viser pengestrømmen baseret på eksisterende dokumenter i systemet og indgående og udgående likviditetslinjer, der er importeret fra eksterne systemer.
+- Gør det nemt at integrere pengestrømsdata fra eksterne systemer med Dynamics 365 Finance. Likviditet kan også bruge dataimport-eksportstrukturen. Denne struktur gør det nemt at integrere med Excel OData. Du kan også kombinere data fra flere kilder for at oprette en omfattende likviditetsløsning.
+- Introducerer intelligent kasseposition. Der oprettes en likviditet på baggrund af kundens betalingsmåde for at forudsige, hvornår et firma kan forvente at betale kontanter i deres konti.
+- For debitorordrer og -fakturaer bruges AI-forudsigelsesfunktionaliteten for debitorbetaling til at bestemme den historiske debitorbetalingsadfærd, når en ordre eller faktura betales.
+- I forbindelse med kreditorordrer og -fakturaer bruger vi den gennemsnitlige tid mellem afsendelse og faktura og betaling af en faktura pr. kreditor til at bestemme, hvornår en kreditorordre eller -faktura vil blive betalt, hvilket gør udgående likviditet mere nøjagtig.
+
+Det giver et mere præcist overblik over likviditet baseret på kassererens historiske betalingsadfærd. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

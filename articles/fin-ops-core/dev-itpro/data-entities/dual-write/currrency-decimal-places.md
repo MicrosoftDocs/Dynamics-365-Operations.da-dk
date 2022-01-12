@@ -2,19 +2,19 @@
 title: Migrering af valutadatatype til dobbeltskrivning
 description: Dette emne indeholder en beskrivelse af, hvordan du kan ændre det antal decimaler, som dobbeltskrivning understøtter for valuta.
 author: RamaKrishnamoorthy
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: eaf0cd931e763f31faa334d5353ae6950ed7ee4f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
+ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782801"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7917724"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering af valutadatatype til dobbeltskrivning
 
@@ -83,9 +83,20 @@ Hvis du kræver, at valutapræcisionen for en bestemt valuta er forskellig fra d
 
 ![Valutaindstillinger for en bestemt landestandard.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>tabeller: valutakolonne
+### <a name="tables-currency-column"></a>Tabeller: valutakolonne
 
 Det antal decimaler, der kan konfigureres for bestemte valutakolonner, er begrænset til fire.
 
+### <a name="default-currency-decimal-precision"></a>Decimalpræcision i standardvaluta
+Se følgende tabel for den forventede funktionsmåde af standardvalutaens decimalpræcision i overflytnings- og ikke-overflytningsscenarier. 
+
+| Oprettelsesdato  | Feltet valutadecimal    | Eksisterende organisation (feltet Valuta er ikke overflyttet) | Eksisterende organisation (feltet Valuta er overflyttet) | Ny organisation oprettet efter build 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Valutafelt oprettet før build 9.2.21111.00146  |     |  |       |
+|    | Maksimal præcision synlig i brugergrænsefladen   | Fire cifre    | Ti cifre    | I/T    |
+| | Maksimal præcision synlig i brugergrænsefladen til database og databaseforespørgsler         | Fire cifre   | Ti cifre   | I/T    |
+| Valutafelt oprettet før efter 9.2.21111.00146 |    |  |     |   |
+|   | Maksimal decimalpræcision synlig i brugergrænsefladen     | Fire cifre   | Ti cifre   | Ti cifre     |
+|          | Maksimal decimalpræcision synlig i brugergrænsefladen til database og databaseforespørgsler | Ti cifre. Men det er kun fire, der er betydende med alle nuller ud over de fire decimaler. Dette giver en simplere og hurtigere overflytning af organisationen, hvis det er nødvendigt. | Ti cifre      | Ti cifre     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

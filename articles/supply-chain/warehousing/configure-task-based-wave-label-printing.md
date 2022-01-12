@@ -1,22 +1,22 @@
 ---
 title: Planlægge bølgeetiketudskrivning under bølgen
 description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere og bruge funktionerne til opgavebaseret bølgeetiketudskrivning.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777859"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920143"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planlægge bølgeetiketudskrivning under bølgen
 
@@ -40,7 +40,7 @@ Hvis du vil bruge de funktioner, der er beskrevet i dette emne, skal de være ak
 
 Du skal først oprette den nye metode til bølgetrin og aktivere den til parallel asynkron opgavebehandling.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeprocesmetoder**.
 1. Vælg **Genopret metode** i handlingsruden. Bemærk, at *waveLabelPrinting* føjes til listen over metoder til behandling af bølger, som du kan bruge i dine forsendelsesbølgeskabeloner.
 1. Vælg den post, hvor feltet **Metodenavn** er angivet til *waveLabelPrinting*, og vælg derefter **Opgavekonfiguration** i handlingsruden.
 1. Gå til handlingsruden, og vælg **Ny** for at føje en række til gitteret. Angiv følgende felter til den nye række:
@@ -51,7 +51,7 @@ Du skal først oprette den nye metode til bølgetrin og aktivere den til paralle
 
 Du kan nu opdatere en eksisterende bølgeskabelon, så den bruger metoden *Bølgeetiketudskrivning* til behandling af bølger. Du kan også oprette en ny bølgeskabelon, der bruger den.
 
-1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**.
+1. Gå til **Warehouse Management \> Konfiguration \> Bølger \> Bølgeskabeloner**.
 1. Vælg **Rediger** i handlingsruden.
 1. Vælg den bølgeskabelon, der skal opdateres, i listeruden. (Hvis du bruger demodata til testformål, kan du vælge *24 Standard for forsendelse*).
 1. Gå til oversigtspanelet **Metoder** i kolonnen **Resterende metoder**, og vælg den række, hvor feltet **Navn** er angivet til *waveLabelPrinting*.
