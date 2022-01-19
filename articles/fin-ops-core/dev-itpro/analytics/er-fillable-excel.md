@@ -2,7 +2,7 @@
 title: Designe en konfiguration til at generere dokumenter i Excel-format
 description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
-ms.date: 12/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943606"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952646"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -379,7 +379,7 @@ Hvis en af skabelonerne indeholder en pivottabel, der er baseret på en PowerPiv
     2. Brug ER til at generere en anden Excel-projektmappe (projektmappe B) fra Finans, der indeholder de nødvendige oplysninger. 
     3. Referer til projektmappe B i projektmappe A, så snart projektmappe B er genereret.
 
-- Brug en anden mulighed end EPPlus til at deaktivere funktionen. 
+- Deaktiver funktionen **Aktivér brug af EPPlus-bibliotek i Elektronisk rapporteringsstruktur** for at bruge en anden indstilling end EPPlus. 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

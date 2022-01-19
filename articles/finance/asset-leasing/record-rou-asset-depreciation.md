@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345364"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947309"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Registrere afskrivning af brugsretsaktiver (prøveversion)
 
@@ -35,7 +35,7 @@ For rettigheder, der anerkendes i en organisationsbalance, amortiseres ROU-aktiv
 1. Vælg en leasingaftale på siden **Leasingoversigt**. Vælg derefter **Kartotek \> planlægning af afskrivningsplan** for at åbne siden **Aktivafskrivningsplan**.
 
     Kladdeposten til ROU for aktivafskrivning er baseret på beløbet i kolonnen **Afskrivningsudgifter**. Du kan se et eksempel på retningslinjerne for kontering af standardoverholdelse under [Beregning af ROU for afskrivning af aktiver for finansieringsleasingaftaler](#calculation-of-rou-asset-amortization-expense-for-finance-leases) senere i dette emne.
-
+    
 2. Vælg afskrivningsperioden, og vælg derefter **Opret kladde**. Du får vist en meddelelse, hvor det angives, at den kladde, der skal bruges til registrering af afskrivningen, blev oprettet.
 3. Vælg **Kladder \> Aktivleasingkladder** for at åbne siden **Aktivleasingkladde**, hvor du kan få vist den kladdepost for afskrivning, der er oprettet.
 
@@ -70,6 +70,8 @@ Som tidligere nævnt beregnes lineære leasingomkostninger som summen af alle le
 
 > [!NOTE]
 > Ifølge ASC 842 klassificeres afskrivningen af ROU-aktivet for en driftsleasingaftale som en leasingomkostning på resultatopgørelsen. For synlighed beskriver aktivleasing posten som afskrivningen af ROU-aktivet. Debetposten skal dog tildeles en konto til driftsleasing, og kreditposten skal tildeles direkte til ROU-aktivet for driftsleasing. Men i leasingparametrene kan du angive, at kreditposter skal oprettes til en akkumuleret afskrivningskonto for drifts ROU-aktiver.
+
+Hvis leasingen er klassificeret som en operationel leasing, beregnes den månedlige afskrivning efter værdiforringelse med en lineær afskrivning.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>Beregning af ROU-aktiver for finansiel leasing
 

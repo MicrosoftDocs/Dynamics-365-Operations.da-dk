@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581859"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952490"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Installere og konfigurere lagersynlighed
 
@@ -71,6 +71,9 @@ Når du har registreret et program og føjet en klienthemmelighed til Azure AD, 
 1. Acceptér vilkårene og betingelserne ved at markere afkrydsningsfeltet **Vilkår og betingelser**.
 1. Vælg **Installer**. Status for tilføjelsesprogrammet vises som **Installerer**. Når installationen er fuldført, skal du opdatere siden. Status bør ændre sig til **Installeret**.
 1. Vælg i Dataverse afsnittet **Apps** i venstre navigation, og kontroller, at **lagersynlighed** Power Apps er installeret korrekt. Hvis sektionen **Apps** ikke eksisterer, skal du kontakte produktteamet for Lagersynlighed på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+
+> [!TIP]
+> Det anbefales, at du deltager i brugergruppen Tilføjelsesprogrammet Lagersynlighed, hvor du kan finde nyttige vejledninger, hente de seneste opdateringer og indsende eventuelle spørgsmål, du måtte have om brug af lagersynlighed. Hvis du vil deltage, skal du sende en mail til produktteamet for lagersynlighed på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) og medtage dit Supply Chain Management-miljø-id.
 
 > [!IMPORTANT]
 > Hvis du har mere end ét LCS-miljø, skal du oprette et andet Azure AD-program til hvert miljø. Hvis du bruger samme program-id og lejer-id til at installere tilføjelsesprogrammet Lagersynlighed i forskellige miljøer, vil der forekomme et tokenproblem for ældre miljøer. Det er kun den sidste, der er installeret, der er gældende.

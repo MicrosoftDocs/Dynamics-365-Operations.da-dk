@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e9dc692061cec830f487e01a79075eda835bac23
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937654"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952592"
 ---
 # <a name="engineering-change-management-overview"></a>Oversigt over teknisk ændringsstyring
 
@@ -71,6 +71,7 @@ Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin.
 
 1. Hvis du også vil bruge versionsdimensionen, skal du markere afkrydsningsfeltet **Produktdimension – Version**. (Dette afkrydsningsfelt er placeret længere nede på listen og er ikke indlejret under noden **Styring af tekniske ændringer**).
 1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Kør en databasesynkronisering for at sikre, at konfigurationsnøglerne er aktiveret korrekt.
 
 > [!IMPORTANT]
 > Fra april 2022 vil licensnøglerne til både **Styring af tekniske ændringer** og **Produktdimension – Version** som standard være aktiveret for alle nye installationer, men du vil stadig kunne deaktivere dem, hvis det er nødvendigt.

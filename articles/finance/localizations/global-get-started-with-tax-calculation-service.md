@@ -2,7 +2,7 @@
 title: Start her med momsberegning
 description: Dette emne beskriver, hvordan du konfigurerer momsberegning.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,74 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647428"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952515"
 ---
 # <a name="get-started-with-tax-calculation"></a>Start her med momsberegning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om, hvordan du kommer i gang med momsberegning. Det fører dig gennem konfigurationstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) og Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Derefter gennemgås den almindelige proces for brug af momsberegning i Finance- og Supply Chain Management-transaktioner.
+Dette emne indeholder oplysninger om, hvordan du kommer i gang med momsberegning. Sektionerne i dette emne fører dig gennem de overordnede design- og konfigurationstrin i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
 
-Opsætningen består af fire hovedtrin:
+Opsætningen består af tre hovedtrin.
 
 1. Installer tilføjelsesprogrammet Momsberegning i LCS.
 2. Konfigurer momsberegningsfunktionen i RCS. Denne opsætning er ikke specifik for de enkelte juridiske enheder. Den kan deles på tværs af juridiske enheder i Finance og Supply Chain Management.
 3. I Finance og Supply Chain Management skal du konfigurere parametre for momsberegning efter juridisk enhed.
-4. I Finance og Supply Chain Management skal du oprette posteringer som f.eks. salgsordrer og bruge momsberegning til at fastlægge og beregne moms.
+
+## <a name="high-level-design"></a>Overordnet design
+
+### <a name="runtime-design"></a>Kørselsdesign
+
+I følgende illustration vises det overordnede kørselsdesign af momsberegning. Da momsberegning kan integreres med flere Dynamics 365-apps, bruger illustrationen integrationen med Finance som et eksempel.
+
+1. Der oprettes en transaktion i Finance, f.eks. en salgsordre eller indkøbsordre.
+2. Finance anvender automatisk standardværdierne i momsgruppen og varemomsgruppen.
+3. Når knappen **Moms** vælges i transaktionen, udløses momsberegningen. Finance sender derefter nyttedataene til tjenesten Momsberegning.
+4. Tjenesten Momsberegning matcher nyttedataene med foruddefinerede regler i momsfunktionen for at finde en mere præcis momsgruppe og varemomsgruppe på samme tid.
+
+    - Hvis nyttelasten kan matches med matrixen **Anvendelse af momsgruppe**, tilsidesætter den momsgruppeværdien med værdien for matchet momsgruppe i anvendelighedsreglen. Ellers fortsætter den med at bruge momsgruppeværdien fra Finance.
+    - Hvis nyttelasten kan matches med matrixen **Anvendelse af varemomsgruppe**, tilsidesætter den varemomsgruppeværdien med værdien for matchet varemomsgruppe i anvendelighedsreglen. Ellers fortsætter den med at bruge varemomsgruppeværdien fra Finance.
+
+5. Tjenesten Momsberegning fastlægger de endelige momskoder ved at bruge skæringspunktet for momsgruppen og varemomsgruppen.
+6. Tjenesten Momsberegning beregner moms på basis af de endelige momskoder, som den har fastlagt.
+7. Tjenesten Momsberegning returnerer momsberegningsresultatet til Finance.
+
+![Design til kørsel af momsberegning.](media/tax-calculation-runtime-logic.png)
+
+### <a name="high-level-configuration"></a>Overordnet konfiguration
+
+Følgende trin giver en overordnet oversigt over konfigurationsprocessen for momsberegningstjenesten.
+
+1. Installer tilføjelsesprogrammet **Momsberegning** i dit LCS-projekt.
+2. Opret funktionen **Momsberegning** i RCS.
+3. Konfigurer funktionen **Momsberegning** i RCS:
+
+    1. Vælg momskonfigurationsversionen.
+    2. Opret momskoder.
+    3. Opret en momsgruppe.
+    4. Opret en varemomsgruppe.
+    5. Valgfrit: Opret anvendelse af momsgruppe, hvis du vil tilsidesætte den standardmomsgruppe, der angives fra masterdata for debitorer eller kreditorer.
+    6. Valgfrit: Opret anvendelse af varemomsgruppe, hvis du vil tilsidesætte den standardvaremomsgruppe, der angives fra varemasterdata.
+
+4. Fuldfør og publicer funktionen **Momsberegning** i RCS.
+5. Vælg den publicerede **Momsberegning**-funktion i Finance.
+
+Når du har fuldført disse trin, synkroniseres følgende konfigurationer automatisk fra RCS til Finance.
+
+- Momskoder
+- Momsgrupper
+- Varemomsgrupper
+
+De resterende afsnit i dette emne indeholder flere detaljerede konfigurationstrin.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du kan fuldføre procedurerne i dette emne, skal du kontrollere, at forudsætningerne for hver miljøtype er opfyldt.
-
-Følgende forudsætninger skal være opfyldt:
+Før du kan fuldføre trinnene de resterende procedurer i dette emne, skal følgende forudsætninger være opfyldt:<!--TO HERE-->
 
 - Du skal have adgang til din LCS-konto, og du skal have et aktivt LCS-projekt med et niveau 2-miljø eller derover, som kører Dynamics 365 version 10.0.21 eller senere.
 - Du skal oprette et RCS-miljø for din organisation, og du skal have adgang til din konto. Du kan finde flere oplysninger om, hvordan du opretter et RCS-miljø, i [Oversigt over Regulatory Configuration Service](rcs-overview.md).
@@ -72,15 +115,7 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
 5. I feltet **Type** skal du vælge **Global**.
 6. Vælg **Åbn**.
 7. Gå til **Datamodel for moms**, udvid filtræet, og vælg derefter **Momskonfiguration**.
-8. Vælg den korrekte momskonfigurationsversion på baggrund af din Finance-version, og vælg derefter **Importér**.
-
-    | Release-version | Momskonfiguration                       |
-    | --------------- | --------------------------------------- |
-    | 10.0.18         | Momskonfiguration – Europe 30.12.82     |
-    | 10.0.19         | Konfiguration af momsberegning 36.38.193 |
-    | 10.0.20         | Konfiguration af momsberegning 40.43.208 |
-    | 10.0.21         | Konfiguration af momsberegning 40.48.215 |
-
+8. Vælg den korrekte [momskonfigurationsversion](global-tax-calcuation-service-overview.md#versions) på baggrund af din Finance-version, og vælg derefter **Importér**.
 9. I arbejdsområdet **Globaliseringsfunktioner** skal du vælge **Funktioner**, markere feltet **Momsberegning** og derefter vælge **Tilføj**.
 10. Vælg en af følgende funktionstyper:
 
@@ -209,42 +244,3 @@ Opsætningen i dette afsnit udføres efter juridisk enhed. Du skal konfigurere d
 
 5. Under fanen **Flere momsregistreringer** kan du aktivere momsopgørelse, EU-listesystem og Intrastat separat for at arbejde med et scenarie med flere momsregistreringer. Du kan finde flere oplysninger om momsrapportering for flere momsregistreringer i [Rapportering for flere momsregistreringer](emea-reporting-for-multiple-vat-registrations.md).
 6. Gem opsætningen, og gentag de forrige trin for hver ekstra juridisk enhed. Når en ny version udgives, og du vil anvende den, skal du angive feltet **Funktionsopsætning** under fanen **Generelt** på siden **Parametre for momsberegning** (se trin 2).
-
-## <a name="transaction-processing"></a>Behandle transaktioner
-
-Når du har fuldført alle opsætningsprocedurer, kan du bruge Momsberegning til at fastlægge og beregne moms i Finance. De trin, der skal til for at behandle transaktioner, forbliver de samme. Følgende transaktioner understøttes i Finance version 10.0.21:
-
-- Salgsproces
-
-    - Salgstilbud
-    - Salgsordre
-    - Bekræftelse
-    - Plukliste
-    - Følgeseddel
-    - Salgsfaktura
-    - Kreditnota
-    - Returordre
-    - Gebyr i overskrift
-    - Linjegebyr
-
-- Indkøbsproces
-
-    - Indkøbsordre
-    - Bekræftelse
-    - Tilgangsliste
-    - Produktkvittering
-    - Indkøbsfaktura
-    - Gebyr i overskrift
-    - Linjegebyr
-    - Kreditnota
-    - Returordre
-    - Indkøbsrekvisition
-    - Gebyrer til indkøbsrekvisitionslinje
-    - Tilbudsanmodning
-    - Gebyrer i overskrift til tilbudsanmodning
-    - Gebyrer på linje til tilbudsanmodning
-
-- Lagerproces
-
-    - Flytteordre – send
-    - Flytteordre – modtag

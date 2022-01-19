@@ -2,7 +2,7 @@
 title: Konfigurere en B2C-lejer i Commerce
 description: I dette emne beskrives, hvordan du konfigurerer dine Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) til godkendelse af brugerwebsteder i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/31/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466262"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952438"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -58,7 +58,9 @@ Før du går i gang, skal du sikre dig, at dit Dynamics 365 Commerce-miljø og d
 
 Når du har implementeret Dynamics 365 Commerce-miljøet, anbefales det også [at initialisere basisdata](enable-configure-retail-functionality.md) i miljøet.
 
-## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Oprette eller sammenkæde med en eksisterende AAD B2C-lejer i Azure-portalen
+## <a name="create-or-link-to-an-existing-azure-ad-b2c-tenant-in-the-azure-portal"></a>Oprette eller sammenkæde med en eksisterende Azure AD B2C-lejer i Azure-portalen
+
+Dette afsnit omhandler oprettelse eller sammenkædning af en Azure AD B2C-lejer til brug på dit Commerce-websted. Du kan finde flere oplysninger i [Selvstudium: Oprette en Azure Active Directory B2C-lejer](/azure/active-directory-b2c/tutorial-create-tenant).
 
 1. Log på [Azure-portalen](https://portal.azure.com/).
 1. Vælg **Opret en ressource** i Azure-portalmenuen. Sørg for at bruge det abonnement og den mappe, der er forbundet med dit Commerce-miljø.
@@ -68,7 +70,7 @@ Når du har implementeret Dynamics 365 Commerce-miljøet, anbefales det også [a
 1. Gå til **Identitet \> Azure Active Directory B2C**.
 1. Når du er på siden **Opret ny B2C lejer eller Opret et link til en eksisterende lejer**, skal du bruge en af de muligheder nedenfor, der bedst passer til firmaets behov:
 
-    - **Opret en ny Azure AD B2C-lejer**: Brug denne indstilling til at oprette en ny AAD B2C-lejer.
+    - **Opret en ny Azure AD B2C-lejer**: Brug denne indstilling til at oprette en ny Azure AD B2C-lejer.
         1. Vælg **Opret en ny Azure AD B2C-lejer**.
         1. Angiv organisationsnavnet under **Organisationsnavn**.
         1. Angiv det oprindelige domænenavn under **Oprindeligt domænenavn**.
@@ -86,7 +88,7 @@ Når du har implementeret Dynamics 365 Commerce-miljøet, anbefales det også [a
 
 1. Når den nye Azure AD B2C-mappe er oprettet (det kan tage et øjeblik), vises der et link til den nye mappe på dashboardet. Dette link vil føre dig til siden "Velkommen til Azure Active Directory B2C".
 
-    ![Link til ny AAD-mappe.](./media/B2CImage_4.png)
+    ![Sammenkæde med ny Azure AD-mappe](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Hvis du har flere abonnementer til din Azure-konto eller har konfigureret B2C-lejeren uden at oprette forbindelse til et aktivt abonnement, kan du bruge banneret **Fejlfinding** til at knytte lejeren til et abonnement. Vælg fejlfindingsmeddelelsen, og følg instruktionerne for at løse abonnementsproblemet.
@@ -104,11 +106,11 @@ Hvis du vil oprette B2C-programmet, skal du følge disse trin.
 1. I Azure-portalen skal du vælge **App-registreringer** og derefter vælge **Ny registrering**.
 1. Under **Navn** skal du angive navnet for dette Azure AD B2C-program.
 1. Under **Understøttede kontotyper** skal du vælge **Konti i enhver id-udbyder eller organisationsmappe (for godkendelse af brugere med brugerflow)**.
-1. For **Omdirigerings-URI** skal du angive dine dedikerede URL-adresser som **Web**-type. Se [Svar-URL-adresser](#reply-urls) nedenfor for at få oplysninger om svar-URL-adresser, og hvordan du formaterer dem.
+1. For **Omdirigerings-URI** skal du angive dine dedikerede URL-adresser som **Web**-type. Se [Svar-URL-adresser](#reply-urls) nedenfor for at få oplysninger om svar-URL-adresser, og hvordan du formaterer dem. Der skal angives en URL-adresse for omdirigeret URI/svar for at aktivere omdirigering fra Azure AD B2C tilbage til dit websted, når en bruger godkendes. URL-adressen til svaret kan tilføjes under registreringsprocessen, eller den kan tilføjes senere ved at vælge linket **Tilføj et link til en omdirigeret URI** fra menuen **Oversigt** i afsnittet **Oversigt** i B2C-programmet.
 1. For **Tilladelser** skal du vælge **Giv administratortilladelser til OpenID og offline_access**.
 1. Vælg **Registrer**.
-1. Vælg det program, der lige er oprettet, og gå til menuen **Godkendelse**. Her kan du tilføje flere **Omdirigerings-URI'er**, hvis det er nødvendigt (nu eller senere). Fortsæt til næste trin, hvis der ikke er brug for det i øjeblikket.
-1. Under **Implicit tilladelse** skal du vælge både **Adgangstoken** og **ID-token** for at aktivere dem for programmet. Vælg **Gem**.
+1. Vælg det program, der lige er oprettet, og gå til menuen **API-tilladelser**. 
+1. Hvis der angives en URL-adresse for svaret, skal du vælge både indstillingen **Adgangstokens** og **Id-tokens** under **Implicit tilladelse og hybridflow** for at aktivere dem til programmet, og vælg derefter **Gem**. Hvis en URL-adresse til svaret ikke er angivet under registreringen, kan den også tilføjes på denne side ved at vælge **Tilføj en platform**, vælge **Web** og derefter angive omdirigerings-URI for programmet. Afsnittet **Implicit tilladelse og hybridflow** vil derefter være tilgængeligt, så der kan vælges både indstillingen **Adgangstokens** og **Id-tokens**.
 1. Gå til menuen **Oversigt** på Azure-portalen, og kopiér **Program-id (klient)**. Notér dig dette id til senere opsætningstrin (der senere refereres til som **Klient-GUID**).
 
 Du kan finde yderligere oplysninger om appregistreringer i Azure AD B2C i [Den nye erfaring med appregistreringer for Azure Active Directory B2C](/azure/active-directory-b2c/app-registrations-training-guide)
@@ -131,7 +133,7 @@ Azure AD B2C omfatter tre grundlæggende brugerstrømtyper:
 - Profilredigering
 - Adgangskoden er nulstillet
 
-Du kan vælge at bruge de standardbrugerstrømme, der leveres af Azure AD, og som viser en side, der er placeret på Aad B2C. Du kan også oprette en HTML-side for at styre udseendet af disse brugerstrømoplevelser. 
+Du kan vælge at bruge de standardbrugerstrømme, der leveres af Azure AD, og som viser en side, der har Azure AD B2C som vært. Du kan også oprette en HTML-side for at styre udseendet af disse brugerstrømoplevelser. 
 
 Hvis du vil tilpasse brugerpolitiksiderne med indbyggede sider i Dynamics 365 Commerce, skal du se [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md). Du kan finde flere oplysninger under [Tilpasse grænsefladen af brugeroplevelser i Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
@@ -143,9 +145,9 @@ Gør følgende for at konfigurere en tilmeldings- og login-politik.
 1. Vælg **Ny brugerstrøm** på siden **Azure AD B2C – Brugerstrømme (politikker)**.
 1. Vælg politikken **Tilmelding og logon**, og vælg derefter versionen **Anbefalet**.
 1. Angiv et politiknavn under **Navn**. Dette navn vises bagefter med et præfiks, som portalen tildeler (f.eks. "B2C_1_").
-1. Marker det relevante afkrydsningsfelt under **Identitetsudbydere**.
+1. Under **Identitetsudbydere** skal du vælge **Mailtilmelding** i sektionen **Lokale konti**. Mailgodkendelse bruges i de mest almindelige scenarier for Commerce. Hvis du også bruger godkendelse af social identitetsudbyder, kan disse også vælges på dette tidspunkt.
 1. Vælg det relevante valg for dit firma under **Godkendelse af flere oplysninger**. 
-1. Vælg indstillinger til at indsamle attributter eller returnere krav efter behov under **Brugerattributter og -krav**. Commerce kræver følgende standardindstillinger:
+1. Vælg indstillinger til at indsamle attributter eller returnere krav efter behov under **Brugerattributter og -krav**. Vælg **Vis mere...** for at få den fulde liste over attributter og kravindstillinger. Commerce kræver følgende standardindstillinger:
 
     | **Indsaml attribut** | **Returkrav** |
     | ---------------------- | ----------------- |
@@ -161,9 +163,6 @@ Følgende billede er et eksempel på brugerstrømmen i Azure AD B2C-tilmelding o
 
 ![Politikindstillinger for tilmelding og login.](./media/B2CImage_11.png)
 
-I følgende billede vises indstillingen **Kør brugerstrøm** i brugerstrømmen Azure AD B2C-tilmelding og -login.
-
-![Kør indstillingen for brugerflow i politikflow.](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Oprette en brugerstrømpolitik til profilredigering
 
@@ -173,18 +172,22 @@ Gør følgende for at oprette en brugerstrømpolitik til profilredigering.
 1. Vælg **Ny brugerstrøm** på siden **Azure AD B2C – Brugerstrømme (politikker)**.
 1. Vælg **Profilredigering**, og vælg derefter versionen **Anbefalet**.
 1. Angiv brugerstrømmen til profilredigeringen under **Navn**. Dette navn vises bagefter med et præfiks, som portalen tildeler (f.eks. "B2C_1_").
-1. Vælg **E-mailtilmelding** under **Identitetsudbydere**.
+1. Under **Identitetsudbydere** skal du vælge **Mailtilmelding** i sektionen **Lokale konti**.
 1. Vælg følgende afkrydsningsfelter under **Brugerattributter**:
-    - **Mailadresser** (kun **Returkrav**)
-    - **Givent navn** (**Indsaml attribut** og **Returneringskrav**)
-    - **Identitetsudbyder** (kun **Returnkrav**)
-    - **Efternavn** (**Indsaml attribut** og **Returneringskrav**)
-    - **Brugerens objekt-id** (kun **Returkrav**)
+    
+    | **Indsaml attribut** | **Returkrav** |
+    | ---------------------- | ----------------- |
+    |                        | Mailadresser   |
+    | Givent navn             | Givent navn        |
+    |                        | Identitetsudbyder |
+    | Efternavn                | Efternavn           |
+    |                        | Brugerens objekt-id  |
+    
 1. Vælg **Opret**.
 
 I følgende billede vises et eksempel på brugerstrøm til Azure AD B2C profilredigering.
 
-![Opret brugerflowpolitikken til profilredigering.](./media/B2CImage_12.png)
+![Eksempel på brugerflow til Azure AD B2C-profilredigering](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Opret en brugerstrømpolitik til nulstilling af adgangskode
 
@@ -324,11 +327,11 @@ I følgende billede vises et eksempel på brugerstrømpolitikker på siden **Azu
 
 ![Indsaml navnene på de enkelte B2C-politikflow.](./media/B2CImage_22.png)
 
-### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>Angiv programoplysninger om din AAD B2C-lejer i Commerce
+### <a name="enter-your-azure-ad-b2c-tenant-application-information-into-commerce"></a>Angiv programoplysninger om din Azure AD B2C-lejer i Commerce
 
 Du skal angive oplysninger om Azure AD B2C-lejeren i Commerce-webstedsgenerator, før du knytter B2C-lejeren til dit eller dine websteder.
 
-Udfør følgende trin for at føje AAD B2C-lejerens programoplysninger til Commerce.
+Udfør følgende trin for at føje Azure AD B2C-lejerens programoplysninger til Commerce.
 
 1. Log på som administrator af Commerce-webstedsgenerator for dit miljø.
 1. Vælg **Lejerindstillinger** i venstre navigationsrude for at udvide den.

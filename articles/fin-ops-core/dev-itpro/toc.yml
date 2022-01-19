@@ -512,6 +512,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Oprette en LCS-forbindelse (Lifecycle Services) i Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Opdater LCS-forbindelsesgodkendelsesopgaver til MSAL i Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection-update.md
                 - name: 'Opdatere Azure Pipeline, der er tilknyttet nye NuGet-pakker'
                   href: dev-tools/pipeline-nuget-split.md
                 - name: Opdatere en ældre pipeline i Azure Pipelines
@@ -1480,10 +1482,12 @@
               href: perf-test/rsat/rsat-tutorial.md
             - name: 'Konfigurere brugere, der ikke er administratorer'
               href: perf-test/rsat/rsat-configure-nonadmin.md
-            - name: Bedste praksis
+            - name: Bedste fremgangsmåder
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostisk testning ved hjælp af Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: Kør Regression Suite Automation Tool (RSAT) med parallel afvikling
+              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Fejlfinding
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Frigive løsninger ved hjælp af Lifecycle Services

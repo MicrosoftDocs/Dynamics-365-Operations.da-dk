@@ -1048,7 +1048,7 @@
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: Masseafslutning af regnskabsperiode
                   href: general-ledger/tasks/mass-financial-period-close.md
-                - name: Ofte spurgte spørgsmål i forbindelse med aktiviteter i årets afslutning
+                - name: Ofte spurgte spørgsmål i forbindelse med aktiviteter i årsafslutningen
                   href: general-ledger/faq-year-end-activities.md
             - name: Moms
               items:
@@ -1212,6 +1212,8 @@
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Aktivere likviditetsbudget
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Eksterne data i likviditetsbudgetter
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Aktivere budgetforslag
                   href: finance-insights/enable-budget-proposal.md
                 - name: Oprette dataintegratorprojekt
@@ -1234,8 +1236,6 @@
                   href: finance-insights/cash-position.md
                 - name: Likviditetsbudget
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Bruge eksterne data i likviditetsbudgetter
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Forudsigelser om debitorbetalinger
                   href: finance-insights/payment-insights-overview.md
                 - name: Bruge forudsigelser om debitorbetalinger
@@ -1432,6 +1432,8 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Start her med elektronisk fakturering for Saudi-Arabien
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: Oprette direkte integration med italienske FatturaPA med SDI
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Konfigurere elektronisk fakturering
@@ -1512,6 +1514,10 @@
                           items:
                             - name: Momsopgørelse
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: Rapportering for Norge
+                          items:
+                            - name: Momsopgørelse
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Aktivere momsberegning for flytteordre
                       items:
                         - name: Understøttelse af momsfunktion til flytteordrer
@@ -1557,7 +1563,7 @@
                 - name: Momsopgørelse
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: 'Tjenesterapport, der involverer udlandet'
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Østrigsk Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Indkøbsafgifter
@@ -1824,7 +1830,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Afskrivningsmetoder for anlægsaktiver
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Importere den kinesiske Golden Tax-dataenhed
+                - name: Importere de kinesiske Golden Tax-filer
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: Månedlig gennemsnitlig omkostningsmodel
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -2088,6 +2094,8 @@
                   href: localizations/finland.md
                 - name: Momsbetalingsrapport for Finland
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Finsk Intrastat
+                  href: localizations/emea-fin-intrastat.md
             - name: Frankrig
               items:
                 - name: Oversigt for Frankrig
@@ -2610,6 +2618,8 @@
                   href: localizations/apac-idn-invoicing.md
                 - name: Momsopgørelse for Indonesien
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: Rapport over A-skat for Indonesien
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Italien
               items:
                 - name: Oversigt for Italien
