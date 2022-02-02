@@ -1,6 +1,6 @@
 ---
-title: Konfiguration til Finance Insights til offentlig forhåndsversion (forhåndsversion) - version 10.0.20 og senere
-description: I dette emne beskrives de konfigurationstrin, der sætter systemet i gang med at bruge de egenskaber, der er tilgængelige i Finance Insights for offentlig forhåndsversion i version 10.0.20 og nyere.
+title: Konfiguration til Finance Insights - version 10.0.20 og nyere
+description: I dette emne beskrives de konfigurationstrin, der sætter systemet i gang med at bruge de egenskaber, der er tilgængelige i Finance Insights i version 10.0.20 og nyere.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927398"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968956"
 ---
-# <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguration til Finance Insights til offentlig forhåndsversion (forhåndsversion) - version 10.0.20 og senere
+# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguration til Finance Insights - version 10.0.20 og nyere
 
 [!include [banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sammen med Dataverse, Azure og AI Builder for at levere effektive prognoseværktøjer til din organisation. I dette emne beskrives konfiguration af Dynamics 365 Finance version 10.0.20, så dit system kan bruge de egenskaber, der er tilgængelige i Finance Insights for offentlig forhåndsversion.
+Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sammen med Dataverse, Azure og AI Builder for at levere effektive prognoseværktøjer til din organisation. I dette emne beskrives konfiguration af Dynamics 365 Finance version 10.0.20, så dit system kan bruge de egenskaber, der er tilgængelige i Finance Insights.
 
 > [!NOTE]
 > De konfigurationstrin, der er beskrevet i dette emne, gælder kun for Finans version 10.0.20 og senere. Hvis du vil konfigurere Finance Insights på version 10.0.19 og tidligere, skal du se [Konfiguration for Finance insights - versioner op til 10.0.19](configure-for-fin-insites.md).
@@ -38,7 +38,7 @@ Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sa
 
 Følg disse trin for at udrulle miljøerne.
 
-1. I Microsoft Dynamics Lifecycle Services (LCS) skal du oprette eller opdatere et Finance-miljø. Miljøet kræver appversion 10.0.20 eller nyere af Finance and Operations-apps.
+1. I Microsoft Dynamics Lifecycle Services (LCS) skal du oprette eller opdatere et Finance-miljø. Miljøet kræver appversion 10.0.20 eller nyere af Finans- og driftsapps.
 2. Miljøet skal være et miljø med høj tilgængelighed (HA) i sandkassesystemet. (Denne type miljø kaldes også et Niveau-2-miljø). Du kan finde flere oplysninger i [Miljøplanlægning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Hvis du konfigurerer Finance Insights i et sandkassemiljø, skal du muligvis kopiere produktionsdata til dette miljø, så du kan få forudsigelser, der virker. En forudsigelsesmodel bruger flere års data til at opbygge forudsigelser. Contoso-demodataene indeholder ikke nok historikdata til at træne forudsigelsesmodellen tilstrækkeligt. 
 
@@ -126,7 +126,7 @@ Hvis du ikke kan finde de foregående programmer, kan du prøve følgende trin.
         - **Ydeevne** - Vi anbefaler, at du vælger **Standard**.
         - **Kontotype** - Du skal vælge **Lager V2**.
 
-    3. I dialogboksen **Avancerede indstillinger** til indstillingen **Data Lake-lager Gen2** skal du vælge **Aktiver** under funktionen **Hierarkiske navneområder**. Hvis du ikke aktiverer denne funktion, kan du ikke forbruge data, som Finance and Operations-apps skriver ved hjælp af tjenester som f.eks. Power BI-dataflow.
+    3. I dialogboksen **Avancerede indstillinger** til indstillingen **Data Lake-lager Gen2** skal du vælge **Aktiver** under funktionen **Hierarkiske navneområder**. Hvis du ikke aktiverer denne funktion, kan du ikke forbruge data, som Finans- og driftsapps skriver ved hjælp af tjenester som f.eks. Power BI-dataflow.
     4. Vælg **Gennemse og opret**. Når installationen er fuldført, vises den nye ressource på Azure-portalen.
     5. Gå til den lagerkonto, du har oprettet.
     6. Vælg **Adgangsnøgler** i menuen til venstre.
@@ -214,7 +214,7 @@ Hvis du ikke kan finde de foregående programmer, kan du prøve følgende trin.
         | Visningsnavnet for den nye program, du har oprettet | Bidragyder                 |
         | Visningsnavnet for den nye program, du har oprettet | Bidragyder til lagerkonto |
         | Visningsnavnet for den nye program, du har oprettet | Ejer af Blob Data-lager     |
-        | **Godkendelsestjeneste til AI Builder**                     | Læser af Blob Data-lager    |
+        | **AI Builder-godkendelsestjeneste**                     | Læser af Blob Data-lager    |
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-azure-cli)
 
@@ -752,6 +752,6 @@ Tilføjelsesprogrammet kan være flere minutter om at blive installeret.
 
 ## <a name="feedback-and-support"></a>Feedback og support
 
-Send en e-mail til [Finance Insights (forhåndsversion)](mailto:fiap@microsoft.com), hvis du er interesseret i at give feedback eller har brug for support.
+Send en mail til [Finance Insights](mailto:fiap@microsoft.com), hvis du er interesseret i at give feedback eller har brug for support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

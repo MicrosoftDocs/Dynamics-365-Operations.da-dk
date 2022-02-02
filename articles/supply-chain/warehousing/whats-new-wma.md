@@ -2,7 +2,7 @@
 title: Nyheder eller ændringer i Warehouse Management-mobilappen
 description: Dette emne viser de nye og ændrede funktioner for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 09/09/2021
+ms.date: 01/18/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9d50c1380418365f7c51d6b96051e9ea68a5f104
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 6f45cacd7f43c8caf836fd1ea24d354e4bcf5853
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901882"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007568"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20140"></a>Version 2.0.14.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+
+- Har løst et problem, der deaktiverede standardknappen Send.
+
+## <a name="version-20130"></a>Version 2.0.13.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+ 
+- Forbedret rulning mellem sider med blødere animation.
+- Har rettet tællerintuitiv respons på strygebevægelser og lejlighedsvise skærmfrysninger.
+- Forbedret kombinationer af tekst i mørketilstand og baggrundsfarve, så de bliver mere læsbare.
+- Har løst et problem, hvor teksten kunne blive meget lille, når appvinduets størrelse ændredes.
+- Har løst et problem, der kunne få appen til at gå ned, når der blev scannet stregkoder.
+- Tilføjet mulighed for at erstatte en skyder med en knap.
+- Har løst et problem, der kunne få appen til at vise fejlmeddelelsen "AADSTS7000215: Ugyldig klienthemmelighed er angivet."
+- Har rettet tipanimationen, der viser, hvordan du lukker en side ved at stryge nedad.
+- Tilføjede muligheden for at lukke en side ved at svippe nedad.
+- Har løst et problem, hvor rullelistetitlerne ikke blev vist på siden **Brugerindstillinger**.
+- Har løst et lokaliseringsproblem, hvor appen ikke kunne anerkende et komma (,) som decimalseparator.
+- Forbedret tilgængelighed.
+- Har rettet navigering på siden **Ny forbindelse** for at gøre tilgængeligheden bedre.
+- Har løst et problem, hvor tastaturet på skærmen ikke blev vist ved valg af et inputfelt.
+- Har løst et problem, der kunne få appen til at gå ned, hvis brugerne hurtigt ændrede størrelsen på vinduet.
+- Har løst et problem, hvor et hurtigt tastetryk nogle gange blev fortolket som et langt tryk.
+- Har løst et problem, hvor applayoutet kunne blive ødelagt på grund af felttilpasninger, der blev foretaget i Supply Chain Management.
+- Har løst et problem, hvor varelokationerne ikke blev vist korrekt.
+- Har løst et problem vedrørende kort pluk i arbejdsgangen for produktvarianter.
+- Har fjernet den unødvendige validering af felter, der indeholder foruddefinerede standardværdier.
+- Forbedret ydeevne.
+- Har tilføjet en ny indstilling, der giver brugerne mulighed for at vælge, hvordan felter skal filtreres og sorteres på kortsiden.
 
 ## <a name="version-20110"></a>Version 2.0.11.0
 

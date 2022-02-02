@@ -3,22 +3,21 @@ title: Kundeportal til Dynamics 365 Supply Chain Management-oversigt (indeholder
 description: Dette emne introducerer kundeportalen og forklarer, hvem der skal bruge den, og hvordan den fungerer.
 author: Henrikan
 ms.date: 06/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c1383ee3c8e72f630d29a557de4150cdd3aa905f
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 04a1a06dce79259e35ce66dda469e9b157d7ed1c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937498"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983232"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundeportal til Dynamics 365 Supply Chain Management-oversigt
 
@@ -43,7 +42,7 @@ Kundeportalskabelonen har alle de tilpasningsmuligheder, som Power Apps-portalfu
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-Videoen [Oversigt over kundeportalskabelonen i Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (vist ovenfor) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
+Videoen [Oversigt over kundeportalskabelonen i Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (vist ovenfor) er inkluderet i den [Finans- og driftsafspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
 ## <a name="who-should-use-it"></a>Hvem skal bruge den?
 
@@ -63,7 +62,7 @@ Kundeportalen leveres som en skabelon til Power Apps-portaler. Den er afhængig 
 
 [Power Apps-portaler](/powerapps/maker/portals/overview) er en funktion, der giver brugerne mulighed for at oprette et udadvendt websted, som personer uden for organisationen kan logge på. Der kræves ingen kodning for at lave portaler. Kundeportalen er en af de mange [Dynamics 365-portalskabeloner](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365), der er tilgængelige hos Microsoft.
 
-[Dobbeltskrivning](/powerapps/maker/portals/overview) er et køreklart infrastrukturprodukt, der giver næsten realtidsinteraktion mellem kundeengagementapps og Finance and Operations-apps. Dobbeltskrivning giver en tovejsintegration mellem Finance and Operations-apps og Microsoft Dataverse. Det giver derfor en integreret brugeroplevelse på tværs af appsene. Kundeportalen er afhængig af tabeller, der synkroniseres med dobbeltskrivning. Før data fra Supply Chain Management kan placeres i kundeportalen, skal dobbeltskrivning være aktiveret for alle de relevante tabeller.
+[Dobbeltskrivning](/powerapps/maker/portals/overview) er et indbygget infrastrukturprodukt, der giver næsten realtidsinteraktion mellem kundeengagementapps og Finans- og driftsapps. Dobbeltskrivning giver en tovejsintegration mellem Finans- og driftsapps og Microsoft Dataverse. Det giver derfor en integreret brugeroplevelse på tværs af appsene. Kundeportalen er afhængig af tabeller, der synkroniseres med dobbeltskrivning. Før data fra Supply Chain Management kan placeres i kundeportalen, skal dobbeltskrivning være aktiveret for alle de relevante tabeller.
 
 ![Kundeportalafhængigheder.](media/customer-portal-elements.png "Kundeportalafhængigheder")
 

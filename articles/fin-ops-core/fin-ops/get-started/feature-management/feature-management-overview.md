@@ -1,27 +1,26 @@
 ---
 title: Oversigt over funktionsstyring
-description: Dette emne beskriver funktionen Administration af funktioner, og hvordan du kan bruge den.
+description: Dette emne beskriver funktionsstyring, og hvordan du kan bruge den.
 author: Peakerbl
-ms.date: 09/13/2021
-ms.topic: article
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1318093d66cfc30a04815311cce332df010d4b69
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 6605fe68576ce80726438b60c1f1fbf3782d0934
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488172"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984453"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -75,9 +74,9 @@ Funktioner, der opdateres til **Som standard slået til**, er aktiveret som stan
 > [!NOTE]
 > Da disse funktioner aktiveres automatisk, er det vigtigt, at du afgør, om din organisation er klar til at aktivere disse funktioner igen, eller om der kræves mere tid. Hvis der kræves mere tid, kan det være nødvendigt midlertidigt at deaktivere disse funktioner. Bemærk, at en funktions skifte til **Som standard slået til** typisk sker i den større version, før funktionen skal være **Obligatorisk**. På dette tidspunkt har du ikke mulighed for at deaktivere funktionen. 
 
-### <a name="released-features-mandatory"></a>Frigivne funktioner (obligatorisk)
+### <a name="mandatory"></a>Obligatorisk
 
-**Frigivet** er den sidste tilstand for funktioner. Den angiver, at funktionerne er aktiveret, og at du ikke kan deaktivere dem uden at kontakte Microsoft. Det forventes, at valgfrie funktioner bliver obligatoriske efter to større versioner. Kritiske funktioner kan som en undtagelse introduceres som obligatoriske.
+**Obligatorisk** er den forventede sidste tilstand for funktioner. Den angiver, at funktionerne er aktiveret, og at du ikke kan deaktivere dem uden at kontakte Microsoft. Det forventes, at valgfrie funktioner bliver obligatoriske efter to større versioner. Kritiske funktioner kan som en undtagelse introduceres som obligatoriske.
 
 ## <a name="example-of-expected-feature-lifecycles"></a>Eksempel på forventede funktionslivscyklusser
 

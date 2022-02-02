@@ -1,8 +1,8 @@
 ---
 title: Administrere rekrutteringsprocesser
-description: I denne artikel beskrives et begreb, som rekrutteringsmedarbejdere kan bruge til at spore trinnene i en rekrutteringsproces.
+description: I dette emne beskrives et begreb, som rekrutteringsmedarbejdere kan bruge til at spore trinnene i en rekrutteringsproces.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf873a58900fa86d068d9ebc75f4f389e7d8359cc685d4635e083437c55ae56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9a5e89e700858ed9e625fbdee630fa14ebea26e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752984"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965058"
 ---
 # <a name="manage-recruiting-processes"></a>Administrere rekrutteringsprocesser
 
@@ -42,7 +42,7 @@ Rekrutteringsprojekter gør det muligt for rekrutteringsmedarbejdere at spore st
 - Ansøgningsfristen
 - Den anslåede startdato
 
-Rekrutteringsprojektet indeholder den **jobannonce**, der blev brugt på **Medarbejderselvbetjeningen** for at annoncere for stillingen. For at vise stillingen til medarbejdere, skal rekrutteringsprojektet have en **jobannonce**, feltet **Vis på medarbejderselvbetjening** skal være angivet til Ja, **ansøgningsfristen** skal angives til en fremtidig dato, og rekrutteringsprojektet skal have en **projektstatus**, der er igangsat. Følgende tabel viser de forskellige rekrutteringsprojektstatusser og en beskrivelse af dem.
+Rekrutteringsprojektet indeholder den **Jobannonce**-værdi, der blev brugt på siden **Medarbejderselvbetjening** for at annoncere for stillingen. Stillingen kan kun vises for medarbejdere, hvis rekrutteringsprojektet har en **Jobannonce**-værdi, feltet **Vis på medarbejderselvbetjening** er angivet til **Ja**, feltet **Ansøgningsfrist** er angivet til en fremtidig dato, og rekrutteringsprojektet har **Projektstatus** af **Igangsat**. Følgende tabel viser de forskellige rekrutteringsprojektstatusser og en beskrivelse af dem.
 
 | Status    | Angiver, at...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ Rekrutteringsmedarbejdere kan også registrere det **medie**, der bruges til at 
 
 ## <a name="applicants"></a>Ansøgere
 
-En ansøger er en person, der ansøger om et job i din virksomhed. Ansøgere deles mellem alle juridiske enheder i organisationen, hvilket giver dig en stor pulje af talent for at søge fra. Du kan angive kvalifikationer, referencer, tilpasningsanmodninger og personlige oplysninger for ansøgere. Når du opretter en ansøgningspost, oprettes en personpost for ansøgeren i det globale adressekartotek. Du kan bruge siden **Ansøger** til at opdatere følgende globale adressekartoteksoplysninger for personer, der er ansøgere:
+En ansøger er en person, der ansøger om et job i din virksomhed. Ansøgere deles mellem alle juridiske enheder i din organisation. Du har derfor en stor pulje af talent at søge i. Du kan angive kvalifikationer, referencer, tilpasningsanmodninger og personlige oplysninger for ansøgere. Når du opretter en ansøgningspost, oprettes en personpost for ansøgeren i det globale adressekartotek. Du kan bruge siden **Ansøger** til at opdatere følgende globale adressekartoteksoplysninger for personer, der er ansøgere:
 
 - Adresseoplysninger
 - Kontaktoplysninger
@@ -84,7 +84,7 @@ Ansøgningsstatus angiver, hvor langt ansøgningen er nået i rekrutteringsforl�
 
 ### <a name="correspondence-actions"></a>Korrespondanceaktioner
 
-En **ansøgnings** korrespondanceaktion afgør, hvilken dokument- eller e-mailskabelon der bruges til at kommunikere med den ansøger, der har sendt ansøgningen. Du kan knytte **Ansøgningsbogmærker**, så du kan bruge værdier fra siderne Ansøgning, Ansøger, Jobsamtale og Rekrutteringsprojekt i din kommunikation med ansøgerne. **Skabeloner til ansøgnings-e-mail** kan oprettes for korrespondanceaktioner, så du hurtigt kan sende e-mails til ansøgere, der har en ansøgning med en bestemt kombination af status og korrespondanceaktion. Du kan f.eks. sende en bekræftelse via e-mail til alle ansøgninger med **Status** Modtaget og **korrespondanceaktionen** Modtaget. Når du sender e-mailen, har du mulighed for automatisk at opdatere status for ansøgningerne.
+En ansøgnings korrespondanceaktion afgør, hvilken dokument- eller mailskabelon der bruges til at kommunikere med den ansøger, der har sendt ansøgningen. Du kan knytte **Ansøgningsbogmærker** til korrespondanceaktioner, så du kan bruge værdier fra siderne **Ansøgning**, **Ansøger**, **Jobsamtale** og **Rekrutteringsprojekt** i din kommunikation med ansøgerne. **Skabeloner til ansøgningsmail** kan oprettes for korrespondanceaktioner, så du hurtigt kan sende mails til ansøgere, hvis ansøgning har en bestemt kombination af status og korrespondanceaktion. Du kan f.eks. sende en bekræftelse via mail til alle ansøgninger med **Status** af **Modtaget** og **Korrespondanceaktion** som **Modtaget**. Når du sender mailen, har du mulighed for automatisk at opdatere status for ansøgningerne.
 
 ## <a name="application-routing"></a>Ansøgningsproces
 
@@ -101,6 +101,5 @@ Hvis en ansøgning skal gennemses af flere arbejdere, kan du bruge siden **Ansø
 ## <a name="hiring-applicants"></a>Ansætte ansøgere
 
 Brug siden **Ansøgninger** til at ansætte en ansøger. Når du ansætter en ansøger, får ansøgerposten statussen **Ansat**, og ansøgerens personpost i det globale adressekartotek knyttes til den nye medarbejderpost. Ændringerne i oplysningerne i det globale adressekartotek for den nye medarbejderpost, vises også i ansøgerposten. Dette kan hjælpe med at reducere indtastning af data, hvis den nye medarbejder på et tidspunkt søger et andet job i din virksomhed. Hvis du vil ansætte en eksisterende arbejder til en ny stilling, skal du klikke på **Skift stilling** i rullemenuen **Ansøgningsstatus** for at starte overførslen.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

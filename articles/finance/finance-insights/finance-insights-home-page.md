@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813741"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968780"
 ---
 # <a name="finance-insights-home-page"></a>Startside for Finance Insights
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Med Finance Insights kan du konfigurere og udvide løsninger, så du på intelligent vis kan forudsige virksomhedens pengestrøm, forudsige, hvornår du vil modtage betaling for udestående tilgodehavender, og generere et budgetforslag, der kan gøre budgetteringsprocessen hurtigere. Disse funktioner bruger intelligente maskinindberetningsskabeloner til at opbygge modeller ved hjælp af de data, du angiver (herunder data fra tredjepart, f.eks. forbrugerrapportoplysninger fra et bureau). Disse intelligente egenskaber er en hjælp, når du skal træffe beslutninger, og hjælper dig med at gøre en indsats for at reagere effektivt på eksisterende og forventede forretningsmuligheder. Du er ansvarlig for alle data, der bruges med eller output fra Finance Insights.
 
 > [!NOTE]
-> Finance Insights, offentlig prøveversion er tilgængelig for implementering i Amerikas Forenede Stater, Canada, Storbritannien, Europa, Asien og Stillehavsområdet, Japan, Australien og New Zealand. Microsoft tilføjer trinvist understøttelse af flere regioner.
+> Finance Insights er tilgængelig for udrulning i Amerikas Forenede Stater, Canada, Storbritannien, Europa, Asien og Stillehavsområdet, Japan, Australien og New Zealand. Microsoft tilføjer trinvist understøttelse af flere regioner.
 
 ## <a name="prerequisites"></a>Forudsætninger
 

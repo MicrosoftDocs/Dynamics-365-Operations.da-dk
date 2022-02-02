@@ -2,7 +2,7 @@
   items:
     - name: Udvikling og administration af Finance and Operations-apps
       items:
-        - name: Dokumentation til Finance and Operations-ansøgning
+        - name: Dokumentation for Finance and Operations-applikation
           href: ../fin-ops/index.md
         - name: Udvikling og administration af Finance and Operations-apps
           href: index.md
@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Platformsopdateringer til version 10.0.23 (januar 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
-                - name: Platformsopdateringer til version 10.0.22 (november 2021)
-                  href: get-started/whats-new-platform-updates-10-0-22.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -96,17 +94,17 @@
                       items:
                         - name: Kundeemne til kontanter
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkronisere konti fra Salg direkte med debitorer i Finance and Operations
+                        - name: Synkronisere konti fra Sales direkte med debitorer i Finance and Operations
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Salg
+                        - name: Synkronisere produkter fra Finance and Operations direkte med produkter i Sales
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisere kontakter fra Salg direkte med kontakter eller debitorer i Finance and Operations
+                        - name: Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Salg til Finance and Operations
+                        - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Synkronisering af salgsordrer direkte mellem Salg og Finance and Operations
+                        - name: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Salg
+                        - name: Synkronisere salgsfakturahoveder og linjer fra Finance and Operations direkte med Sales
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: Konfigurere integration med Field Service
                       items:
@@ -188,9 +186,9 @@
                   href: data-entities/data-import-export-job.md
                 - name: Synkronisere dato og klokkeslæt i importjob
                   href: data-entities/data-synchronize-date-and-time.md
-                - name: Import af bilag ved hjælp af enheden Finanskladde
+                - name: Importere bilag ved hjælp af enheden Finanskladde
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optimere overflytning af data for Finance and Operations-apps
+                - name: Optimere dataoverførsel af Finance and Operations-apps
                   href: sysadmin/optimize-data-migration.md
             - name: Udvikling for dataenheder
               items:
@@ -338,7 +336,7 @@
                   href: deployment/expressroute.md
                 - name: Finance and Operations-arkitektur
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
-                - name: Anvende opdateringer i skybaserede miljøer
+                - name: Anvende opdateringer i cloudmiljøer
                   href: deployment/apply-deployable-package-system.md
                 - name: Anvende opdateringer og udvidelser i Commerce Scale Unit (sky)
                   href: deployment/Update-retail-channel.md
@@ -356,17 +354,17 @@
                   href: deployment/on-premises-deployment-landing-page.md
                 - name: Forberede lokale installationer
                   items:
-                    - name: Oversigt over lokal installation
+                    - name: Oversigt over udrulning i det lokale miljø
                       href: deployment/on-premises-overview.md
-                    - name: Planlægge og forberede lokale installationer
+                    - name: Planlægge og forberede udrulninger i det lokale miljø
                       href: deployment/plan-onprem-deployment.md
-                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises)-understøttet software
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) understøttet software
                       href: deployment/onprem-compatibility.md
                     - name: Krav til tilpasning af hardware
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Godkendelse i Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/authentication-onprem.md
-                - name: Konfigurere og installere miljøer i det lokale miljø
+                - name: Konfigurere og udrulle miljøer i det lokale miljø
                   items:
                     - name: Konfigurere projekter i det lokale miljø i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
@@ -406,13 +404,13 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Genbruge den samme AD FS-forekomst til flere miljøer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Opgradere forekomsten af SQL Server i Microsoft Dynamics 365 Finance + Operations (on-premises) miljøer
+                    - name: Opgradere SQL Server-forekomst af Microsoft Dynamics 365 Finance + Operations (on-premises)-miljøer
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
                     - name: AD FS Microsoft 365-kompatibilitet
                       href: deployment/onprem-adfscompatibility.md
-                    - name: Scripts til præ-installation og efterinstallation af lokale agenter
+                    - name: Scripts til forud- og efterudrulning af lokale agenter
                       href: lifecycle-services/pre-post-scripts.md
                     - name: Implementeringskonfigurationer for den lokale agent
                       href: deployment/onprem-localagent-options.md
@@ -1054,6 +1052,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Aktivere enhedstilknytning for dobbeltskrivning
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Adskilt orkestreringspakke til dobbeltskrivningsapplikation
+                      href: data-entities/dual-write/separated-solutions.md
                     - name: Overføre valutadatatype til dobbelt skrivning
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Konfigurere tilknytning af felter for salgsordrestatus
@@ -1154,19 +1154,19 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                         - name: Fejlfinde problemer under den indledende synkronisering
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: Fejlfinde problemer med aktiv synkronisering
+                        - name: Fejlfinde fejl ved aktiv synkronisering
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Fejlfinde problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
+                        - name: Fejlfinde fejl med dobbeltskrivning i Finance and Operations-apps
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Fejlfinde problemer med parts- og globalt adressekartotek
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
-                        - name: Fejlfinde problemer med i forbindelse med løsningsforståelse
+                        - name: Fejlfinde fejl i forbindelse med løsningsforståelse
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Fejlfinde problemer fra opgraderinger af Finance and Operations-apps
+                        - name: Fejlfinde fejl fra opgraderinger af Finance and Operations-apps
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Kontrollere dobbeltskrivningskonfigurationen i Finance and Operations-apps og Dataverse
+                        - name: Bekræfte dobbeltskrivningskonfiguration i Finance and Operations-apps og Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                        - name: Fejlkoder for tabeloversigtens sundhedskontrol
+                        - name: Fejlkoder for tabeltilknytningens sundhedskontrol
                           href: data-entities/dual-write/table-map-health-check.md
                 - name: Ofte stillede spørgsmål om dobbeltskrivning
                   href: data-entities/dual-write/dual-write-faq.md
@@ -1184,7 +1184,7 @@
                   href: power-platform/enable-virtual-entities.md
                 - name: Power Apps-portaler med Finance and Operations
                   href: power-platform/power-portal-reference.md
-                - name: Ofte stillede spørgsmål og virtuelle objekter i Finance and Operations
+                - name: Ofte stillede spørgsmål med virtuelle Finance and Operations-enheder
                   href: power-platform/faq.md
             - name: Forretningshændelser
               items:
@@ -1562,7 +1562,7 @@
                   href: sysadmin/role-based-security.md
                 - name: Sikkerhedsarkitektur
                   href: sysadmin/security-architecture.md
-                - name: Kryptere i Finance and Operations-apps
+                - name: Kryptering i Finance and Operations-apps
                   href: sysadmin/encryption.md
                 - name: Angive timeout for sessionsinaktivitet
                   href: sysadmin/session-idle-timeout.md
@@ -1698,7 +1698,7 @@
                   href: migration-upgrade/data-migration-tool.md
                 - name: Overflytning af AX 2009 – installere dataoverflytningsværktøjet
                   href: migration-upgrade/install-dmt.md
-                - name: Overflytning af AX 2009 – generere tilknytninger
+                - name: Overflytning af AX 2009 - generere tilknytninger
                   href: migration-upgrade/generate-maps.md
                 - name: Overflytning af AX 2009 - oprette skabeloner
                   href: migration-upgrade/create-package-templates-dmt.md
@@ -1752,7 +1752,7 @@
               items:
                 - name: Hente opdateringer fra Lifecycle Services
                   href: migration-upgrade/download-hotfix-lcs.md
-                - name: Anvende opdateringer i skybaserede miljøer
+                - name: Anvende opdateringer i cloudmiljøer
                   href: deployment/apply-deployable-package-system.md
                 - name: Installere metadatahotfixes i udviklingsmiljøer
                   href: migration-upgrade/install-metadata-hotfix-package.md

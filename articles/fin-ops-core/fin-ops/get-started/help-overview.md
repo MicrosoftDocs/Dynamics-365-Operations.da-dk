@@ -1,9 +1,9 @@
 ---
 title: Hjælp-system (indeholder video)
-description: Dette emne indeholder en oversigt over Hjælp-systemet for Finance and Operations-apps.
+description: Dette emne indeholder en oversigt over Hjælp-systemet for Finans- og driftsapps.
 author: edupont04
 ms.date: 07/20/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemParameters
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d272221cc7a976d48b09b2f78bdb3f7fded2fc53
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 67f2fe493c57cd004b1003c1d95734bd455fde8c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937523"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984428"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -50,7 +50,7 @@ Du kan finde indhold på docs.microsoft.com ved hjælp af en søgemaskine. For a
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få besked om ændringer via et RSS-feed
 
-Hvis du vil abonnere på et RSS-feed af alle opdateringer, der er foretaget til indholdet på docs.microsoft.com på tværs af Finance and Operations-apps, skal du bruge følgende link:
+Hvis du vil abonnere på et RSS-feed af alle opdateringer, der er foretaget til indholdet på docs.microsoft.com på tværs af Finans- og driftsapps, skal du bruge følgende link:
 
 [RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 

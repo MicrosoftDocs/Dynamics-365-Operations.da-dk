@@ -3,7 +3,7 @@ title: Oversigt over medarbejder- og lederselvbetjening
 description: Denne artikel giver et overblik over arbejdsområdet til selvbetjening for medarbejdere og ledere.
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cea92092701f960f12aa74efe4c82c379a2b2c6d
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 2a356aae6590c2bce289c8d180324027efc76983
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431205"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992040"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Oversigt over medarbejder- og lederselvbetjening
 
@@ -93,7 +93,7 @@ Få vist og administrere dokumenter ved hjælp af feltet **Vedhæftede filer**. 
 
 Dette afsnit indeholder links til andre **Medarbejderselvbetjenings**-områder som områderne i afsnittet **Mine karriereoplysninger**.
 
-Du kan tilmelde dig frynsegoder via linket **Frynsegoder**. Du kan finde flere oplysninger om administration af frynsegoder under [Oversigt over frynsegoder](hr-benefits-management-overview.md)
+Du kan tilmelde dig frynsegoder via linket **Frynsegoder**. Du kan finde flere oplysninger om administration af frynsegoder under [Oversigt over frynsegoder](hr-benefits-management-overview.md).
 
 Under **Ydeevne** kan du vælge **Ydeevnekladde** for at oprette ydeevnekladdeposter, der kan bruges til både ydeevnemål og -gennemgange. Du kan vælge **Send tilbagemelding** for at give andre medarbejdere i organisationen en tilbagemelding. Afhængigt af organisationens indstillinger kan e-mails sendes til modtager, afsender og ledere. Du kan sende tilbagemeldinger til alle medarbejdere i organisationen. Afsendelse af tilbagemeldinger er ikke begrænset til firmaet.
 

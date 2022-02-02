@@ -13,18 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 37484ce022085dfac66edba31b7adf9af4095df8
+ms.sourcegitcommit: bbe8ab054ad7cc00a63c63e02dc90bfa8ede15bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890850"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7974375"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner, du kan bruge til at forbedre brugernes produktivitet, oprette mere interessante visninger af dine data og få meningsfuld indsigt i dine data. Denne artikel dækker følgende funktioner: 
 
@@ -37,10 +35,10 @@ Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner,
 -  Kolonner, der kan strækkes
 
 ## <a name="calculating-totals"></a>Beregner totaler
-I Finance and Operations-apps har brugerne mulighed for at få vist totaler nederst i numeriske kolonner i gitre. Disse totaler vises i en sektion med sidefod nederst i gitteret. 
+I Finans- og driftsapps har brugerne mulighed for at få vist totaler nederst i numeriske kolonner i gitre. Disse totaler vises i en sektion med sidefod nederst i gitteret. 
 
 ### <a name="showing-the-grid-footer"></a>Visning af gitterets sidefod
-Der er et sidefodsområde i bunden af alle tabelgitre i Finance and Operations-apps. Sidefoden kan vise værdifulde oplysninger, der er relateret til de data, der vises i gitteret. Her er nogle eksempler på sådanne oplysninger:
+Der er et sidefodsområde i bunden af alle tabelgitre i Finans- og driftsapps. Sidefoden kan vise værdifulde oplysninger, der er relateret til de data, der vises i gitteret. Her er nogle eksempler på sådanne oplysninger:
 
 - Antallet af markerede rækker i tabellen (når du markerer mere end én post)
 - Samlede beløb nederst i konfigurerede og numeriske kolonner
@@ -85,7 +83,7 @@ For at understøtte denne nye funktionsmåde er der tilføjet en ny kolonne for 
 Når brugerne indtaster data før det sted, hvor serveren behandler data, kan de forvente en række degraderinger i dataindtastningsoplevelsen, f.eks. manglende opslag, validering på kontrolniveau og indtastning af standardværdier. Brugere, der har brug for en rulleliste til at finde en værdi, anbefales at vente på, at serveren når til den aktuelle række. Validering på kontrolniveau og angivelse af standardværdier vil også finde sted, når serveren behandler den pågældende række.   
 
 ### <a name="pasting-from-excel"></a>Indsætning fra Excel
-Brugerne har altid været i stand til at eksportere data fra gitre i Finance and Operations-apps til Microsoft Excel ved hjælp af mekanismen **Eksportér til Excel**. Muligheden for at indtaste data forud i systemet gør det dog muligt for det nye gitter at understøtte kopiering af tabeller fra Excel og indsætning af dem direkte i gitre i Finance and Operations-apps. Den gittercelle, som indsætningen er initieret fra, bestemmer, hvor den kopierede tabel begynder at blive indsat. Indholdet af gitteret overskrives med indholdet af den kopierede tabel, undtagen i to tilfælde:
+Brugerne har altid været i stand til at eksportere data fra gitre i Finans- og driftsapps til Microsoft Excel ved hjælp af mekanismen **Eksportér til Excel**. Muligheden for at indtaste data forud i systemet gør det dog muligt for det nye gitter at understøtte kopiering af tabeller fra Excel og indsætning af dem direkte i gitre i Finans- og driftsapps. Den gittercelle, som indsætningen er initieret fra, bestemmer, hvor den kopierede tabel begynder at blive indsat. Indholdet af gitteret overskrives med indholdet af den kopierede tabel, undtagen i to tilfælde:
 
 - Hvis antallet af kolonner i den kopierede tabel overstiger antallet af kolonner, der er tilbage i gitteret, startende fra indsætningens sted, får brugeren besked om, at de ekstra kolonner er blevet ignoreret. 
 - Hvis antallet af rækker i den kopierede tabel overstiger antallet af rækker i gitteret med start fra indsætningens sted, overskrives de eksisterende celler af det indsatte indhold, og eventuelle ekstra rækker fra den kopierede tabel indsættes som nye rækker nederst i gitteret. 
@@ -96,7 +94,7 @@ Som en produktivitetsbooster kan brugerne indtaste matematiske formler i numeris
 Hvis du vil have systemet til at genkende en værdi som et udtryk, skal du starte værdien med et lighedstegn (**=**). Du kan få flere oplysninger om de understøttede operatorer og den understøttede syntaks i [Understøttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppere data i tabelformat
-Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **Gruppering i gitre**, der er afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i Finance and Operations-apps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
+Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **Gruppering i gitre**, der er afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i Finans- og driftsapps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
 
 Hvis du vil bruge denne funktion, skal du højreklikke på den kolonne, du vil gruppere efter, og vælge **Gruppér efter denne kolonne**. Denne handling sorterer dataene efter den valgte kolonne, føjer en ny **Gruppér efter**-kolonne til starten af gitteret og indsætter "overskriftsrækker" i starten af hver gruppe. Disse kolonneoverskrifter indeholder følgende oplysninger om hver enkelt gruppe: 
 -  Dataværdi for gruppen 

@@ -16,10 +16,6 @@
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (januar 2022)
                   href: get-started/whats-new-scm-10-0-23.md
-                - name: Supply Chain Management 10.0.22 (november 2021)
-                  href: get-started/whats-new-scm-10-0-22.md
-                - name: Supply Chain Management 10.0.21 (oktober 2021)
-                  href: get-started/whats-new-scm-10-0-21.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -54,7 +50,7 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tilgængelighed af tjenesteopdatering
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Anvende opdateringer i skybaserede miljøer
+                - name: Anvende opdateringer i cloudmiljøer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Anvende opdateringer til lokale installationer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
@@ -86,7 +82,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systemkrav til lokale installationer
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Købe Finance + Operations (on-premises)
+                - name: Købe Finance + Operations (i det lokale miljø)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere lagersted for udrulninger i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
@@ -617,7 +613,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Bruge indholdspakke til Microsoft Power BI-rapportering
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Bruge arbejdsområde for omkostningsstyring i Finance and Operations-mobilapplikationen
+            - name: Bruge arbejdsområde for omkostningsstyring i mobilapplikationentil Finance and Operations
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalt lagerregnskab
           items:
@@ -3113,7 +3109,7 @@
               href: transportation/tasks/load-building-workbench.md
             - name: Lastskabeloner
               href: transportation/tasks/load-template.md
-            - name: Vurderingsprofiler
+            - name: Bedømmelsesprofiler
               href: transportation/tasks/setup-a-rating-profile.md
             - name: LTL-klasser
               href: transportation/ltl-class.md
@@ -3511,11 +3507,11 @@
                       href: warehousing/gs1-barcodes.md
                     - name: Oprette lagersted for flytteordrer
                       href: warehousing/transfer-orders-warehouse.md
-                - name: Opgradering og overflytning
+                - name: Opgradering og overførsel
                   items:
-                    - name: Opgradere lagerstedsstyringsprocesser fra Microsoft Dynamics AX 2012 til Finance and Operations
+                    - name: Opgradere lagerstyringsprocesser fra Microsoft Dynamics AX 2012 til Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
-        - name: Udvikling af Supply Chain Management
+        - name: Supply Chain Management-udvikling
           items:
             - name: Udviklingsvejledning til Gantt-kontrolelementer
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
