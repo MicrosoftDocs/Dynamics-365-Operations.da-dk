@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "10444"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464092ae2fdcdfd8a0ada254e88f4418c825c1f9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486964"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983971"
 ---
 # <a name="get-started-with-financial-reporting"></a>Start her med økonomirapportering 
 
@@ -148,7 +146,7 @@ Du kan oprette et ubegrænset antal rapporteringstræer for at få vist virksomh
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Opdatere versionen af Økonomirapportering via slipstreaming
 
-Finance and Operations-apps opdateres hver måned. Økonomirapportering bliver dog ikke nødvendigvis opdateret i samme tempo. Kunderne har desuden flere valgmuligheder, når de implementerer opdateringer til Finance and Operations-apps. Opdateringer af Økonomirapportering installeres automatisk. Økonomirapportering har en angivet version, der forbruges i et kundemiljø, når der implementeres en serviceopdatering, når nedetiden startes, eller når kundens miljø er i vedligeholdelsestilstand. Denne proces kaldes *slipstreaming* eller *true-up*, fordi alle kundeimplementeringen er konfigureret til samme version af Økonomirapportering.
+Finans- og driftsapps opdateres hver måned. Økonomirapportering bliver dog ikke nødvendigvis opdateret i samme tempo. Kunderne har desuden flere valgmuligheder, når de implementerer opdateringer til Finans- og driftsapps. Opdateringer af Økonomirapportering installeres automatisk. Økonomirapportering har en angivet version, der forbruges i et kundemiljø, når der implementeres en serviceopdatering, når nedetiden startes, eller når kundens miljø er i vedligeholdelsestilstand. Denne proces kaldes *slipstreaming* eller *true-up*, fordi alle kundeimplementeringen er konfigureret til samme version af Økonomirapportering.
 
 Du kan finde ændringer, der udgives i de enkelte versioner, i [Nyheder eller ændringer i Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Platformsopdateringer og fejlrettelser findes i afsnittet "Yderligere ressourcer" nederst på siden for hver version.
 

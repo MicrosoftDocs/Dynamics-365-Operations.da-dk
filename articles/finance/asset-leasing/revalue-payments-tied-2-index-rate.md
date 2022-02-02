@@ -2,25 +2,25 @@
 title: Revaluere leasingbetalinger, der er knyttet til en indekssats
 description: Dette emne beskriver den justering, der er foretaget for at lease passivet for et ROU-aktiv, når de variable leasede betalinger ændres på grund af en ændring af indekssatsen.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734580"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968046"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Revaluere leasingbetalinger, der er knyttet til en indekssats
 
@@ -43,7 +43,7 @@ Følg disse trin for at revaluere leasingbetalinger, der er knyttet til en indek
 4. Vælg de filtre til valg af rettigheder, der skal medtages i baggrundsbehandlingen, og vælg derefter **OK**.
 
     Dialogboksen **Forhåndsversion af Vis indeksregulering** vises, og den viser de rettigheder, der vil blive værdiregulerede. Den indeholder også reguleringer af aktiver og passiver eller de variable betalingsjusteringer.
-    
+
 5. Hvis du vil forhindre, at leasingaftaler værdireguleres, skal du vælge de leasingaftaler, der **skal** værdireguleres. Hvis du ikke vælger nogen rettigheder, vil alle rettigheder blive værdireguleret. Når du er færdig, skal du vælge **OK** for at regulere leasingbetalinger.
 6. Hvis du vil have vist de transaktioner, der er oprettet for en bestemt værdireguleringsproces, skal du vælge proces-id og derefter vælge **Transaktioner**.
 
@@ -66,5 +66,7 @@ Du kan få vist den nyligt genererede betalingsplan, der starter på værdiregul
 
 Kladdeposten har automatisk bogført reguleringskladdeposten på kontoen for ændringen i de leasingbetalinger, der er relateret til indeksværdireguleringen.
 
+> [!NOTE]
+> Hvis indstillingen **Opdeling af betalingsbeløb** er aktiveret i oversigtspanelet **Generelt** på siden **Leasingdetaljer**, og det tilknyttede katalog er IFRS 16, vil processen til værdiregulering af indeks automatisk tilføje en post i dialogboksen **Opdeling af betalingsbeløb**. Beløbet afspejler den ændring, der blev foretaget i betalingen på grund af værdiregulering af indeks. Posten markeres som **Bruges til værdiregulering af IRFS-indeks**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

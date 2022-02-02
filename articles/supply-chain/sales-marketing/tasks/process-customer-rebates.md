@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 355ca6b8a06b15b68e0fd6236999b4e64a83bf2a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573339"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969081"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle debitorrabatter
 
@@ -69,7 +69,7 @@ Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kr
 2. Klik på **Opsaml**.
 3. Indtast eller vælg en værdi i feltet **Kunde**.
 4. Vælg dags dato i feltet **Startdato**.
-5. Klik på **OK**. Som et resultat af, at funktionen **Opsaml** køres, er det anslåede kravbeløb nu reguleret til at tage højde for det faktum, at kundens samlede salg i den relevante periode er højere end, da den første rabat blev genereret. Mere specifikt, fordi det samlede antal, der er købt, har nået 100 enheder, er kunden nu berettiget til 40 kr. pr. enhed (ifølge aftalens anden mængdereduktion) eller 400 kr. af det samlede rabatbeløb. Forskellen er registreret som en ny "kravregulering" for de ekstra 800 kr. Status for rabatkrav, der er medtaget i opdateringen Opsaml, er nu sat til Beregnet. 
+5. Klik på **OK**. Som et resultat af, at funktionen **Opsaml** køres, er det anslåede kravbeløb nu reguleret til at tage højde for det faktum, at kundens samlede salg i den relevante periode er højere end, da den første rabat blev genereret. Mere specifikt, fordi det samlede antal, der er købt, har nået 100 enheder, er kunden nu berettiget til 40 kr. pr. enhed (ifølge aftalens anden mængdereduktion) eller 4,000 kr. af det samlede rabatbeløb. Forskellen er registreret som en ny "kravregulering" for de ekstra 800 kr. Status for rabatkrav, der er medtaget i opdateringen Opsaml, er nu sat til Beregnet. 
 6. Markér alle poster på listen.
 7. Klik på **Godkend**.
 8. Klik på **Behandl**.

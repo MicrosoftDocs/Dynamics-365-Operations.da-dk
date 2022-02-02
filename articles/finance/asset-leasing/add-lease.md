@@ -2,25 +2,25 @@
 title: Tilføj eller Kopiér leasinger (prøveversion)
 description: Dette emne beskriver, hvordan du opretter en ny leasing ved at angive oplysninger om den i aktivleasing eller ved at kopiere oplysninger fra en eksisterende leasing.
 author: moaamer
-ms.date: 12/06/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
-ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
+ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7931975"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967920"
 ---
 # <a name="add-or-copy-leases-preview"></a>Tilføj eller Kopiér leasinger (prøveversion)
 
@@ -35,8 +35,19 @@ Udfør følgende trin for at oprette en leasing i aktivleasing.
 1. Gå til siden **Leasingoversigt**, og vælg **Ny** i handlingsruden.
 2. Angiv oplysninger om leasing. De felter, der skal bruges, har røde kanter.
 
-> Startdatoen for leasingbetalingen må ikke være tidligere end startdatoen for leasing. Hvis du angiver en startdato for leasingbetalingen, der er før startdatoen for leasingen, får du vist en fejlmeddelelse.
-  
+Startdatoen for leasingbetalingen må ikke være tidligere end startdatoen for leasing. Hvis du angiver en startdato for leasingbetalingen, der er før startdatoen for leasingen, får du vist en fejlmeddelelse.
+
+Indstillingen **Opdeling af betalingsbeløb** i oversigtspanelet **Generelt** på siden **Leasingoplysninger** angives som standard til **Nej**, hvis indstillingen **Tillad opdeling af betaling** på siden **Parametre til aktivleasing** er angivet til **Ja**. 
+
+Hvis indstillingen **Opdeling af betalingsbeløb** er angivet til **Ja**, låses feltet **Betalingsbeløb** i oversigtspanelet **Betalingsplanlinjer**. Det angives til summen af de betalingsbeløb, der angives senere i kataloget **Opdeling af betalingsbeløb**.
+
+Vælg **Opdeling af betalingsbeløb** for at åbne en side, hvor du kan tilføje de specificerede betalingstyper. Knappen **Føj totaler til betalingsbeløb** flytter totalerne til feltet **Betalingsbeløb**.
+
+> [!NOTE]
+> Hvis du tilføjer et specificeret betalingsbeløb og derefter vælger **Esc**-tasten, føjes de angivne beløb ikke til feltet **Betalingsbeløb** i oversigtspanelet **Betalingsplanlinjer**. De gemmes i stedet i dialogboksen **Opdeling af betalingsbeløb**. Hvis du vil have vist totalbeløbet i dialogboksen, skal du vælge kolonnen **Beløb**, vælge og holde nede (eller højreklikke) og derefter vælge **Total for denne kolonne**. 
+
+Knappen **Kopiér linje** kopierer den specificerede betalingsopdeling.
+
 ## <a name="create-a-lease-schedule"></a>Oprette en leasingplan
 
 Når du er færdig med at angive oplysninger om en leasing, skal du udføre følgende trin for at oprette en leasingplan.
@@ -50,9 +61,9 @@ Når du er færdig med at angive oplysninger om en leasing, skal du udføre føl
     På siden **Kartotekoplysninger** kan du se, hvordan rettigheden redegøres for de kartoteker, der er tildelt til den. Herfra kan du få vist planlægninger af leasingen.
 
     Betalingsplanen indeholder input fra fanen **Betalingsplanlinjer** på siden **Tilføj leasing**. Du kan stadig ændre hvert betalingsbeløb og variabel betaling. Leasingforpligtelsen beregnes på baggrund af den ændrede betalingsplan.
-    
-> [!NOTE]
-> Startdatoen for leasingbetalingen skal være den samme som eller en senere dato end startdatoen for leasingen. Hvis startdatoen for leasingbetalingen er før startdatoen for leasingen, får du vist en fejlmeddelelse. 
+
+    > [!NOTE]
+    > Startdatoen for leasingbetalingen skal være den samme som eller en senere dato end startdatoen for leasingen. Hvis startdatoen for leasingbetalingen er før startdatoen for leasingen, får du vist en fejlmeddelelse. 
 
 4. Når du er færdig med at gennemse betalingsplanen, skal du vælge **Bekræft plan**. Når planen er bekræftet, er rettigheden ikke længere tilgængelig til redigering.
 

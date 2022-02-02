@@ -2,25 +2,25 @@
 title: Konfigurere leasingparametre (prøveversion)
 description: Dette emne beskriver konfigurationsindstillingerne for aktivleasing, f. eks. sikkerhedsoplysninger og regnskabsindstillinger.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeasePostingAccounts
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e5f0aeddfa9d3f27500b033d4b4fb0fb1731105a28be4a6934b2328d62df6ec1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2a644b3c9d9ed4fc86a816af1ab338b96b1aa7ad
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779032"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968071"
 ---
 # <a name="configure-lease-parameters"></a>Konfigurere leasingparametre
 
@@ -39,10 +39,11 @@ Flere konfigurationsindstillinger har indflydelse på, hvordan aktivleasing fung
 
     Hvis du angiver denne indstilling til **Ja**, og kartotekets overførselstype er **Kumulativ catch-up-indstilling A eller B**, indstiller systemet feltet for **Trinvis lånerate** til værdien af feltet **Trinvis lånerate ved overgang** på siden **Opsætning af kartotek**. Hvis denne indstilling er angivet til **Nej**, angives satsen for hovedleasingaftalen til værdien i feltet **Trinvis lånesats** på siden **Kartotekoplysninger**, uanset hvilken overførselstype kartoteket er.
 
-4. Marker feltet **Tillad, at tilbageførsler for den lukkede version af kartoteket angives** til **Ja**, hvis du vil tillade, at afskrivningsudgiftsposteringerne tilbageføres. Udgiftsposteringer kan tilbageføres, også selvom kartotekets version er lukket.
+4. Angiv indstillingen **Tillad tilbageførsler af afskrivning på det lukkede kartotek** til **Ja**, hvis du vil tillade, at afskrivningsudgiftsposteringerne tilbageføres. Udgiftsposteringer kan tilbageføres, også selvom kartotekets version er lukket.
 
     > [!NOTE]
     > Det anbefales, at du beholder denne indstilling angivet til **Nej**. Indstillingen af denne funktion bruges som en validering og kontrol for at forhindre, at et lukket kartotek afskrives ved en fejltagelse. Hvis du holder indstillingen angivet til **Nej**, kan du hjælpe med at bevare den bogførte nettoværdi og fremtidige afskrivningsberegninger.
 
+5. Angiv indstillingen **Tillad opdeling af betalingsbeløb** til **Ja** for at tillade en opdeling af betalingsbeløbene i oversigtspanelet **Betalingsplanlinjer** på siden **Leasing**. Typerne af betalingsopdelinger defineres under **Opsætning** på siden **Betalingsbeløbstyper**. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

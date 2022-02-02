@@ -1,24 +1,23 @@
 ---
 title: Oversigt for Danmark
 description: Dette emne indeholder links til Microsoft Dynamics 365 Finance-dokumentationsressourcer for Danmark.
-author: ShylaThompson
-ms.date: 07/25/2019
-ms.topic: article
+author: kfend
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: Denmark
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f110a5fd02ed65063ab1ff19eb1f78fd38e57940591c0b3d50e68453b7b64f53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5080f4cdf8b47a7197f6f55ee535a88602c4b9e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776488"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985639"
 ---
 # <a name="denmark-overview"></a>Oversigt for Danmark
 
@@ -37,6 +36,7 @@ Dette emne indeholder links til dokumentationsressourcer for Danmark.
 - [Konfigurere debitorkonti til elektronisk OIOUBL-fakturering](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
 - [Konfigurere elektronisk OIOUBL-fakturering](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Konfigurere indbetalingskortformat](tasks/set-up-payment-slip-format.md)
+- [Dansk Intrastat](emea-dnk-intrastat.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

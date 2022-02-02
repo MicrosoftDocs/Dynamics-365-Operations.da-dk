@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e86294b8b467367d954013764a029f7b20270b95
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: f0a8f5948d9e30eb220aa8177a4b9718223a4f9d
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860661"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8013828"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Aktivere Power BI til Global Inventory Accounting
 
@@ -51,8 +51,9 @@ Følg disse trin for at konfigurere Power BI-integrationen.
 
     1. Gå til **Mit arbejdsområde**, find datasættet til Global Inventory Accounting, og vælg derefter **Indstillinger** i menuen **Indstillinger**.
     1. Udvid **Parametre** i **Indstillinger for globalt lagerregnskab**, og opdater alle parametre efter behov. Du skal især kontrollere følgende indstillinger:
-        1. Overskriv standardværdierne for **Dataverse Url**-adressen og **miljø-id** ved hjælp af de værdier, der findes på siden **Miljødetaljer** i LCS (i **Power Platform-integrationssektionen**).
-        1. Vælg linket **Rediger legitimationsoplysninger** ud for **cd-etiketten** i afsnittet om **legitimationsoplysninger for datakilden**. Log derefter på din Dataverse-konto ved hjælp af **OAuth2**-godkendelsesmetoden.
+        1. Overskriv standardværdierne for **Dataverse URL-adressen** og ved hjælp af de værdier, der findes under **Power Platform-miljøoplysninger** i LCS (i sektionen **Power Platform-integration**).
+        1. Overskriv standardværdierne for **Miljø-id** ved hjælp af de værdier, der findes under **Miljødetaljer** i LCS (i sektionen **Administrer miljø**).
+        1. Vælg linket **Rediger legitimationsoplysninger** ud for **CDS**-etiketten i afsnittet **Legitimationsoplysninger for datakilden**. Log derefter på din Dataverse-konto ved hjælp af **OAuth2**-godkendelsesmetoden.
     1. Kontroller, at de Power BI-rapporter, der findes i **Mit arbejdsområde \> Rapporter \> Globalt lagerregnskab**, nu fungerer korrekt og viser indhold fra systemet.
 
 1. Registrer programmet som beskrevet i [Konfigurere PowerBI.com-integration](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).

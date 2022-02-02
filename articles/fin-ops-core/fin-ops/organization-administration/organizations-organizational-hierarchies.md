@@ -2,8 +2,8 @@
 title: Oversigt over organisationer og organisationshierarkier
 description: Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af.
 author: sericks007
-ms.date: 11/10/2021
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798340"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992076"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Oversigt over organisationer og organisationshierarkier
 
@@ -54,7 +54,7 @@ Typerne af driftsenheder omfatter bærere, virksomhedsenheder, værdistrømme, a
 | Virksomhedsenhed       | En halvautomatisk driftsenhed, der er skabt for at nå strategiske forretningsmålsætninger. | Bruges til regnskabsaflægning, der er baseret på brancher eller produktlinjer, som organisationen betjener uafhængigt af juridiske enheder. |
 | Værdistrøm        | En driftsenhed, der kontrollerer en eller flere produktionsflow. | Bruges normalt ved lean produktion til kontrol af aktiviteter og flow, der er påkrævet for at levere et produkt eller en tjeneste til forbrugere. |
 | Afdeling          | En driftsenhed, der repræsenterer en kategori eller funktionel del af en organisation, der udfører en bestemt opgave, som f.eks. salg eller regnskab. | Bruges til afrapportering for funktionelle områder. En afdeling kan have ansvar for driftsregnskabet og kan bestå af en gruppe af bærere. |
-| Handelskanal      | En driftsenhed, der repræsenterer en fysisk butik, en onlinebutik eller en onlinemarkedsplads. | Bruges til styring og driftskontrol af en eller flere butikker inden for eller på tværs af juridiske enheder. |
+| Detailkanal      | En driftsenhed, der repræsenterer en fysisk butik, en onlinebutik eller et callcenter. | Bruges til styring og driftskontrol af en eller flere butikker inden for eller på tværs af juridiske enheder. |
 
 ### <a name="teams"></a>Team
 

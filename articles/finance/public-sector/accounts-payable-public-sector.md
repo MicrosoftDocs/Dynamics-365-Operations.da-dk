@@ -3,7 +3,7 @@ title: Oversigt over Kreditor i den offentlige sektor
 description: I denne artikel introduceres du til den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 Finance. Denne funktionalitet for offentlige institutioner omhandler leverandørstyring, indkøb og rapportering.
 author: v-kiarnd
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetParameters, CustParameters, LedgerJournalTable, OMLegalEntity, PurchAgreementListPage, PurchTableListPage, SrmParameters, VendCertificationType, VendCoverPageLayout, VendOpenInvoicesListPage, VendParametersVendParameters, VendTableListPage
@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f36d9cf7ccb84c72c0bd1c73469590d739eab5d
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: f2781c8f24f85012a554183fbe8388c1d64a5239
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817713"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982079"
 ---
 # <a name="accounts-payable-in-the-public-sector-overview"></a>Oversigt over Kreditor i den offentlige sektor
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3916b18c797222c300957fb25cabad78c4fcb9744a29d611a81b0bda3e9834d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724598"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964523"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Tilføje scriptkode til sider på websteder for at understøtte telemetri
 
@@ -110,11 +110,9 @@ Hvis du vil føje et eksternt script direkte til en skabelon i webstedsgenerator
 
 [Arbejd med CSS-tilsidesættelsesfiler](css-override-files.md)
 
-[Tilføj en favicon](add-favicon.md)
+[Tilføje en favicon](add-favicon.md)
 
-[Tilføj en velkomstmeddelelse](add-welcome-message.md)
-
-[Tilføj en copyright-meddelelse](add-copyright-notice.md)
+[Tilføje en copyright-meddelelse](add-copyright-notice.md)
 
 [Føje sprog til webstedet](add-languages-to-site.md)
 

@@ -3,7 +3,7 @@ title: Forudsigelser om debitorbetalinger
 description: I dette emne beskrives muligheden for forudsigelse af betalinger, der hjælper med at forbedre forståelsen af kunders typiske betalingsmetoder. Denne funktion kan også hjælpe dig med at identificere de omstændigheder, der berettiger start af indsamlingsprocesser tidligere end normalt.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752730"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982031"
 ---
 # <a name="customer-payment-predictions"></a>Forudsigelser om debitorbetalinger
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I dette emne beskrives muligheden for forudsigelse af betalinger, der hjælper med at forbedre forståelsen af kunders typiske betalingsmetoder. Denne funktion kan også hjælpe dig med at identificere de omstændigheder, der berettiger start af indsamlingsprocesser tidligere end normalt.
 
@@ -39,7 +38,7 @@ Organisationer finde ofte svært for at forudsige, hvornår kunder betaler faktu
 - Rykkerprocesser, der starter for sent
 - Ordrer, der er frigivet til kunder, som kan have standard på deres betaling
 
-Customer payment predictions (prøveversion) hjælper organisationer med at forudsige, hvornår en kundefaktura betales. De kan derfor oprette inkassostrategier, der medvirker til at øge sandsynligheden for, at de vil blive betalt til tiden.
+Forudsigelser om debitorbetalinger hjælper organisationer med at forudsige, hvornår en kundefaktura betales. De kan derfor oprette inkassostrategier, der medvirker til at øge sandsynligheden for, at de vil blive betalt til tiden.
 
 ## <a name="predictions"></a>Forudsigelser
 
@@ -67,6 +66,6 @@ I mange virksomheder er rykkerprocessen blevet en reaktiv aktivitet. Med andre o
 
 ## <a name="methodology"></a>Metode
 
-Tidligere har det ofte været vanskeligt at udvikle og installere en kunstig intelligens (AI)-løsning. Processen har krævet et team, der omfatter dataforskere, eksperter på området (SME'er) og ingeniører, der arbejder i længere tid på at formulere, udvikle, implementere og vedligeholde en brugbar AI-løsning. Med kundens betalingsforudsigelser er det nemt at implementere og bruge en AI-løsning i Microsoft Dynamics 365 Finance. Microsoft pakker AI-løsninger på forhånd, der er bygget oven på Microsoft AI Builder. Brugerne kan derfor anvende AI-løsningen med et enkelt klik med musen for at udnytte fordelene ved intelligent forudsigelser. Hvis du ikke er tilfreds med nøjagtigheden af forudsigelserne, kan en superbruger (igen med blot et enkelt klik) angive erfaringen med udvidelsen AI Builder og derefter vælge eller fravælge de felter, der bruges til at oprette forudsigelser. Når du er færdig, kan du "træne" modellen og udgive ændringerne. Den nyoplærte model vil automatisk blive valgt til at generere forudsigelser i Dynamics 365 Finance.
+Tidligere har det ofte været vanskeligt at udvikle og installere en kunstig intelligens (AI)-løsning. Processen har krævet et team, der omfatter dataforskere, eksperter på området (SME'er) og ingeniører, der arbejder i længere tid på at formulere, udvikle, implementere og vedligeholde en brugbar AI-løsning. Med kundens betalingsforudsigelser er det nemt at implementere og bruge en AI-løsning i Microsoft Dynamics 365 Finance. Microsoft pakker AI-løsninger på forhånd, der er bygget oven på Microsoft AI Builder. Brugerne kan derfor anvende AI-løsningen med et enkelt klik med musen for at udnytte fordelene ved intelligent forudsigelser. Hvis du ikke er tilfreds med nøjagtigheden af forudsigelserne, kan en superbruger (igen med blot et enkelt klik) benytte udvidelsen AI Builder og derefter vælge eller fravælge de felter, der bruges til at oprette forudsigelser. Når du er færdig, kan du "træne" modellen og udgive ændringerne. Den nyoplærte model vil automatisk blive valgt til at generere forudsigelser i Dynamics 365 Finance.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71d1ddd8e6641cdc57c5b83e12f4b3cf68516c611691a7e7199d5b633bdf17d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725404"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964573"
 ---
 # <a name="add-a-logo"></a>Tilføje et logo
 
@@ -55,15 +55,13 @@ Når du har udgivet det opdaterede sidehovedfragment, vises dit logo på alle de
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Vælg et tema for webstedet](select-site-theme.md)
+[Vælge et tema for webstedet](select-site-theme.md)
 
 [Arbejd med CSS-tilsidesættelsesfiler](css-override-files.md)
 
-[Tilføj en favicon](add-favicon.md)
+[Tilføje en favicon](add-favicon.md)
 
-[Tilføj en velkomstmeddelelse](add-welcome-message.md)
-
-[Tilføj en copyright-meddelelse](add-copyright-notice.md)
+[Tilføje en copyright-meddelelse](add-copyright-notice.md)
 
 [Føje sprog til webstedet](add-languages-to-site.md)
 

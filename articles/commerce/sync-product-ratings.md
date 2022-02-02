@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a50c09dc9fd8a4c18bbd01c70338279ac0ad9ae6
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473519"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967944"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkroniser produktvurderinger i Dynamics 365 Commerce
 
@@ -130,6 +130,16 @@ I følgende illustration vises et eksempel på produktvurderinger i callcenter-k
 [Administrere vurderinger og anmeldelser](manage-reviews.md)
 
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
+
+[Synkronisere produktvurderinger](sync-product-ratings.md)
+
+[Aktiver manuel udgivelse af vurderinger og gennemsyn af en redaktør](manual-publish-rating-reviews.md)
+
+[Importere og eksportere bedømmelser og anmeldelser](import-export-reviews.md)
+
+[Konfigurere service-til-service-godkendelse](service-to-service-auth.md)
+
+[Ofte stillede spørgsmål til Vurderinger og anmeldelser](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

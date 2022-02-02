@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b0ccbd1781ccb5aa7f5f62ea86888e1673cb77653af57f6c49319a2b5089ebf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782437"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968790"
 ---
 # <a name="production-setup-requirements"></a>Krav til produktionsopsætning
 
@@ -39,7 +39,7 @@ Der skal angives oplysninger i andre moduler, før du kan arbejde i Produktionss
 -   Definition af varegrupper.
 -   Opsætning af finanskonti for varegrupper.
 -   Opsætning af lagervaretabellen i Lagerstyring.
--   Oprette styklister og styklisteversioner i Lagerstyring.
+-   Oprette styklister og styklisteversioner i Administration af produktoplysninger.
 
 ## <a name="required-calendar-and-resource-setup"></a>Krævet kalender- og ressourceopsætning
 Før du bruger Produktionsstyring, skal du åbne Virksomhedsadministration og oprette og definere kalender- og operationsressourcer i følgende rækkefølge:

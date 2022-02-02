@@ -3,7 +3,7 @@ title: Oversigt over elektronisk rapportering (ER)
 description: Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering. Det indeholder en beskrivelse af nøglebegreber, understøttede scenarier og formater, der er en del af løsningen.
 author: NickSelin
 ms.date: 11/02/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERWorkspace
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b772acd4a8d0849803cefa8fc14ae3dd6e18831
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 976a02f51e22c513b988e1ecfcb792d5f93a4b54
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867274"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986141"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -66,7 +66,7 @@ ER understøtter i øjeblikket TEXT, XML, JSON, PDF, Microsoft Word, Microsoft E
 
 ER-programmet har følgende funktioner:
 
-- Det repræsenterer et enkelt delt værktøj til elektronisk indberetning i forskellige domæner og erstatter mere end 20 forskellige programmer, der foretager en eller anden form for elektronisk rapportering i Finance and Operations.
+- Det repræsenterer et enkelt fælles værktøj til elektronisk indberetning i forskellige domæner og erstatter mere end 20 forskellige programmer, der foretager en eller anden form for elektronisk rapportering i Finance and Operations.
 - Det isolerer en rapports format fra den aktuelle implementering. Med andre ord kan formatet anvendes i forskellige versioner.
 - Det understøtter oprettelse af et brugerdefineret format, der er baseret på et oprindeligt format. Det indeholder også funktioner til automatisk at opgradere det tilpassede format, når det oprindelige format ændres pga. lokaliserings-/tilpasningskrav.
 - Det bliver det primære standardværktøj til understøttelse af lokaliseringskrav i forbindelse med elektronisk rapportering, for både Microsoft og MS-partnere.
@@ -143,7 +143,7 @@ Et ER-lager indeholder ER-konfigurationer. Følgende typer af ER-lagre understø
 
 Et **Delt LCS-bibliotek**-lager giver adgang til listen med konfigurationer i biblioteket for delte aktiver i Lifecycle Services (LCS). Denne type ER-lager kan alene registreres for Microsoft-udbydere. Fra LCS-biblioteket for delte aktiver kan du importere de seneste versioner af ER-konfigurationer til den aktuelle forekomst.
 
-Et **LCS-projektlager** giver adgang til listen over konfigurationer af et bestemt LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt, da lageret blev registreret. Med ER kan du overføre delte konfigurationer fra den aktuelle forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle forekomst af dine Finance and Operations-apps.
+Et **LCS-projektlager** giver adgang til listen over konfigurationer af et bestemt LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt, da lageret blev registreret. Med ER kan du overføre delte konfigurationer fra den aktuelle forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle forekomst af dine Finans- og driftsapps.
 
 Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes som XML-filer i den pågældende mappen på det lokale filsystem på den computer, der er vært for AOS-tjenesten. Den påkrævede mappe vælges på lagerregistreringsstadiet. Du kan importere konfigurationer fra et **Filsystem**-lager til den aktuelle forekomst. 
 

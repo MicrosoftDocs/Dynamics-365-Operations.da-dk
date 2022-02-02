@@ -3,7 +3,7 @@ title: Oversigt over finans i den offentlige sektor
 description: I dette emne beskrives de finansfunktioner, som er tilgængelige for organisationer i den offentlige sektor.
 author: v-kiarnd
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHierarchies, LedgerFundType, LedgerParameters
@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 228147db9421da87701eb507fbbeb45dcb4c61d1
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 269ad190d58afb53e7fc5360451eec5806ca01bb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817694"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984785"
 ---
 # <a name="general-ledger-in-the-public-sector-overview"></a>Oversigt over finans i den offentlige sektor
 

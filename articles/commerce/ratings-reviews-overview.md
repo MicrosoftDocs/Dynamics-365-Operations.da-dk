@@ -3,24 +3,23 @@ title: Oversigt over vurderinger og anmeldelser
 description: Dette emne omhandler vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/01/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c5db01b00390179c2dffcbec50343d7b7101d96
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: eb68652e0d3ecd8d75f2bc0fe9c243749d7de284
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473471"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982246"
 ---
 # <a name="ratings-and-reviews-overview"></a>Oversigt over vurderinger og anmeldelser
 
@@ -53,6 +52,14 @@ Vurderings- og anmeldelsesløsningen indeholder også en Business Intelligence-s
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
 
 [Synkronisere produktvurderinger i Dynamics 365 Commerce](sync-product-ratings.md)
+
+[Aktiver manuel udgivelse af vurderinger og gennemsyn af en redaktør](manual-publish-rating-reviews.md)
+
+[Importere og eksportere bedømmelser og anmeldelser](import-export-reviews.md)
+
+[Konfigurere service-til-service-godkendelse](service-to-service-auth.md)
+
+[Ofte stillede spørgsmål til Vurderinger og anmeldelser](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

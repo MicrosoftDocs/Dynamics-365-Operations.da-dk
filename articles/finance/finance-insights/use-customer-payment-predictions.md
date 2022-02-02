@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 0606118007c01fc21c2c61d2128a7ec014617fcc
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752768"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968906"
 ---
 # <a name="use-customer-payment-predictions"></a>Bruge forudsigelser om debitorbetalinger
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne forklarer, hvordan du kan bruge debitorbetalingsforudsigelser. Før du bruger denne funktion, skal du sikre dig, at du har fuldført opsætningstrinnene for den. Du kan finde flere oplysninger under [Aktivere forudsigelser for debitorbetaling](enable-cust-paymnt-prediction.md).
 
@@ -89,7 +88,7 @@ Du kan få vist nøjagtigheden af kontantforudsigelser ved at gå til **Kredit- 
 
 [![Nøjagtighed af betalingsforudsigelser.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
-Hvis du ikke er tilfreds med nøjagtigheden, skal du vælge linket **Forbedring af modellens nøjagtighed** for at åbne AI Builder-udvidelsesoplevelsen. I udvidelse af AI Builder kan du vælge eller annullere markeringen af felter, indtil du har valgt de felter, du mener er de vigtigste for præcist at forudsige betalingssandsynligheder. Når du er færdig, kan du nemt genregistrere prognosemodellen og udgive dine ændringer. Den nyoplærte forudsigelsesmodel vælges automatisk til forudsigelser i Dynamics 365 Finance.
+Hvis du ikke er tilfreds med nøjagtigheden, skal du vælge linket **Forbedring af modellens nøjagtighed** for at åbne AI Builder-udvidelsesoplevelsen. I udvidelsen af AI Builder kan du vælge eller annullere markeringen af felter, indtil du har valgt de felter, du mener er de vigtigste for præcist at forudsige betalingssandsynligheder. Når du er færdig, kan du nemt genregistrere prognosemodellen og udgive dine ændringer. Den nyoplærte forudsigelsesmodel vælges automatisk til forudsigelser i Dynamics 365 Finance.
 
 [![AI Builder-udvidelsesoplevelse.](./media/ai-builder.png)](./media/ai-builder.png)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25ae7074fcf39bf4408ea1fa0acfc334281bb254
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 443ebaa13d7ac29df66ffe77a2ed938e44a0c488
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675043"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968197"
 ---
 # <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Aktiver manuel udgivelse af vurderinger og vurderinger af en dag
 
@@ -68,3 +68,17 @@ I følgende illustration vises et eksempel, hvor der er valgt tre ikke-publicere
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over vurderinger og anmeldelser](ratings-reviews-overview.md)
+
+[Tilvælge brug af vurderinger og anmeldelser](opt-in-ratings-reviews.md)
+
+[Administrere vurderinger og anmeldelser](manage-reviews.md)
+
+[Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
+
+[Synkronisere produktvurderinger](sync-product-ratings.md)
+
+[Importere og eksportere bedømmelser og anmeldelser](import-export-reviews.md)
+
+[Konfigurere service-til-service-godkendelse](service-to-service-auth.md)
+
+[Ofte stillede spørgsmål til Vurderinger og anmeldelser](ratings-reviews-faq.md)

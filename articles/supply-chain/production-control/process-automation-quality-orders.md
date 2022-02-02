@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: ae0aebc73fc9b5d31409131d78ad1bff7f3771cd
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: fa0c9ea5a2e92ae5af7d937b5f7f16df0ee3c9ef
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860632"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985181"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Aktivere procesautomatiseringsflow for at oprette kvalitetsordrer
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 12/1/2021 -->
 
 Organisationer har et stigende behov for at kunne automatisere standardforretningsprocesser, levere mere brugervenlige interaktioner til personalet og bruge forskellige datasignaler og systemer til at udføre forretningsprocesser automatisk. Med procesautomatisering med robotteknologi (RPA) og Microsoft Power Automate kan virksomheder bruge en oplevelse uden kode til at automatisere gentagne processer og dermed opnå effektivitet og nøjagtighed.
 

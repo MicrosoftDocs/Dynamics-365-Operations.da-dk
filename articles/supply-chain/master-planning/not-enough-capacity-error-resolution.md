@@ -1,5 +1,5 @@
 ---
-title: Rette fejlen i planlægningsprogrammet "Ikke tilstrækkelig kapacitet kunne findes"
+title: Rette fejlen "Ikke tilstrækkelig kapacitet kunne findes" i planlægningsprogrammet og kapacitetsbegrænsning
 description: Dette emne indeholder oplysninger om årsagerne til og løsningerne for 'Produktionsordren %1 kunne ikke planlægges. Fejlen i planlægningsprogrammet "Ikke tilstrækkelig kapacitet kunne findes".
 author: ChristianRytt
 ms.date: 7/29/2021
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 16626a7ee74e89bd129d8435a17d16b41a5e0387
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: becd537d37a8ba8931f2598dccbae8554a4d168e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565753"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985024"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Rette fejlen i planlægningsprogrammet "Ikke tilstrækkelig kapacitet kunne findes"
 
@@ -105,5 +105,11 @@ Hvis du vil se den tilgængelige kapacitet på ressourcegruppen, skal du følge 
 
 1. Gå til **Virksomhedsadministration \> Ressourcer \> Ressourcegrupper**, og vælg en ressourcegruppe, der gælder for den ordre, der ikke kan planlægges.
 1. Vælg **kapacitetsbelastning** eller **kapacitetsbelastning grafisk** i gruppen **Visning** under fanen **Ressourcegruppe** i handlingsruden, og kontroller, at der er tilgængelig kapacitet.
+
+## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Varedisponering reserverer en ressource, når ressourcekalenderen lukkes
+
+Når der anvendes grovplanlægning, planlægger varedisponering kapacitet i overensstemmelse med kalenderen for den primære ressourcegruppe. Den reserverer den sekundære operation samtidig med den primære operation og tager ikke højde for kalenderne eller kapaciteten af den sekundære operation. Det kan resultere i, at produktionsordren planlægges i en lukket kalender eller på et tidspunkt, hvor den sekundære operation ikke er tilgængelig (kalender lukket, ingen kapacitet).
+
+Når der anvendes finplanlægning, tages der i varedisponering højde for både den primære og den sekundære operations kapacitet og kalender ved planlægning af ordren. Hvis ordren skal planlægges, skal kalenderne for ressourcerne i begge operationer være åbne og have ledig kapacitet.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

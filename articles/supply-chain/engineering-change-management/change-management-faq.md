@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ba489358ef2d74e816186f29956aea5538a2432825c7d949e7c9cc23d947b997
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714372"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007601"
 ---
 # <a name="engineering-change-management-faq"></a>Ofte stillede spørgsmål om styring af tekniske ændringer
 
@@ -63,6 +63,11 @@ Følgende tabeller viser de felter, der kopieres under disse processer.
 | **Produktvarianter** | Alle felter i sektionen **Standardproduktvariant** | De samme felter, som er kopieret til den tekniske virksomhed |
 
 Ud over de felter, der vises i den forrige tabel, kopieres alle standardordreindstillinger fra den frigivne vareskabelon, både når produktet oprettes i den tekniske virksomhed, og når det frigives til en driftsvirksomhed. (Hvis du vil have vist standardordreindstillingerne for en skabelon for frigivne varer, skal du åbne den relevante side **Oplysninger om frigivne produkter** og derefter vælge **Standardordreindstillinger** under fanen **Administrer lager** i handlingsruden.)
+
+> [!NOTE]
+>
+> - Enheden angives som standard fra skabelonen.
+> - Når detailhandlere bruger Dynamics 365 Commerce-funktioner, og de tildeler en detailkategori til et produkt, anvender detailkategorien standardværdier i mange af felterne for det frigivne produktniveau. Disse standarder overskriver standardværdier, der allerede kan være angivet af skabelonen eller kopieret fra teknikken.
 
 ## <a name="should-i-create-a-separate-legal-entity-for-engineering-products-or-use-an-existing-legal-entity"></a>Skal jeg oprette en separat juridisk enhed for tekniske produkter eller bruge en eksisterende juridisk enhed?
 

@@ -3,7 +3,7 @@ title: Datamodel til momsberegning
 description: Dette emne indeholder oplysninger om momsdatamodellen, og hvordan feltværdierne i hver enkelt datamodel bestemmes af konteksten for momsberegningstransaktioner.
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864254"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985960"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodel til momsberegning
 
 Dette emne indeholder oplysninger om, hvordan feltværdierne i momsdatamodellen bestemmes i momsberegningstransaktioner.
 
-*Momsdatamodellen* består af felter, der skal bruges til momsberegninger. Microsoft leverer *datamodellen til momsberegning*, som indeholder overskriftsfelter og linjefelter i transaktionsdokumenter i Finance and Operations-apps. De felter, der defineres i datamodellen til momsberegning, er de tilgængelige kolonner i tabellerne med anvendelsesregler i konfigurationen af konfigurationen af funktionen til momsberegning.
+*Momsdatamodellen* består af felter, der skal bruges til momsberegninger. Microsoft leverer *datamodellen til momsberegning*, som indeholder overskriftsfelter og linjefelter i transaktionsdokumenter i Finans- og driftsapps. De felter, der defineres i datamodellen til momsberegning, er de tilgængelige kolonner i tabellerne med anvendelsesregler i konfigurationen af konfigurationen af funktionen til momsberegning.
 
 > [!NOTE] 
 > Nogle noder, der er defineret i datamodellen, f.eks. **post-id** og **tabel-id**, er til tekniske formål. De er ikke tilgængelige kolonner i konfigurationen af momsberegningsfunktionen.
@@ -55,7 +55,7 @@ Du kan også få vist datamodellen for momsberegning og de tilgængelige kolonne
 
     [![Administrer kolonner.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Datamodellen til momsberegning er integreret med Finance and Operations-apps. Ved hver postering, der er relateret til momsberegningen, indsamles værdierne i de felter, der er defineret i tabellerne med anvendelsesregler, og de sendes til tjenesten tax calculation for beregning. I version 40.46 er der 57 foruddefinerede datamodeller tilgængelige for følgende transaktionstyper: indkøbsordrer, salgsordrer, flytteordrer, indkøbsrekvisitioner, tilbudsanmodninger og salgstilbud.
+Datamodellen til momsberegning er integreret med Finans- og driftsapps. Ved hver postering, der er relateret til momsberegningen, indsamles værdierne i de felter, der er defineret i tabellerne med anvendelsesregler, og de sendes til tjenesten tax calculation for beregning. I version 40.46 er der 57 foruddefinerede datamodeller tilgængelige for følgende transaktionstyper: indkøbsordrer, salgsordrer, flytteordrer, indkøbsrekvisitioner, tilbudsanmodninger og salgstilbud.
 
 Enogtredive datamodeller kan medtages som felter i posteringens overskrift. Men ikke alle felter kan anvendes på alle posteringstyper. Følgende tabel viser, hvilke overskriftsfelter der er tilgængelige for bestemte posteringstyper. I nogle tilfælde skal felttilknytningen bestemmes af en foruddefineret logik. Hvor det er relevant, er logikken angivet.
 

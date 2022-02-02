@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0a2bd50ef11e92fb427a61a1e8624fcd7d15e163
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920168"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982144"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planlægning med uendelig kapacitet
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 1/14/2022 -->
 
 Funktionen *Planlægning med uendelig kapacitet for planlægningsoptimering* introducerer en planlægning, der er baseret på ruteoplysninger. Det giver dig mulighed for at planlægge job ud fra en lang række ruteopsætninger. Planlægning for planlægningsoptimering dækker ofte anvendte ruteindstillinger, herunder rækkefølgen af ruteoperationer eller krav til ruteoperationsressourcer.
 
@@ -51,7 +49,9 @@ Under planlægningsprocessen tager systemet også højde for de *ressourcekrav*,
 - Egenskab (Yderligere oplysninger finder du i [Planlægning med ressourcevalg baseret på egenskab](capability-based-scheduling.md).)
 
 > [!NOTE]
-> Krav, der er relateret til personale, for eksempel kompetencer eller certifikatkrav, understøttes ikke endnu.
+>
+> - Hvis ressourcen og/eller ressourcegruppen er indstillet til ubegrænset kapacitet, vil varedisponeringen betragte dem som ubegrænset kapacitet.
+> - Krav, der er relateret til personale, for eksempel kompetencer eller certifikatkrav, understøttes ikke endnu.
 
 Funktionen understøtter også de operationelle egenskaber **Opstillingstid** og **Kørselstid**. Når du angiver disse egenskaber i en ruteoperation, opretter planlægningsprocessen de relevante opstillings- og procesjob.
 

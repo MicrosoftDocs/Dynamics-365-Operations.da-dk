@@ -1,5 +1,5 @@
 ---
-title: Evaluer den indledende forudsigelsesmodel for debitorbetalinger (prøveversion)
+title: Evaluer den indledende forudsigelsesmodel for debitorbetalinger
 description: I dette emne beskrives de trin, du kan tage for at forstå forudsigelsesmodellen for debitorbetaling og evaluerer effektiviteten.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f45392d540b6696d23261a6b2197c3185f5ede2b7c646f6b751480145dcacfdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768861"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969106"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluer den indledende forudsigelsesmodel for debitorbetalinger (prøveversion)
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Evaluer den indledende forudsigelsesmodel for debitorbetalinger
 
 [!include [banner](../includes/banner.md)]
 

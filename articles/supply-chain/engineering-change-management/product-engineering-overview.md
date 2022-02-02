@@ -2,23 +2,22 @@
 title: Oversigt over teknisk ændringsstyring (indeholder video)
 description: Dette emne giver en oversigt over teknisk ændringsstyring, som hjælper dig med at planlægge og administrere produktversioner og administrere produktlivscyklusser og tekniske ændringer.
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
+ms.date: 01/11/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8c200796d587d77c0f4d2344524a890ba964ab39
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952592"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985206"
 ---
 # <a name="engineering-change-management-overview"></a>Oversigt over teknisk ændringsstyring
 
@@ -39,9 +38,9 @@ Teknisk ændringsstyring hjælper dig med at planlægge og administrere produktv
 - Tekniske ændringsanmodninger, der understøttes af arbejdsprocesser
 - Tekniske ændringsordrer, der understøttes af arbejdsprocesser
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Den foregående video ([Styring af ændringer i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
+Den foregående video ([Styring af ændringer i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) er inkluderet i den [Finans- og driftsafspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Aktivere styringen af tekniske funktionsændringer for systemet
 
@@ -71,7 +70,9 @@ Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin.
 
 1. Hvis du også vil bruge versionsdimensionen, skal du markere afkrydsningsfeltet **Produktdimension – Version**. (Dette afkrydsningsfelt er placeret længere nede på listen og er ikke indlejret under noden **Styring af tekniske ændringer**).
 1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Kør en databasesynkronisering for at sikre, at konfigurationsnøglerne er aktiveret korrekt.
+1. Databasen skal synkroniseres for at sikre, at konfigurationsnøglerne er aktiveret korrekt. Udfør et af følgende trin, afhængigt af den type miljø du arbejder på:
+    - **Til Niveau 1-miljøer (udvikling)**: Åbn dit projekt i Microsoft Visual Studio, og vælg derefter **Dynamics 365 \> Synkroniser database \> Synkroniser**.
+    - **Til Niveau 2-miljøer (og højere)**: Databasen synkroniseres automatisk, når du har sat miljøet i og uden for vedligeholdelsestilstand, så du kan springe dette trin over.
 
 > [!IMPORTANT]
 > Fra april 2022 vil licensnøglerne til både **Styring af tekniske ændringer** og **Produktdimension – Version** som standard være aktiveret for alle nye installationer, men du vil stadig kunne deaktivere dem, hvis det er nødvendigt.

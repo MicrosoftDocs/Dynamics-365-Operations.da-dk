@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7ac91dd1d3dfffbf98733bbd8fe8beda538250da
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473543"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968096"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurere vurderinger og anmeldelser
 
@@ -87,9 +87,17 @@ For yderligere oplysninger om konfiguration af vurderings- og anmeldelsesmoduler
 
 [Administrere vurderinger og anmeldelser](manage-reviews.md)
 
-[Konfigurer vurderings- og anmeldelsesmoduler på sider med produktdetaljer](ratings-reviews-modules.md)
-
 [Synkronisere produktvurderinger i Dynamics 365 Retail](sync-product-ratings.md)
+
+[Aktiver manuel udgivelse af vurderinger og gennemsyn af en redaktør](manual-publish-rating-reviews.md)
+
+[Importere og eksportere bedømmelser og anmeldelser](import-export-reviews.md)
+
+[Konfigurere service-til-service-godkendelse](service-to-service-auth.md)
+
+[Ofte stillede spørgsmål til Vurderinger og anmeldelser](ratings-reviews-faq.md)
+
+[Moduler til vurderinger og anmeldelser](ratings-reviews-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

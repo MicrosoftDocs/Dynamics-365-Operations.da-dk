@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 41beef346744dc93be3f2d83e660a96e27562f3da933363a1f99144e34060d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724622"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964726"
 ---
 # <a name="add-a-favicon"></a>Tilføje et favoritikon
 
@@ -86,9 +86,7 @@ Når du får vist sider, der er baseret på den skabelon, du har føjet til frag
 
 [Arbejd med CSS-tilsidesættelsesfiler](css-override-files.md)
 
-[Tilføj en velkomstmeddelelse](add-welcome-message.md)
-
-[Tilføj en copyright-meddelelse](add-copyright-notice.md)
+[Tilføje en copyright-meddelelse](add-copyright-notice.md)
 
 [Føje sprog til webstedet](add-languages-to-site.md)
 
