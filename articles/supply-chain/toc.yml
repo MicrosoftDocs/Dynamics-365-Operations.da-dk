@@ -12,6 +12,8 @@
               items:
                 - name: Nyheder eller ændringer i Supply Chain Management-startside
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.25 (april 2022)
+                  href: get-started/whats-new-scm-10-0-25.md
                 - name: Supply Chain Management 10.0.24 (februar 2022)
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (januar 2022)
@@ -102,8 +104,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Videoer
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ordliste
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Undervisningskatalog
               items:
                 - name: Startside for undervisningskatalog
@@ -308,6 +308,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Arbejdsbelastninger i forbindelse med lagerstedsstyring for sky- og edge-skaleringsenheder
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Konfigurere mobilappen Warehouse Management til cloud- og edge-skaleringsenheder
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Lagerstedsordrer til sky- og edge-skaleringsenheder
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Lagerregulering for lagersted
@@ -1047,7 +1049,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Concatenate
+                        - name: Sammenkæde
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Format
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/supply-chain/toc.json
@@ -1233,6 +1235,8 @@
                   items:
                     - name: Oprette konfigurationer for at importere data fra en ekstern XML-fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importere datamanuelt valgte filer i batchtilstand
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Konfigurere dataimport i batchtilstand fra filer, der findes i SharePoint'
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Importere filer i XML-format
@@ -1461,6 +1465,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Applikationsopdatering 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Applikationsopdatering 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Applikationsopdatering 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
                   items:
                     - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
@@ -1691,13 +1699,17 @@
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Autoriser ordreforslag
                   href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Planlagte ordrer forenklet
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Planlægning med negative disponible lagerantal
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Få vist planhistorik og planlægningslogfiler
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Annullere et planlægningsjob
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Fejlfinde i planlægningsoptimering
+                - name: Handlingsmeddelelser
+                  href: master-planning/action-messages.md
+                - name: Fejlfinde planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Udvidelse til planlægningsoptimering
                   href: master-planning/planning-optimization/extensibility.md
@@ -1729,8 +1741,6 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: Bruge sporing for udfoldning
                   href: master-planning/trace-explosion.md
-                - name: Handlingsmeddelelser
-                  href: master-planning/action-messages.md
                 - name: Overvåge kørsel af en varedisponering
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Oprette en tidsplan for et sted
@@ -1939,27 +1949,27 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsprocessen til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsprocessern til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Arbejdsprocestyper
                   items:
-                    - name: Oprettelse af en arbejdsprocestype
+                    - name: Oprettelse af en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Kontrolliste til arbejdsprocestype
+                    - name: Kontrolliste til arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oprette en arbejdsproceskategori
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Oprette en forespørgsel for en arbejdsprocestype
+                    - name: Oprette en forespørgsel for en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Oprette en ny arbejdsprocestype
+                    - name: Oprette en ny arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oprette en arbejdsprocesdokumentklasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Knytte en arbejdsprocesdokumentklasse til en arbejdsprocestype
+                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Rapport om arbejdsprocestyper
+                - name: Rapport om arbejdsgangstyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ofte stillede spørgsmål om arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json
@@ -2145,7 +2155,7 @@
               items:
                 - name: Konfigurere oplysninger om projektressource
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: Oprette og indsende en projektbudgetarbejdsgang
+                - name: Oprette og indsende en projektbudgetarbejdsproces
                   href: procurement/tasks/submit-approve-project-budget.md
                 - name: Sende og godkende projektbudgetrevisioner
                   href: procurement/tasks/submit-approve-project-budget-revision.md
@@ -3547,7 +3557,7 @@
                   href: troubleshooting/inventory/cant-find-workflow-dropdown.md
                 - name: 'Arbejdsproces for lagerkladder fuldføres aldrig, og kladden kan ikke behandles'
                   href: troubleshooting/inventory/cant-post-inventory-journal.md
-                - name: 'Lagerkladden er låst, og arbejdsprocessens batchjob fungerer ikke'
+                - name: 'Lagerkladden er låst, og arbejdsprocesserns batchjob fungerer ikke'
                   href: troubleshooting/inventory/inventory-journal-locked-workflow.md
                 - name: Enheden og enhedsantallet fungerer ikke korrekt i lagerkladden
                   href: troubleshooting/inventory/journal-unit-quantity-incorrect.md
@@ -3763,6 +3773,8 @@
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Tillidsanker til certificeringsstien blev ikke fundet ved opdatering og overflytning til WMS
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: 'Behandlingsproblemer opstår, efter du har installeret en arbejdsbyrde for en skaleringsenhed for et lagersted'
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
                 - name: Prompten til automatisk reservation af batchnummer vises også selv med tilgængelig lagerbeholdning
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Plukarbejde kan ikke spærres på grund af ikke-færdigmeldt genopfyldningsarbejde
@@ -3901,9 +3913,11 @@
                   href: troubleshooting/warehousing/work-remains-blocked.md
                 - name: 'Du kan ikke annullere arbejde, der er hos en bruger'
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
-    - name: Udvikling og administration af Finance and Operations-apps
+    - name: Udvikling og administration af Økonomi og driftsapps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md

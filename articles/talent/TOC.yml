@@ -1,6 +1,8 @@
-- name: Dynamics 365 for Talent
-  href: ./index.md
+- name: Ophør af Dynamics 365 Talent
+  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
   items:
+    - name: Startside for Dynamics 365 Talent
+      href: ./index.md
     - name: Start her
       items:
         - name: Kom i gang med Talent
@@ -224,9 +226,9 @@
           href: create-onboarding-experience.md
         - name: Hente Onboard-appen
           href: onboard-get-app.md
-        - name: Oprette og sende en onboardingguide
+        - name: Oprette og sende en Onboardingguide
           href: onboard-create-guide.md
-        - name: Oprette en onboardingskabelon
+        - name: Oprette en Onboardingskabelon
           href: onboard-create-template.md
         - name: Redigere guider og skabeloner
           href: onboard-edit-guides-templates.md

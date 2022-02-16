@@ -1,6 +1,6 @@
 ---
-title: Dokumentation til Finance and Operations-ansøgning
-description: Dokumentation til Finance and Operations-apps.
+title: Dokumentation for Finance and Operations-applikation
+description: Dokumentation for Finance and Operations-apps.
 author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe029d6a3eb2555e0d77035b089c7cb3e710ee85
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782126"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075391"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentation til Finance and Operations-ansøgning
+# <a name="finance-and-operations-application-documentation"></a>Dokumentation for Finance and Operations-applikation
 
 [!include [banner](includes/banner.md)]
 
-I dette emne kan du lære, hvordan du lader Finance and Operations-ansøgninger arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold for slutbrugere, udviklere og it-medarbejdere. 
+I dette emne kan du lære at lade for Finance and Operations-applikationer arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold for slutbrugere, udviklere og it-medarbejdere. 
 
 Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 Commerce og Dynamics 365 Human Resources. 
 
@@ -40,8 +40,8 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <td>
 <h3><a href="get-started/before-you-buy.md">Før du køber</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Tilmeld dig en prøveversion af et abonnement</a></p>
- <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Vælg en installationsindstilling</a></p>
- <p><a href="get-started/purchase-on-premises.md">Køb Finance and Operations (i det lokale miljø)</a></p>
+ <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Vælg en udrulningsindstilling</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Købe Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementeringslivscyklus</a></h3>
 <p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
@@ -80,16 +80,18 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale lovpligtige funktioner</a></p>
 
-<h3><a href="hr/hr-landing-page.md">Human resources</a></h3>
+<h3><a href="hr/hr-landing-page.md">Human Resources</a></h3>
+<p><a href="../../human-resources/hr-employee-manager-self-service-overview.md">Medarbejderselvbetjening</a></p>
+<p><a href="../../human-resources/hr-personnel-departments-jobs-positions.md">Personaleadministration</a></p>
+<p><a href="../../human-resources/hr-leave-and-absence-overview.md">Orlov og fravær</a></p>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Frynsegoder</a></p>
-<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
-<p><a href="../../human-resources/hr-learning-questionnaires.md">Spørgeskemaer</a></p>
-<p><a href="hr/manage-recruiting-process.md">Rekruttering</a></p>
-<p><a href="hr/localizations/noam-usa-payroll.md">Løn i USA</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Medarbejderudvikling</a></p>
+<p><a href="../../human-resources/hr-learning-courses.md">Læring</a></p>
+ <p><a href="hr/localizations/noam-usa-payroll.md">Løn i USA</a></p>
 
 </td>
 <td>
-<h3><a href="../../supply-chain/index.md">Supply chain management</a></h3>
+<h3><a href="../../supply-chain/index.md">Supply Chain Management</a></h3>
 <p><a href="../../supply-chain/cost-management/costing-sheets.md">Omkostningsstyring</a></p>
 <p><a href="../../supply-chain/inventory/inventory-home-page.md">Lagerstyring</a></p>
 <p><a href="../../supply-chain/master-planning/master-plans.md">Varedisponering</a></p>
@@ -131,11 +133,6 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <p><a href="../../commerce/define-maintain-retail-channels.md">Konfiguration og styring af kanal</p>
 <p><a href="../../commerce/retail-peripherals-overview.md">MPOS og Cloud POS</p>
 <p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Commerce-udvikling og -administration</p>
-
-<h4><a href="/dynamics365/human-resources/">Dynamics 365 Human Resources</a></h4>
-<p><a href="../../human-resources/hr-admin-overview.md">Vejledning for administrator</a></p>
-<p><a href="../../human-resources/hr-developer-overview.md">Vejledning for udvikler</a></p>
-<p><a href="../../human-resources/hr-hrpro-overview.md">Brugervejledning</a></p>
 
 
 </td>

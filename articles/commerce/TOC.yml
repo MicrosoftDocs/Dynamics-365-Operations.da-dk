@@ -92,6 +92,8 @@
                   items:
                     - name: Nyheder eller ændringer på Commerce-startsiden
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.25 (april 2022)
+                      href: get-started/whats-new-commerce-10-0-25.md
                     - name: Commerce 10.0.24 (februar 2022)
                       href: get-started/whats-new-commerce-10-0-24.md
                     - name: Commerce 10.0.23 (januar 2022)
@@ -124,8 +126,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
                 - name: Videoer
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: Ordliste
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: Undervisningskatalog
               items:
                 - name: Startside for undervisningskatalog
@@ -1744,7 +1744,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/commerce/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
-                        - name: Concatenate
+                        - name: Sammenkæde
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/commerce/toc.json
                         - name: Format
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/commerce/toc.json
@@ -1936,6 +1936,8 @@
                   items:
                     - name: Oprette konfigurationer for at importere data fra en ekstern XML-fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importere datamanuelt valgte filer i batchtilstand
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Konfigurere dataimport i batchtilstand fra filer, der findes i SharePoint'
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: Importere filer i XML-format
@@ -2166,6 +2168,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
                     - name: Applikationsopdatering 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: Applikationsopdatering 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
                   items:
                     - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
@@ -2318,27 +2322,27 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/commerce/toc.json
                 - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsprocessen til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsprocessern til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/commerce/toc.json
                 - name: Arbejdsprocestyper
                   items:
-                    - name: Oprettelse af en arbejdsprocestype
+                    - name: Oprettelse af en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kontrolliste til arbejdsprocestype
+                    - name: Kontrolliste til arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette en arbejdsproceskategori
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oprette en forespørgsel for en arbejdsprocestype
+                    - name: Oprette en forespørgsel for en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oprette en ny arbejdsprocestype
+                    - name: Oprette en ny arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette en arbejdsprocesdokumentklasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Knytte en arbejdsprocesdokumentklasse til en arbejdsprocestype
+                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
-                - name: Rapport om arbejdsprocestyper
+                - name: Rapport om arbejdsgangstyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
                 - name: Ofte stillede spørgsmål om arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/commerce/toc.json
@@ -2384,6 +2388,8 @@
               items:
                 - name: Commerce til it-medarbejdere og -udviklere
                   href: dev-itpro/dev-retail-home-page.md
+                - name: Modernisering af Commerce-teknologistak i butik (hvidbog)
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Konfigurere et lokalt udviklingsmiljø
                   href: dev-itpro/setup-local-dev-env.md
             - name: Udvidelsesmuligheder for onlinekanal
@@ -2820,7 +2826,7 @@
               items:
                 - name: Oprette et udviklingsmiljø til e-handel for at fejlfinde en Retail Server VM på niveau 1
                   href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Udvikling og administration af Finance and Operations-apps
+    - name: Udvikling og administration af Økonomi og driftsapps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

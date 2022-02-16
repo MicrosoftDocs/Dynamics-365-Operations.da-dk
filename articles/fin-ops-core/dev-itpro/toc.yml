@@ -1,10 +1,10 @@
-- name: Udvikling og administration af Finance and Operations-apps
+- name: Udvikling og administration af Økonomi og driftsapps
   items:
-    - name: Udvikling og administration af Finance and Operations-apps
+    - name: Udvikling og administration af Økonomi og driftsapps
       items:
         - name: Dokumentation for Finance and Operations-applikation
           href: ../fin-ops/index.md
-        - name: Udvikling og administration af Finance and Operations-apps
+        - name: Udvikling og administration af Økonomi og driftsapps
           href: index.md
         - name: Nyheder eller ændringer
           items:
@@ -14,6 +14,8 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til version 10.0.25 (april 2022)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Platformsopdateringer til version 10.0.24 (februar 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Platformsopdateringer til version 10.0.23 (januar 2022)
@@ -430,7 +432,9 @@
                   href: deployment/install-deployable-package.md
                 - name: Fjerne installation af en pakke
                   href: deployment/uninstall-deployable-package.md
-                - name: Fejlfinde problemer med pakkeprogrammer
+                - name: Køre tilpassede X++-scripts med nul nedetid
+                  href: deployment/run-custom-scripts.md
+                - name: Fejlfinde problemer med pakkeapplikationer
                   href: deployment/deployable-package-troubleshooting.md
             - name: Installere brugerdefineret hjælp
               items:
@@ -854,6 +858,8 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-filtrering ved hjælp af klasse og metodeattributter
                   href: perf-test/systest-filtering.md
+                - name: Attributten SysTestRow til test af flere værdier
+                  href: perf-test/systest-row.md
                 - name: Bibliotek til godkendelsestest
                   items:
                     - name: Ressourcer til bibliotek til godkendelsestest
@@ -1194,7 +1200,7 @@
                   href: business-events/managing-business-event-endpoints.md
                 - name: Forretningshændelser i applikation
                   href: business-events/app-business-events.md
-                - name: Forretningshændelser i arbejdsgang
+                - name: Forretningshændelser i arbejdsproces
                   href: business-events/business-events-workflow.md
                 - name: Forretningshændelsesbatch
                   href: business-events/system-business-events.md
@@ -1220,7 +1226,7 @@
                       href: business-events/how-to/how-to-servicebus.md
                     - name: Forretningshændelser og Azure Service Bus-kø
                       href: business-events/how-to/how-to-servicebus-queue.md
-                    - name: Forretningshændelser og arbejdsgangsgodkendelser
+                    - name: Forretningshændelser og arbejdsprocesgodkendelser
                       href: business-events/how-to/how-to-workflow.md
                     - name: Forretningshændelser og Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
@@ -1684,7 +1690,7 @@
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
                     - name: Datamodel for projektressourceplanlægning
                       href: migration-upgrade/data-model-changes-resource-management.md
-                    - name: Ændringer af undersystem for arbejdsgang
+                    - name: Ændringer af undersystem for arbejdsproces
                       href: migration-upgrade/workflow-subsystem.md
                     - name: 'Aggregere modeller, der bruges i stedet for kuber til analyser'
                       href: migration-upgrade/in-memory-real-time-aggregate-models.md

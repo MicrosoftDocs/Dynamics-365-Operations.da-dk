@@ -1,5 +1,5 @@
 ---
-title: Velkommen til Dynamics 365 Talent
+title: Startside for Dynamics 365 Talent
 description: Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.
 author: andreabichsel
 ms.date: 10/03/2019
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 414d31dd951e25b38fd504a3cbe5389c62c9ba37b622aa8cff622f2fa91ff290
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ebfec7a723e5f6cf2e4ad7f74a9531be7dfd89
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738095"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051389"
 ---
-# <a name="welcome-to-dynamics-365-talent"></a>Velkommen til Dynamics 365 Talent
+# <a name="dynamics-365-talent-home-page"></a>Startside for Dynamics 365 Talent
 
 [!include [banner](includes/banner.md)]
 
