@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 413143afb578aed29ce0836aaa3ac98ffc0c6cc3
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 7c72f866886f320d8a7fa22d6ccfa7e43284b5bf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484090"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071431"
 ---
 # <a name="process-compensation"></a>Kompensationsbehandling
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,10 +44,10 @@ Når du har gemt parametrene for proceshændelsen, kan du klikke på knappen **O
 
 Klik på knappen **Tilføj** under fanen **Planer** for at føje en kompensationsplan til proceshændelsen. Kolonnerne **Brug anden regulering**, **Reguleringsfaktor** og **Reguleringsbeskrivelse** bruges kun til variable kompensationsplaner og er ikke medtaget i dette emne.
 
-Gem posten, og klik derefter på knappen **Tilføj** under fanen **Handlinger** for at tilføje en fast løn-handlinger for den valgte plan. Du kan bruge indstillingen **Aktiver anbefaling** til at angive et andet beløb end det beregnede resultattillæg for handlingen. Hvis du vil beregne en handling, der er baseret på resultatet af den foregående handling, så flere kompensationshandlinger tilknyttes, skal du markere indstillingen **Brug tidligere resultat**. Fast lønkompensation-handlinger er typer af kompensationslogikken, som du kan give sigende navne. For planer af typen Klasse og Omfang kan du kun tilføje fast løn-handlinger af følgende typer:
+Gem posten, og klik derefter på knappen **Tilføj** under fanen **Handlinger** for at tilføje en fast løn-handlinger for den valgte plan. Du kan bruge indstillingen **Aktiver anbefaling** til at angive et andet beløb end det beregnede resultattillæg for handlingen. Hvis du vil beregne en handling, der er baseret på resultatet af den foregående handling, så flere kompensationshandlinger tilknyttes, skal du markere indstillingen **Brug tidligere resultat**. Fast lønkompensation-handlinger er typer af kompensationslogikken, som du kan give sigende navne. For planer af typen **Klasse** og **Omfang** kan du kun tilføje fast løn-handlinger af følgende typer:
 
-| Fast løn-handlingstype | Funktionalitet                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fast løn-handlingstype | Funktionalitet                  |
+|-------------------------------|-------------------------------------------------------------------------|
 | Egenkapital                        | Egenkapital-handlinger sammenligner medarbejderens lønsats pr. cyklusslutdato med det laveste referencepunkt for niveauet angivet på medarbejderens job. Hvis medarbejderens lønsats er mindre end det mindste referencepunkt, beregnes den stigning, der er nødvendigt for at få medarbejderen op på det laveste punkt i intervallet.                                                                                |
 | Merit                         | Merit-handlinger beregner en stigning, der er baseret på medarbejderens lønsats pr. cyklusslutdato og den stigningsprocent, der findes i budgettet for fast stigning for medarbejderens afdeling, fagforening og lokalitet.                                                                                                                                                                                         |
 | Almindelig                       | Generelle handlinger beregner en stigning, der er baseret på enten en Procent eller give medarbejderne et fast beløb. Dette bestemmes ud fra indstillingerne i **Fast løn** for under fanen **Generelt**.                                                                                                                                                                                                                        |
@@ -53,12 +56,12 @@ Gem posten, og klik derefter på knappen **Tilføj** under fanen **Handlinger** 
 
 Du kan kun føje **Fast løn**-handlinger med en Trin-type til en trinplan.
 
-| Fast løn-handlingstype | Funktionalitet                                                                                                                                                                                           |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fast løn-handlingstype | Funktionalitet                |
+|--------------------------------|------------------------------|
 | Trin                           | Angiv under fanen **Generelt**, om denne Trin-handling skal flytte medarbejderne videre med 0 trin, 1 trin eller 2 trin.                                                                                  |
 |                                | **0 trin** – Medarbejderen modtager lønsatsen for det trin, de aktuelt ligger på.                                                                                                                      |
 |                                | **1 trin** - Systemet kontrollerer, om medarbejderen allerede er på sidste referencepunkt for det pågældende niveau.                                                                                             |
-|                                | **2 trin** - Systemet flytter medarbejderen to trin op fra det aktuelle niveau. Systemet kan kun flytte medarbejderen et eller nul trin, hvis vedkommende når det sidste referencepunkt for sit niveau. |
+|                                | **2 trin** - Medarbejderen flytter to trin op fra det aktuelle niveau. Medarbejderen flytter måske kun et eller nul trin, hvis vedkommende når det sidste referencepunkt for sit niveau. |
 
 ## <a name="run-the-compensation-process"></a>Kør kompensationsprocessen
 Når proceshændelsen er konfigureret med de nødvendige datofelter, planer og handlinger, skal du klikke på **Kør proces** på siden **Proceshændelse**. Det åbner dialogboksen **Kør processer til kompensationshændelser**. Klik på indstillingen **Vis resultater af behandling** for at se, hvordan kompensationsbeløbene er beregnet for hver medarbejder. Hvis du klikker på **OK**, kører kompensationsprocessen for alle medarbejdere, der er i de valgte kompensationsplaner pr. cyklussens slutdato.

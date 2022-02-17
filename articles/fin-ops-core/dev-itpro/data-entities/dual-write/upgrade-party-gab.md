@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: eaafe8d98049cb8838317396f28e9d6ca720a677
-ms.sourcegitcommit: 08dcbc85e372d4e4fb3ba64389f6d5051212c212
+ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "8015709"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060473"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Opgradere til modellen med part- og globalt adressekartotek
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [Microsoft Azure Data Factory-skabeloner](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) hjælper dig med at opgradere følgende eksisterende data i dobbeltskrivning til part- det globale adressekartoteks model: Data i **Konto**-, **Kontakt**- og **Leverandør**-tabeller og elektroniske adresser.
 
@@ -57,7 +57,7 @@ Der kræves følgende forudsætninger for at opgradere til partmodellen og model
 
 En opgradering kræver følgende forberedelse:
 
-+ **Fuld synkronisering:** Både Finance and operations-miljøet og kundeengagement-miljøet er i fuldt synkroniseret tilstand for tabellerne **Konto (Kunde)**, **Kontaktperson** og **Leverandør**.
++ **Fuld synkronisering:** Både Finans og drift-miljøet og kundeengagement-miljøet er i fuldt synkroniseret tilstand for tabellerne **Konto (Kunde)**, **Kontaktperson** og **Leverandør**.
 + **Integrationsnøgler:** **Konto (kunde)**, **Kontakt** og **Leverandør** tabeller i kundeengagementapps bruger de integrationsnøgler, der leveres som standard. Hvis du har tilpasset integrationsnøglerne, skal du tilpasse skabelonen.
 + **Partnummer:** Alle **Konto (kunde)**-, **kontakt**- og **Leverandør**-poster, der skal opgraderes, har et part-nummer. Poster, der ikke har et partnummer, ignoreres. Hvis du vil opgradere disse poster, skal du føje et part-nummer til dem, før du starter opgraderingsprocessen.
 + **Systemnedlukning:** Under opgraderingsprocessen skal både Finans- og driftsmiljøet og kundeengagementsmiljøet være offline.

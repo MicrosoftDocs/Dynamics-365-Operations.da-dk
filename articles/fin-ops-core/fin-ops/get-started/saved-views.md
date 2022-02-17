@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: d6a7b1b21816db43a92364584e15ec04b891c611
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487835"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065700"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## <a name="introduction"></a>Introduktion
 
@@ -212,7 +215,7 @@ Du kan få vist en liste over kendte problemer med gemte visninger ved at se [Op
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan kan jeg aktivere gemte visninger i mit miljø?
 
 > [!NOTE]
-> Funktionen **Gemte visninger** kræver, at Finance and Operations-tilpasningssystemet er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
+> Funktionen **Gemte visninger** kræver, at tilpasningssystemet i Finans og drift er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
 
 Du kan aktivere og deaktivere funktionen **Gemte visninger** via Funktionsstyring i alle miljøer. Når den er aktiveret, aktiveres gemte visninger i alle efterfølgende brugersessioner.
 

@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8758b74f9ce7c8687b7c2925ccd04cd512602db0
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
+ms.openlocfilehash: b3b90bb2a4981f32feb10ee1192e9c4d2e604e7a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465167"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071425"
 ---
 # <a name="create-a-closed-ended-question"></a>Oprette et lukket spørgsmål
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -34,10 +37,10 @@ Lukkede spørgsmål giver dig mulighed at angive muligheder, som svarpersonen ka
 2. Klik på **Ny**.
 3. Indtast en værdi i feltet **Svarsamling**.
 4. Indtast en værdi i feltet **Beskrivelse**.
-    * Du kan bruge funktionen Tilfældig til at placere svarene i en tilfældig rækkefølge, hver gang svarsamlingen bruges til et spørgsmål.  
+    * Du kan bruge funktionen **Tilfældig** til at placere svarene i en tilfældig rækkefølge, hver gang svarsamlingen bruges til et spørgsmål.  
 5. Klik på **Svar**.
 6. Klik på **Ny**.
-    * Sekvensnummeret styrer den rækkefølge, som svarene vises i, medmindre Tilfældig vælges til svarsamlingen.  
+    * Sekvensnummeret styrer den rækkefølge, som svarene vises i, medmindre **Tilfældig** vælges til **svarsamlingen**.  
     * Point kan overdrages til svar til brug i vurdering af spørgeskemaet.  
 7. Angiv et tal i feltet **Point**.
     * Det rigtige svar kan markeres for at angive, at det valgte svar er korrekt. Dette kan bruges til vurdering af spørgeskemaet.  
@@ -61,8 +64,8 @@ Lukkede spørgsmål giver dig mulighed at angive muligheder, som svarpersonen ka
 ## <a name="create-the-question"></a>Opret spørgsmålet
 1. Gå til **Spørgeskema** > **Design** > **Spørgsmål**.
 2. Klik på **Ny**.
-3. Brug feltet Type til at gruppere relaterede spørgsmål.
-    * Du kan bruge inputtyper som afkrydsningsfelt, alternativknap eller kombinationsboks til lukkede spørgsmål.  
+3. Brug feltet **Type** til at gruppere relaterede spørgsmål.
+    * Du kan bruge inputtyper som **Afkrydsningsfelt**, **Alternativknap** eller **Kombinationsfelt** til lukkede spørgsmål.  
 4. Vælg en indstilling i feltet **Inputtype**.
 5. Indtast eller vælg en værdi i feltet **Svarsamling**.
 6. I feltet **Tekst** skal du indtaste en værdi.

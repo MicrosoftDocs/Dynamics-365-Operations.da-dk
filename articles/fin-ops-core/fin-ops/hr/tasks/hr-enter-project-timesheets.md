@@ -13,14 +13,17 @@ ms.search.industry: Service industries
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10e33b9216838313e8f294f4f0f196b07a3d5cc9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: c57ba991de366b4a0e1aa02971a107bed488f914
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964928"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070469"
 ---
 # <a name="enter-project-timesheets"></a>Angive projekttimesedler
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 I denne procedure kan du oprette en timeseddel ved hjælp af en tom timeseddelside. Den nye timeseddel kan baseres på oplysninger fra en tidligere timeseddel eller fra projekt- og aktivitetstildelinger på siden **Favoritter**. Som standard viser listesiden **Alle timesedler** alle dine timesedler for den aktuelle periode. Du kan bruge feltet **Vis** på siden **Mine timesedler** til at filtrere listen over timesedler efter tidsperiode eller projekt eller til at få vist timesedler, der er oprettet på vegne af andre arbejdere. Demodatafirmaet **USSI** bruges til at oprette denne procedure.
 

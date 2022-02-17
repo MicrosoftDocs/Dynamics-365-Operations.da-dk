@@ -2,7 +2,7 @@
 title: Konfiguration til Finance Insights
 description: I dette emne beskrives de konfigurationstrin, der sætter systemet i gang med at bruge de egenskaber, der er tilgængelige i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/19/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827022"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051364"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguration til Finance Insights
 
@@ -100,6 +100,9 @@ Når tilføjelsesprogrammet er installeret korrekt, kan det tage op til en time,
 
    Når processen **Kontrol af status for klargøring af indsigt** er kørt korrekt, kan du aktivere Finance Insights-funktioner i arbejdsområdet **Funktionsstyring**.
 
+> [!NOTE]
+> Hvis processen **Kontrol af status for klargøring af indsigt** ikke kører, skal du gå til **Systemadministration** > **Forespørgsler** > **Batchjob**. I feltet **System til forespørgsler på procesautomatisering** skal du ændre værdien til **Venter** for at starte processen. 
+> 
 ## <a name="feedback-and-support"></a>Feedback og support
 
 Send en mail til [Finance Insights (forhåndsversion)](mailto:fiap@microsoft.com), hvis du er interesseret i at give feedback eller har brug for support.

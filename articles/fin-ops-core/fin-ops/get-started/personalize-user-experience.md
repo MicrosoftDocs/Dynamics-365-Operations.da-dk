@@ -2,7 +2,7 @@
 title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 11/08/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777979"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075416"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emne forklarer, hvordan du kan tilpasse appen, og dækker følgende emner: 
 
@@ -120,7 +124,9 @@ Følgende værktøjer er tilgængelige på værktøjslinjen **Brugertilpasning**
 - Brug værktøjet **Vælg** til at vælge og ændre et elements egenskaber. Hvis du vil bruge dette værktøj, skal du vælge knappen **Vælg** på værktøjslinjen og derefter vælge det ønskede element. Elementets egenskabsvindue åbnes, hvor du kan redigere egenskaberne for dette element. Du kan gentage processen for andre elementer, der kan tilpasses på siden. Bemærk, at nogle egenskaber for brugertilpasning muligvis ikke er tilgængelige i visse scenarier. Du kan f.eks. ikke låse et felt, der er obligatorisk.
 - Brug værktøjet **Skjul** til at skjule et element på siden. Hvis du vil bruge dette værktøj, skal du vælge knappen **Skjul** på værktøjslinjen og derefter vælge det element, du vil skjule. Når du bruger værktøjet **Skjul**, gøres alle elementer, der i øjeblikket er skjult, synlige, men de vises i en nedtonet container. Du kan derefter gøre et element synligt ved at markere det. Hvis du vil se, hvordan siden vil se ud, når der skjules elementer, skal du skifte til et andet tilpasningsværktøj eller lukker værktøjslinjen for brugertilpasning.
 - Brug værktøjet **Tilføj felter** for at tilføje felter på din side. Når du bruger dette værktøj, kan du kun tilføje felter, der er del af sidedefinitionen. Du kan finde oplysninger om, hvordan du opretter nye felter, der ikke er en del af den aktuelle sidedefinition, under [Opret og arbejd med brugerdefinerede felter](user-defined-fields.md). Når du har valgt knappen **Tilføj felter** på værktøjslinjen, skal du først markere det gitter eller den sektion, hvor du vil tilføje et felt. Der åbnes en dialogboks med listen over felter, der er relateret til det gitter eller den sektion, der er valgt. Vælg et eller flere felter på listen **Anbefalede** eller **Alle felter** i dialogboksen. Når du har valgt de ønskede felter, skal du vælge **Opdater**. Gentag processen for at fjerne et felt, du tidligere har tilføjet, men fjern markeringen af feltet i dialogboksen.
-    - Listen **Anbefalede felter** viser felter, der tidligere er tilføjet af andre brugere i organisationen. Denne liste over felter opdateres baseret på gentagelsesfrekvensen for **Anbefaling-batchjob**. En lignende erfaring findes, når du tilføjer nye filterfelter ved hjælp af ruden Filter på en side.
+
+    Listen **Anbefalede felter** viser felter, der tidligere er tilføjet af andre brugere i organisationen. Denne liste over felter opdateres baseret på gentagelsesfrekvensen for **Anbefaling-batchjob**. En lignende erfaring findes, når du tilføjer nye filterfelter ved hjælp af ruden Filter på en side.
+
 - Brug værktøjet **Flyt** til at flytte et element til et andet sted inden i den aktuelle gruppe af elementer. Bemærk, at du ikke kan flytte et element uden for dets overordnede gruppe. Hvis du vil bruge dette værktøj, skal du vælge knappen **Flyt** på værktøjslinjen og derefter vælge det element, du vil flytte. Når du vælger et element, fastlægger appen de steder, hvor elementet kan flyttes hen. Disse steder kaldes *slipzoner*. Når du trækker elementet omkring i den aktuelle gruppe, vises hver slipzone som en farvet, fed linje ud for det område, hvor elementet kan slippes.
 - Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger knappen **Spring over** på værktøjslinjen, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan interaktivt fjerne eller tilføje felter i tabulatorsekvensen.
 - Brug værktøjet **Vis i overskrift**, når du vil have vist et felt i oversigtspanelets oversigtssektion. Når du vælger knappen **Vis i overskrift** på værktøjslinjen, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra oversigten ved at markere felterne.
@@ -152,7 +158,10 @@ For nogle sider, der indeholder lister, er tilpasningsfunktionen **Føj til arbe
 
 - Hvis du vil føje en liste til et arbejdsområde, skal du først sortere eller filtrere listen på siden, så den viser oplysningerne, som de skal vises i arbejdsområdet. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Liste** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan vælge de kolonner, der skal vises på listen i arbejdsområdet. Du kan også angive, hvilken label der bruges til listen i arbejdsområdet.
 - Hvis du vil føje et felt til et arbejdsområde, skal du først filtrere listen på siden, så den viser de data, du vil opsummere eller ønsker hurtig adgang til. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Felt** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til feltet i arbejdsområdet. Du kan også angive, om feltet skal vise en optælling. Når feltet er føjet til arbejdsområdet, kan du vælge det for at åbne den aktuelle side fra arbejdsområdet. Du kan derefter få vist den filtrerede liste, der er knyttet til feltet.
-- Hvis du vil føje et link til et arbejdsområde, skal du først filtrere listen på siden, så den viser dataene, du er interesseret i. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Link** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til linket. Du kan også vælge at angive en label til en ny sektion, der indeholder dette link.
+- Hvis du vil føje et link til et arbejdsområde, skal du først filtrere listen på siden, så den viser dataene, du er interesseret i. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Link** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til linket. Du kan også vælge at angive en label til sektionen, der skal indeholde dette link. Hvis denne sektion ikke findes, oprettes der en ny sektion.
+
+> [!NOTE]
+> Fra og med version 10.0.25, når du konfigurerer listen, feltet eller linket, skal du muligvis også vælge de visninger af arbejdsområder, som du vil føje elementet til, hvis funktionen **(Forhåndsversion) Understøttelse af gemte visninger for arbejdsområde** er aktiveret. De tilgængelige visninger af arbejdsområder vises i sektionen **Indstillinger for arbejdsområde** i hver **Konfigurer**-dialogboks. 
 
 Når du har tilføjet en liste, et felt eller link i et arbejdsområde, kan du åbne dette arbejdsområde og omarrangere elementerne i det, som du vil.
 
@@ -221,7 +230,7 @@ Hvis gemte visninger ikke er aktiveret, skal du benytte følgende fremgangsmåde
 En anden metode til at dele tilpasninger foregår via eksport og import. Individuelle brugere eller en administrator, der arbejder på deres vegne, kan bruge denne metode til at eksportere deres personaliseringer eller visninger og derefter give den eksporterede fil til andre brugere, som kan importere den. Alternativt kan brugere give deres eksporterede tilpasninger til en bruger, der har administratorrettigheder, og brugeren kan derefter bruge administrationssiden **Tilpasning** til at anvende tilpasningsfilen på mange brugere på én gang.
 
 > [!IMPORTANT]
-> Da tilpasninger bevares på tværs af opdateringer, er det unødvendigt og stærkt frarådet at importere alle tilpasninger igen efter en serviceopdatering eller på noget andet tidspunkt.   
+> Da tilpasninger bevares på tværs af opdateringer, er det unødvendigt og stærkt frarådet at importere alle tilpasninger igen efter en serviceopdatering eller på noget andet tidspunkt.
 
 #### <a name="export"></a>Eksport
 
@@ -271,11 +280,8 @@ For kunder, der har aktiveret funktionen **Gemte visninger** skal du se afsnitte
 For kunder, der endnu ikke har aktiveret funktionen [Gemte visninger](saved-views.md), indeholder denne side fire faner:
 
 - **Anvend** – Du kan importere eller vælge en tilpasning for en eller flere brugere. For at anvende en tilpasning på en eller flere brugere skal du først vælge en rolle og brugere, der har denne rolle. Vælg derefter en eksisterende tilpasning, der skal anvendes på de brugere, du har valgt, eller importér en tilpasningsfil. Tilpasningen valideres og anvendes på alle de markerede brugere, næste gang de åbner den valgte side.
-
 - **Slet** – Du kan slette alle tilpasninger for en side eller et arbejdsområde for en eller flere brugere. Vælg først en side eller et arbejdsområde for at se en liste over de brugere, der har tilpasset siden eller området. Vælg de brugere, der skal have ryddet tilpasninger for siden eller arbejdsområdet, og vælg derefter **Ryd**. Alle tilpasninger, som de valgte brugere har anvendt på den valgte side eller det valgte arbejdsområde, slettes. Denne handling kan ikke fortrydes. Hvis der er gemt en tilpasning for siden eller arbejdsområdet, kan denne tilpasning dog importeres igen.
-
 - **Brugere** – Vælg en bruger for at få vist listen over sider, som brugeren har tilpasset. Du kan derefter aktivere eller deaktivere den valgte brugers mulighed for at bruge personlige tilpasninger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller rydde en tilpasning for brugeren. Derudover kan du nulstille billedforklaringer til funktioner for brugeren. Hvis brugeren i så fald tidligere har lukket pop op-vinduer, der introducerede nye funktioner, vises de igen, næste gang brugeren støder på disse funktioner.
-
 - **System** - Du kan midlertidigt deaktivere tilpasninger for alle brugere i systemet. I dette tilfælde slettes alle tilpasninger for alle brugere, og alle sider nulstilles til deres standardtilstand. Hvis du senere aktiverer tilpasninger igen, anvendes alle tilpasninger igen. Du kan også permanent slette alle tilpasninger for alle brugere i systemet. Det er ikke muligt at gendanne tilpasninger, som er blevet slettet. Før du udfører denne opgave, skal du derfor sørge for at eksportere de brugertilpasninger, som du eventuelt vil bruge senere.
 
 ## <a name="personalizing-inventory-dimensions"></a>Tilpasning af lagerdimensioner

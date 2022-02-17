@@ -2,7 +2,7 @@
 title: Designe flersprogede rapporter i elektronisk rapportering
 description: I dette emne forklares det, hvordan du kan bruge elektroniske rapporteringsetiketter (ER) til at designe og generere flersprogede rapporter.
 author: NickSelin
-ms.date: 09/03/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf02e8f90fb83acd8448339f411489851742af18
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e5c6b28dc115719922e418cb7a6156032d994d39
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674423"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074936"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Designe flersprogede rapporter i elektronisk rapportering
 
@@ -28,9 +28,9 @@ ms.locfileid: "7674423"
 
 ## <a name="overview"></a>Overblik
 
-Som forretningsbruger kan du benytte strukturen for [Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere formater for udgående dokumenter, der skal genereres i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Når disse krav kræver, at udgående dokumenter skal genereres på forskellige sprog til forskellige lande/områder, kan du konfigurere et enkelt ER-[format](general-electronic-reporting.md#FormatComponentOutbound), der indeholder sprogafhængige ressourcer. På denne måde kan du genbruge formatet for at generere udgående dokumenter for forskellige lande/områder. Du kan også bruge et enkelt ER-format til at generere et udgående dokument på forskellige sprog for de tilsvarende kunder, leverandører, datterselskaber eller andre parter.
+Som forretningsbruger kan du benytte strukturen for [Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere formater for udgående dokumenter, der skal genereres i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Når disse krav kræver, at udgående dokumenter skal genereres på forskellige sprog til forskellige lande/områder, kan du konfigurere et enkelt ER-format, der indeholder sprogafhængige ressourcer. På denne måde kan du genbruge formatet for at generere udgående dokumenter for forskellige lande/områder. Du kan også bruge et enkelt ER-format til at generere et udgående dokument på forskellige sprog for de tilsvarende kunder, leverandører, datterselskaber eller andre parter.
 
-Du kan konfigurere ER-datamodeller og -modeltilknytninger som datakilder for konfigurerede ER-formater for at definere dataflowet, der angiver, hvilke programdata der skal placeres i genererede dokumenter. Som [udbyder](general-electronic-reporting.md#Provider) af ER-konfigurationer kan du [publicere](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) konfigurerede [datamodeller](general-electronic-reporting.md#data-model-and-model-mapping-components), [modeltilknytninger](general-electronic-reporting.md#data-model-and-model-mapping-components) og [formater](general-electronic-reporting.md#FormatComponentOutbound) som komponenter i en ER-løsning for at generere specifikke udgående dokumenter. Du kan også give kunder tilladelse til at [uploade](general-electronic-reporting-manage-configuration-lifecycle.md) den publicerede ER-løsning, så den kan bruges og tilpasses. Hvis du forventer, at kunder måske taler andre sprog, kan du konfigurere ER-komponenterne, så de indeholder sprogafhængige ressourcer. På denne måde kan indholdet af en redigerbar ER-komponent vises på en kundes foretrukne sprog på designtidspunktet.
+Du kan konfigurere ER-datamodeller og -modeltilknytninger som datakilder for konfigurerede ER-formater for at definere dataflowet, der angiver, hvilke programdata der skal placeres i genererede dokumenter. Som [udbyder](general-electronic-reporting.md#Provider) af ER-konfigurationer kan du [publicere](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) konfigurerede [datamodeller](general-electronic-reporting.md#data-model-and-model-mapping-components), [modeltilknytninger](general-electronic-reporting.md#data-model-and-model-mapping-components) og formater som komponenter i en ER-løsning for at generere specifikke udgående dokumenter. Du kan også give kunder tilladelse til at [uploade](general-electronic-reporting-manage-configuration-lifecycle.md) den publicerede ER-løsning, så den kan bruges og tilpasses. Hvis du forventer, at kunder måske taler andre sprog, kan du konfigurere ER-komponenterne, så de indeholder sprogafhængige ressourcer. På denne måde kan indholdet af en redigerbar ER-komponent vises på en kundes foretrukne sprog på designtidspunktet.
 
 Du kan konfigurere sprogafhængige ressourcer som ER-etiketter. Du kan derefter bruge disse etiketter til at konfigurere ER-komponenter til følgende formål:
 
@@ -232,6 +232,19 @@ Som beskrevet tidligere i dette emne, kan attributterne **Etiket** og **Beskrive
 ## <a name="performance"></a><a name=performance></a>Ydeevne
 
 Når du konfigurerer en ER-formatkomponent til at generere en rapport på dit foretrukne [sprog](#language) eller til at importere et indgående dokument, hvor indholdet fortolkes af dit foretrukne sprog, anbefales det, at du aktiverer funktionen **Cache det foretrukne sprog for den aktuelle bruger til ER-kørsler** i arbejdsområdet til [funktionsstyring](../../fin-ops/get-started/feature-management/feature-management-overview.md). Denne funktion er med til at forbedre ydeevnen, især for ER-formatkomponenter, der indeholder flere referencer til labels i ER-formler og -bindinger og mange [valideringsregler](general-electronic-reporting-formula-designer.md#TestFormula), så der genereres brugermeddelelser på dit foretrukne sprog.
+
+Når du ændrer status for en ER-konfigurationsversion fra **Kladde** til **Fuldført**, gemmes disse labels i programdatabasen, hvis konfigurationsversionen indeholder ER-labels. Lagringsskemaet afhænger af tilstanden for funktionen **Accelerér ER-labels lager**:
+
+- Hvis funktionen ikke er aktiveret, gemmes alle labels i feltet **LABELXML** i tabellen **ERSOLUTIONVERSIONTABLE** som et enkelt XML-kodestykke.
+- Hvis funktionen er aktiveret, oprettes der en separat post for hvert sprog i tabellen **ERSOLUTIONVERSIONLABELSTABLE**. I feltet **CONTENTS** i denne tabel gemmes labels pr. sprog som et komprimeret XML-kodestykke.
+
+Det anbefales, at du aktiverer funktionen **Accelerér ER-labels lager** i arbejdsområdet **Funktionsstyring**. Denne funktion er med til at forbedre udnyttelsen af båndbredde på netværket og den overordnede systemydeevne, da ER-labels på et enkelt sprog i de fleste tilfælde bruges, når du arbejder med en enkelt ER-konfiguration.
+
+Hvis du vil anvende det valgte lagerskema til at beholde labels for alle ER-konfigurationer i den aktuelle forekomst af Finans, skal du følge nedenstående trin.
+
+1. Gå til **Organisationsadministration** > **Periodisk** > **Anvend det valgte labellagerskema til alle ER-konfigurationer**.
+2. Vælg **OK**.
+
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -9,54 +9,54 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: nhelgren
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: c2d1f1e39a5ddccddf6fbbf524ff7eb0945b3c32
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 916f3cfca3bae7a073ce4e956a12080ee01c8d31
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782230"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061272"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Fejlkoder for sundhedskontrol af tabeltilknytningen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dette emne indeholder en beskrivelse af fejlkoder for sundhedskontrol af tilknytningen.
 
 ## <a name="error-100"></a>Fejl 100
 
-Fejlmeddelelsen er "Der anbefales som minimum Finance and Operations-platform version PU 43 for at køre Finance and Operations".
+Fejlmeddelelsen er "Der anbefales som minimum Finans- og driftsplatform version PU 43 for at køre Finans- og driftsanbefalinger".
 
-Funktionen kræver platformopdateringer til version 10.0.19 eller nyere af Finance and Operations-apps.
+Funktionen kræver platformopdateringer til version 10.0.19 eller nyere af Finans- og driftsapps.
 
 ## <a name="error-400"></a>Fejl 400
 
-Fejlmeddelelsen er "Ingen registreringsdata for forretningshændelser blev fundet for enheden \{Finance and Operations UniqueEntityName\}, hvilket betyder, at tilknytningen enten ikke kører, eller alle felttilknytningerne er envejs."
+Fejlmeddelelsen er "Ingen registreringsdata for forretningshændelser blev fundet for enheden \{Finans og drift-UniqueEntityName\}, hvilket betyder, at tilknytningen enten ikke kører, eller alle felttilknytningerne er envejs."
 
 ## <a name="error-500"></a>Fejl 500
 
-Fejlmeddelelsen er "Der blev ikke fundet nogen projektkonfigurationer for projektet \{projektnavn\}. Det kan enten skyldes, at projektet ikke er aktiveret, eller at alle felttilknytninger er envejs fra kundeengagement til Finance and Operations."
+Fejlmeddelelsen er "Der blev ikke fundet nogen projektkonfigurationer for projektet \{projektnavn\}. Det kan enten skyldes, at projektet ikke er aktiveret, eller at alle felttilknytninger er envejs fra kundeengagement til Finans og drift."
 
-Kontrollér tilknytningerne for tabeloversigten. Hvis de er envejs fra apps til kundeengagement til Finance and Operations-apps, genereres der ingen trafik til live-synkronisering fra Finance and Operations-apps til Dataverse.
+Kontrollér tilknytningerne for tabeloversigten. Hvis de er envejs fra kundeengagementsapps til Finans- og driftsapps, genereres der ingen trafik til live-synkronisering fra Finans- og driftsapps til Dataverse.
 
 ## <a name="error-900"></a>Fejl 900
 
-Fejlmeddelelsen er "Udyldig kildefilter \{sourceFilter\}-format for enheden \{Finance and Operations UniqueEntityName\}."
+Fejlmeddelelsen er "Udyldigt kildefilter \{sourceFilter\}-format for enheden \{Finans og drift-UniqueEntityName\}."
 
-Det kildefilter, der er angivet i tabeltilknytningen for Finance and Operations-apps, er ikke er syntaks korrekt. Se [Fejlfinde problemer med aktiv synkronisering](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps) for at validere filterkriterierne.
+Det kildefilter, der er angivet i tabeltilknytningen for Finans- og driftsapps, er ikke korrekt syntaks. Se [Fejlfinde problemer med aktiv synkronisering](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps) for at validere filterkriterierne.
 
 ## <a name="error-1000"></a>Fejl 1000
 
-Fejlmeddelelsen er "Den enhedsforespørgsel \{Finance and Operations UniqueEntityName\}, der bruges til live-synkronisering af dobbeltskrivning, er \{Finance and Operations EntityFilterQueryString\}. Poster, der opfylder forespørgselskriterierne, anvendes til live-synkronisering."
+Fejlmeddelelsen er "Den enhedsforespørgsel \{Finans og drift-UniqueEntityName\}, der bruges til live-synkronisering af dobbeltskrivning, er \{Finans og drift-EntityFilterQueryString\}. Poster, der opfylder forespørgselskriterierne, anvendes til live-synkronisering."
 
 Den enhedsforespørgsel, der blev returneret, er den understøttende SQL-forespørgsel for enheden. Kontrollér, om der er indre joinforbindelser eller filtre i forespørgslen, som bestemmer, hvilke forretningsdata der anvendes til live-synkronisering. Indre joinforbindelser og filtre er obligatoriske betingelser, der skal være opfyldt for hver post, som vælges med henblik på live-synkronisering af dobbeltskrivning.
 
 ## <a name="error-1300"></a>Fejl 1300
 
-Fejlmeddelelsen er "Virtuelle felter \{s.EntityFieldName\} for enheden \{Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName\} spores muligvis ikke med henblik på dobbeltskrivning."
+Fejlmeddelelsen er "Virtuelle felter \{s.EntityFieldName\} for enheden \{Finans og drift EntityMetadata.EntityProperties.LogicalEntityName\} spores muligvis ikke med henblik på dobbeltskrivning."
 
-Virtuelle felter fra Finance and Operations-tabeller kan ikke spores. Live-synkronisering kan synkronisere dataene, men kan ikke registrere de ændringer, der er foretaget i kolonnerne.
+Virtuelle felter fra Finans- og driftstabeller kan ikke spores. Live-synkronisering kan synkronisere dataene, men kan ikke registrere de ændringer, der er foretaget i kolonnerne.
 
 ## <a name="error-1500"></a>Fejl 1500
 
@@ -66,9 +66,9 @@ Datakilden fra enheden har ingen felter, der er knyttet til dobbeltskrivning. Æ
 
 ## <a name="error-1600"></a>Fejl 1600
 
-Fejlmeddelelsen er "Datakilde: \{datasource.DataSourceName\} for enheden \{Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName\} har et område. Kun poster, der opfylder områdebetingelsen, anvendes som udgående."
+Fejlmeddelelsen er "Datakilde: \{datasource.DataSourceName\} for enheden \{Finans og drift EntityMetadata.EntityProperties.LogicalEntityName\} har et område. Kun poster, der opfylder områdebetingelsen, anvendes som udgående."
 
-Enheder i Finance and Operations-apps kan have datakilder, hvor filterområder er aktiveret. Disse områder definerer de poster, der anvendes som en del af live-synkronisering. Hvis nogle af posterne springes over fra Finance and Operations-apps til Dataverse, skal du kontrollere, om posterne opfylder områdekriterierne på enheden. Det kan du ganske enkelt gøre ved at køre en SQL-forespørgsel, der ligner følgende eksempel.
+Enheder i Finans- og driftsapps kan have datakilder, hvor filterområder er aktiveret. Disse områder definerer de poster, der anvendes som en del af live-synkronisering. Hvis nogle af posterne springes over fra Finans- og driftsapps til Dataverse, skal du kontrollere, om posterne opfylder områdekriterierne på enheden. Det kan du ganske enkelt gøre ved at køre en SQL-forespørgsel, der ligner følgende eksempel.
 
 ```sql
 select * from <EntityName> where <filter criteria for the records> on SQL.

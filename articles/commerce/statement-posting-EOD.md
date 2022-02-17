@@ -2,33 +2,30 @@
 title: Forbedringer til funktioner til bogføring af opgørelse
 description: I dette emne beskrives de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen.
 author: analpert
-ms.date: 12/03/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9a5a7d6394a87eccde8e1c364caaaabdb0297fd2
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982197"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087597"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I dette emne beskrives det første sæt af forbedringer, der er foretaget af funktionen til bogføring af opgørelsen. Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktivering
 
-Som standard under installationen af Finance and Operations 7.3.2 konfigureres programmet til at bruge den tidligere funktion til bogføring af opgørelser. Hvis du vil aktivere den forbedrede funktionen til bogføring af opgørelsen, skal du aktivere konfigurationsnøglen til den.
+Som standard under installationen af Finans og drift 7.3.2 konfigureres programmet til at bruge den tidligere funktion til bogføring af opgørelser. Hvis du vil aktivere den forbedrede funktionen til bogføring af opgørelsen, skal du aktivere konfigurationsnøglen til den.
 
 - Gå til **Systemadministration** \> **Opsætning** \> **Licenskonfiguration**, og ryd derefter afkrydsningsfeltet **Opgørelser (ældre)** under noden **Retail og Commerce**, og markér afkrydsningsfeltet **Opgørelser**.
 
@@ -53,12 +50,24 @@ Som en del af forbedringerne af funktionen til bogføring af opgørelser er der 
 
 - **Deaktivering af optælling er påkrævet** – Når denne indstilling er sat til **Ja**, fortsætter bogføringsprocessen for en opgørelse, selvom forskellen mellem det optalte beløb og transaktionsbeløbet i opgørelsen er uden for grænsen, der er defineret i oversigtspanelet **Opgørelse** for butikker.
 
+> [!NOTE]
+> Fra og med Commerce version 10.0.14, når funktionen **Detailopgørelser – Sivende feed** er aktiveret, er batchjobbet **Bogfør lager** ikke længere anvendelige og kan ikke køres.
+
 Derudover er følgende parametre introduceret i oversigtspanelet **Batchbehandling** under fanen **Bogføring** på siden **Commerce-parametre**: 
 
 - **Det maksimale antal parallelle opgørelsesbogføringer** – Dette felt definerer antallet af batchopgaver, der skal bruges til at bogføre flere opgørelser. 
 - **Maks. antal tråde til ordrebehandling pr. opgørelse** – Dette felt repræsenterer det maksimale antal tråde, der bruges af batchjobbet for opgørelsesbogføringen til at oprette og fakturere salgsordrer for en enkelt opgørelse. Det samlede antal tråde, der bruges af bogføringsprocessen for opgørelser, beregnes på basis af værdien i denne parameter ganget med værdien i parameteren **Det maksimale antal parallelle opgørelsesbogføringer**. Hvis værdien af denne parameter er for høj, kan det have en negativ indvirkning på ydeevnen for opgørelsesprocessen.
 - **Maks. antal posteringslinjer, der er inkluderet i aggregeringen** – Dette felt definerer antallet af posteringslinjer, som skal medtages i en enkelt aggregeret transaktion, før der oprettes en ny. Aggregerede posteringer oprettes på basis af forskellige aggregeringskriterier, f.eks. debitor, forretningsdato eller økonomiske dimensioner. Det er vigtigt at bemærke, at linjerne fra en enkelt transaktion ikke bliver opdelt på tværs af forskellige aggregerede transaktioner. Det betyder, at der er mulighed for, at antallet af linjer i en aggregeret transaktion er lidt højere eller lavere baseret på faktorer som antallet af specifikke produkter.
 - **Maksimale antal tråde til at validere butikstransaktioner** – Dette felt definerer antallet af tråde, der skal bruges til validering af transaktioner. Validering af transaktioner er et påkrævet trin, der skal udføres, før transaktionerne kan trækkes ind i opgørelserne. Desuden skal du også definere et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Commerce-parametre**. Det skal defineres, selvom gavekort ikke bruges af organisationen.
+
+Følgende tabel indeholder de anbefalede værdier for de foregående parametre. Disse værdier skal testes og tilpasses konfigurationen af udrulning og den tilgængelige infrastruktur. En stigning i de anbefalede værdier kan påvirke andre batchafviklinger negativt og bør valideres.
+
+| Parameter | Anbefalet værdi | Detaljer |
+|-----------|-------------------|---------|
+| Det maksimale antal parallelle opgørelsesbogføringer | <p>Angiv denne parameter til det antal batchopgaver, der er tilgængelige for den batchgruppe, der kører jobbet **Opgørelse**.</p><p>**Generel regel:** Multiplicer antallet af virtuelle servere for applikationsobjektservere (AOS) med antallet af batchopgaver, der er tilgængelige pr. virtuel server til AOS.</p> | Denne parameter kan ikke anvendes, når funktionen **Detailopgørelser – Sivende feed** er aktiveret. |
+| Maksimalt antal tråde til ordrebehandling pr. opgørelse | Start med at teste værdier ved **4**. Normalt bør værdien ikke overstige **8**. | Denne parameter angiver det antal tråde, der bruges til at oprette og bogføre salgsordrer. Den repræsenterer det antal tråde, der er tilgængelige for bogføring pr. opgørelse. |
+| Maksimale antal transaktionslinjer, der er inkluderet i aggregering | Start med at teste værdier ved **1000**. Afhængigt af konfigurationen af hovedkontoret kan det være mere fordelagtigt med mindre ordrer for ydeevnen. | Denne parameter bestemmer det antal linjer, der medtages i hver salgsordre i forbindelse med bogføring af opgørelsen. Når dette antal er nået, fordeles linjerne til en ny ordre. Selvom antallet af salgslinjer ikke er nøjagtigt, da opdelingen finder sted på salgsordreniveau, vil det være tæt på det antal, der er angivet. Denne parameter bruges til at generere salgsordrer for detailtransaktioner, der ikke har en navngivet kunde. |
+| Maksimale antal tråde til at validere butikstransaktioner | Det anbefales, at du angiver denne parameter til **4**, og at du kun øger den, hvis du ikke opnår acceptabel ydeevne. Det antal tråde, som denne proces bruger, må ikke overstige det antal processorer, der er tilgængelige for batchserveren. Hvis du tildeler for mange tråde her, kan du påvirke en anden batchafvikling. | Denne parameter styrer antallet af transaktioner, der kan valideres på samme tid for en given butik. |
 
 > [!NOTE]
 > Alle indstillinger og parametre, der er relateret til bogføring af opgørelsen, og som er defineret i butikker og på siden **Commerce-parametre**, gælder for funktionen til forbedret bogføring af opgørelser.

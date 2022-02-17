@@ -2,7 +2,7 @@
 title: Tilføje en ny webstedsside
 description: Dette emne indeholder en beskrivelse af, hvordan du tilføjer en ny side på et websted i Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b031431499eba0e109ac04dc46ec187250eba694284864bf78bb1f90265d788
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725380"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090713"
 ---
 # <a name="add-a-new-site-page"></a>Tilføje en ny webstedsside
 
@@ -33,11 +33,11 @@ Når du har oprettet skabeloner og fragmenter til dit websted, er næste trin at
 
 Du kan enten bruge en skabelon eller et layout til din nye side. Du kan finde flere oplysninger under [Oversigt over skabeloner og layout](templates-layouts-overview.md).
 
-## <a name="page-name"></a>Sidenavn
+## <a name="specify-the-page-name"></a>Angive sidenavnet
 
-Sidenavnet skal være entydigt for din side. Det skal være beskrivende, så du nemt kan finde siden, og så andre personer ved, hvad formålet med siden er. Vælg sidenavnet med omhu, da det ikke kan ændres senere.
+Sidenavnet skal være entydigt for dit websted og være sigende, så du nemt kan finde siden, og så andre personer ved, hvad formålet med siden er. Du kan omdøbe siden senere ved at redigere den og derefter vælge blyantssymbolet ud for sidenavnet i egenskabsruden.
 
-## <a name="page-url"></a>Sidens URL-adresse
+## <a name="specify-the-page-url"></a>Angive sidens URL-adresse
 
 Du kan vælge at angive en URL-adresse til den nye side. Når du opretter en side, kan du angive en streng, der bruges til at danne en komplet URL-adresse. Denne streng kaldes også en relativ URL-adresse eller en URL-slug. Der genereres derefter en komplet URL-adresse ud fra URL-sluggen, og den nye side tildeles til den. Du kan ændre URL-sluggen senere, før du publicerer siden. Du kan finde flere oplysninger i [Oprette en side-URL](create-page-URL.md).
 

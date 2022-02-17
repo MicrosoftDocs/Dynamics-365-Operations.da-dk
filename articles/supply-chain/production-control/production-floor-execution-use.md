@@ -2,7 +2,7 @@
 title: Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 description: Dette emne beskriver, hvordan grænsefladen til kørsel af produktionsudstyr anvendes af arbejderne.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920642"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075013"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -138,6 +138,65 @@ I dette tilfælde kan arbejderen angive det samprodukt og det antal, der skal ra
 Når en arbejder fuldfører eller delvist fuldfører et job, kan han eller hun rapportere spild ved at vælge et job under fanen **Aktive job** og derefter vælge **Rapportér spild**. Derefter angiver arbejderen spildantallet ved at bruge det numeriske tastatur i dialogboksen **Rapportér spild**. Arbejderen vælger også en årsag (*Ingen*, *Maskine*, *Operatør* eller *Materiale*).
 
 ![Dialogboksen Rapportér spild.](media/pfei-report-scrap-dialog.png "Dialogboksen Rapportér spild")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Justere materialeforbrug og foretage materialereservationer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbejderne kan justere materialeforbruget for hvert produktionsjob. Denne funktionalitet bruges i scenarier, hvor det faktiske antal materialer, der blev forbrugt af et produktionsjob, var mere eller mindre end det planlagte antal. Den skal derfor reguleres for at holde lagerniveauerne aktuelle.
+
+Arbejderne kan også foretage reservationer af batch- og serienumre for materialer. Denne funktionalitet bruges i scenarier, hvor en arbejder manuelt skal angive, hvilke materialebatch- eller serienumre der er brugt, for at opfylde kravene til materialesporing.
+
+Arbejderne kan angive det antal, der skal reguleres, ved at vælge **Juster materiale**. Knappen er tilgængelig følgende steder:
+
+- I dialogboksen **Rapportér spild**
+- I dialogboksen **Rapportér status**
+- På værktøjslinjen til højre
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Justere materialeforbruget fra dialogboksene Rapportér spild og Rapportér status
+
+Når en arbejder angiver det antal, der skal rapporteres, i dialogboksen **Rapportér status** eller **Rapportér spild**, bliver knappen **Juster materiale** tilgængelig. Når brugeren vælger denne knap, vises dialogboksen **Juster materiale**. I denne dialogboks vises de varer, der er planlagt til forbrug, når det gode eller kasserede antal rapporteres for jobbet.
+
+I dialogboksen viser listen følgende oplysninger:
+
+- **Produktnummer** – Produktvarianten og produktmasteren.
+- **Produktnavn** – Navnet på produktet.
+- **Forslag** – Forkalkuleret antal materialer, der vil blive forbrugt, når der rapporteres status eller spild for det angivne antal til jobbet.
+- **Forbrug** – Det faktiske antal materialer, der vil blive forbrugt, når der rapporteres status eller spild for det angivne antal til jobbet.
+- **Reserveret** – Det antal materialer, der er fysisk reserveret på lageret.
+- **Enhed** – Styklisteenheden.
+
+I dialogboksens højre side vises følgende oplysninger:
+
+- **Produktnummer** – Produktvarianten og produktmasteren.
+- **Forkalkuleret** – Det forkalkulerede antal, der skal forbruges.
+- **Startet** – Det antal, der er startet på produktionsjobbet.
+- **Resterende mængde** – Af det forkalkulerede antal er det antallet, der mangler at blive forbrugt.
+- **Frigivet antal** – Det antal, der er forbrugt.
+
+Følgende opgaver kan udføres:
+
+- Arbejderen kan angive det antal, der skal reguleres for et materiale, ved at vælge **Juster forbrug**. Når antallet er bekræftet, opdateres antallet i kolonnen **Forbrug** med det justerede antal.
+- Når arbejderen vælger **Juster materiale**, oprettes der en produktionspluklistekladde. Denne kladde indeholder samme varer og antal som listen **Juster materiale**.
+- Når arbejderen justerer et antal i dialogboksen **Juster materiale**, opdateres feltet **Forslag** på den tilsvarende kladdelinje med det samme antal. Hvis arbejderen vælger **Annuller** i dialogboksen **Juster materiale**, slettes pluklisten.
+- Hvis arbejderen vælger **OK**, slettes pluklisten ikke. Den bogføres, når jobbet rapporteres i dialogboksen **Rapportér spild** eller **Rapportér status**.
+- Hvis arbejderen vælger **Annuller** i dialogboksen **Rapportér status** eller **Rapportér spild**, slettes pluklisten.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Justere materiale fra værktøjslinjen til højre
+
+Knappen **Juster materiale** kan konfigureres, så den vises på værktøjslinjen til højre. (Du kan finde flere oplysninger i [Designe grænsefladen til produktionsudførelse](production-floor-execution-tabs.md)). En arbejder kan vælge **Juster materiale** for et igangværende produktionsjob. I dette tilfælde vises dialogboksen **Juster materiale**, hvor arbejderen kan foretage de ønskede justeringer. Når dialogboksen åbnes, oprettes der en produktionsplukliste, der indeholder linjer til de justerede antal for produktionsordren. Hvis arbejderen vælger **Bogfør nu**, bekræftes reguleringen, og pluklisten bogføres. Hvis arbejderen vælger **Annuller**, slettes pluklisten uden regulering.
+
+### <a name="reserve-materials"></a>Reservere materialer
+
+I dialogboksen **Juster materiale** kan en arbejder foretage og justere materialereservationer ved at vælge **Reservér materiale**. I dialogboksen **Reservér materiale** vises den fysisk disponible lagerbeholdning for varen for hver lagrings- og sporingsdimension.
+
+Hvis materialet er aktiveret for processerne for avancerede lagersteder, viser listen kun den fysisk tilgængelige lagerbeholdning for materialets produktionsindlagringslokation. Produktionsindlagringslokationen defineres på den ressource, hvor produktionsjobbet er planlagt. Hvis varenummeret er batch- eller serienummerkontrolleret, vises hele oversigten over de fysisk tilgængelige batch- og serienumre. Arbejderen kan vælge **Reservér materiale** for at angive et antal, der skal reserveres. Hvis en eksisterende reservation skal fjernes, kan arbejderen vælge **Fjern reservation**.
+
+Du kan finde flere oplysninger om, hvordan du konfigurerer produktionsindlagringslokationen, i følgende blogpost: [Konfigurere produktionsindlagringslokation](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> De reservationer, en arbejder foretager i dialogboksen **Reservér materiale**, bevares , når arbejderen vælger **Annuller** i dialogboksen **Rapportér status** eller **Rapportér spild**.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Fuldførelse af et job og start af et nyt job
 

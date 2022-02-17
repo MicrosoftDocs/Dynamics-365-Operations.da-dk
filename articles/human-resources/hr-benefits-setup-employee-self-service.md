@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1e0c59eb8db5a97405e87922cc65f3eb74bee48e
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 83718856a864123d7941b21c078bcdb96a62cca8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898434"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067573"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurere medarbejderselvbetjening
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,7 +39,7 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
 
 3. Angiv værdier for følgende felter.
 
-   | Felt | Description |
+   | Felt | Beskrivelse |
    | --- | --- |
    | **Kode for plantype** | Den plantype, der vises, når dette felt er valgt i **Selvbetjening for personalegoder**. |
    | **Felt-id** | Entydigt id for feltet. |
@@ -55,7 +58,7 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere felter til navigatio
 
 3. Angiv værdier for følgende felter.
 
-   | Felt | Description |
+   | Felt | Beskrivelse |
    | --- | --- |
    | **Personalegodekredit-id** | De flekskreditprogramplaner, der vises, når dette felt er valgt i **Selvbetjening for personalegoder**. |
    | **Felt-id** | Entydigt id for feltet. |

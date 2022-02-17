@@ -15,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8bbecf85a13056225b0d35023d759456cade40fe10ca1978058abd8e47693ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740902"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070003"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avanceret filtrering og forespørgselssyntaks
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering, eller operatoren **forekomster** i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
 
@@ -119,9 +122,9 @@ I dette emne beskrives indstillingerne for filtrering og forespørgsler, der er 
 <td>To på hinanden følgende dobbelte anførselstegn (<strong>""</strong>) finder rækker uden værdi for den aktuelle kolonne.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations-forespørgsel</span>) (Finance and Operations-forespørgsel mellem parenteser)</td>
+<td>(<span class="code">Finans- og driftsforespørgsel</span>) (Finans- og driftsforespørgsel mellem parenteser)</td>
 <td>Svarende til en defineret forespørgsel</td>
-<td>Skriv en forespørgsel som en SQL-sætning mellem parenteser ved hjælp af Finance and Operations-forespørgselssproget.</td>
+<td>Skriv en forespørgsel som en SQL-sætning mellem parenteser ved hjælp af Finans- og driftsforespørgselssproget.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        som et eksempel på en filterbetingelse i et felt fra rodens datakilden samt et felt fra en anden datakilde (for siden Alle kunder)</td>
 </tr>

@@ -2,7 +2,7 @@
 title: Arbejde med fragmenter
 description: Dette emne beskriver, hvorfor, hvornår og hvordan du bruger fragmenter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35a19f064b63ce476252064253032d35697bd69c84c4c93db1d0349a57527c2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776188"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090738"
 ---
 # <a name="work-with-fragments"></a>Arbejde med fragmenter 
 
@@ -121,6 +121,20 @@ Udfør følgende trin for at redigere et fragment i Commerce-webstedsgenerator.
 1. Rediger fragmentets modulegenskaber og struktur efter behov. Processen minder om processen til redigering af moduler, der redigeres i sideeditorvisningen.
 
 Du kan også redigere et fragment ved at vælge det på en side, i en skabelon eller i et overordnet fragment og derefter vælge **Rediger fragment** i ruden Egenskaber til højre.
+
+### <a name="rename-a-fragment"></a>Omdøbe et fragment
+
+Udfør følgende trin for at omdøbe et eksisterende fragment i webstedsgenerator.
+
+1. Vælg **Fragmenter** i navigationsruden til venstre.
+1. Vælg navnet på det fragment, du vil omdøbe.
+1. Vælg **Rediger** for at begynde at redigere fragmentet. Bemærk, at du ikke kan redigere et fragment, hvis en anden allerede redigerer fragmentet.
+1. Vælg blyantssymbolet ud for fragmentnavnet i ruden med egenskaber for fragment.
+1. Rediger fragmentnavnet efter behov.
+1. Markér afkrydsningsfeltet for at bekræfte navneændringen.
+1. Vælg **Afslut redigering**.
+
+Du kan omdøbe et oprettet fragment ved at redigere det og derefter vælge blyantssymbolet ud for fragmentnavnet i egenskabsruden.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

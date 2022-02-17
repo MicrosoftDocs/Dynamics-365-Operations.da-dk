@@ -9,33 +9,33 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c9bf5d9017579b4207e09769cff38361442e3938
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781434"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061461"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Foretage fejlfinding af problemer under den indledende opsætning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Dataverse. Specifikt indeholder emnet oplysninger, der kan hjælpe dig med at løse problemer, der kan opstå under den første opsætning af dobbeltskrivningsintegration.
+
+Dette emne indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse. Specifikt indeholder emnet oplysninger, der kan hjælpe dig med at løse problemer, der kan opstå under den første opsætning af dobbeltskrivningsintegration.
 
 > [!IMPORTANT]
 > Nogle af de problemer, som dette emne vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Du kan ikke sammenkæde en Finance and Operations-app med Dataverse
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Du kan ikke oprette et link mellem en Finans- og driftsapp og Dataverse
 
-**Påkrævet rolle for at konfigurere dobbeltskrivning:** Systemadministrator i Finance and Operations-apps og Dataverse.
+**Påkrævet rolle for at konfigurere dobbeltskrivning:** Systemadministrator i Finans- og driftsapps og Dataverse.
 
 Fejl på siden **Opsætning af sammenkædning til Dataverse** er normalt forårsaget af ufuldstændige opsætnings- eller rettighedsproblemer. Kontroller, at hele tilstandskontrollen bliver gennemført tilfredsstillende på siden **Opsætning af sammenkædning til Dataverse**, som vist i følgende illustration. Du kan ikke sammenkæde med Dobbeltskrivning, medmindre hele tilstandskontrollen gennemføres tilfredsstillende.
 
 ![Vellykket tilstandskontrol.](media/health_check.png)
 
-Du skal have rettigheder som Azure AD-lejeradministrator for at kunne sammenkæde Finance and Operations- og Dataverse-miljøer. Når du har kædet miljøerne sammen, kan brugerne logge på ved hjælp af deres legitimationsoplysninger til deres konto og opdatere en eksisterende tabeltilknytning.
+Du skal have legitimationsoplysninger som Azure AD-lejeradministrator for at kunne sammenkæde Finans- og driftsapps og Dataverse-miljøer. Når du har kædet miljøerne sammen, kan brugerne logge på ved hjælp af deres legitimationsoplysninger til deres konto og opdatere en eksisterende tabeltilknytning.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Finde grænsen for antallet af juridiske tabeller eller firmaer, der kan sammenkædes ved dobbeltskrivning
 
@@ -55,7 +55,7 @@ Dobbeltskrivning understøtter ikke flere juridiske enheder/firmaer med samme na
 
 Hvis du vil fjerne spærringen af kunden, skal du fjerne identiske poster fra tabellen **cdm_company** i Dataverse. Hvis tabellen **cdm_company** indeholder poster med et tomt navn, skal du også fjerne eller rette de pågældende poster.
 
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Fejl ved åbning af siden for dobbeltudskrivning i Finance and Operations-apps
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Fejl ved åbning af dobbeltskrivningsside i Finans- og driftsapps
 
 Du kan modtage følgende fejlmeddelelse, når du forsøger at knytte et Dataverse-miljø til dobbeltskrivning:
 
@@ -70,22 +70,22 @@ Denne fejl opstår, når trinnet for appindhold ikke er fuldført. Du kan valide
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + Vælg **Acceptér** for at samtykke. Du giver dit samtykke til at installere appen (med `id=33976c19-1db5-4c02-810e-c243db79efde`) i din lejer.
-+ Denne app skal bruges for Dataverse for at kommunikere med Finance and Operations-apps.
++ Denne app skal bruges for at få Dataverse til at kommunikere med Finans- og driftsapps.
 
     ![Fejlfinding af opsætning af den første synkronisering.](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > Hvis det ikke fungerer, skal URL-adressen startes i privat tilstand i Microsoft Edge eller i inkognito-tilstand i Chrome.
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Finance and Operations-miljø kan ikke findes
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>Finans- og driftsmiljø kan ikke registreres
 
 Du kan modtage følgende fejlmeddelelse:
 
-*Finance and Operations-appmiljø \*\*\*.cloudax.dynamics.com kan ikke findes.*
+*Finans- og driftsappsmiljø \*\*\*.cloudax.dynamics.com kan ikke findes.*
 
 Der er to ting, der kan medføre, at et problem med miljøet ikke bliver opdaget:
 
-+ Den bruger, der skal logge på, er ikke i samme lejer som Finance and Operations-forekomsten.
-+ Der er nogle ældre Finance and Operations-forekomster, som Microsoft var vært for, og som havde et problem med søgning. Du kan løse dette ved at opdatere Finance and Operations-forekomsten. Efter en opdatering kan miljøet findes.
++ Den bruger, der skal logge på, er ikke i samme lejer som Finans og driftsforekomsten.
++ Der er nogle ældre forekomster af Finans og drift, som Microsoft var vært for, og som havde et problem med produktopdagelse. Du kan løse dette ved at opdatere forekomsten af Finans og drift. Efter en opdatering kan miljøet findes.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

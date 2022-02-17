@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d52ff69cfd7a81eb9f19a0ef498c6ceeea77b360
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782350"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062769"
 ---
 # <a name="note-integration"></a>Notaintegration
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 I løbet af Microsoft Dynamics 365-forretningsprocesserne indsamler brugere ofte oplysninger om deres kunder. Oplysningerne registreres som aktiviteter og notater. I dette emne beskrives integrationen af notadata i dobbeltskrivning.
 
@@ -30,7 +30,7 @@ Kundeoplysninger kan klassificeres på følgende måder:
 + **Oplysninger, der kan ageres på, for en Dynamics 365-bruger** - En kunde, der køber en Surface-enhed, angiver f.eks., at enheden skal være pakket ind som gave før levering. Disse instruktioner er oplysninger, der kan anvendes, og som håndteres af den medarbejder hos Contoso, der er ansvarlig for emballagen.
 + **Oplysninger, der ikke kan ageres på** - En kunde besøger f.eks. Contoso-butikken, og under samtalen med en butiksmedarbejder udtrykkes interessen for *Halo*-spil og spiltilbehør. Butikspartneren noterer sig disse oplysninger. Programmet til produktanbefalinger bruger det derefter til at komme med anbefalinger til kunden.
 
-Generelt registreres handlingsbare oplysninger som *aktiviteter* i Finance and Operations-apps og kundetilfredshedsapps. Oplysninger, der ikke kan ageres på, registreres som *noter* i Finance and Operations-apps, and som *bemærkninger* i kundetilfredshedsapps.
+Generelt registreres handlingsbare oplysninger som *aktiviteter* i Finans- og driftsapps og kundetilfredshedsapps. Oplysninger, der ikke kan ageres på, registreres som *noter* i Finans- og driftsapps, and som *anmærkninger* i kundetilfredshedsapps.
 
 > [!TIP]
 > Notater er beregnet til oplysninger, der ikke kan handlings, men appsene forhindrer dig ikke i at bruge dem til at gemme og håndtere oplysninger, der kan handlings, hvis du vil bruge dem på den måde.
@@ -39,7 +39,7 @@ Microsoft frigiver i øjeblikket funktioner til noteintegration. Funktioner til 
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Oprette et notat i en kunde aftale-app
 
-Hvis du vil oprette et notat i en kunde aftale-app og derefter synkronisere den med en Finance and Operations-app, skal du udføre følgende trin.
+Hvis du vil oprette et notat i en kunde aftale-app og derefter synkronisere den med en Finans- og driftsapp, skal du udføre følgende trin.
 
 1. Åbn kontoposten for en kunde i kundetilfredsheds-appen.
 2. Vælg i ruden **Tidslinje** plustegnet (**+**), og vælg derefter **Notat** for at oprette et notat.
@@ -54,7 +54,7 @@ Hvis du vil oprette et notat i en kunde aftale-app og derefter synkronisere den 
 
     ![Nyt notat på debitortidslinjen.](media/notes-ce-3.png)
 
-4. Logge på appen Finance and Operations, og åbn den samme kundepost. Bemærk, at knappen **Vedhæftede filer** (papirklipssymbolet) øverst til højre angiver, at posten er vedhæftet.
+4. Log på Finans- og driftsappen, og åbn den samme kundepost. Bemærk, at knappen **Vedhæftede filer** (papirklipssymbolet) øverst til højre angiver, at posten er vedhæftet.
 
     ![Besked om en vedhæftet fil.](media/notes-ce-4.png)
 
@@ -62,17 +62,17 @@ Hvis du vil oprette et notat i en kunde aftale-app og derefter synkronisere den 
 
     ![Notat fra kundeaftale-appen.](media/notes-ce-5.png)
 
-Eventuelle opdateringer af notatet synkroniseres frem og tilbage mellem Finance and Operations-appen og kundens aftale-app.
+Eventuelle opdateringer af notatet synkroniseres frem og tilbage mellem Finans- og driftsappen og kundeengagementsappen.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Oprette et notat i en Finance and Operations-app
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Opret en note i Finans- og driftsappen
 
-Du kan også oprette et notat i en Finance and Operations-app og derefter synkronisere den med en kundeaftale-app.
+Du kan også oprette en note i en Finans- og driftsapp og derefter synkronisere den med en kundeengagementsapp.
 
-Hvis du vil oprette et notat i en Finance and Operations-app og derefter synkronisere den med en kundeaftale-app, skal du udføre følgende trin.
+Hvis du vil oprette en note i en Finans- og driftsapp og derefter synkronisere den med en kundeengagementsapp, skal du udføre følgende trin.
 
-1. I appen Finance and Operations på siden **Vedhæftede filer** skal du vælge **Ny** \> **Note**.
+1. I Finans- og driftsappen skal du på siden **Vedhæftede filer** vælge **Ny** \> **Note**.
 
-    ![Oprette et notat i en Finance and Operations-app.](media/notes-fo-1.png)
+    ![Oprettelse af en note i Finans- og driftsappen.](media/notes-fo-1.png)
 
 2. Angiv en titel og et kort sæt instruktioner, og vælg derefter **Gem**.
 
@@ -84,17 +84,17 @@ Hvis du vil oprette et notat i en Finance and Operations-app og derefter synkron
 
 Du kan klassificere en note som enten intern eller ekstern.
 
-- I Finance and Operations-appen på siden **Vedhæftede filer** skal du åbne noten og derefter i feltet **Begrænsning** vælge **Intern** eller **Ekstern**.
+- I Finans- og driftsappen skal du på siden **Vedhæftede filer** åbne noten og derefter i feltet **Begrænsning** vælge **Intern** eller **Ekstern**.
 
     ![Begrænsningsfelt.](media/notes-fo-4.png)
 
 Du kan også oprette en URL-adresse.
 
-1. I appen Finance and Operations på siden **Vedhæftede filer** skal du vælge **Ny** \> **URL-adresse**.
+1. I Finans- og driftsappen skal du på siden **Vedhæftede filer** vælge **Ny** \> **URL-adresse**.
 2. Angiv en titel og en URL-adresse.
 3. I feltet **Begrænsning** vælges **Intern** eller **Ekstern**.
 
-    ![Opret en URL-adresse i Finance and Operations-appen.](media/notes-fo-5.png)
+    ![Oprettelse af en URL i Finans- og driftsappen.](media/notes-fo-5.png)
 
 4. Vælg **Gem**.
 
@@ -109,7 +109,7 @@ Du kan også oprette en URL-adresse.
 
 Noteintegration omfatter en samling af tabeltilknytninger, der arbejder sammen i forbindelse med datainteraktion, som vist i følgende tabel.
 
-| Finance and Operations-app | Customer Engagement-app | Betegnelse |
+| Finans- og driftsapp | Customer Engagement-app | Beskrivelse |
 |----------------------------|-------------------------|-------------|
 | [Vedhæftede filer for debitorer](mapping-reference.md#230) | Anmærkning | Virksomheder, der bruger almindelig tekst og URL-adresser til at hente kundespecifikke oplysninger (for både organisationer og personer). |
 | [Vedhæftede kreditordokumenter](mapping-reference.md#231) | Anmærkning | Virksomheder, der bruger almindelig tekst og URL-adresser til at hente leverandørspecifikke oplysninger (for både organisationer og personer). |

@@ -2,7 +2,7 @@
 title: Fejlfinde problemer med opsætningen af Finance Insights
 description: Dette emne indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968830"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064860"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Fejlfinde problemer med opsætningen af Finance Insights
 
@@ -92,3 +92,25 @@ Følgende trin bør være udført.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Fejl, "Vi fandt ingen data for det valgte filterområde. Vælg et andet filterområde, og prøv igen." 
+
+### <a name="resolution"></a>Løsning
+
+Kontrollér konfigurationen af dataintegratoren for at validere, at det fungerer som forventet, og konfigurer data fra AI Builder tilbage til Finans.  
+Du kan finde flere under [Oprette et dataintegrationsprojekt](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Symptom: Træning af forudsigelse af debitorbetaling mislykkedes med AI Builder-fejlen "Forudsigelse bør kun have to specifikke udfaldsværdier for træning af modellen. Knyt til to udfald, og træn igen", "Problem i træningsrapport: IsNotMinRequiredDistinctNonNullValues".
+
+### <a name="resolution"></a>Løsning
+
+Denne fejl angiver, at der ikke er nok historiske transaktioner det sidste år, der repræsenterer hver af de kategorier, der er beskrevet i kategorierne **Til tiden**, **Forsinket** og **Meget forsinket**. Du kan løse denne fejl ved at justere transaktionsperioden **Meget forsinket**. Hvis en regulering af perioden **Meget forsinket** ikke retter fejlen, er **Forudsigelser om debitorbetaling** ikke den bedste løsning, da den har brug for data i hver kategori til træningsformål.
+
+Du kan finde flere oplysninger om, hvordan du justerer kategorierne **Til tiden**, **Forsinket** og **Meget forsinket**, i [Aktivere forudsigelser om debitorbetalinger](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Symptom: Modeltræning mislykkedes
+
+### <a name="resolution"></a>Løsning
+
+Modeltræningen **Likviditetsbudget** kræver data, der dækker mere end ét år, og som indeholder mere end 100 transaktioner. Disse transaktioner skal påvirke de likviditetskonti, der er medtaget i opsætningen af likviditetsbudgettet.
+
+**Forudsigelser om debitorbetaling** kræver mindst 100 debitorfaktura- og betalingsposteringer i løbet af de sidste seks til ni måneder for at oprette forudsigelser.  

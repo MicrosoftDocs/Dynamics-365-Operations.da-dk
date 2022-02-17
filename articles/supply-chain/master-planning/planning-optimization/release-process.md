@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2e0145c28b40f4fbfb54ad7e7ed32fbc130c569
-ms.sourcegitcommit: 8afd0cdb39ec443fb7631c39401967cce0fac34e
+ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7727426"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087160"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 
@@ -33,6 +33,8 @@ Da der ikke vises beskeder, når Planlægningsoptimering opdateres i dit miljø,
 
 | Ændringer | Detaljer om funktionsstyring | Udstedelsesdatoer |
 |---|---|---|
+| <p>Tilføjet understøttelse af planlægningsprioritet for produktionsordrer. | Tilgængelig i version 10.0.25 som en del af funktionen med navnet *Prioritetsstyret MRP-understøttelse for planlægningsoptimering*. | 12. - 18. november 2021 |
+| <p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Der kræves ingen funktionsstyring. | 12. - 18. november 2021 |
 | <p>Ekstra understøttelse af beregningsformler til procestid, produktionsrute med overlap og produktionsoperationsnummer på behovsposteringer.</p><p>Bedre fejlmeddelelser for produktionsplanlægning, der er knyttet til timeout, kapacitet blev ikke fundet og cyklisk rute.</p><p>Forbedret konsistens ved beregning af tilgangsdatoer og afgangsdatoer på både ordreforslag og autoriserede ordrer.</p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering* | 22.- 27. oktober 2021 |
 | <p>Ekstra understøttelse af overvejelser om spildprocent ved beregning af procestid.</p><p>Ekstra understøttelse af operationsnummer og materialeforbrug under planlægning. | Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering* | 5.- 7. oktober 2021 |
 | <p>Ekstra understøttelse af jobtyper til produktionsrute: **Kø før**, **Kø efter** og **Transporttid**.</p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering* | 25. - 30. september 2021 |

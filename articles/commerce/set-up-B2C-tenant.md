@@ -2,7 +2,7 @@
 title: Konfigurere en B2C-lejer i Commerce
 description: I dette emne beskrives, hvordan du konfigurerer dine Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) til godkendelse af brugerwebsteder i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952438"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092453"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -109,7 +109,7 @@ Hvis du vil oprette B2C-programmet, skal du følge disse trin.
 1. For **Omdirigerings-URI** skal du angive dine dedikerede URL-adresser som **Web**-type. Se [Svar-URL-adresser](#reply-urls) nedenfor for at få oplysninger om svar-URL-adresser, og hvordan du formaterer dem. Der skal angives en URL-adresse for omdirigeret URI/svar for at aktivere omdirigering fra Azure AD B2C tilbage til dit websted, når en bruger godkendes. URL-adressen til svaret kan tilføjes under registreringsprocessen, eller den kan tilføjes senere ved at vælge linket **Tilføj et link til en omdirigeret URI** fra menuen **Oversigt** i afsnittet **Oversigt** i B2C-programmet.
 1. For **Tilladelser** skal du vælge **Giv administratortilladelser til OpenID og offline_access**.
 1. Vælg **Registrer**.
-1. Vælg det program, der lige er oprettet, og gå til menuen **API-tilladelser**. 
+1. Vælg det program, der lige er oprettet, og gå til menuen **Godkendelse**. 
 1. Hvis der angives en URL-adresse for svaret, skal du vælge både indstillingen **Adgangstokens** og **Id-tokens** under **Implicit tilladelse og hybridflow** for at aktivere dem til programmet, og vælg derefter **Gem**. Hvis en URL-adresse til svaret ikke er angivet under registreringen, kan den også tilføjes på denne side ved at vælge **Tilføj en platform**, vælge **Web** og derefter angive omdirigerings-URI for programmet. Afsnittet **Implicit tilladelse og hybridflow** vil derefter være tilgængeligt, så der kan vælges både indstillingen **Adgangstokens** og **Id-tokens**.
 1. Gå til menuen **Oversigt** på Azure-portalen, og kopiér **Program-id (klient)**. Notér dig dette id til senere opsætningstrin (der senere refereres til som **Klient-GUID**).
 
@@ -309,19 +309,15 @@ Når konfigurationen af din Azure AD B2C-lejer er fuldført, skal du konfigurere
 
 Udfør følgende trin for at indsamle de nødvendige programoplysninger.
 
-1. Gå til **Start \> Azure AD B2C-programmer** i Azure-portalen.
-1. Vælg dit program, og vælg derefter **Egenskaber** i venstre navigationsrude for at få oplysninger om programmet.
-1. I boksen **Program-id** skal du indsamle program-id'et for det B2C-program, der er oprettet i din B2C-lejer. Det vil senere blive angivet som **Klient-GUID** i webstedsgeneratoren.
-1. Hent svar-URL-adressen under **Svar-URL-adresse**.
-1. Gå til **Start \> Azure AD B2C – Brugerstrømme (politikker)**, og indsaml derefter navnene på hver enkelt brugerstrømpolitik.
+1. Gå til **Startside \> Azure AD B2C - Appregistreringer** i Azure-portalen.
+1. Vælg dit program, og vælg derefter **Oversigt** i venstre navigationsrude for at få oplysninger om programmet.
+1. I referencen **Program-id (klient)** skal du indsamle program-id'et for det B2C-program, der er oprettet i din B2C-lejer. Det vil senere blive angivet som **Klient-GUID** i webstedsgeneratoren.
+1. Vælg **Omdirigerings-URI'er**, og få den URL-adresse til svaret, der vises på dit websted (svar-URL-adressen, der blev angivet under opsætningen).
+1. Gå til **Startside \> Azure AD B2C – Brugerstrømme**, og få derefter de fulde navne på hver enkelt brugerstrømpolitik.
 
-I følgende billede vises et eksempel på siden **Azure AD B2C-programmer**.
+I følgende billede vises et eksempel på oversigtssiden **Azure AD B2C - Appregistreringer**.
 
-![Naviger til B2C-programmet i din lejer.](./media/B2CImage_19.png)
-
-I følgende billede vises et eksempel på siden **Egenskaber** for et program i Azure AD B2C. 
-
-![Kopiér program-id'et fra egenskaberne for B2C-programmet.](./media/B2CImage_21.png)
+![Azure AD B2C – Oversigtsside for appregistreringer med program-id (klient) fremhævet](./media/ClientGUID_Application_AzurePortal.png)
 
 I følgende billede vises et eksempel på brugerstrømpolitikker på siden **Azure AD B2C – Brugerstrømme (politikker)**.
 

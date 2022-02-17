@@ -13,24 +13,27 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67b3cd95276b9e59e794583fa51ddbcec4c43b1e
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 49a64407778fba5669ad13f239363bffd4b0c7d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431308"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071430"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Melde en medarbejder til en variabel lønstruktur
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Chefen for kompensation og frynsegoder kan tilmelde medarbejdere til planer for variabel kompensation for at beregne bonusser i naturalier eller kontanter for medarbejdere. Denne procedure forudsætter, at en variabel kompensationsstruktur er blevet oprettet med feltet **Aktiver tilmelding** angivet til Ja, og at berettigelsesregler er oprettet for den variable kompensationsstruktur. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du begynder denne procedure ved at gå til **Personale** > **Arbejdere** > **Medarbejdere** > **Kompensation** > **Tilmelding til variabel plan**.
+Chefen for kompensation og frynsegoder kan tilmelde medarbejdere til planer for variabel kompensation for at beregne bonusser i naturalier eller kontanter for medarbejdere. Denne procedure forudsætter, at en variabel kompensationsstruktur er blevet oprettet med feltet **Aktivér tilmelding** angivet til **Ja**, og at berettigelsesregler er oprettet for den variable kompensationsstruktur. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du begynder denne procedure ved at gå til **Personale** > **Arbejdere** > **Medarbejdere** > **Kompensation** > **Tilmelding til variabel plan**.
 
 1. Klik på **Ny**.
 2. Klik på rullelisten i feltet **Plan** for at åbne opslaget.
     * Opslaget Plan filtreres til kun at vise de planer for variabel kompensation, som medarbejderen er berettiget til, baseret på Berettigelsesregler.  
 3. Klik op linket i den valgte række på listen.
-4. Slå udvidelsen af sektionen Generelt til/fra.
+4. Slå udvidelsen af sektionen **Generelt** til/fra.
 5. Angiv en dato i feltet **Ikrafttrædelsesdato**.
 6. Klik på **Gem**.
 7. Slå udvidelsen af sektionen **Tilsidesættelser** til/fra.

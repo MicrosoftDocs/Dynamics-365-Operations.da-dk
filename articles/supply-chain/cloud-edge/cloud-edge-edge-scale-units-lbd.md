@@ -2,7 +2,7 @@
 title: Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD
 description: Dette emne indeholder en forklaring på, hvordan der klargøres edge-skaleringsenheder i det lokale miljø ved hjælp af tilpasset hardware og installation, der er baseret på lokale forretningsdata (LBD).
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920667"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024536"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD
 
@@ -26,6 +26,13 @@ Edge-skaleringsenheder spiller en vigtig rolle i den distribuerede hybridtopolog
 Edge-skaleringsenheder implementeres ved at oprette lokale forretningsdata (LBD) [det lokale miljø](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) og derefter konfigurere dem, så de fungerer som en skaleringsenhed i den distribuerede hybridtopologi for Supply Chain Management. Dette kan du opnå ved at knytte det lokale LBD-miljø til et Supply Chain Management-miljø i skyen, der er konfigureret til at fungere som hub.  
 
 I dette emne beskrives, hvordan du kan konfigurere et lokalt LBD-miljø som en edge-skaleringsenhed og derefter knytte det til en hub.
+
+## <a name="infrastructure-considerations"></a>Overvejelser ved infrastrukturen
+
+Edge-skaleringsenheder kører i lokale miljøer, så infrastrukturkravene er meget ens. Der er dog visse forskelle, der skal bemærkes:
+
+- Edge-skaleringsenheder bruger ikke Financial Reporting, så de kræver ikke Financial Reporting-noder.
+- Arbejdsbyrderne ved produktion og lager er ikke beregningstunge, og derfor bør du overveje at tilpasse beregningskraften til AOS-noder tilsvarende.
 
 ## <a name="deployment-overview"></a>Oversigt over installation
 

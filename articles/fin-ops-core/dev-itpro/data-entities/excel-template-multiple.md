@@ -1,6 +1,6 @@
 ---
 title: Dataskabeloner med flere regneark
-description: I dette emne beskrives, hvordan du kan importere data til Finance and Operations ved hjælp af Excel-dataenhedsskabeloner.
+description: I dette emne beskrives, hvordan du kan importere data ved hjælp af Excel-dataenhedsskabeloner i Finans og drift.
 author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 343767d056eb164a7da70fb983fe37569a12986c
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: cf3c423bdf06685a3c4025551927123773ae818a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403994"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070055"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Dataskabeloner med flere regneark
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Datastyring i programmet understøtter Microsoft Excel-baserede skabeloner for dataenheder. Disse skabeloner kan indeholde et eller flere regneark. Skabeloner med flere regneark bruges ofte, når det passer til at administrere data i en enkelt fil og importere den til flere dataenheder. Et eksempel er lokationer og lagersteder.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901983"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069373"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Warehouse Management
 
@@ -143,6 +143,10 @@ Godkendelse med Azure AD giver en sikker metode til at forbinde en mobilenhed me
 Certifikater kan bruges som hemmeligheder for at bevise applikationens identitet, når der anmodes om et token. Den offentlige del af certifikatet overføres til appregistreringen på Azure-portalen, hvorimod hele certifikatet skal installeres på hver enkelt enhed, hvor mobilappen Warehouse Management er installeret. Din organisation er ansvarlig for at administrere certifikatet i form af rotation osv. Du kan bruge selvsignerede certifikater, men du bør altid bruge certifikater, der ikke kan eksporteres.
 
 Du skal gøre certifikatet lokalt tilgængeligt på hver enhed, hvor du kører mobilappen Warehouse Management. Du kan finde oplysninger om, hvordan du administrerer certifikater til Intune-styrede enheder, hvis du bruger Intune, under [Bruge certifikater til godkendelse i Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurere mobilappen Warehouse Management til sky- og edge-skaleringsenheder
+
+Der kræves et par ekstra trin, hvis du planlægger at køre en mobilappen Warehouse Management i en sky- eller edge-skalaenhed. Se [Konfigurere mobilappen Warehouse Management til sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md) for at få vejledning.
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurere applikationen ved at importere forbindelsesindstillinger
 
@@ -306,5 +310,6 @@ Hvis en enhed er mistet eller beskadiget, skal du fjerne adgangen til Supply Cha
 
 - [Indstillinger for mobilenhedsbruger](mobile-device-user-settings.md)
 - [Tildele trinikoner og titler til mobilappen Warehouse Management](step-icons-titles.md)
+- [Konfigurere mobilappen Warehouse Management til sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

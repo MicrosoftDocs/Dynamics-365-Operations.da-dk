@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 614f37236bbd0239925e37ebf29f59ac006d09cd
-ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
+ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "7948789"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087211"
 ---
 # <a name="task-management"></a>Opgavestyring
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 Med Opgavestyring kan du oprette opgaver, der skal fuldføres for at ansætte (onboard), fratræde (offboard) og overføre (stillingsskift) medarbejdere. I opgavestyring bruges begrebet tjeklister. En tjekliste er en liste over opgaver for onboarding, offboarding eller stillingsskift. I opgavestyring bruges tjeklister til at gruppere opgaver og tildele dem til personer eller grupper. Tjeklistefunktionaliteten til onboarding, offboarding og stillingsskift ligner hinanden.
 

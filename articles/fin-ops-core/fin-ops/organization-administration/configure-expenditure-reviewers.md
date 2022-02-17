@@ -9,15 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ceb0a60ccf3d1c989d8663e933faaa5e430d314695e20990c9086cd1b8325ff1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773721"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070140"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurere udgiftsvalidatorer
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Du kan konfigurere dynamiske udgiftsvalidatorer for at dirigere udgifter til gennemsyn på basis af den bruger, der er knyttet til en projektrolle, eller den økonomiske dimension, hvor udgiften debiteres. Arbejdsgangen bruger den angivne projektrolle eller ejeren af den angivne økonomiske dimension til at afgøre, hvem udgiften skal sendes videre til.
 
@@ -49,7 +52,7 @@ Projektlederen, projektcontrolleren og projektlederen er projektlederen. Du kan 
 
 ## <a name="example-1-expenditure-reviewers-based-on-organization-distributions"></a>Eksempel 1: Udgiftsvalidatorer baseret på organisationsfordelinger
 
-Du arbejder for Contoso Apparater, og organisationen har seks afdelinger og 10 ressourcer. Når der sendes en ny indkøbsrekvisition, skal godkendelsen først godkendes fra afdelingschefen og derefter fra bærerchefen.
+Du arbejder for Contoso Appliances, og organisationen har seks afdelinger og 10 ressourcer. Når der sendes en ny indkøbsrekvisition, skal godkendelsen først godkendes fra afdelingschefen og derefter fra bærerchefen.
 
 I dette eksempel konfigurerer du to *udgiftsevalueringer af indkøbsrekvisitioner*:
 
@@ -62,7 +65,7 @@ Når indkøbsrekvisitionen oprettes, knyttes de økonomiske dimensioner afdeling
 
 ## <a name="example-2-expenditure-reviewers-based-on-project-distributions"></a>Eksempel 2: Udgiftsvalidatorer baseret på projektfordelinger
 
-Du arbejder for serviceafdelingen i Contoso Hvidevarer. Organisationen kræver, at projektlederen for hver indkøbsordre skal godkende udgiften. Desuden skal administratoren for projektet godkende den. Godkendelserne kan udføres på én gang. Under alle omstændigheder skal begge brugere godkende indkøbsordren, før arbejdsgangen kan fortsætte.
+Du arbejder i serviceafdelingen hos Contoso Appliances. Organisationen kræver, at projektlederen for hver indkøbsordre skal godkende udgiften. Desuden skal administratoren for projektet godkende den. Godkendelserne kan udføres på én gang. Under alle omstændigheder skal begge brugere godkende indkøbsordren, før arbejdsgangen kan fortsætte.
 
 I dette eksempel kan du oprette en *udgiftsevaluering af indkøbsordrer* med navnet **INDKØBSORDRE og Bærer**. Du markerer afkrydsningsfeltet **Projektleder** og angiver indstillingen **Bærerdimension** til **Ja** under fanen **Projektfordelinger** på **udgiftsvalidator**-siden. Som en del af konfigurationen skal du sikre dig, at feltet **Projektleder** er angivet for alle projekter, og at der er angivet en ejer for alle ressourcer på siden **Økonomiske dimensionsværdier**.
 

@@ -1,6 +1,6 @@
 ---
 title: Organisationshierarki i Dataverse
-description: I dette emne beskrives integrationen af organisatoriske data mellem Finance and Operations-apps og Dataverse.
+description: I dette emne beskrives integrationen af organisationsdata mellem Finans og drift-apps og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: c7ef3a11817d60343503c80d89493262711524b1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782302"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062080"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarki i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Da Dynamics 365 Finance er et økonomisystem, er *organisation* kernekonceptet, og systemopsætningen starter med konfigurationen af et organisationshierarki. Virksomheders økonomi kan derefter spores på organisationsniveau og også på alle niveauer i organisationshierarkiet.
 
@@ -28,17 +28,17 @@ Selvom Dataverse ikke har konceptet med et organisationshierarki, har det et par
 
 ## <a name="data-flow"></a>Dataflow
 
-Et virksomhedsøkosystem, der består af Finance and Operations-apps og Dataverse, vil fortsat have et organisationshierarki. Dette organisationshierarki er baseret på Finance and Operations-apps, men det vises i Dataverse til informations- og udvidelsesformål. I følgende illustration vises de oplysninger om organisationshierarkiet, der vises i Dataverse som envejs dataflow fra Finance and Operations-apps til Dataverse.
+En virksomhedsøkosystem, der består af Finans og drift-apps og Dataverse, vil fortsat have et organisationshierarki. Dette organisationshierarki er baseret på Finans og drift-apps, men det vises i Dataverse til informations- og udvidelsesformål. I følgende illustration vises de oplysninger om organisationshierarkiet, der vises i Dataverse som envejs dataflow fra Finans og drift-apps til Dataverse.
 
 ![Billede af arkitektur.](media/dual-write-data-flow.png)
 
-Organisationshierarkiets tabeltilknytninger er tilgængelige for envejssynkronisering af data fra Finance and Operations-apps til Dataverse.
+Organisationshierarkiets tabeltilknytninger er tilgængelige for envejs synkronisering af data fra Finans- og driftsapps til Dataverse.
 
 ## <a name="templates"></a>Skabeloner
 
 Produktoplysninger indeholder alle de oplysninger, der er knyttet til produktet og dets definition, f. eks. produktdimensionerne eller sporings-og lagringsdimensionerne. Som følgende tabel viser, oprettes der en samling af tabeltilknytninger for at synkronisere produkter og relaterede oplysninger.
 
-Finance and Operations-apps | Kundeengagementapps     | Betegnelse
+Finans og drift-apps | Kundeengagementapps     | Betegnelse
 -----------------------|--------------------------------|---
 [Juridiske enheder](mapping-reference.md#102) | cdm_companies | Giver mulighed for tovejssynkronisering af juridiske enhedsoplysninger (firma).
 [Juridiske enheder](mapping-reference.md#142) | msdyn_internalorganizations |

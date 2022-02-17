@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647554"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075494"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste over ER-funktioner i kategorien tekst
 
@@ -35,6 +35,7 @@ Tekstfunktioner til elektronisk rapportering (ER) kan bruges til at udføre hand
 | [Sammenkæde](er-functions-text-concatenate.md) | Denne funktion returnerer alle de angivne tekststrenge som en *Streng*-værdi, når de er blevet forenet i en streng. |
 | [Format](er-functions-text-format.md) | Denne funktion returnerer den angivne streng som en *Streng*-værdi, efter den er blevet formateret ved at erstatte alle forekomster af **%N** med det *N*'te argument. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Denne funktion søger efter en bestemt *Fasttekst*-værdi i den angivne optællingsdatakilde ved hjælp af det optællingsnavn, der er angivet som en *Streng*-værdi. Hvis *Fasttekst*-værdien findes, returnerer funktionen den. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Denne funktion søger efter en bestemt label for at returnere en *[Streng](er-formula-supported-data-types-primitive.md#string)*-værdi, der repræsenterer oversættelsen af den angivne label på det angivne sprog. |
 | [GuidValue](er-functions-text-guidvalue.md) | Denne funktion konverterer det angivne input af typen *Streng* til et dataelement af typen *GUID*. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Denne funktion opdeler data i JavaScript Object Notation (JSON)-format, som tilgås via den angivne sti og udtrækker en skalarværdi, der er baseret på det angivne ID. Derefter returneres den udpakkede skalarværdi som en *Streng*-værdi. |
 | [Venstre](er-functions-text-left.md) | Denne funktion returnerer en *Streng*-værdi, som repræsenterer det angivne antal tegn i begyndelsen af den angivne streng. |

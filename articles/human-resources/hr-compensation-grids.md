@@ -2,7 +2,7 @@
 title: Konfigurere kompensationsgitre
 description: Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483808"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071410"
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurere kompensationsgitre
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -67,28 +70,16 @@ Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for f
 7. Vælg en indstilling i feltet **Reguleringstype**.
 8. Indtast et tal i feltet **Justeringsbeløb**.
 9. Find og vælg den ønskede post på listen.
-10. Find og vælg den ønskede post på listen.
-11. Find og vælg den ønskede post på listen.
-12. Find og vælg den ønskede post på listen.
-13. Klik på **Anvend på gitter**.
-14. Find og vælg den ønskede post på listen.
-15. Find og vælg den ønskede post på listen.
-16. Find og vælg den ønskede post på listen.
-17. Klik på **Anvend på gitter**.
-18. Find og vælg den ønskede post på listen.
-19. Find og vælg den ønskede post på listen.
-20. Klik på **Anvend på gitter**.
-21. Find og vælg den ønskede post på listen.
-22. Klik på Anvend på gitter.
+10. Klik på **Anvend på gitter**.
     * Nu skal vi bruge masseændringsfunktionen til at justere minimum og maksimumreferencepunkter for hvert niveau. I dette eksempel bruger vi et opslag med 50%, så minimumreferencepunktet reguleres -20% og maksimumopslaget bliver reguleret +20%.  
-23. Indtast et tal i feltet **Justeringsbeløb**.
-24. Indtast eller vælg en værdi i feltet **Referencepunkt**.
-25. Markér eller fjern markeringen af alle rækker på listen.
-26. Klik på **Anvend på gitter**.
-27. Indtast et tal i feltet **Justeringsbeløb**.
-28. Indtast eller vælg en værdi i feltet **Referencepunkt**.
-29. Markér eller fjern markeringen af alle rækker på listen.
-30. Klik på **Anvend på gitter**.
+11. Indtast et tal i feltet **Justeringsbeløb**.
+12. Indtast eller vælg en værdi i feltet **Referencepunkt**.
+13. Markér eller fjern markeringen af alle rækker på listen.
+14. Klik på **Anvend på gitter**.
+15. Indtast et tal i feltet **Justeringsbeløb**.
+16. Indtast eller vælg en værdi i feltet **Referencepunkt**.
+17. Markér eller fjern markeringen af alle rækker på listen.
+18. Klik på **Anvend på gitter**.
 
 
 

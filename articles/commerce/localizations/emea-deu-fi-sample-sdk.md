@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 51107731090b77e75a0e5a8c91b052d494b452e4
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 98641f9989322feb77ab683df66c2c1f9ad50a0d
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944909"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077059"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)
 
@@ -156,13 +156,13 @@ Den foregående procedure aktiverer de udvidelser, der er komponenter i eksemple
 
 ## <a name="design-of-extensions"></a>Design af udvidelser
 
-Regnskabsintegrationstjenestens eksempel til Tyskland er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md). Du kan finde flere oplysninger om designet af løsningen til regnskabsintegration i [Oversigt over eksempeldesign til regnskabsintegration](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Regnskabsintegrationstjenestens eksempel til Tyskland er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md). Du kan finde flere oplysninger om designet af løsningen til regnskabsintegration i [Oversigt over eksempeldesign til regnskabsintegration](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Design af Commerce Runtime-udvidelse
 
 Formålet med udvidelsen, som er en udbyder af regnskabsdokumenter, er at generere servicespecifikke dokumenter og håndtere svar fra tjenesten til regnskabsregistrering.
 
-Udvidelsen CRT er **Runtime.Extensions.DocumentProvider.EFRSample**. Du kan finde flere oplysninger om designet af løsningen til regnskabsintegration i [Oversigt over regnskabsintegration for Commerce-kanaler](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Udvidelsen CRT er **Runtime.Extensions.DocumentProvider.EFRSample**. Du kan finde flere oplysninger om designet af løsningen til regnskabsintegration i [Oversigt over regnskabsintegration for Commerce-kanaler](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Anmodningshandler
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592659"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068786"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Få vist og opdatere enhedsdata med Excel 
 
@@ -28,7 +28,10 @@ ms.locfileid: "7592659"
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics-tilføjelsesprogrammet til Excel. Når du vil åbne dataene i enheden, kan du starte fra enten Excel eller Finance and Operations-apps.
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+
+Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics-tilføjelsesprogrammet til Excel. Når du vil åbne enhedsdataene, kan du starte fra enten Excel eller Finans- og driftsapps.
 
 Ved at åbne enhedsdata i Excel, kan du hurtigt og let få vist og redigere dataene ved hjælp af tilføjelsesprogrammet til Excel. Dette tilføjelsesprogram kræver Microsoft Excel 2016 eller nyere.
 
@@ -37,15 +40,15 @@ Ved at åbne enhedsdata i Excel, kan du hurtigt og let få vist og redigere data
 
 Hvis du vil vide mere om brug af tilføjelsesprogrammet til Excel, kan du se den korte video [Opret en Excel-skabelon for hoved- og linjemønstre](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Åbne enhedsdata i Excel, når du starter fra en Finance and Operations-app
-1. Vælg **Åbn i Microsoft Office** på en side i en Finance and Operations-app.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Åbne objektdata i Excel, når du starter fra en Finans- og driftsapp
+1. Vælg **Åbn i Microsoft Office** på en side i en Finans- og driftsapp.
 
     Hvis roddatakilden (tabel) for siden er den samme som roddatakilden for alle enheder, genereres standardindstillingerne **Åbn i Excel** for siden. **Åbn i Excel**-indstillinger kan findes på ofte brugte sider, f.eks. **Alle leverandører** og **Alle kunder**.
  
 2. Vælg en **Åbn i Excel**-indstilling, og åbn den projektmappe, der er genereret. Denne projektmappe har binding-oplysningerne for enheden, en pointer til dit miljø og en pointer til Excel-tilføjelsesprogrammet.
 3. I Excel skal du vælge **Aktivér redigering** for at aktivere Excel-tilføjelsesprogrammet til at køre. Excel-tilføjelsesprogrammet kører i ruden til højre i Excel-vinduet.
 4. Hvis du kører Excel-tilføjelsesprogrammet for første gang, skal du vælge **Har tillid til dette tilføjelsesprogram**.
-5. Hvis du bliver bedt om at logge på, skal du vælge **Log på** og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Finance and Operations-appen. Excel-tilføjelsesprogrammet bruger en tidligere logon-kontekst fra browseren og logger dig automatisk på, hvis det er muligt. (Du kan finde oplysninger om den browser, der bruges baseret på operativsystemet, i [Browsere, der bruges af Office-tilføjelsesprogrammet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Du kan sikre, at det lykkedes at logge på ved at kontrollere brugernavnet øverst til højre i Excel-tilføjelsesprogrammet. 
+5. Hvis du bliver bedt om at logge på, skal du vælge **Log på** og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Finans- og driftsappen. Excel-tilføjelsesprogrammet bruger en tidligere logon-kontekst fra browseren og logger dig automatisk på, hvis det er muligt. (Du kan finde oplysninger om den browser, der bruges baseret på operativsystemet, i [Browsere, der bruges af Office-tilføjelsesprogrammet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Du kan sikre, at det lykkedes at logge på ved at kontrollere brugernavnet øverst til højre i Excel-tilføjelsesprogrammet. 
 
 Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har valgt. Bemærk, at der ikke er nogen data i projektmappen, før Excel-tilføjelsesprogrammet læser dem ind.
 
@@ -54,7 +57,7 @@ Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har val
 2. I Office Store kan du søge på nøgleordet **Dynamics** og derefter vælge **Tilføj** ud for **Microsoft Dynamics Office-tilføjelsesprogram** (Excel-tilføjelsesprogrammet).
 3. Hvis du kører Excel-tilføjelsesprogrammet for første gang, skal du vælge **Har tillid til dette tilføjelsesprogram** for at aktivere Excel-tilføjelsesprogrammet til at køre. Excel-tilføjelsesprogrammet kører i ruden til højre i Excel-vinduet.
 4. Vælg **Tilføj serveroplysninger** for at åbne ruden **Indstillinger**.
-5. I din browser skal du kopiere URL-adressen fra din destinationsforekomst af Finance and Operations-appen, indsætte den i feltet **Serverens URL-adresse** og derefter slette alt efter værtsnavnet. Den resulterende URL-adresse skal kun indeholde værtsnavnet.
+5. I din browser skal du kopiere URL-adressen fra din destinationsforekomst af Finans- og driftsappen, indsæt den i feltet **Serverens URL-adresse**, og slet derefter alt efter værtsnavnet. Den resulterende URL-adresse skal kun indeholde værtsnavnet.
 
     Hvis URL-adressen f.eks. er `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, skal du slette alt undtagen `https://xxx.dynamics.com`.
 
@@ -73,7 +76,7 @@ Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har val
 Når Excel-tilføjelsesprogrammet har indlæst enhedsdata i projektmappen, kan du opdatere dataene når som helst ved at vælge **Opdater** i Excel-tilføjelsesprogrammet.
 
 ## <a name="edit-entity-data-in-excel"></a>Rediger enhedsdata i Excel
-Du kan ændre enhedsdata efter behov, og derefter udgive dem tilbage til Finance and Operations-apps igen ved at vælge **Udgiv** i Excel-tilføjelsesprogrammet. Hvis du vil redigere en post, skal du markere en celle i regnearket og derefter ændre celleværdien. Hvis du vil tilføje en ny post, skal du benytte en af følgende fremgangsmåder:
+Du kan ændre enhedsdata efter behov, og derefter udgive dem tilbage til Finans- og driftsapps igen ved at vælge **Publicer** i Excel-tilføjelsesprogrammet. Hvis du vil redigere en post, skal du markere en celle i regnearket og derefter ændre celleværdien. Hvis du vil tilføje en ny post, skal du benytte en af følgende fremgangsmåder:
 
 - Klik et vilkårligt sted i datakildetabellen, og vælg derefter **Ny** i Excel-tilføjelsesprogrammet.
 - Klik et sted i den sidste række i datakildetabellen, og tryk derefter på tabulatortasten, indtil markøren flyttes ud af den sidste kolonne i rækken, og der oprettes en ny række.

@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23ac3067c03bf2cf336848301e8c27b60da8dc8c
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2a9753e220e62794b157340c9f8e6f8a053e9ba7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964825"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067977"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identificere og installere kandidatudvælgelsesværktøjer
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besætte ledige stillinger, specielt når en stilling kræver et specielt sæt færdigheder. Ansøgere med de færdigheder, du har brug for, er dog muligvis allerede ansat i organisationen. Du kan søge efter bestemte færdigheder blandt eksisterende medarbejdere eller nye ansøgere. Dette giver en rekrutteringsmedarbejder mulighed for hurtigt at samle og screene ansøgere, der har ansøgt om ledige stillinger nu eller tidligere eller for at finde potentielle ansøgere fra deres eksisterende gruppe af medarbejdere. Brug denne procedure til at se, hvordan funktionen til kompetencesøgning kan hjælpe dig med at finde den rette person til en ledig stilling. Demodatafirmaet **USMF** bruges til at oprette denne procedure.
 

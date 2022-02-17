@@ -2,7 +2,7 @@
 title: Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 description: Dette emne forklarer, hvordan du inspicerer de konfigurerede ER-komponenter (elektronisk rapportering) for at forhindre kørselsproblemer, der kan opstå.
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488108"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074785"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 
 [!include[banner](../includes/banner.md)]
 
-Alle konfigurerede komponenter i ER-[format](general-electronic-reporting.md#FormatComponentOutbound) [(elektronisk rapportering)](general-electronic-reporting.md) og [modeltilknytnings](general-electronic-reporting.md#data-model-and-model-mapping-components)komponenter kan [valideres ](er-fillable-excel.md#validate-an-er-format)på designtidspunktet. Under denne validering foretages en konsistenskontrol for at forhindre kørselsproblemer, der kan opstå, f.eks. kørselsfejl og reduktion af ydeevnen. For hvert enkelt problem, der findes, angiver kontrollen stien til et problematisk element. I forbindelse med nogle problemer findes der en automatisk rettelse.
+Alle konfigurerede komponenter i ER-[format](er-overview-components.md#format-components-for-outgoing-electronic-documents) [(elektronisk rapportering)](general-electronic-reporting.md) og [modeltilknytnings](er-overview-components.md#model-mapping-component)komponenter kan [valideres ](er-fillable-excel.md#validate-an-er-format)på designtidspunktet. Under denne validering foretages en konsistenskontrol for at forhindre kørselsproblemer, der kan opstå, f.eks. kørselsfejl og reduktion af ydeevnen. For hvert enkelt problem, der findes, angiver kontrollen stien til et problematisk element. I forbindelse med nogle problemer findes der en automatisk rettelse.
 
 Som standard anvendes valideringen automatisk i følgende tilfælde for en ER-konfiguration, der indeholder de tidligere nævnte ER-komponenter:
 
@@ -236,6 +236,15 @@ I nedenstående tabel vises en oversigt over de inspektioner, ER tilbyder. Du ka
 <td>Fejl</td>
 <td>Der er mere end to områdekomponenter uden replikering. Fjern unødvendige komponenter.</td>
 </tr>
+<tr>
+<td><a href='#i18'>Mulighed for udførelse af et udtryk med ORDERBY-funktion</a></td>
+<td>Mulighed for udførelse</td>
+<td>Fejl</td>
+<td>
+<p>Der kan ikke forespørges om ORDERBY-funktionens listeudtryk.</p>
+<p><b>Kørselsfejl:</b> Sortering understøttes ikke. Valider konfigurationen for at få flere oplysninger om dette.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -365,7 +374,7 @@ Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 8. Navngiv det nye indlejrede felt **$AccNumber**, og konfigurer det, så det indeholder udtrykket `TRIM(Vendor.AccountNum)`.
 9. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**, og kontroller, at udtrykket `FILTER(Vendor, Vendor.AccountNum="US-101")` i datakilden **Kreditor** kan forespørges.
 
-    ![Kontrollere, at udtrykket kan forespørges på siden Modeltilknytningsdesigner.](./media/er-components-inspections-04.gif)
+    ![Kontrollere, at udtrykket med FILTER-funktionen kan forespørges på siden Modeltilknytningsdesigner.](./media/er-components-inspections-04.gif)
 
 10. Bemærk, at der opstår en valideringsfejl, fordi datakilden **Kreditor** indeholder et indlejret felt af typen **Beregnet felt**, der ikke tillader, at udtrykket i datakilden **FilteredVendor** oversættes til den direkte SQL-sætning.
 
@@ -671,19 +680,19 @@ I følgende illustration vises den kørselsfejl, der opstår, hvis du ignorerer 
 
 ![Der opstod kørselsfejl under kørsel af formattilknytningen på siden Formatdesigner.](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution&quot;></a>Automatisk løsning
+### <a name="automatic-resolution"></a>Automatisk løsning
 
 Det er ikke muligt at løse dette problem automatisk.
 
-### <a name=&quot;manual-resolution&quot;></a>Manuel løsning
+### <a name="manual-resolution"></a>Manuel løsning
 
-#### <a name=&quot;option-1&quot;></a>Indstilling 1
+#### <a name="option-1"></a>Indstilling 1
 
 Fjern flaget **Cache** fra datakilden **Kreditor**. Datakilden **FilteredVendor** bliver derefter eksekverbar, men datakilden **Kreditor**, der refereres til i tabellen VendTable, åbnes, hver gang datakilden **FilteredVendor** kaldes.
 
-#### <a name=&quot;option-2&quot;></a>Indstilling 2
+#### <a name="option-2"></a>Indstilling 2
 
-Rediger udtrykket i datakilden **FilteredVendor** fra `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` til `WHERE(Vendor, Vendor.AccountNum="US-101")`. I dette tilfælde åbnes datakilden **Kreditor**, der refereres til i tabellen VendTable, kun under det første opkald fra datakilden **Kreditor**. Valg af poster sker dog i hukommelsen. Denne fremgangsmåde kan derfor forårsage dårlig ydeevne.
+Rediger udtrykket i datakilden **FilteredVendor** fra `FILTER(Vendor, Vendor.AccountNum="US-101")` til `WHERE(Vendor, Vendor.AccountNum="US-101")`. I dette tilfælde åbnes datakilden **Kreditor**, der refereres til i tabellen VendTable, kun under det første opkald fra datakilden **Kreditor**. Valg af poster sker dog i hukommelsen. Denne fremgangsmåde kan derfor forårsage dårlig ydeevne.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Manglende binding
 
@@ -892,6 +901,47 @@ Det er ikke muligt at løse dette problem automatisk.
 #### <a name="option-1"></a>Indstilling 1
 
 Rediger det konfigurerede format ved at ændre egenskaben **Replikeringsretning** for alle uoverensstemmende **Excel\\-område**-komponenter.
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a>Mulighed for udførelse af et udtryk med ORDERBY-funktion
+
+Den indbyggede [ORDERBY](er-functions-list-orderby.md) ER-funktion bruges til at sortere posterne i en ER-datakilde for den **[Postlistetype](er-formula-supported-data-types-composite.md#record-list)**, der er angivet som et argument for funktionen.
+
+Argumenter til `ORDERBY`-funktionen kan [angives](er-functions-list-orderby.md#syntax-2) for at sortere poster til programtabeller, visninger eller dataenheder ved at foretage et kald til en enkelt database for at få de sorterede data som en liste over poster. En datakilde af typen **Postliste** bruges som argument for denne funktion og angiver programkilden for kaldet.
+
+ER kontrollerer, om der kan oprettes en direkte databaseforespørgsel til en datakilde, der refereres til i `ORDERBY`-funktionen. Hvis der ikke kan oprettes en direkte forespørgsel, opstår der en valideringsfejl i ER-modeltilknytningsdesigneren. Den meddelelse, du modtager, angiver, at det ER-udtryk, der inkluderer `ORDERBY`-funktionen, ikke kan køres på kørselstidspunktet.
+
+Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
+
+1. Start med at konfigurere ER-modeltilknytningskomponenten.
+2. Tilføj en datakilde af typen **Dynamics 365 for Operations \\ Tabelposter**.
+3. Navngiv den nye datakilde **Kreditor**. I feltet **Tabel** skal du vælge **VendTable** for at angive, at denne datakilde vil anmode om tabellen **VendTable**.
+4. Tilføj en datakilde af typen **Beregnet felt**.
+5. Navngiv den nye datakilde **OrderedVendors**, og konfigurer den, så den indeholder udtrykket `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
+ 
+    ![Konfigurere datakilder på siden Modeltilknytningsdesigner.](./media/er-components-inspections-18-1.png)
+
+6. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**, og kontrollér, at udtrykket i datakilden **OrderedVendors** kan forespørges.
+7. Rediger datakilden **Kreditor** ved at tilføje et indlejret felt af typen **Beregnet felt** for at få det relevante kreditorkontonummer.
+8. Navngiv det nye indlejrede felt **$AccNumber**, og konfigurer det, så det indeholder udtrykket `TRIM(Vendor.AccountNum)`.
+9. Vælg **Valider** for at inspicere den redigerbare modeltilknytningskomponent på siden **Modeltilknytningsdesigner**, og kontrollér, at udtrykket i datakilden **Vendor** kan forespørges.
+
+    ![Kontrollere, at udtrykket i datakilden Vendor kan forespørges på siden Modeltilknytningsdesigner.](./media/er-components-inspections-18-2.png)
+
+10. Bemærk, at der opstår en valideringsfejl, fordi datakilden **Vendor** indeholder et indlejret felt af typen **Beregnet felt**, der ikke tillader, at udtrykket i datakilden **OrderedVendors** oversættes til den direkte SQL-sætning. Samme fejl opstår under kørslen, hvis du ignorerer valideringsfejlen og vælger **Kør** for at køre denne modeltilknytning.
+
+### <a name="automatic-resolution"></a>Automatisk løsning
+
+Det er ikke muligt at løse dette problem automatisk.
+
+### <a name="manual-resolution"></a>Manuel løsning
+
+#### <a name="option-1"></a>Indstilling 1
+
+I stedet for at føje et indlejret felt af typen **Beregnet felt** til datakilden **Vendor**, skal du føje det indlejrede felt **$AccNumber** til datakilden **FilteredVendors** og konfigurere feltet, så det indeholder udtrykket `TRIM(FilteredVendor.AccountNum)`. På denne måde kan udtrykket `ORDERBY("Query", Vendor, Vendor.AccountNum)` køres på databaseniveau, og beregningen af det indlejrede felt **$AccNumber** kan foretages bagefter.
+
+#### <a name="option-2"></a>Indstilling 2
+
+Rediger udtrykket i datakilden **FilteredVendors** fra `ORDERBY("Query", Vendor, Vendor.AccountNum)` til `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Det anbefales ikke, at du ændrer udtrykket for en tabel, der har en stor mængde data (transaktionstabel), fordi alle poster hentes, og sortering af de nødvendige poster sker i hukommelsen. Denne fremgangsmåde kan derfor forårsage dårlig ydeevne.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -10,30 +10,30 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3fe1b7707df72927fba78ee9659502cc62471799
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924865"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063256"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separat orkestreringspakke med program til dobbeltskrivning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tidligere var dobbeltskrivningsprogrammets orkestreringspakke en enkelt pakke, der indeholdt følgende løsninger:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations Common Anchor
-- Dynamics 365 Finance and Operations Dual Write Entity Maps
+- Dynamics 365 Finance og drift - Fælles anker
+- Dynamics 365 Finance og drift - Enhedstilknytning for dobbeltskrivning
 - Dynamics 365 Aktivadministration-app
 - Dynamics 365 Aktivadministration
 - HCM, fælles
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Common
+- Dynamics 365 Finance og drift - Fælles
 - Dynamics 365 Company
 - Valutakurser
 - Field Service Common
@@ -51,14 +51,14 @@ Med pakken Programkerne til dobbeltskrivning kan brugerne installere og konfigur
 | Entydigt navn                           | Vist navn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance og drift - Fælles |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Enhedstilknytninger for programkerne til dobbeltskrivning   |
 | msdyn_DualWriteAppCoreAnchor          | Programkerneanker til dobbeltskrivning        |
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finance and Operations-apps     | Kundeengagementapps                    |
+| Finans og drift-apps     | Kundeengagementapps                    |
 |---------------------------------|---------------------------------------------|
 | Driftsenhed                  | msdyn_internalorganizations                 |
 | Organisationshierarki          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ Pakken Dobbeltskrivning til Human Resources indeholder de løsninger og tilknytn
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finance and Operations-apps | Kundeengagementapps         |
+| Finans og drift-apps | Kundeengagementapps         |
 |-----------------------------|----------------------------------|
 | Etnisk oprindelse              | cdm_ethnicorigins                |
 | Kompensation - jobfunktion   | cdm_jobfunctions                 |
@@ -119,7 +119,7 @@ Pakken Dobbeltskrivning til forsyningskæde indeholder de løsninger og tilknytn
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finance and Operations-apps                 | Kundeengagementapps                      |
+| Finans og drift-apps                 | Kundeengagementapps                      |
 |---------------------------------------------|-----------------------------------------------|
 | Objekter                                       | uoms                                          |
 | CDS-salgsordrehoveder                     | salesorders                                   |
@@ -197,7 +197,7 @@ Pakken Dobbeltskrivning til Finance indeholder de løsninger og tilknytninger, d
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finance and Operations-apps             | Kundeengagementapps        |
+| Finans og drift-apps             | Kundeengagementapps        |
 |-----------------------------------------|---------------------------------|
 | Grupper for indeholdt skat                  | msdyn_withholdingtaxgroups      |
 | CDS kontakter V2 (kunde)              | kontakter                        |
@@ -247,7 +247,7 @@ Pakken Dobbeltskrivning til Notes indeholder de løsninger og tilknytninger, der
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finance and Operations                     | Customer Engagement |
+| Finans og drift                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | Vedhæftede dokumenter til salgsordrehoved    | anmærkninger         |
 | Vedhæftede filer for debitorer                       | anmærkninger         |
@@ -274,7 +274,7 @@ Pakken Dobbeltskrivning til Aktivadministration indeholder de løsninger og tilk
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finance and Operations-apps                           | Kundeengagementapps                |
+| Finans og drift-apps                           | Kundeengagementapps                |
 |-------------------------------------------------------|-----------------------------------------|
 | Garanti af Aktivadministration                             | msdyn_warranties                        |
 | Modeller i Aktivadministration                               | msdyn_models                            |

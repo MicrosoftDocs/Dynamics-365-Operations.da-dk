@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414708"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065035"
 ---
 # <a name="choose-a-data-integration-technology"></a>Vælg en dataintegrationsteknologi
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dette emne indeholder oplysninger om integration med data, der administreres af Dynamics 365 Human Resources. Den beskriver forskellige integrationsteknologier, der kan hjælpe dig med at afgøre, hvilke teknologier der bedst opfylder dine behov.
 
@@ -68,7 +71,7 @@ Dataverse-tabellerne og deres tilknyttede API'er er den bedste mulighed for at f
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF-enheder
 
-Human Resources, der primært bygger på samme platform som Finance and Operations-programmer, tilbyder en [DMF (Data Management Framework)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kendt som DIXF (Data Import Export Framework). Human Resources omfatter et sæt dataenheder, du kan bruge til at importere og eksportere Human Resources-data. Selvom Dataverse-tabeller er den foretrukne grænseflade til dataintegration for Human Resources, vil DMF-enhederne stadig være nyttige i nogle situationer, f.eks. når:
+Human Resources, der primært bygger på samme platform som finans- og driftsprogrammer, tilbyder en [DMF (Data Management Framework)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kendt som DIXF (Data Import Export Framework). Human Resources omfatter et sæt dataenheder, du kan bruge til at importere og eksportere Human Resources-data. Selvom Dataverse-tabeller er den foretrukne grænseflade til dataintegration for Human Resources, vil DMF-enhederne stadig være nyttige i nogle situationer, f.eks. når:
 
 - Dataverse-tabeller endnu ikke er tilgængelige.
 
@@ -111,7 +114,7 @@ BYOD er velegnet til rapporteringsløsninger, dataintegrationer, datamiks, som e
 
 ### <a name="odata-enabled-entities"></a>OData-aktiverede enheder
 
-De fleste DMF-enheder er også aktiveret til at få adgang via datatjenesten Human Resources (OData). Dokumentationen til [Finance and Operations OData-tjenesten](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gælder for Human Resources, bortset fra når du opretter dine egne enheder, der vises i OData.
+De fleste DMF-enheder er også aktiveret til at få adgang via datatjenesten Human Resources (OData). Dokumentationen til [OData-tjenesten i Finans og frift](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gælder for Human Resources, bortset fra når du opretter dine egne enheder, der vises i OData.
 
 Selvom Dataverse og OData-implementeringen leveret af Dataverse (via [Dynamics 365 Web-API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) foretrækkes i forhold til Human Resources-datatjenesten, har Human Resources-datatjenesten p.t. en mere komplet enhedsdækning for Human Resources-data.
 
@@ -127,9 +130,9 @@ Du kan bruge [Dataintegrator-tjenesten](/powerapps/administrator/data-integrator
 
 Data Integrator-projekter er egnede til Dataverse-batch-integrationer. De er et godt valg til integration mellem Dynamics 365-programmerne. Microsoft leverer f.eks. en Data Integrator-skabelon til integration af data fra Human Resources til Dynamics 365 Finance. Du kan få mere at vide om skabelonen i [Integration fra Dynamics 365 Human Resources til Dynamics 365 Finance](hr-admin-integration-finance.md).
 
-### <a name="power-query"></a>Power-forespørgsel
+### <a name="power-query"></a>Power Query
 
-Data Integrator understøtter [Power-forespørgsel](/power-query/power-query-what-is-power-query) via dens [Avanceret forespørgsel-funktion](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query indeholder en effektiv, fleksibel datafiltrering og -transformering, herunder det avancerede M-formelsprog. Du kender sikkert Power Query, hvis du har udviklet Power BI-rapporter.
+Data Integrator understøtter [Power Query](/power-query/power-query-what-is-power-query) via dens [Avanceret forespørgsel-funktion](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query indeholder en effektiv, fleksibel datafiltrering og -transformering, herunder det avancerede M-formelsprog. Du kender sikkert Power Query, hvis du har udviklet Power BI-rapporter.
 
 ## <a name="deciding-on-an-integration-technology"></a>Beslutning om en integrationsteknologi
 

@@ -1,6 +1,6 @@
 ---
-title: Få support til Finance and Operations-apps eller Lifecycle Services (LCS)
-description: I dette emne beskrives, hvordan du kan få hjælp til Finance and Operations-apps eller Microsoft Dynamics Lifecycle Services (LCS).
+title: Få support til Finans og drift-apps eller Lifecycle Services (LCS)
+description: Dette emne forklarer, hvordan du kan få hjælp til Finans og drift-apps eller Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e697c574efb0b04db6cb04d01c41066a0ac3974
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713328"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068028"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support til Finance and Operations-apps eller Lifecycle Services (LCS)
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support til Finans og drift-apps eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan få hjælp til Finance and Operations-apps eller Microsoft Dynamics Lifecycle Services (LCS). 
+
+[!INCLUDE [PEAP](../../../includes/peap-2.md)]
+
+Dette emne forklarer, hvordan du kan få hjælp til Finans og drift-apps eller Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>
 <thead>
@@ -48,7 +51,7 @@ I dette emne beskrives, hvordan du kan få hjælp til Finance and Operations-app
 <td>I <a href="https://lcs.dynamics.com/">LCS</a> kan du bruge værktøjet <strong>Problemsøgning</strong> til hurtigt at søge efter Microsoft Knowledge Base-artikler (KB), hotfixes og løsninger på rapporterede fejl. Du kan se, hvilke rapporterede problemer der er ved at blive rettet for et bestemt funktionsområde, og hvilke problemer der allerede er løst. Yderligere oplysninger finder du i <a href="issue-search-lcs.md">Problemsøgning (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Få support i din Finance and Operations-app.</td>
+<td>Få support i din Finans- og driftsapp.</td>
 <td>Vælg knappen <strong>Hjælp</strong> (<strong>?</strong>) i øverste højre hjørne af appen, og vælg derefter <strong>Support</strong>. Problemer rapporteres på fanen <strong>Aktuelle problemer</strong> i LCS. Her kan administratorer afgøre, om de skal tilbyde intern support eller sende problemerne til Microsoft.</td>
 </tr>
 <tr>

@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431456"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071409"
 ---
 # <a name="edit-personal-information"></a>Rediger personlige oplysninger
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,7 +72,7 @@ Parametre, der angives i de **globale adressekartotekparametre**, bestemmer, hvi
     - Vælg **Ny** for at tilføje et identifikationsnummer. Udfyld felterne efter behov, og vælg **Gem**.
     - Hvis du vil redigere et nummer, skal du vælge **Rediger**. Rediger felterne efter behov, og vælg **Gem**.
 
-7. Hvis du vil ændre de metoder, som du bliver betalt efter, skal du vælge fanen **Mine betalingsoplysninger**. Denne fane er kun tilgængelig, hvis betalingsmetoderne er aktiveret i formularen **Human Resourcesparametre**. HR kan aktivere **Bankanvisning**, **Kontant**, **Check**, **Elektronisk betaling** eller **Anden**. HR kan også deaktivere validering af elektronisk betaling (bruges til amerikanske løn) og validering af bankkonto- og registreringsnummer.
+7. Hvis du vil ændre de metoder, som du bliver betalt efter, skal du vælge fanen **Mine betalingsoplysninger**. Denne fane er kun tilgængelig, hvis betalingsmetoderne er aktiveret på siden **Human Resources-parametre**. HR kan aktivere **Bankanvisning**, **Kontant**, **Check**, **Elektronisk betaling** eller **Anden**. HR kan også deaktivere validering af elektronisk betaling (bruges til amerikanske løn) og validering af bankkonto- og registreringsnummer.
 
 8. Hvis du vil ændre det billede, der vises i Human Resources for din profil, skal du vælge fanen **Billede**. Afhængigt af organisationens indstillinger kan billeder sendes til godkendelse.
 
