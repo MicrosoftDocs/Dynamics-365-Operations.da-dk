@@ -2,7 +2,7 @@
 title: Konfigurere dataimport fra SharePoint
 description: I dette emne beskrives, hvordan du importerer data fra Microsoft SharePoint.
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cd717c0c599d68574a5a064761c8d6777418515
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675339"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074760"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurere dataimport fra SharePoint
 
@@ -192,11 +192,11 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 
 ## <a name=""></a><a name="limitations">Begrænsninger</a>
 
-ER-strukturen giver ikke mulighed for at starte et nyt batchjob, der udfører en modeltilknytning i automatisk tilstand for dataimport. Hvis du vil gøre det, skal du udvikle ny logik, så den konfigurerede ER-modeltilknytning kan kaldes fra brugergrænsefladen i programmet for at importere data fra indgående filer. Dette kræver derfor udviklingsarbejde. 
+I versioner af Dynamics 365 Finance før version 10.0.25, giver brugergrænsefladen (UI) for ER-strukturen ikke mulighed for at starte et nyt batchjob, der udfører en modeltilknytning i uovervåget tilstand for dataimport. Du skal i stedet udvikle ny logik, så den konfigurerede ER-modeltilknytning kan kaldes fra brugergrænsefladen i programmet for at importere data fra indgående filer. For at kunne udvikle denne logik er det nødvendigt med teknikerarbejde. 
 
-Du kan få mere om det relevante-API i afsnittet [Kode til kørsel af en formattilknytning til dataimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) i emnet [Ændringer af API til ER-struktur til Application Update 7.3](er-apis-app73.md).
+Du kan få mere at vide om det relevante ER-API i afsnittet [Kode til kørsel af en formattilknytning til dataimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) i emnet [Ændringer af API til ER-struktur til Application Update 7.3](er-apis-app73.md). Gennemse koden i `BankImport_RU`-klassen for `Application Suite`-modellen for at se, hvordan din brugerdefinerede logik kan implementeres. Klassen `BankImport_RU` udvider klassen `RunBaseBatch`. Du skal især gennemgå `runER()`-metoden, hvor `ERIModelMappingDestinationRun`-objektet oprettes som kørselsfunktion for en ER-modeltilknytning.
 
-Gennemse koden i `BankImport_RU`-klassen for `Application Suite`-modellen for at se, hvordan din brugerdefinerede logik kan implementeres. Denne klasse udvider `RunBaseBatch`-klassen. Du skal især gennemse `runER()`-metoden, hvor `ERIModelMappingDestinationRun`-objektet oprettes som kørselsfunktion for en ER-modeltilknytning.
+In Finans version 10.0.25 og nyere giver ER-strukturens brugergrænseflade ikke mulighed for at starte et nyt batchjob, der kører en modeltilknytning i uovervåget tilstand for dataimport. Yderligere oplysninger om denne proces finder du i [Importere data i batchtilstand fra manuelt valgte filer](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -205,6 +205,8 @@ Gennemse koden i `BankImport_RU`-klassen for `Application Suite`-modellen for at
 [Ændringer af API til ER-struktur for Application Update 7.3](er-apis-app73.md)
 
 [Ændringer af API til ER-struktur for Application Update 10.0.23](er-apis-app10-0-23.md)
+
+[Ændringer af API til ER-struktur for Application Update 10.0.25](er-apis-app10-0-25.md)
 
 
 

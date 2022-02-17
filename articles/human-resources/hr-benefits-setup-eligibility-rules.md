@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: e87bef8994fe1eac0089764c8d4f9b18289c13ea
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423465"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069624"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere berettigelsesregler og -indstillinger 
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -73,7 +76,7 @@ Under åben tilmelding kan medarbejdere vælge frynsegodeplaner. Hvis de mister 
    | **Berettiget job** | Angiver det eller de job, der opfylder berettigelsesreglen. Jobbene knyttes til stillinger, og stillingerne udfyldes af medarbejdere. |
    | **Berettiget jobfunktion** | Angiver den eller de jobfunktioner, der opfylder en berettigelsesregel. F.eks. salgsmedarbejdere eller teknikere. |
    | **Berettiget jobtype** | Angiver den eller de jobtyper, der opfylder berettigelsesreglen. Det kan f.eks. være kontormedarbejdere eller ledelse. |
-   | **Berettiget juridisk enhed** | Angiver den eller de juridiske enheder, der er gyldige for berettigelsesreglen. For eksempel Contoso Entertainment System USA. |
+   | **Berettiget juridisk enhed** | Angiver den eller de juridiske enheder, der er gyldige for berettigelsesreglen. F.eks. Contoso Entertainment System USA. |
    | **Område for berettiget kompensation** | Angiver den medarbejderlokalitet, der opfylder berettigelsesreglen. Det kan f.eks. være det centrale USA. |
    | **Berettiget stilling** | Angiver den eller de stillinger, der opfylder berettigelsesreglen. F.eks. personalemedarbejder eller personalechef. |
    | **Berettiget stillingstype** | Angiver den eller de stillingstyper, der opfylder berettigelsesreglen. F.eks. fuld tid. |
@@ -229,7 +232,7 @@ Du kan bruge flekskreditprogrammer til at tilmelde medarbejdere til frynsegoder 
 
 ## <a name="configure-programs"></a>Konfigurere programmer
 
-Programmer er et sæt frynsegodeplaner, der deler et fælles sæt berettigelsesregler. Du kan definere berettigelsesregler for hele programmet i stedet for de enkelte plan. Det kan for eksempel være et Contoso Canada-program for fuldtidsansatte eller et Contoso Europa-program for ledelse. 
+Programmer er et sæt frynsegodeplaner, der deler et fælles sæt berettigelsesregler. Du kan definere berettigelsesregler for hele programmet i stedet for de enkelte plan. Det kan f.eks. være et Contoso Canada-program for fuldtidsansatte eller et Contoso Europa-program for ledelse. 
 
 1. Vælg **Berettigelsesregler og -indstillinger** under **Konfiguration** i arbejdsområdet **Frynsegodeadministration**.
 

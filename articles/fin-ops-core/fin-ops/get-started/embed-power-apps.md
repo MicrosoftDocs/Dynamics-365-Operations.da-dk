@@ -13,18 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488048"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065095"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Integrere lærredapps fra Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power Apps er en tjeneste, der giver udviklere og ikke-tekniske brugere mulighed for at oprette brugerdefinerede forretningsapps til mobilenheder, tablets og internettet uden at skrive kode. Finance and Operations-apps understøtter integration med Power Apps. Lærredapps, som du, din organisation eller det bredere økosystem udvikler, kan integreres i Finance and Operations-apps for at øge produktets funktionalitet. Du kan f.eks. opbygge en lærredapp fra Power Apps, der supplerer en Finance and Operations-app med oplysninger, der er hentet fra et andet system.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Microsoft Power Apps er en tjeneste, der giver udviklere og ikke-tekniske brugere mulighed for at oprette brugerdefinerede forretningsapps til mobilenheder, tablets og internettet uden at skrive kode. Finans- og driftsapps understøtter integration med Power Apps. Lærredapps, som du, din organisation eller det bredere økosystem udvikler, kan integreres i Finans- og driftsapps for at øge produktets funktionalitet. Du kan f.eks. opbygge en lærredapp fra Power Apps, der supplerer en Finans- og driftsapp med oplysninger, der er hentet fra et andet system.
 
 Hvis du vil vide mere om integration af lærredapps, kan du se den korte video [Sådan integreres lærredapps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
@@ -32,7 +35,7 @@ Hvis du vil vide mere om integration af lærredapps, kan du se den korte video [
 
 Før du integrerer en lærredapp fra Power Apps i klienten, skal du finde eller oprette en app, der har den ønskede grafik eller funktionalitet. Dette emne omfatter ikke en detaljeret beskrivelse af processen til oprettelse af apps. Hvis du ikke vant til at bruge Power Apps, kan du se [dokumentationen til Power Apps](/powerapps/).
 
-Du kan integrere en lærredapp i en Finance and Operations-app på tre måder. Du kan bruge den fremgangsmåde, der passer bedst til dit scenarie. 
+Du kan integrere en lærredapp i en Finans- og driftsapp på tre måder. Du kan bruge den fremgangsmåde, der passer bedst til dit scenarie. 
 
 - Integrer lærredappen i **Power Apps**-knappen i standardhandlingsruden på en side. Apps, som du tilføjer på denne måde, vises som elementer på **Power Apps**-menuknappen, og appsene åbnes i sideruder. 
 - Integrer lærredappen direkte på en eksisterende side som en ny fane (pivot-fane, oversigtspanel, blad eller arbejdsområdesektionen).
@@ -65,7 +68,7 @@ Følgende procedure viser, hvordan du integrerer en lærredapp på en eksisteren
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Integration af en lærredapp som en fuld side-oplevelse fra dashboardet
 
-Du kan også integrere en lærredapp fra dashboardet, hvis appen ikke er tilknyttet en eksisterende side, eller hvis du blot vil vise appen som en fuld side-oplevelse i Finance and Operations-appen.
+Du kan også integrere en lærredapp fra dashboardet, hvis appen ikke er tilknyttet en eksisterende side, eller hvis du blot vil vise appen som en fuld side-oplevelse i Finans- og driftsappen.
 
 > [!NOTE]
 > Hvis du vil gøre denne egenskab tilgængelig, skal du aktivere funktionen **Fuld side-apps** i Funktionsstyring. 
@@ -83,7 +86,7 @@ Når du integrerer en lærredapp, skal du angive følgende parametre:
 
 - **Navn** – Angiv den tekst, der skal vises for knappen eller fanen, som vil indeholde den integrerede app. Ofte ønsker du at gentage navnet på appen i dette felt.
 - **App-id** – Angiv Globally Unique Identifier (GUID) for den lærredapp, du vil integrere. For at hente denne værdi skal du finde appen på [make.powerapps.com](https://make.powerapps.com) og derefter kigge i feltet **App-id** under **Detaljer**.
-- **Inputkontekst for appen** – Du kan eventuelt vælge det felt, der indeholder de data, du vil overføre til appen som input. Du finde finde oplysninger om, hvordan appen kan få adgang til data, der sendes fra Finance and Operations, i afsnittet [Opbygning af en app, der udnytter data sendt fra Finance and Operations-apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) senere i dette emne.
+- **Inputkontekst for appen** – Du kan eventuelt vælge det felt, der indeholder de data, du vil overføre til appen som input. Se afsnittet senere i dette emne med titlen [Oprette en app, der anvender data fra Finans- og driftsapps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) for at få oplysninger om, hvordan appen får adgang til de data, der er sendt fra Finans- og driftsapps.
 
     Fra version 10.0.19 overføres den aktuelle juridiske enhed også til lærredappen som kontekst via URL-parameteren **cmp**. Denne funktionsmåde påvirker ikke mållærredappen, før den pågældende app bruger oplysningerne.
 
@@ -104,15 +107,15 @@ Når du har integreret en lærredapp på en side og bekræftet, at den fungerer 
     - Hvis funktionen **Gemte visninger** er deaktiveret, kan systemadministratoren angive en tilpasning, der omfatter lærredappen, for det relevante sæt af brugere via siden **Tilpasning**. Du kan også eksportere sidens tilpasninger og derefter sende dem til en eller flere brugere. Hver af disse brugere kan derefter importere tilpasningen. Tilpasningsværktøjslinjen indeholder knapper til eksport og import af tilpasninger.
 
 > [!NOTE]
-> Hvis lærredappen er delt med eksterne brugere, kan disse brugere ikke bruge den integrerede app i Finance and Operations-apps. De kan dog få adgang til appen direkte i Power Apps. Eksterne brugere omfatter gæster og brugere, der ikke tilhører Microsoft 365 Azure Directory, hvor Finance and Operations-appen er installeret.
+> Hvis lærredappen er delt med eksterne brugere, kan disse brugere ikke bruge den integrerede app i Finans- og driftsapps. De kan dog få adgang til appen direkte i Power Apps. Eksterne brugere omfatter gæster og brugere, der ikke tilhører Microsoft 365 Azure Directory, hvor Finans- og driftsappen er installeret.
 
 Se [Tilpasse brugeroplevelsen](personalize-user-experience.md) for at få yderligere oplysninger om tilpasningsmuligheder i produktet, og hvordan de bruges.
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Oprette en lærredapp, der bruger data, som er sendt fra Finance and Operations-apps
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Oprette en lærredapp, der bruger data, som er sendt fra Finans- og driftsapps
 
-Når du opretter en lærredapp, der skal integreres i en Finance and Operations-app, er det en vigtig del af processen at bruge inputdataene fra den pågældende Finance and Operations-app. Fra Power Apps-udviklingsoplevelsen kan der opnås adgang til inputdata, der er overført fra en Finance and Operations-app, ved hjælp af variablen **Param ("EntityId")**. Fra version 10.0.19 overføres den aktuelle juridiske enhed også som lærredappen via variablen **Param("cmp")**. 
+Når du opretter en lærredapp, der skal integreres i en Finans- og driftsapp, er det en vigtig del af processen at bruge inputdataene fra den pågældende Finans- og driftsapp. Fra Power Apps-udviklingsoplevelsen kan der opnås adgang til inputdata, der er overført fra en Finans- og driftsapp, ved hjælp af variablen **Param ("EntityId")**. Fra version 10.0.19 overføres den aktuelle juridiske enhed også som lærredappen via variablen **Param("cmp")**. 
 
-For eksempel kan du i funktionen OnStart i appen indstille de indgående data fra Finance and Operations-apps til en variabel som denne:
+F.eks. kan du i funktionen OnStart i appen indstille de indgående data fra Finans- og driftsapps til en variabel som denne:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -122,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Få vist en lærredapp
 
-For at få vist en integreret lærredapp på en side i Finance and Operations-apps skal du blot gå til en side, der har en integreret app. Husk, at du har adgang til apps ved hjælp af **Power Apps**-knappen i standardhandlingsruden. De kan også vises direkte på siden som en ny fane, et oversigtspanel eller blad eller som et nyt afsnit i et arbejdsområde. Når brugerne første gang forsøger at indlæse en app på en side, bliver de bedt om at logge på. Dette trin sikrer, at brugerne har de relevante rettigheder til at bruge appen.
+For at få vist en integreret lærredapp på en side i Finans- og driftsapps skal du blot gå til en side, der har en integreret app. Husk, at du har adgang til apps ved hjælp af **Power Apps**-knappen i standardhandlingsruden. De kan også vises direkte på siden som en ny fane, et oversigtspanel eller blad eller som et nyt afsnit i et arbejdsområde. Når brugerne første gang forsøger at indlæse en app på en side, bliver de bedt om at logge på. Dette trin sikrer, at brugerne har de relevante rettigheder til at bruge appen.
 
 ## <a name="editing-an-embedded-app"></a>Redigere en integreret app
 

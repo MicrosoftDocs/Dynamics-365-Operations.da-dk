@@ -1,6 +1,6 @@
 ---
 title: Integreret finans
-description: I dette emne beskrives integrationen af finansdata mellem Finance and Operations og andre Dynamics 365-programmer ved hjælp af Dataverse.
+description: I dette emne beskrives integrationen af finansdata mellem Finans og drift og andre Dynamics 365-programmer ved hjælp af Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e41d600464d707d01a0e319dd3cd343b04aa26b7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782374"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063641"
 ---
 # <a name="integrated-ledger"></a>Integreret finans
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 I et forretningsprogram definerer finansdata den kerneopsætning, der er angivet for en virksomheds drift. Finansdataene beskriver f.eks. hvilket regnskabsår, firmaet følger, de valutaer, det anvender, og de konti, der bruges. I dette emne beskrives integrationen af disse økonomiske kernedata.
 
@@ -28,7 +28,7 @@ I et forretningsprogram definerer finansdata den kerneopsætning, der er angivet
 
 Finansdata omfatter en samling af centrale finansielle tabeltilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
 
-Finance and Operations-apps | Kundeengagementapps     | Betegnelse
+Finans og drift-apps | Kundeengagementapps     | Betegnelse
 ---------------------------------|----------------------------------|------------
 [CDS-valutakurser](mapping-reference.md#123) | msdyn_currencyexchangerates |
 [Kontoplan](mapping-reference.md#121) | msdyn_chartofaccountses |

@@ -1,6 +1,6 @@
 ---
 title: Integreret debitormaster
-description: I dette emne beskrives integrationen af debitordata mellem Finance and Operations og Dataverse.
+description: I dette emne beskrives integrationen af debitordata mellem Finans og drift og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 48070628aafd7daac65327a484c87dc01ffb3954
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 41e4b6c192b6125a144e4d5ef952ba0975821d44
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781684"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063283"
 ---
 # <a name="integrated-customer-master"></a>Integreret kundemaster
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Debitordata kan styres i mere end ét Dynamics 365-program. En debitorrække kan f.eks. stamme fra en salgsaktivitet i Dynamics 365 Sales (en Customer Engagement-app), eller en række kan stamme fra detailaktivitet i Dynamics 365 Commerce (en Finance and Operations-app). Uanset hvor debitordataene stammer fra, integreres de i baggrunden. Integreret kundemaster giver dig fleksibiliteten til at administrere debitordata i ethvert Dynamics 365-program og giver en omfattende oversigt over kunden på tværs af Dynamics 365-programpakken.
+
+Debitordata kan styres i mere end ét Dynamics 365-program. En debitorrække kan f.eks. stamme fra en salgsaktivitet i Dynamics 365 Sales (en Customer Engagement-app), eller en række kan stamme fra detailaktivitet i Dynamics 365 Commerce (en Finans og drift-app). Uanset hvor debitordataene stammer fra, integreres de i baggrunden. Integreret kundemaster giver dig fleksibiliteten til at administrere debitordata i ethvert Dynamics 365-program og giver en omfattende oversigt over kunden på tværs af Dynamics 365-programpakken.
 
 ## <a name="customer-data-flow"></a>Debitordataflow
 
@@ -30,9 +30,9 @@ Debitordata kan styres i mere end ét Dynamics 365-program. En debitorrække kan
 
 ![Debitordataflow.](media/dual-write-customer-data-flow.png)
 
-Debitorer kan groft inddeles i to typer: kommercielle/organisatoriske debitorer og forbrugere/slutbrugere. Disse to typer af debitorer lagres og håndteres forskelligt i Finance and Operations og Dataverse.
+Debitorer kan groft inddeles i to typer: kommercielle/organisatoriske debitorer og forbrugere/slutbrugere. Disse to typer af debitorer lagres og håndteres forskelligt i Finans og drift og Dataverse.
 
-I Finance and Operations  styres både kommercielle/organisatoriske debitorer og forbrugere/slutbrugere i en enkelt tabel med navnet **CustTable** (CustCustomerV3Entity), og de klassificeres ud fra attributten **Type**. (Hvis **Type** er angivet til **Organisation**, er debitoren en kommerciel/organisatorisk kunde, og hvis **Type** er angivet til **Person**, er debitoren en forbruger/slutbruger). Oplysningerne om den primære kontaktperson håndteres via tabellen SMMContactPersonEntity.
+I Finans- og drift styres både kommercielle/organisatoriske debitorer og forbrugere/slutbrugere i en enkelt tabel med navnet **CustTable** (CustCustomerV3Entity), og de klassificeres ud fra attributten **Type**. (Hvis **Type** er angivet til **Organisation**, er debitoren en kommerciel/organisatorisk kunde, og hvis **Type** er angivet til **Person**, er debitoren en forbruger/slutbruger). Oplysningerne om den primære kontaktperson håndteres via tabellen SMMContactPersonEntity.
 
 I Dataverse bliver kommercielle/organisatoriske kunder styret i kontotabellen og identificeres som debitorer, når attributten **RelationshipType** er angivet til **Debitor.** Både forbrugere/slutbrugere og kontaktpersonen repræsenteres af kontakttabellen. Hvis du vil have en klar adskillelse mellem en forbruger/slutbruger og en kontaktperson, har tabellen **Kontakt** et boolesk flag med navnet **Salgbar**. Når **Salgbar** er **Sand**, er kontakten en forbruger/slutbruger, og der kan oprettes tilbud og ordrer for den pågældende kontakt. Når **Salgbar** er **Falsk**, er kontakten kun en primær kontaktperson for en kunde.
 
@@ -42,7 +42,7 @@ Når en kontakt, der ikke er salgbar, deltager i et tilbud eller en ordreproces,
 
 Debitordata indeholder alle oplysninger om debitoren, f.eks debitorens gruppe, adresser, kontaktoplysninger, betalingsprofil, fakturaprofil og fordelskundestatus. En samling af tabeltilknytninger fungerer sammen under interaktion med debitordata, som vist i følgende tabel.
 
-Finance and Operations-apps | Kundeengagementapps         | Betegnelse
+Finans og drift-apps | Kundeengagementapps         | Betegnelse
 ----------------------------|---------------------------------|------------
 [CDS kontakter V2](mapping-reference.md#115) | kontakter | Denne skabelon synkroniserer alle primære, sekundære og tertiære kontaktoplysninger for både kunder og leverandører.
 [Debitorgrupper](mapping-reference.md#126) | msdyn_customergroups | Denne skabelon synkroniserer kundegruppeoplysninger.

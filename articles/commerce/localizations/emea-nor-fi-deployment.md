@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c7e64dbfe6a300c097b5b3711ac4310f3386df11
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944734"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077134"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Retningslinjer for installation af kasseapparater for Norge
 
@@ -29,7 +29,7 @@ Dette emne indeholder en vejledning til, hvordan du aktiverer kasseapparatfunkti
 
 ## <a name="set-up-fiscal-registration-for-norway"></a>Konfigurere regnskabsregistrering for Norge
 
-Regnskabsregistreringens eksempel til Norge er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Retail SDK. Eksemplet findes i mappen **src\\FiscalIntegration\\SequentialSignatureNorway** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (f.eks. [eksemplet i frigivelse/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) af en regnskabsdokumentudbyder og en regnskabsconnector, som er udvidelser til Commerce Runtime (CRT). Yderligere oplysninger om, hvordan du bruger Retail SDK, finder du i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en build-pipeline til uafhængige SDK-pakker](../dev-itpro/build-pipeline.md).
+Regnskabsregistreringens eksempel til Norge er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Retail SDK. Eksemplet findes i mappen **src\\FiscalIntegration\\SequentialSignatureNorway** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (f.eks. [eksemplet i frigivelse/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) af en regnskabsdokumentudbyder og en regnskabsconnector, som er udvidelser til Commerce Runtime (CRT). Yderligere oplysninger om, hvordan du bruger Retail SDK, finder du i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en build-pipeline til uafhængige SDK-pakker](../dev-itpro/build-pipeline.md).
 
 Fuldfør trinnene til opsætning af regnskabsregistrering som beskrevet i [Konfigurere regnskabsintegration for Commerce-kanaler](./setting-up-fiscal-integration-for-retail-channel.md):
 

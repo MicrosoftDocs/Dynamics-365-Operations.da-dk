@@ -8,21 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5305ded440dce0cf057e5fbe4df72635ce0e7b6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964700"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075444"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Angive ansøger og ansøgningsdata manuelt
 
-[!include [banner](../../includes/banner.md)]
+> [!IMPORTANT]
+> De funktioner, der nævnes i dette emne, er i øjeblikket tilgængelige for kunder med Human Resources på den økonomiske infrastruktur.  
+
 
 Denne fremgangsmåde viser, hvordan du manuelt vedligeholder oplysninger om ansøgere og deres ansøgninger. Du kan angive og vedligeholde personlige oplysninger, dato og klokkeslæt for jobsamtaler, referencer, kompetencer og tilpasningsanmodninger for ansøgere. Du kan også opdatere status for ansøgernes jobansøgninger og oprette breve eller e-mailmeddelelser for at kommunikere med ansøgerne. Når du opretter en ansøgningspost, oprettes en personpost for ansøgeren i det globale adressekartotek. Demodatafirmaet **USMF** bruges til at oprette denne procedure.
 

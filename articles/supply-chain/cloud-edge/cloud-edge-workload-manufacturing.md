@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345292"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068838"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Produktionsarbejdsbyrder for sky- og kantskaleringsenheder
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> Arbejdsbyrden for produktionsudførelse er tilgængelig i forhåndsversion på nuværende tidspunkt.
+> [!IMPORTANT]
+> Arbejdsbyrden for produktionsudførelse er kun tilgængelig i forhåndsversion på nuværende tidspunkt.
+>
 > Nogle forretningsfunktioner understøttes ikke fuldt ud i den offentlige prøveversion, når der anvendes skaleringsenheder for arbejdsbyrder.
+>
+> Du kan ikke køre forhåndsversionen for udførelse af lagersteder på en skaleringsenhed, hvor arbejdsbyrden for lagerstedsudførelse også er installeret.
 
 I produktionsudførelse giver skaleringsenheder følgende egenskaber:
 
@@ -128,6 +131,22 @@ I den aktuelle version understøttes færdigmeldings- og lagringsoperationer (fo
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aktivere og bruge startdriften på en skaleringsenhed
+
+I den aktuelle version understøttes startdrift for produktions- og batchordrer af [arbejdsbyrden for lagerstedsudførelse](cloud-edge-workload-warehousing.md) (ikke arbejdsbyrden for produktionsudførelse). Hvis du vil bruge denne funktion, når den er knyttet til en skaleringsenhed, skal du derfor gøre følgende:
+
+- Installer både arbejdsbyrden for udførelse af lagersteder og arbejdsbyrden for produktionsudførelse på din skaleringsenhed.
+- Aktivér funktionen *Start produktionsordre i arbejdsbyrden i lagerstedsstyring for sky- og edge-skalaenhed* i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Brug mobilappen Warehouse Management til at starte produktionen eller batchordren.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Aktivere og bruge materialeforbrug på en skalaenhed
+
+I den aktuelle version understøttes flowet i mobilappen Warehouse Management registrering af materialeforbrug af [arbejdsbyrden for lagerstedsudførelse](cloud-edge-workload-warehousing.md) (ikke arbejdsbyrden for produktionsudførelse). Hvis du vil bruge denne funktion, når den er knyttet til en skaleringsenhed, skal du derfor gøre følgende:
+
+- Installer både arbejdsbyrden for udførelse af lagersteder og arbejdsbyrden for produktionsudførelse på din skaleringsenhed.
+- Aktivér funktionen *Registrer materialeforbrug på mobilappen på en skalaenhed* i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Brug mobilappen Warehouse Management til at registrere materialeforbrug.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

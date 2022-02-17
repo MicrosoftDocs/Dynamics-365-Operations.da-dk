@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8e56688aac445b84d5a9c0df289d48ffefd5767f673f2329f69582e820c27820
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738143"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087364"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
@@ -138,7 +138,6 @@ Ikke alle arbejdsgange understøtter behandling af fastvægtprodukter med lokati
 - Fastvægtprodukter, hvor varianter er aktiveret, kan ikke bruges sammen med funktionen til konvertering af varianter af måleenheder.
 - Fastvægtprodukter kan ikke kodes som en Commerce "produktpakke".
 - Fastvægtprodukter kan kun bruges sammen med en enhedsseriegruppe, som har fastvægtmaterialehåndteringsenheder, og som har fastvægtenheden som den laveste serie.
-- For fastvægtprodukter kan lagerenheden kun omregnes til fastvægtenheden, hvis omregningen resulterer i et nominelt antal, der er mere end 1.
 - Opsætningen af stregkoder for fastvægtprodukter understøtter ikke opsætning af en variabel vægt.
 
 ### <a name="order-processing"></a>Ordrebehandling

@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 23f720db57bf60c81182ed8ae4bdac965676741ce2a2e53bc699c2bd49325b74
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754131"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063741"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (14. maj 2020)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Human Resources. Ændringerne gælder for build nummer 8.1.3244. Tallene i parenteser i nogle overskrifter henviser til Lifecycle Services (LCS)-supportnumre til reference.
 
 ## <a name="platform-changes"></a>Platformsændringer
 
-Der er inkluderet platformsændringer i denne uges udgivelse. Få flere oplysninger i [Platformsopdateringer for version 10.0.10 af Finance and Operations-apps (maj 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Denne version inkluderer fejlrettelser og ændringer af gemte visninger.
+Der er inkluderet platformsændringer i denne uges udgivelse. Du kan få mere at vide i [Platformsopdateringer til version 10.0.10 af Finans- og driftsapps (maj 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Denne version inkluderer fejlrettelser og ændringer af gemte visninger.
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Kontrollér, at Dataverse, at pluklister er konsekvente med orlov-fasttekst (436343)
 

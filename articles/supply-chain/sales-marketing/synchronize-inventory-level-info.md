@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 31674b2be3deb52277cbf79e1e076da13bf94404
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfba2d2dc2fdd4af136e3cb20061d794369011f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566353"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060939"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synkronisere oplysninger på lagerniveau fra Supply Chain Management til Field Service 
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere oplysninger på lagerniveau fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
@@ -53,7 +53,7 @@ Følgende synkroniseringsopgaver kræves, før lagerniveauer kan synkroniseres:
 | msdynce_externalproductinventories | Disponibelt Dataverse-lager efter lagersted     |
 
 ## <a name="entity-flow"></a>Enhedsflow
-Lagerniveauoplysninger fra Finance and Operations sendes til Field Service for udvalgte produkter. Lagerniveauoplysningerne omfatter: 
+Lagerniveauoplysninger fra Finans og drift sendes til Field Service for udvalgte produkter. Lagerniveauoplysningerne omfatter: 
 - Disponibelt antal (aktuelt registreret fysisk antal, der findes på lagerstedet)
 - Antal i bestilling (samlet registrerede antal i ordre, f.eks. salgsordrer)
 - Bestilt antal (samlet registrerede bestilte antal, f.eks. indkøbsordrer)

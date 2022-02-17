@@ -4,18 +4,19 @@ description: Dette emne indeholder oplysninger om sky- og kantskalaenheder til s
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
-ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7733433"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065758"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaler enheder i en distribueret hybridtopologi
 
@@ -51,8 +52,7 @@ Du kan konfigurere dit hubmiljø og skyskalaenheder for udvalgte arbejdsbyrder v
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerede arbejdsbyrdefaciliteter for Warehouse Management i en skalaenhed
 
-Arbejdsbyrden ved lokationsstyring giver dig mulighed for at køre processer i lokationsstyring på en isoleret installation.
-Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder](cloud-edge-workload-warehousing.md).
+Arbejdsbyrden for lokationsstyring er den første distribuerede arbejdsbyrde for skalaenheder, der er frigivet til generel tilgængelighed. Det giver lagerstedsoperationerne mulighed for at skalere og køre i et robust miljø, hvor du anvender isolerede vedligeholdelsesvinduer. Arbejdsbyrden ved lokationsstyring understøtter de fleste processer i virksomhedshubbens lokationsstyring. Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedikerede arbejdsbyrdefaciliteter for produktionskørsel i en skalaenhed
 

@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: cea6258d3a99ba33e73acd2508ec7b6c11d15859
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968956"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061748"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguration til Finance Insights - version 10.0.20 og nyere
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sammen med Dataverse, Azure og AI Builder for at levere effektive prognoseværktøjer til din organisation. I dette emne beskrives konfiguration af Dynamics 365 Finance version 10.0.20, så dit system kan bruge de egenskaber, der er tilgængelige i Finance Insights.
 

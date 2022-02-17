@@ -2,7 +2,7 @@
 title: Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger
 description: Dette emne beskriver begrebsmæssige oplysninger om afdelinger, job og stillinger, der er organisatoriske elementer i Human Resources.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731802"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071419"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,30 +51,16 @@ En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktions
 
 ## <a name="jobs-and-positions"></a>Job og stillinger
 Et job er en samling opgaver og ansvarsområder, der kræves af en person, der udfører et job. En stilling er en individuel forekomst af et job. Ansvarsområder, jobopgaver, jobfunktioner, færdigheder, oplysninger om uddannelse og certifikater, der kræves for et job er også påkrævet for stillinger, der er tilknyttet et job.
+
 ### <a name="job-tasks"></a>Arbejdsopgaver
+
 Du kan oprette jobopgaver, der beskriver de grundlæggende opgaver, der skal udføres af en arbejder i en position for det pågældende job. Samme arbejdsopgave kan føjes til flere job, og stillinger for disse job arver disse opgaver. Der vises eksempler på jobopgaver i følgende tabel.
 
-<table>
-<thead>
-<tr class="header">
-<th>Stilling</th>
-<th>Arbejdsopgave</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Salgsdirektør</td>
-<td><ul>
-<li><span class="input">Performance-gennemgang</span> – Gennemgang af en sælgers jobperformance.</li>
-<li><span class="input">Fraværsgennemgang</span> – Godkend eller afvis en sælgers fraværsanmodninger eller registreringer.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Bogholder</td>
-<td><span class="input">Regnskabsrapport</span> – Forelæg ugentlige regnskaber til regnskabsdirektøren.</td>
-</tr>
-</tbody>
-</table>
+| Stilling           | Arbejdsopgave                                                |
+|---------------|-------------------------------------------------------------|
+| Salgsdirektør | Performance-gennemgang – Gennemgang af en sælgers jobperformance.    |
+| Bogholder    | Fraværsgennemgang – Godkend eller afvis en sælgers fraværsanmodninger eller registreringer. |
+
 
 ### <a name="job-functions"></a>Jobfunktioner
 

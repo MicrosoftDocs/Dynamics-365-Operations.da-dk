@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774843"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074961"
 ---
 # <a name="safety-margins"></a>Sikkerhedsmargener
 
@@ -61,9 +61,6 @@ Bemærk, at der ikke anvendes modtagelsesmargen, når der bruges en disponibel l
 
 ### <a name="reorder-margin"></a>Bestillingsmargen
 
-> [!NOTE]
-> **Kommer snart:** Denne funktion understøttes endnu ikke for planlægningsoptimering. Indtil den understøttes, behandles alle de værdier, der er angivet for **Bestillingsmargen tilføjet til varens leveringstid**, som *0* (nul).
-
 I følgende illustration fremhæves bestillingsmargen.
 
 ![Bestillingsmargen.](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ I følgende illustration fremhæves bestillingsmargen.
 Bestillingsmargen lægges til før varens leveringstid for alle ordreforslag under behovsplanlægning. Derfor sikrer den, at der er mere tid til at afgive en forsyningsordre. Denne margen bruges typisk som en buffer til at sikre tid nok til godkendelsesprocesser eller andre interne processer, der er nødvendige i forbindelse med oprettelsen af forsyningsordrer. Bestillingsmargenen sættes mellem forsyningens *ordredato* og *startdato*.
 
 ### <a name="issue-margin"></a>Afgangsmargen
-
-> [!NOTE]
-> **Kommer snart:** Denne funktion understøttes endnu ikke for planlægningsoptimering. Indtil den understøttes, behandles alle de værdier, der er angivet for **Afgangsmargen trukket fra behovsdato**, som *0* (nul).
 
 I følgende illustration fremhæves afgangsmargen.
 

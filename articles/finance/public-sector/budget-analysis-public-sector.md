@@ -2,7 +2,7 @@
 title: Budgetanalyse i den offentlig sektor
 description: Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring.
 author: v-kiarnd
-ms.date: 02/07/2018
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom: 19641
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe178d94926050b48ea91765baa9edd2adadade7
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: e4153bc136c22e707d32ff4b25a6178fe3d9fae2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817723"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075436"
 ---
 # <a name="budget-analysis-in-the-public-sector"></a>Budgetanalyse i den offentlig sektor
 
@@ -100,9 +100,8 @@ Hvis gitrene er tomme på siden **Budgetanalyse**, kan du prøve følgende handl
 ## <a name="how-do-i-see-updated-numbers-in-the-columns-when-i-change-the-dimension-set-dates-posting-layers-and-other-settings"></a>Hvordan kan jeg se opdaterede tal i kolonnerne, når jeg ændrer dimensionssæt, datoer, posteringslag og andre indstillinger?
 Når du har ændret indstillingerne øverst på siden, skal du klikke på **Opdater totaler** for at se resultaterne af din forespørgsel.
 
-
-
-
+## <a name="feature-budget-control-statistics-date-range-enhancements"></a>Funktion: Udvidelser af datointerval for statistik for budgetstyring
+Denne funktion giver en ny visning, så der kun vises faktiske beløb i det datointerval, der vises i forespørgslerne til **Statistik for budgetstyring**. Denne funktion er som standard slået til i 2022 udgivelsesbølge 2. 
 
 
 

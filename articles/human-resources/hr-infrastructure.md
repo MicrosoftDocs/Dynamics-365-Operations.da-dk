@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec6d47c44136f7a105a702358370dd676d9339c1
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018342"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024561"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources-infrastrukturfletning - Opdateringsversion 10.0.25
 
@@ -53,7 +53,7 @@ Fletningen giver konsistens for brugere af Human Resources på følgende måder:
     | Udskriv ydeevneevalueringer | Du kan udskrive evalueringer af ydeevne i PDF-format. | Generelt tilgængelig | 
     | Brugerdefinerede links i **Selvbetjening for leder** | Du kan oprette brugerdefinerede links, der vises i afsnittet **Relaterede links** i **Selvbetjening for leder**. | Generelt tilgængelig | 
     | Visning af kompensation på tværs af firmaer | Brugere kan få vist lønstrukturer i **Selvbetjening for leder** på tværs af alle juridiske enheder uden at skulle skifte firmaer. | Generelt tilgængelig | 
-    | Konfigurere flere kompensationsniveauer efter job\*&dagger; | Flere kompensationsniveauer understøttes nu for job. | Generelt tilgængelig | 
+    | Konfigurere flere kompensationsniveauer efter job\*&dagger; | Flere kompensationsniveauer understøttes nu for job. | Prøveversion | 
     | Opgavestyring\* | Du kan oprette checklister og opgaver til onboarding-, offboarding- og stillingsskifteprocessen. | Prøveversion | 
     | Strømlinet medarbejderindtastning | Denne funktion giver en opdateret brugeroplevelse på den eksisterende **Arbejder**-side. | Prøveversion | 
     | Forbedringer af brugeroplevelsen for Personale | Se tabellen i næste afsnit.  | Prøveversion | 

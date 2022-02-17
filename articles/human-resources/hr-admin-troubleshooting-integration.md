@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413362"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071104"
 ---
 # <a name="integration-with-finance-faq"></a>Ofte stillede spørgsmål til integration with Finance
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dette emne indeholder svar på almindelige spørgsmål om, hvilke data der synkroniseres, når Dynamics 365 Human Resources integreres med Dynamics 365 Finance.
 
@@ -55,7 +58,7 @@ Skabeloner bruges som udgangspunkt. Du kan oprette din egen skabelon, men der sk
 
 Økonomiske dimensioner findes ikke på nuværende tidspunkt i Dataverse og er derfor ikke del af standardskabelonen. Denne enhed er planlagt, men i øjeblikket er der ingen versionstidslinje.
 
-For data i Finance and Operations, som ikke findes i Human Resources, kan du sammenkæde de to systemer ved hjælp af **Konfigurer links** i Human Resources.
+For data i Finans og drift, som ikke findes i Human Resources, kan du sammenkæde de to systemer ved hjælp af **Konfigurer links** i Human Resources.
 
 ![Tilknyt økonomiske dimensioner.](media/MapFinancialDimensions.png)
 
@@ -86,7 +89,7 @@ Der kræves ingen speciel opsætning for undtagelseshåndtering. Dataintegrator 
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kan jeg konfigurere tovejsintegration?
 
-Nej, integration er i øjeblikket envejs (Human Resources til Finance and Operations). Der er dog en tilgængelig standardskabelon, som kan bruges til at sende data fra Human Resources til Finance.
+Nej, integration går i øjeblikket kun én vej (Human Resources til Finans og drift). Der er dog en tilgængelig standardskabelon, som kan bruges til at sende data fra Human Resources til Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jeg tillade sletning af poster som en del af integrationen?
 
@@ -116,7 +119,7 @@ Ja, du kan tilføje felter i eller fjerne dem fra den eksisterende skabelon. Ska
 
 - Dataoverførslen resulterede i, at der blev udtrukket dubletposter ved kilden (Dataverse).
 
-- Dataoverførslen har null-værdier for felter, der kræves i Finance and Operations. Kontroller de data, der er i Dataverse, og at de opfylder kravene i Finance and Operations.
+- Dataoverførslen har null-værdier for felter, der kræves i Finans og drift. Kontroller de data, der er i Dataverse, og at de opfylder kravene i Finans og drift.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Hvis der er kørselsfejl, og medarbejder-id'et ikke synkroniseres, hvordan finder jeg så historikjobbet med den mislykkede medarbejderpost?
 
@@ -148,7 +151,7 @@ Hvis enheden understøttes, og dataene er tilgængelige i Dataverse, skal du kon
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Adresserne for mine medarbejdere er forkerte, når jeg har importeret dem i Finance. Hvad skal jeg gøre?
 
-Nummerserien for **Lokations-id** bruger det samme mønster i både Human Resources og Finance. Nummerserien skal være unik på begge sider, så der ikke opstår adressekollisioner under integrationen af data fra Dataverse til Finance and Operations.
+Nummerserien for **Lokations-id** bruger det samme mønster i både Human Resources og Finance. Nummerserien skal være unik på begge sider, så der ikke opstår adressekollisioner under integrationen af data fra Dataverse til Finans og drift.
 
 Ved implementering af Human Resources skal du kontrollere, at nummerserierne ikke de samme i Human Resources og Finance. Kontroller, at alle nummerserier ikke er ens, hvor data kan vedligeholdes i begge systemer.
 
