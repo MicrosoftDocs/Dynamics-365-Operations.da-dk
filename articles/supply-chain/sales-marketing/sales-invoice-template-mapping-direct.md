@@ -1,27 +1,30 @@
 ---
 title: Synkronisere salgsfakturahoveder og -linjer direkte fra Supply Chain Management til Sales
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6cbc4d86ac41d90480428ec5439d1360c4d67137
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571635"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424503"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Sales
 
@@ -33,7 +36,7 @@ I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at
 
 Kundeemnet til kontant-løsningen bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Supply Chain Management og Sales. Kundeemne til kontanter-skabelonerne, der er tilgængelige i funktionen Dataintegration, muliggør strømme af data om konti, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellem Supply Chain Management og Sales. I følgende illustration vises, hvordan data synkroniseres mellem Supply Chain Management og Sales.
 
-[![Dataflow i kundeemne til kontant.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflow i kundeemne til kontant](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 
@@ -116,11 +119,11 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
-![Tilknytning af skabelon i Dataintegration for SalesInvoiceHeader.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Skabelontilknytning i dataintegration](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="salesinvoiceline"></a>SalesInvoiceLine
 
-![Tilknytning af skabelon i Dataintegration for SalesInvoiceLine.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Skabelontilknytning i dataintegration](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 
@@ -135,6 +138,3 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 [Synkronisere kontakter direkte fra Sales med kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
 
 [Synkronisering af salgsordrer direkte mellem Sales og Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

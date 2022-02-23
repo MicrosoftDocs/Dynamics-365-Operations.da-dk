@@ -2,29 +2,32 @@
 title: Hændelser for lagerapp
 description: I dette emne beskrives den hændelsesbehandling i lagerstedsappen, der bruges til at behandle hændelsesmeddelelser i lagerstedsapps som en del af et batchjob.
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1e648b5db9405e749fbd24502f65f344d0549b0f13b48e98c38d1476866db01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 210008c4a1366773f465c59b38eca30f11f0b38c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729980"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424489"
 ---
 # <a name="warehouse-app-event-processing"></a>Hændelsesbehandling i lagerstedsapp
 
 [!include [banner](../includes/banner.md)]
 
-Batchjob, der kører i Supply Chain Management, kan bruge data fra en kø til behandling af hændelser, der er udstedt af mobilappen Lokationsstyring, til at reagere efter behov på de signalerede hændelser. Denne funktion føjer relevante hændelser til køen som svar på bestemte typer handlinger, der udføres af arbejdere, der bruger appen. Hvis du f.eks. bruger funktionen *Opret og behandl overførselsordrer fra lagerstedsappen*, oprettes og opdateres overflytningsordrehovedet og -linjerne automatisk i back-end, når systemet kører batchjobbet **Hændelsesbehandling i lagerstedsapp**.
+Batchjob, der kører i Supply Chain Management, kan bruge data fra en kø til behandling af hændelser, der er udstedt af lagerstedsappen, til at reagere efter behov på de signalerede hændelser. Denne funktion føjer relevante hændelser til køen som svar på bestemte typer handlinger, der udføres af arbejdere, der bruger appen. Hvis du f.eks. bruger funktionen **Opret og behandl overførselsordrer fra lagerstedsappen**, oprettes og opdateres overflytningsordrehovedet og -linjerne automatisk i back-end, når systemet kører batchjobbet **Hændelsesbehandling i lagerstedsapp**.
 
 ## <a name="enable-the-process-warehouse-app-events-feature"></a>Aktivere funktionen Hændelsesbehandling i lagerstedsapp
 
@@ -48,11 +51,11 @@ Konfigurere et planlagt batchjob, der skal behandle hændelser i lagerstedsapp f
 
 ## <a name="query-warehouse-app-events"></a>Forespørge på hændelser i lagerstedsapp
 
-Du kan få vist hændelseskøen og de hændelsesmeddelelser, der er genereret af mobilappen Lokationsstyring, ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Mobilenhedslogge \> Hændelser i lagerstedsapp**.
+Du kan få vist hændelseskøen og de hændelsesmeddelelser, der er genereret af lagerstedsappen, ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Mobilenhedslogge \> Hændelser i lagerstedsapp**.
 
 ## <a name="the-standard-event-queue-process"></a>Standardprocessen for hændelseskøer
 
-Køen for hændelser i lagerstedsappen vil typisk blive brugt sammen med følgende beskrevet flow:
+Køen for hændelser i lagerstedsapps vil typisk blive brugt sammen med følgende beskrevet flow:
 
 1. Der bliver føjet en hændelse til køen med en hændelsesmeddelelse. Den nye meddelelse har til at begynde med hændelsestilstanden **Ventende**, hvilket betyder, at batchjobbet **Hændelsesbehandling i lagerstedsapp** ikke vil hente og behandle denne meddelelse.
 1. Så snart meddelelsestilstanden er opdateret til **Sat i kø**, henter batchjobbet **Hændelsesbehandling i lagerstedsapp** hændelsen og behandler den.
@@ -75,6 +78,3 @@ Sådan nulstiller du en mislykket hændelsesmeddelelse i lagerstedsappen:
 1. Fortsæt med at arbejde, indtil alle relevante meddelelser er nulstillet.
 
 Du kan også fjerne en **Mislykket** hændelsesmeddelelse ved hjælp af indstillingen **Slet** på værktøjslinjen **Hændelsesmeddelelser i lagerstedsapp**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

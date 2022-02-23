@@ -1,24 +1,26 @@
 ---
 title: Angive og sammenligne bud på tilbudsanmodninger og tildeler kontrakter
 description: Dette emne viser, hvordan du indtaster svar på en tilbudsanmodning (RFQ), angiver score og sammenligner bud og derefter tildeler kontrakten en af leverandørerne.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579466"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016672"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angive og sammenligne bud på tilbudsanmodninger og tildeler kontrakter
 
@@ -32,7 +34,7 @@ Du kan sende buddet som enten leverandør eller indkøber. Du kan finde flere op
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Angive et svar som leverandør
 
-1. Gå til **Leverandørsamarbejde \> Arbejdsområder \> Leverandørtilbud**.
+1. Vælg **Kreditorbud** på dashboardet.
 2. Find en tilbudsanmodning, der lige er blevet sendt, på listen **Invitationer til nyt bud**. Vælg tilbudsanmodningen for at gennemse, hvad der blev anmodet om.
 3. Vælg **Tilbudsanmodning i vedhæftede filer** for at gennemse evt. vedhæftede filer, der er tilføjet.
 4. Vælg **Bud** for at gøre felterne redigerbare. Bemærk, at **Status for bud** feltet er indstillet til **Leverandør opdaterer**.
@@ -104,6 +106,3 @@ Du kan sende buddet som enten leverandør eller indkøber. Du kan finde flere op
 ## <a name="view-the-purchase-order-that-is-generated"></a>Få vist den indkøbsordre, der blev genereret
 
 I handlingsruden skal du under fanen **Generelt** vælge **Indkøbsordre**. På den side, der åbnes, vises den indkøbsordre, der blev genereret, da du accepterede buddet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

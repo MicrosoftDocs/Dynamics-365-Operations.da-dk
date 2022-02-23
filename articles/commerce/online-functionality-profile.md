@@ -2,9 +2,11 @@
 title: Oprette en onlinefunktionalitetsprofil
 description: Dette emne beskriver, hvordan du opretter en onlineprofil for funktionalitet i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,18 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d6dcbb5b9ea01035396e90a6809cb1568c3a4fc86def41cf36732588b5046da7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b0afeabfecb60672156692f3cd809445624020c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716188"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969970"
 ---
 # <a name="create-an-online-functionality-profile"></a>Oprette en onlinefunktionalitetsprofil
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over opsætningen af en onlinefunktionalitetsprofil til Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Profilen for onlinefunktionalitet giver forskellige indstillinger, der bruges til onlinekanaler. Hver onlinekanal skal angive en profil for onlinefunktionalitet.
 
@@ -42,7 +47,7 @@ Følgende procedure forklarer, hvordan du kan oprette en onlinefunktionalitetspr
 
 Følgende billede viser et eksempel på en profil for onlinefunktionalitet.
   
-![Eksempel på profil for onlinefunktionalitet.](media/online-functionality-profile.png)
+![Eksempel på profil for onlinefunktionalitet](media/online-functionality-profile.png)
 
 ## <a name="functions"></a>Funktioner
 
@@ -61,6 +66,3 @@ Følgende billede viser et eksempel på en profil for onlinefunktionalitet.
 [Konfigurer en detailkanal](channel-setup-retail.md)
 
 [Konfigurere en callcenter-kanal](channel-setup-callcenter.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

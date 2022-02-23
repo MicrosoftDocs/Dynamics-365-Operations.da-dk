@@ -2,13 +2,16 @@
 title: Konfigurere og arbejde med advarsler om svindel i callcentre
 description: Dette emne forklarer, hvordan du opretter regler for at advare kundeservicemedarbejdere om potentielt falske oplysninger ved behandling af ordrer. Du kan definere bestemte koder, der bruges til automatisk eller manuelt at sætte mistænkelige ordrer på hold.
 author: josaw1
+manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 79103
 ms.assetid: e342af8d-7498-4d20-8483-ab368429c578
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763662"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411159"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Konfigurere og arbejde med advarsler om svindel i callcentre
 
@@ -34,13 +37,13 @@ I dette emne beskrives, hvordan du definerer kriterier og regler for, hvordan po
 
 ## <a name="turning-on-the-fraud-check-feature"></a>Aktivering af funktionen til kontrol af svindel
 
-Hvis du vil bruge svindelkontrolfunktionen, skal du indstille **Aktivér ordrefuldførelse** i kanalen til **Ja**, når callcenterkanalen er [defineret](/dynamics365/unified-operations/retail/set-up-order-processing-options). Når ordrefuldførelse er aktiveret, skal callcenterbrugerne vælge **Fuldført** på salgsordresiden for alle salgsordrer, der oprettes. Fuldførelseshandling forårsager, at siden **Salgsordreoversigt** åbnes. Når brugerne angiver den krævede betalingsdato på siden **Salgsordreoversigt**, kan de vælge **Send** for at færdiggøre ordren. Når ordren er sendt, aktiveres svindelkontrolfunktionen, og alle regler, der er aktive i systemet, godkendes automatisk.
+Hvis du vil bruge svindelkontrolfunktionen, skal du indstille **Aktivér ordrefuldførelse** i kanalen til **Ja**, når callcenterkanalen er [defineret](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). Når ordrefuldførelse er aktiveret, skal callcenterbrugerne vælge **Fuldført** på salgsordresiden for alle salgsordrer, der oprettes. Fuldførelseshandling forårsager, at siden **Salgsordreoversigt** åbnes. Når brugerne angiver den krævede betalingsdato på siden **Salgsordreoversigt**, kan de vælge **Send** for at færdiggøre ordren. Når ordren er sendt, aktiveres svindelkontrolfunktionen, og alle regler, der er aktive i systemet, godkendes automatisk.
 
-Callcenterbrugere kan også manuelt sætte salgsordrer på hold, så de kan gennemgås for svindel, før de vælger **Send**. Hvis du manuelt vil sætte en salgsordre på hold, skal du på siden **Salgsordreoversigt** vælge **Hold** \> **Manuelt svindelhold**. Du bliver derefter bedt om at angive en kommentar for at forklare, hvorfor du vil sætte ordren på hold. Denne kommentar vises i panelet [ordrer på hold](/dynamics365/unified-operations/retail/work-with-order-holds) for at levere kontekst til den bruger, der gennemgår ordrer på hold, for at vedkommende kan afgøre, om ordren skal frigives.
+Callcenterbrugere kan også manuelt sætte salgsordrer på hold, så de kan gennemgås for svindel, før de vælger **Send**. Hvis du manuelt vil sætte en salgsordre på hold, skal du på siden **Salgsordreoversigt** vælge **Hold** \> **Manuelt svindelhold**. Du bliver derefter bedt om at angive en kommentar for at forklare, hvorfor du vil sætte ordren på hold. Denne kommentar vises i panelet [ordrer på hold](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) for at levere kontekst til den bruger, der gennemgår ordrer på hold, for at vedkommende kan afgøre, om ordren skal frigives.
 
 Ud over at konfigurere **Aktivér ordrefuldførelse** i kanalen, skal du konfigurere svindelkontrolfunktionen, i Callcenter-parametre. Gå til **Retail og Commerce** \> **Konfiguration af kanal** \> **Call center-konfiguration** \> **Call center-parametre**. På siden **Call center-parametre** skal du vælge **Ja** for indstillingen **Svindelkontrol** under fanen **Spærringer**.
 
-Under fanen **Spærringer** skal du også definere de [holdkoder](/dynamics365/unified-operations/retail/work-with-order-holds), der skal anvendes på en ordre, der enten manuelt eller automatisk er sat på hold for gennemsyn for svindel. Indstil holdkoderne i felterne **Manuel svindelholdkode** og **Svindelholdkode**. Du kan finde det nyttigt at oprette to entydige holdkoder, så brugere, der arbejder i holdpanelet, let kan filtrere og skelne automatiske hold fra manuelle hold.
+Under fanen **Spærringer** skal du også definere de [holdkoder](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds), der skal anvendes på en ordre, der enten manuelt eller automatisk er sat på hold for gennemsyn for svindel. Indstil holdkoderne i felterne **Manuel svindelholdkode** og **Svindelholdkode**. Du kan finde det nyttigt at oprette to entydige holdkoder, så brugere, der arbejder i holdpanelet, let kan filtrere og skelne automatiske hold fra manuelle hold.
 
 Hvis svindelkontrolfunktionen skal fungere effektivt, skal du også indstille feltet **Min. resultat**. Hvert svindelkriterium og -regel, der defineres i systemet, har et resultat. Når en salgsordre kontrolleres for svindel, og der findes en eller flere forekomster, lægges resultaterne sammen for at give ordren et samlet svindelresultat. Hvis det samlede svindelresultat for en ordre, overstiger værdien i feltet **Min. resultat**, sættes ordren automatisk på hold. Du kan vælge at bruge andre resultatrelaterede felter under fanen **Spærringer** for at definere den e-mailresultatet, telefonresultatet, postnummerresultatet og det udvidede postnummerkoderesultat. Hvis du ikke angiver et resultat for nogen af disse statiske svindelkriterier, når du definerer på dem på siden **Statiske svindeldata**, giver systemet dem et standardresultat, som du angiver under fanen **Spærringer** på siden **Call center-parametre**.
 
@@ -65,7 +68,4 @@ Ordren gemmes, men flaget **Udfør ikke behandling** er angivet for den. Dette f
 
 Du kan se og administrere de ordrer, der er på hold for kontrol af svindel, ved at gå til **Retail og Commerce** \> **Kunder** \> **Ordrer på hold**. På siden **Ordrer på hold** skal du vælge en post på listen og derefter klikke på **Ordre på hold** for at se en mere detaljeret visning, der omfatter oplysninger om årsagen til spærringen. I oversigtspanelet **Svindeldetaljer** kan du se de systematiske svindelkriterier, der er fundet som match for ordren, og de resultater, der er anvendt. Hvis ordren blev sat på hold manuelt, kan du gennemse eventuelle kommentarer, der er angivet af den bruger, der satte ordren på hold, ved at se i sektionen **Svindelnoter** i oversigtspanelet **Noter**.
 
-Du kan finde flere oplysninger om, hvordan du arbejder med ordrer på hold, under [Ordrer på hold](/dynamics365/unified-operations/retail/work-with-order-holds).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Du kan finde flere oplysninger om, hvordan du arbejder med ordrer på hold, under [Ordrer på hold](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).

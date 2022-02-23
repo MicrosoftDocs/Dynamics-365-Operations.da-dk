@@ -2,9 +2,11 @@
 title: Planlagt direkte levering
 description: Dette emne beskriver et avanceret planlagt cross-docking, hvor det lagerantal, der kræves til en ordre, anvises direkte ved modtagelse eller oprettelse til den korrekte dock i forsendelsesområde eller det midlertidige område. Alt restlager fra den indgående kilde sendes til den korrekte lagerplacering via den almindelige læg på lager-proces.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573027"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970300"
 ---
 # <a name="planned-cross-docking"></a>Planlagt cross-docking
 
@@ -28,21 +30,19 @@ Dette emne beskriver avanceret planlagt cross-docking. Cross-docking er en lager
 
 Cross-docking giver arbejdere mulighed for at overspringe indgående læg på lager og udgående plukning af lager, der allerede er markeret for en udgående ordre. Derfor minimeres det antal gange, som lageret berøres med, hvor det er muligt. Da der desuden sker mindre interaktion med systemet, forhøjes tids- og lagerpladsbesparelserne i forhold til lagerets produktion.
 
-Før cross-docking kan køres, skal du konfigurere en ny cross-docking/skabelon, hvor forsyningskilden og andre sæt af krav til cross-docking er angivet. Efterhånden som den udgående ordre oprettes, skal linjen markeres i forhold til en indgående ordre, der indeholder den samme vare. Du kan vælge feltet med vejledningskode i skabelonen for cross-docking, på samme måde som du konfigurerer genopfyldnings- og indkøbsordrer.
+Før cross-docking kan køres, skal brugeren konfigurere en ny cross-docking/skabelon, hvor forsyningskilden og andre sæt af krav til cross-docking er angivet. Efterhånden som den udgående ordre oprettes, skal linjen markeres i forhold til en indgående ordre, der indeholder den samme vare.
 
 På tidspunktet for modtagelse af indgående ordrer identificerer opsætningen af cross-docking automatisk behovet for cross-docking og opretter bevægelsesarbejdet for den ønskede mængde på basis af opsætningen af lokationsvejledningen.
 
 > [!NOTE]
-> Registreringen af lagertransaktioner annulleres *ikke*, når cross-docking annulleres, også selvom indstillingen for denne funktion er aktiveret i parametrene for lokationsstyring.
+> Registreringen af lagertransaktioner annulleres **ikke**, når cross-docking annulleres, også selvom indstillingen for denne funktion er aktiveret i parametrene for lokationsstyring.
 
-## <a name="turn-on-the-planned-cross-docking-features"></a>Slå funktionerne til planlagt cross-docking til
+## <a name="turn-on-the-planned-cross-docking-feature"></a>Slå funktionen til planlagt cross-docking til
 
-Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funktioner i denne rækkefølge:
+Før du kan bruge avanceret planlagt cross-docking, skal funktionen være aktiveret i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
 
-1. *Planlagt direkte levering*
-1. *Skabeloner til cross-docking med lokationsvejledninger*
-    > [!NOTE]
-    > Denne funktion gør det muligt at angive feltet **Vejledningskode** i skabelonen til cross-docking, ligesom du konfigurerer genopfyldningsskabeloner. Hvis du aktiverer denne funktion, kan du ikke føje en vejledningskode til linjerne i arbejdsskabelonen til cross-docking for den endelige *Læg*-linje. Derved sikres, at den endelige læg-placering kan bestemmes under oprettelsen af arbejdet, før du overvejer arbejdsskabeloner.
+- **Modul:** *Lokationsstyring*
+- **Funktionsnavn:** *Planlagt cross docking*
 
 ## <a name="setup"></a>Konfiguration
 
@@ -90,10 +90,6 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
 
         Denne indstilling angiver, om forsyningen skal valideres igen under modtagelsen. Hvis denne indstilling er angivet til *Ja*, kontrolleres både det maksimale tidsinterval og udløbsintervallet i dage.
 
-    - **Vejledningskode:** Lad feltet være tomt
-
-        Denne indstilling aktiveres med funktionen *Skabeloner til cross-docking med lokationsvejledninger*. Systemet bruger lokationsvejledninger som en hjælp til at bestemme, hvilken lokation cross-docking-lager skal flyttes til. Du kan definere den ved at tildele en vejledningskode til hver relevante cross-docking-skabelon. Hvis der er angivet en vejledningskode, når arbejde genereres, søger systemet i lokationsvejledninger ved hjælp af vejledningskoden. På denne måde kan du begrænse lokationsvejledninger, der bruges til en bestemt cross-docking-skabelon.
-
     - **Valider tidsvindue:** *Ja*
 
         Denne indstilling angiver, om det maksimale tidsvindue skal evalueres, når der er valgt en forsyningskilde. Hvis denne indstilling er angivet til *Ja*, bliver de felter, der er relateret til de maksimale og minimale tidsvinduer, tilgængelige.
@@ -116,9 +112,6 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
 
     - **Løbenummer:** *1*
     - **Forsyningskilde:** *Indkøbsordre*
-
-> [!NOTE]
-> Du kan konfigurere en forespørgsel til at styre, hvornår en bestemt cross-docking-skabelon bruges. Forespørgslen på cross-docking-skabeloner har kun tabellen *InventTable* (varer) og den indre join-tabel *WHSInventTable* (WHS-varer). Hvis du vil føje andre tabeller til forespørgslen, kan du sammenkæde dem ved kun at bruge *eksisterende joinforbindelser* eller *ikke-eksisterende joinforbindelser*. Når du filtrerer på de joinforbundne tabeller, hentes der en post fra hovedtabellen for hver tilsvarende post i den joinforbundne tabel. Hvis join-typen er *eksisterende joinforbindelse*, afsluttes søgningen, når det første match er fundet. Hvis du f.eks. joinforbinder tabellen med salgsordrelinjer til varetabellen, valideres og returneres varer, hvor mindst én salgsordrelinje har den definerede betingelse. Dataene hentes reelt fra den overordnede tabel (varer) og ikke fra den underordnede tabel (salgsordrelinjen). Derfor kan der ikke som standard foretages filtrering efter kildedokumenter som f.eks. salgsordrelinjer eller kunder.
 
 ### <a name="create-a-work-class"></a>Oprette en arbejdsklasse
 
@@ -154,9 +147,6 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
     - **Arbejdsklasse-id:** *CrossDock*
 
 1. Vælg **Gem**, og kontroller, at afkrydsningsfeltet **Gyldig** er markeret for skabelonen *51 Cross Dock*.
-1. Valgfrit: Vælg **Rediger forespørgsel**, hvis du vil angive kriterier, der styrer, hvornår og hvor arbejdsskabelonen anvendes.
-
-    Du kan konfigurere en forespørgsel til at styre, hvornår en bestemt arbejdsskabelon bruges. Du kan f.eks. angive, at en skabelon kun kan bruges til arbejde et bestemt sted. Hvis arbejdsskabelonen til cross-docking skal anvendes på en bestemt lokation, skal du filtrere i feltet **Startlokation** og ikke i feltet **Lokation**, da arbejdsoprettelsen for de indgående processer (indkøb, cross-docking og genopfyldning) starter fra læg på-linjen. Når arbejdet oprettes, angiver lokationsvejledningen feltet **Lokation** til læg på lager-lokationen. Pluklokationen gemmes dog i feltet **Startlokation**.
 
 > [!NOTE]
 > Arbejdsklasse-id'erne for arbejdstyperne *Pluk* og *Læg på lager* skal være ens.
@@ -324,7 +314,4 @@ I øjeblikket har begge arbejds-id'er samme målnummerplade. Hvis du vil udføre
 
 I følgende illustration vises, hvordan det færdige arbejde til cross-docking kan blive vist i Microsoft Dynamics 365 Supply Chain Management.
 
-![Arbejde med cross-docking udført.](media/PlannedCrossDockingWork.png "Arbejde med cross-docking udført")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+![Arbejde med cross-docking udført](media/PlannedCrossDockingWork.png "Arbejde med cross-docking udført")

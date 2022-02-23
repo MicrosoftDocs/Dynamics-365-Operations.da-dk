@@ -2,13 +2,16 @@
 title: Konfigurere RFM-analyse (Recency, Frequency, Monetary)
 description: Dette emne forklarer, hvordan du konfigurerer en RFM-analyse (Recency, Frequency, Monetary) af dine kunder.
 author: josaw1
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 78943
 ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765212"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411155"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Konfigurere RFM-analyse (Recency, Frequency, Monetary)
 
@@ -39,7 +42,7 @@ Din organisation har f.eks. oprettet vurderingerne på en skala fra 1 til 5, hvo
 
 - **Recency-vurdering på 5** – Debitoren har foretaget et køb for nylig.
 - **Frequency-vurdering på 3** – Debitoren køber produkter fra din organisation med moderat hyppighed.
-- **Monetary-vurdering på 5** – Når debitoren foretager et køb, bruger vedkommende en betydelig mængde penge.
+- **Monetary-vurdering på 5** – Når debitoren foretager et køb, bruger han eller hun en betydelig mængde penge.
 
 Hvis organisationen bruger en samlet tal for resultatet, lægges de enkelte vurderinger sammen. Debitoren har i samme eksempel en vurdering på 13 (5 + 3 + 5).
 
@@ -94,6 +97,3 @@ Du kan bruge denne procedure til at få vist eller rydde historikken for en RFM-
 2. Vælg den post, du vil have vist, på siden **RFM-analyse**.
 3. Vælg oversigtspanelet **Historik** for at få vist historikken for posten.
 4. Vælg **Ryd historik** for at rydde historikken for posten.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

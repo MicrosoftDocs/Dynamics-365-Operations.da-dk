@@ -1,10 +1,12 @@
 ---
-title: Konfigurere hjælp-oplevelsen for Finans- og driftsapps
-description: Dette emne giver oplysninger om komponenterne i Hjælp-system til nogle Microsoft Dynamics 365-apps.
+title: Konfigurere hjælp-oplevelsen for Finance and Operations-apps
+description: Dette emne giver oplysninger om komponenterne i Hjælp-system til nogle Microsoft Dynamics 365-apps. Det forklarer også, hvordan disse apps tilknyttes, og indeholder en oversigt over den proces, der bruges til at oprette brugerdefineret hjælp.
 author: margoc
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
@@ -15,34 +17,31 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071002"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798274"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjælp-oplevelsen for Finans- og driftsapps
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjælp-oplevelsen for Finance and Operations-apps
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-I dette emne kan du finde en oversigt over komponenterne i Hjælp-systemet til Finans- og driftsapps, f.eks. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources. Dette emner forklarer også, hvordan disse komponenter tilknyttes, og indeholder en oversigt over den proces, der bruges til at oprette brugerdefineret hjælp.
+I dette emne kan du finde en oversigt over komponenterne i Hjælp-systemet til Finance and Operations-apps, f.eks. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources. Dette emner forklarer også, hvordan disse komponenter tilknyttes, og indeholder en oversigt over den proces, der bruges til at oprette brugerdefineret hjælp.
 
 ## <a name="help-architecture"></a>Hjælp-arkitektur
 
-Finans- og driftsapps indeholder konceptbaserede oversigter og andre emner, der er udgivet på [Microsoft Dynamics 365-dokumentationens](/dynamics365/) websted. Du kan derefter få adgang til dette indhold fra ruden **Hjælp** i produktet. I følgende illustration vises delene i Hjælp-systemet.
+Finance and Operations-apps omfatter konceptbaserede oversigter og andre emner, der er udgivet på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webstedet. Du kan derefter få adgang til dette indhold fra ruden **Hjælp** i produktet. I følgende illustration vises delene i Hjælp-systemet.
 
-[![Hjælp-arkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
+[![Hjælp-arkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
 Hjælp-systemet i produktet henter artikler fra docs.microsoft.com og andre tilknyttede websteder. Det henter også opgavevejledninger, der er gemt i BPM (Business process modeler) i Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="adding-task-guides"></a>Tilføje opgaveguider
 
 > [!NOTE]
-> Fanen **Opgaveguider** er i øjeblikket ikke tilgængelig i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Opgaveguiderne i oplevelsen Introduktion i Personale forbliver imidlertid tilgængelige og dækker de grundlæggende funktioner. For både Human Resources og Commerce gælder det, at hjælp til procedurer er tilgængelig på [Microsoft Dynamics 365-dokumentation](/dynamics365/)-webstedet.
+> Fanen **Opgaveguider** er i øjeblikket ikke tilgængelig i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Opgaveguiderne i oplevelsen Introduktion i Personale forbliver imidlertid tilgængelige og dækker de grundlæggende funktioner. For både Human Resources og Commerce gælder det, at hjælp til procedurer er tilgængelig på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webstedet.
 
 På siden **Systemparametre** kan systemadministratorer konfigurere adgang til de relevante biblioteker for opgaveguider til implementering af en installation.
 
@@ -50,20 +49,20 @@ På siden **Systemparametre** kan systemadministratorer konfigurere adgang til d
 > - Hvis du vil konfigurere hjælp, skal du være logget på med en konto i den samme lejer som den lejer, hvor appen er installeret.
 > - Det er ikke muligt at oprette forbindelse til et LCS-bibliotek fra en forekomst af den app, der kører på en lokal virtuel harddisk (VHD).
 
-[![Formularen Systemparametre med hjælpeindstillinger.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Formularen Systemparametre med hjælpeindstillinger](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Hvis du vil konfigurere opgaveguides til en løsning, skal du følge disse trin på siden **Systemparametre**.
 
 > [!IMPORTANT]
 > Første gang du åbner fanen **Hjælp**, skal du oprette forbindelse til Lifecycle Services. Du skal vælge linket i midten af formularen, vente på forbindelsen, lukke dialogboksen og derefter vælge **OK** for at få adgang til siden **Systemparametre**.
 >
-> [![Opret forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Opret forbindelse til LCS.")](./media/connect-to-lcs-crop.png)
+> [![Opret forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Opret forbindelse til LCS")](./media/connect-to-lcs-crop.png)
 
 1. Vælg det Lifecycle Services-projekt, der skal oprettes forbindelse til.
 2. Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
 3. Angiv visningsrækkefølgen for BPM-bibliotekerne. Visningsrækkefølgen bestemmer den rækkefølge, som opgaveregistreringer fra bibliotekerne vises i på ruden **Hjælp**.
 
-Når du har fuldført disse trin, kan du åbne ruden **Hjælp** og vælge fanen **Opgaveguider**. Nu kan du se de opgaveguider, der gælder for den aktuelle side i Finans og drift. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen.
+Når du har fuldført disse trin, kan du åbne ruden **Hjælp** og vælge fanen **Opgaveguider**. Nu kan du se opgaveguiderne, der gælder for den aktuelle side i Finance and Operations-apps. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen.
 
 ### <a name="showing-translated-task-guides"></a>Visning af oversatte opgaveguider
 
@@ -87,9 +86,9 @@ Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og
 
 ### <a name="connect-a-custom-help-site"></a>Oprette forbindelse til et brugerdefineret Hjælp-websted
 
-Finans- og driftsapps bruges sjældent i den form, de leveres i fra starten. Løsningen bliver i stedet tilpasset og udvidet, så den passer til organisationens behov. Du kan også tilpasse og udvide Hjælp-funktionerne. Du kan f.eks. føje brugerdefineret Hjælp til ruden **Hjælp** i produktet.
+Finance and Operations-apps bruges sjældent i den form, de leveres i fra starten. Løsningen bliver i stedet tilpasset og udvidet, så den passer til organisationens behov. Du kan også tilpasse og udvide Hjælp-funktionerne. Du kan f.eks. føje brugerdefineret Hjælp til ruden **Hjælp** i produktet.
 
-Microsoft har stiller en værktøjskasse til rådighed, der hjælper dig med at implementere og forbinde brugerdefineret hjælp til ruden **Hjælp**. Få flere oplysninger om, hvordan du kan konfigurere en brugerdefineret Hjælp-løsning, der er forbundet til ruden **Hjælp**, i [Oversigt over brugerdefineret hjælp](../../dev-itpro/help/custom-help-overview.md).
+Microsoft har stiller en værktøjskasse til rådighed, der hjælper dig med at implementere og forbinde brugerdefineret hjælp til ruden **Hjælp**. Få flere oplysninger om, hvordan du kan konfigurere en brugerdefineret Hjælp-løsning, der er forbundet til ruden **Hjælp**, i  [Oversigt over brugerdefineret hjælp](../../dev-itpro/help/custom-help-overview.md).
 
 Hvis du vil samarbejde med Microsoft om værktøjer og processer til tilpasning af hjælp, skal du udfylde formularen på [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).
 
@@ -100,6 +99,3 @@ Hvis du vil samarbejde med Microsoft om værktøjer og processer til tilpasning 
 [Ressourcer til arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)  
 [Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Brugerdefineret GitHub-hjælpelager](https://github.com/microsoft/dynamics356f-o-custom-help)  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

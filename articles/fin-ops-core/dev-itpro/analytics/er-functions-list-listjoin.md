@@ -2,8 +2,11 @@
 title: LISTJOIN ER-funktion
 description: Dette emne indeholder oplysninger om, hvordan funktionen LISTJOIN til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
+manager: kfend
 ms.date: 04/01/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9346afc88adb89c08098f39a5fd1c2cb82f664af2244b8cafbbe8a4d2f516c6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28f03e5e6af0f252a994f2e54b57a5ef654f4e67
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755796"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682237"
 ---
 # <a name="listjoin-er-function"></a>LISTJOIN ER-funktion
 
@@ -30,7 +33,7 @@ Funktionen `LISTJOIN` returnerer en *Postliste*-værdi, der repræsenterer en ny
 ## <a name="syntax"></a>Syntaks
 
 ```vb
-LISTJOIN (list 1 [, list 2, …, list N])
+LIST (list 1 [, list 2, …, list N])
 ```
 
 ## <a name="arguments"></a>Argumenter
@@ -65,21 +68,18 @@ Du indtaster derefter datakilde **Post 2** af typen `Container`. Denne datakilde
 - **Beløb**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `Real`.
 - **ErGyldig**: Dette felt indeholder et udtryk, der returnerer en værdi af typen `Boolean`.
 
-![Side for ER-modeltilknytningsdesigner.](./media/er-functions-list-listjoin-image1.gif)
+![Side for ER-modeltilknytningsdesigner](./media/er-functions-list-listjoin-image1.gif)
 
 I dette tilfælde returnerer udtrykket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny liste, der indeholder to poster.
 
-![Designerside med to poster til ER-modeltilknytning.](./media/er-functions-list-listjoin-image2.gif)
+![Designerside med to poster til ER-modeltilknytning](./media/er-functions-list-listjoin-image2.gif)
 
 Strukturen i denne liste består af et enkelt felt for **Beløb** af typen `Real`, fordi dette felt er det eneste felt, der vises i alle argumenterne for den kaldte funktion.
 
-![Designerside med beløbsfelt til ER-modeltilknytning.](./media/er-functions-list-listjoin-image3.gif)
+![Designerside med beløbsfelt til ER-modeltilknytning](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Listefunktioner](er-functions-category-list.md)
 
 [Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering](er-debug-data-sources.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

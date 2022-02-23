@@ -2,9 +2,11 @@
 title: Konfigurere egenskaber for arbejdsgang
 description: I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81f73f187f75e40297f1f8462e9fff58a309f7f0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069242"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693276"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurere egenskaber for arbejdsgang
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
 
@@ -74,9 +73,6 @@ Du kan angive instruktioner til brugere, der sender dokumenter til behandling og
     4. Indtast teksten i feltet **Oversat tekst**.
     5. Hvis du vil personalisere teksten, kan du indsætte pladsholdere. I trin 3 kan du se anvisninger i, hvordan du angiver en pladsholder.
     6. Klik på **Luk**.
-
-> [!NOTE]
-> Pladsholderne kan ikke tilføjes ved hjælp af kopiér og indsæt, fordi måloplysningerne ikke er indsat korrekt. Brug grænsefladen til at tilføje pladsholdere.
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Angive, hvornår denne arbejdsgang bruges via aktiveringsbetingelser
 
@@ -183,6 +179,3 @@ Hvis du vil angive kommentarer om de ændringer, du har foretaget i arbejdsgange
 2. I feltet **Angiv kommentarer om arbejdsgangen** skal du angive dine kommentarer.
 3. Gennemse kommentarer. Når du har tilføjet kommentarer, kan du ikke ændre dem.
 4. Klik på **Tilføj** til at tilføje dine kommentarer til området **Kommentarhistorik**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

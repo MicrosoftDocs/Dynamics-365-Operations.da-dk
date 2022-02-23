@@ -2,27 +2,28 @@
 title: Oversigt over finans og økonomirapportering
 description: Brug finansregnskabet til at definere og administrere finansposter for den juridiske enhed.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/14/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "65431"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 65431
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 639d77e43fc9a55e43ebb030f8fc292ce8fb7fce
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1ade10020e4bab02490c9104c37fe1f234d634e8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985231"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441672"
 ---
 # <a name="general-ledger-home-page"></a>Startside for finans
 
@@ -39,7 +40,7 @@ Du kan fordele eller distribuere pengebeløb til en eller flere konti eller komb
 - [Kontosaldi i Finans](general-ledger-account-balances.md)
 - [Økonomiske dimensioner](financial-dimensions.md)
 
-[![Forretningsproces.](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Forretningsproces](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## <a name="sales-tax"></a>Moms
 Alle virksomheder inddriver og betaler skatter til forskellige skattemyndigheder. Reglerne og satserne varierer afhængigt af land/område, stat, region og by.
@@ -54,14 +55,14 @@ Reglerne skal desuden opdateres regelmæssigt, når skattemyndighederne ændrer 
 
 #### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) for at se, hvilke nye funktioner der er planlagt. 
+Gå til [Microsoft Dynamics 365-frigivelsesplaner](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
 
 #### <a name="financial-reporting"></a>Økonomirapportering
 Gå til emnet [Oversigt over økonomirapportering](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) for at få oplysninger om økonomirapporter.
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance og drift - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finde meninger, nyheder og andre oplysninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 
@@ -73,6 +74,3 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 
 - [Værd at vide om Finans i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

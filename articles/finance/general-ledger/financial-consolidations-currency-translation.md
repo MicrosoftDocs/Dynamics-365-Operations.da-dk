@@ -1,24 +1,27 @@
 ---
 title: Oversigt over økonomiske konsolideringer og valutaomregning
 description: I dette emne beskrives økonomisk konsolideringer og valutaomregning i Finans.
-author: jiwo
-ms.date: 10/07/2021
-ms.topic: overview
+author: aprilolson
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a77fe5e1970c617203706d9d629ac65e3a47909b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982399"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441677"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversigt over økonomiske konsolideringer og valutaomregning
 
@@ -66,13 +69,13 @@ Her er nogle af de konsolideringsscenarier, som Konsolider online understøtter:
 ## <a name="legal-entity-setup"></a>Opsætning af juridisk enhed
 Før du behandler en konsolidering, skal du indstille den juridiske enhed. Du kan køre konsolideringen, så mange gange du ønsker, og alle data oversættes fra kilderegnskabets regnskabsvaluta til den valuta, der er defineret for det konsoliderede regnskab. Derfor hvis du for følgende organisationsstruktur skal oversætte alle nordamerikanske regnskaber til amerikanske dollar (USD) først og derefter til euro (EUR), som er valutaen i det overordnede regnskab, skal du have mindst to konsoliderede regnskaber.
 
-![Organisationsstruktur.](./media/organizational-structure.png "Organisationsstruktur")
+![Organisationsstruktur](./media/organizational-structure.png "Organisationsstruktur")
 
 I den foregående organisationsstruktur skal du have en juridisk enhed for den nordamerikanske konsolidering, fordi konsolideringer altid konsolideres fra regnskabsvalutaen for kilderegnskabet til valutaen for det konsoliderede regnskab. Hvis alle firmaer i eksemplet er inkluderet i en enkelt konsolidering, bliver det mexicanske datterselskab oversat fra mexicanske pesos (MXN) til EUR, og ikke fra MXN til USD til EUR.
 
 Når du opretter den juridiske enhed, kan du angive, om regnskabet bruges til både konsolideringsprocessen og elimineringsprocessen eller til blot en af disse processer. I følgende illustration bruges regnskabet til begge processer. Bemærk, at du ikke kan bogføre kassekladder i et konsolideret regnskab, men at du kan bogføre dem i et elimineringsregnskab. Derfor vil du måske gerne have et separat elimineringsregnskab.
 
-![Juridisk enhed, der bruges til både konsolidering og eliminering.](./media/sep-elimination-company.png "Juridisk enhed, der bruges til både konsolidering og eliminering")
+![Juridisk enhed, der bruges til både konsolidering og eliminering](./media/sep-elimination-company.png "Juridisk enhed, der bruges til både konsolidering og eliminering")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Hovedkonti og koncernkontogrupper
 Du skal foretage et valg af, hvordan du vil konsolidere din kontoplan. Under konsolideringsprocessen har du tre muligheder for at konsolidere hovedkonti.
@@ -81,11 +84,11 @@ Den første mulighed er at bruge hovedkontiene fra kilderegnskaberne. I så fald
 
 Den anden mulighed er at angive en standardkoncernkonto på siden **Hovedkonti**. Kontoen knyttes derefter til koncernkontoen. Denne mulighed kan være nyttig, når du har forskellige kontoplaner eller skal oprette tilknytning til en plan, der er defineret af hovedkontoret.
 
-![Standardkoncernkonto, der er angivet på siden Hovedkonti.](./media/main-accounts.png "Standardkoncernkonto, der er angivet på siden Hovedkonti")
+![Standardkoncernkonto, der er angivet på siden Hovedkonti](./media/main-accounts.png "Standardkoncernkonto, der er angivet på siden Hovedkonti")
 
 Den tredje mulighed er at bruge koncernkontogrupper. Du kan definere så mange koncernkontogrupper, som du har brug for. På siden **Yderligere koncernkonti** skal du derefter knytte hovedkontoen fra kontoplanen til den konto, du har brug for til den pågældende gruppe.
 
-![Tilknytning på siden Flere koncernkonti.](./media/additional-consolidation-accounts.png "Tilknytning på siden Flere koncernkonti")
+![Tilknytning på siden Flere koncernkonti](./media/additional-consolidation-accounts.png "Tilknytning på siden Flere koncernkonti")
 
 ## <a name="consolidating-online"></a>Konsolidering online
 Du kan finde oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Økonomiske konsolideringer online](./consolidate-online.md).
@@ -97,7 +100,7 @@ Du kan få vist resultaterne af konsolideringen på flere måder:
 - Gennemse listesiden **Råbalance** i det konsoliderede regnskab.
 - På listen over konsolideringstransaktioner på siden **Konsolideringer** kan du se de saldi, der oprettes efter dato for hvert kilderegnskab for hver periode.
 
-    ![Konsolideringstransaktioner på siden Konsolideringer.](./media/managing-consolidation-transactions.png "Konsolideringstransaktioner på siden Konsolideringer")
+    ![Konsolideringstransaktioner på siden Konsolideringer](./media/managing-consolidation-transactions.png "Konsolideringstransaktioner på siden Konsolideringer")
 
 Hvis du vil køre konsolideringen igen, kan du kun behandle konsolideringen. Alternativt kan du først vælge **Fjern transaktioner** på siden **Konsolideringer**.
 I tilfælde af, at saldiene på den konsoliderede konto ikke nøjagtige, kan disse saldi rettes via siden **Justeringer af ultimoperiode**.
@@ -118,15 +121,15 @@ Du kan finde opsætningen for elimineringer i området **Opsætning** i modulet 
 
 Du kan angive den dato, hvor elimineringsreglen træder i kraft, og den dato, hvor den udløber, efter behov. Hvis du vil have, at elimineringsreglen skal være tilgængelig i elimineringsforslagsprocessen, skal du indstille **Aktiv** til **Ja**. Vælg et kladdenavn af typen **Eliminering**.
 
-![Grundlæggende egenskaber for en elimineringsregel.](./media/ledger-elimination-rule-journal.png "Grundlæggende egenskaber for en elimineringsregel")
+![Grundlæggende egenskaber for en elimineringsregel](./media/ledger-elimination-rule-journal.png "Grundlæggende egenskaber for en elimineringsregel")
 
 Når du har defineret de grundlæggende egenskaber, skal du vælge **Linjer** for at definere de faktiske behandlingsregler. Der er to elimineringsmuligheder: Du kan eliminere nettoændringsbeløbet eller definere et fast beløb.
 
-Vælg kildekontiene. Du kan bruge en stjerne (\*) som jokertegn. For eksemplet vælger **1\**_ alle konti, der starter med _* 1** som en datakilde til tildelingen.
+Vælg kildekontiene. Du kan bruge en stjerne (\*) som jokertegn. For eksemplet vælger **1\*** alle konti, der starter med **1** som en datakilde til tildelingen.
 
 Når du har valgt kildekontiene, skal du bruge feltet **Specifikation af regnskab** til at angive den konto, der bruges fra destinationsregnskabet. Vælg **Kilde** for at bruge den hovedkonto, der er defineret i kildekontoen. Hvis du vælger **Brugerdefineret**, skal du angive en destinationskonto.
 
-![Elimineringsregellinje på siden Finans.](./media/ledger-elimination-rule-line.png "Elimineringsregellinje på siden Finans")
+![Elimineringsregellinje på siden Finans](./media/ledger-elimination-rule-line.png "Elimineringsregellinje på siden Finans")
 
 Feltet **Specifikation af dimension** fungerer som feltet **Specifikation af regnskab**. Vælg **Kilde** for at bruge de samme dimensioner i modtagervirksomheden og i kilderegnskabet. Hvis du vælger **Brugerdefineret**, skal du angive dimensionerne i modtagervirksomheden ved at vælge menupunktet **Destinationsdimensioner**. Vælg derefter de kildedimensioner og de økonomiske dimensioner og værdier, der bruges som kilde til elimineringen.
 
@@ -165,8 +168,7 @@ Kunder, der bruger Økonomirapportering til økonomiske konsolideringer og valut
 - **Strømlinet valutaomregning** – Efter minimal opsætning i Finance kan du omregne enhver Økonomirapportering-rapport til enhver rapporteringsvaluta, som er blevet oprettet. Du kan desuden oprette et ubegrænset antal rapporteringsvalutaer.
 - **Bogføre elimineringer ved kilden** – Du kan oprette og udskrive en elimineringsrapport for at kontrollere elimineringsposteringer. Derefter kan du bogføre enhver ny eliminering som standard interne transaktioner. Du kan også bruge en juridisk enhed til eliminering for enhver postering, du ikke ønsker i dine juridiske enheder.
 
-## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Understøttede konsolideringsscenarier for Financial Reporting
-
+## <a name="supported-consolidation-scenarios"></a>Understøttede konsolideringsscenarier
 Her er nogle af de konsolideringsscenarier, som Økonomirapportering understøtter:
 
 - Konsolideringer på enkeltniveau og på flere niveauer på tværs af juridiske enheder
@@ -180,18 +182,3 @@ Her er nogle af de konsolideringsscenarier, som Økonomirapportering understøtt
 
 ## <a name="generating-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 Oplysninger om scenarier, hvor du kan generere konsoliderede regnskaber, finder du i [Generere konsoliderede regnskaber](./generating-consolidated-financial-statements.md).
-
-## <a name="performance-enhancement-for-large-consolidations"></a>Ydeevneforbedring for store konsolideringer
-
-Miljøer med mange finanstransaktioner kan køre langsommere end det optimale. For at løse dette problem kan du konfigurere parallel behandling af batches, der bruger et brugerdefineret antal datoer. For at sikre, at løsningen fungerer efter hensigten, skal du føje et filtypepunkt til konsolideringen for at returnere en objektbeholder med datointervaller. Basisimplementeringen skal indeholde ét datointerval for start- og slutdatoen for konsolideringen. Datointervaller i basisimplementeringen valideres for at sikre, at de ikke indeholder huller eller overlap. Datointervaller bruges til at oprette parallelle batchbundter for hvert enkelt regnskab.
-
-Du kan tilpasse antallet af datointervaller for at opfylde organisationens behov. Når du tilpasser antallet af datointervaller, kan du forenkle testen og minimere effekten på eksisterende kode, da der ikke findes nogen fordelingslogik. De eneste nye test, der kræves, validerer oprettelsen af batchbundter, validerer datointervaller og tester en delmængde af datointervaller for at kontrollere, at batchene kan samles til den endelige batchopgave. 
-
-Denne funktion forbedrer konsolideringsprocessen i Finans, når processen køres i et batch. Forbedringerne øger ydeevnen af processen til konsolidering af finansmodulet ved at opdele konsolideringen i flere opgaver, der kan behandles parallelt. I standardmetoden til kørsel af en konsolidering behandler hver opgave otte dage med brug af finansaktiviteten. Der er dog tilføjet et udvidelsespunkt, hvor du kan tilpasse de nummeropgaver, der oprettes.
-
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
-
-- **Modul:** Finans
-- **Funktionsnavn:** Ydeevneforbedring for store konsolideringer
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

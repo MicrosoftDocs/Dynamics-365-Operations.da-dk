@@ -1,25 +1,28 @@
 ---
 title: Bekræftelse af stykplukning
-description: Stykplukning gør det muligt for dig at bekræfte hver enkelt lagervare via pluk og optællingsarbejde på en mobilenhed.
+description: I dette emne beskrives, hvordan du kan konfigurere og anvende bekræftelse af stykplukning fra en mobilenhed.
 author: Mirzaab
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a925685b80c635cf036f19748e16d415953ed5fdda7b81498baeade35ccbfcab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed63245066799d7d8f14362ab6c9193c0cda7c4a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765996"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424507"
 ---
 # <a name="piece-picking-confirmation"></a>Bekræftelse af stykplukning
 
@@ -27,9 +30,9 @@ ms.locfileid: "6765996"
 
 Stykplukning gør det muligt for dig at bekræfte hver enkelt lagervare via pluk og optællingsarbejde på en mobilenhed. For pluk kan du bekræfte mængden af arbejde, der skal behandles, op til det antal, der er angivet på arbejde, der skal plukkes. For optællingsarbejde kan du scanne det lager, du optæller, og spore det samlede beløb.
 
-Når du aktiverer stykpluk, vælges bekræftelse af produkt automatisk. Ved pluk af arbejdstypen kan du angive det maksimale antal styk. På denne måde kan du angive et maksimum for det antal enheder, der skal bekræftes under arbejdet. Det maksimale antal er baseret på den aktuelle arbejdsenhed, der behandles. Optællingsarbejdstypen tillader ikke et maksimum.
+Når du aktiverer stykpluk, vælges bekræftelse af produkt automatisk. Ved pluk af arbejdstypen er det maksimale antal styk aktiveret. På denne måde kan du angive et maksimum for det antal enheder, der skal bekræftes under arbejdet. Det maksimale antal er baseret på den aktuelle arbejdsenhed, der behandles. Optællingsarbejdstypen tillader ikke et maksimum.
 
-Du kan også bruge det antal og den måleenhed, der er knyttet til en scannet stregkode. Dette fungerer ved modtagelse af indgående flows, herunder modtagelse af blandede id'er, vare på indkøbsordre, vare på overførselsordre og varelast. Det kan også bruges til stykplukning, hvor scanning af stregkoden føjer antallet til det samlede antal bekræftede styk og konverterer mellem måleenhed på stregkoden og arbejdsenheden. Hvis det ved optælling af måleenheden på stregkoden kan bekræftes, at antallet er tilladt ved optælling af seriegruppen, føjes antallet til den samlede optælling.
+Du kan også bruge det antal og den måleenhed, der er knyttet til en scannet stregkode. Dette fungerer ved modtagelse af indgående flows, herunder modtagelse af blandede id'er, vare på indkøbsordre, vare på overførselsordre og varelast. Det kan også bruges til stykplukning, hvor scanning af stregkoden føjer antallet til det samlede antal bekræftede styk og konverterer mellem måleenhed på stregkoden og arbejdsenheden. Hvis det ved optælling måleenheden på stregkoden kan bekræftes, at antallet er tilladt ved optælling af seriegruppen, føjes antallet til den samlede optælling.
 
 ## <a name="where-it-applies"></a>Hvor det er relevant
 
@@ -48,6 +51,3 @@ Følgende indstillinger kan vælges, når arbejdstype pluk eller optælling.
 | Bekræftelse af stykplukning | Arbejdstyper, der kan vælges til pluk og optælling. Bekræftelse af produkt vælges automatisk. Gør det muligt for dig at bekræfte hver enkelt vare på lageret fra mobilenheden. |
 |  Maksimalt antal stykker  |                   Tilgængelig for plukarbejde, hvis bekræftelse af stykpluk er aktiveret. Angiver en grænse for det antal styk, du skal bekræfte.                   |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

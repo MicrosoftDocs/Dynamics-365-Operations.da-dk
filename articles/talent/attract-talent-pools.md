@@ -149,6 +149,3 @@ Ofte er der flere velegnede kandidater til et job, som ikke bliver valgt, men du
 1. På ansøgningssiden skal du vælge **Føj til talentpulje**. Der vises en liste over de talentpuljer, som du har adgang til.
 
 1. Vælg eller søg efter talentpuljen, og vælg derefter **Tilføj** for at føje kandidaten til denne talentpulje.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

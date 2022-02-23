@@ -1,10 +1,12 @@
 ---
 title: Livscyklustilstande for vedligeholdelsesanmodninger
 description: Dette emne beskriver, hvordan du konfigurerer livscyklustilstande for vedligeholdelsesanmodninger i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ece0fc1121211706350d804fec59e72ef08282fcba4e65f557a510834738b11
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3c2f717969b938d05e68ac775d31b6a5d5ec26a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743668"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022074"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Levetidstilstande for vedligeholdelsesanmodninger
 
@@ -48,7 +50,7 @@ Livscyklustilstande for vedligeholdelsesanmodninger definerer de stadier, som en
 
 Følgende illustration viser et eksempel på listesiden **Vedligeholdelsesanmodningers livscyklustilstande**.
 
-![Siden Livscyklustilstande for vedligeholdelsesanmodning.](media/02-setup-for-requests.png)
+![Siden Livscyklustilstande for vedligeholdelsesanmodning](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Livscyklustilstande for vedligeholdelsesanmodninger, livscyklustilstandsgrupper og -typer er relateret til og bruges på samme måde som arbejdsordres livscyklustilstande, livscyklustilstandsgrupper og -typer. 
@@ -66,9 +68,9 @@ Når du har oprettet de livscyklustilstande, der kræves til dine vedligeholdels
 
 5. I oversigts panelet **Livscyklustilstande** skal du vælge de livscyklustilstande, der bør inkluderes i livscyklusmodellen:
 
-    - Hvis du vil inkludere en livscyklustilstand i livscyklusmodellen, skal du vælge den i sektionen **Resterende livscyklustilstande** og derefter vælge knappen med højre pil ![Højre pil.](media/03-setup-for-requests.png) for at flytte den til sektionen **Valgte livscyklustilstande**.
-    - Hvis du vil inkludere alle de tilgængelige livscyklustilstande i livscyklusmodellen, skal du vælge knappen **Vælg alle tilgængelige tilstande** ![Vælg alle tilgængelige tilstande.](media/04-setup-for-requests.png). Alle livscyklustilstande flyttes til sektionen **Valgte livscyklustilstande**.
-    - Hvis du vil fjerne en livscyklustilstand fra livscyklusmodellen, skal du vælge den i sektionen **Valgte livscyklustilstande** og derefter vælge knappen med venstre pil ![Venstre pil.](media/05-setup-for-requests.png) for at flytte den til sektionen **Resterende livscyklustilstande**.
+    - Hvis du vil inkludere en livscyklustilstand i livscyklusmodellen, skal du vælge den i sektionen **Resterende livscyklustilstande** og derefter vælge knappen med højre pil ![Højre pil](media/03-setup-for-requests.png) for at flytte den til sektionen med **Valgte livscyklustilstande**.
+    - Hvis du vil inkludere alle de tilgængelige livscyklustilstande i livscyklusmodellen, skal du vælge knappen **Vælg alle tilgængelige tilstande** ![Vælg alle tilgængelige tilstande](media/04-setup-for-requests.png). Alle livscyklustilstande flyttes til sektionen **Valgte livscyklustilstande**.
+    - Hvis du vil fjerne en livscyklustilstand fra livscyklusmodellen, skal du vælge den i sektionen **Valgte livscyklustilstande** og derefter vælge knappen med venstre pil ![Venstre pil](media/05-setup-for-requests.png) for at flytte den til sektionen med **Resterende livscyklustilstande**.
 
 6. I oversigtspanelet **Generelt** er felterne i sektionen **Opdateringer** relevante, hvis du bruger reparation af depot.
 
@@ -77,7 +79,4 @@ Når du har oprettet de livscyklustilstande, der kræves til dine vedligeholdels
 
 Følgende illustration viser et eksempel på listesiden **Vedligeholdelsesanmodningers livscyklusmodeller**.
 
-![Siden Livscyklusmodeller for vedligeholdelsesanmodning.](media/06-setup-for-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Siden Livscyklusmodeller for vedligeholdelsesanmodning](media/06-setup-for-requests.png)

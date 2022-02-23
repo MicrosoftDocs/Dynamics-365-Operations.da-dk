@@ -1,10 +1,12 @@
 ---
 title: Administrere brugere af kreditorsamarbejde
 description: Dette emne beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ff0d11bf2c42f7ae63e3db5f31f3ffea2c28f693
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6356c1d11ba507c0eaa42087bdebe982ef091dbd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578122"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019923"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Administrere brugere af kreditorsamarbejde
 
@@ -62,7 +64,7 @@ Før du kan anmode om, at der er klargjort en ny bruger, skal vedkommende sætte
 4. I sektionen **Tildel brugerroller** skal du markere **Tildel**-afkrydsningsfeltet for de sikkerhedsroller, som den nye bruger skal have.
 5. Klik på **Send**.
 
-Når kreditorbrugeranmodning sendes, bliver feltet **Adgang til kreditorsamarbejde tilladt** indstillet til **Ja** for den valgte kreditorkonto, og en arbejdsgang for brugeranmodning startes. Der oprettes en ny bruger som en del af arbejdsgangen, og der tildeles sikkerhedsroller. Desuden bliver en Azure B2B-tjeneste aktiveret, som starter interaktion med Azure-portal og knytter en ny eller eksisterende AAD-konto til Supply Chain Management-brugerkontoen. Du kan finde flere oplysninger i [Hvad er Azure AD B2B-samarbejde?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Når kreditorbrugeranmodning sendes, bliver feltet **Adgang til kreditorsamarbejde tilladt** indstillet til **Ja** for den valgte kreditorkonto, og en arbejdsgang for brugeranmodning startes. Der oprettes en ny bruger som en del af arbejdsgangen, og der tildeles sikkerhedsroller. Desuden bliver en Azure B2B-tjeneste aktiveret, som starter interaktion med Azure-portal og knytter en ny eller eksisterende AAD-konto til Supply Chain Management-brugerkontoen. Du kan finde flere oplysninger i [Hvad er Azure AD B2B-samarbejde?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Deaktivere en bruger
 
@@ -91,6 +93,3 @@ Sådan anmoder du om, at sikkerhedsrollerne ændres for en bruger:
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

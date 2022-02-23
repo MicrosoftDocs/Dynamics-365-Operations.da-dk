@@ -102,6 +102,3 @@ Hvis du vælger feltet **Overtag tilbagemeldingsdeltagere fra ansættelsesteam**
 Samtaleaktiviteten er en valgfri aktivitet med tre komponenter: **Anmodning om kandidatens tilgængelighed**, **Tidsplan** og **Tilbagemelding**. Anvend samtaleaktiviteten i jobskabelonen, hvis du ønsker, at alle anmodninger om kandidatens tilgængelighed, tidsplan og tilbagemelding skal indgå som led i processen i stedet for at bruge dem hver for sig.
 
 For at inkludere eller begrænse de kandidater, der skal interviewes, skal du vælge en værdi i feltet **Hvem interviewer du**. De tilgængelige valgmuligheder er **Alle kandidater**, **Eksterne kandidater** og **Interne kandidater**. Hvis du eksempelvis ønsker at springe interne kandidater over i første planlægningsrunde, skal du indstille **Hvem interviewer du** til **Eksterne kandidater**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

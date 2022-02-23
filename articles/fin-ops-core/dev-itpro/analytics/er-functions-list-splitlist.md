@@ -2,8 +2,11 @@
 title: ER-funktionen SPLITLIST
 description: Dette emne indeholder oplysninger om, hvordan funktionen SPLITLIST til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-ms.date: 03/15/2021
+manager: kfend
+ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef0b548173a01cc5a15fcfb743dfb29397c1349b3c2926fa6401399459d07026
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d0f527dcf313a6a5e3b6601cac9a0f6495f66833
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776116"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680332"
 ---
 # <a name="splitlist-er-function"></a>ER-funktionen SPLITLIST
 
@@ -27,16 +30,10 @@ ms.locfileid: "6776116"
 
 Funktionen `SPLITLIST` opdeler den angivne liste i underlister (eller batches), som hver især indeholder det angivne antal poster. Derefter returneres resultatet som en ny *Postliste*-værdi, der består af batches.
 
-## <a name="syntax-1"></a>Syntaks 1
+## <a name="syntax"></a>Syntaks
 
 ```vb
 SPLITLIST (list, number)
-```
-
-## <a name="syntax-2"></a>Syntaks 2
-
-```vb
-SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumenter
@@ -49,13 +46,9 @@ Den gyldige sti til en datakilde af datatypen *Postliste*.
 
 Det højeste antal viste poster per batch.
 
-`on-demand reading flag`: *Boolesk*
-
-En *boolesk* værdi, der angiver, om elementer i underlister skal genereres efter behov.
-
 ## <a name="return-values"></a>Returnerede værdier
 
-*Liste over poster*
+*Postliste*
 
 Den resulterende liste over poster.
 
@@ -70,8 +63,6 @@ Den returnerede batchliste indeholder følgende elementer:
 - **Batchnumber:** *Heltal*
 
     Antallet af aktuelle batches på den returnerede liste.
-
-Når aflæsningsflaget efter behov angives til **Sand**, genereres der underlister ved anmodning, hvilket gør det muligt at reducere forbruget af hukommelse, men det kan medføre nedsat ydeevne, hvis elementer ikke bruges sekventielt.
 
 ## <a name="example"></a>Eksempel
 
@@ -90,6 +81,3 @@ I følgende illustration vises resultatet, når det designede format køres.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Listefunktioner](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

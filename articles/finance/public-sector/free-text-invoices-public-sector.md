@@ -1,35 +1,39 @@
 ---
 title: Fritekstfakturaer i den offentlige sektor
-description: I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for enheder i den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
-author: v-kiarnd
+description: I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustBillingClassification, CustBillingCode, CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 25821
 ms.assetid: 483e2726-ec48-4d1f-82f5-bffddea301ce
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a044d332ef8208e808d2d7a3230e1f445131423d
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 9f458e52ac77496682018e496dcedce358549ad3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817719"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407651"
 ---
 # <a name="free-text-invoices-in-the-public-sector"></a>Fritekstfakturaer i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for enheder i den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
+I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
 
-## <a name="do-i-have-to-select-a-billing-classification-for-every-free-text-invoice"></a>Skal jeg vælge en faktureringsklassifikation for hver fritekstfaktura?
+<a name="do-i-have-to-select-a-billing-classification-for-every-free-text-invoice"></a>Skal jeg vælge en faktureringsklassifikation for hver fritekstfaktura?
+-------------------------------------------------------------------------
 
 Ja, når faktureringsklassifikationer er aktiveret, er det nødvendigt at angive en faktureringsklassifikation for hver fritekstfaktura. Faktureringsklassifikationen styrer, hvilke faktureringskoder der kan angives på fakturaen. Den styrer også betalingsvilkår og -betingelser, nummerserier og behandlingen af fakturaen. Du kan få flere oplysninger om faktureringsklassifikationer i [Faktureringsklassifikationer og faktureringskoder i den offentlige sektor](billing-classifications-billing-codes-public-sector.md).
 
@@ -65,6 +69,3 @@ Rentekoden kan indstilles på faktureringskoden, faktureringsklassifikationen el
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

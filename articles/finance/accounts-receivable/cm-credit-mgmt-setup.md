@@ -1,23 +1,26 @@
 ---
 title: Konfiguration af kreditstyringsparametre
 description: I dette emne beskrives de indstillinger, du kan bruge til at konfigurere kreditstyring, så det opfylder virksomhedens behov.
-author: JodiChristiansen
-ms.date: 12/10/2021
+author: mikefalkner
+manager: AnnBe
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921209"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441525"
 ---
 # <a name="credit-management-parameters-setup"></a>Konfiguration af kreditstyringsparametre
 
@@ -31,7 +34,7 @@ Der er fire oversigtspaneler i sektionen **Kredit**, hvor du kan ændre parametr
 
 ### <a name="credit-holds"></a>Kreditter på hold
 
-- Vælg **Nej** i indstillingen **Tillad redigering af salgsordrer, når spærringen af ordren er ophævet** for at angive, at bogføringsreglerne skal kontrolleres igen, hvis salgsordrens værdi (udvidet pris) er blevet øget, efter at salgsordren blev frigivet fra spærringslisten.
+- Vælg **Nej** i indstillingen **Tillad redigering af salgsordrer, når spærringen af ordren er ophævet** for at angive, at bogføringsreglerne skal kontrolleres igen, hvis salgsordrens værdi (udvidet pris) er blevet øget, efter at salgsordren blev frigivet fra spærringslisten. .
 - I feltet **Årsager til annullerede ordrer** skal du vælge den frigivelsesårsag, der skal bruges som standard, når en salgsordre, hvor der er spærret for kreditstyring, annulleres.
 - Vælg **Ja** i indstillingen **Kontroller kreditmaksimum for kundekreditgrupper** for at kontrollere kreditgrænsen for en kundekreditgruppe, når kunden på en salgsordre tilhører en kundekreditgruppe. Gruppens kreditmaksimum kontrolleres, og hvis det er tilstrækkeligt, kontrolleres kreditmaksimum for kunden.
 - Vælg **Ja** i indstillingen **Kontroller kreditmaksimum, når betalingsbetingelserne er forlænget**, hvis du vil kontrollere, om rangeringen i betalingsbetingelserne er forskellig fra standardbetalingsbetingelserne for kunden. Hvis de nye betalingsbetingelser har en højere rangering end de oprindelige betalingsbetingelser, sættes ordren på hold i kreditstyringen.
@@ -72,14 +75,7 @@ Der findes flere kreditstyringsstatistikker i faktaboksen **Statistik for kundek
 
 - I forbindelse med kreditstyring vises kundens kreditmaksimum i kundens valuta. Du skal angive valutakurstypen for kreditmaksimum i kundens valuta. I feltet **Valutakurstype for kreditmaksimum** skal du vælge den type valutakurs, der skal bruges til omregning af den primære kreditmaksimum til debitorens kreditmaksimum.
 - Vælg **Nej** i indstillingen **Tillad manuel redigering af kreditmaks.** for at forhindre brugere i at redigere kreditmaksimum på siden **Debitor**. Hvis du vælger **Nej** i denne indstilling, kan ændringer af en debitors kreditmaksimum kun foretages ved bogføring af reguleringsposteringer for kreditmaksimum.
-- Angiv indstillingen **Undgå lagerreservationer** til **Ja**, hvis du vil ignorere lagerreservationer, når blokeringsregler for kreditstyring kontrolleres. I dette tilfælde kontrollerer systemet hele linjeantal og aktiverer fristerne for kontrolpunktet, uanset antallet på lagerreservationen.
-- Når Kreditstyring er aktiveret, bruges indstillingen af feltet **Meddelelse ved overskridelse af kreditmaksimum** kun til behandling af fritekstfakturaer. Selvom meddelelser stadig føjes til salgsordrer, når kunderne har overskredet deres kreditmaksimum, spærres der ikke for bekræftelse, udskrivning af pluklister og følgesedler eller bogføring af fakturaer.
-
-    Kreditstyring er som standard aktiveret, men du kan deaktivere den. Hvis den er aktiveret, kan du bruge blokeringsreglerne for kreditstyring og kontrolpunkter til at identificere, hvornår kunder har overskredet deres kreditmaksimum. Hvis den deaktiveres, kan de meddelelser, der føjes til salgsordrer baseret på indstillingen af feltet **Meddelelse ved overskridelse af kreditmaksimum**, hjælpe dig med at identificere, hvornår kunder har overskredet deres kreditmaksimum.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier og parametre for delte nummerserier
 
 Der kræves et kladde-ID for at behandle reguleringer af kreditmaksimum. Du skal tilføje det reguleringsnummer for kreditmaksimum, der skal bruges til generering af kladde-id'et.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

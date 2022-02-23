@@ -1,24 +1,27 @@
 ---
 title: Oprette en stykliste for en dimensionsbaseret produktmaster
 description: Til denne procedure skal du har fuldført de foregående 4 vejledninger i denne sekvens på otte optagelser.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, BOMConsistOf, BOMTable, InventItemIdLookupSimple, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f86625821f8a01a6d4949f9dca538a279f52ce9c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e7961cfb4ad0e20c49d327d83f56c08811598ac1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565578"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424634"
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>Oprette en stykliste for en dimensionsbaseret produktmaster
 
@@ -26,57 +29,53 @@ ms.locfileid: "7565578"
 
 Til denne procedure skal du har fuldført de foregående 4 vejledninger i denne sekvens på otte optagelser. De første fire optagelser opsætter de data, der kræves for at fuldføre denne procedure. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne opgave håndteres normalt af produktdesigneren.
 
-## <a name="select-the-product"></a>Vælge produktet
 
-1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
-1. Markér den valgte række på listen.
+## <a name="select-the-product"></a>Vælge produktet
+1. Klik på Vedligeholdelse af frigivet produkt.
+2. Klik på Frigivne produkter.
+3. Markér den valgte række på listen.
     * Find den frigivne produktmasteren med teknologien til dimensionsbaseret konfiguration, som du oprettede i den første opgavevejledning i denne sekvens.  
-1. Vælg **Tekniker** i handlingsruden.
-1. Vælg **Styklisteversioner**.
+4. Klik på Tekniker i handlingsruden.
+5. Klik på Styklisteversioner.
 
 ## <a name="create-new-bom-and-bom-version"></a>Oprette en ny stykliste og en ny styklisteversion
-
-1. Vælg **Ny**.
-1. Vælg **Stykliste og styklisteversion**.
-1. Skriv en værdi i feltet **Navn**.
+1. Klik på Ny.
+2. Klik på Stykliste og Styklisteversion.
+3. Skriv en værdi i feltet Navn.
     * Indstilling af en lokation  
     * Vi angiver ikke en specifik lokation for styklisten i denne procedure.  
-1. Vælg **OK**.
-1. Vælg **Ny**.
+4. Klik på OK.
+5. Klik på Ny.
     * I denne procedure vil vi tilføje fire linjer til styklisten. To linjer repræsenterer kabelindstillinger, og to linjer repræsenterer kabinetindstillinger.  
-1. Markér den valgte række på listen.
-1. Indtast eller vælg en værdi i feltet **Varenummer**.
+6. Markér den valgte række på listen.
+7. Indtast eller vælg en værdi i feltet Varenummer.
     * Vælg varenummeret A0001, HDMI 6'-kabler.  
-1. Indtast eller vælg en værdi i feltet **Konfigurationsgruppe**.
-    * Vælg den kabelkonfigurationsgruppe, der blev oprettet i vejledning 4 i denne sekvens.  
-1. Vælg **Ny**.
+8. Indtast eller vælg en værdi i feltet Konfiguration.
+    * Vælg den kabelvariantgruppe, der blev oprettet i vejledning 4 i denne sekvens.  
+9. Klik på Ny.
     * Vælg varenummeret A0002, HDMI 12'-kabler.  
-1. Markér den valgte række på listen.
-1. Indtast eller vælg en værdi i feltet **Varenummer**.
-1. Indtast eller vælg en værdi i feltet **Konfigurationsgruppe**.
-    * Vælg kabelkonfigurationsgruppen igen.  
-1. Vælg **Ny**.
-1. Markér den valgte række på listen.
-1. Indtast eller vælg en værdi i feltet **Varenummer**.
+10. Markér den valgte række på listen.
+11. Indtast eller vælg en værdi i feltet Varenummer.
+12. Indtast eller vælg en værdi i feltet Konfiguration.
+    * Vælg igen variantgruppen Kabel.  
+13. Klik på Ny.
+14. Markér den valgte række på listen.
+15. Indtast eller vælg en værdi i feltet Varenummer.
     * Vælg varenummeret D0002 Kabinet.  
-1. Indtast eller vælg en værdi i feltet **Konfigurationsgruppe**.
-    * Vælg kabinetkonfigurationsgruppen for denne styklistelinje.  
-1. Vælg **Ny**.
-1. Markér den valgte række på listen.
-1. Indtast eller vælg en værdi i feltet **Varenummer**.
+16. Indtast eller vælg en værdi i feltet Konfiguration.
+    * Vælg variantgruppen Kabinet til denne styklistelinje.  
+17. Klik på Ny.
+18. Markér den valgte række på listen.
+19. Indtast eller vælg en værdi i feltet Varenummer.
     * Vælg varenummeret M0007 Standardkabinet som den sidste styklistelinje.  
-1. Indtast eller vælg en værdi i feltet **Konfigurationsgruppe**.
-    * Vælg kabinetkonfigurationsgruppen for den sidste styklistelinje.  
+20. Indtast eller vælg en værdi i feltet Konfiguration.
+    * Vælg variantgruppen Kabinet til den sidste styklistelinje.  
 
 ## <a name="approve-and-activate"></a>Godkend og aktivér
-
 1. Luk siden.
-1. Vælg **Godkend**.
-1. Indtast eller vælg en værdi i feltet **Godkendt af**.
-1. Vælg *Ja* i feltet **Vil du også godkende styklisten?**.
-1. Vælg **OK**.
-1. Vælg **Aktivér**.
+2. Klik på Godkend.
+3. Indtast eller vælg en værdi i feltet Godkendt af.
+4. Vælg Ja til Vil du også godkende styklisten? .
+5. Klik på OK.
+6. Klik på Aktiver.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

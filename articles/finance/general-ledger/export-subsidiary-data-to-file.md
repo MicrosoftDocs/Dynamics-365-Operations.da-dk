@@ -2,9 +2,11 @@
 title: Eksporter datterselskabsdata til filer
 description: Dette emne forklarer, hvordan du forbereder eksport af data fra Microsoft Dynamics 365 Finance og derefter importerer dem til en konsolideret juridisk enhed.
 author: jinniew
+manager: AnnBe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 02ae9945f7b67fb64be78a024910d7e1151c7446fd54b71034c5ba448c00b081
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 179a401178935b8a76d6718a7fb1f63e08344f50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768765"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968673"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Eksporter datterselskabsdata til filer
 
@@ -68,6 +70,3 @@ Brug siden **Eksport** (**Systemadministration \> Arbejdsområder \> Import/eksp
 5. Vælg **OK** for at køre eksporten.
 
 Når eksporten er fuldført, modtager du en meddelelse, der viser antallet af poster, der er gemt i hver fil. Derefter kan du importere filerne til den konsoliderede juridiske enhed.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

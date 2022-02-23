@@ -1,10 +1,12 @@
 ---
 title: Konfigurere sikkerhed for Power BI-indhold til analyse af omkostningsregnskab
-description: I dette emne forklares, hvordan du kan overføre sikkerheden på adgangsniveau i omkostningsregnskabet til sikkerhed på rækkeniveau i Microsoft Power BI.
+description: I dette emne forklares, hvordan du kan overføre sikkerheden på adgangsniveau i omkostningsregnskabet til sikkerhed på rækkeniveau i Microsoft Power BI. Denne funktionalitet hjælper med til at sikre, at brugerne kun får vist de Power BI-data, de er tildelt adgang til.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f519a38b381da0efc1e91ba0f2015780d086550c3e38810e6845a0fc07976767
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751485"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682183"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurere sikkerhed for Power BI-indhold til analyse af omkostningsregnskab
 
@@ -42,11 +44,11 @@ Hvis du vil overføre sikkerhed på adgangsniveau til Power BI, skal ejeren af P
 3. Find datasættet til **omkostningsregnskabsanalysen** af Power BI-indhold.
 4. Åbn sikkerhedssiden.
 
-    ![Åbning af sikkerhedssiden.](./media/CA-picture-1.png)
+    ![Åbning af sikkerhedssiden](./media/CA-picture-1.png)
 
 5. Rollen **Controller til omkostningsobjekt** er allerede oprettet. Tilføj andre medlemmer, der er en del af organisationshierarkiet for adgangsniveau for omkostningsregnskabet.
 
-    ![Tilføjelse af medlemmer.](./media/CA-picture-2.png)
+    ![Tilføjelse af medlemmer](./media/CA-picture-2.png)
 
 Brugere, der føjes til rollen **Controller til omkostningsobjekt** ser kun de data, de har tilladelse til at se ifølge definitionen i organisationshierarkiet for adgangsniveau for omkostningsregnskabet.
 
@@ -61,6 +63,3 @@ Vi antager, at din organisation ønsker at begrænse adgang til data. Hvis sikke
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 Du kan få mere at vide om sikkerhed på rækkeniveau i Power BI i [Administrer sikkerhed på din model i Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

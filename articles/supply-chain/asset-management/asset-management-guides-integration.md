@@ -1,27 +1,28 @@
 ---
 title: Integrere Dynamics 365 Supply Chain Management (Styring af aktiver) med Dynamics 365 Guides
 description: I dette emne forklares, hvordan du kan integrere modulet Styring af aktiver i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides for at udnytte Mixed Reality-hjælpelinjer i din service fra dag til dag og dine vedligeholdelsesarbejdsgange.
-author: johanhoffmann
+author: kamaybac
+manager: tfehr
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: johanho
+ms.author: dabourq
 ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: f9ee7f1af8e88f56589c84bfaa063ea005aa353a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568249"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424457"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Styring af aktiver) med Dynamics 365 Guides
-
-[!include [banner](../includes/banner.md)]
 
 Du kan integrere modulet **Styring af aktiver** i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides for at udnytte Mixed Reality-guider i din service fra dag til og dine vedligeholdelsesarbejdsgange. Hvis der er knyttet en hjælpelinje til en arbejdsordre i Styring af aktiver, kan en arbejder, der åbner en arbejdsordres vedligeholdelsestjekliste i Supply Chain Management 365 (Dynamics 365)-mobilappen, se, at en hjælpelinje er tilgængelig. Arbejderen kan derefter finde og åbne hjælpelinjen i Dynamics 365 Guides HoloLens-appen.
 
@@ -32,12 +33,12 @@ Før du kan føje hjælpelinjer til arbejdsordrer i Styring af aktiver, skal du 
 - [Konfigurere Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 eller nyere.
 - [Slå dobbeltskrivning til for Supply Chain Management-apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Slå flight til](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) for **MRGuidesFeature**-funktionen. (I forbindelse med produktionsmiljøer skal du først sende en supportanmodning for at få din lejer føjet til flighting-gruppen).
-- [Slå følgende konfigurationsnøgler til](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) på siden **Licenskonfiguration**:
+- [Slå følgende konfigurationsnøgler til](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) på siden **Licenskonfiguration**:
 
     - Styring af aktiver \> Styring af aktiver – Mixed Reality
     - Mixed Reality \> Hjælpelinje til Mixed Reality
 
-- [Konfigurere Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 eller nyere.
+- [Konfigurere Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 eller nyere.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>Bruge Dynamics 365 Guides med Styring af aktiver
 
@@ -49,8 +50,8 @@ Du kan knytte en hjælpelinje til en vedligeholdelsestjekliste ved at følge dis
 
 1. Opret en hjælpelinje ved hjælp af Dynamics 365 Guides-pc- og HoloLens-appen. Du kan få oplysninger om, hvordan du opretter en hjælpelinje, i følgende emner:
 
-    - [Bruge pc-appen til at oprette en hjælpelinje](/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [Bruge HoloLens-appen til at placere din hologrammer](/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [Bruge pc-appen til at oprette en hjælpelinje](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [Bruge HoloLens-appen til at placere din hologrammer](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. [Opret en vedligeholdelsestjeklisteskabelon](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template) i Supply Chain Management.
 1. Knyt den hjælpelinje, du har oprettet, til en vedligeholdelsestjeklistelinje i den nye vedligeholdelsestjeklisteskabelon:
@@ -58,38 +59,38 @@ Du kan knytte en hjælpelinje til en vedligeholdelsestjekliste ved at følge dis
     1. På oversigtspanelet **Vedligeholdelsestjeklistelinjer** skal du vælge den linje, du vil knytte hjælpelinjen til.
     1. Vælg **Tilføj hjælpelinje** på oversigtspanelet **Tilknyttede hjælpelinjer**.
 
-        ![Knytte en hjælpelinje til en vedligeholdelsestjeklistelinje.](media/am-guides-integration-add-guide.png "Knytte en hjælpelinje til en vedligeholdelsestjeklistelinje")
+        ![Knytte en hjælpelinje til en vedligeholdelsestjeklistelinje](media/am-guides-integration-add-guide.png "Knytte en hjælpelinje til en vedligeholdelsestjeklistelinje")
 
     1. Vælg en hjælpelinje i feltet **Navn**, og vælg derefter **Gem**.
 
-        ![Vælge en hjælpelinje i feltet Navn.](media/am-guides-integration-select-guide.png "Vælge en hjælpelinje i feltet Navn")
+        ![Vælge en hjælpelinje i feltet Navn](media/am-guides-integration-select-guide.png "Vælge en hjælpelinje i feltet Navn")
 
 1. Knyt vedligeholdelsestjeklisteskabelonen til en jobtype:
 
     1. [Opret en vedligeholdelsesjobtype](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type), eller vælg en eksisterende vedligeholdelsesjobtype.
     1. Vælg **Standarder for vedligeholdelsesjobtype** i handlingsruden.
 
-        ![Knappen Standarder for vedligeholdelsesjobtype.](media/am-guides-integration-job-defaults.png "Knappen Standarder for vedligeholdelsesjobtype")
+        ![Knappen Standarder for vedligeholdelsesjobtype](media/am-guides-integration-job-defaults.png "Knappen Standarder for vedligeholdelsesjobtype")
 
     1. Opret en linje, og vælg derefter **Gem**.
 
-        ![Oprette en linje.](media/am-guides-integration-add-line.png "Oprette en linje")
+        ![Oprette en linje](media/am-guides-integration-add-line.png "Oprette en linje")
 
     1. Vælg **Vedligeholdelsestjekliste** i handlingsruden.
 
-        ![Knappen Vedligeholdelsestjekliste.](media/am-guides-integration-maintenance-checklist.png "Knappen Vedligeholdelsestjekliste")
+        ![Knappen Vedligeholdelsestjekliste](media/am-guides-integration-maintenance-checklist.png "Knappen Vedligeholdelsestjekliste")
 
     1. På oversigtspanelet **Vedligeholdelsestjeklistelinjer** skal du tilføje en linje og derefter ændre værdien i feltet **Type** til **Skabelon**.
 
-        ![Ændre værdien Type.](media/am-guides-integration-checklist-lines.png "Ændre værdien Type")
+        ![Ændre værdien Type](media/am-guides-integration-checklist-lines.png "Ændre værdien Type")
 
     1. Vælg den skabelon, du har knyttet til hjælpelinjen, i feltet **Skabelon** på oversigtspanelet **Linjedetaljer**, og vælg derefter **Gem**.
 
-        ![Vælge skabelonen.](media/am-guides-integration-checklist-line-details.png "Vælge skabelonen")
+        ![Vælge skabelonen](media/am-guides-integration-checklist-line-details.png "Vælge skabelonen")
 
 1. [Opret en arbejdsordre](work-orders/manually-created-workorders.md#create-work-order), og vælg derefter den vedligeholdelsesjobtype, der bruger den vedligeholdelsestjeklisteskabelon, du har tilknyttet hjælpelinjen med. Hjælpelinjen knyttes automatisk til arbejdsordren.
 
-    ![Vælge en vedligeholdelsesjobtype.](media/am-guides-integration-create-work-order.png "Vælge en vedligeholdelsesjobtype")
+    ![Vælge en vedligeholdelsesjobtype](media/am-guides-integration-create-work-order.png "Vælge en vedligeholdelsesjobtype")
 
 1. Få vist den hjælpelinje, der er tilknyttet arbejdsordren og arbejderne:
 
@@ -97,11 +98,11 @@ Du kan knytte en hjælpelinje til en vedligeholdelsestjekliste ved at følge dis
     1. [Åbn vedligeholdelsestjeklisten](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) for arbejdsordren.
     1. Vælg en tjeklistelinje for at få vist den tilknyttede hjælpelinje.
 
-        ![Hjælpelinje knyttet til en tjeklistelinje.](media/am-guides-integration-show-guide.png "Hjælpelinje knyttet til en tjeklistelinje")
+        ![Hjælpelinje knyttet til en tjeklistelinje](media/am-guides-integration-show-guide.png "Hjælpelinje knyttet til en tjeklistelinje")
 
     1. Åbn hjælpelinjen i HoloLens.
 
-        ![Åbne hjælpelinjen i HoloLens.](media/am-guides-integration-hololens-select.png "Åbne hjælpelinjen i HoloLens")
+        ![Åbne hjælpelinjen i HoloLens](media/am-guides-integration-hololens-select.png "Åbne hjælpelinjen i HoloLens")
 
 > [!NOTE]
 > Du kan også knytte en hjælpelinje direkte til vedligeholdelsestjeklisten for en arbejdsordre eller en jobtype.
@@ -113,6 +114,3 @@ Du kan knytte en hjælpelinje til en vedligeholdelsestjekliste ved at følge dis
 
 - [Oversigt over dobbeltskrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Oversigt over aktivstyring](index.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

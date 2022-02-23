@@ -1,28 +1,28 @@
 ---
 title: Oversigt over tilbudsanmodninger
 description: Emnet giver et overblik over tilbudsanmodninger. Organisationer sender en tilbudsanmodning, når de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører på de varer eller ydelser, de har brug for at købe.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 10/05/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "2154"
-- intro-internal
+ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7338897feb2c3a28350d366f26eecc56f8eeb3fb
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983386"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016925"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversigt over tilbudsanmodninger
 
@@ -39,13 +39,13 @@ Tilbudsanmodningsprocessen består af følgende opgaver:
 
 I følgende illustration vises en oversigt over processen for anmodninger om tilbud.
 
-[![Tilbudsanmodningsproces.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![RFQ-proces (Radio Frequency Identification-proces)](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 Du kan oprette en sag for en tilbudsanmodning ud fra planlagte ordrer, en indkøbsrekvisition eller ved manuel indtastning. Tilbudsanmodningssagen er det grundlæggende dokument, du bruger til at udstede en tilbudsanmodning til hver kreditor.
 
 Når du forbereder tilbudsanmodningssagen og tilføjer kreditorer, skal du vælge **Send** (**Sende og udgiv** for offentlig sektor) for tilbudsanmodningssagen. Der oprettes en tilbudsanmodningskladde for hver leverandør, som du sendte tilbudsanmodningen til. Du kan konfigurere indstillingerne for Udskrivning for handlingen Send, så der enten udskrives en rapport for hver kreditor til et arkiv eller sendes en rapport til hver kreditors mailadresse. Du kan desuden bruge tilbudsanmodningskladden til hver leverandør til at generere en rapport, som du kan sende eller gensende til leverandøren senere. Du kan også konfigurere handlingen Send, så den opretter et svarark, som leverandøren kan udfylde.
 
-Dette emne beskriver processen til håndtering af tilbudsanmodninger, når der ikke bruges kreditorsamarbejde. Hvis systemet er konfigureret til samarbejde for leverandører, kan leverandører afgive tilbud direkte i Supply Chain Management. Du kan finde flere oplysninger under [Kreditorsamarbejde med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
+Dette emne beskriver processen til håndtering af tilbudsanmodninger, når der ikke bruges kreditorsamarbejde. Hvis systemet er konfigureret til samarbejde for leverandører, kan leverandører afgive tilbud direkte i Supply Chain Management. Du kan finde flere oplysninger under [Kreditorsamarbejde med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
 
 Hvis du skal ændre en tilbudsanmodning, når du har sendt den, kan du sende tilbudsanmodningen til kreditoren igen, når du er færdig, ved hjælp af to ændringshandlinger: Opret og Færdiggør.
 
@@ -80,23 +80,23 @@ På siden **Indkøbs- og forsyningsparametre** kan du vælge, hvilken skabelon d
 - %Årsag til returnering af bud%
 - %Årsag til ændring%
 - %Ændring udarbejdet af%
-- %Company%
+- %Firma%
 - %Navn på tilbudsanmodningssag%
 - %Udløbsdato og klokkeslæt%
-- %Date%
+- %Dato%
 
-De angivne tokens %Årsag til returnering af bud% og %Årsag til ændring% erstattes af tekst, som indkøberen kan skrive, når vedkommende afslutter ændringen i guiden **Ændring**. Værdierne for tokenerne %Ændring udarbejdet af% og %Company% hentes automatisk fra tilbudsanmodningen. Tokenet %Date% erstattes af dags dato.
+De angivne tokens %Årsag til returnering af bud% og %Årsag til ændring% erstattes af tekst, der indkøberen kan skrive, når han eller hun afslutter ændringen i guiden **Ændring**. Værdierne for tokenerne %Ændring udarbejdet af% og %Firma% hentes automatisk fra tilbudsanmodningen. %Dato%-tokenet erstattes af dags dato.
 
 Hvis du vil annullere en tilbudsanmodning, efter den er blevet sendt, kan du gøre dette fra tilbudsanmodningssagen. Til annulleringen kræves det, at der sendes en e-mail-skabelon for at sende besked om annulleringen til kreditorens kontaktpersoner. Skabelonen skal være markeret på siden **Indkøbs- og forsyningsparametre**. Når skabelonen er oprettet, kan den indeholde følgende erstatningstokens:
 
 - %Årsag til annullering%
 - %Tilbudsanmodningssag%
 - %Tilbudsanmodning annulleret af%
-- %Company%
+- %Firma%
 - %Navn på tilbudsanmodningssag%
-- %Date%
+- %Dato%
 
-Tokenet %Årsag til annullering% erstattes af tekst, som indkøberen kan angive i guiden **Annullering**. Tokenet %Date% erstattes af dags dato.
+Tokenet %Årsag til annullering% erstattes af tekst, som indkøberen kan angive i guiden **Annullering**. %Dato%-tokenet erstattes af dags dato.
 
 Hvis du vil bruge årsagskoder for et bud for at at angive, hvorfor det blev afvist eller godkendt, skal du oprette årsagskoder på siden **Kreditorårsager**.
 
@@ -167,7 +167,7 @@ Hvis du har konfigureret ændringsprocessen, så den er mere restriktiv, skal du
 
 Hvis du har konfigureret ændringsprocessen, så den er mindre restriktiv, behøver du ikke at vælge **Opret**, før du kan redigere felterne i en tilbudsanmodningssag, der allerede er sendt. Du skal dog manuelt føje en ændringsnote til tilbudsanmodningen og sende sagen igen. Vær opmærksom på, at denne fremgangsmåde kun kan bruges, hvis ingen af svarene (buddene) er blevet redigeret. Hvis du har angivet et svar, og det er i **Modtaget**-tilstand, er knappen **Send** ikke tilgængelig. I så fald skal du vælge **Opret** og derefter **Færdiggør**, som du skal gøre i den mere restriktive proces. Svaret nulstilles derefter for at afspejle ændringerne af tilbudsanmodningssagen.
 
-Hvis kreditorer bruger grænsefladen til kreditorsamarbejde til at afgive bud, skal du altid bruge ændringsprocessen for at oplyse kreditorerne om ændringerne af tilbudsanmodningssagen. Denne proces hjælper med at forhindre en situation, hvor kreditorer byder på en forældet tilbudsanmodningssag, mens de har et igangværende bud. Du kan finde flere oplysninger om kreditorsamarbejde under [Kreditorsamarbejde med eksterne kreditorer](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Hvis kreditorer bruger grænsefladen til kreditorsamarbejde til at afgive bud, skal du altid bruge ændringsprocessen for at oplyse kreditorerne om ændringerne af tilbudsanmodningssagen. Denne proces hjælper med at forhindre en situation, hvor kreditorer byder på en forældet tilbudsanmodningssag, mens de har et igangværende bud. Du kan finde flere oplysninger om kreditorsamarbejde under [Kreditorsamarbejde med eksterne kreditorer](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Hvis du vil invitere flere leverandører til at byde, og der ikke er foretaget nogen ændringer af tilbudsanmodningssagen, kan du bruge knappen **Send**. De leverandører, du har tilføjet, vises på siden **Send** og modtager e-mailinvitationen.
 
@@ -246,6 +246,3 @@ I eksemplet nedenfor kan du se højeste og laveste status for tilbudsanmodningss
 | Acceptér et af tilbuddene. (eller mindst én linje) |                          Modtaget                           |                           Accepteret                           |                    Modtaget                    |                    Accepteret                     |                   Modtaget                   |                   Accepteret                    |
 |           Afvis alle andre bud.           |                          Afvist                           |                           Accepteret                           |                    Afvist                    |                    Accepteret                     |                   Afvist                   |                   Accepteret                    |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: ER-destinationstype for fil
 description: Dette emne beskriver, hvordan du kan konfigurere en fildestination for et ER-format.
 author: NickSelin
+manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: adb32efd3849c94294d9fe9e706f39d209116d259e0d964d1558cc0e49009a5a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e192a3d768b2f99330129260fa60ad231796710
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760792"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679624"
 ---
 # <a name="file-destination"></a>Fildestination
 
@@ -30,12 +32,9 @@ Du kan konfigurere en fildestination for hver komponent af typen MAPPE eller FIL
 
 Hvis du på siden **Indstillinger for destination** har angivet **Aktiveret** til **Ja**, åbnes dialogboksen Åbn eller Gem, når konfigurationen er kørt.
 
-[![Siden Indstillinger for destination.](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
+[![Siden Indstillinger for destination](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,34 +1,38 @@
 ---
-title: Regnskabsfordelinger og kladdepostering for kreditorfakturaer
+title: Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer
 description: Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan udgifter, skat eller afgifter redegøres for på en kreditorfaktura. Alle beløb, der skal tages i betragtning, når kreditorfakturaen journaliseres, har en eller flere regnskabsfordelinger.
-author: sunfzam
+author: abruer
+manager: AnnBe
 ms.date: 08/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7296b1e00bfd49bceb40a0e8b859d46c6517450a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: f8e38e6a571bb7f08b32548bcb4af823807a4340
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594685"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441704"
 ---
-# <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Regnskabsfordelinger og kladdepostering for kreditorfakturaer
+# <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
 
 Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan udgifter, skat eller afgifter redegøres for på en kreditorfaktura. Alle beløb, der skal tages i betragtning, når kreditorfakturaen journaliseres, har en eller flere regnskabsfordelinger. 
 
-## <a name="accounting-distributions"></a>Regnskabsfordelinger 
+<a name="accounting-distributions"></a>Regnskabsfordelinger 
+-------------------------
 
 Du kan bruge følgende knapper på siden Kreditorfaktura til at få vist og eventuelt ændre regnskabsfordelingerne for hvert beløb på kreditorfakturaen.
 -   **Distribuer beløb** – vis og ret de regnskabsmæssige fordelinger for en enkelt linje og evt. underordnede linjer, f.eks. skatter eller afgifter. Du kan også få vist og redigere regnskabsfordelinger for den underordnede linje direkte fra siden Momstransaktioner eller siden Gebyrposter.
@@ -226,7 +230,8 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 </table>
 
 
-## <a name="distributing-taxes"></a>Fordeling af skatter
+<a name="distributing-taxes"></a>Fordeling af skatter
+------------------
 
 Regnskabsfordelinger for skat kan ikke oprettes, før der er beregnet skat. Hvis du vil beregne moms, skal du fuldføre en af følgende opgaver på siden Kreditorfaktura:
 -   Få vist fakturatotalen.
@@ -245,6 +250,3 @@ Hvis kladdeposteringen for reskontroer er forkert, når du gennemser den før jo
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

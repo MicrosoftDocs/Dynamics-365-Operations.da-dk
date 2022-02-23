@@ -2,24 +2,27 @@
 title: Betalingsmodul
 description: Dette emne omhandler betalingsmodulet og forklarer, hvordan du kan konfigurere det i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/07/2022
+manager: annbe
+ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 27b73f7a05605e4e3ee8f8b72400172b7a8bfc33
+ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952463"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4581906"
 ---
 # <a name="payment-module"></a>Betalingsmodul
 
@@ -46,23 +49,23 @@ Adyen-betalingsconnectoren understøtter også effektiv kundegodkendelse (SCA). 
 
 Følgende illustration viser et eksempel på moduler for gavekort, fordelskunde og Adyen-betaling på en betalingsside.
 
-![Eksempel på moduler for gavekort, fordelskundepoint og Adyen-betaling på en betalingsside.](./media/ecommerce-payments.PNG)
+![Eksempel på moduler for gavekort, fordelskundepoint og Adyen-betaling på en betalingsside](./media/ecommerce-payments.PNG)
 
-## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector til PayPal
+## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365-betalingsconnector til PayPal
 
 Fra og med Commerce-version 10.0.14 er betalingsmodulet også integreret med Dynamics 365-betalingsconnector til PayPal. Du kan finde flere oplysninger om, hvordan du opsætter og konfigurerer denne betalingsconnector i [Dynamics 365-betalingsconnector til PayPal](paypal.md).
  
-På betalingssiden kan du have både Adyen- og PayPal-connectorer konfigureret. Betalingsmodulet er blevet forbedret med yderligere egenskaber, der er med til at identificere, hvilken connector det skal fungere med. Du kan finde oplysninger i modulegenskaberne **Understøttede betalingsmiddeltyper** og **Er primære betaling** i følgende tabel.
+På betalingssiden kan du have både Adyen- og PayPal-connectorer konfigureret. Betalingsmodulet er blevet forbedret med yderligere egenskaber, der er med til at identificere, hvilken connector det skal fungere med. Du kan finde oplysninger i modulegenskaberne **Understøttede betalingsmiddeltyper** og **Er primære betaling** i tabellen nedenfor.
   
 Når betalingsmodulet er konfigureret til at bruge PayPal-betalingsconnectoren, vises en PayPal-knap på betalingssiden. Når betalingsmodulet startes af kunden, gengiver det en iFrame, der indeholder PayPal-oplysninger. Kunden kan logge på og angive PayPal-oplysninger i denne iFrame for at fuldføre transaktionen. Når en kunde vælger at betale med PayPal, debiteres den resterende saldo på ordren via PayPal.
 
 PayPal-betalingsconnectoren kræver ikke noget faktureringsadressemodul, da alle fakturarelaterede oplysninger håndteres af PayPal i den pågældende iFrame. Modulerne for leveringsadresse og leveringsindstillinger er dog påkrævet.
 
 I følgende illustration vises et eksempel på to betalingsmoduler på en betalingsside, én, der er konfigureret med Adyen-betalingsconnectoren og den anden med PayPal-betalingsconnectoren.
-![Eksempel på Adyen-betalings- og PayPal-moduler på en betalingsside.](./media/ecommerce-paypal.png)
+![Eksempel på Adyen-betalings- og PayPal-moduler på en betalingsside](./media/ecommerce-paypal.png)
 
 I følgende illustration vises et eksempel på den PayPal-iFrame, der aktiveres ved hjælp af knappen PayPal. 
-![Eksempel på Paypal iFrame på en betalingsside.](./media/ecommerce-paypal-iframe.png)
+![Eksempel på Paypal iFrame på en betalingsside](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Egenskaber for betalingsmodul
 
@@ -76,7 +79,7 @@ I følgende illustration vises et eksempel på den PayPal-iFrame, der aktiveres 
 |Er primær betaling|  **Sand** eller **Falsk** | Hvis **Sand**, genereres eventuelle fejlmeddelelser fra den primære betalingsconnector på betalingssiden. Hvis både Adyen- og PayPal-betalingsconnectorer er konfigureret, skal du indstille Adyen til **Sand**, som blev tilføjet i Commerce-version 10.0.14.|
 
 I følgende illustration vises et eksempel på den værdi for **Understøttede betalingsmiddeltype**, der er indstillet til "PayPal" i konfigurationen for betalingsconnectoren i Commerce Headquarters.
-![Eksempel på understøttede betalingsmiddeltyper i Commerce Headquarters.](./media/ecommerce-paymenttendertypes.png)
+![Eksempel på understøttede betalingsmiddeltyper i Commerce Headquarters](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Faktureringsadresse
 
@@ -90,24 +93,7 @@ I lighed med betalingsmoduler er der føjet en egenskab for **Understøttede bet
 
 Et modul til at udføre betalingen kan kun føjes til et betalingsmodul. Du kan finde flere oplysninger om, hvordan du konfigurerer et betalingsmodul for en betalingsside, under [Betalingsmodul](add-checkout-module.md).
 
-## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Konfigurere Adyen- og PayPal-betalingsconnectorer, når de begge bruges
-
-Hvis både Adyen- og PayPal-betalingsconnectorer bruges til dit websted, skal du følge disse trin i Commerce-webstedsgenerator for at tilføje betalingsmoduler for hver connector i kassemodulet og derefter konfigurere egenskaberne for hvert modul.
-
-1. Benyt følgende fremgangsmåde i egenskabsruden til PayPal-betalingsmodulet:
-
-    1. I feltet for egenskaben **Understøttede betalingsmiddeltyper** skal du angive **PayPal**.
-    1. Fjern markeringen i afkrydsningsfeltet for egenskaben **Er primær betaling**.
-    1. Markér afkrydsningsfeltet for egenskaben **Brug connector-id**.
-
-1. Benyt følgende fremgangsmåde i egenskabsruden til Adyen-betalingsmodulet:
-
-    1. Lad feltet for egenskaben **Understøttede betalingsmiddeltyper** være tomt.
-    1. Markér afkrydsningsfeltet for egenskaben **Er primær betaling**.
-    1. Markér afkrydsningsfeltet for egenskaben **Brug connector-id**.
-
-> [!NOTE]
-> Når du konfigurerer Adyen- og PayPal-connectorerne til at blive brugt sammen, skal **Dynamics 365 Payment Connector til Adyen**-konfigurationen være på den første position i onlinekanalens connector-konfiguration af **Betalingskonti** i Commerce Headquarters. Hvis du vil bekræfte eller ændre connectorrækkefølgen, skal du gå til **Onlinebutikker** og vælge kanalen til dit websted. Derefter skal du under **Connector** i oversigtspanelet **Betalingskonti** under fanen **Opsætning** sikre, at **Dynamics 365 Payment Connector for Adyen**-konfigurationen er på den første position (dvs. på den øverste linje), og at **Dynamics 365 Payment Connector til PayPal**-konfigurationen er på den anden linje. Tilføj eller fjern connectorer efter behov for at prioritere dem.
+Hvis der er brug for både Adyen- og PayPal-betalingsconnectorerne, skal du føje begge moduler til betalingssektionen. Sørg for, at egenskabsværdien for **Understøttede betalingsmiddeltyper** er konfigureret for PayPal, men lad feltet være tomt for Adyen. Indstil også egenskaben **Er primær betaling** til **Sand** for Adyen.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -132,6 +118,3 @@ Hvis både Adyen- og PayPal-betalingsconnectorer bruges til dit websted, skal du
 [Dynamics 365-betalingsconnector til PayPal](paypal.md)
 
 [Effektiv kundegodkendelse (SCA) ved hjælp af Adyen](adyen_redirect.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

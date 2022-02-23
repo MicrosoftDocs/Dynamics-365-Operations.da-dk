@@ -1,10 +1,12 @@
 ---
 title: ER-destinationstype for printer
-description: Dette emne indeholder oplysninger om, hvordan du konfigurerer en printerdestination for de enkelte MAPPE- eller FIL-komponenter i et ER-format (elektronisk rapportering).
+description: Dette emne forklarer, hvordan du kan konfigurere en printerdestination for hver komponent af typen MAPPE eller FIL i et elektronisk rapporteringsformat (ER), der er konfigureret til at generere udgående dokumenter i enten PDF eller Microsoft Office-formater (Excel\Word).
 author: NickSelin
-ms.date: 02/24/2021
+manager: AnnBe
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712706"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679600"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Printerdestination
 
@@ -30,7 +32,7 @@ Du kan sende et genereret dokument direkte til en netværksprinter til direkte u
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du går i gang, skal du installere og konfigurere Dokumentets ruteplanlægningsagent og derefter registrere netværksprinterne. Du kan finde flere oplysninger i [Installere dokumentets ruteplanlægningsagent for at aktivere netværksudskrivning](./install-document-routing-agent.md).
+Før du går i gang, skal du installere og konfigurere Dokumentets ruteplanlægningsagent og derefter registrere netværksprinterne. Du kan finde flere oplysninger i [Installere dokumentets ruteplanlægningsagent for at aktivere netværksudskrivning](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
 
 ## <a name="make-the-printer-destination-available"></a>Gør printerdestinationen tilgængelig
 
@@ -39,13 +41,15 @@ Hvis du vil gøre **Printer**-destinationen tilgængelig i den aktuelle forekoms
 1. Konverter udgående dokumenter for elektronisk rapportering fra Microsoft Office-formater til PDF
 2. Dokumentets ruteplanlægningsagent som elektronisk rapporteringsdestination for udgående dokumenter
 
-[![Aktivere funktionen til ER-printerdestination i Funktionsstyring.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Aktivere funktionen til ER-printerdestination i Funktionsstyring](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Anvendelighed
 
 **Printer**-destinationen kan kun konfigureres for filkomponenter, der bruges til at generere output enten i PDF-format, der kan udskrives (PDF-fletning eller PDF-filformatelementer) eller Microsoft Office Excel/Word-format (Excel-fil). Når der genereres output i PDF-format, sendes det til en printer. Når der genereres output i Microsoft Office-format, konverteres det automatisk til PDF-format og sendes derefter til en printer.
 
 ### <a name="limitations"></a>Begrænsninger
+
+Denne funktion er en prøveversionsfunktion og er underlagt de vilkår for anvendelse, der er beskrevet i [Supplerende vilkår for anvendelse for Microsoft Dynamics 365-prøveversioner](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 **Printer**-destinationen implementeres kun i forbindelse med installationer i skyen.
 
@@ -55,7 +59,7 @@ Hvis du vil gøre **Printer**-destinationen tilgængelig i den aktuelle forekoms
 2. I feltet **Printernavn** skal du vælge den ønskede netværksprinter.
 3. Angiv indstillingen **Gem i udskriftsarkiv?** til **Ja** for at gemme det genererede output i udskriftsarkivet, så det er tilgængeligt til yderligere udskrivning. Hvis du senere vil have adgang til arkiveret, skal du gå til **Organisationsadministration** \> **Forespørgsler og rapporter** \> **Rapportarkiv**.
 
-[![Brug af printerdestinationen.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Brug af printerdestinationen](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > Indstillingen **Konverter til PDF** behøver ikke at blive aktiveret, når du konfigurer destinationen **Printer**. PDF-konvertering til udskrivningsformål sker, også selvom indstillingen er slået fra.
@@ -66,6 +70,3 @@ Hvis du vil bruge en bestemt [sideretning](electronic-reporting-destinations.md#
 
 - [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: LIFO-dato med fysisk værdi og mærkning
 description: LIFO (Last In, First Out) er en lagermodel, hvor de seneste (nyeste) tilgange udstedes først. Afgange fra lageret udlignes mod de seneste tilgange på lageret baseret på datoen for lagerposteringen. Hvis der ikke er nogen tilgang før afgangen i forbindelse med LIFO-dato, udlignes afgangen mod en hvilken som helst tilgang efter afgangsdatoen. Flere afgange på samme dato kan udlignes i rækkefølgen seneste afgang, seneste modtagelse.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72e1dab8bbbb830619629d1fb62a89413d388a7f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c2c06443532519ad5d6c36a6f4ed1f1c4d136664
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567553"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967627"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-dato med fysisk værdi og mærkning
 
@@ -55,9 +57,7 @@ I dette eksempel er det ikke angivet, at varemodelgruppen skal medtage fysisk v�
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer på kr. 15,00. 
 
-Følgende illustration viser effekten af LIFO-datolagermodellen, når indstillingen **Medtag fysisk værdi** ikke bruges. 
-
-![LIFO-dato uden markering af indstillingen Medtag fysisk værdi.](./media/lifodatewithoutincludephysicalvalue.gif) 
+Følgende illustration viser effekten af LIFO-datolagermodellen, når indstillingen **Medtag fysisk værdi** ikke bruges. ![LIFO-dato med Medtag fysisk værdi](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -92,9 +92,7 @@ I følgende illustration vises disse posteringer:
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk opdaterede posteringer på kr. 20,00. 
 
-Følgende illustration viser effekten af LIFO-lagermodellen, når indstillingen **Medtag fysisk værdi** bruges. 
-
-![LIFO-dato med markering af indstillingen Medtag fysisk værdi.](./media/lifodatewithincludephysicalvalue.gif) 
+Følgende illustration viser effekten af LIFO-lagermodellen, når indstillingen **Medtag fysisk værdi** bruges. ![LIFO-dato med Medtag fysisk værdi](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 
@@ -140,7 +138,7 @@ I følgende illustration vises disse posteringer:
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede posteringer på kr. 27,50. 
 
-I følgende illustration vises virkningerne af at vælge lagermodellen for LIFO, når der bruges afmærkning mellem afgange og tilgange. ![LIFO-dato med afmærkning.](./media/lifodatewithmarking.gif) 
+I følgende illustration vises virkningerne af at vælge lagermodellen for LIFO, når der bruges afmærkning mellem afgange og tilgange. ![LIFO-dato med afmærkning](./media/lifodatewithmarking.gif) 
 
 **Forklaring til diagram**
 
@@ -158,6 +156,3 @@ I følgende illustration vises virkningerne af at vælge lagermodellen for LIFO,
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

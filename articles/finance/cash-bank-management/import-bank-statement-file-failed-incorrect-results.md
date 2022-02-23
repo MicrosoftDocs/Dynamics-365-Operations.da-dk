@@ -1,39 +1,40 @@
 ---
 title: Fejlfinding af filimport af bankkontoudtog
-description: Det er vigtigt, at kontoudtogsfilen fra banken matcher det layout, som Microsoft Dynamics 365 Finance understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
+description: Det er vigtigt, at kontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 Finance understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
 author: panolte
-ms.date: 03/29/2021
+manager: AnnBe
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc5b9cf3449b48767a27891a019f8fe8df2a900559898e3cb1849d25bec7c987
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 09b24b88ee5f8104aabd11397d5bd2745e846cb0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757115"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441440"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Fejlfinding af filimport af bankkontoudtog
 
 [!include [banner](../includes/banner.md)]
 
-Det er vigtigt, at kontoudtogsfilen fra banken matcher det layout, som Microsoft Dynamics 365 Finance understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
+Det er vigtigt, at kontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 Finance understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
 
-## <a name="what-is-the-error"></a>Hvad er fejlen?
+<a name="what-is-the-error"></a>Hvad er fejlen?
+------------------
 
 Når du forsøger at importere en bankkontoudtogsfil, skal du gå til jobhistorikken for Datastyring og se udførelsesoplysningerne for at finde fejlen. Fejlen gør det lettere at udpege kontoudtoget, balancen eller kontoudtogslinjen. Det er dog ikke sandsynligt, at du får tilstrækkelige oplysninger til at identificere det felt eller element, der er årsag til problemet.
-
-> [!NOTE]
-> Importerede bankkontoudtog må kun overlappe for et bestemt tidspunkt.  Hvis en opgørelse f.eks. slutter kl. 12:00 den 1. januar 2021, kan startdatoen for den næste opgørelse være 12:00 den 1. januar 2021.
 
 ## <a name="what-are-the-differences"></a>Hvad er forskellene?
 Sammenlign layoutdefinitionen for bankfilen med finansimportdefinitionen, og bemærk eventuelle forskelle i felter og elementer. Sammenlign kontoudtogsfilen fra banken med den relaterede finanseksempelfil. I ISO20022-filerne bør eventuelle forskelle være lette at se.
@@ -94,18 +95,16 @@ Nogle gange kan debiteringer importeres som kreditter, og kreditter kan importer
 -   MT940XML-til-Reconcilation.xslt GetCreditDebitIndicator-skabelon
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Eksempler på bankkontoudtogsformater og tekniske layout
-Følgende tabel viser eksempler på de tekniske layoutdefinitioner for importfiler til avanceret bankafstemning og tre relaterede eksempelfiler på bankkontoudtog. Du kan hente eksempelfiler og tekniske layout her: [Importere fileksempler](//download.microsoft.com/download/8/e/c/8ec8d2d0-eb8c-41fb-ad8c-f01a4d670a44/Dynamics365FinanceAdvancedBankStatementLayouts.xlsx)  
+Følgende tabel viser eksempler på de tekniske layoutdefinitioner for importfiler til avanceret bankafstemning og tre relaterede eksempelfiler på bankkontoudtog. Du kan hente eksempelfiler og tekniske layout her: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+
 
 | Teknisk layoutdefinition                             | Eksempelfil med bankkontoudtog          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | [MT940StatementExample](//download.microsoft.com/download/2/d/c/2dcc4e55-ddc8-4a74-b79c-250fae201c3c/mt940StatementExample.txt)                |
-| DynamicsAXISO20022Layout                                | [ISO20022StatementExample](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2F1%2F5%2F5%2F155d84ed-c250-48f3-b0b1-c5a431e7855b%2FISO20022-MultipleStatements.xml&data=04%7C01%7CRobert.Schlomann%40microsoft.com%7C30d0c233cb6546547d0a08d8f4965edc%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637528273956712775%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=3VzvLZK%2BO8PjuI7XVdC6rD2j3nUJfteo7zFp%2B1s9BwM%3D&reserved=0)             |
-| DynamicsAXBAI2Layout                                    | [BAI2StatementExample](//download.microsoft.com/download/1/1/6/11693f57-bfc1-4993-a274-5fb978be70fa/BAI2StatementExample.txt)                 |
+| DynamicsAXMT940Layout                                   | MT940StatementExample                |
+| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
+| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
 
 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

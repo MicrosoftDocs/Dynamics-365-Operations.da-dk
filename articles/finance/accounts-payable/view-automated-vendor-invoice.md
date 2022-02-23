@@ -2,9 +2,11 @@
 title: Se automatiseringsresultater for kreditorfaktura (prøveversion)
 description: Dette emne forklarer, hvordan du kan få vist status for kreditorfakturaer i den automatiske send-til-arbejdsgang-proces.
 author: abruer
+manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e7ec69177cdb4f6304b75016963f4111bbfde6ed975d66ffa702426a68dce640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: baa2f1f55dfb9bb93b4f27c45db563e39850dd37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728955"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969720"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Få vist resultater af automatisering af kreditorfaktura
 
@@ -35,6 +37,3 @@ Hvis en importeret faktura er underlagt afsendelse til arbejdsgang-processen, ka
 - **Midlertidigt afbrudt** – De automatiserede processer, der er defineret på siden **Kreditorparametre**, er kørt, men mindst ét trin i processen mislykkedes. Statussen **Afbrudt midlertidigt** anvendes også, hvis feltet **Medtag i automatisk behandling** er angivet til **Nej**. Du kan få vist fejlene ved at vælge **Vis seneste resultater**.
 - **I arbejdsgang** – Den importerede faktura er sendt til arbejdsgangssystemet enten af den automatiske afsendelse til arbejdsgang eller manuelt.
 - **Fuldført arbejdsgang** – Arbejdsgangsprocessen er fuldført for den importerede faktura.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

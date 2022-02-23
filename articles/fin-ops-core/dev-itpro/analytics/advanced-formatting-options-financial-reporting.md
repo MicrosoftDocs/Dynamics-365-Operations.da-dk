@@ -1,10 +1,12 @@
 ---
 title: Avancerede formateringsindstillinger i økonomirapportering
-description: Dette emne beskriver avancerede formateringsfunktioner, herunder filtre, begrænsninger, rækker, der ikke udskrives, og betingede sætninger i beregninger.
-author: panolte
+description: Når du opretter en rapport til økonomirapportering, er flere formateringsfunktioner tilgængelige, herunder filtre for dimensioner, begrænsninger for kolonner og rapporteringsenheder, rækker, der ikke udskrives, og IF/ELSE-sætninger i beregninger.
+author: ryansandness
+manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e15869fdd598aeec7ef616f6d54593c7551cb906ab53763a64f4202473bcd926
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760120"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683157"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerede formateringsindstillinger i økonomirapportering
 
@@ -281,10 +283,10 @@ For at begrænse en beregning til en enkelt rapporteringsenhed i et rapportering
 > [!NOTE]
 > Hvis du vil bruge denne funktion, skal der knyttes et rapporteringstræ til rækkedefinitionen.
 
-Beregningsrækken kan henvise til en beregningsrække eller en række med økonomiske data. Beregningen er registreret i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen og begrænsningen af typen økonomiske data. Beregningen skal bruge en betinget beregning, der starter med en **IF \@Unit**-konstruktion. Her er et eksempel: IF @Unit(SALES) THEN @100 ELSE 0 Denne beregning medtager beløbet fra række 100 i hver kolonne i rapporten men kun for enheden SALG. Hvis flere enheder navngives SALG, vises beløbet i hver af disse enheder. Desuden kan række 100 være en række med økonomiske data række og kan defineres som en række, der ikke udskrives. I så fald forhindres beløbet i at blive vist i alle enheder i træet. Du kan også begrænse beløbet til en enkelt kolonne i rapporten, såsom kolonne H, ved hjælp af en kolonnebegrænsning, så værdien kun udskrives i den pågældende kolonne i rapporten. Du kan medtage **OR**-kombinationer i en **IF**-sætning. Her er et eksempel: **F @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. Du kan angive en enhed i en begrænsning af typen beregning på en af følgende måder:
+Beregningsrækken kan henvise til en beregningsrække eller en række med økonomiske data. Beregningen er registreret i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen og begrænsningen af typen økonomiske data. Beregningen skal bruge en betinget beregning, der starter med en **IF @Unit**-konstruktion. Her er et eksempel: IF @Unit(SALES) THEN @100 ELSE 0 Denne beregning medtager beløbet fra række 100 i hver kolonne i rapporten men kun for enheden SALG. Hvis flere enheder navngives SALG, vises beløbet i hver af disse enheder. Desuden kan række 100 være en række med økonomiske data række og kan defineres som en række, der ikke udskrives. I så fald forhindres beløbet i at blive vist i alle enheder i træet. Du kan også begrænse beløbet til en enkelt kolonne i rapporten, såsom kolonne H, ved hjælp af en kolonnebegrænsning, så værdien kun udskrives i den pågældende kolonne i rapporten. Du kan medtage **OR**-kombinationer i en **IF**-sætning. Her er et eksempel: IF @Unit(SALES) OR @Unit(SALESWEST) og THEN 5 ELSE @100 Du kan angive en enhed i en begrænsning af typen beregning på en af følgende måder:
 
-- Indtast et enhedsnavn for at medtage enheder, der matcher. For eksempel aktiverer **IF \@Unit(SALES)** muliggør beregningen af enhver enhed med navnet SALES, selvom der er flere enheder med navnet SALES i rapporteringstræet.
-- Angiv navnet på virksomheden og enheden for at begrænse beregningen til bestemte enheder i en bestemt virksomhed. Indtast for eksempel **IF @Unit (ACME:SALES)** for at begrænse beregningen til enheder med navnet SALES i firmaet ACME.
+- Indtast et enhedsnavn for at medtage enheder, der matcher. For eksempel aktiverer **IF @Unit(SALES)** beregningen af enhver enhed med navnet SALG, selvom der er flere enheder med navnet SALG i rapporteringstræet.
+- Angiv navnet på virksomheden og enheden for at begrænse beregningen til bestemte enheder i en bestemt virksomhed. Indtast for eksempel **IF @Unit(ACME:SALES**) for at begrænse beregningen til enheder med navnet SALG i firmaet ACME.
 - Angiv den fulde hierarkikode fra rapporteringstræet for at begrænse beregningen til en bestemt enhed. Angiv for eksempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
@@ -294,7 +296,7 @@ Beregningsrækken kan henvise til en beregningsrække eller en række med økono
 
 1. Klik på **Rækkedefinitioner** i Rapportdesigner, og åbn derefter en rækkedefinition, der skal ændres.
 2. Dobbeltklik på cellen **formateringskode**, og vælg derefter **CAL**.
-3. Klik på cellen **Relaterede formler/rækker/enheder**, og angiv derefter en betinget beregning, der starter med en **IF \@Unit**-konstruktion.
+3. Klik på cellen **Relaterede formler/rækker/enheder**, og angiv derefter en betinget beregning, der starter med en **IF @Unit**-konstruktion.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-sætninger i en kolonnedefinition
 
@@ -308,5 +310,3 @@ En **IF/THEN/ELSE**-sætning gør det muligt for enhver beregning at afhænge af
 Du kan designe rapporter ved hjælp af dimensionsværdier, der indeholder et og-tegn (&).
 
 I et hvilket som helst felt af typen **Link til økonomiske dimensioner** kan du angive en værdi som f.eks. **'P&L'**. Hvis du medtager enkelte anførselstegn (' ') på begge sider af dimensionsværdien, angiver det, at du bruger konstantværdien, f.eks. også tegnet (&).
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

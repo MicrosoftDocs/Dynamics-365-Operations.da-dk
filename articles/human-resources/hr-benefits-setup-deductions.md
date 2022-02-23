@@ -1,33 +1,31 @@
 ---
 title: Konfigurere fradrag
 description: Du kan bruge fradrag i Microsoft Dynamics 365 Human Resources til at afgøre, hvor meget der eventuelt skal trækkes fra en medarbejders løn for hvert enkelt frynsegode.
-author: twheeloc
-ms.date: 08/24/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bf7ddbfb8717c0311fab7388f346f03618a7b43d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7c59fa09e83ca91e0ad866e5875ff06370b7491d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065837"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417723"
 ---
 # <a name="configure-deductions"></a>Konfigurere fradrag
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan bruge fradrag i Microsoft Dynamics 365 Human Resources til at afgøre, hvor meget der eventuelt skal trækkes fra en medarbejders løn for hvert enkelt frynsegode. Fradrag gælder for datoer, så du kan bevare en historisk oversigt over oplysninger om fradrag. 
 
@@ -48,12 +46,9 @@ Du kan bruge fradrag i Microsoft Dynamics 365 Human Resources til at afgøre, hv
    | **Beløbsoverskrift** | Overskriftskoden fra det lønsystem, som dette fradragsbeløb vil bruge til medarbejderdelen af fradraget ved behandling af frynsegoder i forbindelse med løn. Den bruges normalt, når du bruger en tredjepartslønudbyder. |
    | **Kan slette** | Angiver, om en eksporteret værdi fra Dynamics 365 for Finance and Operations kan forårsage, at værdien slettes i lønsystemet. |
    | **Parrede kolonner** | Angiver, om der skal eksporteres overskrifts- og fradragsbeløb i parrede tilstødende kolonner til lønsystemet. |
-   | **Skift ikrafttrædelsesdato** | Den dato, hvor ændringen af frynsegodefradraget træder i kraft. På denne dato ændrer systemet automatisk frynsegodefradraget og opdaterer alle de frynsegodeplaner, der er tilknyttet fradraget, hvis du kører processen **Opdatering af ændret fradrag**. |
+   | **Skift ikrafttrædelsesdato** | Den dato, hvor ændringen af frynsegodefradraget træder i kraft. På denne dato ændrer systemet automatisk frynsegodefradraget og opdaterer alle de frynsegodeplaner, der er tilknyttet fradraget, hvis du kører behandling af **Opdatering af ændret fradrag**. |
    | **Ændring af fradrag fuldført** | Afkrydsningsfeltet **Ændret fradrag er fuldført** markeres automatisk, når ændringen af frynsegodefradraget er fuldført af fradrag af behandlingen af opdatering af ændret fradrag. |
    
 4. Hvis du vil spore og vedligeholde ændringer af opsætningen af frynsegodesatsen, skal du vælge **Handlinger** og derefter vælge **Vedligehold versioner**.
 
 5. Vælg **Gem**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

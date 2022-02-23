@@ -2,24 +2,27 @@
 title: Konfigurere en callcenter-kanal
 description: Dette emne beskriver, hvordan du opretter en ny callcenter-kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744528"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4411232"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurere en callcenter-kanal
 
@@ -54,11 +57,11 @@ Følg disse trin for at oprette en ny callcenter-kanal.
 
 Følgende billede viser oprettelsen af en ny callcenter-kanal.
 
-![Ny callcenter-kanal.](media/channel-setup-callcenter-1.png)
+![Ny callcenter-kanal](media/channel-setup-callcenter-1.png)
 
 Følgende billede viser et eksempel på en callcenter-kanal.
 
-![Eksempel på call center-kanal.](media/channel-setup-callcenter-2.png)
+![Eksempel på call center-kanal](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Yderligere kanalopsætning
 
@@ -66,7 +69,7 @@ Yderligere opgaver, der kræves til konfiguration af callcenter-kanalen, omfatte
 
 I følgende billede vises konfigurationsindstillinger til **Leveringsmetoder** og **Betalingsmetoder** under fanen **Opsætning**.
 
-![Yderligere handlinger til konfiguration af callcenter-kanal.](media/channel-setup-callcenter-3.png)
+![Yderligere handlinger til konfiguration af callcenter-kanal](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Oprette betalingsmåder
 
@@ -81,7 +84,7 @@ Hvis du vil oprette betalingsmetoder, skal du følge disse trin for hver af de b
 
 Følgende billede viser et eksempel på en metode til kontantbetaling.
 
-![Eksempel på betalingsmetoder.](media/channel-setup-callcenter-payments.png)
+![Eksempel på betalingsmetoder](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Konfigurer leveringsmåder
 
@@ -97,7 +100,7 @@ Hvis du vil ændre eller tilføje en leveringsmåde, der skal knyttes til call c
 
 Følgende billede viser et eksempel på en leveringsmetode.
 
-![Konfigurer leveringsmåder.](media/channel-setup-retail-7.png)
+![Konfigurer leveringsmåder](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Konfigurer kanalbrugere
 
@@ -133,6 +136,3 @@ Gør følgende for at oprette en prisgruppe.
 [Konfigurere og arbejde med advarsler om svindel](set-up-fraud-alerts.md)
 
 [Oprette kontinuitetsprogrammer for callcentre](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

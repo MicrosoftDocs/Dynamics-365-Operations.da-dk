@@ -1,27 +1,30 @@
 ---
 title: Indkøbsordrekoder i den offentlige sektor
-description: Dette emne indeholder oplysninger om koder og særlige meddelelser, der kan bruges til bekræftelse af indkøbsordrer.
-author: v-kiarnd
+description: Denne artikel indeholder oplysninger om koder og særlige meddelelser, der kan bruges til bekræftelse af indkøbsordrer. En bekræftende indkøbsordre omgår den typiske indkøbsproces.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConfirmingPOCodes, PurchTableListPage
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 27291
 ms.assetid: 65032886-4dc6-4411-98c8-8969287fd7df
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8258607b32ddca68df306b1584de0d94ba31aeed
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 1da7937219c3ba8bfa8c94ca0cfcdb3790cc386b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817695"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407644"
 ---
 # <a name="purchase-order-codes-in-the-public-sector"></a>Indkøbsordrekoder i den offentlige sektor
 
@@ -43,6 +46,3 @@ Hvis du tildeler en bekræftende PO-kode til en indkøbsordre på oversigtspanel
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

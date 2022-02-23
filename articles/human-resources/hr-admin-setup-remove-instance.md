@@ -1,36 +1,37 @@
 ---
 title: Fjern en forekomst
-description: Dette emne fører dig gennem processen med at fjerne et testdrev eller produktionsmiljø til Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/11/2021
+description: Denne arikel fører dig gennem processen med at fjerne et testdrev eller produktionsmiljø til Microsoft Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393491"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417841"
 ---
 # <a name="remove-an-instance"></a>Fjern en forekomst
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dette emne forklarer processen, når du vil fjerne et testdrev eller et produktionsmiljø til Microsoft Dynamics 365 Human Resources.
+Denne arikel fører dig gennem processen med at fjerne et testdrev eller produktionsmiljø til Microsoft Dynamics 365 Human Resources.
 
 ## <a name="remove-a-test-drive-environment"></a>Fjerne et testdrevmiljø
 
-Testdrev til Human Resources er klargjort med en 60-dages udløbspolitik. Men ejere af testdrevmiljøer har dog mulighed for at afslutte deres forsøg tidligere ved at følge disse trin. 
+Testdrev til Personale er klargjort med en 60-dages udløbspolitik. Men ejere af testdrevmiljøer har dog mulighed for at afslutte deres forsøg tidligere ved at følge disse trin. 
 
 1. Naviger til [Power Apps Administration](https://admin.businessplatform.microsoft.com/).
 2. Vælg **Miljøer**.
@@ -41,34 +42,34 @@ Det eksisterende testdrevmiljø fjernes. Når det er fjernet, kan du tilmelde di
 
 ## <a name="remove-a-production-environment"></a>Fjerne et produktionsmiljø
 
-I dette emne antages det, at du har købt Human Resources via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). 
+Det antages i artiklen, at du har købt Personale via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). 
 
-Da der er indeholdt et enkelt Human Resources-miljø i hvert enkelt Power Apps-miljø, er der to indstillinger, der skal overvejes. Den første indstilling omfatter fjernelse af hele Power Apps-miljøet, den anden mulighed omfatter kun fjernelse af Human Resources. Den første indstilling foretrækkes, når du har oprettet et Power Apps-miljø udtrykkeligt med henblik på klargøring af Human Resources, og du kun lige er begyndt implementeringen, eller du ikke har nogen etablerede integrationer. Den anden mulighed er kun relevant, når du har et etableret Power Apps-miljø, der er udfyldt med omfattende data, som udnyttes i Power Apps og Power Automate.
+Da der er indeholdt et enkelt Personale-miljø i hvert enkelt Power Apps-miljø, er der to indstillinger, der skal overvejes. Den første indstilling omfatter fjernelse af hele Power Apps-miljøet, den anden mulighed omfatter kun fjernelse af Personale. Den første indstilling foretrækkes, når du har oprettet et Power Apps-miljø udtrykkeligt med henblik på klargøring af Personale, og du kun lige er begyndt implementeringen, eller du ikke har nogen etablerede integrationer. Den anden mulighed er kun relevant, når du har et etableret Power Apps-miljø, der er udfyldt med omfattende data, som udnyttes i Power Apps og Power Automate.
 
 > [!Important]
-> Før du fjerner Power Apps-miljøet, skal du sikre dig, at det ikke bruges til omfattende dataintegrationer, som ikke er omfattet af Human Resources. Bemærk også, at Power Apps-standardmiljøerne ikke kan fjernes. 
+> Før du fjerner Power Apps-miljøet, skal du sikre dig, at det ikke bruges til omfattende dataintegrationer, som ikke er omfattet af Personale. Bemærk også, at Power Apps-standardmiljøerne ikke kan fjernes. 
 
-Sådan fjernes hele Power Apps-miljøet, herunder Human Resources og de tilknyttede apps og flows:
+Sådan fjernes hele Power Apps-miljøet, herunder Personale og de tilknyttede apps og flows:
 
 1. Naviger til [Power Apps Administration](https://admin.businessplatform.microsoft.com/).
 2. Vælg **Miljøer**.
 3. Vælg det miljø, der skal fjernes.
 4. Vælg **Slet**, og bekræft beslutningen. 
 5. Vent, indtil sletningen er fuldført.
-6. Log på [Lifecycle Services](https://lcs.dynamics.com/Logon/Index) (LCS) ved hjælp af den konto, som du brugte til dit abonnement på Human Resources. 
-7. Vælg det Human Resources-projekt, der indeholder miljøet. 
-8. I LCS-projektet skal du vælge feltet **Administration af Human Resources-app**. 
+6. Log på [Lifecycle Services](https://lcs.dynamics.com/Logon/Index) (LCS) ved hjælp af den konto, som du brugte til dit abonnement på Personale. 
+7. Vælg det Personale-projekt, der indeholder miljøet. 
+8. I LCS-projektet skal du vælge feltet **Administration af Personale-app**. 
 9. Marker den forekomst, du vil fjerne. 
 10. Vælg **Fjern forekomst**, og bekræft sletningen.  
 
-Hvis du vil fjerne et Human Resources-miljø fra et eksisterende Power Apps-miljø, skal du benytte følgende fremgangsmåde. Bemærk, at behovet for at involvere support og kontakte Human Resources DevOps-teamet er midlertidig, indtil denne funktion er aktiveret direkte i LCS.
+Hvis du vil fjerne et Personale-miljø fra et eksisterende Power Apps-miljø, skal du benytte følgende fremgangsmåde. Bemærk, at behovet for at involvere support og kontakte Personale DevOps-teamet er midlertidig, indtil denne funktion er aktiveret direkte i LCS.
 
 1. Kontakt Support for at starte en anmodning til fjernelse.
-2. Support-teamet igangsætter en anmodning om fjernelse hos Human Resources DevOps-teamet. 
+2. Support-teamet igangsætter en anmodning om fjernelse hos Personale DevOps-teamet. 
 3. Fortsæt, når du får besked om, at miljøet er fjernet.
-4. Log på LCS ved hjælp af den konto, som du brugte til dit abonnement på Human Resources. 
-5. Vælg det Human Resources-projekt, der indeholder miljøet. 
-6. I LCS-projektet skal du vælge feltet **Administration af Human Resources-app**. 
+4. Log på LCS ved hjælp af den konto, som du brugte til dit abonnement på Personale. 
+5. Vælg det Personale-projekt, der indeholder miljøet. 
+6. I LCS-projektet skal du vælge feltet **Administration af Personale-app**. 
 7. Vælg den forekomst, du vil fjerne, som skal mærkes med installationsstatussen **Slettet**.
 8. Vælg **Fjern forekomst**, og bekræft sletningen. 
 
@@ -80,10 +81,7 @@ Sådan gendannes miljøet:
 
 1. Følg vejledningen i [Gendanne Power Apps-miljøet](/power-platform/admin/recover-environment.md).
 
-2. Kontakt support for at gendanne personalemiljøet. Du kan finde flere oplysninger under [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+2. Kontakt support for at gendanne personalemiljøet. Du kan finde flere oplysninger under [Få support](hr-admin-troubleshooting-support.md).
 
 > [!Warning]
 > Power Apps-miljøer gemmes kun i syv dage efter sletning. Du skal gendanne miljøet inden for perioden på syv dage.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

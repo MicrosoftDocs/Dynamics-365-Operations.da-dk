@@ -1,23 +1,26 @@
 ---
 title: Administrere validering af IBAN-kontonummer (International Bank Account Number)
 description: I dette emne beskrives, hvordan du administrerer validering af IBAN-kontonumre.
-author: roschlom
+author: mikefalkner
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 210d2f57e21ec5ac38ba8ca07195e40ff507e2b9
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 28abef376e8462c9a69dbd8e5033ea799b6a4b3a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860813"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441576"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Administrere validering af IBAN-kontonummer (International Bank Account Number)
 
@@ -45,6 +48,3 @@ Oplysninger om strukturen af IBAN er gemt i Microsoft Dynamics 365 Finance. Diss
     Valideringen kontrollerer også, at nummeret på bankkontoen svarer til den del af IBAN, der repræsenterer bankkontonummeret. Hvis bankkontonummeret ikke stemmer overens, vises en advarsel. Denne meddelelse er kun en advarsel. Du kan fortsætte, selvom bankkontoen ikke stemmer overens.
 
     Valideringen kontrollerer også, at registreringsnummeret på bankkontoen svarer til den del af IBAN, der repræsenterer bankens registreringsnummer. Registreringsnummeret omfatter et banknummer og ofte en ekstra bankafdeling. Hvis bankens registreringsnummer ikke stemmer overens, vises en advarsel. Denne meddelelse er kun en advarsel. Du kan fortsætte, selvom bankregistreringsnummeret ikke stemmer overens.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

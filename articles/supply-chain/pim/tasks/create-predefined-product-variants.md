@@ -1,106 +1,73 @@
 ---
 title: Oprette foruddefinerede produktvarianter
 description: Denne procedure fører dig gennem oprettelsen af produktvarianter for en produktmaster ved hjælp af kombinationer af produktdimensioner.
-author: t-benebo
-ms.date: 04/22/2021
+author: ShylaThompson
+manager: tfehr
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a90e0eb469b823368c1140421fc9c92ccfe69a3b7bac73f762170c0da43e3eee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d07a090dbd41eb17e8d604887435bbb8b07e8d9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747883"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966924"
 ---
-# <a name="predefined-product-variants"></a>Foruddefinerede produktvarianter
+# <a name="create-predefined-product-variants"></a>Oprette foruddefinerede produktvarianter
 
 [!include [banner](../../includes/banner.md)]
 
-## <a name="example-scenario-create-predefined-product-variants"></a>Eksempelscenarie: Oprette foruddefinerede produktvarianter
+Denne procedure fører dig gennem oprettelsen af produktvarianter for en produktmaster ved hjælp af kombinationer af produktdimensioner. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
-Dette eksempelscenarie viser, hvordan du opretter produktvarianter for en produktmaster ved hjælp af kombinationer af produktdimensioner.
 
-### <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
+## <a name="create-a-product-master"></a>Oprette en produktmaster
+1. Gå til Administration af produktoplysninger > Produkter > Produktmastere.
+2. Klik på Ny.
+3. Skriv en værdi i feltet Produktnummer.
+    * Manuel indtastning af et produktnummer kræves kun, hvis der ingen nummerserie er indstillet for produktnummerfeltet. Med andre ord kan du springe dette trin over, hvis nummerserien er indstillet for feltet.  
+4. Angiv en værdi i feltet Produktnavn.
+5. Indtast eller vælg en værdi i feltet Produktdimensionsgruppe.
+    * Vælg produktdimensionsgruppen SizeCol (størrelse og farve).  
+6. Klik på OK.
 
-Hvis du vil følge dette scenarie ved hjælp af de foreslåede værdier, skal du have installeret demodata, og du skal bruge den juridiske enhed *USMF*.
+## <a name="add-product-dimensions"></a>Tilføje produktdimensioner
+1. Klik på Produktdimensioner.
+    * Dette eksempel viser, hvordan du manuelt angiver produktdimensioner. Du kan også vælge en størrelses-, farve- eller typografigruppe, der indeholder de produktdimensionsværdier, du vil bruge.  
+2. Klik på Ny.
+3. Markér den valgte række på listen.
+4. Indtast eller vælg en værdi i feltet Størrelse.
+5. Skriv en værdi i feltet Navn.
+6. Klik på Ny.
+7. Markér den valgte række på listen.
+8. Indtast eller vælg en værdi i feltet Størrelse.
+9. Skriv en værdi i feltet Navn.
+10. Klik på fanen Farver.
+11. Klik på Ny.
+12. Markér den valgte række på listen.
+13. Indtast eller vælg en værdi i feltet Farve.
+14. Skriv en værdi i feltet Navn.
+15. Klik på Ny.
+16. Markér den valgte række på listen.
+17. Indtast eller vælg en værdi i feltet Farve.
+18. Skriv en værdi i feltet Navn.
+19. Klik på Gem.
+20. Luk siden.
 
-### <a name="step-1-create-a-product-master"></a>Trin 1: Opret en produktmaster
+## <a name="generate-product-variants"></a>Generere produktvarianter
+1. Klik på Produktvarianter.
+2. Klik på Forslag til varianter.
+3. Klik på Vælg alle.
+    * I dette eksempel vælges alle mulige varianter. Hvis kun en delmængde af de mulige produktdimensionskombinationer skal bruges til at oprette varianter, kan du vælge de enkelte poster.  
+4. Klik på Opret.
+    * Du kan generere beskrivelser for alle de varianter, der er baseret på en kombination af dimensionsværdier for produktet. Beskrivelserne er valgfrie.  
+5. Klik på Gem.
 
-Sådan oprettes en produktmaster:
-
-1. Gå til **Administration af produktoplysninger > Produkter > Produktmastere**.
-1. Vælg **Ny**.
-1. Hvis feltet **Produktnummer** ikke allerede viser et tal, skal du angive en værdi. Dette trin er kun påkrævet, hvis der ikke er oprettet nogen nummerserie for dette felt.
-1. Indtast en navn i feltet **Produktnavn**.
-1. I feltet **Produktdimensionsgruppe** skal du vælge produktdimensionsgruppen *SizeCol* (Størrelse og Farve).
-1. Vælg **OK** for at oprette og åbne den nye produktmaster.
-
-### <a name="step-2-add-product-dimensions"></a>Trin 2: Tilføj produktdimensioner
-
-Dette eksempel viser, hvordan du manuelt angiver produktdimensioner. Du kan også vælge en størrelses-, farve- eller typografigruppe, der indeholder de produktdimensionsværdier, du vil bruge.
-
-Sådan tilføjes produktdimensioner:
-
-1. Når den nye produktmaster stadig er åben, skal du vælge **Produktdimensioner** i handlingsruden.
-1. Åbn fanen **Størrelse**, og vælg **Ny** på værktøjslinjen for at føje en række til gitteret. Angiv følgende indstillinger for den nye række:
-    - **Størrelse:** Vælg en størrelsesværdi.
-    - **Navn:** Angiv et navn til størrelsen.
-1. Vælg **Ny** på værktøjslinjen, og føj endnu en størrelse til gitteret med en ny **Størrelse** og et nyt **Navn**.
-1. Åbn fanen **Farver**, og vælg **Ny** på værktøjslinjen for at føje en række til gitteret. Angiv følgende indstillinger for den nye række:
-    - **Farve:** Vælg en farveværdi.
-    - **Navn:** Angiv et navn til farven.
-1. Vælg **Ny** på værktøjslinjen, og føj endnu en farve til gitteret med en ny **Farve** og et nyt **Navn**.
-1. Vælg **Gem**.
-1. Luk siden for at vende tilbage til den nye produktmaster.
-
-### <a name="step-3-generate-product-variants"></a>Trin 3: Generer produktvarianter
-
-> [!NOTE]
-> I dette afsnit beskrives, hvordan du kan generere produktvarianter, når funktionen *Forbedringer af sider med variantforslag* ikke er aktiveret. Se næste afsnit for at få oplysninger om, hvordan du kan generere produktvarianter, når funktionen er tilgængelig.
-
-Sådan genereres produktvarianter:
-
-1. Når den nye produktmaster stadig er åben, skal du vælge **Produktvarianter** i handlingsruden.
-1. Vælg **Variantforslag** i handlingsruden.
-1. Systemet genererer en liste over alle de mulige kombinationer af de størrelser og farver, du har defineret for produktet. Vælg **Vælg alle** på værktøjslinjen.
-    - I dette eksempel skal du vælge alle mulige varianter. Hvis du kun vil bruge et undersæt af de mulige kombinationer af produktdimensioner, skal du kun markere de nødvendige afkrydsningsfelter efter behov.  
-1. Vælg **Opret**.
-1. Vælg **Gem**.
-
-## <a name="improved-variant-suggestions"></a>Forbedrede variantforslag
-
-Funktionen *Forbedringer af sider med variantforslag* forbedrer siden **Variantforslag** med henblik på at løse problemer med ydeevne og anvendelighed for virksomheder, der har et stort antal kombinationer af produktdimensioner. Den forbedrede proces for valg af produktdimensionsværdier, hvor der kan genereres variantforslag, gør det hurtigere og nemmere at identificere og frigive de relevante sæt produktvarianter.
-
-Følgende forbedringer tilføjes af denne funktion:
-
-- **Udskudt generering af variantforslag:** Siden **Variantforslag** viser ikke længere forslag, når du åbner det første gang. I stedet skal du udtrykkeligt vælge, hvilke værdier du skal bruge, og derefter vælge knappen **Foreslå** for at generere kombinationerne. Dette gør processen mere synlig og interaktiv.
-- **Valg af dimensionsværdier:** Når du har mange dimensionsværdier, er du typisk interesseret i at generere variantforslag, der kun indeholder nogle få af dem (f.eks. når du introducerer et nyt sæt farver eller typografier). Med det forbedrede design kan du vælge de dimensionsværdier, du vil generere produktvariantforslag for. Dette øger relevansen af de foreslåede varianter markant og forbedrer både systemets ydeevne og brugerens produktivitet.
-
-### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a>Aktivere funktionen Forbedringer på side med variantforslag
-
-Før du kan bruge funktionen *Forbedringer af side med variantforslag*, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Administration af produktoplysninger*
-- **Funktionsnavn:** *Forbedringer af side med variantforslag*
-
-### <a name="work-with-the-improved-variant-suggestions"></a>Arbejde med de forbedrede variantforslag
-
-Sådan genereres forslag til produktvarianter, når funktionen *Forbedringer af side med variantforslag* er aktiveret:
-
-1. Åbn eller opret en produktmaster, og tilføj de nødvendige produktdimensioner som beskrevet i forrige afsnit.
-1. Når produktmasteren er åben, skal du vælge **Produktvarianter** i handlingsruden.
-1. Vælg **Variantforslag** i handlingsruden.
-1. Vælg de værdier, du vil bruge til de enkelte dimensioner.
-1. Vælg **Foreslå** på den øverste værktøjslinje.
-1. Systemet genererer en liste over alle de mulige kombinationer af de størrelser og farver, du har valgt. I oversigtspanelet **Foreslåede varianter** skal du markere afkrydsningsfeltet for hver kombination af produktdimensioner, du vil bruge, eller vælg **Vælg alle** på værktøjslinjen for at vælge dem alle.  
-1. Vælg **Opret** for at føje varianter til den aktuelle produktmaster.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

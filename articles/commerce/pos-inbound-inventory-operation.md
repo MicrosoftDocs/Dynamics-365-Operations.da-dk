@@ -2,13 +2,16 @@
 title: Indgående lagerhandling i POS
 description: I dette emne beskrives egenskaberne for den indgående lagerhandling af POS (Point Of Sale).
 author: hhaines
+manager: annbe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741776"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411107"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Indgående lagerhandling i POS
 
@@ -70,7 +73,7 @@ De batchjob, du opretter, bruges til at behandle dokumenter, der ikke fejler ell
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Krav: Føj indgående handling til POS-skærmlayoutet
 
-Før din organisation kan bruge funktionerne i indgående handling, skal den konfigurere POS-handlingen **Indgående handling** på et eller flere af dine [POS-skærmlayout](/dynamics365/unified-operations/retail/pos-screen-layouts). Før du implementerer den nye handling i et produktionsmiljø, skal du sikre dig, at du tester den og lærer brugerne i at bruge den.
+Før din organisation kan bruge funktionerne i indgående handling, skal den konfigurere POS-handlingen **Indgående handling** på et eller flere af dine [POS-skærmlayout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Før du implementerer den nye handling i et produktionsmiljø, skal du sikre dig, at du tester den og lærer brugerne i at bruge den.
 
 ## <a name="overview"></a>Oversigt
 
@@ -159,9 +162,9 @@ I Commerce version 10.0.14 og nyere kan brugere modtage et produkt, der ikke opr
 
 Denne funktion fungerer kun i forbindelse med modtagelse af indkøbsordrer. Det er ikke muligt at modtage varer mod flytteordrer, når varerne ikke tidligere er bestilt og afsendt fra det udgående lagersted.
 
-Brugere kan ikke føje nye produkter til indkøbsordren under POS-modtagelse, hvis indkøbsordrens [arbejdsgang for ændringsstyring](../supply-chain/procurement/purchase-order-approval-confirmation.md) er aktiveret i Commerce Headquarters (HQ). Hvis du vil aktivere ændringsstyring, skal alle ændringer af en indkøbsordre først godkendes, før modtagelse kan tillades. Da denne proces gør det muligt for en modtager at føje nye linjer til indkøbsordren, mislykkes modtagelsen, hvis arbejdsgangen for ændringsstyring er aktiveret. Hvis ændringsstyring er aktiveret for alle indkøbsordrer eller den leverandør, der er knyttet til indkøbsordren, der aktivt modtages på POS, kan brugeren ikke føje nye produkter til indkøbsordren under modtagelse i POS.
+Brugere kan ikke føje nye produkter til indkøbsordren under POS-modtagelse, hvis indkøbsordrens [arbejdsgang for ændringsstyring](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) er aktiveret i Commerce Headquarters (HQ). Hvis du vil aktivere ændringsstyring, skal alle ændringer af en indkøbsordre først godkendes, før modtagelse kan tillades. Da denne proces gør det muligt for en modtager at føje nye linjer til indkøbsordren, mislykkes modtagelsen, hvis arbejdsgangen for ændringsstyring er aktiveret. Hvis ændringsstyring er aktiveret for alle indkøbsordrer eller den leverandør, der er knyttet til indkøbsordren, der aktivt modtages på POS, kan brugeren ikke føje nye produkter til indkøbsordren under modtagelse i POS.
 
-Den funktionalitet, der gør det muligt at tilføje linjer, kan ikke bruges som en løsning til at modtage yderligere mængder af produkter, der allerede findes på indkøbsordren. Overmodtagelse administreres via de standardindstillinger for [overmodtagelse](#over-receiving-validations) for produktlinjen på indkøbsordren.
+Den funktionalitet, der gør det muligt at tilføje linjer, kan ikke bruges som en løsning til at modtage yderligere mængder af produkter, der allerede findes på indkøbsordren. Overmodtagelse administreres via de standardindstillinger for [overmodtagelse](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) for produktlinjen på indkøbsordren.
 
 Hvis **Føj linjer til indkøbsordren under POS-modtagelse** er aktiveret, og en bruger modtager med den **Indgående handling** i POS, og brugeren scanner eller indtaster en produktstregkode eller et produktnummer, der ikke genkendes som en vare på den aktuelle indkøbsordre, men genkendes som en gyldig vare, vises der en meddelelse for brugeren om tilføjelse af varen på indkøbsordren. Hvis brugeren føjer varen til indkøbsordren, betragtes det antal, der er angivet under **Modtages nu**, for det bestilte antal på indkøbsordrelinjen.
 
@@ -218,6 +221,3 @@ Når dokumentet har statussen **Anmodet**, vises det under fanen **Aktiv**. Det 
 ## <a name="related-topics"></a>Relaterede emner
 
 [Udgående lagerhandling i POS](pos-outbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

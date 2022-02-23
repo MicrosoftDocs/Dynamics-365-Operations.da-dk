@@ -1,24 +1,27 @@
 ---
 title: Oprette en salgsordre for et konfigurerbart produkt
 description: Denne procedure viser, hvordan du anvender en konfigurationsskabelon til et produkt på en salgsordre.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, PCRuntimeConfigurator, PCTemplateConfigurationSelection
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e42f121d1efa66f85a3dd811606962b907ed177d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 988d87757019d20dcaf675af925166ed376685f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570579"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424620"
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a>Oprette en salgsordre for et konfigurerbart produkt
 
@@ -26,27 +29,27 @@ ms.locfileid: "7570579"
 
 Denne procedure viser, hvordan du anvender en konfigurationsskabelon til et produkt på en salgsordre. I dette eksempel bruges modellen D0006-højttaler i demodatafirmaet USMF. En salgsordrebehandler bruger normalt denne procedure.
 
+
 ## <a name="create-a-sales-order"></a>Oprette en salgsordre
-
-1. Gå til **Salg og marketing \> Arbejdsområder \> Salgsordrebehandling og -forespørgsel**.
-1. Vælg **Ny**.
-1. Vælg **Salgsordre**.
-1. Vælg **US-001** i feltet *Debitorkonto*. 
-1. Vælg **OK**.
-1. Vælg **D0006** i feltet *Varenummer*.
+1. Klik på Salgsordrebehandling og -forespørgsel.
+2. Klik på Ny.
+3. Klik på Salgsordre.
+4. Vælg US-001 i feltet Debitorkonto. 
+5. Klik på OK.
+6. I feltet Varenummer skal du vælge D0006.
     * Til denne opgave skal du vælge et produkt, der kan konfigureres.  
-1. Vælg **Produkt og forsyning**.
-1. Vælg **Konfigurer linje**.
-    * Bemærk, at prisen er ændret, baseret på den valgte konfiguration, og at feltet **Medtag kabel** nu er angivet til *Sand*.  
+7. Klik på Produkt og forsyning.
+8. Klik på Konfigurer linje.
+    * Bemærk, at prisen er ændret, baseret på den konfiguration, der blev valgt, og at feltet Medtag kabel nu er angivet til Sand.  
     * Bemærk standardprisen og de indstillinger, der er valgt til kablet.  
-1. Vælg **Indlæs skabelon**.
-    * Dette eksempel viser, hvordan du kan bruge en skabelon til at vælge en foruddefineret konfiguration. Hvis du bruger denne procedure som en opgaveguide, og du ønsker at se de andre attributværdier, der er tilgængelige, skal du vælge knappen **Lås op**.  
-1. Vælg **OK**.
-1. Vælg **OK**.
-1. Vis eller skjul sektionen **Linjedetaljer**.
-1. Vælg fanen **Produkt**.
+9. Klik på Indlæs skabelon..
+    * Dette eksempel viser, hvordan du kan bruge en skabelon til at vælge en foruddefineret konfiguration. Hvis du bruger denne procedure som en opgaveguide, og du ønsker at se de andre attributværdier, der er tilgængelige, skal du klikke på knappen Lås op.  
+10. Klik på OK.
+11. Klik på OK.
+12. Vis eller skjul sektionen Linjedetaljer.
+13. Klik på fanen Produkt.
     * Konfigurationen af varen vises nu under produktdimensionerne.  
-1. Luk siden.
+14. Luk siden.
 
+## <a name="select-the-product-configuration"></a>Vælg produktkonfigurationen.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

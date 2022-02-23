@@ -97,6 +97,3 @@ Med Platform update 25 til Finance and Operations kan brugerne oprette påmindel
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Duplikerede medarbejderkontroller: ændringer i brugergrænsefladen
 Med denne ændring opdages dubletter i forbindelse med din indtastning i navnefelter, og der vises en status over antallet af fundne dubletter. Du kan vælge, at det angivne link skal åbne en ny side for at vurdere, om du ønsker at anvende det fundne match. Dubletformularen åbner ikke automatisk for at undgå forstyrrelser i forbindelse med indtastning af data.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

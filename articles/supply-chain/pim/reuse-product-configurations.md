@@ -1,27 +1,30 @@
 ---
 title: Genbrug produktkonfigurationer
 description: Du kan angive, at du vil automatisk vil genbruge en eksisterende konfiguration for et produkt. Når en brugeren har fuldført en konfigurationssession, kontrollerer systemet, om der allerede findes en konfiguration, der svarer til brugerens valg. Hvis der findes en tilsvarende konfiguration, genbruges konfigurations-id, stykliste og rute.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 201813
 ms.assetid: 4985e308-7824-41fc-83fd-fd0bdae888e3
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0898bd1832fa7007fc3aa265beee2e930f157a39
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dd6d730528522f4074b6e2a3ce6059cc12ff5a0f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577402"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424397"
 ---
 # <a name="reuse-product-configurations"></a>Genbrug produktkonfigurationer
 
@@ -29,7 +32,8 @@ ms.locfileid: "7577402"
 
 Du kan angive, at du vil automatisk vil genbruge en eksisterende konfiguration for et produkt. Når en brugeren har fuldført en konfigurationssession, kontrollerer systemet, om der allerede findes en konfiguration, der svarer til brugerens valg. Hvis der findes en tilsvarende konfiguration, genbruges konfigurations-id, stykliste og rute.
 
-## <a name="requirements-for-reusing-configurations"></a>Krav til genbrug af konfigurationer
+<a name="requirements-for-reusing-configurations"></a>Krav til genbrug af konfigurationer
+---------------------------------------
 
 Hvis du vil aktivere konfigurationer, der kan genbruges, skal du angive følgende oplysninger for komponenter og attributter på siden **Oplysninger om produktkonfigurationsmodel**:
 
@@ -41,6 +45,3 @@ Når du nulstiller konfigurationsgenbrug, bruges tidligere oprettede konfigurati
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

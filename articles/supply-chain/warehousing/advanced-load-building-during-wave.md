@@ -2,23 +2,26 @@
 title: Avanceret bølgelastopbygning
 description: Dette emne giver oplysninger om avanceret bølgelastopbygning, der automatisk tildeler forsendelser til eksisterende bølger under bølgeudførelse. Derfor kan du oprette beskrivende laster, der repræsenterer lastvogne, uden at skulle bruge lastplanlægningspanelet.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 08e44b4e37f28ec91eeb8e53930de5133607bd66
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574731"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654192"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avanceret bølgelastopbygning
 
@@ -247,6 +250,3 @@ Dette scenarie viser, hvordan de indstillinger, der blev beskrevet tidligere i d
 1. I oversigtspanelet **Salgsordrelinjer** skal du vælge **Tilføj linje** for at tilføje en anden linje.
 1. På den nye linje skal du angive feltet **Varenummer** til *M9200* og feltet **Antal** til *1*.
 1. Gentag linjer 6 til 9 for at reservere linjen og frigive den til lagerstedet. Som før opretter systemet en **ny** forsendelse for den linje, du har tilføjet. Men da varen er fra varegruppe **CarAudio**, kan det **ikke overføre de begrænsninger, du opretter for blandingsgruppen for last**. Derfor **føjes den til en ny last**. Hvis du ikke har angivet en blandingsgruppe for last på lastopbygningsskabelonen, skal denne forsendelse føjes til den nye last.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Power BI-indhold til udgiftsstyring
 description: Dette emne beskriver, hvad der er omfattet af Power BI-indholdspakken til udgiftsstyring.
 author: panolte
+manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 audience: Application User, IT Pro
@@ -14,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d580502a08c2c176a000616abc3513cc45bd58a6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769892"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016446"
 ---
 # <a name="expense-management-power-bi-content"></a>Power BI-indhold til udgiftsstyring
 
@@ -41,7 +43,7 @@ Der er to Power BI-indholdspakker tilgængelige, som kan anvendes sammen med udg
 Alle beløb vises i virksomhedens valuta. Data for alle virksomheder vises, men det er muligt at tilføje et virksomhedsfilter. 
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
-Du kan finde Power BI-indholdet "Expense Admin Dashboard.pbix" og "Expense Personal Dashboard.pbix" i biblioteket "Delte aktiver" i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Du kan finde Power BI-indholdet "Expense Admin Dashboard.pbix" og "Expense Personal Dashboard.pbix" i biblioteket "Delte aktiver" i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 Indholdet er tilgængeligt fra den udgiftsansvarliges arbejdsområde som en del af Power Bi-indholdet. Alle udgiftsejere kan tilgå deres egne personlige udgifter, hvorimod alene kreditormedarbejdere og -ansvarlige har adgang til administratorindholdet, hvor de kan se alle brugerens udgiftsdata.
 
 ## <a name="refreshing-the-power-bi-content"></a>Opdatering af Power BI-indholdet
@@ -91,6 +93,3 @@ Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, so
 | Medarbejderstatistikker | Udgiftsrapporter fordelt på omkostningstype            |
 |                     | Personlige udgifter                       |
 |                     | Udgiftsrapporter fordelt på statistikgrupper     |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,35 +1,33 @@
 ---
-title: Få vist og evaluere resultaterne af spørgeskemaer
-description: I dette emne forklares det, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt.
-author: twheeloc
-ms.date: 10/28/2021
+title: Se og evaluere resultaterne af spørgeskemaer
+description: I denne artikel forklares det, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ceb21af75dca2756d8e07f315ddee0246554c854
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070696"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417865"
 ---
-# <a name="view-and-evaluate-the-results-of-questionnaires"></a>Få vist og evaluere resultaterne af spørgeskemaer
+# <a name="view-and-evaluate-the-results-of-questionnaires"></a>Se og evaluere resultaterne af spørgeskemaer
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-I dette emne forklares det, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt. 
+I denne artikel forklares det, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt. 
 
 Når svarpersonerne har udfyldt et spørgeskema, kan du få vist og evaluere spørgeskemaresultaterne på følgende måder:
 
@@ -74,5 +72,3 @@ Du kan bruge spørgeskemastatistik til at analysere resultaterne af et udfyldt s
 -   Vælg eller bekræft kriterier til at analysere resultaterne efter svarperson eller spørgeskemakarakteristika. Hvis du vælger **Postnummer**, kan du f.eks. analysere korrelationen mellem en svarpersons placering og korrekte svar.
 
 De indstillinger, du definerer, gemmes og kan bruges til at genberegne resultater med jævne mellemrum.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

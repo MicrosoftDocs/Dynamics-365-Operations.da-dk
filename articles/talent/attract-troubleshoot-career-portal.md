@@ -72,5 +72,3 @@ Tildel Talent-brugerrollen til talentrelationsteamet.
 
    1. Log på karriereportalen fra et nyt browservindue.
    2. Ansøg om jobbet fra karriereportalen. 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

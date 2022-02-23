@@ -2,25 +2,28 @@
 title: Oprette en leasinggruppe
 description: I dette emne forklares, hvordan du konfigurerer leasinggrupper. Der kræves leasinggrupper for at oprette nye leasingaftaler.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseGroupTable
+ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5ff4892408aa87214231762452c195274192447512525ae9c1f08dad8e318076
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8512a59d0e9935090f97a0f0237bfefc8473955
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728097"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441759"
 ---
 # <a name="create-a-lease-group"></a>Oprette en leasinggruppe
 
@@ -47,6 +50,3 @@ Når du har oprettet leasinggrupper, kan du knytte kartoteker til hver gruppe. N
 1. Gå til **Aktivleasing \> Konfiguration \> Leasinggruppe**.
 2. Vælg en leasinggruppe, og vælg derefter **Kartoteker**.
 3. Vælg **Ny**, og vælg derefter feltet **Kartotekstype**, der skal knyttes til leasinggruppen. Du kan tildele flere kartoteker til en leasinggruppe, hvis en leasingaftalen skal redegøres for på forskellige måder.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,6 +60,3 @@ En ny indstilling gør det muligt for lederne at få vist performance for både 
 ### <a name="platform-update-29-for-finance-and-operations"></a>Platform update 29 til Finance and Operations
 
 Du kan finde yderligere oplysninger om Platform update 29 til Finance and Operations under [Prøveversionsfunktioner i Dynamics 365 Finance and Operations platform update 29 (oktober 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

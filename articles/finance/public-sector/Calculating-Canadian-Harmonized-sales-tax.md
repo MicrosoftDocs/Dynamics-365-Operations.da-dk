@@ -2,9 +2,11 @@
 title: Canadisk harmoniseret moms (Harmonized Sales Tax - HST)
 description: Dette emne giver oplysninger om funktionerne til at understøtte harmoniseret moms for den offentlige sektor.
 author: velofog
+manager: Ann Beebe
 ms.date: 04/2/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
@@ -17,12 +19,12 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2020-4-01
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7b4be3c9b94115c80331f0311df45e6cc929b5b77745c337cec884ad9cb1e323
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9fce946fd997b0f6b3a86ff4e990700e23b54247
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743736"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968238"
 ---
 # <a name="calculating-canadian-harmonized-sales-tax"></a>Beregning af canadisk harmoniseret moms
 
@@ -72,7 +74,7 @@ Når du har defineret dimensionerne for HST, skal du konfigurere de finansdimens
 
 Den rækkefølge, som reglerne anvendes i, er noget kompleks. Følgende grafik viser princippet:
 
-> [![Definere HST-regler.](./media/define-hst-rules.png)](./media/define-hst-rules.png)
+> [![Definere HST-regler](./media/define-hst-rules.png)](./media/define-hst-rules.png)
 
 De momskoder, der er valgt for dimensionslinjen, er som følger, hvis posteringen bruger en momsgruppe og varemomsgruppe med alle de momskoder, der er medtaget.
 
@@ -83,6 +85,3 @@ De momskoder, der er valgt for dimensionslinjen, er som følger, hvis posteringe
 |   Fond 101, division 121                  | Tax2, Tax3      |
 |   Fond 303, enhver division med undtagelse af 141         | Tax1, Tax2, Tax3|
 |   Fond 303, division 141                  | Tax1            |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

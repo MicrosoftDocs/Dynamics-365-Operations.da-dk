@@ -2,12 +2,15 @@
 title: Godkendelse
 description: Denne artikel indeholder oversigtsoplysninger om, hvordan du kan godkende med API'en (Application Programming Interface) for Microsoft Dynamics 365 Human Resources-data.
 author: andreabichsel
+manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3396f0ae6d089f43c39f318dc9d92a88a7db3d7c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070862"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417738"
 ---
 # <a name="authentication"></a>Godkendelse
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne artikel indeholder oversigtsoplysninger om, hvordan du kan godkende med API'en (Application Programming Interface) for Microsoft Dynamics 365 Human Resources-data.
 
@@ -84,13 +82,13 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Angiv basis-URL-adressen til appen i forbindelse med webapps. `http://localhost:31544` kan f.eks. være URL-adressen til en webapp, der kører på din lokale computer. Brugere anvender derefter denne URL-adresse til at logge på en webklientapp.
         - For offentlige klientapps skal du angive den URI, som Azure AD bruger til at returnere tokensvar. Angiv en værdi, der er specifik for din app, f.eks. `myapp://auth`.
 
-        Hvis du vil have vist specifikke eksempler for webapps eller indbyggede apps, skal du se lynvejledningerne på [Microsoft-identitetsplatformen (tidligere Azure Active Directory for udviklere)](/azure/active-directory/develop/#quickstarts).
+        Hvis du vil have vist specifikke eksempler for webapps eller indbyggede apps, skal du se lynvejledningerne på [Microsoft-identitetsplatformen (tidligere Azure Active Directory for udviklere)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
 
 5. Vælg **Tilføj en tilladelse** under **API-tilladelser**. Derefter kan du søge efter **Dynamics 365 Human Resources** under fanen **API'er, som min organisation bruger** og føje tilladelsen **bruger\_repræsentation** til din app. Program-id'et for personale er f9be0c49-aa22-4ec6-911a-c5da515226ff. Brug dette id til at sikre, at du har valgt det rette program.
 
 6. Vælg **Registrer**.
 
-   [![Registrering af en ny app i Azure-portalen.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Registrering af en ny app i Azure-portalen](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Azure AD tildeler et entydigt program-id (klient-id) til din app og fører dig til siden **Oversigt** for din app. Hvis du vil føje flere egenskaber til din app, kan du vælge andre konfigurationsindstillinger, f.eks. indstillinger for mærkning og for certifikater og hemmeligheder.
 
@@ -187,6 +185,3 @@ namespace TalentODataPoC
 ```
 
 Når du har hentet et adgangstoken, skal du overføre tokenet i godkendelsesheaderen som et bærertoken sammen med de enkelte anmodninger, du sender til data-API'en, som beskrevet ovenfor.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

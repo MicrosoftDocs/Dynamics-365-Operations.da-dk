@@ -2,30 +2,36 @@
 title: Forudsætninger for konfiguration af kanal
 description: Dette emne indeholder en oversigt over forudsætninger for konfiguration af kanaler i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6ad8911df00fde4675d4d9b52fcdd52ff58d4983b177316a7606de277328226b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0da0457240cf12686fff2fa929c7fb510c11f242
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742458"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411039"
 ---
 # <a name="channel-setup-prerequisites"></a>Forudsætninger for konfiguration af kanal
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over forudsætninger for konfiguration af kanal i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Før en Dynamics 365 Commerce-kanal kan oprettes, skal der udføres flere nødvendige opgaver. Følgende lister med nødvendige opgaver er organiseret efter kanaltype.
 
@@ -80,6 +86,3 @@ Før en Dynamics 365 Commerce-kanal kan oprettes, skal der udføres flere nødve
 [Konfigurer en detailkanal](channel-setup-retail.md)
     
 [Konfigurere en onlinekanal](channel-setup-online.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

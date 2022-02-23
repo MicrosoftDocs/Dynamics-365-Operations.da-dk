@@ -2,9 +2,11 @@
 title: Sikkerhedsdiagnosticering for opgaveregistreringer
 description: Dette emne giver oplysninger om, hvordan du kan analysere og administrere krav til sikkerhedstilladelser på basis af en opgaveregistrering.
 author: Peakerbl
+manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: 44af35f16f6e9ff89b30bc10eef3f16ecdfaf907c4c6e22aa5775d1941fb6a5d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88eb90b35f1a9754cc4daa01d8f40cdf712db4f8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745114"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679784"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Sikkerhedsdiagnosticering for opgaveregistreringer
 
@@ -39,7 +41,7 @@ Dette emne giver oplysninger om, hvordan du kan analysere og administrere krav t
 
 4. Vælg en bruger i feltet **Bruger-id**. Hvis brugeren ikke har rettigheder til visse menupunkter, opdateres feltet **Manglende tilladelser** til **Ja**.
   
-  ![Siden Detaljer om sikkerhedsmenupunkter.](../media/Security-Menu-Item-Details.png)
+  ![Siden Detaljer om sikkerhedsmenupunkter](../media/Security-Menu-Item-Details.png)
 
 5. Vælg **Tilføj reference** for at få vist en liste over sikkerhedsobjekterne, herunder roller, pligter og rettigheder, der giver den manglende tilladelse.
 6. Vælg et sikkerhedsobjekt på listen:
@@ -47,6 +49,3 @@ Dette emne giver oplysninger om, hvordan du kan analysere og administrere krav t
     - Hvis **Rolle** er valgt, skal du vælge **Føj rolle til bruger**. Derved åbnes siden **Tildel brugere roller**. Du kan finde flere oplysninger på siden [Tildele brugere til sikkerhedsroller](assign-users-security-roles.md).
     - Hvis **Pligt** er valgt, skal du vælge **Føj pligt til rolle**, vælge de roller, som pligten skal føjes til, og derefter vælge **OK**.
     - Hvis **Rettighed** er valgt, skal du vælge **Føj rettighed til pligter**, vælge de roller, som pligten skal føjes til, og derefter vælge **OK**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,39 +1,37 @@
 ---
-title: Administrere funktioner i Human Resources
-description: Dette emne beskriver funktionen Administration af funktioner, og hvordan du kan bruge den.
-author: twheeloc
-ms.date: 08/19/2021
+title: Administrere funktioner
+description: Få mere at vide om, hvordan du slår nye funktioner til eller fra i Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2d5a27c02df841dfbb17a9375aaf75f93d05cd8e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069701"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417845"
 ---
-# <a name="manage-features-in-human-resources"></a>Administrere funktioner i Human Resources
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="manage-features"></a>Administrere funktioner
 
 Som en del af vores fortløbende implementering af nye funktioner til Microsoft Dynamics 365 Human Resources, vil vi give kunderne mulighed for at udnytte nye funktioner, så hurtigt som muligt. Vi leverer prøveversionsfunktioner, som næsten er generelt tilgængelige og har gennemgået omfattende test. Vi mangler kun en sidste runde af kundefeedback og validering, før vi gør dem almindeligt tilgængelige.
 
-Yderligere oplysninger om nye funktioner i Human Resources finder du i [Nyheder i Human Resources](hr-admin-whats-new.md) og [Dynamics 365 og Power Platform Frigivelsesplan](/dynamics365/release-plans/?panel=products1#pivot=products).
+Yderligere oplysninger om nye funktioner i Personale finder du i [Nyheder i Personale](hr-admin-whats-new.md) og [Dynamics 365 og Power Platform Frigivelsesplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
 
-Arbejdsområdet **Administration af funktioner** indeholder en oversigt over de funktioner, der er leveret i hver udgave. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet til at aktivere dem og få vist dokumentationen til dem. Du kan finde flere oplysninger om Administration af funktioner under [Oversigt over funktionsstyring](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Arbejdsområdet **Administration af funktioner** indeholder en oversigt over de funktioner, der er leveret i hver udgave. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet til at aktivere dem og få vist dokumentationen til dem. Du kan finde flere oplysninger om Administration af funktioner under [Oversigt over funktionsstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Alle nye funktioner vises i forhåndsvisning i mindst 30 dage og typisk 30-60 dage. De vigtigste funktioner er normalt tilgængelige i oktober og april hvert år efter forhåndsvisningsperioden. Så snart du ser nye egenskaber i arbejdsområdet **Administration af funktioner**, kan du slå dem til. Nogle funktioner er muligvis som slået til som standard.
 
@@ -44,9 +42,9 @@ Når en funktion er generelt tilgængelig, kan den slås til eller fra i produkt
 Hvis du vil have adgang til visningsfunktionerne, skal du først aktivere dem i dit miljø. Aktivering eller deaktivering af funktioner til visning er specifik for miljøet.
 
 > [!IMPORTANT]
-> Prøveversionsfunktioner er kun tilgængelige i **Sandkasse**-miljøer. Når du slår en prøveversionsfunktion til, aktiverer du den for alle brugere i organisationen, der arbejder i det pågældende miljø. Når du slår prøveversionsfunktionen fra, deaktiverer du den og gør den utilgængelig for brugerne. Visningsfunktioner understøttes kun i begrænset omfang i Personal. Der er en mindre grad af beskyttelse af personlige oplysninger og færre sikkerhedsfunktioner, og de medtages ikke i Human Resources-serviceniveauaftalen (SLA). Du bør ikke bruge visningsfunktioner til behandling af personoplysninger (dvs. alle oplysninger, der kan identificere dig) eller til at behandle andre data, der er omfattet af lovbestemte overholdelseskrav.
+> Prøveversionsfunktioner er kun tilgængelige i **Sandkasse**-miljøer. Når du slår en prøveversionsfunktion til, aktiverer du den for alle brugere i organisationen, der arbejder i det pågældende miljø. Når du slår prøveversionsfunktionen fra, deaktiverer du den og gør den utilgængelig for brugerne. Visningsfunktioner understøttes kun i begrænset omfang i Personal. Der er en mindre grad af beskyttelse af personlige oplysninger og færre sikkerhedsfunktioner, og de medtages ikke i Personale-serviceniveauaftalen (SLA). Du bør ikke bruge visningsfunktioner til behandling af personoplysninger (dvs. alle oplysninger, der kan identificere dig) eller til at behandle andre data, der er omfattet af lovbestemte overholdelseskrav.
 
-1. I Human Resources skal du vælge **Systemadministration**.
+1. I Personale skal du vælge **Systemadministration**.
 
 2. Vælg felter **Funktionsstyring**.
 
@@ -72,7 +70,7 @@ Administration af frynsegoder erstatter funktionaliteten i arbejdsområdet **Fry
 - **Politikker for berettigelse til frynsegoder**
 - **Berettigelseshændelser**
 
-Du kan få vist oplysningerne på disse sider i skrivebeskyttet tilstand. Hvis du vil redigere oplysningerne, skal du først deaktivere Administration af frynsegoder (gælder kun for **sandkassemiljøer**).
+Du kan få vist oplysningerne i disse formularer i skrivebeskyttet tilstand. Hvis du vil redigere oplysningerne, skal du først deaktivere Administration af frynsegoder (gælder kun for **sandkassemiljøer**).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Aktivere eller deaktivere orlov og fravær
 
@@ -94,7 +92,5 @@ Medtag ikke personlige oplysninger (oplysninger, der kan identificere dig) i din
 
 ## <a name="see-also"></a>Se også
 
-- [Nyheder i Human Resources](hr-admin-whats-new.md)
-- [Dynamics 365 og Power Platform Frigivelsesplan](/dynamics365/release-plans/?panel=products1#pivot=products)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [Nyheder i Personale](hr-admin-whats-new.md)
+- [Dynamics 365 og Power Platform Frigivelsesplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)

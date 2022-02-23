@@ -2,9 +2,11 @@
 title: Konfigurer ER-modeltilknytninger ud fra landeafhængighed
 description: Dette emne beskriver, hvordan du kan konfigurere ER-modeltilknytninger, så de afhænger af den juridiske enheds land/område-kontekst, der styrer brugen af dem.
 author: NickSelin
+manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605365"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680869"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurer ER-modeltilknytninger ud fra landeafhængighed
 
@@ -48,7 +50,7 @@ Visse trin i dette emne kræver kørsel af et ER-format. I nogle tilfælde påvi
 
 Følg trinnene i [Bilag 1](#appendix1) i dette emne for at designe de påkrævede ER-komponenter. Du har nu modeltilknytningskonfigurationen **Tilknytning (generel)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
 
-![ER-konfigurationssiden Format for at få mere at vide om tilknytningskonfiguration.](./media/RCS-Context-specific-mapping-Tree.PNG)
+![Siden ER-konfigurationer](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>Kør det konfigurerede format
 
@@ -61,7 +63,7 @@ Bemærk, at webbrowseren tilbyder at hente den tekstfil, der blev genereret af d
 
 Følg trinnene i [Bilag 2](#appendix2) i dette emne for at designe de påkrævede ER-komponenter. Du har nu modeltilknytningskonfigurationerne **Tilknytning (generel)** og **Tilpasset tilknytning (generel)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
 
-![ER-konfigurationsside, tilknytning af generel brugerdefineret konfiguration.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![Siden ER-konfigurationer](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>Kør det konfigurerede format
 
@@ -71,7 +73,7 @@ Følg trinnene i [Bilag 2](#appendix2) i dette emne for at designe de påkræved
 
 Bemærk, at udførelsen af det valgte ER-format mislykkedes. En fejlmeddelelse oplyser dig om, at der forefindes mere end én modeltilknytning for modellen **Model til at lære tilknytninger** og definitionen **Indgangspunkt 1** i modeltilknytningskonfigurationerne **Tilknytning (generel)** og **Tilpasset tilknytning (generel)**. I meddelelsen anbefales det også, at du vælger en af disse konfigurationer som standardkonfiguration.
 
-![ER-konfigurationsside med fejlmeddelelse.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![Siden ER-konfigurationer](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>Definer en standardkonfiguration for tilknytning
 
@@ -82,7 +84,7 @@ Benyt følgende fremgangsmåde for at definere modeltilknytningkonfigurationen *
 3.  Vælg **Ja** i indstillingen **Standard for modeltilknytning**.
 4.  Vælg **Gem**.
 
-![ER-konfigurationsside, standard for modeltilknytning angivet til Ja.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![Siden ER-konfigurationer](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Kør det konfigurerede format
 
@@ -101,7 +103,7 @@ Følg trinnene i [Bilag 3](#appendix3) i dette emne for at designe de påkræved
 
 Bemærk, at version 1 af modeltilknytningskonfigurationen **Tilknytning (FR)** er konfigureret, så den kun gælder for ER-formater for **Model til at lære tilknytninger**, der køres i Finance-firmaer, som har fransk land/område-kontekst.
 
-![ER-konfigurationsside, tilknytning af modelkonfiguration (FR).](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![Siden ER-konfigurationer](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>Kør det konfigurerede format
 
@@ -121,7 +123,7 @@ Udfør følgende trin for at definere den brugerdefinerede modeltilknytningskonf
 3.  Vælg **Ja** i indstillingen **Standard for modeltilknytning**.
 4.  Vælg **Gem**.
 
-![ER-konfigurationsside, tilknytningskonfiguration (FR), standard for modeltilknytning angivet til Ja.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![Siden ER-konfigurationer](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Kør det konfigurerede format
 
@@ -195,7 +197,7 @@ Et plustegn (+) i tabellen angiver tilstedeværelsen af en modeltilknytningskonf
 1.  I navigationsruden skal du gå til **Moduler \> Organisationsadministration \> Elektronisk rapportering \> Konfiguration af fejlfindingslog**.
 2.  Vælg knappen **Genindlæs denne side**.
 
-![ER kører logsiden.](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![ER kører logsiden](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 Bemærk, at der er tilføjet en ny post til ER-fejlfindingsloggen for det udførte ER-format. Da feltet **Niveau** i denne post er angivet til **Info**, er posten blot til orientering. Da feltet til Formatkomponent er indstillet til **Tilknytningskonfiguration**, oplyser posten dig om en modeltilknytning, der blev brugt under udførelsen af ER-formatet **Format til at lære tilknytninger** (valgt i feltet **Konfigurationsnavn**). Indholdet i feltet **Genereret tekst** informerer dig om, at tilknytningskomponentet **Tilknytning (FR)**, der findes i konfigurationen **Tilknytning (FR)** er blevet brugt til at køre denne rapport.
 
@@ -236,7 +238,7 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 14. I feltet **Navn** i rulledialogboksen skal du angive **Beskrivelse af funktionalitet**.
 15. Vælg **Tilføj**.
 
-    ![Side for ER-datamodeldesigner.](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![Side for ER-datamodeldesigner](./media/RCS-Context-specific-mapping-Model.PNG)
 
 16. Vælg **Gem**.
 17. Luk siden.
@@ -276,7 +278,7 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 5.  Vælg **Gem**.
 6.  Luk siden **Formeldesigner**.
 
-    ![ER-modeltilknytningsdesignerside, postpunkt 1-definition.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![Side for ER-modeltilknytningsdesigner](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
 7.  Vælg **Gem**.
 8.  Luk siden **Modeltilknytningsdesigner**.
@@ -289,12 +291,12 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 15. Vælg **Gem**.
 16. Luk siden **Formeldesigner**.
 
-    ![ER-modeltilknytningsdesignerside, postpunkt 2-definition.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![Side for ER-modeltilknytningsdesigner](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
 17. Vælg **Gem**.
 18. Luk siden **Modeltilknytningsdesigner**.
 
-    ![ER-modeltilknytningsside med postpunkt-definitioner.](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![Side med ER-modeltilknytninger](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. Luk siden **Modeltilknytninger**.
 
@@ -335,7 +337,7 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 2.  Vælg feltet **Beskrivelse af funktionalitet**.
 3.  Vælg **Bind**.
 
-    ![Side med ER-formatdesigner.](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![Side med ER-formatdesigner](./media/RCS-Context-specific-mapping-Format.PNG)
 
 4.  Vælg **Gem**.
 5.  Luk siden.
@@ -369,7 +371,7 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 6.  Vælg **Gem**.
 7.  Luk siden.
 
-    ![ER-modeltilknytningsdesignerside, generisk funktion 1 brugerdefineret formel.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![Side for ER-modeltilknytningsdesigner](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
 8.  Vælg **Gem**.
 9.  Luk siden.
@@ -380,12 +382,12 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 14. Vælg **Gem**.
 15. Luk siden.
 
-    ![ER-modeltilknytningsdesignerside, generisk funktion 2 brugerdefineret formel.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![Side for ER-modeltilknytningsdesigner](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
 16. Vælg **Gem**.
 17. Luk siden.
 
-    ![ER-model til kopitilknytningsside for datakildetilknytning (Generelt).](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![Side med ER-modeltilknytninger](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. Luk siden.
 
@@ -432,7 +434,7 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 7.  Vælg **Gem**.
 8.  Luk siden.
 
-    ![ER-modeltilknytningsdesignerside, FR-funktion 1-formel.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![Side for ER-modeltilknytningsdesigner](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
 9.  Vælg **Gem**.
 10. Luk siden.
@@ -444,12 +446,12 @@ Bemærk, at konfigurationen af kladdeversion 1 af denne ER konfiguration er klar
 16. Vælg **Gem**.
 17. Luk siden.
 
-    ![ER-modeltilknytningsdesignerside, FR-funktion 2-formel.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![Side for ER-modeltilknytningsdesigner](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
 18. Vælg **Gem**.
 19. Luk siden.
 
-    ![ER-model til datakildetilknytningsside.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![Side med ER-modeltilknytninger](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. Luk siden.
 
@@ -494,6 +496,3 @@ Sørg for, at den delte modeltilknytningskonfiguration ikke er markeret som stan
 - Statussen for mindst én version af ER-modeltilknytningkonfiguration er **Fuldført** eller **Delt**. I dette tilfælde bruges den version, der indeholder det højeste versionsnummer, til udførsel af ER-format.
 - Indstillingen **Kør kladde** for ER-modeltilknytningkonfiguration er aktiveret. I dette tilfælde bruges den version, der har statussen **Kladde** til udførsel af ER-format.
 > Indstillingen **Kør kladde** er tilgængelig på siden **Konfigurationer** for hver enkelt ER-modeltilknytningskonfiguration, når **Indstillingen Kør** ER-brugerparameter er aktiveret.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

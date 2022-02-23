@@ -2,9 +2,11 @@
 title: Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor
 description: Dette emne indeholder oplysninger om, hvordan du samtidigt opretter en faktura og registrerer en ny kreditor, når der ikke kræves en indkøbsordre.
 author: twheeloc
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendImportOneTimeVendFileUpload_PSN
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 927f975b74dbc65c17ddca3a5c910bce9f06050d3f71592f242b7731d244b502
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed14eeda8ecbfde256b1f132d39b8bdefdb564d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727199"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962455"
 ---
 # <a name="import-and-create-multiple-one-time-vendors-and-invoices-in-the-public-sector"></a>Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor
 
@@ -37,6 +39,3 @@ Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, ka
     * Der søges efter dublerede kreditornavne eller Federal Tax Id.  Vigtigt! Hvis du vælger ikke at behandle dublerede kreditorer, behandles de relaterede fakturaer heller ikke. Du kan manuelt oprette en faktura ved hjælp af oplysningerne i CSV-filen.    
 7. Klik på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

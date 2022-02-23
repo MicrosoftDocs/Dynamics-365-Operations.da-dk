@@ -93,6 +93,3 @@ En ny indstilling gør det muligt for lederne at få vist performance for både 
 ### <a name="print-performance-reviews"></a>Udskiv performancegennemgange
 
 Medarbejdere, ledere og personaleafdelingen kan udskrive en medarbejders performancegennemgang.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

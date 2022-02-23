@@ -2,8 +2,11 @@
 title: ER-funktionen Base64StringToContainer
 description: Dette emne indeholder oplysninger om, hvordan funktionen Base64StringToContainer til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
+manager: kfend
 ms.date: 12/14/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3e813c628bfe783fb8e93fc5d7e8b275405245c42710f9ea691d4c06afff0d84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e92ae41a3e0f03cb14d4791ab768f096f2a0523
+ms.sourcegitcommit: e8a46e127d70986539c138b27a641bff6f6874d0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772026"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4739065"
 ---
 # <a name="base64stringtocontainer-er-function"></a>ER-funktionen Base64StringToContainer
 
 [!include [banner](../includes/banner.md)]
 
-Denne `BASE64STRINGTOCONTAINER`-[funktion](er-formula-language.md#Functions) konverterer det angivne input af typen *Streng* til et dataelement af typen *[Container](er-functions-category-container.md)*.
+Denne `BASE64STRINGTOCONTAINER`-[funktion](er-formula-language.md#functions) konverterer det angivne input af typen *Streng* til et dataelement af typen *[Container](er-functions-category-container.md)*.
 
 ## <a name="syntax"></a>Syntaks
 
@@ -72,11 +75,8 @@ Du definerer følgende datakilder i din modeltilknytning:
 
 I dette eksempel koder datakilden **\#MediaAsBase64String** det binære indhold af den aktuelle medietilknytning som tekst, der repræsenterer en Base64-gruppe af binær til tekst-kodningsskemaer. Datakilden **\#BlobFomBase64** afkoder Base64-strengen og returnerer en binær værdi i BLOB-format.
 
-![Eksempeldatakilder på designersiden for ER-modeltilknytning.](./media/er-functions-container-base64stringtocontainer-1.png)
+![Eksempeldatakilder på designersiden for ER-modeltilknytning](./media/er-functions-container-base64stringtocontainer-1.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Containerfunktioner](er-functions-category-container.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

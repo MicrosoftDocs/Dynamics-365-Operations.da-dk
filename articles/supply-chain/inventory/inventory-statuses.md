@@ -1,26 +1,29 @@
 ---
 title: Lagerstatusser
 description: I denne artikel beskrives det, hvordan du kan bruge lagerstatus til at kategorisere og holde styr på lageret.
-author: yufeihuang
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b38ab4674c80da496e09e5179a412d6dcd85a7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eca9d3e4e15d11d2a9a1b531028de230ffc43913
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577666"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594596"
 ---
 # <a name="inventory-statuses"></a>Lagerstatusser
 
@@ -43,14 +46,7 @@ En lagerstatus er en af dimensionerne i lagringsdimensionsgruppen. Lagerstatusse
 
 Du kan bruge lagerstedsvarer, der enten har disponibel eller ikke-disponibel lagerstatus for indgående arbejde. For eksempel skal du oprette en disponibel status, som hedder *Klar*, en ikke-tilgængelig status, som hedder *Beskadiget* og en spærret status, som hedder *Spærret*. Når du opretter en indkøbsordre for modtagne eller returnerede varer, og hvis nogle af varerne er beskadiget eller ødelagt, kan du ændre lagerstatus for varerne til *Beskadiget* på indkøbsordrelinjen. Når disse varer modtages, angives status automatisk til *Spærret*. Hvis du scanner de beskadigede varer ved hjælp af en mobilenhed, kan Supply Chain Management bruge placeringsinstruktioner og arbejdsskabeloner til at vise oplysninger om en passende placering eller en række placeringer, hvor du kan de lægge disse varer på lager. For returnerede varer oprettes afgangstypen *Reservation* på siden **Lagertransaktioner**.
 
-Du kan angive, hvilke lagerstatusser, der er blokeringsstatusser, ved hjælp af afkrydsningsfelterne **Lagerblokering** på siden **Lagerstatusser**. Du kan ikke bruge lagerstatusser som blokeringsstatusser for salgsordrer, flytteordrer eller projektintegrationer.
-
-Ved udgående arbejde kan du bruge forskellige ikke-blokerende lagerstatusser til at styre, hvilken lagerbeholdning der skal reserveres mod. Hvis du har varer med status *Blokering*, og der køres varedisponering på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk. Desuden er det ikke muligt at opdatere **Lagerstatus** i forbindelse med kvalitetsordrevalidering for kvalitetsordrer i forbindelse med udgående arbejde.
-
-> [!NOTE]
-> Du kan ikke ændre lagerstatus på de lokationer, hvor der findes åbent arbejde. Hvis du f.eks. har modtaget et indkøb for en vare, men ikke har udført trinnet Læg på lager, vil der findes åbent arbejde for den modtagende lokation, og du vil få en fejl, hvis du har forsøgt at ændre lagerstatus på den pågældende lokation. Hvis du fuldfører eller annullerer det relaterede arbejde, kan du ændre status.
->
-> Normalt ændres status for den lagerbeholdning, der er relateret til åbent lagerstedsarbejde, kun af arbejdere, der bruger mobilappen Lokationsstyring, f.eks. i forbindelse med en bevægelsesproces.
+Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har varer med status *Ødelagt*, og der køres varedisponering på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk.
 
 Når du har oprettet lagerstatusser, kan du angive standardlagerstatus for et sted, vare og lagersted. Du kan også angive en standardstatus for salg, overdragelse og indkøbsordrer. Standardstatus for salgsordrer og udgående overflytningsordre kan ikke have indstillingen **Lagerspærring** angivet til *Ja*. Lagerstatus, der er nedarvet fra standardindstillinger for et websted, lagersted, vare, indkøbsordre, flytteordre eller salgsordre, kan ændres ved hjælp af den mobile enhed, eller på indkøbsordren, salgsordren eller flytteforslagslinjen.
 
@@ -69,6 +65,3 @@ Du kan ændre lagerstatus enten ved hjælp af siden **Disponibel efter lokation*
 > - På siden **Disponibel efter lokation** kan du gruppere linjer baseret på de viste dimensioner ved hjælp af knappen **Vis dimensioner** og ændre status for de valgte linjer.
 > - På siden **Disponibel efter lokation** kan du vælge flere poster og derefter bruge knappen **Ændring af lagerstatus** til at ændre dem alle på én gang.
 > - I den periodiske opgave **Ændring af lagerstatus** kan du filtrere efter sporingsdimensioner.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

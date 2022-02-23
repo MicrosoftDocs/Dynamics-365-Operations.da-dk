@@ -2,30 +2,35 @@
 title: Konfigurere vurderinger og anmeldelser
 description: I dette emne beskrives, hvordan du konfigurerer dit e-handels-websted, så det kan vise kundevurderinger og -anmeldelser i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968096"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410982"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurere vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du konfigurerer dit e-handels-websted, så det kan vise kundevurderinger og -anmeldelser i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Vurderinger og anmeldelser på e-Commerce-websteder gør det lettere for kunder at få oplysninger om produkter, før de træffer en beslutning om køb, fordi de kan se, hvad andre kunder mener om disse produkter. På e-handelswebsteder fungerer vurderinger og anmeldelser også som en mekanisme til indsamling af kundefeedback om produkter. 
 
@@ -44,7 +49,7 @@ Udfør følgende trin for at konfigurere et websted til at vise vurderinger og a
 
 I følgende illustration vises, hvordan denne konfiguration ser ud i Dynamics 365 Commerce.
 
-![Konfiguration af et websted til visning af vurderinger og anmeldelser.](media/rnr-eCommerce-site-appsettings.png)
+![Konfiguration af et websted til visning af vurderinger og anmeldelser](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Sammenkæde en produktvurdering med anmeldelsessektionen på en PDP
 
@@ -58,7 +63,7 @@ Hvis du vil knytte en produktvurdering til sektionen **Anmeldelser** på PDP'en,
 
 I følgende illustration vises, hvordan denne konfiguration ser ud i Dynamics 365 Commerce.
 
-![Sammenkædning af en produktvurdering med anmeldelsessektionen på en PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Sammenkædning af en produktvurdering med anmeldelsessektionen på en PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfigurere linket til siden til beskyttelse af personlige oplysninger og politik
 
@@ -73,7 +78,7 @@ Følg disse trin for at konfigurere linket til siden om beskyttelse af personlig
 
 I følgende illustration vises, hvordan denne konfiguration ser ud i Dynamics 365 Commerce.
 
-![Konfiguration af linket til siden til beskyttelse af personlige oplysninger og politik.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfiguration af linket til siden til beskyttelse af personlige oplysninger og politik](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfigurer vurderings- og anmeldelsesmoduler på sider med produktdetaljer
 
@@ -87,17 +92,6 @@ For yderligere oplysninger om konfiguration af vurderings- og anmeldelsesmoduler
 
 [Administrere vurderinger og anmeldelser](manage-reviews.md)
 
+[Konfigurer vurderings- og anmeldelsesmoduler på sider med produktdetaljer](ratings-reviews-modules.md)
+
 [Synkronisere produktvurderinger i Dynamics 365 Retail](sync-product-ratings.md)
-
-[Aktiver manuel udgivelse af vurderinger og gennemsyn af en redaktør](manual-publish-rating-reviews.md)
-
-[Importere og eksportere bedømmelser og anmeldelser](import-export-reviews.md)
-
-[Konfigurere service-til-service-godkendelse](service-to-service-auth.md)
-
-[Ofte stillede spørgsmål til Vurderinger og anmeldelser](ratings-reviews-faq.md)
-
-[Moduler til vurderinger og anmeldelser](ratings-reviews-modules.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

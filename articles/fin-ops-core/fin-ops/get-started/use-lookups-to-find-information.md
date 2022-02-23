@@ -1,10 +1,12 @@
 ---
 title: Finde oplysninger ved hjælp af opslag
-description: I dette emne får du mere at vide om nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.
+description: Mange felter har opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d75e66e8fb9f1a227c9dd15f92ca5db433c0db4a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069292"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798136"
 ---
 # <a name="find-information-by-using-lookups"></a>Finde oplysninger ved hjælp af opslag
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Mange felter har opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.
 
@@ -47,15 +46,15 @@ Se f.eks. på et opslagsfelt kaldet **By**.
 
 Når fokus er på feltet **By**, kan du starte med at søge efter den ønskede by ved at skrive et par bogstaver, f.eks. "kol." Når du holder op med at skrive, åbnes opslaget automatisk og er filtreret efter de byer, der begynder med "kol".
 
-[![typeaheadLookupExample.](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
 
 På dette tidspunkt er markøren stadig placeret i opslagsfeltet. Hvis du fortsætter med at skrive, så værdien er "kolonne", justeres opslag indholdet automatisk for at afspejle den seneste værdi i kontrolelementet.
 
-![updateFilterLookupExample.](./media/updatefilterlookupexample.png)
+![updateFilterLookupExample](./media/updatefilterlookupexample.png)
 
 Selvom fokus er stadig i opslagskontrolelementet, kan du også bruge tasterne **pil op** eller **pil ned** til at markere den række, du vil vælge. Hvis du trykker på **Enter**, vælges den fremhævede række fra opslaget, og kontrolelementets værdi vil blive opdateret.
 
-![changingSelectionLookup.](./media/changingselectionlookup.png)
+![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Indtastning af mere end id'er
 
@@ -65,25 +64,22 @@ Tænk f.eks. på feltet **Debitorkonto**, når du opretter en salgsordre. Dette 
 
 Hvis brugeren er begyndt at indtaste et **konto-ID** i opslagskontrolelementet, åbnes rullemenuen automatisk som beskrevet i forrige afsnit, og brugeren kan se opslaget, som vist nedenfor.
 
-[![Kontekstafhængigt opslag, når der angives et konto-id.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Kontekstafhængigt opslag, når der angives et konto-id](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
 Brugeren kan dog også nu angive begyndelsen af et **kontonavn**. Hvis det registreres, ser brugeren følgende opslag. Bemærk hvordan kolonnen **Navn** flyttes til den første kolonne i opslaget, og hvordan opslaget er sorteret og filtreret på basis af kolonnen **Navn**.
 
-[![Kontekstafhængigt opslag, når der angives et kundenavn.](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Kontekstafhængigt opslag, når der angives et kundenavn](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Brug af gitterets kolonneoverskrifter til mere avanceret filtrering og sortering
 
 De opslagsforbedringer, der er beskrevet i de foregående to afsnit giver en væsentligt forbedring af en brugers mulighed for at navigere mellem rækkerne i et opslag, der er baseret på en "starter med"-søgning i felterne **Id** eller **Navn** i opslaget. Der er dog situationer, hvor der er behov for mere avanceret filtrering (eller sortering) for at finde den rigtige række. I disse situationer skal brugeren bruge indstillinger for filtrering og sortering i gitterets kolonneoverskrifter i opslaget. F.eks. angiver en medarbejder en salgsordrelinje og har behov for at finde det rigtige "kabel". Det hjælper ikke at skrive "kabel" i kontrolelementet **Varenummer**, da der ikke er nogen produktnavne, der begynder med "kabel".
 
-![emptyitemlookup.](./media/emptyitemlookup.png)
+![emptyitemlookup](./media/emptyitemlookup.png)
 
 Brugeren skal i stedet at rydde værdien i opslagskontrolelementet, åbne opslagsrullemenuen og filtrere rullemenuen ved hjælp af gitterets kolonneoverskrift, som vist nedenfor. En bruger, der anvender mus (eller tryk), kan blot klikke (eller trykke) på en kolonneoverskrift for at få adgang til filtrerings- og sorteringsindstillingerne for den pågældende kolonne. Når der bruges tastatur, skal brugeren blot at trykke på **Alt**+**Pil** **ned** endnu en gang for at flytte fokus ind i rullemenuen, hvorefter brugeren kan tabulere til den korrekte kolonne og derefter trykke på **Ctrl**+**G** for at åbne rullemenuen for gitterets kolonnehoved.
 
-[![gridfilteritemlookup.](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
 
 Når filteret er anvendt (se billedet nedenfor), kan brugeren som normalt finde og markere rækken.
 
-![filtereditemlookup.](./media/filtereditemlookup.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![filtereditemlookup](./media/filtereditemlookup.png)

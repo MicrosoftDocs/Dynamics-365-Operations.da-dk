@@ -1,30 +1,33 @@
 ---
 title: Definere økonomiske dimensioner
-description: Denne procedure viser, hvordan du tilføjer en enhedsunderstøttet økonomisk dimension og en brugerdefineret økonomisk dimension.
+description: Denne opgave vejledning demonstrerer tilføjelse af en enhedsunderstøttet økonomisk dimension og en brugerdefineret økonomisk dimension.
 author: aprilolson
+manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionDetails,  DimensionAttributeTableExtensionActivate, DimensionValueDetails
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed6dad64032c03e638c2090471af825dd18560a1
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 6fbe739eec0cfa1e7b0276872640bd4f82be3ef7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394456"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441390"
 ---
 # <a name="define-financial-dimensions"></a>Definere økonomiske dimensioner
 
 [!include [banner](../../includes/banner.md)]
 
-Denne procedure viser, hvordan du tilføjer en enhedsunderstøttet økonomisk dimension og en brugerdefineret økonomisk dimension.  Guiden bruger demofirmaet USMF.
+Denne opgave vejledning demonstrerer tilføjelse af en enhedsunderstøttet økonomisk dimension og en brugerdefineret økonomisk dimension.  Guiden bruger demofirmaet USMF.
 
 
 ## <a name="create-an-entity-backed-financial-dimension"></a>Oprette en enhedsunderstøttet økonomisk dimension
@@ -52,6 +55,3 @@ Denne procedure viser, hvordan du tilføjer en enhedsunderstøttet økonomisk di
 9. Skriv en værdi i feltet **Dimensionsværdi** for at beskrive din økonomiske dimensionsværdi.
 10. Skriv en beskrivelse i feltet **Beskrivelse**, som beskriver din økonomiske dimensionsværdi.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

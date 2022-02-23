@@ -2,13 +2,16 @@
 title: Dimensionshierarki
 description: Dette emne indeholder oplysninger om dimensionshierarkier. Du kan bruge et dimensionshierarki til at definere rapporteringsstrukturen, omkostningspolitikker og sikkerhedsopsætning i Omkostningsregnskab.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40ae7b61537cdcd1934056b9e289f342e96b57d3eebe5a6e713b2db91310ed9a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766965"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441477"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
@@ -39,7 +42,7 @@ Dimensionshierarkier bruges forskellige steder i Omkostningsregnskab. Med et dim
 
 Her er et eksempel på et dimensionshierarki.
 
-![Eksempel på et dimensionshierarki.](./media/dimension-hierarchy.png)
+![Eksempel på et dimensionshierarki](./media/dimension-hierarchy.png)
 
 Du kan oprette et dimensionshierarki for følgende dimensionstyper:
 
@@ -78,9 +81,9 @@ Et dimensionshierarki oprettes som en træstruktur, der har node- og bladnoderel
 
 ### <a name="example"></a>Eksempel
 
-Et lille firma har følgende organisationsstruktur, hvor Finans og Human Resources er afdelinger under Administration, og Samling og Emballage er afdelinger under Produktion.
+Et lille firma har følgende organisationsstruktur, hvor Finans og Personale er afdelinger under Administration, og Samling og Emballage er afdelinger under Produktion.
 
-![Eksempel på en organisationsstruktur.](./media/dimension-hierarchy-org.png)
+![Eksempel på en organisationsstruktur](./media/dimension-hierarchy-org.png)
 
 En omkostningsobjektdimension repræsenterer alle bærerne i organisationen.
 
@@ -91,7 +94,7 @@ Den omkostningsobjektdimension, der repræsenterer alle bærerne, kan konfigurer
 
 | Bærere | Betegnelse |
 |--------------|-------------|
-| CC001        | HR          |
+| CC001        | Personale          |
 | CC002        | Finans     |
 | CC003        | Skat         |
 | CC007        | Kreditor/Debitor       |
@@ -118,19 +121,18 @@ Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan ko
 
 | Navn på dimensionshierarki | Dimension    | Navn på dimensionshierarkitype      | Adgangslistehierarki |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Bærere | Klassifikationshierarki for dimension | Nej                    |
+| Organisation             | Bærere | Klassifikationshierarki for dimension | Nr.                    |
 
 Dimensionshierarkiet til rapportering kan konfigureres som vist her.
 
-**Intervaller for dimensionsmedlemmer**
-
-|   Noder           |   Fra dimensionsmedlem   |   Til dimensionsmedlem   |
+|                   | Intervaller for dimensionsmedlemmer   |                         |
 |-------------------|---------------------------|-------------------------|
+| **Noder**         | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
 | Organisation      |                           |                         |
 | &nbsp;&nbsp;Administration         |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Finans   | CC002                     | CC003                   |
+|&nbsp;&nbsp;&nbsp;&nbsp;Finans   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produktion    |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Emballage | CC005                     | CC005                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Samling  | CC006                     | CC006                   |
@@ -145,13 +147,12 @@ Et dimensionshierarki, der opfylder kravene i politikken, kan konfigureres som v
 
 Dimensionshierarkiet til politikken kan konfigureres som vist her.
 
-**Intervaller for dimensionsmedlemmer**
-
-|   Noder           |   Fra dimensionsmedlem   |   Til dimensionsmedlem   |
+|                   | Intervaller for dimensionsmedlemmer   |                         |
 |-------------------|---------------------------|-------------------------|
+| **Noder**         | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
 | Funktionalitet af omkostning     |                           |                         |
 | &nbsp;&nbsp;Fast omkostning    | 10001                     | 10011                   |
-| &nbsp;&nbsp;Variabel omkostning | 40001                     | 40010                   |
+|&nbsp;&nbsp;Variabel omkostning | 40001                     | 40010                   |
 
 > [!NOTE]
 > Under **Intervaller for dimensionsmedlemmer** kan en node indeholde 1:_n_ dimensionsmedlemsintervaller. Du kan indsætte dimensionsmedlem-id'er, der endnu ikke findes som medlemmer af dimensionen. Denne fremgangsmåde gør hierarkiet fleksibelt i fremtiden.  
@@ -207,7 +208,7 @@ Følgende eksempel viser, hvordan et dimensionshierarki kan se ud i rapportering
 | Organisation                              | Administration                                     | Finans                                   | CC002                                     |                                            |
 | Organisation                              | Administration                                     | Finans                                   | CC003                                     |                                            |
 | Organisation                              | Administration                                     | Finans                                   | CC007                                     |                                            |
-| Organisation                              | Administration                                     | HR                                        | CC001                                     |                                            |
+| Organisation                              | Administration                                     | Personale                                        | CC001                                     |                                            |
 | Organisation                              | Produktion                                | Emballage                                 | CC005                                     |                                            |
 | Organisation                              | Produktion                                | Samling                                  | CC006                                     |                                            |
 
@@ -297,15 +298,14 @@ Potentielt skal alle ledere kunne få adgang til følsomme forretningsoplysninge
 
 Et nyt oversigtspanel **Brugere** er tilgængeligt i hierarkidesigneren. Her kan du indsætte et eller flere bruger-id'er på hver node i hierarkiet.
 
-**Intervaller for brugere og dimensionsmedlemmer**
-
-|   Noder         |   Bruger-id        |   Fra dimensionsmedlem   |   Til dimensionsmedlem   |
+|                 | Brugere            | Intervaller for dimensionsmedlemmer   |                         |
 |-----------------|------------------|---------------------------|-------------------------|
+| **Noder**       | **Bruger-id**      | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
 | Organisation    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Administration         | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finans   | Alicia           | CC002                     | CC003                   |
 |                 |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR        | Arnie            | CC001                     | CC001                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | Arnie            | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produktion    | David            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Emballage | Ellen            | CC005                     | CC005                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Samling  | Chris            | CC006                     | CC006                   |
@@ -331,8 +331,5 @@ Indstillingerne for adgangslistehierarkiet bruges til at styre, hvilke data der 
     - Data Power BI-visualiseringer, der er integreret i Dynamics 365 Finance-klienten
 
 > [!NOTE] 
-> - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Adgangslistehierarkiet bidrager ikke til at beskytte eksport af data til Excel. Derfor skal dette rapporteringsværktøjet kun bruges af bogholdere og ledere, der skal have fuld adgang til at se dataene.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

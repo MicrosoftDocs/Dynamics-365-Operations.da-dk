@@ -2,23 +2,26 @@
 title: Importér remburs
 description: Denne procedure fører dig gennem processen med at importere en remburs.
 author: kweekley
+manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c6119a8b52eece5935bf05d0f2300feeb8d4e90b08f26e949870f491bc9254e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f9c73ec1347e72f8cd4ae8eec580bb8fe3df8ed
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743115"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441628"
 ---
 # <a name="import-letter-of-credit"></a>Importér remburs
 
@@ -128,8 +131,7 @@ Denne procedure bruger demofirmaet USMF.
 12. Luk siden.
 13. Luk siden.
 
-## <a name="verify-import-letter-of-credit-status-and-printing"></a>Bekræfte kreditstatus for importremburs og udskrivning
-
+## <a name="verify-import-letter-of-credit-status"></a>Bekræfte status for importremburs
 1. Gå til Likviditets- og bankstyring > Remburser > Importremburs og importinkasso.
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
@@ -183,6 +185,3 @@ Denne procedure bruger demofirmaet USMF.
     * Kontrol af rapporten viser posteringerne med bankdokumentnummer, facilitetsgrænse, udnyttet beløb og facilitetssaldobeløb.  
 8. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

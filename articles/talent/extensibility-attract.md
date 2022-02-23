@@ -91,6 +91,3 @@ Med aktiviteten Webindhold (iframe) kan du integrere en brugerdefineret webløsn
 
 > [!NOTE]
 > Aktiviteten Webindhold er kun tilgængelig i forbindelse med tilføjelsesprogrammet til omfattende ansættelse.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Power BI-indhold for praksischef
-description: I dette emne beskrives, hvad der er medtaget i Power BI-indhold for praksischef.
-author: kfend
+description: I dette emne beskrives, hvad der er medtaget i Power BI-indhold for praksischef. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet.
+author: KimANelson
+manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
@@ -14,18 +16,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500215"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685699"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-indhold for praksischef
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der er medtaget i **Praksischef** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
+I dette emne beskrives, hvad der er medtaget i Power BI-indhold for **Praksischef**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
@@ -115,6 +117,3 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 | Samlede nøglemålinger       | Felt               | Betegnelse |
 |---------------------------------|---------------------|-------------|
 | Planlagt omkostning for fuldført aktivitet | Sum(TotalCostPrice) | Summen af kostpris i estimater for alle projektposteringstyper, der har fuldførte opgaver. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

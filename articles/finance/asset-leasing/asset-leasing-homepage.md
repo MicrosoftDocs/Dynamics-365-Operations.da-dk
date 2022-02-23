@@ -2,27 +2,28 @@
 title: Hjemmeside for aktivleasing
 description: Dette emne giver et overblik over Aktivleasing-dokumentationen for og links til bestemte emner.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseLeasingWorkspace
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "4464"
-- intro-internal
+ms.search.scope: Core, Operations, Retail
+ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d187f094a7d13e26a6121a2115c146c1372dba46bcafd423a3683d73a1e779f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd32ad1b745d1bfda25abf57330fb1385014e4fc
+ms.sourcegitcommit: f0f5545a8ff99583e0131f435d91c64bb68a1c38
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775212"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "4441776"
 ---
 # <a name="asset-leasing-home-page"></a>Hjemmeside for aktivleasing
 
@@ -30,9 +31,7 @@ ms.locfileid: "6775212"
 
 Dette emne indeholder en liste over de emner i hjælp, der er tilgængelige for aktivleasing, og som indeholder hyperlinks til bestemte emner. 
 
-Aktivleasing er et avanceret funktion til styring, sporing og automatisering af finanstransaktioner for leasede aktiver i Microsoft Dynamics 365 Finance. Aktivleasing overholder internationale regnskabsstandarder (IFRS 16) og US GAAP-standarder (ASC 842). Aktivleasing registrerer og behandler leasingoplysninger og opretter kladdeposteringer for leasingens levetid fra den første registrering over månedlige kladdeposteringer til værdiforringelsen og afslutningen af leasingen.
-
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet i **Funktionsstyring** skal du finde og vælge den funktion, der hedder **Aktivleasing**, og derefter vælge knappen **Aktivér nu**.
+Aktivleasing er et avanceret funktion til styring, sporing og automatisering af finanstransaktioner for leasede aktiver i Microsoft Dynamics 365 Finance. Aktivleasing overholder internationale regnskabsstandarder (IFRS 16) og US GAAP-standarder (ASC 842). Aktivleasing registrerer og behandler leasingoplysninger og opretter kladdeposteringer for leasingens levetid fra den første registrering over månedlige kladdeposteringer til værdiforringelsen og afslutningen af leasingen.  
 
 ## <a name="asset-leasing-topics"></a>Aktivleasing, emner
 Følgende emne kan hjælpe dig med at konfigurere og bruge aktivleasing. 
@@ -47,7 +46,7 @@ Følgende emne kan hjælpe dig med at konfigurere og bruge aktivleasing.
   - [Oprette en leasinggruppe](create-lease-group.md)
   - [Konfigurere indekssatser](set-up-index-rate-types.md)
   - [Konfigurere udgiftstyper](set-up-expense-types.md)
-  - [Oprette leasingkladdenavne](set-up-lease-journal-names.md)
+  - [Konfigurere leasingkladdenavne](set-up-lease-journal-names.md)
   - [Konfigurere leasingbogføringskonti](set-up-lease-posting-accts.md)
   - [Tildele nummerserier](leasing-number-sequences.md)
   - [Tildel brugerroller](lease-user-roles.md)
@@ -86,7 +85,7 @@ I dette emne beskrives de rapporter, der er tilgængelige for aktivleasing.
 
 ### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) for at se, hvilke nye funktioner der er planlagt. 
+Gå til [Microsoft Dynamics 365-frigivelsesplaner](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
 
 ### <a name="blogs"></a>Blogs
 
@@ -97,6 +96,3 @@ Du kan finde meninger, nyheder og andre oplysninger i [Microsoft Dynamics 365-bl
 ### <a name="videos"></a>Videoer
 
 Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ). 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

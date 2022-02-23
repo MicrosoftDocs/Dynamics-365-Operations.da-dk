@@ -2,9 +2,11 @@
 title: Overvåge politikregler
 description: Du kan bruge overvågningspolitikker til at sikre, at udgiftsrapporter, kreditorfakturaer og indkøbsordrer overholder de politikregler, du opretter. Alle de regler, der er knyttet til en overvågningspolitik, køres i batchtilstand i henhold til en tidsplan, du angiver.  Hver politikregel er en forekomst af en politikregeltype. Kun én politikregel ad gangen kan være aktiv for hver politikregeltype.
 author: panolte
+manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbf93f5b8b2f8d95102a52178b096d7e334894483c0ac0bacc62653aea845022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744300"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021235"
 ---
 # <a name="audit-policy-rules"></a>Overvåge politikregler
 
@@ -28,7 +30,8 @@ ms.locfileid: "6744300"
 
 Du kan bruge overvågningspolitikker til at sikre, at udgiftsrapporter, kreditorfakturaer og indkøbsordrer overholder de politikregler, du opretter. Alle de regler, der er knyttet til en overvågningspolitik, køres i batchtilstand i henhold til en tidsplan, du angiver.  Hver politikregel er en forekomst af en politikregeltype. Kun én politikregel ad gangen kan være aktiv for hver politikregeltype. 
 
-## <a name="queries-and-query-types"></a>Forespørgsler og forespørgselstyper
+<a name="queries-and-query-types"></a>Forespørgsler og forespørgselstyper
+-----------------------
 
 Når du opretter en overvågningspolitikregel, skal du først vælge en politikregeltype. Politikregeltypen angiver den AOT-forespørgsel (Application Object Tree), der skal bruges som udgangspunkt for oprettelse af politikreglen. Den angiver også den forespørgselstype, der skal bruges til politikreglen. Forespørgslen definerer det kildedokument, som politikreglen evaluerer. Den angiver også de felter i kildedokumentet, der identificerer både den juridiske enhed og det felt, der identificerer den dato, der skal bruges ved valg af dokumenter til overvågning. Forespørgselstypen styrer standardfelterne på forespørgselssiden og på siden Regel for overvågning. Følgende tabel viser de forespørgselstyper, der er tilgængelige for overvågningspolitikregler.
 
@@ -90,12 +93,10 @@ Alle politikreglerne for en bestemt overvågningspolitik deler samme batchparame
 
 
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Overtrædelser af overvågningspolitik og sager](audit-policy-violations-cases.md)
 [Definere revisionspolitikker for kildedokumenter](tasks/define-audit-policies-source-documents.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

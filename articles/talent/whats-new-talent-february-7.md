@@ -58,6 +58,3 @@ Når du ændrer jobbet i en stilling, får **Jobfamilie** nu standardindstilling
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>Forbedringer af ydeevnen ved gengivelse af arbejdsområder
 Analysefaner i arbejdsområder indlæses nu kun ved adgang til disse sider. Der vises en indikator under den indledende gengivelse af siden i øverste venstre hjørne af siden.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

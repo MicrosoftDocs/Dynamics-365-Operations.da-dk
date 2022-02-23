@@ -1,14 +1,17 @@
 ---
 title: Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
-description: Dette emne indeholder oplysninger om, hvordan der oprettes Azure Data Lake Storage-forbindelse mellem en Gen 2-løsning og et Dynamics 365 Commerce-miljøs enhedslager. Dette er et påkrævet trin, før du aktiverer produktanbefalinger.
+description: Dette emne forklarer, hvordan du aktiverer og tester Azure Data Lake Storage for et Dynamics 365 Commerce-miljø, som er en forudsætning for, at du kan aktivere produktanbefalinger.
 author: bebeale
-ms.date: 08/31/2020
+manager: AnnBe
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,41 +19,44 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 27e4f1c751ee865b0df536f3c1912cb1d8946032
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466286"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410991"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om, hvordan der oprettes Azure Data Lake Storage-forbindelse mellem en Gen 2-løsning og et Dynamics 365 Commerce-miljøs enhedslager. Dette er et påkrævet trin, før du aktiverer produktanbefalinger.
+Dette emne forklarer, hvordan du aktiverer og tester Azure Data Lake Storage for et Dynamics 365 Commerce-miljø, som er en forudsætning for, at du kan aktivere produktanbefalinger.
 
-I Dynamics 365 Commerce-løsningen aggregeres de data, der er nødvendige for at beregne anbefalinger, produkter og transaktioner i miljøets enhedslager. For at gøre disse data tilgængelige for andre Dynamics 365-tjenester, f.eks. dataanalyse, business intelligence og personlige anbefalinger, er det nødvendigt at knytte miljøet til en kundeejet Azure Data Lake Storage Gen2-løsning.
+## <a name="overview"></a>Oversigt
 
-Når trinnene ovenfor er udført, afspejles alle kundedata i miljøets Enhedslager automatisk i kundens Azure Data Lake Storage Gen2-løsning. Når anbefalingerfunktioner er aktiveret via arbejdsområdet til funktionsstyring i Commerce headquarters, får anbefalingerne adgang til samme Azure Data Lake Storage Gen2-løsning.
+I Dynamics 365 Commerce-løsningen spores alle produkt- og transaktionsoplysninger i miljøets enhedslager. For at gøre disse data tilgængelige for andre Dynamics 365-tjenester, f.eks. dataanalyse, business intelligence og personlige anbefalinger, er det nødvendigt at knytte miljøet til en kundeejet Azure Data Lake Storage Gen 2-løsning.
 
-Under hele processen forbliver kundernes data beskyttede og under deres kontrol.
+Da Azure Data Lake Storage er konfigureret i et miljø, spejles alle nødvendige data fra enhedslageret, mens de stadig er beskyttet og under kundens kontrol.
+
+Hvis produktanbefalinger eller personlige anbefalinger også er aktiveret i miljøet, vil stakken med produktanbefalinger blive tildelt adgang til den dedikerede mappe i Azure Data Lake Storage for at hente kundens data og beregne anbefalinger baseret på den.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Et Dynamics 365 Commerce-miljøs enhedslager skal være tilknyttet en Azure Data Lake Gen Storage Gen2-konto og tilhørende tjenester.
+Kunderne skal have Azure Data Lake Storage konfigureret i et Azure-abonnement, som de ejer. Dette emne dækker ikke købet af et Azure-abonnement eller opsætningen af en Azure Data Lake Storage-aktiveret lagerkonto.
 
-Du kan finde flere oplysninger om Azure Data Lake Storage Gen2 og opsætning af samme i [den officielle dokumentation for Azure Data Lake Storage Gen2](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Du kan finde flere oplysninger om Azure Data Lake Storage i [den officielle dokumentation for Azure Data Lake Storage Gen2](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Konfigurationstrin
 
-I dette afsnit beskrives de konfigurationstrin, der er nødvendige for at aktivere Azure Data Lake Storage Gen2 i et miljø, da det angår produktanbefalinger.
-Du kan få en mere detaljeret oversigt over de trin, der er nødvendige for at aktivere Azure Data Lake Storage Gen2 i [Gøre enhedslager tilgængelig som en Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+I dette afsnit beskrives de konfigurationstrin, der er nødvendige for at aktivere Azure Data Lake Storage i et miljø, da det angår produktanbefalinger.
+Du kan få en mere detaljeret oversigt over de trin, der er nødvendige for at aktivere Azure Data Lake Storage i [Gøre enhedslager tilgængelig som en Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Aktivér Azure Data Lake Storage i miljøet
 
 1. Log på miljøets administrationsportal.
 1. Søg efter **Systemparametre**, og gå til fanen **Dataforbindelser**. 
 1. Angiv **Aktivér Data Lake-integration** til **Ja**.
+1. Angiv **Foretag sivende opdatering af Data Lake** til **Ja**.
 1. Angiv derefter følgende nødvendige oplysninger:
     1. **Program-id** // **Programhemmelighed** // **DNS-navn** – Er nødvendig for oprette forbindelse til KeyVault, hvor Azure Data Lake Storage-hemmeligheden er gemt.
     1. **Hemmeligt navn** – Det hemmelige navn, der er gemt i KeyVault, og som bruges til at godkende med Azure Data Lake Storage.
@@ -58,7 +64,7 @@ Du kan få en mere detaljeret oversigt over de trin, der er nødvendige for at a
 
 Følgende billede viser et eksempel på en Azure Data Lake Storage-konfiguration.
 
-![Eksempel på Azure Data Lake Storage-konfiguration.](./media/exampleADLSConfig1.png)
+![Eksempel på Azure Data Lake Storage-konfiguration](./media/exampleADLSConfig1.png)
 
 ### <a name="test-the-azure-data-lake-storage-connection"></a>Test Azure Data Lake Storage-forbindelsen
 
@@ -78,7 +84,7 @@ Følg disse trin for at aktivere automatisk opdatering af enhedslager.
 
 Følgende billede viser et eksempel på enhedslager med automatisk opdatering aktiveret.
 
-![Eksempel på enhedslager med automatisk opdatering aktiveret.](./media/exampleADLSConfig2.png)
+![Eksempel på enhedslager med automatisk opdatering aktiveret](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage er nu konfigureret for miljøet. 
 
@@ -109,6 +115,3 @@ Hvis det ikke allerede er fuldført, skal du følge trinnene for [aktivering af 
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

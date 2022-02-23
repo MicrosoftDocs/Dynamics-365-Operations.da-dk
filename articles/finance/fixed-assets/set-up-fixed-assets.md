@@ -1,38 +1,45 @@
 ---
 title: Konfigurere anlægsaktiver
 description: Dette emne indeholder en oversigt over opsætning af modulet Anlægsaktiver.
-author: moaamer
-ms.date: 06/08/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 572d104bbc7024da1ea4b219fd3f544f36a88ccddcf1aa5d18065e2e08b93bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754212"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441712"
 ---
 # <a name="set-up-fixed-assets"></a>Konfigurere anlægsaktiver
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over opsætning af modulet **Anlægsaktiver**. 
+Dette emne indeholder en oversigt over opsætning af modulet **Anlægsaktiver**.
 
-Parametre styrer den generelle funktionsmåde i Anlægsaktiver. Anlægsaktivgrupper kan gruppere anlægsaktiverne og angive standardattributter for hvert aktiv, der er knyttet til en gruppe. Bøger knyttes til anlægsaktivgrupper. Bøger sporer den økonomiske værdi af et anlægsaktiv over tid ved hjælp af konfigurationen af afskrivning, der er defineret i afskrivningsprofilen.
+## <a name="overview"></a>Overblik
+
+Parametre styrer den generelle funktionsmåde i Anlægsaktiver.
+
+Anlægsaktivgrupper kan gruppere anlægsaktiverne og angive standardattributter for hvert aktiv, der er knyttet til en gruppe. Bøger knyttes til anlægsaktivgrupper. Bøger sporer den økonomiske værdi af et anlægsaktiv over tid ved hjælp af konfigurationen af afskrivning, der er defineret i afskrivningsprofilen.
 
 Anlægsaktiver tildeles en gruppe, når de oprettes. Som standard tildeles de bøger, der er tilknyttet anlægsaktivgruppen, derefter til anlægsaktivet. Bøger, der er konfigureret til at bogføre i finans, er knyttet til en posteringsprofil. Finanskonti defineres for hver bog i posteringsprofilen og bruges, når anlægsaktivposter bogføres.
 
-![Anlægsaktivkomponenter.](./media/FAComponents_Updated.png)
+![Anlægsaktivkomponenter](./media/FAComponents_Updated.png)
 
 ## <a name="depreciation-profiles"></a>Afskrivningsprofiler
 
@@ -45,8 +52,6 @@ Når du har konfigureret afskrivningsprofiler, skal du oprette de krævede bøge
 En primære afskrivningsprofil er tilknyttet hver bog. Bøger har også en alternativ eller skifteafskrivningsprofil, hvis denne profiltype er relevant. For at medtage anlægskartoteket automatisk i afskrivningskørsel skal du aktivere **Beregn afskrivning**-indstillingen. Hvis denne indstilling ikke er aktiveret for et aktiv, springer afskrivningsforslaget aktivet over.
 
 Du kan også oprette afledte bøger. De angivne afledte transaktioner bogføres mod de afledte bøger som en nøjagtig kopi af den primære transaktion. Derfor er afledte transaktioner normalt angivet til anskaffelser og kassation, ikke til afskrivningstransaktioner. Du kan finde flere oplysninger i [Opsætning af værdimodeller](tasks/set-up-value-models.md).
-
-Du kan bruge en indstilling på siden **Parametre for anlægsaktiver** til at aktivere eller deaktivere låsefunktionen. Du kan aktivere denne funktion i **arbejdsområdet Funktionsstyring**.
 
 ## <a name="fixed-asset-posting-profiles"></a>Posteringsprofiler for anlægsaktiver
 
@@ -72,8 +77,6 @@ Feltet **Grænse for kapitalisering** bestemmer de aktiver, der afskrives. Hvis 
 
 Indstillingen **Opret automatisk afskrivningsreguleringsbeløb med afhændelse** er vigtig. Når du angiver denne indstilling til **Ja**, bliver afskrivningen af anlægsaktivet automatisk reguleret, baseret på indstillingerne for afskrivning ved aktivkassation. Med en anden indstilling kan du fratrække kasserabatter fra anskaffelsesbeløbet, når du anskaffer anlægsaktiver ved hjælp af en kreditorfaktura.
 
-Med parameteren **Lås anlægskartotek i en afskrivningskladde** kan du låse anlægskartoteker i en afskrivningskladde. Når afskrivningsposteringer bogføres, kontrollerer systemet, at det samme anlægskartotek ikke er føjet til mere end én afskrivningskladde. Hvis det er, spærres anlægskartoteket, og bogføringen stopper. Hvis et anlægskartoteks-id er i en låst kladde, låses det automatisk op, når bogføringen er fuldført for den oprindelige kladde. Du kan også låse kladden op manuelt. 
-
 I oversigtspanelet **Indkøbsordrer** kan du konfigurere, hvordan aktiver skal oprettes som en del af indkøbsprocessen. Den første mulighed hedder **Tillad aktivanskaffelse fra Indkøb**. Hvis du angiver denne indstilling til **Ja**, foregår aktivanskaffelse, når fakturaen bogføres. Hvis du angiver denne indstilling til **Nej**, kan du stadig placere et anlægsaktiv på en indkøbsordre (IO) og en faktura, men anskaffelsen bogføres ikke. Bogføring skal foretages i et separat trin fra anlægsaktivkladden. Med indstillingen **Opret aktiv under bogføring af produktkvittering eller faktura** kan du oprette et nyt aktiv "med det samme" under bogføringen. Derfor behøver aktivet ikke sættes op som et anlægsaktiv før posteringen. Den sidste indstilling, **Kontrollér, om der oprettes anlægsaktiver under indtastning på linjen**, gælder kun for indkøbsrekvisitioner.
 
 Du kan konfigurere årsagskoder, så de er nødvendige for ændringer af et anlægsaktiv eller specifikke anlægsaktivtransaktioner.
@@ -81,6 +84,3 @@ Du kan konfigurere årsagskoder, så de er nødvendige for ændringer af et anl�
 Endelig kan du under fanen **Nummerserier** definere nummerserier for anlægsaktiver. Nummerserien for **anlægsaktiver** kan tilsidesættes af nummerserien for **anlægsaktivgruppen**, hvis den er angivet.
 
 Du kan finde flere oplysninger under [Oprette et anlægsaktiv](tasks/create-fixed-asset.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

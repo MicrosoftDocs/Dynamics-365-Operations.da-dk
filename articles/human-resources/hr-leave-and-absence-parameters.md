@@ -1,35 +1,33 @@
 ---
 title: Konfigurere parametre for orlov og fravær
-description: Dette emne beskriver, hvordan du definerer personaleparametre for orlov og fravær i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 10/28/2021
+description: Definer personaleparametre for orlov og fravær i Dynamics 365 Human Resources.
+author: andreabichsel
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7bd1aebd633af0530c550f8ec7510a0c09985ca1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067346"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4417895"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurere parametre for orlov og fravær
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er det en god ide at kontrollere indstillingerne for alle relaterede **Personaleparametre**, herunder:
+Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er det en god ide at kontrollere indstillingerne for alle relaterede personaleparametre, herunder:
 
 - Nummerserie for orlovsanmodninger
 - FMLA-indstillinger (Family Medical and Leave Act)
@@ -40,7 +38,7 @@ Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er de
 
 1. På siden **Orlov og fravær** skal du vælge fanen **Links**.
 
-2. Vælg **Human Resourcesparametre** under **Konfiguration**.
+2. Vælg **Personaleparametre** under **Konfiguration**.
 
 3. Under fanen **Nummerserier** skal du kontrollere **Nummerseriekode** for **Orlovsanmodnings-id** og ændre den efter behov. Denne indstilling bestemmer den rækkefølge, der bruges til automatisk tildeling af id'er til orlovsanmodninger.
 
@@ -77,7 +75,7 @@ Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er de
 
     - Vælg **Saldoberegning** for at få vist saldi pr. dags dato eller pr. periodiseringsperiode. Hvis du vælger **Saldo pr. dags dato**, viser saldoen totalen for alle periodiseringer, justeringer og anmodninger pr. i dag. Hvis du vælger **Saldo pr. periodiseringsperiode**, viser saldoen totalen for alle periodiseringer, reguleringer og anmodninger pr. den periodiseringsperiode, der er defineret af frekvensen i orlovsplanen. 
 
-    - Angiv **Starttidspunkt** for batchjobbet **Udløb af overførsel**.  
+    - Angiv starttidspunktet for at overføre udløb af batchjob.  
     
     - Vælg **Ja** for **Tillad medarbejderne at købe orlov** og **Tillad medarbejderne at sælge orlov**. Hvis du vælger **Ja** for disse indstillinger, kan du oprette politikker for køb og salg af orlov og give medarbejdere mulighed for at sende anmodninger om køb og salg af orlov.
 
@@ -94,6 +92,3 @@ Før du opretter orlovs- og fraværsplaner i Dynamics 365 Human Resources, er de
 ## <a name="see-also"></a>Se også
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

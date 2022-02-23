@@ -46,6 +46,3 @@ Du kan finde oplysninger i afsnittet "Giver adgang til miljøet" i [Klargøre Ta
 **Langsigtet løsning**
 
 Microsoft overvejer at tildele de relevante rettigheder til Onboard og Attract automatisk, når en bruger føjes til Personale.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

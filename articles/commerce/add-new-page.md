@@ -2,30 +2,36 @@
 title: Tilføje en ny webstedsside
 description: Dette emne indeholder en beskrivelse af, hvordan du tilføjer en ny side på et websted i Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090713"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411026"
 ---
 # <a name="add-a-new-site-page"></a>Tilføje en ny webstedsside
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af, hvordan du tilføjer en ny side på et websted i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Når du har oprettet skabeloner og fragmenter til dit websted, er næste trin at starte med at oprette sider, der bruger dem. For at komme i gang skal du vælge en skabelon eller et layout, et sidenavn og en side-URL-adresse.
 
@@ -33,11 +39,11 @@ Når du har oprettet skabeloner og fragmenter til dit websted, er næste trin at
 
 Du kan enten bruge en skabelon eller et layout til din nye side. Du kan finde flere oplysninger under [Oversigt over skabeloner og layout](templates-layouts-overview.md).
 
-## <a name="specify-the-page-name"></a>Angive sidenavnet
+## <a name="page-name"></a>Sidenavn
 
-Sidenavnet skal være entydigt for dit websted og være sigende, så du nemt kan finde siden, og så andre personer ved, hvad formålet med siden er. Du kan omdøbe siden senere ved at redigere den og derefter vælge blyantssymbolet ud for sidenavnet i egenskabsruden.
+Sidenavnet skal være entydigt for din side. Det skal være beskrivende, så du nemt kan finde siden, og så andre personer ved, hvad formålet med siden er. Vælg sidenavnet med omhu, da det ikke kan ændres senere.
 
-## <a name="specify-the-page-url"></a>Angive sidens URL-adresse
+## <a name="page-url"></a>Sidens URL-adresse
 
 Du kan vælge at angive en URL-adresse til den nye side. Når du opretter en side, kan du angive en streng, der bruges til at danne en komplet URL-adresse. Denne streng kaldes også en relativ URL-adresse eller en URL-slug. Der genereres derefter en komplet URL-adresse ud fra URL-sluggen, og den nye side tildeles til den. Du kan ændre URL-sluggen senere, før du publicerer siden. Du kan finde flere oplysninger i [Oprette en side-URL](create-page-URL.md).
 
@@ -84,9 +90,4 @@ Hvis du vil føje en ny side til dit websted, skal du følge disse trin.
 
 [Forbedre en kategorilandingsside](enrich-category-page.md)
 
-[Bekræfte tilgængelighed af sideindhold](verify-accessibility.md)
-
-[Oprette dynamiske e-handelssider baseret på URL-parametre](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Bekræft tilgængelighed af sideindhold](verify-accessibility.md)

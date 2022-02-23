@@ -2,23 +2,26 @@
 title: Registrere og bogføre en fremdateret check for en kreditor
 description: Du kan registrere detaljerne omkring en fremdateret check, før du udsteder checken til en leverandør ved brug af kladdebilaget.
 author: kweekley
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9ca63923a18ce531493e390ec3883910fe25b0fb4d4dc61203285a33bee2714e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 63a822350ce2bd4d673d7f9841822c84fb883601
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761296"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441594"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Registrere og bogføre en fremdateret check for en kreditor
 
@@ -53,6 +56,3 @@ Rollen for denne opgaveguide er Kasserer. Denne opgave bruger demofirmaet USMF.
 16. Luk siden.
 17. Klik på fanen Fremdaterede checks.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

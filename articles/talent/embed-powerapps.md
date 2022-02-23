@@ -66,6 +66,3 @@ Du kan også følge disse trin.
 2. Vælg **Tilføj en app fra Power Apps** på værktøjslinjen.
 
     ![Tilføje en app fra Power Apps ved hjælp af tilpasningsværktøjslinjen](media/powerapp-bar.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

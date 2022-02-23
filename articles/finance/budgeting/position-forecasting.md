@@ -1,26 +1,29 @@
 ---
 title: Budgetteret stilling
 description: Udgifter, der er relateret til arbejdere, udgør ofte en stor andel af udgifterne til en organisation. Stillingsprognoser gør det muligt at planlægge disse udgifter og inkludere dem i planlægningen af budgetter.
-author: panolte
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d43d0f92e666dd512fc6f2681aa8c7b6446edd5c
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: d5bae90cf7c8f11fa5409014023d36cc68ae1bd0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595480"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441599"
 ---
 # <a name="position-forecasting"></a>Budgetteret stilling
 
@@ -30,11 +33,11 @@ Udgifter, der er relateret til arbejdere, udgør ofte en stor andel af udgiftern
 
 ## <a name="position-forecasting-in-budget-planning"></a>Stillingsprognoser i budgetplanlægning
 
-[![Komponenter i stillingsprognoser.](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Komponenter i stillingsprognoser](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Stillingsprognoser bruger tre hovedkomponenter til at angive nøjagtige budgetbeløb for stillingsudgifter. Disse beløb kan derefter integreres i en budgetplan for budgetberegninger. 
 
-Den primære komponent er **prognosestillingen**, der repræsenterer alle de omkostningsdata, der er relateret til en enkelt stilling. Du kan oprette flere versioner af en prognosestilling ved at tildele et andet budgetplanscenarie til hver version. Flere versioner giver mulighed for en iterativ metode til budgettering og gør det muligt at sammenligne what-if-scenarier. Hver prognosestilling har en tilsvarende stilling i Human Resources.
+Den primære komponent er **prognosestillingen**, der repræsenterer alle de omkostningsdata, der er relateret til en enkelt stilling. Du kan oprette flere versioner af en prognosestilling ved at tildele et andet budgetplanscenarie til hver version. Flere versioner giver mulighed for en iterativ metode til budgettering og gør det muligt at sammenligne what-if-scenarier. Hver prognosestilling har en tilsvarende stilling i Personale.
 
 Et **budgetomkostningselement** er en af installationskomponent, der repræsenterer en bestemt omkostning, der er knyttet til en stilling som f.eks. grundløn, arbejdsgiverbetalt sygesikring, betaling af mobiltelefon osv. Et budgetomkostningselement omfatter den hovedkonto, der bruges til omkostninger, og indstillinger for beregning. Hvert budgetomkostningselement kan tildeles til flere prognosestillinger. 
 
@@ -42,14 +45,14 @@ En **kompensationsgruppe** er en valgfri konfigurationskomponent, der bruges til
 
 ### <a name="position-forecasting-processes"></a>Processer til stillingsprognoser
 
-[![Illustration af processer til stillingsprognoser.](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Processer til stillingsprognoser](./media/graphic1b.png)](./media/graphic1b.png) 
 
 I en typisk proces for stillingsprognose opretter du først opsætningskomponenterne (budgetomkostningselementer og løngruppe). Prognosestillinger oprettes derefter baseret på eksisterende stillinger. Du kan derefter foretage justeringer. Du kan for eksempel tilføje eller afslutte stillinger, ændre lønsatser og fordelsomkostninger og tilføje lønstigninger. Du kan oprette flere versioner af en prognosestilling for at give mulighed for sammenligninger mellem forskellige budgetteringsscenarier. Du kan derefter medtage prognosestillingerne i budgetplaner og indsætte omkostningerne fra prognosestillingerne som budgetplanlinjer.
 
 Du kan oprette flere versioner af prognosestillinger, efterhånden som budgetplanerne bliver revideret. Disse nye versioner danner grundlag for revisionerne.
 
 ## <a name="position-forecasting-setup"></a>Opsætning af stillingsprognose
-[![Illustration, hvor opsætning fremhæves.](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Indstilling for fremhævning af illustration](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Budgetomkostningselementer
 
@@ -67,9 +70,9 @@ Jodis organisation giver kursusrabat på 5 % af en medarbejders grundløn. Jodi 
 
 Jodi ønsker ikke, at chefer skal kunne ændre beløbet på frynsegoden. Hun vælger derfor **Tillad ikke omkostningsændringer** i feltet **Tilsidesættelse af budgetteret stilling**. Organisationen ønsker, at denne omkostning skal fordeles ligeligt på hver måned. Derfor vælger Jodi **Kvartalsvis** i feltet **Fordelingsmetode**. 
 
-Derefter tilføjer Jodi en omkostningsberegningslinje, angiver datoerne og hovedkontoen og indtaster **5,00** som procentdelen. Organisationen har et maksimum på $ 5.000 om året til dette frynsegode. Jodi angiver derfor dette beløb som den årlige grænse. 
+Derefter tilføjer Jodi en omkostningsberegningslinje, angiver datoerne og hovedkontoen og indtaster **5,00** som procentdelen. Hendes organisation har et maksimum på $ 5,000 om året til dette frynsegode. Jodi angiver derfor dette beløb som den årlige grænse. 
 
-Endelig tilføjer Jodi de indtjeningsomkostningselementer, der bruges til grundløn, som beregningsgrundlag. Budgetomkostningselementet er nu klar til at blive brugt.
+Endelig tilføjer Jodi de indtjeningsomkostningselementer, der bruges til grundløn, som beregningsgrundlag. Hendes budgetomkostningselement er nu klar til at blive brugt.
 
 ### <a name="compensation-groups"></a>Kompensationsgrupper
 
@@ -77,16 +80,16 @@ Løngrupper kan bruges til at gruppere prognosestillinger, der har lignende løn
 
 En grundlæggende funktion for løngrupper er at tildele et sæt budgetomkostningselementer til en prognosestilling. Løngrupper kan derfor bruges til at tilføje fælles omkostninger f.eks. frynsegodeplaner og skatter. En chef, der opretter en prognosestilling, behøver ikke at kende alle de omkostningselementer, der skal tilføjes. I stedet kan omkostningselementerne tilføjes, når løngruppen er valgt. Elementerne føjes til opsætningen af løngruppen under fanen **Budgetomkostningselementer**. 
 
-Løngrupper kan også bestemme indtjeningssatserne for en prognosestilling. Du kan konfigurere en gruppe til at bruge timebasis eller årsbasis for løn for at beregne indtjening for prognosestilling. Under fanen **Lønsatstabeller** bestemmer et løngitter over lønsatser de indtjeninger, der føjes til en prognosestilling ud fra et tildelt niveau og trin. Disse gitre kan være baseret på eksisterende løngitre i Human Resources. Du kan også oprette nye løngitre til budgetplanlægning. 
+Løngrupper kan også bestemme indtjeningssatserne for en prognosestilling. Du kan konfigurere en gruppe til at bruge timebasis eller årsbasis for løn for at beregne indtjening for prognosestilling. Under fanen **Lønsatstabeller** bestemmer et løngitter over lønsatser de indtjeninger, der føjes til en prognosestilling ud fra et tildelt niveau og trin. Disse gitre kan være baseret på eksisterende løngitre i Personale. Du kan også oprette nye løngitre til budgetplanlægning. 
 
 Ikrafttrædelsesdatoer og udløbsdatoer i lønsatstabellerne gør det muligt at ændre lønsatser på en given dato. Denne funktion er nyttig, når en forhandlingsenhed har forhandlet en generel stigning midt i en budgetcyklus. I dette tilfælde ændrer du udløbsdatoen for den eksisterende tabel til dagen før datoen for satsændringen og tilføjer en ny satstabel, der starter på den nye dato. Når du opretter en ny satstabel, kan du vælge en eksisterende tabel over omkostningssatser personale, hvis du vælger **Opret et nyt kompensationsgitter ud fra et eksisterende gitter**. I den satstabel, der oprettes, giver indstillingen **Masseændring** dig mulighed for at anvende en procentvis stigning eller stigning med fladt beløb på alle satser i gitteret. 
 
 Felterne **Stigningsplan** og **Dato for stigning** i løngruppen bruges, når du skal oprette lønstigninger, fordi stillinger går fra et trin til det næste. En årlig lønstigning er et typisk scenario. Stigningsplanen bestemmer, om stillingens årsdag eller en enkelt fælles dato bruges til trinstigningen. Stigningstidsplanen gælder for alle prognosestillinger i løngruppen. 
 
-Det indtjeningsomkostningselement, der er valgt i løngruppen, bruges, når du opretter indtjeninger for prognosestillingerne i gruppen, herunder deres grundløn og de eventuelle trinstigninger. Feltet **Kompensation - fast struktur** kæder løngruppen sammen med en kompensationsplan med fast struktur i Human Resources. Denne sammenkædning kan tildele en arbejders oplysninger om fast løn til en prognosestilling og kan derfor gøre budgetplanlægningen mere nøjagtig. Husk, at strukturen af kompensationsgitteret (niveauer og trin) for løngruppen skal svare til den faste lønstruktur. Systemet kan ellers ikke kæde løngruppen og den faste lønstruktur sammen korrekt.
+Det indtjeningsomkostningselement, der er valgt i løngruppen, bruges, når du opretter indtjeninger for prognosestillingerne i gruppen, herunder deres grundløn og de eventuelle trinstigninger. Feltet **Kompensation - fast struktur** kæder løngruppen sammen med en kompensationsplan med fast struktur i Personale. Denne sammenkædning kan tildele en arbejders oplysninger om fast løn til en prognosestilling og kan derfor gøre budgetplanlægningen mere nøjagtig. Husk, at strukturen af kompensationsgitteret (niveauer og trin) for løngruppen skal svare til den faste lønstruktur. Systemet kan ellers ikke kæde løngruppen og den faste lønstruktur sammen korrekt.
 
 ## <a name="creating-forecast-positions"></a>Oprette prognosestillinger
-[![Illustration, hvor "opret stillingsprognoser" fremhæves.](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Illustration af fremhævning af "opret stillingsprognoser"](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Oprette prognosestillinger for eksisterende stillinger
 
@@ -94,7 +97,7 @@ For at få den mest nøjagtige budgetplanlægning kan du oprette budgetterede st
 
 Funktionen **Tilføj eksisterende stillinger** viser alle stillinger for en organisation. Ved at angive datoen **Pr. dato** kan du ændre listen over stillinger, så den indeholder de stillinger, der fandtes på en dato i fortiden, eller mere almindeligt i fremtiden (for eksempel start på næste budgetcyklus). Vælg en budgetplanlægningsproces og et budgetplanscenarie, vælg stillinger på listen, og klik derefter på **OK** for at oprette prognosestillinger for de valgte stillinger. Bemærk, at du kun kan oprette en prognosestilling for hver eksisterende stilling i en budgetplanlægningsproces og et scenarie. Du kan dog oprette flere versioner ved at tildele forskellige budgetplanscenarier. 
 
-Hvis budgetomkostningselementer er tildelt til stillingen i Human Resources, tildeles disse budgetomkostningselementer også til prognosestillingen, og standardbeløbene bruges. Feltet **Tildelt arbejder** på prognosestilling er angivet til navnet på den arbejder, der er tilknyttet stillingen, hvis en arbejder er tildelt. Dette felt er et simpelt tekstfelt. Der oprettes ikke noget direkte link. 
+Hvis budgetomkostningselementer er tildelt til stillingen i Personale, tildeles disse budgetomkostningselementer også til prognosestillingen, og standardbeløbene bruges. Feltet **Tildelt arbejder** på prognosestilling er angivet til navnet på den arbejder, der er tilknyttet stillingen, hvis en arbejder er tildelt. Dette felt er et simpelt tekstfelt. Der oprettes ikke noget direkte link. 
 
 Hvis et budgetomkostningselement er markeret, tildeles det årlige beløb for fast løn til prognosestillingen ved hjælp af det valgte omkostningselement, hvis den tildelte arbejder har en fast lønstruktur. Hvis arbejderen ikke har en fast lønstruktur, eller hvis ingen arbejder er tildelt, bruges standardbeløbet til budgetomkostningselementet. 
 
@@ -110,22 +113,22 @@ En anden mulighed er at tildele en jubilæumsdato. Den valgte dato (justeret sta
 
 Du kan oprette nye prognosepositioner på to måder: ved at kopiere en eksisterende prognosestilling og ved at oprette en helt ny prognosestilling. 
 
-Når en prognosestilling er valgt, kan du vælge **Kopiér den valgte budgetterede stilling** for at oprette en ny prognosestilling, der har en prognosestatussen **Foreslået**. Denne prognosestilling har alle de samme data som den prognosestilling, der er kopieret, bortset fra den tildelte arbejder og eventuelle noter om budgetomkostningselementerne. Bemærk, at en tilsvarende ny stilling også er oprettet i Human Resources. Denne stilling har en beskrivelse af **Oprettet efter budget**. 
+Når en prognosestilling er valgt, kan du vælge **Kopiér den valgte budgetterede stilling** for at oprette en ny prognosestilling, der har en prognosestatussen **Foreslået**. Denne prognosestilling har alle de samme data som den prognosestilling, der er kopieret, bortset fra den tildelte arbejder og eventuelle noter om budgetomkostningselementerne. Bemærk, at en tilsvarende ny stilling også er oprettet i Personale. Denne stilling har en beskrivelse af **Oprettet efter budget**. 
 
-Du kan også oprette en helt ny prognosestilling. Vælg et eksisterende job, og vælg også budgetplanlægningsproces og budgetplansscenarie. Derefter kan du tilføje andre oplysninger, du vil tilføje. Igen oprettes der samtidigt en ny stilling i Human Resources.
+Du kan også oprette en helt ny prognosestilling. Vælg et eksisterende job, og vælg også budgetplanlægningsproces og budgetplansscenarie. Derefter kan du tilføje andre oplysninger, du vil tilføje. Igen oprettes der samtidigt en ny stilling i Personale.
 
 ## <a name="working-with-forecast-positions"></a>Arbejde med prognosestillinger
-[![Illustration, hvor "modificer stillingsprognoser" fremhæves.](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Illustration af fremhævning af "modificer stillingsprognoser"](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Flere versioner af en prognosestilling
 
-Du kan ændre prognosestillinger enten for at anvende kendte ændringer for budgetcyklussen eller for at modellere forslåede ændringer. En almindelig fremgangsmåde er at oprette et oprindeligt sæt prognosestillinger, oprette kopier af disse prognosestillinger og derefter bruge kopierne til at modellere forskellige sæt af ændringer. Kopierne tildeles til et andet budgetplanscenarie, som minimum indtil ændringerne er foretaget, og er ellers identiske med de prognosestillinger, de kopieres fra. Originaler og kopier deler samme stilling i Human Resources. 
+Du kan ændre prognosestillinger enten for at anvende kendte ændringer for budgetcyklussen eller for at modellere forslåede ændringer. En almindelig fremgangsmåde er at oprette et oprindeligt sæt prognosestillinger, oprette kopier af disse prognosestillinger og derefter bruge kopierne til at modellere forskellige sæt af ændringer. Kopierne tildeles til et andet budgetplanscenarie, som minimum indtil ændringerne er foretaget, og er ellers identiske med de prognosestillinger, de kopieres fra. Originaler og kopier deler samme stilling i Personale. 
 
-Funktionen **Kopiér til scenarie** har denne funktion. Bemærk, at den enkelte stilling i Human Resources kun have én prognosestilling i hver budgetplanscenarie.
+Funktionen **Kopiér til scenarie** har denne funktion. Bemærk, at den enkelte stilling i Personale kun have én prognosestilling i hver budgetplanscenarie.
 
 ### <a name="modifying-forecast-positions"></a>Ændre prognosestillinger
 
-Ændringer, der foretages til prognosestillinger, er begrænset til disse prognosestillinger. Ændringerne påvirker ikke stillingsposter i Human Resources. De fleste ændringer er også begrænset til den prognosestilling, der redigeres. Ændringerne er med andre ord specifikke for den budgetplanlægningsproces og det budgetplanscenarie, der er tildelt. Undtagelserne er ændringer af felter, der er fælles for stillingen på tværs af processer og scenarier. Disse felter omfatter felterne under fanen **Generelt** og fanen **Økonomiske dimensioner**. Når disse felter er ændret, gælder de nye værdier for stillingen i alle budgetplanlægningsscenarier. Derfor kan du med disse felter hurtigt opdatere alle versioner.
+Ændringer, der foretages til prognosestillinger, er begrænset til disse prognosestillinger. Ændringerne påvirker ikke stillingsposter i Personale. De fleste ændringer er også begrænset til den prognosestilling, der redigeres. Ændringerne er med andre ord specifikke for den budgetplanlægningsproces og det budgetplanscenarie, der er tildelt. Undtagelserne er ændringer af felter, der er fælles for stillingen på tværs af processer og scenarier. Disse felter omfatter felterne under fanen **Generelt** og fanen **Økonomiske dimensioner**. Når disse felter er ændret, gælder de nye værdier for stillingen i alle budgetplanlægningsscenarier. Derfor kan du med disse felter hurtigt opdatere alle versioner.
 
 #### <a name="budget-cost-elements"></a>Budgetomkostningselementer
 
@@ -137,7 +140,7 @@ Budgetelementomkostningslinjerne skal genberegnes, når værdien for fuldtidsans
 
 **Eksempel** 
 
-Organisationen overvejer to muligheder angående reducering af omkostningerne ved en bogholderstilling. En mulighed er at afslutte stilling halvvejs gennem året. Den anden mulighed er at ændre stillingen til halv tid for hele året. Brad har oprettet en prognosestilling for den eksisterende bogholderstilling i et grundscenarie. Brad kopierer denne grundprognosestilling til scenarie A, indstiller ophørsdatoen til den 31. maj og genberegner. Brad kopierer derefter den oprindelige prognosestilling til scenarie B, ændrer værdien for fuldtidsansatte til **0,50** og genberegner. Brad har nu tre versioner, der hver især har omkostningstotaler, der er justeret med indstillingerne.
+Organisationen overvejer to muligheder angående reducering af omkostningerne ved en bogholderstilling. En mulighed er at afslutte stilling halvvejs gennem året. Den anden mulighed er at ændre stillingen til halv tid for hele året. Brad har oprettet en prognosestilling for den eksisterende bogholderstilling i et grundscenarie. Han kopierer denne grundprognosestilling til scenarie A, indstiller ophørsdatoen til den 31 maj og genberegner. Brad kopierer derefter den oprindelige prognosestilling til scenarie B, ændrer værdien for fuldtidsansatte til **0,50** og genberegner. Brad har nu tre versioner, der hver især har omkostningstotaler, der er justeret med indstillingerne.
 
 #### <a name="assigning-a-compensation-group"></a>Tildele en løngruppe
 
@@ -171,7 +174,7 @@ Genberegningsprocessen anvendes automatisk på alle prognosestillinger, der er �
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Overføre prognosestillinger til budgetplaner
 
-[![Illustration, hvor "Tilføj til budgetplan" fremhæves.](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Illustration, der fremhæver "Tilføj til budgetplan"](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Formålet med at oprette og ændre prognosestillinger er at føje dem til budgetplaner, så budgetplanerne omfatter de mest nøjagtige budgetbeløb. Der er to metoder til at føje prognosestillinger til budgetplaner. Du kan enten bruge enten en genereringsproces eller en udvælgelsesproces i budgetplanen.
 
@@ -215,6 +218,3 @@ Hvis du vil se, hvilke budgetplaner en prognosestilling indgår i, kan du oprett
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

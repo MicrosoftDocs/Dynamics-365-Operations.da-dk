@@ -1,33 +1,31 @@
 ---
 title: Konfigurere og administrere databaselogning
 description: Du kan spore ændringer af tabeller og felter i Dynamics 365 Human Resources med databaselogning.
-author: twheeloc
-ms.date: 12/15/2021
+author: Darinkramer
+manager: AnnBe
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066434"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417804"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurere og administrere databaselogning
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan spore ændringer af tabeller og felter i Dynamics 365 Human Resources med databaselogning. I dette emne beskrives, hvordan du kan:
 
@@ -68,22 +66,7 @@ Du kan forbedre ydeevnen ved at udvælge bestemte felter til loggen i stedet for
 Du kan bruge guiden **Registrering af databaseændringer** til at konfigurere databaselogning. Guiden giver en fleksibel måde at konfigurere logføring for tabeller eller felter.
 
 1. Gå til **Systemadministration > Links > Database > Opsætning af databaselog**. Vælg **Ny** for at starte guiden **Registrering af databaseændringer**.
-2. Vælg **Næste**. 
-3. På siden **Tabeller og felter** i guiden skal du vælge de tabeller og felter, hvor du vil aktivere databaselogføring, og vælge **Næste**.
-
-   > [!Note]
-   > Databaselogføring er ikke tilgængelig i alle tabeller i Human Resources-databasen. Hvis du vælger **Vis alle tabeller** under listen, udvides listen over tabeller og felter til at vise alle databasetabeller, som databaselogføring er tilgængelig for, men dette vil være en delmængde af den fulde liste over databasetabeller.
-
-4. På siden **Typer af ændringer** i guiden skal du vælge de datahandlinger, du vil spore ændringer for i hver af tabellerne og felterne, og vælge **Næste**. I tabellen nedenfor kan du se en beskrivelse af de datahandlinger, der er tilgængelige til logføring.
-5. Gennemse de ændringer, der vil blive foretaget, på siden **Udfør**, og vælg **Udfør**.
-
-| Operation | Beskrivelse |
-| -- | -- |
-| Spor nye transaktioner | Opret en log for nye poster, der er oprettet i tabellen. |
-| Opdater | Opret en log for opdateringer af tabelposter eller opdateringer af individuelt valgte felter i tabellen. Hvis du vælger at logføre opdateringer for tabellen, oprettes der en logpost, hver gang der foretages en opdatering af et felt i en vilkårlig post i tabellen. Hvis du vælger at logføre opdateringer for bestemte felter, oprettes der kun en logpost, når der foretages opdateringer af disse felter med tabelposter. |
-| Slet | Opret en log for poster, der er slettet fra tabellen. |
-| Omdøb nøgle | Opret en logpost, når en tabelnøgle omdøbes. |
-
+2. Fuldfør guiden.
 
 ## <a name="clean-up-database-logs"></a>Rydde op i databaselogfiler
 
@@ -96,14 +79,11 @@ Du kan slette alle eller en del af databaseloggene ved hjælp af følgende indst
 Benyt følgende fremgangsmåde for at konfigurere oprydning af databaselog: 
 
 1. Gå til **Systemadministration > Links > Database > Databaselog**. Vælg **Oprydning i log**.
-2. Vælg **Filter** under overskriften **Poster, der skal indgå**.
-3. Vælg den metode, der skal bruges til at vælge de logge, der skal slettes. Angiv en af følgende indstillinger:
+
+2. Vælg en metode til valg af logge, der skal slettes, ved at angive en af følgende indstillinger:
 
    - Tabel-ID
    - Logtype
    - Dato og klokkeslæt for oprettelse
 
-4. Brug fanen **Oprydning i databaselog** til at bestemme, hvornår du vil køre oprydningsopgaven for log. Databaselogge er som standard tilgængelige i 30 dage.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+3. Brug fanen **Oprydning i databaselog** til at bestemme, hvornår du vil køre oprydningsopgaven for log. Databaselogge er som standard tilgængelige i 30 dage.

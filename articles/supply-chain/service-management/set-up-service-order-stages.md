@@ -1,35 +1,38 @@
 ---
 title: Konfigurer serviceordrestadier
 description: Konfigurer serviceordrestadier.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf05b86fe0fd08c72351ea753a97d36604a55ac9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 86d60a67b60b1bd3a13666b35f729f88ecfee3d3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580282"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424302"
 ---
 # <a name="set-up-service-order-stages"></a>Konfigurer serviceordrestadier 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Gå til **Servicestyring** \> **Opsætning** \> **Serviceordrer** \> **Servicestadier**.
+1.  Klik på **Servicestyring** \> **Opsætning** \> **Serviceordrer** \> **Servicestadier**.
 
-2.  Vælg **Ny** for at oprette en ny post.
+2.  Tryk på Ctrl+N for at oprette en ny post.
 
 3.  Indtast et servicestadie-id og en beskrivelse i felterne **Servicestadie** og **Beskrivelse**.
 
@@ -46,6 +49,3 @@ ms.locfileid: "7580282"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

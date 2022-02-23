@@ -1,27 +1,30 @@
 ---
 title: Emballage og gebyrer
 description: Dette emne indeholder oplysninger om emballagegebyrer, der betales til genbrugsfirmaer med bestemte intervaller.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72d07365a5022a67b8868232fbbb04f610701009
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902015"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424512"
 ---
 # <a name="packing-materials-and-fees"></a>Emballage og gebyrer
 
@@ -109,6 +112,3 @@ Du kan udskrive emballagevægten på en faktura og angive, hvem der skal betale 
 
 1. Gå til **Debitor \> Opsætning \> Debitorparametre**.
 1. Angiv indstillingen **Udskriv emballagevægt** til **Ja** i oversigtspanelet **Faktura** på fanen **Opdateringer**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Rapporter over budgetteret stilling for den offentlige sektor
 description: Du kan bruge rapporten oversigten over budgetteret stilling og den detaljerede rapport over budgetteret stilling til at generere oplysninger om budgetterede stillinger under en budgetplan og det scenarie, du angiver.
 author: velofog
+manager: AnnBe
 ms.date: 10/29/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c213e742b9c89218dabcf3d953512062ee9b7fe198d84e883097f1500f4c5be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10b1804dc0b4ab6ea2074108429297e4ad95deaa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715880"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407653"
 ---
 # <a name="forecast-position-reports-for-the-public-sector"></a>Rapporter over budgetteret stilling for den offentlige sektor
 
@@ -45,6 +48,3 @@ Når du opretter rapporten, vises følgende standardparametre.  Du kan bruge dis
 | Kun ikke-udfyldte | Angiv denne indstilling til Ja for at udelade stillinger, der i øjeblikket er besat. |
 | Undertryk total | Angiv denne indstilling til Ja for at udelade totaler i rapporten. |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

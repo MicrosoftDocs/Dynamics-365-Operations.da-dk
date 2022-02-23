@@ -2,29 +2,32 @@
 title: Power BI-indhold til Oversigt over kontanter
 description: Dette emne beskriver Power BI-indholdet til Oversigt over kontanter. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet.
 author: saraschi2
+manager: AnnBe
 ms.date: 07/16/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3f7e0c792df8519f3bcb2ade2e29cc4c5c8e4730
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986402"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441598"
 ---
-# <a name="cash-overview-power-bi-content"></a>Power BI-indhold til oversigt over kontanter
+# <a name="cash-overview-power-bi-content"></a>Power BI-indhold til Oversigt over kontanter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver **Oversigt over kontanter** Microsoft Power BI-indholdet. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet.
+Dette emne beskriver Power BI-indhold til **Oversigt over kontanter**. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet.
 
 ## <a name="overview"></a>Overblik
 
@@ -38,7 +41,7 @@ Følgende opsætning skal være fuldført, før der kan vises data i de visuelle
 2. Gå til **Finans > Kalendere > Regnskabskalendere** for at validere regnskabskalenderdatoer, der er tildelt den aktive tidsperiode.
 3. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**.
 4. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta samt regnskabsvaluta og bankvalutaer. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
-5. Konfigurer og kør likviditetsbudgettering. Du kan finde flere oplysninger om, hvordan du konfigurerer likviditetsbudgettering, i [Likviditetsbudget](./cash-flow-forecasting.md). 
+5. Konfigurer og kør likviditetsbudgettering. Du kan finde flere oplysninger om, hvordan du konfigurerer likviditetsbudgettering, i [Likviditetsbudget](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
 6. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **LedgerCovLiquidityMeasurement**.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
@@ -76,6 +79,3 @@ Følgende tabel viser de enheder, som Power BI-indholdet for **Oversigt over kon
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Opsummeret indgående pengestrømme, udgående pengestrømme og saldo ved hjælp af regnskabsvalutaen for hvert regnskab |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Opsummeret indgående pengestrømme, udgående pengestrømme og saldo ved hjælp af systemvalutaen for alle regnskaber |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Opsummeret nettoposteringsbeløb og saldo for valutaer ved hjælp af transaktionsvalutaen |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

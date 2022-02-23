@@ -52,6 +52,3 @@ Onboard vil automatisk tilsende den nyansatte en mail, der angiver, hvad ændrin
     ![[Overførsel af ændringerne i en onboardingskabelon til alle guider, der er oprettet ud fra den](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Ændringerne vil være synlige for nyansatte, der åbner onboardingguiderne. Onboard sender dog ikke mailbeskeder til nyansatte for at fortælle dem, at deres onboardingguide er ændret. For nem identifikation vises der et rødt **Nyt**-mærke ved siden af hver ændring. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,30 +2,36 @@
 title: Konfigurere en onlinekanal
 description: Dette emne beskriver, hvordan du opretter en ny onlinekanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 02/04/2022
+manager: annbe
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092106"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4411231"
 ---
 # <a name="set-up-an-online-channel"></a>Konfigurere en onlinekanal
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du opretter en ny onlinekanal i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Dynamics 365 Commerce understøtter flere detailkanaler. Disse detailkanaler omfatter onlinebutikker, call centre og detailbutikker (også kaldet fysiske butikker). Onlinebutikker giver kunderne mulighed for at købe produkter fra detailhandlerens onlinebutik ud over fra detailhandlerens fysiske butik.
 
@@ -52,15 +58,11 @@ Følg disse trin for at oprette en ny onlinekanal.
 
 Følgende billede viser oprettelsen af en ny onlinekanal.
 
-![Ny onlinekanal.](media/channel-setup-online-1.png)
+![Ny onlinekanal](media/channel-setup-online-1.png)
 
 Følgende billede viser et eksempel på en onlinekanal.
 
-![Eksempel på onlinekanal.](media/channel-setup-online-2.png)
-
-## <a name="assign-the-channel-to-a-commerce-scale-unit"></a>Tildele kanalen til en Commerce Scale Unit
-
-Den nye kanal skal være tildelt til en Commerce Scale Unit. Du kan finde instruktioner under [Konfigurere kanaler til brug af Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
+![Eksempel på onlinekanal](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Konfigurer sprog
 
@@ -68,7 +70,7 @@ Hvis dit e-handels-websted skal understøtte flere sprog, skal du udvide afsnitt
 
 ## <a name="set-up-payment-account"></a>Konfigurere betalingskonto
 
-Du kan tilføje en tredjepartsbetalingsudbyder i sektionen **Betalingskonto**. Du kan få oplysninger om konfiguration af en Adyen-betalingsconnector i [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md).
+Du kan tilføje en tredjepartsbetalingsudbyder i sektionen **Betalingskonto**. Du kan få oplysninger om konfiguration af en Adyen-betalingsconnector i [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Yderligere kanalopsætning
 
@@ -76,7 +78,7 @@ Yderligere opgaver, der kræves til konfiguration af onlinekanalen, omfatter kon
 
 Følgende billede viser opsætningsindstillinger til **Leveringsmetoder**, **Betalingsmetoder** og **Gruppetildeling for opfyldelse** under fanen **Opsætning** .
 
-![Yderligere handlinger til konfiguration af onlinekanal.](media/channel-setup-online-3.png)
+![Yderligere handlinger til konfiguration af onlinekanal](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Oprette betalingsmåder
 
@@ -91,7 +93,7 @@ Hvis du vil oprette betalingsmetoder, skal du udføre disse trin for hver af de 
 
 Følgende billede viser et eksempel på en metode til kontantbetaling.
 
-![Eksempel på betalingsmetoder.](media/channel-setup-retail-5.png)
+![Eksempel på betalingsmetoder](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Konfigurer leveringsmåder
 
@@ -105,7 +107,7 @@ Udfør følgende trin for at ændre eller tilføje en leveringsmetode.
 
 Følgende billede viser et eksempel på en leveringsmetode.
 
-![Konfigurer leveringsmåder.](media/channel-setup-retail-7.png)
+![Konfigurer leveringsmåder](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Konfigurer en gruppetildeling for opfyldelse
 
@@ -119,7 +121,7 @@ Gør følgende for at konfigurere en gruppetildeling for opfyldelse.
 
 Følgende billede viser et eksempel på en opsætning af en gruppetildeling for opfyldelse.
 
-![Konfigurer Gruppetildeling for opfyldelse.](media/channel-setup-retail-9.png)
+![Konfigurer Gruppetildeling for opfyldelse](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -131,7 +133,4 @@ Følgende billede viser et eksempel på en opsætning af en gruppetildeling for 
 
 [Konfigurere en callcenter-kanal](channel-setup-callcenter.md)
 
-[Dynamics 365-betalingsconnector til Adyen](./dev-itpro/adyen-connector.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Dynamics 365-betalingsconnector til Adyen](../retail/dev-itpro/adyen-connector.md)

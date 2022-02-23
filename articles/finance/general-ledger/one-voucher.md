@@ -2,30 +2,32 @@
 title: Ét bilag
 description: Ét bilag til økonomikladder (finanskladde, anlægsaktivkladde, kreditorbetalingskladde osv.) giver dig mulighed for at angive flere reskontrotransaktioner i forbindelse med et enkelt bilag.
 author: kweekley
+manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344052"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441615"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Hvad er Ét bilag?
@@ -34,45 +36,44 @@ Den eksisterende funktion til økonomikladder (finanskladde, anlægsaktivkladde,
 
 - Angiv kladdenavnet (**Finans** \> **Kladdeopsætning** \> **Kladdenavne**), så feltet **Nyt bilag** indstilles til **Kun ét bilagsnummer**. Hver linje, du føjer til kladden, inkluderes nu på det samme bilag. Derfor kan bilaget angives som et bilag med flere linjer, som en konto/modkonto på samme linje eller som en kombination.
 
-    [![Enkelt linje.](./media/same-line.png)](./media/same-line.png)
+    [![Enkelt linje](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Definitionen af Ét bilag omfatter **ikke** tilfælde, hvor kladdenavne er angivet som **Kun ét bilagsnummer**, og hvor brugeren derefter angiver et bilag, som kun omfatter finanskontotyper. I dette emne betyder Ét bilag, at der er er et enkelt bilag, der indeholder mere end én kreditor, debitor, bank, ét anlægsaktiv eller projekt.
 
 - Angiv et bilag med flere linjer, hvor der ikke er nogen modkonto.
 
-    [![Bilag med flere linjer.](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Bilag med flere linjer](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Angiv et bilag, hvor både på kontoen og modkontoen indeholder en reskontrokontotype, som f.eks. **Kreditor**/**Kreditor**, **Debitor**/**Debitor**, **Kreditor**/**Debitor** eller **Bank**/**Bank**.
 
-    [![Reskontrobilag.](./media/subledger.png)](./media/subledger.png)
+    [![Reskontrobilag](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Problemer med ét bilag
 
-Funktionen ét bilag forårsager problemer under udligning, momsberegning, tilbageførsel af postering, afstemning af en reskontrokladde til Finans, regnskabsaflæggelse og meget mere. (Du kan finde flere oplysninger om problemer, der kan opstå under udligning, f.eks. i [Enkelt bilag med flere debitor- eller kreditorposter](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).) For at kunne fungere og rapportere korrekt kræver disse processer og rapporter transaktionsdetaljer. Selvom nogle scenarier stadig kan fungere korrekt, afhængigt af organisationens opsætning, er der ofte problemer, når flere posteringer angives i ét bilag.
+Funktionen ét bilag forårsager problemer under udligning, momsberegning, tilbageførsel af postering, afstemning af en reskontrokladde til Finans, regnskabsaflæggelse og meget mere. (Du kan finde flere oplysninger om problemer, der kan opstå under udligning, f.eks. i [Enkelt bilag med flere debitor- eller kreditorposter](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) For at kunne fungere og rapportere korrekt kræver disse processer og rapporter transaktionsdetaljer. Selvom nogle scenarier stadig kan fungere korrekt, afhængigt af organisationens opsætning, er der ofte problemer, når flere posteringer angives i ét bilag.
 
 Du bogfører f.eks. følgende bilag med flere linjer.
 
-[![Eksempel på et samkøbsbilag.](./media/example.png)](./media/example.png)
+[![Eksempel](./media/example.png)](./media/example.png)
 
 Du genererer derefter rapporten **Udgifter efter kreditor** i arbejdsområdet **Økonomisk indsigt**. I denne rapport er udgiftskontosaldi grupperet under kreditorgruppe og derefter kreditor. Når rapporten genereres, kan systemet ikke bestemme, hvilke kreditorgrupper/kreditorer der medførte udgiften på 250,00. Da der mangler transaktionsdetaljer, antager systemet, at hele udgiften på 250,00 vedrører den første kreditor, der findes i bilaget. Derfor vises udgiften på 250,00, der er inkluderet i saldoen for hovedkontoen 600120, under den pågældende kreditorgruppe/kreditor. Det er dog meget sandsynligt, at den første kreditor i bilaget ikke er den korrekte kreditor. Derfor er rapporten sandsynligvis forkert.
 
-[![Rapport over udgifter efter kreditor.](./media/expenses.png)](./media/expenses.png)
+[![Udgifter](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Fremtiden for ét bilag
 
-På grund af de problemer, der kan forekomme, når der bruges ét bilag, vil denne funktion med tiden blive frarådet. Men da der er nogle funktionsmæssige kløfter, som er afhængige af denne funktion, udfases funktionen ikke på én gang. I stedet bruges følgende tidsplan:
+På grund af de problemer, der tidligere blev nævnt, udfases funktionen Ét bilag. Men da der er nogle funktionsmæssige huller, som er afhængige af denne funktion, udfases funktionen ikke på én gang. I stedet bruges følgende tidsplan:
 
-- **Versionen foråret 2018** – Denne funktion var deaktiveret som standard via parameteren **Tillad flere transaktioner i ét bilag** under fanen **Generelt** på siden **Finansparametre**. Men du kan aktivere funktionen igen, hvis organisationen har et scenario, der falder i et af de funktionsmæssige kløfter, der er angivet senere i dette emne.
+- **Versionen foråret 2018** – Som standard deaktiveres funktionen via paramereten **Tillad flere transaktioner i ét bilag** under fanen **Generelt** på siden **Finansparametre**. Men du kan aktivere funktionen, hvis organisationen har et scenario, der falder i et af de funktionsmæssige huller, der er angivet senere i dette emne.
 
-    - Hvis der ikke kræves ét bilag i dit forretningsscenarie, anbefales det, at du lader funktionen være deaktiveret. Hvis denne funktion bruges, selvom der findes en anden løsning, retter Microsoft ikke "fejl" i de områder, der identificeres senere i dette emne.
-    - Vi anbefaler, at du stopper med at bruge ét bilag til integrationer i , medmindre funktionen er påkrævet til et af de dokumenterede funktionelle kløfter.
+    - Hvis en kunde har et forretningsscenarie, der ikke kræver Ét bilag, skal kunden ikke aktivere funktionen. Microsoft retter ikke "fejl" i de områder, der identificeres senere i dette emne, hvis denne funktion bruges, selvom der findes en anden løsning.
+    - Stop med at bruge ét bilag til integrationer, medmindre funktionen er påkrævet til et af de funktionelle huller.
 
-- **Senere versioner** – Flere af disse forretningskrav kan kun opfyldes ved hjælp af ét bilag. Microsoft skal sikre, at alle de identificerede forretningskrav stadig kan opfyldes i systemet, når funktionaliteten frarådes. Derfor vil der sandsynligvis skulle tilføjes nye funktioner for at udfylde funktionelle kløfter. Microsoft kan ikke tilbyde en bestemt løsning, da de enkelte funktionskløfter er forskellige og skal evalueres ud fra forretningsbehovet. Nogle funktionelle kløfter vil sandsynligvis blive erstattet af funktioner, der er med til at opfylde bestemte forretningsbehov. Andre huller kan dog udfyldes ved fortsat at gøre det muligt at angive oplysninger i en kladde, som ved anvendelse af ét bilag, men systemet kan efterhånden spore flere detaljer efter behov.
+- **Senere versioner** – Alle funktionsmæssige huller bliver lukket. **Når de funktionsmæssige huller er fjernet, og nye funktioner er leveret, det vil vare mindst ét år før funktionen Ét bilag er permanent deaktiveret**, fordi kunder og uafhængige softwareleverandører (ISV'er) skal have tilstrækkelig tid til at reagere på de nye funktioner. For eksempel skal de muligvis opdatere deres forretningsprocesser, enheder og integrationer.
 
-Når alle funktionelle kløfter er udfyldt, kommunikerer Microsoft, at det frarådes at bruge funktionen. Afskrivningen vil dog ikke være gældende i mindst ét år efter den pågældende kommunikation. Selvom Microsoft ikke kan give et præcist estimat over, hvornår funktionen Ét bilag frarådes, vil der højst sandsynligt gå to år, før afskrivningen finder sted. Microsofts politik er at holde mindst 12 måneder mellem ofring af forældet funktionalitet og den faktiske afskrivning, så kunder og uafhængige softwareleverandører har tid til at reagere på ændringen. For eksempel skal en organisation muligvis opdatere forretningsprocesser, enheder og integrationer.
-
-Når ét bilag afskrives, er det en vigtig ændring, der kommunikeres i vidt omfang. Som en del af denne kommunikation vil Microsoft opdatere dette emne, skrive et blog-opslag på Microsoft Dynamics 365 Finance-bloggen, opdatere emnet "Fjernede eller forældet funktioner", kommunikere ændringen på det relevante Microsoft-websted osv.
+> [!IMPORTANT]
+> Indstillingen **Kun ét bilagsnummer** er **ikke** blevet fjernet fra opsætningen af kladdenavne. Denne indstilling understøttes stadig, når bilaget kun indeholder finanskontotyper. Debitorer skal være omhyggelige, når de bruger denne indstilling, da bilaget ikke bogføres, hvis de bruger indstillingen **Kun ét bilagsnummer** og derefter angiver mere end én debitor, kreditor, bank, anlægsaktiv eller projekt. Desuden kan debitorer stadig angive en blanding af kontotyper for reskontrokladder, f.eks. en betaling i et enkelt bilag, der indeholder kontotyperne **Kreditor**/**Bank**.
 
 ## <a name="why-use-one-voucher"></a>Hvorfor bruge ét bilag?
 
@@ -82,8 +83,8 @@ Baseret på samtaler med kunderne, har Microsoft samlet følgende liste over de 
 
 Følgende scenarier kan kun udføres ved hjælp af funktionen ét bilag. Hvis din organisation har et af disse scenarier, skal du aktivere flere transaktioner, der skal angives i et bilag, ved at ændre indstillingen af parameteren **Tillad flere transaktioner i ét bilag** på siden **Finansparametre**. Disse funktionsmæssige huller udfyldes via andre funktioner i senere versioner.
 
-> [!NOTE]
-> [For hver af følgende situationer skal **Tillad flere posteringer inden for ét bilagsfelt** være angivet til Ja i oversigtspanelet **Generelt** på siden **Finansparametre**.]
+> [!Note]
+> [For hver af følgende situationer skal feltet **Tillad flere posteringer inden for ét bilagsfelt** være indstillet til Ja på oversigtspanelet **Generelt** på siden **Finansparametre**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bogføre kreditor- eller debitorbetalinger i oversigtsform til en bankkonto
 
@@ -116,7 +117,15 @@ I dette scenario er debitorerne i det enkelte bilag den samme debitor, fordi tra
 Hvis den periodiske refusionsopgave køres fra debitormodulet, oprettes der en postering for at flytte saldoen fra en debitor til en kreditor. I dette scenario skal Ét bilag bruges til at refundere kunden.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Vedligeholdelse af anlægsaktiver: Catch-up-afskrivning, opdelt aktiv, beregne afskrivning ved salg
-Med version 10.0.21 og senere oprettes der anlægsaktivposteringer til catch-up-afskrivning, opdeling af et aktiv og beregning af afskrivning ved bortskaffelse af et aktiv ved hjælp af forskellige bilagsnumre.
+De følgende anlægsaktivposteringer kan også oprette flere transaktioner i et enkelt bilag:
+
+- Der foretages en yderligere anskaffelse til et aktiv, og "catch-up"-afskrivning beregnes.
+- Et aktiv opdeles.
+- En parameter til at beregne afskrivning på kassation aktiveres, og derefter kasseres anlægsaktivet.
+- Et aktivs servicedato ligger før anskaffelsesdatoen. Derfor bogføres en afskrivningsregulering.
+
+> [!Note]
+> Når du indtaster transaktioner, skal du kontrollere, at alle transaktioner gælder for det samme anlægsaktiv. Bilaget bogføres ikke, hvis det indeholder mere end ét anlægsaktiv, selvom feltet **Nyt bilag** kun er angivet som ét bilagsnummer på siden **Kladdenavne** i Finans. Hvis du medtager mere end ét anlægsaktiv i bilaget, vises meddelelsen **Der kan kun være én anlægsaktivpostering pr. bilag**, og du kan ikke bogføre bilaget.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a>Veksler og egenveksler
 Veksler og egenveksler kræver, at Ét bilag bruges, fordi posteringerne flytter debitor- eller kreditorsaldoen fra én debitor/konti- finanskonto til en anden, baseret på status for betalingen.
@@ -177,6 +186,3 @@ Hvis der skal foretages en korrektion af Debitor- eller Kreditorkontoen i Finans
 ### <a name="the-system-allows-it"></a>"Systemet tillader det"
 
 Organisationer bruger ofte udelukkende funktionen ét bilag, fordi systemet lader dem bruge den, uden at de forstår konsekvenserne.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

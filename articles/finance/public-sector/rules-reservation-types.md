@@ -2,24 +2,27 @@
 title: Konfigurere regler for generel budgetreservation og reservationstyper
 description: I dette emne beskrives, hvordan du kan konfigurere og redigere regler for generelle budgetreservationer og reservationstyper til den offentlige sektor.
 author: AlexRenney
+manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 0aee308826c3e0069d0c9c52f70eedf4fe0d59ed5ba70100869755eb747685ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 454d79d56801b1bff228e957b34807acc4fad684
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727202"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407647"
 ---
 # <a name="set-up-general-budget-reservation-rules-and-reservation-types"></a>Konfigurere regler for generel budgetreservation og reservationstyper
 
@@ -32,7 +35,7 @@ Offentlige institutioner bruger ofte generelle budgetreservationer til at sætte
 
 Følgende illustration viser, hvordan du konfigurerer systemet til at bruge generelle budgetreservationer. Hvert nummereret trin svarer til et afsnit i dette emne.
 
-![Opsætning af generel budgetreservation.](media/gbr-rules-reservations-process.jpg "Opsætning af generel budgetreservation")
+![Opsætning af generel budgetreservation](media/gbr-rules-reservations-process.jpg "Opsætning af generel budgetreservation")
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -159,6 +162,3 @@ Hvis du ikke har adgang til de sider, der bruges til at fuldføre denne opgave, 
 |---------------------------|---------------------------------------------------------------|
 | Licenskonfigurationsnøgle | Offentlig sektor \> Generel budgetreservation                   |
 | Sikkerhedsroller            | Du skal være medlem af sikkerhedsrollen **Budgetchef**. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

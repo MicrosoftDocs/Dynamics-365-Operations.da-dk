@@ -1,10 +1,12 @@
 ---
 title: Grovplanlægning
 description: Dette emne indeholder en beskrivelse af grovplanlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574563"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966399"
 ---
 # <a name="operations-scheduling"></a>Grovplanlægning
 
@@ -74,12 +76,10 @@ Når du kører grovplanlægning, kan du annullere visse dele af ruteplanlægning
 ## <a name="finite-materials"></a>Materialebegrænsning
 Hvis du arbejder med materialebegrænsning, afhænger planlægningen også af tilgængeligheden af de materialer, der skal bruges til produktion. Hvis de tilgængelige komponenter ikke er tilstrækkelige til produktionen, kan produktionen forsinkes. Du kan basere planlægningen på brugen af materialer ved at angive de materialer, der skal være tilgængelige til produktionen. Når du optimerer både ressourcekapacitet og tilgængeligheden af materialer, beregnes produktion i overensstemmelse med disse begrænsninger. En produktionsordre kan ikke planlægges til at starte, før kapacitet og materialer er tilgængelige på samme tid og i de krævede mængder.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Indstillinger for grovplanlægning](operation-scheduling-options.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,43 +1,47 @@
 ---
 title: Eksempel på reduktionsdage
 description: Eksempel på reduktionsdage.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97fb032d02df1dbedaeccec14496cb1d63e8cf70
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 87c46cd7ee7410e1c7cb88868cd19f5075482f8c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567937"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424372"
 ---
-# <a name="reduction-days-example"></a>Eksempel på reduktionsdage
+# <a name="reduction-days-example"></a>Eksempel på reduktionsdage 
 
 [!include [banner](../includes/banner.md)]
+
 
 Du har oprettet en abonnementspostering for en kundes vedligeholdelsesabonnement som vist i tabellen nedenfor.
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -65,20 +69,21 @@ Du har oprettet en abonnementspostering for en kundes vedligeholdelsesabonnement
 </tbody>
 </table>
 
+
 Kunden rapporterer, at der ikke er behov for servicedækning i to dage (d. 10. og 11. marts). Du indvilliger i at reducere abonnementet med disse to dage.
 
 Du opretter en ny postering af typen **Reduktionsdage** som vist i tabellen nedenfor.
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -106,10 +111,13 @@ Du opretter en ny postering af typen **Reduktionsdage** som vist i tabellen nede
 </tbody>
 </table>
 
+
 Når posteringerne for marts 2011 faktureres, reduceres salgsprisen på EUR 200 med EUR 12,90. Det beløb, der kan faktureres for abonnementsposteringen, er derfor EUR 187,10, og der faktureres to posteringer til et samlet beløb på EUR 187,10.
 
 ## <a name="see-also"></a>Se også
 
 [Reducere dagene på abonnementsgebyrer](reduce-the-days-on-subscription-fees.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+  
+
+

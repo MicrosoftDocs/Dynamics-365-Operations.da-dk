@@ -2,9 +2,11 @@
 title: Arbejdsopdeling
 description: Dette emne indeholder oplysninger om arbejdsopdelingsfunktionen. Med denne funktionalitet kan du opdele store arbejdsordrer i flere mindre arbejdsordrer, som du derefter kan tildele til flere lagermedarbejdere. På denne måde kan det samme arbejde plukkes samtidig af flere lagermedarbejdere.
 author: mirzaab
+manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -12,17 +14,15 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 8a530f3887c3c66295177d480a8c486dd0984153
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778251"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965521"
 ---
 # <a name="work-split"></a>Arbejdsopdeling
-
-[!include [banner](../includes/banner.md)]
 
 Med arbejdsopdelingsfunktionen kan du opdele store arbejds-id'er (dvs. arbejdsordrer med flere linjer) i flere mindre arbejds-id'er, som du derefter kan tildele til flere lagermedarbejdere. På denne måde kan det samme arbejdsnummer plukkes samtidig af flere lagermedarbejdere.
 
@@ -33,9 +33,9 @@ Med arbejdsopdelingsfunktionen kan du opdele store arbejds-id'er (dvs. arbejdsor
 
 Før du kan bruge funktionen til opdeling af arbejde, skal du aktivere funktionen og dens forudsætning i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov.
 
-Først skal du aktivere den forudsætningsfunktionen *Blokering af arbejde i hele organisationen*, hvis den ikke allerede er aktiveret. Fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen. I [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) vises funktionen dog stadig på følgende måde:
+Først skal du aktivere den forudsætningsfunktionen *Blokering af arbejde i hele organisationen*, hvis den ikke allerede er aktiveret. I arbejdsområdet **Funktionsstyring** vises denne funktion på følgende måde:
 
-- **Modul:** *Warehouse Management*
+- **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Blokering af arbejde i hele organisationen*
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Funktionen *Arbejdsopdeling* føjer følgende to knapper til fanen **Arbejde** i
 - **Opdel arbejde** – Opdel det aktuelle arbejds-id i flere mindre arbejds-id'er, der kan behandles af særskilte arbejdere.
 - **Annuller arbejdsopdelt session** – Annuller den arbejdsopdelte session, og gør arbejdet tilgængeligt for behandling.
 
-![Knapperne Opdel arbejde og Annuller arbejdsopdelt session.](media/Work_split_buttons.png "Knapperne Opdel arbejde og Annuller arbejdsopdelt session")
+![Knapperne Opdel arbejde og Annuller arbejdsopdelt session](media/Work_split_buttons.png "Knapperne Opdel arbejde og Annuller arbejdsopdelt session")
 
 > [!IMPORTANT]
 > Knappen **Opdel arbejde** er ikke tilgængelig, hvis en eller flere af følgende betingelser er opfyldt:
@@ -69,7 +69,7 @@ Funktionen *Arbejdsopdeling* føjer følgende to knapper til fanen **Arbejde** i
 >
 > - Arbejdet opdeles i øjeblikket af en anden bruger. Hvis du forsøger at åbne opdelingssiden for arbejde, der allerede er ved at blive opdelt af en anden bruger, får du vist følgende fejlmeddelelse: "Arbejdet med id \#\#\#\# er ved at blive opdelt. Prøv igen om et par minutter. Hvis du fortsætter med at modtage denne meddelelse, skal du kontakte en tilsynsførende".
 
-En ny årsag til arbejdsblokering, *Opdelt arbejde*, angiver, hvornår arbejds-id'et er ved at blive opdelt. Det vises både på siden **Opdel arbejde** og i mobilappen Lokationsstyring, hvis en bruger forsøger at køre arbejdet. Når der bruges blokeringsårsager, ændres navnet på feltet **Blokeret bølge** fra arbejds-id'et til **Blokeret**.
+En ny årsag til arbejdsblokering, *Opdelt arbejde*, angiver, hvornår arbejds-id'et er ved at blive opdelt. Det vises både på siden **Opdel arbejde** og i lagerstedsappen, hvis en bruger forsøger at køre arbejdet. Når der bruges blokeringsårsager, ændres navnet på feltet **Blokeret bølge** fra arbejds-id'et til **Blokeret**.
 
 ## <a name="initiate-a-work-split"></a>Starte en opdeling af arbejde
 
@@ -96,7 +96,7 @@ Hvis du vil opdele arbejdet, skal du følge disse trin.
 
     Feltet **Årsag til blokering af arbejde** for det aktuelle arbejde vil blive indstillet til *Opdelt arbejde*, og arbejdet vil blive blokeret.
 
-    ![Blokeringsårsag.](media/Blocking_reason.png "Blokeringsårsag")
+    ![Blokeringsårsag](media/Blocking_reason.png "Blokeringsårsag")
 
 1. Vælg de linjer, der skal fjernes fra det aktuelle arbejds-id, og føj dem til et nyt arbejds-id. Følgende hændelser forekommer:
 
@@ -147,13 +147,10 @@ Hvis du vil afslutte opdeling af arbejde, skal blokeringsårsagen *Opdel arbejde
 
 Når blokeringsårsagen *Opdel arbejde* er fjernet, kan arbejdet køres på mobilenheden, hvis den **blokerede** tilstand er angivet til *Nej* på arbejds-id'et.
 
-## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Brugerblokering på mobilappen Lokationsstyring
+## <a name="user-blocking-on-the-warehouse-app"></a>Brugerblokering på lagerstedsappen
 
-Hvis du forsøger at bruge mobilappen Lokationsstyring til at køre plukarbejde på et arbejds-id, der er ved at blive opdelt, får du vist følgende fejlmeddelelse: "Arbejdet med id \#\#\#\# er ved at blive opdelt". Hvis du modtager denne meddelelse, skal du vælge **Annuller**. Du kan derefter fortsætte med at behandle andet arbejde.
+Hvis du forsøger at bruge lagerstedsappen til at køre plukarbejde på et arbejds-id, der er ved at blive opdelt, får du vist følgende fejlmeddelelse: "Arbejdet med id \#\#\#\# er ved at blive opdelt". Hvis du modtager denne meddelelse, skal du vælge **Annuller**. Du kan derefter fortsætte med at behandle andet arbejde.
 
 ## <a name="other-blocked-operations"></a>Andre blokerede handlinger
 
 Handlinger, der redigerer arbejdslinjer, arbejdslagertransaktioner eller genopfyldningslinks, der er relateret til det arbejde, der opdeles, mislykkes, og følgende fejlmeddelelse vises: "Arbejdet med id \#\#\#\# er ved at blive opdelt".
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

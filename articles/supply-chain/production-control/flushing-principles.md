@@ -2,25 +2,28 @@
 title: Rydningsprincipper
 description: I dette emne beskrives de fire rydningsprincipper, der bruges ved forbrug af råmaterialer.
 author: johanhoffmann
+manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7f644f26098bf7ac7d13292d6fbabb09a488d61e29fcd5fbd3cf0d261f0529bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f7546b70ddef30d88a79b00fe31d4e82d9bfb9b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768017"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424563"
 ---
 # <a name="flushing-principles"></a>Rydningsprincipper
 
@@ -30,7 +33,7 @@ Rydningsprincipperne afspejler forskellige forbrugsstrategier for råvarer, der 
 
 Inden materialeforbruget flyttes materialerne til indlagringslokationen. Følgende illustration viser processen.
 
-[![scenario4a.](./media/scenario4a.png)](./media/scenario4a.png)
+[![scenario4a](./media/scenario4a.png)](./media/scenario4a.png)
 
 1. Materialelagersted
 2. Råvarepluk
@@ -60,6 +63,3 @@ Rydningsprincippet Afslut angiver, at materialer automatisk forbruges, når prod
 
 ### <a name="available-at-location"></a>Disponibel på lokation
 Rydningsprincippet Disponibel på lokation angiver, at materialet forbruges automatisk, når det er registreret som plukket til produktion. Materialet registreres som plukket fra lokation, når arbejdet for råvareplukningen er fuldført, eller når materialet er tilgængeligt på produktionens indlagringslokation, og materialelinjen er frigivet til lageret. Pluklisten, der oprettes under processen, bogføres i et batchjob. Dette princip er relevant, hvis du f.eks. har mange plukaktiviteter for én produktionsordre. Hvis det er tilfældet, behøver du ikke at foretage en manuel opdatering af pluklisten, og du kan få en aktuel visning af IGVA-saldoen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

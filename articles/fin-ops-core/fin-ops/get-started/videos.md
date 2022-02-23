@@ -2,9 +2,11 @@
 title: Videoer
 description: Denne side viser Microsoft-oprettede "Sådan gør du"-videoer og tekniske videoer vedrørende Finance and Operations-apps, som er tilgængelige på YouTube og andre websteder.
 author: sericks007
-ms.date: 09/15/2021
+manager: AnnBe
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487985"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797869"
 ---
 # <a name="videos"></a>Videoer 
 
@@ -34,6 +36,7 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 ### <a name="data-integration"></a>Dataintegration
 
+- [Kundeemne til kontant-integration](https://youtu.be/AVV9x5x-XCg)
 - [Synkronisere en arbejdsordre mellem Dynamics 365 for Field Service og Finance and Operations-apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Datastyring
@@ -83,12 +86,12 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videoer til Dynamics 365 Finance
 
-### <a name="business-document-management"></a>Styring af forretningsdokumenter
-- [Oprette et nyt forretningsdokument ved hjælp af Styring af forretningsdokumenter](https://www.youtube.com/watch?v=gAIYl-mM_pw)
-
 ### <a name="customize-the-app"></a>Tilpasse appen
 - [Tilføj brugerdefinerede felter](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Integrere Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
+
+### <a name="expenses"></a>Udgifter
+- [Udgiftsangivelsesoplevelse](https://youtu.be/Ocy-MsTvEE0)
 
 ### <a name="financial-reporting"></a>Økonomirapportering
 - [Finde versionen af Rapportdesigner](https://www.youtube.com/embed/icfA5Q3kp4w)
@@ -115,12 +118,9 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Videoer til Dynamics 365 Supply Chain Management
 
-### <a name="business-document-management"></a>Styring af forretningsdokumenter
-- [Oprette et nyt forretningsdokument ved hjælp af Styring af forretningsdokumenter](https://www.youtube.com/watch?v=gAIYl-mM_pw)
-
 ### <a name="costs"></a>Omkostninger
 - [Mobilarbejdsområde for omkostningsstyring](https://youtu.be/imsuTg8rUVk)
-- [Start her til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
+- [Introduktion til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
 - [Bruge Excel til omkostningsanalyse](https://youtu.be/-HKHYdClvx8)
 
 ### <a name="customer-portal"></a>Kundeportal
@@ -167,6 +167,3 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 [Tekniske oplysninger om FastTrack](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) fokuserer på at levere teknisk dybde og bedste fremgangsmåder, der giver kunder og partnere detaljeret viden, der er specifik for emneområder.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

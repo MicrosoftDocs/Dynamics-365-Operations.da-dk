@@ -1,10 +1,12 @@
 ---
 title: Designe konfigurationer til at generere dokumenter, der har programdata
-description: I dette emne forklares det, hvordan du designer konfigurationer af elektronisk rapportering (ER) for at generere et elektronisk dokument. (Del 1 – Importere konfigurationer).
+description: For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Generere dokumenter med opdatering til programdata (Del 1 - Importere konfigurationer).
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f335721ee97919af20e73fc9da6c9bf07dcae50aca8f8904d144d75c2f4d7b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d099836ba00ffa1d4fd002af4ac3e6045b41c6a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726255"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684589"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Designe konfigurationer til at generere dokumenter, der har programdata
 
@@ -56,6 +58,3 @@ Før du begynder, skal du ændre landekonteksten for DEMF firmaet fra DEU (Tyskl
 10. Luk siden.
 11. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

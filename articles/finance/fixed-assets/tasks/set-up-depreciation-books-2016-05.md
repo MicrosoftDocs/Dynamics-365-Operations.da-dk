@@ -1,24 +1,27 @@
 ---
 title: 'Konfigurere afskrivningsmodeller '
 description: Denne procedure gennemgår processen med at oprette en ny afskrivningsmodel og knytte den til en anlægsaktivgruppe.
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepBookTable, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 42b8a15ac60fd2620c600d78b84a25e3caf6d2bf
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 03f915fa91e0eeff2f26ab9a60bbd5118317e853
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883614"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441632"
 ---
 # <a name="set-up-depreciation-books"></a>Konfigurere afskrivningsmodeller  
 
@@ -52,6 +55,3 @@ Denne procedure gennemgår processen med at oprette en ny afskrivningsmodel og k
 6. Angiv et tal i feltet Levetid.
     * Bemærk, at værdien i Afskrivningsperioder beregnes efter angivelse af levetid.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

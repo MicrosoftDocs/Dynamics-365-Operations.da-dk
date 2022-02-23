@@ -2,25 +2,28 @@
 title: Importere valutakurser
 description: Dette emne indeholder oplysninger om kravene til import af referencekurser for udenlandsk valuta, der udgives af valutakursudbydere.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f96622132be3c8a404f3f4e9c34f3ac5085a4fdc007ecb627d06a95d7c80932b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74acfab28d45fc75c4ecd595aeba1fb1e13bbcff
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727318"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441642"
 ---
 # <a name="import-currency-exchange-rates"></a>Importere valutakurser
 
@@ -33,8 +36,9 @@ I følgende afsnit beskrives strømmen af oplysninger, der bruges til konfigurat
 ## <a name="configure-an-exchange-rate-provider"></a>Konfigurere en valutakursudbyder
 Før du kan importere valutakurser, skal du angive de oplysninger, der kræves af de udbydere, som tilbyder valutakurserne. Brug siden **Konfigurer valutakursudbydere** til at vælge valutakursudbyderne. Nogle udbydere er inkluderet i demodataene i Dynamics 365 Finance. Følgende tabel indeholder en beskrivelse af kontrolelementerne på denne side.
 
-| Felt | Betegnelse                   |
-|-----------|-----------------------------------|
+|           |                                                                                                                                                                                                                             |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Felt** | **Beskrivelse**                                                                                                                                                                                                             |
 | **Navn**  | Navnet på valutakursudbyderen.                                                                                                                                                                                     |
 | **Nøgle**   | Det entydige id for hver konfigurationsoplysning, der er krævet af udbyderen. Disse oplysninger tilføjes automatisk for hver valutakursudbyder, som du tilføjer. |
 | **Value** | Oplysninger for hver nøgle. Disse oplysninger tilføjes for hver valutakursudbyder, som du tilføjer.                                                                                         |
@@ -42,8 +46,9 @@ Før du kan importere valutakurser, skal du angive de oplysninger, der kræves a
 ## <a name="import-currency-exchange-rates"></a>Importere valutakurser
 Du kan importere valutakurser fra valutakursudbyderkilden og tilføje dem på siden **Valutakurser**. Brug siden **Importer valutakurser** side til at importere valutakurserne. Tabellen nedenfor indeholder beskrivelser af de felter, der er nødvendige for at fuldføre importprocessen.
 
-| Felt | Betegnelse                   |
-|-----------|-----------------------------------|
+|                                        |                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Felt**                              | **Beskrivelse**                                                                                                                                                                                                                                                                                                                                                             |
 | **Valutakurstype**                 | En valutakurstype.                                                                                                                                                                                                                                                                                                                                                      |
 | **Valutakursudbyder**             | En valutakursudbyder.                                                                                                                                                                                                                                                                                                                                                  |
 | **Importér fra og med**                       | Denne parameter styrer, om der skal importeres pr. dags dato eller et specifikt datointerval. Hvis du vil bruge et datointerval, skal du angive start- og slutdatoer.                                                                                                                                                                                                                |
@@ -51,6 +56,3 @@ Du kan importere valutakurser fra valutakursudbyderkilden og tilføje dem på si
 | **Ignorer eksisterende valutakurser**   | Dette afkrydsningsfelt styrer opdatering af den eksisterende valutakurs for et valutapar, når valutakursen for en bestemt dato allerede findes. Hvis du ikke markerer dette afkrydsningsfelt, bliver valutakursen for de bestemte datoer ikke importeret, hvis der allerede findes en anden valutakurs.                                                                                       |
 | **Undgå import på helligdag** | Dette afkrydsningsfelt styrer importen af valutakursen for en dato, der er en helligdag. For eksempel, hvis du markerer dette afkrydsningsfelt og bruger den Europæiske Centralbank som valutakursudbyder, opdaterer systemet ikke valutakursen på en helligdag, der er relateret til den aktuelle juridiske enhed. Denne indstilling er muligvis ikke tilgængelige for alle udbydere. |
 | **Kurs fra den forrige dag** | Dette afkrydsningsfelt er tilgængeligt, hvis du aktiverer funktonen **ECB-import på den aktuelle eller tidligere dato** på siden **Administration af funktioner**. Dette afkrydsningsfelt er kun tilgængeligt for udbyderen *Den Europæiske Centralbank*. Markér dette afkrydsningsfelt for at importere den valutakurs, der udgives af Den Europæiske Centralbank, den forrige arbejdsdag kl. ca. 16:00 CET. Afkrydsningsfeltet er som standard markeret. Fjern markeringen i dette afkrydsningsfelt for at importere den valutakurs, der er udgivet den samme arbejdsdag.  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

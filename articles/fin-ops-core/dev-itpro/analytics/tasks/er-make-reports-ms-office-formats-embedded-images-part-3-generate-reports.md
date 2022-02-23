@@ -1,10 +1,12 @@
 ---
 title: Generere rapporter i Office-format, der har integrerede billeder
-description: Dette emne viser, hvordan du designer elektroniske rapporteringskonfigurationer (ER) for at generere elektroniske dokumenter i Excel- og Word-format, der indeholder integrerede billeder.
+description: Følgende trin beskriver, hvordan en bruger i rollen som enten "Systemadministrator" eller "Udvikler af elektronisk rapportering" kan designe konfigurationer til elektronisk rapportering (ER) med henblik på oprettelse af elektroniske dokumenter i MS Office-formater (Excel og Word), der indeholder integrerede billeder.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ec9f3013c1e365a3ca1a4c6cabe71a22e3e8b730eac38155ef023fe68107524
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735520"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684373"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generere rapporter i Office-format, der har integrerede billeder
 
@@ -117,6 +119,3 @@ I dette eksempel skal du bruge oprettede ER-konfigurationer for eksempelfirmaet 
 23. Klik på OK.
     * Gennemse det oprettede output. Outputtet er oprettet som et Word-dokument med integrerede billeder, der viser firmaets logo, en autoriseret persons signatur og den markerede tekst i vandmærket.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

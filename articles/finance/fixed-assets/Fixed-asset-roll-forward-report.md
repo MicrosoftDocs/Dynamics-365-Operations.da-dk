@@ -1,10 +1,12 @@
 ---
 title: Rapporten Rul anlægsaktiver fremad
 description: Dette emne forklarer, hvordan du kan bruge rapporten Rul anlægsaktiver fremad.
-author: moaamer
+author: saraschi2
+manager: ''
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b0c0c8b1a33041e266ce266dc79b29c8a7dbfa14
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: b91da4679a23ba0a70c18e2bcae1b7f757f661ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883587"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969147"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rapporten Rul anlægsaktiver fremad
 
@@ -28,7 +30,7 @@ ms.locfileid: "7883587"
 
 Rapporten **Rul anlægsaktiver fremad** indeholder, i et letlæseligt Microsoft Excel-format, de detaljerede data om anlægsaktiver, du har brug for til lukning af periode, regnskaber og skatterapportering. Rapporten omfatter start- og slutsaldi for anlægsaktiver, sammen med værdibevægelser for perioden, og eventuelle nye anskaffelser og salg, der er opstået i løbet af perioden. Data rapporteres for de enkelte anlægsaktiver, og der opsummeres også værdierne for anlægsaktivgrupper og den juridiske enhed.
 
-Rapporten **Rul anlægsaktiver fremad** bruger strukturen til elektronisk rapportering (ER). Før du kan køre rapporten, skal modellen for anlægsaktiver og konfigurationer for fremadrulning af anlægsaktiver importeres fra Microsoft Dynamics Lifecycle Services (LCS). Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+Rapporten **Rul anlægsaktiver fremad** bruger strukturen til elektronisk rapportering (ER). Før du kan køre rapporten, skal modellen for anlægsaktiver og konfigurationer for fremadrulning af anlægsaktiver importeres fra Microsoft Dynamics Lifecycle Services (LCS). Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 Denne rapport er tilgængelig i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, eller som et hotfix til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017). Tre hotfixes, der skal anvendes på miljøer, der har versionen fra juli 2017:
 
@@ -64,6 +66,3 @@ I følgende tabel forklares de felter, der er tilgængelige på rapporten.
 |           Kassationer: Scrapværdi            |                                                                                               Scrapværdien for anlægsaktivet med en kassation – scraptransaktion.                                                                                               |
 |           Kassationer: Gevinst/tab            |                                                                                 Gevinst- eller tabsværdien beregnes som en del af kassationsposteringen for anlægsaktivet.                                                                                 |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

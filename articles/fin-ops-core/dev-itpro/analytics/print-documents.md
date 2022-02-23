@@ -1,27 +1,27 @@
 ---
 title: Oversigt over udskrivning af dokumenter
 description: Du kan udskrive dokumenter ved hjælp af enten en lokal printer eller en netværkstilsluttet enhed. Denne artikel indeholder en oversigt over, hvordan dokumenter udskrives.
-author: RichdiMSFT
+author: TJVass
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: kfend
-ms.custom:
-- "69161"
-- intro-internal
+ms.custom: 69161
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b1d64a2efeade5e9ba24f4dfe61c861f5a4cbad4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984902"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680090"
 ---
 # <a name="document-printing-overview"></a>Oversigt over udskrivning af dokumenter
 
@@ -51,10 +51,10 @@ I følgende tabel beskrives de tre primære udskrivningsscenarier.
 Eftersom løsningen varierer afhængigt af scenariet, tilbyder programmer indbyggede tjenester og værktøjer, der hjælper brugerne med at opfylde deres mål:
 
 - **Eksempel 1** understøttes af browserens gengivelse af HTML5-klienten.
-- **Eksempel 2** bruger klientprogrammer og Microsoft 365-tjenester.
+- **Scenarie 2** bruger klientprogrammer og Microsoft Office 365-tjenester.
 - **Eksempel 3** kræver understøttelse fra klientprogrammer og tjenester, der er tilknyttet Microsoft Azure.
 
-Ud over den platform, der er installeret under Azure-abonnementet, giver Finance and Opersations-programmer kunderne et integreret, oprindeligt Azure-program, der gør det lettere at bruge domænetilknyttede enheder til at udskrive dokumenter.
+Ud over den platform, der er installeret under Azure-abonnementet, giver Finance and Operations-programmer kunderne et integreret, oprindeligt Azure-program, der gør det lettere at bruge domænetilknyttede enheder til at udskrive dokumenter.
 
 ## <a name="service-overview"></a>Serviceoversigt
 Mens dokumenter, der fremstilles af de tilknyttede programmer, venter på at blive udskrevet på en netværkstilsluttet enhed, gemmes de i blob-lageret for Azure. [Installation af Dokumentets ruteplanlægningsagent for at aktivere netværksprint](install-document-routing-agent.md) bruger Azure-godkendelse til at oprette en sikker kanal for Azure-tjenesterne.
@@ -71,9 +71,6 @@ Den klientbaserede løsning lader kunder styre omfanget af deres udskrivningsbeh
 
 Følgende diagram viser de grundlæggende komponenter, der kan understøtte netværksudskrivning.
 
-[![servicekomponenter-til-netværksudskrivning\_2016.](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+[![servicekomponenter-til-netværksudskrivning\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Bemærk, at en enkelt printer kan registreres med flere dokumentruteplanlægningsagenter. For at håndtere printerindstillingerne bruger den hostede tjeneste netværksstien, der entydigt identificerer hver netværksprinter. Når der registreres en printer af flere klienter, vises den således som et enkelt punkt på listen over printere, som er tilgængelige i programmer.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

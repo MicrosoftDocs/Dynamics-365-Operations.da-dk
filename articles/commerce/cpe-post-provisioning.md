@@ -2,30 +2,35 @@
 title: Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 description: I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
 author: psimolin
-ms.date: 12/10/2021
+manager: annbe
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913721"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410973"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
+
+## <a name="overview"></a>Overblik
 
 Fuldfør kun procedurerne i dette emne, efter dit Commerce-evalueringsmiljø er klargjort. For yderligere oplysninger om, hvordan du klargør dit Commerce-evalueringsmiljø se [Klargøre et Commerce-evalueringsmiljø](provisioning-guide.md).
 
@@ -39,7 +44,6 @@ Når dit Commerce-evalueringsmiljø er blevet klargjort fra ende til anden, skal
 1. Vælg dit miljø fra listen.
 1. Vælg **Log på miljø** i miljøoplysningerne til højre. Du bliver sendt til Commerce-hovedkontoret.
 1. Kontrollér, at den juridiske enhed **USRT** er valgt i øverste højre hjørne.
-2. Gå til **Commerce-parametre > Konfigurationsparametre**, og sørg for, at der er en post for **ProductSearch.UseAzureSearch**, der er angivet til **true**. Hvis denne post mangler, kan du tilføje denne post og køre **Kanaldatabase > Fuld synkronisering** for den Commerce Scale Unit, der er tilknyttet dit eCommerce-websted.
 
 Under klargøring af aktiviteter i Commerce-hovedkontoret skal du kontrollere, at den juridiske enhed **USRT** altid er markeret.
 
@@ -53,7 +57,7 @@ Hvis du vil knytte en arbejder til din identitet, skal du følge disse trin i Co
 1. Find og vælg følgende post i listen: **000713 - Andrew Collette**.
 1. Klik på **Commerce** i handlingsruden.
 1. Vælg **Tilknyt eksisterende identitet**.
-1. Skriv din emailadresse i feltet **Email** til højre for **Søg ved hjælp af email**.
+1. Skriv din mailadresse i feltet **E-mail** til højre for **Søg ved hjælp af e-mail**.
 1. Vælg **Søg**.
 1. Vælg posten med dit navn.
 1. Vælg **OK**.
@@ -95,7 +99,7 @@ Følg disse trin for at aktivere job i Commerce.
 
     De resterende trin i denne procedure skal fuldføres for hvert af følgende job:
 
-    * Behandling af email-besked om detailordre
+    * Behandling af e-mail-besked om detailordre
     * Produkttilgængelighed
     * P-0001
     * Synkroniser ordrejob
@@ -107,15 +111,9 @@ Følg disse trin for at aktivere job i Commerce.
     1. Klik på **Batchjob** i handlingsruden, og vælg **Skift status**.
     1. Vælg **Annullering**, og vælg derefter **OK**.
 
-1. Hvis status for jobbet er **Tilbageholdt**, skal du gøre følgende:
-
-    1. Vælg posten.
-    1. Klik på **Batchjob** i handlingsruden, og vælg **Skift status**.
-    1. Vælg **Afventer**, og vælg derefter **OK**.
-
 Du kan også vælge at angive gentagelsesintervallet til et (1) minut for følgende job:
 
-* Behandling af job med emailbesked om detailordre
+* Behandling af job med e-mailbesked om detailordre
 * P-0001-job
 * Synkroniser ordrejob
 
@@ -135,7 +133,7 @@ Følg disse trin for at køre fuld datasynkronisering i Commerce-hovedkontor.
 Du kan bruge følgende disse testkreditkortoplysninger til at udføre testtransaktioner på webstedet:
 
 - **Kortnummer:** 4111-1111-1111-1111
-- **Udløbsdato** 10/30
+- **Udløbsdato** 10/20
 - **Kontrolcifrene på kreditkortet (CVV):** 737
 
 > [!IMPORTANT]
@@ -146,9 +144,6 @@ Du kan bruge følgende disse testkreditkortoplysninger til at udføre testtransa
 Når klargørings- og konfigurationstrinnene er fuldførte, kan du begynde at bruge dit evalueringsmiljø. Brug Site Builder-URL-adressen for Commerce-webstedet til at gå til oprettelsesoplevelsen. Brug URL-adressen for Commerce-webstedet for at gå til detailkundewebstedet.
 
 Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, se [Konfigurere valgfrie funktioner til et Commerce-evalueringsmiljø](cpe-optional-features.md).
-
-> [!NOTE]
-> Commerce-evalueringsmiljøer har en forudindlæst Azure Active Directory (Azure AD) business-to-consumer-lejer (B2C) til demonstrationsformål. Det er ikke nødvendigt at konfigurere din egen Azure AD B2C-lejer for evalueringsmiljøer. Hvis du konfigurere evalueringsmiljøet for at bruge din egen Azure AD B2C-lejer, skal du tilføje ``https://login.commerce.dynamics.com/_msdyn365/authresp`` som URL-svaradresse i Azure AD B2C-programmet via Azure Portal.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -162,15 +157,10 @@ Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, 
 
 [Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Konfigurere en B2C-lejer i Commerce](set-up-B2C-tenant.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

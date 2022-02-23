@@ -1,28 +1,29 @@
 ---
 title: Momsoversigt
 description: Dette emne indeholder en oversigt over momssystemet. Det forklarer elementerne i moms, og hvordan de fungerer sammen.
-author: kailiang
+author: ShylaThompson
+manager: AnnBe
 ms.date: 10/28/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "13111"
-- intro-internal
+ms.search.scope: Core, Operations, Retail
+ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
-ms.author: kailiang
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 021692e0b599731db1d991405fcb4632080582bf
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a3dacc755b3d4d3b5c7f51f6bac7c2e9c62773ba
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983922"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441612"
 ---
 # <a name="sales-tax-overview"></a>Momsoversigt
 
@@ -30,13 +31,14 @@ ms.locfileid: "7983922"
 
 Dette emne indeholder en oversigt over momssystemet. Det forklarer elementerne i moms, og hvordan de fungerer sammen.
 
-## <a name="overview"></a>Overblik
+<a name="overview"></a>Overblik
+--------
 
 Momsstrukturen understøtter mange typer af indirekte skatter, som f.eks. moms, moms af varer og ydelser (GST), stykbaseret gebyrer og indeholdt skat. Disse skatter beregnes og dokumenteres under indkøbs- og salgstransaktioner. Med jævne mellemrum skal de rapporteres og betales til skattemyndighederne. 
 
 I følgende diagram vises enheder på opsætning af skat, og hvordan de er relateret.
 
-[![Diagram, der viser oversigt over enheder til momsopsætning.](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram, der viser oversigt over enheder til momsopsætning](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 For hver type moms, en virksomhed skal redegøre for, skal der defineres en momskode. En momskode gemmer afgiftssatser og reglerne for beregning af moms. 
 
@@ -95,6 +97,3 @@ Hvis du imidlertid bruger en betinget moms, afregner du med skattemyndighederne,
 Hvis du bruger fremdateret check som betalingsmåde, når betalingen oprettes, cleares bankkontoen ikke. I nogle lande/områder vil moms blive 'realiseret' passiv, når betalingen cleares i banken, hvilket betyder, at den fremdaterede check udlignes. Du kan aktivere den ved at vælge **Realiserer den betingede moms, når der trækkes fremdaterede checks** i **Kontant- og bankstyring > Opsætning > Kontant- og bankstyringsparametre > fremdaterede checks**
 
 Du kan finde flere oplysninger i [Konfigurere A-skat](tasks/set-up-withholding-tax.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

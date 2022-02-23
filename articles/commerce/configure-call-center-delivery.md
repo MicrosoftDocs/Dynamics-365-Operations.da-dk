@@ -2,9 +2,11 @@
 title: Konfigurere callcenterets leveringsmåder og -gebyrer
 description: I dette emne beskrives, hvordan du konfigurerer leveringsmåder og gebyrer for en callcenterordre i Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748565"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963104"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere callcenterets leveringsmåder og -gebyrer
 
@@ -65,11 +67,11 @@ I sektionen **Linjer** kan du definere en eller flere gebyrer efter valuta, som 
 
 Firmaer konfigurerer ofte lagdelte gebyrer. I så fald er det beløb, som kunderne betaler for levering, baseret på ordreværdien. Du kan konfigurere lagdelte gebyrer ved at angive værdier i felterne **Fra beløb** og **Til beløb** ud over at definere selve gebyret i feltet **Gebyrværdi**. Ved ordrer, der har en værdi på mindre end $50, trækker en forhandler f.eks. $5,95 ved levering med vognmand. Ved ordrer med en værdi, der er lig med eller større end $50, men mindre end $100, opkræver detailhandleren $7,95 i gebyr. Ved ordrer med en værdi, der er lig med eller større end $100, leverer detailhandleren uden at opkræve gebyr. I følgende illustration vises konfigurationen af disse gebyrer.
 
-![Eksempel på faste lagdelte gebyrer.](media/fixedtieredcharges.png)
+![Eksempel på faste lagdelte gebyrer](media/fixedtieredcharges.png)
 
 Du kan bruge en blanding af kategorier for gebyrer, afhængigt af virksomhedens behov. Ved alle ordrer, der har en værdi på f.eks. mindre end $100, trækkes et fast gebyr på $9,95 for levering. Ved ordrer, der har en værdi, der er lig med eller større end $100, beregnes leveringsgebyrer på 5 procent af ordreværdien. I følgende illustration vises konfigurationen af disse gebyrer.
 
-![Eksempel på blandede lagdelte gebyrer.](media/mixedtieredcharges.png)
+![Eksempel på blandede lagdelte gebyrer](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Anvende leveringsmåder under ordreindtastning i et callcenter
 
@@ -92,6 +94,3 @@ Du kan også knytte en fremskyndelseskode til en leveringsmåde, som du konfigur
 Ved der for eksempel skal leveres med fly næste arbejdsdag, skal pluk udføres på lagerstedet inden kl. 13 hver dag. I så fald kan der oprettes en fremskyndelseskode, som kan knyttes til enhver leveringsmåde for næste arbejdsdag, der er konfigureret i systemet. Når lagerstedet opretter sin plukbølge, kan den relevante fremskyndelseskode i feltet **Fremskynd** bruges som et filter, så pluk kun køres for ordrer, der har de leveringsmåder, der er knyttet til koden.
 
 Desuden, når der angives en callcenterordre, kan en fremskyndelseskode manuelt anvendes på salgsordrehovedet eller på en enkelt salgsordrelinje. Koden kan igen bruges til sorterings- eller rapporteringsformål. Nogle gange skal en ordre håndteres omhyggeligt på grund af et kundeserviceproblem. I dette tilfælde kan der anvendes en bestemt fremskyndelseskode på ordrehovedet eller -linjerne for at identificere og prioritere ordren under ordreopfyldningsprocessen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

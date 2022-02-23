@@ -1,36 +1,39 @@
 ---
 title: Synkronisere konti direkte fra Sales med kunder i Supply Chain Management
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere konti fra Dynamics 365 Sales med Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063079"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529204"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synkronisere konti direkte fra Sales med kunder i Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
+> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere konti direkte fra Dynamics 365 Sales med Dynamics 365 Supply Chain Management.
 
@@ -38,7 +41,7 @@ I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at
 
 Kundeemnet til kontant-løsningen bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Supply Chain Management og Sales.  Kundeemne til kontanter-skabelonerne, der er tilgængelige i funktionen Dataintegration, muliggør strømme af data om konti, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellem Supply Chain Management og Sales. I følgende illustration vises, hvordan data synkroniseres mellem Supply Chain Management og Sales.
 
-[![Dataflow i kundeemne til kontant.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflow i kundeemne til kontant](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 
@@ -63,11 +66,11 @@ Konti administreres i Sales og synkroniseres med Supply Chain Management som kun
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemne til kontantløsning for Sales
 
-Kolonnen **Kontonummer** er tilgængelig på siden **Konto**. Det er blevet gjort til en naturlig og entydig nøgle for at understøtte integrationen. Funktionen Naturlig nøgle i CRM-løsningen (Customer Relationship Management) kan påvirke kunder, der allerede anvender kolonnen **Kontonummer**, men som ikke bruger en entydige **Kontonummer**-værdier for hver konto. Integrationsløsningen understøtter i øjeblikket ikke denne sag.
+Feltet **Kontonummer** er tilgængeligt på siden **Konto**. Det er blevet gjort til en naturlig og entydig nøgle for at understøtte integrationen. Funktionen Naturlig nøgle i CRM-løsningen (Customer Relationship Management) kan påvirke kunder, der allerede anvender feltet **Kontonummer**, men som ikke bruger en entydige **Kontonummer**-værdier for hver konto. Integrationsløsningen understøtter i øjeblikket ikke denne sag.
 
 Når en ny konto oprettes, og der ikke allerede findes en værdi for **Kontonummer**, oprettes den automatisk ved hjælp af en nummerserie. Værdien består af **ACC** efterfulgt af en stigende nummerserie og et suffiks på seks tegn. Her er et eksempel: **ACC-01000-BVRCPS**
 
-Når integrationsløsningen for Sales anvendes, indstiller et opgraderingsscript kolonnen **Kontonummer** for eksisterende konti i Sales. Hvis der ikke er nogen **Kontonummer**-værdier, bruges den nummerserie, der blev nævnt tidligere.
+Når integrationsløsningen for Sales anvendes, indstiller et opgraderingsscript feltet **Kontonummer** for eksisterende konti i Sales. Hvis der ikke er nogen **Kontonummer**-værdier, bruges den nummerserie, der blev nævnt tidligere.
 
 ## <a name="preconditions-and-mapping-setup"></a>Betingelserne og tilknytningsopsætning
 
@@ -92,14 +95,14 @@ Når integrationsløsningen for Sales anvendes, indstiller et opgraderingsscript
 ## <a name="template-mapping-in-data-integration"></a>Skabelontilknytning i dataintegration
 
 > [!NOTE]
-> Kolonnerne **Betalingsbetingelser**, **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** indgår ikke i standardtilknytningerne. Hvis du vil tilknytte disse kolonner, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som tabellen synkroniseres mellem.
+> Felterne **Betalingsbetingelser**, **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** indgår ikke i standardtilknytningerne. Hvis du vil tilknytte disse felter, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som enheden synkroniseres mellem.
 
 Følgende illustration viser et eksempel på en skabelontilknytning i dataintegration. 
 
 > [!NOTE]
-> Tilknytningen viser, hvilke kolonneoplysninger der synkroniseres fra Sales til Supply Chain Management.
+> Tilknytningen viser, hvilke oplysninger der synkroniseres fra Sales til Supply Chain Management.
 
-![Skabelontilknytning i dataintegration.](./media/accounts-direct-template-mapping-data-integrator-1.png)
+![Skabelontilknytning i dataintegration](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
 ## <a name="related-topics"></a>Relaterede emner
 
@@ -114,6 +117,3 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 [Synkronisere salgsfakturahoveder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

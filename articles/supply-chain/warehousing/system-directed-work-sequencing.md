@@ -2,9 +2,11 @@
 title: Systembaseret arbejdsrækkefølge
 description: Dette emne giver oplysninger om systembaseret arbejdsrækkefølge. Denne funktionalitet gør det muligt at sortere og filtrere de arbejdsordrer, som systemet fremsender til brugere til afvikling. Det er nyttigt i situationer, hvor der kræves yderligere kriterier for at drive plukprocessen på lagerstedet.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577810"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970200"
 ---
 # <a name="system-directed-work-sequencing"></a>Systembaseret arbejdsrækkefølge
 
@@ -302,6 +304,3 @@ De systembaserede arbejdsrækkefølgeforespørgsler er *inklusive*. Det er vigti
 I eksemplet med dette scenarie blev arbejds-id *4* derfor også hentet af forespørgslen. Da den blev oprettet, blev der tilføjet to linjer: en til 25 ea og en anden til 10 ea. Arbejdet blev stadig vist for brugeren, fordi mindst én arbejdslinje har et antal på mindre end 20 ea.
 
 Afhængigt af scenariet kan du forhindre dette ved at bruge arbejdspauser.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

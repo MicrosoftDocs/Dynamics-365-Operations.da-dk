@@ -1,14 +1,17 @@
 ---
 title: Betalingsmetoder
 description: De enkelte betalingstyper, som en detailhandlende accepterer, skal konfigureres, når systemet konfigureres. I denne artikel beskrives de betalingstyper, som du kan konfigurere, og processen for konfigurationen af dem..
-author: BrianShook
-ms.date: 11/03/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 2b56609de3b2620dcc605c6c6d697cb74c8ed6c1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779564"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411091"
 ---
 # <a name="payment-methods"></a>Betalingsmetoder
 
@@ -46,11 +49,3 @@ Hvis du vil konfigurere betalingsmetoder, skal du udføre følgende opgaver.
 2. Oprettelse af korttyper og kortnumre i hele organisationen. Hvis der skal accepteres kredit- eller debetkort, skal du oprette én betalingsmetode for kort og derefter oprette korttyper og kortnumre, der gælder for hele organisationen.
 3. Konfigurer betalingsmetode for butikken. Tilknyt betalingsmetoder til de enkelte butikker, og angiv derefter butiksspecifikke indstillinger for de enkelte betalingsmetoder.
 4. Konfigurer betalingsmetoder for butikker. For alle kortbetalingsmetoder, som butikken accepterer, skal du udføre kortopsætningen.
-
-## <a name="handle-change-tendering-for-payment-methods"></a>Håndtere betalingsmetoder til betalingsmiddel for byttepenge
-
-Nogle betalingsmetoder understøtter ikke direkte betalingsmiddel for byttepenge, hvis kunderne skal have penge tilbage i forbindelse med POS-transaktioner. Det er kun betalingsmetoderne **Kontant** og **Valuta**, der kan bruges som betalingsmiddel for byttepenge. 
-
-Til at håndtere sager, hvor betalingsmiddel for byttepenge er påkrævet under en transaktion, men betalingsmetoden ikke understøtter den, kan du definere et **Betalingsmiddel for byttepenge** som betalingsmetode. Når du konfigurerer butiksbetalingsmetoder for butikken, skal du vælge den betalingsmetode, der skal bruges. Angiv derefter en betalingsmetode som betalingsmiddel for byttepenge i feltet **Betalingsmiddel for byttepenge** i sektionen **Byttepenge**. Du kan f.eks. angive **1** for at angive, at kontanter kan bruges som betalingsmiddel for byttepenge.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

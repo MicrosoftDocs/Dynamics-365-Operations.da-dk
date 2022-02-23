@@ -2,9 +2,11 @@
 title: Produktejere
 description: Dette emne indeholder oplysninger om produktejere. En produktejer er en gruppe af brugere, der er ansvarlig for bestemte produkter. Det er kun medlemmer af gruppen, der kan frigive disse produkter. Produktejeren kan også bruges i godkendelsesarbejdsprocessen.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductOwner
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a29ab169e9b24826fbe69fbc316040d4618750ee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 90f5596f9b5fc45e78cc49a3309c45864e07e70b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567505"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967327"
 ---
 # <a name="product-owners"></a>Produktejere
 
@@ -58,6 +60,3 @@ Produkt X tildeles f.eks. produktejergruppen *Design skabe*. Produkt X er også 
 ## <a name="product-owners-and-approvals"></a>Produktejere og godkendelser
 
 Da produktejere ved, om bestemte tekniske ændringer vil drage nytte af deres produkter, giver det ofte mening at inkludere dem som en del af godkendelsesprocessen i styring af tekniske ændringer. Du kan implementere denne fremgangsmåde ved at konfigurere produktejerne som deltagerudbydere i arbejdsprocesser, der bruges til styring af tekniske ændringer. Systemet tildeler derefter godkendelsesopgaver i arbejdsprocesserne baseret på produkterne i tekniske ændringsanmodninger og tekniske ændringsordrer. Yderligere oplysninger finder du i [Administrere ændringer af tekniske produkter](engineering-change-management.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

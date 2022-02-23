@@ -75,6 +75,3 @@ I Microsoft Dynamics 365 Talent: Onboard kan du oprette ansættelsesteam. Du kan
 - [Nyheder eller ændringer i Dynamics 365 Talent](./whats-new.md)
 - [Frigivelsesplaner](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Få support til Microsoft Dynamics 365 Talent](./talent-support.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

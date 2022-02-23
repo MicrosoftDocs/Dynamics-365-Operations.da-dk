@@ -1,10 +1,12 @@
 ---
 title: Beregne kapacitetsbelastning på planlagte arbejdsordrer
 description: Dette emne forklarer, hvordan kapacitetsbelastningen beregnes for planlagte arbejdsordrer i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ff244e51151a1cc0485cae25873566fa97253171516d48449fed75f070146431
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b7e4a20ed56b1eac29d16d527693d6e455cdc37
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766212"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021648"
 ---
 # <a name="calculate-capacity-load-on-scheduled-work-orders"></a>Beregne kapacitetsbelastning på planlagte arbejdsordrer
 
@@ -48,13 +50,10 @@ Du kan beregne kapacitetsbelastningen for planlagte arbejdsordrer for at få ove
 
 I figuren herunder vises resultatet af en beregning, der dækker tre uger for belastningstypen **Reserveret**.
 
-![Figur 1.](media/08-work-order-scheduling.png)
+![Figur 1](media/08-work-order-scheduling.png)
 
 [!NOTE]
 Hvis du vælger belastningstyperne **Kapacitet** eller **Rest** for beregningen, vises samme resultat, hvis der ikke er foretaget reservationer for ressourcerne i den valgte periode.
 
 Se [Beregne kapacitetsbelastning](../capacity-planning/calculate-capacity-load.md) for at få oplysninger om, hvordan kapacitetsbelastningen beregnes på vedligeholdelsestidsplanslinjer og ikke planlagte arbejdsordrer.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

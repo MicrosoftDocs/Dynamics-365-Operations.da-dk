@@ -2,9 +2,11 @@
 title: Fordele tid til job i et jobbundt
 description: Ved udførelse af Produktion kan du bundte job. Derefter kan du starte flere job samtidig på siden Jobliste.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgBundleSlize, JmgProdParameters, JmgRegistration
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0236f9f39afc67cb5c8cedecee5278a6555d03deefb859fc134a4a4160285b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 382cf8d12d9695c80c3b13497886d20f29f3680c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766601"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966574"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fordele tid til job i et jobbundt
 
@@ -80,7 +82,7 @@ Følgende tabel illustrerer formlen til beregning af tildelt tid. Her er formlen
 ## <a name="net-time-allocation-key"></a>Nøgle til nettotidsfordeling
 Følgende tabel illustrerer formlen til beregning af tildelt tid. Her er formlen: Beregnet tid pr. rapportering = Bundttid ÷ Antal job
 
-| Eksempel                       | 09:00-10:00 (1 time) | 10:00-11:00 (1 time) | 11:00-13:00 (2 timer) | 13:00-15:00 (2 timer) | Tildelt tid |
+|                              | 09:00-10:00 (1 time) | 10:00-11:00 (1 time) | 11:00-13:00 (2 timer) | 13:00-15:00 (2 timer) | Tildelt tid |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | Antal job i bundtet | 1                    | 3                    | 2                     | 1                     | Ikke tilgængelig |
 | Job 1                        | 1 ÷ 1 = 1 time       | 1 ÷ 3 = 0,33 time    | Ikke tilgængelig        | Ikke tilgængelig        | 1,33 timer     |
@@ -108,6 +110,3 @@ Den korrigerede omkostning pr. time og jobtiden posteres i produktionskladden. *
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

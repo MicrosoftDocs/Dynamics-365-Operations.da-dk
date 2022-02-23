@@ -1,10 +1,12 @@
 ---
 title: Registrere forbrug
 description: Dette emne forklarer, hvordan du registrerer forbrug i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 619da584ea37e80b1803ae5983e52e8ee4053f3751a8df75a8f5bc1ddf7e65d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765569"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020774"
 ---
 # <a name="register-consumption"></a>Registrere forbrug
 
@@ -54,7 +56,7 @@ Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre i visse
 
 Skærmbilledet nedenfor viser et eksempel på time- og vareregistreringer på en arbejdsordre i **Arbejdsordrekladder**.
 
-![Figur 1.](media/01-consumption.png)
+![Figur 1](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Opdele timer i arbejdsordrer med flere arbejdsordrejob
@@ -73,13 +75,13 @@ Hvis en arbejdsordre indeholder flere arbejdsordrejob, kan du registrere arbejds
 
 6. Indsæt det antal arbejdstimer, der skal opdeles, i feltet **Timer**.
 
-    ![Figur 2.](media/02-consumption.png)
+    ![Figur 2](media/02-consumption.png)
 
 7. Klik på **OK**.
 
 *Eksempel:* I skærmbilledet nedenfor vises kladdelinjer for en arbejdsordre, der indeholder tre arbejdsordrejob. Den første linje, der indeholder tre arbejdstimer, er opdelt, og der er registreret én arbejdstime for hvert job i en arbejdsordre. Når registreringslinjerne på tre timer er oprettet, bestemmer du, hvad du vil gøre med den oprindelige timeregistreringslinje (den første linje i eksemplet). Du kan beholde den, som den er, eller slette den. 
 
-![Figur 3.](media/03-consumption.png)
+![Figur 3](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Økonomiske dimensioner for registrering af forbrug
 
@@ -92,6 +94,3 @@ Når du foretager registreringer af forbrug, føjes økonomiske dimensioner, der
 >[!NOTE]
 >For alle tre registreringstyper valideres den økonomiske dimensionskombination, og ugyldige kombinationer står tomme. Det er standardkonfigurationen med andre Finance and Operations-apps.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

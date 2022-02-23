@@ -2,12 +2,15 @@
 title: Konfigurere moms for onlineordrer
 description: Dette emne giver en oversigt over valg af momsgrupper for forskellige onlineordretyper i Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 04/02/2021
+manager: AnnBe
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,73 +18,68 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 5801bbfb5b5850cb4c9ae06140bff5adca9b368febdc06d69c538fc49f9ee40a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 40c20bf13779f73289e43df21b763e1b864686a7
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772955"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4530191"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurere moms for onlineordrer
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Dette emne giver en oversigt over momsgruppevalg for forskellige onlineordretyper med enten destinationsbaserede eller kundekontobaserede momsindstillinger. 
+Dette emne giver en oversigt over valg af momsgrupper for forskellige onlineordretyper. 
 
-Din e-handelskanal skal måske understøtte valgmuligheder som levering eller afhentning af onlineordrer. Om moms kan anvendes afhænger af den indstilling, som dine onlinekunder vælger. 
+Din e-handelskanal vil måske understøtte valgmuligheder som levering eller afhentning af onlineordrer. Om moms kan anvendes afhænger af den indstilling, som dine onlinebrugere vælger. Når en kunde på et websted vælger at købe en vare online og får den leveret til en adresse, bestemmes momsen på basis af kundens indstilling for momsgruppen for leveringsadressen. Når en kunde vælger at afhente en købt vare i en butik, bestemmes momsen ud fra indstillingen for afhentningsbutikkens momsgruppe. 
 
-## <a name="destination-based-taxes-for-online-orders"></a>Destinationsbaseret moms for onlineordrer
+## <a name="orders-shipped-to-a-customer-address"></a>Ordrer, der sendes til en kundeadresse 
 
-Generelt defineres moms på onlineordrer, der sendes til kundeadresser, af destinationen. Hver momsgruppe har en konfiguration for moms, der er baseret på en detaildestination, hvor forretningen kan definere destinationsoplysninger som f.eks. land eller område, stat, region og by i en hierarkisk struktur.
+Generelt defineres moms på onlineordrer, der sendes til kundeadresser, af destinationen. Hver momsgruppe har en konfiguration for moms, der er baseret på en detaildestination, hvor forretningen kan definere destinationsoplysninger, som f.eks. land/område, stat, region og by i en hierarkisk struktur. Når en onlineordre afgives, bruger Commerce-momsprogrammet leveringsadressen for alle linjevarer i ordren og finder momsgrupper med tilsvarende destinationsbaserede momskriterier. F.eks. kan momsprogrammet for en onlineordre med leveringsadresse for en linjevare i San Francisco, Californien, finde momsgruppen og momskoden for Californien og derefter beregne skatten for hvert linjeelement tilsvarende.  
 
-### <a name="orders-delivered-to-customer-address"></a>Ordrer, der leveres til en kundeadresse
+## <a name="customer-based-tax-groups"></a>Kundebaserede momsgrupper
 
-Når en onlineordre afgives, bruger Commerce-momsprogrammet leveringsadressen for alle linjevarer i ordren og finder momsgrupper med tilsvarende destinationsbaserede momskriterier. F.eks. kan momsprogrammet for en onlineordre med leveringsadresse for en linjevare i San Francisco, Californien, finde momsgruppen og momskoden for Californien og derefter beregne skatten for hvert linjeelement tilsvarende.
+I Commerce Headquarters er der to steder, hvor kundemomsgrupper kan konfigureres:
 
-### <a name="order-pick-up-in-store"></a>Ordreafhentning i butik
+- **Kundens profil**
+- **Kundens leveringsadresse**
 
-For ordrelinjer, hvor der er angivet afhentning i butik eller ved fortovskant, anvendes momsgruppen fra den valgte afhentningsbutik. Du kan finde flere oplysninger om, hvordan du konfigurerer moms for en bestemt butik, i [Angive andre momsindstillinger for butikker](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+### <a name="if-a-customers-profile-has-a-tax-group-configured"></a>Hvis en kundes profil har en konfigureret momsgruppe
 
-## <a name="customer-account-based-taxes-for-online-orders"></a>Kundekontobaseret moms for onlineordrer
+En kundeprofilpost i Headquarters kan have en konfigureret momsgruppe, men til onlineordrer bruges den momsgruppe, der er konfigureret i en kundeprofil, ikke af momsprogrammet. 
 
-Der kan være et forretningsscenarie, hvor du vil konfigurere en momsgruppe på en bestemt kundekonto i Commerce-hovedkontoret. Der er to steder i hovedkontoret, hvor du kan konfigurere moms på en kundekonto. Hvis du vil åbne disse, skal du først gå til kundedetaljesiden ved at gå til **Retail og Commerce \> Kunder \> Alle kunder** og derefter vælge en kunde.
+### <a name="if-a-customers-shipping-address-has-a-tax-group-configured"></a>Hvis en kundes leveringsadresse har en konfigureret momsgruppe
 
-De to steder, hvor du kan konfigurere moms for en kundekonto, er:
+Hvis der er konfigureret en momsgruppe for en kundes leveringsadressepost, og der leveres en onlineordre (eller linjevare) til kundens leveringsadresse, vil den momsgruppe, der er konfigureret i kundens adressepost, blive brugt af momsprogrammet til momsberegninger.
 
-- **Momsgruppe** i oversigtspanelet **Faktura og levering** på siden med kundeoplysninger. 
-- **Moms** i oversigtspanelet **Generelt** på siden **Administrer adresser**. Hvis du vil derhen fra siden med kundeoplysninger, skal du vælge en bestemt adresse i oversigtspanelet **Adresser** og derefter vælge **Avanceret**.
+#### <a name="configure-a-tax-group-for-a-customers-shipping-address-record"></a>Konfigurere en momsgruppe for en kundes leveringsadressepost
 
-> [!TIP]
-> Hvis du kun vil anvende destinationsbaseret moms for onlinekundeordrer og undgå kundekontobaseret moms, skal du sikre dig, at feltet **Momsgruppe** er tomt i oversigtspanelet **Faktura og levering** for kundens detaljeside. Hvis du vil sikre, at nye kunder, der logger på ved hjælp af onlinekanalen, ikke arver momsgruppeindstillingerne fra standardindstillinger for kunder eller kundegrupper, skal du sikre dig, at feltet **Momsgruppe** også er tomt for standardindstillingerne for kunder og kundegrupper for onlinekanalen (**Retail og Commerce \> Kunder \> Kundegrupper**).
+Hvis du vil konfigurere en momsgruppe for en kundes leveringsadressepost i Commerce Headquarters, skal du følge disse trin.
 
-## <a name="determine-destination-based-tax-or-customer-account-based-tax-applicability"></a>Bestemme destinationsbaseret moms eller kundekontobaseret anvendelse af moms 
+1. Gå til **Alle debitorer**, og vælg derefter den ønskede debitor. 
+1. I oversigtspanelet **Adresser** skal du vælge den ønskede adresse og derefter vælge **Flere indstillinger \> Avanceret**. 
+1. Angiv momsværdien efter behov under fanen **Generelt** på siden **Administrer adresser**.
 
-I følgende tabel forklares det, om destinationsbaseret moms eller kundekontobaseret moms anvendes for onlineordrer. 
+> [!NOTE]
+> Momsgruppen defineres ved hjælp af leveringsadressen for ordrelinjen, og den destinationsbaserede moms konfigureres i selve momsgruppen. Du kan finde flere oplysninger i [Konfigurere moms for onlinebutikker, der er baseret på destinationen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
-| Kundetype | Leveringsadresse                   | Kunde > Faktura og levering > Momsgruppe? | Adresse på kundekonto i hovedkontoret? | Kundeadresse > Avanceret > Generelt > Momsgruppe?                                              | Anvendt momsgruppe      |
-|---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
-| Gæst         | Manhattan, NY                      | Nej (tom)                                                | Nej (tom)                              | Nej (tom)                                                                                                   | NY (destinationsbaseret moms) |
-| Logget på     | Austin, TX                          | Nej (tom)                                             | Ja                               | None<br/><br/>Ny adresse, der er tilføjet via onlinekanalen.                                                            | TX (destinationsbaseret moms) |
-| Logget på     | San Francisco, CA (afhentning i butik) | Ja (NY)                                            | Ikke anvendelig                              | Ikke anvendelig                                                                                                    | CA (destinationsbaseret moms) |
-| Logget på     | Houston, TX                         | Ja (NY)                                            | Ja                               | Ja (NY)<br/><br/>Ny adresse, der er tilføjet via onlinekanal, og momsgruppe, der er nedarvet fra kundekontoen. | NY (kundekontobaseret moms)  |
-| Logget på     | Austin, TX                          | Ja (NY)                                            | Ja                               | Ja (NY)<br/><br/>Ny adresse, der er tilføjet via onlinekanal, og momsgruppe, der er nedarvet fra kundekontoen. | NY (kundekontobaseret moms)  |
-| Logget på     | Sarasota, FL                       | Ja (NY)                                            | Ja                               | Ja (WA)<br/><br/>Angivet manuelt til WA.                                                                          | WA (kundekontobaseret moms)  |
-| Logget på     | Sarasota, FL                       | Nej (tom)                                                | Ja                               | Ja (WA)<br/><br/>Angivet manuelt til WA.                                                                          | WA (kundekontobaseret moms)  |
+## <a name="order-pickup-in-store"></a>Ordreafhentning i butik
+
+For ordrelinjer, hvor der er angivet afhentning i butik eller ved fortovskant, anvendes momsgruppen fra den valgte afhentningsbutik. Du kan finde flere oplysninger om, hvordan du konfigurerer momsgruppen for en bestemt butik, i [Angive andre momsindstillinger for butikker](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+
+> [!NOTE]
+> Når en ordrelinje afhentes i en butik, vil en kundes indstillinger for adressemoms (hvis de er angivet) blive ignoreret af momsprogrammet, og afhentningsbutikkens momskonfiguration vil blive anvendt. 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Konfigurere moms for onlinebutikker, der er baseret på destinationen](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
+[Momsoversigt](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
 
-[Momsoversigt](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[Momsberegningsmetoder i feltet Grundlag](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
 
-[Momsberegningsmetoder i feltet Grundlag](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[Tildeling og tilsidesættelser af moms](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
 
-[Tildeling og tilsidesættelser af moms](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
-
-[Indstillinger for beregning af hele beløbet og intervaller for momskoder](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[Indstillinger for beregning af hele beløbet og intervaller for momskoder](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
 
 [Beregning af momsfritagelse](tax-exempt-price-inclusive.md) 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

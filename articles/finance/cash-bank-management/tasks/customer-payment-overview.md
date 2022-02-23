@@ -1,31 +1,33 @@
 ---
 title: Oversigt over debitorbetalinger
-description: Denne procedure gennemgår de forskellige metoder, der bruges til at angive debitorbetalinger.
+description: Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at angive debitorbetalinger.
 author: kweekley
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3782c1dd5e326bfc8ae5c005b58d4039f32b021
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394483"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441544"
 ---
 # <a name="customer-payment-overview"></a>Oversigt over debitorbetalinger
 
 [!include [banner](../../includes/banner.md)]
 
-Denne procedure gennemgår de forskellige metoder, der bruges til at angive debitorbetalinger. Denne opgave bruger demofirmaet USMF.
+Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at angive debitorbetalinger. Denne opgave bruger demofirmaet USMF.
 
 1. Gå til **Navigationsrude > Moduler > Debitor > Betalinger > Betalingskladde**.
 2. Klik på **Ny**.
@@ -50,6 +52,3 @@ Denne procedure gennemgår de forskellige metoder, der bruges til at angive debi
 21. I feltet **Betalingsreference** skal du angive en betalingsreference. Betalingsreferencen er kun påkrævet, hvis du markerer, at betalingen skal medtages på et indbetalingsbilag.  
 22. Klik på **Bogfør** i **handlingsruden** for at bogføre debitorbetalinger. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

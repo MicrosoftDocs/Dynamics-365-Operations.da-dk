@@ -1,56 +1,55 @@
 ---
-title: Administrationsoversigt
-description: Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til at konfigurere, administrere og lokalisere fejl i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/11/2021
-ms.topic: overview
+title: Oversigt
+description: Denne administrator vejledning hjælper dig med at konfigurere, administrere og foretage fejlfinding af Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a403390132443f29f12e11914b7a0f08faffa973
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068403"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527855"
 ---
-# <a name="administration-overview"></a>Administrationsoversigt
+# <a name="overview"></a>Oversigt
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til at konfigurere, administrere og lokalisere fejl i Dynamics 365 Human Resources.
+Denne administrator vejledning hjælper dig med at konfigurere, administrere og foretage fejlfinding af Dynamics 365 Human Resources.
 
 - [Systemkrav](hr-admin-system-requirements.md)
 
 - Konfigurere og administrere forekomster
-  - [Klargøring af Human Resources](hr-admin-setup-provision.md)
+  - [Klargøring af Personale](hr-admin-setup-provision.md)
   - [Kopiér en forekomst](hr-admin-setup-copy-instance.md)
   - [Fjern en forekomst](hr-admin-setup-remove-instance.md)
   - [Opdater proces](hr-admin-setup-update-process.md)
 
 - Konfigurer dataintegration
   - [Vælg en teknologi til dataintegration](hr-admin-integration-choose-technology.md)
-  - [Konfigurere Dataverse-integration](hr-admin-integration-common-data-service.md)
+  - [Konfigurere Common Data Service-integration](hr-admin-integration-common-data-service.md)
   - [Konfigurere integration med Finance](hr-admin-integration-finance.md)
   - [Konfigurere integration med Dayforce](hr-admin-integration-dayforce.md)
   - [Oprette en app for tilbagevendende dataeksport](hr-admin-integration-recurring-data-export.md)
   - Integrere med Office
-    - [Selvstudium til Office-integration](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Opdatere enhedsdata i Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Oprette Åbn i Excel-oplevelser](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Fejlfinding af Office-integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Selvstudium til Office-integration](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Opdatere enhedsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Oprette Åbn i Excel-oplevelser](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Fejlfinding af Office-integration](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Administrere funktioner](hr-admin-manage-features.md)
 
@@ -85,7 +84,7 @@ Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til at 
   - [Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Fejlfinding af Human Resources
-  - [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+  - [Få support](hr-admin-troubleshooting-support.md)
   - [Optimere ydeevnen med automatiske oprydningsopgaver](hr-admin-troubleshooting-batch-history.md)
   - [Analytiske rapporter opdateres ikke](hr-admin-troubleshooting-analytic-reports.md)
   - [Kan ikke oprette et miljø i Power Apps Administrator](hr-admin-troubleshooting-power-apps.md)
@@ -94,23 +93,12 @@ Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til at 
   - [Kør kompensationsprocessen](hr-admin-troubleshooting-compensation.md)
   - [Gemme en opgaveguide i LCS](hr-admin-troubleshooting-task-guide.md)
   - [Adgang til privatadresser efter sikkerhedsrolle](hr-admin-troubleshooting-private-addresses.md)
-  - [Human Resources vises ikke i Dynamics 365-apps](hr-admin-troubleshooting-not-in-apps.md)
+  - [Personale vises ikke i Dynamics 365-apps](hr-admin-troubleshooting-not-in-apps.md)
   - [Rapporteringsindstillinger](hr-admin-troubleshooting-reporting.md)
   - [Ofte stillede spørgsmål til integration](hr-admin-troubleshooting-integration.md)
 
-## <a name="additional-resources"></a>Yderligere ressourcer
-
-### <a name="elearning-courses"></a>eLearning-kurser
-Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Human Resources on Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
-
-### <a name="videos"></a>Videoer
-
-Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
 ## <a name="see-also"></a>Se også
 
-- [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)
-- [Vejledning for udvikler](hr-developer-overview.md)
+- [Nyheder eller ændringer i Personale](hr-admin-whats-new.md)
+- [Udviklervejledning](hr-developer-overview.md)
 - [Brugervejledning](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

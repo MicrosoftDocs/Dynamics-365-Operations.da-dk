@@ -1,33 +1,31 @@
 ---
-title: Angive parametre for Frynsegodeadministration og Medarbejderselvbetjening for alle firmaer
-description: Konfigurere parametre for Frynsegodeadministration og Medarbejderselvbetjening i Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/24/2021
+title: Angive parametre for frynsegodeadministration og Employee Self-Service for alle firmaer
+description: Konfigurere parametre for frynsegodeadministration og Employee Self-Service i Microsoft Dynamics 365 Human Resources.
+author: andreabichsel
+manager: tfehr
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 822e5b37be7b2d5712d61bf7fb00f40d1692f406
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066919"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4962434"
 ---
-# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Angive parametre for Frynsegodeadministration og Medarbejderselvbetjening for alle firmaer
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Angive parametre for frynsegodeadministration og Employee Self-Service for alle firmaer
 
 Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, skal du konfigurere parametre for administration af frynsegoder. Disse parametre angiver standardværdier, årsagskoder og andre indstillinger. 
 
@@ -37,7 +35,7 @@ Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, s
 
 2. Angiv værdier for følgende felter under fanen **Frynsegodeadministration**:
 
-   | Felt | Beskrivelse |
+   | Felt | Betegnelse |
    | --- | --- |
    | **Land/område** | Feltet **Land/område** bestemmer, hvilken visningsrækkefølgen for postnumre/stater. Det valgte land vises først på rullelisten. |
    | **Årsagskode for tilmelding** | Vælg en standardårsagskode, der skal bruges, når der oprettes medarbejderplaner under behandling af en åben tilmelding. |
@@ -56,13 +54,13 @@ Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, s
 
 3. Vælg **Gem**.
 
-## <a name="configure-employee-self-service-parameters"></a>Konfigurere parametre for medarbejderselvbetjening
+## <a name="configure-employee-self-service-parameters"></a>Konfigurere parametre for Employee Self-Service
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Parametre for personale** under **Konfiguration**.
 
 2. Angiv værdier for følgende felter under fanen **Frynsegodeadministration**:
 
-   | Felt | Beskrivelse |
+   | Felt | Betegnelse |
    | --- | --- |
    | **Frynsegodebekræftelse** | Den kontroltekst, der skal bruges under betaling af selvbetjeningsfrynsegoder. |
    | **Vælg automatisk udpegede modtagere** | Angiver, om der automatisk skal vælges afhængige og modtagere baseret på deres berettigelse til planindstillinger. |
@@ -70,6 +68,3 @@ Før du kan oprette frynsegodeplaner i Microsoft Dynamics 365 Human Resources, s
 3. Vælg **Gem**.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

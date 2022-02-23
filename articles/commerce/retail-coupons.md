@@ -1,26 +1,29 @@
 ---
 title: Konfigurere kuponer for detailsalg
-description: Dette emne indeholder en oversigt over kuponer og en beskrivelse af, hvordan de konfigureres i Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/05/2021
+description: Dette emne indeholder en oversigt over kuponer og en beskrivelse af, hvordan de konfigureres.
+author: scott-tucker
+manager: AnnBe
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603117"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411009"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurere kuponer for detailsalg
 
@@ -38,10 +41,6 @@ Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Der
 
 > [!NOTE]
 > Når en kupon er knyttet til en rabat, bliver flere af felterne på rabatsiden i Commerce skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.
-> 
-> Når du bruger kuponen i callcenter-kanalen, skal du vælge knappen **Genberegn** **(fanen Sælg > Beregn > Genberegn)** for at få rabatten tilknyttet kuponen, der skal anvendes. Dette ekstra trin vil blive fjernet i en fremtidig version.
-
-Hvis du vil anvende en kupon på en salgstransaktion i POS, kan du bruge **Kuponkode** eller **Kuponstregkode**. Hvis du vil bruge **kuponkode**, skal handlingen **Tilføj kuponkode** konfigureres i POS **Transaktion** [skærmlayoutet](pos-screen-layouts.md). Vælg **Tilføj kuponkode**, og angiv kuponkoden. Du kan også scanne stregkoden eller indtaste stregkoden ved hjælp af det numeriske tastatur på **Transaktionsskærmbilledet**, hvis du vil bruge **Kuponstregkoden**.
 
 ### <a name="limited-use-coupons"></a>Kuponer med begrænset anvendelse
 
@@ -83,6 +82,3 @@ Kuponfunktioner indeholder flere specifikke funktioner. Commerce Headquarters (H
 - **HQ opdateres delvist, men Commerce Scale Unit og POS opdateres ikke.** Under en opdatering af HQ opdateres kupon- og rabatsiderne, og handelsprisprogrammet opdateres også. Hvis kun en af disse to komponenter opdateres, vil nogle sider i Commerce ikke svare til prisberegningsdataene. Derfor kan der forekomme uventede rabatberegninger eller fejl under rabatberegninger.
 - **HQ opdateres, men Commerce Scale Unit og POS opdateres ikke (N-1).** Da ikke alle butikker kan opdateres på samme tid, anbefales det, at du opdaterer HQ, før du opdaterer butikkerne. I eksemplet N-1 er nye funktioner, der er relateret til kuponer, ikke tilgængelige i butikker, der endnu ikke er blevet opdateret. For eksempel introducerer kuponfunktionen "udelad"-linjer. Hvis du bruger udelad-linjer på en rabat, bliver de ikke anvendt i en butik, der kører en tidligere version.
 - **HQ opdateres ikke, men Commerce Scale Unit og POS opdateres (N+1).** Da det opdaterede prisprogram i Commerce Scale Unit kan håndtere ældre rabatkoder under prisberegninger, bør opdateringen ikke have nogen indflydelse på funktioner i dette scenario.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

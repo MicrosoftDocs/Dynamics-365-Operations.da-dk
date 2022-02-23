@@ -45,6 +45,3 @@ Med denne ændring er standard for feltet **Handling ønsket af** nu den bruger,
 ### <a name="ideas-portal-updated"></a>Ideportalen er blevet opdateret
 Links via app, der bruges til at sende en ide til Talent, er blevet opdateret til den nye Ide-portal. Alle ideer, der er angivet i den gamle portal, er blevet overført, så alle dine gode ideer er der stadig, og andre kan stemme på dem.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

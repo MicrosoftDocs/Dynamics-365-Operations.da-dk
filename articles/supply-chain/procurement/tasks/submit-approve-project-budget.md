@@ -1,45 +1,58 @@
 ---
-title: Opret og indsend et projektbudgetarbejdsproces
+title: Send og godkend projektbudget
 description: Denne procedure viser, hvordan du opretter og indsender et budget for et projekt.
-author: Henrikan
-ms.date: 11/22/2021
-ms.topic: article
+author: RichardLuan
+manager: tfehr
+ms.date: 08/13/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.search.industry: Service industries
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f410d824be717537e6dfb5dbd8b71ff7d992e0a
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b871a3fef3515d3a79fb4b55406a93fc16d02faa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860403"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018722"
 ---
-# <a name="create-and-submit-a-project-budget-workflow"></a>Opret og indsend et projektbudgetarbejdsproces
+# <a name="submit-and-approve-project-budget"></a>Send og godkend projektbudget
 
 [!include [banner](../../includes/banner.md)]
 
-Når du opretter et projektbudget, kan du angive estimerede indtægter og omkostninger for et projekt og derefter bruge det til at styre de faktiske projekttransaktioner. Projektbudgettering kræver alle de oprindelige budgetter og revisioner sendes til en projektarbejdsgang til godkendelse. Arbejdsprocessen øger din kontrol over processen og budgettet, og der oprettes en post for ændringshistorikken. Når du [opretter et projekt](/dynamicsax-2012/appuser-itpro/create-a-project), skal du anvende denne procedure til at oprette og indsende budgettet.
+Denne procedure viser, hvordan du opretter og indsender et budget for et projekt. 
 
-1. Gå til **Moduler** > **Projektstyring og regnskab** > **Projekter** > **Alle projekter**.
-1. Vælg projektet på listen.
-1. Vælg fanen **Plan** på detaljesiden for projektet.
-1. Vælg **Projektbudget** under **budgetgruppen**.
-1. I oversigtspanelet **Generelt** skal du angive følgende oplysninger:
-   - Indtast en værdi i feltet **Beskrivelse**.
-   - Vælg indstilling for **Oprindeligt budget**.
-   - Vælg indstilling for **Resterende budget**.
-1. Udvid oversigtspanelet **Omkostninger**, og vælg **Ny**. Foretag derefter følgende indstillinger for at komme i gang:
-   - Vælg en indstilling for **Transaktionstype**.
-   - Vælg den relevante **Kategori**.
-   - Angiv en værdi i **Oprindeligt budget**.
-1. Udvid oversigtspanelet **Indtægter**, og vælg **Ny**. Foretag derefter følgende indstillinger for at komme i gang:
-   - Vælg en indstilling for **Transaktionstype**.
-   - Vælg en **Kategori**.
-   - Angiv en værdi for **Oprindeligt budget**.
-1. Vælg **Gem**.
-1. Vælg **Arbejdsgang \> Overfør**.
-1. På siden **Gennemse oprindelig budgetarbejdsgang – Overfør** skal du angive en **kommentar** og vælge **Overfør**.
+Når du opretter et projektbudget, kan du angive estimerede indtægter og omkostninger for et projekt og derefter bruge det til at styre de faktiske projekttransaktioner. I projektbudgettering skal alle de oprindelige budgetter og revisioner sendes til projektarbejdsgangen til godkendelse. Med arbejdsgangen får du øget kontrol over processen, og der oprettes en post for ændringshistorikken.
+
+Denne opgave blev oprettet ved hjælp af USSI-datasættet.
+
+1. Gå i **Navigationsrude** til **Moduler > Projektstyring og regnskab > Projekter > Alle projekter**.
+2. Find og vælg den ønskede post på listen.
+3. Klik op linket i den valgte række på listen.
+4. Klik på **Plan** i **handlingsruden**.
+5. Klik på **Projektbudget**.
+6. Indtast en værdi i feltet **Beskrivelse**.
+7. Udvid oversigtspanelet **Omkostning**.
+8. Klik på **Ny**.
+9. Vælg en indstilling i feltet **Transaktionstype**.
+10. Indtast eller vælg en værdi i feltet **Kategori**.
+11. Angiv et tal i feltet **Oprindeligt budget**.
+12. Udvid oversigtspanelet **Indtægter**.
+13. Klik på **Ny**.
+14. Markér den valgte række på listen.
+15. Vælg en indstilling i feltet **Transaktionstype**.
+16. Indtast eller vælg en værdi i feltet **Kategori**.
+17. Angiv et tal i feltet **Oprindeligt budget**.
+18. Klik på **Gem**.
+19. Klik på **Arbejdsgang**.
+20. Klik på **Send**.
+21. Skriv en værdi i feltet **Kommentar**.
+22. Klik på **Send**.
+

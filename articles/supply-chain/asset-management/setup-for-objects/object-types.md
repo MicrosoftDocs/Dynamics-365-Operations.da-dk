@@ -1,10 +1,12 @@
 ---
 title: Aktivtyper
 description: Dette emne beskriver, hvordan du opretter aktivtyper i Styring af aktiver. Det beskriver også de elementer, der er relateret til aktivtyper.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730364"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017411"
 ---
 # <a name="asset-types"></a>Aktivtyper
 
@@ -45,9 +47,9 @@ Først skal du oprette de påkrævede aktivtyper. Derefter opretter du de aktivm
 7. Vælg **Gem**.
 8. I oversigtspanelet **Vedligeholdelsesjobtyper** skal du vælge de vedligeholdelsesjobtyper, der skal relateres til aktivtypen:
 
-    - Hvis du vil vælge en vedligeholdelsesjobtype, skal du vælge den i feltet **Resterende vedligeholdelsesjobtyper** og derefter vælge højre pileknap ![Højre pileknap.](media/29-setup-for-objects.png) for at flytte den til sektionen **Valgte vedligeholdelsesjobtyper**.
-    - Hvis du vil vælge alle tilgængelige vedligeholdelsesjobtyper, skal du vælge ![Fremsend alle.](media/30-setup-for-objects.png)- knappen. Alle vedligeholdelsesjobtyper overføres fra feltet **Resterende vedligeholdelsesjobtyper** til feltet **Valgte vedligeholdelsesjobtyper**.
-    - Hvis du vil annullere markeringen af en vedligeholdelsesjobtype, skal du vælge den i feltet **Valgte vedligeholdelsesjobtyper** og derefter vælge venstre pileknap ![Venstre pileknap.](media/31-setup-for-objects.png) for at flytte den til feltet **Resterende vedligeholdelsesjobtyper**.
+    - Hvis du vil vælge en vedligeholdelsesjobtype, skal du vælge den i feltet **Resterende vedligeholdelsesjobtyper** og derefter vælge højre pileknap ![Højre pileknap](media/29-setup-for-objects.png) for at flytte den til sektionen **Valgte vedligeholdelsesjobtyper**.
+    - Hvis du vil vælge alle tilgængelige vedligeholdelsesjobtyper, skal du vælge pileknappen ![Fremsend alle](media/30-setup-for-objects.png). Alle vedligeholdelsesjobtyper overføres fra feltet **Resterende vedligeholdelsesjobtyper** til feltet **Valgte vedligeholdelsesjobtyper**.
+    - Hvis du vil annullere den valgte vedligeholdelsesjobtype, skal du vælge den i feltet **Valgte vedligeholdelsesjobtyper** og derefter vælge venstre pileknap ![Venstre pileknap](media/31-setup-for-objects.png) for at flytte den til feltet **Resterende vedligeholdelsesjobtyper**.
 
 9. Du kan også vælge de tællere, som skal relateres til aktivtypen. Foretag dine valg i oversigtspanelet **Tællere** ved hjælp af de metoder, der er beskrevet for vedligeholdelsesjobtyper i trin 8. Du kan finde flere oplysninger om, hvordan du konfigurerer tællere, i [Tællere](counters.md).
 10. Du kan også vælge de attributtyper, som skal relateres til aktivtyperne. Foretag dine valg i oversigtspanelet **Attributtyper** ved hjælp af de metoder, der er beskrevet for vedligeholdelsesjobtyper i trin 8. Hvis du derefter vil oprette den foretrukne rækkefølge af attributtyper, skal du i feltet **Valgte attributtyper** vælge en attributtype og bruge knapperne pil op og pil ned til at flytte det. Rækkefølgen af attributtyper vises på aktiver, der bruger denne aktivtype. Du finder flere oplysninger om aktivattributter under [Vedligeholdelsesattributtyper](../setup-for-functional-locations/specification-types.md).
@@ -94,6 +96,3 @@ På siden **Reservedele** kan du også oprette nye reservedele til eksisterende 
 
 Hvis du vil se, om reservedelen på den valgte linje bruges et sted i Styring af aktiver (f.eks. i relation til aktiver og arbejdsordrer), skal du vælge **Vare, hvor den bruges** til at åbne siden **Vare, hvor den bruges**. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,29 +1,34 @@
 ---
 title: Vedligeholdelsesanmodninger
 description: Dette emne indeholder en oversigt over administration af vedligeholdelsesanmodninger i Styring af aktiver
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6d247457b83036dba2fad8fd9f94e04c29a3aa5e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1e0071ae745987a1217525b2841e3320933a9242
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985247"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019623"
 ---
 # <a name="maintenance-requests"></a>Vedligeholdelsesanmodninger
 
 [!include [banner](../../includes/banner.md)]
+
+ 
 
 Vedligeholdelsesanmodninger er noter eller erklæringer, som er oprettet med henblik på at underrette en leder eller planlægger om, at et aktiv muligvis kræver et vedligeholdelses-eller reparationsjob, men som ikke kræver, at der oprettes en arbejdsordre. Hvis indholdet af en vedligeholdelsesanmodning anses for at være gyldigt, kan der derefter oprettes en arbejdsordre på grundlag af vedligeholdelsesanmodningen.
 
@@ -39,7 +44,7 @@ Der kan oprettes vedligeholdelsesanmodninger for alle aktiver i Styring af aktiv
 
 Hvis du have vist vedligeholdelsesanmodninger, skal vælge **Styring af aktiver** \> **Almindelig** \> **Vedligeholdelsesanmodninger** \> **Alle vedligeholdelsesanmodninger**, **Aktive vedligeholdelsesanmodninger** eller **Vedligeholdelsesanmodninger for mine arbejdssteder**. Hver listeside viser nogle af de oplysninger, der er relateret til en vedligeholdelsesanmodning.
 
-![Vis vedligeholdelsesanmodninger.](media/01-manage-maintenance-requests.png)
+![Vis vedligeholdelsesanmodninger](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Brug listesiden **Vedligeholdelsesanmodninger for mine arbejdssteder** for at få vist en liste over vedligeholdelsesanmodninger, der indeholder enten arbejdssteder, som du er relateret til som arbejder, eller aktiver, der er installeret på de arbejdssteder, som du er relateret til som arbejder. (Du finder oplysninger om, hvordan du konfigurerer arbejdssteder for vedligeholdelsesarbejdere, i [Vedligeholdelsesarbejdere og arbejdergrupper](../setup-for-objects/workers-and-worker-groups.md).)
@@ -48,7 +53,7 @@ Hvis du have vist vedligeholdelsesanmodninger, skal vælge **Styring af aktiver*
 
 For at åbne detaljevisning for en post skal du i gittervisningen på listesiden **Alle vedligeholdelsesanmodninger** vælge et link i kolonnen **Vedligeholdelsesanmodning**.
 
-![Se detaljer om vedligeholdelsesanmodning.](media/02-manage-maintenance-requests.png)
+![Se detaljer om vedligeholdelsesanmodning](media/02-manage-maintenance-requests.png)
 
 Knapperne i Handlingsruden er organiseret på faner. Følgende tabel beskriver kort de knapper, der er relateret til Aktiv styring.
 
@@ -67,6 +72,3 @@ Knapperne i Handlingsruden er organiseret på faner. Følgende tabel beskriver k
 | Send udlånsaktiv                  | Vælg et udlånsaktiv, der skulle have været en midlertidig erstatning for det aktiv, der er valgt i den valgte vedligeholdelsesanmodning. |
 | Returner udlånsaktivet                | Registrer udlånsaktivet som returneret. |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

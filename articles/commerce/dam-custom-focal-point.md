@@ -2,12 +2,15 @@
 title: Tilpasse billedets fokuspunkter
 description: Dette emne indeholder en beskrivelse af, hvordan du tilpasser billedets fokuspunkter i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9c8a1b6de774a4d89c0ebcf46847c1b2c5b62374b3e5ac25a0bea2ff30b47510
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727600"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594326"
 ---
 # <a name="customize-image-focal-points"></a>Tilpasse billedets fokuspunkter
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af, hvordan du tilpasser billedets fokuspunkter i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+
+## <a name="overview"></a>Overblik
 
 Når et billede uploades til mediebiblioteket i Commerce-webstedsgenerator, forsøger systemet at bestemme billedets fokuspunkt. Hvis der f.eks. er en person på billedet, vil systemet som standard sætte fokuspunktet til personens ansigt. I de fleste tilfælde fungerer det automatisk angivne fokuspunkt godt for alle billeder, men nogle gange kan det være en god ide at justere fokuspunktet for at sikre, at en bestemt del af billedet altid er synligt.
 
@@ -55,6 +60,3 @@ Hvis du vil definere et brugerdefineret fokuspunkt for et billede, skal du følg
 [Beskære billeder](dam-crop-images.md)
 
 [Overføre og håndtere statiske filer](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,24 +1,26 @@
 ---
-title: Oversigt over påmindelser (indeholder video)
+title: Oversigt over påmindelser
 description: Dette emne indeholder en generel beskrivelse af påmindelser. Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen.
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 09/04/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 473f53d230d7272ba0fcf78bd05d7020635a870f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984962"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798570"
 ---
 # <a name="alerts-overview"></a>Oversigt over påmindelser
 
@@ -77,15 +79,12 @@ En påmindelsesregel har fem komponenter
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Videoen [Sådan bruges påmindelser til at overvåge filtrerede data](https://youtu.be/ZYKMcv6kl9s) (vises ovenfor) er inkluderet på [Finans- og driftsafspilningslisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
+Videoen [Sådan bruges påmindelser til at overvåge filtrerede data](https://youtu.be/ZYKMcv6kl9s) (vises ovenfor) er inkluderet på afspilningslisten [Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
 
 ### <a name="alert-rule-options"></a>Indstillinger for påmindelsesregel
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-Videoen [Indstillinger for påmindelsesregel](https://youtu.be/cpzimwOjicM) (vist ovenfor) er inkluderet på [Finans- og driftsafspilningslisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
+Videoen [Indstillinger for påmindelsesregel](https://youtu.be/cpzimwOjicM) (vist ovenfor) er inkluderet på afspilningslisten [Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

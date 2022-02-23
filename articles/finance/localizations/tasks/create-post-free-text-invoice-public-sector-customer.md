@@ -2,23 +2,26 @@
 title: Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor
 description: Denne procedure hjælper dig med at oprette og bogføre en fritekstfaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering.
 author: mrolecki
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice, CustTableLookup, ContactPersonLookup, CustPostInvoiceJob
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05a9afdc9f669c1259750d082088d20f38eb6f23124fe00ac45b798b7e4992ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 35e515bb5b95e88f821996b5940d48512f83cb00
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714994"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407715"
 ---
 # <a name="create-and-post-a-free-text-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor
 
@@ -60,6 +63,3 @@ Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Impo
 2. Klik på Oprindelig.
     * Du kan kontrollere jobstatus og hente den faktiske fil på siden Elektroniske rapporteringsjob.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

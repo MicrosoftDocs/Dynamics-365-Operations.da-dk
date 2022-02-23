@@ -2,9 +2,11 @@
 title: Identificere og løse konflikter i opdeling af opgaver
 description: Dette emne forklarer, hvordan du identificerer og løser konflikter i opdelingen af opgaver.
 author: peakerbl
+manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0638699c0e569bbe67024a87d6c55729642557cb085ee899aa98aa0022b12840
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: deff97c7728db91089d3ea834d15de738da500fa
+ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748306"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "4826362"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identificere og løse konflikter i opdeling af opgaver
 
@@ -57,6 +59,3 @@ Når du tildeler brugere til roller, gennemtvinges reglerne for opdeling af opga
 
 > [!NOTE]
 > Hvis der er angivet flere konflikter for samme bruger, skal du vælge brugerposten og evaluere tildelte roller på siden **Brugere**. Du kan undgå denne konflikt ved at validere hver regel, efter at den er tilføjet eller redigeret.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

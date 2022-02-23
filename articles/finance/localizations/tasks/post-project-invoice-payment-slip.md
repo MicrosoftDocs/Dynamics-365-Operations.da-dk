@@ -1,10 +1,12 @@
 ---
 title: Bogføre en projektfaktura med et indbetalingskort
-description: Dette emne forklarer, hvordan du kan bogføre en projektfaktura med et indbetalingskort i det angivne format.
+description: Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, ProjProjectContractsListPage, ProjInvoiceTableCreate, ProjInvoiceTable, ProjProjectsListPage, ProjTableCreate, ProjGroupLookUp, ProjTable,  ProjTransOnAcc, ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0bfb41978fab25c24f681d1f0e8c849b7be5499e
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: e0d07f008f15e7e4bb51871eee4658e7d2c49f8c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601516"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968288"
 ---
 # <a name="post-a-project-invoice-with-a-payment-slip"></a>Bogføre en projektfaktura med et indbetalingskort
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan bogføre en projektfaktura med et vedhæftet indbetalingskort i det angivne format. Indbetalingskortet udskrives med kreditorens id-nummer og fakturanummeret, så indbetalingen kan identificeres.
+Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format. Indbetalingskortet udskrives med kreditorens id-nummer og fakturanummeret, så indbetalingen kan identificeres.
 
 Før du kan udføre denne procedure, skal du først oprette et indbetalingskortformat og oprette indbetalingskort til kundefakturaer. 
 
@@ -94,6 +96,3 @@ Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.
 56. Klik på OK.
 57. Klik på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

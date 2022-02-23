@@ -89,6 +89,3 @@ Du kan uploade et billede af dit firmas logo og andre oplysninger som et brandet
     ![Tilføjelse af links til firmaets politik for beskyttelse af personlige oplysninger og vilkår for anvendelse i mailsidefod](./media/attract-admin-email-footer.png)
 
 4. Vælg **Gem** for at gemme mailskabelonindstillingerne.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Arbejdsområde for omkostningsstyring
 description: Dette emne indeholder oplysninger om arbejdsområdet Omkostningsstyring. Dette arbejdsområde er et centralt punkt, hvor ledere, der er ansvarlige for styring af et omkostningsobjekt eller en række omkostningsobjekter inden for en dimension eller på tværs af dimensioner, har adgang til rapporter.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763184"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441783"
 ---
 # <a name="cost-control-workspace"></a>Arbejdsområde for omkostningsstyring 
 
@@ -116,7 +119,7 @@ Arbejdsområdet **Omkostningsstyring** er designet som en webrapport. Derfor kan
 
 Listen over rapporter, der er tilgængelige for brugere, som f.eks. ledere, styres af indstillingen **Udgivet** på siden **Konfigurationer af arbejdsområde for omkostningsstyring**.
 
-![En rapport, som brugere kan se i arbejdsområdet Omkostningsstyring.](./media/report-cost-control.png)
+![En rapport, som brugere kan se i arbejdsområdet Omkostningsstyring](./media/report-cost-control.png)
 
 En leder kan vælge den regnskabskalenderperiode, der skal vises. Sessionsdatoen bruges til at angive den aktuelle periode, der skal bruges som standard.
 
@@ -140,7 +143,7 @@ To diagrammer viser en oversigt over faktisk vs. budget og budgetafvigelse pr. p
 
 Brugerne kan klikke på **Omkostningsposter** for at dykke ned i postens oplysninger som nødvendigt.
 
-![Omkostningsposter.](./media/cost-entries.png)
+![Omkostningsposter](./media/cost-entries.png)
 
 Leje er f.eks. en udgift, som fordeles til bærere. En bruger, der ønsker at forstå den lejeomkostning, som bæreren skal dække, kan undersøge, hvordan lejen er blevet beregnet.
 
@@ -148,13 +151,10 @@ Hvis brugerne klikker på **Fordelingsgrundlag** på siden **Omkostningsposter**
 
 I følgende eksempel er fordelingsgrundlaget af typen **Fordelingsbasis for formel**, og formlen vises. De faktorer, der definerer formlen, vises. Desuden viser et gitter den beregning, der udføres pr. omkostningsobjekt.
 
-![Beregninger pr. omkostningsobjekt.](./media/cost-entries-allocation-base.png)
+![Beregninger pr. omkostningsobjekt](./media/cost-entries-allocation-base.png)
 
 Yderligere ressourcer 
 
 [Angive adgangsrettigheder for controllere til omkostningsobjekt](access-rights-cost-object-controller.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Angive primosaldi for løn
-description: Emnet beskriver trinnene til angivelse af primosaldi for lønkoder, fradrag, frynsegoder og moms.
+description: Emnet beskriver trinnene til angivelse af primosaldi for lønkoder, fradrag, frynsegoder og moms. Disse oplysninger er vigtig for partnere, som vil overflytte eller overføre data til en ny lønimplementering fra et andet system.
 author: andreabichsel
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -14,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721870"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797778"
 ---
-# <a name="enter-payroll-beginning-balances"></a>Angive startsaldi for løn
+# <a name="enter-payroll-beginning-balances"></a>Angive primosaldi for løn
 
 [!include [banner](../../includes/banner.md)]
 
@@ -164,6 +166,3 @@ Det er muligt at tilbageføre posteringer og angive dem igen. Hvis du vil tilbag
 2. Klik på **Ja**, når meddelelsen "Når du tilbagefører denne betalingsopgørelse, oprettes en tilbageførselsbetalingsopgørelse til modregning af betalingsopgørelsen. Ingen af betalingsopgørelserne kan redigeres. Vil du tilbageføre denne betalingsopgørelse?" vises. 
 
 Når du tilbagefører betalingsopgørelsen, kan du generere en ny betalingsopgørelse for arbejderen ud fra den lønopgørelse, du har oprettet tidligere. Sørg for at rette forkerte linjer på lønopgørelsen, før du genererer den nye betalingsopgørelse, og derefter genererer nye betalingsopgørelser med de korrekte beløb. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

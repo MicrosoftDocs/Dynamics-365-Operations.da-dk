@@ -2,23 +2,26 @@
 title: Registrere kreditorfaktura og sammenligne med modtaget antal
 description: Når du modtager en faktura fra en leverandør af varer eller tjenester på en indkøbsordre, kræver forretningsprocesserne måske, at varerne eller tjenesterne modtages, før fakturaen kan godkendes til betaling.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 352e188dcd25b486a1284be6958f44a5543f222c358153557366f9bdcc209f05
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa79ab46e9fdc6f8a2b4524d372949314ac2d200
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722905"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441504"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>Registrere kreditorfaktura og sammenligne med modtaget antal
 
@@ -62,6 +65,3 @@ Denne procedure bruger demofirmaet USMF. Rollen kreditorchef eller rollen regnsk
 10. Klik på Gennemse i handlingsruden.
 11. Klik på Detaljer om sammenholdelse.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

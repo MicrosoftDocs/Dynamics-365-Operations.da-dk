@@ -56,6 +56,3 @@ Anbefalingerne vises som kort i fanen **Kandidatemner** for alle jobs, der har s
 > Hvis du først for nyligt er begyndt at anvende Attract, er du nødt til at vente, indtil du har 10 eller flere ansøgere med komplette profiler eller CV'er, før du kan benytte denne funktion.
 
 For at undgå potentielle partiskhed i anbefalingerne scanner Attract alene kandidatprofilerne i relation til færdigheder, kvalifikationer og andre nøgleord, som matcher stillingsbeskrivelsen. Derudover fjerner Attract personlige oplysninger fra kandidatens profil forud for vurderingen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

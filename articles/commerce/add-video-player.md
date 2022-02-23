@@ -2,30 +2,36 @@
 title: Videoafspillermodul
 description: Dette emne omhandler videoafspillermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731713"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411035"
 ---
 # <a name="video-player-module"></a>Videoafspillermodul
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler videoafspillermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Videoafspillermodulet bruges til at understøtte videoafspilning. Den kan føjes til en hvilken som helst side, som videoindholdet uploades til og vises i CMS (Content Management system). Videoafspillermodulet understøtter medietypen .mp4.
 
@@ -43,16 +49,12 @@ Videoafspillermodulet understøtter også sekundære lydspor. I forbindelse med 
 
 Det følgende billede viser et eksempel på et videoafspillermodul på en startside.
 
-![Eksempel på et videoafspillermodul.](./media/ecommerce-videoplayer.PNG)
+![Eksempel på et videoafspillermodul](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Egenskaber for videoafspillermodul
 
-| Egenskabsbetegnelse         | Værdi                               | Betegnelse |
+| Egenskabsbetegnelse         | Værdi                               | Beskrivende tekst |
 |-----------------------|-------------------------------------|-------------|
-| Overskrift               | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Som standard bruges **H2** overskriften, men koden kan ændres efter behov for at opfylde tilgængelighedskravene. |
-| RTF             | Afsnitstekst | Modulet understøtter afsnitstekst i RTF-format. Nogle grundlæggende RTF-funktioner understøttes, f. eks. hyperlinks og fed, understreget og kursiv tekst. Nogle af disse funktioner kan tilsidesættes af det sidetema, der anvendes på modulet. |
-| Binding                  | Linktekst, URL-adresse for link, ARIA-mærkat (Accessible Rich Internet Applications) og **Åbn link under ny fane** | Modulet understøtter et eller flere links til "handlingsplaner". Hvis der tilføjes et link, er linktekst, en URL-adresse og en ARIA-mærkat påkrævet. ARIA-mærkater skal være beskrivende for at imødekomme tilgængelighedskravene. Links kan konfigureres, så de åbnes under en ny fane. |
-| Undertekst              | Overskrift, tekst eller link | Der kan tilføjes yderligere sammenhæng for videoafspillermodulet, f.eks. en forfatter eller et designernavn, eller links til personlige blogs. |
 | Automatisk afspilning             | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, afspilles videoen automatisk. |
 | Slå mikrofon fra                  | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, deaktiveres lyden. Standardværdien for denne afspiller er **Falsk**. I Google Chrome-browseren er automatisk afspilning af videoer som standard slået fra, og lyden afspilles kun, hvis brugeren afspiller videoen manuelt. |
 | Løkke                  | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, afspilles videoen gentagne gange i en løkke. |
@@ -62,9 +64,6 @@ Det følgende billede viser et eksempel på et videoafspillermodul på en starts
 | Knapper til videoafspiller | **Sand** eller **Falsk**               | Når værdien er angivet til **Sand**, vises alle videoafspillerens kontrolelementer. Disse kontrolelementer omfatter knapper til afspilning og pause, en statusindikator og valg af undertekster. |
 | Skjul plakatbillede     | **Sand** eller **Falsk**               | En video kan have en plakatramme. Når værdien for denne egenskab er angivet til **Sand**, er plakatrammen skjult. |
 | Maskeringsniveau            | Et tal mellem **0** og **100** | Den maske, der anvendes på videoen til stylingen. |
-
-> [!IMPORTANT]
-> Egenskaberne **Overskrift**, **Tekst**, **Link** og **Undertekst** er tilgængelige pr. Dynamics 365 Commerce version 10.0.20.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Føje et videoafspillermodul til en side
 
@@ -107,6 +106,3 @@ Hvis du vil føje et videoafspillermodul til en ny side og angive de påkrævede
 [Tekstblokmodul](add-content-rich-block.md)
 
 [Indholdsblokmodul](add-hero-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

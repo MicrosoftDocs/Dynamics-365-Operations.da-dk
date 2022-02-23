@@ -2,25 +2,28 @@
 title: Dimensioner for omkostningselement
 description: Som et af de centrale elementer i omkostningsregnskabet bruges omkostningselementdimensioner til at kategorisere og spore, hvor omkostningerne flyder til.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
 ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 667fb81a2c1c8f564c09fe8fb7921c7aff75920bfa4326e82078583df61576e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e67ce047d08af6d34090ee4e1dc379dd16ecce07
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728763"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441653"
 ---
 # <a name="cost-element-dimensions"></a>Dimensioner for omkostningselement
 
@@ -63,7 +66,7 @@ Der findes to typer omkostningselementer: primære omkostningselementer og sekun
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Omkostningselementdimensioner og omkostningselementers dimensionsmedlemmer
 Omkostningselementer omtales som *omkostningselementdimensioner*. De enkelte dimensionsværdier kaldes *omkostningselementers dimensionsmedlemmer*. For eksempel kan du have en dansk struktur for kontoplanen, der er grundlaget for lovpligtig rapportering. Kontoplanen anvendes som omkostningselementdimension. De konti, som er primære omkostningselementer, repræsenteres som omkostningselementets dimensionsmedlemmer i omkostningsregnskabet. Følgende skærmbillede vises et eksempel på hovedkonti som omkostningselementdimension med dets faktiske hovedkonti som dimensionsmedlemmer af omkostningselementet. 
 
-[![Skærmbillede af Hovedkonti som dimension for omkostningselement.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Skærmbillede af Hovedkonti som dimension for omkostningselement](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Importere omkostningselementers dimensionsmedlemmer gennem dataforbindelser
 For at forenkle opsætningen af omkostningselementets dimensionsmedlemmer i omkostningsregnskabet kan du bruge dataforbindelser, der enten er færdigbyggede eller tilpassede til at hente de primære omkostningselementer fra et eller flere kildesystemer.
@@ -73,6 +76,3 @@ Da omkostningselementer repræsenterer det laveste niveau af oplysninger om omko
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

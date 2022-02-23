@@ -1,10 +1,12 @@
 ---
 title: Generelle budgetreservationer
 description: Dette emne indeholder oplysninger om generelle budgetreservationer i den offentlige sektor.
-author: TaylorVH
-ms.date: 08/29/2021
+author: AlexRenney
+manager: AnnBe
+ms.date: 04/25/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetReservation_PSN
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 40050d069d167eb82b4a1050a5b83dca0082af02
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 1420c6c11b59efe4d01c13f269a65bd02dd76d4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890816"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964468"
 ---
 # <a name="general-budget-reservations"></a>Generelle budgetreservationer
 
@@ -42,13 +44,6 @@ Du kan oprette forskellige typer generelle budgetreservationer for at angive for
 
 I den generelle budgetreservation kan du også få vist regnskabsfordelinger og kladdelinjerne for reskontro for posteringen.
 
-> [!NOTE]
-> Finanskonti, der bruges i generelle budgetreservationer, skal medtages i budgetstyring. Hvis disse konti ikke er inkluderet i budgetstyring, sker følgende. 
->- Generel budgetreservation og deres forbrugende dokumenter behæftes ikke eller behæftes på forhånd. 
->- Med overførsler oprettes der ikke budgetregisterposter. 
->- Annullering og færdiggørelse af generelle budgetreservationer reducerer ikke det oversendte budget.
->- Finanskonti medtages ikke i forespørgslerne til budgetanalyser og budgetstyring.
-
 Hvis du bruger projektregnskab, kan du aktivere sporing af bindende omkostninger for generelle budgetreservationer.
 
 Du kan overføre generelle budgetreservationer fra det ene regnskabsår til det andet. Du kan også lukke eller færdiggøre en afsluttet eller udløbet generel budgetreservation i slutningen af året.
@@ -58,6 +53,3 @@ En generel budgetreservation eftergives på forskellige måder, afhængigt af de
 - Hvis dokumentet er en indkøbsordre, eftergives reservationen, når indkøbsordren er *bekræftet*.
 - Hvis dokumentet er en faktura, som ikke henviser til en indkøbsordre eller købsaftale, eftergives den generelle budgetreservationen, når fakturaen *bogføres*.
 - Hvis dokumentet er en indkøbsrekvisition, eftergives reservationen, når indkøbsrekvisitionen er *godkendt*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

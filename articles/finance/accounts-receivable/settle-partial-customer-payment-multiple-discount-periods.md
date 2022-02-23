@@ -2,25 +2,28 @@
 title: Udlign en delvis debitorbetaling, der omfatter flere rabatperioder
 description: Denne artikel viser, hvordan delvise debitorbetalinger udlignes, når der er flere rabatperioder.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14471
 ms.assetid: b633a7c4-c18d-42e7-91cc-adcdc8a3ba98
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d0d517524add5e18b1f0795b2ee2fd7f5b7686b26919a7e8f2e20ac1d243fe9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f4d5178aeb3294fd3b40815bb294a7f2ff08b71
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740116"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441456"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Udlign en delvis debitorbetaling, der omfatter flere rabatperioder
 
@@ -31,7 +34,7 @@ Denne artikel viser, hvordan delvise debitorbetalinger udlignes, når der er fle
 Fabrikam tilbyder kunden 4031 to kasserabatperioder. Kunden modtager en kasserabat på 2 %, hvis fakturaen er betalt inden fem dage og en kasserabat på 1 %, hvis fakturaen betales inden 14 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="invoice"></a>Faktura
-Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 4031. Da Arnie gennemgår kasserabatterne for denne faktura, ser han, at debitor 4031 får en rabat på 20,00, hvis fakturaen betales inden den 30. juni. Hvis fakturaen er betalt den 9. juli, modtager kunden en rabat på 10,00.
+Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 4031. Da han gennemgår kasserabatter for denne faktura, ser Arnie, at debitor 4031 modtager en rabat på 20,00, hvis fakturaen betales inden den 30. juni. Hvis fakturaen er betalt den 9. juli, modtager kunden en rabat på 10,00.
 
 | Kasserabatdato | Kasserabatbeløb | Beløb i transaktionsvaluta |
 |--------------------|----------------------|--------------------------------|
@@ -54,7 +57,7 @@ Kunde 4031 foretager en delvis betaling på 294,00 d. 28. juni. Da d. 28 juni er
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Hvis du ikke ændrer værdien **Beløb, der skal udlignes** til **294,00**, vil værdierne **Kasserabatbeløb**, der vises, variere. 6,00 vil dog blive medtaget som kasserabatten, når betalingen bogføres, fordi udligning automatisk justerer værdien **Beløb, der skal udlignes** for dig.
 
-| &nbsp;                       | &nbsp;    |
+|                              |           |
 |------------------------------|-----------|
 | Kasserabatdato           | 30-6-2015 |
 | Kasserabatbeløb         | 20,00     |
@@ -73,7 +76,7 @@ Den 8. juli betaler debitoren resten af fakturabeløbet. En rabat på 7,00 (1 %)
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-| &nbsp;                       | &nbsp;    |
+|                              |           |
 |------------------------------|-----------|
 | Kasserabatdato           | 7/09/2015 |
 | Kasserabatbeløb         | 30,00     |
@@ -95,6 +98,3 @@ Fakturasaldoen er nu 0,00. Arnie kan se oplysningerne på siden **Debitorposteri
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

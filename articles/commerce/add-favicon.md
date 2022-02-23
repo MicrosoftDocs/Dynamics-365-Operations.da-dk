@@ -2,30 +2,35 @@
 title: Tilføj en favicon
 description: I dette emne forklares det, hvordan du føjer et favoritikon til webstedet.
 author: bicyclingfool
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964726"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411014"
 ---
-# <a name="add-a-favicon"></a>Tilføje et favoritikon
+# <a name="add-a-favicon"></a>Tilføj en favicon
 
 [!include [banner](includes/banner.md)]
 
 I dette emne forklares det, hvordan du føjer et favoritikon til webstedet.
+
+## <a name="overview"></a>Oversigt
 
 Et favoritikon er en lille grafikfil, der bl.a. vises under en webbrowserfane, på adresselinjen, i browserhistorikken og i bogmærker eller favoritter. Det anbefales, at du føjer et favoritikon til dit websted, fordi det repræsenterer og forstærker dit varemærke og hjælper med at skelne dit websted fra andre websteder, som kunderne besøger.
 
@@ -61,7 +66,7 @@ Følg disse trin for at oprette et fragment, der indeholder en metakode til dit 
 1. Vælg **Metakoder** i dialogboksen **Nyt fragment** som det modul, fragmentet er baseret på.
 1. Angiv et navn til fragmentet, og vælg derefter **OK**.
 1. Vælg det underordnede **Standardmetamoder** i fragmenthierarkitræet.
-1. Vælg **Tilføj** under **Metakoder** i ruden til højre, og angiv derefter den HTML-streng, du oprettede til favoritikonet tidligere. 
+1. Vælg **Tilføj** under **Metakoder** i ruden til højre, og angiv derefter den HTML-streng, du oprettede til favoritikonet tidligere. 
 1. Vælg **Afslut redigering**, og vælg derefter **Publicer** for at publicere fragmentet.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Føj fragmentet for metakode til HTML-hovedsektionen på dine sider
@@ -86,12 +91,11 @@ Når du får vist sider, der er baseret på den skabelon, du har føjet til frag
 
 [Arbejd med CSS-tilsidesættelsesfiler](css-override-files.md)
 
-[Tilføje en copyright-meddelelse](add-copyright-notice.md)
+[Tilføj en velkomstmeddelelse](add-welcome-message.md)
+
+[Tilføj en copyright-meddelelse](add-copyright-notice.md)
 
 [Føje sprog til webstedet](add-languages-to-site.md)
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

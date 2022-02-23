@@ -1,25 +1,28 @@
 ---
 title: Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 description: Leverandører, der har spørgsmål til en RFP, kan sende deres spørgsmål og læse svarene på siden til **Kreditorsamarbejde**.
-author: Henrikan
+author: velofog
+manager: tfehr
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQVendQuestionAnswer
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: roschlom
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 80ec7ae9e345f20344b48de39111532a9896b38d
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: d0c53a626cb2a727c6578b306ba0d7ab2f612dba
+ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777754"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654327"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 
@@ -31,7 +34,7 @@ Brugerne kan udgive svar på leverandørspørgsmål mere end én gang. Kreditore
 
 ## <a name="turn-on-the-feature"></a>Slå funktionen til
 
-Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Indkøb og forsyning*
 - **Funktionsnavn:** *Spørgsmål og svar vedrørende tilbudsanmodninger*
@@ -102,6 +105,3 @@ I forbindelse med publicerede tilbudsanmodninger skal du redigere en tilbudsanmo
 
 > [!IMPORTANT]
 > Hvis du ændrer en eksisterende tilbudsanmodning med det formål at tillade leverandørspørgsmål, rydder systemet alle eksisterende svar, når du sender tilbudsanmodningen igen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

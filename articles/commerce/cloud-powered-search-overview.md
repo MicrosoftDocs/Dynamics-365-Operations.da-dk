@@ -2,29 +2,36 @@
 title: Oversigt over skybaseret søgning
 description: Dette emne indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
+manager: annbe
 ms.date: 06/29/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983663"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410957"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversigt over skybaseret søgning
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Produktregistrering hjælper dig med at sikre, at kunder hurtigt og nemt kan finde produkter ved at gennemse kategorier, foretage søgninger og filtrere. Detailhandlere regner produktopdagelse for et primært værktøj til kundeinteraktion på tværs af alle kanaler.
 
@@ -40,7 +47,7 @@ Søgerelevansen og ydeevnen er nøglefaktorer i omnikanaloplevelsen, da produktr
 
 I følgende illustration vises et eksempel på typiske gennemsyns- og søgefunktioner.
 
-![Landingsside for søgninger.](./media/SearchLanding.png)
+![Landingsside for søgninger](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Filterbaseret navigation og oversigt over valg 
 
@@ -50,7 +57,7 @@ Ved at bruge filterbaseret navigation kan du konfigurere forskellige afgrænsere
 
 I følgende illustration vises et eksempel, hvor der bruges filterbaseret navigation i en søgning.
 
-![Oversigt over valgmuligheder.](./media/ChoiceSummary.png)
+![Oversigt over valgmuligheder](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Avancerede automatiske forslag
 
@@ -60,7 +67,7 @@ Dynamics 365 Commerce understøtter også funktioner for nøgleordsforekomster i
 
 I følgende illustration vises et eksempel, hvor der bruges avancerede automatiske forslag.
 
-![avancerede automatiske forslag.](./media/ImmersiveAutoSuggestUX.png)
+![avancerede automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Sortér
 
@@ -68,13 +75,10 @@ Med forbedret sortering i Dynamics 365 Commerce kan kunderne sortere, søge efte
 
 >[!NOTE]
 >Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontroller, at der er en post for "ProductSearch.UseAzureSearch, der er indstillet til 'sand' under **Commerce-parametre > Konfigurationsparametre**. 
-![Konfigurationsparametre for cloud-baseret søgning.](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparametre for cloud-baseret søgning](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over standardlandingsside for kategori og side for søgeresultater](category-search-page-overview.md)
 
 [Administrere SEO-metadata](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

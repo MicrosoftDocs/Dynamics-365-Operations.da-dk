@@ -1,10 +1,12 @@
 ---
 title: Planlæg arbejdsordrer
 description: Dette emne beskriver, hvordan du planlægger arbejdsordrer i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718053"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020223"
 ---
 # <a name="schedule-work-orders"></a>Planlæg arbejdsordrer
 
@@ -56,7 +58,7 @@ Det er kun arbejdsordrer med en livscyklustilstand, der kan planlægges. Tillad 
 
 *Eksempel:* I nedenstående figur genererer den formel, der er indsat i feltet **Forventet start**, arbejdsordreplanlægning for alle arbejdsordrer med en forventet startdato en uge fra det aktuelle tidspunkt og senere. Denne formel kan være nyttig, når du kører ordreplanlægning løbende, men vil sikre dig, at de arbejdsordrer, der er planlagt for de næste 5-6 dage, ikke omplanlægges.
 
-![Figur 1.](media/03-work-order-scheduling.png)
+![Figur 1](media/03-work-order-scheduling.png)
 
 Den arbejdsordretype, der er knyttet til arbejdsordrer, kan f.eks. oprette planlægning for én vedligeholdelsesarbejder (**Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Arbejdsordretyper** > **Én vedligeholdelsesarbejder**-til/fra-knappen indstillet til "Ja"). Det betyder, at hvis arbejdsordretypen bruges på en arbejdsordre, er til/fra-knappen **Én vedligeholdelsesarbejder** automatisk indstillet til "Ja" på detaljesiden **Alle arbejdsordrer** > visningen **Hoved** > oversigtspanelet **Tidsplan**. Under planlægningen af arbejdsordrer planlægges alle arbejdsordrejob, der er oprettet på arbejdsordren, efterfølgende for den samme vedligeholdelsesarbejder. Hvis det er nødvendigt, kan du redigere valget på til/fra-knappen **Én vedligeholdelsesarbejder** i **Alle arbejdsordrer**, så der er mulighed for at planlægge flere arbejdere eller én arbejder på arbejdsordrejob.
 
@@ -135,6 +137,3 @@ Sådan kan du se og arbejde med Gantt-diagrammet:
     - Hvis du vil ændre planlægningen af en vist arbejdsordre, skal du vælge og derefter trække den til den relevante nye dato og det ønskede klokkeslæt.
 
 1. Hvis du har foretaget ændringer, skal du vælge **Gem** i handlingsruden for at gemme dem.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

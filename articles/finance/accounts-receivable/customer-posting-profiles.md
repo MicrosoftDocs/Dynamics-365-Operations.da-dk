@@ -1,141 +1,142 @@
 ---
 title: Debitor, posteringsprofiler
-description: I dette emne beskrives debitorposteringsprofiler, der styrer, hvordan kundetransaktioner bogføres i finansmodulet.
-author: JodiChristiansen
-ms.date: 12/22/2021
+description: Debitorer, der bogfører profiler, styrer, hvordan debitortransaktioner bogføres til Finans.
+author: ShivamPandey-msft
+manager: AnnBe
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPosting, CustVendExternalItem
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
-ms.author: abruer
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91432a401a8f8a499e9f5e2bbe7157408faac822
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: dff786d6e872e48f9605f9a472b7bffd409c5b3f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952565"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441422"
 ---
 # <a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives debitorposteringsprofiler, der styrer, hvordan kundetransaktioner bogføres i finansmodulet.
+Debitorer, der bogfører profiler, styrer, hvordan debitortransaktioner bogføres til Finans.
 
-## <a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
+<a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
+-------------------------
 
-Debitorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle debitorer, en gruppe debitorer eller en enkelt debitor. Disse indstillinger bruges, når du opretter salgsordrefakturaer, fritekstfakturaer, projektfakturaer, betalingskladder, rykkere og rentenotaer. 
+Debitorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle debitorer, en gruppe debitorer eller en enkelt debitor. Disse indstillinger bruges, når du opretter salgsordrer, fritekstfakturaer, kontantbetalinger, rykkere og rentenotaer. For nogle transaktioner kan du vælge en posteringsprofil, der er anderledes end, og som prioriteres højere end de posteringsprofiler, der er oprettet for transaktioner på denne side. 
 
-Standardposteringsprofilen defineres under fanen **Finans og Moms** på siden **Debitorparametre**. Den medtages derefter automatisk i overskriften på nye dokumenter. Du kan ændre den der, hvis der kræves en anden posteringsprofil. 
+Standardposteringsprofilen defineres i oversigtspanelet Finans og Moms på siden Debitorparametre. Standardposteringsprofilen medtages derefter automatisk i hovedet i nye dokumenter, hvor du kan ændre den til en anden posteringsprofil, hvis det er nødvendigt.
 
-Organisationer, der accepterer forudbetalinger fra kunder, konfigurerer ofte en anden posteringsprofil til forudbetalinger og tilknytter den i parametrene som standardposteringsprofilen for forudbetalinger. Du kan finde flere oplysninger i [Forudbetalinger fra debitorer](customer-prepayments.md).
-
-Du kan også knytte bogføringsdefinitioner til posteringsbogføringstyper på siden **Definitioner af posteringsbogføring**. Bogføringsdefinitioner bruges i stedet for posteringsprofiler til at styre bogføring af kundetransaktioner i finansmodulet. Yderligere oplysninger finder du i afsnittet [Posteringsdefinitioner](../general-ledger/posting-definitions.md).
+Du kan også knytte bogføringsdefinitioner til posteringsbogføringstyper på siden Definitioner af posteringsbogføring. I stedet for posteringsprofiler er det bogføringsdefinitioner, der styrer, hvordan debitorposter bogføres i finansmodulet.
 
 ## <a name="creating-a-posting-profile"></a>Oprette en posteringsprofil
 Angiv de finanskonti, der skal bruges til bogføring af poster med den valgte posteringsprofil. Vælg en kontokode og – når det er muligt – en konto eller et gruppenummer til den valgte posteringsprofil. Under bogføringsprocessen finder programmet den posteringsprofil, der passer bedst til hver enkelt post, ved at søge efter den mest specifikke kombination af kontokode, kontonummer eller gruppe og nummer i følgende prioritetsrækkefølge:
 
-| Feltværdien Kontokode | Feltværdien Konto/gruppenummer                | Søgeprioritet |
-|--------------------------|-------------------------------------------------|-----------------|
-| Tabellen                    | Bestemt debitorkonto                       | 1               |
-| Gruppe                    | Debitorgruppe, som debitor er tilknyttet | 2               |
-| Alt                      | Tom                                           | 3               |
+| Feltværdien **Kontokode** | Feltværdien **Konto/gruppenummer**            | Søgeprioritet |
+|------------------------------|-------------------------------------------------|-----------------|
+| **Tabel**                    | Bestemt debitorkonto                       | 1               |
+| **Gruppe**                    | Debitorgruppe, som debitor er tilknyttet | 2               |
+| **Alle**                      | Tom                                           | 3               |
 
-Hvis alle kundetransaktioner skal have samme posteringsprofil, skal du kun definere én posteringsprofil med **Alle** angivet i feltet **Kontokode**. Angiv følgende værdier for at definere en posteringsprofil.
+Hvis alle debitorposteringer skal have samme posteringsprofil, skal du kun definere én posteringsprofil med Alle i feltet Kontokode. Angiv følgende værdier for at definere en posteringsprofil:
 
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Felt</th>
 <th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Bogføringsprofil</td>
+<tr class="odd">
+<td><strong>Posteringsprofil</strong></td>
 <td>Angiv en kode for posteringsprofilen. Eksempel: Hvis du vil have én konto for debitorsaldi i indenlandsk valuta og én konto for debitorsaldi i udenlandsk valuta, skal du oprette to posteringsprofiler. Du kan kalde den ene konto Indland og den anden Udland.</td>
 </tr>
-<tr>
-<td>Beskrivelse</td>
+<tr class="even">
+<td><strong>Beskrivelse</strong></td>
 <td>Angiv en beskrivelse af posteringsprofilen. Dette bruges kun til at identificere posteringsprofilen bedre, når du ser den på denne side.</td>
 </tr>
-<tr>
-<td>Kontokode</td>
+<tr class="odd">
+<td><strong>Kontokode</strong></td>
 <td>Angiv, om posteringsprofilen skal gælde for en bestemt debitor, en gruppe af debitorer eller alle debitorer:
 <ul>
-<li><b>Tabel</b> – Posteringsprofilen anvendes på en enkelt debitor. Vælg debitorkontoen i feltet <b>Konto/gruppenummer</b>.</li>
-<li><b>Gruppe</b> – Posteringsprofilen anvendes på en debitorgruppe. Vælg debitorgruppen i feltet <b>Konto/gruppenummer</b>.</li>
-<li><b>Alle</b> – Posteringsprofilen anvendes på alle debitorer. Lad feltet <b>Konto/gruppenummer</b> være tomt.</li>
-</ul>
-</td>
+<li><strong>Tabel</strong> – Posteringsprofilen anvendes på en enkelt debitor. Vælg debitorkontoen i feltet Konto/gruppenummer.</li>
+<li><strong>Gruppe</strong> – Posteringsprofilen anvendes på en debitorgruppe. Vælg debitorgruppen i feltet Konto/gruppenummer.</li>
+<li><strong>Alle</strong> – Posteringsprofilen anvendes på alle debitorer. Lad feltet Konto/gruppenummer være tomt.</li>
+</ul></td>
 </tr>
-<tr>
-<td>Konto/gruppenummer</td>
-<td>Hvis du vælger <b>Tabel</b> i feltet <b>Kontokode</b>, skal du vælge kontonummeret på den debitor, der er knyttet til posteringsprofilen. Hvis du vælger <b>Gruppe</b>, skal du vælge debitorgruppen. Hvis du vælger <b>Alle</b>, skal feltet stå tomt.</td>
+<tr class="even">
+<td><strong>Konto/gruppenummer</strong></td>
+<td>Hvis du vælger Tabel i feltet Kontokode, skal du vælge kontonummeret på den debitor, der er knyttet til posteringsprofilen. Hvis du vælger Gruppe, skal du vælge debitorgruppen. Hvis du vælger Alle, skal feltet stå tomt.</td>
 </tr>
-<tr>
-<td>Samlekonto</td>
-<td>Vælg den hovedkonto, der skal bruges som debitorhandelskonto for de debitorer, som er tilknyttet posteringsprofilen. Denne konto er kontoen til bogføringstypen <b>Debitorsaldo</b>.</td>
+<tr class="odd">
+<td><strong>Samlekonto</strong></td>
+<td>Vælg den finanskonto, der skal bruges som samlekonto for de debitorer, som er tilknyttet posteringsprofilen.</td>
 </tr>
-<tr>
-<td>Likviditetskonto for betalinger</td>
+<tr class="even">
+<td><strong>Afregn konto</strong></td>
 <td>Vælg den likviditetskonto i Finans, der bruges til likviditetsbudgetter. Dette felt vises kun, hvis likviditetsbudgetter er aktiveret.</td>
 </tr>
-<tr>
-<td>Momsforudbetalinger</td>
-<td><p>Angiv kontonummeret for momsbetaling, der er modtaget forud.</p>
-<p><strong>Bemærk:</strong> Brug siden <b>Debitorparametre</b> til at angive den posteringsprofil, der bruges, når en betaling er markeret som forudbetaling.</p>
-</td>
+<tr class="odd">
+<td><strong>Momsforudbetalinger</strong></td>
+<td>Angiv kontonummeret for momsbetaling, der er modtaget forud.
+<div class="alert">
+<table>
+<thead>
+<tr class="header">
+<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Note" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Bemærk!</strong></th>
 </tr>
-<tr>
-<td>Passiver for rabatkonto</td>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Brug siden Debitorparametre til at angive den posteringsprofil, der skal bruges, når en betaling er markeret som forudbetaling.</td>
+</tr>
+</tbody>
+</table>
+</div></td>
+</tr>
+<tr class="even">
+<td><strong>Passiver for rabatkonto</strong></td>
 <td>Vælg finanskontoen til rabatpassiver.</td>
 </tr>
-<tr>
-<td>Rykkerforløb</td>
+<tr class="odd">
+<td><strong>Rykkerforløb</strong></td>
 <td>Vælg identifikationen for den rykkerserie, der skal bruges i forbindelse med debitorer, som har den aktuelle posteringsprofil tilknyttet.</td>
 </tr>
-<tr>
-<td>Rentekode</td>
+<tr class="even">
+<td><strong>Rentekode</strong></td>
 <td>Vælg den rentekode, der skal bruges ved renteberegning for debitorer, som har den aktuelle posteringsprofil tilknyttet.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="posting-examples"></a>Eksempler på bogføring
+### 
 
-I følgende tabel vises eksempler på standardbogføringstyper med eksempler på hovedkonti og beskrivelser. I kolonnen **Debet/Kredit** angives, om transaktionen typisk er debet eller kredit eller i visse tilfælde kan bogføres som det ene eller det andet. I kolonnen **Clearingkonto** angives, om bogføringstypen er en clearingkonto. Det betyder, at det beløb, der bogføres på denne konto, automatisk tilbageføres, når en senere transaktion bogføres. 
-
-| Bogføringstype | Eksempel på hovedkonto | Eksempel på hovedkontonavn | Kontotype | Debet/Kredit | Clearingkonto | Beskrivelse |
-|--------------|----------------------|---------------------------|--------------|--------------|------------------|-------------|
-| Debitorsaldo | 130100 | Debitorhandel | Aktiv | Begge | Nej | Angiv kontoen i feltet **Samlekonto**.|
-| Ingen | 110110 | Pengeinstitutkonto | Aktiv | Begge | Nej | Angiv hovedkontoen i feltet **Likviditetskonto til betalinger**. Denne konto bruges ikke til bogføring. Den bruges kun til likviditetsbudgettering. |
-| Momsforudbetalinger | 202900 | Momsclearing | Passiv | Begge | Ja | Angiv kontonummeret for momsbetaling, der er modtaget forud. |
-| Passiver for rabatkonto | 250600 | Udskudt indtægt og rabatter | Passiv | Begge | Ja | Vælg finanskontoen til rabatpassiver.|     
-
-### <a name="table-restrictions"></a>Tabelbegrænsninger
+### <a name="table-restrictions"></a>**Tabelbegrænsninger**
 
 For de posteringer, der har den valgte posteringsprofil, skal du angive, om posterne skal udlignes automatisk, om der skal beregnes rente og udsendes rykkere. Du kan også vælge den konto, der skal bruges, når poster med den valgte posteringsprofil lukkes.
 
 Angiv følgende værdier for at definere en posteringsprofil:
 
-| Felt                 | Beskrivelse                                           |
-|-----------------------|-------------------------------------------------------|
-| Bosted        | Vælg denne, hvis der skal kunne foretages automatisk udligning af poster med denne posteringsprofil. Hvis denne indstilling ikke er markeret, skal du manuelt udligne transaktioner ved hjælp af siden **Udlign åbne posteringer** eller siden **Angiv debitorbetalinger**. |
-| Renter          | Vælg denne, hvis der skal beregnes rente på udestående saldi for debitorkonti med denne profil. Hvis denne ikke markeres, bliver der ikke beregnet rente for disse debitorer.                                           |
-| Rykkerbrev | Vælg denne, hvis der skal genereres rykkere for debitorkonti med denne profil. Hvis denne ikke markeres, bliver der ikke genereret rykkere for disse debitorer.                                                 |
-| Luk             | Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes. En post anses for lukket, når der er fuldt ud udlignet.             |
+| Felt                 | Beskrivelse                                                                                                                                                                                                                                        |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Udligning**        | Vælg denne, hvis der skal kunne foretages automatisk udligning af poster med denne posteringsprofil. Hvis denne indstilling ikke er markeret, skal du manuelt udligne posteringer ved hjælp af siden Udligning af åbne posteringer eller siden Angiv debitorbetalinger. |
+| **Renter**          | Vælg denne, hvis der skal beregnes rente på udestående saldi for debitorkonti med denne profil. Hvis denne ikke markeres, bliver der ikke beregnet rente for disse debitorer.                                           |
+| **Rykker** | Vælg denne, hvis der skal genereres rykkere for debitorkonti med denne profil. Hvis denne ikke markeres, bliver der ikke genereret rykkere for disse debitorer.                                                 |
+| **Luk**             | Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes. En post anses for lukket, når der er fuldt ud udlignet.                                                                           |
 
 
 
 Du kan finde flere oplysninger i [Oversigt over debitorbetalinger](../cash-bank-management/tasks/customer-payment-overview.md).
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

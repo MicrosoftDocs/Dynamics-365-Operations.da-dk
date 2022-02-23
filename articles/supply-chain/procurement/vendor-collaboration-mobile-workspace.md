@@ -1,25 +1,27 @@
 ---
 title: Mobilarbejdsområde for kreditorsamarbejde
 description: Dette emne indeholder oplysninger om arbejdsområdet Kreditorsamarbejde på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: henrikan
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577018"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020830"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilarbejdsområde for kreditorsamarbejde
 
@@ -57,7 +59,7 @@ Arbejdsområdet **Kreditorsamarbejde** til mobilenheder giver en leverandør mul
 Forudsætningerne varierer, afhængigt af hvilken version af Microsoft Dynamics 365 der er installeret i organisationen.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Forudsætninger, hvis du bruger Supply Chain Management
-Hvis Supply Chain Management er implementeret for organisationen, skal systemadministratoren publicere mobilarbejdsområdet **Kreditorsamarbejde**. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Hvis Supply Chain Management er implementeret for organisationen, skal systemadministratoren publicere mobilarbejdsområdet **Kreditorsamarbejde**. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere
 Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, skal systemadministratoren opfylde følgende forudsætninger. 
@@ -77,7 +79,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 <td>KB 3216943 er en binær opdatering, der skal bruges, hvis du bruger platformsopdatering 3. For at implementere denne KB skal systemadministratoren gøre følgende.
 <ol>
 <li>Hente KB 3216943 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Installer den binære opdatering, der leveres som en pakke, der kan installeres. Du kan finde oplysninger om, hvordan du anvender en pakke, der kan installeres, i <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Anvende en installerbar pakke</a>.</li>
+<li>Installer den binære opdatering, der leveres som en pakke, der kan installeres. Du kan finde oplysninger om, hvordan du anvender en pakke, der kan installeres, i <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Anvende en installerbar pakke</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +87,14 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 <td>Systemadministrator</td>
 <td>KB 4013633 er et X ++ opdatering eller metadatahotfix, der indeholder arbejdsområdet <strong>Disponibelt lager</strong> til mobilenheder. For at implementere KB 4013633 skal systemadministratoren gøre følgende.
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Hent metadata-hotfixet fra LCS</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installere metadatahotfixet</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Anvend den installerbare pakke</a></li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Hent metadata-hotfixet fra LCS</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installere metadatahotfixet</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Anvend den installerbare pakke</a></li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Mobilarbejdsområdet <strong>Kreditorsamarbejde</strong> skal være publiceret.</td><td>Systemadministrator</td>
-<td>Se <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publicere et arbejdsområde til mobilenheder</a>.</td>
+<td>Se <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publicere et arbejdsområde til mobilenheder</a>.</td>
 </tr>
 <tr class="even">
 <td>Kreditorbrugeren skal have adgang til webgrænsefladen for kreditorsamarbejde i webklienten og skal konfigurere en bruger til kreditorsamarbejd.</td><td>Indkøbsmedarbejdere og systemadministratoren</td>
@@ -120,12 +122,12 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 4.  Første gang du logger på, bliver du bedt om at angive brugernavn og adgangskode. Angiv dine legitimationsoplysninger.
 5.  Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
-    [![Træk ned for at opdatere.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Træk for at opdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Brug mobilarbejdsområdet for kreditorsamarbejde
 Når du vælger **Kreditorsamarbejde**-arbejdsområdet, kan du se følgende indstillinger.
 
-![Mobilarbejdsområde for kreditorsamarbejde.](./media/vendor-collaboration-mobile-app.png)
+![Mobilarbejdsområde for kreditorsamarbejde](./media/vendor-collaboration-mobile-app.png)
 
 **Kreditorsamarbejde**-arbejdsområdet indeholder følgende sider.
 
@@ -167,6 +169,3 @@ Eventuelle ændringer, der er foretaget i svaret til ordrelinjen, vises. Dog vis
 
 ### <a name="open-confirmed-orders"></a>Åbn bekræftede ordrer
 Når indkøbsordren er bekræftet af kunden (hvilket betyder, at status for købsordren er ændret til **Bekræftet**), vises den i den åbne bekræftede ordre. Den forbliver på listen, indtil den registreres som modtaget af kunden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
-title: Organisere rapportkomponenter i rapportdesigner
-description: I dette emne beskrives, hvordan du organiserer eksisterende rapporter, dokumentkomponenter og objekter i Rapportdesigner.
+title: Organisere rapportkomponenter i Report Designer
+description: Når du har udviklet komponentdokumenter og oprettet rapporter, er det nyttigt at organisere disse objekter, så de er lettere for brugerne at finde. I denne artikel beskrives, hvordan du organiserer eksisterende rapporter, dokumentkomponenter og objekter i Report Designer.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6b30e7e480edb50bb9509e270806224755f98e38111cda0c1cae86a0f56eb193
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763518"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685805"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisere rapportkomponenter i Report Designer
 
@@ -47,7 +49,7 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 ### <a name="create-a-report-group"></a>Oprette en rapportgruppe
 
 1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
-2. I menuen **Filer** skal du klikke på **Ny** &gt; **Rapportgruppedefinition** for at åbne en ny rapportgruppe i fremviservinduet. Du kan også klikke på knappen **Rapportgruppe** ![Rapportgruppe.](media/report-group.gif "Rapportgruppe") på værktøjslinjen.
+2. I menuen **Filer** skal du klikke på **Ny** &gt; **Rapportgruppedefinition** for at åbne en ny rapportgruppe i fremviservinduet. Du kan også klikke på knappen **Rapportgruppe** ![Rapportgruppe](media/report-group.gif "Rapportgruppe") på værktøjslinjen.
 3. Klik på fanen **Rapportgruppe**. Hvis du vil tilsidesætte oplysningerne om de enkelte rapportdefinitioner til generering af denne rapport, skal du markere afkrydsningsfeltet **Tilsidesæt regnskab, detaljer og datoindstillinger fra individuelle rapportdefinitioner**. Firmanavnet, detaljeringsniveauet, foreløbig-indstillingen og datooplysninger angives automatisk, men du kan stadig foretage opdateringer.
 4. Hvis du vil have genereret flere rapporter, der viser rapporteringsvalutaerne, skal du markere afkrydsningsfeltet **Medtag alle rapporteringsvalutaer**. Derefter kan du åbne flere visninger ved at klikke på knappen **Valuta** i webfremviseren, når du får vist rapporten.
 5. I feltet **Rapporter i gruppe** skal du klikke på **Tilføj** for at vælge de rapporter, der skal medtages i rapportgruppen. Hvis du vil vælge flere rapporter i dialogboksen **Tilføj**, skal du holde tasten Ctrl nede, mens du markerer rapporter. Når du er færdig med at vælge rapporter, skal du klikke på **OK**.
@@ -58,15 +60,15 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
 2. Dobbeltklik på den rapportgruppe, der skal redigeres.
 3. Under fanen **Rapportgruppe** kan du foretage de ønskede ændringer.
-4. I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem.](media/save.gif "Gem") på værktøjslinjen.
+4. I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem](media/save.gif "Gem") på værktøjslinjen.
 
-> Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
+> [BEMÆRK!] Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
 
 ### <a name="generate-a-report-group-report"></a>Generere en rapportgrupperapport
 
 1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
 2. Åbn den rapportgruppe, der skal genereres.
-3. Klik på knappen **Opret rapport** ![Opret rapport.](media/generate-report.gif "Generér rapport") for at oprette rapporter.
+3. Klik på knappen **Opret rapport** ![Opret rapport](media/generate-report.gif "Generér rapport") for at oprette rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 
@@ -146,6 +148,3 @@ Kun indstillinger for standardbasisperiode gemmes sammen med rapportdefinitionen
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

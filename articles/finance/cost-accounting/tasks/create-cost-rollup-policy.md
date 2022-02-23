@@ -2,22 +2,25 @@
 title: Oprette en politik for omkostningstotaler
 description: Denne procedure viser, hvordan du opretter en politik for omkostningstotaler og opretter regler for politikken.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd7a390ced7b7b4997d9c86b9218f1fa83ee14729e450e1ae1cb53dbbd605edb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b6d32cc2c1844c6c334dd00b249c736e153f13d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755660"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441697"
 ---
 # <a name="create-a-cost-rollup-policy"></a>Oprette en politik for omkostningstotaler
 
@@ -65,6 +68,3 @@ Denne procedure viser, hvordan du opretter en politik for omkostningstotaler og 
     * Fortsæt, indtil alle bærere er knyttet til de tilsvarende sekundære omkostningselementer.  
 16. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

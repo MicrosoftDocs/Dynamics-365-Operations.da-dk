@@ -1,24 +1,27 @@
 ---
 title: Overvåge kørsel af en varedisponering
 description: Dette emne beskriver, hvordan produktionsplanlæggeren kan se, om en varedisponeringskørsel er i gang.
-author: ChristianRytt
+author: josaw1
+manager: tfehr
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1438ed6bcec485ff9665ffd9659c938f5cac478
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778125"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424404"
 ---
 # <a name="monitor-a-master-planning-run"></a>Overvåge kørsel af en varedisponering
 
@@ -33,7 +36,7 @@ På siden **Vis varedisponeringens status** kan du få vist detaljer om den hist
 For at anvende denne funktionalitet skal du følge disse trin.
 
 1. I arbejdsområdet **Funktionsstyring** på fanen **Ny** skal du vælge **Visualisering af varedisponeringens status** fra listen. Hvis funktionen ikke vises under den fanen **Ny**, skal du se på fanerne **Ikke aktiverede** og **Alle**.
-1. Vælg **Aktiver nu**. Du kan også vælge **Planlæg** og derefter vælge det tidspunkt, hvor funktionen skal aktiveres. (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
+1. Vælg **Aktiver nu**. Du kan også vælge **Planlæg** og derefter vælge det tidspunkt, hvor funktionen skal aktiveres.
 
 Siden **Vis varedisponeringens status** kan vise både tidligere planlægningsjobs og aktive planlægningsjobs. 
 
@@ -124,6 +127,3 @@ Farven vises kun på det laveste niveau i Gantt-diagrammet. Vælg **Udvid alle**
 1. I gitteret skal du vælge den række, hvor feltet **Felt** er angivet til **Varenummer**.
 1. Angiv en værdi i feltet **Kriterie**.
 1. Vælg **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

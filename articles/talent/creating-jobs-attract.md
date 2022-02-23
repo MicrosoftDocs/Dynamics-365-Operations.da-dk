@@ -157,6 +157,3 @@ Følg denne fremgangsmåde for at oprette et job.
 
 13. For at aktivere jobbet skal du vælge **Aktivér**.
 14. Du kan slå jobbet op ved at gå til **Opslag** og derefter vælge **Slå op nu** på Talent-karrierewebstedet eller LinkedIn.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

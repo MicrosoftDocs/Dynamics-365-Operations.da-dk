@@ -2,23 +2,26 @@
 title: Oprette en afskrivningskladde for en debitor
 description: Denne opgaveguide viser, hvordan du kan konfigurere parametre for afskrivninger og derefter afskrive transaktioner fra siden Rykkere, siden Åbne debitorfakturaer og siden Kunde.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e810badf9b43a3b0e57390b05247113021e26b6a0242cf29022274307c5fd56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dd97f91f1ba53b56150b556fffdfed10a0c8911a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771794"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441668"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Oprette en afskrivningskladde for en debitor
 
@@ -81,6 +84,3 @@ Denne opgaveguide viser, hvordan du kan konfigurere parametre for afskrivninger 
 5. Klik på **OK**.
 6. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

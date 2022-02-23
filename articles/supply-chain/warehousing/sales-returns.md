@@ -1,26 +1,29 @@
 ---
 title: Salgsreturneringer
 description: Dette emne indeholder oplysninger om processen for returordrer. Det indeholder oplysninger om returneringer fra kunder og deres virkning på efterkalkulation og disponible lagerantal.
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565273"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424420"
 ---
 # <a name="sales-returns"></a>Salgsreturneringer
 
@@ -33,7 +36,7 @@ Kunder kan returnere varer af forskellige årsager. En vare kan f.eks. være def
 ## <a name="return-order-process"></a>Returordreproces
 I følgende illustration vises en oversigt over returvareprocessen.  
 
-[![Returordreproces.](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Returordreproces](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Der er to typer returordreprocesser: fysisk returnering og kun kreditering.
 
@@ -62,7 +65,7 @@ RMA-behandling (Return Material Authorization) bygger på salgsordrefunktionalit
 ## <a name="create-a-return-order"></a>Oprette en returordre
 Returordreprocessen starter, når en kunde kontakter organisationen for at returnere et defekt eller uønsket produkt og/eller for at få en kreditnota. Når din virksomhed accepterer returnering, dokumenteres returneringen ved en returordre. Denne returordre bliver kontaktpunktet i den interne behandling af det returnerede produkt. Følgende illustration viser fremgangsmåden for oprettelse af en returordre.  
 
-[![Fremgangsmåde for oprettelse af en returordre.](./media/salesreturn02.png)](./media/salesreturn02.png)
+[![Fremgangsmåde for oprettelse af en returordre](./media/salesreturn02.png)](./media/salesreturn02.png)
 
 ### <a name="create-a-return-order-header"></a>Opret et returordrehoved.
 
@@ -84,7 +87,7 @@ Når du har fuldført returneringshovedet, kan du oprette returlinjer ved hjælp
 -   Du kan angive oplysninger om varen, antal og andre oplysninger for hver returvarelinje manuelt.
 -   Opret en returlinje ved hjælp af funktionen **Find salgsordre**. Vi anbefaler, at du bruger denne funktion, når du opretter en returordre. Funktionen **Find salgsordre** opretter en reference fra returlinjen til den fakturerede salgsordrelinje og henter linjeoplysninger som varenummer, antal, pris, rabat og omkostningsværdier fra salgslinjen. Referencen er med til at sikre, at når produktet returneres til virksomheden, er det værdisat til samme kostpris, som det blev solgt til. Referencen validerer også, at der ikke oprettes returordrer for en mængde, der overstiger det antal, der blev solgt på fakturaen.
 
->[Bemærk:] Returlinjer, der har en reference til en salgsordre, skal håndteres som rettelser eller tilbageførsler af salget. Du kan finde flere oplysninger i afsnittet "Bogfør i finans" senere i dette emne.
+>[Bemærk!] Returlinjer, der har en reference til en salgsordre, skal håndteres som rettelser eller tilbageførsler af salget. Du kan finde flere oplysninger i afsnittet "Bogfør i finans" senere i dette emne.
 
 ### <a name="charges"></a>Tillæg
 
@@ -177,7 +180,7 @@ Foruden fastlæggelsen af, hvordan de returnerede varer skal disponeres, kan dis
 ## <a name="arrival-at-the-warehouse-for-inspection"></a>Ankommer til lageret til inspektion
 Før du kan modtage returnerede varer på lageret fysisk ved at bogføre en følgeseddel, skal varerne gennemgå ankomstregistrering og valgfri inspektion. I følgende illustration vises en oversigt over ankomstprocessen. I følgende afsnit beskrives de enkelte trin, som vises i illustrationen.  
 
-[![Modtagelsesproces.](./media/salesreturn03.png)](./media/salesreturn03.png)  
+[![Modtagelsesproces](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
 Processen har flere andre variationer, som ikke er beskrevet i dette emne. Her er nogle af disse variationer.
 
@@ -190,7 +193,7 @@ Under ankomstprocessen integreres returneringer med den generelle proces til mod
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identificer produkter på listen Modtagelsesoversigt
 
 Siden **Modtagelsesoversigt** viser en liste over alle planlagte indgående modtagelser. 
->[Bemærk:] Modtagelser fra returordrer skal behandles separat i forhold til andre typer af transaktioner ved ankomsten. Når du har identificeret en indgående pakke på siden **Modtagelsesoversigt** (for eksempel ved hjælp af det ledsagende RMA-dokument), skal du i handlingsruden klikke på **Start modtagelse** for at oprette og initialisere en modtagelseskladde, der svarer til modtagelsen.
+>[Bemærk!] Modtagelser fra returordrer skal behandles separat i forhold til andre typer af transaktioner ved ankomsten. Når du har identificeret en indgående pakke på siden **Modtagelsesoversigt** (for eksempel ved hjælp af det ledsagende RMA-dokument), skal du i handlingsruden klikke på **Start modtagelse** for at oprette og initialisere en modtagelseskladde, der svarer til modtagelsen.
 
 ### <a name="edit-the-arrival-journal"></a>Rediger modtagelseskladden
 
@@ -220,7 +223,7 @@ Der er to metoder til håndtering af produkterstatning:
 
 I forudgående erstatning kan erstatningsvaren leveres til kunden, inden varen er returneret. Denne metode er nyttig, hvis varen f-eks. er en del af en maskine, som ikke kan fjernes, medmindre der er en reservedel tilgængelig til at overtage pladsen, eller hvis du bare ønsker, at kunden skal have erstatningsproduktet så hurtigst muligt. Forudgående erstatning-ordren er en uafhængig salgsordre. Oplysningerne i hovedet er initialiseret fra kunden, og linjeoplysningerne initialiseres fra returordren. Du kan redigere, behandle og slette erstatningsordre uafhængigt af returordren. Når du sletter en erstatningsordre, modtager du en meddelelse om, at ordren er oprettet som en erstatningsordre. I følgende illustration vises processen for forudgående erstatning.  
 
-![Proces for forudgående erstatning.](./media/SalesReturn04.png)
+![Proces for forudgående erstatning](./media/SalesReturn04.png)
 
 Returordren indeholder en reference til erstatningsordren. Hvis der oprettes en ordre for forudgående erstatning for en returordre, før de defekte varer returneres, kan du ikke vælge dispositionskoder for erstatning, når den defekte vare er blevet returneret.
 
@@ -228,11 +231,11 @@ Returordren indeholder en reference til erstatningsordren. Hvis der oprettes en 
 
 Hvis du leverer en erstatningsvare til kunden, og du bruger dispositionshandlingerne **Erstat og kassér** eller **Erstat og krediter** på returordren, skal du bruge den proces, der er vist i følgende illustration.  
 
-![Udskiftningsproces, når der bruges en dispositionskode.](./media/SalesReturn05.png)
+![Udskiftningsproces, når der bruges en dispositionskode](./media/SalesReturn05.png)
 
 Erstatningsvaren leveres ved hjælp af en uafhængig salgsordre, udskiftningssalgsordren. Denne salgsordre oprettes, når følgesedlen for returordren genereres. Ordrehovedet bruger oplysninger fra kunden, der refereres til i returordrehovedet. Linjeoplysningerne indsamles fra de oplysninger, der er angivet på siden **Erstatningsvare**. Siden **Erstatningsvare** side skal være udfyldt for linjer, der har dispositionshandlinger, der starter med ordet "Erstat". Dog er hverken antallet eller identiteten af erstatningsvaren godkendt eller begrænset. På denne måde er der mulighed for tilfælde, hvor kunden ønsker den samme vare, men i en anden konfiguration eller størrelse, og også for tilfælde hvor kunderne ønsker en helt anden vare. Som standard angives en identisk vare på siden **Erstatningsvare**. Men du kan vælge en anden vare, forudsat at funktionen er konfigureret. 
 
->[Bemærk:] Du kan redigere og slette erstatningssalgsordren, når den er oprettet.
+>[Bemærk!] Du kan redigere og slette erstatningssalgsordren, når den er oprettet.
 
 ## <a name="generate-a-packing-slip"></a>Generér en følgeseddel
 Før returnerede varer kan modtages på lager, skal du opdatere følgesedlen for den ordre, som varerne tilhører. Ligesom fakturaopdateringsprocessen er opdateringen af den økonomiske transaktion, er følgeseddelopdateringsprocessen den fysiske opdatering af lagerposten. Denne proces indfører med andre ord ændringerne på lageret. Ved returneringer bliver de trin, der tildeles dispositionshandlingen, implementeret under opdateringen af følgesedlen. Når du genererer følgesedlen, indtræffer følgende hændelser:
@@ -254,7 +257,7 @@ Selvom siden **Returordre** indeholder de oplysninger og handlinger, der er nød
 ### <a name="credit-correction"></a>Kreditrettelse
 
 Kontroller, at forskellige gebyrer er korrekte, som en del af faktureringsprocessen. For at få finansposterringerne til at blive rettelser (Storno), bør du overveje at bruge indstillingen **Kreditrettelse** under fanen **Andet** på siden **Bogføring af faktura**, når du bogfører fakturaen eller kreditnotaen. 
->[Bemærk:] Som standard er indstillingen **Kreditrettelse** aktiveret, hvis indstillingen **Kreditnota som rettelse** er blevet aktiveret på siden **Debitorparametre**. Vi anbefaler dog, at du ikke bogfører returneringer med Storno.
+>[Bemærk!] Som standard er indstillingen **Kreditrettelse** aktiveret, hvis indstillingen **Kreditnota som rettelse** er blevet aktiveret på siden **Debitorparametre**. Vi anbefaler dog, at du ikke bogfører returneringer med Storno.
 
 ## <a name="create-intercompany-return-orders"></a>Opret interne ordrer
 Returordrer kan udføres mellem to firmaer i organisationen. Følgende scenarier understøttes:
@@ -268,7 +271,7 @@ Returordrer kan udføres mellem to firmaer i organisationen. Følgende scenarier
 
 Følgende illustration viser minimumskravet til opsætning, der er nødvendig for at to selskaber kan deltage i en intern relation og drage fordel af intern handel.  
 
-![Minimumskrav til opsætning.](./media/SalesReturn06.png)
+![Minimumskrav til opsætning](./media/SalesReturn06.png)
 
 I følgende scenarie er CompBuy den købende virksomhed, og CompSell er den sælgende virksomhed. Normalt leverer den sælgende virksomhed varer til enten den købende virksomhed eller i scenarier med direkte levering direkte til slutkunden. I CompBuy er kreditoren IC\_CompSell defineret som et internt slutpunkt, der er tilknyttet firmaet CompSell. I CompSell er kunden IC\_CompBuy samtidig defineret som et internt slutpunkt, der er tilknyttet firmaet CompBuy. De relevante oplysninger om handlingspolitik og værditilknytninger skal være defineret i begge firmaer. I et scenarie med direkte levering oprettes en intern returordre, der også er en intern salgsordre, i den sælgende virksomhed. RMA-nummeret for den interne returordre kan hentes fra RMA-nummerserien i CompSell, eller den kan kopieres fra RMA-nummeret, der er tilknyttet den oprindelige returordre i CompBuy. Indstillingerne for RMA-nummer på handlingspolitikken **PurchaseRequisition** i CompBuy bestemmer disse handlinger. Hvis RMA-nummeret synkroniseres, skal du planlægge at minimere risikoen for sammenfald af numre, hvis de to virksomheder bruger samme nummerserie.
 
@@ -276,7 +279,7 @@ I følgende scenarie er CompBuy den købende virksomhed, og CompSell er den sæl
 
 Dette scenario omfatter to firmaer i samme organisation, som vist i følgende illustration.  
 
-![Enkel intern returnering.](./media/SalesReturn07.png)
+![Enkel intern returnering](./media/SalesReturn07.png)
 
 Ordrekæden kan etableres, når der oprettes en returordre til leverandøren i den købende virksomhed, eller der oprettes en kundereturordre i den sælgende virksomhed. Den tilsvarende ordre oprettes i et andet firma og sørger for, at hoved- og linjeoplysningerne på returordren til leverandøren afspejler indstillingerne for kundereturordren. Den returordre, der er oprettet, kan enten inkludere eller udelade referencen (**Find salgsordre**) til en eksisterende debitorfaktura. Følgesedler og fakturaer i de to ordrer kan behandles individuelt. Du behøver f.eks. ikke at oprette en følgeseddel for returordren til leverandøren, før du genererer følgesedlen til kundereturordren.
 
@@ -284,7 +287,7 @@ Ordrekæden kan etableres, når der oprettes en returordre til leverandøren i d
 
 Dette scenarie kan opstå, hvis et tidligere salg af typen **Direkte levering** er afsluttet, og hvis der findes en faktura til kunden i det firma, der arbejder sammen med kunden. I følgende illustration har virksomheden CompBuy tidligere solgt og faktureret produkter til kunden Extern. Produkterne blev leveret direkte fra firmaet CompSell til kunden via en intern ordrekæde.  
 
-![Returneringer af direkte leveringer mellem tre parter.](./media/SalesReturn08.png)
+![Returneringer af direkte leveringer mellem tre parter](./media/SalesReturn08.png)
 
 Hvis kunden Extern ønsker at returnere produkterne, oprettes der en returordre (RMA02) for kunden i firmaet CompBuy. Hvis du vil oprette den interne kæde skal returvareordren mærkes til direkte levering. Når du bruger funktionen **Find salgsordre** til at finde debitorfakturaen, der skal returneres, etableres en intern ordrekæde, der består af følgende dokumenter:
 
@@ -306,28 +309,25 @@ I følgende eksempler er returkostprisen repræsenteret som **Fakturakostpris**.
 
 Returvareordren henviser ikke til en debitorfaktura. Den returnerede vare krediteres. Parameteren **Kreditrettelse** er ikke markeret, når returordrefakturaen eller -kreditnotaen oprettes.  
 
-![Returordren henviser ikke til en debitorfaktura.](./media/SalesReturn09.png)  
+![Returordren henviser ikke til en debitorfaktura](./media/SalesReturn09.png)  
 
->[Bemærk:] Varens stampris bruges som standardværdi for parameteren **Returkostpris**. Standardprisen er forskellig fra kostprisen på tidspunktet for lagerafgangen. Virkningen er derfor, at der opstår et tab på 3. Desuden indeholder returordren ikke den rabat, der blev givet til kunden på salgsordren. Der opstår derfor en for stor kreditering.
+>[Bemærk!] Varens stampris bruges som standardværdi for parameteren **Returkostpris**. Standardprisen er forskellig fra kostprisen på tidspunktet for lagerafgangen. Virkningen er derfor, at der opstår et tab på 3. Desuden indeholder returordren ikke den rabat, der blev givet til kunden på salgsordren. Der opstår derfor en for stor kreditering.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Eksempel 2: Kreditrettelse er valgt for returordren
 
 Eksempel 2 er det samme som eksempel 1, men parameteren **Kreditrettelse** er markeret, når returordrefakturaen oprettes.  
 
-![Returordre, hvor kreditrettelse er markeret.](./media/SalesReturn10.png)  
+![Returordre, hvor kreditrettelse er markeret ](./media/SalesReturn10.png)  
 
->[Bemærk:] Finansposteringerne angives som negative rettelser.
+>[Bemærk!] Finansposteringerne angives som negative rettelser.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Eksempel 3: Returordrelinjen er oprettet ved hjælp af funktionen Find salgsordre
 
 I dette eksempel oprettes returordrelinjen ved hjælp af funktionen **Find salgsordre**. Parameteren **Kreditrettelse** er ikke markeret, når fakturaen oprettes.  
 
-![Returordrelinje, der er oprettet ved hjælp af Find salgsordre.](./media/SalesReturn11.png)  
+![Returordrelinje, der er oprettet ved hjælp af Find salgsordre ](./media/SalesReturn11.png)  
 
->[Bemærk:] **Rabat** og **Returkostpris** er angivet korrekt. Der opstår derfor en præcis tilbageførsel af kundens faktura.
-
-
+>[Bemærk!] **Rabat** og **Returkostpris** er angivet korrekt. Der opstår derfor en præcis tilbageførsel af kundens faktura.
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

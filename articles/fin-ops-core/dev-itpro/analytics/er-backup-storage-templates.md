@@ -2,9 +2,11 @@
 title: Sikkerhedskopilager til ER-skabeloner
 description: I dette emne forklares det, hvordan du bruger sikkerhedskopilageret for elektroniske rapporter (ER) til genoprettelse af skabeloner.
 author: NickSelin
+manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767871"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681394"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhedskopilager til ER-skabeloner
 
@@ -65,19 +67,19 @@ Hvis du vil opsætte parameteren **Kør automatisk proceduren for gendannelse af
 > [!NOTE]
 > Denne parameter er defineret som programbruger og logføres firmaspecifikt.
 
-![Siden ER-konfigurationer.](./media/GER-BackupTemplates-1.png)
+![Siden ER-konfigurationer](./media/GER-BackupTemplates-1.png)
 
 I følgende illustration vises et eksempel på den meddelelse, der vises, når parameteren **Kør automatisk proceduren for gendannelse af de brudte skabeloner i batch** er angivet til **Til**.
 
-![Siden Kreditorbetalingskladde.](./media/GER-BackupTemplates-2.png)
+![Siden Kreditorbetalingskladde](./media/GER-BackupTemplates-2.png)
 
 Følgende illustration viser batchprocessen **Gendan brudte skabeloner fra intern databasesikkerhedskopi** på siden **Batchjob**.
 
-![Siden Batchjob.](./media/GER-BackupTemplates-3.png)
+![Siden Batchjob](./media/GER-BackupTemplates-3.png)
 
 Udførelsesloggen for den fuldførte batchproces **Gendan brudte skabeloner fra intern databasesikkerhedskopi** indeholder oplysninger om de skabeloner, der er blevet gendannet fra sikkerhedskopiplaceringen til det primære lagringssted.
 
-![Siden Batchjobhistorik.](./media/GER-BackupTemplates-4.png)
+![Siden Batchjobhistorik](./media/GER-BackupTemplates-4.png)
 
 Processen til automatisk oprettelse af sikkerhedskopier af skabeloner, der er placeret i ER-formatkonfigurationer, er som standard aktiveret. Hvis du ikke længere vil oprette sikkerhedskopier af skabeloner, skal du angive indstillingen **Stop med at oprette sikkerhedskopier af skabelon** til **Ja** under fanen **Vedhæftede filer** på siden **Parametre til elektronisk rapportering**. Du kan åbne denne side fra arbejdsområdet **Elektronisk rapportering**.
 
@@ -85,7 +87,7 @@ Hvis du angiver indstillingen **Stop med at oprette sikkerhedskopier af skabelon
 
 Hvis du har opgraderet miljøet til Finance and Operations version 10.0.5 (oktober 2019) og vil overflytte til et nyt miljø, der indeholder ER-formatkonfigurationer, der kan køres, skal du vælge **Udfyld sikkerhedskopilager** på siden **Parametre til elektronisk rapportering**, før overførslen sker. Denne knap starter processen med at tage sikkerhedskopier af alle tilgængelige skabeloner, så de kan gemmes på ER-sikkerhedskopiplaceringen for skabeloner.
 
-![Siden Parametre til elektronisk rapportering.](./media/GER-BackupTemplates-5.png)
+![Siden Parametre til elektronisk rapportering](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuel gendannelse
 
@@ -100,6 +102,3 @@ I Finance and Operations version 10.0.5 er funktionen Sikkerhedskopilager til ER
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Konfigurer den Elektroniske rapporteringsstruktur (ER)](electronic-reporting-er-configure-parameters.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

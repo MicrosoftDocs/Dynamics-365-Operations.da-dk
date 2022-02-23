@@ -1,31 +1,36 @@
 ---
 title: Indkøbsvognmodul
-description: Dette emne omhandler indkøbsvogn-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+description: Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 12/15/2020
+manager: annbe
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f2db61cf23c217365274297c6e9878a4eb5679f8d9502cb70484372ae43f6b18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716878"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4411237"
 ---
-# <a name="cart-module"></a>Indkøbskurvsmodul
+# <a name="cart-module"></a>Indkøbsvognmodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emne omhandler indkøbsvogn-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+Dette emne omhandler indkøbsvognmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Overblik
 
 Et indkøbsvognmodul viser de varer, der er føjet til indkøbsvognen, før kunden fortsætter med at betale. Modulet viser også en ordreoversigt, og kunden kan anvende eller fjerne kampagnekoder.
 
@@ -35,11 +40,11 @@ I indkøbsvognmodulet gengives data baseret på indkøbsvogn-id'et, som er en br
 
 Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabrikam-webstedet.
 
-![Eksempel på et indkøbsvognmodul på Fabrikam-webstedet.](./media/cart2.PNG)
+![Eksempel på et indkøbsvognmodul på Fabrikam-webstedet](./media/cart2.PNG)
 
 Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabrikam-webstedet. I dette eksempel er der et ekspeditionsgebyr for et linjeelement.
 
-![Eksempel på et indkøbsvognmodul med et ekspeditionsgebyr for et linjeelement.](./media/ecommerce-handling-fee.png)
+![Eksempel på et indkøbsvognmodul med et ekspeditionsgebyr for et linjeelement](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Egenskaber og pladser i indkøbsvognmodulet
 
@@ -48,7 +53,6 @@ Det følgende billede viser et eksempel på en side med en indkøbsvogn på Fabr
 | Overskrift | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En overskrift til vognen som f.eks. "Indkøbspose" eller "Varer i din indkøbsvogn". |
 | Vis fejl for ikke på lager | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, vil der blive vist lagerrelaterede fejl på siden for indkøbsvogn. Det anbefales, at du angiver denne egenskab til **Sand**, hvis der anvendes lagerkontroller på lokationen. |
 | Vis forsendelsesgebyrer for linjeelementer | **Sand** eller **Falsk** | Hvis denne egenskab angives til **Sand**, vil linjeelementer i en indkøbsvogn vise forsendelsesgebyrer, hvis disse oplysninger er tilgængelige. Denne funktion understøttes ikke i Fabrikam-temaet, da brugere først vælger levering i betalingsflowet. Denne funktion kan dog aktiveres i andre arbejdsprocesser, hvis det er relevant. |
-| Vis tilgængelige opprioriteringer| **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, viser indkøbsvognen tilgængelige kampagner baseret på varerne i indkøbsvognen. Denne egenskab er tilgængelig i version 10.0.16 af Dynamics 365 Commerce. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduler, der kan bruges i et indkøbsvognmodul
 
@@ -113,6 +117,3 @@ Hvis du vil føje et indkøbsvognmodul til en ny side og angive de påkrævede e
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
 
 [Oprette en onlinefunktionalitetsprofil](online-functionality-profile.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

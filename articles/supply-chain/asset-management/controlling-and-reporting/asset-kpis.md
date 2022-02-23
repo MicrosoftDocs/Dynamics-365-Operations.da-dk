@@ -1,10 +1,12 @@
 ---
 title: KPI'er for aktiver
 description: I dette emne beskrives KPI'er for aktiver i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectKPI
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8bdc60d993a784ffc123d36b5e51cbd6028316f18a2dee6f4ee134a93ffc024e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f75db96926e72bab80d0a65ce6f0ab3a92590699
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778742"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021774"
 ---
 # <a name="asset-kpis"></a>KPI'er for aktiver
 
@@ -82,11 +84,8 @@ I tabellen nedenfor kan du finde en beskrivelse af felterne på siden **KPI'er f
 
 I figuren herunder vises et skærmbillede af en KPI-beregning for fire aktiver.
 
-![Skærmbillede af KPI-beregning for fire aktiver.](media/11-controlling-and-reporting.png)
+![Skærmbillede af KPI-beregning for fire aktiver](media/11-controlling-and-reporting.png)
 
 - Du kan vælge flere aktiver i **Alle aktiver** og klikke på knappen **KPI'er for aktiver** under fanen **Generelt**. Klik derefter på **OK** i dialogboksen **Beregn aktiv-KPI'er** for at beregne KPI'er for de valgte aktiver.  
 - Resultater fra en KPI-beregning kan også omfatte [registreringer af vedligeholdelsesnedetid](../work-orders/maintenance-downtime.md) afhængigt af opsætning og brug af årsagskoder for vedligeholdelsesnedetid. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

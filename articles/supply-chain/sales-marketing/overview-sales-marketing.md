@@ -2,26 +2,27 @@
 title: Oversigt over salg og marketing
 description: Du kan bruge Salg og marketing til at finde, gemme og bruge forskellige typer data i salgsprocessen. Disse data omfatter det oprindelige salgsinitiativ, fremtidig opfølgning og yderligere salg.
 author: kfend
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "92303"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 021ff1ff24e20516b7a8ac1ce206b76aa8e91a2a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f03db7f830d0b7efa4ba32b9e194a4e3a65266e8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982528"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424424"
 ---
 # <a name="sales-and-marketing-overview"></a>Oversigt over salg og marketing
 
@@ -29,20 +30,21 @@ ms.locfileid: "7982528"
 
 Du kan bruge Salg og marketing til at finde, gemme og bruge forskellige typer data i salgsprocessen. Disse data omfatter det oprindelige salgsinitiativ, fremtidig opfølgning og yderligere salg.
 
-## <a name="marketing"></a>Marketing
+<a name="marketing"></a>Marketing
+---------
 
-Du bruger marketingkampagner og -aktiviteter til at finde og opbygge relationer med potentielle kunder, så indledende interaktioner kan udvikle til salgsrelationer. I følgende procesflow vises forretningsprocesserne for marketing. [![Forretningsproces for marketing.](./media/marketing01.jpg)](./media/marketing01.jpg)
+Du bruger marketingkampagner og -aktiviteter til at finde og opbygge relationer med potentielle kunder, så indledende interaktioner kan udvikle til salgsrelationer. I følgende procesflow vises forretningsprocesserne for marketing. [![Forretningsproces for marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Relationer
 
-I modulet Salg og marketing kan de første interaktioner, du har med potentielle kunder, forekomme i forskellige situationer. Du kan for eksempel finde en potentiel kunde, mens du deltager i en messe, eller du har måske et kundeemner, efter at din virksomhed har kørt en masseforsendelseskampagne. Det er meget vigtigt, at du forstår forløbet af en parts enhed, før denne part bliver kunde. Følgende grafik viser flowet af enhedsrelationer, når en potentiel kunde bliver en faktisk kunde. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+I modulet Salg og marketing kan de første interaktioner, du har med potentielle kunder, forekomme i forskellige situationer. Du kan for eksempel finde en potentiel kunde, mens du deltager i en messe, eller du har måske et kundeemner, efter at din virksomhed har kørt en masseforsendelseskampagne. Det er meget vigtigt, at du forstår forløbet af en parts enhed, før denne part bliver kunde. Følgende grafik viser flowet af enhedsrelationer, når en potentiel kunde bliver en faktisk kunde. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampagner
 
 En kampagne henvender sig til kontaktpersoner for kundeemner, potentielle kunder, salgsmuligheder og kunder, der er blevet valgt til at deltage i kampagnen. I Supply Chain Management kan du oprette flere typer kampagner som f.eks. telemarketing-, post- og mailkampagner, for at maksimere dit kundepotentiale. Efterhånden som din kampagnen skrider frem, og du får positive tilbagemeldinger, kan du begynde salgsprocessen med de modtagere, der har reageret positivt på kampagnen.
 
 ## <a name="sales"></a>Salg
-Du kan bruge salgsfunktionen til at oprette tilbud og foretage mersalg og krydssalg til nye og eksisterende kunder, oprette salgsordrer og oprette salgsfakturaer til kunder. I følgende procesflow vises forretningsprocesserne for salg. [![Forretningsproces for salg.](./media/sales01.jpg)](./media/sales01.jpg)
+Du kan bruge salgsfunktionen til at oprette tilbud og foretage mersalg og krydssalg til nye og eksisterende kunder, oprette salgsordrer og oprette salgsfakturaer til kunder. I følgende procesflow vises forretningsprocesserne for salg. [![Forretningsproces for salg](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Salgstilbud
 
@@ -123,6 +125,3 @@ En proformafaktura er en faktura, der udarbejdes som et estimat over det faktisk
 #### <a name="blogs"></a>Blogs
 
 Du kan finde en oversigt over en salgsproces i indlægget [Sådan fungerer salg i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

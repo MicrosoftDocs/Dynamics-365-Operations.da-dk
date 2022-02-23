@@ -2,13 +2,16 @@
 title: Politik for omkostningstotaler og beregning af fast omkostning
 description: Dette emne indeholder oplysninger om, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779950"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4441724"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
@@ -44,13 +47,13 @@ For at undgå disse virkninger kan du i Omkostningsregnskab konfigurere omkostni
 
 Forestil dig, at en organisation har følgende struktur med 4 bærere.
 
-![Eksempel på en organisationsstruktur.](./media/dimension-hierarchy-org.png)
+![Eksempel på en organisationsstruktur](./media/dimension-hierarchy-org.png)
 
 **Dimension for omkostningsobjekt**
 
-| Bærere | Betegnelse          |
+| Bærere | Beskrivelse          |
 |--------------|-----------|
-| CC001        | HR        |
+| CC001        | Personale        |
 | CC002        | Finans   |
 | CC003        | Samling  |
 | CC004        | Emballage |
@@ -69,7 +72,7 @@ Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan ko
 
 | Navn på dimensionshierarki | Dimension    | Navn på dimensionshierarkitype      | Adgangslistehierarki |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Bærere | Klassifikationshierarki for dimension | Nej                    |
+| Organisation             | Bærere | Klassifikationshierarki for dimension | Nr.                    |
 
 **Dimensionshierarki**
 
@@ -79,7 +82,7 @@ Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan ko
 | Organisation |                         |                     |
 | &nbsp;&nbsp;Administration             |                         |                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finans              | CC001                   | CC001               |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR               | CC002                   | CC002               |
+| &nbsp;&nbsp;&nbsp;&nbsp;Personale               | CC002                   | CC002               |
 | &nbsp;&nbsp;Produktion               |                         |                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;Emballage              | CC003                   | CC003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Samling             | CC004                   | CC004               |
@@ -114,14 +117,14 @@ Når finansposterne er behandlet, ser omkostningssaldoposten efter omkostningsob
 
 | Statistiske elementer |    Beskrivelse   |
 |----------------------|------------------|
-| SE-1                 | HR-tjenester      |
+| SE-1                 | Personale-tjenester      |
 | SE-2                 | Finans-tjenester |
 
 Omkostningsobjektet CC001 personale bidrager med personaletjenester til flere omkostningsobjekter.
 
-HR-tjenester forbruges ud fra følgende distribution af størrelsesorden.
+Personale-tjenester forbruges ud fra følgende distribution af størrelsesorden.
 
-| Omkostningsobjekt | Beskrivelse |   HR-tjenester |
+| Omkostningsobjekt | Beskrivelse |   Personale-tjenester |
 |-------------|-------------|----|
 | CC002       | Finans     | 35 |
 | CC003       | Samling    | 55 |
@@ -146,10 +149,11 @@ Regler for omkostningsfordeling kan konfigureres på følgende måde.
 
 | Dimensionshierarkinode for omkostningsobjekt | Funktionalitet af omkostning | Tildelingsgrundlag        |
 |--------------------------------------|---------------|------------------------|
-| CC001                                | Samlet         | **HR-tjenester**        |
+| CC001                                | Samlet         | **Personale-tjenester**        |
 | CC002                                | Samlet         | **Finansielle tjenester** |
 
-## <a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan omkostninger flyder mellem bærere 
+<a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan omkostninger flyder mellem bærere 
+---------------------------------------------------
 
 Hvis du vil vide, hvordan omkostninger flyder mellem bærerne i organisationen, kan du oprette omkostningselementer af typen **Sekundær** for hver bærer. Disse omkostningselementer kan derefter bruges til at overføre saldi mellem bærerne under beregningen af faste omkostninger.
 
@@ -160,7 +164,7 @@ Dimensionsmedlemmer for omkostningselement kan konfigureres på følgende måde.
 | 1001          | Elektricitet   | Primær       |
 | 1002          | Lønninger      | Primær       |
 | 1003          | Annoncer   | Primær       |
-| **SC-CC001**  | **HR**        | **Sekundære** |
+| **SC-CC001**  | **Personale**        | **Sekundære** |
 | **SC-CC002**  | **Finans**   | **Sekundære** |
 | **SC-CC003**  | **Samling**  | **Sekundære** |
 | **SC-CC004**  | **Emballage** | **Sekundære** |
@@ -213,7 +217,7 @@ Systemet anvender nu **Politik for omkostningstotaler**, når det opretter **Kla
 
 | Regnskabsdato | Omkostningsobjekt | Beskrivelse  | Omkostningselement | Beskrivelse |  Beløb |
 |-----------------|-------------|--------------|----------|-----------|-----------|
-| 01-31-2017      | CC001       | HR           | SC-CC001 | HR        | 10.100,00 |
+| 01-31-2017      | CC001       | Personale           | SC-CC001 | Personale        | 10.100,00 |
 | 01-31-2017      | CC002       | Finans      | SC-CC002 | Finans   | 17.735,00 |
 | 01-31-2017      | CC003       | Samling     | SC-CC003 | Samling  | 31.082,75 |
 | 01-31-2017      | CC004       | Emballage    | SC-CC004 | Emballage | 15.717,25 |
@@ -232,16 +236,16 @@ Siden **Oplysninger om kladdepost for omkostningssaldo for omkostningsobjekt**, 
 | 1001                          | Elektricitet | 200.00    |
 | 1002                          | Lønninger    | 10.000,00 |
 | 1003                          | Annoncer | 4.000,00  |
-| SC-CC001                      | HR          | 3.535,00  |
+| SC-CC001                      | Personale          | 3.535,00  |
 
 **Omkostningsposter, der er genereret af beregningen af fast omkostning**
 
 | Omkostningsobjekt | Beskrivelse  | Omkostningselement   | Beskrivelse  |        Beløb     |       Regnskabsdato     |
 |-------------|--------------|----------|-----------------|-------------|------------|
-| CC001       | HR           | SC-CC001 | HR              | 10.100,00. \- | 01-31-2017 |
-| CC002       | Finans      | SC-CC001 | HR              | 3.535,00    | 01-31-2017 |
-| CC003       | Samling     | SC-CC001 | HR              | 5.555,00    | 01-31-2017 |
-| CC004       | Emballage    | SC-CC001 | HR              | 1.010,00    | 01-31-2017 |
+| CC001       | Personale           | SC-CC001 | Personale              | 10.100,00. \- | 01-31-2017 |
+| CC002       | Finans      | SC-CC001 | Personale              | 3.535,00    | 01-31-2017 |
+| CC003       | Samling     | SC-CC001 | Personale              | 5.555,00    | 01-31-2017 |
+| CC004       | Emballage    | SC-CC001 | Personale              | 1.010,00    | 01-31-2017 |
 | CC002       | Finans      | SC-CC002 | Finans         | 17.735,00. \- | 01-31-2017 |
 | CC003       | Samling     | SC-CC002 | Finans         | 11.527,75   | 01-31-2017 |
 | CC004       | Emballage    | SC-CC002 | Finans         | 6.207,25    | 01-31-2017 |
@@ -297,6 +301,3 @@ Den klare adskillelse mellem **Omkostningstildeling** og **Politikker for omkost
 -  [Dimensioner for omkostningselement](cost-elements.md)
 -  [Dimensionshierarki](dimension-hierarchy.md)
 -  [Beregning af faste omkostninger](overhead-calculation.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

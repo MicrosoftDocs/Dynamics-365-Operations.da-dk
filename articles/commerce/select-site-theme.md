@@ -2,30 +2,35 @@
 title: Vælg et tema for webstedet
 description: Dette emne indeholder en beskrivelse af, hvordan du kan angive eller ændre webstedets tema i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
+ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964775"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4556423"
 ---
-# <a name="select-a-site-theme"></a>Vælge et tema for webstedet
+# <a name="select-a-site-theme"></a>Vælg et tema for webstedet
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af, hvordan du kan angive eller ændre webstedets tema i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Layout og typografi til et websted (f.eks. skrifttyper, størrelser og farver) defineres af det tema, du vælger, og gælder for webstedet. Et tema oprettes og implementeres af en udvikler i firmaet. Du kan finde en oversigt over temaer under [Oversigt over temaer](e-commerce-extensibility/theming.md). Du kan finde flere oplysninger om, hvordan du opretter og anvender temaer, under [Oprette et nyt tema](e-commerce-extensibility/create-theme.md).
 
@@ -45,13 +50,15 @@ Udfør følgende trin for at vælge det tema, der anvendes på webstedet.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Tilføje et logo](add-logo.md)
+[Tilføj et logo](add-logo.md)
 
 [Arbejd med CSS-tilsidesættelsesfiler](css-override-files.md)
 
-[Tilføje en favicon](add-favicon.md)
+[Tilføj en favicon](add-favicon.md)
 
-[Tilføje en copyright-meddelelse](add-copyright-notice.md)
+[Tilføj en velkomstmeddelelse](add-welcome-message.md)
+
+[Tilføj en copyright-meddelelse](add-copyright-notice.md)
 
 [Føje sprog til webstedet](add-languages-to-site.md)
 
@@ -61,6 +68,3 @@ Udfør følgende trin for at vælge det tema, der anvendes på webstedet.
 
 [Opret et nyt tema](e-commerce-extensibility/create-theme.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

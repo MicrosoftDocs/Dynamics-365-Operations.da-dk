@@ -1,84 +1,73 @@
 ---
 title: Definere nye job
 description: Opgaven fokuserer på oprettelsen af et nyt job.
-author: twheeloc
-ms.date: 11/03/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0029745b85927d56c7bb281b327de6bf5c8cdf18
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067296"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417825"
 ---
 # <a name="define-new-jobs"></a>Definere nye job
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
 Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hjælp af manuel indtastning og kopier fra skabelon-funktionalitet. Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Denne opgave er beregnet til personalespecialisten.
 
-1. Gå til **Human Resources \> Job \> Job**.
-2. Vælg **Ny**.
-3. Angiv en værdi i feltet **Job**.
-4. Indtast en værdi i feltet **Beskrivelse**.
-5. Vælg en standardtitel, der skal bruges til jobbet.
-
-    Denne titel bruges som standardværdi for nye stillinger, der er tildelt jobbet.
-
+1. Gå til Personale > Job > Job.
+2. Klik på Ny.
+3. Skriv en værdi i feltet Job.
+4. Skriv en værdi i feltet Beskrivelse.
+5. Vælg en standardtitel, der skal bruges til jobbet. 
+    * Den titel, der er angivet, skal bruges som standard for nye stillinger, der er tildelt jobbet.  
 6. Find og vælg den ønskede post på listen.
-7. Vælg linket i den valgte række på listen.
-8. Vælg **Maksimumantal stillinger** i gruppen **Maksimalt antal stillinger**.
+7. Klik op linket i den valgte række på listen.
+8. Vælg "Maksimumantal stillinger" i gruppen Maksimalt antal stillinger
 9. Angiv antallet af stillinger. 
+    * Tildelinger af stilling tillades ikke over den maksimale værdi, der er angivet her.  
+10. Slå udvidelsen af sektionen Beskrivelse til/fra.
+11. Angiv en standardbeskrivelse for jobbet i feltet Note.
+    * Beskrivelsen gælder for alle stillinger, der er tildelt til det job, der er defineret her.  
+12. Slå udvidelsen af sektionen Jobklassificering til/fra.
+13. Vælg en jobfunktion, der skal bruges i standardrapportering i Personale.
+14. Find og vælg den ønskede post på listen.
+15. Klik op linket i den valgte række på listen.
+16. Vælg en jobtype for at klassificerer job yderligere i organisationen. 
+    * Jobtyper kan bruges i rapportering i hele Personale.  
+17. Find og vælg den ønskede post på listen.
+18. Klik op linket i den valgte række på listen.
+19. Slå udvidelsen af sektionen Kompensation til/fra.
+20. Vælg et kompensationsniveau.
+    * Kompensationsniveauet definerer den minimum- og maksimumkompensation, en medarbejder kan få for jobbet. Kompensationsregler bestemmer, om medarbejderes kompensation kan være uden for rammen.  
+21. Find og vælg den ønskede post på listen.
+22. Klik op linket i den valgte række på listen.
+23. Slå udvidelsen af sektionen Færdigheder til/fra.
+    * Bemærk, at felterne i oversigtspanelerne Færdigheder, Uddannelse og Certifikater er tomme. Når du har kopieret oplysninger fra en jobskabelon, angives oplysningerne i disse felter i et enkelt trin.   
+24. Klik på Gem.
+25. Klik på Kopiér fra.
+26. Klik på Kopiér fra skabelon.
+27. Klik på rullelisten i feltet Jobskabelon for at åbne opslaget.
+28. Find og vælg den ønskede post på listen.
+29. Klik op linket i den valgte række på listen.
+30. Klik på indstillingen Note.
+    * Kun de elementer, du vælger, kopieres til det valgte job.    
+31. Klik på OK.
+32. Slå udvidelsen af sektionen Certifikater til/fra.
+33. Slå udvidelsen af sektionen Uddannelse til/fra.
+34. Klik på Gem.
 
-    Stillingstildelinger, der overskrider dette antal, tillades ikke.
-
-10. Angiv en **Standardbeskrivelse af jobbet** i feltet **Note** under **Beskrivelse**.
-
-    Beskrivelsen gælder for alle stillinger, der er tildelt til det job, du definerer.
-
-11. Vælg en jobfunktion, der skal bruges til standardrapportering i Human Resources, i sektionen **Jobklassifikation**.
-12. Find og vælg den ønskede post på listen.
-13. Vælg linket i den valgte række på listen.
-14. Vælg en jobtype for at klassificerer job yderligere i din organisation, i feltet **Jobtype**.
-
-    Jobtyper kan bruges i rapportering i hele Human Resources.
-
-15. Find og vælg den ønskede post på listen.
-16. Vælg linket i den valgte række på listen.
-17. Vælg et kompensationsniveau i sektionen **Kompensation**.
-
-    Kompensationsniveauet definerer den minimum- og maksimumkompensation, en medarbejder kan få for jobbet. Kompensationsregler bestemmer, om medarbejderes kompensation kan være uden for rammen.
-
-18. Find og vælg den ønskede post på listen.
-19. Vælg linket i den valgte række på listen.
-20. Bemærk, at felterne i oversigtspanelerne **Færdigheder**, **Uddannelse** og **Certifikater** er tomme i sektionen **Færdigheder**. Når du har kopieret oplysninger fra en jobskabelon, angives oplysningerne i disse felter i et enkelt trin.
-21. Vælg **Gem**.
-22. Vælg **Kopiér fra**.
-23. Vælg **Kopiér fra skabelon**.
-24. Vælg pilen til rullelisten i feltet **Jobskabelon** for at åbne opslaget.
-25. Find og vælg den ønskede post på listen.
-26. Vælg linket i den valgte række på listen.
-27. Vælg indstillingen **Note**.
-
-    Kun de elementer, du vælger, kopieres til det valgte job.
-
-28. Vælg **OK**.
-29. Udvid sektionen **Certifikater**.
-30. Udvid afsnittet **Uddannelse**.
-31. Vælg **Gem**.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

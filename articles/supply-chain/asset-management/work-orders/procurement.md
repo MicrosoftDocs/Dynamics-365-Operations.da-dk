@@ -1,10 +1,12 @@
 ---
 title: Indkøb
 description: I dette emne beskrives indkøb i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2b5e160beb4743db2530b91020f21b686d84237b17cfa7ff7f0cc1da97695d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743644"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020198"
 ---
 # <a name="procurement"></a>Indkøb
 
@@ -36,7 +38,7 @@ På listen **Indkøbsrekvisition i arbejdsordre** (**Styring af aktiver** > **Al
 
 I illustrationen herunder vises et eksempel på listesiden **Indkøbsrekvisition for arbejdsordre**.
 
-![Figur 1.](media/08-work-orders.png)
+![Figur 1](media/08-work-orders.png)
 
 
 På listesiden **Indkøbsrekvisition i arbejdsordre** (**Styring af aktiver** > **Almindelig** > **Indkøb** > **Indkøbsrekvisition i arbejdsordre**) kan du se en liste over indkøbsordrer, der er relateret til arbejdsordrer. Når du vælger et arbejdsordrejob på denne side, kan du bruge knapperne i gruppen **Vis** under fanen **Arbejdsordreindkøb** i handlingsruden til at udføre forskellige handlinger:
@@ -47,7 +49,7 @@ På listesiden **Indkøbsrekvisition i arbejdsordre** (**Styring af aktiver** > 
 
 I illustrationen herunder vises et eksempel på listesiden **Arbejdsordreindkøb**.
 
-![Figur 2.](media/09-work-orders.png)
+![Figur 2](media/09-work-orders.png)
 
 
 Der vises et symbol, der er relateret til leveringsdatokontrol, i højre side af hver linje på både listesiden **Arbejdsordreindkøb** og **Indkøbsrekvisition for arbejdsordre**. Hvis der vises et udråbstegn i en rød cirkel på symbolet, betyder det, at leveringen af den relaterede indkøbsrekvisition eller indkøbsordre kan være forsinket.
@@ -93,10 +95,7 @@ Hvis du vil se eller angive det aktivitetsnummer, der er knyttet til en indkøbs
 
 I illustrationen nedenfor vises et eksempel på siden **Indkøbsordre** med fokus på **Aktivitetsnummeret**.
 
-![Figur 3.](media/10-work-orders.png)
+![Figur 3](media/10-work-orders.png)
 
 Hvis du vil se eller angive det aktivitetsnummer, der er knyttet til en indkøbsordres indkøbsrekvisition, skal du vælge indkøbsrekvisitionsposten på siden **Indkøbsrekvisition for arbejdsordre** og derefter vælge linket for indkøbsrekvisitionen i kolonnen **Indkøbsrekvisition**. Du kan finde feltet **Aktivitetsnummer** under fanen **Projekt** i oversigtspanelet **Linjedetaljer**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

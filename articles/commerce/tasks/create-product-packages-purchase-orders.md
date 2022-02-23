@@ -2,9 +2,11 @@
 title: " Oprette produktpakker til indkøbsordrer"
 description: Denne procedure gennemgår oprettelse af en produktpakke og brugen af den i en indkøbsordre.
 author: josaw1
+manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -13,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb10164be8d7a0828169cf3865f884afaa2e8408472edebe4cb0c7d4db059d8c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 296b3fb03b20dee5b6024c182df7feb3ce280913
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723231"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964664"
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Oprette produktpakker til indkøbsordrer
 
@@ -70,6 +72,3 @@ Denne procedure gennemgår oprettelse af en produktpakke og brugen af den i en i
 17. Klik på Opret.
 18. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
-title: Bruge forudsigelser om debitorbetalinger
+title: Bruge forudsigelser om debitorbetalinger (prøveversion)
 description: Dette emne gennemgår forudsætningerne og de generelle trin, der er nødvendige for at kunne bruge en prøveversion af Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+manager: AnnBe
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,30 +17,36 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: e0445046d8016dfa2c02c1ff1a05bdd148f9409a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968906"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969247"
 ---
-# <a name="use-customer-payment-predictions"></a>Bruge forudsigelser om debitorbetalinger
+# <a name="use-customer-payment-predictions-preview"></a>Bruge forudsigelser om debitorbetalinger (prøveversion)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne forklarer, hvordan du kan bruge debitorbetalingsforudsigelser. Før du bruger denne funktion, skal du sikre dig, at du har fuldført opsætningstrinnene for den. Du kan finde flere oplysninger under [Aktivere forudsigelser for debitorbetaling](enable-cust-paymnt-prediction.md).
 
-Du kan få vist forudsigelse af debitorbetalinger i arbejdsrådet **Administrer kundekredit og rykkere** og på to nye listesider: **Forudsigelser for transaktionsbetaling** og **Forudsigelser om debitorbetalinger**.
+Du kan få vist forudsigelse af debitorbetalinger i arbejdsrådet **Administrer kundekredit og rykkere** og på to nye listesider, som er **Betaling pr. postering** og **Forudbetalinger pr. kunde**.
 
 ### <a name="manage-customer-credit-and-collections-workspace"></a>Arbejdsområde til at administrere debitors kredit og rykkere
 
-Arbejdsområdet **Administrer kundekredit og rykkere** indeholder to nye felter: **Forudsigelser for transaktionsbetaling** og **Forudsigelser om debitorbetalinger**.
+Arbejdsområdet **Administrer kundekredit og rykkere** indeholder to nye felter, **Forudbetalinger pr. postering** og **Kunder med forventede, høje saldi**.
 
-### <a name="transaction-payment-predictions-list-page"></a>Listesiden Forudsigelser for transaktionsbetaling
+- Feltet **Betalingsforudsigelse pr. postering** viser antallet af åbne debitorposteringer, der har en betalingssandsynlighed på mindre end 50 procent i området **Til tiden**. Du kan vælge dette felt for at åbne listesiden **Betalingsforudsigelser pr. transaktion**.
+- I feltet **Ddebitorer med forventede høj saldi** vises det antal debitorer, som mere end halvdelen (50 procent) af den samlede saldo skal betales for forsinket og/eller meget forsinket. Du kan vælge dette felt for at åbne listesiden **Betalingsforudsigelser pr. transaktion**.
 
-På listesiden **Forudsigelser for transaktionsbetaling** kan du få vist betalingssandsynligheden for åbne posteringer i områderne **Til tiden**, **Forsinket** og **Meget forsinket**. For hver postering i gitteret vises kolonnen **Til tiden-sandsynlighed** den sandsynlighed, at fakturaen betales på eller før forfaldsdatoen. Hvis sandsynligheden for en betaling til tiden er mindre end 50 procent, vises der en rød cirkel ud for procenttallet i kolonnen **Til tiden-sandsynlighed** for at angive risikoen for forsinket betaling.
+[![Arbejdsområde til at administrere debitors kredit og rykkere](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
-[![Betalingsforudsigelse pr. transaktionsside.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+### <a name="payment-predictions-per-transaction-list-page"></a>Listeside for betalingsforudsigelser pr. transaktion
+
+På listesiden **Betalingsfuldførelse pr. transaktion** kan du få vist betalingssandsynligheden for åbne posteringer i områderne **Til tiden**, **Forsinket** og **Meget forsinket**. For hver postering i gitteret vises kolonnen **Til tiden-sandsynlighed** den sandsynlighed, at fakturaen betales på eller før forfaldsdatoen. Hvis sandsynligheden for en betaling til tiden er mindre end 50 procent, vises der en rød cirkel ud for procenttallet i kolonnen **Til tiden-sandsynlighed** for at angive risikoen for forsinket betaling.
+
+[![Betalingsforudsigelse pr. transaktionsside](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 Ruden **Relaterede oplysninger** i højre del af siden vises flere oplysninger om forudsigelser:
 
@@ -48,13 +56,13 @@ Ruden **Relaterede oplysninger** i højre del af siden vises flere oplysninger o
 
 Dataene i sektionen **Topfaktorer** og i oversigtspanelerne **Customer Insights** og **Kundehistorik** hjælper med at forklare betalingsforudsigelser. Det kan være med til at øge din tillid til forudsigelsers effektivitet.
 
-[![Grafiske indikatorer for betalingsforudsigelser i ruden Relaterede oplysninger.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![Grafiske indikatorer for betalingsforudsigelser i ruden Relaterede oplysninger](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
-### <a name="customer-payment-predictions-list-page"></a>Listesiden Forudsigelser om debitorbetalinger
+### <a name="payment-prediction-per-customer-list-page"></a>Listeside for forudbetaling pr. debitor
 
-Listesiden **Forudsigelser om debitorbetalinger** viser den samlede åbne saldo og det forventede beløb, der skal betales, i områderne **Til tiden**, **Forsinket** og **Meget forsinket**.
+Listesiden **Betalingsforudsigelse pr. debitor** viser den samlede åbne saldo og det forventede beløb, der skal betales i områderne **Til tiden**, **Forsinket** og **Meget forsinket**.
 
-[![Betalingsforudsigelser pr. kundeside.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Betalingsforudsigelser pr. kundeside](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 Betalingsbeløbet i hvert sæt beregnes som summen af det vejede gennemsnit af transaktionssaldoen. Dette beløb beregnes ud fra betalingssandsynlighederne i hvert sæt.
 
@@ -76,20 +84,28 @@ I dette tilfælde projiceres betalinger for hver enkelt sæt på følgende måde
 
 Sektionen **Relaterede oplysninger** i højre del af siden viser flere oplysninger om forudsigelser:
 
-- For den post, der er valgt i gitteret, viser oversigtspanelet **Betalingsforudsigelser** for områderne **Til tiden**, **Forsinket** og **Meget forsinket**.
+- For den post, der er valgt i gitteret, viser oversigtspanelet **Betalingsforudsigelser** for områderne **Til tiden**, **Forsinket** og **Meget forsinket**. Sektionen **Topfaktorer** viser de vigtigste faktorer, der har påvirket betalinger. Topfaktorer er attributter for den valgte postering og/eller kunden for den pågældende postering.
 - Oversigtspanelet **Customer Insights** viser statistik for den aktuelle faktura, betaling og rykker for kunden i den valgte postering.
 - Oversigtspanelet **Debitorhistorik** viser debitorens betalingshistorik i områderne **Til tiden**, **Forsinket** og **Meget forsinket**.
 
-Dataene i oversigtspanelerne **Debitorindsigt** og **Debitorhistorik** hjælper med at forklare betalingsforudsigelser. Det kan være med til at øge din tillid til forudsigelsers effektivitet.
+Dataene i sektionen **Topfaktorer** og i oversigtspanelerne **Customer Insights** og **Kundehistorik** hjælper med at forklare betalingsforudsigelser. Det kan være med til at øge din tillid til forudsigelsers effektivitet.
 
 ## <a name="improving-the-accuracy-of-payment-predictions"></a>Bedre nøjagtighed af kontantforudsigelser
 
 Du kan få vist nøjagtigheden af kontantforudsigelser ved at gå til **Kredit- og rykkere \> Opsætning \> Finance Insights \> Finance Insights-parametre**. Under fanen **Indsigt i debitorbetaling** viser afsnittet **Forudsigelsesmodel** præcisionen af forudsigelsesmodellen som en procentdel.
 
-[![Nøjagtighed af betalingsforudsigelser.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![Nøjagtighed af betalingsforudsigelser](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
-Hvis du ikke er tilfreds med nøjagtigheden, skal du vælge linket **Forbedring af modellens nøjagtighed** for at åbne AI Builder-udvidelsesoplevelsen. I udvidelsen af AI Builder kan du vælge eller annullere markeringen af felter, indtil du har valgt de felter, du mener er de vigtigste for præcist at forudsige betalingssandsynligheder. Når du er færdig, kan du nemt genregistrere prognosemodellen og udgive dine ændringer. Den nyoplærte forudsigelsesmodel vælges automatisk til forudsigelser i Dynamics 365 Finance.
+Hvis du ikke er tilfreds med nøjagtigheden, skal du vælge linket **Forbedring af modellens nøjagtighed** for at åbne AI Builder-udvidelsesoplevelsen. I udvidelse af AI Builder kan du vælge eller annullere markeringen af felter, indtil du har valgt de felter, du mener er de vigtigste for præcist at forudsige betalingssandsynligheder. Når du er færdig, kan du nemt genregistrere prognosemodellen og udgive dine ændringer. Den nyoplærte forudsigelsesmodel vælges automatisk til forudsigelser i Dynamics 365 Finance.
 
-[![AI Builder-udvidelsesoplevelse.](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder-udvidelsesoplevelse](./media/ai-builder.png)](./media/ai-builder.png)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+## <a name="release-details"></a>Frigiv detaljer
+
+Financial Insights, offentlig prøveversion er tilgængelig for prøveimplementeringer i USA, Europa og Storbritannien. Microsoft tilføjer trinvist understøttelse af flere regioner.
+
+De offentlige prøveversionsfunktioner kan og bør kun aktiveres i sandkasse miljøer i niveau 2. Opsætnings- og AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
+
+## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
+
+Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.

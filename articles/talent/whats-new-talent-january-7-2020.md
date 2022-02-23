@@ -53,6 +53,3 @@ Denne ændring tilføjer en sletteindstilling i formen **Arbejdere uden ansætte
 5. Angiv rettigheden **Slet** til Tildel.
 6. Vælg fanen **Ikke-publicerede objekter**.
 7. Vælg **Publicer alle**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

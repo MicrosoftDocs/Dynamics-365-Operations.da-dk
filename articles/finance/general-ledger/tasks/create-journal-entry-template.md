@@ -2,23 +2,26 @@
 title: Oprette en kladdepostering ved hjælp af en skabelon
 description: Bogførte kladdebilag kan gemmes som bilagsskabeloner og anvendes i et nyt kladdebilag.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c015bbba6784f511ac51802ea005d2114e703861370e33350cff62b6005d630c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 360df29e6349fd4d42d6d14af646e929b73943bd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730524"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441634"
 ---
 # <a name="create-a-journal-entry-using-template"></a>Oprette en kladdepostering ved hjælp af en skabelon
 
@@ -60,6 +63,3 @@ Bogførte kladdebilag kan gemmes som bilagsskabeloner og anvendes i et nyt kladd
 29. Angiv beløbet, der skal anvendes til bilaget, i feltet **Beløb**. Feltet **Beløb** vises kun, hvis bilagsskabelon er af typen Procent.  
 30. Klik på **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

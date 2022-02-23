@@ -2,13 +2,16 @@
 title: Terminologi for omkostningsregnskab
 description: Dette emne definerer nøgleudtryk, der bruges i omkostningsregnskabet.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f61ae7a6657eaad3510833c17f342b7266be247aec2a9bfe80b97172f662ae0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774371"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441690"
 ---
 # <a name="cost-accounting-terminology"></a>Terminologi for omkostningsregnskab
 
@@ -128,7 +131,7 @@ De fleste kildesystemer kan levere data, der svarer til en eller flere datakilde
 |---|---|---|---|
 | Dimensionsmedlemmer for omkostningselement  |  Ja | Ja  | Ja  |
 |  Dimensionsmedlemmer for omkostningsobjekt |  Ja | Ja  | Ja  |
-|  Statistiske dimensionsmedlemmer | Ja  | Nej  | Nej  |
+|  Statistiske dimensionsmedlemmer | Ja  | Nr.  | Nr.  |
 |  Finans | Ja  | Ja  | Ja  |
 |  Budgetposter  | Ja  | Ja  | Ja  |
 |  Statistiske målinger | Ja  | Ja  | Ja  |
@@ -202,6 +205,3 @@ Opgørelser er visninger for de ledere, der er ansvarlige for styring af omkostn
 Versioner, der bruges til at simulere, se og sammenligne forskellige udfald. Som standard vises alle faktiske omkostninger i en grundlæggende version, der er kendt som *faktisk*. I budgetter og beregninger kan du arbejde med så mange versioner, som du har brug for. Du kan eksempelvis importere budgetdata i en oprindelig version og derefter ændre budgettet i en revideret version. Du kan oprette flere versioner for beregninger. Du kan derefter oprette beregninger ved hjælp af andre beregningsregler, der skal udlignes for omkostningstildeling i disse forskellige versioner.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

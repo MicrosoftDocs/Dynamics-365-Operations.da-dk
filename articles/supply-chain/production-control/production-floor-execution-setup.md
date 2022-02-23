@@ -2,35 +2,37 @@
 title: Konfigurere en enhed til at køre grænsefladen på produktionsudstyr
 description: Grænsefladen til kørsel af produktionsudstyr konfigureres for alle enheder i produktionen. Virksomheder konfigurerer typisk hver enhed forskelligt, afhængigt af formålet med enheden. Et firma kan f.eks. have én enhed i modtagelsesområdet, hvor arbejderne stempler ind og ud, når de kommer og går, og et andet i produktionen, hvor arbejderne administrerer deres job.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752826"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966267"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurere en enhed til at køre grænsefladen på produktionsudstyr
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Grænsefladen til kørsel af produktionsudstyr konfigureres for alle enheder i produktionen. Virksomheder konfigurerer typisk hver enhed forskelligt, afhængigt af formålet med enheden. Et firma kan f.eks. have én enhed i modtagelsesområdet, hvor arbejderne stempler ind og ud, når de kommer og går, og et andet i produktionen, hvor arbejderne administrerer deres job.
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Indstille konfiguration og filtre for en bestemt enhed
 
-Når du vil indstille konfigurations- og jobfiltre for en enhed, skal du logge på siden til **Kørsel af produktionsudstyr** ved hjælp af en konto med en sikkerhedsrolle, der omfatter pligten *Vedligehold tidskontrol*. (Blandt de indbyggede sikkerhedsroller er det kun *Shop floor-supervisor*, der har denne pligt). Følg derefter disse trin.
+Når du vil indstille konfigurations- og jobfiltre for en enhed, skal du logge på siden til **Kørsel af produktionsudstyr** ved hjælp af en konto med en sikkerhedsrolle, der omfatter pligten *Supervisor for vedligeholdelse af tid*. (Blandt de indbyggede sikkerhedsroller er det kun *Shop floor-supervisor*, der har denne pligt). Følg derefter disse trin.
 
-1. Gå til den enhed, du vil konfigurere, og log på Microsoft Dynamics 365 Supply Chain Management som shop floor-supervisor. (Brug en konto, der omfatter pligten *Vedligehold tidskontrol*).
+1. Gå til den enhed, du vil konfigurere, og log på Microsoft Dynamics 365 Supply Chain Management som shop floor-supervisor. (Brug en konto, der omfatter pligten *Supervisor for vedligeholdelse af tid*).
 1. Kontroller, at der er en konfiguration tilgængelig for den enhed, du konfigurerer. Hvis der ikke allerede findes en konfiguration, bliver der leveret en standardkonfiguration. Du kan finde flere oplysninger om, hvordan du kan konfigurere en konfiguration, under [Konfigurere grænsefladen til kørsel af produktionsudstyr](production-floor-execution-configure.md).
 1. Gå til **Produktionsstyring \> Produktionsudførelse \> Kørsel af produktionsudstyr**.
 
@@ -70,13 +72,10 @@ Ofte vil du køre grænsefladen til kørsel af produktionsudstyr på en enhed, d
 
 Den øverste del af nedenstående illustration viser, hvordan grænsefladen ser ud som standard. Den nederste del viser, hvordan den ser ud i fuldskærmstilstand, når navigationsruden er skjult.
 
-![Standardgrænseflade i forhold til fuldskærmsgrænseflade.](media/pfei-full-screen.png "Standardgrænseflade i forhold til fuldskærmsgrænseflade")
+![Standardgrænseflade i forhold til fuldskærmsgrænseflade](media/pfei-full-screen.png "Standardgrænseflade i forhold til fuldskærmsgrænseflade")
 
 ## <a name="extend-the-session-past-12-hours"></a>Udvide sessionen ud over de seneste 12 timer
 
 Som standard bliver grænsefladen til kørsel af produktionsudstyr automatisk logget af, hvis ingen bruger den i 12 timer. En bruger af Supply Chain Management skal derefter logge på igen. Du kan dog forlænge timeoutgrænsen til op til 90 dage.
 
 Hvis du vil forlænge grænsen for timeout, skal du logge på Supply Chain Management og gå til **Systemadministration \> Brugere \> Sessionsudvidelser**. Angiv den Supply Chain Management-brugerkonto, der bruges til at logge på enheden, og det antal timer, som sessionen skal være aktiv i.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

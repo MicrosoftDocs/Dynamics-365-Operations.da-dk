@@ -2,30 +2,35 @@
 title: Oversigt over sider til indkøbsvogn og betaling ved kassen
 description: Dette emne indeholder en oversigt over sider til indkøbsvogn og betaling ved kassen i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982962"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411186"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversigt over sider til indkøbsvogn og betaling ved kassen
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over sider til indkøbsvogn og betaling ved kassen i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 På indkøbsvognssiden på et e-handels-websted vises alle de varer, som en kunde har lagt i indkøbsvognen. Siden med indkøbsvognen opbygges ved hjælp af indkøbsvognsmodulet. Indkøbsvognsmodulet er en container, der agerer vært for alle de moduler, der kræves for at fremvise varerne i indkøbsvognen. Modulet til indkøbsvognen kan også bruge andre moduler til at vise ordreoversigten og eventuelle kampagnekoder, der er anvendt på kundeordren.
 
@@ -37,7 +42,7 @@ Indkøbsvognens side fungerer som indkøbspose og indeholder alle de varer, der 
 
 I følgende illustration vises et eksempel på en indkøbsvognside, der er oprettet ved hjælp af modulbiblioteket og temaet "Fabrikam".
 
-![Eksempel på en indkøbsvognside.](./media/cart2.PNG)
+![Eksempel på en indkøbsvognside](./media/cart2.PNG)
 
 Hovedindholdet af indkøbsvognens side viser alle de varer, som kunden har lagt i indkøbsvognen. Alle relevante rabatter fremvises. Disse rabatter omfatter komplekse rabatter. Eksemplerne omfatter "Køb 3 varer, og få 10 % rabat" eller "Køb en flaske og en rygsæk, så du får 10 % rabat". Modulet Ordreoversigt viser det beløb, der skal betales efter fradrag af rabat, forsendelse, moms og andet, der er anvendt. Der findes også et kampagnekodemodul, hvor kunden kan anvende eller fjerne kampagnekoder.
 
@@ -53,7 +58,7 @@ Siden med betaling ved kassen er det sted, hvor kunderne angiver de oplysninger,
 
 I følgende illustration vises et eksempel på en betalingsside, der er oprettet ved hjælp af modulbiblioteket.
 
-![Eksempel på en betalingsside.](./media/Checkout.PNG)
+![Eksempel på en betalingsside](./media/Checkout.PNG)
 
 Hovedindholdet af betalingssiden er det sted, hvor alle ordreoplysningerne indsamles. Disse oplysninger omfatter leveringsadresse, leveringsindstillinger og betalingsoplysninger. Betalingen er en trinvis proces, da oplysningerne skal angives i en bestemt rækkefølge for at blive behandlet. Leveringsadressen skal f.eks. angives, før der kan beregnes forsendelsesomkostninger, og betalingen kan godkendes.
 
@@ -83,7 +88,7 @@ Kunden kan gennemføre betalingsprocessen som gæstebruger eller som en bruger, 
 
 ### <a name="order-summary"></a>Ordreoversigt
 
-Ved kassen vises en oversigt over linjevarerne i indkøbsvognen, så kunden kan bekræfte ordren, før ordren afgives. Linjevarerne kan ikke redigeres i betalingsprocessen. Men der findes et link til indkøbsvognen, hvis brugeren vil gå tilbage og redigere linjevarer.
+Ved kassen vises en oversigt over linjevarerne i indkøbsvognen, så kunden kan bekræfte ordren, før den afgives. Linjevarerne kan ikke redigeres i betalingsprocessen. Men der findes et link til indkøbsvognen, hvis brugeren vil gå tilbage og redigere linjevarer.
 
 Når kunden har angivet forsendelses- og faktureringsoplysninger, afspejler ordreoversigten det beløb, der skal betales, når fordelskundepoint, gavekort og andre betalinger er anvendt.
 
@@ -102,6 +107,3 @@ Du kan finde flere oplysninger om, hvordan du opretter en betalingsside, under [
 [Oversigt over sider med produktdetaljer](quick-tour-pdp.md)
 
 [Oversigt over sider til kontostyring](quick-tour-account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

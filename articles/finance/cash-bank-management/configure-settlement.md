@@ -2,25 +2,28 @@
 title: Konfigurere udligning
 description: Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I dette emne beskrives de parametre, der bruges til udligning for både Kreditor og Debitor.
 author: kweekley
+manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 323a1e6d426208a880a72dd89f7be04bacbf13a8e6c5d8ab7599217cfc18f2c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 094b8876b3b10b6dcbc0ce399a1a9915271459ed
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720568"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441699"
 ---
 # <a name="configure-settlement"></a>Konfigurere udligning
 
@@ -64,6 +67,3 @@ For at undgå yderligere regnskabsposter, debet og kredit på den samme finansko
 
 -   Organisationer bruger ofte faste dimensioner til at udfylde en økonomisk dimension, der er ikke påkrævet, med nuller. Dette er ofte tilfældet for statuskonti, f.eks.debitor/kreditor. Kontostrukturer kan bruges til at spore økonomiske dimensioner, der typisk udfyldes med nuller.  Du kan fjerne den økonomiske dimension for statuskonti, så du ikke behøver at bruge faste dimensioner.
 -   Hvis organisationen kræver faste dimensioner på debitor-/kreditorhovedkontoen, skal du finde en måde at bruge den faste standarddimension på betalingen, så den faste dimensionsværdi gemmes på kreditorposteringen for betalingen. På denne måde kan systemet rekonstruere debitor-/kreditorhovedkontoen, så de faste dimensionsværdier medtages. Den faste værdi kan defineres som en standardværdi på kreditorer eller kladdenavnet for betalingskladden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

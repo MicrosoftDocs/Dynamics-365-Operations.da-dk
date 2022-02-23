@@ -1,24 +1,26 @@
 ---
 title: Oprette en gentagen indkøbsordre
 description: Dette emne viser, hvordan du opretter en gentagende indkøbsordre (IO) ved at kopiere linjer fra et tidligere indkøbsordredokument til en ny indkøbsordre eller en eksisterende indkøbsordre.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3af29594326501359e4722b92d6c5235cf25af9c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 65eb801fb363ce2484dcce4d086d1b2b5ad3388f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569355"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017336"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Oprette en gentagen indkøbsordre
 
@@ -67,6 +69,3 @@ I stedet for at kopiere en hel ordre er det mere almindeligt at oprette en ny in
 4. Vælg linjen for den ønskede indkøbsordre. Bemærk, at den ene ordrelinje, der er på denne indkøbsordre, også er markeret.  
 5. Vælg **OK**. Den ekstra ordrelinje er blevet føjet til din indkøbsordre.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

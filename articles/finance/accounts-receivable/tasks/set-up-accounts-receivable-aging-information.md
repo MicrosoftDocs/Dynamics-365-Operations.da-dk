@@ -1,24 +1,27 @@
 ---
 title: Opsætte og generere aldersfordelte oplysninger om debitorer
 description: Denne guide hjælper dig med at oprette en definition af forældelsesperiode, aldersfordele kundesaldi og få vist saldi på listen Aldersfordelt saldo og siden Rykkere.
-author: abruer
+author: mikefalkner
+manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 996fb289c32a1819103fd67ffddc940dfd2870fb
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 439be64a864056cc19fd156f664a4b90601be040
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753531"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441579"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Opsætte og generere aldersfordelte oplysninger om debitorer
 
@@ -56,6 +59,3 @@ Denne guide hjælper dig med at oprette en definition af forældelsesperiode, al
 2. Vælg en kunde med en saldo.
 3. Udvid faktaboksen **Aldersfordeling** for at få vist de aldersfordelte saldi. Definitionen af forældelsesperioden for faktaboksen hentes fra den definition af standardforældelsesperiode, som er angivet i parametrene. Du kan ændre den ved hjælp af menuen Indsaml.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

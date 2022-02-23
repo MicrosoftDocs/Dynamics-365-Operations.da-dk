@@ -2,24 +2,27 @@
 title: Angive standardbeskrivelser til automatisk bogføring
 description: Dette emne forklarer, hvordan du kan konfigurere den standardtekst, der bruges til at beskrive de regnskabsposter, der bogføres automatisk i finans. Du kan angive standardbeskrivelsesteksten ved hjælp af en fritekst eller ved at vælge faste variabler.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89ea19753abdc4e5d4219a123a832bb3606515a43b439d5f94a9619857b6c7d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5fc73f636a5cac25c259ce2cbae5c5407dca9b7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722689"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441391"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Angive standardbeskrivelser til automatisk bogføring
 
@@ -84,6 +87,3 @@ Når du har fuldført trinnene i afsnittet [Konfigurere standardbeskrivelser](#s
 2. I feltet **Referencetabel** skal du vælge den databasetabel, hvorfra der skal føjes parameterdata til beskrivelsen.
 3. I feltet **Referencefelt** skal du vælge det felt, hvorfra der skal føjes parameterdata til beskrivelsen.
 4. Gentag trin 1-3 for at tilføje flere parametre.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

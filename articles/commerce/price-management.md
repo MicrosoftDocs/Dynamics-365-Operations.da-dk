@@ -2,24 +2,27 @@
 title: Styring af detailsalgspriser
 description: I dette emne beskrives begreberne for oprettelse og styring af salgspriser i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 07/28/2021
+manager: AnnBe
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759279"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410956"
 ---
 # <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
 
@@ -46,7 +49,7 @@ I sig selv er en prisgruppe blot et navn, en beskrivelse og eventuelt en priorit
 
 I følgende illustration vises, hvordan prisgrupperne bruges. I denne illustration skal du bemærke, at "Prisgruppe" bogstaveligt talt er placeret midt i administrationen af prissætning og rabat. De Commerce-enheder, du kan bruge til at administrere differentierede priser og rabatter, er placeret til venstre, og de faktiske pris- og rabatposter er placeret til højre.
 
-![Prisgrupper.](./media/PriceGroups.png "Prisgrupper")
+![Prisgrupper](./media/PriceGroups.png "Prisgrupper")
 
 Når du opretter prisgrupper, bør du ikke bruge samme prisgruppe til flere typer Commerce-enheder. I modsat fald kan det være vanskeligt at afgøre, hvorfor en bestemt pris eller rabat anvendes til en transaktion.
 
@@ -214,30 +217,26 @@ Når du angiver salgspriser i Dynamics 365, skal du ikke angive, om den angivne 
 
 Hvis du arbejder både med inklusive og eksklusive moms, er det vigtigt, at du angiver priserne korrekt, da det samlede beløb, som kunden betaler, ændres, hvis indstillingen **Pris er inklusive moms** for kanalen ændres.
 
-## <a name="differences-between-commerce-pricing-and-non-commerce-pricing"></a>Forskelle mellem Commerce-prissætning og ikke-Commerce-prissætning
+## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Forskelle mellem detailprissætning og ikke-detailprissætning
 
-Et enkelt program til prissætning bruges til at beregne priserne på tværs af alle kanaler: callcenter, detailbutik og onlinebutikker. Dette hjælper med at muliggøre ensartede Commerce-scenarier.
+Et enkelt program til prissætning bruges til at beregne priserne på tværs af alle kanaler: Callcenter, Detailbutik og Onlinebutikker. Dette hjælper med at muliggøre ensartede handelsscenarier.
 
-Prissætning er designet til at fungere sammen med Commerce-enheder i stedet for enheder uden for Commerce. Den er specifikt designet til at angive butikspriser, ikke lagerpriser.
+Prissætning er designet til at fungere sammen med detailenheder i stedet for enheder uden for detailhandel. Den er specifikt designet til at angive butikspriser, ikke lagerpriser.
 
-Commerce-programmet til prissætning **understøtter ikke** følgende prisfunktioner:
+Programmet til prissætning **understøtter ikke** følgende prisfunktioner:
 
 - Prissætning efter lokation eller lokation og lagerstedets lagringsdimensioner understøttes ikke. Hvis du kun angiver lokationsdimensionen i handelsaftalerne, ignorerer priserne lokationen og anvender handelsaftalen på alle lokationer. Hvis du angiver både lokation og lagersted, er adfærden udefineret/ikke afprøvet, fordi det forventes, at detailhandlere bruger butikkens prisgrupperne til at styre priserne for de enkelte butikker/lagersteder.
 - Attributbaseret prissætning understøttes ikke.
 - Gennemgang af leverandørrabatter understøttes ikke.
-- Den generiske valutafunktin understøttes ikke, selvom en samhandelsaftale har funktionen **Medtag generisk valuta** slået til, vil denne samhandelsaftale kun blive betragtet som gyldig for den valuta, der er defineret i samhandelsaftalen.
 - Standardprissætningsprogrammet i Supply Chain Management understøtter prisberegningen baseret på "ønsket afsendelsesdato" og "ønsket modtagelsesdato" sammen med dags dato. Detailprissætning understøtter dog ikke disse værdier i øjeblikket. Årsagen er, at kunder i B2C-scenarier ikke forventer, at den ønskede leveringsdato påvirker vareprisen. I nogle tilfælde har detailhandlere både B2B- og B2C-operationer. I forbindelse med B2B-operationer er det almindeligt at ændre priser ud fra leveringsdatoerne. Disse detailhandlere kan bruge prissætning i Supply Chain Management til deres B2B-forretning og detailprissætning til deres B2C-forretning. Detailprissætning kommer kun på tale, hvis programbrugeren tilføjes som bruger af et call center, så de detailhandlende kan tildele visse brugere, der arbejder med prissætningen i Supply Chain Management, og tildele nogle få stykker, der arbejder med detailprissætning, dvs. disse brugere skal tilføjes som brugere af et call center. Desuden skal funktionen **Brug dags dato til beregning af priser** i sektionen **Commerce-parametre > prissætning og rabatter > diverse** være aktiveret. På denne måde kan de gøre brug af en debitorparameterværdi for den ønskede afsendelsesdato eller den ønskede modtagelsesdato for prissætning i Supply Chain Management, men detailprissætningen bruger fortsat dags dato til prisberegning.
 
-Commerce-programmet til prissætning understøtter desuden **kun** følgende prissætningsfunktioner:
+Programmet til prissætning understøtter desuden **kun** følgende prisfunktioner:
 
-- Prisen baseres på produktdimensioner i rækkefølge fra den mest specifikke variantpris til den mindst specifikke variantpris til produktmasterprisen. En pris, der er angivet ved hjælp af to produktdimensioner (f.eks. farve og størrelse), bruges før en pris, der er angivet kun ved hjælp af en produktdimension (f.eks. størrelse).
+- Prisen baseres på produktdimensioner i rækkefølge fra den mest specifikke variantpris til den mindst specifikke variantpris til produktmasterprisen. En pris, der er angivet ved hjælp af to produktdimensioner (f.eks. Farve og Størrelse), bruges før en pris, der er angivet kun ved hjælp af en produktdimension (f.eks. Størrelse).
 - Den samme prisgruppe kan bruges til at styre priser og rabatter.
 
 ## <a name="pricing-api-enhancements"></a>Forbedringer af pris-API
 
 Prisen er en af de vigtigste faktorer, der styrer mange kunders indkøbsbeslutninger, og mange kunder sammenligner priserne på forskellige websteder, før de foretager et køb. For at hjælpe med at sikre, at de har konkurrencedygtige priser, holder detailhandlerne nøje øje med konkurrenterne og kører ofte kampagner. For at hjælpe disse forhandlere med at tiltrække kunder er det vigtigt at produktsøgning, gennemsynsfunktion, lister og siden med produktdetaljer viser de mest nøjagtige priser.
 
-**GetActivePrices**-API'en (Application Programming Interface) i Commerce returnerer priser, der omfatter simple rabatter (f.eks. enkeltlinjerabatter, der ikke er baseret på andre varer i indkøbsvognen). På denne måde er de priser, der vises, tæt på det faktiske beløb, som kunderne skal betale for varerne. Denne API indeholder alle typer simple rabatter: tilknytningsbaserede, loyalitetsbaserede, katalogbaserede og kanalbaserede rabatter. Derudover returnerer API'en navnene og gyldighedsoplysningerne for de anvendte rabatter, så detailhandlerne kan give en mere detaljeret beskrivelse af prisen og skabe en oplevelse af, at det haster, hvis rabatten udløber snart.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+I en kommende version af Commerce returnerer **GetActivePrices**-API'en (Application Programming Interface) priser, der omfatter simple rabatter (f.eks. en enkeltlinjerabatter, der ikke er baseret på andre varer i indkøbsvognen). På denne måde er de priser, der vises, tæt på det faktiske beløb, som kunderne skal betale for varerne. Denne API indeholder alle typer simple rabatter: tilknytningsbaserede, loyalitetsbaserede, katalogbaserede og kanalbaserede rabatter. Derudover returnerer API'en navnene og gyldighedsoplysningerne for de anvendte rabatter, så detailhandlerne kan give en mere detaljeret beskrivelse af prisen og skabe en oplevelse af, at det haster, hvis rabatten udløber snart.

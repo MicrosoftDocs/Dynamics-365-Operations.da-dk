@@ -2,9 +2,11 @@
 title: Klargøre et Dynamics 365 Commerce-evalueringsmiljø
 description: I dette emne beskrives det, hvordan du klargør et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 author: psimolin
+manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777494"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969895"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Klargøre et Dynamics 365 Commerce-evalueringsmiljø
 
@@ -32,6 +34,8 @@ Før du går i gang, anbefales det, at du hurtigt gennemgår dette emne for at f
 
 > [!NOTE]
 > Miljøer til Commerce-evaluering er ikke generelt tilgængelige og tildeles til partnere og kunder efter anmodning. Du kan få flere oplysninger ved at rette henvendelse til din kontakt hos din Microsoft-partner.
+
+## <a name="overview"></a>Overblik
 
 Hvis du vil kunne klargør et Commerce-evalueringsmiljø, skal du oprette et projekt, der har et bestemt produktnavn og er en bestemt type. Miljøet og Commerce Scale Unit (CSU) har nogle specifikke parametre, du skal bruge, når du forventer at klargøre dit e-Commerce. Instruktionerne i dette emne beskriver alle de påkrævede trin for klargøring og de parametre, du skal bruge.
 
@@ -76,7 +80,7 @@ Hvis du vil oprette et nyt projekt i LCS, skal du følge disse trin.
 
 ### <a name="add-the-azure-connector"></a>Tilføj Azure Connector
 
-Hvis du vil føje Azure Connector til dit LCS-projekt, skal du følge trinnene i [Fuldføre processen til onboarding af Azure Resource Manager (ARM)](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
+Hvis du vil føje Azure Connector til dit LCS-projekt, skal du følge trinnene i [Fuldføre processen til onboarding af Azure Resource Manager (ARM)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
 
 ### <a name="deploy-the-environment"></a>Installer miljøet
 
@@ -90,16 +94,16 @@ Følg disse trin for at installere miljøet.
 1. Vælg den seneste version i feltet **Programversion**. Hvis du har et specifikt behov for at vælge en anden programversion end den seneste version, skal du ikke vælge en version før **10.0.14**.
 1. I feltet **Platformsversion** skal du bruge den platformsversion, der automatisk vælges for den programversion, du har valgt. 
 
-    ![Valg af program- og platformsversioner.](./media/project1.png)
+    ![Valg af program- og platformsversioner](./media/project1.png)
 
 1. Vælg **Næste**.
 1. Vælg **Demo** miljøtopologi.
 
-    ![Valg af miljøtopologi 1.](./media/project2.png)
+    ![Valg af miljøtopologi 1](./media/project2.png)
 
 1. Angiv et miljønavn på side **Installer miljø**. Lad de avancerede indstillinger være, som de er.
 
-    ![Siden Installer miljø.](./media/project4.png)
+    ![Siden Installer miljø](./media/project4.png)
 
 1. Juster VM-størrelsen efter behov. (Vi anbefaler, at VM-lagerenheden \[SKU\] **D13 V2**.)
 1. Gennemgå prissætnings- og licensvilkårene, og markér derefter afkrydsningsfeltet for at angive, at du accepterer dem.
@@ -180,13 +184,10 @@ For at fortsætte processen med klargøring og konfigurering af dit Commerce-eva
 
 [Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (sky)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (sky)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

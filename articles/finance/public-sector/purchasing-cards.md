@@ -2,23 +2,26 @@
 title: Indkøbskort
 description: Dette emne forklarer, hvordan du opretter og sporer transaktioner med indkøbskort.
 author: velofog
+manager: AnnBe
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c781f9e5f5ebfe732c5fb51dc5f5c4eac9bd76d9d452924764ec1574e4e70e75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b057f5a66f7a52f3d2236d3a5c9273a5c3a926dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729497"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407643"
 ---
 # <a name="purchasing-cards"></a>Indkøbskort
 
@@ -128,6 +131,3 @@ Du kan bruge følgende procedure til at oprette en kreditorfaktura for at regist
 11. Hvis du vil angive flere oplysninger om linjen, skal du vælge oversigtspanelet **Linjedetaljer** og angive oplysningerne.
 12. Valgfrit: Send fakturaen til arbejdsgangssystemet til gennemsyn og godkendelse, og bogfør derefter fakturaen.
 13. Hvis du vil gemme fakturaen uden at bogføre den, skal du lukke siden. Du kan se fakturaen på listesiden **Ventende kreditorfakturaer**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

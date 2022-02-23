@@ -1,38 +1,38 @@
 ---
 title: Startside for anlægsaktiver
-description: Dette emne giver adgang til ressourcer, der kan hjælpe dig med at bruge anlægsaktiver til Microsoft Dynamics 365 Finance.
-author: moaamer
+description: Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21481"
-- intro-internal
+ms.custom: 21481
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
-ms.author: moaamer
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: cf6f0bc27121e6c1a0b4bba2ad1ca31909423c92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674845"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969065"
 ---
 # <a name="fixed-assets-home-page"></a>Startside for anlægsaktiver
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne giver adgang til ressourcer, der kan hjælpe dig med at bruge anlægsaktiver til Microsoft Dynamics 365 Finance. Anlægsaktiver er enheder, der har en værdi, og som ejes af en person eller organisation. Enhederne omfatter bygninger, køretøjer, jord og udstyr. 
+Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation. 
 
-Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og derefter håndtere aktiverne ved at afskrive dem og angive en grænse for kapitalisering, som fastlægger afskrivningen. Du kan beregne reguleringer af anlægsaktiverne, og du kan afhænde dem. Når du bruger finansmodulet sammen med Anlægsaktiver, kan du få vist den nuværende værdi af alle anlægsaktiver. Den måde, som anlægsaktiver håndteres på, skal opfylde både internationale regnskabsstandarder og regnskabslovgivningen i hvert land/område. Kravene kan omfatte regler for registrering af anskaffelses- og kassationsposteringer, afskrivning, levetider, opskrivninger og nedskrivninger af anlægsaktiver. Funktionerne for anlægsaktiver omfatter mange af disse standarder og regler.
+Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og derefter håndtere dem ved at afskrive dem og angive en grænse for kapitalisering, som fastlægger afskrivningen. Du kan beregne reguleringer af anlægsaktiverne, og du kan afhænde dem. Når du bruger finansmodulet sammen med Anlægsaktiver, kan du få vist den nuværende værdi af alle anlægsaktiver. Den måde, som anlægsaktiver håndteres på, skal opfylde både internationale regnskabsstandarder og regnskabslovgivningen i hvert land/område. Kravene kan omfatte regler for registrering af anskaffelses- og kassationsposteringer, afskrivning, levetider, opskrivninger og nedskrivninger af anlægsaktiver. Funktionerne for anlægsaktiver omfatter mange af disse standarder og regler.
 
-[![Forretningsproces.](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Forretningsproces](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 
@@ -40,7 +40,7 @@ Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og 
 
 #### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) for at se, hvilke nye funktioner der er planlagt. 
+Gå til [Microsoft Dynamics 365-frigivelsesplaner](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
 
 #### <a name="blogs"></a>Blogs
 
@@ -60,6 +60,3 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

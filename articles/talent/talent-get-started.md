@@ -66,6 +66,3 @@ Du kan finde meninger, nyheder og andre oplysninger om Kreditorer og andre løsn
 ### <a name="videos"></a>Videoer
 Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

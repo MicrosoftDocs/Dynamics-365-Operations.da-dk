@@ -1,10 +1,12 @@
 ---
 title: Opdatere vedligeholdelsesbudgetter
 description: Dette emne forklarer, hvordan du opdaterer et vedligeholdelsesbudget i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 87c054cb96d56e40e35ee44142396f59d61395263ff41232423f6c7911478b0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b04549700b51f73a3629fe9cd67a3e1f6c1bafbb
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724934"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021013"
 ---
 # <a name="update-maintenance-budgets"></a>Opdatere vedligeholdelsesbudgetter
 
@@ -72,6 +74,3 @@ På siden **Vedligeholdelsesbudgetlinjer** kan du manuelt tilføje en ny budgetl
 
 - Du ved, at der i øjeblikket planlægges fornyelse af udstyr for nogle aktiver, men at der endnu ikke er oprettet relaterede job i Styring af aktiver. Du vil dog gerne have, at budgetomkostninger for disse job skal indgå i vedligeholdelsesbudgettet.
 - Der er blevet oprettet nye aktiver eller aktivtyper, siden du lagde vedligeholdelsesbudgettet, men der er endnu ikke konfigureret vedligeholdelsesplaner for disse aktiver eller aktivtyper. Du vil dog gerne have, at budgetomkostninger for disse aktivtyper skal indgå i vedligeholdelsesbudgettet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,34 +1,33 @@
 ---
 title: Foreslå anskaffelser af anlægsaktiver
 description: I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden.
-author: moaamer
-ms.date: 03/17/2021
+author: saraschi2
+manager: AnnBe
+ms.date: 07/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 70347009ede494760cd7f51b46db04b434b9fbcc
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 0997af638c141661afb677e2407a90a883168aed
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883814"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441415"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anskaffelser af anlægsaktiver
 
 [!include [banner](../../includes/banner.md)]
 
 I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden. Den bruger rollen Revisor og demodata for den juridiske enhed USMF. Hvis du vil erhverve et anlægsaktiv via en forslagskladde, skal du først oprette anlægsaktivposten og derefter definere anskaffelsesprisen i anlægskartoteket.
-
-## <a name="create-an-asset-acquisition-proposal"></a>Oprette et forslag til anskaffelse af aktiver
-
-Gennemfør følgende trin for at oprette et forslag til anskaffelse af et aktiv. 
 
 1. I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Kladdeposteringer > Anlægsaktivkladde**.
 2. Vælg **Ny**.
@@ -40,16 +39,7 @@ Gennemfør følgende trin for at oprette et forslag til anskaffelse af et aktiv.
 8. Vælg rækken **Anlægsaktivnummer**.
 9. Indtast eller vælg en værdi i feltet **Kriterier**. Angiv de resterende kriterier for anlægsaktiverne, du vil hente med dette forslag.  
 10. Vælg **OK** to gange for at forlade ruden.
-- Bekræft, at transaktionslinjerne er oprettet.  
+- Bekræft de oprettede transaktionslinjer.  
 - Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.  
 11. Vælg fanen **Bøger** på siden.
 12. Vælg **Bogfør**.
-
-## <a name="include-default-financial-dimensions-in-an-acquisition-proposal"></a>Medtage økonomiske standarddimensioner i et anskaffelsesforslag
-
-Anskaffelsestransaktionen kan oprettes ved hjælp af tilføjelsesprogrammet Excel ved at gå til **Anlægsaktiver > Kladdeposteringer > Anlægsaktivkladde**. Opret en ny kladde, og flyt til sektionen **Linjer** på siden, vælg Excel-ikonet, og vælg derefter en kladdelinje for anlægsaktiver. Systemet opretter og åbner en Excel-skabelon, der repræsenterer kladdelinjer. Du kan føje data til de kladdelinjer, du føjer til skabelonen, og derefter publicere disse oplysninger tilbage i systemet. 
-
-Hvis der er konfigureret standarddimensioner for det valgte anlægskartotek og de tilsvarende anlægsaktiver, der er angivet i Excel-skabelonen, vil de økonomiske standarddimensioner blive kaldt fra masterdata i anlægskartoteket, når kladden publiceres fra Excel til systemet. Hvis der automatisk skal indgå økonomiske dimensioner i et anlægskartotek, når anlægsaktivkladden udgives fra tilføjelsesprogrammet Excel, skal standarddimensionerne være konfigureret på forhånd.  
-
-
-[!INCLUDE [footer-include](../../../includes/footer-banner.md)]

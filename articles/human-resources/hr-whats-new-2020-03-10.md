@@ -1,32 +1,33 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (10. marts 2020)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 10. marts 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6e4d93f89721bd722de523fbba7adfd2ee3f786
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 944481727f3222a10f128ac3078c117f5ae7d193
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061145"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526902"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (10. marts 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I denne artikel beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Human Resources. Ændringerne gælder for build nummer 8.1.2985. Tallene i parenteser i nogle overskrifter henviser til LCS-supportnumre som reference.
 
@@ -44,7 +45,7 @@ I formularen til vedligeholdelses af arbejderopgave vises alle opgaver for en me
 
 Eksempel: Benjamin Martin er administrator af frynsegoder. Under medarbejderens onboarding oprettes der opgaver, så Benjamin kan gennemgå den nye medarbejders valg af frynsegoder. Benjamin har tidligere opgaver, som han har afsluttet, og fremtidige opgaver, som han skal afslutte. Benjamin beslutter at forlade firmaet, så hans opgaver skal tildeles igen eller fjernes. I formularen til vedligeholdelse af opgave (i handlingsruden i formularen **Arbejder**) kan alle Benjamins opgaver tildeles en anden arbejder eller fjernes.  
 
-## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse-løsning er nu tilgængelig med følgende ændringer:
+## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service-løsning er nu tilgængelig med følgende ændringer:
 
 | Beskrivende tekst | Forskydning |
 | --- | --- |
@@ -56,18 +57,18 @@ Eksempel: Benjamin Martin er administrator af frynsegoder. Under medarbejderens 
 | Nye konfigurationsobjekter til variabel kompensation | <ul><li>**Type af variabel kompensationsplan**</li><li>**Kompensation - variabel struktur**</li><li>**Fordelingsregler**</li><li>**Niveau i variabel kompensationsplan**</li></ul> |
 | Nyt objekt **Arbejderkalender for ansættelse** | <ul><li>**Arbejdskalenderobjekt** er tilføjet</li></ul> |
 | Nyt objekt **Lønoplysninger for stillinger** | <ul><li>**Lønoplysninger for stillinger** er tilføjet</li></ul> |
-| Nyt objekt **Titel** | <ul><li>**Titel** er tilføjet</li></ul> Den nye enhed **Titel** er inkluderet i Dataverse, men den er ikke refereret fra enhederne **Stilling** eller **Job** i øjeblikket. |
+| Nyt objekt **Titel** | <ul><li>**Titel** er tilføjet</li></ul> Den nye enhed **Titel** er inkluderet i Common Data Service, men den er ikke refereret fra enhederne **Stilling** eller **Job** i øjeblikket. |
 
 > [!NOTE]
-> Økonomiske dimensioner for både stillinger og beskæftigelse giver en integration med én retning for opdateringer fra HR til Dataverse. Opdateringer af økonomiske dimensioner synkroniseres i øjeblikket ikke fra Dataverse til HR.
+> Økonomiske dimensioner for både stillinger og beskæftigelse giver en integration med én retning for opdateringer fra HR til Common Data Service. Opdateringer af økonomiske dimensioner synkroniseres i øjeblikket ikke fra Common Data Service til HR.
 
-I løbet af de næste par uger vil disse enhedsændringer være tilgængelige i alle miljøer. Sådan installeres den nyeste Dataverse-løsning til HR manuelt:
+I løbet af de næste par uger vil disse enhedsændringer være tilgængelige i alle miljøer. Sådan installeres den nyeste Common Data Service-løsning til HR manuelt:
 
 1.  Gå til [Power Platform Administration](https://admin.powerplatform.microsoft.com).
 
 2.  Vælg **Miljøer**.
 
-3.  Find det miljø, du vil opgradere. Miljøet skal svare til **Miljønavn** i sektionen **Dataverse-oplysninger** i formularen **Om** i HR.
+3.  Find det miljø, du vil opgradere. Miljøet skal svare til **Miljønavn** i sektionen **Common Data Service-oplysninger** i formularen **Om** i HR.
 
 4.  Vælg miljøet for at få vist miljødetaljerne.
 
@@ -102,8 +103,6 @@ Følgende prøvefunktioner er tilgængelige den 3. februar 2020:
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

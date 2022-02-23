@@ -98,6 +98,3 @@ Denne version indeholder flere supplerende fejlrettelser:
 - Når en kontrahent ansættes, skal fanen **Kompensation** ikke være tilgængelig på anmodnings-/handlingssiden.
 - Du kan ikke fortsætte i processen Anmod om opsigelse, før alle obligatoriske felter indeholder data.
 - Problemer med at få vist sorteringsrækkefølge og dato i analyser af Personalestyring er håndteret.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

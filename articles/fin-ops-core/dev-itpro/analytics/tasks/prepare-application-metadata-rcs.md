@@ -1,10 +1,12 @@
 ---
 title: Klargøre programmetadata, der skal bruges i RCS
-description: Dette emne beskriver, hvordan du opretter en ny rapporteringskonfiguration, der indeholder applikationsmetadata.
+description: Fremgangsmåden i dette emne forklarer, hvordan en bruger kan oprette en ny elektronisk rapporteringskonfiguration (ER), der indeholder programmetadata til udformning af ER-modeltilknytningskonfigurationer i RCS (Regulatory Configuration Service).
 author: NickSelin
+manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71a33a69796b31c456bfcc5abbb3b18bcb1064be65c1c58b36656a9cebfbf47d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dbc1ca45a39f2a5c3309276f9e2f5d2b7d2ba5f7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750568"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684085"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Klargøre programmetadata, der skal bruges i RCS
 [!include [banner](../../includes/banner.md)]
@@ -78,6 +80,3 @@ Vi har tilføjet metadataoplysninger om Intrastat-tabellen med poster.
 3.    Klik på **OK**. 
     
 Den oprettede metadatakonfiguration er blevet gemt som en XML-fil, der kan importeres til RCS og bruges som kilden til oplysninger om metadata til forretningsdomænet for udenrigshandel. Baseret på disse oplysninger kan vi angive tilknytningen mellem programmetadata og ER-datamodel.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

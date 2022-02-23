@@ -1,27 +1,30 @@
 ---
 title: Sikkerhedsroller i den offentlige sektor
-description: Dette emne indeholder oplysninger om sikkerhedsroller i den offentlige sektor, herunder projektleder- og indkøberroller.
-author: v-kiarnd
+description: I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor. Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: UserRequestListPage
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 19721
 ms.assetid: e26a6d93-851e-46be-8543-de2798909350
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 688090820420bd96865ca73e5752a2e5cedae423
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: b22f48bc4324cec625bd465462ea92e6798ab99c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817755"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407702"
 ---
 # <a name="security-roles-in-the-public-sector"></a>Sikkerhedsroller i den offentlige sektor
 
@@ -93,12 +96,10 @@ Sikkerhedsrollen **Indkøbsagent - den offentlige sektor** understøtter de offe
 ## <a name="what-do-i-do-next"></a>Hvad skal jeg gøre nu?
 Når brugerne er oprettet, skal du tildele dem roller på siden **Tildel brugere roller**.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
-[Rollebaseret sikkerhed](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md)
-
-
-
+[Rollebaseret sikkerhed](../../dev-itpro/sysadmin/role-based-security.md)
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

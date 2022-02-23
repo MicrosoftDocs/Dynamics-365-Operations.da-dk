@@ -1,23 +1,26 @@
 ---
 title: Oprette en skabelon til en fritekstfaktura
 description: Denne procedure viser, hvordan du opretter en skabelon til en fritekstfaktura.
-author: abruer
+author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 05/29/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1477227228ae9f79314d1e3b6da73446d660d108
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 8281de3cb336d9392a6a97f98e51a2a139a384c5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753686"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441426"
 ---
 # <a name="create-a-free-text-invoice-template"></a>Oprette en skabelon til en fritekstfaktura
 
@@ -65,6 +68,3 @@ I denne gennemgang skal du bruge USMF-demoregnskabet. Denne procedure er beregne
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Gemme en fritekstfaktura som en skabelon
 Du kan også gemme en eksisterende fritekstfaktura som en skabelon. Når du vælger Gem i skabelon under fanen faktura, kan du angive et navn og en beskrivelse af skabelonen. Hvis der findes allerede en skabelon med dette navn, vises en meddelelse om, at der allerede findes en skabelon med dette navn. Du kan stadig klikke på OK for at erstatte den. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

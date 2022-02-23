@@ -2,24 +2,27 @@
 title: Tilføje en certificeringstype til en kreditor i den offentlige sektor
 description: Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne.
 author: twheeloc
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendCertification, DirPartyLookup
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72b61799d90836d212e6fe7460ee0e17cd92be5f9993997e769cd3102743693e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d52341735b062c0740ff6f06deac57fbdd6e9b8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742114"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407710"
 ---
 # <a name="add-a-certification-type-to-a-vendor-in-the-public-sector"></a>Tilføje en certificeringstype til en kreditor i den offentlige sektor
 
@@ -41,6 +44,3 @@ Du kan oprette og tildele enhver type certificering, som kreditorer kan have, ti
     * Fuldfør detaljerne.   
 12. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

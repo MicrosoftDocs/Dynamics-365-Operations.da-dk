@@ -1,10 +1,12 @@
 ---
 title: Manuelt oprettede arbejdsordrer
 description: Dette emne beskriver, hvordan du opretter arbejdsordrer manuelt i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750094"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017862"
 ---
 # <a name="manually-created-work-orders"></a>Manuelt oprettede arbejdsordrer
 
@@ -111,7 +113,7 @@ Du kan oprette en arbejdsordre, der er relateret til en eksisterende arbejdsordr
 
 I illustrationen herunder vises et eksempel på dialogboksen **Opret relateret arbejdsordre**.
 
-![Figur 1.](media/03-work-orders.png)
+![Figur 1](media/03-work-orders.png)
 
 >[!NOTE]
 >Hvis du har oprettet en relateret arbejdsordremaske i **Parametre til aktivstyring** > **Arbejdsordrer**-fanen > feltet **Relateret arbejdsordremaske**, oprettes arbejdsordre-id'er i overensstemmelse med maskeopsætningen. Hvis der ikke er konfigureret nogen tilknyttet arbejdsordremaske, bruges det næste tilgængelige arbejdsordre-id til relaterede arbejdsordrer.
@@ -137,7 +139,7 @@ Du kan hurtigt at oprette en ny arbejdsordre ud fra en eksisterende arbejdsordre
 
 I illustrationen nedenfor vises et eksempel på dialogboksen **Kopiér arbejdsordre**.
 
-![Figur 2.](media/04-work-orders.png)
+![Figur 2](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Oprette en arbejdsordre baseret på en vedligeholdelsesanmodning
@@ -157,12 +159,9 @@ I illustrationen nedenfor vises et eksempel på dialogboksen **Kopiér arbejdsor
 
 I illustrationen nedenfor vises et eksempel på dialogboksen **Opret arbejdsordre**.
 
-![Figur 3.](media/05-work-orders.png)
+![Figur 3](media/05-work-orders.png)
 
 
 >[!NOTE]
 >Du kan også oprette arbejdsordrer automatisk ved at planlægge vedligeholdelsesplanjob eller ved at konfigurere "Automatisk oprettelse" af [vedligeholdelsesplaner](../preventive-and-reactive-maintenance/maintenance-plans.md) eller [vedligeholdelsesrunder](../preventive-and-reactive-maintenance/maintenance-rounds.md) for et aktiv. Arbejdsordrer, der er oprettet ud fra vedligeholdelsesanmodninger på siden **Hele vedligeholdelsestidsplanen**, har de vedligeholdelsesjobtyper, der er valgt i vedligeholdelsesanmodningerne.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

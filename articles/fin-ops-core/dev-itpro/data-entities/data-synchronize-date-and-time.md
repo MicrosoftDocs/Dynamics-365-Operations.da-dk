@@ -1,23 +1,25 @@
 ---
 title: Synkronisere dato og klokkeslæt i importjob
 description: Brug UTC-tidszoner i importjob for at undgå problemer med tidszonekonverteringer.
-author: peakerbl
+author: Sunil-Garg
+manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76eadc5839785ba1624ee3894ef1d0872369aa9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: ae04b09a68e64d6d70c0329e689ab08c3903fca0
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403835"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798713"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>Synkronisere dato og klokkeslæt i importjob
 
@@ -33,11 +35,8 @@ Denne dobbelte konvertering bevirker, at der ændres datoer mellem programmer. K
 
 3. Vælg **CSV-Unicode** under **Kildedatoformat**.
 
-   [![Skifte kildedatoformat til UTC.](./media/data-source-date-format.png)](./media/data-source-date-format.png)
+   [![Skifte kildedatoformat til UTC](./media/data-source-date-format.png)](./media/data-source-date-format.png)
 
 4. Skift **Tidszone** til **UTC-tid**, og skift **Sprog** til **da-dk**.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

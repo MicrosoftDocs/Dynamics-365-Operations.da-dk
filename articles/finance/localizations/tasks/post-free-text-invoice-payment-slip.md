@@ -1,10 +1,12 @@
 ---
 title: Bogføre en fritekstfaktura med et indbetalingskort
-description: Dette emne forklarer, hvordan du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
+description: Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5dd288583eab2bfe2d95c957685baabea5b68d92
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: e969681772d1617b7f7b647b52fd7287f0e11527
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601484"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968292"
 ---
 # <a name="post-a-free-text-invoice-with-a-payment-slip"></a>Bogføre en fritekstfaktura med et indbetalingskort
 
@@ -58,6 +60,3 @@ Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære ad
 15. Klik på OK.
 16. Klik på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

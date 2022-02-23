@@ -102,6 +102,3 @@ For at undgå at brugergrænsefladen (UI) påvirkes negativt, må du ikke redige
 - **Diverse**
 
 Du kan i stedet udvide **TalentKilde**-enum for at tilføje andre kildetyper.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Omkostningsanalyse for produktionsordre
 description: Denne artikel indeholder oplysninger om den omkostningsanalyse, du kan udføre for afsluttede og aktuelle produktionsordrer. Du kan analysere de forkalkulerede omkostninger og faktiske omkostninger ved hjælp af siden Prisberegning og efterkalkulationsrapporten. Du kan se oplysninger om de forventede og faktiske omkostninger (og antal) for de enkelte indgående varer, ruteoperationer og indirekte omkostninger.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0690a683cdefaeb5e441d3e2ea467a680a8fc1dd0905b6a94fd72bcbf36e1e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0858e0e9ed0f09a47954274a05f6da1a2537c4a3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734253"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967277"
 ---
 # <a name="production-order-cost-analysis"></a>Omkostningsanalyse for produktionsordre
 
@@ -41,7 +43,7 @@ Afvigelserne afspejler en sammenligning af de rapporterede produktionsaktivitete
 
 I følgende diagram viser de fire afvigelser, der forklarer forskellen mellem de faktiske omkostninger i en produktionsordre og de beregnede omkostninger i varens kostprispost, når produktionsordren er afsluttet. 
 
-![Afvigelser, der tager højde for forskelle i en afsluttet produktionsordre.](./media/control.jpg) 
+![Afvigelser, der tager højde for forskelle i en afsluttet produktionsordre](./media/control.jpg) 
 
 Du kan analysere produktionsafvigelser ved hjælp af siden **Afvigelse** eller rapporten **Afvigelse i produktion**. Brug visningsindstillinger til at få vist detaljerede afvigelser efter vare og operationsressource eller efter kostgruppe. Reglen for kostprisopdeling i lagerparametrene bestemmer, om afvigelserne skal spores efter kostprisgruppe. Du kan også bruge visningsindstillingerne **enkelt**, **flere** og **samlet** til at få vist opsummerede afvigelser. Oplysninger om detaljerede afvigelser kan hjælpe dig med at forstå kilden til hver afvigelse. Hvis du vil foregribe afvigelser, før en produktionsordre afsluttes, skal du analysere de detaljerede oplysninger, der findes i rapporten **For- og efterkalkulationer**.
 
@@ -55,12 +57,10 @@ Særskilte rapporter indeholder oplysninger om de enkelte typer af posteringer. 
 -   **Færdigvarer i arbejde**− Denne rapport vises de aktuelle produktionsordrer og de færdigmeldte transaktioner pr. en bestemt posteringsdato.
 
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Almindelige kilder til produktionsafvigelser](common-sources-of-production-variances.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

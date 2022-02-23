@@ -1,10 +1,12 @@
 ---
 title: Periodisering af abonnementer
 description: Med serviceabonnementer periodiserer du omsætning manuelt i de perioder, der kommer efter den dato, hvor du har faktureret en gebyrtransaktion.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d17737c415f6204359dae3ea4b2a0cb4ebb5d65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f6d0d6c25cc8a19f5ebea3477cd2c957876752fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580474"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966074"
 ---
 # <a name="accruing-subscriptions"></a>Periodisering af abonnementer 
 
@@ -41,7 +43,7 @@ Hvis du krediterer fakturerede abonnementsbeløb, er der to metoder, du kan brug
 
   - Du kan lade de periodiserede beløb tilbageføre på den dato, hvor kreditnotaen er bogført eller på den oprindelige bogføringsdato for periodiseringen.
 
-Du kan finde flere oplysninger i [Abonnementsparametre (formular)](/dynamicsax-2012//subscription-parameters-form).
+Du kan finde flere oplysninger i [Abonnementsparametre (formular)](https://technet.microsoft.com/library/aa619615.aspx).
 
 ## <a name="setup-requirements"></a>Konfigurer behov
 
@@ -65,7 +67,7 @@ Hvis omsætning for abonnementer skal kunne periodiseres, skal afkrydsningsfelte
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Aktivere omsætningsperiodisering for en abonnementsgruppe
 
-Klik på **Servicestyring** \> **Opsætning** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
+1.  Klik på **Servicestyring** \> **Opsætning** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
 
 ## <a name="periods"></a>Perioder
 
@@ -75,8 +77,8 @@ I oversigten nedenfor kan du se, hvilke periodiseringsperioder du kan oprette ti
 
 <table>
 <colgroup>
-<col />
-<col />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -131,7 +133,7 @@ Opsætning af faktureringsperioden er en obligatorisk del af den generelle opsæ
 > <P>Brug følgende sti til at åbne formularen <STRONG>Periodiser abonnementsindtægt</STRONG>. Klik på <STRONG>Servicestyring</STRONG> &gt; <STRONG>Periodisk</STRONG> &gt; <STRONG>Serviceabonnementer</STRONG> &gt; <STRONG>Periodiser abonnementsindtægt</STRONG>.</P>
 
 
-## <a name="transactions"></a>Transaktioner
+## <a name="transactions"></a>Poster
 
 Du kan styre antallet af finansposteringer, der oprettes, når du bogfører periodiseret omsætning. I forbindelse med abonnementer skal du definere, om finansposteringer skal oprettes som en total eller pr. linje.
 
@@ -149,6 +151,3 @@ Du kan styre antallet af finansposteringer, der oprettes, når du bogfører peri
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

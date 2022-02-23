@@ -2,24 +2,27 @@
 title: Konfigurere en kanal for at bruge et navigationshierarki for en kanal
 description: Dette emne beskriver, hvordan du konfigurerer en kanal for at bruge et navigationshierarki for en kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3cf29bd423a2475b77e9076024b4da6864a31065da81de49f1b9a0f639243f1d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b5041d35d310125c314ab2cb77d3cc40cdb7113
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713986"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410984"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Konfigurere en kanal for at bruge et navigationshierarki for en kanal
 
@@ -28,7 +31,7 @@ ms.locfileid: "6713986"
 
 Dette emne beskriver, hvordan du konfigurerer en kanal for at bruge et navigationshierarki for en kanal i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Overblik
+## <a name="overview"></a>Oversigt
 
 Navigationshierarkier for en kanal organiserer produkter i kategorier, så produkterne kan gennemses på et e-handelswebsted eller ved POS. Detail- og onlinekanaler skal konfigureres med navigationshierarkier for en kanal.
 
@@ -45,7 +48,7 @@ Du kan konfigurere en kanal for at bruge et navigationshierarki for en kanal ved
 
 Følgende billede viser, hvordan du konfigurerer en kanal for at bruge et navigationshierarki for en kanal.
 
-![Eksempel på kanalkonfiguration.](media/configure-channel-hierarchy-1.png)
+![Eksempel på kanalkonfiguration](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Angiv attributmetadata
 
@@ -61,9 +64,9 @@ Du kan angive attributmetadataene ved at følge disse trin.
 
 Følgende billede viser et sæt af kanalproduktattributter, der er konfigureret på en kanalkategorinode.
 
-![Kanalattributter på en kanalkategorinode.](media/configure-channel-hierarchy-2.png)
+![Kanalattributter på en kanalkategorinode](media/configure-channel-hierarchy-2.png)
 
-## <a name="publish-changes"></a>Publicer ændringer
+## <a name="publish-changes"></a>Publicere ændringer
 
 Du skal publicere ændringerne, for at ændringerne træder i kraft.
 
@@ -74,13 +77,10 @@ Følg disse trin for at publicere ændringer.
 
 Følgende billede viser, hvordan du kan publicere kanalopdateringer.
 
-![Publicer kanalopdateringer.](media/configure-channel-hierarchy-3.png)
+![Publicer kanalopdateringer](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oprette et navigationshierarki for kanal](create-channel-hierarchy.md)
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

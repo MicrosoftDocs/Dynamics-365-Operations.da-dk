@@ -74,6 +74,3 @@ Se [Udskrive performancegennemgange](https://docs.microsoft.com/dynamics365-rele
 Funktioner tilføjes og opdateres i alle versioner. Administrationen af funktioner indeholder et arbejdsområde, hvor du kan få vist en liste over de funktioner, der er leveret i hver version. Nye funktioner er som standard slået fra. Du kan bruge arbejdsområdet til at aktivere dem og få vist dokumentationen til dem.
 
 Du kan få mere at vide om de ændringer, der kommer til funktionsstyring, under [Oversigt over funktionsstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

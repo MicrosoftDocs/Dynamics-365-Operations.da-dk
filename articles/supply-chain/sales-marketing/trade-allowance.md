@@ -2,23 +2,26 @@
 title: Administration af handelstilladelse
 description: I dette emne beskrives administration af handelsrabat for Dynamics 365 Supply Chain Management.
 author: t-benebo
+manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 15c003109814d9b4dc2857910e69754e5927ec11138d215056be64424998bf00
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771269"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424584"
 ---
 # <a name="trade-allowance-management"></a>Administration af handelstilladelse
 
@@ -59,7 +62,7 @@ En handelsrabat er et incitamentsprogram, hvor der tilbydes monetære belønning
 
 Midler, der er fordelt på handelsrabataftaler, registreres på siden **Midler**. Du kan åbne siden **Midler** ved at vælge **Salgs og marketing** \> **Handelsrabatter** \> **Midler** \> **Midler**.
 
-![Siden Midler.](./media/trade-allowance-management-funds-page.png "Siden Midler")
+![Siden Midler](./media/trade-allowance-management-funds-page.png "Siden Midler")
 
 På siden **Midler** kan du få vist detaljer om markedsføringsmidler.
 
@@ -75,9 +78,9 @@ Når definitionen af midler er på plads, er næste trin i planlægning af marke
 
 Rabathandelsaftaler registreres på siden **Aftaler om handelsrabat**. Du kan åbne siden **Aftaler om handelsrabat** ved at vælge **Salg og marketing** \> **Handelsrabatter** \> **Aftaler om handelsrabat**.
 
-![Siden Handelsrabataftaler.](./media/trade-allowance-management-agreements-page.png "Siden Handelsrabataftaler")
+![Siden Handelsrabataftaler](./media/trade-allowance-management-agreements-page.png "Siden Handelsrabataftaler")
 
-#### <a name="header"></a>Overordnet
+#### <a name="header"></a>Header
 
 Vælg **Hoved** for at skifte til Overskriftsvisning.
 
@@ -103,7 +106,7 @@ Fanen **Merchandizinghændelser** viser de typer af hændelser, der er omfattet 
 
 Når du vælger merchandizinghændelsen og derefter vælge fanen **Beløb**, findes oplysninger om hændelsen.
 
-![Aftalelinjer for handelsrabat.](./media/trade-allowance-management-agreements-lines.png "Aftalelinjer for handelsrabat")
+![Aftalelinjer for handelsrabat](./media/trade-allowance-management-agreements-lines.png "Aftalelinjer for handelsrabat")
 
 I sektionen **Handelsrabatlinjer** skal du angive antal- eller beløbsområder, som kunden skal opnå, for at definitioner kan opnå belønninger.
 
@@ -171,7 +174,7 @@ For at godkende merchandisinghændelsen af typen **Engangsbeløb** skal du vælg
 
 ## <a name="settle-the-deduction-that-is-due-and-the-customer-short-pay-by-using-the-deduction-workbench"></a>Udligne det fradrag, der skal betales, og kundedelbetalingen ved hjælp af fradragspanelet
 
-Ofte vælge kunderne delbetalinger af valgte fakturaer i forventning om tilbagefaktureringer. For at forhindre problemer med afstemningen af betalinger i fremtiden registrerer medarbejderen i Debitor disse delbetalinger som fradrag, når medarbejderen registrerer de faktiske debitorbetalinger. Derefter kan disse debitorfradrag nemt udlignes i fradragspanelet mod de kravbeløb, som er forfaldne fra firmaet.
+Ofte vælge kunderne delbetalinger af valgte fakturaer i forventning om tilbagefaktureringer. For at forhindre problemer med afstemningen af betalinger i fremtiden registrerer medarbejderen i Debitor disse delbetalinger som fradrag, når han eller hun registrerer de faktiske debitorbetalinger. Derefter kan disse debitorfradrag nemt udlignes i fradragspanelet mod de kravbeløb, som er forfaldne fra firmaet.
 
 Hvis du vil registrere en kundes delbetaling i betalingskladden, skal du vælge **Debitor** \> **Betalinger** \> **Betalingskladde** og oprette en ny betalingskladde. Derefter skal du i handlingsruden vælge **Fradrag**. På siden **Fradrag** kan du oprette og spore det beløb, der blev betalt som delbetaling.
 
@@ -197,6 +200,3 @@ For at få en mere analytisk oversigt over de forskellige performancemålinger f
 
 For at få en mere analytisk oversigt over de forskellige performancemålinger for kampagnen kan du bruge analysevisningen. Du kan gå til analysevisningen ved at klikke på **Salg og marketing** \> **Handelsrabatter** \> **Aftaler om handelsrabat**. Klik på fanen **Analyse** i handlingsruden. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

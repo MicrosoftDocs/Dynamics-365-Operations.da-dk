@@ -1,28 +1,30 @@
 ---
-title: Oprette og administrere brugere af kundeportalen (indeholder video)
+title: Oprette og administrere brugere af kundeportalen
 description: Dette emne forklarer, hvordan du kan oprette brugerkonti til kundeportalen og indstille rettigheder for dem.
-author: Henrikan
+author: dasani-madipalli
+manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062484"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528287"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Oprette og administrere brugere af kundeportalen
 
-[!include [banner](../includes/banner.md)]
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I out-of-box-implementeringen er der ingen måde, hvorpå brugere kan registrere sig selv for websteder, der er oprettet ved hjælp af kundeportalen. Brugere skal inviteres af administratoren for at kunne logge på og bruge et websted. Microsoft har bevidst blokeret brugernes mulighed for at registrere sig selv.
 
@@ -33,38 +35,38 @@ Når brugerne selv registrerer, oprettes der automatisk kontaktposter for dem. D
 ## <a name="video"></a>Video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-Videoen [Inviter kunder til at registrere og bruge din tilpassede portal](https://youtu.be/drGUYHX9QIQ) (vist ovenfor) er inkluderet i den [Finans- og driftsafspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
+Videoen [Inviter kunder til at registrere og bruge din tilpassede portal](https://youtu.be/drGUYHX9QIQ) (vist ovenfor) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
 ## <a name="prerequisite-setup"></a>Forudsætninger for opsætning
 
-Kontakter i Power Apps-portaler gemmes som poster i tabellen **Kontakter** i Microsoft Dataverse. Dobbeltskrivning synkroniserer derefter disse poster med Microsoft Dynamics 365 Supply Chain Management som påkrævet.
+Kontaktpersoner i Power Apps-portaler gemmes som poster i enheden **Kontaktpersoner** i Common Data Service. Dobbeltskrivning synkroniserer derefter disse poster med Microsoft Dynamics 365 Supply Chain Management som påkrævet.
 
-![Systemdiagram for kundeportal-kontaktpersoner.](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")
+![Systemdiagram for kundeportal-kontaktpersoner](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")
 
-Før du begynder at invitere nye kunder, skal du sikre dig, at du har aktiveret tabeltilknytningen **Kontakt** i dobbeltskrivning.
+Før du begynder at invitere nye kunder, skal du sikre dig, at du har aktiveret enhedstilknytningen **Kontakt** i dobbeltskrivning.
 
 ## <a name="the-invitation-process"></a>Invitationsprocessen
 
-Hvis du vil invitere en eksisterende kontaktperson til kundeportalen, skal du følge trinnene i [Inviter kontaktpersoner til dine portaler](/powerapps/maker/portals/configure/invite-contacts) i dokumentation for Power Apps-portaler.
+Hvis du vil invitere en eksisterende kontaktperson til kundeportalen, skal du følge trinnene i [Inviter kontaktpersoner til dine portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) i dokumentation for Power Apps-portaler.
 
-Før du inviterer en kunde til at deltage i kundeportalen, skal du kontrollere, at kundens [kontaktpersonpost](/powerapps/maker/portals/configure/configure-contacts) er tilgængelig og konfigureret på følgende måde:
+Før du inviterer en kunde til at deltage i kundeportalen, skal du kontrollere, at kundens [kontaktpersonpost](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) er tilgængelig og konfigureret på følgende måde:
 
 1. Angiv feltet til **Firma** for den juridiske enhed, som du ønsker, kunden skal tilhøre i Supply Chain Management.
 2. Angiv feltet **Kontonummer** til det kundekontonummer, som du ønsker, kunden skal have i Supply Chain Management.
 
 Når en kontakt er oprettet, skal du kunne se den i Supply Chain Management.
 
-Du kan finde flere oplysninger under [Konfigurere en kontaktperson til brug på en portal](/powerapps/maker/portals/configure/configure-contacts) i dokumentationen for Power Apps-portaler.
+Du kan finde flere oplysninger under [Konfigurere en kontaktperson til brug på en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) i dokumentationen for Power Apps-portaler.
 
-## <a name="out-of-box-web-roles-and-table-permissions"></a>Køreklare webroller og tabeltilladelser
+## <a name="out-of-box-web-roles-and-entity-permissions"></a>Out-of-box-webroller og enhedstilladelser
 
-Brugerroller i Power Apps-portaler defineres af [webroller](/powerapps/maker/portals/configure/create-web-roles) og [tabeltilladelser](/powerapps/maker/portals/configure/assign-entity-permissions). Der er defineret nogle få roller for kundeportalen lige fra starten. Du kan oprette nye roller, og du kan redigere eller fjerne eksisterende roller.
+Brugerroller i Power Apps-portaler defineres af [webroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [enhedstilladelser](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Der er defineret nogle få roller for kundeportalen lige fra starten. Du kan oprette nye roller, og du kan redigere eller fjerne eksisterende roller.
 
 ### <a name="out-of-box-web-roles"></a>Out-of-box-webroller
 
 I dette afsnit beskrives de webroller, der leveres sammen med kundeportalen.
 
-Du kan finde flere oplysninger om, hvordan du redigerer køreklare brugerroller, under [Oprette webroller til portaler](/powerapps/maker/portals/configure/create-web-roles) og [Tilføje postbaseret sikkerhed ved at bruge tabeltilladelser til portaler](/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen for Power Apps-portaler.
+Du kan finde flere oplysninger om, hvordan du redigerer out-of-box-brugerrollerne under [Oprette webroller til portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [Tilføje postbaseret sikkerhed ved at bruge enhedstilladelser til portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen for Power Apps-portaler.
 
 #### <a name="administrator"></a>Administrator
 
@@ -88,12 +90,9 @@ Følgende tabel viser, hvilke salgsordrer brugerne i de enkelte webroller kan se
 
 | Salgsordre | Administrator | Kunderepræsentant for kunde&nbsp;X | Autoriseret bruger: Jane | Autoriseret bruger: Sam | Uautoriseret bruger: May |
 |---|---|---|---|---|---|
-| Kunde&nbsp;X-bestiller:&nbsp;Jane | Ja | Ja | Ja | Nej | Nej |
-| Kunde&nbsp;X-bestiller:&nbsp;Sam | Ja | Ja | Nej | Ja | Nej |
-| Kunde&nbsp;Y-bestiller:&nbsp;May | Ja | Nej | Nej | Nej | Nej |
+| Kunde&nbsp;X-bestiller:&nbsp;Jane | Ja | Ja | Ja | Ingen | Ingen |
+| Kunde&nbsp;X-bestiller:&nbsp;Sam | Ja | Ja | Ingen | Ja | Ingen |
+| Kunde&nbsp;Y-bestiller:&nbsp;May | Ja | Ingen | Ingen | Ingen | Ingen |
 
 > [!NOTE]
 > Selvom både Sam og Jane er kontaktpersoner, der arbejder for kunde X, kan de kun se de ordrer, de selv har afgivet, og intet andet. Selvom May har en ordre i systemet, kan hun ikke se den pågældende ordre i kundeportalen, fordi hun er en uautoriseret bruger. (Desuden må hun have afgivet ordren via en anden kanal end kundeportalen).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

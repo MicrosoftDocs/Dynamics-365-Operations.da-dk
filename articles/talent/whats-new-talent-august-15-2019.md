@@ -61,6 +61,3 @@ Du kan finde yderligere oplysninger om til Finance and Operations under [Prøvev
 Ændringer i medarbejderposter træder sjældent i kraft med det samme. Du skal opdatere data fra medarbejderens startdato, som ofte er i fremtiden, og du skal også opdatere oplysningerne i fortiden. Med denne strømlinede navigationsmodel kan du opdatere fremtidige og tidligere data uden at skulle gå til flere formularer eller ændre datokonteksten. Denne ændring fremmer og viser desuden nøgleoplysninger i det øverste bannerområde af medarbejderposten.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

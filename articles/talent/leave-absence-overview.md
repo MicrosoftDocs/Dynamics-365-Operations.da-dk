@@ -66,6 +66,3 @@ Orlovs- og fraværsstyring indeholder følgende funktioner:
 - **Send anmodninger om fridage.**
 
     Medarbejdere kan sende anmodninger om fritid i forhold til deres ledige timer. Det kan være anmodninger om én enkelt dag eller om flere dage, der omfatter flere forskellige på orlovs- og fraværstyper. Hvis der ikke er aktiveret en arbejdsgang, godkendes anmodningerne automatisk. Hvis en arbejdsgang er aktiveret, kan godkendelsen ske automatisk, eller den kan kræve godkendelse, afhængigt af arbejdsgangskonfigurationen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

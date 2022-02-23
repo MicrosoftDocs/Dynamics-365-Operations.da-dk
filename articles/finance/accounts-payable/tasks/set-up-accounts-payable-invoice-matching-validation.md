@@ -2,23 +2,26 @@
 title: Konfigurere validering af fakturasammenholdelse for kreditor
 description: Dette emne indeholder oplysninger om, hvordan validering af fakturasammenholdelse for kreditorer defineres.
 author: abruer
+manager: AnnBe
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 017b0197563b9d7fd03f5fc927353be8d16586090f467cff792016431e0fafad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722857"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441501"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurere validering af fakturasammenholdelse for kreditor
 
@@ -95,6 +98,3 @@ Gå til **Kreditorer > Konfiguration > Konfiguration af fakturasammenholdelse > 
 
 1. Hvis du vil angive tolerancer for individuelle kreditorer, der tilsidesætter standardtolerancen, skal du vælge en **Kreditorkonto**.
 2. Angiv den afvigelsesprocent, som du kan acceptere for denne kreditor.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

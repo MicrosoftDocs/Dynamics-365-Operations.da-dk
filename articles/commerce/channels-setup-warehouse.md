@@ -2,30 +2,36 @@
 title: Konfigurer et lagersted
 description: Dette emne beskriver, hvordan du kan konfigurere et lagersted til brug med en ny kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734013"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411072"
 ---
 # <a name="warehouse-set-up"></a>Konfigurere lagersted
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan konfigurere et lagersted til brug med en ny kanal i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Hver enkelt Commerce-kanal kræver, at den er tilknyttet et konfigureret lagersted. Følgende procedurer indeholder den minimumkonfiguration, der kræves for at konfigurere et lagersted til en Commerce-kanal. Du kan få yderligere oplysninger om opsætning af lagersteder i [Oversigt over lokationsstyring](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
@@ -45,9 +51,9 @@ Gør følgende for at konfigurere et sted til et lagersted.
 
 Følgende billede viser et eksempel på et sted til et lagersted.
 
-![Eksempel på et sted til et lagersted.](media/warehouse-site.png)
+![Eksempel på et sted til et lagersted](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse&quot;></a>Konfigurer et lagersted
+## <a name="set-up-a-warehouse"></a>Konfigurer et lagersted
 
 Gør følgende for at konfigurere et lagersted.
 
@@ -61,14 +67,14 @@ Gør følgende for at konfigurere et lagersted.
     - Hvis du vil angive et **Transitlagersted**, skal du først følge disse trin for at oprette et ekstra lagersted, hvor **Type** er indstillet til **Transit**.
 1. Gå til handlingsruden, og vælg **Gem**.
 
-## <a name=&quot;set-up-inventory-aisles&quot;></a>Konfigurer lagergange
+## <a name="set-up-inventory-aisles"></a>Konfigurer lagergange
 
 Følg disse trin for at konfigurere lagergange.
 
 1. Gå til **Moduler \> Retail og Commerce \> Konfiguration af kanal \> Konfiguration af lokation \> Lagergange** i navigationsruden..
 1. Gå til handlingsruden, og vælg **Ny**.
 1. Vælg det lagersted, du tidligere har oprettet, på rullelisten **Lagersted**.
-1. Angiv et navn i feltet **Gang** (f.eks. &quot;Def").
+1. Angiv et navn i feltet **Gang** (f.eks. "Def").
 1. Angiv et navn i feltet **Navn** (f.eks. "Standardgang").
 1. Gå til handlingsruden, og vælg **Gem**.
 
@@ -98,7 +104,7 @@ Gør følgende, hvis du vil oprette lokationer til lagerstedets lager for standa
     
 Følgende billede viser opsætningen af en lagerlokation til et lagersted i San Francisco.
 
-![Eksempel på opsætning af lagerlokation.](media/warehouse-inventory-locations.png)
+![Eksempel på opsætning af lagerlokation](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Akslut konfigurationen af lagerstedet
 
@@ -121,11 +127,11 @@ Gør følgende for at fuldføre konfigurationen af lagerstedet.
 
 Følgende billede viser oplysninger om et konfigureret lagersted.
 
-![Eksempel på konfigureret lagersted.](media/warehouse-sample.png)
+![Eksempel på konfigureret lagersted](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over lagerstedsstyring](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
+[Oversigt over lokationsstyring](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Oversigt over kanaler](channels-overview.md)
 
@@ -141,6 +147,3 @@ Følgende billede viser oplysninger om et konfigureret lagersted.
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

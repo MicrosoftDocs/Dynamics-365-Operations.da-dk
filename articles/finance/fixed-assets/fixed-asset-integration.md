@@ -1,26 +1,29 @@
 ---
 title: Integration af anlægsaktiver
 description: Anlægsaktiver kan integreres med Finans, Lagerstyring, Debitor, Kreditor og Debitor. Du kan også oprette anlægsaktiver, der kan integreres med indkøbsordrer.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e53d171ba0b9be7bbfffa25c27bd21fe036acee
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 1fb1348a3a3c47e5fd7df46d9ce4af3725d8896b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674769"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441543"
 ---
 # <a name="fixed-assets-integration"></a>Integration af anlægsaktiver
 
@@ -28,7 +31,8 @@ ms.locfileid: "7674769"
 
 Anlægsaktiver kan integreres med Finans, Lagerstyring, Debitor, Kreditor og Debitor. Du kan også oprette anlægsaktiver, der kan integreres med indkøbsordrer.
 
-## <a name="general-ledger"></a>Finans
+<a name="general-ledger"></a>Finans
+--------------
 
 I Finans opsummeres værdien af alle anlægsaktiver normalt på flere hovedkonti, der skal bruges ved regnskabsaflæggelse. Du kan imidlertid oprette mange poster til anlægsaktivet på siden **Anlægsaktiver**. Disse poster kan indeholde oplysninger, f.eks. anskaffelsespris, afskrivning og værdiansættelse. Hver gang du bogfører en posteringer for et anlægsaktiv, opdateres de relevante hovedkonti. Anlægsaktivernes hovedkonti viser altid den opdaterede værdi af anlægsaktiverne.
 
@@ -91,6 +95,3 @@ Du kan finde flere oplysninger under [Anskaffelse af aktiver via indkøb](acquir
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

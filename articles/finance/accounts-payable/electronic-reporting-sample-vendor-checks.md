@@ -1,24 +1,27 @@
 ---
 title: Kreditoreksempelchecks til elektronisk rapportering
 description: Dette emne indeholder generelle oplysninger om brug af eksempelcheckformater i elektronisk rapportering.
-author: sunfzam
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/14/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2e1aa349b505713d0502aa90ddd5c3caff1f083c
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: a5c14f9529d11898e43f128c26859fc17fac9b73
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595173"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441671"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>Kreditoreksempelchecks til elektronisk rapportering
 
@@ -34,13 +37,10 @@ Microsoft Dynamics 365 Finance omfatter også et eksempelformat, hvor checken er
 
 ## <a name="what-do-i-have-to-set-up"></a>Hvad skal jeg bruge for at komme i gang?
 
-- Før du kan udskrive checks ved hjælp af ER, skal mindst én aktiv checkkonfiguration importeres til dine ER-konfigurationer. Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+- Før du kan udskrive checks ved hjælp af ER, skal mindst én aktiv checkkonfiguration importeres til dine ER-konfigurationer. Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 - Når du konfigurerer check i Kontant- og bankstyring for bankkontoen, skal du markere afkrydsningsfeltet **Generisk elektronisk eksportformat** og derefter vælge det relevante checkformat som en eksportformatkonfiguration.
 - Du skal også angive antallet af bilagslinjer, der skal udskrives på remitteringen. Husk at medtage overskriftsrækker, når du beregner dette tal. For de to eksempelformater er det anbefalede antal følgeseddellinjer 17. Men dette nummer varierer afhængigt af din checkbeholdning og printerdriverne.
 - Det anbefales at udskrive en prøvecheck for at validere checklayoutet. For at udskrive en prøvecheck skal du vælge indstillingen **Udskriv prøve**. Eksempelcheckformaterne fungerer bedst, når **Margener** er indstillet til **Ingen** i de avancerede printeregenskaber for Microsoft Excel. Når prøvechecken er oprettet, skal du aktivere redigering af Excel-outputtet og konfigurere sidelayoutet, så alle margener er indstillet til **0** (nul). Sammenlign testkopien af checkene med din checkbeholdning, og juster indstillingerne, indtil du er tilfreds med justeringen.
 - Når du genererer betalinger for den konfigurerede bankkonto i betalingskladden, udskrives checks ved hjælp af det angivne format.
 
-Du kan finde flere oplysninger under [Redigere et elektronisk rapporteringsformat](../../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Du kan finde flere oplysninger under [Redigere et elektronisk rapporteringsformat](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).

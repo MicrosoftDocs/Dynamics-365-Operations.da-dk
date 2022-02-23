@@ -1,30 +1,32 @@
 ---
 title: Power BI-indhold til Faktisk vs. budget
-description: I dette emne beskrives Power BI-indhold til Faktisk vs. budget. Det forklarer, hvordan du får adgang til rapporterne, og giver oplysninger om datamodellen.
-author: panolte
+description: I dette emne beskrives Power BI-indhold til Faktisk vs. budget. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet.
+author: ryansandness
+manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: panolte
+ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7a5628dc67c721bf616803d6a31047cee09d8a434d43c0175dd8639815b7c9a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a185da5055741ac30c7e237ef72d07084644651
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737897"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685266"
 ---
 # <a name="actual-vs-budget-power-bi-content"></a>Power BI-indhold til Faktisk vs. budget
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives **Faktisk vs budget** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+I dette emne beskrives Power BI-indhold til **Faktisk vs. budget**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
@@ -55,6 +57,3 @@ Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelt
 | Finans                   | Finanskonti, der kan bruges til at filtrere rapporten til det aktuelle finansmodul              |
 | Budgetkoder              | Budgetkoder, som rapporter kan filtreres efter                                                |
 | Juridiske enheder            | Juridiske enheder, der kan bruges til at filtrere rapporten til den aktuelle juridisk enhed |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

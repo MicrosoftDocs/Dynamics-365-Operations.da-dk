@@ -1,33 +1,31 @@
 ---
 title: Udarbejde en kompensationsstruktur
-description: Dette emne forklarer, hvordan du kan oprette en fast kompensationsplan og tilmelde medarbejdere i planen via berettigelsesregler.
-author: twheeloc
-ms.date: 08/25/2021
+description: Denne artikel fører dig gennem processen med at oprette en kompensationsplan og melde medarbejdere til planen via berettigelsesregler.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/10/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2e35f4978cc4e8162c56ba05de28ab5b2366ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 124d0f7f83feebabf622f00732c25bfa0f6eccdd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065280"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417834"
 ---
 # <a name="develop-a-compensation-structure"></a>Udarbejde en kompensationsstruktur
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dette emne forklarer, hvordan du kan oprette en fast kompensationsplan og tilmelde medarbejdere i planen via berettigelsesregler. Dette emne bruger USMF-demodata og gælder for styring af kompensation og frynsegoder.
+Denne artikel fører dig gennem processen med at oprette en kompensationsplan og melde medarbejdere til planen via berettigelsesregler. Denne artikel bruger USMF-demodata og gælder for styring af kompensation og frynsegoder.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Oprette en fast løn-struktur
 
@@ -45,7 +43,7 @@ Dette emne forklarer, hvordan du kan oprette en fast kompensationsplan og tilmel
 
 7. I feltet **Type** skal du vælge, om den faste lønstruktur er en plan af typen **Omfang**, **Klasse** eller **Trin**.
 
-8. Afkrydsningsfeltet **Anbefaling tilladt** er standardværdien for alle handlinger, der er føjet til denne plan i en proceshændelse. Ved at tillade anbefalinger kan du tilsidesætte det beregnede aftalebeløb ved behandling af kompensation.
+8. Afkrydsningsfeltet **Anbefaling tilladt** fungerer som standardværdi for alle handlinger, der er føjet til denne plan i en proceshændelse. Ved at tillade anbefalinger kan du tilsidesætte det beregnede aftalebeløb ved behandling af kompensation.
 
 9. I feltet **Tolerance uden for afgrænsningerne** kan du angive, hvordan du vil håndtere kompensationsbeløb, der falder uden for den angivne lønstrukturramme på det givne niveau. Hvis du angiver feltet **Tolerance uden for afgrænsningerne** til **Ingen**, kan du bruge et hvilket som helst kompensationsbeløb. **Tolerancen Blød** advarer brugerne, hvis kompensationsbeløbet er mindre end minimum- eller større end maksimumbeløbet for referencepunktet for det pågældende niveau. Brugerne kan ignorere advarslen og fortsætte. **Tolerancen Hård** genererer en fejl, hvis en medarbejders løn er angivet uden for minimale og maksimale referencepunkter for niveauet og justerer automatisk medarbejderens løn, så den ligger inden for rammen.
 
@@ -115,6 +113,3 @@ Du kan ikke tildele en fast lønstruktur til en medarbejder, før du definerer b
 
 8. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

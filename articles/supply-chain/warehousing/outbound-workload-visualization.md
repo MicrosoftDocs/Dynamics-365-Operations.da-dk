@@ -2,22 +2,24 @@
 title: Visualisering af udgående arbejdsbyrde
 description: Dette emne indeholder oplysninger om visualisering af udgående arbejdsbyrde. Denne funktion giver lagerchefer og tilsynsførende mulighed for at oprette brugerdefinerede arbejdsbyrdediagrammer, der kan bruges til at overvåge forløbet af det aktuelle arbejde og den mængde, der mangler. Lagerchefer kan oprette flere visninger og konfigurere automatisk opdatering efter behov.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8416d43fe2b8b08e4d66434a1d95daa4b01a0fa4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576154"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965546"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering af udgående arbejdsbyrde
 
@@ -60,7 +62,7 @@ Benyt følgende fremgangsmåde for at konfigurere en visualisering af udgående 
     - **Dage, der skal medtages** – Angiv det antal dage i fortiden, som diagrammet skal genereres for.
     - **Arbejdsordretype** – Vælg de udgående arbejdsordretyper, der skal filtreres efter.
 
-    ![Siden Konfigurer filtre.](media/work-viz-filters-1.png "Siden Konfigurer filtre")
+    ![Siden Konfigurer filtre](media/work-viz-filters-1.png "Siden Konfigurer filtre")
 
 1. Luk siden **Konfigurer filtre** for at vende tilbage til siden **Visualiseringer af udgående arbejdsbyrder**.
 
@@ -70,11 +72,11 @@ Benyt følgende fremgangsmåde for at konfigurere en visualisering af udgående 
     - **Sidst opdateret** – iI dette felt vises den dato og det tidspunkt, hvor oplysningerne i diagrammet sidst blev opdateret.
     - **Estimeret/faktisk tid** – Hvis der er konfigureret arbejdsstandarder i systemet, skal du angive denne indstilling til *Ja* for at få vist de samlede estimerede pluktider øverst i hver kolonne i diagrammet. Hvis du ikke bruger arbejdsstandarder, er denne indstilling ikke tilgængelig.
 
-    ![Eksempel på visualisering.](media/work-viz-chart.png "Eksempel på visualisering")
+    ![Eksempel på visualisering](media/work-viz-chart.png "Eksempel på visualisering")
 
 1. Vælg en vilkårlig søjle i diagrammet for at få vist oplysningerne i den tilknyttede arbejdslinje.
 
-    ![Arbejdslinjedetaljer.](media/work-viz-work-details.png "Arbejdslinjedetaljer")
+    ![Arbejdslinjedetaljer](media/work-viz-work-details.png "Arbejdslinjedetaljer")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Eksempel: Visualisering af udgående arbejdsbyrde for zoner
 
@@ -92,9 +94,6 @@ I dette eksempel skal du oprette en visualisering, der viser arbejdslinjer for h
 
 I følgende illustration vises et eksempel på resultatdiagrammet.
 
-![Visualisering af zone vs. arbejdsstatus.](media/work-viz-chart.png "Visualisering af zone vs. arbejdsstatus")
+![Visualisering af zone vs. arbejdsstatus](media/work-viz-chart.png "Visualisering af zone vs. arbejdsstatus")
 
 Dette diagram indeholder to zoner, der hedder **PRODUKTION** og **BULK**, plus en zone med navnet **Blank**. Zonen **Blank** repræsenterer alle de arbejdslinjer, der ikke er medlemmer af nogen zoner. Diagrammet viser altid alle ikke-relaterede filtrerede data som **Blank**, så det giver så høj synlighed som muligt. I området **PRODUKTION** vises tre lukkede linjer og fire åbne linjer i diagrammet. I området **BULK** vises fire lukkede linjer og én åben linje og 24 annullerede linjer i diagrammet. Endelig viser diagrammet otte lukkede linjer, der ikke indgår i en zone og derfor er angivet som **Blank**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,30 +1,33 @@
 ---
 title: Opdele et anlægsaktiv
 description: I dette emne beskrives, hvordan du opdeler en procentdel af et anlægskartotek til et nyt anlægskartotek.
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2fbca50342196dd9f5acb53027fb9c0052a81de
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: da2dd4889a5f4722ff60a76a4a023c63fb59ad55
+ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883537"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4514320"
 ---
 # <a name="split-a-fixed-asset"></a>Opdele et anlægsaktiv
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du opdeler en procentdel af et anlægskartotek til et nyt anlægskartotek. 
+I dette emne beskrives, hvordan du opdeler en procentdel af et anlægskartotek til et nyt anlægskartotek. Den bruger rollen Revisor og USMF demodata.
 
 ## <a name="create-a-new-fixed-asset"></a>Opret et nyt anlægsaktiv
 
@@ -60,6 +63,3 @@ Inden et fuldt afskrevet aktiv opdeles, skal status for aktivbogen ændres manue
     - Der oprettes en anskaffelsespostering for det nye aktiv for det samme beløb.
 
 4. Vælg **Bogfør**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

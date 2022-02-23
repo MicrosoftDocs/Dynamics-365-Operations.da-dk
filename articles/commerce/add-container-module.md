@@ -2,30 +2,35 @@
 title: Modulet Container
 description: Dette emne omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715434"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411016"
 ---
-# <a name="container-module"></a>Container-modul
+# <a name="container-module"></a>Modulet Container
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Et containermodul er et modul, der indeholder andre moduler, som det er vært for. Det primære formål med et containermodul er, via de egenskaber, der er angivet for det, at definere layoutet af de moduler, det indeholder. De pågældende moduler kan f. eks. vises ved siden af hinanden i et layout med to, tre, fire eller seks kolonner. De kan også være begrænset til containerens bredde, eller de kan udfylde skærmen. Der kan også føjes en overskrift til alle containermoduler.
 
@@ -42,11 +47,11 @@ Der understøttes tre containermoduler: container, container med 2 pladser og co
 
 Det følgende billede viser et eksempel på et containermodul, der indeholder et karruselmodul i Commerce-webstedsgeneratoren. I dette eksempel angives egenskaben **Bredde** for containermodulet til **Udfyld skærm**.
 
-![Eksempel på et containermodul.](./media/ecommerce-container.PNG)
+![Eksempel på et containermodul](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Egenskaber for containermodul
 
-| Egenskabsbetegnelse     | Værdier | Betegnelse |
+| Egenskabsbetegnelse     | Værdier | Beskrivende tekst |
 |-------------------|--------|-------------|
 | Overskrift           | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Der kan angives en valgfri overskrift til containeren. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |
 | Bredde             | **Tilpas til container** eller **Udfyld skærm** | Hvis værdien er angivet til **Tilpas til container** (standardværdien), begrænses modulerne i containeren til containerens bredde. Hvis værdien er angivet til **Udfyld skærm**, begrænses modulerne ikke til containeren, men kan udfylde skærmen. |
@@ -137,6 +142,3 @@ Hvis du vil føje et containermodul til en ny side og angive de påkrævede egen
 [Overskriftsmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

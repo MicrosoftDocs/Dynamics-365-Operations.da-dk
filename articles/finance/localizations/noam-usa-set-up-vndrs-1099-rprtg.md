@@ -2,14 +2,17 @@
 title: Konfigurere kreditorer til 1099-rapportering
 description: Dette emne forklarer, hvordan du konfigurerer kreditorposter, så der knyttes en 1099-rubrik til en hovedkonto.
 author: v-kiarnd
+manager: Ann Beebe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
 ms.devlang: ''
 ms.reviewer: roschlom
+ms.search.scope: Operations, Core
 ms.tgt_pltfrm: ''
 ms.custom: ''
 ms.search.region: Global
@@ -17,12 +20,12 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2020-8-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 777983c7699a8a7e2c07297d767bed63f37103e1464b19b9afbbee16787a2c53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc3f2cf1aec97fa7bb6505f3be721c56b20e9331
+ms.sourcegitcommit: ffe9ae98b347f78430926ca96c1061f25f698f53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727946"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4407725"
 ---
 # <a name="set-up-vendors-for-1099-reporting"></a>Konfigurere kreditorer til 1099-rapportering
 
@@ -115,6 +118,3 @@ Systemet evaluerer alle kreditorer, hvor indstillingen **Rapport 1099** er valgt
 
 > [!NOTE]
 > Der er føjet en ny kolonne med navnet **Oprettet af 1099-opdateringsprocessen** til siden **1099-skat transaktioner**. Afkrydsningsfelterne i denne kolonne er markeret for at vise, at den nye opdateringsproces har opdateret 1099-saldoen. Hvis afkrydsningsfeltet for en række ikke er markeret, blev standardfunktionaliteten brugt til at oprette posteringen. Hvis du vil åbne siden **1099-skat transaktioner**, skal du gå til **Kreditor \> Periodiske opgaver \> Kreditorudligning for 1099 \> 1099-kreditor transaktioner**. Du kan også gå til **Kreditor \> Kreditorer \> Alle kreditorer**. Vælg en kreditor, og brug derefter fanen **Kreditor** i handlingsruden til i gruppen **Skatteoplysninger** at vælge **Kreditorudligning for 1099 \> 1099-kreditor transaktioner**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

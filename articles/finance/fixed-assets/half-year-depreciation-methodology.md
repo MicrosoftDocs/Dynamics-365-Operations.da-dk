@@ -2,25 +2,28 @@
 title: Metode for halvårligt afskrivningsprincip
 description: I dette emne beskrives den metode, som anlægsaktiver bruger til at beregne afskrivning ved hjælp af halvårsprincippet, der beregner seks måneders afskrivning i et aktivs første og sidste år i brug.
 author: moaamer
+manager: Ann Beebe
 ms.date: 08/17/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 5e71beb316494d05a3d8ce6066f2a4c72e32a2ad3d75a4ba3560cb0aebfe4cc8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 55fb03cf08d8ec042aa8fb37fd1fb858d98279b1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746434"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441421"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Metode for halvårligt afskrivningsprincip
 
@@ -36,9 +39,6 @@ Det første år, det er i brug, afsluttes i december 2020, hvilket betyder, at a
 > Årlig afskrivning 50.000/5 = 10.000 månedlig afskrivning 10.000/12 = 833,33 <br>
 > Første års afskrivning 10.000/2 = 5.000 og den efterfølgende månedlige afskrivning 5.000/9 = 555,56
 
-   [![Afskrivningsplan for halvårligt afskrivningsprincip.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Afskrivningsplan for halvårligt afskrivningsprincip](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 De udvidede afskrivningsperioder, der tilføjes af halvårsprincippet, giver en mere præcis afskrivningsfordeling. Seks måneders princippet fordeler afskrivningsudgifter mere ligeligt, hvilket er nyttigt ved rapportering til driftsregnskabet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -66,6 +66,3 @@ Du kan hente en PDF-fil over de lande, områder og sprog, som Talent understøtt
 
 Hvis du er udvikler, der er interesseret i at oprette lande- eller områdespecifikke tilpasninger, eller i at oprette en løsning for et land eller en region, der ikke understøttes af Microsoft, skal du se [Globalisering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -141,6 +141,3 @@ Du kan opdatere den eksisterende skabelon ved at følge disse trin.
     9. På siden **Tilknytningsopgave** skal du vælge den nye kolonne som kilde for at oprette en anden tilknytning til HIERARCHYTYPENAME.
 
         [![Overførsel](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

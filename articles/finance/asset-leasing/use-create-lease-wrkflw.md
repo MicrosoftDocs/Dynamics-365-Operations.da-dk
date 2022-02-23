@@ -2,25 +2,28 @@
 title: Bruge arbejdsgange for leasinggodkendelse
 description: I dette emne forklares, hvordan du kan bruge arbejdsgange til at godkende aktivleasingaftaler, og hvordan du kan følge op på arbejdsgangernes status og historik.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WorkflowTableListPageRnr
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 33faf7aa6bc9e5df4b8b0f004692b2c1803c6994264c7b9a8e3eb404387f6800
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1805e1f87ee70a1f35d9105b8f7ad6c95861efcc
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726080"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441774"
 ---
 # <a name="use-lease-approval-workflows"></a>Bruge arbejdsgange for leasinggodkendelse
 
@@ -42,6 +45,3 @@ Før du bruger denne procedure, skal du kontrollere, at der er oprettet mindst e
 
 8. Hvis du vil standse en arbejdsproces, skal du vælge **Arbejdsproceshistorik** og **Tilbagekald**. I dialogboksen skal du angive en kommentar og derefter vælge **OK**.
 9. Hvis du vil deaktivere en arbejdsgang eller aktivere en arbejdsgang, der tidligere er oprettet, skal du gå til **Aktivleasing \> Opsætning \> Leasingarbejdsproces**. Derefter skal du vælge **Leasingarbejdsproces** og **Arbejdsproces \> Versioner**. Hvis du vil gøre en arbejdsproces inaktiv, skal du vælge den aktive leasingaftale i dialogboksen og derefter vælge **Gør inaktiv**. Hvis du vil aktivere en eksisterende arbejdsproces, skal du vælge arbejdsprocessen og derefter vælge **Gør aktiv**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

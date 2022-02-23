@@ -1,10 +1,12 @@
 ---
 title: Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder
-description: I dette emne forklares det, hvordan du kan forbedre ydeevnen for løsninger til Elektronisk rapportering (ER) ved at tilføje parametre for BEREGNET FELT-datakilder.
+description: I dette emne forklares det, hvordan du kan forbedre ydeevnen af løsninger til elektronisk rapportering (ER) ved at tilføje parameteriserede BEREGNET FELT-datakilder.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 940b696a06fb46bcd0557f059327cd4340448137
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753664"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681274"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder
 
@@ -56,7 +58,7 @@ Det første trin er at importere ER-løsningseksemplet for at generere en rappor
     2. Vælg **Gennemse**, og vælg den relevante fil til ER-konfigurationen i XML-format.
     3. Vælg **OK**.
 
-![Importerede konfigurationer på siden Konfigurationer.](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Importerede konfigurationer på siden Konfigurationer](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>Gennemgå ER-eksempelløsningen
 
@@ -76,7 +78,7 @@ Det første trin er at importere ER-løsningseksemplet for at generere en rappor
 
     Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for ethvert af de ER-formater, der er oprettet for denne model og kørt i Finance. Derfor vises indholdet af **Trans**-datakilden for ER-formater, f.eks. abstrakte **model**-datakilder.
 
-    ![Trans-datakilde på siden for modeltilknytningsdesigneren.](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Trans-datakilde på siden for modeltilknytningsdesigneren](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Luk siden **Modeltilknytningsdesigner**.
 5. Luk siden **Tilknytning af model til datakilde**.
@@ -90,7 +92,7 @@ Det første trin er at importere ER-løsningseksemplet for at generere en rappor
 
     Dette ER-format er beregnet til at oprette en rapport over kreditorposteringer i XML-format.
 
-    ![Formatere datakilder og konfigurerede bindinger af formatelementer på formatdesignsiden.](media/er-calculated-field-ds-performance-format.png)
+    ![Formatere datakilder og konfigurerede bindinger af formatelementer på formatdesignsiden](media/er-calculated-field-ds-performance-format.png)
 
 5. Luk siden **Formatdesigner**.
 
@@ -103,7 +105,7 @@ Forestil dig, at du er færdig med at designe den første version af ER-løsning
 1. Vælg firmaet **DEMF**.
 2. Følg trinnene i [Aktivere ER-performancesporing](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) for at generere en performancesporing, mens et ER-format køres.
 
-    ![Dialogboksen Brugerparametre.](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![Dialogboksen Brugerparametre](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Køre ER-formatet
 
@@ -124,7 +126,7 @@ Nye oplysninger er nu tilgængelige for nogle datakildeelementer i den aktuelle 
 - Den tid, det faktisk blev brugt på at hente data vha. datakilden
 - Den samme tid angivet som en procentdel af den samlede tid, der blev brugt på at køre hele modeltilknytningen
 
-![Detaljer om udførelsestiden på designersiden Modeltilknytning.](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Detaljer om udførelsestiden på designersiden Modeltilknytning](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 Gitteret **Statistik for ydeevne** viser, at **Trans**-datakilden kalder tabellen VendTrans én gang. Værdien **\[265\]\[Q:265\]** i **Trans**-datakilden angiver, at 265 kreditorposteringer er hentet fra programtabellen og returneret til datamodellen.
 
@@ -137,7 +139,7 @@ Gitteret **Statistik for ydeevne** viser også, at den aktuelle modeltilknytning
 
 - Kreditortabellen kaldes for hver af de gentagne kreditorposteringer, selvom de hentede posteringer kun er bogført for fem kreditorer. Af 530 kald er 525 dubletter. I følgende illustration vises den meddelelse, du har modtaget om dubletopkald (databaseanmodninger).
 
-![Meddelelse om dublerede databaseanmodninger på siden Modeltilknytningsdesigner.](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Meddelelse om dublerede databaseanmodninger på siden Modeltilknytningsdesigner](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 Den samlede udførelsestid for modeltilknytning (cirka otte sekunder). Bemærk, at mere end 80 procent (cirka seks sekunder) er blevet brugt på at hente værdier fra programtabellen VendTable. Denne procentdel er for stor til to attributter af fem leverandører sammenlignet med oplysningerne om mængden fra VendTrans-programtabellen.
 
@@ -172,7 +174,7 @@ Udfør følgende trin for at bruge cachelagring og en datakilde af typen **Bereg
     3. I dialogboksen skal du angive **Box** i feltet **Navn**.
     3. Vælg **OK**.
 
-    ![Box-datakilde på siden for modeltilknytningsdesigneren.](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Box-datakilde på siden for modeltilknytningsdesigneren](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Udfør følgende trin for at tilføje en parameteriseret datakilde af typen **Beregnet felt**:
 
@@ -208,7 +210,7 @@ Udfør følgende trin for at bruge cachelagring og en datakilde af typen **Bereg
 
 9. Vælg **Gem**.
 
-    ![Vend-datakilde på siden for modeltilknytningsdesigneren.](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Vend-datakilde på siden for modeltilknytningsdesigneren](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Luk siden **Modeltilknytningsdesigner**.
 11. Luk siden **Modeltilknytninger**.
@@ -232,11 +234,11 @@ Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i dette e
 
 Bemærk, at de justeringer, du har foretaget for modeltilknytningen, har elimineret dubletter af forespørgsler til databasen. Antallet af kald til databasetabeller og datakilder for denne modeltilknytning er også blevet reduceret.
 
-![Sporingsoplysninger på side 1 af modeltilknytningsdesigneren.](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Sporingsoplysninger på side 1 af modeltilknytningsdesigneren](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 Den samlede udførelsestid er blevet reduceret ca. 20 gange (fra ca. 8 sekunder til ca. 400 millisekunder). Derfor er ydeevnen i hele ER-løsningen blevet forbedret.
 
-![Sporingsoplysninger på side 2 af modeltilknytningsdesigneren.](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Sporingsoplysninger på side 2 af modeltilknytningsdesigneren](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>Appendiks 1: Download komponenterne i Microsoft ER-eksempelløsningen
 
@@ -244,9 +246,9 @@ Du skal også downloade og lokalt gemme følgende filer.
 
 | Filer                                        | Indhold |
 |---------------------------------------------|---------|
-| Model til forbedret ydeevne.version.1     | [Eksempler på ER-datamodelkonfiguration](https://download.microsoft.com/download/4/6/f/46f0f3fa-782b-414a-8f7b-b6c64a388661/Performance_improvement_model.version.1.xml) |
-| Tilknytning af forbedret ydeevne.version.1.1 | [Eksempler på ER-modeltilknytningskonfiguration](https://download.microsoft.com/download/8/9/1/8913a763-afb8-4bf4-aaf1-95ad793ffc5a/Performance_improvement_mapping.version.1.1.xml) |
-| Format af forbedret ydeevne.version.1.1  | [Eksempler på ER-formatkonfiguration](https://download.microsoft.com/download/9/0/c/90c75963-bc78-4edc-9096-556bbe281f10/Performance_improvement_format.version.1.1.xml) |
+| Model til forbedret ydeevne.version.1     | [Eksempler på ER-datamodelkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Tilknytning af forbedret ydeevne.version.1.1 | [Eksempler på ER-modeltilknytningskonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Format af forbedret ydeevne.version.1.1  | [Eksempler på ER-formatkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 ## <a name="appendix-2-configure-the-er-framework"></a><a name="appendix2"></a>Appendiks 2: Konfigurere ER-strukturen
 
@@ -298,6 +300,3 @@ Få flere oplysninger om udbydere af ER-konfigurationer under [Oprette konfigura
 - [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
 - [Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
 - [Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt](er-calculated-field-type.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

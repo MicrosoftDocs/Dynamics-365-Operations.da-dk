@@ -2,25 +2,28 @@
 title: Dobbeltrapportering
 description: I dette emne gennemgås et eksempel med, hvordan du kan opfylde kravene til både rapportering af International Financial Reporting Standard (IFRS) og lovpligtig rapportering i aktivleasing.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseBookMaster
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 406fbb53fc4cd17a7c257b5f5463227118c9051f44d81db000fbe87dca142efe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e1d4d460aef2f74422d5e4bd4fc68255466455
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767050"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441746"
 ---
 # <a name="dual-reporting"></a>Dobbeltrapportering
 
@@ -47,7 +50,7 @@ IFRS 16-kartoteket er konfigureret, så det overholder IFRS 16-regnskabsstandard
 | Konfiguration af nutidsværdi/handelsværdi af aktiv | 0,00           |
 | Kortsigtet grænse                    | 12             |
 | Grænse for lav værdi                     | 5,000.00       |
-| Betal til kreditor                           | Nej             |
+| Betal til kreditor                           | Ingen             |
 
 **Lovpligtigt kartotek**
 
@@ -64,7 +67,7 @@ Det lovpligtige kartotek er en kassekladde, hvor firmaet kan redegøre for leasi
 | Konfiguration af nutidsværdi/handelsværdi af aktiv | 0,00        |
 | Kortsigtet grænse                    | 0           |
 | Grænse for lav værdi                     | 0           |
-| Betal til kreditor                           | Nej          |
+| Betal til kreditor                           | Ingen          |
 
 **Lovpligtigt tilbageført kartotek**
 
@@ -81,7 +84,7 @@ Det lovpligtige tilbageførte kartotek konfigureres på samme måde som det lovp
 | Konfiguration af nutidsværdi/handelsværdi af aktiv | 0,00                           |
 | Kortsigtet grænse                    | 0                              |
 | Grænse for lav værdi                     | 0                              |
-| Betal til kreditor                           | Nej                             |
+| Betal til kreditor                           | Ingen                             |
 
 I dette eksempel er der oprettet en leasingaftale, der indeholder følgende indstillinger under fanerne **Generelt** og **Betalingsplanlinje**.
 
@@ -520,6 +523,3 @@ Når alle disse kladdeposteringer er oprettet og bogført, vises følgende værd
 | 11         | Akkumuleret afskrivning |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

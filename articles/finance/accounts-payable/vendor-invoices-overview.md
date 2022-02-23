@@ -1,42 +1,41 @@
 ---
 title: Oversigt over kreditorfakturaer
-description: Dette emne indeholder generelle oplysninger om kreditorfakturaer.
+description: Dette emne indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
 author: abruer
-ms.date: 06/03/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 07/17/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "13971"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
+ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985331"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4701670"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-
-Dette emne indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
+Dette emne indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester.
 
 ## <a name="vendor-invoices"></a>Kreditorfakturaer
 
-En kreditorfaktura fra en indkøbsordre er produceret, når produkter eller tjenesteydelser modtages i henhold til en indkøbsordre, der blev afgivet med en leverandør. Kreditorfakturaen indeholder et hoved og en eller flere linjer til varer eller tjenester. En kreditorfaktura afslutter cyklussen fra indkøbsordre til produktkvittering til kreditorfaktura.
+En kreditorfaktura fra en indkøbsordre er en faktura, der er produceret, når produkter eller tjenesteydelser modtages i henhold til en indkøbsordre, der blev afgivet med en leverandør. Kreditorfakturaen indeholder et hoved og en eller flere linjer til varer eller tjenester. En kreditorfaktura afslutter cyklussen fra indkøbsordre til produktkvittering til kreditorfaktura.
 
-Selvom nogle kreditorfakturaer er knyttet til en indkøbsordre, kan kreditorfakturaer også indeholde linjer, der ikke svarer til indkøbsordrelinjer. Du kan også oprette kreditorfakturaer, der ikke er knyttet til nogen indkøbsordrer. Disse kreditorfakturaer kan repræsentere igangværende servicer, f.eks. en forsyningsfaktura. Du behøver ikke at referere til en indkøbsordre, når du tilføjer en igangværende service.
+Selvom nogle kreditorfakturaer er knyttet til en indkøbsordre, kan kreditorfakturaer også indeholde linjer, der ikke svarer til indkøbsordrelinjer. Du kan også oprette kreditorfakturaer, der ikke er knyttet til nogen indkøbsordrer. Disse kreditorfakturaer kan repræsentere løbende tjenester som et værktøj til regning, og du behøver ikke at henvise til en indkøbsordre, når du tilføjer dem.
 
 Der er flere måder at angive en kreditorfaktura på:
 
@@ -49,12 +48,12 @@ Den følgende diskussion indeholder flere oplysninger om, hvordan du kan bruge s
 
 ## <a name="understanding-invoice-line-quantities"></a>Sådan skal du forstå fakturalinjeantal
 
-Når du åbner en kreditorfaktura fra en relateret indkøbsordre, opretter systemet fakturalinjer fra indkøbsordren. Systemet, der tager mængderne som standard fra produktkvitteringen. Du kan dog bruge en eller flere af følgende standardfunktionsmåder:
+Når du åbner en kreditorfaktura fra en relateret indkøbsordre, oprettes der fakturalinjer fra indkøbsordren. Mængderne tages som standard fra antallet på produktkvitteringen. Du kan dog bruge en eller flere af følgende standardfunktionsmåder:
 
-- **Modtagelse nu-antal** – Brug denne indstilling til delleverancer. Systemet indstiller standardværdien i feltet **Antal** stammer fra det antal, der er angivet i feltet **Modtag nu** på indkøbsordren.
-- **Bestilt antal** – Brug denne indstilling til fuldførte forsendelser. Systemet indstiller standardværdien i feltet **Antal** stammer fra det antal, der er angivet i feltet **Bestilt** på indkøbsordren.
+- **Modtagelse nu-antal** – Brug denne indstilling til delleverancer. Standardværdien i feltet **Antal** stammer fra det antal, der er angivet i feltet **Modtag nu** på indkøbsordren.
+- **Bestilt antal** – Brug denne indstilling til fuldførte forsendelser. Standardværdien i feltet **Antal** stammer fra det antal, der er angivet i feltet **Bestilt** på indkøbsordren.
 - **Registreret antal** – Brug denne indstilling, hvis varen kræver registrering, som angivet på siden **Varemodelgrupper**. Standardværdien i feltet **Antal** er det fysisk opdaterede antal, der er registreret.
-- **Antal produktkvitteringer** – Brug denne indstilling, hvis der allerede er modtaget en produktkvittering for ordren. Systemet tager standardværdien i feltet **Antal** stammer fra det samlede antal tilgængelige produktkvitteringer.
+- **Antal produktkvitteringer** – Brug denne indstilling, hvis der allerede er modtaget en produktkvittering for ordren. Standardværdien i feltet **Antal** stammer fra det samlede antal tilgængelige produktkvitteringer.
 - **Registreret antal og tjenester** – Brug denne indstilling, hvis der er registreret antal i modtagelseskladder for lagerførte varer eller ikke-lagerførte varer. Denne indstilling omfatter også tjenester, uanset om de er registreret.
 
 Hvis din juridiske enhed bruger sammenholdelse af kreditorfakturaer, kan du se resultaterne af den mængde, der passer i kolonnen **Antal afstemte produktkvitteringer**. Du kan også bruge knappen **Detaljer om sammenholdelse** under fanen **Gennemgang** i handlingsruden for at få vist resultaterne af den tilsvarende mængde.
@@ -65,24 +64,23 @@ Du kan tilføje en linje, der ikke var på indkøbsordren, til kreditorfakturaen
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Sende en kreditorfaktura til gennemsyn
 
-Din organisation bruger måske arbejdsgange til at administrere gennemsynsprocessen for kreditorfakturaer. Gennemsyn via arbejdsgang kan være påkrævet for fakturahovedet, fakturalinjen eller begge dele. Arbejdsgangskontrolelementerne gælder for hovedet eller linjen, afhængigt af hvor fokus er, når du vælger kontrolelementet. I stedet for knappen **Bogfør** får du vist knappen **Send**, som du kan bruge til at sende kreditorfakturaen gennem evalueringsprocessen.
+Din organisation bruger måske arbejdsgange til at administrere gennemsynsprocessen for kreditorfakturaer. Gennemsyn via arbejdsgang kan være påkrævet for fakturahovedet, fakturalinjen eller begge dele. Arbejdsgangskontrolelementerne gælder for hovedet eller linjen, afhængigt af hvor fokus er, når du vælger kontrolelementet. I stedet for knappen **Indlæg** får du vist knappen **Send**, som du kan bruge til at sende kreditorfakturaen gennem evalueringsprocessen.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Forhindre faktura i at blive sendt til arbejdsgang 
 
 Du kan bruge følgende forskellige metoder til at forhindre, at der sendes en faktura til en arbejdsgang.
 
-- **Fakturatotalen og den registrerede total er forskellige.** Den person, der har sendt fakturaen, modtager en påmindelse om, at totalerne ikke er ens. Påmindelsen giver mulighed for at rette saldi, inden fakturaen sendes til arbejdsgangen igen. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturatotalen og den registrerede slutsaldo ikke er ens** på siden **Funktionsstyring** er slået til. 
+- **Fakturatotalen og den registrerede total er forskellige.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at totalerne ikke er lig med hinanden, så saldiene kan rettes, før fakturaen sendes til arbejdsgangen. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturatotalen og den registrerede slutsaldo ikke er ens** på siden **Funktionsstyring** er slået til. 
+
 - **Fakturaen indeholder ikke-allokerede gebyrer.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at fakturaen har ikke-allokerede gebyrer, så fakturaen kan rettes, før den sendes til arbejdsgangen. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når der er ikke-allokerede gebyrer på en kreditorfaktura** på siden **Funktionsstyring** er slået til.
-- **Faktura indeholder samme fakturanummer som en anden bogført faktura.** Den person, der har sendt fakturaen, modtager en meddelelse om, at der blev fundet en faktura med et dubletnummer. Dubletnummeret kan rettes, før fakturaen sendes til arbejdsgangen igen. Denne påmindelse vises, når kreditorparameteren med navnet **Tjek det anvendte fakturanummer** er indstillet til **Afvis dublet**. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturanummeret allerede findes på en bogført faktura, og dit system ikke er konfigureret til at acceptere for identiske fakturanumre** på siden **Funktionsstyring** er slået til.
-- **Fakturaen indeholder en linje, hvor fakturaantallet er mindre end det afstemte antal på produktkvitteringen.** Den person, der sender fakturaen eller forsøger at bogføre, modtager en meddelelse om, at antallet ikke er ens. Denne meddelelse giver mulighed for at rette værdierne, inden fakturaen sendes til arbejdsgangen igen. Denne funktion er tilgængelig, hvis parameteren **Bloker bogføring og afsendelse af kreditorfakturaer til arbejdsgang** på siden **Funktionsstyring** er aktiveret, og parameteren **Bloker bogføring og afsendelse til arbejdsgang** på siden **Kreditorparametre** er aktiveret.
+
+- **Faktura indeholder samme fakturanummer som en anden bogført faktura.** Den person, der sendte fakturaen, vil modtage en påmindelse om, at der findes en faktura med et duplikeret fakturanummer, så den kan rettes, før den sendes til arbejdsgangen. Denne påmindelse vises, når kreditorparameteren med navnet **Tjek det anvendte fakturanummer** er indstillet til **Afvis dublet**. Denne funktion er tilgængelig, hvis parameteren **Forbyd afsendelse til arbejdsgang, når fakturanummeret allerede findes på en bogført faktura, og dit system ikke er konfigureret til at acceptere for identiske fakturanumre** på siden **Funktionsstyring** er slået til.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Sammenholde kreditorfakturaer med produktkvitteringer
 
 Du kan angive og gemme oplysninger om kreditorfakturaer, og du kan sammenholde fakturalinjer med produktkvitteringslinjer. Du kan også sammenholde delmængder for en linje.
 
 Du kan oprette en kreditorfaktura, der er baseret på de linjeelementer i produktkvitteringen, som er modtaget til og med dags dato, selvom alle varerne i en bestemt indkøbsordre endnu ikke er modtaget. Du kan f.eks. bruge denne indstilling, hvis en kreditor sender én faktura pr. måned, som skal dække alle de leverancer, der er sendt i den pågældende måned. Hver produktkvittering repræsenterer en dellevering eller en komplet levering af varerne i indkøbsordren.
-
-Når en faktura er i arbejdsgangen, kan godkenderen opdatere fakturaantal, så de svarer til værdien i feltet **Antal til modtagelse af produktkvittering**. Dette gør det ved at vælge funktionen **Opdater fakturaantal for at af svare til produktkvitteringer i arbejdsflow** i arbejdsområdet **Funktionsstyring** og vælge **Aktivér**. Hvis en godkender i arbejdsflowet har fjernet alle forekomster fra alle produktkvitteringerne fra fakturalinjen, slettes fakturalinjen. Når denne funktion ikke er aktiveret, opdateres fakturaantal ikke for fakturaer i arbejdsflowet.
 
 Når du bogfører fakturaen, opdateres antallet for **Fakturarestmængde** for de enkelte varer med de samlede modtagne antal fra de valgte produktkvitteringer. Hvis både antallet **Fakturarestmængde** og antallet **Levér rest** for alle varer i indkøbsordren er 0 (nul), ændres indkøbsordrens status til **Faktureret**. Hvis antallet for **Fakturarestmængde** ikke er 0 (nul), forbliver status for indkøbsordren uændret, og der kan bogføres ekstra fakturaer for den.
 
@@ -116,35 +114,12 @@ Du kan alene tilgå siden **Gendan kreditorfakturaer**, hvis du har fået tildel
 
 En arbejdsgangsforekomst, der er stoppet på grund af en uoprettelig fejl, har arbejdsgangsstatussen **Uoprettelig**. Når status for en arbejdsgang for en kreditorfaktura er **Uoprettelig**, kan du nulstille den til **Kladde** ved at vælge **Tilbagekald**. Du kan derefter redigere kreditorfakturaen. Denne funktion er tilgængelig, hvis parameteren **Nulstil kladdestatus for leverandørfakturaer fra uoprettelig til kladder** på siden **Administration af funktioner** er aktiveret.
 
-Du kan bruge siden **Arbejdsgangshistorik** for at nulstille arbejdsgangsstatussen til **Kladde**. Du kan åbne denne side fra **Kreditorfaktura** eller fra navigationen **Almindelig > Forespørgsler > Arbejdsgang**. Hvis du vil nulstille arbejdsgangsstatussen til **Kladde**, skal du vælge **Tilbagekald**. Du kan også nulstille arbejdsgangsstatussen til kladde ved at vælge handlingen **Tilbagekald** på siden **Kreditorfaktura** eller **Afventende kreditorfakturaer**. Når arbejdsgangsstatus er nulstillet til **Kladde**, bliver den tilgængelig for redigering på siden **Kreditorfaktura**.
+Du kan bruge siden **Arbejdsgangshistorik** for at nulstille arbejdsgangsstatussen til **Kladde**. Du kan åbne denne side fra **Kreditorfaktura**  eller fra navigationen **Almindelig > Forespørgsler > Arbejdsgang**. Hvis du vil nulstille arbejdsgangsstatussen til **Kladde**, skal du vælge **Tilbagekald**. Du kan også nulstille arbejdsgangsstatussen til kladde ved at vælge handlingen **Tilbagekald** på siden **Kreditorfaktura** eller **Afventende kreditorfakturaer**. Når arbejdsgangsstatus er nulstillet til **Kladde**, bliver den tilgængelig for redigering på siden **Kreditorfaktura**.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Se fakturatotalen på siden Ventende kreditorfakturaer.
-
 Du kan få vist fakturatotalen på siden **Ventende kreditorfakturaer** ved at aktivere parameteren **Vis fakturatotal på ventende kreditorfakturaer** på siden **kreditorparametre**. 
 
-## <a name="vendor-open-transactions-report"></a>Rapport over åbne kreditorposteringer
 
-Rapporten **Åbne kreditorposteringer** indeholder detaljerede oplysninger om de åbne posteringer for hver kreditor pr. den dato, du angiver. Denne rapport bruges ofte i forbindelse med overvågningsproceduren til kontrol af saldi mellem kreditorposteringer og finanskontoposteringer.
-
-I forbindelse med hver transaktion indeholder rapporten følgende oplysninger:
-
-- Fakturanummer
-- Transaktionsdato
-- Bilagsnummer
-- Transaktionsbeløb i transaktionsvalutaen og regnskabsvalutaen
-- Kreditsaldo i transaktionsvalutaen og regnskabsvalutaen
-- Debetsaldo i transaktionsvalutaen og regnskabsvalutaen
-- Subtotal i regnskabsvalutaen
-- Betalingens forfaldsdato
-
-### <a name="filter-the-data-on-the-report"></a>Filtrere dataene i rapporten
-
-Når du opretter rapporten **Åbne kreditorposteringer**, er følgende standardparametre tilgængelige. Du kan bruge dem til at filtrere de data, der medtages i rapporten.
-
-- **Udelad fremtidig udligning** – Markér dette afkrydsningsfelt for at udelade transaktioner, der er udlignet efter den dato, som er angivet i feltet **Åbne transaktioner pr.**
-- **Åbne transaktioner pr.** – Angiv en dato for at medtage transaktioner, der er åbne pr. denne dato. Hvis du ikke angiver en dato, angives feltet til maksimumdatoen. (Maksimumdatoen er den seneste dato, som systemet accepterer, 31. december 2154). Næste gang rapporten køres, angives dette felt som standard til den sidste dato, der blev angivet i det.
-
-Du kan bruge filtrene under feltet **Medtaget post** til yderligere at begrænse de transaktionsdata, der medtages i rapporten.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -153,6 +128,3 @@ Du kan bruge filtrene under feltet **Medtaget post** til yderligere at begrænse
 - [Indtaste fakturadata under kreditorer ved hjælp af en godkendelseskladde](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Indtaste fakturadata i kreditorsystemet ved hjælp af en fakturapulje](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Registrere en kreditorfaktura i fakturakladden](tasks/record-vendor-invoice-invoice-journal.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

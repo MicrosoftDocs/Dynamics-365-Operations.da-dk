@@ -1,32 +1,35 @@
 ---
 title: Oprette flytteordrer fra lagerstedsappen
-description: Dette emne beskriver, hvordan du opretter og behandler flytteordrer fra funktionen i mobilappen Lokationsstyring
+description: Dette emne beskriver, hvordan du opretter og behandler flytteordrer fra funktionen i lagerstedsappen
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: c30b0e74053480a08f84f4d7579021084ded5799
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777809"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424411"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Oprette flytteordrer fra lagerstedsappen
 
 [!include [banner](../includes/banner.md)]
 
-Denne funktion giver lagermedarbejderne mulighed for at oprette og behandle flytteordrer direkte fra mobilappen Lokationsstyring. Arbejderen starter med at vælge destinationslagerstedet og kan derefter scanne et eller flere id'er ved hjælp af appen for at tilføje id'er i flytteordren. Når lagermedarbejderen vælger **Fuldfør ordre**, opretter et batchjob den krævede flytteordre og ordrelinjer, der er baseret på den disponible lagerbeholdning, som er registreret for disse id'er.
+Denne funktion giver lagermedarbejderne mulighed for at oprette og behandle flytteordrer direkte fra lagerstedsappen. Lagermedarbejderne starter med at vælge destinationslagerstedet og kan derefter scanne et eller flere id'er ved hjælp af appen for at tilføje id'er i flytteordren. Når lagermedarbejderen vælger **Fuldfør ordre**, opretter et batchjob den krævede flytteordre og ordrelinjer, der er baseret på den disponible lagerbeholdning, som er registreret for disse id'er.
 
-## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivere funktionen, der opretter flytteordrer fra funktionen i lagerstedsappen
+## <a name="enable-the-create-transfer-orders-from-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivere funktionen, der opretter flytteordrer fra lagerstedsappen
 
 Før du kan bruge denne funktion, skal både den og dens forudsætninger være aktiveret i dit system. Administratorer kan bruge siden [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere den, hvis det er nødvendigt.
 
@@ -36,7 +39,7 @@ Før du kan bruge denne funktion, skal både den og dens forudsætninger være a
 1. Aktivér derefter funktionen *Opret flytteordrer fra lagerstedsappen*, der er angivet som:
     - **Modul** – Lokationsstyring
     - **Funktionsnavn** - Oprette og behandle flytteordrer fra lagerstedsappen
-1. Hvis du vil automatisere behandlingen af de udgående forsendelser, skal du også aktivere funktionen [Bekræft udgående forsendelser fra batchjob](confirm-outbound-shipments-from-batch-jobs.md). Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
+1. Hvis du vil automatisere behandlingen af de udgående forsendelser, skal du også aktivere funktionen [Bekræft udgående forsendelser fra batchjob](confirm-outbound-shipments-from-batch-jobs.md). Funktionen er angivet som:
     - **Modul** – Lokationsstyring
     - **Funktionsnavn** – Bekræft udgående forsendelser fra batchjob
 
@@ -48,8 +51,8 @@ Her er generelle retningslinjer for opsætning af et menupunkt i mobilenheder ti
 1. Vælg **Ny** for at tilføje et nyt menupunkt. Foretag derefter følgende indstillinger for at komme i gang:
 
     - **Navn på menupunkt** - Tildel et navn, som det skal vises i Supply Chain Management.
-    - **Titel** – Tildel et menunavn, som det skal vises for arbejdere i mobilappen Lokationsstyring.
-    - **Tilstand** - Angiv som *Indirekte* (dette menupunkt vil ikke oprette arbejde).
+    - **Titel** – Tildel et menunavn, som det skal vises for arbejdere i lagerstedsappen.
+    - **Tilstand** - Angiv som *Indirekte* (denne lagerstedsapp vil ikke oprette arbejde).
     - **Aktivitetskode** – Angiv til *Opret flytteordre fra id'er* for at gøre det muligt for lagermedarbejderne at oprette en flytteordre ud fra en eller flere scannede nummerplader.
 
 1. Brug indstillingen **Oprettelsespolitik for flytteordrelinje** til at styre, hvordan flytteordrelinjer oprettes af dette menupunkt. Linjerne oprettes/opdateres baseret på den disponible lagerbeholdning, der er registreret for de scannede nummerplader. Vælg en af følgende værdier:
@@ -72,7 +75,7 @@ Her er generelle retningslinjer for opsætning af et menupunkt i mobilenheder ti
 
 ## <a name="create-a-transfer-order-based-on-license-plates"></a>Oprette en flytteordre på basis af nummerplader
 
-Mobilappen Lokationsstyring har en simpel proces til oprettelse af flytteordrer baseret på nummerplader. For at kunne gøre dette gør arbejderen følgende ved at bruge mobilappen Lokationsstyring:
+Lagerstedsappen har en simpel proces til oprettelse af flytteordrer baseret på nummerplader. For at kunne gøre dette gør arbejderen følgende ved at bruge lagerstedsappen:
 
 1. Opretter flytteordren og identificerer destinationslagerstedet.
 1. Identificerer de enkelte nummerplader, der skal afsendes.
@@ -95,7 +98,7 @@ Ud over at definere oprettelse af en flytteordre i menupunkter på mobilenheden 
 
 Du er en detailhandler og har flere nummerplader, der hver indeholder en blanding af varer, der er placeret på en bestemt lokation på et af lagerstederne (*Lagersted 51*). Du vil aktivere den proces, der giver arbejdere mulighed for at oprette en flytteordre til et andet lagersted (*Lagersted 61*) for en samling af scannede nummerplader. Du sender automatisk en opdatering af flytteordren, så snart den sidste nummerplade for ordren er identificeret.
 
-![Eksempel på automatisk proces til flytteordre.](media/create-transfer-order-from-app-example.png "Eksempel på automatisk proces til flytteordre")
+![Eksempel på automatisk proces til flytteordre](media/create-transfer-order-from-app-example.png "Eksempel på automatisk proces til flytteordre")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Oprette et menupunkt for mobilenheden til oprettelse af flytteordrer
 
@@ -256,9 +259,9 @@ For det nævnte eksempel bruges to **Hændelser i lagerstedsapp** (*Opret flytte
 
 ### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Forespørge på lagerstedsappens hændelser
 
-Du kan få vist hændelseskøen og de hændelsesmeddelelser, der er genereret af mobilappen Lokationsstyring, ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Mobilenhedslogge \> Hændelser i lagerstedsapp**.
+Du kan få vist hændelseskøen og de hændelsesmeddelelser, der er genereret af lagerstedsappen, ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Mobilenhedslogge \> Hændelser i lagerstedsapp**.
 
-Hændelses meddelelserne *Opret flytteordre* får statussen *Venter*, hvilket betyder, at batchjobbet **Hændelsesbehandling i lagerstedsapp** ikke vil registrere og behandle hændelsesmeddelelserne. Så snart hændelsesmeddelelsen opdateres til statussen *Sat i kø*, behandler batchjobbet hændelserne. Dette vil ske samtidig med oprettelsen af hændelsen *Fuldfør flytteordre* (når en arbejder vælger knappen **Fuldfør ordre** i mobilappen Lokationsstyring). Når hændelsesmeddelelserne *Opret flytteordre* er blevet behandlet, opdateres statussen til *Fuldført* eller *Mislykket*. Når statussen *Fuldfør flytteordre* opdateres til *Fuldført*, slettes alle relaterede hændelser fra køen.
+Hændelses meddelelserne *Opret flytteordre* får statussen *Venter*, hvilket betyder, at batchjobbet **Hændelsesbehandling i lagerstedsapp** ikke vil registrere og behandle hændelsesmeddelelserne. Så snart hændelsesmeddelelsen opdateres til statussen *Sat i kø*, behandler batchjobbet hændelserne. Dette vil ske samtidig med oprettelsen af hændelsen *Fuldfør flytteordre* (når en arbejder vælger knappen **Fuldfør ordre** i lagerstedsappen). Når hændelsesmeddelelserne *Opret flytteordre* er blevet behandlet, opdateres statussen til *Fuldført* eller *Mislykket*. Når statussen *Fuldfør flytteordre* opdateres til *Fuldført*, slettes alle relaterede hændelser fra køen.
 
 Da **Hændelser i lagerstedsapp** for oprettelse af flytteordredata ikke vil blive behandlet af batchjobbet, før meddelelsen er opdateret til status *Sat i kø*, skal du slå de ønskede flytteordrenumre op som en del af feltet **Identifikator**. Feltet **Identifikator** findes i overskriften på siden **Hændelser i lagerstedsapp**.
 
@@ -274,11 +277,11 @@ Du kan finde flere oplysninger under [Hændelsesbehandling i lagerstedsapp](ware
 
 I dette scenario skete følgende:
 
-1. Ved hjælp af mobilappen Lokationsstyring har du valgt et menupunkt, der bruger aktivitetskoden **Opret flytteordre fra nummerplader**.
+1. Ved hjælp af lagerstedsappen har du valgt et menupunkt, der bruger aktivitetskoden **Opret flytteordre fra nummerplader**.
 1. Appen bad dig om at vælge destinationslagerstedet for flytteordren. Kildelagerstedet er altid det, du aktuelt er logget på som arbejder.
 1. I forbindelse med valget af destinationslagerstedet har systemet reserveret et id-nummer for den kommende flytteordre (baseret på den flytteordrenummerserie, der er defineret på systemet), men har ikke oprettet flytteordren endnu.
 1. Da du scannede nummerpladen *LP10*, der indeholder disponibel lagerbeholdning, som skulle flyttes til det nye lagersted, blev der føjet en **Hændelse i lagerstedsapp** til køen med hændelser, der skal behandles senere. Lagerstedshændelsen indeholdt meddelelsesoplysninger om scanningen, herunder det tiltænkte flytteordrenummer.
-1. Når knappen **Fuldfør ordre** er valgt på mobilappen Lokationsstyring, oprettes der en ny hændelse i lagerstedsappen, **Fuldfør flytteordre**, og den relaterede eksisterende hændelse, **Opret flytteordre**, ændrede status til **Sat i kø**.
+1. Når knappen **Fuldfør ordre** er valgt på lagerstedsappen, oprettes der en ny hændelse i lagerstedsappen, **Fuldfør flytteordre**, og den relaterede eksisterende hændelse, **Opret flytteordre**, ændrede status til **Sat i kø**.
 1. På backend hentede **batchjobbet Hændelsesbehandling i lagerstedsapp** hændelsen **Sat i kø** og indsamlede den disponible lagerbeholdning, der er relateret til den scannede nummerplade. På baggrund af den disponible lagerbeholdning blev den faktiske flytteordrepost og de tilknyttede linjer oprettet. Jobbet udfyldte også feltet **Udgående forsendelsespolitik** for flytteordren med den værdi, der er baseret på den konfigurerede *Frigiv og bekræft afsendelse* og sammenkædede nummerpladen med linjerne til strategien **Nummerpladestyret**.
 1. Baseret på feltværdien **Udgående forsendelsespolitik** for flytteordrelinjen resulterede forespørgslen **Automatisk frigivelse af batchjob for flytteordre** nu i, at flytteordren blev frigivet til afsendelseslagerstedet. Og på grund af opsætningen af de anvendte **Bølgeskabelon**, **Arbejdsskabelon** og **Lokationsvejledninger** fik arbejdet automatiske processer, der fik **Laststatus** opdateret til *Lastet*.
 1. **Batchjobbet Udfør behandling af udgående forsendelser** blev udført for lasten, så flytteordren blev afsendt, og der blev genereret en ASN-meddelelse (Advance Shipment Notice).
@@ -292,13 +295,13 @@ I dette scenario skete følgende:
 
 Funktionen *Oprette og behandle flytteordrer fra lagerstedsappen* skal være aktiveret. Du kan finde flere oplysninger under [Aktivere funktionen, der opretter flytteordrer fra lagerstedsappen](#enable-create-transfer-order-from-warehouse-app).
 
-### <a name="warehouse-management-mobile-app-processes"></a>Processer i mobilappen Lokationsstyring
+### <a name="warehouse-app-processes"></a>Lagerstedsappens processer
 
 #### <a name="why-cant-i-see-the-menu-button-complete-order"></a>Hvorfor kan jeg ikke se menuknappen "Fuldfør ordre"?
 
 Der skal være tildelt mindst én nummerplade til flytteordren.
 
-#### <a name="can-several-warehouse-management-mobile-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Kan flere brugere af mobilappen Lokationsstyring føje nummerplader til samme flytteordre på samme tid?
+#### <a name="can-several-warehouse-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Kan flere lagerstedsapp-brugere føje nummerplader til samme flytteordre på samme tid?
 
 Ja, flere lagermedarbejdere kan scanne nummerplader i samme flytteordre.
 
@@ -310,11 +313,11 @@ Nej, en nummerplade kan kun føjes til én flytteordre på det pågældende tids
 
 Nej, du kan ikke føje flere nummerplader til en flytteordre, der har en **Fuldfør flytteordre** som hændelse i lagerstedsappen.
 
-#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hvordan kan jeg finde eksisterende flytteordrer, der skal bruges via knappen "Vælg flytteordre" i mobilappen Lokationsstyring, hvis ordren endnu ikke er oprettet i backend-systemet?
+#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hvordan kan jeg finde eksisterende flytteordrer, der skal bruges via knappen "Vælg flytteordre" i lagerstedsappen, hvis ordren endnu ikke er oprettet i backend-systemet?
 
 I øjeblikket kan du ikke slå flytteordrer op i appen, men du kan finde flytteordrenumrene på siden **Hændelser for lagerstedsapp**. Du kan finde flere oplysninger under [Forespørge på lagerstedsappens hændelser](#inquire-the-warehouse-app-events).
 
-#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kan jeg manuelt vælge det flytteordrenummer, der skal bruges, fra mobilappen Lokationsstyring?
+#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-app"></a>Kan jeg manuelt vælge det flytteordrenummer, der skal bruges, fra lagerstedsappen?
 
 Kun automatisk genererede flytteordrenumre via nummerserier understøttes.
 
@@ -330,6 +333,4 @@ Flytteordrerne oprettes uden brug af funktionerne i **Leveringsdatokontrol**.
 
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Kan jeg bruge en nummerplade med fysisk negativ lagerbeholdning?
 
-Funktionen understøtter kun positive, fysiske lagerbeholdninger på nummerpladeniveau, men der kan være fysisk negative disponible antal på de højere lagersteds- og lagerstatusniveauer ved tildeling af nummerplader til flytteordrer.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Funktionen understøtter kun positive fysiske lagerbeholdninger. Sørg for, at der er positive fysiske lagerbeholdninger på lagersteds- og lagerstatusniveau, før du tildeler nummerplader til en flytteordre.

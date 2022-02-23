@@ -1,10 +1,12 @@
 ---
 title: Afskrivning af anlægsaktiv
 description: Dette emne indeholder en oversigt over afskrivning af anlægsaktiver.
-author: moaamer
-ms.date: 12/03/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
@@ -12,26 +14,23 @@ ms.reviewer: roschlom
 ms.custom: 3121
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 9b399ab3df9bddbce8b96752ef344bf93cb2563c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890974"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969097"
 ---
 # <a name="fixed-asset-depreciation"></a>Afskrivning af anlægsaktiv
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne indeholder en oversigt over afskrivning af anlægsaktiver.
 
 Afskrivning er en periodisk transaktion, der normalt reducerer anlægsaktivets værdi i balancen og faktureres som en udgift på driftskontoen (resultatopgørelsen). Derfor bruges en hovedkonto normalt til kreditering af den periodiske afskrivning i balancen. En modkonto er en konto på driftskontodelen af kontoplanen.
-
-Fra og med version 10.0.24 giver konfigurationsindstillingen **Beregn positiv afskrivning** for anlægsaktivbogen på siden **Bøger** mulighed for at debitere et anlægsaktiv, der er anskaffet med negativ bogført værdi (kredit).
 
 ## <a name="depreciation-adjustment"></a>Afskrivningsregulering
 Normalt er det kun en regulering af en allerede bogført afskrivningspostering, der bogføres som en afskrivningsjustering. Derfor er både hovedkontoen og modkontoen konfigureret som konti til afskrivning. En afskrivningsregulering kan være et positivt eller negativt beløb, men funktionen af hovedkontoen (som en statuskonto) og funktionen af modkontoen (normalt som en driftskonto) forbliver den samme.
@@ -57,6 +56,3 @@ Du kan finde flere oplysninger under [Afskrivningsmetoder og -principper](deprec
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

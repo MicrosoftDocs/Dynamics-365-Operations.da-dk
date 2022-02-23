@@ -2,28 +2,33 @@
 title: Konfigurere lagerbuffere og lagerniveauer
 description: Dette emne forklarer, hvordan du kan konfigurere lagerbuffere og lagerniveauer, der bestemmer beskeder om lagertilgængelighed på Microsoft Dynamics 365 Commerce-websteder.
 author: boycezhu
+manager: annbe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727527"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411108"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurere lagerbuffere og lagerniveauer
 
 [!include [banner](includes/banner.md)]
 
 Dette emne forklarer, hvordan du kan konfigurere lagerbuffere og lagerniveauer, der bestemmer beskeder om lagertilgængelighed på Microsoft Dynamics 365 Commerce-websteder.
+
+## <a name="overview"></a>Overblik
 
 Dynamics 365 Commerce Headquarters indeholder lagerdata og forskellige kanaler som f.eks. POS-programmer, e-handelsudstillingsvinduer og andre brugerdefinerede integrerede programmer, der flytter lagerbeholdningen rundt på en asynkron måde. Derfor er de tilgængelige lagerværdier, der er hentet via siden disponibel lagerbeholdning i Commerce Headquarters, via POS-brugergrænsefladen (UI) og via e-Commerce-lagertilgængeligheds-API'erne, ikke altid 100-procent nøjagtige i realtid.
 
@@ -144,6 +149,3 @@ Udfør følgende trin for at konfigurere svaret på produktilgængeligheds-API'e
 [Anvendelse af lagerindstillinger](inventory-settings.md)
 
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

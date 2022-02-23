@@ -2,28 +2,29 @@
 title: Oversigt over loyalitet
 description: I dette emne beskrives fordelskundefunktionerne i Dynamics 365 Commerce og de tilsvarende konfigurationstrin, der kan hjælpe detailhandlere i gang med deres fordelskundeprogram.
 author: scott-tucker
+manager: AnnBe
 ms.date: 07/21/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
-ms.custom:
-- "16201"
-- intro-internal
+ms.search.scope: Core, Operations, Retail
+ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 57512bbd735e26ba31e00518ca8179f2d9b14bc4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 119046ee2b783e6a4b868fff2b1d7a1b59966e7b
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985156"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4411205"
 ---
 # <a name="loyalty-overview"></a>Oversigt over fordelskundeprogrammer
 
@@ -43,7 +44,7 @@ Du kan konfigurere fordelskundeprogrammet, så det inkluderer følgende indstill
 
 Du skal oprette flere komponenter for at aktivere funktionen for fordelskunder i Commerce. I følgende diagram illustreres fordelskundekomponenter, og hvordan de er relateret til hinanden.
 
-![Procesforløb for opsætning af kundefordel.](./media/loyaltyprocess.gif "Fordelskundekomponenter, og hvordan de er relateret til hinanden")
+![Procesforløb for opsætning af kundefordel](./media/loyaltyprocess.gif "Fordelskundekomponenter, og hvordan de er relateret til hinanden")
 
 ## <a name="loyalty-components"></a>Fordelskundekomponenter
 
@@ -80,17 +81,17 @@ I følgende tabel beskrives de processer, der skal køres, for at sende konfigur
 - Som en del af et fordelskundeprogram kan detailhandlere oprette optjenings- og indløsningsregler på forskellige niveauer for at adskille fra belønningerne for debitorer på andre niveauer. Detailhandlere kan også inkludere "tilhørsforhold" som en del af reglerne for optjening og indløsning, så bestemte kundegrupper kan være en del af eksisterende niveauer, men stadig blive belønnet forskelligt. Det fjerner behovet for at oprette flere niveauer.
     
     > [!NOTE]
-    > Der er yderligere optjeningsregler i et fordelskundeprogram. F.eks. hvis du opretter en regel, der belønner et medlem på gold-niveau med 10 point for hver amerikanske dollar, og du også opretter en regel for en kunde med "veteran" tilknytning, der belønner med 5 point for hver amerikanske dollar, vil en veteran, der er også medlem på gold-niveau, få 15 point for 1 dollar, fordi kunden opfylder betingelserne for begge linjer. Men hvis veterankunden ikke er medlem på gold-niveau, får vedkommende 5 point for hver dollar. For at afspejle ændringerne i kanalerne skal du køre jobbene **Udfør behandling af fordelskundeprogrammer** og **1050** (med oplysninger om fordelskundekort).
+    > Der er yderligere optjeningsregler i et fordelskundeprogram. F.eks. hvis du opretter en regel, der belønner et medlem på gold-niveau med 10 point for hver amerikanske dollar, og du også opretter en regel for en kunde med "veteran" tilknytning, der belønner med 5 point for hver amerikanske dollar, vil en veteran, der er også medlem på gold-niveau, få 15 point for 1 dollar, fordi kunden opfylder betingelserne for begge linjer. Men hvis veterankunden ikke er medlem på gold-niveau, får han 5 point for hver dollar. For at afspejle ændringerne i kanalerne skal du køre jobbene **Udfør behandling af fordelskundeprogrammer** og **1050** (med oplysninger om fordelskundekort).
     
-    ![Tilknytningsbaseret optjening.](./media/Affiliation-based-earning.png "Tilknytningsbaseret optjening")
+    ![Tilknytningsbaseret optjening](./media/Affiliation-based-earning.png "Tilknytningsbaseret optjening")
 
 - Detailhandlere har ofte særpriser for en bestemt gruppe af kunder, som de ikke ønsker, at fordelskundeprogrammer skal gælde for. Det kan f.eks. dreje sig om grossister eller medarbejdere, der får særpriser og ingen fordelskundepoint. "Tilknytninger" bruges ofte til at give særpriser til sådanne kundegrupper. For at begrænse visse grupper af kunders mulighed for at opnå fordelskundepoint kan forhandleren angive en eller flere tilknytninger under sektionen **Udeladte tilknytninger** i fordelskundeprogrammet. Så når eksisterende kunder, der tilhører udeladte tilknytninger, er fordelskundemedlemmer, kan de ikke optjene kundefordelspoint for deres indkøb. For at afspejle ændringerne i kanalerne skal du køre jobbene **Udfør behandling af fordelskundeprogrammer** og **1050** (med oplysninger om fordelskundekort).
 
-    ![Udeladte tilknytninger.](./media/Excluded-affiliations.png "Udeladte tilknytninger, som ikke kan optjene fordelskundepoint")
+    ![Udeladte tilknytninger](./media/Excluded-affiliations.png "Udeladte tilknytninger, som ikke kan optjene fordelskundepoint")
     
 - Med POS kan detailhandler en bruge fleksibiliteten til enten de fysiske fordelskundekort eller til at generere et entydigt fordelskundekortnummer automatisk. Hvis du vil aktivere den automatiske generering af fordelskundekort i butikkerne, skal du slå **Generer nummer til fordelskundekort** til i funktionalitetsprofilen, der er knyttet til butikken. Ved onlinekanaler kan detailhandlere bruge IssueLoyaltyCard-API'en til at udstede fordelskundekort til kunder. Detailhandlere kan enten angive et fordelskundekortnummer til denne API, som skal bruges til at generere fordelskundekortet, eller systemet bruger nummerserien for fordelskundekort i Commerce. Men hvis nummerserien findes ikke, og forhandleren ikke angiver et fordelskundekortnummer under kald af API'en, opstår der en fejl.
 
-    ![Generere fordelskundekort.](./media/Generate-loyalty-card.png "Automatisk generering af fordelskundekortnummer")
+    ![Generere fordelskundekort](./media/Generate-loyalty-card.png "Automatisk generering af fordelskundekortnummer")
 
 - Fordelskundepoint, der er optjent og indløst, kan nu gemmes for hver transaktion og salgsordre i forhold til salgslinjen, så det samme beløb, der kan refunderes eller tilbageføres ved hele eller delvise returneringer. Desuden kan callcenterbrugere, der kan se point på salgslinjeniveau, besvare spørgsmål fra kunder om, hvor mange point der er optjent eller indløst for hver linje. Før denne ændring blev optjente point altid genberegnet under returneringer, hvilket resulterede i et andet beløb end det oprindelige, hvis optjenings- eller indløsningsreglerne blev ændret, og desuden havde callcenterbrugerne ikke indsigt i pointopdelingen. Antal point kan ses under formularen **Korttransaktioner** for hvert fordelskundekort. For at aktivere denne funktion skal du aktivere konfigurationen **Bogfør fordelskundepoint pr. salgslinje** under **Delte parametre for Commerce** \> fanen **Generelt**.
 
@@ -101,33 +102,33 @@ I følgende tabel beskrives de processer, der skal køres, for at sende konfigur
 
 Detailhandlere kan desuden definere grænsen for maksimalt antal kundefordelspoint pr. fordelskundekort. Dette felt kan bruges til at reducere effekten af svindel med fordelskundeprogrammet. Når brugeren har nået det maksimale antal belønningspoint, kan vedkommende ikke få flere point. Forhandleren kan vælge at blokere sådanne kort, indtil de er undersøgt for potentiel svindel. Hvis forhandleren opdager svindel, kan denne spærre kundens fordelskundekort og angive en kunde som spærret. Det kan gøres ved at indstille egenskaben **Spær for tilmelding til fordelskundeprogram for kunden** til **Ja** under **Alle kunder** i **Commerce**-oversigtspanelet. Der kan ikke udstedes et fordelskundekort til spærrede kunder i nogen af kanalerne.
 
-   ![Fordelingspoint og maksimale bonuspoint.](./media/Vesting-and-maximum-reward-points.png "Definere fordelingspoint og maksimale belønningspoint")
+   ![Fordelingspoint og maksimale belønningspoint](./media/Vesting-and-maximum-reward-points.png "Definere fordelingspoint og maksimale belønningspoint")
 
 - Tilknytninger bruges til at give særpriser og rabatter, men der kan være nogle tilknytninger, som detailhandlerne ikke ønsker, at kunderne skal se. F.eks. vil en tilknytning med titlen "Kunde med stort købspotentiale" muligvis ikke falde i god jord hos nogle kunder. Der er desuden nogle tilknytninger, der ikke skal administreres i butikken, f.eks. medarbejdere, fordi du sikkert ikke vil have, at kassereren skal bestemme, hvem der er medarbejder og dermed give medarbejderbaserede rabatter. Detailhandlere kan nu vælge, hvilke tilknytninger der skal være skjult i kanalerne. Tilknytninger, der er markeret som **Skjul i kanaler**, kan ikke vises, tilføjes eller fjernes i POS. Dog vil priser og rabatter, der gælder for tilknytningen, stadig blive anvendt på produkterne.
 
-    ![Skjule tilhørsforhold.](./media/Hide-affiliations.png "Skjule tilknytninger i kanaler")
+    ![Skjule tilhørsforhold](./media/Hide-affiliations.png "Skjule tilknytninger i kanaler")
     
 - Callcenterbrugere kan nu nemmere søge efter en kunde ved hjælp af kundens fordelskundekortoplysninger og navigere til kundens fordelskundekort og siden over transaktioner udført med fordelskundekortet fra siden **Kundeservice**.
 
-    ![Kundeservice.](./media/Customer-service.png "Finde kundens fordelskundeoplysninger")
+    ![Kundeservice](./media/Customer-service.png "Finde kundens fordelskundeoplysninger")
     
 - Hvis en kunde mister et fordelskundekort, skal der oprettes et erstatningskort, og de eksisterende point skal overføres til det nye kort. Processen til udstedelse af erstatningskort er forenklet i denne version. Desuden kan kunder kan forære nogle eller alle deres fordelskundepoint til venner og familie. Ved overførsel af point oprettes der reguleringsposter for hvert fordelskundekort. Du kan få adgang til erstatningskortfunktioner og overførsel af saldo fra siden **Fordelskundekort**.
 
-    ![Erstatte og overføre point.](./media/Replace-and-transfer-points.png "Erstatte fordelskundekort eller overføre saldo")
+    ![Erstatte og overføre point](./media/Replace-and-transfer-points.png "Erstatte fordelskundekort eller overføre saldo")
     
 - Detailhandlere ønsker muligvis at udnytte effektiviteten ved en bestemt kanal til at tilmelde kunder til et fordelskundeprogram. Tilmeldingskilden til fordelskundekortene bliver nu gemt, så detailhandlere kan køre rapporter på disse data. Tilmeldingskilderne registreres automatisk for alle udstedte fordelskundekort fra MPOS/CPOS- eller e-handelskanaler. For de fordelskundekort, der er udstedt fra administrationsprogrammet, kan callcenterbrugeren vælge den ønskede kanal.
 - I tidligere udgaver kunne detailhandlerne bruge MPOS/CPOS til at indløse fordelskundepoint for kunder i en butik. Men da kundefordelssaldoen i disse udgaver vises i fordelskundepoint, kan kassereren ikke se den valutabeløbsværdi, der kan anvendes på den aktuelle transaktion. Kassereren skal omregne pointene til valuta, før der kan betales med fordelskundepoint. I den aktuelle version, kan kassereren, når linjerne er føjet til transaktionen, se det beløb, som fordelskundepointene kan dække for den aktuelle transaktion, hvilket gør det lettere at anvende alle eller nogle af fordelskundepointene på transaktionen. Kassereren kan desuden se de point, der udløber inden for næste 30 dage, så han eller hun kan anbefale mersalg eller krydssalg for at motivere kunden til at bruge de point, der udløber, på den pågældende transaktion.
 
-    ![Point, der er omfattet af fordelskundesaldoen.](./media/Points-covered-by-loyalty-balance.png "Vise saldo, der er omfattet af fordelskundepoint")
+    ![Point, der er omfattet af fordelskundesaldoen](./media/Points-covered-by-loyalty-balance.png "Vise saldo, der er omfattet af fordelskundepoint")
 
-    ![Point, der udløber.](./media/Expiring-points.png "Se point, der udløber")
+    ![Point, der udløber](./media/Expiring-points.png "Se point, der udløber")
 
 - Med version 8.1.3 har vi aktiveret indstillingen "Betal med fordelskundekort" i callcenterkanalen. For at aktivere denne indstilling skal du oprette en betalingsmiddeltype og knytte den til callcenteret. 
 
     > [!NOTE]
     > Da fordelskundebetalingerne er konfigureret som kortbetalinger, skal du vælge et kort fra siden **Opsætning af kort**. 
 
-    ![Opsætning af fordelskundekort.](./media/LoyaltyCardSetup.png "Opsætning af fordelskundekort")
+    ![Opsætning af fordelskundekort](./media/LoyaltyCardSetup.png "Opsætning af fordelskundekort")
 
     Når dette er oprettet, kan kunder indløse deres fordelskundepoint i callcenteret. Derudover forbedrer vi brugeroplevelsen yderligere, så "Beløb, der er omfattet af fordelskundepoint" vises, og så callcenterets brugere ikke behøver at gå til en anden skærm for at få vist fordelssaldoen.
 
@@ -144,12 +145,9 @@ Detailhandlere kan desuden definere grænsen for maksimalt antal kundefordelspoi
     > I øjeblikket tvinger systemet brugerne til at konfigurere en nummerserie for "andre aktivitetstyper", men dette er ikke et nødvendigt trin i fremtidige versioner. Hvis du vil konfigurere en nummerserie, skal du gå til **Delte parametre for Commerce** \> **Nummerserier** og vælge en nummerserie for **Id for anden aktivitetstype for fordelskunde**.
 
 - For at give god kundeservice og effektivt løse kundens spørgsmål er det vigtigt for kasserere skal have adgang til at fuldføre kundens profil. Med 10.0 udgivelsen kan kasserere se historikdetaljer for fordelskunder sammen med oplysninger om det tilknyttede fordelskundeprogram og niveauer på POS.
-- Gratis eller nedsat levering er en af de faktorer, der motiverer kunderne stærkt til at købe online. For at gøre det muligt for detailforretninger at køre leveringskampagner med 10.0 udgivelsen har vi introduceret en ny type kampagne, "Leveringstærskelrabat", hvor forhandleren kan definere tærskelværdier, som, når de opfyldes, vil kvalificere kunderne til billig eller gratis forsendelse. For eksempel Brug 35 USD og få gratis 'Levering på to dage' eller gratis 'Levering på to dage' for alle fordelskunder. Denne funktion udnytter den nye egenskab Avancerede automatiske gebyrer. Se [dokumentationen om avancerede automatiske gebyrer](/dynamics365/unified-operations/retail/omni-auto-charges). Disse avancerede automatiske gebyrer skal aktiveres, for at leveringskampagner kan bruges. De kan aktiveres fra fanen **Kundeordrer** på siden **Commerce-parametre**, hvor du skal aktivere konfigurationen "Brug avancerede automatiske gebyrer". Fordi en forhandler kan oprette flere gebyrtyper, f.eks. håndtering eller installation, skal forhandleren desuden angive, hvilket gebyr der betragtes som forsendelsesgebyrer. Forsendelsesrabatterne anvendes kun på forsendelsesgebyrerne. For at angive gebyrer som forsendelsesgebyr skal du gå til formularen **Gebyrkoder**, der findes under **Retail og Commerce** \> **Retail og Commerce IT** \> **Konfiguration af kanal** \> **Gebyrer** og aktivere afkrydsningsfeltet "Forsendelsesgebyr" for de ønskede gebyrer. Nu kan du navigere til formularen **Leveringstærskelrabat** og konfigurere rabatten.
+- Gratis eller nedsat levering er en af de faktorer, der motiverer kunderne stærkt til at købe online. For at gøre det muligt for detailforretninger at køre leveringskampagner med 10.0 udgivelsen har vi introduceret en ny type kampagne, "Leveringstærskelrabat", hvor forhandleren kan definere tærskelværdier, som, når de opfyldes, vil kvalificere kunderne til billig eller gratis forsendelse. For eksempel Brug 35 USD og få gratis 'Levering på to dage' eller gratis 'Levering på to dage' for alle fordelskunder. Denne funktion udnytter den nye egenskab Avancerede automatiske gebyrer. Se [dokumentationen om avancerede automatiske gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Disse avancerede automatiske gebyrer skal aktiveres, for at leveringskampagner kan bruges. De kan aktiveres fra fanen **Kundeordrer** på siden **Commerce-parametre**, hvor du skal aktivere konfigurationen "Brug avancerede automatiske gebyrer". Fordi en forhandler kan oprette flere gebyrtyper, f.eks. håndtering eller installation, skal forhandleren desuden angive, hvilket gebyr der betragtes som forsendelsesgebyrer. Forsendelsesrabatterne anvendes kun på forsendelsesgebyrerne. For at angive gebyrer som forsendelsesgebyr skal du gå til formularen **Gebyrkoder**, der findes under **Retail og Commerce** \> **Retail og Commerce IT** \> **Konfiguration af kanal** \> **Gebyrer** og aktivere afkrydsningsfeltet "Forsendelsesgebyr" for de ønskede gebyrer. Nu kan du navigere til formularen **Leveringstærskelrabat** og konfigurere rabatten.
 
     Som ved produktrabatter bruger denne rabat alle de eksisterende standardrabatmuligheder, f.eks. giver forhandleren mulighed for at begrænse disse rabatter med kuponer, så kun kunder med kuponer, kan få disse rabatter. Desuden udnytter disse rabatter Prisgrupper-funktionen til at fastslå berettigelsen af disse rabatter. Forhandleren kan f.eks. vælge kun at køre disse kampagner i onlinekanalerne og/eller på tværs af kanaler til bestemte kundegrupper, f.eks. fordelskunder. Når ordrelinjerne med den angivne leveringstilstand overholder den definerede grænse, bliver leveringsrabatten anvendes og reducerer forsendelsesgebyret baseret på den angivne rabatopsætning. 
 
     > [!NOTE]
     > I modsætning til andre periodiske rabatter som antal, enkel, mix og match og tærskelrabatter, opretter leveringsrabatten ikke rabatlinjer, men redigerer snarere forsendelsesgebyret direkte og knytter navnet på rabatten til gebyrbeskrivelsen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

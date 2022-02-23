@@ -1,32 +1,33 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (20. august 2020)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 20. august 2020.
-author: andreabichsel
-ms.date: 08/20/2020
+author: Darinkramer
+manager: AnnBe
+ms.date: 8/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a97997212a090f141c7280f7e48fd116a1f31481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 46dadb8834195c5dd06cd1c56d79324def7d9f2d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062155"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527475"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (20. august 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Human Resources. Ændringerne gælder for build nummer 8.1.3478. Tallene i parenteser i nogle overskrifter henviser til Lifecycle Services (LCS)-supportnumre til reference.
 
@@ -64,15 +65,15 @@ En DMF-enhed er nu tilgængelig for periodiseringssuspenderinger.
 
 Du kan nu gøre felter obligatoriske ved hjælp af tilpasningsfunktionerne for personale. Denne funktion kræver **Gemte visninger**. Du kan finde flere oplysninger om gemte visninger i:
 
-- [Gemte visninger – generel tilgængelighed](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365 2020-frigivelsesplan bølge 2
-- [Opbygge formularer, der fuldt ud anvender gemte visninger](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
+- [Gemte visninger – generel tilgængelighed](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365 2020-frigivelsesplan bølge 2
+- [Opbygge formularer, der fuldt ud anvender gemte visninger](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
 
 ### <a name="human-resources-application-in-teams"></a>Human Resources-app i Teams
 
 Medarbejderne kan få vist og anmode om fri fra arbejde i Microsoft Teams. De kan interagere med en bot for at oprette orlovsanmodninger. Du kan finde flere oplysninger i:
 
-- [Løsning til medarbejderes orlov og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020-frigivelsesplan bølge 1
-- [Human Resources-app i Teams](./hr-admin-teams-leave-app.md)
+- [Løsning til medarbejderes orlov og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020-frigivelsesplan bølge 1
+- [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -82,9 +83,9 @@ Medarbejderne kan få vist og anmode om fri fra arbejde i Microsoft Teams. De ka
  
 - **Fraværskalender for leder**: Ledere kan se godkendte og afventende fravær for deres direkte underordnede i en kalendervisning. Denne visning giver en nem forståelse af, hvornår teammedlemmer ikke er på arbejde.
 
-### <a name="checklist-entities-included-in-dataverse"></a>Kontrollisteenheder inkluderet i Dataverse
+### <a name="checklist-entities-included-in-common-data-service"></a>Kontrollisteenheder inkluderet i Common Data Service
 
-Der vil snart være tilgængelige kontrollisteenheder til processer til onboarding, offboarding, overførsler og forretning i Dataverse.
+Der vil snart være tilgængelige kontrollisteenheder til processer til onboarding, offboarding, overførsler og forretning i Common Data Service.
 
 ## <a name="known-issues"></a>Kendte problemer
 
@@ -116,9 +117,6 @@ Vi har for nylig fundet to problemer vedrørende **BenefitsPlanEmployee**-enhede
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

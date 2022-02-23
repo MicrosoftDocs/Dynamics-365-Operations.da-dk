@@ -2,27 +2,28 @@
 title: Indsigt i debitorbetaling (prøveversion)
 description: I dette emne beskrives muligheden for indsigt i betalinger, der hjælper med at forbedre forståelsen af individuelle kunders typiske betalingsmetoder. Funktionen kan hjælpe dig med at identificere de omstændigheder, der berettiger start af indsamlingsprocesser tidligere end det, du måtte have udført.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 11/06/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "14151"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: d359e3ceef0fb7213d52aeb265da2e75120ae223
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983996"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644627"
 ---
 # <a name="customer-payment-insights-preview"></a>Indsigt i debitorbetaling (prøveversion)
 
@@ -49,11 +50,11 @@ For hver åben faktura forudsiger Customer payment insights (prøveversion) tre 
 
 Customer payment insights (prøveversion) giver desuden en samlet visning over forventede betalingsbeløb, der kan hjælpe organisationer med at forstå det samlede betalingsbeløb , der kan forventes fra en kunde i en af følgende tre grupper, Til tiden, Sent og Meget sent.
 
-[![Samlet visning af betalingsforudsigelser.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Samlet visning af betalings forudsigelser](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Hver faktura tildeles desuden en sandsynlighed for, at der sker betaling til tiden. Hvis sandsynligheden for betaling til tiden er mindre end 50 %, markeres fakturaerne med en rød cirkel for at angive, at disse fakturaer muligvis kræver opmærksomhed i relation til opkrævning. 
 
-[![Liste over sandsynlighed for betaling.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Liste over sandsynlighed for betaling](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Indsigt i debitorbetaling (Forhåndsvisning) indeholder også kontekstafhængige oplysninger, der forklarer forudsigelsen, f.eks. de primære faktorer, der har påvirket forudsigelserne, den aktuelle tilstand for erhvervsinteraktioner med kunden, og oplysninger om tidligere debitorbetalinger. I mange virksomheder er opkrævningsprocessen blevet en reaktivt aktivitet; opkrævningsprocessen starter ikke, før fakturaerne forfalder. 
 
@@ -69,9 +70,6 @@ Send email til [Customer payment insights (prøveversion)](mailto:fiap@microsoft
 
 ## <a name="privacy-notice"></a>Privatlivserklæring
 
-Prøveversioner (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance og driftstjeneste, (2) de er ikke inkluderet i serviceniveauaftalen for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
+Forhåndsvisning (1) kan eksempler (1) anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,25 +2,28 @@
 title: Rykkere i Debitor
 description: Oplysninger om rykkere for debitorer administreres i en central visning, siden Rykkere i Microsoft Dynamics 365 Finance. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier eller fra siden Debitorer.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b143ebead89804af57e7d2dbfa6f7d366c1ae664573776d78bff44763ddeb819
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723913"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441433"
 ---
 # <a name="collections-in-accounts-receivable"></a>Rykkere i Debitor
 
@@ -99,7 +102,8 @@ Afskrivningsposteringen oprettes i posteringsvalutaen.
 
 Yderligere oplysninger finder du under [Oprette en afskrivningskladde for en debitor](tasks/create-write-off-journal-customer.md).
 
-## <a name="process-not-sufficient-funds-nsf-payments"></a>Behandle NSF-betalinger (Non-sufficient Funds – USA)  
+<a name="process-not-sufficient-funds-nsf-payments"></a>Behandle NSF-betalinger (Non-sufficient Funds – USA)  
+--------------------------------------------
 
 Du kan behandle NSF-betalinger ved at klikke på NFS-betaling på siden Rykkere. Når du klikker på denne knap, annulleres betalingen. Hvis der gælder et NSF-gebyr for debitoren, oprettes der en gebyrpostering i en betalingskladde. Gebyrbeløbet baseres på indstillingerne for automatiske gebyrer. De automatiske gebyrer, der gælder for NSF-betalinger, specificeres med udgangspunkt i den gebyrgruppe, der er valgt på siden Bankkonti for den pågældende bankkonto.
 
@@ -107,6 +111,3 @@ Du kan behandle NSF-betalinger ved at klikke på NFS-betaling på siden Rykkere.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,32 +1,33 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (7. februar 2020)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 7. februar 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70acaaf2218c8b5c0239b968a29a927ac23080f0
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 42fac6e34db10efb047b4cb0fc3c7752330e5bcf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060808"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526828"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (7. februar 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I denne artikel beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Human Resources. Ændringerne gælder for build nummer 8.1.2835. Tallene i parenteser i nogle overskrifter henviser til supportnumre i Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -54,11 +55,11 @@ Følgende prøvefunktioner er tilgængelige den 3. februar 2020:
 
 ### <a name="platform-update-32"></a>Platform update 32 
 
-Platform update 32 vil snart være tilgængelig. [Få flere oplysninger om Platform update 32 her](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Platform update 32 vil snart være tilgængelig. [Få flere oplysninger om Platform update 32 her](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
-### <a name="updated-dataverse-solution"></a>Opdateret Dataverse-løsning
+### <a name="updated-common-data-service-solution"></a>Opdateret Common Data Service-løsning
 
-Der vil snart være en ny Dataverse-løsning med følgende ændringer:
+Der vil snart være en ny Common Data Service-løsning med følgende ændringer:
 
 | Beskrivelse | Forskydning |
 | ----------------------------------------- | --- |
@@ -69,13 +70,11 @@ Der vil snart være en ny Dataverse-løsning med følgende ændringer:
 | Nye konfigurationsobjekter til variabel kompensation | **Type af variabel kompensationsplan**</br>**Kompensation - variabel struktur**</br>**Fordelingsregler**</br>**Niveau i variabel kompensationsplan** |
 | Nyt objekt **Arbejderkalender for ansættelse** | **Arbejdskalenderobjekt** er tilføjet |
 | Nyt objekt **Lønoplysninger for stillinger** | **Lønoplysninger for stillinger** er tilføjet |
-| Nyt objekt **Titel** | **Titel** er tilføjet. Den nye enhed **Titel** vil blive medtaget i synkroniseringsprocessen mellem Human Resources og Dataverse. Der henvises ikke til den først i enhederne **Stilling** eller **Job**. |
+| Nyt objekt **Titel** | **Titel** er tilføjet. Den nye enhed **Titel** vil blive medtaget i synkroniseringsprocessen mellem Human Resources og Common Data Service. Der henvises ikke til den først i enhederne **Stilling** eller **Job**. |
 
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

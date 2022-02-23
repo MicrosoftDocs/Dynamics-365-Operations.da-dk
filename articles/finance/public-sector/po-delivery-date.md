@@ -2,23 +2,26 @@
 title: Beregne leveringsdatoen for en linje baseret på gennemløbstiden
 description: Dette emne indeholder en beskrivelse af, hvordan du kan beregne en leveringsdato for en linje på baggrund af leverandørens gennemløbstid og din organisations kalender med arbejdsdage.
 author: velofog
+manager: AnnBe
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f78909f926b8b7f2996a1cd137c3039bca14d579e829df9646fd1150b076f328
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22c62969a56f42b78a509b5477cfa595706ae23a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754121"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407692"
 ---
 # <a name="calculate-the-delivery-date-for-a-line-based-on-the-lead-time"></a>Beregne leveringsdatoen for en linje baseret på gennemløbstiden
 
@@ -99,6 +102,3 @@ De leveringstidsoplysninger, som du angiver for en linje på siden **Købsaftale
 
 > [!NOTE]
 > I forbindelse med frigivne varer kan du vælge en leveringstid for købet. Købets leveringstiden beregner automatisk leveringsdatoen, når der oprettes en indkøbsordre. Leveringsdatoen genberegnes ikke, hvis leveringstiden på indkøbsordrelinjen er 0 (nul).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

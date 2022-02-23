@@ -2,13 +2,16 @@
 title: Framelde personlige anbefalinger
 description: I dette emne forklares det, hvordan du kan lade kunderne framelde sig personlige anbefalinger i Microsoft Dynamics 365 Commerce.
 author: bebeale
+manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772931"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411052"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>Fravælge tilpassede anbefalinger
+# <a name="opt-out-of-personalized-recommendations"></a>Framelde personlige anbefalinger
 
 [!include [banner](includes/banner.md)]
 
 I dette emne forklares det, hvordan du kan lade kunderne framelde sig personlige anbefalinger i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Under oprettelsen af en konto konfigureres nye kunder automatisk til at modtage personlige anbefalinger. Dynamics 365 Commerce tilbyder dog forskellige måder for detailhandlere at lade brugerne framelde sig modtagelsen af disse anbefalinger og begrænse behandlingen af deres personlige data. Godkendte brugere, der fravælger personligt tilpassede anbefalinger, vil straks ophøre med at få vist personligt tilpassede lister. Desuden fjernes alle personlige data, der er indsamlet til personlig tilpasning, fra modellerne for tilpassede anbefalinger.
 
@@ -44,11 +49,11 @@ I Kontostyring i Commerce-administrationen kan detailhandlere vælge framelding 
 1. Søg efter **Alle kunder** fra startsiden i administrationen.
 1. Søg efter og vælg en kunde, og vælg derefter oversigtspanelet **Detail**.
 
-    ![Oversigtspanelet Detail.](./media/Disablepersonalizationpart1.png)
+    ![Oversigtspanelet Detail](./media/Disablepersonalizationpart1.png)
 
 1. Under **Beskyttelse af personlige oplysninger** skal du angive indstillingen **Deaktiver tilpasning** til **Ja**.
 
-    ![Indstillinger for beskyttelse af personlige oplysninger.](./media/Disablepersonalizationpart2.png)
+    ![Indstillinger for beskyttelse af personlige oplysninger](./media/Disablepersonalizationpart2.png)
 
 1. Vælg **Gem**, og luk siden.
 
@@ -99,6 +104,3 @@ Følgende eksempel viser, hvordan en forhandler kan udføre denne opgave.
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

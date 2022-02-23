@@ -1,10 +1,12 @@
 ---
 title: Oprette vedligeholdelsesbudgetter
 description: Dette emne forklarer, hvordan du opretter et vedligeholdelsesbudget i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a375eb7c208479615b2d5e7cf78168ffd7ac8b16c52c85a7ef5a41aa69c947d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 602a00060c1e56285d9954981d019bececaf90fd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776938"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020983"
 ---
 # <a name="create-maintenance-budgets"></a>Oprette vedligeholdelsesbudgetter
 
@@ -50,12 +52,9 @@ Vedligeholdelsesbudgetter er baseret på de omkostningstyper, der bruges i aktiv
     > [!NOTE]
     > Når du har godkendt et vedligeholdelsesbudget, kan du ikke genberegne eller regulere de relaterede linjer på siden **Vedligeholdelsesbudgetlinjer**, medmindre du først har fjernet godkendelsen. Hvis du vil fjerne godkendelsen af et vedligeholdelsesbudget, skal du vælge det på siden **Vedligeholdelsesbudgetter** og derefter vælge **Godkend**. Vælg derefter **OK** i dialogboksen **Godkend budget**.
 
-![Vedligeholdelsesbudgetter.](media/01-maintenance-budgets.png)
+![Vedligeholdelsesbudgetter](media/01-maintenance-budgets.png)
 
 Du kan også oprette et nyt vedligeholdelsesbudget ved at kopiere et eksisterende budget. Vælg det budget, du vil kopiere, på siden **Vedligeholdelsesbudgetter**, og vælg derefter **Kopiér**. Denne fremgangsmåde er nyttig, hvis du f.eks. har oprettet et budget for én måned og vil kopiere det til andre måneder.
 
 > [!NOTE]
 > Vedligeholdelsesbudgettet beregner kun budgetomkostninger baseret på vedligeholdelsestidsplanslinjer. Hvis du vil beregne faktiske omkostninger for den samme periode, kan du udføre denne beregning på siden **Omkostningsstyring for aktiv**. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,25 +1,29 @@
 ---
 title: Oversigt over servicestyring
 description: Du kan bruge Servicestyring til at udarbejde serviceaftaler og serviceabonnementer, håndtere serviceordrer og kundeforespørgsler samt administrere og analysere leveringen af tjenester til kunder.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9b8444c635fe08a224314d1b76de5ac8d9defbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 451aeebd46d60251eed940016486509c4aa3f458
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982996"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424318"
 ---
 # <a name="service-management-overview"></a>Oversigt over servicestyring
 
@@ -46,7 +50,7 @@ Brug rapporteringsværktøjerne til at overvåge serviceordremargener og abonnem
 
 I følgende diagram illustreres forretningsprocesserne på højt niveau for **Servicestyring** og viser, hvor serviceprocesserne integreres med andre moduler.
 
-[![Forretningsprocesdiagram for Servicestyring.](./media/sm_home_page.gif)](./media/sm_home_page.gif)
+[![Forretningsprocesdiagram for Servicestyring](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## <a name="service-management-at-a-glance"></a>Hurtigt overblik over servicestyring
 
@@ -63,10 +67,7 @@ I følgende diagram illustreres forretningsprocesserne på højt niveau for **Se
 Servicestyring kan integreres med følgende moduler:
 
   - [Oversigt over salg og marketing](../sales-marketing/overview-sales-marketing.md)
-  - [Personale](/dynamics365/unified-operations/talent/index)
+  - [Personale](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
 
   
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

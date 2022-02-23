@@ -2,25 +2,28 @@
 title: Remburser og importinkassoer
 description: Denne artikel indeholder generelle oplysninger om remburser og importinkassoer. Begge typer bankdokumenter bruges ofte ved køb og salg af varer på tværs af internationale grænser.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 18321
 ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47309612ea7cbd0bb1047bec9c18f976e7063ce95f1708f27beae540cc3194ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c31b8af25ea231f23ac5f4968760257b3f5894f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751320"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441575"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Remburser og importinkassoer
 
@@ -28,7 +31,8 @@ ms.locfileid: "6751320"
 
 Denne artikel indeholder generelle oplysninger om remburser og importinkassoer. Begge typer bankdokumenter bruges ofte ved køb og salg af varer på tværs af internationale grænser.
 
-## <a name="letters-of-credit"></a>Remburser
+<a name="letters-of-credit"></a>Remburser
+-----------------
 
 Remburser bruges i internationale transaktioner og er med til at garantere sikre betalinger. En remburs er en aftale, der udfærdiges af en bank, hvor banken accepterer at garantere betaling på vegne af en køber forudsat, at vilkårene i aftalen mellem køberen og sælgeren overholdes. En remburs også kaldes et akkreditiv.
 
@@ -50,6 +54,3 @@ En importinkasso er med til at garantere, at sælger betales, når køberen afhe
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

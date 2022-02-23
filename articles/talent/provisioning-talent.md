@@ -105,6 +105,3 @@ Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø so
 ## <a name="grant-access-to-the-environment"></a>Give adgang til miljøet
 
 Som standard har den globale administrator, der oprettede miljøet, adgang til det. Men andre programbrugere skal eksplicit tildeles adgang. For at give adgang skal du tilføje brugere og tildele dem de relevante roller i Personale-miljøet. Den globale administrator, der installerede Talent, skal også starte både Attract og Onboard for at fuldføre initialiseringen og aktivere adgang for andre lejerbrugere.  Før dette er gjort, kan andre brugere ikke få adgang til Attract og Onboard, men får adgangsfejl. Du kan finde flere oplysninger under [Opret nye brugere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tildel sikkerhedsroller til brugere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

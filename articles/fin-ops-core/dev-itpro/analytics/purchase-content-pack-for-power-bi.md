@@ -1,10 +1,12 @@
 ---
 title: Power BI-indhold til købsforbrugsanalyse
-description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til Købsforbrugsanalyse.
+description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til Købsforbrugsanalyse. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet.
 author: FrankDahl
+manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PurchaseSpendAnalysisPowerBI
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a40d4f39a7119def9ed0393d4ced2be1f7e801a5c1c3f984b002e5224299915a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716106"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680608"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Power BI-indhold til købsforbrugsanalyse
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der skal medtages i **Købsforbrugsanalyse** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
+I dette emne beskrives, hvad der skal medtages i **Microsoft Power BI-indhold til Købsforbrugsanalyse**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
@@ -152,6 +154,3 @@ Følgende nøgledimensioner i indholdet bruges som filtre til at skabe udsnit af
 | Datoer                  | Datoer, årsforskydning                                    |
 
 Som standard viser indholdet data for det indeværende kalenderår. Du kan dog ændre datofilteret i rapportens filterafsnit. Du kan også ændre firmafilteret.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

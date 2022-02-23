@@ -1,35 +1,38 @@
 ---
-title: Konfigurere livshændelsestyper
-description: Microsoft Dynamics 365 Human Resources bruger livshændelsestyper til at definere hændelser med henblik på at opdatere tilmeldinger til medarbejderfrynsegoder.
-author: twheeloc
-ms.date: 08/24/2021
+title: Konfigurere livsbegivenhedstyper
+description: Microsoft Dynamics 365 Human Resources bruger livshændelsestyper til at definere hændelser, hvor tilmelding til medarbejderfrynsegoder skal opdateres.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aab35d40af43caff7010998ddce51350584228a1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071493"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417792"
 ---
-# <a name="configure-life-event-types"></a>Konfigurere livshændelsestyper
+# <a name="configure-life-event-types"></a>Konfigurere livsbegivenhedstyper
 
+Microsoft Dynamics 365 Human Resources bruger livshændelsestyper til at definere hændelser, hvor tilmelding til medarbejderfrynsegoder skal opdateres. Det kan f.eks. være at blive gift eller få børn. Hvert livshændelsestype-id kan kun knyttes til én livshændelsestype. Hvis du f.eks. opretter et livshændelses-id, der kaldes Adresseændring, som er knyttet til livshændelsestypen Medarbejderens adresseændring, kan du ikke oprette et nyt id med navnet Medarbejderens adresseændring og knytte det til en livshændelsen Medarbejderens adresseændring. 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Når du har oprettet livshændelsestyper, skal du knytte dem til plantyper. Yderligere oplysninger finder du i [Oprette plantyper](hr-benefits-setup-plan-types.md).
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dynamics 365 Human Resources bruger **livshændelsestyper**, når det er relevant at opdatere tilmelding til medarbejderfrynsegoder, f.eks. i forbindelse med bryllup eller barsel. Hvert livshændelsestype-id kan kun knyttes til én livshændelsestype. Hvis du f.eks. opretter et **livshændelses-id**, der kaldes **Adresseændring**, som er knyttet til livshændelsestypen **Medarbejderens adresseændring**, kan du ikke oprette et nyt id med navnet **Medarbejderens adresseændring** og knytte det til livshændelsen **Medarbejderens adresseændring**. Hvis en levetidshændelsestype ikke er knyttet til en plantype, udløser levetidshændelsestypen ikke en levetidshændelse. Yderligere oplysninger finder du i [Oprette plantyper](hr-benefits-setup-plan-types.md).
+   > [!NOTE]
+   > Når du opretter en livshændelse, skal du knytte den til en plantype. Yderligere oplysninger finder du i [Oprette plantyper](hr-benefits-setup-life-event-types.md).
 
 ## <a name="create-a-life-event-type"></a>Oprette en livshændelsestype
 
@@ -49,7 +52,7 @@ Dynamics 365 Human Resources bruger **livshændelsestyper**, når det er relevan
 
 ## <a name="view-attached-plans"></a>Få vist tilknyttede planer
 
-Du kan få vist en liste over planer, der er knyttet til den valgte **Livshændelsestype**. Livshændelser knyttes til en plantype, og plantyper knyttes til en plan.
+Du kan få vist en liste over planer, der er knyttet til den valgte livshændelsestype. Livshændelser knyttes til en plantype, og plantyper knyttes til en plan. 
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Livshændelsestyper** under **Konfiguration**.
 
@@ -63,29 +66,25 @@ Du kan vælge mellem følgende livshændelser, når du opretter en livshændelse
 
 | Livshændelse | Adresse | Udløser |
 | --- | --- | --- |
-| **Ændring af ægteskabelig status** | **Arbejder > Profil > > Personlige oplysninger > Ægteskabelig status**| Ændring af ægteskabelig status |
-| **Ændring af ansættelsesstatus** |**Arbejder > Ansættelse > siden Ansættelseshistorik** | Hvis der oprettes en ny ansættelsesdetalje med en anden ansættelsesstatus for en arbejder med en eksisterende ansættelsesdetalje, udløses en levetidshændelse.  Opdatering af en eksisterende ansættelsesdetalje med en anden ansættelsesstatus vil også udløse en levetidshændelse.  |
-| **Ændring af medarbejders adresse** |**Arbejder > Profil > Adresser**</li><li>**Arbejder > Personlige oplysninger > Personlige kontakter > Adresse**</li></ul> | Skift adresse. Adressen skal være **Primær** for at udløse en livshændelse. |
-| **Ændring af afhængig** |<br><ul><li>**Arbejder > Profil > Personlige oplysninger > Personlige kontakter**/li><li>**Medarbejderselvbetjening**</li></ul> | Tilføj en personlig kontakt, hvor du angiver kontakten som afhængig og definerer **Gyldig fra**. Opdater afhængige oplysninger for **Gyldig til** for en personlig kontaktperson. Den personlige kontaktrelation skal være barn, ægtefælle, samlever eller tidligere ægtefælle.  |
-| **Fødsel eller adoption (afhængig)** |<br><ul><li>**Arbejder > Profil > Personlige oplysninger > Personlige kontakter**</li><li>**Medarbejderselvbetjening > Rediger personlige oplysninger > Personlige kontakter**</li></ul>| **Fødselsdato** eller **Adoptionsdato** tilføjes eller opdateres. Barnets **Fødselsdato** er påkrævet. |
+| **Ændring af ægteskabelig status** | Arbejder > Profil > > Personlige oplysninger > Ægteskabelig status| Ændring af ægteskabelig status |
+| **Ændring af ansættelsesstatus** | <ul><li>Arbejder > Ansættelse</li><li>Side med ansættelseshistorik</li></ul> | Ændring af ansættelsesstatus |
+| **Ændring af medarbejders adresse** | <ul><li>Arbejder > Profil > Adresser </li><li>Arbejder > Personlige oplysninger > Personlige kontakter > Adresse</li></ul> Tilføjet, redigeret eller slettet adresse |
+| **Ændring af afhængig** | <ul><li>Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Tilføj eller slet en afhængig</li><li>Medarbejderselvbetjening</li></ul> | Tilføjet eller slettet afhængig. Den personlige kontaktrelation skal være barn, ægtefælle, samlever eller tidligere ægtefælle. Hvis du opdaterer datoen for **Gyldig fra**, udløses der en livshændelse. Hvis du ikke opdaterer denne dato, udløser der ingen livshændelse. |
+| **Fødsel eller adoption (afhængig)** | <ul><li>Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig</li><li>Medarbejderselvbetjening</li></ul> | Feltet **Adoptionsdato** er udfyldt. Barnets fødselsdato er påkrævet. |
 | **Tab af dækning (ægtefælle/samlever)** | Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Tab af dækning | **Tab af dækning** valgt for en personlig kontakt sammen med **Ikrafttrædelsesdato** |
-| Ændring i ansættelse for samlever | **Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Ansat** | Oprette en personlig kontakt og angive indstillingen **Ansat** til **Ja**. Opdatering af en personlig kontakt og ændring af **Ansat**.  |
-| **Orlov (ægtefælle/samlever)** | **Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Orlov** | Personlig kontaktperson oprettes, og **Ikrafttrædelsesdato for orlov** defineres. **Orlov** for personlig kontakt opdateres. **Ikrafttrædelsesdato for orlov** for personlig kontakt opdateres.  |
-| **Ændring i dækning (stilling)** |<br><ul><li>**Arbejder > Stillingstildeling > Tildeling af arbejderstillinger**</li><li>**Stillinger > Stillinger**</li></ul>| Skift til stillingen i posterne for arbejderens tildeling af stilling. Skift arbejdertildelingen i stillingen. |
-| **Ændring i dækning (løn)** |<br><ul><li>**Arbejder > Kompensation > Fast plan**</li><li>**Arbejder > Personlige oplysninger > Årlig løn som frynsegoder**</li></ul>| Hvis **Administration af frynsegoder > Delte parametre for personale > Frynsegoder > Årlig løn som frynsegoder** ikke er aktiveret, kan du opdatere **Arbejder > Kompensation > Fast plan** for at oprette en livshændelse. Hvis **Administration af frynsegoder > Delte parametre for personale > Frynsegoder > Årlig løn som frynsegoder** er aktiveret, vil opdatering af **Arbejder > Personlige oplysninger > Årlig løn som frynsegoder** oprette en livshændelse. |
-| **Sygeforsikring (medarbejder/afhængig)** | **Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Ikrafttrædelsesdato for sygeforsikring** | Tilføjelse eller opdatering af **Ikrafttrædelsesdato for sygeforsikring** for en personlig kontakt opretter denne livshændelse. |
-| **Støtte ifølge dommerkendelse** | **Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Afhængigt > Støtte ifølge dommerkendelse** (QMSCO/QDRO) og ikrafttrædelsesdatoer | Når der oprettes en personlig kontakt, oprettes der en livshændelse, hvis **Støtte ifølge dommerkendelse** er **Ja**. Opdatering **Støtte ifølge dommerkendelse** eller **Udløbsdato ifølge dommerkendelse** vil også udløse en livshændelse. |
-| **Medarbejders død** | **Arbejder > Profil > > Personlige oplysninger > Dato for medarbejders død** | Der angives eller opdateres en **Dato for medarbejders død**. |
-| **EOI (forsikringsbar)** | **Arbejder > Arbejder > Versioner > Ansættelseshistorik > Håndtering af datoer > Frynsegodedetaljer** | **EOI (forsikringsbar)** er angivet til **Ja**. **Bekræftelsesdato for EOI (forsikringsbar)** er defineret. |
-| **Modtager** | **Arbejder > Profil > Personlige oplysninger > Personlige kontakter** | Der tilføjes en personlig kontakt, og felterne **Modtager** og **Ikrafttrædelsesdato** udfyldes. Den personlige kontakt skal være af typen **Barn**, **Ægtefælle**, **Samlever**, **Søskende**, **Familiekontakt**, **Anden kontakt** eller **Forælder**, |
-| **Medarbejders sygeforsikring** | **Arbejder > Arbejder > Versioner > Ansættelseshistorik > Håndtering af datoer > Frynsegodedetaljer** | **Berettigelse til sygeforsikring** er angivet til **Ja**. **Dato for berettigelse til sygeforsikring** er ændret. |
-| **Fødselsdag** | **Administration af frynsegoder > Behandling af ændring af livshændelser** | Disse livshændelser oprettes fra **Behandling af ændring af livshændelser**. Processen analyserer den valgte periode og juridiske enhed, og finder de tilknyttede arbejdere. Den beregner deres sidste fødselsdag og opretter en livshændelse for fødselsdage, hvis der ikke allerede er oprettet en. |
-| **Ændring af arbejders berettigelse (ikke specifik for USA)** |<br><ul><li>**Arbejder > Ansættelse**</li><li>**Arbejder > Arbejder > Versioner > Ansættelseshistorik**</li></ul>| Opretter en livshændelse, når:<br><ul><li>Når du opretter en ny ansættelse, og der er en tidligere ansættelse, ændres arbejdertypen.</li><li>Når du opretter en ny ansættelsesdetalje, og der er en tidligere ansættelsesdetalje, ændres ansættelsestypen eller -kategorien.</li><li>Opdatering af en ansættelsespost og en anden arbejdertype defineres.</li><li>Opdatering af en ansættelsedetaljepost og en anden ansættelsestype eller -kategori angives.</li></ul> |
-| **Tilsidesættelse af ny berettigelse (ikke specifik for USA)** | **Udvidet Human Resources > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler** | Bruge behandling af livshændelse<br>Oprettelse af en ny tilsidesættelse af berettigelse til frynsegodeplan for en arbejder udløser denne livshændelse.<br>BenefitEligibilityRuleOverride.ValidFrom. |
-| **Ændring af tilsidesættelse af berettigelsesregler (ikke specifik for USA)** | **Udvidet Human Resources > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler** | Opdatering af **Gyldig fra** eller **Gyldig til** for en tilsidesættelse af berettigelse til frynsegodeplan udløser denne livshændelse. |
-| **Udløb af tilsidesættelse af berettigelsesregler (ikke specifik for USA)** | Administration af frynsegoder > Behandling af ændring af livshændelser  | Disse livshændelser oprettes fra **Behandling af ændring af livshændelser**. Processen analyserer den valgte periode og juridiske enhed, og finder tilknyttede tilsidesættelser af berettigelse til frynsegodeplan. Der oprettes livshændelser, hvis tilsidesættelserne er udløbet. |
-| **Ny frynsegodeplan (ikke specifik for USA)** | **Udvidet Human Resources > Frynsegoder > Planer > Ny** | Berettigelsesindstillinger føjes til en aktuel plan. Der tilføjes en ny plan med tilknyttede berettigelsesindstillinger.</br></br>Human Resourcesmedarbejdere skal køre behandling af berettigelse til livshændelsen i denne forekomst. |
-| **Ændring af berettigelsesregler (ikke specifik for USA)** | **Administration af frynsegoder > Berettigelsesregler** | Brug behandling af berettigelse til livshændelse. Logges, når poster for **BenefitEligibilityRule** har fået ændret følgende værdier: **UseEmplCategory**, **UseEmplStatus** eller **UseEmplType**. Opdaterer kun livshændelsestransaktioner, der allerede findes for en ændret regel eller kriterier for berettigelse. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+| Ændring i ansættelse for samlever | Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Ansat. | <ul><li>Posten Oplysninger om afhængig oprettet, og feltet **Personlig kontakt ansat** = Ja</li><li>Feltet **Personlig kontakt ansat** er ændret (Ja eller Nej)</li></ul> |
+| **Orlov (ægtefælle/samlever)** | Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Orlov | <ul><li>Posten Oplysninger om afhængig oprettet, og **EhrLOAEffectiveDate** udfyldt</li><li>**personPrivateDetails.EhrIsLOA** er ændret (Ja eller Nej)</li><li>**personPrivateDetails.EhrLOAEffectiveDate** er ændret</li></ul> |
+| **Ændring i dækning (stilling)** | <ul><li>Arbejder > Stillingstildeling > Tildeling af arbejderstillinger</li><li>Stillinger > Stillinger</li></ul> | <ul><li>Skift til stillingen i posterne for tildeling af arbejderstillinger</li><li>Ændring af arbejdertildelingen i stillingen</li></ul> |
+| **Sygeforsikring (medarbejder/afhængig)** | Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Ikrafttrædelsesdato for sygeforsikring | Udløses ikke automatisk, når en personlig kontakt angiver en ikrafttrædelsesdato. |
+| **Støtte ifølge dommerkendelse** | Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Afhængigt > Støtte ifølge dommerkendelse (QMSCO/QDRO) og ikrafttrædelsesdatoer | Udløser ikke automatiske opdateringer. Den ikke påvirker berettigelsen. Den registrerer en livshændelse. |
+| **Medarbejders død** | Arbejder > Profil > > Personlige oplysninger > Dato for medarbejders død | Der angives en dato for medarbejders død |
+| **EOI (forsikringsbar)** | <ul><li>Arbejder > Arbejder > Versioner > Ansættelseshistorik > Håndtering af datoer > Frynsegodedetaljer</li><li> Arbejder > Ansættelse > Oplysninger om frynsegoder > Bekræftelsesdato</li></ul> | <ul><li>En arbejder angiver en bekræftelsesdato</li><li>En arbejder angiver feltet EvidenceOfInsurability til **Ja**</li></ul> |
+| **Modtager** | Arbejder > Profil > Personlige oplysninger > Personlige kontakter | Der tilføjes en personlig kontakt, og feltet **Modtager** og **Ikrafttrædelsesdato** udfyldes. Den personlige kontakt skal være af typen **Barn**, **Ægtefælle**, **Samlever**, **Søskende**, **Familiekontakt**, **Anden kontakt**, **Forælder**, **Ydelsesmodtagers ejendom**, **Modtagerorganisation** eller **Formueforvalter som modtager**. |
+| **Medarbejders sygeforsikring** | Arbejder > Arbejder > Versioner > Ansættelseshistorik > Håndtering af datoer > Frynsegodedetaljer | <ul><li>**EhrMedicareEligibilityDate** er ændret</li><li>**MedicareEligibile** er angivet til **Ja**</li></ul> |
+| **Fødselsdag** | Arbejder > Profil > Personlige oplysninger > Personlige kontakter > Oplysninger om afhængig > Fødselsdato | En fødselsdato tilføjes eller opdateres (ikke efter behandling af ændring af livshændelse). Eksempel: Hvis **Indstillinger for berettigelse for personlige kontakter** for et barn er angivet til Alder: 26 i Konfiguration > Frynsegoder > Indstillinger for berettigelse for personlige kontakter, og hvis HR-medarbejdere kører behandling af ændringer af livshændelser en hvilken som helst dag, efter at den afhængige er fyldt 26, vises der en meddelelse med en påmindelse om, at den afhængige ikke længere kan dækkes. |
+| **Ændring af arbejders berettigelse (ikke specifik for USA)** | <ul><li>Arbejder > Ansættelse</li><li>Arbejder > Arbejder > Versioner > Ansættelseshistorik</li></ul> | <ul><li>Medarbejdertype, Ansættelseskategori eller de fem brugerdefinerbare berettigelsesfelter ændres</li><li>**HcmEmploymentDetail. EhrEmploymentType** ændres (behandles kun for *ændrede* ansættelsesposter med oplysninger, ikke for *nye* ansættelsesposter, f.eks. genansættelse og fratrædelse)</li></ul> |
+| **Tilsidesættelse af ny berettigelse (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Bruge behandling af livshændelse | EhrBenefitEligibilityRuleOverride.ValidFrom |
+| **Ændring af tilsidesættelse af berettigelsesregler (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Brug af behandling af livshændelser (kun **Gyldig fra**- og **Gyldig til**-felter under tilsidesættelse af berettigelsesregel) |
+| **Udløb af tilsidesættelse af berettigelsesregler (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Planer > Frynsegoder > Tilsidesæt berettigelsesregler | Brug behandling af ændring af livshændelse. Hvis du f.eks. redigerer udløbsdatoen for tilsidesættelse af en plans berettigelsesregel til dags dato kl. 17:00, et hvilket som helst tidspunkt efter kl. 17:00 eller de følgende dage og derefter udfører behandling af ændringer af en livshændelse, vises der en meddelelse om, at tilsidesættelse af berettigelsesreglen er udløbet. |
+| **Ny frynsegodeplan (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Planer > Ny | <ul><li>Berettigelsesindstillinger føjes til en aktuel plan</li><li>Der tilføjes en ny plan med tilknyttede berettigelsesindstillinger</li></ul></br></br>Personalemedarbejdere skal køre behandling af berettigelse til livshændelsen i denne forekomst. |
+| **Ændring af berettigelsesregler (ikke specifik for USA)** | Udvidet Personale > Frynsegoder > Regler/indstillinger > Berettigelsesregler | Brug behandling af berettigelse til livshændelse. Logføres, når følgende værdier er ændret for **EhrBenefitEligibilityRule**-poster: **UseEmplCategory**, **UseEmplStatus** eller **UseEmplType**. Opdaterer kun livshændelsestransaktioner, der allerede findes for en ændret regel eller kriterier for berettigelse. |

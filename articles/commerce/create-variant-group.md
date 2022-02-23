@@ -2,9 +2,11 @@
 title: Opret en variantgruppe
 description: Dette emne beskriver, hvordan du opretter en størrelses-, typografi- eller farvevariantgruppe for et produkt i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailSizeGroupTable, ConfigGroupIdLookup, RetailStyleGroupTable
 audience: Application User
@@ -15,21 +17,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 49e6860fa22bbfba8b86a8243fa29b831e22b489d967a45310648e5debd7512b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e19d9a2549fa9957126592f3db7e468147997261
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749925"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965145"
 ---
-# <a name="create-a-variant-group"></a>Oprette en variantgruppe
+# <a name="create-a-variant-group"></a>Opret en variantgruppe
 
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du opretter en størrelses-, typografi- eller farvevariantgruppe for et produkt i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Overblik
+## <a name="overview"></a>Oversigt
 
 Dynamics 365 Commerce understøtter flere varianter for produkter. Det er ideelt at konfigurere variantgrupper for forskellige produktkategorier. Der kan f.eks. oprettes en størrelsesgruppe for t-shirts med størrelserne extra small, small, medium, large og extra large, eller der oprettes en farvegruppe for at medtage alle de tilgængelige farver for et produkt. Variantgrupper skal tilføjes, før der tilføjes produkter.
 
@@ -61,7 +63,7 @@ Følg disse trin for at føje attributter til en størrelsesgruppe.
 
 Følgende billede viser et eksempel på en størrelsesgruppe til "størrelser på fritids-t-shirt".
 
-![Oprette størrelsesgruppe.](media/create-variant-group.png)
+![Oprette størrelsesgruppe](media/create-variant-group.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -70,6 +72,3 @@ Følgende billede viser et eksempel på en størrelsesgruppe til "størrelser p�
 [Konfigurere detailprodukter](set-up-retail-products.md)
 
 [Produktdimensioner](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

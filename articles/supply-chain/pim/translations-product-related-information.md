@@ -1,27 +1,30 @@
 ---
 title: Ofte stillede spørgsmål til produktvariantoversættelser
 description: Dette emne beskriver, hvordan du administrerer oversættelser for produkter, produktdimensionsværdier og produktattributter.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable, PCTranslationLanguageLookup, EcoResProductCategory
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24a341973b8648b1a697c8c07b6ecbc808e0e504
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 08cdf168ab64a34e781c85db2990f483ce7f7463
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570477"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424475"
 ---
 # <a name="product-related-translations-faq"></a>Ofte stillede spørgsmål til produktvariantoversættelser
 
@@ -29,7 +32,8 @@ ms.locfileid: "7570477"
 
 Dette emne beskriver, hvordan du administrerer oversættelser for produkter, produktdimensionsværdier og produktattributter. 
 
-## <a name="what-product-related-data-can-be-translated"></a>Hvilke produkt-relaterede data kan oversættes?
+<a name="what-product-related-data-can-be-translated"></a>Hvilke produkt-relaterede data kan oversættes?
+--------------------------------------------
 
 Du kan oprette oversættelser for følgende produkt-relaterede oplysninger:
 -   Navne og beskrivelser af produkter.
@@ -124,6 +128,3 @@ Du kan administrere oversættelser af produktrelaterede oplysninger når som hel
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,24 +2,27 @@
 title: Konfigurere klassifikationer for købsaftaler i den offentlige sektor
 description: Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler.
 author: twheeloc
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57db57534bd526f8970e5bb98ba5db0ac85958e8b9aa7388500db4056c130952
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4ea3addcd589069292341bec7207f8f9849bb26
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773647"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407685"
 ---
 # <a name="set-up-purchase-agreement-classifications-in-the-public-sector"></a>Konfigurere klassifikationer for købsaftaler i den offentlige sektor
 
@@ -41,6 +44,3 @@ Denne procedure er oprettet for den franske offentlige sektor med data fra PSUS-
 8. Valgfrit: Vælg indstillingen Aktiviteter for at medtage oplysninger om opgaver og milepæle.
 9. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,42 +1,43 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (14. maj 2020)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 14. maj 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063741"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528491"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (14. maj 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Human Resources. Ændringerne gælder for build nummer 8.1.3244. Tallene i parenteser i nogle overskrifter henviser til Lifecycle Services (LCS)-supportnumre til reference.
 
 ## <a name="platform-changes"></a>Platformsændringer
 
-Der er inkluderet platformsændringer i denne uges udgivelse. Du kan få mere at vide i [Platformsopdateringer til version 10.0.10 af Finans- og driftsapps (maj 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Denne version inkluderer fejlrettelser og ændringer af gemte visninger.
+Der er inkluderet platformsændringer i denne uges udgivelse. Få flere oplysninger i [Platformsopdateringer for version 10.0.10 af Finance and Operations-apps (maj 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Denne version inkluderer fejlrettelser og ændringer af gemte visninger.
  
-## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Kontrollér, at Dataverse, at pluklister er konsekvente med orlov-fasttekst (436343)
+## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Kontrollér, at Common Data Service, at pluklister er konsekvente med orlov-fasttekst (436343)
 
-Dataverse-pluklister er nu konsekvente med orlov-fasttekst.
+Common Data Service-pluklister er nu konsekvente med orlov-fasttekst.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Tillad brugere at konfigurere en arbejdsproces for orlovsanmodninger baseret på anmodningsmængden (300044)
 
@@ -74,7 +75,7 @@ Denne ændring retter en fejl, når der er knyttet to orlovstyper til en orlovsp
 
 Med denne ændring skjules banneret Introduktion for brugere, der ikke er systemadministratorer eller datastyringsadministratorer. 
 
-## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Objektet Dataverse-arbejderadresse fungerer anderledes, når det gælder ikrafttrædelsesdatoer med dato/klokkeslæt i Human Resources (425071)
+## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Objektet Common Data Service-arbejderadresse fungerer anderledes, når det gælder ikrafttrædelsesdatoer med dato/klokkeslæt i Human Resources (425071)
 
 Denne ændring bevarer adresseoplysninger, der er justeret i bestemte scenarier, baseret på datoerne i adressen.
 
@@ -115,8 +116,6 @@ Du kan angive en orlovstype for overførselssaldi, hvor gennemførte reguleringe
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

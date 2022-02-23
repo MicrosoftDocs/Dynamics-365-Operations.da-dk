@@ -1,54 +1,55 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (06. august 2020)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 6. august 2020.
-author: andreabichsel
-ms.date: 08/06/2020
+author: darinkramer
+manager: AnnBe
+ms.date: 8/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dbcf854330b7c5ba6ca812a5aed384584c05ce8d
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 94ec9b44e21715363116427839badacd14a3d6f8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062180"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528419"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (06. august 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Human Resources. Ændringerne gælder for build nummer 8.1.3444. Tallene i parenteser i nogle overskrifter henviser til LCS-supportnumre som reference.
 
 ## <a name="platform-update-1001236-is-now-available"></a>Platformsopdatering 10.0.12(36) er nu tilgængelig
 
-Du kan få mere at vide i [Platformsopdateringer til version 10.0.12 af Finans- og driftsapps (august 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Få flere oplysninger under [Platformsopdateringer for version 10.0.12 af Finance and Operations-apps (august 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>DMF-enheder (Data Management Framework) til styring af frynsegoder
  
 Enheder til håndtering af frynsegoder frigives. Med DMF-enheder kan du importere og eksportere data, så du nemt kan konfigurere frynsegodestyring. En skabelon til frynsegodestyring kan også bruges til at flytte data. Skabelonen eksporterer og importerer dataene sekventielt for at respektere dataafhængigheder. Du kan finde flere oplysninger i:
 
-- [Understøttelse af DMF-enhed](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) i Dynamics 365 2020-frigivelsesplan bølge 1
-- [Oversigt over datastyring](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
+- [Understøttelse af DMF-enhed](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) i Dynamics 365 2020-frigivelsesplan bølge 1
+- [Oversigt over datastyring](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
 
 
 ## <a name="claire-creates-a-workflow-for-buying-and-selling-leave-requests-446557"></a>Claire opretter en arbejdsproces for køb og salg af orlovsanmodninger (446557)
 
 Du kan finde flere oplysninger i:
 
-- [Tillade medarbejdere at købe og sælge orlov](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365 2020 frigivelsesplan bølge 2
-- [Administrere politikker for køb og salg af orlov](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
-- [Købe og sælge orlov](./hr-employee-self-service-buy-sell-leave.md)
+- [Tillade medarbejdere at købe og sælge orlov](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365 2020 frigivelsesplan bølge 2
+- [Administrere politikker for køb og salg af orlov](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
+- [Købe og sælge orlov](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
 
 
 ## <a name="worker-postal-addresses-v2-entity-has-access-across-legal-entities-with-restricted-access-459126"></a>V2-enheden har adgang til arbejderes postadresser på tværs af juridiske enheder med begrænset adgang (459126)
@@ -61,7 +62,7 @@ Når du bruger pladsholderen til at åbne en ydeevnegennemgang i arbejdsprocesse
 
 ## <a name="new-entities-for-buying-and-selling-leave-473180"></a>Nye enheder til køb og salg af orlov (473180)
 
-Enheder i struktur for dataadministration er nu tilgængelige for køb og salg af orlov. Få flere oplysninger i [Oversigt over dataadministration](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+Enheder i struktur for dataadministration er nu tilgængelige for køb og salg af orlov. Få flere oplysninger i [Oversigt over dataadministration](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 ## <a name="when-viewing-record-information-and-using-advanced-filters-a-user-could-gain-access-to-other-employees-records-472490"></a>Ved visning af postoplysninger og brug af avancerede filtre kan en bruger få adgang til andre medarbejderes poster (472490)
 
@@ -95,9 +96,9 @@ Med denne ændring er den cirkulære reference til stillingshierarkiet begrænse
 
 Nogle organisationer giver et frynsegode, der giver medarbejderne mulighed for at købe eller sælge deres orlov. Denne proces styres ofte manuelt. Denne funktion automatiserer administration af politikker og anmodninger for HR-afdelingen. Den effektiviserer orlovsprocessen og medvirker til at eliminere fejltagelser. Du kan finde flere oplysninger i:
 
-- [Tillade medarbejdere at købe og sælge orlov](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365 2020 frigivelsesplan bølge 2
-- [Administrere politikker for køb og salg af orlov](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
-- [Købe og sælge orlov](./hr-employee-self-service-buy-sell-leave.md)
+- [Tillade medarbejdere at købe og sælge orlov](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365 2020 frigivelsesplan bølge 2
+- [Administrere politikker for køb og salg af orlov](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
+- [Købe og sælge orlov](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Orlovsperiodisering for et enkelt firma eller en enkelt plan
 
@@ -125,15 +126,15 @@ Du kan oprette en regel om suspendering af orlovsperiodiseringer for medarbejder
 
 Du kan nu gøre felter obligatoriske ved hjælp af tilpasningsfunktionerne for personale. Denne funktion kræver **Gemte visninger**. Du kan finde flere oplysninger om gemte visninger i:
 
-- [Gemte visninger – generel tilgængelighed](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365 2020-frigivelsesplan bølge 2
-- [Opbygge formularer, der fuldt ud anvender gemte visninger](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
+- [Gemte visninger – generel tilgængelighed](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365 2020-frigivelsesplan bølge 2
+- [Opbygge formularer, der fuldt ud anvender gemte visninger](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
 
 ### <a name="human-resources-application-in-teams"></a>Human Resources-app i Teams
 
 Medarbejderne kan få vist og anmode om fri fra arbejde i Microsoft Teams. De kan interagere med en bot for at oprette orlovsanmodninger. Du kan finde flere oplysninger i:
 
-- [Løsning til medarbejderes orlov og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020-frigivelsesplan bølge 1
-- [Human Resources-app i Teams](./hr-admin-teams-leave-app.md)
+- [Løsning til medarbejderes orlov og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020-frigivelsesplan bølge 1
+- [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>DMF-enhed er tilgængelig for periodiseringssuspenderinger
 
@@ -141,9 +142,9 @@ En DMF-enhed er nu tilgængelig for periodiseringssuspenderinger.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-## <a name="checklist-entities-included-in-dataverse"></a>Kontrollisteenheder inkluderet i Dataverse
+## <a name="checklist-entities-included-in-common-data-service"></a>Kontrollisteenheder inkluderet i Common Data Service
 
-Der vil snart være tilgængelige kontrollisteenheder til processer til onboarding, offboarding, overførsler og forretning i Dataverse.
+Der vil snart være tilgængelige kontrollisteenheder til processer til onboarding, offboarding, overførsler og forretning i Common Data Service.
 
 ## <a name="known-issues"></a>Kendte problemer
 
@@ -171,9 +172,6 @@ Arbejdsområdet **Funktionsstyring** viser muligvis funktioner, der er deaktiver
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

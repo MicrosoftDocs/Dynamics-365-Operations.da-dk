@@ -1,10 +1,12 @@
 ---
 title: Arbejdsgang for indkøbsrekvisitioner
 description: I arbejdsgangsprocessen flyttes indkøbsrekvisitionen gennem evalueringsprocessen fra den første status Kladde til statussen Godkendt. Når en indkøbsrekvisition sendes til gennemsyn, starter arbejdsgangsprocessen. Når en indkøbsrekvisition er godkendt, kan der oprettes en indkøbsordre for indkøbsrekvisitionslinjerne, som sendes til leverandøren til ordreopfyldning.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f6069e2ab93e1ce4299669850bdae37e82b17428
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569451"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021974"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbejdsgang for indkøbsrekvisitioner
 
@@ -51,7 +53,7 @@ Følgende illustration viser, hvordan en indkøbsrekvisition kan bevæge sig gen
 -   **Indkøbsassistent** – Den bruger, der udfører en indkøbsevaluering, og som kan godkende dokumentet.
 -   **Anmoderens chef** – Den bruger, der udfører en evaluering på lederniveau, og som kan godkende dokumentet.
 
-![Gennemsynsproces for indkøbsrekvisitioner.](./media/purchreqworkflowoverview_submission.gif)  
+![Gennemsynsproces for indkøbsrekvisitioner](./media/purchreqworkflowoverview_submission.gif)  
 I dette eksempel omfatter arbejdsgangsprocessen for indkøbsrekvisitionen følgende trin:
 
 1.  Klargøreren sender en indkøbsrekvisition til evaluering.
@@ -74,7 +76,7 @@ Følgende roller er medtaget i arbejdsprocessen for dette eksempel:
 -   **Afdelingschef** – Den bruger, der udfører en udgiftskontrol, og som kan godkende dokumentet.
 -   **Gruppeleder** – Den bruger, der udfører en kontrol af udskriftsmyndigheden, og som kan godkende dokumentet.
 
-![Gennemsynsproces for indkøbsrekvisitionslinjer.](./media/purchreqlineworkflowoverview.gif)  
+![Gennemsynsproces for indkøbsrekvisitionslinjer](./media/purchreqlineworkflowoverview.gif)  
 I dette eksempel omfatter arbejdsgangsprocessen for indkøbsrekvisitionslinjer følgende trin:
 
 1.  Klargøreren sender en indkøbsrekvisition til evaluering. Hver linje sendes til den validator, som er konfigureret til at modtage dem i arbejdsgangsprocessen.
@@ -105,7 +107,8 @@ Du kan konfigurere udgiftsvalidatorer på siden **Udgiftsvalidatorer for indkøb
 
 Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces, skal du angive indstillingen **Deltagertype** til **Udgiftsdeltagere** i egenskaben **Tildeling** for det relevante arbejdsgangselement.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Oprette en forbrugsrekvisition](tasks/create-requisition-consumption.md)
 
@@ -117,6 +120,3 @@ Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

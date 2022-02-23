@@ -2,9 +2,11 @@
 title: Planlægge dit organisationshierarki
 description: Før du opretter organisationer og organisationshierarkier, skal du være sikker på, at du forstår, hvordan du bedst udformer en model af din virksomhed.
 author: sericks007
-ms.date: 02/19/2021
+manager: AnnBe
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771866"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694683"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planlægge dit organisationshierarki
 
@@ -164,7 +166,7 @@ Driftsenheder hører under samme land/område som den overordnede juridiske enhe
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Hvis organisationen er udformet som en juridisk enhed
 
-For lande/områder, der understøttes, kan de fleste lovpligtige rapporter oprettes. 
+For lande/områder, der understøttes, kan de fleste lovpligtige rapporter oprettes. Du kan finde oplysninger om, hvilke rapporter der er tilgængelige for hvert land/område, på [Microsoft Dynamics-lokaliseringsportalen](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (Der kræves et CustomerSource-logon).
 
 > [!NOTE]
 > Et posteringslag i finansmodulet giver dig mulighed for at angive reguleringsposter i et moderselskab, der bruger en anden regnskabsstandard end datterselskabet. I en virksomhed, der bruger almindeligt accepteret regnskabspraksis i Storbritannien (UK GAAP), kan du f.eks. angive reguleringsposter i posteringslaget. Disse poster kan konsolideres til et moderselskab, der bruger almindeligt accepterede regnskabsprincipper (GAAP) i USA. Reguleringsposterne påvirker ikke UK GAAP-rapportering.
@@ -239,6 +241,3 @@ Overvej følgende bedste fremgangsmåder, når du implementerer et organisations
 - Før du modellerer større omstruktureringsscenarier, skal du bruge hierarkiets ikrafttrædelsesdatoer til at udføre en effektanalyse og en valideringstest.
 - Brug kladdetilstand til at ændre et hierarki, før du udgiver en ny version i et produktionsmiljø.
 - Begræns antallet af personer, der har rettigheder til at tilføje eller fjerne organisationer fra et hierarki i et produktionsmiljø. Et lavere antal reducerer risikoen for, at der kan forekomme dyre fejl, der kræver, at der gennemføres rettelser.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

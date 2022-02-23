@@ -1,30 +1,32 @@
 ---
 title: Konfigurere rentefordeling for kontantkonti
 description: I dette emne beskrives, hvordan du kan oprette dine bankkonti på siden for rentefordelingsregler. Du skal fuldføre denne opsætning, før du fordeler renten.
-author: v-kiarnd
-ms.date: 12/03/2021
+author: velofog
+manager: AnnBe
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PSNLedgerInterestDistributionRules, PSNLedgerInterestDistributionResults
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-kiarnd
+ms.author: roschlom
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: a2c85fff681be70f505e47a9e783284a5b1619fb
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: dd02e521c74888b81ae0d0b5f1a2fe3abdfce2dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890686"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407698"
 ---
 # <a name="set-up-interest-distribution-for-cash-accounts"></a>Konfigurere rentefordeling for kontantkonti
 
 [!include[banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Din institution kan tildele (fordele) renten på en bankkonto til bestemte finanskonti baseret på den gennemsnitlige daglige saldo for kontantkonti. Du kan bruge denne proces til at oprette en avanceret finanspost for rentebeløbene. Du kan også generere rentebeløbene til gennemsyn uden at bogføre dem.
 
@@ -69,17 +71,6 @@ Før du fordeler renten, skal du oprette dine bankkonti på siden **Rentefordeli
 
 6. Vælg **OK**. En meddelelse viser nummeret på den avancerede finanspost, der automatisk oprettes.
 
-## <a name="pre-processing-for-increased-performance"></a>Forbehandling for at øge ydeevnen
-
-Hvis din organisation ofte ændrer kontoplanen eller de konti, der er relateret til kontantkonti, kan det tage et godt stykke tid at køre rentefordelingsprocessen. Du kan dog hjælpe med at reducere tiden ved at bruge funktionen **Brug batchbehandling til at opdatere konti til rentedistribution** til at konfigurere forbehandling for disse konti. 
- 
-Før du kan bruge funktionen, skal den være slået til i dit system. Administratorer kan bruge området **[Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
- 
-- **Modul:** Finans
-- **Funktionsnavn:** Brug batchbehandling til at opdatere konti til rentedistribution
- 
-Når du aktiverer funktionen, konfigurerer systemet to batchjob. Der køres et indledende batchjob én gang for at forbehandle dataene og de regler, der bruges i rentedistributionsprocessen. Der oprettes også et tilbagevendende batchjob med navnet **Kør den planlagte forbehandling af finanskonti, der bruges til rentedistribution**. Som standard køres processen igen hver aften. Du kan dog ændre hyppigheden i området for batchjob.
-
 ## <a name="calculated-amounts"></a>Beregnede beløb
 
 Rentefordelingsprocessen omfatter nogle beregnede beløb.
@@ -90,6 +81,3 @@ Rentefordelingsprocessen omfatter nogle beregnede beløb.
 | Samlet daglig gennemsnit   | Summen af alle daglige saldi i gennemsnit, undtagen negative beløb for kontantkonti, der ikke tillader negative rente- og kontantkonti, som ikke er en del af en rentefordeling. |
 | Procent af total      | Det gennemsnitlige daglige saldobeløb divideret med det samlede daglige gennemsnitlige beløb for hver kombination af en kontantkonto og en bonus. |
 | Fordelt rente    | Den samlede rente på siden **Rentefordelingsparametre** ganget med procentdelen af det samlede beløb for kontantkontoen. Renter overføres ikke til kontantkonti, der har negative beløb, og som ikke tillader negativ rente. Renter distribueres heller ikke til kontantkonti, der ikke indgår i rentefordeling. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

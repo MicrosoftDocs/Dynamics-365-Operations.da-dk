@@ -1,33 +1,31 @@
 ---
 title: Administrere politikker for køb og salg af orlov
 description: Du kan give medarbejderne mulighed for at købe og sælge orlov i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeaveBuySellPolicy, LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1fe7ce7eafdec175e3395a6ac37b33cb2bb8dbda
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066669"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417859"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>Administrere politikker for køb og salg af orlov
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan give medarbejderne mulighed for at købe og sælge orlov ved at oprette en politik for køb og salg af orlov. Du kan konfigurere disse politikker til at bruge en arbejdsproces til godkendelser, angive maksimumbeløb og satser samt angive satser for køb og salg. 
 
@@ -82,6 +80,3 @@ Du kan give medarbejderne mulighed for at købe og sælge orlov ved at oprette e
 [Periodiser orlovs- og fraværsplaner](hr-leave-and-absence-accrue.md)</br>
 [Køb og sælg orlov](hr-employee-self-service-buy-sell-leave.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,27 +1,28 @@
 ---
 title: Attributbaserede salgspriser for begrænsningsbaseret produktkonfiguration
 description: Dette emne beskriver, hvordan du kan oprette salgsprismodeller med salgspriser, der er baseret på komponenter og attributter, og ikke på den fysiske stykliste og ruten.
-author: t-benebo
+author: sorenva
+manager: tfehr
 ms.date: 10/2/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: sorenand
 ms.search.validFrom: 2020-08-17
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e50b2d1e9ccf03a58e0ddf6d4ecfb34c6c504161
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: c0f9c1bb94b4dcc3c3c1e7656868ef6e6bd903db
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577450"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424293"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributbaserede salgspriser for begrænsningsbaseret produktkonfiguration
-
-[!include [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan oprette salgsprismodeller med salgspriser, der er baseret på komponenter og attributter, og ikke på den fysiske stykliste og ruten. Du kan oprette flere salgsprismodeller for hver produktkonfigurationsmodel.
 
@@ -35,7 +36,7 @@ Sådan angiver du standardvalutaen:
 1. Åbn fanen **Begrænsningsbaserede modeller til produktkonfiguration**.
 1. Åbn rullelisten **Standardvaluta**, og vælg din valuta.
 
-    ![Angive standardvalutaen for begrænsningsbaseret produktkonfiguration.](media/prod-config-currency.png "Angive standardvalutaen for begrænsningsbaseret produktkonfiguration")
+    ![Angive standardvalutaen for begrænsningsbaseret produktkonfiguration](media/prod-config-currency.png "Angive standardvalutaen for begrænsningsbaseret produktkonfiguration")
 
 1. Hvis du vil vedhæfte en Excel-fil med en prisopdeling for alle ordre- eller tilbudslinjer, skal du angive **Vedhæft** til **Ja** i sektionen *Prismodel*.
 
@@ -62,7 +63,7 @@ Følgende eksempel viser en basispris for et statisk antal på 899,95 EUR, som k
 - For rosewood-kabinetfinish tillægges 119,95 EUR.
 - Tillæg 12,95 EUR for hver enhed af højttalerhøjde.
 
-![Eksempel på prismodel.](media/prod-config-rules-example.png "Eksempel på prismodel")
+![Eksempel på prismodel](media/prod-config-rules-example.png "Eksempel på prismodel")
 
 ## <a name="add-support-for-multiple-currencies"></a>Tilføje understøttelse af flere valutaer
 
@@ -83,7 +84,7 @@ Sådan tilføjer du eksplicitte priser i en ekstra valuta:
 
 I eksemplet nedenfor er _EUR_ standardvalutaen, og _USD_ er blevet tilføjet som en ekstra valuta.
 
-![Eksempel på en model med flere valutaer.](media/prod-config-rules-currency-example.png "Eksempel på en model med flere valutaer")
+![Eksempel på en model med flere valutaer](media/prod-config-rules-currency-example.png "Eksempel på en model med flere valutaer")
 
 > [!NOTE]
 > Du kan ikke tilføje udtryksregler, der er entydige for en valuta, der ikke er standard. Hvis du vil oprette udtryksregler, der kun er relevante for en anden valuta end standardvalutaen, skal du angive prisudtrykket for standardvalutaen til nul. Angiv derefter det relevante udtryk for valutaen, der ikke er standard.
@@ -95,11 +96,11 @@ Hvis du vil teste, hvordan salgspriserne fungerer i en konfigurationssession, sk
 - Brug de konfigurationsindstillinger, der tilbydes her, til at vælge produktindstillinger og derefter se, hvordan de påvirker den værdi, der vises for **Pris og afsendelsesdato**.
 - Vælg **Vis prisopdeling** for at hente et Excel-dokument, der indeholder detaljerede oplysninger om, hvordan prisen blev beregnet.
 
-![Teste prismodellen.](media/prod-config-test.png "Teste prismodellen")
+![Teste prismodellen](media/prod-config-test.png "Teste prismodellen")
 
 Det hentede regneark viser både den absolutte værdi og bidraget som en procentdel for hvert aktive priselement. Hvis du har valgt indstillingen **Tilknyt** for prismodellen på siden **Parametre til administration af produktoplysninger**, bliver dette Excel-ark tilknyttet ordre- eller tilbudslinjen.
 
-![Excel-regneark, der viser prisopdeling.](media/prod-config-excel-example.png "Excel-regneark, der viser prisopdeling")
+![Excel-regneark, der viser prisopdeling](media/prod-config-excel-example.png "Excel-regneark, der viser prisopdeling")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Konfigurere udvælgelseskriterier for prismodeller
 
@@ -118,7 +119,7 @@ Sådan konfigurerer du udvælgelseskriterier for prismodeller:
     - **Gyldig fra** – Angiv den første dag, hvor forespørgslen skal gælde.
     - **Udløber senest** – Angiv den sidste dato, hvor forespørgslen gælder.
 
-    ![Prismodelkriterier.](media/prod-config-price-model-criteria.png "Prismodelkriterier").
+    ![Prismodelkriterier](media/prod-config-price-model-criteria.png "Prismodelkriterier")
 
 1. Vælg rækken for den forespørgsel, du vil definere, og vælg derefter **Rediger** i **handlingsruden**. Dialogboksen for forespørgselsdesigneren åbnes. Den fungerer som de fleste forespørgselsdesignere i Supply Chain Management. Brug den til at definere de betingelser, som prismodellen for den række, du har valgt, skal anvendes under.
 
@@ -139,7 +140,4 @@ Det sidste trin er at angive attributbaserede salgspriser for produktmodelversio
 1. Vælg målproduktets konfigurationsmodel.
 1. Åbn fanen **Model** i handlingsruden, og vælg **Versioner** i gruppen **Oplysninger om produktmodel**.
 1. Siden **Versioner** åbnes. Sørg for, at **Prissætningsmetode** er angivet til **Attributbaseret**.
-    ![Angive pissætningsmetoden til attributbaseret.](media/prod-config-versions.png "Angive pissætningsmetoden til attributbaseret")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    ![Angive pissætningsmetoden til attributbaseret](media/prod-config-versions.png "Angive pissætningsmetoden til attributbaseret")

@@ -1,10 +1,12 @@
 ---
 title: Indgående og udgående aktiver
 description: Dette emne forklarer, hvordan du registrerer indgående og udgående aktiver i "Styring af aktiver".
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0bd3127df1b583acc6841c3e115d3beceabcab2756098e567b2269c1dcc94004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759617"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018065"
 ---
 # <a name="inbound-and-outbound-assets"></a>Indgående og udgående aktiver
 
@@ -42,7 +44,7 @@ Opsætningen af "Styring af aktiver" afgør, om du kan arbejde med indgående og
 3. Vælg **Opdater vedligeholdelsesanmodningens tilstand**.
 4. Vælg **Indgående** (eller en anden livscyklustilstand, som du har oprettet for indgående aktiver), og vælg dernæst **OK**.
 
-![Registrere aktiver som indgående.](media/07-manage-maintenance-requests.png)
+![Registrer aktiver som indgående](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Registrer indgående aktiver som modtaget
 
@@ -51,7 +53,7 @@ Opsætningen af "Styring af aktiver" afgør, om du kan arbejde med indgående og
 3. Vælg **Modtag aktiver**.
 4. Angiv datoen og tidspunktet i feltet **Modtaget**. Vælg derefter **OK**. Posten blev fjernet fra listesiden **Indgående aktiver**.
 
-![Registrere indgående aktiver som modtaget.](media/08-manage-maintenance-requests.png)
+![Registrer indgående aktiver som modtaget](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Registrer aktiver som udgående
 
@@ -68,6 +70,3 @@ Når du har fuldført vedligeholdelses-eller reparationsopgaven, kan du registre
 2. Vælg aktivet eller vedligeholdelsesanmodningen.
 3. Vælg **Levér aktiver**.
 4. Angiv datoen og tidspunktet i feltet **Leveret**. Vælg derefter **OK**. Posten blev fjernet fra listesiden **Udgående aktiver**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

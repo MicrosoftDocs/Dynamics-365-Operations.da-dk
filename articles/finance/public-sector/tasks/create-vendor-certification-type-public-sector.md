@@ -1,25 +1,28 @@
 ---
 title: Oprette en kreditorcertificeringstype i den offentlige sektor
-description: Dette emne indeholder oplysninger om, hvordan du opretter og tildeler typer af leverandørcertificeringer i den offentlige sektor.
+description: Du kan oprette enhver form for certificering, som kreditorerne har, og tildele dem til leverandørorganisationer som f.eks. professionelle legitimationsoplysninger, ansvarsforsikring, mindretalsstatus eller overholdelse af forskellige miljømæssige eller forbrugerrelaterede sikkerhedsstandarder.
 author: twheeloc
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendCertificationType
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34b65ed57e368e920d4fb24acab3a048d419eaf7277ce1e55037adc0da8b2958
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db1dda375924295859f35f3aee101458dbab32c7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741467"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407709"
 ---
 # <a name="create-a-vendor-certification-type-in-the-public-sector"></a>Oprette en kreditorcertificeringstype i den offentlige sektor
 
@@ -33,6 +36,3 @@ Du kan oprette enhver form for certificering, som kreditorerne har, og tildele d
 4. Skriv en værdi i feltet Beskrivelse.
 5. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

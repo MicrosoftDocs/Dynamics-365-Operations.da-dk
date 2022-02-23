@@ -1,29 +1,33 @@
 ---
 title: Konfigurere ordreopfyldning for butikker
 description: Dette emne giver en oversigt over, hvordan du konfigurerer butiksordreopfyldning.
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ed709c2a15a2d9e1675da55fc87284127e64ba39
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779590"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965304"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Konfigurere ordreopfyldning for butikker
 
 [!include [banner](includes/banner.md)]
+
+## <a name="overview"></a>Overblik
 
 Mange detailhandlere ønsker at optimere deres ordreopfyldning ved at gøre det muligt for butikker at opfylde ordrer. Ordreopfyldning på butiksniveau kan afhjælpe situationer med overfyldte lagre i en bestemt butik eller kan være nødvendigt fra et logistisk synspunkt i tilfælde, hvor en butik har ekstra kapacitet eller ligger inden for nærmere leveringsafstand i forhold til kunden. Du kan løse dette behov ved hjælp af en samlet ordreopfyldningsoperation, der er tilgængelig på salgsstedet (POS).
 
@@ -33,9 +37,9 @@ Ordreopfyldningsoperationen på POS'et indeholder et enkelt arbejdsområde på P
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Konfigurere ordreopfyldningsoperationen
 
-Ordreopfyldning, [Handlings-id 928](pos-operations.md) kan bruges til at få adgang til arbejdsområdet Butiksordreopfyldning på POS'et.
+Ordreopfyldning, [Handlings-id 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) kan bruges til at få adgang til arbejdsområdet Butiksordreopfyldning på POS'et.
 
-Følg trinnene i [Føje operationen til en knapmatrix](pos-screen-layouts.md) for at angive, hvilken parameter der skal bruges til aktivering af ordreopfyldning på POS. Når du har angivet ordreopfyldningsoperationerne, er **Alle ordrer** som standard markeret. Når operationen er konfigureret med denne parameter, viser den alle ordrelinjer til opfyldning i den aktuelle butik. **Ordrer, der skal afsendes**, som kan tildeles til en knap og udnyttes, når brugeren kun vil se ordrer, der skal afsendes fra butikken, er også tilgængelig. Endelig er der **Ordrer, der skal afhentes**. Når dette aktiveres på salgsstedet (POS), vises kun ordrer, der skal afhentes i butikken. De forskellige parametre kan tildeles til forskellige knapper for at give brugeren flere forskellige måder at få vist ordreopfyldningen på.
+Følg trinnene i [Føje operationen til en knapmatrix](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) for at angive, hvilken parameter der skal bruges til aktivering af ordreopfyldning på POS. Når du har angivet ordreopfyldningsoperationerne, er **Alle ordrer** som standard markeret. Når operationen er konfigureret med denne parameter, viser den alle ordrelinjer til opfyldning i den aktuelle butik. **Ordrer, der skal afsendes**, som kan tildeles til en knap og udnyttes, når brugeren kun vil se ordrer, der skal afsendes fra butikken, er også tilgængelig. Endelig er der **Ordrer, der skal afhentes**. Når dette aktiveres på salgsstedet (POS), vises kun ordrer, der skal afhentes i butikken. De forskellige parametre kan tildeles til forskellige knapper for at give brugeren flere forskellige måder at få vist ordreopfyldningen på.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Gøre det muligt for brugere at få adgang til ordreopfyldning på POS
 
@@ -104,9 +108,9 @@ Som standard har ordrer status **Accepteret**. Ordrestatus kan ses som en kolonn
 
 - **Rediger** – Hvis en ordrestatus er ventende, den kan redigeres på POS'et. Ordrer, der er allerede er delvist plukket, pakket eller faktureret, kan ikke redigeres fra ordreopfyldningsvisningen.
 - **Acceptér** – Hvis **Manuel godkendelse** er konfigureret på kanalniveau, skal linjer først godkendes, før de kan flyttes gennem ordreopfyldningsprocessen.
-- **Pluk** – Indstillingen Pluk understøtter flere handlinger. Første opdaterer **Pluk** for ordrelinjen, så andre i butikken ikke forsøger at plukke den samme linje. Derefter udskriver **Udskrivning af plukliste** en plukliste for den eller de valgte linjer og opdaterer også deres status til **Pluk**. Pluklisteformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](receipt-templates-printing.md). Endelig **Markér som plukket** angiver, at linjen er blevet plukket. **Markér som plukket** starter tilsvarende lagertransaktioner i administrationen. Plukhandlinger kan udføres på samme tid for flere ordrelinjer på tværs af ordrer og for alle leveringsmåder.
+- **Pluk** – Indstillingen Pluk understøtter flere handlinger. Første opdaterer **Pluk** for ordrelinjen, så andre i butikken ikke forsøger at plukke den samme linje. Derefter udskriver **Udskrivning af plukliste** en plukliste for den eller de valgte linjer og opdaterer også deres status til **Pluk**. Pluklisteformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Endelig **Markér som plukket** angiver, at linjen er blevet plukket. **Markér som plukket** starter tilsvarende lagertransaktioner i administrationen. Plukhandlinger kan udføres på samme tid for flere ordrelinjer på tværs af ordrer og for alle leveringsmåder.
 - **Afvis** – Linjer eller delvise linjer kan afvises. Dette gør muligt at omfordele dem fra administrationen til en anden butik eller lagersted. Linjer kan kun afvises, hvis de endnu ikke er plukket eller pakket. Hvis du vil afvise en linje, der allerede er plukket eller pakket, skal plukningen eller pakningen af linjen fjernes af administrationen.
-- **Pakke** – Pakkeindstillingen understøtter to handlinger: **Udskrivning af følgeseddel** udskriver en følgeseddel for de valgte linjer og **Markér som pakket** markerer linjerne som pakkede og markerer linjerne som leveret i administrationen. Kun ordrelinjer, der tilhører samme ordre og har samme leveringsmåde kan pakkes på samme tid. Følgeseddelformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](receipt-templates-printing.md).
+- **Pakke** – Pakkeindstillingen understøtter to handlinger: **Udskrivning af følgeseddel** udskriver en følgeseddel for de valgte linjer og **Markér som pakket** markerer linjerne som pakkede og markerer linjerne som leveret i administrationen. Kun ordrelinjer, der tilhører samme ordre og har samme leveringsmåde kan pakkes på samme tid. Følgeseddelformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 - **Send** – Afsendelseshandlingen markerer valgte linjer som **Leveret** i administrationen. Når en linje er fuldt ud leveret, vises den ikke længere i ordreopfyldningsvisningen.
 - **Afhentning** – Handlingen Afhentning føjer linjerne til transaktionsvisningen for afhentning. Hvis der er andre linjer i ordren, der ikke i øjeblikket er afhentet, føjes de til transaktionsvisningen med et antal på nul. Når en linje er helt afhentet, vises den ikke længere i ordreopfyldningsvisningen.
 
@@ -126,6 +130,3 @@ Ordreopfyldning på POS'et omfatter filtrering, så brugerne nemt kan finde det,
 - Oprettet dato
 - Leveringsdato
 - Modtagelsesdato
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

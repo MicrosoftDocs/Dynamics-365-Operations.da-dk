@@ -2,9 +2,11 @@
 title: Power BI-indhold til omkostningsstyring
 description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752634"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683889"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-indhold til omkostningsstyring
 
@@ -30,6 +32,11 @@ ms.locfileid: "7752634"
 ## <a name="overview"></a>Overblik
 
 Microsoft Power BI-indholdet til **Omkostningsstyring** er beregnet til lagerbogholdere eller enkeltpersoner i organisationen, som er ansvarlige for eller interesserede i status for lageret eller det igangværende arbejde (IGVA), eller som er ansvarlig for eller interesseret i at analysere afvigelser i standardomkostningerne.
+
+> [!NOTE]
+> Det Power BI-indhold til **Omkostningsstyring**, som beskrives i dette emne, gælder for Dynamics 365 Finance and Operations 8.0.
+> 
+> Power BI-indholdspakken til **Omkostningsstyring**, som er tilgængelig på AppSource-webstedet, er blevet udfaset. Yderligere oplysninger om denne forældede funktion finder du i [Fjernede eller forældede funktioner til Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dette Power BI-indhold giver et kategoriseret format, som gør det lettere at overvåge performance for lagerbeholdninger og visualisere, hvordan omkostninger "flyder" gennem dem. Du kan få ledelsesmæssig indsigt, f.eks. omsætningshastigheden, antallet af dage, hvor varen er på lager, nøjagtighed og "ABC-klassifikation" på dit foretrukne samlede niveau (firma, vare, varegruppe eller sted). De oplysninger, der er gjort tilgængelige, kan også bruges som et detaljeret supplement til regnskabet.
 
@@ -200,6 +207,3 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Juridiske enheder                                          | Navne på juridisk enhed                              |
 | Regnskabskalendere                                        | Regnskabskalender, År, Kvartal, Periode, Måned   |
 | Sted                                                    | Id, Navn, Adresse, Stat, Land/område               |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

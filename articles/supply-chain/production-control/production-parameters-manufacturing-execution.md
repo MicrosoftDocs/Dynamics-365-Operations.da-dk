@@ -2,13 +2,16 @@
 title: Produktionsparametre i Produktionsudførelse
 description: Dette emne indeholder oplysninger om konfiguration af produktionsparametre i Produktionsudførelse.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProdParameters
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ce0dadd353df756a468384e3bf8e68c0ad2033a7042b4986fce41aa0764afdbc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4d459fb516cca3825c0a1871797f83df4c1a7c6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752724"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424549"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametre i Produktionsudførelse
 
@@ -151,6 +154,3 @@ Du kan bruge følgende indstillinger, hvis materiale altid skal fratrækkes lage
 | Færdigmelding |   Automatisk styklisteforbrug    | <strong>Aldrig</strong>  |
 | Færdigmelding | Opdater færdigmelding online | <strong>Status</strong> |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

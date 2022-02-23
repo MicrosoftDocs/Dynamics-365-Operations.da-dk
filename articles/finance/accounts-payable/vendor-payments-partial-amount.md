@@ -2,25 +2,28 @@
 title: Kreditorbetalinger af et delvist beløb
 description: Du kan somme tider skulle foretage en betaling, der er mindre end fakturabeløbet, til en kreditor. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14321
 ms.assetid: 9a17075e-5325-4d55-a1e5-1791b8c460a0
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd7b7092e0d0baf48a805bbb0cefb0eb77e49946c6dbc44c9f954781ca1259e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 89e025977a0dcd40e35f17448a7b0ebde08cb6c8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777234"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441394"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Kreditorbetalinger af et delvist beløb
 
@@ -28,7 +31,8 @@ ms.locfileid: "6777234"
 
 Du kan somme tider skulle foretage en betaling, der er mindre end fakturabeløbet, til en kreditor. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation. De tilgængelige indstillinger afhænger af forretningsbehovene og konfigurationen. 
 
-## <a name="cash-discount-amounts"></a>Kasserabatbeløb
+<a name="cash-discount-amounts"></a>Kasserabatbeløb
+---------------------
 
 En kreditor kan tilbyde dig en kasserabat, hvis du betaler en faktura før forfaldsdatoen. Du kan f.eks. en oprette en faktura på 100,00, der specificerer en kasserabat på 2 %, hvis fakturaen betales inden for 10 dage. Forfaldsdatoen er 30 dage. Hvis et betalingsforslag bruger kasserabatten som et kriterium for at vælge en faktura, og hvis forslaget køres på eller før datoen for kasserabat, udvælges fakturaen til betaling, og der oprettes betalingen af 98,00. En kasserabat kan også tages fra en engangsbetaling, der er oprettet manuelt.
 
@@ -50,6 +54,3 @@ Du foretager eventuelt en delbetaling, hvor beløbet, der stadig skal udlignes, 
 
 
 Du kan finde flere oplysninger i [Oversigt over kreditorbetalinger](../cash-bank-management/tasks/vendor-payment-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

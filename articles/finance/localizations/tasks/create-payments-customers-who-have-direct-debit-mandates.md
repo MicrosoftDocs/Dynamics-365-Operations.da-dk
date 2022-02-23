@@ -2,9 +2,11 @@
 title: Oprette betalinger til en debitor, som har bemyndigelser til direkte debitering
 description: Denne procedure viser, hvordan du opretter en ISO20022-fil med direkte debiteringsbetalinger for en kunde, der har direkte debitering konfigureret og en faktura, der skal betales.
 author: mrolecki
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, SysQueryForm, CustPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ecc28cb11b8c34a438bb47b1cfa9a37e17297e421020b32030261af95b86a49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 934d086661dbbf1c7ba1d868f90caafe5b0bebf2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757928"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964560"
 ---
 # <a name="create-payments-for-a-customer-who-have-direct-debit-mandates"></a>Oprette betalinger til en debitor, som har bemyndigelser til direkte debitering
 
@@ -65,6 +67,3 @@ Det er den femte af fem procedurer, der viser processen til debitorbetaling ved 
 11. Klik på OK.
 12. Klik på OK.
 13. Klik på Opret betalinger.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

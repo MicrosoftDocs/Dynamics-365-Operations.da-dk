@@ -1,40 +1,43 @@
 ---
 title: Oprette et rykkerforløb
-description: Brug denne procedure til at oprette et rykkerforløb.
-author: JodiChristiansen
-ms.date: 12/07/2021
+description: Brug denne opgaveguide til at oprette et rykkerforløb.
+author: mikefalkner
+manager: AnnBe
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: 5d8aa4963026ad55ed3dfccb28b6cc68a872f326
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921193"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441454"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Oprette et rykkerforløb
 
 [!include [banner](../../includes/banner.md)]
 
-Brug denne procedure til at oprette et rykkerforløb. Denne opgave bruger demofirmaet USMF.
+Brug denne opgaveguide til at oprette et rykkerforløb. Denne opgave bruger demofirmaet USMF.
 
 1. I navigationsruden skal du gå til **Moduler > Kredit og inkasso > Opsætning > Konfigurer rykkerforløb**.
 2. Klik på **Ny**.
 3. Angiv et sekvens-id, der repræsenterer rækkefølgen, i feltet **Rykkerforløb**. Det vil blive brugt, når du opretter en posteringsprofil.
 4. Indtast en værdi i feltet **Beskrivelse**.  Betalingsbetingelserne er valgfrie. Hvis du indtaster en værdi her, vil rykkerens gebyrfaktura bruge disse betalingsbetingelser i stedet for betalingsbetingelserne, der er gemt sammen med kunden.  
 5. I feltet **Rykkerkode** skal du vælge koden for den første rykker, du vil sende. Den første rykker oprettes på grundlag af fakturaens forfaldsdato, den værdi, som du har angivet som frist i feltet Dage på denne linje, og andre oplysninger, som du angiver på denne linje.  
-6. Indtast en værdi i feltet **Beskrivelse**. 
-7. Standardvalutaen for gebyret er valutaen i den juridiske enhed. Valutakoden kan være forskellig fra fakturaens valuta.   
-8. Klik på **Tilføj** for at tilføje den næste rykker, der skal sendes i rækkefølgen. I mange tilfælde er den første rykker blot en advarsel. Hvis det er nødvendigt, kan du tilføje gebyrer.  
-9. I feltet **Rykkerkode** skal du vælge den næste rykker, der skal sendes i rækkefølgen.
+6. Indtast en værdi i feltet **Beskrivelse**. Valutaen for gebyret er som standard debitorvalutaen. Valutakoden kan være forskellig fra fakturaens valuta.  
+7. Klik på **Tilføj** for at tilføje den næste rykker, der skal sendes i rækkefølgen. I mange tilfælde er den første rykker blot en advarsel. Hvis det er nødvendigt, kan du tilføje gebyrer.  
+8. I feltet til rykkerkoden skal du vælge den næste rykker, der skal sendes i rækkefølgen.
+9. Indtast en værdi i feltet **Beskrivelse**.
 10. I feltet **Hovedkonto** skal du vælge den omsætningskonto, der skal bruges til gebyrer.
 11. Angiv det gebyr, der opkræves, når denne rykker bogføres.
 12. Klik på rullelisten i feltet **Varemomsgruppe** for at åbne opslaget. Vælg en varemomsgruppe, hvis der skal beregnes moms på gebyret.  
@@ -56,6 +59,3 @@ Brug denne procedure til at oprette et rykkerforløb. Denne opgave bruger demofi
 26. Udvid oversigtspanelet **Note**.
 27. Angiv den tekst, der skal vises i rykkeren for den valgte rykkerkode. Du kan oversætte denne tekst til flere sprog ved hjælp af menuen Oversættelser over notefeltet.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Oprette koncerngrupper og supplerende koncernkonti
 description: Denne procedure viser, hvordan du opretter en koncernkontogruppe og derefter føjer konti til gruppen.
 author: aprilolson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f146eca39ef3aa690eb69283371d40c5c6d439bd868f1aa4763ffa76c8f682
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 826a65af563207fbfbc7391b176aa0e65b3363f9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757043"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441635"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Oprette koncerngrupper og supplerende koncernkonti
 
@@ -44,6 +47,3 @@ Denne procedure viser, hvordan du opretter en koncernkontogruppe og derefter fø
 8. Skriv en værdi i feltet Koncernkonto.
 9. Skriv en værdi i feltet Navn på koncernkonto.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

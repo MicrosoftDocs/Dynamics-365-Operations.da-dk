@@ -1,29 +1,30 @@
 ---
 title: Oversigt over Debitor i den offentlige sektor
 description: I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor.
-author: v-kiarnd
+author: ShylaThompson
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustInvoiceJournal, CustParameters, CustTradingPartnerCode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "26281"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 26281
 ms.assetid: a411ec87-a209-471c-a141-5f5a92f2e45e
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca8ae917ab436ea54f30a6a4367e30bc1bc8f4a5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 954cb02e42871faac2f0bd7269af2531d5e5591b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985950"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407662"
 ---
 # <a name="accounts-receivable-in-the-public-sector-overview"></a>Oversigt over Debitor i den offentlige sektor
 
@@ -31,7 +32,8 @@ ms.locfileid: "7985950"
 
 I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor.
 
-## <a name="how-do-i-set-accounts-receivable-parameters-for-the-public-sector"></a>Hvordan indstiller jeg Debitorparametre for den offentlige sektor?
+<a name="how-do-i-set-accounts-receivable-parameters-for-the-public-sector"></a>Hvordan indstiller jeg Debitorparametre for den offentlige sektor?
+------------------------------------------------------------------
 
 De fleste Debitorparametre angives på samme måde, uanset om du er i den offentlige sektor eller private sektor. De parametre, der kræves til faktureringsklassifikationer og faktureringskoder, bruges imidlertid kun af den offentlige sektor. Du kan få flere oplysninger i [Faktureringsklassifikationer og faktureringskoder i den offentlige sektor](billing-classifications-billing-codes-public-sector.md).
 
@@ -57,7 +59,8 @@ Du kan bevare de økonomiske standarddimensioner for debitorgruppen. Bare gå ti
 ## <a name="what-can-i-use-accounts-receivable-posting-definitions-for"></a>Hvad kan jeg bruge bogføringsdefinitioner for debitor til?
 Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til kildetransaktioner, der opfylder de valgte kriterier – f.eks. til at generere flere, afstemte finansposter baseret på attributter, som f.eks. transaktionstyper og konti. Hvis du vil vide mere om bogføringsdefinitioner, skal du se [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md).
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Debitorer](../accounts-receivable/accounts-receivable.md)
 
@@ -68,6 +71,3 @@ Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til ki
 [Oprette og tildele en handelspartnerkode](tasks/create-assign-trading-partner-code-public-sector.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

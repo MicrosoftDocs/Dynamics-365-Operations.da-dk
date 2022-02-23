@@ -72,6 +72,3 @@ Du kan finde flere oplysninger om, hvordan ændringer udgives, ved at se [Klarg�
 ### <a name="view-extended-information-for-performance-in-manager-self-service"></a>Få vist udvidede oplysninger om performance i selvbetjeningstjeneste
 
 En ny indstilling gør det muligt for lederne at få vist performance for både direkte underordnede og deres udvidede underordnede. I øjeblikket kan linjechefer tildele og opdatere præstationsmålsætninger og udstede nye fornyede gennemgange. Desuden kan direkte ledere og deres medarbejdere vedligeholde og opdatere performancekladder for at hjælpe med at sikre, at performancegennemgangsprocessen går problemfrit. Når denne ændring er implementeret, kan ledere få vist og vedligeholde oplysninger, der er relateret til performance, for deres udvidede underordnede ud over deres direkte underordnede.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,20 +1,29 @@
 ---
 title: Lagertilgængelighed i dobbeltskrivning
 description: I dette emne får du oplysninger om, hvordan du kontrollerer lagertilgængelighed i dobbeltskrivning.
-author: RamaKrishnamoorthy
+author: yijialuan
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.author: ramasri
+ms.search.industry: ''
+ms.author: riluan
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a7bfe998d2d787203a507a831c171fc43b03fedc
+ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782523"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "4839543"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Lagertilgængelighed i dobbeltskrivning
 
@@ -57,12 +66,55 @@ Når du vælger knappen **Disponibel lagerbeholdning** på siden **Tilbud**, **O
 - CDS Anmodninger om disponibel lagerbeholdning (msdyn_inventoryonhandrequests)
 
 ## <a name="templates"></a>Skabeloner
-
 Der findes følgende skabeloner til visning af de disponible lagerbeholdningsdata.
 
-Finance and Operations-apps | Kundeengagementapps     | Betegnelse
+Finance and Operations-apps | Customer Engagement-app | Betegnelse 
 ---|---|---
-[Posteringer til disponibelt CDS-lager](mapping-reference.md#145) | msdyn_inventoryonhandentries |
-[Anmodninger om disponibelt CDS-lager](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
+[Posteringer til disponibelt CDS-lager](#145) | msdyn_inventoryonhandentries |
+[Anmodninger om disponibelt CDS-lager](#147) | msdyn_inventoryonhandrequests |
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>CDS Poster for disponibel lagerbeholdning (msdyn_inventoryonhandentries)
+
+Denne skabelon synkroniserer data mellem Finance and Operations-apps og Dataverse.
+
+Finance and Operations-felt | Tilknytningstype | Customer Engagement-felt | Standardværdi
+---|---|---|---
+`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
+`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
+`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
+`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
+`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
+`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
+`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
+`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
+`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
+`ATPDATE` | = | `msdyn_atpdate` |
+`ATPQUANTITY` | > | `msdyn_atpquantity` |
+`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
+`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
+`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
+`ORDERQUANTITY` | > | `msdyn_orderquantity` |
+`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
+
+###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>CDS Anmodninger om disponibel lagerbeholdning (msdyn_inventoryonhandrequests)
+
+Denne skabelon synkroniserer data mellem Finance and Operations-apps og Dataverse.
+
+Finance and Operations-felt | Tilknytningstype | Customer Engagement-felt | Standardværdi
+---|---|---|---
+`REQUESTID` | = | `msdyn_requestid` |
+`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
+`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
+`ORDERQUANTITY` | < | `msdyn_orderquantity` |
+`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`REFERENCENUMBER` | < | `msdyn_referencenumber` |
+`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
+
+
+
+

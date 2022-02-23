@@ -2,25 +2,28 @@
 title: Konfigurere og generere filer til positive betalinger
 description: I dette emne beskrives, hvordan du opretter positive betalinger og genererer filer til positive betalinger.
 author: panolte
+manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 992c73b1ba1f461542873a7df97f1539b99fc015c3e6ef090993e90212993851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82f7c8947bcc2dab394ea24e28a3631cc8682e5a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737179"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441508"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Konfigurere og generere filer til positive betalinger
 
@@ -139,9 +142,6 @@ Filer til positiv betaling oprettes ved hjælp af dataenheder. Før du kan gener
 </xsl:stylesheet>
 ```
 
-> [!NOTE]
-> XML-navne i XSLT skal svare til store og små bogstaver af noder i XML-filen. Der skelnes mellem store og små bogstaver i både XSLT- og XML-filerne. 
-
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Tildele formatet for positiv betaling til en bankkonto
 For hver bankkonto, du vil generere oplysninger om positiv betaling for, skal du tildele det format for positiv betaling, du angav i forrige afsnit. På siden **Bankkonti** skal du vælge formatet for positive betalinger, der svarer til bankkontoen. Angiv den første dato til generering af filer til positiv betaling i feltet **Startdato for positiv betaling**. Det er vigtigt, at du indtaster en dato i dette felt. Ellers vil den første positive lønfil, du opretter, indeholde alle checks, der nogensinde er oprettet for denne bankkonto.
 
@@ -165,6 +165,3 @@ Hvis du vil ændre en fil til positiv betaling, kan du tilbagekalde den. På sid
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

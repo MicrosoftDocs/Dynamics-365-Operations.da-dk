@@ -2,29 +2,34 @@
 title: Konfigurer opgavestyring
 description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere funktioner til opgavestyring i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4775c2dba2b9aa8e671ab6c246000303b3a37e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730797"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411145"
 ---
 # <a name="configure-task-management"></a>Konfigurer opgavestyring
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere funktioner til opgavestyring i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Før Dynamics 365 Commerce-ledere og -medarbejdere kan bruge funktionerne til opgavestyring i Commerce, skal du konfigurere opgavestyring. Konfigurationstrin omfatter tildeling af rettigheder til ledere og medarbejdere, distribution af tilladelser til POS-klienter, opsætning af POS-beskeder og konfiguration af feltet **Opgave** på startsiden for et POS-program.
 
@@ -44,7 +49,7 @@ Udfør følgende trin for at konfigurere indstillinger for opgavestyring for but
 
 Følgende illustration viser, hvordan du konfigurerer indstillinger for opgavestyring for butikschefer.
 
-![Konfigurere indstillinger for opgavestyring for butikschefer.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurere indstillinger for opgavestyring for butikschefer](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurere rettigheder for medarbejdere
 
@@ -64,7 +69,7 @@ Før medarbejderne kan bruge POS-klienter, skal rettighederne distribueres og sy
 Udfør følgende trin for at distribuere rettigheder til POS-klienter:
 
 1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**.
-1. Vælg distributionsplanen **1060** (**Human Resources**), og vælg derefter **Kør nu**.
+1. Vælg distributionsplanen **1060** (**Personale**), og vælg derefter **Kør nu**.
 1. Vælg distributionsplanen **1070** (**Kanalkonfiguration**), og vælg derefter **Kør nu**.
 
 ## <a name="configure-pos-notifications-for-tasks"></a>Konfigurere POS-beskeder for opgaver
@@ -78,7 +83,7 @@ Du kan konfigurere POS-beskeder for opgaver ved at følge disse trin.
 
 I følgende illustration vises handlingen **Opgavestyring** på siden **POS-handlinger**.
 
-![Handlingen Opgavestyring på siden POS-handlinger.](media/HQ-POS-Tasks-Notifications.png)
+![Handlingen Opgavestyring på siden POS-handlinger](media/HQ-POS-Tasks-Notifications.png)
 
 Du kan finde flere oplysninger om, hvordan du konfigurerer POS-beskeder, i [Vis ordrebeskeder på POS](notifications-pos.md).
 
@@ -95,7 +100,7 @@ Du konfigurerer feltet **Opgaver** på en startside for POS-programmet ved at f�
 
 Følgende illustration viser et eksempel på et **Opgave**-felt på en POS-startside.
 
-![Opgavefelt på en POS-startside.](media/POS-home-screen-tasks-button-image.png)
+![Opgavefelt på en POS-startside](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -106,6 +111,3 @@ Følgende illustration viser et eksempel på et **Opgave**-felt på en POS-start
 [Tildele opgavelister til butikker eller medarbejdere](task-mgmt-assign-lists.md)
 
 [Opgavestyring i POS](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

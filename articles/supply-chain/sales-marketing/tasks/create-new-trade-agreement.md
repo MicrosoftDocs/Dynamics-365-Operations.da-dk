@@ -1,24 +1,27 @@
 ---
 title: Oprette en ny samhandelsaftale
 description: Denne fremgangsmåde viser, hvordan du kan oprette en samhandelsaftale, hvor du registrerer en ny produktsalgspris, som du har aftalt med en bestemt debitor.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a16a39d95605900be0fa1e339b8cd0755ba85189
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573411"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424433"
 ---
 # <a name="create-a-new-trade-agreement"></a>Oprette en ny samhandelsaftale
 
@@ -26,8 +29,8 @@ ms.locfileid: "7573411"
 
 Denne fremgangsmåde viser, hvordan du kan oprette en samhandelsaftale, hvor du registrerer en ny produktsalgspris, som du har aftalt med en bestemt debitor. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. Hvis du bruger dine egne data, før du starter denne vejledning, skal du sikre, at der findes et navn på en Samhandelskladde, hvor standardrelationen er indstillet til "Pris (salg)".
 
-## <a name="create-and-post-a-new-trade-agreement-journal"></a>Opret og bogfør en ny samhandelsaftalekladde
 
+## <a name="create-and-post-a-new-trade-agreement-journal"></a>Opret og bogfør en ny samhandelsaftalekladde
 1. Gå til **Navigationsrude > Moduler > Salg og marketing > Priser og rabatter > Samhandelskladder**.
 2. Klik på **Ny**.
 3. Klik på rullelisten i feltet **Navn** for at åbne opslaget.
@@ -58,27 +61,15 @@ Denne fremgangsmåde viser, hvordan du kan oprette en samhandelsaftale, hvor du 
 20. Klik på **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Få vist samhandelsaftaler for et produkt
-
 1. Gå til **Navigationsrude > Moduler > Administration af produktoplysninger > Produkter > Frigivne produkter**.
 2. På listen skal du finde og vælge produktet, hvis pris du netop har opdateret.
 3. Klik på **Sælg** i **handlingsruden**.
 4. Klik på **Vis samhandelsaftaler**.
     
-    Gennemse oplysningerne om samhandelsaftalens pris, som du lige har oprettet.
+    Gennemse oplysningerne om samhandelsaftalens pris, som du lige har oprettet.    
 
 5. Luk siden.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-
-### <a name="whitepaper"></a>Hvidbog
-
-Yderligere oplysninger finder du ved at downloade følgende hvidbog (skrevet som support til AX2012, men gælder stadig for Dynamics 365 Supply Chain Management)
-
-- [Samhandelsaftale](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
-
 ### <a name="community-blogs"></a>Fællesskabsblogge
-
 - [Salgspriser i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

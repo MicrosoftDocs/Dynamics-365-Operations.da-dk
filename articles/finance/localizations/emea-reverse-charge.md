@@ -2,22 +2,25 @@
 title: Modtagermomsmekanisme for momsskema (VAT/GST)
 description: I dette emne beskrives, hvordan du konfigurerer modtagermoms for europæiske lande, Saudi-Arabien og Singapore.
 author: epodkolz
+manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
+ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594713"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4515045"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Modtagermomsmekanisme for momsskema (VAT/GST)
 
@@ -45,6 +48,7 @@ Når du vil anvende modtagermoms, skal du udføre følgende konfiguration.
 Det anbefales at bruge separate momskoder til henholdsvis salgs- og indkøbsoperationer.
 
 <table>
+<body>
 <tr>
 <td><strong>Momskode for salg</strong></td>
 <td>Opret en momskode for salgsoperationer med modtagermoms (<strong>Moms</strong> &gt; <strong>Indirekte skatter</strong> &gt; <strong>Moms</strong> &gt; <strong>Momskoder</strong>).
@@ -61,6 +65,7 @@ Du skal tildele denne negative momskode til en varemomsgruppe og derefter knytte
 <p>Du kan finde flere oplysninger i det næste afsnit &quot;Konfigurer momsgrupper og varemomsgrupper&quot;.</p>
 </td>
 </tr>
+</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Konfigurere momsgrupper og varemomsgrupper
@@ -119,7 +124,7 @@ Når en købsfaktura med modtagermoms bogføres, oprettes der to momsposteringer
 
 På følgende skærmbillede har den ene transaktion retningen **Indgående moms** og den anden transaktion har retningen **Udgående moms**. 
 
-![Bogført moms.](media/apac-sau-posted-sales-tax.png)
+![Bogført moms](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Aktivér modtagermomsmekanisme for momsskema (VAT/GST)
 Find funktionen i arbejdsområdet **Funktionsstyring**, og vælg **Aktivér**.
@@ -132,6 +137,3 @@ Følgende sider og menupunkter, der vedrører opsætningen af funktionen, er til
  - **Udenrigshandelsparametre** (**Moms** > **Opsætning** > **Moms** > **Udenrigshandel** > **Parametre for udenrigshandel**). Se [Konfigurere egenskaber for land/område](#Set-up-Country/region-properties).
 
 Afkrydsningsfeltet **Modtagermoms** er tilgængeligt på siderne **Momsgruppe** og **Bogført moms**. Du kan finde flere oplysninger i afsnittene, [Konfigurere momsgrupper og varemomsgrupper](#sales-tax-item-sales-tax-groups), [Modtagermoms på en salgsfaktura](#reverse-charge-sale) og [Modtagermoms på en købsfaktura](#reverse-charge-purchase).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

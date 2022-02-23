@@ -2,13 +2,16 @@
 title: Fastslå den optimale kombination af overlappende rabatter
 description: Når rabatter overlapper hinanden, skal du bestemme den kombination af overlappende rabatter, der resulterer i den laveste samlede transaktion eller den højeste samlede rabat. Når rabatbeløbet afhænger af prisen på de produkter, der købes, f.eks. i den almindelige detailrabat (BOGO) 'køb 1, og få 1 X procent i rabat' (BOGO), bliver denne proces et problem med optimering af kombinationer.
 author: kfend
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 69475643a522a89ca4b58cf0ad1cc1f2db6325ff1d3f11830bf5f813290d6240
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 565722da65cbb711acedb5acf7de4edfbd615314
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733911"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411092"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Fastslå den optimale kombination af overlappende rabatter
 
@@ -39,11 +42,11 @@ Du kan oprette et ubegrænset antal rabatter på et fælles sæt produkter. Men 
 
 I dette eksempel er to produkter nødvendige for at kunne opnå hver rabat, og rabatter kan ikke kombineres. Rabatterne i dette eksempel er rabatter af typen **bedste pris**. Begge produkter opfylder betingelserne for begge rabatter. Her er de to rabatter.
 
-![Eksempel på to bedste prisrabatter.](./media/overlapping-discount-combo-01.jpg)
+![Eksempel på to bedste prisrabatter](./media/overlapping-discount-combo-01.jpg)
 
 For to tilfældige produkter afhænger den bedste af disse to rabatter af priserne på de to produkter. Når prisen på begge produkter er ens eller næsten ens, er rabat 1 den bedste. Når prisen på én vare er betydeligt mindre end prisen på det andet produkt, er rabatten 2 bedre. Her er den matematiske regel for evaluering af disse to rabatter mod hinanden.
 
-![Regel for evaluering af rabatterne.](./media/overlapping-discount-combo-02.jpg)
+![Regel for evaluering af rabatterne](./media/overlapping-discount-combo-02.jpg)
 
 > [!NOTE]
 > Når prisen på produkt 1 er lig med to tredjedele af prisen på produkt 2, er de to rabatter lig hinanden. I dette eksempel varierer effektive rabatprocent for rabat 1 f.eks. fra et par procent (når priserne på de to produkter er langt fra hinanden) til maksimalt 25 procent (når de to produkter har den samme pris). Effektiv rabatprocent for rabat 2 er fast. Den er altid 20 procent. Da den effektive rabatprocent for rabat 1 har et interval, der kan være større eller mindre end rabat 2, afhænger den bedste rabat af priserne på de to produkter, der skal gives rabat på. I dette eksempel udføres beregningen hurtigt, fordi der kun anvendes to rabatter på kun to produkter. Der er kun to mulige kombinationer: én anvendelse af rabat 1 eller én anvendelse af rabat 2. Der er ingen kombinationsmuligheder, der skal beregnes. Værdien af hver rabat beregnes ved hjælp af begge produkter, og den bedste rabat bruges.
@@ -57,11 +60,11 @@ Derefter skal bruge vi fire produkter og de samme to rabatter. Alle fire produkt
 
 For at læse tabellerne, skal du bruge et produkt fra en række og ét produkt fra en kolonne. I tabellen til rabat 1 får du f.eks. $10 i rabat, når du kombinerer de to produkter til $20. I tabellen til rabat 2 får du $4 i rabat, når du kombinerer produktet til $15 og produktet til $5.
 
-![Eksempel, hvor fire produkter bruges til de samme to rabatter.](./media/overlapping-discount-combo-03.jpg)
+![Eksempel, hvor fire produkter bruges til de samme to rabatter](./media/overlapping-discount-combo-03.jpg)
 
 Først skal vi finde den største rabat, der er tilgængelig for to vilkårlige produkter ved hjælp af begge rabatter. De to tabeller vises rabatbeløbet for alle kombinationer af de to produkter. De nedtonede dele af tabellerne repræsenterer enten tilfælde, hvor et produkt er parret med sig selv, hvilket vi ikke kan gøre, eller omvendt parring af to produkter, der giver det samme rabatbeløb og kan ignoreres. Ved at kigge på tabellerne, kan du se, at rabat 1 for de to $20 varer er den største rabat, der er tilgængelig for begge rabatter på alle fire produkter. (Denne rabat er fremhævet med grønt i den første tabel.) Det efterlader kun $15 produktet og $5 produktet. Ved at kigge på de to tabeller igen, kan du se, at for disse to produkter giver rabat 1 en rabat på $2,50, hvorimod rabat 2 giver en rabat på $4. Derfor vælger vi rabat 2. Den totale rabat er $14. For at gøre det nemmere at visualisere denne diskussion, er her to yderligere tabeller, der vises den effektive rabatprocent for alle mulige kombinationer af to produkter for både rabat 1 og rabat 2. Kun halvdelen oversigten over kombinationer er inkluderet, fordi den rækkefølge, hvori de to produkter er anbragt, ikke har nogen betydning. Den højeste effektive rabat (25 procent) er fremhævet med grønt og den laveste effektive rabat (10 procent) er fremhævet med rødt.
 
-![Effektiv rabatprocent for alle kombinationer af to produkter for begge rabatter.](./media/overlapping-discount-combo-04.jpg)
+![Effektiv rabatprocent for alle kombinationer af to produkter for begge rabatter](./media/overlapping-discount-combo-04.jpg)
 
 > [!NOTE]
 > Når priser varierer, og to eller flere rabatter konkurrerer, er den eneste måde til at sikre den bedste kombination af rabatter at evaluere begge rabatter og sammenligne dem.
@@ -78,9 +81,6 @@ Når der anvendes større mængder eller flere overlappende rabatter, når det s
 
 Til at løse problemet med et eksponentielt stigende antal kombinationer, der skal evalueres, findes der en optimering, der beregner værdien pr. delt produkt for hver rabat på det sæt af produkter, hvor der kan anvendes to eller flere rabatter. Vi kalder denne værdi den **marginale værdi** af rabatten for de delte produkter. Den marginale værdi er den gennemsnitlige stigning pr. produkt stigning i det samlede rabatbeløb, når de delte produkter er inkluderet i hver rabat. Den marginale værdi beregnes ved at tage det samlede rabatbeløb (DTotal) og fratrække rabatbeløbet uden delte produkter (DMinus\\ Shared), og dividere forskellen med antallet af delte produkter (ProductsShared).
 
-![Formel til beregning af marginal værdi.](./media/overlapping-discount-combo-06.jpg)
+![Formel til beregning af marginal værdi](./media/overlapping-discount-combo-06.jpg)
 
 Når den marginale værdi af hver rabat på et delt sæt produkter er beregnet, anvendes rabatterne på de delte produkter i rækkefølge, udtømmende, fra højeste marginale værdi til laveste marginale værdi. I denne metode sammenlignes alle resterende rabatmuligheder ikke hver gang, når der anvendes en enkelt forekomst af en rabat. I stedet sammenlignes de overlappende rabatter én gang og anvendes derefter i rækkefølge. Der foretages ingen yderligere sammenligninger. Du kan konfigurere tærsklen for at skifte til metoden for marginal værdi under fanen **Rabat** på siden **Commerce-parametre**. Den acceptable tid til at beregne den samlede rabat varierer på tværs af detailbrancher. Men generelt ligger denne tid dog i intervallet fra nogle tiendedele af millisekunder til et sekund.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

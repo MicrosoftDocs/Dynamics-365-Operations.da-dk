@@ -1,34 +1,33 @@
 ---
 title: Kompensationsplaner
-description: Dette emne beskriver, hvordan kompensationsstyring bruges til at administrere og behandle kompensationsplaner.
-author: twheeloc
-ms.date: 08/25/2021
-ms.topic: overview
+description: Ledere for kompensation og frynsegoder kan bruge kompensationsstyring til at vedligeholde og behandle faste og variable lønstrukturer for organisationens medarbejdere.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
+ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066894"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417764"
 ---
 # <a name="compensation-plans"></a>Kompensationsplaner
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Ledere for kompensation og frynsegoder kan bruge **Kompensationsstyring** til at vedligeholde og behandle faste og variable kompensationsplaner for organisationens medarbejdere.
+Ledere for kompensation og frynsegoder kan bruge kompensationsstyring til at vedligeholde og behandle faste og variable lønstrukturer for organisationens medarbejdere.
 
 ### <a name="introduction"></a>Introduktion
 
@@ -45,7 +44,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 <thead>
 <tr class="header">
 <th>Komponent</th>
-<th>Flere oplysninger</th>
+<th>Flere oplysninger...</th>
 </tr>
 </thead>
 <tbody>
@@ -91,7 +90,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 </tr>
 <tr class="even">
 <td>Referencepunkt</td>
-<td>Referencepunktet definerer, hvad du mener er den ideelle lønsats for alle medarbejdere på et kompensationsniveau. For planstrukturer for trin er referencepunkterne typisk rammens midtpunkt. Tværgående strukturer bruger sjældent kontrolpunkter. Du kan angive kontrolpunktet til en fast lønstruktur på siden **Fast løn-strukturer**.</td>
+<td>Referencepunktet definerer, hvad du mener er den ideelle lønsats for alle medarbejdere på et kompensationsniveau. For planstrukturer for trin er referencepunkterne typisk rammens midtpunkt. Tværgående strukturer bruger sjældent kontrolpunkter. Du kan angive kontrolpunktet til en fast lønstruktur i formularen Faste lønstrukturer.</td>
 </tr>
 <tr class="odd">
 <td>Jobfunktioner</td>
@@ -123,7 +122,8 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 ## <a name="process-events"></a>Proceshændelser
 En proceshændelse beregner lønoplysninger for en bestemt periode for alle medarbejdere, der er tilmeldt en eller flere strukturer for fast eller variabel løn. Du kan køre en proceshændelse gentagne gange for at teste eller opdatere beregnede lønresultater.
 
-## <a name="compensation-events"></a>Kompensationshændelser
+<a name="compensation-events"></a>Kompensationshændelser
+-------------------
 
 Hver gang en proceshændelse afvikles, oprettes der en kompensationshændelse.  Kompensationshændelser indeholder resultaterne af kompensationsprocessen for hver medarbejder, der er inkluderet i denne proceshændelse.  Når disse beregninger er korrekte, kan du indlæse kompensationshændelsen for at opdatere lønposterne for de medarbejdere, der er berørt af proceshændelsen.
 
@@ -132,6 +132,3 @@ Når du har kørt en proceshændelse, kan du anbefale justeringer i en medarbejd
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

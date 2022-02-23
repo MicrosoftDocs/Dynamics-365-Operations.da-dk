@@ -1,32 +1,35 @@
 ---
 title: Lineær afskrivning for levetiden
-description: Dette emne indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
-author: moaamer
+description: Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b34cdf9485d38cdbf1362bd605841201a4295f26
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 7b7b9b240156263b4dc1bc308a7f4457380a27f3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675265"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441592"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Lineær afskrivning for levetiden
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
+Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
 
 Når du opretter en afskrivningsprofil for anlægsaktiver og vælger Lineær afskrivning over servicelevetiden i feltet Metode på siden Afskrivningsprofiler, baseres afskrivningen af aktiver med denne tilknyttede afskrivningsprofil, på baggrund af den samlede levetid for anlægsaktivet. Det vil normalt sige med det samme afskrivningsbeløb for hver afskrivningsperiode. 
 
@@ -44,11 +47,11 @@ Hvis du vælger Kalender, vises der som standard et år fra d. 1. januar til d. 
 Indstillingen Kalender opdaterer afskrivningsgrundlaget (typisk bogført nettoværdi minus scrapværdi) d. 1. januar hvert år. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. 
 
 Hvis du vælger Kalender, kan du vælge mellem følgende indstillinger i feltet Periodefrekvens, der definerer datoer og beløb for periodiseringen af afskrivningsposteringerne i hele kalenderåret.
-- Årligt bogfører et beløb d. 31. december.
-- Ved Månedligt bogføres et månedligt beløb sidst i hver kalendermåned.
-- Ved Kvartalsvis bogføres et kvartalsmæssigt beløb sidst i hvert kalenderkvartal (d. 31. marts, d. 30. juni, d. 30. september og d. 31. december).
-- Halvårlig bogføres et halvårligt beløb sidst i hvert kalenderhalvår (d. 30. juni og d. 31. december).
-- Ved Dagligt bogføres afskrivningsbeløbet for afskrivningsmetoden dagligt ved hjælp af en postering for hver dag.
+-   Årligt bogfører et beløb d. 31. december.
+-   Ved Månedligt bogføres et månedligt beløb sidst i hver kalendermåned.
+-   Ved Kvartalsvis bogføres et kvartalsmæssigt beløb sidst i hvert kalenderkvartal (d. 31. marts, d. 30. juni, d. 30. september og d. 31. december).
+-   Halvårlig bogføres et halvårligt beløb sidst i hvert kalenderhalvår (d. 30. juni og d. 31. december).
+-   Ved Dagligt bogføres afskrivningsbeløbet for afskrivningsmetoden dagligt ved hjælp af en postering for hver dag.
 
 Hvis du f.eks. vælger Årligt, bogføres den årlige afskrivning kun én gang, nemlig d. 31. december hvert år. Hvis du vælger Månedligt, bogføres den månedlige afskrivning hver måned med 1/12 af det årlige afskrivningsbeløb.
 
@@ -59,15 +62,15 @@ Hvis du vælger Regnskabsår i feltet Afskrivningsår, bruges den lineære afskr
 I forbindelse med regnskabsåret fra d. 1. juli til og med d. 30. juni starter afskrivningsberegningen f.eks. d. 1. juli. Regnskabsåret kan være længere eller kortere end 12 måneder. Afskrivningen reguleres automatisk for hver regnskabsperiode. Længden på regnskabsåret er baseret på de regnskabsperioder, du angiver, når du opretter et nyt regnskabsår i formen Regnskabskalendere. 
 
 Hvis du vælger Regnskab, kan du vælge mellem følgende indstillinger i feltet Periodefrekvens:
-- Årligt bogfører det samlede afskrivningsbeløb, der beregnes for regnskabsåret som ét beløb på den sidste dag i regnskabsåret.
-- Regnskabsperiode beregner det samlede afskrivningsbeløb for regnskabsåret, der periodiseres for de perioder, der er defineret i formen Regnskabskalendere for regnskabskalenderen.
+-   Årligt bogfører det samlede afskrivningsbeløb, der beregnes for regnskabsåret som ét beløb på den sidste dag i regnskabsåret.
+-   Regnskabsperiode beregner det samlede afskrivningsbeløb for regnskabsåret, der periodiseres for de perioder, der er defineret i formen Regnskabskalendere for regnskabskalenderen.
 
 ## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Eksempel: Lineær afskrivning af et uændret anlægsaktiv
 Det antages, at anlægsaktivet har følgende karakteristika.
 
-| Egenskab      | Værdi  |
-|:---------------------|--------:|
-| Anskaffelsesomkostning    | 11,000 |
+|                     |        |
+|---------------------|--------|
+| Anskaffelsesomkostninger    | 11.000 |
 | Restværdi       | 1.000  |
 | Afskrivningsgrundlag   | 10.000 |
 | Levetid i år  | 5      |
@@ -76,7 +79,7 @@ Det antages, at anlægsaktivet har følgende karakteristika.
 Dette giver det samme afskrivningsbeløb for hvert år. (Anskaffelsesomkostninger - restværdi)/levetiden i år
 
 | Periode | Beregning af det årlige afskrivningsbeløb | Den bogførte nettoværdi ved årets afslutning |
-|:--------:|:-------------------------------------------|---------------------------------------:|
+|--------|-------------------------------------------|---------------------------------------|
 | År 1 | (11.000 - 1.000) / 5 = 2.000              | 9.000                                 |
 | År 2 | (11.000 - 1.000) / 5 = 2.000              | 7.000                                 |
 | År 3 | (11.000 - 1.000) / 5 = 2.000              | 5.000                                 |
@@ -90,7 +93,7 @@ Forestil dig, at du føjer en anskaffelsesregulering på 4.000 i år 2 til det s
 Levetiden for anskaffelsesreguleringen er den samme som for anlægsaktivet og begynder ved anskaffelsen. Der er en bogført nettoværdi tilbage ved afslutningen af år 5. Denne svarer til den bogført nettoværdi for anskaffelsesreguleringen. Den periodeopdelte afskrivning beregnes som angivet i følgende tabel.
 
 | Periode | Beregning af det årlige afskrivningsbeløb | Den bogførte nettoværdi ved årets afslutning |
-|:--------:|:-------------------------------------------|---------------------------------------:|
+|--------|-------------------------------------------|---------------------------------------|
 | År 1 | 10.000 / 5 = 2.000                        | 11.000 - 2.000 = 9.000                |
 | År 2 | 4000 (anskaffelsesregulering)            | 9.000 + 4.000 =13.000                 |
 | År 2 | 14.000 / 5 = 2.800                        | 13.000 - 2.800 = 10.200               |
@@ -105,6 +108,3 @@ Levetiden for anskaffelsesreguleringen er den samme som for anlægsaktivet og be
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

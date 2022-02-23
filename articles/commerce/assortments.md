@@ -2,22 +2,25 @@
 title: Sortimentsstyring
 description: I dette emne beskrives de grundlæggende begreber for sortimentsstyring i Dynamics 365 Commerce og overvejelser i forbindelse med implementering af projekter.
 author: jblucher
+manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 1ff4929e8789748433f4e9386397431e174a85f81518d2e0a1d8f9ea68211fa6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717765"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411006"
 ---
 # <a name="assortment-management"></a>Sortimentsstyring
 
@@ -35,27 +38,27 @@ Den overordnede blanding af produkter på en kanal afhænger af de publicerede s
 
 I følgende eksempel er der konfigureret et entydigt sortiment for hver butik. I eksemplet er kun produkt 1 tilgængeligt på lager 1, og kun produkt 2 er tilgængeligt i butik 2.
 
-![Hvert produkt er tilgængeligt i én butik.](./media/Managing-assortments-figure1.png)
+![Hvert produkt er tilgængeligt i én butik](./media/Managing-assortments-figure1.png)
 
 Hvis du vil gøre produkt 2 tilgængeligt i butik 1, kan du føje produktet til sortiment 1.
 
-![Produkt 2 blev føjet til sortiment 1.](./media/Managing-assortments-figure2.png)
+![Produkt 2 blev føjet til sortiment 1](./media/Managing-assortments-figure2.png)
 
 Du kan også føje butik 1 til sortiment 2.
 
-![Butik 1 blev føjet til sortiment 2.](./media/Managing-assortments-figure3.png)
+![Butik 1 blev føjet til sortiment 2](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisationshierarkier
 
 I situationer, hvor flere kanaler deler de samme produktsortimenter, kan du konfigurere sortimenterne ved hjælp af sortimentsorganisationshierarkiet i Commerce. Når der tilføjes noder fra dette hierarki, medtages alle kanaler i den pågældende node og dens underordnede noder.
 
-![Organisationshierarki.](./media/Managing-assortments-figure4.png)
+![Organisationshierarki](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Produktkategorier
 
 På samme måde kan du på produktsiden medtage grupper af produkter ved hjælp af produktkategorihierarkier. Du kan konfigurere sortimenter ved at medtage en eller flere kategorihierarkinoder. I dette tilfælde omfatter sortimentet alle produkter i kategorinoden og dens underordnede noder.
 
-![Produktkategorier.](./media/Managing-assortments-figure5.png)
+![Produktkategorier](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Udeladte produkter eller kategorier
 
@@ -64,7 +67,7 @@ Ud over at medtage produkter og kategorier i sortimenter kan du bruge indstillin
 > [!NOTE]
 > Hvis et produkt er både medtaget og udeladt i et eller flere sortimenter pr. definition, bliver produktet altid betragtet som udeladt.
 
-![Udeladt produkt.](./media/Managing-assortments-figure6.png)
+![Udeladt produkt](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globale og frigivne produkter
 
@@ -104,6 +107,3 @@ Overvej følgende implementeringskrav, når du planlægger og administrerer sort
 - **Salg og returneringer uden for et sortiment** – Denne funktion hjælper detailhandlere med effektivt at styre deres sortimenter ved at lade dem med at begrænse antallet af tilgængelige produkter til produkter, der hører til den centrale produktsammensætning for butikken. Denne funktion hjælper også detailhandlere med at håndtere situationer, hvor et produkt ved en fejltagelse er udeladt fra et sortiment, eller hvor der blev returneret et produkt uden for ikrafttrædelsesdatoerne for sortimentet.
 
 Hvis produktdataene ikke findes i kanaldatabasen, foretager POS kald i realtid til hovedkontoret for at få de nødvendige oplysninger, så produktet kan blive solgt, returneret eller sættes på en debitorordre. Produktoplysninger, der hentes på denne måde, er kun tilgængelige for den pågældende transaktion. Produktet føjes ikke til sortimentsdefinitionen. Derfor vil efterfølgende kald i realtids blive foretaget efter behov.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

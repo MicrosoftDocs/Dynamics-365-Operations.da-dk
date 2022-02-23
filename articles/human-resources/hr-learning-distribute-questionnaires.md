@@ -1,39 +1,37 @@
 ---
-title: Udsende og planlægge spørgeskemaer.
-description: I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem.
-author: twheeloc
-ms.date: 10/28/2021
+title: Udsende og planlægge spørgeskemaer
+description: Denne artikel beskriver, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbb069110b46c38a994a7be6276137360b14397a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0329b80615eed6efcc22bb0b140970988f5c306a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069523"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417867"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Udsende og planlægge spørgeskemaer.
+# <a name="distribute-and-schedule-questionnaires"></a>Udsende og planlægge spørgeskemaer
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. 
+Denne artikel beskriver, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. 
 
 Der er flere måder at distribuere et spørgeskema på:
 
--   Markér spørgeskemaet som **Aktivt**. Spørgeskemaet er derefter tilgængeligt for alle medarbejdere, medmindre der er oprettet en spørgeskemagruppe for at begrænse adgangen til det.
+-   Markér spørgeskemaet som aktivt. Spørgeskemaet er derefter tilgængeligt for alle medarbejdere, medmindre der er oprettet en spørgeskemagruppe for at begrænse adgangen til det.
 -   Tildel rettigheder til en spørgeskemagruppe. Spørgeskemaet er derefter tilgængeligt for alle medlemmer af den valgte gruppe.
 -   Opret planlagte besvarelser. Spørgeskemaet er derefter kun tilgængeligt for én bestemt person.
 -   Opret tidsplan. Spørgeskemaet kan derefter være tilgængeligt for flere personer.
@@ -114,7 +112,7 @@ Hvis du bruger en planlagt besvarelse, skal du give personen besked direkte, f.e
 Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet. Angiv mailteksten under fanen **Mail til medarbejderselvbetjening**. Når planen er startet, skal du klikke på **Funktioner** &gt; **Send mail** for at generere og sende mailen til svarpersonerne. Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet. 
 
 > [!NOTE]
-> Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **Mailparametre**.
+> Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Afslutning af et planlagt spørgeskema
 
@@ -133,6 +131,3 @@ Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfylde
 Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper eller for alle brugere på et netværk.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

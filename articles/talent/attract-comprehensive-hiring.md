@@ -85,6 +85,3 @@ Der er adskillige årsager til, at du muligvis ikke ser alle de funktioner i Att
 
 - Din kollega arbejder i en prøveversion eller har en licens til Attract med tilføjelsesprogrammet Omfattende ansættelser, hvorimod du arbejder i Attract-basisversionen.
 - Du har Attract med tilføjelsesprogrammet Omfattende ansættelser, men du har endnu ikke fået tildelt de korrekte roller til at kunne anvende alle funktionerne. Du kan finde flere oplysninger i [Sikkerheds- og rollestyring i Attract](security-attract.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: Konfigurere indbetalingskortformat for projektfakturaer
-description: Emnet forklarer, hvordan du vedhæfter udskrevne indbetalingskort til projektfakturaer og angiver en betalingsreference til brug ved bogføring og betaling.
+description: Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 88bdce7697e47fc49b6ffb2fe6a8a468860f41f3
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: c843f3b504d8390b26fdc94dd747a73de75df6a9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601494"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441603"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Konfigurere indbetalingskortformat for projektfakturaer
 
@@ -63,6 +66,3 @@ Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære ad
 16. Klik på Gem.
 17. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

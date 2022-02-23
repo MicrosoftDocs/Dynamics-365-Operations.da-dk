@@ -1,10 +1,12 @@
 ---
 title: Parametre til aktivstyring
 description: I aktivstyring skal der oprettes generelle parametre vedrørende aktiver, arbejdsordrer og planlægning af arbejdsordrer.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1deef00f01d83bc809a004265c386ba9d300df5fa4a1be245812ed5632059f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751955"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020647"
 ---
 # <a name="asset-management-parameters"></a>Parametre til aktivstyring
 
@@ -99,11 +101,8 @@ De felter, der er beskrevet i følgende liste, relaterer alle til beregnede rang
 
 ## <a name="the-document-types-tab"></a>Fanen Dokumenttyper
 
-Vælg de dokumenttyper, der skal være tilgængelige for udskrivning af vedhæftede filer i forbindelse med en arbejdsordrerapport. Dette gøres ved at vælge en dokumenttype i sektionen **Tilgængelig** og vælge ![fremadrettet pil.](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, skal du vælge dokumenttypen i sektionen **Valgt** og vælge ![tilbage-pil](media/16-setup-for-objects.png).
+Vælg de dokumenttyper, der skal være tilgængelige for udskrivning af vedhæftede filer i forbindelse med en arbejdsordrerapport. Dette gøres ved at vælge en dokumenttype i sektionen **Tilgængelig** og vælge ![fremadrettet pil](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, skal du vælge dokumenttypen i sektionen **Valgt** og vælge ![tilbage-pil](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Fanen Nummerserier
 
 Vælg de påkrævede nummerserier i dette afsnit. Der er to nummerserier for aktiver: én for manuelt oprettede aktiver og én for aktiver, som er oprettet via ventende aktiver.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

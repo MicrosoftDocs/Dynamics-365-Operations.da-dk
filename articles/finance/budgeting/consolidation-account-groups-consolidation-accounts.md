@@ -1,38 +1,42 @@
 ---
 title: Koncernkontogrupper og yderligere koncernkonti
-description: Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af koncernkonti og om, hvordan de bruges.
-author: panolte
+description: Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af koncernkonti og om, hvordan de bruges i Microsoft Dynamics 365 Finance.
+author: aprilolson
+manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
-ms.author: roschlom
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 489f5417b6044e02d4711a03a17d6c19031cc2ee
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 8db7a60656434aafd8114b08c2c0e9493140f27b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883381"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441682"
 ---
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Koncernkontogrupper og supplerende koncernkonti
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Koncernkontogrupper og yderligere koncernkonti
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af koncernkonti og om, hvordan de bruges.
+Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af koncernkonti og om, hvordan de bruges i Microsoft Dynamics 365 Finance.
 
-## <a name="consolidation-account-groups"></a>Koncernkontogrupper
+<a name="consolidation-account-groups"></a>Koncernkontogrupper
+----------------------------
 
-Med koncernkontogrupper kan du oprette grupper af konti, du vil bruge til at konsolidere data. En koncernkontogruppe repræsenterer typisk en lovpligtig kontoplan. En koncernkontogruppe kan også knytte konti til en gruppe, der er defineret af firmaets hovedkontor. Du kan finde koncernkontogrupper i **Opsætning**-området af modulet **Konsolideringer**. Når du tilføjer en ny gruppe, angiver du en entydig identifikator for kontogruppen sammen med et navn.
+Med koncernkontogrupper kan du oprette grupper af konti, du vil bruge til at konsolidere data. Oftest repræsenterer en koncernkontogruppe en lovpligtig kontoplan eller knytter konti til en gruppe, der er defineret af virksomhedens hovedkontor. Du kan finde koncernkontogrupper i **Opsætning**-området af modulet **Konsolideringer**. Når du tilføjer en ny gruppe, angiver du en entydig identifikator for kontogruppen og et navn.
 
-## <a name="additional-consolidation-accounts"></a>Yderligere koncernkonti
+## <a name="additional-consolidation-accounts"></a>Flere koncernkonti
 Med flere koncernkonti kan du tildele en konto fra en eksisterende kontoplan til en koncernkontogruppe. Du kan derefter angive en værdi og et navn til koncernkontoen. 
 
 Du kan finde flere koncernkonti i **Opsætning**-området af modulet **Konsolideringer**. Når du opretter en ny koncernkonto, skal du angive følgende oplysninger:
@@ -50,6 +54,3 @@ Du kan finde flere oplysninger under [Oprette koncerngrupper og supplerende konc
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

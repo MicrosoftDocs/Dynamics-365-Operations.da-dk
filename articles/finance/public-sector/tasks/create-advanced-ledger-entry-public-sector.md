@@ -2,9 +2,11 @@
 title: Oprette en avanceret finanspost i den offentlige sektor
 description: Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter.
 author: twheeloc
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AdvancedLedgerEntry, AdvancedLedgerEntryCreate, ProjTableLookup, ProjCategoryLookUp
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5db0dff5080954e83d81a29662a09939395c98ef7d50c7192abebce61a1df554
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9eac5b0834e95139abe8d4df7ec06d894fe0aec
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766912"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968223"
 ---
 # <a name="create-an-advanced-ledger-entry-in-the-public-sector"></a>Oprette en avanceret finanspost i den offentlige sektor
 
@@ -47,6 +49,3 @@ Organisationer i den offentlige sektor kan bruge avancerede finansposter til at 
     * Føj et debetbeløb eller kreditbeløb til linjen. Hvis det er nødvendigt, skal du klikke på Tilføj linje for at tilføje flere linjer.  
 17. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

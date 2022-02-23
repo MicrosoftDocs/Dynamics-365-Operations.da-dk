@@ -2,9 +2,11 @@
 title: Oprette et nyt produkt i Commerce
 description: Dette emne beskriver, hvordan du opretter et nyt produkt i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 73911d9d8e3fdc6d72eadb8d071382e15dd5375eae8274f88d88b1078e7720f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b578c1bdfe1c6b4bf66cc85cc09ed906fb812a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753716"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965299"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Oprette et nyt produkt i Commerce
 
@@ -28,7 +30,7 @@ ms.locfileid: "6753716"
 
 Dette emne beskriver, hvordan du opretter et nyt produkt i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Overblik
+## <a name="overview"></a>Oversigt
 
 Et produkt defineres primært af produktnummer, navn og beskrivelse. Andre data er dog også nødvendige for at beskrive en vare eller tjenesteydelse:
 
@@ -49,13 +51,13 @@ Et produkt defineres primært af produktnummer, navn og beskrivelse. Andre data 
 
 Følgende billede viser et eksempel på tilføjelse af produkt.
 
-![Oprette et produkt.](media/create-new-product.png)
+![Oprette et produkt](media/create-new-product.png)
 
 Når et produkt er tilføjet, kan der angives yderligere data for det, f.eks. **Produktbeskrivelse**, **Variantgrupper**, **Dimensionsgrupper**, **Produktattributter** og **Relaterede produkter**.
 
 Følgende billede viser flere oplysninger om et produkt.
 
-![Produktdetaljer.](media/create-new-product-2.png)
+![Produktdetaljer](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Opret produktvarianter
 
@@ -74,23 +76,23 @@ Hvis du vil sælge et produkt, skal det først frigives til en juridisk enhed.
 
 1. Vælg **Frigiv produkter** på produktsiden.
 
-    ![Frigiv produkt.](media/create-new-product-3.png)
+    ![Frigive produkt](media/create-new-product-3.png)
 
 1. Vælg det produkt, der skal frigives, og vælg derefter **Næste**.
 
-    ![Vælge produkt til frigivelse.](media/create-new-product-4.png)
+    ![Vælge produkt til frigivelse](media/create-new-product-4.png)
 
 1. Vælg den række produktvarianter, der skal frigives, og vælg derefter **Næste**.
 
-    ![Vælge varianter til frigivelse.](media/create-new-product-5.png)
+    ![Vælge varianter til frigivelse](media/create-new-product-5.png)
 
 1. Vælg den juridiske enhed, og vælg derefter **Næste**.
 
-    ![Vælg juridisk enhed.](media/create-new-product-6.png)
+    ![Vælg juridisk enhed](media/create-new-product-6.png)
 
 1. Vælg **Udfør**.
 
-    ![Udføre produktfrigivelse.](media/create-new-product-7.png)
+    ![Udføre produktfrigivelse](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Konfigurere et frigivet produkt
 
@@ -105,13 +107,10 @@ Når et produkt er frigivet, kræver det en yderligere konfiguration, der omfatt
 
 Følgende billede viser et eksempel på konfiguration af et frigivet produkt.
 
-![Konfigurere frigivet produkt.](media/create-new-product-8.png)
+![Konfigurere frigivet produkt](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Opret juridiske enheder](channels-legal-entities.md)
+[Oprette juridiske enheder](channels-legal-entities.md)
 
 [Oprette en variantgruppe](create-variant-group.md) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

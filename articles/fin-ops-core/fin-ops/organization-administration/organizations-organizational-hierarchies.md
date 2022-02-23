@@ -1,28 +1,28 @@
 ---
 title: Oversigt over organisationer og organisationshierarkier
-description: Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af.
+description: En organisation er en grupper personer, der arbejder sammen for at udføre en forretningsproces eller nå et mål. Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af.
 author: sericks007
-ms.date: 01/03/2022
-ms.topic: overview
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
-ms.custom:
-- "17291"
-- intro-internal
+ms.custom: 17291
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 368569f2cdd389b6fc99ddcf05f35cc9a750ec9e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7992076"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797039"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Oversigt over organisationer og organisationshierarkier
 
@@ -54,7 +54,7 @@ Typerne af driftsenheder omfatter bærere, virksomhedsenheder, værdistrømme, a
 | Virksomhedsenhed       | En halvautomatisk driftsenhed, der er skabt for at nå strategiske forretningsmålsætninger. | Bruges til regnskabsaflægning, der er baseret på brancher eller produktlinjer, som organisationen betjener uafhængigt af juridiske enheder. |
 | Værdistrøm        | En driftsenhed, der kontrollerer en eller flere produktionsflow. | Bruges normalt ved lean produktion til kontrol af aktiviteter og flow, der er påkrævet for at levere et produkt eller en tjeneste til forbrugere. |
 | Afdeling          | En driftsenhed, der repræsenterer en kategori eller funktionel del af en organisation, der udfører en bestemt opgave, som f.eks. salg eller regnskab. | Bruges til afrapportering for funktionelle områder. En afdeling kan have ansvar for driftsregnskabet og kan bestå af en gruppe af bærere. |
-| Detailkanal      | En driftsenhed, der repræsenterer en fysisk butik, en onlinebutik eller et callcenter. | Bruges til styring og driftskontrol af en eller flere butikker inden for eller på tværs af juridiske enheder. |
+| Handelskanal      | En driftsenhed, der repræsenterer en fysisk butik, en onlinebutik eller en onlinemarkedsplads. | Bruges til styring og driftskontrol af en eller flere butikker inden for eller på tværs af juridiske enheder. |
 
 ### <a name="teams"></a>Team
 
@@ -64,19 +64,6 @@ Et team er en organisation, hvis medlemmer deler et fælles ansvar, en fælles i
 
 Opret organisationshierarkier for at få vist og rapportere om forskellige perspektiver i virksomheden. Du kan f.eks. oprette et hierarki for juridiske enheder til skattemæssig, juridisk eller lovpligtig rapportering. Opret et hierarki, der er baseret på driftsenheder, for at rapportere økonomiske oplysninger, der ikke er juridisk påkrævet, men bruges til intern kontrol. Du kan f.eks. oprette et indkøbshierarki for at kontrollere indkøbspolitikker, regler og forretningsprocesser.
 
-> [!NOTE]
-> Når der er føjet en driftsenhed til et hierarki, kan driftsenheden ikke slettes. 
-
 Hvert hierarki er tildelt et formål. Formålet med et hierarki afgør, hvilke organisationstyper der kan medtages i hierarkiet. Formålet definerer også de anvendelsesscenarier, hierarkiet kan bruges i.
 
 Organisationer i et hierarki kan dele parametre, politikker og transaktioner. En organisation kan nedarve eller tilsidesætte parametrene for dens overordnede organisation. Delte masterdata, som f.eks. produkter og adressekartoteker, gælder for hele organisationen og kan ikke tilsidesættes for individuelle organisationer. Oprettelse af organisationer og hierarkier kræver omhyggelig planlægning. Du kan finde flere oplysninger under [Planlæg dit organisationshierarki](plan-organizational-hierarchy.md).
-
-## <a name="additional-resources"></a>Yderligere ressourcer
-- [Planlægge dit organisationshierarki](plan-organizational-hierarchy.md)
-- [Oprette et organisationshierarki](tasks/create-organization-hierarchy.md)
-- [Oprette en juridisk enhed](tasks/create-legal-entity.md)
-- [Oprette en driftsenhed](tasks/create-operating-unit.md)
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

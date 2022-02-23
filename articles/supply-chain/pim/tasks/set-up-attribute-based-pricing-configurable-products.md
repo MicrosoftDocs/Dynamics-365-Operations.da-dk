@@ -1,24 +1,27 @@
 ---
 title: Konfigurere attributbaseret prissætning for konfigurerbare produkter
 description: I dette emne beskrives, hvordan du opretter attributbaserede priser.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4acd7b423396124dd1059602f5aa6460ec5e259
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3a75f3afcf4761ac6a9575eae9a620a1e9f01c8e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578146"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424477"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Konfigurere attributbaseret prissætning for konfigurerbare produkter
 
@@ -28,18 +31,17 @@ I dette emne beskrives, hvordan du opretter attributbaserede priser. Som en foru
 
 
 ## <a name="create-a-new-price-model"></a>Opret en ny prismodel
-
-1. Gå til **Administration af produktoplysninger \> Produkter \> Produktkonfigurationsmodeller**.
-1. På listen skal du vælge linjen **Højttaler af topkvalitet**, men vælg ikke linket for navnet.
-1. Vælg **Model** i handlingsruden.
-1. Vælg **Prismodeller**.
-1. Vælg **Ny**.
-1. Angiv en værdi i feltet **Navn på prismodel**. Brug et navn, der gør det nemt at identificere modellen.  
-1. Indtast en værdi i feltet **Beskrivelse**.
-1. Vælg **Gem**.
+1. Vælg **Definition af produktvariantmodel** på startsiden.
+2. Vælg **Produktkonfigurationsmodeller** i sektionen **Links**.
+3. På listen skal du vælge linjen **Højttaler af topkvalitet**, men vælg ikke linket for navnet.
+4. Vælg **Model** i handlingsruden.
+5. Vælg **Prismodeller**.
+6. Vælg **Ny**.
+7. Angiv en værdi i feltet **Navn på prismodel**. Brug et navn, der gør det nemt at identificere modellen.  
+8. Indtast en værdi i feltet **Beskrivelse**.
+9. Vælg **Gem**.
 
 ## <a name="add-price-elements"></a>Tilføj priselementer
-
 1. Vælg **Rediger**. Hver komponent i en produktmodel kan have et basispriselement og et vilkårligt antal prisudtryksregler. Du kan også tilføje priser i forskellige valutaer.  
 2. Indtast en værdi i feltet **Basisprisudtryk**. Skriv for eksempel 100. En basisprisudtryk kan være en numerisk værdi, eller det kan bestå af en matematisk beregning, der omfatter en eller flere attributter.  
 3. Vælg **Tilføj**.
@@ -50,6 +52,3 @@ I dette emne beskrives, hvordan du opretter attributbaserede priser. Som en foru
 8. Skriv en værdi i feltet **Udtryk**. Skriv f.eks. `50`. 
 9. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

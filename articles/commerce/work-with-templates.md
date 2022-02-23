@@ -2,30 +2,36 @@
 title: Arbejde med skabeloner
 description: Dette emne beskriver, hvordan du kan arbejde med skabeloner i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090788"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411093"
 ---
 # <a name="work-with-templates"></a>Arbejde med skabeloner
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan arbejde med skabeloner i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Som nævnt i [Oversigt over skabeloner og layout](templates-layouts-overview.md) definerer skabeloner det sæt indstillinger, der er tilgængelige for downstream-forfattere. Skabeloner er nyttige for en virksomheds webudviklerteam af flere årsager, og velstrukturerede skabeloner kan hjælpe med alle følgende mål:
 
@@ -49,7 +55,7 @@ Som nævnt i [Oversigt over skabeloner og layout](templates-layouts-overview.md)
 
 Skabeloner redigeres ved hjælp af skabeloneditoren.
 
-Hvis du vil åbne skabeloneditoren i Commerce-webstedsgenerator, skal du følge et af disse trin:
+Benyt en af følgende fremgangsmåder for at åbne skabeloneditoren:
 
 - Vælg **Skabeloner** i navigationsruden på dit websted, og vælg derefter den skabelon, der skal redigeres.
 - Vælg topnoden i dispositionstræet til venstre i sideeditoren for en eksisterende side. Vælg derefter **Rediger skabelon** i egenskabsruden til højre.
@@ -66,7 +72,7 @@ I dispositionstræet til venstre vises de modulindstillinger og -strukturer, der
 
 ## <a name="create-a-new-template"></a>Opret en ny skabelon
 
-Udfør følgende trin for at oprette en ny skabelon i webstedsgenerator.
+Følg disse trin for at oprette en ny skabelon.
 
 1. Vælg **Skabeloner** i navigationsruden på dit websted for at åbne skabelonfremviseren.
 1. Vælg **Ny skabelon**.
@@ -85,7 +91,7 @@ Skabelonen er nu teknisk gyldig, og den kan gemmes, checkes ind og bruges til at
 
 ## <a name="add-a-header-and-a-footer"></a>Tilføje et sidehoved og en sidefod
 
-Hvis webstedet allerede har et sidehovedfragment, skal du udføre disse trin i webstedsgenerator for at føje et sidehoved og en sidefod til en skabelon.
+Hvis webstedet allerede har et sidehovedfragment, skal du udføre disse trin for at føje et sidehoved og en sidefod til en skabelon.
 
 1. Udvid **Brødtekst**-pladsen og dets underordnede sidemodul i dispositionstræet.
 1. Vælg **Sidehoved**-pladsen.
@@ -98,7 +104,7 @@ Hvis dit websted endnu ikke har et sidehovedfragment, kan du se [Oprette et frag
 
 ## <a name="change-the-template-theme"></a>Ændre skabelontemaet
 
-Hvis du vil angive standardtemaet for alle sider, der bruger en skabelon, skal du benytte følgende fremgangsmåde i webstedsgenerator.
+Hvis du vil angive standardtemaet for alle sider, der bruger en skabelon, skal du benytte følgende fremgangsmåde.
 
 1. Udvid **Brødtekst**-pladsen i dispositionstræet til venstre.
 1. Vælg sidecontainermodulet i **Brødtekst**-pladsen (f.eks. **Standardside**).
@@ -110,7 +116,7 @@ Som standard vil alle nye sider nu bruge det valgte tema. Hvis du vil forhindre,
 
 Du kan føje HTML-baserede **&lt;script&gt;**-elementer, der indeholder JavaScript, til skabelonen. På denne måde kan du levere standardscriptfunktioner til HTML hoved-, brødtekststart- og brødtekstslutafsnit på siderne.
 
-Hvis du vil tilføje et script i en skabelon i webstedsgeneratoren, skal du følge disse trin.
+Hvis du vil tilføje et script i en skabelon, skal du følge disse trin.
 
 1. I dispositionstræet til venstre skal du vælge den plads, hvor du vil tilføje elementet **&lt;script&gt;** (f.eks. HTML-hoved, brødtekststart- og brødtekstslutafsnit).
 1. Vælg ellipseknappen (...) til pladsen, og vælg derefter **Tilføj modul**.
@@ -123,7 +129,7 @@ Hvis du vil tilføje et script i en skabelon i webstedsgeneratoren, skal du føl
 
 ## <a name="save-check-in-preview-and-publish-a-template"></a>Gemme, checke ind, se forhåndsvisning af og publicere en skabelon
 
-Hvis du vil gemme en skabelon og checke den ind i webstedsgenerator, skal du følge disse trin.
+Hvis du vil gemme en skabelon og checke den ind, skal du følge disse trin.
 
 1. Vælg **Gem** øverst i skabeloneditoren. Gemte ændringer påvirker ikke downstream-sider, før de er checket ind.
 1. Vælg **Afslut redigering**. Dine ændringer er nu synlige for downstream-arbejdsgange.
@@ -139,23 +145,8 @@ Når du har set ændringerne af skabelonen, skal du følge et af disse trin for 
 > [!WARNING]
 > Når en skabelon eller et andet CMS-element (indholdsstyringssystem) publiceres, kan det ses på internettet. Publicer ikke dokumenter eller aktiver, før du er klar til at gøre dem offentlige. Dokumentversioner, der er blevet gemt og checket ind, men som ikke er publiceret, kan kun findes af brugere, der er godkendt af systemet.
 
-## <a name="rename-a-template"></a>Omdøbe en skabelon
-
-Udfør følgende trin for at omdøbe en eksisterende skabelon i webstedsgenerator.
-
-1. Vælg **Skabeloner** i navigationsruden til venstre.
-1. Vælg navnet på den skabelon, du vil omdøbe.
-1. Vælg **Rediger** for at begynde at redigere skabelonen. Bemærk, at du ikke kan redigere en skabelon, hvis en anden allerede redigerer skabelonen.
-1. Vælg blyantssymbolet ud for skabelonnavnet i ruden med egenskaber for skabelon.
-1. Rediger skabelonnavnet efter behov.
-1. Markér afkrydsningsfeltet for at bekræfte navneændringen.
-1. Vælg **Afslut redigering**.
-
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over skabeloner og layout](templates-layouts-overview.md)
 
 [Arbejde med forudindstillede layout](work-with-layouts.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

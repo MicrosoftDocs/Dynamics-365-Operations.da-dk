@@ -2,25 +2,28 @@
 title: Dele ER-konfigurationer i RCS/det globale lager med eksterne organisationer
 description: Dette emne forklarer, hvordan du deler ER-konfigurationer (Electronic reporting) i Microsoft Regulatory Configuration Services (RCS)/det globale lager direkte med eksterne organisationer.
 author: JaneA07
+manager: AnnBe
 ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ee7feef83ffa458e7cbd238d37a0f343d1a202f48002da67823df024bb609d02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04c46824123906eccbfff18a03974c8043729e0a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719167"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441620"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Dele ER-konfiguration (Electronic reporting) i Regulatory Configuration Services (RCS)/det globale lager med eksterne organisationer.
 
@@ -47,7 +50,7 @@ Udfør følgende trin for at kontrollere, at den konfiguration, du vil dele, all
 
 1. I arbejdsområdet **Elektronisk rapportering** skal du vælge **Lagre** for din konfigurationsudbyder.
 
-    ![Konfigurationsudbydere.](media/1_RCS_Repo_for_config_provider.JPG)
+    ![Konfigurationsudbydere](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Vælg **Globalt lager** \> **Åbn**.
 3. Vælg den konfiguration, du vil dele. Du kan bruge filterfeltet til at indsnævre søgningen. Hvis du ikke kan finde konfigurationen i det globale lager, skal du følge trinnene i [Oprette og uploade en ny version af en ER-konfiguration (Electronic reporting)](rcs-global-repo-upload.md).
@@ -61,15 +64,14 @@ Når der er oprettet en konfiguration under din konfigurationsudbyder, kan du de
 3. Vælg den konfiguration, du vil dele.
 4. Gå til oversigtspanelet **Delt med**, og vælg **Organisation**.
 
-    ![Delt med oversigtspanel.](media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Delt med oversigtspanel](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. Angiv domænenavnet for den eksterne organisation i dialogboksen, og vælg derefter **OK**.
 
-    ![Dialogboksen Del konfigurationsversion med ekstern organisation.](media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Dialogboksen Del konfigurationsversion med ekstern organisation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
 
 Konfigurationen deles med den eksterne organisation og er tilgængelig for den pågældende organisation i det globale lager. Derfra kan den importeres til organisationens forekomst af RCS eller til dens forekomster af Finance and Operations-apps.
 
+![Konfiguration delt med en ekstern organisation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
+
 6. Hvis du vil annullere delingen af en konfiguration, der tidligere er delt med en ekstern organisation, skal du vælge konfigurationen og klikke på **Fjern deling** og derefter vælge **OK**
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

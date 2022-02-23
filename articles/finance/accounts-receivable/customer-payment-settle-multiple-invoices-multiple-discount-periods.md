@@ -1,28 +1,31 @@
 ---
-title: Bruge en betaling til at udligne fakturaer, der spænder over flere rabatperioder
+title: Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder
 description: Dette emne viser, hvordan flere fakturaer betales, når hver enkelt faktura er berettiget til en kasserabat. Scenarierne i denne artikel fokuserer på, hvordan de kasserabatter, der anvendes, varierer, afhængigt af hvornår betalingen foretages.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c86423c9e3453d8be11e6bdbc3484647e26e9eeec59c9a2e888cc5a2b2b5592
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769053"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441784"
 ---
-# <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Bruge en betaling til at udligne fakturaer, der spænder over flere rabatperioder
+# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder
 
 [!include [banner](../includes/banner.md)]
 
@@ -98,6 +101,3 @@ Arnie kan se oplysningerne på siden **Debitorposteringer**.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

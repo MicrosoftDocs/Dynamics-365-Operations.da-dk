@@ -2,9 +2,11 @@
 title: Frigive produktstrukturer
 description: I dette emne forklares det, hvordan du kan frigive hele produktstrukturer ud over at frigive produkter sammen med deres tekniske versioner. På denne måde kan du sikre dig, at teknisk relevante produktdata nemt kan genbruges i forskellige juridiske enheder.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4dc1b073350044ef8afb765470ed14da88a70fdd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567481"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967225"
 ---
 # <a name="release-product-structures"></a>Frigive produktstrukturer
 
@@ -75,6 +77,8 @@ Du kan se et eksempel på, hvordan du accepterer et produkt, under [Gennemse og 
 
 Ikke alle driftsselskaber har brug for samme produktdata. Generelt skal driftsselskaber, der fremstiller tekniske produkter, kræve en stykliste, hvorimod et driftsselskab, der kun sælger tekniske produkter, ikke kræver en stykliste. Du kan bruge frigivelsespolitikker til at oprette de parametre, der bruges til frigivelse af produkter.
 
+For tekniske produkter tildeles frigivelsespolitikken i den tekniske produktkategori, og feltet er obligatorisk. For standardprodukter tildeles politikken til det delte produkt, og feltet er valgfrit.
+
 Du kan finde flere oplysninger om tekniske produktkategorier i [Tekniske versioner og tekniske produktkategorier](engineering-versions-product-category.md).
 
 Under frigivelsesprocessen kan du have indflydelse på indstillingerne.
@@ -103,7 +107,6 @@ Angiv følgende felter i oversigtspanelet **Generelt** på et produkts frigivels
 | Felt | Beskrivelse |
 |---|---|
 | Produkttype | Vælg, om politikken gælder for produkter af typen *Vare* eller *Service*. Du kan ikke ændre denne indstilling, når du har gemt posten. |
-| Produktionstype | Dette felt vises kun, når du har aktiveret [administration af formelændringer](manage-formula-changes.md) i systemet. Vælg den produktionstype, som denne frigivelsespolitik gælder for:<ul><li>**Samprodukt** – Brug denne udgivelsespolitik til at administrere samprodukter. Samprodukter produceres under procesproduktion og er ikke versionsnummererede eller tekniske produkter. Frigivelsespolitikker for samprodukter kan være med til at sikre, at vigtige indstillinger, f.eks. **Lagringsdimensionsgruppe** og **Sporingsdimensionsgruppe**, er konfigureret ved hjælp af en skabelon til frigivet produkt, før de frigives til en virksomhed.</li><li>**Biprodukt** – Brug denne udgivelsespolitik til at administrere biprodukter. Biprodukter produceres under procesproduktion og er ikke versionsnummererede eller tekniske produkter. Frigivelsespolitikker for biprodukter kan være med til at sikre, at vigtige indstillinger, f.eks. **Lagringsdimensionsgruppe** og **Sporingsdimensionsgruppe**, er konfigureret ved hjælp af en skabelon til frigivet produkt, før de frigives til en virksomhed.</li><li>**Ingen** – Brug denne politik til at administrere standardprodukter, der ikke er versionsnummererede eller tekniske produkter, samprodukter eller biprodukter.</li><li>**Planlægningsvare** – Brug denne frigivelsespolitik til at administrere planlægningsvarer, der produceres ved hjælp af procesproduktion. Planlægningsvarer bruger formler. De ligner formelvarer, men de bruges kun til at producere samprodukter og biprodukter, ikke færdige produkter.</li><li>**Stykliste** – Brug denne frigivelsespolitik til at administrere tekniske produkter, som ikke bruger formler og typisk (men ikke nødvendigvis) indeholder styklister.</li><li>**Formel** – Brug denne frigivelsespolitik til at administrere færdige varer, der produceres ved hjælp af procesproduktion. Disse varer har en formel, men ikke en stykliste.</li></ul> |
 | Anvend skabeloner | Vælg en af følgende indstillinger for at angive, om og hvordan produktfrigivelsesskabeloner skal anvendes, når politikken bruges:<ul><li>**Altid** – Et skabelonfrigivet produkt skal altid bruges til frigivelser. Hvis du vælger denne indstilling, skal du bruge oversigtspanelet **Alle produkter** til at angive den skabelon, der skal bruges til hvert af de firmaer, du frigiver til. Hvis du ikke angiver en skabelon for hvert af de firmaer, der vises i oversigtspanelet **Alle produkter**, vil du modtage en fejl, når du forsøger at gemme politikken.</li><li>**Valgfri** – Hvis der er angivet et skabelonfrigivet produkt for et firma, der er angivet i oversigtspanelet **Alle produkter**, vil den pågældende skabelon blive brugt, når du frigiver til det pågældende firma. Ellers vil der ikke blive anvendt en skabelon. Hvis du vælger denne indstilling, kan du gemme politikken uden at tildele skabeloner til alle firmaer. (Der vises ingen advarsel).</li><li>**Aldrig** – Der bruges intet skabelonfrigivet produkt for noget firma, du frigiver til, selvom en skabelon er angivet for firmaer i oversigtspanelet **Alle produkter**. Skabelonkolonnerne vil ikke være tilgængelige.</li></ul> |
 | Aktive | Brug denne indstilling som en hjælp til at vedligeholde dine frigivelsespolitikker. Angiv *Ja* for alle de frigivelsespolitikker, du bruger. Angiv den til *Nej* for at markere en frigivelsespolitik som inaktiv, når den ikke bruges. Bemærk, at du ikke kan inaktivere en frigivelsespolitik, der er tildelt en teknisk produktkategori, og du kan kun slette inaktive frigivelsespolitikker. |
 
@@ -156,6 +159,3 @@ Denne situation gælder kun, når et produkt er valgt direkte til frigivelse. Pr
 Produkt X tildeles f.eks. produktejergruppen *Design skabe*. Produkt X er også en del af styklisten for produkt Y, som er knyttet til produktejergruppen *Design højttalere*. Hvis en bruger fra *Design højttalere*-produktejergruppen frigiver produkt Y og dets stykliste, frigives produkt X sammen med produkt Y.
 
 Du kan finde flere oplysninger under [Produktejere](product-owner.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

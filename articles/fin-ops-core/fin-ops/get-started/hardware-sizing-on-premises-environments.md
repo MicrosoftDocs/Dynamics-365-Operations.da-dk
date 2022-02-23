@@ -2,9 +2,11 @@
 title: Krav til tilpasning af hardware til lokale miljøer
 description: Krav til tilpasning af hardware til lokale miljøer
 author: sericks007
-ms.date: 06/02/2021
+manager: AnnBe
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9d4f2e59d4dd78d15d561ff0da47e4b9b1a2fce3
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763428"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798298"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til tilpasning af hardware til lokale miljøer
 
@@ -36,7 +38,7 @@ Når du har gennemgået dokumentationen, kan du begynde at vurdere dit antal af 
 
 Alle faktorer, der er vist i følgende illustration, skal tages i betragtning, når du vurderer hardwarens størrelse eller kapacitet. Jo mere detaljerede oplysninger, der indsamles, desto mere præcist kan du bestemme størrelsen. Hvis du vurderer hardwarestørrelsen uden understøttende data, bliver resultatet næppe nøjagtigt. Det absolutte minimumkrav for de nødvendige data er spidsbelastningen pr. transaktionslinje pr. time.
 
-[![Tilpasning af hardware til lokale miljøer.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Tilpasning af hardware til lokale miljøer](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Set fra venstre mod højre er den første og vigtigste faktor, der er nødvendig for at anslå den korrekte størrelse, er en transaktionsprofil eller transaktionsbeskrivelse. Det er vigtigt altid at finde spidsbelastningen for transaktionsvolumen pr. time. Hvis der er flere perioder med spidsbelastning, skal disse perioder defineres korrekt.
 
@@ -132,15 +134,10 @@ I de fleste tilfælde bør de anbefalede minimumkrav med to noder være velegnet
 
 I versionen til almindelig tilgængelighed kan kun én SSRS-node installeres. Overvåg SSRS-noden under test, og øg antallet af kerner, der er tilgængelige for SSRS, på grundlag af behovet. Sørg for at have en forudkonfigureret sekundær node på en virtuel vært, som er forskellig fra SSRS VM'en. Det er vigtigt, hvis der er et problem med den virtuelle maskine, der er vært for SSRS, eller den virtuelle vært. Hvis det er tilfældet, skal den udskiftes.
 
-Fra og med version 10.0.17 er det muligt at konfigurere yderligere SSRS-noder for at opnå høj tilgængelighed. Du kan finde flere oplysninger under [Konfigurere høj tilgængelighed til SQL Server Reporting Services-noder (SSRS-noder)](../../dev-itpro/deployment/onprem-ssrsha.md).
-
 ## <a name="environment-orchestrator"></a>Miljø-Orchestrator
 
-Tjenesten Orchestrator er den tjeneste, der styrer installationen og den relaterede kommunikation med LCS. Denne tjeneste installeres som den primære Service Fabric-tjeneste og kræver mindst tre VM'er. Tjenesten er placeret sammen med Service Fabric Orchestration-tjenesterne. Dette og skal tilpasses klyngens spidsbelastning. Du kan finde flere oplysninger i [Planlægge og forberede enkeltstående Service Fabric-klyngeinstallation](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Tjenesten Orchestrator er den tjeneste, der styrer installationen og den relaterede kommunikation med LCS. Denne tjeneste installeres som den primære Service Fabric-tjeneste og kræver mindst tre VM'er. Tjenesten er placeret sammen med Service Fabric Orchestration-tjenesterne. Dette og skal tilpasses klyngens spidsbelastning. Du kan finde flere oplysninger i [Planlægge og forberede enkeltstående Service Fabric-klyngeinstallation](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering og overtegning
 
 Missionskritiske tjenester som AOS skal hostes på virtuelle værter, der har dedikerede ressourcer – kerner, hukommelse og diskplads.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

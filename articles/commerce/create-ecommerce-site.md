@@ -2,9 +2,11 @@
 title: Oprette et websted for e-handel
 description: I dette emne beskrives de trin og oplysninger, der er nødvendige for at oprette et nyt e-handels-websted i Dynamics 365 Commerce-webstedsgeneratoren.
 author: bicyclingfool
-ms.date: 02/03/2022
+manager: AnnBe
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +18,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: cf084f90d203d84c91ddf7c0d963780b895ef23d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090763"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963029"
 ---
 # <a name="create-an-e-commerce-site"></a>Oprette et websted for e-handel
 
@@ -48,15 +50,8 @@ Du kan konfigurere dit websted ved at gøre følgende:
 | Domæne                              | Vælg et domænenavn, der kan fungere som domæne for denne onlinebutik. Hvis du ikke har konfigureret nogen domæner i LCS, kan du lade dette felt være tomt. Når domænet er konfigureret i LCS, skal du føje det til din onlinebutik i **Indstillinger for websted**.  |
 | Sti                              | Når webstedet understøtter mere end ét sprog for et bestemt domænenavn, skal du bruge stifeltet til at oprette en entydig URL-adresse til et websted for det pågældende domæne og sprogkombinationen. Hvis det sprog, du har angivet i feltet **Standardsprog**, er det eneste sprog, du vil understøtte for dette domæne, eller som fortsat er standardsproget, når du har lokaliseret dit websted til flere sprog, anbefales det, at du lader dette felt stå tomt. |
 
+
 Når webstedet er oprettet, kan du kontrollere, om det er knyttet til din onlinebutik, ved at vælge fanen **Produkter**. Du bør kunne se det produktsortiment, der er tildelt til onlinebutikken. Du kan også bruge rullemenuen øverst til venstre på siden til at få adgang til de allokerede produkter efter kategori.
-
-## <a name="rename-your-site"></a>Omdøbe dit websted
-
-Hvis du vil omdøbe dit websted i webstedsgenerator, skal du følge disse trin.
-
-1. Hvis du vil åbne webstedslistevisning, skal du vælge **Webstedsskifter** øverst til højre og derefter vælge **Administrer websteder**. 
-1. Markér afkrydsningsfeltet ud for det websted, du vil omdøbe, og vælg derefter **Omdøb** på kommandolinjen.
-1. Angiv det nye navn på webstedet i dialogboksen **Nyt navn på websted**, og vælg derefter **OK**. Listen med websteder opdateres, så den viser det nye navn.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -79,6 +74,3 @@ Hvis du vil omdøbe dit websted i webstedsgenerator, skal du følge disse trin.
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

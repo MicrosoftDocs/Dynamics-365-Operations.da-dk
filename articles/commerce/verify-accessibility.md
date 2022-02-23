@@ -2,30 +2,36 @@
 title: Bekræft tilgængelighed af sideindhold
 description: Dette emne beskriver, hvordan du kontrollerer tilgængeligheden af sideindhold i Microsoft Dynamics 365 Commerce.
 author: josaw1
+manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6f92d5c34896e284a40a4806cd83e469c2db4c9181c919d2d967dacc84076201
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748442"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4411206"
 ---
-# <a name="verify-page-content-accessibility"></a>Bekræfte tilgængelighed af sideindhold
+# <a name="verify-page-content-accessibility"></a>Bekræft tilgængelighed af sideindhold
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du kontrollerer tilgængeligheden af sideindhold i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Når du er færdig med at ændre en side, skal du sørge for, at indholdet er tilgængeligt for alle på internettet. I Commerce-oprettelsesværktøjerne kan du nemt kontrollere tilgængeligheden af sideindhold ved hjælp af den integrerede [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjeneste. Denne tjeneste bekræfter dit sideindhold i forhold til de seneste retningslinjer for hjælp til handicappede [World Wide Web Consortium (W3C)](https://www.w3.org/standards/webdesign/accessibility).
 
@@ -79,8 +85,3 @@ Hvis du vil bruge den integrerede [Microsoft Accessibility Insights](https://acc
 [Forbedre en produktside](enrich-product-page.md)
 
 [Forbedre en kategorilandingsside](enrich-category-page.md)
-
-[Oprette dynamiske e-handelssider baseret på URL-parametre](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

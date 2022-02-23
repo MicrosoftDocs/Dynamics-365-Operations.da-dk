@@ -2,25 +2,28 @@
 title: Opsætning, godkendelse og opsamling af kreditkort
 description: Denne artikel indeholder en oversigt over kreditkortgodkendelse i Microsoft Dynamics 365 Finance. Den indeholder oplysninger om, hvordan du kan konfigurere en betalingstjeneste, føje et kreditkort til en salgsordre og erklære en tilladelse ugyldig.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 3041
 ms.assetid: 678f6899-bfa5-439b-aaca-b4affcc338ba
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 932949f31cbc4e4e8c07a2e489b8a0848843c54ad8d27d5d77f2b7031c68c30a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0de35934e8bdb160f68f68dab118997d0141bf29
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769125"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441425"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Opsætning, godkendelse og opsamling af kreditkort
 
@@ -28,7 +31,8 @@ ms.locfileid: "6769125"
 
 Denne artikel indeholder en oversigt over kreditkortgodkendelse i Microsoft Dynamics 365 Finance. Den indeholder oplysninger om, hvordan du kan konfigurere en betalingstjeneste, føje et kreditkort til en salgsordre og erklære en tilladelse ugyldig.
 
-## <a name="setting-up-the-credit-card-payment-service"></a>Opsætning af kreditkortbetalingstjeneste
+<a name="setting-up-the-credit-card-payment-service"></a>Opsætning af kreditkortbetalingstjeneste
+------------------------------------------
 
 Hvis du vil bruge kreditkort, skal du konfigurere og aktivere en betalingstjeneste på siden Betalingstjenester. En betalingstjeneste fungerer som en bro mellem din juridiske enhed og den bank, der behandler en debitors kreditkort. Du skal arbejde med en udbyder af kreditkort, der er angivet i feltet Betalingsconnector, og konfigurere en konto hos denne udbyder. Du skal derefter konfigurere andre indstillinger på siden Betalingstjenester, konfigurere kreditkorttyper for American Express, Discover og MasterCard på siden Kreditkorttyper og aktivere udbyderen som standardudbyder. Du skal også følge disse trin for at fuldføre konfigurationen:
 -   På siden Debitorparametre skal du angive parametre for brug af kreditkortgodkendelser.
@@ -38,11 +42,13 @@ Hvis du vil bruge kreditkort, skal du konfigurere og aktivere en betalingstjenes
 ## <a name="adding-a-new-credit-card"></a>Tilføje et nyt kreditkort
 Du kan oprette nye kreditkortposter på siden Debitorer ved hjælp af Debitor, Opsætning, Kreditkort. Du kan også oprette kreditkortposter, når du angiver salgsordrer på siden Salgsordre ved hjælp af Administrer, Debitor, Kreditkort, Registrer.
 
-## <a name="adding-a-credit-card-to-a-sales-order"></a>Føje et kreditkort til en salgsordre
+<a name="adding-a-credit-card-to-a-sales-order"></a>Føje et kreditkort til en salgsordre
+-------------------------------------
 
 Du kan føje et kreditkort til en salgsordre ved at vælge et kreditkort i kreditkortopslaget på oversigtspanelet Prisen og rabatter på siden Salgsordre. Start godkendelsesprocessen ved at vælge Kreditkort og Godkend i handlingsruden på fanen Administrer.
 
-## <a name="authorizing-a-credit-card"></a>Godkende et kreditkort
+<a name="authorizing-a-credit-card"></a>Godkende et kreditkort
+-------------------------
 
 Når et kreditkort godkendes, kontrolleres kortnummeret og kortholders navn, og den disponible saldo bekræftes. Kreditkortets kontrolnummer og kortindehaverens adresse kan eventuelt verificeres. Debitors disponible kreditsaldo reduceres derefter med fakturabeløbet. Betalingstjenesten sender oplysninger om, hvorvidt kreditkortet er godkendt eller afvist. Når salgsordren faktureres, trækkes (opsamles) fakturabeløbet på kreditkortet.
 
@@ -74,6 +80,3 @@ Du kan ændre betalingsmåden for at annullere en kreditkortgodkendelse, til en 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Styring af arbejdstimer
 description: I dette emne beskrives styring af arbejdstimer i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90c4f649cc9ea45341ede923294a7c5a892cd68714db356c3799430d18f5de60
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742770"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018465"
 ---
 # <a name="work-hour-control"></a>Styring af arbejdstimer
 
@@ -66,11 +68,8 @@ I skærmbilledet herunder vises et eksempel på en beregning af **Styring af akt
 - I feltet **Faktiske timer** vises bogførte timer på arbejdsordrer. 
 - I feltet **Bindende timer** vises det samlede antal timer, som dit firma er bundet til i forbindelse med arbejdsordrer.
 
-![Eksempel på beregning af Styring af aktivtimer.](media/04-controlling-and-reporting.png)
+![Eksempel på beregning af Styring af aktivtimer](media/04-controlling-and-reporting.png)
 
 Du kan også foretage en timeberegning ved at vælge flere aktiver i **Alle aktiver** eller **Aktive aktiver**. Derefter skal du klikke på knappen **Timestyring** i oversigtspanelet **Generelt**. De valgte anlægsaktiver indsættes automatisk i feltet **Aktiv** i oversigtspanelet **Poster, der skal indgå**. Klik på **OK** i dialogboksen **Styring af aktivtimer**, hvorefter beregningen for de valgte aktiver vises. Den samme procedure kan udføres for arbejdssteder i **Alle arbejdssteder** eller **Aktive arbejdssteder** og for arbejdsordrer i **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

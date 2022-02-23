@@ -2,27 +2,30 @@
 title: Konfigurere grænsefladen til kørsel af produktionsudstyr
 description: Dette emne beskriver, hvordan du opretter en eller flere konfigurationer til grænsefladen til kørsel af produktionsudstyr. Når du åbner grænsefladen til kørsel af produktionsudstyr, indlæser den automatisk en udvalgt konfiguration og et jobfilter, der er specifikt for browseren og enheden. I konfigurationen skal du angive de politikker, der skal gælde for en bestemt anvendelse.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
+ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777955"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4664290"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Arbejderne i produktionen bruger grænsefladen til kørsel af produktionsudstyr til at registrere deres daglige arbejde, f.eks. hvornår de påbegynder et job, rapportere feedback om job, registrere indirekte aktiviteter og rapportere fravær. Disse registreringer er grundlaget for sporing af fremskridt og omkostninger ved produktionsordrer og til beregning af grundlaget for arbejdernes løn.
 
@@ -39,47 +42,28 @@ Selve grænsefladen til kørsel af produktion, plus flere af de valgfrie indstil
 
 ### <a name="the-production-floor-execution-interface"></a>Grænsefladen til kørsel af produktion
 
-Dette er den primære funktion, der er beskrevet i dette emne. Fra og med Supply Chain Management version 10.0.21 er den som standard aktiveret. Den tilføjer grænsefladen til kørsel af produktion i dit system. I arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere følgende funktion:
-
+Dette er den primære funktion, der er beskrevet i dette emne. Den tilføjer grænsefladen til kørsel af produktion i dit system. I arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere følgende funktion:  
 - Kørsel af produktion
 
 ### <a name="generate-license-plates"></a>Generere nummerplader
 
 Disse funktioner gør nummerpladefunktioner tilgængelig for grænsefladen til kørsel af produktion. Hvis du vil bruge dem, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge):
 
-1. Nummerplade til færdigmelding er føjet til jobkortenheden (fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret).
+1. Id for færdigmelding tilføjet i jobkortenheden
 1. Aktivér automatisk generering af id-nummer ved færdigmelding i jobkortenheden
 
 ### <a name="print-labels"></a>Udskriv labels
 
 Disse funktioner gør etiketudskrivning tilgængelig for grænsefladen til kørsel af produktion. Hvis du vil bruge dem, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge):
 
-1. Nummerplade til færdigmelding er føjet til jobkortenheden (fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret).
+1. Id for færdigmelding tilføjet i jobkortenheden
 1. Udskriv etiket fra jobkortenhed
 
 ### <a name="allow-locking-the-touch-screen"></a>Tillad låsning af berøringsskærmen
 
-Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Den føjer en knap til grænseflade for kørsel af produktion, der gør det muligt for arbejdere at rense berøringsskærmen. Hvis du vil bruge denne funktion, skal du sørge for, at følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) er aktiveret:
+Denne funktion føjer en knap til grænseflade for kørsel af produktion, der gør det muligt for arbejdere at rense berøringsskærmen. Hvis du vil bruge den, skal du i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivere følgende funktion:
 
 - Funktion til låsning af jobkortenhed og jobkortterminal, så de kan renses
-
-### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funktion til aktivstyring af grænsefladen til produktionsudførelse
-
-Denne funktion føjer en fane for aktivstyring til grænsefladen for produktionsudførelse. Arbejdere kan bruge denne fane til at vælge et aktiv, der er tilknyttet en maskinressource, som findes inden for det valgte filter på joblisten. For det valgte maskinaktiv kan arbejderen få vist aktivets tilstand fra tællerværdier for op til fire udvalgte tællere. Hvis du vil bruge denne funktion, skal du i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivere følgende funktion:
-
-- Funktion til aktivstyring af grænsefladen til produktionsudførelse
-
-### <a name="enable-job-search"></a>Aktivere jobsøgning
-
-Denne funktion gør det muligt at føje et søgefelt til joblisten. Arbejdere kan finde et bestemt job ved at angive job-id'et eller finde alle job for en bestemt ordre ved at angive ordre-id'et. Arbejdere kan angive id'et ved hjælp af et tastatur eller ved at scanne en stregkode. Hvis du vil bruge den, skal du i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivere følgende funktion:
-
-- Jobsøgning til grænsefladen til produktionen
-
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivere rapportering af samprodukter og biprodukter
-
-Denne funktion giver medarbejderne mulighed for at bruge grænsefladen til produktionsudførelse til at rapportere status for batchordrer. Denne rapportering inkluderer rapportering af samprodukter og biprodukter. Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Rapport over samprodukter og biprodukter fra grænsefladen for udførelse af produktion
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbejde med kørselskonfigurationer for produktionsudstyr
 
@@ -90,8 +74,6 @@ Når du vil oprette og vedligeholde enhedskonfigurationer, skal du gå til **Pro
 
 Konfigurer derefter de forskellige indstillinger for den valgte enhedskonfiguration. Følgende felter er tilgængelige:
 
-- **Kun komme og gå-tid** – Angiv denne indstilling til *Ja* for at oprette en forenklet grænseflade, der kun indeholder en komme- og gå-funktion. Dette deaktiverer de fleste andre indstillinger på denne side. Du skal fjerne alle linjer i oversigtspanelet **Fanevalg**, før du kan aktivere denne indstilling.
-- **Aktivér søgning** – Angiv denne indstilling til *Ja* for at medtage et søgefelt på joblisten. Arbejdere kan finde et bestemt job ved at angive job-id'et eller finde alle job for en bestemt ordre ved at angive ordre-id'et. Arbejdere kan angive id'et ved hjælp af et tastatur eller ved at scanne en stregkode.
 - **Afmelding ved gå** – Vælg *Ja* i denne indstilling for at bede arbejdere om at rapportere feedback om igangværende job, når de stempler ud. Når der er valgt *Nej* i denne indstilling, bliver arbejderne ikke bedt om at gøre dette.
 - **Lås medarbejder** – Når der er valgt *Nej* i denne indstilling, bliver arbejderne logget af umiddelbart efter, at de har foretaget en registrering (f.eks. et nyt job). Enheden vender derefter tilbage til logonsiden. Når der er valgt *Ja* i denne indstilling, forbliver arbejderne logget på jobkortenheden. Men en arbejder kan logge af manuelt, så en anden arbejder kan logge på, mens jobkortenheden fortsætter med at køre under den samme systembrugerkonto. Du kan finde flere oplysninger om disse typer konti under [Tildelte brugere](config-job-card-device.md#assigned-users).
 - **Brug det faktiske registreringstidspunkt** – Vælg *Ja* i denne indstilling for at indstille tidspunktet for hver ny registrering til netop det tidspunkt, hvor arbejderen afsendte registreringen. Når der er valgt *Nej* i denne indstilling, bruges logontidspunktet i stedet. Du skal normalt vælge *Ja* i denne indstilling, hvis du har valgt **Ja** i indstillingerne **Lås medarbejder** og/eller *Enkelt arbejder*, i de tilfælde hvor arbejderne ofte forbliver logget ind i længere perioder.
@@ -112,6 +94,3 @@ Et batchjob renser regelmæssigt poster i referencetabellen for enheder, der ikk
 1. Vælg **Ryd op i klientkonfigurationer** i handlingsruden.
 1. I dialogboksen **Ryd op i klientkonfigurationer** skal du indstille feltet **Antal dage** til det antal dage uden aktivitet (før i dag), der skal tages i betragtning. Du vil fjerne alle konfigurationer og logonposter for enheder, der ikke har været aktive i den pågældende periode.
 1. Vælg **OK** for at rydde op i de relevante konfigurationer baseret på indstillingen **Antal dage**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

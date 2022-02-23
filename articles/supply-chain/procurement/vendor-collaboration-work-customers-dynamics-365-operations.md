@@ -2,36 +2,40 @@
 title: Kreditorsamarbejde med kunder
 description: Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til at arbejde med indkøbsordrer og overvåge konsignationslager.
 author: TaylorVH
+manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
-ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
+ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
+ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8022968"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654334"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorsamarbejde med kunder
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med kunder i Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan udføre en række forretningsprocesser fra følgende arbejdsområder:
 
 - **Indkøbsordrebekræftelse** – Overvåge og reagere på indkøbsordrer (IO'er).
 - **Kreditorbud** – Få vist anmodninger om tilbud (tilbudsanmodninger) og reagere på dem ved at afgive bud.
 - **Kreditoroplysninger** – Få vist eller opdatere kreditormasterdata.
-- **Fakturering** – Arbejde med fakturaer. Dette emne dækker ikke arbejdsområdet **Fakturering**. Du kan finde flere oplysninger om dette arbejdsområde under [Arbejdsområde for kreditorsamarbejdsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturering** – Arbejde med fakturaer. Dette emne dækker ikke arbejdsområdet **Fakturering**. Du kan finde flere oplysninger om dette arbejdsområde under [Arbejdsområde for kreditorsamarbejdsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Kreditorer kan også overvåge oplysninger om konsignationslager.
 
@@ -78,7 +82,7 @@ Hvis du bruger konsignationslager, kan du bruge kreditorsamarbejde til at få vi
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Arbejde med tilbudsanmodninger i arbejdsområdet Kreditorbud
 
-I arbejdsområdet **Kreditorbud** kan du få vist de tilbudsanmodninger, som dit firma er blevet inviteret til at besvare. Du kan også besvare tilbudsanmodningerne.
+I arbejdsområdet **Kreditorbud** kan du få vist de tilbudsanmodninger, som dit firma er blevet inviteret til at besvare. Du kan også besvare tilbudsanmodningerne. 
 
 Arbejdsområdet viser også alle tilbudsanmodninger, du har tabt eller vundet. Hvis systemet er konfigureret til den offentlige sektor, viser arbejdsområdet de tilbudsanmodninger, der er offentligt tilgængelige.
 
@@ -100,17 +104,9 @@ Personer, der arbejder i den offentlige sektor, kan åbne og se udløbne tilbuds
 
 - Vælg linket **Åbne publicerede tilbudsanmodninger** for at se en liste over åbne tilbudsanmodninger, der er tilgængelige for offentligheden. En åben tilbudsanmodning er en tilbudsanmodning, der endnu ikke er udløbet. Du kan finde udløbsdatoen og klokkeslættet i tilbudsanmodningshovedet.
 
-    Hvis du er inviteret til at byde, kan du finde den samme tilbudsanmodning på siden **Invitationer til nyt bud**. Det kan ske, at du ønsker at byde på en tilbudsanmodning, som du ikke er inviteret til at byde på. I dette tilfælde kan du måske invitere dig selv, forudsat at kunden har aktiveret egen-invitation for tilbudsanmodningssagen. 
+    Hvis du er inviteret til at byde, kan du finde den samme tilbudsanmodning på siden **Invitationer til nyt bud**. Det kan ske, at du ønsker at byde på en tilbudsanmodning, som du ikke er inviteret til at byde på. I dette tilfælde kan du måske invitere dig selv, forudsat at kunden har aktiveret egen-invitation for tilbudsanmodningssagen.
 
-    Siden **Invitationer til nyt bud** kan indeholde et filter, så du kan få vist de åbne tilbudsanmodninger og identificere dem, der indeholder linjer, der svarer til dine godkendte indkøbskategorier. Hvis du vil gøre dette filter tilgængeligt, skal du aktivere funktionen *Lad leverandører søge efter tilbudsanmodninger efter indkøbskategori* i systemet. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
-
-    - **Modul:** *Kreditor*
-    - **Funktionsnavn:** *Lad leverandører søge efter tilbudsanmodninger efter indkøbskategori* <!-- KFM: I don't see this here, is this right? -->
-
-    Du kan forbedre tilgængeligheden af linket **Åbn publicerede tilbudsanmodninger** ved at aktivere *Vis linket "Åbn publicerede tilbudsanmodninger" som en felt*-funktion. Denne funktion konverterer linket til et felt og flytter det til en fremtrædende placering, så det er nemt at finde det. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. (Fra og med Supply Chain Management version 10.0.21 er funktionen som standard aktiveret). Der vises funktionen på følgende måde:
-
-    - **Modul:** *Indkøb og forsyning*
-    - **Funktionsnavn:** *Vis linket "Åbn publicerede tilbudsanmodninger" som et felt*
+    Du kan forbedre tilgængeligheden af linket **Åbn publicerede tilbudsanmodninger** ved at aktivere **Vis linket "Åbn publicerede tilbudsanmodninger" som en felt**-funktion. Denne funktion konverterer linket til et felt og flytter det til en fremtrædende placering, så det er nemt at finde det.
 
 - Vælg linket **Lukkede publicerede tilbudsanmodninger** for at se en liste over lukkede tilbudsanmodninger, der er tilgængelige for offentligheden. En lukket tilbudsanmodning er en tilbudsanmodning, der er udløbet. Du kan finde udløbsdatoen og klokkeslættet i tilbudsanmodningshovedet.
 
@@ -151,6 +147,3 @@ De tilgængelige oplysninger er kreditornavn, adresser, kontaktoplysninger, kont
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

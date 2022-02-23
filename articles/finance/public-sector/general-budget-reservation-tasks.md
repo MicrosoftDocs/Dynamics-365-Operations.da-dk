@@ -2,9 +2,11 @@
 title: Vedligehold generelle budgetreservationer
 description: Dette emne indeholder trin til at arbejde med generelle budgetreservationer i den offentlige sektor i Microsoft Dynamics 365 Finance.
 author: AlexRenney
+manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetReservation_PSN, BudgetReservationYearEndClose_PSN
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e9053279e94b98eb852ffe379c561e54a112113451562445bdf45109b31b8316
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbd9d5098196bce18e4625814533fad1eb14654b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721645"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964472"
 ---
 # <a name="maintain-general-budget-reservations"></a>Vedligehold generelle budgetreservationer
 
@@ -169,6 +171,3 @@ Det gælder for alle generelle budgetreservationer, som ikke er udløbet og stad
 Hvis du har aktiveret budgetstyring, kan du reducere det overførte budget for alle overførte generelle budgetreservationer, der er afsluttet og har en restsaldo. På denne måde kan du hjælpe med at garantere, at midler fra det forrige år ikke bruges på køb i det nye år.
 
 Hvis der er valgt **Ja** i indstillingen **Reducer overført budget** i den tilknyttede fonds- eller reservationstype, og du færdiggør dokumentet i det nye regnskabsår, bliver den resterende dokumentsaldo og et eventuelt resterende overført budget reduceret til 0 (nul).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

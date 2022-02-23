@@ -2,9 +2,11 @@
 title: Navigationssøgning
 description: I dette emne forklares, hvordan du kan bruge søgefunktionen til at navigere til sider.
 author: aneesmsft
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069978"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799089"
 ---
 # <a name="navigation-search"></a>Navigationssøgning
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne forklares, hvordan du kan bruge søgefunktionen til at navigere til sider.
 
@@ -37,7 +36,7 @@ Hvis du vil bruge denne funktion, skal du klikke på ikonet **Søg** for at få 
 > [!NOTE]
 > Feltet **Søg** bruges til at finde og navigere til sider. Det hjælper ikke dig med at finde bestemte data eller handlinger.
 
-![søgefelt.](media/navigation-search.png "Søgefelt")
+[![søgefelt](media/navigation-search.png "Søgefelt")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Hurtigt navigere til en bestemt side
 
@@ -63,6 +62,3 @@ Listen over søgeresultater er begrænset til 10 elementer. Hvis du ikke kan fin
 ## <a name="development"></a>Udvikling
 
 Fra et udviklingsperspektiv er funktionen til navigationssøgning meget nem at udnytte, fordi der praktisk talt ikke er nogen forsinkelse mellem implementering af menupunkter og deres evne til at blive vist i søgeresultater. Så længe menupunkterne er tilknyttet fra navigationsruden eller dashboardet, bliver det automatisk muligt at søge i dem.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

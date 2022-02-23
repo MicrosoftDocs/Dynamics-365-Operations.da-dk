@@ -2,12 +2,15 @@
 title: Kampagnebannermodul
 description: Dette emne omhandler kampagnebannermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f781ed22852cb2108850e7dc6762aa6a9ba0db97574cb0dcc7959f8926e47a08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718774"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410995"
 ---
 # <a name="promo-banner-module"></a>Kampagnebannermodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler kampagnebannermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Kampagnebannermoduler bruges til at vise indbyggede informationsmeddelelser på en side. De kan bruges til at vise kampagner for hele webstedet, som vises på alle sider på et websted for e-handel. 
 
@@ -46,11 +51,11 @@ Kampagnebannere kan bruges i webstedets overskift til at vise kampagner eller me
 
 Det følgende billede viser et eksempel på et reklamebanner.
 
-![Eksempel på et reklamebannermodul.](./media/ecommerce-Promobanner.PNG)
+![Eksempel på et reklamebannermodul](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Egenskaber for kampagnebannermodul
 
-| Egenskabsbetegnelse             | Værdi                              | Betegnelse |
+| Egenskabsbetegnelse             | Værdi                              | Beskrivende tekst |
 |---------------------------|------------------------------------|-------------|
 | Bannermeddelelser           | Tekst og link                     | En matrix af tekst og link. |
 | Automatisk afspilning                  | **Sand** eller **Falsk**              | En værdi, der angiver, om meddelelser automatisk gennemløbes, hvis der er konfigureret flere meddelelser. |
@@ -58,11 +63,7 @@ Det følgende billede viser et eksempel på et reklamebanner.
 | Tillad afvis             | **Sand** eller **Falsk**              | Hvis værdien er angivet til **Sand**, kan kunderne afvise påmindelsen. |
 | Vis karruselslipper     | **Sand** eller **Falsk**              | En værdi, der angiver, om karruselslippere skal vises, så kunder kan gå gennem flere bannerelementer manuelt. |
 | Tekstjustering            | **Højre**, **Venstre** eller **Centreret** | Tekstjusteringen i kampangebannermodulet. |
-| Sammenkæd                      | En URL-adresse                              | URL-adressen for et valgfrit link. |
-|Tekstjustering             | **Højre**, **Venstre** eller **Centreret** | Denne egenskab er tilgængelig som lokalnummer under emnet Adventure Works. Det giver en bruger mulighed for at angive tekstjusteringen i banneret. |
-
-> [!IMPORTANT]
-> Emnet Adventure Works er tilgængelige pr. Dynamics 365 Commerce version 10.0.20.
+| Binding                      | En URL-adresse                              | URL-adressen for et valgfrit link. |
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Føj et kampangebannermodul til en ny side 
 
@@ -83,6 +84,7 @@ Hvis du vil føje et kampangebannermodul til en ny side og angive de påkrævede
 > [!NOTE]
 > Et kampagnebanner bruges typisk i sidehovedpladsen eller en underoverskriftplads.
 
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over modulbibliotek](starter-kit-overview.md)
@@ -94,6 +96,3 @@ Hvis du vil føje et kampangebannermodul til en ny side og angive de påkrævede
 [Indholdsblokmodul](add-hero-module.md)
 
 [Videoafspillermodul](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

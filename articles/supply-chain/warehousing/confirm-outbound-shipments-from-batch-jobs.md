@@ -2,22 +2,25 @@
 title: Bekræft udgående forsendelser fra batchjob
 description: Dette emne beskriver, hvordan du opretter et batchjob, der automatisk bekræfter udgående overførselsordre forsendelser, der er til klar til afsendelse.
 author: perlynne
+manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 4af84383fe1d214849d5d05463bd0cbfad7d0536
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 41dbfb90b7b19c964e725ee0a4c769402414fb17
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778467"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424393"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Bekræft udgående forsendelser fra batchjob
 
@@ -27,7 +30,7 @@ Dette emne beskriver, hvordan du opretter et batchjob, der automatisk bekræfter
 
 ## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Aktivere funktionen Bekræft udgående forsendelser fra batchjob
 
-Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
+Før du kan bruge denne funktion, skal den aktiveres i dit system. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere den, hvis det er nødvendigt. Funktionen er angivet som:
 
 - **Modul** - *Lokationsstyring*
 - **Funktionsnavn** - *Bekræft udgående forsendelser fra batchjob*
@@ -51,6 +54,3 @@ Sådan konfigureres et planlagt batchjob til at køre bekræftelse af udgående 
 1. Vælg **OK** i dialogboksen **Bekræft forsendelse** for at føje batchjobbet til batchkøen.
 
 Du kan finde flere oplysninger under [Oversigt over batchbehandling](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

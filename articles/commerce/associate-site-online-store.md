@@ -1,28 +1,31 @@
 ---
-title: Tilknytte et Dynamics 365 Commerce-websted med en onlinekanal
+title: Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal
 description: I dette emne forklares det, hvordan du kan binde dit Microsoft Dynamics 365 Commerce-websted til en eller flere onlinebutikker.
 author: bicyclingfool
+manager: AnnBe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ROBOTS: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 60ead45e6e2b7fea8f04371310ff4315205e11f6e0968e5f8bbc6a29c5f26e18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6ae02d34499275fa303358f7dae4d3835d438e1
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737647"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517324"
 ---
-# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Tilknytte et Dynamics 365 Commerce-websted med en onlinekanal
+# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Tilknytte et Dynamics 365 Commerce-websted til en onlinekanal
 
 [!include [banner](includes/banner.md)]
 
@@ -55,6 +58,3 @@ Når webstedet er oprettet, kan du kontrollere, om det er knyttet til din online
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

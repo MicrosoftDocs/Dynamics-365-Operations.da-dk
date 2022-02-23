@@ -2,24 +2,27 @@
 title: Betalingsmodul
 description: I dette emne beskrives det, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
 author: anupamar-ms
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715500"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4411238"
 ---
 # <a name="checkout-module"></a>Betalingsmodul
 
@@ -27,13 +30,15 @@ ms.locfileid: "6715500"
 
 I dette emne beskrives det, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
 
+## <a name="overview"></a>Oversigt
+
 Et betalingsmodul er en særlig container, der er vært for alle moduler, som skal bruges til at oprette en ordre. Den indeholder en trinvis proces, som en kunde bruger til at angive alle de relevante oplysninger for at foretage et køb. Det henter leveringsadresse, forsendelsesmetode og faktureringsoplysninger. Den indeholder også en ordreoversigt og andre oplysninger vedrørende en kundeordre.
 
 Et betalingsmodul gengiver data på basis af indkøbsvogn-id'et. Dette indkøbsvogn-id gemmes som en browsercookie. Der kræves et indkøbsvogn-id for at gengive oplysninger i betalingsmodulet, f. eks. varerne i ordren, det samlede beløb og rabatterne. 
 
 Det følgende billede viser et eksempel på et Fabrikam-betalingsmodul på en betalingsside.
 
-![Eksempel på et betalingsmodul.](./media/Checkout.PNG)
+![Eksempel på et betalingsmodul](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Egenskaber for betalingsmodul
 
@@ -52,13 +57,13 @@ Et udtjekningsmodul viser en ordreoversigt og giver mulighed for at afgive en or
 
     Det følgende billede viser et eksempel på et leveringsadressemodul på en betalingsside.
 
-    ![Eksempel på et leveringsadressemodul.](./media/ecommerce-shippingaddress.PNG)
+    ![Eksempel på et leveringsadressemodul](./media/ecommerce-shippingaddress.PNG)
 
 - **Leveringsindstillinger** – Dette modul giver en kunde mulighed for at vælge en leveringsmåde for en ordre. Yderligere oplysninger om dette modul finder du i [Leveringsindstillingsmodul](delivery-options-module.md).
 
     Det følgende billede viser et eksempel på et leveringsindstillingsmodul på en betalingsside.
  
-    ![Eksempel på et leveringsindstillingsmodul.](./media/ecommerce-deliveryoptions.PNG)
+    ![Eksempel på et leveringsindstillingsmodul](./media/ecommerce-deliveryoptions.PNG)
 
 - **Container til betalingssektion** – dette modul er en container, hvor du kan placere flere moduler for at oprette en sektion i betalingsprocessen. Du kan f. eks. indsætte alle betalingsrelaterede moduler i denne container for at få dem vist som én sektion. Dette modul påvirker kun processens layout.
 
@@ -70,7 +75,7 @@ Et udtjekningsmodul viser en ordreoversigt og giver mulighed for at afgive en or
 
     Det følgende billede viser et eksempel på moduler for gavekort, fordelskundepoint og betaling på en betalingsside.
 
-    ![Eksempel på moduler for gavekort, fordelskundepoint og betaling på en betalingsside.](./media/ecommerce-payments.PNG)
+    ![Eksempel på moduler for gavekort, fordelskundepoint og betaling på en betalingsside](./media/ecommerce-payments.PNG)
 
 - **Kontaktoplysninger** – dette modul giver en kunde mulighed for at tilføje eller ændre kontaktoplysningerne (mailadressen) for en ordre.
 
@@ -80,7 +85,7 @@ Et udtjekningsmodul viser en ordreoversigt og giver mulighed for at afgive en or
 
     Følgende billede viser et eksempel på vilkår og betingelser på en betalingsside.
 
-    ![Eksempel på vilkår og betingelser på en betalingsside.](./media/ecommerce-checkout-terms.PNG)
+    ![Eksempel på vilkår og betingelser på en betalingsside](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
 
@@ -122,6 +127,3 @@ Hvis du vil føje et betalingsmodul til en ny side og angive de påkrævede egen
 [Ordredetaljer-modul](order-confirmation-module.md)
 
 [Gavekortsmodul](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Nyheder eller ændringer i Dynamics 365 for Operations version 1611 (november 2016)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 for Operations version 1611.
 author: sericks007
+manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 0b5856ef83ff1e101896eefbbe022e70ad954219
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752802"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797189"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheder eller ændringer i Dynamics 365 for Operations version 1611 (november 2016)
 
@@ -48,7 +50,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 </tr>
 <tr>
 <td>Definere omkostningsobjektdimensioner og importere omkostningsobjekters dimensionsmedlemmer.</td>
-<td>Omkostningsobjekter er en hvilken som helst type objekt, som omkostninger er tildelt. Typiske omkostningsobjekter omfatter produkter, projekter, ressourcer, afdelinger, bærere og geografiske områder. Du kan enten bruge en Microsoft Dynamics 365 for Operations dataconnector til at få økonomiske dimensioner og værdier fra Operations eller bruge en generisk dataconnector, hvor du kan få dimensioner og værdier via Excel fra enhver anden type kildesystem. Hvis du bruger den finansielle bærerdimension som objektdimension, er alle bærere, der importeres, dimensionsmedlemmer til omkostningsobjektet.</td>
+<td>Omkostningsobjekter er en hvilken som helst type objekt, som omkostninger er tildelt. Typiske omkostningsobjekter omfatter produkter, projekter, ressourcer, afdelinger, bærere og geografiske områder. Du kan enten bruge en Microsoft Dynamics 365 for Operations dataconnector til at få økonomiske dimensioner og værdier fra Operations eller bruge en generisk dataconnector, hvor du kan få dimensioner og værdier via Microsoft Excel fra enhver anden type kildesystem. Hvis du bruger den finansielle bærerdimension som objektdimension, er alle bærere, der importeres, dimensionsmedlemmer til omkostningsobjektet.</td>
 </tr>
 <tr>
 <td>Definere eller importere statistiske dimensioner.</td>
@@ -496,7 +498,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 <li>ISO20022 Direct Debit-betalingsformat for Italien</li>
 <li>RIBA-rykkerremitteringsformat for Italien</li>
 <li>Rapport over indenlandsk momstransaktion for Italien</li>
-<li>Blokeringslisterapport for Italien</li>
+<li>Sortlistningsrapport for Italien</li>
 <li>Modello770-rapport for Italien</li>
 <li>Rapport om årlig momsindberetning for Italien</li>
 </ul>
@@ -621,7 +623,7 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 | Konfigurere ER-rapporter til at generere elektroniske dokumenter i Excel-, Microsoft Word- eller PDF-format. | Med én konfiguration kan ER-rapporter generere elektroniske dokumenter i tre forskellige formater: OpenXML-regneark (Excel), Word- og XML-formulardataformat (XFDF) (PDF). Brugerne kan vælge et format ved at tilføje en formatskabelon i en ER-rapport som et Excel-, Word- eller PDF-dokument. |
 | Konfigurere ER-rapporter til at indsætte data i sidehoveder og sidefødder af elektroniske dokumenter, der genereres i regnearksformatet OpenXML, og styre sideskift. | ER-rapporter kan angive forretningsdata i sidehoveder og sidefødder og også styre, hvor der indsættes sideskift. Rapporterne kan derfor understøtte statiske øverste og nederste afsnit for sider af elektroniske dokumenter, der genereres. De kan også understøtte bestemt sideopdeling af dokumenterne, så de er i overensstemmelse med lovgivningsmæssige krav. |
 | Konfigurere destinationen for ER-rapporter, så output sendes som mail, og virksomhedens data og ER-logik (udtryk) kan bruges til at angive mailadressen, der skal bruges på kørselstidspunktet. | Tidligere, når du har konfigureret en ER-destination, kunne outputmodtageren af mailadressen defineres i designfasen. Du kan nu konfigurere et udtryk i ER-formatet. Dette udtryk kan derefter vælges i en destination som kilden til mailadressen for hver formatkonfiguration og hver outputkomponent (mappe eller fil) separat. Derfor, når en ER-rapport kører, kan hver fil, der oprettes, blive sendt til en anden modtager, og mailadressen kan defineres ud fra ER-logik og forretningsdata. |
-| Konfigurere destinationen for ER-rapporter, så output sendes til SharePoint-mappen som enten en ny navngivet fil eller en ny version af den eksisterende fil, så forretningsdata kan bruges i Microsoft Power BI-strukturen som enten et datasæt eller en rapport. | Når du konfigurerer ER-rapporter, kan du nu nemt (uden kodning) forberede de anmodede forretningsdata, så de kan bruges af Power BI-strukturen. Når du kører disse ER-rapporter, kan du give Power BI-strukturen relevante forretningsdata og/eller Excel-rapporter, der allerede er tilgængelige. Hvis du planlægger, at rapporten skal køres i tilbagevendende tilstand, kan du oprette planlagt aktivering af forretnings data fra Dynamics 365 for Operations til Power BI for at understøtte tidsplanen for opdatering af Power BI-baserede rapporter. |
+| Konfigurere destinationen for ER-rapporter, så output sendes til Microsoft SharePoint-mappen som enten en ny navngivet fil eller en ny version af den eksisterende fil, så forretningsdata kan bruges i Microsoft Power BI-strukturen som enten et datasæt eller en rapport. | Når du konfigurerer ER-rapporter, kan du nu nemt (uden kodning) forberede de anmodede forretningsdata, så de kan bruges af Power BI-strukturen. Når du kører disse ER-rapporter, kan du give Power BI-strukturen relevante forretningsdata og/eller Excel-rapporter, der allerede er tilgængelige. Hvis du planlægger, at rapporten skal køres i tilbagevendende tilstand, kan du oprette planlagt aktivering af forretnings data fra Dynamics 365 for Operations til Power BI for at understøtte tidsplanen for opdatering af Power BI-baserede rapporter. |
 | Konfigurere ER-rapporter til at bruge den del af det elektroniske dokument, der allerede er oprettet som en datakilde, for at generere resten af dokumentet. | Du kan konfigurere ER-rapporter, som opretter output i tekstformat til dokumentets linjeoptælling. Disse oplysninger kan derefter bruges i andre dele af dokumentet til at oprette linjer, der indeholder en oversigt over detaljerne. De kortfattede oplysninger (totaler og tal) kan beregnes og udskrives på de elektroniske dokumenter, der oprettes, uden at kræve yderligere transformationer af data. Derfor forbedrer denne funktion ydeevnen for udførelsen af rapporter og hjælper med at lette fremtidig vedligeholdelse af det konfigurerede ER-format. |
 | Konfigurere ER-rapporter til at angive filtypenavnet for elektroniske dokumenter, der genereres i tekstformat. | Du kan konfigurere ER-rapporter til at oprette output i tekstformat, så de kan gemmes som en fil med et bestemt filtypenavn. Du kan konfigurere udvidelser såsom .csv og .prn efter formatspecifikationen ud over standardfiltypenavnet .txt. |
 | Oprette nye ER-rapporter, der er baseret på en bestemt version af en ER-model. | Når du har oprettet et nyt ER-format, kunne der tidligere kun anvendes den nyeste version af den valgte ER-model som formatets datakildeplacering. Nu kan du vælge enhver tilgængelig version af den valgte ER-model. Med denne funktion kan du vedligeholde ER-rapporterne for indeværende år og designe en ny version af ER-modellen for næste år parallelt. |
@@ -714,11 +716,11 @@ I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 36
 | Hvad du kan gøre | Hvorfor dette er vigtigt |
 |-----------------|-----------------------|
 | Bruge senere valg, når du bogfører fakturaforslag i en batch. | Projektrevisorer kan konfigurere et batchjob til automatisk at opsamle fakturaforslag til bogføring, hvis disse forslag opfylder de kriterier, der er angivet i batchjobbet. Denne funktion forbedrer automatiseringen af bogføring af faktura, da batchjobbet kan køre kontinuerligt og automatisk opsamler forslag til bogføring. |
-| Oprette analyser i Power BI-desktop. | Business intelligence (BI) indhold til projektrelaterede og ressourcerelaterede data kan oprettes let i Power BI-desktop. |
+| Oprette analyser i Power BI Desktop. | Business intelligence (BI) indhold til projektrelaterede og ressourcerelaterede data kan oprettes let i Power BI Desktop. |
 | Bruge forudbetalinger af købsordre og inkludere dem korrekt i projektestimatprocessen. | For projektindkøbsordrer skal forudbetalinger behandles, inden en betaling kan frigives til kreditorer. Disse forudbetalingsfakturaer vises nu i projektestimat-/anerkendelsesprocessen for projekter af typen **Fast pris**. |
 | Få adgang til og administrere omkostnings- og indtægtsestimater og varebehov direkte fra en opgave i arbejdsopgavehierarkiet. | Du kan administrere omkostningsestimater, indtægtsestimater og varebehov for et bestemt WBS-opgave i dialogboksen med oplysninger for opgaven i WBS-planlægnings-visning. |
 | Vælge en finansieringskilde på gebyrkladder. | Hvis kontrakten for et projekt indeholder flere finansieringskilder, kan du vælge en bestemt finansieringskilde, når gebyrerne bogføres. Hvis du ikke vælger en bestemt finansieringskilde, bruges de finansieringsregler, der er angivet i kontrakten, til at tildele gebyret. |
-| Åbne projektopgørelser i Excel. | Nye dataenheder for finansopdateringer og budgetopdateringer kan åbne projektopgørelsesdata i Excel og oprette analyser ved hjælp af funktionerne i Excel. |
+| Åbne projektopgørelser i Excel. | Nye dataenheder for finansopdateringer og budgetopdateringer kan åbne projektopgørelsesdata i Microsoft Excel og oprette analyser ved hjælp af funktionerne i Excel. |
 | Bruge kun én konfigurationsnøgle til at aktivere funktioner til projektstyring og regnskab (PMA). | Projektrelaterede konfigurationsnøgler er blevet erstattet af én projektkonfigurationsnøgle, der aktiverer PMA-funktionalitet. |
 
 ## <a name="retail-and-commerce"></a>Detail og handel
@@ -800,7 +802,7 @@ Butikssystem er et installationsvalg for detailhandlere, der hjælper med at dri
 
 ### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Universel Windows-platform-app til Retail Modern POS
 
-Retail Modern POS er i øjeblikket kun tilgængelig som et Windows 8.1-program til stationære computere og tablets og som Cloud POS til pc- eller tabletbrowsere. I denne version bliver Retail Moderns POS konverteret til en universel Windows-platformsapp (UWP). Denne ændring gør det muligt for Retail Modern POS at køre på alle Windows 10-enheder (pc, tablet eller telefon) og endda skifte mellem visninger for Continuum-aktiverede enheder.
+Retail Modern POS er i øjeblikket kun tilgængelig som et Windows 8.1-program til stationære computere og tablets og som Cloud POS til pc- eller tabletbrowsere. I denne version bliver Retail Modern POS konverteret til en universel Windows-platformsapp (UWP). Denne ændring gør det muligt for Retail Modern POS at køre på alle Windows 10-enheder (pc, tablet eller telefon) og endda skifte mellem visninger for Continuum-aktiverede enheder.
 
 | Hvad du kan gøre | Hvorfor dette er vigtigt |
 |-----------------|-----------------------|
@@ -943,6 +945,3 @@ Retail Modern POS er i øjeblikket kun tilgængelig som et Windows 8.1-program t
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Nyheder eller ændringer på Finance and Operations-startsiden](whats-new-changed.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,29 @@
 ---
 title: Reparationsstyring
 description: Du kan gruppere problemer systematisk, så det bliver muligt at foreslå løsninger, der tidligere har vist sig at fungere.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAConditionTable, SMASymptomArea, SMADiagnosisArea, SMAResolutionTable, SMARepairStage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1456c65f28d2a1d06497ddde81c9e68cc078c061
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4d45732ff35069a64b37b6c53d9e22adf9a9a46d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567913"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424370"
 ---
 # <a name="repair-management"></a>Reparationsstyring       
 
@@ -35,11 +38,15 @@ Du kan angive indstillinger for symptomer, diagnoser og løsninger. Du kan så b
 
 Brug følgende forms til at angive oplysninger, der skal bruges til at angive symptomer, diagnose og løsning i forbindelse med en reparation.
 
-- **Servicestyring** \> **Opsætning** \> **Reparation** \> **Betingelser**.
-- **Servicestyring** \> **Opsætning** \> **Reparation** \> **Symptomområder**.
--  **Servicestyring** \> **Opsætning** \> **Reparation** \> **Diagnoseområder**.
-- **Servicestyring** \> **Opsætning** \> **Reparation** \> **Løsninger**.
-- **Servicestyring** \> **Opsætning** \> **Reparation** \> **Reparationsstadier**.
+1.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Betingelser**.
+
+2.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Symptomområder**.
+
+3.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Diagnoseområder**.
+
+4.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Løsninger**.
+
+5.  Klik på **Servicestyring** \> **Opsætning** \> **Reparation** \> **Reparationsstadier**.
 
 ## <a name="symptoms-and-conditions"></a>Symptomer og betingelser
 
@@ -75,19 +82,19 @@ Du kan oprette reparationslinjer for hvert trin i reparationsprocessen.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Oprette en reparationslinje på en serviceordre
 
-1.  Gå til **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
 
 2.  Vælg serviceordren med det serviceobjekt, der skal repareres.
 
-3.  Vælg **Reparation** \> **Reparationslinjer** for at åbne formularen **Reparationslinjer**.
+3.  Klik på **Reparation** \> **Reparationslinjer** for at åbne formularen **Reparationslinjer**.
 
-4.  Vælg **Ny** for at oprette en ny linje.
+4.  Tryk på Ctrl+N for at oprette en ny linje.
 
 5.  Vælg et serviceobjekt. Du kan vælge et hvilket som helst serviceobjekt, der er oprettet med en objektrelation på serviceordren.
 
-6.  Vælg en eller flere af de foruddefinerede værdier for symptomer, diagnoser og udførelser, der er relevante på reparationslinjen, og vælg om nødvendigt fanen **Bemærkning** for at oprette en bemærkning på reparationslinjen.
+6.  Vælg en eller flere af de foruddefinerede værdier for symptomer, diagnoser og udførelser, der er relevante på reparationslinjen, og klik om nødvendigt på fanen **Bemærkning** for at oprette en bemærkning på reparationslinjen.
 
-7.  Vælg **Gem** for at gemme den nye reparationslinje. Feltet **Dato og klokkeslæt for oprettelse** under fanen **Generelt** i formularen **Reparationslinjer** opdateres med tidspunktet for lagring.
+7.  Tryk på Ctrl+S for at gemme den nye reparationslinje. Feltet **Dato og klokkeslæt for oprettelse** under fanen **Generelt** i formularen **Reparationslinjer** opdateres med tidspunktet for lagring.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Spore og afslutte et reparationsforløb
 
@@ -106,6 +113,3 @@ Når et reparationsproblem er blevet løst, kan du lukke reparationslinjen. Inds
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

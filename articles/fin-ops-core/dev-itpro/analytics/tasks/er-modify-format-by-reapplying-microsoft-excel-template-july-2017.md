@@ -2,9 +2,11 @@
 title: Ændre formater ved at genanvende Excel-skabeloner
 description: For at fuldføre trinene i denne procedure skal du først fuldføre proceduren Designe en ER-konfiguration til generering af rapporter i OPENXML-format.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e66a2e24d3b1e77d5c790d2f3b7cfdce98fc4cca6e3734ad8b87ac7714192853
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c5b1bc5f227a0944c513dee2c12a5042decde872
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749650"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684229"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Ændre formater ved at genanvende Excel-skabeloner
 
@@ -25,7 +27,7 @@ ms.locfileid: "6749650"
 
 For at fuldføre trinene i denne procedure skal du først fuldføre proceduren Designe en ER-konfiguration til generering af rapporter i OPENXML-format.
 
-Denne procedure beskriver, hvordan du ændrer en konfiguration af et elektronisk rapporteringsformat (ER) ved at anvende en Microsoft Excel-skabelon, der er blevet ændret, igen. I denne procedure skal du importere en ændret Excel-skabelon til ER-formatkonfigurationer, der er oprettet til eksempelfirmaet Litware, Inc., og derefter generere elektroniske dokumenter. Denne procedure er beregnet til brugere, der har rollen som systemadministrator eller elektronisk rapporteringsudvikler. Disse trin kan udføres ved hjælp af GBSI-datasættet. Før du begynder, skal du hente og gemme filen SampleVendPaymWsReport2.xlsx, som er anført i Hjælp-emnet Rediger et elektronisk rapporteringsformat ved at genanvende en Excel-skabelon (modify-electronic-reporting-format-reapply-excel-template/).
+Denne procedure beskriver, hvordan du ændrer en konfiguration af et elektronisk rapporteringsformat (ER) ved at anvende en Microsoft Excel-skabelon, der er blevet ændret, igen. I denne procedure skal du importere en ændret Excel-skabelon til ER-formatkonfigurationer, der er oprettet til eksempelfirmaet Litware, Inc., og derefter generere elektroniske dokumenter. Denne procedure er beregnet til brugere, der har rollen som systemadministrator eller elektronisk rapporteringsudvikler. Disse trin kan udføres ved hjælp af GBSI-datasættet. Før du begynder, skal du hente og gemme filen SampleVendPaymWsReport2.xlsx, som er anført i Hjælp-emnet Rediger et elektronisk rapporteringsformat ved at genanvende en Microsoft Excel-skabelon (modify-electronic-reporting-format-reapply-excel-template/).
 
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
     * Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren Opret en konfigurationsudbyder, og markér den som aktiv.  
@@ -81,6 +83,3 @@ Denne procedure beskriver, hvordan du ændrer en konfiguration af et elektronisk
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Bruge den ændrede kladdeversion af ER-formatet i behandling af betalingskladde
 
 Gennemse det oprettede regneark, inklusive nye betalingslinjeoplysninger – betalingsdato.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

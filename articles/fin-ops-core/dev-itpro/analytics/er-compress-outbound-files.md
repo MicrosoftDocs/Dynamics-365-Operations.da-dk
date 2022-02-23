@@ -2,9 +2,11 @@
 title: Komprimere store dokumenter, der er genereret i elektronisk rapportering
 description: Dette emne forklarer, hvordan du komprimerer store dokumenter, der genereres af et elektronisk rapporteringsformat (ER).
 author: NickSelin
+manager: kfend
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718593"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680848"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimere store dokumenter, der er genereret i elektronisk rapportering 
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge [strukturen for elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere en løsning, der henter transaktionsdata for at oprette et udgående dokument. Dette oprettede dokument kan være temmelig stort. Når denne dokumenttype oprettes, bruges hukommelsen fra [Microsoft Dynamics AX Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) til at opbevare den. På et tidspunkt skal dokumentet downloades fra dit Microsoft Dynamics 365 Finance-program. I øjeblikket er maksimumstørrelsen på et enkelt dokument, der er oprettet i ER, begrænset til 2 gigabyte (GB). Finance sætter i øjeblikket en [begrænsning](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) på størrelsen af en downloadet fil til 1 GB. Derfor skal du konfigurere en ER-løsning, der reducerer sandsynligheden for, at disse begrænsninger overskrides, og at du modtager en af undtagelserne **Streamen er for lang** eller **Overløb eller underløb i den aritmetiske handling**.
+Du kan bruge [strukturen for elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere en løsning, der henter transaktionsdata for at oprette et udgående dokument. Dette oprettede dokument kan være temmelig stort. Når denne dokumenttype oprettes, bruges hukommelsen fra [Microsoft Dynamics AX Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) til at opbevare den. På et tidspunkt skal dokumentet downloades fra dit Microsoft Dynamics 365 Finance-program. I øjeblikket er maksimumstørrelsen på et enkelt dokument, der er oprettet i ER, begrænset til 2 gigabyte (GB). Finance sætter i øjeblikket en [begrænsning](https://fix.lcs.dynamics.com/Issue/Details?bugId=489291) på størrelsen af en downloadet fil til 1 GB. Derfor skal du konfigurere en ER-løsning, der reducerer sandsynligheden for, at disse begrænsninger overskrides, og at du modtager en af undtagelserne **Streamen er for lang** eller **Overløb eller underløb i den aritmetiske handling**.
 
 Når du konfigurerer en løsning, kan du justere dit ER-format i Operationsdesigner ved at tilføje et rodelement af typen **Mappe** for at komprimere det indhold, der oprettes af de indlejrede elementer. Komprimering fungerer via "JIT (just in time)", så det maksimale hukommelsesforbrug og størrelsen på den fil, der skal downloades, kan reduceres.
 
@@ -55,7 +57,7 @@ Du skal fuldføre følgende trin, før du kan fuldføre procedurerne i dette emn
 1. [Køre det importerede format](er-defer-xml-element.md#run-the-imported-format).
 2. Bemærk, at størrelsen på det oprettede dokument i XML-format er 3 kilobyte (KB).
 
-    ![Forhåndsvisning af det ukomprimerede udgående dokument.](./media/er-compress-outbound-files1.png)
+    ![Forhåndsvisning af det ukomprimerede udgående dokument](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Redigere formatet for at komprimere det oprettede output
 
@@ -80,7 +82,7 @@ Du skal fuldføre følgende trin, før du kan fuldføre procedurerne i dette emn
     > [!NOTE] 
     > Komprimeringsforholdet for den XML-fil, som denne zip-fil indeholder, er 87 %. Komprimeringsforholdet afhænger af de data, der komprimeres.
 
-    ![Forhåndsvisning af det komprimerede udgående dokument.](./media/er-compress-outbound-files2.png)
+    ![Forhåndsvisning af det komprimerede udgående dokument](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Hvis ER-[destinationen](electronic-reporting-destinations.md) er konfigureret for det formatelement, der opretter outputtet (elementet **Rapport** i dette eksempel), springes komprimeringen over.
@@ -92,6 +94,3 @@ Du skal fuldføre følgende trin, før du kan fuldføre procedurerne i dette emn
 [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

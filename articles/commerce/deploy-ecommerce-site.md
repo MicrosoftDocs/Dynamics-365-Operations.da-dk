@@ -2,40 +2,46 @@
 title: Implementere en ny e-handelslejer
 description: I dette emne beskrives, hvordan du implementerer et nyt Dynamics 365 Commerce-e-handelswebsted ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
+manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4b54e10cb4bd897b4c0706a13eeaf32f8892a05f7a09f3b27dbdd3dcdad1606
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750708"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517276"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Implementere en ny e-handelslejer
+
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du implementerer et nyt Dynamics 365 Commerce-e-handelswebsted ved hjælp af Microsoft Dynamics Lifecycle Services (LCS).
 
+## <a name="overview"></a>Overblik
+
 Microsoft Dynamics Lifecycle Services (LCS) er et skybaseret arbejdsområde til samarbejde, som partnere og kunder kan bruge til at styre deres projekter og miljøer, få vist de seneste oplysninger om Microsoft Dynamics-produkter og -funktioner og oprette, spore og gennemse supporthændelser. Funktioner til styring e-handel er integreret i LCS.
 
-Du kan få mere at vide om LCS i [Brugervejledning til Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
+Du kan få mere at vide om LCS i [Brugervejledning til Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
     
 ## <a name="get-started"></a>Introduktion
 
 Før du kan initialisere e-handel, skal du initialisere et projekt, et miljø og en Retail Cloud Scale Unit (RCSU). Når du vil udføre initialiseringen i LCS, skal du have rettigheder til enten Projektejer- eller Miljøadministrator-rollen. Topologierne for produktions- og sandkassemiljøet understøttes.
 
-Du kan finde flere oplysninger om miljøer under [Miljøplanlægning](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Du kan finde flere oplysninger om RCSU under [Initialisere Retail Cloud Scale Unit](/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
+Du kan finde flere oplysninger om miljøer under [Miljøplanlægning](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Du kan finde flere oplysninger om RCSU under [Initialisere Retail Cloud Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
 
 ## <a name="initialize-e-commerce"></a>Initialisere e-handel
 
@@ -106,6 +112,3 @@ Hvis du vil have adgang til Commerce-webstedsgeneratoren, skal du gå til fanen 
 [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

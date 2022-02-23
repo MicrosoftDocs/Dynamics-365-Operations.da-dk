@@ -1,26 +1,35 @@
 ---
 title: Skifte mellem kreditordesign
-description: I dette emne beskrives det, hvordan du kan skifte integrationen af leverandørdata mellem Finans- og driftsapps og Dataverse.
+description: I dette emne beskrives det, hvordan du kan skifte integrationen af kreditordata mellem Finance and Operations-apps og Dataverse.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 80de21b5e46e4f274626fa311f16e81312a2f5ab
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2019-09-20
+ms.openlocfilehash: d2c22123d5f05945b34eb107c5b912852aec387a
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062744"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744459"
 ---
 # <a name="switch-between-vendor-designs"></a>Skifte mellem kreditordesign
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -41,14 +50,14 @@ Følg disse trin for at oprette nye arbejdsgangsprocesser ved hjælp af arbejdsg
 
 1. Opret en arbejdsgangsproces for tabellen **Kreditor**, og vælg skabelonen **Opret kreditorer i tabellen Konti** for arbejdsgangsprocessen. Vælg derefter **OK**. Denne arbejdsgang håndterer leverandøroprettelsesscenariet for tabellen **Konto**.
 
-    ![Oprette kreditorer i arbejdsgangprocessen for tabellen Konti.](media/create_process.png)
+    ![Opret kreditorer i arbejdsgangprocessen for tabellen Konti](media/create_process.png)
 
 2. Opret en arbejdsgangsproces for tabellen **Kreditor**, og vælg skabelonen **Opdater kreditorer i tabellen Konti** for arbejdsgangsprocessen. Vælg derefter **OK**. Denne arbejdsgang håndterer opdateringsscenariet for leverandører for tabellen **Konto**.
 3. Opret en arbejdsgangsproces for tabellen **Konto**, og vælg skabelonen **Opret kreditorer i tabellen Kreditorer** for arbejdsgangsprocessen.
 4. Opret en arbejdsgangsproces for tabellen **Konto**, og vælg skabelonen **Opdater kreditorer i tabellen Kreditorer** for arbejdsgangsprocessen.
 5. Du kan konfigurere arbejdsprocesser som enten realtids- eller baggrundsarbejdsgange, afhængigt af dine krav. Hvis du vil konfigurere en arbejdsgang som en baggrundsarbejdsgang, skal du vælge **Konverter til en baggrundsarbejdsgang**.
 
-    ![Konvertere til en baggrundsarbejdsgangsknap.](media/background_workflow.png)
+    ![Konvertere til en baggrundsarbejdsgangsknap](media/background_workflow.png)
 
 6. Aktiver de arbejdsgange, du har oprettet for tabellerne **Konto** og **Kreditor** for at påbegynde anvendelsen af tabellen **Konto** til lagring af oplysninger til kreditorer af typen **Organisation**.
 
@@ -69,6 +78,3 @@ Følg disse trin for at oprette nye arbejdsgangsprocesser ved hjælp af arbejdsg
 4. Opret en ny arbejdsgangsproces for tabellen **Kontaktperson**, og vælg skabelonen **Opdater kreditorer af typen Person i tabellen Kreditorer** for arbejdsgangsprocessen.
 5. Du kan konfigurere arbejdsprocesser som enten realtids- eller baggrundsarbejdsgange, afhængigt af dine krav. Hvis du vil konfigurere en arbejdsgang som en baggrundsarbejdsgang, skal du vælge **Konverter til en baggrundsarbejdsgang**.
 6. Aktiver de arbejdsgange, du har oprettet i tabellerne **Kontaktperson** og **Kreditor** for at påbegynde anvendelsen af tabellen **Kontaktperson** til lagring af oplysninger til kreditorer af typen **Person**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

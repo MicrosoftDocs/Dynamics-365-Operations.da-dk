@@ -1,32 +1,33 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (19. marts 2020)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 19. marts 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0bea115ed111d1309e19631c1cc08fdbab0dca3f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 902539a5abecba6ad99718afbb37613838450032
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062028"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526850"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-19-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (19. marts 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I denne artikel beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Human Resources. Ændringerne gælder for build nummer 8.1.3014. Tallene i parenteser i nogle overskrifter henviser til Lifecycle Services (LCS)-supportnumre til reference.
 
@@ -52,7 +53,7 @@ Du kan nu justere saldi for orlovsplaner, der er oprettet med prøvefunktionen *
 
 For medarbejdere, hvis ansættelse er ophørt, vises den primære stilling, der var aktiv på ophørstidspunktet, i enheden. Der vil ikke længere blive oprettet en dubletpost for medarbejderens stillingstildeling i forbindelse med integrationer. 
 
-## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse-løsning er nu tilgængelig med følgende ændringer:
+## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service-løsning er nu tilgængelig med følgende ændringer:
 
 | Beskrivende tekst | Forskydning |
 | --- | --- |
@@ -64,12 +65,12 @@ For medarbejdere, hvis ansættelse er ophørt, vises den primære stilling, der 
 | Nye konfigurationsobjekter til variabel kompensation | <ul><li>**Type af variabel kompensationsplan**</li><li>**Kompensation - variabel struktur**</li><li>**Fordelingsregler**</li><li>**Niveau i variabel kompensationsplan**</li></ul> |
 | Nyt objekt **Arbejderkalender for ansættelse** | <ul><li>**Arbejdskalenderobjekt** er tilføjet</li></ul> |
 | Nyt objekt **Lønoplysninger for stillinger** | <ul><li>**Lønoplysninger for stillinger** er tilføjet</li></ul> |
-| Nyt objekt **Titel** | <ul><li>**Titel** er tilføjet</li></ul>Den nye enhed **Titel** er inkluderet i Dataverse, men den er ikke refereret fra enhederne **Stilling** eller **Job** i øjeblikket. |
+| Nyt objekt **Titel** | <ul><li>**Titel** er tilføjet</li></ul>Den nye enhed **Titel** er inkluderet i Common Data Service, men den er ikke refereret fra enhederne **Stilling** eller **Job** i øjeblikket. |
 
 > [!NOTE]
-> Økonomiske dimensioner for både stillinger og beskæftigelse giver en integration med én retning for opdateringer fra HR til Dataverse. Opdateringer af økonomiske dimensioner synkroniseres i øjeblikket ikke fra Dataverse til HR.
+> Økonomiske dimensioner for både stillinger og beskæftigelse giver en integration med én retning for opdateringer fra HR til Common Data Service. Opdateringer af økonomiske dimensioner synkroniseres i øjeblikket ikke fra Common Data Service til HR.
 
-I løbet af de næste par uger vil disse enhedsændringer være tilgængelige i alle miljøer. Sådan installeres den nyeste Dataverse-løsning til HR manuelt:
+I løbet af de næste par uger vil disse enhedsændringer være tilgængelige i alle miljøer. Sådan installeres den nyeste Common Data Service-løsning til HR manuelt:
 
 1.  Gå til [Power Platform Administration](https://admin.powerplatform.microsoft.com).
 
@@ -91,7 +92,7 @@ Hvis visning af dokumenter, der er gemt i SharePoint, ikke fungerer, kan du prø
 
 1. Kontroller, at administratorbrugerkontoen har en mail tilknyttet brugerposten. Du kan få vist disse oplysninger på siden **Bruger**. Hvis e-mail ikke er konfigureret, skal du tilføje e-mailadressen og udbyderen med OData Excel-tilføjelsesprogrammet. E-mailadressen findes som standard ikke i Excel-designet. Du skal redigere Excel-designet, tilføje alle felter, anvende og opdatere. Når du har fuldført disse trin, kan du opdatere administratorkontoen.
 
-2. Når administratorkontoen har en tilknyttet mailkonto, skal du logge på Human Resources med administrator-legitimationsoplysninger.
+2. Når administratorkontoen har en tilknyttet mailkonto, skal du logge på Personale med administrator-legitimationsoplysninger.
 
 3. Åbn en vedhæftet fil i SharePoint for at starte dokumentvisningen.
 
@@ -126,8 +127,6 @@ Følgende prøvefunktioner er tilgængelige den 3. februar 2020:
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

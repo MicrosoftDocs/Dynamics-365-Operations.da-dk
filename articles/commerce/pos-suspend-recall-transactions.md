@@ -2,12 +2,15 @@
 title: Afbryde og genoptage en transaktion i POS
 description: Dette emne forklarer, hvordan brugere kan afbryde igangværende transaktioner og derefter genoptage dem senere eller på et andet kasseapparat ved hjælp af Dynamics 365 Commerce.
 author: jblucher
+manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2efc88cfa7a8cede50969484d275c6fdbb2204dd2f29b3f8c7340d02cb61a79c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f513e2d857908f2b95d27bf48ff1e826724d7cbf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737548"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411164"
 ---
 # <a name="suspend-and-resume-a-transaction-in-the-point-of-sale-pos"></a>Afbryde og genoptage en transaktion i POS
 
@@ -79,6 +82,3 @@ Du kan hurtigt og nemt kalde en afbrudt transaktion frem igen ved at scanne stre
 ### <a name="void-a-suspended-transaction"></a>Annullere en afbrudt transaktion
 
 Du kan annullere afbrudte transaktioner enten ved at genkalde transaktionen og derefter udføre handlingen **Afvis transaktion** eller ved at markere transaktionen på listen **Hent transaktion igen** og vælge **Afvist** på applinjen. Butikken kan også konfigureres til at bede brugerne om at annullere afbrudte transaktioner, når de afslutter deres skift.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

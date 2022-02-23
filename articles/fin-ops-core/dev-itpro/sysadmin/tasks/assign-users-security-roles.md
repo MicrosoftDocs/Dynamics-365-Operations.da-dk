@@ -2,9 +2,11 @@
 title: Tildele brugere til sikkerhedsroller
 description: Brugerne skal være tildelt sikkerhedsroller for at få adgang til Finance and Operations.
 author: Peakerbl
+manager: AnnBe
 ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d65c4dafda63b7a54dd343652b0f4b498e064f4aee0fba43c34d40d73ac5062
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748330"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679858"
 ---
 # <a name="assign-users-to-security-roles"></a>Tildele brugere til sikkerhedsroller
 
@@ -55,6 +57,3 @@ Brugere, som manuelt tildeles sikkerhedsroller, skal også fjernes manuelt af ad
 2. Vælg en rolle i træet, og vælg **Tildel brugere roller/udeluk brugere fra roller manuelt** i menuen **Brugere, der er tildelt til rollen**.
 4. I **Tildel brugere til roller, eller udeluk brugere fra roller** vises de brugere, der ikke er tildelt til rollen, med **Tildelingstilstand** angivet til **Ingen**. Vælg en eller flere brugere, der skal have tildelt rollen.
 5. Vælg **Tildel til rolle** i **handlingsruden**. **Tildelingstilstand** opdateres til **Manuel**, og brugerne har nu fået tildelt en ny rolle.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

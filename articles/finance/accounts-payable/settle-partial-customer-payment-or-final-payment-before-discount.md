@@ -1,28 +1,31 @@
 ---
-title: Udligne en delvis og endelig betaling fuldt ud før rabatdatoen
+title: Udlign en delvis debitorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen
 description: Denne artikel indeholder scenarier, der viser, hvordan du registrerer delbetalinger for en kunde og anvender kasserabatter i kasserabatperioden.
 author: abruer
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ac544c86804a54aaad5038e0c470095ee145346b337a5a66d5450562da2cffc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737155"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4441725"
 ---
-# <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Udligne en delvis og endelig betaling fuldt ud før rabatdatoen
+# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Udlign en delvis debitorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen
 
 [!include [banner](../includes/banner.md)]
 
@@ -61,14 +64,14 @@ Arnie klikker på fanen **Kasserabat** for at få vist rabatbeløbet.
 | 25-7-2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Delvis betaling ved hjælp af siden Angiv debitorbetalinger
-Debitor 4028 sender en betaling på 500,00 den 1. juli. For at angive denne betaling klikker Arnie ikke på **Linjer**. I stedet registrerer han betalingen ved at oprette en ny betalingskladde og derefter åbne siden **Angiv debitorbetalinger**. Arnie indtaster oplysningerne om betaling og markerer den faktura, som de har angivet. Når Arnie skriver **500,00** som beløbet, skriver de også **500,00** i feltet **Beløb til betaling** i gitteret. Da Fabrikam giver mulighed for en kasserabat på delbetalinger, kan Arnie se, at en delvis kasserabat på 5,05 også bliver medtaget. Beregningen af denne rabat er 500,00 ÷ 0,99 × 0,01 = 5,05. (I denne beregning divideres 500,00 med 0,99, fordi der er en rabat på 1 %. Derfor betaler debitoren 99 % af fakturaen. Resultatet multipliceres derefter med rabatprocenten, som er 1 % eller 0,01. Hvis kunden tager den fulde rabat på 10,00, bliver det beløb, der skal afregnes 990,00). Rabatoplysninger vises i gitteret i bunden af siden **Angiv debitorbetalinger**.
+Debitor 4028 sender en betaling på 500,00 den 1. juli. For at angive denne betaling klikker Arnie ikke på **Linjer**. I stedet registrerer han betalingen ved at oprette en ny betalingskladde og derefter åbne siden **Angiv debitorbetalinger**. Han indtaster oplysningerne om betaling og markerer den faktura, som han har angivet. Når Arnie skriver **500,00** som beløbet, skriver han også **500,00** i feltet **Beløb til betaling** i gitteret. Da Fabrikam giver mulighed for en kasserabat på delbetalinger, kan han se, at en delvis kasserabat på 5,05 også bliver medtaget. Beregningen af denne rabat er 500,00 ÷ 0,99 × 0,01 = 5,05. (I denne beregning divideres 500,00 med 0,99, fordi der er en rabat på 1 %. Derfor betaler debitoren 99 % af fakturaen. Resultatet multipliceres derefter med rabatprocenten, som er 1 % eller 0,01. Hvis kunden tager den fulde rabat på 10,00, bliver det beløb, der skal afregnes 990,00). Rabatoplysninger vises i gitteret i bunden af siden **Angiv debitorbetalinger**.
 
 | Kasserabatbeløb, der skal medtages | Medtaget kasserabat | Beløb til betaling |
 |------------------------------|---------------------|---------------|
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Delvis betaling ved hjælp af kladdelinjer
-I stedet for at åbne siden **Angiv debitorbetalinger** i betalingskladden, kan Arnie klikke på **Linjer** for at angive en betaling. Udbetalingskladden vises, og Arnie kan angive en linje for debitor 4028. Arnie åbner derefter siden **Udlign posteringer**, så han kan markere fakturaen til udligning. Arnie markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **500,00**. Arnie ser igen, at værdien i feltet **Kasserabatbeløb** er **10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **5,05**. Arnie udligner derfor 505,05 af denne faktura.
+I stedet for at åbne siden **Angiv debitorbetalinger** i betalingskladden, kan Arnie klikke på **Linjer** for at angive en betaling. Udbetalingskladden vises, og Arnie kan angive en linje for debitor 4028. Arnie åbner derefter siden **Udlign posteringer**, så han kan markere fakturaen til udligning. Arnie markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **500,00**. Han ser igen, at værdien i feltet **Kasserabatbeløb** er **10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **5,05**. Arnie udligner derfor 505,05 af denne faktura.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -100,7 +103,7 @@ Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | 5,00      |
 
-Arnie lukker siden **Udlign posteringer**. Der oprettes en betalingslinje for 495,00 i kladden, og Arnie bogfører derefter kladden. Han kan gennemse debitorposteringerne på siden **Debitorposteringer**. På denne side kan Arnie se, at fakturaen har en saldo på 500,00. Han ser også en betaling på 495,00 og en rabat på 5,00.
+Arnie lukker siden **Udlign posteringer**. Der oprettes en betalingslinje for 495,00 i kladden, og Arnie bogfører derefter kladden. Han kan gennem debitorposteringerne på siden **Debitorposteringer**. På denne side kan Arnie se, at fakturaen har en saldo på 500,00. Han ser også en betaling på 495,00 og en rabat på 5,00.
 
 | Bilag    | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -109,7 +112,7 @@ Arnie lukker siden **Udlign posteringer**. Der oprettes en betalingslinje for 49
 | DISC-10010 |  Kasserabat   | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Betaling af det resterende beløb
-Debitor 4028 betaler resten af beløbet på 495,00 den 8. juli, som er inden for kasserabatperioden. Arnie opretter betalingskladden den 8. juli og markerer posteringen til udligning. Arnie ser, at det beløb, der skal udlignes, er 495,00. Værdien i feltet **Forkalkuleret kasserabat** er **5,00**, fordi rabatten på 5,00 blev medtaget tidligere.
+Debitor 4028 betaler resten af beløbet på 495,00 den 8. juli, som er inden for kasserabatperioden. Arnie opretter betalingskladden den 8. juli og markerer posteringen til udligning. Han ser, at det beløb, der skal udlignes, er 495,00. Værdien i feltet **Forkalkuleret kasserabat** er **5,00**, fordi rabatten på 5,00 blev medtaget tidligere.
 
 |   &nbsp;                | &nbsp; |
 |-------------------------|--------|
@@ -146,6 +149,3 @@ Arnie bogfører denne betalingskladde og gennemgår debitorposteringerne på sid
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

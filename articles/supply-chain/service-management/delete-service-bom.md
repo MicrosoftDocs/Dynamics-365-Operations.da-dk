@@ -1,39 +1,46 @@
 ---
 title: Slette en servicestykliste
-description: Dette emne indeholder en procedure, der viser, hvordan servicestykliste slettes.
-author: kamaybac
+description: En serviceordre repræsenterer en serviceteknikers besøg hos en kunde på en bestemt dato.
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectRelation
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0b1ea4bd8c035db39763b3c1da9ccfc14030c24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 744f78f2dd088e50c91e1f7ef0e6f68b176f9618
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569065"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424546"
 ---
-# <a name="delete-a-service-bom"></a>Slette en servicestykliste
+# <a name="delete-a-service-bom"></a>Slette en servicestykliste 
 
 [!include [banner](../includes/banner.md)]
 
-1. Gå til **Servicestyring** \> **Fælles** \> **Serviceaftaler** \> **Serviceaftaler**. Vælg den serviceaftale, du vil slette en styklistetjeneste fra.
-1. Vælg **Serviceobjekter** i **handlingsruden**.
-1. I formularen **Serviceobjekter** skal du vælge det serviceobjekt, som du vil slette styklistetjenesten fra. Vælg **Funktioner**, og vælg derefter **Slet servicestykliste**.
-1. Vælg **Ja**.
+
+1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**. Vælg den serviceaftale, du vil slette en styklistetjeneste fra.
+
+2.  Klik på **Serviceobjekter** i **handlingsruden**.
+
+3.  I formularen **Serviceobjekter** skal du vælge det serviceobjekt, som du vil slette styklistetjenesten fra. Klik på **Funktioner**, og vælg derefter **Slet servicestykliste**.
+
+4.  Klik på **Ja**.
 
 
 > [!NOTE]
-> Hvis du ikke har anvendt en styklisteskabelon, kan styklistetjenesten slettes fra siden **Styklisteskabeloner**. Hvis du har anvendt styklisteskabelonen, kan styklistetjenesten ikke slettes på denne måde.
+> <P>Hvis du ikke har anvendt en styklisteskabelon, kan styklistetjenesten slettes fra formularen <STRONG>Styklisteskabeloner</STRONG>. Hvis du har anvendt styklisteskabelonen, kan styklistetjenesten ikke slettes på denne måde.</P>
 
 
 
@@ -46,6 +53,3 @@ ms.locfileid: "7569065"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

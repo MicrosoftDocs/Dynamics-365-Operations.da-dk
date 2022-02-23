@@ -2,23 +2,26 @@
 title: Afslut en produktionsordre
 description: Denne procedure viser, hvordan du afslutter en produktionsordre.
 author: johanhoffmann
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb87a8df77ecced213b4bd61c40fa372b092ab765528e1cd96274cf79537d521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fade659c320e0ea1059644324859c9a3cb273c96
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765948"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424327"
 ---
 # <a name="end-a-production-order"></a>Afslut en produktionsordre
 
@@ -43,6 +46,3 @@ Denne procedure viser, hvordan du afslutter en produktionsordre. Det demodatafir
 1. Klik på Administrer omkostninger i handlingsruden.
 2. Klik på Vis omkostningssammenligning.
     * Når du har afsluttet produktionsordren, kan du sammenligne den forkalkulerede kostpris i forhold til den realiserede kostpris for at få et overblik over produktionsafvigelser.  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

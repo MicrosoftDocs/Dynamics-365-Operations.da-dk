@@ -2,24 +2,28 @@
 title: Eksperimenteren i Dynamics 365 Commerce
 description: Med eksperimenteren kan du oprette, redigere og administrere sidelayout og indholdsbehandlinger i webstedsgeneratoren. Understøttelse af eksperimenteren fra start til slut er aktiveret for e-handelssider og enheder på en side.
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986535"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4411219"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimenteren i Dynamics 365 Commerce
 Brug eksperimenteren i Dynamics 365 Commerce til at validere hypoteser om effektiviteten af dine e-handelssider, og tag beslutninger med databaseret sikkerhed. Commerce understøtter A/B-test på sider, moduler og fragmenter og giver dig mulighed for at måle virkningen af foreslåede ændringer på dit websted.
@@ -38,13 +42,13 @@ Du kan oprette, redigere og administrere behandlinger af sider og indhold, der k
 ## <a name="experimentation-lifecycle"></a>Eksperimenterens livscyklus
 Det er en iterativ proces at konfigurere et eksperiment, oprette variationer og køre et eksperiment. Nedenstående diagram viser livscyklussen for Eksperimenteren i Commerce og tredjepartstjenesten. 
 
-[ ![Eksperimenterens livscyklus.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Eksperimenterens livscyklus](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Du kan finde flere oplysninger om hvert trin i eksperimenteren-processen under følgende emner.
 - [Identificere en hypotese og fastslå målepunkter for et eksperiment](experimentation-identify.md)
 - [Opsætning af et eksperiment](experimentation-setup.md)
 - [Oprette forbindelse til og redigere et eksperiment](experimentation-connect-edit.md)
-- [Se prøveversion og publicere et eksperiment](experimentation-preview-publish.md)
+- [Gennemse og publicere et eksperiment](experimentation-preview-publish.md)
 - [Køre og overvåge et eksperiment](experimentation-run-monitor.md)
 - [Hæv en variation og fuldfører et eksperiment](experimentation-review-complete.md)
 
@@ -53,6 +57,3 @@ Du kan finde flere oplysninger om hvert trin i eksperimenteren-processen under f
 
 ## <a name="next-step"></a>Næste trin
 [Identificere en hypotese og fastslå succesmålepunkter for et eksperiment](experimentation-identify.md) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

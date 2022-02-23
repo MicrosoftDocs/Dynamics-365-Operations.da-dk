@@ -2,23 +2,26 @@
 title: Distribution af budgetteret stilling
 description: Dette emne indeholder oplysninger om funktionen til budgettering af stillinger, der er tilgængelige for den offentlige sektor.
 author: velofog
+manager: AnnBe
 ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ca9bf92461afc8c7287dbc48228710b108b731b4a33a7f90676e6766c6840eb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 109f0ac35fb0bea26eeec1052c165bf13653e8e7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767573"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407649"
 ---
 # <a name="forecast-position-distribution"></a>Distribution af budgetteret stilling 
 
@@ -32,6 +35,3 @@ Du kan validere, om dimensionerne for en budgetteret stilling er korrekte for or
 Du kan se, hvornår en budgetteret stilling sidst blev valideret, i sektionen **Validering af budgetteret stilling** i oversigtspanelet **Budgetplanlægning** på siden **Budgetteret stilling**. Valideringsfelterne medtages også på listesiden **Budgetterede stillinger**.
 
 Du kan finde flere oplysninger under [Budgetteret stilling](../budgeting/position-forecasting.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

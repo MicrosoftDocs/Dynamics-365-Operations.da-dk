@@ -2,13 +2,16 @@
 title: Juster resultater for AI-ML-baserede produktanbefalinger
 description: I dette emne beskrives, hvordan du kan skræddersy resultater fra produktanbefalinger på basis af kunstig intelligens-maskinel indlæring (AI-ML) til din virksomhed.
 author: bebeale
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5374b2ce559134bd26036b06ac6d96a9f5510ab847544707fc9885506aaab547
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc6a793061a3e644599f0882ff163f5f57b2162d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748516"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411165"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Juster resultater for AI-ML-baserede produktanbefalinger
 
@@ -51,7 +54,7 @@ Afhængigt af din virksomhed kan listen over mest solgte produkter give et andet
 
 Listen over de mest solgte produkter har én parameter, der kan ændres:
 
-![Eksempel på standardparameter for liste over mest solgte produkter.](./media/examplebestsellingparameters.PNG)
+![Eksempel på standardparameter for liste over bedst sælgende](./media/examplebestsellingparameters.PNG)
 
 1. **Medtag salg fra de seneste X dage** - Salgstransaktioner, der er foretaget inden for det angivne antal dage før den aktuelle dato, kan bruges til at vælge produkterne. Standardværdien ovenfor antyder, at alle køb, der er foretaget af et produkt inden for de seneste 30 dage, bruges til at bestemme produktets placering på listen over bedst sælgende produkter. 
 
@@ -65,13 +68,13 @@ Listen over de mest solgte produkter har én parameter, der kan ændres:
 1.  Hvis du vil føje produkter til tabellen, skal du vælge **Tilføj linje**. 
 1.  Søg efter et produkts **Navn** eller **Produktnummer** i produktkolonnen.
 
-    ![Eksempel på søgning efter et produkt på listen Nyt produkt.](./media/examplenewlistconfiguration1.png)
+    ![Eksempel på søgning efter et produkt på listen Nyt produkt](./media/examplenewlistconfiguration1.png)
 
 1.  I kolonnen Linjetype skal du vælge en af to indstillinger:
     -   **Medtag** – tvinger et produkt op forrest på listen
     -   **Udeluk** – fjerner et produkt, så det ikke bliver vist på listen
     
-    ![Eksempel på, hvordan et produkt medtages eller udelukkes fra listen Nyt produkt.](./media/examplenewlistconfiguration2.png)
+    ![Eksempel på, hvordan et produkt medtages eller udelukkes fra listen Nyt produkt](./media/examplenewlistconfiguration2.png)
 
 1.  Hvis du ændrer **Visningsrækkefølge**, ændres den rækkefølge, som de produkter, der er markeret **medtag**, vises i på listen.
     - Hvis to produkter har samme værdi for **visningsrækkefølge**, kan den endelige rækkefølge af disse to resultater afvige fra administrationens.
@@ -87,11 +90,11 @@ Et *oprindelsesprodukt* er det produkt, du vil generere resultater for. I forbin
 Udfør følgende trin for manuelt at tilføje eller fjerne resultater for et oprindelsesprodukt:
 1.  Vælg **Oprindelsesprodukt**. 
 1.  Søg i kolonnen **Produkt** efter et produkt ud fra **Navn** eller **Produktnummer**.
-![Eksempel på søgning efter et produkt på listen Ofte købt sammen.](./media/exampleFBTlistconfiguration1.png)
+![Eksempel på søgning efter et produkt på listen Ofte købt sammen](./media/exampleFBTlistconfiguration1.png)
 1. I kolonnen **Linjetype** skal du vælge en af to indstillinger:
     - **Medtag** – tvinger et produkt op forrest på listen
     - **Udeluk** – fjerner et produkt, så det ikke bliver vist på listen     
-![Eksempel på at medtage eller udelukke et produkt fra listen Ofte købte sammen.](./media/exampleFBTlistconfiguration2.png)
+![Eksempel på at medtage eller udelukke et produkt fra listen Ofte købte sammen](./media/exampleFBTlistconfiguration2.png)
 1.  Hvis du vil fjerne produkter fra tabellen, skal du markere den linje, du vil fjerne, og vælge Fjern.
 
 
@@ -118,6 +121,3 @@ Udfør følgende trin for manuelt at tilføje eller fjerne resultater for et opr
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

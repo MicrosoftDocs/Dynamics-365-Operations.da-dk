@@ -1,10 +1,12 @@
 ---
 title: Oprette konfigurationsudbydere og markere dem som aktive
-description: Dette emne forklarer, hvordan en bruger med rollen som Systemadministrator eller Udvikler til elektronisk rapportering kan oprette en konfigurationsudbyder til elektronisk rapportering.
+description: Dette emne forklarer, hvordan en bruger med rollen som Systemadministrator eller Udvikler til elektronisk rapportering kan oprette en konfigurationsudbyder til elektronisk rapportering (ER).
 author: NickSelin
+manager: AnnBe
 ms.date: 07/02/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5b429badcbcc0e9829d82785a6e1f1a2504f5ec9b9ac74d249032f272dea103
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7fb9f5be8571974237154ea704c93b8666c539a7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747241"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681991"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Oprette konfigurationsudbydere og markere dem som aktive
 
@@ -41,7 +43,4 @@ Dette emne forklarer, hvordan en bruger med rollen som Systemadministrator eller
 1. Vælg udbyderen Litware, Inc., .
 2. Vælg **Angiv aktive**.
 
-![Arbejdsområdeside til elektronisk rapportering.](../media/GER-Task-ActiveProvider-1.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![Arbejdsområdeside til elektronisk rapportering](../media/GER-Task-ActiveProvider-1.png)

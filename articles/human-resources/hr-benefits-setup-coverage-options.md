@@ -1,43 +1,37 @@
 ---
-title: Oprette dækningsindstillinger
-description: Dette emne beskriver dækningsindstillingerne i Microsoft Dynamics 365 Human Resources for en deltagers valg i en frynsegodeplan eller et program.
-author: twheeloc
-ms.date: 08/24/2021
+title: Oprette disponeringsindstillinger
+description: Dækningsindstillinger i Microsoft Dynamics 365 Human Resources er niveauer for en deltagers valg i en frynsegodeplan eller et program.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 01eb0c56578cf6f6b070c4a05768ec5361993555
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8690dbe00c2316ccf745f5222c3cbaa9c3379f85
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065862"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417852"
 ---
-# <a name="create-coverage-options"></a>Oprette dækningsindstillinger
+# <a name="create-coverage-options"></a>Oprette disponeringsindstillinger
 
+Dækningsindstillinger i Microsoft Dynamics 365 Human Resources er niveauer for en deltagers valg i en frynsegodeplan eller et program. Dækningsindstillinger kan f.eks. omfatte **Kun medarbejder** for en medicinsk plan eller **2 x løn** til en livsforsikring. Når den er defineret, kan du genbruge indstillingerne for frynsegodedækning. Du kan knytte en indstilling til en eller flere planer.
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Når du har defineret dækningsindstillingerne, skal du knytte dækningsindstillingerne til en type af frynsegodeplan. Plantypen knyttes derefter til en frynsegodeplan eller et frynsegodeprogram. Dækningsindstillinger, der er knyttet til plantype, vil være tilgængelige for alle de planer, der oprettes med den pågældende plantype. 
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dækningsindstillinger bestemmer, hvem der er dækket, eller hvor meget dækning der er til rådighed i en forsikringsplan. I forbindelse med en sundhedsplan kan du f.eks. vælge en indstilling for **Kun medarbejder**, **Medarbejder +1** og **Familie**. Med hensyn til livsforsikring kan du tilbyde dækning for **1 x løn** eller **2 x løn**.
-
-Når du har defineret indstillingerne for frynsegodedækning, kan de genbruges. Du kan knytte en indstilling til en eller flere planer.
-
-> [!IMPORTANT]
-> Når du har defineret dækningsindstillingerne, skal du knytte dem til en type af frynsegodeplan. Plantypen knyttes derefter til en frynsegodeplan eller et frynsegodeprogram. Dækningsindstillinger, der er knyttet til plantype, vil være tilgængelige for alle planer af denne type, som bliver oprettet.
-
-## <a name="create-coverage-options"></a>Oprette dækningsindstillinger
-1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Dækningsindstillinger** under **Konfiguration**.
+1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Disponeringsindstillinger** under **Konfiguration**.
 
 2. Vælg **Ny**.
 
@@ -45,26 +39,23 @@ Når du har defineret indstillingerne for frynsegodedækning, kan de genbruges. 
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | **Dækningsindstilling** | Et entydigt navn på en dækningsindstilling. |
-   | **Beskrivelse** | En beskrivelse af dækningsindstillingen. |
-   | **Dækningskode** | Dækningskoder tilknytter minimum- og maksimumbeløb for alle berettigede dækkede persontyper. En dækningskode angiver, hvem der er dækket, eller dækningsbeløbet, der er tilladt for en plantype. Du kan udtrykke dækningsbeløbet som et kronebeløb eller en procentdel. F.eks.:<ul><li>**Medarbejder+1** – for at blive kvalificeret skal medarbejderen have valgt én afhængig (hvis der er valgt mere end én, er de ikke længere kvalificerede).</li><li>**Medarbejder+familie** – for at blive kvalificeret skal medarbejderen have valgt mindst to afhængige.</li></ul> |
+   | **Disponeringsindstilling** | Et entydigt navn på en disponeringsindstilling. |
+   | **Beskrivelse** | En beskrivelse af disponeringsindstillingen. |
+   | **Dækningskode** | Disponeringskoder tilknytter minimum- og maksimumbeløb for alle berettigede disponerede persontyper. En disponeringskode angiver, hvem der er disponeret, eller disponeringsbeløbet, der er tilladt for en plantype. Du kan udtrykke beløbet for disponering som et kronebeløb eller en procentdel. F.eks.:</br></br>- **EMP+1** – for at blive kvalificeret skal medarbejderen have valgt én afhængig (hvis der er valgt mere end én, er de ikke længere kvalificeret).</br></br>- **EMP+familie** – for at blive kvalificeret skal medarbejderen have valgt mindst to afhængige. |
    | **Maks. antal** | Maks. antal af afhængige. |
-   | **Status** | Statussen for dækningsindstillingen. Hvis status for Dækningsindstilling er angivet til **Inaktiv**, kan Dækningsindstilling ikke vælges for plantyper. |
-   | **Procent** | Beløb i procent. Dette felt er kun aktivt, hvis % x løn blev valgt i feltet Dækningskode. |
-   | **Nævner** | Den divisor, der skal bruges i beregningen, når du vælger dækningskode % x løn. |
-   | **Min. procentdel** | Den minimale procentdel, når du vælger dækningskoden Procent. |
-   | **Maks. procent** | Den maksimale procentdel, når du vælger dækningskoden Procent. |
+   | **Status** | Statussen for disponeringsindstillingen. Hvis status for disponeringsindstillingen er angivet til Inaktiv, kan indstillingen Disponering ikke vælges for plantyper. |
+   | **Procent** | Beløb i procent. Dette felt er kun aktivt, hvis % x løn blev valgt i feltet Disponeringskode. |
+   | **Nævner** | Den divisor, der skal bruges i beregningen, når du vælger disponeringskode % x løn. |
+   | **Min. procentdel** | Den minimale procentdel, når du vælger Procentdisponeringskode. |
+   | **Maks. procent** | Den maksimale procentdel, når du vælger Procentdisponeringskode. |
 
-4. Under **Indstillinger for berettigelse for personlige kontakter** skal du knytte den relevante indstilling for personlig kontaktberettigelse til de enkelte dækningsindstillinger.
+4. Under **Indstillinger for berettigelse for personlige kontakter** skal du knytte den relevante indstilling for personlig kontaktberettigelse til de enkelte disponeringsindstillinger.
 
 5. Under **Selvbetjening** skal du angive værdier for følgende felter:
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | **Tillad medarbejderbidragsbeløb** | Angiver, om medarbejdere skal kunne redigere bidragsbeløbet via selvbetjeningen for frynsegoder, når de vælger frynsegoder. Hvis du markerer dette afkrydsningsfelt, beregner systemet parametre for frynsegodeplanen ud fra det bidragsbeløb, som medarbejderen angiver i selvbetjeningen for frynsegoder. |
-   | **Tillad medarbejderdækningsbeløb** | Angiver, om medarbejdere skal kunne redigere dækningsbeløbet via selvbetjeningen for frynsegoder, når de vælger frynsegoder. Hvis du markerer dette afkrydsningsfelt, beregner systemet parametre for frynsegodeplanen baseret på det dækningsbeløb, som medarbejderen indtaster i selvbetjeningstjenesten for medarbejdere. |
+   | **Tillad medarbejderbidragsbeløb** | Angiver, om medarbejdere skal kunne redigere bidragsbeløbet via selvbetjening for frynsegoder, når de vælger frynsegoder. Hvis du markerer dette afkrydsningsfelt, beregner systemet parametre for frynsegodeplanen baseret på det bidragsbeløb, som medarbejderen indtaster i selvbetjeningstjenesten for frynsegoder. |
+   | **Tillad medarbejderdækningsbeløb** | Angiver, om medarbejdere skal kunne redigere disponeringsbeløbet via selvbetjening for frynsegoder, når de vælger frynsegoder. Hvis du markerer dette afkrydsningsfelt, beregner systemet parametre for frynsegodeplanen baseret på det disponeringsbeløb, som medarbejderen indtaster i selvbetjeningstjenesten for medarbejdere. |
 
 6. Vælg **Gem**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

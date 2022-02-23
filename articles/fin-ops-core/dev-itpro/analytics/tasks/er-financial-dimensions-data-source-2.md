@@ -1,10 +1,12 @@
 ---
 title: 'ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)'
-description: Dette emne beskriver, hvordan du konfigurerer en ER-model (elektronisk rapportering) til at bruge økonomiske dimensioner som datakilde til ER-rapporter. (Del 2)
+description: Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at bruge økonomiske dimensioner so datakilde for ER-rapporter.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605399"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681679"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)
 
@@ -56,14 +58,14 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 21. Vælg Ja i feltet Spørg efter hovedkonto.
     * Angiv 'Spørg efter hovedkonto' til Ja for at tillade brugere at vælge hovedkontoen som en del af listen over dimensioner.   Hvis indstillingen er angivet til Nej, inkluderes den primære konto ikke på listen over dimensioner, og indstillingen 'Er hovedkonto obligatorisk' er aktiveret. Hvis "Er hovedkonto obligatorisk" er angivet til Ja, skal du inkludere hovedkontoen på listen over dimensioner, uanset brugerens valg.  
 22. Klik på OK.
-![Detaljerne for egenskaberne for datakilden for økonomiske dimensioner-slide-out.](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.
 24. Klik på Tilføj rod.
 25. Skriv "LedgerJournal" i feltet Navn.
 26. Vælg Ja i feltet Spørg efter forespørgsel.
 27. Skriv "LedgerJournalTable" i feltet Tabel.
 28. Klik på OK.
-![Model til tilknytningsdesigner, tabelposters datakildetype.](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Tilknyt datamodelelementer til tilføjede datakilder
 1. Udvid 'Kladde' i træet.
@@ -94,7 +96,7 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 25. Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensioner' i træet.
 26. Vælg 'Kladde\Transaktion\Dimensionsdata' i træet.
 27. Klik på Bind.
-!Designerside for modeltilknytning, fanen Tilknytning, træet med datakilder.](../media/er-financial-dimensions-guides-model-mapping3.png)
+![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Vælg 'LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)' i træet.
 29. Vælg 'Journal\Transaction\Debit' i træet.
 30. Klik på Bind.
@@ -133,7 +135,7 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 63. I feltet expressionAsStringText skal du skrive 'Company.'find()'.'name()''.
     * Company.'find()'.'name()'  
 64. Klik på Gem.
-![Side for ER-modeltilknytningsdesigner.](../media/er-financial-dimensions-guides-model-mapping4.png)
+![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Luk siden.
 66. Klik på Gem.
 67. Luk siden.
@@ -144,7 +146,4 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 3. Klik på Skift status.
 4. Klik på Fuldført.
 5. Klik på OK.
-![Siden ER-konfigurationer.](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![Side for ER-modeltilknytningsdesigner](../media/er-financial-dimensions-guides-model-mapping5.png)

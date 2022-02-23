@@ -1,79 +1,72 @@
 ---
-title: Konfigurere virtuelle Dataverse-tabeller
-description: Dette emne viser, hvordan du kan konfigurere, generere, opdatere eksisterende virtuelle tabeller og analysere genererede og tilgængelige tabeller for Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/19/2021
+title: Konfigurere virtuelle enheder i Common Data Service
+description: I dette emne vises, hvordan du konfigurerer virtuelle enheder til Dynamics 365 Human Resources. Opret og opdater eksisterende virtuelle enheder, og analysér oprettede og tilgængelige enheder.
+author: andreabichsel
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2b590faeab600d04c9d5303693ec1e9ac682250d
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069140"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645595"
 ---
-# <a name="configure-dataverse-virtual-tables"></a>Konfigurere virtuelle Dataverse-tabeller
+# <a name="configure-common-data-service-virtual-entities"></a>Konfigurere virtuelle enheder i Common Data Service
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Dynamics 365 Human Resources er en virtuel datakilde i Common Data Service. Den giver fuld adgang til at oprette, læse, opdatere og slette data fra Common Data Service og Microsoft Power Platform. Dataene for de virtuelle enheder gemmes ikke i Common Data Service, men i programdatabasen. 
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Hvis du vil aktivere disse handlinger på Human Resources-enheder fra Common Data Service, skal du gøre enhederne tilgængelige som virtuelle enheder i Common Data Service. På denne måde kan du udføre disse handlinger fra Common Data Service og Microsoft Power Platform på data i Human Resources. Handlingerne understøtter også fulde valideringer af forretningslogik i Human Resources for at sikre dataintegritet, når der skrives data til enhederne.
 
+## <a name="available-virtual-entities-for-human-resources"></a>Tilgængelige virtuelle enheder for Human Resources
 
+Alle OData-enheder (Open data Protocol) under Human Resources er tilgængelige som virtuelle enheder i Common Data Service. De er også tilgængelige i Power Platform. Nu kan du opbygge apps og oplevelser med data direkte fra Human Resources med fulde handlingsmuligheder uden at kopiere eller synkronisere data til Common Data Service. Du kan bruge Power Apps-portaler til at opbygge eksterne websteder, der giver mulighed for samarbejdsscenarier til forretningsprocesser i Human Resources.
 
-Dynamics 365 Human Resources er en virtuel datakilde i Microsoft Dataverse. Den giver fuld adgang til at oprette, læse, opdatere og slette data fra Dataverse og Microsoft Power Platform. Dataene for de virtuelle tabeller gemmes ikke i Dataverse, men i programdatabasen.
+Du kan få vist listen over de virtuelle enheder, der er aktiveret i miljøet, og starte med at arbejde med enhederne i [Power Apps](https://make.powerapps.com), i løsningen **Dynamics 365 HR Virtual Entities**.
 
-Hvis du vil aktivere disse handlinger på Human Resources-enheder fra Dataverse, skal du gøre enhederne tilgængelige som virtuelle tabeller i Dataverse. På denne måde kan du udføre disse handlinger fra Dataverse og Microsoft Power Platform på data i Human Resources. Handlingerne understøtter også fulde valideringer af forretningslogik i Human Resources for at sikre dataintegritet, når der skrives data til enhederne.
+![Dynamics 365 HR Virtual Entities i Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
-> [!NOTE]
-> Enheder under Human Resources svarer til Dataverse-tabeller. Yderligere oplysninger om Dataverse (tidligere Common Data Service) og terminologiopdateringer finder du i [Hvad er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+## <a name="virtual-entities-versus-natural-entities"></a>Virtuelle enheder i forhold til fysiske enheder
 
-## <a name="available-virtual-tables-for-human-resources"></a>Tilgængelige virtuelle tabeller for Human Resources
-
-Alle OData-enheder (Open data Protocol) under Human Resources er tilgængelige som virtuelle tabeller i Dataverse. De er også tilgængelige i Power Platform. Nu kan du opbygge apps og oplevelser med data direkte fra Human Resources med fulde handlingsmuligheder uden at kopiere eller synkronisere data til Dataverse. Du kan bruge Power Apps-portaler til at opbygge eksterne websteder, der giver mulighed for samarbejdsscenarier til forretningsprocesser i Human Resources.
-
-Du kan få vist listen over de virtuelle tabeller, der er aktiveret i miljøet, og starte med at arbejde med tabellerne i [Power Apps](https://make.powerapps.com), i løsningen **Dynamics 365 HR Virtual Tables**.
-
-![Dynamics 365 HR Virtual Tables i Power Apps.](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
-
-## <a name="virtual-tables-versus-native-tables"></a>Virtuelle tabeller vs. oprindelige tabeller
-
-Virtuelle tabeller til Human Resources er ikke de samme som de oprindelige Dataverse-tabeller, der er oprettet til Human Resources. 
-
-De oprindelige tabeller til Human Resources genereres separat og vedligeholdes i HCM Common-løsningen i Dataverse. Med de oprindelige tabeller gemmes dataene i Dataverse og kræver synkronisering med programdatabasen til Human Resources.
+Virtuelle enheder til Human Resources er ikke de samme som de fysiske Common Data Service-enheder, der er oprettet for Human Resources. De fysiske enheder for Human Resources genereres separat og vedligeholdes i HCM Common-løsningen i Common Data Service. Med fysiske enheder gemmes dataene i Common Data Service og kræver synkronisering med programdatabasen til Human Resources.
 
 > [!NOTE]
-> Du kan se en liste over de oprindelige Dataverse-tabeller til Human Resources i [Dataverse-tabeller](./hr-developer-entities.md).
+> Du kan se en liste over de fysiske Common Data Service-enheder for Human Resources i [Common Data Service-enheder](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
 
 ## <a name="setup"></a>Konfiguration
 
-Følg disse installationstrin for at aktivere virtuelle tabeller i dit miljø.
+Følg disse installationstrin for at aktivere virtuelle enheder i dit miljø.
 
-### <a name="enable-virtual-tables-in-human-resources"></a>Aktivere virtuelle tabeller i Human Resources
+### <a name="enable-virtual-entities-in-human-resources"></a>Aktivere virtuelle enheder i Human Resources
 
-Først skal du aktivere virtuelle tabeller i arbejdsområdet **Funktionsstyring**.
+Først skal du aktivere virtuelle enheder i arbejdsområdet **Funktionsstyring**.
 
-1. I Human Resources skal du vælge **Systemadministration**.
+1. I Personale skal du vælge **Systemadministration**.
 
 2. Vælg felter **Funktionsstyring**.
 
-3. Vælg **Virtuel tabelunderstøttelse til HR i Dataverse**, og vælg derefter **Aktivere**.
+3. Vælg **Understøttelse af virtuelle enheder i HR/CDS**, og vælg derefter **Aktivér**.
 
 Du kan finde flere oplysninger om aktivering og deaktivering af funktioner i [Administrere funktioner](hr-admin-manage-features.md).
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Registrere appen i Microsoft Azure
 
-Du skal registrere dine forekomst af Human Resources i Azure-portalen, så Microsoft-identitetsplatformen kan levere godkendelse og autorisationstjenester til appen og brugerne. Du kan finde flere oplysninger om registrering af apps i Azure under [Hurtig start: Registrere et program med platformen Microsoft-identitet](/azure/active-directory/develop/quickstart-register-app).
+Du skal registrere dine forekomst af Human Resources i Azure-portalen, så Microsoft-identitetsplatformen kan levere godkendelse og autorisationstjenester til appen og brugerne. Du kan finde flere oplysninger om registrering af apps i Azure under [Hurtig start: Registrere et program med platformen Microsoft-identitet](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 1. Åbn [Microsoft Azure-portalen](https://portal.azure.com).
 
@@ -81,13 +74,13 @@ Du skal registrere dine forekomst af Human Resources i Azure-portalen, så Micro
 
 3. Vælg **Ny registrering**.
 
-4. Angiv et sigende navn for appen i feltet **Navn**. F.eks. **Dynamics 365 Human Resources-virtuelle tabeller**.
+4. Angiv et sigende navn for appen i feltet **Navn**. F.eks. **Dynamics 365 Human Resources-virtuelle enheder**.
 
 5. Angiv URL-adressen til navneområdet for din forekomst af Human Resources i feltet **Omdirigerings-URI**.
 
 6. Vælg **Registrer**.
 
-7. Når registreringen er fuldført, viser Azure-portalen appregistreringens **Oversigt**-rude, som indeholder **Program-id (klient)**. Notér dig **Program-id (klient)** nu. Du skal angive disse oplysninger, når du vil [Konfigurere datakilden til den virtuelle tabel](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+7. Når registreringen er fuldført, viser Azure-portalen appregistreringens **Oversigt**-rude, som indeholder **Program-id (klient)**. Notér dig **Program-id (klient)** nu. Du skal angive disse oplysninger, når du [konfigurerer datakilden til den virtuelle enhed](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
 8. Vælg **Certifikater og hemmeligheder** i venstre navigationsrude.
 
@@ -95,24 +88,36 @@ Du skal registrere dine forekomst af Human Resources i Azure-portalen, så Micro
 
 10. Indtast en beskrivelse, vælg en varighed, og vælg **Tilføj**.
 
-11. Registrer hemmelighedens værdi fra egenskaben **Værdi** i tabellen. Du skal angive disse oplysninger, når du vil [Konfigurere datakilden til den virtuelle tabel](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. Registrere værdien af hemmeligheden. Du skal angive disse oplysninger, når du [konfigurerer datakilden til den virtuelle enhed](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
     > [!IMPORTANT]
     > Husk at notere dig hemmelighedens værdi på dette tidspunkt. Hemmeligheden vises aldrig igen, når du forlader denne side.
 
-### <a name="install-the-dynamics-365-hr-virtual-table-app"></a>Installere appen Dynamics 365 HR Virtual Table
+### <a name="install-the-dynamics-365-hr-virtual-entity-app"></a>Installere appen Dynamics 365 HR Virtual Entity
 
-Installer appen Dynamics 365 HR Virtual Table i dit Power Apps-miljø for at udrulle den virtuelle tabelløsningspakke til Dataverse.
+Installer appen Dynamics 365 HR Virtual Entity i dit Power Apps-miljø for at udrulle den virtuelle enhedsløsningspakke til Common Data Service.
 
-1. I Human Resources skal du åbne siden **Microsoft Dataverse-integration**.
+1. Åbn [Power Platform Administration](https://admin.powerplatform.microsoft.com).
 
-2. Vælg fanen **Virtuelle tabeller**.
+2. Vælg det Power Apps-miljø, der er knyttet til din forekomst af Human Resources, på listen over **Miljøer**.
 
-3. Vælg **Installer virtuel tabelapp**.
+3. Vælg **Dynamics 365-apps** i sektionen **Ressourcer**.
 
-### <a name="configure-the-virtual-table-data-source"></a>Konfigurere datakilden til den virtuelle tabel
+4. Vælg handlingen **Installer app**.
 
-Det næste trin er at konfigurere datakilden til den virtuelle tabel i Power Apps-miljøet.
+5. Vælg **Dynamics 365 HR Virtual Entity**, og vælg **Næste**.
+
+6. Gennemgå og markér, at du accepterer servicebetingelserne.
+
+7. Vælg **Installer**.
+
+Installationen tager et par minutter. Når den er fuldført, skal du fortsætte til de næste trin.
+
+![Installer appen Dynamics 365 HR Virtual Entity fra Power Platform Administration](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+
+### <a name="configure-the-virtual-entity-data-source"></a>Konfigurere datakilden til den virtuelle enhed 
+
+Det næste trin er at konfigurere datakilden til den virtuelle enhed i Power Apps-miljøet. 
 
 1. Åbn [Power Platform Administration](https://admin.powerplatform.microsoft.com).
 
@@ -122,10 +127,7 @@ Det næste trin er at konfigurere datakilden til den virtuelle tabel i Power App
 
 4. I **Løsningstilstandshub** skal du vælge ikonet **Avanceret søgning** øverst til højre på programsiden.
 
-5. Vælg **Finans- og driftskonfigurationer af virtuel datakilde** på rullelisten **Søg efter** på siden **Avanceret søgning**.
-
-   > [!NOTE]
-   > Installationen af den virtuelle tabelapp fra det forrige opsætningstrin kan tage et par minutter. Hvis **Finans- og driftskonfigurationer af virtuel datakilde** ikke er tilgængelig på listen, skal du vente et minut og opdatere listen.
+5. Vælg **Finance and Operations-konfigurationer af virtuel datakilde** r på rullelisten **Søg efter** på siden **Avanceret søgning**.
 
 6. Vælg **Resultater**.
 
@@ -144,16 +146,13 @@ Det næste trin er at konfigurere datakilden til den virtuelle tabel i Power App
      >[!NOTE]
      >Husk at medtage "**/**"-tegnet i slutningen af URL-adressen for at undgå at modtage en fejlmeddelelse.
 
-     >[!NOTE]
-     >URL-måladressen bestemmer, hvilket Human Resources-miljø de virtuelle tabeller peger på angående data. Hvis du opretter et sandkassemiljø ved at kopiere produktionsmiljøet, skal du opdatere denne værdi til navneområdets URL-adresse for det nye sandboksmiljø. På den måde sikrer du, at de virtuelle tabeller er forbundet med sandkassemiljøets data i stedet for fortsat at pege på produktionsmiljøet.
-
    - **Lejer-id**: Azure Active Directory-lejer-id (Azure AD).
 
    - **AAD-program-id**: Det program-id (klient), der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
    - **AAD-programhemmelighed**: Den programklienthemmelighed, der er oprettet for det program, der er registreret i Microsoft Azure-portalen. Du har modtaget disse oplysninger tidligere i trinnet [Registrere appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-   ![Microsoft HR-datakilde.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR-datakilde](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Vælg **Gem og luk**.
 
@@ -162,7 +161,7 @@ Det næste trin er at konfigurere datakilden til den virtuelle tabel i Power App
 Give tilladelser til de to Azure AD-programmer i Human Resources:
 
 - Appen, der er oprettet til din lejer i Microsoft Azure-portalen
-- Appen Dynamics 365 HR Virtual Table, der er installeret i Power Apps-miljøet 
+- Appen Dynamics 365 HR Virtual Entity, der er installeret i Power Apps-miljøet 
 
 1. I Human Resources skal du åbne siden **Azure Active Directory-programmer**.
 
@@ -175,47 +174,45 @@ Give tilladelser til de to Azure AD-programmer i Human Resources:
 3. Vælg **Ny** for at oprette endnu en programpost:
 
     - **Klient-id**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Navn**: Dynamics 365 HR Virtual Table
+    - **Navn**: Dynamics 365 HR Virtual Entity
     - I feltet **Bruger-id** skal du vælge bruger-id'et for en bruger med administratorrettigheder i Human Resources og Power Apps-miljøet.
 
-## <a name="generate-virtual-tables"></a>Generere virtuelle tabeller
+## <a name="generate-virtual-entities"></a>Generere virtuelle enheder
 
-Når installationen er fuldført, kan du vælge de virtuelle tabeller, du vil generere og aktivere i din Dataverse-forekomst.
+Når installationen er fuldført, kan du vælge de virtuelle enheder, du vil generere og aktivere i din Common Data Service-forekomst.
 
-1. I Human Resources skal du åbne siden **Microsoft Dataverse-integration**.
+1. I Human Resources skal du åbne siden **Common Data Service (CDS)-integration**.
 
-2. Vælg fanen **Virtuelle tabeller**.
+2. Vælg fanen **Virtuelle enheder**.
 
 > [!NOTE]
-> Til/fra-knappen **Aktivér den virtuelle tabel** indstilles til **Ja** automatisk, når alle nødvendige konfigurationer er fuldført. Hvis knappen er indstillet til **Nej**, skal du gennemgå trinnene i tidligere afsnit af dette dokument for at sikre, at alle forudsætninger for installationen er opfyldt.
+> Til/fra-knappen **Aktivér den virtuelle enhed** indstilles til **Ja** automatisk, når alle nødvendige konfigurationer er fuldført. Hvis knappen er indstillet til **Nej**, skal du gennemgå trinnene i tidligere afsnit af dette dokument for at sikre, at alle forudsætninger for installationen er opfyldt.
 
-3. Vælg den tabel eller de tabeller, du vil oprette i Dataverse.
+3. Vælg den enhed eller de enheder, du vil oprette i Common Data Service.
 
 4. Vælg **Generer/Opdater**.
 
-![Dataverse-integration.](./media/hr-admin-integration-dataverse-integration.png)
+![Common Data Service-integration](./media/hr-admin-integration-common-data-service-integration.jpg)
 
-## <a name="check-table-generation-status"></a>Kontrollere status for oprettelse af tabel
+## <a name="check-entity-generation-status"></a>Kontrollere status for oprettelse af enhed
 
-Virtuelle tabeller genereres i Dataverse via en asynkron baggrundsproces. Opdateringer af processen vises i handlingscenteret. Oplysninger om processen, herunder fejllogfiler, vises på siden **Procesautomatiseringer**.
+Virtuelle enheder genereres i Common Data Service via en asynkron baggrundsproces. Opdateringer af processen vises i handlingscenteret. Oplysninger om processen, herunder fejllogfiler, vises på siden **Procesautomatiseringer**.
 
 1. Åbn listesiden **Procesautomatiseringer** i Human Resources.
 
 2. Vælg fanen **Baggrundsprocesser**.
 
-3. Vælg **Baggrundsproces i asynkron handling for virtuel tabelforespørgsel**.
+3. Vælg **Baggrundsproces i asynkron handling for virtuel enhedsforespørgsel**.
 
 4. Vælg **Vis seneste resultater**.
 
-I slide-out-ruden vises de seneste udførelsesresultater for processen. Du kan se logfilen for processen, herunder eventuelle fejl, der returneres fra Dataverse.
+I slide-out-ruden vises de seneste udførelsesresultater for processen. Du kan se logfilen for processen, herunder eventuelle fejl, der returneres fra Common Data Service.
 
 ## <a name="see-also"></a>Se også
 
-[Hvad er Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Tabeller i Dataverse](/powerapps/maker/common-data-service/entity-overview)<br>
-[Oversigt over tabelrelationer](/powerapps/maker/common-data-service/relationships-overview)<br>
-[Oprette og redigere virtuelle tabeller, der indeholder data fra en ekstern datakilde](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Hvad er Power Apps-portaler?](/powerapps/maker/portals/overview)<br>
-[Oversigt over oprettelse af apps i Power Apps](/powerapps/maker/)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Hvad er Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Oversigt over enheder](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
+[Oversigt over enhedsrelationer](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
+[Oprette og redigere virtuelle enheder, der indeholder data fra en ekstern datakilde](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Hvad er Power Apps-portaler?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
+[Oversigt over oprettelse af apps i Power Apps](https://docs.microsoft.com/powerapps/maker/)

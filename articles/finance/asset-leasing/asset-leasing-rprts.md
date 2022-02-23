@@ -2,25 +2,28 @@
 title: Aktivleasingrapporter
 description: I dette emne beskrives kort de rapporter, der er tilgængelige for Aktivleasing.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7044378a66ed9ff952f4579d375d59576fe09294fc158c000ab28a93f4173421
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bab2b0b2b021266e50d6f4a1fad1cc4a1c1ae56e
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739401"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441763"
 ---
 # <a name="asset-leasing-reports"></a>Aktivleasingrapporter
 
@@ -162,6 +165,3 @@ Rapporten med gennemsnitsrabatsats opfylder de krav til US GAAP, der er angivet 
 |     Valuta                          |     Den forkortelse, der er anvendt til transaktionsvaluta. Alle rapporter konverterer transaktionsvalutaen til rapporteringsvalutaen.  |
 |     Resterende leasingbetalinger          |     Det samlede beløb for ubetalte leasingbetalinger fra den resterende betalingsplan fra **Pr** dato.            |
 |     Resterende vægtede betalinger       |     Leasingaftalens betalinger skal multipliceres med den anvendte diskonteringssats.   |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,25 +2,28 @@
 title: Arbejdsområde til omkostningsstyring på mobilenheder
 description: Dette emne indeholder oplysninger om arbejdsområdet til omkostningsstyring på mobilenheder. I dette arbejdsområde kan ledere af bærere se oplysninger om bærerydeevnen når som helst og hvor som helst.
 author: AndersGirke
+manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMMobileCostObjectOverviewDetailsCurrentPeriod, CAMMobileCostObjectList, CAMMobileCostObjectOverviewDetailsPreviousPeriod, CAMMobileCostObjectOverview, CAMMobileCostObjectOverviewDetailsYearToDate, CAMMobileCostControlWorkspaceConfiguration
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 267114
 ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: cd86fdf640e59885e5e8aea841dc1c1c9604825b0f18d3b741c5a2777f8e9ff8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4fc35feb4f3a67ba9c8c70c2d2f8c07cb944b0f6
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728787"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441782"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Arbejdsområde til omkostningsstyring på mobilenheder
 
@@ -70,13 +73,13 @@ Arbejdsområdet **Omkostningsstyring** til mobilenheder indeholder følgende han
 
     Når du vælger et link, vises et kort for hvert omkostningselement. Følgende beløb vises på hvert kort: faktisk, budget, budgetafvigelse, budgetafvigelse i %, revideret budget, revideret budgetafvigelse og revideret budgetafvigelse i %.
     
-    [![Kort til et omkostningselement.](./media/Cost-controlling.png)](./media/Cost-controlling.png)
+    [![Kort til et omkostningselement](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## <a name="prerequisites"></a>Forudsætninger
 Forudsætningerne er forskellige, afhængigt af hvilken version af Microsoft Dynamics 365 der er installeret i organisationen.
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-finance"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 Finance
-Hvis Finance er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Omkostningsstyring** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Hvis Finance er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Omkostningsstyring** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger version 1611 med Platform update 3 eller nyere
 Hvis version 1611 med Platform update 3 eller nyere er implementeret for organisationen, skal systemadministratoren opfylde følgende forudsætninger.
@@ -96,17 +99,17 @@ Hvis version 1611 med Platform update 3 eller nyere er implementeret for organis
 
 <td>KB 4013633 er et X ++ opdatering eller metadatahotfix, der indeholder arbejdsområdet <strong>Omkostningsstyring</strong> til mobilenheder. For at implementere KB 4013633 skal systemadministratoren gøre følgende.
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Hente metadata-hotfixet fra Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installere metadatahotfixet</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Anvend den installerbare pakke</a></li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Hente metadata-hotfixet fra Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installere metadatahotfixet</a>.</li>
+<li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Anvend den installerbare pakke</a></li>
 
 </ol></td>
 </tr>
 <tr class="even">
 <td>Publicer arbejdsområdet <strong>Omkostningsstyring</strong> på mobilenheder.</td>
 <td>Systemadministrator</td>
-<td>Se <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publicere et arbejdsområde til mobilenheder</a>.</td>
+<td>Se <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publicere et arbejdsområde til mobilenheder</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -125,7 +128,7 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 3.  Første gang du logger på, bliver du bedt om at angive brugernavn og adgangskode. Angiv dine legitimationsoplysninger.
 4.  Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
-[![Træk ned for at opdatere.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Træk for at opdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>Få vist ydeevnen for din bærer ved hjælp af arbejdsområdet til omkostningsstyring på mobilenheden
 
@@ -142,6 +145,3 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 11. Se ydeevnen for individuelle omkostningselementer.
 12. Du kan også søge efter bestemte omkostningselementer.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

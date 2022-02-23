@@ -2,9 +2,11 @@
 title: Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
 description: Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 Finance. I dette emne beskrives afstemningsprocessen.
 author: saraschi2
+manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbfa999d2aaa4b6dad711bb57916a68fb37c57d9add09092783ad3a8d6450c1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92c04a47b134584280736f4d3d2fa401d2a2a9b7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714442"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969422"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
 
@@ -28,7 +30,8 @@ ms.locfileid: "6714442"
 
 Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Dynamics 365 Finance. I dette emne beskrives afstemningsprocessen.  
 
-## <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoudtog
+<a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoudtog
+-----------------------------------
 
 Du kan importere dine kontoudtog fra banken ved hjælp af handlingen **Importér kontoudtog** på siden **Bankkontoudtog** side. Bankkontoen identificeres på bankkontoudtoget via en kombination af værdier, der angives for bankkontooplysningerne. Disse værdier omfatter bankens navn, bankkontonummer, registreringsnummer, SWIFT-kode (Society for Worldwide Interbank Financial Telecommunication) og IBAN-nummer (International Bank Account Number). 
 
@@ -92,6 +95,3 @@ Bankkontoudtogstransaktioner, du har markeret som **Ny** på afstemningsarbejdsa
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

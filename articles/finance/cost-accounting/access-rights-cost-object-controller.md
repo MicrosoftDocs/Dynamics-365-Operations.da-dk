@@ -2,13 +2,16 @@
 title: Adgangsrettigheder for controllere til omkostningsobjekt
 description: Dette emne indeholder oplysninger om adgangsrettigheder for controllere til omkostningsobjekter.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c30a7c2765647aad17a475ba8705b8e688d166593adf242fcd15d90e49334189
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd1ed875e5c6e3f8ada3b13ea8cc05f98526691d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733023"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441593"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Adgangsrettigheder for controllere til omkostningsobjekt
 
@@ -62,13 +65,14 @@ Følgende eksempel viser, hvordan et dimensionshierarki kan se ud.
 
 Du kan bruge oversigtspanelet **Brugere** i hierarkidesigneren til at indsætte et eller flere bruger-id'er på hver node.
 
-|             Noder                 | Brugere            | Fra dimensionsmedlem     |   Til dimensionsmedlem   |
+|                                   | Brugere            | Intervaller for dimensionsmedlemmer   |                         |
 |-----------------------------------|------------------|---------------------------|-------------------------|
+| **Noder**                         | **Bruger-id**      | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
 | Organisation                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Administration                 | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finans   | Alicia           | CC002                     | CC003                   |
 |                                   |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR        | Arnie            | CC001                     | CC001                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | Arnie            | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produktion            | David            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Emballage | Ellen            | CC005                     | CC005                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Samling  | Chris            | CC006                     | CC006                   |
@@ -94,14 +98,11 @@ Indstillingerne for adgangslistehierarkiet bruges til at styre, hvilke data der 
     - Data Power BI-visualiseringer, der er integreret i Dynamics 365 Finance-klienten
 
 > [!IMPORTANT]
-> - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - I dette emne beskrives de forudsætninger, der skal være opfyldt, før du kan bruge arbejdsområdet **Omkostningsstyring**.
 
 Yderligere ressourcer
 
 - [Arbejdsområde for omkostningsstyring](cost-control-workspace.md)
 - [Dimensionshierarki](dimension-hierarchy.md)
-- [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)

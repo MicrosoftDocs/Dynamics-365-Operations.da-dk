@@ -2,8 +2,11 @@
 title: ER-funktionen ROUNDAMOUNT
 description: Dette emne indeholder oplysninger om, hvordan funktionen ROUNDAMOUNT til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
+manager: kfend
 ms.date: 12/17/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b05c6024d9eeecfe74022df10d793055a026d5a159e9c011f37708f6a4e6e0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15a84b086b324ec390d88e8b2617022ad4773977
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770855"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683057"
 ---
 # <a name="roundamount-er-function"></a>ER-funktionen ROUNDAMOUNT
 
@@ -69,7 +72,7 @@ Når parametret `round rule` er angivet til **RoundOffType.RoundDown**, afrunder
 
 Når parametret `round rule` er angivet til **RoundOffType.RoundUP**, afrunder denne funktion op fra til det nærmeste afrundede beløb.
 
-Når parametret `round rule` er angivet til **RoundOffType.Ordinary**, fungerer denne funktion som Excel-funktionen [MROUND](https://support.office.com/article/mround-function-c299c3b0-15a5-426d-aa4b-d2d5b3baf427) og X+ +-funktionen [ROUND](../dev-ref/xpp-math-run-time-functions.md#round).
+Når parametret `round rule` er angivet til **RoundOffType.Ordinary**, fungerer denne funktion som Excel-funktionen [MROUND](https://support.office.com/article/mround-function-c299c3b0-15a5-426d-aa4b-d2d5b3baf427) og X+ +-funktionen [ROUND](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-math-run-time-functions#round).
 
 ## <a name="remarks"></a>Kommentarer
 
@@ -88,6 +91,3 @@ Hvis parametret **model.RoundOff** er indstillet til **RoundOffType.RoundUp**, r
 [Andre (forretningsdomænespecifikke) funktioner](er-functions-category-other.md)
 
 [Matematiske funktioner](er-functions-category-mathematical.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Analyse af aktivfejl
 description: I dette emne beskrives analyse af aktivfejl i Styring af aktiver.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectFaultCalculate
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 880ed35a9780185836218a5c2a7addb2a47eabd737d6bec99794ecb7a0959791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 674e10b94711b00e526af4af0e0c0afddd05e62c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779272"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022368"
 ---
 # <a name="asset-fault-analysis"></a>Analyse af aktivfejl
 
@@ -60,7 +62,7 @@ I skærmbilledet herunder er det kun knappen **Symptom**, der er valgt.
 - Der er foretaget fejlregistrering af tre fejlsymptomer: "Air leak", "Blown fuse" og "Equipment jammed".  
 - I kolonnen **Sandsynlighed %** giver alle procenter en sum af 100 %. Sandsynlighed er baseret på alle **Symptom**-registreringer i denne fejlanalyse.
 
-![Figur 1.](media/06-controlling-and-reporting.png)
+![Figur 1](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Sammenlæg pr. symptomer og tidsperiode
 
@@ -69,7 +71,7 @@ I skærmbilledet nedenfor tilføjes **År** og **Måned** for at vise, hvordan d
 - Fejlsymptomerne vises nu som registreringer pr. år/måned.  
 - Hvis du tilføjer alle procentsatser for hver måned i kolonnen **Sandsynlighed %**, bliver de sammenlagt 100 %. Sandsynlighed er baseret på **Symptom**-registreringerne i denne fejlanalyse. Hvis du har et stort antal linjer på et aktiv, men en stor procentdel ligger på en enkelt linje, vil det være en indikation på et fejlsymptom, der skal undersøges mere nøjagtigt for at finde en metode til at begrænse antallet af registreringer for dette fejlsymptom.
 
-![Figur 2.](media/07-controlling-and-reporting.png)
+![Figur 2](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Sammenlæg pr. flere symptomer og aktiver
 
@@ -84,7 +86,7 @@ I skærmbilledet nedenfor blev **Aktiv** og **Aktivtype** tilføjet for at give 
 - Fejlsymptomerne er nu opdelt i kombinationerne **Aktiv** / **Aktivtype** / **Symptom**.  
 - Hvis du tilføjer alle procentsatser i kolonnen **Sandsynlighed %** for henholdsvis kombinationen **Aktiv** / **Aktivtype** / **Symptom**, bliver de hver især sammenlagt 100 %. Sandsynlighed er baseret på **Symptom**-registreringer i denne fejlanalyse. Hvis du har et stort antal linjer på et aktiv, men en stor procentdel ligger på en enkelt linje, vil det være en indikation på et fejlsymptom, der skal undersøges mere nøjagtigt for at finde en metode til at begrænse antallet af registreringer for dette fejlsymptom.
 
-![Figur 3.](media/08-controlling-and-reporting.png)
+![Figur 3](media/08-controlling-and-reporting.png)
 
 **Sammenlæg pr. to symptomer, aktiv og aktivtype**
 
@@ -92,7 +94,7 @@ I skærmbilledet nedenfor er **Område** lagt til **Symptom**, **Aktiv** og **Ak
 
 - Hvis du tilføjer alle procentsatser i kolonnen **Sandsynlighed %** for kombinationen af **Aktiv** / **Aktivtype** / **Symptom** på et aktiv, bliver de hver især sammenlagt 100 %. Sandsynlighed er baseret på kombinationen af **Symptom** og **Område** i denne fejlanalyse. Hvis du har et stort antal linjer på et aktiv, men en stor procentdel ligger på en enkelt linje, vil det være en indikation på et fejlområde, der skal undersøges mere nøjagtigt for at finde en metode til at begrænse antallet af registreringer for dette fejlområde.  
 
-![Figur 4.](media/09-controlling-and-reporting.png)
+![Figur 4](media/09-controlling-and-reporting.png)
 
 **Sammenlæg pr.tre symptomer, aktiv og aktivtype**
 
@@ -100,12 +102,9 @@ I skærmbilledet nedenfor er **Type** tilføjet, og den mest detaljerede beregni
  
 - Hvis du tilføjer alle procentsatser i kolonnen **Sandsynlighed %** for kombinationen af **Aktiv** / **Aktivtype** / **Symptom** på et aktiv, bliver de hver især sammenlagt 100 %. Sandsynlighed er baseret på kombinationen af **Symptom**, **Område** og **Type** i denne fejlanalyse. Hvis du har et stort antal linjer på et aktiv, men en stor procentdel ligger på en enkelt linje, vil det være en indikation på en fejltype, der skal undersøges mere nøjagtigt for at finde en metode til at begrænse antallet af registreringer for denne fejltype.
 
-![Figur 5.](media/10-controlling-and-reporting.png)
+![Figur 5](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]
 >Du kan få vist en oversigt over alle fejlregistreringer, der er oprettet på arbejdsordrer og vedligeholdelsesanmodninger, ved at klikke på **Styring af aktiver** > **Forespørgsler** > **Aktivfejl** > **Aktivfejl**. Vælg en registrering af aktivfejl på siden **Aktivfejl**, og udvid ruden **Relaterede oplysninger** for at få vist oplysninger om den relaterede arbejdsordre eller vedligeholdelsesanmodning.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,31 +1,29 @@
 ---
 title: Oprette performancegennemgange
 description: Dette emne viser, hvordan du opretter en performanceevaluering, og beskriver formålet med hvert afsnit i evalueringen.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066944"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417799"
 ---
 # <a name="create-performance-reviews"></a>Oprette performancegennemgange
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 Dette emne viser, hvordan du opretter en performanceevaluering, og beskriver formålet med hvert afsnit i evalueringen. Denne procedure blev oprettet ved hjælp af demodatafirmaet USMF.
@@ -68,18 +66,15 @@ Dette emne viser, hvordan du opretter en performanceevaluering, og beskriver for
 30. Vælg fanen **Vurderinger**.  
 
     - På oversigtspanelet **Bedømmelsesoplysninger** kan medarbejdere bedømme sig selv, og lederen kan bedømme medarbejderen. Hvis der anvendes vægtninger, beregnes den vægtede værdi af resultaterne automatisk.  
-    - Hvis du vil have vist dette afsnit, skal du aktivere parameterindstillingerne for visning af medarbejdervurderinger på siden **Delte parametre for personale**.  
+    - Hvis du vil se denne sektion, skal du aktivere parameterindstillingerne for visning af medarbejderbedømmelser.  
 
-31. Vælg fanen **Afslutninger**. Hvis evalueringen bruger arbejdsproces, vises afslutninger kun, når arbejdsprocessen er fuldført. Hvis der ikke bruges arbejdsprocesser, vises både medarbejderen og lederen her. Det **påkrævede** afkrydsningsfelt for **Godkendelser** er markeret baseret på indstillingerne for evalueringstypen.  
+31. Vælg fanen **Afslutninger**. Hvis evalueringen bruger arbejdsproces, vises afslutninger kun, når arbejdsprocessen er fuldført. Hvis der ikke bruges arbejdsprocesser, vises både medarbejderen og lederen her. Det påkrævede afkrydsningsfelt er markeret baseret på indstillingerne for evalueringstypen.  
 32. Vælg fanen **Generelt**.
 
     - Performanceperioden opretter standard start- og slutdatoer. Du kan ændre disse datoer.  
-    - Statusserne styrer adgangen til evalueringen. Statussen **Ikke startet** giver alle tilladelse til at redigere evalueringen. Statussen **I gang** tillader kun, at medarbejderen ser og redigerer evalueringen. **Klar til evaluering** tillader kun, at lederen får vist og redigerer evalueringen. Med statussen **Endelig gennemsyn** kan både medarbejderen og chefen se og redigere gennemsynet, hvis indstillingen **Tillad redigering i endelig gennemsyn** er valgt i gennemsynstypen. I statusserne **Afsluttet** og **Annulleret** er evalueringen skrivebeskyttet. Hvis en gennemgang er **Afvist** og sendes tilbage til medarbejderen, kan både medarbejderen og lederen foretage de nødvendige ændringer, så medarbejderen kan sende den igen.
+    - Statusserne styrer adgangen til evalueringen. Statussen **Ikke startet** giver alle tilladelse til at redigere evalueringen. Statussen **I gang** tillader kun, at medarbejderen ser og redigerer evalueringen. **Klar til evaluering** tillader kun, at lederen får vist og redigerer evalueringen. **Den endelige evalueringsstatus** giver både medarbejder og leder mulighed for at få vist evalueringen og at redigere den, hvis det er angivet i evalueringstypen. I statusserne **Afsluttet** og **Annulleret** er evalueringen skrivebeskyttet. Hvis en gennemgang er **Afvist** og sendes tilbage til medarbejderen, kan både medarbejderen og lederen foretage de nødvendige ændringer, så medarbejderen kan sende den igen.
 
 33. Skriv en værdi i feltet **Oversigt**.
 34. Vælg fanen **Evaluer**. Når evalueringen bevæger sig gennem statusserne, kan medarbejderen og lederen tilføje kommentarer for de enkelte mål eller kompetencer.  
 35. Vælg fanen **Afslutninger**. Arbejderen og lederen kan afslutte evalueringen. Når alle nødvendige godkendelser er fuldført, status ændres til **Fuldført**, og der foretages ingen yderligere ændringer.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

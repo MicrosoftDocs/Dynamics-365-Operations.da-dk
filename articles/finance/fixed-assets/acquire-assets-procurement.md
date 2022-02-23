@@ -1,26 +1,29 @@
 ---
 title: Anskaffe aktiver via indkøb
 description: I dette emne beskrives det, hvordan du kan konfigurere integration mellem Anlægsaktiver og Kreditor, så der automatisk oprettes anlægsaktiver ud fra indkøbsordrer eller kreditorfakturaer, eller så der automatisk bogføres posteringer med anskaffelser eller anskaffelsesreguleringer for anlægsaktiver.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c51abd3ce380f0cb1ad688ffab16b239460bc45
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: b07fdf6e5f4afa4f6df84138c809e402b7944dfb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674741"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441534"
 ---
 # <a name="acquire-assets-through-procurement"></a>Anskaffe aktiver via indkøb
 
@@ -106,6 +109,3 @@ Du kan finde flere oplysninger under [Integration af anlægsaktiver](fixed-asset
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

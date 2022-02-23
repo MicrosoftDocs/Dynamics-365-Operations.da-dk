@@ -1,10 +1,12 @@
 ---
 title: Power BI-indhold til omkostningsregnskabsanalyse
-description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsregnskabsanalyse.
+description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsregnskabsanalyse. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 author: AndersGirke
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,18 +16,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747363"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683865"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-indhold til omkostningsregnskabsanalyse
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der skal medtages i Microsoft Power BI-indhold til **omkostningsregnskabsanalyse**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+I dette emne beskrives, hvad der skal medtages i Microsoft Power BI-indhold til **Omkostningsregnskabsanalyse**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
@@ -40,7 +42,7 @@ Du kan finde flere oplysninger om omkostningsregnskabet i [Startside for omkostn
 Ved at definere sikkerhed på brugerniveau i omkostningsregnskabet og kombinere det med sikkerhed på rækkeniveau i Power BI kan du tildele alle omkostningsobjektejere adgang til Power BI-indholdet til **Omkostningsregnskabsanalyse**. Alle data i visualiseringerne filtreres derefter baseret på det adgangsniveau, der styres i omkostningsregnskabet. Hvis du vil vide mere om sikkerhed på henholdsvis adgangsniveau og rækkeniveau, kan du finde flere oplysninger under [Konfigurer sikkerhed for Power BI-indholdet i analysen af Omkostningsregnskab](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
-Du kan finde Power BI-indholdet til **Omkostningsregnskabsanalyse** i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Du kan finde Power BI-indholdet til **Omkostningsregnskabsanalyse** i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 Sørg for at downloade det **Omkostningsregnskabsanalyse**-indhold, der gælder for den version af Microsoft Dynamics 365, du bruger.
 
@@ -121,6 +123,3 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Regnskabskalendere                   | Kalender, beskrivelse af kalender                                                                                       |
 | Regnskabsår                       | Kalenderår                                                                                                        |
 | Regnskabsperioder                     | Kalenderårperiode                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

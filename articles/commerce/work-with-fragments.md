@@ -2,30 +2,35 @@
 title: Arbejde med fragmenter
 description: Dette emne beskriver, hvorfor, hvornår og hvordan du bruger fragmenter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090738"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4411208"
 ---
 # <a name="work-with-fragments"></a>Arbejde med fragmenter 
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvorfor, hvornår og hvordan du bruger fragmenter i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Fragmenter giver en centraliseret oprettelsesoplevelse for modulkonfigurationer, der skal genbruges på hele webstedet. F.eks. konfigureres sidehoveder, sidefødder og bannere ofte som fragmenter, fordi de deles på tværs af mange sider. Du kan betragte fragmenter som miniaturewebsider, der kan indsættes på andre sider på webstedet. Fragmenter har deres egen livscyklus. Det vil sige, at de oprettes, refereres til, opdateres og slettes som uafhængige enheder i oprettelsesværktøjerne.
 
@@ -45,7 +50,7 @@ Alle de steder, hvor fragmentet tilføjes, er referencer til det centrale hero-f
 
 I følgende illustration vises, hvordan fragmenter kan bruges til at centralisere oprettelse af delte modulkonfigurationer på tværs af et e-handels-websted.
 
-![En illustration, der viser, hvordan fragmenter kan bruges til at centralisere oprettelse af delte modulkonfigurationer på tværs af et e-handelswebsted.](./media/fragment-figure1.png)
+![En illustration, der viser, hvordan fragmenter kan bruges til at centralisere oprettelse af delte modulkonfigurationer på tværs af et e-handels-websted](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>Oprette et fragment
 
@@ -62,7 +67,7 @@ Hvis du vil konvertere et tidligere konfigureret modul til et fragment, der kan 
 1. I dialogboksen **Gem som fragment** skal du angive et navn til fragmentet.
 1. Vælg **OK** for at gemme modulkonfigurationen som et fragment, der kan føjes til andre sider.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Opret et nyt fragment
 
@@ -73,7 +78,7 @@ Udfør følgende trin for at oprette et nyt fragment i Commerce-webstedsgenerato
 1. Vælg en modultype til dit fragment.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Hvis du vælger en generisk containermodultype, får du størst fleksibilitet, når du skal opdatere og konfigurere dit fragment senere.
 
@@ -88,14 +93,14 @@ Udfør følgende trin for at tilføje et fragment på en side i Commerce-websted
 1. Vælg en container eller en plads, som underordnede moduler kan føjes til, i dispositionsruden til venstre eller direkte i den visuelle sidegenerator.
 1. Vælg ellipsen (**...**) ud for navnet på containeren eller pladsen.  Hvis du bruger den visuelle sidegenerator, skal du vælge plussymbolet (**+**).  
 1. Vælg **Tilføj fragment**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Hvis containeren eller pladsen ikke understøtter nye underordnede moduler, er indstillingen **Tilføj fragment** ikke tilgængelig.
     
 1. Søg efter og vælg et fragment, der skal tilføjes, i dialogboksen **Vælg fragment**. Hvis der ikke vises nogen tilgængelige fragmenter, skal du muligvis først oprette et fragment ud fra en modultype, som den valgte container eller plads understøtter.
 1. Vælg det ønskede fragment for at føje det til containeren eller pladsen på siden.
-<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > De moduler, der er tilladt i en container eller plads, defineres af sidens skabelon eller modulernes egne definitioner.
@@ -122,20 +127,6 @@ Udfør følgende trin for at redigere et fragment i Commerce-webstedsgenerator.
 
 Du kan også redigere et fragment ved at vælge det på en side, i en skabelon eller i et overordnet fragment og derefter vælge **Rediger fragment** i ruden Egenskaber til højre.
 
-### <a name="rename-a-fragment"></a>Omdøbe et fragment
-
-Udfør følgende trin for at omdøbe et eksisterende fragment i webstedsgenerator.
-
-1. Vælg **Fragmenter** i navigationsruden til venstre.
-1. Vælg navnet på det fragment, du vil omdøbe.
-1. Vælg **Rediger** for at begynde at redigere fragmentet. Bemærk, at du ikke kan redigere et fragment, hvis en anden allerede redigerer fragmentet.
-1. Vælg blyantssymbolet ud for fragmentnavnet i ruden med egenskaber for fragment.
-1. Rediger fragmentnavnet efter behov.
-1. Markér afkrydsningsfeltet for at bekræfte navneændringen.
-1. Vælg **Afslut redigering**.
-
-Du kan omdøbe et oprettet fragment ved at redigere det og derefter vælge blyantssymbolet ud for fragmentnavnet i egenskabsruden.
-
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over skabeloner og layout](templates-layouts-overview.md)
@@ -145,6 +136,3 @@ Du kan omdøbe et oprettet fragment ved at redigere det og derefter vælge blyan
 [Arbejde med forudindstillede layout](work-with-layouts.md)
 
 [Arbejd med publiceringsgrupper](publish-groups.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

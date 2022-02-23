@@ -2,9 +2,11 @@
 title: Bruge postskabelon til at oprette en ny post
 description: Denne procedure viser, hvordan du bruger en foruddefineret skabelon til at oprette en ny post.
 author: margoc
+manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, SysRecordTemplateSelect
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e59280c55b78bac49a3d60b9bd9f09ece5a988dc7754f0caf7b4fcdc64b9eaf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b9c71bab129aeecfdf5c59affece0d665e133979
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716032"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685163"
 ---
 # <a name="use-record-template-to-create-a-new-record"></a>Bruge postskabelon til at oprette en ny post
 
@@ -33,6 +35,3 @@ Denne procedure bruger eksempelfirmaet USMF
 3. Find og vælg den ønskede post på listen.
 4. Klik på **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

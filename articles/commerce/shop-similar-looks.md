@@ -2,13 +2,16 @@
 title: Aktivrtr anbefalinger af "Køb tilsvarende"
 description: Dette emne beskriver, hvordan du aktiverer produktanbefalingerne "Køb tilsvarende" i Microsoft Dynamics 365 Commerce.
 author: bebeale
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da957850072e233a41a042d5857f81ddbf178f7a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721994"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411153"
 ---
-# <a name="enable-shop-similar-looks-recommendations"></a>Aktivér anbefalinger af "Køb tilsvarende"
+# <a name="enable-shop-similar-looks-recommendations"></a>Aktivrtr anbefalinger af "Køb tilsvarende"
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du aktiverer produktanbefalingerne "Køb tilsvarende" i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Overblik
 
 Anbefalingsfunktionen "Køb tilsvarende" i Dynamics 365 Commerce bruger styrkerne i kunstig intelligens og maskinel læring (AI-ML) til at give anbefalinger af visuelt tilsvarende produkter til kunder. Når du gør anbefalinger af typen "Køb tilsvarende" tilgængelige for alle detailkanaler i Commerce, kan detailhandlerne øge kundetilfredsheden ved at hjælpe kunderne til nemt at finde det, de ønsker.
 
@@ -68,7 +73,7 @@ Hvis du vil aktivere anbefalingsfunktionen "Køb tilsvarende" i Commerce Headqua
 
 I følgende illustration vises funktionen **Køb tilsvarende** på siden **Funktionsstyring** i Commerce Headquarters.
 
-![Funktionen Køb tilsvarende på siden Funktionsstyring i Commerce Headquarters.](./media/enableshopsimilarlooks.png)
+![Funktionen Køb tilsvarende på siden Funktionsstyring i Commerce Headquarters](./media/enableshopsimilarlooks.png)
 
 Når de foregående opgaver er udført, forbedres POS-klienter automatisk med et kontekstafhængigt panel for **Køb tilsvarende produkter**. Hvis du vælger **Vis flere**, kan brugere af POS-terminalen føres til en dedikeret side af typen "Køb tilsvarende", der kan filtreres yderligere.
 
@@ -88,7 +93,7 @@ Hvis du vil tilføje knappen **Køb tilsvarende** til en PDP ved hjælp af Comme
 
 I følgende illustration vises afkrydsningsfeltet **Aktiver link til Køb tilsvarende** og knappen **Køb tilsvarende** i et PDP-eksempel i webstedsgeneratoren.
 
-![I følgende illustration vises afkrydsningsfeltet Aktivér link til Køb tilsvarende og knappen Køb tilsvarende på en PDP i webstedsgeneratoren.](./media/SSLecomtooling.png)
+![I følgende illustration vises afkrydsningsfeltet Aktiver link til Køb tilsvarende og knappen Køb tilsvarende på en PDP i webstedsgeneratoren.](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -111,6 +116,3 @@ I følgende illustration vises afkrydsningsfeltet **Aktiver link til Køb tilsva
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

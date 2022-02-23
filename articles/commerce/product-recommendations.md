@@ -2,25 +2,29 @@
 title: Oversigt over produktanbefalinger
 description: Dette emne indeholder generelle oplysninger om produktanbefalinger. Produktanbefalinger giver kunderne mulighed for nemt og hurtigt at finde produkter, som de ønsker, og endda produkter, som de oprindeligt ikke havde tænkt sig at købe.
 author: Moonma
+manager: AnnBe
 ms.date: 05/26/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7824de50a65370ef4f2f23b9c8e926f9bec2fcc3
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982113"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410953"
 ---
 # <a name="product-recommendations-overview"></a>Oversigt over produktanbefalinger
 
@@ -31,9 +35,6 @@ Microsoft Dynamics 365 Commerce kan bruges til at få vist produktanbefalinger p
 Produktanbefalinger gør det nemt og hurtigt for kunderne at finde produkter, som de ønsker, mens de har en god oplevelse. Krydssalg og mersalg kan også bruges til at hjælpe kunder med at finde flere produkter, end de oprindeligt havde tænkt sig at købe. Når anbefalingerne bruges til at forbedre produktregistrering, kan de skabe flere konverteringsmuligheder, bidrage til at øge salgsindtægterne og endda forbedre kundetilfredshed og -fastholdelse.
 
 I e-handel er produktanbefalingerne baseret på Microsofts anbefalinger fra teknologier for maskinel indlæring i stor målestok.
-
-Denne tjeneste er et tilføjelsesprogrammet til Dynamics 365 Commerce. Du kan finde flere oplysninger ved at hente den seneste [licensvejledning til Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544).
-
 
 ## <a name="recommendation-service"></a>Anbefalingstjeneste
 
@@ -49,7 +50,7 @@ Produktanbefalinger er tilgængelige for følgende scenarier:
 - **På en butiksside til gennemsyn eller landingsside i e-handel**: Hvis kunder eller butiksansatte besøger en butiks side, kan anbefalingsprogrammet foreslå produkter på de nye lister **Nyt**, **Mest solgte** og **Mest populære**.
 - **På siden Produktdetaljer:** Hvis kunder eller butiksansatte besøger siden **Produktdetaljer**, foreslår anbefalingsprogrammet yderligere varer, der formentlig også er interessante at købe. Disse varer vises på listen **Personer synes også om**.
 - **På siden Transaktion eller ved kassen:** Anbefalingsprogrammet foreslår varer på basis af hele listen med varer i kurven. Disse varer vises på listen **Ofte købt sammen**.
-- **Personlige anbefalinger:** Forhandlere kan give kunder, der er logget på, en personligt **udvalgt** liste samt nye funktioner, der gør det muligt at tilpasse eksisterende listescenarier efter den pågældende kunde. Du kan få mere at vide i [Aktivere tilpassede anbefalinger.](personalized-recommendations.md).
+- **Personlige anbefalinger:** Forhandlere kan give logon-kunder en personligt **udvalgt** liste samt nye funktioner, der gør det muligt at tilpasse eksisterende listescenarier efter den pågældende kunde. Du kan få mere at vide i [Aktivere tilpassede anbefalinger.](personalized-recommendations.md).
 
 ### <a name="types-of-product-recommendations"></a>Typer af produktanbefalinger
 
@@ -87,6 +88,3 @@ I følgende tabel beskrives de forskellige typer automatiske produktanbefalinger
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Udskyde udførelse af sekvenselementer i ER-formater
 description: Dette emne forklarer, hvordan du udskyder udførelsen af et sekvenselement i et elektronisk rapporteringsformat (ER).
 author: NickSelin
-ms.date: 04/23/2021
+manager: kfend
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 2af6c95e459246f25574860dc319928380d06cc9fd4fdb68f42203f943b4d386
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa019e20b218fdaad4659fa65d9df629069204b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718409"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680728"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Udskyde udførelse af sekvenselementer i ER-formater
 
@@ -42,7 +44,7 @@ Indstillingen **Udskudt udførelse** kan ikke anvendes til sekvenser, der er kon
 
 ## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Udskyde udførelse af et sekvenselement i et ER-format
 
-I følgende fremgangsmåde forklares det, hvordan en bruger i systemadministratoren eller den funktionelle konsulent i elektronisk rapportering [rolle](../sysadmin/tasks/assign-users-security-roles.md) kan konfigurere et ER-format, der indeholder et sekvenselement, hvor udførelsessekvensen er forskellig fra sekvensen i formathierarkiet.
+I følgende fremgangsmåde forklares det, hvordan en bruger i systemadministratoren eller den funktionelle konsulent i elektronisk rapportering [rolle](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) kan konfigurere et ER-format, der indeholder et sekvenselement, hvor udførelsessekvensen er forskellig fra sekvensen i formathierarkiet.
 
 Disse trin kan udføres i firmaet **USMF** i Microsoft Dynamics 365 Finance.
 
@@ -57,14 +59,14 @@ Hvis du endnu ikke har fuldført eksemplet i emnet [Udskyde udførelse af XML-el
 
 | Indholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|
-| ER-datamodelkonfiguration    | [Model til at lære udskudte elementer.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
-| ER-modeltilknytningskonfiguration | [Tilknytning for at lære udskudte elementer.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
+| ER-datamodelkonfiguration    | [Model til at lære udskudte elementer.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-modeltilknytningskonfiguration | [Tilknytning for at lære udskudte elementer.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 Før du går i gang, skal du også hente og gemme følgende konfiguration af ER-eksempelløsningen.
 
 | Indholdsbeskrivelse     |Filnavn |
 |-------------------------|----------|
-| Konfiguration af ER-format | [Format til at lære udskudte sekvenser.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
+| Konfiguration af ER-format | [Format til at lære udskudte sekvenser.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importere ER-eksempelkonfigurationerne
 
@@ -88,14 +90,14 @@ Før du går i gang, skal du også hente og gemme følgende konfiguration af ER-
 6. Udvid **Model til at lære udskudte elementer** i konfigurationstræet.
 7. Gennemse listen over importerede ER-konfigurationer i konfigurationstræet.
 
-    ![Importerede ER-konfigurationer på siden Konfigurationer.](./media/ER-DeferredSequence-Configurations.png)
+    ![Importerede ER-konfigurationer på siden Konfigurationer](./media/ER-DeferredSequence-Configurations.png)
 
 ### <a name="activate-a-configurations-provider"></a>Aktivere en konfigurationsudbyder
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurationer** i sektionen **Konfigurationsudbydere** skal du kontrollere, at [konfigurationsudbyderen](general-electronic-reporting.md#Provider) for eksempelfirmaet Litware, Inc. (`http://www.litware.com`) er vist, og at det er markeret som aktivt. Hvis denne konfigurationsudbyder ikke er angivet, eller hvis den ikke er markeret som aktiv, skal du følge trinnene i emnet [Opret en konfigurationsudbyder, og markér den som aktiv](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Eksempelfirmaet Litware, Inc. på siden Lokaliseringskonfigurationer.](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
+    ![Eksempelfirmaet Litware, Inc. på siden Lokaliseringskonfigurationer](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Gennemse tilknytningen af den importerede model
 
@@ -117,7 +119,7 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
     - Datakilden **Grupperet** for typen *Gruppér efter* er konfigureret til at gruppere filtrerede momstransaktioner for datakilden **Filtreret**.
     - Aggregeringsfeltet **TotalSum** i datakilden **Grupperet** er konfigureret til at opsummere værdier i feltet **\$TaxAmount** i datakilden **Filtreret** for alle filtrerede momstransaktioner for den pågældende datakilde.
 
-        ![Aggregeringsfeltet TotalSum på siden Rediger 'GroupBy'-parametre.](./media/ER-DeferredSequence-GroupByParameters.png)
+        ![Aggregeringsfeltet TotalSum på siden Rediger 'GroupBy'-parametre](./media/ER-DeferredSequence-GroupByParameters.png)
 
 9. Gennemse, hvordan de konfigurerede datakilder er bundet til datamodellen, og hvordan de viser data, der er adgang til, for at gøre dem tilgængelige i et ER-format:
 
@@ -125,7 +127,7 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
     - Feltet **\$TaxAmount** i datakilden **Filtreret** er bundet til feltet **Data.List.Value** i datamodellen.
     - Feltet **TotalSum** i datakilden **Grupperet** er bundet til feltet **Data.Summary.Total** i datamodellen.
 
-    ![Siden Modeltilknytningsdesigner.](./media/ER-DeferredSequence-ModelMapping.png)
+    ![Siden Modeltilknytningsdesigner](./media/ER-DeferredSequence-ModelMapping.png)
 
 10. Luk siderne **Modeltilknytningsdesigner** og **Modeltilknytninger**.
 
@@ -138,12 +140,12 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
 
     - Sekvensformatelementet **Rapport\\Linjer** er konfigureret til at udfylde det udgående dokument med en enkelt linje, der genereres fra de indlejrede sekvensformatelementer (**Overskrift**, **Post** og **Oversigt**).
 
-        ![Linjesekvensformatelement og indlejrede elementer på siden Formatdesigner.](./media/ER-DeferredSequence-Format.png)
+        ![Linjesekvensformatelement og indlejrede elementer på siden Formatdesigner](./media/ER-DeferredSequence-Format.png)
 
     - Sekvensformatelementet **Rapport\\Linjer\\Overskrift** er konfigureret til at udfylde det udgående dokument med en enkelt overskriftslinje, der viser den dato og det klokkeslæt, hvor behandlingen igangsættes.
     - Sekvensformatelementet **Rapport \\Linjer\\Post** er konfigureret til at udfylde det udgående dokument med en enkelt linje, der viser detaljerne i de enkelte momstransaktioner. Disse momstransaktioner er adskilt af semikolon.
 
-        ![Formatelement for postsekvens, der bruger et semikolon som afgrænsningstegn.](./media/ER-DeferredSequence-Format1.png)
+        ![Formatelement for postsekvens, der bruger et semikolon som afgrænsningstegn](./media/ER-DeferredSequence-Format1.png)
 
     - Sekvensformatelementet **Rapport\\Linjer\\Oversigt** er konfigureret til at udfylde det udgående dokument med en enkelt oversigtslinje, der omfatter summen af momsværdierne fra de behandlede momstransaktioner.
 
@@ -162,14 +164,14 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
     - Elementet **TotalTaxAmount** er bundet til **model.Data.Summary.Total** for at generere summen af momsværdierne for de behandlede momstransaktioner.
     - Elementet **ExecutionDateTime** genererer datoen og klokkeslættet (herunder millisekunder), når oversigtslinjen tilføjes.
 
-    ![Fanen Tilknytning på siden Formatdesigner.](./media/ER-DeferredSequence-Format2.png)
+    ![Fanen Tilknytning på siden Formatdesigner](./media/ER-DeferredSequence-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Kør det importerede format
 
 1. På siden **Formatdesigner** skal du vælge **Kør**.
 2. Hent den fil, som webbrowseren tilbyder, og åbn den til gennemsyn.
 
-    ![Hentet eksempelrapportfil.](./media/ER-DeferredSequence-Run.png)
+    ![Hentet fil](./media/ER-DeferredSequence-Run.png)
 
 Bemærk, at oversigtslinje 22 præsenterer summen af momsværdierne for de behandlede transaktioner. Da formatet er konfigureret til at bruge bindingen **model.Data.Summary.Total** til at returnere denne sum, beregnes summen ved at kalde aggregeringen **TotalSum** for datakilden **Grupperet** for typen *GroupBy*, der bruger modeltilknytningen. Hvis du vil beregne denne aggregering, gentages modeltilknytningen over alle de transaktioner, der er valgt i datakilden **Filtreret**. Ved at sammenligne udførselstiderne i linje 21 og 22 kan du fastlægge, at beregningen af summen har taget 10 millisekunder (ms). Ved at sammenligne udførselstiderne i linje 2 og 21 kan du fastlægge, at oprettelse af alle transaktionslinjer har taget 7 ms. Der kræves derfor 17 ms i alt.
 
@@ -183,12 +185,12 @@ Hvis mængden af transaktioner er meget større end mængden i det aktuelle ekse
 4. Konfigurer udtrykket **Nøglenavn for opsamlede data** som `WsColumn`.
 5. Konfigurer udtrykket **Nøgleværdi for opsamlede data** som `WsRow`.
 
-    ![Linjesekvenselement på siden Formatdesigner.](./media/ER-DeferredSequence-Format3.png)
+    ![Linjesekvenselement på siden Formatdesigner](./media/ER-DeferredSequence-Format3.png)
 
 6. Vælg det numeriske element **Rapport\\Linjer\\Post\\TaxAmount**.
 7. Konfigurer udtrykket **Nøglenavn for opsamlede data** som `SummingAmountKey`.
 
-    ![Det numeriske element TaxAmount på siden Formatdesigner.](./media/ER-DeferredSequence-Format4.png)
+    ![Det numeriske element TaxAmount på siden Formatdesigner](./media/ER-DeferredSequence-Format4.png)
 
     Du kan overveje denne indstilling ved at udfylde et virtuelt regneark, hvor værdien af celle A1 tilføjes sammen med værdien af momsbeløbet fra alle behandlede momstransaktioner.
 
@@ -196,13 +198,13 @@ Hvis mængden af transaktioner er meget større end mængden i det aktuelle ekse
 9. Konfigurer udtrykket `SUMIF(SummingAmountKey, WsColumn, WsRow)` ved hjælp af den indbyggede [SUMIF](er-functions-datacollection-sumif.md) ER-funktion.
 10. Vælg **Gem**.
 
-    ![SUMIF-udtryk.](./media/ER-DeferredSequence-FormulaDesigner.png)
+    ![SUMIF-udtryk](./media/ER-DeferredSequence-FormulaDesigner.png)
 
 11. Luk siden **Formeldesigner**.
 12. Vælg **Gem**, og vælg derefter **Kør**.
 13. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil – Opsummerede momsværdier.](./media/ER-DeferredSequence-Run1.png)
+    ![Hentet fil](./media/ER-DeferredSequence-Run1.png)
 
     Linje 21 indeholder den løbende total af momsværdier, der er beregnet for alle behandlede transaktioner ved brug af det genererede output som datakilde. Denne datakilde starter fra starten af rapporten og fortsætter gennem den seneste momstransaktion. Linje 22 indeholder summen af momsværdierne for alle behandlede transaktioner, der er beregnet i modeltilknytningen ved hjælp af datakilden af typen *GroupBy*. Bemærk, at disse værdier er ens. Derfor kan den outputbaserede opsummering bruges i stedet for **GroupBy**. Ved at sammenligne udførselstiderne i linje 2 og 21 kan du fastlægge, at oprettelse af alle transaktionslinjer og opsummering har taget 9 ms. Så vidt angår oprettelse af detaljerede linjer og opsummering af momsværdier, er det ændrede format ca. to gange hurtigere end det oprindelige format.
 
@@ -211,7 +213,7 @@ Hvis mængden af transaktioner er meget større end mængden i det aktuelle ekse
 16. Vælg **Gem**, og vælg derefter **Kør**.
 17. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil med redigeret formel.](./media/ER-DeferredSequence-Run2.png)
+    ![Hentet fil](./media/ER-DeferredSequence-Run2.png)
 
     Bemærk, at den løbende total for momsværdier på den sidste linje med transaktionsdetaljer nu svarer til summen på opsummeringslinjen.
 
@@ -224,7 +226,7 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 3. Vælg **Gem**, og vælg derefter **Kør**.
 4. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil til opsummering i rapporthoved.](./media/ER-DeferredSequence-Run3.png)
+    ![Hentet fil](./media/ER-DeferredSequence-Run3.png)
 
     Bemærk, at summen af momsværdier på oversigtslinje 2 nu er lig med 0 (nul), fordi denne sum nu beregnes ud fra det genererede output. Når linje 2 genereres, indeholder det genererede output endnu ikke linjer med transaktionsdetaljer. Du kan konfigurere dette format for at udskyde udførelsen af sekvenselementet **Rapport\\Linjer\\Oversigt**, indtil sekvenselementet **Rapport\\Linjer\\Post** er kørt for alle momstransaktionerne.
 
@@ -233,12 +235,12 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 1. På siden **Formatdesigner** under fanen **Format** skal du vælge sekvenselementet **Rapport\\Linjer\\Oversigt**.
 2. Angiv indstillingen **Udskudt udførelse** til **Ja**.
 
-    ![Indstillingen Udskudt udførelse for sekvenselementet Opsummering på siden Formatdesigner.](./media/ER-DeferredSequence-Format5.png)
+    ![Indstillingen Udskudt udførelse for sekvenselementet Opsummering på siden Formatdesigner](./media/ER-DeferredSequence-Format5.png)
 
 3. Vælg **Gem**, og vælg derefter **Kør**.
 4. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil – udskudt udførelse.](./media/ER-DeferredSequence-Run4.png)
+    ![Hentet fil](./media/ER-DeferredSequence-Run4.png)
 
     Sekvenselementet **Rapport\\Linjer\\Oversigt** køres nu kun, efter alle andre elementer, der er indlejret under det overordnede element **Rapport\\Linjer**, er kørt. Derfor køres det, efter at sekvenselementet **Rapport\\Linjer\\Post** er kørt for alle momstransaktioner i datakilden **model.Data.List**. Udførelsestiderne for linje 1, 2 og 3 og for den sidste linje, 22, viser denne oplysning.
 
@@ -247,6 +249,3 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 - [Konfigurere format for at udføre optælling og sammenlægning](./tasks/er-format-counting-summing-1.md)
 - [Spore kørsel af ER-format for at foretage fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
 - [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md#Example)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

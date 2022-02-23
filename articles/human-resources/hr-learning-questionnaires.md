@@ -1,35 +1,33 @@
 ---
 title: Spørgeskemaer
-description: Denne emne indeholder generelle oplysninger om spørgeskemaer og links til mere detaljerede oplysninger.
-author: twheeloc
-ms.date: 10/28/2021
+description: Denne artikel indeholder generelle oplysninger om spørgeskemaer og links til mere detaljerede oplysninger. Et spørgeskema er en række spørgsmål, der bruges til at indsamle oplysninger til forskellige formål. Du kan designe, oprette, fordele og udfylde spørgeskemaer og derefter analysere resultaterne.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ad5f3572e7b4b0594ffce6abaddceac955d1c678
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: c96be3a46de6ed841331f36114132ca59c236ba2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069498"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417866"
 ---
 # <a name="questionnaires"></a>Spørgeskemaer
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Denne emne indeholder generelle oplysninger om spørgeskemaer og links til mere detaljerede oplysninger. Et spørgeskema er en række spørgsmål, der bruges til at indsamle oplysninger til forskellige formål. Du kan designe, oprette, fordele og udfylde spørgeskemaer og derefter analysere resultaterne. 
+Denne artikel indeholder generelle oplysninger om spørgeskemaer og links til mere detaljerede oplysninger. Et spørgeskema er en række spørgsmål, der bruges til at indsamle oplysninger til forskellige formål. Du kan designe, oprette, fordele og udfylde spørgeskemaer og derefter analysere resultaterne. 
 
 Du kan tilpasse et spørgeskema, så det passer til dine specifikke behov, ved hjælp af forskellige funktioner, der findes i Microsoft Dynamics 365 Finance. Her er nogle eksempler på, hvordan du kan bruge spørgeskemaer:
 
@@ -41,11 +39,8 @@ Du kan tilpasse et spørgeskema, så det passer til dine specifikke behov, ved h
 
 Følgende tabel indeholder links til oplysninger om de centrale opgaver i spørgeskemaet. Klik på linkene for at få flere oplysninger.
 
-| Emne| Beskrivelse|
+| Emne| Betegnelse|
 |------|------------|
-| [Design et spørgeskema](hr-learning-design-questionnaires.md) | Dette emne indeholder oplysninger om, hvordan du designer et spørgeskema. Designprocessen omfatter opsætning af forudsætninger, svar og spørgsmål og kombinerer dem derefter i et spørgeskema. |
-| [Udsende og planlægge spørgeskemaer](hr-learning-distribute-questionnaires.md) | Dette emne indeholder oplysninger om, hvordan du distribuerer et spørgeskema til svarpersoner, og hvordan spørgeskemaer udfyldes. |
-| [Se og evaluer resultaterne af spørgeskema](hr-learning-evaluate-questionnaire-results.md) | Dette emne indeholder oplysninger om, hvordan resultaterne fra udfyldte spørgeskemaer vises og evalueres. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+| [Design et spørgeskema](hr-learning-design-questionnaires.md) | Denne artikel indeholder oplysninger om, hvordan du designer et spørgeskema. Designprocessen omfatter opsætning af forudsætninger, svar og spørgsmål og kombinerer dem derefter i et spørgeskema. |
+| [Udsende og planlægge spørgeskemaer](hr-learning-distribute-questionnaires.md) | Denne artikel indeholder oplysninger om, hvordan du distribuerer et spørgeskema til svarpersoner, og hvordan spørgeskemaer udfyldes. |
+| [Se og evaluer resultaterne af spørgeskema](hr-learning-evaluate-questionnaire-results.md) | Denne artikel indeholder oplysninger om, hvordan resultaterne fra udfyldte spørgeskemaer vises og evalueres. |

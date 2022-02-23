@@ -1,26 +1,29 @@
 ---
 title: Finanskladdehåndtering
 description: I dette emne beskrives funktionerne i Microsoft Dynamics 365 Finance, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet, og den interne kontrol ikke bliver forringet.
-author: kweekley
+author: ShylaThompson
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726771"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441673"
 ---
 # <a name="general-journal-processing"></a>Finanskladdehåndtering
 
@@ -42,14 +45,14 @@ Du kan konfigurere følgende elementer på siden **Kladdenavne**:
 
 Et kladdenavn kan kun anvendes til reguleringer. I dette tilfælde kan du angive, at kun kontotypen **Finans** er gyldig på tværs af alle regnskaber. 
 
-[![Kontotyper for kladdekontrol.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Kontotyper for kladdekontrol](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Et kladdenavn kan kun bruges til et bestemt segment eller til et interval for hovedkonti. 
 
-[![Kladdekontrolsegment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Kladdekontrolsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Indstillingen **Automatisk tilbageførsel** er tilgængelig i finanskladder. Du har for eksempel en periodiseringsregulering, hvor det faktiske dokuments endnu ikke er behandlet, som vist i følgende illustration.
-[![Tilbageførsel af finanskladde.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Tilbageførsel af finanskladde](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Microsoft Excel-tilføjelsesprogrammet til kladdepostering giver et ekstra niveau af automatisering og gør dataindtastningen lettere. Handlingen **Åbn linjer i Excel** er tilgængelig på siden **Finanskladde** og **Kladdebilag**. 
 
@@ -102,6 +105,3 @@ Muligheden for at tilbagekalde en kladde i en arbejdsgang, der har statussen "uo
 
 ## <a name="delete-journal-lines"></a>Slet kladdelinjer
 Muligheden for at slette alle kladdelinjer hurtigt aktiveres i en kladde under **Funktioner** > **Slet kladdelinjer**. Hvis du vil aktivere denne funktion, skal du under **Administration af funktioner** vælge **Slet kladdeoptimeringer for ydeevne**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

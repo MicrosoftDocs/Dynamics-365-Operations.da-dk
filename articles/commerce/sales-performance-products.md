@@ -2,13 +2,16 @@
 title: Vurdere salgsperformance efter produkt
 description: Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Dynamics 365 Commerce.
 author: ashishmsft
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysOperationsTemplateForm
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 85153
 ms.assetid: b3ac056f-0e4f-4e16-8479-37366f488793
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c16d55426dec090947311b485e68010a6e0b8943b67d00da10d4cd24ac214393
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f429fa38a7d68631449acb0a0ea5872771400b85
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762638"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411196"
 ---
 # <a name="assess-sales-performance-by-product"></a>Vurdere salgsperformance efter produkt
 
@@ -41,6 +44,3 @@ Til denne vurdering kan du bruge den færdiglavede rapport **Vigtigste produkter
 - Arbejdsområdet **Butiksstyring** &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Butiksstyring** &gt; **Rapporter** &gt; **Rapport over vigtigste produkter**
 - **Kategori og produktstyring**-arbejdsområdet &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Butiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**
 - Sektionen **Forespørgsler og rapporter** &gt; **Retail og Commerce** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over vigtige produkter**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

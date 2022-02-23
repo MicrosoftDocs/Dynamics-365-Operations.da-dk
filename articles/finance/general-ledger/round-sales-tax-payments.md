@@ -1,34 +1,37 @@
 ---
 title: Momsafregninger og afrundingsregler
-description: I dette emne forklares opsætning af afrundingsregel for momsmyndigheder og afrunding af momssaldoen under jobbet Afregn og bogfør moms.
-author: kailiang
-ms.date: 10/29/2021
+description: I denne artikel forklares opsætning af afrundingsregel for momsmyndigheder og afrunding af momssaldoen under jobbet Afregn og bogfør moms.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: kailiang
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a75d41195875c5ed48cbe8ce5f5e448f173e718
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726794"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4441729"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsafregninger og afrundingsregler
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares opsætning af afrundingsregel for momsmyndigheder og afrunding af momssaldoen under jobbet Afregn og bogfør moms.
+I denne artikel forklares opsætning af afrundingsregel for momsmyndigheder og afrunding af momssaldoen under jobbet Afregn og bogfør moms.
 
-Moms skal med jævne mellemrum rapporteres og betales til skattemyndighederne. Denne handling kan udføres ved at køre processen Afregn og bogfør moms på siden **Moms**. Moms for en periode afregnes på momskontiene, og momssaldoen posteres på momsafregningskontoen. Momssaldoen, der bogføres på afregningskontoen Moms, afrundes som krævet af skattemyndighederne ved at angive en afrundingsregel på siden **Moms**. 
+Moms skal med jævne mellemrum rapporteres og betales til skattemyndighederne. Dette kan gøres ved at køre processen til udligning og postering af moms på siden Moms. Moms for en periode udlignes til momskontiene og momssaldoen posteres til momsafregningskontoen. Momssaldoen, der bogføres på afregningskontoen Moms, afrundes som krævet af skattemyndighederne ved at angive en afrundingsregel på siden Moms. 
 
 Afrundingsdifferencen bogføres på momsen afrundingskontoen Moms, der er valgt i feltet Konti til automatisk posteringer under Finans.
 
@@ -63,60 +66,59 @@ Følgende tabel viser, hvordan et beløb på 98.765,43 afrundes ved hjælp af hv
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normal afrunding og afrundingspræcision er 0,01
 
-```<table>
+<table>
   <tr>
-    <td>Rounding
+    <td>Afrunding
     </td>
-    <td>Calculation process
+    <td>Beregningsproces
     </td>
   </tr>
     <tr>
-    <td>round(1.015, 0.01) = 1.02
+    <td>afrund(1,015, 0,01) = 1,02
     </td>
     <td>
       <ol>
-        <li>round(1.015 / 0.01, 0) = round(101.5, 0) = 102
+        <li>afrund(1,015 / 0,01, 0) = afrund(101,5, 0) = 102
         </li>
-        <li>102 * 0.01 = 1.02
-        </li>
-      </ol>
-    </td>
-  </tr>
-    <tr>
-    <td>round(1.014, 0.01) = 1.01
-    </td>
-    <td> <ol>
-        <li>round(1.014 / 0.01, 0) = round(101.4, 0) = 101
-        </li>
-        <li>101 * 0.01 = 1.01
+        <li>102 * 0,01 = 1,02
         </li>
       </ol>
     </td>
   </tr>
     <tr>
-    <td>round(1.011, 0.02) = 1.02
+    <td>afrund(1,014, 0,01) = 1,01
     </td>
     <td> <ol>
-        <li>round(1.011 / 0.02, 0) = round(50.55, 0) = 51
+        <li>afrund(1,014 / 0,01, 0) = afrund(101,4, 0) = 101
         </li>
-        <li>51 * 0.02 = 1.02
+        <li>101 * 0,01 = 1,01
         </li>
       </ol>
     </td>
   </tr>
     <tr>
-    <td>round(1.009, 0.02) = 1.00
+    <td>afrund(1,011, 0,02) = 1,02
     </td>
     <td> <ol>
-        <li>round(1.009 / 0.02, 0) = round(50.45, 0) = 50
+        <li>afrund(1,011 / 0,02, 0) = afrund(50,55, 0) = 51
         </li>
-        <li>50 * 0.02 = 1.00
+        <li>51 * 0,02 = 1,02
+        </li>
+      </ol>
+    </td>
+  </tr>
+    <tr>
+    <td>afrund(1,009, 0,02) = 1,00
+    </td>
+    <td> <ol>
+        <li>afrund(1,009 / 0,02, 0) = afrund(50,45, 0) = 50
+        </li>
+        <li>50 * 0,02 = 1,00
         </li>
       </ol>
     </td>
   </tr>
 </table>
-```
 
 > [!NOTE]                                                                                  
 > Hvis du vælger Egen fordel, er afrundingen altid til fordel for den juridiske enhed. 
@@ -126,9 +128,6 @@ Du kan finde flere oplysninger under følgende emner:
 - [Oprette en momsbetaling](tasks/create-sales-tax-payment.md)
 - [Oprette momstransaktioner på dokumenter](tasks/create-sales-tax-transactions-documents.md)
 - [Vise bogførte momstransaktioner](tasks/view-posted-sales-tax-transactions.md)
-- [afrundingsfunktion](/previous-versions/dynamics/ax-2012/reference/aa850656(v=ax.60))
+- [afrundingsfunktion](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

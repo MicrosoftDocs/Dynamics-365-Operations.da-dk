@@ -2,25 +2,28 @@
 title: Projektfakturering
 description: Dette emne indeholder en oversigt over projektfakturering for tids- og materialeprojekter og fastprisprojekter. Det omfatter oplysninger om fakturaforslag (foreløbig fakturaer), fakturastyring, acontofakturering, kreditorfakturering og kreditnotaer.
 author: TaylorVH
+manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
-ms.reviewer: zezhangzhao
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 82de9c8ff1b3eeb1811332316522e541b2a405ff
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883562"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441512"
 ---
 # <a name="project-invoicing"></a>Projektfakturering
 
@@ -58,7 +61,7 @@ Du kan oprette fakturaforslag til følgende posteringer:
 
 Du kan oprette gebyrposteringer i et fakturaforslag. Du kan også ændre salgsprisen på posteringer i forhold til timer, udgifter, varer og gebyrer. Når du bogfører et fakturaforslag, føjes de opdaterede priser og posteringer til projektrapporter og posteringsoversigten. 
 
-Hvis du vil oprette flere debitorfakturaer for et projekt, skal du oprette et fakturaforslag for hver faktura. Du kan f.eks. oprette fakturaer baseret på posteringstypen. Hvis du vil angive timer på én debitorfaktura og varer på en anden faktura, skal du oprette separate fakturaforslag for timeposteringer og gebyrposteringer. 
+Hvis du vil oprette flere debitorfakturaer for et projekt, skal du oprette et fakturaforslag for hver faktura. Du kan f.eks. oprette fakturaer baseret på posteringstypen. Hvis du vil angive timer på én debitorfaktura og varer på en anden, skal du oprette separate fakturaforslag for timeposteringer og gebyrposteringer. 
 
 Hvis et projekt har mere end én finansieringskilde, kan du oprette et separat fakturaforslag for hver finansieringskilde. På siden **Fordeling af finansieringsregler** kan du angive procentdelen af posteringsbeløbet, der skal fordeles til hver finansieringskilde, og kilden, der skal bogføres afrundingsforskelle til.
 
@@ -72,7 +75,7 @@ Hvis din organisation kræver, at fakturaforslag gennemgås, før de bogføres, 
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Se tilskudsoplysninger på sider med projektfakturalister
 
-Brugere af den offentlige sektor kan føje **Tilskuds-id** og **Tilskudsnavn** til listesiderne **Projektfakturaforslag** og **Projektfakturaer**. Disse kolonner er aktiveret ved hjælp af funktionen **Tilføj tilskudsoplysninger på projektfakturalistesider**. Denne funktion er som standard deaktiveret og kan aktiveres i **Arbejdsområder > Administration af funktioner**. Kontakt systemadministratoren for at få hjælp til at aktivere denne funktion.
+Brugere af den offentlige sektor kan føje **Tilskuds-id** og **Tilskudsnavn** til listesiderne **Projektfakturaforslag** og **Projektfakturaer**. Disse kolonner er aktiveret ved hjælp af funktionen **Tilføj tilskudsoplysninger på projektfakturalistesider**. Denne funktion er som standard deaktiveret og kan aktiveres i **Arbejdsområder > Administration af funktioner**. Kontakt systemadministratoren for at få hjælp til at aktivere denne funktion.
 
 ## <a name="on-account-invoicing"></a>Acontofakturering
 Det beløb, du angiver for et projekt på en acontofaktura for et projekt, er baseret på timingen, færdiggørelsesgraden og andre faktureringsbetingelser, der er angivet i den relaterede projektkontrakt. Beløbet beregnes ikke ud fra timer, varer, udgifter eller gebyrer, der er bogført til projektet. 
@@ -129,6 +132,3 @@ Du kan oprette en faktura, der har et negativt beløb, som bliver en faktura, de
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

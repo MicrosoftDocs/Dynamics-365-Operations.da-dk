@@ -2,9 +2,11 @@
 title: Vise sider side om side ved hjælp af Åbn i ny vinduesfunktion
 description: I denne artikel beskrives, hvordan du får vist sider side om side.
 author: aneesmsft
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068053"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798397"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Vise sider side om side ved hjælp af Åbn i ny vinduesfunktion
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I denne artikel beskrives, hvordan du får vist sider side om side.
 
@@ -49,6 +48,3 @@ Før du bruger funktionen **Åbn i et nyt vindue**, skal du konfigurere browsere
 Funktionen **Åbn i et nyt vindue** er kun tilgængelig, når der er mere end én side åben i vinduet. Desuden lukkes pop-up-vinduet automatisk, når der ikke er flere sider åbent (når du lukker den sidste side i dette vindue). Systemet lukker også åbne sider, når du navigerer til et andet område i programmet. Derfor, hvis du har åbne pop op-vinduer og navigerer til et andet område i programmet, lukkes pop op-vinduerne lukkes automatisk, fordi siderne i disse vinduer blev lukket af systemet.
 
 Topbjælken i pop op-vinduerne viser oplysninger om den virksomhed, som siden blev åbnet i, og er skrivebeskyttet. Pop op-vinduer er også afhængige af hovedbrowservinduet. Hvis hovedvinduet er lukket eller opdateres, bliver alle åbne pop op-vinduer skrivebeskyttet. Hvis denne situation indtræffer, kan du stadig få vist oplysninger i disse vinduer, men du kan ikke interagere med dem.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

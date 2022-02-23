@@ -2,25 +2,28 @@
 title: Leasingbogføringstyper
 description: I dette emne beskrives de bogføringstyper, der bruges til aktivleasingtransaktioner.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeasePostingAccounts
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 721463000c05eb1774335ccce1af39468c2aed9f179e5e88d8725f4d265d6870
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceb4fbeb4dbf2f535e05a9d46c84169435d2803b
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718241"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441769"
 ---
 # <a name="lease-posting-types"></a>Leasingbogføringstyper
 
@@ -89,6 +92,15 @@ Kontoen er tilknyttet ROU-anlægsaktivets konto. Denne konto krediteres, når de
 **Debet:** Afskrivningsudgift xxx<br>
 **Kredit:** Akkumuleret afskrivning xxx
 
+## <a name="retained-earnings"></a>Overført resultat
+
+Den konto, der er tilknyttet overførte tillæg. Denne konto kan enten debiteres eller krediteres i en overgangsreguleringskladdepostering ved hjælp af den komplette retrospektive metode eller den kumulative opsamlingsindstilling for metode A. Forskellen mellem det oprindelige ROU-aktiv og leasingforpligtelsen registreres i den overførte indtægt. I sjældne tilfælde kan den tilbageholdte indtægt også berøres under ændring af leasingaftaler, hvis klassifikationen af en rettighed er ændret fra økonomi til drift for at skrive ROU-aktiver op eller ned, så det svarer til ansvarsforsikring.
+
+**Eksempel Journal indgange:** Transaktionsjustering (komplet retrospektiv akkumuleret opsummeringsindstilling for metode A)<br>
+**Debet:** Leasingforpligtelse xxx<br>
+**Kredit:** Leasingaktiv xxx<br>
+**Kredit:** Overført indtægt xxx
+
 ## <a name="variable-payment"></a>Variabel betaling
 
 Kontoen er knyttet til variable leasingbetalinger, der er produceret af en indeksværdiregulering under ASC 842, ASC 840 og IAS 17-leasingaftaler. I betalingsplanen for leasingaftalen medtages variable betalinger i kolonnen **Variabel betaling**. Denne konto debiteres, når der oprettes en faktura i forhold til en betalingsplanlinje, der indeholder en variabel betaling.
@@ -142,6 +154,3 @@ Den konto, der er valgt for hver udgiftstype, debiteres, når der genereres en b
 
 > [!NOTE]
 > Modkontoen vælges på leasingniveau på linjerne for betalingsplanen for driftsomkostninger. Denne modkonto kan knyttes til kreditoren eller en finanskonto.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

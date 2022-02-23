@@ -1,24 +1,27 @@
 ---
 title: Opret salgsordrer
 description: Denne procedure viser, hvordan du opretter en salgsordre.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5746fa0ab9fd7ef3e288adc88a755324309a27c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424432"
 ---
 # <a name="create-sales-orders"></a>Opret salgsordrer
 
@@ -65,6 +68,3 @@ De produkter, der sælges af organisationen, kan findes i varianter, der er diff
     Siden **Totaler** viser oplysninger om hele ordren. Dette omfatter subtotalbeløb, som er summen af alle linjenettobeløb justeret for eventuelle linjerabatter, det samlede fakturabeløb, som er et subtotalbeløb justeret for eventuel rabat på ordreniveau, afgifter og moms, kundens kreditmaksimum og andet. Fakturabeløbet er det beløb, der skal vises på kundens fakturadokument.  
     
 3. Vælg **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

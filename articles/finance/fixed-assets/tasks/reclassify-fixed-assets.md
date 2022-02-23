@@ -1,10 +1,12 @@
 ---
 title: Genklassificer anlægsaktiver
-description: Dette emne indeholder en forklaring på processen til genklassificering af aktiver. Hvis du vil genklassificere et anlægsaktiv, skal du overføre det til en ny anlægsaktivgruppe eller tildele det et nyt anlægsaktivnummer i samme gruppe.
-author: moaamer
+description: Hvis du vil genklassificere et anlægsaktiv, skal du overføre det til en ny anlægsaktivgruppe eller tildele det et nyt anlægsaktivnummer i samme gruppe.
+author: saraschi2
+manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5fadebe685810d6833d1cb0581ed9a4869cc124
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 4cfc1425aca7a62205e0c7c50237f206a179a0e7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883640"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968848"
 ---
 # <a name="reclassify-fixed-assets"></a>Genklassificer anlægsaktiver
 
@@ -27,25 +29,11 @@ Hvis du vil genklassificere et anlægsaktiv, skal du overføre det til en ny anl
 
 Når et anlægsaktiv genklassificeres:
 
-- Alle bøger til det eksisterende anlægsaktiv oprettes for det nye anlægsaktiv. Oplysninger, der var oprettet for det oprindelige anlægsaktiv, kopieres til det nye anlægsaktiv. Status for det oprindelige anlægsaktivs bøger er Lukket. 
+* Alle bøger til det eksisterende anlægsaktiv oprettes for det nye anlægsaktiv. Oplysninger, der var oprettet for det oprindelige anlægsaktiv, kopieres til det nye anlægsaktiv. Status for det oprindelige anlægsaktivs bøger er Lukket. 
 
-- De nye anlægskartoteker indeholder datoen for genklassificeringen i feltet **Anskaffelsesdato**. Datoen i feltet **Startdato for afskrivning** kopieres fra de oprindelige aktivoplysninger. Hvis afskrivningen allerede er startet, vises datoen for genklassificeringen i feltet **Dato, hvor afskrivning sidst blev udført**. 
+* Det nye anlægsaktivs nye bøger indeholder datoen for genklassificeringen i feltet **Anskaffelsesdato**. Datoen i feltet **Startdato for afskrivning** kopieres fra de oprindelige aktivoplysninger. Hvis afskrivningen allerede er startet, vises datoen for genklassificeringen i feltet **Dato, hvor afskrivning sidst blev udført**. 
 
-- De eksisterende anlægsaktivposteringer for det oprindelige anlægsaktiv annulleres og oprettes for det nye anlægsaktiv igen.
-
-- Når et aktiv, der har en overførselstransaktion, er blevet omklassificeret, vil systemet vise en meddelelse i **Handlingscenteret** for at angive, at en overførselstransaktion ikke er fuldført under genklassificeringsprocessen. Det er nødvendigt at fuldføre en overførselstransaktion for at flytte de eksisterende genklassificeringstransaktioner til de relevante økonomiske dimensioner. 
-
-   Under genklassificeringsprocessen kører systemet følgende handlinger for at genklassificere aktivsaldoen fra det oprindelige aktiv til det nye aktiv. 
-   
-   - I genklassificeringsprocessen kopieres dataene fra det oprindelige anlægskartotek til det nye anlægskartotek.
-
-   - Genklassificeringstransaktionen bruger oplysninger fra den oprindelige bogførte anskaffelse, som omfatter oplysninger om økonomiske dimensioner, der er medtaget i anskaffelsestransaktionen.  
-   
-   - Samtidig tilbagefører genklassificeringsprocessen den oprindelige transaktion for aktivets anskaffelse og overførsel. 
-
-Følgende diagram og procedure viser et eksempel på genklassificeringsprocessen. 
-
-[![Diagram, der viser processen for genklassificering.](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
+* De eksisterende anlægsaktivposteringer for det oprindelige anlægsaktiv annulleres og oprettes for det nye anlægsaktiv igen.
 
 Benyt følgende fremgangsmåde for at genklassificere et anlægsaktiv:
 
@@ -56,7 +44,4 @@ Benyt følgende fremgangsmåde for at genklassificere et anlægsaktiv:
     * Hvis den nye anlægsaktivgruppe er knyttet til en nummerserie, opdateres feltet **Nyt nummer på anlægsaktivet** med nummeret fra nummerserien for den nye anlægsaktivgruppe. Ellers opdateres feltet **Nyt nummer på anlægsaktivet** med nummeret fra nummerserien, der er konfigureret på siden **Parametre for anlægsaktiver**. Hvis der ikke er konfigureret en nummerserie på siden **Parametre for anlægsaktiver**, skal du angive et tal i feltet **Nyt nummer på anlægsaktivet**.  
 5. Indtast en dato i feltet **Dato for genklassificering**.
 6. Indtast eller vælg en værdi i feltet **Bilagsserie**.
-7. Vælg **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+7. Klik på **OK**.

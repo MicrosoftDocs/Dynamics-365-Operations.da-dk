@@ -1,51 +1,47 @@
 ---
 title: Ansætte en ansøger gennem rekruttering
 description: Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt.
-author: twheeloc
-ms.date: 01/10/2022
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker, HcmPosition, HcmPositionDateManager,  DefaultDashboard
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: anbichse
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a6ecee078b18b12769a14cadc7e0182bf03d704
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 120fc00de7b66490c491d70b38aae79190de708f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075367"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797277"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Ansætte en ansøger gennem rekruttering
 
 [!include [banner](../../includes/banner.md)]
 
-> [!IMPORTANT]
-> De funktioner, der nævnes i dette emne, er i øjeblikket tilgængelige for kunder med Human Resources på den økonomiske infrastruktur.  
+Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt. Når du ansætter en ansøger via et rekrutteringsprojekt, oprettes der en ny arbejderpost, og ansøgerens post får status som Ansat. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du færdiggør denne procedure ved at gå til Personale > Rekruttering > Ansøgninger > Ansøgninger 
 
+1. Vælg en ansøgning for en ekstern ansøger
+2. Klik op linket i den valgte række på listen.
+3. Klik på Ansøgningsstatus.
+4. Klik på Ansæt en ny arbejder.
+5. Angiv en dato og et klokkeslæt i feltet Ansættelsens startdato.
+6. Klik på rullelisten i feltet Stilling for at åbne opslaget.
+7. Klik op linket i den valgte række på listen.
+8. Angiv en dato og et klokkeslæt i feltet Start for tildeling.
+9. Klik på Ansæt en ny arbejder.
+10. Udvid faktaboksen Ansættelseshistorik.
+11. Udvid faktaboksen Nuværende stillinger.
+12. Udvid faktaboksen Ansættelseshistorik.
+13. Udvid faktaboksen Nuværende stillinger.
+14. Udvis eller skjul sektionen Adresser.
+15. Udvis eller skjul sektionen Kontaktoplysninger.
+16. Udvid eller skjul sektionen Personlige oplysninger.
 
-Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt. Når du ansætter en ansøger via et rekrutteringsprojekt, oprettes der en ny arbejderpost, og ansøgerens post får status som **Ansat**. Demodatafirmaet **USMF** bruges til at oprette denne procedure.
-
-1. Gå til **Human Resources \> Rekruttering \> Ansøgninger \> Ansøgninger**. 
-2. Vælg en ansøgning for en ekstern ansøger.
-3. Vælg linket i den valgte række på listen.
-4. Vælg **Ansøgningsstatus**.
-5. Vælg **Ansæt ny arbejder**.
-6. Angiv en dato og et klokkeslæt i feltet **Ansættelsens startdato**.
-7. Vælg pilen til rullelisten i feltet **Stilling** for at åbne opslaget.
-8. Vælg linket i den valgte række på listen.
-9. Angiv en dato og et klokkeslæt i feltet **Start for tildeling**.
-10. Vælg **Ansæt ny arbejder**.
-11. Udvid faktaboksen **Ansættelseshistorik**.
-12. Udvid faktaboksen **Nuværende stillinger**.
-13. Udvid faktaboksen **Ansættelseshistorik**.
-14. Udvid faktaboksen **Nuværende stillinger**.
-15. Udvis eller skjul sektionen **Adresser**.
-16. Udvis eller skjul sektionen **Kontaktoplysninger**.
-17. Udvid eller skjul sektionen **Personlige oplysninger**.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Åbne URL-adresse i POS
 description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Dynamics 365 Commerce.
 author: AamirAllaq
+manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,18 +17,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4ccb8e03d63a7bd1ab2d118d86633a8c6324d43
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714108"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965446"
 ---
-# <a name="open-url-in-pos"></a>Åbne URL-adresse i POS
+# <a name="open-url-in-pos"></a>Åbn URL-adresse i POS
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan konfigurere en knap i Dynamics 365 Commerce POS til at åbne en URL-adresse. Denne funktion kræver ikke tilpasning af kode og kan konfigureres af en person, der ikke har rollen som udvikler. 
+I dette emne beskrives, hvordan du kan konfigurere en knap i Retail POS til at åbne en URL-adresse. Denne funktion kræver ikke tilpasning af kode og kan konfigureres af en person, der ikke har rollen som udvikler. 
 
 Denne funktion gør det muligt ved hjælp af knapmatrixdesigneren at konfigurere en knap i POS til at åbne en URL-adresse. Dette understøttes i øjeblikket i følgende konfigurationer:
 
@@ -46,15 +48,15 @@ Denne konfiguration definerer, om URL-adressen skal åbnes i et nyt vindue eller
 
 Med denne funktion kan du også indstille ikke-web-URL-adresser til at åbne en oprindelig app. Du kan for eksempel angive URL-protokoller som MailTo, SIP, IM eller MSTEAMS, som derefter kan håndteres af de respektive oprindelige apps på værtsenheden. Du kan aktivere denne ved at konfigurere URL-adressen med indstillingen **Åbn i nyt vindue** valgt.
 
-- For Windows-computere kan du i [Eksportere eller importere standardprogramtilknytninger](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) finde oplysninger om, hvordan du indstiller standardprotokoltilknytninger, hvis du konfigurerer computeren ved hjælp af DISM (Deployment Image Servicing and Management).
-- Hvis du bruger MDM, f.eks. Intune, til at administrere Windows-computere, skal du se [Politik CSP - ApplicationDefaults](/windows/client-management/mdm/policy-csp-applicationdefaults).
-- Hvis du er udvikler og bygger et brugerdefineret websted, skal du se [Start standardappen for en URI](/windows/uwp/launch-resume/launch-default-app).
+- For Windows-computere kan du i [Eksportere eller importere standardprogramtilknytninger](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) finde oplysninger om, hvordan du indstiller standardprotokoltilknytninger, hvis du konfigurerer computeren ved hjælp af DISM (Deployment Image Servicing and Management).
+- Hvis du bruger MDM, f.eks. Intune, til at administrere Windows-computere, skal du se [Politik CSP - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults).
+- Hvis du er udvikler og bygger et brugerdefineret websted, skal du se [Start standardappen for en URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app).
 
 ## <a name="open-a-native-app-seamlessly"></a>Åbne en oprindelig app problemfrit
 
 I Windows, iOS og Android er det også muligt at åbne apps mere problemfrit ved hjælp af app-protokoltilknytning. Hvis din app ikke allerede er konfigureret til at håndtere åbning fra en webbrowser, skal du muligvis bede en udvikler om at konfigurere dette.
 
-- For Windows, se [Aktivere apps til websteder ved hjælp af app-URI-handlere](/windows/uwp/launch-resume/web-to-app-linking).
+- For Windows, se [Aktivere apps til websteder ved hjælp af app-URI-handlere](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
 - For IOS, se [Universal Links til udviklere](https://developer.apple.com/ios/universal-links/).
 - For Android, se [Håndtering af Android App Links](https://developer.android.com/training/app-links/).
 
@@ -80,6 +82,3 @@ Hvis du vil konfigurere en URL-adresse, så den kan åbnes i POS, skal du udfør
 5. Vælg **Åbn URL** som handling.
 6. Angiv den URL-adresse, du vil bruge.
 7. Angiv, om URL-adressen skal åbnes i et nyt vindue.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

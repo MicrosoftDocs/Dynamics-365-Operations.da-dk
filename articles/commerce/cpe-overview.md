@@ -1,26 +1,30 @@
 ---
-title: Konfigurere en Dynamics 365 Commerce-oversigt
+title: Oversigt over Dynamics 365 Commerce-evalueringsmiljø
 description: Dette emne indeholder en oversigt over evalueringsmiljøet til Microsoft Dynamics 365 Commerce.
 author: v-chgri
+manager: annbe
 ms.date: 07/16/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
-ms.reviewer: josaw
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35cd06070ff73af1c97706bb1cdb67045715d458
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982633"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410974"
 ---
-# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Konfigurere en Dynamics 365 Commerce-oversigt
+# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Oversigt over Dynamics 365 Commerce-evalueringsmiljø
 
 [!include [banner](includes/banner.md)]
 
@@ -28,6 +32,8 @@ Dette emne indeholder en oversigt over evalueringsmiljøet til Microsoft Dynamic
 
 > [!NOTE]
 > Miljøer til Commerce-evaluering er ikke generelt tilgængelige og tildeles til partnere og kunder efter anmodning. Du kan få flere oplysninger ved at rette henvendelse til din kontakt hos din Microsoft-partner.
+
+## <a name="overview"></a>Overblik
 
 Commerce-evalueringsmiljøet er et valgfrit altomfattende miljø til Dynamics 365 Commerce, som gør det muligt for partnere og potentielle kunder at afprøve Commerce-produktet.
 
@@ -58,6 +64,3 @@ Sådan klargør du Commerce-evalueringsmiljøet se [Klargøre et Commerce-evalue
 [Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø](cpe-optional-features.md)
 
 [Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

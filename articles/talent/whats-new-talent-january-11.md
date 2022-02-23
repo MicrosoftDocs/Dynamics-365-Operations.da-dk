@@ -67,6 +67,3 @@ Når arbejdsområdet **Medarbejderselvbetjening** indledningsvis vælges som sta
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>Årsagskode for fratrædelse opdaterer stillingstildelingspost
 Årsagskoden for fratrædelse opdaterer nu stillingstildelingen, når du afskediger en medarbejder og afslutter stillingen. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

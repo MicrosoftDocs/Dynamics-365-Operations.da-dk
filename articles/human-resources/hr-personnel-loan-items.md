@@ -1,38 +1,35 @@
 ---
 title: Administrere udstyr, der er udlånt til arbejdere
 description: Udlånsemner er poster, der hjælper ledere med at holde styr på de fysiske emner, som virksomheden udlåner til sine arbejdere.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 9093944a2e225565fc8fdba8f9a487303369c251
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5915df388da7ce8b90cdcb0e859268c00003110c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067270"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417793"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Administrere udstyr, der er udlånt til arbejdere
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 Udlånsemner er poster, der hjælper ledere med at holde styr på de fysiske emner, som virksomheden udlåner til sine arbejdere. 
 
-Her er nogle eksempler på emner, som en virksomhed kan udlåne til arbejdere:
-
+Følgende punkter viser eksempler på emner, som en virksomhed kan udlåne til arbejdere:
 -   Mobiltelefoner
 -   Biler
 -   Computerudstyr
@@ -41,21 +38,20 @@ Alle fysiske emner skal have et tilknyttet udlånsemne. Alle udlånsemneposter s
 
 Når et emne udlånes, skal du angive den dato, emnet blev udlånt, samt den planlagte tilbageleveringsdato. Når emnet tilbageleveres, skal du angive den faktiske tilbageleveringsdato.
 
-Medarbejderne kan se poster for de emner, der er udlånt til dem, i arbejdsområdet **Medarbejderselvbetjening**. De kan også redigere eksisterende poster eller angive nye udlånsemner, hvis de har modtaget flere fysiske elementer. Arbejdsprocessen kan konfigureres til at dirigere ændringer til nye eller eksisterende udlånsemner gennem en godkendelsesproces. 
+Medarbejderne kan få vist poster for de varer, der er lånt ud til dem, ved hjælp af medarbejderens selvbetjeningsarbejdsområde. De kan også redigere eksisterende poster eller angive nye udlånsemner, hvis de har modtaget flere fysiske elementer.  Arbejdsprocessen kan konfigureres til at rute ændringer til nye eller eksisterende udlånsemner gennem en godkendelsesproces. 
 
 Ledere kan få vist udlånte emner for deres direkte rapporter. De kan også få tilladelse til at tilføje nye udlån på vegne af deres medarbejdere.
 
-##  <a name="account-for-lost-or-misplaced-loan-items"></a>Konto for beskadigede eller mistede udlånsemner
+ <a name="account-for-lost-or-misplaced-loan-items"></a>Konto for beskadigede eller mistede udlånsemner
+-----------------------------------------
 
 Hvis et emne bliver beskadiget eller mistes, skal du angive en fiktiv tilbageleveringspost. Derefter skal du enten slette emnet eller beholde det i oversigten og ændre beskrivelsen for at angive, at emnet ikke er tilgængeligt.
 
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
-[Human Resources](index.md)
-
-
-
+[Personale](index.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

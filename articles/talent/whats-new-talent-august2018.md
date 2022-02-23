@@ -85,6 +85,3 @@ Du kan finde flere oplysninger om denne funktion i [Selvstudium til Office-integ
 ## <a name="other-fixes"></a>Andre rettelser
 
 Denne version indeholder også en række fejlrettelser, tilføjelse af nye objekter, rettelser af eksisterende objekter og ændringer af oversatte etiketter.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

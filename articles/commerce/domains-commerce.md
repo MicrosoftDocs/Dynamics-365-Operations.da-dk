@@ -2,24 +2,27 @@
 title: Domæner i Dynamics 365 Commerce
 description: Dette emne beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+manager: AnnBe
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733985"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517349"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
@@ -38,7 +41,7 @@ Når der klargøres et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services 
 
 I følgende illustration vises LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet. 
 
-![LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet](./media/Domains_ProvisioningeCommerceScreen.png)
 
 Du kan oprette en serviceanmodning for at føje flere domæner til et miljø, hvis der allerede er foretaget klargøring. Hvis du vil oprette en serviceanmodning i LCS, skal du i dit miljø gå til **Support \> Supportproblemer** og vælge **Send en hændelse**.
 
@@ -56,7 +59,7 @@ Første gang du konfigurerer et websted i webstedsgeneratoren, vises dialogbokse
 
 I følgende illustration vises dialogboksen **Konfigurer dit websted** for et websted med navnet "standard", når du får adgang til webstedet for første gang i webstedsgeneratoren.
 
-![Dialogboksen **Konfigurer dit websted**.](./media/Domains_SetupyoursiteScreen.png)
+![Dialogboksen **Konfigurer dit websted**](./media/Domains_SetupyoursiteScreen.png)
 
 I feltet **Vælg et domæne** kan du knytte et af de understøttede værtsnavne, der er leveret til dit websted i LCS, til dit websted i webstedsgeneratoren.
 
@@ -79,11 +82,11 @@ Når webstedet er konfigureret med en sti, bygger alle URL-adresser, der er knyt
 
 Følgende illustration viser dialogboksen **Ny URL-adresse** i webstedsgenerator med eksempel på en URL-sti fremhævet. 
 
-![Dialogboksen **Ny URL-adresse** i webstedsgenerator.](./media/Domains_PageSetup2a.png)
+![Dialogboksen **Ny URL-adresse** i webstedsgenerator](./media/Domains_PageSetup2a.png)
 
 Følgende illustration viser siden **URL-adresser** i webstedsgenerator med eksempel på en URL-adresse fremhævet på listen.
 
-![Kør indstillingen for brugerflow i politikflow.](./media/Domains_URLsInSiteBuilder2a.png)
+![Kør indstillingen brugerstrøm i politikstrøm](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domæner i webstedsgenerator
 
@@ -151,7 +154,7 @@ Den Commerce-leverede Azure Front Door-forekomst understøtter ikke toppunktdom�
 
   [Implementere en ny e-handelslejer](deploy-ecommerce-site.md)
 
-  [Konfigurere en onlinebutikskanal](./channel-setup-online.md)
+  [Konfigurere en onlinebutikskanal](online-stores.md)
 
   [Oprette et websted for e-handel](create-ecommerce-site.md)
 
@@ -170,6 +173,3 @@ Den Commerce-leverede Azure Front Door-forekomst understøtter ikke toppunktdom�
   [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
   [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

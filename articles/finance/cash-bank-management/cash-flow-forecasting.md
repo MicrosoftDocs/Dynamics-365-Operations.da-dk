@@ -1,29 +1,31 @@
 ---
 title: Likviditetsbudget
 description: Dette emne indeholder en oversigt over likviditetsbudgetteringsprocessen. I emnet beskrives også, hvordan likviditetsbudgettering er integreret med andre moduler i systemet.
-author: panolte
-ms.date: 11/03/2021
+author: saraschi2
+manager: AnnBe
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7d462992816a5a2dee73979ed4cb1521ca4ce4f7
-ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
+ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "7945748"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645763"
 ---
 # <a name="cash-flow-forecasting"></a>Likviditetsbudget
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruge funktionerne til budgettering af likviditet til at analysere kommende likviditets- og valutabehov, så du kan anslå virksomhedens fremtidige likviditetsbehov. Udfør følgende opgaver for at få en budgettering af likviditeten:
 
@@ -37,7 +39,6 @@ Når du har fuldført disse opgaver, kan du beregne og analysere likviditetsbudg
 Likviditetsbudgetter kan integreres med Finans, Kreditor, Debitor, Debitor, Budgettering og lagerstyring. Budgetteringsprocessen bruger posteringsoplysninger, der angives i systemet, og beregningsprocessen budgetterer hver posterings forventede påvirkning af likviditeten. Følgende typer posteringer tages i betragtning ved beregning af likviditeten:
 
 - **Salgsordrer** – Salgsordrer, der endnu ikke er faktureret, og som resulterer i fysisk eller økonomisk salg.
-- **Fritekstfakturaer** – Fritekstfakturaer, der endnu ikke er bogført, og som resulterer i økonomisk salg. 
 - **Indkøbsordrer** – Indkøbsordrer, der endnu ikke er faktureret, og som resulterer i fysiske eller økonomiske indkøb.
 - **Debitor** – Åbne debitorposteringer (fakturaer, der endnu ikke er betalt).
 - **Kreditor** – Åbne kreditorposteringer (fakturaer, der endnu ikke er betalt).
@@ -45,11 +46,10 @@ Likviditetsbudgetter kan integreres med Finans, Kreditor, Debitor, Debitor, Budg
 - **Budgetregisterposter** – Budgetregisterposteringer, der er valgt til likviditetsbudgetter.
 - **Behovsprognose** – Lagerbudgetmodellinjer, der er valgt til likviditetsbudgetter.
 - **Forsyningsprognoser** – Lagerbudgetmodellinjer, der er valgt til likviditetsbudgetter.
-- **Ekstern datakilde** – Eksterne data, der angives eller importeres til likviditetsbudgetter ved hjælp af regnearksskabeloner.
-- **Projektprognoser** – Projektstyring og regnskabsprognoser ved hjælp af budgetmodel.
-- **Pengestrøm for betalinger til momsmyndigheder** – Forventet betalingsbeløb til momsmyndigheder og timing, der resulterer i økonomiske betalinger. Aktivér funktionen Pengestrøm for betalinger til momsmyndigheder.
 
-## <a name="configuration"></a>Konfiguration
+Selvom der er ingen direkte integration med Projektstyring og regnskab, er der flere måder at medtage projektposter i likviditetsbudgettet. Bogførte projektfakturaer medtages i budgettet som en del af åbne debitorposteringer. Projektdefinerede salgsordrer og indkøbsordrer medtages i budgettet som åbne ordrer, når de er angivet i systemet. Du kan også overføre projektbudgetter til en finansbudgetmodel. Denne finansbudgetmodel medtages derefter i likviditetsbudgettet som en del af posterne i budgetregisteret.
+
+## <a name="configuration"></a>Variantkonfiguration
 
 Du kan konfigurere likviditetsbudgetteringsprocessen på siden **Opsætning af likviditetsbudget**. På denne side kan du angive de likviditetskonti, der skal spores, og standardbudgetteringsfunktionsmåder for hvert område.
 
@@ -87,36 +87,18 @@ Du kan tilsidesætte standardindstillingen for feltet **Likviditetskonto** for s
 
 ### <a name="budgeting"></a>Budgettering
 
-Budgetter, der er oprettet ud fra budgetmodeller, kan medtages i likviditetsbudgetter. Under fanen **Budgettering** på siden **Opsætning af likviditetsbudget** skal du vælge de budgetmodeller, der skal medtages i budgettet. Nye poster i budgetregisteret medtages som standard i budgetter, når budgetmodellen er aktiveret til likviditetsbudgettering.
-
-Budgetregisterposter kan medtages i likviditetsbudgettet individuelt via tilpasning. Når du føjer kolonnen "Medtag i likviditetsbudgetter" til siden **Budgetregisterpost**, overskriver systemet indstillingerne på **opsætningssiden for likviditetsbudgetter**, så der medtages en individuel budgetregisterpost i budgettet.
-
+Budgetter, der er oprettet ud fra budgetmodeller, kan medtages i likviditetsbudgetter. Under fanen **Budgettering** på siden **Opsætning af likviditetsbudget** skal du vælge de budgetmodeller, der skal medtages i budgettet. Nye poster i budgetregisteret medtages som standard i budgetter, når budgetmodellen er aktiveret til likviditetsbudgettering. Inkludering i likviditetsbudgettering kan overskrives på individuelle poster i budgetregisteret.
 
 ### <a name="inventory-management"></a>Lagerstyring
 
 Lagerforsynings- og behovsbudgetter kan medtages i likviditetsbudgetter. Under fanen **Lagerstyring** på siden **Opsætning af likviditetsbudget** skal du vælge den budgetmodel, der skal medtages i likviditetsbudgettet. Inkludering i likviditetsbudgettering kan overskrives på individuelle forsynings- og behovsbudgetlinjer.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Konfigurere dimensioner for likviditetsbudgettering
-En ny fane på siden **Konfiguration af likviditetsbudgettering** giver dig mulighed for at styre, hvilke økonomiske dimensioner der skal bruges til filtrering i arbejdsområdet **Likviditetsbudgettering** . Denne fane vises kun, når funktionen Likviditetsbudgetter er aktiveret.
+En ny fane på siden **Konfiguration af likviditetsbudgettering** giver dig mulighed for at styre, hvilke økonomiske dimensioner der skal bruges til filtrering i arbejdsområdet **Likviditetsbudgettering**. Denne fane vises kun, når funktionen Likviditetsbudgetter er aktiveret. 
 
 Under fanen **Dimensioner** skal du vælge på den liste over dimensioner, der skal bruges til filtrering, og bruge piletasterne til at flytte dem til højre kolonne. Der kan kun vælges to dimensioner til filtrering af data i likviditetsbudgettet. 
 
-### <a name="setting-up-external-source"></a>Konfigurere ekstern kilde
-Eksterne data kan indtastes eller importeres i likviditetsbudgetter. Før eksterne data angives eller importeres, skal der konfigureres eksterne kilder. Under fanen **Ekstern kilde** skal du konfigurere eksterne likviditetskategorier. En kategori kan enten være **Udgående** eller **Indgående**. **Likviditet** skal vælges som bogføringstype. I gitteret **Indstillinger for juridisk enhed** skal du vælge de juridiske enheder og de tilsvarende hovedkonti, som de eksterne likviditetskategorier gælder for.
-
-### <a name="project-management-and-accounting"></a>Projektstyring og regnskab
-
-I version 10.0.17 giver en ny funktion mulighed for integration med projektstyring og regnskab og likviditetsbudgettering. I arbejdsområdet **Funktionsstyring** skal du aktivere funktionen **Likviditetsprojektbudget** for at medtage de budgetterede omkostninger og indtægter i likviditetsbudgettet. Vælg de projekttyper og posteringstyper, der skal medtages i likviditetsbudgettet, under fanen **Projektstyring og regnskab** på siden **Opsætning af likviditetsbudget**. Vælg derefter projektprognosemodellen. En undermodel af typen reduktion fungerer bedst. De likviditetskonti, der blev angivet i debitoropsætningen, bruges som standardlikviditetskonti. Du behøver derfor ikke angive standardlikviditetskonti, når du opretter likviditetsbudgettet. En budgetmodel kan også bruges, men der kan kun vælges én type på siden **Opsætning af likviditetsbudget** til projektstyring og regnskab. En budgetmodel giver mest fleksibilitet, når der bruges Projektstyring og regnskab eller Project Operations.
-
-Når funktionen til likviditetsprojektbudget er aktiveret, kan du få vist likviditetsbudgettet for hvert projekt på siden **Alle projekter**. Vælg **Likviditetsbudget** i gruppen **Prognose** under fanen **Planlæg** i handlingsruden. I arbejdsområderne **Oversigt over kontanter** (se afsnittet om [Rapportering](#reporting) senere i dette emne) viser posteringstypen Projektprognose indgående (projektbudgetindtægter) og udgående pengestrømme (projektbudgetomkostninger). Beløbene kan kun medtages, hvis feltet **Projektstadie** i arbejdsområderne **Oversigt over kontanter** er angivet til **I gang**.
-
-Projektposteringer medtages stadig i likviditetsbudgettet på flere måder, uanset om funktionen **Likviditetsprojektbudget** er aktiveret. Bogførte projektfakturaer medtages i budgettet som en del af åbne debitorposteringer. Projektdefinerede salgsordrer og indkøbsordrer medtages i budgettet som åbne ordrer, når de er angivet i systemet. Du kan også overføre projektbudgetter til en finansbudgetmodel. Denne finansbudgetmodel medtages derefter i likviditetsbudgettet som en del af posterne i budgetregisteret. Hvis du har aktiveret funktionen **Likviditetsprojektprognose**, skal du ikke overføre projektprognoser til en finansbudgetmodel, da denne handling bevirker, at projektprognoserne tælles to gange.
-
-### <a name="sales-tax-authority-payments"></a>Betalinger til momsmyndigheder 
-
-Funktionen Pengestrøm for betalinger til momsmyndigheder forudsiger momsbetalingers påvirkning af likviditet. Den bruger ubetalte momsposteringer, momsafregningsperioder og momsbetalingsbetingelser for momsperioden til at forudsige datoen og beløbet for likviditetsbetalinger. 
-
-### <a name="calculation"></a>Beregning
+### <a name="calculation"></a>Udregning
 
 Før du kan få vist likviditetsbudgetteringsanalyser, skal du køre likviditetsberegningsprocessen. Beregningsprocessen kan beregne den fremtidige indvirkning af likvider, der er angivet.
 
@@ -158,7 +140,7 @@ Arbejdsområdet **Oversigt over kontanter – alle firmaer** viser likviditetsbu
 
 Arbejdsområdet **Oversigt over kontanter - aktuelt firma** viser likviditetsbudgetteringsanalyser i firmaets definerede regnskabsvaluta. Den regnskabsvaluta, der bruges til analyser, defineres på siden **Finans**. Dette arbejdsområde viser en oversigt over likviditetsbudgettering og bankkontosaldi for det aktuelle firma. Et diagram over indgående og udgående pengestrømme giver et overblik over de fremtidige kontantbevægelser og -saldi i regnskabsvalutaen sammen med detaljerede oplysninger om de budgetterede posteringer. Du kan også se saldi for budgetteret valuta.
 
-Du kan finde flere oplysninger om likviditetsbudgetteringsanalyser i [Power BI-indhold for oversigt over kontanter](Cash-Overview-Power-BI-content.md).
+Du kan finde flere oplysninger om likviditetsbudgetteringsanalyser i emnet [Power BI-indhold for oversigt over kontanter](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
 
 Desuden kan du få vist likviditetsbudgetteringsdata for bestemte konti, ordrer og varer på de følgende sider:
 
@@ -168,6 +150,3 @@ Desuden kan du få vist likviditetsbudgetteringsdata for bestemte konti, ordrer 
 - **Forsyningsprognose**: Vælg **Likviditetsbudgetter** for at få vist fremtidige pengestrømme, der er knyttet til den valgte vareforsyningsprognose.
 - **Behovsprognose**: Vælg **Likviditetsbudgetter** for at få vist fremtidige pengestrømme, der er knyttet til den valgte varebehovsprognose.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

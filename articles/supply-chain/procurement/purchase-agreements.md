@@ -1,10 +1,12 @@
 ---
 title: Købsaftaler
 description: Denne artikel indeholder oplysninger om købsaftaler. En købsaftale er en kontrakt, som forpligter en organisation til at købe et bestemt antal eller beløb via flere indkøbsordrer over tid. I bytte for denne forpligtelse får køberen specialpriser og rabatter.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570478"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017181"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
@@ -102,13 +104,12 @@ Hvis du opretter en intern indkøbsordre, der bruger den interne købsaftale i �
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Økonomiske dimensioner for købsaftaler
 Du kan kopiere økonomiske dimensioner til dokumentoverskrifter eller til enkelte linjer i en købsaftale. Hvis du ændrer dimensionerne i aftalehovedet eller på aftalelinjen, påvirker ændringen ikke frigivne ordrer, men afspejles i nye ordrer.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
-- [Oprette en købsaftale](tasks/create-purchase-agreement.md)
-- [Anvende en købsaftale ved oprettelse af en indkøbsordre](tasks/create-purchase-release-order-purchase-agreement.md)
+[Oprette en købsaftale](tasks/create-purchase-agreement.md)
+
+[Oprette en købsaftræksordre ud fra en købsaftale](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

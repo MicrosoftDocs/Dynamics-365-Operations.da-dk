@@ -1,25 +1,28 @@
 ---
 title: Indgå salgsaftaler
 description: Dette emne viser, hvordan du opretter en salgsaftale, der forpligter en af dine kunder til at købe et produkt for et aftalt beløb over en tidsperiode mod at få særlige rabatter.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm, SalesAgreementCustomerReferencesPart
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee2c1494842c5fd2aa598546ba655c33d6fd3f16
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5d69f3eaacea641460b407c1456ee50600262fee
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568297"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424431"
 ---
 # <a name="enter-sales-agreements"></a>Indgå salgsaftaler
 
@@ -54,6 +57,3 @@ Dette emne viser, hvordan du opretter en salgsaftale, der forpligter en af dine 
 11. Vælg **OK**.
 12. Luk siden. Aftalen er nu gældende. Du kan begynde at knytte kundens ordrer til aftalen for at modpostere mod tilsagnsmålet.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

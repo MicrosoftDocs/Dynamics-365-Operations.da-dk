@@ -2,25 +2,28 @@
 title: Debitorbetalinger af et delvist beløb
 description: Kunder vil nogle gange indbetale et beløb, der er mindre end beløbet på en faktura. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation. De tilgængelige indstillinger afhænger af forretningsbehovene og konfigurationen.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b4a930f7bb070d3105eff3978774bfd8a3ffbfd2b8eb77097028411da619c64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a74803d3adf71ef1495ec5b42753d0988cea4133
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769029"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441423"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Debitorbetalinger af et delvist beløb
 
@@ -28,7 +31,8 @@ ms.locfileid: "6769029"
 
 Kunder vil nogle gange indbetale et beløb, der er mindre end beløbet på en faktura. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation. De tilgængelige indstillinger afhænger af forretningsbehovene og konfigurationen.
 
-## <a name="partial-payment-with-no-discount"></a>Delvis betaling uden rabat
+<a name="partial-payment-with-no-discount"></a>Delvis betaling uden rabat
+--------------------------------
 
 Kunder kan eventuelt foretage en delvis betaling, hvis ikke har nok kontanter til at betale fakturaen i sin helhed, eller hvis der er en tvist om en vare på fakturaen. I denne situation kan fakturaen delvist udlignes med betalingen. Fakturaen forbliver åben og viser en saldo.
 
@@ -56,6 +60,3 @@ Kunder kan foretage en delvis betaling, hvor det resterende beløb ikke betales,
 
 
 Du kan finde flere oplysninger i [Deponere debitorbetalinger](tasks/deposit-customer-payments.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

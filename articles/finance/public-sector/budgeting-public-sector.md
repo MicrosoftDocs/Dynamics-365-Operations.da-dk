@@ -1,29 +1,30 @@
 ---
 title: Oversigt over budgettering i den offentlige sektor
 description: Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor. Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner.
-author: panolte
+author: ShylaThompson
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetControlApportionments, BudgetControlConfiguration, BudgetControlStatistics, BudgetParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "19471"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 19471
 ms.assetid: 8cecf3cc-8916-44d7-8c73-d6254a61f62b
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4577f02fade8a0bc9944c17a7d2b223c2269a9e4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f0864e6e174e9c6ffc1ce193c9e7edbd4d285c14
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407656"
 ---
 # <a name="budgeting-in-the-public-sector-overview"></a>Oversigt over budgettering i den offentlige sektor
 
@@ -31,7 +32,8 @@ ms.locfileid: "7986119"
 
 Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor. Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner.
 
-## <a name="what-are-the-prerequisites-to-setting-up-budgeting-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Budgetlægning i den offentlige sektor?
+<a name="what-are-the-prerequisites-to-setting-up-budgeting-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Budgetlægning i den offentlige sektor?
+------------------------------------------------------------------------
 
 For at kunne bruge budgetstyring skal du konfigurere den grundlæggende budgettering. Med konfigurationen til offentlige institutioner konfigurerer du dette samtidig med, at du konfigurerer grundlæggende budgettering. Du skal også gøre følgende:
 
@@ -50,7 +52,8 @@ Du skal evt. angive følgende budgetteringsfunktioner:
 
 **Bemærk!** Dette gælder også for Finans, Kreditor og Debitor.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Budgettering](../budgeting/budgeting-overview.md)
 
@@ -66,6 +69,3 @@ Du skal evt. angive følgende budgetteringsfunktioner:
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

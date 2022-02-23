@@ -2,9 +2,11 @@
 title: Oprette en faktureringsklassifikation i den offentlige sektor
 description: Offentlige institutioner kan bruge faktureringsklassifikationer til at administrere fritekstfakturaer.
 author: twheeloc
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustBillingClassification
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f143b4b606b95f2a661c88299c02c08fce8682df47f1ee1d5429b57d29ed441
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad58271fb3292b03c1ada1a73e0b94c317f0e397
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763057"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964463"
 ---
 # <a name="create-a-billing-classification-in-the-public-sector"></a>Oprette en faktureringsklassifikation i den offentlige sektor
 
@@ -40,6 +42,3 @@ Offentlige institutioner kan bruge faktureringsklassifikationer til at administr
 10. På listen skal du klikke på en faktureringskode, der skal føjes til denne faktureringsklassifikation.
 11. Klik på Gem.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

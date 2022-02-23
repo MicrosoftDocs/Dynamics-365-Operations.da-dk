@@ -2,25 +2,28 @@
 title: Konfigurer kontostrukturer
 description: Dette emne indeholder oplysninger om kontostrukturer og økonomiske dimensioner.
 author: aprilolson
+manager: AnnBe
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc9219009991cce3f4df9c6f7e04903f5625dd80
-ms.sourcegitcommit: b2fe67e2fe6a99a35decb04c8d62efd1e94fe1b8
+ms.openlocfilehash: c278cefd47b14c44c1949505404d08628cb7f52f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "7945535"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441630"
 ---
 # <a name="configure-account-structures"></a>Konfigurer kontostrukturer
 
@@ -46,9 +49,9 @@ For at illustrere den bedste fremgangsmåde for oprettelse af en kontostruktur v
 
 **Driftskontostruktur**
 
-|Hovedkonto          | Forretningsenhed    |Afdeling          | Bærer    | &nbsp; |
-|----------------------|------------------|--------------------|-----------|---|
-|400000..999999 | \*;” “| \*;” “| \*;” “| \*;” “|
+|Hovedkonto          | Virksomhedsenhed    |Afdeling          | Bærer    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | *;” “|*;” “|*;” “|*;” “|
 
 **Avanceret regel for tilføjelse af en kunde**
 
@@ -65,7 +68,7 @@ Sektionen **Segmenter** og **Oplysninger om tilladt værdier** giver en gitterli
 
 Sektionen **Oplysninger om tilladt værdi** fører dig gennem oprettelsen af kriterier ved hjælp af **Operatorer** som begynder med, er mellem, omfatter og mange andre.
 
-[![Tillad værdier.](./media/account.png)](./media/account.png) 
+[![Tillad værdier](./media/account.png)](./media/account.png) 
 
 Tilladte værdier sættes som standard til en postside for en kladde eller en regnskabsfordeling, når der ikke er andre mulige værdier, der kan vælges i henhold til opsætningen af kontostrukturen.
 
@@ -104,6 +107,3 @@ Når du konfigurerer dine kontostrukturer, der er nogle bedste fremgangsmåder, 
 Når du er tilfreds med den nye konfiguration eller en ændring i en kontostruktur, skal du aktivere den. Hvis en kontostruktur tildeles til en finanskonto, kan denne aktivering være en længerevarende proces, fordi alle ikke-bogførte posteringer i systemet skal synkroniseres med den nye struktur. Bogførte posteringer berøres ikke af ændringer af kontostrukturen.
 
 Du kan finde flere oplysninger under [Planlægge dine kontoplaner](plan-chart-of-accounts.md), [Økonomiske dimensioner](financial-dimensions.md) og [Angive kombinationer af konto og dimension (segmenteret adgangsstyring)](enter-account-dimension-combinations-segmented-entry-control.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

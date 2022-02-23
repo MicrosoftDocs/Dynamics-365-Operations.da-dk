@@ -2,25 +2,28 @@
 title: Indkøb og forsyning i den offentlige sektor i Frankrig
 description: I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor. Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics.
 author: rschloma
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, PurchAgreement, SysPolicy
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 19891
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df14b2a8fc1cccba219877ea2baff6aa1e9b782513d8ca4d212c5204addaa70f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9394d0678f9a88995b53e80337d5832ddcb7a2ba
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766274"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407675"
 ---
 # <a name="procurement-and-sourcing-in-the-public-sector-in-france"></a>Indkøb og forsyning i den offentlige sektor i Frankrig
 
@@ -28,7 +31,8 @@ ms.locfileid: "6766274"
 
 I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor. Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics. 
 
-## <a name="set-spending-thresholds-by-procurement-category"></a>Angive forbrugsgrænser efter indkøbskategori
+<a name="set-spending-thresholds-by-procurement-category"></a>Angive forbrugsgrænser efter indkøbskategori
+-----------------------------------------------
 
 Hvis du vil angive forbrugsgrænser for køb i de indkøbskategorier, som er defineret af Clé de Contrôle Marché, skal du bruge indkøbspolitikreglen **Forbrugsgrænser efter kategori**. Når du implementerer denne indkøbspolitikregel til styring af forbrugsgrænser efter kategori, kan du bruge attributter for ikrafttrædelsesdato, estimerede udgiftsbeløb og tærskelbeløb til at understøtte din indkøbspraksis og til at sikre effektiv brug af offentlige midler.
 
@@ -58,6 +62,3 @@ Du kan oprette købsaftaleklassifikationer, der føjer administrative felter til
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

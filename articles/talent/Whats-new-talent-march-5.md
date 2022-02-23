@@ -80,6 +80,3 @@ I mange organisationer har chefer for løn og frynsegoder kun har adgang til bes
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 til Finance and Operations
 Yderligere oplysninger om Platform update 24 til Finance and Operations finder du i [Nyheder eller ændringer i Finance and Operations Platform update 24 (marts 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

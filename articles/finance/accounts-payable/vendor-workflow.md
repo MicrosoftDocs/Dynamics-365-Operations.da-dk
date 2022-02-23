@@ -1,24 +1,27 @@
 ---
 title: Arbejdsgang for kreditorer
 description: Rediger leverandøroplysninger, og brug arbejdsgange til at godkende dem.
-author: sunfzam
+author: mikefalkner
+manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 48d81c727de29a285e5e33672e8f6d2eccef6249
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 00cdc657fa075e84e62682e33ed3c1bace3f4ad0
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753916"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441786"
 ---
 # <a name="vendor-workflow"></a>Arbejdsgang for kreditorer
 
@@ -58,6 +61,3 @@ Når du har mindst én foreslåede ændring, vises der to ekstra faner i handlin
     Status på siden ændres til **Ændringer, der afventer godkendelse**.
 
 Arbejdsgangen følger standardarbejdsgangsprocessen. Godkenderen dirigeres til siden **Kreditor**, hvor ændringerne kan gennemgås på siden **Forslag til ændringer**. Vælg derefter **Arbejdsgang \> Godkend** for at godkende arbejdsgangen. Når alle godkendelser er fuldført, opdateres felterne med de værdier, du foreslog.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

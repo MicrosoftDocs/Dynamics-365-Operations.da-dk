@@ -1,33 +1,31 @@
 ---
 title: Levér frynsegodeprogram for medarbejdere
-description: Dette emner forklarer, hvordan du kan oprette frynsegodeelementer, der skal bruges, når du opretter et nyt frynsegode.
-author: twheeloc
-ms.date: 08/23/2021
+description: Denne artikel viser dig, hvordan du kan oprette frynsegodeelementer, der skal bruges, når du opretter et nyt frynsegode.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 868ddb9b372b90ec75a5f35ebf3c987f2d39bd74
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: cc02346ebccd04f2b4f6fc7029717a8793d75e0d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066062"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417832"
 ---
 # <a name="deliver-employee-benefits-program"></a>Levér frynsegodeprogram for medarbejdere
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dette emner forklarer, hvordan du kan oprette frynsegodeelementer, der skal bruges, når du opretter et nyt frynsegode. Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Opgaven er beregnet til en leder for kompensation og frynsegoder.
+Denne artikel viser dig, hvordan du kan oprette frynsegodeelementer, der skal bruges, når du opretter et nyt frynsegode. Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Opgaven er beregnet til en leder for kompensation og frynsegoder.
 
 
 ## <a name="create-benefit-elements"></a>Oprettet frynsegodeelementer
@@ -53,7 +51,7 @@ Dette emner forklarer, hvordan du kan oprette frynsegodeelementer, der skal brug
 
 ## <a name="create-a-benefit"></a>Oprette et frynsegode
 1. Luk siden.
-2. Gå til Human Resources > Frynsegoder > Frynsegoder.
+2. Gå til Personale > Frynsegoder > Frynsegoder.
 3. Klik på Ny for at åbne dialogboksen Fjern.
 4. Klik på rullelisten i feltet Plan for at åbne opslaget.
 5. Find og vælg den ønskede post på listen.
@@ -70,6 +68,3 @@ Dette emner forklarer, hvordan du kan oprette frynsegodeelementer, der skal brug
 16. Vælg en indstilling i feltet Basis.
 17. Indtast et tal i feltet Beløb eller sats.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

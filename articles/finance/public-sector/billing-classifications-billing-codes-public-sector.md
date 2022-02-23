@@ -1,35 +1,39 @@
 ---
 title: Faktureringsklassifikationer og faktureringskoder i den offentlige sektor
-description: Dette emne beskriver, hvordan offentlige organisationer kan bruge faktureringsklassificeringer og faktureringskoder til at administrere fritekstfakturaer.
-author: v-kiarnd
+description: Offentlige organisationer kan bruge faktureringsklassificeringer og faktureringskoder til at administrere fritekstfakturaer.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 19491
 ms.assetid: 47624566-0b4c-41dc-9cd4-801e213b5da3
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9343079ad9dc98b3a411d8a49f2c49a95b6ca76c
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 4e3c58c677953b422b0c9e23282a9472d1722839
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817690"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407659"
 ---
 # <a name="billing-classifications-and-billing-codes-in-the-public-sector"></a>Faktureringsklassifikationer og faktureringskoder i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan offentlige organisationer kan bruge faktureringsklassificeringer og faktureringskoder til at administrere fritekstfakturaer. 
+Offentlige organisationer kan bruge faktureringsklassificeringer og faktureringskoder til at administrere fritekstfakturaer. 
 
-## <a name="billing-classifications"></a>Faktureringsklassifikationer
+<a name="billing-classifications"></a>Faktureringsklassifikationer
+-----------------------
 
 Faktureringsklassifikationer bruges til at gruppere ensartede fritekstfakturaer til behandling og visning. Eksempelvis kan et forsendelsesbureau leje plads i hver forsendelsesstation til små cafeer og andre forhandlere. Ved at oprette en faktureringsklassifikation til udlejninger kan bureauet automatisk anvende de samme betalingsbetingelser og bruge den samme rækkefølge af rykkere for alle udlejninger. Bureauet kan også få vist fakturaer for alle udlejninger sammen, selvom udlejningerne ikke deler de samme økonomiske dimensioner. Faktureringsklassifikationer omfatter følgende oplysninger:
 
@@ -86,6 +90,3 @@ Nej, men der er en måde at få de resultater, du skal bruge, alligevel. Lad os 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

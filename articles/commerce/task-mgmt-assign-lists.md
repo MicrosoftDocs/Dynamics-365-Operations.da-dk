@@ -2,29 +2,34 @@
 title: Tildeling af opgavelister til butikker eller medarbejdere
 description: Dette emne beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 18f13fb1754b2740b8447a67f09320651b0ca4003c6f46c6d4668e5159ae1a2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730821"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411146"
 ---
-# <a name="assign-task-lists-to-stores-or-employees"></a>Tildele opgavelister til butikker eller medarbejdere
+# <a name="assign-task-lists-to-stores-or-employees"></a>Tildeling af opgavelister til butikker eller medarbejdere
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Opgavestyring i Dynamics 365 Commerce giver dig mulighed for at tildele en opgaveliste til flere butikker eller medarbejdere eller til en kombination af butikker og medarbejdere. En regional chef for 20 butikker kan f.eks. vælge at tildele opgavelisten **Forberedelser til juleferien** til alle 20 butikker.
 
@@ -45,7 +50,7 @@ Benyt følgende fremgangsmåde for at starte tildelingen af en opgaveliste.
 
 I følgende illustration vises et eksempel på, hvordan du finder og vælger butikker i dialogboksen **Start proces**.
 
-![Finde og vælge butikker i dialogboksen Start proces.](media/HQ-Assign-Tasks-Lists.png)
+![Finde og vælge butikker i dialogboksen Start proces](media/HQ-Assign-Tasks-Lists.png)
 
 ## <a name="assign-task-lists-on-a-recurring-basis"></a>Tildele tilbagevendende opgavelister
 
@@ -62,7 +67,7 @@ Detailhandleren har nogle gange tilbagevendende opgaver, f.eks. "Tjekliste til t
 
 I følgende illustration vises et eksempel på, hvordan du kan angive hyppighedskriterier i dialogboksen **Definer gentagelse**.
 
-![Angive frekvenskriterierne i dialogboksen Definer gentagelse.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Angive frekvenskriterierne i dialogboksen Definer gentagelse](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>Spor status for opgaveliste
 
@@ -87,6 +92,3 @@ Hvis du vil følge spore status for opgavelister for alle opgaver, som er tildel
 [Oprette opgavelister og tilføje opgaver](task-mgmt-create-lists.md)
 
 [Opgavestyring i POS](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

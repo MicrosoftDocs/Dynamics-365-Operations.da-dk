@@ -1,29 +1,33 @@
 ---
-title: Sende fakturaer til arbejdsgangsystemet og sammenholde produktkvitteringslinjer
+title: Sende fakturaer til arbejdsgangssystemet og afstemme produktkvitteringslinjer (prøveversion)
 description: Dette emne forklarer, hvordan kreditorfakturaer sendes til arbejdsgangssystemet, og bogførte produktkvitteringslinjer automatisk afstemmes med kreditorfakturaer.
 author: abruer
+manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd7ec9f4f30c444fd6442c9a2f1333fcaba4246520de3997f3bb9064a8ee16e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736963"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441402"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Sende fakturaer til arbejdsgangsystemet og sammenholde produktkvitteringslinjer
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a>Sende fakturaer til arbejdsgangssystemet og afstemme produktkvitteringslinjer (prøveversion)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne forklarer, hvordan kreditorfakturaer sendes til arbejdsgangssystemet, og bogførte produktkvitteringslinjer automatisk afstemmes med kreditorfakturaer.
 
@@ -39,19 +43,14 @@ Værdien **Sendt af** i arbejdsgangen er det bruger-id, der blev angivet for bag
 
 Som et led i en berøringsfri kreditorfaktureringsproces, kan systemet automatisk sammenholde bogførte produktkvitteringer med fakturalinjer. Der skal defineres en trevejs-sammenholdelsespolitik for denne opgave. Denne funktion er tilgængelig, hvis funktionen **Automatisering af kreditorfakturaer** er blevet aktiveret på siden **Funktionsstyring**.
 
-Denne matchningsproces vil køre, indtil det afstemte produktkvitteringsantal er lig med fakturaantallet. Men hvis der er flere produktkvitteringer for en enkelt fakturalinje, skal du køre processen flere gange for at opnå det fulde antalsmatch. Du kan angive det maksimale antal gange, systemet skal forsøge at afstemme produktkvitteringer med en fakturalinje, før det konkluderer, at processen er mislykket. Processen vil køre i baggrunden, enten hver time eller hver dag. 
-
-Du kan køre den automatiske sammenholdelsesproces som en del af processen til afsendelse af fakturaer til arbejdsgangssystemet. Du kan også køre den som en enkeltstående proces. Du kan konfigurere processen for afstemning af produktkvitteringer med fakturalinjer under fanen **Automatisering af kreditorfaktura** på siden **Kreditorparametre** (**Kreditor \> Konfiguration \> Kreditorparametre**).
+Denne proces vil køre, indtil det afstemte produktkvitteringsantal er lig med fakturaantallet. I denne proces kan du angive det maksimale antal gange, systemet skal forsøge at afstemme produktkvitteringer med en fakturalinje, før det konkluderer, at processen er mislykket. Processen vil køre i baggrunden, enten hver time eller hver dag. Du kan køre den automatiske sammenholdelsesproces som en del af processen til afsendelse af fakturaer til arbejdsgangssystemet. Du kan også køre den som en enkeltstående proces. Du kan konfigurere processen for afstemning af produktkvitteringer med fakturalinjer under fanen **Automatisering af kreditorfaktura** på siden **Kreditorparametre** (**Kreditor \> Konfiguration \> Kreditorparametre**).
 
 Fakturalinjer med en trevejs-sammenholdelsespolitik, hvor det tilsvarende kvitteringsantal er mindre end fakturaantallet, medtages i den automatiske afstem-med-produktkvittering-proces.
 
-Hvis du vil have vist den **Seneste match**-status for fakturaer, der ikke er en del af den automatiske afsendelse til arbejdsproces, skal du åbne fakturaen fra siden **Kreditorfakturaer**. Når du får vist fakturaen, opdateres de tilsvarende oplysninger om validering. Status for **Sidste match** kan opdateres automatisk ved hjælp af baggrundsopgaven **Valider sammenholdelse af fakturaer**. Du kan konfigurere processen til automatisk opdatering af status for **Sidste match** på fanen **Baggrundsprocesser** på siden **Procesautomatisering** (**Systemadminstration\> Opsætning\> Procesautomatiseringer**).
+Hvis du vil have vist den **Seneste match**-status for fakturaer, der ikke er en del af den automatiske afsendelse til arbejdsproces, skal du åbne fakturaen fra siden **Kreditorfakturaer**. Når du får vist fakturaen, opdateres de tilsvarende oplysninger om validering.
 
 En fakturalinje vil blive udelukket fra den automatiske behandling, hvis en eller flere af følgende betingelser er opfyldt:
 
 - Værdien for **Status for automatisk kvitteringsafstemning** på fakturalinjen er **Mislykket**.
 - Fakturaen er i brug.
 - Fakturaen er i arbejdsprocessystemet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

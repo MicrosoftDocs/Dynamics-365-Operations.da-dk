@@ -1,26 +1,29 @@
 ---
 title: Beregning af moms på finanskladdelinjer
 description: Dette emne forklarer, hvordan der beregnes moms for forskellige typer konti (kreditor, debitor, finans og projekt) på finanskladdelinjer.
-author: EricWangChen
-ms.date: 04/22/2021
+author: EricWang
+manager: Ann Beebe
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: wangchen
+ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 51d43c8e6d16201e1f8c392c13ead20287782dcc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488305"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441413"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Beregning af moms på finanskladdelinjer
 [!include [banner](../includes/banner.md)]
@@ -55,7 +58,7 @@ Ellers bruges momsretningen Indgående moms.
 
 I følgende diagram vises reglen grafisk.
 
-![Muligheder for momsretning for projektkonti.](media/Sales-Tax-Direction-Vendor.jpg)
+![Muligheder for momsretning for projektkonti](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Kontotype er Kreditor
 
@@ -73,7 +76,7 @@ Ellers bruges momsretningen Indgående moms.
 
 I følgende diagram vises reglen grafisk.
 
-![Muligheder for momsretning for kreditorkonti.](media/Sales-Tax-Direction-Vendor.jpg)
+![Muligheder for momsretning for kreditorkonti](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Kontotype er Debitor
 
@@ -89,7 +92,7 @@ Ellers bruges momsretningen Udgående moms.
 
 I følgende diagram vises reglen grafisk.
 
-![Muligheder for momsretning for debitorkonti.](media/Sales-Tax-Direction-Customer.jpg)
+![Muligheder for momsretning for debitorkonti](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Kontotype er Finans
 
@@ -99,11 +102,11 @@ I følgende illustration vises den regel, der gælder, når et bilag kun har kla
 
 • Hvis momskoden er momsfrit, er momsretningen Momsfrit køb.
 
-Ellers bruges momsretningen Indgående moms, hvis kladdebeløbet er debet (positivt). Hvis kladdebeløbet er kredit (negativt), er momsretningen Udgående moms.
+Ellers bruges momsretningen Indgående moms, hvis kladdebeløbet er debet (positiv). Hvis kladdebeløbet er kredit (negativt), er momsretningen Udgående moms.
 
 I følgende diagram vises reglen grafisk.
 
-![Muligheder for momsretning for finanskonti.](media/Sales-Tax-Direction-Ledger.jpg)
+![Muligheder for momsretning for finanskonti](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Tilsidesætte momsretningen
 
@@ -115,9 +118,9 @@ Gå til **Finans \> Kontoplan \> Konti \> Hovedkonti**, og vælg oversigtspanele
 
 I dette afsnit beskrives, hvordan momsbeløbs fortegn beregnes.
 
-![Siden Momstransaktioner.](media/sales-tax-amount-sign.jpg)
+![Siden Momstransaktioner](media/sales-tax-amount-sign.jpg)
 
-Følgende tabel indeholder den generelle regel til bestemmelse af momsretningen og fortegnet for momsbeløb i den midlertidige momstabel.
+Følgende tabel indeholder den generelle regel til bestemmelse af fortegn på momsbeløb i den midlertidige momstabel.
 
 | Kladdelinjebeløb | Momsretning  | Fortegn for momsbeløb |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +129,7 @@ Følgende tabel indeholder den generelle regel til bestemmelse af momsretningen 
 | Negativ            | Indgående moms | Negativ              |
 | Negativ            | Udgående moms    | Positiv              |
 
-Der findes en særlig regel for bilag, der kun indeholder **Projekt**- eller **Finans**-linjer, når der er valgt en momsgruppe eller varemomsgruppe på **Finans**-linjen. Denne regel styres af funktionen **Aktivér funktionen til uafhængig beregning af moms for finanskladder**. Når denne funktion er deaktiveret, bruger momsbeløbet i **Finans**-linjen debet- og kreditretningen for **Projekt**-linjen. Når denne funktion er aktiveret, bruger momsbeløbet i **Finans**-linjen egen debet- og kreditretning. I følgende tabeller vises reglen for de enkelte scenarier. 
+Der findes en særlig regel for bilag, der kun indeholder **Projekt**- eller **Finans**-linjer, når der er valgt en momsgruppe eller varemomsgruppe på **Finans**-linjen. Denne regel styres ved at aktivere den uafhængige momsberegningsfunktion for finanskladder. Når denne funktion er deaktiveret, bruger momsbeløbet i **Finans**-linjen debet- og kreditretningen for **Projekt**-linjen. Når denne funktion er aktiveret, bruger momsbeløbet i **Finans**-linjen egen debet- og kreditretning. I følgende tabeller vises reglen for de enkelte scenarier. 
 
 **Regel, når funktionen er slåer til**
 
@@ -154,6 +157,3 @@ I følgende tabel vises den generiske regel.
 | Indgående moms | Negativ              | Indgående momskonto | Negativ (kredit)  |
 | Udgående moms    | Positiv              | Udgående momskonto    | Negativ (kredit)  |
 | Udgående moms    | Negativ              | Udgående momskonto    | Positiv (debet)  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,29 @@
 title: Styring af skift og pengeskuffe
 description: I dette emne forklares, hvordan du opretter og bruger skift i Commerce-POS.
 author: jblucher
+manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2ac42c92d38299c20bfcb293ac062aa9e4b1c628
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 32b7be42509a2c857f1357eb64a6b488f9cd2269
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779738"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411154"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Styring af skift og pengeskuffe
 
@@ -84,7 +87,7 @@ Denne handling er ofte den første handling, der udføres i et skift, der netop 
 
 ### <a name="tender-removal"></a>Fjernelse af betalingsmiddel
 
-*Fjernelse af betalingsmidler* er ikke-salgstransaktioner, der udføres i et aktivt skift for at reducere mængden af kontanter i pengeskuffen. Denne handling bruges oftest sammen med en handling med flydende tilgang på et andet skift. Hvis kasseapparat 1 f.eks. mangler byttepenge, så fortager brugeren på kasseapparat 2 en fjernelse af betalingsmiddel for at reducere beløbet i sin pengeskuffe. Brugeren på kasseapparatet 1 foretager derefter en flydende tilgang for at øge beløbet i sin pengeskuffe.
+*Fjernelse af betalingsmidler* er ikke-salgstransaktioner, der udføres i et aktivt skift for at reducere mængden af kontanter i pengeskuffen. Denne handling bruges oftest sammen med en handling med flydende tilgang på et andet skift. Hvis kasseapparat 1 f.eks. mangler byttepenge, så fortager brugeren på kasseapparat 2 en fjernelse af betalingsmiddel for at reducere beløbet i vedkommendes pengeskuffe. Brugeren på kasseapparatet 1 foretager derefter en flydende tilgang for at øge beløbet i vedkommendes pengeskuffe.
 
 ### <a name="suspend-shift"></a>Afbryd skifte
 
@@ -154,7 +157,4 @@ Gå til **Retail og Commerce \> Kanaler \> Butikker \> Alle butikker \> Opgørel
 
 Denne opsætning hjælper med til at sikre, at back office-opgørelser medtager de samme posteringer som skift på POS-enehden, og at dataene opsummeres efter dette skift.
 
-Yderligere oplysninger om opgørelse og lukkemetoder finder du i [Gemme konfigurationer for detailopgørelser](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Yderligere oplysninger om opgørelse og lukkemetoder finder du i [Gemme konfigurationer for detailopgørelser](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).

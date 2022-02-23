@@ -1,34 +1,33 @@
 ---
 title: Udligningsoversigt
 description: Dette emne indeholder generelle oplysninger om udligningsprocessen. Det beskriver, hvilke posteringstyper der kan udlignes, samt timingen og processen for at udligne dem. Det beskriver også resultaterne af udligningsprocessen.
-author: panolte
-ms.date: 07/30/2021
-ms.topic: overview
+author: kweekley
+manager: AnnBe
+ms.date: 04/10/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "14551"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 57f2b209a852bb9513218fab3df118c7d7a2a1e7
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 650b0ef0123cf9acf42c2e7460693b555897744f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986377"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441547"
 ---
 # <a name="settlement-overview"></a>Udligningsoversigt
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Dette emne indeholder generelle oplysninger om udligningsprocessen. Det beskriver, hvilke posteringstyper der kan udlignes, samt timingen og processen for at udligne dem. Det beskriver også resultaterne af udligningsprocessen.
 
@@ -76,25 +75,6 @@ Udligninger kan også generere posteringer. Udligning af en faktura og betaling 
 
 Når du forsøger at udligne en postering, kan du bemærke et symbol, der angiver, at posteringen er markeret et andet sted. I dette tilfælde kan du vælge posteringen på siden **Udlign posteringer** og derefter vælge **Forespørgsel \> Udligning** i udligningsvinduet. Visningen for denne forespørgsel viser kladder, salgsordrer, fakturaer, betalingsforslag og debitorlokationer, der muligvis blokerer posteringen i at blive udlignet. Hvis du vil løse dette problem, kan du vælge linket for at gå direkte fra forespørgslen til den blokerede lokation. Du kan derefter opdatere dokumentet med de justeringer, der er nødvendige for at udligne den. Du kan også bruge indikatoren **Markeret** til at identificere andre dokumenter, der er inkluderet på samme blokeringslokation.
 
-## <a name="resolve-issues-with-transactions-that-cant-be-settled"></a>Løse fejl med posteringer, der ikke kan udlignes
-
-Af og til kan du ikke udligne posteringer, fordi en anden aktivitet er ved at behandle dokumentet. Hvis du forsøger at udligne posteringerne, opstår der en fejl, da disse posteringer bruges. Du kan løse denne fejl ved at bruge siden **Markerede posteringsdetaljer** til at søge efter posteringer, der er markeret til udligning, og identificere andre processer, der åbner dem.
-
-Posteringerne markeres til udligning, enten når kreditorfakturaer betales, eller når debitorer betaler deres åbne fakturaer. Af og til er disse fakturaer allerede markeret til udligning. Brugerne kan derfor ikke vælge dem til betaling. Fakturaerne kan være markeret af en anden debitorbetalingskladde, salgsordre, kreditorbetalingskladde eller indkøbsordre i den aktuelle juridiske enhed eller en anden juridisk enhed.
-
-Hvis en postering er spærret for udligning, når du angiver en debitorbetaling, skal du åbne siden **Debitors markerede posteringsdetaljer** (**Debitor \> Periodiske opgaver \> Debitors markerede posteringsdetaljer**). Hvis du hurtigt vil identificere, hvor en postering er spærret, kan du angive følgende valgparametre: **Debitorkonto**, **Bilag**, **Dato** eller **Faktura**. Hvis du ikke angiver valgparametre, viser systemet alle blokerede dokumenter fra det aktuelle firma eller et andet firma, du vælger. Når den postering, der er spærret for udligning, er identificeret, kan du markere den og derefter vælge **Fjern markering af valgte posteringer**. Den valgte postering fjernes derefter fra de kladder, der indeholder den. Dokumentet fjernes dog ikke fra den anden placering. Det er kun oplysninger om afmærkning, der fjernes fra kladden.
-
-Hvis en postering er spærret for udligning, når du angiver en kreditorbetaling, skal du åbne siden **Kreditors markerede posteringsdetaljer** (**Kreditor \> Periodiske opgaver \> Kreditors markerede posteringsdetaljer**). Hvis du hurtigt vil identificere, hvor en postering er spærret, kan du angive følgende valgparametre: **Kreditorkonto**, **Bilag**, **Dato** eller **Faktura**. Hvis du ikke angiver valgparametre, viser systemet alle blokerede dokumenter fra det aktuelle firma eller et andet firma, du vælger. Når posteringen er identificeret, kan du markere den og derefter vælge **Fjern markering af valgte posteringer** for at håndteringen blokeringen. Den valgte postering fjernes derefter fra alle andre kladder, hvor den er valgt. Dokumentet fjernes dog ikke fra den anden placering. Det er kun oplysninger om afmærkning, der fjernes fra kladden.
-
-Hvis du vil identificere alle spærrede dokumenter, skal du åbne siden **Alle markerede posteringsdetaljer** (**Debitor \> Periodiske opgaver \> Alle markerede posteringsdetaljer** eller **Debitor \> Periodiske opgaver \> Alle markerede posteringsdetaljer**). Hvis du hurtigt vil identificere, hvor en postering er spærret, kan du angive følgende valgparametre: **Debitorkonto**, **Kreditorkonto**, **Bilag**, **Dato** eller **Faktura**. Hvis du ikke angiver valgparametre, viser systemet alle blokerede dokumenter fra det aktuelle firma eller et andet firma, du vælger. Når posteringen er identificeret, kan du markere den og derefter vælge **Fjern markering af valgte posteringer** for at håndteringen blokeringen. Den valgte postering fjernes derefter fra alle andre kladder, hvor den er valgt. Dokumentet fjernes dog ikke fra den anden placering. Det er kun oplysninger om afmærkning, der fjernes fra kladden.
-
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
-
-- **Modul:** Kontant- og bankstyring
-- **Funktionsnavn:** Formularen Markerede posteringsdetaljer
-
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Udlign rest](settle-remainder.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

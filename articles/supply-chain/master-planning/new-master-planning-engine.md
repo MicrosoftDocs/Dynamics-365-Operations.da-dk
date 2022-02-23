@@ -2,13 +2,16 @@
 title: Migrering til planlægningsoptimering for varedisponering
 description: Dette emne giver oplysninger om det nye varedisponeringsprogram, Planlægningsoptimering, og om migrering fra det eksisterende program.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728573"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645990"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrering til planlægningsoptimering for varedisponering
 
@@ -63,12 +66,8 @@ I øjeblikket er undtagelser fra migrering til Planlægningsoptimering kun relev
 
 Når de påkrævede funktioner bliver tilgængelige, vil Microsoft give en frist, indtil undtagelsen udløber. Miljøadministratoren vil blive informeret, når de påkrævede funktioner er blevet tilgængelige, og fristen er påbegyndt.
 
-Følgende rutediagram opsummerer oplysningerne i dette emne, så du hurtigt kan finde ud af, om du skal anmode om en undtagelse. Hvis du har brug for at anmode om en undtagelse, skal du udfylde og sende [spørgeskemaet til migrering og undtagelse for planlægningsoptimering](https://go.microsoft.com/fwlink/?linkid=2144962).
-
-![Undtagelsesrutediagram.](media/exception-diagram.png "Undtagelsesrutediagram")
-
 > [!NOTE]
-> Du kan kun anmode om en undtagelse for lejere, der i øjeblikket omfatter eller vil omfatte et produktionsmiljø, ikke for lejere kun med sandkassemiljøer. Hvis du har brug for at deaktivere undtagelsesfejlen i Planlægningsoptimering i et sandkassemiljø på en infrastruktur som en service (IaaS), skal du køre den SQL-forespørgsel, der er indeholdt i [Sandkassemiljøer](#faq-sandbox).
+> Du kan kun anmode om en undtagelse for produktionsmiljøer, ikke for sandkassemiljøer. Hvis du har brug for at deaktivere undtagelsesfejlen i Planlægningsoptimering i et sandkassemiljø på en infrastruktur som en service (IaaS), skal du køre den SQL-forespørgsel, der er indeholdt i [Sandkassemiljøer](#faq-sandbox).
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -117,6 +116,3 @@ Jeg bruger version 10.0.16 eller nyere, og jeg får vist følgende fejlmeddelels
 > Udfyld følgende spørgeskema for at komme i gang, og hvis det er relevant, skal du anmode om undtagelse fra migrering til Planlægningsoptimering.
 
 **Svar:** Nej, varedisponering er ikke blokeret. Din varedisponeringskørsel blev fuldført korrekt, og du kan bruge resultatet på normal vis. Men hvis du vil undgå at modtage denne fejlmeddelelse under fremtidige varedisponeringskørsler, skal du enten migrere til Planlægningsoptimering med det samme eller anmode om en undtagelse ved hjælp af linket i fejlmeddelelsen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

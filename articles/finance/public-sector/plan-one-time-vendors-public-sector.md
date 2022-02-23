@@ -1,33 +1,36 @@
 ---
 title: Planlægning af engangsleverandører i den offentlige sektor
-description: Dette emne beskriver, hvordan organisationer i den offentlige sektor kan forberede import og oprettelse af flere engangskreditorer og fakturaer.
-author: v-kiarnd
+description: Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 27251
 ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 799cc888d73662980706062ac54bcbb9ce1caa3b
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 7622293340139c7f18354ecdc4b733edb602a2ce
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817692"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407690"
 ---
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer. 
+Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer. 
 
 Hvis du planlægger at masseimportere leverandør- og importoplysninger, skal du typisk først oprette en datafil i regnearksformat og gemme den i CSV-format (kommaseparerede værdier).
 
@@ -88,7 +91,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 |------------------------------------------------------|------------------------------------------|
 | Tal                                               | Regnskabsfordelingslinjenummer      |
 | Økonomiske dimensioner                                 | Hvis den importerede fil har økonomiske dimensioner, skal du medtage alle økonomiske dimensioner med den rette navngivning, ellers vises der en fejlmeddelelse, som angiver, at finansdimensionen er ugyldig. Derefter skal du rette de økonomiske dimensioner eller fjerne kolonnerne fra filen.                                         |
-| Procent                                              | Decimalværdier er tilladt.              |
+| Procent                                              | Decimalværdier er tilladt.              |
 
 
 
@@ -96,7 +99,8 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 ## <a name="what-do-i-do-next"></a>Hvad skal jeg gøre nu?
 Når du har konfigureret de forudsætninger, skal du læse [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md).
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md)
 
@@ -104,6 +108,3 @@ Når du har konfigureret de forudsætninger, skal du læse [Engangsleverandører
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

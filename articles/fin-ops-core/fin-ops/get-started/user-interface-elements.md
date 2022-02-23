@@ -2,9 +2,11 @@
 title: Brugergrænsefladeelementer
 description: I dette emne beskrives brugergrænsefladeelementerne i appen.
 author: tlefor
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,17 +14,14 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069317"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797926"
 ---
 # <a name="user-interface-elements"></a>Brugergrænsefladeelementer
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne beskrives de brugergrænsefladeelementer, der benyttes i appen. Før brugerne kan navigere i grænsefladen, er det vigtigt at kende navnene og funktionerne for de elementer, der udgør grænsefladen.
 
@@ -78,7 +77,7 @@ Følgende billede viser eksempler på disse typer beskeder.
 
 - **Meddelelsesboks** - Boksen vises oven over grænsefladen, og du skal interagere med den, før du kan fortsætte med at bruge produktet.  
 
-![Følgende billede viser et eksempel på et meddelelsesfelt.](media/user-interface-07.png)
+![Følgende billede viser et eksempel på en meddelelsesboks.](media/user-interface-07.png)
 
 ## <a name="toolbars-grids-and-lists"></a>Værktøjslinjer, gitre og lister
 
@@ -87,6 +86,3 @@ En *værktøjslinje* indeholder værktøjer, du kan bruge til f.eks. at tilføje
 En *liste* er den betegnelse, der bruges om en samling poster, som du kan rulle gennem. Du kan placere disse poster på siden ved at markere dem. Ofte vil dette åbne et gitter.
 
 ![Følgende billede viser eksempler på værktøjslinjer, gitre og lister.](media/user-interface-08.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

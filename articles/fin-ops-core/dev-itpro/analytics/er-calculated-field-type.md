@@ -2,9 +2,11 @@
 title: Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
 description: Dette emne indeholder oplysninger om, hvordan du bruger typen Beregnet felt til ER-datakilder.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fbe06f2f4f0b9e738f27e87ae3ed5d10998ce949b854d088520837cef3ed9a9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f21b323ddbf653bf8ca8dd1f879a6bdbddcdefc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740353"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681250"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
 
@@ -86,7 +88,7 @@ I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware I
 
     Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for ethvert af de ER-formater, der er oprettet for denne model, og udføres i Finance and Operations. Derfor vises indholdet af **Moms**- og **Gr**-datakilderne for ER-formater, f. eks. abstrakte datakilder.
 
-    ![Siden Modeltilknytningsdesigner, der viser moms- og gr-datakilder.](media/er-calculated-field-type-01.png)
+    ![Siden Modeltilknytningsdesigner, der viser moms- og gr-datakilder](media/er-calculated-field-type-01.png)
 
 5.  Luk siden **Modeltilknytningsdesigner**.
 6.  Luk siden **Modeltilknytning**.
@@ -101,7 +103,7 @@ I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware I
     - Præsenter følgende beskatningsniveauer i momsangivelsen: normal, reduceret og ingen.
     - Vis flere detaljer på hvert beskatningsniveau med forskellige antal detaljer inden for hvert niveau.
 
-    ![Siden Formatdesigner.](media/er-calculated-field-type-02.png)
+    ![Siden Formatdesigner](media/er-calculated-field-type-02.png)
 
 4. Vælg **Tilknytning**.
 5. Udvid elementerne **Model**, **Data** og **Resume**. 
@@ -115,7 +117,7 @@ I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware I
    
     **Model**.**Data2.Summary2**-datakilden er konfigureret til at gruppere **Model.Data.Summary**-datakildens transaktionsoplysninger efter beskatningsniveau (returneret af det beregnede felt **Model.Data.Summary.Level**) og beregne aggregeringerne.
 
-    ![Siden Formatdesigner, der viser detaljer om Model.Data2.Summary2-datakilden.](media/er-calculated-field-type-04.png)
+    ![Siden Formatdesigner, der viser detaljer om Model.Data2.Summary2-datakilden](media/er-calculated-field-type-04.png)
 
 8. Gennemse de beregnede felter **Model**.**Data2.Level1**, **Model**.**Data2.Level2** og **Model**.**Data2.Level3.** Disse beregnede felter bruges til at filtrere **Model**.**Data2. Summary2**-postlisten og kun returnere poster, der repræsenterer et bestemt beskatningsniveau.
 9. Luk siden **Formatdesigner**.
@@ -155,7 +157,7 @@ Du kan forbedre det angivne format ved at tilføje et beregnet felt til at filtr
 
     Det maksimale antal parametre, der kan angives for et enkelt beregnet felt, er 8.
 
-    ![Datakildeliste for parameter.](media/er-calculated-field-type-05.png)
+    ![Datakildeliste for parameter](media/er-calculated-field-type-05.png)
 
 5. Vælg **OK**.
 
@@ -165,7 +167,7 @@ Hvis du tilføjer denne parameter, angiver du den betingelse, der skal være ang
 
    Den konfigurerede parameter er tilgængelig på listen over datakilder for dette beregnede felt. Du kan føje parameteren til det konfigurerede udtryk ved at vælge **Tilføj datakilde**.
 
-   ![Datakildefelter.](media/er-calculated-field-type-06.png)
+   ![Datakildefelter](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definer et udtryk for tilføjelse af et beregnet felt
 
@@ -181,7 +183,7 @@ Hvis du tilføjer denne parameter, angiver du den betingelse, der skal være ang
 
 5. Vælg **Gem**.
 
-    ![Oplysninger om datakildefelt.](media/er-calculated-field-type-07.png)
+    ![Oplysninger om datakildefelt](media/er-calculated-field-type-07.png)
 
 6. Luk siden **Formeldesigner**.
 
@@ -191,9 +193,9 @@ Hvis du tilføjer denne parameter, angiver du den betingelse, der skal være ang
 
 På siden **Formatdesigner** kræver det konfigurerede beregnede felt med parametre **Niveauer** et **Streng**-argument.
 
-![Udvidet liste over beregnede feltniveauer.](media/er-calculated-field-type-08.png)
+![Udvidet liste over beregnede feltniveauer](media/er-calculated-field-type-08.png)
 
-### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Brug det konfigurerede beregnede felt til bindingsformatelementer
+### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Brug det konfigurerede beregnede felt til bindingsformatelementer
 
 1. Vælg **Model.Data2.Levels** for at vælge det konfigurerede beregnede felt.
 2. Vælg formatelementet **Statement.Taxation.Regular**.
@@ -214,13 +216,13 @@ På siden **Formatdesigner** kræver det konfigurerede beregnede felt med parame
 9. Vælg **Bind**.
 10. Vælg **Ja** for at bekræfte erstatningen af den aktuelt anvendte datakilde, **Level3** med den nye datakilde **Niveauer** i alle indlejrede formatelementer under det valgte formatelement.
 
-   Når du angiver argumentet for det beregnede felt med parametre for det XML-element, der repræsenterer beskatningsniveau (f.eks. **Model.Data2.Levels(&quot;Reduced")** som en tekstværdi), behøver du ikke gøre det samme for indlejrede XML-attributter – deres bindinger overtager automatisk værdien af det argument, der er defineret på det overordnede niveau (**Model.Data2.Levels.aggregated.Base**, ikke **Model.Data2.Levels("Reduced").aggregated.Base**).
+   Når du angiver argumentet for det beregnede felt med parametre for det XML-element, der repræsenterer beskatningsniveau (f.eks. **Model.Data2.Levels("Reduced")** som en tekstværdi), behøver du ikke gøre det samme for indlejrede XML-attributter – deres bindinger overtager automatisk værdien af det argument, der er defineret på det overordnede niveau (**Model.Data2.Levels.aggregated.Base**, ikke **Model.Data2.Levels("Reduced").aggregated.Base**).
 
 Tilbagevendende kald af beregnet felt med parametre understøttes ikke.
 
 Du kan vælge **Rediger formel** og ændre det anvendte argument, der er angivet som standard, i det beregnede felt med parametre i den valgte binding. Hvis dette argument mangler, kan det medføre fejl på procestiden – brugerne får besked om denne situation, når det aktuelle format er valideret.
 
-![Meddelelse om valideringsadvarsel.](media/er-calculated-field-type-10.png)
+![Meddelelse om valideringsadvarsel](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Konfigurer et beregnet felt med parametre til at returnere en post
 Når et beregnet felt med parametre returnerer en post, skal du understøtte binding af individuelle felter i denne post for at formatere elementer. I sådanne tilfælde vil der ikke være nogen overordnet binding, der indeholder værdien af et argument til kald af et beregnet felt med parametre – denne værdi skal defineres i bindingen for en enkelt posts felt.
@@ -272,7 +274,7 @@ Når et beregnet felt med parametre returnerer en post, skal du understøtte bin
 8. Vælg **Rediger formel**.
 9. Skift udtrykket til **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Opdateret udtryk.](media/er-calculated-field-type-11.png)
+![Opdateret udtryk](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Fjerne beregnede felter, der ikke bruges
 
@@ -340,6 +342,3 @@ Du kan importere evaluerede konfigurationer fra RCS ved hjælp af ER-lageret af 
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
 - [Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder](er-calculated-field-ds-performance.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

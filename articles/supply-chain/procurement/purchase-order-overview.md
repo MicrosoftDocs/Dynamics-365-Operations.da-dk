@@ -1,28 +1,28 @@
 ---
 title: Oversigt over indkøbsordrer
 description: Denne artikel indeholder generelle oplysninger om indkøbsordrer (IO'er) og links til andre artikler, der er relateret til de forskellige stadier, som en indkøbsordre gennemgår.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "93083"
-- intro-internal
+ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2e01f73aa78c0fabf0f5a1e0acd3bbc4f69cfc4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: fef4eaa9563647b8878e0d0fb0bc185fdc4ed319
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982298"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022225"
 ---
 # <a name="purchase-order-overview"></a>Oversigt over indkøbsordrer
 
@@ -43,7 +43,7 @@ Følgende artikler indeholder en oversigt over de forskellige faser, som en IO g
 -   [Oprette indkøbsordrer](purchase-order-creation.md)
 -   [Godkende og bekræfte indkøbsordrer](purchase-order-approval-confirmation.md)
 -   [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
--   [Oversigt over kreditorfakturaer](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Oversigt over kreditorfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Indkøbsordretyper
 Der er tre typer IO'er. Når du opretter en IO, skal du angive typen. Du kan oprette en standardordretype for nye ordrer på siden **Indkøbs- og forsyningsparametre**.
@@ -78,7 +78,8 @@ Feltet **Godkendelsesstatus** bruges, når en IO gennemgår en gennemsynsproces 
 -   **Bekræftet** – Denne status tildeles, når ordren er blevet bekræftet. Denne status er typisk den sidste godkendelsesstatus, der tildeles til en ordre.
 
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Oprette indkøbsordrer](purchase-order-creation.md)
 
@@ -86,10 +87,7 @@ Feltet **Godkendelsesstatus** bruges, når en IO gennemgår en gennemsynsproces 
 
 [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
 
-[Oversigt over kreditorfakturaer](../../finance/accounts-payable/vendor-invoices-overview.md)
+[Oversigt over kreditorfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

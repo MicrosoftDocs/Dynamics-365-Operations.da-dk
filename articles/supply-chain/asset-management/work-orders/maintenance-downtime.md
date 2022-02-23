@@ -1,10 +1,12 @@
 ---
 title: Vedligeholdelsesnedetid for arbejdsordrer
 description: Dette emne beskriver, hvordan du kan oprette registreringer af vedligeholdelsesnedetid for det aktiv, der er valgt på en arbejdsordre.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753366"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020905"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Vedligeholdelsesnedetid for arbejdsordrer
 
@@ -45,7 +47,7 @@ Du kan oprette registreringer af vedligeholdelsesnedetid for det aktiv, der er v
 
 I følgende illustration vises et eksempel på siden **Årsagskoder til vedligeholdelsesnedetid**.
 
-![Figur 1.](media/15-work-orders.png)
+![Figur 1](media/15-work-orders.png)
 
 Når du har oprettet de årsagskoder til vedligeholdelsesnedetid, du vil bruge, kan du oprette registreringer af vedligeholdelsesnedetid for arbejdsordrer og aktiver.
 
@@ -71,21 +73,18 @@ Når du har oprettet de årsagskoder til vedligeholdelsesnedetid, du vil bruge, 
 
 Følgende illustration viser et eksempel på en registrering af vedligeholdelsesnedetid.
 
-![Figur 2.](media/16-work-orders.png)
+![Figur 2](media/16-work-orders.png)
 
 Den kalender, der bruges til beregning af registreret vedligeholdelsesnedetid, afhænger af dit valg i opsætningen af aktiver og parametre. Hvis en ressource er valgt på et aktiv i feltet **Ressource** i oversigtspanelet **Anlægsaktiv** på siden **Alle aktiver**, bruges den kalender, der er konfigureret for den tilknyttede ressourcegruppe, som vist i følgende illustration.
 
-![Figur 3.](media/17-work-orders.png)
+![Figur 3](media/17-work-orders.png)
 
 Hvis der ikke er valgt en ressource på aktivet, bruges den standardkalender, der er valgt på siden **Parametre til aktivstyring**, som vist i følgende illustration.
 
-![Figur 4.](media/18-work-orders.png)
+![Figur 4](media/18-work-orders.png)
 
 Klik på **Styring af aktiver** > **Forespørgsler** > **Vedligeholdelsesnedetid** for at se en oversigt over alle registreringer af vedligeholdelsesnedetid.
 
 >[!NOTE]
 >Alle de kalendere, der bruges i modulet **Styring af aktiver**, konfigureres i **Virksomhedsadministration** > **Opsætning** > **Kalendere** > **Kalendere**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

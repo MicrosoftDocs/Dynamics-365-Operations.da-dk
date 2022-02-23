@@ -1,10 +1,12 @@
 ---
 title: Redigere formater for at generere dokumenter, der har programdata
-description: I dette emne forklares det, hvordan du designer konfigurationer af rapportering for at generere et elektronisk dokument og opdatere programdata.
+description: For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Generere dokumenter med opdatering til programdata (Del 3 - Redigere model og tilknytning)".
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 312a49fc524cc7359d2c1815597214656df11c018034da384d30bfb9d9efee4b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752405"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684541"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Redigere formater for at generere dokumenter, der har programdata
 
@@ -147,6 +149,3 @@ I denne procedure forklares det, hvordan du designer elektroniske rapportering (
 46. Luk siden.
 47. Luk siden.
 48. Luk siden.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

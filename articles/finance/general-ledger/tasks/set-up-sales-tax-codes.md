@@ -2,23 +2,26 @@
 title: Konfigurere momskoder
 description: Dette emne beskriver, hvordan du konfigurerer koder for moms i Dynamics 365 Finance.
 author: twheeloc
-ms.date: 09/27/2021
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2539d701dda4ef5e1484d095b2d86d1f68a0dc98
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 3dad006b486f7cd6714c713a3bd83a95fdf0d2b5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562096"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441466"
 ---
 # <a name="set-up-sales-tax-codes"></a>Konfigurere momskoder
 
@@ -38,19 +41,8 @@ Denne opgave bruger demofirmaet USMF.
 8. I **Handlingsruden** øverst på grænsefladen skal du vælge **Momskode**.
 9. Vælg **Værdier**.
 10. Angiv værdien for denne momskode i kolonnen **værdi**.
-
-    Værdien i oversigtspanelet **Beregning** i feltet **Oprindelig** bliver ganget med antallet på transaktionen, der skal beregnes momsbeløbet, hvis **beløb pr. enhed** er markeret.  Hvis momskoden ikke er en enhed baseret skat, er værdien en procentdel, der er anvendt på oprindelsen for denne momskode til beregning af sales tax-beløbet.     
-
+    - Hvis beløb pr. enhed er markeret, bliver værdien i oversigtspanelet **Beregning** i feltet Grundlag ganget med antallet på transaktionen, der skal beregnes momsbeløbet.  Hvis momskoden ikke er en enhed baseret skat, er værdien en procentdel, der er anvendt på oprindelsen for denne momskode til beregning af sales tax-beløbet.     
 11. Vælg **Gem**.
 12. Luk siden.
 13. Vælg **Gem**.
 
-Fra og med Microsoft Dynamics 365 Finance version 10.0.22, hvis du bruger [Momsservice](../../localizations/global-tax-calcuation-service-overview.md), og funktionen [**Understøttelse af flere momsregistreringsnumre**](../../localizations/emea-multiple-vat-registration-numbers.md) er aktivere i arbejdsområdet **Funktionsområdet**, kan du bruge **Momstype**-feltet til at angive momskodetype. Følgende værdier er tilgængelige:
-
-- Standardmoms
-- Reduceret moms
-- MOMS 0 %
-- Afgifter
-- Andet
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

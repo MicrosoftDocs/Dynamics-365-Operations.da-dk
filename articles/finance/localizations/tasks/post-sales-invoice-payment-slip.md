@@ -2,9 +2,11 @@
 title: Bogføre en salgsfaktura med et indbetalingskort
 description: Denne procedure fører dig gennem bogføring af en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a4de5f24b736ac6a38efa2a89a29bc86b37a6f14e9ed400b829f1696f279762
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ed31b489ddc3919fbf492f27506a09c7741556c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766918"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968286"
 ---
 # <a name="post-a-sales-invoice-with-a-payment-slip"></a>Bogføre en salgsfaktura med et indbetalingskort
 
@@ -51,6 +53,3 @@ Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF. Denne funktion
     * Sørg for, at den tilknyttede betaling, der er knyttet til debitorfakturaen, er indstillet til FIK 751 eller FIK 752.  
 17. Klik på Ja.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

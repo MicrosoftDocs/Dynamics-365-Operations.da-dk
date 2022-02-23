@@ -1,30 +1,33 @@
 ---
 title: Oprette og anskaffe aktiver fra Kreditor
-description: Denne procedure gennemgår oprettelse og anskaffelse af et anlægsaktiv med indkøbsprocessen.
+description: Denne opgaveguide fører gennem oprettelse og anskaffelse af et anlægsaktiv med indkøbsprocessen.
 author: saraschi2
+manager: AnnBe
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbac069362a15b5ab1d2dbf88a732a14a3cf709d
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 7cb9a37c65fb8eab4db6084b91a71c13a45ba42c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394652"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441591"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Oprette og anskaffe aktiver fra Kreditor
 
 [!include [banner](../../includes/banner.md)]
 
-Denne procedure gennemgår oprettelse og anskaffelse af et anlægsaktiv med indkøbsprocessen.  Den bruger bogholder- og kreditorassistenter og demofirmaet USMF.
+Denne opgaveguide fører gennem oprettelse og anskaffelse af et anlægsaktiv med indkøbsprocessen.  Den bruger bogholder- og kreditorassistenter og demofirmaet USMF.
 
 
 ## <a name="set-fixed-assets-parameters"></a>Konfigurere parametre for anlægsaktiver
@@ -53,6 +56,3 @@ Denne procedure gennemgår oprettelse og anskaffelse af et anlægsaktiv med indk
 17. Klik op linket i den valgte række på listen.
 18. Klik på **Bogfør**. Anlægsaktivet oprettes og anskaffes, når fakturaen bogføres.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

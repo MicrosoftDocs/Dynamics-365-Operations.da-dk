@@ -2,23 +2,26 @@
 title: Korrigerende fakturering
 description: En kreditnota er et dokument, der reducerer eller eliminerer det beløb, som køberen skal at betale.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/15/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 1174003
 ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0aa893c7c3435ac08e66888e2bab92d2eb24de72ab43a5964d3a575f53ecc7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a7bdf90fb35380cde6c7ab2c7920ffd29196efdf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712146"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407697"
 ---
 # <a name="corrective-invoicing"></a>Korrigerende fakturering
 
@@ -33,6 +36,3 @@ En kreditnota indeholder en liste over produkterne, antal og aftalte priser for 
 
 -   Kreditnotaen viser "Kreditnota" som dokumentnavn i stedet for at vise "Faktura".
 -   Kreditnotaen indeholder felterne **Hovedfakturanr.** og **Årsag til rettelsen**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

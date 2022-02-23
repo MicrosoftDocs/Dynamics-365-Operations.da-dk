@@ -2,24 +2,27 @@
 title: Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-evalueringsmiljø
 description: I dette emne beskrives det, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 author: psimolin
+manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728285"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410975"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-evalueringsmiljø
 
@@ -131,13 +134,13 @@ Når e-mail er gengivet, vil disse tokens blive erstattet af de faktiske værdie
 
 Følgende tokens gælder for den overordnede salgsordre.
 
-| Navn på token | Token |
+| Navn på token | Tokenet |
 |-------------------|-------|
 | Ordrenummer      | %salesid% |
-| Kundes navn   | %customername% |
+| Debitors navn   | %customername% |
 | Leveringsadresse  | %deliveryaddress% |
 | Faktureringsadresse   | %customeraddress% |
-| Ordredato        | %shipdate% |
+| Bestillingsdato        | %shipdate% |
 | Leveringstilstand     | %modeofdelivery% |
 | Diskontering          | %discount% |
 | Moms         | %tax% |
@@ -155,9 +158,9 @@ For hvert produkt i ordren erstattes følgende tokens med værdier.
 | Produktliste - start   | \<!--%tablebegin.salesline% --\> |
 | Produktliste - slut     | \<!--%tableend.salesline%--\> |
 | Produktnavn           | %lineproductname% |
-| Betegnelse            | %lineproductdescription% |
-| Kvantitet               | %linequantity% |
-| Linjeprisenhed        | %lineprice% (bekræft) |
+| Beskrivende tekst            | %lineproductdescription% |
+| Mængde               | %linequantity% |
+| Linjeprisenhed        | %lineprice% (verify) |
 | linjevaretotal        | %linenetamount% |
 | linjerabat          | %linediscount% |
 | Afsendelsesdato              | %lineshipdate% |
@@ -177,13 +180,10 @@ For hvert produkt i ordren erstattes følgende tokens med værdier.
 
 [Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-websted](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

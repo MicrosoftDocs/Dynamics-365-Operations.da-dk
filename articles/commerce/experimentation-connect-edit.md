@@ -2,12 +2,15 @@
 title: Tilslutte et eksperiment og redigere variationer
 description: Dette emne indeholder en beskrivelse af, hvordan du kan oprette forbindelse fra et eksperiment i en tredjepartstjeneste til Dynamics 365 Commerce, og hvordan du redigerer variationer til eksperimentet.
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d3b1a099e29073e82e2118f9e43441a9068a4d10f0ea9f79123b97d2b7d5c419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773027"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4411220"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Tilslutte et eksperiment og redigere variationer
 
@@ -28,7 +31,7 @@ Dette emne beskriver, hvordan du kan tilslutte dit eksperiment i Commerce og for
 
 I følgende diagram vises alle de trin, der er nødvendige for at konfigurere og køre et eksperiment på et e-handelswebsted i Dynamics 365 Commerce. Yderligere trin behandles i separate emner.
 
-[ ![Eksperimenteringens brugerrejse - tilslutte og redigere.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![Eksperimenteringens brugerrejse - tilslutte og redigere](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 Når du har [konfigureret dit eksperiment](experimentation-setup.md) i en tredjepartstjeneste, skal du tilslutte eksperimentet i Dynamics 365 Commerce og redigere eksperimentets variationer.
 
@@ -92,6 +95,3 @@ Hvis du har defineret eksperimentets omfang som **helt** i guiden **Tilslut eksp
 
 ## <a name="next-step"></a>Næste trin
 [Gennemse og publicere et eksperiment](experimentation-preview-publish.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

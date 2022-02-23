@@ -2,29 +2,36 @@
 title: Produktsamlingsmoduler
 description: Dette emne indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 01/28/2021
-ms.topic: overview
+manager: annbe
+ms.date: 09/15/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984538"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410951"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversigt
 
 Produktregistrering er et primært værktøj, som forhandlere bruger til at skabe kundeengagement et e-handelswebsted. Produktsamlingsmoduler hjælper forhandlerne med at skabe overbevisende indkøbsoplevelser ved at levere en intuitiv visuel brugergrænseflade, der kan bruges til hurtigt at oprette produktsamlinger.
 
@@ -39,7 +46,7 @@ Kilderne til produktsamlinger kan være lister af følgende fire typer:
 
 I følgende illustration vises de forskellige typer produktsamlinger, der bruges på et e-handelswebsted.
 
-![Eksempel på de forskellige typer produktsamlinger på et e-handelswebsted.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Eksempel på de forskellige typer produktsamlinger på et e-handelswebsted](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Brug altid produktsamlingsmoduler til at vise en gruppe produkter af samme type.
@@ -60,10 +67,6 @@ I følgende tabel beskrives de forskellige typer produktsamlingsmoduler i Dynami
 | Ofte købt sammen | Kunstig intelligens/maskinel indlæring | Dette modul anvender maskinel indlæring til at analysere forbrugeres indkøbsmønstre og anbefale relaterede varer, der ofte indkøbes sammen med et bestemt produkt. Denne liste kan vise personlige resultater for en bruger, der er logget på, hvis webstedets forfatter vælger denne indstilling. |
 | Folk kan også godt lide           | Kunstig intelligens/maskinel indlæring | Dette modul bruger maskinel indlæring til at analysere forbrugeres indkøbsmønstre og anbefale varer, der er relateret til et bestemt produkt. Denne liste kan vise personlige resultater for en bruger, der er logget på, hvis webstedets forfatter vælger denne indstilling. |
 | Muligheder til dig              | Kunstig intelligens/maskinel indlæring | Dette modul bruger maskinel indlæring til at analysere købsmønstrene for den bruger, der er logget på, og levere personlige anbefalinger, som er baseret på disse købsmønstre. For en gæstebruger vil denne liste være skjult. |
-
-## <a name="supported-modules"></a>Understøttede moduler 
-
-Modulet produktsamling understøtter [modulet Hurtig visning](quick-view-module.md), som giver brugerne mulighed for at få vist produktoplysninger og føje varer til indkøbsvognen fra en produktsamlingsside.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Føje et produktsamlingsmodul til en kategoriside
 
@@ -106,8 +109,3 @@ Følgende tabel viser de listetyper, der kan vælges i dialogboksen **Vælg prod
 [Boksmodul til køb](add-buy-box.md)
 
 [Oversigt over produktanbefalinger](product-recommendations.md)
-
-[Hurtig visning-.modul](quick-view-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

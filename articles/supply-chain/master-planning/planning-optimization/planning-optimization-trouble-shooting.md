@@ -2,13 +2,16 @@
 title: Fejlfinde planlægningsoptimering
 description: Dette emne beskriver, hvordan du løser problemer, der kan opstå, når du arbejder med planlægningsoptimering.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: bbf21abae60d4adee5a23a8405d14907b91724fa2cbf31c901bb46c589b2ea49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c3dd0bf262f65aac2359c05ff954bdfbd294353f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768089"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424408"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Fejlfinde planlægningsoptimering 
 
@@ -47,6 +50,12 @@ Planlægningsoptimering adskiller sig fra det indbyggede planlægningsprogramdes
 
 **Rettelse**: Kør analyse af tilpasning af planlægningsoptimering, og analysér derefter resultaterne, mens der henvises til den relaterede dokumentation for at forstå virkningen. Du kan finde flere oplysninger under [Analyse af om Planlægningsoptimering passer](planning-optimization-fit-analysis.md).
 
+## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>Varedisponering overholder ikke disponeringstidshorisonten
+
+Dette skyldes en ventende funktion i Planlægningsoptimering.
+
+**Rettelse** : Indtil den ventende funktion er tilgængelig, skal du filtrere eller slette ordreforslag for at fjerne forsyningsforslag uden for disponeringstidshorisonten.
+
 ## <a name="cant-enable-planning-optimization"></a>Kan ikke aktivere Planlægningsoptimering
 
 **Forbindelsesstatussen** skal være **tilsluttet**, før du kan angive **Brug planlægningsoptimering** til **Ja**. Du kan finde flere oplysninger under [Kom i gang med Planlægningsoptimering](get-started.md).
@@ -66,6 +75,3 @@ Dette er knyttet til en ventende funktion, der er planlagt som en del af underst
 [Kom i gang med planlægningsoptimering](get-started.md)
 
 [Analyse af tilpasning af planlægningsoptimering](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

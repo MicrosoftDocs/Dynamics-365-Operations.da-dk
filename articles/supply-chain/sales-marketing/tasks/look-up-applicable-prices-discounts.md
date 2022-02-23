@@ -1,23 +1,26 @@
 ---
 title: Slå gældende priser og rabatter op
 description: Denne fremgangsmåde viser, hvordan du finder pris og/eller rabat for et produkt, der er gyldig for en bestemt debitor, uden at oprette en salgsordre.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c80ae00e1bcbc4498ec4705195c3208170cee1b1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2cfdbda55c2f83ee2b470cab8a5e4f9ce728b852
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578914"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424429"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå gældende priser og rabatter op
 
@@ -57,6 +60,3 @@ Kontrollér, at feltet Debitorkonto indeholder debitornummer US-001
     * Der er to linjerabataftaler for produkt T0012, der angiver en rabat på 5 procents rabat for en ordrelinjemængde fra 1 til 10, og 7 procents rabat på ordremængder over 10. Bemærk, at rabatterne anvendes på en gruppe af produkter, i dette eksempel Gruppekode 01, hvor produkt T0012 er medlem.  
 4. Luk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

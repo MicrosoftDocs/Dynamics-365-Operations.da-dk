@@ -1,13 +1,16 @@
 ---
 title: Anmode om fridag
 description: Anmod om fridag i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 11/03/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7ca3fd03cda720187cb9c21b7f3ef3545c8901e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b034f3bac7264ff96100396cbb45e5b869765ce8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066769"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417876"
 ---
 # <a name="request-time-off"></a>Anmode om fridag
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan sende anmodninger om fridage, få vist din ferie- og orlovssaldi og få vist status for orlovsanmodningerne i Dynamics 365 Human Resources.
 
@@ -45,11 +43,9 @@ Du kan sende anmodninger om fridage, få vist din ferie- og orlovssaldi og få v
 
 6. Vælg **Send**, når du er klar til at sende din anmodning. Ellers skal du vælge **Gem kladde**.
 
-Medarbejdere, der indsender en ny orlovsanmodning, kan vælge forskellige orlovstyper for at oprette deres orlovsanmodning. Alle orlovstyper, der vælges som del af en enkelt orlovsanmodning, skal dog have samme orlovsenhed. Medarbejdere kan få vist orlovsenheden for hver orlovstype på siden **Anmodning om fravær**.
-
 ## <a name="add-an-attachment-to-an-existing-request"></a>Føje en vedhæftet fil til en eksisterende anmodning
 
-Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæftet fil. Du kan også se alle relaterede anmodninger for en bestemt dato.
+Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæftet fil. Du kan også se alle relaterede anmodninger for en bestemt dato. 
 
 ## <a name="view-leave-balances"></a>Få vist orlovssaldi
 
@@ -61,23 +57,8 @@ Når du opdaterer en eksisterende anmodning om fridag, kan du tilføje en vedhæ
 
 1. I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere** (...) i feltet **Fritidssaldi**.
 
-2. Hvis du vil have vist dine godkendte anmodninger om fravær, skal du vælge **Godkendt fravær**. Hvis du vil have vist dine ventende anmodninger om fravær, skal du vælge **Anmodninger om fravær**.
-
-## <a name="cancel-time-off-requests"></a>Annullere anmodninger om fravær
-
-1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Vis fridage** i feltet **Fritidssaldi**.
-
-2. På siden **Fravær** skal du vælge en eller flere anmodninger om fravær, som skal annulleres.
-
-3. Vælg knappen **Annuller**.
-
-4. Skriv en kommentar i ruden **Annulleringsdetaljer**, og vælg derefter **Send**.
-
-   ![Annuller orlovsanmodning.](media/hr-leave-and-absence-cancel.png)
+2. Hvis du vil have vist dine godkendte anmodninger om fridage, skal du vælge **Godkendt fritid**. Hvis du vil have vist dine ventende anmodninger om fridage, skal du vælge **Anmodninger om fridage**.
 
 ## <a name="see-also"></a>Se også
 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
