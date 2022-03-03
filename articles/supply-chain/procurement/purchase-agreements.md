@@ -1,12 +1,10 @@
 ---
 title: Købsaftaler
 description: Denne artikel indeholder oplysninger om købsaftaler. En købsaftale er en kontrakt, som forpligter en organisation til at købe et bestemt antal eller beløb via flere indkøbsordrer over tid. I bytte for denne forpligtelse får køberen specialpriser og rabatter.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017181"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103732"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
@@ -43,10 +41,7 @@ For at forhindre, at din købsaftale bliver brugt og bekræftet, skal du markere
 Du kan identificere en primær ansvarlig arbejder og sekundær ansvarlig arbejder i købsaftaleklassifikationen. Disse værdier nedarves af den resulterende købsaftale. Du er ikke forpligtet til at føje ansvarlige arbejdere til købsaftalen, og de kan ændres direkte for hver enkelt sag på selve købsaftalen. Du kan ikke angive en sekundær ansvarlig arbejder uden en primær ansvarlig arbejder, selvom du ikke behøver at have en sekundær ansvarlig arbejder. Du kan ikke angive den samme arbejder som både den primære og sekundære ansvarlige arbejder.
 
 > [!IMPORTANT]
-> Før du kan bruge funktionen Ansvarlig part, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-> 
-> - **Modul:** *Indkøb og forsyning*
-> - **Funktionsnavn:** *Ansvarlig part for købsaftale*
+> Før du kan bruge funktionen Ansvarlig part, skal den være slået til i dit system. Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Ansvarlig part for købsaftale* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Tilsagnstyper
 Hver linje i en købsaftale er en forpligtelse til at købe noget. Du kan bruge linjer fra flere købsordrer (IO'er) til at opfylde forpligtelsen. Der findes fire typer forpligtelser:
@@ -104,12 +99,13 @@ Hvis du opretter en intern indkøbsordre, der bruger den interne købsaftale i �
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Økonomiske dimensioner for købsaftaler
 Du kan kopiere økonomiske dimensioner til dokumentoverskrifter eller til enkelte linjer i en købsaftale. Hvis du ændrer dimensionerne i aftalehovedet eller på aftalelinjen, påvirker ændringen ikke frigivne ordrer, men afspejles i nye ordrer.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oprette en købsaftale](tasks/create-purchase-agreement.md)
-
-[Oprette en købsaftræksordre ud fra en købsaftale](tasks/create-purchase-release-order-purchase-agreement.md)
+- [Oprette en købsaftale](tasks/create-purchase-agreement.md)
+- [Anvende en købsaftale ved oprettelse af en indkøbsordre](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

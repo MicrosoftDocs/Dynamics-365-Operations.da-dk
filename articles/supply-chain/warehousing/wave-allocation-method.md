@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 527bd24d7f2e9a05f6e617c222005186520f9968
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920592"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103782"
 ---
 # <a name="wave-allocation"></a>Bølgefordeling
 
@@ -67,7 +67,7 @@ Sådan konfigurerer du parallel behandling:
 
 ## <a name="enable-or-disable-parallelization-across-all-legal-entities"></a>Aktivere eller deaktivere parallelisering på tværs af alle juridiske enheder
 
-Det anbefales, at du angiver metoden `allocateWave` til at køre parallelt på tværs af alle juridiske enheder, da det er med til at forbedre ydeevnen af bølgebehandling. Fra og med Supply Chain Management version 10.0.17 aktiveres funktionen *Bølgeparallelisering af Tilde bølge-metode* som standard for alle nye og opdaterede installationer, og den kan ikke deaktiveres igen. Når du har aktiveret denne funktion, sker følgende:
+Det anbefales, at du angiver metoden `allocateWave` til at køre parallelt på tværs af alle juridiske enheder, da det er med til at forbedre ydeevnen af bølgebehandling. Fra og med Supply Chain Management version 10.0.17 aktiveres funktionen *Bølgeparallelisering af Tildel bølge-metode* som standard for alle nye og opdaterede installationer, og den kan ikke deaktiveres igen. Når du har aktiveret denne funktion, sker følgende:
 
 - Metoden `allocateWave` opdateres, så den indeholder en indstilling for opgavekonfiguration, som giver dig mulighed for at bruge siden **Bølgeprocesmetoder** til at definere antallet af opgaver, der skal køres samtidigt, hvilket svarer til antallet af parallelle processer. Som følge heraf reduceres den tid, der bruges på trinnet Tildel bølge (som typisk er 30 % til 60 % af den samlede behandlingstid) med en faktor, der stort set svarer til antallet af opgaver. Det er også muligt at vælge, hvilket batch der skal tildeles for at behandle disse opgaver. Det er vigtigt at bemærke, at alle de juridiske enheder konfigureres til at behandle bølger i batch. For de lagersteder, der allerede er konfigureret til at behandle bølger i batch, og for de lagersteder, der allerede er konfigureret til at bruge metoden `allocateWave` parallelt, bevares den eksisterende konfiguration.
 - Som standard er alle de nye juridiske enheder konfigureret til at behandle bølger i batch. Alle nye lagersteder, hvor indstillingen **Lokationsstyringsprocesser** er aktiveret, vil have metoden `allocateWave` konfigureret til at køre parallelt som standard.

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b97b2f7091883e445b2e8474ca140217bda004b0c4d8988411b9ed4209e254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758258"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323659"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Understøttede sammensatte datatyper til elektroniske rapporteringsformler
 
@@ -27,7 +27,7 @@ Dette emne indeholder oplysninger om sammensatte datatyper, der understøttes i 
 
 *Klasse*-datatypen refererer til en offentlig programklasse. I ER repræsenteres den som en [*post*](#record), der indeholder et separat felt for hver offentlig metode i den klasse, der refereres til. Når metodens kald parameteriseres, skal du også angive de krævede argumenter af de relevante typer i et ER-udtryk, der er konfigureret til at kalde metoden.
 
-I ER-[tilknytnings](general-electronic-reporting.md#data-model-and-model-mapping-components)- og [format](general-electronic-reporting.md#FormatComponentOutbound)-komponenter kan du tilføje den **Klasse**-datakilde, der vises som datakilde, og som returnerer en værdi af *klasse*-typen. Denne datakilde viser offentlige metoder i klassen, der kan kaldes under kørslen.
+I ER-tilknytnings- og formatkomponenter kan du tilføje den **Klasse**-datakilde, der vises som datakilde, og som returnerer en værdi af *klasse*-typen. Denne datakilde viser offentlige metoder i klassen, der kan kaldes under kørslen.
 
 > [!NOTE]
 > Kun metoder, der returnerer en værdi, kan kaldes fra ER-udtryk.

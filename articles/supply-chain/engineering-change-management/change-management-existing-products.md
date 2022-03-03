@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f0fba0a9234e5b7cb055f7b97578bff72f1d06ac
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571971"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103607"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktivér administration af ændringer på eksisterende produkter
 
@@ -27,12 +27,9 @@ Dette emne forklarer, hvordan du aktiverer ændringsstyring for eksisterende pro
 
 Når du aktiverer ændringsstyring for et eksisterende produkt, kan du oprette versioner af det pågældende produkt og spore de ændringer, der er foretaget af det, i hele dets levetid. Du kan derfor spore disse ændringer ved hjælp af ændringsordrer. Hvis du vil aktivere ændringsstyring, skal du konvertere de relevante produkter til *tekniske varer* (også kaldet tekniske produkter). Tekniske produkter er produkter, der er versionsstyret og administreret via ændringsstyring. Der findes en guide til konverteringsprocessen.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funktionen i systemet
+## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funktion
 
-Når du skal bruge denne funktion, skal du udføre følgende opgaver:
-
-1. Aktivér funktionen Styring af tekniske ændringer og dens konfigurationsnøgle, som beskrevet i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
-1. Slå funktionen *Aktivér administration af ændringer på eksisterende produkter* i funktionsstyring. Få flere oplysninger i [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Den funktionalitet, der beskrives i dette emne, kræver, at både *Styring af tekniske ændringer* og *Aktivér administration af ændringer på eksisterende produkter* er aktiveret for systemet. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer disse funktioner, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Restriktioner og begrænsninger
 

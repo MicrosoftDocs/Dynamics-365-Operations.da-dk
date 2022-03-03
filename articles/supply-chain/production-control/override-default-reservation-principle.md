@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 959b8b85fe55ed5e0a93b5b614c3f6166bbd2bb6ef07e9d0f0f4c2b1ea3c4659
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b12740e58b2bf8667bee8a2c51917d69771779f2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721313"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103357"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Tilsidesætte standardreservationsprincippet for materialer i produktion
 
@@ -31,12 +31,9 @@ Når du opretter en ny produktionsordre eller batchordre, bliver du bedt om at v
 
 Hvis der f.eks. er råmaterialer eller ingredienser, der kræver plukarbejde, stykliste- eller formellinjer, der oprettes for disse produkter, som kræver en fysisk reservation, da fysisk reservation er en forudsætning for generering af lagerstedsarbejde. Hvis reservationen skal foregå automatisk, skal du typisk vælge et af følgende reservationsprincipper: *forkalkulation*, *planlægning*, *frigivelse* eller *start*. Hvis du derimod har materialer eller ingredienser, der ikke kræver plukarbejde, fordi de forbruges direkte fra en lokation, skal du typisk vælge reservationsprincippet *manuel*, som ikke foretager fysiske reservationer eller genererer plukarbejde.
 
-## <a name="turn-on-the-feature"></a>Slå funktionen til
+## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Tilsidesæt standardreservation for produktion
 
-Før du kan bruge funktionen, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Produktionsstyring*
-- **Funktionsnavn:** *Tilsidesæt standardreservation for produktion*
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Tilsidesæt standardreservation for produktion* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Knytte en politik for produktionsreservation til en varemodelgruppe
 

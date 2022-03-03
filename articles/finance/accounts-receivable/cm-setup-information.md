@@ -1,26 +1,23 @@
 ---
 title: Konfiguration af kreditstyring
 description: I dette emne beskrives den konfiguration, der kræves til kreditstyring.
-author: mikefalkner
-manager: AnnBe
-ms.date: 09/04/2019
+author: JodiChristiansen
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441431"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182422"
 ---
 # <a name="credit-management-setup"></a>Konfiguration af kreditstyring 
 
@@ -42,7 +39,7 @@ Du kan sætte en salgsordre på hold, hvis betalingsbetingelserne i ordren ikke 
 
 Hvis rangeringerne for betalingsbetingelserne er aktive, og hvis betalingsbetingelserne for ordren har en højere rangering end standardbetalingsbetingelserne for kunden, sættes salgsordren på hold.
 
-Når du vil konfigurere rangeringen af betalingsbetingelser, skal du gå til **Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Ranger betalingsbetingelser**  
+Når du vil konfigurere rangeringen af betalingsbetingelser, skal du gå til **Kredit \> Konfiguration \> Konfiguration af kreditstyring \>Ranger betalingsbetingelser**.  
 
 ### <a name="ranking-settlement-discounts"></a>Rangere afregningsrabatter
 
@@ -89,7 +86,7 @@ Du kan oprette kontostatusser på siden **Kontostatusser** (**Kredit \> Konfigur
 
 ## <a name="scoring-groups"></a>Scoregrupper
 
-Du kan konfigurere resultatgrupper for at definere risikofaktorer og de kriterier, der bruges til at måle dem. Når oplysninger om en kunde knyttes til en resultatgruppe, beregnes der et resultat for hver risikofaktor, og dette bruges til at anbringe kunden i en risikogruppe. Risikogruppen kan bruges til at identificere kreditværdighed og beregne automatisk kreditmaks.
+Du kan konfigurere **Scoregrupper** for at definere risikofaktorer og de kriterier, der bruges til at måle dem. Når oplysninger om en kunde knyttes til en resultatgruppe, beregnes der et resultat for hver risikofaktor, og dette bruges til at anbringe kunden i en risikogruppe. Risikogruppen kan bruges til at identificere kreditværdighed og beregne automatisk kreditmaks.
 
 Du kan oprette resultatgrupper på siden **Resultatgrupper** (**Kredit \> Konfiguration \> Konfiguration af kreditstyring \> Risiko \> Resultatgrupper**).
 
@@ -153,3 +150,6 @@ Udfør følgende trin for at tilføje linjer, der repræsenterer det kreditmaks.
 2. Vælg den sammenligningsoperator, der definerer, hvordan oplysningerne i resultatgruppen skal evalueres.
 3. Angiv den værdi, der skal sammenlignes med den værdi, der er angivet for resultatgruppen.
 4. Angiv det kreditmaks., der skal tildeles, hvis kundeoplysningerne svarer til den værdi, der er angivet for resultatgruppen. Du kan f.eks. oprette et automatisk kreditmaks. resultatgruppen **Lav**. Hvis det antal år, en virksomhed har været drevet i, tilhører en af resultatgrupperne, kan du definere én linje, der tildeler et kreditmaks. på 100.000, hvis kunden har drevet virksomhed i fem år, og en anden linje, der tildeler et kreditmaks. på 200.000, hvis kunden har drevet virksomhed i 10 år.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

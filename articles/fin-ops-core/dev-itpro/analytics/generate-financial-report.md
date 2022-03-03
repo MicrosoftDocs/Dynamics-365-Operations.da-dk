@@ -2,7 +2,7 @@
 title: Generere økonomiske rapporter
 description: Dette emne indeholder oplysninger om generering af en økonomisk rapport.
 author: jinniew
-ms.date: 03/08/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 101cf2b29bb6f91cec5a3dac0be30b53388905c96ecf481f5b7b3e90cda3f804
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740257"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119497"
 ---
 # <a name="generate-financial-reports"></a>Generere økonomiske rapporter
 
@@ -28,14 +28,27 @@ ms.locfileid: "6740257"
 
 Dette emne indeholder oplysninger om generering af en økonomisk rapport.
 
-Åbn den ønskede rapportdefinition for at generere en rapport, og vælg knappen **Generer** på værktøjslinjen. Vinduet **Status for rapportkø** åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i Web Viewer.
+Åbn rapportdefinitionen for at generere en rapport, og vælg **Generér** på værktøjslinjen. Siden **Status for rapportkø** åbnes og angiver placeringen af rapporten i køen.
 
-Følgende indstillinger er tilgængelige for generering af rapporter:
+Efterhånden som generering af rapporter skrider frem, kan følgende statusindikatorer for rapportkøer være synlige på siden **Status for rapportkø**.
+
+| Status          | Tilstand | Beskrivelse|
+|-----------------|--------|--------------------|
+| Sætter i kø        | Midlertidig |Rapportdefinitionen valideres, før rapporten sættes i genereringskøen.                    |
+| I kø          | Midlertidig | Rapporten kommer i køen til generering af rapporter og venter på at blive behandlet.                      |
+| Behandler      | Midlertidig | Denne status følger typisk statussen **Sat i kø** og skifter som regel til en **Endelig** tilstand, når behandlingen er fuldført.       |
+| Efterbehandler | Midlertidig | Denne status følger statussen **Behandler** og angiver, at alle rapportdata er indsamlet, men at der udføres afledte handlinger som f.eks. beregning og opsummering.            |
+| Annullerer      | Midlertidig | Rapporteringen annulleres på brugerens anmodning. Denne tilstand resulterer fra en annullering, som brugeren har anmodet om, for en rapport i tilstanden **Sat i kø** eller **Behandler**. Systemet forsøger at placere rapporten i tilstanden **Annulleret**, medmindre systemet er for langt henne og skal færdiggøre den i en anden tilstand. |
+| Annulleret        | Endelig | Rapporten er færdigbehandlet, men ikke fuldført pga. et stop, som brugeren har anmodet om.            |
+| Fuldført       | Endelig | Rapporten er klar til brug.                      |
+| Ikke udført          | Endelig | Rapporten er færdigbehandlet, men den mislykkedes og bør ikke anvendes. |
+
+Den genererede rapport åbnes som standard i Web Viewer. Følgende indstillinger er tilgængelige for generering af rapporter:
 
 - Angive en tidsplan for automatisk at generere en rapport eller en gruppe af rapporter
 - Søge efter manglende konti eller data i en rapport og validere nøjagtigheden af en rapport
 
-Når du genererer en rapport, bruges de indstillinger, du har angivet under fanen Rapportdefinition .
+Når du genererer en rapport, bruges de indstillinger, du har angivet under fanen Rapportdefinition.
 
 ## <a name="generate-a-financial-report"></a>Generér en økonomisk rapport
 
@@ -134,7 +147,7 @@ Rapporter, der har værdiintervaller, er mindre tilbøjelige til at have manglen
 4. Vælg en indstilling for at sortere resultaterne i feltet **Grupper efter**. Du kan sortere resultaterne i henhold til den rapportkomponent, der påvirkes, eller du kan sortere resultaterne efter dimensions- og værdigrupper.
 5. Gennemse de vist resultater. Når du vælger et element i den øverste rude, vises der yderligere oplysninger om undtagelsen i den nederste rude. Dette omfatter tilknyttede dimensioner, værdier og rapporter.
 6. For at åbne den pågældende vare skal du vælge det tilhørende ikon, der vises i listeruden, eller højreklikke på varen og vælge **Åbn**. Du kan markere flere varer ved at holde **Ctrl**-tasten nede, mens du markerer varerne i den nederste rude.
-7. Hvis alle værdier, dokumentkomponenter eller rapporter returneres, som ikke skal indgå i analysen, skal du højreklikke på varen og vælge **Udeluk** eller markere afkrydsningsfeltet **Udeluk** ud for varen for at fjerne varen fra listen. Udeladte varer medtages ikke, når listen er blevet opdateret. Du kan markere flere varer ved at holde **Ctrl**-tasten nede, mens du markerer varerne i den nederste rude. Hvis du vil have vist alle elementer, herunder resultater, som du tidligere har valgt at udelade af analysen, skal du markere afkrydsningsfeltet **Vis udeladte rapportkomponenter og værdier**, og vælg **Opdater**.
+7. Hvis alle værdier, dokumentkomponenter eller rapporter returneres, som ikke skal indgå i analysen, skal du højreklikke på varen og vælge **Udelad** eller markere afkrydsningsfeltet **Udelad** ud for varen for at fjerne varen fra listen. Udeladte varer medtages ikke, når listen er blevet opdateret. Du kan markere flere varer ved at holde **Ctrl**-tasten nede, mens du markerer varerne i den nederste rude. Hvis du vil have vist alle elementer, herunder resultater, som du tidligere har valgt at udelade af analysen, skal du markere afkrydsningsfeltet **Vis udeladte rapportkomponenter og værdier**, og vælg **Opdater**.
 8. Vælg **Opdater** for at opdatere undtagelser, som du har håndteret. Vælg **Ja** for at udføre en komplet opdatering af alle resultater, eller vælg **Nej** for at udføre en delvis opdatering af varer, der er behandlet.
 
     > [!NOTE]

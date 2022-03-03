@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c19f8dcdb7d84b752e0eec56afdb1a1865cfe00b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567601"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102783"
 ---
 # <a name="location-license-plate-positioning"></a>Placering af lokations-id
 
@@ -30,12 +30,9 @@ Funktionen tilføjer et løbenummer til hver nummerplade, der anbringes på en l
 
 Dette emne indeholder et scenarie, der viser, hvordan du kan konfigurere og bruge funktionen.
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Aktivér funktionen til placering af nummerplade på lokation
+## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Placering af lokations-id
 
-Før du kan bruge funktionen til placering af nummerplads på lokation, skal den være aktiveret i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Placering af nummerplade på lokation*
+Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Placering af lokations-id* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Placering af lokations-id* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Eksempelscenario
 

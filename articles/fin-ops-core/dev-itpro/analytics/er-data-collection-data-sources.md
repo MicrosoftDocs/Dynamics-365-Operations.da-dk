@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: f001734baf9aee59f0a61d21ca5a99af0c55b56f
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 185fb9a33cb4cc655dfdf640b4c239d617426c64
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413586"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323895"
 ---
 # <a name="use-data-collection-data-sources-in-electronic-reporting-formats"></a>Bruge datakilder for DATAINDSAMLING i elektroniske rapporteringsformater
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge Operationsdesigner i strukturen for [Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere [format](general-electronic-reporting.md#FormatComponentOutbound)komponenten i en ER-løsning, der bruges til at generere udgående dokumenter i forskellige formater. Den hierarkiske struktur i den konfigurerede formatkomponent består af forskellige formatelementtyper. Disse formatelementer bruges til at udfylde genererede dokumenter med de nødvendige oplysninger på kørselstidspunktet. Når du kører et ER-format, køres formatelementerne som standard i samme rækkefølge, som de vises i i formathierarkiet: ét ad gangen, fra top mod bund.
+Du kan bruge Operationsdesigner i strukturen for [Elektronisk rapportering (ER)](general-electronic-reporting.md) til at konfigurere formatkomponenten i en ER-løsning, der bruges til at generere udgående dokumenter i forskellige formater. Den hierarkiske struktur i den konfigurerede formatkomponent består af forskellige formatelementtyper. Disse formatelementer bruges til at udfylde genererede dokumenter med de nødvendige oplysninger på kørselstidspunktet. Når du kører et ER-format, køres formatelementerne som standard i samme rækkefølge, som de vises i i formathierarkiet: ét ad gangen, fra top mod bund.
 
-Når ER kører et formatelement, der indeholder en binding, køres formlen for denne binding, og formatelementet føjer værdien til et genereret dokument. Bindingen kan f.eks. overføre værdien fra et felt i en [datamodel](general-electronic-reporting.md#data-model-and-model-mapping-components) til et formatelement. Du kan konfigurere en datakilde for DATAINDSAMLING for at samle værdier fra datamodelfelter under kørslen, udføre summering af værdier og udfylde et genereret dokument med de indsamlede værdier. Hvis du vil bruge denne fremgangsmåde, skal du ændre den oprindelige binding, så den konfigurerede datakilde for DATAINDSAMLING bruges til at overføre værdien i et datamodelfelt til et formatelement. Når du overfører værdier gennem datakilden for DATAINDSAMLING, kan du indsamle krævede oplysninger til yderligere brug.
+Når ER kører et formatelement, der indeholder en binding, køres formlen for denne binding, og formatelementet føjer værdien til et genereret dokument. Bindingen kan f.eks. overføre værdien fra et felt i en datamodel til et formatelement. Du kan konfigurere en datakilde for DATAINDSAMLING for at samle værdier fra datamodelfelter under kørslen, udføre summering af værdier og udfylde et genereret dokument med de indsamlede værdier. Hvis du vil bruge denne fremgangsmåde, skal du ændre den oprindelige binding, så den konfigurerede datakilde for DATAINDSAMLING bruges til at overføre værdien i et datamodelfelt til et formatelement. Når du overfører værdier gennem datakilden for DATAINDSAMLING, kan du indsamle krævede oplysninger til yderligere brug.
 
 Når du konfigurerer en datakilde for DATAINDSAMLING, skal du angive en værditype, der skal administreres i datakilden. Følgende [datatyper](er-formula-supported-data-types-primitive.md) understøttes i øjeblikket ved indsamling af værdier:
 

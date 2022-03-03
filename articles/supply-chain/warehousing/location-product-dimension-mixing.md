@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 20085c51230d3ceca46c5119fecbc3cf3291ecd4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578554"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103482"
 ---
 # <a name="location-product-dimension-mixing"></a>Blanding af produktdimension for lokation
 
@@ -26,12 +26,9 @@ ms.locfileid: "7578554"
 
 Blanding af produktdimensioner på lokation er en lokationsprofilfunktion, der forbedrer lokationsstyringen, når der bruges produktvarianter eller produkter med dimensioner, f.eks. i modebranchen. Den giver dig mulighed for at bestemme, om konfigurationer, farver, stilarter og størrelser kan blandes for en bestemt lokationsprofil, eller om kun en af disse dimensioner eller en kombination af dem kan placeres på samme lokation.
 
-## <a name="turn-on-the-location-product-dimension-mixing-feature"></a>Slå funktionen til blanding af produktdimensioner på lokation til
+## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Slå funktionen Blanding af produktdimension for lokation til eller fra
 
-Før du kan bruge funktionen til blanding af produktdimensioner for sted, skal den være aktiveret i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Blanding af produktdimensioner på lokation*
+Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Blanding af produktdimension for lokation* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Blanding af produktdimension for lokation* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Konfiguration
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f5c9ba7079895feeb0c171f2021479587aa13cc9
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 21dd01448fcf6c2b3ca90a5476fad061bb0f55e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777660"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102733"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Udskudt behandling af manuelle lagerbevægelser
 
@@ -32,10 +32,10 @@ Baggrundsbehandling udføres med [funktionen Behandl app-hændelser for lagerste
 
 Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Du skal aktivere dem i følgende rækkefølge:
 
-1. Blokering af arbejde i hele organisationen (fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen).
-1. Proces for hændelser for lagerapp
-1. Udskudte læg på lager-handlinger
-1. Udskudt behandling af manuel lagerbevægelseshandling
+1. *Blokering af arbejde i hele organisationen*<br>(Fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen).
+1. *Proces for hændelser for lagerapp*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret.)
+1. *Udskudte læg på lager-handlinger*
+1. *Udskudt behandling af manuel lagerbevægelseshandling*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen).
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurere politikker for arbejdsbehandling
 

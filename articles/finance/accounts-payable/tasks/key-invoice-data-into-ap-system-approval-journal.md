@@ -2,26 +2,23 @@
 title: Indtaste fakturadata under kreditorer ved hjælp af en godkendelseskladde
 description: Dette emne viser, hvordan du kan bruge indgangsbogen til at oprette fakturaer og derefter bruge godkendelseskladden til at opdatere udgiftskonti.
 author: abruer
-manager: AnnBe
-ms.date: 08/08/2019
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: abruer
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 788397b5c9a3f42e373f7cdad256c1ee3d058e57
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ce66a4b92f26bcec0849accad3878aef2b2f658
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441396"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109650"
 ---
 # <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>Indtaste fakturadata under kreditorer ved hjælp af en godkendelseskladde
 
@@ -54,3 +51,6 @@ Dette emne viser, hvordan du kan bruge indgangsbogen til at oprette fakturaer og
 10. Vælg **Bogfør**.
 11. Vælg **Bilag** for at få vist de poster, der blev bogført. Kontoen til fakturaer, der afventer godkendelse, tilbageføres og erstattes med kontoen til faktiske udgifter.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

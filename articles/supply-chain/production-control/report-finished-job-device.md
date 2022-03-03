@@ -2,26 +2,23 @@
 title: Færdigmelde fra jobkortenheden
 description: Dette emne beskriver, hvordan systemet konfigureres, så brugere af en jobkortenhed kan rapportere færdigvarer fra en produktionsordre til lageret.
 author: johanhoffmann
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6ba5d8bc0c22f97e6d2ce61c636090e04fae5abd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424560"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102804"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Færdigmelde fra jobkortenheden
 
@@ -65,7 +62,7 @@ Jobkortenheden understøtter tre scenarier til rapportering af batchvarer. Disse
 Hvis du vil sætte dine jobkortenheder i gang med at acceptere et batchnummer under færdigmeldingen, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere følgende funktioner (i denne rækkefølge):
 
 1. Forbedret brugeroplevelse for dialogboksen Rapport i gang på jobkortenheden.
-1. Aktivér denne funktion for at kunne angive batch- og serienumre, når der færdigmeldes fra jobkortenheden (prøveversion)
+1. Aktivere for at angive batch- og serienumre, når der færdigmeldes fra jobkortenheden
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurere produkter, der kræver batchnummerrapportering
 
@@ -88,13 +85,13 @@ Du skal følge disse trin for at konfigurere en sporingsnummergruppe og tillade 
 1. Opret eller vælg den sporingsnummergruppe, der skal konfigureres.
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Manuel** til **Ja**.
 
-    ![En sporingsnummergruppe for manuelle batchnumre](media/tracking-number-group-manual.png "En sporingsnummergruppe for manuelle batchnumre")
+    ![En sporingsnummergruppe for manuelle batchnumre.](media/tracking-number-group-manual.png "En sporingsnummergruppe for manuelle batchnumre")
 
 1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som batchnummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
 
 Når du bruger dette scenarie, er feltet **Batchnummer**, som siden **Rapport i gang** på jobkortenheden indeholder, en tekstboks, hvor arbejderne kan angive en hvilken som helst værdi.
 
-![Siden Rapportstatus med et felt til manuelle batchnumre](media/job-card-device-batch-manual.png "Siden Rapportstatus med et felt til manuelle batchnumre")
+![Siden Rapportstatus med et felt til manuelle batchnumre.](media/job-card-device-batch-manual.png "Siden Rapportstatus med et felt til manuelle batchnumre")
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-batch-numbers"></a>Konfigurere en sporingsnummergruppe, der viser en liste over foruddefinerede batchnumre
 
@@ -105,13 +102,13 @@ Du skal følge disse trin for at konfigurere en sporingsnummergruppe og lave en 
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Kun på lagertransaktioner** til **Ja**.
 1. Brug feltet **Pr. antal** til at opdele batchnumre pr. antal ud fra den værdi, du angiver. Du har f.eks. en produktionsordre på ti stykker, og feltet **Pr. antal** er angivet til *2*. I dette tilfælde tildeles der fem batchnumre til produktionsordren, når den oprettes.
 
-    ![En sporingsnummergruppe for foruddefinerede batchnumre](media/tracking-number-group-predefined.png "En sporingsnummergruppe for foruddefinerede batchnumre")
+    ![En sporingsnummergruppe for foruddefinerede batchnumre.](media/tracking-number-group-predefined.png "En sporingsnummergruppe for foruddefinerede batchnumre")
 
 1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som batchnummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
 
 Når du bruger dette scenarie, er feltet **Batchnummer**, som siden **Rapport i gang** på jobkortenheden indeholder, en rulleliste, hvor arbejderne skal vælge en foruddefineret værdi.
 
-![Siden Rapportstatus med en liste over foruddefinerede batchnumre](media/job-card-device-batch-predefined.png "Siden Rapportstatus med en liste over foruddefinerede batchnumre")
+![Siden Rapportstatus med en liste over foruddefinerede batchnumre.](media/job-card-device-batch-predefined.png "Siden Rapportstatus med en liste over foruddefinerede batchnumre")
 
 ### <a name="set-up-a-tracking-number-group-that-automatically-assigns-batch-numbers"></a>Konfigurere en sporingsnummergruppe, som automatisk tildeler batchnumre
 
@@ -122,13 +119,13 @@ Hvis der automatisk skal tildeles batchnumre uden arbejderinput, skal du følge 
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Kun på lagertransaktioner** til **Nej**.
 1. Angiv indstillingen **Manuel** til **Nej**.
 
-    ![En sporingsnummergruppe for faste batchnumre](media/tracking-number-group-fixed.png "En sporingsnummergruppe for faste batchnumre")
+    ![En sporingsnummergruppe for faste batchnumre.](media/tracking-number-group-fixed.png "En sporingsnummergruppe for faste batchnumre")
 
 1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som batchnummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
 
 Når du bruger dette scenarie, viser feltet **Batchnummer**, som siden **Rapport i gang** på jobkortenheden leverer, en værdi, men arbejderne kan ikke redigere denne værdi.
 
-![Siden Rapportstatus med et fast batchnummer](media/job-card-device-batch-fixed.png "Siden Rapportstatus med et fast batchnummer")
+![Siden Rapportstatus med et fast batchnummer.](media/job-card-device-batch-fixed.png "Siden Rapportstatus med et fast batchnummer")
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Færdigmelde seriestyrede varer
 
@@ -143,7 +140,7 @@ Jobkortenheden understøtter tre scenarier til rapportering af seriestyrede vare
 Hvis du vil sætte dine jobkortenheder i gang med at acceptere et serienummer under færdigmeldingen, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere følgende funktioner (i denne rækkefølge):
 
 1. Forbedret brugeroplevelse for dialogboksen Rapport i gang på jobkortenheden.
-1. Aktivér denne funktion for at kunne angive batch- og serienumre, når der færdigmeldes fra jobkortenheden (prøveversion)
+1. Aktivere for at angive batch- og serienumre, når der færdigmeldes fra jobkortenheden
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurere produkter, der kræver serienummerrapportering
 
@@ -168,7 +165,7 @@ Du skal følge disse trin for at konfigurere en sporingsnummergruppe og tillade 
 1. Opret eller vælg den sporingsnummergruppe, der skal konfigureres.
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Manuel** til **Ja**.
 
-    ![Siden Sporingsnummergrupper, serienumre](media/tracking-number-group-manual-serial.png "Siden Sporingsnummergrupper, serienumre")
+    ![Siden Sporingsnummergrupper, serienumre.](media/tracking-number-group-manual-serial.png "Siden Sporingsnummergrupper, serienumre")
 
 1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som serienummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
 
@@ -177,7 +174,7 @@ Når du bruger dette scenarie, er feltet **Serienummer**, som siden **Rapport i 
 - Hvis du vil markere et serienummer som kasseret, skal du vælge knappen **Kasseres** for den relevante række. Arbejderen bliver bedt om at angive en **Fejlårsag**.
 - Hvis du vil slette et serienummer, skal du vælge knappen **Slet** for den relevante række.
 
-![Siden Rapportstatus med et felt til manuelle serienumre](media/job-card-device-serial-manual.png "Siden Rapportstatus med et felt til manuelle serienumre")
+![Siden Rapportstatus med et felt til manuelle serienumre.](media/job-card-device-serial-manual.png "Siden Rapportstatus med et felt til manuelle serienumre")
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Konfigurere en sporingsnummergruppe, der viser en liste over foruddefinerede serienumre
 
@@ -188,13 +185,13 @@ Du skal følge disse trin for at konfigurere en sporingsnummergruppe og lave en 
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Kun på lagertransaktioner** til **Ja**.
 1. Brug feltet **Pr. antal** til at opdele serienumre pr. antal af én.
 
-    ![En sporingsnummergruppe for foruddefinerede serienumre](media/tracking-number-group-predefined-sn.png "En sporingsnummergruppe for foruddefinerede serienumre")
+    ![En sporingsnummergruppe for foruddefinerede serienumre.](media/tracking-number-group-predefined-sn.png "En sporingsnummergruppe for foruddefinerede serienumre")
 
 1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som serienummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
 
 Når du bruger dette scenarie, er feltet **Serienummer**, som siden **Rapport i gang** på jobkortenheden indeholder, en rulleliste, hvor arbejderne skal vælge en foruddefineret værdi.
 
-![Siden Rapportstatus med en liste over foruddefinerede serienumre](media/job-card-device-serial-predefined.png "Siden Rapportstatus med en liste over foruddefinerede serienumre")
+![Siden Rapportstatus med en liste over foruddefinerede serienumre.](media/job-card-device-serial-predefined.png "Siden Rapportstatus med en liste over foruddefinerede serienumre")
 
 ### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Konfigurere en sporingsnummergruppe, som automatisk tildeler serienumre
 
@@ -205,13 +202,13 @@ Hvis der automatisk skal tildeles serienumre uden arbejderinput, skal du følge 
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Kun på lagertransaktioner** til **Nej**.
 1. Angiv indstillingen **Manuel** til **Nej**.
 
-    ![En sporingsnummergruppe for faste serienumre](media/tracking-number-group-fixed-sn.png "En sporingsnummergruppe for faste serienumre")
+    ![En sporingsnummergruppe for faste serienumre.](media/tracking-number-group-fixed-sn.png "En sporingsnummergruppe for faste serienumre")
 
 1. Angiv andre værdier efter behov, og vælg derefter denne sporingsnummergruppe som serienummergruppe for de frigivne produkter, du vil bruge dette scenarie for.
 
 Når du bruger dette scenarie, viser feltet **Serienummer**, som siden **Rapport i gang** på jobkortenheden leverer, en værdi, men arbejderne kan ikke redigere denne værdi. Dette scenarie er kun relevant, når der er oprettet en produktionsordre for et antal på ét styk af en serienummerstyret vare.
 
-![Siden Rapportstatus med et fast serienummer](media/job-card-device-serial-fixed.png "Siden Rapportstatus med et fast serienummer")
+![Siden Rapportstatus med et fast serienummer.](media/job-card-device-serial-fixed.png "Siden Rapportstatus med et fast serienummer")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Rapportere som færdig til en nummerplade
 
@@ -221,9 +218,9 @@ Avancerede lagerprocesser kan bruge nummerpladedimensionen til at spore lager p�
 
 Hvis du vil bruge de funktioner, der er beskrevet i dette afsnit, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere følgende funktioner (i denne rækkefølge):
 
-1. Id for færdigmelding tilføjet i jobkortenheden
-1. Aktivér automatisk generering af id-nummer ved færdigmelding i jobkortenheden
-1. Udskriv etiket fra jobkortenhed
+1. *Id for færdigmelding tilføjet i jobkortenheden*<br>(Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk.)
+1. *Aktivér automatisk generering af id-nummer ved færdigmelding i jobkortenheden*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk.)
+1. *Udskriv etiket fra jobkortenhed*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk.)
 
 ### <a name="set-up-reporting-as-finished-to-a-license-plate"></a>Konfigurere rapportering som færdig til en nummerplade
 
@@ -235,7 +232,10 @@ Hvis du vil styre, om arbejdere skal genbruge en eksisterende nummerplade eller 
     - **Generér nummerplade** – Angiv denne indstilling til **Ja** for at generere en ny nummerplade for hver færdigmeldingsrapport. Angiv den til **Nej**, hvis en eksisterende nummerplade skal anvendes til hver færdigmeldingsrapport.
     - **Udskriv label** – Angiv denne indstilling til **Ja**, hvis arbejderen skal udskrive en nummerpladelabel for hver færdigmeldingsrapport. Angiv den til **Nej**, hvis der ikke kræves en label. 
 
-![Siden Konfigurere jobkort for enheder](media/config-job-card-raf.png "Siden Konfigurere jobkort for enheder")
+![Siden Konfigurere jobkort for enheder.](media/config-job-card-raf.png "Siden Konfigurere jobkort for enheder")
 
 > [!NOTE]
 > Gå til **Lokationsstyring \> Opsætning \> Dokumentrute \> Dokumentrute** for at konfigurere labelen. Yderligere oplysninger finder du i afsnittet [Aktivere udskrivning af id-etiket](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

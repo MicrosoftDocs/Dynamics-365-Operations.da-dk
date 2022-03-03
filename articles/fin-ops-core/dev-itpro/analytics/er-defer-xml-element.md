@@ -2,11 +2,9 @@
 title: Udskyde udførelse af XML-elementer i ER-formater
 description: Dette emne forklarer, hvordan du udskyder udførelsen af et XLM-element i et elektronisk rapporteringsformat (ER).
 author: NickSelin
-manager: kfend
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 6dce3768c886403f789063d516e0e696fc829f81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680704"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323709"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Udskyde udførelse af XML-elementer i ER-formater
 
@@ -30,7 +28,7 @@ ms.locfileid: "4680704"
 
 ## <a name="overview"></a>Oversigt
 
-Du kan bruge Operationsdesigner i [den elektroniske rapporteringsstruktur (ER)](general-electronic-reporting.md) til at [konfigurere](./tasks/er-format-configuration-2016-11.md) [formatkomponenten](general-electronic-reporting.md#FormatComponentOutbound) i en ER-løsning, der bruges til at generere udgående dokumenter i XLM-format. Den hierarkiske struktur i den konfigurerede formatkomponent består af formatelementer af forskellige typer. Disse formatelementer bruges til at udfylde genererede dokumenter med de nødvendige oplysninger på kørselstidspunktet. Når du kører et ER-format, køres formatelementerne som standard i samme sekvens, som de vises i i formathierarkiet: én ad gangen, fra top mod bund. Men på designtidspunktet kan du ændre udførelsessekvensen for alle XML-elementer i den konfigurerede formatkomponent.
+Du kan bruge Operationsdesigner i den [elektroniske rapporteringsstruktur (ER)](general-electronic-reporting.md) til at [konfigurere](./tasks/er-format-configuration-2016-11.md) formatkomponenten i en ER-løsning, der bruges til at generere udgående dokumenter i XLM-format. Den hierarkiske struktur i den konfigurerede formatkomponent består af formatelementer af forskellige typer. Disse formatelementer bruges til at udfylde genererede dokumenter med de nødvendige oplysninger på kørselstidspunktet. Når du kører et ER-format, køres formatelementerne som standard i samme sekvens, som de vises i i formathierarkiet: én ad gangen, fra top mod bund. Men på designtidspunktet kan du ændre udførelsessekvensen for alle XML-elementer i den konfigurerede formatkomponent.
 
 Hvis du aktiverer indstillingen <a name="DeferredXmlElementExecution"></a>**Udskudt udførelse** for et XML-element i det konfigurerede format, kan du udskyde udførelsen af det pågældende element. I dette tilfælde køres elementet ikke, før alle andre elementer af det overordnede element er blevet kørt.
 
@@ -46,7 +44,7 @@ Indstillingen **Udskudt udførelse** understøttes ikke for XML-elementer, der f
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Udskyde udførelse af et XML-element i et ER-format
 
-I følgende fremgangsmåde forklares det, hvordan en bruger i systemadministratoren eller den funktionelle konsulent i elektronisk rapportering [rolle](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) kan konfigurere et ER-format, der indeholder et XML-element, hvor udførelsessekvensen er forskellig fra sekvensen i formathierarkiet.
+I følgende fremgangsmåde forklares det, hvordan en bruger i systemadministratoren eller den funktionelle konsulent i elektronisk rapportering [rolle](../sysadmin/tasks/assign-users-security-roles.md) kan konfigurere et ER-format, der indeholder et XML-element, hvor udførelsessekvensen er forskellig fra sekvensen i formathierarkiet.
 
 Disse trin kan udføres i firmaet **USMF** i Microsoft Dynamics 365 Finance.
 
@@ -61,14 +59,14 @@ Hvis du endnu ikke har fuldført eksemplet i emnet [Udskyde udførelse af sekven
 
 | Indholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|
-| ER-datamodelkonfiguration    | [Model til at lære udskudte elementer.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER-modeltilknytningskonfiguration | [Tilknytning for at lære udskudte elementer.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-datamodelkonfiguration    | [Model til at lære udskudte elementer.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER-modeltilknytningskonfiguration | [Tilknytning for at lære udskudte elementer.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Før du går i gang, skal du også hente og gemme følgende konfiguration af ER-eksempelløsningen på den lokale computer.
 
 | Indholdsbeskrivelse     | Filnavn |
 |-------------------------|-----------|
-| Konfiguration af ER-format | [Format til at lære udskudte XML-elementer.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguration af ER-format | [Format til at lære udskudte XML-elementer.version.1.1.xml](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importere ER-eksempelkonfigurationerne
 
@@ -92,14 +90,14 @@ Før du går i gang, skal du også hente og gemme følgende konfiguration af ER-
 6. Udvid **Model til at lære udskudte elementer** i konfigurationstræet.
 7. Gennemse listen over importerede ER-konfigurationer i konfigurationstræet.
 
-    ![Importerede ER-konfigurationer på siden Konfigurationer](./media/ER-DeferredXml-Configurations.png)
+    ![Importerede ER-konfigurationer på siden Konfigurationer.](./media/ER-DeferredXml-Configurations.png)
 
 ### <a name="activate-a-configuration-provider"></a>Aktivere en konfigurationsudbyder
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurationer** i sektionen **Konfigurationsudbydere** skal du kontrollere, at [konfigurationsudbyderen](general-electronic-reporting.md#Provider) for eksempelfirmaet Litware, Inc. (`http://www.litware.com`) er vist, og at det er markeret som aktivt. Hvis denne konfigurationsudbyder ikke er angivet, eller hvis den ikke er markeret som aktiv, skal du følge trinnene i emnet [Opret en konfigurationsudbyder, og markér den som aktiv](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Eksempelfirmaet Litware, Inc. på siden Lokaliseringskonfigurationer](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
+    ![Eksempelfirmaet Litware, Inc. på siden Lokaliseringskonfigurationer.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Gennemse tilknytningen af den importerede model
 
@@ -121,7 +119,7 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
     - Datakilden **Grupperet** for typen *Gruppér efter* er konfigureret til at gruppere filtrerede momstransaktioner for datakilden **Filtreret**.
     - Aggregeringsfeltet **TotalSum** i datakilden **Grupperet** er konfigureret til at opsummere værdier i feltet **\$TaxAmount** i datakilden **Filtreret** for alle filtrerede momstransaktioner for den pågældende datakilde.
 
-        ![Aggregeringsfeltet TotalSum på siden Rediger 'GroupBy'-parametre](./media/ER-DeferredXml-GroupByParameters.png)
+        ![Aggregeringsfeltet TotalSum på siden Rediger 'GroupBy'-parametre.](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. Gennemse, hvordan de konfigurerede datakilder er bundet til datamodellen, og hvordan de viser data, der er adgang til, for at gøre dem tilgængelige i et ER-format:
 
@@ -129,7 +127,7 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
     - Feltet **\$TaxAmount** i datakilden **Filtreret** er bundet til feltet **Data.List.Value** i datamodellen.
     - Feltet **TotalSum** i datakilden **Grupperet** er bundet til feltet **Data.Summary.Total** i datamodellen.
 
-    ![Siden Modeltilknytningsdesigner](./media/ER-DeferredXml-ModelMapping.png)
+    ![Siden Modeltilknytningsdesigner.](./media/ER-DeferredXml-ModelMapping.png)
 
 10. Luk siderne **Modeltilknytningsdesigner** og **Modeltilknytninger**.
 
@@ -145,7 +143,7 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
     - XML-elementet **Rapport \\Meddelelse\\Post** er konfigureret til at udfylde det udgående dokument med en enkelt postnode, der viser detaljerne i en enkelt momstransaktion.
     - XML-elementet **Rapport\\Meddelelse\\Oversigt** er konfigureret til at udfylde det udgående dokument med en enkelt oversigtsnode, der omfatter summen af momsværdierne fra de behandlede momstransaktioner.
 
-    ![Meddelelses-XML-element og indlejrede XML-elementer på siden Formatdesigner](./media/ER-DeferredXml-Format.png)
+    ![Meddelelses-XML-element og indlejrede XML-elementer på siden Formatdesigner.](./media/ER-DeferredXml-Format.png)
 
 5. Gennemse følgende oplysninger under fanen **Tilknytning**:
 
@@ -159,14 +157,14 @@ Gennemse indstillingerne for komponenten til ER-modeltilknytning, der er konfigu
     - Attributten **TotalTaxAmount** er bundet til **model.Data.Summary.Total** for at generere summen af momsværdierne for de behandlede momstransaktioner.
     - Attributten **ExecutionDateTime** genererer datoen og klokkeslættet (herunder millisekunder), når oversigtsnoden tilføjes.
 
-    ![Fanen Tilknytning på siden Formatdesigner](./media/ER-DeferredXml-Format2.png)
+    ![Fanen Tilknytning på siden Formatdesigner.](./media/ER-DeferredXml-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Kør det importerede format
 
 1. På siden **Formatdesigner** skal du vælge **Kør**.
 2. Hent den fil, som webbrowseren tilbyder, og åbn den til gennemsyn.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run.png)
+    ![Hentet fil i importeret format.](./media/ER-DeferredXml-Run.png)
 
 Bemærk, at oversigtsnoden præsenterer summen af momsværdierne for de behandlede transaktioner. Da formatet er konfigureret til at bruge bindingen **model.Data.Summary.Total** til at returnere denne sum, beregnes summen ved at kalde aggregeringen **TotalSum** for datakilden **Grupperet** for typen *GroupBy* i modeltilknytningen. Hvis du vil beregne denne aggregering, gentages modeltilknytningen over alle transaktioner, der er valgt i datakilden **Filtreret**. Ved at sammenligne udførselstiderne for oversigtsnoden og den sidste postnode kan du fastlægge, at beregningen af summen tog 12 millisekunder (ms). Ved at sammenligne udførselstiderne for den første og sidste postnode kan du fastlægge, at oprettelse af alle postnoder har taget 9 ms. Der kræves derfor 21 ms i alt.
 
@@ -180,25 +178,25 @@ Hvis mængden af en transaktion er meget større end mængden i det aktuelle eks
 4. Konfigurer udtrykket **Nøglenavn for opsamlede data** som `WsColumn`.
 5. Konfigurer udtrykket **Nøgleværdi for opsamlede data** som `WsRow`.
 
-    ![Post-XML-element på siden Formatdesigner](./media/ER-DeferredXml-Format3.png)
+    ![Post-XML-element på siden Formatdesigner.](./media/ER-DeferredXml-Format3.png)
 
 6. Vælg attributten **Rapport\\Meddelelse\\Post\\TaxAmount**.
 7. Konfigurer udtrykket **Nøglenavn for opsamlede data** som `SummingAmountKey`.
 
-    ![Attributten TaxAmount på siden Formatdesigner](./media/ER-DeferredXml-Format4.png)
+    ![Attributten TaxAmount på siden Formatdesigner.](./media/ER-DeferredXml-Format4.png)
 
     Du kan overveje denne indstilling ved at udfylde et virtuelt regneark, hvor værdien af celle A1 tilføjes sammen med værdien af momsbeløbet fra alle behandlede momstransaktioner.
 
 8. Vælg attributten **Rapport\\Meddelelse\\Post\\RunningTotal**, og vælg derefter **Rediger formel**.
 9. Konfigurer udtrykket `SUMIF(SummingAmountKey, WsColumn, WsRow)` ved hjælp af den indbyggede [SUMIF](er-functions-datacollection-sumif.md) ER-funktion, og vælg derefter **Gem**.
 
-    ![SUMIF-udtryk](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![SUMIF-udtryk.](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Luk siden **Formeldesigner**.
 11. Vælg **Gem**, og vælg derefter **Kør**.
 12. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run1.png)
+    ![Genereret momsliste med løbende total.](./media/ER-DeferredXml-Run1.png)
 
     Den sidste postnode indeholder den løbende total af momsværdier, der er beregnet for alle behandlede transaktioner ved brug af det genererede output som datakilde. Denne datakilde starter fra starten af rapporten og fortsætter gennem den seneste momstransaktion. Oversigtsnoden indeholder summen af momsværdierne for alle behandlede transaktioner, der er beregnet i modeltilknytningen ved hjælp af datakilden af typen *GroupBy*. Bemærk, at disse værdier er ens. Derfor kan den outputbaserede opsummering bruges i stedet for **GroupBy**. Ved at sammenligne udførselstiderne for den første postnode og oversigtsnoden kan du fastlægge, at oprettelse af alle postnoder og oversigt har taget 11 ms. Så vidt angår oprettelse af postnoder og oversigt over momsværdier, er det ændrede format ca. to gange hurtigere end det oprindelige format.
 
@@ -207,7 +205,7 @@ Hvis mængden af en transaktion er meget større end mængden i det aktuelle eks
 15. Vælg **Gem**, og vælg derefter **Kør**.
 16. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run2.png)
+    ![Genereret liste med momsværdier ved hjælp af redigeret formel.](./media/ER-DeferredXml-Run2.png)
 
     Bemærk, at den løbende total for momsværdier i den sidste postnode nu svarer til summen i oversigtsnoden.
 
@@ -220,7 +218,7 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 3. Vælg **Gem**, og vælg derefter **Kør**.
 4. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run3.png)
+    ![Hentet fil med momsværdier for rapporthoved.](./media/ER-DeferredXml-Run3.png)
 
     Bemærk, at summen af momsværdier i oversigtsnoden nu er lig med 0 (nul), fordi denne sum nu beregnes ud fra det genererede output. Når den første postnode genereres, indeholder det genererede output endnu ikke postnoder med transaktionsdetaljer. Du kan konfigurere dette format for at udskyde udførelsen af elementet **Rapport\\Meddelelse\\Oversigt**, indtil elementet **Rapport\\Meddelelse\\Post** er kørt for alle momstransaktionerne.
 
@@ -229,12 +227,12 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 1. På siden **Formatdesigner** under fanen **Format** skal du vælge XML-elementet **Rapport\\Meddelelse\\Oversigt**.
 2. Angiv indstillingen **Udskudt udførelse** til **Ja**.
 
-    ![Indstillingen Udskudt udførelse for oversigts-XML-elementet på siden Formatdesigner](./media/ER-DeferredXml-Format5.png)
+    ![Indstillingen Udskudt udførelse for oversigts-XML-elementet på siden Formatdesigner.](./media/ER-DeferredXml-Format5.png)
 
 3. Vælg **Gem**, og vælg derefter **Kør**.
 4. Download og gennemse den fil, som webbrowseren tilbyder.
 
-    ![Hentet fil](./media/ER-DeferredXml-Run4.png)
+    ![Hentet fil for udskudt udførelse.](./media/ER-DeferredXml-Run4.png)
 
     Elementet **Rapport\\Meddelelse\\Oversigt** køres nu kun, efter alle andre elementer, der er indlejret under det overordnede element **Rapport\\Meddelelse**, er kørt. Derfor køres det, efter at elementet **Rapport\\Meddelelse\\Post** er kørt for alle momstransaktioner i datakilden **model.Data.List**. Udførelsestiderne for de første og sidste postnoder og for overskrifts- og oversigtsnoder viser dette.
 
@@ -243,3 +241,6 @@ Hvis du f.eks. skal vise summen af momsværdier i hovedet i din rapport, kan du 
 - [Konfigurere format for at udføre optælling og sammenlægning](./tasks/er-format-counting-summing-1.md)
 - [Spore kørsel af ER-format for at foretage fejlfinding af problemer med ydeevnen](trace-execution-er-troubleshoot-perf.md)
 - [Udskyde udførelse af sekvenselementer i ER-formater](er-defer-sequence-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

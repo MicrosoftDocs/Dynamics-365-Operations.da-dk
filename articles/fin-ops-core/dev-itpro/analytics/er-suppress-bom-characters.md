@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5f9379877e77f2824cd2dec9a1e68390b4eee8ba502e4011f0a8838b1974e3d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769942"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323734"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Designe ER-konfigurationer til at udelade tegn for byterækkefølgemærke i genererede filer
 
 [!include [banner](../includes/banner.md)]
 
-Du kan designe [elektronisk rapportering (ER)](general-electronic-reporting.md) som [løsning](er-quick-start1-new-solution.md) for at oprette udgående dokumenter. Hvis du vil generere dokumenterne som tekst- eller XML-filer, skal løsningen indeholde en ER-[konfiguration](general-electronic-reporting.md#Configuration), der indeholder en ER-[formatkomponent](general-electronic-reporting.md#FormatComponentOutbound). Hvis du vil angive den [tegnkodning](/windows/win32/intl/character-sets), der repræsenterer sættet af tegn i genererede filer, skal ER-formatet indeholde formatelementet **Common\\File**. Hvis du vil konfigurere ER-formatkomponenten, skal du åbne [kladde](general-electronic-reporting.md#component-versioning)-versionen af ER-konfigurationen i ER-formatdesigneren og tilføje elementet **Common\\File**. I feltet **Kodning** skal du angive kodningen af udgående filer, der genereres under kørsel ved hjælp af denne komponent.
+Du kan designe [elektronisk rapportering (ER)](general-electronic-reporting.md) som [løsning](er-quick-start1-new-solution.md) for at oprette udgående dokumenter. Hvis du vil generere dokumenterne som tekst- eller XML-filer, skal løsningen indeholde en ER-[konfiguration](general-electronic-reporting.md#Configuration), der indeholder en ER-formatkomponent. Hvis du vil angive den [tegnkodning](/windows/win32/intl/character-sets), der repræsenterer sættet af tegn i genererede filer, skal ER-formatet indeholde formatelementet **Common\\File**. Hvis du vil konfigurere ER-formatkomponenten, skal du åbne [kladde](general-electronic-reporting.md#component-versioning)-versionen af ER-konfigurationen i ER-formatdesigneren og tilføje elementet **Common\\File**. I feltet **Kodning** skal du angive kodningen af udgående filer, der genereres under kørsel ved hjælp af denne komponent.
 
 > [!NOTE]
 > Hvis formatet indeholder et forkert kodningsnavn, vises der en fejl, når du gemmer ændringerne i indstillingerne af formatet.

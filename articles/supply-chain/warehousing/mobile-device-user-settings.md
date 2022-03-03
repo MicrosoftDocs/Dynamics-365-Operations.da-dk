@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 13c99854224a6d220e73a43636d85ec1951f8149
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901866"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103707"
 ---
 # <a name="mobile-device-user-settings"></a>Indstillinger for mobilenhedsbruger
 
@@ -39,12 +39,9 @@ Denne funktion kan hjælpe arbejdere med at komme hurtigere i gang, når de begy
 > [!IMPORTANT]
 > Funktionen til *brugerindstillinger for mobilenheder* gælder kun for den nye mobilapp Lokationsstyring. Den fungerer ikke med den gamle lagerstedsapp.
 
-## <a name="turn-on-the-mobile-device-user-settings-feature"></a>Aktivere funktionen til brugerindstillinger for mobilenheder
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Aktivere eller deaktivere funktionen til brugerindstillinger for mobilenheder
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp*
+Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* være aktiveret i systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-and-manage-user-settings"></a>Oprette og administrere brugerindstillinger
 

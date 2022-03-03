@@ -2,28 +2,25 @@
 title: Trevejs-sammenholdelsespolitikker
 description: Dette emne indeholder eksempler på trevejs-sammenholdelse.
 author: abruer
-manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cffdc06216ce8ab1bfb79265f265bec1aee334c5
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441505"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109987"
 ---
 # <a name="three-way-matching-policies"></a>Trevejs-sammenholdelsespolitikker
 
@@ -31,8 +28,7 @@ ms.locfileid: "4441505"
 
 Dette emne indeholder eksempler på trevejs-sammenholdelse.
 
-<a name="example-three-way-matching-for-items"></a>Eksempel: trevejs-sammenholdelsespolitik
--------------------------------------
+## <a name="example-three-way-matching-for-items"></a>Eksempel: trevejs-sammenholdelsespolitik
 
 **Oversigt:** Ken er controller i virksomhedens hovedkvarter i en juridisk enhed med navnet Fabrikam. Mads beslutter, at alle kreditorfakturaer, der er baseret på indkøbsordrer, skal sammenholdes med indkøbsordrelinjer (tovejs-sammenholdelse). For køb af varer, der skal bruges som anlægsaktiver, skal fakturaer sammenholdes med både indkøbsordrelinjer og produktkvitteringslinjerne (trevejs-sammenholdelse).
 
@@ -46,10 +42,10 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 
 ### <a name="prerequisites"></a>Forudsætninger
 
--   Ken angiver sammenholdelsespolitikken på niveauet for den juridiske enhed til Trevejs-sammenholdelse.
--   Ken angiver til/fra for automatisk opdatering på overskriftens sammenholdelsesstatus i den juridiske enhed til Ja.
--   Ken angiver feltet Afstem pristotaler for den juridiske enhed til procent og angiver 15 % som toleranceprocenten.
--   Ken angiver sammenholdelsespolitikken på vareniveauet for vare 1500 – CNC Milicron-maskine til Trevejs-sammenholdelse. Denne vare er en anlægsvare, der bruges til fremstilling hos Fabrikam. Fakturaer for denne vare sammenholdes med indkøbsordrelinjer for priser og med produktkvitteringer for antal.
+-   Ken angiver **Sammenholdelsespolitik** på niveauet for den juridiske enhed til **Trevejs-sammenholdelse**.
+-   Ken angiver til/fra for **Automatisk opdatering på overskriftens sammenholdelsesstatus** i den juridiske enhed til **Ja**.
+-   Ken angiver feltet **Afstem pristotaler** for den juridiske enhed til **Procent** og angiver 15 % som **Toleranceprocent**.
+-   Ken angiver sammenholdelsespolitikken på vareniveauet for vare 1500 – CNC Milicron-maskine til **Trevejs-sammenholdelse**. Denne vare er en anlægsvare, der bruges til fremstilling hos Fabrikam. Fakturaer for denne vare sammenholdes med indkøbsordrelinjer for priser og med produktkvitteringer for antal.
 -   Thomas angiver en rekvisition for fem CNC Milicron-maskiner. Anja, en købsordreassistent hos Fabrikam, udsteder en indkøbsordre til en juridisk enhed, der hedder Contoso, om levering af varerne.
 
     | Varenummer                 | Antal | Enhedspris | Nettobeløb | Gebyrkode        | Gebyrværdi |
@@ -60,7 +56,7 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 
 ### <a name="scenario"></a>Situation
 
-1.  Claus, en arbejder i modtagelsesafdelingen hos Fabrikam, modtager det samlede antal maskiner, der leveres fra Contoso. Han angiver antallet 5 ved modtagelse af produkterne. Da indkøbsordren er blevet fuldt modtaget, ændres status for indkøbsordren til Modtaget.
+1.  Claus, en arbejder i modtagelsesafdelingen hos Fabrikam, modtager det samlede antal maskiner, der leveres fra Contoso. Claus angiver antallet 5 ved modtagelse af produkterne. Da indkøbsordren er blevet fuldt modtaget, ændres status for indkøbsordren til Modtaget.
 2.  Pernille, kreditorkoordinator hos Fabrikam, indtaster og kontrollerer den faktura, der er sendt af Contoso. Hun kontrollerer følgende oplysninger:
     -   For varer, der kræver trevejs-sammenholdelse, svarer antallet på fakturalinjen til det antal, der blev modtaget. Det modtagne antal angives på den produktkvittering, der sammenholdes med fakturaen.
     -   For varer, der kræver tovejs- eller trevejs-sammenholdelse, er priserne på fakturalinjen inden for de tolerancer, der er defineret i Microsoft Dynamics 365 Finance. Dette omfatter følgende typer prissammenholdelse:
@@ -95,11 +91,11 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 
 ### <a name="prerequisites"></a>Forudsætninger
 
--   Ken angiver sammenholdelsespolitikken på niveauet for den juridiske enhed til Tovejs-sammenholdelse.
--   Ken angiver feltet Afstem pristotaler for den juridiske enhed til procent og angiver 10 % som toleranceprocenten.
+-   Ken angiver **Sammenholdelsespolitik** på niveauet for den juridiske enhed til **Tovejs-sammenholdelse**.
+-   Ken angiver feltet **Afstem pristotaler** for den juridiske enhed til **Procent** og angiver **10 %** som **Toleranceprocent**.
 -   Mads angiver tolerancen for enhedspriser for alle varer til 2 %.
--   Cassie angiver sammenholdelsespolitikken for kombinationen af varer og kreditor for varen PH2500 – Computer og kreditor Contoso til Trevejs-sammenholdelse.
--   Anja, en indkøbsordreassistent i Fabrikams division i Malaysia, udsteder indkøbsordrer til Contoso om at levere tre varer, som vist i følgende tabel. Når hun opretter indkøbsordren, tilsidesætter hun sammenholdelsespolitikken for den trådløse mus, så den er angives til trevejs-sammenholdelse i stedet for tovejs-sammenholdelse.
+-   Cassie angiver **Sammenholdelsespolitik** for kombinationen af varer og kreditor for varen PH2500 – Computer og kreditor Contoso til **Trevejs-sammenholdelse**.
+-   Anja, en indkøbsordreassistent i Fabrikams division i Malaysia, udsteder indkøbsordrer til Contoso om at levere tre varer, som vist i følgende tabel. Når hun opretter indkøbsordren, tilsidesætter hun **Sammenholdelsespolitik** for den trådløse mus, så den er angives til trevejs-sammenholdelse i stedet for tovejs-sammenholdelse.
 
     | Varenummer           | Antal | Enhedspris | Nettobeløb | Sammenholdelsespolitik (standardpost) | Sammenholdelsespolitik (på indkøbsordrelinjen) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -138,10 +134,13 @@ Bemærk følgende varer:
 -   For MM01 – Trådløs mus-linje indeholder kolonnen Antal afstemte produktkvitteringer et advarselsikon, fordi fakturalinjen ikke er sammenholdt med en produktkvittering. Kolonnen Sammenhold enhedspriser indeholder et advarselsikon, fordi tolerancen for nettoenhedspriser på 2 % er overskredet.
 -   For linjen USB-drev er kolonnen Antal afstemte produktkvitteringer tom, fordi tovejs-sammenholdelse ikke stemmer overens med antal på fakturalinje og produktkvitteringslinjer.
 
-Hvis godkendelse er påkrævet for fakturaer, der skal bogføres med uoverensstemmelser efter en fakturasammenholdelse, skal til/fra-feltet Godkend bogføring med matchningafvigelse på siden Detaljer om fakturasammenholdelse markeres, før fakturaen kan bogføres med fejl ved sammenholdelse af pris og fejl ved sammenholdelse af antal. Hvis godkendelse ikke er nødvendig, kan behandling af fakturaen fortsætte, hvis der ikke er andre bogføringsfejl.
+Hvis godkendelse er påkrævet for fakturaer, der skal bogføres med uoverensstemmelser efter en fakturasammenholdelse, skal til/fra-feltet **Godkend bogføring med matchningafvigelse** på siden **Detaljer om fakturasammenholdelse** markeres, før fakturaen kan bogføres med fejl ved sammenholdelse af pris og fejl ved sammenholdelse af antal. Hvis godkendelse ikke er nødvendig, kan behandling af fakturaen fortsætte, hvis der ikke er andre bogføringsfejl.
 
 
 Du kan finde flere oplysninger under [Oversigt over fakturasammenholdelse for kreditor](accounts-payable-invoice-matching.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

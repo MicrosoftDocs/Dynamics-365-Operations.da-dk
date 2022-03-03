@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: cfabd6f544dca6f48448da4ef9ff8383c6583f8488a718a7c971ff7b39c1f2cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8e74902e939355aba9bbadd8e7f8f8aa46fe5c5
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737969"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323919"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Skjule Word-indhold i genererede rapporter
 
 [!include [banner](../includes/banner.md)]
 
-Hvis du vil oprette Microsoft Word-rapporter som dokumenter, skal du designe en skabelon til rapporterne som et Word-dokument. Denne skabelon skal indeholde Word-indholdskontrolelementer som pladsholdere for data, der udfyldes under kørslen. Hvis du vil bruge et Word-dokument som skabelon til rapporter i Word-format, kan du [konfigurere](er-design-configuration-word.md) en ny [Elektronisk rapport (ER)](general-electronic-reporting.md) [som løsning](er-quick-start1-new-solution.md). Løsningen skal omfatte en ER-[konfiguration](general-electronic-reporting.md#Configuration), der indeholder en ER-[formatkomponent](general-electronic-reporting.md#FormatComponentOutbound). Dette ER-format skal være konfigureret, så det bruger den designede skabelon til generering af rapporter.
+Hvis du vil oprette Microsoft Word-rapporter som dokumenter, skal du designe en skabelon til rapporterne som et Word-dokument. Denne skabelon skal indeholde Word-indholdskontrolelementer som pladsholdere for data, der udfyldes under kørslen. Hvis du vil bruge et Word-dokument som skabelon til rapporter i Word-format, kan du [konfigurere](er-design-configuration-word.md) en ny [Elektronisk rapport (ER)](general-electronic-reporting.md) [som løsning](er-quick-start1-new-solution.md). Løsningen skal omfatte en ER-[konfiguration](general-electronic-reporting.md#Configuration), der indeholder en ER-formatkomponent. Dette ER-format skal være konfigureret, så det bruger den designede skabelon til generering af rapporter.
 
 I version 10.0.6 og senere af Dynamics 365 Finance kan du konfigurere formler i dit ER-format for at udelade visse Word-indholdskontrolelementer i genererede dokumenter.
 

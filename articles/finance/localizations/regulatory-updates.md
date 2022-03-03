@@ -1,26 +1,23 @@
 ---
 title: Lovmæssige opdateringer
 description: Dette emne indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 11/13/2020
+author: VStamberg
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: roschlom
+ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 46e9b3c3d47207715d0eee689913073d363f3af3
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 663b7d3162af6d385bc9c445b1e98cf5f74a1471
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517494"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105558"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -28,7 +25,7 @@ ms.locfileid: "4517494"
 
 I dette emne beskrives de lovmæssige opdateringer, der er planlagt og frigivet i Dynamics 365 Finance-understøttede lokaliseringer. Leveringstidslinjer kan blive ændret og planlagte funktioner kan være anderledes eller måske ikke frigivet. Yderligere oplysninger findre du i [Microsofts politik](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Lovgivningsmæssige opdateringer er funktioner, som integreres med henblik på at understøtte ny eller ændret lovgivning, der er specifik for det enkelte land/område. Du kan finde flere oplysninger om planlagte og frigivne funktioner, der gælder specifikt for det enkelte land/område, i [Produktbemærkninger til Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index).
+Lovgivningsmæssige opdateringer er funktioner, som integreres med henblik på at understøtte ny eller ændret lovgivning, der er specifik for det enkelte land/område. Du kan finde flere oplysninger om planlagte og frigivne funktioner, der gælder specifikt for det enkelte land/område, i [Produktbemærkninger til Dynamics 365 og Power Platform](/business-applications-release-notes/index).
 
 Microsoft bestræber sig på at gennemføre nye lovkrav så tidligt som muligt. Den faktiske leveringsdato afhænger af datoen for lovens offentliggørelse, de lokale myndigheders tilvejebringelse af deltaljerede oplysninger om lovkravene, valideringsværktøjernes tilgængelighed samt af ændringens omfang og kompleksitet.
 
@@ -41,49 +38,44 @@ Lovmæssige opdateringer, der frigives som en del af den månedlige opdatering, 
 De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabel.   
 
 |Land/område|Udstedelsesdato|Release-version|Lovmæssig opdatering|
-|--------------------|---------------|-------|-------|
-|      Østrig         |   2020. september      | 10.0.15      |   Momsangivelsesformat U30 er opdateret til 2020-indberetning   |
-|      Bahrain         |   2020. juni      | 10.0.13      |   Deadline for fakturaudstedelse (GCC)   |
-|      Bahrain         |   2020. september      | 10.0.13      |   Projektfaktura for Bahrain   |
-|      Bahrain         |   2020. juni      | 10.0.13      |   Momsopgørelse for Bahrain - aktiver posteringsbeskrivelse   |   
-|      Brasilien         |   August 2020      | 10.0.14, 10.0.13      |   ADRCST-erklæring-PR   |
-|      Brasilien         |   Maj 2020      | 10.0.13      |   SPED ECF-layout 6   |
-|      Brasilien         |   Juli 2020      | 10.0.13      |   SPED-regnskab – post C176 - RS-tilstand   |
-|      Brasilien         |   2020. oktober      | 10.0.16, 10.0.15HF, 10.0.14HF, 10.0.13HF      |   NF-e NT2019.001 v 1,51 - vedtagelse af valideringsregler efter frynsegodekode efter Distrito Federal   |
-|      Brasilien         |   2020. oktober      | 10.0.16      |   SPED-regnskabsløsning – Layout 015   |
-|      Brasilien         |   November 2020      | 10.0.15 HF      |   HURTIG regnskabs ICMS/IPI-post C176 Opdater til RS-tilstand   |
-|      Brasilien         |   2020. oktober      | 10.0.16      |   DRCST-erklæring-SC - SEF 262/2020   |
-|      Brasilien         |   2020. oktober      | 10.0.16      |   HURTIGE regnskabs ICMS/IPI-post C176   |
-|      Tjekkiet      |   Juli 2020      | 10.0.13      |   Kontrolopgørelse af moms ændres i XML-skema (fakturaoversigt)   |
-|      Tjekkiet         |   Juli 2020      | 10.0.13      |   Momsopgørelse i XML, eksempelvisning af momsopgørelse i Excel og XML-formater for kontrolopgørelse af moms baseret på skatteopgørelsesmodel   |
-|      Europa        |   August 2020       | 10.0.14      |   Overfør partnermoms-id til Intrastat  |
-|      Finland         |   Juli 2020       | 10.0.13      |   Understøttelse af elektroniske fakturaer for Finland  |
-|      Indien         |   Juli 2020      | 10.0.13      |   TCS på salg af varer som pr. sektion 206C (1H) - grænse som pr. PAN-baseret akkumulering af transaktioner.  |
-|      Indien         |   August 2020, juni 2020      | 10.0.13      |   Kredit-/debetnota i henhold til eksportfaktura  |
-|      Indien         |   August 2020      | 10.0.13      |   Elektronisk faktura under GST  |
-|      Indien         |   Juli 2020      | 10.0.13      |   Nyt GSTR (ANX-1 & ANX-2) offlineværktøj (betaversion)  |
-|      Indien         |   2020. oktober      | 10.0.14HF, 10.0.13HF      |   E-faktura under GST på lageroverførselsordre for Indien|
-|      Indien         |   2020. oktober      | 10.0.14HF, 10.0.13HF      |   E-faktura i GST for Indien med flere GSTIN-registreringer|
-|      Indien         |   2020. september      | 10.0.13HF      |   A-skattesats i 3/5 decimaler|
-|      Indien         |   2020. september      | 10.0.14HF      |   Nummerseriegruppe: "GSTNSG", posteringstype: "GST-faktura", der skal oprettes for GST-referencenummerseriegruppen for skatteoplysninger "0073"|
-|      Italien         |   Juli 2020      | 10.0.13      |   Ændringer i formatet for italienske elektroniske fakturaer – FatturaPA |
-|      Malaysia         |   Juli 2020      | 10.0.13      |   SST-rapport |
-|      Mexico         |   2020. september      | 10.0.13HF      |   CFDI-URL-skemaplacering baseret på Anexo 20-dokument |
-|      Nederlandene         |   2020. oktober      | 10.0.16     |   Intrastat-formatet opdateres fra 2021 |
-|      Norge         |   August 2020      | 10.0.14     |   SAF-T-transaktioners grupperingsniveau efter "bilag" skal rapporteres for vareniveauet "Transaktion" i stedet for "Kladde" |
-|      Polen          |   2020. september     | 10.0.14     |   Polen: JPK-V7M (VDEK) Excel-format – til erstatning af SSRS-rapport  |
-|      Polen          |   Juli 2020     | 10.0.15, 10.0.14HF, 10.0.13     |   Frivilligt opdelte forbedringer af betalinger |
-|      Polen          |   2020. oktober     | 10.0.13HF     |   Forbedringer af obligatorisk opdelt betalinger |
-|      Polen          |   November 2020     | 10.0.16, 10.0.15, 10.0.14, 10.0.13     |   JPK-V7M (VDEK) - salgsdokumenttypen FP og RO i forbindelse med detailtransaktioner |
-|      Polen          |   2020. september     | 10.0.15     |   Polen: JPK-V7M (VDEK) – mulighed for oplåsning af rapportgenerering efter dele |
-|      Polen          |   2020. oktober     | 10.0.16     |   JPK-V7M (VDEK) rapport -'Frivillig opdeling af betalingsparameterinddragelse |
-|      Rusland          |   August 2020     | 10.0.14    |   Formatet for regnskabsrapporteringen ændres med start i år 2020  |
-|      Rusland          |   Juli 2020     | 10.0.13    |   Afskrivningsberegning på basis af anskaffelsesomkostninger og større reparationer ved anvendelse af straksafskrivning i skatteregnskab  |
-|      Rusland          |   November 2020     | 10.0.16    |   Moms-opgørelsesformatet opdateres til version 5,07 med udgangspunkt i rapporteringen for fjerde kvartal 2020|
+|--------------------|---------------|-------|-------| 
+|      Østrig         |   August 2021      | 10.0.22      |   Momsopgørelse i XML og forhåndsversion i Excel   |
+|      Østrig         |   2021. september      | 10.0.22HF      |   Intrastat-format opdateres med start fra 2022 – Oprindelsesland og Partnermoms-id bliver obligatoriske på afsendelser   |
+|      Belgien        |   2021. oktober      | 10.0.22HF     |   Intrastat-transaktionskoder ændres til to cifre med start fra 2022  |
+|      Brasilien         |   August 2021      | 10.0.22      |   NF-e NT2020.006 – Identifikation af det digitale platformmellemled (opdatering af layout og valideringsregler)   |
+|      Brasilien         |   2021. december         | 10.0.22, 10.0.23, 10.0.24         |    SPED-regnskabslayout 2022  |
+|      Tjekkiet         |   2021. oktober         | 10.0.23HF         |     Intrastat-format opdateres med start fra 2022 – Oprindelsesland og Partnermoms-id bliver obligatoriske på afsendelser  |
+|      Danmark         |   2021. december         | 10.0.22HF         |    Intrastat-formatet opdateres fra 2022  |
+|      Estland         |   2021. december      | 10.0.22HF      |   Intrastat-format opdateres med start fra 2022 – Oprindelsesland og Partnermoms-id bliver obligatoriske på afsendelser  |
+|      Finland         |   November 2021         | 10.0.22HF         |    Intrastat-formatet opdateres fra 2022.  |
+|      Tyskland        |   August 2021       | 10.0.22HF      |   Intrastat-formatet INSTAT XML opdateres fra 2022. Intrastat-formatet TXT gælder ikke fra 07-01-2021  |
+|      Tyskland        |   2021. oktober       | 10.0.23      |   Momsopgørelse i XML og forhåndsversion i Excel (nyt design med beløb i momskodevaluta, hvor du straks kan arbejde med funktionen for modtagermoms, kan udføres i ikke-DE-juridiske enheder og kan opkræve momstransaktioner fra flere juridiske enheder)  |
+|      Italien         |   November 2021         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Elektronisk fakturering af transaktioner, der krydser grænser  |
+|      Mexico         |   November 2021      | 10.0.22      |   Carta de Porte-supplement i CFDI-dokumenter   |
+|      Mexico         |   2021. december      | 10.0.24      |   Supplement til Carta de Porte version 2.0  |
+|      Nederlandene        |   2021. oktober      | 10.0.22HF      |   Tocifrede transaktionskoder i Intrastat-filformat fra 2022  |
+|      New Zealand         |   August 2021      | 10.0.22    |   GST-opgørelsesformular GST101A  |
+|      Norge        |   November 2021      | 10.0.24      |   Momsopgørelsesformat 2022 med direkte indsendelse - Dynamics 365 Finance |
+|      Oman         |   August 2021      | 10.0.22      |   Momsopgørelse - Version 1 |
+|      Polen          |   2021. oktober     | 10.0.23, 10.0.24     |   JPK_V7M – ny skemaversion fra januar 2022 |
+|      Polen          |   November 2021     | 10.0.24HF     |   Årsrapport om betalingsdatoer i handelstransaktioner |
+|      Polen          |   2021. oktober     | 10.0.24     |   Elektronisk format for EU-listesystemet (VAT-UE) |
+|      Rusland          |   2021. oktober     | 10.0.22HF, 10.0.23, 10.0.24    |   Ændringer i salgsbøger, købsbøger og fakturakladder|
+|      Rusland          |   2021. oktober     | 10.0.24HF    |   Ændring i formater af momsopgørelse med bilag|
+|      Rusland          |   November 2021     | 10.0.24    |   Federal Accounting Standards 6/2020 (anlægsaktiver)|
+|      Saudi-Arabien          |   November 2021     | 10.0.22HF, 10.0.23    |   Generering af elektronisk fakturering i Saudi-Arabien – fase 1|
+|      Saudi-Arabien          |   November 2021     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Detail – Elektronisk fakturering i Saudi-Arabien – fase 1|
+|      Spanien          |   2021. oktober     | 10.0.23    |    Momsopgørelsesmodel 303 i txt og forhåndsversion i Excel|
+|      Spanien          |   2021. september     | 10.0.22    |    Intrastat-format opdateres for 2022-indberetning – Oprindelsesland og partnermoms-id bliver obligatoriske på afsendelser|
+|      Sverige          |   2021. oktober     | 10.0.22HF    |    Intrastat-format opdateres med start fra 2022 – Oprindelsesland og Partnermoms-id bliver obligatoriske på afsendelser. Der bruges tocifrede transaktionskoder.|
+|      Storbritannien          |   August 2021     | 10.0.22    |    UK - MTD-forebyggelse af bedrageri 2021)|
 
 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-- Find alle planlagte og frigivne lovmæssige opdateringer på [Lifecycle Service - Problemløsning](https://lcs.dynamics.com/Logon/Index) (logon er påkrævet).
+- Du kan finde flere oplysninger om alle planlagte og frigivne landespecifikke lovmæssige opdateringer i [Søge efter landespecifikke lovmæssige opdateringer](search-for-regulatory-updates.md). (Logon er påkrævet).
 - En liste over de oversættelser, der understøttes, finder du i [Vejledning til international tilgængelighed](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

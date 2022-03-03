@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4b7c01a21dcbe7543332439ee6fd371b426851f4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579922"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103507"
 ---
 # <a name="wave-creation-and-processing"></a>Bølgeoprettelse og -behandling
 
@@ -190,9 +190,9 @@ Hvis det er nødvendigt, kan du annullere en bølge, der er blevet behandlet. Hv
 
 Brug siden **Detaljer om bølgebatchjob** til at undersøge batchjob og relaterede opgaver, der er tilknyttet en hvilken som helst bølge. Dette er især nyttigt ved fejlfinding af en bølge, der er mislykket. Uden denne funktion er det kun administratorer, der typisk har adgang til batchjoboplysninger. Siden **Detaljer om bølgebatchjob** kan gøres tilgængelige for brugere, der ikke er administratorer, og giver en skrivebeskyttet visning af batchjob og relaterede opgaver.
 
-### <a name="enable-the-wave-batch-job-details-page"></a>Aktivere siden Detaljer om bølgebatchjob
+### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Aktivere eller deaktivere siden Detaljer om bølgebatchjob
 
-Hvis systemet ikke allerede indeholder siden **Detaljer om bølgebatchjob**, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere *Detaljer om bølgebatchjob*.
+Fra og med Supply Chain Management version 10.0.25 er funktionen **Detaljer om bølgebatchjob** som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Detaljer om bølgebatchjob* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Bruge siden Detaljer om bølgebatchjob
 

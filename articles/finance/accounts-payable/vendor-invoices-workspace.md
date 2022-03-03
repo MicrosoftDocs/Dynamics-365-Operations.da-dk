@@ -1,30 +1,27 @@
 ---
-title: Arbejdsområdet Kreditorfakturapostering
+title: Arbejdsområde for automatisering af kreditorfakturaer
 description: Dette emne forklarer, hvordan du konfigurerer det arbejdsområde, der er relateret til kreditorfakturaer, og som viser de oplysninger, der er tilgængelige via Microsoft Power BI.
 author: abruer
-manager: AnnBe
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4441719"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182573"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Arbejdsområdet Kreditorfakturapostering
+# <a name="vendor-invoice-automation-workspace"></a>Arbejdsområde for automatisering af kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -33,11 +30,11 @@ Dette emne forklarer, hvordan du konfigurerer det arbejdsområde, der er relater
 
 ## <a name="overview"></a>Overblik
 
-Arbejdsområdet **Kreditorfakturapostering** viser oplysninger, der vedrører behandling af kreditorfakturaer. Det indeholder en **Mit arbejde**-visning og siden **Analyser – Alle firmaer**. Visningen **Mit arbejde** viser oversigtsfelter, gitre til kreditorpostering og relaterede kreditoroplysninger. Siden **Analyser – Alle firmaer** bruger funktionerne i Power BI til at vise visualiseringer, der vedrører kreditorfakturaer.
+Arbejdsområdet **Automatisering af kreditorfakturaer** viser oplysninger, der vedrører behandling af kreditorfakturaer. Det indeholder en **Mit arbejde**-visning og siden **Analyser – Alle firmaer**. Visningen **Mit arbejde** viser oversigtsfelter, gitre til kreditorpostering og relaterede kreditoroplysninger. Siden **Analyser – Alle firmaer** bruger funktionerne i Power BI til at vise visualiseringer, der vedrører kreditorfakturaer.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Konfigurere arbejdsområdet til at vise Power BI-indhold
 
-Du skal fuldføre denne opsætning, før data kan vises i Power BI-visualiseringer i arbejdsområdet **Kreditorfakturapostering**.
+Du skal fuldføre denne opsætning, før data kan vises i Power BI-visualiseringer i arbejdsområdet **Automatisering af kreditorfakturaer**.
 
 1. I arbejdsområdet **Funktionsstyring** skal du filtrere listen for at finde funktionen **Automatisering af kreditorfaktura**.
 3. Vælg **Aktiver nu**.
@@ -57,20 +54,20 @@ Hvis du vil have vist de oplysninger, der vises i arbejdsområdet, skal du have 
 
 ### <a name="company-selection"></a>Firmavalg
 
-Når funktionen **Automatiser kreditorfakturaer** er aktiveret, vises feltet **Firma** øverst i arbejdsområdet. Valget i feltet **Firma** påvirker alle de oplysninger, der vises i arbejdsområdet. I visningen ses standardoplysninger om det firma, du har logget på. Hvis du vælger et andet firma i feltet **Firma**, kan du få vist oplysninger om det pågældende firma i arbejdsområdet. Du kan derefter vælge et felt i arbejdsområdet for at gå til den relaterede side i det valgte firma.
+Når funktionen **Automatisering af kreditorfakturaer** er aktiveret, vises feltet **Virksomhed** øverst i arbejdsområdet. Valget i feltet **Firma** påvirker alle de oplysninger, der vises i arbejdsområdet. I visningen ses standardoplysninger om det firma, du har logget på. Hvis du vælger et andet firma i feltet **Firma**, kan du få vist oplysninger om det pågældende firma i arbejdsområdet. Du kan derefter vælge et felt i arbejdsområdet for at gå til den relaterede side i det valgte firma.
 
 ### <a name="summary-tiles"></a>Oversigt over felter
 
 Felterne i sektionen **Oversigt over ventende fakturaer** i visningen **Mit arbejde** giver en oversigt over kreditorfakturaernes status. Du kan se kladder, der endnu ikke er bogført, og fakturaer, der er på hold. Derudover er der fire felter, der er knyttet til funktionen til automatisering af kreditorfakturaer:
 
-- Matchning med manuel kvittering er nødvendig
-- Matchningsvalidering blev ikke fuldført
-- Fakturaer blev ikke sendt til arbejdsproces
-- Fakturaer blev ikke importeret
+- **Matchning med manuel kvittering er nødvendig**
+- **Matchningsvalidering blev ikke fuldført**
+- **Fakturaer blev ikke sendt til arbejdsproces**
+- **Fakturaer blev ikke importeret**
 
-(Disse fire felter kræver, at funktionen til automatisering af kreditorfakturaer aktiveres i Funktionsstyring).
+(Disse fire felter kræver, at funktionen til automatisering af kreditorfakturaer aktiveres i **Funktionsstyring**).
 
-Hvis du vil bruge feltet **Gendan kreditorfakturaer**, skal funktionen være aktiveret i Kreditorparametre. Gå til **Kreditor \> Kreditorparametre**, og angiv derefter indstillingen **Tillad gendannelse af kreditorfaktura** til **Ja** under fanen **Faktura**.
+Hvis du vil bruge feltet **Gendan kreditorfakturaer**, skal funktionen være aktiveret i **Kreditorparametre**. Gå til **Kreditor \> Kreditorparametre**, og angiv derefter indstillingen **Tillad gendannelse af kreditorfaktura** til **Ja** under fanen **Faktura**.
 
 Når funktionen er slået til, vil du også have grupperet tre felter sammen i arbejdsområdet i et afsnit, der kaldes **Kladder**. Felterne har navnene **Kladder**, **Kladder, der er tildelt mig** og **Fakturapulje**. 
 
@@ -117,3 +114,6 @@ Følgende tabel viser de visualiseringer, der er tilgængelig på hver rapportsi
 | Fakturaer, der ikke blev importeret | <ul><li>Fakturaer, der ikke blev importeret</li><li>Fakturaer, der ikke blev importeret, efter firma</li></ul> |
 | Årsager til automatiseringsfejl | <ul><li>Mislykkede fakturaer</li><li>Mislykkede fakturaer efter firma</li><li>Mislykkede fakturaer efter kreditorgruppe</li></ul> |
 | Workflowsstatus                | <ul><li>Fakturaer i arbejdsproces</li><li>Arbejdsprocesforekomster af kreditorfaktura</li><li>Tildeling pr. godkender</li><li>Arbejdsproces for kreditorfakturaer pr. firma</li><li>Gennemsnitligt antal dage i arbejdsgang pr. godkender</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

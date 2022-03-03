@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b8d663fa9743fae83654ed9938b4131e0fa08b9
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902166"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103307"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Tildele trinikoner og titler til mobilappen Warehouse Management
 
@@ -27,12 +27,9 @@ Følgende illustrationer viser, hvordan trinikoner og titler vises i mobilappen 
 
 ![Eksempel på et trinikon og en trintitel i mobilappen Warehouse Management.](media/step-icon-example.png "Eksempel på et trinikon og en trintitel i mobilappen Warehouse Management")
 
-## <a name="turn-on-this-feature-in-your-system"></a>Aktivere denne funktion i systemet
+## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funktion
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp*
+Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* være aktiveret i systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standardtrin-id'er, klasser og ikoner
 

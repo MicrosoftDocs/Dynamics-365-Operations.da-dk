@@ -2,7 +2,7 @@
 title: Fejlfinde problemer med opsætningen af Finance Insights
 description: Dette emne indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
 author: panolte
-ms.date: 01/29/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064860"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109854"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Fejlfinde problemer med opsætningen af Finance Insights
 
@@ -111,6 +111,14 @@ Du kan finde flere oplysninger om, hvordan du justerer kategorierne **Til tiden*
 
 ### <a name="resolution"></a>Løsning
 
-Modeltræningen **Likviditetsbudget** kræver data, der dækker mere end ét år, og som indeholder mere end 100 transaktioner. Disse transaktioner skal påvirke de likviditetskonti, der er medtaget i opsætningen af likviditetsbudgettet.
+Modeltræningen **Likviditetsbudget** kræver data, der dækker mere end ét år, og som indeholder mindst 100 transaktioner. Det anbefales, at du har mindst to års data med mere end 1.000 transaktioner.
 
-**Forudsigelser om debitorbetaling** kræver mindst 100 debitorfaktura- og betalingsposteringer i løbet af de sidste seks til ni måneder for at oprette forudsigelser.  
+Funktionen **Forudsigelser om debitorbetalinger** kræver mere end 100 transaktioner i de foregående seks til ni måneder. Transaktionerne kan omfatte fritekstfakturaer, salgsordrer og debitorbetalinger. Disse data skal fordeles på tværs af indstillingerne **Til tiden**, **For sent** og **Meget sent**, der defineres på siden **Konfiguration**.    
+
+Funktionen **Budgetforslag** kræver mindst tre års budgetdata eller faktiske data. Denne løsning bruger tre til ti års data i projektioner. Mere end tre år giver bedre resultater. Selve dataene fungerer bedst, når der er variation i værdierne. Hvis dataene indeholder alle konstante data, f.eks. en leasingudgift, kan træningen mislykkes, fordi manglende variation ikke kræver AI til at projektere beløbene.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Symptom: Fejlmeddelelse viser, at "Tabel med navn, "msdyn_paypredpredictionresultentities" ikke findes. Fjernserveren returnerede en fejl: (404) Ikke fundet..."
+
+### <a name="resolution"></a>Løsning
+
+Miljøet har nået maksimumtabelgrænsen for Data Lake-tjenester. Du kan finde flere oplysninger om grænsen i afsnittet **Aktivere dataændringer i næsten realtid** i emnet, [Oversigt over eksport til Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

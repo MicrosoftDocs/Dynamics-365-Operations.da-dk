@@ -1,12 +1,10 @@
 ---
 title: Tastaturgenveje
-description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finance and Operations-apps.
+description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finans- og driftsapps.
 author: jasongre
-manager: AnnBe
-ms.date: 10/05/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798220"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119546"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
 [!include [banner](../includes/banner.md)]
 
-Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data i Finance and Operations-apps.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data i Finans og drift-apps. 
 
 > [!NOTE]
 > De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
@@ -36,11 +37,11 @@ Nogle af genvejene på denne side er *tasteakkorder*, hvilket betyder, at de kr�
 
 ## <a name="finding-a-shortcut"></a>Søge efter en genvej
 
-Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgængelige i øjeblikket, direkte fra brugergrænsefladen. Du skal blot højreklikke på et kontrolelement og vælge **Vis genveje**. Der åbnes en dialogboks med de genveje, du kan bruge, afhængigt af hvor du befinder dig på siden.
+Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra brugergrænsefladen. Du skal blot højreklikke på et kontrolelement og vælge **Vis genveje**. Der åbnes en dialogboks med de genveje, du kan bruge, afhængigt af hvor du befinder dig på siden. Du kan også trykke på Alt+Skift+K for at åbne denne dialogboks (og trykke på Alt+Skift+K en gang til for at se alle aktuelt tilgængelige genveje til siden).    
 
 ## <a name="action-shortcuts"></a>Handlingsgenveje
 
-| Hvis du vil gøre dette                                      | Tryk på                            |
+| Hvis du vil gøre dette                                      | Tryk på                             |
 |-------------------------------------------------|----------------------------------|
 | Åbne handlingssøgning                              | Ctrl+' eller Alt+Q                  |
 | Flytte til standardhandlingsruden                | Alt+M, A eller Ctrl+F6               |
@@ -129,8 +130,10 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 ## <a name="grid-shortcuts"></a>Genvejstaster til gitteret
 
-| Hvis du vil gøre dette                                                                                                             | Tryk på                           |
+| Hvis du vil gøre dette                                                                                                             | Tryk på                            |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Lodret rulning                                                                                                     | Musehjulet                     |
+| Vandret rulning                                                                                                   | Skift + Musehjulet             |
 | Flytte til næste/forrige kolonne                                                                                       | Tabulator/Skift+tabulator                 |
 | Flytte til næste/forrige række                                                                                          | Pil op/pil ned           |
 | Flyt til den næste/forrige række uden at vælge<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote> | Ctrl+pil op/Ctrl+pil ned |
@@ -142,22 +145,24 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Flyt til den første post                                                                                               | Ctrl+Home                       |
 | Flyt til den sidste post                                                                                                | Ctrl+End                        |
 | Markér eller fjern alle rækker                                                                                               | Ctrl+Skift+M                    |
-| Flyt til den første markerede række                                                                                           | Alt+Shift+M, F                    |
-| Flyt til den næste markerede række                                                                                            | Alt+Shift+M, L                    |
-| Flyt til den forrige markerede række                                                                                        | Alt+Shift+M, P                    |
-| Flyttet til den sidst markerede række                                                                                           | Alt+Shift+M, N                    |
+| Flyt til den første markerede række                                                                                           | Alt+Shift+M, F                  |
+| Flyt til den næste markerede række                                                                                            | Alt+Shift+M, L                  |
+| Flyt til den forrige markerede række                                                                                        | Alt+Shift+M, P                  |
+| Flyttet til den sidst markerede række                                                                                           | Alt+Shift+M, N                  |
 | Udføre standardhandlingen i et gitter<blockquote>[!NOTE] Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links.</blockquote> | Enter                           |
 | Skifte fokus mellem den markerede række og rækken med kolonneoverskrifter                                                               | Alt+Skift+H                     |
 | Gør den aktuelle kolonne større/mindre (med fokus i kolonneoverskriftsrækken)                                                  | Højre pil eller venstre pil        |
+| Flyt den aktuelle kolonne til næste/forrige placering (med fokus på overskriftsrækken)                                   | Ctrl+Skift+højre pil/Ctrl+Skift+venstre pil |
 | Åbn gitterfiltrering for den aktuelle kolonne (med fokus i kolonneoverskriftsrækken)                                              | Enter                           |
+| Tilpasse størrelsen på den aktuelle kolonne, så den passer til indholdet (med fokus på overskriftsrækken)                                           | A (eller dobbeltklik på kolonnens størrelseshåndtag) |
 
 ## <a name="input-control-shortcuts"></a>Genveje for inputstyring
 
-| Hvis du vil gøre dette                                                                   | Tryk på                         |
+| Hvis du vil gøre dette                                                                   | Tryk på                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Åbn linket                                                           | Ctrl+Enter                    |
-| Angive sessionsdatoen i et datofelt                                       | N                         |
-| Indtaste den aktuelle dato i et datofelt                                       | T                         |
+| Angive sessionsdatoen i et datofelt                                       | N                             |
+| Indtaste den aktuelle dato i et datofelt                                       | T                             |
 | Åbne opslag, kombinationsboks, datovælger, dialogboks                         | Alt+pil ned                |
 | Lukke opslag, kombinationsboks, datovælger, dialogboks                        | Esc                           |
 | Flytte fokus til et opslag (når opslaget er allerede åbnet)                   | Alt+pil ned                |
@@ -204,8 +209,8 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Brug værktøjet Flyt (i tilpasningstilstand)                                                                       | M                                   |
 | Vælg det aktuelle kontrolelement som det, der skal flyttes (når du bruger værktøjet Flyt, og der endnu ikke er valgt noget kontrolelement, der skal flyttes)  | Mellemrum eller Enter                      |
 | Fjern markeringen af kontrolelementet, der skal flyttes (når du bruger værktøjet Flyt)                                                                   | Esc                                 |
-| Flyt til den næste position for det markerede kontrolelement (ved brug af værktøjet Flyt)                                          | Tab eller højre pil eller pil ned    |
-| Flyt til den forrige position for det markerede kontrolelement (ved brug af værktøjet Flyt)                                      | Skift+Tab eller venstre pil eller pil op |
+| Flytte det markerede kontrolelement til den næste position (ved brug af værktøjet Flyt)                                              | Tab eller højre pil eller pil ned    |
+| Flytte det markerede kontrolelement til den forrige position (ved brug af værktøjet Flyt)                                          | Skift+Tab eller venstre pil eller pil op |
 | Brug værktøjet Skjul (i tilpasningstilstand)                                                                       | H                                   |
 | Skift om det aktuelle kontrolelement er synligt eller skjult (når du bruger værktøjet Skjul)                                     | Mellemrum eller Enter                      |
 | Brug værktøjet Spring over (i tilpasningstilstand)                                                                       | K                                   |
@@ -251,7 +256,14 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Udvide/skjule den animerede pop op-prompt (under afspilning af en opgaveguide)              | Alt + R,C                    |
 | Vise flere/færre oplysninger i den animerede pop op-prompt (under afspilning af en opgaveguide) | Alt + R,M                    |
 
+## <a name="focus-management"></a>Fokusstyring 
+Fokusstyring beskriver, hvordan brugerfokus håndteres i et program. Finans og drift-apps har specielle fokuseringsmåder, der har til formål at optimere brugerproduktiviteten, især i forbindelse med dataindtastningsscenarier. Fokuseringsmåder omfatter følgende:  
+
+-  Når en side indlæses, vil det første redigerbare inputkontrolelement på siden være i fokus og kan acceptere brugerinput med det samme. Hvis der ikke er noget redigerbart inputkontrolelement på siden, er reserveindstillingen for første fokusering det første inputkontrolelement på siden efterfulgt af det første fokuserbare kontrolelement på siden.   
+-  Når der er valgt en knap, behandles handlingen typisk, og fokusering kan vende tilbage til siden. Når det sker, fokuseres der typisk på det valgte knapkontrolelement. Det gælder i Finans og drift-apps, **undtagen** når knappen findes i handlingsruden eller på en værktøjslinje. I disse tilfælde, når handlingen er fuldført, vender fokus tilbage til det sidste kontrolelement *uden for* handlingsruden (eller værktøjslinjen), der var i fokus, før knappen blev valgt.
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tastaturgenveje til manglende kontoanalyse](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

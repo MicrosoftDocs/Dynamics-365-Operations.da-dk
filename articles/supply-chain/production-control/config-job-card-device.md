@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777734"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103432"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobkort for enheder
 
@@ -34,21 +34,19 @@ Nogle få af de indstillinger, der er beskrevet i dette emne, skal være aktiver
 
 Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i rækkefølge):
 
-1. Nummerplade til færdigmelding er føjet til jobkortenheden (fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret).
-1. Aktivér automatisk generering af id-nummer ved færdigmelding i jobkortenheden
+1. *Id for færdigmelding tilføjet i jobkortenheden*<br>(Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk.)
+1. *Aktivér automatisk generering af id-nummer ved færdigmelding i jobkortenheden*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk.)
 
 ### <a name="print-label"></a>Udskriv label
 
 Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i rækkefølge):
 
-1. Nummerplade til færdigmelding er føjet til jobkortenheden (fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret).
-1. Udskriv etiket fra jobkortenhed
+1. *Id for færdigmelding tilføjet i jobkortenheden*<br>(Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk.)
+1. *Udskriv etiket fra jobkortenhed*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk.)
 
 ### <a name="allow-locking-of-touch-screen"></a>Tillad låsning af berøringsskærm
 
-Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Hvis du vil bruge denne funktion, skal du sørge for, at følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) er aktiveret:
-
-- Funktion til låsning af jobkortenhed og jobkortterminal, så de kan renses
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktionalitet til eller fra ved at søge efter *Funktion til låsning af jobkortenhed og jobkortterminal, så de kan renses.* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="manage-your-device-configurations"></a>Administrer konfigurationen af din enhed
 

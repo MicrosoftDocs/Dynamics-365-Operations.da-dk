@@ -2,7 +2,7 @@
 title: Produktlivscyklustilstande og transaktioner
 description: I dette emne forklares det, hvordan du kan styre, hvilke transaktioner der er tilladt for hver enkelt livscyklustilstand, når et teknisk produkt går gennem dets livscyklus.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 12f95feda887b5f1284624e5f072b498a78d00e1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
+ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574635"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8322738"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktlivscyklustilstande og transaktioner
 
@@ -93,5 +93,13 @@ Antag f.eks., at du kun vil sælge én variant (rød) af et bestemt produkt (t-s
 - Tildel produktet en livscyklustilstand, der giver mulighed for at køre processen. Tildel f.eks. t-shirtproduktet livscyklustilstanden *Salgbar*, som giver mulighed for kørsel af forretningsprocessen *Salgsordre*.
 - Tildel den salgbare variant en livscyklustilstand, der giver mulighed for at køre processen. Tildel f.eks. også den røde variant livscyklustilstanden *Salgbar*.
 - Alle andre varianter tildeles en anden livscyklustilstand, hvor processen er blokeret. Tildel f.eks. den hvide variant (og alle andre varianter) livscyklustilstanden *Ikke salgbar*, hvilket blokerer forretningsprocessen *Salgsordrer*.
+
+## <a name="default-product-lifecycle-states"></a>Standardtilstande for produktlivscyklusser
+
+Standardlivscyklustilstanden for en teknisk version er angivet af dens tekniske kategori. Tilstanden angives som standard, når du opretter en ny teknisk version, herunder den første version af et nyt produkt.
+
+Når du opretter et nyt produkt eller et nyt teknisk produkt, kan du også angive standardlivscyklusstilstanden ved at angive den på skabelonen for det frigivne produkt i den frigivelsespolitik, der er tildelt produktet.
+
+I dette tilfælde er det muligt, at produktet har en anden livscyklustilstand end versionen, når du opretter et nyt teknisk produkt.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

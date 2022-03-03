@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 066655b58d4676bafb6e8ed8d80a95636c047444
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566017"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102857"
 ---
 # <a name="change-work-pool-on-work"></a>Skift arbejdspulje på arbejde
 
@@ -28,12 +28,9 @@ Du kan bruge arbejdspuljer til at organisere arbejde i grupper. Du kan f.eks. op
 
 Funktionen *Skift arbejdspulje på arbejde* tilføjer knappen **Skift arbejdspulje** i handlingsruden for arbejdselementer. Lagercheferne kan derfor nemt ændre arbejdspuljen for eksisterende arbejde. Denne funktion giver cheferne mulighed for hurtigt at reagere på ændringer i lagerstedets produktion, og det er med til at forbedre deres evne til at tilpasse sig skiftende situationer og behovet for at overføre arbejde til en anden arbejdsgruppe.
 
-## <a name="turn-on-the-change-work-pool-on-work-feature"></a>Aktivere funktionen Skift arbejdspulje på arbejde
+## <a name="turn-the-change-work-pool-on-work-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Skift arbejdspulje på arbejde
 
-Før du begynder at konfigurere eller bruge denne funktion, skal du sørge for, at den er tilgængelig i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Skift arbejdspulje på arbejde*
+Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Skift arbejdspulje for arbejde* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Konfigurere funktionen Skift arbejdspulje på arbejde
 

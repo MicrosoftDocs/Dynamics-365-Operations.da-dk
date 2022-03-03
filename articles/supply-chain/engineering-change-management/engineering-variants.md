@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e24bceac9457212ecaafda876d19ba62df049371
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7471830"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103632"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Generere varianter for tekniske produkter
 
@@ -23,15 +23,9 @@ ms.locfileid: "7471830"
 
 Dette emne indeholder en beskrivelse af, hvordan du kan generere varianter for tekniske produkter.
 
-## <a name="turn-on-variant-generation-for-engineering-products"></a>Aktivere variantgenerering for tekniske produkter
+## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Aktivere eller deaktivere variantgenerering for tekniske produkter
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *styring af tekniske ændringer*
-- **Funktionsnavn:** *Variantgenerering for tekniske produkter*
-
-> [!IMPORTANT]
-> Funktionen til *variantgenerering af produkter til teknikerarbejde* kan først ses i systemet, når du har aktiveret konfigurationsnøglen til *Ændringsstyring for teknikerarbejde*. Yderligere oplysninger finder du i [Oversigt over teknisk ændringsstyring](product-engineering-overview.md).
+Den funktionalitet, der beskrives i dette emne, kræver, at både *Styring af tekniske ændringer* og *Variantgenerering af tekniske produkter* er aktiveret for systemet. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer disse funktioner, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generere en eller flere nye varianter af et teknisk produkt
 

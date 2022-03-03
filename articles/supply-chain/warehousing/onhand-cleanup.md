@@ -2,11 +2,9 @@
 title: Job til oprydning i disponible poster til lokationsstyring
 description: Dette emne beskriver jobbet til oprydning i disponible poster, som hjælper med at forbedre systemets ydeevne ved at identificere og slette relaterede, men unødvendige poster.
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -14,15 +12,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014477"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103857"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Job til oprydning i disponible poster til lokationsstyring
+
+[!include [banner](../includes/banner.md)]
 
 Ydeevnen af forespørgsler, der bruges til at beregne den disponible lagerbeholdning, påvirkes af antallet af poster i de tabeller, der er involveret. Én måde at forbedre ydeevnen på er at reducere antallet af poster, som databasen skal overveje.
 
@@ -58,7 +58,7 @@ Den forbedring af ydeevnen, som oprydningsjobbet skal give, skulle dog kompenser
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Gøre indstillingen for den maksimale kørselstid tilgængelig
 
-Som standard er indstillingen for **Maksimal kørselstid** ikke tilgængelig. Hvis du vil anvende den, skal du bruge [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for at aktivere den relaterede funktion i systemet. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Indstillingen **Maksimal udførelsestid** er kun tilgængelig, når funktionen *Maksimal udførelsestid for jobbet i lokationsstyring til oprydning i disponible poster* er aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter *Maksimal udførelsestid for jobbet i lokationsstyring til oprydning i disponible poster* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Den maksimale kørselstid for job til oprydning i disponible poster til lokationsstyring*
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

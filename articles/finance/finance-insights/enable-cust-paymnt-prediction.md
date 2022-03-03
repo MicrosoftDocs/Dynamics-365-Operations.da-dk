@@ -1,64 +1,55 @@
 ---
-title: Aktivere forudsigelser om debitorbetalinger (prøveversion)
+title: Aktivere forudsigelser om debitorbetalinger
 description: Dette emne forklarer, hvordan du aktiverer og konfigurere funktionen Forudsigelser om debitorbetalinger i Finance Insights.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e10aa9342ec9f089ef8ecec5e1221a31c580fc87
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: b83d1230c94462ca722ad7ceb7b2185afd636aae
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644987"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109598"
 ---
-# <a name="enable-customer-payment-predictions-preview"></a>Aktivere forudsigelser om debitorbetalinger (prøveversion)
+# <a name="enable-customer-payment-predictions"></a>Aktivere forudsigelser om debitorbetalinger
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emne forklarer, hvordan du aktiverer og konfigurere funktionen Forudsigelser om debitorbetalinger i Finance Insights. Du kan aktivere funktionen i arbejdsområdet **Administration af funktioner** og angive konfigurationsindstillingerne på siden **Finance Insights-parametre**. Dette emne indeholder også oplysninger, der kan hjælpe dig med at bruge funktionen effektivt.
+Dette emne forklarer, hvordan du aktiverer og konfigurere funktionen Forudsigelser om debitorbetalinger i Finance Insights. Du kan aktivere funktionen i arbejdsområdet **Administration af funktioner** og angive konfigurationsindstillingerne på siden **Konfiguration af Finance Insights**. Dette emne indeholder også oplysninger, der kan hjælpe dig med at bruge funktionen effektivt.
 
 > [!NOTE]
 > Før du fuldfører følgende trin, skal du sørge for at fuldføre de nødvendige trin i emnet [Konfigurere til Finance Insights](configure-for-fin-insites.md).
 
-1. Brug oplysninger fra miljøsiden i Microsoft Dynamics Lifecycle Services (LCS) til at oprette forbindelse til den primære forekomst af Azure SQL for det pågældende miljø. Kør følgende Transact-SQL (T-SQL)-kommando for at aktivere funktioner til sandkassemiljøet. (Du skal muligvis aktivere adgang til din IP-adresse i LCS, før du kan oprette fjernforbindelse til applikationsobjektserveren \[AOS\] .)
+1. Slå funktionen til Forudsigelser om debitorbetalinger til:
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, PARTITION) VALUES ('PayPredEnableFeature', 1, 5637144576)`
+    1. Åbn arbejdsområdet **Administration af funktioner**.
+    2. Vælg **Søg efter opdateringer**.
+    3. Søg efter **Forudsigelser om debitorbetalinger** under fanen **Alle**. Hvis du ikke kan finde denne funktion, skal du søge efter **(Forhåndsversion) Forudsigelser om debitorbetalinger**. 
+    4. Slå funktionen til.
 
-    > [!NOTE]
-    > Hvis din installation af Microsoft Dynamics 365 Finance er en Service Fabric-installation, kan du springe dette trin over. Finance Insights-team burde allerede have aktiveret funktionen til dig. Hvis du ikke kan se funktionen i arbejdsområdet **Funktionsstyring**, eller hvis der opstår problemer, når du forsøger at aktivere den, skal du kontakte <fiap@microsoft.com>.
+    Funktionen Forudsigelser om debitorbetalinger er nu aktiveret og klar til at blive konfigureret.
 
-2. Slå funktionen til Indsigt i debitorbetalinger til:
+2. Konfigurer funktionen til Indsigt i debitorbetalinger:
 
-    1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
-    2. Find den funktion, der kaldes **Indsigt i debitorbetaling (prøveversoin)**.
-    3. Vælg **Aktiver nu**.
+    1. Gå til **Kredit og rykkere \> Opsætning \> Finance Insights \> Forudsigelser om debitorbetalinger**.
+    2. På siden **Konfiguration af Finance Insights** på fanen **Forudsigelser om debitorbetalinger** skal du vælge **Vis de datafelter, der bruges i forudsigelsesmodellen** for at åbne siden **Datafelter til forudsigelsesmodel**. Der kan du få vist standardlisten over felter, der bruges til at oprette en prognosemodel for kunstig intelligens (AI) for debitorbetalingsforudsigelser.
 
-    Funktionen Indsigter i debitorbetaling er nu aktiveret og klar til at blive konfigureret.
-
-3. Konfigurer funktionen til Indsigt i debitorbetalinger:
-
-    1. Gå til **Kredit og rykkere \> Opsætning \> Finance Insights \> Finance Insights-parametre**.
-
-        Siden [![Finance Insigths-parametre, før funktionen er konfigureret](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
-
-    2. På siden **Financial insights-parametre** på fanen **Indsigt i debitorbetalinger** skal du vælge **Vis de datafelter, der bruges i forudsigelsesmodellen**-linket for at åbne siden **Datafelterne til forudsigelsesmodel**. Der kan du få vist standardlisten over felter, der bruges til at oprette en prognosemodel for kunstig intelligens (AI) for debitorbetalingsforudsigelser.
-
-        Hvis du vil bruge standardlisten over felter til at oprette forudsigelsesmodellen, skal du lukke siden **Datafelter til forudsigelsesmodel** og derefter på siden **Financial Insights-parametre** angive indstlilingen **Aktiver funktion** til **Ja**.
+        Hvis du vil bruge standardlisten over felter til at oprette forudsigelsesmodellen, skal du lukke siden **Datafelter til forudsigelsesmodel** og derefter på siden **Konfiguration af Finance Insights** angive indstillingen **Aktivér funktion** til **Ja**.
+        
+   > [!NOTE]
+   > Funktionen **Forudsigelser om debitorbetalinger** kræver mere end 100 transaktioner i de foregående seks til ni måneder. Transaktionerne kan omfatte fritekstfakturaer, salgsordrer og debitorbetalinger. Disse data skal fordeles på tværs af indstillingerne **Til tiden**, **For sent** og **Meget sent**.    
+     
 
     3. Angiv transaktionsperioden til "meget sent" for at definere, hvad forudsigelsen **Meget sent** betyder for virksomheden.
 
@@ -71,23 +62,13 @@ Dette emne forklarer, hvordan du aktiverer og konfigurere funktionen Forudsigels
         > [!NOTE]
         > Hvis du ændrer transaktions perioden "meget sent" og vælger **Skift sent-tærskel**, efter at der er oprettet en model til AI-forudsigelse for debitorbetalinger, slettes den eksisterende forudsigelsesmodel, og der oprettes en ny model. Den nye prognosemodel flytter posteringerne til den "meget forsinkede" periode på baggrund af de indstillinger, der blev angivet for at definere den.
 
-    4. Når du er færdig med at definere transaktionsperioden "meget sent", skal du vælge **Opret forudsigelsesmodel** for at oprette forudsigelsesmodellen. Afsnittet **Forudsigelsesmodel** på siden **Financial Insights-parametre** viser status for forudsigelsesmodellen.
+    4. Når du er færdig med at definere transaktionsperioden "meget sent", skal du vælge **Opret forudsigelsesmodel** for at oprette forudsigelsesmodellen. Afsnittet **Forudsigelsesmodel** på siden **Konfiguration af Finance Insights** viser status for forudsigelsesmodellen.
 
         > [!NOTE]
         > Når forudsigelsesmodellen oprettes, kan du når som helst vælge **Nulstil modeloprettelse** for at genstarte processen.
 
     Funktionen er nu konfigureret og klar til brug.
 
-Når funktionen er slået til og konfigureret, og forudsigelsesmodellen er oprettet og fungerer, viser afsnittet **Forudsigelsesmodel** på siden **Financial Insights-parametre**, at modellen er nøjagtig, som vist i følgende illustration.
+Når funktionen er slået til og konfigureret, og forudsigelsesmodellen er oprettet og fungerer, viser afsnittet **Forudsigelsesmodel** på siden **Finance Insights-parametre** modellens nøjagtighed.
 
-[![Nøjagtigheden af forudsigelsesmodellen på siden Financial Insights-parametre](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
-
-## <a name="release-details"></a>Frigiv detaljer
-
-Financial Insights, offentlig prøveversion er tilgængelig for prøveimplementeringer i USA, Europa og Storbritannien. Microsoft tilføjer trinvist understøttelse af flere regioner.
-
-De offentlige prøveversionsfunktioner kan og bør kun aktiveres i sandkasse miljøer i niveau 2. Opsætnings- og AI-modeller, der er oprettet i et sandkassemiljø, kan ikke overføres til et produktionsmiljø. Yderligere oplysninger finder du under [Supplerende vilkår for anvendelse af Microsoft Dynamics 365 Prøveversioner](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
-
-## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-
-Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

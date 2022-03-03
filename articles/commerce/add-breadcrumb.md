@@ -2,15 +2,12 @@
 title: Brødkrummemodul
 description: Dette emne omhandler brødkrummemoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517154"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109725"
 ---
 # <a name="breadcrumb-module"></a>Brødkrummemodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler brødkrummemoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Brødkrummemoduler bruges til at tillade sekundær navigation på webstedssider. De vises normalt øverst på en side under overskriften. Selvom der kan føjes brødkrummemoduler til en hvilken som helst side, bruges de oftest på sider med produktoplysninger (PDP'er) til visning af produktkategorihierarkiet og er en hurtig måde at bevæge dig rundt på et websted på. Et brødkrummemodul kan også bruges til at vise et "Tilbage til resultater"-link, når brugerne åbner en PDP fra en søge- eller listeside. På denne måde kan brugerne hurtigt vende tilbage til deres filtrerede listeside for at fortsætte med at handle.
 
@@ -42,7 +37,7 @@ På sider med produktkategorikontekst, f.eks. PDP'er og kategorisider, viser br�
 
 Det følgende billede viser et eksempel på et brødkrummemodul, der viser kategorihierarkiet på en PDP.
 
-![Eksempel på et brødkrummemodul](./media/ecommerce-breadcrumb.PNG)
+![Eksempel på et brødkrummemodul.](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>Indstillinger for brødkrummemodul
 
@@ -95,3 +90,6 @@ Hvis du vil føje et brødkrummemodul til en PDP og angive de påkrævede egensk
 [Boksmodul til køb](add-buy-box.md)
 
 [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

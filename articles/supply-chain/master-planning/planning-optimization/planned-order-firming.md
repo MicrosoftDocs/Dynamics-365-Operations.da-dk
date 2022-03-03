@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920717"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102707"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -35,17 +35,15 @@ I dette emne beskrives de enkelte metoder nærmere.
 
 De fleste funktioner for ordreforslag er tilgængelige i alle standardinstallationer af Microsoft Dynamics 365 Supply Chain Management, som anvender Planlægningsoptimering. Nogle få af de funktioner, der beskrives i dette emne, skal dog være aktiveret i Funktionsstyring, før du kan bruge dem.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Aktivere parallel autorisation af ordreforslag
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallel autorisation af ordreforslag
 
-Parallel autorisation gør det muligt at gennemføre autorisationsprocessen hurtigere ved at parallelisere den over flere tråde. Denne metode kan være nyttig, når mange ordreforslag skal autoriseres.
-
-Du kan gøre denne funktionalitet tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Parallel autorisation af ordreforslag*. (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
+Parallel autorisation gør det muligt at gennemføre autorisationsprocessen hurtigere ved at parallelisere den over flere tråde. Denne metode kan være nyttig, når mange ordreforslag skal autoriseres. Hvis du vil bruge denne funktion, skal funktionen *Parallel autorisation af ordreforslag* være slået til for systemet. Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan du slå denne funktion til eller fra ved at gå til arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søge efter funktionen *Parallel autorisation af ordreforslag*.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Aktivere autorisation af ordreforslag med filtrering
 
 Med autorisation af ordreforslag med filtrering kan du definere logiske kriterier for valg af, hvilke ordreforslag der skal autoriseres. Du kan også få vist, hvilke ordreforslag der er valgt, køre processen i baggrunden og/eller planlægge den som et batchjob.
 
-Du kan gøre denne funktion tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Autorisation af ordreforslag med filtrering*.
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Autorisation af ordreforslag med filtrering* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivere automatisk autorisation for Planlægningsoptimering
 

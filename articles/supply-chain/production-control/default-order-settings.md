@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778101"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102757"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardordreindstillinger for dimensioner og produktvarianter
 
@@ -186,12 +186,9 @@ Du kan vælge, hvor restriktiv systemet skal være, når der skal valideres mæn
 
 Streng validering gælder for **Standardordreantal**, der er angivet i oversigtspanelerne **Indkøbsordre**, **Lager** og **Salgsordre** på siden **Indstillinger for standardordre**. Hvert oversigtspanel har sin egen indstilling af **Multiplum**, der bruges til at validere den **Standardordreantal**-værdi, der er angivet for det pågældende oversigtspanel.
 
-### <a name="enable-the-strict-validation-option"></a>Aktivere indstillingen streng validering
+### <a name="turn-the-strict-validation-option-on-or-off"></a>Aktivere eller deaktivere indstillingen for streng validering
 
-Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
-
-- **Modul** - *Administration af produktoplysninger*
-- **Funktionsnavn** - *Streng validering af standardordreantal*
+Hvis du vil bruge streng validering, skal funktionen *Streng validering af standardordreantal* være slået til for systemet. Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan du slå denne funktion til eller fra ved at gå til arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søge efter funktionen *Streng validering af standardordreantal*.
 
 ### <a name="set-the-validation-option"></a>Angive valideringsindstillingen
 

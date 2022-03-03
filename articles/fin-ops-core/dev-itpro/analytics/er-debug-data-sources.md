@@ -2,11 +2,9 @@
 title: Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering
 description: Dette emne forklarer, hvordan du kan foretage fejlfinding af datakilder i et udført ER-format for at få en bedre forståelse for det konfigurerede dataflow.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 3a486800f37dda7829aeeaa56a30285a92a61b9d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680776"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323755"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering
 
@@ -30,7 +28,7 @@ ms.locfileid: "4680776"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Når du [konfigurerer](tasks/er-format-configuration-2016-11.md) en elektronisk rapporteringsløsning (ER) til generering af udgående dokumenter, definerer du de metoder, der bruges til at få data ud af programmet og angive dem i det output, der genereres. Livscyklusunderstøttelsen for ER-løsningen kan gøres mere effektiv, hvis din løsning består af en ER-[datamodel](general-electronic-reporting.md#DataModelComponent) og de tilhørende [tilknytningskomponenter](general-electronic-reporting.md#ModelMappingComponent) samt et ER-[format](general-electronic-reporting.md#FormatComponentOutbound) og de tilhørende tilknytningskomponenter, så modeltilknytningen er programspecifik, mens andre komponenter forbliver programagnostiske. Derfor kan flere ER-komponenter [påvirke](general-electronic-reporting.md#FormatComponentOutbound) processen med at indtaste data i det genererede output.
+Når du [konfigurerer](tasks/er-format-configuration-2016-11.md) en elektronisk rapporteringsløsning (ER) til generering af udgående dokumenter, definerer du de metoder, der bruges til at få data ud af programmet og angive dem i det output, der genereres. Livscyklusunderstøttelsen for ER-løsningen kan gøres mere effektiv, hvis din løsning består af en ER-datamodel og dens tilknytningskomponenter samt et ER-format og de tilhørende tilknytningskomponenter, så modeltilknytningen er programspecifik, mens andre komponenter forbliver programagnostiske. Derfor kan flere ER-komponenter påvirke processen med at indtaste data i det genererede output.
 
 Nogle gange ser dataene i det genererede output anderledes ud end de samme data i programdatabasen. I disse tilfælde skal du finde ud af, hvilken ER-komponent der er ansvarlig for datatransformationen. Funktionen til fejlfinding af ER-datakilder reducerer i høj grad den tid og de omkostninger, der bruges på denne undersøgelse. Du kan afbryde udførelsen af et ER-format og åbne grænsefladen til fejlfinding af datakilder. Her kan du gennemse de tilgængelige datakilder og vælge en enkelt datakilde til udførelse. Denne manuelle udførelse simulerer udførelsen af datakilden under den reelle kørsel af et ER-format. Resultatet vises på en side, hvor du kan analysere de data, der modtages.
 
@@ -66,7 +64,7 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 
 1. Følg trinnene i [Bilag 3](#appendix3) i dette emne for at behandle kreditorbetalinger.
 
-    ![Igangværende behandling af kreditorbetaling](./media/er-data-debugger-process-payment.png)
+    ![Igangværende behandling af kreditorbetaling.](./media/er-data-debugger-process-payment.png)
 
 2. Download og gem zip-filen på den lokale computer.
 3. Udpak betalingsfilen **ISO20022 Credit transfer.xml** fra zip-filen.
@@ -74,7 +72,7 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 
     IBAN-koden (International Bank Account Number) for kreditorbankkontoen i betalingsfilen indeholder ingen mellemrum. Derfor adskiller den sig fra den værdi, der blev [angivet](#enteredIBANcode) på siden **Bankkonti**.
 
-    ![IBAN-kode uden mellemrum](./media/er-data-debugger-payment-file.png)
+    ![IBAN-kode uden mellemrum.](./media/er-data-debugger-payment-file.png)
 
     Du kan bruge ER-datakildefejlfindingen til at finde ud af, hvilken komponent i ER-løsningen der bruges til at afkorte mellemrum i IBAN-koden.
 
@@ -87,14 +85,14 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
     > [!NOTE]
     > Denne parameter er bruger- og virksomhedspecifik.
 
-    ![Dialogboksen Brugerparametre](./media/er-data-debugger-user-parameters.png)
+    ![Dialogboksen Brugerparametre.](./media/er-data-debugger-user-parameters.png)
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Behandle en kreditorbetaling til fejlfinding
 
 1. Følg trinnene i [Bilag 3](#appendix3) i dette emne for at behandle kreditorbetalinger.
 2. Vælg **Ja** i dialogboksen for at bekræfte, at du vil afbryde behandlingen af kreditorbetalinger, og start i stedet datakildefejlfinding på siden **Foretag fejlfinding af datakilder**.
 
-    ![Bekræftelsesdialogboks](./media/er-data-debugger-start-debugging.png)
+    ![Bekræftelsesdialogboks.](./media/er-data-debugger-start-debugging.png)
 
 ## <a name="debug-data-sources-that-are-used-in-payment-processing"></a>Foretag fejlfinding af datakilder, der bruges i betalingsbehandling
 
@@ -117,7 +115,7 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 
 7. Vælg **Udvid alle**.
 
-    ![Værdien i IBAN-feltet i modeltilknytningen](./media/er-data-debugger-debugging-model-mapping.png)
+    ![Værdien i IBAN-feltet i modeltilknytningen.](./media/er-data-debugger-debugging-model-mapping.png)
 
     Som du kan se, er modeltilknytningen ikke ansvarlig for de afkortede mellemrum, fordi IBAN-koden, som returneres for kreditors bankkonto, indeholder mellemrum. Derfor skal du fortsætte med datakildefejlfinding.
 
@@ -132,7 +130,7 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 7. Vælg **Hent værdi**.
 8. Vælg **Udvid alle**.
 
-    ![Værdien i IBAN-feltet i formattilknytningen](./media/er-data-debugger-debugging-format-mapping.png)
+    ![Værdien i IBAN-feltet i formattilknytningen.](./media/er-data-debugger-debugging-format-mapping.png)
 
     Som du kan se, er datakilderne for formattilknytningen ikke ansvarlig for de afkortede mellemrum, fordi IBAN-koden, som de returnerer for kreditors bankkonto, indeholder mellemrum. Derfor skal du fortsætte med datakildefejlfinding.
 
@@ -144,7 +142,7 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 4. Udvid formatelementerne for at vælge **ISO20022CTReports** \> **XMLHeader** \> **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN**, og vælg derefter **Hent værdi**.
 5. Vælg **Udvid alle**.
 
-    ![Værdien i IBAN-feltet i formatet](./media/er-data-debugger-debugging-format.png)
+    ![Værdien i IBAN-feltet i formatet.](./media/er-data-debugger-debugging-format.png)
 
    Som du kan se, er formattilknytningen ikke ansvarlig for de afkortede mellemrum, fordi IBAN-koden, som returneres for kreditors bankkonto, indeholder mellemrum. Derfor er **BankIBAN**-elementet konfigureret til at bruge en formattransformation, der afkorter mellemrum.
 
@@ -156,13 +154,13 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 2. På siden **Konfigurationer** skal du vælge **Betalingsmodel** \> **ISO20022-kreditoverførsel**.
 3. Vælg **Designer**, og udvid derefter elementerne for at vælge **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN**.
 
-    ![BankIBAN-element på siden Formatdesigner](./media/er-data-debugger-referred-transformation.png)
+    ![BankIBAN-element på siden Formatdesigner.](./media/er-data-debugger-referred-transformation.png)
 
     Som du kan se, er **BankIBAN**-elementet konfigureret til at bruge **fjern ikke-alfanumerisk** transformation.
 
 4. Vælg fanen **Transformationer**.
 
-    ![Fanen Transformationer for BankIBAN-elementet](./media/er-data-debugger-transformation.png)
+    ![Fanen Transformationer for BankIBAN-elementet.](./media/er-data-debugger-transformation.png)
 
     Som du kan se, er **fjern ikke-alfanumerisk** transformation konfigureret til at bruge et udtryk, der afkorter mellemrum fra den tekststreng, der er angivet.
 
@@ -170,7 +168,7 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 
 Når du konfigurerer en kladdeversion af det ER-format, der kan køres direkte fra Operationsdesigner, kan du få adgang til datakildefejlfindingen ved at vælge **Start fejlfinding** i handlingsruden.
 
-![Knappen Start fejlfinding på siden Formatdesigner](./media/er-data-debugger-run-from-designer.png)
+![Knappen Start fejlfinding på siden Formatdesigner.](./media/er-data-debugger-run-from-designer.png)
 
 Formattilknytnings- og formatkomponenterne for det ER-format, der redigeres, er tilgængelige for fejlfinding.
 
@@ -178,7 +176,7 @@ Formattilknytnings- og formatkomponenterne for det ER-format, der redigeres, er 
 
 Når du konfigurerer en ER-modeltilknytning, der kan køres fra siden **Modeltilknytning**, kan du få adgang til datakildefejlfindingen ved at vælge **Start fejlfinding** i handlingsruden.
 
-![Knappen Start fejlfinding på siden Modeltilknytning](./media/er-data-debugger-run-from-designer-mapping.png)
+![Knappen Start fejlfinding på siden Modeltilknytning.](./media/er-data-debugger-run-from-designer-mapping.png)
 
 Modeltilknytningskomponenten for ER-tilknytningen, der redigeres, er tilgængelig for fejlfinding.
 
@@ -188,18 +186,18 @@ Modeltilknytningskomponenten for ER-tilknytningen, der redigeres, er tilgængeli
 
 Hvis du vil bruge en ER-løsning for at generere en elektronisk betalingsfil for en kreditorbetaling, der behandles, kan du [downloade](download-electronic-reporting-configuration-lcs.md) ER-betalingsformatet **ISO20022-kreditoverførsel**, der er tilgængeligt fra Delt aktivbibliotek i Microsoft Dynamics Lifecycle Services (LCS) eller det globale lager.
 
-![Importere ER-betalingsformatet på siden Konfigurationslager](./media/er-data-debugger-import-from-repo.png)
+![Importere ER-betalingsformatet på siden Konfigurationslager.](./media/er-data-debugger-import-from-repo.png)
 
 Ud over det valgte ER-format, skal følgende [konfigurationer](general-electronic-reporting.md#Configuration) automatisk importeres til din Microsoft Dynamics 365 Finance-forekomst som en del af ER-løsningen **ISO20022-kreditoverførsel**:
 
-- **Betalingsmodel** [Konfiguration af ER-datamodel](general-electronic-reporting.md#DataModelComponent)
-- **ISO20022-kreditoverførsel** [ER-formatkonfiguration](general-electronic-reporting.md#FormatComponentOutbound)
-- **Betalingsmodel-tilknytning 1611** [Konfiguration af ER-modeltilknytning](general-electronic-reporting.md#ModelMappingComponent)
+- **Betalingsmodel** Konfiguration af ER-datamodel
+- **ISO20022-kreditoverførsel** ER-formatkonfiguration
+- **Betalingsmodel-tilknytning 1611** Konfiguration af ER-modeltilknytning
 - **Betalingsmodel-tilknytning til destination ISO20022** – konfiguration af ER-modeltilknytning
 
 Du kan finde disse konfigurationer på siden **Konfigurationer** for ER-strukturen (**Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**).
 
-![Konfigurationer, der importeres på siden Konfigurationer](./media/er-data-debugger-configurations.png)
+![Konfigurationer, der importeres på siden Konfigurationer.](./media/er-data-debugger-configurations.png)
 
 Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræet, skal du manuelt downloade dem fra LCS Delt aktivbibliotek på samme måde, som du downloadede ER-betalingsformatet **ISO20022-kreditoverførsel**.
 
@@ -215,7 +213,7 @@ Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræe
 
     Bemærk, at feltet **Betalinger** i datamodellen er tilknyttet **\$notSentTransactions**-datakilden, der returnerer listen over kreditorbetalingslinjer, som behandles.
 
-    ![Betalingsfeltet på siden Modeltilknytningsdesigner](./media/er-data-debugger-model-mapping.png)
+    ![Betalingsfeltet på siden Modeltilknytningsdesigner.](./media/er-data-debugger-model-mapping.png)
 
 #### <a name="review-the-format-mapping"></a>Gennemse formattilknytningen
 
@@ -226,7 +224,7 @@ Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræe
 
     Bemærk, at elementet **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** i filen **ISO20022CTReports** \> **XMLHeader** er tilknyttet **\$PaymentByDebtor**-datakilden, der er konfigureret til at gruppere poster på datamodellens felt **Betalinger**.
 
-    ![PmtInf-element på siden Formatdesigner](./media/er-data-debugger-format-mapping.png)
+    ![PmtInf-element på siden Formatdesigner.](./media/er-data-debugger-format-mapping.png)
 
 #### <a name="review-the-format"></a>Gennemse formatet
 
@@ -236,7 +234,7 @@ Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræe
 
     Bemærk, at formatelementet under **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** er konfigureret til at angive IBAN-koden for kreditorkontoen i betalingsfilen.
 
-    ![BankIBAN-element på siden Formatdesigner](./media/er-data-debugger-format.png)
+    ![BankIBAN-formatelement på siden Formatdesigner.](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>Bilag 2: Konfigurere kreditor
 
@@ -247,7 +245,7 @@ Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræe
 3. På oversigtspanelet **Identifikation** i **IBAN**-feltet <a name="enteredIBANcode"></a>skal du skrive **GB33 BUKB 2020 1555 5555 55**.
 4. Vælg **Gem**.
 
-![IBAN-feltet på siden Kreditorbankkonti](./media/er-data-debugger-iban.png)
+![IBAN-feltet på siden Kreditorbankkonti.](./media/er-data-debugger-iban.png)
 
 ### <a name="set-up-a-method-of-payment"></a>Oprette en betalingsmåde
 
@@ -257,7 +255,7 @@ Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræe
 4. I feltet **Eksportér formatkonfiguration** skal du vælge ER-formatet **ISO20022-overførsel**.
 5. Vælg **Gem**.
 
-![Filformatindstillinger på siden Betalingsmåder](./media/er-data-debugger-payment-method.png)
+![Filformatindstillinger på siden Betalingsmåder.](./media/er-data-debugger-payment-method.png)
 
 ### <a name="add-a-vendor-payment"></a>Tilføje en kreditorbetaling
 
@@ -269,7 +267,7 @@ Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræe
 6. Vælg **SEPA CT** i feltet **Betalingsmåde**.
 7. Vælg **Gem**.
 
-![Kreditorbetaling tilføjet på siden Kreditorbetalinger](./media/er-data-debugger-payment-journal.png)
+![Kreditorbetaling tilføjet på siden Kreditorbetalinger.](./media/er-data-debugger-payment-journal.png)
 
 ## <a name="appendix-3-process-a-vendor-payment"></a><a name="appendix3"></a>Bilag 3: Behandle en kreditorbetaling
 
@@ -281,3 +279,6 @@ Hvis nogen af de tidligere angivne konfigurationer mangler i konfigurationstræe
 6. Vælg **DEMF OPER** i feltet **Bankkonto**.
 7. Vælg **OK** i dialogboksen **Opret betalinger**.
 8. Vælg **OK** i dialogboksen **Elektroniske rapporteringsparametre**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a3a565ea566dd2bf4d8c793b3340c78c9f4ed0a2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0848eeb2ad073915ad90d2fd2a4a91f0f420c0ab
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565297"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103282"
 ---
 # <a name="quality-check"></a>Kvalitetskontrol
 
@@ -39,12 +39,9 @@ Når du bruger denne funktion, sker modtagelse og kvalitetskontrol på følgende
 
 Denne proces kan også konfigureres, så alle scannede id'er straks omdirigeres til kvalitetskontrollens lokation.
 
-## <a name="turn-on-the-quality-check-feature"></a>Aktivere funktionen Kvalitetskontrol
+## <a name="turn-the-quality-check-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Kvalitetskontrol
 
-Før du kan bruge funktionen *Kvalitetskontrol*, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Kvalitetskontrol*
+Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Kvalitetskontrol* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Kvalitetskontrol* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Konfigurere funktionen til eksempelscenariet
 

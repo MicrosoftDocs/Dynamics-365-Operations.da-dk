@@ -2,24 +2,22 @@
 title: Visualisering af udgående arbejdsbyrde
 description: Dette emne indeholder oplysninger om visualisering af udgående arbejdsbyrde. Denne funktion giver lagerchefer og tilsynsførende mulighed for at oprette brugerdefinerede arbejdsbyrdediagrammer, der kan bruges til at overvåge forløbet af det aktuelle arbejde og den mængde, der mangler. Lagerchefer kan oprette flere visninger og konfigurere automatisk opdatering efter behov.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965546"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102882"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering af udgående arbejdsbyrde
 
@@ -29,12 +27,9 @@ De avancerede opsætningsmuligheder, der er tilgængelige fra siden **Visualiser
 
 Denne funktion kan bruges til at spore status for plukarbejde. Funktionen er integreret med arbejdsstyring, og hvis arbejdsstyring er konfigureret, kan visualiseringer af udgående arbejdsbyrder vise en beregning af det antal timer, der er tilbage for det plukarbejde, der vises (filtreret).
 
-## <a name="turn-on-the-outbound-workload-visualization-feature"></a>Aktivere funktionen Visualisering af udgående arbejdsbyrde
+## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Visualisering af udgående arbejdsbyrde
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Visualisering af udgående arbejdsbyrde*
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Visualisering af udgående arbejdsbyrde* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Konfigurere visualiseringer af udgående arbejdsbyrde
 
@@ -62,7 +57,7 @@ Benyt følgende fremgangsmåde for at konfigurere en visualisering af udgående 
     - **Dage, der skal medtages** – Angiv det antal dage i fortiden, som diagrammet skal genereres for.
     - **Arbejdsordretype** – Vælg de udgående arbejdsordretyper, der skal filtreres efter.
 
-    ![Siden Konfigurer filtre](media/work-viz-filters-1.png "Siden Konfigurer filtre")
+    ![Siden Konfigurer filtre.](media/work-viz-filters-1.png "Siden Konfigurer filtre")
 
 1. Luk siden **Konfigurer filtre** for at vende tilbage til siden **Visualiseringer af udgående arbejdsbyrder**.
 
@@ -72,11 +67,11 @@ Benyt følgende fremgangsmåde for at konfigurere en visualisering af udgående 
     - **Sidst opdateret** – iI dette felt vises den dato og det tidspunkt, hvor oplysningerne i diagrammet sidst blev opdateret.
     - **Estimeret/faktisk tid** – Hvis der er konfigureret arbejdsstandarder i systemet, skal du angive denne indstilling til *Ja* for at få vist de samlede estimerede pluktider øverst i hver kolonne i diagrammet. Hvis du ikke bruger arbejdsstandarder, er denne indstilling ikke tilgængelig.
 
-    ![Eksempel på visualisering](media/work-viz-chart.png "Eksempel på visualisering")
+    ![Eksempel på visualisering.](media/work-viz-chart.png "Eksempel på visualisering")
 
 1. Vælg en vilkårlig søjle i diagrammet for at få vist oplysningerne i den tilknyttede arbejdslinje.
 
-    ![Arbejdslinjedetaljer](media/work-viz-work-details.png "Arbejdslinjedetaljer")
+    ![Arbejdslinjedetaljer.](media/work-viz-work-details.png "Arbejdslinjedetaljer")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Eksempel: Visualisering af udgående arbejdsbyrde for zoner
 
@@ -94,6 +89,9 @@ I dette eksempel skal du oprette en visualisering, der viser arbejdslinjer for h
 
 I følgende illustration vises et eksempel på resultatdiagrammet.
 
-![Visualisering af zone vs. arbejdsstatus](media/work-viz-chart.png "Visualisering af zone vs. arbejdsstatus")
+![Visualisering af zone vs. arbejdsstatus.](media/work-viz-chart.png "Visualisering af zone vs. arbejdsstatus")
 
 Dette diagram indeholder to zoner, der hedder **PRODUKTION** og **BULK**, plus en zone med navnet **Blank**. Zonen **Blank** repræsenterer alle de arbejdslinjer, der ikke er medlemmer af nogen zoner. Diagrammet viser altid alle ikke-relaterede filtrerede data som **Blank**, så det giver så høj synlighed som muligt. I området **PRODUKTION** vises tre lukkede linjer og fire åbne linjer i diagrammet. I området **BULK** vises fire lukkede linjer og én åben linje og 24 annullerede linjer i diagrammet. Endelig viser diagrammet otte lukkede linjer, der ikke indgår i en zone og derfor er angivet som **Blank**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

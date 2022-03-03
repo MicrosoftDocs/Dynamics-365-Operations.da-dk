@@ -2,7 +2,7 @@
 title: Synkronisere opgavestyring mellem Microsoft Teams og Dynamics 365 Commerce POS
 description: Dette emne beskriver, hvordan opgavestyring synkroniseres mellem Microsoft Teams og Dynamics 365 Commerce POS.
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f9abebbf8d6c5dd6695b9697361e1a9a9e6005dc3ded16c4211c9c5c9e34a0b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c07ca28b45335de5e327305b7426d1b6de8ce5c7
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730869"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323491"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Synkronisere opgavestyring mellem Microsoft Teams og Dynamics 365 Commerce POS
 
@@ -54,6 +54,9 @@ Du kan finde flere oplysninger i [Publicere opgavelister for at oprette og spore
 ## <a name="link-pos-and-teams-for-task-management"></a>Forbinde POS og Teams til opgavestyring
 
 Benyt følgende fremgangsmåde for at sammenkæde POS- og Microsoft Teams-programmer til opgavestyring i Commerce-hovedkontoret.
+
+> [!NOTE]
+> Før du forsøger at integrere Opgavestyring med Microsoft Teams, skal du sørge for, at du er aktiveret [Dynamics 365 Commerce og Microsoft Teams-integration](enable-teams-integration.md). 
 
 1. Gå til **Retail og Commerce \> Opgavestyring \> Opgaveintegration med Microsoft Teams**.
 1. Vælg **Rediger** i handlingsruden.

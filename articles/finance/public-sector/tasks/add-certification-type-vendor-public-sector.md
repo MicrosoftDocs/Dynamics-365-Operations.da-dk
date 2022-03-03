@@ -2,27 +2,24 @@
 title: Tilføje en certificeringstype til en kreditor i den offentlige sektor
 description: Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne.
 author: twheeloc
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/14/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendCertification, DirPartyLookup
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d52341735b062c0740ff6f06deac57fbdd6e9b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ea7ab976e29fc8dbb2740d8a2a2d08a904b33f74
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407710"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119409"
 ---
 # <a name="add-a-certification-type-to-a-vendor-in-the-public-sector"></a>Tilføje en certificeringstype til en kreditor i den offentlige sektor
 
@@ -30,17 +27,20 @@ ms.locfileid: "4407710"
 
 Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 
-1. Gå til Indkøb og forsyning > Kreditorer > Alle kreditorer.
+1. Gå til **Indkøb og forsyning > Kreditorer > Alle kreditorer**.
 2. Find og vælg den ønskede post på listen.
-3. Klik på Kreditor i handlingsruden.
-4. Klik på Certificeringer.
-5. Klik på Ny.
-6. Klik på rullelisten i feltet Certificering for at åbne opslaget.
+3. Klik på **Krediter** i **Handlingsrude**.
+4. Klik på **Certificeringer**.
+5. Klik på **Ny**.
+6. Klik på rullelisten i feltet **Certificering** for at åbne opslaget.
 7. Find og vælg den ønskede post på listen.
-8. Skriv en værdi i feltet Certificeringsnummer.
-9. Klik på rullelisten i feltet Certificeringsorganisation for at åbne opslaget.
+8. Skriv en værdi i feltet **Certificeringsnummer**.
+9. Klik på rullelisten i feltet **Certificeringsorganisation** for at åbne opslaget.
 10. Find og vælg den ønskede post på listen.
-11. Klik på Vælg.
+11. Klik på **Vælg**.
     * Fuldfør detaljerne.   
-12. Klik på Gem.
+12. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

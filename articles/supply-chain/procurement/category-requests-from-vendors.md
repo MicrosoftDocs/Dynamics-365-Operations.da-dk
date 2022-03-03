@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 560b62183f9c0c45c872998373a90dc9dc0ebbb3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d06f05ca27ed8fe58a9a24fcde8c0082662b866
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571707"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103089"
 ---
 # <a name="category-requests-from-vendors"></a>Kategorianmodninger fra kreditorer
 
@@ -26,9 +26,9 @@ Med kategorianmodningsprocessen kan kreditorer anmode om, at der knyttes nye ind
 
 Kategorianmodninger startes af kreditorer i arbejdsområdet **Kreditoroplysninger**. De sendes derefter til gennemsyn og godkendelse hos din godkenderenhed. Godkendte kategorier føjes til listen over indkøbskategorier for kreditorens konto.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funktionen i systemet
+## <a name="turn-the-category-requests-from-vendors-feature-on-or-off"></a>Aktivere eller deaktivere kategorianmodninger fra kreditorer
 
-Hvis systemet ikke allerede indeholder den funktion, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Tillad kreditorer at ansøge om indkøbskategorier via leverandørsamarbejde*.
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter *Tillad, at leverandører ansøger om indkøbskategorier via leverandørsamarbejde* i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Når funktionen er aktiveret, kan du stadig føje indkøbskategorier til kreditorkonti manuelt. Du kan finde flere oplysnigner i [Godkende kreditorer til specifikke indkøbskategorier](tasks/approve-vendors-specific-procurement-categories.md).
 

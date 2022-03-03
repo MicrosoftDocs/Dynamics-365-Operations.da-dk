@@ -2,36 +2,33 @@
 title: Konfigurere politikker for kreditorfakturaer
 description: I dette emne forklares, hvordan du konfigurerer politikker for kreditorfakturaer.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 07/11/2019
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58518f5291b70c63506c20717034daff0268901b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441578"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109750"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Konfigurere politikker for kreditorfakturaer
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne forklares, hvordan du konfigurerer politikker for kreditorfakturaer. Du kan køre kreditorfakturapolitikker, når du bogfører en kreditorfaktura ved hjælp af siden Kreditorfaktura, og når du åbner siden Overtrædelser af politik til kreditorfaktura. Du kan også konfigurere arbejdsgangen for kreditorfakturaer til at køre politikker for kreditorfakturaer, hver gang du sender en faktura videre i arbejdsgangen. 
+I dette emne forklares, hvordan du konfigurerer politikker for kreditorfakturaer. Du kan køre kreditorfakturapolitikker, når du bogfører en kreditorfaktura ved hjælp af siden **Kreditorfaktura**, og når du åbner siden **Overtrædelser af politik** til kreditorfaktura. Du kan også konfigurere arbejdsgangen for kreditorfakturaer til at køre politikker for kreditorfakturaer, hver gang du sender en faktura videre i arbejdsgangen. 
 
 - Kreditorfakturapolitikker gælder ikke for fakturaer, der er oprettet i indgangsbogen eller i fakturajournalen.  
-- Kreditorfakturapolitikker benyttes ikke til validering af fakturasammenholdelse, men er i stedet konfigureret på siden Kreditorparametre.  
-- Denne registrering anvender demofirmaet USMF. Rollen kreditorchef eller rollen regnskabschef skal udføre disse trin. Inden du begynder, skal du kontrollere, at konfigurationsnøglen til fakturasammenholdelse er valgt.
+- Kreditorfakturapolitikker benyttes ikke til validering af fakturasammenholdelse, men er i stedet konfigureret på siden **Kreditorparametre**.  
+- Denne registrering anvender demofirmaet USMF. Rollen kreditorchef eller rollen regnskabschef skal udføre disse trin. Inden du begynder, skal du kontrollere, at konfigurationsnøglen **Fakturasammenholdelse** er valgt.
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>Forberede oprettelse af politikker for kreditorfakturaer
@@ -73,3 +70,6 @@ I dette emne forklares, hvordan du konfigurerer politikker for kreditorfakturaer
 16. Vælg **OK**.
 17. Luk siderne for at vende tilbage til startsiden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

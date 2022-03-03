@@ -1,27 +1,24 @@
 ---
 title: Udlign rest
 description: Du kan udligne restbeløbet fra udligningsaktivitet ved at anvende dette beløb på en finanskonto.
-author: mikefalkner
-manager: aolson
-ms.date: 10/16/2018
+author: twheeloc
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 52b0b456a6d9879c480ac3f076a32e382426a89c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 881b46774d3ca6a9b91d4dc06babb30c8677183a
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441550"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182398"
 ---
 # <a name="settle-remainder"></a>Udlign rest
 
@@ -30,10 +27,10 @@ ms.locfileid: "4441550"
 Du kan udligne restbeløbet fra udligningsaktivitet ved at anvende dette beløb på en finanskonto eller på en anden debitor. Du kan udligne restbeløbet, når du udligner beløb, der er angivet i en kladde, eller når du kun udligner åbne posteringer.
 
 ## <a name="setting-up-defaults"></a>Konfigurere brugerstandarder 
-Du skal aktivere funktionen Udlign rest og konfigurere standardindstillingerne, før du kan bruge Udlign rest
+Du skal aktivere funktionen **Udlign rest** og konfigurere standardindstillingerne, før du kan bruge **Udlign rest**.
 
 1)  Klik på **Debitor > Parametre > Udligninger** eller **Kreditor > Parametre > Udligninger**
-2)  Vælg fanen **Udligning**, og klik på **Aktivér udlign rest**
+2)  Vælg fanen **Udligning**, og klik på **Aktivér udlign rest**.
 3)  I **Standardårsagskode** skal du vælge en standardårsagskode. Årsagskoderne skal allerede være oprettet **Debitor > Opsætning > Årsagskoder for debitorafskrivning** eller **Kreditor > Opsætning > Årsagskoder for debitorafskrivning**. **Standardudligningskonto for rest** bliver standard for den konto, der er tildelt til årsagskoden for afskrivningen.
 3)  Opdater **Standardudligningskonto for rest** efter behov.
 4)  I **Standardkladdenavn** skal du vælge en betalingskladde, der skal bruges, hvis du vil oprette en betalingskladde, når du kun udligner åbne posteringer. Hvis du aktiverer funktionen til udligning af restbeløb, skal du tilføje et standardkladdenavn.
@@ -70,3 +67,6 @@ For at udligne restbeløbet skal du udføre følgende trin:
 7)  Du kan også vælge at oprette en betalingskladde med udligningsrestbeløbet eller blot bogføre det uden en kladde. Vælg **Ja** for **Rediger i kladde** for at oprette en betalingskladde. Du kan redigere den betalingskladde, som du opretter.
 8)  Klik på **Udlign rest**. Hvis du vælger at oprette en kladde, ændres knappen til **Opret kladde**. Klik på **Opret kladde** i stedet.
 9)  Hvis du har oprettet en betalingskladde, åbnes kladdesiden, når du klikker på **Udlign rest**. Der føjes en linje til kladden med restudligningsbeløbet som beløbet og kontoen for udligningsrestbeløbet som modkonto. Hvis du har tilføjet en debitor eller kreditor, så du kan flytte udligningsbeløbet til en anden debitor eller kreditor, føjes der en ekstra linje til kladden, så udligningsbeløbet kan flyttes til den pågældende debitor eller kreditor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777583"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103046"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Modtagelse af nummerplade via mobilappen Lokationsstyring
 
@@ -77,15 +77,13 @@ Når denne funktion er slået til, indeholder den mobile enhed menupunkter til m
 - **Få vist en detaljeret oversigt** – når du modtager nummerplader, vil arbejderne få vist en ekstra side, der viser fuldstændige ASN-oplysninger.
 - **Spring oversigt over** – Arbejdere kan ikke få vist de fuldstændige ASN-oplysninger. Lagermedarbejderne kan heller ikke angive en dispositionskode eller tilføje undtagelser under modtagelsesprocessen.
 
-Hvis du vil gøre denne funktionalitet tilgængelig på systemet, skal funktionen *Kontrolelementet til at få vist en side med status for modtagelse på mobilenheder* være slået til i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
+Hvis du vil bruge denne funktionalitet, skal funktionen *Kontrollér, om der skal vises en oversigtsside med tilgange på mobilenheder* være slået til i systemet. Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Kontrollér, om der skal vises en oversigtsside med tilgange på mobilenheder* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Undgå, at afsendte, ordreforsendte nummerplader bliver brugt i andre lagersteder end destinationslagerstedet
 
 Der kan ikke bruges en proces til modtagelse af nummerplader, hvis en ASN indeholder et nummerplade-id, der allerede findes, og som har fysiske beholdningsdata på en anden lagerlokation end den lagerlokation, hvor der sker registrering af nummerpladen.
 
-I forbindelse med overflytningsordrescenarier, hvor forsendelseslagerstedet ikke sporer nummerplader (og derfor ikke sporer fysisk disponibel lagerbeholdning pr. nummerplade), kan du bruge metoden *Undgå afsendte, ordreforsendte nummerplader fra at blive brugt på andre lagersteder end destinationslagerstedet* for at forhindre fysisk disponible opdateringer af nummerplader, der er undervejs.
-
-Hvis du vil gøre denne funktionalitet tilgængelig på dit system, skal du aktivere funktionen *Undgå afsendelse af ordreafsendte nummerplader fra at blive brugt på andre lagersteder end destinationslagerstedet* i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+I forbindelse med overflytningsordrescenarier, hvor forsendelseslagerstedet ikke sporer nummerplader (og derfor ikke sporer fysisk disponibel lagerbeholdning pr. nummerplade), kan du bruge metoden *Undgå afsendte, ordreforsendte nummerplader fra at blive brugt på andre lagersteder end destinationslagerstedet* for at forhindre fysisk disponible opdateringer af nummerplader, der er undervejs. Hvis du vil gøre denne funktionalitet tilgængelig på dit system, skal du aktivere funktionen *Undgå, at id'er for afsendte flytteordrer bliver brugt på andre lagersteder end destinationslagerstedet*. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter den i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Hvis du vil administrere funktionaliteten, når denne funktion er tilgængelig, skal du følge disse trin.
 

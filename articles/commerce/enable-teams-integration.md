@@ -2,7 +2,7 @@
 title: Aktivere Dynamics 365 Commerce- og Microsoft Teams-integration
 description: Dette emne beskriver, hvordan du aktiverer Microsoft Dynamics 365 Commerce- og Microsoft Teams-integration.
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9910ee48a0792c89a4e04ec8685fd02484e45575d70b06454dea56a89ee8c914
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52b1a889a15cfe2e6e104e38b7d257f80762954f
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775332"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323424"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Aktivere Dynamics 365 Commerce- og Microsoft Teams-integration
 
@@ -38,15 +38,23 @@ Før du kan aktivere Microsoft Teams-integration med Commerce, skal du registrer
 Du kan registrere Teams-programmet hos din lejer på Azure-portalen ved at følge disse trin.
 
 1. Følg trinnene i [Hurtig start: Registrer en app på Microsofts id-platform](/azure/active-directory/develop/quickstart-register-app) for at registrere Teams-programmet hos din lejer på Azure-portalen.
-1. Kopiér værdien af **Program-id (klient)** fra siden **Oversigt** for den registrerede app. Du skal bruge denne værdi til at aktivere Team-integration i Commerce-hovedkontoret.
-1. Kopiér den certifikatværdi, der blev angivet, da du [tilføjede et certifikat](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) i trin 1. Certifikatet kaldes også den offentlige nøgle eller programnøglen. Du skal bruge denne værdi til at aktivere Team-integration i Commerce-hovedkontoret.
+1. Vælg den app, du oprettede i det forrige trin, under fanen **Appregistrering**. Vælg derefter **Tilføj en platform** under fanen **Godkendelse**.
+1. Vælg **Web** i dialogboksen. Angiv derefter en URL-adresse i formatet **\<HQUrl\>/oauth** i feltet **URL-adresse til omdirigering**. Erstat **\<HQUrl\>** med URL-adressen til Commerce-hovedkontoret (f.eks. `https://hxennugbjtweufmdeo385f47fadb6aa9a0aos.cloudax.int.dynamics.com/oauth`).
+1. Kopiér værdien af **Program-id (klient)** fra siden **Oversigt** for den registrerede app. Du skal angive denne værdi for at aktivere Team-integration i Commerce-hovedkontoret i næste afsnit.
+1. Følg instruktionerne i [Tilføje en klienthemmelighed](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) for at tilføje en klienthemmelighed. Kopier derefter værdien af **Hemmelig værdi** for klienten. Du skal angive denne værdi for at aktivere Team-integration i Commerce-hovedkontoret i næste afsnit.
+1. Vælg **API-tilladelser**, og vælg derefter **Tilføje en tilladelse**.
+1. Vælg **Microsoft Graph** i dialogboksen **Anmod om API-tilladelser**, vælg **Delegerede tilladelser**, udvid **Gruppe**, vælg **Group.ReadWrite.All**, og vælg derefter **Tilføj tilladelser**.
+1. Vælg **Tilføj en tilladelse**, vælg **Microsoft Graph** i dialogboksen **Anmod om API-tilladelser**, vælg **Program tilladelser**, udvid **Gruppe**, vælg **Group.ReadWrite.All**, og vælg derefter **Tilføj tilladelser**.
+1. Vælg **Tilføj en tilladelse** i dialogboksen **Anmod om API-tilladelser**. Søg under fanen **API'er, som min organisation bruger** efter **Microsoft Teams Detailtjeneste**, og vælg den.
+1. Vælg **Delegerede tilladelser**, udvid **TaskPublishing**, vælg **TaskPublising.ReadWrite.All**, og vælg derefter **Tilføj tilladelser**. Yderligere oplysninger finder du i [Konfigurere et klientprogram til at få adgang til en web-API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 
 Hvis du vil aktivere Teams-integration i Commerce-hovedkontoret, skal du følge disse trin.
 
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Konfiguration af Microsoft Teams-integration**.
 1. Vælg **Rediger** i handlingsruden.
 1. Angiv indstillingen **Aktivér Microsoft Teams-integration** til **Ja**.
-1. I felterne **Program-id** og **Programnøgle** skal du angive de værdier, du fik, da du registrerede Teams-programmet på Azure-portalen.
+1. I feltet **Program-id** skal du angive den værdi af **Applikations-id (klient)**, du fik, da du registrerede Teams-programmet på Azure-portalen.
+1. I feltet **Programnøgle** skal du angive den **Hemmelig værdi**, du fik, da du tilføjede en klienthemmelighed på Azure-portalen.
 1. Vælg **Gem** i handlingsruden.
 
 I følgende illustration vises et eksempel på konfigurationen af Teams-integration i Commerce-hovedkontoret.

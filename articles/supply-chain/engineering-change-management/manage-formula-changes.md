@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c65f929120d2501fa3873880179a9b53ab79c60c73fd4d597fb6151b1c5bb2b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720390"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103033"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Administrere ændringer i formler og deres stoffer
 
@@ -27,12 +27,9 @@ Hvis du bruger funktionerne til procesproduktion i Microsoft Dynamics 365 Supply
 - **Samprodukter og biprodukter:** Rediger mængder og andre oplysninger om samprodukter og biprodukter i en formel.
 - **Fastvægtvarer:** Administrer ændringer af fastvægtvarer.
 
-## <a name="turn-on-this-feature-in-your-system"></a>Aktivere denne funktion i systemet
+## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funktion
 
-Når du skal bruge denne funktion, skal du udføre følgende opgaver:
-
-1. Aktivér funktionen *Styring af tekniske ændringer* og dens konfigurationsnøgle, som beskrevet i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md). Som nævnt i dette emne skal du sørge for, at du også aktiverer licensnøglen til **Ændringsstyring for procesproduktion**, som er indlejret under licensnøglen til **Teknisk ændringsstyring**.
-1. Slå funktionen *Administrere ændringer i formler og deres stoffer* til i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Den funktionalitet, der beskrives i dette emne, kræver, at både *Styring af tekniske ændringer* og *Administrer ændringer af formler og deres ingredienser* er aktiveret for systemet. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer disse funktioner, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Navngivningskonventioner for funktioner
 
